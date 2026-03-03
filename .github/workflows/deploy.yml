@@ -43,8 +43,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
           cache-dependency-path: |
-            harviclocales-main/package-lock.json
-            server/package-lock.json
+            package-lock.json
 
       - name: 📦 Setup Python
         uses: actions/setup-python@v5
@@ -52,38 +51,26 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
 
-      - name: 🔧 Install Frontend Dependencies
-        working-directory: ./harviclocales-main
+      - name: 🔧 Install Dependencies
         run: npm ci
 
-      - name: 🔧 Install Backend Dependencies
-        working-directory: ./server
-        run: npm ci
-
-      - name: ✅ Lint Frontend
-        working-directory: ./harviclocales-main
+      - name: ✅ Lint
         run: npm run lint || true
 
-      - name: ✅ Lint Backend
-        working-directory: ./server
-        run: npm run lint || true
-
-      - name: 🏗️ Build Frontend
-        working-directory: ./harviclocales-main
+      - name: 🏗️ Build
         env:
           NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL || 'http://localhost:5000' }}
         run: npm run build
 
       - name: ✅ Run Tests (if available)
-        working-directory: ./server
         run: npm test || echo "No tests configured"
 
       - name: 💾 Cache Build Artifacts
         uses: actions/cache@v4
         with:
           path: |
-            harviclocales-main/.next
-            server/node_modules
+            .next
+            node_modules
           key: ${{ runner.os }}-build-${{ github.sha }}
 
   # ============================================
@@ -98,12 +85,7 @@ jobs:
       - name: 📥 Checkout code
         uses: actions/checkout@v4
 
-      - name: 🔒 Run npm audit (Frontend)
-        working-directory: ./harviclocales-main
-        run: npm audit --audit-level=moderate || true
-
-      - name: 🔒 Run npm audit (Backend)
-        working-directory: ./server
+      - name: 🔒 Run npm audit
         run: npm audit --audit-level=moderate || true
 
   # ============================================
@@ -129,29 +111,17 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
         if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
 
-      - name: 🏗️ Build Frontend Image
+      - name: 🏗️ Build Docker Image
         uses: docker/build-push-action@v5
         with:
-          context: ./harviclocales-main
-          file: ./harviclocales-main/Dockerfile
+          context: .
+          file: ./Dockerfile
           push: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') }}
           tags: |
-            harvics/frontend:latest
-            harvics/frontend:${{ github.sha }}
-          cache-from: type=registry,ref=harvics/frontend:buildcache
-          cache-to: type=registry,ref=harvics/frontend:buildcache,mode=max
-
-      - name: 🏗️ Build Backend Image
-        uses: docker/build-push-action@v5
-        with:
-          context: ./server
-          file: ./server/Dockerfile
-          push: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') }}
-          tags: |
-            harvics/backend:latest
-            harvics/backend:${{ github.sha }}
-          cache-from: type=registry,ref=harvics/backend:buildcache
-          cache-to: type=registry,ref=harvics/backend:buildcache,mode=max
+            harvics/app:latest
+            harvics/app:${{ github.sha }}
+          cache-from: type=registry,ref=harvics/app:buildcache
+          cache-to: type=registry,ref=harvics/app:buildcache,mode=max
 
   # ============================================
   # Deploy to Staging
