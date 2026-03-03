@@ -1,0 +1,6 @@
+{
+  "PK": { "city": "Karachi", "temperature": 305.15, "description": "humid haze", "humidity": 74, "windSpeed": 4.2 },
+  "IN": { "city": "Mumbai", "temperature": 302.65, "description": "monsoon clouds", "humidity": 80, "windSpeed": 5.1 },
+  "AE": { "city": "Dubai", "temperature": 308.95, "description": "clear sky", "humidity": 58, "windSpeed": 3.4 },
+  "US": { "city": "New York", "temperature": 289.35, "description": "partly cloudy", "humidity": 66, "windSpeed": 6.3 }
+}

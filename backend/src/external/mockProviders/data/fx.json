@@ -1,0 +1,13 @@
+{
+  "disclaimer": "Mock Open Exchange Rates payload",
+  "license": "Mock license",
+  "timestamp": 1732200000,
+  "base": "USD",
+  "rates": {
+    "PKR": 278.45,
+    "INR": 83.12,
+    "AED": 3.67,
+    "USD": 1,
+    "EUR": 0.92
+  }
+}

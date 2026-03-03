@@ -1,0 +1,6 @@
+{
+  "PK": { "indicator": "NY.GDP.PCAP.CD", "year": 2023, "value": 1600, "inflation": 24.0, "unemployment": 6.3 },
+  "IN": { "indicator": "NY.GDP.PCAP.CD", "year": 2023, "value": 2600, "inflation": 5.4, "unemployment": 7.2 },
+  "AE": { "indicator": "NY.GDP.PCAP.CD", "year": 2023, "value": 43000, "inflation": 3.1, "unemployment": 2.9 },
+  "US": { "indicator": "NY.GDP.PCAP.CD", "year": 2023, "value": 76000, "inflation": 4.2, "unemployment": 3.7 }
+}

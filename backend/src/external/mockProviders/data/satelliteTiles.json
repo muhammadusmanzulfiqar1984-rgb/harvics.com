@@ -1,0 +1,68 @@
+{
+  "PK": {
+    "tiles": [
+      { "tileId": "PK-KHI-001", "centerLat": 24.8607, "centerLng": 67.0011, "approxPopulation": 25000, "urbanDensityScore": 0.82, "roadAccessScore": 0.74, "retailerCount": 12, "totalSales": 54000, "coverageScore": 0.41, "whiteSpace": true },
+      { "tileId": "PK-LHE-002", "centerLat": 31.5204, "centerLng": 74.3587, "approxPopulation": 31000, "urbanDensityScore": 0.91, "roadAccessScore": 0.81, "retailerCount": 18, "totalSales": 88000, "coverageScore": 0.67, "whiteSpace": false }
+    ],
+    "roads": [
+      { "name": "N-5 Corridor", "path": [[24.8607, 67.0011], [25.4000, 68.2000]] }
+    ]
+  },
+  "IN": {
+    "tiles": [
+      { "tileId": "IN-MUM-001", "centerLat": 19.076, "centerLng": 72.8777, "approxPopulation": 52000, "urbanDensityScore": 0.94, "roadAccessScore": 0.88, "retailerCount": 24, "totalSales": 132000, "coverageScore": 0.73, "whiteSpace": false },
+      { "tileId": "IN-DEL-003", "centerLat": 28.6139, "centerLng": 77.209, "approxPopulation": 47000, "urbanDensityScore": 0.9, "roadAccessScore": 0.79, "retailerCount": 10, "totalSales": 42000, "coverageScore": 0.36, "whiteSpace": true }
+    ],
+    "roads": [
+      { "name": "Golden Quadrilateral", "path": [[19.076, 72.8777], [21.1458, 79.0882], [22.5726, 88.3639]] }
+    ]
+  },
+  "AE": {
+    "tiles": [
+      { "tileId": "AE-DXB-001", "centerLat": 25.2048, "centerLng": 55.2708, "approxPopulation": 18000, "urbanDensityScore": 0.79, "roadAccessScore": 0.91, "retailerCount": 14, "totalSales": 91000, "coverageScore": 0.69, "whiteSpace": false },
+      { "tileId": "AE-AUH-002", "centerLat": 24.4539, "centerLng": 54.3773, "approxPopulation": 12000, "urbanDensityScore": 0.63, "roadAccessScore": 0.72, "retailerCount": 6, "totalSales": 31000, "coverageScore": 0.48, "whiteSpace": true }
+    ],
+    "roads": [
+      { "name": "Sheikh Zayed Road", "path": [[25.2048, 55.2708], [24.4539, 54.3773]] }
+    ]
+  },
+  "US": {
+    "tiles": [
+      { "tileId": "US-NYC-001", "centerLat": 40.7128, "centerLng": -74.006, "approxPopulation": 40000, "urbanDensityScore": 0.88, "roadAccessScore": 0.9, "retailerCount": 30, "totalSales": 210000, "coverageScore": 0.8, "whiteSpace": false },
+      { "tileId": "US-ATL-004", "centerLat": 33.749, "centerLng": -84.388, "approxPopulation": 22000, "urbanDensityScore": 0.62, "roadAccessScore": 0.68, "retailerCount": 8, "totalSales": 52000, "coverageScore": 0.43, "whiteSpace": true }
+    ],
+    "roads": [
+      { "name": "I-95 Corridor", "path": [[40.7128, -74.006], [38.9072, -77.0369], [34.0522, -118.2437]] }
+    ]
+  },
+  "ES": {
+    "tiles": [
+      { "tileId": "ES-MAD-001", "centerLat": 40.4168, "centerLng": -3.7038, "approxPopulation": 28000, "urbanDensityScore": 0.81, "roadAccessScore": 0.85, "retailerCount": 16, "totalSales": 98000, "coverageScore": 0.7, "whiteSpace": false },
+      { "tileId": "ES-BCN-002", "centerLat": 41.3874, "centerLng": 2.1686, "approxPopulation": 26000, "urbanDensityScore": 0.79, "roadAccessScore": 0.83, "retailerCount": 12, "totalSales": 72000, "coverageScore": 0.6, "whiteSpace": false },
+      { "tileId": "ES-CNV-003", "centerLat": 28.1235, "centerLng": -15.4363, "approxPopulation": 14000, "urbanDensityScore": 0.55, "roadAccessScore": 0.58, "retailerCount": 5, "totalSales": 18000, "coverageScore": 0.34, "whiteSpace": true }
+    ],
+    "roads": [
+      { "name": "Autovía A-2", "path": [[40.4168, -3.7038], [41.3874, 2.1686]] }
+    ]
+  },
+  "CA": {
+    "tiles": [
+      { "tileId": "CA-TOR-001", "centerLat": 43.6532, "centerLng": -79.3832, "approxPopulation": 22000, "urbanDensityScore": 0.73, "roadAccessScore": 0.82, "retailerCount": 14, "totalSales": 86000, "coverageScore": 0.68, "whiteSpace": false },
+      { "tileId": "CA-MTL-002", "centerLat": 45.5017, "centerLng": -73.5673, "approxPopulation": 18000, "urbanDensityScore": 0.69, "roadAccessScore": 0.74, "retailerCount": 9, "totalSales": 52000, "coverageScore": 0.52, "whiteSpace": false },
+      { "tileId": "CA-ATL-003", "centerLat": 44.6488, "centerLng": -63.5752, "approxPopulation": 9000, "urbanDensityScore": 0.42, "roadAccessScore": 0.48, "retailerCount": 4, "totalSales": 16000, "coverageScore": 0.28, "whiteSpace": true }
+    ],
+    "roads": [
+      { "name": "Highway 401", "path": [[43.6532, -79.3832], [45.4215, -75.6972]] }
+    ]
+  },
+  "OM": {
+    "tiles": [
+      { "tileId": "OM-MCT-001", "centerLat": 23.5880, "centerLng": 58.3829, "approxPopulation": 9000, "urbanDensityScore": 0.58, "roadAccessScore": 0.69, "retailerCount": 7, "totalSales": 31000, "coverageScore": 0.55, "whiteSpace": false },
+      { "tileId": "OM-SOH-002", "centerLat": 24.3396, "centerLng": 56.7280, "approxPopulation": 6000, "urbanDensityScore": 0.44, "roadAccessScore": 0.57, "retailerCount": 3, "totalSales": 11000, "coverageScore": 0.33, "whiteSpace": true },
+      { "tileId": "OM-SLL-003", "centerLat": 17.0187, "centerLng": 54.0897, "approxPopulation": 7000, "urbanDensityScore": 0.38, "roadAccessScore": 0.42, "retailerCount": 2, "totalSales": 7000, "coverageScore": 0.21, "whiteSpace": true }
+    ],
+    "roads": [
+      { "name": "Sultan Qaboos Hwy", "path": [[23.5880, 58.3829], [24.3396, 56.7280]] }
+    ]
+  }
+}

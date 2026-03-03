@@ -1,0 +1,565 @@
+import { CountryProfile } from './localisation.types';
+
+export const countryProfiles = [
+  {
+    code: 'US',
+    name: 'United States',
+    region: 'North America',
+    population: 333_000_000,
+    gdpPerCapitaUSD: 76000,
+    fxRateToUSD: 1,
+    foodBeverageImportsUSD: 210_000_000_000,
+    taxModel: { vat: 0, gst: 0, customsDuty: 2.5 },
+    marketType: 'developed',
+    skuStrategy: 'Premium multi-pack with club channel focus',
+    paymentMethods: ['Credit Card', 'ACH', 'Apple Pay', 'PayPal'],
+    distributorStructure: 'regional wholesalers with DSD fleets',
+    logisticsComplexityScore: 4,
+    notes: 'High automation, advanced cold chain coverage',
+    cultural: {
+      dietaryRestrictions: ['vegan', 'gluten-free'],
+      diningHabits: 'On-the-go breakfast, heavy dinner',
+      seasonalEvents: [
+        { name: 'Super Bowl', month: 'February', productFocus: 'Snacks & Beverages' },
+        { name: 'Thanksgiving', month: 'November', productFocus: 'Family Packs' }
+      ],
+      shoppingHabits: 'Weekly bulk buying at clubs (Costco/Sams)'
+    },
+    flavors: {
+      preferredProfiles: ['sweet', 'savory'],
+      spiceTolerance: 'medium',
+      sweetnessLevel: 'high',
+      popularIngredients: ['Cheese', 'Chocolate', 'Peanut Butter']
+    },
+    climate: {
+      type: 'temperate',
+      averageTempHigh: 25,
+      averageTempLow: 5
+    }
+  },
+  {
+    code: 'CA',
+    name: 'Canada',
+    region: 'North America',
+    population: 40_000_000,
+    gdpPerCapitaUSD: 52000,
+    fxRateToUSD: 0.75,
+    foodBeverageImportsUSD: 55_000_000_000,
+    taxModel: { vat: 5, gst: 5, customsDuty: 3 },
+    marketType: 'developed',
+    skuStrategy: 'Bilingual packaging, focus on sustainable packs',
+    paymentMethods: ['Interac', 'Credit Card', 'Apple Pay'],
+    distributorStructure: 'national DC + provincial sub-distributors',
+    logisticsComplexityScore: 5
+  },
+  {
+    code: 'MX',
+    name: 'Mexico',
+    region: 'North America',
+    population: 132_000_000,
+    gdpPerCapitaUSD: 10800,
+    fxRateToUSD: 0.059,
+    foodBeverageImportsUSD: 32_000_000_000,
+    taxModel: { vat: 16, gst: 0, customsDuty: 4 },
+    marketType: 'emerging',
+    skuStrategy: 'Value packs with convenience-lean packaging',
+    paymentMethods: ['Cash', 'SPEI', 'Credit Card', 'OXXO Pay'],
+    distributorStructure: 'layered with mom-and-pop wholesalers',
+    logisticsComplexityScore: 6
+  },
+  {
+    code: 'BR',
+    name: 'Brazil',
+    region: 'South America',
+    population: 215_000_000,
+    gdpPerCapitaUSD: 9200,
+    fxRateToUSD: 0.20,
+    foodBeverageImportsUSD: 21_000_000_000,
+    taxModel: { vat: 17, gst: 0, customsDuty: 9 },
+    marketType: 'emerging',
+    skuStrategy: 'Affordable SKUs with strong e-commerce bundles',
+    paymentMethods: ['PIX', 'Boleto', 'Credit Card'],
+    distributorStructure: 'state-level master distributors',
+    logisticsComplexityScore: 7
+  },
+  {
+    code: 'UK',
+    name: 'United Kingdom',
+    region: 'Europe',
+    population: 67_000_000,
+    gdpPerCapitaUSD: 46000,
+    fxRateToUSD: 1.25,
+    foodBeverageImportsUSD: 90_000_000_000,
+    taxModel: { vat: 20, gst: 0, customsDuty: 2 },
+    marketType: 'developed',
+    skuStrategy: 'Premium SKUs with sustainability claim front-of-pack',
+    paymentMethods: ['Faster Payments', 'Credit Card', 'Apple Pay'],
+    distributorStructure: 'hybrid direct-to-retail & wholesaler',
+    logisticsComplexityScore: 3
+  },
+  {
+    code: 'DE',
+    name: 'Germany',
+    region: 'Europe',
+    population: 84_000_000,
+    gdpPerCapitaUSD: 51500,
+    fxRateToUSD: 1.08,
+    foodBeverageImportsUSD: 95_000_000_000,
+    taxModel: { vat: 19, gst: 0, customsDuty: 2 },
+    marketType: 'developed',
+    skuStrategy: 'Discounters-focused multipacks',
+    paymentMethods: ['SEPA', 'Giropay', 'Credit Card'],
+    distributorStructure: 'DC centric with strong retailer-owned logistics',
+    logisticsComplexityScore: 3
+  },
+  {
+    code: 'FR',
+    name: 'France',
+    region: 'Europe',
+    population: 65_000_000,
+    gdpPerCapitaUSD: 43500,
+    fxRateToUSD: 1.08,
+    foodBeverageImportsUSD: 78_000_000_000,
+    taxModel: { vat: 20, gst: 0, customsDuty: 2 },
+    marketType: 'developed',
+    skuStrategy: 'Gourmet positioning, premium ingredients callout',
+    paymentMethods: ['SEPA', 'Carte Bancaire', 'Apple Pay'],
+    distributorStructure: 'DC + regional wholesalers',
+    logisticsComplexityScore: 4
+  },
+  {
+    code: 'ES',
+    name: 'Spain',
+    region: 'Europe',
+    population: 48_000_000,
+    gdpPerCapitaUSD: 34_000,
+    fxRateToUSD: 1.08,
+    foodBeverageImportsUSD: 54_000_000_000,
+    taxModel: { vat: 21, gst: 0, customsDuty: 2 },
+    marketType: 'developed',
+    skuStrategy: 'Mediterranean diet alignment, convenience formats',
+    paymentMethods: ['Bizum', 'SEPA', 'Credit Card'],
+    distributorStructure: 'national + island-specific distribution',
+    logisticsComplexityScore: 4
+  },
+  {
+    code: 'IT',
+    name: 'Italy',
+    region: 'Europe',
+    population: 59_000_000,
+    gdpPerCapitaUSD: 37_000,
+    fxRateToUSD: 1.08,
+    foodBeverageImportsUSD: 48_000_000_000,
+    taxModel: { vat: 22, gst: 0, customsDuty: 2 },
+    marketType: 'developed',
+    skuStrategy: 'Heritage-focused storytelling SKUs',
+    paymentMethods: ['SEPA', 'Credit Card', 'Apple Pay'],
+    distributorStructure: 'north-south split distributors',
+    logisticsComplexityScore: 4
+  },
+  {
+    code: 'AE',
+    name: 'United Arab Emirates',
+    region: 'Middle East',
+    population: 10_000_000,
+    gdpPerCapitaUSD: 43000,
+    fxRateToUSD: 0.27,
+    foodBeverageImportsUSD: 35_000_000_000,
+    taxModel: { vat: 5, gst: 0, customsDuty: 5 },
+    marketType: 'developed',
+    skuStrategy: 'Premium halal-certified multipacks',
+    paymentMethods: ['Apple Pay', 'Tabby', 'Cash on Delivery'],
+    distributorStructure: 'importer-led with re-export hubs',
+    logisticsComplexityScore: 5,
+    cultural: {
+      dietaryRestrictions: ['halal'],
+      diningHabits: 'Late night dining, Mall culture',
+      seasonalEvents: [
+        { name: 'Ramadan', month: 'Variable', productFocus: 'Hydration & Energy' },
+        { name: 'Dubai Shopping Festival', month: 'January', productFocus: 'Gifting' }
+      ],
+      shoppingHabits: 'Mall-based hypermarkets & rapid delivery apps'
+    },
+    flavors: {
+      preferredProfiles: ['sweet', 'savory'],
+      spiceTolerance: 'medium',
+      sweetnessLevel: 'high',
+      popularIngredients: ['Dates', 'Saffron', 'Cardamom', 'Oud']
+    },
+    climate: {
+      type: 'arid',
+      averageTempHigh: 41,
+      averageTempLow: 15
+    }
+  },
+  {
+    code: 'IN',
+    name: 'India',
+    region: 'Asia',
+    population: 1_400_000_000,
+    gdpPerCapitaUSD: 2_400,
+    fxRateToUSD: 0.012,
+    foodBeverageImportsUSD: 25_000_000_000,
+    taxModel: { vat: 18, gst: 18, customsDuty: 30 },
+    marketType: 'emerging',
+    skuStrategy: 'Low-unit packs (Rs. 5/10) + Family packs for Modern Trade',
+    paymentMethods: ['UPI', 'Cash', 'Cards'],
+    distributorStructure: 'Super-stockists > Sub-stockists > Retail',
+    logisticsComplexityScore: 7,
+    notes: 'Massive general trade network, rapid quick-commerce growth',
+    cultural: {
+      dietaryRestrictions: ['vegetarian', 'halal'],
+      diningHabits: 'Family sharing, Street food snacking',
+      seasonalEvents: [
+        { name: 'Diwali', month: 'October/November', productFocus: 'Gifting / Sweets' },
+        { name: 'Holi', month: 'March', productFocus: 'Thandai / Sharbat' }
+      ],
+      shoppingHabits: 'Kirana stores & Quick Commerce apps'
+    },
+    flavors: {
+      preferredProfiles: ['spicy', 'sweet', 'masala'],
+      spiceTolerance: 'high',
+      sweetnessLevel: 'high',
+      popularIngredients: ['Cardamom', 'Saffron', 'Masala', 'Ginger']
+    },
+    climate: {
+      type: 'tropical',
+      averageTempHigh: 35,
+      averageTempLow: 20
+    }
+  },
+  {
+    code: 'CN',
+    name: 'China',
+    region: 'Asia',
+    population: 1_410_000_000,
+    gdpPerCapitaUSD: 12_500,
+    fxRateToUSD: 0.14,
+    foodBeverageImportsUSD: 120_000_000_000,
+    taxModel: { vat: 13, gst: 0, customsDuty: 10 },
+    marketType: 'developed-emerging',
+    skuStrategy: 'Premium gift boxes + Bulk online packs',
+    paymentMethods: ['WeChat Pay', 'Alipay'],
+    distributorStructure: 'Online platforms (Tmall/JD) dominant + regional distributors',
+    logisticsComplexityScore: 5,
+    notes: 'Highly digital, health-conscious urban consumers',
+    cultural: {
+      dietaryRestrictions: [],
+      diningHabits: 'Group dining, Tea culture',
+      seasonalEvents: [
+        { name: 'Lunar New Year', month: 'January/February', productFocus: 'Premium Gift Sets' },
+        { name: 'Mid-Autumn Festival', month: 'September', productFocus: 'Mooncakes / Pastries' }
+      ],
+      shoppingHabits: 'Livestream shopping & O2O'
+    },
+    flavors: {
+      preferredProfiles: ['savory', 'umami', 'spicy (regional)'],
+      spiceTolerance: 'medium',
+      sweetnessLevel: 'medium',
+      popularIngredients: ['Tea', 'Soy', 'Chili oil', 'Jujube']
+    },
+    climate: {
+      type: 'continental',
+      averageTempHigh: 30,
+      averageTempLow: -5
+    }
+  },
+  {
+    code: 'GB',
+    name: 'United Kingdom',
+    region: 'Europe',
+    population: 67_000_000,
+    gdpPerCapitaUSD: 46_000,
+    fxRateToUSD: 1.27,
+    foodBeverageImportsUSD: 60_000_000_000,
+    taxModel: { vat: 20, gst: 0, customsDuty: 5 },
+    marketType: 'developed',
+    skuStrategy: 'Single serve on-the-go + Weekly grocery packs',
+    paymentMethods: ['Contactless', 'Card', 'Apple Pay'],
+    distributorStructure: 'Supermarket chains (Tesco/Sainsburys) dominant',
+    logisticsComplexityScore: 3,
+    notes: 'High private label competition, HFSS regulations',
+    cultural: {
+      dietaryRestrictions: ['vegan', 'gluten-free'],
+      diningHabits: 'Ready meals, Pub culture, Tea time',
+      seasonalEvents: [
+        { name: 'Christmas', month: 'December', productFocus: 'Festive Treats' },
+        { name: 'Easter', month: 'April', productFocus: 'Chocolate' }
+      ],
+      shoppingHabits: 'Supermarkets & Online Grocery'
+    },
+    flavors: {
+      preferredProfiles: ['savory', 'sweet', 'herbal'],
+      spiceTolerance: 'medium',
+      sweetnessLevel: 'medium',
+      popularIngredients: ['Tea', 'Chocolate', 'Potato', 'Berries']
+    },
+    climate: {
+      type: 'temperate',
+      averageTempHigh: 22,
+      averageTempLow: 2
+    }
+  },
+  {
+    code: 'OM',
+    name: 'Oman',
+    region: 'Middle East',
+    population: 5_300_000,
+    gdpPerCapitaUSD: 18_000,
+    fxRateToUSD: 0.26,
+    foodBeverageImportsUSD: 6_200_000_000,
+    taxModel: { vat: 5, gst: 0, customsDuty: 5 },
+    marketType: 'emerging',
+    skuStrategy: 'Port-driven premium halal beverage multipacks',
+    paymentMethods: ['Bank Transfer', 'Debit Card', 'Apple Pay'],
+    distributorStructure: 'Muscat-led importers with Salalah re-export hubs',
+    logisticsComplexityScore: 5
+  },
+  {
+    code: 'SA',
+    name: 'Saudi Arabia',
+    region: 'Middle East',
+    population: 36_000_000,
+    gdpPerCapitaUSD: 28_000,
+    fxRateToUSD: 0.27,
+    foodBeverageImportsUSD: 45_000_000_000,
+    taxModel: { vat: 15, gst: 0, customsDuty: 5 },
+    marketType: 'emerging',
+    skuStrategy: 'Family value packs with halal compliance',
+    paymentMethods: ['Mada', 'Apple Pay', 'Cash'],
+    distributorStructure: 'royal-approved master distributors',
+    logisticsComplexityScore: 6
+  },
+  {
+    code: 'PK',
+    name: 'Pakistan',
+    region: 'Asia',
+    population: 241_000_000,
+    gdpPerCapitaUSD: 1_700,
+    fxRateToUSD: 0.0036,
+    foodBeverageImportsUSD: 8_500_000_000,
+    taxModel: { vat: 17, gst: 0, customsDuty: 18 },
+    marketType: 'frontier',
+    skuStrategy: 'Value energy drinks + multi-pack biscuits for rural GT',
+    paymentMethods: ['Cash', 'Bank Transfer', 'JazzCash', 'Easypaisa'],
+    distributorStructure: 'three-tier provincial hubs feeding rural spokes',
+    logisticsComplexityScore: 8,
+    notes: 'High wholesale dependence, cold-chain gaps outside metros',
+    cultural: {
+      dietaryRestrictions: ['halal'],
+      diningHabits: 'Large family dinners, Chai culture',
+      seasonalEvents: [
+        { name: 'Ramadan', month: 'Variable', productFocus: 'Rooh Afza / Syrups' },
+        { name: 'Eid', month: 'Variable', productFocus: 'Sweets & Confectionery' }
+      ],
+      shoppingHabits: 'Daily fresh markets & Kirana stores'
+    },
+    flavors: {
+      preferredProfiles: ['spicy', 'savory', 'sweet'],
+      spiceTolerance: 'high',
+      sweetnessLevel: 'high',
+      popularIngredients: ['Chili', 'Masala', 'Mango', 'Rose']
+    },
+    climate: {
+      type: 'arid',
+      averageTempHigh: 38,
+      averageTempLow: 10
+    }
+  },
+  {
+    code: 'IN',
+    name: 'India',
+    region: 'Asia',
+    population: 1_420_000_000,
+    gdpPerCapitaUSD: 2600,
+    fxRateToUSD: 0.012,
+    foodBeverageImportsUSD: 28_000_000_000,
+    taxModel: { vat: 0, gst: 18, customsDuty: 10 },
+    marketType: 'emerging',
+    skuStrategy: 'Sachet economics with regional flavor variants',
+    paymentMethods: ['UPI', 'Paytm', 'Cash on Delivery'],
+    distributorStructure: 'multi-tier rural + urban GTM',
+    logisticsComplexityScore: 8
+  },
+  {
+    code: 'CN',
+    name: 'China',
+    region: 'Asia',
+    population: 1_410_000_000,
+    gdpPerCapitaUSD: 12600,
+    fxRateToUSD: 0.14,
+    foodBeverageImportsUSD: 110_000_000_000,
+    taxModel: { vat: 13, gst: 0, customsDuty: 9 },
+    marketType: 'emerging',
+    skuStrategy: 'O2O hybrid pack, Tmall-ready listings',
+    paymentMethods: ['Alipay', 'WeChat Pay', 'UnionPay'],
+    distributorStructure: 'province-led dealer network',
+    logisticsComplexityScore: 7
+  },
+  {
+    code: 'JP',
+    name: 'Japan',
+    region: 'Asia',
+    population: 125_000_000,
+    gdpPerCapitaUSD: 42300,
+    fxRateToUSD: 0.0071,
+    foodBeverageImportsUSD: 70_000_000_000,
+    taxModel: { vat: 10, gst: 0, customsDuty: 3 },
+    marketType: 'developed',
+    skuStrategy: 'Hyper-convenience SKUs for konbini channel',
+    paymentMethods: ['Suica', 'Credit Card', 'PayPay'],
+    distributorStructure: 'retailer-owned DC clusters',
+    logisticsComplexityScore: 3
+  },
+  {
+    code: 'KR',
+    name: 'South Korea',
+    region: 'Asia',
+    population: 52_000_000,
+    gdpPerCapitaUSD: 34600,
+    fxRateToUSD: 0.00076,
+    foodBeverageImportsUSD: 35_000_000_000,
+    taxModel: { vat: 10, gst: 0, customsDuty: 5 },
+    marketType: 'developed',
+    skuStrategy: 'K-beauty inspired wellness FMCG SKUs',
+    paymentMethods: ['Kakao Pay', 'Credit Card', 'Naver Pay'],
+    distributorStructure: 'chaebol-aligned distribution',
+    logisticsComplexityScore: 4
+  },
+  {
+    code: 'AU',
+    name: 'Australia',
+    region: 'Oceania',
+    population: 26_000_000,
+    gdpPerCapitaUSD: 66_000,
+    fxRateToUSD: 0.67,
+    foodBeverageImportsUSD: 21_000_000_000,
+    taxModel: { vat: 0, gst: 10, customsDuty: 5 },
+    marketType: 'developed',
+    skuStrategy: 'Health-forward SKUs with recyclable packaging',
+    paymentMethods: ['PayID', 'Credit Card', 'Apple Pay'],
+    distributorStructure: 'duopoly grocery + independent network',
+    logisticsComplexityScore: 5
+  },
+  {
+    code: 'ZA',
+    name: 'South Africa',
+    region: 'Africa',
+    population: 60_000_000,
+    gdpPerCapitaUSD: 6800,
+    fxRateToUSD: 0.054,
+    foodBeverageImportsUSD: 13_000_000_000,
+    taxModel: { vat: 15, gst: 0, customsDuty: 7 },
+    marketType: 'emerging',
+    skuStrategy: 'Entry-price SKUs with fortified claims',
+    paymentMethods: ['EFT', 'Mobile Money', 'Cash'],
+    distributorStructure: 'urban DC + township micro-distributors',
+    logisticsComplexityScore: 7
+  },
+  {
+    code: 'NG',
+    name: 'Nigeria',
+    region: 'Africa',
+    population: 223_000_000,
+    gdpPerCapitaUSD: 2400,
+    fxRateToUSD: 0.0022,
+    foodBeverageImportsUSD: 10_000_000_000,
+    taxModel: { vat: 7.5, gst: 0, customsDuty: 12 },
+    marketType: 'frontier',
+    skuStrategy: 'Affordable sachets for open market',
+    paymentMethods: ['Cash', 'POS Agents', 'PAGA'],
+    distributorStructure: 'informal wholesaler hubs',
+    logisticsComplexityScore: 9
+  },
+  {
+    code: 'KE',
+    name: 'Kenya',
+    region: 'Africa',
+    population: 54_000_000,
+    gdpPerCapitaUSD: 2100,
+    fxRateToUSD: 0.0070,
+    foodBeverageImportsUSD: 6_500_000_000,
+    taxModel: { vat: 16, gst: 0, customsDuty: 10 },
+    marketType: 'frontier',
+    skuStrategy: 'M-Pesa enabled D2C bundles',
+    paymentMethods: ['M-Pesa', 'Cash', 'Card'],
+    distributorStructure: 'county-level aggregators',
+    logisticsComplexityScore: 7
+  },
+  {
+    code: 'EG',
+    name: 'Egypt',
+    region: 'Africa',
+    population: 110_000_000,
+    gdpPerCapitaUSD: 4200,
+    fxRateToUSD: 0.032,
+    foodBeverageImportsUSD: 16_000_000_000,
+    taxModel: { vat: 14, gst: 0, customsDuty: 12 },
+    marketType: 'emerging',
+    skuStrategy: 'Desert climate-stable SKUs',
+    paymentMethods: ['Cash', 'Meeza', 'Vodafone Cash'],
+    distributorStructure: 'importers with national fleets',
+    logisticsComplexityScore: 8
+  },
+  {
+    code: 'ID',
+    name: 'Indonesia',
+    region: 'Asia',
+    population: 277_000_000,
+    gdpPerCapitaUSD: 4800,
+    fxRateToUSD: 0.000065,
+    foodBeverageImportsUSD: 24_000_000_000,
+    taxModel: { vat: 11, gst: 0, customsDuty: 5 },
+    marketType: 'emerging',
+    skuStrategy: 'Island-specific pack sizes with humidity control',
+    paymentMethods: ['GoPay', 'OVO', 'Cash'],
+    distributorStructure: 'archipelago-based micro distributors',
+    logisticsComplexityScore: 8
+  },
+  {
+    code: 'VN',
+    name: 'Vietnam',
+    region: 'Asia',
+    population: 99_000_000,
+    gdpPerCapitaUSD: 4200,
+    fxRateToUSD: 0.000041,
+    foodBeverageImportsUSD: 18_000_000_000,
+    taxModel: { vat: 10, gst: 0, customsDuty: 8 },
+    marketType: 'emerging',
+    skuStrategy: 'Convenience-led SKUs for rapid urbanization',
+    paymentMethods: ['Momo', 'Zalo Pay', 'Cash'],
+    distributorStructure: 'city hubs feeding motorbike delivery',
+    logisticsComplexityScore: 6
+  },
+  {
+    code: 'PH',
+    name: 'Philippines',
+    region: 'Asia',
+    population: 118_000_000,
+    gdpPerCapitaUSD: 3800,
+    fxRateToUSD: 0.018,
+    foodBeverageImportsUSD: 15_000_000_000,
+    taxModel: { vat: 12, gst: 0, customsDuty: 7 },
+    marketType: 'emerging',
+    skuStrategy: 'Typhoon-resistant packaging, sachet-first',
+    paymentMethods: ['GCash', 'Maya', 'Cash'],
+    distributorStructure: 'island cluster distributors',
+    logisticsComplexityScore: 8
+  },
+  {
+    code: 'TR',
+    name: 'Turkey',
+    region: 'Europe/Asia',
+    population: 86_000_000,
+    gdpPerCapitaUSD: 10600,
+    fxRateToUSD: 0.031,
+    foodBeverageImportsUSD: 22_000_000_000,
+    taxModel: { vat: 18, gst: 0, customsDuty: 6 },
+    marketType: 'emerging',
+    skuStrategy: 'Halal-compliant with inflation-proof pack sizes',
+    paymentMethods: ['FAST', 'Credit Card', 'Cash on Delivery'],
+    distributorStructure: 'east-west split distributor alliances',
+    logisticsComplexityScore: 6
+  }
+] as const satisfies CountryProfile[];
+

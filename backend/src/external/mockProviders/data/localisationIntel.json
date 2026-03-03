@@ -1,0 +1,463 @@
+{
+  "US": {
+    "channelMix": [
+      { "channel": "Modern Trade", "share": 42, "growth": 4 },
+      { "channel": "General Trade", "share": 18, "growth": 2 },
+      { "channel": "E-commerce", "share": 25, "growth": 8 },
+      { "channel": "HORECA", "share": 15, "growth": 3 }
+    ],
+    "competitors": [
+      { "name": "PepsiCo", "share": 22, "focus": "Beverages & Snacks" },
+      { "name": "Mondelez", "share": 18, "focus": "Confectionery" },
+      { "name": "Nestlé USA", "share": 16, "focus": "Nutrition" },
+      { "name": "Private Label", "share": 14, "focus": "Value retail" }
+    ],
+    "skuStructure": [
+      { "tier": "Premium", "share": 34, "heroSkus": ["Energy Infusion 500ml", "Protein Crunch 8pk"] },
+      { "tier": "Mid", "share": 46, "heroSkus": ["Sparkle Soda 330ml", "Harvics Wafer 4pk"] },
+      { "tier": "Value", "share": 20, "heroSkus": ["Everyday Wafer 55g", "Hydrate Sachet 20g"] }
+    ],
+    "procurement": {
+      "hotspots": [
+        { "region": "Midwest USA", "materials": ["Corn Syrup", "Aluminium Cans"] },
+        { "region": "Southeast Asia", "materials": ["Cocoa", "Palm Oil"] }
+      ],
+      "suppliers": [
+        { "name": "NorthAgro Commodities", "category": "Sugar", "reliability": "High" },
+        { "name": "SinoPack Metals", "category": "Packaging", "reliability": "Medium" }
+      ],
+      "riskLevel": "Low"
+    },
+    "tradeFlows": [
+      { "hsCode": "2202", "description": "Non-alcoholic beverages", "importUSD": 120000000, "exportUSD": 80000000 },
+      { "hsCode": "1905", "description": "Baked goods", "importUSD": 64000000, "exportUSD": 72000000 },
+      { "hsCode": "1704", "description": "Confectionery", "importUSD": 54000000, "exportUSD": 47000000 }
+    ],
+    "gpsCoverage": {
+      "retailers": 5200,
+      "coveragePercent": 82,
+      "activeRoutes": 148,
+      "priorityCities": ["Los Angeles", "Houston", "Miami"]
+    },
+    "satellite": {
+      "whitespaces": 6,
+      "densityIndex": 0.78,
+      "priorityZones": ["Phoenix Metro", "Inland Empire", "Raleigh"]
+    },
+    "aiStrategy": {
+      "thesis": "Scale premium hydration & protein snacking in coastal metros.",
+      "focusPillars": ["Premiumization", "Retail media", "Cold-chain execution"],
+      "nextBestActions": [
+        "Activate club-exclusive multipacks",
+        "Bundle Instacart promotions with geo fencing",
+        "Expand Hispanic-focused flavours in Texas"
+      ],
+      "demandPulse": [
+        { "region": "Texas Sunbelt", "score": 89 },
+        { "region": "Pacific Northwest", "score": 76 }
+      ]
+    },
+    "demandPockets": [
+      { "region": "Miami-Dade", "velocity": "1.4x", "focusSKU": "Isotonic 500ml" },
+      { "region": "Phoenix East Valley", "velocity": "1.3x", "focusSKU": "Electrolyte sachet" }
+    ],
+    "payments": [
+      { "name": "Apple Pay", "status": "active", "priority": 1 },
+      { "name": "PayPal", "status": "active", "priority": 2 },
+      { "name": "ACH", "status": "active", "priority": 3 }
+    ]
+  },
+  "AE": {
+    "channelMix": [
+      { "channel": "Modern Trade", "share": 48, "growth": 6 },
+      { "channel": "General Trade", "share": 22, "growth": 2 },
+      { "channel": "Travel Retail", "share": 12, "growth": 5 },
+      { "channel": "E-commerce", "share": 18, "growth": 9 }
+    ],
+    "competitors": [
+      { "name": "Almarai", "share": 19, "focus": "Dairy & beverages" },
+      { "name": "IFFCO", "share": 15, "focus": "Spreads & culinary" },
+      { "name": "Britannia ME", "share": 11, "focus": "Bakery" }
+    ],
+    "skuStructure": [
+      { "tier": "Premium", "share": 46, "heroSkus": ["Halal Energy Gold", "Luxury Wafer 6pk"] },
+      { "tier": "Mid", "share": 38, "heroSkus": ["Date-Infused Drink", "Desert Crunch"] },
+      { "tier": "Value", "share": 16, "heroSkus": ["Everyday Juice 125ml", "Budget Biscuit 40g"] }
+    ],
+    "procurement": {
+      "hotspots": [
+        { "region": "Jebel Ali Free Zone", "materials": ["Packaging", "Sweeteners"] },
+        { "region": "India West Coast", "materials": ["Spices", "Tea Extracts"] }
+      ],
+      "suppliers": [
+        { "name": "Dubai Commodities Hub", "category": "Re-export base", "reliability": "High" },
+        { "name": "Kerala Spice Board", "category": "Spices", "reliability": "Medium" }
+      ],
+      "riskLevel": "Medium"
+    },
+    "tradeFlows": [
+      { "hsCode": "2106", "description": "Food preparations", "importUSD": 42000000, "exportUSD": 36000000 },
+      { "hsCode": "1905", "description": "Bakery products", "importUSD": 31000000, "exportUSD": 18000000 }
+    ],
+    "gpsCoverage": {
+      "retailers": 1800,
+      "coveragePercent": 74,
+      "activeRoutes": 72,
+      "priorityCities": ["Dubai", "Abu Dhabi", "Sharjah"]
+    },
+    "satellite": {
+      "whitespaces": 4,
+      "densityIndex": 0.69,
+      "priorityZones": ["Eastern Mangroves", "Al Ain west"]
+    },
+    "aiStrategy": {
+      "thesis": "Anchor Harvics as premium halal FMCG for GCC re-export.",
+      "focusPillars": ["Travel hubs", "Digital convenience", "Halal certification"],
+      "nextBestActions": [
+        "Launch exclusives in DXB & AUH airports",
+        "Bundle Tabby/Apple Pay offers for quick commerce",
+        "Deploy refrigerated micro-warehouses near ports"
+      ],
+      "demandPulse": [
+        { "region": "Dubai Marina", "score": 88 },
+        { "region": "Ajman", "score": 71 }
+      ]
+    },
+    "demandPockets": [
+      { "region": "Dubai South Logistics", "velocity": "1.5x", "focusSKU": "Halal Energy Gold" }
+    ],
+    "payments": [
+      { "name": "Apple Pay", "status": "active", "priority": 1 },
+      { "name": "Tabby", "status": "active", "priority": 2 },
+      { "name": "Google Pay", "status": "testing", "priority": 3 }
+    ]
+  },
+  "IN": {
+    "channelMix": [
+      { "channel": "General Trade", "share": 55, "growth": 3 },
+      { "channel": "Modern Trade", "share": 18, "growth": 6 },
+      { "channel": "E-commerce / Quick Commerce", "share": 17, "growth": 14 },
+      { "channel": "HORECA", "share": 10, "growth": 4 }
+    ],
+    "competitors": [
+      { "name": "ITC Foods", "share": 17, "focus": "Snacks & staples" },
+      { "name": "HUL", "share": 15, "focus": "Beverages & culinary" },
+      { "name": "Britannia", "share": 13, "focus": "Biscuits" }
+    ],
+    "skuStructure": [
+      { "tier": "Premium", "share": 18, "heroSkus": ["Metro Mix 4-in-1", "Protein+ Sachet"] },
+      { "tier": "Mid", "share": 44, "heroSkus": ["Masala Wafer 45g", "Hydra Pop 250ml"] },
+      { "tier": "Value", "share": 38, "heroSkus": ["Rural Energy 90ml", "Everyday Biscuit 10Rs"] }
+    ],
+    "procurement": {
+      "hotspots": [
+        { "region": "Gujarat", "materials": ["Groundnuts", "Spices"] },
+        { "region": "Andhra Pradesh", "materials": ["Fruit pulp"] }
+      ],
+      "suppliers": [
+        { "name": "Navsari Agro Co-op", "category": "Peanuts", "reliability": "Medium" },
+        { "name": "Vizag Agro Terminals", "category": "Fruit Pulp", "reliability": "High" }
+      ],
+      "riskLevel": "High"
+    },
+    "tradeFlows": [
+      { "hsCode": "2106", "description": "Food preparations", "importUSD": 26000000, "exportUSD": 19000000 },
+      { "hsCode": "2202", "description": "Non-alcoholic beverages", "importUSD": 18000000, "exportUSD": 22000000 }
+    ],
+    "gpsCoverage": {
+      "retailers": 9800,
+      "coveragePercent": 61,
+      "activeRoutes": 320,
+      "priorityCities": ["Mumbai", "Bengaluru", "Lucknow"]
+    },
+    "satellite": {
+      "whitespaces": 12,
+      "densityIndex": 0.54,
+      "priorityZones": ["Uttar Pradesh East", "Telangana Rural", "Assam Upper Valley"]
+    },
+    "aiStrategy": {
+      "thesis": "Lead sachet-first value packs while capturing premium quick commerce baskets.",
+      "focusPillars": ["UPI-first commerce", "Regional flavours", "Heat-stable SKUs"],
+      "nextBestActions": [
+        "Deploy micro-distributors in tier-2 cities",
+        "Bundle UPI cashback with Harvics Pantry",
+        "Launch millet-based limited editions"
+      ],
+      "demandPulse": [
+        { "region": "Delhi NCR", "score": 82 },
+        { "region": "Hyderabad", "score": 74 }
+      ]
+    },
+    "demandPockets": [
+      { "region": "Lucknow GT belt", "velocity": "1.6x", "focusSKU": "Masala Wafer 45g" },
+      { "region": "Chennai Q-Commerce", "velocity": "1.3x", "focusSKU": "Hydra Pop 250ml" }
+    ],
+    "payments": [
+      { "name": "UPI", "status": "active", "priority": 1 },
+      { "name": "Paytm", "status": "active", "priority": 2 },
+      { "name": "Cash on Delivery", "status": "active", "priority": 3 }
+    ]
+  },
+  "PK": {
+    "channelMix": [
+      { "channel": "General Trade", "share": 62, "growth": 2 },
+      { "channel": "Modern Trade", "share": 18, "growth": 5 },
+      { "channel": "Wholesale Cash & Carry", "share": 12, "growth": 3 },
+      { "channel": "Quick Commerce", "share": 8, "growth": 9 }
+    ],
+    "competitors": [
+      { "name": "PepsiCo Pakistan", "share": 19, "focus": "Beverages" },
+      { "name": "Engro Foods", "share": 11, "focus": "Dairy & RTD" },
+      { "name": "Bisconni", "share": 9, "focus": "Biscuits & snacks" }
+    ],
+    "skuStructure": [
+      { "tier": "Value", "share": 54, "heroSkus": ["Energy 250ml PK", "Value Wafer 12Rs"] },
+      { "tier": "Mid", "share": 32, "heroSkus": ["Metro Biscuit 6 pack", "Isotonic 500ml"] },
+      { "tier": "Premium", "share": 14, "heroSkus": ["Executive Gift Box", "Date Infused Drink"] }
+    ],
+    "procurement": {
+      "hotspots": [
+        { "region": "Karachi Port", "materials": ["Palm oil", "Sweeteners"] },
+        { "region": "Punjab Agro Belt", "materials": ["Wheat flour", "Dairy solids"] }
+      ],
+      "suppliers": [
+        { "name": "FFC Commodities", "category": "Packaging", "reliability": "Medium" },
+        { "name": "Punjab Agro Hub", "category": "Grains", "reliability": "High" }
+      ],
+      "riskLevel": "High"
+    },
+    "tradeFlows": [
+      { "hsCode": "2106", "description": "Food preparations", "importUSD": 12000000, "exportUSD": 4500000 },
+      { "hsCode": "2202", "description": "Beverages", "importUSD": 18000000, "exportUSD": 6000000 }
+    ],
+    "gpsCoverage": {
+      "retailers": 2800,
+      "coveragePercent": 58,
+      "activeRoutes": 96,
+      "priorityCities": ["Karachi", "Lahore", "Islamabad"]
+    },
+    "satellite": {
+      "whitespaces": 11,
+      "densityIndex": 0.48,
+      "priorityZones": ["Karachi West", "South Punjab", "Interior Sindh"]
+    },
+    "aiStrategy": {
+      "thesis": "Defend numeric distribution in GT while opening cold-chain ready SKUs in metro hubs.",
+      "focusPillars": ["Sachet to family pack bridge", "Energy drinks", "Rural telemetry"],
+      "nextBestActions": [
+        "Activate Punjab micro-distributors with GPS tracking",
+        "Bundle Ramadan value packs with rural POS",
+        "Pilot cold-chain scooters in Karachi South"
+      ],
+      "demandPulse": [
+        { "region": "Karachi South", "score": 77 },
+        { "region": "Central Punjab", "score": 69 }
+      ]
+    },
+    "demandPockets": [
+      { "region": "Rawalpindi GT belt", "velocity": "1.4x", "focusSKU": "Energy 250ml PK" },
+      { "region": "Hyderabad Rural", "velocity": "1.2x", "focusSKU": "Value Wafer 12Rs" }
+    ],
+    "payments": [
+      { "name": "JazzCash", "status": "active", "priority": 1 },
+      { "name": "Easypaisa", "status": "active", "priority": 2 },
+      { "name": "Bank Transfer", "status": "active", "priority": 3 }
+    ]
+  },
+  "ES": {
+    "channelMix": [
+      { "channel": "Modern Trade", "share": 52, "growth": 3 },
+      { "channel": "Convenience / Petrol", "share": 15, "growth": 4 },
+      { "channel": "E-commerce", "share": 18, "growth": 12 },
+      { "channel": "HORECA", "share": 15, "growth": 5 }
+    ],
+    "competitors": [
+      { "name": "Danone Iberia", "share": 14, "focus": "Dairy & beverages" },
+      { "name": "Gullón", "share": 12, "focus": "Biscuits" },
+      { "name": "Mercadona PL", "share": 17, "focus": "Private label" }
+    ],
+    "skuStructure": [
+      { "tier": "Premium", "share": 28, "heroSkus": ["Mediterranean Granola", "Sparkling Botanicals"] },
+      { "tier": "Mid", "share": 50, "heroSkus": ["Harvics Agua 330ml", "Tapas Cracker Box"] },
+      { "tier": "Value", "share": 22, "heroSkus": ["Everyday Biscuit 150g", "Family Juice 1L"] }
+    ],
+    "procurement": {
+      "hotspots": [
+        { "region": "Valencia Port", "materials": ["Olive oil blends", "Citrus"] },
+        { "region": "Andalusia", "materials": ["Fruits", "Herbs"] }
+      ],
+      "suppliers": [
+        { "name": "Mediterranean Agro Coop", "category": "Produce", "reliability": "High" },
+        { "name": "Barcelona Pack Lab", "category": "Packaging", "reliability": "Medium" }
+      ],
+      "riskLevel": "Low"
+    },
+    "tradeFlows": [
+      { "hsCode": "2009", "description": "Fruit juices", "importUSD": 32000000, "exportUSD": 41000000 },
+      { "hsCode": "1905", "description": "Bakery products", "importUSD": 28000000, "exportUSD": 36000000 }
+    ],
+    "gpsCoverage": {
+      "retailers": 2400,
+      "coveragePercent": 76,
+      "activeRoutes": 112,
+      "priorityCities": ["Madrid", "Barcelona", "Valencia"]
+    },
+    "satellite": {
+      "whitespaces": 5,
+      "densityIndex": 0.74,
+      "priorityZones": ["Galicia Coast", "Canary Islands", "Murcia rural"]
+    },
+    "aiStrategy": {
+      "thesis": "Premiumise hydration and tapas-friendly SKUs while using island distribution as test beds.",
+      "focusPillars": ["Convenience partnerships", "Island supply", "Digital retail media"],
+      "nextBestActions": [
+        "Launch limited tapas bundles in Madrid quick commerce",
+        "Build Tenerife cold chain micro hub",
+        "Co-invest in Carrefour retail media for verano packs"
+      ],
+      "demandPulse": [
+        { "region": "Catalonia", "score": 83 },
+        { "region": "Balearic Islands", "score": 71 }
+      ]
+    },
+    "demandPockets": [
+      { "region": "Costa del Sol tourism", "velocity": "1.5x", "focusSKU": "Sparkling Botanicals" }
+    ],
+    "payments": [
+      { "name": "Bizum", "status": "active", "priority": 1 },
+      { "name": "SEPA", "status": "active", "priority": 2 },
+      { "name": "Credit Card", "status": "active", "priority": 3 }
+    ]
+  },
+  "CA": {
+    "channelMix": [
+      { "channel": "Modern Trade", "share": 48, "growth": 2 },
+      { "channel": "Club & Wholesale", "share": 22, "growth": 3 },
+      { "channel": "E-commerce", "share": 20, "growth": 11 },
+      { "channel": "Convenience", "share": 10, "growth": 4 }
+    ],
+    "competitors": [
+      { "name": "Loblaw Control Brands", "share": 20, "focus": "Private label" },
+      { "name": "PepsiCo Canada", "share": 17, "focus": "Beverages & snacks" },
+      { "name": "Nestlé Canada", "share": 13, "focus": "Nutrition" }
+    ],
+    "skuStructure": [
+      { "tier": "Premium", "share": 32, "heroSkus": ["Maple Cold Brew 355ml", "Protein Bites 8ct"] },
+      { "tier": "Mid", "share": 46, "heroSkus": ["Harvics Sparkling 12pk", "Balanced Granola"] },
+      { "tier": "Value", "share": 22, "heroSkus": ["Everyday Wafer 200g", "Hydrate Sachet 15ct"] }
+    ],
+    "procurement": {
+      "hotspots": [
+        { "region": "Ontario Food Corridor", "materials": ["Maple, oats"] },
+        { "region": "British Columbia Ports", "materials": ["Packaging, concentrates"] }
+      ],
+      "suppliers": [
+        { "name": "Prairie Grains Coop", "category": "Grains", "reliability": "High" },
+        { "name": "Port Metro Logistics", "category": "Import hub", "reliability": "Medium" }
+      ],
+      "riskLevel": "Low"
+    },
+    "tradeFlows": [
+      { "hsCode": "2202", "description": "Beverages", "importUSD": 26000000, "exportUSD": 31000000 },
+      { "hsCode": "1905", "description": "Bakery", "importUSD": 21000000, "exportUSD": 24000000 }
+    ],
+    "gpsCoverage": {
+      "retailers": 1650,
+      "coveragePercent": 71,
+      "activeRoutes": 84,
+      "priorityCities": ["Toronto", "Montreal", "Vancouver"]
+    },
+    "satellite": {
+      "whitespaces": 6,
+      "densityIndex": 0.68,
+      "priorityZones": ["Prairie towns", "Atlantic Canada", "Northern Quebec"]
+    },
+    "aiStrategy": {
+      "thesis": "Use bilingual innovation and sustainability cues to win premium grocery and club.",
+      "focusPillars": ["Bilingual packaging", "Sustainability claims", "Cold-chain north"],
+      "nextBestActions": [
+        "Roll out compostable multipacks nationwide",
+        "Expand Quebec-specific flavours",
+        "Partner with Loblaws digital retail media"
+      ],
+      "demandPulse": [
+        { "region": "Greater Toronto Area", "score": 85 },
+        { "region": "Greater Vancouver", "score": 74 }
+      ]
+    },
+    "demandPockets": [
+      { "region": "Calgary Fitness Belt", "velocity": "1.3x", "focusSKU": "Protein Bites 8ct" }
+    ],
+    "payments": [
+      { "name": "Interac", "status": "active", "priority": 1 },
+      { "name": "Credit Card", "status": "active", "priority": 2 },
+      { "name": "Apple Pay", "status": "active", "priority": 3 }
+    ]
+  },
+  "OM": {
+    "channelMix": [
+      { "channel": "Modern Trade", "share": 46, "growth": 4 },
+      { "channel": "Travel Retail", "share": 16, "growth": 5 },
+      { "channel": "Convenience", "share": 20, "growth": 6 },
+      { "channel": "HORECA", "share": 18, "growth": 3 }
+    ],
+    "competitors": [
+      { "name": "Lulu Oman", "share": 21, "focus": "Hypermarket" },
+      { "name": "Almarai", "share": 16, "focus": "Dairy & beverages" },
+      { "name": "Mars GCC", "share": 9, "focus": "Confectionery" }
+    ],
+    "skuStructure": [
+      { "tier": "Premium", "share": 41, "heroSkus": ["Frankincense Infused Cola", "Halal Gourmet Biscuit"] },
+      { "tier": "Mid", "share": 37, "heroSkus": ["Cooling Isotonic 330ml", "Date Energy Squares"] },
+      { "tier": "Value", "share": 22, "heroSkus": ["Everyday Juice 200ml", "Family Wafer 24s"] }
+    ],
+    "procurement": {
+      "hotspots": [
+        { "region": "Port of Sohar", "materials": ["Packaging", "Sweeteners"] },
+        { "region": "Salalah Free Zone", "materials": ["Spices", "Dates"] }
+      ],
+      "suppliers": [
+        { "name": "Sohar Integrated Logistics", "category": "Import hub", "reliability": "High" },
+        { "name": "Dhofar Agro Collective", "category": "Dates & spices", "reliability": "Medium" }
+      ],
+      "riskLevel": "Medium"
+    },
+    "tradeFlows": [
+      { "hsCode": "2106", "description": "Food preparations", "importUSD": 9000000, "exportUSD": 4200000 },
+      { "hsCode": "2202", "description": "Beverages", "importUSD": 11000000, "exportUSD": 5000000 }
+    ],
+    "gpsCoverage": {
+      "retailers": 640,
+      "coveragePercent": 69,
+      "activeRoutes": 44,
+      "priorityCities": ["Muscat", "Sohar", "Salalah"]
+    },
+    "satellite": {
+      "whitespaces": 3,
+      "densityIndex": 0.66,
+      "priorityZones": ["Nizwa Highlands", "Duqm Economic Zone"]
+    },
+    "aiStrategy": {
+      "thesis": "Leverage re-export corridors while elevating travel retail exclusives.",
+      "focusPillars": ["Premium gifting", "Travel retail exclusives", "Cold-chain to Dhofar"],
+      "nextBestActions": [
+        "Bundle Muscat airport exclusives with GCC tourists",
+        "Expand Salalah cold storage for khareef season",
+        "Deploy Arabic-first digital shelf for Carrefour Oman"
+      ],
+      "demandPulse": [
+        { "region": "Muscat Capital", "score": 81 },
+        { "region": "Salalah Tourism", "score": 73 }
+      ]
+    },
+    "demandPockets": [
+      { "region": "Duqm Free Zone", "velocity": "1.4x", "focusSKU": "Cooling Isotonic 330ml" }
+    ],
+    "payments": [
+      { "name": "Debit Card", "status": "active", "priority": 1 },
+      { "name": "Apple Pay", "status": "active", "priority": 2 },
+      { "name": "Bank Transfer", "status": "active", "priority": 3 }
+    ]
+  }
+}
+

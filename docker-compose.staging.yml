@@ -1,0 +1,56 @@
+version: '3.9'
+
+services:
+  backend:
+    image: harvics/backend:latest
+    container_name: harvics-backend-staging
+    restart: unless-stopped
+    ports:
+      - "5001:5000"
+    env_file:
+      - .env.staging
+    environment:
+      - NODE_ENV=staging
+      - DATABASE_PATH=/app/data/harvics_staging.db
+    volumes:
+      - backend-data-staging:/app/data
+      - backend-logs-staging:/app/logs
+    networks:
+      - harvics-network-staging
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:5000/api/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  frontend:
+    image: harvics/frontend:latest
+    container_name: harvics-frontend-staging
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    env_file:
+      - .env.staging
+    environment:
+      - NODE_ENV=staging
+      - NEXT_PUBLIC_API_URL=http://backend:5000
+    networks:
+      - harvics-network-staging
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    depends_on:
+      - backend
+
+volumes:
+  backend-data-staging:
+  backend-logs-staging:
+
+networks:
+  harvics-network-staging:
+    driver: bridge
+

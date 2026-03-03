@@ -1,0 +1,76 @@
+SYSTEM STATE CAPTURE — HARVICS OS AUDIT REPORT
+
+SECTION A — EXISTING SYSTEM MAP
+1. TIERS / LAYERS:
+   - Tier-0: Intelligence Layer (Active, Strict Mode)
+   - Tier-1: Commercial Layer (Not Implemented)
+   - Tier-2: Operations Layer (Partially Implemented via Procurement)
+   - Tier-3: Finance & Risk Layer (Not Implemented, Inputs Only)
+   - Tier-4: Governance Layer (Not Implemented)
+
+2. ENGINES (Defined in IntelligenceNode):
+   - Market & Demand Engine
+   - Supplier Intelligence Engine
+   - Cost & Margin Engine
+   - Risk & Compliance Engine
+   - Localisation Rule Engine (Also exists as standalone `CountryRuleEngine`)
+
+3. CRMs:
+   - Procurement CRM (`ProcurementService`)
+   - Sales CRM (Missing - Types Only)
+
+4. DATA STORES (In-Memory Maps):
+   - `suppliers` (ProcurementService)
+   - `rfqs` (ProcurementService)
+   - `profiles` (CountryRuleEngine)
+
+SECTION B — INTELLIGENCE LAYER STATUS
+1. COMPONENTS:
+   - `IntelligenceNode` (Central Brain)
+   - `processTransaction` (Ingestion Pipeline: Normalize -> Validate)
+   - `compileDecisions` (Decision Compiler)
+   - 5 Internal Engines
+
+2. INPUTS (Defined in `IntelligenceContext`):
+   - Sales, Buyer, Procurement, Suppliers, Operations, Finance, Localisation, External.
+
+3. OUTPUTS:
+   - `DecisionOutput`: GO/NO-GO, Approved Suppliers, Pricing Corridor, Payment Structure, Compliance Clearance.
+   - Status: DECISION-GRADE (Machine-Actionable).
+
+SECTION C — PROCUREMENT & SALES SYSTEMS
+1. PROCUREMENT CRM:
+   - Exists: `ProcurementService`
+   - Elements: Supplier Onboarding, RFQ Management, Quote Submission.
+   - Status: BROKEN INTEGRATION. Calls deprecated `ingestData` method on IntelligenceNode.
+
+2. SALES CRM:
+   - Exists: NO.
+   - Status: Types only (`SalesSignal`).
+
+SECTION D — WORKFLOWS
+1. PROCUREMENT WORKFLOWS:
+   - Onboard Supplier -> Ingest (Broken)
+   - Create RFQ -> Ingest (Broken)
+   - Submit Quote -> Ingest (Broken)
+   - Status: Execution mixed with decisioning attempts.
+
+2. INTELLIGENCE WORKFLOWS:
+   - Transaction -> Normalize -> Validate -> Engines -> Decision.
+   - Status: Pure Decisioning (Correct).
+
+SECTION E — LOCALISATION STATUS
+1. LOGIC:
+   - `CountryRuleEngine` (Standalone Service)
+   - `LocalisationRuleEngine` (Intelligence Component)
+2. TYPE:
+   - Rule-based (8 Pillars: Language, Jurisdiction, Currency, Tax, Customs, Banking, Compliance, Culture).
+3. STATUS:
+   - Implemented and integrated into Intelligence.
+
+SECTION F — CONFLICTS & RISKS
+1. CRITICAL FAILURE: `ProcurementService` attempts to call `IntelligenceNode.ingestData`, which was removed in the strict architecture refactor. This will cause runtime errors.
+2. MISSING COMPONENT: Sales CRM does not exist, but Intelligence relies on `SalesSignal`.
+3. FEEDBACK LOOP: No mechanism to feed execution results back to Intelligence (Step 4 Missing).
+
+SYSTEM STATE CAPTURE COMPLETE — AWAITING ARCHITECT DECISION.

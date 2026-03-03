@@ -1,0 +1,62 @@
+{
+  "navTextiles": [
+    { "t": "Apparel", "items": ["Men's Wear", "Ladies' Wear", "Kids' Wear", "Sportswear"] },
+    { "t": "Home Textiles", "items": ["Bed Linen", "Bath Linen", "Curtains", "Kitchen"] },
+    { "t": "Fabrics", "items": ["Cotton", "Polyester", "Blends", "Denim"] },
+    { "t": "Accessories", "items": ["Scarves", "Bags", "Belts", "Shoes"] }
+  ],
+  "navFmcg": [
+    { "t": "Food", "items": ["Grains", "Spices", "Snacks", "Beverages"] },
+    { "t": "Personal Care", "items": ["Skincare", "Haircare", "Hygiene", "Cosmetics"] },
+    { "t": "Home Care", "items": ["Detergents", "Cleaners", "Paper", "Tools"] },
+    { "t": "Distribution", "items": ["Retail", "Wholesale", "Logistics", "Storage"] }
+  ],
+  "navSourcing": [
+    { "t": "Global Sourcing", "items": ["Supplier Discovery", "Vetting", "Negotiation"] },
+    { "t": "Quality Control", "items": ["Inspections", "Audits", "Testing"] },
+    { "t": "Logistics", "items": ["Freight", "Customs", "Warehousing"] },
+    { "t": "Consulting", "items": ["Strategy", "Optimization", "Risk Management"] }
+  ],
+  "navMinerals": [
+    { "t": "Metals", "items": ["Iron Ore", "Copper", "Aluminum", "Zinc"] },
+    { "t": "Energy", "items": ["Coal", "Uranium", "Lithium"] },
+    { "t": "Precious", "items": ["Gold", "Silver", "Platinum"] },
+    { "t": "Industrial", "items": ["Sand", "Gravel", "Limestone"] }
+  ],
+  "navCommodities": [
+    { "t": "Agri", "items": ["Wheat", "Rice", "Corn", "Soybeans"] },
+    { "t": "Energy", "items": ["Crude Oil", "Natural Gas", "LNG"] },
+    { "t": "Softs", "items": ["Coffee", "Cocoa", "Sugar", "Cotton"] },
+    { "t": "Metals", "items": ["Steel", "Copper", "Aluminum"] }
+  ],
+  "navIndustrial": [
+    { "t": "Chemicals", "items": ["Polymers", "Acids", "Solvents"] },
+    { "t": "Machinery", "items": ["Textile", "Food Processing", "Packaging"] },
+    { "t": "Safety", "items": ["PPE", "Lockout", "Fire"] },
+    { "t": "MRO", "items": ["Bearings", "Belts", "Tools"] }
+  ],
+  "navFinance": [
+    { "t": "Trade Finance", "items": ["LC", "SBLC", "Forfaiting"] },
+    { "t": "HPay", "items": ["Wallets", "Payments", "Gateway"] },
+    { "t": "Invoicing", "items": ["Bills", "Reconciliation", "Reports"] },
+    { "t": "Risk", "items": ["KYC", "AML", "Scoring"] }
+  ],
+  "navAI": [
+    { "t": "AI Solutions", "items": ["Forecasting", "Vision", "Chat"] },
+    { "t": "Data", "items": ["Pipelines", "Warehouses", "APIs"] },
+    { "t": "Integration", "items": ["ERP", "E-commerce", "Mobile"] },
+    { "t": "Support", "items": ["SLAs", "Training", "Docs"] }
+  ],
+  "navRealEstate": [
+    { "t": "Commercial", "items": ["Offices", "Retail", "Mixed Use"] },
+    { "t": "Residential", "items": ["Apartments", "Villas", "Community"] },
+    { "t": "Industrial", "items": ["Warehouses", "Parks", "SEZ"] },
+    { "t": "Services", "items": ["FM", "Leasing", "Advisory"] }
+  ],
+  "navOilGas": [
+    { "t": "Upstream", "items": ["Exploration", "Drilling", "OSV"] },
+    { "t": "Midstream", "items": ["Pipelines", "Storage", "Terminals"] },
+    { "t": "Downstream", "items": ["Refining", "Trading", "Distribution"] },
+    { "t": "Services", "items": ["EPC", "HSE", "Inspection"] }
+  ]
+}

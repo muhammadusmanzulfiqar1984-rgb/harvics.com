@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    command: npm run dev
+    ports:
+      - "4000:4000"
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+      - ai-engine
+    environment:
+      USE_MOCK_PROVIDERS: "true"
+
+  ai-engine:
+    build: ./ai-engine
+    command: uvicorn src.main:app --host 0.0.0.0 --port 9000
+    ports:
+      - "9000:9000"
+
+  dashboard:
+    build: .
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: harvics
+      POSTGRES_PASSWORD: harvics
+      POSTGRES_DB: harvicsdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

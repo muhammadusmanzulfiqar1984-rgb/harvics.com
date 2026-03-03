@@ -1,0 +1,212 @@
+{
+  "source": "https://www.mondelezinternational.com",
+  "analysisDate": "2025-11-24",
+  "type": "website_structure_analysis",
+  "data": {
+    "navigation": {
+      "primary": [
+        "About Us",
+        "Our Brands",
+        "Snacking Made Right",
+        "Careers",
+        "News",
+        "2024 ESG REPORT",
+        "Investors",
+        "Media",
+        "Countries",
+        "Contact Us"
+      ],
+      "secondary": {
+        "aboutUs": {
+          "overview": true,
+          "whoWeAre": {
+            "purposeMission": true,
+            "growthStrategy": true,
+            "innovation": true,
+            "values": true,
+            "history": true
+          },
+          "leadership": {
+            "executiveTeam": true,
+            "boardOfDirectors": true
+          },
+          "wayOfBusiness": {
+            "codeOfConduct": true,
+            "ethicsCompliance": true,
+            "supplyChain": true
+          },
+          "snackingTrends": {
+            "stateOfSnacking": true,
+            "trendRadar": true
+          },
+          "awards": true
+        },
+        "ourBrands": {
+          "chocolate": ["5 Star", "Alpen Gold", "Cadbury", "Cadbury Dairy Milk", "Côte d'Or", "Daim", "Freia", "Hu", "Lacta", "Marabou", "Milka", "Toblerone"],
+          "biscuits": ["Barni", "belVita", "Chips Ahoy", "Club Social", "Enjoy Life Foods", "Honey Maid", "Kinh Do", "LU", "Oreo", "Prince", "Ritz", "Tate's Bake Shop", "Tiger", "Triscuit", "TUC", "Wheat Thins"],
+          "bakedSnacks": ["7Days", "CLIF", "Perfect Snacks"],
+          "beverages": ["Bournvita", "Tang"],
+          "gumAndCandy": ["Clorets", "Halls", "Maynards Bassetts", "Sour Patch Kids", "Stride"],
+          "meals": ["Philadelphia", "Royal"]
+        },
+        "snackingMadeRight": {
+          "overview": true,
+          "esgAtMdlz": true,
+          "esgReportingCenter": true,
+          "goalsProgress": true,
+          "standardsRatings": true,
+          "planet": {
+            "climateChange": true,
+            "environmentalImpact": true,
+            "sustainableIngredients": true,
+            "sustainablePackaging": true
+          },
+          "people": {
+            "socialSustainability": true,
+            "humanRights": true,
+            "cultureTalent": true,
+            "impactInvesting": true,
+            "foundation": true,
+            "cocoaLife": true
+          },
+          "mindfulSnacking": true
+        },
+        "investors": {
+          "overview": true,
+          "investorRelations": true,
+          "whyInvest": true,
+          "newsEvents": {
+            "financialNews": true,
+            "eventsWebcasts": true,
+            "annualMeeting": true
+          },
+          "corporateGovernance": {
+            "boardCommittees": true,
+            "leadership": true,
+            "practicesPolicies": true,
+            "oversight": true
+          },
+          "financials": {
+            "secFilings": true,
+            "annualReports": true,
+            "quarterlyResults": true,
+            "gaapToNonGaap": true
+          },
+          "stock": {
+            "stockInformation": true,
+            "historicQuote": true,
+            "investmentCalculator": true,
+            "dividendInfo": true,
+            "spinOffInfo": true
+          }
+        },
+        "countries": {
+          "amea": ["Australia", "Bahrain", "China", "Egypt", "India", "Indonesia", "Japan", "Malaysia", "Morocco", "New Zealand", "Nigeria", "Pakistan", "Philippines", "Saudi Arabia", "Singapore", "South Africa", "Thailand", "United Arab Emirates", "Vietnam"],
+          "europe": {
+            "northern": ["Denmark", "Finland", "Ireland", "Norway", "Sweden", "United Kingdom"],
+            "central": ["Albania", "Austria", "Bosnia", "Bulgaria", "Croatia", "Cyprus", "Czechia", "Estonia", "Germany", "Greece", "Hungary", "Kosovo", "Latvia", "Lithuania", "Montenegro", "North Macedonia", "Poland", "Romania", "Serbia", "Slovakia", "Slovenia", "Switzerland"],
+            "western": ["Belgium", "France", "Italy", "Luxembourg", "Netherlands", "Portugal", "Spain"],
+            "eastern": ["Eurasia", "Russia", "Turkey", "Ukraine"]
+          },
+          "latinAmerica": ["Andean Region", "Argentina", "Brazil", "Caribbean", "Central America", "Chile", "Colombia", "Costa Rica", "Mexico"],
+          "northAmerica": ["Canada", "United States"]
+        }
+      }
+    },
+    "features": {
+      "homepage": {
+        "heroCarousel": true,
+        "sustainabilitySection": true,
+        "stateOfSnacking": true,
+        "businessUpdates": true,
+        "trendsSection": true,
+        "recentNews": true
+      },
+      "brandShowcase": {
+        "categoryFiltering": true,
+        "brandCarousel": true,
+        "productGalleries": true,
+        "brandStorytelling": true
+      },
+      "esgIntegration": {
+        "comprehensiveReporting": true,
+        "goalsTracking": true,
+        "multipleStandards": true,
+        "interactiveDatasheets": true
+      },
+      "investorPortal": {
+        "realTimeStock": true,
+        "financialCalculators": true,
+        "historicalData": true,
+        "webcastIntegration": true
+      },
+      "contentHub": {
+        "newsAggregation": true,
+        "trendReports": true,
+        "researchInsights": true,
+        "mediaLibrary": true
+      }
+    },
+    "technical": {
+      "frontend": {
+        "responsive": true,
+        "modernFrameworks": true,
+        "imageOptimization": true,
+        "lazyLoading": true
+      },
+      "backend": {
+        "cms": true,
+        "apiDriven": true,
+        "multiTenant": true,
+        "cdn": true,
+        "search": true
+      },
+      "localization": {
+        "multiLanguage": true,
+        "countrySpecific": true,
+        "regionalGrouping": true,
+        "culturalAdaptation": true
+      }
+    },
+    "contentTypes": [
+      "staticPages",
+      "dynamicContent",
+      "financialData",
+      "mediaAssets",
+      "interactiveTools",
+      "forms"
+    ],
+    "userJourneys": [
+      {
+        "type": "consumer",
+        "path": ["Brands", "Products", "Contact"]
+      },
+      {
+        "type": "investor",
+        "path": ["Investors", "Financials", "Stock Info"]
+      },
+      {
+        "type": "media",
+        "path": ["Media", "Press Releases", "Assets"]
+      },
+      {
+        "type": "careerSeeker",
+        "path": ["Careers", "Job Search", "Apply"]
+      },
+      {
+        "type": "supplier",
+        "path": ["Contact", "Supplier Center"]
+      }
+    ],
+    "metrics": {
+      "navigationDepth": 4,
+      "mainSections": 9,
+      "subsections": 30,
+      "totalPages": 100,
+      "brands": 30,
+      "countries": 50,
+      "regions": 4
+    }
+  }
+}
+

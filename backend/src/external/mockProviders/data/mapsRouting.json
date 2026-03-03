@@ -1,0 +1,167 @@
+{
+  "PK": {
+    "routes": [
+      {
+        "routeId": "PK-RTE-001",
+        "distributor": "Harvics South Hub",
+        "distanceKm": 28.4,
+        "durationMinutes": 59,
+        "path": [[24.8607, 67.0011], [24.9001, 67.0502], [24.9455, 67.1122]]
+      },
+      {
+        "routeId": "PK-RTE-002",
+        "distributor": "Harvics Central Hub",
+        "distanceKm": 16.2,
+        "durationMinutes": 41,
+        "path": [[31.5204, 74.3587], [31.5601, 74.4002], [31.5904, 74.4301]]
+      }
+    ],
+    "heatmap": {
+      "totalPoints": 145,
+      "coverageAreas": 34,
+      "points": [
+        { "lat": 24.8607, "lng": 67.0011, "intensity": 0.92 },
+        { "lat": 24.9250, "lng": 67.0902, "intensity": 0.81 },
+        { "lat": 31.5204, "lng": 74.3587, "intensity": 0.74 }
+      ]
+    }
+  },
+  "IN": {
+    "routes": [
+      {
+        "routeId": "IN-RTE-001",
+        "distributor": "Mumbai West Hub",
+        "distanceKm": 22.9,
+        "durationMinutes": 52,
+        "path": [[19.076, 72.8777], [19.1101, 72.9055], [19.1403, 72.9302]]
+      }
+    ],
+    "heatmap": {
+      "totalPoints": 210,
+      "coverageAreas": 48,
+      "points": [
+        { "lat": 19.076, "lng": 72.8777, "intensity": 0.88 },
+        { "lat": 28.6139, "lng": 77.2090, "intensity": 0.67 }
+      ]
+    }
+  },
+  "AE": {
+    "routes": [
+      {
+        "routeId": "AE-RTE-001",
+        "distributor": "Dubai Logistics City",
+        "distanceKm": 18.1,
+        "durationMinutes": 32,
+        "path": [[25.2048, 55.2708], [25.2401, 55.3200], [25.2760, 55.3522]]
+      }
+    ],
+    "heatmap": {
+      "totalPoints": 95,
+      "coverageAreas": 22,
+      "points": [
+        { "lat": 25.2048, "lng": 55.2708, "intensity": 0.9 },
+        { "lat": 24.4539, "lng": 54.3773, "intensity": 0.78 }
+      ]
+    }
+  },
+  "US": {
+    "routes": [
+      {
+        "routeId": "US-RTE-001",
+        "distributor": "Northeast RDC",
+        "distanceKm": 64.3,
+        "durationMinutes": 78,
+        "path": [[40.7128, -74.006], [40.8001, -73.9502], [40.9122, -73.7810]]
+      }
+    ],
+    "heatmap": {
+      "totalPoints": 320,
+      "coverageAreas": 72,
+      "points": [
+        { "lat": 34.0522, "lng": -118.2437, "intensity": 0.83 },
+        { "lat": 41.8781, "lng": -87.6298, "intensity": 0.77 }
+      ]
+  },
+  "ES": {
+    "routes": [
+      {
+        "routeId": "ES-RTE-001",
+        "distributor": "Madrid Central DC",
+        "distanceKm": 18.9,
+        "durationMinutes": 41,
+        "path": [[40.4168, -3.7038], [40.4500, -3.6800], [40.4850, -3.6400]]
+      },
+      {
+        "routeId": "ES-RTE-002",
+        "distributor": "Barcelona Coastal Hub",
+        "distanceKm": 24.3,
+        "durationMinutes": 49,
+        "path": [[41.3874, 2.1686], [41.4100, 2.1900], [41.4300, 2.2200]]
+      }
+    ],
+    "heatmap": {
+      "totalPoints": 132,
+      "coverageAreas": 36,
+      "points": [
+        { "lat": 40.4168, "lng": -3.7038, "intensity": 0.86 },
+        { "lat": 41.3874, "lng": 2.1686, "intensity": 0.79 },
+        { "lat": 37.3891, "lng": -5.9845, "intensity": 0.65 }
+      ]
+    }
+  },
+  "CA": {
+    "routes": [
+      {
+        "routeId": "CA-RTE-001",
+        "distributor": "Toronto Golden Horseshoe",
+        "distanceKm": 42.7,
+        "durationMinutes": 68,
+        "path": [[43.6532, -79.3832], [43.7000, -79.2500], [43.7700, -79.1800]]
+      },
+      {
+        "routeId": "CA-RTE-002",
+        "distributor": "Vancouver Coastal Hub",
+        "distanceKm": 27.4,
+        "durationMinutes": 52,
+        "path": [[49.2827, -123.1207], [49.3100, -123.0300], [49.3500, -122.9500]]
+      }
+    ],
+    "heatmap": {
+      "totalPoints": 118,
+      "coverageAreas": 30,
+      "points": [
+        { "lat": 43.6532, "lng": -79.3832, "intensity": 0.8 },
+        { "lat": 45.5017, "lng": -73.5673, "intensity": 0.72 },
+        { "lat": 49.2827, "lng": -123.1207, "intensity": 0.75 }
+      ]
+    }
+  },
+  "OM": {
+    "routes": [
+      {
+        "routeId": "OM-RTE-001",
+        "distributor": "Muscat Logistics",
+        "distanceKm": 21.2,
+        "durationMinutes": 38,
+        "path": [[23.5880, 58.3829], [23.6100, 58.4300], [23.6400, 58.4700]]
+      },
+      {
+        "routeId": "OM-RTE-002",
+        "distributor": "Sohar Free Zone",
+        "distanceKm": 32.5,
+        "durationMinutes": 55,
+        "path": [[24.3396, 56.7280], [24.3800, 56.7600], [24.4100, 56.8000]]
+      }
+    ],
+    "heatmap": {
+      "totalPoints": 86,
+      "coverageAreas": 18,
+      "points": [
+        { "lat": 23.5880, "lng": 58.3829, "intensity": 0.82 },
+        { "lat": 24.3396, "lng": 56.7280, "intensity": 0.7 },
+        { "lat": 17.0187, "lng": 54.0897, "intensity": 0.52 }
+      ]
+    }
+    }
+  }
+}

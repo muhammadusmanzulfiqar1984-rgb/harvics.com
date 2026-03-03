@@ -1,0 +1,6 @@
+{
+  "PK": { "indicator": "SP.POP.TOTL", "year": 2023, "value": 240000000, "urbanPercent": 38.3 },
+  "IN": { "indicator": "SP.POP.TOTL", "year": 2023, "value": 1420000000, "urbanPercent": 35.0 },
+  "AE": { "indicator": "SP.POP.TOTL", "year": 2023, "value": 10000000, "urbanPercent": 86.5 },
+  "US": { "indicator": "SP.POP.TOTL", "year": 2023, "value": 333000000, "urbanPercent": 82.7 }
+}

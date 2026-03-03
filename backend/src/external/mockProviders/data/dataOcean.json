@@ -1,0 +1,151 @@
+{
+  "US": {
+    "summary": {
+      "countryCode": "US",
+      "manufacturers": 42,
+      "distributors": 68,
+      "wholesalers": 215,
+      "importers": 34,
+      "retailers": 1380,
+      "annualSalesUSD": 5400000000,
+      "annualProcurementUSD": 2100000000,
+      "categoryLeaders": [
+        { "category": "Beverages", "leader": "PepsiCo Bottling" },
+        { "category": "Snacks", "leader": "Mondelez" },
+        { "category": "Nutrition", "leader": "Harvics Functional" }
+      ]
+    },
+    "flows": [
+      { "from": "Global Manufacturer", "to": "Regional Distributor", "category": "Energy Drinks", "valueUSD": 180000000, "velocity": "1.3x" },
+      { "from": "Regional Distributor", "to": "Retailer", "category": "Protein Snacks", "valueUSD": 120000000, "velocity": "1.1x" },
+      { "from": "Importer", "to": "Wholesaler", "category": "Confectionery", "valueUSD": 76000000, "velocity": "0.9x" }
+    ]
+  },
+  "AE": {
+    "summary": {
+      "countryCode": "AE",
+      "manufacturers": 18,
+      "distributors": 32,
+      "wholesalers": 85,
+      "importers": 44,
+      "retailers": 520,
+      "annualSalesUSD": 1800000000,
+      "annualProcurementUSD": 960000000,
+      "categoryLeaders": [
+        { "category": "Travel Retail Beverages", "leader": "DutyFree Hubs" },
+        { "category": "Premium Biscuits", "leader": "Harvics Desert Gold" }
+      ]
+    },
+    "flows": [
+      { "from": "Importer", "to": "Distributor", "category": "Halal Beverages", "valueUSD": 54000000, "velocity": "1.4x" },
+      { "from": "Distributor", "to": "Travel Retail", "category": "Premium Snacks", "valueUSD": 38000000, "velocity": "1.2x" },
+      { "from": "Manufacturer", "to": "Re-export Hub", "category": "Culinary Sauces", "valueUSD": 26000000, "velocity": "1.0x" }
+    ]
+  },
+  "IN": {
+    "summary": {
+      "countryCode": "IN",
+      "manufacturers": 54,
+      "distributors": 240,
+      "wholesalers": 680,
+      "importers": 52,
+      "retailers": 18500,
+      "annualSalesUSD": 3200000000,
+      "annualProcurementUSD": 1450000000,
+      "categoryLeaders": [
+        { "category": "Sachet Beverages", "leader": "Harvics Rural Lab" },
+        { "category": "Spiced Snacks", "leader": "ITC" }
+      ]
+    },
+    "flows": [
+      { "from": "Manufacturer", "to": "Super Distributor", "category": "Sachets", "valueUSD": 66000000, "velocity": "1.6x" },
+      { "from": "Super Distributor", "to": "Sub Distributor", "category": "Biscuits", "valueUSD": 52000000, "velocity": "1.4x" },
+      { "from": "Sub Distributor", "to": "Retailer", "category": "Beverages", "valueUSD": 47000000, "velocity": "1.5x" }
+    ]
+  },
+  "PK": {
+    "summary": {
+      "countryCode": "PK",
+      "manufacturers": 26,
+      "distributors": 138,
+      "wholesalers": 420,
+      "importers": 58,
+      "retailers": 14500,
+      "annualSalesUSD": 1450000000,
+      "annualProcurementUSD": 620000000,
+      "categoryLeaders": [
+        { "category": "Energy Drinks", "leader": "Harvics Punjab" },
+        { "category": "Biscuits", "leader": "Karachi Bakehouse" }
+      ]
+    },
+    "flows": [
+      { "from": "Importer", "to": "Wholesale Hub", "category": "Palm Oil Inputs", "valueUSD": 38000000, "velocity": "1.2x" },
+      { "from": "Wholesale Hub", "to": "Sub Distributor", "category": "Value Biscuits", "valueUSD": 42000000, "velocity": "1.3x" },
+      { "from": "Sub Distributor", "to": "Retailer", "category": "Energy Drinks", "valueUSD": 36000000, "velocity": "1.4x" }
+    ]
+  },
+  "ES": {
+    "summary": {
+      "countryCode": "ES",
+      "manufacturers": 34,
+      "distributors": 56,
+      "wholesalers": 140,
+      "importers": 44,
+      "retailers": 6200,
+      "annualSalesUSD": 3100000000,
+      "annualProcurementUSD": 1380000000,
+      "categoryLeaders": [
+        { "category": "Premium Beverages", "leader": "Harvics Agua" },
+        { "category": "Tapas Snacks", "leader": "Barcelona Craft Foods" }
+      ]
+    },
+    "flows": [
+      { "from": "Mediterranean Plant", "to": "Regional Distributor", "category": "Sparkling Water", "valueUSD": 64000000, "velocity": "1.2x" },
+      { "from": "Distributor", "to": "Travel Retail", "category": "Tapas Snack Box", "valueUSD": 41000000, "velocity": "1.1x" },
+      { "from": "Importer", "to": "Wholesaler", "category": "Cocoa Inputs", "valueUSD": 22000000, "velocity": "0.9x" }
+    ]
+  },
+  "CA": {
+    "summary": {
+      "countryCode": "CA",
+      "manufacturers": 28,
+      "distributors": 44,
+      "wholesalers": 160,
+      "importers": 32,
+      "retailers": 5400,
+      "annualSalesUSD": 2800000000,
+      "annualProcurementUSD": 1020000000,
+      "categoryLeaders": [
+        { "category": "Protein Snacks", "leader": "Harvics Maple Labs" },
+        { "category": "Bilingual Beverages", "leader": "Lakeside Partners" }
+      ]
+    },
+    "flows": [
+      { "from": "Manufacturer", "to": "Club Channel", "category": "Protein Bites", "valueUSD": 52000000, "velocity": "1.2x" },
+      { "from": "Distributor", "to": "Modern Trade", "category": "Sparkling 12pk", "valueUSD": 46000000, "velocity": "1.1x" },
+      { "from": "Importer", "to": "Wholesaler", "category": "Packaging Inputs", "valueUSD": 28000000, "velocity": "0.95x" }
+    ]
+  },
+  "OM": {
+    "summary": {
+      "countryCode": "OM",
+      "manufacturers": 12,
+      "distributors": 24,
+      "wholesalers": 60,
+      "importers": 28,
+      "retailers": 820,
+      "annualSalesUSD": 720000000,
+      "annualProcurementUSD": 380000000,
+      "categoryLeaders": [
+        { "category": "Travel Retail Gifts", "leader": "Muscat Duty Free" },
+        { "category": "Halal Beverages", "leader": "Harvics GCC" }
+      ]
+    },
+    "flows": [
+      { "from": "Importer", "to": "Distributor", "category": "Premium Beverages", "valueUSD": 18000000, "velocity": "1.3x" },
+      { "from": "Distributor", "to": "Travel Retail", "category": "Gift Boxes", "valueUSD": 14000000, "velocity": "1.1x" },
+      { "from": "Manufacturer", "to": "Re-export Hub", "category": "Halal Concentrates", "valueUSD": 12000000, "velocity": "1.0x" }
+    ]
+  }
+}
+

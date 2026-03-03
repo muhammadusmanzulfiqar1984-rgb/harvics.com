@@ -1,0 +1,830 @@
+{
+  "home": {
+    "welcome": "Welcome to",
+    "companyName": "Harvics",
+    "tagline": "Excellence in Premium Consumer Goods Since 2019",
+    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+    "exploreProducts": "Explore Products",
+    "contact": "Contact Us",
+    "learnMore": "Learn More",
+    "taglineStart": "Excellence in Premium Consumer Goods Since",
+    "taglineYear": "2019",
+    "locations": "London • Milan • New York",
+    "categories": {
+      "bakery": "Bakery",
+      "beverages": "Beverages",
+      "confectionery": "Confectionary",
+      "culinary": "Culinary",
+      "frozenFoods": "Frozen Foods",
+      "pasta": "Pasta",
+      "snacks": "Snacks"
+    }
+  },
+  "navigation": {
+    "esgReport": "ESG Report 2025",
+    "locations": "London • Milan • New York",
+    "home": "Home",
+    "about": "About",
+    "aboutUs": "About Us",
+    "brandStory": "Brand Story",
+    "products": "Products",
+    "ourProducts": "Our Products",
+    "viewAllProducts": "View All Products",
+    "csr": "CSR",
+    "investorRelations": "Investor Relations",
+    "investors": "Investors",
+    "media": "Media",
+    "contactUs": "Contact Us",
+    "harvicsHouse": "Harvics House",
+    "countries": "Countries",
+    "portals": "Portals",
+    "signIn": "Sign In",
+    "wishlist": "Wishlist",
+    "cart": "Shopping Cart",
+    "help": "Help",
+    "findStore": "Find Store",
+    "money": "Money",
+    "sales": "Sales",
+    "offers": "Offers",
+    "darkMode": "Dark mode",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "Credit Card",
+        "msRewards": "M&S Rewards Credit Card",
+        "clubRewards": "Club Rewards",
+        "ourCards": "Our Credit Cards"
+      },
+      "insurance": {
+        "title": "Insurance",
+        "home": "Home Insurance",
+        "travel": "Travel Insurance"
+      },
+      "travel": {
+        "title": "Travel Services",
+        "money": "Travel Money",
+        "exchange": "Exchange Rates"
+      },
+      "additional": {
+        "title": "Additional Services",
+        "savings": "Savings & Investing",
+        "personalLoans": "Personal Loans",
+        "financialSupport": "Financial Support"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "Current Sales",
+      "clearance": "Clearance",
+      "seasonal": "Seasonal Sales"
+    },
+    "offersDropdown": {
+      "specialOffers": "Special Offers",
+      "promotions": "Promotions",
+      "bulkOrders": "Bulk Order Discounts"
+    }
+  },
+  "products": {
+    "ourProducts": "Our Products",
+    "viewAllProducts": "View All Products",
+    "productCategories": "Our Product Categories",
+    "discoverPremium": "Discover our premium range of products crafted with care and excellence.",
+    "tier1": "Tier 1: Categories",
+    "tier2": "Tier 2: Modules",
+    "tier3": "Tier 3: KPI Screens",
+    "tier4": "Tier 4: Actions",
+    "reset": "Reset Navigation",
+    "noSubcategories": "No subcategories available for this category.",
+    "pageTitle": "Products",
+    "subcategories": "Subcategories",
+    "bakery": "Bakery",
+    "bakeryDesc": "Freshly baked goods and pastries.",
+    "beverages": "Beverages",
+    "beveragesDesc": "Refreshing drinks for every occasion.",
+    "confectionery": "Confectionery",
+    "confectioneryDesc": "Sweet treats and delights.",
+    "culinary": "Culinary",
+    "culinaryDesc": "Essential ingredients for your kitchen.",
+    "frozenFoods": "Frozen Foods",
+    "frozenFoodsDesc": "Convenient and delicious frozen meals.",
+    "pasta": "Pasta",
+    "pastaDesc": "Authentic pasta varieties.",
+    "snacks": "Snacks",
+    "snacksDesc": "Tasty snacks for any time of day."
+  },
+  "about": {
+    "title": "About Harvics",
+    "subtitle": "Excellence in Premium Consumer Goods Since 2019",
+    "ourStory": "Our Story",
+    "story1": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+    "story2": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+    "est2018": "Est. 2019",
+    "countries40": "40+ Countries",
+    "productLines6": "6 Product Lines"
+  },
+  "csr": {
+    "hero": {
+      "title": "Corporate Social Responsibility",
+      "description": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "stats": {
+        "years": "Years of Impact",
+        "countries": "Countries Reached",
+        "lives": "Lives Touched"
+      }
+    },
+    "initiatives": {
+      "title": "Our Key Initiatives",
+      "description": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders."
+    },
+    "sustainability": {
+      "title": "Sustainability",
+      "description": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "stats": {
+        "renewable": "Renewable Energy",
+        "waste": "Waste Diverted",
+        "carbon": "Carbon Reduction"
+      }
+    },
+    "community": {
+      "title": "Community Support",
+      "description": "Empowering local communities through education, healthcare, and economic development.",
+      "stats": {
+        "families": "Families Supported",
+        "programs": "Active Programs",
+        "volunteers": "Volunteers"
+      }
+    },
+    "education": {
+      "title": "Education",
+      "description": "Providing access to quality education and scholarships for underprivileged students.",
+      "stats": {
+        "scholarships": "Scholarships",
+        "schools": "Partner Schools",
+        "students": "Students Impacted"
+      }
+    },
+    "health": {
+      "title": "Health & Wellness",
+      "description": "Improving access to healthcare and nutrition in underserved regions.",
+      "stats": {
+        "campaigns": "Health Campaigns",
+        "people": "People Served",
+        "clinics": "Mobile Clinics"
+      }
+    },
+    "achievements": {
+      "title": "Our Impact",
+      "description": "Recognizing our milestones in creating a better world.",
+      "2024": {
+        "title": "Global Sustainability Award",
+        "description": "Recognized for our commitment to carbon neutrality."
+      },
+      "2023": {
+        "title": "Community Champion",
+        "description": "Awarded for our extensive community outreach programs."
+      },
+      "2022": {
+        "title": "Best CSR Initiative",
+        "description": "Honored for our innovative approach to social responsibility."
+      }
+    },
+    "cta": {
+      "title": "Join Us in Making a Difference",
+      "description": "Partner with us or learn more about how we are building a sustainable future.",
+      "contact": "Contact CSR Team",
+      "learnMore": "Learn More"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "callNow": "Call Now",
+    "sendEmail": "Send Email",
+    "messageUs": "Message Us"
+  },
+  "media": {
+    "title": "Media & Promotions"
+  },
+  "harvicsHouse": {
+    "title": "Harvics House",
+    "subtitle": "A Legacy of Excellence and Tradition",
+    "aboutTitle": "Welcome to Harvics House",
+    "description": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+    "description2": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name."
+  },
+  "footer": {
+    "companyName": "Harvics Global Ventures",
+    "tagline": "Excellence in Premium Consumer Goods Since 2019",
+    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+    "locations": "London • Milan • New York",
+    "since": "Since 2019",
+    "harvicsNews": "Harvics News",
+    "subscribeToAlerts": "Subscribe to receive alerts and updates",
+    "signUp": "Sign Up",
+    "complianceConcerns": "Compliance Concerns",
+    "speakUp": "Speak up if you have concerns about compliance or ethics",
+    "speakUpButton": "Speak Up",
+    "contactUs": "Contact Us",
+    "contactDescription": "Get in touch with our team",
+    "contactUsButton": "Contact Us",
+    "usefulLinks": "Useful Links",
+    "askHarvics": "Ask Harvics",
+    "searchForJobs": "Search for Jobs",
+    "signUpForNews": "Sign Up for News",
+    "company": "Company",
+    "globalAddresses": "Global Addresses",
+    "strategy": "Strategy",
+    "ourLeadership": "Our Leadership",
+    "brandsAZ": "Brands A-Z",
+    "ourHistory": "Our History",
+    "sustainability": "Sustainability",
+    "news": "News",
+    "mediaContacts": "Media Contacts",
+    "images": "Images",
+    "investors": "Investors",
+    "corporateGovernance": "Corporate Governance",
+    "sharesAdrsBonds": "Shares, ADRs & Bonds",
+    "publications": "Publications",
+    "followUsOn": "Follow Us On",
+    "issuesCount": "0 Issues",
+    "siteMap": "Site Map",
+    "unsubscribe": "Unsubscribe",
+    "help": "Help",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "termsOfUse": "Terms of Use",
+    "accessibility": "Accessibility",
+    "carbonEfficiency": "Carbon Efficiency",
+    "suppliers": "Suppliers",
+    "socialMedia": "Social Media",
+    "cookieSettings": "Cookie Settings",
+    "feature1Title": "Global Shipping",
+    "feature1Desc": "Worldwide distribution to 40+ countries",
+    "feature2Title": "Premium Quality",
+    "feature2Desc": "International quality standards guaranteed",
+    "feature3Title": "Expert Support",
+    "feature3Desc": "Dedicated customer service team",
+    "emailAddress": "Email address",
+    "enterEmailPlaceholder": "Enter your email address",
+    "subscribe": "Subscribe",
+    "subscribing": "Subscribing...",
+    "aboutUs": "About Us",
+    "media": "Media"
+  },
+  "search": {
+    "placeholder": "Search products, brands, or categories",
+    "noResults": "No results found",
+    "searching": "Searching...",
+    "results": "Results"
+  },
+  "chatbot": {
+    "title": "Chat with Us",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "close": "Close",
+    "welcome": "Hello! How can I help you today?",
+    "fallback": {
+      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+    }
+  },
+  "common": {
+    "chatWithUs": "Chat with Us",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "submit": "Submit",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "download": "Download",
+    "upload": "Upload",
+    "yes": "Yes",
+    "no": "No",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "actions": "Actions",
+    "status": "Status",
+    "date": "Date",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "country": "Country",
+    "city": "City",
+    "all": "All",
+    "none": "None",
+    "select": "Select",
+    "selectLanguage": "Select Language",
+    "selectCountry": "Select Country",
+    "showMore": "Show More",
+    "showLess": "Show Less",
+    "required": "Required",
+    "menu": "Menu",
+    "viewProducts": "View Products"
+  },
+  "music": {
+    "play": "Play Music",
+    "pause": "Pause Music",
+    "mute": "Mute Music",
+    "unmute": "Unmute Music"
+  },
+  "worldMap": {
+    "globalReach": "Our Global Reach",
+    "since": "Since",
+    "majorMarket": "Major Market",
+    "majorMarkets": "Major Markets",
+    "presence": "Presence",
+    "countriesServed": "Countries Served",
+    "majorMarketsCount": "Major Markets",
+    "productCategoriesCount": "Product Categories",
+    "establishedYear": "Established"
+  },
+  "territory": {
+    "title": "Territory Hierarchy",
+    "fullPath": "Full Path",
+    "currentTerritory": "Current Territory",
+    "noChildren": "No items",
+    "tiers": {
+      "globe": "Globe",
+      "continent": "Continent",
+      "region": "Region",
+      "country": "Country",
+      "city": "City",
+      "district": "District",
+      "location": "Location"
+    }
+  },
+  "globalWorld": {
+    "title": "Harvics Global",
+    "titleShort": "Global",
+    "selectRegion": "Select Region",
+    "form": {
+      "title": "Customer Details",
+      "selected": "Selected",
+      "fullName": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "nameRequired": "Name is required",
+      "email": "Email Address",
+      "emailPlaceholder": "your.email@example.com",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+1 234 567 8900",
+      "phoneRequired": "Phone number is required",
+      "address": "Address",
+      "addressPlaceholder": "Your address",
+      "addressRequired": "Address is required",
+      "marketingConsent": "I agree to receive marketing communications and updates",
+      "submit": "Submit & Continue",
+      "submitting": "Submitting...",
+      "skip": "Skip & Continue"
+    }
+  },
+  "distributorPortal": {
+    "dashboard": {
+      "kpi": {
+        "title": "Key Performance Indicators",
+        "ordersToday": "Orders today",
+        "ordersTodaySubtitle": "Submitted via Harvics CRM",
+        "pendingDeliveries": "Pending deliveries",
+        "pendingDeliveriesSubtitle": "Across assigned routes",
+        "retailers": "Retailers",
+        "retailersSubtitle": "Active outlets in scope",
+        "attendance": "T & A Score",
+        "attendanceSubtitle": "Territory coverage"
+      },
+      "financial": {
+        "title": "Financial & Inventory",
+        "lowStock": "Low stock SKUs",
+        "lowStockSubtitle": "Trigger replenishment",
+        "outstandingInvoices": "Outstanding invoices",
+        "outstandingInvoicesSubtitle": "Due for collection",
+        "creditLimit": "Credit limit",
+        "creditLimitSubtitle": "Assigned by finance"
+      },
+      "aiAutomation": {
+        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
+        "autoApproval": "Auto-Approval",
+        "stockReplenishment": "Stock Replenishment",
+        "invoiceReminders": "Invoice Reminders"
+      },
+      "aiRecommendations": {
+        "title": "AI Recommendations",
+        "riskLevel": "Risk Level",
+        "riskDescription": "Based on credit utilization and payment history",
+        "suggestedOrder": "Suggested Order",
+        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
+        "nextAction": "Next Action"
+      },
+      "actions": {
+        "title": "Actions & Guidance",
+        "complaints": "Complaints",
+        "complaintsSubtitle": "Retailer issues awaiting action",
+        "playbook": "Playbook",
+        "playbookItem1": "Prioritise pending deliveries before noon.",
+        "playbookItem2": "Close all outstanding complaints within 48h.",
+        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+      },
+      "territory": {
+        "title": "Territory Hierarchy"
+      },
+      "ordersThisMonth": "Orders This Month",
+      "pendingOrders": "Pending Orders",
+      "deliveredOrders": "Delivered Orders",
+      "territoryInformation": "Territory Information",
+      "country": "Country",
+      "city": "City",
+      "territory": "Territory",
+      "region": "Region",
+      "quickActions": "Quick Actions",
+      "newOrder": "New Order",
+      "viewOrders": "View Orders",
+      "viewInvoices": "View Invoices",
+      "profileSettings": "Profile Settings",
+      "loading": "Loading dashboard...",
+      "error": "Error"
+    },
+    "orders": {
+      "title": "My Orders",
+      "orderId": "Order ID",
+      "date": "Date",
+      "status": "Status",
+      "items": "Items",
+      "totalAmount": "Total Amount",
+      "actions": "Actions",
+      "viewDetails": "View Details",
+      "filters": {
+        "status": "Status",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "allStatuses": "All Statuses",
+        "clearFilters": "Clear Filters"
+      },
+      "statuses": {
+        "pending": "Pending",
+        "processing": "Processing",
+        "delivered": "Delivered",
+        "cancelled": "Cancelled"
+      },
+      "noOrders": "No orders found",
+      "loading": "Loading orders...",
+      "page": "Page",
+      "of": "of",
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "orderDetail": {
+      "title": "Order Details",
+      "backToOrders": "Back to Orders",
+      "orderId": "Order ID",
+      "status": "Status",
+      "orderDate": "Order Date",
+      "deliveryDate": "Delivery Date",
+      "deliveryAddress": "Delivery Address",
+      "notes": "Notes",
+      "orderItems": "Order Items",
+      "product": "Product",
+      "sku": "SKU",
+      "quantity": "Quantity",
+      "unitPrice": "Unit Price",
+      "total": "Total",
+      "totalAmount": "Total Amount",
+      "statusTimeline": "Status Timeline",
+      "orderNotFound": "Order not found"
+    },
+    "newOrder": {
+      "title": "Create New Order",
+      "orderItems": "Order Items",
+      "addItem": "Add Item",
+      "noItems": "No items added yet. Click \"Add Item\" to start.",
+      "orderDetails": "Order Details",
+      "deliveryDate": "Delivery Date",
+      "deliveryAddress": "Delivery Address",
+      "notes": "Notes",
+      "totalAmount": "Total Amount",
+      "createOrder": "Create Order",
+      "creatingOrder": "Creating Order...",
+      "cancel": "Cancel",
+      "selectProduct": "Select Product",
+      "product": "Product",
+      "quantity": "Quantity",
+      "unitPrice": "Unit Price",
+      "remove": "Remove",
+      "subtotal": "Subtotal",
+      "orderId": "Order ID",
+      "validation": {
+        "itemsRequired": "At least one order item is required",
+        "productRequired": "Product is required",
+        "quantityRequired": "Quantity must be greater than 0",
+        "priceRequired": "Unit price must be non-negative",
+        "invalidDate": "Invalid delivery date format",
+        "datePast": "Delivery date cannot be in the past"
+      }
+    },
+    "invoices": {
+      "title": "My Invoices",
+      "invoiceNumber": "Invoice Number",
+      "invoiceDate": "Invoice Date",
+      "dueDate": "Due Date",
+      "amount": "Amount",
+      "paidAmount": "Paid Amount",
+      "paymentStatus": "Payment Status",
+      "filters": {
+        "status": "Payment Status",
+        "allStatuses": "All Statuses",
+        "clearFilters": "Clear Filters"
+      },
+      "statuses": {
+        "paid": "Paid",
+        "unpaid": "Unpaid",
+        "partial": "Partial"
+      },
+      "noInvoices": "No invoices found",
+      "loading": "Loading invoices..."
+    },
+    "profile": {
+      "title": "My Profile",
+      "accountInformation": "Account Information",
+      "distributorId": "Distributor ID",
+      "territory": "Territory",
+      "country": "Country",
+      "city": "City",
+      "accountCreated": "Account Created",
+      "updateProfile": "Update Profile",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "language": "Language",
+      "currency": "Currency",
+      "saveChanges": "Save Changes",
+      "saving": "Saving...",
+      "profileUpdated": "Profile updated successfully",
+      "loading": "Loading profile...",
+      "validation": {
+        "invalidEmail": "Invalid email format",
+        "invalidPhone": "Invalid phone format"
+      }
+    },
+    "common": {
+      "error": "Error",
+      "loading": "Loading...",
+      "save": "Save",
+      "cancel": "Cancel",
+      "back": "Back",
+      "submit": "Submit",
+      "delete": "Delete",
+      "edit": "Edit",
+      "view": "View",
+      "search": "Search",
+      "filter": "Filter",
+      "clear": "Clear",
+      "apply": "Apply",
+      "close": "Close",
+      "confirm": "Confirm",
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "legal": {
+    "title": "Legal Operating System",
+    "sidebarTitle": "Legal OS",
+    "accessDenied": "Access Denied",
+    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
+    "dashboard": "Dashboard",
+    "contracts": "Contracts",
+    "certificates": "Certificates",
+    "compliance": "Compliance",
+    "dashboardPage": {
+      "title": "Legal Dashboard",
+      "description": "Overview of legal operations and compliance status",
+      "activeTrademarks": "Active Trademarks",
+      "activeContracts": "Active Contracts",
+      "complianceStatus": "Compliance Status"
+    },
+    "trademarks": {
+      "title": "Trademarks",
+      "description": "Manage trademark registrations and applications",
+      "addNew": "Add New Trademark",
+      "filters": {
+        "country": "Country",
+        "status": "Status",
+        "allCountries": "All Countries",
+        "allStatuses": "All Statuses",
+        "clearFilters": "Clear Filters"
+      },
+      "table": {
+        "brandName": "Brand Name",
+        "class": "Class",
+        "country": "Country",
+        "applicationNo": "Application No",
+        "status": "Status",
+        "expiryDate": "Expiry Date",
+        "actions": "Actions"
+      },
+      "modal": {
+        "edit": "Edit Trademark",
+        "add": "Add New Trademark",
+        "view": "View Trademark"
+      },
+      "form": {
+        "brandName": "Brand Name",
+        "classNumber": "Class Number",
+        "country": "Country",
+        "applicationNo": "Application Number",
+        "status": "Status",
+        "expiryDate": "Expiry Date",
+        "documents": "Documents",
+        "noDocuments": "No documents attached",
+        "addDocument": "Add Document",
+        "remove": "Remove"
+      },
+      "errors": {
+        "loadFailed": "Failed to load trademarks",
+        "saveFailed": "Failed to save trademark. Please try again."
+      }
+    },
+    "legalCases": {
+      "title": "Legal Cases",
+      "description": "Manage legal cases and track their status",
+      "addNew": "New Case",
+      "form": {
+        "caseTitle": "Case Title",
+        "caseType": "Case Type",
+        "country": "Country",
+        "description": "Description",
+        "assignedTo": "Assigned To",
+        "status": "Status",
+        "hearingDate": "Hearing Date"
+      },
+      "table": {
+        "caseTitle": "Case Title",
+        "type": "Type",
+        "country": "Country",
+        "assignedTo": "Assigned To",
+        "status": "Status",
+        "hearingDate": "Hearing Date",
+        "actions": "Actions"
+      },
+      "status": {
+        "open": "Open",
+        "inProgress": "In Progress",
+        "closed": "Closed",
+        "cancelled": "Cancelled"
+      }
+    }
+  },
+  "gps": {
+    "fleetMap": {
+      "title": "Fleet Map View",
+      "description": "Real-time tracking of sales officers and delivery vehicles",
+      "activeEmployees": "Active Employees",
+      "noEmployees": "No active employees",
+      "loading": "Loading..."
+    },
+    "routeReplay": {
+      "title": "Route Replay",
+      "employee": "Employee",
+      "speed": "Speed",
+      "reset": "Reset",
+      "play": "Play",
+      "pause": "Pause",
+      "points": "points",
+      "noRoute": "No route data available",
+      "loading": "Loading route..."
+    }
+  },
+  "competitor": {
+    "products": {
+      "title": "Competitor Products",
+      "description": "Track competitor product information",
+      "addProduct": "Add Product",
+      "formTitle": "Add Competitor Product",
+      "form": {
+        "brand": "Brand",
+        "skuName": "SKU Name",
+        "category": "Category",
+        "size": "Size",
+        "price": "Price",
+        "currency": "Currency",
+        "country": "Country"
+      },
+      "table": {
+        "brand": "Brand",
+        "skuName": "SKU Name",
+        "category": "Category",
+        "size": "Size",
+        "price": "Price",
+        "country": "Country",
+        "dateAdded": "Date Added"
+      },
+      "errors": {
+        "loadFailed": "Failed to load products",
+        "createFailed": "Failed to create product. Please try again."
+      },
+      "noProducts": "No competitor products found",
+      "loading": "Loading products..."
+    },
+    "dashboard": {
+      "title": "Competitor Dashboard",
+      "description": "Analytics and insights on competitor products",
+      "totalProducts": "Total Products",
+      "brandsTracked": "Brands Tracked",
+      "countries": "Countries",
+      "categories": "Categories",
+      "byBrand": "Products by Brand",
+      "byCountry": "Products by Country",
+      "byCategory": "Products by Category",
+      "loading": "Loading statistics...",
+      "noStats": "No statistics available"
+    }
+  },
+  "tabs": {
+    "overview": "Overview",
+    "orders": "Orders",
+    "inventory": "Inventory",
+    "logistics": "Logistics",
+    "finance": "Finance",
+    "crm": "CRM",
+    "hr": "HR",
+    "executive": "Executive",
+    "investor": "Investor",
+    "legal-ipr": "Legal/IPR",
+    "competitor": "Competitor",
+    "import-export": "Import/Export",
+    "gps-tracking": "GPS Tracking",
+    "localization": "Localization",
+    "workflows": "Workflows",
+    "admin": "Admin"
+  },
+  "crm": {
+    "domain": {
+      "title": "CRM OS",
+      "customer360": {
+        "title": "Customer 360",
+        "description": "Complete customer profiles, interaction history, and relationship management"
+      },
+      "campaigns": {
+        "title": "Digital Campaigns",
+        "description": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)"
+      },
+      "leads": {
+        "title": "Leads & Opportunities",
+        "description": "Lead management, qualification, and opportunity pipeline"
+      },
+      "support": {
+        "title": "Customer Support",
+        "description": "Ticket management, customer service, and issue resolution"
+      },
+      "loyalty": {
+        "title": "Loyalty Programs",
+        "description": "Retailer loyalty, gamification, and rewards management"
+      }
+    },
+    "customerList": {
+      "title": "Customer 360",
+      "newCustomer": "New Customer",
+      "totalCustomers": "Total Customers",
+      "active": "Active",
+      "new": "New",
+      "satisfaction": "Satisfaction",
+      "customerManagement": "Customer Management",
+      "customerManagementDescription": "View and manage your customer relationships, interactions, and campaigns.",
+      "loading": "Loading...",
+      "error": "Error loading CRM data"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "orders": "Orders",
+      "inventory": "Inventory",
+      "logistics": "Logistics",
+      "finance": "Finance",
+      "crm": "CRM",
+      "hr": "HR",
+      "executive": "Executive",
+      "investor": "Investor",
+      "legal-ipr": "Legal/IPR",
+      "competitor": "Competitor",
+      "import-export": "Import/Export",
+      "gps-tracking": "GPS Tracking",
+      "localization": "Localization",
+      "workflows": "Workflows",
+      "admin": "Admin"
+    },
+    "kpis": {
+      "customers": "Customers",
+      "employees": "Employees",
+      "profit": "Profit"
+    }
+  }
+}

@@ -1,0 +1,281 @@
+/* HARVICS GLOBAL OS V16 - MASTER DESIGN SYSTEM */
+/* Enterprise-grade UI following SAP Fiori / Microsoft Dynamics 365 principles */
+
+:root {
+  /* HARVICS OFFICIAL COLOR PALETTE — SUPREME */
+  --harvics-gold: #C3A35E;
+  --harvics-deep-red: #6B1F2B;
+  --harvics-white: #F5F1E8;
+  --harvics-smoke-grey: #F5F1E8;
+  
+  /* Extended Palette */
+  --harvics-gold-light: #D4C48A;
+  --harvics-gold-dark: #A08340;
+  --harvics-red-light: #8B3A47;
+  --harvics-red-dark: #4A0E18;
+  --harvics-grey-light: #F5F1E8;
+  --harvics-grey-medium: #C3A35E;
+  --harvics-grey-dark: #6B1F2B;
+  --harvics-black: #2A0A10;
+  
+  /* Status Colors */
+  --status-success: #28A745;
+  --status-warning: #FFFFFF;
+  --status-error: #DC3545;
+  --status-info: #17A2B8;
+  
+  /* Typography */
+  --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;   /* 4px */
+  --spacing-sm: 0.5rem;    /* 8px */
+  --spacing-md: 1rem;      /* 16px */
+  --spacing-lg: 1.5rem;    /* 24px */
+  --spacing-xl: 2rem;      /* 32px */
+  --spacing-2xl: 3rem;     /* 48px */
+  
+  /* Shadows - Minimal, Flat Design */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  
+  /* Borders */
+  --border-width: 1px;
+  --border-color: var(--harvics-grey-medium);
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+}
+
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-normal);
+  color: var(--harvics-black);
+  background-color: var(--harvics-smoke-grey);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility Classes */
+.harvics-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.harvics-card {
+  background: var(--harvics-white);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-fast);
+}
+
+.harvics-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.harvics-button-primary {
+  background-color: var(--harvics-gold);
+  color: var(--harvics-grey-dark);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.harvics-button-primary:hover {
+  background-color: var(--harvics-gold-dark);
+}
+
+.harvics-button-secondary {
+  background-color: transparent;
+  color: var(--harvics-grey-dark);
+  border: var(--border-width) solid var(--harvics-grey-dark);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.harvics-button-secondary:hover {
+  background-color: var(--harvics-grey-dark);
+  color: var(--harvics-white);
+}
+
+/* KPI Card Styles */
+.harvics-kpi-card {
+  background: var(--harvics-white);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  min-height: 120px;
+}
+
+.harvics-kpi-label {
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--harvics-grey-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.harvics-kpi-value {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--harvics-grey-dark);
+  line-height: 1.2;
+}
+
+.harvics-kpi-change {
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+}
+
+.harvics-kpi-change.positive {
+  color: var(--status-success);
+}
+
+.harvics-kpi-change.negative {
+  color: var(--status-error);
+}
+
+/* Tab Navigation */
+.harvics-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--harvics-grey-medium);
+  background: var(--harvics-white);
+}
+
+.harvics-tab {
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-weight: var(--font-weight-medium);
+  color: var(--harvics-grey-dark);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  position: relative;
+  bottom: -2px;
+}
+
+.harvics-tab:hover {
+  color: var(--harvics-grey-dark);
+  background: var(--harvics-grey-light);
+}
+
+.harvics-tab.active {
+  color: var(--harvics-grey-dark);
+  border-bottom-color: var(--harvics-white);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Grid Layouts */
+.harvics-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.harvics-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.harvics-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+}
+
+@media (max-width: 1200px) {
+  .harvics-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .harvics-grid-2,
+  .harvics-grid-3,
+  .harvics-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Typography */
+.harvics-heading-1 {
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--harvics-grey-dark);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.harvics-heading-2 {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--harvics-grey-dark);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.harvics-heading-3 {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--harvics-grey-dark);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.harvics-text-body {
+  font-size: 1rem;
+  font-weight: var(--font-weight-normal);
+  color: var(--harvics-black);
+  line-height: 1.5;
+}
+
+.harvics-text-muted {
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-normal);
+  color: var(--harvics-grey-dark);
+  line-height: 1.5;
+}
+
+/* No gradients, no heavy shadows - clean flat design */
+.harvics-no-gradient {
+  background: none !important;
+  background-image: none !important;
+}
+
+.harvics-no-shadow {
+  box-shadow: none !important;
+}
+

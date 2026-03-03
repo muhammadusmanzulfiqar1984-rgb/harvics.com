@@ -1,0 +1,27 @@
+{
+  "name": "Harvics - Corporate Website",
+  "short_name": "Harvics",
+  "description": "Harvics Corporate Website - Dubai, UAE. Since 2018. Food, Beverages, Services and More.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#3c0008",
+  "theme_color": "#8b6914",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "food", "corporate"],
+  "lang": "en",
+  "dir": "ltr"
+}

@@ -1,0 +1,489 @@
+{
+  "version": "1.0.0",
+  "phase": "Phase 1 - OS Domain Expansion",
+  "description": "Implementation of Legal, Import/Export, GPS, and Competitor modules for Harvics OS",
+  "epics": [
+    {
+      "id": "EPIC-1",
+      "name": "Legal Department Module",
+      "description": "Complete legal operations management including IPR, compliance, contracts, and litigation",
+      "modules": [
+        {
+          "id": "LEGAL-1",
+          "name": "IPR Management",
+          "backend": {
+            "routes": ["/api/legal/ipr", "/api/legal/ipr/:id"],
+            "database": {
+              "tables": ["legal_ipr", "legal_ipr_renewals", "legal_ipr_countries"]
+            },
+            "endpoints": [
+              "GET /api/legal/ipr - List all IPR records",
+              "GET /api/legal/ipr/:id - Get IPR details",
+              "POST /api/legal/ipr - Create IPR record",
+              "PUT /api/legal/ipr/:id - Update IPR record",
+              "DELETE /api/legal/ipr/:id - Delete IPR record",
+              "GET /api/legal/ipr/renewals - Get upcoming renewals"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/legal/trademarks", "/os/legal/ipr/:id"],
+            "components": ["IPRList", "IPRForm", "IPRDetail", "RenewalCalendar"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "legal_admin", "super_admin"]
+          }
+        },
+        {
+          "id": "LEGAL-2",
+          "name": "Counterfeit Detection",
+          "backend": {
+            "routes": ["/api/legal/counterfeit", "/api/legal/counterfeit/:id"],
+            "database": {
+              "tables": ["legal_counterfeit_reports", "legal_counterfeit_investigations", "legal_counterfeit_actions"]
+            },
+            "endpoints": [
+              "GET /api/legal/counterfeit - List counterfeit reports",
+              "POST /api/legal/counterfeit - Create counterfeit report",
+              "PUT /api/legal/counterfeit/:id/status - Update investigation status",
+              "POST /api/legal/counterfeit/:id/action - Record action taken"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/legal/counterfeit", "/os/legal/counterfeit/:id"],
+            "components": ["CounterfeitReports", "CounterfeitForm", "InvestigationDetail"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "legal_admin", "super_admin"]
+          }
+        },
+        {
+          "id": "LEGAL-3",
+          "name": "Compliance Tracking",
+          "backend": {
+            "routes": ["/api/legal/compliance", "/api/legal/compliance/:id"],
+            "database": {
+              "tables": ["legal_compliance", "legal_compliance_checks", "legal_audits"]
+            },
+            "endpoints": [
+              "GET /api/legal/compliance - List compliance records by country",
+              "GET /api/legal/compliance/score - Get compliance score",
+              "POST /api/legal/compliance/check - Run compliance check"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/legal/compliance"],
+            "components": ["ComplianceDashboard", "ComplianceCheck", "AuditTimeline"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "legal_admin", "super_admin"]
+          }
+        },
+        {
+          "id": "LEGAL-4",
+          "name": "Contracts Management",
+          "backend": {
+            "routes": ["/api/legal/contracts", "/api/legal/contracts/:id"],
+            "database": {
+              "tables": ["legal_contracts", "legal_contract_renewals"]
+            },
+            "endpoints": [
+              "GET /api/legal/contracts - List contracts",
+              "POST /api/legal/contracts - Create contract",
+              "PUT /api/legal/contracts/:id - Update contract",
+              "GET /api/legal/contracts/renewals - Get upcoming renewals"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/legal/contracts", "/os/legal/contracts/:id"],
+            "components": ["ContractList", "ContractForm", "ContractDetail"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "legal_admin", "super_admin"]
+          }
+        },
+        {
+          "id": "LEGAL-5",
+          "name": "Litigation Management",
+          "backend": {
+            "routes": ["/api/legal/cases", "/api/legal/cases/:id"],
+            "database": {
+              "tables": ["legal_cases", "legal_case_hearings", "legal_case_expenses"]
+            },
+            "endpoints": [
+              "GET /api/legal/cases - List cases",
+              "POST /api/legal/cases - Create case",
+              "PUT /api/legal/cases/:id - Update case",
+              "POST /api/legal/cases/:id/hearing - Add hearing",
+              "POST /api/legal/cases/:id/expense - Add expense"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/legal/cases", "/os/legal/cases/:id"],
+            "components": ["CaseList", "CaseForm", "CaseDetail", "HearingCalendar"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "legal_admin", "super_admin"]
+          }
+        }
+      ],
+      "acceptance_criteria": [
+        "Legal dashboard shows IPR, counterfeit, compliance, contracts, and litigation summaries",
+        "All legal data filtered by territory (8-level geo)",
+        "RBAC restricts access to legal_admin, admin, super_admin only",
+        "All CRUD operations work with proper validation",
+        "Currency and dates formatted according to locale",
+        "Integration with Orders module for compliance checks"
+      ]
+    },
+    {
+      "id": "EPIC-2",
+      "name": "Import/Export Operations Module",
+      "description": "Complete import/export order management with customs, tariffs, and trade documentation",
+      "modules": [
+        {
+          "id": "IMPORT-1",
+          "name": "Import Order Management",
+          "backend": {
+            "routes": ["/api/import/orders", "/api/import/orders/:id"],
+            "database": {
+              "tables": ["import_orders", "import_order_items", "import_documents"]
+            },
+            "endpoints": [
+              "GET /api/import/orders - List import orders",
+              "POST /api/import/orders - Create import order",
+              "PUT /api/import/orders/:id - Update import order",
+              "GET /api/import/orders/:id/status - Get order status",
+              "POST /api/import/orders/:id/documents - Upload document"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/import/orders", "/os/import/orders/:id"],
+            "components": ["ImportOrderList", "ImportOrderForm", "ImportOrderDetail"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "procurement", "super_admin"]
+          }
+        },
+        {
+          "id": "IMPORT-2",
+          "name": "Export Order Management",
+          "backend": {
+            "routes": ["/api/export/orders", "/api/export/orders/:id"],
+            "database": {
+              "tables": ["export_orders", "export_order_items", "export_documents"]
+            },
+            "endpoints": [
+              "GET /api/export/orders - List export orders",
+              "POST /api/export/orders - Create export order",
+              "PUT /api/export/orders/:id - Update export order"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/export/orders", "/os/export/orders/:id"],
+            "components": ["ExportOrderList", "ExportOrderForm", "ExportOrderDetail"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "procurement", "super_admin"]
+          }
+        },
+        {
+          "id": "IMPORT-3",
+          "name": "Customs & Tariffs",
+          "backend": {
+            "routes": ["/api/import/customs", "/api/import/tariffs"],
+            "database": {
+              "tables": ["customs_hs_codes", "customs_tariffs", "customs_duty_calculations"]
+            },
+            "endpoints": [
+              "GET /api/import/tariffs - List tariffs by country",
+              "GET /api/import/tariffs/calculate - Calculate duty",
+              "GET /api/import/hs-codes - Search HS codes",
+              "POST /api/import/customs/clearance - Record customs clearance"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/import/customs", "/os/import/tariffs"],
+            "components": ["TariffCalculator", "HSCodeLookup", "CustomsClearance"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "procurement", "super_admin"]
+          }
+        },
+        {
+          "id": "IMPORT-4",
+          "name": "Trade Documentation",
+          "backend": {
+            "routes": ["/api/import/documents", "/api/export/documents"],
+            "database": {
+              "tables": ["trade_documents", "document_templates"]
+            },
+            "endpoints": [
+              "GET /api/import/documents - List import documents",
+              "GET /api/export/documents - List export documents",
+              "POST /api/import/documents/generate - Generate document",
+              "GET /api/import/documents/templates - List templates"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/import/documents", "/os/export/documents"],
+            "components": ["DocumentList", "DocumentGenerator", "DocumentViewer"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "procurement", "super_admin"]
+          }
+        },
+        {
+          "id": "IMPORT-5",
+          "name": "Country Trade Rules",
+          "backend": {
+            "routes": ["/api/import/rules", "/api/export/rules"],
+            "database": {
+              "tables": ["trade_rules", "prohibited_items", "trade_quotas"]
+            },
+            "endpoints": [
+              "GET /api/import/rules/:country - Get import rules for country",
+              "GET /api/export/rules/:country - Get export rules for country",
+              "GET /api/import/rules/prohibited - Get prohibited items",
+              "GET /api/import/rules/quotas - Get quota information"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/import/rules", "/os/export/rules"],
+            "components": ["TradeRulesList", "ProhibitedItems", "QuotaTracker"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "procurement", "super_admin"]
+          }
+        }
+      ],
+      "acceptance_criteria": [
+        "Import/Export dashboard shows order summaries and compliance status",
+        "All import/export data filtered by territory",
+        "RBAC restricts access appropriately",
+        "Customs duty calculation works correctly",
+        "HS code lookup functional",
+        "Document generation works",
+        "Integration with Orders and Inventory modules"
+      ]
+    },
+    {
+      "id": "EPIC-3",
+      "name": "GPS Tracking & Digital Mapping Module",
+      "description": "Real-time GPS tracking, fleet management, and geographic visualization",
+      "modules": [
+        {
+          "id": "GPS-1",
+          "name": "GPS Tracking",
+          "backend": {
+            "routes": ["/api/gps/tracking", "/api/gps/vehicles"],
+            "database": {
+              "tables": ["gps_vehicles", "gps_locations", "gps_routes"]
+            },
+            "endpoints": [
+              "GET /api/gps/vehicles - List vehicles",
+              "GET /api/gps/vehicles/:id/location - Get current location",
+              "GET /api/gps/vehicles/:id/history - Get location history",
+              "POST /api/gps/vehicles/:id/location - Update location",
+              "GET /api/gps/routes/:id - Get route details"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/logistics/gps", "/os/logistics/gps/vehicles/:id"],
+            "components": ["GPSMapView", "VehicleList", "VehicleTracker", "RouteViewer"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "manager", "sales", "sales_officer", "super_admin"]
+          }
+        },
+        {
+          "id": "GPS-2",
+          "name": "Fleet Management",
+          "backend": {
+            "routes": ["/api/gps/fleet", "/api/gps/fleet/:id"],
+            "database": {
+              "tables": ["fleet_vehicles", "fleet_drivers", "fleet_assignments"]
+            },
+            "endpoints": [
+              "GET /api/gps/fleet - List fleet",
+              "POST /api/gps/fleet - Add vehicle",
+              "PUT /api/gps/fleet/:id - Update vehicle",
+              "POST /api/gps/fleet/:id/assign - Assign driver",
+              "GET /api/gps/fleet/status - Get fleet status"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/logistics/fleet", "/os/logistics/fleet/:id"],
+            "components": ["FleetDashboard", "VehicleForm", "DriverAssignment"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "manager", "super_admin"]
+          }
+        },
+        {
+          "id": "GPS-3",
+          "name": "Digital Mapping",
+          "backend": {
+            "routes": ["/api/gps/map", "/api/gps/locations"],
+            "database": {
+              "tables": ["map_locations", "map_zones", "map_routes"]
+            },
+            "endpoints": [
+              "GET /api/gps/map/overview - Get map overview",
+              "GET /api/gps/locations - List all locations",
+              "GET /api/gps/locations/warehouses - List warehouses",
+              "GET /api/gps/locations/customers - List customer locations",
+              "GET /api/gps/routes/optimize - Optimize route"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/logistics/map", "/os/logistics/map/zones"],
+            "components": ["WorldMapView", "LocationMarker", "RouteOptimizer", "ZoneEditor"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "manager", "sales", "super_admin"]
+          }
+        },
+        {
+          "id": "GPS-4",
+          "name": "Geographic Analytics",
+          "backend": {
+            "routes": ["/api/gps/analytics"],
+            "database": {
+              "tables": ["geo_analytics", "geo_heatmaps"]
+            },
+            "endpoints": [
+              "GET /api/gps/analytics/performance - Performance by region",
+              "GET /api/gps/analytics/heatmap - Generate heatmap data",
+              "GET /api/gps/analytics/coverage - Coverage analysis"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/logistics/analytics"],
+            "components": ["GeoAnalytics", "HeatmapView", "CoverageMap"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "manager", "executive", "super_admin"]
+          }
+        }
+      ],
+      "acceptance_criteria": [
+        "GPS tracking shows real-time vehicle locations",
+        "Fleet management allows vehicle and driver assignment",
+        "Digital map shows warehouses, customers, and routes",
+        "Route optimization functional",
+        "Geographic analytics work with territory filters",
+        "Integration with Logistics and Orders modules",
+        "RBAC properly restricts access"
+      ]
+    },
+    {
+      "id": "EPIC-4",
+      "name": "Competitor Intelligence Module",
+      "description": "Competitor product tracking, analysis, and market intelligence",
+      "modules": [
+        {
+          "id": "COMPETITOR-1",
+          "name": "Competitor Product Tracking",
+          "backend": {
+            "routes": ["/api/competitor/products", "/api/competitor/products/:id"],
+            "database": {
+              "tables": ["competitor_products", "competitor_brands", "competitor_categories"]
+            },
+            "endpoints": [
+              "GET /api/competitor/products - List competitor products",
+              "POST /api/competitor/products - Add competitor product",
+              "PUT /api/competitor/products/:id - Update product",
+              "GET /api/competitor/products/search - Search products",
+              "GET /api/competitor/products/compare - Compare with our products"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/competitor/products", "/os/competitor/products/:id"],
+            "components": ["CompetitorProductList", "ProductForm", "ProductComparison"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "manager", "executive", "super_admin"]
+          }
+        },
+        {
+          "id": "COMPETITOR-2",
+          "name": "Market Analysis",
+          "backend": {
+            "routes": ["/api/competitor/analysis"],
+            "database": {
+              "tables": ["competitor_analysis", "market_share_data", "pricing_analysis"]
+            },
+            "endpoints": [
+              "GET /api/competitor/analysis/market-share - Market share by country/category",
+              "GET /api/competitor/analysis/pricing - Pricing analysis",
+              "GET /api/competitor/analysis/trends - Market trends",
+              "GET /api/competitor/analysis/by-brand - Analysis by brand"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/competitor/analysis"],
+            "components": ["MarketShareChart", "PricingAnalysis", "TrendAnalysis"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "manager", "executive", "super_admin"]
+          }
+        },
+        {
+          "id": "COMPETITOR-3",
+          "name": "Competitor Dashboard",
+          "backend": {
+            "routes": ["/api/competitor/dashboard"],
+            "endpoints": [
+              "GET /api/competitor/dashboard - Get dashboard summary",
+              "GET /api/competitor/stats - Get statistics"
+            ]
+          },
+          "frontend": {
+            "routes": ["/os/competitor/dashboard"],
+            "components": ["CompetitorDashboard"]
+          },
+          "rbac": {
+            "allowed_roles": ["admin", "manager", "executive", "super_admin"]
+          }
+        }
+      ],
+      "acceptance_criteria": [
+        "Competitor dashboard shows product counts and analysis",
+        "Product tracking allows adding and updating competitor products",
+        "Market analysis shows share, pricing, and trends",
+        "Data filtered by territory where applicable",
+        "RBAC properly restricts access",
+        "Integration with Products module for comparison"
+      ]
+    }
+  ],
+  "database_conventions": {
+    "naming": "snake_case for tables and columns",
+    "primary_keys": "TEXT id field with UUID format",
+    "timestamps": "created_at, updated_at DATETIME fields",
+    "foreign_keys": "Enable foreign key constraints",
+    "indexes": "Index on foreign keys and frequently queried fields"
+  },
+  "backend_conventions": {
+    "route_prefix": "/api/<domain>",
+    "response_format": "{ success: boolean, data?: any, error?: string }",
+    "error_handling": "Use try-catch, return proper HTTP status codes",
+    "validation": "Validate all inputs, use parameterized queries",
+    "logging": "Log important operations, errors, and access"
+  },
+  "frontend_conventions": {
+    "route_structure": "/os/<domain>/<page>",
+    "layout": "Use OSLegalLayout pattern for OS pages",
+    "components": "Reuse existing table, form, modal components",
+    "localization": "Use useTranslations hook, formatCurrency, formatDate",
+    "rbac": "Use AuthGuard component with allowedRoles"
+  },
+  "integration_requirements": {
+    "legal_with_orders": "Legal compliance check before order fulfillment",
+    "import_with_inventory": "Import orders update inventory",
+    "export_with_inventory": "Export orders deduct inventory",
+    "gps_with_logistics": "GPS tracking integrated with shipments",
+    "competitor_with_products": "Competitor products compared with ours"
+  }
+}
+

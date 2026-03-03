@@ -1,0 +1,8 @@
+# Redirect root to English
+/ /en 302
+
+# Handle locale redirects
+/:locale /:locale/ 302
+
+# Handle all other routes
+/* /index.html 200
