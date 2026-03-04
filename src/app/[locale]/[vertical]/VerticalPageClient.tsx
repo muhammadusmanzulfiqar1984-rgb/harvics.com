@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { slugify, type NavVertical } from '@/data/megaMenuData'
 import { getVerticalProducts, getVerticalSubcategories, getSubcategoryProducts, getProductImage, type Product } from '@/data/productCatalog'
+import { getVerticalLanding, getAllCategoryDescriptions } from '@/data/verticalDescriptions'
 
 /** Rich descriptions & stats for each vertical */
 const verticalMeta: Record<string, { tagline: string; description: string; stats: { label: string; value: string }[]; icon: string }> = {
@@ -80,6 +81,8 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
   const [activeFilter, setActiveFilter] = useState<string | null>(null)
   const [sortBy, setSortBy] = useState<'name' | 'price'>('name')
   const meta = verticalMeta[vertical.key] || { tagline: '', description: '', stats: [], icon: '📊' }
+  const landing = getVerticalLanding(vertical.key)
+  const categoryDescs = getAllCategoryDescriptions(vertical.key)
 
   const displayProducts = activeFilter
     ? getSubcategoryProducts(vertical.key, activeFilter)
@@ -133,16 +136,27 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
       {/* Category Blocks — Quick Nav */}
       <section className="bg-white border-b border-[#C3A35E]/20 py-8 px-4">
         <div className="max-w-[1200px] mx-auto">
+          {landing && (
+            <div className="text-center mb-6">
+              <h2 className="text-lg font-semibold text-[#6B1F2B] mb-2">{landing.title}</h2>
+              <p className="text-sm text-[#6B1F2B]/50 max-w-[600px] mx-auto">{landing.description}</p>
+            </div>
+          )}
           <div className="flex flex-wrap gap-3 justify-center">
-            {vertical.blocks.map((block) => (
-              <Link
-                key={block.title}
-                href={`/${locale}/${vertical.key}/${slugify(block.title)}`}
-                className="px-5 py-2.5 bg-[#F5F1E8] border border-[#C3A35E]/20 text-sm font-medium text-[#6B1F2B] hover:bg-[#6B1F2B] hover:text-white hover:border-[#6B1F2B] transition-colors"
-              >
-                {block.title}
-              </Link>
-            ))}
+            {vertical.blocks.map((block) => {
+              const catDesc = categoryDescs[slugify(block.title)] || categoryDescs[block.title.toLowerCase()]
+              return (
+                <Link
+                  key={block.title}
+                  href={`/${locale}/${vertical.key}/${slugify(block.title)}`}
+                  className="group px-5 py-3 bg-[#F5F1E8] border border-[#C3A35E]/20 text-sm font-medium text-[#6B1F2B] hover:bg-[#6B1F2B] hover:text-white hover:border-[#6B1F2B] transition-colors relative"
+                  title={catDesc?.description || ''}
+                >
+                  {block.title}
+                  <span className="block text-xs opacity-50 font-normal mt-0.5">{block.items.length} items</span>
+                </Link>
+              )
+            })}
           </div>
         </div>
       </section>

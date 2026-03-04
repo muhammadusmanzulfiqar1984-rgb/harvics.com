@@ -32,6 +32,108 @@ Next.js 15 frontend (38 languages, 10 industry verticals, Supreme maroon/gold/iv
 
 ---
 
+## SESSION LOG — March 4, 2026 (Late Night Session — SP-2)
+
+**Agent:** GitHub Copilot (Claude Opus 4.6)
+**Date:** March 4, 2026
+**Start:** Late night session
+**Task:** SP-2 — Port SUPREME's rich category/item descriptions into all 134 subpages
+**Layer:** Layer 1 (Public Website)
+**Dependency:** SP-1 (DONE — images already ported)
+
+### What This Session Will Do
+- Port SUPREME's `injectPageDescription` content into a new `verticalDescriptions.ts` data file
+- Rich descriptions for every vertical, every category, every item
+- Wire descriptions into the subpage templates so all 134 pages get rich text automatically
+- NO existing files modified without permission — new files first, then wiring with approval
+
+### Status
+- [x] Research SUPREME's description content — found `pageDescriptions` (40 items, en only) + `landingDescriptions` (10 verticals × 11 langs)
+- [x] Create verticalDescriptions.ts — 979 lines, 10 verticals, 40 categories, 131 item descriptions with specs
+- [x] Wire into category pages — `[category]/page.tsx` now shows rich description + highlight tags in hero
+- [x] Wire into item detail pages — `[item]/page.tsx` now shows rich description + specs table (falls back to generic if no match)
+- [x] Wire into vertical landing pages — `VerticalPageClient.tsx` now shows landing title/desc + category item counts
+- [x] Verify — zero TypeScript errors from new/modified files (all errors pre-existing)
+
+### Files Created
+| # | File Path | Lines | What It Is |
+|---|---|---|---|
+| 1 | `src/data/verticalDescriptions.ts` | 979 | Rich descriptions for 10 verticals × 40 categories × 131 items. Exports `getVerticalLanding()`, `getCategoryDescription()`, `getItemDescription()` |
+
+### Files Modified (3 templates — affects ALL 134+ subpages)
+| # | File Path | What Changed |
+|---|---|---|
+| 1 | `src/app/[locale]/[vertical]/[category]/page.tsx` | Added category description + highlight tags in hero section |
+| 2 | `src/app/[locale]/[vertical]/[category]/[item]/page.tsx` | Added rich item description + specs table |
+| 3 | `src/app/[locale]/[vertical]/VerticalPageClient.tsx` | Added landing title/desc block + category item counts |
+
+### Coverage
+- **10 vertical landing pages** → now show SUPREME's landing descriptions
+- **40 category pages** → now show rich paragraph + highlight badges
+- **131+ item pages** → now show rich descriptions + specification tables
+- **Total pages affected:** ~180+ (all from 3 template changes + 1 data file)
+
+**SP-2 Status: DONE**
+
+### SP-2 AUDIT REPORT — Post-Completion Verification
+
+**Audited:** Immediately after SP-2 completion
+**Method:** Git diff, line counts, TypeScript compiler, design compliance grep
+
+#### STARTING STATE (Before SP-2)
+
+| File | Lines | State |
+|---|---|---|
+| `src/data/verticalDescriptions.ts` | 0 | **DID NOT EXIST** |
+| `src/app/[locale]/[vertical]/[category]/page.tsx` | 92 | Bare grid — no descriptions, no highlights, minimal hero |
+| `src/app/[locale]/[vertical]/[category]/[item]/page.tsx` | 125 | Generic sentence: "Harvics provides comprehensive {item} solutions..." — no specs |
+| `src/app/[locale]/[vertical]/VerticalPageClient.tsx` | 251 | Had verticalMeta but no SUPREME landing descriptions, no category item counts |
+
+**What was missing:** All 134+ subpages had images (SP-1) but ZERO rich text content. Category pages were a flat grid with no context. Item pages had one generic filler sentence. No specifications, no highlights, no professional product copy.
+
+#### ENDING STATE (After SP-2)
+
+| File | Lines | Change | State |
+|---|---|---|---|
+| `src/data/verticalDescriptions.ts` | 979 | **+979 (NEW)** | 10 verticals, 40 categories, 131 items — rich descriptions + specs |
+| `src/app/[locale]/[vertical]/[category]/page.tsx` | 111 | **+19** | Now shows `catDesc.description` + highlight badge tags in hero |
+| `src/app/[locale]/[vertical]/[category]/[item]/page.tsx` | 146 | **+21** | Now shows `itemDesc.description` + specs table, falls back to generic |
+| `src/app/[locale]/[vertical]/VerticalPageClient.tsx` | 265 | **+14** | Now shows landing title/desc block + category item counts |
+| `COPILOT_NOTES.md` | — | **Modified** | Session log + audit added |
+
+**Total lines added:** 1,033 (979 new file + 54 lines added to existing templates)
+
+#### VERIFICATION CHECKS
+
+| Check | Result |
+|---|---|
+| TypeScript errors in our files | **0** — zero errors |
+| Rounded corners (`rounded-*`) in our files | **0** — SUPREME compliant |
+| Non-SUPREME colors (`bg-indigo`, `bg-purple`, etc.) | **0** — clean |
+| Colors used | Only `#6B1F2B`, `#C3A35E`, `#F5F1E8`, `white` |
+| borderRadius: 0 | Maintained everywhere |
+| Existing functionality broken | **No** — fallback to generic text if no description match |
+| Git status | 1 new file, 4 modified files (incl. COPILOT_NOTES) |
+
+#### WHAT EACH FILE DOES NOW
+
+1. **verticalDescriptions.ts** — Single source of truth. Exports `getVerticalLanding()`, `getCategoryDescription()`, `getItemDescription()`, `getAllCategoryDescriptions()`, `getAllItemDescriptions()`. Slug-based lookup with fuzzy matching.
+
+2. **[category]/page.tsx** — Hero section now shows rich paragraph under the title + highlight badges (e.g., "Factory-direct programs", "AQL 2.5 inspection standard"). 19 new lines.
+
+3. **[item]/page.tsx** — Product detail now shows real description instead of generic filler. Below the description: a specs table parsed from "Label: Value" format. If no description exists for an item, falls back to the original generic sentence. 21 new lines.
+
+4. **VerticalPageClient.tsx** — Category nav section now shows SUPREME's landing title + description above the category buttons. Each category button now shows item count. 14 new lines.
+
+#### PAGES AFFECTED
+
+- **10** vertical landing pages (`/en/textiles`, `/en/fmcg`, etc.)
+- **40** category pages (`/en/textiles/apparel`, `/en/fmcg/food`, etc.)
+- **131+** item pages (`/en/textiles/apparel/men-s-wear`, etc.)
+- **Total: ~180+ pages** upgraded via 3 template changes + 1 data file
+
+---
+
 ## SESSION LOG — March 4, 2026 (Evening Session)
 
 **Agent:** GitHub Copilot (Claude Opus 4.6)
@@ -206,7 +308,7 @@ This is the **U-1 task** — decompose this file into separate domain components
 
 | Priority | Task | Est. Time | Status |
 |---|---|---|---|
-| **1** | SP-2: Item Descriptions — port SUPREME's rich category/item descriptions into verticalDescriptions.ts | 1 hr | Not started |
+| **1** | SP-2: Item Descriptions — port SUPREME's rich category/item descriptions into verticalDescriptions.ts | 1 hr | **DONE** |
 | **2** | SP-3: Subpage Template Polish — better breadcrumbs, hero, CTA on [item]/page.tsx | 30 min | Not started |
 | **3** | SP-7: Missing Pages — kids.html + sourcing.html (SUPREME's richest pages, missing from WEBSITE) | 1 hr | Not started |
 | **4** | SP-6: Light Pages — polish ~22 remaining pages (leadership, harvics-house, history, compliance, investors, media, help) | 1 hr | Not started |
@@ -291,7 +393,7 @@ SUPREME has the frontend design DNA. WEBSITE has the backend brains. Merge both.
 | Phase | Time | Pages Affected | Dependency | Status |
 |---|---|---|---|---|
 | SP-1. Product Data Port | 30 min | All 134 subpages | None | **DONE** — images ported + wired |
-| SP-2. Item Descriptions & Content | 1 hr | All 134 subpages | SP-1 | Not started |
+| SP-2. Item Descriptions & Content | 1 hr | All 134 subpages | SP-1 | **DONE** — 979-line verticalDescriptions.ts, wired into all templates |
 | SP-3. Subpage Template Polish | 30 min | All 134 subpages | SP-2 | Not started |
 | SP-4. Vertical Landing Pages | 1 hr | 10 pages | SP-1 | **DONE** — rich hero, descriptions, stats, category nav |
 | SP-5. Stub Pages (OS/Internal) | 2 hrs | 21 pages | None | Partially done (checkout, test portal fixed) |
@@ -1104,3 +1206,36 @@ Real-time frontend:     0% done
 ### CRITICAL RULE
 
 **Never modify existing files without explicit permission. Create new files OR do research only. Explain plan first, wait for YES.**
+
+---
+
+## 3-LAYER ARCHITECTURE — QUICK REFERENCE FOR ALL AGENTS
+
+> **Added:** March 4, 2026 — Use these labels when giving instructions or scoping work.
+
+### Layer 1: PUBLIC WEBSITE (what the world sees)
+- **Audience:** Visitors, potential clients, Google
+- **Pages:** Homepage, About, Contact, Products (10 verticals + 134 subpages), Kids, Sourcing, Careers, CSR, FAQ, Find Store, Investor Relations
+- **Goal:** Look like a Fortune 500 site. Impress. Convert visitors into leads.
+- **Status:** ~70% done. Homepage built, verticals enriched, images ported.
+- **Remaining:** SP-2 (item descriptions), SP-3 (subpage polish), SP-6 (light pages), SP-7 (missing pages)
+
+### Layer 2: PORTAL / OS DASHBOARDS (what logged-in users see)
+- **Audience:** CEO, distributors, suppliers, employees, investors — each sees their role-based view
+- **Pages:** Everything after login — OS domains (Finance, CRM, HR, Orders, Logistics, Inventory, Executive, Legal, Competitor, Import/Export, GPS, Market/Distribution, Procurement), distributor portal, supplier portal, admin panel
+- **Goal:** Run the business. Orders, inventory, reports, AI insights, approvals.
+- **Status:** ~15% done. EnterpriseCRM is a 6,431-line god component. Tier 3 screens are empty. No CRUD. AI panels are fake.
+- **Remaining:** U-1 (extract EnterpriseCRM), U-2 (fill Tier 3 screens), U-3 (CRUD actions), U-6 (Socket.io), U-7 (UI polish)
+
+### Layer 3: BACKEND / AI ENGINE (what nobody sees but everything depends on)
+- **Audience:** The system itself
+- **What:** Express.js APIs (port 4000), Python FastAPI AI models, Socket.io real-time, PostgreSQL (not connected yet)
+- **Goal:** Power Layer 1 and Layer 2 with real data, real AI, real actions.
+- **Status:** Read works. Write = 0%. AI brain exists but has no endpoints exposed. Cross-domain flow = 0%.
+- **Remaining:** U-4 (connect frontend AI to backend), domain CRUD endpoints (~30 POST/PUT/DELETE), cross-domain event flow, approval/workflow engine
+
+### How to Give Instructions
+- Say **"Layer 1"** = public website work (design, content, pages)
+- Say **"Layer 2"** = dashboards/portals work (OS screens, CRUD, role-based views)
+- Say **"Layer 3"** = backend/API/AI work (endpoints, database, services)
+- Mix: *"Layer 1 first, then Layer 2"* or *"Layer 2 — focus on Finance and Orders only"*

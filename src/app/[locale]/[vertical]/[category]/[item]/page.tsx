@@ -2,6 +2,7 @@ import { navVerticals, slugify } from '@/data/megaMenuData'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getProductImage } from '@/data/productCatalog'
+import { getItemDescription } from '@/data/verticalDescriptions'
 
 const VALID_VERTICALS = navVerticals.map((v) => v.key)
 
@@ -28,6 +29,8 @@ export default async function ItemPage({
   if (!matchedItem) {
     notFound()
   }
+
+  const itemDesc = getItemDescription(vertical, item)
 
   return (
     <main className="min-h-screen bg-[#F5F1E8]">
@@ -70,10 +73,28 @@ export default async function ItemPage({
             <div className="flex-1">
               <h2 className="text-xl font-semibold text-[#6B1F2B] mb-4">{matchedItem}</h2>
               <p className="text-sm text-[#6B1F2B]/60 leading-relaxed mb-6">
-                Harvics provides comprehensive {matchedItem.toLowerCase()} solutions 
-                as part of our {block.title.toLowerCase()} portfolio within the {verticalData.label.toLowerCase()} vertical. 
-                Backed by our global supply chain network operating across multiple continents.
+                {itemDesc?.description ||
+                  `Harvics provides comprehensive ${matchedItem.toLowerCase()} solutions as part of our ${block.title.toLowerCase()} portfolio within the ${verticalData.label.toLowerCase()} vertical. Backed by our global supply chain network operating across multiple continents.`}
               </p>
+
+              {/* Specs */}
+              {itemDesc?.specs && itemDesc.specs.length > 0 && (
+                <div className="mb-6">
+                  <h3 className="text-xs font-bold text-[#6B1F2B] uppercase tracking-wider mb-3">Specifications</h3>
+                  <div className="space-y-2">
+                    {itemDesc.specs.map((spec, idx) => {
+                      const [label, ...rest] = spec.split(':')
+                      const value = rest.join(':').trim()
+                      return (
+                        <div key={idx} className="flex justify-between text-sm border-b border-[#C3A35E]/10 pb-2">
+                          <span className="text-[#6B1F2B]/50 font-medium">{label}</span>
+                          <span className="font-semibold text-[#6B1F2B] text-right max-w-[60%]">{value}</span>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
 
               <div className="border-t border-[#C3A35E]/20 pt-4 space-y-3">
                 <div className="flex justify-between text-sm">

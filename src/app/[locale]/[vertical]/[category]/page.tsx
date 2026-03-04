@@ -2,6 +2,7 @@ import { navVerticals, slugify } from '@/data/megaMenuData'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getSubcategoryProducts, getVerticalProducts, getProductImage } from '@/data/productCatalog'
+import { getCategoryDescription } from '@/data/verticalDescriptions'
 
 const VALID_VERTICALS = navVerticals.map((v) => v.key)
 
@@ -25,25 +26,43 @@ export default async function CategoryPage({
 
   // Try to get products for this subcategory
   const products = getSubcategoryProducts(vertical, category) || []
+  const catDesc = getCategoryDescription(vertical, category)
 
   return (
     <main className="min-h-screen bg-[#F5F1E8]">
       {/* Header */}
-      <section className="bg-[#6B1F2B] py-12 px-4 border-b border-[#C3A35E]/40">
-        <div className="max-w-[1200px] mx-auto text-center">
-          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-2">
-            {verticalData.label}
+      <section className="bg-[#6B1F2B] py-16 px-4 border-b border-[#C3A35E]/40">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center">
+            <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-2">
+              {verticalData.label}
+            </div>
+            <h1 className="text-3xl md:text-4xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
+              {block.title}
+            </h1>
+            {catDesc && (
+              <p className="text-base text-white/60 leading-relaxed max-w-[700px] mx-auto mb-4">
+                {catDesc.description}
+              </p>
+            )}
+            <div className="mt-3 text-xs text-white/40">
+              <Link href={`/${locale}`} className="hover:text-white/60">Home</Link>
+              <span className="mx-2">›</span>
+              <Link href={`/${locale}/${vertical}`} className="hover:text-white/60">{verticalData.label}</Link>
+              <span className="mx-2">›</span>
+              <span className="text-[#C3A35E]">{block.title}</span>
+            </div>
           </div>
-          <h1 className="text-3xl font-semibold text-white mb-3" style={{ letterSpacing: '-0.02em' }}>
-            {block.title}
-          </h1>
-          <div className="mt-3 text-xs text-white/40">
-            <Link href={`/${locale}`} className="hover:text-white/60">Home</Link>
-            <span className="mx-2">›</span>
-            <Link href={`/${locale}/${vertical}`} className="hover:text-white/60">{verticalData.label}</Link>
-            <span className="mx-2">›</span>
-            <span className="text-[#C3A35E]">{block.title}</span>
-          </div>
+          {/* Highlights */}
+          {catDesc && catDesc.highlights.length > 0 && (
+            <div className="flex flex-wrap justify-center gap-3 mt-8">
+              {catDesc.highlights.map((h) => (
+                <span key={h} className="px-4 py-1.5 border border-[#C3A35E]/30 text-xs text-[#C3A35E] font-medium uppercase tracking-wider">
+                  {h}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
