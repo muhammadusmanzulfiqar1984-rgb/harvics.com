@@ -314,3 +314,107 @@ export function getVerticalSubcategories(verticalKey: string): string[] {
   if (!data || Array.isArray(data)) return []
   return Object.keys(data)
 }
+
+// ─── UNSPLASH IMAGE MAP (ported from SUPREME's product-data.js) ───
+const UNSPLASH_MAP: Record<string, string> = {
+  // TEXTILES & APPAREL
+  suit: 'm0ZBWRYYq7o', men: 'm0ZBWRYYq7o', shirt: 'WBN-J1_w7Rw', denim: 'B00k_1iHnZk',
+  polo: 'WBN-J1_w7Rw', leather: 'MQuL6b1_v4E', jacket: 'MQuL6b1_v4E',
+  gown: '9Pspyy5lEMw', dress: 'P-J4kbEIEk0', floral: 'P-J4kbEIEk0', silk: 'cjUOhrBquqc',
+  blouse: 'WBN-J1_w7Rw', handbag: '9Pspyy5lEMw', fashion: '9Pspyy5lEMw',
+  boy: '5UL65v055Fg', tshirt: 'S-2Uq7sYj30', girl: 'P-J4kbEIEk0', women: '9Pspyy5lEMw',
+  jeans: 'B00k_1iHnZk', kids: '5UL65v055Fg', uniform: 'WBN-J1_w7Rw', school: 'WBN-J1_w7Rw',
+  hoodie: '5UL65v055Fg', pajamas: '5UL65v055Fg', shoes: 'WBN-J1_w7Rw', sneakers: 'WBN-J1_w7Rw',
+  bedsheet: 'G7sE2S4Lab4', bedroom: 'G7sE2S4Lab4', towel: '8wTPqxlnKM4', bathroom: '8wTPqxlnKM4',
+  cushion: 'G7sE2S4Lab4', decor: 'G7sE2S4Lab4', apron: 'WBN-J1_w7Rw', kitchen: '8wTPqxlnKM4',
+  chinos: '1454165804606-c3d57bc86b40', merino: '1454165804606-c3d57bc86b40',
+  blazer: '1486406146926-c627a92ad1ab', overcoat: '1486406146926-c627a92ad1ab',
+  parka: '1565514020176-db5928a57342', stormwear: '1565514020176-db5928a57342',
+  sportswear: '1565514020176-db5928a57342', trainers: '1516321318423-f06f85e504b3',
+  boots: '1516321318423-f06f85e504b3', loungewear: '1596524430623-6ce64b9c546a',
+  pyjamas: '1596524430623-6ce64b9c546a', 'dressing-gown': '1596524430623-6ce64b9c546a',
+  bra: '1516321318423-f06f85e504b3', lingerie: '1516321318423-f06f85e504b3',
+  knickers: '1516321318423-f06f85e504b3', shapewear: '1516321318423-f06f85e504b3',
+  'sports-bra': '1516321318423-f06f85e504b3', tights: '1516321318423-f06f85e504b3',
+  nightwear: '1596524430623-6ce64b9c546a',
+  // FMCG
+  rice: 'VmBToKkQ8ac', basmati: 'VmBToKkQ8ac', grain: 'VmBToKkQ8ac',
+  flour: 'KxJ8r8yqQ7o', wheat: 'KxJ8r8yqQ7o', lentils: 'uDnW85d_N7w', oats: 'KxJ8r8yqQ7o',
+  oil: 'PLyJqE4_W3I', sunflower: 'PLyJqE4_W3I', olive: 'PLyJqE4_W3I',
+  ghee: 'PLyJqE4_W3I', butter: 'PLyJqE4_W3I', spices: 'uDnW85d_N7w',
+  noodles: 'VmBToKkQ8ac', cookies: 'S-2Uq7sYj30', chocolate: 'S-2Uq7sYj30',
+  chips: 'S-2Uq7sYj30', snack: 'S-2Uq7sYj30', corn: 'KxJ8r8yqQ7o',
+  milk: '8wTPqxlnKM4', cheese: '8wTPqxlnKM4', juice: 'PLyJqE4_W3I',
+  coffee: 'n_3kdpSkrKw', toothpaste: 't8hTmte4Oyo', soap: 't8hTmte4Oyo',
+  shampoo: 't8hTmte4Oyo', detergent: '8wTPqxlnKM4',
+  // INDUSTRIAL & COMMODITIES
+  cnc: 'Cj4_Q-l_s4I', machine: 'Cj4_Q-l_s4I', factory: 'H6d6jIaO9WE',
+  helmet: 'tE6th1h6Bfk', safety: 'tE6th1h6Bfk', vest: 'tE6th1h6Bfk',
+  copper: 'B00k_1iHnZk', wire: 'B00k_1iHnZk', industrial: 'H6d6jIaO9WE',
+  iron: 'H6d6jIaO9WE', ore: 'H6d6jIaO9WE', mining: 'H6d6jIaO9WE',
+  rig: 'Ej2FQy1W7z4', ocean: 'Ej2FQy1W7z4', tanker: '0A7YwYhZhWw',
+  ship: '0A7YwYhZhWw', coal: 'H6d6jIaO9WE', fuel: 'Ej2FQy1W7z4', truck: '0A7YwYhZhWw',
+  gold: 'ktXmcyqYx54', bars: 'ktXmcyqYx54', silver: 'ktXmcyqYx54', metal: 'ktXmcyqYx54',
+  aluminum: 'H6d6jIaO9WE', steel: 'H6d6jIaO9WE', construction: 'H6d6jIaO9WE',
+  pipeline: 'H6d6jIaO9WE', refinery: 'H6d6jIaO9WE',
+  field: '_rXmtIMnOT8', soybean: '_rXmtIMnOT8', sugar: '_rXmtIMnOT8',
+  palm: '_rXmtIMnOT8', fertilizer: '_rXmtIMnOT8', farm: '_rXmtIMnOT8',
+  beans: 'n_3kdpSkrKw', cocoa: 'n_3kdpSkrKw',
+  beef: 'uDnW85d_N7w', steak: 'uDnW85d_N7w', poultry: 'uDnW85d_N7w',
+  chicken: 'uDnW85d_N7w', fish: 'uDnW85d_N7w', seafood: 'uDnW85d_N7w',
+  lithium: 'ktXmcyqYx54', battery: 'ktXmcyqYx54', nickel: 'H6d6jIaO9WE',
+  sand: 'H6d6jIaO9WE', gravel: 'H6d6jIaO9WE', limestone: 'H6d6jIaO9WE',
+  platinum: 'ktXmcyqYx54', zinc: 'H6d6jIaO9WE', uranium: 'H6d6jIaO9WE',
+  // REAL ESTATE
+  office: '1486406146926-c627a92ad1ab', building: '1486406146926-c627a92ad1ab',
+  retail: '1486406146926-c627a92ad1ab', apartments: '1486406146926-c627a92ad1ab',
+  villas: '1486406146926-c627a92ad1ab', community: '1486406146926-c627a92ad1ab',
+  warehouses: 'H6d6jIaO9WE', sez: 'H6d6jIaO9WE',
+  // FINANCE
+  lc: '1524661135-423995f22d0b', sblc: '1524661135-423995f22d0b',
+  forfaiting: '1524661135-423995f22d0b', wallets: '1516321318423-f06f85e504b3',
+  payments: '1516321318423-f06f85e504b3', gateway: '1516321318423-f06f85e504b3',
+  bills: '1596524430623-6ce64b9c546a', reconciliation: '1524661135-423995f22d0b',
+  kyc: '1516321318423-f06f85e504b3', aml: '1516321318423-f06f85e504b3',
+  scoring: '1524661135-423995f22d0b',
+  // AI
+  forecasting: '1524661135-423995f22d0b', vision: '1524661135-423995f22d0b',
+  chat: '1524661135-423995f22d0b', pipelines: '1524661135-423995f22d0b',
+  apis: '1524661135-423995f22d0b', erp: '1524661135-423995f22d0b',
+  mobile: '1524661135-423995f22d0b', slas: '1524661135-423995f22d0b',
+  training: '1524661135-423995f22d0b',
+  // DEFAULTS
+  default: 'APPLE%20EXAMPLE/apple%20header%20picture.jpg',
+}
+
+/** Get a product image URL from keywords — ported from SUPREME */
+export function getProductImage(keywords: string): string {
+  const defaultUrl = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80'
+  if (!keywords) return defaultUrl
+
+  const makeUrl = (token: string): string | null => {
+    if (!token) return null
+    if (token.includes('/') || token.includes('.')) return token
+    const isPhotoId = /^\d{10,}-[a-z0-9]+$/i.test(token)
+    if (isPhotoId) return `https://images.unsplash.com/photo-${token}?auto=format&fit=crop&w=800&q=80`
+    return `https://images.unsplash.com/${token}?auto=format&fit=crop&w=800&q=80`
+  }
+
+  const keys = keywords.toLowerCase().split(',').map(k => k.trim())
+  for (const key of keys) {
+    if (UNSPLASH_MAP[key]) {
+      const val = makeUrl(UNSPLASH_MAP[key])
+      if (val) return val
+    }
+  }
+  // Fuzzy fallback
+  for (const key of keys) {
+    for (const mapKey in UNSPLASH_MAP) {
+      if (mapKey.includes(key) || key.includes(mapKey)) {
+        const val = makeUrl(UNSPLASH_MAP[mapKey])
+        if (val) return val
+      }
+    }
+  }
+  return defaultUrl
+}

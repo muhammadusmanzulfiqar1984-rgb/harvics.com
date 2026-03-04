@@ -1,7 +1,7 @@
 import { navVerticals, slugify } from '@/data/megaMenuData'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { getSubcategoryProducts, getVerticalProducts } from '@/data/productCatalog'
+import { getSubcategoryProducts, getVerticalProducts, getProductImage } from '@/data/productCatalog'
 
 const VALID_VERTICALS = navVerticals.map((v) => v.key)
 
@@ -57,8 +57,8 @@ export default async function CategoryPage({
               className="bg-white border border-[#C3A35E]/20 hover:border-[#C3A35E] p-6 text-center transition-colors group"
               style={{ borderRadius: 0, boxShadow: 'none' }}
             >
-              <div className="w-16 h-16 mx-auto mb-4 bg-[#F5F1E8] border border-[#C3A35E]/20 flex items-center justify-center" style={{ borderRadius: 0 }}>
-                <span className="text-xl text-[#6B1F2B]/40">📄</span>
+              <div className="w-16 h-16 mx-auto mb-4 bg-[#F5F1E8] border border-[#C3A35E]/20 overflow-hidden" style={{ borderRadius: 0 }}>
+                <img src={getProductImage(item.toLowerCase())} alt={item} className="w-full h-full object-cover" loading="lazy" />
               </div>
               <h3 className="text-sm font-semibold text-[#6B1F2B] group-hover:text-[#6B1F2B]">
                 {item}

@@ -4,6 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
 import { navVerticals } from '@/data/megaMenuData'
+import { useScrollReveal, revealClass } from '@/hooks/useScrollReveal'
 
 /**
  * SupremeIndustryGrid — Displays all 10 industry verticals as a clean grid.
@@ -25,9 +26,10 @@ const industryMeta: Record<string, { icon: string; desc: string }> = {
 
 const SupremeIndustryGrid: React.FC = () => {
   const locale = useLocale()
+  const { ref, isVisible } = useScrollReveal()
 
   return (
-    <section className="bg-[#F5F1E8] py-16 px-4">
+    <section ref={ref} className={`bg-[#F5F1E8] py-16 px-4 ${revealClass(isVisible, 'up')}`}>
       <div className="max-w-[1200px] mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">

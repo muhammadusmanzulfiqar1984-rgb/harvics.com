@@ -1,6 +1,7 @@
 import { navVerticals, slugify } from '@/data/megaMenuData'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import { getProductImage } from '@/data/productCatalog'
 
 const VALID_VERTICALS = navVerticals.map((v) => v.key)
 
@@ -55,9 +56,14 @@ export default async function ItemPage({
       <div className="max-w-[900px] mx-auto px-4 py-12">
         <div className="bg-white border border-[#C3A35E]/20 p-10" style={{ borderRadius: 0, boxShadow: 'none' }}>
           <div className="flex flex-col md:flex-row gap-8">
-            {/* Image placeholder */}
-            <div className="w-full md:w-[300px] h-[250px] bg-[#F5F1E8] border border-[#C3A35E]/20 flex items-center justify-center flex-shrink-0" style={{ borderRadius: 0 }}>
-              <span className="text-5xl opacity-20">📦</span>
+            {/* Product image */}
+            <div className="w-full md:w-[300px] h-[250px] bg-[#F5F1E8] border border-[#C3A35E]/20 flex-shrink-0 overflow-hidden" style={{ borderRadius: 0 }}>
+              <img
+                src={getProductImage(matchedItem.toLowerCase())}
+                alt={matchedItem}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
 
             {/* Details */}

@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import { useScrollReveal, revealClass } from '@/hooks/useScrollReveal'
 
 /**
  * SupplyChainWheel — Interactive SVG wheel showing 14 supply chain stages.
@@ -26,12 +27,13 @@ const stages = [
 
 const SupplyChainWheel: React.FC = () => {
   const [activeStage, setActiveStage] = useState(0)
+  const { ref, isVisible } = useScrollReveal()
   const radius = 200
   const centerX = 250
   const centerY = 250
 
   return (
-    <section className="bg-white py-16 px-4 border-t border-b border-[#C3A35E]/20">
+    <section ref={ref} className={`bg-white py-16 px-4 border-t border-b border-[#C3A35E]/20 ${revealClass(isVisible, 'up')}`}>
       <div className="max-w-[1200px] mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-semibold text-[#6B1F2B] mb-3" style={{ letterSpacing: '-0.02em' }}>

@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation'
 import BackgroundMusic from '@/components/ui/BackgroundMusic';
 import AutoBugDetector from '@/components/shared/AutoBugDetector';
 import ChatbotWidget from '@/components/ui/ChatbotWidget';
+import GlobalScrollReveal from '@/components/shared/GlobalScrollReveal';
 import FrontendWatchdogClient from '@/components/shared/FrontendWatchdogClient';
 import { RegionProvider } from '@/contexts/RegionContext';
 import { CountryProvider } from '@/contexts/CountryContext';
@@ -183,6 +184,7 @@ export default async function LocaleLayout({
                       <FrontendWatchdogClient />
                       <BackgroundMusic />
                       <AutoBugDetector />
+                      <GlobalScrollReveal />
                       <ChatbotWidget />
                     </CountryProvider>
                   </RegionProvider>

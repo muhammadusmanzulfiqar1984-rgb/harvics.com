@@ -1,18 +1,17 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { useTranslations, useLocale } from 'next-intl'
+import { useScrollReveal, revealClass } from '@/hooks/useScrollReveal'
 
 const ContactSection: React.FC = () => {
   const t = useTranslations('contact')
   const locale = useLocale()
-  const [isVisible, setIsVisible] = useState(false)
+  const { ref, isVisible } = useScrollReveal()
 
   const getText = (key: string, fallback: string) => {
     try { return t(key) || fallback } catch { return fallback }
   }
-
-  useEffect(() => { setIsVisible(true) }, [])
 
   const cards = [
     {
@@ -39,7 +38,7 @@ const ContactSection: React.FC = () => {
   ]
 
   return (
-    <section className="py-16 sm:py-20" style={{ background: '#F5F1E8' }}>
+    <section ref={ref} className={`py-16 sm:py-20 ${revealClass(isVisible, 'up')}`} style={{ background: '#F5F1E8' }}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}

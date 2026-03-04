@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation'
 import CountrySelector from '@/components/ui/CountrySelector'
 import LanguageSwitcher from '@/components/ui/LanguageSwitcher'
 import SearchModal from '@/components/ui/SearchModal'
+import AnalogClock from '@/components/ui/AnalogClock'
 import SupremeNavBar from '@/components/layout/SupremeNavBar'
 import type { ProductCategory } from '@/data/folderBasedProducts'
 import { useCountry } from '@/contexts/CountryContext'
@@ -134,6 +135,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
 
             {/* Left links */}
             <div className="hidden md:flex items-center gap-6">
+              <AnalogClock size={28} />
               {[
                 { href: `/${locale}/csr`, label: t('esgReport') },
                 { href: `/${locale}/investor-relations`, label: t('investors') },
@@ -178,9 +180,23 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
                 <LanguageSwitcher />
               </div>
               <Link href={`/${locale}/login`}
-                className="transition-opacity duration-200 hover:opacity-70"
-                style={{ color: '#C3A35E', fontSize: '11px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase', textDecoration: 'none' }}
-              >{getTranslation('signIn', 'navigation', 'Sign In')}</Link>
+                className="flex items-center gap-1.5 px-4 py-1 transition-all duration-200 hover:opacity-90"
+                style={{ 
+                  color: '#6B1F2B', 
+                  fontSize: '11px', 
+                  fontWeight: 700, 
+                  letterSpacing: '0.05em', 
+                  textTransform: 'uppercase' as const, 
+                  textDecoration: 'none',
+                  background: '#C3A35E',
+                  border: '1px solid #C3A35E',
+                }}
+              >
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                {getTranslation('signIn', 'navigation', 'Sign In')}
+              </Link>
             </div>
           </div>
         </div>
@@ -215,6 +231,15 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
 
             {/* Right icons */}
             <div className="flex items-center gap-3">
+              {/* Account / Login */}
+              <Link href={`/${locale}/login`} className="p-2 transition-opacity duration-200 hover:opacity-60 group relative" style={{ color: '#6B1F2B' }}>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: '#6B1F2B' }}>
+                  {getTranslation('signIn', 'navigation', 'Sign In')}
+                </span>
+              </Link>
               <Link href={`/${locale}/wishlist`} className="p-2 transition-opacity duration-200 hover:opacity-60" style={{ color: '#6B1F2B' }}>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
