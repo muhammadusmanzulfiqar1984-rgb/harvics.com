@@ -32,6 +32,71 @@ Next.js 15 frontend (38 languages, 10 industry verticals, Supreme maroon/gold/iv
 
 ---
 
+## 🔴 HANDOFF NOTES FOR NEXT AGENT — March 4, 2026
+
+> **Written by:** GitHub Copilot (Claude Opus 4.6)
+> **Time:** ~1:30 AM, March 4, 2026
+> **Context:** Another agent is simultaneously working on Layer 3 (backend). This note tells you what's safe to do.
+
+### CURRENT PROJECT STATE
+
+| Layer | Status | Notes |
+|---|---|---|
+| **Layer 1** (Public Website) | **100% DONE** | All pages polished, SUPREME-compliant, 0 rounded corners, 0 wrong colors, SEO metadata on 17/22 pages. CLOSED. |
+| **Layer 2** (OS Dashboards) | **~15% done** | Pages exist but most are thin placeholders. EnterpriseCRM.tsx (6,431-line monolith) still untouched. This is the biggest gap. |
+| **Layer 3** (Backend) | **~85% done** | ⚠️ **ANOTHER AGENT IS ACTIVELY WORKING HERE** — do NOT touch `backend/` folder |
+
+### ⚠️ DO NOT TOUCH THESE FOLDERS (other agent working there)
+- `backend/` — all files
+- `backend/src/modules/` — CRUD controllers being built
+- `backend/src/core/` — eventBus, dataStore
+- `backend/src/routes.ts` — route wiring
+
+### SAFE TO WORK ON (no conflict risk)
+
+| Task | Folder | What To Do | Est. Time |
+|---|---|---|---|
+| **U-7: SUPREME compliance on OS pages** | `src/app/[locale]/os/` | Fix rounded corners, wrong colors, wrong backgrounds on all OS dashboard pages. Same treatment as Layer 1 audit. | 30-45 min |
+| **U-1: Decompose EnterpriseCRM** | `src/components/shared/EnterpriseCRM.tsx` → `src/components/domains/` | Extract 16 tabs into separate domain components. Finance already done as reference. | 2-3 hrs |
+| **U-2: Fill Tier 3 OS screens** | `src/components/domains/` + `src/components/os-domains/` | Make thin placeholder screens rich — add tables, charts, KPIs. | 3-4 hrs |
+
+### RECOMMENDED TASK: U-7 (SUPREME compliance on OS pages)
+
+**Why:** Fastest, safest, no structural changes, pure CSS/design cleanup on `src/app/[locale]/os/` files only.
+
+**What to do:**
+1. Run `grep -rc "rounded-xl\|rounded-lg\|rounded-2xl" src/app/\[locale\]/os/` to find violations
+2. Run `grep -rc "bg-\[#F8F9FA\]" src/app/\[locale\]/os/` for wrong backgrounds
+3. Bulk `sed` to fix (same as Layer 1 audit did)
+4. Add `export const metadata` to any OS pages missing it
+5. Verify 0 TypeScript errors
+
+**SUPREME design rules (must follow):**
+- Colors: `#6B1F2B` (maroon), `#C3A35E` (gold), `#F5F1E8` (ivory), white
+- `borderRadius: 0` everywhere — NO rounded corners
+- Font: system sans-serif, `font-semibold` for headers
+- Background: `bg-[#F5F1E8]` for page body, NOT `bg-[#F8F9FA]` or `bg-gray-50`
+
+### RECENT GIT COMMITS (for context)
+```
+972c3b4 Session log: Layer 1 audit fixes report saved
+279a946 Layer 1 audit fixes: 129 rounded corners removed, 38 wrong backgrounds fixed, 11 SEO metadata added
+4bec0da Session log: Layer 1 final report added to COPILOT_NOTES
+70f5664 Layer 1 complete: polish careers, history, locations — all public pages done
+7274b86 SP-3 + Frontend cleanup: polish 175+ pages, fix compliance/leadership/media
+```
+
+### KEY FILES TO KNOW
+| File | What | Lines |
+|---|---|---|
+| `COPILOT_NOTES.md` | This file — all session history and architecture context | 1800+ |
+| `src/components/shared/EnterpriseCRM.tsx` | 16-tab monolith — eventually needs decomposing (U-1) | 6,431 |
+| `src/app/[locale]/os/` | All OS dashboard pages — most need polish | ~48 files |
+| `src/components/domains/` | Domain-specific components (Finance already wired) | ~20 files |
+| `src/data/verticalDescriptions.ts` | Rich descriptions for all 131 item + 40 category pages | 979 |
+
+---
+
 ## SESSION LOG — March 4, 2026 (Layer 1 Audit — All Violations Fixed)
 
 **Agent:** GitHub Copilot (Claude Opus 4.6)
