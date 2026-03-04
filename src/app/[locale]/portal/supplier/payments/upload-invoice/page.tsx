@@ -129,7 +129,7 @@ export default function UploadInvoicePage() {
                     value={formData.invoiceNumber}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 py-2 border border-black200 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
+                    className="w-full px-3 py-2 border border-black200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
                     placeholder="INV-2024-001"
                   />
                 </div>
@@ -144,7 +144,7 @@ export default function UploadInvoicePage() {
                     value={formData.invoiceDate}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 py-2 border border-black200 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
+                    className="w-full px-3 py-2 border border-black200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
                   />
                 </div>
 
@@ -159,7 +159,7 @@ export default function UploadInvoicePage() {
                     value={formData.amount}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 py-2 border border-black200 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
+                    className="w-full px-3 py-2 border border-black200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
                     placeholder="0.00"
                   />
                 </div>
@@ -173,7 +173,7 @@ export default function UploadInvoicePage() {
                     value={formData.currency}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 py-2 border border-black200 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
+                    className="w-full px-3 py-2 border border-black200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
                   >
                     <option value="USD">USD ($)</option>
                     <option value="EUR">EUR (€)</option>
@@ -193,7 +193,7 @@ export default function UploadInvoicePage() {
                     name="dueDate"
                     value={formData.dueDate}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-black200 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
+                    className="w-full px-3 py-2 border border-black200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
                   />
                 </div>
 
@@ -206,7 +206,7 @@ export default function UploadInvoicePage() {
                     accept=".pdf"
                     onChange={handleFileChange}
                     required
-                    className="w-full px-3 py-2 border border-black200 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
+                    className="w-full px-3 py-2 border border-black200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
                   />
                   <p className="text-xs text-black/70 mt-1">
                     Maximum file size: 10MB. PDF format only.

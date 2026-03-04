@@ -57,14 +57,14 @@ export default async function AnalyticsReportsPage() {
 
         {/* Charts Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow border border-gray-200">
+          <div className="bg-white p-6 shadow border border-gray-200">
             <h3 className="text-xl font-bold text-[#6B1F2B] mb-4">Revenue Trend</h3>
             <div className="h-64 bg-gray-50 rounded flex items-center justify-center text-gray-400">
               [Revenue Chart Visualization]
             </div>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow border border-gray-200">
+          <div className="bg-white p-6 shadow border border-gray-200">
             <h3 className="text-xl font-bold text-[#6B1F2B] mb-4">User Growth</h3>
             <div className="h-64 bg-gray-50 rounded flex items-center justify-center text-gray-400">
               [User Growth Chart Visualization]
@@ -73,7 +73,7 @@ export default async function AnalyticsReportsPage() {
         </div>
 
         {/* Detailed Report Table */}
-        <div className="mt-8 bg-white rounded-lg shadow border border-[#C3A35E]/30 overflow-hidden">
+        <div className="mt-8 bg-white shadow border border-[#C3A35E]/30 overflow-hidden">
           <div className="px-6 py-4 border-b border-[#C3A35E]/20 bg-[#6B1F2B]/5">
             <h3 className="text-lg font-bold text-[#6B1F2B]">Recent Reports</h3>
           </div>

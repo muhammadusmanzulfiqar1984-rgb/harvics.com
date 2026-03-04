@@ -2,6 +2,14 @@ import { getTranslations } from 'next-intl/server'
 import { getFolderBasedCategories } from '@/data/folderBasedProducts'
 import { getFooterPageContent } from '@/utils/contentPopulator'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Newsletter | Harvics',
+  description: 'Subscribe to Harvics newsletter for industry insights.',
+}
+
+
 export async function generateStaticParams() {
   return [
     { locale: 'en' },
@@ -39,7 +47,7 @@ export default async function NewsletterPage({ params }: NewsletterPageProps) {
 
         <section className="py-12 md:py-24 px-4 md:px-6">
           <div className="max-w-2xl mx-auto">
-            <div className="bg-[#6B1F2B] border-2 border-[#6B1F2B]/20 rounded-xl p-8 md:p-12 shadow-lg">
+            <div className="bg-[#6B1F2B] border-2 border-[#6B1F2B]/20 p-8 md:p-12 shadow-lg">
               <form className="space-y-6">
                 <div>
                   <label htmlFor="email" className="block text-sm font-bold text-[#C3A35E] mb-2">
@@ -49,7 +57,7 @@ export default async function NewsletterPage({ params }: NewsletterPageProps) {
                     type="email"
                     id="email"
                     required
-                    className="w-full px-4 py-3 border-2 border-[#6B1F2B]/20 rounded-lg focus:outline-none focus:border-white"
+                    className="w-full px-4 py-3 border-2 border-[#6B1F2B]/20 focus:outline-none focus:border-white"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -60,7 +68,7 @@ export default async function NewsletterPage({ params }: NewsletterPageProps) {
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-3 border-2 border-[#6B1F2B]/20 rounded-lg focus:outline-none focus:border-white"
+                    className="w-full px-4 py-3 border-2 border-[#6B1F2B]/20 focus:outline-none focus:border-white"
                     placeholder="John Doe"
                   />
                 </div>
@@ -72,14 +80,14 @@ export default async function NewsletterPage({ params }: NewsletterPageProps) {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-[#6B1F2B] to-[#6B1F2B] text-white py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all duration-300"
+                  className="w-full bg-gradient-to-r from-[#6B1F2B] to-[#6B1F2B] text-white py-4 font-bold text-lg hover:scale-105 transition-all duration-300"
                 >
                   Subscribe Now
                 </button>
               </form>
             </div>
 
-            <div className="mt-8 bg-[#6B1F2B] border border-black200 rounded-xl p-6">
+            <div className="mt-8 bg-[#6B1F2B] border border-black200 p-6">
               <h3 className="font-bold text-[#C3A35E] mb-3">What You'll Receive:</h3>
               <ul className="space-y-2 text-white/90">
                 <li className="flex items-center">

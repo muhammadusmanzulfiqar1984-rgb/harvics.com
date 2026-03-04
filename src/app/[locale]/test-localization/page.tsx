@@ -38,7 +38,7 @@ export default function TestLocalization() {
 
   return (
     <div className="min-h-screen bg-white p-8">
-      <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
+      <div className="max-w-4xl mx-auto bg-white shadow-lg p-6">
         <h1 className="text-3xl font-bold mb-6 text-white/90">🔍 Localization Test Page</h1>
         
         <div className="space-y-6">

@@ -39,20 +39,20 @@ export default function CustomsPage() {
         <p className="text-[#C3A35E]/90">HS Code lookup and tariff information</p>
       </div>
 
-      <div className="bg-white rounded-lg border border-black200 p-4">
+      <div className="bg-white border border-black200 p-4">
         <input
           type="text"
           placeholder="Search HS codes or descriptions..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full border border-black300 rounded-lg px-4 py-2"
+          className="w-full border border-black300 px-4 py-2"
         />
       </div>
 
       {loading ? (
         <div className="text-center py-12">Loading...</div>
       ) : (
-        <div className="bg-white rounded-lg border border-black200 overflow-hidden">
+        <div className="bg-white border border-black200 overflow-hidden">
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-white">
               <tr>

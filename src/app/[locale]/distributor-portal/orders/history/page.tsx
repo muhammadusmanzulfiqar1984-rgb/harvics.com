@@ -36,21 +36,21 @@ export default function OrderHistory() {
         <h1 className="text-2xl font-bold text-[#C3A35E]">Order History</h1>
         <Link
           href={`/${locale}/distributor-portal/orders/new`}
-          className="bg-[#C3A35E] text-[#6B1F2B] px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+          className="bg-[#C3A35E] text-[#6B1F2B] px-6 py-2 font-semibold hover:opacity-90 transition-opacity"
         >
           Place New Order
         </Link>
       </div>
 
       {/* Filters */}
-      <div className="bg-white p-4 rounded-lg border border-black200 shadow-sm">
+      <div className="bg-white p-4 border border-black200 shadow-sm">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
             <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Date Range</label>
             <select
               value={dateRange}
               onChange={(e) => setDateRange(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
             >
               <option value="all">All Time</option>
               <option value="today">Today</option>
@@ -64,7 +64,7 @@ export default function OrderHistory() {
             <select
               value={status}
               onChange={(e) => setStatus(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
             >
               <option value="All">All</option>
               <option value="Draft">Draft</option>
@@ -80,7 +80,7 @@ export default function OrderHistory() {
             <select
               value={country}
               onChange={(e) => setCountry(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
             >
               <option value="All">All</option>
               <option value="US">United States</option>
@@ -92,7 +92,7 @@ export default function OrderHistory() {
       </div>
 
       {/* Orders Table */}
-      <div className="bg-white rounded-lg border border-black200 shadow-sm overflow-hidden">
+      <div className="bg-white border border-black200 shadow-sm overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-white">

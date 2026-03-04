@@ -42,35 +42,35 @@ export default function LocalizationOSPage() {
         <div className="border-t border-black200 pt-6">
           <h3 className="text-lg font-semibold text-black mb-4">8-Level Geographic Hierarchy</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="p-4 bg-white border border-black200 rounded-lg">
+            <div className="p-4 bg-white border border-black200">
               <div className="text-sm font-medium text-black mb-1">Level 1</div>
               <div className="text-2xl font-bold text-black">Global</div>
             </div>
-            <div className="p-4 bg-white border border-black200 rounded-lg">
+            <div className="p-4 bg-white border border-black200">
               <div className="text-sm font-medium text-black mb-1">Level 2</div>
               <div className="text-2xl font-bold text-black">Region</div>
             </div>
-            <div className="p-4 bg-white border border-black200 rounded-lg">
+            <div className="p-4 bg-white border border-black200">
               <div className="text-sm font-medium text-black mb-1">Level 3</div>
               <div className="text-2xl font-bold text-black">Country</div>
             </div>
-            <div className="p-4 bg-white border border-black200 rounded-lg">
+            <div className="p-4 bg-white border border-black200">
               <div className="text-sm font-medium text-black mb-1">Level 4</div>
               <div className="text-2xl font-bold text-black">City</div>
             </div>
-            <div className="p-4 bg-white border border-black200 rounded-lg">
+            <div className="p-4 bg-white border border-black200">
               <div className="text-sm font-medium text-black mb-1">Level 5</div>
               <div className="text-2xl font-bold text-black">District</div>
             </div>
-            <div className="p-4 bg-white border border-black200 rounded-lg">
+            <div className="p-4 bg-white border border-black200">
               <div className="text-sm font-medium text-black mb-1">Level 6</div>
               <div className="text-2xl font-bold text-black">Area</div>
             </div>
-            <div className="p-4 bg-white border border-black200 rounded-lg">
+            <div className="p-4 bg-white border border-black200">
               <div className="text-sm font-medium text-black mb-1">Level 7</div>
               <div className="text-2xl font-bold text-black">Zone</div>
             </div>
-            <div className="p-4 bg-white border border-black200 rounded-lg">
+            <div className="p-4 bg-white border border-black200">
               <div className="text-sm font-medium text-black mb-1">Level 8</div>
               <div className="text-2xl font-bold text-black">Location</div>
             </div>
@@ -79,7 +79,7 @@ export default function LocalizationOSPage() {
 
         <div className="border-t border-black200 pt-6">
           <h3 className="text-lg font-semibold text-black mb-4">Language Management</h3>
-          <div className="bg-white border border-black200 rounded-lg p-4">
+          <div className="bg-white border border-black200 p-4">
             <p className="text-black mb-4">
               Manage translations across all supported languages. Automatically detect and apply
               language preferences based on user location and settings.

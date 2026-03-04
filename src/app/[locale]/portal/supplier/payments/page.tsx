@@ -59,15 +59,15 @@ export default function SupplierPaymentsPage() {
 
           <SectionCard title="Tier 2: Main Modules" subtitle="Payment management capabilities">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">💳 Payment Tracking</h4>
                 <p className="text-sm text-black mb-2">Track received payments and outstanding amounts</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📄 Invoice Management</h4>
                 <p className="text-sm text-black mb-2">Create and manage supplier invoices</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📊 Payment Analytics</h4>
                 <p className="text-sm text-black mb-2">Payment trends and performance metrics</p>
               </div>

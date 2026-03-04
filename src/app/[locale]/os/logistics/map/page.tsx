@@ -42,7 +42,7 @@ export default function MapPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Warehouses */}
-        <div className="bg-white rounded-lg border border-black200 p-6">
+        <div className="bg-white border border-black200 p-6">
           <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Warehouses</h2>
           {loading ? (
             <div className="text-center py-8">Loading...</div>
@@ -66,7 +66,7 @@ export default function MapPage() {
         </div>
 
         {/* Retailers */}
-        <div className="bg-white rounded-lg border border-black200 p-6">
+        <div className="bg-white border border-black200 p-6">
           <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Retailers</h2>
           {loading ? (
             <div className="text-center py-8">Loading...</div>
@@ -91,9 +91,9 @@ export default function MapPage() {
       </div>
 
       {/* Map Placeholder */}
-      <div className="bg-white rounded-lg border border-black200 p-6">
+      <div className="bg-white border border-black200 p-6">
         <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Map View</h2>
-        <div className="bg-white rounded-lg h-96 flex items-center justify-center">
+        <div className="bg-white h-96 flex items-center justify-center">
           <p className="text-[#C3A35E]/90">Map integration coming soon</p>
         </div>
       </div>

@@ -80,7 +80,7 @@ export default function ExchangeRatesPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="pt-20">
         <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
           {/* Decorative Elements */}
@@ -114,7 +114,7 @@ export default function ExchangeRatesPage() {
               </div>
             )}
             
-            <div className="bg-white border border-gray-100 rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300">
+            <div className="bg-white border border-gray-100 p-8 shadow-sm hover:shadow-lg transition-all duration-300">
               {loading && rates.length === 0 ? (
                 <div className="text-center py-12">
                   <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#6B1F2B] mx-auto mb-4"></div>
@@ -168,7 +168,7 @@ export default function ExchangeRatesPage() {
                     <button
                       onClick={loadForexRates}
                       disabled={loading}
-                      className="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-sm font-medium rounded-xl text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#6B1F2B] disabled:opacity-50 transition-all duration-300"
+                      className="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#6B1F2B] disabled:opacity-50 transition-all duration-300"
                     >
                       {loading ? (
                         <>

@@ -39,7 +39,7 @@ export default function InvoicesAndPayments() {
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         {/* Side Info - Credit */}
-        <div className="lg:col-span-1 bg-white rounded-lg border border-black200 shadow-sm p-6">
+        <div className="lg:col-span-1 bg-white border border-black200 shadow-sm p-6">
           <h2 className="text-lg font-bold text-[#C3A35E] mb-4">Credit Information</h2>
           <div className="space-y-4">
             <div>
@@ -60,14 +60,14 @@ export default function InvoicesAndPayments() {
                 style={{ width: `${(creditInfo.utilised / creditInfo.limit) * 100}%` }}
               ></div>
             </div>
-            <button className="w-full bg-white text-white px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+            <button className="w-full bg-white text-white px-4 py-2 font-semibold hover:opacity-90 transition-opacity">
               Request Limit Increase
             </button>
           </div>
         </div>
 
         {/* Main Content - Invoices */}
-        <div className="lg:col-span-3 bg-white rounded-lg border border-black200 shadow-sm overflow-hidden">
+        <div className="lg:col-span-3 bg-white border border-black200 shadow-sm overflow-hidden">
           {/* Tabs */}
           <div className="border-b border-black200">
             <div className="flex">

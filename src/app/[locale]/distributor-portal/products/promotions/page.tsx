@@ -44,8 +44,8 @@ export default function Promotions() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {promotions.map((promo, index) => (
-          <div key={index} className="bg-white rounded-lg border border-black200 shadow-sm p-6 hover:shadow-lg transition-shadow">
-            <div className="relative h-40 rounded-lg mb-4 overflow-hidden">
+          <div key={index} className="bg-white border border-black200 shadow-sm p-6 hover:shadow-lg transition-shadow">
+            <div className="relative h-40 mb-4 overflow-hidden">
               <Image
                 src={promotionProductImages[index]}
                 alt={`Harvics ${promo.name}`}
@@ -84,7 +84,7 @@ export default function Promotions() {
                 <div className="text-sm font-semibold text-white">{promo.benefit}</div>
               </div>
             </div>
-            <button className="w-full bg-white text-white px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+            <button className="w-full bg-white text-white px-4 py-2 font-semibold hover:opacity-90 transition-opacity">
               Join Promo
             </button>
           </div>

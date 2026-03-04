@@ -24,14 +24,14 @@ export default function ProductCatalogue() {
       <h1 className="text-2xl font-bold text-[#C3A35E]">{t('title')}</h1>
 
       {/* Filters */}
-      <div className="bg-white p-4 rounded-lg border border-black200 shadow-sm">
+      <div className="bg-white p-4 border border-black200 shadow-sm">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
             <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">{t('category')}</label>
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
             >
               <option value="All">{t('allCategories')}</option>
               <option value="Confectionery">{t('confectionery')}</option>
@@ -44,7 +44,7 @@ export default function ProductCatalogue() {
             <select
               value={selectedCountry}
               onChange={(e) => setSelectedCountry(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
             >
               <option value="All">{tCommon('allCountries')}</option>
               <option value="US">United States</option>
@@ -57,7 +57,7 @@ export default function ProductCatalogue() {
             <select
               value={selectedChannel}
               onChange={(e) => setSelectedChannel(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
             >
               <option value="All">{t('allChannels')}</option>
               <option value="GT">{t('gt')}</option>
@@ -71,7 +71,7 @@ export default function ProductCatalogue() {
       {/* Product Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {products.map((product) => (
-          <div key={product.sku} className="bg-white rounded-lg border border-black200 shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
+          <div key={product.sku} className="bg-white border border-black200 shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
             <div className="h-48 bg-white flex items-center justify-center p-4">
               <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain" />
             </div>
@@ -90,10 +90,10 @@ export default function ProductCatalogue() {
                 </div>
               </div>
               <div className="flex space-x-2">
-                <button className="flex-1 bg-white text-[#C3A35E]/90 px-4 py-2 rounded-lg font-semibold hover:bg-white transition-colors">
+                <button className="flex-1 bg-white text-[#C3A35E]/90 px-4 py-2 font-semibold hover:bg-white transition-colors">
                   {t('details')}
                 </button>
-                <button className="flex-1 bg-white text-white px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+                <button className="flex-1 bg-white text-white px-4 py-2 font-semibold hover:opacity-90 transition-opacity">
                   {t('addToOrder')}
                 </button>
               </div>

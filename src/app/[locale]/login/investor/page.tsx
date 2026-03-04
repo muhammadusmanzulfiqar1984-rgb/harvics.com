@@ -22,7 +22,7 @@ export default function InvestorLoginPage() {
   const locale = useLocale()
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="pt-20">
         {/* Hero Section */}
         <section className="py-20 px-6 bg-[#6B1F2B] text-center pb-32">
@@ -40,13 +40,13 @@ export default function InvestorLoginPage() {
         <section className="px-6 pb-20 -mt-20">
           <div className="max-w-4xl mx-auto">
             {/* Login Form */}
-            <div className="bg-white p-8 rounded-xl shadow-xl max-w-md mx-auto mb-16 border border-gray-100">
+            <div className="bg-white p-8 shadow-xl max-w-md mx-auto mb-16 border border-gray-100">
               <InvestorLoginForm />
             </div>
 
             {/* Additional Info - Light Theme */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-8 rounded-xl bg-white border border-gray-100 shadow-sm text-center hover:shadow-md transition-shadow">
+              <div className="p-8 bg-white border border-gray-100 shadow-sm text-center hover:shadow-md transition-shadow">
                 <div className="text-4xl mb-4 bg-[#6B1F2B]/5 w-16 h-16 rounded-full flex items-center justify-center mx-auto">📊</div>
                 <h3 className="text-xl font-bold text-[#6B1F2B] mb-2 font-serif">
                   {t('login.features.financials.title')}
@@ -55,7 +55,7 @@ export default function InvestorLoginPage() {
                   {t('login.features.financials.description')}
                 </p>
               </div>
-              <div className="p-8 rounded-xl bg-white border border-gray-100 shadow-sm text-center hover:shadow-md transition-shadow">
+              <div className="p-8 bg-white border border-gray-100 shadow-sm text-center hover:shadow-md transition-shadow">
                 <div className="text-4xl mb-4 bg-[#6B1F2B]/5 w-16 h-16 rounded-full flex items-center justify-center mx-auto">📈</div>
                 <h3 className="text-xl font-bold text-[#6B1F2B] mb-2 font-serif">
                   {t('login.features.reports.title')}
@@ -64,7 +64,7 @@ export default function InvestorLoginPage() {
                   {t('login.features.reports.description')}
                 </p>
               </div>
-              <div className="p-8 rounded-xl bg-white border border-gray-100 shadow-sm text-center hover:shadow-md transition-shadow">
+              <div className="p-8 bg-white border border-gray-100 shadow-sm text-center hover:shadow-md transition-shadow">
                 <div className="text-4xl mb-4 bg-[#6B1F2B]/5 w-16 h-16 rounded-full flex items-center justify-center mx-auto">💼</div>
                 <h3 className="text-xl font-bold text-[#6B1F2B] mb-2 font-serif">
                   {t('login.features.portfolio.title')}

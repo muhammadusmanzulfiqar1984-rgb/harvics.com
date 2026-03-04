@@ -3,6 +3,14 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { getFolderBasedCategories } from '@/data/folderBasedProducts'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Corporate Social Responsibility | Harvics',
+  description: 'Harvics CSR initiatives across 40+ countries.',
+}
+
+
 // Generate static params for all locales
 export async function generateStaticParams() {
   return [
@@ -107,7 +115,7 @@ export default async function CSRPage({ params }: CSRPageProps) {
   const categories = getFolderBasedCategories()
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="fixed top-0 left-0 right-0 z-[1000] bg-white shadow-sm">
         <Header categories={categories} />
       </div>
@@ -125,7 +133,7 @@ export default async function CSRPage({ params }: CSRPageProps) {
           
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
             <div className="mb-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl mb-4 border border-[#C3A35E]/30">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm mb-4 border border-[#C3A35E]/30">
                 <span className="text-3xl">🤝</span>
               </div>
             </div>
@@ -153,7 +161,7 @@ export default async function CSRPage({ params }: CSRPageProps) {
         </section>
 
         {/* Our Initiatives */}
-        <section className="py-12 md:py-24 bg-white relative -mt-20 z-20 rounded-t-[2.5rem] mx-4 shadow-xl">
+        <section className="py-12 md:py-24 bg-white relative -mt-20 z-20 mx-4 shadow-xl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 md:mb-16">
               <h2 className="text-3xl md:text-4xl font-serif font-medium text-gray-900 mb-6">
@@ -168,10 +176,10 @@ export default async function CSRPage({ params }: CSRPageProps) {
               {initiatives.map((initiative, index) => (
                 <div
                   key={initiative.id}
-                  className="bg-white border border-gray-100 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 group"
+                  className="bg-white border border-gray-100 p-8 hover:shadow-lg transition-all duration-300 group"
                 >
                   <div className="flex items-start space-x-6 mb-8">
-                    <div className={`w-16 h-16 rounded-2xl flex items-center justify-center shadow-sm ${initiative.bgColor}`}>
+                    <div className={`w-16 h-16 flex items-center justify-center shadow-sm ${initiative.bgColor}`}>
                       <span className="text-3xl">{initiative.icon}</span>
                     </div>
                     <div className="flex-1">
@@ -203,7 +211,7 @@ export default async function CSRPage({ params }: CSRPageProps) {
         </section>
 
         {/* Key Achievements */}
-        <section className="py-12 md:py-24 bg-[#F8F9FA]">
+        <section className="py-12 md:py-24 bg-[#F5F1E8]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 md:mb-16">
               <h2 className="text-3xl md:text-4xl font-serif font-medium text-gray-900 mb-6">
@@ -218,7 +226,7 @@ export default async function CSRPage({ params }: CSRPageProps) {
               {achievements.map((achievement, index) => (
                 <div
                   key={achievement.year}
-                  className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 hover:border-[#6B1F2B] transition-all duration-300 shadow-sm hover:shadow-md"
+                  className="bg-white border border-gray-200 p-6 md:p-8 hover:border-[#6B1F2B] transition-all duration-300 shadow-sm hover:shadow-md"
                 >
                   <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
                     <div className="flex-shrink-0">
@@ -263,13 +271,13 @@ export default async function CSRPage({ params }: CSRPageProps) {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="mailto:csr@harvics.com"
-                className="bg-white text-[#6B1F2B] px-8 py-4 rounded-xl font-medium text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-lg"
+                className="bg-white text-[#6B1F2B] px-8 py-4 font-medium text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-lg"
               >
                 {t('cta.contact')}
               </a>
               <a
                 href={`/${locale}/contact`}
-                className="bg-transparent border border-white text-white px-8 py-4 rounded-xl font-medium text-lg hover:bg-white/10 transition-all duration-300"
+                className="bg-transparent border border-white text-white px-8 py-4 font-medium text-lg hover:bg-white/10 transition-all duration-300"
               >
                 {t('cta.learnMore')}
               </a>

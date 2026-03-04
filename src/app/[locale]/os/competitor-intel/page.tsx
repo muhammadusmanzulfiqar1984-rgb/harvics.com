@@ -127,7 +127,7 @@ export default function CompetitorIntelOSPage() {
         onRetry={loadDashboard}
         charts={
           <>
-            <div className="bg-white rounded-lg shadow p-6">
+            <div className="bg-white shadow p-6">
               <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Market Share</h2>
               {dashboard?.marketShareData ? (
                 <div className="text-[#C3A35E]/90">Market share analysis data available</div>
@@ -135,7 +135,7 @@ export default function CompetitorIntelOSPage() {
                 <p className="text-[#C3A35E]/90">Market share analysis coming soon</p>
               )}
             </div>
-            <div className="bg-white rounded-lg shadow p-6">
+            <div className="bg-white shadow p-6">
               <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Pricing Analysis</h2>
               <p className="text-[#C3A35E]/90">Pricing analysis coming soon</p>
             </div>

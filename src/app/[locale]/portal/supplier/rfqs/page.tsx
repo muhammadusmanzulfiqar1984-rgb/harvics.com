@@ -59,15 +59,15 @@ export default function SupplierRFQsPage() {
 
           <SectionCard title="Tier 2: Main Modules" subtitle="RFQ management capabilities">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📋 RFQ Processing</h4>
                 <p className="text-sm text-black mb-2">Receive, review, and respond to RFQs</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">💰 Quote Management</h4>
                 <p className="text-sm text-black mb-2">Create and manage pricing quotes</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📊 RFQ Analytics</h4>
                 <p className="text-sm text-black mb-2">Track win rates and performance metrics</p>
               </div>

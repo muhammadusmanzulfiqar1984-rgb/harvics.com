@@ -56,13 +56,13 @@ export default async function SeasonalPage({ params }: SeasonalPageProps) {
               {seasons.map((season, index) => {
                 const productImage = seasonalProductImages[index % seasonalProductImages.length]
                 return (
-                  <div key={index} className={`bg-gradient-to-r ${season.color} rounded-xl p-8 text-white shadow-lg hover:shadow-xl transition-all relative overflow-hidden`}>
+                  <div key={index} className={`bg-gradient-to-r ${season.color} p-8 text-white shadow-lg hover:shadow-xl transition-all relative overflow-hidden`}>
                     <div className="absolute top-0 right-0 w-32 h-32 md:w-40 md:h-40 opacity-20">
                       <Image
                         src={productImage}
                         alt={`Harvics ${season.name}`}
                         fill
-                        className="object-cover rounded-lg"
+                        className="object-cover"
                         sizes="(max-width: 768px) 128px, 160px"
                       />
                     </div>
@@ -70,7 +70,7 @@ export default async function SeasonalPage({ params }: SeasonalPageProps) {
                       <div className="text-6xl mb-4">{season.icon}</div>
                       <h3 className="text-2xl font-bold mb-2">{season.name}</h3>
                       <div className="text-3xl font-bold mb-4">{season.discount}</div>
-                      <button className="bg-white text-black px-6 py-3 rounded-lg font-bold hover:scale-105 transition-all">
+                      <button className="bg-white text-black px-6 py-3 font-bold hover:scale-105 transition-all">
                         Shop Now
                       </button>
                     </div>
@@ -79,12 +79,12 @@ export default async function SeasonalPage({ params }: SeasonalPageProps) {
               })}
             </div>
 
-            <div className="bg-white border-2 border-[#6B1F2B]/20 rounded-xl p-8 shadow-lg">
+            <div className="bg-white border-2 border-[#6B1F2B]/20 p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-black mb-4 text-center">Current Seasonal Offers</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[1, 2, 3].map((item, index) => (
                   <div key={item} className="text-center">
-                    <div className="relative h-32 rounded-lg mb-4 overflow-hidden">
+                    <div className="relative h-32 mb-4 overflow-hidden">
                       <Image
                         src={seasonalProductImages[index]}
                         alt={`Harvics Seasonal Product ${item}`}

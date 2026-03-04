@@ -24,7 +24,7 @@ export default async function ImagesPage({ params }: ImagesPageProps) {
   const categories = getFolderBasedCategories()
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="fixed top-0 left-0 right-0 z-[1000] bg-white">
         <Header categories={categories} />
       </div>
@@ -44,14 +44,14 @@ export default async function ImagesPage({ params }: ImagesPageProps) {
 
         <section className="py-12 md:py-24 px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white border border-gray-100 rounded-xl p-8 shadow-sm">
+            <div className="bg-white border border-gray-100 p-8 shadow-sm">
               <p className="text-gray-600 mb-6">
                 Our media image gallery is currently being updated. For immediate access to high-resolution images, 
                 please contact our media relations team at media@harvics.com
               </p>
               <a
                 href={`/${locale}/media/contacts`}
-                className="inline-block bg-[#6B1F2B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#2a0006] transition-all"
+                className="inline-block bg-[#6B1F2B] text-white px-6 py-3 font-bold hover:bg-[#2a0006] transition-all"
               >
                 Contact Media Team
               </a>

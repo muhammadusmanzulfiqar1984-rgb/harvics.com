@@ -4,6 +4,14 @@ import { getTranslations } from 'next-intl/server'
 import { getFolderBasedCategories } from '@/data/folderBasedProducts'
 import { getFooterPageContent } from '@/utils/contentPopulator'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'FAQ | Harvics',
+  description: 'Frequently asked questions about Harvics products and services.',
+}
+
+
 export async function generateStaticParams() {
   return [
     { locale: 'en' },
@@ -81,7 +89,7 @@ export default async function FAQPage({ params }: FAQPageProps) {
                 <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">{category.category}</h2>
                 <div className="space-y-4">
                   {category.questions.map((faq, index) => (
-                    <div key={index} className="bg-white border-2 border-[#6B1F2B]/20 rounded-xl p-6 shadow-lg">
+                    <div key={index} className="bg-white border-2 border-[#6B1F2B]/20 p-6 shadow-lg">
                       <h3 className="text-lg font-bold text-black mb-2">{faq.q}</h3>
                       <p className="text-black">{faq.a}</p>
                     </div>
@@ -90,12 +98,12 @@ export default async function FAQPage({ params }: FAQPageProps) {
               </div>
             ))}
 
-            <div className="bg-gradient-to-r from-[#6B1F2B] to-[#6B1F2B] rounded-2xl p-8 md:p-12 text-white text-center mt-12">
+            <div className="bg-gradient-to-r from-[#6B1F2B] to-[#6B1F2B] p-8 md:p-12 text-white text-center mt-12">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">Still Have Questions?</h2>
               <p className="mb-6 text-lg">Our customer service team is here to help</p>
               <a
                 href={`/${locale}/contact`}
-                className="inline-block bg-gradient-to-r from-[#ffffff] to-[#ffffff] text-black px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all duration-300"
+                className="inline-block bg-gradient-to-r from-[#ffffff] to-[#ffffff] text-black px-8 py-4 font-bold text-lg hover:scale-105 transition-all duration-300"
               >
                 Contact Us
               </a>

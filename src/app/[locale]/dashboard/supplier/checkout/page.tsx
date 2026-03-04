@@ -65,7 +65,7 @@ export default function SupplierCheckout() {
   const total = subtotal + shipping + tax
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="pt-20">
         {/* Hero Section */}
         <section className="py-12 md:py-16 px-4 md:px-6 bg-[#6B1F2B]">
@@ -85,14 +85,14 @@ export default function SupplierCheckout() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
             {/* Order Summary */}
             <div className="space-y-6">
-              <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 md:p-8">
+              <div className="bg-white shadow-sm border border-gray-100 p-6 md:p-8">
                 <h2 className="text-xl md:text-2xl font-serif font-bold text-[#6B1F2B] mb-6">
                   Order Summary
                 </h2>
                 <div className="space-y-4">
                   {cartItems.map((item) => (
-                    <div key={item.id} className="flex items-center space-x-4 p-4 bg-gray-50 rounded-xl border border-gray-100">
-                      <div className="w-16 h-16 bg-[#6B1F2B]/5 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div key={item.id} className="flex items-center space-x-4 p-4 bg-gray-50 border border-gray-100">
+                      <div className="w-16 h-16 bg-[#6B1F2B]/5 flex items-center justify-center flex-shrink-0">
                         <span className="text-2xl">🏭</span>
                       </div>
                       <div className="flex-1">
@@ -144,7 +144,7 @@ export default function SupplierCheckout() {
             {/* Checkout Form */}
             <div className="space-y-6">
               {/* Billing Information */}
-              <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 md:p-8">
+              <div className="bg-white shadow-sm border border-gray-100 p-6 md:p-8">
                 <h2 className="text-xl md:text-2xl font-serif font-bold text-[#6B1F2B] mb-6">
                   Billing Information
                 </h2>
@@ -157,7 +157,7 @@ export default function SupplierCheckout() {
                       <input
                         type="text"
                         defaultValue={randomName}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                         placeholder="Enter business name"
                       />
                     </div>
@@ -167,7 +167,7 @@ export default function SupplierCheckout() {
                       </label>
                       <input
                         type="text"
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                         placeholder="Enter contact person name"
                       />
                     </div>
@@ -178,7 +178,7 @@ export default function SupplierCheckout() {
                     </label>
                     <input
                       type="email"
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                       placeholder="business@example.com"
                     />
                   </div>
@@ -189,7 +189,7 @@ export default function SupplierCheckout() {
                     <input
                       type="tel"
                       defaultValue="+92 300 1234567"
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                       placeholder="+92 300 1234567"
                     />
                   </div>
@@ -200,7 +200,7 @@ export default function SupplierCheckout() {
                     <textarea
                       rows={3}
                       defaultValue="House 123, Block A, Gulberg, Lahore, Punjab, Pakistan"
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                       placeholder="Enter complete business address"
                     />
                   </div>
@@ -208,7 +208,7 @@ export default function SupplierCheckout() {
               </div>
 
               {/* Payment Method */}
-              <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 md:p-8">
+              <div className="bg-white shadow-sm border border-gray-100 p-6 md:p-8">
                 <h2 className="text-xl md:text-2xl font-serif font-bold text-[#6B1F2B] mb-6">
                   Payment Method
                 </h2>
@@ -231,7 +231,7 @@ export default function SupplierCheckout() {
                     <input
                       type="text"
                       placeholder="1234 5678 9012 3456"
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                     />
                   </div>
                   <div className="grid grid-cols-2 gap-4">
@@ -242,7 +242,7 @@ export default function SupplierCheckout() {
                       <input
                         type="text"
                         placeholder="MM/YY"
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                       />
                     </div>
                     <div>
@@ -252,7 +252,7 @@ export default function SupplierCheckout() {
                       <input
                         type="text"
                         placeholder="123"
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                       />
                     </div>
                   </div>
@@ -264,7 +264,7 @@ export default function SupplierCheckout() {
                   selectedPaymentMethod === PaymentMethod.CHEQUE ||
                   selectedPaymentMethod === PaymentMethod.PAY_ORDER ||
                   selectedPaymentMethod === PaymentMethod.DEMAND_DRAFT) && (
-                  <div className="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-200">
+                  <div className="mt-6 p-4 bg-gray-50 border border-gray-200">
                     <h3 className="font-semibold text-gray-900 mb-2">Bank Transfer Details</h3>
                     <p className="text-sm text-gray-500 mb-3">
                       Transfer the amount to our business account and upload the receipt.
@@ -289,7 +289,7 @@ export default function SupplierCheckout() {
                         <input
                           type="file"
                           accept="image/*,.pdf"
-                          className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-500 bg-white file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-[#6B1F2B] file:text-white hover:file:bg-[#6B1F2B]/90 transition-all duration-300"
+                          className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-500 bg-white file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-[#6B1F2B] file:text-white hover:file:bg-[#6B1F2B]/90 transition-all duration-300"
                         />
                       </div>
                     )}
@@ -298,7 +298,7 @@ export default function SupplierCheckout() {
 
                 {/* Crypto Payment Info */}
                 {(selectedPaymentMethod === PaymentMethod.USDT || selectedPaymentMethod === PaymentMethod.USDC) && (
-                  <div className="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-200">
+                  <div className="mt-6 p-4 bg-gray-50 border border-gray-200">
                     <h3 className="font-semibold text-gray-900 mb-2">Cryptocurrency Payment</h3>
                     <p className="text-sm text-gray-500 mb-3">
                       Send {selectedPaymentMethod === PaymentMethod.USDT ? 'USDT' : 'USDC'} to the address below and upload transaction proof.
@@ -314,7 +314,7 @@ export default function SupplierCheckout() {
                       <input
                         type="text"
                         placeholder="Enter transaction hash"
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                       />
                     </div>
                   </div>
@@ -323,7 +323,7 @@ export default function SupplierCheckout() {
                 {/* Place Order Button */}
                 <button 
                   disabled={!selectedPaymentMethod}
-                  className="w-full mt-6 bg-[#6B1F2B] hover:bg-[#2a0006] text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                  className="w-full mt-6 bg-[#6B1F2B] hover:bg-[#2a0006] text-white font-bold py-4 px-6 transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
                 >
                   <span>💳</span>
                   <span>

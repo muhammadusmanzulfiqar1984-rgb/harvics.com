@@ -149,7 +149,7 @@ export default function ReconciliationDashboardPage() {
             {!loading && (
               <div className="space-y-4">
                 {/* Reconciliation Progress */}
-                <div className="bg-[#F2F2F2] rounded-lg p-6">
+                <div className="bg-[#F2F2F2] p-6">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-sm font-medium text-black/70">Reconciliation Rate</span>
                     <span className="text-sm font-bold text-black">

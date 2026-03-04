@@ -160,13 +160,13 @@ export default function ImportExportOSPage() {
           <>
             <Link
               href={`/${locale}/os/import-export/imports`}
-              className="px-4 py-2 bg-white text-white rounded-md hover:bg-white transition-colors font-medium"
+              className="px-4 py-2 bg-white text-white hover:bg-white transition-colors font-medium"
             >
               Import Orders
             </Link>
             <Link
               href={`/${locale}/os/import-export/exports`}
-              className="px-4 py-2 bg-white text-[#C3A35E]/90 border border-[#6B1F2B] rounded-md hover:bg-white transition-colors font-medium"
+              className="px-4 py-2 bg-white text-[#C3A35E]/90 border border-[#6B1F2B] hover:bg-white transition-colors font-medium"
             >
               Export Orders
             </Link>

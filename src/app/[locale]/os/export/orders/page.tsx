@@ -45,7 +45,7 @@ export default function ExportOrdersPage() {
             <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">Export Orders</h1>
             <p className="text-[#C3A35E]/90">Manage all export orders and track shipments</p>
           </div>
-          <button className="bg-white text-white px-4 py-2 rounded-lg hover:bg-[#5a000c] transition-colors">
+          <button className="bg-white text-white px-4 py-2 hover:bg-[#5a000c] transition-colors">
             + New Export Order
           </button>
         </div>
@@ -54,7 +54,7 @@ export default function ExportOrdersPage() {
       {loading ? (
         <div className="text-center py-12">Loading...</div>
       ) : (
-        <div className="bg-white rounded-lg border border-black200 overflow-hidden">
+        <div className="bg-white border border-black200 overflow-hidden">
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-white">
               <tr>

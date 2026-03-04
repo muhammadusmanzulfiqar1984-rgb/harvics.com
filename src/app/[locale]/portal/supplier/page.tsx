@@ -37,7 +37,7 @@ export default async function SupplierPortalPage({
               Complete supplier management: Purchase orders, shipments, invoices, quality control, and contract management
             </p>
           </div>
-          <div className="bg-white rounded-xl shadow-lg border-2 border-[#C3A35E]/30 overflow-hidden">
+          <div className="bg-white shadow-lg border-2 border-[#C3A35E]/30 overflow-hidden">
             <EnterpriseCRM persona="supplier" locale={locale} />
           </div>
         </section>

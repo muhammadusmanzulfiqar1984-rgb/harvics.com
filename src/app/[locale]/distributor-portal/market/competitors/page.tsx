@@ -34,7 +34,7 @@ export default function CompetitorReporting() {
     <div className="space-y-6">
       <h1 className="text-2xl font-bold text-[#C3A35E]">Competitor Reporting</h1>
 
-      <div className="bg-white rounded-lg border border-black200 shadow-sm p-6">
+      <div className="bg-white border border-black200 shadow-sm p-6">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
@@ -44,7 +44,7 @@ export default function CompetitorReporting() {
                 type="text"
                 value={formData.competitorBrand}
                 onChange={(e) => setFormData({...formData, competitorBrand: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
                 placeholder="e.g., Nestle, Cadbury"
               />
             </div>
@@ -56,7 +56,7 @@ export default function CompetitorReporting() {
                 type="text"
                 value={formData.sku}
                 onChange={(e) => setFormData({...formData, sku: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
                 placeholder="Product SKU"
               />
             </div>
@@ -69,7 +69,7 @@ export default function CompetitorReporting() {
                 step="0.01"
                 value={formData.observedPrice}
                 onChange={(e) => setFormData({...formData, observedPrice: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
                 placeholder="0.00"
               />
             </div>
@@ -80,7 +80,7 @@ export default function CompetitorReporting() {
                 required
                 value={formData.promoType}
                 onChange={(e) => setFormData({...formData, promoType: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
               >
                 <option value="">Select Type</option>
                 <option value="Discount">Discount</option>
@@ -98,7 +98,7 @@ export default function CompetitorReporting() {
                 type="text"
                 value={formData.retailerName}
                 onChange={(e) => setFormData({...formData, retailerName: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
                 placeholder="Store name"
               />
             </div>
@@ -110,7 +110,7 @@ export default function CompetitorReporting() {
                 type="text"
                 value={formData.city}
                 onChange={(e) => setFormData({...formData, city: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
                 placeholder="City name"
               />
             </div>
@@ -120,7 +120,7 @@ export default function CompetitorReporting() {
               <input
                 type="file"
                 accept="image/*"
-                className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
               />
             </div>
 
@@ -130,7 +130,7 @@ export default function CompetitorReporting() {
                 rows={4}
                 value={formData.notes}
                 onChange={(e) => setFormData({...formData, notes: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
                 placeholder="Additional observations..."
               />
             </div>
@@ -139,7 +139,7 @@ export default function CompetitorReporting() {
           <div className="flex space-x-4">
             <button
               type="submit"
-              className="bg-white text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+              className="bg-white text-white px-8 py-3 font-semibold hover:opacity-90 transition-opacity"
             >
               Submit Report
             </button>
@@ -154,7 +154,7 @@ export default function CompetitorReporting() {
                 city: '',
                 notes: ''
               })}
-              className="bg-white text-[#C3A35E]/90 px-8 py-3 rounded-lg font-semibold hover:bg-white transition-colors"
+              className="bg-white text-[#C3A35E]/90 px-8 py-3 font-semibold hover:bg-white transition-colors"
             >
               Clear
             </button>

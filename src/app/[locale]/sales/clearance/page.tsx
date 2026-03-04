@@ -43,18 +43,18 @@ export default async function ClearancePage({ params }: ClearancePageProps) {
 
         <section className="py-12 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white border-2 border-white rounded-xl p-6 mb-8 text-center">
+            <div className="bg-white border-2 border-white p-6 mb-8 text-center">
               <p className="text-lg font-bold text-white/90">
                 ⚠️ Limited Stock Available - While Supplies Last
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               {[1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
-                <div key={item} className="bg-white border-2 border-red-300 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                <div key={item} className="bg-white border-2 border-red-300 p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold inline-block mb-4">
                     CLEARANCE
                   </div>
-                  <div className="relative h-48 rounded-lg mb-4 overflow-hidden">
+                  <div className="relative h-48 mb-4 overflow-hidden">
                     <Image
                       src={clearanceProductImages[index]}
                       alt={`Harvics Clearance Product ${item}`}
@@ -69,7 +69,7 @@ export default async function ClearancePage({ params }: ClearancePageProps) {
                     <span className="text-white/90 line-through text-sm">$69.99</span>
                   </div>
                   <div className="text-sm text-red-600 font-bold mb-4">71% OFF</div>
-                  <button className="w-full bg-red-600 text-white py-3 rounded-lg font-bold hover:bg-red-700 transition-colors">
+                  <button className="w-full bg-red-600 text-white py-3 font-bold hover:bg-red-700 transition-colors">
                     Buy Now
                   </button>
                 </div>

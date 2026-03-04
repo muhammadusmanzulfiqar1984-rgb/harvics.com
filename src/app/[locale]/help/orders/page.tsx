@@ -9,7 +9,7 @@ export default async function OrdersHelpPage({ params }: { params: Promise<{ loc
   const { locale } = await params
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="pt-20">
         <section className="h-[300px] relative bg-[#6B1F2B] overflow-hidden">
           {/* Decorative Elements */}
@@ -32,12 +32,12 @@ export default async function OrdersHelpPage({ params }: { params: Promise<{ loc
         <section className="relative px-4 pb-20 -mt-16 z-20">
           <div className="max-w-4xl mx-auto">
              <div className="mb-6">
-              <Link href={`/${locale}/help/`} className="inline-flex items-center text-[#6B1F2B] hover:text-[#50000b] font-medium transition-colors bg-white px-4 py-2 rounded-lg shadow-sm">
+              <Link href={`/${locale}/help/`} className="inline-flex items-center text-[#6B1F2B] hover:text-[#50000b] font-medium transition-colors bg-white px-4 py-2 shadow-sm">
                 ← Back to Help Center
               </Link>
             </div>
             
-            <div className="bg-white rounded-xl p-8 border border-gray-100 shadow-sm">
+            <div className="bg-white p-8 border border-gray-100 shadow-sm">
               <p className="text-gray-600 leading-relaxed text-lg">Order and delivery support content will appear here.</p>
             </div>
           </div>

@@ -44,7 +44,7 @@ export default function FleetPage() {
             <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">Fleet Management</h1>
             <p className="text-[#C3A35E]/90">Manage vehicles and driver assignments</p>
           </div>
-          <button className="bg-[#C3A35E] text-[#6B1F2B] px-4 py-2 rounded-lg hover:bg-[#C3A35E] transition-colors">
+          <button className="bg-[#C3A35E] text-[#6B1F2B] px-4 py-2 hover:bg-[#C3A35E] transition-colors">
             + Add Vehicle
           </button>
         </div>
@@ -53,7 +53,7 @@ export default function FleetPage() {
       {loading ? (
         <div className="text-center py-12">Loading...</div>
       ) : (
-        <div className="bg-white rounded-lg border border-black200 overflow-hidden">
+        <div className="bg-white border border-black200 overflow-hidden">
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-white">
               <tr>

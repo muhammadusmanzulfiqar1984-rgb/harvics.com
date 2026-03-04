@@ -2,6 +2,14 @@ import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
 import { SUPPORTED_LOCALES } from '@/config/locales'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Help Center | Harvics',
+  description: 'Get help with orders, accounts, and Harvics services.',
+}
+
+
 export async function generateStaticParams() {
   return SUPPORTED_LOCALES.map(locale => ({ locale }))
 }
@@ -56,7 +64,7 @@ export default async function HelpPage({ params }: { params: Promise<{ locale: s
   ]
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="pt-20">
         <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
           {/* Decorative Elements */}
@@ -84,9 +92,9 @@ export default async function HelpPage({ params }: { params: Promise<{ locale: s
                 <Link
                   key={category.id}
                   href={category.href}
-                  className="bg-white rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group"
+                  className="bg-white p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group"
                 >
-                  <div className="w-14 h-14 bg-[#6B1F2B]/5 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">{category.icon}</div>
+                  <div className="w-14 h-14 bg-[#6B1F2B]/5 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">{category.icon}</div>
                   <h3 className="text-xl font-serif font-medium text-gray-900 mb-3 group-hover:text-[#6B1F2B] transition-colors">{category.title}</h3>
                   <p className="text-gray-600 leading-relaxed text-sm">{category.description}</p>
                 </Link>

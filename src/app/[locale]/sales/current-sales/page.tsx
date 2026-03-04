@@ -56,11 +56,11 @@ export default async function CurrentSalesPage({ params }: CurrentSalesPageProps
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {[1, 2, 3, 4, 5, 6].map((item, index) => (
-                <div key={item} className="bg-white border border-[#C3A35E]/20 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                <div key={item} className="bg-white border border-[#C3A35E]/20 p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="bg-[#C3A35E] text-[#6B1F2B] px-3 py-1 rounded-full text-sm font-bold inline-block mb-4">
                     SALE
                   </div>
-                  <div className="relative h-48 rounded-lg mb-4 overflow-hidden bg-gray-100">
+                  <div className="relative h-48 mb-4 overflow-hidden bg-gray-100">
                     <Image
                       src={saleProductImages[index]}
                       alt={`Harvics Product on Sale ${item}`}
@@ -75,7 +75,7 @@ export default async function CurrentSalesPage({ params }: CurrentSalesPageProps
                     <span className="text-gray-500 line-through">$49.99</span>
                     <span className="text-red-600 text-sm font-bold">40% OFF</span>
                   </div>
-                  <button className="w-full bg-[#6B1F2B] text-[#C3A35E] py-3 rounded-lg font-bold hover:bg-[#5a000c] transition-colors border border-[#C3A35E]/50">
+                  <button className="w-full bg-[#6B1F2B] text-[#C3A35E] py-3 font-bold hover:bg-[#5a000c] transition-colors border border-[#C3A35E]/50">
                     Add to Cart
                   </button>
                 </div>

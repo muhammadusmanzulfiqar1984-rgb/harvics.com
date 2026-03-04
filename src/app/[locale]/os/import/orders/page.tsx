@@ -113,7 +113,7 @@ export default function ImportOrdersPage() {
             <select
               value={filters.status}
               onChange={(e) => setFilters({ ...filters, status: e.target.value })}
-              className="px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-[#ffffff] focus:border-transparent"
+              className="px-4 py-2 border border-black300 focus:ring-2 focus:ring-[#ffffff] focus:border-transparent"
             >
               <option value="">{t('orders.allStatuses')}</option>
               <option value="pending">{t('orders.pending')}</option>
@@ -124,7 +124,7 @@ export default function ImportOrdersPage() {
             <select
               value={filters.country_code}
               onChange={(e) => setFilters({ ...filters, country_code: e.target.value })}
-              className="px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-[#ffffff] focus:border-transparent"
+              className="px-4 py-2 border border-black300 focus:ring-2 focus:ring-[#ffffff] focus:border-transparent"
             >
               <option value="">{t('orders.allCountries')}</option>
               <option value="US">United States</option>
@@ -148,11 +148,11 @@ export default function ImportOrdersPage() {
           <p className="mt-4 text-[#C3A35E]/90">{t('orders.loading')}</p>
         </div>
       ) : orders.length === 0 ? (
-        <div className="text-center py-12 bg-white rounded-lg">
+        <div className="text-center py-12 bg-white">
           <p className="text-[#C3A35E]/90">{t('orders.noOrders')}</p>
         </div>
       ) : (
-        <div className="bg-white rounded-lg shadow overflow-hidden">
+        <div className="bg-white shadow overflow-hidden">
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-white">
               <tr>

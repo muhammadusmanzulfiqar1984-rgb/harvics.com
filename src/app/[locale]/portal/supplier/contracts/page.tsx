@@ -59,15 +59,15 @@ export default function SupplierContractsPage() {
 
           <SectionCard title="Tier 2: Main Modules" subtitle="Contract management capabilities">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📋 Contract Management</h4>
                 <p className="text-sm text-black mb-2">Track contracts, terms, and key dates</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">🔄 Renewal Tracking</h4>
                 <p className="text-sm text-black mb-2">Monitor contract renewals and expirations</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">⚖️ Compliance</h4>
                 <p className="text-sm text-black mb-2">Track contract compliance and performance</p>
               </div>

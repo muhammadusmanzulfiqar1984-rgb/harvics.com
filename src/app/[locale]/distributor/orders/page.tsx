@@ -145,14 +145,14 @@ export default function DistributorOrders() {
             <h1 className="text-3xl font-bold text-[#C3A35E]">{t('title')}</h1>
             <a
               href={`/${locale}/distributor/orders/new`}
-              className="bg-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#5a0012] transition-colors"
+              className="bg-white text-white px-6 py-3 font-semibold hover:bg-[#5a0012] transition-colors"
             >
               {tCommon('newOrder') || 'New Order'}
             </a>
           </div>
 
           {/* Filters */}
-          <div className="bg-white rounded-lg shadow p-6 mb-6">
+          <div className="bg-white shadow p-6 mb-6">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
               <div>
                 <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
@@ -161,7 +161,7 @@ export default function DistributorOrders() {
                 <select
                   value={filters.status}
                   onChange={(e) => handleFilterChange('status', e.target.value)}
-                  className="w-full border border-black300 rounded-lg px-4 py-2"
+                  className="w-full border border-black300 px-4 py-2"
                 >
                   <option value="">{t('filters.allStatuses')}</option>
                   <option value="pending">{t('statuses.pending')}</option>
@@ -178,7 +178,7 @@ export default function DistributorOrders() {
                   type="date"
                   value={filters.startDate}
                   onChange={(e) => handleFilterChange('startDate', e.target.value)}
-                  className="w-full border border-black300 rounded-lg px-4 py-2"
+                  className="w-full border border-black300 px-4 py-2"
                 />
               </div>
               <div>
@@ -189,7 +189,7 @@ export default function DistributorOrders() {
                   type="date"
                   value={filters.endDate}
                   onChange={(e) => handleFilterChange('endDate', e.target.value)}
-                  className="w-full border border-black300 rounded-lg px-4 py-2"
+                  className="w-full border border-black300 px-4 py-2"
                 />
               </div>
               <div className="flex items-end">
@@ -198,7 +198,7 @@ export default function DistributorOrders() {
                     setFilters({ status: '', startDate: '', endDate: '' })
                     setPagination((prev) => ({ ...prev, page: 1 }))
                   }}
-                  className="w-full bg-white text-[#C3A35E]/90 px-4 py-2 rounded-lg font-semibold hover:bg-white transition-colors"
+                  className="w-full bg-white text-[#C3A35E]/90 px-4 py-2 font-semibold hover:bg-white transition-colors"
                 >
                   {t('filters.clearFilters')}
                 </button>
@@ -207,13 +207,13 @@ export default function DistributorOrders() {
           </div>
 
           {error && (
-            <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+            <div className="bg-red-50 border border-red-200 p-4 mb-6">
               <p className="text-red-800">{error}</p>
             </div>
           )}
 
           {/* Orders Table */}
-          <div className="bg-white rounded-lg shadow overflow-hidden">
+          <div className="bg-white shadow overflow-hidden">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-white">
                 <tr>
@@ -289,7 +289,7 @@ export default function DistributorOrders() {
               <button
                 onClick={() => setPagination((prev) => ({ ...prev, page: prev.page - 1 }))}
                 disabled={pagination.page === 1}
-                className="px-4 py-2 border border-black300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 border border-black300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {t('previous')}
               </button>
@@ -299,7 +299,7 @@ export default function DistributorOrders() {
               <button
                 onClick={() => setPagination((prev) => ({ ...prev, page: prev.page + 1 }))}
                 disabled={pagination.page >= pagination.totalPages}
-                className="px-4 py-2 border border-black300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 border border-black300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {t('next')}
               </button>

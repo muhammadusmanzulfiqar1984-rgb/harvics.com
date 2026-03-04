@@ -131,7 +131,7 @@ export default function LegalOSPage() {
       {stats && !loading && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {kpiCards.map((card, idx) => (
-            <div key={idx} className="bg-white rounded-lg shadow p-6">
+            <div key={idx} className="bg-white shadow p-6">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-lg font-semibold text-[#C3A35E]/90">{card.title}</h3>
                 <span className="text-2xl">{card.icon}</span>

@@ -32,26 +32,26 @@ export default function KnowledgeBase() {
       <h1 className="text-2xl font-bold text-[#C3A35E]">Knowledge Base</h1>
 
       {/* Search Bar */}
-      <div className="bg-white p-4 rounded-lg border border-black200 shadow-sm">
+      <div className="bg-white p-4 border border-black200 shadow-sm">
         <input
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Search articles..."
-          className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+          className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
         />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Categories */}
-        <div className="lg:col-span-1 bg-white rounded-lg border border-black200 shadow-sm p-6">
+        <div className="lg:col-span-1 bg-white border border-black200 shadow-sm p-6">
           <h2 className="text-lg font-bold text-[#C3A35E] mb-4">Categories</h2>
           <div className="space-y-2">
             {categories.map(category => (
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
+                className={`w-full text-left px-4 py-2 transition-colors ${
                   selectedCategory === category
                     ? 'bg-white/20 text-white font-semibold'
                     : 'text-[#C3A35E]/90 hover:bg-white'
@@ -64,7 +64,7 @@ export default function KnowledgeBase() {
         </div>
 
         {/* Articles List / Article View */}
-        <div className="lg:col-span-2 bg-white rounded-lg border border-black200 shadow-sm p-6">
+        <div className="lg:col-span-2 bg-white border border-black200 shadow-sm p-6">
           {selectedArticle ? (
             <div>
               <button
@@ -82,10 +82,10 @@ export default function KnowledgeBase() {
               <div className="mt-6 pt-6 border-t border-black200">
                 <div className="text-sm font-semibold text-[#C3A35E]/90 mb-2">Was this helpful?</div>
                 <div className="flex space-x-4">
-                  <button className="bg-green-100 text-green-800 px-4 py-2 rounded-lg font-semibold hover:bg-green-200 transition-colors">
+                  <button className="bg-green-100 text-green-800 px-4 py-2 font-semibold hover:bg-green-200 transition-colors">
                     Yes
                   </button>
-                  <button className="bg-red-100 text-red-800 px-4 py-2 rounded-lg font-semibold hover:bg-red-200 transition-colors">
+                  <button className="bg-red-100 text-red-800 px-4 py-2 font-semibold hover:bg-red-200 transition-colors">
                     No
                   </button>
                 </div>
@@ -104,7 +104,7 @@ export default function KnowledgeBase() {
                     <div
                       key={article.id}
                       onClick={() => setSelectedArticle(article.id)}
-                      className="p-4 border border-black200 rounded-lg hover:border-white hover:shadow-md transition-all cursor-pointer"
+                      className="p-4 border border-black200 hover:border-white hover:shadow-md transition-all cursor-pointer"
                     >
                       <h3 className="font-semibold text-[#C3A35E]/90 mb-2">{article.title}</h3>
                       <div className="flex items-center space-x-4 text-sm text-[#C3A35E]/90">

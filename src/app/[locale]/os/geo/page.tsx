@@ -45,7 +45,7 @@ export default function GeoOSPage() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="bg-white border border-black200 rounded-lg p-6">
+          <div className="bg-white border border-black200 p-6">
             <h3 className="text-lg font-semibold text-black mb-4">Territory Management</h3>
             <p className="text-black mb-4">
               Define and manage sales territories with geographic boundaries. 
@@ -59,7 +59,7 @@ export default function GeoOSPage() {
             </ul>
           </div>
 
-          <div className="bg-white border border-black200 rounded-lg p-6">
+          <div className="bg-white border border-black200 p-6">
             <h3 className="text-lg font-semibold text-black mb-4">GPS Tracking</h3>
             <p className="text-black mb-4">
               Real-time GPS tracking for vehicles, sales teams, and deliveries.
@@ -73,7 +73,7 @@ export default function GeoOSPage() {
             </ul>
           </div>
 
-          <div className="bg-white border border-black200 rounded-lg p-6">
+          <div className="bg-white border border-black200 p-6">
             <h3 className="text-lg font-semibold text-black mb-4">Heatmaps</h3>
             <p className="text-black mb-4">
               Visualize data density with heatmaps showing sales activity,
@@ -87,7 +87,7 @@ export default function GeoOSPage() {
             </ul>
           </div>
 
-          <div className="bg-white border border-black200 rounded-lg p-6">
+          <div className="bg-white border border-black200 p-6">
             <h3 className="text-lg font-semibold text-black mb-4">Geographic Intelligence</h3>
             <p className="text-black mb-4">
               AI-powered geographic insights for territory optimization,

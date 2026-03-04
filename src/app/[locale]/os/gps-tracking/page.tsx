@@ -79,7 +79,7 @@ export default function GPSTrackingOSPage() {
 
       {dashboard && !loading && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-white rounded-lg shadow p-6">
+          <div className="bg-white shadow p-6">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-semibold text-[#C3A35E]/90">Active Tracks</h3>
               <span className="text-2xl">📍</span>
@@ -87,7 +87,7 @@ export default function GPSTrackingOSPage() {
             <div className="text-3xl font-bold text-blue-600">{dashboard.activeTracks || 0}</div>
           </div>
 
-          <div className="bg-white rounded-lg shadow p-6">
+          <div className="bg-white shadow p-6">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-semibold text-[#C3A35E]/90">Total Vehicles</h3>
               <span className="text-2xl">🚛</span>
@@ -95,7 +95,7 @@ export default function GPSTrackingOSPage() {
             <div className="text-3xl font-bold text-[#C3A35E]">{dashboard.totalVehicles || 0}</div>
           </div>
 
-          <div className="bg-white rounded-lg shadow p-6">
+          <div className="bg-white shadow p-6">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-semibold text-[#C3A35E]/90">Active Fleet</h3>
               <span className="text-2xl">🚚</span>
@@ -103,7 +103,7 @@ export default function GPSTrackingOSPage() {
             <div className="text-3xl font-bold text-green-600">{dashboard.activeFleet || 0}</div>
           </div>
 
-          <div className="bg-white rounded-lg shadow p-6">
+          <div className="bg-white shadow p-6">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-semibold text-[#C3A35E]/90">Coverage Area</h3>
               <span className="text-2xl">🗺️</span>
@@ -117,9 +117,9 @@ export default function GPSTrackingOSPage() {
 
       {/* Map Section */}
       {dashboard && !loading && (
-        <div className="mt-6 bg-white rounded-lg shadow p-6">
+        <div className="mt-6 bg-white shadow p-6">
           <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Real-time GPS Map</h2>
-          <div className="bg-white rounded-lg h-96 flex items-center justify-center">
+          <div className="bg-white h-96 flex items-center justify-center">
             <p className="text-[#C3A35E]/90">GPS Map View - Coming Soon</p>
           </div>
         </div>

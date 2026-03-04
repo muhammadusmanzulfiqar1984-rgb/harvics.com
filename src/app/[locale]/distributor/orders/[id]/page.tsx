@@ -149,12 +149,12 @@ export default function DistributorOrderDetail() {
   if (error || !orderDetail) {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center px-4">
-        <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-6">
+        <div className="max-w-md w-full bg-white shadow-lg p-6">
           <h2 className="text-xl font-bold text-red-600 mb-2">{tCommon('error')}</h2>
           <p className="text-[#C3A35E]/90 mb-4">{error || t('orderNotFound')}</p>
           <button
             onClick={() => router.push(`/${locale}/distributor/orders`)}
-            className="bg-white text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#5a0012] transition-colors"
+            className="bg-white text-white px-4 py-2 font-semibold hover:bg-[#5a0012] transition-colors"
           >
             {t('backToOrders')}
           </button>
@@ -171,14 +171,14 @@ export default function DistributorOrderDetail() {
             <h1 className="text-3xl font-bold text-[#C3A35E]">{t('title')}</h1>
             <button
               onClick={() => router.push(`/${locale}/distributor/orders`)}
-              className="bg-white text-[#C3A35E]/90 px-4 py-2 rounded-lg font-semibold hover:bg-white transition-colors"
+              className="bg-white text-[#C3A35E]/90 px-4 py-2 font-semibold hover:bg-white transition-colors"
             >
               {t('backToOrders')}
             </button>
           </div>
 
           {/* Order Info */}
-          <div className="bg-white rounded-lg shadow p-6 mb-6">
+          <div className="bg-white shadow p-6 mb-6">
             <div className="grid grid-cols-2 gap-4 mb-4">
               <div>
                 <p className="text-sm text-[#C3A35E]/90">{t('orderId') || 'Order ID'}</p>
@@ -226,7 +226,7 @@ export default function DistributorOrderDetail() {
           </div>
 
           {/* Order Items */}
-          <div className="bg-white rounded-lg shadow p-6 mb-6">
+          <div className="bg-white shadow p-6 mb-6">
             <h2 className="text-xl font-bold text-[#C3A35E] mb-4">{t('orderItems')}</h2>
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-white">
@@ -258,7 +258,7 @@ export default function DistributorOrderDetail() {
 
           {/* Status Timeline */}
           {orderDetail.statusTimeline && orderDetail.statusTimeline.length > 0 && (
-            <div className="bg-white rounded-lg shadow p-6">
+            <div className="bg-white shadow p-6">
               <h2 className="text-xl font-bold text-[#C3A35E] mb-4">{t('statusTimeline')}</h2>
               <div className="space-y-4">
                 {orderDetail.statusTimeline.map((timeline, index) => (

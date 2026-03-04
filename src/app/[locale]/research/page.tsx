@@ -1,5 +1,13 @@
 import Link from 'next/link'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Research | Harvics',
+  description: 'Harvics research initiatives and innovation programs.',
+}
+
+
 export async function generateStaticParams() {
   return [
     { locale: 'en' },
@@ -64,7 +72,7 @@ export default async function ResearchPage({ params }: ResearchPageProps) {
   ]
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="pt-20">
         <section className="h-[380px] relative bg-[#6B1F2B] overflow-hidden">
           <div className="absolute inset-0">
@@ -87,19 +95,19 @@ export default async function ResearchPage({ params }: ResearchPageProps) {
           <div className="max-w-7xl mx-auto space-y-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               {pillars.map((pillar, index) => (
-                <div key={index} className="bg-white border border-gray-100 rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300">
-                  <div className="text-4xl mb-5 bg-[#6B1F2B]/5 w-16 h-16 rounded-xl flex items-center justify-center">{pillar.icon}</div>
+                <div key={index} className="bg-white border border-gray-100 p-8 shadow-sm hover:shadow-lg transition-all duration-300">
+                  <div className="text-4xl mb-5 bg-[#6B1F2B]/5 w-16 h-16 flex items-center justify-center">{pillar.icon}</div>
                   <h3 className="text-2xl font-serif font-medium text-gray-900 mb-3">{pillar.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{pillar.description}</p>
                 </div>
               ))}
             </div>
 
-            <div className="bg-white border border-gray-100 rounded-xl p-8 md:p-12 shadow-sm">
+            <div className="bg-white border border-gray-100 p-8 md:p-12 shadow-sm">
               <h2 className="text-3xl md:text-4xl font-serif font-medium text-gray-900 mb-6">Active Programs</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {programs.map((program, index) => (
-                  <div key={index} className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                  <div key={index} className="bg-gray-50 border border-gray-200 p-6">
                     <h3 className="text-lg font-semibold text-[#6B1F2B] mb-2">{program.title}</h3>
                     <p className="text-sm text-gray-600">{program.description}</p>
                   </div>
@@ -107,7 +115,7 @@ export default async function ResearchPage({ params }: ResearchPageProps) {
               </div>
             </div>
 
-            <div className="relative overflow-hidden bg-[#6B1F2B] rounded-2xl p-8 md:p-16 text-white">
+            <div className="relative overflow-hidden bg-[#6B1F2B] p-8 md:p-16 text-white">
               <div className="absolute inset-0">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -127,14 +135,14 @@ export default async function ResearchPage({ params }: ResearchPageProps) {
                     ))}
                   </ul>
                 </div>
-                <div className="bg-white/10 border border-white/20 rounded-2xl p-6 md:p-8 text-center">
+                <div className="bg-white/10 border border-white/20 p-6 md:p-8 text-center">
                   <h3 className="text-2xl font-serif font-medium mb-3">Work With Us</h3>
                   <p className="text-white/80 mb-6">
                     Explore research collaborations, lab trials, and product development partnerships.
                   </p>
                   <Link
                     href={`/${locale}/contact`}
-                    className="inline-flex items-center justify-center bg-white text-[#6B1F2B] px-6 py-3 rounded-xl font-medium hover:bg-gray-100 transition-all duration-200"
+                    className="inline-flex items-center justify-center bg-white text-[#6B1F2B] px-6 py-3 font-medium hover:bg-gray-100 transition-all duration-200"
                   >
                     Contact the Research Team
                   </Link>

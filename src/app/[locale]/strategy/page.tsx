@@ -1,6 +1,14 @@
 import { getTranslations } from 'next-intl/server'
 import { getFolderBasedCategories } from '@/data/folderBasedProducts'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Strategy | Harvics',
+  description: 'Harvics strategic vision for global expansion.',
+}
+
+
 export async function generateStaticParams() {
   return [
     { locale: 'en' },
@@ -45,7 +53,7 @@ export default async function StrategyPage({ params }: StrategyPageProps) {
   ]
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="pt-20">
         <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
           {/* Decorative Elements */}
@@ -69,15 +77,15 @@ export default async function StrategyPage({ params }: StrategyPageProps) {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
               {strategies.map((strategy, index) => (
-                <div key={index} className="bg-white rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
-                  <div className="text-5xl mb-6 bg-[#6B1F2B]/5 w-20 h-20 rounded-xl flex items-center justify-center">{strategy.icon}</div>
+                <div key={index} className="bg-white p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
+                  <div className="text-5xl mb-6 bg-[#6B1F2B]/5 w-20 h-20 flex items-center justify-center">{strategy.icon}</div>
                   <h3 className="text-2xl font-serif font-medium text-gray-900 mb-3">{strategy.title}</h3>
                   <p className="text-gray-600 text-lg leading-relaxed">{strategy.description}</p>
                 </div>
               ))}
             </div>
 
-            <div className="relative overflow-hidden bg-[#6B1F2B] rounded-2xl p-8 md:p-16 text-center text-white">
+            <div className="relative overflow-hidden bg-[#6B1F2B] p-8 md:p-16 text-center text-white">
               <div className="absolute inset-0">
                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
                  <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>

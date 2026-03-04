@@ -80,7 +80,7 @@ export default function ImportExportDashboardPage() {
       {data && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Import Stats */}
-          <div className="bg-white rounded-lg shadow p-6">
+          <div className="bg-white shadow p-6">
             <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">📦 Imports</h3>
             <div className="space-y-2">
               <div className="flex justify-between">
@@ -105,7 +105,7 @@ export default function ImportExportDashboardPage() {
           </div>
 
           {/* Export Stats */}
-          <div className="bg-white rounded-lg shadow p-6">
+          <div className="bg-white shadow p-6">
             <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">🚢 Exports</h3>
             <div className="space-y-2">
               <div className="flex justify-between">
@@ -130,7 +130,7 @@ export default function ImportExportDashboardPage() {
           </div>
 
           {/* Customs Stats */}
-          <div className="bg-white rounded-lg shadow p-6">
+          <div className="bg-white shadow p-6">
             <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">🏛️ Customs</h3>
             <div className="space-y-2">
               <div className="flex justify-between">
@@ -145,7 +145,7 @@ export default function ImportExportDashboardPage() {
           </div>
 
           {/* Documents Stats */}
-          <div className="bg-white rounded-lg shadow p-6">
+          <div className="bg-white shadow p-6">
             <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">📄 Documents</h3>
             <div className="space-y-2">
               <div className="flex justify-between">

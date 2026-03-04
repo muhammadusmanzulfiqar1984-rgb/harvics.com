@@ -38,27 +38,27 @@ export default function GPSAnalyticsPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="bg-white rounded-lg border border-black200 p-6">
+        <div className="bg-white border border-black200 p-6">
           <div className="text-sm text-[#C3A35E]/90 mb-1">On-Time Delivery</div>
           <div className="text-3xl font-bold text-[#C3A35E]">{analytics?.onTimeDelivery || 0}%</div>
         </div>
-        <div className="bg-white rounded-lg border border-black200 p-6">
+        <div className="bg-white border border-black200 p-6">
           <div className="text-sm text-[#C3A35E]/90 mb-1">Average Delivery Time</div>
           <div className="text-3xl font-bold text-[#ffffff]">{analytics?.averageDeliveryTime || 0} hrs</div>
         </div>
-        <div className="bg-white rounded-lg border border-black200 p-6">
+        <div className="bg-white border border-black200 p-6">
           <div className="text-sm text-[#C3A35E]/90 mb-1">Route Efficiency</div>
           <div className="text-3xl font-bold text-green-600">{analytics?.routeEfficiency || 0}%</div>
         </div>
-        <div className="bg-white rounded-lg border border-black200 p-6">
+        <div className="bg-white border border-black200 p-6">
           <div className="text-sm text-[#C3A35E]/90 mb-1">Fuel Consumption</div>
           <div className="text-3xl font-bold text-blue-600">{analytics?.fuelConsumption?.toLocaleString() || 0} L</div>
         </div>
-        <div className="bg-white rounded-lg border border-black200 p-6">
+        <div className="bg-white border border-black200 p-6">
           <div className="text-sm text-[#C3A35E]/90 mb-1">Total Distance</div>
           <div className="text-3xl font-bold text-purple-600">{analytics?.totalDistance?.toLocaleString() || 0} km</div>
         </div>
-        <div className="bg-white rounded-lg border border-black200 p-6">
+        <div className="bg-white border border-black200 p-6">
           <div className="text-sm text-[#C3A35E]/90 mb-1">Coverage Gaps</div>
           <div className="text-3xl font-bold text-red-600">{analytics?.coverageGaps || 0}</div>
         </div>

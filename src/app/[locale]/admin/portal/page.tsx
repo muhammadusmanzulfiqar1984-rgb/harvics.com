@@ -98,7 +98,7 @@ export default async function AdminPortalHubPage({
   ]
 
   return (
-    <div className="min-h-screen bg-[#F8F9FA]">
+    <div className="min-h-screen bg-[#F5F1E8]">
       <div className="bg-[#6B1F2B] bg-[url('/Images/noise.png')] pt-24 pb-32 relative overflow-hidden">
         {/* Abstract Background Shapes */}
         <div className="absolute inset-0 opacity-20">
@@ -139,11 +139,11 @@ export default async function AdminPortalHubPage({
             <Link
               key={persona.id}
               href={persona.href ? `/${locale}/admin/${persona.href}/` : `/${locale}/admin/portal/${persona.id}/`}
-              className="group relative bg-white rounded-xl p-6 border border-gray-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+              className="group relative bg-white p-6 border border-gray-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
             >
               <div className="flex flex-col h-full justify-between space-y-4">
                 <div>
-                  <div className="w-12 h-12 rounded-lg bg-[#6B1F2B] text-[#C3A35E] flex items-center justify-center mb-4 shadow-md group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 bg-[#6B1F2B] text-[#C3A35E] flex items-center justify-center mb-4 shadow-md group-hover:scale-110 transition-transform duration-300">
                     {persona.icon}
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#6B1F2B] transition-colors">

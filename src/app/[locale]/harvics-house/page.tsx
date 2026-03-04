@@ -43,7 +43,7 @@ export default function HarvicsHousePage() {
           </div>
 
           {/* PDF Viewer */}
-          <div className="w-full h-[85vh] bg-gray-100 rounded-lg shadow-2xl border-4 border-[#C3A35E]/20 overflow-hidden relative">
+          <div className="w-full h-[85vh] bg-gray-100 shadow-2xl border-4 border-[#C3A35E]/20 overflow-hidden relative">
             <iframe
               src="/files/Harvics_House.pdf"
               className="w-full h-full"

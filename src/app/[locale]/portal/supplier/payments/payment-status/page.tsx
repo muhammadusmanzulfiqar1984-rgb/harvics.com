@@ -87,7 +87,7 @@ export default function PaymentStatusPage() {
               <select
                 value={statusFilter}
                 onChange={(e) => setStatusFilter(e.target.value)}
-                className="px-3 py-1.5 text-sm border border-black200 rounded-md bg-white text-black"
+                className="px-3 py-1.5 text-sm border border-black200 bg-white text-black"
               >
                 <option value="ALL">All Status</option>
                 <option value="pending">Pending</option>
@@ -116,7 +116,7 @@ export default function PaymentStatusPage() {
                 {invoices.map((invoice) => (
                   <div
                     key={invoice.id}
-                    className="p-6 border border-black200 rounded-lg hover:shadow-md transition-all"
+                    className="p-6 border border-black200 hover:shadow-md transition-all"
                   >
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex-1">

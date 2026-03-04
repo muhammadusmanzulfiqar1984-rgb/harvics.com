@@ -46,7 +46,7 @@ export default async function SpecialOffersPage({ params }: SpecialOffersPagePro
 
         <section className="py-12 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-to-r from-[#6B1F2B] to-[#5a000c] rounded-xl p-8 md:p-12 text-white mb-12 text-center relative overflow-hidden shadow-2xl">
+            <div className="bg-gradient-to-r from-[#6B1F2B] to-[#5a000c] p-8 md:p-12 text-white mb-12 text-center relative overflow-hidden shadow-2xl">
               <div className="absolute inset-0 opacity-20">
                 <Image
                   src={specialOfferImages[0]}
@@ -59,7 +59,7 @@ export default async function SpecialOffersPage({ params }: SpecialOffersPagePro
               <div className="relative z-10">
                 <h2 className="text-3xl font-medium mb-4 font-serif text-[#C3A35E]">Flash Sale - Limited Time!</h2>
                 <p className="text-xl mb-6 font-light">Ends in: 2 days, 14 hours, 32 minutes</p>
-                <button className="bg-[#C3A35E] text-[#6B1F2B] px-8 py-4 rounded-xl font-semibold text-lg hover:scale-105 transition-all shadow-lg">
+                <button className="bg-[#C3A35E] text-[#6B1F2B] px-8 py-4 font-semibold text-lg hover:scale-105 transition-all shadow-lg">
                   Shop Flash Sale
                 </button>
               </div>
@@ -67,11 +67,11 @@ export default async function SpecialOffersPage({ params }: SpecialOffersPagePro
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {[1, 2, 3, 4, 5, 6].map((item, index) => (
-                <div key={item} className="bg-white border border-gray-100 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all group">
+                <div key={item} className="bg-white border border-gray-100 p-6 shadow-lg hover:shadow-2xl transition-all group">
                   <div className="bg-[#6B1F2B] text-[#C3A35E] px-3 py-1 rounded-full text-xs font-semibold inline-block mb-4 tracking-wider uppercase">
                     SPECIAL
                   </div>
-                  <div className="relative h-48 rounded-lg mb-4 overflow-hidden">
+                  <div className="relative h-48 mb-4 overflow-hidden">
                     <Image
                       src={specialOfferImages[index]}
                       alt={`Harvics Special Offer Product ${item}`}
@@ -85,7 +85,7 @@ export default async function SpecialOffersPage({ params }: SpecialOffersPagePro
                     <span className="text-2xl font-semibold text-[#C3A35E]">$39.99</span>
                     <span className="text-gray-400 line-through text-sm">$79.99</span>
                   </div>
-                  <button className="w-full bg-[#6B1F2B] text-white py-3 rounded-lg font-medium hover:bg-[#5a000c] transition-colors">
+                  <button className="w-full bg-[#6B1F2B] text-white py-3 font-medium hover:bg-[#5a000c] transition-colors">
                     View Offer
                   </button>
                 </div>

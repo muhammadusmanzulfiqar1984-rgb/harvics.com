@@ -41,7 +41,7 @@ export default function FindStorePage() {
   ]
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA] pt-20">
+    <main className="min-h-screen bg-[#F5F1E8] pt-20">
       <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute inset-0">
@@ -62,12 +62,12 @@ export default function FindStorePage() {
 
       <div className="relative px-4 pb-20 -mt-20 z-20 max-w-7xl mx-auto">
         {/* Location Selector */}
-        <div className="bg-white rounded-xl p-8 mb-8 border border-gray-100 shadow-xl">
+        <div className="bg-white p-8 mb-8 border border-gray-100 shadow-xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Country */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">Country</label>
-              <div className="px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 font-medium">
+              <div className="px-4 py-3 bg-gray-50 border border-gray-200 text-gray-900 font-medium">
                 {countryData?.countryName || selectedCountry || 'Select Country'}
               </div>
             </div>
@@ -81,7 +81,7 @@ export default function FindStorePage() {
                   setSelectedCity(e.target.value)
                   setSelectedArea('')
                 }}
-                className="w-full px-4 py-3 border border-gray-200 rounded-xl text-gray-900 font-medium focus:border-[#6B1F2B] focus:ring-1 focus:ring-[#6B1F2B] focus:outline-none bg-white"
+                className="w-full px-4 py-3 border border-gray-200 text-gray-900 font-medium focus:border-[#6B1F2B] focus:ring-1 focus:ring-[#6B1F2B] focus:outline-none bg-white"
               >
                 <option value="">Select City</option>
                 {currentCities.map((city) => (
@@ -97,7 +97,7 @@ export default function FindStorePage() {
                 value={selectedArea}
                 onChange={(e) => setSelectedArea(e.target.value)}
                 disabled={!selectedCity}
-                className="w-full px-4 py-3 border border-gray-200 rounded-xl text-gray-900 font-medium focus:border-[#6B1F2B] focus:ring-1 focus:ring-[#6B1F2B] focus:outline-none disabled:opacity-50 bg-white"
+                className="w-full px-4 py-3 border border-gray-200 text-gray-900 font-medium focus:border-[#6B1F2B] focus:ring-1 focus:ring-[#6B1F2B] focus:outline-none disabled:opacity-50 bg-white"
               >
                 <option value="">Select Area</option>
                 {currentAreas.map((area) => (
@@ -111,32 +111,32 @@ export default function FindStorePage() {
         {/* Store Results */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {stores.map((store) => (
-            <div key={store.id} className="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-lg transition-all duration-300">
+            <div key={store.id} className="bg-white p-8 border border-gray-100 hover:shadow-lg transition-all duration-300">
               <h3 className="text-xl font-serif font-medium text-gray-900 mb-4">{store.name}</h3>
               <div className="space-y-3 text-gray-600 mb-6">
                 <p className="flex items-center">
-                  <span className="w-8 h-8 rounded-lg bg-[#6B1F2B]/5 flex items-center justify-center mr-3 text-lg">📍</span>
+                  <span className="w-8 h-8 bg-[#6B1F2B]/5 flex items-center justify-center mr-3 text-lg">📍</span>
                   {store.address}, {store.area}, {store.city}
                 </p>
                 <p className="flex items-center">
-                  <span className="w-8 h-8 rounded-lg bg-[#6B1F2B]/5 flex items-center justify-center mr-3 text-lg">📞</span>
+                  <span className="w-8 h-8 bg-[#6B1F2B]/5 flex items-center justify-center mr-3 text-lg">📞</span>
                   {store.phone}
                 </p>
                 <p className="flex items-center">
-                  <span className="w-8 h-8 rounded-lg bg-[#6B1F2B]/5 flex items-center justify-center mr-3 text-lg">🕐</span>
+                  <span className="w-8 h-8 bg-[#6B1F2B]/5 flex items-center justify-center mr-3 text-lg">🕐</span>
                   {store.hours}
                 </p>
               </div>
               <div className="flex gap-4">
                 <Link
                   href={`/${locale}/contact`}
-                  className="flex-1 text-center bg-[#6B1F2B] hover:bg-[#50000b] text-white px-4 py-3 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
+                  className="flex-1 text-center bg-[#6B1F2B] hover:bg-[#50000b] text-white px-4 py-3 font-medium transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   Get Directions
                 </Link>
                 <Link
                   href={`tel:${store.phone}`}
-                  className="flex-1 text-center border border-gray-200 text-gray-700 hover:border-[#6B1F2B] hover:text-[#6B1F2B] px-4 py-3 rounded-xl font-medium transition-all duration-300"
+                  className="flex-1 text-center border border-gray-200 text-gray-700 hover:border-[#6B1F2B] hover:text-[#6B1F2B] px-4 py-3 font-medium transition-all duration-300"
                 >
                   Call Store
                 </Link>

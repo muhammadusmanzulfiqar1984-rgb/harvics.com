@@ -47,7 +47,7 @@ export default function InvestorLoginForm() {
             value={formData.email}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-3 rounded-xl bg-gray-700/50 border-2 border-black600/50 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-all duration-300"
+            className="w-full px-4 py-3 bg-gray-700/50 border-2 border-black600/50 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-all duration-300"
             placeholder={t('login.emailPlaceholder')}
           />
         </div>
@@ -63,7 +63,7 @@ export default function InvestorLoginForm() {
             value={formData.password}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-3 rounded-xl bg-gray-700/50 border-2 border-black600/50 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-all duration-300"
+            className="w-full px-4 py-3 bg-gray-700/50 border-2 border-black600/50 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-all duration-300"
             placeholder={t('login.passwordPlaceholder')}
           />
         </div>
@@ -85,7 +85,7 @@ export default function InvestorLoginForm() {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full bg-gradient-to-r from-white to-white text-black text-lg px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-white/50 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center space-x-2"
+            className="w-full bg-gradient-to-r from-white to-white text-black text-lg px-8 py-4 font-bold hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-white/50 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center space-x-2"
           >
             {isLoading ? (
               <>

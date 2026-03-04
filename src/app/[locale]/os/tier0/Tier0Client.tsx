@@ -110,7 +110,7 @@ export default function Tier0Client() {
         title="Data Ocean Platform"
         subtitle="Unified data layer connecting all OS domains and powering AI insights"
       >
-        <div className="mb-4 p-4 bg-[#F2F2F2] rounded-lg border border-black200">
+        <div className="mb-4 p-4 bg-[#F2F2F2] border border-black200">
           <p className="text-sm text-black">
             The Data Ocean Platform aggregates data from all OS domains into three specialized oceans:
           </p>
@@ -124,7 +124,7 @@ export default function Tier0Client() {
         subtitle="Core AI services powering recommendations, predictions, and automation"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="p-4 border border-black200 rounded-lg bg-white">
+          <div className="p-4 border border-black200 bg-white">
             <h4 className="font-semibold text-black mb-2">🤖 AI Copilot Core</h4>
             <p className="text-sm text-black mb-2">Natural language processing and conversation orchestration</p>
             <ul className="text-xs text-black space-y-1 list-disc list-inside">
@@ -133,7 +133,7 @@ export default function Tier0Client() {
               <li>Context management</li>
             </ul>
           </div>
-          <div className="p-4 border border-black200 rounded-lg bg-white">
+          <div className="p-4 border border-black200 bg-white">
             <h4 className="font-semibold text-black mb-2">📊 Recommendation Engine</h4>
             <p className="text-sm text-black mb-2">AI-powered suggestions for orders, inventory, pricing, and routing</p>
             <ul className="text-xs text-black space-y-1 list-disc list-inside">
@@ -142,7 +142,7 @@ export default function Tier0Client() {
               <li>Route optimization</li>
             </ul>
           </div>
-          <div className="p-4 border border-black200 rounded-lg bg-white">
+          <div className="p-4 border border-black200 bg-white">
             <h4 className="font-semibold text-black mb-2">🔀 Decision Graph</h4>
             <p className="text-sm text-black mb-2">Multi-factor decision flows with human override capabilities</p>
             <ul className="text-xs text-black space-y-1 list-disc list-inside">
@@ -151,7 +151,7 @@ export default function Tier0Client() {
               <li>Stock allocation</li>
             </ul>
           </div>
-          <div className="p-4 border border-black200 rounded-lg bg-white">
+          <div className="p-4 border border-black200 bg-white">
             <h4 className="font-semibold text-black mb-2">🌐 Geo-AI Model</h4>
             <p className="text-sm text-black mb-2">Location intelligence and territory optimization</p>
             <ul className="text-xs text-black space-y-1 list-disc list-inside">
@@ -169,15 +169,15 @@ export default function Tier0Client() {
         subtitle="RESTful APIs, webhooks, and external system integrations"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="p-4 border border-black200 rounded-lg bg-white">
+          <div className="p-4 border border-black200 bg-white">
             <h4 className="font-semibold text-black mb-2">🔌 REST APIs</h4>
             <p className="text-sm text-black">Standard REST endpoints for all OS domains</p>
           </div>
-          <div className="p-4 border border-black200 rounded-lg bg-white">
+          <div className="p-4 border border-black200 bg-white">
             <h4 className="font-semibold text-black mb-2">🔔 Webhooks</h4>
             <p className="text-sm text-black">Real-time event notifications and triggers</p>
           </div>
-          <div className="p-4 border border-black200 rounded-lg bg-white">
+          <div className="p-4 border border-black200 bg-white">
             <h4 className="font-semibold text-black mb-2">🔗 External Integrations</h4>
             <p className="text-sm text-black">ERP, payment gateways, shipping providers</p>
           </div>
@@ -190,11 +190,11 @@ export default function Tier0Client() {
         subtitle="Business process automation and orchestration"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="p-4 border border-black200 rounded-lg bg-white">
+          <div className="p-4 border border-black200 bg-white">
             <h4 className="font-semibold text-black mb-2">⚙️ BPMN Orchestration</h4>
             <p className="text-sm text-black">Standard workflow definitions and execution</p>
           </div>
-          <div className="p-4 border border-black200 rounded-lg bg-white">
+          <div className="p-4 border border-black200 bg-white">
             <h4 className="font-semibold text-black mb-2">📋 Rules Engine</h4>
             <p className="text-sm text-black">Business rules for discounts, credit, approvals</p>
           </div>

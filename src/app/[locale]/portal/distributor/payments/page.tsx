@@ -61,7 +61,7 @@ export default function DistributorPaymentsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               <a
                 href={`/${locale}/portal/distributor/payments/make-payment`}
-                className="p-6 border border-black200 rounded-lg bg-white hover:border-[#F5C542] hover:shadow-md transition-all cursor-pointer"
+                className="p-6 border border-black200 bg-white hover:border-[#F5C542] hover:shadow-md transition-all cursor-pointer"
               >
                 <div className="text-3xl mb-3">💳</div>
                 <h4 className="font-semibold text-black mb-2">Make Payment</h4>
@@ -71,7 +71,7 @@ export default function DistributorPaymentsPage() {
               
               <a
                 href={`/${locale}/portal/distributor/payments/invoices`}
-                className="p-6 border border-black200 rounded-lg bg-white hover:border-[#F5C542] hover:shadow-md transition-all cursor-pointer"
+                className="p-6 border border-black200 bg-white hover:border-[#F5C542] hover:shadow-md transition-all cursor-pointer"
               >
                 <div className="text-3xl mb-3">📄</div>
                 <h4 className="font-semibold text-black mb-2">Invoices</h4>
@@ -81,7 +81,7 @@ export default function DistributorPaymentsPage() {
               
               <a
                 href={`/${locale}/portal/distributor/payments/history`}
-                className="p-6 border border-black200 rounded-lg bg-white hover:border-[#F5C542] hover:shadow-md transition-all cursor-pointer"
+                className="p-6 border border-black200 bg-white hover:border-[#F5C542] hover:shadow-md transition-all cursor-pointer"
               >
                 <div className="text-3xl mb-3">📊</div>
                 <h4 className="font-semibold text-black mb-2">Payment History</h4>
@@ -91,7 +91,7 @@ export default function DistributorPaymentsPage() {
               
               <a
                 href={`/${locale}/portal/distributor/payments/receipts`}
-                className="p-6 border border-black200 rounded-lg bg-white hover:border-[#F5C542] hover:shadow-md transition-all cursor-pointer"
+                className="p-6 border border-black200 bg-white hover:border-[#F5C542] hover:shadow-md transition-all cursor-pointer"
               >
                 <div className="text-3xl mb-3">🧾</div>
                 <h4 className="font-semibold text-black mb-2">Receipts</h4>

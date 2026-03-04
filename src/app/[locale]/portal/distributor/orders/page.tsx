@@ -75,7 +75,7 @@ export default function DistributorOrdersPage({ params }: { params: Promise<{ lo
             subtitle="Order management capabilities organized by workflow stage"
           >
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📋 Order Processing</h4>
                 <p className="text-sm text-black mb-2">Create, track, and manage orders throughout lifecycle</p>
                 <ul className="text-xs text-black space-y-1 list-disc list-inside">
@@ -84,7 +84,7 @@ export default function DistributorOrdersPage({ params }: { params: Promise<{ lo
                   <li>Order modifications</li>
                 </ul>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📊 Order Analytics</h4>
                 <p className="text-sm text-black mb-2">Performance metrics and insights</p>
                 <ul className="text-xs text-black space-y-1 list-disc list-inside">
@@ -93,7 +93,7 @@ export default function DistributorOrdersPage({ params }: { params: Promise<{ lo
                   <li>Fulfillment metrics</li>
                 </ul>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">🔄 Order Fulfillment</h4>
                 <p className="text-sm text-black mb-2">Inventory allocation and delivery coordination</p>
                 <ul className="text-xs text-black space-y-1 list-disc list-inside">
@@ -111,15 +111,15 @@ export default function DistributorOrdersPage({ params }: { params: Promise<{ lo
             subtitle="Key screens for order management operations"
           >
             <div className="space-y-3">
-              <div className="p-3 border border-black100 rounded-md bg-[#F2F2F2]">
+              <div className="p-3 border border-black100 bg-[#F2F2F2]">
                 <h4 className="font-medium text-black mb-1">📄 Order List</h4>
                 <p className="text-sm text-black">View all orders with filters, sorting, and bulk actions</p>
               </div>
-              <div className="p-3 border border-black100 rounded-md bg-[#F2F2F2]">
+              <div className="p-3 border border-black100 bg-[#F2F2F2]">
                 <h4 className="font-medium text-black mb-1">📝 Order Detail</h4>
                 <p className="text-sm text-black">Detailed order view with line items, status, and history</p>
               </div>
-              <div className="p-3 border border-black100 rounded-md bg-[#F2F2F2]">
+              <div className="p-3 border border-black100 bg-[#F2F2F2]">
                 <h4 className="font-medium text-black mb-1">📊 Order Dashboard</h4>
                 <p className="text-sm text-black">KPI overview, charts, and performance metrics</p>
               </div>
@@ -132,16 +132,16 @@ export default function DistributorOrdersPage({ params }: { params: Promise<{ lo
             subtitle="Primary actions available within order management"
           >
             <div className="flex flex-wrap gap-2">
-              <button className="px-4 py-2 bg-[#F5C542] text-black rounded-md hover:bg-[#F5C542]/90 font-medium text-sm">
+              <button className="px-4 py-2 bg-[#F5C542] text-black hover:bg-[#F5C542]/90 font-medium text-sm">
                 Create New Order
               </button>
-              <button className="px-4 py-2 bg-white border border-black200 text-black rounded-md hover:bg-[#F2F2F2] font-medium text-sm">
+              <button className="px-4 py-2 bg-white border border-black200 text-black hover:bg-[#F2F2F2] font-medium text-sm">
                 Import Orders
               </button>
-              <button className="px-4 py-2 bg-white border border-black200 text-black rounded-md hover:bg-[#F2F2F2] font-medium text-sm">
+              <button className="px-4 py-2 bg-white border border-black200 text-black hover:bg-[#F2F2F2] font-medium text-sm">
                 Export Orders
               </button>
-              <button className="px-4 py-2 bg-white border border-black200 text-black rounded-md hover:bg-[#F2F2F2] font-medium text-sm">
+              <button className="px-4 py-2 bg-white border border-black200 text-black hover:bg-[#F2F2F2] font-medium text-sm">
                 Bulk Update Status
               </button>
             </div>

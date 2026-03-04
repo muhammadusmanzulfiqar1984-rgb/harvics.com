@@ -20,13 +20,13 @@ export default function UsersAndAccess() {
         <h1 className="text-2xl font-bold text-[#C3A35E]">Users & Access</h1>
         <button
           onClick={() => setShowAddModal(true)}
-          className="bg-white text-white px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+          className="bg-white text-white px-6 py-2 font-semibold hover:opacity-90 transition-opacity"
         >
           Add User
         </button>
       </div>
 
-      <div className="bg-white rounded-lg border border-black200 shadow-sm overflow-hidden">
+      <div className="bg-white border border-black200 shadow-sm overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-white">
@@ -79,7 +79,7 @@ export default function UsersAndAccess() {
       {/* Add/Edit User Modal */}
       {showAddModal && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+          <div className="bg-white p-6 max-w-md w-full mx-4">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-xl font-bold text-[#C3A35E]">Add User</h2>
               <button
@@ -92,15 +92,15 @@ export default function UsersAndAccess() {
             <form className="space-y-4">
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Name *</label>
-                <input type="text" className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black" required />
+                <input type="text" className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Email *</label>
-                <input type="email" className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black" required />
+                <input type="email" className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Role *</label>
-                <select className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black" required>
+                <select className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required>
                   <option value="">Select Role</option>
                   <option value="Admin">Admin</option>
                   <option value="Sales">Sales</option>
@@ -120,10 +120,10 @@ export default function UsersAndAccess() {
                 </div>
               </div>
               <div className="flex space-x-4">
-                <button type="submit" className="flex-1 bg-white text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+                <button type="submit" className="flex-1 bg-white text-white px-6 py-3 font-semibold hover:opacity-90 transition-opacity">
                   Add User
                 </button>
-                <button type="button" onClick={() => setShowAddModal(false)} className="flex-1 bg-white text-[#C3A35E]/90 px-6 py-3 rounded-lg font-semibold hover:bg-white transition-colors">
+                <button type="button" onClick={() => setShowAddModal(false)} className="flex-1 bg-white text-[#C3A35E]/90 px-6 py-3 font-semibold hover:bg-white transition-colors">
                   Cancel
                 </button>
               </div>

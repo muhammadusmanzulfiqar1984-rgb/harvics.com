@@ -58,13 +58,13 @@ export default async function PromotionsPage({ params }: PromotionsPageProps) {
               {promotions.map((promo, index) => {
                 const productImage = promotionProductImages[index % promotionProductImages.length]
                 return (
-                  <div key={index} className={`bg-gradient-to-r ${promo.color} rounded-xl p-8 text-white shadow-lg hover:shadow-xl transition-all relative overflow-hidden`}>
+                  <div key={index} className={`bg-gradient-to-r ${promo.color} p-8 text-white shadow-lg hover:shadow-xl transition-all relative overflow-hidden`}>
                     <div className="absolute top-0 right-0 w-32 h-32 md:w-40 md:h-40 opacity-20">
                       <Image
                         src={productImage}
                         alt={`Harvics ${promo.title}`}
                         fill
-                        className="object-cover rounded-lg"
+                        className="object-cover"
                         sizes="(max-width: 768px) 128px, 160px"
                       />
                     </div>
@@ -72,7 +72,7 @@ export default async function PromotionsPage({ params }: PromotionsPageProps) {
                       <div className="text-6xl mb-4">{promo.icon}</div>
                       <h3 className="text-2xl font-bold mb-2">{promo.title}</h3>
                       <p className="text-lg mb-4">{promo.description}</p>
-                      <button className="bg-white text-white/90 px-6 py-3 rounded-lg font-bold hover:scale-105 transition-all">
+                      <button className="bg-white text-white/90 px-6 py-3 font-bold hover:scale-105 transition-all">
                         Learn More
                       </button>
                     </div>
@@ -81,13 +81,13 @@ export default async function PromotionsPage({ params }: PromotionsPageProps) {
               })}
             </div>
 
-            <div className="bg-white border-2 border-[#6B1F2B]/20 rounded-xl p-8 shadow-lg">
+            <div className="bg-white border-2 border-[#6B1F2B]/20 p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-[#C3A35E] mb-6 text-center">Active Promotions</h3>
               <div className="space-y-4">
                 {[1, 2, 3].map((item, index) => (
-                  <div key={item} className="flex items-center justify-between p-4 bg-white rounded-lg gap-4">
+                  <div key={item} className="flex items-center justify-between p-4 bg-white gap-4">
                     <div className="flex items-center gap-4 flex-1">
-                      <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-lg overflow-hidden flex-shrink-0">
+                      <div className="relative w-20 h-20 md:w-24 md:h-24 overflow-hidden flex-shrink-0">
                         <Image
                           src={promotionProductImages[index]}
                           alt={`Harvics Product Promotion ${item}`}
@@ -101,7 +101,7 @@ export default async function PromotionsPage({ params }: PromotionsPageProps) {
                         <p className="text-white/90">Valid until end of month</p>
                       </div>
                     </div>
-                    <button className="bg-white text-white px-6 py-2 rounded-lg font-bold hover:bg-white transition-colors">
+                    <button className="bg-white text-white px-6 py-2 font-bold hover:bg-white transition-colors">
                       Apply
                     </button>
                   </div>

@@ -97,7 +97,7 @@ export default function PaymentHistoryPage() {
               <select
                 value={statusFilter}
                 onChange={(e) => setStatusFilter(e.target.value as PaymentStatus | 'ALL')}
-                className="px-3 py-1.5 text-sm border border-black200 rounded-md bg-white text-black"
+                className="px-3 py-1.5 text-sm border border-black200 bg-white text-black"
               >
                 <option value="ALL">All Status</option>
                 <option value={PaymentStatus.PENDING}>Pending</option>
@@ -133,7 +133,7 @@ export default function PaymentHistoryPage() {
                 {payments.map((payment) => (
                   <div
                     key={payment.id}
-                    className="p-4 border border-black200 rounded-lg hover:shadow-md transition-all"
+                    className="p-4 border border-black200 hover:shadow-md transition-all"
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex-1">

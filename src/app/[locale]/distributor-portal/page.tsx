@@ -23,7 +23,7 @@ export default function DistributorPortalPage() {
             Complete distributor management: Sales orders, warehouse inventory, logistics & delivery, financial tracking, and retailer/customer relationships
           </p>
         </div>
-        <div className="bg-white rounded-xl shadow-lg border-2 border-[#C3A35E]/30 overflow-hidden">
+        <div className="bg-white shadow-lg border-2 border-[#C3A35E]/30 overflow-hidden">
           <EnterpriseCRM persona="distributor" locale={locale} />
         </div>
       </section>

@@ -91,7 +91,7 @@ export default function ImportOrderDetailPage() {
   if (error || !order) {
     return (
       <div className="space-y-6">
-        <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
+        <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3">
           {error || 'Order not found'}
         </div>
         <Link
@@ -127,7 +127,7 @@ export default function ImportOrderDetailPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-white rounded-lg border border-black200 p-6">
+        <div className="bg-white border border-black200 p-6">
           <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">
             {t('orders.detail.orderInfo') || 'Order Information'}
           </h2>
@@ -173,7 +173,7 @@ export default function ImportOrderDetailPage() {
           </div>
         </div>
 
-        <div className="bg-white rounded-lg border border-black200 p-6">
+        <div className="bg-white border border-black200 p-6">
           <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">
             {t('orders.detail.items') || 'Order Items'}
           </h2>

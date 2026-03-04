@@ -49,19 +49,19 @@ export default function MarketDistributionOSPage() {
             Track distributor KPIs and ensure optimal market coverage.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-white border border-black200 rounded-lg p-4">
+            <div className="bg-white border border-black200 p-4">
               <h4 className="font-semibold text-black mb-2">Distributor Profiles</h4>
               <p className="text-sm text-black">Complete distributor information and contact details</p>
             </div>
-            <div className="bg-white border border-black200 rounded-lg p-4">
+            <div className="bg-white border border-black200 p-4">
               <h4 className="font-semibold text-black mb-2">Territory Assignment</h4>
               <p className="text-sm text-black">Assign and manage distributor territories</p>
             </div>
-            <div className="bg-white border border-black200 rounded-lg p-4">
+            <div className="bg-white border border-black200 p-4">
               <h4 className="font-semibold text-black mb-2">Pricing Management</h4>
               <p className="text-sm text-black">Set and manage distributor pricing tiers</p>
             </div>
-            <div className="bg-white border border-black200 rounded-lg p-4">
+            <div className="bg-white border border-black200 p-4">
               <h4 className="font-semibold text-black mb-2">Performance Tracking</h4>
               <p className="text-sm text-black">Monitor distributor KPIs and metrics</p>
             </div>

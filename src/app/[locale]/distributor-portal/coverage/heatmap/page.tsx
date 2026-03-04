@@ -21,7 +21,7 @@ export default function CoverageHeatmap() {
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         {/* Side Panel - Harvey Suggestions */}
-        <div className="lg:col-span-1 bg-gradient-to-br from-[#6B1F2B] to-[#ffffff] rounded-lg p-6 text-white shadow-sm">
+        <div className="lg:col-span-1 bg-gradient-to-br from-[#6B1F2B] to-[#ffffff] p-6 text-white shadow-sm">
           <div className="flex items-center space-x-2 mb-4">
             <span className="text-2xl">🤖</span>
             <h2 className="text-lg font-bold">Harvey Suggestions</h2>
@@ -43,7 +43,7 @@ export default function CoverageHeatmap() {
         </div>
 
         {/* Map View */}
-        <div className="lg:col-span-3 bg-white rounded-lg border border-black200 shadow-sm p-6">
+        <div className="lg:col-span-3 bg-white border border-black200 shadow-sm p-6">
           <div className="mb-4">
             <h2 className="text-lg font-bold text-[#C3A35E] mb-4">Map View</h2>
             
@@ -80,7 +80,7 @@ export default function CoverageHeatmap() {
           </div>
 
           {/* Map Placeholder */}
-          <div className="h-96 bg-gradient-to-br from-white100 to-white200 rounded-lg flex items-center justify-center border-2 border-dashed border-black300">
+          <div className="h-96 bg-gradient-to-br from-white100 to-white200 flex items-center justify-center border-2 border-dashed border-black300">
             <div className="text-center">
               <div className="text-4xl mb-2">🗺️</div>
               <div className="text-[#C3A35E]/90 font-semibold">Interactive Map Component</div>

@@ -59,7 +59,7 @@ export default function CompliancePage() {
           <div className="col-span-3 text-center py-12">Loading...</div>
         ) : (
           compliance.map((item) => (
-            <div key={item.country} className="bg-white rounded-lg border border-black200 p-6">
+            <div key={item.country} className="bg-white border border-black200 p-6">
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-lg font-semibold text-[#C3A35E]/90">{item.country}</h3>
                 <span className={`text-2xl font-bold ${getScoreColor(item.complianceScore)}`}>
@@ -88,7 +88,7 @@ export default function CompliancePage() {
       </div>
 
       {/* Regulations */}
-      <div className="bg-white rounded-lg border border-black200 overflow-hidden">
+      <div className="bg-white border border-black200 overflow-hidden">
         <div className="px-6 py-4 border-b border-black200">
           <h2 className="text-xl font-semibold text-[#C3A35E]/90">Regulations</h2>
         </div>

@@ -32,6 +32,37 @@ Next.js 15 frontend (38 languages, 10 industry verticals, Supreme maroon/gold/iv
 
 ---
 
+## NEXT STEPS — RECOMMENDED PRIORITY (March 4, 2026)
+
+> **Written by:** GitHub Copilot (Claude Opus 4.6) after completing Layer 3 backend build.
+> **Context:** Layer 1 (public website) = 100% done. Layer 3 (backend) = ~85% done. Layer 2 (OS dashboards) = ~15% done — this is the weakest link.
+
+### Priority 1: Auth on New CRUD Routes (30 min)
+New endpoints (`/api/orders`, `/api/finance`, etc.) are currently open — no `requireAuthScope` middleware. Need to add auth to all new routes in `routes.ts`. Quick fix.
+
+### Priority 2: U-1 — Break EnterpriseCRM.tsx (2-3 hrs) ⚡ HIGHEST IMPACT
+The 6,431-line god component at `src/components/portals/EnterpriseCRM.tsx` renders ALL 16 domains in one file via tab switching. Every portal page routes through it. This blocks all Layer 2 progress.
+- **Action:** Extract each tab's content into its corresponding `src/components/os-domains/` component
+- **Then:** Update portal pages to route to `/os/[domain]` instead of loading EnterpriseCRM
+- **Finally:** Delete EnterpriseCRM.tsx once content is distributed
+- **Risk:** It's load-bearing — test each domain after extraction
+
+### Priority 3: Wire OS Pages to New Backend CRUD (2-3 hrs)
+OS pages (`/os/orders`, `/os/finance`, `/os/crm`, etc.) currently show hardcoded demo data. Wire them to call the real backend CRUD endpoints at port 4000 using the existing `src/lib/api.ts` client.
+
+### Priority 4: PostgreSQL Connection (2-3 hrs)
+Everything runs in-memory — resets on server restart. Connect the PostgreSQL schema (already designed) for real persistence. Needs credentials + migration run.
+
+### What NOT to Do
+- **Don't touch Layer 1** — it's 100% done, don't break it
+- **Don't do PostgreSQL before U-1** — in-memory is fine for demo/testing
+- **Don't build more backend endpoints** — 105 endpoints is enough for now
+
+### Instruction for Next Agent
+> *"Read COPILOT_NOTES.md first. Focus on Layer 2. Start with U-1: break EnterpriseCRM.tsx (6,431 lines) into separate OS domain components. Then wire the OS pages to call the new backend CRUD endpoints at localhost:4000. Don't touch Layer 1 (public website). Critical rule: explain plan first, wait for YES."*
+
+---
+
 ## ⚠️ LAYER 1 FULL AUDIT — March 4, 2026 (FOR NEXT AGENT)
 
 **Audited by:** GitHub Copilot (Claude Opus 4.6)

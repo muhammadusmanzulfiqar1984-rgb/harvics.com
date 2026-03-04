@@ -59,15 +59,15 @@ export default function DistributorRetailersPage() {
 
           <SectionCard title="Tier 2: Main Modules" subtitle="Retailer management capabilities">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">👥 Retailer Master</h4>
                 <p className="text-sm text-black mb-2">Retailer profiles, contact information, and relationships</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">🗺️ Coverage Management</h4>
                 <p className="text-sm text-black mb-2">Territory coverage and retailer mapping</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📊 Performance Tracking</h4>
                 <p className="text-sm text-black mb-2">Retailer performance metrics and analytics</p>
               </div>

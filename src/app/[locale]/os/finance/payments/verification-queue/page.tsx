@@ -106,17 +106,17 @@ export default function VerificationQueuePage() {
           <GlobalFilters />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-            <div className="bg-white border border-black200 rounded-lg p-4">
+            <div className="bg-white border border-black200 p-4">
               <div className="text-sm text-black/70 mb-1">Pending Verification</div>
               <div className="text-2xl font-bold text-black">{payments.length}</div>
             </div>
-            <div className="bg-white border border-black200 rounded-lg p-4">
+            <div className="bg-white border border-black200 p-4">
               <div className="text-sm text-black/70 mb-1">Bank Transfers</div>
               <div className="text-2xl font-bold text-black">
                 {payments.filter(p => p.payment_method === 'BANK_TRANSFER').length}
               </div>
             </div>
-            <div className="bg-white border border-black200 rounded-lg p-4">
+            <div className="bg-white border border-black200 p-4">
               <div className="text-sm text-black/70 mb-1">Crypto Payments</div>
               <div className="text-2xl font-bold text-black">
                 {payments.filter(p => p.payment_method === 'USDT' || p.payment_method === 'USDC').length}
@@ -147,7 +147,7 @@ export default function VerificationQueuePage() {
                 {payments.map((payment) => (
                   <div
                     key={payment.id}
-                    className="p-6 border border-black200 rounded-lg hover:shadow-md transition-all"
+                    className="p-6 border border-black200 hover:shadow-md transition-all"
                   >
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex-1">

@@ -52,7 +52,7 @@ export default function InvestorRelationsForm() {
   ]
 
   return (
-    <div className="bg-gradient-to-br from-white800/40 to-white900/60 backdrop-blur-sm rounded-3xl border-2 border-[#C3A35E]/20 p-8 shadow-2xl">
+    <div className="bg-gradient-to-br from-white800/40 to-white900/60 backdrop-blur-sm border-2 border-[#C3A35E]/20 p-8 shadow-2xl">
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
@@ -66,7 +66,7 @@ export default function InvestorRelationsForm() {
               value={formData.name}
               onChange={handleInputChange}
               required
-              className="w-full px-4 py-3 rounded-xl bg-gray-700/50 border-2 border-black600/50 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-all duration-300"
+              className="w-full px-4 py-3 bg-gray-700/50 border-2 border-black600/50 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-all duration-300"
               placeholder={t('form.namePlaceholder')}
             />
           </div>
@@ -81,7 +81,7 @@ export default function InvestorRelationsForm() {
               value={formData.email}
               onChange={handleInputChange}
               required
-              className="w-full px-4 py-3 rounded-xl bg-gray-700/50 border-2 border-black600/50 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-all duration-300"
+              className="w-full px-4 py-3 bg-gray-700/50 border-2 border-black600/50 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-all duration-300"
               placeholder={t('form.emailPlaceholder')}
             />
           </div>
@@ -98,7 +98,7 @@ export default function InvestorRelationsForm() {
               name="company"
               value={formData.company}
               onChange={handleInputChange}
-              className="w-full px-4 py-3 rounded-xl bg-gray-700/50 border-2 border-black600/50 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-all duration-300"
+              className="w-full px-4 py-3 bg-gray-700/50 border-2 border-black600/50 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-all duration-300"
               placeholder={t('form.companyPlaceholder')}
             />
           </div>
@@ -112,7 +112,7 @@ export default function InvestorRelationsForm() {
               name="phone"
               value={formData.phone}
               onChange={handleInputChange}
-              className="w-full px-4 py-3 rounded-xl bg-gray-700/50 border-2 border-black600/50 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-all duration-300"
+              className="w-full px-4 py-3 bg-gray-700/50 border-2 border-black600/50 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-all duration-300"
               placeholder={t('form.phonePlaceholder')}
             />
           </div>
@@ -128,7 +128,7 @@ export default function InvestorRelationsForm() {
             value={formData.investmentType}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-3 rounded-xl bg-gray-700/50 border-2 border-black600/50 text-white focus:border-white focus:outline-none transition-all duration-300"
+            className="w-full px-4 py-3 bg-gray-700/50 border-2 border-black600/50 text-white focus:border-white focus:outline-none transition-all duration-300"
           >
             <option value="">{t('form.selectInvestmentType')}</option>
             {investmentTypes.map((type) => (
@@ -150,7 +150,7 @@ export default function InvestorRelationsForm() {
             onChange={handleInputChange}
             required
             rows={5}
-            className="w-full px-4 py-3 rounded-xl bg-gray-700/50 border-2 border-black600/50 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-all duration-300 resize-none"
+            className="w-full px-4 py-3 bg-gray-700/50 border-2 border-black600/50 text-white placeholder-gray-400 focus:border-white focus:outline-none transition-all duration-300 resize-none"
             placeholder={t('form.messagePlaceholder')}
           />
         </div>
@@ -159,7 +159,7 @@ export default function InvestorRelationsForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="bg-gradient-to-r from-white to-white text-black text-lg px-12 py-4 rounded-xl font-bold hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-white/50 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center space-x-2 mx-auto"
+            className="bg-gradient-to-r from-white to-white text-black text-lg px-12 py-4 font-bold hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-white/50 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center space-x-2 mx-auto"
           >
             {isSubmitting ? (
               <>
@@ -176,7 +176,7 @@ export default function InvestorRelationsForm() {
         </div>
 
         {submitStatus === 'success' && (
-          <div className="text-center p-4 bg-green-500/20 border border-green-500/50 rounded-xl">
+          <div className="text-center p-4 bg-green-500/20 border border-green-500/50">
             <p className="text-green-400 font-semibold">
               {t('form.successMessage')}
             </p>

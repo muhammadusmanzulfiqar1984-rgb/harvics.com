@@ -1,6 +1,14 @@
 import UnifiedLoginForm from './UnifiedLoginForm'
 // Header and Footer are provided by layout.tsx - DO NOT import them here to avoid duplication
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Login | Harvics',
+  description: 'Sign in to your Harvics account.',
+}
+
+
 // Generate static params for all locales
 export async function generateStaticParams() {
   return [
@@ -17,7 +25,7 @@ export async function generateStaticParams() {
 export default async function LoginPage() {
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="pt-20">
         <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
           {/* Decorative Elements */}
@@ -44,8 +52,8 @@ export default async function LoginPage() {
 
             {/* Features */}
             <div className="mt-12 space-y-4">
-              <div className="flex items-start space-x-4 p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-10 h-10 bg-[#6B1F2B]/5 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 p-6 bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 bg-[#6B1F2B]/5 flex items-center justify-center flex-shrink-0">
                   <span className="text-xl">🏢</span>
                 </div>
                 <div>
@@ -58,8 +66,8 @@ export default async function LoginPage() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-10 h-10 bg-[#6B1F2B]/5 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 p-6 bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 bg-[#6B1F2B]/5 flex items-center justify-center flex-shrink-0">
                   <span className="text-xl">📊</span>
                 </div>
                 <div>
@@ -72,8 +80,8 @@ export default async function LoginPage() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-10 h-10 bg-[#6B1F2B]/5 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 p-6 bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 bg-[#6B1F2B]/5 flex items-center justify-center flex-shrink-0">
                   <span className="text-xl">🔐</span>
                 </div>
                 <div>

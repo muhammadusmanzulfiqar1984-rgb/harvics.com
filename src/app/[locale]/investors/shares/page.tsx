@@ -24,7 +24,7 @@ export default async function SharesPage({ params }: SharesPageProps) {
   const categories = getFolderBasedCategories()
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="fixed top-0 left-0 right-0 z-[1000] bg-white shadow-sm">
         <Header categories={categories} />
       </div>
@@ -51,8 +51,8 @@ export default async function SharesPage({ params }: SharesPageProps) {
 
         <section className="relative px-4 pb-20 -mt-20 z-20">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white border border-gray-100 rounded-xl p-8 md:p-12 shadow-sm">
-              <div className="flex items-center justify-center w-16 h-16 bg-[#6B1F2B]/5 rounded-xl mb-6 mx-auto">
+            <div className="bg-white border border-gray-100 p-8 md:p-12 shadow-sm">
+              <div className="flex items-center justify-center w-16 h-16 bg-[#6B1F2B]/5 mb-6 mx-auto">
                 <span className="text-3xl">📈</span>
               </div>
               <h2 className="text-2xl font-serif font-medium text-gray-900 mb-4 text-center">Investor Information</h2>
@@ -63,13 +63,13 @@ export default async function SharesPage({ params }: SharesPageProps) {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href={`/${locale}/investor-relations`}
-                  className="bg-[#6B1F2B] text-white px-8 py-4 rounded-xl font-medium hover:bg-[#50000b] hover:scale-105 transition-all duration-300 shadow-lg text-center"
+                  className="bg-[#6B1F2B] text-white px-8 py-4 font-medium hover:bg-[#50000b] hover:scale-105 transition-all duration-300 shadow-lg text-center"
                 >
                   Investor Relations
                 </a>
                 <a
                   href={`/${locale}/contact`}
-                  className="bg-white border border-gray-200 text-gray-900 px-8 py-4 rounded-xl font-medium hover:bg-gray-50 hover:border-[#6B1F2B] hover:text-[#6B1F2B] transition-all duration-300 text-center"
+                  className="bg-white border border-gray-200 text-gray-900 px-8 py-4 font-medium hover:bg-gray-50 hover:border-[#6B1F2B] hover:text-[#6B1F2B] transition-all duration-300 text-center"
                 >
                   Contact IR Team
                 </a>

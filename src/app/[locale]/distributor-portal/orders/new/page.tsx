@@ -46,14 +46,14 @@ export default function PlaceNewOrder() {
       </div>
 
       {/* Filters/Top Controls */}
-      <div className="bg-white p-4 rounded-lg border border-black200 shadow-sm">
+      <div className="bg-white p-4 border border-black200 shadow-sm">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
             <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">{t('selectCountry')}</label>
             <select
               value={selectedCountry}
               onChange={(e) => setSelectedCountry(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
             >
               <option value="US">United States</option>
               <option value="PK">Pakistan</option>
@@ -65,7 +65,7 @@ export default function PlaceNewOrder() {
             <select
               value={selectedWarehouse}
               onChange={(e) => setSelectedWarehouse(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
             >
               <option value="wh_us_west">US West Warehouse</option>
               <option value="wh_us_east">US East Warehouse</option>
@@ -93,7 +93,7 @@ export default function PlaceNewOrder() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Product Table */}
-        <div className="lg:col-span-2 bg-white rounded-lg border border-black200 shadow-sm overflow-hidden">
+        <div className="lg:col-span-2 bg-white border border-black200 shadow-sm overflow-hidden">
           <div className="p-4 border-b border-black200">
             <h2 className="text-lg font-bold text-[#C3A35E]/90">Products</h2>
           </div>
@@ -147,7 +147,7 @@ export default function PlaceNewOrder() {
         </div>
 
         {/* Right-side Panel - Harvey Suggestions */}
-        <div className="bg-gradient-to-br from-[#6B1F2B] to-[#ffffff] rounded-lg p-6 text-white shadow-sm">
+        <div className="bg-gradient-to-br from-[#6B1F2B] to-[#ffffff] p-6 text-white shadow-sm">
           <div className="flex items-center space-x-2 mb-4">
             <span className="text-2xl">🤖</span>
             <h2 className="text-lg font-bold">Harvey Suggestions</h2>
@@ -174,7 +174,7 @@ export default function PlaceNewOrder() {
       </div>
 
       {/* Summary & Actions */}
-      <div className="bg-white rounded-lg border border-black200 shadow-sm p-6">
+      <div className="bg-white border border-black200 shadow-sm p-6">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-lg font-bold text-[#C3A35E]/90">Order Summary</h2>
           <button
@@ -201,7 +201,7 @@ export default function PlaceNewOrder() {
         <div className="flex space-x-4">
           <Link
             href={`/${locale}/distributor-portal/orders/new/review`}
-            className="flex-1 bg-white text-white px-6 py-3 rounded-lg font-semibold text-center hover:opacity-90 transition-opacity"
+            className="flex-1 bg-white text-white px-6 py-3 font-semibold text-center hover:opacity-90 transition-opacity"
           >
             Review Order
           </Link>

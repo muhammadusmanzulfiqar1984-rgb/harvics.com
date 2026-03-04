@@ -171,7 +171,7 @@ export default function DistributorProfile() {
   if (error && !profile) {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center px-4">
-        <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-6">
+        <div className="max-w-md w-full bg-white shadow-lg p-6">
           <h2 className="text-xl font-bold text-red-600 mb-2">{tCommon('error')}</h2>
           <p className="text-[#C3A35E]/90">{error}</p>
         </div>
@@ -187,7 +187,7 @@ export default function DistributorProfile() {
 
           {/* Profile Info (Read-only) */}
           {profile && (
-            <div className="bg-white rounded-lg shadow p-6 mb-6">
+            <div className="bg-white shadow p-6 mb-6">
               <h2 className="text-xl font-bold text-[#C3A35E] mb-4">{t('accountInformation')}</h2>
               <div className="grid grid-cols-2 gap-4">
                 <div>
@@ -225,17 +225,17 @@ export default function DistributorProfile() {
           )}
 
           {/* Profile Update Form */}
-          <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow p-6">
+          <form onSubmit={handleSubmit} className="bg-white shadow p-6">
             <h2 className="text-xl font-bold text-[#C3A35E] mb-4">{t('updateProfile')}</h2>
 
             {successMessage && (
-              <div className="mb-6 bg-green-50 border border-green-200 rounded-lg p-4">
+              <div className="mb-6 bg-green-50 border border-green-200 p-4">
                 <p className="text-green-800">{successMessage}</p>
               </div>
             )}
 
             {errors.submit && (
-              <div className="mb-6 bg-red-50 border border-red-200 rounded-lg p-4">
+              <div className="mb-6 bg-red-50 border border-red-200 p-4">
                 <p className="text-red-800">{errors.submit}</p>
               </div>
             )}
@@ -249,7 +249,7 @@ export default function DistributorProfile() {
                   type="text"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full border border-black300 rounded-lg px-4 py-2"
+                  className="w-full border border-black300 px-4 py-2"
                 />
               </div>
 
@@ -261,7 +261,7 @@ export default function DistributorProfile() {
                   type="email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full border border-black300 rounded-lg px-4 py-2"
+                  className="w-full border border-black300 px-4 py-2"
                 />
                 {errors.email && (
                   <p className="text-red-600 text-xs mt-1">{errors.email}</p>
@@ -276,7 +276,7 @@ export default function DistributorProfile() {
                   type="tel"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full border border-black300 rounded-lg px-4 py-2"
+                  className="w-full border border-black300 px-4 py-2"
                 />
                 {errors.phone && (
                   <p className="text-red-600 text-xs mt-1">{errors.phone}</p>
@@ -290,7 +290,7 @@ export default function DistributorProfile() {
                 <textarea
                   value={formData.address}
                   onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                  className="w-full border border-black300 rounded-lg px-4 py-2"
+                  className="w-full border border-black300 px-4 py-2"
                   rows={3}
                 />
               </div>
@@ -303,7 +303,7 @@ export default function DistributorProfile() {
                   <select
                     value={formData.language}
                     onChange={(e) => setFormData({ ...formData, language: e.target.value })}
-                    className="w-full border border-black300 rounded-lg px-4 py-2"
+                    className="w-full border border-black300 px-4 py-2"
                   >
                     <option value="en">English</option>
                     <option value="ar">Arabic</option>
@@ -320,7 +320,7 @@ export default function DistributorProfile() {
                   <select
                     value={formData.currency}
                     onChange={(e) => setFormData({ ...formData, currency: e.target.value })}
-                    className="w-full border border-black300 rounded-lg px-4 py-2"
+                    className="w-full border border-black300 px-4 py-2"
                   >
                     <option value="USD">USD</option>
                     <option value="AED">AED</option>
@@ -336,7 +336,7 @@ export default function DistributorProfile() {
               <button
                 type="submit"
                 disabled={saving}
-                className="bg-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#5a0012] transition-colors disabled:opacity-50"
+                className="bg-white text-white px-6 py-3 font-semibold hover:bg-[#5a0012] transition-colors disabled:opacity-50"
               >
                 {saving ? t('saving') : t('saveChanges')}
               </button>

@@ -84,7 +84,7 @@ export default function CompetitorProductsPage() {
         </div>
         <button
           onClick={() => setShowForm(!showForm)}
-          className="bg-white text-white/90 px-6 py-2 rounded-lg font-semibold hover:bg-white/90 transition-colors"
+          className="bg-white text-white/90 px-6 py-2 font-semibold hover:bg-white/90 transition-colors"
         >
           {showForm ? 'Cancel' : '+ Add Product'}
         </button>
@@ -92,7 +92,7 @@ export default function CompetitorProductsPage() {
 
       {/* Entry Form */}
       {showForm && (
-        <div className="bg-white rounded-lg border border-black200 p-6">
+        <div className="bg-white border border-black200 p-6">
           <h2 className="text-xl font-semibold text-white/90 mb-4">Add Competitor Product</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
@@ -102,7 +102,7 @@ export default function CompetitorProductsPage() {
                   type="text"
                   value={formData.brand}
                   onChange={(e) => setFormData({ ...formData, brand: e.target.value })}
-                  className="w-full px-3 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
                   required
                 />
               </div>
@@ -112,7 +112,7 @@ export default function CompetitorProductsPage() {
                   type="text"
                   value={formData.sku_name}
                   onChange={(e) => setFormData({ ...formData, sku_name: e.target.value })}
-                  className="w-full px-3 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
                   required
                 />
               </div>
@@ -122,7 +122,7 @@ export default function CompetitorProductsPage() {
                   type="text"
                   value={formData.category}
                   onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                  className="w-full px-3 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
                 />
               </div>
               <div>
@@ -131,7 +131,7 @@ export default function CompetitorProductsPage() {
                   type="text"
                   value={formData.size}
                   onChange={(e) => setFormData({ ...formData, size: e.target.value })}
-                  className="w-full px-3 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
                 />
               </div>
               <div>
@@ -141,7 +141,7 @@ export default function CompetitorProductsPage() {
                   step="0.01"
                   value={formData.price}
                   onChange={(e) => setFormData({ ...formData, price: e.target.value })}
-                  className="w-full px-3 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
                 />
               </div>
               <div>
@@ -149,7 +149,7 @@ export default function CompetitorProductsPage() {
                 <select
                   value={formData.currency}
                   onChange={(e) => setFormData({ ...formData, currency: e.target.value })}
-                  className="w-full px-3 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
                 >
                   <option value="USD">USD</option>
                   <option value="EUR">EUR</option>
@@ -164,7 +164,7 @@ export default function CompetitorProductsPage() {
                   type="text"
                   value={formData.country}
                   onChange={(e) => setFormData({ ...formData, country: e.target.value })}
-                  className="w-full px-3 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
                   required
                 />
               </div>
@@ -173,13 +173,13 @@ export default function CompetitorProductsPage() {
               <button
                 type="button"
                 onClick={() => setShowForm(false)}
-                className="px-4 py-2 border border-black300 rounded-lg hover:bg-white"
+                className="px-4 py-2 border border-black300 hover:bg-white"
               >
                 Cancel
               </button>
               <button
                 type="submit"
-                className="px-4 py-2 bg-white text-white/90 rounded-lg font-semibold hover:bg-white/90"
+                className="px-4 py-2 bg-white text-white/90 font-semibold hover:bg-white/90"
               >
                 Save Product
               </button>
@@ -189,7 +189,7 @@ export default function CompetitorProductsPage() {
       )}
 
       {/* Products Table */}
-      <div className="bg-white rounded-lg border border-black200 overflow-hidden">
+      <div className="bg-white border border-black200 overflow-hidden">
         {loading ? (
           <div className="p-8 text-center">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white mx-auto mb-4"></div>

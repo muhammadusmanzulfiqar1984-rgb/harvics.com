@@ -88,7 +88,7 @@ const SubcategoryClient: React.FC<SubcategoryClientProps> = ({
       </section>
 
       {/* Products Grid - Site Design Guidelines */}
-      <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-[#F8F9FA] relative overflow-hidden">
+      <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-[#F5F1E8] relative overflow-hidden">
         
         <div className="relative z-10 w-full">
           {images.length > 0 ? (

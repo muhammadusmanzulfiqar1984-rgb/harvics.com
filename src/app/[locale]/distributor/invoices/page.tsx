@@ -143,7 +143,7 @@ export default function DistributorInvoices() {
           <h1 className="text-3xl font-bold text-[#C3A35E] mb-8">{t('title')}</h1>
 
           {/* Filters */}
-          <div className="bg-white rounded-lg shadow p-6 mb-6">
+          <div className="bg-white shadow p-6 mb-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
@@ -152,7 +152,7 @@ export default function DistributorInvoices() {
                 <select
                   value={filters.status}
                   onChange={(e) => handleFilterChange('status', e.target.value)}
-                  className="w-full border border-black300 rounded-lg px-4 py-2"
+                  className="w-full border border-black300 px-4 py-2"
                 >
                   <option value="">{t('filters.allStatuses')}</option>
                   <option value="PAID">{t('statuses.paid')}</option>
@@ -166,7 +166,7 @@ export default function DistributorInvoices() {
                     setFilters({ status: '' })
                     setPagination((prev) => ({ ...prev, page: 1 }))
                   }}
-                  className="w-full bg-white text-[#C3A35E]/90 px-4 py-2 rounded-lg font-semibold hover:bg-white transition-colors"
+                  className="w-full bg-white text-[#C3A35E]/90 px-4 py-2 font-semibold hover:bg-white transition-colors"
                 >
                   {t('filters.clearFilters')}
                 </button>
@@ -175,13 +175,13 @@ export default function DistributorInvoices() {
           </div>
 
           {error && (
-            <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+            <div className="bg-red-50 border border-red-200 p-4 mb-6">
               <p className="text-red-800">{error}</p>
             </div>
           )}
 
           {/* Invoices Table */}
-          <div className="bg-white rounded-lg shadow overflow-hidden">
+          <div className="bg-white shadow overflow-hidden">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-white">
                 <tr>
@@ -252,7 +252,7 @@ export default function DistributorInvoices() {
               <button
                 onClick={() => setPagination((prev) => ({ ...prev, page: prev.page - 1 }))}
                 disabled={pagination.page === 1}
-                className="px-4 py-2 border border-black300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 border border-black300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Previous
               </button>
@@ -262,7 +262,7 @@ export default function DistributorInvoices() {
               <button
                 onClick={() => setPagination((prev) => ({ ...prev, page: prev.page + 1 }))}
                 disabled={pagination.page >= pagination.totalPages}
-                className="px-4 py-2 border border-black300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 border border-black300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Next
               </button>

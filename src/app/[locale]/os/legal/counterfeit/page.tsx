@@ -80,7 +80,7 @@ export default function CounterfeitReportsPage() {
           </div>
           <button
             onClick={() => setShowForm(!showForm)}
-            className="bg-white text-white px-4 py-2 rounded-lg hover:bg-[#5a000c] transition-colors"
+            className="bg-white text-white px-4 py-2 hover:bg-[#5a000c] transition-colors"
           >
             {showForm ? 'Cancel' : '+ New Report'}
           </button>
@@ -88,7 +88,7 @@ export default function CounterfeitReportsPage() {
       </div>
 
       {showForm && (
-        <div className="bg-white rounded-lg border border-black200 p-6">
+        <div className="bg-white border border-black200 p-6">
           <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">New Counterfeit Report</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -99,7 +99,7 @@ export default function CounterfeitReportsPage() {
                   required
                   value={formData.product_name}
                   onChange={(e) => setFormData({ ...formData, product_name: e.target.value })}
-                  className="w-full border border-black300 rounded-lg px-3 py-2"
+                  className="w-full border border-black300 px-3 py-2"
                 />
               </div>
               <div>
@@ -108,7 +108,7 @@ export default function CounterfeitReportsPage() {
                   type="text"
                   value={formData.brand}
                   onChange={(e) => setFormData({ ...formData, brand: e.target.value })}
-                  className="w-full border border-black300 rounded-lg px-3 py-2"
+                  className="w-full border border-black300 px-3 py-2"
                 />
               </div>
               <div>
@@ -118,7 +118,7 @@ export default function CounterfeitReportsPage() {
                   required
                   value={formData.location}
                   onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                  className="w-full border border-black300 rounded-lg px-3 py-2"
+                  className="w-full border border-black300 px-3 py-2"
                 />
               </div>
               <div>
@@ -126,7 +126,7 @@ export default function CounterfeitReportsPage() {
                 <select
                   value={formData.priority}
                   onChange={(e) => setFormData({ ...formData, priority: e.target.value })}
-                  className="w-full border border-black300 rounded-lg px-3 py-2"
+                  className="w-full border border-black300 px-3 py-2"
                 >
                   <option value="low">Low</option>
                   <option value="medium">Medium</option>
@@ -142,20 +142,20 @@ export default function CounterfeitReportsPage() {
                 rows={4}
                 value={formData.description}
                 onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                className="w-full border border-black300 rounded-lg px-3 py-2"
+                className="w-full border border-black300 px-3 py-2"
               />
             </div>
             <div className="flex justify-end gap-2">
               <button
                 type="button"
                 onClick={() => setShowForm(false)}
-                className="px-4 py-2 border border-black300 rounded-lg hover:bg-white"
+                className="px-4 py-2 border border-black300 hover:bg-white"
               >
                 Cancel
               </button>
               <button
                 type="submit"
-                className="px-4 py-2 bg-white text-white rounded-lg hover:bg-[#5a000c]"
+                className="px-4 py-2 bg-white text-white hover:bg-[#5a000c]"
               >
                 Submit Report
               </button>
@@ -167,7 +167,7 @@ export default function CounterfeitReportsPage() {
       {loading ? (
         <div className="text-center py-12">Loading...</div>
       ) : (
-        <div className="bg-white rounded-lg border border-black200 overflow-hidden">
+        <div className="bg-white border border-black200 overflow-hidden">
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-white">
               <tr>

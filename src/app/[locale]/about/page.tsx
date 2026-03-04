@@ -2,6 +2,14 @@
 import { getTranslations } from 'next-intl/server'
 import { getFolderBasedCategories } from '@/data/folderBasedProducts'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Us | Harvics',
+  description: 'About Harvics Global Ventures operating across 40+ countries.',
+}
+
+
 // Generate static params for all locales
 export async function generateStaticParams() {
   return [

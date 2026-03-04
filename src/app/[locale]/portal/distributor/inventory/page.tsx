@@ -64,15 +64,15 @@ export default function DistributorInventoryPage() {
             subtitle="Inventory management capabilities"
           >
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📦 Stock Management</h4>
                 <p className="text-sm text-black mb-2">Real-time stock levels and movements</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">🏭 Warehouse Operations</h4>
                 <p className="text-sm text-black mb-2">Multi-location warehouse management</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📊 Stock Analytics</h4>
                 <p className="text-sm text-black mb-2">Inventory performance and insights</p>
               </div>

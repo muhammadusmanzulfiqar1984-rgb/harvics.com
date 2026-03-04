@@ -22,7 +22,7 @@ export default async function FinancialSupportPage({ params }: FinancialSupportP
   const categories = getFolderBasedCategories()
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="pt-20">
         <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
           {/* Decorative Elements */}
@@ -45,7 +45,7 @@ export default async function FinancialSupportPage({ params }: FinancialSupportP
         <section className="relative px-4 pb-20 -mt-20 z-20">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-white border border-gray-100 rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300">
+              <div className="bg-white border border-gray-100 p-8 shadow-sm hover:shadow-lg transition-all duration-300">
                 <h3 className="text-2xl font-serif font-medium text-gray-900 mb-6">Support Services</h3>
                 <ul className="space-y-4 text-gray-600">
                   <li className="flex items-center">
@@ -70,7 +70,7 @@ export default async function FinancialSupportPage({ params }: FinancialSupportP
                   </li>
                 </ul>
               </div>
-              <div className="bg-white border border-gray-100 rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300">
+              <div className="bg-white border border-gray-100 p-8 shadow-sm hover:shadow-lg transition-all duration-300">
                 <h3 className="text-2xl font-serif font-medium text-gray-900 mb-6">Resources</h3>
                 <div className="space-y-6">
                   <div className="border-l-4 border-[#6B1F2B] pl-4">
@@ -93,7 +93,7 @@ export default async function FinancialSupportPage({ params }: FinancialSupportP
               </div>
             </div>
 
-            <div className="relative overflow-hidden bg-[#6B1F2B] rounded-2xl p-8 md:p-12 text-center text-white">
+            <div className="relative overflow-hidden bg-[#6B1F2B] p-8 md:p-12 text-center text-white">
               <div className="absolute inset-0">
                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
                  <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -117,7 +117,7 @@ export default async function FinancialSupportPage({ params }: FinancialSupportP
                 <div className="text-center">
                   <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4">Need Financial Support?</h2>
                   <p className="mb-8 text-lg text-white/80 font-light">Our team is ready to help you achieve your financial goals</p>
-                  <button className="bg-white text-[#6B1F2B] px-8 py-4 rounded-xl font-medium text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-lg">
+                  <button className="bg-white text-[#6B1F2B] px-8 py-4 font-medium text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-lg">
                     Contact Support
                   </button>
                 </div>

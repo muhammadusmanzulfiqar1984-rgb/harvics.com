@@ -59,15 +59,15 @@ export default function SupplierDeliveriesPage() {
 
           <SectionCard title="Tier 2: Main Modules" subtitle="Delivery and GRN management capabilities">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">🚚 Delivery Management</h4>
                 <p className="text-sm text-black mb-2">Track shipments and delivery status</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📋 GRN Processing</h4>
                 <p className="text-sm text-black mb-2">Goods Receipt Note creation and tracking</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📊 Delivery Analytics</h4>
                 <p className="text-sm text-black mb-2">Performance metrics and delivery insights</p>
               </div>

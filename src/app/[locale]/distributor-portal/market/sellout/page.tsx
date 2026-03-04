@@ -26,7 +26,7 @@ export default function SelloutUpload() {
     <div className="space-y-6">
       <h1 className="text-2xl font-bold text-[#C3A35E]">Sell-out Upload</h1>
 
-      <div className="bg-white rounded-lg border border-black200 shadow-sm p-6">
+      <div className="bg-white border border-black200 shadow-sm p-6">
         <div className="space-y-6">
           <div>
             <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Month *</label>
@@ -34,7 +34,7 @@ export default function SelloutUpload() {
               type="month"
               value={selectedMonth}
               onChange={(e) => setSelectedMonth(e.target.value)}
-              className="px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+              className="px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
             />
           </div>
 
@@ -44,7 +44,7 @@ export default function SelloutUpload() {
               type="file"
               accept=".csv,.xlsx,.xls"
               onChange={handleFileUpload}
-              className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
             />
             <p className="text-xs text-[#C3A35E]/90 mt-2">
               <a href="#" className="text-white hover:underline">Download template</a> for correct format
@@ -52,7 +52,7 @@ export default function SelloutUpload() {
           </div>
 
           {uploaded && uploadData && (
-            <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+            <div className="bg-green-50 border border-green-200 p-4">
               <div className="flex items-center space-x-2 mb-4">
                 <span className="text-2xl">✅</span>
                 <h3 className="font-semibold text-green-800">File Uploaded Successfully</h3>
@@ -69,7 +69,7 @@ export default function SelloutUpload() {
               </div>
               
               {/* Harvey Insights */}
-              <div className="bg-gradient-to-r from-[#6B1F2B] to-[#ffffff] rounded-lg p-4 text-white">
+              <div className="bg-gradient-to-r from-[#6B1F2B] to-[#ffffff] p-4 text-white">
                 <div className="flex items-center space-x-2 mb-2">
                   <span className="text-xl">🤖</span>
                   <h4 className="font-semibold">Harvey Insights</h4>

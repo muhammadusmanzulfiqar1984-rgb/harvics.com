@@ -94,7 +94,7 @@ export default function MakePaymentPage() {
               </div>
 
               {selectedMethod && (
-                <div className="mt-6 p-4 bg-[#F2F2F2] rounded-lg border border-black200">
+                <div className="mt-6 p-4 bg-[#F2F2F2] border border-black200">
                   <div className="mb-4">
                     <label className="block text-sm font-medium text-black mb-2">
                       Amount
@@ -106,7 +106,7 @@ export default function MakePaymentPage() {
                       value={amount}
                       onChange={(e) => setAmount(e.target.value)}
                       placeholder="0.00"
-                      className="w-full px-3 py-2 border border-black200 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
+                      className="w-full px-3 py-2 border border-black200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
                       required
                     />
                   </div>

@@ -167,10 +167,10 @@ export default function UnifiedLoginForm() {
   }
 
   return (
-    <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-6 sm:p-8">
+    <div className="bg-white shadow-xl border border-gray-200 p-6 sm:p-8">
       <form onSubmit={handleSubmit} className="space-y-6">
         {error && (
-          <div className="p-3 bg-red-50 border border-red-200 rounded-lg">
+          <div className="p-3 bg-red-50 border border-red-200">
             <p className="text-red-600 text-sm">{error}</p>
           </div>
         )}
@@ -186,7 +186,7 @@ export default function UnifiedLoginForm() {
             value={formData.username}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent bg-gray-50 text-gray-900 placeholder-gray-400 transition-all duration-300"
+            className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent bg-gray-50 text-gray-900 placeholder-gray-400 transition-all duration-300"
             placeholder="supplier_user, distributor_user…"
           />
         </div>
@@ -202,7 +202,7 @@ export default function UnifiedLoginForm() {
             value={formData.password}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent bg-gray-50 text-gray-900 placeholder-gray-400 transition-all duration-300"
+            className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent bg-gray-50 text-gray-900 placeholder-gray-400 transition-all duration-300"
             placeholder="Enter password"
           />
         </div>
@@ -223,7 +223,7 @@ export default function UnifiedLoginForm() {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full bg-[#6B1F2B] hover:bg-[#50000b] text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+          className="w-full bg-[#6B1F2B] hover:bg-[#50000b] text-white font-bold py-3 px-4 transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
         >
           {isLoading ? (
             <>
@@ -248,7 +248,7 @@ export default function UnifiedLoginForm() {
         </p>
       </div>
 
-      <div className="mt-4 p-3 bg-gray-50 border border-gray-200 rounded-lg">
+      <div className="mt-4 p-3 bg-gray-50 border border-gray-200">
         <p className="text-xs text-gray-700 font-medium mb-1">Demo Users:</p>
         <p className="text-xs text-gray-500">supplier_user | distributor_user | sales_officer_user | country_manager_user | hq_user</p>
       </div>

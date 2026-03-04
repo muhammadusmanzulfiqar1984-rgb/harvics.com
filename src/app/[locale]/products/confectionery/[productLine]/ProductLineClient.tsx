@@ -123,11 +123,11 @@ const ProductLineClient: React.FC<ProductLineClientProps> = ({
               {products.map((product, index) => (
                 <div
                   key={index}
-                  className="group relative p-6 rounded-2xl border-2 border-red-400/20 hover:border-red-400/60 transition-all duration-500 hover:scale-105 bg-gradient-to-br from-white/80 to-red-50/60 dark:from-white800/40 dark:to-red-900/60 backdrop-blur-sm shadow-2xl hover:shadow-red-400/20 card-enhanced"
+                  className="group relative p-6 border-2 border-red-400/20 hover:border-red-400/60 transition-all duration-500 hover:scale-105 bg-gradient-to-br from-white/80 to-red-50/60 dark:from-white800/40 dark:to-red-900/60 backdrop-blur-sm shadow-2xl hover:shadow-red-400/20 card-enhanced"
                 >
                   <div className="text-center">
                     <div
-                      className="w-32 h-32 mx-auto mb-4 rounded-xl overflow-hidden border-2 border-red-400/30 group-hover:border-red-400/60 transition-all duration-500 shadow-lg cursor-pointer"
+                      className="w-32 h-32 mx-auto mb-4 overflow-hidden border-2 border-red-400/30 group-hover:border-red-400/60 transition-all duration-500 shadow-lg cursor-pointer"
                       onClick={() => {
                         setLightboxImage(product.image)
                         setLightboxAlt(product.name)

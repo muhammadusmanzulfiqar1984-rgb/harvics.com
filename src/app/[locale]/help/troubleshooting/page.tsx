@@ -16,7 +16,7 @@ export default async function TroubleshootingPage({ params }: { params: Promise<
   ]
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="pt-20">
         <section className="h-[300px] relative bg-[#6B1F2B] overflow-hidden">
           {/* Decorative Elements */}
@@ -39,15 +39,15 @@ export default async function TroubleshootingPage({ params }: { params: Promise<
         <section className="relative px-4 pb-20 -mt-16 z-20">
           <div className="max-w-7xl mx-auto">
              <div className="mb-8">
-              <Link href={`/${locale}/help/`} className="inline-flex items-center text-[#6B1F2B] hover:text-[#50000b] font-medium transition-colors bg-white px-4 py-2 rounded-lg shadow-sm">
+              <Link href={`/${locale}/help/`} className="inline-flex items-center text-[#6B1F2B] hover:text-[#50000b] font-medium transition-colors bg-white px-4 py-2 shadow-sm">
                 ← Back to Help Center
               </Link>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {issues.map((issue) => (
-                <div key={issue.id} className="bg-white rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group cursor-pointer">
-                  <div className="text-4xl mb-6 bg-[#6B1F2B]/5 w-16 h-16 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">{issue.icon}</div>
+                <div key={issue.id} className="bg-white p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group cursor-pointer">
+                  <div className="text-4xl mb-6 bg-[#6B1F2B]/5 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">{issue.icon}</div>
                   <h3 className="text-xl font-serif font-medium text-gray-900 mb-3 group-hover:text-[#6B1F2B] transition-colors">{issue.title}</h3>
                   <p className="text-gray-600 leading-relaxed text-sm">{issue.description}</p>
                 </div>

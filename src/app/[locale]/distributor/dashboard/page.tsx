@@ -104,7 +104,7 @@ export default function DistributorDashboard() {
   if (error) {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center px-4">
-        <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-6">
+        <div className="max-w-md w-full bg-white shadow-lg p-6">
           <h2 className="text-xl font-bold text-red-600 mb-2">{tCommon('error')}</h2>
           <p className="text-[#C3A35E]/90">{error}</p>
         </div>

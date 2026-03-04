@@ -115,10 +115,10 @@ export default function DistributorLoginForm() {
   }
 
   return (
-    <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl border-2 border-[#C3A35E]/30 p-6 sm:p-8">
+    <div className="bg-white/90 backdrop-blur-sm shadow-2xl border-2 border-[#C3A35E]/30 p-6 sm:p-8">
       <form onSubmit={handleSubmit} className="space-y-6">
         {error && (
-          <div className="p-3 bg-red-50 border border-red-200 rounded-lg">
+          <div className="p-3 bg-red-50 border border-red-200">
             <p className="text-black text-sm">{error}</p>
           </div>
         )}
@@ -134,7 +134,7 @@ export default function DistributorLoginForm() {
             value={formData.username}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-3 border border-[#C3A35E]/30 rounded-xl focus:ring-2 focus:ring-black focus:border-white bg-white text-black placeholder-[#6B1F2B]/60 transition-all duration-300"
+            className="w-full px-4 py-3 border border-[#C3A35E]/30 focus:ring-2 focus:ring-black focus:border-white bg-white text-black placeholder-[#6B1F2B]/60 transition-all duration-300"
             placeholder="Enter your username"
           />
         </div>
@@ -150,7 +150,7 @@ export default function DistributorLoginForm() {
             value={formData.password}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-3 border border-[#C3A35E]/30 rounded-xl focus:ring-2 focus:ring-black focus:border-white bg-white text-black placeholder-[#6B1F2B]/60 transition-all duration-300"
+            className="w-full px-4 py-3 border border-[#C3A35E]/30 focus:ring-2 focus:ring-black focus:border-white bg-white text-black placeholder-[#6B1F2B]/60 transition-all duration-300"
             placeholder="Enter your password"
           />
         </div>
@@ -171,7 +171,7 @@ export default function DistributorLoginForm() {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full bg-white hover:bg-gray-50 text-[#6B1F2B] font-bold py-3 px-4 rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 border-2 border-[#C3A35E]/30 hover:border-[#C3A35E]"
+          className="w-full bg-white hover:bg-gray-50 text-[#6B1F2B] font-bold py-3 px-4 transition-all duration-300 shadow-xl hover:shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 border-2 border-[#C3A35E]/30 hover:border-[#C3A35E]"
         >
           {isLoading ? (
             <>

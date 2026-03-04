@@ -4,6 +4,14 @@ import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
 import { getFolderBasedCategories } from '@/data/folderBasedProducts'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Products | Harvics',
+  description: 'Explore Harvics product range across 10 industry verticals.',
+}
+
+
 // Generate static params for all locales
 export async function generateStaticParams() {
   return [
@@ -32,7 +40,7 @@ export default async function ProductsPage({ params }: { params: Promise<{ local
   }))
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="pt-20">
         <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
           {/* Decorative Elements */}
@@ -55,7 +63,7 @@ export default async function ProductsPage({ params }: { params: Promise<{ local
         {/* Product Slider Section */}
         <section className="relative z-20 -mt-20 mb-12">
            <div className="max-w-7xl mx-auto px-4">
-             <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+             <div className="bg-white shadow-xl overflow-hidden border border-gray-100">
                <ProductSlider categories={folderCategories} />
              </div>
            </div>
@@ -76,7 +84,7 @@ export default async function ProductsPage({ params }: { params: Promise<{ local
                 <Link
                   key={index}
                   href={category.url}
-                  className="group relative aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-500"
+                  className="group relative aspect-square overflow-hidden shadow-md hover:shadow-xl transition-all duration-500"
                 >
                   <div className="absolute inset-0">
                     <img 

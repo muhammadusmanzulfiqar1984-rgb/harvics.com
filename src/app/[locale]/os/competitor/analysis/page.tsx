@@ -68,21 +68,21 @@ export default function CompetitorAnalysisPage() {
         <>
           {/* Stats Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-lg shadow p-6">
+            <div className="bg-white shadow p-6">
               <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">📦 Tracked Products</h3>
               <div className="text-3xl font-bold text-[#C3A35E]">
                 {dashboard.totalProducts || 0}
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow p-6">
+            <div className="bg-white shadow p-6">
               <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">🏢 Competitors</h3>
               <div className="text-3xl font-bold text-blue-600">
                 {dashboard.totalCompetitors || 0}
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow p-6">
+            <div className="bg-white shadow p-6">
               <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">⚠️ Price Alerts</h3>
               <div className="text-3xl font-bold text-orange-600">
                 {dashboard.priceAlerts || 0}
@@ -92,7 +92,7 @@ export default function CompetitorAnalysisPage() {
 
           {/* Analysis Sections */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-lg border border-black200 p-6">
+            <div className="bg-white border border-black200 p-6">
               <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Market Share</h2>
               {dashboard.marketShareData ? (
                 <div className="text-[#C3A35E]/90">
@@ -103,17 +103,17 @@ export default function CompetitorAnalysisPage() {
               )}
             </div>
 
-            <div className="bg-white rounded-lg border border-black200 p-6">
+            <div className="bg-white border border-black200 p-6">
               <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Pricing Analysis</h2>
               <p className="text-[#C3A35E]/90">Pricing analysis coming soon</p>
             </div>
 
-            <div className="bg-white rounded-lg border border-black200 p-6">
+            <div className="bg-white border border-black200 p-6">
               <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Market Trends</h2>
               <p className="text-[#C3A35E]/90">Trend analysis coming soon</p>
             </div>
 
-            <div className="bg-white rounded-lg border border-black200 p-6">
+            <div className="bg-white border border-black200 p-6">
               <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Brand Analysis</h2>
               <p className="text-[#C3A35E]/90">Brand analysis coming soon</p>
             </div>

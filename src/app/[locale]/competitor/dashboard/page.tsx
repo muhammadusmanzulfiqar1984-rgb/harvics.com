@@ -48,19 +48,19 @@ export default function CompetitorDashboardPage() {
         <>
           {/* Summary Cards */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="bg-white rounded-lg border border-black200 p-6">
+            <div className="bg-white border border-black200 p-6">
               <h3 className="text-lg font-semibold text-white/90 mb-2">Total Products</h3>
               <p className="text-3xl font-bold text-white">{stats.totalProducts}</p>
             </div>
-            <div className="bg-white rounded-lg border border-black200 p-6">
+            <div className="bg-white border border-black200 p-6">
               <h3 className="text-lg font-semibold text-white/90 mb-2">Brands Tracked</h3>
               <p className="text-3xl font-bold text-white">{stats.byBrand.length}</p>
             </div>
-            <div className="bg-white rounded-lg border border-black200 p-6">
+            <div className="bg-white border border-black200 p-6">
               <h3 className="text-lg font-semibold text-white/90 mb-2">Countries</h3>
               <p className="text-3xl font-bold text-white">{stats.byCountry.length}</p>
             </div>
-            <div className="bg-white rounded-lg border border-black200 p-6">
+            <div className="bg-white border border-black200 p-6">
               <h3 className="text-lg font-semibold text-white/90 mb-2">Categories</h3>
               <p className="text-3xl font-bold text-white">{stats.byCategory.length}</p>
             </div>
@@ -69,7 +69,7 @@ export default function CompetitorDashboardPage() {
           {/* Charts */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* By Brand */}
-            <div className="bg-white rounded-lg border border-black200 p-6">
+            <div className="bg-white border border-black200 p-6">
               <h3 className="text-lg font-semibold text-white/90 mb-4">Products by Brand</h3>
               <div className="space-y-3">
                 {stats.byBrand.slice(0, 10).map((item, idx) => (
@@ -90,7 +90,7 @@ export default function CompetitorDashboardPage() {
             </div>
 
             {/* By Country */}
-            <div className="bg-white rounded-lg border border-black200 p-6">
+            <div className="bg-white border border-black200 p-6">
               <h3 className="text-lg font-semibold text-white/90 mb-4">Products by Country</h3>
               <div className="space-y-3">
                 {stats.byCountry.slice(0, 10).map((item, idx) => (
@@ -111,11 +111,11 @@ export default function CompetitorDashboardPage() {
             </div>
 
             {/* By Category */}
-            <div className="bg-white rounded-lg border border-black200 p-6 md:col-span-2">
+            <div className="bg-white border border-black200 p-6 md:col-span-2">
               <h3 className="text-lg font-semibold text-white/90 mb-4">Products by Category</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {stats.byCategory.map((item, idx) => (
-                  <div key={idx} className="text-center p-4 bg-white rounded-lg">
+                  <div key={idx} className="text-center p-4 bg-white">
                     <div className="text-2xl font-bold text-white">{item.count}</div>
                     <div className="text-sm text-white/90 mt-1">{item.category}</div>
                   </div>

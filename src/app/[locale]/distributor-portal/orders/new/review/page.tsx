@@ -38,7 +38,7 @@ export default function OrderReview() {
       </div>
 
       {/* Order Details */}
-      <div className="bg-white rounded-lg border border-black200 shadow-sm p-6">
+      <div className="bg-white border border-black200 shadow-sm p-6">
         <h2 className="text-lg font-bold text-[#C3A35E] mb-4">Order Information</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
@@ -59,7 +59,7 @@ export default function OrderReview() {
           </div>
           <div>
             <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-1">Delivery Address</label>
-            <select className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black">
+            <select className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black">
               <option>{order.deliveryAddress}</option>
             </select>
           </div>
@@ -71,7 +71,7 @@ export default function OrderReview() {
       </div>
 
       {/* Order Items Table */}
-      <div className="bg-white rounded-lg border border-black200 shadow-sm overflow-hidden">
+      <div className="bg-white border border-black200 shadow-sm overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-white">
@@ -116,16 +116,16 @@ export default function OrderReview() {
 
       {/* Actions */}
       <div className="flex space-x-4">
-        <button className="flex-1 bg-white text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+        <button className="flex-1 bg-white text-white px-8 py-3 font-semibold hover:opacity-90 transition-opacity">
           Submit Order
         </button>
         <Link
           href={`/${locale}/distributor-portal/orders/new`}
-          className="flex-1 bg-white text-[#C3A35E]/90 px-8 py-3 rounded-lg font-semibold hover:bg-white transition-colors text-center"
+          className="flex-1 bg-white text-[#C3A35E]/90 px-8 py-3 font-semibold hover:bg-white transition-colors text-center"
         >
           Back / Edit
         </Link>
-        <button className="flex-1 bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+        <button className="flex-1 bg-red-600 text-white px-8 py-3 font-semibold hover:opacity-90 transition-opacity">
           Cancel
         </button>
       </div>

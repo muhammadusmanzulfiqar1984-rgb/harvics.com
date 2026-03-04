@@ -178,9 +178,9 @@ export default function NewDistributorOrder() {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-bold text-[#C3A35E] mb-8">{t('title')}</h1>
 
-          <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow p-6">
+          <form onSubmit={handleSubmit} className="bg-white shadow p-6">
             {errors.submit && (
-              <div className="mb-6 bg-red-50 border border-red-200 rounded-lg p-4">
+              <div className="mb-6 bg-red-50 border border-red-200 p-4">
                 <p className="text-red-800">{errors.submit}</p>
               </div>
             )}
@@ -192,7 +192,7 @@ export default function NewDistributorOrder() {
                 <button
                   type="button"
                   onClick={addOrderItem}
-                  className="bg-white text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#5a0012] transition-colors"
+                  className="bg-white text-white px-4 py-2 font-semibold hover:bg-[#5a0012] transition-colors"
                 >
                   {t('addItem')}
                 </button>
@@ -207,7 +207,7 @@ export default function NewDistributorOrder() {
               ) : (
                 <div className="space-y-4">
                   {orderItems.map((item, index) => (
-                    <div key={index} className="border border-black200 rounded-lg p-4">
+                    <div key={index} className="border border-black200 p-4">
                       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                         <div>
                           <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
@@ -216,7 +216,7 @@ export default function NewDistributorOrder() {
                           <select
                             value={item.product_id}
                             onChange={(e) => updateOrderItem(index, 'product_id', e.target.value)}
-                            className="w-full border border-black300 rounded-lg px-4 py-2"
+                            className="w-full border border-black300 px-4 py-2"
                             required
                           >
                             <option value="">{t('selectProduct')}</option>
@@ -239,7 +239,7 @@ export default function NewDistributorOrder() {
                             min="1"
                             value={item.quantity}
                             onChange={(e) => updateOrderItem(index, 'quantity', parseInt(e.target.value) || 0)}
-                            className="w-full border border-black300 rounded-lg px-4 py-2"
+                            className="w-full border border-black300 px-4 py-2"
                             required
                           />
                           {errors[`item_${index}_quantity`] && (
@@ -256,7 +256,7 @@ export default function NewDistributorOrder() {
                             step="0.01"
                             value={item.unit_price}
                             onChange={(e) => updateOrderItem(index, 'unit_price', parseFloat(e.target.value) || 0)}
-                            className="w-full border border-black300 rounded-lg px-4 py-2"
+                            className="w-full border border-black300 px-4 py-2"
                             required
                           />
                           {errors[`item_${index}_price`] && (
@@ -267,7 +267,7 @@ export default function NewDistributorOrder() {
                           <button
                             type="button"
                             onClick={() => removeOrderItem(index)}
-                            className="w-full bg-red-100 text-red-800 px-4 py-2 rounded-lg font-semibold hover:bg-red-200 transition-colors"
+                            className="w-full bg-red-100 text-red-800 px-4 py-2 font-semibold hover:bg-red-200 transition-colors"
                           >
                             {t('remove')}
                           </button>
@@ -294,7 +294,7 @@ export default function NewDistributorOrder() {
                   type="date"
                   value={formData.delivery_date}
                   onChange={(e) => setFormData({ ...formData, delivery_date: e.target.value })}
-                  className="w-full border border-black300 rounded-lg px-4 py-2"
+                  className="w-full border border-black300 px-4 py-2"
                 />
                 {errors.delivery_date && (
                   <p className="text-red-600 text-xs mt-1">{errors.delivery_date}</p>
@@ -308,7 +308,7 @@ export default function NewDistributorOrder() {
                 <textarea
                   value={formData.delivery_address}
                   onChange={(e) => setFormData({ ...formData, delivery_address: e.target.value })}
-                  className="w-full border border-black300 rounded-lg px-4 py-2"
+                  className="w-full border border-black300 px-4 py-2"
                   rows={3}
                 />
               </div>
@@ -320,14 +320,14 @@ export default function NewDistributorOrder() {
                 <textarea
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  className="w-full border border-black300 rounded-lg px-4 py-2"
+                  className="w-full border border-black300 px-4 py-2"
                   rows={3}
                 />
               </div>
             </div>
 
             {/* Total */}
-            <div className="mb-6 p-4 bg-white rounded-lg">
+            <div className="mb-6 p-4 bg-white">
               <div className="flex justify-between items-center">
                 <span className="text-lg font-semibold text-[#C3A35E]/90">{t('totalAmount')}:</span>
                 <span className="text-2xl font-bold text-[#C3A35E]">
@@ -341,14 +341,14 @@ export default function NewDistributorOrder() {
               <button
                 type="submit"
                 disabled={loading}
-                className="flex-1 bg-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#5a0012] transition-colors disabled:opacity-50"
+                className="flex-1 bg-white text-white px-6 py-3 font-semibold hover:bg-[#5a0012] transition-colors disabled:opacity-50"
               >
                 {loading ? t('creatingOrder') : t('createOrder')}
               </button>
               <button
                 type="button"
                 onClick={() => router.push(`/${locale}/distributor/orders`)}
-                className="flex-1 bg-white text-[#C3A35E]/90 px-6 py-3 rounded-lg font-semibold hover:bg-white transition-colors"
+                className="flex-1 bg-white text-[#C3A35E]/90 px-6 py-3 font-semibold hover:bg-white transition-colors"
               >
                 {t('cancel')}
               </button>

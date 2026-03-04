@@ -40,10 +40,10 @@ export default function EmployeeLoginForm() {
   }
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-purple-200/50 dark:border-purple-800/50 p-6 sm:p-8">
+    <div className="bg-white dark:bg-gray-800 shadow-xl border border-purple-200/50 dark:border-purple-800/50 p-6 sm:p-8">
       <form onSubmit={handleSubmit} className="space-y-6">
         {error && (
-          <div className="p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+          <div className="p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
             <p className="text-harvics-red dark:text-harvics-red text-sm">{error}</p>
           </div>
         )}
@@ -59,7 +59,7 @@ export default function EmployeeLoginForm() {
             value={formData.username}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-3 border border-black300 dark:border-black600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white dark:bg-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300"
+            className="w-full px-4 py-3 border border-black300 dark:border-black600 focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white dark:bg-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300"
             placeholder={t('form.usernamePlaceholder')}
           />
         </div>
@@ -75,7 +75,7 @@ export default function EmployeeLoginForm() {
             value={formData.password}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-3 border border-black300 dark:border-black600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white dark:bg-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300"
+            className="w-full px-4 py-3 border border-black300 dark:border-black600 focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white dark:bg-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300"
             placeholder={t('form.passwordPlaceholder')}
           />
         </div>
@@ -96,7 +96,7 @@ export default function EmployeeLoginForm() {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+          className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold py-3 px-4 transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
         >
           {isLoading ? (
             <>
@@ -122,7 +122,7 @@ export default function EmployeeLoginForm() {
       </div>
 
       {/* Demo Credentials */}
-      <div className="mt-4 p-3 bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800 rounded-lg">
+      <div className="mt-4 p-3 bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800">
         <p className="text-xs text-purple-700 dark:text-purple-300 font-medium mb-1">Demo Credentials:</p>
         <p className="text-xs text-purple-600 dark:text-purple-400">Username: admin | Password: admin</p>
       </div>

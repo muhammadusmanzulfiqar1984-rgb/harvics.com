@@ -24,7 +24,7 @@ export default async function MediaContactsPage({ params }: MediaContactsPagePro
   const categories = getFolderBasedCategories()
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="fixed top-0 left-0 right-0 z-[1000] bg-white">
         <Header categories={categories} />
       </div>
@@ -44,7 +44,7 @@ export default async function MediaContactsPage({ params }: MediaContactsPagePro
 
         <section className="py-12 md:py-24 px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white border border-gray-100 rounded-xl p-8 shadow-sm">
+            <div className="bg-white border border-gray-100 p-8 shadow-sm">
               <h2 className="text-2xl font-serif font-bold text-[#6B1F2B] mb-6">Press Inquiries</h2>
               <div className="space-y-4">
                 <div>

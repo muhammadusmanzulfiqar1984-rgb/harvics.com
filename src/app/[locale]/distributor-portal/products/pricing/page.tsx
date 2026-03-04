@@ -21,24 +21,24 @@ export default function PriceLists() {
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold text-[#C3A35E]">Price Lists</h1>
         <div className="flex space-x-2">
-          <button className="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+          <button className="bg-green-600 text-white px-4 py-2 font-semibold hover:opacity-90 transition-opacity">
             Download Excel
           </button>
-          <button className="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+          <button className="bg-red-600 text-white px-4 py-2 font-semibold hover:opacity-90 transition-opacity">
             Download PDF
           </button>
         </div>
       </div>
 
       {/* Filters */}
-      <div className="bg-white p-4 rounded-lg border border-black200 shadow-sm">
+      <div className="bg-white p-4 border border-black200 shadow-sm">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Country</label>
             <select
               value={selectedCountry}
               onChange={(e) => setSelectedCountry(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
             >
               <option value="US">United States</option>
               <option value="PK">Pakistan</option>
@@ -50,7 +50,7 @@ export default function PriceLists() {
             <select
               value={selectedChannel}
               onChange={(e) => setSelectedChannel(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
             >
               <option value="All">All Channels</option>
               <option value="GT">GT</option>
@@ -62,7 +62,7 @@ export default function PriceLists() {
       </div>
 
       {/* Price List Table */}
-      <div className="bg-white rounded-lg border border-black200 shadow-sm overflow-hidden">
+      <div className="bg-white border border-black200 shadow-sm overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-white">

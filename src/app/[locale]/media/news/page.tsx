@@ -30,7 +30,7 @@ export default async function NewsPage({ params }: NewsPageProps) {
   ]
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="fixed top-0 left-0 right-0 z-[1000] bg-white shadow-sm">
         <Header categories={categories} />
       </div>
@@ -58,7 +58,7 @@ export default async function NewsPage({ params }: NewsPageProps) {
           <div className="max-w-4xl mx-auto">
             <div className="space-y-6">
               {newsItems.map((item, index) => (
-                <div key={index} className="bg-white border border-gray-100 rounded-xl p-8 shadow-md hover:shadow-lg transition-all group">
+                <div key={index} className="bg-white border border-gray-100 p-8 shadow-md hover:shadow-lg transition-all group">
                   <div className="text-sm text-gray-400 mb-2 font-medium tracking-wide">{new Date(item.date).toLocaleDateString()}</div>
                   <h3 className="text-xl font-medium text-[#6B1F2B] mb-3 group-hover:text-[#C3A35E] transition-colors font-serif">{item.title}</h3>
                   <p className="text-gray-600 leading-relaxed font-light">{item.excerpt}</p>

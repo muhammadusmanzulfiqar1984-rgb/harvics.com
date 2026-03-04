@@ -59,15 +59,15 @@ export default function SupplierPOsPage() {
 
           <SectionCard title="Tier 2: Main Modules" subtitle="Purchase order management capabilities">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📋 PO Processing</h4>
                 <p className="text-sm text-black mb-2">Receive, acknowledge, and process purchase orders</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📦 Fulfillment</h4>
                 <p className="text-sm text-black mb-2">Order fulfillment and delivery coordination</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📊 PO Analytics</h4>
                 <p className="text-sm text-black mb-2">Performance metrics and delivery tracking</p>
               </div>

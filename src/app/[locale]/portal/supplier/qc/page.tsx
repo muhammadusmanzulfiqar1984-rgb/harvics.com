@@ -59,15 +59,15 @@ export default function SupplierQCPage() {
 
           <SectionCard title="Tier 2: Main Modules" subtitle="Quality control capabilities">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">🔍 Inspection Management</h4>
                 <p className="text-sm text-black mb-2">Schedule and track quality inspections</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📋 Test Results</h4>
                 <p className="text-sm text-black mb-2">Record and track QC test results</p>
               </div>
-              <div className="p-4 border border-black200 rounded-lg">
+              <div className="p-4 border border-black200">
                 <h4 className="font-semibold text-black mb-2">📊 Quality Analytics</h4>
                 <p className="text-sm text-black mb-2">Quality metrics and trend analysis</p>
               </div>

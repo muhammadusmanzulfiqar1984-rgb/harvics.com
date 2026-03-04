@@ -30,13 +30,13 @@ export default function Documents() {
         <h1 className="text-2xl font-bold text-[#C3A35E]">Documents</h1>
         <button
           onClick={() => setShowUploadModal(true)}
-          className="bg-[#C3A35E] text-[#6B1F2B] px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+          className="bg-[#C3A35E] text-[#6B1F2B] px-6 py-2 font-semibold hover:opacity-90 transition-opacity"
         >
           Upload Document
         </button>
       </div>
 
-      <div className="bg-white rounded-lg border border-black200 shadow-sm overflow-hidden">
+      <div className="bg-white border border-black200 shadow-sm overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-white">
@@ -76,7 +76,7 @@ export default function Documents() {
       {/* Upload Modal */}
       {showUploadModal && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+          <div className="bg-white p-6 max-w-md w-full mx-4">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-xl font-bold text-[#C3A35E]">Upload Document</h2>
               <button
@@ -89,11 +89,11 @@ export default function Documents() {
             <form className="space-y-4">
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Document Name *</label>
-                <input type="text" className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black" required />
+                <input type="text" className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Type *</label>
-                <select className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black" required>
+                <select className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required>
                   <option value="">Select Type</option>
                   <option value="Contract">Contract</option>
                   <option value="License">License</option>
@@ -104,17 +104,17 @@ export default function Documents() {
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Expiry Date (Optional)</label>
-                <input type="date" className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black" />
+                <input type="date" className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Upload File *</label>
-                <input type="file" className="w-full px-4 py-2 border border-black300 rounded-lg focus:ring-2 focus:ring-black" required />
+                <input type="file" className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required />
               </div>
               <div className="flex space-x-4">
-                <button type="submit" className="flex-1 bg-[#C3A35E] text-[#6B1F2B] px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+                <button type="submit" className="flex-1 bg-[#C3A35E] text-[#6B1F2B] px-6 py-3 font-semibold hover:opacity-90 transition-opacity">
                   Upload
                 </button>
-                <button type="button" onClick={() => setShowUploadModal(false)} className="flex-1 bg-white text-[#C3A35E]/90 px-6 py-3 rounded-lg font-semibold hover:bg-white transition-colors">
+                <button type="button" onClick={() => setShowUploadModal(false)} className="flex-1 bg-white text-[#C3A35E]/90 px-6 py-3 font-semibold hover:bg-white transition-colors">
                   Cancel
                 </button>
               </div>

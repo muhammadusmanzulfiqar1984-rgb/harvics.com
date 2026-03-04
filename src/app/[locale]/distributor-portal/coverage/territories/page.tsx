@@ -20,13 +20,13 @@ export default function MyTerritories() {
         <h1 className="text-2xl font-bold text-[#C3A35E]">My Territories</h1>
         <Link
           href={`/${locale}/distributor-portal/coverage/request`}
-          className="bg-white text-white px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+          className="bg-white text-white px-6 py-2 font-semibold hover:opacity-90 transition-opacity"
         >
           Request Additional Territory
         </Link>
       </div>
 
-      <div className="bg-white rounded-lg border border-black200 shadow-sm overflow-hidden">
+      <div className="bg-white border border-black200 shadow-sm overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-white">

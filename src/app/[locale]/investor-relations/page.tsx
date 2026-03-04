@@ -10,6 +10,14 @@ import { getFolderBasedCategories } from '@/data/folderBasedProducts'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Investor Relations | Harvics',
+  description: 'Harvics investor information and shareholder resources.',
+}
+
+
 // Generate static params for all locales
 export async function generateStaticParams() {
   return [
@@ -86,7 +94,7 @@ export default function InvestorRelationsPage() {
         <InvestorRelationsTabs />
 
         {/* Stock Chart Section */}
-        <section className="py-12 md:py-16 bg-[#F8F9FA]">
+        <section className="py-12 md:py-16 bg-[#F5F1E8]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8 md:mb-12">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#6B1F2B] mb-4 md:mb-6 font-serif">
@@ -140,7 +148,7 @@ export default function InvestorRelationsPage() {
                   href="https://wa.me/447405527427?text=Hi%2C%20I%27m%20interested%20in%20investing%20in%20Harvics%20Foods%20using%20fiat%20currency.%20Please%20provide%20more%20information."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative px-8 md:px-10 py-4 md:py-5 bg-gradient-to-r from-green-600 to-green-700 text-white text-lg md:text-xl font-semibold rounded-2xl hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-green-500/30 flex items-center space-x-3 overflow-hidden border border-green-500/30"
+                  className="group relative px-8 md:px-10 py-4 md:py-5 bg-gradient-to-r from-green-600 to-green-700 text-white text-lg md:text-xl font-semibold hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-green-500/30 flex items-center space-x-3 overflow-hidden border border-green-500/30"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <span className="relative z-10 text-2xl">💵</span>
@@ -150,7 +158,7 @@ export default function InvestorRelationsPage() {
                   href="https://wa.me/447405527427?text=Hi%2C%20I%27m%20interested%20in%20investing%20in%20Harvics%20Foods%20using%20Bitcoin.%20Please%20provide%20more%20information%20about%20Bitcoin%20investment%20options."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative px-8 md:px-10 py-4 md:py-5 bg-gradient-to-r from-orange-600 to-orange-700 text-white text-lg md:text-xl font-semibold rounded-2xl hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-orange-500/30 flex items-center space-x-3 overflow-hidden border border-orange-500/30"
+                  className="group relative px-8 md:px-10 py-4 md:py-5 bg-gradient-to-r from-orange-600 to-orange-700 text-white text-lg md:text-xl font-semibold hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-orange-500/30 flex items-center space-x-3 overflow-hidden border border-orange-500/30"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <span className="relative z-10 text-2xl">₿</span>
@@ -162,7 +170,7 @@ export default function InvestorRelationsPage() {
         </section>
 
         {/* Investment Options Section - Premium Design */}
-        <section className="py-16 md:py-24 bg-[#F8F9FA] relative overflow-hidden">
+        <section className="py-16 md:py-24 bg-[#F5F1E8] relative overflow-hidden">
           {/* Background decorative elements */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#C3A35E] rounded-full blur-3xl"></div>
@@ -187,10 +195,10 @@ export default function InvestorRelationsPage() {
                 rel="noopener noreferrer"
                 className="group relative"
               >
-                <div className="absolute inset-0 bg-white rounded-3xl shadow-xl group-hover:shadow-2xl transition-all duration-500"></div>
-                <div className="relative p-10 md:p-12 rounded-3xl border border-gray-100 hover:border-green-500/30 transition-all duration-500 hover:scale-[1.02] bg-white">
+                <div className="absolute inset-0 bg-white shadow-xl group-hover:shadow-2xl transition-all duration-500"></div>
+                <div className="relative p-10 md:p-12 border border-gray-100 hover:border-green-500/30 transition-all duration-500 hover:scale-[1.02] bg-white">
                   <div className="text-center">
-                    <div className="inline-flex items-center justify-center w-24 h-24 rounded-3xl bg-green-50 mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                    <div className="inline-flex items-center justify-center w-24 h-24 bg-green-50 mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                       <span className="text-5xl">💵</span>
                     </div>
                     <h3 className="text-2xl md:text-3xl font-medium text-[#6B1F2B] mb-4 group-hover:text-green-700 transition-colors duration-300 font-serif">
@@ -200,7 +208,7 @@ export default function InvestorRelationsPage() {
                     <p className="text-gray-600 text-base md:text-lg mb-8 leading-relaxed font-light">
                       Invest using traditional fiat currencies including USD, EUR, GBP with secure banking methods.
                     </p>
-                    <div className="inline-block bg-green-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-green-700 transition-all duration-300 shadow-lg hover:shadow-green-500/30">
+                    <div className="inline-block bg-green-600 text-white px-8 py-4 font-semibold text-lg hover:bg-green-700 transition-all duration-300 shadow-lg hover:shadow-green-500/30">
                       Invest in Fiat
                     </div>
                   </div>
@@ -213,10 +221,10 @@ export default function InvestorRelationsPage() {
                 rel="noopener noreferrer"
                 className="group relative"
               >
-                <div className="absolute inset-0 bg-white rounded-3xl shadow-xl group-hover:shadow-2xl transition-all duration-500"></div>
-                <div className="relative p-10 md:p-12 rounded-3xl border border-gray-100 hover:border-orange-500/30 transition-all duration-500 hover:scale-[1.02] bg-white">
+                <div className="absolute inset-0 bg-white shadow-xl group-hover:shadow-2xl transition-all duration-500"></div>
+                <div className="relative p-10 md:p-12 border border-gray-100 hover:border-orange-500/30 transition-all duration-500 hover:scale-[1.02] bg-white">
                   <div className="text-center">
-                    <div className="inline-flex items-center justify-center w-24 h-24 rounded-3xl bg-orange-50 mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                    <div className="inline-flex items-center justify-center w-24 h-24 bg-orange-50 mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                       <span className="text-5xl">₿</span>
                     </div>
                     <h3 className="text-2xl md:text-3xl font-medium text-[#6B1F2B] mb-4 group-hover:text-orange-700 transition-colors duration-300 font-serif">
@@ -226,7 +234,7 @@ export default function InvestorRelationsPage() {
                     <p className="text-gray-600 text-base md:text-lg mb-8 leading-relaxed font-light">
                       Invest using Bitcoin with secure blockchain technology and instant global transactions.
                     </p>
-                    <div className="inline-block bg-orange-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-orange-700 transition-all duration-300 shadow-lg hover:shadow-orange-500/30">
+                    <div className="inline-block bg-orange-600 text-white px-8 py-4 font-semibold text-lg hover:bg-orange-700 transition-all duration-300 shadow-lg hover:shadow-orange-500/30">
                       Invest in Bitcoin
                     </div>
                   </div>
@@ -256,9 +264,9 @@ export default function InvestorRelationsPage() {
                   href={info.action}
                   className="group relative overflow-hidden"
                 >
-                  <div className="relative p-8 rounded-3xl bg-white border border-gray-100 hover:border-[#C3A35E]/30 transition-all duration-500 hover:scale-105 hover:shadow-xl group">
+                  <div className="relative p-8 bg-white border border-gray-100 hover:border-[#C3A35E]/30 transition-all duration-500 hover:scale-105 hover:shadow-xl group">
                     <div className="text-center">
-                      <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-[#6B1F2B]/5 mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                      <div className="inline-flex items-center justify-center w-20 h-20 bg-[#6B1F2B]/5 mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                         <span className="text-4xl">{info.icon}</span>
                       </div>
                       <h3 className="text-xl md:text-2xl font-medium text-[#6B1F2B] mb-3 group-hover:text-[#C3A35E] transition-colors duration-300 font-serif">
@@ -276,7 +284,7 @@ export default function InvestorRelationsPage() {
         </section>
 
         {/* Contact Form Section */}
-        <section className="py-12 md:py-16 bg-[#F8F9FA]">
+        <section className="py-12 md:py-16 bg-[#F5F1E8]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8 md:mb-12">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#6B1F2B] mb-4 md:mb-6 font-serif">
@@ -310,9 +318,9 @@ export default function InvestorRelationsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
               {/* Financial Performance Card */}
               <div className="group relative">
-                <div className="relative p-8 md:p-10 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#C3A35E] transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#C3A35E]/10">
+                <div className="relative p-8 md:p-10 bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#C3A35E] transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#C3A35E]/10">
                   <div className="flex items-start space-x-6 mb-6">
-                    <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-[#C3A35E] text-[#6B1F2B] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="flex-shrink-0 w-16 h-16 bg-[#C3A35E] text-[#6B1F2B] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                       </svg>
@@ -332,9 +340,9 @@ export default function InvestorRelationsPage() {
 
               {/* Investment Opportunities Card */}
               <div className="group relative">
-                <div className="relative p-8 md:p-10 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#C3A35E] transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#C3A35E]/10">
+                <div className="relative p-8 md:p-10 bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#C3A35E] transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#C3A35E]/10">
                   <div className="flex items-start space-x-6 mb-6">
-                    <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-[#C3A35E] text-[#6B1F2B] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="flex-shrink-0 w-16 h-16 bg-[#C3A35E] text-[#6B1F2B] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                       </svg>
@@ -354,9 +362,9 @@ export default function InvestorRelationsPage() {
 
               {/* Global Presence Card */}
               <div className="group relative">
-                <div className="relative p-8 md:p-10 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#C3A35E] transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#C3A35E]/10">
+                <div className="relative p-8 md:p-10 bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#C3A35E] transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#C3A35E]/10">
                   <div className="flex items-start space-x-6 mb-6">
-                    <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-[#C3A35E] text-[#6B1F2B] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="flex-shrink-0 w-16 h-16 bg-[#C3A35E] text-[#6B1F2B] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
@@ -376,9 +384,9 @@ export default function InvestorRelationsPage() {
 
               {/* Strategic Partnerships Card */}
               <div className="group relative">
-                <div className="relative p-8 md:p-10 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#C3A35E] transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#C3A35E]/10">
+                <div className="relative p-8 md:p-10 bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#C3A35E] transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#C3A35E]/10">
                   <div className="flex items-start space-x-6 mb-6">
-                    <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-[#C3A35E] text-[#6B1F2B] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="flex-shrink-0 w-16 h-16 bg-[#C3A35E] text-[#6B1F2B] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                       </svg>

@@ -58,7 +58,7 @@ export default function SupplierAnalytics() {
   ]
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-[#F5F1E8]">
       <div className="pt-20">
         {/* Hero Section */}
         <section className="py-12 md:py-16 px-4 md:px-6 bg-[#6B1F2B]">
@@ -77,26 +77,26 @@ export default function SupplierAnalytics() {
         <div className="max-w-7xl mx-auto py-12 md:py-16 px-4 md:px-6">
               {/* Key Metrics */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
-                <div className="bg-white p-4 md:p-6 rounded-xl border border-gray-100 shadow-sm">
+                <div className="bg-white p-4 md:p-6 border border-gray-100 shadow-sm">
                   <div className="text-2xl md:text-3xl font-bold text-[#6B1F2B] mb-2">
                     {formatCurrencyShort(15400000)}
                   </div>
                   <div className="text-sm md:text-base text-gray-500">Total Revenue</div>
                   <div className="text-xs text-green-600 mt-1">↗ +25% from last month</div>
                 </div>
-                <div className="bg-white p-4 md:p-6 rounded-xl border border-gray-100 shadow-sm">
+                <div className="bg-white p-4 md:p-6 border border-gray-100 shadow-sm">
                   <div className="text-2xl md:text-3xl font-bold text-[#6B1F2B] mb-2">285</div>
                   <div className="text-sm md:text-base text-gray-500">Total Orders</div>
                   <div className="text-xs text-green-600 mt-1">↗ +18% from last month</div>
                 </div>
-                <div className="bg-white p-4 md:p-6 rounded-xl border border-gray-100 shadow-sm">
+                <div className="bg-white p-4 md:p-6 border border-gray-100 shadow-sm">
                   <div className="text-2xl md:text-3xl font-bold text-[#6B1F2B] mb-2">
                     {formatCurrency(54035)}
                   </div>
                   <div className="text-sm md:text-base text-gray-500">Avg Order Value</div>
                   <div className="text-xs text-green-600 mt-1">↗ +12% from last month</div>
                 </div>
-                <div className="bg-white p-4 md:p-6 rounded-xl border border-gray-100 shadow-sm">
+                <div className="bg-white p-4 md:p-6 border border-gray-100 shadow-sm">
                   <div className="text-2xl md:text-3xl font-bold text-[#6B1F2B] mb-2">96%</div>
                   <div className="text-sm md:text-base text-gray-500">Order Fulfillment</div>
                   <div className="text-xs text-green-600 mt-1">↗ +2% from last month</div>
@@ -105,7 +105,7 @@ export default function SupplierAnalytics() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
             {/* Revenue Trend Chart */}
-            <div className="bg-white p-6 md:p-8 rounded-xl border border-gray-100 shadow-sm">
+            <div className="bg-white p-6 md:p-8 border border-gray-100 shadow-sm">
               <h2 className="text-xl md:text-2xl font-serif font-bold text-[#6B1F2B] mb-6">
                 Revenue Trend (Last 6 Months)
               </h2>
@@ -128,7 +128,7 @@ export default function SupplierAnalytics() {
             </div>
 
             {/* Product Categories Pie Chart */}
-            <div className="bg-white p-6 md:p-8 rounded-xl border border-gray-100 shadow-sm">
+            <div className="bg-white p-6 md:p-8 border border-gray-100 shadow-sm">
               <h2 className="text-xl md:text-2xl font-serif font-bold text-[#6B1F2B] mb-6">
                 Revenue by Product Category
               </h2>
@@ -160,13 +160,13 @@ export default function SupplierAnalytics() {
             </div>
 
             {/* Top Distributors */}
-            <div className="bg-white p-6 md:p-8 rounded-xl border border-gray-100 shadow-sm">
+            <div className="bg-white p-6 md:p-8 border border-gray-100 shadow-sm">
               <h2 className="text-xl md:text-2xl font-serif font-bold text-[#6B1F2B] mb-6">
                 Top Distributors
               </h2>
               <div className="space-y-4">
                 {topDistributors.map((distributor, index) => (
-                  <div key={distributor.name} className="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+                  <div key={distributor.name} className="flex items-center justify-between p-4 bg-gray-50 border border-gray-100">
                     <div className="flex items-center space-x-3">
                       <div className="w-8 h-8 text-white bg-[#6B1F2B] rounded-full flex items-center justify-center text-sm font-bold">
                         {index + 1}
@@ -188,13 +188,13 @@ export default function SupplierAnalytics() {
             </div>
 
             {/* Regional Performance */}
-            <div className="bg-white p-6 md:p-8 rounded-xl border border-gray-100 shadow-sm">
+            <div className="bg-white p-6 md:p-8 border border-gray-100 shadow-sm">
               <h2 className="text-xl md:text-2xl font-serif font-bold text-[#6B1F2B] mb-6">
                 Regional Performance
               </h2>
               <div className="space-y-4">
                 {regionPerformance.map((region, index) => (
-                  <div key={region.region} className="p-4 bg-gray-50 rounded-xl border border-gray-100">
+                  <div key={region.region} className="p-4 bg-gray-50 border border-gray-100">
                     <div className="flex justify-between items-center mb-2">
                       <span className="font-semibold text-gray-900">{region.region}</span>
                       <span className="text-sm text-green-600 font-medium">+{region.growth}%</span>
