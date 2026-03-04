@@ -89,6 +89,53 @@ Kids page: `/en/kids` — Sourcing page: `/en/sourcing` — both live and routab
 
 ---
 
+## ⚠️ CRITICAL FINDING — EnterpriseCRM.tsx (March 4, 2026)
+
+**File:** `src/components/shared/EnterpriseCRM.tsx`
+**Size:** 6,431 lines — ONE SINGLE FILE
+**Status:** GOD COMPONENT — contains the ENTIRE OS, not just CRM
+
+### What's Wrong
+
+This file is not a CRM. It renders **16 separate domains** via tab switching inside one component:
+
+| Tab key | What it renders | Where it SHOULD live |
+|---|---|---|
+| `overview` | KPI cards, charts | `/os/overview` or company dashboard |
+| `orders` | Order tables, revenue | `/os/orders-sales` |
+| `inventory` | Stock tables, values | `/os/inventory` |
+| `logistics` | Routes, deliveries, fleet | `/os/logistics` |
+| `finance` | Revenue, P&L, accounting | `/os/finance` |
+| `crm` | Customers, pipeline | `/os/crm` (actual CRM) |
+| `hr` | Employees, payroll | `/os/hr` |
+| `executive` | Exec dashboard, risk | `/os/executive` |
+| `investor` | Investor relations, StockChart | `/os/investor` |
+| `legal-ipr` | Legal, compliance | `/os/legal` |
+| `competitor` | Competitor intel | `/os/competitor` |
+| `import-export` | Trade docs, HS codes | `/os/import-export` |
+| `gps-tracking` | GPS, world map | `/os/gps-tracking` |
+| `localization` | Language, currency | Settings |
+| `workflows` | Workflow engine steps | `/os/workflows` |
+| `admin` | AdminPanel | Admin settings |
+
+### Design Violations
+
+- **406** rounded corners (`rounded-lg`, `rounded-full`) — SUPREME uses `borderRadius: 0`
+- **752** non-SUPREME colors (`bg-indigo`, `bg-purple`, `bg-green`, `text-white`, `text-black`)
+- **354** correct SUPREME colors — so ~68% of the styling is WRONG
+- Imports `InteractiveWorldMap`, `AdminPanel`, `StockTicker`, `StockChart`, `InvestorRelationsForm` — none belong in a "CRM"
+- Hardcoded demo data generators inline (`getDemoDomainDataForRole`, `getGlobalAggregateData`, etc.)
+
+### Who Uses It
+
+Every portal page (`/portal/[persona]/crm/page.tsx`, `/admin/portal/[persona]/crm/page.tsx`, and others) renders `<EnterpriseCRM persona={...} />` — so all dashboards route through this one file.
+
+### What Needs to Happen (NOT done yet)
+
+This is the **U-1 task** — decompose this file into separate domain components. Each tab's content should become its own standalone component under `src/components/domains/`. The file should NOT be modified without explicit owner approval — it is load-bearing for the entire OS right now.
+
+---
+
 ## Project Overview
 - **Project:** HARVICS Website / HARVICS OS — Harvics Global Ventures, Dubai UAE (Since 2019)
 - **Description:** Localized corporate website & multi-portal distributor system for FMCG company
