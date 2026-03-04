@@ -1,16 +1,9 @@
-import { getTranslations } from 'next-intl/server'
-import { getFolderBasedCategories } from '@/data/folderBasedProducts'
+import Link from 'next/link'
+import type { Metadata } from 'next'
 
-export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ar' },
-    { locale: 'fr' },
-    { locale: 'es' },
-    { locale: 'de' },
-    { locale: 'zh' },
-    { locale: 'he' }
-  ]
+export const metadata: Metadata = {
+  title: 'Our History | Harvics',
+  description: 'From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics journey.',
 }
 
 interface HistoryPageProps {
@@ -19,58 +12,77 @@ interface HistoryPageProps {
 
 export default async function HistoryPage({ params }: HistoryPageProps) {
   const { locale } = await params
-  const categories = getFolderBasedCategories()
 
   const milestones = [
-    { year: '2019', title: 'Company Founded', description: 'Harvics Global Ventures was established with a vision to deliver premium consumer goods worldwide' },
-    { year: '2020', title: 'First International Expansion', description: 'Expanded operations to 10 countries across Europe and Middle East' },
-    { year: '2021', title: 'Product Line Expansion', description: 'Launched 5 new product categories including beverages and frozen foods' },
-    { year: '2022', title: 'Digital Transformation', description: 'Launched e-commerce platform and digital customer portals' },
-    { year: '2023', title: 'Sustainability Initiative', description: 'Committed to carbon-neutral operations and sustainable sourcing' },
-    { year: '2024', title: '40+ Countries', description: 'Reached milestone of operating in 40+ countries worldwide' }
+    { year: '2019', title: 'Founded in Dubai', description: 'Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.', highlight: 'Year One' },
+    { year: '2020', title: 'First International Expansion', description: 'Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.', highlight: '10 Countries' },
+    { year: '2021', title: 'Multi-Vertical Expansion', description: 'Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.', highlight: '5 New Verticals' },
+    { year: '2022', title: 'Digital Transformation', description: 'Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.', highlight: 'Harvics OS v1' },
+    { year: '2023', title: 'Sustainability & Scale', description: 'Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.', highlight: '30+ Countries' },
+    { year: '2024', title: 'Global Enterprise', description: 'Surpassed 40+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.', highlight: '40+ Countries' },
+    { year: '2025', title: 'AI-First Operating System', description: 'Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.', highlight: 'Harvics OS v2' },
+    { year: '2026', title: 'The Vision Ahead', description: 'Scaling to 60+ countries. Building the world\'s first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.', highlight: '60+ Target' },
   ]
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
-      <div className="pt-20">
-        <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
-          {/* Decorative Elements */}
-          <div className="absolute inset-0">
-             <div className="absolute top-0 left-0 w-full h-full bg-[url('/patterns/grid.svg')] opacity-10"></div>
-             <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
-             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
-          </div>
-          
-          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-white mb-6">
-              Our History
-            </h1>
-            <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto font-light leading-relaxed">
-              A journey of growth, innovation, and excellence since 2019
-            </p>
-          </div>
-        </section>
+    <main className="min-h-screen bg-[#F5F1E8]">
+      {/* Hero */}
+      <section className="bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40">
+        <div className="max-w-[1200px] mx-auto text-center">
+          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">Since 2019</div>
+          <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
+            Our Journey
+          </h1>
+          <p className="text-lg text-white/60 max-w-[700px] mx-auto leading-relaxed">
+            From a Dubai startup to a global enterprise spanning 40+ countries, 10 industry verticals, and 38 languages.
+          </p>
+        </div>
+      </section>
 
-        <section className="relative px-4 pb-20 -mt-20 z-20">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 md:p-12">
-              <div className="space-y-12 relative before:absolute before:inset-0 before:ml-10 before:h-full before:w-0.5 before:-translate-x-px before:bg-gradient-to-b before:from-[#6B1F2B] before:via-gray-200 before:to-gray-200 md:before:mx-auto md:before:translate-x-0">
-                {milestones.map((milestone, index) => (
-                  <div key={index} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                    <div className="flex items-center justify-center w-20 h-20 rounded-full border-4 border-white bg-[#6B1F2B] text-[#C3A35E] shadow-xl shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 font-serif font-medium text-lg z-10 relative">
-                      {milestone.year}
-                    </div>
-                    <div className="w-[calc(100%-6rem)] md:w-[calc(50%-5rem)] p-6 bg-gray-50 border border-gray-100 rounded-xl hover:border-[#6B1F2B]/30 hover:shadow-lg transition-all duration-300">
-                      <h3 className="text-xl font-serif font-medium text-gray-900 mb-2">{milestone.title}</h3>
-                      <p className="text-gray-600 leading-relaxed text-sm">{milestone.description}</p>
-                    </div>
+      {/* Timeline */}
+      <section className="max-w-[900px] mx-auto px-4 py-16">
+        <div className="relative">
+          {/* Vertical line */}
+          <div className="absolute left-[39px] top-0 bottom-0 w-[2px] bg-[#C3A35E]/20" />
+
+          <div className="space-y-8">
+            {milestones.map((m, idx) => (
+              <div key={m.year} className="relative flex gap-6">
+                {/* Year circle */}
+                <div className="flex-shrink-0 w-20 h-20 bg-[#6B1F2B] border-2 border-[#C3A35E]/40 flex items-center justify-center z-10" style={{ borderRadius: 0 }}>
+                  <span className="text-[#C3A35E] font-bold text-sm">{m.year}</span>
+                </div>
+
+                {/* Content card */}
+                <div className="flex-1 bg-white border border-[#C3A35E]/20 p-6 hover:border-[#C3A35E] transition-colors" style={{ borderRadius: 0, boxShadow: 'none' }}>
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-lg font-semibold text-[#6B1F2B]">{m.title}</h3>
+                    <span className="text-xs font-bold text-[#C3A35E] bg-[#C3A35E]/10 px-3 py-1" style={{ borderRadius: 0 }}>{m.highlight}</span>
                   </div>
-                ))}
+                  <p className="text-sm text-[#6B1F2B]/60 leading-relaxed">{m.description}</p>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-[#6B1F2B] border-t border-[#C3A35E]/30">
+        <div className="max-w-[1200px] mx-auto px-4 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">Be Part of the Next Chapter</h3>
+            <p className="text-white/50 text-sm">Join us as we scale to 60+ countries and build the future of AI-driven global commerce.</p>
+          </div>
+          <Link
+            href={`/${locale}/careers`}
+            className="px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors"
+            style={{ borderRadius: 0 }}
+          >
+            View Careers
+          </Link>
+        </div>
+      </section>
     </main>
   )
 }
