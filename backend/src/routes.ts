@@ -21,6 +21,17 @@ import { buildLocalisationPayload, listCountryProfiles } from './modules/localis
 
 import { HarvicsAlphaEngine } from './services/harvicsAlphaEngine';
 
+// CRUD Controllers (Domain WRITE + full CRUD)
+import ordersCrudRouter from './modules/orders/orders.crud.controller';
+import inventoryCrudRouter from './modules/inventory/inventory.crud.controller';
+import financeCrudRouter from './modules/finance/finance.crud.controller';
+import crmCrudRouter from './modules/crm/crm.crud.controller';
+import hrCrudRouter from './modules/hr/hr.crud.controller';
+import logisticsCrudRouter from './modules/logistics/logistics.crud.controller';
+import procurementCrudRouter from './modules/procurement/procurement.crud.controller';
+import intelligenceRouter from './modules/intelligence/intelligence.controller';
+import servicesRouter from './modules/services/services.controller';
+
 const router = Router();
 
 // Health check endpoint for /api/health
@@ -188,5 +199,20 @@ router.use('/products', productsRouter);
 router.use('/navigation', navigationRouter);
 // Territory/Geographic hierarchy routes (public - no auth required for geographic data)
 router.use('/territory', territoryRouter);
+
+// ── DOMAIN CRUD ROUTES ──────────────────────────────────────────────
+router.use('/orders', ordersCrudRouter);
+router.use('/inventory', inventoryCrudRouter);
+router.use('/finance', financeCrudRouter);
+router.use('/crm', crmCrudRouter);
+router.use('/hr', hrCrudRouter);
+router.use('/logistics', logisticsCrudRouter);
+router.use('/procurement-crud', procurementCrudRouter);
+
+// ── AI INTELLIGENCE ROUTES ──────────────────────────────────────────
+router.use('/intelligence', intelligenceRouter);
+
+// ── EXPOSED SERVICES (weather, currency, map, approvals, events) ─────
+router.use('/services', servicesRouter);
 
 export default router;

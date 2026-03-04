@@ -3,8 +3,24 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getSubcategoryProducts, getVerticalProducts, getProductImage } from '@/data/productCatalog'
 import { getCategoryDescription } from '@/data/verticalDescriptions'
+import type { Metadata } from 'next'
 
 const VALID_VERTICALS = navVerticals.map((v) => v.key)
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; vertical: string; category: string }>
+}): Promise<Metadata> {
+  const { vertical, category } = await params
+  const verticalData = navVerticals.find((v) => v.key === vertical)
+  const block = verticalData?.blocks.find((b) => slugify(b.title) === category)
+  const catDesc = getCategoryDescription(vertical, category)
+  return {
+    title: `${block?.title || category} — ${verticalData?.label || vertical} | Harvics`,
+    description: catDesc?.description || `Explore Harvics ${block?.title || category} solutions across global markets.`,
+  }
+}
 
 export default async function CategoryPage({
   params,
@@ -30,7 +46,18 @@ export default async function CategoryPage({
 
   return (
     <main className="min-h-screen bg-[#F5F1E8]">
-      {/* Header */}
+      {/* Breadcrumbs */}
+      <div className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
+        <div className="max-w-[1200px] mx-auto px-4 py-3 flex items-center gap-2 text-sm text-white/60">
+          <Link href={`/${locale}`} className="hover:text-[#C3A35E] transition-colors">Home</Link>
+          <span className="text-white/30">›</span>
+          <Link href={`/${locale}/${vertical}`} className="hover:text-[#C3A35E] transition-colors">{verticalData.label}</Link>
+          <span className="text-white/30">›</span>
+          <span className="text-[#C3A35E] font-medium">{block.title}</span>
+        </div>
+      </div>
+
+      {/* Hero */}
       <section className="bg-[#6B1F2B] py-16 px-4 border-b border-[#C3A35E]/40">
         <div className="max-w-[1200px] mx-auto">
           <div className="text-center">
@@ -45,13 +72,6 @@ export default async function CategoryPage({
                 {catDesc.description}
               </p>
             )}
-            <div className="mt-3 text-xs text-white/40">
-              <Link href={`/${locale}`} className="hover:text-white/60">Home</Link>
-              <span className="mx-2">›</span>
-              <Link href={`/${locale}/${vertical}`} className="hover:text-white/60">{verticalData.label}</Link>
-              <span className="mx-2">›</span>
-              <span className="text-[#C3A35E]">{block.title}</span>
-            </div>
           </div>
           {/* Highlights */}
           {catDesc && catDesc.highlights.length > 0 && (
@@ -106,6 +126,32 @@ export default async function CategoryPage({
           </div>
         )}
       </div>
+
+      {/* CTA Banner */}
+      <section className="bg-[#6B1F2B] border-t border-[#C3A35E]/30">
+        <div className="max-w-[1200px] mx-auto px-4 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">Need {block.title} Solutions?</h3>
+            <p className="text-white/50 text-sm">Contact our sourcing team for competitive quotes and global supply.</p>
+          </div>
+          <div className="flex gap-3">
+            <Link
+              href={`/${locale}/contact`}
+              className="px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors"
+              style={{ borderRadius: 0 }}
+            >
+              Get a Quote
+            </Link>
+            <Link
+              href={`/${locale}/${vertical}`}
+              className="px-8 py-3 border border-[#C3A35E]/40 text-[#C3A35E] text-sm font-medium hover:border-[#C3A35E] transition-colors"
+              style={{ borderRadius: 0 }}
+            >
+              ← Back to {verticalData.label}
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
