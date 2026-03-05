@@ -4,6 +4,315 @@
 
 ---
 
+## 🚨 NEXT AGENT OPERATIONS MANUAL — March 5, 2026
+
+**Created by:** GitHub Copilot (Claude Opus 4.6)
+**Date:** March 5, 2026, ~10:00 AM GMT
+**Purpose:** Step-by-step instructions for completing the system
+
+---
+
+### ⚠️ CRITICAL: OS vs CRM — THEY ARE DIFFERENT (FOR NOW)
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  RIGHT NOW: TWO SEPARATE SYSTEMS                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│   OS PAGES                    ENTERPRISE CRM                │
+│   /os/finance                 EnterpriseCRM.tsx (6,431 ln)  │
+│   /os/crm                     ├─ Finance tab                │
+│   /os/hr                      ├─ CRM tab                    │
+│   /os/orders                  ├─ HR tab                     │
+│   /os/logistics               ├─ Orders tab                 │
+│   /os/inventory               ├─ Logistics tab              │
+│   (35 pages, mostly empty)    └─ (all domains)              │
+│                                                             │
+│   These are THIN SHELLS       This is the REAL SYSTEM       │
+│   with hardcoded data         with actual functionality     │
+│                                                             │
+├─────────────────────────────────────────────────────────────┤
+│  FUTURE: UNIFIED SYSTEM                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│   When unified: OS routes → EnterpriseCRM tabs              │
+│   /os/finance renders EnterpriseCRM?tab=finance             │
+│   One system, accessed from different URLs                  │
+│                                                             │
+│   DO NOT UNIFY YET — First complete the tasks below         │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 📋 PHASE 1: PEOPLE-FACING (Do First — ~8 hours total)
+
+#### TASK 1.1: Wire OS Dashboard Stats to Backend APIs (2-3 hrs)
+
+**What:** OS pages show hardcoded "0" or fake numbers. Connect them to real backend APIs.
+
+**Files to modify:**
+```
+src/app/[locale]/os/orders/page.tsx     → fetch /api/orders
+src/app/[locale]/os/inventory/page.tsx  → fetch /api/inventory
+src/app/[locale]/os/finance/page.tsx    → fetch /api/finance/summary
+src/app/[locale]/os/crm/page.tsx        → fetch /api/crm/summary
+src/app/[locale]/os/hr/page.tsx         → fetch /api/hr/summary
+src/app/[locale]/os/logistics/page.tsx  → fetch /api/logistics/summary
+```
+
+**Backend endpoints (already working on port 4000):**
+```
+GET http://localhost:4000/api/orders              → {total: 6, data: [...]}
+GET http://localhost:4000/api/inventory           → {total: 5, data: [...]}
+GET http://localhost:4000/api/finance/summary     → {totalReceivable: 63500, ...}
+GET http://localhost:4000/api/crm/summary         → {totalCustomers: 4, ...}
+GET http://localhost:4000/api/hr/summary          → {totalEmployees: 5, ...}
+GET http://localhost:4000/api/logistics/summary   → {totalRoutes: 3, ...}
+```
+
+**Pattern to use:**
+```tsx
+'use client';
+import { useState, useEffect } from 'react';
+
+export default function OrdersPage() {
+  const [data, setData] = useState({ total: 0, data: [] });
+  
+  useEffect(() => {
+    fetch('http://localhost:4000/api/orders')
+      .then(r => r.json())
+      .then(setData)
+      .catch(console.error);
+  }, []);
+  
+  return (
+    <div>
+      <h1>Orders: {data.total}</h1>
+      {/* render data.data */}
+    </div>
+  );
+}
+```
+
+**Verification:** Page shows "Orders: 6" instead of "Orders: 0"
+
+---
+
+#### TASK 1.2: Fill Empty Tier 3 Screens (3-4 hrs)
+
+**What:** Many OS sub-pages are empty shells. Add tables and stat cards.
+
+**Priority order (highest impact first):**
+1. `/os/orders` — Add orders table with columns: Customer, City, Amount, Status
+2. `/os/inventory` — Add inventory table: SKU, Description, On Hand, Min Stock, Low Stock badge
+3. `/os/finance` — Add summary cards: AR, Collections, Overdue count + invoices table
+4. `/os/crm` — Add customer table + leads table
+5. `/os/logistics` — Add routes table with status badges
+
+**Data source:** Same APIs from Task 1.1
+
+**Table component pattern:**
+```tsx
+<table style={{ width: '100%', borderCollapse: 'collapse' }}>
+  <thead>
+    <tr style={{ background: '#6B1F2B', color: 'white' }}>
+      <th style={{ padding: '12px', textAlign: 'left' }}>Customer</th>
+      <th>Amount</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {data.data.map(order => (
+      <tr key={order.id} style={{ borderBottom: '1px solid #ddd' }}>
+        <td style={{ padding: '12px' }}>{order.customer}</td>
+        <td>${order.amount.toLocaleString()}</td>
+        <td>{order.status}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+```
+
+---
+
+#### TASK 1.3: Make CRUD Buttons Functional (2 hrs)
+
+**What:** "Create Order", "Add Customer", "New Invoice" buttons exist but do nothing.
+
+**Files with buttons to wire:**
+```
+src/components/os-domains/OrdersModule.tsx
+src/components/os-domains/InventoryModule.tsx
+src/components/os-domains/FinanceModule.tsx
+src/components/os-domains/CRMModule.tsx
+```
+
+**Backend endpoints (already working):**
+```
+POST /api/orders         → create order
+POST /api/inventory      → add inventory item
+POST /api/finance/invoices → create invoice
+POST /api/crm/customers  → add customer
+POST /api/crm/leads      → add lead
+```
+
+**Pattern:**
+```tsx
+const handleCreateOrder = async () => {
+  const response = await fetch('http://localhost:4000/api/orders', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      customer: 'New Customer',
+      items: [{ sku: 'DEMO-001', qty: 10 }],
+      amount: 5000,
+      city: 'Dubai'
+    })
+  });
+  const result = await response.json();
+  if (result.success) {
+    // Refresh data or show success message
+  }
+};
+```
+
+---
+
+#### TASK 1.4: Add AI Copilot to OS Dashboard (1 hr)
+
+**What:** Add a chat widget where users can ask "How many orders today?"
+
+**Backend endpoint (already working):**
+```
+POST http://localhost:4000/api/intelligence/copilot/chat
+Body: { "message": "how many orders?" }
+Response: { "response": "You have 6 orders. 3 pending. Total: $218K" }
+```
+
+**Where to add:** Create a floating chat widget component
+
+**File to create:** `src/components/os-domains/AICopilotWidget.tsx`
+
+**Add to:** OS layout or individual OS pages
+
+---
+
+### 📋 PHASE 2: TECHNICAL (Do After — ~6 hours total)
+
+#### TASK 2.1: Add Auth Middleware to CRUD Routes (1 hr)
+
+**What:** Currently all `/api/orders`, `/api/inventory`, etc. are PUBLIC. Anyone can create/delete.
+
+**File to modify:** `backend/src/routes.ts`
+
+**Pattern:**
+```typescript
+// Before (CURRENT - INSECURE):
+router.use('/orders', ordersCrudRouter);
+
+// After (SECURE):
+router.use('/orders', requireAuthScope, ordersCrudRouter);
+```
+
+**Existing middleware:** `requireAuthScope` already exists at `backend/src/middleware/authScope.ts`
+
+---
+
+#### TASK 2.2: Connect PostgreSQL (2-3 hrs)
+
+**What:** Replace in-memory `dataStore.ts` with real PostgreSQL
+
+**Current:** `backend/src/core/dataStore.ts` — uses `Map()` in memory
+
+**Steps:**
+1. Add `pg` package: `npm install pg @types/pg`
+2. Create `backend/src/core/database.ts` with connection pool
+3. Modify each store method to use SQL queries instead of Map
+4. Add `.env` with `DATABASE_URL`
+
+**Not blocking for demos** — in-memory works fine
+
+---
+
+#### TASK 2.3: Real LLM Copilot (2 hrs)
+
+**What:** Replace keyword matching with real OpenAI/Claude API
+
+**Current:** `backend/src/modules/intelligence/intelligence.controller.ts` line 164-190
+
+**Current logic:**
+```typescript
+if (msg.includes('order')) { response = 'You have X orders...'; }
+```
+
+**Replace with:**
+```typescript
+const completion = await openai.chat.completions.create({
+  model: 'gpt-4',
+  messages: [
+    { role: 'system', content: 'You are Harvics OS assistant...' },
+    { role: 'user', content: message }
+  ]
+});
+```
+
+**Requires:** OpenAI API key in `.env`
+
+---
+
+#### TASK 2.4: WebSocket Real-time (1 hr)
+
+**What:** When order created, dashboard updates live without refresh
+
+**Current:** Event bus fires events but frontend doesn't listen
+
+**Hook exists:** `src/hooks/useAlphaEngine.ts` — needs Socket.io connection
+
+---
+
+### 🚫 DO NOT TOUCH (WORKING CORRECTLY)
+
+```
+Layer 1 (Public Website) — 100% DONE
+├── Homepage
+├── All 10 verticals  
+├── All 131+ product pages
+├── About, Contact, Careers, etc.
+└── SUPREME design applied
+
+Backend CRUD — WORKING
+├── /api/orders (6 orders seeded)
+├── /api/inventory (5 items seeded)
+├── /api/finance/* (3 invoices seeded)
+├── /api/crm/* (4 customers, 3 leads seeded)
+├── /api/hr/* (5 employees seeded)
+├── /api/logistics/* (3 routes seeded)
+└── Cross-domain event bus
+
+EnterpriseCRM.tsx — DO NOT DECOMPOSE
+└── This is the unified system, leave it intact
+```
+
+---
+
+### 🎯 SUCCESS CRITERIA
+
+After completing Phase 1:
+- [ ] OS dashboard pages show real numbers from backend
+- [ ] Tables display actual data (orders, inventory, customers)
+- [ ] Create/Add buttons actually create records
+- [ ] AI chat responds with real business data
+
+After completing Phase 2:
+- [ ] CRUD routes require authentication
+- [ ] Data persists after server restart (PostgreSQL)
+- [ ] AI copilot gives intelligent responses (LLM)
+- [ ] Dashboard updates in real-time (WebSocket)
+
+---
+
 ## FINAL SESSION REPORT — March 5, 2026 (Site Recovery & Architecture Corrections)
 
 **Agent:** GitHub Copilot (Claude Sonnet 4)
