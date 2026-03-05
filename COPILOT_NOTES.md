@@ -4,6 +4,51 @@
 
 ---
 
+## INTERVAL AUDIT — March 5, 2026 (Third-Party Review)
+
+**Auditor:** GitHub Copilot (Claude Opus 4.6) — Independent Review
+**Date:** March 5, 2026
+**Time:** ~9:30 AM GMT
+**Type:** Priority Assessment & Recommendations
+**Context:** Demo/build scenario — no live production data
+
+---
+
+### PRIORITY SPLIT: PEOPLE-FACING vs TECHNICAL
+
+#### 1️⃣ PEOPLE-FACING (What Users See) — DO FIRST
+
+| Priority | Task | Why | Time |
+|----------|------|-----|------|
+| **P1** | **Wire OS Dashboards to Backend** | Dashboards show fake hardcoded numbers. Connect to working APIs so users see real data ("5 orders, $218K revenue") | 2-3 hrs |
+| **P2** | **Fill Empty Tier 3 Screens** | Many OS pages are empty shells. Add tables, charts, action buttons | 3-4 hrs |
+| **P3** | **Make CRUD Buttons Work** | "Create Order", "Add Customer", "Approve PO" buttons exist but do nothing. Wire to POST endpoints | 2 hrs |
+| **P4** | **Live AI Copilot in Dashboard** | Add chat widget to OS dashboards. "How many orders?" → real answer from backend | 1 hr |
+
+**Result:** User logs in → sees real data → clicks working buttons → chats with AI about "their" business.
+
+#### 2️⃣ BACKEND/TECHNICAL — DO AFTER
+
+| Priority | Task | Why | Time |
+|----------|------|-----|------|
+| **P1** | **Add Auth Middleware** | Not urgent for demos, needed before real users | 1 hr |
+| **P2** | **PostgreSQL Connection** | In-memory fine for demos. Only need for persistence | 2-3 hrs |
+| **P3** | **Real LLM Copilot** | Keyword matching works for demos. Real AI needs API key + cost | 2 hrs |
+| **P4** | **WebSocket Real-time** | Nice for live updates, not blocking | 1 hr |
+
+---
+
+### RECOMMENDATION
+
+**Focus 100% on People-Facing first.**
+
+The backend works — APIs return real data. The problem is frontend dashboards aren't connected. Fix that, and OS goes from "empty screens" to "working enterprise software" in a few hours.
+
+**Total estimated time for People-Facing: 8-10 hours**
+**Total estimated time for Technical: 6-7 hours**
+
+---
+
 ## SESSION LOG — March 5, 2026 (Layer 3 Independent Audit)
 
 **Agent:** GitHub Copilot (Claude Opus 4.6)
