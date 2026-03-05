@@ -76,14 +76,13 @@ export default async function LeadershipPage({ params }: LeadershipPageProps) {
               className="bg-white border border-[#C3A35E]/20 overflow-hidden group"
               style={{ borderRadius: 0, boxShadow: 'none' }}
             >
-              <div className="h-[280px] bg-[#6B1F2B]/5 overflow-hidden">
+              <div className="h-[280px] bg-[#6B1F2B]/5 overflow-hidden" style={{ backgroundImage: 'url(/Images/logo.png)', backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={leader.image}
                   alt={leader.name}
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
-                  onError={(e) => { (e.target as HTMLImageElement).src = '/Images/logo.png' }}
                 />
               </div>
               <div className="p-6">

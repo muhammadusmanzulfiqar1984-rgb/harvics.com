@@ -86,14 +86,13 @@ export default async function ItemPage({
         <div className="bg-white border border-[#C3A35E]/20 p-10" style={{ borderRadius: 0, boxShadow: 'none' }}>
           <div className="flex flex-col md:flex-row gap-8">
             {/* Product image */}
-            <div className="w-full md:w-[300px] h-[250px] bg-[#F5F1E8] border border-[#C3A35E]/20 flex-shrink-0 overflow-hidden" style={{ borderRadius: 0 }}>
+            <div className="w-full md:w-[300px] h-[250px] bg-[#F5F1E8] border border-[#C3A35E]/20 flex-shrink-0 overflow-hidden" style={{ borderRadius: 0, backgroundImage: 'url(/Images/logo.png)', backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={getProductImage(matchedItem.toLowerCase())}
                 alt={matchedItem}
                 className="w-full h-full object-cover"
                 loading="lazy"
-                onError={(e) => { (e.target as HTMLImageElement).src = '/Images/logo.png' }}
               />
             </div>
 

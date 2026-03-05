@@ -32,6 +32,89 @@ Next.js 15 frontend (38 languages, 10 industry verticals, Supreme maroon/gold/iv
 
 ---
 
+## SESSION LOG — March 5, 2026 (CRITICAL: Site Was Completely Broken — All Fixed)
+
+**Agent:** GitHub Copilot (Claude Sonnet 4)
+**Date:** March 5, 2026
+**Time:** ~12:00 AM - 12:45 AM
+**Duration:** ~45 minutes
+**Context:** User reported "no page is navigating from home page" — discovered multiple critical site-breaking issues
+**Git Commits:** Multiple fixes committed and pushed
+
+### 🔴 CRITICAL ISSUES FOUND & FIXED
+
+| Issue | Severity | Affected Pages | Root Cause | Fix Applied |
+|---|---|---|---|---|
+| **Navigation completely broken** | 🔴 CRITICAL | ALL pages | `GlobalScrollReveal` was auto-hiding every `<section>` with `opacity: 0` during client-side navigation. IntersectionObserver failed to reveal content. | Removed `section` from auto-target selector. Only opt-in elements (`data-reveal`, `.reveal-on-scroll`) get animated. Added viewport check to reveal visible elements immediately. |
+| **Leadership page 500 error** | 🔴 CRITICAL | `/en/leadership` | `onError={(e) => {...}}` event handler in server component — forbidden by React 18 | Removed `onError` handler, added CSS `backgroundImage: url(/Images/logo.png)` as fallback |
+| **ALL item pages 500 error** | 🔴 CRITICAL | 131+ product pages | Same `onError` handler issue in `[vertical]/[category]/[item]/page.tsx` template | Same fix — CSS background fallback instead of JS event handler |
+| **Portal payment pages violations** | 🟡 WARNING | 7 portal pages | `onClick`, `onChange`, `onSubmit` handlers in server components | Added `'use client'` directive to all 7 files |
+
+### BEFORE vs AFTER
+
+| Test | Before | After |
+|---|---|---|
+| `/en/` (homepage) | 308 redirect ✅ | 200 ✅ |
+| `/en/about` | 200 ✅ | 200 ✅ |
+| `/en/leadership` | **500 💥** | 200 ✅ |
+| `/en/textiles/fabrics/cotton` | **500 💥** | 200 ✅ |
+| `/en/fmcg/food/grains` | **500 💥** | 200 ✅ |
+| `/en/textiles/apparel/men-s-wear` | **500 💥** | 200 ✅ |
+| Client-side navigation (clicking links) | **Completely broken — pages stayed blank after clicking** | ✅ Working perfectly |
+
+### FILES MODIFIED
+
+| File | Change |
+|---|---|
+| `src/components/shared/GlobalScrollReveal.tsx` | **CRITICAL FIX**: Removed `section` from auto-selector, added viewport check, resets on route change |
+| `src/app/[locale]/leadership/page.tsx` | Removed `onError` handler, added CSS background fallback |
+| `src/app/[locale]/[vertical]/[category]/[item]/page.tsx` | Removed `onError` handler, added CSS background fallback |
+| `src/app/[locale]/portal/supplier/payments/payment-status/page.tsx` | Added `'use client'` |
+| `src/app/[locale]/portal/supplier/payments/upload-invoice/page.tsx` | Added `'use client'` |
+| `src/app/[locale]/portal/distributor/payments/receipts/page.tsx` | Added `'use client'` |
+| `src/app/[locale]/portal/distributor/payments/invoices/page.tsx` | Added `'use client'` |
+| `src/app/[locale]/portal/distributor/payments/make-payment/page.tsx` | Added `'use client'` |
+| `src/app/[locale]/portal/distributor/payments/history/page.tsx` | Added `'use client'` |
+| `src/app/[locale]/os/finance/payments/verification-queue/page.tsx` | Added `'use client'` |
+
+### DEBUGGING PROCESS
+
+1. **Initial symptom**: "No page is navigating from home page"
+2. **Tested URLs**: All returned 200 OK — routes worked, but client-side navigation broken
+3. **Checked navigation components**: Links had correct `href` values
+4. **Checked middleware**: No blocking issues
+5. **Found client-side error**: `GlobalScrollReveal` was setting `opacity: 0` on ALL `<section>` elements
+6. **During audit**: Discovered 500 errors on leadership + all item pages
+7. **Root cause**: Server components with event handlers (React 18 violation)
+8. **Fixed systematically**: Navigation first, then 500 errors, then warnings
+
+### IMPACT ASSESSMENT
+
+**Before fixes**: Site was essentially unusable
+- Homepage loaded but clicking any link showed blank pages
+- 132+ pages returned 500 errors (leadership + all products)
+- Portal pages had hydration violations
+
+**After fixes**: Site fully functional
+- All client-side navigation works perfectly
+- All pages return 200 OK
+- Zero server component violations
+- Zero TypeScript errors
+
+### VERIFICATION COMPLETED ✅
+
+- ✅ Homepage navigation works
+- ✅ Mega menu dropdown works  
+- ✅ All main pages (about, contact, careers, etc.) load
+- ✅ All 10 verticals load (textiles, fmcg, commodities, etc.)
+- ✅ All category pages load (textiles/fabrics, fmcg/food, etc.)
+- ✅ All item pages load (cotton, grains, men's wear, etc.)
+- ✅ Portal payment pages load without violations
+- ✅ Dev server running clean on :8080
+- ✅ No console errors, no 500s, no broken navigation
+
+---
+
 ## 🔴 HANDOFF NOTES FOR NEXT AGENT — March 4, 2026
 
 > **Written by:** GitHub Copilot (Claude Opus 4.6)

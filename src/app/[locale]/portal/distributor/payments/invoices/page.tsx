@@ -1,3 +1,5 @@
+'use client'
+
 /**
  * Distributor Portal - Invoices Page
  * View and manage invoices

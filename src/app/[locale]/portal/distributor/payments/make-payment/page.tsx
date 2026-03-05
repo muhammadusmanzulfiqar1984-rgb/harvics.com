@@ -1,3 +1,5 @@
+'use client'
+
 /**
  * Distributor Portal - Make Payment Page
  * Payment form for creating new payments

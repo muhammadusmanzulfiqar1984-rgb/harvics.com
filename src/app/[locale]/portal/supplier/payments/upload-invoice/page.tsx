@@ -1,3 +1,5 @@
+'use client'
+
 /**
  * Supplier Portal - Upload Invoice Page
  * Suppliers upload invoices for approval

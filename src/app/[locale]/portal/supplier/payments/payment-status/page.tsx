@@ -1,3 +1,5 @@
+'use client'
+
 /**
  * Supplier Portal - Payment Status Page
  * Track invoice payment status

@@ -1,3 +1,5 @@
+'use client'
+
 /**
  * Distributor Portal - Payment History Page
  * View all payment transactions

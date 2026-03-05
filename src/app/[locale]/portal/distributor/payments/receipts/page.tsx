@@ -1,3 +1,5 @@
+'use client'
+
 /**
  * Distributor Portal - Receipts Page
  * View and download payment receipts

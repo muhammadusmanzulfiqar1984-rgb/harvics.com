@@ -1,3 +1,5 @@
+'use client'
+
 /**
  * Finance OS - Payment Verification Queue
  * Manual verification of payments requiring verification
