@@ -1,0 +1,34 @@
+<svg width="400" height="80" viewBox="0 0 400 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- HARVICS Full Logo: H Mark + Wordmark -->
+  
+  <!-- H Icon -->
+  <rect x="10" y="16" width="8" height="48" fill="#6B1F2B"/>
+  <rect x="50" y="16" width="8" height="48" fill="#6B1F2B"/>
+  <rect x="18" y="36" width="32" height="8" fill="#C3A35E"/>
+  
+  <!-- Wordmark -->
+  <g transform="translate(80, 0)">
+    <path d="M20 16V64M20 16H28V64H20M60 16V64M60 16H68V64H60M28 36H60M28 36V44H60V36" fill="#6B1F2B"/>
+    
+    <!-- A -->
+    <path d="M95 64L105 16H115L125 64H117L115 54H105L103 64H95ZM106 46H114L110 26L106 46Z" fill="#6B1F2B"/>
+    
+    <!-- R -->
+    <path d="M135 16H150C157 16 162 21 162 30C162 35 160 38 157 41L165 64H156L149 43H143V64H135V16ZM143 34H149C152 34 154 32 154 30C154 27 152 25 149 25H143V34Z" fill="#6B1F2B"/>
+    
+    <!-- V -->
+    <path d="M175 16H183L195 50L207 16H215L199 64H191L175 16Z" fill="#6B1F2B"/>
+    
+    <!-- I -->
+    <path d="M230 16H238V64H230V16Z" fill="#6B1F2B"/>
+    
+    <!-- C -->
+    <path d="M255 25V55C260 55 265 48 265 40C265 32 260 25 255 25ZM247 16H255C265 16 273 25 273 40C273 55 265 64 255 64H247V16Z" fill="#6B1F2B"/>
+    
+    <!-- S -->
+    <path d="M290 25C295 25 298 28 298 32H306C306 24 300 16 290 16C280 16 274 24 274 32C274 40 278 43 286 46C292 47 294 49 294 53C294 57 292 60 288 60C283 60 280 56 280 52H272C272 60 278 68 288 68C298 68 304 60 304 53C304 45 300 42 292 39C286 38 284 36 284 32C284 28 286 25 290 25Z" fill="#6B1F2B"/>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="10" y="72" width="380" height="2" fill="#C3A35E"/>
+</svg>

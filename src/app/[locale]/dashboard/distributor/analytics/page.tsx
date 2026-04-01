@@ -37,7 +37,7 @@ export default function DistributorAnalytics() {
 
   if (loading) {
     return (
-      <div className="flex h-screen items-center justify-center bg-[#F5F1E8]">
+      <div className="flex h-screen items-center justify-center bg-white">
         <div className="text-center">
           <div className="mb-4 h-12 w-12 animate-spin rounded-full border-4 border-solid border-[#6B1F2B] border-t-transparent"></div>
           <p className="text-lg font-semibold text-[#6B1F2B]">
@@ -50,7 +50,7 @@ export default function DistributorAnalytics() {
 
   if (error) {
     return (
-      <div className="flex h-screen items-center justify-center bg-[#F5F1E8]">
+      <div className="flex h-screen items-center justify-center bg-white">
         <div className="text-center">
           <h2 className="mb-4 text-2xl font-bold text-red-600">
             Error Loading Data
@@ -63,7 +63,7 @@ export default function DistributorAnalytics() {
 
   if (!overview) {
     return (
-      <div className="flex h-screen items-center justify-center bg-[#F5F1E8]">
+      <div className="flex h-screen items-center justify-center bg-white">
         <div className="text-center">
           <h2 className="mb-4 text-2xl font-bold text-[#6B1F2B]">
             No Data Available
@@ -88,7 +88,7 @@ export default function DistributorAnalytics() {
   } = overview
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen bg-gray-100">
       <div className="pt-20">
         {/* Hero Section */}
         <section className="h-[300px] relative bg-[#6B1F2B] overflow-hidden">
@@ -203,7 +203,7 @@ export default function DistributorAnalytics() {
                     <div className="w-12 text-sm font-bold text-[#6B1F2B]/70">
                       {item.month}
                     </div>
-                    <div className="flex-1 bg-[#F5F1E8] rounded-full h-3 relative overflow-hidden border border-[#C3A35E]/20">
+                    <div className="flex-1 bg-white rounded-full h-3 relative overflow-hidden border border-[#C3A35E]/20">
                       <div
                         className="bg-[#6B1F2B] h-3 rounded-full transition-all duration-1000 group-hover:bg-[#50000b]"
                         style={{
@@ -252,7 +252,7 @@ export default function DistributorAnalytics() {
                           {category.value}%
                         </span>
                       </div>
-                      <div className="w-full bg-[#F5F1E8] rounded-full h-2 border border-[#C3A35E]/20">
+                      <div className="w-full bg-white rounded-full h-2 border border-[#C3A35E]/20">
                         <div
                           className="h-2 rounded-full transition-all duration-1000"
                           style={{
@@ -279,7 +279,7 @@ export default function DistributorAnalytics() {
                 {topCustomers.map((customer, index) => (
                   <div
                     key={customer.name}
-                    className="flex items-center justify-between p-4 bg-[#F5F1E8] border border-[#C3A35E]/20 hover:border-[#C3A35E] transition-all duration-300"
+                    className="flex items-center justify-between p-4 bg-white border border-[#C3A35E]/20 hover:border-[#C3A35E] transition-all duration-300"
                   >
                     <div className="flex items-center space-x-4">
                       <div className="w-10 h-10 text-white bg-[#6B1F2B] rounded-full flex items-center justify-center text-sm font-bold shadow-md border border-[#C3A35E]">
@@ -317,7 +317,7 @@ export default function DistributorAnalytics() {
                 {regionPerformance.map((region, index) => (
                   <div
                     key={region.region}
-                    className="p-5 bg-[#F5F1E8] border border-[#C3A35E]/20 hover:border-[#C3A35E] hover:shadow-md transition-all duration-300"
+                    className="p-5 bg-white border border-[#C3A35E]/20 hover:border-[#C3A35E] hover:shadow-md transition-all duration-300"
                   >
                     <div className="flex justify-between items-center mb-3">
                       <span className="font-bold text-[#6B1F2B]">

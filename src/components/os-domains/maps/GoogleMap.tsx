@@ -65,7 +65,7 @@ export default function GoogleMapComponent({
     return (
       <div className="flex items-center justify-center h-full bg-white">
         <div className="text-center p-4">
-          <p className="text-red-600 font-semibold">Error loading Google Maps</p>
+          <p className="text-[#1D1D1F] font-semibold">Error loading Google Maps</p>
           <p className="text-sm text-black mt-2">
             {loadError.message || 'Please check your API key configuration'}
           </p>

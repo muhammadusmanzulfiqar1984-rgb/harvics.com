@@ -98,7 +98,7 @@ export default async function AdminPortalHubPage({
   ]
 
   return (
-    <div className="min-h-screen bg-[#F5F1E8]">
+    <div className="min-h-screen bg-white">
       <div className="bg-[#6B1F2B] bg-[url('/Images/noise.png')] pt-24 pb-32 relative overflow-hidden">
         {/* Abstract Background Shapes */}
         <div className="absolute inset-0 opacity-20">

@@ -31,7 +31,7 @@ export default function ProductCatalogue() {
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
             >
               <option value="All">{t('allCategories')}</option>
               <option value="Confectionery">{t('confectionery')}</option>
@@ -44,7 +44,7 @@ export default function ProductCatalogue() {
             <select
               value={selectedCountry}
               onChange={(e) => setSelectedCountry(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
             >
               <option value="All">{tCommon('allCountries')}</option>
               <option value="US">United States</option>
@@ -57,7 +57,7 @@ export default function ProductCatalogue() {
             <select
               value={selectedChannel}
               onChange={(e) => setSelectedChannel(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
             >
               <option value="All">{t('allChannels')}</option>
               <option value="GT">{t('gt')}</option>

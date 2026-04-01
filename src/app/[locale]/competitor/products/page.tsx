@@ -102,7 +102,7 @@ export default function CompetitorProductsPage() {
                   type="text"
                   value={formData.brand}
                   onChange={(e) => setFormData({ ...formData, brand: e.target.value })}
-                  className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                   required
                 />
               </div>
@@ -112,7 +112,7 @@ export default function CompetitorProductsPage() {
                   type="text"
                   value={formData.sku_name}
                   onChange={(e) => setFormData({ ...formData, sku_name: e.target.value })}
-                  className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                   required
                 />
               </div>
@@ -122,7 +122,7 @@ export default function CompetitorProductsPage() {
                   type="text"
                   value={formData.category}
                   onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                  className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                 />
               </div>
               <div>
@@ -131,7 +131,7 @@ export default function CompetitorProductsPage() {
                   type="text"
                   value={formData.size}
                   onChange={(e) => setFormData({ ...formData, size: e.target.value })}
-                  className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                 />
               </div>
               <div>
@@ -141,7 +141,7 @@ export default function CompetitorProductsPage() {
                   step="0.01"
                   value={formData.price}
                   onChange={(e) => setFormData({ ...formData, price: e.target.value })}
-                  className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                 />
               </div>
               <div>
@@ -149,7 +149,7 @@ export default function CompetitorProductsPage() {
                 <select
                   value={formData.currency}
                   onChange={(e) => setFormData({ ...formData, currency: e.target.value })}
-                  className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                 >
                   <option value="USD">USD</option>
                   <option value="EUR">EUR</option>
@@ -164,7 +164,7 @@ export default function CompetitorProductsPage() {
                   type="text"
                   value={formData.country}
                   onChange={(e) => setFormData({ ...formData, country: e.target.value })}
-                  className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                   required
                 />
               </div>
@@ -173,7 +173,7 @@ export default function CompetitorProductsPage() {
               <button
                 type="button"
                 onClick={() => setShowForm(false)}
-                className="px-4 py-2 border border-black300 hover:bg-white"
+                className="px-4 py-2 border border-gray-200 hover:bg-white"
               >
                 Cancel
               </button>

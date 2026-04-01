@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "bg",
+    "language": "Bulgarian",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Bulgarian. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Bulgarian",
+      "translation": "Добре дошли в"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Харуич"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Bulgarian",
+      "translation": "Превъзходство в първокласните потребителски стоки от 2019 г."
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Bulgarian",
+      "translation": "Водеща световна компания за потребителски стоки, доставяща първокласни хранителни продукти в различни категории с международни стандарти за качество."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Bulgarian",
+      "translation": "Разгледайте продуктите"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Bulgarian",
+      "translation": "Свържете се с нас"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Bulgarian",
+      "translation": "Научете повече"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Bulgarian",
+      "translation": "Превъзходство в първокласните потребителски стоки от"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Bulgarian",
+      "translation": "2019 г."
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Bulgarian",
+      "translation": "Лондон • Милано • Ню Йорк"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Bulgarian",
+      "translation": "Пекарна"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Bulgarian",
+      "translation": "Напитки"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Bulgarian",
+      "translation": "Сладкарски изделия"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Bulgarian",
+      "translation": "Кулинарен"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Bulgarian",
+      "translation": "Замразени храни"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Bulgarian",
+      "translation": "Паста"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Bulgarian",
+      "translation": "Закуски"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Bulgarian",
+      "translation": "Доклад за ESG 2025 г."
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Bulgarian",
+      "translation": "Лондон • Милано • Ню Йорк"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Bulgarian",
+      "translation": "Дом"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Bulgarian",
+      "translation": "Относно"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Bulgarian",
+      "translation": "За нас"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Bulgarian",
+      "translation": "История на марката"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Bulgarian",
+      "translation": "Продукти"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Bulgarian",
+      "translation": "Нашите продукти"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Bulgarian",
+      "translation": "Вижте всички продукти"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Bulgarian",
+      "translation": "КСО"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Bulgarian",
+      "translation": "Връзки с инвеститорите"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Bulgarian",
+      "translation": "Инвеститори"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Bulgarian",
+      "translation": "Медии"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Bulgarian",
+      "translation": "Свържете се с нас"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Bulgarian",
+      "translation": "Къща Харвикс"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Bulgarian",
+      "translation": "Държави"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Bulgarian",
+      "translation": "Портали"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Bulgarian",
+      "translation": "Вход"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Bulgarian",
+      "translation": "Списък с желания"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Bulgarian",
+      "translation": "Пазарска количка"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Bulgarian",
+      "translation": "Помощ"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Bulgarian",
+      "translation": "Намерете магазин"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Bulgarian",
+      "translation": "Пари"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Bulgarian",
+      "translation": "Продажби"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Bulgarian",
+      "translation": "Оферти"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Bulgarian",
+      "translation": "Тъмен режим"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Bulgarian",
+      "translation": "Кредитна карта"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Bulgarian",
+      "translation": "Кредитна карта с награди M&S"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Bulgarian",
+      "translation": "Клубни награди"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Bulgarian",
+      "translation": "Нашите кредитни карти"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Bulgarian",
+      "translation": "Застраховка"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Bulgarian",
+      "translation": "Застраховка на дома"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Bulgarian",
+      "translation": "Застраховка за пътуване"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Bulgarian",
+      "translation": "Туристически услуги"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Bulgarian",
+      "translation": "Пари за пътуване"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Bulgarian",
+      "translation": "Валутни курсове"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Bulgarian",
+      "translation": "Допълнителни услуги"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Bulgarian",
+      "translation": "Спестявания и инвестиции"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Bulgarian",
+      "translation": "Лични заеми"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Bulgarian",
+      "translation": "Финансова подкрепа"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Bulgarian",
+      "translation": "Текущи продажби"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Bulgarian",
+      "translation": "Разпродажба"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Bulgarian",
+      "translation": "Сезонни разпродажби"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Bulgarian",
+      "translation": "Специални оферти"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Bulgarian",
+      "translation": "Промоции"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Bulgarian",
+      "translation": "Отстъпки за групови поръчки"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Bulgarian",
+      "translation": "Нашите продукти"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Bulgarian",
+      "translation": "Вижте всички продукти"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Bulgarian",
+      "translation": "Нашите продуктови категории"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Bulgarian",
+      "translation": "Открийте нашата първокласна гама от продукти, изработени с грижа и прецизност."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Bulgarian",
+      "translation": "Ниво 1: Категории"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Bulgarian",
+      "translation": "Ниво 2: Модули"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Bulgarian",
+      "translation": "Ниво 3: Екрани за ключови показатели за ефективност (KPI)"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Bulgarian",
+      "translation": "Ниво 4: Действия"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Bulgarian",
+      "translation": "Нулиране на навигацията"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Bulgarian",
+      "translation": "Няма налични подкатегории за тази категория."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Bulgarian",
+      "translation": "Продукти"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Bulgarian",
+      "translation": "Подкатегории"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Bulgarian",
+      "translation": "Пекарна"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Bulgarian",
+      "translation": "Прясно изпечени изделия и сладкиши."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Bulgarian",
+      "translation": "Напитки"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Bulgarian",
+      "translation": "Освежаващи напитки за всеки повод."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Bulgarian",
+      "translation": "Сладкарски изделия"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Bulgarian",
+      "translation": "Сладки лакомства и удоволствия."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Bulgarian",
+      "translation": "Кулинарен"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Bulgarian",
+      "translation": "Необходими съставки за вашата кухня."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Bulgarian",
+      "translation": "Замразени храни"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Bulgarian",
+      "translation": "Удобни и вкусни замразени ястия."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Bulgarian",
+      "translation": "Паста"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Bulgarian",
+      "translation": "Автентични сортове паста."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Bulgarian",
+      "translation": "Закуски"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Bulgarian",
+      "translation": "Вкусни закуски за всяко време на деня."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "За Харвикс"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Bulgarian",
+      "translation": "Превъзходство в първокласните потребителски стоки от 2019 г."
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Bulgarian",
+      "translation": "Нашата история"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Bulgarian",
+      "translation": "Основана през 2019 г., Harvics се разрасна от визионерска идея до световен лидер в производството на първокласни потребителски стоки. Нашето пътуване се определя от неуморно преследване на качество и ангажимент към иновациите."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Bulgarian",
+      "translation": "Ние работим в над 40 държави, предлагайки продукти, които обогатяват живота и поставят нови стандарти в индустрията. От скромното ни начало до глобалното ни присъствие, нашите ценности остават непроменени."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Bulgarian",
+      "translation": "Оценка 2019 г."
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Bulgarian",
+      "translation": "40+ държави"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Bulgarian",
+      "translation": "6 продуктови линии"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Bulgarian",
+      "translation": "Корпоративна социална отговорност"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Bulgarian",
+      "translation": "В Harvics сме ангажирани с това да оказваме положително въздействие върху света. Нашите инициативи за корпоративна социална отговорност (КСО) са фокусирани върху устойчивостта, овластяването на общността и етичните бизнес практики."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Bulgarian",
+      "translation": "Години на въздействие"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Bulgarian",
+      "translation": "Достигнати страни"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Bulgarian",
+      "translation": "Докоснати животи"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Bulgarian",
+      "translation": "Нашите ключови инициативи"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Bulgarian",
+      "translation": "Ние се фокусираме върху четири основни стълба, за да стимулираме устойчива промяна и да създаваме споделена стойност за всички заинтересовани страни."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Bulgarian",
+      "translation": "Устойчивост"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Bulgarian",
+      "translation": "Намаляване на екологичния ни отпечатък чрез възобновяема енергия и намаляване на отпадъците."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Bulgarian",
+      "translation": "Възобновяема енергия"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Bulgarian",
+      "translation": "Отклонени отпадъци"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Bulgarian",
+      "translation": "Намаляване на въглеродните емисии"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Bulgarian",
+      "translation": "Подкрепа на общността"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Bulgarian",
+      "translation": "Овластяване на местните общности чрез образование, здравеопазване и икономическо развитие."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Bulgarian",
+      "translation": "Подкрепени семейства"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Bulgarian",
+      "translation": "Активни програми"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Bulgarian",
+      "translation": "Доброволци"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Bulgarian",
+      "translation": "Образование"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Bulgarian",
+      "translation": "Осигуряване на достъп до качествено образование и стипендии за ученици в неравностойно положение."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Bulgarian",
+      "translation": "Стипендии"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Bulgarian",
+      "translation": "Училища-партньори"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Bulgarian",
+      "translation": "Засегнати студенти"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Bulgarian",
+      "translation": "Здраве и уелнес"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Bulgarian",
+      "translation": "Подобряване на достъпа до здравеопазване и хранене в недостатъчно обслужвани региони."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Bulgarian",
+      "translation": "Здравни кампании"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Bulgarian",
+      "translation": "Обслужени хора"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Bulgarian",
+      "translation": "Мобилни клиники"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Bulgarian",
+      "translation": "Най-добра инициатива за корпоративна социална отговорност (КСО)"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Bulgarian",
+      "translation": "Отличени за нашия иновативен подход към социалната отговорност."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Bulgarian",
+      "translation": "Шампион на общността"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Bulgarian",
+      "translation": "Наградена за нашите обширни програми за работа с общността."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Bulgarian",
+      "translation": "Награда за глобална устойчивост"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Bulgarian",
+      "translation": "Признати за нашия ангажимент към въглеродна неутралност."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Bulgarian",
+      "translation": "Нашето въздействие"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Bulgarian",
+      "translation": "Признавайки нашите важни етапи в създаването на по-добър свят."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Bulgarian",
+      "translation": "Присъединете се към нас, за да направим промяната"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Bulgarian",
+      "translation": "Станете наш партньор или научете повече за това как изграждаме устойчиво бъдеще."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Bulgarian",
+      "translation": "Свържете се с екипа за корпоративна социална отговорност"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Bulgarian",
+      "translation": "Научете повече"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Bulgarian",
+      "translation": "Свържете се с нас"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Bulgarian",
+      "translation": "Ще се радваме да чуем от вас. Свържете се с нас чрез някой от тези канали."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Bulgarian",
+      "translation": "Телефон"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Bulgarian",
+      "translation": "Имейл"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Bulgarian",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Bulgarian",
+      "translation": "Обадете се сега"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Bulgarian",
+      "translation": "Изпрати имейл"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Bulgarian",
+      "translation": "Изпратете ни съобщение"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Bulgarian",
+      "translation": "Медиен център"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Медиен център | Харвикс"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Bulgarian",
+      "translation": "Прессъобщения, материали за марката и последните новини от Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Bulgarian",
+      "translation": "Корпоративни"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Bulgarian",
+      "translation": "Новини и прессъобщения"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Bulgarian",
+      "translation": "Последни съобщения, разширяване на пазара, пускане на продукти и корпоративни актуализации от Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Bulgarian",
+      "translation": "Прочетете последните новини"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Bulgarian",
+      "translation": "Галерия с изображения"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Bulgarian",
+      "translation": "Висококачествени материали за марка, продуктови фотографии, изображения на съоръжения и отразяване на събития за медийно използване."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Bulgarian",
+      "translation": "Разгледайте галерията"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Bulgarian",
+      "translation": "Контакти за медии"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Bulgarian",
+      "translation": "Свържете се с нашия екип по комуникации за запитвания от пресата, заявки за интервюта и обяви за партньорства."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Bulgarian",
+      "translation": "Свържете се с екипа за пресата"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Bulgarian",
+      "translation": "Покрити пазари"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Bulgarian",
+      "translation": "Вертикални индустрии"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Bulgarian",
+      "translation": "Основана в Дубай"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Bulgarian",
+      "translation": "Поддържани езици"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Bulgarian",
+      "translation": "Последни заглавия"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Bulgarian",
+      "translation": "Harvics разширява дейността си в сектора на бързооборотните стоки до 5 нови пазара в Югоизточна Азия"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Bulgarian",
+      "translation": "Стартира нова платформа за верига за доставки, задвижвана от изкуствен интелект, за глобална дистрибуция"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Bulgarian",
+      "translation": "Harvics постига въглеродно неутрален етап във всички съоръжения"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Bulgarian",
+      "translation": "Стратегическо партньорство с водещи производители на текстил в Южна Азия"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Bulgarian",
+      "translation": "Къща Харвикс"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Bulgarian",
+      "translation": "Наследство от високи постижения и традиции"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Bulgarian",
+      "translation": "Добре дошли в къщата на Харвикс"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Bulgarian",
+      "translation": "Харвикс Хаус представлява върха на нашия ангажимент към качеството и наследството. Тук ние съчетаваме най-добрата селекция от нашите първокласни продукти, представени в среда, която отразява нашите ценности за елегантност, традиция и иновации."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Bulgarian",
+      "translation": "Разгледайте нашите ексклузивни колекции и открийте историята зад всеки продукт, носещ името Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Bulgarian",
+      "translation": "Харвикс Глобъл Венчърс"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Bulgarian",
+      "translation": "Превъзходство в първокласните потребителски стоки от 2019 г."
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Bulgarian",
+      "translation": "Водеща световна компания за потребителски стоки, доставяща първокласни хранителни продукти в различни категории с международни стандарти за качество."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Bulgarian",
+      "translation": "Лондон • Милано • Ню Йорк"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Bulgarian",
+      "translation": "От 2019 г."
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Bulgarian",
+      "translation": "Харвикс Нюз"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Bulgarian",
+      "translation": "Абонирайте се, за да получавате известия и актуализации"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Bulgarian",
+      "translation": "Регистрация"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Bulgarian",
+      "translation": "Проблеми със съответствието"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Bulgarian",
+      "translation": "Говорете, ако имате притеснения относно съответствието или етиката"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Bulgarian",
+      "translation": "Говорете открито"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Bulgarian",
+      "translation": "Свържете се с нас"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Bulgarian",
+      "translation": "Свържете се с нашия екип"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Bulgarian",
+      "translation": "Свържете се с нас"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Bulgarian",
+      "translation": "Полезни връзки"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Попитайте Харуич"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Bulgarian",
+      "translation": "Търсене на работа"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Bulgarian",
+      "translation": "Абонирайте се за новини"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Bulgarian",
+      "translation": "Компания"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Bulgarian",
+      "translation": "Глобални адреси"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Bulgarian",
+      "translation": "Стратегия"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Bulgarian",
+      "translation": "Нашето лидерство"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Bulgarian",
+      "translation": "Марки от А до Я"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Bulgarian",
+      "translation": "Нашата история"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Bulgarian",
+      "translation": "Устойчивост"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Bulgarian",
+      "translation": "Новини"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Bulgarian",
+      "translation": "Контакти за медии"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Bulgarian",
+      "translation": "Изображения"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Bulgarian",
+      "translation": "Инвеститори"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Bulgarian",
+      "translation": "Корпоративно управление"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Bulgarian",
+      "translation": "Акции, ADR и облигации"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Bulgarian",
+      "translation": "Публикации"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Bulgarian",
+      "translation": "Последвайте ни на"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Bulgarian",
+      "translation": "0 проблема"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Bulgarian",
+      "translation": "Карта на сайта"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Bulgarian",
+      "translation": "Отписване"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Bulgarian",
+      "translation": "Помощ"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Bulgarian",
+      "translation": "Поверителност"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Bulgarian",
+      "translation": "Бисквитки"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Bulgarian",
+      "translation": "Условия за ползване"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Bulgarian",
+      "translation": "Достъпност"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Bulgarian",
+      "translation": "Въглеродна ефективност"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Bulgarian",
+      "translation": "Доставчици"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Bulgarian",
+      "translation": "Социални медии"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Bulgarian",
+      "translation": "Настройки на бисквитките"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Bulgarian",
+      "translation": "Премиум качество"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Bulgarian",
+      "translation": "Имейл адрес"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Bulgarian",
+      "translation": "Въведете имейл адреса си"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Bulgarian",
+      "translation": "Абонирайте се"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Bulgarian",
+      "translation": "Абониране..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Bulgarian",
+      "translation": "За нас"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Bulgarian",
+      "translation": "Медии"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Bulgarian",
+      "translation": "Търсене на продукти, марки или категории"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Bulgarian",
+      "translation": "Няма намерени резултати"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Bulgarian",
+      "translation": "Търсене..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Bulgarian",
+      "translation": "Резултати"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Bulgarian",
+      "translation": "Чат с нас"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Bulgarian",
+      "translation": "Въведете съобщението си..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Bulgarian",
+      "translation": "Изпрати"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Bulgarian",
+      "translation": "Затвори"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Bulgarian",
+      "translation": "Здравейте! Как мога да ви помогна днес?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Bulgarian",
+      "translation": "Съжалявам, не разбрах това. Бихте ли го преформулирали?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Bulgarian",
+      "translation": "Мога да ви помогна с информация за продукти, поръчки или общи запитвания. Какво бихте искали да знаете?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Bulgarian",
+      "translation": "За повече съдействие, моля, свържете се с нас на support@harvics.com или се обадете на +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Bulgarian",
+      "translation": "Чат с нас"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Bulgarian",
+      "translation": "Зареждане..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Bulgarian",
+      "translation": "Грешка"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Bulgarian",
+      "translation": "Успех"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Bulgarian",
+      "translation": "Запазване"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Bulgarian",
+      "translation": "Отказ"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Bulgarian",
+      "translation": "Изтриване"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Bulgarian",
+      "translation": "Редактиране"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Bulgarian",
+      "translation": "Преглед"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Bulgarian",
+      "translation": "Изпращане"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Bulgarian",
+      "translation": "Търсене"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Bulgarian",
+      "translation": "Филтър"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Bulgarian",
+      "translation": "Изчисти"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Bulgarian",
+      "translation": "Изтегляне"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Bulgarian",
+      "translation": "Качване"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Bulgarian",
+      "translation": "Да"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Bulgarian",
+      "translation": "Не"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Bulgarian",
+      "translation": "Затвори"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Bulgarian",
+      "translation": "Обратно"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Bulgarian",
+      "translation": "Следващо"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Bulgarian",
+      "translation": "Предишен"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Bulgarian",
+      "translation": "Действия"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Bulgarian",
+      "translation": "Статус"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Bulgarian",
+      "translation": "Дата"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Bulgarian",
+      "translation": "Име"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Bulgarian",
+      "translation": "Имейл"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Bulgarian",
+      "translation": "Телефон"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Bulgarian",
+      "translation": "Адрес"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Bulgarian",
+      "translation": "Държава"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Bulgarian",
+      "translation": "Град"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Bulgarian",
+      "translation": "Всички"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Bulgarian",
+      "translation": "Няма"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Bulgarian",
+      "translation": "Изберете"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Bulgarian",
+      "translation": "Изберете език"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Bulgarian",
+      "translation": "Изберете държава"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Bulgarian",
+      "translation": "Покажи още"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Bulgarian",
+      "translation": "Покажи по-малко"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Bulgarian",
+      "translation": "Задължително"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Bulgarian",
+      "translation": "Меню"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Bulgarian",
+      "translation": "Вижте продуктите"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Bulgarian",
+      "translation": "Пусни музика"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Bulgarian",
+      "translation": "Пауза на музиката"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Bulgarian",
+      "translation": "Безшумна музика"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Bulgarian",
+      "translation": "Включване на звука на музиката"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Bulgarian",
+      "translation": "Нашият глобален обхват"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Bulgarian",
+      "translation": "Откакто"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Bulgarian",
+      "translation": "Основен пазар"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Bulgarian",
+      "translation": "Основни пазари"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Bulgarian",
+      "translation": "Присъствие"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Bulgarian",
+      "translation": "Обслужвани страни"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Bulgarian",
+      "translation": "Основни пазари"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Bulgarian",
+      "translation": "Категории продукти"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Bulgarian",
+      "translation": "Утвърден"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Bulgarian",
+      "translation": "Териториална йерархия"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Bulgarian",
+      "translation": "Пълен път"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Bulgarian",
+      "translation": "Текуща територия"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Bulgarian",
+      "translation": "Няма артикули"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Bulgarian",
+      "translation": "Глобус"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Bulgarian",
+      "translation": "Континент"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Bulgarian",
+      "translation": "Регион"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Bulgarian",
+      "translation": "Държава"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Bulgarian",
+      "translation": "Град"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Bulgarian",
+      "translation": "Област"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Bulgarian",
+      "translation": "Местоположение"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Bulgarian",
+      "translation": "Харвикс Глобал"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Bulgarian",
+      "translation": "Глобално"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Bulgarian",
+      "translation": "Изберете регион"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Bulgarian",
+      "translation": "Данни за клиента"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Bulgarian",
+      "translation": "Избрано"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Bulgarian",
+      "translation": "Пълно име"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Bulgarian",
+      "translation": "Въведете пълното си име"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Bulgarian",
+      "translation": "Името е задължително"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Bulgarian",
+      "translation": "Имейл адрес"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Bulgarian",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Bulgarian",
+      "translation": "Изисква се имейл адрес"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Bulgarian",
+      "translation": "Моля, въведете валиден имейл адрес"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Bulgarian",
+      "translation": "Телефонен номер"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Bulgarian",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Bulgarian",
+      "translation": "Изисква се телефонен номер"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Bulgarian",
+      "translation": "Адрес"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Bulgarian",
+      "translation": "Вашият адрес"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Bulgarian",
+      "translation": "Адресът е задължителен"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Bulgarian",
+      "translation": "Съгласен съм да получавам маркетингови съобщения и актуализации"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Bulgarian",
+      "translation": "Изпрати и продължи"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Bulgarian",
+      "translation": "Изпращане..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Bulgarian",
+      "translation": "Пропусни и продължи"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Bulgarian",
+      "translation": "Ключови показатели за ефективност"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Bulgarian",
+      "translation": "Поръчки днес"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Bulgarian",
+      "translation": "Изпратено чрез Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Bulgarian",
+      "translation": "Предстоящи доставки"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Bulgarian",
+      "translation": "По зададени маршрути"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Bulgarian",
+      "translation": "Търговци на дребно"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Bulgarian",
+      "translation": "Активни търговски обекти в обхвата"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Bulgarian",
+      "translation": "Оценка на T & A"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Bulgarian",
+      "translation": "Териториално покритие"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Bulgarian",
+      "translation": "Финанси и инвентаризация"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Bulgarian",
+      "translation": "Складови единици с ниска наличност"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Bulgarian",
+      "translation": "Задействане на попълване"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Bulgarian",
+      "translation": "Неплатени фактури"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Bulgarian",
+      "translation": "Дължи се за събиране"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Bulgarian",
+      "translation": "Кредитен лимит"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Bulgarian",
+      "translation": "Възложено от финансовия отдел"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Bulgarian",
+      "translation": "Активирани са автоматично одобрение, попълване на запаси и напомняния за фактури"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Bulgarian",
+      "translation": "Самоодобрение"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Bulgarian",
+      "translation": "Попълване на запасите"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Bulgarian",
+      "translation": "Напомняния за фактури"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Bulgarian",
+      "translation": "Препоръки за изкуствен интелект"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Bulgarian",
+      "translation": "Ниво на риск"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Bulgarian",
+      "translation": "Въз основа на използването на кредита и историята на плащанията"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Bulgarian",
+      "translation": "Предложен ред"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Bulgarian",
+      "translation": "Препоръчани от изкуствен интелект SKU за поръчка"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Bulgarian",
+      "translation": "Следващо действие"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Bulgarian",
+      "translation": "Действия и насоки"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Bulgarian",
+      "translation": "Жалби"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Bulgarian",
+      "translation": "Проблеми с търговците на дребно, очакващи решение"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Bulgarian",
+      "translation": "Наръчник"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Bulgarian",
+      "translation": "Приоритизирайте чакащите доставки преди обяд."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Bulgarian",
+      "translation": "Приключете всички неразгледани жалби в рамките на 48 часа."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Bulgarian",
+      "translation": "Задействане на попълване на запаси за SKU с ниска наличност (автоматично създаване на поръчка за поръчка)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Bulgarian",
+      "translation": "Територия"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Bulgarian",
+      "translation": "Поръчки този месец"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Bulgarian",
+      "translation": "Чакащи поръчки"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Bulgarian",
+      "translation": "Доставени поръчки"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Bulgarian",
+      "translation": "Информация за територията"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Bulgarian",
+      "translation": "Държава"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Bulgarian",
+      "translation": "Град"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Bulgarian",
+      "translation": "Регион"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Bulgarian",
+      "translation": "Бързи действия"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Bulgarian",
+      "translation": "Нова поръчка"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Bulgarian",
+      "translation": "Преглед на поръчките"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Bulgarian",
+      "translation": "Преглед на фактури"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Bulgarian",
+      "translation": "Настройки на профила"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Bulgarian",
+      "translation": "Зареждане на таблото за управление..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Bulgarian",
+      "translation": "Грешка"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Bulgarian",
+      "translation": "Моите поръчки"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Bulgarian",
+      "translation": "Идентификационен номер на поръчката"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Bulgarian",
+      "translation": "Дата"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Bulgarian",
+      "translation": "Статус"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Bulgarian",
+      "translation": "Елементи"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Bulgarian",
+      "translation": "Обща сума"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Bulgarian",
+      "translation": "Действия"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Bulgarian",
+      "translation": "Вижте подробности"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Bulgarian",
+      "translation": "Статус"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Bulgarian",
+      "translation": "Начална дата"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Bulgarian",
+      "translation": "Крайна дата"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Bulgarian",
+      "translation": "Всички статуси"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Bulgarian",
+      "translation": "Изчистване на филтрите"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Bulgarian",
+      "translation": "В очакване"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Bulgarian",
+      "translation": "Обработка"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Bulgarian",
+      "translation": "Доставено"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Bulgarian",
+      "translation": "Отменено"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Bulgarian",
+      "translation": "Няма намерени поръчки"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Bulgarian",
+      "translation": "Зареждане на поръчките..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Bulgarian",
+      "translation": "Страница"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Bulgarian",
+      "translation": "от"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Bulgarian",
+      "translation": "Предишен"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Bulgarian",
+      "translation": "Следващо"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Bulgarian",
+      "translation": "Детайли за поръчката"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Bulgarian",
+      "translation": "Обратно към поръчките"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Bulgarian",
+      "translation": "Идентификационен номер на поръчката"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Bulgarian",
+      "translation": "Статус"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Bulgarian",
+      "translation": "Дата на поръчката"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Bulgarian",
+      "translation": "Дата на доставка"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Bulgarian",
+      "translation": "Адрес за доставка"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Bulgarian",
+      "translation": "Бележки"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Bulgarian",
+      "translation": "Артикули за поръчка"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Bulgarian",
+      "translation": "Продукт"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Bulgarian",
+      "translation": "Артикулен номер"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Bulgarian",
+      "translation": "Количество"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Bulgarian",
+      "translation": "Единична цена"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Bulgarian",
+      "translation": "Общо"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Bulgarian",
+      "translation": "Обща сума"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Bulgarian",
+      "translation": "Хронология на състоянието"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Bulgarian",
+      "translation": "Поръчката не е намерена"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Bulgarian",
+      "translation": "Създаване на нова поръчка"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Bulgarian",
+      "translation": "Артикули за поръчка"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Bulgarian",
+      "translation": "Добавяне на елемент"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Bulgarian",
+      "translation": "Все още няма добавени елементи. Кликнете върху „Добавяне на елемент“, за да започнете."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Bulgarian",
+      "translation": "Детайли за поръчката"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Bulgarian",
+      "translation": "Дата на доставка"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Bulgarian",
+      "translation": "Адрес за доставка"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Bulgarian",
+      "translation": "Бележки"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Bulgarian",
+      "translation": "Обща сума"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Bulgarian",
+      "translation": "Създаване на поръчка"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Bulgarian",
+      "translation": "Създаване на поръчка..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Bulgarian",
+      "translation": "Отказ"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Bulgarian",
+      "translation": "Изберете продукт"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Bulgarian",
+      "translation": "Продукт"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Bulgarian",
+      "translation": "Количество"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Bulgarian",
+      "translation": "Единична цена"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Bulgarian",
+      "translation": "Премахване"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Bulgarian",
+      "translation": "Междинна сума"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Bulgarian",
+      "translation": "Идентификационен номер на поръчката"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Bulgarian",
+      "translation": "Изисква се поне един артикул за поръчка"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Bulgarian",
+      "translation": "Продуктът е задължителен"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Bulgarian",
+      "translation": "Количеството трябва да е по-голямо от 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Bulgarian",
+      "translation": "Единичната цена трябва да е неотрицателна"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Bulgarian",
+      "translation": "Невалиден формат на датата на доставка"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Bulgarian",
+      "translation": "Датата на доставка не може да бъде в миналото"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Bulgarian",
+      "translation": "Моите фактури"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Bulgarian",
+      "translation": "Номер на фактура"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Bulgarian",
+      "translation": "Дата на фактурата"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Bulgarian",
+      "translation": "Две дати"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Bulgarian",
+      "translation": "Сума"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Bulgarian",
+      "translation": "Платена сума"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Bulgarian",
+      "translation": "Статус на плащането"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Bulgarian",
+      "translation": "Статус на плащането"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Bulgarian",
+      "translation": "Всички статуси"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Bulgarian",
+      "translation": "Изчистване на филтрите"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Bulgarian",
+      "translation": "Платено"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Bulgarian",
+      "translation": "Неплатено"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Bulgarian",
+      "translation": "Частично"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Bulgarian",
+      "translation": "Не са намерени фактури"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Bulgarian",
+      "translation": "Зареждане на фактури..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Bulgarian",
+      "translation": "Моят профил"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Bulgarian",
+      "translation": "Информация за акаунта"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Bulgarian",
+      "translation": "Идентификационен номер на дистрибутора"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Bulgarian",
+      "translation": "Територия"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Bulgarian",
+      "translation": "Държава"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Bulgarian",
+      "translation": "Град"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Bulgarian",
+      "translation": "Създаден акаунт"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Bulgarian",
+      "translation": "Актуализиране на профила"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Bulgarian",
+      "translation": "Име"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Bulgarian",
+      "translation": "Имейл"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Bulgarian",
+      "translation": "Телефон"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Bulgarian",
+      "translation": "Адрес"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Bulgarian",
+      "translation": "Език"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Bulgarian",
+      "translation": "Валута"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Bulgarian",
+      "translation": "Запазване на промените"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Bulgarian",
+      "translation": "Запазване..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Bulgarian",
+      "translation": "Профилът е актуализиран успешно"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Bulgarian",
+      "translation": "Зареждане на профил..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Bulgarian",
+      "translation": "Невалиден формат на имейл адреса"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Bulgarian",
+      "translation": "Невалиден формат на телефона"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Bulgarian",
+      "translation": "Грешка"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Bulgarian",
+      "translation": "Зареждане..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Bulgarian",
+      "translation": "Запазване"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Bulgarian",
+      "translation": "Отказ"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Bulgarian",
+      "translation": "Обратно"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Bulgarian",
+      "translation": "Изпращане"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Bulgarian",
+      "translation": "Изтриване"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Bulgarian",
+      "translation": "Редактиране"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Bulgarian",
+      "translation": "Преглед"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Bulgarian",
+      "translation": "Търсене"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Bulgarian",
+      "translation": "Филтър"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Bulgarian",
+      "translation": "Изчисти"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Bulgarian",
+      "translation": "Приложи"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Bulgarian",
+      "translation": "Затвори"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Bulgarian",
+      "translation": "Потвърди"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Bulgarian",
+      "translation": "Да"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Bulgarian",
+      "translation": "Не"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Bulgarian",
+      "translation": "Правна операционна система"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Bulgarian",
+      "translation": "Правна операционна система"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Bulgarian",
+      "translation": "Достъпът е отказан"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Bulgarian",
+      "translation": "Нямате разрешение за достъп до модула Legal OS."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Bulgarian",
+      "translation": "Табло за управление"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Bulgarian",
+      "translation": "Договори"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Bulgarian",
+      "translation": "Сертификати"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Bulgarian",
+      "translation": "Съответствие"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Bulgarian",
+      "translation": "Правно табло"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Bulgarian",
+      "translation": "Преглед на законните операции и състоянието на съответствие"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Bulgarian",
+      "translation": "Активни търговски марки"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Bulgarian",
+      "translation": "Активни договори"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Bulgarian",
+      "translation": "Състояние на съответствие"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Bulgarian",
+      "translation": "Търговски марки"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Bulgarian",
+      "translation": "Управление на регистрации и заявки за търговски марки"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Bulgarian",
+      "translation": "Добавяне на нова търговска марка"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Bulgarian",
+      "translation": "Държава"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Bulgarian",
+      "translation": "Статус"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Bulgarian",
+      "translation": "Всички страни"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Bulgarian",
+      "translation": "Всички статуси"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Bulgarian",
+      "translation": "Изчистване на филтрите"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Bulgarian",
+      "translation": "Име на марката"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Bulgarian",
+      "translation": "Клас"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Bulgarian",
+      "translation": "Държава"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Bulgarian",
+      "translation": "Номер на заявлението"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Bulgarian",
+      "translation": "Статус"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Bulgarian",
+      "translation": "Дата на изтичане"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Bulgarian",
+      "translation": "Действия"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Bulgarian",
+      "translation": "Редактиране на търговска марка"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Bulgarian",
+      "translation": "Добавяне на нова търговска марка"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Bulgarian",
+      "translation": "Преглед на търговската марка"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Bulgarian",
+      "translation": "Име на марката"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Bulgarian",
+      "translation": "Номер на клас"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Bulgarian",
+      "translation": "Държава"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Bulgarian",
+      "translation": "Номер на заявлението"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Bulgarian",
+      "translation": "Статус"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Bulgarian",
+      "translation": "Дата на изтичане"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Bulgarian",
+      "translation": "Документи"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Bulgarian",
+      "translation": "Няма приложени документи"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Bulgarian",
+      "translation": "Добавяне на документ"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Bulgarian",
+      "translation": "Премахване"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Bulgarian",
+      "translation": "Зареждането на търговските марки не бе успешно"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Bulgarian",
+      "translation": "Запазването на търговската марка не бе успешно. Моля, опитайте отново."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Bulgarian",
+      "translation": "Съдебни дела"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Bulgarian",
+      "translation": "Управлявайте съдебни дела и проследявайте техния статус"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Bulgarian",
+      "translation": "Нов случай"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Bulgarian",
+      "translation": "Заглавие на делото"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Bulgarian",
+      "translation": "Тип на кутията"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Bulgarian",
+      "translation": "Държава"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Bulgarian",
+      "translation": "Описание"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Bulgarian",
+      "translation": "Възложено на"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Bulgarian",
+      "translation": "Статус"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Bulgarian",
+      "translation": "Дата на изслушването"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Bulgarian",
+      "translation": "Заглавие на делото"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Bulgarian",
+      "translation": "Тип"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Bulgarian",
+      "translation": "Държава"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Bulgarian",
+      "translation": "Възложено на"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Bulgarian",
+      "translation": "Статус"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Bulgarian",
+      "translation": "Дата на изслушването"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Bulgarian",
+      "translation": "Действия"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Bulgarian",
+      "translation": "Отворено"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Bulgarian",
+      "translation": "В процес на разработка"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Bulgarian",
+      "translation": "Затворено"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Bulgarian",
+      "translation": "Отменено"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Bulgarian",
+      "translation": "Изглед на картата на автопарка"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Bulgarian",
+      "translation": "Проследяване в реално време на търговски служители и превозни средства за доставки"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Bulgarian",
+      "translation": "Активни служители"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Bulgarian",
+      "translation": "Няма активни служители"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Bulgarian",
+      "translation": "Зареждане..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Bulgarian",
+      "translation": "Повторение на маршрута"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Bulgarian",
+      "translation": "Служител"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Bulgarian",
+      "translation": "Скорост"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Bulgarian",
+      "translation": "Нулиране"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Bulgarian",
+      "translation": "Играй"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Bulgarian",
+      "translation": "Пауза"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Bulgarian",
+      "translation": "точки"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Bulgarian",
+      "translation": "Няма налични данни за маршрута"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Bulgarian",
+      "translation": "Зареждане на маршрута..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Bulgarian",
+      "translation": "Конкурентни продукти"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Bulgarian",
+      "translation": "Проследяване на информация за продукти на конкуренти"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Bulgarian",
+      "translation": "Добавяне на продукт"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Bulgarian",
+      "translation": "Добавяне на конкурентен продукт"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Bulgarian",
+      "translation": "Марка"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Bulgarian",
+      "translation": "Име на складовата единица"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Bulgarian",
+      "translation": "Категория"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Bulgarian",
+      "translation": "Размер"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Bulgarian",
+      "translation": "Цена"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Bulgarian",
+      "translation": "Валута"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Bulgarian",
+      "translation": "Държава"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Bulgarian",
+      "translation": "Марка"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Bulgarian",
+      "translation": "Име на складовата единица"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Bulgarian",
+      "translation": "Категория"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Bulgarian",
+      "translation": "Размер"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Bulgarian",
+      "translation": "Цена"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Bulgarian",
+      "translation": "Държава"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Bulgarian",
+      "translation": "Дата на добавяне"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Bulgarian",
+      "translation": "Зареждането на продуктите не бе успешно"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Bulgarian",
+      "translation": "Създаването на продукт не бе успешно. Моля, опитайте отново."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Bulgarian",
+      "translation": "Не са открити конкурентни продукти"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Bulgarian",
+      "translation": "Зареждане на продукти..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Bulgarian",
+      "translation": "Табло за управление на конкурентите"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Bulgarian",
+      "translation": "Анализи и информация за конкурентни продукти"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Bulgarian",
+      "translation": "Общо продукти"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Bulgarian",
+      "translation": "Проследявани марки"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Bulgarian",
+      "translation": "Държави"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Bulgarian",
+      "translation": "Категории"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Bulgarian",
+      "translation": "Продукти по марка"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Bulgarian",
+      "translation": "Продукти по държава"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Bulgarian",
+      "translation": "Продукти по категория"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Bulgarian",
+      "translation": "Зареждане на статистика..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Bulgarian",
+      "translation": "Няма налична статистика"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Bulgarian",
+      "translation": "Общ преглед"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Bulgarian",
+      "translation": "Поръчки"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Bulgarian",
+      "translation": "Инвентар"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Bulgarian",
+      "translation": "Логистика"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Bulgarian",
+      "translation": "Финанси"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Bulgarian",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Bulgarian",
+      "translation": "Човешки ресурси"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Bulgarian",
+      "translation": "Изпълнителен директор"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Bulgarian",
+      "translation": "Инвеститор"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Bulgarian",
+      "translation": "Правни/Интелектуална собственост"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Bulgarian",
+      "translation": "Състезател"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Bulgarian",
+      "translation": "Внос/Износ"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Bulgarian",
+      "translation": "GPS проследяване"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Bulgarian",
+      "translation": "Локализация"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Bulgarian",
+      "translation": "Работни процеси"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Bulgarian",
+      "translation": "Администратор"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Bulgarian",
+      "translation": "CRM операционна система"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Bulgarian",
+      "translation": "Клиент 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Bulgarian",
+      "translation": "Пълни профили на клиентите, история на взаимодействията и управление на взаимоотношенията"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Bulgarian",
+      "translation": "Дигитални кампании"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Bulgarian",
+      "translation": "Многоканални маркетингови кампании (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Bulgarian",
+      "translation": "Потенциални клиенти и възможности"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Bulgarian",
+      "translation": "Управление на потенциални клиенти, квалификация и канал за възможности"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Bulgarian",
+      "translation": "Поддръжка на клиенти"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Bulgarian",
+      "translation": "Управление на билети, обслужване на клиенти и разрешаване на проблеми"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Bulgarian",
+      "translation": "Програми за лоялност"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Bulgarian",
+      "translation": "Управление на лоялността, геймификацията и наградите на търговците на дребно"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Bulgarian",
+      "translation": "Клиент 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Bulgarian",
+      "translation": "Нов клиент"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Bulgarian",
+      "translation": "Общо клиенти"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Bulgarian",
+      "translation": "Активен"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Bulgarian",
+      "translation": "Ново"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Bulgarian",
+      "translation": "Удовлетвореност"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Bulgarian",
+      "translation": "Управление на клиенти"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Bulgarian",
+      "translation": "Преглеждайте и управлявайте взаимоотношенията, взаимодействията и кампаниите си с клиенти."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Bulgarian",
+      "translation": "Зареждане..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Bulgarian",
+      "translation": "Грешка при зареждане на CRM данни"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Bulgarian",
+      "translation": "Общ преглед"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Bulgarian",
+      "translation": "Поръчки"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Bulgarian",
+      "translation": "Инвентар"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Bulgarian",
+      "translation": "Логистика"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Bulgarian",
+      "translation": "Финанси"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Bulgarian",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Bulgarian",
+      "translation": "Човешки ресурси"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Bulgarian",
+      "translation": "Изпълнителен директор"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Bulgarian",
+      "translation": "Инвеститор"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Bulgarian",
+      "translation": "Правни/Интелектуална собственост"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Bulgarian",
+      "translation": "Състезател"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Bulgarian",
+      "translation": "Внос/Износ"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Bulgarian",
+      "translation": "GPS проследяване"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Bulgarian",
+      "translation": "Локализация"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Bulgarian",
+      "translation": "Работни процеси"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Bulgarian",
+      "translation": "Администратор"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Bulgarian",
+      "translation": "Клиенти"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Bulgarian",
+      "translation": "Служители"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Bulgarian",
+      "translation": "Печалба"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Bulgarian",
+      "translation": "Зареждане на кабината на доставчика…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Bulgarian",
+      "translation": "Поръчки за покупка"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Отгледан от Харвикс"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Bulgarian",
+      "translation": "Пратки / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Bulgarian",
+      "translation": "Прието тази седмица"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Bulgarian",
+      "translation": "Създадени фактури"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Bulgarian",
+      "translation": "Очаква се плащане"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Bulgarian",
+      "translation": "Плащания, предстоящи"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Bulgarian",
+      "translation": "Планирано за пускане"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Bulgarian",
+      "translation": "Качество / оплаквания"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Bulgarian",
+      "translation": "Отворени билети"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Bulgarian",
+      "translation": "Прогноза (следващите 4 седмици)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Bulgarian",
+      "translation": "Заместител за ИИ"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Bulgarian",
+      "translation": "Действия на доставчика"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Bulgarian",
+      "translation": "Потвърдете предстоящите доставки и актуализирайте графика на GRN."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Bulgarian",
+      "translation": "Прегледайте неплатените фактури и споделете съвети за плащане."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Bulgarian",
+      "translation": "Разрешавайте отворени оплаквания за качество с доказателства за осигуряване на качеството."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Bulgarian",
+      "translation": "Потребителско име"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Bulgarian",
+      "translation": "Парола"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Bulgarian",
+      "translation": "Имейл"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Bulgarian",
+      "translation": "Изпращане"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Bulgarian",
+      "translation": "Отказ"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Bulgarian",
+      "translation": "Запазване"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Bulgarian",
+      "translation": "Изтриване"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Bulgarian",
+      "translation": "Търсене"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Bulgarian",
+      "translation": "Филтър"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Bulgarian",
+      "translation": "Нулиране"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Bulgarian",
+      "translation": "Затвори"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Bulgarian",
+      "translation": "Обратно"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Bulgarian",
+      "translation": "Следващо"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Bulgarian",
+      "translation": "Предишен"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Bulgarian",
+      "translation": "Потвърди"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Bulgarian",
+      "translation": "Запомни ме"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Bulgarian",
+      "translation": "Забравена парола?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Bulgarian",
+      "translation": "Изисква се имейл адрес"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Bulgarian",
+      "translation": "Моля, въведете валиден имейл адрес"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Bulgarian",
+      "translation": "Продукти"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Bulgarian",
+      "translation": "Какви продукти предлага Harvics?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Bulgarian",
+      "translation": "Предлагаме широка гама от първокласни хранителни продукти, включително сладкарски изделия, напитки, закуски, тестени изделия, хлебни изделия и замразени храни в множество категории."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Bulgarian",
+      "translation": "Къде мога да купя продукти на Harvics?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Bulgarian",
+      "translation": "Нашите продукти се предлагат в магазини на дребно в над 40 държави. Използвайте нашата система за търсене на магазини или страницата за контакти, за да намерите търговец на дребно близо до вас."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Bulgarian",
+      "translation": "Предлагате ли поръчки на едро?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Bulgarian",
+      "translation": "Да, предлагаме отстъпки за поръчки на едро за фирми и търговци на дребно. Посетете нашата страница „Отстъпки за поръчки на едро“ за повече информация."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Bulgarian",
+      "translation": "Поръчки и доставка"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Bulgarian",
+      "translation": "Какви са вашите опции за доставка?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Bulgarian",
+      "translation": "Предлагаме различни опции за доставка, включително стандартна, експресна и международна доставка. Безплатна доставка е налична за поръчки над $50."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Bulgarian",
+      "translation": "Колко време отнема доставката?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Bulgarian",
+      "translation": "Сроковете за доставка варират в зависимост от местоположението. Стандартната доставка обикновено отнема 5-7 работни дни, докато експресната доставка отнема 2-3 работни дни."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Bulgarian",
+      "translation": "Мога ли да проследя поръчката си?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Bulgarian",
+      "translation": "Да, можете да проследите поръчката си, като използвате номера за проследяване, предоставен в имейла за потвърждение на поръчката."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Bulgarian",
+      "translation": "Профил и плащания"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Bulgarian",
+      "translation": "Как да създам акаунт?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Bulgarian",
+      "translation": "Кликнете върху „Вход“ в заглавката и изберете „Създаване на акаунт“, за да регистрирате нов акаунт."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Bulgarian",
+      "translation": "Какви методи на плащане приемате?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Bulgarian",
+      "translation": "Приемаме всички основни кредитни карти, дебитни карти, PayPal и банкови преводи за B2B поръчки."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Bulgarian",
+      "translation": "Защитена ли е моята платежна информация?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Bulgarian",
+      "translation": "Да, използваме стандартно за индустрията криптиране, за да защитим информацията за плащането ви."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Bulgarian",
+      "translation": "Връщане и възстановяване на суми"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Bulgarian",
+      "translation": "Каква е вашата политика за връщане?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Bulgarian",
+      "translation": "Предлагаме 30-дневна политика за връщане на неотворени продукти в оригинална опаковка. Моля, свържете се с нашия отдел за обслужване на клиенти за разрешение за връщане."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Bulgarian",
+      "translation": "Как да поискам възстановяване на сумата?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Bulgarian",
+      "translation": "Свържете се с нашия екип за обслужване на клиенти, като посочите номера на поръчката си и причината за връщането. Ще обработим възстановяването на сумата ви в рамките на 5-7 работни дни."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Bulgarian",
+      "translation": "Все още имате въпроси?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Bulgarian",
+      "translation": "Нашият екип за обслужване на клиенти е тук, за да ви помогне"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Bulgarian",
+      "translation": "Свържете се с нас"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Bulgarian",
+      "translation": "Кариери"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Кариери | Харвикс"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Bulgarian",
+      "translation": "Присъединете се към Harvics Global Ventures — проучете възможности в над 40 държави."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Bulgarian",
+      "translation": "Присъединете се към нас"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Bulgarian",
+      "translation": "Изграждане на бъдещето на световната търговия"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Bulgarian",
+      "translation": "Разрастваме се в над 40 държави. Присъединете се към екип, който изгражда операционна система, задвижвана от изкуствен интелект, за глобална търговия."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Bulgarian",
+      "translation": "Отворени позиции"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Bulgarian",
+      "translation": "Държави"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Bulgarian",
+      "translation": "Вертикални индустрии"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Bulgarian",
+      "translation": "Наемане на персонал в отделите"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Bulgarian",
+      "translation": "Свободни позиции по отдели"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Bulgarian",
+      "translation": "Продажби и дистрибуция"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Bulgarian",
+      "translation": "Увеличаване на приходите на над 40 пазара. Управление на територията, ключови клиенти, връзки с дистрибутори."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Bulgarian",
+      "translation": "Верига за доставки и логистика"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Bulgarian",
+      "translation": "Цялостна верига за доставки от фабриката до рафта. Управление на автопарка, складиране, доставка до последната миля."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Bulgarian",
+      "translation": "Технологии и изкуствен интелект"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Bulgarian",
+      "translation": "Създайте Harvics OS — нашата корпоративна платформа, задвижвана от изкуствен интелект. Пълен стек, машинно обучение, наука за данни."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Bulgarian",
+      "translation": "Финанси и хазна"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Bulgarian",
+      "translation": "Многовалутно управление на трежъри, търговско финансиране, цифрови плащания HPay, управление на валутния пазар в различните региони."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Bulgarian",
+      "translation": "Снабдяване и снабдяване"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Bulgarian",
+      "translation": "Глобални доставки от над 15 страни на произход. Одити на доставчици, контрол на качеството, програми за директен монтаж от фабриката."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Bulgarian",
+      "translation": "Човешки ресурси"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Bulgarian",
+      "translation": "Привличане на таланти, обучение и развитие, управление на представянето в различни географски региони и култури."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Bulgarian",
+      "translation": "Правни и съответствие"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Bulgarian",
+      "translation": "Спазване на търговските изисквания, проверка на санкциите, защита на интелектуалната собственост, управление на договори в различни юрисдикции."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Bulgarian",
+      "translation": "Маркетинг и бранд"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Bulgarian",
+      "translation": "Многоезични кампании, съдържание за 38 локала, дигитален маркетинг, бранд стратегия за 10 вертикала."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Bulgarian",
+      "translation": "роли"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Защо Харвикс"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Bulgarian",
+      "translation": "Глобална мобилност"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Bulgarian",
+      "translation": "Работа в Дубай, Лондон, Карачи, Лахор и над 40 пазара"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Bulgarian",
+      "translation": "Пътека на растежа"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Bulgarian",
+      "translation": "Бързо кариерно развитие в разрастващо се предприятие"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Bulgarian",
+      "translation": "Култура, основана на изкуствен интелект"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Bulgarian",
+      "translation": "Работете с авангардни системи за изкуствен интелект и интелигентност в реално време"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Bulgarian",
+      "translation": "Конкурентен пакет"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Bulgarian",
+      "translation": "Водещи на пазара компенсации, жилища и обезщетения"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Bulgarian",
+      "translation": "Бюджет за обучение"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Bulgarian",
+      "translation": "Годишен бюджет за развитие на курсове, конференции и сертификати"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Bulgarian",
+      "translation": "Гъвкава работа"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Bulgarian",
+      "translation": "Хибридни споразумения с регионални централни офиси по целия свят"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Bulgarian",
+      "translation": "Нашата стратегия"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Стратегия | Харуич"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Bulgarian",
+      "translation": "Изграждане на устойчиво бъдеще чрез иновации и високи постижения"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Bulgarian",
+      "translation": "Изграждане на устойчиво бъдеще чрез иновации и високи постижения"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Bulgarian",
+      "translation": "Глобална експанзия"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Bulgarian",
+      "translation": "Разширяване на присъствието ни на развиващите се пазари, като същевременно укрепваме позициите си на установените пазари"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Bulgarian",
+      "translation": "Продуктови иновации"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Bulgarian",
+      "translation": "Инвестиране в научноизследователска и развойна дейност за разработване на нови продукти, които отговарят на променящите се потребителски предпочитания"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Bulgarian",
+      "translation": "Устойчивост"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Bulgarian",
+      "translation": "Ангажирани с устойчиви практики в цялата ни верига за доставки и операции"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Bulgarian",
+      "translation": "Дигитална трансформация"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Bulgarian",
+      "translation": "Използване на технологии за подобряване на клиентското изживяване и оперативната ефективност"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Bulgarian",
+      "translation": "Нашата визия"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Bulgarian",
+      "translation": "Да бъдем водещата световна компания за първокласни потребителски стоки, призната за качество, иновации и устойчивост."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Bulgarian",
+      "translation": "Harvics Global Ventures | Премиум глобална търговия"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Bulgarian",
+      "translation": "Водеща световна търговска компания, доставяща първокласни продукти в над 10 индустрии. Работи в над 50 държави от 2019 г."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Bulgarian",
+      "translation": "За нас | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Bulgarian",
+      "translation": "Открийте как Harvics Global Ventures се превърна във водеща сила в световната търговия в над 40 държави и 10 индустрии."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Bulgarian",
+      "translation": "Свържете се с нас | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Bulgarian",
+      "translation": "Свържете се с офисите на Harvics по целия свят в Близкия изток, Южна Азия, Европа, Африка и Северна и Южна Америка."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Bulgarian",
+      "translation": "Продукти | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Bulgarian",
+      "translation": "Разгледайте първокласната продуктова гама на Harvics в сектора на бързооборотните стоки, текстила, стоки за обществено ползване и промишлени решения."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Bulgarian",
+      "translation": "Кариери | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Bulgarian",
+      "translation": "Присъединете се към Harvics Global Ventures — проучете възможности в над 40 държави в секторите на бързооборотните стоки, текстила, логистиката и технологиите."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Bulgarian",
+      "translation": "Медиен център | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Bulgarian",
+      "translation": "Медиен център Harvics — прессъобщения, последни новини, материали за марката и медийни контакти."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Bulgarian",
+      "translation": "Нашата стратегия | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Bulgarian",
+      "translation": "Стратегическа визия на Harvics за глобално разширяване, иновации, устойчивост и дигитална трансформация."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Корпоративна социална отговорност | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Bulgarian",
+      "translation": "Инициативи на Harvics за корпоративна социална отговорност — екологично управление, обществени програми и етични бизнес практики."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Bulgarian",
+      "translation": "ЧЗВ | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Bulgarian",
+      "translation": "Често задавани въпроси относно продуктите, услугите, поръчките и глобалните операции на Harvics."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Глобални локации | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Bulgarian",
+      "translation": "Офиси и операции на Harvics в Близкия изток, Южна Азия, Европа, Африка и Северна и Южна Америка."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Ръководен екип | Харвикс"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Bulgarian",
+      "translation": "Запознайте се с ръководния екип, който управлява Harvics Global Ventures на над 40 пазара и в 10 индустриални вертикала."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Помощен център | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Bulgarian",
+      "translation": "Получете помощ с поръчки, сметки, доставка и услуги на Harvics."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Съответствие и етика | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Bulgarian",
+      "translation": "Ангажиментът на Harvics за спазване на регулаторните изисквания, етични бизнес практики и глобални стандарти."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Нашата история | Харвикс"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Bulgarian",
+      "translation": "От стартираща компания в Дубай през 2019 г. до глобално предприятие, обхващащо над 40 държави - историята на Harvics."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Бюлетин | Харвикс"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Bulgarian",
+      "translation": "Абонирайте се за бюлетина на Harvics за информация от индустрията и пускане на продукти на пазара."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Вход | Харвикс"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Bulgarian",
+      "translation": "Влезте в профила си в Harvics, за да управлявате поръчките и да получите достъп до платформата."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Изследвания и иновации | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Bulgarian",
+      "translation": "Изследователските инициативи и иновационните програми на Harvics са движещата сила на нашата глобална стратегия."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Bulgarian",
+      "translation": "Връзки с инвеститорите | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Bulgarian",
+      "translation": "Информация за инвеститорите, финансови отчети и корпоративни съобщения от Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Bulgarian",
+      "translation": "Страницата не е намерена"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Bulgarian",
+      "translation": "404 — Страницата не е намерена"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Bulgarian",
+      "translation": "Страницата, която търсите, не съществува или е била преместена."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Bulgarian",
+      "translation": "Отидете на началната страница"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Bulgarian",
+      "translation": "Върни се назад"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Bulgarian",
+      "translation": "Нещо се обърка"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Bulgarian",
+      "translation": "Нещо се обърка"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Bulgarian",
+      "translation": "Съжаляваме, но се случи нещо неочаквано. Моля, опитайте да обновите страницата."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Bulgarian",
+      "translation": "Опитай отново"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Bulgarian",
+      "translation": "Презареждане на страницата"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Bulgarian",
+      "translation": "Свържете се с поддръжката"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Bulgarian",
+      "translation": "Грешка в приложението"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Bulgarian",
+      "translation": "Критична грешка"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Bulgarian",
+      "translation": "Възникна критична грешка. Моля, презаредете страницата."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Bulgarian",
+      "translation": "Презареждане на приложението"
+    }
+  }
+}

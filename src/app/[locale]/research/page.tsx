@@ -1,10 +1,11 @@
 import Link from 'next/link'
 
 import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Research | Harvics',
-  description: 'Harvics research initiatives and innovation programs.',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'research')
 }
 
 
@@ -72,7 +73,7 @@ export default async function ResearchPage({ params }: ResearchPageProps) {
   ]
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="pt-20">
         <section className="h-[380px] relative bg-[#6B1F2B] overflow-hidden">
           <div className="absolute inset-0">

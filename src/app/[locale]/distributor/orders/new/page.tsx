@@ -216,7 +216,7 @@ export default function NewDistributorOrder() {
                           <select
                             value={item.product_id}
                             onChange={(e) => updateOrderItem(index, 'product_id', e.target.value)}
-                            className="w-full border border-black300 px-4 py-2"
+                            className="w-full border border-gray-200 px-4 py-2"
                             required
                           >
                             <option value="">{t('selectProduct')}</option>
@@ -239,7 +239,7 @@ export default function NewDistributorOrder() {
                             min="1"
                             value={item.quantity}
                             onChange={(e) => updateOrderItem(index, 'quantity', parseInt(e.target.value) || 0)}
-                            className="w-full border border-black300 px-4 py-2"
+                            className="w-full border border-gray-200 px-4 py-2"
                             required
                           />
                           {errors[`item_${index}_quantity`] && (
@@ -256,7 +256,7 @@ export default function NewDistributorOrder() {
                             step="0.01"
                             value={item.unit_price}
                             onChange={(e) => updateOrderItem(index, 'unit_price', parseFloat(e.target.value) || 0)}
-                            className="w-full border border-black300 px-4 py-2"
+                            className="w-full border border-gray-200 px-4 py-2"
                             required
                           />
                           {errors[`item_${index}_price`] && (
@@ -294,7 +294,7 @@ export default function NewDistributorOrder() {
                   type="date"
                   value={formData.delivery_date}
                   onChange={(e) => setFormData({ ...formData, delivery_date: e.target.value })}
-                  className="w-full border border-black300 px-4 py-2"
+                  className="w-full border border-gray-200 px-4 py-2"
                 />
                 {errors.delivery_date && (
                   <p className="text-red-600 text-xs mt-1">{errors.delivery_date}</p>
@@ -308,7 +308,7 @@ export default function NewDistributorOrder() {
                 <textarea
                   value={formData.delivery_address}
                   onChange={(e) => setFormData({ ...formData, delivery_address: e.target.value })}
-                  className="w-full border border-black300 px-4 py-2"
+                  className="w-full border border-gray-200 px-4 py-2"
                   rows={3}
                 />
               </div>
@@ -320,7 +320,7 @@ export default function NewDistributorOrder() {
                 <textarea
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  className="w-full border border-black300 px-4 py-2"
+                  className="w-full border border-gray-200 px-4 py-2"
                   rows={3}
                 />
               </div>

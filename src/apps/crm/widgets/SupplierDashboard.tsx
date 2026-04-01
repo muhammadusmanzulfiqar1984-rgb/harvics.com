@@ -1,8 +1,11 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useTranslations, useLocale } from 'next-intl'
 import { getSupplierDashboardViewModel } from '@/apps/crm/crm.controller'
 import { DashboardCard } from './DashboardCard'
+import { formatCurrency } from '@/lib/formatting'
+import { getCurrency } from '@/config/localeConfig'
 
 interface SupplierDashboardState {
   purchaseOrders: number
@@ -25,6 +28,8 @@ const initialState: SupplierDashboardState = {
 }
 
 export const SupplierDashboard = () => {
+  const t = useTranslations('supplierPortal.dashboard')
+  const locale = useLocale()
   const [loading, setLoading] = useState(true)
   const [data, setData] = useState(initialState)
 
@@ -47,56 +52,68 @@ export const SupplierDashboard = () => {
 
   if (loading) {
     return (
-      <div className="bg-white text-center py-20 rounded-2xl text-[#6B1F2B]">
-        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-[#C3A35E] mx-auto mb-4"></div>
-        <p>Loading supplier cockpit…</p>
+      <div className="bg-white text-center py-20 rounded-2xl text-harvics-maroon">
+        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-harvics-gold mx-auto mb-4"></div>
+        <p>{t('loading')}</p>
       </div>
     )
   }
 
-  const formatCurrency = (value: number) =>
-    `${data.currency || ''} ${Math.round(value).toLocaleString()}`
+  const formatLocaleCurrency = (value: number) => {
+    const currency = data.currency || getCurrency(locale)
+    return formatCurrency(value, locale, currency)
+  }
 
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <DashboardCard title="Purchase orders" value={data.purchaseOrders} subtitle="Raised by Harvics" />
-        <DashboardCard title="Shipments / GRN" value={data.shipments} subtitle="Accepted this week" accent="green" />
-        <DashboardCard
-          title="Invoices created"
-          value={formatCurrency(data.invoices)}
-          subtitle="Awaiting payment"
+        <DashboardCard 
+          title={t('purchaseOrders')} 
+          value={data.purchaseOrders} 
+          subtitle={t('purchaseOrdersSubtitle')} 
+        />
+        <DashboardCard 
+          title={t('shipments')}
+          value={data.shipments}
+          subtitle={t('shipmentsSubtitle')}
+        />
+        <DashboardCard 
+          title={t('invoices')}
+          value={formatLocaleCurrency(data.invoices)}
+          subtitle={t('invoicesSubtitle')}
           accent="gold"
         />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <DashboardCard
-          title="Payments pending"
-          value={formatCurrency(data.paymentsPending)}
-          subtitle="Scheduled for release"
+          title={t('paymentsPending')}
+          value={formatLocaleCurrency(data.paymentsPending)}
+          subtitle={t('paymentsPendingSubtitle')}
           accent="red"
         />
         <DashboardCard
-          title="Quality / complaints"
+          title={t('qualityComplaints')}
           value={data.qualityComplaints}
-          subtitle="Open tickets"
+          subtitle={t('qualityComplaintsSubtitle')}
           accent="red"
         />
         <DashboardCard
-          title="Forecast (next 4 weeks)"
-          value={formatCurrency(data.forecast)}
-          subtitle="AI placeholder"
+          title={t('forecast')}
+          value={formatLocaleCurrency(data.forecast)}
+          subtitle={t('forecastSubtitle')}
           accent="gold"
         />
       </div>
 
-      <div className="bg-white/90 rounded-xl border border-[#C3A35E]/30 p-4 shadow">
-        <h3 className="text-sm font-semibold text-black uppercase tracking-widest mb-2">Supplier actions</h3>
+      <div className="bg-white/90 rounded-xl border border-harvics-gold/30 p-4 shadow">
+        <h3 className="text-sm font-semibold text-black uppercase tracking-widest mb-2">
+          {t('supplierActions')}
+        </h3>
         <ul className="text-sm text-black/80 list-disc list-inside space-y-1">
-          <li>Confirm upcoming shipments and update GRN schedule.</li>
-          <li>Review outstanding invoices and share payment advice.</li>
-          <li>Resolve open quality complaints with QA evidence.</li>
+          <li>{t('action1')}</li>
+          <li>{t('action2')}</li>
+          <li>{t('action3')}</li>
         </ul>
       </div>
     </div>

@@ -38,7 +38,7 @@ export default function PriceLists() {
             <select
               value={selectedCountry}
               onChange={(e) => setSelectedCountry(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
             >
               <option value="US">United States</option>
               <option value="PK">Pakistan</option>
@@ -50,7 +50,7 @@ export default function PriceLists() {
             <select
               value={selectedChannel}
               onChange={(e) => setSelectedChannel(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
             >
               <option value="All">All Channels</option>
               <option value="GT">GT</option>

@@ -66,7 +66,7 @@ export default function MakePaymentPage() {
   }
 
   return (
-    <AuthGuard allowedRoles={['distributor']}>
+    <AuthGuard allowedRoles={['distributor', 'sales_officer']}>
       <OSDomainPageWrapper
         title="Make a Payment"
         description="Create a new payment using your preferred payment method"

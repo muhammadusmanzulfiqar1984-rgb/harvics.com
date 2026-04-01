@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "sv",
+    "language": "Swedish",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Swedish. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Swedish",
+      "translation": "Välkommen till"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Swedish",
+      "translation": "Harwich"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Swedish",
+      "translation": "Excellens inom premiumkonsumtionsvaror sedan 2019"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Swedish",
+      "translation": "Ett ledande globalt konsumentvaruföretag som levererar premiumlivsmedel i olika kategorier med internationella kvalitetsstandarder."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Swedish",
+      "translation": "Utforska produkter"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Swedish",
+      "translation": "Kontakta oss"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Swedish",
+      "translation": "Läs mer"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Swedish",
+      "translation": "Excellence inom premiumkonsumtionsvaror sedan"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Swedish",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Swedish",
+      "translation": "London • Milano • New York"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Swedish",
+      "translation": "Bageri"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Swedish",
+      "translation": "Drycker"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Swedish",
+      "translation": "Konfektyr"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Swedish",
+      "translation": "Kulinarisk"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Swedish",
+      "translation": "Frysta livsmedel"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Swedish",
+      "translation": "Pasta"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Swedish",
+      "translation": "Snacks"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Swedish",
+      "translation": "ESG-rapport 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Swedish",
+      "translation": "London • Milano • New York"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Swedish",
+      "translation": "Hem"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Swedish",
+      "translation": "Om"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Swedish",
+      "translation": "Om oss"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Swedish",
+      "translation": "Varumärkesberättelse"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Swedish",
+      "translation": "Produkter"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Swedish",
+      "translation": "Våra produkter"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Swedish",
+      "translation": "Visa alla produkter"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Swedish",
+      "translation": "CSR"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Swedish",
+      "translation": "Investerarrelationer"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Swedish",
+      "translation": "Investerare"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Swedish",
+      "translation": "Media"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Swedish",
+      "translation": "Kontakta oss"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Swedish",
+      "translation": "Harvics hus"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Swedish",
+      "translation": "Länder"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Swedish",
+      "translation": "Portaler"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Swedish",
+      "translation": "Logga in"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Swedish",
+      "translation": "Önskelista"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Swedish",
+      "translation": "Kundvagn"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Swedish",
+      "translation": "Hjälp"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Swedish",
+      "translation": "Hitta butik"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Swedish",
+      "translation": "Pengar"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Swedish",
+      "translation": "Försäljning"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Swedish",
+      "translation": "Erbjudanden"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Swedish",
+      "translation": "Mörkt läge"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Swedish",
+      "translation": "Kreditkort"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Swedish",
+      "translation": "M&S Rewards-kreditkort"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Swedish",
+      "translation": "Klubbbelöningar"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Swedish",
+      "translation": "Våra kreditkort"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Swedish",
+      "translation": "Försäkring"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Swedish",
+      "translation": "Hemförsäkring"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Swedish",
+      "translation": "Reseförsäkring"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Swedish",
+      "translation": "Resetjänster"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Swedish",
+      "translation": "Resepengar"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Swedish",
+      "translation": "Växelkurser"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Swedish",
+      "translation": "Ytterligare tjänster"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Swedish",
+      "translation": "Sparande och investeringar"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Swedish",
+      "translation": "Personliga lån"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Swedish",
+      "translation": "Ekonomiskt stöd"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Swedish",
+      "translation": "Nuvarande försäljning"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Swedish",
+      "translation": "Spel"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Swedish",
+      "translation": "Säsongsrea"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Swedish",
+      "translation": "Specialerbjudanden"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Swedish",
+      "translation": "Kampanjer"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Swedish",
+      "translation": "Rabatter för stora beställningar"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Swedish",
+      "translation": "Våra produkter"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Swedish",
+      "translation": "Visa alla produkter"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Swedish",
+      "translation": "Våra produktkategorier"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Swedish",
+      "translation": "Upptäck vårt premiumsortiment av produkter tillverkade med omsorg och excellens."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Swedish",
+      "translation": "Nivå 1: Kategorier"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Swedish",
+      "translation": "Nivå 2: Moduler"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Swedish",
+      "translation": "Nivå 3: KPI-skärmar"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Swedish",
+      "translation": "Nivå 4: Åtgärder"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Swedish",
+      "translation": "Återställ navigering"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Swedish",
+      "translation": "Inga underkategorier tillgängliga för den här kategorin."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Swedish",
+      "translation": "Produkter"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Swedish",
+      "translation": "Underkategorier"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Swedish",
+      "translation": "Bageri"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Swedish",
+      "translation": "Nybakade varor och bakverk."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Swedish",
+      "translation": "Drycker"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Swedish",
+      "translation": "Uppfriskande drycker för alla tillfällen."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Swedish",
+      "translation": "Konfektyr"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Swedish",
+      "translation": "Söta godsaker och läckerheter."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Swedish",
+      "translation": "Kulinarisk"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Swedish",
+      "translation": "Viktiga ingredienser för ditt kök."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Swedish",
+      "translation": "Frysta livsmedel"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Swedish",
+      "translation": "Bekväma och läckra frysta måltider."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Swedish",
+      "translation": "Pasta"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Swedish",
+      "translation": "Autentiska pastasorter."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Swedish",
+      "translation": "Snacks"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Swedish",
+      "translation": "Smakrika snacks för alla tider på dygnet."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Swedish",
+      "translation": "Om Harvics"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Swedish",
+      "translation": "Excellens inom premiumkonsumtionsvaror sedan 2019"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Swedish",
+      "translation": "Vår berättelse"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Swedish",
+      "translation": "Harvics grundades 2019 och har vuxit från en visionär idé till en global ledare inom premiumkonsumtionsvaror. Vår resa kännetecknas av en obeveklig strävan efter kvalitet och ett engagemang för innovation."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Swedish",
+      "translation": "Vi är verksamma i fler än 40 länder och levererar produkter som berikar liv och sätter nya standarder i branschen. Från vår ödmjuka början till vår globala närvaro har våra värderingar förblivit oförändrade."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Swedish",
+      "translation": "Etablerat 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Swedish",
+      "translation": "40+ länder"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Swedish",
+      "translation": "6 produktlinjer"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Swedish",
+      "translation": "Företagens sociala ansvar"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Swedish",
+      "translation": "På Harvics är vi engagerade i att göra en positiv skillnad i världen. Våra CSR-initiativ fokuserar på hållbarhet, samhällsengagemang och etiska affärsmetoder."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Swedish",
+      "translation": "År av inverkan"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Swedish",
+      "translation": "Länder som nåtts"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Swedish",
+      "translation": "Liv berörda"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Swedish",
+      "translation": "Våra viktigaste initiativ"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Swedish",
+      "translation": "Vi fokuserar på fyra huvudpelare för att driva hållbar förändring och skapa gemensamt värde för alla intressenter."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Swedish",
+      "translation": "Hållbarhet"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Swedish",
+      "translation": "Minska vårt miljöavtryck genom förnybar energi och avfallsminskning."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Swedish",
+      "translation": "Förnybar energi"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Swedish",
+      "translation": "Avfall omdirigeras"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Swedish",
+      "translation": "Koldioxidreduktion"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Swedish",
+      "translation": "Samhällsstöd"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Swedish",
+      "translation": "Att stärka lokalsamhällen genom utbildning, hälso- och sjukvård och ekonomisk utveckling."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Swedish",
+      "translation": "Familjer som stöds"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Swedish",
+      "translation": "Aktiva program"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Swedish",
+      "translation": "Volontärer"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Swedish",
+      "translation": "Utbildning"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Swedish",
+      "translation": "Att ge tillgång till högkvalitativ utbildning och stipendier för missgynnade studenter."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Swedish",
+      "translation": "Stipendier"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Swedish",
+      "translation": "Partnerskolor"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Swedish",
+      "translation": "Studenter som påverkas"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Swedish",
+      "translation": "Hälsa och välbefinnande"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Swedish",
+      "translation": "Förbättra tillgången till hälso- och sjukvård och näring i underförsörjda regioner."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Swedish",
+      "translation": "Hälsokampanjer"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Swedish",
+      "translation": "Människor som betjänas"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Swedish",
+      "translation": "Mobila kliniker"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Swedish",
+      "translation": "Bästa CSR-initiativet"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Swedish",
+      "translation": "Hyllade för vårt innovativa förhållningssätt till socialt ansvarstagande."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Swedish",
+      "translation": "Samhällsmästare"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Swedish",
+      "translation": "Prisbelönt för våra omfattande samhällsinsatser."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Swedish",
+      "translation": "Globalt hållbarhetspris"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Swedish",
+      "translation": "Erkända för vårt engagemang för koldioxidneutralitet."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Swedish",
+      "translation": "Vår påverkan"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Swedish",
+      "translation": "Att erkänna våra milstolpar i att skapa en bättre värld."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Swedish",
+      "translation": "Följ med oss och gör skillnad"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Swedish",
+      "translation": "Samarbeta med oss eller lär dig mer om hur vi bygger en hållbar framtid."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Swedish",
+      "translation": "Kontakta CSR-teamet"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Swedish",
+      "translation": "Läs mer"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Swedish",
+      "translation": "Kontakta oss"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Swedish",
+      "translation": "Vi vill gärna höra från dig. Kontakta oss via någon av dessa kanaler."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Swedish",
+      "translation": "Telefon"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Swedish",
+      "translation": "E-post"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Swedish",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Swedish",
+      "translation": "Ring nu"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Swedish",
+      "translation": "Skicka e-post"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Swedish",
+      "translation": "Meddela oss"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Swedish",
+      "translation": "Mediecenter"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Swedish",
+      "translation": "Mediecenter | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Swedish",
+      "translation": "Pressresurser, varumärkestillgångar och de senaste nyheterna från Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Swedish",
+      "translation": "Företags"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Swedish",
+      "translation": "Nyheter och pressmeddelanden"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Swedish",
+      "translation": "Senaste tillkännagivanden, marknadsexpansioner, produktlanseringar och företagsuppdateringar från Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Swedish",
+      "translation": "Läs senaste nyheterna"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Swedish",
+      "translation": "Bildgalleri"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Swedish",
+      "translation": "Högupplösta varumärkestillgångar, produktfotografering, bilder från anläggningar och evenemangsbevakning för medieanvändning."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Swedish",
+      "translation": "Bläddra i galleriet"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Swedish",
+      "translation": "Mediekontakter"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Swedish",
+      "translation": "Kontakta vårt kommunikationsteam för pressförfrågningar, intervjuförfrågningar och partnerskapsmeddelanden."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Swedish",
+      "translation": "Kontakta pressteamet"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Swedish",
+      "translation": "Marknader som täcks"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Swedish",
+      "translation": "Branschvertikaler"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Swedish",
+      "translation": "Grundat i Dubai"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Swedish",
+      "translation": "Språk som stöds"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Swedish",
+      "translation": "Senaste rubrikerna"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Swedish",
+      "translation": "Harvics expanderar sin dagligvaruverksamhet till 5 nya sydostasiatiska marknader"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Swedish",
+      "translation": "Ny AI-driven leveranskedjeplattform lanserad för global distribution"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Swedish",
+      "translation": "Harvics når koldioxidneutral milstolpe i alla anläggningar"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Swedish",
+      "translation": "Strategiskt partnerskap med ledande textiltillverkare i Sydasien"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Swedish",
+      "translation": "Harvics hus"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Swedish",
+      "translation": "Ett arv av excellens och tradition"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Swedish",
+      "translation": "Välkommen till Harvics hus"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Swedish",
+      "translation": "Harvics House representerar höjdpunkten i vårt engagemang för kvalitet och arv. Här samlar vi det finaste urvalet av våra premiumprodukter, presenterade i en miljö som återspeglar våra värderingar elegans, tradition och innovation."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Swedish",
+      "translation": "Utforska våra exklusiva kollektioner och upptäck historien bakom varje produkt som bär namnet Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Swedish",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Swedish",
+      "translation": "Excellens inom premiumkonsumtionsvaror sedan 2019"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Swedish",
+      "translation": "Ett ledande globalt konsumentvaruföretag som levererar premiumlivsmedel i olika kategorier med internationella kvalitetsstandarder."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Swedish",
+      "translation": "London • Milano • New York"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Swedish",
+      "translation": "Sedan 2019"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Swedish",
+      "translation": "Harvics Nyheter"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Swedish",
+      "translation": "Prenumerera för att få aviseringar och uppdateringar"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Swedish",
+      "translation": "Registrera dig"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Swedish",
+      "translation": "Problem med efterlevnaden"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Swedish",
+      "translation": "Säg ifrån om du har funderingar kring efterlevnad eller etik"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Swedish",
+      "translation": "Säg ifrån"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Swedish",
+      "translation": "Kontakta oss"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Swedish",
+      "translation": "Kontakta vårt team"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Swedish",
+      "translation": "Kontakta oss"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Swedish",
+      "translation": "Användbara länkar"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Swedish",
+      "translation": "Fråga Harwich"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Swedish",
+      "translation": "Sök efter jobb"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Swedish",
+      "translation": "Registrera dig för nyheter"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Swedish",
+      "translation": "Företag"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Swedish",
+      "translation": "Globala adresser"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Swedish",
+      "translation": "Strategi"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Swedish",
+      "translation": "Vårt ledarskap"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Swedish",
+      "translation": "Varumärken A-Ö"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Swedish",
+      "translation": "Vår historia"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Swedish",
+      "translation": "Hållbarhet"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Swedish",
+      "translation": "Nyheter"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Swedish",
+      "translation": "Mediekontakter"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Swedish",
+      "translation": "Bilder"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Swedish",
+      "translation": "Investerare"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Swedish",
+      "translation": "Bolagsstyrning"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Swedish",
+      "translation": "Aktier, ADR:er och obligationer"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Swedish",
+      "translation": "Publikationer"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Swedish",
+      "translation": "Följ oss på"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Swedish",
+      "translation": "0 nummer"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Swedish",
+      "translation": "Webbplatskarta"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Swedish",
+      "translation": "Avsluta prenumerationen"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Swedish",
+      "translation": "Hjälp"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Swedish",
+      "translation": "Privatliv"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Swedish",
+      "translation": "Småkakor"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Swedish",
+      "translation": "Användarvillkor"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Swedish",
+      "translation": "Tillgänglighet"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Swedish",
+      "translation": "Koldioxideffektivitet"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Swedish",
+      "translation": "Leverantörer"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Swedish",
+      "translation": "Sociala medier"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Swedish",
+      "translation": "Cookie-inställningar"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Swedish",
+      "translation": "Premiumkvalitet"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Swedish",
+      "translation": "E-postadress"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Swedish",
+      "translation": "Ange din e-postadress"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Swedish",
+      "translation": "Prenumerera"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Swedish",
+      "translation": "Prenumererar..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Swedish",
+      "translation": "Om oss"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Swedish",
+      "translation": "Media"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Swedish",
+      "translation": "Sök efter produkter, varumärken eller kategorier"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Swedish",
+      "translation": "Inga resultat hittades"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Swedish",
+      "translation": "Sökande..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Swedish",
+      "translation": "Resultat"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Swedish",
+      "translation": "Chatta med oss"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Swedish",
+      "translation": "Skriv ditt meddelande..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Swedish",
+      "translation": "Skicka"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Swedish",
+      "translation": "Nära"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Swedish",
+      "translation": "Hej! Hur kan jag hjälpa dig idag?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Swedish",
+      "translation": "Jag är ledsen, jag förstod inte det. Kan du formulera det om?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Swedish",
+      "translation": "Jag kan hjälpa dig med produktinformation, beställningar eller allmänna frågor. Vad vill du veta?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Swedish",
+      "translation": "För mer hjälp, vänligen kontakta oss på support@harvics.com eller ring +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Swedish",
+      "translation": "Chatta med oss"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Swedish",
+      "translation": "Belastning..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Swedish",
+      "translation": "Fel"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Swedish",
+      "translation": "Framgång"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Swedish",
+      "translation": "Spara"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Swedish",
+      "translation": "Avboka"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Swedish",
+      "translation": "Radera"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Swedish",
+      "translation": "Redigera"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Swedish",
+      "translation": "Se"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Swedish",
+      "translation": "Överlämna"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Swedish",
+      "translation": "Söka"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Swedish",
+      "translation": "Filtrera"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Swedish",
+      "translation": "Rensa"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Swedish",
+      "translation": "Ladda ner"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Swedish",
+      "translation": "Ladda upp"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Swedish",
+      "translation": "Ja"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Swedish",
+      "translation": "Inga"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Swedish",
+      "translation": "Nära"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Swedish",
+      "translation": "Tillbaka"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Swedish",
+      "translation": "Nästa"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Swedish",
+      "translation": "Tidigare"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Swedish",
+      "translation": "Åtgärder"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Swedish",
+      "translation": "Status"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Swedish",
+      "translation": "Datum"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Swedish",
+      "translation": "Namn"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Swedish",
+      "translation": "E-post"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Swedish",
+      "translation": "Telefon"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Swedish",
+      "translation": "Adress"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Swedish",
+      "translation": "Land"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Swedish",
+      "translation": "Stad"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Swedish",
+      "translation": "Alla"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Swedish",
+      "translation": "Ingen"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Swedish",
+      "translation": "Välja"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Swedish",
+      "translation": "Välj språk"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Swedish",
+      "translation": "Välj land"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Swedish",
+      "translation": "Visa mer"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Swedish",
+      "translation": "Visa mindre"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Swedish",
+      "translation": "Nödvändig"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Swedish",
+      "translation": "Meny"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Swedish",
+      "translation": "Visa produkter"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Swedish",
+      "translation": "Spela musik"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Swedish",
+      "translation": "Pausa musik"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Swedish",
+      "translation": "Stäng av musiken"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Swedish",
+      "translation": "Slå på musikljud"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Swedish",
+      "translation": "Vår globala räckvidd"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Swedish",
+      "translation": "Sedan"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Swedish",
+      "translation": "Stormarknad"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Swedish",
+      "translation": "Stora marknader"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Swedish",
+      "translation": "Närvaro"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Swedish",
+      "translation": "Länder som betjänas"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Swedish",
+      "translation": "Stora marknader"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Swedish",
+      "translation": "Produktkategorier"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Swedish",
+      "translation": "Etablerad"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Swedish",
+      "translation": "Territoriumshierarki"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Swedish",
+      "translation": "Hela sökvägen"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Swedish",
+      "translation": "Nuvarande territorium"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Swedish",
+      "translation": "Inga artiklar"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Swedish",
+      "translation": "Klot"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Swedish",
+      "translation": "Kontinent"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Swedish",
+      "translation": "Område"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Swedish",
+      "translation": "Land"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Swedish",
+      "translation": "Stad"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Swedish",
+      "translation": "Distrikt"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Swedish",
+      "translation": "Plats"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Swedish",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Swedish",
+      "translation": "Global"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Swedish",
+      "translation": "Välj region"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Swedish",
+      "translation": "Kunduppgifter"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Swedish",
+      "translation": "Vald"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Swedish",
+      "translation": "Fullständigt namn"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Swedish",
+      "translation": "Ange ditt fullständiga namn"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Swedish",
+      "translation": "Namn krävs"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Swedish",
+      "translation": "E-postadress"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Swedish",
+      "translation": "din.e-postadress@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Swedish",
+      "translation": "E-postadress krävs"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Swedish",
+      "translation": "Ange en giltig e-postadress"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Swedish",
+      "translation": "Telefonnummer"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Swedish",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Swedish",
+      "translation": "Telefonnummer krävs"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Swedish",
+      "translation": "Adress"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Swedish",
+      "translation": "Din adress"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Swedish",
+      "translation": "Adress krävs"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Swedish",
+      "translation": "Jag godkänner att ta emot marknadsföringskommunikation och uppdateringar"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Swedish",
+      "translation": "Skicka in och fortsätt"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Swedish",
+      "translation": "Skickar in..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Swedish",
+      "translation": "Hoppa över och fortsätt"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Swedish",
+      "translation": "Viktiga prestationsindikatorer"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Swedish",
+      "translation": "Beställningar idag"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Swedish",
+      "translation": "Skickat via Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Swedish",
+      "translation": "Väntande leveranser"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Swedish",
+      "translation": "Över tilldelade rutter"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Swedish",
+      "translation": "Återförsäljare"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Swedish",
+      "translation": "Aktiva uttag inom omfattningen"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Swedish",
+      "translation": "T & A-poäng"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Swedish",
+      "translation": "Områdestäckning"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Swedish",
+      "translation": "Finans och lager"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Swedish",
+      "translation": "Lågt lager SKU:er"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Swedish",
+      "translation": "Utlösa påfyllning"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Swedish",
+      "translation": "Utestående fakturor"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Swedish",
+      "translation": "Förfaller till upphämtning"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Swedish",
+      "translation": "Kreditgräns"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Swedish",
+      "translation": "Tilldelad av ekonomiavdelningen"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Swedish",
+      "translation": "Automatisk godkännande, lagerpåfyllning och fakturapåminnelser aktiverade"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Swedish",
+      "translation": "Självgodkännande"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Swedish",
+      "translation": "Lagerpåfyllning"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Swedish",
+      "translation": "Fakturapåminnelser"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Swedish",
+      "translation": "AI-rekommendationer"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Swedish",
+      "translation": "Risknivå"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Swedish",
+      "translation": "Baserat på kreditutnyttjande och betalningshistorik"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Swedish",
+      "translation": "Föreslagen ordning"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Swedish",
+      "translation": "AI-rekommenderade SKU:er att beställa"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Swedish",
+      "translation": "Nästa åtgärd"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Swedish",
+      "translation": "Åtgärder och vägledning"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Swedish",
+      "translation": "Klagomål"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Swedish",
+      "translation": "Återförsäljarproblem väntar på åtgärd"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Swedish",
+      "translation": "Spelbok"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Swedish",
+      "translation": "Prioritera väntande leveranser före middagstid."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Swedish",
+      "translation": "Avsluta alla utestående klagomål inom 48 timmar."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Swedish",
+      "translation": "Utlös påfyllning för SKU:er med lågt lager (automatisk inköpsorder)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Swedish",
+      "translation": "Territorium"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Swedish",
+      "translation": "Beställningar denna månad"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Swedish",
+      "translation": "Väntande beställningar"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Swedish",
+      "translation": "Levererade beställningar"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Swedish",
+      "translation": "Information om territorium"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Swedish",
+      "translation": "Land"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Swedish",
+      "translation": "Stad"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Swedish",
+      "translation": "Område"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Swedish",
+      "translation": "Snabbåtgärder"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Swedish",
+      "translation": "Ny beställning"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Swedish",
+      "translation": "Visa beställningar"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Swedish",
+      "translation": "Visa fakturor"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Swedish",
+      "translation": "Profilinställningar"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Swedish",
+      "translation": "Laddar instrumentpanelen..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Swedish",
+      "translation": "Fel"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Swedish",
+      "translation": "Mina beställningar"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Swedish",
+      "translation": "Order-ID"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Swedish",
+      "translation": "Datum"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Swedish",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Swedish",
+      "translation": "Föremål"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Swedish",
+      "translation": "Totalbelopp"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Swedish",
+      "translation": "Åtgärder"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Swedish",
+      "translation": "Visa detaljer"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Swedish",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Swedish",
+      "translation": "Startdatum"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Swedish",
+      "translation": "Slutdatum"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Swedish",
+      "translation": "Alla statusar"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Swedish",
+      "translation": "Rensa filter"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Swedish",
+      "translation": "I avvaktan på"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Swedish",
+      "translation": "Bearbetning"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Swedish",
+      "translation": "Levererad"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Swedish",
+      "translation": "Avbruten"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Swedish",
+      "translation": "Inga beställningar hittades"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Swedish",
+      "translation": "Läser in beställningar..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Swedish",
+      "translation": "Sida"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Swedish",
+      "translation": "av"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Swedish",
+      "translation": "Tidigare"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Swedish",
+      "translation": "Nästa"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Swedish",
+      "translation": "Orderinformation"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Swedish",
+      "translation": "Tillbaka till beställningar"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Swedish",
+      "translation": "Order-ID"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Swedish",
+      "translation": "Status"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Swedish",
+      "translation": "Beställningsdatum"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Swedish",
+      "translation": "Leveransdatum"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Swedish",
+      "translation": "Leveransadress"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Swedish",
+      "translation": "Anteckningar"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Swedish",
+      "translation": "Beställningsartiklar"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Swedish",
+      "translation": "Produkt"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Swedish",
+      "translation": "Artikelnummer"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Swedish",
+      "translation": "Kvantitet"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Swedish",
+      "translation": "Enhetspris"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Swedish",
+      "translation": "Total"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Swedish",
+      "translation": "Totalbelopp"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Swedish",
+      "translation": "Statustidslinje"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Swedish",
+      "translation": "Beställningen hittades inte"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Swedish",
+      "translation": "Skapa ny beställning"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Swedish",
+      "translation": "Beställningsartiklar"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Swedish",
+      "translation": "Lägg till objekt"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Swedish",
+      "translation": "Inga objekt har lagts till ännu. Klicka på \"Lägg till objekt\" för att börja."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Swedish",
+      "translation": "Orderinformation"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Swedish",
+      "translation": "Leveransdatum"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Swedish",
+      "translation": "Leveransadress"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Swedish",
+      "translation": "Anteckningar"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Swedish",
+      "translation": "Totalbelopp"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Swedish",
+      "translation": "Skapa beställning"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Swedish",
+      "translation": "Skapar ordning..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Swedish",
+      "translation": "Avboka"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Swedish",
+      "translation": "Välj produkt"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Swedish",
+      "translation": "Produkt"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Swedish",
+      "translation": "Kvantitet"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Swedish",
+      "translation": "Enhetspris"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Swedish",
+      "translation": "Ta bort"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Swedish",
+      "translation": "Delsumma"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Swedish",
+      "translation": "Order-ID"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Swedish",
+      "translation": "Minst en beställningsartikel krävs"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Swedish",
+      "translation": "Produkten är obligatorisk"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Swedish",
+      "translation": "Kvantiteten måste vara större än 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Swedish",
+      "translation": "Enhetspriset får inte vara negativt"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Swedish",
+      "translation": "Ogiltigt format för leveransdatum"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Swedish",
+      "translation": "Leveransdatumet får inte vara i det förflutna"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Swedish",
+      "translation": "Mina fakturor"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Swedish",
+      "translation": "Fakturanummer"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Swedish",
+      "translation": "Fakturadatum"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Swedish",
+      "translation": "Två datum"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Swedish",
+      "translation": "Belopp"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Swedish",
+      "translation": "Betalt belopp"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Swedish",
+      "translation": "Betalningsstatus"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Swedish",
+      "translation": "Betalningsstatus"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Swedish",
+      "translation": "Alla statusar"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Swedish",
+      "translation": "Rensa filter"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Swedish",
+      "translation": "Betald"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Swedish",
+      "translation": "Obetald"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Swedish",
+      "translation": "Partiell"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Swedish",
+      "translation": "Inga fakturor hittades"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Swedish",
+      "translation": "Laddar fakturor..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Swedish",
+      "translation": "Min profil"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Swedish",
+      "translation": "Kontoinformation"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Swedish",
+      "translation": "Distributörs-ID"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Swedish",
+      "translation": "Territorium"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Swedish",
+      "translation": "Land"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Swedish",
+      "translation": "Stad"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Swedish",
+      "translation": "Konto skapat"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Swedish",
+      "translation": "Uppdatera profil"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Swedish",
+      "translation": "Namn"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Swedish",
+      "translation": "E-post"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Swedish",
+      "translation": "Telefon"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Swedish",
+      "translation": "Adress"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Swedish",
+      "translation": "Språk"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Swedish",
+      "translation": "Valuta"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Swedish",
+      "translation": "Spara ändringar"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Swedish",
+      "translation": "Sparande..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Swedish",
+      "translation": "Profilen har uppdaterats"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Swedish",
+      "translation": "Laddar profil..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Swedish",
+      "translation": "Ogiltigt e-postformat"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Swedish",
+      "translation": "Ogiltigt telefonformat"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Swedish",
+      "translation": "Fel"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Swedish",
+      "translation": "Belastning..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Swedish",
+      "translation": "Spara"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Swedish",
+      "translation": "Avboka"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Swedish",
+      "translation": "Tillbaka"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Swedish",
+      "translation": "Överlämna"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Swedish",
+      "translation": "Radera"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Swedish",
+      "translation": "Redigera"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Swedish",
+      "translation": "Se"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Swedish",
+      "translation": "Söka"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Swedish",
+      "translation": "Filtrera"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Swedish",
+      "translation": "Rensa"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Swedish",
+      "translation": "Tillämpas"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Swedish",
+      "translation": "Nära"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Swedish",
+      "translation": "Bekräfta"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Swedish",
+      "translation": "Ja"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Swedish",
+      "translation": "Inga"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Swedish",
+      "translation": "Juridiskt operativsystem"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Swedish",
+      "translation": "Legalt operativsystem"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Swedish",
+      "translation": "Åtkomst nekad"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Swedish",
+      "translation": "Du har inte behörighet att komma åt modulen Legal OS."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Swedish",
+      "translation": "Instrumentpanel"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Swedish",
+      "translation": "Kontrakt"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Swedish",
+      "translation": "Certifikat"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Swedish",
+      "translation": "Efterlevnad"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Swedish",
+      "translation": "Juridisk instrumentpanel"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Swedish",
+      "translation": "Översikt över juridisk verksamhet och efterlevnadsstatus"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Swedish",
+      "translation": "Aktiva varumärken"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Swedish",
+      "translation": "Aktiva kontrakt"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Swedish",
+      "translation": "Efterlevnadsstatus"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Swedish",
+      "translation": "Varumärken"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Swedish",
+      "translation": "Hantera varumärkesregistreringar och ansökningar"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Swedish",
+      "translation": "Lägg till nytt varumärke"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Swedish",
+      "translation": "Land"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Swedish",
+      "translation": "Status"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Swedish",
+      "translation": "Alla länder"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Swedish",
+      "translation": "Alla statusar"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Swedish",
+      "translation": "Rensa filter"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Swedish",
+      "translation": "Varumärke"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Swedish",
+      "translation": "Klass"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Swedish",
+      "translation": "Land"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Swedish",
+      "translation": "Ansökningsnummer"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Swedish",
+      "translation": "Status"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Swedish",
+      "translation": "Utgångsdatum"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Swedish",
+      "translation": "Åtgärder"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Swedish",
+      "translation": "Redigera varumärke"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Swedish",
+      "translation": "Lägg till nytt varumärke"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Swedish",
+      "translation": "Visa varumärke"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Swedish",
+      "translation": "Varumärke"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Swedish",
+      "translation": "Klassnummer"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Swedish",
+      "translation": "Land"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Swedish",
+      "translation": "Ansökningsnummer"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Swedish",
+      "translation": "Status"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Swedish",
+      "translation": "Utgångsdatum"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Swedish",
+      "translation": "Dokument"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Swedish",
+      "translation": "Inga dokument bifogade"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Swedish",
+      "translation": "Lägg till dokument"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Swedish",
+      "translation": "Ta bort"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Swedish",
+      "translation": "Misslyckades med att ladda varumärken"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Swedish",
+      "translation": "Det gick inte att spara varumärket. Försök igen."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Swedish",
+      "translation": "Rättsfall"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Swedish",
+      "translation": "Hantera rättsfall och spåra deras status"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Swedish",
+      "translation": "Nytt ärende"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Swedish",
+      "translation": "Ärendetitel"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Swedish",
+      "translation": "Ärendetyp"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Swedish",
+      "translation": "Land"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Swedish",
+      "translation": "Beskrivning"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Swedish",
+      "translation": "Tilldelad till"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Swedish",
+      "translation": "Status"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Swedish",
+      "translation": "Förhandlingsdatum"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Swedish",
+      "translation": "Ärendetitel"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Swedish",
+      "translation": "Typ"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Swedish",
+      "translation": "Land"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Swedish",
+      "translation": "Tilldelad till"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Swedish",
+      "translation": "Status"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Swedish",
+      "translation": "Förhandlingsdatum"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Swedish",
+      "translation": "Åtgärder"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Swedish",
+      "translation": "Öppna"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Swedish",
+      "translation": "Pågår"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Swedish",
+      "translation": "Stängd"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Swedish",
+      "translation": "Avbruten"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Swedish",
+      "translation": "Kartvy över flottan"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Swedish",
+      "translation": "Realtidsspårning av säljare och leveransfordon"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Swedish",
+      "translation": "Aktiva anställda"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Swedish",
+      "translation": "Inga aktiva anställda"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Swedish",
+      "translation": "Belastning..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Swedish",
+      "translation": "Ruttuppspelning"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Swedish",
+      "translation": "Anställd"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Swedish",
+      "translation": "Hastighet"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Swedish",
+      "translation": "Återställa"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Swedish",
+      "translation": "Spela"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Swedish",
+      "translation": "Paus"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Swedish",
+      "translation": "poäng"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Swedish",
+      "translation": "Ingen ruttdata tillgänglig"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Swedish",
+      "translation": "Laddar rutt..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Swedish",
+      "translation": "Konkurrentprodukter"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Swedish",
+      "translation": "Spåra information om konkurrenters produkter"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Swedish",
+      "translation": "Lägg till produkt"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Swedish",
+      "translation": "Lägg till konkurrentprodukt"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Swedish",
+      "translation": "Stämpla"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Swedish",
+      "translation": "SKU-namn"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Swedish",
+      "translation": "Kategori"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Swedish",
+      "translation": "Storlek"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Swedish",
+      "translation": "Pris"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Swedish",
+      "translation": "Valuta"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Swedish",
+      "translation": "Land"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Swedish",
+      "translation": "Stämpla"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Swedish",
+      "translation": "SKU-namn"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Swedish",
+      "translation": "Kategori"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Swedish",
+      "translation": "Storlek"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Swedish",
+      "translation": "Pris"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Swedish",
+      "translation": "Land"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Swedish",
+      "translation": "Datum tillagt"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Swedish",
+      "translation": "Kunde inte ladda produkterna"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Swedish",
+      "translation": "Misslyckades med att skapa produkten. Försök igen."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Swedish",
+      "translation": "Inga konkurrentprodukter hittades"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Swedish",
+      "translation": "Laddar produkter..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Swedish",
+      "translation": "Konkurrentöversikt"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Swedish",
+      "translation": "Analys och insikter om konkurrentprodukter"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Swedish",
+      "translation": "Totalt antal produkter"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Swedish",
+      "translation": "Spårade varumärken"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Swedish",
+      "translation": "Länder"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Swedish",
+      "translation": "Kategorier"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Swedish",
+      "translation": "Produkter efter varumärke"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Swedish",
+      "translation": "Produkter per land"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Swedish",
+      "translation": "Produkter efter kategori"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Swedish",
+      "translation": "Laddar statistik..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Swedish",
+      "translation": "Ingen statistik tillgänglig"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Swedish",
+      "translation": "Översikt"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Swedish",
+      "translation": "Order"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Swedish",
+      "translation": "Lager"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Swedish",
+      "translation": "Logistik"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Swedish",
+      "translation": "Finansiera"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Swedish",
+      "translation": "CRM-tjänster"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Swedish",
+      "translation": "HR"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Swedish",
+      "translation": "Verkställande"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Swedish",
+      "translation": "Investerare"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Swedish",
+      "translation": "Juridik/IMR"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Swedish",
+      "translation": "Konkurrent"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Swedish",
+      "translation": "Importera/Exportera"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Swedish",
+      "translation": "GPS-spårning"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Swedish",
+      "translation": "Lokalisering"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Swedish",
+      "translation": "Arbetsflöden"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Swedish",
+      "translation": "Administration"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Swedish",
+      "translation": "CRM-operativsystem"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Swedish",
+      "translation": "Kund 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Swedish",
+      "translation": "Kompletta kundprofiler, interaktionshistorik och relationshantering"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Swedish",
+      "translation": "Digitala kampanjer"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Swedish",
+      "translation": "Flerkanaliga marknadsföringskampanjer (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Swedish",
+      "translation": "Leads och möjligheter"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Swedish",
+      "translation": "Leadhantering, kvalificering och affärsmöjlighetspipeline"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Swedish",
+      "translation": "Kundsupport"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Swedish",
+      "translation": "Ärendehantering, kundtjänst och problemlösning"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Swedish",
+      "translation": "Lojalitetsprogram"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Swedish",
+      "translation": "Återförsäljarlojalitet, gamification och belöningshantering"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Swedish",
+      "translation": "Kund 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Swedish",
+      "translation": "Ny kund"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Swedish",
+      "translation": "Totalt antal kunder"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Swedish",
+      "translation": "Aktiv"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Swedish",
+      "translation": "Ny"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Swedish",
+      "translation": "Tillfredsställelse"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Swedish",
+      "translation": "Kundhantering"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Swedish",
+      "translation": "Visa och hantera dina kundrelationer, interaktioner och kampanjer."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Swedish",
+      "translation": "Belastning..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Swedish",
+      "translation": "Fel vid inläsning av CRM-data"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Swedish",
+      "translation": "Översikt"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Swedish",
+      "translation": "Order"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Swedish",
+      "translation": "Lager"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Swedish",
+      "translation": "Logistik"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Swedish",
+      "translation": "Finansiera"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Swedish",
+      "translation": "CRM-tjänster"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Swedish",
+      "translation": "HR"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Swedish",
+      "translation": "Verkställande"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Swedish",
+      "translation": "Investerare"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Swedish",
+      "translation": "Juridik/IMR"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Swedish",
+      "translation": "Konkurrent"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Swedish",
+      "translation": "Importera/Exportera"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Swedish",
+      "translation": "GPS-spårning"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Swedish",
+      "translation": "Lokalisering"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Swedish",
+      "translation": "Arbetsflöden"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Swedish",
+      "translation": "Administration"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Swedish",
+      "translation": "Kunder"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Swedish",
+      "translation": "Anställda"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Swedish",
+      "translation": "Vinst"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Swedish",
+      "translation": "Laddar leverantörscockpit…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Swedish",
+      "translation": "Inköpsordrar"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Swedish",
+      "translation": "Uppfostrad av Harvics"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Swedish",
+      "translation": "Leveranser / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Swedish",
+      "translation": "Godkänd denna vecka"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Swedish",
+      "translation": "Fakturor skapade"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Swedish",
+      "translation": "Väntar på betalning"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Swedish",
+      "translation": "Väntande betalningar"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Swedish",
+      "translation": "Planerad för utgivning"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Swedish",
+      "translation": "Kvalitet / klagomål"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Swedish",
+      "translation": "Öppna biljetter"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Swedish",
+      "translation": "Prognos (kommande 4 veckor)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Swedish",
+      "translation": "AI-platshållare"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Swedish",
+      "translation": "Leverantörsåtgärder"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Swedish",
+      "translation": "Bekräfta kommande leveranser och uppdatera GRN-schemat."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Swedish",
+      "translation": "Granska utestående fakturor och dela betalningsråd."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Swedish",
+      "translation": "Lös öppna kvalitetsklagomål med kvalitetssäkringsbevis."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Swedish",
+      "translation": "Användarnamn"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Swedish",
+      "translation": "Lösenord"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Swedish",
+      "translation": "E-post"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Swedish",
+      "translation": "Överlämna"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Swedish",
+      "translation": "Avboka"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Swedish",
+      "translation": "Spara"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Swedish",
+      "translation": "Radera"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Swedish",
+      "translation": "Söka"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Swedish",
+      "translation": "Filtrera"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Swedish",
+      "translation": "Återställa"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Swedish",
+      "translation": "Nära"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Swedish",
+      "translation": "Tillbaka"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Swedish",
+      "translation": "Nästa"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Swedish",
+      "translation": "Tidigare"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Swedish",
+      "translation": "Bekräfta"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Swedish",
+      "translation": "Kom ihåg mig"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Swedish",
+      "translation": "Glömt lösenordet?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Swedish",
+      "translation": "E-postadress krävs"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Swedish",
+      "translation": "Ange en giltig e-postadress"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Swedish",
+      "translation": "Produkter"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Swedish",
+      "translation": "Vilka produkter erbjuder Harvics?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Swedish",
+      "translation": "Vi erbjuder ett brett utbud av premiumlivsmedelsprodukter, inklusive konfektyr, drycker, snacks, pasta, bakverk och frysta livsmedel inom flera kategorier."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Swedish",
+      "translation": "Var kan jag köpa Harvics produkter?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Swedish",
+      "translation": "Våra produkter finns tillgängliga i butiker i över 40 länder. Använd vår butikssökfunktion eller kontaktsida för att hitta en återförsäljare nära dig."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Swedish",
+      "translation": "Erbjuder ni bulkbeställningar?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Swedish",
+      "translation": "Ja, vi erbjuder rabatter på stora beställningar för företag och återförsäljare. Besök vår sida om rabatter på stora beställningar för mer information."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Swedish",
+      "translation": "Beställningar och frakt"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Swedish",
+      "translation": "Vilka är era fraktalternativ?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Swedish",
+      "translation": "Vi erbjuder olika fraktalternativ, inklusive standard-, express- och internationell frakt. Fri frakt är tillgänglig på beställningar över $50."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Swedish",
+      "translation": "Hur lång tid tar leveransen?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Swedish",
+      "translation": "Leveranstiderna varierar beroende på plats. Standardleverans tar vanligtvis 5–7 arbetsdagar, medan expressleverans tar 2–3 arbetsdagar."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Swedish",
+      "translation": "Kan jag spåra min beställning?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Swedish",
+      "translation": "Ja, du kan spåra din beställning med hjälp av spårningsnumret som finns i din orderbekräftelse via e-post."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Swedish",
+      "translation": "Konto och betalningar"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Swedish",
+      "translation": "Hur skapar jag ett konto?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Swedish",
+      "translation": "Klicka på \"Logga in\" i rubriken och välj \"Skapa konto\" för att registrera ett nytt konto."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Swedish",
+      "translation": "Vilka betalningsmetoder accepterar ni?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Swedish",
+      "translation": "Vi accepterar alla större kreditkort, betalkort, PayPal och banköverföringar för B2B-beställningar."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Swedish",
+      "translation": "Är min betalningsinformation säker?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Swedish",
+      "translation": "Ja, vi använder kryptering enligt branschstandard för att skydda din betalningsinformation."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Swedish",
+      "translation": "Returer och återbetalningar"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Swedish",
+      "translation": "Vad är er returpolicy?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Swedish",
+      "translation": "Vi erbjuder 30 dagars returrätt för oöppnade produkter i originalförpackning. Vänligen kontakta vår kundtjänst för returtillstånd."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Swedish",
+      "translation": "Hur begär jag återbetalning?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Swedish",
+      "translation": "Kontakta vår kundtjänst med ditt ordernummer och orsaken till returen. Vi behandlar din återbetalning inom 5–7 arbetsdagar."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Swedish",
+      "translation": "Har du fortfarande frågor?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Swedish",
+      "translation": "Vår kundtjänst finns här för att hjälpa dig"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Swedish",
+      "translation": "Kontakta oss"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Swedish",
+      "translation": "Karriärer"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Swedish",
+      "translation": "Karriärer | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Swedish",
+      "translation": "Gå med i Harvics Global Ventures – utforska möjligheter i fler än 40 länder."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Swedish",
+      "translation": "Gå med oss"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Swedish",
+      "translation": "Bygg framtiden för global handel"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Swedish",
+      "translation": "Vi växer i över 40 länder. Gå med i ett team som bygger det AI-drivna operativsystemet för global handel."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Swedish",
+      "translation": "Lediga tjänster"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Swedish",
+      "translation": "Länder"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Swedish",
+      "translation": "Branschvertikaler"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Swedish",
+      "translation": "Avdelningar Anställer"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Swedish",
+      "translation": "Lediga tjänster per avdelning"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Swedish",
+      "translation": "Försäljning och distribution"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Swedish",
+      "translation": "Öka intäkterna på över 40 marknader. Områdeshantering, nyckelkunder, distributörsrelationer."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Swedish",
+      "translation": "Leveranskedja och logistik"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Swedish",
+      "translation": "Hela leveranskedjan från fabrik till hylla. Flotthantering, lagerhållning, leverans till sista milen."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Swedish",
+      "translation": "Teknologi och AI"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Swedish",
+      "translation": "Bygg Harvics OS – vår AI-drivna företagsplattform. Fullstack, ML-teknik, datavetenskap."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Swedish",
+      "translation": "Finans och treasury"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Swedish",
+      "translation": "Flervaluta-treasury, handelsfinansiering, digitala HPay-betalningar, valutahantering över regioner."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Swedish",
+      "translation": "Inköp och sourcing"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Swedish",
+      "translation": "Global inköp från fler än 15 ursprungsländer. Leverantörsrevisioner, kvalitetskontroll, direktförsäljningsprogram."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Swedish",
+      "translation": "Personalresurser"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Swedish",
+      "translation": "Talangförvärv, utbildning och utveckling samt prestationshantering över olika geografiska områden och kulturer."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Swedish",
+      "translation": "Juridik och efterlevnad"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Swedish",
+      "translation": "Handelsefterlevnad, sanktionsgranskning, immateriella rättigheter, kontraktshantering över olika jurisdiktioner."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Swedish",
+      "translation": "Marknadsföring och varumärke"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Swedish",
+      "translation": "Flerspråkiga kampanjer, innehåll med 38 språkinställningar, digital marknadsföring, varumärkesstrategi för 10 vertikaler."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Swedish",
+      "translation": "roller"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Swedish",
+      "translation": "Varför Harvics"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Swedish",
+      "translation": "Global mobilitet"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Swedish",
+      "translation": "Arbeta i Dubai, London, Karachi, Lahore och över 40 marknader"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Swedish",
+      "translation": "Tillväxtspår"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Swedish",
+      "translation": "Snabb karriärutveckling i ett skalande företag"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Swedish",
+      "translation": "AI-först-kultur"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Swedish",
+      "translation": "Arbeta med banbrytande AI och realtidsinformationssystem"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Swedish",
+      "translation": "Konkurrenskraftigt paket"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Swedish",
+      "translation": "Marknadsledande ersättning, boende och förmåner"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Swedish",
+      "translation": "Lärandebudget"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Swedish",
+      "translation": "Årlig utvecklingsbudget för kurser, konferenser och certifieringar"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Swedish",
+      "translation": "Flexibelt arbete"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Swedish",
+      "translation": "Hybridavtal med regionala hubbkontor världen över"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Swedish",
+      "translation": "Vår strategi"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Swedish",
+      "translation": "Strategi | Harwich"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Swedish",
+      "translation": "Bygga en hållbar framtid genom innovation och excellens"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Swedish",
+      "translation": "Bygga en hållbar framtid genom innovation och excellens"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Swedish",
+      "translation": "Global expansion"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Swedish",
+      "translation": "Utöka vår närvaro på tillväxtmarknader samtidigt som vi stärker vår position på etablerade marknader"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Swedish",
+      "translation": "Produktinnovation"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Swedish",
+      "translation": "Investera i forskning och utveckling för att utveckla nya produkter som möter föränderliga konsumentpreferenser"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Swedish",
+      "translation": "Hållbarhet"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Swedish",
+      "translation": "Engagerade i hållbara metoder i hela vår leveranskedja och verksamhet"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Swedish",
+      "translation": "Digital transformation"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Swedish",
+      "translation": "Utnyttja teknik för att förbättra kundupplevelsen och den operativa effektiviteten"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Swedish",
+      "translation": "Vår vision"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Swedish",
+      "translation": "Att vara världens ledande företag inom premiumkonsumtionsvaror, erkänt för kvalitet, innovation och hållbarhet."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Swedish",
+      "translation": "Harvics Global Ventures | Premium Global Trading"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Swedish",
+      "translation": "Ledande globalt handelsföretag som levererar premiumprodukter inom fler än 10 branscher. Verksamt i fler än 50 länder sedan 2019."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Swedish",
+      "translation": "Om oss | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Swedish",
+      "translation": "Upptäck hur Harvics Global Ventures blev en ledande kraft inom global handel i över 40 länder och 10 branscher."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Swedish",
+      "translation": "Kontakta oss | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Swedish",
+      "translation": "Kontakta Harvics kontor världen över i Mellanöstern, Sydasien, Europa, Afrika och Amerika."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Swedish",
+      "translation": "Produkter | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Swedish",
+      "translation": "Utforska Harvics premiumproduktsortiment inom dagligvaror, textilier, råvaror och industriella lösningar."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Swedish",
+      "translation": "Karriärer | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Swedish",
+      "translation": "Gå med i Harvics Global Ventures – utforska möjligheter i fler än 40 länder inom FMCG, textilier, logistik och teknologi."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Swedish",
+      "translation": "Mediecenter | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Swedish",
+      "translation": "Harvics mediecenter — pressmeddelanden, senaste nyheterna, varumärkestillgångar och mediekontakter."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Swedish",
+      "translation": "Vår strategi | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Swedish",
+      "translation": "Harvics strategiska vision för global expansion, innovation, hållbarhet och digital transformation."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Swedish",
+      "translation": "Företagens sociala ansvar | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Swedish",
+      "translation": "Harvics CSR-initiativ — miljöarbete, samhällsprogram och etiska affärsmetoder."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Swedish",
+      "translation": "Vanliga frågor | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Swedish",
+      "translation": "Vanliga frågor om Harvics produkter, tjänster, beställningar och global verksamhet."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Swedish",
+      "translation": "Globala platser | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Swedish",
+      "translation": "Harvics kontor och verksamheter i Mellanöstern, Sydasien, Europa, Afrika och Amerika."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Swedish",
+      "translation": "Ledningsgrupp | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Swedish",
+      "translation": "Möt ledningsgruppen som driver Harvics Global Ventures på över 40 marknader och 10 branschvertikaler."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Swedish",
+      "translation": "Hjälpcenter | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Swedish",
+      "translation": "Få hjälp med beställningar, konton, frakt och Harvics tjänster."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Swedish",
+      "translation": "Regelefterlevnad och etik | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Swedish",
+      "translation": "Harvics engagemang för regelefterlevnad, etiska affärsmetoder och globala standarder."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Swedish",
+      "translation": "Vår historia | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Swedish",
+      "translation": "Från en startup i Dubai år 2019 till ett globalt företag som spänner över 40 länder – Harvics historia."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Swedish",
+      "translation": "Nyhetsbrev | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Swedish",
+      "translation": "Prenumerera på Harvics nyhetsbrev för branschinsikter och produktlanseringar."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Swedish",
+      "translation": "Logga in | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Swedish",
+      "translation": "Logga in på ditt Harvics-konto för att hantera beställningar och få åtkomst till plattformen."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Swedish",
+      "translation": "Forskning och innovation | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Swedish",
+      "translation": "Harvics forskningsinitiativ och innovationsprogram som driver vår globala strategi."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Swedish",
+      "translation": "Investerarrelationer | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Swedish",
+      "translation": "Investerarinformation, finansiella rapporter och företagsmeddelanden från Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Swedish",
+      "translation": "Sidan hittades inte"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Swedish",
+      "translation": "404 — Sidan hittades inte"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Swedish",
+      "translation": "Sidan du söker finns inte eller har flyttats."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Swedish",
+      "translation": "Gå till startsidan"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Swedish",
+      "translation": "Gå tillbaka"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Swedish",
+      "translation": "Något gick fel"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Swedish",
+      "translation": "Något gick fel"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Swedish",
+      "translation": "Vi beklagar, men något oväntat har inträffat. Försök att uppdatera sidan."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Swedish",
+      "translation": "Försök igen"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Swedish",
+      "translation": "Ladda om sidan"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Swedish",
+      "translation": "Kontakta supporten"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Swedish",
+      "translation": "Applikationsfel"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Swedish",
+      "translation": "Kritiskt fel"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Swedish",
+      "translation": "Ett allvarligt fel uppstod. Vänligen ladda sidan igen."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Swedish",
+      "translation": "Ladda om applikationen"
+    }
+  }
+}

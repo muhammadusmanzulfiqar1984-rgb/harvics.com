@@ -76,7 +76,7 @@ export default function ReceiptsPage() {
   }
 
   return (
-    <AuthGuard allowedRoles={['distributor']}>
+    <AuthGuard allowedRoles={['distributor', 'sales_officer']}>
       <OSDomainPageWrapper
         title="Payment Receipts"
         description="Download receipts for your completed payments"

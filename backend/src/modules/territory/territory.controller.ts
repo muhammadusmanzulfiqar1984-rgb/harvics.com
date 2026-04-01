@@ -324,5 +324,10 @@ router.get('/hierarchy/:locationId', (req: Request, res: Response) => {
   }
 });
 
+// Root route — returns available territory endpoints
+router.get('/', (_req: Request, res: Response) => {
+  res.json({ success: true, message: 'Territory API', endpoints: ['/continents', '/regions', '/countries', '/cities', '/districts', '/areas', '/locations'] });
+});
+
 export default router;
 

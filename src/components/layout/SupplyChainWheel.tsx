@@ -1,144 +1,313 @@
 'use client'
 
-import React, { useState } from 'react'
-import { useScrollReveal, revealClass } from '@/hooks/useScrollReveal'
+import React, { useState, useEffect } from 'react'
 
 /**
- * SupplyChainWheel — Interactive SVG wheel showing 14 supply chain stages.
- * Ported from Supreme's supply chain visualization.
+ * SupplyChainWheel — Interactive end-to-end supply chain visualization
+ * Premium McKinsey/BCG consulting style with rotating wheel + workflow grid
  */
 
-const stages = [
-  { id: 1, label: 'Buyer Planning', desc: 'Market research, demand forecasting, product brief' },
-  { id: 2, label: 'Product Design', desc: 'Design, sampling, tech packs, development' },
-  { id: 3, label: 'Vendor Compliance', desc: 'Factory audits, certifications, ethical sourcing' },
-  { id: 4, label: 'Raw Material', desc: 'Fabric sourcing, dye lots, material testing' },
-  { id: 5, label: 'Factory Sourcing', desc: 'Supplier matching, capacity planning, MOQ negotiation' },
-  { id: 6, label: 'Manufacturing', desc: 'Cutting, sewing, assembly, finishing' },
-  { id: 7, label: 'Quality Control', desc: 'AQL inspection, lab testing, defect tracking' },
-  { id: 8, label: 'Packaging', desc: 'Inner packaging, carton packing, labeling' },
-  { id: 9, label: 'Documentation', desc: 'Commercial invoices, packing lists, COO' },
-  { id: 10, label: 'Freight & Logistics', desc: 'Booking, container loading, shipping' },
-  { id: 11, label: 'Customs Clearance', desc: 'Import documentation, duties, tariffs' },
-  { id: 12, label: 'Warehousing', desc: 'Receiving, storage, inventory management' },
-  { id: 13, label: 'Distribution', desc: 'Order fulfillment, last-mile delivery, retail' },
-  { id: 14, label: 'Consumer', desc: 'End customer, feedback, returns, loyalty' },
+const wheelLabels = [
+  'Consumers',
+  'Brands / Retailers',
+  'Wholesaler',
+  'Local transportation',
+  'Hubbing & consolidation',
+  'Freight forwarding & customs clearance',
+  'DC & transport management',
+  'Manufacturing control',
+  'Factory sourcing',
+  'Raw material sourcing',
+  'Vendor compliance',
+  'Product development',
+  'Product design',
+  'Buyer planning',
+]
+
+const workflowColumns = [
+  'Buyer planning',
+  'Product design',
+  'Product development',
+  'Vendor compliance',
+  'Factory & social control',
+  'DC & transport',
+  'Retailer'
+]
+
+const workflowRows = [
+  'Supply Chain Solutions',
+  'Importer / Wholesaler',
+  'Supplier',
+  'In-house buying office'
 ]
 
 const SupplyChainWheel: React.FC = () => {
-  const [activeStage, setActiveStage] = useState(0)
-  const { ref, isVisible } = useScrollReveal()
-  const radius = 200
+  const [hoveredLabel, setHoveredLabel] = useState<number | null>(null)
+  const [rotation, setRotation] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
+  const [hoveredBar, setHoveredBar] = useState<string | null>(null)
+  const [barProgress, setBarProgress] = useState(0)
+
+  // Continuous rotation
+  useEffect(() => {
+    if (isPaused) return
+    const interval = setInterval(() => {
+      setRotation(prev => (prev + 0.1) % 360)
+    }, 50)
+    return () => clearInterval(interval)
+  }, [isPaused])
+
+  // Animated bar progress
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBarProgress(prev => (prev + 1) % 100)
+    }, 50)
+    return () => clearInterval(interval)
+  }, [])
+
+  const radius = 180
   const centerX = 250
   const centerY = 250
 
   return (
-    <section ref={ref} className={`bg-white py-16 px-4 border-t border-b border-[#C3A35E]/20 ${revealClass(isVisible, 'up')}`}>
-      <div className="max-w-[1200px] mx-auto">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-semibold text-[#6B1F2B] mb-3" style={{ letterSpacing: '-0.02em' }}>
+    <section className="relative h-full px-6 overflow-hidden flex flex-col justify-center" style={{ background: '#ffffff' }}>
+      <div className="max-w-[1600px] mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-1" 
+            style={{ 
+              color: '#6B1F2A',
+              letterSpacing: '-0.02em',
+              fontWeight: 600
+            }}
+          >
             End-to-End Supply Chain
           </h2>
-          <p className="text-base text-[#6B1F2B]/60 max-w-[500px] mx-auto">
-            14 integrated stages from buyer planning to consumer delivery.
+          <p className="text-sm text-gray-600 max-w-2xl mx-auto">
+            Comprehensive management across every stage of the global supply chain
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
-          {/* SVG Wheel */}
-          <div className="relative">
-            <svg width="500" height="500" viewBox="0 0 500 500" className="w-full max-w-[400px] h-auto">
-              {/* Center circle */}
-              <circle cx={centerX} cy={centerY} r="60" fill="#6B1F2B" />
-              <text x={centerX} y={centerY - 8} textAnchor="middle" fill="#C3A35E" className="text-[10px] font-bold">
-                HARVICS
-              </text>
-              <text x={centerX} y={centerY + 8} textAnchor="middle" fill="#F5F1E8" className="text-[8px]">
-                Supply Chain
-              </text>
+        {/* Two-column layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+          
+          {/* LEFT SIDE: Rotating Wheel */}
+          <div className="flex flex-col items-center justify-center">
+            <div className="relative" style={{ width: 260, height: 260 }}>
+              <svg width="260" height="260" viewBox="0 0 500 500" className="w-full h-auto">
+                {/* Outer circle ring */}
+                <circle 
+                  cx={centerX} 
+                  cy={centerY} 
+                  r={radius} 
+                  fill="none" 
+                  stroke="#6B1F2A" 
+                  strokeWidth="1"
+                  opacity="0.2"
+                />
 
-              {/* Stage nodes */}
-              {stages.map((stage, idx) => {
-                const angle = (idx * 360 / stages.length - 90) * (Math.PI / 180)
-                const x = centerX + radius * Math.cos(angle)
-                const y = centerY + radius * Math.sin(angle)
-                const isActive = activeStage === idx
+                {/* Rotating group */}
+                <g transform={`rotate(${rotation} ${centerX} ${centerY})`}>
+                  {/* Connection lines */}
+                  {wheelLabels.map((_, idx) => {
+                    const angle = (idx * 360 / wheelLabels.length) * (Math.PI / 180)
+                    const x = centerX + radius * Math.cos(angle)
+                    const y = centerY + radius * Math.sin(angle)
+                    
+                    return (
+                      <line
+                        key={`line-${idx}`}
+                        x1={centerX}
+                        y1={centerY}
+                        x2={x}
+                        y2={y}
+                        stroke="#6B1F2A"
+                        strokeWidth="0.5"
+                        opacity="0.15"
+                      />
+                    )
+                  })}
 
-                return (
-                  <g key={stage.id}>
-                    {/* Line from center */}
-                    <line
-                      x1={centerX + 60 * Math.cos(angle)}
-                      y1={centerY + 60 * Math.sin(angle)}
-                      x2={x}
-                      y2={y}
-                      stroke={isActive ? '#C3A35E' : '#C3A35E'}
-                      strokeWidth={isActive ? 2 : 0.5}
-                      opacity={isActive ? 1 : 0.4}
-                    />
-                    {/* Node circle */}
-                    <circle
-                      cx={x}
-                      cy={y}
-                      r={isActive ? 22 : 18}
-                      fill={isActive ? '#6B1F2B' : '#F5F1E8'}
-                      stroke={isActive ? '#C3A35E' : '#6B1F2B'}
-                      strokeWidth={isActive ? 2 : 1}
-                      className="cursor-pointer transition-all"
-                      onMouseEnter={() => setActiveStage(idx)}
-                    />
-                    {/* Number */}
+                  {/* Label nodes */}
+                  {wheelLabels.map((label, idx) => {
+                    const angle = (idx * 360 / wheelLabels.length) * (Math.PI / 180)
+                    const x = centerX + radius * Math.cos(angle)
+                    const y = centerY + radius * Math.sin(angle)
+                    const isHovered = hoveredLabel === idx
+
+                    return (
+                      <g key={idx}>
+                        <circle
+                          cx={x}
+                          cy={y}
+                          r={isHovered ? 8 : 6}
+                          fill={isHovered ? '#E5C07B' : '#6B1F2A'}
+                          className="cursor-pointer transition-all"
+                          style={{ 
+                            filter: isHovered ? 'drop-shadow(0 0 8px rgba(229,192,123,0.6))' : 'none',
+                            transition: 'all 0.3s ease'
+                          }}
+                          onMouseEnter={() => {
+                            setHoveredLabel(idx)
+                            setIsPaused(true)
+                          }}
+                          onMouseLeave={() => {
+                            setHoveredLabel(null)
+                            setIsPaused(false)
+                          }}
+                        />
+                      </g>
+                    )
+                  })}
+                </g>
+
+                {/* Labels (non-rotating) */}
+                {wheelLabels.map((label, idx) => {
+                  const angle = ((idx * 360 / wheelLabels.length) + rotation) * (Math.PI / 180)
+                  const labelRadius = radius + 40
+                  const x = centerX + labelRadius * Math.cos(angle)
+                  const y = centerY + labelRadius * Math.sin(angle)
+                  const isHovered = hoveredLabel === idx
+
+                  return (
                     <text
+                      key={`label-${idx}`}
                       x={x}
-                      y={y + 4}
+                      y={y}
                       textAnchor="middle"
-                      fill={isActive ? '#C3A35E' : '#6B1F2B'}
-                      className="text-[10px] font-bold pointer-events-none"
+                      dominantBaseline="middle"
+                      className="text-[9px] font-medium pointer-events-none"
+                      style={{
+                        fill: isHovered ? '#E5C07B' : '#6B1F2A',
+                        fontWeight: isHovered ? 600 : 400,
+                        transform: isHovered ? `translateY(-4px)` : 'none',
+                        transition: 'all 0.3s ease',
+                        filter: isHovered ? 'drop-shadow(0 0 4px rgba(229,192,123,0.8))' : 'none'
+                      }}
                     >
-                      {stage.id}
+                      {label}
                     </text>
-                  </g>
-                )
-              })}
-            </svg>
+                  )
+                })}
+
+                {/* Center text */}
+                <g>
+                  <circle cx={centerX} cy={centerY} r="70" fill="#6B1F2A" opacity="0.95" />
+                  <text 
+                    x={centerX} 
+                    y={centerY - 10} 
+                    textAnchor="middle" 
+                    className="text-[14px] font-bold"
+                    fill="#E5C07B"
+                    style={{ letterSpacing: '1px' }}
+                  >
+                    GLOBAL SUPPLY CHAIN
+                  </text>
+                  <text 
+                    x={centerX} 
+                    y={centerY + 10} 
+                    textAnchor="middle" 
+                    className="text-[11px] font-medium"
+                    fill="#ffffff"
+                    style={{ letterSpacing: '0.5px' }}
+                  >
+                    END-TO-END MANAGEMENT
+                  </text>
+                </g>
+              </svg>
+            </div>
           </div>
 
-          {/* Detail panel */}
-          <div className="w-full lg:w-[340px] border border-[#C3A35E]/40 bg-[#F5F1E8] p-8" style={{ borderRadius: 0 }}>
-            <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-widest mb-2">
-              Stage {stages[activeStage].id} of 14
-            </div>
-            <h3 className="text-xl font-semibold text-[#6B1F2B] mb-3">
-              {stages[activeStage].label}
-            </h3>
-            <p className="text-sm text-[#6B1F2B]/60 leading-relaxed mb-6">
-              {stages[activeStage].desc}
-            </p>
-            {/* Progress */}
-            <div className="w-full h-1 bg-[#C3A35E]/20">
-              <div
-                className="h-1 bg-[#C3A35E] transition-all duration-300"
-                style={{ width: `${((activeStage + 1) / stages.length) * 100}%` }}
-              />
-            </div>
-            {/* Stage buttons */}
-            <div className="flex flex-wrap gap-1 mt-4">
-              {stages.map((_, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => setActiveStage(idx)}
-                  className={`w-6 h-6 text-[10px] font-bold border transition-all ${
-                    idx === activeStage
-                      ? 'bg-[#6B1F2B] text-[#C3A35E] border-[#6B1F2B]'
-                      : 'bg-transparent text-[#6B1F2B]/60 border-[#C3A35E]/30 hover:border-[#6B1F2B]'
-                  }`}
-                  style={{ borderRadius: 0 }}
-                >
-                  {idx + 1}
-                </button>
-              ))}
+          {/* RIGHT SIDE: Workflow Flow Lines */}
+          <div className="flex flex-col justify-center">
+            <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-100">
+              <h3 className="text-lg font-semibold mb-3" style={{ color: '#6B1F2A' }}>
+                Supply Chain Operations
+              </h3>
+              
+              {/* Column headers */}
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-36"></div>
+                {workflowColumns.map((col, idx) => (
+                  <div 
+                    key={idx} 
+                    className="text-[9px] font-semibold text-center flex-1"
+                    style={{ color: '#6B1F2A' }}
+                  >
+                    {col}
+                  </div>
+                ))}
+              </div>
+
+              {/* Horizontal animated bars */}
+              <div className="space-y-1.5">
+                {workflowRows.map((row, rowIdx) => (
+                  <div key={rowIdx} className="flex items-center gap-2">
+                    {/* Row label */}
+                    <div className="w-36 text-xs font-medium" style={{ color: '#6B1F2A' }}>
+                      {row}
+                    </div>
+                    
+                    {/* Horizontal bar with segments */}
+                    <div className="flex-1 flex gap-1">
+                      {workflowColumns.map((_, colIdx) => {
+                        const progress = (barProgress + rowIdx * 15 + colIdx * 10) % 100
+                        const isActive = progress > 50
+                        const barKey = `${rowIdx}-${colIdx}`
+                        const isHovered = hoveredBar === barKey
+
+                        return (
+                          <div
+                            key={colIdx}
+                            className="flex-1 h-6 relative overflow-hidden cursor-pointer transition-all rounded"
+                            style={{
+                              background: isActive ? '#6B1F2A' : '#E5E7EB',
+                              transform: isHovered ? 'translateY(-2px)' : 'translateY(0)',
+                              boxShadow: isHovered ? '0 4px 12px rgba(107,31,42,0.4)' : 'none'
+                            }}
+                            onMouseEnter={() => setHoveredBar(barKey)}
+                            onMouseLeave={() => setHoveredBar(null)}
+                          >
+                            {/* Flowing animation left to right */}
+                            <div
+                              className="absolute inset-0"
+                              style={{
+                                background: `linear-gradient(90deg, 
+                                  transparent 0%, 
+                                  rgba(229,192,123,0.4) 45%, 
+                                  rgba(229,192,123,0.6) 50%, 
+                                  rgba(229,192,123,0.4) 55%, 
+                                  transparent 100%)`,
+                                transform: `translateX(${progress - 100}%)`,
+                                transition: 'transform 0.05s linear'
+                              }}
+                            />
+                            
+                            {isHovered && (
+                              <div className="absolute inset-0 border-2 border-[#E5C07B]" style={{ borderRadius: 4 }} />
+                            )}
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Legend */}
+              <div className="flex items-center gap-6 mt-2 text-xs">
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 rounded" style={{ background: '#6B1F2A' }} />
+                  <span style={{ color: '#6B1F2A' }}>Active</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 rounded bg-gray-200" />
+                  <span className="text-gray-600">Inactive</span>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

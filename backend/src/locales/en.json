@@ -1,0 +1,168 @@
+{
+  "_note": "English backend translations - API responses, statuses, error messages",
+  "orders": {
+    "status": {
+      "pending": "Pending",
+      "inTransit": "In Transit",
+      "completed": "Completed",
+      "cancelled": "Cancelled",
+      "processing": "Processing",
+      "delivered": "Delivered",
+      "onHold": "On Hold"
+    },
+    "messages": {
+      "created": "Order created successfully",
+      "updated": "Order updated successfully",
+      "deleted": "Order deleted successfully",
+      "notFound": "Order not found"
+    }
+  },
+  "inventory": {
+    "categories": {
+      "frozenFoods": "Frozen Foods",
+      "culinary": "Culinary",
+      "commodities": "Commodities",
+      "industrial": "Industrial",
+      "grains": "Grains",
+      "pantry": "Pantry",
+      "confectionery": "Confectionery",
+      "natural": "Natural",
+      "homeTextiles": "Home Textiles",
+      "beverages": "Beverages"
+    },
+    "messages": {
+      "created": "Inventory item created successfully",
+      "updated": "Inventory item updated successfully",
+      "deleted": "Inventory item deleted successfully",
+      "notFound": "Inventory item not found",
+      "lowStock": "Low stock alert"
+    }
+  },
+  "crm": {
+    "segments": {
+      "wholesale": "Wholesale",
+      "distributor": "Distributor",
+      "retail": "Retail",
+      "b2b": "B2B",
+      "ecommerce": "E-commerce",
+      "direct": "Direct"
+    },
+    "stages": {
+      "lead": "Lead",
+      "qualified": "Qualified",
+      "proposal": "Proposal",
+      "negotiation": "Negotiation",
+      "closed": "Closed"
+    },
+    "messages": {
+      "customerCreated": "Customer created successfully",
+      "customerUpdated": "Customer updated successfully",
+      "customerDeleted": "Customer deleted successfully",
+      "customerNotFound": "Customer not found",
+      "leadCreated": "Lead created successfully",
+      "leadUpdated": "Lead updated successfully",
+      "leadDeleted": "Lead deleted successfully",
+      "leadNotFound": "Lead not found",
+      "campaignCreated": "Campaign created successfully",
+      "campaignUpdated": "Campaign updated successfully",
+      "campaignNotFound": "Campaign not found"
+    }
+  },
+  "hr": {
+    "departments": {
+      "sales": "Sales",
+      "operations": "Operations",
+      "finance": "Finance",
+      "hr": "Human Resources",
+      "it": "Information Technology",
+      "marketing": "Marketing",
+      "logistics": "Logistics",
+      "procurement": "Procurement",
+      "executive": "Executive",
+      "legal": "Legal"
+    },
+    "messages": {
+      "employeeCreated": "Employee record created successfully",
+      "employeeUpdated": "Employee record updated successfully",
+      "employeeDeleted": "Employee record deleted successfully",
+      "employeeNotFound": "Employee not found"
+    }
+  },
+  "finance": {
+    "status": {
+      "paid": "Paid",
+      "unpaid": "Unpaid",
+      "overdue": "Overdue",
+      "partial": "Partially Paid"
+    },
+    "messages": {
+      "invoiceCreated": "Invoice created successfully",
+      "invoiceUpdated": "Invoice updated successfully",
+      "invoiceDeleted": "Invoice deleted successfully",
+      "invoiceNotFound": "Invoice not found",
+      "paymentReceived": "Payment received successfully",
+      "paymentCreated": "Payment recorded successfully",
+      "approvalRequired": "Approval required"
+    }
+  },
+  "logistics": {
+    "status": {
+      "pending": "Pending",
+      "scheduled": "Scheduled",
+      "inTransit": "In Transit",
+      "inProgress": "In Progress",
+      "completed": "Completed",
+      "delayed": "Delayed"
+    },
+    "messages": {
+      "routeCreated": "Route created successfully",
+      "routeUpdated": "Route updated successfully",
+      "routeDeleted": "Route deleted successfully",
+      "routeNotFound": "Route not found",
+      "shipmentDispatched": "Shipment dispatched"
+    }
+  },
+  "procurement": {
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "partial": "Partial",
+      "complete": "Complete"
+    },
+    "messages": {
+      "poCreated": "Purchase order created successfully",
+      "poUpdated": "Purchase order updated successfully",
+      "poDeleted": "Purchase order deleted successfully",
+      "poNotFound": "Purchase order not found",
+      "grnCreated": "Goods received note created successfully",
+      "grnNotFound": "GRN not found",
+      "approvalPending": "Order pending approval"
+    }
+  },
+  "errors": {
+    "invalidCredentials": "Invalid username or password",
+    "unauthorized": "Unauthorized access",
+    "forbidden": "Access forbidden",
+    "notFound": "Resource not found",
+    "serverError": "Internal server error",
+    "validationError": "Validation error",
+    "duplicateEntry": "Duplicate entry",
+    "tokenExpired": "Session expired, please login again",
+    "tokenInvalid": "Invalid authentication token",
+    "missingFields": "Required fields are missing",
+    "invalidFormat": "Invalid data format",
+    "databaseError": "Database error occurred",
+    "networkError": "Network error occurred"
+  },
+  "messages": {
+    "success": "Operation completed successfully",
+    "created": "Created successfully",
+    "updated": "Updated successfully",
+    "deleted": "Deleted successfully",
+    "fetched": "Data retrieved successfully",
+    "loginSuccess": "Login successful",
+    "logoutSuccess": "Logout successful",
+    "welcome": "Welcome to Harvics OS"
+  }
+}

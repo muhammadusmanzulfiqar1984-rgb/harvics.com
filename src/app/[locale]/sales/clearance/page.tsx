@@ -28,7 +28,7 @@ export default async function ClearancePage({ params }: ClearancePageProps) {
   const clearanceProductImages = getProductImages(8)
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="pt-20">
         <section className="py-12 md:py-24 bg-gradient-to-br from-red-600 via-red-500 to-pink-500">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

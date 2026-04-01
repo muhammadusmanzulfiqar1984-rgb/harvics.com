@@ -45,7 +45,7 @@ const IndustriesMotionSlider: React.FC = () => {
   }, [])
 
   return (
-    <section ref={sectionRef} className="bg-[#F5F1E8] py-24 overflow-hidden">
+    <section ref={sectionRef} className="bg-white py-24 overflow-hidden">
       <div className={`max-w-[1200px] mx-auto px-6 mb-12 ${revealClass(isVisible, 'up')}`}>
         <div className="text-xs font-bold text-[#C3A35E] uppercase tracking-[0.2em] mb-4">
           INDUSTRIES

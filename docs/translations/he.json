@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "he",
+    "language": "Hebrew",
+    "direction": "rtl",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Hebrew. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Hebrew",
+      "translation": "ברוכים הבאים ל"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Hebrew",
+      "translation": "הארוויץ'"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Hebrew",
+      "translation": "מצוינות במוצרי צריכה פרימיום מאז 2019"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Hebrew",
+      "translation": "חברת מוצרי צריכה גלובלית מובילה המספקת מוצרי מזון איכותיים במגוון קטגוריות, בתקני איכות בינלאומיים."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Hebrew",
+      "translation": "גלה מוצרים"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Hebrew",
+      "translation": "צרו קשר"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Hebrew",
+      "translation": "למידע נוסף"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Hebrew",
+      "translation": "מצוינות במוצרי צריכה פרימיום מאז"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Hebrew",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Hebrew",
+      "translation": "לונדון • מילאנו • ניו יורק"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Hebrew",
+      "translation": "מַאֲפִיָה"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Hebrew",
+      "translation": "מַשׁקָאוֹת"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Hebrew",
+      "translation": "קונדיטוריה"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Hebrew",
+      "translation": "שֶׁל הַמִטבָּח"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Hebrew",
+      "translation": "מזון קפוא"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Hebrew",
+      "translation": "פַּסטָה"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Hebrew",
+      "translation": "חֲטִיפִים"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Hebrew",
+      "translation": "דוח ESG 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Hebrew",
+      "translation": "לונדון • מילאנו • ניו יורק"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Hebrew",
+      "translation": "בַּיִת"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Hebrew",
+      "translation": "אוֹדוֹת"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Hebrew",
+      "translation": "אודותינו"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Hebrew",
+      "translation": "סיפור המותג"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Hebrew",
+      "translation": "מוצרים"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Hebrew",
+      "translation": "המוצרים שלנו"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Hebrew",
+      "translation": "הצג את כל המוצרים"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Hebrew",
+      "translation": "אחריות חברתית תאגידית"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Hebrew",
+      "translation": "יחסי משקיעים"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Hebrew",
+      "translation": "משקיעים"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Hebrew",
+      "translation": "כְּלֵי תִקְשׁוֹרֶת"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Hebrew",
+      "translation": "צרו קשר"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Hebrew",
+      "translation": "בית הארוויץ'"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Hebrew",
+      "translation": "מדינות"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Hebrew",
+      "translation": "פורטלים"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Hebrew",
+      "translation": "כניסה"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Hebrew",
+      "translation": "רשימת משאלות"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Hebrew",
+      "translation": "עגלת קניות"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Hebrew",
+      "translation": "עֶזרָה"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Hebrew",
+      "translation": "מצא חנות"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Hebrew",
+      "translation": "כֶּסֶף"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Hebrew",
+      "translation": "מכירות"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Hebrew",
+      "translation": "מבצעים"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Hebrew",
+      "translation": "מצב כהה"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Hebrew",
+      "translation": "כרטיס אשראי"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Hebrew",
+      "translation": "כרטיס אשראי של M&S Rewards"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Hebrew",
+      "translation": "תגמולי מועדון"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Hebrew",
+      "translation": "כרטיסי האשראי שלנו"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Hebrew",
+      "translation": "ביטוח"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Hebrew",
+      "translation": "ביטוח דירה"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Hebrew",
+      "translation": "ביטוח נסיעות"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Hebrew",
+      "translation": "שירותי נסיעות"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Hebrew",
+      "translation": "כסף נסיעות"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Hebrew",
+      "translation": "שערי חליפין"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Hebrew",
+      "translation": "שירותים נוספים"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Hebrew",
+      "translation": "חסכונות והשקעות"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Hebrew",
+      "translation": "הלוואות אישיות"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Hebrew",
+      "translation": "תמיכה כספית"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Hebrew",
+      "translation": "מכירות נוכחיות"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Hebrew",
+      "translation": "מִרוָח"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Hebrew",
+      "translation": "מכירות עונתיות"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Hebrew",
+      "translation": "מבצעים מיוחדים"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Hebrew",
+      "translation": "מבצעים"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Hebrew",
+      "translation": "הנחות על הזמנות בכמויות גדולות"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Hebrew",
+      "translation": "המוצרים שלנו"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Hebrew",
+      "translation": "הצג את כל המוצרים"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Hebrew",
+      "translation": "קטגוריות המוצרים שלנו"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Hebrew",
+      "translation": "גלו את מגוון המוצרים היוקרתיים שלנו, המיוצרים בקפידה ובמצוינות."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Hebrew",
+      "translation": "רמה 1: קטגוריות"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Hebrew",
+      "translation": "רמה 2: מודולים"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Hebrew",
+      "translation": "רמה 3: מסכי KPI"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Hebrew",
+      "translation": "שלב 4: פעולות"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Hebrew",
+      "translation": "איפוס ניווט"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Hebrew",
+      "translation": "אין תת-קטגוריות זמינות עבור קטגוריה זו."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Hebrew",
+      "translation": "מוצרים"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Hebrew",
+      "translation": "תת-קטגוריות"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Hebrew",
+      "translation": "מַאֲפִיָה"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Hebrew",
+      "translation": "מאפים ומאפים טריים."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Hebrew",
+      "translation": "מַשׁקָאוֹת"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Hebrew",
+      "translation": "משקאות מרעננים לכל אירוע."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Hebrew",
+      "translation": "מַמתָקִים"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Hebrew",
+      "translation": "פינוקים מתוקים ותענוגות."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Hebrew",
+      "translation": "שֶׁל הַמִטבָּח"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Hebrew",
+      "translation": "מצרכים חיוניים למטבח שלכם."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Hebrew",
+      "translation": "מזון קפוא"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Hebrew",
+      "translation": "ארוחות קפואות נוחות וטעימות."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Hebrew",
+      "translation": "פַּסטָה"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Hebrew",
+      "translation": "זני פסטה אותנטיים."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Hebrew",
+      "translation": "חֲטִיפִים"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Hebrew",
+      "translation": "חטיפים טעימים לכל שעה ביום."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Hebrew",
+      "translation": "אודות הארוויקס"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Hebrew",
+      "translation": "מצוינות במוצרי צריכה פרימיום מאז 2019"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Hebrew",
+      "translation": "הסיפור שלנו"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Hebrew",
+      "translation": "חברת Harvics, שנוסדה בשנת 2019, צמחה מרעיון בעל חזון למובילה עולמית בתחום מוצרי צריכה פרימיום. המסע שלנו מוגדר על ידי חתירה בלתי פוסקת לאיכות ומחויבות לחדשנות."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Hebrew",
+      "translation": "אנו פועלים ביותר מ-40 מדינות, ומספקים מוצרים המעשירים חיים וקובעים סטנדרטים חדשים בתעשייה. מהתחלותינו הצנועות ועד לנוכחותנו הגלובלית, הערכים שלנו נותרו ללא שינוי."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Hebrew",
+      "translation": "נוסד בשנת 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Hebrew",
+      "translation": "40+ מדינות"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Hebrew",
+      "translation": "6 קווי מוצרים"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Hebrew",
+      "translation": "אחריות חברתית תאגידית"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Hebrew",
+      "translation": "ב-Harvics, אנו מחויבים להשפיע לטובה על העולם. יוזמות האחריות החברתית התאגידית שלנו מתמקדות בקיימות, העצמת קהילה ושיטות עסקיות אתיות."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Hebrew",
+      "translation": "שנים של השפעה"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Hebrew",
+      "translation": "מדינות שהושגו"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Hebrew",
+      "translation": "חיים שנגעו בהם"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Hebrew",
+      "translation": "היוזמות המרכזיות שלנו"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Hebrew",
+      "translation": "אנו מתמקדים בארבעה עמודי תווך עיקריים כדי להניע שינוי בר-קיימא וליצור ערך משותף לכל בעלי העניין."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Hebrew",
+      "translation": "קיימות"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Hebrew",
+      "translation": "צמצום טביעת הרגל הסביבתית שלנו באמצעות אנרגיה מתחדשת והפחתת פסולת."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Hebrew",
+      "translation": "אנרגיה מתחדשת"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Hebrew",
+      "translation": "פסולת הופחתה"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Hebrew",
+      "translation": "הפחתת פחמן"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Hebrew",
+      "translation": "תמיכה קהילתית"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Hebrew",
+      "translation": "העצמת קהילות מקומיות באמצעות חינוך, בריאות ופיתוח כלכלי."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Hebrew",
+      "translation": "משפחות נתמכות"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Hebrew",
+      "translation": "תוכניות פעילות"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Hebrew",
+      "translation": "מתנדבים"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Hebrew",
+      "translation": "הַשׂכָּלָה"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Hebrew",
+      "translation": "מתן גישה לחינוך איכותי ומלגות לתלמידים מעוטי יכולת."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Hebrew",
+      "translation": "מלגות"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Hebrew",
+      "translation": "בתי ספר שותפים"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Hebrew",
+      "translation": "סטודנטים שנפגעו"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Hebrew",
+      "translation": "בריאות ואיכות חיים"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Hebrew",
+      "translation": "שיפור הגישה לשירותי בריאות ותזונה באזורים מוחלשים."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Hebrew",
+      "translation": "קמפיינים לבריאות"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Hebrew",
+      "translation": "אנשים ששירתו"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Hebrew",
+      "translation": "מרפאות ניידות"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Hebrew",
+      "translation": "יוזמת האחריות החברתית הטובה ביותר"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Hebrew",
+      "translation": "זכו לכבוד על גישתנו החדשנית לאחריות חברתית."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Hebrew",
+      "translation": "אלוף הקהילה"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Hebrew",
+      "translation": "הוענק על תוכניות ההסברה הקהילתיות הנרחבות שלנו."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Hebrew",
+      "translation": "פרס הקיימות העולמי"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Hebrew",
+      "translation": "זוכים להכרה על מחויבותנו לנייטרליות פחמן."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Hebrew",
+      "translation": "ההשפעה שלנו"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Hebrew",
+      "translation": "להכיר באבני הדרך שלנו ביצירת עולם טוב יותר."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Hebrew",
+      "translation": "הצטרפו אלינו ועשינו שינוי"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Hebrew",
+      "translation": "הצטרפו אלינו לשיתוף פעולה או למדו עוד על האופן שבו אנו בונים עתיד בר-קיימא."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Hebrew",
+      "translation": "צור קשר עם צוות אחריות חברתית תאגידית"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Hebrew",
+      "translation": "למידע נוסף"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Hebrew",
+      "translation": "לְהִתְקַשֵׁר"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Hebrew",
+      "translation": "נשמח לשמוע ממך. צור איתנו קשר דרך כל אחד מהערוצים הבאים."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Hebrew",
+      "translation": "טֵלֵפוֹן"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Hebrew",
+      "translation": "אֶלֶקטרוֹנִי"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Hebrew",
+      "translation": "וואטסאפ"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Hebrew",
+      "translation": "התקשרו עכשיו"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Hebrew",
+      "translation": "שלח אימייל"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Hebrew",
+      "translation": "שלחו לנו הודעה"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Hebrew",
+      "translation": "מרכז המדיה"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Hebrew",
+      "translation": "מרכז מדיה | הארוויקס"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Hebrew",
+      "translation": "משאבי עיתונות, נכסי מותג והחדשות האחרונות מ-Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Hebrew",
+      "translation": "תאגידי"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Hebrew",
+      "translation": "חדשות והודעות לעיתונות"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Hebrew",
+      "translation": "הכרזות אחרונות, הרחבות שוק, השקות מוצרים ועדכונים תאגידיים מ-Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Hebrew",
+      "translation": "קרא חדשות אחרונות"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Hebrew",
+      "translation": "גלריית תמונות"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Hebrew",
+      "translation": "נכסי מותג ברזולוציה גבוהה, צילומי מוצר, תמונות ממתקנים וסיקור אירועים לשימוש תקשורתי."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Hebrew",
+      "translation": "עיון בגלריה"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Hebrew",
+      "translation": "אנשי קשר לתקשורת"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Hebrew",
+      "translation": "צרו קשר עם צוות התקשורת שלנו לקבלת פניות לעיתונות, בקשות לראיונות והכרזות על שותפויות."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Hebrew",
+      "translation": "צור קשר עם צוות העיתונות"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Hebrew",
+      "translation": "שווקים מכוסים"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Hebrew",
+      "translation": "תחומי תעשייה אנכיים"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Hebrew",
+      "translation": "נוסד בדובאי"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Hebrew",
+      "translation": "שפות נתמכות"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Hebrew",
+      "translation": "כותרות אחרונות"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Hebrew",
+      "translation": "Harvics מרחיבה את פעילות מוצרי ה-FMCG שלה ל-5 שווקים חדשים בדרום מזרח אסיה"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Hebrew",
+      "translation": "פלטפורמת שרשרת אספקה חדשה המופעלת על ידי בינה מלאכותית הושקה להפצה עולמית"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Hebrew",
+      "translation": "Harvics משיגה אבן דרך ניטרלית פחמנית בכל המתקנים"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Hebrew",
+      "translation": "שותפות אסטרטגית עם יצרני טקסטיל מובילים בדרום אסיה"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Hebrew",
+      "translation": "בית הארוויץ'"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Hebrew",
+      "translation": "מורשת של מצוינות ומסורת"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Hebrew",
+      "translation": "ברוכים הבאים לבית הארוויקס"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Hebrew",
+      "translation": "בית הארוויקס מייצג את פסגת המחויבות שלנו לאיכות ומורשת. כאן, אנו מאגדים את המבחר הטוב ביותר של מוצרי היוקרה שלנו, המוצגים בסביבה המשקפת את ערכי האלגנטיות, המסורת והחדשנות שלנו."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Hebrew",
+      "translation": "גלו את הקולקציות הבלעדיות שלנו וגלו את הסיפור שמאחורי כל מוצר הנושא את השם Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Hebrew",
+      "translation": "הארוויקס גלובל ונצ'רס"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Hebrew",
+      "translation": "מצוינות במוצרי צריכה פרימיום מאז 2019"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Hebrew",
+      "translation": "חברת מוצרי צריכה גלובלית מובילה המספקת מוצרי מזון איכותיים במגוון קטגוריות, בתקני איכות בינלאומיים."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Hebrew",
+      "translation": "לונדון • מילאנו • ניו יורק"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Hebrew",
+      "translation": "מאז 2019"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Hebrew",
+      "translation": "חדשות הרוויקס"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Hebrew",
+      "translation": "הירשמו לקבלת התראות ועדכונים"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Hebrew",
+      "translation": "הרשמה"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Hebrew",
+      "translation": "חששות בנוגע לציות"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Hebrew",
+      "translation": "דברו אם יש לכם חששות בנוגע לציות או אתיקה"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Hebrew",
+      "translation": "דברו"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Hebrew",
+      "translation": "צרו קשר"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Hebrew",
+      "translation": "צרו קשר עם הצוות שלנו"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Hebrew",
+      "translation": "צרו קשר"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Hebrew",
+      "translation": "קישורים שימושיים"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Hebrew",
+      "translation": "שאל את הארוויץ'"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Hebrew",
+      "translation": "חיפוש משרות"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Hebrew",
+      "translation": "הירשם לחדשות"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Hebrew",
+      "translation": "חֶברָה"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Hebrew",
+      "translation": "כתובות גלובליות"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Hebrew",
+      "translation": "אִסטרָטֶגִיָה"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Hebrew",
+      "translation": "המנהיגות שלנו"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Hebrew",
+      "translation": "מותגים א'-ת'"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Hebrew",
+      "translation": "ההיסטוריה שלנו"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Hebrew",
+      "translation": "קיימות"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Hebrew",
+      "translation": "חֲדָשׁוֹת"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Hebrew",
+      "translation": "אנשי קשר לתקשורת"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Hebrew",
+      "translation": "תמונות"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Hebrew",
+      "translation": "משקיעים"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Hebrew",
+      "translation": "ממשל תאגידי"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Hebrew",
+      "translation": "מניות, ADR ואג\"ח"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Hebrew",
+      "translation": "פרסומים"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Hebrew",
+      "translation": "עקבו אחרינו ב"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Hebrew",
+      "translation": "0 גיליונות"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Hebrew",
+      "translation": "מפת אתר"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Hebrew",
+      "translation": "ביטול מנוי"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Hebrew",
+      "translation": "עֶזרָה"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Hebrew",
+      "translation": "פְּרָטִיוּת"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Hebrew",
+      "translation": "עוגיות"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Hebrew",
+      "translation": "תנאי שימוש"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Hebrew",
+      "translation": "נְגִישׁוּת"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Hebrew",
+      "translation": "יעילות פחמן"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Hebrew",
+      "translation": "ספקים"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Hebrew",
+      "translation": "מדיה חברתית"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Hebrew",
+      "translation": "הגדרות קובצי Cookie"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Hebrew",
+      "translation": "איכות פרימיום"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Hebrew",
+      "translation": "כתובת דוא\"ל"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Hebrew",
+      "translation": "הזן את כתובת הדוא\"ל שלך"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Hebrew",
+      "translation": "הירשם"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Hebrew",
+      "translation": "מתבצעת הרשמה..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Hebrew",
+      "translation": "אודותינו"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Hebrew",
+      "translation": "כְּלֵי תִקְשׁוֹרֶת"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Hebrew",
+      "translation": "חיפוש מוצרים, מותגים או קטגוריות"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Hebrew",
+      "translation": "לא נמצאו תוצאות"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Hebrew",
+      "translation": "מחפש..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Hebrew",
+      "translation": "תוצאות"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Hebrew",
+      "translation": "צ'אט איתנו"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Hebrew",
+      "translation": "הקלד את ההודעה שלך..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Hebrew",
+      "translation": "לִשְׁלוֹחַ"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Hebrew",
+      "translation": "לִסְגוֹר"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Hebrew",
+      "translation": "שלום! איך אוכל לעזור לך היום?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Hebrew",
+      "translation": "סליחה, לא הבנתי. האם תוכל בבקשה לנסח מחדש?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Hebrew",
+      "translation": "אני יכול לעזור לך עם מידע על מוצרים, הזמנות או שאלות כלליות. מה תרצה לדעת?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Hebrew",
+      "translation": "לסיוע נוסף, אנא צרו עמנו קשר בכתובת support@harvics.com או התקשרו למספר ‎+1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Hebrew",
+      "translation": "צ'אט איתנו"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Hebrew",
+      "translation": "טְעִינָה..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Hebrew",
+      "translation": "שְׁגִיאָה"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Hebrew",
+      "translation": "הַצלָחָה"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Hebrew",
+      "translation": "לְהַצִיל"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Hebrew",
+      "translation": "לְבַטֵל"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Hebrew",
+      "translation": "לִמְחוֹק"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Hebrew",
+      "translation": "לַעֲרוֹך"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Hebrew",
+      "translation": "נוֹף"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Hebrew",
+      "translation": "לְהַגִישׁ"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Hebrew",
+      "translation": "לְחַפֵּשׂ"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Hebrew",
+      "translation": "לְסַנֵן"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Hebrew",
+      "translation": "בָּרוּר"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Hebrew",
+      "translation": "הורדה"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Hebrew",
+      "translation": "העלאה"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Hebrew",
+      "translation": "כֵּן"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Hebrew",
+      "translation": "לֹא"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Hebrew",
+      "translation": "לִסְגוֹר"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Hebrew",
+      "translation": "בְּחֲזָרָה"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Hebrew",
+      "translation": "הַבָּא"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Hebrew",
+      "translation": "קוֹדֵם"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Hebrew",
+      "translation": "פעולות"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Hebrew",
+      "translation": "סטָטוּס"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Hebrew",
+      "translation": "תַאֲרִיך"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Hebrew",
+      "translation": "שֵׁם"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Hebrew",
+      "translation": "אֶלֶקטרוֹנִי"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Hebrew",
+      "translation": "טֵלֵפוֹן"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Hebrew",
+      "translation": "כְּתוֹבֶת"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Hebrew",
+      "translation": "מְדִינָה"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Hebrew",
+      "translation": "עִיר"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Hebrew",
+      "translation": "כֹּל"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Hebrew",
+      "translation": "אַף לֹא אֶחָד"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Hebrew",
+      "translation": "לִבחוֹר"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Hebrew",
+      "translation": "בחר שפה"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Hebrew",
+      "translation": "בחר מדינה"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Hebrew",
+      "translation": "הצג עוד"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Hebrew",
+      "translation": "הצג פחות"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Hebrew",
+      "translation": "דָרוּשׁ"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Hebrew",
+      "translation": "תַפרִיט"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Hebrew",
+      "translation": "הצג מוצרים"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Hebrew",
+      "translation": "השמע מוזיקה"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Hebrew",
+      "translation": "השהיית מוזיקה"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Hebrew",
+      "translation": "השתקת מוזיקה"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Hebrew",
+      "translation": "בטל השתקת מוזיקה"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Hebrew",
+      "translation": "ההישג הגלובלי שלנו"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Hebrew",
+      "translation": "מֵאָז"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Hebrew",
+      "translation": "שוק ראשי"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Hebrew",
+      "translation": "שווקים עיקריים"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Hebrew",
+      "translation": "נוֹכְחוּת"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Hebrew",
+      "translation": "מדינות בהן משרתים"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Hebrew",
+      "translation": "שווקים עיקריים"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Hebrew",
+      "translation": "קטגוריות מוצרים"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Hebrew",
+      "translation": "מְבוּסָס"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Hebrew",
+      "translation": "היררכיה טריטוריאלית"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Hebrew",
+      "translation": "נתיב מלא"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Hebrew",
+      "translation": "הטריטוריה הנוכחית"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Hebrew",
+      "translation": "אין פריטים"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Hebrew",
+      "translation": "גלוֹבּוּס"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Hebrew",
+      "translation": "יַבֶּשֶׁת"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Hebrew",
+      "translation": "אֵזוֹר"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Hebrew",
+      "translation": "מְדִינָה"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Hebrew",
+      "translation": "עִיר"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Hebrew",
+      "translation": "מָחוֹז"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Hebrew",
+      "translation": "מִקוּם"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Hebrew",
+      "translation": "הארוויקס גלובל"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Hebrew",
+      "translation": "גלוֹבָּלִי"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Hebrew",
+      "translation": "בחר אזור"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Hebrew",
+      "translation": "פרטי לקוח"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Hebrew",
+      "translation": "נִבחָר"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Hebrew",
+      "translation": "שם מלא"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Hebrew",
+      "translation": "הזן את שמך המלא"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Hebrew",
+      "translation": "שם נדרש"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Hebrew",
+      "translation": "כתובת דוא\"ל"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Hebrew",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Hebrew",
+      "translation": "נדרש דוא\"ל"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Hebrew",
+      "translation": "אנא הזן כתובת דוא\"ל תקפה"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Hebrew",
+      "translation": "מספר טלפון"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Hebrew",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Hebrew",
+      "translation": "מספר טלפון נדרש"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Hebrew",
+      "translation": "כְּתוֹבֶת"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Hebrew",
+      "translation": "הכתובת שלך"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Hebrew",
+      "translation": "כתובת נדרשת"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Hebrew",
+      "translation": "אני מסכים/ה לקבל עדכונים ותקשורת שיווקית"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Hebrew",
+      "translation": "שלח והמשך"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Hebrew",
+      "translation": "הַגָשָׁה..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Hebrew",
+      "translation": "דלג והמשך"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Hebrew",
+      "translation": "מדדי ביצוע מרכזיים"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Hebrew",
+      "translation": "הזמנות היום"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Hebrew",
+      "translation": "נשלח דרך Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Hebrew",
+      "translation": "משלוחים ממתינים"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Hebrew",
+      "translation": "על פני מסלולים שהוקצו"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Hebrew",
+      "translation": "קמעונאים"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Hebrew",
+      "translation": "נקודות מכירה פעילות בהיקף"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Hebrew",
+      "translation": "ציון T & A"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Hebrew",
+      "translation": "כיסוי טריטוריאלי"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Hebrew",
+      "translation": "פיננסי ומלאי"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Hebrew",
+      "translation": "מספרי אחסון במלאי נמוכים"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Hebrew",
+      "translation": "טריגר לחידוש מלאי"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Hebrew",
+      "translation": "חשבוניות שטרם נפרעו"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Hebrew",
+      "translation": "מועד איסוף"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Hebrew",
+      "translation": "מסגרת אשראי"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Hebrew",
+      "translation": "הוקצה על ידי הכספים"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Hebrew",
+      "translation": "אישור אוטומטי, חידוש מלאי ותזכורות חשבוניות מופעלות"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Hebrew",
+      "translation": "אישור עצמי"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Hebrew",
+      "translation": "חידוש מלאי"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Hebrew",
+      "translation": "תזכורות חשבוניות"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Hebrew",
+      "translation": "המלצות לבינה מלאכותית"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Hebrew",
+      "translation": "רמת הסיכון"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Hebrew",
+      "translation": "בהתבסס על ניצול אשראי והיסטוריית תשלומים"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Hebrew",
+      "translation": "סדר מוצע"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Hebrew",
+      "translation": "מספרי מוצר מומלצים על ידי בינה מלאכותית להזמנה"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Hebrew",
+      "translation": "הפעולה הבאה"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Hebrew",
+      "translation": "פעולות והנחיות"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Hebrew",
+      "translation": "תלונות"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Hebrew",
+      "translation": "בעיות עם קמעונאים ממתינות לפעולה"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Hebrew",
+      "translation": "ספר משחקים"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Hebrew",
+      "translation": "תן עדיפות למשלוחים ממתינים לפני הצהריים."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Hebrew",
+      "translation": "סגור את כל התלונות התלויות ועומדות תוך 48 שעות."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Hebrew",
+      "translation": "הפעל חידוש מלאי עבור SKUs בעלי מלאי נמוך (יצירה אוטומטית של הזמנה)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Hebrew",
+      "translation": "שֶׁטַח"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Hebrew",
+      "translation": "הזמנות החודש"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Hebrew",
+      "translation": "הזמנות ממתינות"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Hebrew",
+      "translation": "הזמנות שנמסרו"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Hebrew",
+      "translation": "מידע על הטריטוריה"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Hebrew",
+      "translation": "מְדִינָה"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Hebrew",
+      "translation": "עִיר"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Hebrew",
+      "translation": "אֵזוֹר"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Hebrew",
+      "translation": "פעולות מהירות"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Hebrew",
+      "translation": "סדר חדש"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Hebrew",
+      "translation": "הצג הזמנות"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Hebrew",
+      "translation": "הצג חשבוניות"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Hebrew",
+      "translation": "הגדרות פרופיל"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Hebrew",
+      "translation": "טוען לוח מחוונים..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Hebrew",
+      "translation": "שְׁגִיאָה"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Hebrew",
+      "translation": "ההזמנות שלי"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Hebrew",
+      "translation": "מזהה הזמנה"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Hebrew",
+      "translation": "תַאֲרִיך"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Hebrew",
+      "translation": "סטָטוּס"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Hebrew",
+      "translation": "פריטים"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Hebrew",
+      "translation": "סכום כולל"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Hebrew",
+      "translation": "פעולות"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Hebrew",
+      "translation": "הצג פרטים"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Hebrew",
+      "translation": "סטָטוּס"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Hebrew",
+      "translation": "תאריך התחלה"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Hebrew",
+      "translation": "תאריך סיום"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Hebrew",
+      "translation": "כל הסטטוסים"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Hebrew",
+      "translation": "נקה מסננים"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Hebrew",
+      "translation": "תָלוּי וְעוֹמֵד"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Hebrew",
+      "translation": "עיבוד"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Hebrew",
+      "translation": "נמסר"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Hebrew",
+      "translation": "בּוּטלָה"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Hebrew",
+      "translation": "לא נמצאו הזמנות"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Hebrew",
+      "translation": "טוען הזמנות..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Hebrew",
+      "translation": "עַמוּד"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Hebrew",
+      "translation": "שֶׁל"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Hebrew",
+      "translation": "קוֹדֵם"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Hebrew",
+      "translation": "הַבָּא"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Hebrew",
+      "translation": "פרטי הזמנה"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Hebrew",
+      "translation": "חזרה להזמנות"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Hebrew",
+      "translation": "מזהה הזמנה"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Hebrew",
+      "translation": "סטָטוּס"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Hebrew",
+      "translation": "תאריך הזמנה"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Hebrew",
+      "translation": "תאריך אספקה"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Hebrew",
+      "translation": "כתובת למשלוח"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Hebrew",
+      "translation": "הערות"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Hebrew",
+      "translation": "הזמנת פריטים"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Hebrew",
+      "translation": "מוּצָר"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Hebrew",
+      "translation": "מק\"ט"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Hebrew",
+      "translation": "כַּמוּת"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Hebrew",
+      "translation": "מחיר ליחידה"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Hebrew",
+      "translation": "סַך הַכֹּל"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Hebrew",
+      "translation": "סכום כולל"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Hebrew",
+      "translation": "ציר זמן של סטטוס"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Hebrew",
+      "translation": "ההזמנה לא נמצאה"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Hebrew",
+      "translation": "צור הזמנה חדשה"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Hebrew",
+      "translation": "הזמנת פריטים"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Hebrew",
+      "translation": "הוסף פריט"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Hebrew",
+      "translation": "עדיין לא נוספו פריטים. לחץ על \"הוסף פריט\" כדי להתחיל."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Hebrew",
+      "translation": "פרטי הזמנה"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Hebrew",
+      "translation": "תאריך אספקה"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Hebrew",
+      "translation": "כתובת למשלוח"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Hebrew",
+      "translation": "הערות"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Hebrew",
+      "translation": "סכום כולל"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Hebrew",
+      "translation": "צור הזמנה"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Hebrew",
+      "translation": "יצירת סדר..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Hebrew",
+      "translation": "לְבַטֵל"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Hebrew",
+      "translation": "בחר מוצר"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Hebrew",
+      "translation": "מוּצָר"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Hebrew",
+      "translation": "כַּמוּת"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Hebrew",
+      "translation": "מחיר ליחידה"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Hebrew",
+      "translation": "לְהַסִיר"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Hebrew",
+      "translation": "סכום ביניים"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Hebrew",
+      "translation": "מזהה הזמנה"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Hebrew",
+      "translation": "נדרש לפחות פריט הזמנה אחד"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Hebrew",
+      "translation": "מוצר נדרש"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Hebrew",
+      "translation": "הכמות חייבת להיות גדולה מ-0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Hebrew",
+      "translation": "מחיר היחידה חייב להיות לא שלילי"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Hebrew",
+      "translation": "פורמט תאריך מסירה לא חוקי"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Hebrew",
+      "translation": "תאריך המסירה לא יכול להיות בעבר"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Hebrew",
+      "translation": "החשבוניות שלי"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Hebrew",
+      "translation": "מספר חשבונית"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Hebrew",
+      "translation": "תאריך חשבונית"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Hebrew",
+      "translation": "שני תאריכים"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Hebrew",
+      "translation": "סְכוּם"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Hebrew",
+      "translation": "סכום ששולם"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Hebrew",
+      "translation": "סטטוס תשלום"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Hebrew",
+      "translation": "סטטוס תשלום"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Hebrew",
+      "translation": "כל הסטטוסים"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Hebrew",
+      "translation": "נקה מסננים"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Hebrew",
+      "translation": "בתשלום"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Hebrew",
+      "translation": "לא שולם"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Hebrew",
+      "translation": "חֶלקִי"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Hebrew",
+      "translation": "לא נמצאו חשבוניות"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Hebrew",
+      "translation": "טוען חשבוניות..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Hebrew",
+      "translation": "הפרופיל שלי"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Hebrew",
+      "translation": "פרטי חשבון"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Hebrew",
+      "translation": "מזהה מפיץ"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Hebrew",
+      "translation": "שֶׁטַח"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Hebrew",
+      "translation": "מְדִינָה"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Hebrew",
+      "translation": "עִיר"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Hebrew",
+      "translation": "חשבון נוצר"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Hebrew",
+      "translation": "עדכון פרופיל"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Hebrew",
+      "translation": "שֵׁם"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Hebrew",
+      "translation": "אֶלֶקטרוֹנִי"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Hebrew",
+      "translation": "טֵלֵפוֹן"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Hebrew",
+      "translation": "כְּתוֹבֶת"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Hebrew",
+      "translation": "שָׂפָה"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Hebrew",
+      "translation": "מַטְבֵּעַ"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Hebrew",
+      "translation": "שמירת שינויים"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Hebrew",
+      "translation": "חִסָכוֹן..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Hebrew",
+      "translation": "הפרופיל עודכן בהצלחה"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Hebrew",
+      "translation": "טוען פרופיל..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Hebrew",
+      "translation": "פורמט אימייל לא חוקי"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Hebrew",
+      "translation": "פורמט טלפון לא חוקי"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Hebrew",
+      "translation": "שְׁגִיאָה"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Hebrew",
+      "translation": "טְעִינָה..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Hebrew",
+      "translation": "לְהַצִיל"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Hebrew",
+      "translation": "לְבַטֵל"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Hebrew",
+      "translation": "בְּחֲזָרָה"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Hebrew",
+      "translation": "לְהַגִישׁ"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Hebrew",
+      "translation": "לִמְחוֹק"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Hebrew",
+      "translation": "לַעֲרוֹך"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Hebrew",
+      "translation": "נוֹף"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Hebrew",
+      "translation": "לְחַפֵּשׂ"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Hebrew",
+      "translation": "לְסַנֵן"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Hebrew",
+      "translation": "בָּרוּר"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Hebrew",
+      "translation": "לִפְנוֹת"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Hebrew",
+      "translation": "לִסְגוֹר"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Hebrew",
+      "translation": "לְאַשֵׁר"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Hebrew",
+      "translation": "כֵּן"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Hebrew",
+      "translation": "לֹא"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Hebrew",
+      "translation": "מערכת הפעלה משפטית"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Hebrew",
+      "translation": "מערכת הפעלה חוקית"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Hebrew",
+      "translation": "הגִישָׁה נִדחֲתָה"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Hebrew",
+      "translation": "אין לך הרשאה לגשת למודול Legal OS."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Hebrew",
+      "translation": "לוּחַ מַחווָנִים"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Hebrew",
+      "translation": "חוזים"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Hebrew",
+      "translation": "תעודות"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Hebrew",
+      "translation": "הַתאָמָה"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Hebrew",
+      "translation": "לוח מחוונים משפטי"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Hebrew",
+      "translation": "סקירה כללית של פעילות משפטית ומצב תאימות"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Hebrew",
+      "translation": "סימנים מסחריים פעילים"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Hebrew",
+      "translation": "חוזים פעילים"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Hebrew",
+      "translation": "סטטוס תאימות"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Hebrew",
+      "translation": "סימנים מסחריים"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Hebrew",
+      "translation": "ניהול רישומים ובקשות לסימני מסחר"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Hebrew",
+      "translation": "הוסף סימן מסחרי חדש"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Hebrew",
+      "translation": "מְדִינָה"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Hebrew",
+      "translation": "סטָטוּס"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Hebrew",
+      "translation": "כל המדינות"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Hebrew",
+      "translation": "כל הסטטוסים"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Hebrew",
+      "translation": "נקה מסננים"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Hebrew",
+      "translation": "שם המותג"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Hebrew",
+      "translation": "מַחלָקָה"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Hebrew",
+      "translation": "מְדִינָה"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Hebrew",
+      "translation": "מספר בקשה"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Hebrew",
+      "translation": "סטָטוּס"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Hebrew",
+      "translation": "תאריך תפוגה"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Hebrew",
+      "translation": "פעולות"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Hebrew",
+      "translation": "עריכת סימן מסחרי"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Hebrew",
+      "translation": "הוסף סימן מסחרי חדש"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Hebrew",
+      "translation": "הצג סימן מסחרי"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Hebrew",
+      "translation": "שם המותג"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Hebrew",
+      "translation": "מספר כיתה"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Hebrew",
+      "translation": "מְדִינָה"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Hebrew",
+      "translation": "מספר בקשה"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Hebrew",
+      "translation": "סטָטוּס"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Hebrew",
+      "translation": "תאריך תפוגה"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Hebrew",
+      "translation": "מסמכים"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Hebrew",
+      "translation": "לא צורפו מסמכים"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Hebrew",
+      "translation": "הוסף מסמך"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Hebrew",
+      "translation": "לְהַסִיר"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Hebrew",
+      "translation": "טעינת הסימנים המסחריים נכשלה"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Hebrew",
+      "translation": "שמירת הסימן המסחרי נכשלה. אנא נסה שוב."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Hebrew",
+      "translation": "תיקים משפטיים"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Hebrew",
+      "translation": "ניהול תיקים משפטיים ומעקב אחר מצבם"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Hebrew",
+      "translation": "מקרה חדש"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Hebrew",
+      "translation": "כותרת התיק"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Hebrew",
+      "translation": "סוג המקרה"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Hebrew",
+      "translation": "מְדִינָה"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Hebrew",
+      "translation": "תֵאוּר"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Hebrew",
+      "translation": "הוקצה ל"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Hebrew",
+      "translation": "סטָטוּס"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Hebrew",
+      "translation": "תאריך הדיון"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Hebrew",
+      "translation": "כותרת התיק"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Hebrew",
+      "translation": "סוּג"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Hebrew",
+      "translation": "מְדִינָה"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Hebrew",
+      "translation": "הוקצה ל"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Hebrew",
+      "translation": "סטָטוּס"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Hebrew",
+      "translation": "תאריך הדיון"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Hebrew",
+      "translation": "פעולות"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Hebrew",
+      "translation": "לִפְתוֹחַ"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Hebrew",
+      "translation": "בתהליך"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Hebrew",
+      "translation": "סָגוּר"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Hebrew",
+      "translation": "בּוּטלָה"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Hebrew",
+      "translation": "תצוגת מפת צי"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Hebrew",
+      "translation": "מעקב בזמן אמת אחר נציגי מכירות ורכבי משלוחים"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Hebrew",
+      "translation": "עובדים פעילים"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Hebrew",
+      "translation": "אין עובדים פעילים"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Hebrew",
+      "translation": "טְעִינָה..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Hebrew",
+      "translation": "שידור חוזר של המסלול"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Hebrew",
+      "translation": "עוֹבֵד"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Hebrew",
+      "translation": "מְהִירוּת"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Hebrew",
+      "translation": "אִתחוּל"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Hebrew",
+      "translation": "לְשַׂחֵק"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Hebrew",
+      "translation": "הַפסָקָה"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Hebrew",
+      "translation": "נקודות"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Hebrew",
+      "translation": "אין נתוני מסלול זמינים"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Hebrew",
+      "translation": "טוען מסלול..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Hebrew",
+      "translation": "מוצרים של מתחרים"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Hebrew",
+      "translation": "מעקב אחר מידע על מוצרים של מתחרים"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Hebrew",
+      "translation": "הוסף מוצר"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Hebrew",
+      "translation": "הוסף מוצר מתחרה"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Hebrew",
+      "translation": "מותג"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Hebrew",
+      "translation": "שם מק\"ט"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Hebrew",
+      "translation": "קָטֵגוֹרִיָה"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Hebrew",
+      "translation": "גוֹדֶל"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Hebrew",
+      "translation": "מְחִיר"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Hebrew",
+      "translation": "מַטְבֵּעַ"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Hebrew",
+      "translation": "מְדִינָה"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Hebrew",
+      "translation": "מותג"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Hebrew",
+      "translation": "שם מק\"ט"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Hebrew",
+      "translation": "קָטֵגוֹרִיָה"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Hebrew",
+      "translation": "גוֹדֶל"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Hebrew",
+      "translation": "מְחִיר"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Hebrew",
+      "translation": "מְדִינָה"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Hebrew",
+      "translation": "תאריך הוספה"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Hebrew",
+      "translation": "טעינת המוצרים נכשלה"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Hebrew",
+      "translation": "יצירת המוצר נכשלה. אנא נסה שוב."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Hebrew",
+      "translation": "לא נמצאו מוצרים של מתחרים"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Hebrew",
+      "translation": "טוען מוצרים..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Hebrew",
+      "translation": "לוח מחוונים של מתחרים"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Hebrew",
+      "translation": "אנליטיקה ותובנות על מוצרים של מתחרים"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Hebrew",
+      "translation": "סך כל המוצרים"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Hebrew",
+      "translation": "מותגים במעקב"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Hebrew",
+      "translation": "מדינות"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Hebrew",
+      "translation": "קטגוריות"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Hebrew",
+      "translation": "מוצרים לפי מותג"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Hebrew",
+      "translation": "מוצרים לפי מדינה"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Hebrew",
+      "translation": "מוצרים לפי קטגוריה"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Hebrew",
+      "translation": "טוען סטטיסטיקות..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Hebrew",
+      "translation": "אין סטטיסטיקות זמינות"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Hebrew",
+      "translation": "סקירה כללית"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Hebrew",
+      "translation": "הזמנות"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Hebrew",
+      "translation": "מְלַאי"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Hebrew",
+      "translation": "לוֹגִיסטִיקָה"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Hebrew",
+      "translation": "לְמַמֵן"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Hebrew",
+      "translation": "ניהול קשרי לקוחות (CRM)"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Hebrew",
+      "translation": "משאבי אנוש"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Hebrew",
+      "translation": "מְנַהֵל"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Hebrew",
+      "translation": "משקיע"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Hebrew",
+      "translation": "משפטי/זכויות קניין רוחני"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Hebrew",
+      "translation": "מִתחָרֶה"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Hebrew",
+      "translation": "ייבוא/ייצוא"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Hebrew",
+      "translation": "מעקב GPS"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Hebrew",
+      "translation": "לוקליזציה"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Hebrew",
+      "translation": "זרימות עבודה"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Hebrew",
+      "translation": "מנהל"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Hebrew",
+      "translation": "מערכת הפעלה CRM"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Hebrew",
+      "translation": "לקוחות 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Hebrew",
+      "translation": "פרופילי לקוחות מלאים, היסטוריית אינטראקציות וניהול קשרים"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Hebrew",
+      "translation": "קמפיינים דיגיטליים"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Hebrew",
+      "translation": "קמפיינים שיווקיים רב-ערוציים (אינסטגרם, פייסבוק, טיקטוק, וואטסאפ)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Hebrew",
+      "translation": "לידים והזדמנויות"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Hebrew",
+      "translation": "ניהול לידים, הסמכה וצבר הזדמנויות"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Hebrew",
+      "translation": "תמיכת לקוחות"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Hebrew",
+      "translation": "ניהול כרטיסים, שירות לקוחות ופתרון בעיות"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Hebrew",
+      "translation": "תוכניות נאמנות"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Hebrew",
+      "translation": "ניהול נאמנות קמעונאים, גיימיפיקציה ותגמולים"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Hebrew",
+      "translation": "לקוחות 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Hebrew",
+      "translation": "לקוח חדש"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Hebrew",
+      "translation": "סך כל הלקוחות"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Hebrew",
+      "translation": "פָּעִיל"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Hebrew",
+      "translation": "חָדָשׁ"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Hebrew",
+      "translation": "שְׂבִיעוּת רָצוֹן"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Hebrew",
+      "translation": "ניהול לקוחות"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Hebrew",
+      "translation": "צפה ונהל את קשרי הלקוחות, האינטראקציות והקמפיינים שלך."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Hebrew",
+      "translation": "טְעִינָה..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Hebrew",
+      "translation": "שגיאה בטעינת נתוני CRM"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Hebrew",
+      "translation": "סקירה כללית"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Hebrew",
+      "translation": "הזמנות"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Hebrew",
+      "translation": "מְלַאי"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Hebrew",
+      "translation": "לוֹגִיסטִיקָה"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Hebrew",
+      "translation": "לְמַמֵן"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Hebrew",
+      "translation": "ניהול קשרי לקוחות (CRM)"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Hebrew",
+      "translation": "משאבי אנוש"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Hebrew",
+      "translation": "מְנַהֵל"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Hebrew",
+      "translation": "משקיע"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Hebrew",
+      "translation": "משפטי/זכויות קניין רוחני"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Hebrew",
+      "translation": "מִתחָרֶה"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Hebrew",
+      "translation": "ייבוא/ייצוא"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Hebrew",
+      "translation": "מעקב GPS"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Hebrew",
+      "translation": "לוקליזציה"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Hebrew",
+      "translation": "זרימות עבודה"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Hebrew",
+      "translation": "מנהל"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Hebrew",
+      "translation": "לקוחות"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Hebrew",
+      "translation": "עובדים"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Hebrew",
+      "translation": "לְהַרְוִיחַ"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Hebrew",
+      "translation": "טוען תא הטייס של הספק..."
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Hebrew",
+      "translation": "הזמנות רכש"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Hebrew",
+      "translation": "גודל על ידי הארוויקס"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Hebrew",
+      "translation": "משלוחים / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Hebrew",
+      "translation": "התקבל השבוע"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Hebrew",
+      "translation": "חשבוניות שנוצרו"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Hebrew",
+      "translation": "ממתין לתשלום"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Hebrew",
+      "translation": "תשלומים ממתינים"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Hebrew",
+      "translation": "מתוכנן לשחרור"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Hebrew",
+      "translation": "איכות / תלונות"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Hebrew",
+      "translation": "כרטיסים פתוחים"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Hebrew",
+      "translation": "תחזית (4 שבועות הבאים)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Hebrew",
+      "translation": "מציין מיקום של בינה מלאכותית"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Hebrew",
+      "translation": "פעולות הספק"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Hebrew",
+      "translation": "אשר משלוחים קרובים ועדכן את לוח הזמנים של GRN."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Hebrew",
+      "translation": "סקירת חשבוניות שטרם נפרעו ושיתוף ייעוץ תשלומים."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Hebrew",
+      "translation": "פתרון תלונות איכות פתוחות בעזרת ראיות לאבטחת איכות."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Hebrew",
+      "translation": "שם משתמש"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Hebrew",
+      "translation": "סִיסמָה"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Hebrew",
+      "translation": "אֶלֶקטרוֹנִי"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Hebrew",
+      "translation": "לְהַגִישׁ"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Hebrew",
+      "translation": "לְבַטֵל"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Hebrew",
+      "translation": "לְהַצִיל"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Hebrew",
+      "translation": "לִמְחוֹק"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Hebrew",
+      "translation": "לְחַפֵּשׂ"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Hebrew",
+      "translation": "לְסַנֵן"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Hebrew",
+      "translation": "אִתחוּל"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Hebrew",
+      "translation": "לִסְגוֹר"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Hebrew",
+      "translation": "בְּחֲזָרָה"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Hebrew",
+      "translation": "הַבָּא"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Hebrew",
+      "translation": "קוֹדֵם"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Hebrew",
+      "translation": "לְאַשֵׁר"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Hebrew",
+      "translation": "זכור אותי"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Hebrew",
+      "translation": "שכחת סיסמה?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Hebrew",
+      "translation": "נדרש דוא\"ל"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Hebrew",
+      "translation": "אנא הזן כתובת דוא\"ל תקפה"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Hebrew",
+      "translation": "מוצרים"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Hebrew",
+      "translation": "אילו מוצרים מציעה Harvics?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Hebrew",
+      "translation": "אנו מציעים מגוון רחב של מוצרי מזון איכותיים, כולל ממתקים, משקאות, חטיפים, פסטה, מוצרי מאפה ומזון קפוא במגוון קטגוריות."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Hebrew",
+      "translation": "איפה אני יכול לקנות מוצרים של Harvics?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Hebrew",
+      "translation": "המוצרים שלנו זמינים בחנויות קמעונאיות ביותר מ-40 מדינות. השתמשו באיתור החנויות שלנו או בדף יצירת הקשר כדי למצוא קמעונאי בקרבתכם."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Hebrew",
+      "translation": "האם אתם מציעים הזמנות בכמויות גדולות?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Hebrew",
+      "translation": "כן, אנו מציעים הנחות על הזמנות בכמויות גדולות לעסקים ולקמעונאים. בקרו בדף הנחות על הזמנות בכמויות גדולות שלנו למידע נוסף."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Hebrew",
+      "translation": "הזמנות ומשלוחים"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Hebrew",
+      "translation": "מהן אפשרויות המשלוח שלך?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Hebrew",
+      "translation": "אנו מציעים מגוון אפשרויות משלוח, כולל משלוח רגיל, משלוח אקספרס ומשלוח בינלאומי. משלוח חינם זמין בהזמנות מעל 50 דולר."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Hebrew",
+      "translation": "כמה זמן לוקח משלוח?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Hebrew",
+      "translation": "זמני האספקה משתנים בהתאם למיקום. משלוח רגיל אורך בדרך כלל 5-7 ימי עסקים, בעוד שמשלוח אקספרס אורך 2-3 ימי עסקים."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Hebrew",
+      "translation": "האם אני יכול לעקוב אחר ההזמנה שלי?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Hebrew",
+      "translation": "כן, ניתן לעקוב אחר ההזמנה שלך באמצעות מספר המעקב המופיע בדוא\"ל אישור ההזמנה שלך."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Hebrew",
+      "translation": "חשבון ותשלומים"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Hebrew",
+      "translation": "איך אני יוצר חשבון?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Hebrew",
+      "translation": "לחצו על \"כניסה\" בכותרת ובחרו \"יצירת חשבון\" כדי להירשם לחשבון חדש."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Hebrew",
+      "translation": "אילו אמצעי תשלום אתם מקבלים?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Hebrew",
+      "translation": "אנו מקבלים את כל כרטיסי האשראי, כרטיסי החיוב, PayPal והעברות בנקאיות מרכזיות עבור הזמנות B2B."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Hebrew",
+      "translation": "האם פרטי התשלום שלי מאובטחים?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Hebrew",
+      "translation": "כן, אנו משתמשים בהצפנה סטנדרטית בתעשייה כדי להגן על פרטי התשלום שלך."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Hebrew",
+      "translation": "החזרות והחזרים כספיים"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Hebrew",
+      "translation": "מהי מדיניות ההחזרה שלכם?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Hebrew",
+      "translation": "אנו מציעים מדיניות החזרה של 30 יום עבור מוצרים שלא נפתחו באריזה המקורית. אנא צרו קשר עם שירות הלקוחות שלנו לקבלת אישור החזרה."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Hebrew",
+      "translation": "כיצד אוכל לבקש החזר כספי?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Hebrew",
+      "translation": "צרו קשר עם צוות שירות הלקוחות שלנו וספקו את מספר ההזמנה שלכם ואת סיבת ההחזרה. אנו נעבד את ההחזר שלכם תוך 5-7 ימי עסקים."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Hebrew",
+      "translation": "עדיין יש לכם שאלות?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Hebrew",
+      "translation": "צוות שירות הלקוחות שלנו כאן כדי לעזור"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Hebrew",
+      "translation": "צרו קשר"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Hebrew",
+      "translation": "קריירה"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Hebrew",
+      "translation": "קריירה | הרוויקס"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Hebrew",
+      "translation": "הצטרפו ל-Harvics Global Ventures - גלו הזדמנויות ביותר מ-40 מדינות."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Hebrew",
+      "translation": "הצטרפו אלינו"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Hebrew",
+      "translation": "בנו את עתיד הסחר הגלובלי"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Hebrew",
+      "translation": "אנחנו צומחים ביותר מ-40 מדינות. הצטרפו לצוות שבונה מערכת הפעלה מבוססת בינה מלאכותית למסחר גלובלי."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Hebrew",
+      "translation": "משרות פתוחות"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Hebrew",
+      "translation": "מדינות"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Hebrew",
+      "translation": "תחומי תעשייה אנכיים"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Hebrew",
+      "translation": "מחלקות גיוס"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Hebrew",
+      "translation": "משרות פתוחות לפי מחלקה"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Hebrew",
+      "translation": "מכירות והפצה"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Hebrew",
+      "translation": "הגברת הכנסות ביותר מ-40 שווקים. ניהול טריטוריה, לקוחות מפתח, קשרי מפיצים."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Hebrew",
+      "translation": "שרשרת אספקה ולוגיסטיקה"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Hebrew",
+      "translation": "שרשרת אספקה מקצה לקצה, מהמפעל ועד למדף. ניהול צי רכב, אחסנה, אספקה עד לקו הסיום."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Hebrew",
+      "translation": "טכנולוגיה ובינה מלאכותית"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Hebrew",
+      "translation": "בניית מערכת הפעלה Harvics - פלטפורמת הארגון שלנו המונעת על ידי בינה מלאכותית. Full-stack, הנדסת למידת מכונה, מדעי נתונים."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Hebrew",
+      "translation": "פיננסים וגזברות"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Hebrew",
+      "translation": "ניהול מטבעות מרובים, מימון סחר, תשלומים דיגיטליים של HPay, ניהול מטבעות חוץ באזורים שונים."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Hebrew",
+      "translation": "רכש ואיתור"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Hebrew",
+      "translation": "רכישה גלובלית מ-15+ מדינות מקור. ביקורות ספקים, בקרת איכות, תוכניות ייצור ישירות מהמפעל."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Hebrew",
+      "translation": "משאבי אנוש"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Hebrew",
+      "translation": "גיוס כישרונות, למידה ופיתוח, וניהול ביצועים במגוון גיאוגרפים ותרבויות."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Hebrew",
+      "translation": "משפט ותאימות"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Hebrew",
+      "translation": "תאימות סחר, סינון סנקציות, הגנה על קניין רוחני, ניהול חוזים בין תחומי שיפוט."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Hebrew",
+      "translation": "שיווק ומותג"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Hebrew",
+      "translation": "קמפיינים רב-לשוניים, תוכן ב-38 מקומות, שיווק דיגיטלי, אסטרטגיית מותג ל-10 תחומים אנכיים."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Hebrew",
+      "translation": "תפקידים"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Hebrew",
+      "translation": "למה הרוויקס"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Hebrew",
+      "translation": "ניידות גלובלית"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Hebrew",
+      "translation": "עבודה ברחבי דובאי, לונדון, קראצ'י, לאהור, ויותר מ-40 שווקים"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Hebrew",
+      "translation": "מסלול צמיחה"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Hebrew",
+      "translation": "קידום קריירה מהיר בארגון הולך וגדל"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Hebrew",
+      "translation": "תרבות AI-First"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Hebrew",
+      "translation": "עבודה עם בינה מלאכותית מתקדמת ומערכות בינה בזמן אמת"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Hebrew",
+      "translation": "חבילה תחרותית"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Hebrew",
+      "translation": "שכר, דיור והטבות מובילים בשוק"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Hebrew",
+      "translation": "תקציב למידה"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Hebrew",
+      "translation": "תקציב פיתוח שנתי לקורסים, כנסים והסמכות"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Hebrew",
+      "translation": "עבודה גמישה"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Hebrew",
+      "translation": "הסדרים היברידיים עם משרדי מרכזים אזוריים ברחבי העולם"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Hebrew",
+      "translation": "האסטרטגיה שלנו"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Hebrew",
+      "translation": "אסטרטגיה | הארוויץ'"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Hebrew",
+      "translation": "בניית עתיד בר-קיימא באמצעות חדשנות ומצוינות"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Hebrew",
+      "translation": "בניית עתיד בר-קיימא באמצעות חדשנות ומצוינות"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Hebrew",
+      "translation": "התרחבות עולמית"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Hebrew",
+      "translation": "הרחבת נוכחותנו בשווקים מתפתחים תוך חיזוק מעמדנו בשווקים מבוססים"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Hebrew",
+      "translation": "חדשנות מוצר"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Hebrew",
+      "translation": "השקעה במחקר ופיתוח לפיתוח מוצרים חדשים העונים על העדפות הצרכנים המתפתחות"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Hebrew",
+      "translation": "קיימות"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Hebrew",
+      "translation": "מחויבים לשיטות עבודה בנות-קיימא לאורך שרשרת האספקה והפעילות שלנו"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Hebrew",
+      "translation": "טרנספורמציה דיגיטלית"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Hebrew",
+      "translation": "מינוף טכנולוגיה לשיפור חוויית הלקוח והיעילות התפעולית"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Hebrew",
+      "translation": "החזון שלנו"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Hebrew",
+      "translation": "להיות חברת מוצרי הצריכה היוקרתית המובילה בעולם, המוכרת בזכות איכות, חדשנות וקיימות."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Hebrew",
+      "translation": "Harvics Global Ventures | מסחר גלובלי פרימיום"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Hebrew",
+      "translation": "חברת סחר גלובלית מובילה המספקת מוצרים איכותיים ביותר מ-10 תעשיות. פועלת ביותר מ-50 מדינות מאז 2019."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Hebrew",
+      "translation": "אודותינו | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Hebrew",
+      "translation": "גלו כיצד Harvics Global Ventures הפכה לכוח מוביל בסחר העולמי ביותר מ-40 מדינות ו-10 תעשיות."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Hebrew",
+      "translation": "צרו קשר | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Hebrew",
+      "translation": "צרו קשר עם משרדי Harvics ברחבי העולם במזרח התיכון, דרום אסיה, אירופה, אפריקה ואמריקה."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Hebrew",
+      "translation": "מוצרים | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Hebrew",
+      "translation": "גלו את מגוון מוצרי הפרימיום של Harvic בתחומי מוצרי FMCG, טקסטיל, סחורות ופתרונות תעשייתיים."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Hebrew",
+      "translation": "קריירה | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Hebrew",
+      "translation": "הצטרפו ל-Harvics Global Ventures - גלו הזדמנויות ביותר מ-40 מדינות בתחומי מוצרי צריכה מהירה, טקסטיל, לוגיסטיקה וטכנולוגיה."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Hebrew",
+      "translation": "מרכז מדיה | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Hebrew",
+      "translation": "מרכז התקשורת של Harvics - הודעות לעיתונות, חדשות אחרונות, נכסי מותג ואנשי קשר עם התקשורת."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Hebrew",
+      "translation": "האסטרטגיה שלנו | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Hebrew",
+      "translation": "החזון האסטרטגי של Harvic להתרחבות עולמית, חדשנות, קיימות וטרנספורמציה דיגיטלית."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Hebrew",
+      "translation": "אחריות חברתית תאגידית | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Hebrew",
+      "translation": "יוזמות אחריות חברתית תאגידית (CSR) של Harvics - אחריות סביבתית, תוכניות קהילתיות ושיטות עסקיות אתיות."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Hebrew",
+      "translation": "שאלות נפוצות | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Hebrew",
+      "translation": "שאלות נפוצות בנוגע למוצרים, שירותים, הזמנות ופעילות גלובלית של Harvics."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Hebrew",
+      "translation": "מיקומים גלובליים | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Hebrew",
+      "translation": "משרדיה ופעילותה של Harvics ברחבי המזרח התיכון, דרום אסיה, אירופה, אפריקה ויבשת אמריקה."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Hebrew",
+      "translation": "צוות הנהלה | הארוויקס"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Hebrew",
+      "translation": "הכירו את צוות המנהיגות שמניע את Harvics Global Ventures ביותר מ-40 שווקים ו-10 תחומים אנכיים בתעשייה."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Hebrew",
+      "translation": "מרכז עזרה | הארוויקס"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Hebrew",
+      "translation": "קבלו עזרה עם הזמנות, חשבונות, משלוחים ושירותי Harvics."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Hebrew",
+      "translation": "ציות ואתיקה | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Hebrew",
+      "translation": "מחויבותה של Harvics לעמידה בתקנות, נוהלי עסקים אתיים ותקנים גלובליים."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Hebrew",
+      "translation": "ההיסטוריה שלנו | הרוויקס"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Hebrew",
+      "translation": "מסטארט-אפ בדובאי בשנת 2019 לחברה גלובלית המשתרעת על פני 40+ מדינות - הסיפור של Harvics."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Hebrew",
+      "translation": "ניוזלטר | הארוויקס"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Hebrew",
+      "translation": "הירשמו לניוזלטר של Harvics לקבלת תובנות מהתעשייה והשקות מוצרים."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Hebrew",
+      "translation": "כניסה | הרוויקס"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Hebrew",
+      "translation": "היכנס לחשבון Harvics שלך כדי לנהל הזמנות ולגשת לפלטפורמה."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Hebrew",
+      "translation": "מחקר וחדשנות | הארוויקס"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Hebrew",
+      "translation": "יוזמות המחקר ותוכניות החדשנות של Harvics המניעות את האסטרטגיה הגלובלית שלנו."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Hebrew",
+      "translation": "יחסי משקיעים | הארוויקס"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Hebrew",
+      "translation": "מידע למשקיעים, דוחות כספיים והודעות תאגידיות מ-Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Hebrew",
+      "translation": "הדף לא נמצא"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Hebrew",
+      "translation": "404 - הדף לא נמצא"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Hebrew",
+      "translation": "הדף שאתה מחפש אינו קיים או שהועבר."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Hebrew",
+      "translation": "עבור לדף הבית"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Hebrew",
+      "translation": "לַחֲזוֹר"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Hebrew",
+      "translation": "משהו השתבש"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Hebrew",
+      "translation": "משהו השתבש"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Hebrew",
+      "translation": "אנו מצטערים, אך קרה משהו בלתי צפוי. אנא נסה לרענן את הדף."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Hebrew",
+      "translation": "נסה שוב"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Hebrew",
+      "translation": "טען מחדש את הדף"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Hebrew",
+      "translation": "צור קשר עם התמיכה"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Hebrew",
+      "translation": "שגיאת יישום"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Hebrew",
+      "translation": "שגיאה קריטית"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Hebrew",
+      "translation": "אירעה שגיאה קריטית. אנא טען מחדש את הדף."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Hebrew",
+      "translation": "טען מחדש את האפליקציה"
+    }
+  }
+}

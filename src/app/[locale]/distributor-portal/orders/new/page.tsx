@@ -53,7 +53,7 @@ export default function PlaceNewOrder() {
             <select
               value={selectedCountry}
               onChange={(e) => setSelectedCountry(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
             >
               <option value="US">United States</option>
               <option value="PK">Pakistan</option>
@@ -65,7 +65,7 @@ export default function PlaceNewOrder() {
             <select
               value={selectedWarehouse}
               onChange={(e) => setSelectedWarehouse(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
             >
               <option value="wh_us_west">US West Warehouse</option>
               <option value="wh_us_east">US East Warehouse</option>
@@ -132,7 +132,7 @@ export default function PlaceNewOrder() {
                           min="0"
                           value={qty}
                           onChange={(e) => addToCart(product, parseInt(e.target.value) || 0)}
-                          className="w-20 px-2 py-1 border border-black300 rounded focus:ring-2 focus:ring-black"
+                          className="w-20 px-2 py-1 border border-gray-200 rounded focus:ring-2 focus:ring-black"
                         />
                       </td>
                       <td className="px-4 py-3 text-sm font-semibold">

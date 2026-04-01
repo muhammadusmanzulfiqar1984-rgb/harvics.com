@@ -99,7 +99,7 @@ export default function CounterfeitReportsPage() {
                   required
                   value={formData.product_name}
                   onChange={(e) => setFormData({ ...formData, product_name: e.target.value })}
-                  className="w-full border border-black300 px-3 py-2"
+                  className="w-full border border-gray-200 px-3 py-2"
                 />
               </div>
               <div>
@@ -108,7 +108,7 @@ export default function CounterfeitReportsPage() {
                   type="text"
                   value={formData.brand}
                   onChange={(e) => setFormData({ ...formData, brand: e.target.value })}
-                  className="w-full border border-black300 px-3 py-2"
+                  className="w-full border border-gray-200 px-3 py-2"
                 />
               </div>
               <div>
@@ -118,7 +118,7 @@ export default function CounterfeitReportsPage() {
                   required
                   value={formData.location}
                   onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                  className="w-full border border-black300 px-3 py-2"
+                  className="w-full border border-gray-200 px-3 py-2"
                 />
               </div>
               <div>
@@ -126,7 +126,7 @@ export default function CounterfeitReportsPage() {
                 <select
                   value={formData.priority}
                   onChange={(e) => setFormData({ ...formData, priority: e.target.value })}
-                  className="w-full border border-black300 px-3 py-2"
+                  className="w-full border border-gray-200 px-3 py-2"
                 >
                   <option value="low">Low</option>
                   <option value="medium">Medium</option>
@@ -142,14 +142,14 @@ export default function CounterfeitReportsPage() {
                 rows={4}
                 value={formData.description}
                 onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                className="w-full border border-black300 px-3 py-2"
+                className="w-full border border-gray-200 px-3 py-2"
               />
             </div>
             <div className="flex justify-end gap-2">
               <button
                 type="button"
                 onClick={() => setShowForm(false)}
-                className="px-4 py-2 border border-black300 hover:bg-white"
+                className="px-4 py-2 border border-gray-200 hover:bg-white"
               >
                 Cancel
               </button>

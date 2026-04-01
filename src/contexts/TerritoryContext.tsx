@@ -115,6 +115,7 @@ export function TerritoryProvider({ children }: { children: ReactNode }) {
 
   const loadRegionals = async (continentId: string) => {
     try {
+      // Backend now uses continentCode query param
       const response = await apiClient.getRegionals(continentId)
       if (response.data) {
         setRegionals(Array.isArray(response.data) ? response.data : [])
@@ -127,7 +128,8 @@ export function TerritoryProvider({ children }: { children: ReactNode }) {
 
   const loadCountries = async (regionalId: string) => {
     try {
-      const response = await apiClient.getCountries(regionalId)
+      // Backend now uses regionCode query param
+      const response = await apiClient.getCountries(regionalId, undefined)
       if (response.data) {
         setCountries(Array.isArray(response.data) ? response.data : [])
       }
@@ -139,6 +141,7 @@ export function TerritoryProvider({ children }: { children: ReactNode }) {
 
   const loadCities = async (countryId: string) => {
     try {
+      // Backend now uses countryCode query param
       const response = await apiClient.getCities(countryId)
       if (response.data) {
         setCities(Array.isArray(response.data) ? response.data : [])
@@ -151,6 +154,7 @@ export function TerritoryProvider({ children }: { children: ReactNode }) {
 
   const loadDistricts = async (cityId: string) => {
     try {
+      // Backend now uses cityCode query param
       const response = await apiClient.getDistricts(cityId)
       if (response.data) {
         setDistricts(Array.isArray(response.data) ? response.data : [])
@@ -163,7 +167,8 @@ export function TerritoryProvider({ children }: { children: ReactNode }) {
 
   const loadStreets = async (districtId: string) => {
     try {
-      const response = await apiClient.getStreets(districtId)
+      // Backend uses areas endpoint with districtCode
+      const response = await apiClient.getAreas(districtId)
       if (response.data) {
         setStreets(Array.isArray(response.data) ? response.data : [])
       }
@@ -175,7 +180,8 @@ export function TerritoryProvider({ children }: { children: ReactNode }) {
 
   const loadPoints = async (streetId: string) => {
     try {
-      const response = await apiClient.getPoints(streetId)
+      // Backend uses locations endpoint with areaCode
+      const response = await apiClient.getLocations(streetId, undefined)
       if (response.data) {
         setPoints(Array.isArray(response.data) ? response.data : [])
       }
@@ -187,7 +193,7 @@ export function TerritoryProvider({ children }: { children: ReactNode }) {
 
   const loadFullPath = async (pointId: string) => {
     try {
-      const response = await apiClient.getTerritoryPath(pointId)
+      const response = await apiClient.getTerritoryHierarchy(pointId)
       if (response.data) {
         setFullPath(response.data)
         // Auto-select all levels
@@ -206,10 +212,10 @@ export function TerritoryProvider({ children }: { children: ReactNode }) {
     }
   }
 
-  // Auto-load children when parent is selected
+  // Auto-load children when parent is selected (use code, not id)
   useEffect(() => {
-    if (selectedContinent?.id) {
-      loadRegionals(selectedContinent.id)
+    if (selectedContinent?.code) {
+      loadRegionals(selectedContinent.code)
       // Reset lower levels
       setSelectedRegional(null)
       setSelectedCountry(null)
@@ -221,8 +227,8 @@ export function TerritoryProvider({ children }: { children: ReactNode }) {
   }, [selectedContinent])
 
   useEffect(() => {
-    if (selectedRegional?.id) {
-      loadCountries(selectedRegional.id)
+    if (selectedRegional?.code) {
+      loadCountries(selectedRegional.code)
       setSelectedCountry(null)
       setSelectedCity(null)
       setSelectedDistrict(null)
@@ -232,8 +238,8 @@ export function TerritoryProvider({ children }: { children: ReactNode }) {
   }, [selectedRegional])
 
   useEffect(() => {
-    if (selectedCountry?.id) {
-      loadCities(selectedCountry.id)
+    if (selectedCountry?.code) {
+      loadCities(selectedCountry.code)
       setSelectedCity(null)
       setSelectedDistrict(null)
       setSelectedStreet(null)
@@ -242,8 +248,8 @@ export function TerritoryProvider({ children }: { children: ReactNode }) {
   }, [selectedCountry])
 
   useEffect(() => {
-    if (selectedCity?.id) {
-      loadDistricts(selectedCity.id)
+    if (selectedCity?.code) {
+      loadDistricts(selectedCity.code)
       setSelectedDistrict(null)
       setSelectedStreet(null)
       setSelectedPoint(null)
@@ -251,16 +257,16 @@ export function TerritoryProvider({ children }: { children: ReactNode }) {
   }, [selectedCity])
 
   useEffect(() => {
-    if (selectedDistrict?.id) {
-      loadStreets(selectedDistrict.id)
+    if (selectedDistrict?.code) {
+      loadStreets(selectedDistrict.code)
       setSelectedStreet(null)
       setSelectedPoint(null)
     }
   }, [selectedDistrict])
 
   useEffect(() => {
-    if (selectedStreet?.id) {
-      loadPoints(selectedStreet.id)
+    if (selectedStreet?.code) {
+      loadPoints(selectedStreet.code)
       setSelectedPoint(null)
     }
   }, [selectedStreet])

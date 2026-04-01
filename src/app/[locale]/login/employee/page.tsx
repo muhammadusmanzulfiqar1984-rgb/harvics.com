@@ -19,7 +19,7 @@ export default async function EmployeeLoginPage() {
   const t = await getTranslations('employeeLogin')
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen bg-gray-100">
       <div className="pt-20">
         <section className="py-8 sm:py-12 px-4 sm:px-6">
           <div className="max-w-md mx-auto">

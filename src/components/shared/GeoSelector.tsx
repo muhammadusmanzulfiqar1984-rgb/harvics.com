@@ -31,7 +31,7 @@ export default function GeoSelector() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-4 py-2 bg-white border border-black300 rounded-md text-sm font-medium text-black hover:bg-white transition-colors"
+        className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-md text-sm font-medium text-black hover:bg-white transition-colors"
       >
         <span className="text-lg">🌍</span>
         <span>{currentGeo.label}</span>
@@ -52,7 +52,7 @@ export default function GeoSelector() {
             className="fixed inset-0 z-10"
             onClick={() => setIsOpen(false)}
           />
-          <div className="absolute top-full right-0 mt-2 w-64 bg-white border border-black300 rounded-md shadow-lg z-50 py-2 max-h-[400px] overflow-y-auto">
+          <div className="absolute top-full right-0 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg z-50 py-2 max-h-[400px] overflow-y-auto">
             {geoLevels.map((level) => (
               <button
                 key={level.level}

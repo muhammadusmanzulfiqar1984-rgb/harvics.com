@@ -36,7 +36,7 @@ export default async function SeasonalPage({ params }: SeasonalPageProps) {
   ]
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       
       <div className="pt-20">
         <section className="py-12 md:py-24 bg-gradient-to-br from-[#ffffff] via-[#ffffff] to-[#ffffff]">

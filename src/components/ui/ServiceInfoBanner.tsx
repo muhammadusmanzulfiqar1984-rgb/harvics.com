@@ -72,7 +72,7 @@ const ServiceInfoBanner: React.FC<ServiceInfoBannerProps> = ({ services }) => {
   }
 
   return (
-    <div style={{ background: '#F5F1E8', borderBottom: '1px solid rgba(195,163,94,0.3)' }}>
+    <div style={{ background: '#ffffff', borderBottom: '1px solid rgba(195,163,94,0.3)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-center divide-x divide-[#C3A35E]/20 py-4">
           {displayServices.map((service, index) => {

@@ -1,624 +1,1146 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
-    "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More"
+    "welcome": "ยินดีต้อนรับสู่",
+    "companyName": "ฮาร์วิช",
+    "tagline": "ความเป็นเลิศด้านสินค้าอุปโภคบริโภคระดับพรีเมียม ตั้งแต่ปี 2019",
+    "exploreProducts": "สำรวจผลิตภัณฑ์",
+    "contact": "ติดต่อเรา",
+    "learnMore": "เรียนรู้เพิ่มเติม",
+    "brandStatement": "บริษัทชั้นนำระดับโลกด้านสินค้าอุปโภคบริโภคที่จัดจำหน่ายผลิตภัณฑ์อาหารคุณภาพสูงหลากหลายประเภท ด้วยมาตรฐานคุณภาพระดับสากล",
+    "taglineStart": "ความเป็นเลิศในสินค้าอุปโภคบริโภคระดับพรีเมียม ตั้งแต่ปี",
+    "taglineYear": "2019",
+    "locations": "ลอนดอน • มิลาน • นิวยอร์ก",
+    "categories": {
+      "bakery": "เบเกอรี่",
+      "beverages": "เครื่องดื่ม",
+      "confectionery": "ขนมหวาน",
+      "culinary": "การทำอาหาร",
+      "frozenFoods": "อาหารแช่แข็ง",
+      "pasta": "พาสต้า",
+      "snacks": "ของว่าง"
+    }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
-    "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
-    "media": "Media",
-    "contactUs": "Contact Us",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store"
+    "esgReport": "รายงาน ESG ปี 2025",
+    "locations": "ลอนดอน • มิลาน • นิวยอร์ก",
+    "home": "บ้าน",
+    "about": "เกี่ยวกับ",
+    "aboutUs": "เกี่ยวกับเรา",
+    "brandStory": "เรื่องราวของแบรนด์",
+    "products": "สินค้า",
+    "ourProducts": "ผลิตภัณฑ์ของเรา",
+    "viewAllProducts": "ดูสินค้าทั้งหมด",
+    "csr": "ความรับผิดชอบต่อสังคม (CSR)",
+    "investorRelations": "ฝ่ายสัมพันธ์นักลงทุน",
+    "investors": "นักลงทุน",
+    "media": "สื่อ",
+    "contactUs": "ติดต่อเรา",
+    "countries": "ประเทศ",
+    "portals": "พอร์ทัล",
+    "signIn": "เข้าสู่ระบบ",
+    "wishlist": "รายการสิ่งที่อยากได้",
+    "cart": "ตะกร้าสินค้า",
+    "help": "ช่วย",
+    "findStore": "ค้นหาร้านค้า",
+    "harvicsHouse": "บ้านฮาร์วิคส์",
+    "money": "เงิน",
+    "sales": "ฝ่ายขาย",
+    "offers": "ข้อเสนอ",
+    "darkMode": "โหมดมืด",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "บัตรเครดิต",
+        "msRewards": "บัตรเครดิต M&S Rewards",
+        "clubRewards": "รางวัลคลับ",
+        "ourCards": "บัตรเครดิตของเรา"
+      },
+      "insurance": {
+        "title": "ประกันภัย",
+        "home": "ประกันภัยบ้าน",
+        "travel": "ประกันภัยการเดินทาง"
+      },
+      "travel": {
+        "title": "บริการท่องเที่ยว",
+        "money": "เงินสำหรับการเดินทาง",
+        "exchange": "อัตราแลกเปลี่ยน"
+      },
+      "additional": {
+        "title": "บริการเพิ่มเติม",
+        "savings": "การออมและการลงทุน",
+        "personalLoans": "สินเชื่อส่วนบุคคล",
+        "financialSupport": "การสนับสนุนทางการเงิน"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "ยอดขายปัจจุบัน",
+      "clearance": "การเคลียร์พื้นที่",
+      "seasonal": "การขายตามฤดูกาล"
+    },
+    "offersDropdown": {
+      "specialOffers": "ข้อเสนอพิเศษ",
+      "promotions": "โปรโมชั่น",
+      "bulkOrders": "ส่วนลดสำหรับการสั่งซื้อจำนวนมาก"
+    }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products"
+    "ourProducts": "ผลิตภัณฑ์ของเรา",
+    "viewAllProducts": "ดูสินค้าทั้งหมด",
+    "productCategories": "หมวดหมู่ผลิตภัณฑ์ของเรา",
+    "discoverPremium": "ค้นพบผลิตภัณฑ์ระดับพรีเมียมของเราที่ผลิตขึ้นด้วยความเอาใจใส่และคุณภาพที่ยอดเยี่ยม",
+    "tier1": "ระดับที่ 1: หมวดหมู่",
+    "tier2": "ระดับ 2: โมดูล",
+    "tier3": "ระดับ 3: หน้าจอ KPI",
+    "tier4": "ระดับ 4: การกระทำ",
+    "reset": "รีเซ็ตการนำทาง",
+    "noSubcategories": "ไม่มีหมวดหมู่ย่อยสำหรับหมวดหมู่นี้",
+    "pageTitle": "สินค้า",
+    "subcategories": "หมวดหมู่ย่อย",
+    "bakery": "เบเกอรี่",
+    "bakeryDesc": "ขนมอบและเบเกอรี่อบสดใหม่",
+    "beverages": "เครื่องดื่ม",
+    "beveragesDesc": "เครื่องดื่มสดชื่นสำหรับทุกโอกาส",
+    "confectionery": "ขนมหวาน",
+    "confectioneryDesc": "ขนมหวานและของอร่อย",
+    "culinary": "การทำอาหาร",
+    "culinaryDesc": "ส่วนประกอบสำคัญสำหรับห้องครัวของคุณ",
+    "frozenFoods": "อาหารแช่แข็ง",
+    "frozenFoodsDesc": "อาหารแช่แข็งที่สะดวกและอร่อย",
+    "pasta": "พาสต้า",
+    "pastaDesc": "พาสต้าหลากหลายชนิดต้นตำรับ",
+    "snacks": "ของว่าง",
+    "snacksDesc": "ของว่างแสนอร่อยทานได้ทุกเวลา"
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
-    "email": "Email",
-    "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "title": "ติดต่อเรา",
+    "subtitle": "เรายินดีรับฟังความคิดเห็นของคุณ โปรดติดต่อเราผ่านช่องทางใดก็ได้เหล่านี้",
+    "phone": "โทรศัพท์",
+    "email": "อีเมล",
+    "whatsapp": "วาส",
+    "callNow": "โทรเลย",
+    "sendEmail": "ส่งอีเมล",
+    "messageUs": "ติดต่อเรา"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "ศูนย์สื่อ",
+    "pageTitle": "ศูนย์สื่อ | ฮาร์วิคส์",
+    "description": "แหล่งข้อมูลสำหรับสื่อมวลชน ทรัพย์สินของแบรนด์ และข่าวสารล่าสุดจาก Harvics Global Ventures",
+    "corporate": "บริษัท",
+    "sections": {
+      "news": {
+        "title": "ข่าวและข่าวประชาสัมพันธ์",
+        "desc": "ประกาศล่าสุด การขยายตลาด การเปิดตัวผลิตภัณฑ์ และข่าวสารองค์กรจาก Harvics Global Ventures",
+        "cta": "อ่านข่าวล่าสุด"
+      },
+      "gallery": {
+        "title": "แกลเลอรีรูปภาพ",
+        "desc": "ภาพแบรนด์ความละเอียดสูง ภาพถ่ายผลิตภัณฑ์ ภาพสถานที่ และภาพงานอีเวนต์ สำหรับสื่อมวลชนใช้งาน",
+        "cta": "เรียกดูแกลเลอรี่"
+      },
+      "contacts": {
+        "title": "ติดต่อสื่อมวลชน",
+        "desc": "สำหรับคำถามจากสื่อมวลชน คำขอสัมภาษณ์ และประกาศความร่วมมือ โปรดติดต่อทีมสื่อสารของเรา",
+        "cta": "ติดต่อทีมงานฝ่ายประชาสัมพันธ์"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "ตลาดที่ครอบคลุม",
+      "industryVerticals": "กลุ่มอุตสาหกรรมเฉพาะทาง",
+      "foundedIn": "ก่อตั้งในดูไบ",
+      "languagesSupported": "ภาษาที่รองรับ"
+    },
+    "recentHeadlines": "ข่าวพาดหัวล่าสุด",
+    "headlines": {
+      "expansion": "Harvics ขยายธุรกิจสินค้าอุปโภคบริโภคไปยัง 5 ตลาดใหม่ในเอเชียตะวันออกเฉียงใต้",
+      "aiPlatform": "เปิดตัวแพลตฟอร์มซัพพลายเชนที่ขับเคลื่อนด้วย AI ใหม่สำหรับการจัดจำหน่ายทั่วโลก",
+      "carbonNeutral": "Harvics บรรลุเป้าหมายความเป็นกลางทางคาร์บอนในทุกโรงงาน",
+      "partnership": "ความร่วมมือเชิงกลยุทธ์กับผู้ผลิตสิ่งทอชั้นนำในเอเชียใต้"
+    }
   },
   "footer": {
-    "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
-    "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
-    "contactUsButton": "Contact Us",
-    "usefulLinks": "Useful Links",
-    "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
-    "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
-    "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
-    "privacy": "Privacy",
-    "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
+    "companyName": "ฮาร์วิคส์ โกลบอล เวนเจอร์ส",
+    "tagline": "ความเป็นเลิศด้านสินค้าอุปโภคบริโภคระดับพรีเมียม ตั้งแต่ปี 2019",
+    "brandStatement": "บริษัทชั้นนำระดับโลกด้านสินค้าอุปโภคบริโภคที่จัดจำหน่ายผลิตภัณฑ์อาหารคุณภาพสูงหลากหลายประเภท ด้วยมาตรฐานคุณภาพระดับสากล",
+    "locations": "ลอนดอน • มิลาน • นิวยอร์ก",
+    "since": "ตั้งแต่ปี 2019 เป็นต้นมา",
+    "harvicsNews": "ข่าวฮาร์วิคส์",
+    "subscribeToAlerts": "สมัครรับการแจ้งเตือนและข่าวสารอัปเดต",
+    "signUp": "ลงทะเบียน",
+    "complianceConcerns": "ข้อกังวลด้านการปฏิบัติตามกฎระเบียบ",
+    "speakUp": "หากคุณมีข้อกังวลเกี่ยวกับเรื่องการปฏิบัติตามกฎระเบียบหรือจริยธรรม โปรดแจ้งให้เราทราบ",
+    "speakUpButton": "พูดออกมา",
+    "contactUs": "ติดต่อเรา",
+    "contactDescription": "ติดต่อทีมงานของเราได้เลย",
+    "contactUsButton": "ติดต่อเรา",
+    "usefulLinks": "ลิงก์ที่เป็นประโยชน์",
+    "askHarvics": "ถามฮาร์วิช",
+    "searchForJobs": "ค้นหางาน",
+    "signUpForNews": "ลงทะเบียนเพื่อรับข่าวสาร",
+    "company": "บริษัท",
+    "globalAddresses": "ที่อยู่ทั่วโลก",
+    "strategy": "กลยุทธ์",
+    "ourLeadership": "คณะผู้บริหารของเรา",
+    "brandsAZ": "แบรนด์ต่างๆ เรียงตามตัวอักษร A-Z",
+    "ourHistory": "ประวัติของเรา",
+    "sustainability": "ความยั่งยืน",
+    "news": "ข่าว",
+    "mediaContacts": "ติดต่อสื่อมวลชน",
+    "images": "รูปภาพ",
+    "investors": "นักลงทุน",
+    "corporateGovernance": "การกำกับดูแลกิจการ",
+    "sharesAdrsBonds": "หุ้น, ADRs และพันธบัตร",
+    "publications": "สิ่งพิมพ์",
+    "followUsOn": "ติดตามเราได้ที่",
+    "issuesCount": "0 ปัญหา",
+    "siteMap": "แผนผังเว็บไซต์",
+    "unsubscribe": "ยกเลิกการสมัครรับข้อมูล",
+    "help": "ช่วย",
+    "privacy": "ความเป็นส่วนตัว",
+    "cookies": "คุกกี้",
+    "termsOfUse": "ข้อกำหนดในการใช้งาน",
+    "accessibility": "การเข้าถึง",
+    "carbonEfficiency": "ประสิทธิภาพด้านคาร์บอน",
+    "suppliers": "ซัพพลายเออร์",
+    "socialMedia": "สื่อสังคมออนไลน์",
+    "cookieSettings": "การตั้งค่าคุกกี้",
     "feature1Title": "Global Reach",
     "feature1Desc": "Serving customers across 40+ countries worldwide",
-    "feature2Title": "Premium Quality",
+    "feature2Title": "คุณภาพระดับพรีเมียม",
     "feature2Desc": "International quality standards in every product",
     "feature3Title": "Innovation",
     "feature3Desc": "Leading innovation in consumer goods industry",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
-    "media": "Media"
+    "emailAddress": "ที่อยู่อีเมล",
+    "enterEmailPlaceholder": "ป้อนที่อยู่อีเมลของคุณ",
+    "subscribe": "สมัครสมาชิก",
+    "subscribing": "กำลังติดตาม...",
+    "aboutUs": "เกี่ยวกับเรา",
+    "media": "สื่อ"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "ค้นหาสินค้า แบรนด์ หรือหมวดหมู่",
+    "noResults": "ไม่พบผลลัพธ์",
+    "searching": "กำลังค้นหา...",
+    "results": "ผลลัพธ์"
   },
   "chatbot": {
-    "title": "Chat with Us",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "title": "แชทกับเรา",
+    "placeholder": "พิมพ์ข้อความของคุณ...",
+    "send": "ส่ง",
+    "close": "ปิด",
+    "welcome": "สวัสดี! วันนี้ฉันสามารถช่วยอะไรคุณได้บ้าง?",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "ขอโทษค่ะ ฉันไม่เข้าใจ รบกวนช่วยอธิบายใหม่อีกครั้งได้ไหมคะ",
+      "help": "ฉันสามารถช่วยคุณได้ในเรื่องข้อมูลผลิตภัณฑ์ การสั่งซื้อ หรือข้อสงสัยทั่วไป คุณต้องการทราบอะไรบ้าง?",
+      "contact": "หากต้องการความช่วยเหลือเพิ่มเติม โปรดติดต่อเราได้ที่ support@harvics.com หรือโทร +1-800-HARVICS"
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
-    "filter": "Filter",
-    "clear": "Clear",
-    "download": "Download",
-    "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
-    "status": "Status",
-    "date": "Date",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
-    "selectCountry": "Select Country",
-    "required": "Required",
-    "menu": "Menu",
-    "viewProducts": "View Products"
+    "chatWithUs": "แชทกับเรา",
+    "loading": "กำลังโหลด...",
+    "error": "ข้อผิดพลาด",
+    "success": "ความสำเร็จ",
+    "save": "บันทึก",
+    "cancel": "ยกเลิก",
+    "delete": "ลบ",
+    "edit": "แก้ไข",
+    "view": "ดู",
+    "submit": "ส่ง",
+    "search": "ค้นหา",
+    "filter": "กรอง",
+    "clear": "ชัดเจน",
+    "download": "ดาวน์โหลด",
+    "upload": "อัปโหลด",
+    "yes": "ใช่",
+    "no": "เลขที่",
+    "close": "ปิด",
+    "back": "กลับ",
+    "next": "ต่อไป",
+    "previous": "ก่อนหน้า",
+    "actions": "การกระทำ",
+    "status": "สถานะ",
+    "date": "วันที่",
+    "name": "ชื่อ",
+    "email": "อีเมล",
+    "phone": "โทรศัพท์",
+    "address": "ที่อยู่",
+    "country": "ประเทศ",
+    "city": "เมือง",
+    "all": "ทั้งหมด",
+    "none": "ไม่มี",
+    "select": "เลือก",
+    "selectCountry": "เลือกประเทศ",
+    "required": "ที่จำเป็น",
+    "menu": "เมนู",
+    "viewProducts": "ดูสินค้า",
+    "selectLanguage": "เลือกภาษา",
+    "showMore": "แสดงเพิ่มเติม",
+    "showLess": "แสดงน้อยลง"
   },
   "music": {
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "เล่นดนตรี",
+    "pause": "หยุดเพลง",
+    "mute": "ปิดเสียงเพลง",
+    "unmute": "เปิดเสียงเพลง"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "ขอบเขตการดำเนินงานทั่วโลกของเรา",
+    "since": "เนื่องจาก",
+    "majorMarket": "ตลาดหลัก",
+    "majorMarkets": "ตลาดหลัก",
+    "presence": "การมีอยู่",
+    "countriesServed": "ประเทศที่ให้บริการ",
+    "majorMarketsCount": "ตลาดหลัก",
+    "productCategoriesCount": "หมวดหมู่สินค้า",
+    "establishedYear": "ที่จัดตั้งขึ้น"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "ลำดับชั้นของอาณาเขต",
+    "fullPath": "เส้นทางเต็ม",
+    "currentTerritory": "อาณาเขตปัจจุบัน",
+    "noChildren": "ไม่มีรายการ",
     "tiers": {
-      "globe": "Globe",
-      "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
-      "district": "District",
-      "location": "Location"
+      "globe": "โลก",
+      "continent": "ทวีป",
+      "region": "ภูมิภาค",
+      "country": "ประเทศ",
+      "city": "เมือง",
+      "district": "เขต",
+      "location": "ที่ตั้ง"
     }
   },
   "globalWorld": {
-    "title": "Harvics Global",
-    "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "title": "ฮาร์วิคส์ โกลบอล",
+    "titleShort": "ทั่วโลก",
+    "selectRegion": "เลือกภูมิภาค",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
+      "title": "รายละเอียดลูกค้า",
+      "selected": "เลือกแล้ว",
+      "fullName": "ชื่อเต็ม",
+      "namePlaceholder": "กรุณาป้อนชื่อเต็มของคุณ",
+      "nameRequired": "ต้องระบุชื่อ",
+      "email": "ที่อยู่อีเมล",
       "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
+      "emailRequired": "ต้องระบุอีเมล",
+      "emailInvalid": "โปรดป้อนที่อยู่อีเมลที่ถูกต้อง",
+      "phone": "หมายเลขโทรศัพท์",
       "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "phoneRequired": "ต้องระบุหมายเลขโทรศัพท์",
+      "address": "ที่อยู่",
+      "addressPlaceholder": "ที่อยู่ของคุณ",
+      "addressRequired": "ต้องระบุที่อยู่",
+      "marketingConsent": "ฉันยินยอมรับข่าวสารและข้อมูลอัปเดตทางการตลาด",
+      "submit": "ส่งและดำเนินการต่อ",
+      "submitting": "กำลังส่ง...",
+      "skip": "ข้ามและดำเนินการต่อ"
     }
   },
   "distributorPortal": {
     "dashboard": {
       "kpi": {
-        "title": "Key Performance Indicators",
-        "ordersToday": "Orders today",
-        "ordersTodaySubtitle": "Submitted via Harvics CRM",
-        "pendingDeliveries": "Pending deliveries",
-        "pendingDeliveriesSubtitle": "Across assigned routes",
-        "retailers": "Retailers",
-        "retailersSubtitle": "Active outlets in scope",
-        "attendance": "T & A Score",
-        "attendanceSubtitle": "Territory coverage"
+        "title": "ตัวชี้วัดประสิทธิภาพหลัก",
+        "ordersToday": "สั่งซื้อวันนี้",
+        "ordersTodaySubtitle": "ส่งผ่านระบบ CRM ของ Harvics",
+        "pendingDeliveries": "การส่งมอบที่รอดำเนินการ",
+        "pendingDeliveriesSubtitle": "ตามเส้นทางที่กำหนดไว้",
+        "retailers": "ผู้ค้าปลีก",
+        "retailersSubtitle": "ร้านค้าที่ใช้งานอยู่ซึ่งอยู่ในขอบเขต",
+        "attendance": "คะแนน T & A",
+        "attendanceSubtitle": "ขอบเขตการครอบคลุม"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "การเงินและสินค้าคงคลัง",
+        "lowStock": "สินค้ามีจำนวนจำกัด",
+        "lowStockSubtitle": "กระตุ้นการเติม",
+        "outstandingInvoices": "ใบแจ้งหนี้ค้างชำระ",
+        "outstandingInvoicesSubtitle": "ถึงกำหนดรับสินค้าแล้ว",
+        "creditLimit": "วงเงินเครดิต",
+        "creditLimitSubtitle": "มอบหมายโดยฝ่ายการเงิน"
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "เปิดใช้งานการอนุมัติอัตโนมัติ การเติมสต็อก และการแจ้งเตือนใบแจ้งหนี้",
+        "autoApproval": "การอนุมัติตนเอง",
+        "stockReplenishment": "การเติมสต็อก",
+        "invoiceReminders": "การแจ้งเตือนการชำระเงิน"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "คำแนะนำจาก AI",
+        "riskLevel": "ระดับความเสี่ยง",
+        "riskDescription": "พิจารณาจากประวัติการใช้เครดิตและการชำระเงิน",
+        "suggestedOrder": "ลำดับการสั่งซื้อที่แนะนำ",
+        "suggestedOrderSubtitle": "รหัสสินค้า (SKU) ที่ AI แนะนำให้สั่งซื้อ",
+        "nextAction": "ขั้นตอนต่อไป"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "การดำเนินการและคำแนะนำ",
+        "complaints": "การร้องเรียน",
+        "complaintsSubtitle": "ปัญหาของผู้ค้าปลีกที่รอการดำเนินการ",
+        "playbook": "สมุดคู่มือ",
+        "playbookItem1": "ให้ความสำคัญกับการจัดส่งที่ค้างอยู่ก่อนเที่ยงเป็นลำดับแรก",
+        "playbookItem2": "ดำเนินการปิดข้อร้องเรียนที่ค้างอยู่ทั้งหมดภายใน 48 ชั่วโมง",
+        "playbookItem3": "สั่งเติมสินค้าสำหรับ SKU ที่มีสต็อกเหลือน้อย (สร้างใบสั่งซื้ออัตโนมัติ)"
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "อาณาเขต",
+      "ordersThisMonth": "ยอดสั่งซื้อในเดือนนี้",
+      "pendingOrders": "คำสั่งซื้อที่รอดำเนินการ",
+      "deliveredOrders": "คำสั่งซื้อที่จัดส่งแล้ว",
+      "territoryInformation": "ข้อมูลเกี่ยวกับอาณาเขต",
+      "country": "ประเทศ",
+      "city": "เมือง",
+      "region": "ภูมิภาค",
+      "quickActions": "การดำเนินการด่วน",
+      "newOrder": "คำสั่งใหม่",
+      "viewOrders": "ดูคำสั่งซื้อ",
+      "viewInvoices": "ดูใบแจ้งหนี้",
+      "profileSettings": "การตั้งค่าโปรไฟล์",
+      "loading": "กำลังโหลดแดชบอร์ด...",
+      "error": "ข้อผิดพลาด"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
-      "date": "Date",
-      "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "title": "คำสั่งซื้อของฉัน",
+      "orderId": "รหัสคำสั่งซื้อ",
+      "date": "วันที่",
+      "status": "สถานะ",
+      "items": "รายการ",
+      "totalAmount": "จำนวนเงินทั้งหมด",
+      "actions": "การกระทำ",
+      "viewDetails": "ดูรายละเอียด",
       "filters": {
-        "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "สถานะ",
+        "startDate": "วันที่เริ่มต้น",
+        "endDate": "วันสิ้นสุด",
+        "allStatuses": "สถานะทั้งหมด",
+        "clearFilters": "ล้างตัวกรอง"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "รอดำเนินการ",
+        "processing": "กำลังประมวลผล",
+        "delivered": "จัดส่งแล้ว",
+        "cancelled": "ยกเลิก"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
-      "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "noOrders": "ไม่พบคำสั่งซื้อ",
+      "loading": "กำลังโหลดคำสั่งซื้อ...",
+      "page": "หน้าหนังสือ",
+      "of": "ของ",
+      "previous": "ก่อนหน้า",
+      "next": "ต่อไป"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
-      "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "orderItems": "Order Items",
-      "product": "Product",
-      "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "title": "รายละเอียดการสั่งซื้อ",
+      "backToOrders": "กลับไปที่หน้าคำสั่งซื้อ",
+      "orderId": "รหัสคำสั่งซื้อ",
+      "status": "สถานะ",
+      "orderDate": "วันที่สั่งซื้อ",
+      "deliveryDate": "วันที่ส่งมอบ",
+      "deliveryAddress": "ที่อยู่จัดส่งสินค้า",
+      "notes": "หมายเหตุ",
+      "orderItems": "รายการสั่งซื้อ",
+      "product": "ผลิตภัณฑ์",
+      "sku": "รหัสสินค้า",
+      "quantity": "ปริมาณ",
+      "unitPrice": "ราคาต่อหน่วย",
+      "total": "ทั้งหมด",
+      "totalAmount": "จำนวนเงินทั้งหมด",
+      "statusTimeline": "ไทม์ไลน์สถานะ",
+      "orderNotFound": "ไม่พบคำสั่งซื้อ"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
-      "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "title": "สร้างคำสั่งซื้อใหม่",
+      "orderItems": "รายการสั่งซื้อ",
+      "addItem": "เพิ่มรายการ",
+      "noItems": "ยังไม่มีการเพิ่มรายการใดๆ คลิก \"เพิ่มรายการ\" เพื่อเริ่มต้น",
+      "orderDetails": "รายละเอียดการสั่งซื้อ",
+      "deliveryDate": "วันที่ส่งมอบ",
+      "deliveryAddress": "ที่อยู่จัดส่งสินค้า",
+      "notes": "หมายเหตุ",
+      "totalAmount": "จำนวนเงินทั้งหมด",
+      "createOrder": "สร้างคำสั่งซื้อ",
+      "creatingOrder": "กำลังสร้างคำสั่งซื้อ...",
+      "cancel": "ยกเลิก",
+      "selectProduct": "เลือกสินค้า",
+      "product": "ผลิตภัณฑ์",
+      "quantity": "ปริมาณ",
+      "unitPrice": "ราคาต่อหน่วย",
+      "remove": "ลบ",
+      "subtotal": "ยอดรวมย่อย",
+      "orderId": "รหัสคำสั่งซื้อ",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "ต้องมีรายการสั่งซื้ออย่างน้อยหนึ่งรายการ",
+        "productRequired": "จำเป็นต้องใช้ผลิตภัณฑ์",
+        "quantityRequired": "ปริมาณต้องมากกว่า 0",
+        "priceRequired": "ราคาต่อหน่วยต้องไม่ติดลบ",
+        "invalidDate": "รูปแบบวันที่จัดส่งไม่ถูกต้อง",
+        "datePast": "วันส่งมอบสินค้าต้องไม่ใช่ในอดีต"
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "ใบแจ้งหนี้ของฉัน",
+      "invoiceNumber": "หมายเลขใบแจ้งหนี้",
+      "invoiceDate": "วันที่ออกใบแจ้งหนี้",
+      "dueDate": "สองเดท",
+      "amount": "จำนวน",
+      "paidAmount": "จำนวนเงินที่ชำระ",
+      "paymentStatus": "สถานะการชำระเงิน",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "สถานะการชำระเงิน",
+        "allStatuses": "สถานะทั้งหมด",
+        "clearFilters": "ล้างตัวกรอง"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "จ่าย",
+        "unpaid": "ไม่ได้รับค่าจ้าง",
+        "partial": "บางส่วน"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "ไม่พบใบแจ้งหนี้",
+      "loading": "กำลังโหลดใบแจ้งหนี้..."
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "title": "โปรไฟล์ของฉัน",
+      "accountInformation": "ข้อมูลบัญชี",
+      "distributorId": "รหัสผู้จัดจำหน่าย",
+      "territory": "อาณาเขต",
+      "country": "ประเทศ",
+      "city": "เมือง",
+      "accountCreated": "สร้างบัญชีแล้ว",
+      "updateProfile": "อัปเดตโปรไฟล์",
+      "name": "ชื่อ",
+      "email": "อีเมล",
+      "phone": "โทรศัพท์",
+      "address": "ที่อยู่",
+      "language": "ภาษา",
+      "currency": "สกุลเงิน",
+      "saveChanges": "บันทึกการเปลี่ยนแปลง",
+      "saving": "ประหยัด...",
+      "profileUpdated": "อัปเดตข้อมูลโปรไฟล์สำเร็จแล้ว",
+      "loading": "กำลังโหลดข้อมูลโปรไฟล์...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "รูปแบบอีเมลไม่ถูกต้อง",
+        "invalidPhone": "รูปแบบโทรศัพท์ไม่ถูกต้อง"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
-      "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "error": "ข้อผิดพลาด",
+      "loading": "กำลังโหลด...",
+      "save": "บันทึก",
+      "cancel": "ยกเลิก",
+      "back": "กลับ",
+      "submit": "ส่ง",
+      "delete": "ลบ",
+      "edit": "แก้ไข",
+      "view": "ดู",
+      "search": "ค้นหา",
+      "filter": "กรอง",
+      "clear": "ชัดเจน",
+      "apply": "นำมาใช้",
+      "close": "ปิด",
+      "confirm": "ยืนยัน",
+      "yes": "ใช่",
+      "no": "เลขที่"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
-    "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "title": "ระบบปฏิบัติการทางกฎหมาย",
+    "sidebarTitle": "ระบบปฏิบัติการทางกฎหมาย",
+    "accessDenied": "การเข้าถึงถูกปฏิเสธ",
+    "accessDeniedMessage": "คุณไม่มีสิทธิ์เข้าถึงโมดูลระบบปฏิบัติการด้านกฎหมาย",
+    "dashboard": "แดชบอร์ด",
+    "contracts": "สัญญา",
+    "certificates": "ใบรับรอง",
+    "compliance": "การปฏิบัติตามกฎระเบียบ",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "แดชบอร์ดด้านกฎหมาย",
+      "description": "ภาพรวมการดำเนินงานด้านกฎหมายและสถานะการปฏิบัติตามกฎหมาย",
+      "activeTrademarks": "เครื่องหมายการค้าที่ยังใช้งานอยู่",
+      "activeContracts": "สัญญาที่ใช้งานอยู่",
+      "complianceStatus": "สถานะการปฏิบัติตามข้อกำหนด"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "เครื่องหมายการค้า",
+      "description": "จัดการการจดทะเบียนและการยื่นขอจดทะเบียนเครื่องหมายการค้า",
+      "addNew": "เพิ่มเครื่องหมายการค้าใหม่",
       "filters": {
-        "country": "Country",
-        "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "country": "ประเทศ",
+        "status": "สถานะ",
+        "allCountries": "ทุกประเทศ",
+        "allStatuses": "สถานะทั้งหมด",
+        "clearFilters": "ล้างตัวกรอง"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "brandName": "ชื่อแบรนด์",
+        "class": "ระดับ",
+        "country": "ประเทศ",
+        "applicationNo": "หมายเลขใบสมัคร",
+        "status": "สถานะ",
+        "expiryDate": "วันหมดอายุ",
+        "actions": "การกระทำ"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "แก้ไขเครื่องหมายการค้า",
+        "add": "เพิ่มเครื่องหมายการค้าใหม่",
+        "view": "ดูเครื่องหมายการค้า"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "brandName": "ชื่อแบรนด์",
+        "classNumber": "หมายเลขชั้นเรียน",
+        "country": "ประเทศ",
+        "applicationNo": "หมายเลขใบสมัคร",
+        "status": "สถานะ",
+        "expiryDate": "วันหมดอายุ",
+        "documents": "เอกสาร",
+        "noDocuments": "ไม่มีเอกสารแนบ",
+        "addDocument": "เพิ่มเอกสาร",
+        "remove": "ลบ"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "ไม่สามารถโหลดเครื่องหมายการค้าได้",
+        "saveFailed": "ไม่สามารถบันทึกเครื่องหมายการค้าได้ โปรดลองอีกครั้ง"
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "คดีความทางกฎหมาย",
+      "description": "จัดการคดีความและติดตามสถานะของคดี",
+      "addNew": "เคสใหม่",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
-        "description": "Description",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date"
+        "caseTitle": "ชื่อคดี",
+        "caseType": "ประเภทเคส",
+        "country": "ประเทศ",
+        "description": "คำอธิบาย",
+        "assignedTo": "มอบหมายให้",
+        "status": "สถานะ",
+        "hearingDate": "วันนัดพิจารณาคดี"
       },
       "table": {
-        "caseTitle": "Case Title",
-        "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "caseTitle": "ชื่อคดี",
+        "type": "พิมพ์",
+        "country": "ประเทศ",
+        "assignedTo": "มอบหมายให้",
+        "status": "สถานะ",
+        "hearingDate": "วันนัดพิจารณาคดี",
+        "actions": "การกระทำ"
       },
       "status": {
-        "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "open": "เปิด",
+        "inProgress": "กำลังดำเนินการ",
+        "closed": "ปิด",
+        "cancelled": "ยกเลิก"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "ดูแผนที่กองเรือ",
+      "description": "การติดตามตำแหน่งพนักงานขายและรถส่งสินค้าแบบเรียลไทม์",
+      "activeEmployees": "พนักงานที่ปฏิบัติงาน",
+      "noEmployees": "ไม่มีพนักงานที่ปฏิบัติงานอยู่",
+      "loading": "กำลังโหลด..."
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
-      "reset": "Reset",
-      "play": "Play",
-      "pause": "Pause",
-      "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "title": "เล่นเส้นทางซ้ำ",
+      "employee": "พนักงาน",
+      "speed": "ความเร็ว",
+      "reset": "รีเซ็ต",
+      "play": "เล่น",
+      "pause": "หยุดชั่วคราว",
+      "points": "คะแนน",
+      "noRoute": "ไม่มีข้อมูลเส้นทาง",
+      "loading": "กำลังโหลดเส้นทาง..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "ผลิตภัณฑ์ของคู่แข่ง",
+      "description": "ติดตามข้อมูลผลิตภัณฑ์ของคู่แข่ง",
+      "addProduct": "เพิ่มสินค้า",
+      "formTitle": "เพิ่มผลิตภัณฑ์ของคู่แข่ง",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "ยี่ห้อ",
+        "skuName": "ชื่อ SKU",
+        "category": "หมวดหมู่",
+        "size": "ขนาด",
+        "price": "ราคา",
+        "currency": "สกุลเงิน",
+        "country": "ประเทศ"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "ยี่ห้อ",
+        "skuName": "ชื่อ SKU",
+        "category": "หมวดหมู่",
+        "size": "ขนาด",
+        "price": "ราคา",
+        "country": "ประเทศ",
+        "dateAdded": "วันที่เพิ่ม"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "ไม่สามารถโหลดสินค้าได้",
+        "createFailed": "ไม่สามารถสร้างผลิตภัณฑ์ได้ โปรดลองอีกครั้ง"
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "ไม่พบผลิตภัณฑ์คู่แข่ง",
+      "loading": "กำลังโหลดสินค้า..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "แดชบอร์ดคู่แข่ง",
+      "description": "การวิเคราะห์และข้อมูลเชิงลึกเกี่ยวกับผลิตภัณฑ์ของคู่แข่ง",
+      "totalProducts": "ผลิตภัณฑ์ทั้งหมด",
+      "brandsTracked": "แบรนด์ที่ติดตาม",
+      "countries": "ประเทศ",
+      "categories": "หมวดหมู่",
+      "byBrand": "สินค้าตามแบรนด์",
+      "byCountry": "สินค้าแยกตามประเทศ",
+      "byCategory": "สินค้าแบ่งตามหมวดหมู่",
+      "loading": "กำลังโหลดสถิติ...",
+      "noStats": "ไม่มีสถิติให้ดู"
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
-    "finance": "Finance",
-    "crm": "CRM",
-    "hr": "HR",
-    "executive": "Executive",
-    "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
-    "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
-    "admin": "Admin"
+    "overview": "ภาพรวม",
+    "orders": "คำสั่งซื้อ",
+    "inventory": "รายการสิ่งของ",
+    "logistics": "โลจิสติกส์",
+    "finance": "การเงิน",
+    "crm": "ระบบ CRM",
+    "hr": "ฝ่ายทรัพยากรบุคคล",
+    "executive": "ผู้บริหาร",
+    "investor": "นักลงทุน",
+    "legal-ipr": "กฎหมาย/ทรัพย์สินทางปัญญา",
+    "competitor": "คู่แข่ง",
+    "import-export": "นำเข้า/ส่งออก",
+    "gps-tracking": "การติดตามด้วย GPS",
+    "localization": "การแปลเป็นภาษาท้องถิ่น",
+    "workflows": "เวิร์กโฟลว์",
+    "admin": "ผู้ดูแลระบบ"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
-      "finance": "Finance",
-      "crm": "CRM",
-      "hr": "HR",
-      "executive": "Executive",
-      "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
-      "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
-      "admin": "Admin"
+      "overview": "ภาพรวม",
+      "orders": "คำสั่งซื้อ",
+      "inventory": "รายการสิ่งของ",
+      "logistics": "โลจิสติกส์",
+      "finance": "การเงิน",
+      "crm": "ระบบ CRM",
+      "hr": "ฝ่ายทรัพยากรบุคคล",
+      "executive": "ผู้บริหาร",
+      "investor": "นักลงทุน",
+      "legal-ipr": "กฎหมาย/ทรัพย์สินทางปัญญา",
+      "competitor": "คู่แข่ง",
+      "import-export": "นำเข้า/ส่งออก",
+      "gps-tracking": "การติดตามด้วย GPS",
+      "localization": "การแปลเป็นภาษาท้องถิ่น",
+      "workflows": "เวิร์กโฟลว์",
+      "admin": "ผู้ดูแลระบบ"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
-      "profit": "Profit"
+      "customers": "ลูกค้า",
+      "employees": "พนักงาน",
+      "profit": "กำไร"
+    },
+    "domain": {
+      "title": "CRM OS",
+      "customer360": {
+        "title": "ลูกค้า 360 องศา",
+        "description": "ข้อมูลลูกค้าที่สมบูรณ์ ประวัติการติดต่อ และการจัดการความสัมพันธ์"
+      },
+      "campaigns": {
+        "title": "แคมเปญดิจิทัล",
+        "description": "แคมเปญการตลาดแบบหลายช่องทาง (IG, FB, TikTok, WhatsApp)"
+      },
+      "leads": {
+        "title": "โอกาสและช่องทางใหม่ๆ",
+        "description": "การบริหารจัดการลูกค้าเป้าหมาย การคัดกรอง และการสร้างโอกาสทางธุรกิจ"
+      },
+      "support": {
+        "title": "ฝ่ายบริการลูกค้า",
+        "description": "การจัดการตั๋ว การบริการลูกค้า และการแก้ไขปัญหา"
+      },
+      "loyalty": {
+        "title": "โปรแกรมสะสมแต้ม",
+        "description": "การจัดการความภักดีของลูกค้าค้าปลีก การใช้กลไกเกม และระบบรางวัล"
+      }
+    },
+    "customerList": {
+      "title": "ลูกค้า 360",
+      "newCustomer": "ลูกค้าใหม่",
+      "totalCustomers": "ลูกค้าทั้งหมด",
+      "active": "คล่องแคล่ว",
+      "new": "ใหม่",
+      "satisfaction": "ความพึงพอใจ",
+      "customerManagement": "การจัดการลูกค้า",
+      "customerManagementDescription": "ดูและจัดการความสัมพันธ์กับลูกค้า การโต้ตอบ และแคมเปญต่างๆ ของคุณ",
+      "loading": "กำลังโหลด...",
+      "error": "เกิดข้อผิดพลาดในการโหลดข้อมูล CRM"
     }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "กำลังโหลดหน้าจอแสดงผลของซัพพลายเออร์…",
+      "purchaseOrders": "ใบสั่งซื้อ",
+      "purchaseOrdersSubtitle": "เลี้ยงดูโดย Harvics",
+      "shipments": "การจัดส่งสินค้า / GRN",
+      "shipmentsSubtitle": "ได้รับการยอมรับในสัปดาห์นี้",
+      "invoices": "สร้างใบแจ้งหนี้แล้ว",
+      "invoicesSubtitle": "รอการชำระเงิน",
+      "paymentsPending": "การชำระเงินที่รอดำเนินการ",
+      "paymentsPendingSubtitle": "กำหนดวางจำหน่าย",
+      "qualityComplaints": "คุณภาพ / ข้อร้องเรียน",
+      "qualityComplaintsSubtitle": "ตั๋วเปิด",
+      "forecast": "พยากรณ์อากาศ (4 สัปดาห์ข้างหน้า)",
+      "forecastSubtitle": "ตัวแทน AI",
+      "supplierActions": "การดำเนินการของซัพพลายเออร์",
+      "action1": "ยืนยันการจัดส่งสินค้าที่จะเกิดขึ้นและอัปเดตตารางการรับสินค้า (GRN)",
+      "action2": "ตรวจสอบใบแจ้งหนี้ที่ค้างชำระและแจ้งรายละเอียดการชำระเงิน",
+      "action3": "แก้ไขข้อร้องเรียนด้านคุณภาพที่ยังค้างอยู่โดยใช้หลักฐานจากฝ่ายควบคุมคุณภาพ"
+    }
+  },
+  "form": {
+    "username": "ชื่อผู้ใช้",
+    "password": "รหัสผ่าน",
+    "email": "อีเมล",
+    "submit": "ส่ง",
+    "cancel": "ยกเลิก",
+    "save": "บันทึก",
+    "delete": "ลบ",
+    "search": "ค้นหา",
+    "filter": "กรอง",
+    "reset": "รีเซ็ต",
+    "close": "ปิด",
+    "back": "กลับ",
+    "next": "ต่อไป",
+    "previous": "ก่อนหน้า",
+    "confirm": "ยืนยัน",
+    "rememberMe": "จำฉันไว้ด้วยนะ",
+    "forgotPassword": "ลืมรหัสผ่านใช่ไหม?",
+    "emailRequired": "ต้องระบุอีเมล",
+    "emailInvalid": "โปรดป้อนที่อยู่อีเมลที่ถูกต้อง"
+  },
+  "faq": {
+    "products": {
+      "category": "สินค้า",
+      "q1": "Harvics จำหน่ายผลิตภัณฑ์อะไรบ้าง?",
+      "a1": "เรานำเสนอผลิตภัณฑ์อาหารคุณภาพเยี่ยมหลากหลายประเภท รวมถึงขนมหวาน เครื่องดื่ม ขนมขบเคี้ยว พาสต้า ขนมอบ และอาหารแช่แข็งในหลายหมวดหมู่",
+      "q2": "ฉันสามารถซื้อผลิตภัณฑ์ Harvics ได้ที่ไหน?",
+      "a2": "ผลิตภัณฑ์ของเรามีจำหน่ายในร้านค้าปลีกกว่า 40 ประเทศทั่วโลก ใช้เครื่องมือค้นหาร้านค้าหรือหน้าติดต่อเราเพื่อค้นหาร้านค้าใกล้บ้านคุณ",
+      "q3": "คุณรับสั่งซื้อจำนวนมากหรือไม่?",
+      "a3": "ใช่ เรามีส่วนลดสำหรับการสั่งซื้อจำนวนมากสำหรับธุรกิจและร้านค้าปลีก โปรดเยี่ยมชมหน้าส่วนลดสำหรับการสั่งซื้อจำนวนมากของเราเพื่อดูข้อมูลเพิ่มเติม"
+    },
+    "ordersShipping": {
+      "category": "การสั่งซื้อและการจัดส่ง",
+      "q1": "คุณมีตัวเลือกการจัดส่งอะไรบ้าง?",
+      "a1": "เรามีบริการจัดส่งสินค้าหลากหลายรูปแบบ ทั้งแบบมาตรฐาน แบบด่วน และแบบระหว่างประเทศ จัดส่งฟรีเมื่อสั่งซื้อสินค้าครบ 50 ดอลลาร์ขึ้นไป",
+      "q2": "การจัดส่งใช้เวลานานแค่ไหน?",
+      "a2": "ระยะเวลาในการจัดส่งแตกต่างกันไปตามสถานที่ โดยปกติการจัดส่งแบบมาตรฐานจะใช้เวลา 5-7 วันทำการ ส่วนการจัดส่งด่วนจะใช้เวลา 2-3 วันทำการ",
+      "q3": "ฉันสามารถติดตามสถานะคำสั่งซื้อของฉันได้หรือไม่?",
+      "a3": "ใช่ คุณสามารถติดตามสถานะการสั่งซื้อของคุณได้โดยใช้หมายเลขติดตามที่ระบุไว้ในอีเมลยืนยันการสั่งซื้อของคุณ"
+    },
+    "accountPayments": {
+      "category": "บัญชีและการชำระเงิน",
+      "q1": "ฉันจะสร้างบัญชีได้อย่างไร?",
+      "a1": "คลิกที่ \"เข้าสู่ระบบ\" ในส่วนหัว แล้วเลือก \"สร้างบัญชี\" เพื่อลงทะเบียนบัญชีใหม่",
+      "q2": "คุณรับชำระเงินด้วยวิธีใดบ้าง?",
+      "a2": "เรารับชำระเงินด้วยบัตรเครดิต บัตรเดบิต PayPal และการโอนเงินผ่านธนาคารสำหรับการสั่งซื้อแบบ B2B ทุกประเภท",
+      "q3": "ข้อมูลการชำระเงินของฉันปลอดภัยหรือไม่?",
+      "a3": "ใช่ เราใช้การเข้ารหัสตามมาตรฐานอุตสาหกรรมเพื่อปกป้องข้อมูลการชำระเงินของคุณ"
+    },
+    "returnsRefunds": {
+      "category": "การคืนสินค้าและการขอคืนเงิน",
+      "q1": "นโยบายการคืนสินค้าของคุณคืออะไร?",
+      "a1": "เรามีนโยบายคืนสินค้าภายใน 30 วัน สำหรับสินค้าที่ยังไม่เปิดใช้และอยู่ในบรรจุภัณฑ์เดิม กรุณาติดต่อฝ่ายบริการลูกค้าเพื่อขออนุมัติการคืนสินค้า",
+      "q2": "ฉันจะขอเงินคืนได้อย่างไร?",
+      "a2": "โปรดติดต่อทีมบริการลูกค้าของเรา พร้อมแจ้งหมายเลขคำสั่งซื้อและเหตุผลในการคืนสินค้า เราจะดำเนินการคืนเงินให้คุณภายใน 5-7 วันทำการ"
+    },
+    "contactCta": {
+      "title": "ยังมีคำถามเพิ่มเติมหรือไม่?",
+      "subtitle": "ทีมบริการลูกค้าของเราพร้อมให้ความช่วยเหลือ",
+      "button": "ติดต่อเรา"
+    }
+  },
+  "careers": {
+    "title": "อาชีพ",
+    "pageTitle": "ร่วมงานกับเรา | Harvics",
+    "description": "เข้าร่วม Harvics Global Ventures — สำรวจโอกาสทางธุรกิจในกว่า 40 ประเทศ",
+    "joinUs": "มาร่วมกับเรา",
+    "heroTitle": "สร้างอนาคตของการค้าโลก",
+    "heroDesc": "เรากำลังขยายธุรกิจไปกว่า 40 ประเทศ เข้าร่วมทีมที่กำลังสร้างระบบปฏิบัติการที่ขับเคลื่อนด้วย AI สำหรับการค้าทั่วโลก",
+    "stats": {
+      "openPositions": "ตำแหน่งงานว่าง",
+      "countries": "ประเทศ",
+      "industryVerticals": "กลุ่มอุตสาหกรรมเฉพาะทาง",
+      "departmentsHiring": "ฝ่ายรับสมัครงาน"
+    },
+    "openPositionsByDept": "ตำแหน่งงานว่างแยกตามแผนก",
+    "departments": {
+      "sales": {
+        "name": "ฝ่ายขายและการจัดจำหน่าย",
+        "desc": "ขับเคลื่อนรายได้ในกว่า 40 ตลาด การบริหารจัดการพื้นที่ การดูแลลูกค้าหลัก และความสัมพันธ์กับตัวแทนจำหน่าย"
+      },
+      "supplyChain": {
+        "name": "ห่วงโซ่อุปทานและโลจิสติกส์",
+        "desc": "ห่วงโซ่อุปทานแบบครบวงจร ตั้งแต่โรงงานจนถึงชั้นวางสินค้า การจัดการยานพาหนะ คลังสินค้า การจัดส่งถึงปลายทาง"
+      },
+      "technology": {
+        "name": "เทคโนโลยีและปัญญาประดิษฐ์",
+        "desc": "สร้าง Harvics OS — แพลตฟอร์มระดับองค์กรที่ขับเคลื่อนด้วย AI ของเรา ครบวงจรทั้งด้านวิศวกรรม Machine Learning และวิทยาศาสตร์ข้อมูล"
+      },
+      "finance": {
+        "name": "การเงินและการคลัง",
+        "desc": "การบริหารเงินทุนหลายสกุลเงิน การเงินเพื่อการค้า การชำระเงินดิจิทัล HPay การจัดการอัตราแลกเปลี่ยนข้ามภูมิภาค"
+      },
+      "procurement": {
+        "name": "การจัดซื้อจัดหา",
+        "desc": "จัดหาวัตถุดิบจากกว่า 15 ประเทศทั่วโลก มีการตรวจสอบผู้จำหน่าย การควบคุมคุณภาพ และโปรแกรมซื้อขายตรงจากโรงงาน"
+      },
+      "hr": {
+        "name": "ฝ่ายทรัพยากรบุคคล",
+        "desc": "การสรรหาบุคลากร การพัฒนาและฝึกอบรม การบริหารผลการปฏิบัติงานในหลากหลายภูมิภาคและวัฒนธรรม"
+      },
+      "legal": {
+        "name": "กฎหมายและการปฏิบัติตามกฎระเบียบ",
+        "desc": "การปฏิบัติตามกฎระเบียบทางการค้า การตรวจสอบการคว่ำบาตร การคุ้มครองทรัพย์สินทางปัญญา การบริหารจัดการสัญญาข้ามเขตอำนาจศาล"
+      },
+      "marketing": {
+        "name": "การตลาดและแบรนด์",
+        "desc": "แคมเปญหลายภาษา, เนื้อหาสำหรับ 38 ภาษา, การตลาดดิจิทัล, กลยุทธ์แบรนด์สำหรับ 10 กลุ่มธุรกิจเฉพาะทาง"
+      }
+    },
+    "roles": "บทบาท",
+    "whyHarvics": "ทำไมต้อง Harvics",
+    "benefits": {
+      "globalMobility": {
+        "title": "การเคลื่อนย้ายระดับโลก",
+        "desc": "ดำเนินงานในดูไบ ลอนดอน การาจี ลาฮอร์ และอีกกว่า 40 ตลาดทั่วโลก"
+      },
+      "growthTrack": {
+        "title": "เส้นทางการเติบโต",
+        "desc": "ก้าวหน้าในสายอาชีพอย่างรวดเร็วในองค์กรที่กำลังเติบโต"
+      },
+      "aiCulture": {
+        "title": "วัฒนธรรมที่ให้ความสำคัญกับ AI เป็นหลัก",
+        "desc": "ทำงานร่วมกับระบบ AI ล้ำสมัยและระบบอัจฉริยะแบบเรียลไทม์"
+      },
+      "competitivePackage": {
+        "title": "แพ็คเกจการแข่งขัน",
+        "desc": "ค่าตอบแทน ที่พัก และสวัสดิการที่ดีที่สุดในตลาด"
+      },
+      "learningBudget": {
+        "title": "งบประมาณการเรียนรู้",
+        "desc": "งบประมาณประจำปีสำหรับการพัฒนาหลักสูตร การประชุม และการรับรองต่างๆ"
+      },
+      "flexibleWork": {
+        "title": "การทำงานแบบยืดหยุ่น",
+        "desc": "รูปแบบการทำงานแบบผสมผสาน โดยมีสำนักงานศูนย์กลางระดับภูมิภาคทั่วโลก"
+      }
+    }
+  },
+  "strategy": {
+    "title": "กลยุทธ์ของเรา",
+    "pageTitle": "กลยุทธ์ | ฮาร์วิช",
+    "description": "สร้างอนาคตที่ยั่งยืนด้วยนวัตกรรมและความเป็นเลิศ",
+    "heroSubtitle": "สร้างอนาคตที่ยั่งยืนด้วยนวัตกรรมและความเป็นเลิศ",
+    "pillars": {
+      "globalExpansion": {
+        "title": "การขยายธุรกิจไปทั่วโลก",
+        "desc": "ขยายการดำเนินงานของเราในตลาดเกิดใหม่พร้อมทั้งเสริมสร้างความแข็งแกร่งในตลาดที่มีอยู่เดิม"
+      },
+      "productInnovation": {
+        "title": "นวัตกรรมผลิตภัณฑ์",
+        "desc": "การลงทุนด้านการวิจัยและพัฒนาเพื่อพัฒนาผลิตภัณฑ์ใหม่ที่ตอบสนองความต้องการของผู้บริโภคที่เปลี่ยนแปลงไป"
+      },
+      "sustainability": {
+        "title": "ความยั่งยืน",
+        "desc": "เรามุ่งมั่นที่จะปฏิบัติตามแนวทางที่ยั่งยืนตลอดห่วงโซ่อุปทานและการดำเนินงานของเรา"
+      },
+      "digitalTransformation": {
+        "title": "การเปลี่ยนแปลงทางดิจิทัล",
+        "desc": "การใช้เทคโนโลยีเพื่อยกระดับประสบการณ์ของลูกค้าและประสิทธิภาพการดำเนินงาน"
+      }
+    },
+    "vision": {
+      "title": "วิสัยทัศน์ของเรา",
+      "desc": "เพื่อก้าวขึ้นเป็นบริษัทสินค้าอุปโภคบริโภคระดับพรีเมียมชั้นนำของโลก ที่ได้รับการยอมรับในด้านคุณภาพ นวัตกรรม และความยั่งยืน"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Harvics Global Ventures | การซื้อขายระดับโลกพรีเมียม",
+      "description": "บริษัทการค้าชั้นนำระดับโลกที่จัดจำหน่ายผลิตภัณฑ์คุณภาพสูงในกว่า 10 อุตสาหกรรม ดำเนินงานในกว่า 50 ประเทศตั้งแต่ปี 2019"
+    },
+    "about": {
+      "title": "เกี่ยวกับเรา | Harvics Global Ventures",
+      "description": "ค้นพบว่า Harvics Global Ventures ก้าวขึ้นเป็นผู้นำด้านการค้าระดับโลกในกว่า 40 ประเทศและ 10 อุตสาหกรรมได้อย่างไร"
+    },
+    "contact": {
+      "title": "ติดต่อเรา | Harvics Global Ventures",
+      "description": "ติดต่อสำนักงาน Harvics ทั่วโลก ครอบคลุมทั้งตะวันออกกลาง เอเชียใต้ ยุโรป แอฟริกา และอเมริกา"
+    },
+    "products": {
+      "title": "ผลิตภัณฑ์ | Harvics Global Ventures",
+      "description": "สำรวจผลิตภัณฑ์ระดับพรีเมียมของ Harvics ครอบคลุมสินค้าอุปโภคบริโภค สิ่งทอ สินค้าโภคภัณฑ์ และโซลูชันสำหรับอุตสาหกรรม"
+    },
+    "careers": {
+      "title": "ร่วมงานกับเรา | Harvics Global Ventures",
+      "description": "เข้าร่วมกับ Harvics Global Ventures — สำรวจโอกาสทางธุรกิจในกว่า 40 ประเทศทั่วโลก ในอุตสาหกรรมสินค้าอุปโภคบริโภค สิ่งทอ โลจิสติกส์ และเทคโนโลยี"
+    },
+    "media": {
+      "title": "ศูนย์สื่อ | Harvics Global Ventures",
+      "description": "ศูนย์ข้อมูลสื่อของ Harvics — ข่าวประชาสัมพันธ์ ข่าวสารล่าสุด ทรัพย์สินของแบรนด์ และรายชื่อผู้ติดต่อสื่อมวลชน"
+    },
+    "strategy": {
+      "title": "กลยุทธ์ของเรา | Harvics Global Ventures",
+      "description": "วิสัยทัศน์เชิงกลยุทธ์ของ Harvics สำหรับการขยายธุรกิจไปทั่วโลก นวัตกรรม ความยั่งยืน และการเปลี่ยนแปลงทางดิจิทัล"
+    },
+    "csr": {
+      "title": "ความรับผิดชอบต่อสังคมขององค์กร | ฮาร์วิคส์",
+      "description": "โครงการความรับผิดชอบต่อสังคมของ Harvics ได้แก่ การดูแลรักษาสิ่งแวดล้อม โครงการเพื่อชุมชน และการดำเนินธุรกิจอย่างมีจริยธรรม"
+    },
+    "faq": {
+      "title": "คำถามที่พบบ่อย | Harvics Global Ventures",
+      "description": "คำถามที่พบบ่อยเกี่ยวกับผลิตภัณฑ์ บริการ การสั่งซื้อ และการดำเนินงานทั่วโลกของ Harvics"
+    },
+    "locations": {
+      "title": "สถานที่ตั้งทั่วโลก | ฮาร์วิคส์",
+      "description": "สำนักงานและกิจการของ Harvics กระจายอยู่ทั่วตะวันออกกลาง เอเชียใต้ ยุโรป แอฟริกา และอเมริกา"
+    },
+    "leadership": {
+      "title": "ทีมผู้บริหาร | ฮาร์วิคส์",
+      "description": "พบกับทีมผู้บริหารที่ขับเคลื่อน Harvics Global Ventures ในกว่า 40 ตลาดและ 10 กลุ่มอุตสาหกรรม"
+    },
+    "help": {
+      "title": "ศูนย์ช่วยเหลือ | Harvics",
+      "description": "รับความช่วยเหลือเกี่ยวกับคำสั่งซื้อ บัญชี การจัดส่ง และบริการต่างๆ ของ Harvics"
+    },
+    "compliance": {
+      "title": "การปฏิบัติตามกฎระเบียบและจริยธรรม | Harvics",
+      "description": "Harvics มุ่งมั่นที่จะปฏิบัติตามกฎระเบียบ ดำเนินธุรกิจอย่างมีจริยธรรม และยึดมั่นในมาตรฐานระดับโลก"
+    },
+    "history": {
+      "title": "ประวัติของเรา | Harvics",
+      "description": "จากบริษัทสตาร์ทอัพในดูไบเมื่อปี 2019 สู่องค์กรระดับโลกที่ขยายธุรกิจไปกว่า 40 ประเทศ นี่คือเรื่องราวของ Harvics"
+    },
+    "newsletter": {
+      "title": "จดหมายข่าว | ฮาร์วิคส์",
+      "description": "สมัครรับจดหมายข่าวของ Harvics เพื่อรับข้อมูลเชิงลึกในอุตสาหกรรมและการเปิดตัวผลิตภัณฑ์ใหม่"
+    },
+    "login": {
+      "title": "เข้าสู่ระบบ | ฮาร์วิคส์",
+      "description": "ลงชื่อเข้าใช้บัญชี Harvics ของคุณเพื่อจัดการคำสั่งซื้อและเข้าใช้งานแพลตฟอร์ม"
+    },
+    "research": {
+      "title": "งานวิจัยและนวัตกรรม | ฮาร์วิคส์",
+      "description": "โครงการวิจัยและนวัตกรรมของ Harvics เป็นแรงขับเคลื่อนกลยุทธ์ระดับโลกของเรา"
+    },
+    "investorRelations": {
+      "title": "ฝ่ายนักลงทุนสัมพันธ์ | ฮาร์วิคส์",
+      "description": "ข้อมูลสำหรับนักลงทุน รายงานทางการเงิน และประกาศต่างๆ จาก Harvics Global Ventures"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "ไม่พบหน้าเว็บ",
+      "heading": "404 — ไม่พบหน้าเว็บ",
+      "description": "หน้าที่คุณกำลังมองหาไม่มีอยู่จริง หรือถูกย้ายไปแล้ว",
+      "goHome": "ไปที่หน้าแรก",
+      "goBack": "ย้อนกลับ"
+    },
+    "serverError": {
+      "title": "เกิดความผิดพลาดบางอย่างขึ้น",
+      "heading": "เกิดข้อผิดพลาดบางอย่าง",
+      "description": "ขออภัย เกิดข้อผิดพลาดที่ไม่คาดคิด โปรดลองรีเฟรชหน้าเว็บอีกครั้ง",
+      "tryAgain": "ลองอีกครั้ง",
+      "reload": "โหลดหน้าเว็บใหม่",
+      "contactSupport": "ติดต่อฝ่ายสนับสนุน"
+    },
+    "globalError": {
+      "title": "ข้อผิดพลาดของแอปพลิเคชัน",
+      "heading": "ข้อผิดพลาดร้ายแรง",
+      "description": "เกิดข้อผิดพลาดร้ายแรง โปรดรีเฟรชหน้าเว็บใหม่",
+      "reload": "โหลดแอปพลิเคชันใหม่"
+    }
+  },
+  "about": {
+    "title": "เกี่ยวกับ Harvics",
+    "subtitle": "ความเป็นเลิศด้านสินค้าอุปโภคบริโภคระดับพรีเมียม ตั้งแต่ปี 2019",
+    "ourStory": "เรื่องราวของเรา",
+    "story1": "Harvics ก่อตั้งขึ้นในปี 2019 โดยเริ่มต้นจากแนวคิดที่ก้าวล้ำ จนเติบโตเป็นผู้นำระดับโลกในสินค้าอุปโภคบริโภคระดับพรีเมียม เส้นทางของเรานั้นขับเคลื่อนด้วยการแสวงหาคุณภาพอย่างไม่หยุดยั้ง และความมุ่งมั่นในการสร้างสรรค์นวัตกรรม",
+    "story2": "เราดำเนินธุรกิจในกว่า 40 ประเทศ ส่งมอบผลิตภัณฑ์ที่ช่วยยกระดับคุณภาพชีวิตและสร้างมาตรฐานใหม่ในอุตสาหกรรม จากจุดเริ่มต้นเล็กๆ สู่การเป็นบริษัทระดับโลก ค่านิยมของเรายังคงไม่เปลี่ยนแปลง",
+    "est2018": "ก่อตั้งเมื่อปี 2019",
+    "countries40": "กว่า 40 ประเทศ",
+    "productLines6": "6 กลุ่มผลิตภัณฑ์"
+  },
+  "csr": {
+    "hero": {
+      "title": "ความรับผิดชอบต่อสังคมขององค์กร",
+      "description": "ที่ Harvics เรามุ่งมั่นที่จะสร้างผลกระทบเชิงบวกต่อโลก โครงการความรับผิดชอบต่อสังคมของเรามุ่งเน้นไปที่ความยั่งยืน การเสริมสร้างศักยภาพชุมชน และการดำเนินธุรกิจอย่างมีจริยธรรม",
+      "stats": {
+        "years": "ผลกระทบหลายปี",
+        "countries": "ประเทศที่เข้าถึงได้",
+        "lives": "ชีวิตที่เปลี่ยนแปลง"
+      }
+    },
+    "initiatives": {
+      "title": "โครงการริเริ่มหลักของเรา",
+      "description": "เรามุ่งเน้นที่เสาหลักสำคัญสี่ประการเพื่อขับเคลื่อนการเปลี่ยนแปลงที่ยั่งยืนและสร้างคุณค่าร่วมกันสำหรับผู้มีส่วนได้ส่วนเสียทุกฝ่าย"
+    },
+    "sustainability": {
+      "title": "ความยั่งยืน",
+      "description": "ลดผลกระทบต่อสิ่งแวดล้อมของเราด้วยพลังงานหมุนเวียนและการลดปริมาณขยะ",
+      "stats": {
+        "renewable": "พลังงานหมุนเวียน",
+        "waste": "ขยะที่ถูกนำไปใช้ประโยชน์ใหม่",
+        "carbon": "การลดคาร์บอน"
+      }
+    },
+    "community": {
+      "title": "การสนับสนุนชุมชน",
+      "description": "เสริมสร้างศักยภาพชุมชนท้องถิ่นผ่านการศึกษา การดูแลสุขภาพ และการพัฒนาเศรษฐกิจ",
+      "stats": {
+        "families": "ครอบครัวที่ได้รับการสนับสนุน",
+        "programs": "โปรแกรมเชิงรุก",
+        "volunteers": "อาสาสมัคร"
+      }
+    },
+    "education": {
+      "title": "การศึกษา",
+      "description": "การให้โอกาสทางการศึกษาที่มีคุณภาพและทุนการศึกษาแก่นักเรียนที่ด้อยโอกาส",
+      "stats": {
+        "scholarships": "ทุนการศึกษา",
+        "schools": "โรงเรียนพันธมิตร",
+        "students": "นักเรียนที่ได้รับผลกระทบ"
+      }
+    },
+    "health": {
+      "title": "สุขภาพและความเป็นอยู่ที่ดี",
+      "description": "การปรับปรุงการเข้าถึงบริการด้านสุขภาพและโภชนาการในพื้นที่ด้อยโอกาส",
+      "stats": {
+        "campaigns": "แคมเปญด้านสุขภาพ",
+        "people": "ผู้คนที่ได้รับบริการ",
+        "clinics": "คลินิกเคลื่อนที่"
+      }
+    },
+    "achievements": {
+      "2022": {
+        "title": "โครงการความรับผิดชอบต่อสังคมที่ดีที่สุด",
+        "description": "ได้รับรางวัลชมเชยสำหรับแนวทางการสร้างสรรค์นวัตกรรมด้านความรับผิดชอบต่อสังคม"
+      },
+      "2023": {
+        "title": "ผู้ส่งเสริมชุมชน",
+        "description": "ได้รับรางวัลนี้จากโครงการช่วยเหลือชุมชนที่ครอบคลุมของเรา"
+      },
+      "2024": {
+        "title": "รางวัลความยั่งยืนระดับโลก",
+        "description": "ได้รับการยอมรับในด้านความมุ่งมั่นของเราต่อความเป็นกลางทางคาร์บอน"
+      },
+      "title": "ผลกระทบของเรา",
+      "description": "ตระหนักถึงความสำเร็จครั้งสำคัญของเราในการสร้างโลกที่ดีขึ้น"
+    },
+    "cta": {
+      "title": "มาร่วมสร้างความเปลี่ยนแปลงไปกับเรา",
+      "description": "ร่วมเป็นพันธมิตรกับเรา หรือเรียนรู้เพิ่มเติมเกี่ยวกับวิธีที่เรากำลังสร้างอนาคตที่ยั่งยืน",
+      "contact": "ติดต่อทีมงานฝ่ายความรับผิดชอบต่อสังคม (CSR)",
+      "learnMore": "เรียนรู้เพิ่มเติม"
+    }
+  },
+  "harvicsHouse": {
+    "title": "บ้านฮาร์วิคส์",
+    "subtitle": "มรดกแห่งความเป็นเลิศและประเพณีอันยาวนาน",
+    "aboutTitle": "ยินดีต้อนรับสู่บ้านฮาร์วิคส์",
+    "description": "Harvics House คือจุดสูงสุดของความมุ่งมั่นของเราในด้านคุณภาพและมรดก ที่นี่เรารวบรวมผลิตภัณฑ์ระดับพรีเมียมที่ดีที่สุดมาจัดแสดงในสภาพแวดล้อมที่สะท้อนถึงคุณค่าของเราในด้านความสง่างาม ประเพณี และนวัตกรรม",
+    "description2": "สำรวจคอลเลกชันสุดพิเศษของเราและค้นพบเรื่องราวเบื้องหลังผลิตภัณฑ์ทุกชิ้นที่ใช้ชื่อ Harvics"
   }
 }

@@ -48,6 +48,9 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
         { id: 'legal', label: 'Legal/IPR', icon: '⚖️', path: `/os/legal`, tier: '1' },
         { id: 'competitor', label: 'Competitor Intel', icon: '🔍', path: `/os/competitor-intel`, tier: '1' },
         { id: 'import-export', label: 'Import/Export', icon: '🌐', path: `/os/import-export`, tier: '1' },
+        { id: 'gps-tracking', label: 'GPS Tracking', icon: '📍', path: `/os/gps-tracking`, tier: '1' },
+        { id: 'investor-relations', label: 'Investor Relations', icon: '📈', path: `/os/investor-relations`, tier: '1' },
+        { id: 'workflows', label: 'Workflows', icon: '⚙️', path: `/os/workflows`, tier: '1' },
         { id: 'market-distribution', label: 'Market & Distribution', icon: '📦', path: `/os/market-distribution`, tier: '1' },
         { id: 'supplier-procurement', label: 'Supplier & Procurement', icon: '🏭', path: `/os/supplier-procurement`, tier: '1' }
       ]
@@ -55,13 +58,13 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
       return [
         ...commonDomains,
         { id: 'logistics', label: 'Logistics', icon: '🚚', path: `/os/logistics`, tier: '1' },
-        { id: 'retailers', label: 'Retailers', icon: '🏪', path: `/os/retailers`, tier: '1' }
+        { id: 'retailers', label: 'Retailers', icon: '🏪', path: `/os/orders-sales`, tier: '1' }
       ]
     } else { // supplier
       return [
         ...commonDomains.filter(d => d.id !== 'crm'), // Suppliers don't need CRM
-        { id: 'procurement', label: 'Procurement', icon: '🏭', path: `/os/procurement`, tier: '1' },
-        { id: 'quality', label: 'Quality Control', icon: '✅', path: `/os/quality`, tier: '1' }
+        { id: 'procurement', label: 'Procurement', icon: '🏭', path: `/os/supplier-procurement`, tier: '1' },
+        { id: 'quality', label: 'Quality Control', icon: '✅', path: `/os/inventory`, tier: '1' }
       ]
     }
   }
@@ -100,7 +103,7 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
                   <span className="text-xs text-[#C3A35E]">•</span>
             <span className="text-xs font-medium text-[#6B1F2B]/70">Foundational</span>
           </div>
-          <p className="text-xs text-[#6B1F2B]/50 ml-3">Core infrastructure engines</p>
+          <p className="text-xs text-[#6B1F2B]/50 ms-3">Core infrastructure engines</p>
         </div>
         <ul className="space-y-1.5">
           {tier0Engines.map((engine) => {
@@ -160,7 +163,7 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
                   <span className="text-xs text-[#C3A35E]">•</span>
             <span className="text-xs font-medium text-[#6B1F2B]/70">OS Domains</span>
           </div>
-          <p className="text-xs text-[#6B1F2B]/50 ml-3">Operational systems & workflows</p>
+          <p className="text-xs text-[#6B1F2B]/50 ms-3">Operational systems & workflows</p>
         </div>
         <ul className="space-y-1.5">
           {tier1Domains.map((domain) => {
@@ -220,7 +223,7 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
               Reports
           </h3>
           </div>
-          <p className="text-xs text-[#6B1F2B]/50 ml-7">Analytics & exports</p>
+          <p className="text-xs text-[#6B1F2B]/50 ms-7">Analytics & exports</p>
         </div>
         <ul className="space-y-1.5">
           <li>

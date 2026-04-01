@@ -1,0 +1,168 @@
+{
+  "_note": "Korean backend translations - API responses, statuses, error messages",
+  "orders": {
+    "status": {
+      "pending": "대기 중",
+      "inTransit": "운송 중",
+      "completed": "완료",
+      "cancelled": "취소됨",
+      "processing": "처리 중",
+      "delivered": "배송 완료",
+      "onHold": "보류"
+    },
+    "messages": {
+      "created": "주문이 성공적으로 생성되었습니다",
+      "updated": "주문이 성공적으로 업데이트되었습니다",
+      "deleted": "주문이 성공적으로 삭제되었습니다",
+      "notFound": "주문을 찾을 수 없습니다"
+    }
+  },
+  "inventory": {
+    "categories": {
+      "frozenFoods": "냉동 식품",
+      "culinary": "요리",
+      "commodities": "상품",
+      "industrial": "산업",
+      "grains": "곡물",
+      "pantry": "식료품 저장실",
+      "confectionery": "제과",
+      "natural": "천연",
+      "homeTextiles": "홈 텍스타일",
+      "beverages": "음료"
+    },
+    "messages": {
+      "created": "재고 품목이 성공적으로 생성되었습니다",
+      "updated": "재고 품목이 성공적으로 업데이트되었습니다",
+      "deleted": "재고 품목이 성공적으로 삭제되었습니다",
+      "notFound": "재고 품목을 찾을 수 없습니다",
+      "lowStock": "재고 부족 알림"
+    }
+  },
+  "crm": {
+    "segments": {
+      "wholesale": "도매",
+      "distributor": "유통업체",
+      "retail": "소매",
+      "b2b": "B2B",
+      "ecommerce": "이커머스",
+      "direct": "직접"
+    },
+    "stages": {
+      "lead": "리드",
+      "qualified": "적격",
+      "proposal": "제안",
+      "negotiation": "협상",
+      "closed": "종료"
+    },
+    "messages": {
+      "customerCreated": "고객이 성공적으로 생성되었습니다",
+      "customerUpdated": "고객이 성공적으로 업데이트되었습니다",
+      "customerDeleted": "고객이 성공적으로 삭제되었습니다",
+      "customerNotFound": "고객을 찾을 수 없습니다",
+      "leadCreated": "리드가 성공적으로 생성되었습니다",
+      "leadUpdated": "리드가 성공적으로 업데이트되었습니다",
+      "leadDeleted": "리드가 성공적으로 삭제되었습니다",
+      "leadNotFound": "리드를 찾을 수 없습니다",
+      "campaignCreated": "캠페인이 성공적으로 생성되었습니다",
+      "campaignUpdated": "캠페인이 성공적으로 업데이트되었습니다",
+      "campaignNotFound": "캠페인을 찾을 수 없습니다"
+    }
+  },
+  "hr": {
+    "departments": {
+      "sales": "영업",
+      "operations": "운영",
+      "finance": "재무",
+      "hr": "인사",
+      "it": "정보기술",
+      "marketing": "마케팅",
+      "logistics": "물류",
+      "procurement": "조달",
+      "executive": "경영진",
+      "legal": "법무"
+    },
+    "messages": {
+      "employeeCreated": "직원 기록이 성공적으로 생성되었습니다",
+      "employeeUpdated": "직원 기록이 성공적으로 업데이트되었습니다",
+      "employeeDeleted": "직원 기록이 성공적으로 삭제되었습니다",
+      "employeeNotFound": "직원을 찾을 수 없습니다"
+    }
+  },
+  "finance": {
+    "status": {
+      "paid": "지불 완료",
+      "unpaid": "미지불",
+      "overdue": "연체",
+      "partial": "부분 지불"
+    },
+    "messages": {
+      "invoiceCreated": "청구서가 성공적으로 생성되었습니다",
+      "invoiceUpdated": "청구서가 성공적으로 업데이트되었습니다",
+      "invoiceDeleted": "청구서가 성공적으로 삭제되었습니다",
+      "invoiceNotFound": "청구서를 찾을 수 없습니다",
+      "paymentReceived": "결제가 성공적으로 수신되었습니다",
+      "paymentCreated": "결제가 성공적으로 기록되었습니다",
+      "approvalRequired": "승인이 필요합니다"
+    }
+  },
+  "logistics": {
+    "status": {
+      "pending": "대기 중",
+      "scheduled": "예정됨",
+      "inTransit": "운송 중",
+      "inProgress": "진행 중",
+      "completed": "완료",
+      "delayed": "지연"
+    },
+    "messages": {
+      "routeCreated": "경로가 성공적으로 생성되었습니다",
+      "routeUpdated": "경로가 성공적으로 업데이트되었습니다",
+      "routeDeleted": "경로가 성공적으로 삭제되었습니다",
+      "routeNotFound": "경로를 찾을 수 없습니다",
+      "shipmentDispatched": "배송이 발송되었습니다"
+    }
+  },
+  "procurement": {
+    "status": {
+      "pending": "대기 중",
+      "approved": "승인됨",
+      "rejected": "거부됨",
+      "partial": "부분",
+      "complete": "완료"
+    },
+    "messages": {
+      "poCreated": "구매 주문이 성공적으로 생성되었습니다",
+      "poUpdated": "구매 주문이 성공적으로 업데이트되었습니다",
+      "poDeleted": "구매 주문이 성공적으로 삭제되었습니다",
+      "poNotFound": "구매 주문을 찾을 수 없습니다",
+      "grnCreated": "입고 통지서가 성공적으로 생성되었습니다",
+      "grnNotFound": "입고 통지서를 찾을 수 없습니다",
+      "approvalPending": "주문 승인 대기 중"
+    }
+  },
+  "errors": {
+    "invalidCredentials": "유효하지 않은 사용자 이름 또는 비밀번호",
+    "unauthorized": "권한 없는 접근",
+    "forbidden": "접근 금지",
+    "notFound": "리소스를 찾을 수 없음",
+    "serverError": "내부 서버 오류",
+    "validationError": "유효성 검사 오류",
+    "duplicateEntry": "중복 항목",
+    "tokenExpired": "세션이 만료되었습니다. 다시 로그인하세요",
+    "tokenInvalid": "유효하지 않은 인증 토큰",
+    "missingFields": "필수 필드가 누락되었습니다",
+    "invalidFormat": "유효하지 않은 데이터 형식",
+    "databaseError": "데이터베이스 오류가 발생했습니다",
+    "networkError": "네트워크 오류가 발생했습니다"
+  },
+  "messages": {
+    "success": "작업이 성공적으로 완료되었습니다",
+    "created": "성공적으로 생성됨",
+    "updated": "성공적으로 업데이트됨",
+    "deleted": "성공적으로 삭제됨",
+    "fetched": "데이터가 성공적으로 검색됨",
+    "loginSuccess": "로그인 성공",
+    "logoutSuccess": "로그아웃 성공",
+    "welcome": "Harvics OS에 오신 것을 환영합니다"
+  }
+}

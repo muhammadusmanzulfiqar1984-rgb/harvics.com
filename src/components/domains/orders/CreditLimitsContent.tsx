@@ -73,8 +73,8 @@ export default function CreditLimitsContent({ persona, locale }: CreditLimitsCon
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-xl font-semibold text-black">Credit Control Center</h3>
-        <button className="bg-white border border-[#6B1F2B] text-[#6B1F2B] px-4 py-2 rounded-lg hover:bg-gray-50">
+        <h3 className="text-sm font-semibold text-[#1D1D1F]">Credit Control Center</h3>
+        <button className="bg-white border border-[#6B1F2B] text-[#6B1F2B] px-4 py-2 rounded-lg hover:bg-[#F5F5F7]">
           Review Credit Holds
         </button>
       </div>
@@ -83,14 +83,14 @@ export default function CreditLimitsContent({ persona, locale }: CreditLimitsCon
         {/* KPIs */}
         <div className="md:col-span-2 grid grid-cols-2 gap-4">
           <KPICard label="Total Exposure" value={`$${(totalExposure / 1000).toFixed(0)}k`} icon="📉" change={{ value: 2.5, trend: 'up', label: 'vs last month' }} />
-          <KPICard label="Utilization Rate" value={`${utilizationRate.toFixed(1)}%`} icon="📊" change={{ value: 1.2, trend: 'neutral', label: 'stable' }} />
+          <KPICard label="Utilization Rate" value={`${utilizationRate.toFixed(1)}%`} icon={<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><rect x="2" y="9" width="3" height="5" rx="0.5"/><rect x="6.5" y="6" width="3" height="8" rx="0.5"/><rect x="11" y="3" width="3" height="11" rx="0.5"/></svg>} change={{ value: 1.2, trend: 'neutral', label: 'stable' }} />
           <KPICard label="High Risk Accounts" value={highRiskCount} icon="🚩" change={{ value: 0, trend: 'neutral' }} />
           <KPICard label="Accounts on Hold" value={credits.filter(c => c.status === 'hold').length} icon="🔒" />
         </div>
 
         {/* Risk Distribution Chart */}
         <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm flex flex-col items-center justify-center">
-            <h4 className="text-sm font-semibold text-gray-700 mb-2">Risk Distribution</h4>
+            <h4 className="text-sm font-semibold text-[#1D1D1F] mb-2">Risk Distribution</h4>
             <div className="h-40 w-full">
                 <ResponsiveContainer width="100%" height="100%">
                     <PieChart>
@@ -116,7 +116,7 @@ export default function CreditLimitsContent({ persona, locale }: CreditLimitsCon
       {/* Credit List */}
       <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
         <table className="w-full text-sm text-left">
-          <thead className="bg-gray-50 text-gray-700 font-semibold">
+          <thead className="bg-[#F5F5F7] text-[#1D1D1F] font-semibold">
             <tr>
               <th className="px-4 py-3">Customer</th>
               <th className="px-4 py-3">Credit Limit</th>
@@ -129,24 +129,24 @@ export default function CreditLimitsContent({ persona, locale }: CreditLimitsCon
           </thead>
           <tbody className="divide-y divide-gray-100">
             {credits.map(c => (
-              <tr key={c.id} className="hover:bg-gray-50">
+              <tr key={c.id} className="hover:bg-[#F5F5F7]">
                 <td className="px-4 py-3 font-medium text-black">{c.name}</td>
                 <td className="px-4 py-3">${c.limit.toLocaleString()}</td>
                 <td className="px-4 py-3">${c.used.toLocaleString()}</td>
-                <td className="px-4 py-3 text-green-600">${(c.limit - c.used).toLocaleString()}</td>
+                <td className="px-4 py-3 text-[#1D1D1F]">${(c.limit - c.used).toLocaleString()}</td>
                 <td className="px-4 py-3">
                   <span className={`px-2 py-1 rounded-full text-xs font-bold ${
-                    c.riskLevel === 'high' ? 'bg-red-100 text-red-800' : 
-                    c.riskLevel === 'medium' ? 'bg-yellow-100 text-yellow-800' : 'bg-green-100 text-green-800'
+                    c.riskLevel === 'high' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 
+                    c.riskLevel === 'medium' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'
                   }`}>
                     {c.riskLevel.toUpperCase()}
                   </span>
                 </td>
                 <td className="px-4 py-3">
                     {c.status === 'hold' ? (
-                        <span className="text-red-600 font-bold flex items-center gap-1">🔒 HOLD</span>
+                        <span className="text-[#1D1D1F] font-bold flex items-center gap-1">🔒 HOLD</span>
                     ) : (
-                        <span className="text-green-600 font-medium">Active</span>
+                        <span className="text-[#1D1D1F] font-medium">Active</span>
                     )}
                 </td>
                 <td className="px-4 py-3">

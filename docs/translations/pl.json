@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "pl",
+    "language": "Polish",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Polish. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Polish",
+      "translation": "Witamy w"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Polish",
+      "translation": "Harwich"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Polish",
+      "translation": "Doskonałość w zakresie dóbr konsumpcyjnych premium od 2019 r."
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Polish",
+      "translation": "Wiodąca globalna firma produkująca dobra konsumpcyjne, oferująca wysokiej jakości produkty spożywcze w różnych kategoriach, spełniające międzynarodowe standardy jakości."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Polish",
+      "translation": "Przeglądaj produkty"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Polish",
+      "translation": "Skontaktuj się z nami"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Polish",
+      "translation": "Dowiedz się więcej"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Polish",
+      "translation": "Doskonałość w zakresie dóbr konsumpcyjnych premium od"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Polish",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Polish",
+      "translation": "Londyn • Mediolan • Nowy Jork"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Polish",
+      "translation": "Piekarnia"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Polish",
+      "translation": "Napoje"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Polish",
+      "translation": "Cukiernia"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Polish",
+      "translation": "Kulinarny"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Polish",
+      "translation": "Mrożonki"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Polish",
+      "translation": "Makaron"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Polish",
+      "translation": "Przekąski"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Polish",
+      "translation": "Raport ESG 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Polish",
+      "translation": "Londyn • Mediolan • Nowy Jork"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Polish",
+      "translation": "Dom"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Polish",
+      "translation": "O"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Polish",
+      "translation": "O nas"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Polish",
+      "translation": "Historia marki"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Polish",
+      "translation": "Produkty"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Polish",
+      "translation": "Nasze produkty"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Polish",
+      "translation": "Zobacz wszystkie produkty"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Polish",
+      "translation": "Społeczna odpowiedzialność biznesu"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Polish",
+      "translation": "Relacje inwestorskie"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Polish",
+      "translation": "Inwestorzy"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Polish",
+      "translation": "Głoska bezdźwięczna"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Polish",
+      "translation": "Skontaktuj się z nami"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Polish",
+      "translation": "Dom Harvicsa"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Polish",
+      "translation": "Kraje"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Polish",
+      "translation": "Portale"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Polish",
+      "translation": "Zalogować się"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Polish",
+      "translation": "Lista życzeń"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Polish",
+      "translation": "Koszyk"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Polish",
+      "translation": "Pomoc"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Polish",
+      "translation": "Znajdź sklep"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Polish",
+      "translation": "Pieniądze"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Polish",
+      "translation": "Obroty"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Polish",
+      "translation": "Oferty"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Polish",
+      "translation": "Tryb ciemny"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Polish",
+      "translation": "Karta kredytowa"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Polish",
+      "translation": "Karta kredytowa M&S Rewards"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Polish",
+      "translation": "Nagrody klubowe"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Polish",
+      "translation": "Nasze karty kredytowe"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Polish",
+      "translation": "Ubezpieczenie"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Polish",
+      "translation": "Ubezpieczenie domu"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Polish",
+      "translation": "Ubezpieczenie podróżne"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Polish",
+      "translation": "Usługi turystyczne"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Polish",
+      "translation": "Pieniądze na podróż"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Polish",
+      "translation": "Kursy walut"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Polish",
+      "translation": "Usługi dodatkowe"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Polish",
+      "translation": "Oszczędności i inwestowanie"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Polish",
+      "translation": "Pożyczki osobiste"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Polish",
+      "translation": "Wsparcie finansowe"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Polish",
+      "translation": "Aktualna sprzedaż"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Polish",
+      "translation": "Luz"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Polish",
+      "translation": "Wyprzedaże sezonowe"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Polish",
+      "translation": "Oferty specjalne"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Polish",
+      "translation": "Promocje"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Polish",
+      "translation": "Rabaty za zamówienia hurtowe"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Polish",
+      "translation": "Nasze produkty"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Polish",
+      "translation": "Zobacz wszystkie produkty"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Polish",
+      "translation": "Nasze kategorie produktów"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Polish",
+      "translation": "Odkryj naszą gamę produktów premium, wykonanych z dbałością i doskonałością."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Polish",
+      "translation": "Poziom 1: Kategorie"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Polish",
+      "translation": "Poziom 2: Moduły"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Polish",
+      "translation": "Poziom 3: Ekrany KPI"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Polish",
+      "translation": "Poziom 4: Akcje"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Polish",
+      "translation": "Resetuj nawigację"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Polish",
+      "translation": "Dla tej kategorii nie ma podkategorii."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Polish",
+      "translation": "Produkty"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Polish",
+      "translation": "Podkategorie"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Polish",
+      "translation": "Piekarnia"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Polish",
+      "translation": "Świeżo wypieki i ciastka."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Polish",
+      "translation": "Napoje"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Polish",
+      "translation": "Orzeźwiające napoje na każdą okazję."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Polish",
+      "translation": "Wyroby cukiernicze"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Polish",
+      "translation": "Słodkie przysmaki i rozkosze."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Polish",
+      "translation": "Kulinarny"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Polish",
+      "translation": "Niezbędne składniki w Twojej kuchni."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Polish",
+      "translation": "Mrożonki"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Polish",
+      "translation": "Wygodne i pyszne mrożone posiłki."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Polish",
+      "translation": "Makaron"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Polish",
+      "translation": "Autentyczne odmiany makaronu."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Polish",
+      "translation": "Przekąski"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Polish",
+      "translation": "Smaczne przekąski na każdą porę dnia."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Polish",
+      "translation": "O firmie Harvics"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Polish",
+      "translation": "Doskonałość w zakresie dóbr konsumpcyjnych premium od 2019 r."
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Polish",
+      "translation": "Nasza historia"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Polish",
+      "translation": "Założona w 2019 roku firma Harvics rozwinęła się z wizjonerskiego pomysłu w globalnego lidera w segmencie dóbr konsumpcyjnych premium. Naszą drogę definiuje nieustanne dążenie do jakości i zaangażowanie w innowacje."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Polish",
+      "translation": "Działamy w ponad 40 krajach, oferując produkty, które wzbogacają życie i wyznaczają nowe standardy w branży. Od skromnych początków po globalną obecność, nasze wartości pozostają niezmienne."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Polish",
+      "translation": "Zał. 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Polish",
+      "translation": "40+ krajów"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Polish",
+      "translation": "6 linii produktów"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Polish",
+      "translation": "Społeczna odpowiedzialność biznesu"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Polish",
+      "translation": "W Harvics dążymy do wywierania pozytywnego wpływu na świat. Nasze inicjatywy CSR koncentrują się na zrównoważonym rozwoju, wzmacnianiu społeczności i etycznych praktykach biznesowych."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Polish",
+      "translation": "Lata wpływu"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Polish",
+      "translation": "Dotarte kraje"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Polish",
+      "translation": "Dotknięte życie"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Polish",
+      "translation": "Nasze kluczowe inicjatywy"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Polish",
+      "translation": "Koncentrujemy się na czterech głównych filarach, aby wprowadzać zrównoważone zmiany i tworzyć wspólną wartość dla wszystkich interesariuszy."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Polish",
+      "translation": "Zrównoważony rozwój"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Polish",
+      "translation": "Zmniejszamy nasz wpływ na środowisko poprzez korzystanie z odnawialnych źródeł energii i redukcję odpadów."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Polish",
+      "translation": "Energia odnawialna"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Polish",
+      "translation": "Odpady przekierowane"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Polish",
+      "translation": "Redukcja emisji dwutlenku węgla"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Polish",
+      "translation": "Wsparcie społeczności"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Polish",
+      "translation": "Wspieranie lokalnych społeczności poprzez edukację, opiekę zdrowotną i rozwój gospodarczy."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Polish",
+      "translation": "Wspierane rodziny"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Polish",
+      "translation": "Aktywne programy"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Polish",
+      "translation": "Wolontariusze"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Polish",
+      "translation": "Edukacja"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Polish",
+      "translation": "Zapewnianie dostępu do wysokiej jakości edukacji i stypendiów dla uczniów pochodzących z ubogich rodzin."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Polish",
+      "translation": "Stypendia"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Polish",
+      "translation": "Szkoły partnerskie"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Polish",
+      "translation": "Dotknięci studenci"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Polish",
+      "translation": "Zdrowie i dobre samopoczucie"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Polish",
+      "translation": "Poprawa dostępu do opieki zdrowotnej i żywności w regionach niedostatecznie obsługiwanych."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Polish",
+      "translation": "Kampanie zdrowotne"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Polish",
+      "translation": "Obsługiwani ludzie"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Polish",
+      "translation": "Kliniki mobilne"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Polish",
+      "translation": "Najlepsza inicjatywa CSR"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Polish",
+      "translation": "Wyróżnieni za innowacyjne podejście do społecznej odpowiedzialności."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Polish",
+      "translation": "Mistrz społeczności"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Polish",
+      "translation": "Nagroda przyznana za szeroko zakrojone programy na rzecz lokalnej społeczności."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Polish",
+      "translation": "Globalna Nagroda za Zrównoważony Rozwój"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Polish",
+      "translation": "Wyróżnieni za nasze zaangażowanie w osiągnięcie neutralności węglowej."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Polish",
+      "translation": "Nasz wpływ"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Polish",
+      "translation": "Uznajemy nasze kamienie milowe w tworzeniu lepszego świata."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Polish",
+      "translation": "Dołącz do nas i zmień coś"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Polish",
+      "translation": "Zostań naszym partnerem lub dowiedz się więcej o tym, jak budujemy zrównoważoną przyszłość."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Polish",
+      "translation": "Skontaktuj się z zespołem CSR"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Polish",
+      "translation": "Dowiedz się więcej"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Polish",
+      "translation": "Skontaktuj się z nami"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Polish",
+      "translation": "Chętnie Cię wysłuchamy. Skontaktuj się z nami za pomocą dowolnego z tych kanałów."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Polish",
+      "translation": "Telefon"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Polish",
+      "translation": "E-mail"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Polish",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Polish",
+      "translation": "Zadzwoń teraz"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Polish",
+      "translation": "Wyślij e-mail"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Polish",
+      "translation": "Napisz do nas"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Polish",
+      "translation": "Centrum multimedialne"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Polish",
+      "translation": "Centrum multimedialne | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Polish",
+      "translation": "Materiały prasowe, zasoby marki i najnowsze wiadomości od Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Polish",
+      "translation": "Zbiorowy"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Polish",
+      "translation": "Wiadomości i komunikaty prasowe"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Polish",
+      "translation": "Najnowsze ogłoszenia, ekspansja rynkowa, wprowadzanie produktów i aktualności korporacyjne od Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Polish",
+      "translation": "Przeczytaj najnowsze wiadomości"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Polish",
+      "translation": "Galeria obrazów"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Polish",
+      "translation": "Materiały dotyczące marki, zdjęcia produktów, obrazy obiektów i relacje z wydarzeń w wysokiej rozdzielczości na potrzeby mediów."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Polish",
+      "translation": "Przeglądaj galerię"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Polish",
+      "translation": "Kontakty dla mediów"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Polish",
+      "translation": "Skontaktuj się z naszym zespołem ds. komunikacji, aby zadać pytania prasowe, poprosić o wywiad lub ogłosić partnerstwo."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Polish",
+      "translation": "Skontaktuj się z zespołem prasowym"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Polish",
+      "translation": "Objęte rynki"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Polish",
+      "translation": "Branże pionowe"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Polish",
+      "translation": "Założona w Dubaju"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Polish",
+      "translation": "Obsługiwane języki"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Polish",
+      "translation": "Najnowsze nagłówki"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Polish",
+      "translation": "Harvics rozszerza działalność FMCG na 5 nowych rynków Azji Południowo-Wschodniej"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Polish",
+      "translation": "Uruchomiono nową platformę łańcucha dostaw opartą na sztucznej inteligencji, umożliwiającą globalną dystrybucję"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Polish",
+      "translation": "Harvics osiąga kamień milowy neutralności węglowej we wszystkich swoich obiektach"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Polish",
+      "translation": "Strategiczne partnerstwo z wiodącymi producentami tekstyliów w Azji Południowej"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Polish",
+      "translation": "Dom Harvicsa"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Polish",
+      "translation": "Dziedzictwo doskonałości i tradycji"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Polish",
+      "translation": "Witamy w Harvics House"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Polish",
+      "translation": "Harvics House to szczyt naszego zaangażowania w jakość i dziedzictwo. Tutaj gromadzimy najdoskonalszy wybór naszych produktów premium, prezentowanych w otoczeniu, które odzwierciedla nasze wartości: elegancję, tradycję i innowacyjność."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Polish",
+      "translation": "Poznaj nasze ekskluzywne kolekcje i historię każdego produktu noszącego markę Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Polish",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Polish",
+      "translation": "Doskonałość w zakresie dóbr konsumpcyjnych premium od 2019 r."
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Polish",
+      "translation": "Wiodąca globalna firma produkująca dobra konsumpcyjne, oferująca wysokiej jakości produkty spożywcze w różnych kategoriach, spełniające międzynarodowe standardy jakości."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Polish",
+      "translation": "Londyn • Mediolan • Nowy Jork"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Polish",
+      "translation": "Od 2019 roku"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Polish",
+      "translation": "Harvics News"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Polish",
+      "translation": "Subskrybuj, aby otrzymywać alerty i aktualizacje"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Polish",
+      "translation": "Zapisać się"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Polish",
+      "translation": "Obawy dotyczące zgodności"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Polish",
+      "translation": "Jeśli masz wątpliwości dotyczące zgodności lub etyki, zgłoś je"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Polish",
+      "translation": "Mówić głośno"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Polish",
+      "translation": "Skontaktuj się z nami"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Polish",
+      "translation": "Skontaktuj się z naszym zespołem"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Polish",
+      "translation": "Skontaktuj się z nami"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Polish",
+      "translation": "Przydatne linki"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Polish",
+      "translation": "Zapytaj Harwich"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Polish",
+      "translation": "Szukaj pracy"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Polish",
+      "translation": "Zapisz się na aktualności"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Polish",
+      "translation": "Firma"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Polish",
+      "translation": "Adresy globalne"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Polish",
+      "translation": "Strategia"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Polish",
+      "translation": "Nasze przywództwo"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Polish",
+      "translation": "Marki od A do Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Polish",
+      "translation": "Nasza historia"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Polish",
+      "translation": "Zrównoważony rozwój"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Polish",
+      "translation": "Aktualności"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Polish",
+      "translation": "Kontakty dla mediów"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Polish",
+      "translation": "Obrazy"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Polish",
+      "translation": "Inwestorzy"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Polish",
+      "translation": "Ład korporacyjny"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Polish",
+      "translation": "Akcje, ADR-y i obligacje"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Polish",
+      "translation": "Publikacje"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Polish",
+      "translation": "Obserwuj nas na"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Polish",
+      "translation": "0 wydań"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Polish",
+      "translation": "Mapa witryny"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Polish",
+      "translation": "Anuluj subskrypcję"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Polish",
+      "translation": "Pomoc"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Polish",
+      "translation": "Prywatność"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Polish",
+      "translation": "Ciastka"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Polish",
+      "translation": "Warunki korzystania"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Polish",
+      "translation": "Dostępność"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Polish",
+      "translation": "Efektywność węglowa"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Polish",
+      "translation": "Dostawcy"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Polish",
+      "translation": "Media społecznościowe"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Polish",
+      "translation": "Ustawienia plików cookie"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Polish",
+      "translation": "Najwyższa jakość"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Polish",
+      "translation": "Adres e-mail"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Polish",
+      "translation": "Podaj swój adres e-mail"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Polish",
+      "translation": "Subskrybować"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Polish",
+      "translation": "Subskrybuję..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Polish",
+      "translation": "O nas"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Polish",
+      "translation": "Głoska bezdźwięczna"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Polish",
+      "translation": "Wyszukaj produkty, marki lub kategorie"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Polish",
+      "translation": "Nie znaleziono wyników"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Polish",
+      "translation": "Badawczy..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Polish",
+      "translation": "Wyniki"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Polish",
+      "translation": "Porozmawiaj z nami"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Polish",
+      "translation": "Wpisz swoją wiadomość..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Polish",
+      "translation": "Wysłać"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Polish",
+      "translation": "Zamknąć"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Polish",
+      "translation": "Cześć! W czym mogę dziś pomóc?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Polish",
+      "translation": "Przepraszam, nie zrozumiałem. Czy mógłbyś to napisać inaczej?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Polish",
+      "translation": "Mogę pomóc Ci w zakresie informacji o produktach, zamówień lub ogólnych zapytań. Co chciałbyś wiedzieć?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Polish",
+      "translation": "Aby uzyskać dalszą pomoc, skontaktuj się z nami pod adresem support@harvics.com lub zadzwoń pod numer +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Polish",
+      "translation": "Porozmawiaj z nami"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Polish",
+      "translation": "Załadunek..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Polish",
+      "translation": "Błąd"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Polish",
+      "translation": "Sukces"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Polish",
+      "translation": "Ratować"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Polish",
+      "translation": "Anulować"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Polish",
+      "translation": "Usuwać"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Polish",
+      "translation": "Redagować"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Polish",
+      "translation": "Pogląd"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Polish",
+      "translation": "Składać"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Polish",
+      "translation": "Szukaj"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Polish",
+      "translation": "Filtr"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Polish",
+      "translation": "Jasne"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Polish",
+      "translation": "Pobierać"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Polish",
+      "translation": "Wgrywać"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Polish",
+      "translation": "Tak"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Polish",
+      "translation": "NIE"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Polish",
+      "translation": "Zamknąć"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Polish",
+      "translation": "Z powrotem"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Polish",
+      "translation": "Następny"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Polish",
+      "translation": "Poprzedni"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Polish",
+      "translation": "Akcje"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Polish",
+      "translation": "Status"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Polish",
+      "translation": "Data"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Polish",
+      "translation": "Nazwa"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Polish",
+      "translation": "E-mail"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Polish",
+      "translation": "Telefon"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Polish",
+      "translation": "Adres"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Polish",
+      "translation": "Kraj"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Polish",
+      "translation": "Miasto"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Polish",
+      "translation": "Wszystko"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Polish",
+      "translation": "Nic"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Polish",
+      "translation": "Wybierać"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Polish",
+      "translation": "Wybierz język"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Polish",
+      "translation": "Wybierz kraj"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Polish",
+      "translation": "Pokaż więcej"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Polish",
+      "translation": "Pokaż mniej"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Polish",
+      "translation": "Wymagany"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Polish",
+      "translation": "Menu"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Polish",
+      "translation": "Zobacz produkty"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Polish",
+      "translation": "Odtwórz muzykę"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Polish",
+      "translation": "Wstrzymaj muzykę"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Polish",
+      "translation": "Wycisz muzykę"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Polish",
+      "translation": "Włącz muzykę"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Polish",
+      "translation": "Nasz globalny zasięg"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Polish",
+      "translation": "Od"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Polish",
+      "translation": "Główny rynek"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Polish",
+      "translation": "Główne rynki"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Polish",
+      "translation": "Obecność"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Polish",
+      "translation": "Obsługiwane kraje"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Polish",
+      "translation": "Główne rynki"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Polish",
+      "translation": "Kategorie produktów"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Polish",
+      "translation": "Przyjęty"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Polish",
+      "translation": "Hierarchia terytorialna"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Polish",
+      "translation": "Pełna ścieżka"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Polish",
+      "translation": "Aktualne terytorium"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Polish",
+      "translation": "Brak pozycji"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Polish",
+      "translation": "Glob"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Polish",
+      "translation": "Kontynent"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Polish",
+      "translation": "Region"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Polish",
+      "translation": "Kraj"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Polish",
+      "translation": "Miasto"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Polish",
+      "translation": "Dzielnica"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Polish",
+      "translation": "Lokalizacja"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Polish",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Polish",
+      "translation": "Światowy"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Polish",
+      "translation": "Wybierz region"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Polish",
+      "translation": "Dane klienta"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Polish",
+      "translation": "Wybrany"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Polish",
+      "translation": "Pełne imię i nazwisko"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Polish",
+      "translation": "Wpisz swoje pełne imię i nazwisko"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Polish",
+      "translation": "Imię jest wymagane"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Polish",
+      "translation": "Adres e-mail"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Polish",
+      "translation": "twój.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Polish",
+      "translation": "Adres e-mail jest wymagany"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Polish",
+      "translation": "Proszę podać prawidłowy adres e-mail"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Polish",
+      "translation": "Numer telefonu"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Polish",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Polish",
+      "translation": "Numer telefonu jest wymagany"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Polish",
+      "translation": "Adres"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Polish",
+      "translation": "Twój adres"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Polish",
+      "translation": "Adres jest wymagany"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Polish",
+      "translation": "Wyrażam zgodę na otrzymywanie komunikatów marketingowych i aktualizacji"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Polish",
+      "translation": "Prześlij i kontynuuj"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Polish",
+      "translation": "Przedkładający..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Polish",
+      "translation": "Pomiń i kontynuuj"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Polish",
+      "translation": "Kluczowe wskaźniki efektywności"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Polish",
+      "translation": "Zamówienia dzisiaj"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Polish",
+      "translation": "Przesłano za pośrednictwem Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Polish",
+      "translation": "Oczekujące dostawy"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Polish",
+      "translation": "Przez wyznaczone trasy"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Polish",
+      "translation": "Sprzedawcy detaliczni"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Polish",
+      "translation": "Aktywne punkty sprzedaży w zakresie"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Polish",
+      "translation": "Wynik T & A"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Polish",
+      "translation": "Zasięg terytorialny"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Polish",
+      "translation": "Finanse i zapasy"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Polish",
+      "translation": "Niskie stany magazynowe jednostek SKU"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Polish",
+      "translation": "Uzupełnianie spustu"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Polish",
+      "translation": "Niezapłacone faktury"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Polish",
+      "translation": "Do odbioru"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Polish",
+      "translation": "Limit kredytowy"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Polish",
+      "translation": "Przypisane przez finanse"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Polish",
+      "translation": "Włączono automatyczne zatwierdzanie, uzupełnianie zapasów i przypomnienia o fakturach"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Polish",
+      "translation": "Samoakceptacja"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Polish",
+      "translation": "Uzupełnianie zapasów"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Polish",
+      "translation": "Przypomnienia o fakturach"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Polish",
+      "translation": "Rekomendacje AI"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Polish",
+      "translation": "Poziom ryzyka"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Polish",
+      "translation": "Na podstawie wykorzystania kredytu i historii płatności"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Polish",
+      "translation": "Sugerowane zamówienie"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Polish",
+      "translation": "Zalecane przez sztuczną inteligencję jednostki SKU do zamówienia"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Polish",
+      "translation": "Następna akcja"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Polish",
+      "translation": "Działania i wskazówki"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Polish",
+      "translation": "Uskarżanie się"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Polish",
+      "translation": "Kwestie dotyczące sprzedawców detalicznych oczekujące na podjęcie działań"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Polish",
+      "translation": "Podręcznik"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Polish",
+      "translation": "Priorytetowo traktuj dostawy oczekujące na dostawę przed południem."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Polish",
+      "translation": "Zamknij wszystkie nierozpatrzone skargi w ciągu 48 godzin."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Polish",
+      "translation": "Uruchom uzupełnianie zapasów w przypadku jednostek magazynowych o niskim stanie magazynowym (automatyczne tworzenie zamówień)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Polish",
+      "translation": "Terytorium"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Polish",
+      "translation": "Zamówienia w tym miesiącu"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Polish",
+      "translation": "Zamówienia oczekujące"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Polish",
+      "translation": "Dostarczone zamówienia"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Polish",
+      "translation": "Informacje o terytorium"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Polish",
+      "translation": "Kraj"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Polish",
+      "translation": "Miasto"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Polish",
+      "translation": "Region"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Polish",
+      "translation": "Szybkie akcje"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Polish",
+      "translation": "Nowy porządek"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Polish",
+      "translation": "Wyświetl zamówienia"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Polish",
+      "translation": "Wyświetl faktury"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Polish",
+      "translation": "Ustawienia profilu"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Polish",
+      "translation": "Ładowanie pulpitu nawigacyjnego..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Polish",
+      "translation": "Błąd"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Polish",
+      "translation": "Moje zamówienia"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Polish",
+      "translation": "Numer zamówienia"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Polish",
+      "translation": "Data"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Polish",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Polish",
+      "translation": "Rzeczy"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Polish",
+      "translation": "Całkowita kwota"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Polish",
+      "translation": "Akcje"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Polish",
+      "translation": "Zobacz szczegóły"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Polish",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Polish",
+      "translation": "Data rozpoczęcia"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Polish",
+      "translation": "Data zakończenia"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Polish",
+      "translation": "Wszystkie statusy"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Polish",
+      "translation": "Wyczyść filtry"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Polish",
+      "translation": "Aż do"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Polish",
+      "translation": "Przetwarzanie"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Polish",
+      "translation": "Dostarczony"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Polish",
+      "translation": "Odwołany"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Polish",
+      "translation": "Nie znaleziono zamówień"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Polish",
+      "translation": "Ładowanie zamówień..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Polish",
+      "translation": "Strona"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Polish",
+      "translation": "z"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Polish",
+      "translation": "Poprzedni"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Polish",
+      "translation": "Następny"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Polish",
+      "translation": "Szczegóły zamówienia"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Polish",
+      "translation": "Powrót do zamówień"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Polish",
+      "translation": "Numer zamówienia"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Polish",
+      "translation": "Status"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Polish",
+      "translation": "Data zamówienia"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Polish",
+      "translation": "Data dostawy"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Polish",
+      "translation": "Adres dostawy"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Polish",
+      "translation": "Notatki"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Polish",
+      "translation": "Zamów przedmioty"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Polish",
+      "translation": "Produkt"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Polish",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Polish",
+      "translation": "Ilość"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Polish",
+      "translation": "Cena jednostkowa"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Polish",
+      "translation": "Całkowity"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Polish",
+      "translation": "Całkowita kwota"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Polish",
+      "translation": "Oś czasu statusu"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Polish",
+      "translation": "Nie znaleziono zamówienia"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Polish",
+      "translation": "Utwórz nowe zamówienie"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Polish",
+      "translation": "Zamów przedmioty"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Polish",
+      "translation": "Dodaj element"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Polish",
+      "translation": "Nie dodano jeszcze żadnych pozycji. Kliknij „Dodaj pozycję”, aby rozpocząć."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Polish",
+      "translation": "Szczegóły zamówienia"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Polish",
+      "translation": "Data dostawy"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Polish",
+      "translation": "Adres dostawy"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Polish",
+      "translation": "Notatki"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Polish",
+      "translation": "Całkowita kwota"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Polish",
+      "translation": "Utwórz zamówienie"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Polish",
+      "translation": "Tworzenie zamówienia..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Polish",
+      "translation": "Anulować"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Polish",
+      "translation": "Wybierz produkt"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Polish",
+      "translation": "Produkt"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Polish",
+      "translation": "Ilość"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Polish",
+      "translation": "Cena jednostkowa"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Polish",
+      "translation": "Usunąć"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Polish",
+      "translation": "Suma częściowa"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Polish",
+      "translation": "Numer zamówienia"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Polish",
+      "translation": "Wymagany jest co najmniej jeden element zamówienia"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Polish",
+      "translation": "Produkt jest wymagany"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Polish",
+      "translation": "Ilość musi być większa niż 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Polish",
+      "translation": "Cena jednostkowa musi być nieujemna"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Polish",
+      "translation": "Nieprawidłowy format daty dostawy"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Polish",
+      "translation": "Data dostawy nie może przypadać w przeszłości"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Polish",
+      "translation": "Moje faktury"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Polish",
+      "translation": "Numer faktury"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Polish",
+      "translation": "Data faktury"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Polish",
+      "translation": "Dwie daty"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Polish",
+      "translation": "Kwota"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Polish",
+      "translation": "Zapłacona kwota"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Polish",
+      "translation": "Status płatności"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Polish",
+      "translation": "Status płatności"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Polish",
+      "translation": "Wszystkie statusy"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Polish",
+      "translation": "Wyczyść filtry"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Polish",
+      "translation": "Płatny"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Polish",
+      "translation": "Nie zapłacony"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Polish",
+      "translation": "Częściowy"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Polish",
+      "translation": "Nie znaleziono faktur"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Polish",
+      "translation": "Ładowanie faktur..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Polish",
+      "translation": "Mój profil"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Polish",
+      "translation": "Informacje o koncie"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Polish",
+      "translation": "ID dystrybutora"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Polish",
+      "translation": "Terytorium"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Polish",
+      "translation": "Kraj"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Polish",
+      "translation": "Miasto"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Polish",
+      "translation": "Konto utworzone"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Polish",
+      "translation": "Aktualizuj profil"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Polish",
+      "translation": "Nazwa"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Polish",
+      "translation": "E-mail"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Polish",
+      "translation": "Telefon"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Polish",
+      "translation": "Adres"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Polish",
+      "translation": "Język"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Polish",
+      "translation": "Waluta"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Polish",
+      "translation": "Zapisz zmiany"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Polish",
+      "translation": "Oszczędność..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Polish",
+      "translation": "Profil zaktualizowany pomyślnie"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Polish",
+      "translation": "Ładowanie profilu..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Polish",
+      "translation": "Nieprawidłowy format adresu e-mail"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Polish",
+      "translation": "Nieprawidłowy format telefonu"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Polish",
+      "translation": "Błąd"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Polish",
+      "translation": "Załadunek..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Polish",
+      "translation": "Ratować"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Polish",
+      "translation": "Anulować"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Polish",
+      "translation": "Z powrotem"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Polish",
+      "translation": "Składać"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Polish",
+      "translation": "Usuwać"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Polish",
+      "translation": "Redagować"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Polish",
+      "translation": "Pogląd"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Polish",
+      "translation": "Szukaj"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Polish",
+      "translation": "Filtr"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Polish",
+      "translation": "Jasne"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Polish",
+      "translation": "Stosować"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Polish",
+      "translation": "Zamknąć"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Polish",
+      "translation": "Potwierdzać"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Polish",
+      "translation": "Tak"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Polish",
+      "translation": "NIE"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Polish",
+      "translation": "Prawny system operacyjny"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Polish",
+      "translation": "Legalny system operacyjny"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Polish",
+      "translation": "Odmowa dostępu"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Polish",
+      "translation": "Nie masz uprawnień dostępu do modułu Legal OS."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Polish",
+      "translation": "Panel"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Polish",
+      "translation": "Umowy"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Polish",
+      "translation": "Certyfikaty"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Polish",
+      "translation": "Zgodność"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Polish",
+      "translation": "Panel prawny"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Polish",
+      "translation": "Przegląd operacji prawnych i statusu zgodności"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Polish",
+      "translation": "Aktywne znaki towarowe"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Polish",
+      "translation": "Aktywne kontrakty"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Polish",
+      "translation": "Status zgodności"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Polish",
+      "translation": "Znaki towarowe"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Polish",
+      "translation": "Zarządzaj rejestracją i wnioskami o znaki towarowe"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Polish",
+      "translation": "Dodaj nowy znak towarowy"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Polish",
+      "translation": "Kraj"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Polish",
+      "translation": "Status"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Polish",
+      "translation": "Wszystkie kraje"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Polish",
+      "translation": "Wszystkie statusy"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Polish",
+      "translation": "Wyczyść filtry"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Polish",
+      "translation": "Nazwa marki"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Polish",
+      "translation": "Klasa"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Polish",
+      "translation": "Kraj"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Polish",
+      "translation": "Numer wniosku"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Polish",
+      "translation": "Status"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Polish",
+      "translation": "Data ważności"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Polish",
+      "translation": "Akcje"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Polish",
+      "translation": "Edytuj znak towarowy"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Polish",
+      "translation": "Dodaj nowy znak towarowy"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Polish",
+      "translation": "Wyświetl znak towarowy"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Polish",
+      "translation": "Nazwa marki"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Polish",
+      "translation": "Numer klasy"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Polish",
+      "translation": "Kraj"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Polish",
+      "translation": "Numer aplikacji"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Polish",
+      "translation": "Status"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Polish",
+      "translation": "Data ważności"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Polish",
+      "translation": "Dokumenty"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Polish",
+      "translation": "Brak załączonych dokumentów"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Polish",
+      "translation": "Dodaj dokument"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Polish",
+      "translation": "Usunąć"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Polish",
+      "translation": "Nie udało się załadować znaków towarowych"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Polish",
+      "translation": "Nie udało się zapisać znaku towarowego. Spróbuj ponownie."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Polish",
+      "translation": "Sprawy sądowe"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Polish",
+      "translation": "Zarządzaj sprawami prawnymi i śledź ich status"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Polish",
+      "translation": "Nowa sprawa"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Polish",
+      "translation": "Tytuł sprawy"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Polish",
+      "translation": "Typ sprawy"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Polish",
+      "translation": "Kraj"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Polish",
+      "translation": "Opis"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Polish",
+      "translation": "Przypisany do"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Polish",
+      "translation": "Status"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Polish",
+      "translation": "Data przesłuchania"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Polish",
+      "translation": "Tytuł sprawy"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Polish",
+      "translation": "Typ"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Polish",
+      "translation": "Kraj"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Polish",
+      "translation": "Przypisany do"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Polish",
+      "translation": "Status"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Polish",
+      "translation": "Data przesłuchania"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Polish",
+      "translation": "Akcje"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Polish",
+      "translation": "Otwarte"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Polish",
+      "translation": "W toku"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Polish",
+      "translation": "Zamknięte"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Polish",
+      "translation": "Odwołany"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Polish",
+      "translation": "Widok mapy floty"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Polish",
+      "translation": "Śledzenie w czasie rzeczywistym pracowników sprzedaży i pojazdów dostawczych"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Polish",
+      "translation": "Aktywni pracownicy"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Polish",
+      "translation": "Brak aktywnych pracowników"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Polish",
+      "translation": "Załadunek..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Polish",
+      "translation": "Powtórka trasy"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Polish",
+      "translation": "Pracownik"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Polish",
+      "translation": "Prędkość"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Polish",
+      "translation": "Nastawić"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Polish",
+      "translation": "Grać"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Polish",
+      "translation": "Pauza"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Polish",
+      "translation": "zwrotnica"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Polish",
+      "translation": "Brak dostępnych danych trasy"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Polish",
+      "translation": "Ładowanie trasy..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Polish",
+      "translation": "Produkty konkurencji"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Polish",
+      "translation": "Śledź informacje o produktach konkurencji"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Polish",
+      "translation": "Dodaj produkt"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Polish",
+      "translation": "Dodaj produkt konkurencji"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Polish",
+      "translation": "Marka"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Polish",
+      "translation": "Nazwa SKU"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Polish",
+      "translation": "Kategoria"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Polish",
+      "translation": "Rozmiar"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Polish",
+      "translation": "Cena"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Polish",
+      "translation": "Waluta"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Polish",
+      "translation": "Kraj"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Polish",
+      "translation": "Marka"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Polish",
+      "translation": "Nazwa SKU"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Polish",
+      "translation": "Kategoria"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Polish",
+      "translation": "Rozmiar"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Polish",
+      "translation": "Cena"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Polish",
+      "translation": "Kraj"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Polish",
+      "translation": "Data dodania"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Polish",
+      "translation": "Nie udało się załadować produktów"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Polish",
+      "translation": "Nie udało się utworzyć produktu. Spróbuj ponownie."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Polish",
+      "translation": "Nie znaleziono produktów konkurencji"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Polish",
+      "translation": "Ładowanie produktów..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Polish",
+      "translation": "Panel konkurencji"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Polish",
+      "translation": "Analityka i spostrzeżenia dotyczące produktów konkurencji"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Polish",
+      "translation": "Łączna liczba produktów"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Polish",
+      "translation": "Monitorowane marki"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Polish",
+      "translation": "Kraje"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Polish",
+      "translation": "Kategorie"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Polish",
+      "translation": "Produkty według marki"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Polish",
+      "translation": "Produkty według kraju"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Polish",
+      "translation": "Produkty według kategorii"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Polish",
+      "translation": "Ładowanie statystyk..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Polish",
+      "translation": "Brak dostępnych statystyk"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Polish",
+      "translation": "Przegląd"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Polish",
+      "translation": "Święcenia"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Polish",
+      "translation": "Spis"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Polish",
+      "translation": "Logistyka"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Polish",
+      "translation": "Finanse"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Polish",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Polish",
+      "translation": "Dział kadr"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Polish",
+      "translation": "Wykonawczy"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Polish",
+      "translation": "Inwestor"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Polish",
+      "translation": "Prawo/Prawa własności intelektualnej"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Polish",
+      "translation": "Konkurent"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Polish",
+      "translation": "Import/Eksport"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Polish",
+      "translation": "Śledzenie GPS"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Polish",
+      "translation": "Lokalizacja"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Polish",
+      "translation": "Przepływy pracy"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Polish",
+      "translation": "Administrator"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Polish",
+      "translation": "System operacyjny CRM"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Polish",
+      "translation": "Klient 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Polish",
+      "translation": "Kompletne profile klientów, historia interakcji i zarządzanie relacjami"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Polish",
+      "translation": "Kampanie cyfrowe"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Polish",
+      "translation": "Kampanie marketingowe wielokanałowe (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Polish",
+      "translation": "Potencjalni klienci i możliwości"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Polish",
+      "translation": "Zarządzanie potencjalnymi klientami, kwalifikacja i kanał możliwości"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Polish",
+      "translation": "Obsługa klienta"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Polish",
+      "translation": "Zarządzanie biletami, obsługa klienta i rozwiązywanie problemów"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Polish",
+      "translation": "Programy lojalnościowe"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Polish",
+      "translation": "Zarządzanie lojalnością, grywalizacją i nagrodami dla sprzedawców detalicznych"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Polish",
+      "translation": "Klient 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Polish",
+      "translation": "Nowy klient"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Polish",
+      "translation": "Łączna liczba klientów"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Polish",
+      "translation": "Aktywny"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Polish",
+      "translation": "Nowy"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Polish",
+      "translation": "Zadowolenie"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Polish",
+      "translation": "Zarządzanie klientami"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Polish",
+      "translation": "Przeglądaj i zarządzaj relacjami z klientami, interakcjami i kampaniami."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Polish",
+      "translation": "Załadunek..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Polish",
+      "translation": "Błąd ładowania danych CRM"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Polish",
+      "translation": "Przegląd"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Polish",
+      "translation": "Święcenia"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Polish",
+      "translation": "Spis"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Polish",
+      "translation": "Logistyka"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Polish",
+      "translation": "Finanse"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Polish",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Polish",
+      "translation": "Dział kadr"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Polish",
+      "translation": "Wykonawczy"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Polish",
+      "translation": "Inwestor"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Polish",
+      "translation": "Prawo/Prawa własności intelektualnej"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Polish",
+      "translation": "Konkurent"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Polish",
+      "translation": "Import/Eksport"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Polish",
+      "translation": "Śledzenie GPS"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Polish",
+      "translation": "Lokalizacja"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Polish",
+      "translation": "Przepływy pracy"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Polish",
+      "translation": "Administrator"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Polish",
+      "translation": "Klienci"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Polish",
+      "translation": "Pracownicy"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Polish",
+      "translation": "Zysk"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Polish",
+      "translation": "Ładowanie kokpitu dostawcy…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Polish",
+      "translation": "Zamówienia zakupu"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Polish",
+      "translation": "Wychowane przez Harvics"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Polish",
+      "translation": "Wysyłki / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Polish",
+      "translation": "Przyjęte w tym tygodniu"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Polish",
+      "translation": "Utworzono faktury"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Polish",
+      "translation": "Oczekiwanie na płatność"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Polish",
+      "translation": "Oczekujące płatności"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Polish",
+      "translation": "Zaplanowano wydanie"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Polish",
+      "translation": "Jakość / reklamacje"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Polish",
+      "translation": "Otwarte bilety"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Polish",
+      "translation": "Prognoza (na następne 4 tygodnie)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Polish",
+      "translation": "Symbol zastępczy AI"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Polish",
+      "translation": "Działania dostawców"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Polish",
+      "translation": "Potwierdź nadchodzące dostawy i zaktualizuj harmonogram GRN."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Polish",
+      "translation": "Przeglądaj niezapłacone faktury i udostępniaj porady dotyczące płatności."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Polish",
+      "translation": "Rozwiązuj otwarte skargi dotyczące jakości w oparciu o dowody z QA."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Polish",
+      "translation": "Nazwa użytkownika"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Polish",
+      "translation": "Hasło"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Polish",
+      "translation": "E-mail"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Polish",
+      "translation": "Składać"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Polish",
+      "translation": "Anulować"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Polish",
+      "translation": "Ratować"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Polish",
+      "translation": "Usuwać"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Polish",
+      "translation": "Szukaj"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Polish",
+      "translation": "Filtr"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Polish",
+      "translation": "Nastawić"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Polish",
+      "translation": "Zamknąć"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Polish",
+      "translation": "Z powrotem"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Polish",
+      "translation": "Następny"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Polish",
+      "translation": "Poprzedni"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Polish",
+      "translation": "Potwierdzać"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Polish",
+      "translation": "Pamiętaj mnie"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Polish",
+      "translation": "Zapomniałeś hasła?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Polish",
+      "translation": "Adres e-mail jest wymagany"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Polish",
+      "translation": "Proszę podać prawidłowy adres e-mail"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Polish",
+      "translation": "Produkty"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Polish",
+      "translation": "Jakie produkty oferuje Harvics?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Polish",
+      "translation": "Oferujemy szeroką gamę produktów spożywczych klasy premium, w tym słodycze, napoje, przekąski, makarony, wyroby piekarnicze i mrożonki w wielu kategoriach."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Polish",
+      "translation": "Gdzie mogę kupić produkty Harvics?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Polish",
+      "translation": "Nasze produkty są dostępne w sklepach detalicznych w ponad 40 krajach. Skorzystaj z naszej wyszukiwarki sklepów lub strony kontaktowej, aby znaleźć sprzedawcę w Twojej okolicy."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Polish",
+      "translation": "Czy oferujecie możliwość składania zamówień hurtowych?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Polish",
+      "translation": "Tak, oferujemy rabaty na zamówienia hurtowe dla firm i detalistów. Więcej informacji znajdziesz na naszej stronie poświęconej rabatom na zamówienia hurtowe."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Polish",
+      "translation": "Zamówienia i wysyłka"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Polish",
+      "translation": "Jakie są opcje wysyłki?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Polish",
+      "translation": "Oferujemy różne opcje wysyłki, w tym standardową, ekspresową i międzynarodową. Darmowa wysyłka jest dostępna dla zamówień powyżej 50 USD."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Polish",
+      "translation": "Jak długo trwa dostawa?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Polish",
+      "translation": "Czas dostawy różni się w zależności od lokalizacji. Standardowa dostawa trwa zazwyczaj 5-7 dni roboczych, a ekspresowa 2-3 dni robocze."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Polish",
+      "translation": "Czy mogę śledzić swoje zamówienie?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Polish",
+      "translation": "Tak, możesz śledzić swoje zamówienie korzystając z numeru przesyłki podanego w e-mailu z potwierdzeniem zamówienia."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Polish",
+      "translation": "Konto i płatności"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Polish",
+      "translation": "Jak założyć konto?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Polish",
+      "translation": "Kliknij „Zaloguj się” w nagłówku i wybierz „Utwórz konto”, aby zarejestrować nowe konto."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Polish",
+      "translation": "Jakie metody płatności akceptujecie?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Polish",
+      "translation": "Akceptujemy wszystkie najważniejsze karty kredytowe i debetowe, płatności przez PayPal oraz przelewy bankowe w przypadku zamówień B2B."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Polish",
+      "translation": "Czy moje dane dotyczące płatności są bezpieczne?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Polish",
+      "translation": "Tak, w celu ochrony Twoich danych płatniczych stosujemy szyfrowanie zgodne ze standardami branżowymi."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Polish",
+      "translation": "Zwroty i zwroty pieniędzy"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Polish",
+      "translation": "Jaka jest polityka zwrotów?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Polish",
+      "translation": "Oferujemy 30-dniowy okres zwrotu dla nieotwartych produktów w oryginalnym opakowaniu. Prosimy o kontakt z naszym działem obsługi klienta w celu uzyskania autoryzacji zwrotu."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Polish",
+      "translation": "Jak mogę ubiegać się o zwrot pieniędzy?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Polish",
+      "translation": "Skontaktuj się z naszym działem obsługi klienta, podając numer zamówienia i powód zwrotu. Zwrot zostanie zrealizowany w ciągu 5-7 dni roboczych."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Polish",
+      "translation": "Masz jeszcze pytania?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Polish",
+      "translation": "Nasz zespół obsługi klienta jest tutaj, aby pomóc"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Polish",
+      "translation": "Skontaktuj się z nami"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Polish",
+      "translation": "Kariera"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Polish",
+      "translation": "Kariera | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Polish",
+      "translation": "Dołącz do Harvics Global Ventures — odkryj możliwości w ponad 40 krajach."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Polish",
+      "translation": "Dołącz do nas"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Polish",
+      "translation": "Zbuduj przyszłość globalnego handlu"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Polish",
+      "translation": "Rozwijamy się w ponad 40 krajach. Dołącz do zespołu, który tworzy system operacyjny oparty na sztucznej inteligencji dla globalnego handlu."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Polish",
+      "translation": "Otwarte stanowiska"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Polish",
+      "translation": "Kraje"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Polish",
+      "translation": "Branże pionowe"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Polish",
+      "translation": "Działy zatrudniające"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Polish",
+      "translation": "Otwarte stanowiska według działu"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Polish",
+      "translation": "Sprzedaż i dystrybucja"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Polish",
+      "translation": "Zwiększaj przychody na ponad 40 rynkach. Zarządzanie terytorialne, kluczowi klienci, relacje z dystrybutorami."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Polish",
+      "translation": "Łańcuch dostaw i logistyka"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Polish",
+      "translation": "Kompleksowy łańcuch dostaw od fabryki do półki. Zarządzanie flotą, magazynowanie, dostawa na ostatniej mili."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Polish",
+      "translation": "Technologia i sztuczna inteligencja"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Polish",
+      "translation": "Zbuduj Harvics OS — naszą platformę korporacyjną opartą na sztucznej inteligencji. Pełny stos, inżynieria uczenia maszynowego, nauka o danych."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Polish",
+      "translation": "Finanse i Skarbowość"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Polish",
+      "translation": "Wielowalutowe zarządzanie finansami, finansowanie handlu, płatności cyfrowe HPay, zarządzanie walutami w różnych regionach."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Polish",
+      "translation": "Zaopatrzenie i zaopatrzenie"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Polish",
+      "translation": "Globalne zaopatrzenie z ponad 15 krajów pochodzenia. Audyty dostawców, kontrola jakości, programy dostaw bezpośrednio do fabryki."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Polish",
+      "translation": "Zasoby ludzkie"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Polish",
+      "translation": "Pozyskiwanie talentów, szkolenie i rozwój, zarządzanie wydajnością w różnych regionach geograficznych i kulturach."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Polish",
+      "translation": "Prawo i zgodność"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Polish",
+      "translation": "Zgodność z przepisami handlowymi, kontrola sankcji, ochrona własności intelektualnej, zarządzanie umowami w różnych jurysdykcjach."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Polish",
+      "translation": "Marketing i marka"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Polish",
+      "translation": "Kampanie wielojęzyczne, treści obejmujące 38 lokalizacji, marketing cyfrowy, strategia marki dla 10 branż."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Polish",
+      "translation": "role"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Polish",
+      "translation": "Dlaczego Harvics"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Polish",
+      "translation": "Globalna mobilność"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Polish",
+      "translation": "Pracuj w Dubaju, Londynie, Karaczi, Lahaur i ponad 40 rynkach"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Polish",
+      "translation": "Ścieżka wzrostu"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Polish",
+      "translation": "Szybki rozwój kariery w rozwijającym się przedsiębiorstwie"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Polish",
+      "translation": "Kultura stawiająca sztuczną inteligencję na pierwszym miejscu"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Polish",
+      "translation": "Pracuj z najnowocześniejszymi systemami sztucznej inteligencji i inteligencji w czasie rzeczywistym"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Polish",
+      "translation": "Pakiet konkurencyjny"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Polish",
+      "translation": "Wiodące na rynku wynagrodzenia, zakwaterowanie i świadczenia"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Polish",
+      "translation": "Budżet edukacyjny"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Polish",
+      "translation": "Roczny budżet rozwoju na kursy, konferencje i certyfikacje"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Polish",
+      "translation": "Elastyczna praca"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Polish",
+      "translation": "Układy hybrydowe z biurami regionalnymi na całym świecie"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Polish",
+      "translation": "Nasza strategia"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Polish",
+      "translation": "Strategia | Harwich"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Polish",
+      "translation": "Budowanie zrównoważonej przyszłości poprzez innowację i doskonałość"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Polish",
+      "translation": "Budowanie zrównoważonej przyszłości poprzez innowację i doskonałość"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Polish",
+      "translation": "Globalna ekspansja"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Polish",
+      "translation": "Rozszerzanie naszej obecności na rynkach wschodzących przy jednoczesnym wzmacnianiu naszej pozycji na rynkach ugruntowanych"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Polish",
+      "translation": "Innowacje produktowe"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Polish",
+      "translation": "Inwestowanie w badania i rozwój w celu tworzenia nowych produktów, które spełniają zmieniające się preferencje konsumentów"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Polish",
+      "translation": "Zrównoważony rozwój"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Polish",
+      "translation": "Zaangażowanie w zrównoważone praktyki w całym naszym łańcuchu dostaw i operacjach"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Polish",
+      "translation": "Transformacja cyfrowa"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Polish",
+      "translation": "Wykorzystanie technologii w celu poprawy obsługi klienta i zwiększenia efektywności operacyjnej"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Polish",
+      "translation": "Nasza wizja"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Polish",
+      "translation": "Być wiodącą na świecie firmą produkującą wysokiej jakości dobra konsumpcyjne, cenioną za jakość, innowacyjność i zrównoważony rozwój."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Polish",
+      "translation": "Harvics Global Ventures | Premium Global Trading"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Polish",
+      "translation": "Wiodąca globalna firma handlowa dostarczająca produkty premium w ponad 10 branżach. Działa w ponad 50 krajach od 2019 roku."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Polish",
+      "translation": "O nas | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Polish",
+      "translation": "Dowiedz się, jak Harvics Global Ventures stało się wiodącą siłą w handlu światowym w ponad 40 krajach i 10 branżach."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Polish",
+      "translation": "Skontaktuj się z nami | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Polish",
+      "translation": "Skontaktuj się z biurami Harvics na całym świecie, na Bliskim Wschodzie, w Azji Południowej, Europie, Afryce i obu Amerykach."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Polish",
+      "translation": "Produkty | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Polish",
+      "translation": "Poznaj gamę produktów premium firmy Harvics obejmującą produkty szybkozbywalne, tekstylia, towary masowe i rozwiązania przemysłowe."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Polish",
+      "translation": "Kariera | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Polish",
+      "translation": "Dołącz do Harvics Global Ventures — poznaj możliwości rozwoju w ponad 40 krajach w sektorze dóbr szybkozbywalnych, tekstyliów, logistyki i technologii."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Polish",
+      "translation": "Centrum medialne | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Polish",
+      "translation": "Centrum prasowe Harvics — komunikaty prasowe, najnowsze wiadomości, zasoby marki i kontakty dla mediów."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Polish",
+      "translation": "Nasza strategia | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Polish",
+      "translation": "Strategiczna wizja Harvics dotycząca globalnej ekspansji, innowacji, zrównoważonego rozwoju i transformacji cyfrowej."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Polish",
+      "translation": "Społeczna odpowiedzialność biznesu | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Polish",
+      "translation": "Inicjatywy CSR firmy Harvics — ochrona środowiska, programy społecznościowe i etyczne praktyki biznesowe."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Polish",
+      "translation": "Często zadawane pytania | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Polish",
+      "translation": "Często zadawane pytania dotyczące produktów, usług, zamówień i działalności globalnej firmy Harvics."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Polish",
+      "translation": "Lokalizacje globalne | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Polish",
+      "translation": "Biura i oddziały Harvics na Bliskim Wschodzie, w Azji Południowej, Europie, Afryce i obu Amerykach."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Polish",
+      "translation": "Zespół kierowniczy | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Polish",
+      "translation": "Poznaj zespół zarządzający Harvics Global Ventures działający na ponad 40 rynkach i w 10 pionach branżowych."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Polish",
+      "translation": "Centrum pomocy | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Polish",
+      "translation": "Uzyskaj pomoc dotyczącą zamówień, kont, wysyłki i usług Harvics."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Polish",
+      "translation": "Zgodność i etyka | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Polish",
+      "translation": "Zaangażowanie firmy Harvics w przestrzeganie przepisów, etyczne praktyki biznesowe i globalne standardy."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Polish",
+      "translation": "Nasza historia | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Polish",
+      "translation": "Od start-upu z Dubaju w 2019 r. do globalnego przedsiębiorstwa działającego w ponad 40 krajach — oto historia Harvics."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Polish",
+      "translation": "Biuletyn | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Polish",
+      "translation": "Zapisz się do newslettera Harvics, aby otrzymywać informacje o branży i premierach produktów."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Polish",
+      "translation": "Zaloguj się | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Polish",
+      "translation": "Zaloguj się na swoje konto Harvics, aby zarządzać zamówieniami i uzyskać dostęp do platformy."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Polish",
+      "translation": "Badania i innowacje | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Polish",
+      "translation": "Inicjatywy badawcze i programy innowacyjne Harvics stanowią siłę napędową naszej globalnej strategii."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Polish",
+      "translation": "Relacje inwestorskie | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Polish",
+      "translation": "Informacje dla inwestorów, raporty finansowe i komunikaty korporacyjne od Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Polish",
+      "translation": "Strona nie znaleziona"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Polish",
+      "translation": "404 — Strona nie znaleziona"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Polish",
+      "translation": "Strona, której szukasz nie istnieje lub została przeniesiona."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Polish",
+      "translation": "Przejdź do strony głównej"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Polish",
+      "translation": "Wracać"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Polish",
+      "translation": "Coś poszło nie tak"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Polish",
+      "translation": "Coś poszło nie tak"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Polish",
+      "translation": "Przepraszamy, ale wydarzyło się coś nieoczekiwanego. Spróbuj odświeżyć stronę."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Polish",
+      "translation": "Spróbuj ponownie"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Polish",
+      "translation": "Odśwież stronę"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Polish",
+      "translation": "Skontaktuj się z pomocą techniczną"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Polish",
+      "translation": "Błąd aplikacji"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Polish",
+      "translation": "Błąd krytyczny"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Polish",
+      "translation": "Wystąpił błąd krytyczny. Proszę odświeżyć stronę."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Polish",
+      "translation": "Załaduj ponownie aplikację"
+    }
+  }
+}

@@ -1,624 +1,1146 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
-    "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More"
+    "welcome": "Vitajte na",
+    "companyName": "Harwich",
+    "tagline": "Excelentnosť v prémiovom spotrebnom tovare od roku 2019",
+    "exploreProducts": "Preskúmajte produkty",
+    "contact": "Kontaktujte nás",
+    "learnMore": "Zistite viac",
+    "brandStatement": "Popredná svetová spoločnosť so spotrebným tovarom, ktorá dodáva prémiové potravinárske výrobky v rôznych kategóriách s medzinárodnými štandardmi kvality.",
+    "taglineStart": "Excelentnosť v prémiovom spotrebnom tovare od roku",
+    "taglineYear": "2019",
+    "locations": "Londýn • Miláno • New York",
+    "categories": {
+      "bakery": "Pekáreň",
+      "beverages": "Nápoje",
+      "confectionery": "Cukrovinky",
+      "culinary": "Kulinárske",
+      "frozenFoods": "Mrazené potraviny",
+      "pasta": "Cestoviny",
+      "snacks": "Občerstvenie"
+    }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
-    "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
-    "media": "Media",
-    "contactUs": "Contact Us",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store"
+    "esgReport": "Správa ESG za rok 2025",
+    "locations": "Londýn • Miláno • New York",
+    "home": "Domov",
+    "about": "O nás",
+    "aboutUs": "O nás",
+    "brandStory": "Príbeh značky",
+    "products": "Produkty",
+    "ourProducts": "Naše produkty",
+    "viewAllProducts": "Zobraziť všetky produkty",
+    "csr": "Spoločenská zodpovednosť",
+    "investorRelations": "Vzťahy s investormi",
+    "investors": "Investori",
+    "media": "Médiá",
+    "contactUs": "Kontaktujte nás",
+    "countries": "Krajiny",
+    "portals": "Portály",
+    "signIn": "Prihlásiť sa",
+    "wishlist": "Zoznam želaní",
+    "cart": "Nákupný košík",
+    "help": "Pomocník",
+    "findStore": "Nájsť obchod",
+    "harvicsHouse": "Harvicsov dom",
+    "money": "Peniaze",
+    "sales": "Predaj",
+    "offers": "Ponuky",
+    "darkMode": "Tmavý režim",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "Kreditná karta",
+        "msRewards": "Kreditná karta M&S Rewards",
+        "clubRewards": "Klubové odmeny",
+        "ourCards": "Naše kreditné karty"
+      },
+      "insurance": {
+        "title": "Poistenie",
+        "home": "Poistenie domácnosti",
+        "travel": "Cestovné poistenie"
+      },
+      "travel": {
+        "title": "Cestovné služby",
+        "money": "Cestovné peniaze",
+        "exchange": "Výmenné kurzy"
+      },
+      "additional": {
+        "title": "Doplnkové služby",
+        "savings": "Sporenie a investovanie",
+        "personalLoans": "Osobné pôžičky",
+        "financialSupport": "Finančná podpora"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "Aktuálny predaj",
+      "clearance": "Výpredaj",
+      "seasonal": "Sezónny výpredaj"
+    },
+    "offersDropdown": {
+      "specialOffers": "Špeciálne ponuky",
+      "promotions": "Propagácie",
+      "bulkOrders": "Zľavy za hromadné objednávky"
+    }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products"
+    "ourProducts": "Naše produkty",
+    "viewAllProducts": "Zobraziť všetky produkty",
+    "productCategories": "Naše kategórie produktov",
+    "discoverPremium": "Objavte náš prémiový sortiment produktov vyrobených s láskou a dokonalosťou.",
+    "tier1": "Úroveň 1: Kategórie",
+    "tier2": "Úroveň 2: Moduly",
+    "tier3": "Úroveň 3: Obrazovky KPI",
+    "tier4": "Úroveň 4: Akcie",
+    "reset": "Obnoviť navigáciu",
+    "noSubcategories": "Pre túto kategóriu nie sú k dispozícii žiadne podkategórie.",
+    "pageTitle": "Produkty",
+    "subcategories": "Podkategórie",
+    "bakery": "Pekáreň",
+    "bakeryDesc": "Čerstvo upečené pečivo a pečivo.",
+    "beverages": "Nápoje",
+    "beveragesDesc": "Osviežujúce nápoje na každú príležitosť.",
+    "confectionery": "Cukrovinky",
+    "confectioneryDesc": "Sladké maškrty a pochúťky.",
+    "culinary": "Kulinárske",
+    "culinaryDesc": "Nevyhnutné ingrediencie do vašej kuchyne.",
+    "frozenFoods": "Mrazené potraviny",
+    "frozenFoodsDesc": "Pohodlné a chutné mrazené jedlá.",
+    "pasta": "Cestoviny",
+    "pastaDesc": "Autentické odrody cestovín.",
+    "snacks": "Občerstvenie",
+    "snacksDesc": "Chutné občerstvenie kedykoľvek počas dňa."
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
-    "email": "Email",
+    "title": "Kontaktujte nás",
+    "subtitle": "Radi by sme od vás počuli. Kontaktujte nás prostredníctvom ktoréhokoľvek z týchto kanálov.",
+    "phone": "Telefón",
+    "email": "E-mail",
     "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "callNow": "Zavolajte teraz",
+    "sendEmail": "Odoslať e-mail",
+    "messageUs": "Napíšte nám"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "Mediálne centrum",
+    "pageTitle": "Mediálne centrum | Harvics",
+    "description": "Tlačové zdroje, informácie o značke a najnovšie správy od spoločnosti Harvics Global Ventures.",
+    "corporate": "Firemné",
+    "sections": {
+      "news": {
+        "title": "Novinky a tlačové správy",
+        "desc": "Najnovšie oznámenia, expanzie na trh, uvedenie produktov na trh a firemné aktualizácie od spoločnosti Harvics Global Ventures.",
+        "cta": "Prečítajte si najnovšie správy"
+      },
+      "gallery": {
+        "title": "Galéria obrázkov",
+        "desc": "Vysokorozlíšiteľné materiály značky, fotografie produktov, obrázky zariadení a spravodajstvo z podujatí pre mediálne použitie.",
+        "cta": "Prehliadať galériu"
+      },
+      "contacts": {
+        "title": "Kontakty pre médiá",
+        "desc": "V prípade otázok pre tlač, žiadostí o rozhovor a oznámení o partnerstve kontaktujte náš komunikačný tím.",
+        "cta": "Kontaktujte tlačový tím"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "Pokryté trhy",
+      "industryVerticals": "Vertikály odvetvia",
+      "foundedIn": "Založené v Dubaji",
+      "languagesSupported": "Podporované jazyky"
+    },
+    "recentHeadlines": "Najnovšie titulky",
+    "headlines": {
+      "expansion": "Spoločnosť Harvics rozširuje svoje aktivity v oblasti rýchloobrátkového spotrebného tovaru na 5 nových trhov juhovýchodnej Ázie",
+      "aiPlatform": "Nová platforma dodávateľského reťazca s umelou inteligenciou spustená pre globálnu distribúciu",
+      "carbonNeutral": "Spoločnosť Harvics dosiahla míľnik uhlíkovej neutrality vo všetkých prevádzkach",
+      "partnership": "Strategické partnerstvo s poprednými textilnými výrobcami v južnej Ázii"
+    }
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
+    "tagline": "Excelentnosť v prémiovom spotrebnom tovare od roku 2019",
+    "brandStatement": "Popredná svetová spoločnosť so spotrebným tovarom, ktorá dodáva prémiové potravinárske výrobky v rôznych kategóriách s medzinárodnými štandardmi kvality.",
+    "locations": "Londýn • Miláno • New York",
+    "since": "Od roku 2019",
     "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
-    "contactUsButton": "Contact Us",
-    "usefulLinks": "Useful Links",
-    "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
-    "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
-    "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
-    "privacy": "Privacy",
-    "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
+    "subscribeToAlerts": "Prihláste sa na odber upozornení a aktualizácií",
+    "signUp": "Zaregistrovať sa",
+    "complianceConcerns": "Obavy z dodržiavania predpisov",
+    "speakUp": "Ozvite sa, ak máte obavy týkajúce sa dodržiavania predpisov alebo etiky",
+    "speakUpButton": "Ozvi sa",
+    "contactUs": "Kontaktujte nás",
+    "contactDescription": "Kontaktujte náš tím",
+    "contactUsButton": "Kontaktujte nás",
+    "usefulLinks": "Užitočné odkazy",
+    "askHarvics": "Opýtajte sa Harwicha",
+    "searchForJobs": "Hľadať pracovné miesta",
+    "signUpForNews": "Prihláste sa na odber noviniek",
+    "company": "Spoločnosť",
+    "globalAddresses": "Globálne adresy",
+    "strategy": "Stratégia",
+    "ourLeadership": "Naše vedenie",
+    "brandsAZ": "Značky od A po Z",
+    "ourHistory": "Naša história",
+    "sustainability": "Udržateľnosť",
+    "news": "Správy",
+    "mediaContacts": "Kontakty pre médiá",
+    "images": "Obrázky",
+    "investors": "Investori",
+    "corporateGovernance": "Správa a riadenie spoločností",
+    "sharesAdrsBonds": "Akcie, ADR a dlhopisy",
+    "publications": "Publikácie",
+    "followUsOn": "Sledujte nás na",
+    "issuesCount": "0 problémov",
+    "siteMap": "Mapa stránok",
+    "unsubscribe": "Odhlásiť sa z odberu",
+    "help": "Pomocník",
+    "privacy": "Súkromie",
+    "cookies": "Súbory cookie",
+    "termsOfUse": "Podmienky používania",
+    "accessibility": "Prístupnosť",
+    "carbonEfficiency": "Uhlíková účinnosť",
+    "suppliers": "Dodávatelia",
+    "socialMedia": "Sociálne médiá",
+    "cookieSettings": "Nastavenia súborov cookie",
     "feature1Title": "Global Reach",
     "feature1Desc": "Serving customers across 40+ countries worldwide",
-    "feature2Title": "Premium Quality",
+    "feature2Title": "Prémiová kvalita",
     "feature2Desc": "International quality standards in every product",
     "feature3Title": "Innovation",
     "feature3Desc": "Leading innovation in consumer goods industry",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
-    "media": "Media"
+    "emailAddress": "E-mailová adresa",
+    "enterEmailPlaceholder": "Zadajte svoju e-mailovú adresu",
+    "subscribe": "Prihlásiť sa na odber",
+    "subscribing": "Prihlasovanie sa na odber...",
+    "aboutUs": "O nás",
+    "media": "Médiá"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "Vyhľadávanie produktov, značiek alebo kategórií",
+    "noResults": "Nenašli sa žiadne výsledky",
+    "searching": "Hľadá sa...",
+    "results": "Výsledky"
   },
   "chatbot": {
-    "title": "Chat with Us",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "title": "Porozprávajte sa s nami",
+    "placeholder": "Napíšte svoju správu...",
+    "send": "Odoslať",
+    "close": "Zatvoriť",
+    "welcome": "Dobrý deň! Ako vám môžem dnes pomôcť?",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "Prepáčte, nerozumel som tomu. Mohli by ste to, prosím, preformulovať?",
+      "help": "Môžem vám pomôcť s informáciami o produktoch, objednávkami alebo všeobecnými otázkami. Čo by ste chceli vedieť?",
+      "contact": "Pre ďalšiu pomoc nás prosím kontaktujte na adrese support@harvics.com alebo zavolajte na číslo +1-800-HARVICS."
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
+    "chatWithUs": "Porozprávajte sa s nami",
+    "loading": "Načítava sa...",
+    "error": "Chyba",
+    "success": "Úspech",
+    "save": "Uložiť",
+    "cancel": "Zrušiť",
+    "delete": "Odstrániť",
+    "edit": "Upraviť",
+    "view": "Zobraziť",
+    "submit": "Odoslať",
+    "search": "Hľadať",
     "filter": "Filter",
-    "clear": "Clear",
-    "download": "Download",
-    "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
-    "status": "Status",
-    "date": "Date",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
-    "selectCountry": "Select Country",
-    "required": "Required",
+    "clear": "Jasné",
+    "download": "Stiahnuť",
+    "upload": "Nahrať",
+    "yes": "Áno",
+    "no": "Nie",
+    "close": "Zatvoriť",
+    "back": "Späť",
+    "next": "Ďalej",
+    "previous": "Predchádzajúce",
+    "actions": "Akcie",
+    "status": "Stav",
+    "date": "Dátum",
+    "name": "Meno",
+    "email": "E-mail",
+    "phone": "Telefón",
+    "address": "Adresa",
+    "country": "Krajina",
+    "city": "Mesto",
+    "all": "Všetky",
+    "none": "Žiadne",
+    "select": "Vyberte",
+    "selectCountry": "Vyberte krajinu",
+    "required": "Povinné",
     "menu": "Menu",
-    "viewProducts": "View Products"
+    "viewProducts": "Zobraziť produkty",
+    "selectLanguage": "Vyberte jazyk",
+    "showMore": "Zobraziť viac",
+    "showLess": "Zobraziť menej"
   },
   "music": {
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "Prehrávanie hudby",
+    "pause": "Pozastaviť hudbu",
+    "mute": "Stlmiť hudbu",
+    "unmute": "Zapnúť zvuk hudby"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "Náš globálny dosah",
+    "since": "Odkedy",
+    "majorMarket": "Hlavný trh",
+    "majorMarkets": "Hlavné trhy",
+    "presence": "Prítomnosť",
+    "countriesServed": "Obsluhované krajiny",
+    "majorMarketsCount": "Hlavné trhy",
+    "productCategoriesCount": "Kategórie produktov",
+    "establishedYear": "Založené"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "Hierarchia územia",
+    "fullPath": "Celá cesta",
+    "currentTerritory": "Súčasné územie",
+    "noChildren": "Žiadne položky",
     "tiers": {
-      "globe": "Globe",
-      "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
-      "district": "District",
-      "location": "Location"
+      "globe": "Glóbus",
+      "continent": "Kontinent",
+      "region": "Región",
+      "country": "Krajina",
+      "city": "Mesto",
+      "district": "Okres",
+      "location": "Poloha"
     }
   },
   "globalWorld": {
     "title": "Harvics Global",
-    "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "titleShort": "Globálne",
+    "selectRegion": "Vyberte región",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
+      "title": "Údaje o zákazníkovi",
+      "selected": "Vybrané",
+      "fullName": "Celé meno",
+      "namePlaceholder": "Zadajte svoje celé meno",
+      "nameRequired": "Meno je povinné",
+      "email": "E-mailová adresa",
       "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
+      "emailRequired": "E-mail je povinný",
+      "emailInvalid": "Zadajte platnú e-mailovú adresu",
+      "phone": "Telefónne číslo",
       "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "phoneRequired": "Telefónne číslo je povinné",
+      "address": "Adresa",
+      "addressPlaceholder": "Vaša adresa",
+      "addressRequired": "Adresa je povinná",
+      "marketingConsent": "Súhlasím so zasielaním marketingových informácií a aktualizácií",
+      "submit": "Odoslať a pokračovať",
+      "submitting": "Odosielanie...",
+      "skip": "Preskočiť a pokračovať"
     }
   },
   "distributorPortal": {
     "dashboard": {
       "kpi": {
-        "title": "Key Performance Indicators",
-        "ordersToday": "Orders today",
-        "ordersTodaySubtitle": "Submitted via Harvics CRM",
-        "pendingDeliveries": "Pending deliveries",
-        "pendingDeliveriesSubtitle": "Across assigned routes",
-        "retailers": "Retailers",
-        "retailersSubtitle": "Active outlets in scope",
-        "attendance": "T & A Score",
-        "attendanceSubtitle": "Territory coverage"
+        "title": "Kľúčové ukazovatele výkonnosti",
+        "ordersToday": "Objednávky dnes",
+        "ordersTodaySubtitle": "Odoslané cez Harvics CRM",
+        "pendingDeliveries": "Čakajúce doručenia",
+        "pendingDeliveriesSubtitle": "Cez pridelené trasy",
+        "retailers": "Maloobchodníci",
+        "retailersSubtitle": "Aktívne predajne v rozsahu",
+        "attendance": "Skóre T & A",
+        "attendanceSubtitle": "Pokrytie územia"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "Financie a zásoby",
+        "lowStock": "Nízke skladové zásoby SKU",
+        "lowStockSubtitle": "Spustiť doplnenie",
+        "outstandingInvoices": "Nevyrovnané faktúry",
+        "outstandingInvoicesSubtitle": "Dátum vyzdvihnutia",
+        "creditLimit": "Úverový limit",
+        "creditLimitSubtitle": "Pridelené finančným oddelením"
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "Automatické schvaľovanie, dopĺňanie zásob a pripomienky faktúr povolené",
+        "autoApproval": "Sebaschválenie",
+        "stockReplenishment": "Dopĺňanie zásob",
+        "invoiceReminders": "Pripomienky faktúr"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "Odporúčania umelej inteligencie",
+        "riskLevel": "Úroveň rizika",
+        "riskDescription": "Na základe využitia úveru a histórie platieb",
+        "suggestedOrder": "Navrhované poradie",
+        "suggestedOrderSubtitle": "SKU odporúčané umelou inteligenciou na objednanie",
+        "nextAction": "Ďalšia akcia"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "Akcie a usmernenia",
+        "complaints": "Sťažnosti",
+        "complaintsSubtitle": "Problémy s maloobchodníkmi, ktoré čakajú na riešenie",
+        "playbook": "Príručka",
+        "playbookItem1": "Uprednostnite čakajúce doručenia pred poludním.",
+        "playbookItem2": "Všetky nevybavené sťažnosti uzavrite do 48 hodín.",
+        "playbookItem3": "Spustiť doplnenie zásob pre skladové jednotky s nízkym stavom (automatické vytvorenie objednávky)."
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "Územie",
+      "ordersThisMonth": "Objednávky tento mesiac",
+      "pendingOrders": "Čakajúce objednávky",
+      "deliveredOrders": "Doručené objednávky",
+      "territoryInformation": "Informácie o území",
+      "country": "Krajina",
+      "city": "Mesto",
+      "region": "Región",
+      "quickActions": "Rýchle akcie",
+      "newOrder": "Nová objednávka",
+      "viewOrders": "Zobraziť objednávky",
+      "viewInvoices": "Zobraziť faktúry",
+      "profileSettings": "Nastavenia profilu",
+      "loading": "Načítava sa ovládací panel...",
+      "error": "Chyba"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
-      "date": "Date",
-      "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "title": "Moje objednávky",
+      "orderId": "ID objednávky",
+      "date": "Dátum",
+      "status": "Stav",
+      "items": "Položky",
+      "totalAmount": "Celková suma",
+      "actions": "Akcie",
+      "viewDetails": "Zobraziť podrobnosti",
       "filters": {
-        "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "Stav",
+        "startDate": "Dátum začiatku",
+        "endDate": "Dátum ukončenia",
+        "allStatuses": "Všetky stavy",
+        "clearFilters": "Vymazať filtre"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "Čaká sa na spracovanie",
+        "processing": "Spracovanie",
+        "delivered": "Doručené",
+        "cancelled": "Zrušené"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
-      "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "noOrders": "Nenašli sa žiadne objednávky",
+      "loading": "Načítavajú sa objednávky...",
+      "page": "Strana",
+      "of": "z",
+      "previous": "Predchádzajúce",
+      "next": "Ďalej"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
-      "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "orderItems": "Order Items",
-      "product": "Product",
+      "title": "Podrobnosti objednávky",
+      "backToOrders": "Späť na objednávky",
+      "orderId": "ID objednávky",
+      "status": "Stav",
+      "orderDate": "Dátum objednávky",
+      "deliveryDate": "Dátum doručenia",
+      "deliveryAddress": "Dodacia adresa",
+      "notes": "Poznámky",
+      "orderItems": "Položky objednávky",
+      "product": "Produkt",
       "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "quantity": "Množstvo",
+      "unitPrice": "Jednotková cena",
+      "total": "Celkom",
+      "totalAmount": "Celková suma",
+      "statusTimeline": "Časová os stavu",
+      "orderNotFound": "Objednávka sa nenašla"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
-      "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "title": "Vytvoriť novú objednávku",
+      "orderItems": "Položky objednávky",
+      "addItem": "Pridať položku",
+      "noItems": "Zatiaľ neboli pridané žiadne položky. Kliknite na tlačidlo „Pridať položku“ a začnite.",
+      "orderDetails": "Podrobnosti objednávky",
+      "deliveryDate": "Dátum doručenia",
+      "deliveryAddress": "Dodacia adresa",
+      "notes": "Poznámky",
+      "totalAmount": "Celková suma",
+      "createOrder": "Vytvoriť objednávku",
+      "creatingOrder": "Vytváranie objednávky...",
+      "cancel": "Zrušiť",
+      "selectProduct": "Vyberte produkt",
+      "product": "Produkt",
+      "quantity": "Množstvo",
+      "unitPrice": "Jednotková cena",
+      "remove": "Odstrániť",
+      "subtotal": "Medzisúčet",
+      "orderId": "ID objednávky",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "Je vyžadovaná aspoň jedna položka objednávky",
+        "productRequired": "Produkt je povinný",
+        "quantityRequired": "Množstvo musí byť väčšie ako 0",
+        "priceRequired": "Jednotková cena musí byť nezáporná",
+        "invalidDate": "Neplatný formát dátumu doručenia",
+        "datePast": "Dátum doručenia nemôže byť v minulosti"
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "Moje faktúry",
+      "invoiceNumber": "Číslo faktúry",
+      "invoiceDate": "Dátum faktúry",
+      "dueDate": "Dve rande",
+      "amount": "Suma",
+      "paidAmount": "Zaplatená suma",
+      "paymentStatus": "Stav platby",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "Stav platby",
+        "allStatuses": "Všetky stavy",
+        "clearFilters": "Vymazať filtre"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "Platené",
+        "unpaid": "Nezaplatené",
+        "partial": "Čiastočné"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "Nenašli sa žiadne faktúry",
+      "loading": "Načítavajú sa faktúry..."
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "title": "Môj profil",
+      "accountInformation": "Informácie o účte",
+      "distributorId": "ID distribútora",
+      "territory": "Územie",
+      "country": "Krajina",
+      "city": "Mesto",
+      "accountCreated": "Účet vytvorený",
+      "updateProfile": "Aktualizovať profil",
+      "name": "Meno",
+      "email": "E-mail",
+      "phone": "Telefón",
+      "address": "Adresa",
+      "language": "Jazyk",
+      "currency": "Mena",
+      "saveChanges": "Uložiť zmeny",
+      "saving": "Ukladá sa...",
+      "profileUpdated": "Profil bol úspešne aktualizovaný",
+      "loading": "Načítava sa profil...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "Neplatný formát e-mailu",
+        "invalidPhone": "Neplatný formát telefónu"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
+      "error": "Chyba",
+      "loading": "Načítava sa...",
+      "save": "Uložiť",
+      "cancel": "Zrušiť",
+      "back": "Späť",
+      "submit": "Odoslať",
+      "delete": "Odstrániť",
+      "edit": "Upraviť",
+      "view": "Zobraziť",
+      "search": "Hľadať",
       "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "clear": "Jasné",
+      "apply": "Použiť",
+      "close": "Zatvoriť",
+      "confirm": "Potvrdiť",
+      "yes": "Áno",
+      "no": "Nie"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
-    "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "title": "Právny operačný systém",
+    "sidebarTitle": "Právny operačný systém",
+    "accessDenied": "Prístup zamietnutý",
+    "accessDeniedMessage": "Nemáte povolenie na prístup k modulu Legal OS.",
+    "dashboard": "Prístrojová doska",
+    "contracts": "Zmluvy",
+    "certificates": "Certifikáty",
+    "compliance": "Súlad s predpismi",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "Právny panel",
+      "description": "Prehľad právnych operácií a stavu dodržiavania predpisov",
+      "activeTrademarks": "Aktívne ochranné známky",
+      "activeContracts": "Aktívne zmluvy",
+      "complianceStatus": "Stav súladu"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "Ochranné známky",
+      "description": "Správa registrácií a žiadostí o ochranné známky",
+      "addNew": "Pridať novú ochrannú známku",
       "filters": {
-        "country": "Country",
-        "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "country": "Krajina",
+        "status": "Stav",
+        "allCountries": "Všetky krajiny",
+        "allStatuses": "Všetky stavy",
+        "clearFilters": "Vymazať filtre"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "brandName": "Názov značky",
+        "class": "Trieda",
+        "country": "Krajina",
+        "applicationNo": "Číslo žiadosti",
+        "status": "Stav",
+        "expiryDate": "Dátum expirácie",
+        "actions": "Akcie"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "Upraviť ochrannú známku",
+        "add": "Pridať novú ochrannú známku",
+        "view": "Zobraziť ochrannú známku"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "brandName": "Názov značky",
+        "classNumber": "Číslo triedy",
+        "country": "Krajina",
+        "applicationNo": "Číslo žiadosti",
+        "status": "Stav",
+        "expiryDate": "Dátum expirácie",
+        "documents": "Dokumenty",
+        "noDocuments": "Žiadne priložené dokumenty",
+        "addDocument": "Pridať dokument",
+        "remove": "Odstrániť"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "Nepodarilo sa načítať ochranné známky",
+        "saveFailed": "Uloženie ochrannej známky zlyhalo. Skúste to znova."
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "Právne prípady",
+      "description": "Spravujte právne prípady a sledujte ich stav",
+      "addNew": "Nový prípad",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
-        "description": "Description",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date"
+        "caseTitle": "Názov prípadu",
+        "caseType": "Typ puzdra",
+        "country": "Krajina",
+        "description": "Popis",
+        "assignedTo": "Pridelené komu",
+        "status": "Stav",
+        "hearingDate": "Dátum vypočutia"
       },
       "table": {
-        "caseTitle": "Case Title",
-        "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "caseTitle": "Názov prípadu",
+        "type": "Typ",
+        "country": "Krajina",
+        "assignedTo": "Pridelené komu",
+        "status": "Stav",
+        "hearingDate": "Dátum vypočutia",
+        "actions": "Akcie"
       },
       "status": {
-        "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "open": "OTVORENÉ",
+        "inProgress": "Prebieha",
+        "closed": "ZATVORENÉ",
+        "cancelled": "Zrušené"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "Zobrazenie mapy flotily",
+      "description": "Sledovanie obchodných zástupcov a doručovacích vozidiel v reálnom čase",
+      "activeEmployees": "Aktívni zamestnanci",
+      "noEmployees": "Žiadni aktívni zamestnanci",
+      "loading": "Načítava sa..."
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
-      "reset": "Reset",
-      "play": "Play",
-      "pause": "Pause",
-      "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "title": "Prehratie trasy",
+      "employee": "Zamestnanec",
+      "speed": "Rýchlosť",
+      "reset": "Obnoviť",
+      "play": "Hrať",
+      "pause": "Pozastaviť",
+      "points": "body",
+      "noRoute": "Nie sú k dispozícii žiadne údaje o trase",
+      "loading": "Načítava sa trasa..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "Konkurenčné produkty",
+      "description": "Sledujte informácie o produktoch konkurencie",
+      "addProduct": "Pridať produkt",
+      "formTitle": "Pridať konkurenčný produkt",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "Značka",
+        "skuName": "Názov SKU",
+        "category": "Kategória",
+        "size": "Veľkosť",
+        "price": "Cena",
+        "currency": "Mena",
+        "country": "Krajina"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "Značka",
+        "skuName": "Názov SKU",
+        "category": "Kategória",
+        "size": "Veľkosť",
+        "price": "Cena",
+        "country": "Krajina",
+        "dateAdded": "Dátum pridania"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "Načítanie produktov zlyhalo",
+        "createFailed": "Vytvorenie produktu zlyhalo. Skúste to znova."
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "Nenašli sa žiadne konkurenčné produkty",
+      "loading": "Načítavajú sa produkty..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "Ovládací panel konkurenta",
+      "description": "Analytika a prehľady o konkurenčných produktoch",
+      "totalProducts": "Celkový počet produktov",
+      "brandsTracked": "Sledované značky",
+      "countries": "Krajiny",
+      "categories": "Kategórie",
+      "byBrand": "Produkty podľa značky",
+      "byCountry": "Produkty podľa krajiny",
+      "byCategory": "Produkty podľa kategórie",
+      "loading": "Načítavajú sa štatistiky...",
+      "noStats": "Nie sú k dispozícii žiadne štatistiky"
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
-    "finance": "Finance",
+    "overview": "Prehľad",
+    "orders": "Objednávky",
+    "inventory": "Inventár",
+    "logistics": "Logistika",
+    "finance": "Financie",
     "crm": "CRM",
     "hr": "HR",
-    "executive": "Executive",
+    "executive": "Výkonný riaditeľ",
     "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
+    "legal-ipr": "Právne/IPR",
+    "competitor": "Súťažiaci",
     "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
-    "admin": "Admin"
+    "gps-tracking": "GPS sledovanie",
+    "localization": "Lokalizácia",
+    "workflows": "Pracovné postupy",
+    "admin": "Administrátor"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
-      "finance": "Finance",
+      "overview": "Prehľad",
+      "orders": "Objednávky",
+      "inventory": "Inventár",
+      "logistics": "Logistika",
+      "finance": "Financie",
       "crm": "CRM",
       "hr": "HR",
-      "executive": "Executive",
+      "executive": "Výkonný riaditeľ",
       "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
+      "legal-ipr": "Právne/IPR",
+      "competitor": "Súťažiaci",
       "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
-      "admin": "Admin"
+      "gps-tracking": "GPS sledovanie",
+      "localization": "Lokalizácia",
+      "workflows": "Pracovné postupy",
+      "admin": "Administrátor"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
-      "profit": "Profit"
+      "customers": "Zákazníci",
+      "employees": "Zamestnanci",
+      "profit": "Zisk"
+    },
+    "domain": {
+      "title": "CRM operačný systém",
+      "customer360": {
+        "title": "Zákazník 360",
+        "description": "Kompletné profily zákazníkov, história interakcií a správa vzťahov"
+      },
+      "campaigns": {
+        "title": "Digitálne kampane",
+        "description": "Viackanálové marketingové kampane (IG, FB, TikTok, WhatsApp)"
+      },
+      "leads": {
+        "title": "Potenciálni zákazníci a príležitosti",
+        "description": "Správa potenciálnych zákazníkov, kvalifikácia a kanál príležitostí"
+      },
+      "support": {
+        "title": "Zákaznícka podpora",
+        "description": "Správa tiketov, zákaznícky servis a riešenie problémov"
+      },
+      "loyalty": {
+        "title": "Vernostné programy",
+        "description": "Správa vernostných programov, gamifikácie a odmien pre maloobchodníkov"
+      }
+    },
+    "customerList": {
+      "title": "Zákazník 360",
+      "newCustomer": "Nový zákazník",
+      "totalCustomers": "Celkový počet zákazníkov",
+      "active": "Aktívne",
+      "new": "Nové",
+      "satisfaction": "Spokojnosť",
+      "customerManagement": "Správa zákazníkov",
+      "customerManagementDescription": "Zobrazte si a spravujte vzťahy so zákazníkmi, interakcie a kampane.",
+      "loading": "Načítava sa...",
+      "error": "Chyba pri načítavaní údajov CRM"
     }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "Načítava sa kokpit dodávateľa…",
+      "purchaseOrders": "Objednávky",
+      "purchaseOrdersSubtitle": "Vychované Harvicsom",
+      "shipments": "Zásielky / Veľká ponuka",
+      "shipmentsSubtitle": "Prijaté tento týždeň",
+      "invoices": "Vytvorené faktúry",
+      "invoicesSubtitle": "Čaká sa na platbu",
+      "paymentsPending": "Čakajúce platby",
+      "paymentsPendingSubtitle": "Naplánované vydanie",
+      "qualityComplaints": "Kvalita / sťažnosti",
+      "qualityComplaintsSubtitle": "Otvorené lístky",
+      "forecast": "Predpoveď (na ďalšie 4 týždne)",
+      "forecastSubtitle": "Zástupný symbol umelej inteligencie",
+      "supplierActions": "Akcie dodávateľa",
+      "action1": "Potvrďte nadchádzajúce zásielky a aktualizujte harmonogram GRN.",
+      "action2": "Skontrolujte si neuhradené faktúry a podeľte sa o rady týkajúce sa platieb.",
+      "action3": "Riešte otvorené sťažnosti týkajúce sa kvality pomocou dôkazov o zabezpečení kvality."
+    }
+  },
+  "form": {
+    "username": "Používateľské meno",
+    "password": "Heslo",
+    "email": "E-mail",
+    "submit": "Odoslať",
+    "cancel": "Zrušiť",
+    "save": "Uložiť",
+    "delete": "Odstrániť",
+    "search": "Hľadať",
+    "filter": "Filter",
+    "reset": "Obnoviť",
+    "close": "Zatvoriť",
+    "back": "Späť",
+    "next": "Ďalej",
+    "previous": "Predchádzajúce",
+    "confirm": "Potvrdiť",
+    "rememberMe": "Zapamätaj si ma",
+    "forgotPassword": "Zabudli ste heslo?",
+    "emailRequired": "E-mail je povinný",
+    "emailInvalid": "Zadajte platnú e-mailovú adresu"
+  },
+  "faq": {
+    "products": {
+      "category": "Produkty",
+      "q1": "Aké produkty ponúka Harvics?",
+      "a1": "Ponúkame široký sortiment prémiových potravinárskych výrobkov vrátane cukroviniek, nápojov, občerstvenia, cestovín, pekárenských výrobkov a mrazených potravín vo viacerých kategóriách.",
+      "q2": "Kde si môžem kúpiť produkty Harvics?",
+      "a2": "Naše produkty sú dostupné v maloobchodných predajniach vo viac ako 40 krajinách. Použite náš vyhľadávač predajní alebo kontaktnú stránku a nájdite predajcu vo vašom okolí.",
+      "q3": "Ponúkate hromadné objednávky?",
+      "a3": "Áno, ponúkame zľavy za hromadné objednávky pre firmy a maloobchodníkov. Viac informácií nájdete na našej stránke Zľavy za hromadné objednávky."
+    },
+    "ordersShipping": {
+      "category": "Objednávky a doprava",
+      "q1": "Aké máte možnosti dopravy?",
+      "a1": "Ponúkame rôzne možnosti dopravy vrátane štandardnej, expresnej a medzinárodnej dopravy. Doprava zdarma je k dispozícii pre objednávky nad 50 USD.",
+      "q2": "Ako dlho trvá doručenie?",
+      "a2": "Dodacie lehoty sa líšia v závislosti od lokality. Štandardné doručenie zvyčajne trvá 5 – 7 pracovných dní, zatiaľ čo expresné doručenie trvá 2 – 3 pracovné dni.",
+      "q3": "Môžem sledovať svoju objednávku?",
+      "a3": "Áno, svoju objednávku môžete sledovať pomocou sledovacieho čísla uvedeného v e-maile s potvrdením objednávky."
+    },
+    "accountPayments": {
+      "category": "Účet a platby",
+      "q1": "Ako si vytvorím účet?",
+      "a1": "Kliknite na „Prihlásiť sa“ v hlavičke a vyberte možnosť „Vytvoriť účet“ pre registráciu nového účtu.",
+      "q2": "Aké spôsoby platby akceptujete?",
+      "a2": "Pre objednávky B2B akceptujeme všetky hlavné kreditné karty, debetné karty, PayPal a bankové prevody.",
+      "q3": "Sú moje platobné informácie v bezpečí?",
+      "a3": "Áno, na ochranu vašich platobných informácií používame štandardné šifrovanie."
+    },
+    "returnsRefunds": {
+      "category": "Vrátenie tovaru a refundácie",
+      "q1": "Aké sú vaše pravidlá vrátenia tovaru?",
+      "a1": "Na neotvorené produkty v originálnom balení ponúkame 30-dňovú lehotu na vrátenie. Pre autorizáciu vrátenia kontaktujte, prosím, náš zákaznícky servis.",
+      "q2": "Ako môžem požiadať o vrátenie peňazí?",
+      "a2": "Kontaktujte náš tím zákazníckej podpory s číslom vašej objednávky a dôvodom vrátenia. Vašu refundáciu spracujeme do 5-7 pracovných dní."
+    },
+    "contactCta": {
+      "title": "Stále máte otázky?",
+      "subtitle": "Náš tím zákazníckej podpory je tu, aby vám pomohol",
+      "button": "Kontaktujte nás"
+    }
+  },
+  "careers": {
+    "title": "Kariéra",
+    "pageTitle": "Kariéra | Harvics",
+    "description": "Pridajte sa k Harvics Global Ventures – preskúmajte príležitosti vo viac ako 40 krajinách.",
+    "joinUs": "Pridajte sa k nám",
+    "heroTitle": "Budujte budúcnosť globálneho obchodu",
+    "heroDesc": "Rastieme vo viac ako 40 krajinách. Pridajte sa k tímu, ktorý buduje operačný systém s umelou inteligenciou pre globálny obchod.",
+    "stats": {
+      "openPositions": "Voľné pozície",
+      "countries": "Krajiny",
+      "industryVerticals": "Vertikály odvetvia",
+      "departmentsHiring": "Hľadanie zamestnancov v oddeleniach"
+    },
+    "openPositionsByDept": "Voľné pozície podľa oddelenia",
+    "departments": {
+      "sales": {
+        "name": "Predaj a distribúcia",
+        "desc": "Zvyšovanie príjmov na viac ako 40 trhoch. Riadenie územia, kľúčoví zákazníci, vzťahy s distribútormi."
+      },
+      "supplyChain": {
+        "name": "Dodávateľský reťazec a logistika",
+        "desc": "Komplexný dodávateľský reťazec od továrne až po regál. Správa vozového parku, skladovanie, doručenie na poslednú míľu."
+      },
+      "technology": {
+        "name": "Technológia a umelá inteligencia",
+        "desc": "Vytvorte Harvics OS — našu podnikovú platformu s umelou inteligenciou. Full-stack, strojové učenie, dátová veda."
+      },
+      "finance": {
+        "name": "Financie a pokladnica",
+        "desc": "Multimenové financovanie, obchodné financovanie, digitálne platby HPay, správa devíz naprieč regiónmi."
+      },
+      "procurement": {
+        "name": "Obstarávanie a získavanie zdrojov",
+        "desc": "Globálne zásobovanie z viac ako 15 krajín pôvodu. Audity dodávateľov, kontrola kvality, programy priameho predaja z továrne."
+      },
+      "hr": {
+        "name": "Ľudské zdroje",
+        "desc": "Získavanie talentov, vzdelávanie a rozvoj, riadenie výkonnosti v rôznych geografických oblastiach a kultúrach."
+      },
+      "legal": {
+        "name": "Právne záležitosti a dodržiavanie predpisov",
+        "desc": "Dodržiavanie obchodných predpisov, preverovanie sankcií, ochrana duševného vlastníctva, správa zmlúv naprieč jurisdikciami."
+      },
+      "marketing": {
+        "name": "Marketing a značka",
+        "desc": "Viacjazyčné kampane, obsah v 38 lokalitách, digitálny marketing, stratégia značky pre 10 vertikál."
+      }
+    },
+    "roles": "role",
+    "whyHarvics": "Prečo Harvics",
+    "benefits": {
+      "globalMobility": {
+        "title": "Globálna mobilita",
+        "desc": "Práca v Dubaji, Londýne, Karáčí, Láhaure a na viac ako 40 trhoch"
+      },
+      "growthTrack": {
+        "title": "Rastová dráha",
+        "desc": "Rýchly kariérny postup v rastúcej spoločnosti"
+      },
+      "aiCulture": {
+        "title": "Kultúra založená na umelej inteligencii",
+        "desc": "Pracujte s najmodernejšími systémami umelej inteligencie a inteligencie v reálnom čase"
+      },
+      "competitivePackage": {
+        "title": "Konkurenčný balíček",
+        "desc": "Popredné odmeňovanie, bývanie a benefity na trhu"
+      },
+      "learningBudget": {
+        "title": "Rozpočet na vzdelávanie",
+        "desc": "Ročný rozpočet na rozvoj kurzov, konferencií a certifikácií"
+      },
+      "flexibleWork": {
+        "title": "Flexibilná práca",
+        "desc": "Hybridné dohody s regionálnymi centrami po celom svete"
+      }
+    }
+  },
+  "strategy": {
+    "title": "Naša stratégia",
+    "pageTitle": "Stratégia | Harwich",
+    "description": "Budovanie udržateľnej budúcnosti prostredníctvom inovácií a excelentnosti",
+    "heroSubtitle": "Budovanie udržateľnej budúcnosti prostredníctvom inovácií a excelentnosti",
+    "pillars": {
+      "globalExpansion": {
+        "title": "Globálna expanzia",
+        "desc": "Rozširujeme našu prítomnosť na rozvíjajúcich sa trhoch a zároveň posilňujeme našu pozíciu na etablovaných trhoch"
+      },
+      "productInnovation": {
+        "title": "Inovácia produktov",
+        "desc": "Investovanie do výskumu a vývoja s cieľom vyvíjať nové produkty, ktoré spĺňajú meniace sa preferencie spotrebiteľov"
+      },
+      "sustainability": {
+        "title": "Udržateľnosť",
+        "desc": "Zaviazali sme sa k udržateľným postupom v celom našom dodávateľskom reťazci a prevádzke"
+      },
+      "digitalTransformation": {
+        "title": "Digitálna transformácia",
+        "desc": "Využívanie technológií na zlepšenie zákazníckej skúsenosti a prevádzkovej efektívnosti"
+      }
+    },
+    "vision": {
+      "title": "Naša vízia",
+      "desc": "Byť poprednou svetovou spoločnosťou v oblasti prémiového spotrebného tovaru, uznávanou pre kvalitu, inovácie a udržateľnosť."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Harvics Global Ventures | Prémiové globálne obchodovanie",
+      "description": "Popredná svetová obchodná spoločnosť dodávajúca prémiové produkty do viac ako 10 odvetví. Pôsobí vo viac ako 50 krajinách od roku 2019."
+    },
+    "about": {
+      "title": "O nás | Harvics Global Ventures",
+      "description": "Zistite, ako sa spoločnosť Harvics Global Ventures stala vedúcou silou v globálnom obchode vo viac ako 40 krajinách a 10 odvetviach."
+    },
+    "contact": {
+      "title": "Kontaktujte nás | Harvics Global Ventures",
+      "description": "Spojte sa s pobočkami spoločnosti Harvics po celom svete na Blízkom východe, v južnej Ázii, Európe, Afrike a Amerike."
+    },
+    "products": {
+      "title": "Produkty | Harvics Global Ventures",
+      "description": "Preskúmajte prémiový sortiment produktov Harvics v oblasti rýchloobrátkového spotrebného tovaru, textilu, komodít a priemyselných riešení."
+    },
+    "careers": {
+      "title": "Kariéra | Harvics Global Ventures",
+      "description": "Pridajte sa k Harvics Global Ventures – preskúmajte príležitosti vo viac ako 40 krajinách v oblasti rýchloobrátkového spotrebného tovaru, textilu, logistiky a technológií."
+    },
+    "media": {
+      "title": "Mediálne centrum | Harvics Global Ventures",
+      "description": "Mediálne centrum Harvics – tlačové správy, najnovšie správy, značkové materiály a kontakty na médiá."
+    },
+    "strategy": {
+      "title": "Naša stratégia | Harvics Global Ventures",
+      "description": "Strategická vízia spoločnosti Harvics pre globálnu expanziu, inovácie, udržateľnosť a digitálnu transformáciu."
+    },
+    "csr": {
+      "title": "Spoločenská zodpovednosť firiem | Harvics",
+      "description": "Iniciatívy spoločnosti Harvics v oblasti spoločenskej zodpovednosti podnikov – environmentálna starostlivosť, komunitné programy a etické obchodné praktiky."
+    },
+    "faq": {
+      "title": "Často kladené otázky | Harvics Global Ventures",
+      "description": "Často kladené otázky o produktoch, službách, objednávaní a globálnych operáciách spoločnosti Harvics."
+    },
+    "locations": {
+      "title": "Globálne lokality | Harvics",
+      "description": "Kancelárie a prevádzky spoločnosti Harvics na Blízkom východe, v južnej Ázii, Európe, Afrike a Amerike."
+    },
+    "leadership": {
+      "title": "Vedenie | Harvics",
+      "description": "Zoznámte sa s vedúcim tímom, ktorý riadi spoločnosť Harvics Global Ventures na viac ako 40 trhoch a v 10 vertikálach odvetví."
+    },
+    "help": {
+      "title": "Centrum pomoci | Harvics",
+      "description": "Získajte pomoc s objednávkami, účtami, dopravou a službami Harvics."
+    },
+    "compliance": {
+      "title": "Dodržiavanie predpisov a etika | Harvics",
+      "description": "Záväzok spoločnosti Harvics k dodržiavaniu predpisov, etickým obchodným praktikám a globálnym štandardom."
+    },
+    "history": {
+      "title": "Naša história | Harvics",
+      "description": "Od dubajského startupu v roku 2019 až po globálny podnik s pôsobnosťou vo viac ako 40 krajinách – príbeh Harvics."
+    },
+    "newsletter": {
+      "title": "Spravodaj | Harvics",
+      "description": "Prihláste sa na odber noviniek Harvics a získajte prehľad o odvetví a informácie o uvedení produktov na trh."
+    },
+    "login": {
+      "title": "Prihlásiť sa | Harvics",
+      "description": "Prihláste sa do svojho účtu Harvics a spravujte objednávky a získajte prístup k platforme."
+    },
+    "research": {
+      "title": "Výskum a inovácie | Harvics",
+      "description": "Výskumné iniciatívy a inovačné programy spoločnosti Harvics sú hnacou silou našej globálnej stratégie."
+    },
+    "investorRelations": {
+      "title": "Vzťahy s investormi | Harvics",
+      "description": "Informácie pre investorov, finančné správy a firemné oznámenia od spoločnosti Harvics Global Ventures."
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Stránka sa nenašla",
+      "heading": "404 — Stránka sa nenašla",
+      "description": "Stránka, ktorú hľadáte, neexistuje alebo bola presunutá.",
+      "goHome": "Prejsť na domovskú stránku",
+      "goBack": "Späť"
+    },
+    "serverError": {
+      "title": "Niečo sa pokazilo",
+      "heading": "Niečo sa pokazilo",
+      "description": "Je nám ľúto, ale stalo sa niečo neočakávané. Skúste, prosím, obnoviť stránku.",
+      "tryAgain": "Skúste to znova",
+      "reload": "Znovu načítať stránku",
+      "contactSupport": "Kontaktovať podporu"
+    },
+    "globalError": {
+      "title": "Chyba aplikácie",
+      "heading": "Kritická chyba",
+      "description": "Vyskytla sa kritická chyba. Znova načítajte stránku.",
+      "reload": "Znovu načítať aplikáciu"
+    }
+  },
+  "about": {
+    "title": "O spoločnosti Harvics",
+    "subtitle": "Excelentnosť v prémiovom spotrebnom tovare od roku 2019",
+    "ourStory": "Náš príbeh",
+    "story1": "Spoločnosť Harvics, založená v roku 2019, sa z vizionárskej myšlienky rozrástla na globálneho lídra v oblasti prémiového spotrebného tovaru. Našu cestu definuje neúnavné úsilie o kvalitu a odhodlanie inovovať.",
+    "story2": "Pôsobíme vo viac ako 40 krajinách a dodávame produkty, ktoré obohacujú životy a nastavujú nové štandardy v tomto odvetví. Od našich skromných začiatkov až po našu globálnu prítomnosť zostávajú naše hodnoty nezmenené.",
+    "est2018": "Odhad 2019",
+    "countries40": "Viac ako 40 krajín",
+    "productLines6": "6 produktových radov"
+  },
+  "csr": {
+    "hero": {
+      "title": "Spoločenská zodpovednosť firiem",
+      "description": "V spoločnosti Harvics sa zaväzujeme mať pozitívny vplyv na svet. Naše iniciatívy v oblasti spoločenskej zodpovednosti podnikov sa zameriavajú na udržateľnosť, posilnenie postavenia komunity a etické obchodné praktiky.",
+      "stats": {
+        "years": "Roky vplyvu",
+        "countries": "Dosiahnuté krajiny",
+        "lives": "Dotknuté životy"
+      }
+    },
+    "initiatives": {
+      "title": "Naše kľúčové iniciatívy",
+      "description": "Zameriavame sa na štyri hlavné piliere s cieľom dosiahnuť udržateľnú zmenu a vytvoriť spoločnú hodnotu pre všetky zainteresované strany."
+    },
+    "sustainability": {
+      "title": "Udržateľnosť",
+      "description": "Znižovanie našej environmentálnej stopy prostredníctvom obnoviteľných zdrojov energie a znižovania odpadu.",
+      "stats": {
+        "renewable": "Obnoviteľná energia",
+        "waste": "Odklonený odpad",
+        "carbon": "Redukcia uhlíka"
+      }
+    },
+    "community": {
+      "title": "Podpora komunity",
+      "description": "Posilnenie postavenia miestnych komunít prostredníctvom vzdelávania, zdravotnej starostlivosti a hospodárskeho rozvoja.",
+      "stats": {
+        "families": "Podporované rodiny",
+        "programs": "Aktívne programy",
+        "volunteers": "Dobrovoľníci"
+      }
+    },
+    "education": {
+      "title": "Vzdelávanie",
+      "description": "Poskytovanie prístupu ku kvalitnému vzdelaniu a štipendiám pre študentov zo sociálne znevýhodnených skupín.",
+      "stats": {
+        "scholarships": "Štipendiá",
+        "schools": "Partnerské školy",
+        "students": "Dotknutí študenti"
+      }
+    },
+    "health": {
+      "title": "Zdravie a wellness",
+      "description": "Zlepšenie prístupu k zdravotnej starostlivosti a výžive v nedostatočne obsluhovaných regiónoch.",
+      "stats": {
+        "campaigns": "Zdravotné kampane",
+        "people": "Obslúžení ľudia",
+        "clinics": "Mobilné kliniky"
+      }
+    },
+    "achievements": {
+      "2022": {
+        "title": "Najlepšia iniciatíva v oblasti spoločenskej zodpovednosti (CSR)",
+        "description": "Ocenení za náš inovatívny prístup k spoločenskej zodpovednosti."
+      },
+      "2023": {
+        "title": "Šampión komunity",
+        "description": "Ocenené za naše rozsiahle programy zamerané na komunitu."
+      },
+      "2024": {
+        "title": "Cena za globálnu udržateľnosť",
+        "description": "Uznávaní za náš záväzok k uhlíkovej neutralite."
+      },
+      "title": "Náš vplyv",
+      "description": "Uznávame naše míľniky pri vytváraní lepšieho sveta."
+    },
+    "cta": {
+      "title": "Pridajte sa k nám a zmeňte veci na lepšie",
+      "description": "Staňte sa naším partnerom alebo sa dozviete viac o tom, ako budujeme udržateľnú budúcnosť.",
+      "contact": "Kontaktujte tím CSR",
+      "learnMore": "Zistite viac"
+    }
+  },
+  "harvicsHouse": {
+    "title": "Harvicsov dom",
+    "subtitle": "Dedičstvo excelentnosti a tradície",
+    "aboutTitle": "Vitajte v Harvics House",
+    "description": "Harvics House predstavuje vrchol nášho záväzku ku kvalite a dedičstvu. Tu spájame najlepší výber našich prémiových produktov, prezentovaných v prostredí, ktoré odráža naše hodnoty elegancie, tradície a inovácie.",
+    "description2": "Preskúmajte naše exkluzívne kolekcie a objavte príbeh každého produktu, ktorý nesie meno Harvics."
   }
 }

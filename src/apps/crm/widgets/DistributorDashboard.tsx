@@ -4,9 +4,11 @@ import { useEffect, useState } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
 import { getDistributorDashboardViewModel } from '@/apps/crm/crm.controller'
 import { DashboardCard } from './DashboardCard'
-import TerritoryHierarchyNavigator from '@/components/ui/TerritoryHierarchyNavigator'
+import TerritoryHierarchyNavigator from '@/features/geo/TerritoryHierarchyNavigator'
 import { AutomationLevelDashboard } from '@/components/shared/AutomationLevelDashboard'
 import { Territory, TerritoryPath, TerritoryHierarchy } from '@/services/territoryService'
+import { formatCurrency } from '@/lib/formatting'
+import { getCurrency } from '@/config/localeConfig'
 
 interface DistributorDashboardState {
   ordersToday: number
@@ -144,21 +146,16 @@ export const DistributorDashboard = () => {
   if (loading) {
     return (
       <div className="bg-white text-center py-20 rounded-lg border border-black100">
-        <div className="animate-spin rounded-full h-10 w-10 border-2 border-[#6B1F2B] border-t-transparent mx-auto mb-4"></div>
+        <div className="animate-spin rounded-full h-10 w-10 border-2 border-harvics-maroon border-t-transparent mx-auto mb-4"></div>
         <p className="text-black/60 text-sm">Loading distributor cockpit…</p>
       </div>
     )
   }
 
-  // LOCALIZATION: Format currency based on locale
-  const formatCurrency = (value: number) => {
-    const currencySymbol = data.currency || (locale === 'ar' ? '﷼' : locale === 'en' ? '$' : '€')
-    return new Intl.NumberFormat(locale, {
-      style: 'currency',
-      currency: data.currency || 'USD',
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0
-    }).format(value)
+  // GLOBALIZATION: Format currency based on locale configuration
+  const formatLocaleCurrency = (value: number) => {
+    const currency = data.currency || getCurrency(locale)
+    return formatCurrency(value, locale, currency)
   }
 
   // AI AUTOMATION: Get risk color based on AI analysis
@@ -175,7 +172,7 @@ export const DistributorDashboard = () => {
       {/* Automation Level Dashboard */}
       <div>
         <h2 className="text-xs uppercase tracking-wider text-black/50 mb-4 font-medium">
-          {t('automation.title') || 'Automation Level'}
+          {t('automation.title')}
         </h2>
         <AutomationLevelDashboard />
       </div>
@@ -184,7 +181,7 @@ export const DistributorDashboard = () => {
       <div>
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-xs uppercase tracking-wider text-black/50 font-medium">
-            {t('territory.title') || 'Territory Hierarchy'}
+            {t('territory.title')}
           </h2>
           <button
             onClick={() => setShowTerritoryNavigator(!showTerritoryNavigator)}
@@ -205,11 +202,11 @@ export const DistributorDashboard = () => {
           </div>
         )}
         {territoryHierarchy && territoryHierarchy.fullPath && (
-          <div className="bg-gradient-to-r from-[#6B1F2B]/5 to-[#6B1F2B]/10 rounded-lg p-4 mb-6 border border-[#C3A35E]/30">
+          <div className="bg-gradient-to-r from-harvics-maroon/5 to-harvics-maroon/10 rounded-lg p-4 mb-6 border border-harvics-gold/30">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🌍</span>
               <span className="text-sm font-semibold text-black">
-                {t('territory.currentTerritory') || 'Current Territory'}
+                {t('territory.currentTerritory')}
               </span>
             </div>
             <div className="text-sm text-black/70">
@@ -220,7 +217,7 @@ export const DistributorDashboard = () => {
       </div>
 
       {/* AI Automation Status Banner - Shows Horizontal Integration */}
-      <div className="bg-gradient-to-r from-[#6B1F2B] to-[#6B1F2B] rounded-lg p-4 text-white">
+      <div className="bg-gradient-to-r from-harvics-maroon to-harvics-maroon rounded-lg p-4 text-white">
         <div className="flex items-center justify-between flex-wrap gap-4">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-[#ffffff]/20 rounded-lg flex items-center justify-center">
@@ -230,23 +227,23 @@ export const DistributorDashboard = () => {
             </div>
             <div>
               <h3 className="font-semibold text-sm uppercase tracking-wider">AI Automation Active</h3>
-              <p className="text-xs text-[#C3A35E]/80 mt-1">
-                {t('aiAutomation.status') || 'Auto-approval, stock replenishment, and invoice reminders enabled'}
+              <p className="text-xs text-harvics-gold/80 mt-1">
+                {t('aiAutomation.status')}
               </p>
             </div>
           </div>
           <div className="flex items-center gap-4 text-xs">
             <div className="flex items-center gap-2">
               <div className={`w-2 h-2 rounded-full ${aiAutomation.autoApprovalEnabled ? 'bg-emerald-400' : 'bg-gray-400'}`}></div>
-              <span>{t('aiAutomation.autoApproval') || 'Auto-Approval'}</span>
+              <span>{t('aiAutomation.autoApproval')}</span>
             </div>
             <div className="flex items-center gap-2">
               <div className={`w-2 h-2 rounded-full ${aiAutomation.stockReplenishmentEnabled ? 'bg-emerald-400' : 'bg-gray-400'}`}></div>
-              <span>{t('aiAutomation.stockReplenishment') || 'Stock Replenishment'}</span>
+              <span>{t('aiAutomation.stockReplenishment')}</span>
             </div>
             <div className="flex items-center gap-2">
               <div className={`w-2 h-2 rounded-full ${aiAutomation.invoiceRemindersEnabled ? 'bg-emerald-400' : 'bg-gray-400'}`}></div>
-              <span>{t('aiAutomation.invoiceReminders') || 'Invoice Reminders'}</span>
+              <span>{t('aiAutomation.invoiceReminders')}</span>
             </div>
           </div>
         </div>
@@ -255,28 +252,28 @@ export const DistributorDashboard = () => {
       {/* Primary Metrics - Top Row */}
       <div>
         <h2 className="text-xs uppercase tracking-wider text-black/50 mb-4 font-medium">
-          {t('kpi.title') || 'Key Performance Indicators'}
+          {t('kpi.title')}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <DashboardCard 
-            title={t('kpi.ordersToday') || 'Orders today'} 
+            title={t('kpi.ordersToday')} 
             value={data.ordersToday} 
-            subtitle={t('kpi.ordersTodaySubtitle') || 'Submitted via Harvics CRM'} 
+            subtitle={t('kpi.ordersTodaySubtitle')} 
           />
           <DashboardCard 
-            title={t('kpi.pendingDeliveries') || 'Pending deliveries'} 
+            title={t('kpi.pendingDeliveries')} 
             value={data.pendingDeliveries} 
-            subtitle={t('kpi.pendingDeliveriesSubtitle') || 'Across assigned routes'} 
+            subtitle={t('kpi.pendingDeliveriesSubtitle')} 
           />
           <DashboardCard 
-            title={t('kpi.retailers') || 'Retailers'} 
+            title={t('kpi.retailers')} 
             value={data.retailers} 
-            subtitle={t('kpi.retailersSubtitle') || 'Active outlets in scope'} 
+            subtitle={t('kpi.retailersSubtitle')} 
           />
           <DashboardCard 
-            title={t('kpi.attendance') || 'T & A Score'} 
+            title={t('kpi.attendance')} 
             value={`${data.attendance}%`} 
-            subtitle={t('kpi.attendanceSubtitle') || 'Territory coverage'} 
+            subtitle={t('kpi.attendanceSubtitle')} 
             accent="green" 
           />
         </div>
@@ -285,25 +282,25 @@ export const DistributorDashboard = () => {
       {/* Financial & Inventory Metrics */}
       <div>
         <h2 className="text-xs uppercase tracking-wider text-black/50 mb-4 font-medium">
-          {t('financial.title') || 'Financial & Inventory'}
+          {t('financial.title')}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <DashboardCard
-            title={t('financial.lowStock') || 'Low stock SKUs'}
+            title={t('financial.lowStock')}
             value={data.lowStockSkus}
-            subtitle={t('financial.lowStockSubtitle') || 'Trigger replenishment'}
+            subtitle={t('financial.lowStockSubtitle')}
             accent="red"
           />
           <DashboardCard
-            title={t('financial.outstandingInvoices') || 'Outstanding invoices'}
-            value={formatCurrency(data.outstandingInvoices)}
-            subtitle={t('financial.outstandingInvoicesSubtitle') || 'Due for collection'}
+            title={t('financial.outstandingInvoices')}
+            value={formatLocaleCurrency(data.outstandingInvoices)}
+            subtitle={t('financial.outstandingInvoicesSubtitle')}
             accent="red"
           />
           <DashboardCard
-            title={t('financial.creditLimit') || 'Credit limit'}
-            value={formatCurrency(data.creditLimit)}
-            subtitle={t('financial.creditLimitSubtitle') || 'Assigned by finance'}
+            title={t('financial.creditLimit')}
+            value={formatLocaleCurrency(data.creditLimit)}
+            subtitle={t('financial.creditLimitSubtitle')}
             accent="gold"
           />
         </div>
@@ -312,38 +309,38 @@ export const DistributorDashboard = () => {
       {/* AI Recommendations Section - Shows Vertical Integration */}
       <div>
         <h2 className="text-xs uppercase tracking-wider text-black/50 mb-4 font-medium">
-          {t('aiRecommendations.title') || 'AI Recommendations'}
+          {t('aiRecommendations.title')}
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div className={`bg-white rounded-lg border-2 p-5 ${getRiskColor(aiAutomation.aiRecommendations.riskLevel)}`}>
             <div className="flex items-center justify-between mb-2">
               <span className="text-xs uppercase tracking-wider font-medium">
-                {t('aiRecommendations.riskLevel') || 'Risk Level'}
+                {t('aiRecommendations.riskLevel')}
               </span>
               <span className="text-lg font-bold capitalize">{aiAutomation.aiRecommendations.riskLevel}</span>
             </div>
             <p className="text-xs opacity-70">
-              {t('aiRecommendations.riskDescription') || 'Based on credit utilization and payment history'}
+              {t('aiRecommendations.riskDescription')}
             </p>
           </div>
           <div className="bg-white rounded-lg border border-[#C3A35E]/30 p-5">
             <div className="flex items-center justify-between mb-2">
               <span className="text-xs uppercase tracking-wider text-black/60 font-medium">
-                {t('aiRecommendations.suggestedOrder') || 'Suggested Order'}
+                {t('aiRecommendations.suggestedOrder')}
               </span>
               <span className="text-2xl font-bold text-[#6B1F2B]">{aiAutomation.aiRecommendations.suggestedOrder}</span>
             </div>
             <p className="text-xs text-black/60">
-              {t('aiRecommendations.suggestedOrderSubtitle') || 'AI-recommended SKUs to order'}
+              {t('aiRecommendations.suggestedOrderSubtitle')}
             </p>
           </div>
           <div className="bg-white rounded-lg border border-black200 p-5">
             <div className="flex items-center gap-2 mb-2">
-              <svg className="w-5 h-5 text-[#C3A35E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-harvics-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
               <span className="text-xs uppercase tracking-wider text-black/60 font-medium">
-                {t('aiRecommendations.nextAction') || 'Next Action'}
+                {t('aiRecommendations.nextAction')}
               </span>
             </div>
             <p className="text-sm text-black/80 mt-2 leading-relaxed">
@@ -356,34 +353,34 @@ export const DistributorDashboard = () => {
       {/* Actions & Playbook */}
       <div>
         <h2 className="text-xs uppercase tracking-wider text-black/50 mb-4 font-medium">
-          {t('actions.title') || 'Actions & Guidance'}
+          {t('actions.title')}
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <DashboardCard
-            title={t('actions.complaints') || 'Complaints'}
+            title={t('actions.complaints')}
             value={data.complaints}
-            subtitle={t('actions.complaintsSubtitle') || 'Retailer issues awaiting action'}
+            subtitle={t('actions.complaintsSubtitle')}
             accent="red"
           />
           <div className="bg-white rounded-lg border border-[#C3A35E]/30 shadow-sm hover:shadow-md transition-all duration-300 p-6">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-1 h-6 bg-[#C3A35E] rounded-full"></div>
               <h3 className="text-sm font-semibold text-black uppercase tracking-wider">
-                {t('actions.playbook') || 'Playbook'}
+                {t('actions.playbook')}
               </h3>
             </div>
             <ul className="space-y-3 text-sm text-black/70 leading-relaxed">
               <li className="flex items-start gap-2">
                 <span className="text-[#C3A35E] mt-1">•</span>
-                <span>{t('actions.playbookItem1') || 'Prioritise pending deliveries before noon.'}</span>
+                <span>{t('actions.playbookItem1')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#C3A35E] mt-1">•</span>
-                <span>{t('actions.playbookItem2') || 'Close all outstanding complaints within 48h.'}</span>
+                <span>{t('actions.playbookItem2')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#C3A35E] mt-1">•</span>
-                <span>{t('actions.playbookItem3') || 'Trigger replenishment for low-stock SKUs (auto-create PO).'}</span>
+                <span>{t('actions.playbookItem3')}</span>
               </li>
             </ul>
           </div>

@@ -48,7 +48,7 @@ export default function DistributorOrderDetail() {
   const tOrders = useTranslations('distributorPortal.orders')
   const tCommon = useTranslations('distributorPortal.common')
   const { countryData, selectedCountry } = useCountry()
-  const orderId = params.id as string
+  const orderId = params?.id as string
   const [loading, setLoading] = useState(true)
   const [orderDetail, setOrderDetail] = useState<OrderDetail | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -64,14 +64,9 @@ export default function DistributorOrderDetail() {
           return
         }
 
-        interface OrderDetailResponse {
-          data?: {
-            data?: unknown
-          }
-        }
-        const responseData = response as OrderDetailResponse
+        const responseData = response as any
         if (responseData.data?.data) {
-          setOrderDetail(responseData.data.data)
+          setOrderDetail(responseData.data.data as OrderDetail)
         }
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to load order details')

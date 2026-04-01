@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Apple-style smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #ffffff;
+  background-color: #ffffff;
+}
+
+/* Premium Liquid Glass & Animation System */
+@import '../styles/premium-animations.css';
+
 /* ===== GLOBAL SCROLL REVEAL ANIMATIONS ===== */
 /* Applied automatically by GlobalScrollReveal component */
 .scroll-reveal {
@@ -33,39 +53,193 @@
 /* ===== SUPREME DESIGN OVERRIDES ===== */
 /* Flat, premium, no-noise aesthetic from Harvics Supreme */
 :root {
-  --burgundy: #6B1F2B;
-  --gold: #C3A35E;
-  --ivory: #F5F1E8;
-  --offwhite: #F5F1E8;
-  --text: #6B1F2B;
-  --divider: #C3A35E;
+  /* ── Core Brand Palette ── */
+  --harvics-maroon: #6B1F2B;
+  --harvics-maroon-dark: #5a1a24;
+  --harvics-maroon-deep: #4a1520;
+  --harvics-gold: #C3A35E;
+  --harvics-gold-light: #d4b46e;
+  --harvics-gold-muted: rgba(195, 163, 94, 0.5);
+  --harvics-cream: #ffffff;
+  --harvics-cream-dark: #ffffff;
+  --harvics-white: #ffffff;
+
+  /* ── Status Colors ── */
+  --status-success: #28A745;
+  --status-warning: #FFC107;
+  --status-error: #DC3545;
+  --status-info: #17A2B8;
+
+  /* ── Dark Mode Ready (future use) ── */
+  --color-bg-primary: var(--harvics-cream);
+  --color-bg-secondary: var(--harvics-white);
+  --color-bg-accent: var(--harvics-maroon);
+  --color-text-primary: var(--harvics-maroon);
+  --color-text-secondary: rgba(107, 31, 43, 0.6);
+  --color-border: rgba(195, 163, 94, 0.2);
+  --color-accent: var(--harvics-gold);
+
+  /* ── Semantic Aliases ── */
+  --burgundy: var(--harvics-maroon);
+  --gold: var(--harvics-gold);
+  --ivory: var(--harvics-cream);
+  --offwhite: var(--harvics-cream);
+  --text: var(--harvics-maroon);
+  --text-muted: rgba(107, 31, 43, 0.5);
+  --divider: var(--harvics-gold);
+  --divider-light: rgba(195, 163, 94, 0.2);
+
+  /* ── Surface & Overlay ── */
+  --surface-primary: var(--harvics-white);
+  --surface-card: var(--harvics-white);
+  --surface-overlay: rgba(255, 255, 255, 0.92);
+  --surface-glass: rgba(255, 255, 255, 0.85);
+
+  /* ── Focus & Accessibility ── */
+  --focus-ring: rgba(195, 163, 94, 0.5);
+  --focus-ring-offset: var(--harvics-white);
+
+  /* ── Spacing Scale ── */
+  --section-gap: 4rem;
+  --container-max: 1200px;
 }
 
-/* Force flat design — no rounded corners, no shadows, no lifts */
+/* Force flat design — no rounded corners, no default shadows */
 *,
 *::before,
 *::after {
   border-radius: 0 !important;
-  box-shadow: none !important;
 }
 
-/* Calm hover — no transform, no scale, just opacity/color changes */
-a, button, [role="button"] {
-  transition: color 0.2s ease, opacity 0.2s ease, background-color 0.2s ease, border-color 0.2s ease !important;
+/* Allow explicit box-shadow via classes, strip only browser defaults */
+*:not([class*="shadow"]):not([class*="hover:shadow"]):not(.page-transition-wrapper):not([style*="box-shadow"]) {
+  box-shadow: none;
 }
-a:hover, button:hover, [role="button"]:hover {
-  transform: none !important;
+
+/* Smooth transitions for interactive elements */
+a, button, [role="button"] {
+  transition: color 0.2s ease, opacity 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.25s ease;
+}
+
+/* ===== ACCESSIBILITY ===== */
+/* Skip to content link */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--harvics-maroon);
+  color: var(--harvics-cream);
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 100;
+  transition: top 0.3s ease;
+}
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* Focus-visible ring (gold accent) */
+*:focus-visible {
+  outline: 2px solid var(--harvics-gold);
+  outline-offset: 2px;
+}
+
+/* Remove focus ring on mouse click, keep for keyboard */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ===== PAGE TRANSITION ===== */
+.page-transition-wrapper {
+  will-change: opacity, transform;
+}
+
+/* ===== SKELETON SHIMMER ===== */
+@keyframes harvics-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ===== ACCESSIBILITY — FOCUS VISIBLE ===== */
+/* Gold focus ring for keyboard navigation */
+*:focus-visible {
+  outline: 2px solid var(--harvics-gold) !important;
+  outline-offset: 2px !important;
+}
+
+/* Subtle focus ring for inputs */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--harvics-gold) !important;
+  outline-offset: 0 !important;
+  box-shadow: 0 0 0 3px var(--focus-ring) !important;
+}
+
+/* Remove outline for mouse clicks */
+*:focus:not(:focus-visible) {
+  outline: none !important;
+}
+
+/* Skip-to-content link (screen reader) */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 99999;
+}
+
+.skip-to-content:focus {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  width: auto;
+  height: auto;
+  padding: 12px 24px;
+  background: var(--harvics-maroon);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 99999;
+  outline: 2px solid var(--harvics-gold);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .page-transition-wrapper {
+    transition: none !important;
+  }
+  .scroll-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
 
 /* Base page background */
-body {
-  background-color: var(--ivory);
-  color: var(--text);
+html, body {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
 }
 
 /* RTL (Right-to-Left) Support */
 [dir="rtl"] {
   direction: rtl;
+  /* Use Noto Sans Arabic for RTL locales for proper glyph rendering */
+  font-family: var(--font-arabic), 'Noto Sans Arabic', 'Arial Unicode MS', system-ui, sans-serif;
 }
 
 [dir="rtl"] * {
@@ -681,10 +855,6 @@ nav a:hover, nav button:hover {
   }
 }
 
-.bg-white {
-  background: linear-gradient(135deg, #ffffff, #ffffff, #ffffff);
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4);
-}
 
 .border-white {
   border-color: #000000;
@@ -692,8 +862,8 @@ nav a:hover, nav button:hover {
 }
 
 .hover-golden:hover {
-  background: linear-gradient(135deg, #ffffff, #ffffff, #ffffff);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(135deg, #C3A35E, #d4b870, #C3A35E);
+  box-shadow: 0 6px 20px rgba(195,163,94,0.5);
   transform: translateY(-2px);
 }
 
@@ -774,9 +944,7 @@ nav a:hover, nav button:hover {
 }
 
 .animate-shimmer {
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-  background-size: 200% 100%;
-  animation: shimmer 2s infinite;
+  /* shimmer removed */
 }
 
 .animate-scroll {
@@ -785,15 +953,17 @@ nav a:hover, nav button:hover {
 
 /* Enhanced Visual Effects */
 .glass-effect {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px) saturate(1.8);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .glass-effect-dark {
   background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px) saturate(1.8);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .gradient-border {

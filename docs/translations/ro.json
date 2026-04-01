@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "ro",
+    "language": "Romanian",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Romanian. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Romanian",
+      "translation": "Bine ați venit la"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Romanian",
+      "translation": "Harwich"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Romanian",
+      "translation": "Excelență în bunuri de larg consum premium din 2019"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Romanian",
+      "translation": "O companie globală de top în domeniul bunurilor de larg consum, care livrează produse alimentare premium din diverse categorii, la standarde internaționale de calitate."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Romanian",
+      "translation": "Explorează produsele"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Romanian",
+      "translation": "Contactaţi-ne"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Romanian",
+      "translation": "Află mai multe"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Romanian",
+      "translation": "Excelență în bunuri de larg consum premium de la"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Romanian",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Romanian",
+      "translation": "Londra • Milano • New York"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Romanian",
+      "translation": "Brutărie"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Romanian",
+      "translation": "Băuturi"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Romanian",
+      "translation": "Cofetărie"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Romanian",
+      "translation": "Culinar"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Romanian",
+      "translation": "Alimente congelate"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Romanian",
+      "translation": "Paste"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Romanian",
+      "translation": "Gustări"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Romanian",
+      "translation": "Raport ESG 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Romanian",
+      "translation": "Londra • Milano • New York"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Romanian",
+      "translation": "Acasă"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Romanian",
+      "translation": "Despre"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Romanian",
+      "translation": "Despre noi"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Romanian",
+      "translation": "Povestea mărcii"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Romanian",
+      "translation": "Produse"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Romanian",
+      "translation": "Produsele noastre"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Romanian",
+      "translation": "Vezi toate produsele"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Romanian",
+      "translation": "Responsabilitate socială corporativă (CSR)"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Romanian",
+      "translation": "Relații cu investitorii"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Romanian",
+      "translation": "Investitori"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Romanian",
+      "translation": "Media"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Romanian",
+      "translation": "Contactaţi-ne"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Romanian",
+      "translation": "Casa Harvics"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Romanian",
+      "translation": "Țări"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Romanian",
+      "translation": "Portaluri"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Romanian",
+      "translation": "Conectare"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Romanian",
+      "translation": "Listă de dorințe"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Romanian",
+      "translation": "Cărucior de cumpărături"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Romanian",
+      "translation": "Ajutor"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Romanian",
+      "translation": "Găsește magazin"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Romanian",
+      "translation": "Bani"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Romanian",
+      "translation": "Vânzări"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Romanian",
+      "translation": "Oferte"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Romanian",
+      "translation": "Mod întunecat"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Romanian",
+      "translation": "Card de credit"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Romanian",
+      "translation": "Card de credit M&S Rewards"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Romanian",
+      "translation": "Club Rewards"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Romanian",
+      "translation": "Cardurile noastre de credit"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Romanian",
+      "translation": "Asigurare"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Romanian",
+      "translation": "Asigurare de locuință"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Romanian",
+      "translation": "Asigurare de călătorie"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Romanian",
+      "translation": "Servicii de călătorie"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Romanian",
+      "translation": "Bani de călătorie"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Romanian",
+      "translation": "Cursuri de schimb valutar"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Romanian",
+      "translation": "Servicii suplimentare"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Romanian",
+      "translation": "Economii și investiții"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Romanian",
+      "translation": "Credite personale"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Romanian",
+      "translation": "Sprijin financiar"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Romanian",
+      "translation": "Vânzări curente"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Romanian",
+      "translation": "Lichidare de stoc"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Romanian",
+      "translation": "Vânzări sezoniere"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Romanian",
+      "translation": "Oferte speciale"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Romanian",
+      "translation": "Promoții"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Romanian",
+      "translation": "Reduceri la comenzi în vrac"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Romanian",
+      "translation": "Produsele noastre"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Romanian",
+      "translation": "Vezi toate produsele"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Romanian",
+      "translation": "Categoriile noastre de produse"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Romanian",
+      "translation": "Descoperiți gama noastră premium de produse create cu grijă și excelență."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Romanian",
+      "translation": "Nivelul 1: Categorii"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Romanian",
+      "translation": "Nivelul 2: Module"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Romanian",
+      "translation": "Nivelul 3: Ecrane KPI"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Romanian",
+      "translation": "Nivelul 4: Acțiuni"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Romanian",
+      "translation": "Resetare navigare"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Romanian",
+      "translation": "Nu există subcategorii disponibile pentru această categorie."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Romanian",
+      "translation": "Produse"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Romanian",
+      "translation": "Subcategorii"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Romanian",
+      "translation": "Brutărie"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Romanian",
+      "translation": "Produse de patiserie și produse de patiserie proaspăt coapte."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Romanian",
+      "translation": "Băuturi"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Romanian",
+      "translation": "Băuturi răcoritoare pentru orice ocazie."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Romanian",
+      "translation": "Cofetărie"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Romanian",
+      "translation": "Dulciuri și delicatese."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Romanian",
+      "translation": "Culinar"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Romanian",
+      "translation": "Ingrediente esențiale pentru bucătăria ta."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Romanian",
+      "translation": "Alimente congelate"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Romanian",
+      "translation": "Mâncăruri congelate convenabile și delicioase."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Romanian",
+      "translation": "Paste"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Romanian",
+      "translation": "Soiuri autentice de paste."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Romanian",
+      "translation": "Gustări"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Romanian",
+      "translation": "Gustări delicioase pentru orice moment al zilei."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Romanian",
+      "translation": "Despre Harvics"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Romanian",
+      "translation": "Excelență în bunuri de larg consum premium din 2019"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Romanian",
+      "translation": "Povestea noastră"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Romanian",
+      "translation": "Fondată în 2019, Harvics a evoluat de la o idee vizionară la un lider global în domeniul bunurilor de larg consum premium. Călătoria noastră este definită de o căutare neobosită a calității și de un angajament față de inovație."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Romanian",
+      "translation": "Operăm în peste 40 de țări, oferind produse care îmbogățesc vieți și stabilesc noi standarde în industrie. De la începuturile noastre umile până la prezența noastră globală, valorile noastre rămân neschimbate."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Romanian",
+      "translation": "Înființat în 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Romanian",
+      "translation": "Peste 40 de țări"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Romanian",
+      "translation": "6 linii de produse"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Romanian",
+      "translation": "Responsabilitate socială corporativă"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Romanian",
+      "translation": "La Harvics, ne angajăm să avem un impact pozitiv asupra lumii. Inițiativele noastre de responsabilitate socială corporativă (CSR) se concentrează pe sustenabilitate, emanciparea comunității și practici comerciale etice."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Romanian",
+      "translation": "Ani de impact"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Romanian",
+      "translation": "Țări atinse"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Romanian",
+      "translation": "Vieți atinse"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Romanian",
+      "translation": "Inițiativele noastre cheie"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Romanian",
+      "translation": "Ne concentrăm pe patru piloni principali pentru a impulsiona o schimbare durabilă și a crea valoare comună pentru toate părțile interesate."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Romanian",
+      "translation": "Sustenabilitate"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Romanian",
+      "translation": "Reducerea amprentei noastre ecologice prin energie regenerabilă și reducerea deșeurilor."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Romanian",
+      "translation": "Energie regenerabilă"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Romanian",
+      "translation": "Deșeuri deviate"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Romanian",
+      "translation": "Reducerea carbonului"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Romanian",
+      "translation": "Sprijin comunitar"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Romanian",
+      "translation": "Împuternicirea comunităților locale prin educație, asistență medicală și dezvoltare economică."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Romanian",
+      "translation": "Familii susținute"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Romanian",
+      "translation": "Programe active"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Romanian",
+      "translation": "Voluntari"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Romanian",
+      "translation": "Educaţie"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Romanian",
+      "translation": "Asigurarea accesului la educație de calitate și burse pentru studenții defavorizați."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Romanian",
+      "translation": "Burse"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Romanian",
+      "translation": "Școli partenere"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Romanian",
+      "translation": "Studenții afectați"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Romanian",
+      "translation": "Sănătate și bunăstare"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Romanian",
+      "translation": "Îmbunătățirea accesului la asistență medicală și nutriție în regiunile subdeservite."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Romanian",
+      "translation": "Campanii de sănătate"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Romanian",
+      "translation": "Persoane deservite"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Romanian",
+      "translation": "Clinici mobile"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Romanian",
+      "translation": "Cea mai bună inițiativă CSR"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Romanian",
+      "translation": "Onorați pentru abordarea noastră inovatoare a responsabilității sociale."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Romanian",
+      "translation": "Campion al comunității"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Romanian",
+      "translation": "Premiat pentru programele noastre extinse de implicare în comunitate."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Romanian",
+      "translation": "Premiul Global pentru Sustenabilitate"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Romanian",
+      "translation": "Recunoscuți pentru angajamentul nostru față de neutralitatea emisiilor de carbon."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Romanian",
+      "translation": "Impactul nostru"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Romanian",
+      "translation": "Recunoașterea etapelor noastre importante în crearea unei lumi mai bune."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Romanian",
+      "translation": "Alătură-te nouă în a face diferența"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Romanian",
+      "translation": "Devino partener cu noi sau află mai multe despre cum construim un viitor sustenabil."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Romanian",
+      "translation": "Contactați echipa CSR"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Romanian",
+      "translation": "Află mai multe"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Romanian",
+      "translation": "Contactați-ne"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Romanian",
+      "translation": "Ne-ar plăcea să auzim părerea ta. Contactează-ne prin oricare dintre aceste canale."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Romanian",
+      "translation": "Telefon"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Romanian",
+      "translation": "E-mail"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Romanian",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Romanian",
+      "translation": "Sunați acum"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Romanian",
+      "translation": "Trimiteți e-mail"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Romanian",
+      "translation": "Trimite-ne un mesaj"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Romanian",
+      "translation": "Centru media"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Romanian",
+      "translation": "Centru Media | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Romanian",
+      "translation": "Resurse de presă, materiale de brand și cele mai recente știri de la Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Romanian",
+      "translation": "Corporativ"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Romanian",
+      "translation": "Știri și comunicate de presă"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Romanian",
+      "translation": "Cele mai recente anunțuri, extinderi de piață, lansări de produse și actualizări corporative de la Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Romanian",
+      "translation": "Citește cele mai recente știri"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Romanian",
+      "translation": "Galerie de imagini"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Romanian",
+      "translation": "Materiale de brand de înaltă rezoluție, fotografii de produs, imagini ale facilităților și acoperire a evenimentelor pentru uz media."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Romanian",
+      "translation": "Răsfoiți galeria"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Romanian",
+      "translation": "Contacte media"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Romanian",
+      "translation": "Contactați echipa noastră de comunicare pentru solicitări de presă, interviuri și anunțuri de parteneriat."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Romanian",
+      "translation": "Contactați echipa de presă"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Romanian",
+      "translation": "Piețe acoperite"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Romanian",
+      "translation": "Verticale industriale"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Romanian",
+      "translation": "Fondată în Dubai"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Romanian",
+      "translation": "Limbi acceptate"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Romanian",
+      "translation": "Titluri recente"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Romanian",
+      "translation": "Harvics își extinde operațiunile de bunuri de larg consum (FMCG) pe 5 noi piețe din Asia de Sud-Est"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Romanian",
+      "translation": "Noua platformă de lanț de aprovizionare bazată pe inteligență artificială a fost lansată pentru distribuția globală"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Romanian",
+      "translation": "Harvics atinge obiectivul de neutralitate a emisiilor de carbon în toate facilitățile"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Romanian",
+      "translation": "Parteneriat strategic cu producători de textile de top din Asia de Sud"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Romanian",
+      "translation": "Casa Harvics"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Romanian",
+      "translation": "O moștenire de excelență și tradiție"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Romanian",
+      "translation": "Bun venit la Casa Harvics"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Romanian",
+      "translation": "Harvics House reprezintă apogeul angajamentului nostru față de calitate și tradiție. Aici, reunim cea mai bună selecție de produse premium, prezentate într-un mediu care reflectă valorile noastre de eleganță, tradiție și inovație."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Romanian",
+      "translation": "Explorează colecțiile noastre exclusive și descoperă povestea din spatele fiecărui produs care poartă numele Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Romanian",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Romanian",
+      "translation": "Excelență în bunuri de larg consum premium din 2019"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Romanian",
+      "translation": "O companie globală de top în domeniul bunurilor de larg consum, care livrează produse alimentare premium din diverse categorii, la standarde internaționale de calitate."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Romanian",
+      "translation": "Londra • Milano • New York"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Romanian",
+      "translation": "Din 2019"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Romanian",
+      "translation": "Știri Harvics"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Romanian",
+      "translation": "Abonează-te pentru a primi alerte și actualizări"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Romanian",
+      "translation": "Înregistrare"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Romanian",
+      "translation": "Probleme de conformitate"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Romanian",
+      "translation": "Spuneți-vă dacă aveți nelămuriri legate de conformitate sau etică"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Romanian",
+      "translation": "Vorbește mai tare"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Romanian",
+      "translation": "Contactaţi-ne"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Romanian",
+      "translation": "Contactați echipa noastră"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Romanian",
+      "translation": "Contactaţi-ne"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Romanian",
+      "translation": "Linkuri utile"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Romanian",
+      "translation": "Întreabă-l pe Harwich"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Romanian",
+      "translation": "Căutare locuri de muncă"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Romanian",
+      "translation": "Înscrie-te pentru știri"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Romanian",
+      "translation": "Companie"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Romanian",
+      "translation": "Adrese globale"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Romanian",
+      "translation": "Strategie"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Romanian",
+      "translation": "Conducerea noastră"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Romanian",
+      "translation": "Mărci de la A la Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Romanian",
+      "translation": "Istoria noastră"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Romanian",
+      "translation": "Sustenabilitate"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Romanian",
+      "translation": "Ştiri"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Romanian",
+      "translation": "Contacte media"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Romanian",
+      "translation": "Imagini"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Romanian",
+      "translation": "Investitori"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Romanian",
+      "translation": "Guvernanță corporativă"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Romanian",
+      "translation": "Acțiuni, ADR-uri și Obligațiuni"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Romanian",
+      "translation": "Publicații"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Romanian",
+      "translation": "Urmăriți-ne pe"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Romanian",
+      "translation": "0 Probleme"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Romanian",
+      "translation": "Harta site-ului"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Romanian",
+      "translation": "Dezabonare"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Romanian",
+      "translation": "Ajutor"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Romanian",
+      "translation": "Confidențialitate"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Romanian",
+      "translation": "Cookie-uri"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Romanian",
+      "translation": "Termeni de utilizare"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Romanian",
+      "translation": "Accesibilitate"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Romanian",
+      "translation": "Eficiența carbonului"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Romanian",
+      "translation": "Furnizori"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Romanian",
+      "translation": "Rețele sociale"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Romanian",
+      "translation": "Setări cookie"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Romanian",
+      "translation": "Calitate premium"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Romanian",
+      "translation": "Adresa de e-mail"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Romanian",
+      "translation": "Introdu adresa ta de e-mail"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Romanian",
+      "translation": "Abonează-te"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Romanian",
+      "translation": "Se abonează..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Romanian",
+      "translation": "Despre noi"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Romanian",
+      "translation": "Media"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Romanian",
+      "translation": "Căutați produse, mărci sau categorii"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Romanian",
+      "translation": "Nu s-au găsit rezultate"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Romanian",
+      "translation": "Se caută..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Romanian",
+      "translation": "Rezultate"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Romanian",
+      "translation": "Discută cu noi"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Romanian",
+      "translation": "Scrie mesajul tău..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Romanian",
+      "translation": "Trimite"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Romanian",
+      "translation": "Aproape"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Romanian",
+      "translation": "Bună! Cum te pot ajuta astăzi?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Romanian",
+      "translation": "Îmi pare rău, nu am înțeles. Ai putea, te rog, să reformulezi?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Romanian",
+      "translation": "Vă pot ajuta cu informații despre produse, comenzi sau întrebări generale. Ce doriți să știți?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Romanian",
+      "translation": "Pentru asistență suplimentară, vă rugăm să ne contactați la adresa support@harvics.com sau să sunați la +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Romanian",
+      "translation": "Discută cu noi"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Romanian",
+      "translation": "Încărcare..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Romanian",
+      "translation": "Eroare"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Romanian",
+      "translation": "Succes"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Romanian",
+      "translation": "Salva"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Romanian",
+      "translation": "Anula"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Romanian",
+      "translation": "Şterge"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Romanian",
+      "translation": "Edita"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Romanian",
+      "translation": "Vedere"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Romanian",
+      "translation": "Trimite"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Romanian",
+      "translation": "Căutare"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Romanian",
+      "translation": "Filtra"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Romanian",
+      "translation": "Clar"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Romanian",
+      "translation": "Descărcare"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Romanian",
+      "translation": "Încărcare"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Romanian",
+      "translation": "Da"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Romanian",
+      "translation": "Nu"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Romanian",
+      "translation": "Aproape"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Romanian",
+      "translation": "Spate"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Romanian",
+      "translation": "Următorul"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Romanian",
+      "translation": "Anterior"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Romanian",
+      "translation": "Acțiuni"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Romanian",
+      "translation": "Stare"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Romanian",
+      "translation": "Data"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Romanian",
+      "translation": "Nume"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Romanian",
+      "translation": "E-mail"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Romanian",
+      "translation": "Telefon"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Romanian",
+      "translation": "Adresa"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Romanian",
+      "translation": "Ţară"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Romanian",
+      "translation": "Oraş"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Romanian",
+      "translation": "Toate"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Romanian",
+      "translation": "Nici unul"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Romanian",
+      "translation": "Selecta"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Romanian",
+      "translation": "Selectați limba"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Romanian",
+      "translation": "Selectați țara"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Romanian",
+      "translation": "Afișează mai multe"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Romanian",
+      "translation": "Afișează mai puțin"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Romanian",
+      "translation": "Necesar"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Romanian",
+      "translation": "Meniu"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Romanian",
+      "translation": "Vizualizați produsele"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Romanian",
+      "translation": "Redă muzică"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Romanian",
+      "translation": "Pauză muzică"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Romanian",
+      "translation": "Muzică mută"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Romanian",
+      "translation": "Activează sunetul muzicii"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Romanian",
+      "translation": "Acoperirea noastră globală"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Romanian",
+      "translation": "De când"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Romanian",
+      "translation": "Piața majoră"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Romanian",
+      "translation": "Piețe majore"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Romanian",
+      "translation": "Prezenţă"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Romanian",
+      "translation": "Țări deservite"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Romanian",
+      "translation": "Piețe majore"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Romanian",
+      "translation": "Categorii de produse"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Romanian",
+      "translation": "Stabilit"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Romanian",
+      "translation": "Ierarhia teritorială"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Romanian",
+      "translation": "Cale completă"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Romanian",
+      "translation": "Teritoriul actual"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Romanian",
+      "translation": "Niciun articol"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Romanian",
+      "translation": "Glob"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Romanian",
+      "translation": "Continent"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Romanian",
+      "translation": "Regiune"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Romanian",
+      "translation": "Ţară"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Romanian",
+      "translation": "Oraş"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Romanian",
+      "translation": "District"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Romanian",
+      "translation": "Locaţie"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Romanian",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Romanian",
+      "translation": "Global"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Romanian",
+      "translation": "Selectați regiunea"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Romanian",
+      "translation": "Detalii client"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Romanian",
+      "translation": "Selectat"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Romanian",
+      "translation": "Numele complet"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Romanian",
+      "translation": "Introduceți numele complet"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Romanian",
+      "translation": "Numele este obligatoriu"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Romanian",
+      "translation": "Adresa de e-mail"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Romanian",
+      "translation": "adresa.dvs.email@exemplu.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Romanian",
+      "translation": "Adresa de e-mail este obligatorie"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Romanian",
+      "translation": "Vă rugăm să introduceți o adresă de email validă"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Romanian",
+      "translation": "Număr de telefon"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Romanian",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Romanian",
+      "translation": "Numărul de telefon este obligatoriu"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Romanian",
+      "translation": "Adresa"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Romanian",
+      "translation": "Adresa dumneavoastră"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Romanian",
+      "translation": "Adresa este obligatorie"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Romanian",
+      "translation": "Sunt de acord să primesc comunicări de marketing și actualizări"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Romanian",
+      "translation": "Trimiteți și continuați"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Romanian",
+      "translation": "Se trimite..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Romanian",
+      "translation": "Sari peste și continuă"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Romanian",
+      "translation": "Indicatori cheie de performanță"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Romanian",
+      "translation": "Comenzi de astăzi"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Romanian",
+      "translation": "Trimis prin intermediul Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Romanian",
+      "translation": "Livrări în așteptare"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Romanian",
+      "translation": "Pe rutele atribuite"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Romanian",
+      "translation": "Comercianți cu amănuntul"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Romanian",
+      "translation": "Puncte de vânzare active incluse în domeniul de aplicare"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Romanian",
+      "translation": "Scor T & A"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Romanian",
+      "translation": "Acoperire teritorială"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Romanian",
+      "translation": "Financiar și Inventar"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Romanian",
+      "translation": "SKU-uri în stoc redus"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Romanian",
+      "translation": "Reaprovizionare declanșatoare"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Romanian",
+      "translation": "Facturi restante"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Romanian",
+      "translation": "Data limită de colectare"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Romanian",
+      "translation": "Limită de credit"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Romanian",
+      "translation": "Atribuit de finanțe"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Romanian",
+      "translation": "Aprobare automată, reaprovizionare stoc și mementouri pentru facturi activate"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Romanian",
+      "translation": "Autoaprobare"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Romanian",
+      "translation": "Reaprovizionare stocuri"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Romanian",
+      "translation": "Mementouri pentru facturi"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Romanian",
+      "translation": "Recomandări AI"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Romanian",
+      "translation": "Nivelul de risc"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Romanian",
+      "translation": "Pe baza utilizării creditului și a istoricului plăților"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Romanian",
+      "translation": "Ordinea sugerată"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Romanian",
+      "translation": "Coduri SKU recomandate de inteligența artificială pentru comandă"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Romanian",
+      "translation": "Acțiunea următoare"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Romanian",
+      "translation": "Acțiuni și îndrumări"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Romanian",
+      "translation": "Reclamații"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Romanian",
+      "translation": "Probleme ale comercianților cu amănuntul care așteaptă acțiuni concrete"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Romanian",
+      "translation": "Ghid de strategie"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Romanian",
+      "translation": "Prioritizați livrările în așteptare înainte de prânz."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Romanian",
+      "translation": "Închideți toate reclamațiile restante în termen de 48 de ore."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Romanian",
+      "translation": "Declanșați reaprovizionarea pentru SKU-urile cu stoc redus (creare automată a comenzii)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Romanian",
+      "translation": "Teritoriu"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Romanian",
+      "translation": "Comenzile din această lună"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Romanian",
+      "translation": "Comenzi în așteptare"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Romanian",
+      "translation": "Comenzi livrate"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Romanian",
+      "translation": "Informații despre teritoriu"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Romanian",
+      "translation": "Ţară"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Romanian",
+      "translation": "Oraş"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Romanian",
+      "translation": "Regiune"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Romanian",
+      "translation": "Acțiuni rapide"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Romanian",
+      "translation": "Noua Ordine"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Romanian",
+      "translation": "Vizualizați comenzile"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Romanian",
+      "translation": "Vizualizați facturile"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Romanian",
+      "translation": "Setări profil"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Romanian",
+      "translation": "Se încarcă tabloul de bord..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Romanian",
+      "translation": "Eroare"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Romanian",
+      "translation": "Comenzile mele"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Romanian",
+      "translation": "ID comandă"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Romanian",
+      "translation": "Data"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Romanian",
+      "translation": "Stare"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Romanian",
+      "translation": "Articole"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Romanian",
+      "translation": "Valoare totală"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Romanian",
+      "translation": "Acțiuni"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Romanian",
+      "translation": "Vedeți detaliile"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Romanian",
+      "translation": "Stare"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Romanian",
+      "translation": "Data de începere"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Romanian",
+      "translation": "Data de încheiere"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Romanian",
+      "translation": "Toate stările"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Romanian",
+      "translation": "Ștergeți filtrele"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Romanian",
+      "translation": "În așteptare"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Romanian",
+      "translation": "Prelucrare"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Romanian",
+      "translation": "Livrat"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Romanian",
+      "translation": "Anulat"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Romanian",
+      "translation": "Nu s-au găsit comenzi"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Romanian",
+      "translation": "Se încarcă comenzile..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Romanian",
+      "translation": "Pagină"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Romanian",
+      "translation": "de"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Romanian",
+      "translation": "Anterior"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Romanian",
+      "translation": "Următorul"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Romanian",
+      "translation": "Detalii comandă"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Romanian",
+      "translation": "Înapoi la Comenzi"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Romanian",
+      "translation": "ID comandă"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Romanian",
+      "translation": "Stare"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Romanian",
+      "translation": "Data comenzii"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Romanian",
+      "translation": "Data de livrare"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Romanian",
+      "translation": "Adresă de livrare"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Romanian",
+      "translation": "Note"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Romanian",
+      "translation": "Articole comandate"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Romanian",
+      "translation": "Produs"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Romanian",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Romanian",
+      "translation": "Cantitate"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Romanian",
+      "translation": "Preț unitar"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Romanian",
+      "translation": "Total"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Romanian",
+      "translation": "Valoare totală"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Romanian",
+      "translation": "Cronologia stării"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Romanian",
+      "translation": "Comanda nu a fost găsită"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Romanian",
+      "translation": "Creați o comandă nouă"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Romanian",
+      "translation": "Articole comandate"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Romanian",
+      "translation": "Adăugați element"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Romanian",
+      "translation": "Încă nu au fost adăugate articole. Faceți clic pe „Adăugați articol” pentru a începe."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Romanian",
+      "translation": "Detalii comandă"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Romanian",
+      "translation": "Data de livrare"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Romanian",
+      "translation": "Adresă de livrare"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Romanian",
+      "translation": "Note"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Romanian",
+      "translation": "Valoare totală"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Romanian",
+      "translation": "Creați o comandă"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Romanian",
+      "translation": "Se creează comanda..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Romanian",
+      "translation": "Anula"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Romanian",
+      "translation": "Selectați produsul"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Romanian",
+      "translation": "Produs"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Romanian",
+      "translation": "Cantitate"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Romanian",
+      "translation": "Preț unitar"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Romanian",
+      "translation": "Elimina"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Romanian",
+      "translation": "Subtotal"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Romanian",
+      "translation": "ID comandă"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Romanian",
+      "translation": "Este necesar cel puțin un articol de comandă"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Romanian",
+      "translation": "Produsul este obligatoriu"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Romanian",
+      "translation": "Cantitatea trebuie să fie mai mare decât 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Romanian",
+      "translation": "Prețul unitar trebuie să fie non-negativ"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Romanian",
+      "translation": "Format nevalid pentru data livrării"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Romanian",
+      "translation": "Data livrării nu poate fi în trecut"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Romanian",
+      "translation": "Facturile mele"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Romanian",
+      "translation": "Număr factură"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Romanian",
+      "translation": "Data facturii"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Romanian",
+      "translation": "Două întâlniri"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Romanian",
+      "translation": "Cantitate"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Romanian",
+      "translation": "Sumă plătită"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Romanian",
+      "translation": "Starea plății"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Romanian",
+      "translation": "Starea plății"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Romanian",
+      "translation": "Toate stările"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Romanian",
+      "translation": "Ștergeți filtrele"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Romanian",
+      "translation": "Plătit"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Romanian",
+      "translation": "Neplătit"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Romanian",
+      "translation": "Parţial"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Romanian",
+      "translation": "Nu s-au găsit facturi"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Romanian",
+      "translation": "Se încarcă facturile..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Romanian",
+      "translation": "Profilul meu"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Romanian",
+      "translation": "Informații despre cont"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Romanian",
+      "translation": "ID-ul distribuitorului"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Romanian",
+      "translation": "Teritoriu"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Romanian",
+      "translation": "Ţară"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Romanian",
+      "translation": "Oraş"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Romanian",
+      "translation": "Cont creat"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Romanian",
+      "translation": "Actualizați profilul"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Romanian",
+      "translation": "Nume"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Romanian",
+      "translation": "E-mail"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Romanian",
+      "translation": "Telefon"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Romanian",
+      "translation": "Adresa"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Romanian",
+      "translation": "Limbă"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Romanian",
+      "translation": "Valută"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Romanian",
+      "translation": "Salvați modificările"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Romanian",
+      "translation": "Economisire..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Romanian",
+      "translation": "Profilul a fost actualizat cu succes"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Romanian",
+      "translation": "Se încarcă profilul..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Romanian",
+      "translation": "Format de e-mail nevalid"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Romanian",
+      "translation": "Format de telefon nevalid"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Romanian",
+      "translation": "Eroare"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Romanian",
+      "translation": "Încărcare..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Romanian",
+      "translation": "Salva"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Romanian",
+      "translation": "Anula"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Romanian",
+      "translation": "Spate"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Romanian",
+      "translation": "Trimite"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Romanian",
+      "translation": "Şterge"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Romanian",
+      "translation": "Edita"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Romanian",
+      "translation": "Vedere"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Romanian",
+      "translation": "Căutare"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Romanian",
+      "translation": "Filtra"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Romanian",
+      "translation": "Clar"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Romanian",
+      "translation": "Aplică"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Romanian",
+      "translation": "Aproape"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Romanian",
+      "translation": "Confirma"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Romanian",
+      "translation": "Da"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Romanian",
+      "translation": "Nu"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Romanian",
+      "translation": "Sistem de operare legal"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Romanian",
+      "translation": "Sistem de operare legal"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Romanian",
+      "translation": "Acces interzis"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Romanian",
+      "translation": "Nu aveți permisiunea de a accesa modulul Legal OS."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Romanian",
+      "translation": "Bord"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Romanian",
+      "translation": "Contracte"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Romanian",
+      "translation": "Certificate"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Romanian",
+      "translation": "Conformitate"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Romanian",
+      "translation": "Tablou de bord juridic"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Romanian",
+      "translation": "Prezentare generală a operațiunilor juridice și a stării de conformitate"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Romanian",
+      "translation": "Mărci comerciale active"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Romanian",
+      "translation": "Contracte active"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Romanian",
+      "translation": "Stare de conformitate"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Romanian",
+      "translation": "Mărci comerciale"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Romanian",
+      "translation": "Gestionarea înregistrărilor și cererilor de mărci comerciale"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Romanian",
+      "translation": "Adăugați o nouă marcă comercială"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Romanian",
+      "translation": "Ţară"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Romanian",
+      "translation": "Stare"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Romanian",
+      "translation": "Toate țările"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Romanian",
+      "translation": "Toate stările"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Romanian",
+      "translation": "Ștergeți filtrele"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Romanian",
+      "translation": "Nume de marcă"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Romanian",
+      "translation": "Clasă"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Romanian",
+      "translation": "Ţară"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Romanian",
+      "translation": "Numărul cererii"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Romanian",
+      "translation": "Stare"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Romanian",
+      "translation": "Data de expirare"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Romanian",
+      "translation": "Acțiuni"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Romanian",
+      "translation": "Editați marca comercială"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Romanian",
+      "translation": "Adăugați o nouă marcă comercială"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Romanian",
+      "translation": "Vizualizare marcă comercială"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Romanian",
+      "translation": "Nume de marcă"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Romanian",
+      "translation": "Numărul clasei"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Romanian",
+      "translation": "Ţară"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Romanian",
+      "translation": "Numărul aplicației"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Romanian",
+      "translation": "Stare"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Romanian",
+      "translation": "Data de expirare"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Romanian",
+      "translation": "Documente"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Romanian",
+      "translation": "Niciun document atașat"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Romanian",
+      "translation": "Adăugați document"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Romanian",
+      "translation": "Elimina"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Romanian",
+      "translation": "Nu s-au putut încărca mărcile comerciale"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Romanian",
+      "translation": "Nu s-a putut salva marca comercială. Vă rugăm să încercați din nou."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Romanian",
+      "translation": "Cazuri juridice"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Romanian",
+      "translation": "Gestionați cazurile juridice și urmăriți stadiul acestora"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Romanian",
+      "translation": "Caz nou"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Romanian",
+      "translation": "Titlul cazului"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Romanian",
+      "translation": "Tipul cazului"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Romanian",
+      "translation": "Ţară"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Romanian",
+      "translation": "Descriere"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Romanian",
+      "translation": "Atribuit către"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Romanian",
+      "translation": "Stare"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Romanian",
+      "translation": "Data audierii"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Romanian",
+      "translation": "Titlul cazului"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Romanian",
+      "translation": "Tip"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Romanian",
+      "translation": "Ţară"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Romanian",
+      "translation": "Atribuit către"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Romanian",
+      "translation": "Stare"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Romanian",
+      "translation": "Data audierii"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Romanian",
+      "translation": "Acțiuni"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Romanian",
+      "translation": "Deschide"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Romanian",
+      "translation": "În curs"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Romanian",
+      "translation": "Închis"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Romanian",
+      "translation": "Anulat"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Romanian",
+      "translation": "Vizualizare hartă flotă"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Romanian",
+      "translation": "Urmărirea în timp real a ofițerilor de vânzări și a vehiculelor de livrare"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Romanian",
+      "translation": "Angajați activi"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Romanian",
+      "translation": "Niciun angajat activ"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Romanian",
+      "translation": "Încărcare..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Romanian",
+      "translation": "Reluare rută"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Romanian",
+      "translation": "Angajat"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Romanian",
+      "translation": "Viteză"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Romanian",
+      "translation": "Resetare"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Romanian",
+      "translation": "Juca"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Romanian",
+      "translation": "Pauză"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Romanian",
+      "translation": "puncte"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Romanian",
+      "translation": "Nu sunt disponibile date despre traseu"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Romanian",
+      "translation": "Se încarcă ruta..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Romanian",
+      "translation": "Produse concurente"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Romanian",
+      "translation": "Urmăriți informațiile despre produsele concurenței"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Romanian",
+      "translation": "Adăugați produs"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Romanian",
+      "translation": "Adăugați produs concurent"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Romanian",
+      "translation": "Marca"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Romanian",
+      "translation": "Nume SKU"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Romanian",
+      "translation": "Categorie"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Romanian",
+      "translation": "Dimensiune"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Romanian",
+      "translation": "Preţ"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Romanian",
+      "translation": "Valută"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Romanian",
+      "translation": "Ţară"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Romanian",
+      "translation": "Marca"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Romanian",
+      "translation": "Nume SKU"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Romanian",
+      "translation": "Categorie"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Romanian",
+      "translation": "Dimensiune"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Romanian",
+      "translation": "Preţ"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Romanian",
+      "translation": "Ţară"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Romanian",
+      "translation": "Data adăugării"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Romanian",
+      "translation": "Nu s-au putut încărca produsele"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Romanian",
+      "translation": "Nu s-a putut crea produsul. Vă rugăm să încercați din nou."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Romanian",
+      "translation": "Nu au fost găsite produse ale concurenței"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Romanian",
+      "translation": "Se încarcă produsele..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Romanian",
+      "translation": "Tablou de bord al concurenților"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Romanian",
+      "translation": "Analize și informații despre produsele concurenței"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Romanian",
+      "translation": "Produse totale"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Romanian",
+      "translation": "Mărci urmărite"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Romanian",
+      "translation": "Țări"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Romanian",
+      "translation": "Categorii"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Romanian",
+      "translation": "Produse după marcă"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Romanian",
+      "translation": "Produse pe țări"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Romanian",
+      "translation": "Produse pe categorii"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Romanian",
+      "translation": "Se încarcă statisticile..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Romanian",
+      "translation": "Nu sunt disponibile statistici"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Romanian",
+      "translation": "Prezentare generală"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Romanian",
+      "translation": "Comenzi"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Romanian",
+      "translation": "Inventar"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Romanian",
+      "translation": "Logistică"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Romanian",
+      "translation": "Finanţa"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Romanian",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Romanian",
+      "translation": "Resurse umane"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Romanian",
+      "translation": "Executiv"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Romanian",
+      "translation": "Investitor"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Romanian",
+      "translation": "Juridic/Drepturi de proprietate intelectuală"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Romanian",
+      "translation": "Concurent"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Romanian",
+      "translation": "Import/Export"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Romanian",
+      "translation": "Urmărire GPS"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Romanian",
+      "translation": "Localizare"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Romanian",
+      "translation": "Fluxuri de lucru"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Romanian",
+      "translation": "Administrator"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Romanian",
+      "translation": "Sistem de operare CRM"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Romanian",
+      "translation": "Client 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Romanian",
+      "translation": "Profiluri complete ale clienților, istoricul interacțiunilor și gestionarea relațiilor"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Romanian",
+      "translation": "Campanii digitale"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Romanian",
+      "translation": "Campanii de marketing multicanal (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Romanian",
+      "translation": "Clienți potențiali și oportunități"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Romanian",
+      "translation": "Gestionarea clienților potențiali, calificarea și fluxul de oportunități"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Romanian",
+      "translation": "Asistență clienți"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Romanian",
+      "translation": "Gestionarea tichetelor, serviciul clienți și rezolvarea problemelor"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Romanian",
+      "translation": "Programe de fidelizare"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Romanian",
+      "translation": "Fidelizarea, gamificarea și gestionarea recompenselor pentru comercianții cu amănuntul"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Romanian",
+      "translation": "Client 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Romanian",
+      "translation": "Client nou"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Romanian",
+      "translation": "Total clienți"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Romanian",
+      "translation": "Activ"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Romanian",
+      "translation": "Nou"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Romanian",
+      "translation": "Satisfacţie"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Romanian",
+      "translation": "Managementul clienților"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Romanian",
+      "translation": "Vizualizați și gestionați relațiile, interacțiunile și campaniile cu clienții."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Romanian",
+      "translation": "Încărcare..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Romanian",
+      "translation": "Eroare la încărcarea datelor CRM"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Romanian",
+      "translation": "Prezentare generală"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Romanian",
+      "translation": "Comenzi"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Romanian",
+      "translation": "Inventar"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Romanian",
+      "translation": "Logistică"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Romanian",
+      "translation": "Finanţa"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Romanian",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Romanian",
+      "translation": "Resurse umane"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Romanian",
+      "translation": "Executiv"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Romanian",
+      "translation": "Investitor"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Romanian",
+      "translation": "Juridic/Drepturi de proprietate intelectuală"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Romanian",
+      "translation": "Concurent"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Romanian",
+      "translation": "Import/Export"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Romanian",
+      "translation": "Urmărire GPS"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Romanian",
+      "translation": "Localizare"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Romanian",
+      "translation": "Fluxuri de lucru"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Romanian",
+      "translation": "Administrator"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Romanian",
+      "translation": "Clienți"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Romanian",
+      "translation": "Angajați"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Romanian",
+      "translation": "Profit"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Romanian",
+      "translation": "Se încarcă cabina de pilotaj a furnizorului…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Romanian",
+      "translation": "Comenzi de achiziție"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Romanian",
+      "translation": "Crescut de Harvics"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Romanian",
+      "translation": "Livrări / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Romanian",
+      "translation": "Acceptat săptămâna aceasta"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Romanian",
+      "translation": "Facturi create"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Romanian",
+      "translation": "În așteptarea plății"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Romanian",
+      "translation": "Plăți în așteptare"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Romanian",
+      "translation": "Programat pentru lansare"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Romanian",
+      "translation": "Calitate / reclamații"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Romanian",
+      "translation": "Bilete deschise"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Romanian",
+      "translation": "Prognoza meteo (următoarele 4 săptămâni)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Romanian",
+      "translation": "Substitut AI"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Romanian",
+      "translation": "Acțiunile furnizorilor"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Romanian",
+      "translation": "Confirmați livrările viitoare și actualizați programul GRN."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Romanian",
+      "translation": "Verifică facturile restante și oferă recomandări de plată."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Romanian",
+      "translation": "Rezolvați reclamațiile deschise privind calitatea cu dovezi de asigurare a calității."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Romanian",
+      "translation": "Nume de utilizator"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Romanian",
+      "translation": "Parolă"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Romanian",
+      "translation": "E-mail"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Romanian",
+      "translation": "Trimite"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Romanian",
+      "translation": "Anula"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Romanian",
+      "translation": "Salva"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Romanian",
+      "translation": "Şterge"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Romanian",
+      "translation": "Căutare"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Romanian",
+      "translation": "Filtra"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Romanian",
+      "translation": "Resetare"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Romanian",
+      "translation": "Aproape"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Romanian",
+      "translation": "Spate"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Romanian",
+      "translation": "Următorul"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Romanian",
+      "translation": "Anterior"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Romanian",
+      "translation": "Confirma"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Romanian",
+      "translation": "Ține-mă minte"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Romanian",
+      "translation": "Aţi uitat parola?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Romanian",
+      "translation": "Adresa de e-mail este obligatorie"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Romanian",
+      "translation": "Vă rugăm să introduceți o adresă de email validă"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Romanian",
+      "translation": "Produse"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Romanian",
+      "translation": "Ce produse oferă Harvics?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Romanian",
+      "translation": "Oferim o gamă largă de produse alimentare premium, inclusiv produse de cofetărie, băuturi, gustări, paste făinoase, produse de panificație și alimente congelate, în mai multe categorii."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Romanian",
+      "translation": "De unde pot cumpăra produse Harvics?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Romanian",
+      "translation": "Produsele noastre sunt disponibile în magazine din peste 40 de țări. Folosește localizatorul nostru de magazine sau pagina de contact pentru a găsi un comerciant în apropierea ta."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Romanian",
+      "translation": "Oferiți comenzi în vrac?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Romanian",
+      "translation": "Da, oferim reduceri pentru comenzi în vrac pentru companii și comercianți cu amănuntul. Vizitați pagina noastră Reduceri pentru comenzi în vrac pentru mai multe informații."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Romanian",
+      "translation": "Comenzi și livrare"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Romanian",
+      "translation": "Care sunt opțiunile dumneavoastră de livrare?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Romanian",
+      "translation": "Oferim diverse opțiuni de livrare, inclusiv livrare standard, expres și internațională. Livrarea gratuită este disponibilă pentru comenzile de peste 50 USD."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Romanian",
+      "translation": "Cât durează livrarea?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Romanian",
+      "translation": "Timpii de livrare variază în funcție de locație. Livrarea standard durează de obicei 5-7 zile lucrătoare, în timp ce livrarea expresă durează 2-3 zile lucrătoare."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Romanian",
+      "translation": "Pot urmări comanda mea?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Romanian",
+      "translation": "Da, puteți urmări comanda folosind numărul de urmărire furnizat în e-mailul de confirmare a comenzii."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Romanian",
+      "translation": "Cont și plăți"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Romanian",
+      "translation": "Cum îmi creez un cont?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Romanian",
+      "translation": "Faceți clic pe „Conectare” în antet și selectați „Creare cont” pentru a vă înregistra un cont nou."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Romanian",
+      "translation": "Ce metode de plată acceptați?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Romanian",
+      "translation": "Acceptăm toate cardurile de credit și de debit importante, PayPal și transferuri bancare pentru comenzi B2B."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Romanian",
+      "translation": "Sunt informațiile mele de plată în siguranță?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Romanian",
+      "translation": "Da, folosim criptare standard în industrie pentru a vă proteja informațiile de plată."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Romanian",
+      "translation": "Returnări și rambursări"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Romanian",
+      "translation": "Care este politica dumneavoastră de returnare?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Romanian",
+      "translation": "Oferim o politică de returnare de 30 de zile pentru produsele nedeschise, în ambalajul original. Vă rugăm să contactați serviciul nostru de relații cu clienții pentru autorizarea returului."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Romanian",
+      "translation": "Cum pot solicita o rambursare?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Romanian",
+      "translation": "Contactați echipa noastră de asistență clienți, comunicând numărul comenzii și motivul returului. Vom procesa rambursarea în termen de 5-7 zile lucrătoare."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Romanian",
+      "translation": "Încă aveți întrebări?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Romanian",
+      "translation": "Echipa noastră de servicii pentru clienți este aici pentru a vă ajuta"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Romanian",
+      "translation": "Contactaţi-ne"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Romanian",
+      "translation": "Cariere"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Romanian",
+      "translation": "Cariere | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Romanian",
+      "translation": "Alătură-te Harvics Global Ventures — explorează oportunități în peste 40 de țări."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Romanian",
+      "translation": "Alăturaţi-ne"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Romanian",
+      "translation": "Construim viitorul comerțului global"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Romanian",
+      "translation": "Ne dezvoltăm în peste 40 de țări. Alătură-te unei echipe care construiește sistemul de operare bazat pe inteligență artificială pentru comerțul global."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Romanian",
+      "translation": "Poziții deschise"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Romanian",
+      "translation": "Țări"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Romanian",
+      "translation": "Verticale industriale"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Romanian",
+      "translation": "Departamente care angajează"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Romanian",
+      "translation": "Posturi vacante pe departamente"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Romanian",
+      "translation": "Vânzări și distribuție"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Romanian",
+      "translation": "Creșterea veniturilor pe peste 40 de piețe. Managementul teritoriului, conturi cheie, relații cu distribuitorii."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Romanian",
+      "translation": "Lanț de aprovizionare și logistică"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Romanian",
+      "translation": "Lanț de aprovizionare complet, de la fabrică la raft. Managementul flotei, depozitare, livrare pe ultimul kilometru."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Romanian",
+      "translation": "Tehnologie și inteligență artificială"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Romanian",
+      "translation": "Construiți Harvics OS — platforma noastră enterprise bazată pe inteligență artificială. Full-stack, inginerie ML, știința datelor."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Romanian",
+      "translation": "Finanțe și Trezorerie"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Romanian",
+      "translation": "Trezorerie multivalută, finanțare comercială, plăți digitale HPay, gestionare FX în diferite regiuni."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Romanian",
+      "translation": "Achiziții și Sourcing"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Romanian",
+      "translation": "Aprovizionare globală din peste 15 țări de origine. Audituri furnizori, control al calității, programe direct din fabrică."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Romanian",
+      "translation": "Resurse umane"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Romanian",
+      "translation": "Achiziție de talente, formare și dezvoltare, managementul performanței în diverse zone geografice și culturi."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Romanian",
+      "translation": "Juridic și Conformitate"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Romanian",
+      "translation": "Conformitate comercială, verificarea sancțiunilor, protecția proprietății intelectuale, gestionarea contractelor în diferite jurisdicții."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Romanian",
+      "translation": "Marketing și brand"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Romanian",
+      "translation": "Campanii multilingve, conținut cu 38 de localizări, marketing digital, strategie de brand pentru 10 verticale."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Romanian",
+      "translation": "roluri"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Romanian",
+      "translation": "De ce Harvics"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Romanian",
+      "translation": "Mobilitate globală"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Romanian",
+      "translation": "Lucrează în Dubai, Londra, Karachi, Lahore și în peste 40 de piețe"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Romanian",
+      "translation": "Traiectoria creșterii"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Romanian",
+      "translation": "Progresie rapidă în carieră într-o întreprindere în creștere"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Romanian",
+      "translation": "Cultura AI-First"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Romanian",
+      "translation": "Lucrați cu sisteme de inteligență artificială și în timp real de ultimă generație"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Romanian",
+      "translation": "Pachet competitiv"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Romanian",
+      "translation": "Compensații, locuințe și beneficii de top pe piață"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Romanian",
+      "translation": "Bugetul de învățare"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Romanian",
+      "translation": "Bugetul anual de dezvoltare pentru cursuri, conferințe și certificări"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Romanian",
+      "translation": "Muncă flexibilă"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Romanian",
+      "translation": "Aranjamente hibride cu birouri regionale centrale din întreaga lume"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Romanian",
+      "translation": "Strategia noastră"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Romanian",
+      "translation": "Strategie | Harwich"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Romanian",
+      "translation": "Construirea unui viitor sustenabil prin inovație și excelență"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Romanian",
+      "translation": "Construirea unui viitor sustenabil prin inovație și excelență"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Romanian",
+      "translation": "Expansiune globală"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Romanian",
+      "translation": "Extinderea prezenței noastre pe piețele emergente, consolidându-ne în același timp poziția pe piețele consacrate"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Romanian",
+      "translation": "Inovație de produs"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Romanian",
+      "translation": "Investiții în cercetare și dezvoltare pentru a dezvolta produse noi care să răspundă preferințelor consumatorilor în continuă schimbare"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Romanian",
+      "translation": "Sustenabilitate"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Romanian",
+      "translation": "Angajat față de practici sustenabile în întregul nostru lanț de aprovizionare și operațiuni"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Romanian",
+      "translation": "Transformare digitală"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Romanian",
+      "translation": "Valorificarea tehnologiei pentru îmbunătățirea experienței clienților și a eficienței operaționale"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Romanian",
+      "translation": "Viziunea noastră"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Romanian",
+      "translation": "Să fim compania lider mondial în domeniul bunurilor de larg consum premium, recunoscută pentru calitate, inovație și sustenabilitate."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Romanian",
+      "translation": "Harvics Global Ventures | Tranzacționare globală premium"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Romanian",
+      "translation": "Companie comercială globală lider, care livrează produse premium în peste 10 industrii. Operează în peste 50 de țări din 2019."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Romanian",
+      "translation": "Despre noi | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Romanian",
+      "translation": "Descoperiți cum a devenit Harvics Global Ventures o forță lider în comerțul global în peste 40 de țări și 10 industrii."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Romanian",
+      "translation": "Contactați-ne | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Romanian",
+      "translation": "Contactați birourile Harvics din întreaga lume, în Orientul Mijlociu, Asia de Sud, Europa, Africa și cele două Americi."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Romanian",
+      "translation": "Produse | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Romanian",
+      "translation": "Explorați gama de produse premium Harvic, inclusiv bunuri de larg consum (FMCG), textile, mărfuri și soluții industriale."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Romanian",
+      "translation": "Cariere | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Romanian",
+      "translation": "Alătură-te Harvics Global Ventures — explorează oportunități în peste 40 de țări în domeniile bunurilor de larg consum (FMCG), textilelor, logisticii și tehnologiei."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Romanian",
+      "translation": "Centru media | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Romanian",
+      "translation": "Centrul media Harvics — comunicate de presă, cele mai recente știri, materiale de brand și contacte media."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Romanian",
+      "translation": "Strategia noastră | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Romanian",
+      "translation": "Viziunea strategică a Harvic pentru expansiune globală, inovație, sustenabilitate și transformare digitală."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Romanian",
+      "translation": "Responsabilitate socială corporativă | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Romanian",
+      "translation": "Inițiativele de responsabilitate socială corporativă ale Harvics — gestionarea mediului, programe comunitare și practici comerciale etice."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Romanian",
+      "translation": "Întrebări frecvente | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Romanian",
+      "translation": "Întrebări frecvente despre produsele, serviciile, comenzile și operațiunile globale Harvics."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Romanian",
+      "translation": "Locații globale | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Romanian",
+      "translation": "Birourile și operațiunile Harvic în Orientul Mijlociu, Asia de Sud, Europa, Africa și cele două Americi."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Romanian",
+      "translation": "Echipa de conducere | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Romanian",
+      "translation": "Faceți cunoștință cu echipa de conducere care conduce Harvics Global Ventures în peste 40 de piețe și 10 verticale industriale."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Romanian",
+      "translation": "Centru de ajutor | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Romanian",
+      "translation": "Obțineți ajutor cu comenzi, conturi, livrare și servicii Harvics."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Romanian",
+      "translation": "Conformitate și Etică | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Romanian",
+      "translation": "Angajamentul Harvic față de conformitatea cu reglementările, practicile comerciale etice și standardele globale."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Romanian",
+      "translation": "Istoria noastră | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Romanian",
+      "translation": "De la un startup din Dubai în 2019 la o întreprindere globală care se întinde pe teritoriul a peste 40 de țări - povestea Harvics."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Romanian",
+      "translation": "Buletin informativ | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Romanian",
+      "translation": "Abonați-vă la newsletter-ul Harvic pentru informații despre industrie și lansări de produse."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Romanian",
+      "translation": "Conectare | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Romanian",
+      "translation": "Conectați-vă la contul dvs. Harvics pentru a gestiona comenzile și a accesa platforma."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Romanian",
+      "translation": "Cercetare și Inovație | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Romanian",
+      "translation": "Inițiativele de cercetare și programele de inovare ale Harvic stau la baza strategiei noastre globale."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Romanian",
+      "translation": "Relații cu investitorii | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Romanian",
+      "translation": "Informații pentru investitori, rapoarte financiare și anunțuri corporative de la Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Romanian",
+      "translation": "Pagina nu a fost găsită"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Romanian",
+      "translation": "404 — Pagină negăsită"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Romanian",
+      "translation": "Pagina pe care o căutați nu există sau a fost mutată."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Romanian",
+      "translation": "Accesați pagina principală"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Romanian",
+      "translation": "Întoarce-te"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Romanian",
+      "translation": "Ceva a mers prost"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Romanian",
+      "translation": "Ceva nu a mers bine"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Romanian",
+      "translation": "Ne pare rău, dar s-a întâmplat ceva neașteptat. Vă rugăm să încercați să actualizați pagina."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Romanian",
+      "translation": "Încearcă din nou"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Romanian",
+      "translation": "Reîncărcați pagina"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Romanian",
+      "translation": "Contactați asistența"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Romanian",
+      "translation": "Eroare de aplicație"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Romanian",
+      "translation": "Eroare critică"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Romanian",
+      "translation": "A apărut o eroare critică. Vă rugăm să reîncărcați pagina."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Romanian",
+      "translation": "Reîncărcați aplicația"
+    }
+  }
+}

@@ -1,11 +1,12 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
 import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 import { apiClient } from '@/lib/api'
 import { useCountry } from '@/contexts/CountryContext'
+import { formatCompact } from '@/utils/localeFormatting'
 import PortalSwitcher from '@/components/shared/PortalSwitcher'
 import GeoSelector from '@/components/shared/GeoSelector'
 import PortalOSNavigation from '@/components/shared/PortalOSNavigation'
@@ -132,19 +133,22 @@ export default function V16DistributorDashboard() {
   ]
 
   const formatCurrency = (amount: number) => {
-    // Use currency symbol from countryData if available, otherwise default to USD
-    const currencySymbol = countryData?.currency?.symbol || '$'
     const currencyCode = countryData?.currency?.code || 'USD'
-    
-    // Apply currency conversion if fxRate is available
     let convertedAmount = amount
     if (countryData?.currency?.fxRateUSD && currencyCode !== 'USD') {
       convertedAmount = amount * (countryData.currency.fxRateUSD || 1)
     }
-    
-    if (convertedAmount >= 1000000) return `${currencySymbol}${(convertedAmount / 1000000).toFixed(1)}M`
-    if (convertedAmount >= 1000) return `${currencySymbol}${(convertedAmount / 1000).toFixed(1)}K`
-    return `${currencySymbol}${convertedAmount.toFixed(0)}`
+    return new Intl.NumberFormat(locale, {
+      style: 'currency',
+      currency: currencyCode,
+      notation: 'compact',
+      maximumFractionDigits: 1,
+    }).format(convertedAmount)
+  }
+
+  const handleLogout = () => {
+    apiClient.clearToken()
+    router.push(`/${locale}/portals/`)
   }
 
   if (loading) {
@@ -189,7 +193,7 @@ export default function V16DistributorDashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F8F9FA] flex flex-col">
+    <div className="portal-page min-h-screen bg-[#F8F9FA] flex flex-col">
       {/* Header */}
       <header className="bg-white border-b border-[#C3A35E]/30 sticky top-0 z-50 shadow-sm">
         <div className="max-w-[1920px] mx-auto px-4 sm:px-6">
@@ -217,6 +221,15 @@ export default function V16DistributorDashboard() {
               )}
               <GeoSelector />
               <PortalSwitcher currentPortal="distributor" />
+              {/* Logout */}
+              <button
+                onClick={handleLogout}
+                className="flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-[#6B1F2B] border border-[#6B1F2B]/30 rounded-md hover:bg-[#6B1F2B] hover:text-white transition-colors"
+                aria-label="Logout"
+              >
+                <span className="hidden sm:inline">Logout</span>
+                <span aria-hidden>→</span>
+              </button>
             </div>
           </div>
           

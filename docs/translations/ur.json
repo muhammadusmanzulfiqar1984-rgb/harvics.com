@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "ur",
+    "language": "Urdu",
+    "direction": "rtl",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Urdu. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Urdu",
+      "translation": "میں خوش آمدید"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Urdu",
+      "translation": "ہارویچ"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Urdu",
+      "translation": "2019 سے پریمیم کنزیومر گڈز میں بہترین"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Urdu",
+      "translation": "بین الاقوامی معیار کے معیار کے ساتھ متنوع زمروں میں پریمیم فوڈ پراڈکٹس فراہم کرنے والی ایک معروف عالمی صارفی اشیا کی کمپنی۔"
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Urdu",
+      "translation": "مصنوعات دریافت کریں۔"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Urdu",
+      "translation": "ہم سے رابطہ کریں۔"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Urdu",
+      "translation": "مزید جانیں"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Urdu",
+      "translation": "چونکہ پریمیم کنزیومر گڈز میں ایکسیلنس"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Urdu",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Urdu",
+      "translation": "لندن • میلان • نیویارک"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Urdu",
+      "translation": "بیکری"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Urdu",
+      "translation": "مشروبات"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Urdu",
+      "translation": "کنفیکشنری"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Urdu",
+      "translation": "پاک"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Urdu",
+      "translation": "منجمد فوڈز"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Urdu",
+      "translation": "پاستا"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Urdu",
+      "translation": "نمکین"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Urdu",
+      "translation": "ESG رپورٹ 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Urdu",
+      "translation": "لندن • میلان • نیویارک"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Urdu",
+      "translation": "گھر"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Urdu",
+      "translation": "کے بارے میں"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Urdu",
+      "translation": "ہمارے بارے میں"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Urdu",
+      "translation": "برانڈ کی کہانی"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Urdu",
+      "translation": "مصنوعات"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Urdu",
+      "translation": "ہماری مصنوعات"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Urdu",
+      "translation": "تمام مصنوعات دیکھیں"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Urdu",
+      "translation": "سی ایس آر"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Urdu",
+      "translation": "سرمایہ کار تعلقات"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Urdu",
+      "translation": "سرمایہ کار"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Urdu",
+      "translation": "میڈیا"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Urdu",
+      "translation": "ہم سے رابطہ کریں۔"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس ہاؤس"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Urdu",
+      "translation": "ممالک"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Urdu",
+      "translation": "پورٹلز"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Urdu",
+      "translation": "سائن ان کریں۔"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Urdu",
+      "translation": "خواہش کی فہرست"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Urdu",
+      "translation": "خریداری کی ٹوکری"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Urdu",
+      "translation": "مدد"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Urdu",
+      "translation": "اسٹور تلاش کریں۔"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Urdu",
+      "translation": "پیسہ"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Urdu",
+      "translation": "سیلز"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Urdu",
+      "translation": "پیشکش کرتا ہے۔"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Urdu",
+      "translation": "ڈارک موڈ"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Urdu",
+      "translation": "کریڈٹ کارڈ"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Urdu",
+      "translation": "M&S انعامات کریڈٹ کارڈ"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Urdu",
+      "translation": "کلب انعامات"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Urdu",
+      "translation": "ہمارے کریڈٹ کارڈز"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Urdu",
+      "translation": "انشورنس"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Urdu",
+      "translation": "ہوم انشورنس"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Urdu",
+      "translation": "سفری انشورنس"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Urdu",
+      "translation": "سفری خدمات"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Urdu",
+      "translation": "سفری رقم"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Urdu",
+      "translation": "شرح تبادلہ"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Urdu",
+      "translation": "اضافی خدمات"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Urdu",
+      "translation": "بچت اور سرمایہ کاری"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Urdu",
+      "translation": "ذاتی قرضے"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Urdu",
+      "translation": "مالی معاونت"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Urdu",
+      "translation": "موجودہ فروخت"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Urdu",
+      "translation": "کلیئرنس"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Urdu",
+      "translation": "موسمی فروخت"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Urdu",
+      "translation": "خصوصی پیشکش"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Urdu",
+      "translation": "پروموشنز"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Urdu",
+      "translation": "بلک آرڈر کی چھوٹ"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Urdu",
+      "translation": "ہماری مصنوعات"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Urdu",
+      "translation": "تمام مصنوعات دیکھیں"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Urdu",
+      "translation": "ہماری پروڈکٹ کیٹیگریز"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Urdu",
+      "translation": "دیکھ بھال اور عمدگی کے ساتھ تیار کردہ مصنوعات کی ہماری پریمیم رینج دریافت کریں۔"
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Urdu",
+      "translation": "ٹائر 1: زمرہ جات"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Urdu",
+      "translation": "ٹائر 2: ماڈیولز"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Urdu",
+      "translation": "ٹائر 3: KPI اسکرینز"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Urdu",
+      "translation": "درجہ 4: اعمال"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Urdu",
+      "translation": "نیویگیشن ری سیٹ کریں۔"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Urdu",
+      "translation": "اس زمرے کے لیے کوئی ذیلی زمرہ جات دستیاب نہیں ہیں۔"
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Urdu",
+      "translation": "مصنوعات"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Urdu",
+      "translation": "ذیلی زمرہ جات"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Urdu",
+      "translation": "بیکری"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Urdu",
+      "translation": "تازہ سینکا ہوا سامان اور پیسٹری۔"
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Urdu",
+      "translation": "مشروبات"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Urdu",
+      "translation": "ہر موقع کے لیے تروتازہ مشروبات۔"
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Urdu",
+      "translation": "کنفیکشنری"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Urdu",
+      "translation": "میٹھا سلوک اور لذت۔"
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Urdu",
+      "translation": "پاک"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Urdu",
+      "translation": "آپ کے باورچی خانے کے لیے ضروری اجزاء۔"
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Urdu",
+      "translation": "منجمد فوڈز"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Urdu",
+      "translation": "آسان اور مزیدار منجمد کھانا۔"
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Urdu",
+      "translation": "پاستا"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Urdu",
+      "translation": "پاستا کی مستند اقسام۔"
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Urdu",
+      "translation": "نمکین"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Urdu",
+      "translation": "دن کے کسی بھی وقت کے لیے مزیدار نمکین۔"
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس کے بارے میں"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Urdu",
+      "translation": "2019 سے پریمیم کنزیومر گڈز میں بہترین"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Urdu",
+      "translation": "ہماری کہانی"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Urdu",
+      "translation": "2019 میں قائم کیا گیا، Harvics ایک وژنری آئیڈیا سے پریمئم کنزیومر گڈز میں عالمی رہنما بن گیا ہے۔ ہمارے سفر کی تعریف معیار کی مسلسل جستجو اور جدت طرازی کے عزم سے ہوتی ہے۔"
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Urdu",
+      "translation": "ہم 40+ ممالک میں کام کرتے ہیں، ایسی مصنوعات فراہم کرتے ہیں جو زندگیوں کو تقویت بخشتی ہیں اور صنعت میں نئے معیارات قائم کرتی ہیں۔ ہماری عاجزانہ شروعات سے لے کر ہماری عالمی موجودگی تک، ہماری اقدار میں کوئی تبدیلی نہیں آئی۔"
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Urdu",
+      "translation": "تخمینہ 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Urdu",
+      "translation": "40+ ممالک"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Urdu",
+      "translation": "6 پروڈکٹ لائنز"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Urdu",
+      "translation": "کارپوریٹ سماجی ذمہ داری"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس میں، ہم دنیا پر مثبت اثر ڈالنے کے لیے پرعزم ہیں۔ ہمارے CSR اقدامات پائیداری، کمیونٹی کو بااختیار بنانے، اور اخلاقی کاروباری طریقوں پر توجہ مرکوز کرتے ہیں۔"
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Urdu",
+      "translation": "اثر کے سال"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Urdu",
+      "translation": "ممالک پہنچ گئے۔"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Urdu",
+      "translation": "زندگی چھو گئی۔"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Urdu",
+      "translation": "ہمارے کلیدی اقدامات"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Urdu",
+      "translation": "ہم پائیدار تبدیلی کو آگے بڑھانے اور تمام اسٹیک ہولڈرز کے لیے مشترکہ قدر پیدا کرنے کے لیے چار اہم ستونوں پر توجہ مرکوز کرتے ہیں۔"
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Urdu",
+      "translation": "پائیداری"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Urdu",
+      "translation": "قابل تجدید توانائی اور فضلہ میں کمی کے ذریعے ہمارے ماحولیاتی اثرات کو کم کرنا۔"
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Urdu",
+      "translation": "قابل تجدید توانائی"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Urdu",
+      "translation": "فضلہ موڑ دیا گیا۔"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Urdu",
+      "translation": "کاربن کی کمی"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Urdu",
+      "translation": "کمیونٹی سپورٹ"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Urdu",
+      "translation": "تعلیم، صحت کی دیکھ بھال، اور اقتصادی ترقی کے ذریعے مقامی کمیونٹیز کو بااختیار بنانا۔"
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Urdu",
+      "translation": "خاندانوں نے تعاون کیا۔"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Urdu",
+      "translation": "فعال پروگرام"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Urdu",
+      "translation": "رضاکاروں"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Urdu",
+      "translation": "تعلیم"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Urdu",
+      "translation": "غریب طلباء کو معیاری تعلیم اور وظائف تک رسائی فراہم کرنا۔"
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Urdu",
+      "translation": "وظائف"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Urdu",
+      "translation": "پارٹنر سکولز"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Urdu",
+      "translation": "طلباء متاثر ہوئے۔"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Urdu",
+      "translation": "صحت اور تندرستی"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Urdu",
+      "translation": "غیر محفوظ علاقوں میں صحت کی دیکھ بھال اور غذائیت تک رسائی کو بہتر بنانا۔"
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Urdu",
+      "translation": "صحت کی مہمات"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Urdu",
+      "translation": "لوگوں کی خدمت کی۔"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Urdu",
+      "translation": "موبائل کلینکس"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Urdu",
+      "translation": "بہترین CSR اقدام"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Urdu",
+      "translation": "سماجی ذمہ داری کے لیے ہمارے اختراعی نقطہ نظر کے لیے اعزاز۔"
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Urdu",
+      "translation": "کمیونٹی چیمپئن"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Urdu",
+      "translation": "ہمارے وسیع کمیونٹی آؤٹ ریچ پروگراموں کے لیے نوازا گیا۔"
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Urdu",
+      "translation": "عالمی پائیداری ایوارڈ"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Urdu",
+      "translation": "کاربن غیر جانبداری کے لیے ہماری وابستگی کے لیے تسلیم کیا گیا۔"
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Urdu",
+      "translation": "ہمارا اثر"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Urdu",
+      "translation": "ایک بہتر دنیا کی تشکیل میں ہمارے سنگ میل کو تسلیم کرنا۔"
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Urdu",
+      "translation": "فرق بنانے میں ہمارے ساتھ شامل ہوں۔"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Urdu",
+      "translation": "ہمارے ساتھ شراکت داری کریں یا اس بارے میں مزید جانیں کہ ہم ایک پائیدار مستقبل کیسے بنا رہے ہیں۔"
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Urdu",
+      "translation": "CSR ٹیم سے رابطہ کریں۔"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Urdu",
+      "translation": "مزید جانیں"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Urdu",
+      "translation": "رابطے میں رہیں"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Urdu",
+      "translation": "ہم آپ سے سننا پسند کریں گے۔ ان میں سے کسی بھی چینل کے ذریعے ہم تک پہنچیں۔"
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Urdu",
+      "translation": "فون"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Urdu",
+      "translation": "ای میل"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Urdu",
+      "translation": "واٹس ایپ"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Urdu",
+      "translation": "ابھی کال کریں۔"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Urdu",
+      "translation": "ای میل بھیجیں۔"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Urdu",
+      "translation": "ہمیں میسج کریں۔"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Urdu",
+      "translation": "میڈیا سنٹر"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Urdu",
+      "translation": "میڈیا سینٹر | ہاروکس"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Urdu",
+      "translation": "پریس کے وسائل، برانڈ اثاثے، اور Harvics Global Ventures کی تازہ ترین خبریں۔"
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Urdu",
+      "translation": "کارپوریٹ"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Urdu",
+      "translation": "خبریں اور پریس ریلیز"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Urdu",
+      "translation": "تازہ ترین اعلانات، مارکیٹ کی توسیع، پروڈکٹ لانچ، اور Harvics Global Ventures سے کارپوریٹ اپ ڈیٹس۔"
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Urdu",
+      "translation": "تازہ ترین خبریں پڑھیں"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Urdu",
+      "translation": "تصویری گیلری"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Urdu",
+      "translation": "میڈیا کے استعمال کے لیے ہائی ریزولوشن برانڈ اثاثے، پروڈکٹ فوٹو گرافی، سہولت کی تصاویر، اور ایونٹ کوریج۔"
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Urdu",
+      "translation": "گیلری کو براؤز کریں۔"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Urdu",
+      "translation": "میڈیا رابطے"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Urdu",
+      "translation": "پریس انکوائریوں، انٹرویو کی درخواستوں، اور شراکت کے اعلانات کے لیے ہماری کمیونیکیشن ٹیم تک پہنچیں۔"
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Urdu",
+      "translation": "پریس ٹیم سے رابطہ کریں۔"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Urdu",
+      "translation": "بازاروں کا احاطہ کیا گیا۔"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Urdu",
+      "translation": "صنعت عمودی"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Urdu",
+      "translation": "دبئی میں قائم ہوا۔"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Urdu",
+      "translation": "زبانیں تعاون یافتہ"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Urdu",
+      "translation": "حالیہ شہ سرخیاں"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس نے FMCG آپریشنز کو 5 نئی جنوب مشرقی ایشیائی منڈیوں تک پھیلا دیا۔"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Urdu",
+      "translation": "نیا AI سے چلنے والا سپلائی چین پلیٹ فارم عالمی تقسیم کے لیے شروع کیا گیا۔"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس نے تمام سہولیات میں کاربن نیوٹرل سنگ میل حاصل کیا۔"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Urdu",
+      "translation": "جنوبی ایشیا میں معروف ٹیکسٹائل مینوفیکچررز کے ساتھ اسٹریٹجک شراکت داری"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس ہاؤس"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Urdu",
+      "translation": "فضیلت اور روایت کی میراث"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس ہاؤس میں خوش آمدید"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس ہاؤس معیار اور ورثے سے ہماری وابستگی کے عروج کی نمائندگی کرتا ہے۔ یہاں، ہم اپنی پریمیم مصنوعات کے بہترین انتخاب کو ایک ساتھ لاتے ہیں، جو ایک ایسے ماحول میں نمائش کے لیے پیش کیے جاتے ہیں جو ہماری خوبصورتی، روایت اور جدت پسندی کی اقدار کی عکاسی کرتا ہے۔"
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Urdu",
+      "translation": "ہمارے خصوصی مجموعوں کو دریافت کریں اور ہر پروڈکٹ کے پیچھے کی کہانی دریافت کریں جس کا نام ہاروکس ہے۔"
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس گلوبل وینچرز"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Urdu",
+      "translation": "2019 سے پریمیم کنزیومر گڈز میں بہترین"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Urdu",
+      "translation": "بین الاقوامی معیار کے معیار کے ساتھ متنوع زمروں میں پریمیم فوڈ پراڈکٹس فراہم کرنے والی ایک معروف عالمی صارفی اشیا کی کمپنی۔"
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Urdu",
+      "translation": "لندن • میلان • نیویارک"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Urdu",
+      "translation": "2019 سے"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس نیوز"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Urdu",
+      "translation": "انتباہات اور اپ ڈیٹس حاصل کرنے کے لیے سبسکرائب کریں۔"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Urdu",
+      "translation": "سائن اپ کریں۔"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Urdu",
+      "translation": "تعمیل کے خدشات"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Urdu",
+      "translation": "اگر آپ کو تعمیل یا اخلاقیات کے بارے میں خدشات ہیں تو بات کریں۔"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Urdu",
+      "translation": "اسپیک اپ"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Urdu",
+      "translation": "ہم سے رابطہ کریں۔"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Urdu",
+      "translation": "ہماری ٹیم کے ساتھ رابطے میں رہیں"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Urdu",
+      "translation": "ہم سے رابطہ کریں۔"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Urdu",
+      "translation": "مفید لنکس"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Urdu",
+      "translation": "ہارویچ سے پوچھیں۔"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Urdu",
+      "translation": "ملازمتیں تلاش کریں۔"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Urdu",
+      "translation": "خبروں کے لیے سائن اپ کریں۔"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Urdu",
+      "translation": "کمپنی"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Urdu",
+      "translation": "عالمی پتے"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Urdu",
+      "translation": "حکمت عملی"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Urdu",
+      "translation": "ہماری قیادت"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Urdu",
+      "translation": "برانڈز A-Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Urdu",
+      "translation": "ہماری تاریخ"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Urdu",
+      "translation": "پائیداری"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Urdu",
+      "translation": "خبریں"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Urdu",
+      "translation": "میڈیا رابطے"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Urdu",
+      "translation": "امیجز"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Urdu",
+      "translation": "سرمایہ کار"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Urdu",
+      "translation": "کارپوریٹ گورننس"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Urdu",
+      "translation": "شیئرز، ADRs اور بانڈز"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Urdu",
+      "translation": "اشاعتیں"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Urdu",
+      "translation": "ہمیں فالو آن"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Urdu",
+      "translation": "0 مسائل"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Urdu",
+      "translation": "سائٹ کا نقشہ"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Urdu",
+      "translation": "ان سبسکرائب کریں۔"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Urdu",
+      "translation": "مدد"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Urdu",
+      "translation": "رازداری"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Urdu",
+      "translation": "کوکیز"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Urdu",
+      "translation": "استعمال کی شرائط"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Urdu",
+      "translation": "رسائی"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Urdu",
+      "translation": "کاربن کی کارکردگی"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Urdu",
+      "translation": "سپلائرز"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Urdu",
+      "translation": "سوشل میڈیا"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Urdu",
+      "translation": "کوکی کی ترتیبات"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Urdu",
+      "translation": "پریمیم کوالٹی"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Urdu",
+      "translation": "ای میل ایڈریس"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Urdu",
+      "translation": "اپنا ای میل ایڈریس درج کریں۔"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Urdu",
+      "translation": "سبسکرائب کریں۔"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Urdu",
+      "translation": "سبسکرائب ہو رہا ہے..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Urdu",
+      "translation": "ہمارے بارے میں"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Urdu",
+      "translation": "میڈیا"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Urdu",
+      "translation": "مصنوعات، برانڈز، یا زمرے تلاش کریں۔"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Urdu",
+      "translation": "کوئی نتیجہ نہیں ملا"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Urdu",
+      "translation": "تلاش کر رہا ہے..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Urdu",
+      "translation": "نتائج"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Urdu",
+      "translation": "ہمارے ساتھ چیٹ کریں۔"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Urdu",
+      "translation": "اپنا پیغام ٹائپ کریں..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Urdu",
+      "translation": "بھیجیں۔"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Urdu",
+      "translation": "بند"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Urdu",
+      "translation": "ہیلو! آج میں آپ کی مدد کیسے کر سکتا ہوں؟"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Urdu",
+      "translation": "معذرت، میں یہ نہیں سمجھا۔ کیا آپ براہ کرم دوبارہ بیان کر سکتے ہیں؟"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Urdu",
+      "translation": "میں مصنوعات کی معلومات، آرڈرز، یا عام پوچھ گچھ میں آپ کی مدد کر سکتا ہوں۔ آپ کیا جاننا چاہیں گے؟"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Urdu",
+      "translation": "مزید مدد کے لیے، براہ کرم ہم سے support@harvics.com پر رابطہ کریں یا +1-800-HARVICS پر کال کریں۔"
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Urdu",
+      "translation": "ہمارے ساتھ چیٹ کریں۔"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Urdu",
+      "translation": "لوڈ ہو رہا ہے..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Urdu",
+      "translation": "خرابی"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Urdu",
+      "translation": "کامیابی"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Urdu",
+      "translation": "محفوظ کریں۔"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Urdu",
+      "translation": "منسوخ کریں۔"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Urdu",
+      "translation": "حذف کریں۔"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Urdu",
+      "translation": "ترمیم کریں۔"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Urdu",
+      "translation": "دیکھیں"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Urdu",
+      "translation": "جمع کروائیں۔"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Urdu",
+      "translation": "تلاش کریں۔"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Urdu",
+      "translation": "فلٹر"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Urdu",
+      "translation": "صاف"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Urdu",
+      "translation": "ڈاؤن لوڈ کریں۔"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Urdu",
+      "translation": "اپ لوڈ کریں۔"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Urdu",
+      "translation": "جی ہاں"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Urdu",
+      "translation": "نہیں"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Urdu",
+      "translation": "بند"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Urdu",
+      "translation": "پیچھے"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Urdu",
+      "translation": "اگلا"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Urdu",
+      "translation": "پچھلا"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Urdu",
+      "translation": "اعمال"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Urdu",
+      "translation": "حیثیت"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Urdu",
+      "translation": "تاریخ"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Urdu",
+      "translation": "نام"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Urdu",
+      "translation": "ای میل"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Urdu",
+      "translation": "فون"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Urdu",
+      "translation": "پتہ"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Urdu",
+      "translation": "ملک"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Urdu",
+      "translation": "شہر"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Urdu",
+      "translation": "تمام"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Urdu",
+      "translation": "کوئی نہیں۔"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Urdu",
+      "translation": "منتخب کریں۔"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Urdu",
+      "translation": "زبان منتخب کریں۔"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Urdu",
+      "translation": "ملک منتخب کریں۔"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Urdu",
+      "translation": "مزید دکھائیں"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Urdu",
+      "translation": "کم دکھائیں۔"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Urdu",
+      "translation": "درکار ہے۔"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Urdu",
+      "translation": "مینو"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Urdu",
+      "translation": "مصنوعات دیکھیں"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Urdu",
+      "translation": "میوزک چلائیں۔"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Urdu",
+      "translation": "میوزک موقوف کریں۔"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Urdu",
+      "translation": "میوزک کو خاموش کریں۔"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Urdu",
+      "translation": "موسیقی کو چالو کریں۔"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Urdu",
+      "translation": "ہماری عالمی رسائی"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Urdu",
+      "translation": "چونکہ"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Urdu",
+      "translation": "بڑی مارکیٹ"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Urdu",
+      "translation": "بڑے بازار"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Urdu",
+      "translation": "موجودگی"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Urdu",
+      "translation": "خدمت کرنے والے ممالک"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Urdu",
+      "translation": "بڑے بازار"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Urdu",
+      "translation": "مصنوعات کے زمرے"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Urdu",
+      "translation": "قائم کیا"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Urdu",
+      "translation": "علاقہ کا درجہ بندی"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Urdu",
+      "translation": "مکمل راستہ"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Urdu",
+      "translation": "موجودہ علاقہ"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Urdu",
+      "translation": "کوئی آئٹمز نہیں۔"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Urdu",
+      "translation": "گلوب"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Urdu",
+      "translation": "براعظم"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Urdu",
+      "translation": "علاقہ"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Urdu",
+      "translation": "ملک"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Urdu",
+      "translation": "شہر"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Urdu",
+      "translation": "ضلع"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Urdu",
+      "translation": "مقام"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس گلوبل"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Urdu",
+      "translation": "عالمی"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Urdu",
+      "translation": "علاقہ منتخب کریں۔"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Urdu",
+      "translation": "کسٹمر کی تفصیلات"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Urdu",
+      "translation": "منتخب"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Urdu",
+      "translation": "پورا نام"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Urdu",
+      "translation": "اپنا پورا نام درج کریں۔"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Urdu",
+      "translation": "نام درکار ہے۔"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Urdu",
+      "translation": "ای میل ایڈریس"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Urdu",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Urdu",
+      "translation": "ای میل درکار ہے۔"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Urdu",
+      "translation": "براہ کرم ایک درست ای میل ایڈریس درج کریں۔"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Urdu",
+      "translation": "فون نمبر"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Urdu",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Urdu",
+      "translation": "فون نمبر درکار ہے۔"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Urdu",
+      "translation": "پتہ"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Urdu",
+      "translation": "آپ کا پتہ"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Urdu",
+      "translation": "پتہ درکار ہے۔"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Urdu",
+      "translation": "میں مارکیٹنگ کمیونیکیشنز اور اپ ڈیٹس حاصل کرنے سے اتفاق کرتا ہوں۔"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Urdu",
+      "translation": "جمع کروائیں اور جاری رکھیں"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Urdu",
+      "translation": "جمع کر رہا ہے..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Urdu",
+      "translation": "چھوڑیں اور جاری رکھیں"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Urdu",
+      "translation": "کلیدی کارکردگی کے اشارے"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Urdu",
+      "translation": "آج آرڈر کریں۔"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس CRM کے ذریعے جمع کرایا گیا۔"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Urdu",
+      "translation": "زیر التواء ترسیل"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Urdu",
+      "translation": "تفویض کردہ راستوں کے پار"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Urdu",
+      "translation": "خوردہ فروش"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Urdu",
+      "translation": "دائرہ کار میں فعال آؤٹ لیٹس"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Urdu",
+      "translation": "T&A سکور"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Urdu",
+      "translation": "علاقہ کی کوریج"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Urdu",
+      "translation": "مالیاتی اور انوینٹری"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Urdu",
+      "translation": "کم اسٹاک SKUs"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Urdu",
+      "translation": "دوبارہ بھرنے کو متحرک کریں۔"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Urdu",
+      "translation": "بقایا رسیدیں"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Urdu",
+      "translation": "جمع کرنے کے لیے واجب الادا ہے۔"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Urdu",
+      "translation": "کریڈٹ کی حد"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Urdu",
+      "translation": "فنانس کے ذریعہ تفویض کردہ"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Urdu",
+      "translation": "خودکار منظوری، اسٹاک کی دوبارہ ادائیگی، اور انوائس کی یاد دہانیاں فعال ہیں۔"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Urdu",
+      "translation": "خود منظوری"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Urdu",
+      "translation": "اسٹاک کی بھرپائی"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Urdu",
+      "translation": "انوائس یاد دہانیاں"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Urdu",
+      "translation": "AI کی سفارشات"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Urdu",
+      "translation": "رسک لیول"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Urdu",
+      "translation": "کریڈٹ کے استعمال اور ادائیگی کی تاریخ کی بنیاد پر"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Urdu",
+      "translation": "تجویز کردہ آرڈر"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Urdu",
+      "translation": "آرڈر کرنے کے لیے AI کی تجویز کردہ SKUs"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Urdu",
+      "translation": "اگلا ایکشن"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Urdu",
+      "translation": "اعمال اور رہنمائی"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Urdu",
+      "translation": "شکایات"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Urdu",
+      "translation": "خوردہ فروش کے مسائل کارروائی کے منتظر ہیں۔"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Urdu",
+      "translation": "پلے بک"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Urdu",
+      "translation": "دوپہر سے پہلے زیر التواء ترسیل کو ترجیح دیں۔"
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Urdu",
+      "translation": "تمام بقایا شکایات کو 48 گھنٹے کے اندر بند کر دیں۔"
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Urdu",
+      "translation": "کم اسٹاک والے SKUs (آٹو تخلیق PO) کے لیے دوبارہ بھرنے کو متحرک کریں۔"
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Urdu",
+      "translation": "علاقہ"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Urdu",
+      "translation": "اس مہینے کا آرڈر"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Urdu",
+      "translation": "زیر التواء احکامات"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Urdu",
+      "translation": "ڈیلیور کردہ آرڈرز"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Urdu",
+      "translation": "علاقہ کی معلومات"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Urdu",
+      "translation": "ملک"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Urdu",
+      "translation": "شہر"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Urdu",
+      "translation": "علاقہ"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Urdu",
+      "translation": "فوری اقدامات"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Urdu",
+      "translation": "نیا آرڈر"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Urdu",
+      "translation": "آرڈرز دیکھیں"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Urdu",
+      "translation": "رسیدیں دیکھیں"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Urdu",
+      "translation": "پروفائل کی ترتیبات"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Urdu",
+      "translation": "ڈیش بورڈ لوڈ ہو رہا ہے..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Urdu",
+      "translation": "خرابی"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Urdu",
+      "translation": "میرے احکامات"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Urdu",
+      "translation": "آرڈر کی شناخت"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Urdu",
+      "translation": "تاریخ"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Urdu",
+      "translation": "حیثیت"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Urdu",
+      "translation": "اشیاء"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Urdu",
+      "translation": "کل رقم"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Urdu",
+      "translation": "اعمال"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Urdu",
+      "translation": "تفصیلات دیکھیں"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Urdu",
+      "translation": "حیثیت"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Urdu",
+      "translation": "آغاز کی تاریخ"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Urdu",
+      "translation": "اختتامی تاریخ"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Urdu",
+      "translation": "تمام سٹیٹس"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Urdu",
+      "translation": "فلٹرز صاف کریں۔"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Urdu",
+      "translation": "زیر التواء"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Urdu",
+      "translation": "پروسیسنگ"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Urdu",
+      "translation": "پہنچایا"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Urdu",
+      "translation": "منسوخ"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Urdu",
+      "translation": "کوئی آرڈر نہیں ملا"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Urdu",
+      "translation": "آرڈرز لوڈ ہو رہے ہیں..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Urdu",
+      "translation": "صفحہ"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Urdu",
+      "translation": "کی"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Urdu",
+      "translation": "پچھلا"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Urdu",
+      "translation": "اگلا"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Urdu",
+      "translation": "آرڈر کی تفصیلات"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Urdu",
+      "translation": "واپس آرڈرز پر"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Urdu",
+      "translation": "آرڈر کی شناخت"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Urdu",
+      "translation": "حیثیت"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Urdu",
+      "translation": "آرڈر کی تاریخ"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Urdu",
+      "translation": "ڈیلیوری کی تاریخ"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Urdu",
+      "translation": "ڈیلیوری کا پتہ"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Urdu",
+      "translation": "نوٹس"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Urdu",
+      "translation": "آرڈر آئٹمز"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Urdu",
+      "translation": "پروڈکٹ"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Urdu",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Urdu",
+      "translation": "مقدار"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Urdu",
+      "translation": "یونٹ کی قیمت"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Urdu",
+      "translation": "کل"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Urdu",
+      "translation": "کل رقم"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Urdu",
+      "translation": "اسٹیٹس ٹائم لائن"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Urdu",
+      "translation": "آرڈر نہیں ملا"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Urdu",
+      "translation": "نیا آرڈر بنائیں"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Urdu",
+      "translation": "آرڈر آئٹمز"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Urdu",
+      "translation": "آئٹم شامل کریں۔"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Urdu",
+      "translation": "ابھی تک کوئی آئٹمز شامل نہیں کیے گئے۔ شروع کرنے کے لیے \"آئٹم شامل کریں\" پر کلک کریں۔"
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Urdu",
+      "translation": "آرڈر کی تفصیلات"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Urdu",
+      "translation": "ڈیلیوری کی تاریخ"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Urdu",
+      "translation": "ڈیلیوری کا پتہ"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Urdu",
+      "translation": "نوٹس"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Urdu",
+      "translation": "کل رقم"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Urdu",
+      "translation": "آرڈر بنائیں"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Urdu",
+      "translation": "آرڈر بنایا جا رہا ہے..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Urdu",
+      "translation": "منسوخ کریں۔"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Urdu",
+      "translation": "پروڈکٹ کو منتخب کریں۔"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Urdu",
+      "translation": "پروڈکٹ"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Urdu",
+      "translation": "مقدار"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Urdu",
+      "translation": "یونٹ کی قیمت"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Urdu",
+      "translation": "ہٹا دیں۔"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Urdu",
+      "translation": "ذیلی کل"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Urdu",
+      "translation": "آرڈر کی شناخت"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Urdu",
+      "translation": "کم از کم ایک آرڈر آئٹم درکار ہے۔"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Urdu",
+      "translation": "پروڈکٹ درکار ہے۔"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Urdu",
+      "translation": "مقدار 0 سے زیادہ ہونی چاہیے۔"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Urdu",
+      "translation": "یونٹ کی قیمت غیر منفی ہونی چاہیے۔"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Urdu",
+      "translation": "ڈیلیوری کی تاریخ کی غلط شکل"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Urdu",
+      "translation": "ڈیلیوری کی تاریخ ماضی میں نہیں ہو سکتی"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Urdu",
+      "translation": "میری رسیدیں"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Urdu",
+      "translation": "انوائس نمبر"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Urdu",
+      "translation": "رسید کی تاریخ"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Urdu",
+      "translation": "دو تاریخیں۔"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Urdu",
+      "translation": "رقم"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Urdu",
+      "translation": "ادا شدہ رقم"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Urdu",
+      "translation": "ادائیگی کی حیثیت"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Urdu",
+      "translation": "ادائیگی کی حیثیت"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Urdu",
+      "translation": "تمام سٹیٹس"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Urdu",
+      "translation": "فلٹرز صاف کریں۔"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Urdu",
+      "translation": "ادا کیا"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Urdu",
+      "translation": "بلا معاوضہ"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Urdu",
+      "translation": "جزوی"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Urdu",
+      "translation": "کوئی رسیدیں نہیں ملی"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Urdu",
+      "translation": "رسیدیں لوڈ ہو رہی ہیں..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Urdu",
+      "translation": "میرا پروفائل"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Urdu",
+      "translation": "اکاؤنٹ کی معلومات"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Urdu",
+      "translation": "تقسیم کار ID"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Urdu",
+      "translation": "علاقہ"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Urdu",
+      "translation": "ملک"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Urdu",
+      "translation": "شہر"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Urdu",
+      "translation": "اکاؤنٹ بنایا گیا۔"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Urdu",
+      "translation": "پروفائل کو اپ ڈیٹ کریں۔"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Urdu",
+      "translation": "نام"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Urdu",
+      "translation": "ای میل"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Urdu",
+      "translation": "فون"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Urdu",
+      "translation": "پتہ"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Urdu",
+      "translation": "زبان"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Urdu",
+      "translation": "کرنسی"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Urdu",
+      "translation": "تبدیلیاں محفوظ کریں۔"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Urdu",
+      "translation": "محفوظ کر رہا ہے..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Urdu",
+      "translation": "پروفائل کامیابی کے ساتھ اپ ڈیٹ ہو گیا۔"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Urdu",
+      "translation": "پروفائل لوڈ ہو رہا ہے..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Urdu",
+      "translation": "غلط ای میل فارمیٹ"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Urdu",
+      "translation": "فون کی غلط شکل"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Urdu",
+      "translation": "خرابی"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Urdu",
+      "translation": "لوڈ ہو رہا ہے..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Urdu",
+      "translation": "محفوظ کریں۔"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Urdu",
+      "translation": "منسوخ کریں۔"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Urdu",
+      "translation": "پیچھے"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Urdu",
+      "translation": "جمع کروائیں۔"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Urdu",
+      "translation": "حذف کریں۔"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Urdu",
+      "translation": "ترمیم کریں۔"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Urdu",
+      "translation": "دیکھیں"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Urdu",
+      "translation": "تلاش کریں۔"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Urdu",
+      "translation": "فلٹر"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Urdu",
+      "translation": "صاف"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Urdu",
+      "translation": "لگائیں"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Urdu",
+      "translation": "بند"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Urdu",
+      "translation": "تصدیق کریں۔"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Urdu",
+      "translation": "جی ہاں"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Urdu",
+      "translation": "نہیں"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Urdu",
+      "translation": "قانونی آپریٹنگ سسٹم"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Urdu",
+      "translation": "قانونی OS"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Urdu",
+      "translation": "رسائی سے انکار کر دیا گیا۔"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Urdu",
+      "translation": "آپ کو قانونی OS ماڈیول تک رسائی کی اجازت نہیں ہے۔"
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Urdu",
+      "translation": "ڈیش بورڈ"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Urdu",
+      "translation": "معاہدے"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Urdu",
+      "translation": "سرٹیفکیٹ"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Urdu",
+      "translation": "تعمیل"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Urdu",
+      "translation": "قانونی ڈیش بورڈ"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Urdu",
+      "translation": "قانونی کارروائیوں اور تعمیل کی حیثیت کا جائزہ"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Urdu",
+      "translation": "فعال ٹریڈ مارکس"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Urdu",
+      "translation": "فعال معاہدے۔"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Urdu",
+      "translation": "تعمیل کی حیثیت"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Urdu",
+      "translation": "ٹریڈ مارکس"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Urdu",
+      "translation": "ٹریڈ مارک رجسٹریشنز اور ایپلیکیشنز کا نظم کریں۔"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Urdu",
+      "translation": "نیا ٹریڈ مارک شامل کریں۔"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Urdu",
+      "translation": "ملک"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Urdu",
+      "translation": "حیثیت"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Urdu",
+      "translation": "تمام ممالک"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Urdu",
+      "translation": "تمام سٹیٹس"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Urdu",
+      "translation": "فلٹرز صاف کریں۔"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Urdu",
+      "translation": "برانڈ کا نام"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Urdu",
+      "translation": "کلاس"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Urdu",
+      "translation": "ملک"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Urdu",
+      "translation": "درخواست نمبر"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Urdu",
+      "translation": "حیثیت"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Urdu",
+      "translation": "میعاد ختم ہونے کی تاریخ"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Urdu",
+      "translation": "اعمال"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Urdu",
+      "translation": "ٹریڈ مارک میں ترمیم کریں۔"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Urdu",
+      "translation": "نیا ٹریڈ مارک شامل کریں۔"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Urdu",
+      "translation": "ٹریڈ مارک دیکھیں"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Urdu",
+      "translation": "برانڈ کا نام"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Urdu",
+      "translation": "کلاس نمبر"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Urdu",
+      "translation": "ملک"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Urdu",
+      "translation": "درخواست نمبر"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Urdu",
+      "translation": "حیثیت"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Urdu",
+      "translation": "میعاد ختم ہونے کی تاریخ"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Urdu",
+      "translation": "دستاویزات"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Urdu",
+      "translation": "کوئی دستاویزات منسلک نہیں ہیں۔"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Urdu",
+      "translation": "دستاویز شامل کریں۔"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Urdu",
+      "translation": "ہٹا دیں۔"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Urdu",
+      "translation": "ٹریڈ مارکس لوڈ کرنے میں ناکام"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Urdu",
+      "translation": "ٹریڈ مارک محفوظ کرنے میں ناکام۔ براہ کرم دوبارہ کوشش کریں۔"
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Urdu",
+      "translation": "قانونی مقدمات"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Urdu",
+      "translation": "قانونی مقدمات کا نظم کریں اور ان کی حیثیت کو ٹریک کریں۔"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Urdu",
+      "translation": "نیا کیس"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Urdu",
+      "translation": "کیس کا عنوان"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Urdu",
+      "translation": "کیس کی قسم"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Urdu",
+      "translation": "ملک"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Urdu",
+      "translation": "تفصیل"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Urdu",
+      "translation": "کو تفویض کیا گیا۔"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Urdu",
+      "translation": "حیثیت"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Urdu",
+      "translation": "سماعت کی تاریخ"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Urdu",
+      "translation": "کیس کا عنوان"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Urdu",
+      "translation": "قسم"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Urdu",
+      "translation": "ملک"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Urdu",
+      "translation": "کو تفویض کیا گیا۔"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Urdu",
+      "translation": "حیثیت"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Urdu",
+      "translation": "سماعت کی تاریخ"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Urdu",
+      "translation": "اعمال"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Urdu",
+      "translation": "کھولیں۔"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Urdu",
+      "translation": "جاری ہے۔"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Urdu",
+      "translation": "بند"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Urdu",
+      "translation": "منسوخ"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Urdu",
+      "translation": "فلیٹ کا نقشہ دیکھیں"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Urdu",
+      "translation": "سیلز آفیسرز اور ڈیلیوری گاڑیوں کی ریئل ٹائم ٹریکنگ"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Urdu",
+      "translation": "فعال ملازمین"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Urdu",
+      "translation": "کوئی فعال ملازم نہیں۔"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Urdu",
+      "translation": "لوڈ ہو رہا ہے..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Urdu",
+      "translation": "روٹ ری پلے"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Urdu",
+      "translation": "ملازم"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Urdu",
+      "translation": "رفتار"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Urdu",
+      "translation": "دوبارہ ترتیب دیں۔"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Urdu",
+      "translation": "کھیلیں"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Urdu",
+      "translation": "توقف"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Urdu",
+      "translation": "پوائنٹس"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Urdu",
+      "translation": "کوئی روٹ ڈیٹا دستیاب نہیں ہے۔"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Urdu",
+      "translation": "راستہ لوڈ ہو رہا ہے..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Urdu",
+      "translation": "مسابقتی مصنوعات"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Urdu",
+      "translation": "مسابقتی مصنوعات کی معلومات کو ٹریک کریں۔"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Urdu",
+      "translation": "پروڈکٹ شامل کریں۔"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Urdu",
+      "translation": "مدمقابل پروڈکٹ شامل کریں۔"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Urdu",
+      "translation": "برانڈ"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Urdu",
+      "translation": "SKU نام"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Urdu",
+      "translation": "زمرہ"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Urdu",
+      "translation": "سائز"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Urdu",
+      "translation": "قیمت"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Urdu",
+      "translation": "کرنسی"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Urdu",
+      "translation": "ملک"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Urdu",
+      "translation": "برانڈ"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Urdu",
+      "translation": "SKU نام"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Urdu",
+      "translation": "زمرہ"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Urdu",
+      "translation": "سائز"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Urdu",
+      "translation": "قیمت"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Urdu",
+      "translation": "ملک"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Urdu",
+      "translation": "شامل کرنے کی تاریخ"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Urdu",
+      "translation": "پروڈکٹس لوڈ کرنے میں ناکام"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Urdu",
+      "translation": "پروڈکٹ بنانے میں ناکام۔ براہ کرم دوبارہ کوشش کریں۔"
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Urdu",
+      "translation": "کوئی مسابقتی پروڈکٹس نہیں ملے"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Urdu",
+      "translation": "مصنوعات لوڈ ہو رہی ہیں..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Urdu",
+      "translation": "مدمقابل ڈیش بورڈ"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Urdu",
+      "translation": "مسابقتی مصنوعات پر تجزیات اور بصیرت"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Urdu",
+      "translation": "کل مصنوعات"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Urdu",
+      "translation": "برانڈز کا سراغ لگایا"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Urdu",
+      "translation": "ممالک"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Urdu",
+      "translation": "زمرہ جات"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Urdu",
+      "translation": "برانڈ کے لحاظ سے مصنوعات"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Urdu",
+      "translation": "ملک کے لحاظ سے مصنوعات"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Urdu",
+      "translation": "زمرہ کے لحاظ سے مصنوعات"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Urdu",
+      "translation": "اعدادوشمار لوڈ ہو رہے ہیں..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Urdu",
+      "translation": "کوئی اعداد و شمار دستیاب نہیں ہیں۔"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Urdu",
+      "translation": "جائزہ"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Urdu",
+      "translation": "احکامات"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Urdu",
+      "translation": "انوینٹری"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Urdu",
+      "translation": "لاجسٹکس"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Urdu",
+      "translation": "فنانس"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Urdu",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Urdu",
+      "translation": "HR"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Urdu",
+      "translation": "ایگزیکٹو"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Urdu",
+      "translation": "سرمایہ کار"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Urdu",
+      "translation": "قانونی/آئی پی آر"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Urdu",
+      "translation": "مدمقابل"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Urdu",
+      "translation": "درآمد/برآمد"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Urdu",
+      "translation": "GPS ٹریکنگ"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Urdu",
+      "translation": "لوکلائزیشن"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Urdu",
+      "translation": "ورک فلو"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Urdu",
+      "translation": "ایڈمن"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Urdu",
+      "translation": "CRM OS"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Urdu",
+      "translation": "کسٹمر 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Urdu",
+      "translation": "مکمل کسٹمر پروفائلز، تعامل کی تاریخ، اور تعلقات کا انتظام"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Urdu",
+      "translation": "ڈیجیٹل مہمات"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Urdu",
+      "translation": "ملٹی چینل مارکیٹنگ مہمات (IG، FB، TikTok، WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Urdu",
+      "translation": "لیڈز اور مواقع"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Urdu",
+      "translation": "لیڈ مینجمنٹ، قابلیت، اور موقع پائپ لائن"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Urdu",
+      "translation": "کسٹمر سپورٹ"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Urdu",
+      "translation": "ٹکٹ کا انتظام، کسٹمر سروس، اور مسئلہ کا حل"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Urdu",
+      "translation": "وفاداری کے پروگرام"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Urdu",
+      "translation": "خوردہ فروش کی وفاداری، گیمیفیکیشن، اور انعامات کا انتظام"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Urdu",
+      "translation": "کسٹمر 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Urdu",
+      "translation": "نیا گاہک"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Urdu",
+      "translation": "کل صارفین"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Urdu",
+      "translation": "فعال"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Urdu",
+      "translation": "نیا"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Urdu",
+      "translation": "اطمینان"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Urdu",
+      "translation": "کسٹمر مینجمنٹ"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Urdu",
+      "translation": "اپنے گاہک کے تعلقات، تعاملات اور مہمات دیکھیں اور ان کا نظم کریں۔"
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Urdu",
+      "translation": "لوڈ ہو رہا ہے..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Urdu",
+      "translation": "CRM ڈیٹا لوڈ کرنے میں خرابی۔"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Urdu",
+      "translation": "جائزہ"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Urdu",
+      "translation": "احکامات"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Urdu",
+      "translation": "انوینٹری"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Urdu",
+      "translation": "لاجسٹکس"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Urdu",
+      "translation": "فنانس"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Urdu",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Urdu",
+      "translation": "HR"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Urdu",
+      "translation": "ایگزیکٹو"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Urdu",
+      "translation": "سرمایہ کار"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Urdu",
+      "translation": "قانونی/آئی پی آر"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Urdu",
+      "translation": "مدمقابل"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Urdu",
+      "translation": "درآمد/برآمد"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Urdu",
+      "translation": "GPS ٹریکنگ"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Urdu",
+      "translation": "لوکلائزیشن"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Urdu",
+      "translation": "ورک فلو"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Urdu",
+      "translation": "ایڈمن"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Urdu",
+      "translation": "گاہکوں"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Urdu",
+      "translation": "ملازمین"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Urdu",
+      "translation": "منافع"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Urdu",
+      "translation": "سپلائر کاک پٹ لوڈ ہو رہا ہے…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Urdu",
+      "translation": "خریداری کے آرڈرز"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس کی طرف سے اٹھایا گیا"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Urdu",
+      "translation": "کھیپ / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Urdu",
+      "translation": "اس ہفتے قبول کیا گیا۔"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Urdu",
+      "translation": "رسیدیں بنائی گئیں۔"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Urdu",
+      "translation": "ادائیگی کا انتظار ہے۔"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Urdu",
+      "translation": "ادائیگیاں زیر التواء"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Urdu",
+      "translation": "ریلیز کے لیے شیڈول کیا گیا۔"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Urdu",
+      "translation": "معیار / شکایات"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Urdu",
+      "translation": "ٹکٹیں کھولیں۔"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Urdu",
+      "translation": "پیشن گوئی (اگلے 4 ہفتے)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Urdu",
+      "translation": "AI پلیس ہولڈر"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Urdu",
+      "translation": "فراہم کنندہ کے اقدامات"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Urdu",
+      "translation": "آنے والی ترسیل کی تصدیق کریں اور GRN شیڈول کو اپ ڈیٹ کریں۔"
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Urdu",
+      "translation": "بقایا رسیدوں کا جائزہ لیں اور ادائیگی کے مشورے کا اشتراک کریں۔"
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Urdu",
+      "translation": "QA ثبوت کے ساتھ کھلے معیار کی شکایات کو حل کریں۔"
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Urdu",
+      "translation": "صارف نام"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Urdu",
+      "translation": "پاس ورڈ"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Urdu",
+      "translation": "ای میل"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Urdu",
+      "translation": "جمع کروائیں۔"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Urdu",
+      "translation": "منسوخ کریں۔"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Urdu",
+      "translation": "محفوظ کریں۔"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Urdu",
+      "translation": "حذف کریں۔"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Urdu",
+      "translation": "تلاش کریں۔"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Urdu",
+      "translation": "فلٹر"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Urdu",
+      "translation": "دوبارہ ترتیب دیں۔"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Urdu",
+      "translation": "بند"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Urdu",
+      "translation": "پیچھے"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Urdu",
+      "translation": "اگلا"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Urdu",
+      "translation": "پچھلا"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Urdu",
+      "translation": "تصدیق کریں۔"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Urdu",
+      "translation": "مجھے یاد رکھنا"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Urdu",
+      "translation": "پاس ورڈ بھول گئے؟"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Urdu",
+      "translation": "ای میل درکار ہے۔"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Urdu",
+      "translation": "براہ کرم ایک درست ای میل ایڈریس درج کریں۔"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Urdu",
+      "translation": "مصنوعات"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Urdu",
+      "translation": "Harvics کیا مصنوعات پیش کرتا ہے؟"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Urdu",
+      "translation": "ہم پریمیم فوڈ پروڈکٹس کی ایک وسیع رینج پیش کرتے ہیں جن میں کنفیکشنری، مشروبات، اسنیکس، پاستا، بیکری آئٹمز، اور متعدد زمروں میں منجمد کھانے شامل ہیں۔"
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Urdu",
+      "translation": "میں Harvics مصنوعات کہاں سے خرید سکتا ہوں؟"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Urdu",
+      "translation": "ہماری مصنوعات 40+ ممالک کے ریٹیل اسٹورز پر دستیاب ہیں۔ اپنے قریب خوردہ فروش تلاش کرنے کے لیے ہمارا اسٹور لوکیٹر یا رابطہ صفحہ استعمال کریں۔"
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Urdu",
+      "translation": "کیا آپ بلک آرڈرنگ پیش کرتے ہیں؟"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Urdu",
+      "translation": "ہاں، ہم کاروباروں اور خوردہ فروشوں کے لیے بلک آرڈر ڈسکاؤنٹ پیش کرتے ہیں۔ مزید معلومات کے لیے ہمارے بلک آرڈر ڈسکاؤنٹس کا صفحہ دیکھیں۔"
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Urdu",
+      "translation": "آرڈرز اور شپنگ"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Urdu",
+      "translation": "آپ کے شپنگ کے اختیارات کیا ہیں؟"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Urdu",
+      "translation": "ہم معیاری، ایکسپریس، اور بین الاقوامی شپنگ سمیت مختلف شپنگ کے اختیارات پیش کرتے ہیں۔ مفت شپنگ $50 سے زیادہ کے آرڈرز پر دستیاب ہے۔"
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Urdu",
+      "translation": "ترسیل میں کتنا وقت لگتا ہے؟"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Urdu",
+      "translation": "ڈلیوری کے اوقات مقام کے لحاظ سے مختلف ہوتے ہیں۔ معیاری ڈیلیوری میں عام طور پر 5-7 کاروباری دن لگتے ہیں، جبکہ ایکسپریس ڈیلیوری میں 2-3 کاروباری دن لگتے ہیں۔"
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Urdu",
+      "translation": "کیا میں اپنے آرڈر کو ٹریک کر سکتا ہوں؟"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Urdu",
+      "translation": "ہاں، آپ اپنے آرڈر کی تصدیقی ای میل میں فراہم کردہ ٹریکنگ نمبر کا استعمال کرکے اپنے آرڈر کو ٹریک کرسکتے ہیں۔"
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Urdu",
+      "translation": "اکاؤنٹ اور ادائیگیاں"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Urdu",
+      "translation": "میں اکاؤنٹ کیسے بناؤں؟"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Urdu",
+      "translation": "ہیڈر میں \"سائن ان\" پر کلک کریں اور نئے اکاؤنٹ کے لیے رجسٹر کرنے کے لیے \"اکاؤنٹ بنائیں\" کو منتخب کریں۔"
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Urdu",
+      "translation": "آپ کون سے ادائیگی کے طریقے قبول کرتے ہیں؟"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Urdu",
+      "translation": "ہم B2B آرڈرز کے لیے تمام بڑے کریڈٹ کارڈز، ڈیبٹ کارڈز، پے پال، اور بینک ٹرانسفرز کو قبول کرتے ہیں۔"
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Urdu",
+      "translation": "کیا میری ادائیگی کی معلومات محفوظ ہے؟"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Urdu",
+      "translation": "ہاں، ہم آپ کی ادائیگی کی معلومات کی حفاظت کے لیے انڈسٹری کے معیاری خفیہ کاری کا استعمال کرتے ہیں۔"
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Urdu",
+      "translation": "ریٹرن اور ریفنڈز"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Urdu",
+      "translation": "آپ کی واپسی کی پالیسی کیا ہے؟"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Urdu",
+      "translation": "ہم اصل پیکیجنگ میں نہ کھولی ہوئی مصنوعات کے لیے 30 دن کی واپسی کی پالیسی پیش کرتے ہیں۔ واپسی کی اجازت کے لیے براہ کرم ہماری کسٹمر سروس سے رابطہ کریں۔"
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Urdu",
+      "translation": "میں رقم کی واپسی کی درخواست کیسے کروں؟"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Urdu",
+      "translation": "اپنے آرڈر نمبر اور واپسی کی وجہ کے ساتھ ہماری کسٹمر سروس ٹیم سے رابطہ کریں۔ ہم 5-7 کاروباری دنوں کے اندر آپ کی رقم کی واپسی پر کارروائی کریں گے۔"
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Urdu",
+      "translation": "اب بھی سوالات ہیں؟"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Urdu",
+      "translation": "ہماری کسٹمر سروس ٹیم مدد کے لیے حاضر ہے۔"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Urdu",
+      "translation": "ہم سے رابطہ کریں۔"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Urdu",
+      "translation": "کیریئرز"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Urdu",
+      "translation": "کیریئرز | ہاروکس"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Urdu",
+      "translation": "Harvics Global Ventures میں شامل ہوں - 40+ ممالک میں مواقع تلاش کریں۔"
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Urdu",
+      "translation": "ہمارے ساتھ شامل ہوں۔"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Urdu",
+      "translation": "عالمی تجارت کا مستقبل بنائیں"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Urdu",
+      "translation": "ہم 40+ ممالک میں ترقی کر رہے ہیں۔ ایسی ٹیم میں شامل ہوں جو عالمی تجارت کے لیے AI سے چلنے والا آپریٹنگ سسٹم بنا رہی ہے۔"
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Urdu",
+      "translation": "پوزیشنیں کھولیں۔"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Urdu",
+      "translation": "ممالک"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Urdu",
+      "translation": "صنعت عمودی"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Urdu",
+      "translation": "محکموں کی خدمات حاصل کرنا"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Urdu",
+      "translation": "محکمہ کی طرف سے پوزیشنیں کھولیں۔"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Urdu",
+      "translation": "فروخت اور تقسیم"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Urdu",
+      "translation": "40+ مارکیٹوں میں آمدنی بڑھائیں۔ علاقہ کا انتظام، کلیدی اکاؤنٹس، تقسیم کار تعلقات۔"
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Urdu",
+      "translation": "سپلائی چین اور لاجسٹکس"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Urdu",
+      "translation": "فیکٹری سے شیلف تک اینڈ ٹو اینڈ سپلائی چین۔ بیڑے کا انتظام، گودام، آخری میل کی ترسیل۔"
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Urdu",
+      "translation": "ٹیکنالوجی اور اے آئی"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Urdu",
+      "translation": "Harvics OS بنائیں — ہمارا AI سے چلنے والا انٹرپرائز پلیٹ فارم۔ مکمل اسٹیک، ایم ایل انجینئرنگ، ڈیٹا سائنس۔"
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Urdu",
+      "translation": "خزانہ اور خزانہ"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Urdu",
+      "translation": "ملٹی کرنسی ٹریژری، ٹریڈ فنانس، HPay ڈیجیٹل ادائیگیاں، تمام خطوں میں FX مینجمنٹ۔"
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Urdu",
+      "translation": "پروکیورمنٹ اور سورسنگ"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Urdu",
+      "translation": "15+ اصل ممالک سے عالمی سورسنگ۔ سپلائر آڈٹ، کوالٹی کنٹرول، فیکٹری براہ راست پروگرام۔"
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Urdu",
+      "translation": "انسانی وسائل"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Urdu",
+      "translation": "ٹیلنٹ کا حصول، L&D، مختلف جغرافیوں اور ثقافتوں میں کارکردگی کا انتظام۔"
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Urdu",
+      "translation": "قانونی اور تعمیل"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Urdu",
+      "translation": "تجارتی تعمیل، پابندیوں کی اسکریننگ، IP تحفظ، دائرہ اختیار میں معاہدہ کا انتظام۔"
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Urdu",
+      "translation": "مارکیٹنگ اور برانڈ"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Urdu",
+      "translation": "کثیر زبانی مہمات، 38-مقامی مواد، ڈیجیٹل مارکیٹنگ، 10 عمودی کے لیے برانڈ کی حکمت عملی۔"
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Urdu",
+      "translation": "کردار"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس کیوں؟"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Urdu",
+      "translation": "عالمی نقل و حرکت"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Urdu",
+      "translation": "دبئی، لندن، کراچی، لاہور، اور 40+ مارکیٹوں میں کام کریں۔"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Urdu",
+      "translation": "گروتھ ٹریک"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Urdu",
+      "translation": "اسکیلنگ انٹرپرائز میں فاسٹ ٹریک کیریئر کی ترقی"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Urdu",
+      "translation": "اے آئی فرسٹ کلچر"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Urdu",
+      "translation": "جدید ترین AI اور ریئل ٹائم انٹیلی جنس سسٹمز کے ساتھ کام کریں۔"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Urdu",
+      "translation": "مسابقتی پیکیج"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Urdu",
+      "translation": "مارکیٹ میں معروف معاوضہ، رہائش، اور فوائد"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Urdu",
+      "translation": "سیکھنے کا بجٹ"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Urdu",
+      "translation": "کورسز، کانفرنسز اور سرٹیفیکیشنز کے لیے سالانہ ترقیاتی بجٹ"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Urdu",
+      "translation": "لچکدار کام"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Urdu",
+      "translation": "دنیا بھر میں علاقائی مرکز کے دفاتر کے ساتھ ہائبرڈ انتظامات"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Urdu",
+      "translation": "ہماری حکمت عملی"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Urdu",
+      "translation": "حکمت عملی | ہارویچ"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Urdu",
+      "translation": "جدت اور عمدگی کے ذریعے ایک پائیدار مستقبل کی تعمیر"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Urdu",
+      "translation": "جدت اور عمدگی کے ذریعے ایک پائیدار مستقبل کی تعمیر"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Urdu",
+      "translation": "عالمی توسیع"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Urdu",
+      "translation": "ابھرتی ہوئی مارکیٹوں میں اپنی موجودگی کو بڑھانا اور قائم مارکیٹوں میں اپنی پوزیشن کو مضبوط بنانا"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Urdu",
+      "translation": "پروڈکٹ انوویشن"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Urdu",
+      "translation": "نئی مصنوعات تیار کرنے کے لیے R&D میں سرمایہ کاری کرنا جو صارفین کی ترقی پذیر ترجیحات کو پورا کرتی ہیں۔"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Urdu",
+      "translation": "پائیداری"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Urdu",
+      "translation": "ہماری سپلائی چین اور آپریشنز میں پائیدار طریقوں کے لیے پرعزم"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Urdu",
+      "translation": "ڈیجیٹل تبدیلی"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Urdu",
+      "translation": "کسٹمر کے تجربے اور آپریشنل کارکردگی کو بڑھانے کے لیے ٹیکنالوجی کا فائدہ اٹھانا"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Urdu",
+      "translation": "ہمارا وژن"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Urdu",
+      "translation": "کوالٹی، اختراع اور پائیداری کے لیے پہچانی جانے والی دنیا کی معروف پریمیم کنزیومر گڈز کمپنی بننا۔"
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس گلوبل وینچرز | پریمیم گلوبل ٹریڈنگ"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Urdu",
+      "translation": "10+ صنعتوں میں پریمیم مصنوعات فراہم کرنے والی معروف عالمی تجارتی کمپنی۔ 2019 سے 50+ ممالک میں کام کر رہا ہے۔"
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Urdu",
+      "translation": "ہمارے بارے میں | ہاروکس گلوبل وینچرز"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Urdu",
+      "translation": "دریافت کریں کہ کس طرح Harvics Global Ventures 40+ ممالک اور 10 صنعتوں میں عالمی تجارت میں ایک اہم قوت بنی۔"
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Urdu",
+      "translation": "ہم سے رابطہ کریں | ہاروکس گلوبل وینچرز"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Urdu",
+      "translation": "مشرق وسطیٰ، جنوبی ایشیا، یورپ، افریقہ اور امریکہ میں دنیا بھر میں ہاروکس کے دفاتر سے رابطے میں رہیں۔"
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Urdu",
+      "translation": "مصنوعات | ہاروکس گلوبل وینچرز"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Urdu",
+      "translation": "FMCG، ٹیکسٹائل، کموڈٹیز، اور صنعتی حلوں میں ہاروکس پریمیم پروڈکٹ رینج کو دریافت کریں۔"
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Urdu",
+      "translation": "کیریئرز | ہاروکس گلوبل وینچرز"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Urdu",
+      "translation": "Harvics Global Ventures میں شامل ہوں — FMCG، ٹیکسٹائل، لاجسٹکس اور ٹیکنالوجی میں 40+ ممالک میں مواقع تلاش کریں۔"
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Urdu",
+      "translation": "میڈیا سینٹر | ہاروکس گلوبل وینچرز"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس میڈیا سینٹر — پریس ریلیز، تازہ ترین خبریں، برانڈ اثاثے، اور میڈیا رابطے۔"
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Urdu",
+      "translation": "ہماری حکمت عملی | ہاروکس گلوبل وینچرز"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Urdu",
+      "translation": "عالمی توسیع، اختراع، پائیداری، اور ڈیجیٹل تبدیلی کے لیے ہاروکس اسٹریٹجک وژن۔"
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Urdu",
+      "translation": "کارپوریٹ سماجی ذمہ داری | ہاروکس"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس CSR کے اقدامات — ماحولیاتی ذمہ داری، کمیونٹی پروگرام، اور اخلاقی کاروباری طریقے۔"
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Urdu",
+      "translation": "اکثر پوچھے گئے سوالات | ہاروکس گلوبل وینچرز"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Urdu",
+      "translation": "Harvics مصنوعات، خدمات، آرڈرنگ، اور عالمی آپریشنز کے بارے میں اکثر پوچھے جانے والے سوالات۔"
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Urdu",
+      "translation": "عالمی مقامات | ہاروکس"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس کے دفاتر اور کام پورے مشرق وسطیٰ، جنوبی ایشیا، یورپ، افریقہ اور امریکہ میں ہیں۔"
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Urdu",
+      "translation": "قیادت ٹیم | ہاروکس"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Urdu",
+      "translation": "40+ مارکیٹوں اور 10 صنعتی عمودی حصوں میں ہاروکس گلوبل وینچرز چلانے والی قیادت کی ٹیم سے ملیں۔"
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Urdu",
+      "translation": "امدادی مرکز | ہاروکس"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Urdu",
+      "translation": "آرڈرز، اکاؤنٹس، شپنگ اور ہاروکس سروسز میں مدد حاصل کریں۔"
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Urdu",
+      "translation": "تعمیل اور اخلاقیات | ہاروکس"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Urdu",
+      "translation": "ریگولیٹری تعمیل، اخلاقی کاروباری طریقوں، اور عالمی معیارات کے لیے ہاروکس کی وابستگی۔"
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Urdu",
+      "translation": "ہماری تاریخ | ہاروکس"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Urdu",
+      "translation": "2019 میں دبئی کے اسٹارٹ اپ سے لے کر 40+ ممالک پر محیط عالمی انٹرپرائز تک - ہاروکس کی کہانی۔"
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Urdu",
+      "translation": "نیوز لیٹر | ہاروکس"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Urdu",
+      "translation": "صنعت کی بصیرت اور مصنوعات کے آغاز کے لیے ہاروکس نیوز لیٹر کو سبسکرائب کریں۔"
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Urdu",
+      "translation": "سائن ان کریں | ہاروکس"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Urdu",
+      "translation": "آرڈرز کا نظم کرنے اور پلیٹ فارم تک رسائی کے لیے اپنے ہاروکس اکاؤنٹ میں سائن ان کریں۔"
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Urdu",
+      "translation": "تحقیق اور اختراع | ہاروکس"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس تحقیقی اقدامات اور اختراعی پروگرام جو ہماری عالمی حکمت عملی کو آگے بڑھا رہے ہیں۔"
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Urdu",
+      "translation": "سرمایہ کار تعلقات | ہاروکس"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Urdu",
+      "translation": "ہاروکس گلوبل وینچرز سے سرمایہ کار کی معلومات، مالیاتی رپورٹیں اور کارپوریٹ اعلانات۔"
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Urdu",
+      "translation": "صفحہ نہیں ملا"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Urdu",
+      "translation": "404 - صفحہ نہیں ملا"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Urdu",
+      "translation": "آپ جس صفحہ کی تلاش کر رہے ہیں وہ موجود نہیں ہے یا اسے منتقل کر دیا گیا ہے۔"
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Urdu",
+      "translation": "ہوم پیج پر جائیں۔"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Urdu",
+      "translation": "واپس جاؤ"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Urdu",
+      "translation": "کچھ غلط ہو گیا۔"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Urdu",
+      "translation": "کچھ غلط ہو گیا۔"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Urdu",
+      "translation": "ہمیں افسوس ہے، لیکن کچھ غیر متوقع ہوا۔ براہ کرم صفحہ کو ریفریش کرنے کی کوشش کریں۔"
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Urdu",
+      "translation": "دوبارہ کوشش کریں۔"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Urdu",
+      "translation": "صفحہ دوبارہ لوڈ کریں۔"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Urdu",
+      "translation": "سپورٹ سے رابطہ کریں۔"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Urdu",
+      "translation": "درخواست میں خرابی"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Urdu",
+      "translation": "اہم خرابی"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Urdu",
+      "translation": "ایک اہم خرابی پیش آگئی۔ براہ کرم صفحہ دوبارہ لوڈ کریں۔"
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Urdu",
+      "translation": "درخواست دوبارہ لوڈ کریں۔"
+    }
+  }
+}

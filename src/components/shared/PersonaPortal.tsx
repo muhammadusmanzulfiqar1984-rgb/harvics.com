@@ -10,8 +10,42 @@ interface PersonaPortalProps {
   locale: string
 }
 
+interface ForexRate {
+  currency?: string
+  rate?: number
+  buy?: number
+  sell?: number
+  buyRate?: number
+  sellRate?: number
+}
+
+interface PortalData {
+  kpis?: Record<string, number | string>
+  domains?: {
+    orders?: { total?: number; pending?: number; completed?: number; currency?: string; revenue?: number }
+    inventory?: { totalValue?: number; items?: number; lowStock?: number; categories?: number }
+    logistics?: { efficiency?: number; deliveries?: number; onTime?: number; routes?: number }
+    finance?: { currency?: string; revenue?: number; expenses?: number; profit?: number; pending?: number }
+    crm?: { totalCustomers?: number; active?: number; new?: number; satisfaction?: number }
+    hr?: { totalEmployees?: number; departments?: number; satisfaction?: number; openPositions?: number; active?: number; attendance?: number }
+    executive?: { alerts?: number; compliance?: number; score?: number; profit?: number; growth?: number; marketShare?: number; roi?: number }
+    legal?: { activeCases?: number; pendingFilings?: number; compliance?: number }
+    procurement?: { totalPOs?: number; pending?: number; approved?: number; suppliers?: number }
+    [key: string]: Record<string, unknown> | undefined
+  }
+  forex?: { rates?: ForexRate[]; lastUpdated?: string }
+  live?: boolean
+  ai?: {
+    forecast?: { percentage?: number }
+    alerts?: Array<{ title?: string; message?: string }>
+    [key: string]: unknown
+  }
+  activity?: Array<{ description?: string; action_type?: string; created_at?: string }>
+  [key: string]: unknown
+}
+
 export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
-  const [data, setData] = useState<unknown>(null)
+  const [data, setData] = useState<PortalData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const { selectedCountry } = useCountry()
@@ -146,10 +180,10 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
           console.log('All APIs failed, using demo data')
           setData(getDemoData(persona))
         } else {
-          setData(domainData)
+          setData(domainData as unknown as PortalData)
         }
       } else {
-        setData(response.data)
+        setData(response.data as PortalData)
       }
 
       // Also load domain services to show full CRM
@@ -196,18 +230,18 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
         }
         [key: string]: unknown
       }
-      setData((prev: unknown) => ({
-        ...(prev as Record<string, unknown>),
+      setData((prev: PortalData | null) => ({
+        ...(prev || {}),
         domains: {
-          orders: ordersRes.status === 'fulfilled' ? ((ordersRes.value as { data?: unknown })?.data ?? null) : ((prev as PrevData)?.domains?.orders || getDemoDomainData('orders')),
-          inventory: inventoryRes.status === 'fulfilled' ? ((inventoryRes.value as { data?: unknown })?.data ?? null) : ((prev as PrevData)?.domains?.inventory || getDemoDomainData('inventory')),
-          logistics: logisticsRes.status === 'fulfilled' ? ((logisticsRes.value as { data?: unknown })?.data ?? null) : ((prev as PrevData)?.domains?.logistics || getDemoDomainData('logistics')),
-          finance: financeRes.status === 'fulfilled' ? ((financeRes.value as { data?: unknown })?.data ?? null) : ((prev as PrevData)?.domains?.finance || getDemoDomainData('finance')),
-          crm: crmRes.status === 'fulfilled' ? ((crmRes.value as { data?: unknown })?.data ?? null) : ((prev as PrevData)?.domains?.crm || getDemoDomainData('crm')),
-          hr: hrRes.status === 'fulfilled' ? ((hrRes.value as { data?: unknown })?.data ?? null) : ((prev as PrevData)?.domains?.hr || getDemoDomainData('hr')),
-          executive: executiveRes.status === 'fulfilled' ? ((executiveRes.value as { data?: unknown })?.data ?? null) : ((prev as PrevData)?.domains?.executive || getDemoDomainData('executive'))
+          orders: ordersRes.status === 'fulfilled' ? ((ordersRes.value as { data?: unknown })?.data ?? null) : (prev?.domains?.orders || getDemoDomainData('orders')),
+          inventory: inventoryRes.status === 'fulfilled' ? ((inventoryRes.value as { data?: unknown })?.data ?? null) : (prev?.domains?.inventory || getDemoDomainData('inventory')),
+          logistics: logisticsRes.status === 'fulfilled' ? ((logisticsRes.value as { data?: unknown })?.data ?? null) : (prev?.domains?.logistics || getDemoDomainData('logistics')),
+          finance: financeRes.status === 'fulfilled' ? ((financeRes.value as { data?: unknown })?.data ?? null) : (prev?.domains?.finance || getDemoDomainData('finance')),
+          crm: crmRes.status === 'fulfilled' ? ((crmRes.value as { data?: unknown })?.data ?? null) : (prev?.domains?.crm || getDemoDomainData('crm')),
+          hr: hrRes.status === 'fulfilled' ? ((hrRes.value as { data?: unknown })?.data ?? null) : (prev?.domains?.hr || getDemoDomainData('hr')),
+          executive: executiveRes.status === 'fulfilled' ? ((executiveRes.value as { data?: unknown })?.data ?? null) : (prev?.domains?.executive || getDemoDomainData('executive'))
         }
-      }))
+      } as PortalData))
     } catch (err) {
       console.error('Error loading domain services:', err)
     }
@@ -608,7 +642,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                       </tr>
                     </thead>
                     <tbody>
-                      {data.forex.rates.slice(0, 8).map((rate: { currency?: string; rate?: number; buy?: number; sell?: number }) => (
+                      {data.forex.rates.slice(0, 8).map((rate: ForexRate) => (
                         <tr key={rate.currency} className="border-b border-gray-100 hover:bg-gray-50">
                           <td className="py-3 px-4">
                             <span className="font-bold text-gray-900">{rate.currency}</span>

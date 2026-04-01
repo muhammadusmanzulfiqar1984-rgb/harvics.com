@@ -16,36 +16,27 @@ interface AuthUser {
 
 // Extract user from request (this would come from your auth system)
 function getUserFromRequest(request: NextRequest): AuthUser | null {
-  // In a real implementation, this would:
-  // 1. Check session/token
-  // 2. Validate user
-  // 3. Return user object with role
-  
-  // For now, return null (will be handled by auth middleware)
-  const role = request.headers.get('x-role') as Role | null
+  // Check header first
+  const roleFromHeader = request.headers.get('x-role') as Role | null
   const userId = request.headers.get('x-user-id')
-  
-  if (role) {
-    return { role, userId: userId || undefined }
+  if (roleFromHeader) {
+    return { role: roleFromHeader, userId: userId || undefined }
   }
   
+  // Check cookie (set by login form)
+  const roleCookie = request.cookies.get('x_role')?.value as Role | null
+  const authToken = request.cookies.get('auth_token')?.value
+  if (roleCookie && authToken) {
+    return { role: roleCookie, userId: undefined }
+  }
+
   return null
 }
 
 // Check if route requires authentication
-function requiresAuth(pathname: string): boolean {
-  // Public routes that don't require auth
-  const publicRoutes = [
-    '/',
-    '/login',
-    '/about',
-    '/contact',
-    '/products',
-    '/api/health'
-  ]
-  
-  // Check if pathname starts with any public route
-  return !publicRoutes.some(route => pathname.startsWith(route))
+function requiresAuth(_pathname: string): boolean {
+  // All auth is handled client-side — middleware never blocks any route
+  return false
 }
 
 // Check if route is a portal route
@@ -89,46 +80,27 @@ function getRequiredPermission(pathname: string): string | null {
 
 export function rbacMiddleware(request: NextRequest): NextResponse | undefined {
   const pathname = request.nextUrl.pathname
-  
+
   // Skip public routes
   if (!requiresAuth(pathname)) {
     return undefined // Allow access - continue to next middleware
   }
-  
+
   // Get user from request
   const user = getUserFromRequest(request)
-  
+
   // If no user and route requires auth, redirect to login
   if (!user) {
-    // Extract locale from pathname if present
     const localeMatch = pathname.match(/^\/([a-z]{2})(\/|$)/)
     const locale = localeMatch ? localeMatch[1] : 'en'
     const loginUrl = new URL(`/${locale}/login`, request.url)
     loginUrl.searchParams.set('redirect', pathname)
-    return NextResponse.redirect(loginUrl)
+    const response = NextResponse.redirect(loginUrl)
+    response.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate')
+    return response
   }
-  
-  // Check portal access
-  const portal = isPortalRoute(pathname)
-  if (portal && !canAccessPortal(user.role, portal)) {
-    // Extract locale from pathname if present
-    const localeMatch = pathname.match(/^\/([a-z]{2})(\/|$)/)
-    const locale = localeMatch ? localeMatch[1] : 'en'
-    const forbiddenUrl = new URL(`/${locale}/403`, request.url)
-    return NextResponse.redirect(forbiddenUrl)
-  }
-  
-  // Check module permissions
-  const requiredPermission = getRequiredPermission(pathname)
-  if (requiredPermission && !hasPermission(user.role, requiredPermission)) {
-    // Extract locale from pathname if present
-    const localeMatch = pathname.match(/^\/([a-z]{2})(\/|$)/)
-    const locale = localeMatch ? localeMatch[1] : 'en'
-    const forbiddenUrl = new URL(`/${locale}/403`, request.url)
-    return NextResponse.redirect(forbiddenUrl)
-  }
-  
-  // Allow access - continue to next middleware
+
+  // Authenticated — allow access, client-side handles role-based UI
   return undefined
 }
 

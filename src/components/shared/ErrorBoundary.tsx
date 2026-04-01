@@ -7,6 +7,13 @@ interface Props {
   children: ReactNode
   fallback?: ReactNode
   onError?: (error: Error, errorInfo: ErrorInfo) => void
+  // Localized text — pass from parent server component via getTranslations
+  i18n?: {
+    heading?: string
+    description?: string
+    tryAgain?: string
+    reload?: string
+  }
 }
 
 interface State {
@@ -82,11 +89,11 @@ class ErrorBoundary extends Component<Props, State> {
             </div>
             
             <h2 className="text-xl font-bold text-black text-center mb-2">
-              Something went wrong
+              {this.props.i18n?.heading || 'Something went wrong'}
             </h2>
             
             <p className="text-black text-center mb-4">
-              We're sorry, but something unexpected happened. Please try refreshing the page.
+              {this.props.i18n?.description || "We're sorry, but something unexpected happened. Please try refreshing the page."}
             </p>
 
             {process.env.NODE_ENV === 'development' && this.state.error && (
@@ -104,15 +111,15 @@ class ErrorBoundary extends Component<Props, State> {
             <div className="flex gap-3">
               <button
                 onClick={this.handleReset}
-                className="flex-1 bg-white text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#5a0012] transition-colors"
+                className="flex-1 bg-[#6B1F2B] text-white px-4 py-2 font-semibold hover:bg-[#5a0012] transition-colors"
               >
-                Try Again
+                {this.props.i18n?.tryAgain || 'Try Again'}
               </button>
               <button
                 onClick={() => window.location.reload()}
-                className="flex-1 bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-white transition-colors"
+                className="flex-1 border border-[#6B1F2B] text-[#6B1F2B] px-4 py-2 font-semibold hover:bg-[#6B1F2B] hover:text-white transition-colors"
               >
-                Reload Page
+                {this.props.i18n?.reload || 'Reload Page'}
               </button>
             </div>
           </div>

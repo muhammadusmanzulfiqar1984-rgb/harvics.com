@@ -1,143 +1,191 @@
 /**
- * CRM CRUD Controller
+ * CRM CRUD Controller (Prisma-backed)
  * 
  * Customers:  POST/GET/PUT/DELETE /api/crm/customers
  * Leads:      POST/GET/PUT/DELETE /api/crm/leads
  * Campaigns:  POST/GET/PUT/DELETE /api/crm/campaigns
  * Summary:    GET /api/crm/summary
+ * 
+ * LOCALIZATION: All responses are locale-aware based on req.locale
  */
 
 import { Router, Request, Response } from 'express';
-import { customersStore, leadsStore, campaignsStore } from '../../core/dataStore';
+import { customersDb, leadsDb, campaignsDb } from '../../core/db';
+import { translateCustomerSegment, translateError, translateMessage, t } from '../../core/translate';
+import '../../middleware/locale';
 
 const router = Router();
 
+// Helper to get locale
+const getLocale = (req: Request): string => (req as any).locale || 'en';
+
+// Helper to localize customer
+const localizeCustomer = (customer: any, locale: string) => {
+  if (!customer) return customer;
+  return {
+    ...customer,
+    segmentText: translateCustomerSegment(customer.segment, locale),
+  };
+};
+
 // ── SUMMARY ─────────────────────────────────────────────────────────
-router.get('/summary', (_req: Request, res: Response) => {
-  const customers = customersStore.list({}, 1, 10000);
-  const leads = leadsStore.list({}, 1, 10000);
-  const campaigns = campaignsStore.list({}, 1, 10000);
+router.get('/summary', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
+  const [customers, leads, campaigns] = await Promise.all([
+    customersDb.list({}, 1, 10000),
+    leadsDb.list({}, 1, 10000),
+    campaignsDb.list({}, 1, 10000),
+  ]);
 
   res.json({
     success: true,
+    message: translateMessage('fetched', locale),
     data: {
       totalCustomers: customers.total,
       totalLeads: leads.total,
-      activeCampaigns: campaigns.data.filter(c => c.status === 'Active').length,
-      totalLifetimeValue: customers.data.reduce((s, c) => s + (c.lifetimeValue || 0), 0),
+      activeCampaigns: campaigns.data.filter((c: any) => c.status === 'Active').length,
+      totalLifetimeValue: customers.data.reduce((s: number, c: any) => s + (c.lifetimeValue || 0), 0),
       leadsByStage: {
-        Lead: leads.data.filter(l => l.stage === 'Lead').length,
-        Qualified: leads.data.filter(l => l.stage === 'Qualified').length,
-        Proposal: leads.data.filter(l => l.stage === 'Proposal').length,
-        Negotiation: leads.data.filter(l => l.stage === 'Negotiation').length,
+        Lead: leads.data.filter((l: any) => l.stage === 'Lead').length,
+        Qualified: leads.data.filter((l: any) => l.stage === 'Qualified').length,
+        Proposal: leads.data.filter((l: any) => l.stage === 'Proposal').length,
+        Negotiation: leads.data.filter((l: any) => l.stage === 'Negotiation').length,
       },
       conversionRate: campaigns.data.length > 0
-        ? Math.round(campaigns.data.reduce((s, c) => s + (c.conversions || 0), 0) / Math.max(campaigns.data.reduce((s, c) => s + (c.leads || 0), 0), 1) * 100)
+        ? Math.round(campaigns.data.reduce((s: number, c: any) => s + (c.conversions || 0), 0) / Math.max(campaigns.data.reduce((s: number, c: any) => s + (c.leads || 0), 0), 1) * 100)
         : 0
     }
   });
 });
 
 // ── CUSTOMERS ────────────────────────────────────────────────────────
-router.get('/customers', (req: Request, res: Response) => {
+router.get('/customers', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
   const { segment, country, city, page, limit } = req.query;
-  const result = customersStore.list({ segment, country, city }, Number(page) || 1, Number(limit) || 50);
-  res.json({ success: true, ...result });
+  const result = await customersDb.list({ segment, country, city }, Number(page) || 1, Number(limit) || 50);
+  const localizedData = result.data.map((c: any) => localizeCustomer(c, locale));
+  res.json({ success: true, ...result, data: localizedData });
 });
 
-router.get('/customers/:id', (req: Request, res: Response) => {
-  const customer = customersStore.get(req.params.id);
-  if (!customer) return res.status(404).json({ success: false, error: 'Customer not found' });
-  res.json({ success: true, data: customer });
+router.get('/customers/:id', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
+  const customer = await customersDb.get(req.params.id);
+  if (!customer) return res.status(404).json({ success: false, error: t('crm.messages.customerNotFound', locale) });
+  res.json({ success: true, data: localizeCustomer(customer, locale) });
 });
 
-router.post('/customers', (req: Request, res: Response) => {
+router.post('/customers', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
   const { name, segment, country, city, contactEmail } = req.body;
-  if (!name) return res.status(400).json({ success: false, error: 'name is required' });
-  const customer = customersStore.create({
+  if (!name) return res.status(400).json({ success: false, error: translateError('missingFields', locale) });
+  const customer = await customersDb.create({
     name, segment: segment || 'Retail', country, city,
     creditRating: 'B', lifetimeValue: 0,
     contactEmail: contactEmail || ''
   }, 'crm.customer.created');
-  res.status(201).json({ success: true, data: customer });
+  res.status(201).json({ success: true, data: localizeCustomer(customer, locale), message: t('crm.messages.customerCreated', locale) });
 });
 
-router.put('/customers/:id', (req: Request, res: Response) => {
-  const updated = customersStore.update(req.params.id, req.body);
-  if (!updated) return res.status(404).json({ success: false, error: 'Customer not found' });
-  res.json({ success: true, data: updated });
+router.put('/customers/:id', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
+  const updated = await customersDb.update(req.params.id, req.body);
+  if (!updated) return res.status(404).json({ success: false, error: t('crm.messages.customerNotFound', locale) });
+  res.json({ success: true, data: localizeCustomer(updated, locale), message: t('crm.messages.customerUpdated', locale) });
 });
 
-router.delete('/customers/:id', (req: Request, res: Response) => {
-  if (!customersStore.get(req.params.id)) return res.status(404).json({ success: false, error: 'Customer not found' });
-  customersStore.delete(req.params.id);
-  res.json({ success: true, message: 'Customer deleted' });
+router.delete('/customers/:id', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
+  const exists = await customersDb.get(req.params.id);
+  if (!exists) return res.status(404).json({ success: false, error: t('crm.messages.customerNotFound', locale) });
+  await customersDb.delete(req.params.id);
+  res.json({ success: true, message: t('crm.messages.customerDeleted', locale) });
 });
 
 // ── LEADS ────────────────────────────────────────────────────────────
-router.get('/leads', (req: Request, res: Response) => {
+router.get('/leads', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
   const { stage, source, page, limit } = req.query;
-  const result = leadsStore.list({ stage, source }, Number(page) || 1, Number(limit) || 50);
+  const result = await leadsDb.list({ stage, source }, Number(page) || 1, Number(limit) || 50);
   res.json({ success: true, ...result });
 });
 
-router.get('/leads/:id', (req: Request, res: Response) => {
-  const lead = leadsStore.get(req.params.id);
-  if (!lead) return res.status(404).json({ success: false, error: 'Lead not found' });
+router.get('/leads/:id', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
+  const lead = await leadsDb.get(req.params.id);
+  if (!lead) return res.status(404).json({ success: false, error: t('crm.messages.leadNotFound', locale) });
   res.json({ success: true, data: lead });
 });
 
-router.post('/leads', (req: Request, res: Response) => {
+router.post('/leads', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
   const { company, contact, email, stage, value, source } = req.body;
-  if (!company) return res.status(400).json({ success: false, error: 'company is required' });
-  const lead = leadsStore.create({
+  if (!company) return res.status(400).json({ success: false, error: translateError('missingFields', locale) });
+  const lead = await leadsDb.create({
     company, contact, email, stage: stage || 'Lead',
     value: value || 0, source: source || 'Manual'
   }, 'crm.lead.created');
-  res.status(201).json({ success: true, data: lead });
+  res.status(201).json({ success: true, data: lead, message: t('crm.messages.leadCreated', locale) });
 });
 
-router.put('/leads/:id', (req: Request, res: Response) => {
-  const updated = leadsStore.update(req.params.id, req.body);
-  if (!updated) return res.status(404).json({ success: false, error: 'Lead not found' });
-  res.json({ success: true, data: updated });
+router.put('/leads/:id', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
+  const updated = await leadsDb.update(req.params.id, req.body);
+  if (!updated) return res.status(404).json({ success: false, error: t('crm.messages.leadNotFound', locale) });
+  res.json({ success: true, data: updated, message: t('crm.messages.leadUpdated', locale) });
 });
 
-router.delete('/leads/:id', (req: Request, res: Response) => {
-  if (!leadsStore.get(req.params.id)) return res.status(404).json({ success: false, error: 'Lead not found' });
-  leadsStore.delete(req.params.id);
-  res.json({ success: true, message: 'Lead deleted' });
+router.delete('/leads/:id', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
+  const exists = await leadsDb.get(req.params.id);
+  if (!exists) return res.status(404).json({ success: false, error: t('crm.messages.leadNotFound', locale) });
+  await leadsDb.delete(req.params.id);
+  res.json({ success: true, message: t('crm.messages.leadDeleted', locale) });
 });
 
 // ── CAMPAIGNS ────────────────────────────────────────────────────────
-router.get('/campaigns', (req: Request, res: Response) => {
+router.get('/campaigns', async (req: Request, res: Response) => {
   const { status, type, page, limit } = req.query;
-  const result = campaignsStore.list({ status, type }, Number(page) || 1, Number(limit) || 50);
+  const result = await campaignsDb.list({ status, type }, Number(page) || 1, Number(limit) || 50);
   res.json({ success: true, ...result });
 });
 
-router.post('/campaigns', (req: Request, res: Response) => {
+router.post('/campaigns', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
   const { name, type, budget, startDate, endDate } = req.body;
-  if (!name) return res.status(400).json({ success: false, error: 'name is required' });
-  const campaign = campaignsStore.create({
+  if (!name) return res.status(400).json({ success: false, error: translateError('missingFields', locale) });
+  const campaign = await campaignsDb.create({
     name, type: type || 'General', status: 'Active',
     budget: budget || 0, spent: 0, leads: 0, conversions: 0,
     startDate: startDate || new Date().toISOString().slice(0, 10),
     endDate: endDate || ''
   }, 'crm.campaign.launched');
-  res.status(201).json({ success: true, data: campaign });
+  res.status(201).json({ success: true, data: campaign, message: t('crm.messages.campaignCreated', locale) });
 });
 
-router.put('/campaigns/:id', (req: Request, res: Response) => {
-  const updated = campaignsStore.update(req.params.id, req.body);
-  if (!updated) return res.status(404).json({ success: false, error: 'Campaign not found' });
-  res.json({ success: true, data: updated });
+router.put('/campaigns/:id', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
+  const updated = await campaignsDb.update(req.params.id, req.body);
+  if (!updated) return res.status(404).json({ success: false, error: t('crm.messages.campaignNotFound', locale) });
+  res.json({ success: true, data: updated, message: t('crm.messages.campaignUpdated', locale) });
 });
 
-router.delete('/campaigns/:id', (req: Request, res: Response) => {
-  if (!campaignsStore.get(req.params.id)) return res.status(404).json({ success: false, error: 'Campaign not found' });
-  campaignsStore.delete(req.params.id);
-  res.json({ success: true, message: 'Campaign deleted' });
+router.delete('/campaigns/:id', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
+  const exists = await campaignsDb.list({ id: req.params.id }, 1, 1);
+  if (exists.total === 0) return res.status(404).json({ success: false, error: t('crm.messages.campaignNotFound', locale) });
+  await campaignsDb.delete(req.params.id);
+  res.json({ success: true, message: translateMessage('deleted', locale) });
+});
+
+// Root route — returns summary
+router.get('/', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
+  const [customers, leads, campaigns] = await Promise.all([
+    customersDb.list({}, 1, 5),
+    leadsDb.list({}, 1, 5),
+    campaignsDb.list({}, 1, 5),
+  ]);
+  res.json({ success: true, message: translateMessage('fetched', locale), data: { customers: customers.data, leads: leads.data, campaigns: campaigns.data } });
 });
 
 export default router;

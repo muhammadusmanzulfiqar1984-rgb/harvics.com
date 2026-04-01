@@ -1,10 +1,11 @@
 
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Compliance & Ethics | Harvics',
-  description: 'Harvics commitment to regulatory compliance, ethical business practices, and global standards.',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'compliance')
 }
 
 interface CompliancePageProps {
@@ -35,7 +36,7 @@ export default async function CompliancePage({ params }: CompliancePageProps) {
   ]
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
       <section className="bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40">
         <div className="max-w-[1200px] mx-auto text-center">
@@ -86,7 +87,7 @@ export default async function CompliancePage({ params }: CompliancePageProps) {
           <h2 className="text-2xl font-semibold text-[#6B1F2B] mb-8 text-center">Corporate Policies</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[800px] mx-auto">
             {policies.map((p) => (
-              <div key={p} className="flex items-center gap-3 p-4 border border-[#C3A35E]/15 bg-[#F5F1E8]" style={{ borderRadius: 0 }}>
+              <div key={p} className="flex items-center gap-3 p-4 border border-[#C3A35E]/15 bg-white" style={{ borderRadius: 0 }}>
                 <span className="text-[#C3A35E] font-bold">✓</span>
                 <span className="text-sm font-medium text-[#6B1F2B]">{p}</span>
               </div>

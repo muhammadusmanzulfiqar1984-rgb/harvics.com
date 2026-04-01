@@ -3,10 +3,11 @@ import { getFolderBasedCategories } from '@/data/folderBasedProducts'
 import { getFooterPageContent } from '@/utils/contentPopulator'
 
 import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Newsletter | Harvics',
-  description: 'Subscribe to Harvics newsletter for industry insights.',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'newsletter')
 }
 
 

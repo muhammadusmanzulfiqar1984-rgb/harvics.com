@@ -1,17 +1,75 @@
 'use client'
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
+import { useCountry } from '@/contexts/CountryContext'
 import OSDomainPageWrapper from '@/components/os-domains/OSDomainPageWrapper'
 import KPICard from '@/components/shared/KPICard'
+import { apiClient } from '@/lib/api'
 
 export default function GeoOSPage() {
   const locale = useLocale()
   const pathname = usePathname()
+  const { selectedCountry } = useCountry()
+  const [loading, setLoading] = useState(true)
+  const [data, setData] = useState<any>(null)
   
   const portal = pathname?.includes('/portal/distributor') ? 'distributor' :
                  pathname?.includes('/portal/supplier') ? 'supplier' : 'company'
+
+  const countryCode = selectedCountry || 'AE'
+
+  useEffect(() => {
+    loadData()
+  }, [countryCode])
+
+  const loadData = async () => {
+    setLoading(true)
+    try {
+      const [territoryRes, gpsRetailers, gpsRoutes] = await Promise.all([
+        apiClient.request('/territory/continents'),
+        apiClient.request(`/gps/retailers/${countryCode}`),
+        apiClient.request(`/gps/routes/${countryCode}`)
+      ])
+      
+      const territories = (territoryRes?.data as any[]) || []
+      const gpsData = (gpsRetailers?.data as any) || {}
+      const routes = (gpsRoutes?.data as any)?.routes || []
+      
+      setData({
+        territories: territories.length || 0,
+        gpsPoints: gpsData.totalRetailers || 0,
+        routesTracked: routes.length || 0,
+        coverageArea: gpsData.coverageAreas?.length || territories.length || 0
+      })
+    } catch (error) {
+      console.error('Error loading geo data:', error)
+      setData({
+        territories: 0,
+        gpsPoints: 0,
+        routesTracked: 0,
+        coverageArea: 0
+      })
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  if (loading) {
+    return (
+      <OSDomainPageWrapper
+        title="Geo Engine"
+        description="Tier 0: Foundational Engine - Territory maps, GPS trails, heatmaps, and geographic intelligence"
+        domain="geo"
+        portal={portal}
+      >
+        <div className="flex items-center justify-center py-12">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#C3A35E]"></div>
+        </div>
+      </OSDomainPageWrapper>
+    )
+  }
 
   return (
     <OSDomainPageWrapper
@@ -24,22 +82,22 @@ export default function GeoOSPage() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
           <KPICard
             label="Territories"
-            value="234"
+            value={data?.territories || 0}
             icon="🗺️"
           />
           <KPICard
             label="GPS Points"
-            value="1.2M"
+            value={data?.gpsPoints ? `${(data.gpsPoints / 1000).toFixed(1)}K` : '0'}
             icon="📍"
           />
           <KPICard
             label="Routes Tracked"
-            value="5,678"
+            value={data?.routesTracked || 0}
             icon="🛣️"
           />
           <KPICard
             label="Coverage Area"
-            value="45"
+            value={data?.coverageArea || 0}
             icon="🌍"
           />
         </div>

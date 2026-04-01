@@ -18,6 +18,7 @@ export default function AlertDashboardContent({ persona, locale }: AlertDashboar
     warning?: number
     info?: number
     resolved?: number
+    anomalies?: any[]
   }
   const [alertData, setAlertData] = useState<AlertData | null>(null)
 
@@ -28,25 +29,38 @@ export default function AlertDashboardContent({ persona, locale }: AlertDashboar
   const loadAlerts = async () => {
     setLoading(true)
     try {
-      const response = await apiClient.getCompanyDashboard({
-        scope: 'global',
-        country: selectedCountry || 'global',
-        period: 'last30days',
-        currency: 'USD'
+      const anomaliesRes = await apiClient.request('/intelligence/anomalies')
+      const anomalies = (anomaliesRes?.data as any)?.anomalies || []
+      
+      // Categorize anomalies by severity
+      let critical = 0
+      let warning = 0
+      let info = 0
+      
+      anomalies.forEach((anomaly: any) => {
+        if (anomaly.severity === 'high' || anomaly.severity === 'critical') {
+          critical++
+        } else if (anomaly.severity === 'medium' || anomaly.severity === 'warning') {
+          warning++
+        } else {
+          info++
+        }
       })
+      
       setAlertData({
-        critical: 3,
-        warning: 12,
-        info: 45,
-        resolved: 234
+        critical,
+        warning,
+        info,
+        resolved: 234, // Mock resolved count
+        anomalies: anomalies
       })
     } catch (error) {
       console.error('Error loading alerts:', error)
       setAlertData({
-        critical: 3,
-        warning: 12,
-        info: 45,
-        resolved: 234
+        critical: 0,
+        warning: 0,
+        info: 0,
+        resolved: 0
       })
     } finally {
       setLoading(false)
@@ -56,7 +70,7 @@ export default function AlertDashboardContent({ persona, locale }: AlertDashboar
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#C3A35E]"></div>
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#E5E5EA]"></div>
       </div>
     )
   }
@@ -69,8 +83,8 @@ export default function AlertDashboardContent({ persona, locale }: AlertDashboar
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-xl font-semibold text-black">Alert Dashboard</h3>
-        <button className="bg-[#C3A35E] text-black px-4 py-2 rounded-lg font-semibold hover:bg-[#C3A35E] transition-colors">
+        <h3 className="text-sm font-semibold text-[#1D1D1F]">Alert Dashboard</h3>
+        <button className="px-4 py-2 bg-[#6B1F2B] text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
           View All Alerts
         </button>
       </div>
@@ -84,7 +98,7 @@ export default function AlertDashboardContent({ persona, locale }: AlertDashboar
         <KPICard
           label="Warning"
           value={warning}
-          icon="⚠️"
+          icon={<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><path d="M8 2L1.5 13.5h13L8 2z"/><path d="M8 7v3M8 11.5v.5"/></svg>}
         />
         <KPICard
           label="Info"
@@ -94,41 +108,34 @@ export default function AlertDashboardContent({ persona, locale }: AlertDashboar
         <KPICard
           label="Resolved"
           value={resolved}
-          icon="✅"
+          icon={<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><circle cx="8" cy="8" r="6.5"/><path d="M5 8l2 2 4-4"/></svg>}
         />
       </div>
 
-      <div className="bg-white border border-black200 rounded-lg p-6">
-        <h4 className="text-lg font-semibold text-black mb-4">Recent Alerts</h4>
+      <div className="bg-white rounded-2xl border border-[#E5E5EA] overflow-hidden">
+        <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Recent Alerts</h4>
         <p className="text-black mb-4">Real-time AI-generated alerts and exceptions requiring attention.</p>
         <div className="mt-4 space-y-3">
-          <div className="p-4 bg-red-50 border-l-4 border-red-500 rounded">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="font-semibold text-black">Critical: Low Inventory Alert</p>
-                <p className="text-sm text-black/70">5 SKUs below reorder point in Warehouse A</p>
+          {(alertData?.anomalies || []).map((anomaly: any, idx: number) => {
+            const severity = anomaly.severity || 'low'
+            const bgColor = severity === 'high' || severity === 'critical' ? 'bg-[#F5F5F7]' : severity === 'medium' || severity === 'warning' ? 'bg-[#F5F5F7]' : 'bg-[#F5F5F7]'
+            const borderColor = severity === 'high' || severity === 'critical' ? 'border-red-500' : severity === 'medium' || severity === 'warning' ? 'border-yellow-500' : 'border-blue-500'
+            const badgeBg = severity === 'high' || severity === 'critical' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : severity === 'medium' || severity === 'warning' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'
+            return (
+              <div key={idx} className={`p-4 ${bgColor} border-l-4 ${borderColor} rounded`}>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="font-semibold text-black">{anomaly.domain}: {anomaly.message}</p>
+                    <p className="text-sm text-black/70">Confidence: {((anomaly.confidence || 0) * 100).toFixed(0)}% — {anomaly.detectedAt ? new Date(anomaly.detectedAt).toLocaleString() : ''}</p>
+                  </div>
+                  <span className={`px-2 py-1 ${badgeBg} rounded text-xs capitalize`}>{severity}</span>
+                </div>
               </div>
-              <span className="px-2 py-1 bg-red-100 text-red-700 rounded text-xs">Critical</span>
-            </div>
-          </div>
-          <div className="p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="font-semibold text-black">Warning: Payment Delay</p>
-                <p className="text-sm text-black/70">3 invoices overdue {'>'} 60 days</p>
-              </div>
-              <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs">Warning</span>
-            </div>
-          </div>
-          <div className="p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="font-semibold text-black">Info: IPR Renewal</p>
-                <p className="text-sm text-black/70">2 IPR renewals due in 30 days</p>
-              </div>
-              <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">Info</span>
-            </div>
-          </div>
+            )
+          })}
+          {(!alertData?.anomalies || alertData.anomalies.length === 0) && (
+            <p className="text-gray-500 text-center py-4">No active alerts</p>
+          )}
         </div>
       </div>
     </div>

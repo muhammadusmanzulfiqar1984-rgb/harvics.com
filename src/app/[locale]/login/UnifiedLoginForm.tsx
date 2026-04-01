@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 import { useRouter } from 'next/navigation'
 
@@ -8,7 +8,10 @@ export default function UnifiedLoginForm() {
   const locale = useLocale()
   const router = useRouter()
   const t = useTranslations('common')
+  const tForm = useTranslations('form')
   const tContact = useTranslations('contact')
+  const usernameRef = useRef<HTMLInputElement>(null)
+  const passwordRef = useRef<HTMLInputElement>(null)
   const [formData, setFormData] = useState({
     username: '',
     password: ''
@@ -22,46 +25,51 @@ export default function UnifiedLoginForm() {
     setError('')
 
     try {
-      const { apiClient } = await import('@/lib/api')
-      const response = await apiClient.login(formData.username, formData.password)
+      // Read directly from DOM as fallback in case React state was reset by hydration
+      const usernameInput = (document.querySelector('input[name="username"]') as HTMLInputElement)?.value
+      const passwordInput = (document.querySelector('input[name="password"]') as HTMLInputElement)?.value
+      const username = usernameRef.current?.value || formData.username || usernameInput || ''
+      const password = passwordRef.current?.value || formData.password || passwordInput || ''
 
-      if (response.error) {
-        // Fallback to demo credentials if backend is not available
-        if (
-          (formData.username === 'admin' && formData.password === 'admin') ||
-          (formData.username === 'distributor_user' && formData.password === 'password') ||
-          (formData.username === 'supplier_user' && formData.password === 'password') ||
-          (formData.username === 'hq_user' && formData.password === 'password')
-        ) {
-           console.warn('[Login] Backend failed, using demo fallback for:', formData.username)
-           
-           // Mock successful login for demo
-           const mockRole = 
-             formData.username.includes('supplier') ? 'supplier' :
-             formData.username.includes('distributor') ? 'distributor' :
-             formData.username === 'hq_user' ? 'hq' : 'admin';
-             
-           const mockToken = `demo-token-${mockRole}`
-           const mockUser = {
-             username: formData.username,
-             role: mockRole,
-             scope: {
-               userId: formData.username,
-               role: mockRole,
-               geographic: { global: true, countries: [], territories: [] }
-             }
-           }
+      // Check demo credentials FIRST — before any backend call
+      const demoCredentials: Record<string, string> = {
+        'admin': 'admin',
+        'distributor_user': 'password',
+        'supplier_user': 'password',
+        'hq_user': 'password',
+        'sales_officer_user': 'password',
+        'country_manager_user': 'password',
+      }
 
-           if (typeof window !== 'undefined') {
-             localStorage.setItem('auth_token', mockToken)
-             localStorage.setItem('user_data', JSON.stringify(mockUser))
-             localStorage.setItem('user_scope', JSON.stringify(mockUser.scope))
-           }
-           
-           routeByRole(mockRole)
-           return
+      if (demoCredentials[username] === password) {
+        const mockRole =
+          username.includes('supplier') ? 'supplier' :
+          username.includes('distributor') ? 'distributor' :
+          username.includes('sales') ? 'distributor' :
+          username === 'hq_user' || username.includes('manager') ? 'hq' : 'company_admin'
+
+        const mockToken = `demo-token-${mockRole}`
+        const mockUser = {
+          username,
+          role: mockRole,
+          scope: {
+            userId: username,
+            role: mockRole,
+            geographic: { global: true, countries: [], territories: [] }
+          }
         }
 
+        localStorage.setItem('auth_token', mockToken)
+        localStorage.setItem('user_data', JSON.stringify(mockUser))
+        localStorage.setItem('user_scope', JSON.stringify(mockUser.scope))
+        routeByRole(mockRole)
+        return
+      }
+
+      const { apiClient } = await import('@/lib/api')
+      const response = await apiClient.login(username, password)
+
+      if (response.error) {
         setError(response.error || 'Invalid username or password')
       } else if (response.data) {
         // Store token and user data
@@ -86,6 +94,10 @@ export default function UnifiedLoginForm() {
               localStorage.setItem('user_scope', JSON.stringify(scope))
             }
           }
+          // Set cookie so server-side RBAC middleware can read the role
+          const roleForCookie = userData?.scope?.role || userData?.role || 'company'
+          document.cookie = `auth_token=${token}; path=/; max-age=86400; SameSite=Lax`
+          document.cookie = `x_role=${roleForCookie}; path=/; max-age=86400; SameSite=Lax`
         }
         
         // Extract role from multiple possible locations
@@ -145,30 +157,40 @@ export default function UnifiedLoginForm() {
   const routeByRole = (role?: string) => {
     const roleLower = role?.toLowerCase() || ''
     
+    // Use replace() so login page is removed from browser history
+    // — pressing Back will never return to login
     switch (roleLower) {
       case 'supplier':
-        router.push(`/${locale}/portal/supplier`)
+        router.replace(`/${locale}/portal/supplier`)
         break
       case 'distributor':
       case 'sales_officer':
-        router.push(`/${locale}/portal/distributor`)
+        router.replace(`/${locale}/portal/distributor`)
         break
       case 'country_manager':
       case 'hq':
       case 'admin':
+      case 'company_admin':
+      case 'super_admin':
       case 'company':
-        router.push(`/${locale}/dashboard/company/`)
+        router.replace(`/${locale}/dashboard/company`)
         break
       default:
-        // Default to portals page if role doesn't match
-        router.push(`/${locale}/portals/`)
+        router.replace(`/${locale}/portals`)
         break
     }
   }
 
   return (
-    <div className="bg-white shadow-xl border border-gray-200 p-6 sm:p-8">
-      <form onSubmit={handleSubmit} className="space-y-6">
+    <div 
+      className="shadow-xl p-6 sm:p-8"
+      style={{
+        background: 'white',
+        border: '1px solid rgba(195,163,94,0.3)',
+        borderRadius: '12px'
+      }}
+    >
+      <form onSubmit={handleSubmit} method="post" className="space-y-6">
         {error && (
           <div className="p-3 bg-red-50 border border-red-200">
             <p className="text-red-600 text-sm">{error}</p>
@@ -177,9 +199,10 @@ export default function UnifiedLoginForm() {
 
         <div>
           <label htmlFor="username" className="block text-sm font-medium text-gray-700 mb-2">
-            Username *
+            {tForm('username')} *
           </label>
           <input
+            ref={usernameRef}
             type="text"
             id="username"
             name="username"
@@ -193,9 +216,10 @@ export default function UnifiedLoginForm() {
 
         <div>
           <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
-            Password *
+            {tForm('password')} *
           </label>
           <input
+            ref={passwordRef}
             type="password"
             id="password"
             name="password"
@@ -213,10 +237,10 @@ export default function UnifiedLoginForm() {
               type="checkbox"
               className="w-4 h-4 text-[#6B1F2B] bg-white border-gray-300 rounded focus:ring-[#6B1F2B]"
             />
-            <span className="ml-2 text-sm text-gray-600">Remember me</span>
+            <span className="ml-2 text-sm text-gray-600">{tForm('rememberMe') || 'Remember me'}</span>
           </label>
           <a href="#" className="text-sm text-[#6B1F2B] hover:text-[#50000b] transition-colors duration-300">
-            Forgot password?
+            {tForm('forgotPassword') || 'Forgot password?'}
           </a>
         </div>
 
@@ -234,7 +258,7 @@ export default function UnifiedLoginForm() {
               <span>Logging in...</span>
             </>
           ) : (
-            <span>Login</span>
+            <span>{tForm('submit')}</span>
           )}
         </button>
       </form>
@@ -248,9 +272,26 @@ export default function UnifiedLoginForm() {
         </p>
       </div>
 
-      <div className="mt-4 p-3 bg-gray-50 border border-gray-200">
-        <p className="text-xs text-gray-700 font-medium mb-1">Demo Users:</p>
-        <p className="text-xs text-gray-500">supplier_user | distributor_user | sales_officer_user | country_manager_user | hq_user</p>
+      <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded">
+        <p className="text-xs font-semibold text-amber-800 mb-2">Demo Credentials (password: <code className="bg-amber-100 px-1 rounded">password</code> / <code className="bg-amber-100 px-1 rounded">admin</code>):</p>
+        <div className="grid grid-cols-2 gap-1 text-xs">
+          <div className="bg-white border border-amber-100 rounded p-1">
+            <span className="font-medium text-[#6B1F2B]">admin</span> <span className="text-gray-400">/ admin</span>
+            <div className="text-gray-400 text-[10px]">Company HQ</div>
+          </div>
+          <div className="bg-white border border-amber-100 rounded p-1">
+            <span className="font-medium text-[#6B1F2B]">supplier_user</span> <span className="text-gray-400">/ password</span>
+            <div className="text-gray-400 text-[10px]">Supplier Portal</div>
+          </div>
+          <div className="bg-white border border-amber-100 rounded p-1">
+            <span className="font-medium text-[#6B1F2B]">distributor_user</span> <span className="text-gray-400">/ password</span>
+            <div className="text-gray-400 text-[10px]">Distributor Portal</div>
+          </div>
+          <div className="bg-white border border-amber-100 rounded p-1">
+            <span className="font-medium text-[#6B1F2B]">hq_user</span> <span className="text-gray-400">/ password</span>
+            <div className="text-gray-400 text-[10px]">HQ Dashboard</div>
+          </div>
+        </div>
       </div>
     </div>
   )

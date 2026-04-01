@@ -42,7 +42,7 @@ const ProductCategoryClient: React.FC<ProductCategoryClientProps> = ({
           <nav className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm md:text-base">
             <Link href={`/${locale}/products`} className="text-white hover:text-[#C3A35E]/90 transition-colors duration-300 flex items-center space-x-1 font-bold">
               <span className="text-sm sm:text-base">←</span>
-              <span className="hidden sm:inline">{t('pageTitle') || 'Products'}</span>
+              <span className="hidden sm:inline">{t('pageTitle')}</span>
               <span className="sm:hidden">Products</span>
             </Link>
             <span className="text-white/60 mx-1">/</span>
@@ -81,13 +81,13 @@ const ProductCategoryClient: React.FC<ProductCategoryClientProps> = ({
       </section>
 
       {/* Subcategories Grid - Site Design Guidelines */}
-      <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-[#F5F1E8] relative overflow-hidden">
+      <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-white relative overflow-hidden">
         
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#6B1F2B] mb-4 sm:mb-6 font-serif">
-              {t('subcategories') || 'Subcategories'}
+              {t('subcategories')}
             </h2>
             <div className="w-20 sm:w-24 h-1 bg-[#6B1F2B] mx-auto mt-4 sm:mt-6"></div>
           </div>

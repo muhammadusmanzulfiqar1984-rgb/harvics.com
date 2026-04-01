@@ -118,7 +118,6 @@ const BackgroundMusic: React.FC = () => {
       audio.play().then(() => {
         setIsPlaying(true)
         setHasUserInteracted(true)
-        console.log('Music started playing')
       }).catch((error) => {
         console.error('Error playing audio:', error)
         setIsPlaying(false)
@@ -126,9 +125,7 @@ const BackgroundMusic: React.FC = () => {
     } else {
       // Audio is playing, so pause it
       audio.pause()
-      audio.currentTime = 0 // Reset to beginning
       setIsPlaying(false)
-      console.log('Music paused and reset')
     }
   }
 
@@ -176,21 +173,10 @@ const BackgroundMusic: React.FC = () => {
         loop
         preload="auto"
         muted={false}
-        onPlay={() => {
-          console.log('Audio started playing')
-          setIsPlaying(true)
-        }}
-        onPause={() => {
-          console.log('Audio paused')
-          setIsPlaying(false)
-        }}
-        onEnded={() => {
-          console.log('Audio ended')
-          setIsPlaying(false)
-        }}
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+        onEnded={() => setIsPlaying(false)}
         onError={(e) => console.error('Audio error:', e)}
-        onLoadStart={() => console.log('Audio loading started')}
-        onCanPlay={() => console.log('Audio can play')}
       >
         <source src="/Music/emotional-inspiring-violin-342019.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.

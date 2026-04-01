@@ -2,10 +2,11 @@ import UnifiedLoginForm from './UnifiedLoginForm'
 // Header and Footer are provided by layout.tsx - DO NOT import them here to avoid duplication
 
 import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Login | Harvics',
-  description: 'Sign in to your Harvics account.',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'login')
 }
 
 
@@ -25,9 +26,9 @@ export async function generateStaticParams() {
 export default async function LoginPage() {
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
-      <div className="pt-20">
-        <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
+      <div>
+        <section className="h-[260px] relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #6B1F2B 0%, #8B2F3B 50%, #6B1F2B 100%)' }}>
           {/* Decorative Elements */}
           <div className="absolute inset-0">
              <div className="absolute top-0 left-0 w-full h-full bg-[url('/patterns/grid.svg')] opacity-10"></div>
@@ -45,15 +46,22 @@ export default async function LoginPage() {
           </div>
         </section>
 
-        <section className="relative px-4 pb-20 -mt-32 z-20">
+        <section className="relative px-4 pb-20 -mt-20 z-20">
           <div className="max-w-md mx-auto">
             {/* Login Form */}
             <UnifiedLoginForm />
 
             {/* Features */}
             <div className="mt-12 space-y-4">
-              <div className="flex items-start space-x-4 p-6 bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-10 h-10 bg-[#6B1F2B]/5 flex items-center justify-center flex-shrink-0">
+              <div 
+                className="flex items-start space-x-4 p-6 shadow-sm hover:shadow-md transition-shadow"
+                style={{
+                  background: 'white',
+                  border: '1px solid rgba(195,163,94,0.2)',
+                  borderRadius: '8px'
+                }}
+              >
+                <div className="w-10 h-10 bg-[#6B1F2B]/5 flex items-center justify-center flex-shrink-0" style={{ borderRadius: '8px' }}>
                   <span className="text-xl">🏢</span>
                 </div>
                 <div>
@@ -66,8 +74,15 @@ export default async function LoginPage() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 p-6 bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-10 h-10 bg-[#6B1F2B]/5 flex items-center justify-center flex-shrink-0">
+              <div 
+                className="flex items-start space-x-4 p-6 shadow-sm hover:shadow-md transition-shadow"
+                style={{
+                  background: 'white',
+                  border: '1px solid rgba(195,163,94,0.2)',
+                  borderRadius: '8px'
+                }}
+              >
+                <div className="w-10 h-10 bg-[#6B1F2B]/5 flex items-center justify-center flex-shrink-0" style={{ borderRadius: '8px' }}>
                   <span className="text-xl">📊</span>
                 </div>
                 <div>
@@ -80,8 +95,15 @@ export default async function LoginPage() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 p-6 bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-10 h-10 bg-[#6B1F2B]/5 flex items-center justify-center flex-shrink-0">
+              <div 
+                className="flex items-start space-x-4 p-6 shadow-sm hover:shadow-md transition-shadow"
+                style={{
+                  background: 'white',
+                  border: '1px solid rgba(195,163,94,0.2)',
+                  borderRadius: '8px'
+                }}
+              >
+                <div className="w-10 h-10 bg-[#6B1F2B]/5 flex items-center justify-center flex-shrink-0" style={{ borderRadius: '8px' }}>
                   <span className="text-xl">🔐</span>
                 </div>
                 <div>

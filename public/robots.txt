@@ -1,5 +1,12 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /portal/
+Disallow: /dashboard/
+Disallow: /os/
+Disallow: /admin/
+
+Sitemap: https://www.harvics.com/sitemap.xml
 
 # Sitemap
 Sitemap: https://harvics.com/sitemap.xml

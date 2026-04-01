@@ -1,624 +1,1146 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
-    "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More"
+    "welcome": "Добродошли у",
+    "companyName": "Харвич",
+    "tagline": "Изврсност у премиум потрошачкој роби од 2019. године",
+    "exploreProducts": "Истражите производе",
+    "contact": "Контактирајте нас",
+    "learnMore": "Сазнајте више",
+    "brandStatement": "Водећа глобална компанија за робу широке потрошње која испоручује премиум прехрамбене производе у различитим категоријама са међународним стандардима квалитета.",
+    "taglineStart": "Изврсност у премиум потрошачкој роби од",
+    "taglineYear": "2019.",
+    "locations": "Лондон • Милано • Њујорк",
+    "categories": {
+      "bakery": "Пекара",
+      "beverages": "Пића",
+      "confectionery": "Слаткиши",
+      "culinary": "Кулинарство",
+      "frozenFoods": "Замрзнута храна",
+      "pasta": "Тестенине",
+      "snacks": "Грицкалице"
+    }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
-    "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
-    "media": "Media",
-    "contactUs": "Contact Us",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store"
+    "esgReport": "ESG извештај за 2025. годину",
+    "locations": "Лондон • Милано • Њујорк",
+    "home": "Дом",
+    "about": "О нама",
+    "aboutUs": "О нама",
+    "brandStory": "Прича о бренду",
+    "products": "Производи",
+    "ourProducts": "Наши производи",
+    "viewAllProducts": "Погледајте све производе",
+    "csr": "КСО",
+    "investorRelations": "Односи са инвеститорима",
+    "investors": "Инвеститори",
+    "media": "Медији",
+    "contactUs": "Контактирајте нас",
+    "countries": "Земље",
+    "portals": "Портали",
+    "signIn": "Пријавите се",
+    "wishlist": "Листа жеља",
+    "cart": "Корпа за куповину",
+    "help": "Помоћ",
+    "findStore": "Пронађи продавницу",
+    "harvicsHouse": "Харвиксова кућа",
+    "money": "Новац",
+    "sales": "Продаја",
+    "offers": "Понуде",
+    "darkMode": "Тамни режим",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "Кредитна картица",
+        "msRewards": "M&S Rewards кредитна картица",
+        "clubRewards": "Клубске награде",
+        "ourCards": "Наше кредитне картице"
+      },
+      "insurance": {
+        "title": "Осигурање",
+        "home": "Осигурање куће",
+        "travel": "Путно осигурање"
+      },
+      "travel": {
+        "title": "Туристичке услуге",
+        "money": "Новац за путовања",
+        "exchange": "Девизни курсеви"
+      },
+      "additional": {
+        "title": "Додатне услуге",
+        "savings": "Штедња и инвестирање",
+        "personalLoans": "Лични кредити",
+        "financialSupport": "Финансијска подршка"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "Тренутна продаја",
+      "clearance": "Распродаја",
+      "seasonal": "Сезонске распродаје"
+    },
+    "offersDropdown": {
+      "specialOffers": "Посебне понуде",
+      "promotions": "Промоције",
+      "bulkOrders": "Попусти за поруџбине у велепродаји"
+    }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products"
+    "ourProducts": "Наши производи",
+    "viewAllProducts": "Погледајте све производе",
+    "productCategories": "Наше категорије производа",
+    "discoverPremium": "Откријте наш премиум асортиман производа израђених са пажњом и изврсношћу.",
+    "tier1": "Ниво 1: Категорије",
+    "tier2": "Ниво 2: Модули",
+    "tier3": "Ниво 3: Екрани кључних индикатора учинка (KPI)",
+    "tier4": "Ниво 4: Акције",
+    "reset": "Ресетуј навигацију",
+    "noSubcategories": "Нема доступних подкатегорија за ову категорију.",
+    "pageTitle": "Производи",
+    "subcategories": "Поткатегорије",
+    "bakery": "Пекара",
+    "bakeryDesc": "Свеже печени производи и пецива.",
+    "beverages": "Пића",
+    "beveragesDesc": "Освежавајућа пића за сваку прилику.",
+    "confectionery": "Слаткиши",
+    "confectioneryDesc": "Слатке посластице и ужитци.",
+    "culinary": "Кулинарство",
+    "culinaryDesc": "Неопходни састојци за вашу кухињу.",
+    "frozenFoods": "Замрзнута храна",
+    "frozenFoodsDesc": "Укусна и практична замрзнута јела.",
+    "pasta": "Тестенине",
+    "pastaDesc": "Аутентичне врсте тестенина.",
+    "snacks": "Грицкалице",
+    "snacksDesc": "Укусне грицкалице за било које доба дана."
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
-    "email": "Email",
+    "title": "Контактирајте нас",
+    "subtitle": "Волели бисмо да чујемо ваше мишљење. Контактирајте нас путем било ког од ових канала.",
+    "phone": "Телефон",
+    "email": "Е-пошта",
     "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "callNow": "Позовите одмах",
+    "sendEmail": "Пошаљи имејл",
+    "messageUs": "Пошаљите нам поруку"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "Медијски центар",
+    "pageTitle": "Медијски центар | Харвикс",
+    "description": "Ресурси за штампу, брендирани материјали и најновије вести из компаније Harvics Global Ventures.",
+    "corporate": "Корпоративни",
+    "sections": {
+      "news": {
+        "title": "Вести и саопштења за штампу",
+        "desc": "Најновије најаве, ширења на тржишта, лансирања производа и корпоративне новости од Harvics Global Ventures.",
+        "cta": "Прочитајте најновије вести"
+      },
+      "gallery": {
+        "title": "Галерија слика",
+        "desc": "Бренд материјали високе резолуције, фотографије производа, слике објеката и извештавање са догађаја за медијску употребу.",
+        "cta": "Прегледај галерију"
+      },
+      "contacts": {
+        "title": "Контакти за медије",
+        "desc": "За упите за медије, захтеве за интервјуе и најаве партнерстава, обратите се нашем тиму за комуникације.",
+        "cta": "Контактирајте тим за штампу"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "Покривена тржишта",
+      "industryVerticals": "Индустријске вертикале",
+      "foundedIn": "Основано у Дубаију",
+      "languagesSupported": "Подржани језици"
+    },
+    "recentHeadlines": "Недавни наслови",
+    "headlines": {
+      "expansion": "Харвикс шири пословање у сектору робе широке потрошње на 5 нових тржишта Југоисточне Азије",
+      "aiPlatform": "Нова платформа за ланац снабдевања заснована на вештачкој интелигенцији покренута је за глобалну дистрибуцију",
+      "carbonNeutral": "Харвикс постиже прекретницу угљенично неутралности у свим објектима",
+      "partnership": "Стратешко партнерство са водећим произвођачима текстила у Јужној Азији"
+    }
   },
   "footer": {
-    "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
-    "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
-    "contactUsButton": "Contact Us",
-    "usefulLinks": "Useful Links",
-    "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
-    "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
-    "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
-    "privacy": "Privacy",
-    "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
+    "companyName": "Харвикс Глобал Венчерс",
+    "tagline": "Изврсност у премиум потрошачкој роби од 2019. године",
+    "brandStatement": "Водећа глобална компанија за робу широке потрошње која испоручује премиум прехрамбене производе у различитим категоријама са међународним стандардима квалитета.",
+    "locations": "Лондон • Милано • Њујорк",
+    "since": "Од 2019. године",
+    "harvicsNews": "Харвикс вести",
+    "subscribeToAlerts": "Претплатите се да бисте примали обавештења и новости",
+    "signUp": "Региструј се",
+    "complianceConcerns": "Проблеми са усклађеношћу",
+    "speakUp": "Изјавите се ако имате недоумице у вези са усклађеношћу са законом или етиком",
+    "speakUpButton": "Проговори",
+    "contactUs": "Контактирајте нас",
+    "contactDescription": "Контактирајте наш тим",
+    "contactUsButton": "Контактирајте нас",
+    "usefulLinks": "Корисни линкови",
+    "askHarvics": "Питајте Харвич",
+    "searchForJobs": "Претрага послова",
+    "signUpForNews": "Пријавите се за вести",
+    "company": "Компанија",
+    "globalAddresses": "Глобалне адресе",
+    "strategy": "Стратегија",
+    "ourLeadership": "Наше руководство",
+    "brandsAZ": "Брендови од А до Ш",
+    "ourHistory": "Наша историја",
+    "sustainability": "Одрживост",
+    "news": "Вести",
+    "mediaContacts": "Контакти за медије",
+    "images": "Слике",
+    "investors": "Инвеститори",
+    "corporateGovernance": "Корпоративно управљање",
+    "sharesAdrsBonds": "Акције, АДР-ови и обвезнице",
+    "publications": "Публикације",
+    "followUsOn": "Пратите нас на",
+    "issuesCount": "0 проблема",
+    "siteMap": "Мапа сајта",
+    "unsubscribe": "Одјави се",
+    "help": "Помоћ",
+    "privacy": "Приватност",
+    "cookies": "Колачићи",
+    "termsOfUse": "Услови коришћења",
+    "accessibility": "Приступачност",
+    "carbonEfficiency": "Угљенична ефикасност",
+    "suppliers": "Добављачи",
+    "socialMedia": "Друштвене мреже",
+    "cookieSettings": "Подешавања колачића",
     "feature1Title": "Global Reach",
     "feature1Desc": "Serving customers across 40+ countries worldwide",
-    "feature2Title": "Premium Quality",
+    "feature2Title": "Премијум квалитет",
     "feature2Desc": "International quality standards in every product",
     "feature3Title": "Innovation",
     "feature3Desc": "Leading innovation in consumer goods industry",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
-    "media": "Media"
+    "emailAddress": "Адреса е-поште",
+    "enterEmailPlaceholder": "Унесите своју адресу е-поште",
+    "subscribe": "Претплатите се",
+    "subscribing": "Претплата...",
+    "aboutUs": "О нама",
+    "media": "Медији"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "Претражите производе, брендове или категорије",
+    "noResults": "Нису пронађени резултати",
+    "searching": "Претрага...",
+    "results": "Резултати"
   },
   "chatbot": {
-    "title": "Chat with Us",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "title": "Ћаскајте са нама",
+    "placeholder": "Унесите своју поруку...",
+    "send": "Пошаљи",
+    "close": "Затвори",
+    "welcome": "Здраво! Како вам могу данас помоћи?",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "Извините, нисам то разумео/разумела. Можете ли, молим вас, преформулисати?",
+      "help": "Могу вам помоћи са информацијама о производима, поруџбинама или општим упитима. Шта бисте желели да знате?",
+      "contact": "За додатну помоћ, контактирајте нас на support@harvics.com или позовите +1-800-HARVICS."
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
-    "filter": "Filter",
-    "clear": "Clear",
-    "download": "Download",
-    "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
-    "status": "Status",
-    "date": "Date",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
-    "selectCountry": "Select Country",
-    "required": "Required",
-    "menu": "Menu",
-    "viewProducts": "View Products"
+    "chatWithUs": "Ћаскајте са нама",
+    "loading": "Учитавање...",
+    "error": "Грешка",
+    "success": "Успех",
+    "save": "Сачувај",
+    "cancel": "Откажи",
+    "delete": "Обриши",
+    "edit": "Измени",
+    "view": "Поглед",
+    "submit": "Пошаљи",
+    "search": "Претрага",
+    "filter": "Филтер",
+    "clear": "Јасно",
+    "download": "Преузми",
+    "upload": "Отпреми",
+    "yes": "Да",
+    "no": "Не",
+    "close": "Затвори",
+    "back": "Назад",
+    "next": "Следеће",
+    "previous": "Претходно",
+    "actions": "Акције",
+    "status": "Статус",
+    "date": "Датум",
+    "name": "Име",
+    "email": "Е-пошта",
+    "phone": "Телефон",
+    "address": "Адреса",
+    "country": "Земља",
+    "city": "Град",
+    "all": "Сви",
+    "none": "Ниједан",
+    "select": "Изаберите",
+    "selectCountry": "Изаберите земљу",
+    "required": "Обавезно",
+    "menu": "Мени",
+    "viewProducts": "Погледајте производе",
+    "selectLanguage": "Изаберите језик",
+    "showMore": "Прикажи више",
+    "showLess": "Прикажи мање"
   },
   "music": {
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "Пусти музику",
+    "pause": "Паузирај музику",
+    "mute": "Утишај музику",
+    "unmute": "Укључи звук музике"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "Наш глобални досег",
+    "since": "Од",
+    "majorMarket": "Главно тржиште",
+    "majorMarkets": "Главна тржишта",
+    "presence": "Присуство",
+    "countriesServed": "Земље у којима се опслужује",
+    "majorMarketsCount": "Главна тржишта",
+    "productCategoriesCount": "Категорије производа",
+    "establishedYear": "Основано"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "Хијерархија територије",
+    "fullPath": "Пуна путања",
+    "currentTerritory": "Тренутна територија",
+    "noChildren": "Нема артикала",
     "tiers": {
-      "globe": "Globe",
-      "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
-      "district": "District",
-      "location": "Location"
+      "globe": "Глобус",
+      "continent": "Континент",
+      "region": "Регион",
+      "country": "Земља",
+      "city": "Град",
+      "district": "Округ",
+      "location": "Локација"
     }
   },
   "globalWorld": {
-    "title": "Harvics Global",
-    "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "title": "Харвикс Глобал",
+    "titleShort": "Глобално",
+    "selectRegion": "Изаберите регион",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
+      "title": "Подаци о купцу",
+      "selected": "Изабрано",
+      "fullName": "Пуно име",
+      "namePlaceholder": "Унесите своје пуно име",
+      "nameRequired": "Име је обавезно",
+      "email": "Адреса е-поште",
       "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
+      "emailRequired": "Имејл је обавезан",
+      "emailInvalid": "Молимо вас да унесете важећу адресу е-поште",
+      "phone": "Број телефона",
       "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "phoneRequired": "Број телефона је обавезан",
+      "address": "Адреса",
+      "addressPlaceholder": "Ваша адреса",
+      "addressRequired": "Адреса је обавезна",
+      "marketingConsent": "Слажем се да примам маркетиншке комуникације и новости",
+      "submit": "Пошаљи и настави",
+      "submitting": "Слање...",
+      "skip": "Прескочи и настави"
     }
   },
   "distributorPortal": {
     "dashboard": {
       "kpi": {
-        "title": "Key Performance Indicators",
-        "ordersToday": "Orders today",
-        "ordersTodaySubtitle": "Submitted via Harvics CRM",
-        "pendingDeliveries": "Pending deliveries",
-        "pendingDeliveriesSubtitle": "Across assigned routes",
-        "retailers": "Retailers",
-        "retailersSubtitle": "Active outlets in scope",
-        "attendance": "T & A Score",
-        "attendanceSubtitle": "Territory coverage"
+        "title": "Кључни индикатори учинка",
+        "ordersToday": "Поруџбине данас",
+        "ordersTodaySubtitle": "Послато путем Harvics CRM-а",
+        "pendingDeliveries": "Чекајуће испоруке",
+        "pendingDeliveriesSubtitle": "Преко додељених рута",
+        "retailers": "Продавци",
+        "retailersSubtitle": "Активни продајни објекти у опсегу",
+        "attendance": "Оцена Т и А",
+        "attendanceSubtitle": "Покривеност територије"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "Финансије и залихе",
+        "lowStock": "Артикли са мало залиха",
+        "lowStockSubtitle": "Покрени допуну",
+        "outstandingInvoices": "Неизмирене фактуре",
+        "outstandingInvoicesSubtitle": "Доспело за наплату",
+        "creditLimit": "Кредитни лимит",
+        "creditLimitSubtitle": "Додељено од стране финансија"
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "Аутоматско одобравање, допуњавање залиха и подсетници за фактуре су омогућени",
+        "autoApproval": "Самоодобрење",
+        "stockReplenishment": "Допуњавање залиха",
+        "invoiceReminders": "Подсетници за фактуре"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "Препоруке вештачке интелигенције",
+        "riskLevel": "Ниво ризика",
+        "riskDescription": "На основу коришћења кредита и историје плаћања",
+        "suggestedOrder": "Предложени редослед",
+        "suggestedOrderSubtitle": "Артикли које препоручује вештачка интелигенција за наручивање",
+        "nextAction": "Следећа акција"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "Акције и смернице",
+        "complaints": "Жалбе",
+        "complaintsSubtitle": "Проблеми са продавцем чекају на одговор",
+        "playbook": "Приручник",
+        "playbookItem1": "Дајте приоритет испорукама које чекају пре поднева.",
+        "playbookItem2": "Затворите све нерешене жалбе у року од 48 сати.",
+        "playbookItem3": "Покрени допуну залиха за артикле са мало залиха (аутоматско креирање поруџбенице)."
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "Територија",
+      "ordersThisMonth": "Поруџбине овог месеца",
+      "pendingOrders": "Налози на чекању",
+      "deliveredOrders": "Испоручене поруџбине",
+      "territoryInformation": "Информације о територији",
+      "country": "Земља",
+      "city": "Град",
+      "region": "Регион",
+      "quickActions": "Брзе акције",
+      "newOrder": "Нови ред",
+      "viewOrders": "Погледајте поруџбине",
+      "viewInvoices": "Погледајте фактуре",
+      "profileSettings": "Подешавања профила",
+      "loading": "Учитавање контролне табле...",
+      "error": "Грешка"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
-      "date": "Date",
-      "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "title": "Моје поруџбине",
+      "orderId": "ИД поруџбине",
+      "date": "Датум",
+      "status": "Статус",
+      "items": "Ставке",
+      "totalAmount": "Укупан износ",
+      "actions": "Акције",
+      "viewDetails": "Прикажи детаље",
       "filters": {
-        "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "Статус",
+        "startDate": "Датум почетка",
+        "endDate": "Крајњи датум",
+        "allStatuses": "Сви статуси",
+        "clearFilters": "Обриши филтере"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "На чекању",
+        "processing": "Обрада",
+        "delivered": "Достављено",
+        "cancelled": "Отказано"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
-      "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "noOrders": "Није пронађена ниједна поруџбина",
+      "loading": "Учитавање поруџбина...",
+      "page": "Страница",
+      "of": "од",
+      "previous": "Претходно",
+      "next": "Следеће"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
-      "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "orderItems": "Order Items",
-      "product": "Product",
-      "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "title": "Детаљи поруџбине",
+      "backToOrders": "Назад на поруџбине",
+      "orderId": "ИД поруџбине",
+      "status": "Статус",
+      "orderDate": "Датум поруџбине",
+      "deliveryDate": "Датум испоруке",
+      "deliveryAddress": "Адреса за испоруку",
+      "notes": "Белешке",
+      "orderItems": "Наручите ставке",
+      "product": "Производ",
+      "sku": "Артикал",
+      "quantity": "Количина",
+      "unitPrice": "Јединична цена",
+      "total": "Укупно",
+      "totalAmount": "Укупан износ",
+      "statusTimeline": "Временска линија статуса",
+      "orderNotFound": "Поруџбина није пронађена"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
-      "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "title": "Направи нову поруџбину",
+      "orderItems": "Наручите ставке",
+      "addItem": "Додај ставку",
+      "noItems": "Још увек није додат ниједан артикал. Кликните на „Додај артикал“ да бисте започели.",
+      "orderDetails": "Детаљи поруџбине",
+      "deliveryDate": "Датум испоруке",
+      "deliveryAddress": "Адреса за испоруку",
+      "notes": "Белешке",
+      "totalAmount": "Укупан износ",
+      "createOrder": "Направи поруџбину",
+      "creatingOrder": "Креирање поруџбине...",
+      "cancel": "Откажи",
+      "selectProduct": "Изаберите производ",
+      "product": "Производ",
+      "quantity": "Количина",
+      "unitPrice": "Јединична цена",
+      "remove": "Уклони",
+      "subtotal": "Међуизнос",
+      "orderId": "ИД поруџбине",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "Потребна је бар једна ставка поруџбине",
+        "productRequired": "Производ је обавезан",
+        "quantityRequired": "Количина мора бити већа од 0",
+        "priceRequired": "Цена јединице мора бити позитивна",
+        "invalidDate": "Неважећи формат датума испоруке",
+        "datePast": "Датум испоруке не може бити у прошлости"
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "Моје фактуре",
+      "invoiceNumber": "Број фактуре",
+      "invoiceDate": "Датум фактуре",
+      "dueDate": "Два састанка",
+      "amount": "Износ",
+      "paidAmount": "Плаћени износ",
+      "paymentStatus": "Статус плаћања",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "Статус плаћања",
+        "allStatuses": "Сви статуси",
+        "clearFilters": "Обриши филтере"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "Плаћено",
+        "unpaid": "Неплаћено",
+        "partial": "Делимично"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "Није пронађена ниједна фактура",
+      "loading": "Учитавање фактура..."
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "title": "Мој профил",
+      "accountInformation": "Информације о налогу",
+      "distributorId": "ИД дистрибутера",
+      "territory": "Територија",
+      "country": "Земља",
+      "city": "Град",
+      "accountCreated": "Налог је креиран",
+      "updateProfile": "Ажурирај профил",
+      "name": "Име",
+      "email": "Е-пошта",
+      "phone": "Телефон",
+      "address": "Адреса",
+      "language": "Језик",
+      "currency": "Валута",
+      "saveChanges": "Сачувај измене",
+      "saving": "Чување...",
+      "profileUpdated": "Профил је успешно ажуриран",
+      "loading": "Учитавање профила...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "Неважећи формат имејла",
+        "invalidPhone": "Неважећи формат телефона"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
-      "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "error": "Грешка",
+      "loading": "Учитавање...",
+      "save": "Сачувај",
+      "cancel": "Откажи",
+      "back": "Назад",
+      "submit": "Пошаљи",
+      "delete": "Обриши",
+      "edit": "Измени",
+      "view": "Поглед",
+      "search": "Претрага",
+      "filter": "Филтер",
+      "clear": "Јасно",
+      "apply": "Примени",
+      "close": "Затвори",
+      "confirm": "Потврди",
+      "yes": "Да",
+      "no": "Не"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
-    "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "title": "Правни оперативни систем",
+    "sidebarTitle": "Правни ОС",
+    "accessDenied": "Приступ одбијен",
+    "accessDeniedMessage": "Немате дозволу за приступ модулу Legal OS.",
+    "dashboard": "Контролна табла",
+    "contracts": "Уговори",
+    "certificates": "Сертификати",
+    "compliance": "Усклађеност са прописима",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "Правна контролна табла",
+      "description": "Преглед правних операција и статуса усклађености",
+      "activeTrademarks": "Активни заштитни знакови",
+      "activeContracts": "Активни уговори",
+      "complianceStatus": "Статус усклађености"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "Заштитни знакови",
+      "description": "Управљајте регистрацијама и пријавама заштитних знакова",
+      "addNew": "Додај нови заштитни знак",
       "filters": {
-        "country": "Country",
-        "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "country": "Земља",
+        "status": "Статус",
+        "allCountries": "Све земље",
+        "allStatuses": "Сви статуси",
+        "clearFilters": "Обриши филтере"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "brandName": "Назив бренда",
+        "class": "Класа",
+        "country": "Земља",
+        "applicationNo": "Број пријаве",
+        "status": "Статус",
+        "expiryDate": "Датум истека",
+        "actions": "Акције"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "Измени заштитни знак",
+        "add": "Додај нови заштитни знак",
+        "view": "Погледајте заштитни знак"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "brandName": "Назив бренда",
+        "classNumber": "Број разреда",
+        "country": "Земља",
+        "applicationNo": "Број пријаве",
+        "status": "Статус",
+        "expiryDate": "Датум истека",
+        "documents": "Документи",
+        "noDocuments": "Нема приложених докумената",
+        "addDocument": "Додај документ",
+        "remove": "Уклони"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "Учитавање заштитних знакова није успело",
+        "saveFailed": "Чување заштитног знака није успело. Молимо покушајте поново."
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "Правни случајеви",
+      "description": "Управљајте правним случајевима и пратите њихов статус",
+      "addNew": "Нови случај",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
-        "description": "Description",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date"
+        "caseTitle": "Наслов случаја",
+        "caseType": "Тип случаја",
+        "country": "Земља",
+        "description": "Опис",
+        "assignedTo": "Додељено",
+        "status": "Статус",
+        "hearingDate": "Датум саслушања"
       },
       "table": {
-        "caseTitle": "Case Title",
-        "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "caseTitle": "Наслов случаја",
+        "type": "Тип",
+        "country": "Земља",
+        "assignedTo": "Додељено",
+        "status": "Статус",
+        "hearingDate": "Датум саслушања",
+        "actions": "Акције"
       },
       "status": {
-        "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "open": "Отворено",
+        "inProgress": "У току",
+        "closed": "Затворено",
+        "cancelled": "Отказано"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "Приказ мапе возног парка",
+      "description": "Праћење продајних службеника и возила за доставу у реалном времену",
+      "activeEmployees": "Активни запослени",
+      "noEmployees": "Нема активних запослених",
+      "loading": "Учитавање..."
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
-      "reset": "Reset",
-      "play": "Play",
-      "pause": "Pause",
-      "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "title": "Репродукција руте",
+      "employee": "Запослени",
+      "speed": "Брзина",
+      "reset": "Ресетуј",
+      "play": "Играј",
+      "pause": "Пауза",
+      "points": "поени",
+      "noRoute": "Нема доступних података о рути",
+      "loading": "Учитавање руте..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "Конкурентски производи",
+      "description": "Пратите информације о конкурентским производима",
+      "addProduct": "Додај производ",
+      "formTitle": "Додај конкурентски производ",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "Бренд",
+        "skuName": "Назив артикла",
+        "category": "Категорија",
+        "size": "Величина",
+        "price": "Цена",
+        "currency": "Валута",
+        "country": "Земља"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "Бренд",
+        "skuName": "Назив артикла",
+        "category": "Категорија",
+        "size": "Величина",
+        "price": "Цена",
+        "country": "Земља",
+        "dateAdded": "Датум додавања"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "Учитавање производа није успело",
+        "createFailed": "Није успело креирање производа. Молимо покушајте поново."
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "Нису пронађени конкурентски производи",
+      "loading": "Учитавање производа..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "Контролна табла конкурента",
+      "description": "Аналитика и увиди у конкурентске производе",
+      "totalProducts": "Укупно производа",
+      "brandsTracked": "Праћени брендови",
+      "countries": "Земље",
+      "categories": "Категорије",
+      "byBrand": "Производи по бренду",
+      "byCountry": "Производи по земљи",
+      "byCategory": "Производи по категорији",
+      "loading": "Учитавање статистике...",
+      "noStats": "Нема доступних статистика"
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
-    "finance": "Finance",
+    "overview": "Преглед",
+    "orders": "Поруџбине",
+    "inventory": "Инвентар",
+    "logistics": "Логистика",
+    "finance": "Финансије",
     "crm": "CRM",
-    "hr": "HR",
-    "executive": "Executive",
-    "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
-    "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
-    "admin": "Admin"
+    "hr": "Људски ресурси",
+    "executive": "Извршни директор",
+    "investor": "Инвеститор",
+    "legal-ipr": "Правни/Интелектуална својина",
+    "competitor": "Такмичар",
+    "import-export": "Увоз/Извоз",
+    "gps-tracking": "ГПС праћење",
+    "localization": "Локализација",
+    "workflows": "Токови посла",
+    "admin": "Администратор"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
-      "finance": "Finance",
+      "overview": "Преглед",
+      "orders": "Поруџбине",
+      "inventory": "Инвентар",
+      "logistics": "Логистика",
+      "finance": "Финансије",
       "crm": "CRM",
-      "hr": "HR",
-      "executive": "Executive",
-      "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
-      "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
-      "admin": "Admin"
+      "hr": "Људски ресурси",
+      "executive": "Извршни директор",
+      "investor": "Инвеститор",
+      "legal-ipr": "Правни/Интелектуална својина",
+      "competitor": "Такмичар",
+      "import-export": "Увоз/Извоз",
+      "gps-tracking": "ГПС праћење",
+      "localization": "Локализација",
+      "workflows": "Токови посла",
+      "admin": "Администратор"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
-      "profit": "Profit"
+      "customers": "Муштерије",
+      "employees": "Запослени",
+      "profit": "Профит"
+    },
+    "domain": {
+      "title": "CRM ОС",
+      "customer360": {
+        "title": "Корисник 360",
+        "description": "Комплетни профили купаца, историја интеракције и управљање односима"
+      },
+      "campaigns": {
+        "title": "Дигиталне кампање",
+        "description": "Вишеканалне маркетиншке кампање (IG, FB, TikTok, WhatsApp)"
+      },
+      "leads": {
+        "title": "Потенцијални клијенти и могућности",
+        "description": "Управљање потенцијалним клијентима, квалификација и канал могућности"
+      },
+      "support": {
+        "title": "Корисничка подршка",
+        "description": "Управљање тикетима, корисничка подршка и решавање проблема"
+      },
+      "loyalty": {
+        "title": "Програми лојалности",
+        "description": "Управљање лојалности, гејмификацијом и наградама за трговце на мало"
+      }
+    },
+    "customerList": {
+      "title": "Корисник 360",
+      "newCustomer": "Нови купац",
+      "totalCustomers": "Укупан број купаца",
+      "active": "Активно",
+      "new": "Ново",
+      "satisfaction": "Задовољство",
+      "customerManagement": "Управљање купцима",
+      "customerManagementDescription": "Прегледајте и управљајте односима са купцима, интеракцијама и кампањама.",
+      "loading": "Учитавање...",
+      "error": "Грешка при учитавању CRM података"
     }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "Учитавање кокпита добављача…",
+      "purchaseOrders": "Наруџбенице",
+      "purchaseOrdersSubtitle": "Одгајио Харвикс",
+      "shipments": "Пошиљке / GRN",
+      "shipmentsSubtitle": "Прихваћено ове недеље",
+      "invoices": "Фактуре креиране",
+      "invoicesSubtitle": "Чека се плаћање",
+      "paymentsPending": "Плаћања на чекању",
+      "paymentsPendingSubtitle": "Заказано за објављивање",
+      "qualityComplaints": "Квалитет / жалбе",
+      "qualityComplaintsSubtitle": "Отворене карте",
+      "forecast": "Прогноза (наредне 4 недеље)",
+      "forecastSubtitle": "Привремени вештачки интелигентни систем",
+      "supplierActions": "Акције добављача",
+      "action1": "Потврдите предстојеће пошиљке и ажурирајте распоред GRN-а.",
+      "action2": "Прегледајте неизмирене фактуре и поделите савете о плаћању.",
+      "action3": "Решите отворене жалбе на квалитет помоћу доказа о контроли квалитета."
+    }
+  },
+  "form": {
+    "username": "Корисничко име",
+    "password": "Лозинка",
+    "email": "Е-пошта",
+    "submit": "Пошаљи",
+    "cancel": "Откажи",
+    "save": "Сачувај",
+    "delete": "Обриши",
+    "search": "Претрага",
+    "filter": "Филтер",
+    "reset": "Ресетуј",
+    "close": "Затвори",
+    "back": "Назад",
+    "next": "Следеће",
+    "previous": "Претходно",
+    "confirm": "Потврди",
+    "rememberMe": "Запамти ме",
+    "forgotPassword": "Заборавили сте лозинку?",
+    "emailRequired": "Имејл је обавезан",
+    "emailInvalid": "Молимо вас да унесете важећу адресу е-поште"
+  },
+  "faq": {
+    "products": {
+      "category": "Производи",
+      "q1": "Које производе нуди Харвикс?",
+      "a1": "Нудимо широк асортиман премиум прехрамбених производа, укључујући кондиторске производе, пића, грицкалице, тестенине, пекарске производе и замрзнуту храну у више категорија.",
+      "q2": "Где могу да купим Харвикс производе?",
+      "a2": "Наши производи су доступни у малопродајним објектима у преко 40 земаља. Користите наш локатор продавница или страницу за контакт да бисте пронашли продавца у вашој близини.",
+      "q3": "Да ли нудите наручивање на велико?",
+      "a3": "Да, нудимо попусте за поруџбине на велико за предузећа и трговце на мало. Посетите нашу страницу Попусти за поруџбине на велико за више информација."
+    },
+    "ordersShipping": {
+      "category": "Поруџбине и достава",
+      "q1": "Које су ваше опције испоруке?",
+      "a1": "Нудимо разне опције испоруке, укључујући стандардну, експресну и међународну испоруку. Бесплатна достава је доступна за поруџбине преко 50 долара.",
+      "q2": "Колико траје испорука?",
+      "a2": "Рокови испоруке варирају у зависности од локације. Стандардна испорука обично траје 5-7 радних дана, док експресна испорука траје 2-3 радна дана.",
+      "q3": "Могу ли пратити своју поруџбину?",
+      "a3": "Да, можете пратити своју поруџбину користећи број за праћење који сте навели у е-поруци са потврдом поруџбине."
+    },
+    "accountPayments": {
+      "category": "Налог и плаћања",
+      "q1": "Како да направим налог?",
+      "a1": "Кликните на „Пријава“ у заглављу и изаберите „Креирај налог“ да бисте се регистровали за нови налог.",
+      "q2": "Које начине плаћања прихватате?",
+      "a2": "Прихватамо све главне кредитне картице, дебитне картице, PayPal и банковне трансфере за B2B поруџбине.",
+      "q3": "Да ли су моји подаци о плаћању безбедни?",
+      "a3": "Да, користимо индустријски стандард за шифровање како бисмо заштитили ваше податке о плаћању."
+    },
+    "returnsRefunds": {
+      "category": "Повраћај и рефундација",
+      "q1": "Каква је ваша политика враћања робе?",
+      "a1": "Нудимо политику враћања у року од 30 дана за неотворене производе у оригиналном паковању. Молимо вас да контактирате нашу корисничку службу за овлашћење за враћање.",
+      "q2": "Како да захтевам повраћај новца?",
+      "a2": "Контактирајте наш тим за корисничку подршку са бројем ваше поруџбине и разлогом враћања. Обрадићемо ваш повраћај новца у року од 5-7 радних дана."
+    },
+    "contactCta": {
+      "title": "И даље имате питања?",
+      "subtitle": "Наш тим за корисничку подршку је ту да вам помогне",
+      "button": "Контактирајте нас"
+    }
+  },
+  "careers": {
+    "title": "Каријере",
+    "pageTitle": "Каријере | Харвикс",
+    "description": "Придружите се Harvics Global Ventures — истражите могућности у преко 40 земаља.",
+    "joinUs": "Придружите нам се",
+    "heroTitle": "Изградимо будућност глобалне трговине",
+    "heroDesc": "Растемо у преко 40 земаља. Придружите се тиму који гради оперативни систем заснован на вештачкој интелигенцији за глобалну трговину.",
+    "stats": {
+      "openPositions": "Отворене позиције",
+      "countries": "Земље",
+      "industryVerticals": "Индустријске вертикале",
+      "departmentsHiring": "Запошљавање у одељењима"
+    },
+    "openPositionsByDept": "Отворене позиције по одељењу",
+    "departments": {
+      "sales": {
+        "name": "Продаја и дистрибуција",
+        "desc": "Увећајте приход на преко 40 тржишта. Управљање територијом, кључни клијенти, односи са дистрибутерима."
+      },
+      "supplyChain": {
+        "name": "Ланац снабдевања и логистика",
+        "desc": "Комплетан ланац снабдевања од фабрике до полице. Управљање возним парком, складиштење, испорука до последње миље."
+      },
+      "technology": {
+        "name": "Технологија и вештачка интелигенција",
+        "desc": "Изградите Harvics OS — нашу пословну платформу засновану на вештачкој интелигенцији. Фулл-стек, машинско учење, наука о подацима."
+      },
+      "finance": {
+        "name": "Финансије и трезор",
+        "desc": "Вишевалутно пословање трезора, трговинске финансије, HPay дигитална плаћања, управљање девизним фондовима у различитим регионима."
+      },
+      "procurement": {
+        "name": "Набавка и снабдевање",
+        "desc": "Глобално снабдевање из преко 15 земаља порекла. Ревизије добављача, контрола квалитета, програми директно из фабрике."
+      },
+      "hr": {
+        "name": "Људски ресурси",
+        "desc": "Аквизиција талената, учење и развој, управљање учинком у различитим географским подручјима и културама."
+      },
+      "legal": {
+        "name": "Правни и усклађени услови",
+        "desc": "Усклађеност са трговинским прописима, провера санкција, заштита интелектуалне својине, управљање уговорима у различитим јурисдикцијама."
+      },
+      "marketing": {
+        "name": "Маркетинг и бренд",
+        "desc": "Вишејезичне кампање, садржај за 38 локалитета, дигитални маркетинг, стратегија бренда за 10 вертикала."
+      }
+    },
+    "roles": "улоге",
+    "whyHarvics": "Зашто Харвикс",
+    "benefits": {
+      "globalMobility": {
+        "title": "Глобална мобилност",
+        "desc": "Рад у Дубаију, Лондону, Карачију, Лахору и на преко 40 тржишта"
+      },
+      "growthTrack": {
+        "title": "Траг раста",
+        "desc": "Брз напредак у каријери у растућем предузећу"
+      },
+      "aiCulture": {
+        "title": "Култура на првом месту за вештачку интелигенцију",
+        "desc": "Радите са најсавременијим системима вештачке интелигенције и обавештајним системима у реалном времену"
+      },
+      "competitivePackage": {
+        "title": "Конкурентни пакет",
+        "desc": "Водеће на тржишту компензације, смештај и бенефиције"
+      },
+      "learningBudget": {
+        "title": "Буџет за учење",
+        "desc": "Годишњи буџет за развој курсева, конференција и сертификата"
+      },
+      "flexibleWork": {
+        "title": "Флексибилан рад",
+        "desc": "Хибридни аранжмани са регионалним канцеларијама широм света"
+      }
+    }
+  },
+  "strategy": {
+    "title": "Наша стратегија",
+    "pageTitle": "Стратегија | Харвич",
+    "description": "Изградња одрживе будућности кроз иновације и изврсност",
+    "heroSubtitle": "Изградња одрживе будућности кроз иновације и изврсност",
+    "pillars": {
+      "globalExpansion": {
+        "title": "Глобална експанзија",
+        "desc": "Ширење нашег присуства на тржиштима у развоју уз јачање наше позиције на већ постојећим тржиштима"
+      },
+      "productInnovation": {
+        "title": "Иновација производа",
+        "desc": "Улагање у истраживање и развој ради развоја нових производа који задовољавају стално променљиве преференције потрошача"
+      },
+      "sustainability": {
+        "title": "Одрживост",
+        "desc": "Посвећени одрживим праксама у целом нашем ланцу снабдевања и пословању"
+      },
+      "digitalTransformation": {
+        "title": "Дигитална трансформација",
+        "desc": "Коришћење технологије за побољшање корисничког искуства и оперативне ефикасности"
+      }
+    },
+    "vision": {
+      "title": "Наша визија",
+      "desc": "Да будемо водећа светска компанија за премијум робу широке потрошње, препозната по квалитету, иновацијама и одрживости."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Харвикс Глобал Вентурс | Премиум Глобал Трејдинг",
+      "description": "Водећа глобална трговачка компанија која испоручује премиум производе у више од 10 индустрија. Послује у више од 50 земаља од 2019. године."
+    },
+    "about": {
+      "title": "О нама | Харвикс Глобал Вентурс",
+      "description": "Откријте како је Harvics Global Ventures постао водећа снага у глобалној трговини у преко 40 земаља и 10 индустрија."
+    },
+    "contact": {
+      "title": "Контактирајте нас | Харвикс Глобал Вентурс",
+      "description": "Контактирајте канцеларије компаније Harvics широм света на Блиском истоку, у Јужној Азији, Европи, Африци и Америци."
+    },
+    "products": {
+      "title": "Производи | Харвикс Глобал Вентурс",
+      "description": "Истражите Харвиксов премиум асортиман производа у области робе широке потрошње, текстила, робе широке потрошње и индустријских решења."
+    },
+    "careers": {
+      "title": "Каријере | Харвикс Глобал Вентурс",
+      "description": "Придружите се Harvics Global Ventures — истражите могућности у преко 40 земаља у областима робе широке потрошње, текстила, логистике и технологије."
+    },
+    "media": {
+      "title": "Медијски центар | Харвикс Глобал Вентурс",
+      "description": "Харвикс медијски центар — саопштења за штампу, најновије вести, брендирани материјали и медијски контакти."
+    },
+    "strategy": {
+      "title": "Наша стратегија | Харвикс Глобал Вентурс",
+      "description": "Харвикова стратешка визија за глобално ширење, иновације, одрживост и дигиталну трансформацију."
+    },
+    "csr": {
+      "title": "Друштвена одговорност предузећа | Харвикс",
+      "description": "Харвиксове иницијативе за друштвено одговорно пословање — заштита животне средине, програми заједнице и етичке пословне праксе."
+    },
+    "faq": {
+      "title": "Најчешћа питања | Харвикс Глобал Вентурс",
+      "description": "Често постављана питања о Харвикс производима, услугама, наручивању и глобалном пословању."
+    },
+    "locations": {
+      "title": "Глобалне локације | Харвикс",
+      "description": "Харвиксове канцеларије и операције широм Блиског истока, Јужне Азије, Европе, Африке и Америке."
+    },
+    "leadership": {
+      "title": "Руководећи тим | Харвикс",
+      "description": "Упознајте руководећи тим који води Harvics Global Ventures на преко 40 тржишта и у 10 индустријских вертикала."
+    },
+    "help": {
+      "title": "Центар за помоћ | Харвикс",
+      "description": "Добијте помоћ око поруџбина, рачуна, испоруке и Харвикс услуга."
+    },
+    "compliance": {
+      "title": "Усклађеност и етика | Harvics",
+      "description": "Харвиксова посвећеност усклађености са прописима, етичким пословним праксама и глобалним стандардима."
+    },
+    "history": {
+      "title": "Наша историја | Харвикс",
+      "description": "Од стартапа у Дубаију 2019. године до глобалног предузећа које се простире у преко 40 земаља — прича о Харвиксу."
+    },
+    "newsletter": {
+      "title": "Билтен | Харвикс",
+      "description": "Претплатите се на Harvics билтен за увиде у индустрију и лансирање производа."
+    },
+    "login": {
+      "title": "Пријавите се | Харвикс",
+      "description": "Пријавите се на свој Harvics налог да бисте управљали поруџбинама и приступили платформи."
+    },
+    "research": {
+      "title": "Истраживање и иновације | Харвикс",
+      "description": "Харвиксове истраживачке иницијативе и иновативни програми покрећу нашу глобалну стратегију."
+    },
+    "investorRelations": {
+      "title": "Односи са инвеститорима | Харвикс",
+      "description": "Информације за инвеститоре, финансијски извештаји и корпоративна саопштења од компаније Harvics Global Ventures."
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Страница није пронађена",
+      "heading": "404 — Страница није пронађена",
+      "description": "Страница коју тражите не постоји или је премештена.",
+      "goHome": "Иди на почетну страницу",
+      "goBack": "Назад"
+    },
+    "serverError": {
+      "title": "Нешто је пошло по злу",
+      "heading": "Нешто је пошло по злу",
+      "description": "Жао нам је, али се десило нешто неочекивано. Молимо вас да покушате да освежите страницу.",
+      "tryAgain": "Покушај поново",
+      "reload": "Поново учитај страницу",
+      "contactSupport": "Контактирајте подршку"
+    },
+    "globalError": {
+      "title": "Грешка у апликацији",
+      "heading": "Критична грешка",
+      "description": "Дошло је до критичне грешке. Молимо вас да поново учитате страницу.",
+      "reload": "Поново учитај апликацију"
+    }
+  },
+  "about": {
+    "title": "О Харвиксу",
+    "subtitle": "Изврсност у премиум потрошачкој роби од 2019. године",
+    "ourStory": "Наша прича",
+    "story1": "Основан 2019. године, Harvics је од визионарске идеје израстао у глобалног лидера у производњи премиум робе широке потрошње. Наше путовање је дефинисано неуморном тежњом ка квалитету и посвећеношћу иновацијама.",
+    "story2": "Послујемо у преко 40 земаља, испоручујући производе који обогаћују животе и постављају нове стандарде у индустрији. Од наших скромних почетака до нашег глобалног присуства, наше вредности остају непромењене.",
+    "est2018": "Процењено 2019.",
+    "countries40": "40+ земаља",
+    "productLines6": "6 производних линија"
+  },
+  "csr": {
+    "hero": {
+      "title": "Друштвена одговорност предузећа",
+      "description": "У компанији Харвикс, посвећени смо позитивном утицају на свет. Наше иницијативе за друштвено одговорно пословање фокусиране су на одрживост, оснаживање заједнице и етичке пословне праксе.",
+      "stats": {
+        "years": "Године утицаја",
+        "countries": "Досегнуте земље",
+        "lives": "Дотакнути животи"
+      }
+    },
+    "initiatives": {
+      "title": "Наше кључне иницијативе",
+      "description": "Фокусирамо се на четири главна стуба како бисмо подстакли одрживе промене и створили заједничку вредност за све заинтересоване стране."
+    },
+    "sustainability": {
+      "title": "Одрживост",
+      "description": "Смањење нашег еколошког отиска кроз обновљиве изворе енергије и смањење отпада.",
+      "stats": {
+        "renewable": "Обновљива енергија",
+        "waste": "Отпад преусмерен",
+        "carbon": "Смањење угљеника"
+      }
+    },
+    "community": {
+      "title": "Подршка заједнице",
+      "description": "Оснаживање локалних заједница кроз образовање, здравствену заштиту и економски развој.",
+      "stats": {
+        "families": "Породице подржане",
+        "programs": "Активни програми",
+        "volunteers": "Волонтери"
+      }
+    },
+    "education": {
+      "title": "Образовање",
+      "description": "Обезбеђивање приступа квалитетном образовању и стипендијама за ученике из угрожених група.",
+      "stats": {
+        "scholarships": "Стипендије",
+        "schools": "Партнерске школе",
+        "students": "Погођени студенти"
+      }
+    },
+    "health": {
+      "title": "Здравље и благостање",
+      "description": "Побољшање приступа здравственој заштити и исхрани у недовољно услуженим регионима.",
+      "stats": {
+        "campaigns": "Здравствене кампање",
+        "people": "Услужени људи",
+        "clinics": "Мобилне клинике"
+      }
+    },
+    "achievements": {
+      "2022": {
+        "title": "Најбоља иницијатива за друштвено одговорно пословање",
+        "description": "Похваљени смо за наш иновативни приступ друштвеној одговорности."
+      },
+      "2023": {
+        "title": "Шампион заједнице",
+        "description": "Награђени за наше опсежне програме рада са заједницом."
+      },
+      "2024": {
+        "title": "Награда за глобалну одрживост",
+        "description": "Признати по нашој посвећености угљеничној неутралности."
+      },
+      "title": "Наш утицај",
+      "description": "Препознавање наших прекретница у стварању бољег света."
+    },
+    "cta": {
+      "title": "Придружите нам се у стварању промене",
+      "description": "Постаните наш партнер или сазнајте више о томе како градимо одрживу будућност.",
+      "contact": "Контактирајте тим за друштвено одговорно пословање",
+      "learnMore": "Сазнајте више"
+    }
+  },
+  "harvicsHouse": {
+    "title": "Харвиксова кућа",
+    "subtitle": "Наслеђе изврсности и традиције",
+    "aboutTitle": "Добродошли у Харвиксову кућу",
+    "description": "Харвикс Хаус представља врхунац наше посвећености квалитету и наслеђу. Овде окупљамо најбољи избор наших премиум производа, представљених у окружењу које одражава наше вредности елеганције, традиције и иновације.",
+    "description2": "Истражите наше ексклузивне колекције и откријте причу која стоји иза сваког производа који носи име Harvics."
   }
 }

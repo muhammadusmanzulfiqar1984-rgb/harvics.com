@@ -1,13 +1,11 @@
 import { getTranslations } from 'next-intl/server'
-import { getFolderBasedCategories } from '@/data/folderBasedProducts'
-
 import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Strategy | Harvics',
-  description: 'Harvics strategic vision for global expansion.',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'strategy')
 }
-
 
 export async function generateStaticParams() {
   return [
@@ -27,33 +25,17 @@ interface StrategyPageProps {
 
 export default async function StrategyPage({ params }: StrategyPageProps) {
   const { locale } = await params
-  const categories = getFolderBasedCategories()
+  const t = await getTranslations({ locale, namespace: 'strategy' })
 
   const strategies = [
-    {
-      title: 'Global Expansion',
-      description: 'Expanding our presence in emerging markets while strengthening our position in established markets',
-      icon: '🌍'
-    },
-    {
-      title: 'Product Innovation',
-      description: 'Investing in R&D to develop new products that meet evolving consumer preferences',
-      icon: '💡'
-    },
-    {
-      title: 'Sustainability',
-      description: 'Committed to sustainable practices across our supply chain and operations',
-      icon: '🌱'
-    },
-    {
-      title: 'Digital Transformation',
-      description: 'Leveraging technology to enhance customer experience and operational efficiency',
-      icon: '📱'
-    }
+    { key: 'globalExpansion', icon: '🌍' },
+    { key: 'productInnovation', icon: '💡' },
+    { key: 'sustainability', icon: '🌱' },
+    { key: 'digitalTransformation', icon: '📱' },
   ]
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="pt-20">
         <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
           {/* Decorative Elements */}
@@ -65,10 +47,10 @@ export default async function StrategyPage({ params }: StrategyPageProps) {
           
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-white mb-6">
-              Our Strategy
+              {t('title')}
             </h1>
             <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto font-light leading-relaxed">
-              Building a sustainable future through innovation and excellence
+              {t('heroSubtitle')}
             </p>
           </div>
         </section>
@@ -79,8 +61,8 @@ export default async function StrategyPage({ params }: StrategyPageProps) {
               {strategies.map((strategy, index) => (
                 <div key={index} className="bg-white p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
                   <div className="text-5xl mb-6 bg-[#6B1F2B]/5 w-20 h-20 flex items-center justify-center">{strategy.icon}</div>
-                  <h3 className="text-2xl font-serif font-medium text-gray-900 mb-3">{strategy.title}</h3>
-                  <p className="text-gray-600 text-lg leading-relaxed">{strategy.description}</p>
+                  <h3 className="text-2xl font-serif font-medium text-gray-900 mb-3">{t(`pillars.${strategy.key}.title`)}</h3>
+                  <p className="text-gray-600 text-lg leading-relaxed">{t(`pillars.${strategy.key}.desc`)}</p>
                 </div>
               ))}
             </div>
@@ -92,9 +74,9 @@ export default async function StrategyPage({ params }: StrategyPageProps) {
               </div>
               
               <div className="relative z-10">
-                <h2 className="text-2xl md:text-3xl font-serif font-medium mb-6">Our Vision</h2>
+                <h2 className="text-2xl md:text-3xl font-serif font-medium mb-6">{t('vision.title')}</h2>
                 <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto font-light leading-relaxed">
-                  To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.
+                  {t('vision.desc')}
                 </p>
               </div>
             </div>
@@ -104,4 +86,3 @@ export default async function StrategyPage({ params }: StrategyPageProps) {
     </main>
   )
 }
-

@@ -280,7 +280,7 @@ export default function SourcingPage({ params }: { params: { locale: string } })
   const totalServices = SOURCING_DATA.reduce((sum, cat) => sum + cat.services.length, 0)
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* ─── Hero ─── */}
       <section className="relative bg-[#6B1F2B] py-24 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] opacity-5" style={{ background: 'radial-gradient(circle, #C3A35E 0%, transparent 70%)' }} />
@@ -329,7 +329,7 @@ export default function SourcingPage({ params }: { params: { locale: string } })
                 className={`px-5 py-2.5 text-sm font-medium border transition-colors ${
                   activeSection === cat.id
                     ? 'bg-[#6B1F2B] text-white border-[#6B1F2B]'
-                    : 'bg-[#F5F1E8] border-[#C3A35E]/20 text-[#6B1F2B] hover:bg-[#6B1F2B] hover:text-white hover:border-[#6B1F2B]'
+                    : 'bg-white border-[#C3A35E]/20 text-[#6B1F2B] hover:bg-[#6B1F2B] hover:text-white hover:border-[#6B1F2B]'
                 }`}
                 style={{ borderRadius: 0 }}
               >
@@ -383,7 +383,7 @@ export default function SourcingPage({ params }: { params: { locale: string } })
             ].map((item) => (
               <div
                 key={item.title}
-                className="bg-[#F5F1E8] border border-[#C3A35E]/20 p-6 hover:border-[#C3A35E] transition-colors"
+                className="bg-white border border-[#C3A35E]/20 p-6 hover:border-[#C3A35E] transition-colors"
                 style={{ borderRadius: 0, boxShadow: 'none' }}
               >
                 <div className="text-3xl mb-4">{item.icon}</div>
@@ -440,7 +440,7 @@ function ServiceCard({ service }: { service: SourcingService }) {
       style={{ borderRadius: 0, boxShadow: 'none' }}
     >
       {/* Image Header */}
-      <div className="h-[160px] bg-[#F5F1E8] border-b border-[#C3A35E]/20 overflow-hidden relative">
+      <div className="h-[160px] bg-white border-b border-[#C3A35E]/20 overflow-hidden relative">
         <img
           src={getProductImage(service.keywords)}
           alt={service.title}
@@ -449,7 +449,7 @@ function ServiceCard({ service }: { service: SourcingService }) {
           onError={(e) => {
             (e.target as HTMLImageElement).style.display = 'none'
             ;(e.target as HTMLImageElement).parentElement!.innerHTML =
-              `<div class="w-full h-full flex items-center justify-center bg-[#F5F1E8]"><span class="text-5xl opacity-20">${service.icon}</span></div>`
+              `<div class="w-full h-full flex items-center justify-center bg-white"><span class="text-5xl opacity-20">${service.icon}</span></div>`
           }}
         />
         <div className="absolute top-3 left-3 text-2xl">{service.icon}</div>

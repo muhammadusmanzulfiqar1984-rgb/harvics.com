@@ -53,4 +53,9 @@ domainsRouter.get(
   withScopedSlice((_req, res, slice) => res.json(slice.executive)),
 );
 
+// Root route
+domainsRouter.get('/', (_req: Request, res: Response) => {
+  res.json({ success: true, message: 'Domains API', endpoints: ['/orders/overview', '/inventory/overview', '/finance/overview', '/crm/overview', '/hr/overview'] });
+});
+
 export default domainsRouter;

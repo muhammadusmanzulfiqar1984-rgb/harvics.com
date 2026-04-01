@@ -6,7 +6,7 @@ export default function CompetitorIntelOSLayout({
 }: {
   children: React.ReactNode
 }) {
-  const allowedRoles: UserRole[] = ['admin', 'super_admin', 'hq', 'country_manager']
+  const allowedRoles: UserRole[] = ['admin', 'super_admin', 'hq', 'country_manager', 'company_admin']
   
   return (
     <AuthGuard allowedRoles={allowedRoles}>

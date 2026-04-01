@@ -58,12 +58,7 @@ export default function DistributorProfile() {
           return
         }
 
-        interface ProfileResponse {
-          data?: {
-            data?: unknown
-          }
-        }
-        const responseData = response as ProfileResponse
+        const responseData = response as any
         if (responseData.data?.data) {
           const data = responseData.data.data
           setProfile(data as typeof profile)
@@ -249,7 +244,7 @@ export default function DistributorProfile() {
                   type="text"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full border border-black300 px-4 py-2"
+                  className="w-full border border-gray-200 px-4 py-2"
                 />
               </div>
 
@@ -261,7 +256,7 @@ export default function DistributorProfile() {
                   type="email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full border border-black300 px-4 py-2"
+                  className="w-full border border-gray-200 px-4 py-2"
                 />
                 {errors.email && (
                   <p className="text-red-600 text-xs mt-1">{errors.email}</p>
@@ -276,7 +271,7 @@ export default function DistributorProfile() {
                   type="tel"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full border border-black300 px-4 py-2"
+                  className="w-full border border-gray-200 px-4 py-2"
                 />
                 {errors.phone && (
                   <p className="text-red-600 text-xs mt-1">{errors.phone}</p>
@@ -290,7 +285,7 @@ export default function DistributorProfile() {
                 <textarea
                   value={formData.address}
                   onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                  className="w-full border border-black300 px-4 py-2"
+                  className="w-full border border-gray-200 px-4 py-2"
                   rows={3}
                 />
               </div>
@@ -303,7 +298,7 @@ export default function DistributorProfile() {
                   <select
                     value={formData.language}
                     onChange={(e) => setFormData({ ...formData, language: e.target.value })}
-                    className="w-full border border-black300 px-4 py-2"
+                    className="w-full border border-gray-200 px-4 py-2"
                   >
                     <option value="en">English</option>
                     <option value="ar">Arabic</option>
@@ -320,7 +315,7 @@ export default function DistributorProfile() {
                   <select
                     value={formData.currency}
                     onChange={(e) => setFormData({ ...formData, currency: e.target.value })}
-                    className="w-full border border-black300 px-4 py-2"
+                    className="w-full border border-gray-200 px-4 py-2"
                   >
                     <option value="USD">USD</option>
                     <option value="AED">AED</option>

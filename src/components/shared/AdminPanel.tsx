@@ -42,7 +42,7 @@ export default function AdminPanel({ selectedCountry, countryData }: AdminPanelP
                       }}
                       className="sr-only peer"
                     />
-                    <div className="w-11 h-6 bg-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-black/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-black300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-white"></div>
+                    <div className="w-11 h-6 bg-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-black/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-200 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-white"></div>
                   </label>
                 </div>
                 
@@ -52,12 +52,12 @@ export default function AdminPanel({ selectedCountry, countryData }: AdminPanelP
                     <input
                       type="password"
                       placeholder="Enter API key..."
-                      className="w-full px-3 py-2 border border-black300 rounded-lg text-sm"
+                      className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm"
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-black mb-1">Environment</label>
-                    <select className="w-full px-3 py-2 border border-black300 rounded-lg text-sm">
+                    <select className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm">
                       <option value="sandbox">Sandbox</option>
                       <option value="production">Production</option>
                     </select>
@@ -160,7 +160,7 @@ export default function AdminPanel({ selectedCountry, countryData }: AdminPanelP
               type="number"
               value={taxConfig.vat || 0}
               onChange={(e) => setTaxConfig({ ...taxConfig, vat: parseFloat(e.target.value) })}
-              className="w-full px-3 py-2 border border-black300 rounded-lg"
+              className="w-full px-3 py-2 border border-gray-200 rounded-lg"
             />
           </div>
           <div>
@@ -169,7 +169,7 @@ export default function AdminPanel({ selectedCountry, countryData }: AdminPanelP
               type="number"
               value={taxConfig.gst || 0}
               onChange={(e) => setTaxConfig({ ...taxConfig, gst: parseFloat(e.target.value) })}
-              className="w-full px-3 py-2 border border-black300 rounded-lg"
+              className="w-full px-3 py-2 border border-gray-200 rounded-lg"
             />
           </div>
           <div>
@@ -178,7 +178,7 @@ export default function AdminPanel({ selectedCountry, countryData }: AdminPanelP
               type="number"
               value={taxConfig.importDuty || 0}
               onChange={(e) => setTaxConfig({ ...taxConfig, importDuty: parseFloat(e.target.value) })}
-              className="w-full px-3 py-2 border border-black300 rounded-lg"
+              className="w-full px-3 py-2 border border-gray-200 rounded-lg"
             />
           </div>
         </div>
@@ -223,7 +223,7 @@ export default function AdminPanel({ selectedCountry, countryData }: AdminPanelP
         <div className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-black mb-1">Price Band</label>
-            <select className="w-full px-3 py-2 border border-black300 rounded-lg">
+            <select className="w-full px-3 py-2 border border-gray-200 rounded-lg">
               <option value="premium">Premium</option>
               <option value="standard">Standard</option>
               <option value="economy">Economy</option>
@@ -233,7 +233,7 @@ export default function AdminPanel({ selectedCountry, countryData }: AdminPanelP
             <label className="block text-sm font-medium text-black mb-1">SKU Structure</label>
             <textarea
               placeholder="Enter SKU structure (JSON format)..."
-              className="w-full px-3 py-2 border border-black300 rounded-lg h-32"
+              className="w-full px-3 py-2 border border-gray-200 rounded-lg h-32"
             />
           </div>
           <button className="bg-white text-black px-6 py-2 rounded-lg font-semibold hover:bg-white/90">
@@ -255,7 +255,7 @@ export default function AdminPanel({ selectedCountry, countryData }: AdminPanelP
             <input
               type="file"
               accept=".csv"
-              className="w-full px-3 py-2 border border-black300 rounded-lg"
+              className="w-full px-3 py-2 border border-gray-200 rounded-lg"
             />
           </div>
           <div>
@@ -263,7 +263,7 @@ export default function AdminPanel({ selectedCountry, countryData }: AdminPanelP
             <input
               type="text"
               placeholder="Enter API endpoint..."
-              className="w-full px-3 py-2 border border-black300 rounded-lg"
+              className="w-full px-3 py-2 border border-gray-200 rounded-lg"
             />
           </div>
           <button className="bg-white text-black px-6 py-2 rounded-lg font-semibold hover:bg-white/90">

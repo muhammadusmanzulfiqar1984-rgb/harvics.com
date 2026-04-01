@@ -24,7 +24,7 @@ export default async function SharesPage({ params }: SharesPageProps) {
   const categories = getFolderBasedCategories()
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="fixed top-0 left-0 right-0 z-[1000] bg-white shadow-sm">
         <Header categories={categories} />
       </div>

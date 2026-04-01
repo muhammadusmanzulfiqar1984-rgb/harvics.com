@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "hu",
+    "language": "Hungarian",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Hungarian. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Hungarian",
+      "translation": "Üdvözöljük a"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Harvics"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Hungarian",
+      "translation": "Kiválóság a prémium fogyasztási cikkek terén 2019 óta"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Hungarian",
+      "translation": "Vezető globális fogyasztási cikkeket gyártó vállalat, amely prémium élelmiszertermékeket szállít változatos kategóriákban, nemzetközi minőségi szabványoknak megfelelően."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Hungarian",
+      "translation": "Termékek felfedezése"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Hungarian",
+      "translation": "Kapcsolat"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Hungarian",
+      "translation": "Tudj meg többet"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Hungarian",
+      "translation": "Kiválóság a prémium fogyasztási cikkek terén azóta"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Hungarian",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Hungarian",
+      "translation": "London • Milánó • New York"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Hungarian",
+      "translation": "Pékség"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Hungarian",
+      "translation": "Italok"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Hungarian",
+      "translation": "Édesség"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Hungarian",
+      "translation": "Konyhai"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Hungarian",
+      "translation": "Fagyasztott élelmiszerek"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Hungarian",
+      "translation": "Tészta"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Hungarian",
+      "translation": "rágcsálnivalók"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Hungarian",
+      "translation": "ESG Jelentés 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Hungarian",
+      "translation": "London • Milánó • New York"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Hungarian",
+      "translation": "Otthon"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Hungarian",
+      "translation": "Körülbelül"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Hungarian",
+      "translation": "Rólunk"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Hungarian",
+      "translation": "Márkatörténet"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Hungarian",
+      "translation": "Termékek"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Hungarian",
+      "translation": "Termékeink"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Hungarian",
+      "translation": "Összes termék megtekintése"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Hungarian",
+      "translation": "CSR"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Hungarian",
+      "translation": "Befektetői kapcsolatok"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Hungarian",
+      "translation": "Befektetők"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Hungarian",
+      "translation": "Média"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Hungarian",
+      "translation": "Kapcsolat"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Hungarian",
+      "translation": "Harvics-ház"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Hungarian",
+      "translation": "Országok"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Hungarian",
+      "translation": "Portálok"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Hungarian",
+      "translation": "Bejelentkezés"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Hungarian",
+      "translation": "Kívánságlista"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Hungarian",
+      "translation": "Bevásárlókocsi"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Hungarian",
+      "translation": "Segítség"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Hungarian",
+      "translation": "Áruház keresése"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Hungarian",
+      "translation": "Pénz"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Hungarian",
+      "translation": "Értékesítés"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Hungarian",
+      "translation": "Ajánlatok"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Hungarian",
+      "translation": "Sötét mód"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Hungarian",
+      "translation": "Hitelkártya"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Hungarian",
+      "translation": "M&S Rewards hitelkártya"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Hungarian",
+      "translation": "Klubjutalom"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Hungarian",
+      "translation": "Hitelkártyáink"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Hungarian",
+      "translation": "Biztosítás"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Hungarian",
+      "translation": "Lakásbiztosítás"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Hungarian",
+      "translation": "Utazási biztosítás"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Hungarian",
+      "translation": "Utazási szolgáltatások"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Hungarian",
+      "translation": "Utazási pénz"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Hungarian",
+      "translation": "Árfolyamok"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Hungarian",
+      "translation": "További szolgáltatások"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Hungarian",
+      "translation": "Megtakarítások és befektetések"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Hungarian",
+      "translation": "Személyi kölcsönök"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Hungarian",
+      "translation": "Pénzügyi támogatás"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Hungarian",
+      "translation": "Jelenlegi eladások"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Hungarian",
+      "translation": "Kiárusítás"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Hungarian",
+      "translation": "Szezonális akciók"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Hungarian",
+      "translation": "Különleges ajánlatok"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Hungarian",
+      "translation": "Promóciók"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Hungarian",
+      "translation": "Tömeges rendelési kedvezmények"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Hungarian",
+      "translation": "Termékeink"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Hungarian",
+      "translation": "Összes termék megtekintése"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Hungarian",
+      "translation": "Termékkategóriáink"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Hungarian",
+      "translation": "Fedezze fel gondossággal és kiváló minőséggel készített prémium termékkínálatunkat."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Hungarian",
+      "translation": "1. szint: Kategóriák"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Hungarian",
+      "translation": "2. szint: Modulok"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Hungarian",
+      "translation": "3. szint: KPI-képernyők"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Hungarian",
+      "translation": "4. szint: Műveletek"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Hungarian",
+      "translation": "Navigáció visszaállítása"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Hungarian",
+      "translation": "Ehhez a kategóriához nem érhetők el alkategóriák."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Hungarian",
+      "translation": "Termékek"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Hungarian",
+      "translation": "Alkategóriák"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Hungarian",
+      "translation": "Pékség"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Hungarian",
+      "translation": "Frissen sült áruk és péksütemények."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Hungarian",
+      "translation": "Italok"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Hungarian",
+      "translation": "Frissítő italok minden alkalomra."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Hungarian",
+      "translation": "Cukrászda"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Hungarian",
+      "translation": "Édes finomságok és élvezetek."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Hungarian",
+      "translation": "Konyhai"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Hungarian",
+      "translation": "Nélkülözhetetlen hozzávalók a konyhádba."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Hungarian",
+      "translation": "Fagyasztott élelmiszerek"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Hungarian",
+      "translation": "Kényelmes és finom fagyasztott ételek."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Hungarian",
+      "translation": "Tészta"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Hungarian",
+      "translation": "Autentikus tésztafajták."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Hungarian",
+      "translation": "rágcsálnivalók"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Hungarian",
+      "translation": "Ízletes falatkák a nap bármely szakában."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Harvicsról"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Hungarian",
+      "translation": "Kiválóság a prémium fogyasztási cikkek terén 2019 óta"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Hungarian",
+      "translation": "Történetünk"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Hungarian",
+      "translation": "A 2019-ben alapított Harvics egy előremutató ötletből a prémium fogyasztási cikkek globális vezetőjévé nőtte ki magát. Utunk meghatározó eleme a minőség iránti szüntelen törekvés és az innováció iránti elkötelezettség."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Hungarian",
+      "translation": "Több mint 40 országban működünk, olyan termékeket szállítva, amelyek gazdagítják az életet és új mércét állítanak fel az iparágban. Szerény kezdeteinktől globális jelenlétünkig értékeink változatlanok maradtak."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Hungarian",
+      "translation": "Alapítva 2019-ben"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Hungarian",
+      "translation": "40+ ország"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Hungarian",
+      "translation": "6 termékcsalád"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Hungarian",
+      "translation": "Vállalati társadalmi felelősségvállalás"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Hungarian",
+      "translation": "A Harvicsnál elkötelezettek vagyunk amellett, hogy pozitív hatást gyakoroljunk a világra. CSR-kezdeményezéseink a fenntarthatóságra, a közösségek felhatalmazására és az etikus üzleti gyakorlatokra összpontosítanak."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Hungarian",
+      "translation": "Évekig tartó hatás"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Hungarian",
+      "translation": "Elért országok"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Hungarian",
+      "translation": "Megérintett életek"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Hungarian",
+      "translation": "Főbb kezdeményezéseink"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Hungarian",
+      "translation": "Négy fő pillérre összpontosítunk, hogy fenntartható változást mozdítsunk elő és közös értéket teremtsünk minden érdekelt fél számára."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Hungarian",
+      "translation": "Fenntarthatóság"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Hungarian",
+      "translation": "Környezeti lábnyomunk csökkentése megújuló energiaforrások és hulladékcsökkentés révén."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Hungarian",
+      "translation": "Megújuló energia"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Hungarian",
+      "translation": "Elterelt hulladék"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Hungarian",
+      "translation": "Szén-dioxid-csökkentés"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Hungarian",
+      "translation": "Közösségi támogatás"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Hungarian",
+      "translation": "A helyi közösségek felemelkedésének elősegítése az oktatás, az egészségügy és a gazdaságfejlesztés révén."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Hungarian",
+      "translation": "Támogatott családok"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Hungarian",
+      "translation": "Aktív programok"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Hungarian",
+      "translation": "önkéntesek"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Hungarian",
+      "translation": "Oktatás"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Hungarian",
+      "translation": "Hozzáférés biztosítása minőségi oktatáshoz és ösztöndíjakhoz a hátrányos helyzetű diákok számára."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Hungarian",
+      "translation": "Ösztöndíjak"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Hungarian",
+      "translation": "Partneriskolák"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Hungarian",
+      "translation": "Érintett diákok"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Hungarian",
+      "translation": "Egészség és jóllét"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Hungarian",
+      "translation": "Az egészségügyi ellátáshoz és az élelmezéshez való hozzáférés javítása a rosszul ellátott régiókban."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Hungarian",
+      "translation": "Egészségügyi kampányok"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Hungarian",
+      "translation": "Kiszolgált emberek"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Hungarian",
+      "translation": "Mobil klinikák"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Hungarian",
+      "translation": "Legjobb CSR-kezdeményezés"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Hungarian",
+      "translation": "Elismerés illeti a társadalmi felelősségvállaláshoz való innovatív hozzáállásunkat."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Hungarian",
+      "translation": "Közösségi bajnok"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Hungarian",
+      "translation": "Kiterjedt közösségi ismeretterjesztő programjainkért kaptuk az elismerést."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Hungarian",
+      "translation": "Globális Fenntarthatósági Díj"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Hungarian",
+      "translation": "Elismerésünk a karbonsemlegesség iránti elkötelezettségünkért."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Hungarian",
+      "translation": "Hatásunk"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Hungarian",
+      "translation": "Elismerve a mérföldköveinket egy jobb világ megteremtésében."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Hungarian",
+      "translation": "Csatlakozz hozzánk, hogy változást hozhassunk"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Hungarian",
+      "translation": "Légy Te is partnerünk, vagy tudj meg többet arról, hogyan építjük a fenntartható jövőt."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Hungarian",
+      "translation": "Kapcsolatfelvétel a CSR csapattal"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Hungarian",
+      "translation": "Tudj meg többet"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Hungarian",
+      "translation": "Kapcsolatfelvétel"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Hungarian",
+      "translation": "Szeretnénk hallani felőled. Lépj velünk kapcsolatba bármelyik elérhetőségünkön."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Hungarian",
+      "translation": "Telefon"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Hungarian",
+      "translation": "Email"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Hungarian",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Hungarian",
+      "translation": "Hívjon most"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Hungarian",
+      "translation": "E-mail küldése"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Hungarian",
+      "translation": "Üzenet nekünk"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Hungarian",
+      "translation": "Médiaközpont"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Médiaközpont | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Hungarian",
+      "translation": "Sajtóanyagok, márkaelemek és a Harvics Global Ventures legfrissebb hírei."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Hungarian",
+      "translation": "Társasági"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Hungarian",
+      "translation": "Hírek és sajtóközlemények"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Hungarian",
+      "translation": "Legfrissebb bejelentések, piaci terjeszkedések, termékbevezetések és vállalati hírek a Harvics Global Ventures-től."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Hungarian",
+      "translation": "Olvassa el a legfrissebb híreket"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Hungarian",
+      "translation": "Képgaléria"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Hungarian",
+      "translation": "Nagy felbontású márkaelemek, termékfotók, létesítményfotók és rendezvényekről szóló tudósítások médiahasználatra."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Hungarian",
+      "translation": "Galéria böngészése"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Hungarian",
+      "translation": "Médiakapcsolatok"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Hungarian",
+      "translation": "Sajtómegkeresésekkel, interjúkérésekkel és partnerségi bejelentésekkel forduljon kommunikációs csapatunkhoz."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Hungarian",
+      "translation": "Kapcsolatfelvétel a sajtócsapattal"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Hungarian",
+      "translation": "Lefedett piacok"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Hungarian",
+      "translation": "Iparági vertikálisok"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Hungarian",
+      "translation": "Dubaiban alapították"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Hungarian",
+      "translation": "Támogatott nyelvek"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Hungarian",
+      "translation": "Legutóbbi hírek"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Hungarian",
+      "translation": "A Harvics 5 új délkelet-ázsiai piacra bővíti FMCG-műveletét"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Hungarian",
+      "translation": "Új, mesterséges intelligenciával vezérelt ellátási lánc platform indult a globális disztribúcióhoz"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Hungarian",
+      "translation": "A Harvics minden létesítményében elérte a karbonsemlegesség mérföldkövét"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Hungarian",
+      "translation": "Stratégiai partnerség vezető dél-ázsiai textilgyártókkal"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Hungarian",
+      "translation": "Harvics-ház"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Hungarian",
+      "translation": "A kiválóság és a hagyomány öröksége"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Hungarian",
+      "translation": "Üdvözöljük a Harvics Házban"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Hungarian",
+      "translation": "A Harvics House a minőség és a hagyományok iránti elkötelezettségünk csúcsát képviseli. Itt prémium termékeink legkiválóbb választékát kínáljuk, olyan környezetben bemutatva, amely tükrözi az elegancia, a hagyomány és az innováció értékeit."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Hungarian",
+      "translation": "Fedezze fel exkluzív kollekcióinkat, és ismerje meg a Harvics nevét viselő összes termék történetét."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Hungarian",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Hungarian",
+      "translation": "Kiválóság a prémium fogyasztási cikkek terén 2019 óta"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Hungarian",
+      "translation": "Vezető globális fogyasztási cikkeket gyártó vállalat, amely prémium élelmiszertermékeket szállít változatos kategóriákban, nemzetközi minőségi szabványoknak megfelelően."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Hungarian",
+      "translation": "London • Milánó • New York"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Hungarian",
+      "translation": "2019 óta"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Hungarian",
+      "translation": "Harvics Hírek"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Hungarian",
+      "translation": "Iratkozzon fel, hogy értesítéseket és frissítéseket kapjon"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Hungarian",
+      "translation": "Regisztráció"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Hungarian",
+      "translation": "Megfelelőségi aggályok"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Hungarian",
+      "translation": "Szóljon, ha aggályai vannak a megfelelőséggel vagy az etikával kapcsolatban"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Hungarian",
+      "translation": "Szólalj fel"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Hungarian",
+      "translation": "Kapcsolat"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Hungarian",
+      "translation": "Lépjen kapcsolatba csapatunkkal"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Hungarian",
+      "translation": "Kapcsolat"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Hungarian",
+      "translation": "Hasznos linkek"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Ask Harvics"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Hungarian",
+      "translation": "Álláskeresés"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Hungarian",
+      "translation": "Iratkozzon fel hírlevelünkre"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Hungarian",
+      "translation": "Vállalat"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Hungarian",
+      "translation": "Globális címek"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Hungarian",
+      "translation": "Stratégia"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Hungarian",
+      "translation": "Vezetőségünk"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Hungarian",
+      "translation": "Márkák A-tól Z-ig"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Hungarian",
+      "translation": "Történetünk"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Hungarian",
+      "translation": "Fenntarthatóság"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Hungarian",
+      "translation": "Hír"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Hungarian",
+      "translation": "Médiakapcsolatok"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Hungarian",
+      "translation": "Képek"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Hungarian",
+      "translation": "Befektetők"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Hungarian",
+      "translation": "Vállalatirányítás"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Hungarian",
+      "translation": "Részvények, ADR-ek és kötvények"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Hungarian",
+      "translation": "Publikációk"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Hungarian",
+      "translation": "Kövess minket"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Hungarian",
+      "translation": "0 probléma"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Hungarian",
+      "translation": "Oldaltérkép"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Hungarian",
+      "translation": "Leiratkozás"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Hungarian",
+      "translation": "Segítség"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Hungarian",
+      "translation": "Magánélet"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Hungarian",
+      "translation": "Sütik"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Hungarian",
+      "translation": "Felhasználási feltételek"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Hungarian",
+      "translation": "Megközelíthetőség"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Hungarian",
+      "translation": "Szén-dioxid-hatékonyság"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Hungarian",
+      "translation": "Beszállítók"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Hungarian",
+      "translation": "Közösségi média"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Hungarian",
+      "translation": "Sütibeállítások"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Hungarian",
+      "translation": "Prémium minőség"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Hungarian",
+      "translation": "E-mail cím"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Hungarian",
+      "translation": "Add meg az e-mail címed"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Hungarian",
+      "translation": "Feliratkozás"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Hungarian",
+      "translation": "Feliratkozás..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Hungarian",
+      "translation": "Rólunk"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Hungarian",
+      "translation": "Média"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Hungarian",
+      "translation": "Termékek, márkák vagy kategóriák keresése"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Hungarian",
+      "translation": "Nincs találat"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Hungarian",
+      "translation": "Keresés..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Hungarian",
+      "translation": "Eredmények"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Hungarian",
+      "translation": "Csevegjen velünk"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Hungarian",
+      "translation": "Írd be az üzeneted..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Hungarian",
+      "translation": "Elküld"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Hungarian",
+      "translation": "Közeli"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Hungarian",
+      "translation": "Szia! Miben segíthetek ma?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Hungarian",
+      "translation": "Bocsánat, ezt nem értettem. Megtennéd, hogy újrafogalmazod?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Hungarian",
+      "translation": "Segíthetek termékinformációkkal, megrendelésekkel vagy általános kérdésekkel kapcsolatban. Mit szeretne tudni?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Hungarian",
+      "translation": "További segítségért kérjük, vegye fel velünk a kapcsolatot a support@harvics.com címen, vagy hívja a +1-800-HARVICS telefonszámot."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Hungarian",
+      "translation": "Csevegjen velünk"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Hungarian",
+      "translation": "Terhelés..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Hungarian",
+      "translation": "Hiba"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Hungarian",
+      "translation": "Siker"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Hungarian",
+      "translation": "Megtakarítás"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Hungarian",
+      "translation": "Mégsem"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Hungarian",
+      "translation": "Töröl"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Hungarian",
+      "translation": "Szerkesztés"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Hungarian",
+      "translation": "Kilátás"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Hungarian",
+      "translation": "Küldés"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Hungarian",
+      "translation": "Keresés"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Hungarian",
+      "translation": "Szűrő"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Hungarian",
+      "translation": "Világos"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Hungarian",
+      "translation": "Letöltés"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Hungarian",
+      "translation": "Feltöltés"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Hungarian",
+      "translation": "Igen"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Hungarian",
+      "translation": "Nem"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Hungarian",
+      "translation": "Közeli"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Hungarian",
+      "translation": "Vissza"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Hungarian",
+      "translation": "Következő"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Hungarian",
+      "translation": "Előző"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Hungarian",
+      "translation": "Műveletek"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Hungarian",
+      "translation": "Állapot"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Hungarian",
+      "translation": "Dátum"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Hungarian",
+      "translation": "Név"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Hungarian",
+      "translation": "Email"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Hungarian",
+      "translation": "Telefon"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Hungarian",
+      "translation": "Cím"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Hungarian",
+      "translation": "Ország"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Hungarian",
+      "translation": "Város"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Hungarian",
+      "translation": "Minden"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Hungarian",
+      "translation": "Egyik sem"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Hungarian",
+      "translation": "Válasszon"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Hungarian",
+      "translation": "Nyelv kiválasztása"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Hungarian",
+      "translation": "Válasszon országot"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Hungarian",
+      "translation": "Mutass többet"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Hungarian",
+      "translation": "Kevesebb megjelenítése"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Hungarian",
+      "translation": "Kívánt"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Hungarian",
+      "translation": "Menü"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Hungarian",
+      "translation": "Termékek megtekintése"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Hungarian",
+      "translation": "Zenél"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Hungarian",
+      "translation": "Zene szüneteltetése"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Hungarian",
+      "translation": "Néma zene"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Hungarian",
+      "translation": "Zene némításának feloldása"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Hungarian",
+      "translation": "Globális elérhetőségünk"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Hungarian",
+      "translation": "Mivel"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Hungarian",
+      "translation": "Nagy piac"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Hungarian",
+      "translation": "Főbb piacok"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Hungarian",
+      "translation": "Jelenlét"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Hungarian",
+      "translation": "Kiszolgált országok"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Hungarian",
+      "translation": "Főbb piacok"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Hungarian",
+      "translation": "Termékkategóriák"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Hungarian",
+      "translation": "Alapított"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Hungarian",
+      "translation": "Területi hierarchia"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Hungarian",
+      "translation": "Teljes elérési út"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Hungarian",
+      "translation": "Jelenlegi terület"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Hungarian",
+      "translation": "Nincsenek elemek"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Hungarian",
+      "translation": "Földgolyó"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Hungarian",
+      "translation": "Kontinens"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Hungarian",
+      "translation": "Régió"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Hungarian",
+      "translation": "Ország"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Hungarian",
+      "translation": "Város"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Hungarian",
+      "translation": "Kerület"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Hungarian",
+      "translation": "Elhelyezkedés"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Hungarian",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Hungarian",
+      "translation": "Globális"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Hungarian",
+      "translation": "Régió kiválasztása"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Hungarian",
+      "translation": "Ügyféladatok"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Hungarian",
+      "translation": "Kiválasztott"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Hungarian",
+      "translation": "Teljes név"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Hungarian",
+      "translation": "Add meg a teljes neved"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Hungarian",
+      "translation": "Név megadása kötelező"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Hungarian",
+      "translation": "E-mail cím"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Hungarian",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Hungarian",
+      "translation": "E-mail cím megadása kötelező"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Hungarian",
+      "translation": "Kérjük, adjon meg egy érvényes e-mail címet"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Hungarian",
+      "translation": "Telefonszám"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Hungarian",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Hungarian",
+      "translation": "Telefonszám megadása kötelező"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Hungarian",
+      "translation": "Cím"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Hungarian",
+      "translation": "Az Ön címe"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Hungarian",
+      "translation": "Cím megadása kötelező"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Hungarian",
+      "translation": "Hozzájárulok marketingkommunikáció és frissítések fogadásához"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Hungarian",
+      "translation": "Küldés és folytatás"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Hungarian",
+      "translation": "Beküldés..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Hungarian",
+      "translation": "Kihagyás és folytatás"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Hungarian",
+      "translation": "Fő teljesítménymutatók"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Hungarian",
+      "translation": "Mai rendelések"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Hungarian",
+      "translation": "Harvics CRM-en keresztül beküldve"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Hungarian",
+      "translation": "Függőben lévő szállítások"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Hungarian",
+      "translation": "Kijelölt útvonalakon keresztül"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Hungarian",
+      "translation": "Kiskereskedők"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Hungarian",
+      "translation": "Aktív kimenetek a hatókörben"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Hungarian",
+      "translation": "T és A pontszám"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Hungarian",
+      "translation": "Területi lefedettség"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Hungarian",
+      "translation": "Pénzügy és készletgazdálkodás"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Hungarian",
+      "translation": "Alacsony készletű cikkszámok"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Hungarian",
+      "translation": "Trigger utántöltés"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Hungarian",
+      "translation": "Kiegyenlítetlen számlák"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Hungarian",
+      "translation": "Behajtás esedékes"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Hungarian",
+      "translation": "Hitelkeret"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Hungarian",
+      "translation": "Pénzügy által kiosztva"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Hungarian",
+      "translation": "Automatikus jóváhagyás, készletfeltöltés és számla-emlékeztetők engedélyezve"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Hungarian",
+      "translation": "Önjóváhagyás"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Hungarian",
+      "translation": "Készletfeltöltés"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Hungarian",
+      "translation": "Számlaemlékeztetők"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Hungarian",
+      "translation": "MI-ajánlások"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Hungarian",
+      "translation": "Kockázati szint"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Hungarian",
+      "translation": "A hitelkihasználtság és a fizetési előzmények alapján"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Hungarian",
+      "translation": "Javasolt sorrend"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Hungarian",
+      "translation": "Mesterséges intelligencia által ajánlott cikkszámok rendelésre"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Hungarian",
+      "translation": "Következő művelet"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Hungarian",
+      "translation": "Műveletek és útmutatás"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Hungarian",
+      "translation": "Panaszok"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Hungarian",
+      "translation": "Kiskereskedői problémák, amelyek megoldásra várnak"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Hungarian",
+      "translation": "Kézikönyv"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Hungarian",
+      "translation": "Priorizálja a dél előtti, függőben lévő szállítmányokat."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Hungarian",
+      "translation": "Minden függőben lévő panaszt 48 órán belül lezárunk."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Hungarian",
+      "translation": "Alacsony készletű cikkszámok utántöltésének indítása (automatikus megrendelés létrehozása)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Hungarian",
+      "translation": "Terület"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Hungarian",
+      "translation": "Rendelések ebben a hónapban"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Hungarian",
+      "translation": "Függőben lévő megbízások"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Hungarian",
+      "translation": "Leszállított rendelések"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Hungarian",
+      "translation": "Területi információk"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Hungarian",
+      "translation": "Ország"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Hungarian",
+      "translation": "Város"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Hungarian",
+      "translation": "Régió"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Hungarian",
+      "translation": "Gyors műveletek"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Hungarian",
+      "translation": "Új rend"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Hungarian",
+      "translation": "Rendelések megtekintése"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Hungarian",
+      "translation": "Számlák megtekintése"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Hungarian",
+      "translation": "Profilbeállítások"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Hungarian",
+      "translation": "Irányítópult betöltése..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Hungarian",
+      "translation": "Hiba"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Hungarian",
+      "translation": "Rendeléseim"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Hungarian",
+      "translation": "Rendelési azonosító"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Hungarian",
+      "translation": "Dátum"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Hungarian",
+      "translation": "Állapot"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Hungarian",
+      "translation": "Tételek"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Hungarian",
+      "translation": "Teljes összeg"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Hungarian",
+      "translation": "Műveletek"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Hungarian",
+      "translation": "Részletek megtekintése"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Hungarian",
+      "translation": "Állapot"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Hungarian",
+      "translation": "Kezdő dátum"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Hungarian",
+      "translation": "Befejezési dátum"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Hungarian",
+      "translation": "Minden állapot"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Hungarian",
+      "translation": "Szűrők törlése"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Hungarian",
+      "translation": "Függőben levő"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Hungarian",
+      "translation": "Feldolgozás"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Hungarian",
+      "translation": "Kiszállítva"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Hungarian",
+      "translation": "Lemondva"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Hungarian",
+      "translation": "Nem található megrendelés"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Hungarian",
+      "translation": "Rendelések betöltése..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Hungarian",
+      "translation": "Oldal"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Hungarian",
+      "translation": "a"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Hungarian",
+      "translation": "Előző"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Hungarian",
+      "translation": "Következő"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Hungarian",
+      "translation": "Rendelés részletei"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Hungarian",
+      "translation": "Vissza a rendelésekhez"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Hungarian",
+      "translation": "Rendelési azonosító"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Hungarian",
+      "translation": "Állapot"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Hungarian",
+      "translation": "Rendelés dátuma"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Hungarian",
+      "translation": "Szállítási dátum"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Hungarian",
+      "translation": "Szállítási cím"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Hungarian",
+      "translation": "Megjegyzések"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Hungarian",
+      "translation": "Rendelt tételek"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Hungarian",
+      "translation": "Termék"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Hungarian",
+      "translation": "Cikkszám"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Hungarian",
+      "translation": "Mennyiség"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Hungarian",
+      "translation": "Egységár"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Hungarian",
+      "translation": "Teljes"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Hungarian",
+      "translation": "Teljes összeg"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Hungarian",
+      "translation": "Állapot idővonal"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Hungarian",
+      "translation": "A rendelés nem található"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Hungarian",
+      "translation": "Új rendelés létrehozása"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Hungarian",
+      "translation": "Rendelt tételek"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Hungarian",
+      "translation": "Elem hozzáadása"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Hungarian",
+      "translation": "Még nincsenek hozzáadva elemek. Kattintson az „Elem hozzáadása” gombra a kezdéshez."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Hungarian",
+      "translation": "Rendelés részletei"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Hungarian",
+      "translation": "Szállítási dátum"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Hungarian",
+      "translation": "Szállítási cím"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Hungarian",
+      "translation": "Megjegyzések"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Hungarian",
+      "translation": "Teljes összeg"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Hungarian",
+      "translation": "Rendelés létrehozása"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Hungarian",
+      "translation": "Rendelés létrehozása..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Hungarian",
+      "translation": "Mégsem"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Hungarian",
+      "translation": "Termék kiválasztása"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Hungarian",
+      "translation": "Termék"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Hungarian",
+      "translation": "Mennyiség"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Hungarian",
+      "translation": "Egységár"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Hungarian",
+      "translation": "Eltávolítás"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Hungarian",
+      "translation": "Részösszeg"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Hungarian",
+      "translation": "Rendelési azonosító"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Hungarian",
+      "translation": "Legalább egy rendelési tétel megadása kötelező"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Hungarian",
+      "translation": "A termék megadása kötelező"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Hungarian",
+      "translation": "A mennyiségnek nagyobbnak kell lennie, mint 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Hungarian",
+      "translation": "Az egységár nem lehet negatív"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Hungarian",
+      "translation": "Érvénytelen szállítási dátum formátuma"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Hungarian",
+      "translation": "A szállítási dátum nem lehet múltbeli"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Hungarian",
+      "translation": "Számláim"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Hungarian",
+      "translation": "Számlaszám"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Hungarian",
+      "translation": "Számla dátuma"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Hungarian",
+      "translation": "Két dátum"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Hungarian",
+      "translation": "Összeg"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Hungarian",
+      "translation": "Fizetett összeg"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Hungarian",
+      "translation": "Fizetési állapot"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Hungarian",
+      "translation": "Fizetési állapot"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Hungarian",
+      "translation": "Minden állapot"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Hungarian",
+      "translation": "Szűrők törlése"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Hungarian",
+      "translation": "Fizetett"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Hungarian",
+      "translation": "Kifizetetlen"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Hungarian",
+      "translation": "Részleges"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Hungarian",
+      "translation": "Nem találhatók számlák"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Hungarian",
+      "translation": "Számlák betöltése..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Hungarian",
+      "translation": "Profilom"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Hungarian",
+      "translation": "Fiókadatok"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Hungarian",
+      "translation": "Forgalmazói azonosító"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Hungarian",
+      "translation": "Terület"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Hungarian",
+      "translation": "Ország"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Hungarian",
+      "translation": "Város"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Hungarian",
+      "translation": "Fiók létrehozva"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Hungarian",
+      "translation": "Profil frissítése"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Hungarian",
+      "translation": "Név"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Hungarian",
+      "translation": "Email"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Hungarian",
+      "translation": "Telefon"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Hungarian",
+      "translation": "Cím"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Hungarian",
+      "translation": "Nyelv"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Hungarian",
+      "translation": "Valuta"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Hungarian",
+      "translation": "Változtatások mentése"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Hungarian",
+      "translation": "Megtakarítás..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Hungarian",
+      "translation": "Profil sikeresen frissítve"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Hungarian",
+      "translation": "Profil betöltése..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Hungarian",
+      "translation": "Érvénytelen e-mail formátum"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Hungarian",
+      "translation": "Érvénytelen telefonszám-formátum"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Hungarian",
+      "translation": "Hiba"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Hungarian",
+      "translation": "Terhelés..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Hungarian",
+      "translation": "Megtakarítás"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Hungarian",
+      "translation": "Mégsem"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Hungarian",
+      "translation": "Vissza"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Hungarian",
+      "translation": "Küldés"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Hungarian",
+      "translation": "Töröl"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Hungarian",
+      "translation": "Szerkesztés"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Hungarian",
+      "translation": "Kilátás"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Hungarian",
+      "translation": "Keresés"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Hungarian",
+      "translation": "Szűrő"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Hungarian",
+      "translation": "Világos"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Hungarian",
+      "translation": "Jelentkezés"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Hungarian",
+      "translation": "Közeli"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Hungarian",
+      "translation": "Megerősítés"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Hungarian",
+      "translation": "Igen"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Hungarian",
+      "translation": "Nem"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Hungarian",
+      "translation": "Jogi operációs rendszer"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Hungarian",
+      "translation": "Jogi operációs rendszer"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Hungarian",
+      "translation": "Hozzáférés megtagadva"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Hungarian",
+      "translation": "Nincs jogosultsága a Legal OS modul eléréséhez."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Hungarian",
+      "translation": "Műszerfal"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Hungarian",
+      "translation": "Szerződések"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Hungarian",
+      "translation": "Tanúsítványok"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Hungarian",
+      "translation": "Megfelelőség"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Hungarian",
+      "translation": "Jogi irányítópult"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Hungarian",
+      "translation": "Jogi műveletek és megfelelőségi állapot áttekintése"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Hungarian",
+      "translation": "Aktív védjegyek"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Hungarian",
+      "translation": "Aktív szerződések"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Hungarian",
+      "translation": "Megfelelőségi állapot"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Hungarian",
+      "translation": "Védjegyek"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Hungarian",
+      "translation": "Védjegybejelentések és védjegybejelentések kezelése"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Hungarian",
+      "translation": "Új védjegy hozzáadása"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Hungarian",
+      "translation": "Ország"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Hungarian",
+      "translation": "Állapot"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Hungarian",
+      "translation": "Minden ország"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Hungarian",
+      "translation": "Minden állapot"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Hungarian",
+      "translation": "Szűrők törlése"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Hungarian",
+      "translation": "Márkanév"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Hungarian",
+      "translation": "Osztály"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Hungarian",
+      "translation": "Ország"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Hungarian",
+      "translation": "Jelentkezési szám"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Hungarian",
+      "translation": "Állapot"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Hungarian",
+      "translation": "Lejárati dátum"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Hungarian",
+      "translation": "Műveletek"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Hungarian",
+      "translation": "Védjegy szerkesztése"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Hungarian",
+      "translation": "Új védjegy hozzáadása"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Hungarian",
+      "translation": "Védjegy megtekintése"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Hungarian",
+      "translation": "Márkanév"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Hungarian",
+      "translation": "Osztályszám"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Hungarian",
+      "translation": "Ország"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Hungarian",
+      "translation": "Jelentkezési szám"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Hungarian",
+      "translation": "Állapot"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Hungarian",
+      "translation": "Lejárati dátum"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Hungarian",
+      "translation": "Dokumentumok"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Hungarian",
+      "translation": "Nincsenek csatolt dokumentumok"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Hungarian",
+      "translation": "Dokumentum hozzáadása"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Hungarian",
+      "translation": "Eltávolítás"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Hungarian",
+      "translation": "Nem sikerült betölteni a védjegyeket"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Hungarian",
+      "translation": "Nem sikerült menteni a védjegyet. Próbálja újra."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Hungarian",
+      "translation": "Jogi esetek"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Hungarian",
+      "translation": "Jogi ügyek kezelése és állapotuk nyomon követése"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Hungarian",
+      "translation": "Új eset"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Hungarian",
+      "translation": "Ügy címe"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Hungarian",
+      "translation": "Ügytípus"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Hungarian",
+      "translation": "Ország"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Hungarian",
+      "translation": "Leírás"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Hungarian",
+      "translation": "Hozzárendelve"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Hungarian",
+      "translation": "Állapot"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Hungarian",
+      "translation": "Meghallgatás dátuma"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Hungarian",
+      "translation": "Ügy címe"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Hungarian",
+      "translation": "Típus"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Hungarian",
+      "translation": "Ország"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Hungarian",
+      "translation": "Hozzárendelve"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Hungarian",
+      "translation": "Állapot"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Hungarian",
+      "translation": "Meghallgatás dátuma"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Hungarian",
+      "translation": "Műveletek"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Hungarian",
+      "translation": "Nyitott"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Hungarian",
+      "translation": "Folyamatban van"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Hungarian",
+      "translation": "Zárt"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Hungarian",
+      "translation": "Lemondva"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Hungarian",
+      "translation": "Flottatérkép nézet"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Hungarian",
+      "translation": "Értékesítési munkatársak és szállító járművek valós idejű nyomon követése"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Hungarian",
+      "translation": "Aktív alkalmazottak"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Hungarian",
+      "translation": "Nincsenek aktív alkalmazottak"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Hungarian",
+      "translation": "Terhelés..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Hungarian",
+      "translation": "Útvonal visszajátszása"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Hungarian",
+      "translation": "Munkavállaló"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Hungarian",
+      "translation": "Sebesség"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Hungarian",
+      "translation": "Visszaállítás"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Hungarian",
+      "translation": "Játék"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Hungarian",
+      "translation": "Szünet"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Hungarian",
+      "translation": "pontok"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Hungarian",
+      "translation": "Nincsenek elérhető útvonaladatok"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Hungarian",
+      "translation": "Útvonal betöltése..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Hungarian",
+      "translation": "Versenytárs termékek"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Hungarian",
+      "translation": "Versenytársak termékinformációinak nyomon követése"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Hungarian",
+      "translation": "Termék hozzáadása"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Hungarian",
+      "translation": "Versenytárs termék hozzáadása"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Hungarian",
+      "translation": "Márka"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Hungarian",
+      "translation": "SKU név"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Hungarian",
+      "translation": "Kategória"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Hungarian",
+      "translation": "Méret"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Hungarian",
+      "translation": "Ár"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Hungarian",
+      "translation": "Valuta"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Hungarian",
+      "translation": "Ország"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Hungarian",
+      "translation": "Márka"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Hungarian",
+      "translation": "SKU név"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Hungarian",
+      "translation": "Kategória"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Hungarian",
+      "translation": "Méret"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Hungarian",
+      "translation": "Ár"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Hungarian",
+      "translation": "Ország"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Hungarian",
+      "translation": "Hozzáadás dátuma"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Hungarian",
+      "translation": "Nem sikerült betölteni a termékeket"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Hungarian",
+      "translation": "Nem sikerült létrehozni a terméket. Kérjük, próbálja újra."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Hungarian",
+      "translation": "Nem találhatók versenytárs termékek"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Hungarian",
+      "translation": "Termékek betöltése..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Hungarian",
+      "translation": "Versenytársi irányítópult"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Hungarian",
+      "translation": "Elemzések és betekintés a versenytársak termékeibe"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Hungarian",
+      "translation": "Összes termék"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Hungarian",
+      "translation": "Márkák nyomon követése"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Hungarian",
+      "translation": "Országok"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Hungarian",
+      "translation": "Kategóriák"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Hungarian",
+      "translation": "Termékek márka szerint"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Hungarian",
+      "translation": "Termékek országonként"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Hungarian",
+      "translation": "Termékek kategóriánként"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Hungarian",
+      "translation": "Statisztikák betöltése..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Hungarian",
+      "translation": "Nincsenek elérhető statisztikák"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Hungarian",
+      "translation": "Áttekintés"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Hungarian",
+      "translation": "Rendelések"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Hungarian",
+      "translation": "Leltár"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Hungarian",
+      "translation": "Logisztika"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Hungarian",
+      "translation": "Pénzügy"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Hungarian",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Hungarian",
+      "translation": "HR"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Hungarian",
+      "translation": "Végrehajtó"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Hungarian",
+      "translation": "Befektető"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Hungarian",
+      "translation": "Jogi/Szellemi Tulajdonjogi"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Hungarian",
+      "translation": "Versenyző"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Hungarian",
+      "translation": "Import/Export"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Hungarian",
+      "translation": "GPS-követés"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Hungarian",
+      "translation": "Lokalizáció"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Hungarian",
+      "translation": "Munkafolyamatok"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Hungarian",
+      "translation": "Adminisztrátor"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Hungarian",
+      "translation": "CRM operációs rendszer"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Hungarian",
+      "translation": "Ügyfél 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Hungarian",
+      "translation": "Teljes ügyfélprofilok, interakciós előzmények és kapcsolatkezelés"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Hungarian",
+      "translation": "Digitális kampányok"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Hungarian",
+      "translation": "Többcsatornás marketingkampányok (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Hungarian",
+      "translation": "Leendő ügyfelek és lehetőségek"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Hungarian",
+      "translation": "Érdeklődőkezelés, minősítés és lehetőségfolyamat"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Hungarian",
+      "translation": "Ügyfélszolgálat"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Hungarian",
+      "translation": "Jegykezelés, ügyfélszolgálat és problémamegoldás"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Hungarian",
+      "translation": "Hűségprogramok"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Hungarian",
+      "translation": "Kiskereskedői hűségprogram, játékosítás és jutalmak kezelése"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Hungarian",
+      "translation": "Ügyfél 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Hungarian",
+      "translation": "Új ügyfél"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Hungarian",
+      "translation": "Összes ügyfél"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Hungarian",
+      "translation": "Aktív"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Hungarian",
+      "translation": "Új"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Hungarian",
+      "translation": "Elégedettség"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Hungarian",
+      "translation": "Ügyfélkezelés"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Hungarian",
+      "translation": "Ügyfélkapcsolatok, interakciók és kampányok megtekintése és kezelése."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Hungarian",
+      "translation": "Terhelés..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Hungarian",
+      "translation": "Hiba történt a CRM-adatok betöltése során"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Hungarian",
+      "translation": "Áttekintés"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Hungarian",
+      "translation": "Rendelések"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Hungarian",
+      "translation": "Leltár"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Hungarian",
+      "translation": "Logisztika"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Hungarian",
+      "translation": "Pénzügy"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Hungarian",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Hungarian",
+      "translation": "HR"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Hungarian",
+      "translation": "Végrehajtó"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Hungarian",
+      "translation": "Befektető"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Hungarian",
+      "translation": "Jogi/Szellemi Tulajdonjogi"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Hungarian",
+      "translation": "Versenyző"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Hungarian",
+      "translation": "Import/Export"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Hungarian",
+      "translation": "GPS-követés"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Hungarian",
+      "translation": "Lokalizáció"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Hungarian",
+      "translation": "Munkafolyamatok"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Hungarian",
+      "translation": "Adminisztrátor"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Hungarian",
+      "translation": "Ügyfelek"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Hungarian",
+      "translation": "Alkalmazottak"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Hungarian",
+      "translation": "Nyereség"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Hungarian",
+      "translation": "Beszállítói pilótafülke betöltése…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Hungarian",
+      "translation": "Beszerzési megrendelések"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Harvics nevelte fel"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Hungarian",
+      "translation": "Szállítmányok / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Hungarian",
+      "translation": "Elfogadva ezen a héten"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Hungarian",
+      "translation": "Létrehozott számlák"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Hungarian",
+      "translation": "Fizetésre vár"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Hungarian",
+      "translation": "Függőben lévő fizetések"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Hungarian",
+      "translation": "Megjelenésre ütemezve"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Hungarian",
+      "translation": "Minőség / panaszok"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Hungarian",
+      "translation": "Nyitott jegyek"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Hungarian",
+      "translation": "Előrejelzés (következő 4 hét)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Hungarian",
+      "translation": "AI helyőrző"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Hungarian",
+      "translation": "Beszállítói intézkedések"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Hungarian",
+      "translation": "Erősítse meg a közelgő szállítmányokat és frissítse a GRN ütemtervét."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Hungarian",
+      "translation": "Tekintse át a kiegyenlítetlen számlákat és ossza meg a fizetési tanácsokat."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Hungarian",
+      "translation": "Oldja meg a nyitott minőségi panaszokat minőségbiztosítási bizonyítékokkal."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Hungarian",
+      "translation": "Felhasználónév"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Hungarian",
+      "translation": "Jelszó"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Hungarian",
+      "translation": "Email"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Hungarian",
+      "translation": "Küldés"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Hungarian",
+      "translation": "Mégsem"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Hungarian",
+      "translation": "Megtakarítás"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Hungarian",
+      "translation": "Töröl"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Hungarian",
+      "translation": "Keresés"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Hungarian",
+      "translation": "Szűrő"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Hungarian",
+      "translation": "Visszaállítás"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Hungarian",
+      "translation": "Közeli"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Hungarian",
+      "translation": "Vissza"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Hungarian",
+      "translation": "Következő"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Hungarian",
+      "translation": "Előző"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Hungarian",
+      "translation": "Megerősítés"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Hungarian",
+      "translation": "Emlékezz rám"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Hungarian",
+      "translation": "Elfelejtett jelszó?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Hungarian",
+      "translation": "E-mail cím megadása kötelező"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Hungarian",
+      "translation": "Kérjük, adjon meg egy érvényes e-mail címet"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Hungarian",
+      "translation": "Termékek"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Hungarian",
+      "translation": "Milyen termékeket kínál a Harvics?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Hungarian",
+      "translation": "Prémium élelmiszerek széles választékát kínáljuk, beleértve édességeket, italokat, snackeket, tésztákat, pékárukat és fagyasztott élelmiszereket több kategóriában."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Hungarian",
+      "translation": "Hol lehet Harvics termékeket vásárolni?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Hungarian",
+      "translation": "Termékeink több mint 40 ország kiskereskedelmi üzleteiben kaphatók. Használja üzletkeresőnket vagy kapcsolatfelvételi oldalunkat, hogy megtalálja az Önhöz legközelebbi viszonteladót."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Hungarian",
+      "translation": "Kínálnak tömeges rendelést?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Hungarian",
+      "translation": "Igen, nagy tételben történő rendelés esetén kedvezményeket kínálunk vállalkozások és kiskereskedők számára. További információkért látogassa meg a Nagy tételben történő rendelés kedvezményei oldalunkat."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Hungarian",
+      "translation": "Rendelések és szállítás"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Hungarian",
+      "translation": "Milyen szállítási lehetőségeid vannak?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Hungarian",
+      "translation": "Különböző szállítási lehetőségeket kínálunk, beleértve a standard, expressz és nemzetközi szállítást. Ingyenes szállítás érhető el 50 dollár feletti megrendelések esetén."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Hungarian",
+      "translation": "Mennyi ideig tart a szállítás?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Hungarian",
+      "translation": "A szállítási idő helyszínenként eltérő. A standard szállítás általában 5-7 munkanapot vesz igénybe, míg az expressz szállítás 2-3 munkanapot vesz igénybe."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Hungarian",
+      "translation": "Nyomon követhetem a rendelésem?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Hungarian",
+      "translation": "Igen, nyomon követheti rendelését a rendelés visszaigazoló e-mailben található követési szám segítségével."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Hungarian",
+      "translation": "Fiók és fizetések"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Hungarian",
+      "translation": "Hogyan hozhatok létre fiókot?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Hungarian",
+      "translation": "Kattintson a fejlécben található „Bejelentkezés” gombra, majd válassza a „Fiók létrehozása” lehetőséget egy új fiók regisztrálásához."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Hungarian",
+      "translation": "Milyen fizetési módokat fogadnak el?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Hungarian",
+      "translation": "B2B megrendelések esetén elfogadunk minden nagyobb hitelkártyát, bankkártyát, PayPalt és banki átutalást."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Hungarian",
+      "translation": "Biztonságban vannak a fizetési adataim?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Hungarian",
+      "translation": "Igen, iparági szabványnak megfelelő titkosítást használunk a fizetési adataid védelme érdekében."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Hungarian",
+      "translation": "Visszaküldés és visszatérítés"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Hungarian",
+      "translation": "Mi a visszaküldési szabályzatuk?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Hungarian",
+      "translation": "30 napos visszaküldési garanciát kínálunk bontatlan, eredeti csomagolású termékekre. Kérjük, vegye fel a kapcsolatot ügyfélszolgálatunkkal a visszaküldés engedélyezésével kapcsolatban."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Hungarian",
+      "translation": "Hogyan kérhetek visszatérítést?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Hungarian",
+      "translation": "Lépjen kapcsolatba ügyfélszolgálatunkkal a rendelési számával és a visszaküldés okával. A visszatérítést 5-7 munkanapon belül feldolgozzuk."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Hungarian",
+      "translation": "Még mindig vannak kérdései?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Hungarian",
+      "translation": "Ügyfélszolgálati csapatunk készen áll, hogy segítsen"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Hungarian",
+      "translation": "Kapcsolat"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Hungarian",
+      "translation": "Karrierlehetőségek"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Karrierlehetőségek | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Hungarian",
+      "translation": "Csatlakozzon a Harvics Global Ventureshez — fedezze fel a lehetőségeket több mint 40 országban."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Hungarian",
+      "translation": "Csatlakozz hozzánk"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Hungarian",
+      "translation": "Építsük a globális kereskedelem jövőjét"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Hungarian",
+      "translation": "Több mint 40 országban növekszünk. Csatlakozz egy csapathoz, amely mesterséges intelligenciával működő operációs rendszert épít a globális kereskedelem számára."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Hungarian",
+      "translation": "Nyitott pozíciók"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Hungarian",
+      "translation": "Országok"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Hungarian",
+      "translation": "Iparági vertikálisok"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Hungarian",
+      "translation": "Osztályok felvétele"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Hungarian",
+      "translation": "Nyitott pozíciók részlegenként"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Hungarian",
+      "translation": "Értékesítés és forgalmazás"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Hungarian",
+      "translation": "Bevétel növelése több mint 40 piacon. Területkezelés, kulcsfontosságú ügyfelek, forgalmazói kapcsolatok."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Hungarian",
+      "translation": "Ellátási lánc és logisztika"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Hungarian",
+      "translation": "Teljes körű ellátási lánc a gyártól a polcokig. Flottakezelés, raktározás, kiszállítás az utolsó mérföldig."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Hungarian",
+      "translation": "Technológia és mesterséges intelligencia"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Hungarian",
+      "translation": "Építsd fel a Harvics OS-t — mesterséges intelligencián alapuló vállalati platformunkat. Full-stack, gépi tanulás (ML) mérnöki munka, adattudomány."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Hungarian",
+      "translation": "Pénzügy és kincstár"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Hungarian",
+      "translation": "Többdevizás treasury, kereskedelemfinanszírozás, HPay digitális fizetések, devizakezelés régiókon átívelően."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Hungarian",
+      "translation": "Beszerzés és forráskeresés"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Hungarian",
+      "translation": "Globális beszerzés több mint 15 származási országból. Beszállítói auditok, minőségellenőrzés, közvetlen gyári programok."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Hungarian",
+      "translation": "Emberi Erőforrások"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Hungarian",
+      "translation": "Tehetségtoborzás, képzés és fejlesztés, teljesítménymenedzsment különböző földrajzi területeken és kultúrákban."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Hungarian",
+      "translation": "Jogi és megfelelőségi"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Hungarian",
+      "translation": "Kereskedelmi megfelelés, szankciós szűrés, szellemi tulajdonvédelem, szerződéskezelés joghatóságok között."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Hungarian",
+      "translation": "Marketing és márka"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Hungarian",
+      "translation": "Többnyelvű kampányok, 38 nyelven elérhető tartalom, digitális marketing, márkastratégia 10 vertikális területre."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Hungarian",
+      "translation": "szerepek"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Miért pont Harvics?"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Hungarian",
+      "translation": "Globális mobilitás"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Hungarian",
+      "translation": "Dolgozz Dubaiban, Londonban, Karacsiban, Lahore-ban és több mint 40 piacon"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Hungarian",
+      "translation": "Növekedési pálya"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Hungarian",
+      "translation": "Gyorsított karrierlehetőségek egy növekvő vállalatnál"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Hungarian",
+      "translation": "MI-első kultúra"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Hungarian",
+      "translation": "Dolgozz élvonalbeli mesterséges intelligenciával és valós idejű intelligenciarendszerekkel"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Hungarian",
+      "translation": "Versenyképes csomag"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Hungarian",
+      "translation": "Piacvezető kompenzáció, lakhatás és juttatások"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Hungarian",
+      "translation": "Tanulási költségvetés"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Hungarian",
+      "translation": "Éves fejlesztési költségvetés tanfolyamokra, konferenciákra és tanúsítványokra"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Hungarian",
+      "translation": "Rugalmas munkaidő"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Hungarian",
+      "translation": "Hibrid megállapodások regionális központokkal világszerte"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Hungarian",
+      "translation": "Stratégiánk"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Strategy | Harvics"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Hungarian",
+      "translation": "Fenntartható jövő építése az innováció és a kiválóság révén"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Hungarian",
+      "translation": "Fenntartható jövő építése az innováció és a kiválóság révén"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Hungarian",
+      "translation": "Globális terjeszkedés"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Hungarian",
+      "translation": "Jelenlétünk bővítése a feltörekvő piacokon, miközben megerősítjük pozíciónkat a már meglévő piacokon"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Hungarian",
+      "translation": "Termékinnováció"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Hungarian",
+      "translation": "K+F-be való befektetés olyan új termékek fejlesztése érdekében, amelyek megfelelnek a változó fogyasztói preferenciáknak"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Hungarian",
+      "translation": "Fenntarthatóság"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Hungarian",
+      "translation": "Elkötelezettek vagyunk a fenntartható gyakorlatok iránt az ellátási láncunkban és a működésünkben"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Hungarian",
+      "translation": "Digitális átalakulás"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Hungarian",
+      "translation": "A technológia kihasználása az ügyfélélmény és a működési hatékonyság javítása érdekében"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Hungarian",
+      "translation": "Víziónk"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Hungarian",
+      "translation": "A világ vezető prémium fogyasztási cikkeket gyártó vállalata lenni, amelyet a minőség, az innováció és a fenntarthatóság elismer."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Hungarian",
+      "translation": "Harvics Global Ventures | Prémium globális kereskedés"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Hungarian",
+      "translation": "Vezető globális kereskedelmi vállalat, amely prémium termékeket szállít több mint 10 iparágban. 2019 óta több mint 50 országban működik."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Hungarian",
+      "translation": "Rólunk | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Hungarian",
+      "translation": "Fedezze fel, hogyan vált a Harvics Global Ventures vezető erővé a globális kereskedelemben több mint 40 országban és 10 iparágban."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Hungarian",
+      "translation": "Kapcsolat | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Hungarian",
+      "translation": "Lépjen kapcsolatba a Harvics irodáival világszerte, a Közel-Keleten, Dél-Ázsiában, Európában, Afrikában és Amerikában."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Hungarian",
+      "translation": "Termékek | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Hungarian",
+      "translation": "Fedezze fel a Harvics prémium termékkínálatát az FMCG, textil, árucikkek és ipari megoldások terén."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Hungarian",
+      "translation": "Karrierlehetőségek | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Hungarian",
+      "translation": "Csatlakozzon a Harvics Global Ventureshez — fedezze fel a lehetőségeket több mint 40 országban az FMCG, a textil, a logisztika és a technológia területén."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Hungarian",
+      "translation": "Médiaközpont | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Hungarian",
+      "translation": "Harvics médiaközpont — sajtóközlemények, legfrissebb hírek, márkaeszközök és médiakapcsolatok."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Hungarian",
+      "translation": "Stratégiánk | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Hungarian",
+      "translation": "Harvics stratégiai víziója a globális terjeszkedésről, az innovációról, a fenntarthatóságról és a digitális átalakulásról."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Vállalati társadalmi felelősségvállalás | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Hungarian",
+      "translation": "A Harvics vállalati társadalmi felelősségvállalási kezdeményezései – környezetvédelem, közösségi programok és etikus üzleti gyakorlatok."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Hungarian",
+      "translation": "GYIK | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Hungarian",
+      "translation": "Gyakran ismételt kérdések a Harvics termékeivel, szolgáltatásaival, rendelésével és globális működésével kapcsolatban."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Globális helyszínek | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Hungarian",
+      "translation": "A Harvic irodái és tevékenységei a Közel-Keleten, Dél-Ázsiában, Európában, Afrikában és Amerikában találhatók."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Vezetői csapat | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Hungarian",
+      "translation": "Ismerje meg a Harvics Global Ventures vezetői csapatát, amely több mint 40 piacon és 10 iparágban működik."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Súgóközpont | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Hungarian",
+      "translation": "Segítség kérése a megrendelésekkel, fiókokkal, szállítással és a Harvics szolgáltatásaival kapcsolatban."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Megfelelőség és etika | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Hungarian",
+      "translation": "A Harvic elkötelezett a szabályozási megfelelés, az etikus üzleti gyakorlat és a globális szabványok iránt."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Történetünk | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Hungarian",
+      "translation": "Egy 2019-es dubaji startuptól egy több mint 40 országot lefedő globális vállalatig – a Harvics története."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Hírlevél | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Hungarian",
+      "translation": "Iratkozzon fel a Harvics hírlevelére, hogy értesüljön az iparági információkról és a termékbevezetésekről."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Bejelentkezés | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Hungarian",
+      "translation": "Jelentkezzen be Harvics-fiókjába a rendelések kezeléséhez és a platform eléréséhez."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Kutatás és innováció | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Hungarian",
+      "translation": "A Harvics kutatási kezdeményezései és innovációs programjai irányítják globális stratégiánkat."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Hungarian",
+      "translation": "Befektetői Kapcsolatok | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Hungarian",
+      "translation": "Befektetői információk, pénzügyi jelentések és vállalati bejelentések a Harvics Global Ventures-től."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Hungarian",
+      "translation": "Az oldal nem található"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Hungarian",
+      "translation": "404 – Az oldal nem található"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Hungarian",
+      "translation": "A keresett oldal nem létezik, vagy áthelyezték."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Hungarian",
+      "translation": "Ugrás a kezdőlapra"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Hungarian",
+      "translation": "Vissza"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Hungarian",
+      "translation": "Valami rosszul sült el"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Hungarian",
+      "translation": "Valami rosszul sült el"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Hungarian",
+      "translation": "Sajnáljuk, de valami váratlan dolog történt. Kérjük, próbálja meg frissíteni az oldalt."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Hungarian",
+      "translation": "Próbáld újra"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Hungarian",
+      "translation": "Oldal újratöltése"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Hungarian",
+      "translation": "Kapcsolatfelvétel az ügyfélszolgálattal"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Hungarian",
+      "translation": "Alkalmazáshiba"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Hungarian",
+      "translation": "Kritikus hiba"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Hungarian",
+      "translation": "Kritikus hiba történt. Kérjük, töltse újra az oldalt."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Hungarian",
+      "translation": "Alkalmazás újratöltése"
+    }
+  }
+}

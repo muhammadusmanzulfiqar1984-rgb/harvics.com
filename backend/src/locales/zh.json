@@ -1,0 +1,168 @@
+{
+  "_note": "Chinese (Simplified) backend translations - API responses, statuses, error messages",
+  "orders": {
+    "status": {
+      "pending": "待处理",
+      "inTransit": "运输中",
+      "completed": "已完成",
+      "cancelled": "已取消",
+      "processing": "处理中",
+      "delivered": "已送达",
+      "onHold": "暂停"
+    },
+    "messages": {
+      "created": "订单创建成功",
+      "updated": "订单更新成功",
+      "deleted": "订单删除成功",
+      "notFound": "未找到订单"
+    }
+  },
+  "inventory": {
+    "categories": {
+      "frozenFoods": "冷冻食品",
+      "culinary": "烹饪",
+      "commodities": "大宗商品",
+      "industrial": "工业",
+      "grains": "谷物",
+      "pantry": "食品储藏",
+      "confectionery": "糖果",
+      "natural": "天然",
+      "homeTextiles": "家纺",
+      "beverages": "饮料"
+    },
+    "messages": {
+      "created": "库存商品创建成功",
+      "updated": "库存商品更新成功",
+      "deleted": "库存商品删除成功",
+      "notFound": "未找到库存商品",
+      "lowStock": "库存不足警告"
+    }
+  },
+  "crm": {
+    "segments": {
+      "wholesale": "批发",
+      "distributor": "分销商",
+      "retail": "零售",
+      "b2b": "企业对企业",
+      "ecommerce": "电子商务",
+      "direct": "直销"
+    },
+    "stages": {
+      "lead": "线索",
+      "qualified": "已验证",
+      "proposal": "提案",
+      "negotiation": "谈判",
+      "closed": "已关闭"
+    },
+    "messages": {
+      "customerCreated": "客户创建成功",
+      "customerUpdated": "客户更新成功",
+      "customerDeleted": "客户删除成功",
+      "customerNotFound": "未找到客户",
+      "leadCreated": "线索创建成功",
+      "leadUpdated": "线索更新成功",
+      "leadDeleted": "线索删除成功",
+      "leadNotFound": "未找到线索",
+      "campaignCreated": "活动创建成功",
+      "campaignUpdated": "活动更新成功",
+      "campaignNotFound": "未找到活动"
+    }
+  },
+  "hr": {
+    "departments": {
+      "sales": "销售",
+      "operations": "运营",
+      "finance": "财务",
+      "hr": "人力资源",
+      "it": "信息技术",
+      "marketing": "市场营销",
+      "logistics": "物流",
+      "procurement": "采购",
+      "executive": "高管",
+      "legal": "法务"
+    },
+    "messages": {
+      "employeeCreated": "员工档案创建成功",
+      "employeeUpdated": "员工档案更新成功",
+      "employeeDeleted": "员工档案删除成功",
+      "employeeNotFound": "未找到员工"
+    }
+  },
+  "finance": {
+    "status": {
+      "paid": "已付款",
+      "unpaid": "未付款",
+      "overdue": "逾期",
+      "partial": "部分付款"
+    },
+    "messages": {
+      "invoiceCreated": "发票创建成功",
+      "invoiceUpdated": "发票更新成功",
+      "invoiceDeleted": "发票删除成功",
+      "invoiceNotFound": "未找到发票",
+      "paymentReceived": "付款接收成功",
+      "paymentCreated": "付款记录成功",
+      "approvalRequired": "需要审批"
+    }
+  },
+  "logistics": {
+    "status": {
+      "pending": "待处理",
+      "scheduled": "已安排",
+      "inTransit": "运输中",
+      "inProgress": "进行中",
+      "completed": "已完成",
+      "delayed": "延迟"
+    },
+    "messages": {
+      "routeCreated": "路线创建成功",
+      "routeUpdated": "路线更新成功",
+      "routeDeleted": "路线删除成功",
+      "routeNotFound": "未找到路线",
+      "shipmentDispatched": "货物已发运"
+    }
+  },
+  "procurement": {
+    "status": {
+      "pending": "待处理",
+      "approved": "已批准",
+      "rejected": "已拒绝",
+      "partial": "部分",
+      "complete": "完成"
+    },
+    "messages": {
+      "poCreated": "采购订单创建成功",
+      "poUpdated": "采购订单更新成功",
+      "poDeleted": "采购订单删除成功",
+      "poNotFound": "未找到采购订单",
+      "grnCreated": "收货单创建成功",
+      "grnNotFound": "未找到收货单",
+      "approvalPending": "订单等待审批"
+    }
+  },
+  "errors": {
+    "invalidCredentials": "用户名或密码无效",
+    "unauthorized": "未授权访问",
+    "forbidden": "禁止访问",
+    "notFound": "未找到资源",
+    "serverError": "内部服务器错误",
+    "validationError": "验证错误",
+    "duplicateEntry": "重复条目",
+    "tokenExpired": "会话已过期，请重新登录",
+    "tokenInvalid": "无效的身份验证令牌",
+    "missingFields": "缺少必填字段",
+    "invalidFormat": "数据格式无效",
+    "databaseError": "发生数据库错误",
+    "networkError": "发生网络错误"
+  },
+  "messages": {
+    "success": "操作成功完成",
+    "created": "创建成功",
+    "updated": "更新成功",
+    "deleted": "删除成功",
+    "fetched": "数据获取成功",
+    "loginSuccess": "登录成功",
+    "logoutSuccess": "登出成功",
+    "welcome": "欢迎使用 Harvics OS"
+  }
+}

@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "de",
+    "language": "German",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to German. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "German",
+      "translation": "Willkommen bei"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "German",
+      "translation": "Harwich"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "German",
+      "translation": "Exzellenz bei Premium-Konsumgütern seit 2019"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "German",
+      "translation": "Ein weltweit führendes Konsumgüterunternehmen, das Premium-Lebensmittelprodukte in verschiedenen Kategorien nach internationalen Qualitätsstandards anbietet."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "German",
+      "translation": "Produkte entdecken"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "German",
+      "translation": "Kontaktieren Sie uns"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "German",
+      "translation": "Mehr erfahren"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "German",
+      "translation": "Exzellenz bei Premium-Konsumgütern seit"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "German",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "German",
+      "translation": "London • Mailand • New York"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "German",
+      "translation": "Bäckerei"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "German",
+      "translation": "Getränke"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "German",
+      "translation": "Süßwaren"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "German",
+      "translation": "Kulinarisch"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "German",
+      "translation": "Tiefkühlkost"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "German",
+      "translation": "Pasta"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "German",
+      "translation": "Snacks"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "German",
+      "translation": "ESG-Bericht 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "German",
+      "translation": "London • Mailand • New York"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "German",
+      "translation": "Heim"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "German",
+      "translation": "Um"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "German",
+      "translation": "Über uns"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "German",
+      "translation": "Markengeschichte"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "German",
+      "translation": "Produkte"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "German",
+      "translation": "Unsere Produkte"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "German",
+      "translation": "Alle Produkte anzeigen"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "German",
+      "translation": "CSR"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "German",
+      "translation": "Investor Relations"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "German",
+      "translation": "Investoren"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "German",
+      "translation": "Medien"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "German",
+      "translation": "Kontaktieren Sie uns"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "German",
+      "translation": "Harvics House"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "German",
+      "translation": "Länder"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "German",
+      "translation": "Portale"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "German",
+      "translation": "Anmelden"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "German",
+      "translation": "Wunschliste"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "German",
+      "translation": "Warenkorb"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "German",
+      "translation": "Helfen"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "German",
+      "translation": "Filiale finden"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "German",
+      "translation": "Geld"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "German",
+      "translation": "Verkäufe"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "German",
+      "translation": "Angebote"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "German",
+      "translation": "Dunkelmodus"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "German",
+      "translation": "Kreditkarte"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "German",
+      "translation": "M&S Rewards Kreditkarte"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "German",
+      "translation": "Club-Prämien"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "German",
+      "translation": "Unsere Kreditkarten"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "German",
+      "translation": "Versicherung"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "German",
+      "translation": "Hausversicherung"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "German",
+      "translation": "Reiseversicherung"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "German",
+      "translation": "Reisedienstleistungen"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "German",
+      "translation": "Reisegeld"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "German",
+      "translation": "Wechselkurse"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "German",
+      "translation": "Zusätzliche Dienstleistungen"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "German",
+      "translation": "Sparen & Investieren"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "German",
+      "translation": "Privatkredite"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "German",
+      "translation": "Finanzielle Unterstützung"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "German",
+      "translation": "Aktuelle Verkäufe"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "German",
+      "translation": "Freigabe"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "German",
+      "translation": "Saisonale Verkäufe"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "German",
+      "translation": "Sonderangebote"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "German",
+      "translation": "Werbeaktionen"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "German",
+      "translation": "Mengenrabatte"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "German",
+      "translation": "Unsere Produkte"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "German",
+      "translation": "Alle Produkte anzeigen"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "German",
+      "translation": "Unsere Produktkategorien"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "German",
+      "translation": "Entdecken Sie unser Premium-Sortiment an Produkten, die mit Sorgfalt und höchster Qualität gefertigt werden."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "German",
+      "translation": "Tier 1: Kategorien"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "German",
+      "translation": "Stufe 2: Module"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "German",
+      "translation": "Stufe 3: KPI-Bildschirme"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "German",
+      "translation": "Stufe 4: Aktionen"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "German",
+      "translation": "Navigation zurücksetzen"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "German",
+      "translation": "Für diese Kategorie sind keine Unterkategorien verfügbar."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "German",
+      "translation": "Produkte"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "German",
+      "translation": "Unterkategorien"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "German",
+      "translation": "Bäckerei"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "German",
+      "translation": "Frisch gebackene Waren und Gebäck."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "German",
+      "translation": "Getränke"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "German",
+      "translation": "Erfrischende Getränke für jeden Anlass."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "German",
+      "translation": "Süßwaren"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "German",
+      "translation": "Süße Leckereien und Köstlichkeiten."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "German",
+      "translation": "Kulinarisch"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "German",
+      "translation": "Unverzichtbare Zutaten für Ihre Küche."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "German",
+      "translation": "Tiefkühlkost"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "German",
+      "translation": "Praktische und leckere Tiefkühlgerichte."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "German",
+      "translation": "Pasta"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "German",
+      "translation": "Authentische Pasta-Sorten."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "German",
+      "translation": "Snacks"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "German",
+      "translation": "Leckere Snacks für jede Tageszeit."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "German",
+      "translation": "Über Harvics"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "German",
+      "translation": "Exzellenz bei Premium-Konsumgütern seit 2019"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "German",
+      "translation": "Unsere Geschichte"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "German",
+      "translation": "Harvics wurde 2019 gegründet und hat sich von einer visionären Idee zu einem weltweit führenden Anbieter von Premium-Konsumgütern entwickelt. Unser Weg ist geprägt von einem unermüdlichen Streben nach Qualität und einem starken Engagement für Innovation."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "German",
+      "translation": "Wir sind in über 40 Ländern aktiv und bieten Produkte an, die das Leben bereichern und neue Maßstäbe in der Branche setzen. Von unseren bescheidenen Anfängen bis zu unserer globalen Präsenz sind unsere Werte unverändert geblieben."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "German",
+      "translation": "Gegründet 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "German",
+      "translation": "Mehr als 40 Länder"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "German",
+      "translation": "6 Produktlinien"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "German",
+      "translation": "Soziale Verantwortung von Unternehmen"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "German",
+      "translation": "Wir bei Harvics engagieren uns für eine positive Veränderung der Welt. Unsere CSR-Initiativen konzentrieren sich auf Nachhaltigkeit, die Stärkung der Gemeinschaft und ethische Geschäftspraktiken."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "German",
+      "translation": "Jahre der Wirkung"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "German",
+      "translation": "Erreichte Länder"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "German",
+      "translation": "Leben berührt"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "German",
+      "translation": "Unsere wichtigsten Initiativen"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "German",
+      "translation": "Wir konzentrieren uns auf vier Hauptpfeiler, um nachhaltigen Wandel voranzutreiben und einen gemeinsamen Mehrwert für alle Interessengruppen zu schaffen."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "German",
+      "translation": "Nachhaltigkeit"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "German",
+      "translation": "Verringerung unseres ökologischen Fußabdrucks durch erneuerbare Energien und Abfallvermeidung."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "German",
+      "translation": "Erneuerbare Energien"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "German",
+      "translation": "Abfallumleitung"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "German",
+      "translation": "Kohlenstoffreduzierung"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "German",
+      "translation": "Unterstützung durch die Gemeinschaft"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "German",
+      "translation": "Stärkung lokaler Gemeinschaften durch Bildung, Gesundheitsversorgung und wirtschaftliche Entwicklung."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "German",
+      "translation": "Familienunterstützung"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "German",
+      "translation": "Aktive Programme"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "German",
+      "translation": "Freiwillige"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "German",
+      "translation": "Ausbildung"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "German",
+      "translation": "Zugang zu hochwertiger Bildung und Stipendien für benachteiligte Studierende ermöglichen."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "German",
+      "translation": "Stipendien"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "German",
+      "translation": "Partnerschulen"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "German",
+      "translation": "Betroffene Schüler"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "German",
+      "translation": "Gesundheit & Wohlbefinden"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "German",
+      "translation": "Verbesserung des Zugangs zu Gesundheitsversorgung und Ernährung in unterversorgten Regionen."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "German",
+      "translation": "Gesundheitskampagnen"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "German",
+      "translation": "Bediente Personen"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "German",
+      "translation": "Mobile Kliniken"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "German",
+      "translation": "Beste CSR-Initiative"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "German",
+      "translation": "Ausgezeichnet für unseren innovativen Ansatz im Bereich der sozialen Verantwortung."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "German",
+      "translation": "Gemeinschaftsheld"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "German",
+      "translation": "Ausgezeichnet für unsere umfangreichen gemeinnützigen Programme."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "German",
+      "translation": "Globaler Nachhaltigkeitspreis"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "German",
+      "translation": "Ausgezeichnet für unser Engagement für Klimaneutralität."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "German",
+      "translation": "Unsere Wirkung"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "German",
+      "translation": "Wir würdigen unsere Meilensteine bei der Schaffung einer besseren Welt."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "German",
+      "translation": "Machen Sie mit und bewirken Sie etwas!"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "German",
+      "translation": "Werden Sie unser Partner oder erfahren Sie mehr darüber, wie wir eine nachhaltige Zukunft gestalten."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "German",
+      "translation": "Kontaktieren Sie das Kundenservice-Team"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "German",
+      "translation": "Mehr erfahren"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "German",
+      "translation": "Nehmen Sie Kontakt auf"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "German",
+      "translation": "Wir freuen uns, von Ihnen zu hören. Kontaktieren Sie uns über einen dieser Kanäle."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "German",
+      "translation": "Telefon"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "German",
+      "translation": "E-Mail"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "German",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "German",
+      "translation": "Jetzt anrufen"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "German",
+      "translation": "E-Mail senden"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "German",
+      "translation": "Schreiben Sie uns"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "German",
+      "translation": "Medienzentrum"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "German",
+      "translation": "Medienzentrum | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "German",
+      "translation": "Pressematerialien, Markenressourcen und aktuelle Neuigkeiten von Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "German",
+      "translation": "Unternehmen"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "German",
+      "translation": "Neuigkeiten & Pressemitteilungen"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "German",
+      "translation": "Aktuelle Ankündigungen, Markterweiterungen, Produkteinführungen und Unternehmensneuigkeiten von Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "German",
+      "translation": "Lesen Sie die neuesten Nachrichten"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "German",
+      "translation": "Bildergalerie"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "German",
+      "translation": "Hochauflösende Markenassets, Produktfotografie, Bilder von Einrichtungen und Veranstaltungsberichte zur Verwendung in den Medien."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "German",
+      "translation": "Galerie durchsuchen"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "German",
+      "translation": "Medienkontakte"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "German",
+      "translation": "Für Presseanfragen, Interviewanfragen und Ankündigungen von Partnerschaften wenden Sie sich bitte an unser Kommunikationsteam."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "German",
+      "translation": "Kontakt zum Presseteam"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "German",
+      "translation": "Abgedeckte Märkte"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "German",
+      "translation": "Branchensegmente"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "German",
+      "translation": "Gegründet in Dubai"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "German",
+      "translation": "Unterstützte Sprachen"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "German",
+      "translation": "Aktuelle Schlagzeilen"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "German",
+      "translation": "Harvics weitet FMCG-Geschäft auf 5 neue südostasiatische Märkte aus"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "German",
+      "translation": "Neue KI-gestützte Lieferkettenplattform für den globalen Vertrieb eingeführt"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "German",
+      "translation": "Harvics erreicht Meilenstein der Klimaneutralität an allen Standorten"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "German",
+      "translation": "Strategische Partnerschaft mit führenden Textilherstellern in Südasien"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "German",
+      "translation": "Harvics House"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "German",
+      "translation": "Ein Vermächtnis der Exzellenz und Tradition"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "German",
+      "translation": "Willkommen im Harvics House"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "German",
+      "translation": "Harvics House verkörpert den Höhepunkt unseres Engagements für Qualität und Tradition. Hier präsentieren wir Ihnen die erlesenste Auswahl unserer Premiumprodukte in einem Ambiente, das unsere Werte Eleganz, Tradition und Innovation widerspiegelt."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "German",
+      "translation": "Entdecken Sie unsere exklusiven Kollektionen und erfahren Sie die Geschichte hinter jedem Produkt, das den Namen Harvics trägt."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "German",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "German",
+      "translation": "Exzellenz bei Premium-Konsumgütern seit 2019"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "German",
+      "translation": "Ein weltweit führendes Konsumgüterunternehmen, das Premium-Lebensmittelprodukte in verschiedenen Kategorien nach internationalen Qualitätsstandards anbietet."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "German",
+      "translation": "London • Mailand • New York"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "German",
+      "translation": "Seit 2019"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "German",
+      "translation": "Harvics News"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "German",
+      "translation": "Abonnieren Sie unseren Newsletter, um Benachrichtigungen und Updates zu erhalten."
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "German",
+      "translation": "Melden Sie sich an"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "German",
+      "translation": "Bedenken hinsichtlich der Einhaltung"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "German",
+      "translation": "Sprechen Sie es an, wenn Sie Bedenken hinsichtlich der Einhaltung von Vorschriften oder ethischen Grundsätzen haben."
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "German",
+      "translation": "Sag deine Meinung"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "German",
+      "translation": "Kontaktieren Sie uns"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "German",
+      "translation": "Nehmen Sie Kontakt mit unserem Team auf."
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "German",
+      "translation": "Kontaktieren Sie uns"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "German",
+      "translation": "Nützliche Links"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "German",
+      "translation": "Fragen Sie Harwich"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "German",
+      "translation": "Jobsuche"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "German",
+      "translation": "Für den Newsletter anmelden"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "German",
+      "translation": "Unternehmen"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "German",
+      "translation": "Globale Adressen"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "German",
+      "translation": "Strategie"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "German",
+      "translation": "Unsere Führung"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "German",
+      "translation": "Marken A-Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "German",
+      "translation": "Unsere Geschichte"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "German",
+      "translation": "Nachhaltigkeit"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "German",
+      "translation": "Nachricht"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "German",
+      "translation": "Medienkontakte"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "German",
+      "translation": "Bilder"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "German",
+      "translation": "Investoren"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "German",
+      "translation": "Corporate Governance"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "German",
+      "translation": "Aktien, ADRs & Anleihen"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "German",
+      "translation": "Veröffentlichungen"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "German",
+      "translation": "Folgen Sie uns auf"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "German",
+      "translation": "0 Probleme"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "German",
+      "translation": "Sitemap"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "German",
+      "translation": "Abbestellen"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "German",
+      "translation": "Helfen"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "German",
+      "translation": "Datenschutz"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "German",
+      "translation": "Cookies"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "German",
+      "translation": "Nutzungsbedingungen"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "German",
+      "translation": "Zugänglichkeit"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "German",
+      "translation": "Kohlenstoffeffizienz"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "German",
+      "translation": "Lieferanten"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "German",
+      "translation": "Soziale Medien"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "German",
+      "translation": "Cookie-Einstellungen"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "German",
+      "translation": "Premiumqualität"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "German",
+      "translation": "E-Mail-Adresse"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "German",
+      "translation": "Geben Sie Ihre E-Mail-Adresse ein."
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "German",
+      "translation": "Abonnieren"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "German",
+      "translation": "Ich abonniere..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "German",
+      "translation": "Über uns"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "German",
+      "translation": "Medien"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "German",
+      "translation": "Produkte, Marken oder Kategorien suchen"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "German",
+      "translation": "Keine Ergebnisse gefunden"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "German",
+      "translation": "Suche..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "German",
+      "translation": "Ergebnisse"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "German",
+      "translation": "Chatten Sie mit uns"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "German",
+      "translation": "Geben Sie Ihre Nachricht ein..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "German",
+      "translation": "Schicken"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "German",
+      "translation": "Schließen"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "German",
+      "translation": "Hallo! Wie kann ich Ihnen heute helfen?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "German",
+      "translation": "Entschuldigung, ich habe das nicht verstanden. Könnten Sie es bitte anders formulieren?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "German",
+      "translation": "Ich kann Ihnen bei Produktinformationen, Bestellungen oder allgemeinen Anfragen behilflich sein. Was möchten Sie wissen?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "German",
+      "translation": "Für weitere Unterstützung kontaktieren Sie uns bitte unter support@harvics.com oder rufen Sie uns unter +1-800-HARVICS an."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "German",
+      "translation": "Chatten Sie mit uns"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "German",
+      "translation": "Laden..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "German",
+      "translation": "Fehler"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "German",
+      "translation": "Erfolg"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "German",
+      "translation": "Speichern"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "German",
+      "translation": "Stornieren"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "German",
+      "translation": "Löschen"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "German",
+      "translation": "Bearbeiten"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "German",
+      "translation": "Sicht"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "German",
+      "translation": "Einreichen"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "German",
+      "translation": "Suchen"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "German",
+      "translation": "Filter"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "German",
+      "translation": "Klar"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "German",
+      "translation": "Herunterladen"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "German",
+      "translation": "Hochladen"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "German",
+      "translation": "Ja"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "German",
+      "translation": "NEIN"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "German",
+      "translation": "Schließen"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "German",
+      "translation": "Zurück"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "German",
+      "translation": "Nächste"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "German",
+      "translation": "Vorherige"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "German",
+      "translation": "Aktionen"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "German",
+      "translation": "Status"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "German",
+      "translation": "Datum"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "German",
+      "translation": "Name"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "German",
+      "translation": "E-Mail"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "German",
+      "translation": "Telefon"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "German",
+      "translation": "Adresse"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "German",
+      "translation": "Land"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "German",
+      "translation": "Stadt"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "German",
+      "translation": "Alle"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "German",
+      "translation": "Keiner"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "German",
+      "translation": "Wählen"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "German",
+      "translation": "Sprache auswählen"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "German",
+      "translation": "Land auswählen"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "German",
+      "translation": "Mehr anzeigen"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "German",
+      "translation": "Weniger anzeigen"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "German",
+      "translation": "Erforderlich"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "German",
+      "translation": "Speisekarte"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "German",
+      "translation": "Produkte ansehen"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "German",
+      "translation": "Musik abspielen"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "German",
+      "translation": "Musik pausieren"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "German",
+      "translation": "Stumme Musik"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "German",
+      "translation": "Musik stumm schalten"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "German",
+      "translation": "Unsere globale Reichweite"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "German",
+      "translation": "Seit"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "German",
+      "translation": "Hauptmarkt"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "German",
+      "translation": "Wichtigste Märkte"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "German",
+      "translation": "Gegenwart"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "German",
+      "translation": "Bediente Länder"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "German",
+      "translation": "Wichtigste Märkte"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "German",
+      "translation": "Produktkategorien"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "German",
+      "translation": "Gegründet"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "German",
+      "translation": "Gebietshierarchie"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "German",
+      "translation": "Vollständiger Pfad"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "German",
+      "translation": "Aktuelles Territorium"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "German",
+      "translation": "Keine Artikel"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "German",
+      "translation": "Globus"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "German",
+      "translation": "Kontinent"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "German",
+      "translation": "Region"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "German",
+      "translation": "Land"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "German",
+      "translation": "Stadt"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "German",
+      "translation": "Bezirk"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "German",
+      "translation": "Standort"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "German",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "German",
+      "translation": "Global"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "German",
+      "translation": "Region auswählen"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "German",
+      "translation": "Kundendaten"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "German",
+      "translation": "Ausgewählt"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "German",
+      "translation": "Vollständiger Name"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "German",
+      "translation": "Geben Sie Ihren vollständigen Namen ein"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "German",
+      "translation": "Name erforderlich"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "German",
+      "translation": "E-Mail-Adresse"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "German",
+      "translation": "Ihre.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "German",
+      "translation": "E-Mail-Adresse erforderlich"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "German",
+      "translation": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "German",
+      "translation": "Telefonnummer"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "German",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "German",
+      "translation": "Telefonnummer erforderlich"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "German",
+      "translation": "Adresse"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "German",
+      "translation": "Ihre Adresse"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "German",
+      "translation": "Adresse erforderlich"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "German",
+      "translation": "Ich bin damit einverstanden, Marketingmitteilungen und Updates zu erhalten."
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "German",
+      "translation": "Absenden & Weiter"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "German",
+      "translation": "Wird übermittelt..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "German",
+      "translation": "Überspringen & Fortfahren"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "German",
+      "translation": "Wichtigste Leistungsindikatoren"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "German",
+      "translation": "Bestellungen heute"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "German",
+      "translation": "Eingereicht über Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "German",
+      "translation": "Ausstehende Lieferungen"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "German",
+      "translation": "Über zugewiesene Routen"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "German",
+      "translation": "Einzelhändler"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "German",
+      "translation": "Aktive Verkaufsstellen im Geltungsbereich"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "German",
+      "translation": "T & A Score"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "German",
+      "translation": "Gebietsabdeckung"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "German",
+      "translation": "Finanzen & Inventar"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "German",
+      "translation": "Artikel mit geringem Lagerbestand"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "German",
+      "translation": "Auslöser für die Wiederauffüllung"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "German",
+      "translation": "Offene Rechnungen"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "German",
+      "translation": "Fällig zur Abholung"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "German",
+      "translation": "Kreditlimit"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "German",
+      "translation": "Vom Finanzbereich zugewiesen"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "German",
+      "translation": "Automatische Genehmigung, Lagerauffüllung und Rechnungserinnerungen aktiviert"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "German",
+      "translation": "Selbstgenehmigung"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "German",
+      "translation": "Lagerauffüllung"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "German",
+      "translation": "Zahlungserinnerungen"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "German",
+      "translation": "KI-Empfehlungen"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "German",
+      "translation": "Risikostufe"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "German",
+      "translation": "Basierend auf Kreditnutzung und Zahlungshistorie"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "German",
+      "translation": "Empfohlene Reihenfolge"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "German",
+      "translation": "Von der KI empfohlene Artikelnummern zur Bestellung"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "German",
+      "translation": "Nächster Schritt"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "German",
+      "translation": "Maßnahmen & Hinweise"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "German",
+      "translation": "Beschwerden"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "German",
+      "translation": "Probleme des Einzelhandels, die auf eine Bearbeitung warten"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "German",
+      "translation": "Spielbuch"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "German",
+      "translation": "Alle Lieferungen, die vor Mittag eingehen, sollten priorisiert werden."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "German",
+      "translation": "Alle offenen Beschwerden sind innerhalb von 48 Stunden zu bearbeiten."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "German",
+      "translation": "Nachbestellung bei Artikeln mit niedrigem Lagerbestand auslösen (automatische Bestellung erstellen)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "German",
+      "translation": "Gebiet"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "German",
+      "translation": "Bestellungen diesen Monat"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "German",
+      "translation": "Ausstehende Bestellungen"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "German",
+      "translation": "Ausgelieferte Bestellungen"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "German",
+      "translation": "Gebietsinformationen"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "German",
+      "translation": "Land"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "German",
+      "translation": "Stadt"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "German",
+      "translation": "Region"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "German",
+      "translation": "Schnellaktionen"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "German",
+      "translation": "Neue Ordnung"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "German",
+      "translation": "Bestellungen ansehen"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "German",
+      "translation": "Rechnungen ansehen"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "German",
+      "translation": "Profileinstellungen"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "German",
+      "translation": "Dashboard wird geladen..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "German",
+      "translation": "Fehler"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "German",
+      "translation": "Meine Bestellungen"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "German",
+      "translation": "Bestellnummer"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "German",
+      "translation": "Datum"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "German",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "German",
+      "translation": "Artikel"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "German",
+      "translation": "Gesamtbetrag"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "German",
+      "translation": "Aktionen"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "German",
+      "translation": "Details anzeigen"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "German",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "German",
+      "translation": "Startdatum"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "German",
+      "translation": "Enddatum"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "German",
+      "translation": "Alle Status"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "German",
+      "translation": "Filter löschen"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "German",
+      "translation": "Ausstehend"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "German",
+      "translation": "Verarbeitung"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "German",
+      "translation": "Geliefert"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "German",
+      "translation": "Abgesagt"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "German",
+      "translation": "Keine Bestellungen gefunden"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "German",
+      "translation": "Bestellungen werden geladen..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "German",
+      "translation": "Seite"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "German",
+      "translation": "von"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "German",
+      "translation": "Vorherige"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "German",
+      "translation": "Nächste"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "German",
+      "translation": "Bestelldetails"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "German",
+      "translation": "Zurück zu den Bestellungen"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "German",
+      "translation": "Bestellnummer"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "German",
+      "translation": "Status"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "German",
+      "translation": "Bestelldatum"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "German",
+      "translation": "Liefertermin"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "German",
+      "translation": "Lieferadresse"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "German",
+      "translation": "Anmerkungen"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "German",
+      "translation": "Bestellartikel"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "German",
+      "translation": "Produkt"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "German",
+      "translation": "Artikelnummer"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "German",
+      "translation": "Menge"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "German",
+      "translation": "Stückpreis"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "German",
+      "translation": "Gesamt"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "German",
+      "translation": "Gesamtbetrag"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "German",
+      "translation": "Status-Zeitleiste"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "German",
+      "translation": "Bestellung nicht gefunden"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "German",
+      "translation": "Neue Bestellung erstellen"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "German",
+      "translation": "Bestellartikel"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "German",
+      "translation": "Artikel hinzufügen"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "German",
+      "translation": "Es wurden noch keine Elemente hinzugefügt. Klicken Sie auf „Element hinzufügen“, um zu beginnen."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "German",
+      "translation": "Bestelldetails"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "German",
+      "translation": "Liefertermin"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "German",
+      "translation": "Lieferadresse"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "German",
+      "translation": "Anmerkungen"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "German",
+      "translation": "Gesamtbetrag"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "German",
+      "translation": "Bestellung erstellen"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "German",
+      "translation": "Bestellung wird erstellt..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "German",
+      "translation": "Stornieren"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "German",
+      "translation": "Produkt auswählen"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "German",
+      "translation": "Produkt"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "German",
+      "translation": "Menge"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "German",
+      "translation": "Stückpreis"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "German",
+      "translation": "Entfernen"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "German",
+      "translation": "Zwischensumme"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "German",
+      "translation": "Bestellnummer"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "German",
+      "translation": "Mindestens ein Bestellartikel ist erforderlich"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "German",
+      "translation": "Produkt erforderlich"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "German",
+      "translation": "Die Menge muss größer als 0 sein."
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "German",
+      "translation": "Der Stückpreis darf nicht negativ sein."
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "German",
+      "translation": "Ungültiges Lieferdatumsformat"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "German",
+      "translation": "Das Lieferdatum darf nicht in der Vergangenheit liegen."
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "German",
+      "translation": "Meine Rechnungen"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "German",
+      "translation": "Rechnungsnummer"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "German",
+      "translation": "Rechnungsdatum"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "German",
+      "translation": "Zwei Verabredungen"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "German",
+      "translation": "Menge"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "German",
+      "translation": "Bezahlter Betrag"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "German",
+      "translation": "Zahlungsstatus"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "German",
+      "translation": "Zahlungsstatus"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "German",
+      "translation": "Alle Status"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "German",
+      "translation": "Filter löschen"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "German",
+      "translation": "Bezahlt"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "German",
+      "translation": "Unbezahlt"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "German",
+      "translation": "Teilweise"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "German",
+      "translation": "Es wurden keine Rechnungen gefunden"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "German",
+      "translation": "Rechnungen werden geladen..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "German",
+      "translation": "Mein Profil"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "German",
+      "translation": "Kontoinformationen"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "German",
+      "translation": "Vertriebspartner-ID"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "German",
+      "translation": "Gebiet"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "German",
+      "translation": "Land"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "German",
+      "translation": "Stadt"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "German",
+      "translation": "Konto erstellt"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "German",
+      "translation": "Profil aktualisieren"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "German",
+      "translation": "Name"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "German",
+      "translation": "E-Mail"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "German",
+      "translation": "Telefon"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "German",
+      "translation": "Adresse"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "German",
+      "translation": "Sprache"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "German",
+      "translation": "Währung"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "German",
+      "translation": "Änderungen speichern"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "German",
+      "translation": "Speichern..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "German",
+      "translation": "Profil erfolgreich aktualisiert"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "German",
+      "translation": "Profil wird geladen..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "German",
+      "translation": "Ungültiges E-Mail-Format"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "German",
+      "translation": "Ungültiges Telefonformat"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "German",
+      "translation": "Fehler"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "German",
+      "translation": "Laden..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "German",
+      "translation": "Speichern"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "German",
+      "translation": "Stornieren"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "German",
+      "translation": "Zurück"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "German",
+      "translation": "Einreichen"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "German",
+      "translation": "Löschen"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "German",
+      "translation": "Bearbeiten"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "German",
+      "translation": "Sicht"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "German",
+      "translation": "Suchen"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "German",
+      "translation": "Filter"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "German",
+      "translation": "Klar"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "German",
+      "translation": "Anwenden"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "German",
+      "translation": "Schließen"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "German",
+      "translation": "Bestätigen"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "German",
+      "translation": "Ja"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "German",
+      "translation": "NEIN"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "German",
+      "translation": "Rechtliches Betriebssystem"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "German",
+      "translation": "Legal OS"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "German",
+      "translation": "Zugriff verweigert"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "German",
+      "translation": "Sie haben keine Berechtigung, auf das Modul „Legal OS“ zuzugreifen."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "German",
+      "translation": "Armaturenbrett"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "German",
+      "translation": "Verträge"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "German",
+      "translation": "Zertifikate"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "German",
+      "translation": "Einhaltung"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "German",
+      "translation": "Rechts-Dashboard"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "German",
+      "translation": "Überblick über die Rechtsabteilung und den Compliance-Status"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "German",
+      "translation": "Aktive Marken"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "German",
+      "translation": "Aktive Verträge"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "German",
+      "translation": "Konformitätsstatus"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "German",
+      "translation": "Marken"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "German",
+      "translation": "Markenanmeldungen und -registrierungen verwalten"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "German",
+      "translation": "Neue Marke hinzufügen"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "German",
+      "translation": "Land"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "German",
+      "translation": "Status"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "German",
+      "translation": "Alle Länder"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "German",
+      "translation": "Alle Status"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "German",
+      "translation": "Filter löschen"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "German",
+      "translation": "Markenname"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "German",
+      "translation": "Klasse"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "German",
+      "translation": "Land"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "German",
+      "translation": "Antragsnummer"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "German",
+      "translation": "Status"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "German",
+      "translation": "Verfallsdatum"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "German",
+      "translation": "Aktionen"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "German",
+      "translation": "Marke bearbeiten"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "German",
+      "translation": "Neue Marke hinzufügen"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "German",
+      "translation": "Marke anzeigen"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "German",
+      "translation": "Markenname"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "German",
+      "translation": "Klassennummer"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "German",
+      "translation": "Land"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "German",
+      "translation": "Antragsnummer"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "German",
+      "translation": "Status"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "German",
+      "translation": "Verfallsdatum"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "German",
+      "translation": "Unterlagen"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "German",
+      "translation": "Keine Dokumente beigefügt"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "German",
+      "translation": "Dokument hinzufügen"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "German",
+      "translation": "Entfernen"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "German",
+      "translation": "Marken konnten nicht geladen werden"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "German",
+      "translation": "Die Marke konnte nicht gespeichert werden. Bitte versuchen Sie es erneut."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "German",
+      "translation": "Rechtsfälle"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "German",
+      "translation": "Rechtsfälle verwalten und deren Status verfolgen"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "German",
+      "translation": "Neuer Fall"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "German",
+      "translation": "Falltitel"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "German",
+      "translation": "Fallart"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "German",
+      "translation": "Land"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "German",
+      "translation": "Beschreibung"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "German",
+      "translation": "Zugewiesen an"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "German",
+      "translation": "Status"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "German",
+      "translation": "Anhörungstermin"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "German",
+      "translation": "Falltitel"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "German",
+      "translation": "Typ"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "German",
+      "translation": "Land"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "German",
+      "translation": "Zugewiesen an"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "German",
+      "translation": "Status"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "German",
+      "translation": "Anhörungstermin"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "German",
+      "translation": "Aktionen"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "German",
+      "translation": "Offen"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "German",
+      "translation": "Im Gange"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "German",
+      "translation": "Geschlossen"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "German",
+      "translation": "Abgesagt"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "German",
+      "translation": "Flottenkartenansicht"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "German",
+      "translation": "Echtzeit-Verfolgung von Vertriebsmitarbeitern und Lieferfahrzeugen"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "German",
+      "translation": "Aktive Mitarbeiter"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "German",
+      "translation": "Keine aktiven Mitarbeiter"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "German",
+      "translation": "Laden..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "German",
+      "translation": "Routenwiederholung"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "German",
+      "translation": "Mitarbeiter"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "German",
+      "translation": "Geschwindigkeit"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "German",
+      "translation": "Zurücksetzen"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "German",
+      "translation": "Spielen"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "German",
+      "translation": "Pause"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "German",
+      "translation": "Punkte"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "German",
+      "translation": "Keine Routendaten verfügbar"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "German",
+      "translation": "Route wird geladen..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "German",
+      "translation": "Konkurrenzprodukte"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "German",
+      "translation": "Verfolgen Sie Produktinformationen der Wettbewerber."
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "German",
+      "translation": "Produkt hinzufügen"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "German",
+      "translation": "Konkurrenzprodukt hinzufügen"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "German",
+      "translation": "Marke"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "German",
+      "translation": "SKU-Name"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "German",
+      "translation": "Kategorie"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "German",
+      "translation": "Größe"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "German",
+      "translation": "Preis"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "German",
+      "translation": "Währung"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "German",
+      "translation": "Land"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "German",
+      "translation": "Marke"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "German",
+      "translation": "SKU-Name"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "German",
+      "translation": "Kategorie"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "German",
+      "translation": "Größe"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "German",
+      "translation": "Preis"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "German",
+      "translation": "Land"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "German",
+      "translation": "Datum der Hinzufügung"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "German",
+      "translation": "Produkte konnten nicht geladen werden"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "German",
+      "translation": "Das Produkt konnte nicht erstellt werden. Bitte versuchen Sie es erneut."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "German",
+      "translation": "Es wurden keine Konkurrenzprodukte gefunden."
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "German",
+      "translation": "Produkte werden geladen..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "German",
+      "translation": "Wettbewerbsübersicht"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "German",
+      "translation": "Analysen und Einblicke in Konkurrenzprodukte"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "German",
+      "translation": "Gesamtprodukte"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "German",
+      "translation": "Marken verfolgt"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "German",
+      "translation": "Länder"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "German",
+      "translation": "Kategorien"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "German",
+      "translation": "Produkte nach Marke"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "German",
+      "translation": "Produkte nach Land"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "German",
+      "translation": "Produkte nach Kategorie"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "German",
+      "translation": "Statistiken werden geladen..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "German",
+      "translation": "Keine Statistiken verfügbar"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "German",
+      "translation": "Überblick"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "German",
+      "translation": "Bestellungen"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "German",
+      "translation": "Inventar"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "German",
+      "translation": "Logistik"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "German",
+      "translation": "Finanzen"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "German",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "German",
+      "translation": "Personalwesen"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "German",
+      "translation": "Führungskraft"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "German",
+      "translation": "Investor"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "German",
+      "translation": "Recht/IPR"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "German",
+      "translation": "Wettbewerber"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "German",
+      "translation": "Import/Export"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "German",
+      "translation": "GPS-Tracking"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "German",
+      "translation": "Lokalisierung"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "German",
+      "translation": "Arbeitsabläufe"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "German",
+      "translation": "Administrator"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "German",
+      "translation": "CRM OS"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "German",
+      "translation": "360-Stunden-Kundenperspektive"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "German",
+      "translation": "Vollständige Kundenprofile, Interaktionshistorie und Beziehungsmanagement"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "German",
+      "translation": "Digitale Kampagnen"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "German",
+      "translation": "Multi-Channel-Marketingkampagnen (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "German",
+      "translation": "Leads & Chancen"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "German",
+      "translation": "Lead-Management, Qualifizierung und Opportunity-Pipeline"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "German",
+      "translation": "Kundensupport"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "German",
+      "translation": "Ticketmanagement, Kundenservice und Problemlösung"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "German",
+      "translation": "Treueprogramme"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "German",
+      "translation": "Kundenbindung im Einzelhandel, Gamifizierung und Prämienmanagement"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "German",
+      "translation": "360-Stunden-Kundenperspektive"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "German",
+      "translation": "Neukunde"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "German",
+      "translation": "Gesamtzahl der Kunden"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "German",
+      "translation": "Aktiv"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "German",
+      "translation": "Neu"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "German",
+      "translation": "Zufriedenheit"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "German",
+      "translation": "Kundenmanagement"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "German",
+      "translation": "Kundenbeziehungen, Interaktionen und Kampagnen einsehen und verwalten."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "German",
+      "translation": "Laden..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "German",
+      "translation": "Fehler beim Laden der CRM-Daten"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "German",
+      "translation": "Überblick"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "German",
+      "translation": "Bestellungen"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "German",
+      "translation": "Inventar"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "German",
+      "translation": "Logistik"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "German",
+      "translation": "Finanzen"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "German",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "German",
+      "translation": "Personalwesen"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "German",
+      "translation": "Führungskraft"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "German",
+      "translation": "Investor"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "German",
+      "translation": "Recht/IPR"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "German",
+      "translation": "Wettbewerber"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "German",
+      "translation": "Import/Export"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "German",
+      "translation": "GPS-Tracking"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "German",
+      "translation": "Lokalisierung"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "German",
+      "translation": "Arbeitsabläufe"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "German",
+      "translation": "Administrator"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "German",
+      "translation": "Kunden"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "German",
+      "translation": "Mitarbeiter"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "German",
+      "translation": "Profitieren"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "German",
+      "translation": "Lieferanten-Cockpit wird geladen…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "German",
+      "translation": "Bestellungen"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "German",
+      "translation": "Aufgewachsen bei Harvics"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "German",
+      "translation": "Sendungen / Wareneingang"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "German",
+      "translation": "Diese Woche angenommen"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "German",
+      "translation": "erstellte Rechnungen"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "German",
+      "translation": "Zahlung ausstehend"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "German",
+      "translation": "Zahlungen ausstehend"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "German",
+      "translation": "Geplante Veröffentlichung"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "German",
+      "translation": "Qualität / Beschwerden"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "German",
+      "translation": "Offene Tickets"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "German",
+      "translation": "Prognose (nächste 4 Wochen)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "German",
+      "translation": "KI-Platzhalter"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "German",
+      "translation": "Maßnahmen der Lieferanten"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "German",
+      "translation": "Bestätigen Sie die anstehenden Lieferungen und aktualisieren Sie den Wareneingangsplan."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "German",
+      "translation": "Offene Rechnungen prüfen und Zahlungshinweise übermitteln."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "German",
+      "translation": "Offene Qualitätsreklamationen mit Nachweisen aus der Qualitätssicherung klären."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "German",
+      "translation": "Benutzername"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "German",
+      "translation": "Passwort"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "German",
+      "translation": "E-Mail"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "German",
+      "translation": "Einreichen"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "German",
+      "translation": "Stornieren"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "German",
+      "translation": "Speichern"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "German",
+      "translation": "Löschen"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "German",
+      "translation": "Suchen"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "German",
+      "translation": "Filter"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "German",
+      "translation": "Zurücksetzen"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "German",
+      "translation": "Schließen"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "German",
+      "translation": "Zurück"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "German",
+      "translation": "Nächste"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "German",
+      "translation": "Vorherige"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "German",
+      "translation": "Bestätigen"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "German",
+      "translation": "Erinnere dich an mich"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "German",
+      "translation": "Passwort vergessen?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "German",
+      "translation": "E-Mail-Adresse erforderlich"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "German",
+      "translation": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "German",
+      "translation": "Produkte"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "German",
+      "translation": "Welche Produkte bietet Harvics an?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "German",
+      "translation": "Wir bieten eine breite Palette an Premium-Lebensmitteln an, darunter Süßwaren, Getränke, Snacks, Pasta, Backwaren und Tiefkühlkost in verschiedenen Kategorien."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "German",
+      "translation": "Wo kann ich Harvics-Produkte kaufen?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "German",
+      "translation": "Unsere Produkte sind im Einzelhandel in über 40 Ländern erhältlich. Nutzen Sie unsere Händlersuche oder unser Kontaktformular, um einen Händler in Ihrer Nähe zu finden."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "German",
+      "translation": "Bieten Sie die Möglichkeit zur Großbestellung an?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "German",
+      "translation": "Ja, wir bieten Mengenrabatte für Unternehmen und Einzelhändler an. Weitere Informationen finden Sie auf unserer Seite „Mengenrabatte“."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "German",
+      "translation": "Bestellungen & Versand"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "German",
+      "translation": "Welche Versandoptionen bieten Sie an?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "German",
+      "translation": "Wir bieten verschiedene Versandoptionen an, darunter Standard-, Express- und internationaler Versand. Ab einem Bestellwert von 50 $ ist der Versand kostenlos."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "German",
+      "translation": "Wie lange dauert die Lieferung?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "German",
+      "translation": "Die Lieferzeiten variieren je nach Standort. Die Standardlieferung dauert in der Regel 5-7 Werktage, die Expresslieferung 2-3 Werktage."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "German",
+      "translation": "Kann ich meine Bestellung verfolgen?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "German",
+      "translation": "Ja, Sie können Ihre Bestellung mithilfe der in Ihrer Bestellbestätigungs-E-Mail angegebenen Sendungsnummer verfolgen."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "German",
+      "translation": "Konto & Zahlungen"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "German",
+      "translation": "Wie erstelle ich ein Konto?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "German",
+      "translation": "Klicken Sie in der Kopfzeile auf „Anmelden“ und wählen Sie „Konto erstellen“, um sich für ein neues Konto zu registrieren."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "German",
+      "translation": "Welche Zahlungsmethoden akzeptieren Sie?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "German",
+      "translation": "Wir akzeptieren alle gängigen Kreditkarten, Debitkarten, PayPal und Banküberweisungen für B2B-Bestellungen."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "German",
+      "translation": "Sind meine Zahlungsinformationen sicher?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "German",
+      "translation": "Ja, wir verwenden branchenübliche Verschlüsselung, um Ihre Zahlungsinformationen zu schützen."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "German",
+      "translation": "Rückgabe & Erstattung"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "German",
+      "translation": "Wie lauten Ihre Rückgabebedingungen?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "German",
+      "translation": "Wir bieten ein 30-tägiges Rückgaberecht für ungeöffnete Produkte in Originalverpackung. Bitte kontaktieren Sie unseren Kundenservice, um eine Rücksendegenehmigung zu erhalten."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "German",
+      "translation": "Wie kann ich eine Rückerstattung beantragen?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "German",
+      "translation": "Bitte kontaktieren Sie unseren Kundenservice mit Ihrer Bestellnummer und dem Grund für die Rückgabe. Wir bearbeiten Ihre Rückerstattung innerhalb von 5–7 Werktagen."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "German",
+      "translation": "Haben Sie noch Fragen?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "German",
+      "translation": "Unser Kundenservice-Team hilft Ihnen gerne weiter."
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "German",
+      "translation": "Kontaktieren Sie uns"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "German",
+      "translation": "Karriere"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "German",
+      "translation": "Karriere | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "German",
+      "translation": "Werden Sie Teil von Harvics Global Ventures – entdecken Sie Möglichkeiten in über 40 Ländern."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "German",
+      "translation": "Begleiten Sie uns"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "German",
+      "translation": "Die Zukunft des Welthandels gestalten"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "German",
+      "translation": "Wir expandieren in über 40 Ländern. Werden Sie Teil eines Teams, das das KI-gestützte Betriebssystem für den globalen Handel entwickelt."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "German",
+      "translation": "Offene Stellen"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "German",
+      "translation": "Länder"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "German",
+      "translation": "Branchensegmente"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "German",
+      "translation": "Abteilungen, die einstellen"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "German",
+      "translation": "Offene Stellen nach Abteilung"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "German",
+      "translation": "Vertrieb & Distribution"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "German",
+      "translation": "Umsatzsteigerung in über 40 Märkten. Gebietsmanagement, Key-Account-Management, Beziehungen zu Vertriebspartnern."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "German",
+      "translation": "Lieferkette & Logistik"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "German",
+      "translation": "Die gesamte Lieferkette vom Werk bis ins Regal. Flottenmanagement, Lagerhaltung, Zustellung auf der letzten Meile."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "German",
+      "translation": "Technologie & KI"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "German",
+      "translation": "Entwickeln Sie Harvics OS – unsere KI-gestützte Unternehmensplattform. Full-Stack-Entwicklung, ML-Engineering, Data Science."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "German",
+      "translation": "Finanzen und Schatzamt"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "German",
+      "translation": "Multiwährungs-Treasury, Handelsfinanzierung, digitale Zahlungen mit HPay, Devisenmanagement über verschiedene Regionen hinweg."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "German",
+      "translation": "Beschaffung & Einkauf"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "German",
+      "translation": "Weltweite Beschaffung aus über 15 Ursprungsländern. Lieferantenaudits, Qualitätskontrolle, Direktvertriebsprogramme ab Werk."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "German",
+      "translation": "Personalwesen"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "German",
+      "translation": "Talentakquise, Personalentwicklung und Leistungsmanagement in unterschiedlichen geografischen und kulturellen Kontexten."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "German",
+      "translation": "Recht und Compliance"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "German",
+      "translation": "Handelskonformität, Sanktionsprüfung, Schutz des geistigen Eigentums, Vertragsmanagement über verschiedene Rechtsordnungen hinweg."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "German",
+      "translation": "Marketing & Marke"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "German",
+      "translation": "Mehrsprachige Kampagnen, Inhalte in 38 Sprachen, digitales Marketing, Markenstrategie für 10 Branchen."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "German",
+      "translation": "Rollen"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "German",
+      "translation": "Warum Harvics"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "German",
+      "translation": "Globale Mobilität"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "German",
+      "translation": "Arbeitet in Dubai, London, Karatschi, Lahore und über 40 weiteren Märkten"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "German",
+      "translation": "Wachstumskurs"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "German",
+      "translation": "Schneller Karriereaufstieg in einem wachsenden Unternehmen"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "German",
+      "translation": "KI-zentrierte Kultur"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "German",
+      "translation": "Arbeiten Sie mit modernsten KI- und Echtzeit-Intelligenzsystemen."
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "German",
+      "translation": "Wettbewerbsfähiges Paket"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "German",
+      "translation": "Marktführende Vergütung, Unterkunft und Sozialleistungen"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "German",
+      "translation": "Lernbudget"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "German",
+      "translation": "Jährliches Entwicklungsbudget für Kurse, Konferenzen und Zertifizierungen"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "German",
+      "translation": "Flexible Arbeitszeiten"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "German",
+      "translation": "Hybridmodelle mit regionalen Hub-Büros weltweit"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "German",
+      "translation": "Unsere Strategie"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "German",
+      "translation": "Strategie | Harwich"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "German",
+      "translation": "Eine nachhaltige Zukunft gestalten durch Innovation und Exzellenz"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "German",
+      "translation": "Eine nachhaltige Zukunft gestalten durch Innovation und Exzellenz"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "German",
+      "translation": "Globale Expansion"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "German",
+      "translation": "Ausbau unserer Präsenz in Schwellenländern bei gleichzeitiger Stärkung unserer Position in etablierten Märkten"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "German",
+      "translation": "Produktinnovation"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "German",
+      "translation": "Investitionen in Forschung und Entwicklung zur Entwicklung neuer Produkte, die den sich wandelnden Verbraucherpräferenzen entsprechen."
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "German",
+      "translation": "Nachhaltigkeit"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "German",
+      "translation": "Wir setzen uns für nachhaltige Praktiken entlang unserer gesamten Lieferkette und in unserem gesamten operativen Geschäft ein."
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "German",
+      "translation": "Digitale Transformation"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "German",
+      "translation": "Technologie nutzen, um das Kundenerlebnis und die betriebliche Effizienz zu verbessern"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "German",
+      "translation": "Unsere Vision"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "German",
+      "translation": "Das Ziel ist es, das weltweit führende Premium-Konsumgüterunternehmen zu sein, das für Qualität, Innovation und Nachhaltigkeit bekannt ist."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "German",
+      "translation": "Harvics Global Ventures | Premium-Welthandel"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "German",
+      "translation": "Führendes globales Handelsunternehmen, das Premiumprodukte in über 10 Branchen anbietet. Seit 2019 in über 50 Ländern tätig."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "German",
+      "translation": "Über uns | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "German",
+      "translation": "Erfahren Sie, wie Harvics Global Ventures zu einer treibenden Kraft im globalen Handel in über 40 Ländern und 10 Branchen wurde."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "German",
+      "translation": "Kontakt | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "German",
+      "translation": "Nehmen Sie Kontakt mit den Harvics-Niederlassungen weltweit auf, darunter im Nahen Osten, in Südasien, Europa, Afrika und Amerika."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "German",
+      "translation": "Produkte | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "German",
+      "translation": "Entdecken Sie das Premium-Produktsortiment von Harvics in den Bereichen Konsumgüter, Textilien, Rohstoffe und Industrielösungen."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "German",
+      "translation": "Karriere | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "German",
+      "translation": "Werden Sie Teil von Harvics Global Ventures – entdecken Sie Möglichkeiten in über 40 Ländern in den Bereichen Konsumgüter, Textilien, Logistik und Technologie."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "German",
+      "translation": "Medienzentrum | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "German",
+      "translation": "Harvics Medienzentrum – Pressemitteilungen, aktuelle Nachrichten, Markenmaterialien und Medienkontakte."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "German",
+      "translation": "Unsere Strategie | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "German",
+      "translation": "Die strategische Vision von Harvics für globale Expansion, Innovation, Nachhaltigkeit und digitale Transformation."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "German",
+      "translation": "Soziale Verantwortung von Unternehmen | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "German",
+      "translation": "Harvics CSR-Initiativen – Umweltschutz, Gemeinschaftsprogramme und ethische Geschäftspraktiken."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "German",
+      "translation": "Häufig gestellte Fragen | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "German",
+      "translation": "Häufig gestellte Fragen zu Harvics-Produkten, -Dienstleistungen, Bestellvorgängen und globalen Geschäftstätigkeiten."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "German",
+      "translation": "Weltweite Standorte | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "German",
+      "translation": "Harvics ist mit Büros und Niederlassungen im Nahen Osten, Südasien, Europa, Afrika und Amerika vertreten."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "German",
+      "translation": "Führungsteam | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "German",
+      "translation": "Lernen Sie das Führungsteam kennen, das Harvics Global Ventures in über 40 Märkten und 10 Branchenbereichen vorantreibt."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "German",
+      "translation": "Hilfezentrum | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "German",
+      "translation": "Hier erhalten Sie Hilfe bei Bestellungen, Konten, Versand und Harvics-Services."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "German",
+      "translation": "Compliance und Ethik | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "German",
+      "translation": "Harvics Engagement für die Einhaltung gesetzlicher Vorschriften, ethische Geschäftspraktiken und globale Standards."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "German",
+      "translation": "Unsere Geschichte | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "German",
+      "translation": "Vom Dubai-Startup im Jahr 2019 zum globalen Unternehmen mit Niederlassungen in über 40 Ländern – die Geschichte von Harvics."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "German",
+      "translation": "Newsletter | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "German",
+      "translation": "Abonnieren Sie den Harvics-Newsletter, um Brancheneinblicke und Produktneuheiten zu erhalten."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "German",
+      "translation": "Anmelden | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "German",
+      "translation": "Melden Sie sich in Ihrem Harvics-Konto an, um Bestellungen zu verwalten und auf die Plattform zuzugreifen."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "German",
+      "translation": "Forschung und Innovation | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "German",
+      "translation": "Die Forschungsinitiativen und Innovationsprogramme von Harvics treiben unsere globale Strategie voran."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "German",
+      "translation": "Investor Relations | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "German",
+      "translation": "Investoreninformationen, Finanzberichte und Unternehmensmitteilungen von Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "German",
+      "translation": "Seite nicht gefunden"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "German",
+      "translation": "404 – Seite nicht gefunden"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "German",
+      "translation": "Die gesuchte Seite existiert nicht oder wurde verschoben."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "German",
+      "translation": "Zur Startseite"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "German",
+      "translation": "Geh zurück"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "German",
+      "translation": "Etwas ist schiefgelaufen."
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "German",
+      "translation": "Etwas ist schiefgelaufen."
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "German",
+      "translation": "Es tut uns leid, aber es ist ein unerwarteter Fehler aufgetreten. Bitte aktualisieren Sie die Seite."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "German",
+      "translation": "Versuchen Sie es erneut"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "German",
+      "translation": "Seite neu laden"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "German",
+      "translation": "Kontaktieren Sie den Support."
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "German",
+      "translation": "Anwendungsfehler"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "German",
+      "translation": "Kritischer Fehler"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "German",
+      "translation": "Es ist ein schwerwiegender Fehler aufgetreten. Bitte laden Sie die Seite neu."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "German",
+      "translation": "Anwendung neu laden"
+    }
+  }
+}

@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "ps",
+    "language": "Pashto",
+    "direction": "rtl",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Pashto. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Pashto",
+      "translation": "ښه راغلاست"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Pashto",
+      "translation": "هارویچ"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Pashto",
+      "translation": "له ۲۰۱۹ کال راهیسې په پریمیم مصرفي توکو کې غوره والی"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Pashto",
+      "translation": "د نړیوال مصرفي توکو یو مخکښ شرکت چې د نړیوال کیفیت معیارونو سره سم په مختلفو کټګوریو کې غوره خوراکي محصولات وړاندې کوي."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Pashto",
+      "translation": "محصولات وپلټئ"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Pashto",
+      "translation": "موږ سره اړیکه ونیسئ"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Pashto",
+      "translation": "نور معلومات ترلاسه کړئ"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Pashto",
+      "translation": "د پریمیم مصرفي توکو کې غوره والی له هغه راهیسې"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Pashto",
+      "translation": "۲۰۱۹"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Pashto",
+      "translation": "لندن • میلان • نیویارک"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Pashto",
+      "translation": "بیکري"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Pashto",
+      "translation": "مشروبات"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Pashto",
+      "translation": "د شیرینی ځای"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Pashto",
+      "translation": "پخلی"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Pashto",
+      "translation": "کنګل شوي خواړه"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Pashto",
+      "translation": "پاستا"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Pashto",
+      "translation": "ناشته"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Pashto",
+      "translation": "د ESG راپور ۲۰۲۵"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Pashto",
+      "translation": "لندن • میلان • نیویارک"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Pashto",
+      "translation": "کور"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Pashto",
+      "translation": "په اړه"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Pashto",
+      "translation": "زموږ په اړه"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Pashto",
+      "translation": "د برانډ کیسه"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Pashto",
+      "translation": "محصولات"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Pashto",
+      "translation": "زموږ محصولات"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Pashto",
+      "translation": "ټول محصولات وګورئ"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Pashto",
+      "translation": "د ټولنیز ټولنیز مسؤلیت (CSR)"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Pashto",
+      "translation": "د پانګوالو اړیکې"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Pashto",
+      "translation": "پانګوال"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Pashto",
+      "translation": "رسنۍ"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Pashto",
+      "translation": "موږ سره اړیکه ونیسئ"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Pashto",
+      "translation": "هارویکس هاوس"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Pashto",
+      "translation": "هېوادونه"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Pashto",
+      "translation": "پورټلونه"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Pashto",
+      "translation": "سيستم ته داخل کيدل"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Pashto",
+      "translation": "د غوښتنې لېست"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Pashto",
+      "translation": "د سودا ګاډی"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Pashto",
+      "translation": "مرسته"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Pashto",
+      "translation": "هټۍ ومومئ"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Pashto",
+      "translation": "پیسې"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Pashto",
+      "translation": "خرڅلاو"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Pashto",
+      "translation": "وړاندیزونه"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Pashto",
+      "translation": "تیاره حالت"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Pashto",
+      "translation": "کریډیټ کارت"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Pashto",
+      "translation": "د M&S انعامونو کریډیټ کارت"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Pashto",
+      "translation": "د کلب انعامونه"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Pashto",
+      "translation": "زموږ کریډیټ کارتونه"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Pashto",
+      "translation": "بیمه"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Pashto",
+      "translation": "د کور بیمه"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Pashto",
+      "translation": "د سفر بیمه"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Pashto",
+      "translation": "د سفر خدمتونه"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Pashto",
+      "translation": "د سفر پیسې"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Pashto",
+      "translation": "د تبادلې نرخونه"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Pashto",
+      "translation": "اضافي خدمات"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Pashto",
+      "translation": "سپما او پانګونه"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Pashto",
+      "translation": "شخصي پورونه"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Pashto",
+      "translation": "مالي ملاتړ"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Pashto",
+      "translation": "اوسنی خرڅلاو"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Pashto",
+      "translation": "تصفیه"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Pashto",
+      "translation": "موسمي خرڅلاو"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Pashto",
+      "translation": "ځانګړي وړاندیزونه"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Pashto",
+      "translation": "ترفیعات"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Pashto",
+      "translation": "د لویو امرونو تخفیفونه"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Pashto",
+      "translation": "زموږ محصولات"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Pashto",
+      "translation": "ټول محصولات وګورئ"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Pashto",
+      "translation": "زموږ د محصول کټګورۍ"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Pashto",
+      "translation": "زموږ د محصولاتو غوره لړۍ ومومئ چې په پاملرنې او غوره والي سره جوړ شوي دي."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Pashto",
+      "translation": "لومړۍ درجه: کټګورۍ"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Pashto",
+      "translation": "دوهمه درجه: ماډلونه"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Pashto",
+      "translation": "دریمه درجه: د KPI سکرینونه"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Pashto",
+      "translation": "څلورمه برخه: کړنې"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Pashto",
+      "translation": "نیویګیشن بیا تنظیم کړئ"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Pashto",
+      "translation": "د دې کټګورۍ لپاره هیڅ فرعي کټګورۍ شتون نلري."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Pashto",
+      "translation": "محصولات"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Pashto",
+      "translation": "فرعي کټګورۍ"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Pashto",
+      "translation": "بیکري"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Pashto",
+      "translation": "تازه پخه شوي توکي او پیسټري."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Pashto",
+      "translation": "مشروبات"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Pashto",
+      "translation": "د هر فرصت لپاره تازه څښاک."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Pashto",
+      "translation": "شیرینی"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Pashto",
+      "translation": "خواږه خواړه او خوندونه."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Pashto",
+      "translation": "پخلی"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Pashto",
+      "translation": "ستاسو د پخلنځي لپاره اړین توکي."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Pashto",
+      "translation": "کنګل شوي خواړه"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Pashto",
+      "translation": "اسانه او خوندور منجمد خواړه."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Pashto",
+      "translation": "پاستا"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Pashto",
+      "translation": "د پاستا اصلي ډولونه."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Pashto",
+      "translation": "ناشته"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Pashto",
+      "translation": "د ورځې د هر وخت لپاره خوندور خواړه."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Pashto",
+      "translation": "د هارویکس په اړه"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Pashto",
+      "translation": "له ۲۰۱۹ کال راهیسې په پریمیم مصرفي توکو کې غوره والی"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Pashto",
+      "translation": "زموږ کیسه"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Pashto",
+      "translation": "هارویکس، چې په ۲۰۱۹ کال کې تاسیس شو، له یوې لید لرونکې مفکورې څخه د غوره مصرفي توکو په برخه کې په نړیوال مشر بدل شو. زموږ سفر د کیفیت د نه ستړې کیدونکې تعقیب او نوښت ته د ژمنتیا له مخې تعریف شوی دی."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Pashto",
+      "translation": "موږ په ۴۰+ هیوادونو کې فعالیت کوو، داسې محصولات وړاندې کوو چې ژوند بډایه کوي او په صنعت کې نوي معیارونه ټاکي. زموږ د عاجز پیل څخه تر نړیوال شتون پورې، زموږ ارزښتونه بدل شوي ندي."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Pashto",
+      "translation": "اټکل ۲۰۱۹ کال"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Pashto",
+      "translation": "۴۰+ هیوادونه"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Pashto",
+      "translation": "۶ د محصول کرښې"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Pashto",
+      "translation": "د شرکت ټولنیز مسؤلیت"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Pashto",
+      "translation": "په هارویکس کې، موږ ژمن یو چې په نړۍ باندې مثبت اغیزه وکړو. زموږ د CSR نوښتونه په پایښت، د ټولنې پیاوړتیا، او اخلاقي سوداګریزو کړنو تمرکز کوي."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Pashto",
+      "translation": "د اغیزو کلونه"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Pashto",
+      "translation": "هغه هېوادونه چې رسیدلي دي"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Pashto",
+      "translation": "ژوندونه لمس شوي"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Pashto",
+      "translation": "زموږ مهم نوښتونه"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Pashto",
+      "translation": "موږ په څلورو اصلي ستنو تمرکز کوو ترڅو دوامداره بدلون رامینځته کړو او د ټولو ښکیلو اړخونو لپاره ګډ ارزښت رامینځته کړو."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Pashto",
+      "translation": "دوام"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Pashto",
+      "translation": "د نوي کیدونکي انرژۍ او د ضایعاتو کمولو له لارې زموږ د چاپیریال اغیز کمول."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Pashto",
+      "translation": "د نوي کیدونکي انرژۍ"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Pashto",
+      "translation": "د کثافاتو اړول"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Pashto",
+      "translation": "د کاربن کمښت"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Pashto",
+      "translation": "د ټولنې ملاتړ"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Pashto",
+      "translation": "د پوهنې، روغتیا پاملرنې، او اقتصادي پراختیا له لارې د سیمه ییزو ټولنو پیاوړتیا."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Pashto",
+      "translation": "ملاتړ شوي کورنۍ"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Pashto",
+      "translation": "فعال پروګرامونه"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Pashto",
+      "translation": "رضاکاران"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Pashto",
+      "translation": "زده کړه"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Pashto",
+      "translation": "د بې وزلو زده کونکو لپاره د باکیفیته زده کړې او سکالرشپونو ته لاسرسی برابرول."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Pashto",
+      "translation": "بورسونه"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Pashto",
+      "translation": "د ملګرو ښوونځي"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Pashto",
+      "translation": "زده کوونکي اغیزمن شول"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Pashto",
+      "translation": "روغتیا او هوساینه"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Pashto",
+      "translation": "په محرومو سیمو کې روغتیا پاملرنې او تغذیې ته د لاسرسي ښه کول."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Pashto",
+      "translation": "د روغتیا کمپاینونه"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Pashto",
+      "translation": "خلکو خدمت وکړ"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Pashto",
+      "translation": "ګرځنده کلینیکونه"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Pashto",
+      "translation": "د CSR غوره نوښت"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Pashto",
+      "translation": "د ټولنیز مسؤلیت په اړه زموږ د نوښتګر چلند لپاره ویاړ."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Pashto",
+      "translation": "د ټولنې اتل"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Pashto",
+      "translation": "زموږ د پراخو ټولنیزو پروګرامونو لپاره جایزه ورکړل شوه."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Pashto",
+      "translation": "د نړیوال پایښت جایزه"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Pashto",
+      "translation": "د کاربن بې طرفۍ لپاره زموږ د ژمنې لپاره پیژندل شوی."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Pashto",
+      "translation": "زموږ اغېز"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Pashto",
+      "translation": "د یوې غوره نړۍ په جوړولو کې زموږ د مهمو لاسته راوړنو پیژندل."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Pashto",
+      "translation": "د بدلون راوستلو لپاره له موږ سره یوځای شئ"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Pashto",
+      "translation": "زموږ سره ملګرتیا وکړئ یا د دې په اړه نور معلومات زده کړئ چې موږ څنګه یو دوامداره راتلونکی جوړوو."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Pashto",
+      "translation": "د CSR ټیم سره اړیکه ونیسئ"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Pashto",
+      "translation": "نور معلومات ترلاسه کړئ"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Pashto",
+      "translation": "په تماس کې شئ"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Pashto",
+      "translation": "موږ به خوښ شو چې له تاسو څخه واورو. د دې لارو له لارې موږ سره اړیکه ونیسئ."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Pashto",
+      "translation": "تلیفون"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Pashto",
+      "translation": "استول"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Pashto",
+      "translation": "واټس اپ"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Pashto",
+      "translation": "اوس زنګ ووهئ"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Pashto",
+      "translation": "برېښنالیک ولېږئ"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Pashto",
+      "translation": "موږ ته پیغام ورکړئ"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Pashto",
+      "translation": "د رسنیو مرکز"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Pashto",
+      "translation": "د رسنیو مرکز | هارویکس"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Pashto",
+      "translation": "مطبوعاتي سرچینې، د برانډ شتمنۍ، او د هارویکس ګلوبل وینچرز څخه وروستي خبرونه."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Pashto",
+      "translation": "کارپوریټ"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Pashto",
+      "translation": "خبرونه او مطبوعاتي اعلامیې"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Pashto",
+      "translation": "د هارویکس ګلوبل وینچرز څخه وروستي اعلانونه، د بازار پراختیا، د محصول لانچونه، او د کارپوریټ تازه معلومات."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Pashto",
+      "translation": "وروستي خبرونه ولولئ"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Pashto",
+      "translation": "د انځورونو ګالري"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Pashto",
+      "translation": "د لوړ ریزولوشن برانډ شتمنۍ، د محصول عکس اخیستل، د تاسیساتو انځورونه، او د رسنیو کارولو لپاره د پیښو پوښښ."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Pashto",
+      "translation": "ګالري وګورئ"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Pashto",
+      "translation": "د رسنیو اړیکې"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Pashto",
+      "translation": "د مطبوعاتي پوښتنو، د مرکې غوښتنو، او د ملګرتیا اعلانونو لپاره زموږ د اړیکو ټیم سره اړیکه ونیسئ."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Pashto",
+      "translation": "د مطبوعاتي ټیم سره اړیکه ونیسئ"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Pashto",
+      "translation": "تر پوښښ لاندې بازارونه"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Pashto",
+      "translation": "د صنعت عمودی"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Pashto",
+      "translation": "په دوبۍ کې تاسیس شوی"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Pashto",
+      "translation": "ملاتړ شوې ژبې"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Pashto",
+      "translation": "وروستي سرټکي"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Pashto",
+      "translation": "هارویکس د FMCG عملیات د جنوب ختیځې آسیا پنځو نویو بازارونو ته غځوي"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Pashto",
+      "translation": "د نړیوال توزیع لپاره د مصنوعي ذهانت په واسطه چلول شوی د اکمالاتو نوی سلسله پلیټ فارم پیل شو"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Pashto",
+      "translation": "هارویکس په ټولو تاسیساتو کې د کاربن بې طرفه هدف ترلاسه کوي"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Pashto",
+      "translation": "په جنوبي اسیا کې د مخکښو ټوکر جوړونکو سره ستراتیژیک ملګرتیا"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Pashto",
+      "translation": "هارویکس هاوس"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Pashto",
+      "translation": "د غوره والي او دود میراث"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Pashto",
+      "translation": "هارویکس هاوس ته ښه راغلاست"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Pashto",
+      "translation": "هارویکس هاوس د کیفیت او میراث په وړاندې زموږ د ژمنې لوړوالی استازیتوب کوي. دلته، موږ د خپلو غوره محصولاتو غوره انتخاب سره یوځای کوو، چې په داسې چاپیریال کې نندارې ته وړاندې کیږي چې زموږ د ښکلا، دود او نوښت ارزښتونه منعکس کوي."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Pashto",
+      "translation": "زموږ ځانګړي ټولګې وپلټئ او د هر هغه محصول تر شا کیسه ومومئ چې د هارویکس نوم لري."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Pashto",
+      "translation": "هارویکس ګلوبل وینچرز"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Pashto",
+      "translation": "له ۲۰۱۹ کال راهیسې په پریمیم مصرفي توکو کې غوره والی"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Pashto",
+      "translation": "د نړیوال مصرفي توکو یو مخکښ شرکت چې د نړیوال کیفیت معیارونو سره سم په مختلفو کټګوریو کې غوره خوراکي محصولات وړاندې کوي."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Pashto",
+      "translation": "لندن • میلان • نیویارک"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Pashto",
+      "translation": "له ۲۰۱۹ کال راهیسې"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Pashto",
+      "translation": "د هارویکس خبرونه"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Pashto",
+      "translation": "د خبرتیاو او تازه معلوماتو ترلاسه کولو لپاره ګډون وکړئ"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Pashto",
+      "translation": "ګډون کول"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Pashto",
+      "translation": "د اطاعت اندیښنې"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Pashto",
+      "translation": "که تاسو د اطاعت یا اخلاقو په اړه اندیښنې لرئ نو خبرې وکړئ"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Pashto",
+      "translation": "خبرې وکړئ"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Pashto",
+      "translation": "موږ سره اړیکه ونیسئ"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Pashto",
+      "translation": "زموږ د ټیم سره اړیکه ونیسئ"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Pashto",
+      "translation": "موږ سره اړیکه ونیسئ"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Pashto",
+      "translation": "ګټورې لینکونه"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Pashto",
+      "translation": "له هارویچ څخه پوښتنه وکړئ"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Pashto",
+      "translation": "د دندو لټون"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Pashto",
+      "translation": "د خبرونو لپاره لاسلیک وکړئ"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Pashto",
+      "translation": "شرکت"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Pashto",
+      "translation": "نړیوال پتې"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Pashto",
+      "translation": "ستراتیژي"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Pashto",
+      "translation": "زموږ رهبري"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Pashto",
+      "translation": "برانډونه A-Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Pashto",
+      "translation": "زموږ تاریخ"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Pashto",
+      "translation": "دوام"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Pashto",
+      "translation": "خبرونه"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Pashto",
+      "translation": "د رسنیو اړیکې"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Pashto",
+      "translation": "انځورونه"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Pashto",
+      "translation": "پانګوال"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Pashto",
+      "translation": "د شرکت حکومتداري"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Pashto",
+      "translation": "ونډې، ADRs او بانډونه"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Pashto",
+      "translation": "خپرونې"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Pashto",
+      "translation": "موږ تعقیب کړئ"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Pashto",
+      "translation": "۰ مسلې"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Pashto",
+      "translation": "د سایټ نقشه"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Pashto",
+      "translation": "ګډون لغوه کړئ"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Pashto",
+      "translation": "مرسته"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Pashto",
+      "translation": "محرمیت"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Pashto",
+      "translation": "کوکیز"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Pashto",
+      "translation": "د کارولو شرایط"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Pashto",
+      "translation": "لاسرسی"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Pashto",
+      "translation": "د کاربن موثریت"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Pashto",
+      "translation": "عرضه کوونکي"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Pashto",
+      "translation": "ټولنیز رسنۍ"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Pashto",
+      "translation": "د کوکي ترتیبات"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Pashto",
+      "translation": "لوړ کیفیت"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Pashto",
+      "translation": "بریښنا‌لیک"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Pashto",
+      "translation": "خپل برېښنالیک پته دننه کړئ"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Pashto",
+      "translation": "ګډون وکړئ"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Pashto",
+      "translation": "ګډون کول..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Pashto",
+      "translation": "زموږ په اړه"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Pashto",
+      "translation": "رسنۍ"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Pashto",
+      "translation": "محصولات، نښې، یا کټګورۍ وپلټئ"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Pashto",
+      "translation": "هیڅ پایلې ونه موندل شوې"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Pashto",
+      "translation": "لټون..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Pashto",
+      "translation": "پایلې"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Pashto",
+      "translation": "زموږ سره خبرې وکړئ"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Pashto",
+      "translation": "خپل پیغام ولیکئ..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Pashto",
+      "translation": "ولېږئ"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Pashto",
+      "translation": "تړل"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Pashto",
+      "translation": "سلام! نن څنګه ستاسو سره مرسته کولی شم؟"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Pashto",
+      "translation": "بخښنه غواړم، زه دا نه پوهېدم. مهرباني وکړئ بیا یې ولیکئ؟"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Pashto",
+      "translation": "زه کولی شم ستاسو سره د محصول معلوماتو، فرمایشونو، یا عمومي پوښتنو کې مرسته وکړم. تاسو څه پوهیدل غواړئ؟"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Pashto",
+      "translation": "د نورو مرستو لپاره، مهرباني وکړئ موږ سره په support@harvics.com اړیکه ونیسئ یا +1-800-HARVICS ته زنګ ووهئ."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Pashto",
+      "translation": "زموږ سره خبرې وکړئ"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Pashto",
+      "translation": "بارول کیږي..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Pashto",
+      "translation": "تېروتنه"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Pashto",
+      "translation": "بریالیتوب"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Pashto",
+      "translation": "خوندي کړئ"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Pashto",
+      "translation": "لغوه کول"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Pashto",
+      "translation": "ړنګول"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Pashto",
+      "translation": "سمون"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Pashto",
+      "translation": "لید"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Pashto",
+      "translation": "سپارل"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Pashto",
+      "translation": "د لټون"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Pashto",
+      "translation": "فلټر"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Pashto",
+      "translation": "روښانه"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Pashto",
+      "translation": "ډاونلوډ کړئ"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Pashto",
+      "translation": "پورته کول"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Pashto",
+      "translation": "هو"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Pashto",
+      "translation": "نه"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Pashto",
+      "translation": "تړل"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Pashto",
+      "translation": "شاته"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Pashto",
+      "translation": "بل"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Pashto",
+      "translation": "مخکینی"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Pashto",
+      "translation": "کړنې"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Pashto",
+      "translation": "وضعیت"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Pashto",
+      "translation": "نیټه"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Pashto",
+      "translation": "نوم"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Pashto",
+      "translation": "استول"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Pashto",
+      "translation": "تلیفون"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Pashto",
+      "translation": "پته"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Pashto",
+      "translation": "هیواد"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Pashto",
+      "translation": "ښار"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Pashto",
+      "translation": "ټول"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Pashto",
+      "translation": "هیڅ نه"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Pashto",
+      "translation": "غوره کړئ"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Pashto",
+      "translation": "ژبه غوره کړه"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Pashto",
+      "translation": "هیواد غوره کړئ"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Pashto",
+      "translation": "نور ښکاره کړئ"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Pashto",
+      "translation": "لږ وښایاست"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Pashto",
+      "translation": "اړین دی"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Pashto",
+      "translation": "مینو"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Pashto",
+      "translation": "محصولات وګورئ"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Pashto",
+      "translation": "موسيقي غږول"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Pashto",
+      "translation": "موسيقي ودروئ"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Pashto",
+      "translation": "موسیقي خاموشه کړئ"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Pashto",
+      "translation": "موسیقي غیر غږ کړئ"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Pashto",
+      "translation": "زموږ نړیواله لاسرسی"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Pashto",
+      "translation": "له هغه وخته"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Pashto",
+      "translation": "لوی بازار"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Pashto",
+      "translation": "لوی بازارونه"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Pashto",
+      "translation": "شتون"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Pashto",
+      "translation": "هغه هیوادونه چې خدمت کوي"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Pashto",
+      "translation": "لوی بازارونه"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Pashto",
+      "translation": "د محصول کټګورۍ"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Pashto",
+      "translation": "تاسیس شو"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Pashto",
+      "translation": "د سیمې مراتب"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Pashto",
+      "translation": "بشپړه لاره"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Pashto",
+      "translation": "اوسنی سیمه"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Pashto",
+      "translation": "هیڅ توکي نشته"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Pashto",
+      "translation": "ګلوب"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Pashto",
+      "translation": "براعظم"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Pashto",
+      "translation": "سیمه"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Pashto",
+      "translation": "هیواد"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Pashto",
+      "translation": "ښار"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Pashto",
+      "translation": "ولسوالي"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Pashto",
+      "translation": "ځای"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Pashto",
+      "translation": "هارویکس ګلوبل"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Pashto",
+      "translation": "نړیوال"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Pashto",
+      "translation": "سیمه غوره کړئ"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Pashto",
+      "translation": "د پیرودونکو توضیحات"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Pashto",
+      "translation": "غوره شوی"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Pashto",
+      "translation": "بشپړ نوم"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Pashto",
+      "translation": "خپل بشپړ نوم ولیکئ"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Pashto",
+      "translation": "نوم اړین دی"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Pashto",
+      "translation": "بریښنا‌لیک"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Pashto",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Pashto",
+      "translation": "برېښنالیک اړین دی"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Pashto",
+      "translation": "مهرباني وکړئ یو باوري برېښنالیک پته دننه کړئ"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Pashto",
+      "translation": "د تلیفون شمیره"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Pashto",
+      "translation": "+۱ ۲۳۴ ۵۶۷ ۸۹۰۰"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Pashto",
+      "translation": "د تلیفون شمیره اړینه ده"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Pashto",
+      "translation": "پته"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Pashto",
+      "translation": "ستاسو پته"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Pashto",
+      "translation": "پته اړینه ده"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Pashto",
+      "translation": "زه موافق یم چې د بازار موندنې اړیکې او تازه معلومات ترلاسه کړم"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Pashto",
+      "translation": "وسپارئ او دوام ورکړئ"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Pashto",
+      "translation": "سپارل..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Pashto",
+      "translation": "پریږدئ او دوام ورکړئ"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Pashto",
+      "translation": "د فعالیت کلیدي شاخصونه"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Pashto",
+      "translation": "نن ورځ امرونه"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Pashto",
+      "translation": "د هارویکس CRM له لارې سپارل شوی"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Pashto",
+      "translation": "د سپارلو انتظار"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Pashto",
+      "translation": "په ټاکل شویو لارو کې"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Pashto",
+      "translation": "پرچون پلورونکي"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Pashto",
+      "translation": "په ساحه کې فعالې رسنۍ"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Pashto",
+      "translation": "د T & A نمره"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Pashto",
+      "translation": "د سیمې پوښښ"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Pashto",
+      "translation": "مالي او انوینټري"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Pashto",
+      "translation": "ټیټ سټاک SKUs"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Pashto",
+      "translation": "د بیا ډکولو محرک"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Pashto",
+      "translation": "پاتې رسیدونه"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Pashto",
+      "translation": "د راټولولو لپاره پاتې دي"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Pashto",
+      "translation": "د کریډیټ حد"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Pashto",
+      "translation": "د مالي چارو لخوا ټاکل شوی"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Pashto",
+      "translation": "اتوماتیک تصویب، د سټاک بیا ډکول، او د رسید یادښتونه فعال شوي دي"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Pashto",
+      "translation": "ځان تاییدول"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Pashto",
+      "translation": "د سټاک بیا ډکول"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Pashto",
+      "translation": "د بل یادونې"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Pashto",
+      "translation": "د مصنوعي ذهانت سپارښتنې"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Pashto",
+      "translation": "د خطر کچه"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Pashto",
+      "translation": "د کریډیټ کارولو او تادیې تاریخ پراساس"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Pashto",
+      "translation": "وړاندیز شوی امر"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Pashto",
+      "translation": "د آرډر کولو لپاره د AI لخوا وړاندیز شوي SKUs"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Pashto",
+      "translation": "راتلونکی عمل"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Pashto",
+      "translation": "کړنې او لارښوونې"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Pashto",
+      "translation": "شکایتونه"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Pashto",
+      "translation": "د پرچون پلورونکو ستونزې چې د عمل په تمه دي"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Pashto",
+      "translation": "د لوبو کتاب"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Pashto",
+      "translation": "له غرمې مخکې د تحویلۍ انتظار ته لومړیتوب ورکړئ."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Pashto",
+      "translation": "ټول پاتې شکایتونه په ۴۸ ساعتونو کې بند کړئ."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Pashto",
+      "translation": "د ټیټ سټاک SKUs لپاره د بیا ډکولو پیل (د PO اتومات جوړول)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Pashto",
+      "translation": "سیمه"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Pashto",
+      "translation": "په دې میاشت کې امرونه"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Pashto",
+      "translation": "د انتظار امرونه"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Pashto",
+      "translation": "سپارل شوي امرونه"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Pashto",
+      "translation": "د سیمې معلومات"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Pashto",
+      "translation": "هیواد"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Pashto",
+      "translation": "ښار"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Pashto",
+      "translation": "سیمه"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Pashto",
+      "translation": "چټک اقدامات"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Pashto",
+      "translation": "نوی امر"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Pashto",
+      "translation": "امرونه وګورئ"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Pashto",
+      "translation": "بلونه وګورئ"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Pashto",
+      "translation": "د پروفایل ترتیبات"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Pashto",
+      "translation": "ډشبورډ پورته کیږي..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Pashto",
+      "translation": "تېروتنه"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Pashto",
+      "translation": "زما امرونه"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Pashto",
+      "translation": "د امر ID"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Pashto",
+      "translation": "نیټه"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Pashto",
+      "translation": "وضعیت"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Pashto",
+      "translation": "توکي"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Pashto",
+      "translation": "ټول مقدار"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Pashto",
+      "translation": "کړنې"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Pashto",
+      "translation": "په بشپړه توګه کتل"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Pashto",
+      "translation": "وضعیت"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Pashto",
+      "translation": "د پیل نیټه"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Pashto",
+      "translation": "د پای نیټه"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Pashto",
+      "translation": "ټول حالتونه"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Pashto",
+      "translation": "فلټرونه پاک کړئ"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Pashto",
+      "translation": "په تمه"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Pashto",
+      "translation": "پروسس کول"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Pashto",
+      "translation": "سپارل شوی"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Pashto",
+      "translation": "لغوه شوی"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Pashto",
+      "translation": "هیڅ امر ونه موندل شو"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Pashto",
+      "translation": "امرونه بارېږي..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Pashto",
+      "translation": "پاڼه"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Pashto",
+      "translation": "د"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Pashto",
+      "translation": "مخکینی"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Pashto",
+      "translation": "بل"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Pashto",
+      "translation": "د امر جزئیات"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Pashto",
+      "translation": "بیرته امرونو ته"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Pashto",
+      "translation": "د امر ID"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Pashto",
+      "translation": "وضعیت"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Pashto",
+      "translation": "د امر نیټه"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Pashto",
+      "translation": "د سپارلو نیټه"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Pashto",
+      "translation": "د سپارلو پته"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Pashto",
+      "translation": "یادښتونه"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Pashto",
+      "translation": "توکي امر کړئ"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Pashto",
+      "translation": "د محصول"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Pashto",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Pashto",
+      "translation": "مقدار"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Pashto",
+      "translation": "د واحد قیمت"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Pashto",
+      "translation": "ټول"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Pashto",
+      "translation": "ټول مقدار"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Pashto",
+      "translation": "د حالت مهال ویش"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Pashto",
+      "translation": "امر ونه موندل شو"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Pashto",
+      "translation": "نوی امر جوړ کړئ"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Pashto",
+      "translation": "توکي امر کړئ"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Pashto",
+      "translation": "توکي اضافه کړئ"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Pashto",
+      "translation": "تر اوسه کوم توکي نه دي اضافه شوي. د پیل کولو لپاره \"توکي اضافه کړئ\" کلیک وکړئ."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Pashto",
+      "translation": "د امر جزئیات"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Pashto",
+      "translation": "د سپارلو نیټه"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Pashto",
+      "translation": "د سپارلو پته"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Pashto",
+      "translation": "یادښتونه"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Pashto",
+      "translation": "ټول مقدار"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Pashto",
+      "translation": "امر جوړ کړئ"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Pashto",
+      "translation": "امر جوړول..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Pashto",
+      "translation": "لغوه کول"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Pashto",
+      "translation": "محصول غوره کړئ"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Pashto",
+      "translation": "د محصول"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Pashto",
+      "translation": "مقدار"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Pashto",
+      "translation": "د واحد قیمت"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Pashto",
+      "translation": "لرې کړئ"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Pashto",
+      "translation": "فرعي ټولګه"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Pashto",
+      "translation": "د امر ID"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Pashto",
+      "translation": "لږ تر لږه د امر یو توکي اړین دی"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Pashto",
+      "translation": "محصول اړین دی"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Pashto",
+      "translation": "مقدار باید له صفر څخه زیات وي"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Pashto",
+      "translation": "د واحد قیمت باید غیر منفي وي"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Pashto",
+      "translation": "د سپارلو نیټې ناسمه بڼه"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Pashto",
+      "translation": "د سپارلو نیټه په تیرو وختونو کې نشي کیدی"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Pashto",
+      "translation": "زما بلونه"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Pashto",
+      "translation": "د بل شمیره"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Pashto",
+      "translation": "د بل نیټه"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Pashto",
+      "translation": "دوه نیټې"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Pashto",
+      "translation": "اندازه"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Pashto",
+      "translation": "ورکړل شوې اندازه"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Pashto",
+      "translation": "د تادیې حالت"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Pashto",
+      "translation": "د تادیې حالت"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Pashto",
+      "translation": "ټول حالتونه"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Pashto",
+      "translation": "فلټرونه پاک کړئ"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Pashto",
+      "translation": "ورکړل شوی"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Pashto",
+      "translation": "بې معاشه"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Pashto",
+      "translation": "جزوي"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Pashto",
+      "translation": "هیڅ بل ونه موندل شو"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Pashto",
+      "translation": "بلونه پورته کېږي..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Pashto",
+      "translation": "زما پروفایل"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Pashto",
+      "translation": "د حساب معلومات"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Pashto",
+      "translation": "د توزیع کونکي ID"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Pashto",
+      "translation": "سیمه"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Pashto",
+      "translation": "هیواد"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Pashto",
+      "translation": "ښار"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Pashto",
+      "translation": "حساب جوړ شو"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Pashto",
+      "translation": "پروفایل تازه کړئ"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Pashto",
+      "translation": "نوم"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Pashto",
+      "translation": "استول"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Pashto",
+      "translation": "تلیفون"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Pashto",
+      "translation": "پته"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Pashto",
+      "translation": "ژبه"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Pashto",
+      "translation": "د اسعارو"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Pashto",
+      "translation": "بدلونونه خوندي کړئ"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Pashto",
+      "translation": "خوندي کول..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Pashto",
+      "translation": "پروفایل په بریالیتوب سره تازه شو"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Pashto",
+      "translation": "پروفایل پورته کیږي..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Pashto",
+      "translation": "د برېښنالیک ناسمه بڼه"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Pashto",
+      "translation": "د تلیفون ناسمه بڼه"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Pashto",
+      "translation": "تېروتنه"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Pashto",
+      "translation": "بارول کیږي..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Pashto",
+      "translation": "خوندي کړئ"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Pashto",
+      "translation": "لغوه کول"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Pashto",
+      "translation": "شاته"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Pashto",
+      "translation": "سپارل"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Pashto",
+      "translation": "ړنګول"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Pashto",
+      "translation": "سمون"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Pashto",
+      "translation": "لید"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Pashto",
+      "translation": "د لټون"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Pashto",
+      "translation": "فلټر"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Pashto",
+      "translation": "روښانه"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Pashto",
+      "translation": "درخواست وکړئ"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Pashto",
+      "translation": "تړل"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Pashto",
+      "translation": "تایید کړئ"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Pashto",
+      "translation": "هو"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Pashto",
+      "translation": "نه"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Pashto",
+      "translation": "قانوني عملیاتي سیسټم"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Pashto",
+      "translation": "قانوني عملیاتي سیسټم"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Pashto",
+      "translation": "لاسرسی رد شو"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Pashto",
+      "translation": "تاسو د قانوني OS ماډل ته د لاسرسي اجازه نلرئ."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Pashto",
+      "translation": "ډشبورډ"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Pashto",
+      "translation": "قراردادونه"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Pashto",
+      "translation": "سندونه"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Pashto",
+      "translation": "اطاعت"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Pashto",
+      "translation": "قانوني ډشبورډ"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Pashto",
+      "translation": "د قانوني عملیاتو او د اطاعت حالت عمومي کتنه"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Pashto",
+      "translation": "فعال سوداګریزې نښې"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Pashto",
+      "translation": "فعال قراردادونه"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Pashto",
+      "translation": "د اطاعت حالت"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Pashto",
+      "translation": "سوداګریزې نښې"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Pashto",
+      "translation": "د سوداګریزې نښې ثبتونه او غوښتنلیکونه اداره کړئ"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Pashto",
+      "translation": "نوی سوداګریز نښه اضافه کړئ"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Pashto",
+      "translation": "هیواد"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Pashto",
+      "translation": "وضعیت"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Pashto",
+      "translation": "ټول هیوادونه"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Pashto",
+      "translation": "ټول حالتونه"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Pashto",
+      "translation": "فلټرونه پاک کړئ"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Pashto",
+      "translation": "د برانډ نوم"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Pashto",
+      "translation": "ټولګی"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Pashto",
+      "translation": "هیواد"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Pashto",
+      "translation": "د غوښتنلیک شمیره"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Pashto",
+      "translation": "وضعیت"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Pashto",
+      "translation": "د پای نیټه"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Pashto",
+      "translation": "کړنې"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Pashto",
+      "translation": "سوداګریز نښه سمول"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Pashto",
+      "translation": "نوی سوداګریز نښه اضافه کړئ"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Pashto",
+      "translation": "سوداګریز نښه وګورئ"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Pashto",
+      "translation": "د برانډ نوم"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Pashto",
+      "translation": "د ټولګي شمېره"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Pashto",
+      "translation": "هیواد"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Pashto",
+      "translation": "د غوښتنلیک شمیره"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Pashto",
+      "translation": "وضعیت"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Pashto",
+      "translation": "د پای نیټه"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Pashto",
+      "translation": "اسناد"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Pashto",
+      "translation": "هیڅ سندونه ضمیمه نه دي"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Pashto",
+      "translation": "سند اضافه کړئ"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Pashto",
+      "translation": "لرې کړئ"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Pashto",
+      "translation": "د سوداګریزو نښو بارولو کې پاتې راغلل"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Pashto",
+      "translation": "د سوداګریزې نښې خوندي کولو کې پاتې راغی. مهرباني وکړئ بیا هڅه وکړئ."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Pashto",
+      "translation": "قانوني قضیې"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Pashto",
+      "translation": "قانوني قضیې اداره کړئ او د هغوی حالت تعقیب کړئ"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Pashto",
+      "translation": "نوې قضیه"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Pashto",
+      "translation": "د قضیې سرلیک"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Pashto",
+      "translation": "د قضیې ډول"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Pashto",
+      "translation": "هیواد"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Pashto",
+      "translation": "تفصیل"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Pashto",
+      "translation": "ټاکل شوی"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Pashto",
+      "translation": "وضعیت"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Pashto",
+      "translation": "د اورېدنې نیټه"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Pashto",
+      "translation": "د قضیې سرلیک"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Pashto",
+      "translation": "ډول"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Pashto",
+      "translation": "هیواد"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Pashto",
+      "translation": "ټاکل شوی"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Pashto",
+      "translation": "وضعیت"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Pashto",
+      "translation": "د اورېدنې نیټه"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Pashto",
+      "translation": "کړنې"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Pashto",
+      "translation": "خلاص"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Pashto",
+      "translation": "د پرمختګ په حال کې"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Pashto",
+      "translation": "تړل شوی"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Pashto",
+      "translation": "لغوه شوی"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Pashto",
+      "translation": "د بیړۍ نقشه لید"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Pashto",
+      "translation": "د پلور افسرانو او تحویلي موټرو ریښتیني وخت تعقیب"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Pashto",
+      "translation": "فعال کارمندان"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Pashto",
+      "translation": "فعال کارمندان نشته"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Pashto",
+      "translation": "بارول کیږي..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Pashto",
+      "translation": "د لارې بیا غږول"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Pashto",
+      "translation": "کارمند"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Pashto",
+      "translation": "سرعت"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Pashto",
+      "translation": "بیا تنظیمول"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Pashto",
+      "translation": "لوبه وکړئ"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Pashto",
+      "translation": "وقفه"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Pashto",
+      "translation": "ټکي"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Pashto",
+      "translation": "د لارې معلومات نشته"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Pashto",
+      "translation": "لاره پورته کېږي..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Pashto",
+      "translation": "د سیالي محصولات"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Pashto",
+      "translation": "د سیالي کونکي محصول معلومات تعقیب کړئ"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Pashto",
+      "translation": "محصول اضافه کړئ"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Pashto",
+      "translation": "د سیالي کونکي محصول اضافه کړئ"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Pashto",
+      "translation": "برانډ"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Pashto",
+      "translation": "د SKU نوم"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Pashto",
+      "translation": "کټګوري"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Pashto",
+      "translation": "اندازه"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Pashto",
+      "translation": "د بیې"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Pashto",
+      "translation": "د اسعارو"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Pashto",
+      "translation": "هیواد"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Pashto",
+      "translation": "برانډ"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Pashto",
+      "translation": "د SKU نوم"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Pashto",
+      "translation": "کټګوري"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Pashto",
+      "translation": "اندازه"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Pashto",
+      "translation": "د بیې"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Pashto",
+      "translation": "هیواد"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Pashto",
+      "translation": "د اضافه کولو نیټه"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Pashto",
+      "translation": "د محصولاتو بارولو کې پاتې راغلل"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Pashto",
+      "translation": "د محصول په جوړولو کې پاتې راغی. مهرباني وکړئ بیا هڅه وکړئ."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Pashto",
+      "translation": "د سیالانو کوم محصول ونه موندل شو"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Pashto",
+      "translation": "محصولات بارول..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Pashto",
+      "translation": "د سیالي کونکي ډشبورډ"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Pashto",
+      "translation": "د سیالي کونکو محصولاتو په اړه تحلیلونه او بصیرتونه"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Pashto",
+      "translation": "ټول محصولات"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Pashto",
+      "translation": "برانډونه تعقیب شوي"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Pashto",
+      "translation": "هېوادونه"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Pashto",
+      "translation": "کټګورۍ"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Pashto",
+      "translation": "محصولات د برانډ له مخې"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Pashto",
+      "translation": "د هیواد له مخې محصولات"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Pashto",
+      "translation": "محصولات د کټګورۍ له مخې"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Pashto",
+      "translation": "احصایې بارېږي..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Pashto",
+      "translation": "هیڅ احصایه شتون نلري"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Pashto",
+      "translation": "عمومي کتنه"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Pashto",
+      "translation": "امرونه"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Pashto",
+      "translation": "انوینټري"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Pashto",
+      "translation": "لوژستیک"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Pashto",
+      "translation": "اقتصاد"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Pashto",
+      "translation": "د سي آر ایم"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Pashto",
+      "translation": "د بشري سرچینو څانګه"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Pashto",
+      "translation": "اجرایوي"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Pashto",
+      "translation": "پانګوال"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Pashto",
+      "translation": "قانوني/معلوماتي ملکیت (IPR)"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Pashto",
+      "translation": "سیالي کوونکی"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Pashto",
+      "translation": "واردول/صادرول"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Pashto",
+      "translation": "د GPS تعقیب"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Pashto",
+      "translation": "ځایي کول"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Pashto",
+      "translation": "کاري جریانونه"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Pashto",
+      "translation": "اډمین"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Pashto",
+      "translation": "د CRM عملیاتي سیسټم"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Pashto",
+      "translation": "پېرېدونکی ۳۶۰"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Pashto",
+      "translation": "د پیرودونکو بشپړ پروفایلونه، د تعامل تاریخ، او د اړیکو مدیریت"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Pashto",
+      "translation": "ډیجیټل کمپاینونه"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Pashto",
+      "translation": "د څو چینلونو بازار موندنې کمپاینونه (IG، FB، TikTok، WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Pashto",
+      "translation": "مخکښان او فرصتونه"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Pashto",
+      "translation": "د رهبرۍ مدیریت، وړتیا، او د فرصتونو پایپ لاین"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Pashto",
+      "translation": "د پیرودونکو ملاتړ"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Pashto",
+      "translation": "د ټکټ مدیریت، د پیرودونکو خدمت، او د ستونزې حل"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Pashto",
+      "translation": "د وفادارۍ پروګرامونه"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Pashto",
+      "translation": "د پرچون پلورونکي وفاداري، لوبې کول، او د انعامونو مدیریت"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Pashto",
+      "translation": "پېرېدونکی ۳۶۰"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Pashto",
+      "translation": "نوی پیرودونکی"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Pashto",
+      "translation": "ټول پیرودونکي"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Pashto",
+      "translation": "فعال"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Pashto",
+      "translation": "نوی"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Pashto",
+      "translation": "رضایت"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Pashto",
+      "translation": "د پیرودونکو مدیریت"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Pashto",
+      "translation": "د خپلو پیرودونکو اړیکې، تعاملات، او کمپاینونه وګورئ او اداره کړئ."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Pashto",
+      "translation": "بارول کیږي..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Pashto",
+      "translation": "د CRM معلوماتو بارولو کې تېروتنه"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Pashto",
+      "translation": "عمومي کتنه"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Pashto",
+      "translation": "امرونه"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Pashto",
+      "translation": "انوینټري"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Pashto",
+      "translation": "لوژستیک"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Pashto",
+      "translation": "اقتصاد"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Pashto",
+      "translation": "د سي آر ایم"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Pashto",
+      "translation": "د بشري سرچینو څانګه"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Pashto",
+      "translation": "اجرایوي"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Pashto",
+      "translation": "پانګوال"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Pashto",
+      "translation": "قانوني/معلوماتي ملکیت (IPR)"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Pashto",
+      "translation": "سیالي کوونکی"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Pashto",
+      "translation": "واردول/صادرول"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Pashto",
+      "translation": "د GPS تعقیب"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Pashto",
+      "translation": "ځایي کول"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Pashto",
+      "translation": "کاري جریانونه"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Pashto",
+      "translation": "اډمین"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Pashto",
+      "translation": "پیرودونکي"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Pashto",
+      "translation": "کارکوونکي"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Pashto",
+      "translation": "ګټه"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Pashto",
+      "translation": "د عرضه کوونکي کاکپیټ بارول…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Pashto",
+      "translation": "د پیرود امرونه"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Pashto",
+      "translation": "د هارویکس لخوا راپورته شوی"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Pashto",
+      "translation": "بار وړل / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Pashto",
+      "translation": "په دې اونۍ کې ومنل شو"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Pashto",
+      "translation": "انوائسونه جوړ شول"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Pashto",
+      "translation": "د تادیې په تمه"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Pashto",
+      "translation": "تادیات په تمه دي"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Pashto",
+      "translation": "د خپریدو لپاره مهالویش شوی"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Pashto",
+      "translation": "کیفیت / شکایتونه"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Pashto",
+      "translation": "ټکټونه خلاص کړئ"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Pashto",
+      "translation": "وړاندوینه (راتلونکې څلور اونۍ)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Pashto",
+      "translation": "د AI ځای ساتونکی"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Pashto",
+      "translation": "د عرضه کوونکي کړنې"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Pashto",
+      "translation": "د راتلونکو بار وړلو تایید وکړئ او د GRN مهالویش تازه کړئ."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Pashto",
+      "translation": "د پاتې رسیدونو بیاکتنه وکړئ او د تادیې مشوره شریک کړئ."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Pashto",
+      "translation": "د کیفیت د ډاډ شواهدو سره د خلاص کیفیت شکایتونه حل کړئ."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Pashto",
+      "translation": "کارن نوم"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Pashto",
+      "translation": "رمز"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Pashto",
+      "translation": "استول"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Pashto",
+      "translation": "سپارل"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Pashto",
+      "translation": "لغوه کول"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Pashto",
+      "translation": "خوندي کړئ"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Pashto",
+      "translation": "ړنګول"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Pashto",
+      "translation": "د لټون"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Pashto",
+      "translation": "فلټر"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Pashto",
+      "translation": "بیا تنظیمول"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Pashto",
+      "translation": "تړل"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Pashto",
+      "translation": "شاته"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Pashto",
+      "translation": "بل"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Pashto",
+      "translation": "مخکینی"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Pashto",
+      "translation": "تایید کړئ"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Pashto",
+      "translation": "ما په یاد ولره"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Pashto",
+      "translation": "خپل پټ نوم درڅخه هیر دی؟"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Pashto",
+      "translation": "برېښنالیک اړین دی"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Pashto",
+      "translation": "مهرباني وکړئ یو باوري برېښنالیک پته دننه کړئ"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Pashto",
+      "translation": "محصولات"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Pashto",
+      "translation": "هارویکس کوم محصولات وړاندې کوي؟"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Pashto",
+      "translation": "موږ د پریمیم خوراکي محصولاتو پراخه لړۍ وړاندې کوو پشمول د کنفیکشنري، مشروباتو، ناشتو، پاستا، بیکري توکو، او منجمد خواړو په ډیری کټګوریو کې."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Pashto",
+      "translation": "د هارویکس محصولات چیرته اخیستلی شم؟"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Pashto",
+      "translation": "زموږ محصولات په ۴۰+ هیوادونو کې په پرچون پلورنځیو کې شتون لري. زموږ د پلورنځي لوکیټر یا د اړیکې پاڼې څخه کار واخلئ ترڅو خپل نږدې پرچون پلورونکی ومومئ."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Pashto",
+      "translation": "آیا تاسو په لویه کچه امر ورکوئ؟"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Pashto",
+      "translation": "هو، موږ د سوداګرۍ او پرچون پلورونکو لپاره د لویو امرونو تخفیفونه وړاندې کوو. د نورو معلوماتو لپاره زموږ د لویو امرونو تخفیفونو پاڼې ته مراجعه وکړئ."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Pashto",
+      "translation": "امرونه او لېږدول"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Pashto",
+      "translation": "ستاسو د بار وړلو انتخابونه کوم دي؟"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Pashto",
+      "translation": "موږ د بار وړلو مختلف انتخابونه وړاندې کوو په شمول د معیاري، ایکسپریس او نړیوال بار وړلو. د ۵۰ ډالرو څخه زیاتو امرونو لپاره وړیا بار وړل شتون لري."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Pashto",
+      "translation": "تحویلي څومره وخت نیسي؟"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Pashto",
+      "translation": "د سپارلو وختونه د موقعیت له مخې توپیر لري. معیاري لېږد معمولا ۵-۷ کاري ورځې وخت نیسي، پداسې حال کې چې ایکسپریس لېږد ۲-۳ کاري ورځې وخت نیسي."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Pashto",
+      "translation": "ایا زه کولی شم خپل امر تعقیب کړم؟"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Pashto",
+      "translation": "هو، تاسو کولی شئ خپل امر د هغه تعقیب شمیرې په کارولو سره تعقیب کړئ چې ستاسو د امر تایید بریښنالیک کې چمتو شوی."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Pashto",
+      "translation": "حساب او تادیات"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Pashto",
+      "translation": "څنګه حساب جوړ کړم؟"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Pashto",
+      "translation": "په سرلیک کې \"ننوتل\" باندې کلیک وکړئ او د نوي حساب لپاره راجستر کولو لپاره \"حساب جوړ کړئ\" غوره کړئ."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Pashto",
+      "translation": "تاسو د تادیې کومې طریقې منئ؟"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Pashto",
+      "translation": "موږ د B2B امرونو لپاره ټول لوی کریډیټ کارتونه، ډیبټ کارتونه، PayPal، او بانکي لیږدونه منو."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Pashto",
+      "translation": "ایا زما د تادیې معلومات خوندي دي؟"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Pashto",
+      "translation": "هو، موږ ستاسو د تادیې معلوماتو د ساتنې لپاره د صنعت معیاري کوډ کولو څخه کار اخلو."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Pashto",
+      "translation": "بیرته ستنیدل او بیرته ستنیدل"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Pashto",
+      "translation": "ستاسو د بیرته ستنیدو پالیسي څه ده؟"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Pashto",
+      "translation": "موږ د هغو محصولاتو لپاره چې په اصلي بسته بندۍ کې نه خلاص شوي وي د 30 ورځو بیرته راستنیدو پالیسي وړاندې کوو. مهرباني وکړئ د بیرته راستنیدو اجازه لپاره زموږ د پیرودونکي خدماتو سره اړیکه ونیسئ."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Pashto",
+      "translation": "زه څنګه د بیرته ورکولو غوښتنه وکړم؟"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Pashto",
+      "translation": "زموږ د پیرودونکو خدماتو ټیم سره د خپل امر شمیره او د بیرته ستنیدو دلیل سره اړیکه ونیسئ. موږ به ستاسو بیرته ستنیدنه د 5-7 کاري ورځو دننه پروسس کړو."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Pashto",
+      "translation": "اوس هم پوښتنې لرئ؟"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Pashto",
+      "translation": "زموږ د پیرودونکو خدماتو ټیم دلته د مرستې لپاره دی"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Pashto",
+      "translation": "موږ سره اړیکه ونیسئ"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Pashto",
+      "translation": "مسلکونه"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Pashto",
+      "translation": "مسلکونه | هارویکس"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Pashto",
+      "translation": "د هارویکس ګلوبل وینچرز سره یوځای شئ — په 40+ هیوادونو کې فرصتونه وپلټئ."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Pashto",
+      "translation": "مونږ سره یو ځای شئ"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Pashto",
+      "translation": "د نړیوالې سوداګرۍ راتلونکې جوړه کړئ"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Pashto",
+      "translation": "موږ په ۴۰+ هیوادونو کې وده کوو. د هغه ټیم سره یوځای شئ چې د نړیوال سوداګرۍ لپاره د مصنوعي ذهانت په واسطه چلیز سیسټم جوړوي."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Pashto",
+      "translation": "خلاص پوستونه"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Pashto",
+      "translation": "هېوادونه"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Pashto",
+      "translation": "د صنعت عمودی"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Pashto",
+      "translation": "د څانګو ګمارنه"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Pashto",
+      "translation": "د څانګې له مخې خلاص پوستونه"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Pashto",
+      "translation": "خرڅلاو او ویش"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Pashto",
+      "translation": "په ۴۰+ بازارونو کې عاید زیات کړئ. د سیمې مدیریت، کلیدي حسابونه، د توزیع کونکو اړیکې."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Pashto",
+      "translation": "د اکمالاتو سلسله او لوژستیک"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Pashto",
+      "translation": "له فابریکې څخه تر المارۍ پورې د اکمالاتو لړۍ پای ته رسیږي. د بیړیو مدیریت، ګودام، د وروستي مایل تحویلي."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Pashto",
+      "translation": "ټیکنالوژي او مصنوعي ذهانت"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Pashto",
+      "translation": "د هارویکس عملیاتي سیسټم جوړ کړئ — زموږ د مصنوعي ذهانت په واسطه چلېدونکی تصدۍ پلیټ فارم. بشپړ سټیک، د ML انجینرۍ، د معلوماتو ساینس."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Pashto",
+      "translation": "مالي او خزانه"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Pashto",
+      "translation": "د څو اسعارو خزانه، سوداګریز مالي چارې، د HPay ډیجیټل تادیات، په ټولو سیمو کې د FX مدیریت."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Pashto",
+      "translation": "تدارکات او سرچینه اخیستل"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Pashto",
+      "translation": "د ۱۵+ اصلي هیوادونو څخه نړیوال سرچینه. د عرضه کونکو پلټنې، د کیفیت کنټرول، د فابریکې مستقیم پروګرامونه."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Pashto",
+      "translation": "بشري سرچینې"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Pashto",
+      "translation": "د استعدادونو ترلاسه کول، L&D، په مختلفو جغرافیایي او کلتوري سیمو کې د فعالیت مدیریت."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Pashto",
+      "translation": "قانوني او اطاعت"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Pashto",
+      "translation": "د سوداګرۍ اطاعت، د بندیزونو معاینه کول، د IP ساتنه، د قضایي قوې په اوږدو کې د قرارداد مدیریت."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Pashto",
+      "translation": "بازار موندنه او برانډ"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Pashto",
+      "translation": "د څو ژبو کمپاینونه، ۳۸ ځایي محتوا، ډیجیټل بازار موندنه، د ۱۰ عمودی برخو لپاره د برانډ ستراتیژي."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Pashto",
+      "translation": "رولونه"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Pashto",
+      "translation": "ولې هارویکس"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Pashto",
+      "translation": "نړیوال خوځښت"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Pashto",
+      "translation": "په دوبۍ، لندن، کراچۍ، لاهور، او له ۴۰ څخه زیاتو بازارونو کې کار وکړئ"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Pashto",
+      "translation": "د ودې لار"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Pashto",
+      "translation": "په یوه پراخه تصدۍ کې د مسلکي پرمختګ چټکتیا"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Pashto",
+      "translation": "د مصنوعي ذهانت لومړی کلتور"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Pashto",
+      "translation": "د عصري مصنوعي ذهانت او ریښتیني وخت استخباراتي سیسټمونو سره کار وکړئ"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Pashto",
+      "translation": "سیالي کېدونکې بسته"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Pashto",
+      "translation": "د بازار مخکښ خساره، کور، او ګټې"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Pashto",
+      "translation": "د زده کړې بودیجه"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Pashto",
+      "translation": "د کورسونو، کنفرانسونو او تصدیقونو لپاره کلنۍ پراختیایي بودیجه"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Pashto",
+      "translation": "انعطاف منونکی کار"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Pashto",
+      "translation": "په ټوله نړۍ کې د سیمه ایزو مرکزونو دفترونو سره هایبرډ ترتیبات"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Pashto",
+      "translation": "زموږ ستراتیژي"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Pashto",
+      "translation": "ستراتیژي | هارویچ"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Pashto",
+      "translation": "د نوښت او غوره والي له لارې د دوامداره راتلونکي جوړول"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Pashto",
+      "translation": "د نوښت او غوره والي له لارې د دوامداره راتلونکي جوړول"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Pashto",
+      "translation": "نړیوال پراختیا"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Pashto",
+      "translation": "په مخ پر ودې بازارونو کې زموږ د شتون پراخول پداسې حال کې چې په تاسیس شویو بازارونو کې زموږ دریځ پیاوړی کول"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Pashto",
+      "translation": "د محصول نوښت"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Pashto",
+      "translation": "په R&D کې پانګونه کول ترڅو نوي محصولات رامینځته کړي چې د مخ پر ودې مصرف کونکو غوره توبونو سره سمون ولري"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Pashto",
+      "translation": "دوام"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Pashto",
+      "translation": "زموږ د اکمالاتي لړۍ او عملیاتو په اوږدو کې دوامداره کړنو ته ژمن یو"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Pashto",
+      "translation": "ډیجیټل بدلون"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Pashto",
+      "translation": "د پیرودونکو تجربې او عملیاتي موثریت لوړولو لپاره د ټیکنالوژۍ کارول"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Pashto",
+      "translation": "زموږ لید"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Pashto",
+      "translation": "د نړۍ د مخکښ پریمیم مصرفي توکو شرکت کیدو لپاره، چې د کیفیت، نوښت او پایښت لپاره پیژندل شوی وي."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Pashto",
+      "translation": "هارویکس ګلوبل وینچرز | پریمیم ګلوبل ټریډینګ"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Pashto",
+      "translation": "مخکښ نړیوال سوداګریز شرکت چې په ۱۰+ صنعتونو کې غوره محصولات وړاندې کوي. له ۲۰۱۹ کال راهیسې په ۵۰+ هیوادونو کې فعالیت کوي."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Pashto",
+      "translation": "زموږ په اړه | هارویکس ګلوبل وینچرز"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Pashto",
+      "translation": "ومومئ چې څنګه هارویکس ګلوبل وینچرز په 40+ هیوادونو او 10 صنعتونو کې په نړیواله سوداګرۍ کې مخکښ ځواک شو."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Pashto",
+      "translation": "موږ سره اړیکه ونیسئ | هارویکس ګلوبل وینچرز"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Pashto",
+      "translation": "په ټوله نړۍ کې په منځني ختیځ، سویلي آسیا، اروپا، افریقا او امریکا کې د هارویکس دفترونو سره اړیکه ونیسئ."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Pashto",
+      "translation": "محصولات | هارویکس ګلوبل وینچرز"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Pashto",
+      "translation": "د FMCG، ټوکرانو، توکو، او صنعتي حلونو په برخه کې د هارویکس پریمیم محصولاتو لړۍ وپلټئ."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Pashto",
+      "translation": "مسلکونه | هارویکس ګلوبل وینچرز"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Pashto",
+      "translation": "د هارویکس ګلوبل وینچرز سره یوځای شئ — په ۴۰+ هیوادونو کې د FMCG، ټوکر، لوژستیک او ټیکنالوژۍ په برخه کې فرصتونه وپلټئ."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Pashto",
+      "translation": "د رسنیو مرکز | هارویکس ګلوبل وینچرز"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Pashto",
+      "translation": "د هارویکس میډیا سنټر — مطبوعاتي اعلامیې، وروستي خبرونه، د برانډ شتمنۍ، او د رسنیو اړیکې."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Pashto",
+      "translation": "زموږ ستراتیژي | هارویکس ګلوبل وینچرز"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Pashto",
+      "translation": "د نړیوال پراختیا، نوښت، پایښت، او ډیجیټل بدلون لپاره د هارویکس ستراتیژیک لید."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Pashto",
+      "translation": "د کارپوریټ ټولنیز مسؤلیت | هارویکس"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Pashto",
+      "translation": "د هارویکس د CSR نوښتونه - د چاپیریال ساتنه، د ټولنې پروګرامونه، او اخلاقي سوداګریزې کړنې."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Pashto",
+      "translation": "ډیری پوښتل شوي پوښتنې | هارویکس ګلوبل وینچرز"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Pashto",
+      "translation": "د هارویکس محصولاتو، خدماتو، امر کولو، او نړیوالو عملیاتو په اړه ډیری پوښتل شوي پوښتنې."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Pashto",
+      "translation": "نړیوال ځایونه | هارویکس"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Pashto",
+      "translation": "د هارویکس دفترونه او عملیات په منځني ختیځ، سویلي آسیا، اروپا، افریقا او امریکا کې دي."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Pashto",
+      "translation": "د مشرتابه ټیم | هارویکس"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Pashto",
+      "translation": "د مشرتابه ټیم سره وګورئ چې د هارویکس ګلوبل وینچرز په 40+ بازارونو او 10 صنعتي عمودی برخو کې چلوي."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Pashto",
+      "translation": "د مرستې مرکز | هارویکس"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Pashto",
+      "translation": "د فرمایشونو، حسابونو، بار وړلو، او هارویکس خدماتو سره مرسته ترلاسه کړئ."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Pashto",
+      "translation": "اطاعت او اخلاق | هارویکس"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Pashto",
+      "translation": "هارویکس د تنظیمي اطاعت، اخلاقي سوداګریزو کړنو، او نړیوالو معیارونو ته ژمن دی."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Pashto",
+      "translation": "زموږ تاریخ | هارویکس"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Pashto",
+      "translation": "په ۲۰۱۹ کال کې د دوبۍ له یوې نوې سوداګرۍ څخه تر ۴۰+ هېوادونو پورې یوې نړیوالې تصدۍ پورې - د هارویکس کیسه."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Pashto",
+      "translation": "خبر پاڼه | هارویکس"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Pashto",
+      "translation": "د صنعت بصیرتونو او محصولاتو لانچونو لپاره د هارویکس خبر پاڼې کې ګډون وکړئ."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Pashto",
+      "translation": "ننوتل | هارویکس"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Pashto",
+      "translation": "د فرمایشونو اداره کولو او پلیټ فارم ته د لاسرسي لپاره خپل هارویکس حساب ته ننوځئ."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Pashto",
+      "translation": "څېړنه او نوښت | هارویکس"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Pashto",
+      "translation": "د هارویکس څیړنیز نوښتونه او د نوښت پروګرامونه زموږ نړیواله ستراتیژي پرمخ وړي."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Pashto",
+      "translation": "د پانګوالو اړیکې | هارویکس"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Pashto",
+      "translation": "د پانګوالو معلومات، مالي راپورونه، او د هارویکس ګلوبل وینچرز څخه د شرکتونو اعلانونه."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Pashto",
+      "translation": "پاڼه ونه موندل شوه"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Pashto",
+      "translation": "۴۰۴ — پاڼه ونه موندل شوه"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Pashto",
+      "translation": "هغه پاڼه چې تاسو یې په لټه کې یاست شتون نلري یا لیږدول شوې ده."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Pashto",
+      "translation": "کور پاڼې ته لاړ شئ"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Pashto",
+      "translation": "بیرته تګ"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Pashto",
+      "translation": "یو څه غلط شول"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Pashto",
+      "translation": "یو څه غلط شول"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Pashto",
+      "translation": "بخښنه غواړو، خو یو څه ناڅاپي پیښ شول. مهرباني وکړئ پاڼه تازه کړئ."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Pashto",
+      "translation": "بیا هڅه وکړه"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Pashto",
+      "translation": "پاڼه بیا پورته کړئ"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Pashto",
+      "translation": "د ملاتړ سره اړیکه ونیسئ"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Pashto",
+      "translation": "د غوښتنلیک تېروتنه"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Pashto",
+      "translation": "جدي تېروتنه"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Pashto",
+      "translation": "یوه جدي تېروتنه رامنځته شوه. مهرباني وکړئ پاڼه بیا پورته کړئ."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Pashto",
+      "translation": "کاریال بیا پورته کړئ"
+    }
+  }
+}

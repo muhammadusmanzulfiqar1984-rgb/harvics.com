@@ -42,50 +42,37 @@ export default function PortalOSHeader({
   const { getCurrencySymbol, getCurrencyCode, getCountryName } = useLocalization()
 
   return (
-    <header className="bg-white border-b border-[#C3A35E]/30 sticky top-0 z-50 shadow-sm">
+    <header className="border-b border-[#EAE0D5] sticky top-0 z-50" style={{ background: 'rgba(255,255,255,0.88)', boxShadow: '0 1px 0 rgba(195,163,94,0.25), 0 4px 16px rgba(107,31,43,0.06)' }}>
       <div className="max-w-[1920px] mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
-          {/* Left: Back Button + Logo + Title */}
-          <div className="flex items-center gap-4">
+        <div className="flex items-center justify-between h-14">
+          {/* Left */}
+          <div className="flex items-center gap-3">
             {showBackButton && (
-              <BackButton 
+              <BackButton
                 href={backHref || (portal === 'company' ? '/admin/company-dashboard' : `/portal/${portal}`)}
                 label="Back"
               />
             )}
-            <div className="text-2xl font-bold text-[#6B1F2B] font-serif">H</div>
-            <div>
-              <h1 className="text-lg font-bold text-[#6B1F2B] leading-tight font-serif">
-                {portalInfo.title}
-              </h1>
-              <p className="text-xs text-[#6B1F2B]/70">{subtitle || portalInfo.defaultSubtitle}</p>
-            </div>
+            <span className="w-px h-4 bg-[#E5E5EA]" />
+            <span className="text-base font-semibold text-[#1D1D1F] tracking-tight">{portalInfo.title}</span>
+            {(subtitle || portalInfo.defaultSubtitle) && (
+              <span className="hidden md:block text-sm text-[#8E8E93]">— {subtitle || portalInfo.defaultSubtitle}</span>
+            )}
           </div>
 
-          {/* Right: Localization + Geo Selector + Portal Switcher */}
+          {/* Right */}
           <div className="flex items-center gap-3">
-            {/* Currency & Country Info */}
-            <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-[#F8F9FA] rounded-md border border-[#C3A35E]/30">
-              <span className="text-xs font-semibold text-[#6B1F2B]">
+            <div className="hidden md:flex items-center gap-1.5 px-3 py-1.5 bg-[#FAF8F5] rounded-lg border border-[#EAE0D5]">
+              <span className="text-xs font-medium text-[#1D1D1F]">
                 {getCurrencySymbol()} {getCurrencyCode()}
               </span>
-              <span className="text-xs text-[#C3A35E]">•</span>
-              <span className="text-xs text-[#6B1F2B]">{getCountryName()}</span>
+              <span className="text-[#C3A35E] text-xs">·</span>
+              <span className="text-xs text-[#8E8E93]">{getCountryName()}</span>
             </div>
             <GeoSelector />
             <PortalSwitcher currentPortal={portal} />
           </div>
         </div>
-        
-        {/* OS Domain Hint (optional) */}
-        {showDomainHint && domainTitle && (
-          <div className="border-t border-[#C3A35E]/20 px-4 py-2 bg-[#F8F9FA]">
-            <div className="flex items-center gap-2 text-sm text-[#6B1F2B]">
-              <span>📍</span>
-              <span className="font-medium">OS Domain: {domainTitle}</span>
-            </div>
-          </div>
-        )}
       </div>
     </header>
   )

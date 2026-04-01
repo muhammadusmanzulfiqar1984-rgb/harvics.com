@@ -39,7 +39,17 @@ export class HarvicsAlphaEngine {
 
     for (const code of targetTerritories) {
       // 1. Ingest Real-Time Intelligence
-      const vector = await IntelligenceNode.analyzeTerritory(code);
+      let vector: any;
+      try {
+        vector = await IntelligenceNode.processTransaction({
+          territory: code,
+          type: 'MARKET_SCAN',
+          timestamp: new Date().toISOString(),
+        });
+      } catch (e) {
+        console.log(`[${code}] Intelligence scan failed, using fallback vector`);
+        vector = { territory: code, riskScore: 0.3, margin: 0.25, inflationRate: 2.5 };
+      }
       if (!vector) continue;
 
       // 2. Synthesize Optimal Product

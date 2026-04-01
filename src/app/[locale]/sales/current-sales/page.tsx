@@ -32,21 +32,21 @@ export default async function CurrentSalesPage({ params }: CurrentSalesPageProps
   const saleProductImages = getProductImages(6)
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       
       <div className="pt-20">
         <section className="py-12 md:py-24 bg-gradient-to-br from-[#6B1F2B] via-[#5a000c] to-[#6B1F2B]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
-              {content.hero.title}
+              {String(content.hero.title)}
             </h1>
             <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto">
-              {content.hero.subtitle}
+              {String(content.hero.subtitle)}
             </p>
             {/* Show dynamic count if available */}
-            {content.sections[0]?.config?.showCount && (
+            {!!content.sections[0]?.config?.showCount && (
               <div className="mt-6 text-[#C3A35E] text-lg">
-                <span className="font-bold">{content.sections[0]?.items?.length || 156}</span> items on sale
+                <span className="font-bold">{(content.sections[0]?.items as any[])?.length || 156}</span> items on sale
               </div>
             )}
           </div>

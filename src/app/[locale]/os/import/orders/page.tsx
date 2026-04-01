@@ -113,7 +113,7 @@ export default function ImportOrdersPage() {
             <select
               value={filters.status}
               onChange={(e) => setFilters({ ...filters, status: e.target.value })}
-              className="px-4 py-2 border border-black300 focus:ring-2 focus:ring-[#ffffff] focus:border-transparent"
+              className="px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-[#ffffff] focus:border-transparent"
             >
               <option value="">{t('orders.allStatuses')}</option>
               <option value="pending">{t('orders.pending')}</option>
@@ -124,7 +124,7 @@ export default function ImportOrdersPage() {
             <select
               value={filters.country_code}
               onChange={(e) => setFilters({ ...filters, country_code: e.target.value })}
-              className="px-4 py-2 border border-black300 focus:ring-2 focus:ring-[#ffffff] focus:border-transparent"
+              className="px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-[#ffffff] focus:border-transparent"
             >
               <option value="">{t('orders.allCountries')}</option>
               <option value="US">United States</option>

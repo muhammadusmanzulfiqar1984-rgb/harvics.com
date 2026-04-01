@@ -42,7 +42,7 @@ export default function Profile() {
                 type="text"
                 value={formData.companyName}
                 onChange={(e) => setFormData({...formData, companyName: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
               />
             </div>
 
@@ -53,7 +53,7 @@ export default function Profile() {
                 type="text"
                 value={formData.legalEntityName}
                 onChange={(e) => setFormData({...formData, legalEntityName: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
               />
             </div>
 
@@ -63,7 +63,7 @@ export default function Profile() {
                 type="text"
                 value={formData.taxId}
                 onChange={(e) => setFormData({...formData, taxId: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                 placeholder="Tax ID"
               />
             </div>
@@ -74,7 +74,7 @@ export default function Profile() {
                 type="text"
                 value={formData.vat}
                 onChange={(e) => setFormData({...formData, vat: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                 placeholder="VAT"
               />
             </div>
@@ -85,7 +85,7 @@ export default function Profile() {
                 required
                 value={formData.country}
                 onChange={(e) => setFormData({...formData, country: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
               >
                 <option value="United States">United States</option>
                 <option value="Pakistan">Pakistan</option>
@@ -100,7 +100,7 @@ export default function Profile() {
                 rows={3}
                 value={formData.headOfficeAddress}
                 onChange={(e) => setFormData({...formData, headOfficeAddress: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
               />
             </div>
 
@@ -117,7 +117,7 @@ export default function Profile() {
                       ...formData,
                       primaryContact: {...formData.primaryContact, name: e.target.value}
                     })}
-                    className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                    className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                   />
                 </div>
                 <div>
@@ -130,7 +130,7 @@ export default function Profile() {
                       ...formData,
                       primaryContact: {...formData.primaryContact, phone: e.target.value}
                     })}
-                    className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                    className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                   />
                 </div>
                 <div>
@@ -143,7 +143,7 @@ export default function Profile() {
                       ...formData,
                       primaryContact: {...formData.primaryContact, email: e.target.value}
                     })}
-                    className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                    className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                   />
                 </div>
               </div>
@@ -170,7 +170,7 @@ export default function Profile() {
                         newWarehouses[index].address = e.target.value
                         setFormData({...formData, warehouses: newWarehouses})
                       }}
-                      className="flex-1 px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                      className="flex-1 px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                     />
                     <button
                       type="button"

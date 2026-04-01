@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HARVICS Logo Comparison - 3 Options</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #6B1F2B;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 50px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 1200px) {
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .option-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .option-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+    .option-header {
+      padding: 24px;
+      background: linear-gradient(135deg, #6B1F2B 0%, #8B3A47 100%);
+      color: white;
+      text-align: center;
+    }
+    .option-number {
+      font-size: 48px;
+      font-weight: 700;
+      opacity: 0.3;
+      line-height: 1;
+    }
+    .option-name {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+    .option-tagline {
+      font-size: 13px;
+      opacity: 0.9;
+      margin-top: 4px;
+    }
+    .preview-section {
+      padding: 40px 30px;
+      text-align: center;
+    }
+    .preview-section h3 {
+      font-size: 14px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 24px;
+    }
+    .logo-showcase {
+      margin-bottom: 30px;
+    }
+    .logo-showcase img {
+      max-width: 100%;
+      height: auto;
+    }
+    .icon-showcase img {
+      max-width: 100px;
+      height: auto;
+    }
+    .dark-preview {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 40px 20px;
+      margin: 30px 0;
+    }
+    .features-list {
+      text-align: left;
+      padding: 0 30px 30px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: start;
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .feature-item::before {
+      content: "✓";
+      color: #C3A35E;
+      font-weight: 700;
+      margin-right: 12px;
+      font-size: 16px;
+    }
+    .pros-cons {
+      padding: 30px;
+      background: #f9f9f9;
+      border-top: 1px solid #e0e0e0;
+    }
+    .pros-cons h4 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #666;
+      margin-bottom: 12px;
+    }
+    .pro-item {
+      color: #28A745;
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+    .pro-item::before {
+      content: "👍 ";
+    }
+    .con-item {
+      color: #DC3545;
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+    .con-item::before {
+      content: "⚠️ ";
+    }
+    .recommendation {
+      background: linear-gradient(135deg, #C3A35E 0%, #D4B46E 100%);
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 40px;
+      color: #6B1F2B;
+    }
+    .recommendation h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .recommendation p {
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 0 30px 30px;
+    }
+    .stat-box {
+      text-align: center;
+      padding: 16px;
+      background: #f5f5f5;
+      border-radius: 8px;
+    }
+    .stat-value {
+      font-size: 24px;
+      font-weight: 700;
+      color: #6B1F2B;
+    }
+    .stat-label {
+      font-size: 11px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Choose Your HARVICS Logo</h1>
+    <p class="subtitle">3 Premium Options — All Production-Ready</p>
+
+    <div class="comparison-grid">
+      
+      <!-- OPTION 1: Geometric Minimal -->
+      <div class="option-card">
+        <div class="option-header">
+          <div class="option-number">01</div>
+          <div class="option-name">Geometric Minimal</div>
+          <div class="option-tagline">Clean & Precise</div>
+        </div>
+
+        <div class="preview-section">
+          <h3>Icon</h3>
+          <div class="logo-showcase icon-showcase">
+            <img src="/logo-icon.svg" alt="Option 1 Icon">
+          </div>
+
+          <h3>Wordmark</h3>
+          <div class="logo-showcase">
+            <img src="/logo-wordmark.svg" alt="Option 1 Wordmark" style="max-width: 280px;">
+          </div>
+
+          <div class="dark-preview">
+            <img src="/logo-icon-white.svg" alt="Option 1 Dark" style="max-width: 100px;">
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-value">2KB</div>
+            <div class="stat-label">File Size</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">95%</div>
+            <div class="stat-label">Clarity</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">A+</div>
+            <div class="stat-label">Minimal</div>
+          </div>
+        </div>
+
+        <div class="features-list">
+          <div class="feature-item">Simple rectangles only - extremely clean</div>
+          <div class="feature-item">Gold crossbar creates visual anchor</div>
+          <div class="feature-item">Perfect clarity at any size (16px-2000px)</div>
+          <div class="feature-item">Apple/Square inspiration - tech-forward</div>
+          <div class="feature-item">No rounded corners - architectural feel</div>
+        </div>
+
+        <div class="pros-cons">
+          <h4>Strengths</h4>
+          <div class="pro-item">Cleanest, most minimal design</div>
+          <div class="pro-item">Scales perfectly to tiny sizes</div>
+          <div class="pro-item">Modern, premium feel</div>
+          <div class="pro-item">Easiest to reproduce/print</div>
+          
+          <h4 style="margin-top: 16px;">Considerations</h4>
+          <div class="con-item">Very simple - may feel "too basic" to some</div>
+          <div class="con-item">Less distinctive than options 2 & 3</div>
+        </div>
+      </div>
+
+      <!-- OPTION 2: Interlocking Modern -->
+      <div class="option-card">
+        <div class="option-header" style="background: linear-gradient(135deg, #8B3A47 0%, #6B1F2B 100%);">
+          <div class="option-number">02</div>
+          <div class="option-name">Interlocking Modern</div>
+          <div class="option-tagline">Dynamic & Connected</div>
+        </div>
+
+        <div class="preview-section">
+          <h3>Icon</h3>
+          <div class="logo-showcase icon-showcase">
+            <img src="/logo-option2-icon.svg" alt="Option 2 Icon">
+          </div>
+
+          <h3>Wordmark</h3>
+          <div class="logo-showcase">
+            <img src="/logo-option2-wordmark.svg" alt="Option 2 Wordmark" style="max-width: 280px;">
+          </div>
+
+          <div class="dark-preview">
+            <img src="/logo-option2-icon-white.svg" alt="Option 2 Dark" style="max-width: 100px;">
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-value">2KB</div>
+            <div class="stat-label">File Size</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">90%</div>
+            <div class="stat-label">Clarity</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">A</div>
+            <div class="stat-label">Modern</div>
+          </div>
+        </div>
+
+        <div class="features-list">
+          <div class="feature-item">Unified H shape - more integrated</div>
+          <div class="feature-item">Gold circle center = connection point</div>
+          <div class="feature-item">Suggests network/connectivity/hub</div>
+          <div class="feature-item">More distinctive than Option 1</div>
+          <div class="feature-item">Abstract yet recognizable as "H"</div>
+        </div>
+
+        <div class="pros-cons">
+          <h4>Strengths</h4>
+          <div class="pro-item">Most distinctive design</div>
+          <div class="pro-item">Symbolizes connection/integration</div>
+          <div class="pro-item">Unique - won't be confused with others</div>
+          <div class="pro-item">Gold circle adds focal point</div>
+          
+          <h4 style="margin-top: 16px;">Considerations</h4>
+          <div class="con-item">Slightly more complex to reproduce</div>
+          <div class="con-item">Circle may get lost at very small sizes</div>
+        </div>
+      </div>
+
+      <!-- OPTION 3: Premium Monogram -->
+      <div class="option-card">
+        <div class="option-header" style="background: linear-gradient(135deg, #C3A35E 0%, #6B1F2B 100%);">
+          <div class="option-number">03</div>
+          <div class="option-name">Premium Monogram</div>
+          <div class="option-tagline">Badge & Prestige</div>
+        </div>
+
+        <div class="preview-section">
+          <h3>Icon</h3>
+          <div class="logo-showcase icon-showcase">
+            <img src="/logo-option3-icon.svg" alt="Option 3 Icon">
+          </div>
+
+          <h3>Wordmark</h3>
+          <div class="logo-showcase">
+            <img src="/logo-option3-wordmark.svg" alt="Option 3 Wordmark" style="max-width: 280px;">
+          </div>
+
+          <div class="dark-preview">
+            <img src="/logo-option3-icon-light.svg" alt="Option 3 Light" style="max-width: 100px;">
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-value">3KB</div>
+            <div class="stat-label">File Size</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">92%</div>
+            <div class="stat-label">Clarity</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">A+</div>
+            <div class="stat-label">Premium</div>
+          </div>
+        </div>
+
+        <div class="features-list">
+          <div class="feature-item">Boxed badge format - luxury brand feel</div>
+          <div class="feature-item">Negative space H in white</div>
+          <div class="feature-item">Gold accent in crossbar</div>
+          <div class="feature-item">Works as app icon perfectly</div>
+          <div class="feature-item">Nestlé-inspired heritage aesthetic</div>
+        </div>
+
+        <div class="pros-cons">
+          <h4>Strengths</h4>
+          <div class="pro-item">Most premium/luxury feel</div>
+          <div class="pro-item">Perfect for app icons (square format)</div>
+          <div class="pro-item">Strong brand presence</div>
+          <div class="pro-item">Negative space = sophistication</div>
+          
+          <h4 style="margin-top: 16px;">Considerations</h4>
+          <div class="con-item">Box may feel "boxed in" in some contexts</div>
+          <div class="con-item">Requires rounded corners (less sharp)</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Recommendation -->
+    <div class="recommendation">
+      <h2>My Recommendation</h2>
+      <p><strong>Option 1 (Geometric Minimal)</strong> aligns best with your Apple/Square/Nestlé inspiration and the unified color system we just built. It's the most versatile, scales perfectly, and represents the clean, enterprise-grade platform HARVICS OS aims to be. However, if you want more visual distinction, <strong>Option 2</strong> is excellent for symbolizing connectivity across 10 industries.</p>
+    </div>
+
+    <!-- Use Cases Comparison -->
+    <div style="margin-top: 50px; background: white; border-radius: 16px; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <h2 style="text-align: center; font-size: 24px; color: #6B1F2B; margin-bottom: 30px;">Which Logo for Which Context?</h2>
+      
+      <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr style="background: #f5f5f5;">
+            <th style="padding: 16px; text-align: left; font-size: 14px; color: #666; text-transform: uppercase; letter-spacing: 0.05em;">Context</th>
+            <th style="padding: 16px; text-align: center; font-size: 14px; color: #666;">Option 1</th>
+            <th style="padding: 16px; text-align: center; font-size: 14px; color: #666;">Option 2</th>
+            <th style="padding: 16px; text-align: center; font-size: 14px; color: #666;">Option 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid #e0e0e0;">
+            <td style="padding: 16px; font-size: 14px;">Favicon (16×16px)</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟡</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e0e0e0;">
+            <td style="padding: 16px; font-size: 14px;">Mobile App Icon</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟡</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e0e0e0;">
+            <td style="padding: 16px; font-size: 14px;">Website Navigation</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟡</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e0e0e0;">
+            <td style="padding: 16px; font-size: 14px;">Business Cards</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e0e0e0;">
+            <td style="padding: 16px; font-size: 14px;">Large Billboard</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟡</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e0e0e0;">
+            <td style="padding: 16px; font-size: 14px;">Dark Mode UI</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+          </tr>
+          <tr>
+            <td style="padding: 16px; font-size: 14px;">Enterprise Reports</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟡</td>
+            <td style="padding: 16px; text-align: center; font-size: 20px;">🟢</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p style="text-align: center; margin-top: 20px; font-size: 13px; color: #666;">🟢 = Excellent | 🟡 = Good</p>
+    </div>
+  </div>
+</body>
+</html>

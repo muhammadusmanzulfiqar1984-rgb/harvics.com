@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "hi",
+    "language": "Hindi",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Hindi. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Hindi",
+      "translation": "आपका स्वागत है"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Hindi",
+      "translation": "हार्विच"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Hindi",
+      "translation": "2019 से प्रीमियम उपभोक्ता वस्तुओं में उत्कृष्टता"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Hindi",
+      "translation": "एक अग्रणी वैश्विक उपभोक्ता वस्तु कंपनी जो अंतरराष्ट्रीय गुणवत्ता मानकों के साथ विभिन्न श्रेणियों में प्रीमियम खाद्य उत्पाद वितरित करती है।"
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Hindi",
+      "translation": "उत्पाद देखें"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Hindi",
+      "translation": "हमसे संपर्क करें"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Hindi",
+      "translation": "और अधिक जानें"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Hindi",
+      "translation": "प्रीमियम उपभोक्ता वस्तुओं में उत्कृष्टता 2016 से"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Hindi",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Hindi",
+      "translation": "लंदन • मिलान • न्यूयॉर्क"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Hindi",
+      "translation": "बेकरी"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Hindi",
+      "translation": "पेय"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Hindi",
+      "translation": "मिष्ठान्न"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Hindi",
+      "translation": "पाक"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Hindi",
+      "translation": "फ्रोज़ेन खाद्य पदार्थ"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Hindi",
+      "translation": "पास्ता"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Hindi",
+      "translation": "नाश्ता"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Hindi",
+      "translation": "ईएसजी रिपोर्ट 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Hindi",
+      "translation": "लंदन • मिलान • न्यूयॉर्क"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Hindi",
+      "translation": "घर"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Hindi",
+      "translation": "के बारे में"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Hindi",
+      "translation": "हमारे बारे में"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Hindi",
+      "translation": "ब्रांड की कहानी"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Hindi",
+      "translation": "उत्पादों"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Hindi",
+      "translation": "हमारे उत्पाद"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Hindi",
+      "translation": "सभी उत्पाद देखें"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Hindi",
+      "translation": "सीएसआर"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Hindi",
+      "translation": "निवेशक संबंध"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Hindi",
+      "translation": "निवेशकों"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Hindi",
+      "translation": "मिडिया"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Hindi",
+      "translation": "हमसे संपर्क करें"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स हाउस"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Hindi",
+      "translation": "देशों"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Hindi",
+      "translation": "पोर्टल"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Hindi",
+      "translation": "दाखिल करना"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Hindi",
+      "translation": "इच्छा-सूची"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Hindi",
+      "translation": "शॉपिंग कार्ट"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Hindi",
+      "translation": "मदद"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Hindi",
+      "translation": "स्टोर ढूंढें"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Hindi",
+      "translation": "धन"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Hindi",
+      "translation": "बिक्री"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Hindi",
+      "translation": "ऑफर"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Hindi",
+      "translation": "डार्क मोड"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Hindi",
+      "translation": "क्रेडिट कार्ड"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Hindi",
+      "translation": "एम एंड एस रिवार्ड्स क्रेडिट कार्ड"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Hindi",
+      "translation": "क्लब रिवार्ड्स"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Hindi",
+      "translation": "हमारे क्रेडिट कार्ड"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Hindi",
+      "translation": "बीमा"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Hindi",
+      "translation": "गृह बीमा"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Hindi",
+      "translation": "यात्रा बीमा"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Hindi",
+      "translation": "यात्रा सेवाएँ"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Hindi",
+      "translation": "सैर के लिए पैसा"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Hindi",
+      "translation": "विनिमय दरें"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Hindi",
+      "translation": "अतिरिक्त सेवाएं"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Hindi",
+      "translation": "बचत और निवेश"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Hindi",
+      "translation": "व्यक्तिगत ऋण"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Hindi",
+      "translation": "वित्तीय सहायता"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Hindi",
+      "translation": "वर्तमान बिक्री"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Hindi",
+      "translation": "निकासी"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Hindi",
+      "translation": "मौसमी बिक्री"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Hindi",
+      "translation": "खास पेशकश"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Hindi",
+      "translation": "प्रचार"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Hindi",
+      "translation": "थोक ऑर्डर पर छूट"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Hindi",
+      "translation": "हमारे उत्पाद"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Hindi",
+      "translation": "सभी उत्पाद देखें"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Hindi",
+      "translation": "हमारे उत्पाद श्रेणियाँ"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Hindi",
+      "translation": "हमारे प्रीमियम उत्पादों की श्रृंखला को देखें, जिन्हें सावधानी और उत्कृष्टता के साथ तैयार किया गया है।"
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Hindi",
+      "translation": "स्तर 1: श्रेणियाँ"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Hindi",
+      "translation": "स्तर 2: मॉड्यूल"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Hindi",
+      "translation": "तीसरा स्तर: केपीआई स्क्रीन"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Hindi",
+      "translation": "स्तर 4: कार्यवाहियाँ"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Hindi",
+      "translation": "नेविगेशन रीसेट करें"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Hindi",
+      "translation": "इस श्रेणी के लिए कोई उपश्रेणी उपलब्ध नहीं है।"
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Hindi",
+      "translation": "उत्पादों"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Hindi",
+      "translation": "उपश्रेणियों"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Hindi",
+      "translation": "बेकरी"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Hindi",
+      "translation": "ताज़ा बेक किए गए सामान और पेस्ट्री।"
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Hindi",
+      "translation": "पेय"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Hindi",
+      "translation": "हर अवसर के लिए ताजगी भरे पेय।"
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Hindi",
+      "translation": "हलवाई की दुकान"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Hindi",
+      "translation": "मीठे व्यंजन और स्वादिष्ट पकवान।"
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Hindi",
+      "translation": "पाक"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Hindi",
+      "translation": "आपकी रसोई के लिए आवश्यक सामग्रियां।"
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Hindi",
+      "translation": "फ्रोज़ेन खाद्य पदार्थ"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Hindi",
+      "translation": "सुविधाजनक और स्वादिष्ट फ्रोजन भोजन।"
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Hindi",
+      "translation": "पास्ता"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Hindi",
+      "translation": "प्रामाणिक पास्ता की किस्में।"
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Hindi",
+      "translation": "नाश्ता"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Hindi",
+      "translation": "दिन के किसी भी समय के लिए स्वादिष्ट नाश्ता।"
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स के बारे में"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Hindi",
+      "translation": "2019 से प्रीमियम उपभोक्ता वस्तुओं में उत्कृष्टता"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Hindi",
+      "translation": "हमारी कहानी"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Hindi",
+      "translation": "2019 में स्थापित, हार्विक्स एक दूरदर्शी विचार से प्रीमियम उपभोक्ता वस्तुओं के वैश्विक नेता के रूप में विकसित हुआ है। हमारी यात्रा गुणवत्ता की निरंतर खोज और नवाचार के प्रति प्रतिबद्धता से परिभाषित है।"
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Hindi",
+      "translation": "हम 40 से अधिक देशों में कार्यरत हैं, ऐसे उत्पाद वितरित करते हैं जो जीवन को समृद्ध बनाते हैं और उद्योग में नए मानक स्थापित करते हैं। अपनी विनम्र शुरुआत से लेकर वैश्विक उपस्थिति तक, हमारे मूल्य अपरिवर्तित रहे हैं।"
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Hindi",
+      "translation": "स्थापना 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Hindi",
+      "translation": "40 से अधिक देश"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Hindi",
+      "translation": "6 उत्पाद श्रेणियां"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Hindi",
+      "translation": "कॉर्पोरेट की सामाजिक जिम्मेदारी"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स में, हम दुनिया पर सकारात्मक प्रभाव डालने के लिए प्रतिबद्ध हैं। हमारी सीएसआर पहलें स्थिरता, सामुदायिक सशक्तिकरण और नैतिक व्यावसायिक प्रथाओं पर केंद्रित हैं।"
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Hindi",
+      "translation": "वर्षों का प्रभाव"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Hindi",
+      "translation": "जिन देशों तक पहुंचा गया"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Hindi",
+      "translation": "प्रभावित जीवन"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Hindi",
+      "translation": "हमारी प्रमुख पहलें"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Hindi",
+      "translation": "हम सतत परिवर्तन लाने और सभी हितधारकों के लिए साझा मूल्य सृजित करने के लिए चार मुख्य स्तंभों पर ध्यान केंद्रित करते हैं।"
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Hindi",
+      "translation": "वहनीयता"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Hindi",
+      "translation": "नवीकरणीय ऊर्जा और अपशिष्ट कम करके हम अपने पर्यावरणीय प्रभाव को कम कर रहे हैं।"
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Hindi",
+      "translation": "नवीकरणीय ऊर्जा"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Hindi",
+      "translation": "अपशिष्ट को दूसरी जगह भेजा गया"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Hindi",
+      "translation": "कार्बन कटौती"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Hindi",
+      "translation": "समुदाय का समर्थन"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Hindi",
+      "translation": "शिक्षा, स्वास्थ्य सेवा और आर्थिक विकास के माध्यम से स्थानीय समुदायों को सशक्त बनाना।"
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Hindi",
+      "translation": "परिवारों को सहायता प्रदान की गई"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Hindi",
+      "translation": "सक्रिय कार्यक्रम"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Hindi",
+      "translation": "स्वयंसेवकों"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Hindi",
+      "translation": "शिक्षा"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Hindi",
+      "translation": "वंचित छात्रों को गुणवत्तापूर्ण शिक्षा और छात्रवृत्ति उपलब्ध कराना।"
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Hindi",
+      "translation": "छात्रवृत्ति"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Hindi",
+      "translation": "भागीदार स्कूल"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Hindi",
+      "translation": "प्रभावित छात्र"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Hindi",
+      "translation": "स्वास्थ्य और कल्याण"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Hindi",
+      "translation": "कम सुविधा प्राप्त क्षेत्रों में स्वास्थ्य सेवा और पोषण तक पहुंच में सुधार करना।"
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Hindi",
+      "translation": "स्वास्थ्य अभियान"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Hindi",
+      "translation": "जिन लोगों को सेवा दी गई"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Hindi",
+      "translation": "मोबाइल क्लीनिक"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Hindi",
+      "translation": "सर्वश्रेष्ठ सीएसआर पहल"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Hindi",
+      "translation": "सामाजिक उत्तरदायित्व के प्रति हमारे नवोन्मेषी दृष्टिकोण के लिए हमें सम्मानित किया गया है।"
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Hindi",
+      "translation": "सामुदायिक चैंपियन"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Hindi",
+      "translation": "हमारे व्यापक सामुदायिक संपर्क कार्यक्रमों के लिए यह पुरस्कार दिया गया है।"
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Hindi",
+      "translation": "वैश्विक सततता पुरस्कार"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Hindi",
+      "translation": "कार्बन तटस्थता के प्रति हमारी प्रतिबद्धता के लिए हमें मान्यता प्राप्त है।"
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Hindi",
+      "translation": "हमारा प्रभाव"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Hindi",
+      "translation": "एक बेहतर दुनिया बनाने में हमने जो उपलब्धियां हासिल की हैं, उन्हें स्वीकार करते हुए।"
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Hindi",
+      "translation": "आइए, बदलाव लाने में हमारा साथ दें।"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Hindi",
+      "translation": "हमारे साथ साझेदारी करें या जानें कि हम एक स्थायी भविष्य का निर्माण कैसे कर रहे हैं।"
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Hindi",
+      "translation": "सीएसआर टीम से संपर्क करें"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Hindi",
+      "translation": "और अधिक जानें"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Hindi",
+      "translation": "संपर्क में रहो"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Hindi",
+      "translation": "हमें आपसे बात करके खुशी होगी। आप इनमें से किसी भी माध्यम से हमसे संपर्क कर सकते हैं।"
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Hindi",
+      "translation": "फ़ोन"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Hindi",
+      "translation": "ईमेल"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Hindi",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Hindi",
+      "translation": "अब कॉल करें"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Hindi",
+      "translation": "ईमेल भेजें"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Hindi",
+      "translation": "हमें संदेश भेजें"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Hindi",
+      "translation": "मीडिया केंद्र"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Hindi",
+      "translation": "मीडिया केंद्र | हार्विक्स"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स ग्लोबल वेंचर्स से संबंधित प्रेस संसाधन, ब्रांड संपत्तियां और नवीनतम समाचार।"
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Hindi",
+      "translation": "निगमित"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Hindi",
+      "translation": "समाचार एवं प्रेस विज्ञप्तियाँ"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स ग्लोबल वेंचर्स की नवीनतम घोषणाएं, बाजार विस्तार, उत्पाद लॉन्च और कंपनी से संबंधित अपडेट।"
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Hindi",
+      "translation": "नवीनतम समाचार पढ़ें"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Hindi",
+      "translation": "छवि गैलरी"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Hindi",
+      "translation": "मीडिया उपयोग के लिए उच्च-रिज़ॉल्यूशन ब्रांड सामग्री, उत्पाद फोटोग्राफी, सुविधा चित्र और कार्यक्रम कवरेज।"
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Hindi",
+      "translation": "गैलरी ब्राउज़ करें"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Hindi",
+      "translation": "मीडिया संपर्क"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Hindi",
+      "translation": "प्रेस संबंधी पूछताछ, साक्षात्कार के अनुरोध और साझेदारी की घोषणाओं के लिए हमारी संचार टीम से संपर्क करें।"
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Hindi",
+      "translation": "प्रेस टीम से संपर्क करें"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Hindi",
+      "translation": "कवर किए गए बाज़ार"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Hindi",
+      "translation": "उद्योग क्षेत्र"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Hindi",
+      "translation": "दुबई में स्थापित"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Hindi",
+      "translation": "समर्थित भाषाएँ"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Hindi",
+      "translation": "हाल की सुर्खियाँ"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स ने दक्षिणपूर्व एशिया के 5 नए बाजारों में अपने एफएमसीजी परिचालन का विस्तार किया।"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Hindi",
+      "translation": "वैश्विक वितरण के लिए नया एआई-संचालित आपूर्ति श्रृंखला प्लेटफॉर्म लॉन्च किया गया"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स ने अपने सभी संयंत्रों में कार्बन-तटस्थता का मील का पत्थर हासिल किया।"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Hindi",
+      "translation": "दक्षिण एशिया के प्रमुख वस्त्र निर्माताओं के साथ रणनीतिक साझेदारी"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स हाउस"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Hindi",
+      "translation": "उत्कृष्टता और परंपरा की विरासत"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स हाउस में आपका स्वागत है"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स हाउस गुणवत्ता और विरासत के प्रति हमारी प्रतिबद्धता का प्रतीक है। यहाँ, हम अपने प्रीमियम उत्पादों का सर्वश्रेष्ठ संग्रह प्रस्तुत करते हैं, जिसे एक ऐसे वातावरण में प्रदर्शित किया जाता है जो हमारी भव्यता, परंपरा और नवाचार के मूल्यों को प्रतिबिंबित करता है।"
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Hindi",
+      "translation": "हमारे विशेष संग्रहों को देखें और हार्विक्स नाम वाले प्रत्येक उत्पाद के पीछे की कहानी जानें।"
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स ग्लोबल वेंचर्स"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Hindi",
+      "translation": "2019 से प्रीमियम उपभोक्ता वस्तुओं में उत्कृष्टता"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Hindi",
+      "translation": "एक अग्रणी वैश्विक उपभोक्ता वस्तु कंपनी जो अंतरराष्ट्रीय गुणवत्ता मानकों के साथ विभिन्न श्रेणियों में प्रीमियम खाद्य उत्पाद वितरित करती है।"
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Hindi",
+      "translation": "लंदन • मिलान • न्यूयॉर्क"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Hindi",
+      "translation": "2019 से"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स समाचार"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Hindi",
+      "translation": "अलर्ट और अपडेट प्राप्त करने के लिए सब्सक्राइब करें"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Hindi",
+      "translation": "साइन अप करें"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Hindi",
+      "translation": "अनुपालन संबंधी चिंताएँ"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Hindi",
+      "translation": "यदि आपको अनुपालन या नैतिकता के बारे में कोई चिंता है तो खुलकर बोलें।"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Hindi",
+      "translation": "घोषित करना"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Hindi",
+      "translation": "हमसे संपर्क करें"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Hindi",
+      "translation": "हमारी टीम से संपर्क करें"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Hindi",
+      "translation": "हमसे संपर्क करें"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Hindi",
+      "translation": "उपयोगी कड़ियां"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Hindi",
+      "translation": "हार्विच से पूछें"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Hindi",
+      "translation": "जॉब के लिए खोजें"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Hindi",
+      "translation": "समाचारों के लिए साइन अप करें"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Hindi",
+      "translation": "कंपनी"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Hindi",
+      "translation": "वैश्विक पते"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Hindi",
+      "translation": "रणनीति"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Hindi",
+      "translation": "हमारा नेतृत्व"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Hindi",
+      "translation": "ब्रांड्स A-Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Hindi",
+      "translation": "हमारा इतिहास"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Hindi",
+      "translation": "वहनीयता"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Hindi",
+      "translation": "समाचार"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Hindi",
+      "translation": "मीडिया संपर्क"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Hindi",
+      "translation": "इमेजिस"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Hindi",
+      "translation": "निवेशकों"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Hindi",
+      "translation": "निगम से संबंधित शासन प्रणाली"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Hindi",
+      "translation": "शेयर, एडीआर और बांड"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Hindi",
+      "translation": "प्रकाशनों"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Hindi",
+      "translation": "पर हमें का पालन करें"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Hindi",
+      "translation": "0 समस्याएँ"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Hindi",
+      "translation": "साइट मैप"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Hindi",
+      "translation": "सदस्यता रद्द"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Hindi",
+      "translation": "मदद"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Hindi",
+      "translation": "गोपनीयता"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Hindi",
+      "translation": "कुकीज़"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Hindi",
+      "translation": "उपयोग की शर्तें"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Hindi",
+      "translation": "सरल उपयोग"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Hindi",
+      "translation": "कार्बन दक्षता"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Hindi",
+      "translation": "आपूर्तिकर्ताओं"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Hindi",
+      "translation": "सोशल मीडिया"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Hindi",
+      "translation": "कुकी सेटिंग्स"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Hindi",
+      "translation": "प्रीमियम गुणवत्ता"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Hindi",
+      "translation": "मेल पता"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Hindi",
+      "translation": "अपना ईमेल पता दर्ज करें"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Hindi",
+      "translation": "सदस्यता लें"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Hindi",
+      "translation": "सदस्यता लें..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Hindi",
+      "translation": "हमारे बारे में"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Hindi",
+      "translation": "मिडिया"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Hindi",
+      "translation": "उत्पादों, ब्रांडों या श्रेणियों को खोजें"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Hindi",
+      "translation": "कोई परिणाम नहीं मिला"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Hindi",
+      "translation": "खोज जारी है..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Hindi",
+      "translation": "परिणाम"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Hindi",
+      "translation": "हमारे साथ चैट करें"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Hindi",
+      "translation": "अपना संदेश टाइप करें..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Hindi",
+      "translation": "भेजना"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Hindi",
+      "translation": "बंद करना"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Hindi",
+      "translation": "नमस्ते, मैं आज आपकी सहायता कैसे करूं?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Hindi",
+      "translation": "मुझे खेद है, मुझे समझ नहीं आया। क्या आप कृपया इसे दोबारा समझा सकते हैं?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Hindi",
+      "translation": "मैं आपको उत्पाद संबंधी जानकारी, ऑर्डर या सामान्य पूछताछ में सहायता कर सकता हूँ। आप क्या जानना चाहेंगे?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Hindi",
+      "translation": "अधिक सहायता के लिए, कृपया support@harvics.com पर हमसे संपर्क करें या +1-800-HARVICS पर कॉल करें।"
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Hindi",
+      "translation": "हमारे साथ चैट करें"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Hindi",
+      "translation": "लोड हो रहा है..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Hindi",
+      "translation": "गलती"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Hindi",
+      "translation": "सफलता"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Hindi",
+      "translation": "बचाना"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Hindi",
+      "translation": "रद्द करना"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Hindi",
+      "translation": "मिटाना"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Hindi",
+      "translation": "संपादन करना"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Hindi",
+      "translation": "देखना"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Hindi",
+      "translation": "जमा करना"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Hindi",
+      "translation": "खोज"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Hindi",
+      "translation": "फ़िल्टर"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Hindi",
+      "translation": "स्पष्ट"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Hindi",
+      "translation": "डाउनलोड करना"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Hindi",
+      "translation": "अपलोड करें"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Hindi",
+      "translation": "हाँ"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Hindi",
+      "translation": "नहीं"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Hindi",
+      "translation": "बंद करना"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Hindi",
+      "translation": "पीछे"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Hindi",
+      "translation": "अगला"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Hindi",
+      "translation": "पहले का"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Hindi",
+      "translation": "कार्रवाई"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Hindi",
+      "translation": "स्थिति"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Hindi",
+      "translation": "तारीख"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Hindi",
+      "translation": "नाम"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Hindi",
+      "translation": "ईमेल"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Hindi",
+      "translation": "फ़ोन"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Hindi",
+      "translation": "पता"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Hindi",
+      "translation": "देश"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Hindi",
+      "translation": "शहर"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Hindi",
+      "translation": "सभी"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Hindi",
+      "translation": "कोई नहीं"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Hindi",
+      "translation": "चुनना"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Hindi",
+      "translation": "भाषा चुने"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Hindi",
+      "translation": "देश चुनें"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Hindi",
+      "translation": "और दिखाएँ"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Hindi",
+      "translation": "कम दिखाएँ"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Hindi",
+      "translation": "आवश्यक"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Hindi",
+      "translation": "मेनू"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Hindi",
+      "translation": "उत्पाद देखें"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Hindi",
+      "translation": "संगीत बजाना"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Hindi",
+      "translation": "संगीत रोकें"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Hindi",
+      "translation": "संगीत म्यूट करें"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Hindi",
+      "translation": "संगीत को अनम्यूट करें"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Hindi",
+      "translation": "हमारी वैश्विक पहुंच"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Hindi",
+      "translation": "तब से"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Hindi",
+      "translation": "प्रमुख बाजार"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Hindi",
+      "translation": "प्रमुख बाजार"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Hindi",
+      "translation": "उपस्थिति"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Hindi",
+      "translation": "जिन देशों में सेवाएँ प्रदान की जाती हैं"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Hindi",
+      "translation": "प्रमुख बाजार"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Hindi",
+      "translation": "उत्पाद श्रेणियां"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Hindi",
+      "translation": "स्थापित"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Hindi",
+      "translation": "क्षेत्रीय पदानुक्रम"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Hindi",
+      "translation": "पूरा पथ"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Hindi",
+      "translation": "वर्तमान क्षेत्र"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Hindi",
+      "translation": "कोई आइटम नहीं"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Hindi",
+      "translation": "ग्लोब"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Hindi",
+      "translation": "महाद्वीप"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Hindi",
+      "translation": "क्षेत्र"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Hindi",
+      "translation": "देश"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Hindi",
+      "translation": "शहर"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Hindi",
+      "translation": "ज़िला"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Hindi",
+      "translation": "जगह"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स ग्लोबल"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Hindi",
+      "translation": "वैश्विक"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Hindi",
+      "translation": "क्षेत्र का चयन करें"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Hindi",
+      "translation": "ग्राहक विवरण"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Hindi",
+      "translation": "चयनित"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Hindi",
+      "translation": "पूरा नाम"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Hindi",
+      "translation": "अपना पूरा नाम भरें"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Hindi",
+      "translation": "नाम आवश्यक है"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Hindi",
+      "translation": "मेल पता"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Hindi",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Hindi",
+      "translation": "ईमेल की जरूरत है"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Hindi",
+      "translation": "कृपया एक मान्य ईमेल पता प्रविष्ट करें"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Hindi",
+      "translation": "फ़ोन नंबर"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Hindi",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Hindi",
+      "translation": "फ़ोन नंबर आवश्यक है"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Hindi",
+      "translation": "पता"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Hindi",
+      "translation": "तुम्हारा पता"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Hindi",
+      "translation": "पता आवश्यक है"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Hindi",
+      "translation": "मैं मार्केटिंग संबंधी संचार और अपडेट प्राप्त करने के लिए सहमत हूं।"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Hindi",
+      "translation": "सबमिट करें और जारी रखें"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Hindi",
+      "translation": "सबमिट किया जा रहा है..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Hindi",
+      "translation": "छोड़ें और जारी रखें"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Hindi",
+      "translation": "मुख्य निष्पादन संकेतक"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Hindi",
+      "translation": "आज ही ऑर्डर करें"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स सीआरएम के माध्यम से सबमिट किया गया"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Hindi",
+      "translation": "लंबित डिलीवरी"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Hindi",
+      "translation": "निर्धारित मार्गों पर"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Hindi",
+      "translation": "रिटेलर्स"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Hindi",
+      "translation": "दायरे में सक्रिय आउटलेट"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Hindi",
+      "translation": "टी एंड ए स्कोर"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Hindi",
+      "translation": "क्षेत्रीय कवरेज"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Hindi",
+      "translation": "वित्तीय और इन्वेंट्री"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Hindi",
+      "translation": "कम स्टॉक वाले एसकेयू"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Hindi",
+      "translation": "पुनःपूर्ति को ट्रिगर करें"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Hindi",
+      "translation": "बकाया बिल"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Hindi",
+      "translation": "वसूली के लिए देय"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Hindi",
+      "translation": "क्रेडिट सीमा"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Hindi",
+      "translation": "वित्त विभाग द्वारा आवंटित"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Hindi",
+      "translation": "स्वतः अनुमोदन, स्टॉक पुनःपूर्ति और चालान अनुस्मारक सक्षम किए गए"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Hindi",
+      "translation": "आत्म अनुमोदन"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Hindi",
+      "translation": "शेयर पुनःपूर्ति करें"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Hindi",
+      "translation": "इनवॉइस रिमाइंडर"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Hindi",
+      "translation": "एआई अनुशंसाएँ"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Hindi",
+      "translation": "जोखिम स्तर"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Hindi",
+      "translation": "क्रेडिट उपयोग और भुगतान इतिहास के आधार पर"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Hindi",
+      "translation": "सुझाया गया क्रम"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Hindi",
+      "translation": "ऑर्डर करने के लिए AI द्वारा अनुशंसित SKU"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Hindi",
+      "translation": "अगला कदम"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Hindi",
+      "translation": "कार्य और मार्गदर्शन"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Hindi",
+      "translation": "शिकायतों"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Hindi",
+      "translation": "खुदरा विक्रेता के मामले कार्रवाई की प्रतीक्षा में हैं"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Hindi",
+      "translation": "प्लेबुक"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Hindi",
+      "translation": "दोपहर से पहले लंबित डिलीवरी को प्राथमिकता दें।"
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Hindi",
+      "translation": "सभी लंबित शिकायतों का 48 घंटों के भीतर निपटारा करें।"
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Hindi",
+      "translation": "कम स्टॉक वाले SKUs के लिए पुनःपूर्ति शुरू करें (स्वचालित रूप से PO बनाएं)।"
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Hindi",
+      "translation": "इलाका"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Hindi",
+      "translation": "इस महीने के ऑर्डर"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Hindi",
+      "translation": "लंबित ऑर्डर"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Hindi",
+      "translation": "वितरित किए गए ऑर्डर"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Hindi",
+      "translation": "क्षेत्रीय जानकारी"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Hindi",
+      "translation": "देश"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Hindi",
+      "translation": "शहर"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Hindi",
+      "translation": "क्षेत्र"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Hindi",
+      "translation": "त्वरित कार्रवाइयां"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Hindi",
+      "translation": "नए आदेश"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Hindi",
+      "translation": "ऑर्डर देखें"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Hindi",
+      "translation": "इनवॉइस देखें"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Hindi",
+      "translation": "प्रोफ़ाइल सेटिंग्स"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Hindi",
+      "translation": "डैशबोर्ड लोड हो रहा है..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Hindi",
+      "translation": "गलती"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Hindi",
+      "translation": "मेरे आदेश"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Hindi",
+      "translation": "आदेश कामतत्व"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Hindi",
+      "translation": "तारीख"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Hindi",
+      "translation": "स्थिति"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Hindi",
+      "translation": "सामान"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Hindi",
+      "translation": "कुल राशि"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Hindi",
+      "translation": "कार्रवाई"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Hindi",
+      "translation": "विवरण देखें"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Hindi",
+      "translation": "स्थिति"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Hindi",
+      "translation": "आरंभ करने की तिथि"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Hindi",
+      "translation": "अंतिम तिथि"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Hindi",
+      "translation": "सभी स्थितियाँ"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Hindi",
+      "translation": "फ़िल्टर साफ़ करें"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Hindi",
+      "translation": "लंबित"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Hindi",
+      "translation": "प्रसंस्करण"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Hindi",
+      "translation": "पहुंचा दिया"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Hindi",
+      "translation": "रद्द कर दिया गया"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Hindi",
+      "translation": "कोई ऑर्डर नहीं मिला"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Hindi",
+      "translation": "ऑर्डर लोड हो रहे हैं..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Hindi",
+      "translation": "पृष्ठ"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Hindi",
+      "translation": "का"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Hindi",
+      "translation": "पहले का"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Hindi",
+      "translation": "अगला"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Hindi",
+      "translation": "ऑर्डर का विवरण"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Hindi",
+      "translation": "ऑर्डर पर वापस जाएँ"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Hindi",
+      "translation": "आदेश कामतत्व"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Hindi",
+      "translation": "स्थिति"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Hindi",
+      "translation": "आर्डर की तारीख"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Hindi",
+      "translation": "डिलीवरी की तारीख"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Hindi",
+      "translation": "डिलिवरी का पता"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Hindi",
+      "translation": "नोट्स"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Hindi",
+      "translation": "आदेश आइटम"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Hindi",
+      "translation": "उत्पाद"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Hindi",
+      "translation": "एसकेयू"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Hindi",
+      "translation": "मात्रा"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Hindi",
+      "translation": "यूनिट मूल्य"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Hindi",
+      "translation": "कुल"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Hindi",
+      "translation": "कुल राशि"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Hindi",
+      "translation": "स्थिति समयरेखा"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Hindi",
+      "translation": "ऑर्डर नहीं मिला"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Hindi",
+      "translation": "नया ऑर्डर बनाएं"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Hindi",
+      "translation": "आदेश आइटम"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Hindi",
+      "translation": "मद जोड़ें"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Hindi",
+      "translation": "अभी तक कोई आइटम नहीं जोड़ा गया है। शुरू करने के लिए \"आइटम जोड़ें\" पर क्लिक करें।"
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Hindi",
+      "translation": "ऑर्डर का विवरण"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Hindi",
+      "translation": "डिलीवरी की तारीख"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Hindi",
+      "translation": "डिलिवरी का पता"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Hindi",
+      "translation": "नोट्स"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Hindi",
+      "translation": "कुल राशि"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Hindi",
+      "translation": "ऑर्डर बनाएं"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Hindi",
+      "translation": "व्यवस्था स्थापित करना..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Hindi",
+      "translation": "रद्द करना"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Hindi",
+      "translation": "उत्पाद का चयन करें"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Hindi",
+      "translation": "उत्पाद"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Hindi",
+      "translation": "मात्रा"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Hindi",
+      "translation": "यूनिट मूल्य"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Hindi",
+      "translation": "निकालना"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Hindi",
+      "translation": "उप-योग"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Hindi",
+      "translation": "आदेश कामतत्व"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Hindi",
+      "translation": "कम से कम एक ऑर्डर आइटम आवश्यक है"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Hindi",
+      "translation": "उत्पाद आवश्यक है"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Hindi",
+      "translation": "मात्रा 0 से अधिक होनी चाहिए"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Hindi",
+      "translation": "इकाई मूल्य ऋणात्मक नहीं होना चाहिए"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Hindi",
+      "translation": "डिलीवरी तिथि का प्रारूप अमान्य है"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Hindi",
+      "translation": "डिलीवरी की तारीख अतीत में नहीं हो सकती।"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Hindi",
+      "translation": "मेरे चालान"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Hindi",
+      "translation": "चालान संख्या"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Hindi",
+      "translation": "चालान की तारीख"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Hindi",
+      "translation": "दो डेट्स"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Hindi",
+      "translation": "मात्रा"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Hindi",
+      "translation": "चुकाई गई राशि"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Hindi",
+      "translation": "भुगतान की स्थिति"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Hindi",
+      "translation": "भुगतान की स्थिति"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Hindi",
+      "translation": "सभी स्थितियाँ"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Hindi",
+      "translation": "फ़िल्टर साफ़ करें"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Hindi",
+      "translation": "चुकाया गया"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Hindi",
+      "translation": "अवैतनिक"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Hindi",
+      "translation": "आंशिक"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Hindi",
+      "translation": "कोई बिल नहीं मिला"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Hindi",
+      "translation": "इनवॉइस लोड हो रहे हैं..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Hindi",
+      "translation": "मेरी प्रोफाइल"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Hindi",
+      "translation": "खाता संबंधी जानकारी"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Hindi",
+      "translation": "वितरक आईडी"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Hindi",
+      "translation": "इलाका"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Hindi",
+      "translation": "देश"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Hindi",
+      "translation": "शहर"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Hindi",
+      "translation": "खाता बनाया गया"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Hindi",
+      "translation": "प्रोफ़ाइल अपडेट करें"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Hindi",
+      "translation": "नाम"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Hindi",
+      "translation": "ईमेल"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Hindi",
+      "translation": "फ़ोन"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Hindi",
+      "translation": "पता"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Hindi",
+      "translation": "भाषा"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Hindi",
+      "translation": "मुद्रा"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Hindi",
+      "translation": "परिवर्तनों को सुरक्षित करें"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Hindi",
+      "translation": "सहेजा जा रहा है..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Hindi",
+      "translation": "प्रोफ़ाइल सफलतापूर्वक अपडेट हो गई"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Hindi",
+      "translation": "प्रोफ़ाइल लोड हो रही है..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Hindi",
+      "translation": "ईमेल का प्रारूप अमान्य है"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Hindi",
+      "translation": "अमान्य फ़ोन प्रारूप"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Hindi",
+      "translation": "गलती"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Hindi",
+      "translation": "लोड हो रहा है..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Hindi",
+      "translation": "बचाना"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Hindi",
+      "translation": "रद्द करना"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Hindi",
+      "translation": "पीछे"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Hindi",
+      "translation": "जमा करना"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Hindi",
+      "translation": "मिटाना"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Hindi",
+      "translation": "संपादन करना"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Hindi",
+      "translation": "देखना"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Hindi",
+      "translation": "खोज"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Hindi",
+      "translation": "फ़िल्टर"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Hindi",
+      "translation": "स्पष्ट"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Hindi",
+      "translation": "आवेदन करना"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Hindi",
+      "translation": "बंद करना"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Hindi",
+      "translation": "पुष्टि करना"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Hindi",
+      "translation": "हाँ"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Hindi",
+      "translation": "नहीं"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Hindi",
+      "translation": "कानूनी संचालन प्रणाली"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Hindi",
+      "translation": "कानूनी ओएस"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Hindi",
+      "translation": "पहुंच अस्वीकृत"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Hindi",
+      "translation": "आपको लीगल ओएस मॉड्यूल तक पहुंचने की अनुमति नहीं है।"
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Hindi",
+      "translation": "डैशबोर्ड"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Hindi",
+      "translation": "अनुबंध"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Hindi",
+      "translation": "प्रमाण पत्र"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Hindi",
+      "translation": "अनुपालन"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Hindi",
+      "translation": "कानूनी डैशबोर्ड"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Hindi",
+      "translation": "कानूनी संचालन और अनुपालन स्थिति का अवलोकन"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Hindi",
+      "translation": "सक्रिय ट्रेडमार्क"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Hindi",
+      "translation": "सक्रिय अनुबंध"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Hindi",
+      "translation": "अनुपालन स्थिति"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Hindi",
+      "translation": "ट्रेडमार्क"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Hindi",
+      "translation": "ट्रेडमार्क पंजीकरण और आवेदनों का प्रबंधन करें"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Hindi",
+      "translation": "नया ट्रेडमार्क जोड़ें"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Hindi",
+      "translation": "देश"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Hindi",
+      "translation": "स्थिति"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Hindi",
+      "translation": "सभी देश"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Hindi",
+      "translation": "सभी स्थितियाँ"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Hindi",
+      "translation": "फ़िल्टर साफ़ करें"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Hindi",
+      "translation": "ब्रांड का नाम"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Hindi",
+      "translation": "कक्षा"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Hindi",
+      "translation": "देश"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Hindi",
+      "translation": "आवेदन नहीं"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Hindi",
+      "translation": "स्थिति"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Hindi",
+      "translation": "समाप्ति तिथि"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Hindi",
+      "translation": "कार्रवाई"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Hindi",
+      "translation": "ट्रेडमार्क संपादित करें"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Hindi",
+      "translation": "नया ट्रेडमार्क जोड़ें"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Hindi",
+      "translation": "ट्रेडमार्क देखें"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Hindi",
+      "translation": "ब्रांड का नाम"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Hindi",
+      "translation": "कक्षा संख्या"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Hindi",
+      "translation": "देश"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Hindi",
+      "translation": "आवेदन संख्या"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Hindi",
+      "translation": "स्थिति"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Hindi",
+      "translation": "समाप्ति तिथि"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Hindi",
+      "translation": "दस्तावेज़"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Hindi",
+      "translation": "कोई दस्तावेज़ संलग्न नहीं हैं"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Hindi",
+      "translation": "दस्तावेज़ जोड़ें"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Hindi",
+      "translation": "निकालना"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Hindi",
+      "translation": "ट्रेडमार्क लोड करने में विफल"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Hindi",
+      "translation": "ट्रेडमार्क सहेजने में विफल। कृपया पुनः प्रयास करें।"
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Hindi",
+      "translation": "कानूनी मामले"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Hindi",
+      "translation": "कानूनी मामलों का प्रबंधन करें और उनकी स्थिति पर नज़र रखें"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Hindi",
+      "translation": "नया मामला"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Hindi",
+      "translation": "मामले का शीर्षक"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Hindi",
+      "translation": "मामले का प्रकार"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Hindi",
+      "translation": "देश"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Hindi",
+      "translation": "विवरण"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Hindi",
+      "translation": "को सौंपना"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Hindi",
+      "translation": "स्थिति"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Hindi",
+      "translation": "सुनवाई की तारीख"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Hindi",
+      "translation": "मामले का शीर्षक"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Hindi",
+      "translation": "प्रकार"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Hindi",
+      "translation": "देश"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Hindi",
+      "translation": "को सौंपना"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Hindi",
+      "translation": "स्थिति"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Hindi",
+      "translation": "सुनवाई की तारीख"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Hindi",
+      "translation": "कार्रवाई"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Hindi",
+      "translation": "खुला"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Hindi",
+      "translation": "प्रगति पर है"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Hindi",
+      "translation": "बंद किया हुआ"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Hindi",
+      "translation": "रद्द कर दिया गया"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Hindi",
+      "translation": "बेड़े का मानचित्र दृश्य"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Hindi",
+      "translation": "बिक्री अधिकारियों और डिलीवरी वाहनों की रीयल-टाइम ट्रैकिंग"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Hindi",
+      "translation": "सक्रिय कर्मचारी"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Hindi",
+      "translation": "कोई सक्रिय कर्मचारी नहीं"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Hindi",
+      "translation": "लोड हो रहा है..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Hindi",
+      "translation": "रूट रीप्ले"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Hindi",
+      "translation": "कर्मचारी"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Hindi",
+      "translation": "रफ़्तार"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Hindi",
+      "translation": "रीसेट करें"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Hindi",
+      "translation": "खेल"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Hindi",
+      "translation": "विराम"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Hindi",
+      "translation": "अंक"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Hindi",
+      "translation": "मार्ग संबंधी कोई जानकारी उपलब्ध नहीं है"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Hindi",
+      "translation": "रूट लोड हो रहा है..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Hindi",
+      "translation": "प्रतिस्पर्धी उत्पाद"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Hindi",
+      "translation": "प्रतिस्पर्धियों के उत्पाद की जानकारी पर नज़र रखें"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Hindi",
+      "translation": "उत्पाद जोड़ें"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Hindi",
+      "translation": "प्रतिस्पर्धी उत्पाद जोड़ें"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Hindi",
+      "translation": "ब्रांड"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Hindi",
+      "translation": "एसकेयू नाम"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Hindi",
+      "translation": "वर्ग"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Hindi",
+      "translation": "आकार"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Hindi",
+      "translation": "कीमत"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Hindi",
+      "translation": "मुद्रा"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Hindi",
+      "translation": "देश"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Hindi",
+      "translation": "ब्रांड"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Hindi",
+      "translation": "एसकेयू नाम"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Hindi",
+      "translation": "वर्ग"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Hindi",
+      "translation": "आकार"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Hindi",
+      "translation": "कीमत"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Hindi",
+      "translation": "देश"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Hindi",
+      "translation": "तिथि जोड़ी"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Hindi",
+      "translation": "उत्पाद लोड करने में विफल"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Hindi",
+      "translation": "उत्पाद बनाने में विफलता। कृपया पुनः प्रयास करें।"
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Hindi",
+      "translation": "कोई प्रतिस्पर्धी उत्पाद नहीं मिले"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Hindi",
+      "translation": "उत्पाद लोड हो रहे हैं..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Hindi",
+      "translation": "प्रतिस्पर्धी डैशबोर्ड"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Hindi",
+      "translation": "प्रतिस्पर्धी उत्पादों पर विश्लेषण और अंतर्दृष्टि"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Hindi",
+      "translation": "कुल उत्पाद"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Hindi",
+      "translation": "ट्रैक किए गए ब्रांड"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Hindi",
+      "translation": "देशों"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Hindi",
+      "translation": "श्रेणियाँ"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Hindi",
+      "translation": "ब्रांड के अनुसार उत्पाद"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Hindi",
+      "translation": "देश के अनुसार उत्पाद"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Hindi",
+      "translation": "श्रेणी के अनुसार उत्पाद"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Hindi",
+      "translation": "आंकड़े लोड हो रहे हैं..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Hindi",
+      "translation": "कोई आंकड़े उपलब्ध नहीं हैं"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Hindi",
+      "translation": "अवलोकन"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Hindi",
+      "translation": "आदेश"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Hindi",
+      "translation": "भंडार"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Hindi",
+      "translation": "रसद"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Hindi",
+      "translation": "वित्त"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Hindi",
+      "translation": "सीआरएम"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Hindi",
+      "translation": "मानव संसाधन"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Hindi",
+      "translation": "कार्यकारिणी"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Hindi",
+      "translation": "इन्वेस्टर"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Hindi",
+      "translation": "कानूनी/बौद्धिक संपदा अधिकार"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Hindi",
+      "translation": "प्रतियोगी"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Hindi",
+      "translation": "आयात/निर्यात"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Hindi",
+      "translation": "जीपीएस ट्रैकिंग"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Hindi",
+      "translation": "स्थानीयकरण"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Hindi",
+      "translation": "वर्कफ़्लो"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Hindi",
+      "translation": "व्यवस्थापक"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Hindi",
+      "translation": "सीआरएम ओएस"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Hindi",
+      "translation": "ग्राहक 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Hindi",
+      "translation": "संपूर्ण ग्राहक प्रोफाइल, बातचीत का इतिहास और संबंध प्रबंधन"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Hindi",
+      "translation": "डिजिटल अभियान"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Hindi",
+      "translation": "मल्टी-चैनल मार्केटिंग अभियान (इंस्टाग्राम, फेसबुक, टिकटॉक, व्हाट्सएप)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Hindi",
+      "translation": "संभावित संपर्क और अवसर"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Hindi",
+      "translation": "लीड प्रबंधन, योग्यता और अवसर पाइपलाइन"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Hindi",
+      "translation": "ग्राहक सहेयता"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Hindi",
+      "translation": "टिकट प्रबंधन, ग्राहक सेवा और समस्या समाधान"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Hindi",
+      "translation": "विश्वसनीयता कार्यक्रम"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Hindi",
+      "translation": "खुदरा विक्रेता की वफादारी, गेमिफिकेशन और पुरस्कार प्रबंधन"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Hindi",
+      "translation": "ग्राहक 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Hindi",
+      "translation": "नया ग्राहक"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Hindi",
+      "translation": "कुल ग्राहक"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Hindi",
+      "translation": "सक्रिय"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Hindi",
+      "translation": "नया"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Hindi",
+      "translation": "संतुष्टि"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Hindi",
+      "translation": "ग्राहक प्रबंधन"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Hindi",
+      "translation": "अपने ग्राहक संबंधों, बातचीत और अभियानों को देखें और प्रबंधित करें।"
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Hindi",
+      "translation": "लोड हो रहा है..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Hindi",
+      "translation": "सीआरएम डेटा लोड करने में त्रुटि"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Hindi",
+      "translation": "अवलोकन"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Hindi",
+      "translation": "आदेश"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Hindi",
+      "translation": "भंडार"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Hindi",
+      "translation": "रसद"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Hindi",
+      "translation": "वित्त"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Hindi",
+      "translation": "सीआरएम"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Hindi",
+      "translation": "मानव संसाधन"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Hindi",
+      "translation": "कार्यकारिणी"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Hindi",
+      "translation": "इन्वेस्टर"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Hindi",
+      "translation": "कानूनी/बौद्धिक संपदा अधिकार"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Hindi",
+      "translation": "प्रतियोगी"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Hindi",
+      "translation": "आयात/निर्यात"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Hindi",
+      "translation": "जीपीएस ट्रैकिंग"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Hindi",
+      "translation": "स्थानीयकरण"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Hindi",
+      "translation": "वर्कफ़्लो"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Hindi",
+      "translation": "व्यवस्थापक"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Hindi",
+      "translation": "ग्राहकों"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Hindi",
+      "translation": "कर्मचारी"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Hindi",
+      "translation": "लाभ"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Hindi",
+      "translation": "आपूर्तिकर्ता कॉकपिट लोड हो रहा है…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Hindi",
+      "translation": "खरीद आदेश"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स द्वारा पाला-पोसा गया"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Hindi",
+      "translation": "शिपमेंट / जीआरएन"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Hindi",
+      "translation": "इस सप्ताह स्वीकार किया गया"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Hindi",
+      "translation": "इनवॉइस बनाए गए"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Hindi",
+      "translation": "भुगतान की प्रतीक्षा"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Hindi",
+      "translation": "भुगतान लंबित हैं"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Hindi",
+      "translation": "रिलीज के लिए निर्धारित"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Hindi",
+      "translation": "गुणवत्ता / शिकायतें"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Hindi",
+      "translation": "ओपन टिकट"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Hindi",
+      "translation": "पूर्वानुमान (अगले 4 सप्ताह)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Hindi",
+      "translation": "एआई प्लेसहोल्डर"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Hindi",
+      "translation": "आपूर्तिकर्ता की कार्रवाइयां"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Hindi",
+      "translation": "आगामी शिपमेंट की पुष्टि करें और जीआरएन शेड्यूल को अपडेट करें।"
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Hindi",
+      "translation": "बकाया बिलों की समीक्षा करें और भुगतान संबंधी सलाह साझा करें।"
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Hindi",
+      "translation": "गुणवत्ता आश्वासन साक्ष्य के आधार पर लंबित गुणवत्ता संबंधी शिकायतों का समाधान करें।"
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Hindi",
+      "translation": "उपयोगकर्ता नाम"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Hindi",
+      "translation": "पासवर्ड"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Hindi",
+      "translation": "ईमेल"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Hindi",
+      "translation": "जमा करना"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Hindi",
+      "translation": "रद्द करना"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Hindi",
+      "translation": "बचाना"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Hindi",
+      "translation": "मिटाना"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Hindi",
+      "translation": "खोज"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Hindi",
+      "translation": "फ़िल्टर"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Hindi",
+      "translation": "रीसेट करें"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Hindi",
+      "translation": "बंद करना"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Hindi",
+      "translation": "पीछे"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Hindi",
+      "translation": "अगला"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Hindi",
+      "translation": "पहले का"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Hindi",
+      "translation": "पुष्टि करना"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Hindi",
+      "translation": "मुझे याद करो"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Hindi",
+      "translation": "पासवर्ड भूल गए?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Hindi",
+      "translation": "ईमेल की जरूरत है"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Hindi",
+      "translation": "कृपया एक मान्य ईमेल पता प्रविष्ट करें"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Hindi",
+      "translation": "उत्पादों"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स कौन-कौन से उत्पाद पेश करता है?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Hindi",
+      "translation": "हम कई श्रेणियों में प्रीमियम खाद्य उत्पादों की एक विस्तृत श्रृंखला पेश करते हैं, जिनमें मिठाई, पेय पदार्थ, स्नैक्स, पास्ता, बेकरी आइटम और फ्रोजन फूड शामिल हैं।"
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Hindi",
+      "translation": "मैं हार्विक्स के उत्पाद कहाँ से खरीद सकता हूँ?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Hindi",
+      "translation": "हमारे उत्पाद 40 से अधिक देशों में खुदरा दुकानों पर उपलब्ध हैं। अपने आस-पास के खुदरा विक्रेता को खोजने के लिए हमारे स्टोर लोकेटर या संपर्क पृष्ठ का उपयोग करें।"
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Hindi",
+      "translation": "क्या आप थोक ऑर्डर की सुविधा देते हैं?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Hindi",
+      "translation": "जी हां, हम व्यवसायों और खुदरा विक्रेताओं के लिए थोक ऑर्डर पर छूट प्रदान करते हैं। अधिक जानकारी के लिए हमारा थोक ऑर्डर छूट पृष्ठ देखें।"
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Hindi",
+      "translation": "ऑर्डर और शिपिंग"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Hindi",
+      "translation": "आपके पास शिपिंग के क्या-क्या विकल्प हैं?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Hindi",
+      "translation": "हम स्टैंडर्ड, एक्सप्रेस और अंतरराष्ट्रीय शिपिंग सहित कई शिपिंग विकल्प प्रदान करते हैं। 50 डॉलर से अधिक के ऑर्डर पर मुफ्त शिपिंग उपलब्ध है।"
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Hindi",
+      "translation": "डिलीवरी में कितना समय लगता है?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Hindi",
+      "translation": "डिलीवरी का समय स्थान के अनुसार अलग-अलग होता है। सामान्य डिलीवरी में आमतौर पर 5-7 कार्यदिवस लगते हैं, जबकि एक्सप्रेस डिलीवरी में 2-3 कार्यदिवस लगते हैं।"
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Hindi",
+      "translation": "क्या मैं अपने ऑर्डर को ट्रैक कर सकता हूँ?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Hindi",
+      "translation": "जी हां, आप अपने ऑर्डर की पुष्टि ईमेल में दिए गए ट्रैकिंग नंबर का उपयोग करके अपने ऑर्डर को ट्रैक कर सकते हैं।"
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Hindi",
+      "translation": "खाता और भुगतान"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Hindi",
+      "translation": "मैं एक खाता कैसे बनाऊं?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Hindi",
+      "translation": "हेडर में \"साइन इन\" पर क्लिक करें और नया खाता पंजीकृत करने के लिए \"खाता बनाएं\" चुनें।"
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Hindi",
+      "translation": "आप कौन सी भुगतान पद्धतियां स्वीकार करते हैं?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Hindi",
+      "translation": "हम बी2बी ऑर्डर के लिए सभी प्रमुख क्रेडिट कार्ड, डेबिट कार्ड, पेपाल और बैंक ट्रांसफर स्वीकार करते हैं।"
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Hindi",
+      "translation": "क्या मेरी भुगतान जानकारी सुरक्षित है?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Hindi",
+      "translation": "जी हां, हम आपकी भुगतान जानकारी की सुरक्षा के लिए उद्योग-मानक एन्क्रिप्शन का उपयोग करते हैं।"
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Hindi",
+      "translation": "लाभ और धन वापसी"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Hindi",
+      "translation": "आपकी वापसी नीति क्या है?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Hindi",
+      "translation": "हम मूल पैकेजिंग में बंद उत्पादों के लिए 30 दिन की वापसी नीति प्रदान करते हैं। वापसी की अनुमति के लिए कृपया हमारी ग्राहक सेवा से संपर्क करें।"
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Hindi",
+      "translation": "मैं रिफंड के लिए आवेदन कैसे करूं?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Hindi",
+      "translation": "कृपया अपने ऑर्डर नंबर और वापसी के कारण के साथ हमारी ग्राहक सेवा टीम से संपर्क करें। हम 5-7 कार्य दिवसों के भीतर आपका रिफंड प्रोसेस कर देंगे।"
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Hindi",
+      "translation": "क्या आपके मन में अभी भी कोई सवाल है?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Hindi",
+      "translation": "हमारी ग्राहक सेवा टीम आपकी सहायता के लिए यहाँ मौजूद है।"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Hindi",
+      "translation": "हमसे संपर्क करें"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Hindi",
+      "translation": "करियर"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Hindi",
+      "translation": "करियर | हार्विक्स"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स ग्लोबल वेंचर्स से जुड़ें — 40 से अधिक देशों में अवसरों का पता लगाएं।"
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Hindi",
+      "translation": "हमारे साथ जुड़ें"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Hindi",
+      "translation": "वैश्विक व्यापार के भविष्य का निर्माण करें"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Hindi",
+      "translation": "हम 40 से अधिक देशों में विस्तार कर रहे हैं। वैश्विक वाणिज्य के लिए एआई-संचालित ऑपरेटिंग सिस्टम विकसित करने वाली टीम में शामिल हों।"
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Hindi",
+      "translation": "खुले स्थानों"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Hindi",
+      "translation": "देशों"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Hindi",
+      "translation": "उद्योग क्षेत्र"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Hindi",
+      "translation": "विभाग भर्ती कर रहे हैं"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Hindi",
+      "translation": "विभागवार रिक्त पद"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Hindi",
+      "translation": "बिक्री वितरण"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Hindi",
+      "translation": "40 से अधिक बाजारों में राजस्व बढ़ाएं। क्षेत्रीय प्रबंधन, प्रमुख ग्राहक, वितरक संबंध।"
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Hindi",
+      "translation": "आपूर्ति श्रृंखला और लॉजिस्टिक्स"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Hindi",
+      "translation": "कारखाने से लेकर दुकान तक संपूर्ण आपूर्ति श्रृंखला। फ्लीट प्रबंधन, भंडारण, अंतिम-मील डिलीवरी।"
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Hindi",
+      "translation": "प्रौद्योगिकी और एआई"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स ओएस का निर्माण करें — हमारा एआई-संचालित एंटरप्राइज प्लेटफॉर्म। फुल-स्टैक, एमएल इंजीनियरिंग, डेटा साइंस।"
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Hindi",
+      "translation": "वित्त एवं राजकोष"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Hindi",
+      "translation": "बहु-मुद्रा कोषागार, व्यापार वित्त, एचपे डिजिटल भुगतान, विभिन्न क्षेत्रों में विदेशी मुद्रा प्रबंधन।"
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Hindi",
+      "translation": "खरीद एवं सोर्सिंग"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Hindi",
+      "translation": "15 से अधिक मूल देशों से वैश्विक स्तर पर माल की सोर्सिंग। आपूर्तिकर्ता ऑडिट, गुणवत्ता नियंत्रण, फैक्ट्री-डायरेक्ट कार्यक्रम।"
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Hindi",
+      "translation": "मानव संसाधन"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Hindi",
+      "translation": "विभिन्न भौगोलिक क्षेत्रों और संस्कृतियों में प्रतिभा अधिग्रहण, प्रशिक्षण एवं विकास, और प्रदर्शन प्रबंधन।"
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Hindi",
+      "translation": "कानूनी एवं अनुपालन"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Hindi",
+      "translation": "व्यापार अनुपालन, प्रतिबंधों की जांच, बौद्धिक संपदा संरक्षण, विभिन्न न्यायक्षेत्रों में अनुबंध प्रबंधन।"
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Hindi",
+      "translation": "मार्केटिंग और ब्रांड"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Hindi",
+      "translation": "बहुभाषी अभियान, 38 स्थानीय भाषाओं में सामग्री, डिजिटल मार्केटिंग, 10 क्षेत्रों के लिए ब्रांड रणनीति।"
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Hindi",
+      "translation": "भूमिका"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स क्यों?"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Hindi",
+      "translation": "वैश्विक गतिशीलता"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Hindi",
+      "translation": "दुबई, लंदन, कराची, लाहौर और 40 से अधिक बाजारों में काम करें"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Hindi",
+      "translation": "विकास पथ"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Hindi",
+      "translation": "तेजी से विकसित हो रहे उद्यम में करियर में तेजी से प्रगति"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Hindi",
+      "translation": "एआई-प्रथम संस्कृति"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Hindi",
+      "translation": "अत्याधुनिक एआई और रीयल-टाइम इंटेलिजेंस सिस्टम के साथ काम करें"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Hindi",
+      "translation": "प्रतिस्पर्धी पैकेज"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Hindi",
+      "translation": "बाजार में सबसे बेहतर वेतन, आवास और लाभ"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Hindi",
+      "translation": "लर्निंग बजट"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Hindi",
+      "translation": "पाठ्यक्रमों, सम्मेलनों और प्रमाणन के लिए वार्षिक विकास बजट"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Hindi",
+      "translation": "लचीला कार्य"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Hindi",
+      "translation": "विश्वभर में क्षेत्रीय हब कार्यालयों के साथ हाइब्रिड व्यवस्थाएँ"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Hindi",
+      "translation": "हमारी रणनीति"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Hindi",
+      "translation": "रणनीति | हार्विच"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Hindi",
+      "translation": "नवाचार और उत्कृष्टता के माध्यम से एक स्थायी भविष्य का निर्माण करना"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Hindi",
+      "translation": "नवाचार और उत्कृष्टता के माध्यम से एक स्थायी भविष्य का निर्माण करना"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Hindi",
+      "translation": "वैश्विक विस्तार"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Hindi",
+      "translation": "उभरते बाजारों में अपनी उपस्थिति का विस्तार करते हुए स्थापित बाजारों में अपनी स्थिति को मजबूत करना।"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Hindi",
+      "translation": "उत्पाद नवीनता"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Hindi",
+      "translation": "उपभोक्ताओं की बदलती प्राथमिकताओं को पूरा करने वाले नए उत्पादों को विकसित करने के लिए अनुसंधान एवं विकास में निवेश करना।"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Hindi",
+      "translation": "वहनीयता"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Hindi",
+      "translation": "हम अपनी आपूर्ति श्रृंखला और परिचालन में सतत प्रथाओं के प्रति प्रतिबद्ध हैं।"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Hindi",
+      "translation": "डिजिटल परिवर्तन"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Hindi",
+      "translation": "ग्राहक अनुभव और परिचालन दक्षता बढ़ाने के लिए प्रौद्योगिकी का उपयोग करना"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Hindi",
+      "translation": "हमारा नज़रिया"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Hindi",
+      "translation": "गुणवत्ता, नवाचार और स्थिरता के लिए मान्यता प्राप्त विश्व की अग्रणी प्रीमियम उपभोक्ता वस्तु कंपनी बनना।"
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स ग्लोबल वेंचर्स | प्रीमियम ग्लोबल ट्रेडिंग"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Hindi",
+      "translation": "10 से अधिक उद्योगों में प्रीमियम उत्पाद वितरित करने वाली अग्रणी वैश्विक व्यापार कंपनी। 2019 से 50 से अधिक देशों में कार्यरत।"
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Hindi",
+      "translation": "हमारे बारे में | हार्विक्स ग्लोबल वेंचर्स"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Hindi",
+      "translation": "जानिए कैसे हार्विक्स ग्लोबल वेंचर्स 40 से अधिक देशों और 10 उद्योगों में वैश्विक व्यापार की अग्रणी शक्ति बन गई।"
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Hindi",
+      "translation": "हमसे संपर्क करें | हार्विक्स ग्लोबल वेंचर्स"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Hindi",
+      "translation": "मध्य पूर्व, दक्षिण एशिया, यूरोप, अफ्रीका और अमेरिका सहित दुनिया भर में स्थित हार्विक के कार्यालयों से संपर्क करें।"
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Hindi",
+      "translation": "उत्पाद | हार्विक्स ग्लोबल वेंचर्स"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Hindi",
+      "translation": "एफएमसीजी, वस्त्र, कमोडिटीज और औद्योगिक समाधानों में हार्विक की प्रीमियम उत्पाद श्रृंखला का अन्वेषण करें।"
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Hindi",
+      "translation": "करियर | हार्विक्स ग्लोबल वेंचर्स"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स ग्लोबल वेंचर्स से जुड़ें — एफएमसीजी, वस्त्र, लॉजिस्टिक्स और प्रौद्योगिकी क्षेत्रों में 40 से अधिक देशों में अवसरों का पता लगाएं।"
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Hindi",
+      "translation": "मीडिया सेंटर | हार्विक्स ग्लोबल वेंचर्स"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स मीडिया सेंटर — प्रेस विज्ञप्तियां, नवीनतम समाचार, ब्रांड से संबंधित सामग्री और मीडिया संपर्क।"
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Hindi",
+      "translation": "हमारी रणनीति | हार्विक्स ग्लोबल वेंचर्स"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Hindi",
+      "translation": "वैश्विक विस्तार, नवाचार, स्थिरता और डिजिटल परिवर्तन के लिए हार्विक का रणनीतिक दृष्टिकोण।"
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Hindi",
+      "translation": "कॉर्पोरेट सामाजिक उत्तरदायित्व | हार्विक्स"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स की सीएसआर पहलें — पर्यावरण संरक्षण, सामुदायिक कार्यक्रम और नैतिक व्यावसायिक प्रथाएं।"
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Hindi",
+      "translation": "अक्सर पूछे जाने वाले प्रश्न | हार्विक्स ग्लोबल वेंचर्स"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स के उत्पादों, सेवाओं, ऑर्डर करने और वैश्विक संचालन के बारे में अक्सर पूछे जाने वाले प्रश्न।"
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Hindi",
+      "translation": "वैश्विक स्थान | हार्विक्स"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Hindi",
+      "translation": "मध्य पूर्व, दक्षिण एशिया, यूरोप, अफ्रीका और अमेरिका में हार्विक के कार्यालय और परिचालन मौजूद हैं।"
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Hindi",
+      "translation": "नेतृत्व टीम | हार्विक्स"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स ग्लोबल वेंचर्स की नेतृत्व टीम से मिलिए, जो 40 से अधिक बाजारों और 10 उद्योग क्षेत्रों में काम कर रही है।"
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Hindi",
+      "translation": "सहायता केंद्र | हार्विक्स"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Hindi",
+      "translation": "ऑर्डर, अकाउंट, शिपिंग और हार्विक्स सेवाओं से संबंधित सहायता प्राप्त करें।"
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Hindi",
+      "translation": "अनुपालन और नैतिकता | हार्विक्स"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Hindi",
+      "translation": "हार्विक नियामकीय अनुपालन, नैतिक व्यावसायिक प्रथाओं और वैश्विक मानकों के प्रति प्रतिबद्ध है।"
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Hindi",
+      "translation": "हमारा इतिहास | हार्विक्स"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Hindi",
+      "translation": "2019 में दुबई में शुरू हुए एक स्टार्टअप से लेकर 40 से अधिक देशों में फैले एक वैश्विक उद्यम तक - यह है हार्विक्स की कहानी।"
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Hindi",
+      "translation": "न्यूज़लेटर | हार्विक्स"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Hindi",
+      "translation": "उद्योग जगत की जानकारियों और नए उत्पादों की जानकारी के लिए हार्विक्स न्यूज़लेटर की सदस्यता लें।"
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Hindi",
+      "translation": "लॉग इन करें | हार्विक्स"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Hindi",
+      "translation": "अपने हार्विक्स खाते में लॉग इन करके ऑर्डर प्रबंधित करें और प्लेटफ़ॉर्म तक पहुंचें।"
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Hindi",
+      "translation": "अनुसंधान और नवाचार | हार्विक्स"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स की अनुसंधान पहल और नवाचार कार्यक्रम हमारी वैश्विक रणनीति को आगे बढ़ा रहे हैं।"
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Hindi",
+      "translation": "निवेशक संबंध | हार्विक्स"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Hindi",
+      "translation": "हार्विक्स ग्लोबल वेंचर्स से निवेशकों की जानकारी, वित्तीय रिपोर्ट और कॉर्पोरेट घोषणाएं।"
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Hindi",
+      "translation": "पृष्ठ नहीं मिला"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Hindi",
+      "translation": "404 — पृष्ठ नहीं मिला"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Hindi",
+      "translation": "आप जिस पेज को खोज रहे हैं वह मौजूद नहीं है या उसे स्थानांतरित कर दिया गया है।"
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Hindi",
+      "translation": "मुखपृष्ठ प्र जाएं"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Hindi",
+      "translation": "वापस जाओ"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Hindi",
+      "translation": "कुछ गलत हो गया"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Hindi",
+      "translation": "कुछ गलत हो गया"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Hindi",
+      "translation": "हमें खेद है, लेकिन कुछ अप्रत्याशित घटना घटित हो गई है। कृपया पृष्ठ को रीफ़्रेश करने का प्रयास करें।"
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Hindi",
+      "translation": "पुनः प्रयास करें"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Hindi",
+      "translation": "पेज रीलोड करें"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Hindi",
+      "translation": "समर्थन से संपर्क करें"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Hindi",
+      "translation": "आवेदन के त्रुटि"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Hindi",
+      "translation": "गंभीर त्रुटि"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Hindi",
+      "translation": "एक गंभीर त्रुटि उत्पन्न हुई है। कृपया पृष्ठ को पुनः लोड करें।"
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Hindi",
+      "translation": "एप्लिकेशन रीलोड करें"
+    }
+  }
+}

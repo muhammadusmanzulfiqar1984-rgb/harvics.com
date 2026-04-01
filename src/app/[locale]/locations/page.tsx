@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Global Locations | Harvics',
-  description: 'Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and more.',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'locations')
 }
 
 interface LocationsPageProps {
@@ -58,15 +59,15 @@ export default async function LocationsPage({ params }: LocationsPageProps) {
     'Regional Office': 'bg-[#C3A35E]/15 text-[#6B1F2B]',
     'Operations Hub': 'bg-[#C3A35E]/15 text-[#6B1F2B]',
     'Distribution Center': 'bg-[#C3A35E]/15 text-[#6B1F2B]',
-    'Sales Office': 'bg-[#F5F1E8] text-[#6B1F2B]',
-    'Sourcing Office': 'bg-[#F5F1E8] text-[#6B1F2B]',
-    'Sourcing Hub': 'bg-[#F5F1E8] text-[#6B1F2B]',
+    'Sales Office': 'bg-white text-[#6B1F2B]',
+    'Sourcing Office': 'bg-white text-[#6B1F2B]',
+    'Sourcing Hub': 'bg-white text-[#6B1F2B]',
     'West Africa Hub': 'bg-[#C3A35E]/15 text-[#6B1F2B]',
     'East Africa Hub': 'bg-[#C3A35E]/15 text-[#6B1F2B]',
   }
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
       <section className="bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40">
         <div className="max-w-[1200px] mx-auto text-center">
@@ -114,7 +115,7 @@ export default async function LocationsPage({ params }: LocationsPageProps) {
                 >
                   <div className="flex items-start justify-between mb-3">
                     <h3 className="text-base font-semibold text-[#6B1F2B]">{office.city}, {office.country}</h3>
-                    <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 ${typeColors[office.type] || 'bg-[#F5F1E8] text-[#6B1F2B]'}`} style={{ borderRadius: 0 }}>
+                    <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 ${typeColors[office.type] || 'bg-white text-[#6B1F2B]'}`} style={{ borderRadius: 0 }}>
                       {office.type}
                     </span>
                   </div>

@@ -1,624 +1,1146 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
+    "welcome": "Üdvözöljük a",
     "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More"
+    "tagline": "Kiválóság a prémium fogyasztási cikkek terén 2019 óta",
+    "exploreProducts": "Termékek felfedezése",
+    "contact": "Kapcsolat",
+    "learnMore": "Tudj meg többet",
+    "brandStatement": "Vezető globális fogyasztási cikkeket gyártó vállalat, amely prémium élelmiszertermékeket szállít változatos kategóriákban, nemzetközi minőségi szabványoknak megfelelően.",
+    "taglineStart": "Kiválóság a prémium fogyasztási cikkek terén azóta",
+    "taglineYear": "2019",
+    "locations": "London • Milánó • New York",
+    "categories": {
+      "bakery": "Pékség",
+      "beverages": "Italok",
+      "confectionery": "Édesség",
+      "culinary": "Konyhai",
+      "frozenFoods": "Fagyasztott élelmiszerek",
+      "pasta": "Tészta",
+      "snacks": "rágcsálnivalók"
+    }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
+    "esgReport": "ESG Jelentés 2025",
+    "locations": "London • Milánó • New York",
+    "home": "Otthon",
+    "about": "Körülbelül",
+    "aboutUs": "Rólunk",
+    "brandStory": "Márkatörténet",
+    "products": "Termékek",
+    "ourProducts": "Termékeink",
+    "viewAllProducts": "Összes termék megtekintése",
     "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
-    "media": "Media",
-    "contactUs": "Contact Us",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store"
+    "investorRelations": "Befektetői kapcsolatok",
+    "investors": "Befektetők",
+    "media": "Média",
+    "contactUs": "Kapcsolat",
+    "countries": "Országok",
+    "portals": "Portálok",
+    "signIn": "Bejelentkezés",
+    "wishlist": "Kívánságlista",
+    "cart": "Bevásárlókocsi",
+    "help": "Segítség",
+    "findStore": "Áruház keresése",
+    "harvicsHouse": "Harvics-ház",
+    "money": "Pénz",
+    "sales": "Értékesítés",
+    "offers": "Ajánlatok",
+    "darkMode": "Sötét mód",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "Hitelkártya",
+        "msRewards": "M&S Rewards hitelkártya",
+        "clubRewards": "Klubjutalom",
+        "ourCards": "Hitelkártyáink"
+      },
+      "insurance": {
+        "title": "Biztosítás",
+        "home": "Lakásbiztosítás",
+        "travel": "Utazási biztosítás"
+      },
+      "travel": {
+        "title": "Utazási szolgáltatások",
+        "money": "Utazási pénz",
+        "exchange": "Árfolyamok"
+      },
+      "additional": {
+        "title": "További szolgáltatások",
+        "savings": "Megtakarítások és befektetések",
+        "personalLoans": "Személyi kölcsönök",
+        "financialSupport": "Pénzügyi támogatás"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "Jelenlegi eladások",
+      "clearance": "Kiárusítás",
+      "seasonal": "Szezonális akciók"
+    },
+    "offersDropdown": {
+      "specialOffers": "Különleges ajánlatok",
+      "promotions": "Promóciók",
+      "bulkOrders": "Tömeges rendelési kedvezmények"
+    }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products"
+    "ourProducts": "Termékeink",
+    "viewAllProducts": "Összes termék megtekintése",
+    "productCategories": "Termékkategóriáink",
+    "discoverPremium": "Fedezze fel gondossággal és kiváló minőséggel készített prémium termékkínálatunkat.",
+    "tier1": "1. szint: Kategóriák",
+    "tier2": "2. szint: Modulok",
+    "tier3": "3. szint: KPI-képernyők",
+    "tier4": "4. szint: Műveletek",
+    "reset": "Navigáció visszaállítása",
+    "noSubcategories": "Ehhez a kategóriához nem érhetők el alkategóriák.",
+    "pageTitle": "Termékek",
+    "subcategories": "Alkategóriák",
+    "bakery": "Pékség",
+    "bakeryDesc": "Frissen sült áruk és péksütemények.",
+    "beverages": "Italok",
+    "beveragesDesc": "Frissítő italok minden alkalomra.",
+    "confectionery": "Cukrászda",
+    "confectioneryDesc": "Édes finomságok és élvezetek.",
+    "culinary": "Konyhai",
+    "culinaryDesc": "Nélkülözhetetlen hozzávalók a konyhádba.",
+    "frozenFoods": "Fagyasztott élelmiszerek",
+    "frozenFoodsDesc": "Kényelmes és finom fagyasztott ételek.",
+    "pasta": "Tészta",
+    "pastaDesc": "Autentikus tésztafajták.",
+    "snacks": "rágcsálnivalók",
+    "snacksDesc": "Ízletes falatkák a nap bármely szakában."
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
+    "title": "Kapcsolatfelvétel",
+    "subtitle": "Szeretnénk hallani felőled. Lépj velünk kapcsolatba bármelyik elérhetőségünkön.",
+    "phone": "Telefon",
     "email": "Email",
     "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "callNow": "Hívjon most",
+    "sendEmail": "E-mail küldése",
+    "messageUs": "Üzenet nekünk"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "Médiaközpont",
+    "pageTitle": "Médiaközpont | Harvics",
+    "description": "Sajtóanyagok, márkaelemek és a Harvics Global Ventures legfrissebb hírei.",
+    "corporate": "Társasági",
+    "sections": {
+      "news": {
+        "title": "Hírek és sajtóközlemények",
+        "desc": "Legfrissebb bejelentések, piaci terjeszkedések, termékbevezetések és vállalati hírek a Harvics Global Ventures-től.",
+        "cta": "Olvassa el a legfrissebb híreket"
+      },
+      "gallery": {
+        "title": "Képgaléria",
+        "desc": "Nagy felbontású márkaelemek, termékfotók, létesítményfotók és rendezvényekről szóló tudósítások médiahasználatra.",
+        "cta": "Galéria böngészése"
+      },
+      "contacts": {
+        "title": "Médiakapcsolatok",
+        "desc": "Sajtómegkeresésekkel, interjúkérésekkel és partnerségi bejelentésekkel forduljon kommunikációs csapatunkhoz.",
+        "cta": "Kapcsolatfelvétel a sajtócsapattal"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "Lefedett piacok",
+      "industryVerticals": "Iparági vertikálisok",
+      "foundedIn": "Dubaiban alapították",
+      "languagesSupported": "Támogatott nyelvek"
+    },
+    "recentHeadlines": "Legutóbbi hírek",
+    "headlines": {
+      "expansion": "A Harvics 5 új délkelet-ázsiai piacra bővíti FMCG-műveletét",
+      "aiPlatform": "Új, mesterséges intelligenciával vezérelt ellátási lánc platform indult a globális disztribúcióhoz",
+      "carbonNeutral": "A Harvics minden létesítményében elérte a karbonsemlegesség mérföldkövét",
+      "partnership": "Stratégiai partnerség vezető dél-ázsiai textilgyártókkal"
+    }
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
-    "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
-    "contactUsButton": "Contact Us",
-    "usefulLinks": "Useful Links",
+    "tagline": "Kiválóság a prémium fogyasztási cikkek terén 2019 óta",
+    "brandStatement": "Vezető globális fogyasztási cikkeket gyártó vállalat, amely prémium élelmiszertermékeket szállít változatos kategóriákban, nemzetközi minőségi szabványoknak megfelelően.",
+    "locations": "London • Milánó • New York",
+    "since": "2019 óta",
+    "harvicsNews": "Harvics Hírek",
+    "subscribeToAlerts": "Iratkozzon fel, hogy értesítéseket és frissítéseket kapjon",
+    "signUp": "Regisztráció",
+    "complianceConcerns": "Megfelelőségi aggályok",
+    "speakUp": "Szóljon, ha aggályai vannak a megfelelőséggel vagy az etikával kapcsolatban",
+    "speakUpButton": "Szólalj fel",
+    "contactUs": "Kapcsolat",
+    "contactDescription": "Lépjen kapcsolatba csapatunkkal",
+    "contactUsButton": "Kapcsolat",
+    "usefulLinks": "Hasznos linkek",
     "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
-    "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
-    "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
-    "privacy": "Privacy",
-    "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
+    "searchForJobs": "Álláskeresés",
+    "signUpForNews": "Iratkozzon fel hírlevelünkre",
+    "company": "Vállalat",
+    "globalAddresses": "Globális címek",
+    "strategy": "Stratégia",
+    "ourLeadership": "Vezetőségünk",
+    "brandsAZ": "Márkák A-tól Z-ig",
+    "ourHistory": "Történetünk",
+    "sustainability": "Fenntarthatóság",
+    "news": "Hír",
+    "mediaContacts": "Médiakapcsolatok",
+    "images": "Képek",
+    "investors": "Befektetők",
+    "corporateGovernance": "Vállalatirányítás",
+    "sharesAdrsBonds": "Részvények, ADR-ek és kötvények",
+    "publications": "Publikációk",
+    "followUsOn": "Kövess minket",
+    "issuesCount": "0 probléma",
+    "siteMap": "Oldaltérkép",
+    "unsubscribe": "Leiratkozás",
+    "help": "Segítség",
+    "privacy": "Magánélet",
+    "cookies": "Sütik",
+    "termsOfUse": "Felhasználási feltételek",
+    "accessibility": "Megközelíthetőség",
+    "carbonEfficiency": "Szén-dioxid-hatékonyság",
+    "suppliers": "Beszállítók",
+    "socialMedia": "Közösségi média",
+    "cookieSettings": "Sütibeállítások",
     "feature1Title": "Global Reach",
     "feature1Desc": "Serving customers across 40+ countries worldwide",
-    "feature2Title": "Premium Quality",
+    "feature2Title": "Prémium minőség",
     "feature2Desc": "International quality standards in every product",
     "feature3Title": "Innovation",
     "feature3Desc": "Leading innovation in consumer goods industry",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
-    "media": "Media"
+    "emailAddress": "E-mail cím",
+    "enterEmailPlaceholder": "Add meg az e-mail címed",
+    "subscribe": "Feliratkozás",
+    "subscribing": "Feliratkozás...",
+    "aboutUs": "Rólunk",
+    "media": "Média"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "Termékek, márkák vagy kategóriák keresése",
+    "noResults": "Nincs találat",
+    "searching": "Keresés...",
+    "results": "Eredmények"
   },
   "chatbot": {
-    "title": "Chat with Us",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "title": "Csevegjen velünk",
+    "placeholder": "Írd be az üzeneted...",
+    "send": "Elküld",
+    "close": "Közeli",
+    "welcome": "Szia! Miben segíthetek ma?",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "Bocsánat, ezt nem értettem. Megtennéd, hogy újrafogalmazod?",
+      "help": "Segíthetek termékinformációkkal, megrendelésekkel vagy általános kérdésekkel kapcsolatban. Mit szeretne tudni?",
+      "contact": "További segítségért kérjük, vegye fel velünk a kapcsolatot a support@harvics.com címen, vagy hívja a +1-800-HARVICS telefonszámot."
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
-    "filter": "Filter",
-    "clear": "Clear",
-    "download": "Download",
-    "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
-    "status": "Status",
-    "date": "Date",
-    "name": "Name",
+    "chatWithUs": "Csevegjen velünk",
+    "loading": "Terhelés...",
+    "error": "Hiba",
+    "success": "Siker",
+    "save": "Megtakarítás",
+    "cancel": "Mégsem",
+    "delete": "Töröl",
+    "edit": "Szerkesztés",
+    "view": "Kilátás",
+    "submit": "Küldés",
+    "search": "Keresés",
+    "filter": "Szűrő",
+    "clear": "Világos",
+    "download": "Letöltés",
+    "upload": "Feltöltés",
+    "yes": "Igen",
+    "no": "Nem",
+    "close": "Közeli",
+    "back": "Vissza",
+    "next": "Következő",
+    "previous": "Előző",
+    "actions": "Műveletek",
+    "status": "Állapot",
+    "date": "Dátum",
+    "name": "Név",
     "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
-    "selectCountry": "Select Country",
-    "required": "Required",
-    "menu": "Menu",
-    "viewProducts": "View Products"
+    "phone": "Telefon",
+    "address": "Cím",
+    "country": "Ország",
+    "city": "Város",
+    "all": "Minden",
+    "none": "Egyik sem",
+    "select": "Válasszon",
+    "selectCountry": "Válasszon országot",
+    "required": "Kívánt",
+    "menu": "Menü",
+    "viewProducts": "Termékek megtekintése",
+    "selectLanguage": "Nyelv kiválasztása",
+    "showMore": "Mutass többet",
+    "showLess": "Kevesebb megjelenítése"
   },
   "music": {
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "Zenél",
+    "pause": "Zene szüneteltetése",
+    "mute": "Néma zene",
+    "unmute": "Zene némításának feloldása"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "Globális elérhetőségünk",
+    "since": "Mivel",
+    "majorMarket": "Nagy piac",
+    "majorMarkets": "Főbb piacok",
+    "presence": "Jelenlét",
+    "countriesServed": "Kiszolgált országok",
+    "majorMarketsCount": "Főbb piacok",
+    "productCategoriesCount": "Termékkategóriák",
+    "establishedYear": "Alapított"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "Területi hierarchia",
+    "fullPath": "Teljes elérési út",
+    "currentTerritory": "Jelenlegi terület",
+    "noChildren": "Nincsenek elemek",
     "tiers": {
-      "globe": "Globe",
-      "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
-      "district": "District",
-      "location": "Location"
+      "globe": "Földgolyó",
+      "continent": "Kontinens",
+      "region": "Régió",
+      "country": "Ország",
+      "city": "Város",
+      "district": "Kerület",
+      "location": "Elhelyezkedés"
     }
   },
   "globalWorld": {
     "title": "Harvics Global",
-    "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "titleShort": "Globális",
+    "selectRegion": "Régió kiválasztása",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
+      "title": "Ügyféladatok",
+      "selected": "Kiválasztott",
+      "fullName": "Teljes név",
+      "namePlaceholder": "Add meg a teljes neved",
+      "nameRequired": "Név megadása kötelező",
+      "email": "E-mail cím",
       "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
+      "emailRequired": "E-mail cím megadása kötelező",
+      "emailInvalid": "Kérjük, adjon meg egy érvényes e-mail címet",
+      "phone": "Telefonszám",
       "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "phoneRequired": "Telefonszám megadása kötelező",
+      "address": "Cím",
+      "addressPlaceholder": "Az Ön címe",
+      "addressRequired": "Cím megadása kötelező",
+      "marketingConsent": "Hozzájárulok marketingkommunikáció és frissítések fogadásához",
+      "submit": "Küldés és folytatás",
+      "submitting": "Beküldés...",
+      "skip": "Kihagyás és folytatás"
     }
   },
   "distributorPortal": {
     "dashboard": {
       "kpi": {
-        "title": "Key Performance Indicators",
-        "ordersToday": "Orders today",
-        "ordersTodaySubtitle": "Submitted via Harvics CRM",
-        "pendingDeliveries": "Pending deliveries",
-        "pendingDeliveriesSubtitle": "Across assigned routes",
-        "retailers": "Retailers",
-        "retailersSubtitle": "Active outlets in scope",
-        "attendance": "T & A Score",
-        "attendanceSubtitle": "Territory coverage"
+        "title": "Fő teljesítménymutatók",
+        "ordersToday": "Mai rendelések",
+        "ordersTodaySubtitle": "Harvics CRM-en keresztül beküldve",
+        "pendingDeliveries": "Függőben lévő szállítások",
+        "pendingDeliveriesSubtitle": "Kijelölt útvonalakon keresztül",
+        "retailers": "Kiskereskedők",
+        "retailersSubtitle": "Aktív kimenetek a hatókörben",
+        "attendance": "T és A pontszám",
+        "attendanceSubtitle": "Területi lefedettség"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "Pénzügy és készletgazdálkodás",
+        "lowStock": "Alacsony készletű cikkszámok",
+        "lowStockSubtitle": "Trigger utántöltés",
+        "outstandingInvoices": "Kiegyenlítetlen számlák",
+        "outstandingInvoicesSubtitle": "Behajtás esedékes",
+        "creditLimit": "Hitelkeret",
+        "creditLimitSubtitle": "Pénzügy által kiosztva"
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "Automatikus jóváhagyás, készletfeltöltés és számla-emlékeztetők engedélyezve",
+        "autoApproval": "Önjóváhagyás",
+        "stockReplenishment": "Készletfeltöltés",
+        "invoiceReminders": "Számlaemlékeztetők"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "MI-ajánlások",
+        "riskLevel": "Kockázati szint",
+        "riskDescription": "A hitelkihasználtság és a fizetési előzmények alapján",
+        "suggestedOrder": "Javasolt sorrend",
+        "suggestedOrderSubtitle": "Mesterséges intelligencia által ajánlott cikkszámok rendelésre",
+        "nextAction": "Következő művelet"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "Műveletek és útmutatás",
+        "complaints": "Panaszok",
+        "complaintsSubtitle": "Kiskereskedői problémák, amelyek megoldásra várnak",
+        "playbook": "Kézikönyv",
+        "playbookItem1": "Priorizálja a dél előtti, függőben lévő szállítmányokat.",
+        "playbookItem2": "Minden függőben lévő panaszt 48 órán belül lezárunk.",
+        "playbookItem3": "Alacsony készletű cikkszámok utántöltésének indítása (automatikus megrendelés létrehozása)."
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "Terület",
+      "ordersThisMonth": "Rendelések ebben a hónapban",
+      "pendingOrders": "Függőben lévő megbízások",
+      "deliveredOrders": "Leszállított rendelések",
+      "territoryInformation": "Területi információk",
+      "country": "Ország",
+      "city": "Város",
+      "region": "Régió",
+      "quickActions": "Gyors műveletek",
+      "newOrder": "Új rend",
+      "viewOrders": "Rendelések megtekintése",
+      "viewInvoices": "Számlák megtekintése",
+      "profileSettings": "Profilbeállítások",
+      "loading": "Irányítópult betöltése...",
+      "error": "Hiba"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
-      "date": "Date",
-      "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "title": "Rendeléseim",
+      "orderId": "Rendelési azonosító",
+      "date": "Dátum",
+      "status": "Állapot",
+      "items": "Tételek",
+      "totalAmount": "Teljes összeg",
+      "actions": "Műveletek",
+      "viewDetails": "Részletek megtekintése",
       "filters": {
-        "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "Állapot",
+        "startDate": "Kezdő dátum",
+        "endDate": "Befejezési dátum",
+        "allStatuses": "Minden állapot",
+        "clearFilters": "Szűrők törlése"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "Függőben levő",
+        "processing": "Feldolgozás",
+        "delivered": "Kiszállítva",
+        "cancelled": "Lemondva"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
-      "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "noOrders": "Nem található megrendelés",
+      "loading": "Rendelések betöltése...",
+      "page": "Oldal",
+      "of": "a",
+      "previous": "Előző",
+      "next": "Következő"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
-      "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "orderItems": "Order Items",
-      "product": "Product",
-      "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "title": "Rendelés részletei",
+      "backToOrders": "Vissza a rendelésekhez",
+      "orderId": "Rendelési azonosító",
+      "status": "Állapot",
+      "orderDate": "Rendelés dátuma",
+      "deliveryDate": "Szállítási dátum",
+      "deliveryAddress": "Szállítási cím",
+      "notes": "Megjegyzések",
+      "orderItems": "Rendelt tételek",
+      "product": "Termék",
+      "sku": "Cikkszám",
+      "quantity": "Mennyiség",
+      "unitPrice": "Egységár",
+      "total": "Teljes",
+      "totalAmount": "Teljes összeg",
+      "statusTimeline": "Állapot idővonal",
+      "orderNotFound": "A rendelés nem található"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
-      "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "title": "Új rendelés létrehozása",
+      "orderItems": "Rendelt tételek",
+      "addItem": "Elem hozzáadása",
+      "noItems": "Még nincsenek hozzáadva elemek. Kattintson az „Elem hozzáadása” gombra a kezdéshez.",
+      "orderDetails": "Rendelés részletei",
+      "deliveryDate": "Szállítási dátum",
+      "deliveryAddress": "Szállítási cím",
+      "notes": "Megjegyzések",
+      "totalAmount": "Teljes összeg",
+      "createOrder": "Rendelés létrehozása",
+      "creatingOrder": "Rendelés létrehozása...",
+      "cancel": "Mégsem",
+      "selectProduct": "Termék kiválasztása",
+      "product": "Termék",
+      "quantity": "Mennyiség",
+      "unitPrice": "Egységár",
+      "remove": "Eltávolítás",
+      "subtotal": "Részösszeg",
+      "orderId": "Rendelési azonosító",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "Legalább egy rendelési tétel megadása kötelező",
+        "productRequired": "A termék megadása kötelező",
+        "quantityRequired": "A mennyiségnek nagyobbnak kell lennie, mint 0",
+        "priceRequired": "Az egységár nem lehet negatív",
+        "invalidDate": "Érvénytelen szállítási dátum formátuma",
+        "datePast": "A szállítási dátum nem lehet múltbeli"
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "Számláim",
+      "invoiceNumber": "Számlaszám",
+      "invoiceDate": "Számla dátuma",
+      "dueDate": "Két dátum",
+      "amount": "Összeg",
+      "paidAmount": "Fizetett összeg",
+      "paymentStatus": "Fizetési állapot",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "Fizetési állapot",
+        "allStatuses": "Minden állapot",
+        "clearFilters": "Szűrők törlése"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "Fizetett",
+        "unpaid": "Kifizetetlen",
+        "partial": "Részleges"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "Nem találhatók számlák",
+      "loading": "Számlák betöltése..."
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
+      "title": "Profilom",
+      "accountInformation": "Fiókadatok",
+      "distributorId": "Forgalmazói azonosító",
+      "territory": "Terület",
+      "country": "Ország",
+      "city": "Város",
+      "accountCreated": "Fiók létrehozva",
+      "updateProfile": "Profil frissítése",
+      "name": "Név",
       "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "phone": "Telefon",
+      "address": "Cím",
+      "language": "Nyelv",
+      "currency": "Valuta",
+      "saveChanges": "Változtatások mentése",
+      "saving": "Megtakarítás...",
+      "profileUpdated": "Profil sikeresen frissítve",
+      "loading": "Profil betöltése...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "Érvénytelen e-mail formátum",
+        "invalidPhone": "Érvénytelen telefonszám-formátum"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
-      "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "error": "Hiba",
+      "loading": "Terhelés...",
+      "save": "Megtakarítás",
+      "cancel": "Mégsem",
+      "back": "Vissza",
+      "submit": "Küldés",
+      "delete": "Töröl",
+      "edit": "Szerkesztés",
+      "view": "Kilátás",
+      "search": "Keresés",
+      "filter": "Szűrő",
+      "clear": "Világos",
+      "apply": "Jelentkezés",
+      "close": "Közeli",
+      "confirm": "Megerősítés",
+      "yes": "Igen",
+      "no": "Nem"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
-    "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "title": "Jogi operációs rendszer",
+    "sidebarTitle": "Jogi operációs rendszer",
+    "accessDenied": "Hozzáférés megtagadva",
+    "accessDeniedMessage": "Nincs jogosultsága a Legal OS modul eléréséhez.",
+    "dashboard": "Műszerfal",
+    "contracts": "Szerződések",
+    "certificates": "Tanúsítványok",
+    "compliance": "Megfelelőség",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "Jogi irányítópult",
+      "description": "Jogi műveletek és megfelelőségi állapot áttekintése",
+      "activeTrademarks": "Aktív védjegyek",
+      "activeContracts": "Aktív szerződések",
+      "complianceStatus": "Megfelelőségi állapot"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "Védjegyek",
+      "description": "Védjegybejelentések és védjegybejelentések kezelése",
+      "addNew": "Új védjegy hozzáadása",
       "filters": {
-        "country": "Country",
-        "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "country": "Ország",
+        "status": "Állapot",
+        "allCountries": "Minden ország",
+        "allStatuses": "Minden állapot",
+        "clearFilters": "Szűrők törlése"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "brandName": "Márkanév",
+        "class": "Osztály",
+        "country": "Ország",
+        "applicationNo": "Jelentkezési szám",
+        "status": "Állapot",
+        "expiryDate": "Lejárati dátum",
+        "actions": "Műveletek"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "Védjegy szerkesztése",
+        "add": "Új védjegy hozzáadása",
+        "view": "Védjegy megtekintése"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "brandName": "Márkanév",
+        "classNumber": "Osztályszám",
+        "country": "Ország",
+        "applicationNo": "Jelentkezési szám",
+        "status": "Állapot",
+        "expiryDate": "Lejárati dátum",
+        "documents": "Dokumentumok",
+        "noDocuments": "Nincsenek csatolt dokumentumok",
+        "addDocument": "Dokumentum hozzáadása",
+        "remove": "Eltávolítás"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "Nem sikerült betölteni a védjegyeket",
+        "saveFailed": "Nem sikerült menteni a védjegyet. Próbálja újra."
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "Jogi esetek",
+      "description": "Jogi ügyek kezelése és állapotuk nyomon követése",
+      "addNew": "Új eset",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
-        "description": "Description",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date"
+        "caseTitle": "Ügy címe",
+        "caseType": "Ügytípus",
+        "country": "Ország",
+        "description": "Leírás",
+        "assignedTo": "Hozzárendelve",
+        "status": "Állapot",
+        "hearingDate": "Meghallgatás dátuma"
       },
       "table": {
-        "caseTitle": "Case Title",
-        "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "caseTitle": "Ügy címe",
+        "type": "Típus",
+        "country": "Ország",
+        "assignedTo": "Hozzárendelve",
+        "status": "Állapot",
+        "hearingDate": "Meghallgatás dátuma",
+        "actions": "Műveletek"
       },
       "status": {
-        "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "open": "Nyitott",
+        "inProgress": "Folyamatban van",
+        "closed": "Zárt",
+        "cancelled": "Lemondva"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "Flottatérkép nézet",
+      "description": "Értékesítési munkatársak és szállító járművek valós idejű nyomon követése",
+      "activeEmployees": "Aktív alkalmazottak",
+      "noEmployees": "Nincsenek aktív alkalmazottak",
+      "loading": "Terhelés..."
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
-      "reset": "Reset",
-      "play": "Play",
-      "pause": "Pause",
-      "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "title": "Útvonal visszajátszása",
+      "employee": "Munkavállaló",
+      "speed": "Sebesség",
+      "reset": "Visszaállítás",
+      "play": "Játék",
+      "pause": "Szünet",
+      "points": "pontok",
+      "noRoute": "Nincsenek elérhető útvonaladatok",
+      "loading": "Útvonal betöltése..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "Versenytárs termékek",
+      "description": "Versenytársak termékinformációinak nyomon követése",
+      "addProduct": "Termék hozzáadása",
+      "formTitle": "Versenytárs termék hozzáadása",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "Márka",
+        "skuName": "SKU név",
+        "category": "Kategória",
+        "size": "Méret",
+        "price": "Ár",
+        "currency": "Valuta",
+        "country": "Ország"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "Márka",
+        "skuName": "SKU név",
+        "category": "Kategória",
+        "size": "Méret",
+        "price": "Ár",
+        "country": "Ország",
+        "dateAdded": "Hozzáadás dátuma"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "Nem sikerült betölteni a termékeket",
+        "createFailed": "Nem sikerült létrehozni a terméket. Kérjük, próbálja újra."
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "Nem találhatók versenytárs termékek",
+      "loading": "Termékek betöltése..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "Versenytársi irányítópult",
+      "description": "Elemzések és betekintés a versenytársak termékeibe",
+      "totalProducts": "Összes termék",
+      "brandsTracked": "Márkák nyomon követése",
+      "countries": "Országok",
+      "categories": "Kategóriák",
+      "byBrand": "Termékek márka szerint",
+      "byCountry": "Termékek országonként",
+      "byCategory": "Termékek kategóriánként",
+      "loading": "Statisztikák betöltése...",
+      "noStats": "Nincsenek elérhető statisztikák"
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
-    "finance": "Finance",
+    "overview": "Áttekintés",
+    "orders": "Rendelések",
+    "inventory": "Leltár",
+    "logistics": "Logisztika",
+    "finance": "Pénzügy",
     "crm": "CRM",
     "hr": "HR",
-    "executive": "Executive",
-    "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
+    "executive": "Végrehajtó",
+    "investor": "Befektető",
+    "legal-ipr": "Jogi/Szellemi Tulajdonjogi",
+    "competitor": "Versenyző",
     "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
-    "admin": "Admin"
+    "gps-tracking": "GPS-követés",
+    "localization": "Lokalizáció",
+    "workflows": "Munkafolyamatok",
+    "admin": "Adminisztrátor"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
-      "finance": "Finance",
+      "overview": "Áttekintés",
+      "orders": "Rendelések",
+      "inventory": "Leltár",
+      "logistics": "Logisztika",
+      "finance": "Pénzügy",
       "crm": "CRM",
       "hr": "HR",
-      "executive": "Executive",
-      "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
+      "executive": "Végrehajtó",
+      "investor": "Befektető",
+      "legal-ipr": "Jogi/Szellemi Tulajdonjogi",
+      "competitor": "Versenyző",
       "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
-      "admin": "Admin"
+      "gps-tracking": "GPS-követés",
+      "localization": "Lokalizáció",
+      "workflows": "Munkafolyamatok",
+      "admin": "Adminisztrátor"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
-      "profit": "Profit"
+      "customers": "Ügyfelek",
+      "employees": "Alkalmazottak",
+      "profit": "Nyereség"
+    },
+    "domain": {
+      "title": "CRM operációs rendszer",
+      "customer360": {
+        "title": "Ügyfél 360",
+        "description": "Teljes ügyfélprofilok, interakciós előzmények és kapcsolatkezelés"
+      },
+      "campaigns": {
+        "title": "Digitális kampányok",
+        "description": "Többcsatornás marketingkampányok (IG, FB, TikTok, WhatsApp)"
+      },
+      "leads": {
+        "title": "Leendő ügyfelek és lehetőségek",
+        "description": "Érdeklődőkezelés, minősítés és lehetőségfolyamat"
+      },
+      "support": {
+        "title": "Ügyfélszolgálat",
+        "description": "Jegykezelés, ügyfélszolgálat és problémamegoldás"
+      },
+      "loyalty": {
+        "title": "Hűségprogramok",
+        "description": "Kiskereskedői hűségprogram, játékosítás és jutalmak kezelése"
+      }
+    },
+    "customerList": {
+      "title": "Ügyfél 360",
+      "newCustomer": "Új ügyfél",
+      "totalCustomers": "Összes ügyfél",
+      "active": "Aktív",
+      "new": "Új",
+      "satisfaction": "Elégedettség",
+      "customerManagement": "Ügyfélkezelés",
+      "customerManagementDescription": "Ügyfélkapcsolatok, interakciók és kampányok megtekintése és kezelése.",
+      "loading": "Terhelés...",
+      "error": "Hiba történt a CRM-adatok betöltése során"
     }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "Beszállítói pilótafülke betöltése…",
+      "purchaseOrders": "Beszerzési megrendelések",
+      "purchaseOrdersSubtitle": "Harvics nevelte fel",
+      "shipments": "Szállítmányok / GRN",
+      "shipmentsSubtitle": "Elfogadva ezen a héten",
+      "invoices": "Létrehozott számlák",
+      "invoicesSubtitle": "Fizetésre vár",
+      "paymentsPending": "Függőben lévő fizetések",
+      "paymentsPendingSubtitle": "Megjelenésre ütemezve",
+      "qualityComplaints": "Minőség / panaszok",
+      "qualityComplaintsSubtitle": "Nyitott jegyek",
+      "forecast": "Előrejelzés (következő 4 hét)",
+      "forecastSubtitle": "AI helyőrző",
+      "supplierActions": "Beszállítói intézkedések",
+      "action1": "Erősítse meg a közelgő szállítmányokat és frissítse a GRN ütemtervét.",
+      "action2": "Tekintse át a kiegyenlítetlen számlákat és ossza meg a fizetési tanácsokat.",
+      "action3": "Oldja meg a nyitott minőségi panaszokat minőségbiztosítási bizonyítékokkal."
+    }
+  },
+  "form": {
+    "username": "Felhasználónév",
+    "password": "Jelszó",
+    "email": "Email",
+    "submit": "Küldés",
+    "cancel": "Mégsem",
+    "save": "Megtakarítás",
+    "delete": "Töröl",
+    "search": "Keresés",
+    "filter": "Szűrő",
+    "reset": "Visszaállítás",
+    "close": "Közeli",
+    "back": "Vissza",
+    "next": "Következő",
+    "previous": "Előző",
+    "confirm": "Megerősítés",
+    "rememberMe": "Emlékezz rám",
+    "forgotPassword": "Elfelejtett jelszó?",
+    "emailRequired": "E-mail cím megadása kötelező",
+    "emailInvalid": "Kérjük, adjon meg egy érvényes e-mail címet"
+  },
+  "faq": {
+    "products": {
+      "category": "Termékek",
+      "q1": "Milyen termékeket kínál a Harvics?",
+      "a1": "Prémium élelmiszerek széles választékát kínáljuk, beleértve édességeket, italokat, snackeket, tésztákat, pékárukat és fagyasztott élelmiszereket több kategóriában.",
+      "q2": "Hol lehet Harvics termékeket vásárolni?",
+      "a2": "Termékeink több mint 40 ország kiskereskedelmi üzleteiben kaphatók. Használja üzletkeresőnket vagy kapcsolatfelvételi oldalunkat, hogy megtalálja az Önhöz legközelebbi viszonteladót.",
+      "q3": "Kínálnak tömeges rendelést?",
+      "a3": "Igen, nagy tételben történő rendelés esetén kedvezményeket kínálunk vállalkozások és kiskereskedők számára. További információkért látogassa meg a Nagy tételben történő rendelés kedvezményei oldalunkat."
+    },
+    "ordersShipping": {
+      "category": "Rendelések és szállítás",
+      "q1": "Milyen szállítási lehetőségeid vannak?",
+      "a1": "Különböző szállítási lehetőségeket kínálunk, beleértve a standard, expressz és nemzetközi szállítást. Ingyenes szállítás érhető el 50 dollár feletti megrendelések esetén.",
+      "q2": "Mennyi ideig tart a szállítás?",
+      "a2": "A szállítási idő helyszínenként eltérő. A standard szállítás általában 5-7 munkanapot vesz igénybe, míg az expressz szállítás 2-3 munkanapot vesz igénybe.",
+      "q3": "Nyomon követhetem a rendelésem?",
+      "a3": "Igen, nyomon követheti rendelését a rendelés visszaigazoló e-mailben található követési szám segítségével."
+    },
+    "accountPayments": {
+      "category": "Fiók és fizetések",
+      "q1": "Hogyan hozhatok létre fiókot?",
+      "a1": "Kattintson a fejlécben található „Bejelentkezés” gombra, majd válassza a „Fiók létrehozása” lehetőséget egy új fiók regisztrálásához.",
+      "q2": "Milyen fizetési módokat fogadnak el?",
+      "a2": "B2B megrendelések esetén elfogadunk minden nagyobb hitelkártyát, bankkártyát, PayPalt és banki átutalást.",
+      "q3": "Biztonságban vannak a fizetési adataim?",
+      "a3": "Igen, iparági szabványnak megfelelő titkosítást használunk a fizetési adataid védelme érdekében."
+    },
+    "returnsRefunds": {
+      "category": "Visszaküldés és visszatérítés",
+      "q1": "Mi a visszaküldési szabályzatuk?",
+      "a1": "30 napos visszaküldési garanciát kínálunk bontatlan, eredeti csomagolású termékekre. Kérjük, vegye fel a kapcsolatot ügyfélszolgálatunkkal a visszaküldés engedélyezésével kapcsolatban.",
+      "q2": "Hogyan kérhetek visszatérítést?",
+      "a2": "Lépjen kapcsolatba ügyfélszolgálatunkkal a rendelési számával és a visszaküldés okával. A visszatérítést 5-7 munkanapon belül feldolgozzuk."
+    },
+    "contactCta": {
+      "title": "Még mindig vannak kérdései?",
+      "subtitle": "Ügyfélszolgálati csapatunk készen áll, hogy segítsen",
+      "button": "Kapcsolat"
+    }
+  },
+  "careers": {
+    "title": "Karrierlehetőségek",
+    "pageTitle": "Karrierlehetőségek | Harvics",
+    "description": "Csatlakozzon a Harvics Global Ventureshez — fedezze fel a lehetőségeket több mint 40 országban.",
+    "joinUs": "Csatlakozz hozzánk",
+    "heroTitle": "Építsük a globális kereskedelem jövőjét",
+    "heroDesc": "Több mint 40 országban növekszünk. Csatlakozz egy csapathoz, amely mesterséges intelligenciával működő operációs rendszert épít a globális kereskedelem számára.",
+    "stats": {
+      "openPositions": "Nyitott pozíciók",
+      "countries": "Országok",
+      "industryVerticals": "Iparági vertikálisok",
+      "departmentsHiring": "Osztályok felvétele"
+    },
+    "openPositionsByDept": "Nyitott pozíciók részlegenként",
+    "departments": {
+      "sales": {
+        "name": "Értékesítés és forgalmazás",
+        "desc": "Bevétel növelése több mint 40 piacon. Területkezelés, kulcsfontosságú ügyfelek, forgalmazói kapcsolatok."
+      },
+      "supplyChain": {
+        "name": "Ellátási lánc és logisztika",
+        "desc": "Teljes körű ellátási lánc a gyártól a polcokig. Flottakezelés, raktározás, kiszállítás az utolsó mérföldig."
+      },
+      "technology": {
+        "name": "Technológia és mesterséges intelligencia",
+        "desc": "Építsd fel a Harvics OS-t — mesterséges intelligencián alapuló vállalati platformunkat. Full-stack, gépi tanulás (ML) mérnöki munka, adattudomány."
+      },
+      "finance": {
+        "name": "Pénzügy és kincstár",
+        "desc": "Többdevizás treasury, kereskedelemfinanszírozás, HPay digitális fizetések, devizakezelés régiókon átívelően."
+      },
+      "procurement": {
+        "name": "Beszerzés és forráskeresés",
+        "desc": "Globális beszerzés több mint 15 származási országból. Beszállítói auditok, minőségellenőrzés, közvetlen gyári programok."
+      },
+      "hr": {
+        "name": "Emberi Erőforrások",
+        "desc": "Tehetségtoborzás, képzés és fejlesztés, teljesítménymenedzsment különböző földrajzi területeken és kultúrákban."
+      },
+      "legal": {
+        "name": "Jogi és megfelelőségi",
+        "desc": "Kereskedelmi megfelelés, szankciós szűrés, szellemi tulajdonvédelem, szerződéskezelés joghatóságok között."
+      },
+      "marketing": {
+        "name": "Marketing és márka",
+        "desc": "Többnyelvű kampányok, 38 nyelven elérhető tartalom, digitális marketing, márkastratégia 10 vertikális területre."
+      }
+    },
+    "roles": "szerepek",
+    "whyHarvics": "Miért pont Harvics?",
+    "benefits": {
+      "globalMobility": {
+        "title": "Globális mobilitás",
+        "desc": "Dolgozz Dubaiban, Londonban, Karacsiban, Lahore-ban és több mint 40 piacon"
+      },
+      "growthTrack": {
+        "title": "Növekedési pálya",
+        "desc": "Gyorsított karrierlehetőségek egy növekvő vállalatnál"
+      },
+      "aiCulture": {
+        "title": "MI-első kultúra",
+        "desc": "Dolgozz élvonalbeli mesterséges intelligenciával és valós idejű intelligenciarendszerekkel"
+      },
+      "competitivePackage": {
+        "title": "Versenyképes csomag",
+        "desc": "Piacvezető kompenzáció, lakhatás és juttatások"
+      },
+      "learningBudget": {
+        "title": "Tanulási költségvetés",
+        "desc": "Éves fejlesztési költségvetés tanfolyamokra, konferenciákra és tanúsítványokra"
+      },
+      "flexibleWork": {
+        "title": "Rugalmas munkaidő",
+        "desc": "Hibrid megállapodások regionális központokkal világszerte"
+      }
+    }
+  },
+  "strategy": {
+    "title": "Stratégiánk",
+    "pageTitle": "Strategy | Harvics",
+    "description": "Fenntartható jövő építése az innováció és a kiválóság révén",
+    "heroSubtitle": "Fenntartható jövő építése az innováció és a kiválóság révén",
+    "pillars": {
+      "globalExpansion": {
+        "title": "Globális terjeszkedés",
+        "desc": "Jelenlétünk bővítése a feltörekvő piacokon, miközben megerősítjük pozíciónkat a már meglévő piacokon"
+      },
+      "productInnovation": {
+        "title": "Termékinnováció",
+        "desc": "K+F-be való befektetés olyan új termékek fejlesztése érdekében, amelyek megfelelnek a változó fogyasztói preferenciáknak"
+      },
+      "sustainability": {
+        "title": "Fenntarthatóság",
+        "desc": "Elkötelezettek vagyunk a fenntartható gyakorlatok iránt az ellátási láncunkban és a működésünkben"
+      },
+      "digitalTransformation": {
+        "title": "Digitális átalakulás",
+        "desc": "A technológia kihasználása az ügyfélélmény és a működési hatékonyság javítása érdekében"
+      }
+    },
+    "vision": {
+      "title": "Víziónk",
+      "desc": "A világ vezető prémium fogyasztási cikkeket gyártó vállalata lenni, amelyet a minőség, az innováció és a fenntarthatóság elismer."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Harvics Global Ventures | Prémium globális kereskedés",
+      "description": "Vezető globális kereskedelmi vállalat, amely prémium termékeket szállít több mint 10 iparágban. 2019 óta több mint 50 országban működik."
+    },
+    "about": {
+      "title": "Rólunk | Harvics Global Ventures",
+      "description": "Fedezze fel, hogyan vált a Harvics Global Ventures vezető erővé a globális kereskedelemben több mint 40 országban és 10 iparágban."
+    },
+    "contact": {
+      "title": "Kapcsolat | Harvics Global Ventures",
+      "description": "Lépjen kapcsolatba a Harvics irodáival világszerte, a Közel-Keleten, Dél-Ázsiában, Európában, Afrikában és Amerikában."
+    },
+    "products": {
+      "title": "Termékek | Harvics Global Ventures",
+      "description": "Fedezze fel a Harvics prémium termékkínálatát az FMCG, textil, árucikkek és ipari megoldások terén."
+    },
+    "careers": {
+      "title": "Karrierlehetőségek | Harvics Global Ventures",
+      "description": "Csatlakozzon a Harvics Global Ventureshez — fedezze fel a lehetőségeket több mint 40 országban az FMCG, a textil, a logisztika és a technológia területén."
+    },
+    "media": {
+      "title": "Médiaközpont | Harvics Global Ventures",
+      "description": "Harvics médiaközpont — sajtóközlemények, legfrissebb hírek, márkaeszközök és médiakapcsolatok."
+    },
+    "strategy": {
+      "title": "Stratégiánk | Harvics Global Ventures",
+      "description": "Harvics stratégiai víziója a globális terjeszkedésről, az innovációról, a fenntarthatóságról és a digitális átalakulásról."
+    },
+    "csr": {
+      "title": "Vállalati társadalmi felelősségvállalás | Harvics",
+      "description": "A Harvics vállalati társadalmi felelősségvállalási kezdeményezései – környezetvédelem, közösségi programok és etikus üzleti gyakorlatok."
+    },
+    "faq": {
+      "title": "GYIK | Harvics Global Ventures",
+      "description": "Gyakran ismételt kérdések a Harvics termékeivel, szolgáltatásaival, rendelésével és globális működésével kapcsolatban."
+    },
+    "locations": {
+      "title": "Globális helyszínek | Harvics",
+      "description": "A Harvic irodái és tevékenységei a Közel-Keleten, Dél-Ázsiában, Európában, Afrikában és Amerikában találhatók."
+    },
+    "leadership": {
+      "title": "Vezetői csapat | Harvics",
+      "description": "Ismerje meg a Harvics Global Ventures vezetői csapatát, amely több mint 40 piacon és 10 iparágban működik."
+    },
+    "help": {
+      "title": "Súgóközpont | Harvics",
+      "description": "Segítség kérése a megrendelésekkel, fiókokkal, szállítással és a Harvics szolgáltatásaival kapcsolatban."
+    },
+    "compliance": {
+      "title": "Megfelelőség és etika | Harvics",
+      "description": "A Harvic elkötelezett a szabályozási megfelelés, az etikus üzleti gyakorlat és a globális szabványok iránt."
+    },
+    "history": {
+      "title": "Történetünk | Harvics",
+      "description": "Egy 2019-es dubaji startuptól egy több mint 40 országot lefedő globális vállalatig – a Harvics története."
+    },
+    "newsletter": {
+      "title": "Hírlevél | Harvics",
+      "description": "Iratkozzon fel a Harvics hírlevelére, hogy értesüljön az iparági információkról és a termékbevezetésekről."
+    },
+    "login": {
+      "title": "Bejelentkezés | Harvics",
+      "description": "Jelentkezzen be Harvics-fiókjába a rendelések kezeléséhez és a platform eléréséhez."
+    },
+    "research": {
+      "title": "Kutatás és innováció | Harvics",
+      "description": "A Harvics kutatási kezdeményezései és innovációs programjai irányítják globális stratégiánkat."
+    },
+    "investorRelations": {
+      "title": "Befektetői Kapcsolatok | Harvics",
+      "description": "Befektetői információk, pénzügyi jelentések és vállalati bejelentések a Harvics Global Ventures-től."
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Az oldal nem található",
+      "heading": "404 – Az oldal nem található",
+      "description": "A keresett oldal nem létezik, vagy áthelyezték.",
+      "goHome": "Ugrás a kezdőlapra",
+      "goBack": "Vissza"
+    },
+    "serverError": {
+      "title": "Valami rosszul sült el",
+      "heading": "Valami rosszul sült el",
+      "description": "Sajnáljuk, de valami váratlan dolog történt. Kérjük, próbálja meg frissíteni az oldalt.",
+      "tryAgain": "Próbáld újra",
+      "reload": "Oldal újratöltése",
+      "contactSupport": "Kapcsolatfelvétel az ügyfélszolgálattal"
+    },
+    "globalError": {
+      "title": "Alkalmazáshiba",
+      "heading": "Kritikus hiba",
+      "description": "Kritikus hiba történt. Kérjük, töltse újra az oldalt.",
+      "reload": "Alkalmazás újratöltése"
+    }
+  },
+  "about": {
+    "title": "Harvicsról",
+    "subtitle": "Kiválóság a prémium fogyasztási cikkek terén 2019 óta",
+    "ourStory": "Történetünk",
+    "story1": "A 2019-ben alapított Harvics egy előremutató ötletből a prémium fogyasztási cikkek globális vezetőjévé nőtte ki magát. Utunk meghatározó eleme a minőség iránti szüntelen törekvés és az innováció iránti elkötelezettség.",
+    "story2": "Több mint 40 országban működünk, olyan termékeket szállítva, amelyek gazdagítják az életet és új mércét állítanak fel az iparágban. Szerény kezdeteinktől globális jelenlétünkig értékeink változatlanok maradtak.",
+    "est2018": "Alapítva 2019-ben",
+    "countries40": "40+ ország",
+    "productLines6": "6 termékcsalád"
+  },
+  "csr": {
+    "hero": {
+      "title": "Vállalati társadalmi felelősségvállalás",
+      "description": "A Harvicsnál elkötelezettek vagyunk amellett, hogy pozitív hatást gyakoroljunk a világra. CSR-kezdeményezéseink a fenntarthatóságra, a közösségek felhatalmazására és az etikus üzleti gyakorlatokra összpontosítanak.",
+      "stats": {
+        "years": "Évekig tartó hatás",
+        "countries": "Elért országok",
+        "lives": "Megérintett életek"
+      }
+    },
+    "initiatives": {
+      "title": "Főbb kezdeményezéseink",
+      "description": "Négy fő pillérre összpontosítunk, hogy fenntartható változást mozdítsunk elő és közös értéket teremtsünk minden érdekelt fél számára."
+    },
+    "sustainability": {
+      "title": "Fenntarthatóság",
+      "description": "Környezeti lábnyomunk csökkentése megújuló energiaforrások és hulladékcsökkentés révén.",
+      "stats": {
+        "renewable": "Megújuló energia",
+        "waste": "Elterelt hulladék",
+        "carbon": "Szén-dioxid-csökkentés"
+      }
+    },
+    "community": {
+      "title": "Közösségi támogatás",
+      "description": "A helyi közösségek felemelkedésének elősegítése az oktatás, az egészségügy és a gazdaságfejlesztés révén.",
+      "stats": {
+        "families": "Támogatott családok",
+        "programs": "Aktív programok",
+        "volunteers": "önkéntesek"
+      }
+    },
+    "education": {
+      "title": "Oktatás",
+      "description": "Hozzáférés biztosítása minőségi oktatáshoz és ösztöndíjakhoz a hátrányos helyzetű diákok számára.",
+      "stats": {
+        "scholarships": "Ösztöndíjak",
+        "schools": "Partneriskolák",
+        "students": "Érintett diákok"
+      }
+    },
+    "health": {
+      "title": "Egészség és jóllét",
+      "description": "Az egészségügyi ellátáshoz és az élelmezéshez való hozzáférés javítása a rosszul ellátott régiókban.",
+      "stats": {
+        "campaigns": "Egészségügyi kampányok",
+        "people": "Kiszolgált emberek",
+        "clinics": "Mobil klinikák"
+      }
+    },
+    "achievements": {
+      "2022": {
+        "title": "Legjobb CSR-kezdeményezés",
+        "description": "Elismerés illeti a társadalmi felelősségvállaláshoz való innovatív hozzáállásunkat."
+      },
+      "2023": {
+        "title": "Közösségi bajnok",
+        "description": "Kiterjedt közösségi ismeretterjesztő programjainkért kaptuk az elismerést."
+      },
+      "2024": {
+        "title": "Globális Fenntarthatósági Díj",
+        "description": "Elismerésünk a karbonsemlegesség iránti elkötelezettségünkért."
+      },
+      "title": "Hatásunk",
+      "description": "Elismerve a mérföldköveinket egy jobb világ megteremtésében."
+    },
+    "cta": {
+      "title": "Csatlakozz hozzánk, hogy változást hozhassunk",
+      "description": "Légy Te is partnerünk, vagy tudj meg többet arról, hogyan építjük a fenntartható jövőt.",
+      "contact": "Kapcsolatfelvétel a CSR csapattal",
+      "learnMore": "Tudj meg többet"
+    }
+  },
+  "harvicsHouse": {
+    "title": "Harvics-ház",
+    "subtitle": "A kiválóság és a hagyomány öröksége",
+    "aboutTitle": "Üdvözöljük a Harvics Házban",
+    "description": "A Harvics House a minőség és a hagyományok iránti elkötelezettségünk csúcsát képviseli. Itt prémium termékeink legkiválóbb választékát kínáljuk, olyan környezetben bemutatva, amely tükrözi az elegancia, a hagyomány és az innováció értékeit.",
+    "description2": "Fedezze fel exkluzív kollekcióinkat, és ismerje meg a Harvics nevét viselő összes termék történetét."
   }
 }

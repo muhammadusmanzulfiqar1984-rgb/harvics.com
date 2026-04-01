@@ -1,395 +1,428 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
-    "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More",
-    "taglineStart": "Excellence in Premium Consumer Goods Since",
+    "welcome": "Bienvenue sur",
+    "companyName": "Harwich",
+    "tagline": "L'excellence dans les biens de consommation haut de gamme depuis 2019",
+    "brandStatement": "Une entreprise mondiale leader dans le domaine des biens de consommation, proposant des produits alimentaires haut de gamme dans diverses catégories et répondant aux normes de qualité internationales.",
+    "exploreProducts": "Explorer les produits",
+    "contact": "Contactez-nous",
+    "learnMore": "Apprendre encore plus",
+    "taglineStart": "L'excellence dans les biens de consommation haut de gamme depuis",
     "taglineYear": "2019",
-    "locations": "London • Milan • New York",
+    "locations": "Londres • Milan • New York",
     "categories": {
-      "bakery": "Bakery",
-      "beverages": "Beverages",
-      "confectionery": "Confectionary",
-      "culinary": "Culinary",
-      "frozenFoods": "Frozen Foods",
-      "pasta": "Pasta",
-      "snacks": "Snacks"
+      "bakery": "Boulangerie",
+      "beverages": "Boissons",
+      "confectionery": "Confiserie",
+      "culinary": "Culinaire",
+      "frozenFoods": "Aliments surgelés",
+      "pasta": "Pâtes",
+      "snacks": "En-cas"
     }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
-    "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
-    "media": "Media",
-    "contactUs": "Contact Us",
-    "harvicsHouse": "Harvics House",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store",
-    "money": "Money",
-    "sales": "Sales",
-    "offers": "Offers",
-    "darkMode": "Dark mode",
+    "esgReport": "Rapport ESG 2025",
+    "locations": "Londres • Milan • New York",
+    "home": "Maison",
+    "about": "À propos",
+    "aboutUs": "À propos de nous",
+    "brandStory": "Histoire de marque",
+    "products": "Produits",
+    "ourProducts": "Nos produits",
+    "viewAllProducts": "Voir tous les produits",
+    "csr": "RSE",
+    "investorRelations": "Relations avec les investisseurs",
+    "investors": "Investisseurs",
+    "media": "Médias",
+    "contactUs": "Contactez-nous",
+    "harvicsHouse": "Maison Harvics",
+    "countries": "Pays",
+    "portals": "Portails",
+    "signIn": "Se connecter",
+    "wishlist": "Liste de souhaits",
+    "cart": "Panier",
+    "help": "Aide",
+    "findStore": "Trouver un magasin",
+    "money": "Argent",
+    "sales": "Ventes",
+    "offers": "Offres",
+    "darkMode": "Mode sombre",
     "moneyDropdown": {
       "creditCard": {
-        "title": "Credit Card",
-        "msRewards": "M&S Rewards Credit Card",
-        "clubRewards": "Club Rewards",
-        "ourCards": "Our Credit Cards"
+        "title": "Carte de crédit",
+        "msRewards": "Carte de crédit M&S Rewards",
+        "clubRewards": "Récompenses du Club",
+        "ourCards": "Nos cartes de crédit"
       },
       "insurance": {
-        "title": "Insurance",
-        "home": "Home Insurance",
-        "travel": "Travel Insurance"
+        "title": "Assurance",
+        "home": "Assurance habitation",
+        "travel": "Assurance voyage"
       },
       "travel": {
-        "title": "Travel Services",
-        "money": "Travel Money",
-        "exchange": "Exchange Rates"
+        "title": "Services de voyage",
+        "money": "Argent de voyage",
+        "exchange": "Taux de change"
       },
       "additional": {
-        "title": "Additional Services",
-        "savings": "Savings & Investing",
-        "personalLoans": "Personal Loans",
-        "financialSupport": "Financial Support"
+        "title": "Services supplémentaires",
+        "savings": "Épargne et investissement",
+        "personalLoans": "Prêts personnels",
+        "financialSupport": "Soutien financier"
       }
     },
     "salesDropdown": {
-      "currentSales": "Current Sales",
-      "clearance": "Clearance",
-      "seasonal": "Seasonal Sales"
+      "currentSales": "Ventes actuelles",
+      "clearance": "Autorisation",
+      "seasonal": "soldes saisonnières"
     },
     "offersDropdown": {
-      "specialOffers": "Special Offers",
+      "specialOffers": "Offres spéciales",
       "promotions": "Promotions",
-      "bulkOrders": "Bulk Order Discounts"
+      "bulkOrders": "Remises sur les commandes groupées"
     }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
-    "productCategories": "Our Product Categories",
-    "discoverPremium": "Discover our premium range of products crafted with care and excellence.",
+    "ourProducts": "Nos produits",
+    "viewAllProducts": "Voir tous les produits",
+    "productCategories": "Nos catégories de produits",
+    "discoverPremium": "Découvrez notre gamme de produits haut de gamme, conçus avec soin et excellence.",
     "tier1": "Niveau 1 : Catégories",
     "tier2": "Niveau 2 : Modules",
     "tier3": "Niveau 3 : Écrans KPI",
     "tier4": "Niveau 4 : Actions",
-    "reset": "Reset Navigation",
-    "noSubcategories": "No subcategories available for this category.",
-    "pageTitle": "Products",
-    "subcategories": "Subcategories",
-    "bakery": "Bakery",
-    "bakeryDesc": "Freshly baked goods and pastries.",
-    "beverages": "Beverages",
-    "beveragesDesc": "Refreshing drinks for every occasion.",
-    "confectionery": "Confectionery",
-    "confectioneryDesc": "Sweet treats and delights.",
-    "culinary": "Culinary",
-    "culinaryDesc": "Essential ingredients for your kitchen.",
-    "frozenFoods": "Frozen Foods",
-    "frozenFoodsDesc": "Convenient and delicious frozen meals.",
-    "pasta": "Pasta",
-    "pastaDesc": "Authentic pasta varieties.",
-    "snacks": "Snacks",
-    "snacksDesc": "Tasty snacks for any time of day."
+    "reset": "Réinitialiser la navigation",
+    "noSubcategories": "Aucune sous-catégorie disponible pour cette catégorie.",
+    "pageTitle": "Produits",
+    "subcategories": "Sous-catégories",
+    "bakery": "Boulangerie",
+    "bakeryDesc": "Produits de boulangerie et pâtisseries fraîchement préparés.",
+    "beverages": "Boissons",
+    "beveragesDesc": "Des boissons rafraîchissantes pour toutes les occasions.",
+    "confectionery": "Confiserie",
+    "confectioneryDesc": "Douceurs et délices.",
+    "culinary": "Culinaire",
+    "culinaryDesc": "Ingrédients essentiels pour votre cuisine.",
+    "frozenFoods": "Aliments surgelés",
+    "frozenFoodsDesc": "Des plats surgelés pratiques et délicieux.",
+    "pasta": "Pâtes",
+    "pastaDesc": "Variétés de pâtes authentiques.",
+    "snacks": "En-cas",
+    "snacksDesc": "Des en-cas savoureux à déguster à tout moment de la journée."
   },
   "about": {
-    "title": "About Harvics",
-    "subtitle": "Excellence in Premium Consumer Goods Since 2019",
-    "ourStory": "Our Story",
-    "story1": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
-    "story2": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+    "title": "À propos de Harvics",
+    "subtitle": "L'excellence dans les biens de consommation haut de gamme depuis 2019",
+    "ourStory": "Notre histoire",
+    "story1": "Fondée en 2019, Harvics est passée d'une idée visionnaire à un leader mondial des biens de consommation haut de gamme. Notre parcours est marqué par une quête incessante de la qualité et un engagement constant envers l'innovation.",
+    "story2": "Présents dans plus de 40 pays, nous proposons des produits qui améliorent la vie et établissent de nouvelles normes dans notre secteur. De nos modestes débuts à notre présence mondiale, nos valeurs demeurent inchangées.",
     "est2018": "Est. 2019",
-    "countries40": "40+ Countries",
-    "productLines6": "6 Product Lines"
+    "countries40": "Plus de 40 pays",
+    "productLines6": "6 gammes de produits"
   },
   "csr": {
     "hero": {
-      "title": "Corporate Social Responsibility",
-      "description": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "title": "Responsabilité sociale des entreprises",
+      "description": "Chez Harvics, nous sommes engagés à avoir un impact positif sur le monde. Nos initiatives RSE sont axées sur le développement durable, l'autonomisation des communautés et des pratiques commerciales éthiques.",
       "stats": {
-        "years": "Years of Impact",
-        "countries": "Countries Reached",
-        "lives": "Lives Touched"
+        "years": "Des années d'impact",
+        "countries": "Pays atteints",
+        "lives": "Des vies touchées"
       }
     },
     "initiatives": {
-      "title": "Our Key Initiatives",
-      "description": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders."
+      "title": "Nos initiatives clés",
+      "description": "Nous nous concentrons sur quatre piliers principaux pour impulser un changement durable et créer de la valeur partagée pour toutes les parties prenantes."
     },
     "sustainability": {
-      "title": "Sustainability",
-      "description": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "title": "Durabilité",
+      "description": "Réduire notre empreinte environnementale grâce aux énergies renouvelables et à la réduction des déchets.",
       "stats": {
-        "renewable": "Renewable Energy",
-        "waste": "Waste Diverted",
-        "carbon": "Carbon Reduction"
+        "renewable": "Énergie renouvelable",
+        "waste": "Déchets détournés",
+        "carbon": "Réduction des émissions de carbone"
       }
     },
     "community": {
-      "title": "Community Support",
-      "description": "Empowering local communities through education, healthcare, and economic development.",
+      "title": "Soutien communautaire",
+      "description": "Autonomiser les communautés locales par l'éducation, les soins de santé et le développement économique.",
       "stats": {
-        "families": "Families Supported",
-        "programs": "Active Programs",
-        "volunteers": "Volunteers"
+        "families": "Familles soutenues",
+        "programs": "Programmes actifs",
+        "volunteers": "Bénévoles"
       }
     },
     "education": {
-      "title": "Education",
-      "description": "Providing access to quality education and scholarships for underprivileged students.",
+      "title": "Éducation",
+      "description": "Offrir un accès à une éducation de qualité et à des bourses d'études aux élèves défavorisés.",
       "stats": {
-        "scholarships": "Scholarships",
-        "schools": "Partner Schools",
-        "students": "Students Impacted"
+        "scholarships": "Bourses d'études",
+        "schools": "Écoles partenaires",
+        "students": "Étudiants touchés"
       }
     },
     "health": {
-      "title": "Health & Wellness",
-      "description": "Improving access to healthcare and nutrition in underserved regions.",
+      "title": "Santé et bien-être",
+      "description": "Améliorer l'accès aux soins de santé et à la nutrition dans les régions mal desservies.",
       "stats": {
-        "campaigns": "Health Campaigns",
-        "people": "People Served",
-        "clinics": "Mobile Clinics"
+        "campaigns": "Campagnes de santé",
+        "people": "Personnes servies",
+        "clinics": "Cliniques mobiles"
       }
     },
     "achievements": {
-      "title": "Our Impact",
-      "description": "Recognizing our milestones in creating a better world.",
-      "2024": {
-        "title": "Global Sustainability Award",
-        "description": "Recognized for our commitment to carbon neutrality."
+      "2022": {
+        "title": "Meilleure initiative RSE",
+        "description": "Récompensés pour notre approche novatrice en matière de responsabilité sociale."
       },
       "2023": {
-        "title": "Community Champion",
-        "description": "Awarded for our extensive community outreach programs."
+        "title": "Champion de la communauté",
+        "description": "Récompensés pour nos vastes programmes d'action communautaire."
       },
-      "2022": {
-        "title": "Best CSR Initiative",
-        "description": "Honored for our innovative approach to social responsibility."
-      }
+      "2024": {
+        "title": "Prix mondial du développement durable",
+        "description": "Reconnus pour notre engagement en faveur de la neutralité carbone."
+      },
+      "title": "Notre impact",
+      "description": "Reconnaître nos étapes clés dans la création d'un monde meilleur."
     },
     "cta": {
-      "title": "Join Us in Making a Difference",
-      "description": "Partner with us or learn more about how we are building a sustainable future.",
-      "contact": "Contact CSR Team",
-      "learnMore": "Learn More"
+      "title": "Rejoignez-nous pour faire la différence",
+      "description": "Devenez partenaire ou apprenez-en davantage sur la façon dont nous construisons un avenir durable.",
+      "contact": "Contactez l'équipe RSE",
+      "learnMore": "Apprendre encore plus"
     }
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
-    "email": "Email",
+    "title": "Entrer en contact",
+    "subtitle": "Nous serions ravis d'avoir de vos nouvelles. N'hésitez pas à nous contacter par l'un de ces moyens.",
+    "phone": "Téléphone",
+    "email": "E-mail",
     "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "callNow": "Appelez maintenant",
+    "sendEmail": "Envoyer un courriel",
+    "messageUs": "Envoyez-nous un message"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "Centre Médias",
+    "pageTitle": "Centre Médias | Harvics",
+    "description": "Ressources presse, actifs de marque et dernières nouvelles de Harvics Global Ventures.",
+    "corporate": "Entreprise",
+    "sections": {
+      "news": {
+        "title": "Actualités et Communiqués de Presse",
+        "desc": "Dernières annonces, expansions de marché, lancements de produits et mises à jour corporatives de Harvics Global Ventures.",
+        "cta": "Lire les Dernières Nouvelles"
+      },
+      "gallery": {
+        "title": "Galerie d'Images",
+        "desc": "Actifs de marque haute résolution, photographie de produits, images d'installations et couverture d'événements pour utilisation médiatique.",
+        "cta": "Parcourir la Galerie"
+      },
+      "contacts": {
+        "title": "Contacts Médias",
+        "desc": "Contactez notre équipe de communication pour les demandes de presse, les demandes d'interview et les annonces de partenariat.",
+        "cta": "Contacter l'Équipe Presse"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "Marchés Couverts",
+      "industryVerticals": "Secteurs d'Activité",
+      "foundedIn": "Fondée à Dubaï",
+      "languagesSupported": "Langues Supportées"
+    },
+    "recentHeadlines": "Titres Récents",
+    "headlines": {
+      "expansion": "Harvics Étend ses Opérations FMCG à 5 Nouveaux Marchés d'Asie du Sud-Est",
+      "aiPlatform": "Nouvelle Plateforme de Chaîne d'Approvisionnement Alimentée par l'IA Lancée pour la Distribution Mondiale",
+      "carbonNeutral": "Harvics Atteint le Jalon de Neutralité Carbone dans Toutes les Installations",
+      "partnership": "Partenariat Stratégique avec les Principaux Fabricants Textiles en Asie du Sud"
+    }
   },
   "harvicsHouse": {
-    "title": "Harvics House",
-    "subtitle": "A Legacy of Excellence and Tradition",
-    "aboutTitle": "Welcome to Harvics House",
-    "description": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
-    "description2": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name."
+    "title": "Maison Harvics",
+    "subtitle": "Un héritage d'excellence et de tradition",
+    "aboutTitle": "Bienvenue à Harvics House",
+    "description": "Harvics House incarne l'apogée de notre engagement envers la qualité et le patrimoine. Nous y présentons une sélection raffinée de nos produits haut de gamme, dans un cadre qui reflète nos valeurs d'élégance, de tradition et d'innovation.",
+    "description2": "Explorez nos collections exclusives et découvrez l'histoire qui se cache derrière chaque produit portant le nom Harvics."
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
-    "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
+    "tagline": "L'excellence dans les biens de consommation haut de gamme depuis 2019",
+    "brandStatement": "Une entreprise mondiale leader dans le domaine des biens de consommation, proposant des produits alimentaires haut de gamme dans diverses catégories et répondant aux normes de qualité internationales.",
+    "locations": "Londres • Milan • New York",
+    "since": "Depuis 2019",
+    "harvicsNews": "Actualités Harvics",
+    "subscribeToAlerts": "Abonnez-vous pour recevoir des alertes et des mises à jour",
+    "signUp": "S'inscrire",
+    "complianceConcerns": "Problèmes de conformité",
+    "speakUp": "N'hésitez pas à exprimer vos préoccupations concernant la conformité ou l'éthique.",
+    "speakUpButton": "Prenez la parole",
+    "contactUs": "Contactez-nous",
+    "contactDescription": "Contactez notre équipe",
     "contactUsButton": "Nous contacter",
-    "usefulLinks": "Useful Links",
-    "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
+    "usefulLinks": "Liens utiles",
+    "askHarvics": "Demandez à Harwich",
+    "searchForJobs": "Recherche d'emplois",
+    "signUpForNews": "Inscrivez-vous à notre newsletter",
+    "company": "Entreprise",
+    "globalAddresses": "Adresses mondiales",
+    "strategy": "Stratégie",
+    "ourLeadership": "Notre leadership",
+    "brandsAZ": "Marques de A à Z",
+    "ourHistory": "Notre histoire",
+    "sustainability": "Durabilité",
+    "news": "Nouvelles",
+    "mediaContacts": "Contacts médias",
     "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
+    "investors": "Investisseurs",
+    "corporateGovernance": "Gouvernance d'entreprise",
+    "sharesAdrsBonds": "Actions, ADR et obligations",
     "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
-    "privacy": "Privacy",
+    "followUsOn": "Suivez-nous sur",
+    "issuesCount": "0 problème",
+    "siteMap": "Plan du site",
+    "unsubscribe": "Se désabonner",
+    "help": "Aide",
+    "privacy": "Confidentialité",
     "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
-    "feature1Title": "Global Shipping",
-    "feature1Desc": "Worldwide distribution to 40+ countries",
-    "feature2Title": "Premium Quality",
-    "feature2Desc": "International quality standards guaranteed",
-    "feature3Title": "Expert Support",
-    "feature3Desc": "Dedicated customer service team",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
-    "media": "Media"
+    "termsOfUse": "Conditions d'utilisation",
+    "accessibility": "Accessibilité",
+    "carbonEfficiency": "efficacité carbone",
+    "suppliers": "Fournisseurs",
+    "socialMedia": "Réseaux sociaux",
+    "cookieSettings": "Paramètres des cookies",
+    "feature1Title": "Expédition internationale",
+    "feature1Desc": "Distribution mondiale dans plus de 40 pays",
+    "feature2Title": "Qualité supérieure",
+    "feature2Desc": "normes de qualité internationales garanties",
+    "feature3Title": "Assistance d'experts",
+    "feature3Desc": "Équipe de service client dédiée",
+    "emailAddress": "Adresse email",
+    "enterEmailPlaceholder": "Saisissez votre adresse e-mail",
+    "subscribe": "S'abonner",
+    "subscribing": "S'abonner...",
+    "aboutUs": "À propos de nous",
+    "media": "Médias"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "Rechercher des produits, des marques ou des catégories",
+    "noResults": "Aucun résultat trouvé",
+    "searching": "Recherche...",
+    "results": "Résultats"
   },
   "chatbot": {
     "title": "Discuter avec nous",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "placeholder": "Saisissez votre message...",
+    "send": "Envoyer",
+    "close": "Fermer",
+    "welcome": "Bonjour ! Comment puis-je vous aider aujourd'hui ?",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "Je suis désolé, je n'ai pas compris. Pourriez-vous reformuler, s'il vous plaît ?",
+      "help": "Je peux vous aider concernant les informations sur les produits, les commandes ou toute autre question. Que souhaitez-vous savoir ?",
+      "contact": "Pour obtenir de l'aide supplémentaire, veuillez nous contacter à l'adresse support@harvics.com ou appeler le +1-800-HARVICS."
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
-    "filter": "Filter",
-    "clear": "Clear",
-    "download": "Download",
-    "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
-    "status": "Status",
+    "chatWithUs": "Discutez avec nous",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "save": "Sauvegarder",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "submit": "Soumettre",
+    "search": "Recherche",
+    "filter": "Filtre",
+    "clear": "Clair",
+    "download": "Télécharger",
+    "upload": "Télécharger",
+    "yes": "Oui",
+    "no": "Non",
+    "close": "Fermer",
+    "back": "Dos",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "actions": "Actes",
+    "status": "Statut",
     "date": "Date",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
+    "name": "Nom",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "country": "Pays",
+    "city": "Ville",
+    "all": "Tous",
+    "none": "Aucun",
+    "select": "Sélectionner",
     "selectLanguage": "Sélectionner la langue",
-        "showMore": "Voir plus",
-        "showLess": "Voir moins",
-        "selectCountry": "Select Country",
-    "required": "Required",
+    "showMore": "Voir plus",
+    "showLess": "Voir moins",
+    "selectCountry": "Sélectionner un pays",
+    "required": "Requis",
     "menu": "Menu",
-    "viewProducts": "View Products"
+    "viewProducts": "Voir les produits"
   },
   "music": {
     "title": "Musique",
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "Jouer de la musique",
+    "pause": "Pause musique",
+    "mute": "Musique muette",
+    "unmute": "Réactiver la musique"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "Notre portée mondiale",
+    "since": "Depuis",
+    "majorMarket": "Marché principal",
+    "majorMarkets": "Principaux marchés",
+    "presence": "Présence",
+    "countriesServed": "Pays desservis",
+    "majorMarketsCount": "Principaux marchés",
+    "productCategoriesCount": "Catégories de produits",
+    "establishedYear": "Établi"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "Hiérarchie territoriale",
+    "fullPath": "Chemin complet",
+    "currentTerritory": "Territoire actuel",
+    "noChildren": "Aucun article",
     "tiers": {
       "globe": "Globe",
       "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
+      "region": "Région",
+      "country": "Pays",
+      "city": "Ville",
       "district": "District",
-      "location": "Location"
+      "location": "Emplacement"
     }
   },
   "globalWorld": {
     "title": "Harvics Global",
-    "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "titleShort": "Mondial",
+    "selectRegion": "Sélectionner la région",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
-      "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
+      "title": "Détails du client",
+      "selected": "Choisi",
+      "fullName": "Nom et prénom",
+      "namePlaceholder": "Veuillez saisir votre nom complet",
+      "nameRequired": "Le nom est requis.",
+      "email": "Adresse email",
+      "emailPlaceholder": "votre.email@exemple.com",
+      "emailRequired": "L'adresse électronique est requise.",
+      "emailInvalid": "S'il vous plaît, mettez une adresse email valide",
+      "phone": "Numéro de téléphone",
       "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "phoneRequired": "Un numéro de téléphone est requis.",
+      "address": "Adresse",
+      "addressPlaceholder": "Votre adresse",
+      "addressRequired": "L'adresse est requise.",
+      "marketingConsent": "J'accepte de recevoir des communications et des mises à jour marketing",
+      "submit": "Soumettre et continuer",
+      "submitting": "Soumission...",
+      "skip": "Passer et continuer"
     }
   },
   "distributorPortal": {
@@ -406,389 +439,709 @@
         "attendanceSubtitle": "Couverture du territoire"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "Finances et stocks",
+        "lowStock": "Références en stock faible",
+        "lowStockSubtitle": "Réapprovisionnement du déclencheur",
+        "outstandingInvoices": "Factures impayées",
+        "outstandingInvoicesSubtitle": "À percevoir",
+        "creditLimit": "Limite de crédit",
+        "creditLimitSubtitle": "Attribué par le service financier"
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "L'approbation automatique, le réapprovisionnement des stocks et les rappels de factures sont activés.",
+        "autoApproval": "Auto-approbation",
+        "stockReplenishment": "Réapprovisionnement des stocks",
+        "invoiceReminders": "Rappels de factures"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "Recommandations de l'IA",
+        "riskLevel": "Niveau de risque",
+        "riskDescription": "En fonction de l'utilisation du crédit et de l'historique de paiement",
+        "suggestedOrder": "Ordre suggéré",
+        "suggestedOrderSubtitle": "Références recommandées par l'IA à commander",
+        "nextAction": "Prochaine action"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "Actions et conseils",
+        "complaints": "Plaintes",
+        "complaintsSubtitle": "Problèmes rencontrés par les détaillants en attente de résolution",
+        "playbook": "Manuel de jeu",
+        "playbookItem1": "Prioriser les livraisons en attente avant midi.",
+        "playbookItem2": "Clôturer toutes les réclamations en suspens sous 48h.",
+        "playbookItem3": "Déclencher le réapprovisionnement des références à faible stock (création automatique de bon de commande)."
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "Territoire",
+      "ordersThisMonth": "Commandes du mois",
+      "pendingOrders": "Commandes en attente",
+      "deliveredOrders": "Commandes livrées",
+      "territoryInformation": "Informations territoriales",
+      "country": "Pays",
+      "city": "Ville",
+      "region": "Région",
+      "quickActions": "Actions rapides",
+      "newOrder": "Nouvel Ordre",
+      "viewOrders": "Afficher les commandes",
+      "viewInvoices": "Consulter les factures",
+      "profileSettings": "Paramètres du profil",
+      "loading": "Chargement du tableau de bord...",
+      "error": "Erreur"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
+      "title": "Mes commandes",
+      "orderId": "Numéro de commande",
       "date": "Date",
-      "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "status": "Statut",
+      "items": "Articles",
+      "totalAmount": "Montant total",
+      "actions": "Actes",
+      "viewDetails": "Voir les détails",
       "filters": {
-        "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "Statut",
+        "startDate": "Date de début",
+        "endDate": "Date de fin",
+        "allStatuses": "Tous les statuts",
+        "clearFilters": "Filtres transparents"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "En attente",
+        "processing": "Traitement",
+        "delivered": "Livré",
+        "cancelled": "Annulé"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
+      "noOrders": "Aucune commande trouvée",
+      "loading": "Chargement des commandes...",
       "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "of": "de",
+      "previous": "Précédent",
+      "next": "Suivant"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
-      "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
+      "title": "Détails de la commande",
+      "backToOrders": "Retour aux commandes",
+      "orderId": "Numéro de commande",
+      "status": "Statut",
+      "orderDate": "Date de commande",
+      "deliveryDate": "La date de livraison",
+      "deliveryAddress": "Adresse de livraison",
       "notes": "Notes",
-      "orderItems": "Order Items",
-      "product": "Product",
-      "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
+      "orderItems": "Articles commandés",
+      "product": "Produit",
+      "sku": "UGS",
+      "quantity": "Quantité",
+      "unitPrice": "Prix unitaire",
       "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "totalAmount": "Montant total",
+      "statusTimeline": "Chronologie des statuts",
+      "orderNotFound": "Commande introuvable"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
+      "title": "Créer une nouvelle commande",
+      "orderItems": "Articles commandés",
+      "addItem": "Ajouter un élément",
+      "noItems": "Aucun élément ajouté pour le moment. Cliquez sur « Ajouter un élément » pour commencer.",
+      "orderDetails": "Détails de la commande",
+      "deliveryDate": "La date de livraison",
+      "deliveryAddress": "Adresse de livraison",
       "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
-      "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "totalAmount": "Montant total",
+      "createOrder": "Créer une commande",
+      "creatingOrder": "Création d'une commande...",
+      "cancel": "Annuler",
+      "selectProduct": "Sélectionner un produit",
+      "product": "Produit",
+      "quantity": "Quantité",
+      "unitPrice": "Prix unitaire",
+      "remove": "Retirer",
+      "subtotal": "Total",
+      "orderId": "Numéro de commande",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "Au moins un article de la commande est requis",
+        "productRequired": "Le produit est requis",
+        "quantityRequired": "La quantité doit être supérieure à 0",
+        "priceRequired": "Le prix unitaire doit être non négatif.",
+        "invalidDate": "Format de date de livraison invalide",
+        "datePast": "La date de livraison ne peut pas être antérieure au passé."
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "Mes factures",
+      "invoiceNumber": "Numéro de facture",
+      "invoiceDate": "Date de facturation",
+      "dueDate": "Deux rendez-vous",
+      "amount": "Montant",
+      "paidAmount": "Montant payé",
+      "paymentStatus": "État du paiement",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "État du paiement",
+        "allStatuses": "Tous les statuts",
+        "clearFilters": "Filtres transparents"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "Payé",
+        "unpaid": "Non rémunéré",
+        "partial": "Partiel"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "Aucune facture trouvée",
+      "loading": "Chargement des factures..."
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "title": "Mon profil",
+      "accountInformation": "Informations sur le compte",
+      "distributorId": "ID du distributeur",
+      "territory": "Territoire",
+      "country": "Pays",
+      "city": "Ville",
+      "accountCreated": "Compte créé",
+      "updateProfile": "Mettre à jour le profil",
+      "name": "Nom",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "address": "Adresse",
+      "language": "Langue",
+      "currency": "Devise",
+      "saveChanges": "Enregistrer les modifications",
+      "saving": "Économie...",
+      "profileUpdated": "Profil mis à jour avec succès",
+      "loading": "Chargement du profil...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "Format d'e-mail invalide",
+        "invalidPhone": "Format de téléphone invalide"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
-      "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "error": "Erreur",
+      "loading": "Chargement...",
+      "save": "Sauvegarder",
+      "cancel": "Annuler",
+      "back": "Dos",
+      "submit": "Soumettre",
+      "delete": "Supprimer",
+      "edit": "Modifier",
+      "view": "Voir",
+      "search": "Recherche",
+      "filter": "Filtre",
+      "clear": "Clair",
+      "apply": "Appliquer",
+      "close": "Fermer",
+      "confirm": "Confirmer",
+      "yes": "Oui",
+      "no": "Non"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
-    "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "title": "Système d'exploitation légal",
+    "sidebarTitle": "Système d'exploitation légal",
+    "accessDenied": "Accès refusé",
+    "accessDeniedMessage": "Vous n'êtes pas autorisé à accéder au module Legal OS.",
+    "dashboard": "Tableau de bord",
+    "contracts": "Contrats",
+    "certificates": "Certificats",
+    "compliance": "Conformité",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "Tableau de bord juridique",
+      "description": "Aperçu des opérations juridiques et de l'état de conformité",
+      "activeTrademarks": "Marques déposées actives",
+      "activeContracts": "Contrats actifs",
+      "complianceStatus": "État de conformité"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "Marques déposées",
+      "description": "Gérer les enregistrements et les demandes de marques",
+      "addNew": "Ajouter une nouvelle marque",
       "filters": {
-        "country": "Country",
-        "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "country": "Pays",
+        "status": "Statut",
+        "allCountries": "Tous les pays",
+        "allStatuses": "Tous les statuts",
+        "clearFilters": "Filtres transparents"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "brandName": "Nom de marque",
+        "class": "Classe",
+        "country": "Pays",
+        "applicationNo": "Numéro de demande",
+        "status": "Statut",
+        "expiryDate": "Date d'expiration",
+        "actions": "Actes"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "Modifier la marque",
+        "add": "Ajouter une nouvelle marque",
+        "view": "Voir la marque déposée"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
+        "brandName": "Nom de marque",
+        "classNumber": "Numéro de classe",
+        "country": "Pays",
+        "applicationNo": "Numéro de demande",
+        "status": "Statut",
+        "expiryDate": "Date d'expiration",
         "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "noDocuments": "Aucun document joint",
+        "addDocument": "Ajouter un document",
+        "remove": "Retirer"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "Impossible de charger les marques déposées",
+        "saveFailed": "Impossible d'enregistrer la marque. Veuillez réessayer."
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "Affaires juridiques",
+      "description": "Gérer les dossiers juridiques et suivre leur évolution.",
+      "addNew": "Nouvelle affaire",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
+        "caseTitle": "Titre de l'affaire",
+        "caseType": "Type de cas",
+        "country": "Pays",
         "description": "Description",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date"
+        "assignedTo": "Attribué à",
+        "status": "Statut",
+        "hearingDate": "Date d'audience"
       },
       "table": {
-        "caseTitle": "Case Title",
-        "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "caseTitle": "Titre de l'affaire",
+        "type": "Taper",
+        "country": "Pays",
+        "assignedTo": "Attribué à",
+        "status": "Statut",
+        "hearingDate": "Date d'audience",
+        "actions": "Actes"
       },
       "status": {
-        "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "open": "Ouvrir",
+        "inProgress": "En cours",
+        "closed": "Fermé",
+        "cancelled": "Annulé"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "Vue cartographique de la flotte",
+      "description": "Suivi en temps réel des commerciaux et des véhicules de livraison",
+      "activeEmployees": "Employés actifs",
+      "noEmployees": "Aucun employé actif",
+      "loading": "Chargement..."
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
-      "reset": "Reset",
-      "play": "Play",
+      "title": "Relecture de l'itinéraire",
+      "employee": "Employé",
+      "speed": "Vitesse",
+      "reset": "Réinitialiser",
+      "play": "Jouer",
       "pause": "Pause",
       "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "noRoute": "Aucune donnée d'itinéraire disponible",
+      "loading": "Chargement de l'itinéraire..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "Produits concurrents",
+      "description": "Suivre les informations sur les produits des concurrents",
+      "addProduct": "Ajouter un produit",
+      "formTitle": "Ajouter un produit concurrent",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "Marque",
+        "skuName": "Nom de l'unité de référence",
+        "category": "Catégorie",
+        "size": "Taille",
+        "price": "Prix",
+        "currency": "Devise",
+        "country": "Pays"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "Marque",
+        "skuName": "Nom de l'unité de référence",
+        "category": "Catégorie",
+        "size": "Taille",
+        "price": "Prix",
+        "country": "Pays",
+        "dateAdded": "Date d'ajout"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "Échec du chargement des produits",
+        "createFailed": "Impossible de créer le produit. Veuillez réessayer."
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "Aucun produit concurrent trouvé",
+      "loading": "Chargement des produits..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "Tableau de bord des concurrents",
+      "description": "Analyses et informations sur les produits concurrents",
+      "totalProducts": "Produits totaux",
+      "brandsTracked": "Marques suivies",
+      "countries": "Pays",
+      "categories": "Catégories",
+      "byBrand": "Produits par marque",
+      "byCountry": "Produits par pays",
+      "byCategory": "Produits par catégorie",
+      "loading": "Chargement des statistiques...",
+      "noStats": "Aucune statistique disponible"
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
+    "overview": "Aperçu",
+    "orders": "Ordres",
+    "inventory": "Inventaire",
+    "logistics": "Logistique",
     "finance": "Finance",
     "crm": "CRM",
-    "hr": "HR",
-    "executive": "Executive",
-    "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
+    "hr": "HEURE",
+    "executive": "Exécutif",
+    "investor": "Investisseur",
+    "legal-ipr": "Juridique/Propriété intellectuelle",
+    "competitor": "Concurrent",
     "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
-    "admin": "Admin"
+    "gps-tracking": "Suivi GPS",
+    "localization": "Localisation",
+    "workflows": "Flux de travail",
+    "admin": "Administrateur"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
+      "overview": "Aperçu",
+      "orders": "Ordres",
+      "inventory": "Inventaire",
+      "logistics": "Logistique",
       "finance": "Finance",
       "crm": "CRM",
-      "hr": "HR",
-      "executive": "Executive",
-      "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
+      "hr": "HEURE",
+      "executive": "Exécutif",
+      "investor": "Investisseur",
+      "legal-ipr": "Juridique/Propriété intellectuelle",
+      "competitor": "Concurrent",
       "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
-      "admin": "Admin"
+      "gps-tracking": "Suivi GPS",
+      "localization": "Localisation",
+      "workflows": "Flux de travail",
+      "admin": "Administrateur"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
+      "customers": "Clients",
+      "employees": "Employés",
       "profit": "Profit"
+    },
+    "domain": {
+      "title": "Système d'exploitation CRM",
+      "customer360": {
+        "title": "Vue client à 360°",
+        "description": "Profils clients complets, historique des interactions et gestion de la relation client"
+      },
+      "campaigns": {
+        "title": "Campagnes numériques",
+        "description": "Campagnes marketing multicanaux (IG, FB, TikTok, WhatsApp)"
+      },
+      "leads": {
+        "title": "Pistes et opportunités",
+        "description": "Gestion des prospects, qualification et pipeline d'opportunités"
+      },
+      "support": {
+        "title": "Service client",
+        "description": "Gestion des tickets, service client et résolution des problèmes"
+      },
+      "loyalty": {
+        "title": "Programmes de fidélité",
+        "description": "Gestion de la fidélisation, de la gamification et des récompenses chez les détaillants"
+      }
+    },
+    "customerList": {
+      "title": "Vue client à 360°",
+      "newCustomer": "Nouveau client",
+      "totalCustomers": "Nombre total de clients",
+      "active": "Actif",
+      "new": "Nouveau",
+      "satisfaction": "Satisfaction",
+      "customerManagement": "Gestion de la clientèle",
+      "customerManagementDescription": "Consultez et gérez vos relations clients, vos interactions et vos campagnes.",
+      "loading": "Chargement...",
+      "error": "Erreur lors du chargement des données CRM"
+    }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "Chargement du poste de pilotage du fournisseur…",
+      "purchaseOrders": "bons de commande",
+      "purchaseOrdersSubtitle": "Élevés par Harvics",
+      "shipments": "Expéditions / GRN",
+      "shipmentsSubtitle": "Accepté cette semaine",
+      "invoices": "Factures créées",
+      "invoicesSubtitle": "En attente de paiement",
+      "paymentsPending": "Paiements en attente",
+      "paymentsPendingSubtitle": "Sortie prévue",
+      "qualityComplaints": "Qualité / réclamations",
+      "qualityComplaintsSubtitle": "Billets ouverts",
+      "forecast": "Prévisions (4 prochaines semaines)",
+      "forecastSubtitle": "Espace réservé à l'IA",
+      "supplierActions": "Actions des fournisseurs",
+      "action1": "Confirmer les expéditions à venir et mettre à jour le calendrier GRN.",
+      "action2": "Examiner les factures impayées et partager les avis de paiement.",
+      "action3": "Résoudre les problèmes de qualité en suspens à l'aide de preuves d'assurance qualité."
+    }
+  },
+  "form": {
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "email": "E-mail",
+    "submit": "Soumettre",
+    "cancel": "Annuler",
+    "save": "Sauvegarder",
+    "delete": "Supprimer",
+    "search": "Recherche",
+    "filter": "Filtre",
+    "reset": "Réinitialiser",
+    "close": "Fermer",
+    "back": "Dos",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "confirm": "Confirmer",
+    "rememberMe": "Souviens-toi de moi",
+    "forgotPassword": "Mot de passe oublié ?",
+    "emailRequired": "L'adresse électronique est requise.",
+    "emailInvalid": "S'il vous plaît, mettez une adresse email valide"
+  },
+  "faq": {
+    "products": {
+      "category": "Produits",
+      "q1": "Quels sont les produits proposés par Harvics ?",
+      "a1": "Nous proposons une large gamme de produits alimentaires de qualité supérieure, notamment des confiseries, des boissons, des en-cas, des pâtes, des produits de boulangerie et des aliments surgelés, répartis en de nombreuses catégories.",
+      "q2": "Où puis-je acheter des produits Harvics ?",
+      "a2": "Nos produits sont disponibles dans des points de vente répartis dans plus de 40 pays. Utilisez notre outil de localisation de magasins ou notre page de contact pour trouver un revendeur près de chez vous.",
+      "q3": "Proposez-vous des commandes en gros ?",
+      "a3": "Oui, nous proposons des remises sur les commandes groupées pour les entreprises et les détaillants. Consultez notre page Remises sur les commandes groupées pour plus d'informations."
+    },
+    "ordersShipping": {
+      "category": "Commandes et expédition",
+      "q1": "Quelles sont vos options de livraison ?",
+      "a1": "Nous proposons différentes options de livraison, notamment la livraison standard, express et internationale. La livraison est gratuite pour toute commande supérieure à 50 $.",
+      "q2": "Combien de temps prend la livraison ?",
+      "a2": "Les délais de livraison varient selon le lieu. La livraison standard prend généralement de 5 à 7 jours ouvrables, tandis que la livraison express prend de 2 à 3 jours ouvrables.",
+      "q3": "Puis-je suivre ma commande ?",
+      "a3": "Oui, vous pouvez suivre votre commande grâce au numéro de suivi qui figure dans votre courriel de confirmation de commande."
+    },
+    "accountPayments": {
+      "category": "Compte et paiements",
+      "q1": "Comment créer un compte ?",
+      "a1": "Cliquez sur « Se connecter » dans l’en-tête et sélectionnez « Créer un compte » pour vous inscrire.",
+      "q2": "Quels modes de paiement acceptez-vous ?",
+      "a2": "Nous acceptons toutes les principales cartes de crédit, cartes de débit, PayPal et les virements bancaires pour les commandes B2B.",
+      "q3": "Mes informations de paiement sont-elles sécurisées ?",
+      "a3": "Oui, nous utilisons un cryptage conforme aux normes de l'industrie pour protéger vos informations de paiement."
+    },
+    "returnsRefunds": {
+      "category": "Retours et remboursements",
+      "q1": "Quelle est votre politique de retour ?",
+      "a1": "Nous offrons une politique de retour de 30 jours pour les produits non ouverts dans leur emballage d'origine. Veuillez contacter notre service client pour obtenir une autorisation de retour.",
+      "q2": "Comment puis-je demander un remboursement ?",
+      "a2": "Veuillez contacter notre service client en indiquant votre numéro de commande et le motif du retour. Votre remboursement sera effectué sous 5 à 7 jours ouvrés."
+    },
+    "contactCta": {
+      "title": "Vous avez encore des questions ?",
+      "subtitle": "Notre équipe du service client est là pour vous aider.",
+      "button": "Contactez-nous"
+    }
+  },
+  "careers": {
+    "title": "Carrières",
+    "pageTitle": "Carrières | Harvics",
+    "description": "Rejoignez Harvics Global Ventures — explorez les opportunités dans plus de 40 pays.",
+    "joinUs": "Rejoignez-Nous",
+    "heroTitle": "Construisez l'Avenir du Commerce Mondial",
+    "heroDesc": "Nous grandissons dans plus de 40 pays. Rejoignez une équipe qui construit le système d'exploitation alimenté par l'IA pour le commerce mondial.",
+    "stats": {
+      "openPositions": "Postes Ouverts",
+      "countries": "Pays",
+      "industryVerticals": "Secteurs d'Activité",
+      "departmentsHiring": "Départements qui Recrutent"
+    },
+    "openPositionsByDept": "Postes Ouverts par Département",
+    "departments": {
+      "sales": {
+        "name": "Ventes et Distribution",
+        "desc": "Générez des revenus sur plus de 40 marchés. Gestion de territoire, comptes clés, relations distributeurs."
+      },
+      "supplyChain": {
+        "name": "Chaîne d'Approvisionnement et Logistique",
+        "desc": "Chaîne d'approvisionnement de bout en bout de l'usine au rayon. Gestion de flotte, entreposage, livraison du dernier kilomètre."
+      },
+      "technology": {
+        "name": "Technologie et IA",
+        "desc": "Construisez Harvics OS — notre plateforme d'entreprise alimentée par l'IA. Full-stack, ingénierie ML, science des données."
+      },
+      "finance": {
+        "name": "Finance et Trésorerie",
+        "desc": "Trésorerie multi-devises, financement du commerce, paiements numériques HPay, gestion FX dans toutes les régions."
+      },
+      "procurement": {
+        "name": "Achats et Approvisionnement",
+        "desc": "Approvisionnement mondial depuis plus de 15 pays d'origine. Audits de fournisseurs, contrôle qualité, programmes directs usine."
+      },
+      "hr": {
+        "name": "Ressources Humaines",
+        "desc": "Acquisition de talents, L&D, gestion de la performance dans diverses géographies et cultures."
+      },
+      "legal": {
+        "name": "Juridique et Conformité",
+        "desc": "Conformité commerciale, filtrage des sanctions, protection de la PI, gestion des contrats dans les juridictions."
+      },
+      "marketing": {
+        "name": "Marketing et Marque",
+        "desc": "Campagnes multilingues, contenu en 38 langues, marketing digital, stratégie de marque pour 10 secteurs."
+      }
+    },
+    "roles": "postes",
+    "whyHarvics": "Pourquoi Harvics",
+    "benefits": {
+      "globalMobility": {
+        "title": "Mobilité Mondiale",
+        "desc": "Travaillez à Dubaï, Londres, Karachi, Lahore et plus de 40 marchés"
+      },
+      "growthTrack": {
+        "title": "Parcours de Croissance",
+        "desc": "Progression de carrière accélérée dans une entreprise en expansion"
+      },
+      "aiCulture": {
+        "title": "Culture IA-Première",
+        "desc": "Travaillez avec une IA de pointe et des systèmes d'intelligence en temps réel"
+      },
+      "competitivePackage": {
+        "title": "Package Compétitif",
+        "desc": "Rémunération leader du marché, logement et avantages"
+      },
+      "learningBudget": {
+        "title": "Budget Formation",
+        "desc": "Budget de développement annuel pour cours, conférences et certifications"
+      },
+      "flexibleWork": {
+        "title": "Travail Flexible",
+        "desc": "Arrangements hybrides avec bureaux hub régionaux dans le monde entier"
+      }
+    }
+  },
+  "strategy": {
+    "title": "Notre Stratégie",
+    "pageTitle": "Stratégie | Harvics",
+    "description": "Construire un avenir durable par l'innovation et l'excellence",
+    "heroSubtitle": "Construire un avenir durable par l'innovation et l'excellence",
+    "pillars": {
+      "globalExpansion": {
+        "title": "Expansion Mondiale",
+        "desc": "Étendre notre présence sur les marchés émergents tout en renforçant notre position sur les marchés établis"
+      },
+      "productInnovation": {
+        "title": "Innovation Produit",
+        "desc": "Investir dans la R&D pour développer de nouveaux produits répondant aux préférences évolutives des consommateurs"
+      },
+      "sustainability": {
+        "title": "Durabilité",
+        "desc": "Engagés dans des pratiques durables dans toute notre chaîne d'approvisionnement et nos opérations"
+      },
+      "digitalTransformation": {
+        "title": "Transformation Digitale",
+        "desc": "Tirer parti de la technologie pour améliorer l'expérience client et l'efficacité opérationnelle"
+      }
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "desc": "Être la première entreprise mondiale de biens de consommation premium, reconnue pour la qualité, l'innovation et la durabilité."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Harvics Global Ventures | Commerce et Distribution Mondiale",
+      "description": "Entreprise commerciale mondiale livrant des produits premium dans 10+ industries, opérant dans 50+ pays depuis 2019."
+    },
+    "about": {
+      "title": "À Propos | Harvics Global Ventures",
+      "description": "Comment Harvics est devenu leader du commerce mondial dans 40+ pays."
+    },
+    "contact": {
+      "title": "Contact | Harvics Global Ventures",
+      "description": "Contactez les bureaux Harvics dans le monde."
+    },
+    "products": {
+      "title": "Produits | Harvics Global Ventures",
+      "description": "Gamme premium Harvics en FMCG, textiles, matières premières et solutions industrielles."
+    },
+    "careers": {
+      "title": "Carrières | Harvics Global Ventures",
+      "description": "Rejoignez Harvics — opportunités dans 40+ pays."
+    },
+    "media": {
+      "title": "Centre Médias | Harvics",
+      "description": "Communiqués, actualités et contacts presse d'Harvics."
+    },
+    "strategy": {
+      "title": "Notre Stratégie | Harvics",
+      "description": "Vision stratégique d'Harvics pour l'expansion mondiale et l'innovation."
+    },
+    "csr": {
+      "title": "RSE | Harvics",
+      "description": "Initiatives de responsabilité sociale d'Harvics."
+    },
+    "faq": {
+      "title": "FAQ | Harvics",
+      "description": "Questions fréquentes sur les produits et services Harvics."
+    },
+    "locations": {
+      "title": "Bureaux Mondiaux | Harvics",
+      "description": "Bureaux Harvics au Moyen-Orient, Asie, Europe et Afrique."
+    },
+    "leadership": {
+      "title": "Direction | Harvics",
+      "description": "Équipe de direction d'Harvics dans 40+ marchés."
+    },
+    "help": {
+      "title": "Aide | Harvics",
+      "description": "Aide pour les commandes et services Harvics."
+    },
+    "compliance": {
+      "title": "Conformité | Harvics",
+      "description": "Engagement d'Harvics envers l'éthique et la conformité."
+    },
+    "history": {
+      "title": "Notre Histoire | Harvics",
+      "description": "De startup à Dubaï en 2019 à entreprise mondiale dans 40+ pays."
+    },
+    "newsletter": {
+      "title": "Bulletin d'information | Harvics",
+      "description": "Abonnez-vous à la newsletter Harvics."
+    },
+    "login": {
+      "title": "Connexion | Harvics",
+      "description": "Connectez-vous à votre compte Harvics."
+    },
+    "research": {
+      "title": "Recherche | Harvics",
+      "description": "Recherche et innovation chez Harvics."
+    },
+    "investorRelations": {
+      "title": "Investisseurs | Harvics",
+      "description": "Informations financières et gouvernance d'Harvics."
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page Introuvable",
+      "heading": "404 — Page Introuvable",
+      "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+      "goHome": "Aller à l'Accueil",
+      "goBack": "Retour"
+    },
+    "serverError": {
+      "title": "Une Erreur s'est Produite",
+      "heading": "Une erreur s'est produite",
+      "description": "Désolé, une erreur inattendue s'est produite. Veuillez actualiser la page.",
+      "tryAgain": "Réessayer",
+      "reload": "Recharger",
+      "contactSupport": "Contacter le Support"
+    },
+    "globalError": {
+      "title": "Erreur d'Application",
+      "heading": "Erreur Critique",
+      "description": "Erreur critique. Veuillez recharger la page.",
+      "reload": "Recharger"
     }
   }
 }

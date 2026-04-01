@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "no",
+    "language": "Norwegian",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Norwegian. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Norwegian",
+      "translation": "Velkommen til"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Harwich"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Norwegian",
+      "translation": "Fortreffelighet innen premium forbruksvarer siden 2019"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Norwegian",
+      "translation": "Et ledende globalt forbruksvareselskap som leverer premium matvarer på tvers av ulike kategorier med internasjonale kvalitetsstandarder."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Norwegian",
+      "translation": "Utforsk produkter"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Norwegian",
+      "translation": "Kontakt oss"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Norwegian",
+      "translation": "Lær mer"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Norwegian",
+      "translation": "Fortreffelighet innen premium forbruksvarer siden"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Norwegian",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Norwegian",
+      "translation": "London • Milano • New York"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Norwegian",
+      "translation": "Bakeri"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Norwegian",
+      "translation": "Drikkevarer"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Norwegian",
+      "translation": "Konfekt"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Norwegian",
+      "translation": "Kulinarisk"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Norwegian",
+      "translation": "Frossen mat"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Norwegian",
+      "translation": "Pasta"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Norwegian",
+      "translation": "Snacks"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Norwegian",
+      "translation": "ESG-rapport 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Norwegian",
+      "translation": "London • Milano • New York"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Norwegian",
+      "translation": "Hjem"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Norwegian",
+      "translation": "Om"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Norwegian",
+      "translation": "Om oss"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Norwegian",
+      "translation": "Merkevarehistorie"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Norwegian",
+      "translation": "Produkter"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Norwegian",
+      "translation": "Våre produkter"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Norwegian",
+      "translation": "Se alle produkter"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Norwegian",
+      "translation": "CSR"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Norwegian",
+      "translation": "Investorrelasjoner"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Norwegian",
+      "translation": "Investorer"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Norwegian",
+      "translation": "Media"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Norwegian",
+      "translation": "Kontakt oss"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Norwegian",
+      "translation": "Harvics-huset"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Norwegian",
+      "translation": "Land"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Norwegian",
+      "translation": "Portaler"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Norwegian",
+      "translation": "Logg inn"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Norwegian",
+      "translation": "Ønskeliste"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Norwegian",
+      "translation": "Handlekurv"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Norwegian",
+      "translation": "Hjelp"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Norwegian",
+      "translation": "Finn butikk"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Norwegian",
+      "translation": "Penger"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Norwegian",
+      "translation": "Salg"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Norwegian",
+      "translation": "Tilbud"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Norwegian",
+      "translation": "Mørk modus"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Norwegian",
+      "translation": "Kredittkort"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Norwegian",
+      "translation": "M&S Rewards-kredittkort"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Norwegian",
+      "translation": "Klubbbelønninger"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Norwegian",
+      "translation": "Våre kredittkort"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Norwegian",
+      "translation": "Forsikring"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Norwegian",
+      "translation": "Boligforsikring"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Norwegian",
+      "translation": "Reiseforsikring"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Norwegian",
+      "translation": "Reisetjenester"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Norwegian",
+      "translation": "Reisepenger"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Norwegian",
+      "translation": "Valutakurser"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Norwegian",
+      "translation": "Tilleggstjenester"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Norwegian",
+      "translation": "Sparing og investering"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Norwegian",
+      "translation": "Personlige lån"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Norwegian",
+      "translation": "Økonomisk støtte"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Norwegian",
+      "translation": "Nåværende salg"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Norwegian",
+      "translation": "Klaring"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Norwegian",
+      "translation": "Sesongsalg"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Norwegian",
+      "translation": "Spesialtilbud"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Norwegian",
+      "translation": "Kampanjer"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Norwegian",
+      "translation": "Rabatter på store bestillinger"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Norwegian",
+      "translation": "Våre produkter"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Norwegian",
+      "translation": "Se alle produkter"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Norwegian",
+      "translation": "Våre produktkategorier"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Norwegian",
+      "translation": "Oppdag vårt førsteklasses utvalg av produkter laget med omhu og fortreffelighet."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Norwegian",
+      "translation": "Nivå 1: Kategorier"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Norwegian",
+      "translation": "Nivå 2: Moduler"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Norwegian",
+      "translation": "Nivå 3: KPI-skjermer"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Norwegian",
+      "translation": "Nivå 4: Handlinger"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Norwegian",
+      "translation": "Tilbakestill navigasjon"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Norwegian",
+      "translation": "Ingen underkategorier tilgjengelig for denne kategorien."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Norwegian",
+      "translation": "Produkter"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Norwegian",
+      "translation": "Underkategorier"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Norwegian",
+      "translation": "Bakeri"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Norwegian",
+      "translation": "Ferskbakte varer og bakverk."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Norwegian",
+      "translation": "Drikkevarer"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Norwegian",
+      "translation": "Forfriskende drinker for enhver anledning."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Norwegian",
+      "translation": "Konfekt"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Norwegian",
+      "translation": "Søte godbiter og herligheter."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Norwegian",
+      "translation": "Kulinarisk"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Norwegian",
+      "translation": "Viktige ingredienser til kjøkkenet ditt."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Norwegian",
+      "translation": "Frossen mat"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Norwegian",
+      "translation": "Praktiske og deilige frosne måltider."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Norwegian",
+      "translation": "Pasta"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Norwegian",
+      "translation": "Autentiske pastavarianter."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Norwegian",
+      "translation": "Snacks"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Norwegian",
+      "translation": "Smakfulle snacks til enhver tid på dagen."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Om Harvics"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Norwegian",
+      "translation": "Fortreffelighet innen premium forbruksvarer siden 2019"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Norwegian",
+      "translation": "Vår historie"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Norwegian",
+      "translation": "Harvics ble grunnlagt i 2019 og har vokst fra en visjonær idé til en global leder innen premium forbruksvarer. Vår reise er definert av en utrettelig jakt på kvalitet og en forpliktelse til innovasjon."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Norwegian",
+      "translation": "Vi opererer i over 40 land og leverer produkter som beriker liv og setter nye standarder i bransjen. Fra vår ydmyke begynnelse til vår globale tilstedeværelse forblir våre verdier uendret."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Norwegian",
+      "translation": "Etablert 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Norwegian",
+      "translation": "40+ land"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Norwegian",
+      "translation": "6 produktlinjer"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Norwegian",
+      "translation": "Bedriftens samfunnsansvar"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Norwegian",
+      "translation": "Hos Harvics er vi forpliktet til å ha en positiv innvirkning på verden. Våre CSR-initiativer fokuserer på bærekraft, samfunnsmyndighet og etisk forretningspraksis."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Norwegian",
+      "translation": "År med innvirkning"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Norwegian",
+      "translation": "Land nådd"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Norwegian",
+      "translation": "Liv berørt"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Norwegian",
+      "translation": "Våre viktigste initiativer"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Norwegian",
+      "translation": "Vi fokuserer på fire hovedpilarer for å drive bærekraftig endring og skape felles verdi for alle interessenter."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Norwegian",
+      "translation": "Bærekraft"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Norwegian",
+      "translation": "Redusere vårt miljøavtrykk gjennom fornybar energi og avfallsreduksjon."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Norwegian",
+      "translation": "Fornybar energi"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Norwegian",
+      "translation": "Avfall omdirigert"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Norwegian",
+      "translation": "Karbonreduksjon"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Norwegian",
+      "translation": "Støtte fra lokalsamfunnet"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Norwegian",
+      "translation": "Styrke lokalsamfunn gjennom utdanning, helsevesen og økonomisk utvikling."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Norwegian",
+      "translation": "Familier som støttes"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Norwegian",
+      "translation": "Aktive programmer"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Norwegian",
+      "translation": "Frivillige"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Norwegian",
+      "translation": "Utdannelse"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Norwegian",
+      "translation": "Å gi tilgang til kvalitetsutdanning og stipender for underprivilegerte studenter."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Norwegian",
+      "translation": "Stipend"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Norwegian",
+      "translation": "Partnerskoler"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Norwegian",
+      "translation": "Studenter berørt"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Norwegian",
+      "translation": "Helse og velvære"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Norwegian",
+      "translation": "Bedre tilgang til helsetjenester og ernæring i underforsynte regioner."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Norwegian",
+      "translation": "Helsekampanjer"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Norwegian",
+      "translation": "Folk som ble betjent"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Norwegian",
+      "translation": "Mobile klinikker"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Norwegian",
+      "translation": "Beste CSR-initiativ"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Norwegian",
+      "translation": "Hedret for vår innovative tilnærming til samfunnsansvar."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Norwegian",
+      "translation": "Fellesskapsmester"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Norwegian",
+      "translation": "Tildelt for våre omfattende samfunnsoppsøkende programmer."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Norwegian",
+      "translation": "Global bærekraftspris"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Norwegian",
+      "translation": "Anerkjent for vår forpliktelse til karbonnøytralitet."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Norwegian",
+      "translation": "Vår innvirkning"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Norwegian",
+      "translation": "Å anerkjenne våre milepæler i å skape en bedre verden."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Norwegian",
+      "translation": "Bli med oss og gjør en forskjell"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Norwegian",
+      "translation": "Bli et samarbeidspartner med oss, eller lær mer om hvordan vi bygger en bærekraftig fremtid."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Norwegian",
+      "translation": "Kontakt CSR-teamet"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Norwegian",
+      "translation": "Lær mer"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Norwegian",
+      "translation": "Ta kontakt"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Norwegian",
+      "translation": "Vi vil gjerne høre fra deg. Ta kontakt med oss via en av disse kanalene."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Norwegian",
+      "translation": "Telefon"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Norwegian",
+      "translation": "E-post"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Norwegian",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Norwegian",
+      "translation": "Ring nå"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Norwegian",
+      "translation": "Send e-post"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Norwegian",
+      "translation": "Send oss en melding"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Norwegian",
+      "translation": "Mediesenter"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Mediesenter | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Norwegian",
+      "translation": "Presseressurser, merkevareressurser og de siste nyhetene fra Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Norwegian",
+      "translation": "Bedrift"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Norwegian",
+      "translation": "Nyheter og pressemeldinger"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Norwegian",
+      "translation": "Siste kunngjøringer, markedsutvidelser, produktlanseringer og bedriftsoppdateringer fra Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Norwegian",
+      "translation": "Les siste nytt"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Norwegian",
+      "translation": "Bildegalleri"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Norwegian",
+      "translation": "Høyoppløselige merkevareressurser, produktfotografering, bilder av anlegg og arrangementsdekning for mediebruk."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Norwegian",
+      "translation": "Bla gjennom galleriet"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Norwegian",
+      "translation": "Mediekontakter"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Norwegian",
+      "translation": "Kontakt kommunikasjonsteamet vårt for pressehenvendelser, intervjuforespørsler og kunngjøringer om partnerskap."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Norwegian",
+      "translation": "Kontakt presseteamet"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Norwegian",
+      "translation": "Markeder dekket"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Norwegian",
+      "translation": "Bransjevertikaler"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Norwegian",
+      "translation": "Grunnlagt i Dubai"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Norwegian",
+      "translation": "Støttede språk"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Norwegian",
+      "translation": "Nylige overskrifter"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Norwegian",
+      "translation": "Harvics utvider dagligvarevirksomheten til 5 nye markeder i Sørøst-Asia"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Norwegian",
+      "translation": "Ny AI-drevet forsyningskjedeplattform lansert for global distribusjon"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Norwegian",
+      "translation": "Harvics når karbonnøytral milepæl på tvers av alle anlegg"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Norwegian",
+      "translation": "Strategisk partnerskap med ledende tekstilprodusenter i Sør-Asia"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Norwegian",
+      "translation": "Harvics-huset"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Norwegian",
+      "translation": "En arv av fortreffelighet og tradisjon"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Norwegian",
+      "translation": "Velkommen til Harvics hus"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Norwegian",
+      "translation": "Harvics House representerer høydepunktet i vår forpliktelse til kvalitet og kulturarv. Her samler vi det fineste utvalget av våre premiumprodukter, fremvist i et miljø som gjenspeiler våre verdier om eleganse, tradisjon og innovasjon."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Norwegian",
+      "translation": "Utforsk våre eksklusive kolleksjoner og oppdag historien bak hvert produkt som bærer navnet Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Norwegian",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Norwegian",
+      "translation": "Fortreffelighet innen premium forbruksvarer siden 2019"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Norwegian",
+      "translation": "Et ledende globalt forbruksvareselskap som leverer premium matvarer på tvers av ulike kategorier med internasjonale kvalitetsstandarder."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Norwegian",
+      "translation": "London • Milano • New York"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Norwegian",
+      "translation": "Siden 2019"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Norwegian",
+      "translation": "Harvics Nyheter"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Norwegian",
+      "translation": "Abonner for å motta varsler og oppdateringer"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Norwegian",
+      "translation": "Registrer deg"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Norwegian",
+      "translation": "Bekymringer om samsvar"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Norwegian",
+      "translation": "Si ifra hvis du har bekymringer angående samsvar eller etikk"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Norwegian",
+      "translation": "Si ifra"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Norwegian",
+      "translation": "Kontakt oss"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Norwegian",
+      "translation": "Ta kontakt med teamet vårt"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Norwegian",
+      "translation": "Kontakt oss"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Norwegian",
+      "translation": "Nyttige lenker"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Spør Harwich"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Norwegian",
+      "translation": "Søk etter jobber"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Norwegian",
+      "translation": "Registrer deg for nyheter"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Norwegian",
+      "translation": "Bedrift"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Norwegian",
+      "translation": "Globale adresser"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Norwegian",
+      "translation": "Strategi"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Norwegian",
+      "translation": "Vårt lederskap"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Norwegian",
+      "translation": "Merker fra A til Å"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Norwegian",
+      "translation": "Vår historie"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Norwegian",
+      "translation": "Bærekraft"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Norwegian",
+      "translation": "Nyheter"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Norwegian",
+      "translation": "Mediekontakter"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Norwegian",
+      "translation": "Bilder"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Norwegian",
+      "translation": "Investorer"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Norwegian",
+      "translation": "Bedriftsstyring"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Norwegian",
+      "translation": "Aksjer, ADR-er og obligasjoner"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Norwegian",
+      "translation": "Publikasjoner"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Norwegian",
+      "translation": "Følg oss på"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Norwegian",
+      "translation": "0 utgaver"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Norwegian",
+      "translation": "Nettstedskart"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Norwegian",
+      "translation": "Avslutt abonnementet"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Norwegian",
+      "translation": "Hjelp"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Norwegian",
+      "translation": "Privatliv"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Norwegian",
+      "translation": "Informasjonskapsler"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Norwegian",
+      "translation": "Bruksvilkår"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Norwegian",
+      "translation": "Tilgjengelighet"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Norwegian",
+      "translation": "Karboneffektivitet"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Norwegian",
+      "translation": "Leverandører"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Norwegian",
+      "translation": "Sosiale medier"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Norwegian",
+      "translation": "Innstillinger for informasjonskapsler"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Norwegian",
+      "translation": "Premiumkvalitet"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Norwegian",
+      "translation": "E-postadresse"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Norwegian",
+      "translation": "Skriv inn e-postadressen din"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Norwegian",
+      "translation": "Abonner"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Norwegian",
+      "translation": "Abonnerer..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Norwegian",
+      "translation": "Om oss"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Norwegian",
+      "translation": "Media"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Norwegian",
+      "translation": "Søk etter produkter, merker eller kategorier"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Norwegian",
+      "translation": "Ingen resultater funnet"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Norwegian",
+      "translation": "Søker..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Norwegian",
+      "translation": "Resultater"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Norwegian",
+      "translation": "Chat med oss"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Norwegian",
+      "translation": "Skriv inn meldingen din..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Norwegian",
+      "translation": "Sende"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Norwegian",
+      "translation": "Lukke"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Norwegian",
+      "translation": "Hallo! Hvordan kan jeg hjelpe deg i dag?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Norwegian",
+      "translation": "Beklager, jeg forsto ikke det. Kan du formulere det på en annen måte?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Norwegian",
+      "translation": "Jeg kan hjelpe deg med produktinformasjon, bestillinger eller generelle spørsmål. Hva ønsker du å vite?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Norwegian",
+      "translation": "For mer hjelp, vennligst kontakt oss på support@harvics.com eller ring +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Norwegian",
+      "translation": "Chat med oss"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Norwegian",
+      "translation": "Laster inn..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Norwegian",
+      "translation": "Feil"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Norwegian",
+      "translation": "Suksess"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Norwegian",
+      "translation": "Spare"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Norwegian",
+      "translation": "Kansellere"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Norwegian",
+      "translation": "Slett"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Norwegian",
+      "translation": "Redigere"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Norwegian",
+      "translation": "Utsikt"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Norwegian",
+      "translation": "Send inn"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Norwegian",
+      "translation": "Søk"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Norwegian",
+      "translation": "Filter"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Norwegian",
+      "translation": "Klar"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Norwegian",
+      "translation": "Last ned"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Norwegian",
+      "translation": "Last opp"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Norwegian",
+      "translation": "Ja"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Norwegian",
+      "translation": "Ingen"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Norwegian",
+      "translation": "Lukke"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Norwegian",
+      "translation": "Tilbake"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Norwegian",
+      "translation": "Neste"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Norwegian",
+      "translation": "Tidligere"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Norwegian",
+      "translation": "Handlinger"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Norwegian",
+      "translation": "Status"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Norwegian",
+      "translation": "Dato"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Norwegian",
+      "translation": "Navn"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Norwegian",
+      "translation": "E-post"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Norwegian",
+      "translation": "Telefon"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Norwegian",
+      "translation": "Adresse"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Norwegian",
+      "translation": "Land"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Norwegian",
+      "translation": "By"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Norwegian",
+      "translation": "Alle"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Norwegian",
+      "translation": "Ingen"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Norwegian",
+      "translation": "Velge"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Norwegian",
+      "translation": "Velg språk"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Norwegian",
+      "translation": "Velg land"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Norwegian",
+      "translation": "Vis mer"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Norwegian",
+      "translation": "Vis mindre"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Norwegian",
+      "translation": "Obligatorisk"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Norwegian",
+      "translation": "Meny"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Norwegian",
+      "translation": "Se produkter"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Norwegian",
+      "translation": "Spill musikk"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Norwegian",
+      "translation": "Pause musikk"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Norwegian",
+      "translation": "Demp musikk"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Norwegian",
+      "translation": "Slå av lyden på musikken"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Norwegian",
+      "translation": "Vår globale rekkevidde"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Norwegian",
+      "translation": "Siden"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Norwegian",
+      "translation": "Stort marked"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Norwegian",
+      "translation": "Store markeder"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Norwegian",
+      "translation": "Tilstedeværelse"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Norwegian",
+      "translation": "Land betjent"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Norwegian",
+      "translation": "Store markeder"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Norwegian",
+      "translation": "Produktkategorier"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Norwegian",
+      "translation": "Etablert"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Norwegian",
+      "translation": "Territoriumhierarki"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Norwegian",
+      "translation": "Full bane"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Norwegian",
+      "translation": "Nåværende territorium"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Norwegian",
+      "translation": "Ingen varer"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Norwegian",
+      "translation": "Globus"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Norwegian",
+      "translation": "Kontinent"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Norwegian",
+      "translation": "Region"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Norwegian",
+      "translation": "Land"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Norwegian",
+      "translation": "By"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Norwegian",
+      "translation": "Distrikt"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Norwegian",
+      "translation": "Sted"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Norwegian",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Norwegian",
+      "translation": "Global"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Norwegian",
+      "translation": "Velg region"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Norwegian",
+      "translation": "Kundedetaljer"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Norwegian",
+      "translation": "Valgt"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Norwegian",
+      "translation": "Fullt navn"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Norwegian",
+      "translation": "Skriv inn ditt fulle navn"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Norwegian",
+      "translation": "Navn er obligatorisk"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Norwegian",
+      "translation": "E-postadresse"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Norwegian",
+      "translation": "din.epost@eksempel.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Norwegian",
+      "translation": "E-post er påkrevd"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Norwegian",
+      "translation": "Vennligst skriv inn en gyldig e-postadresse"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Norwegian",
+      "translation": "Telefonnummer"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Norwegian",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Norwegian",
+      "translation": "Telefonnummer er obligatorisk"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Norwegian",
+      "translation": "Adresse"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Norwegian",
+      "translation": "Din adresse"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Norwegian",
+      "translation": "Adresse er obligatorisk"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Norwegian",
+      "translation": "Jeg samtykker i å motta markedsføringskommunikasjon og oppdateringer"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Norwegian",
+      "translation": "Send inn og fortsett"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Norwegian",
+      "translation": "Sender inn..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Norwegian",
+      "translation": "Hopp over og fortsett"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Norwegian",
+      "translation": "Viktige ytelsesindikatorer"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Norwegian",
+      "translation": "Bestillinger i dag"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Norwegian",
+      "translation": "Sendt inn via Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Norwegian",
+      "translation": "Ventende leveranser"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Norwegian",
+      "translation": "På tvers av tildelte ruter"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Norwegian",
+      "translation": "Forhandlere"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Norwegian",
+      "translation": "Aktive utsalgssteder innenfor omfanget"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Norwegian",
+      "translation": "T & A-poengsum"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Norwegian",
+      "translation": "Territoriedekning"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Norwegian",
+      "translation": "Finans og varelager"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Norwegian",
+      "translation": "Lavt lagerbeholdning av varer"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Norwegian",
+      "translation": "Utløs påfylling"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Norwegian",
+      "translation": "Utestående fakturaer"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Norwegian",
+      "translation": "Forfaller til henting"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Norwegian",
+      "translation": "Kredittgrense"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Norwegian",
+      "translation": "Tildelt av finans"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Norwegian",
+      "translation": "Automatisk godkjenning, lagerpåfyll og fakturapåminnelser aktivert"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Norwegian",
+      "translation": "Selvgodkjenning"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Norwegian",
+      "translation": "Lagerpåfylling"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Norwegian",
+      "translation": "Fakturapåminnelser"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Norwegian",
+      "translation": "AI-anbefalinger"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Norwegian",
+      "translation": "Risikonivå"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Norwegian",
+      "translation": "Basert på kredittutnyttelse og betalingshistorikk"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Norwegian",
+      "translation": "Foreslått rekkefølge"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Norwegian",
+      "translation": "AI-anbefalte SKU-er å bestille"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Norwegian",
+      "translation": "Neste handling"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Norwegian",
+      "translation": "Tiltak og veiledning"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Norwegian",
+      "translation": "Klager"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Norwegian",
+      "translation": "Problemer med forhandlere som venter på handling"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Norwegian",
+      "translation": "Spillebok"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Norwegian",
+      "translation": "Prioriter ventende leveranser før middag."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Norwegian",
+      "translation": "Avslutt alle utestående klager innen 48 timer."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Norwegian",
+      "translation": "Utløs påfyll for SKU-er med lavt lager (automatisk opprett innkjøpsordre)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Norwegian",
+      "translation": "Territorium"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Norwegian",
+      "translation": "Bestillinger denne måneden"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Norwegian",
+      "translation": "Ventende bestillinger"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Norwegian",
+      "translation": "Leverte bestillinger"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Norwegian",
+      "translation": "Territoriuminformasjon"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Norwegian",
+      "translation": "Land"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Norwegian",
+      "translation": "By"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Norwegian",
+      "translation": "Region"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Norwegian",
+      "translation": "Hurtighandlinger"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Norwegian",
+      "translation": "Ny ordre"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Norwegian",
+      "translation": "Se bestillinger"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Norwegian",
+      "translation": "Vis fakturaer"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Norwegian",
+      "translation": "Profilinnstillinger"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Norwegian",
+      "translation": "Laster inn dashbordet ..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Norwegian",
+      "translation": "Feil"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Norwegian",
+      "translation": "Mine bestillinger"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Norwegian",
+      "translation": "Ordre-ID"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Norwegian",
+      "translation": "Dato"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Norwegian",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Norwegian",
+      "translation": "Elementer"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Norwegian",
+      "translation": "Totalbeløp"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Norwegian",
+      "translation": "Handlinger"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Norwegian",
+      "translation": "Vis detaljer"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Norwegian",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Norwegian",
+      "translation": "Startdato"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Norwegian",
+      "translation": "Sluttdato"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Norwegian",
+      "translation": "Alle statuser"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Norwegian",
+      "translation": "Fjern filtre"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Norwegian",
+      "translation": "I påvente av"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Norwegian",
+      "translation": "Behandling"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Norwegian",
+      "translation": "Levert"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Norwegian",
+      "translation": "Avlyst"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Norwegian",
+      "translation": "Ingen bestillinger funnet"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Norwegian",
+      "translation": "Laster inn bestillinger ..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Norwegian",
+      "translation": "Side"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Norwegian",
+      "translation": "av"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Norwegian",
+      "translation": "Tidligere"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Norwegian",
+      "translation": "Neste"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Norwegian",
+      "translation": "Ordredetaljer"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Norwegian",
+      "translation": "Tilbake til bestillinger"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Norwegian",
+      "translation": "Ordre-ID"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Norwegian",
+      "translation": "Status"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Norwegian",
+      "translation": "Bestillingsdato"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Norwegian",
+      "translation": "Leveringsdato"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Norwegian",
+      "translation": "Leveringsadresse"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Norwegian",
+      "translation": "Notater"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Norwegian",
+      "translation": "Bestill varer"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Norwegian",
+      "translation": "Produkt"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Norwegian",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Norwegian",
+      "translation": "Mengde"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Norwegian",
+      "translation": "Enhetspris"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Norwegian",
+      "translation": "Total"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Norwegian",
+      "translation": "Totalbeløp"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Norwegian",
+      "translation": "Statustidslinje"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Norwegian",
+      "translation": "Ordren ble ikke funnet"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Norwegian",
+      "translation": "Opprett ny bestilling"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Norwegian",
+      "translation": "Bestill varer"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Norwegian",
+      "translation": "Legg til element"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Norwegian",
+      "translation": "Ingen elementer er lagt til ennå. Klikk på «Legg til element» for å starte."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Norwegian",
+      "translation": "Ordredetaljer"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Norwegian",
+      "translation": "Leveringsdato"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Norwegian",
+      "translation": "Leveringsadresse"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Norwegian",
+      "translation": "Notater"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Norwegian",
+      "translation": "Totalbeløp"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Norwegian",
+      "translation": "Opprett bestilling"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Norwegian",
+      "translation": "Oppretter ordre..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Norwegian",
+      "translation": "Kansellere"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Norwegian",
+      "translation": "Velg produkt"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Norwegian",
+      "translation": "Produkt"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Norwegian",
+      "translation": "Mengde"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Norwegian",
+      "translation": "Enhetspris"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Norwegian",
+      "translation": "Fjerne"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Norwegian",
+      "translation": "Delsum"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Norwegian",
+      "translation": "Ordre-ID"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Norwegian",
+      "translation": "Minst én bestillingsvare er påkrevd"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Norwegian",
+      "translation": "Produktet er obligatorisk"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Norwegian",
+      "translation": "Mengden må være større enn 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Norwegian",
+      "translation": "Enhetsprisen må ikke være negativ"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Norwegian",
+      "translation": "Ugyldig format for leveringsdato"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Norwegian",
+      "translation": "Leveringsdatoen kan ikke være i fortiden"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Norwegian",
+      "translation": "Mine fakturaer"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Norwegian",
+      "translation": "Fakturanummer"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Norwegian",
+      "translation": "Fakturadato"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Norwegian",
+      "translation": "To datoer"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Norwegian",
+      "translation": "Beløp"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Norwegian",
+      "translation": "Betalt beløp"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Norwegian",
+      "translation": "Betalingsstatus"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Norwegian",
+      "translation": "Betalingsstatus"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Norwegian",
+      "translation": "Alle statuser"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Norwegian",
+      "translation": "Fjern filtre"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Norwegian",
+      "translation": "Betalt"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Norwegian",
+      "translation": "Ubetalt"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Norwegian",
+      "translation": "Delvis"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Norwegian",
+      "translation": "Ingen fakturaer funnet"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Norwegian",
+      "translation": "Laster inn fakturaer ..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Norwegian",
+      "translation": "Min profil"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Norwegian",
+      "translation": "Kontoinformasjon"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Norwegian",
+      "translation": "Distributør-ID"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Norwegian",
+      "translation": "Territorium"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Norwegian",
+      "translation": "Land"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Norwegian",
+      "translation": "By"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Norwegian",
+      "translation": "Konto opprettet"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Norwegian",
+      "translation": "Oppdater profil"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Norwegian",
+      "translation": "Navn"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Norwegian",
+      "translation": "E-post"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Norwegian",
+      "translation": "Telefon"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Norwegian",
+      "translation": "Adresse"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Norwegian",
+      "translation": "Språk"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Norwegian",
+      "translation": "Valuta"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Norwegian",
+      "translation": "Lagre endringer"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Norwegian",
+      "translation": "Lagrer..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Norwegian",
+      "translation": "Profilen er oppdatert"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Norwegian",
+      "translation": "Laster inn profil ..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Norwegian",
+      "translation": "Ugyldig e-postformat"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Norwegian",
+      "translation": "Ugyldig telefonformat"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Norwegian",
+      "translation": "Feil"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Norwegian",
+      "translation": "Laster inn..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Norwegian",
+      "translation": "Spare"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Norwegian",
+      "translation": "Kansellere"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Norwegian",
+      "translation": "Tilbake"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Norwegian",
+      "translation": "Send inn"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Norwegian",
+      "translation": "Slett"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Norwegian",
+      "translation": "Redigere"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Norwegian",
+      "translation": "Utsikt"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Norwegian",
+      "translation": "Søk"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Norwegian",
+      "translation": "Filter"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Norwegian",
+      "translation": "Klar"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Norwegian",
+      "translation": "Søke"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Norwegian",
+      "translation": "Lukke"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Norwegian",
+      "translation": "Bekrefte"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Norwegian",
+      "translation": "Ja"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Norwegian",
+      "translation": "Ingen"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Norwegian",
+      "translation": "Juridisk operativsystem"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Norwegian",
+      "translation": "Lovlig operativsystem"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Norwegian",
+      "translation": "Tilgang nektet"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Norwegian",
+      "translation": "Du har ikke tilgang til Legal OS-modulen."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Norwegian",
+      "translation": "Dashbord"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Norwegian",
+      "translation": "Kontrakter"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Norwegian",
+      "translation": "Sertifikater"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Norwegian",
+      "translation": "Samsvar"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Norwegian",
+      "translation": "Juridisk dashbord"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Norwegian",
+      "translation": "Oversikt over juridisk drift og samsvarsstatus"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Norwegian",
+      "translation": "Aktive varemerker"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Norwegian",
+      "translation": "Aktive kontrakter"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Norwegian",
+      "translation": "Samsvarsstatus"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Norwegian",
+      "translation": "Varemerker"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Norwegian",
+      "translation": "Administrer varemerkeregistreringer og -søknader"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Norwegian",
+      "translation": "Legg til nytt varemerke"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Norwegian",
+      "translation": "Land"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Norwegian",
+      "translation": "Status"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Norwegian",
+      "translation": "Alle land"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Norwegian",
+      "translation": "Alle statuser"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Norwegian",
+      "translation": "Fjern filtre"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Norwegian",
+      "translation": "Merkenavn"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Norwegian",
+      "translation": "Klasse"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Norwegian",
+      "translation": "Land"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Norwegian",
+      "translation": "Søknadsnr."
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Norwegian",
+      "translation": "Status"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Norwegian",
+      "translation": "Utløpsdato"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Norwegian",
+      "translation": "Handlinger"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Norwegian",
+      "translation": "Rediger varemerke"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Norwegian",
+      "translation": "Legg til nytt varemerke"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Norwegian",
+      "translation": "Vis varemerke"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Norwegian",
+      "translation": "Merkenavn"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Norwegian",
+      "translation": "Klassenummer"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Norwegian",
+      "translation": "Land"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Norwegian",
+      "translation": "Søknadsnummer"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Norwegian",
+      "translation": "Status"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Norwegian",
+      "translation": "Utløpsdato"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Norwegian",
+      "translation": "Dokumenter"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Norwegian",
+      "translation": "Ingen dokumenter vedlagt"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Norwegian",
+      "translation": "Legg til dokument"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Norwegian",
+      "translation": "Fjerne"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Norwegian",
+      "translation": "Kunne ikke laste inn varemerker"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Norwegian",
+      "translation": "Kunne ikke lagre varemerket. Prøv på nytt."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Norwegian",
+      "translation": "Rettssaker"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Norwegian",
+      "translation": "Administrer juridiske saker og spor statusen deres"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Norwegian",
+      "translation": "Ny sak"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Norwegian",
+      "translation": "Sakstittel"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Norwegian",
+      "translation": "Sakstype"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Norwegian",
+      "translation": "Land"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Norwegian",
+      "translation": "Beskrivelse"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Norwegian",
+      "translation": "Tildelt til"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Norwegian",
+      "translation": "Status"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Norwegian",
+      "translation": "Høringsdato"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Norwegian",
+      "translation": "Sakstittel"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Norwegian",
+      "translation": "Type"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Norwegian",
+      "translation": "Land"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Norwegian",
+      "translation": "Tildelt til"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Norwegian",
+      "translation": "Status"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Norwegian",
+      "translation": "Høringsdato"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Norwegian",
+      "translation": "Handlinger"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Norwegian",
+      "translation": "Åpne"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Norwegian",
+      "translation": "Pågår"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Norwegian",
+      "translation": "Lukket"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Norwegian",
+      "translation": "Avlyst"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Norwegian",
+      "translation": "Kartvisning av flåten"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Norwegian",
+      "translation": "Sporing av selgere og leveringsbiler i sanntid"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Norwegian",
+      "translation": "Aktive ansatte"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Norwegian",
+      "translation": "Ingen aktive ansatte"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Norwegian",
+      "translation": "Laster inn..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Norwegian",
+      "translation": "Rutegjentakelse"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Norwegian",
+      "translation": "Ansatt"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Norwegian",
+      "translation": "Fart"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Norwegian",
+      "translation": "Tilbakestill"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Norwegian",
+      "translation": "Spille"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Norwegian",
+      "translation": "Pause"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Norwegian",
+      "translation": "poeng"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Norwegian",
+      "translation": "Ingen rutedata tilgjengelig"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Norwegian",
+      "translation": "Laster rute..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Norwegian",
+      "translation": "Konkurrentprodukter"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Norwegian",
+      "translation": "Spor informasjon om konkurrenters produkter"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Norwegian",
+      "translation": "Legg til produkt"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Norwegian",
+      "translation": "Legg til konkurrentprodukt"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Norwegian",
+      "translation": "Merke"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Norwegian",
+      "translation": "SKU-navn"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Norwegian",
+      "translation": "Kategori"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Norwegian",
+      "translation": "Størrelse"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Norwegian",
+      "translation": "Pris"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Norwegian",
+      "translation": "Valuta"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Norwegian",
+      "translation": "Land"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Norwegian",
+      "translation": "Merke"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Norwegian",
+      "translation": "SKU-navn"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Norwegian",
+      "translation": "Kategori"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Norwegian",
+      "translation": "Størrelse"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Norwegian",
+      "translation": "Pris"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Norwegian",
+      "translation": "Land"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Norwegian",
+      "translation": "Dato lagt til"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Norwegian",
+      "translation": "Kunne ikke laste inn produktene"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Norwegian",
+      "translation": "Kunne ikke opprette produktet. Prøv på nytt."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Norwegian",
+      "translation": "Ingen konkurrentprodukter funnet"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Norwegian",
+      "translation": "Laster inn produkter ..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Norwegian",
+      "translation": "Konkurrentdashbord"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Norwegian",
+      "translation": "Analyse og innsikt i konkurrentprodukter"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Norwegian",
+      "translation": "Totalt antall produkter"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Norwegian",
+      "translation": "Merker sporet"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Norwegian",
+      "translation": "Land"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Norwegian",
+      "translation": "Kategorier"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Norwegian",
+      "translation": "Produkter etter merke"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Norwegian",
+      "translation": "Produkter etter land"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Norwegian",
+      "translation": "Produkter etter kategori"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Norwegian",
+      "translation": "Laster inn statistikk ..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Norwegian",
+      "translation": "Ingen statistikk tilgjengelig"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Norwegian",
+      "translation": "Oversikt"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Norwegian",
+      "translation": "Bestillinger"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Norwegian",
+      "translation": "Inventar"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Norwegian",
+      "translation": "Logistikk"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Norwegian",
+      "translation": "Finansiere"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Norwegian",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Norwegian",
+      "translation": "HR"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Norwegian",
+      "translation": "Leder"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Norwegian",
+      "translation": "Investor"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Norwegian",
+      "translation": "Juridisk/IMR"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Norwegian",
+      "translation": "Konkurrent"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Norwegian",
+      "translation": "Import/eksport"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Norwegian",
+      "translation": "GPS-sporing"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Norwegian",
+      "translation": "Lokalisering"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Norwegian",
+      "translation": "Arbeidsflyter"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Norwegian",
+      "translation": "Admin"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Norwegian",
+      "translation": "CRM-operativsystem"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Norwegian",
+      "translation": "Kunde 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Norwegian",
+      "translation": "Komplette kundeprofiler, interaksjonshistorikk og relasjonsadministrasjon"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Norwegian",
+      "translation": "Digitale kampanjer"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Norwegian",
+      "translation": "Flerkanals markedsføringskampanjer (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Norwegian",
+      "translation": "Potensielle kunder og muligheter"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Norwegian",
+      "translation": "Leadhåndtering, kvalifisering og salgsmulighetspipeline"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Norwegian",
+      "translation": "Kundestøtte"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Norwegian",
+      "translation": "Billettbehandling, kundeservice og problemløsning"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Norwegian",
+      "translation": "Lojalitetsprogrammer"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Norwegian",
+      "translation": "Forhandlerlojalitet, spillifisering og belønningshåndtering"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Norwegian",
+      "translation": "Kunde 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Norwegian",
+      "translation": "Ny kunde"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Norwegian",
+      "translation": "Totalt antall kunder"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Norwegian",
+      "translation": "Aktiv"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Norwegian",
+      "translation": "Ny"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Norwegian",
+      "translation": "Tilfredshet"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Norwegian",
+      "translation": "Kundeadministrasjon"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Norwegian",
+      "translation": "Se og administrer kunderelasjoner, interaksjoner og kampanjer."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Norwegian",
+      "translation": "Laster inn..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Norwegian",
+      "translation": "Feil ved lasting av CRM-data"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Norwegian",
+      "translation": "Oversikt"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Norwegian",
+      "translation": "Bestillinger"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Norwegian",
+      "translation": "Inventar"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Norwegian",
+      "translation": "Logistikk"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Norwegian",
+      "translation": "Finansiere"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Norwegian",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Norwegian",
+      "translation": "HR"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Norwegian",
+      "translation": "Leder"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Norwegian",
+      "translation": "Investor"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Norwegian",
+      "translation": "Juridisk/IMR"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Norwegian",
+      "translation": "Konkurrent"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Norwegian",
+      "translation": "Import/eksport"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Norwegian",
+      "translation": "GPS-sporing"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Norwegian",
+      "translation": "Lokalisering"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Norwegian",
+      "translation": "Arbeidsflyter"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Norwegian",
+      "translation": "Admin"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Norwegian",
+      "translation": "Kunder"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Norwegian",
+      "translation": "Ansatte"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Norwegian",
+      "translation": "Fortjeneste"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Norwegian",
+      "translation": "Laster inn leverandørens cockpit…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Norwegian",
+      "translation": "Innkjøpsordrer"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Oppdratt av Harvics"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Norwegian",
+      "translation": "Forsendelser / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Norwegian",
+      "translation": "Godkjent denne uken"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Norwegian",
+      "translation": "Fakturaer opprettet"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Norwegian",
+      "translation": "Venter på betaling"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Norwegian",
+      "translation": "Betalinger venter"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Norwegian",
+      "translation": "Planlagt for utgivelse"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Norwegian",
+      "translation": "Kvalitet / klager"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Norwegian",
+      "translation": "Åpne billetter"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Norwegian",
+      "translation": "Værmelding (neste 4 uker)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Norwegian",
+      "translation": "AI-plassholder"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Norwegian",
+      "translation": "Leverandørhandlinger"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Norwegian",
+      "translation": "Bekreft kommende forsendelser og oppdater GRN-planen."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Norwegian",
+      "translation": "Gjennomgå utestående fakturaer og del betalingsråd."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Norwegian",
+      "translation": "Løs åpne kvalitetsklager med kvalitetssikringsdokumentasjon."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Norwegian",
+      "translation": "Brukernavn"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Norwegian",
+      "translation": "Passord"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Norwegian",
+      "translation": "E-post"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Norwegian",
+      "translation": "Send inn"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Norwegian",
+      "translation": "Kansellere"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Norwegian",
+      "translation": "Spare"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Norwegian",
+      "translation": "Slett"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Norwegian",
+      "translation": "Søk"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Norwegian",
+      "translation": "Filter"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Norwegian",
+      "translation": "Tilbakestill"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Norwegian",
+      "translation": "Lukke"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Norwegian",
+      "translation": "Tilbake"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Norwegian",
+      "translation": "Neste"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Norwegian",
+      "translation": "Tidligere"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Norwegian",
+      "translation": "Bekrefte"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Norwegian",
+      "translation": "Husk meg"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Norwegian",
+      "translation": "Glemt passord?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Norwegian",
+      "translation": "E-post er påkrevd"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Norwegian",
+      "translation": "Vennligst skriv inn en gyldig e-postadresse"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Norwegian",
+      "translation": "Produkter"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Norwegian",
+      "translation": "Hvilke produkter tilbyr Harvics?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Norwegian",
+      "translation": "Vi tilbyr et bredt utvalg av premium matvarer, inkludert konfekt, drikkevarer, snacks, pasta, bakevarer og frossenmat i en rekke kategorier."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Norwegian",
+      "translation": "Hvor kan jeg kjøpe Harvics-produkter?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Norwegian",
+      "translation": "Produktene våre er tilgjengelige i butikker i over 40 land. Bruk butikksøkeren eller kontaktsiden vår for å finne en forhandler i nærheten av deg."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Norwegian",
+      "translation": "Tilbyr dere bulkbestillinger?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Norwegian",
+      "translation": "Ja, vi tilbyr rabatter på store bestillinger for bedrifter og forhandlere. Besøk siden vår om rabatter på store bestillinger for mer informasjon."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Norwegian",
+      "translation": "Bestillinger og frakt"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Norwegian",
+      "translation": "Hva er fraktalternativene dine?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Norwegian",
+      "translation": "Vi tilbyr ulike fraktalternativer, inkludert standard-, ekspress- og internasjonal frakt. Gratis frakt er tilgjengelig på bestillinger over $50."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Norwegian",
+      "translation": "Hvor lang tid tar levering?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Norwegian",
+      "translation": "Leveringstidene varierer fra sted til sted. Standardlevering tar vanligvis 5–7 virkedager, mens ekspresslevering tar 2–3 virkedager."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Norwegian",
+      "translation": "Kan jeg spore bestillingen min?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Norwegian",
+      "translation": "Ja, du kan spore bestillingen din ved hjelp av sporingsnummeret som er oppgitt i ordrebekreftelses-e-posten din."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Norwegian",
+      "translation": "Konto og betalinger"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Norwegian",
+      "translation": "Hvordan oppretter jeg en konto?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Norwegian",
+      "translation": "Klikk på «Logg inn» i overskriften og velg «Opprett konto» for å registrere en ny konto."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Norwegian",
+      "translation": "Hvilke betalingsmåter aksepterer dere?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Norwegian",
+      "translation": "Vi aksepterer alle større kredittkort, debetkort, PayPal og bankoverføringer for B2B-bestillinger."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Norwegian",
+      "translation": "Er betalingsinformasjonen min sikker?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Norwegian",
+      "translation": "Ja, vi bruker bransjestandard kryptering for å beskytte betalingsinformasjonen din."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Norwegian",
+      "translation": "Retur og refusjoner"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Norwegian",
+      "translation": "Hva er returretten deres?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Norwegian",
+      "translation": "Vi tilbyr 30 dagers returrett for uåpnede produkter i originalemballasjen. Ta kontakt med kundeservice for returautorisasjon."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Norwegian",
+      "translation": "Hvordan ber jeg om refusjon?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Norwegian",
+      "translation": "Kontakt kundeserviceteamet vårt med ordrenummeret ditt og årsaken til returen. Vi behandler refusjonen din innen 5–7 virkedager."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Norwegian",
+      "translation": "Har du fortsatt spørsmål?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Norwegian",
+      "translation": "Vårt kundeserviceteam er her for å hjelpe"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Norwegian",
+      "translation": "Kontakt oss"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Norwegian",
+      "translation": "Karriere"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Karriere | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Norwegian",
+      "translation": "Bli med i Harvics Global Ventures – utforsk muligheter i over 40 land."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Norwegian",
+      "translation": "Bli med oss"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Norwegian",
+      "translation": "Bygg fremtiden for global handel"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Norwegian",
+      "translation": "Vi vokser i over 40 land. Bli med i et team som bygger det AI-drevne operativsystemet for global handel."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Norwegian",
+      "translation": "Ledige stillinger"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Norwegian",
+      "translation": "Land"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Norwegian",
+      "translation": "Bransjevertikaler"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Norwegian",
+      "translation": "Avdelinger Ansettelse"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Norwegian",
+      "translation": "Ledige stillinger etter avdeling"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Norwegian",
+      "translation": "Salg og distribusjon"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Norwegian",
+      "translation": "Øk inntektene på tvers av over 40 markeder. Områdehåndtering, nøkkelkunder, distributørrelasjoner."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Norwegian",
+      "translation": "Forsyningskjede og logistikk"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Norwegian",
+      "translation": "En komplett forsyningskjede fra fabrikk til hylle. Flåtestyring, lagerhold, levering til siste mil."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Norwegian",
+      "translation": "Teknologi og kunstig intelligens"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Norwegian",
+      "translation": "Bygg Harvics OS – vår AI-drevne bedriftsplattform. Fullstack, ML-teknikk, datavitenskap."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Norwegian",
+      "translation": "Finans og treasury"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Norwegian",
+      "translation": "Flervaluta-treasury, handelsfinansiering, digitale HPay-betalinger, valutahåndtering på tvers av regioner."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Norwegian",
+      "translation": "Innkjøp og sourcing"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Norwegian",
+      "translation": "Global sourcing fra over 15 opprinnelsesland. Leverandørrevisjoner, kvalitetskontroll, fabrikk-direkteprogrammer."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Norwegian",
+      "translation": "Menneskelige ressurser"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Norwegian",
+      "translation": "Talentrekruttering, læring og utvikling, resultatstyring på tvers av ulike geografiske områder og kulturer."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Norwegian",
+      "translation": "Juridisk og samsvarsregler"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Norwegian",
+      "translation": "Samsvar med handelsregler, sanksjonsscreening, IP-beskyttelse, kontraktshåndtering på tvers av jurisdiksjoner."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Norwegian",
+      "translation": "Markedsføring og merkevare"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Norwegian",
+      "translation": "Flerspråklige kampanjer, innhold med 38 språkinnstillinger, digital markedsføring, merkevarestrategi for 10 vertikaler."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Norwegian",
+      "translation": "roller"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Hvorfor Harvics"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Norwegian",
+      "translation": "Global mobilitet"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Norwegian",
+      "translation": "Arbeid i Dubai, London, Karachi, Lahore og over 40 markeder"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Norwegian",
+      "translation": "Vekstspor"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Norwegian",
+      "translation": "Raskt karriereutvikling i en skalerende bedrift"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Norwegian",
+      "translation": "AI-først kultur"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Norwegian",
+      "translation": "Arbeid med banebrytende AI og sanntids intelligenssystemer"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Norwegian",
+      "translation": "Konkurransedyktig pakke"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Norwegian",
+      "translation": "Markedsledende kompensasjon, bolig og goder"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Norwegian",
+      "translation": "Læringsbudsjett"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Norwegian",
+      "translation": "Årlig utviklingsbudsjett for kurs, konferanser og sertifiseringer"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Norwegian",
+      "translation": "Fleksibelt arbeid"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Norwegian",
+      "translation": "Hybride avtaler med regionale knutepunktkontorer over hele verden"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Norwegian",
+      "translation": "Vår strategi"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Strategi | Harwich"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Norwegian",
+      "translation": "Bygge en bærekraftig fremtid gjennom innovasjon og fortreffelighet"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Norwegian",
+      "translation": "Bygge en bærekraftig fremtid gjennom innovasjon og fortreffelighet"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Norwegian",
+      "translation": "Global ekspansjon"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Norwegian",
+      "translation": "Utvide vår tilstedeværelse i fremvoksende markeder samtidig som vi styrker vår posisjon i etablerte markeder"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Norwegian",
+      "translation": "Produktinnovasjon"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Norwegian",
+      "translation": "Investering i forskning og utvikling for å utvikle nye produkter som møter utviklende forbrukerpreferanser"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Norwegian",
+      "translation": "Bærekraft"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Norwegian",
+      "translation": "Forpliktet til bærekraftig praksis i hele vår forsyningskjede og drift"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Norwegian",
+      "translation": "Digital transformasjon"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Norwegian",
+      "translation": "Utnytter teknologi for å forbedre kundeopplevelsen og driftseffektiviteten"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Norwegian",
+      "translation": "Vår visjon"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Norwegian",
+      "translation": "Å være verdens ledende selskap innen premium forbruksvarer, anerkjent for kvalitet, innovasjon og bærekraft."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Norwegian",
+      "translation": "Harvics Global Ventures | Premium Global Trading"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Norwegian",
+      "translation": "Ledende globalt handelsselskap som leverer premiumprodukter på tvers av over 10 bransjer. Virksomhet i over 50 land siden 2019."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Norwegian",
+      "translation": "Om oss | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Norwegian",
+      "translation": "Oppdag hvordan Harvics Global Ventures ble en ledende kraft innen global handel på tvers av over 40 land og 10 bransjer."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Norwegian",
+      "translation": "Kontakt oss | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Norwegian",
+      "translation": "Ta kontakt med Harvics kontorer over hele verden i Midtøsten, Sør-Asia, Europa, Afrika og Amerika."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Norwegian",
+      "translation": "Produkter | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Norwegian",
+      "translation": "Utforsk Harvics premiumproduktsortiment på tvers av FMCG, tekstiler, råvarer og industrielle løsninger."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Norwegian",
+      "translation": "Karriere | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Norwegian",
+      "translation": "Bli med i Harvics Global Ventures – utforsk muligheter i over 40 land innen dagligvarer, tekstiler, logistikk og teknologi."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Norwegian",
+      "translation": "Mediesenter | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Norwegian",
+      "translation": "Harvics mediesenter – pressemeldinger, siste nytt, merkevareressurser og mediekontakter."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Norwegian",
+      "translation": "Vår strategi | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Norwegian",
+      "translation": "Harvics strategiske visjon for global ekspansjon, innovasjon, bærekraft og digital transformasjon."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Bedriftens samfunnsansvar | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Norwegian",
+      "translation": "Harvics CSR-initiativer – miljøforvaltning, samfunnsprogrammer og etisk forretningspraksis."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Norwegian",
+      "translation": "Vanlige spørsmål | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Norwegian",
+      "translation": "Ofte stilte spørsmål om Harvics produkter, tjenester, bestilling og global drift."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Globale lokasjoner | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Norwegian",
+      "translation": "Harvics kontorer og virksomheter i Midtøsten, Sør-Asia, Europa, Afrika og Amerika."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Lederteam | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Norwegian",
+      "translation": "Møt lederteamet som driver Harvics Global Ventures på tvers av over 40 markeder og 10 bransjevertikaler."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Hjelpesenter | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Norwegian",
+      "translation": "Få hjelp med bestillinger, kontoer, frakt og Harvics-tjenester."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Samsvar og etikk | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Norwegian",
+      "translation": "Harvics forpliktelse til samsvar med regelverk, etisk forretningspraksis og globale standarder."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Vår historie | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Norwegian",
+      "translation": "Fra en oppstartsbedrift i Dubai i 2019 til en global bedrift som strekker seg over 40 land – Harvics-historien."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Nyhetsbrev | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Norwegian",
+      "translation": "Abonner på Harvics nyhetsbrev for bransjeinnsikt og produktlanseringer."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Logg inn | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Norwegian",
+      "translation": "Logg inn på Harvics-kontoen din for å administrere bestillinger og få tilgang til plattformen."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Forskning og innovasjon | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Norwegian",
+      "translation": "Harvics forskningsinitiativer og innovasjonsprogrammer som driver vår globale strategi."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Norwegian",
+      "translation": "Investorrelasjoner | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Norwegian",
+      "translation": "Investorinformasjon, økonomiske rapporter og selskapsmeldinger fra Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Norwegian",
+      "translation": "Siden ble ikke funnet"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Norwegian",
+      "translation": "404 — Siden ble ikke funnet"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Norwegian",
+      "translation": "Siden du leter etter finnes ikke, eller den er flyttet."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Norwegian",
+      "translation": "Gå til hjemmesiden"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Norwegian",
+      "translation": "Gå tilbake"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Norwegian",
+      "translation": "Noe gikk galt"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Norwegian",
+      "translation": "Noe gikk galt"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Norwegian",
+      "translation": "Beklager, men noe uventet har skjedd. Prøv å oppdatere siden."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Norwegian",
+      "translation": "Prøv igjen"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Norwegian",
+      "translation": "Last inn siden på nytt"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Norwegian",
+      "translation": "Kontakt kundestøtte"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Norwegian",
+      "translation": "Programfeil"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Norwegian",
+      "translation": "Kritisk feil"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Norwegian",
+      "translation": "Det oppsto en kritisk feil. Vennligst last inn siden på nytt."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Norwegian",
+      "translation": "Last inn applikasjonen på nytt"
+    }
+  }
+}

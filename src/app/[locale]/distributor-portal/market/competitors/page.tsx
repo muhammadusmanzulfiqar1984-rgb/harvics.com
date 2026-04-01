@@ -44,7 +44,7 @@ export default function CompetitorReporting() {
                 type="text"
                 value={formData.competitorBrand}
                 onChange={(e) => setFormData({...formData, competitorBrand: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                 placeholder="e.g., Nestle, Cadbury"
               />
             </div>
@@ -56,7 +56,7 @@ export default function CompetitorReporting() {
                 type="text"
                 value={formData.sku}
                 onChange={(e) => setFormData({...formData, sku: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                 placeholder="Product SKU"
               />
             </div>
@@ -69,7 +69,7 @@ export default function CompetitorReporting() {
                 step="0.01"
                 value={formData.observedPrice}
                 onChange={(e) => setFormData({...formData, observedPrice: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                 placeholder="0.00"
               />
             </div>
@@ -80,7 +80,7 @@ export default function CompetitorReporting() {
                 required
                 value={formData.promoType}
                 onChange={(e) => setFormData({...formData, promoType: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
               >
                 <option value="">Select Type</option>
                 <option value="Discount">Discount</option>
@@ -98,7 +98,7 @@ export default function CompetitorReporting() {
                 type="text"
                 value={formData.retailerName}
                 onChange={(e) => setFormData({...formData, retailerName: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                 placeholder="Store name"
               />
             </div>
@@ -110,7 +110,7 @@ export default function CompetitorReporting() {
                 type="text"
                 value={formData.city}
                 onChange={(e) => setFormData({...formData, city: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                 placeholder="City name"
               />
             </div>
@@ -120,7 +120,7 @@ export default function CompetitorReporting() {
               <input
                 type="file"
                 accept="image/*"
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
               />
             </div>
 
@@ -130,7 +130,7 @@ export default function CompetitorReporting() {
                 rows={4}
                 value={formData.notes}
                 onChange={(e) => setFormData({...formData, notes: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                 placeholder="Additional observations..."
               />
             </div>

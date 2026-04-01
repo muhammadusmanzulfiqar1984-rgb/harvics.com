@@ -1,9 +1,5 @@
 import Link from 'next/link'
-import { getFolderBasedCategories } from '@/data/folderBasedProducts'
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
 
-// Generate static params for all locales
 export async function generateStaticParams() {
   return [
     { locale: 'en' },
@@ -18,7 +14,6 @@ export async function generateStaticParams() {
 
 export default async function PortalsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
-  const categories = getFolderBasedCategories() || []
 
   // Professional Icons
   const Icons = {
@@ -64,12 +59,7 @@ export default async function PortalsPage({ params }: { params: Promise<{ locale
   ]
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
-      <div className="fixed top-0 left-0 right-0 z-[1000] bg-white shadow-sm">
-        <Header categories={categories} />
-      </div>
-      <div className="h-[172px]" /> {/* Fixed Header Spacer */}
-      
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       {/* Hero Section */}
       <section className="relative py-20 md:py-24 bg-[#6B1F2B] overflow-hidden">
         {/* Abstract Background Shapes */}
@@ -123,7 +113,7 @@ export default async function PortalsPage({ params }: { params: Promise<{ locale
       </section>
 
       {/* Developer Access Footer */}
-      <section className="py-12 border-t border-gray-200 bg-white">
+      <section className="py-12 border-t border-gray-200" style={{ background: '#ffffff' }}>
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h4 className="text-gray-900 font-bold mb-1">Developer Access</h4>
@@ -142,7 +132,6 @@ export default async function PortalsPage({ params }: { params: Promise<{ locale
         </div>
       </section>
 
-      <Footer />
     </main>
   )
 }

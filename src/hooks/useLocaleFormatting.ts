@@ -16,6 +16,7 @@ import {
   formatPhoneNumber,
   formatAddress,
   validatePhoneNumber,
+  formatCompact,
   type Address
 } from '@/utils/localeFormatting';
 
@@ -53,6 +54,8 @@ export function useLocaleFormatting() {
       const code = countryCode || countryData?.countryName || 'US';
       return validatePhoneNumber(phone, code);
     },
+    formatCompact: (value: number, currency?: string) =>
+      formatCompact(value, locale, currency || currencyCode),
     currencyCode,
     currencySymbol
   };

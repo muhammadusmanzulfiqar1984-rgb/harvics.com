@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "sr",
+    "language": "Serbian",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Serbian. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Serbian",
+      "translation": "Добродошли у"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Serbian",
+      "translation": "Харвич"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Serbian",
+      "translation": "Изврсност у премиум потрошачкој роби од 2019. године"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Serbian",
+      "translation": "Водећа глобална компанија за робу широке потрошње која испоручује премиум прехрамбене производе у различитим категоријама са међународним стандардима квалитета."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Serbian",
+      "translation": "Истражите производе"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Serbian",
+      "translation": "Контактирајте нас"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Serbian",
+      "translation": "Сазнајте више"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Serbian",
+      "translation": "Изврсност у премиум потрошачкој роби од"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Serbian",
+      "translation": "2019."
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Serbian",
+      "translation": "Лондон • Милано • Њујорк"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Serbian",
+      "translation": "Пекара"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Serbian",
+      "translation": "Пића"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Serbian",
+      "translation": "Слаткиши"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Serbian",
+      "translation": "Кулинарство"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Serbian",
+      "translation": "Замрзнута храна"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Serbian",
+      "translation": "Тестенине"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Serbian",
+      "translation": "Грицкалице"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Serbian",
+      "translation": "ESG извештај за 2025. годину"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Serbian",
+      "translation": "Лондон • Милано • Њујорк"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Serbian",
+      "translation": "Дом"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Serbian",
+      "translation": "О нама"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Serbian",
+      "translation": "О нама"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Serbian",
+      "translation": "Прича о бренду"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Serbian",
+      "translation": "Производи"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Serbian",
+      "translation": "Наши производи"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Serbian",
+      "translation": "Погледајте све производе"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Serbian",
+      "translation": "КСО"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Serbian",
+      "translation": "Односи са инвеститорима"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Serbian",
+      "translation": "Инвеститори"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Serbian",
+      "translation": "Медији"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Serbian",
+      "translation": "Контактирајте нас"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Serbian",
+      "translation": "Харвиксова кућа"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Serbian",
+      "translation": "Земље"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Serbian",
+      "translation": "Портали"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Serbian",
+      "translation": "Пријавите се"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Serbian",
+      "translation": "Листа жеља"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Serbian",
+      "translation": "Корпа за куповину"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Serbian",
+      "translation": "Помоћ"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Serbian",
+      "translation": "Пронађи продавницу"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Serbian",
+      "translation": "Новац"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Serbian",
+      "translation": "Продаја"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Serbian",
+      "translation": "Понуде"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Serbian",
+      "translation": "Тамни режим"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Serbian",
+      "translation": "Кредитна картица"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Serbian",
+      "translation": "M&S Rewards кредитна картица"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Serbian",
+      "translation": "Клубске награде"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Serbian",
+      "translation": "Наше кредитне картице"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Serbian",
+      "translation": "Осигурање"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Serbian",
+      "translation": "Осигурање куће"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Serbian",
+      "translation": "Путно осигурање"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Serbian",
+      "translation": "Туристичке услуге"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Serbian",
+      "translation": "Новац за путовања"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Serbian",
+      "translation": "Девизни курсеви"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Serbian",
+      "translation": "Додатне услуге"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Serbian",
+      "translation": "Штедња и инвестирање"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Serbian",
+      "translation": "Лични кредити"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Serbian",
+      "translation": "Финансијска подршка"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Serbian",
+      "translation": "Тренутна продаја"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Serbian",
+      "translation": "Распродаја"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Serbian",
+      "translation": "Сезонске распродаје"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Serbian",
+      "translation": "Посебне понуде"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Serbian",
+      "translation": "Промоције"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Serbian",
+      "translation": "Попусти за поруџбине у велепродаји"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Serbian",
+      "translation": "Наши производи"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Serbian",
+      "translation": "Погледајте све производе"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Serbian",
+      "translation": "Наше категорије производа"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Serbian",
+      "translation": "Откријте наш премиум асортиман производа израђених са пажњом и изврсношћу."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Serbian",
+      "translation": "Ниво 1: Категорије"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Serbian",
+      "translation": "Ниво 2: Модули"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Serbian",
+      "translation": "Ниво 3: Екрани кључних индикатора учинка (KPI)"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Serbian",
+      "translation": "Ниво 4: Акције"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Serbian",
+      "translation": "Ресетуј навигацију"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Serbian",
+      "translation": "Нема доступних подкатегорија за ову категорију."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Serbian",
+      "translation": "Производи"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Serbian",
+      "translation": "Поткатегорије"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Serbian",
+      "translation": "Пекара"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Serbian",
+      "translation": "Свеже печени производи и пецива."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Serbian",
+      "translation": "Пића"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Serbian",
+      "translation": "Освежавајућа пића за сваку прилику."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Serbian",
+      "translation": "Слаткиши"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Serbian",
+      "translation": "Слатке посластице и ужитци."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Serbian",
+      "translation": "Кулинарство"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Serbian",
+      "translation": "Неопходни састојци за вашу кухињу."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Serbian",
+      "translation": "Замрзнута храна"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Serbian",
+      "translation": "Укусна и практична замрзнута јела."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Serbian",
+      "translation": "Тестенине"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Serbian",
+      "translation": "Аутентичне врсте тестенина."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Serbian",
+      "translation": "Грицкалице"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Serbian",
+      "translation": "Укусне грицкалице за било које доба дана."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Serbian",
+      "translation": "О Харвиксу"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Serbian",
+      "translation": "Изврсност у премиум потрошачкој роби од 2019. године"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Serbian",
+      "translation": "Наша прича"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Serbian",
+      "translation": "Основан 2019. године, Harvics је од визионарске идеје израстао у глобалног лидера у производњи премиум робе широке потрошње. Наше путовање је дефинисано неуморном тежњом ка квалитету и посвећеношћу иновацијама."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Serbian",
+      "translation": "Послујемо у преко 40 земаља, испоручујући производе који обогаћују животе и постављају нове стандарде у индустрији. Од наших скромних почетака до нашег глобалног присуства, наше вредности остају непромењене."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Serbian",
+      "translation": "Процењено 2019."
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Serbian",
+      "translation": "40+ земаља"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Serbian",
+      "translation": "6 производних линија"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Serbian",
+      "translation": "Друштвена одговорност предузећа"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Serbian",
+      "translation": "У компанији Харвикс, посвећени смо позитивном утицају на свет. Наше иницијативе за друштвено одговорно пословање фокусиране су на одрживост, оснаживање заједнице и етичке пословне праксе."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Serbian",
+      "translation": "Године утицаја"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Serbian",
+      "translation": "Досегнуте земље"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Serbian",
+      "translation": "Дотакнути животи"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Serbian",
+      "translation": "Наше кључне иницијативе"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Serbian",
+      "translation": "Фокусирамо се на четири главна стуба како бисмо подстакли одрживе промене и створили заједничку вредност за све заинтересоване стране."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Serbian",
+      "translation": "Одрживост"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Serbian",
+      "translation": "Смањење нашег еколошког отиска кроз обновљиве изворе енергије и смањење отпада."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Serbian",
+      "translation": "Обновљива енергија"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Serbian",
+      "translation": "Отпад преусмерен"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Serbian",
+      "translation": "Смањење угљеника"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Serbian",
+      "translation": "Подршка заједнице"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Serbian",
+      "translation": "Оснаживање локалних заједница кроз образовање, здравствену заштиту и економски развој."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Serbian",
+      "translation": "Породице подржане"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Serbian",
+      "translation": "Активни програми"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Serbian",
+      "translation": "Волонтери"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Serbian",
+      "translation": "Образовање"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Serbian",
+      "translation": "Обезбеђивање приступа квалитетном образовању и стипендијама за ученике из угрожених група."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Serbian",
+      "translation": "Стипендије"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Serbian",
+      "translation": "Партнерске школе"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Serbian",
+      "translation": "Погођени студенти"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Serbian",
+      "translation": "Здравље и благостање"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Serbian",
+      "translation": "Побољшање приступа здравственој заштити и исхрани у недовољно услуженим регионима."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Serbian",
+      "translation": "Здравствене кампање"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Serbian",
+      "translation": "Услужени људи"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Serbian",
+      "translation": "Мобилне клинике"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Serbian",
+      "translation": "Најбоља иницијатива за друштвено одговорно пословање"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Serbian",
+      "translation": "Похваљени смо за наш иновативни приступ друштвеној одговорности."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Serbian",
+      "translation": "Шампион заједнице"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Serbian",
+      "translation": "Награђени за наше опсежне програме рада са заједницом."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Serbian",
+      "translation": "Награда за глобалну одрживост"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Serbian",
+      "translation": "Признати по нашој посвећености угљеничној неутралности."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Serbian",
+      "translation": "Наш утицај"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Serbian",
+      "translation": "Препознавање наших прекретница у стварању бољег света."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Serbian",
+      "translation": "Придружите нам се у стварању промене"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Serbian",
+      "translation": "Постаните наш партнер или сазнајте више о томе како градимо одрживу будућност."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Serbian",
+      "translation": "Контактирајте тим за друштвено одговорно пословање"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Serbian",
+      "translation": "Сазнајте више"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Serbian",
+      "translation": "Контактирајте нас"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Serbian",
+      "translation": "Волели бисмо да чујемо ваше мишљење. Контактирајте нас путем било ког од ових канала."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Serbian",
+      "translation": "Телефон"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Serbian",
+      "translation": "Е-пошта"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Serbian",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Serbian",
+      "translation": "Позовите одмах"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Serbian",
+      "translation": "Пошаљи имејл"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Serbian",
+      "translation": "Пошаљите нам поруку"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Serbian",
+      "translation": "Медијски центар"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Serbian",
+      "translation": "Медијски центар | Харвикс"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Serbian",
+      "translation": "Ресурси за штампу, брендирани материјали и најновије вести из компаније Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Serbian",
+      "translation": "Корпоративни"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Serbian",
+      "translation": "Вести и саопштења за штампу"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Serbian",
+      "translation": "Најновије најаве, ширења на тржишта, лансирања производа и корпоративне новости од Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Serbian",
+      "translation": "Прочитајте најновије вести"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Serbian",
+      "translation": "Галерија слика"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Serbian",
+      "translation": "Бренд материјали високе резолуције, фотографије производа, слике објеката и извештавање са догађаја за медијску употребу."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Serbian",
+      "translation": "Прегледај галерију"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Serbian",
+      "translation": "Контакти за медије"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Serbian",
+      "translation": "За упите за медије, захтеве за интервјуе и најаве партнерстава, обратите се нашем тиму за комуникације."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Serbian",
+      "translation": "Контактирајте тим за штампу"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Serbian",
+      "translation": "Покривена тржишта"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Serbian",
+      "translation": "Индустријске вертикале"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Serbian",
+      "translation": "Основано у Дубаију"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Serbian",
+      "translation": "Подржани језици"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Serbian",
+      "translation": "Недавни наслови"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Serbian",
+      "translation": "Харвикс шири пословање у сектору робе широке потрошње на 5 нових тржишта Југоисточне Азије"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Serbian",
+      "translation": "Нова платформа за ланац снабдевања заснована на вештачкој интелигенцији покренута је за глобалну дистрибуцију"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Serbian",
+      "translation": "Харвикс постиже прекретницу угљенично неутралности у свим објектима"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Serbian",
+      "translation": "Стратешко партнерство са водећим произвођачима текстила у Јужној Азији"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Serbian",
+      "translation": "Харвиксова кућа"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Serbian",
+      "translation": "Наслеђе изврсности и традиције"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Serbian",
+      "translation": "Добродошли у Харвиксову кућу"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Serbian",
+      "translation": "Харвикс Хаус представља врхунац наше посвећености квалитету и наслеђу. Овде окупљамо најбољи избор наших премиум производа, представљених у окружењу које одражава наше вредности елеганције, традиције и иновације."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Serbian",
+      "translation": "Истражите наше ексклузивне колекције и откријте причу која стоји иза сваког производа који носи име Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Serbian",
+      "translation": "Харвикс Глобал Венчерс"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Serbian",
+      "translation": "Изврсност у премиум потрошачкој роби од 2019. године"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Serbian",
+      "translation": "Водећа глобална компанија за робу широке потрошње која испоручује премиум прехрамбене производе у различитим категоријама са међународним стандардима квалитета."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Serbian",
+      "translation": "Лондон • Милано • Њујорк"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Serbian",
+      "translation": "Од 2019. године"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Serbian",
+      "translation": "Харвикс вести"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Serbian",
+      "translation": "Претплатите се да бисте примали обавештења и новости"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Serbian",
+      "translation": "Региструј се"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Serbian",
+      "translation": "Проблеми са усклађеношћу"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Serbian",
+      "translation": "Изјавите се ако имате недоумице у вези са усклађеношћу са законом или етиком"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Serbian",
+      "translation": "Проговори"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Serbian",
+      "translation": "Контактирајте нас"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Serbian",
+      "translation": "Контактирајте наш тим"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Serbian",
+      "translation": "Контактирајте нас"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Serbian",
+      "translation": "Корисни линкови"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Serbian",
+      "translation": "Питајте Харвич"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Serbian",
+      "translation": "Претрага послова"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Serbian",
+      "translation": "Пријавите се за вести"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Serbian",
+      "translation": "Компанија"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Serbian",
+      "translation": "Глобалне адресе"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Serbian",
+      "translation": "Стратегија"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Serbian",
+      "translation": "Наше руководство"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Serbian",
+      "translation": "Брендови од А до Ш"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Serbian",
+      "translation": "Наша историја"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Serbian",
+      "translation": "Одрживост"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Serbian",
+      "translation": "Вести"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Serbian",
+      "translation": "Контакти за медије"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Serbian",
+      "translation": "Слике"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Serbian",
+      "translation": "Инвеститори"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Serbian",
+      "translation": "Корпоративно управљање"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Serbian",
+      "translation": "Акције, АДР-ови и обвезнице"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Serbian",
+      "translation": "Публикације"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Serbian",
+      "translation": "Пратите нас на"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Serbian",
+      "translation": "0 проблема"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Serbian",
+      "translation": "Мапа сајта"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Serbian",
+      "translation": "Одјави се"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Serbian",
+      "translation": "Помоћ"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Serbian",
+      "translation": "Приватност"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Serbian",
+      "translation": "Колачићи"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Serbian",
+      "translation": "Услови коришћења"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Serbian",
+      "translation": "Приступачност"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Serbian",
+      "translation": "Угљенична ефикасност"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Serbian",
+      "translation": "Добављачи"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Serbian",
+      "translation": "Друштвене мреже"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Serbian",
+      "translation": "Подешавања колачића"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Serbian",
+      "translation": "Премијум квалитет"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Serbian",
+      "translation": "Адреса е-поште"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Serbian",
+      "translation": "Унесите своју адресу е-поште"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Serbian",
+      "translation": "Претплатите се"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Serbian",
+      "translation": "Претплата..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Serbian",
+      "translation": "О нама"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Serbian",
+      "translation": "Медији"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Serbian",
+      "translation": "Претражите производе, брендове или категорије"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Serbian",
+      "translation": "Нису пронађени резултати"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Serbian",
+      "translation": "Претрага..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Serbian",
+      "translation": "Резултати"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Serbian",
+      "translation": "Ћаскајте са нама"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Serbian",
+      "translation": "Унесите своју поруку..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Serbian",
+      "translation": "Пошаљи"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Serbian",
+      "translation": "Затвори"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Serbian",
+      "translation": "Здраво! Како вам могу данас помоћи?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Serbian",
+      "translation": "Извините, нисам то разумео/разумела. Можете ли, молим вас, преформулисати?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Serbian",
+      "translation": "Могу вам помоћи са информацијама о производима, поруџбинама или општим упитима. Шта бисте желели да знате?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Serbian",
+      "translation": "За додатну помоћ, контактирајте нас на support@harvics.com или позовите +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Serbian",
+      "translation": "Ћаскајте са нама"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Serbian",
+      "translation": "Учитавање..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Serbian",
+      "translation": "Грешка"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Serbian",
+      "translation": "Успех"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Serbian",
+      "translation": "Сачувај"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Serbian",
+      "translation": "Откажи"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Serbian",
+      "translation": "Обриши"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Serbian",
+      "translation": "Измени"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Serbian",
+      "translation": "Поглед"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Serbian",
+      "translation": "Пошаљи"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Serbian",
+      "translation": "Претрага"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Serbian",
+      "translation": "Филтер"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Serbian",
+      "translation": "Јасно"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Serbian",
+      "translation": "Преузми"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Serbian",
+      "translation": "Отпреми"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Serbian",
+      "translation": "Да"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Serbian",
+      "translation": "Не"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Serbian",
+      "translation": "Затвори"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Serbian",
+      "translation": "Назад"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Serbian",
+      "translation": "Следеће"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Serbian",
+      "translation": "Претходно"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Serbian",
+      "translation": "Акције"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Serbian",
+      "translation": "Статус"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Serbian",
+      "translation": "Датум"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Serbian",
+      "translation": "Име"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Serbian",
+      "translation": "Е-пошта"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Serbian",
+      "translation": "Телефон"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Serbian",
+      "translation": "Адреса"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Serbian",
+      "translation": "Земља"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Serbian",
+      "translation": "Град"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Serbian",
+      "translation": "Сви"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Serbian",
+      "translation": "Ниједан"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Serbian",
+      "translation": "Изаберите"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Serbian",
+      "translation": "Изаберите језик"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Serbian",
+      "translation": "Изаберите земљу"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Serbian",
+      "translation": "Прикажи више"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Serbian",
+      "translation": "Прикажи мање"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Serbian",
+      "translation": "Обавезно"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Serbian",
+      "translation": "Мени"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Serbian",
+      "translation": "Погледајте производе"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Serbian",
+      "translation": "Пусти музику"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Serbian",
+      "translation": "Паузирај музику"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Serbian",
+      "translation": "Утишај музику"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Serbian",
+      "translation": "Укључи звук музике"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Serbian",
+      "translation": "Наш глобални досег"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Serbian",
+      "translation": "Од"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Serbian",
+      "translation": "Главно тржиште"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Serbian",
+      "translation": "Главна тржишта"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Serbian",
+      "translation": "Присуство"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Serbian",
+      "translation": "Земље у којима се опслужује"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Serbian",
+      "translation": "Главна тржишта"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Serbian",
+      "translation": "Категорије производа"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Serbian",
+      "translation": "Основано"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Serbian",
+      "translation": "Хијерархија територије"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Serbian",
+      "translation": "Пуна путања"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Serbian",
+      "translation": "Тренутна територија"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Serbian",
+      "translation": "Нема артикала"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Serbian",
+      "translation": "Глобус"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Serbian",
+      "translation": "Континент"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Serbian",
+      "translation": "Регион"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Serbian",
+      "translation": "Земља"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Serbian",
+      "translation": "Град"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Serbian",
+      "translation": "Округ"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Serbian",
+      "translation": "Локација"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Serbian",
+      "translation": "Харвикс Глобал"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Serbian",
+      "translation": "Глобално"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Serbian",
+      "translation": "Изаберите регион"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Serbian",
+      "translation": "Подаци о купцу"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Serbian",
+      "translation": "Изабрано"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Serbian",
+      "translation": "Пуно име"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Serbian",
+      "translation": "Унесите своје пуно име"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Serbian",
+      "translation": "Име је обавезно"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Serbian",
+      "translation": "Адреса е-поште"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Serbian",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Serbian",
+      "translation": "Имејл је обавезан"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Serbian",
+      "translation": "Молимо вас да унесете важећу адресу е-поште"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Serbian",
+      "translation": "Број телефона"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Serbian",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Serbian",
+      "translation": "Број телефона је обавезан"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Serbian",
+      "translation": "Адреса"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Serbian",
+      "translation": "Ваша адреса"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Serbian",
+      "translation": "Адреса је обавезна"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Serbian",
+      "translation": "Слажем се да примам маркетиншке комуникације и новости"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Serbian",
+      "translation": "Пошаљи и настави"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Serbian",
+      "translation": "Слање..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Serbian",
+      "translation": "Прескочи и настави"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Serbian",
+      "translation": "Кључни индикатори учинка"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Serbian",
+      "translation": "Поруџбине данас"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Serbian",
+      "translation": "Послато путем Harvics CRM-а"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Serbian",
+      "translation": "Чекајуће испоруке"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Serbian",
+      "translation": "Преко додељених рута"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Serbian",
+      "translation": "Продавци"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Serbian",
+      "translation": "Активни продајни објекти у опсегу"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Serbian",
+      "translation": "Оцена Т и А"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Serbian",
+      "translation": "Покривеност територије"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Serbian",
+      "translation": "Финансије и залихе"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Serbian",
+      "translation": "Артикли са мало залиха"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Serbian",
+      "translation": "Покрени допуну"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Serbian",
+      "translation": "Неизмирене фактуре"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Serbian",
+      "translation": "Доспело за наплату"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Serbian",
+      "translation": "Кредитни лимит"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Serbian",
+      "translation": "Додељено од стране финансија"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Serbian",
+      "translation": "Аутоматско одобравање, допуњавање залиха и подсетници за фактуре су омогућени"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Serbian",
+      "translation": "Самоодобрење"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Serbian",
+      "translation": "Допуњавање залиха"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Serbian",
+      "translation": "Подсетници за фактуре"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Serbian",
+      "translation": "Препоруке вештачке интелигенције"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Serbian",
+      "translation": "Ниво ризика"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Serbian",
+      "translation": "На основу коришћења кредита и историје плаћања"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Serbian",
+      "translation": "Предложени редослед"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Serbian",
+      "translation": "Артикли које препоручује вештачка интелигенција за наручивање"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Serbian",
+      "translation": "Следећа акција"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Serbian",
+      "translation": "Акције и смернице"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Serbian",
+      "translation": "Жалбе"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Serbian",
+      "translation": "Проблеми са продавцем чекају на одговор"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Serbian",
+      "translation": "Приручник"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Serbian",
+      "translation": "Дајте приоритет испорукама које чекају пре поднева."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Serbian",
+      "translation": "Затворите све нерешене жалбе у року од 48 сати."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Serbian",
+      "translation": "Покрени допуну залиха за артикле са мало залиха (аутоматско креирање поруџбенице)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Serbian",
+      "translation": "Територија"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Serbian",
+      "translation": "Поруџбине овог месеца"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Serbian",
+      "translation": "Налози на чекању"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Serbian",
+      "translation": "Испоручене поруџбине"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Serbian",
+      "translation": "Информације о територији"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Serbian",
+      "translation": "Земља"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Serbian",
+      "translation": "Град"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Serbian",
+      "translation": "Регион"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Serbian",
+      "translation": "Брзе акције"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Serbian",
+      "translation": "Нови ред"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Serbian",
+      "translation": "Погледајте поруџбине"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Serbian",
+      "translation": "Погледајте фактуре"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Serbian",
+      "translation": "Подешавања профила"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Serbian",
+      "translation": "Учитавање контролне табле..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Serbian",
+      "translation": "Грешка"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Serbian",
+      "translation": "Моје поруџбине"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Serbian",
+      "translation": "ИД поруџбине"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Serbian",
+      "translation": "Датум"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Serbian",
+      "translation": "Статус"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Serbian",
+      "translation": "Ставке"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Serbian",
+      "translation": "Укупан износ"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Serbian",
+      "translation": "Акције"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Serbian",
+      "translation": "Прикажи детаље"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Serbian",
+      "translation": "Статус"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Serbian",
+      "translation": "Датум почетка"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Serbian",
+      "translation": "Крајњи датум"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Serbian",
+      "translation": "Сви статуси"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Serbian",
+      "translation": "Обриши филтере"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Serbian",
+      "translation": "На чекању"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Serbian",
+      "translation": "Обрада"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Serbian",
+      "translation": "Достављено"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Serbian",
+      "translation": "Отказано"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Serbian",
+      "translation": "Није пронађена ниједна поруџбина"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Serbian",
+      "translation": "Учитавање поруџбина..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Serbian",
+      "translation": "Страница"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Serbian",
+      "translation": "од"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Serbian",
+      "translation": "Претходно"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Serbian",
+      "translation": "Следеће"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Serbian",
+      "translation": "Детаљи поруџбине"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Serbian",
+      "translation": "Назад на поруџбине"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Serbian",
+      "translation": "ИД поруџбине"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Serbian",
+      "translation": "Статус"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Serbian",
+      "translation": "Датум поруџбине"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Serbian",
+      "translation": "Датум испоруке"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Serbian",
+      "translation": "Адреса за испоруку"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Serbian",
+      "translation": "Белешке"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Serbian",
+      "translation": "Наручите ставке"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Serbian",
+      "translation": "Производ"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Serbian",
+      "translation": "Артикал"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Serbian",
+      "translation": "Количина"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Serbian",
+      "translation": "Јединична цена"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Serbian",
+      "translation": "Укупно"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Serbian",
+      "translation": "Укупан износ"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Serbian",
+      "translation": "Временска линија статуса"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Serbian",
+      "translation": "Поруџбина није пронађена"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Serbian",
+      "translation": "Направи нову поруџбину"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Serbian",
+      "translation": "Наручите ставке"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Serbian",
+      "translation": "Додај ставку"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Serbian",
+      "translation": "Још увек није додат ниједан артикал. Кликните на „Додај артикал“ да бисте започели."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Serbian",
+      "translation": "Детаљи поруџбине"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Serbian",
+      "translation": "Датум испоруке"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Serbian",
+      "translation": "Адреса за испоруку"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Serbian",
+      "translation": "Белешке"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Serbian",
+      "translation": "Укупан износ"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Serbian",
+      "translation": "Направи поруџбину"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Serbian",
+      "translation": "Креирање поруџбине..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Serbian",
+      "translation": "Откажи"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Serbian",
+      "translation": "Изаберите производ"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Serbian",
+      "translation": "Производ"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Serbian",
+      "translation": "Количина"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Serbian",
+      "translation": "Јединична цена"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Serbian",
+      "translation": "Уклони"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Serbian",
+      "translation": "Међуизнос"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Serbian",
+      "translation": "ИД поруџбине"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Serbian",
+      "translation": "Потребна је бар једна ставка поруџбине"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Serbian",
+      "translation": "Производ је обавезан"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Serbian",
+      "translation": "Количина мора бити већа од 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Serbian",
+      "translation": "Цена јединице мора бити позитивна"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Serbian",
+      "translation": "Неважећи формат датума испоруке"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Serbian",
+      "translation": "Датум испоруке не може бити у прошлости"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Serbian",
+      "translation": "Моје фактуре"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Serbian",
+      "translation": "Број фактуре"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Serbian",
+      "translation": "Датум фактуре"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Serbian",
+      "translation": "Два састанка"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Serbian",
+      "translation": "Износ"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Serbian",
+      "translation": "Плаћени износ"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Serbian",
+      "translation": "Статус плаћања"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Serbian",
+      "translation": "Статус плаћања"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Serbian",
+      "translation": "Сви статуси"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Serbian",
+      "translation": "Обриши филтере"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Serbian",
+      "translation": "Плаћено"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Serbian",
+      "translation": "Неплаћено"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Serbian",
+      "translation": "Делимично"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Serbian",
+      "translation": "Није пронађена ниједна фактура"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Serbian",
+      "translation": "Учитавање фактура..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Serbian",
+      "translation": "Мој профил"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Serbian",
+      "translation": "Информације о налогу"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Serbian",
+      "translation": "ИД дистрибутера"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Serbian",
+      "translation": "Територија"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Serbian",
+      "translation": "Земља"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Serbian",
+      "translation": "Град"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Serbian",
+      "translation": "Налог је креиран"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Serbian",
+      "translation": "Ажурирај профил"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Serbian",
+      "translation": "Име"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Serbian",
+      "translation": "Е-пошта"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Serbian",
+      "translation": "Телефон"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Serbian",
+      "translation": "Адреса"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Serbian",
+      "translation": "Језик"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Serbian",
+      "translation": "Валута"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Serbian",
+      "translation": "Сачувај измене"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Serbian",
+      "translation": "Чување..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Serbian",
+      "translation": "Профил је успешно ажуриран"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Serbian",
+      "translation": "Учитавање профила..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Serbian",
+      "translation": "Неважећи формат имејла"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Serbian",
+      "translation": "Неважећи формат телефона"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Serbian",
+      "translation": "Грешка"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Serbian",
+      "translation": "Учитавање..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Serbian",
+      "translation": "Сачувај"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Serbian",
+      "translation": "Откажи"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Serbian",
+      "translation": "Назад"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Serbian",
+      "translation": "Пошаљи"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Serbian",
+      "translation": "Обриши"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Serbian",
+      "translation": "Измени"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Serbian",
+      "translation": "Поглед"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Serbian",
+      "translation": "Претрага"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Serbian",
+      "translation": "Филтер"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Serbian",
+      "translation": "Јасно"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Serbian",
+      "translation": "Примени"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Serbian",
+      "translation": "Затвори"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Serbian",
+      "translation": "Потврди"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Serbian",
+      "translation": "Да"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Serbian",
+      "translation": "Не"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Serbian",
+      "translation": "Правни оперативни систем"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Serbian",
+      "translation": "Правни ОС"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Serbian",
+      "translation": "Приступ одбијен"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Serbian",
+      "translation": "Немате дозволу за приступ модулу Legal OS."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Serbian",
+      "translation": "Контролна табла"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Serbian",
+      "translation": "Уговори"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Serbian",
+      "translation": "Сертификати"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Serbian",
+      "translation": "Усклађеност са прописима"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Serbian",
+      "translation": "Правна контролна табла"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Serbian",
+      "translation": "Преглед правних операција и статуса усклађености"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Serbian",
+      "translation": "Активни заштитни знакови"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Serbian",
+      "translation": "Активни уговори"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Serbian",
+      "translation": "Статус усклађености"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Serbian",
+      "translation": "Заштитни знакови"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Serbian",
+      "translation": "Управљајте регистрацијама и пријавама заштитних знакова"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Serbian",
+      "translation": "Додај нови заштитни знак"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Serbian",
+      "translation": "Земља"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Serbian",
+      "translation": "Статус"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Serbian",
+      "translation": "Све земље"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Serbian",
+      "translation": "Сви статуси"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Serbian",
+      "translation": "Обриши филтере"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Serbian",
+      "translation": "Назив бренда"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Serbian",
+      "translation": "Класа"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Serbian",
+      "translation": "Земља"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Serbian",
+      "translation": "Број пријаве"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Serbian",
+      "translation": "Статус"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Serbian",
+      "translation": "Датум истека"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Serbian",
+      "translation": "Акције"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Serbian",
+      "translation": "Измени заштитни знак"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Serbian",
+      "translation": "Додај нови заштитни знак"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Serbian",
+      "translation": "Погледајте заштитни знак"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Serbian",
+      "translation": "Назив бренда"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Serbian",
+      "translation": "Број разреда"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Serbian",
+      "translation": "Земља"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Serbian",
+      "translation": "Број пријаве"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Serbian",
+      "translation": "Статус"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Serbian",
+      "translation": "Датум истека"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Serbian",
+      "translation": "Документи"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Serbian",
+      "translation": "Нема приложених докумената"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Serbian",
+      "translation": "Додај документ"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Serbian",
+      "translation": "Уклони"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Serbian",
+      "translation": "Учитавање заштитних знакова није успело"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Serbian",
+      "translation": "Чување заштитног знака није успело. Молимо покушајте поново."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Serbian",
+      "translation": "Правни случајеви"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Serbian",
+      "translation": "Управљајте правним случајевима и пратите њихов статус"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Serbian",
+      "translation": "Нови случај"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Serbian",
+      "translation": "Наслов случаја"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Serbian",
+      "translation": "Тип случаја"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Serbian",
+      "translation": "Земља"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Serbian",
+      "translation": "Опис"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Serbian",
+      "translation": "Додељено"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Serbian",
+      "translation": "Статус"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Serbian",
+      "translation": "Датум саслушања"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Serbian",
+      "translation": "Наслов случаја"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Serbian",
+      "translation": "Тип"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Serbian",
+      "translation": "Земља"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Serbian",
+      "translation": "Додељено"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Serbian",
+      "translation": "Статус"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Serbian",
+      "translation": "Датум саслушања"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Serbian",
+      "translation": "Акције"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Serbian",
+      "translation": "Отворено"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Serbian",
+      "translation": "У току"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Serbian",
+      "translation": "Затворено"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Serbian",
+      "translation": "Отказано"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Serbian",
+      "translation": "Приказ мапе возног парка"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Serbian",
+      "translation": "Праћење продајних службеника и возила за доставу у реалном времену"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Serbian",
+      "translation": "Активни запослени"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Serbian",
+      "translation": "Нема активних запослених"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Serbian",
+      "translation": "Учитавање..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Serbian",
+      "translation": "Репродукција руте"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Serbian",
+      "translation": "Запослени"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Serbian",
+      "translation": "Брзина"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Serbian",
+      "translation": "Ресетуј"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Serbian",
+      "translation": "Играј"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Serbian",
+      "translation": "Пауза"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Serbian",
+      "translation": "поени"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Serbian",
+      "translation": "Нема доступних података о рути"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Serbian",
+      "translation": "Учитавање руте..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Serbian",
+      "translation": "Конкурентски производи"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Serbian",
+      "translation": "Пратите информације о конкурентским производима"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Serbian",
+      "translation": "Додај производ"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Serbian",
+      "translation": "Додај конкурентски производ"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Serbian",
+      "translation": "Бренд"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Serbian",
+      "translation": "Назив артикла"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Serbian",
+      "translation": "Категорија"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Serbian",
+      "translation": "Величина"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Serbian",
+      "translation": "Цена"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Serbian",
+      "translation": "Валута"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Serbian",
+      "translation": "Земља"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Serbian",
+      "translation": "Бренд"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Serbian",
+      "translation": "Назив артикла"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Serbian",
+      "translation": "Категорија"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Serbian",
+      "translation": "Величина"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Serbian",
+      "translation": "Цена"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Serbian",
+      "translation": "Земља"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Serbian",
+      "translation": "Датум додавања"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Serbian",
+      "translation": "Учитавање производа није успело"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Serbian",
+      "translation": "Није успело креирање производа. Молимо покушајте поново."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Serbian",
+      "translation": "Нису пронађени конкурентски производи"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Serbian",
+      "translation": "Учитавање производа..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Serbian",
+      "translation": "Контролна табла конкурента"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Serbian",
+      "translation": "Аналитика и увиди у конкурентске производе"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Serbian",
+      "translation": "Укупно производа"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Serbian",
+      "translation": "Праћени брендови"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Serbian",
+      "translation": "Земље"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Serbian",
+      "translation": "Категорије"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Serbian",
+      "translation": "Производи по бренду"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Serbian",
+      "translation": "Производи по земљи"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Serbian",
+      "translation": "Производи по категорији"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Serbian",
+      "translation": "Учитавање статистике..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Serbian",
+      "translation": "Нема доступних статистика"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Serbian",
+      "translation": "Преглед"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Serbian",
+      "translation": "Поруџбине"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Serbian",
+      "translation": "Инвентар"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Serbian",
+      "translation": "Логистика"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Serbian",
+      "translation": "Финансије"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Serbian",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Serbian",
+      "translation": "Људски ресурси"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Serbian",
+      "translation": "Извршни директор"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Serbian",
+      "translation": "Инвеститор"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Serbian",
+      "translation": "Правни/Интелектуална својина"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Serbian",
+      "translation": "Такмичар"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Serbian",
+      "translation": "Увоз/Извоз"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Serbian",
+      "translation": "ГПС праћење"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Serbian",
+      "translation": "Локализација"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Serbian",
+      "translation": "Токови посла"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Serbian",
+      "translation": "Администратор"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Serbian",
+      "translation": "CRM ОС"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Serbian",
+      "translation": "Корисник 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Serbian",
+      "translation": "Комплетни профили купаца, историја интеракције и управљање односима"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Serbian",
+      "translation": "Дигиталне кампање"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Serbian",
+      "translation": "Вишеканалне маркетиншке кампање (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Serbian",
+      "translation": "Потенцијални клијенти и могућности"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Serbian",
+      "translation": "Управљање потенцијалним клијентима, квалификација и канал могућности"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Serbian",
+      "translation": "Корисничка подршка"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Serbian",
+      "translation": "Управљање тикетима, корисничка подршка и решавање проблема"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Serbian",
+      "translation": "Програми лојалности"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Serbian",
+      "translation": "Управљање лојалности, гејмификацијом и наградама за трговце на мало"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Serbian",
+      "translation": "Корисник 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Serbian",
+      "translation": "Нови купац"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Serbian",
+      "translation": "Укупан број купаца"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Serbian",
+      "translation": "Активно"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Serbian",
+      "translation": "Ново"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Serbian",
+      "translation": "Задовољство"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Serbian",
+      "translation": "Управљање купцима"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Serbian",
+      "translation": "Прегледајте и управљајте односима са купцима, интеракцијама и кампањама."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Serbian",
+      "translation": "Учитавање..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Serbian",
+      "translation": "Грешка при учитавању CRM података"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Serbian",
+      "translation": "Преглед"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Serbian",
+      "translation": "Поруџбине"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Serbian",
+      "translation": "Инвентар"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Serbian",
+      "translation": "Логистика"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Serbian",
+      "translation": "Финансије"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Serbian",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Serbian",
+      "translation": "Људски ресурси"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Serbian",
+      "translation": "Извршни директор"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Serbian",
+      "translation": "Инвеститор"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Serbian",
+      "translation": "Правни/Интелектуална својина"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Serbian",
+      "translation": "Такмичар"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Serbian",
+      "translation": "Увоз/Извоз"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Serbian",
+      "translation": "ГПС праћење"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Serbian",
+      "translation": "Локализација"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Serbian",
+      "translation": "Токови посла"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Serbian",
+      "translation": "Администратор"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Serbian",
+      "translation": "Муштерије"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Serbian",
+      "translation": "Запослени"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Serbian",
+      "translation": "Профит"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Serbian",
+      "translation": "Учитавање кокпита добављача…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Serbian",
+      "translation": "Наруџбенице"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Serbian",
+      "translation": "Одгајио Харвикс"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Serbian",
+      "translation": "Пошиљке / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Serbian",
+      "translation": "Прихваћено ове недеље"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Serbian",
+      "translation": "Фактуре креиране"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Serbian",
+      "translation": "Чека се плаћање"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Serbian",
+      "translation": "Плаћања на чекању"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Serbian",
+      "translation": "Заказано за објављивање"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Serbian",
+      "translation": "Квалитет / жалбе"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Serbian",
+      "translation": "Отворене карте"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Serbian",
+      "translation": "Прогноза (наредне 4 недеље)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Serbian",
+      "translation": "Привремени вештачки интелигентни систем"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Serbian",
+      "translation": "Акције добављача"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Serbian",
+      "translation": "Потврдите предстојеће пошиљке и ажурирајте распоред GRN-а."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Serbian",
+      "translation": "Прегледајте неизмирене фактуре и поделите савете о плаћању."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Serbian",
+      "translation": "Решите отворене жалбе на квалитет помоћу доказа о контроли квалитета."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Serbian",
+      "translation": "Корисничко име"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Serbian",
+      "translation": "Лозинка"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Serbian",
+      "translation": "Е-пошта"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Serbian",
+      "translation": "Пошаљи"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Serbian",
+      "translation": "Откажи"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Serbian",
+      "translation": "Сачувај"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Serbian",
+      "translation": "Обриши"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Serbian",
+      "translation": "Претрага"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Serbian",
+      "translation": "Филтер"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Serbian",
+      "translation": "Ресетуј"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Serbian",
+      "translation": "Затвори"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Serbian",
+      "translation": "Назад"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Serbian",
+      "translation": "Следеће"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Serbian",
+      "translation": "Претходно"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Serbian",
+      "translation": "Потврди"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Serbian",
+      "translation": "Запамти ме"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Serbian",
+      "translation": "Заборавили сте лозинку?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Serbian",
+      "translation": "Имејл је обавезан"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Serbian",
+      "translation": "Молимо вас да унесете важећу адресу е-поште"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Serbian",
+      "translation": "Производи"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Serbian",
+      "translation": "Које производе нуди Харвикс?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Serbian",
+      "translation": "Нудимо широк асортиман премиум прехрамбених производа, укључујући кондиторске производе, пића, грицкалице, тестенине, пекарске производе и замрзнуту храну у више категорија."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Serbian",
+      "translation": "Где могу да купим Харвикс производе?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Serbian",
+      "translation": "Наши производи су доступни у малопродајним објектима у преко 40 земаља. Користите наш локатор продавница или страницу за контакт да бисте пронашли продавца у вашој близини."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Serbian",
+      "translation": "Да ли нудите наручивање на велико?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Serbian",
+      "translation": "Да, нудимо попусте за поруџбине на велико за предузећа и трговце на мало. Посетите нашу страницу Попусти за поруџбине на велико за више информација."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Serbian",
+      "translation": "Поруџбине и достава"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Serbian",
+      "translation": "Које су ваше опције испоруке?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Serbian",
+      "translation": "Нудимо разне опције испоруке, укључујући стандардну, експресну и међународну испоруку. Бесплатна достава је доступна за поруџбине преко 50 долара."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Serbian",
+      "translation": "Колико траје испорука?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Serbian",
+      "translation": "Рокови испоруке варирају у зависности од локације. Стандардна испорука обично траје 5-7 радних дана, док експресна испорука траје 2-3 радна дана."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Serbian",
+      "translation": "Могу ли пратити своју поруџбину?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Serbian",
+      "translation": "Да, можете пратити своју поруџбину користећи број за праћење који сте навели у е-поруци са потврдом поруџбине."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Serbian",
+      "translation": "Налог и плаћања"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Serbian",
+      "translation": "Како да направим налог?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Serbian",
+      "translation": "Кликните на „Пријава“ у заглављу и изаберите „Креирај налог“ да бисте се регистровали за нови налог."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Serbian",
+      "translation": "Које начине плаћања прихватате?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Serbian",
+      "translation": "Прихватамо све главне кредитне картице, дебитне картице, PayPal и банковне трансфере за B2B поруџбине."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Serbian",
+      "translation": "Да ли су моји подаци о плаћању безбедни?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Serbian",
+      "translation": "Да, користимо индустријски стандард за шифровање како бисмо заштитили ваше податке о плаћању."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Serbian",
+      "translation": "Повраћај и рефундација"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Serbian",
+      "translation": "Каква је ваша политика враћања робе?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Serbian",
+      "translation": "Нудимо политику враћања у року од 30 дана за неотворене производе у оригиналном паковању. Молимо вас да контактирате нашу корисничку службу за овлашћење за враћање."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Serbian",
+      "translation": "Како да захтевам повраћај новца?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Serbian",
+      "translation": "Контактирајте наш тим за корисничку подршку са бројем ваше поруџбине и разлогом враћања. Обрадићемо ваш повраћај новца у року од 5-7 радних дана."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Serbian",
+      "translation": "И даље имате питања?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Serbian",
+      "translation": "Наш тим за корисничку подршку је ту да вам помогне"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Serbian",
+      "translation": "Контактирајте нас"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Serbian",
+      "translation": "Каријере"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Serbian",
+      "translation": "Каријере | Харвикс"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Serbian",
+      "translation": "Придружите се Harvics Global Ventures — истражите могућности у преко 40 земаља."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Serbian",
+      "translation": "Придружите нам се"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Serbian",
+      "translation": "Изградимо будућност глобалне трговине"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Serbian",
+      "translation": "Растемо у преко 40 земаља. Придружите се тиму који гради оперативни систем заснован на вештачкој интелигенцији за глобалну трговину."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Serbian",
+      "translation": "Отворене позиције"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Serbian",
+      "translation": "Земље"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Serbian",
+      "translation": "Индустријске вертикале"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Serbian",
+      "translation": "Запошљавање у одељењима"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Serbian",
+      "translation": "Отворене позиције по одељењу"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Serbian",
+      "translation": "Продаја и дистрибуција"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Serbian",
+      "translation": "Увећајте приход на преко 40 тржишта. Управљање територијом, кључни клијенти, односи са дистрибутерима."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Serbian",
+      "translation": "Ланац снабдевања и логистика"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Serbian",
+      "translation": "Комплетан ланац снабдевања од фабрике до полице. Управљање возним парком, складиштење, испорука до последње миље."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Serbian",
+      "translation": "Технологија и вештачка интелигенција"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Serbian",
+      "translation": "Изградите Harvics OS — нашу пословну платформу засновану на вештачкој интелигенцији. Фулл-стек, машинско учење, наука о подацима."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Serbian",
+      "translation": "Финансије и трезор"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Serbian",
+      "translation": "Вишевалутно пословање трезора, трговинске финансије, HPay дигитална плаћања, управљање девизним фондовима у различитим регионима."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Serbian",
+      "translation": "Набавка и снабдевање"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Serbian",
+      "translation": "Глобално снабдевање из преко 15 земаља порекла. Ревизије добављача, контрола квалитета, програми директно из фабрике."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Serbian",
+      "translation": "Људски ресурси"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Serbian",
+      "translation": "Аквизиција талената, учење и развој, управљање учинком у различитим географским подручјима и културама."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Serbian",
+      "translation": "Правни и усклађени услови"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Serbian",
+      "translation": "Усклађеност са трговинским прописима, провера санкција, заштита интелектуалне својине, управљање уговорима у различитим јурисдикцијама."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Serbian",
+      "translation": "Маркетинг и бренд"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Serbian",
+      "translation": "Вишејезичне кампање, садржај за 38 локалитета, дигитални маркетинг, стратегија бренда за 10 вертикала."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Serbian",
+      "translation": "улоге"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Serbian",
+      "translation": "Зашто Харвикс"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Serbian",
+      "translation": "Глобална мобилност"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Serbian",
+      "translation": "Рад у Дубаију, Лондону, Карачију, Лахору и на преко 40 тржишта"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Serbian",
+      "translation": "Траг раста"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Serbian",
+      "translation": "Брз напредак у каријери у растућем предузећу"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Serbian",
+      "translation": "Култура на првом месту за вештачку интелигенцију"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Serbian",
+      "translation": "Радите са најсавременијим системима вештачке интелигенције и обавештајним системима у реалном времену"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Serbian",
+      "translation": "Конкурентни пакет"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Serbian",
+      "translation": "Водеће на тржишту компензације, смештај и бенефиције"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Serbian",
+      "translation": "Буџет за учење"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Serbian",
+      "translation": "Годишњи буџет за развој курсева, конференција и сертификата"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Serbian",
+      "translation": "Флексибилан рад"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Serbian",
+      "translation": "Хибридни аранжмани са регионалним канцеларијама широм света"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Serbian",
+      "translation": "Наша стратегија"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Serbian",
+      "translation": "Стратегија | Харвич"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Serbian",
+      "translation": "Изградња одрживе будућности кроз иновације и изврсност"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Serbian",
+      "translation": "Изградња одрживе будућности кроз иновације и изврсност"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Serbian",
+      "translation": "Глобална експанзија"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Serbian",
+      "translation": "Ширење нашег присуства на тржиштима у развоју уз јачање наше позиције на већ постојећим тржиштима"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Serbian",
+      "translation": "Иновација производа"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Serbian",
+      "translation": "Улагање у истраживање и развој ради развоја нових производа који задовољавају стално променљиве преференције потрошача"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Serbian",
+      "translation": "Одрживост"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Serbian",
+      "translation": "Посвећени одрживим праксама у целом нашем ланцу снабдевања и пословању"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Serbian",
+      "translation": "Дигитална трансформација"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Serbian",
+      "translation": "Коришћење технологије за побољшање корисничког искуства и оперативне ефикасности"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Serbian",
+      "translation": "Наша визија"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Serbian",
+      "translation": "Да будемо водећа светска компанија за премијум робу широке потрошње, препозната по квалитету, иновацијама и одрживости."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Serbian",
+      "translation": "Харвикс Глобал Вентурс | Премиум Глобал Трејдинг"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Serbian",
+      "translation": "Водећа глобална трговачка компанија која испоручује премиум производе у више од 10 индустрија. Послује у више од 50 земаља од 2019. године."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Serbian",
+      "translation": "О нама | Харвикс Глобал Вентурс"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Serbian",
+      "translation": "Откријте како је Harvics Global Ventures постао водећа снага у глобалној трговини у преко 40 земаља и 10 индустрија."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Serbian",
+      "translation": "Контактирајте нас | Харвикс Глобал Вентурс"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Serbian",
+      "translation": "Контактирајте канцеларије компаније Harvics широм света на Блиском истоку, у Јужној Азији, Европи, Африци и Америци."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Serbian",
+      "translation": "Производи | Харвикс Глобал Вентурс"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Serbian",
+      "translation": "Истражите Харвиксов премиум асортиман производа у области робе широке потрошње, текстила, робе широке потрошње и индустријских решења."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Serbian",
+      "translation": "Каријере | Харвикс Глобал Вентурс"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Serbian",
+      "translation": "Придружите се Harvics Global Ventures — истражите могућности у преко 40 земаља у областима робе широке потрошње, текстила, логистике и технологије."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Serbian",
+      "translation": "Медијски центар | Харвикс Глобал Вентурс"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Serbian",
+      "translation": "Харвикс медијски центар — саопштења за штампу, најновије вести, брендирани материјали и медијски контакти."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Serbian",
+      "translation": "Наша стратегија | Харвикс Глобал Вентурс"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Serbian",
+      "translation": "Харвикова стратешка визија за глобално ширење, иновације, одрживост и дигиталну трансформацију."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Serbian",
+      "translation": "Друштвена одговорност предузећа | Харвикс"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Serbian",
+      "translation": "Харвиксове иницијативе за друштвено одговорно пословање — заштита животне средине, програми заједнице и етичке пословне праксе."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Serbian",
+      "translation": "Најчешћа питања | Харвикс Глобал Вентурс"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Serbian",
+      "translation": "Често постављана питања о Харвикс производима, услугама, наручивању и глобалном пословању."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Serbian",
+      "translation": "Глобалне локације | Харвикс"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Serbian",
+      "translation": "Харвиксове канцеларије и операције широм Блиског истока, Јужне Азије, Европе, Африке и Америке."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Serbian",
+      "translation": "Руководећи тим | Харвикс"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Serbian",
+      "translation": "Упознајте руководећи тим који води Harvics Global Ventures на преко 40 тржишта и у 10 индустријских вертикала."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Serbian",
+      "translation": "Центар за помоћ | Харвикс"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Serbian",
+      "translation": "Добијте помоћ око поруџбина, рачуна, испоруке и Харвикс услуга."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Serbian",
+      "translation": "Усклађеност и етика | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Serbian",
+      "translation": "Харвиксова посвећеност усклађености са прописима, етичким пословним праксама и глобалним стандардима."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Serbian",
+      "translation": "Наша историја | Харвикс"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Serbian",
+      "translation": "Од стартапа у Дубаију 2019. године до глобалног предузећа које се простире у преко 40 земаља — прича о Харвиксу."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Serbian",
+      "translation": "Билтен | Харвикс"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Serbian",
+      "translation": "Претплатите се на Harvics билтен за увиде у индустрију и лансирање производа."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Serbian",
+      "translation": "Пријавите се | Харвикс"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Serbian",
+      "translation": "Пријавите се на свој Harvics налог да бисте управљали поруџбинама и приступили платформи."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Serbian",
+      "translation": "Истраживање и иновације | Харвикс"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Serbian",
+      "translation": "Харвиксове истраживачке иницијативе и иновативни програми покрећу нашу глобалну стратегију."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Serbian",
+      "translation": "Односи са инвеститорима | Харвикс"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Serbian",
+      "translation": "Информације за инвеститоре, финансијски извештаји и корпоративна саопштења од компаније Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Serbian",
+      "translation": "Страница није пронађена"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Serbian",
+      "translation": "404 — Страница није пронађена"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Serbian",
+      "translation": "Страница коју тражите не постоји или је премештена."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Serbian",
+      "translation": "Иди на почетну страницу"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Serbian",
+      "translation": "Назад"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Serbian",
+      "translation": "Нешто је пошло по злу"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Serbian",
+      "translation": "Нешто је пошло по злу"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Serbian",
+      "translation": "Жао нам је, али се десило нешто неочекивано. Молимо вас да покушате да освежите страницу."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Serbian",
+      "translation": "Покушај поново"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Serbian",
+      "translation": "Поново учитај страницу"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Serbian",
+      "translation": "Контактирајте подршку"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Serbian",
+      "translation": "Грешка у апликацији"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Serbian",
+      "translation": "Критична грешка"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Serbian",
+      "translation": "Дошло је до критичне грешке. Молимо вас да поново учитате страницу."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Serbian",
+      "translation": "Поново учитај апликацију"
+    }
+  }
+}

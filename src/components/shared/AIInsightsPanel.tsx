@@ -62,7 +62,7 @@ export default function AIInsightsPanel({
       
       {/* Drawer */}
       <div className="fixed right-0 top-0 h-full w-96 bg-white shadow-xl z-50 overflow-y-auto">
-        <div className="p-6 border-b border-black300 sticky top-0 bg-white">
+        <div className="p-6 border-b border-gray-200 sticky top-0 bg-white">
           <div className="flex items-center justify-between mb-2">
             <h2 className="text-xl font-bold text-black">{title}</h2>
             <button

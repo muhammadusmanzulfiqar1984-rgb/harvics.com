@@ -25,7 +25,7 @@ export default async function BrandStoryPage({ params }: BrandStoryPageProps) {
   const t = await getTranslations('about')
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       
       <div className="pt-20">
         {/* Hero Section */}

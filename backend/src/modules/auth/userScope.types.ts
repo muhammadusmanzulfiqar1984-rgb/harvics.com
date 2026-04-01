@@ -34,5 +34,6 @@ export interface UserScopeTokenPayload {
   sub: string;
   scope: UserScope;
   iat: number;
+  exp: number; // Unix timestamp (seconds) - token expiry
 }
 

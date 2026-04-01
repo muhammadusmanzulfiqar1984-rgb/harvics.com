@@ -195,6 +195,18 @@ export const CountryProvider: React.FC<{ children: React.ReactNode }> = ({ child
       const fallbackCurrency = getCurrencyData(selectedCountry)
       const countryCode = normalizeCountryCode(selectedCountry)
       
+      // If no auth token, use fallback data only — don't call authenticated endpoints
+      const token = typeof window !== 'undefined' ? localStorage.getItem('auth_token') : null
+      if (!token) {
+        setCountryData({
+          currency: fallbackCurrency,
+          countryCode,
+          countryName: selectedCountry,
+        } as any)
+        setLoading(false)
+        return
+      }
+      
       try {
         // This will be used by all components to get country-specific data
         // Currency, market data, GPS, Satellite all come from this

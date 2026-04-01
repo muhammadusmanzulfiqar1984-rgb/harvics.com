@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "uk",
+    "language": "Ukrainian",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Ukrainian. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Ukrainian",
+      "translation": "Ласкаво просимо до"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Гарвіч"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Ukrainian",
+      "translation": "Досконалість у сфері преміальних споживчих товарів з 2019 року"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Ukrainian",
+      "translation": "Провідна світова компанія з продажу споживчих товарів, що постачає преміальні харчові продукти різних категорій, що відповідають міжнародним стандартам якості."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Ukrainian",
+      "translation": "Ознайомитися з продуктами"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Ukrainian",
+      "translation": "Зв'яжіться з нами"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Ukrainian",
+      "translation": "Дізнатися більше"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Ukrainian",
+      "translation": "Досконалість у сфері преміальних споживчих товарів з"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Ukrainian",
+      "translation": "2019 рік"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Ukrainian",
+      "translation": "Лондон • Мілан • Нью-Йорк"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Ukrainian",
+      "translation": "Пекарня"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Ukrainian",
+      "translation": "Напої"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Ukrainian",
+      "translation": "Кондитерські вироби"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Ukrainian",
+      "translation": "Кулінарія"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Ukrainian",
+      "translation": "Заморожені продукти"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Ukrainian",
+      "translation": "Паста"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Ukrainian",
+      "translation": "Закуски"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Ukrainian",
+      "translation": "Звіт ESG за 2025 рік"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Ukrainian",
+      "translation": "Лондон • Мілан • Нью-Йорк"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Ukrainian",
+      "translation": "Дім"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Ukrainian",
+      "translation": "Про нас"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Ukrainian",
+      "translation": "Про нас"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Ukrainian",
+      "translation": "Історія бренду"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Ukrainian",
+      "translation": "Продукти"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Ukrainian",
+      "translation": "Наші продукти"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Ukrainian",
+      "translation": "Переглянути всі товари"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Ukrainian",
+      "translation": "КСВ"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Ukrainian",
+      "translation": "Відносини з інвесторами"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Ukrainian",
+      "translation": "Інвестори"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Ukrainian",
+      "translation": "Медіа"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Ukrainian",
+      "translation": "Зв'яжіться з нами"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Ukrainian",
+      "translation": "Будинок Харвікс"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Ukrainian",
+      "translation": "Країни"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Ukrainian",
+      "translation": "Портали"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Ukrainian",
+      "translation": "Увійти"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Ukrainian",
+      "translation": "Список бажань"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Ukrainian",
+      "translation": "Кошик для покупок"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Ukrainian",
+      "translation": "Допомога"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Ukrainian",
+      "translation": "Знайти магазин"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Ukrainian",
+      "translation": "Гроші"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Ukrainian",
+      "translation": "Продажі"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Ukrainian",
+      "translation": "Пропозиції"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Ukrainian",
+      "translation": "Темний режим"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Ukrainian",
+      "translation": "Кредитна картка"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Ukrainian",
+      "translation": "Кредитна картка винагород M&S"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Ukrainian",
+      "translation": "Клубні винагороди"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Ukrainian",
+      "translation": "Наші кредитні картки"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Ukrainian",
+      "translation": "Страхування"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Ukrainian",
+      "translation": "Страхування житла"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Ukrainian",
+      "translation": "Страхування подорожей"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Ukrainian",
+      "translation": "Туристичні послуги"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Ukrainian",
+      "translation": "Гроші на подорожі"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Ukrainian",
+      "translation": "Обмінні курси"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Ukrainian",
+      "translation": "Додаткові послуги"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Ukrainian",
+      "translation": "Заощадження та інвестування"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Ukrainian",
+      "translation": "Особисті позики"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Ukrainian",
+      "translation": "Фінансова підтримка"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Ukrainian",
+      "translation": "Поточні продажі"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Ukrainian",
+      "translation": "Розпродаж"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Ukrainian",
+      "translation": "Сезонні розпродажі"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Ukrainian",
+      "translation": "Спеціальні пропозиції"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Ukrainian",
+      "translation": "Акції"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Ukrainian",
+      "translation": "Знижки на оптові замовлення"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Ukrainian",
+      "translation": "Наші продукти"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Ukrainian",
+      "translation": "Переглянути всі товари"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Ukrainian",
+      "translation": "Категорії наших продуктів"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Ukrainian",
+      "translation": "Відкрийте для себе наш преміальний асортимент продукції, виготовленої з турботою та досконалістю."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Ukrainian",
+      "translation": "Рівень 1: Категорії"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Ukrainian",
+      "translation": "Рівень 2: Модулі"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Ukrainian",
+      "translation": "Рівень 3: Екрани KPI"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Ukrainian",
+      "translation": "Рівень 4: Дії"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Ukrainian",
+      "translation": "Скинути навігацію"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Ukrainian",
+      "translation": "Для цієї категорії немає підкатегорій."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Ukrainian",
+      "translation": "Продукти"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Ukrainian",
+      "translation": "Підкатегорії"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Ukrainian",
+      "translation": "Пекарня"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Ukrainian",
+      "translation": "Свіжовипічка та тістечка."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Ukrainian",
+      "translation": "Напої"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Ukrainian",
+      "translation": "Освіжаючі напої для будь-якої нагоди."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Ukrainian",
+      "translation": "Кондитерські вироби"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Ukrainian",
+      "translation": "Солодкі ласощі та смаколики."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Ukrainian",
+      "translation": "Кулінарія"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Ukrainian",
+      "translation": "Незамінні інгредієнти для вашої кухні."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Ukrainian",
+      "translation": "Заморожені продукти"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Ukrainian",
+      "translation": "Зручні та смачні заморожені страви."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Ukrainian",
+      "translation": "Паста"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Ukrainian",
+      "translation": "Автентичні різновиди пасти."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Ukrainian",
+      "translation": "Закуски"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Ukrainian",
+      "translation": "Смачні перекуси на будь-який час доби."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Про Харвікс"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Ukrainian",
+      "translation": "Досконалість у сфері преміальних споживчих товарів з 2019 року"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Ukrainian",
+      "translation": "Наша історія"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Ukrainian",
+      "translation": "Заснована у 2019 році, компанія Harvics перетворилася з далекоглядної ідеї на світового лідера у виробництві преміальних споживчих товарів. Наш шлях визначається невпинним прагненням до якості та відданістю інноваціям."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Ukrainian",
+      "translation": "Ми працюємо у понад 40 країнах, пропонуючи продукти, які збагачують життя та встановлюють нові стандарти в галузі. Від наших скромних початків до нашої глобальної присутності наші цінності залишаються незмінними."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Ukrainian",
+      "translation": "Орієнтовно 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Ukrainian",
+      "translation": "40+ країн"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Ukrainian",
+      "translation": "6 лінійок продуктів"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Ukrainian",
+      "translation": "Корпоративна соціальна відповідальність"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Ukrainian",
+      "translation": "У Harvics ми прагнемо позитивно впливати на світ. Наші ініціативи у сфері корпоративної соціальної відповідальності зосереджені на сталому розвитку, розширенні можливостей громад та етичних практиках ведення бізнесу."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Ukrainian",
+      "translation": "Роки впливу"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Ukrainian",
+      "translation": "Охоплені країни"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Ukrainian",
+      "translation": "Доторкнулися до життів"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Ukrainian",
+      "translation": "Наші ключові ініціативи"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Ukrainian",
+      "translation": "Ми зосереджуємося на чотирьох основних напрямках для стимулювання сталих змін та створення спільних цінностей для всіх зацікавлених сторін."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Ukrainian",
+      "translation": "Сталий розвиток"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Ukrainian",
+      "translation": "Зменшення нашого впливу на навколишнє середовище за рахунок відновлюваної енергії та скорочення відходів."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Ukrainian",
+      "translation": "Відновлювана енергія"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Ukrainian",
+      "translation": "Відходи перенаправлені"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Ukrainian",
+      "translation": "Скорочення викидів вуглецю"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Ukrainian",
+      "translation": "Підтримка громади"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Ukrainian",
+      "translation": "Розширення можливостей місцевих громад через освіту, охорону здоров'я та економічний розвиток."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Ukrainian",
+      "translation": "Підтримувані сім'ї"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Ukrainian",
+      "translation": "Активні програми"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Ukrainian",
+      "translation": "Волонтери"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Ukrainian",
+      "translation": "Освіта"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Ukrainian",
+      "translation": "Забезпечення доступу до якісної освіти та стипендій для студентів з малозабезпечених сімей."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Ukrainian",
+      "translation": "Стипендії"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Ukrainian",
+      "translation": "Школи-партнери"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Ukrainian",
+      "translation": "Студенти, на яких вплинуло"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Ukrainian",
+      "translation": "Здоров'я та благополуччя"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Ukrainian",
+      "translation": "Покращення доступу до медичного обслуговування та харчування в недостатньо обслуговуваних регіонах."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Ukrainian",
+      "translation": "Кампанії охорони здоров'я"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Ukrainian",
+      "translation": "Обслуговувані люди"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Ukrainian",
+      "translation": "Мобільні клініки"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Ukrainian",
+      "translation": "Найкраща ініціатива КСВ"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Ukrainian",
+      "translation": "Відзначено за наш інноваційний підхід до соціальної відповідальності."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Ukrainian",
+      "translation": "Чемпіон громади"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Ukrainian",
+      "translation": "Нагороджено за наші масштабні програми роботи з громадою."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Ukrainian",
+      "translation": "Глобальна нагорода за сталий розвиток"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Ukrainian",
+      "translation": "Визнано за нашу відданість вуглецевій нейтральності."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Ukrainian",
+      "translation": "Наш вплив"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Ukrainian",
+      "translation": "Визнаючи наші віхи у створенні кращого світу."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Ukrainian",
+      "translation": "Приєднуйтесь до нас, щоб змінити світ на краще"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Ukrainian",
+      "translation": "Станьте нашим партнером або дізнайтеся більше про те, як ми будуємо стале майбутнє."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Ukrainian",
+      "translation": "Зв'яжіться з командою КСВ"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Ukrainian",
+      "translation": "Дізнатися більше"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Ukrainian",
+      "translation": "Зв'яжіться з нами"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Ukrainian",
+      "translation": "Ми будемо раді почути вашу думку. Зв'яжіться з нами будь-яким із цих каналів."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Ukrainian",
+      "translation": "Телефон"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Ukrainian",
+      "translation": "Електронна пошта"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Ukrainian",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Ukrainian",
+      "translation": "Зателефонуйте зараз"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Ukrainian",
+      "translation": "Надіслати електронного листа"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Ukrainian",
+      "translation": "Напишіть нам"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Ukrainian",
+      "translation": "Медіацентр"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Медіацентр | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Ukrainian",
+      "translation": "Прес-ресурси, рекламні матеріали бренду та останні новини від Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Ukrainian",
+      "translation": "Корпоративний"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Ukrainian",
+      "translation": "Новини та прес-релізи"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Ukrainian",
+      "translation": "Останні оголошення, розширення ринку, запуски продуктів та корпоративні новини від Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Ukrainian",
+      "translation": "Читайте останні новини"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Ukrainian",
+      "translation": "Галерея зображень"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Ukrainian",
+      "translation": "Фірмові матеріали високої роздільної здатності, фотографії продуктів, зображення об'єктів та висвітлення подій для використання в ЗМІ."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Ukrainian",
+      "translation": "Переглянути галерею"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Ukrainian",
+      "translation": "Контакти для ЗМІ"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Ukrainian",
+      "translation": "Звертайтеся до нашої команди комунікацій щодо запитів преси, запитів на інтерв'ю та оголошень про партнерство."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Ukrainian",
+      "translation": "Зв'язатися з прес-службою"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Ukrainian",
+      "translation": "Охоплені ринки"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Ukrainian",
+      "translation": "Галузеві вертикалі"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Ukrainian",
+      "translation": "Заснована в Дубаї"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Ukrainian",
+      "translation": "Підтримувані мови"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Ukrainian",
+      "translation": "Останні заголовки"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Ukrainian",
+      "translation": "Harvics розширює свою діяльність у сфері товарів швидкого попиту на 5 нових ринків Південно-Східної Азії"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Ukrainian",
+      "translation": "Запущено нову платформу ланцюга поставок на базі штучного інтелекту для глобальної дистрибуції"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Ukrainian",
+      "translation": "Harvics досягає вуглецево-нейтрального етапу на всіх об'єктах"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Ukrainian",
+      "translation": "Стратегічне партнерство з провідними виробниками текстилю в Південній Азії"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Ukrainian",
+      "translation": "Будинок Харвікс"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Ukrainian",
+      "translation": "Спадщина досконалості та традицій"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Ukrainian",
+      "translation": "Ласкаво просимо до будинку Харвікс"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Ukrainian",
+      "translation": "Harvics House є вершиною нашої відданості якості та спадщині. Тут ми зібрали найкращий вибір наших преміальних продуктів, представлених в середовищі, яке відображає наші цінності елегантності, традицій та інновацій."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Ukrainian",
+      "translation": "Ознайомтеся з нашими ексклюзивними колекціями та дізнайтеся історію кожного продукту, що носить ім'я Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Ukrainian",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Ukrainian",
+      "translation": "Досконалість у сфері преміальних споживчих товарів з 2019 року"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Ukrainian",
+      "translation": "Провідна світова компанія з продажу споживчих товарів, що постачає преміальні харчові продукти різних категорій, що відповідають міжнародним стандартам якості."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Ukrainian",
+      "translation": "Лондон • Мілан • Нью-Йорк"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Ukrainian",
+      "translation": "З 2019 року"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Ukrainian",
+      "translation": "Новини Харвікса"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Ukrainian",
+      "translation": "Підпишіться, щоб отримувати сповіщення та оновлення"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Ukrainian",
+      "translation": "Зареєструватися"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Ukrainian",
+      "translation": "Проблеми дотримання вимог"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Ukrainian",
+      "translation": "Висловлюйте свої занепокоєння щодо дотримання вимог або етики"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Ukrainian",
+      "translation": "Висловлюйтесь"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Ukrainian",
+      "translation": "Зв'яжіться з нами"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Ukrainian",
+      "translation": "Зв'яжіться з нашою командою"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Ukrainian",
+      "translation": "Зв'яжіться з нами"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Ukrainian",
+      "translation": "Корисні посилання"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Запитайте Гарвіча"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Ukrainian",
+      "translation": "Пошук вакансій"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Ukrainian",
+      "translation": "Підпишіться на новини"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Ukrainian",
+      "translation": "Компанія"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Ukrainian",
+      "translation": "Глобальні адреси"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Ukrainian",
+      "translation": "Стратегія"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Ukrainian",
+      "translation": "Наше лідерство"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Ukrainian",
+      "translation": "Бренди від А до Я"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Ukrainian",
+      "translation": "Наша історія"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Ukrainian",
+      "translation": "Сталий розвиток"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Ukrainian",
+      "translation": "Новини"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Ukrainian",
+      "translation": "Контакти для ЗМІ"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Ukrainian",
+      "translation": "Зображення"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Ukrainian",
+      "translation": "Інвестори"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Ukrainian",
+      "translation": "Корпоративне управління"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Ukrainian",
+      "translation": "Акції, АДР та облігації"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Ukrainian",
+      "translation": "Публікації"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Ukrainian",
+      "translation": "Слідкуйте за нами"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Ukrainian",
+      "translation": "0 проблем"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Ukrainian",
+      "translation": "Мапа сайту"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Ukrainian",
+      "translation": "Скасувати підписку"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Ukrainian",
+      "translation": "Допомога"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Ukrainian",
+      "translation": "Конфіденційність"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Ukrainian",
+      "translation": "Файли cookie"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Ukrainian",
+      "translation": "Умови використання"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Ukrainian",
+      "translation": "Доступність"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Ukrainian",
+      "translation": "Вуглецева ефективність"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Ukrainian",
+      "translation": "Постачальники"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Ukrainian",
+      "translation": "Соціальні мережі"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Ukrainian",
+      "translation": "Налаштування файлів cookie"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Ukrainian",
+      "translation": "Преміальна якість"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Ukrainian",
+      "translation": "Адреса електронної пошти"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Ukrainian",
+      "translation": "Введіть свою адресу електронної пошти"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Ukrainian",
+      "translation": "Підписатися"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Ukrainian",
+      "translation": "Підписка..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Ukrainian",
+      "translation": "Про нас"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Ukrainian",
+      "translation": "Медіа"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Ukrainian",
+      "translation": "Пошук товарів, брендів або категорій"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Ukrainian",
+      "translation": "Результатів не знайдено"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Ukrainian",
+      "translation": "Пошук..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Ukrainian",
+      "translation": "Результати"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Ukrainian",
+      "translation": "Зв'яжіться з нами"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Ukrainian",
+      "translation": "Введіть своє повідомлення..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Ukrainian",
+      "translation": "Надіслати"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Ukrainian",
+      "translation": "Закрити"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Ukrainian",
+      "translation": "Привіт! Чим я можу вам допомогти сьогодні?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Ukrainian",
+      "translation": "Вибачте, я не зрозумів. Чи не могли б ви перефразувати?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Ukrainian",
+      "translation": "Я можу допомогти вам з інформацією про продукти, замовленнями або загальними запитами. Що б ви хотіли знати?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Ukrainian",
+      "translation": "Щоб отримати додаткову допомогу, зв’яжіться з нами за адресою support@harvics.com або зателефонуйте за номером +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Ukrainian",
+      "translation": "Зв'яжіться з нами"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Ukrainian",
+      "translation": "Завантаження..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Ukrainian",
+      "translation": "Помилка"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Ukrainian",
+      "translation": "Успіх"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Ukrainian",
+      "translation": "Зберегти"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Ukrainian",
+      "translation": "Скасувати"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Ukrainian",
+      "translation": "Видалити"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Ukrainian",
+      "translation": "Редагувати"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Ukrainian",
+      "translation": "Переглянути"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Ukrainian",
+      "translation": "Надіслати"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Ukrainian",
+      "translation": "Пошук"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Ukrainian",
+      "translation": "Фільтр"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Ukrainian",
+      "translation": "Очистити"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Ukrainian",
+      "translation": "Завантажити"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Ukrainian",
+      "translation": "Завантажити"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Ukrainian",
+      "translation": "Так"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Ukrainian",
+      "translation": "Ні"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Ukrainian",
+      "translation": "Закрити"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Ukrainian",
+      "translation": "Назад"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Ukrainian",
+      "translation": "Далі"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Ukrainian",
+      "translation": "Попередній"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Ukrainian",
+      "translation": "Дії"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Ukrainian",
+      "translation": "Статус"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Ukrainian",
+      "translation": "Дата"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Ukrainian",
+      "translation": "Ім'я"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Ukrainian",
+      "translation": "Електронна пошта"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Ukrainian",
+      "translation": "Телефон"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Ukrainian",
+      "translation": "Адреса"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Ukrainian",
+      "translation": "Країна"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Ukrainian",
+      "translation": "Місто"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Ukrainian",
+      "translation": "Усі"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Ukrainian",
+      "translation": "Жоден"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Ukrainian",
+      "translation": "Виберіть"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Ukrainian",
+      "translation": "Виберіть мову"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Ukrainian",
+      "translation": "Виберіть країну"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Ukrainian",
+      "translation": "Показати більше"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Ukrainian",
+      "translation": "Показати менше"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Ukrainian",
+      "translation": "Обов'язково"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Ukrainian",
+      "translation": "Меню"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Ukrainian",
+      "translation": "Переглянути товари"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Ukrainian",
+      "translation": "Відтворити музику"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Ukrainian",
+      "translation": "Призупинити музику"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Ukrainian",
+      "translation": "Вимкнути музику"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Ukrainian",
+      "translation": "Увімкнути музику"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Ukrainian",
+      "translation": "Наш глобальний охоплення"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Ukrainian",
+      "translation": "З"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Ukrainian",
+      "translation": "Великий ринок"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Ukrainian",
+      "translation": "Основні ринки"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Ukrainian",
+      "translation": "Присутність"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Ukrainian",
+      "translation": "Країни обслуговування"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Ukrainian",
+      "translation": "Основні ринки"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Ukrainian",
+      "translation": "Категорії продуктів"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Ukrainian",
+      "translation": "Засновано"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Ukrainian",
+      "translation": "Ієрархія території"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Ukrainian",
+      "translation": "Повний шлях"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Ukrainian",
+      "translation": "Поточна територія"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Ukrainian",
+      "translation": "Немає товарів"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Ukrainian",
+      "translation": "Глобус"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Ukrainian",
+      "translation": "Континент"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Ukrainian",
+      "translation": "Регіон"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Ukrainian",
+      "translation": "Країна"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Ukrainian",
+      "translation": "Місто"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Ukrainian",
+      "translation": "Район"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Ukrainian",
+      "translation": "Розташування"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Ukrainian",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Ukrainian",
+      "translation": "Глобальний"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Ukrainian",
+      "translation": "Виберіть регіон"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Ukrainian",
+      "translation": "Відомості про клієнта"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Ukrainian",
+      "translation": "Вибрано"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Ukrainian",
+      "translation": "Повне ім'я"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Ukrainian",
+      "translation": "Введіть своє повне ім'я"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Ukrainian",
+      "translation": "Ім'я обов'язкове"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Ukrainian",
+      "translation": "Адреса електронної пошти"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Ukrainian",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Ukrainian",
+      "translation": "Потрібно вказати електронну пошту"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Ukrainian",
+      "translation": "Будь ласка, введіть дійсну адресу електронної пошти"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Ukrainian",
+      "translation": "Номер телефону"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Ukrainian",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Ukrainian",
+      "translation": "Номер телефону обов'язковий"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Ukrainian",
+      "translation": "Адреса"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Ukrainian",
+      "translation": "Ваша адреса"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Ukrainian",
+      "translation": "Адреса обов'язкова"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Ukrainian",
+      "translation": "Я погоджуюся отримувати маркетингові повідомлення та оновлення"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Ukrainian",
+      "translation": "Надіслати та продовжити"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Ukrainian",
+      "translation": "Надсилання..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Ukrainian",
+      "translation": "Пропустити та продовжити"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Ukrainian",
+      "translation": "Ключові показники ефективності"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Ukrainian",
+      "translation": "Замовлення сьогодні"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Ukrainian",
+      "translation": "Надіслано через Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Ukrainian",
+      "translation": "Очікуються доставки"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Ukrainian",
+      "translation": "За призначеними маршрутами"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Ukrainian",
+      "translation": "Роздрібні торговці"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Ukrainian",
+      "translation": "Активні торгові точки в охопленні"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Ukrainian",
+      "translation": "Оцінка T & A"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Ukrainian",
+      "translation": "Територіальне покриття"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Ukrainian",
+      "translation": "Фінанси та інвентаризація"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Ukrainian",
+      "translation": "Артикули з низьким рівнем запасів"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Ukrainian",
+      "translation": "Поповнення активатора"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Ukrainian",
+      "translation": "Неоплачені рахунки-фактури"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Ukrainian",
+      "translation": "Термін стягнення"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Ukrainian",
+      "translation": "Кредитний ліміт"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Ukrainian",
+      "translation": "Призначено фінансовим відділом"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Ukrainian",
+      "translation": "Увімкнено автоматичне затвердження, поповнення запасів та нагадування про рахунки-фактури"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Ukrainian",
+      "translation": "Самосхвалення"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Ukrainian",
+      "translation": "Поповнення запасів"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Ukrainian",
+      "translation": "Нагадування про рахунки-фактури"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Ukrainian",
+      "translation": "Рекомендації ШІ"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Ukrainian",
+      "translation": "Рівень ризику"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Ukrainian",
+      "translation": "На основі використання кредиту та історії платежів"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Ukrainian",
+      "translation": "Рекомендований порядок"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Ukrainian",
+      "translation": "Артикули, рекомендовані штучним інтелектом, для замовлення"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Ukrainian",
+      "translation": "Наступна дія"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Ukrainian",
+      "translation": "Дії та вказівки"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Ukrainian",
+      "translation": "Скарги"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Ukrainian",
+      "translation": "Проблеми з роздрібним продавцем, що очікують вирішення"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Ukrainian",
+      "translation": "Посібник"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Ukrainian",
+      "translation": "Надайте пріоритет доставкам, що очікують на добу до полудня."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Ukrainian",
+      "translation": "Закрити всі нерозглянуті скарги протягом 48 годин."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Ukrainian",
+      "translation": "Активувати поповнення запасів для товарних позицій з низьким рівнем запасів (автоматичне створення замовлення на придбання)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Ukrainian",
+      "translation": "Територія"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Ukrainian",
+      "translation": "Замовлення цього місяця"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Ukrainian",
+      "translation": "Відкладені ордери"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Ukrainian",
+      "translation": "Доставлені замовлення"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Ukrainian",
+      "translation": "Інформація про територію"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Ukrainian",
+      "translation": "Країна"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Ukrainian",
+      "translation": "Місто"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Ukrainian",
+      "translation": "Регіон"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Ukrainian",
+      "translation": "Швидкі дії"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Ukrainian",
+      "translation": "Новий порядок"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Ukrainian",
+      "translation": "Переглянути замовлення"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Ukrainian",
+      "translation": "Переглянути рахунки-фактури"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Ukrainian",
+      "translation": "Налаштування профілю"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Ukrainian",
+      "translation": "Завантаження панелі інструментів..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Ukrainian",
+      "translation": "Помилка"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Ukrainian",
+      "translation": "Мої замовлення"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Ukrainian",
+      "translation": "Ідентифікатор замовлення"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Ukrainian",
+      "translation": "Дата"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Ukrainian",
+      "translation": "Статус"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Ukrainian",
+      "translation": "Елементи"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Ukrainian",
+      "translation": "Загальна сума"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Ukrainian",
+      "translation": "Дії"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Ukrainian",
+      "translation": "Переглянути деталі"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Ukrainian",
+      "translation": "Статус"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Ukrainian",
+      "translation": "Дата початку"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Ukrainian",
+      "translation": "Дата завершення"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Ukrainian",
+      "translation": "Усі статуси"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Ukrainian",
+      "translation": "Очистити фільтри"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Ukrainian",
+      "translation": "Очікує на розгляд"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Ukrainian",
+      "translation": "Обробка"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Ukrainian",
+      "translation": "Доставлено"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Ukrainian",
+      "translation": "Скасовано"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Ukrainian",
+      "translation": "Замовлень не знайдено"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Ukrainian",
+      "translation": "Завантаження замовлень..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Ukrainian",
+      "translation": "Сторінка"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Ukrainian",
+      "translation": "з"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Ukrainian",
+      "translation": "Попередній"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Ukrainian",
+      "translation": "Далі"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Ukrainian",
+      "translation": "Деталі замовлення"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Ukrainian",
+      "translation": "Назад до замовлень"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Ukrainian",
+      "translation": "Ідентифікатор замовлення"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Ukrainian",
+      "translation": "Статус"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Ukrainian",
+      "translation": "Дата замовлення"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Ukrainian",
+      "translation": "Дата доставки"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Ukrainian",
+      "translation": "Адреса доставки"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Ukrainian",
+      "translation": "Нотатки"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Ukrainian",
+      "translation": "Товари замовлення"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Ukrainian",
+      "translation": "Продукт"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Ukrainian",
+      "translation": "Артикул"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Ukrainian",
+      "translation": "Кількість"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Ukrainian",
+      "translation": "Ціна за одиницю"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Ukrainian",
+      "translation": "Всього"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Ukrainian",
+      "translation": "Загальна сума"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Ukrainian",
+      "translation": "Хронологія стану"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Ukrainian",
+      "translation": "Замовлення не знайдено"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Ukrainian",
+      "translation": "Створити нове замовлення"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Ukrainian",
+      "translation": "Товари замовлення"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Ukrainian",
+      "translation": "Додати елемент"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Ukrainian",
+      "translation": "Ще не додано жодного елемента. Натисніть «Додати елемент», щоб розпочати."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Ukrainian",
+      "translation": "Деталі замовлення"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Ukrainian",
+      "translation": "Дата доставки"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Ukrainian",
+      "translation": "Адреса доставки"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Ukrainian",
+      "translation": "Нотатки"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Ukrainian",
+      "translation": "Загальна сума"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Ukrainian",
+      "translation": "Створити замовлення"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Ukrainian",
+      "translation": "Створення замовлення..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Ukrainian",
+      "translation": "Скасувати"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Ukrainian",
+      "translation": "Виберіть продукт"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Ukrainian",
+      "translation": "Продукт"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Ukrainian",
+      "translation": "Кількість"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Ukrainian",
+      "translation": "Ціна за одиницю"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Ukrainian",
+      "translation": "Видалити"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Ukrainian",
+      "translation": "Проміжний підсумок"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Ukrainian",
+      "translation": "Ідентифікатор замовлення"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Ukrainian",
+      "translation": "Потрібно вказати принаймні один елемент замовлення"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Ukrainian",
+      "translation": "Продукт обов'язковий"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Ukrainian",
+      "translation": "Кількість має бути більшою за 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Ukrainian",
+      "translation": "Ціна за одиницю має бути невід'ємною"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Ukrainian",
+      "translation": "Недійсний формат дати доставки"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Ukrainian",
+      "translation": "Дата доставки не може бути в минулому"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Ukrainian",
+      "translation": "Мої рахунки-фактури"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Ukrainian",
+      "translation": "Номер рахунку-фактури"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Ukrainian",
+      "translation": "Дата рахунку-фактури"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Ukrainian",
+      "translation": "Два побачення"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Ukrainian",
+      "translation": "Сума"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Ukrainian",
+      "translation": "Сплачена сума"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Ukrainian",
+      "translation": "Статус платежу"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Ukrainian",
+      "translation": "Статус платежу"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Ukrainian",
+      "translation": "Усі статуси"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Ukrainian",
+      "translation": "Очистити фільтри"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Ukrainian",
+      "translation": "Платно"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Ukrainian",
+      "translation": "Неоплачено"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Ukrainian",
+      "translation": "Часткове"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Ukrainian",
+      "translation": "Рахунки-фактури не знайдено"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Ukrainian",
+      "translation": "Завантаження рахунків-фактур..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Ukrainian",
+      "translation": "Мій профіль"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Ukrainian",
+      "translation": "Інформація про обліковий запис"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Ukrainian",
+      "translation": "Ідентифікатор дистриб'ютора"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Ukrainian",
+      "translation": "Територія"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Ukrainian",
+      "translation": "Країна"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Ukrainian",
+      "translation": "Місто"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Ukrainian",
+      "translation": "Обліковий запис створено"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Ukrainian",
+      "translation": "Оновити профіль"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Ukrainian",
+      "translation": "Ім'я"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Ukrainian",
+      "translation": "Електронна пошта"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Ukrainian",
+      "translation": "Телефон"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Ukrainian",
+      "translation": "Адреса"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Ukrainian",
+      "translation": "Мова"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Ukrainian",
+      "translation": "Валюта"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Ukrainian",
+      "translation": "Зберегти зміни"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Ukrainian",
+      "translation": "Збереження..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Ukrainian",
+      "translation": "Профіль успішно оновлено"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Ukrainian",
+      "translation": "Завантаження профілю..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Ukrainian",
+      "translation": "Недійсний формат електронної пошти"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Ukrainian",
+      "translation": "Недійсний формат телефону"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Ukrainian",
+      "translation": "Помилка"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Ukrainian",
+      "translation": "Завантаження..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Ukrainian",
+      "translation": "Зберегти"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Ukrainian",
+      "translation": "Скасувати"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Ukrainian",
+      "translation": "Назад"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Ukrainian",
+      "translation": "Надіслати"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Ukrainian",
+      "translation": "Видалити"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Ukrainian",
+      "translation": "Редагувати"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Ukrainian",
+      "translation": "Переглянути"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Ukrainian",
+      "translation": "Пошук"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Ukrainian",
+      "translation": "Фільтр"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Ukrainian",
+      "translation": "Очистити"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Ukrainian",
+      "translation": "Застосувати"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Ukrainian",
+      "translation": "Закрити"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Ukrainian",
+      "translation": "Підтвердити"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Ukrainian",
+      "translation": "Так"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Ukrainian",
+      "translation": "Ні"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Ukrainian",
+      "translation": "Юридична операційна система"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Ukrainian",
+      "translation": "Юридична ОС"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Ukrainian",
+      "translation": "Доступ заборонено"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Ukrainian",
+      "translation": "У вас немає дозволу на доступ до модуля Legal OS."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Ukrainian",
+      "translation": "Інформаційна панель"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Ukrainian",
+      "translation": "Контракти"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Ukrainian",
+      "translation": "Сертифікати"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Ukrainian",
+      "translation": "Відповідність"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Ukrainian",
+      "translation": "Юридична панель інструментів"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Ukrainian",
+      "translation": "Огляд юридичних операцій та статусу відповідності"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Ukrainian",
+      "translation": "Активні торгові марки"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Ukrainian",
+      "translation": "Активні контракти"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Ukrainian",
+      "translation": "Статус відповідності"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Ukrainian",
+      "translation": "Торгові марки"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Ukrainian",
+      "translation": "Керування реєстрацією та заявками на торговельні марки"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Ukrainian",
+      "translation": "Додати нову торгову марку"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Ukrainian",
+      "translation": "Країна"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Ukrainian",
+      "translation": "Статус"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Ukrainian",
+      "translation": "Усі країни"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Ukrainian",
+      "translation": "Усі статуси"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Ukrainian",
+      "translation": "Очистити фільтри"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Ukrainian",
+      "translation": "Назва бренду"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Ukrainian",
+      "translation": "Клас"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Ukrainian",
+      "translation": "Країна"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Ukrainian",
+      "translation": "Номер заявки"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Ukrainian",
+      "translation": "Статус"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Ukrainian",
+      "translation": "Термін дії"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Ukrainian",
+      "translation": "Дії"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Ukrainian",
+      "translation": "Редагувати торговельну марку"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Ukrainian",
+      "translation": "Додати нову торгову марку"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Ukrainian",
+      "translation": "Переглянути торговельну марку"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Ukrainian",
+      "translation": "Назва бренду"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Ukrainian",
+      "translation": "Номер класу"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Ukrainian",
+      "translation": "Країна"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Ukrainian",
+      "translation": "Номер заявки"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Ukrainian",
+      "translation": "Статус"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Ukrainian",
+      "translation": "Термін дії"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Ukrainian",
+      "translation": "Документи"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Ukrainian",
+      "translation": "Документів не додано"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Ukrainian",
+      "translation": "Додати документ"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Ukrainian",
+      "translation": "Видалити"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Ukrainian",
+      "translation": "Не вдалося завантажити торговельні марки"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Ukrainian",
+      "translation": "Не вдалося зберегти торговельну марку. Спробуйте ще раз."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Ukrainian",
+      "translation": "Судові справи"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Ukrainian",
+      "translation": "Ведення юридичних справ та відстеження їхнього статусу"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Ukrainian",
+      "translation": "Нова справа"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Ukrainian",
+      "translation": "Назва справи"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Ukrainian",
+      "translation": "Тип корпусу"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Ukrainian",
+      "translation": "Країна"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Ukrainian",
+      "translation": "Опис"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Ukrainian",
+      "translation": "Призначено"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Ukrainian",
+      "translation": "Статус"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Ukrainian",
+      "translation": "Дата слухання"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Ukrainian",
+      "translation": "Назва справи"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Ukrainian",
+      "translation": "Тип"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Ukrainian",
+      "translation": "Країна"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Ukrainian",
+      "translation": "Призначено"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Ukrainian",
+      "translation": "Статус"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Ukrainian",
+      "translation": "Дата слухання"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Ukrainian",
+      "translation": "Дії"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Ukrainian",
+      "translation": "ВІДЧИНЕНО"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Ukrainian",
+      "translation": "У процесі"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Ukrainian",
+      "translation": "ЗАЧИНЕНО"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Ukrainian",
+      "translation": "Скасовано"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Ukrainian",
+      "translation": "Перегляд карти автопарку"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Ukrainian",
+      "translation": "Відстеження торгових представників та транспортних засобів доставки в режимі реального часу"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Ukrainian",
+      "translation": "Активні співробітники"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Ukrainian",
+      "translation": "Немає активних співробітників"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Ukrainian",
+      "translation": "Завантаження..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Ukrainian",
+      "translation": "Повторення маршруту"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Ukrainian",
+      "translation": "Працівник"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Ukrainian",
+      "translation": "Швидкість"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Ukrainian",
+      "translation": "Скинути"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Ukrainian",
+      "translation": "Грати"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Ukrainian",
+      "translation": "Пауза"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Ukrainian",
+      "translation": "бали"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Ukrainian",
+      "translation": "Дані маршруту недоступні"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Ukrainian",
+      "translation": "Завантаження маршруту..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Ukrainian",
+      "translation": "Продукти конкурентів"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Ukrainian",
+      "translation": "Відстежуйте інформацію про продукти конкурентів"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Ukrainian",
+      "translation": "Додати продукт"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Ukrainian",
+      "translation": "Додати продукт конкурента"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Ukrainian",
+      "translation": "Бренд"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Ukrainian",
+      "translation": "Назва артикула"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Ukrainian",
+      "translation": "Категорія"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Ukrainian",
+      "translation": "Розмір"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Ukrainian",
+      "translation": "Ціна"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Ukrainian",
+      "translation": "Валюта"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Ukrainian",
+      "translation": "Країна"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Ukrainian",
+      "translation": "Бренд"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Ukrainian",
+      "translation": "Назва артикула"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Ukrainian",
+      "translation": "Категорія"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Ukrainian",
+      "translation": "Розмір"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Ukrainian",
+      "translation": "Ціна"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Ukrainian",
+      "translation": "Країна"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Ukrainian",
+      "translation": "Дата додавання"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Ukrainian",
+      "translation": "Не вдалося завантажити товари"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Ukrainian",
+      "translation": "Не вдалося створити продукт. Спробуйте ще раз."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Ukrainian",
+      "translation": "Конкурентів не знайдено"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Ukrainian",
+      "translation": "Завантаження товарів..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Ukrainian",
+      "translation": "Панель керування конкурентами"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Ukrainian",
+      "translation": "Аналітика та висновки щодо продуктів конкурентів"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Ukrainian",
+      "translation": "Всього товарів"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Ukrainian",
+      "translation": "Відстежувані бренди"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Ukrainian",
+      "translation": "Країни"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Ukrainian",
+      "translation": "Категорії"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Ukrainian",
+      "translation": "Продукти за брендом"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Ukrainian",
+      "translation": "Продукти за країною"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Ukrainian",
+      "translation": "Продукти за категоріями"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Ukrainian",
+      "translation": "Завантаження статистики..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Ukrainian",
+      "translation": "Статистика недоступна"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Ukrainian",
+      "translation": "Огляд"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Ukrainian",
+      "translation": "Замовлення"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Ukrainian",
+      "translation": "Інвентаризація"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Ukrainian",
+      "translation": "Логістика"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Ukrainian",
+      "translation": "Фінанси"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Ukrainian",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Ukrainian",
+      "translation": "HR"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Ukrainian",
+      "translation": "Виконавчий директор"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Ukrainian",
+      "translation": "Інвестор"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Ukrainian",
+      "translation": "Юридичні питання/Права інтелектуальної власності"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Ukrainian",
+      "translation": "Конкурент"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Ukrainian",
+      "translation": "Імпорт/Експорт"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Ukrainian",
+      "translation": "GPS-відстеження"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Ukrainian",
+      "translation": "Локалізація"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Ukrainian",
+      "translation": "Робочі процеси"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Ukrainian",
+      "translation": "Адміністратор"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Ukrainian",
+      "translation": "CRM-ОС"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Ukrainian",
+      "translation": "Клієнт 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Ukrainian",
+      "translation": "Повні профілі клієнтів, історія взаємодії та управління взаємовідносинами"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Ukrainian",
+      "translation": "Цифрові кампанії"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Ukrainian",
+      "translation": "Багатоканальні маркетингові кампанії (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Ukrainian",
+      "translation": "Ліди та можливості"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Ukrainian",
+      "translation": "Управління лідами, кваліфікація та воронка можливостей"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Ukrainian",
+      "translation": "Підтримка клієнтів"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Ukrainian",
+      "translation": "Управління заявками, обслуговування клієнтів та вирішення проблем"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Ukrainian",
+      "translation": "Програми лояльності"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Ukrainian",
+      "translation": "Управління лояльністю, гейміфікацією та винагородами для роздрібних торговців"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Ukrainian",
+      "translation": "Клієнт 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Ukrainian",
+      "translation": "Новий клієнт"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Ukrainian",
+      "translation": "Загальна кількість клієнтів"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Ukrainian",
+      "translation": "Активний"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Ukrainian",
+      "translation": "Новий"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Ukrainian",
+      "translation": "Задоволення"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Ukrainian",
+      "translation": "Управління клієнтами"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Ukrainian",
+      "translation": "Переглядайте та керуйте відносинами з клієнтами, взаємодіями та кампаніями."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Ukrainian",
+      "translation": "Завантаження..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Ukrainian",
+      "translation": "Помилка завантаження даних CRM"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Ukrainian",
+      "translation": "Огляд"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Ukrainian",
+      "translation": "Замовлення"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Ukrainian",
+      "translation": "Інвентаризація"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Ukrainian",
+      "translation": "Логістика"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Ukrainian",
+      "translation": "Фінанси"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Ukrainian",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Ukrainian",
+      "translation": "HR"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Ukrainian",
+      "translation": "Виконавчий директор"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Ukrainian",
+      "translation": "Інвестор"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Ukrainian",
+      "translation": "Юридичні питання/Права інтелектуальної власності"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Ukrainian",
+      "translation": "Конкурент"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Ukrainian",
+      "translation": "Імпорт/Експорт"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Ukrainian",
+      "translation": "GPS-відстеження"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Ukrainian",
+      "translation": "Локалізація"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Ukrainian",
+      "translation": "Робочі процеси"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Ukrainian",
+      "translation": "Адміністратор"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Ukrainian",
+      "translation": "Клієнти"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Ukrainian",
+      "translation": "Співробітники"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Ukrainian",
+      "translation": "Прибуток"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Ukrainian",
+      "translation": "Завантаження панелі постачальника…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Ukrainian",
+      "translation": "Замовлення на придбання"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Виховував Харвікс"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Ukrainian",
+      "translation": "Відвантаження / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Ukrainian",
+      "translation": "Прийнято цього тижня"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Ukrainian",
+      "translation": "Створено рахунків-фактур"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Ukrainian",
+      "translation": "Очікується оплата"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Ukrainian",
+      "translation": "Очікуються платежі"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Ukrainian",
+      "translation": "Заплановано до випуску"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Ukrainian",
+      "translation": "Якість / скарги"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Ukrainian",
+      "translation": "Відкриті квитки"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Ukrainian",
+      "translation": "Прогноз (на наступні 4 тижні)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Ukrainian",
+      "translation": "Заповнювач ШІ"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Ukrainian",
+      "translation": "Дії постачальника"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Ukrainian",
+      "translation": "Підтвердьте майбутні відправлення та оновіть графік GRN."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Ukrainian",
+      "translation": "Перегляньте неоплачені рахунки-фактури та поділіться порадами щодо оплати."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Ukrainian",
+      "translation": "Вирішуйте відкриті скарги щодо якості за допомогою доказів контролю якості."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Ukrainian",
+      "translation": "Ім'я користувача"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Ukrainian",
+      "translation": "Пароль"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Ukrainian",
+      "translation": "Електронна пошта"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Ukrainian",
+      "translation": "Надіслати"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Ukrainian",
+      "translation": "Скасувати"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Ukrainian",
+      "translation": "Зберегти"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Ukrainian",
+      "translation": "Видалити"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Ukrainian",
+      "translation": "Пошук"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Ukrainian",
+      "translation": "Фільтр"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Ukrainian",
+      "translation": "Скинути"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Ukrainian",
+      "translation": "Закрити"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Ukrainian",
+      "translation": "Назад"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Ukrainian",
+      "translation": "Далі"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Ukrainian",
+      "translation": "Попередній"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Ukrainian",
+      "translation": "Підтвердити"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Ukrainian",
+      "translation": "Запам'ятай мене"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Ukrainian",
+      "translation": "Забули пароль?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Ukrainian",
+      "translation": "Потрібно вказати електронну пошту"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Ukrainian",
+      "translation": "Будь ласка, введіть дійсну адресу електронної пошти"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Ukrainian",
+      "translation": "Продукти"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Ukrainian",
+      "translation": "Які продукти пропонує Harvics?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Ukrainian",
+      "translation": "Ми пропонуємо широкий асортимент преміальних харчових продуктів, включаючи кондитерські вироби, напої, закуски, макаронні вироби, хлібобулочні вироби та заморожені продукти в кількох категоріях."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Ukrainian",
+      "translation": "Де я можу придбати продукцію Harvics?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Ukrainian",
+      "translation": "Наші продукти доступні в роздрібних магазинах у понад 40 країнах. Скористайтеся нашим пошуком магазинів або сторінкою контактів, щоб знайти продавця поруч із вами."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Ukrainian",
+      "translation": "Ви пропонуєте оптові замовлення?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Ukrainian",
+      "translation": "Так, ми пропонуємо знижки на оптові замовлення для підприємств та роздрібних торговців. Відвідайте нашу сторінку «Знижки на оптові замовлення» для отримання додаткової інформації."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Ukrainian",
+      "translation": "Замовлення та доставка"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Ukrainian",
+      "translation": "Які у вас є варіанти доставки?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Ukrainian",
+      "translation": "Ми пропонуємо різні варіанти доставки, включаючи стандартну, експрес- та міжнародну доставку. Безкоштовна доставка доступна для замовлень понад 50 доларів США."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Ukrainian",
+      "translation": "Скільки часу триває доставка?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Ukrainian",
+      "translation": "Терміни доставки залежать від місцезнаходження. Стандартна доставка зазвичай займає 5-7 робочих днів, тоді як експрес-доставка — 2-3 робочих дні."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Ukrainian",
+      "translation": "Чи можу я відстежити своє замовлення?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Ukrainian",
+      "translation": "Так, ви можете відстежувати своє замовлення, використовуючи номер відстеження, вказаний у вашому електронному листі з підтвердженням замовлення."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Ukrainian",
+      "translation": "Обліковий запис та платежі"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Ukrainian",
+      "translation": "Як створити обліковий запис?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Ukrainian",
+      "translation": "Натисніть кнопку «Увійти» у заголовку та виберіть «Створити обліковий запис», щоб зареєструвати новий обліковий запис."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Ukrainian",
+      "translation": "Які способи оплати ви приймаєте?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Ukrainian",
+      "translation": "Ми приймаємо всі основні кредитні картки, дебетові картки, PayPal та банківські перекази для замовлень B2B."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Ukrainian",
+      "translation": "Чи безпечна моя платіжна інформація?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Ukrainian",
+      "translation": "Так, ми використовуємо стандартне галузеве шифрування для захисту вашої платіжної інформації."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Ukrainian",
+      "translation": "Повернення та відшкодування коштів"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Ukrainian",
+      "translation": "Яка ваша політика повернення?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Ukrainian",
+      "translation": "Ми пропонуємо 30-денну політику повернення невідкритих товарів у оригінальній упаковці. Будь ласка, зверніться до нашої служби підтримки клієнтів для отримання дозволу на повернення."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Ukrainian",
+      "translation": "Як мені подати запит на повернення коштів?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Ukrainian",
+      "translation": "Зверніться до нашої служби підтримки клієнтів, повідомивши номер вашого замовлення та причину повернення. Ми опрацюємо ваше відшкодування протягом 5-7 робочих днів."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Ukrainian",
+      "translation": "Все ще маєте запитання?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Ukrainian",
+      "translation": "Наша служба підтримки клієнтів готова допомогти"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Ukrainian",
+      "translation": "Зв'яжіться з нами"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Ukrainian",
+      "translation": "Кар'єра"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Кар'єра | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Ukrainian",
+      "translation": "Приєднуйтесь до Harvics Global Ventures — досліджуйте можливості у понад 40 країнах."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Ukrainian",
+      "translation": "Приєднуйтесь до нас"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Ukrainian",
+      "translation": "Побудуйте майбутнє світової торгівлі"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Ukrainian",
+      "translation": "Ми зростаємо у понад 40 країнах. Приєднуйтесь до команди, яка створює операційну систему на базі штучного інтелекту для глобальної комерції."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Ukrainian",
+      "translation": "Відкриті вакансії"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Ukrainian",
+      "translation": "Країни"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Ukrainian",
+      "translation": "Галузеві вертикалі"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Ukrainian",
+      "translation": "Відділи, що набирають персонал"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Ukrainian",
+      "translation": "Відкриті вакансії за відділами"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Ukrainian",
+      "translation": "Продажі та дистрибуція"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Ukrainian",
+      "translation": "Збільшення доходу на понад 40 ринках. Управління територією, ключові клієнти, відносини з дистриб'юторами."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Ukrainian",
+      "translation": "Ланцюг поставок та логістика"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Ukrainian",
+      "translation": "Комплексний ланцюг поставок від заводу до полиці. Управління автопарком, складське зберігання, доставка «останньої милі»."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Ukrainian",
+      "translation": "Технології та штучний інтелект"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Ukrainian",
+      "translation": "Створіть Harvics OS — нашу корпоративну платформу на базі штучного інтелекту. Повний стек, машинне навчання, наука про дані."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Ukrainian",
+      "translation": "Фінанси та казначейство"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Ukrainian",
+      "translation": "Мультивалютне казначейство, торгове фінансування, цифрові платежі HPay, управління валютою в різних регіонах."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Ukrainian",
+      "translation": "Закупівлі та постачання"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Ukrainian",
+      "translation": "Глобальні постачальники з понад 15 країн походження. Аудит постачальників, контроль якості, програми прямих поставок з заводу."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Ukrainian",
+      "translation": "Людські ресурси"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Ukrainian",
+      "translation": "Підбір талантів, навчання та розвиток, управління ефективністю в різних географічних регіонах та культурах."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Ukrainian",
+      "translation": "Юридичні питання та дотримання вимог"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Ukrainian",
+      "translation": "Дотримання торговельних норм, перевірка санкцій, захист інтелектуальної власності, управління контрактами в різних юрисдикціях."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Ukrainian",
+      "translation": "Маркетинг і бренд"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Ukrainian",
+      "translation": "Багатомовні кампанії, контент для 38 локалізацій, цифровий маркетинг, бренд-стратегія для 10 вертикалей."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Ukrainian",
+      "translation": "ролі"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Чому саме Харвікс"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Ukrainian",
+      "translation": "Глобальна мобільність"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Ukrainian",
+      "translation": "Робота в Дубаї, Лондоні, Карачі, Лахорі та на понад 40 ринках"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Ukrainian",
+      "translation": "Трек зростання"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Ukrainian",
+      "translation": "Швидкий кар'єрний ріст у масштабованому підприємстві"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Ukrainian",
+      "translation": "Культура, що базується на штучному інтелекті"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Ukrainian",
+      "translation": "Працюйте з передовими системами штучного інтелекту та аналітики в режимі реального часу"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Ukrainian",
+      "translation": "Конкурентний пакет"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Ukrainian",
+      "translation": "Провідні на ринку компенсації, житла та пільг"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Ukrainian",
+      "translation": "Бюджет навчання"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Ukrainian",
+      "translation": "Річний бюджет на розробку курсів, конференцій та сертифікацій"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Ukrainian",
+      "translation": "Гнучкий графік роботи"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Ukrainian",
+      "translation": "Гібридні домовленості з регіональними центрами по всьому світу"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Ukrainian",
+      "translation": "Наша стратегія"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Стратегія | Гарвіч"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Ukrainian",
+      "translation": "Побудова сталого майбутнього через інновації та досконалість"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Ukrainian",
+      "translation": "Побудова сталого майбутнього через інновації та досконалість"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Ukrainian",
+      "translation": "Глобальна експансія"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Ukrainian",
+      "translation": "Розширення нашої присутності на ринках, що розвиваються, одночасно зміцнюючи наші позиції на сформованих ринках"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Ukrainian",
+      "translation": "Інновації продукту"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Ukrainian",
+      "translation": "Інвестування в дослідження та розробки для розробки нових продуктів, що відповідають мінливим уподобанням споживачів"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Ukrainian",
+      "translation": "Сталий розвиток"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Ukrainian",
+      "translation": "Віддані принципам сталого розвитку в усьому нашому ланцюжку поставок та операціях"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Ukrainian",
+      "translation": "Цифрова трансформація"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Ukrainian",
+      "translation": "Використання технологій для покращення клієнтського досвіду та операційної ефективності"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Ukrainian",
+      "translation": "Наше бачення"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Ukrainian",
+      "translation": "Бути провідною світовою компанією з виробництва преміальних споживчих товарів, визнаною за якість, інновації та сталий розвиток."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Ukrainian",
+      "translation": "Harvics Global Ventures | Преміальна глобальна торгівля"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Ukrainian",
+      "translation": "Провідна світова торгова компанія, що постачає преміальні продукти у понад 10 галузях промисловості. Працює у понад 50 країнах з 2019 року."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Ukrainian",
+      "translation": "Про нас | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Ukrainian",
+      "translation": "Дізнайтеся, як Harvics Global Ventures стала провідною силою у світовій торгівлі у понад 40 країнах та 10 галузях промисловості."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Ukrainian",
+      "translation": "Зв'яжіться з нами | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Ukrainian",
+      "translation": "Зв'яжіться з офісами Harvics по всьому світу на Близькому Сході, в Південній Азії, Європі, Африці та Америці."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Ukrainian",
+      "translation": "Продукція | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Ukrainian",
+      "translation": "Ознайомтеся з преміальним асортиментом продукції Harvics, що охоплює товари широкого вжитку, текстиль, сировинні товари та промислові рішення."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Ukrainian",
+      "translation": "Кар'єра | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Ukrainian",
+      "translation": "Приєднуйтесь до Harvics Global Ventures — досліджуйте можливості у понад 40 країнах світу у сфері товарів широкого вжитку, текстилю, логістики та технологій."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Ukrainian",
+      "translation": "Медіацентр | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Ukrainian",
+      "translation": "Медіацентр Harvics — прес-релізи, останні новини, матеріали бренду та контакти зі ЗМІ."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Ukrainian",
+      "translation": "Наша стратегія | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Ukrainian",
+      "translation": "Стратегічне бачення Harvics щодо глобальної експансії, інновацій, сталого розвитку та цифрової трансформації."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Корпоративна соціальна відповідальність | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Ukrainian",
+      "translation": "Ініціативи Harvics у сфері корпоративної соціальної відповідальності — екологічна відповідальність, громадські програми та етична бізнес-практика."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Ukrainian",
+      "translation": "Найчастіші запитання | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Ukrainian",
+      "translation": "Часті запитання щодо продуктів, послуг, замовлень та глобальної діяльності Harvics."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Глобальні локації | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Ukrainian",
+      "translation": "Офіси та підприємства Harvics розташовані на Близькому Сході, у Південній Азії, Європі, Африці та Америці."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Керівна команда | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Ukrainian",
+      "translation": "Зустрічайте команду керівництва, яка керує Harvics Global Ventures на понад 40 ринках та у 10 галузевих вертикалях."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Центр допомоги | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Ukrainian",
+      "translation": "Отримайте допомогу із замовленнями, обліковими записами, доставкою та послугами Harvics."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Відповідність та етика | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Ukrainian",
+      "translation": "Відданість компанії Harvic дотриманню нормативних вимог, етичної ділової практики та глобальних стандартів."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Наша історія | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Ukrainian",
+      "translation": "Від дубайського стартапу 2019 року до глобального підприємства, що охоплює понад 40 країн — історія Harvics."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Інформаційний бюлетень | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Ukrainian",
+      "translation": "Підпишіться на розсилку Harvics, щоб отримувати галузеву аналітику та інформацію про запуск продуктів."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Увійти | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Ukrainian",
+      "translation": "Увійдіть до свого облікового запису Harvics, щоб керувати замовленнями та отримати доступ до платформи."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Дослідження та інновації | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Ukrainian",
+      "translation": "Дослідницькі ініціативи та інноваційні програми Harvics є рушійною силою нашої глобальної стратегії."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Ukrainian",
+      "translation": "Відділ зв'язків з інвесторами | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Ukrainian",
+      "translation": "Інформація для інвесторів, фінансові звіти та корпоративні оголошення від Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Ukrainian",
+      "translation": "Сторінку не знайдено"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Ukrainian",
+      "translation": "404 — Сторінку не знайдено"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Ukrainian",
+      "translation": "Сторінка, яку ви шукаєте, не існує або була переміщена."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Ukrainian",
+      "translation": "Перейти на головну сторінку"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Ukrainian",
+      "translation": "Назад"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Ukrainian",
+      "translation": "Щось пішло не так"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Ukrainian",
+      "translation": "Щось пішло не так"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Ukrainian",
+      "translation": "Вибачте, але сталося щось непередбачене. Будь ласка, спробуйте оновити сторінку."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Ukrainian",
+      "translation": "Спробуйте ще раз"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Ukrainian",
+      "translation": "Перезавантажити сторінку"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Ukrainian",
+      "translation": "Зверніться до служби підтримки"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Ukrainian",
+      "translation": "Помилка програми"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Ukrainian",
+      "translation": "Критична помилка"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Ukrainian",
+      "translation": "Сталася критична помилка. Будь ласка, перезавантажте сторінку."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Ukrainian",
+      "translation": "Перезавантажити програму"
+    }
+  }
+}

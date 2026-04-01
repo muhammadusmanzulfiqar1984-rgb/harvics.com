@@ -41,7 +41,7 @@ export default function FindStorePage() {
   ]
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8] pt-20">
+    <main className="min-h-screen bg-white pt-20">
       <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute inset-0">

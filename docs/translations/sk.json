@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "sk",
+    "language": "Slovak",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Slovak. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Slovak",
+      "translation": "Vitajte na"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Slovak",
+      "translation": "Harwich"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Slovak",
+      "translation": "Excelentnosť v prémiovom spotrebnom tovare od roku 2019"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Slovak",
+      "translation": "Popredná svetová spoločnosť so spotrebným tovarom, ktorá dodáva prémiové potravinárske výrobky v rôznych kategóriách s medzinárodnými štandardmi kvality."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Slovak",
+      "translation": "Preskúmajte produkty"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Slovak",
+      "translation": "Kontaktujte nás"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Slovak",
+      "translation": "Zistite viac"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Slovak",
+      "translation": "Excelentnosť v prémiovom spotrebnom tovare od roku"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Slovak",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Slovak",
+      "translation": "Londýn • Miláno • New York"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Slovak",
+      "translation": "Pekáreň"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Slovak",
+      "translation": "Nápoje"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Slovak",
+      "translation": "Cukrovinky"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Slovak",
+      "translation": "Kulinárske"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Slovak",
+      "translation": "Mrazené potraviny"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Slovak",
+      "translation": "Cestoviny"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Slovak",
+      "translation": "Občerstvenie"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Slovak",
+      "translation": "Správa ESG za rok 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Slovak",
+      "translation": "Londýn • Miláno • New York"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Slovak",
+      "translation": "Domov"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Slovak",
+      "translation": "O nás"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Slovak",
+      "translation": "O nás"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Slovak",
+      "translation": "Príbeh značky"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Slovak",
+      "translation": "Produkty"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Slovak",
+      "translation": "Naše produkty"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Slovak",
+      "translation": "Zobraziť všetky produkty"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Slovak",
+      "translation": "Spoločenská zodpovednosť"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Slovak",
+      "translation": "Vzťahy s investormi"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Slovak",
+      "translation": "Investori"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Slovak",
+      "translation": "Médiá"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Slovak",
+      "translation": "Kontaktujte nás"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Slovak",
+      "translation": "Harvicsov dom"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Slovak",
+      "translation": "Krajiny"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Slovak",
+      "translation": "Portály"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Slovak",
+      "translation": "Prihlásiť sa"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Slovak",
+      "translation": "Zoznam želaní"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Slovak",
+      "translation": "Nákupný košík"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Slovak",
+      "translation": "Pomocník"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Slovak",
+      "translation": "Nájsť obchod"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Slovak",
+      "translation": "Peniaze"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Slovak",
+      "translation": "Predaj"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Slovak",
+      "translation": "Ponuky"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Slovak",
+      "translation": "Tmavý režim"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Slovak",
+      "translation": "Kreditná karta"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Slovak",
+      "translation": "Kreditná karta M&S Rewards"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Slovak",
+      "translation": "Klubové odmeny"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Slovak",
+      "translation": "Naše kreditné karty"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Slovak",
+      "translation": "Poistenie"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Slovak",
+      "translation": "Poistenie domácnosti"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Slovak",
+      "translation": "Cestovné poistenie"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Slovak",
+      "translation": "Cestovné služby"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Slovak",
+      "translation": "Cestovné peniaze"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Slovak",
+      "translation": "Výmenné kurzy"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Slovak",
+      "translation": "Doplnkové služby"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Slovak",
+      "translation": "Sporenie a investovanie"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Slovak",
+      "translation": "Osobné pôžičky"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Slovak",
+      "translation": "Finančná podpora"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Slovak",
+      "translation": "Aktuálny predaj"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Slovak",
+      "translation": "Výpredaj"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Slovak",
+      "translation": "Sezónny výpredaj"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Slovak",
+      "translation": "Špeciálne ponuky"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Slovak",
+      "translation": "Propagácie"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Slovak",
+      "translation": "Zľavy za hromadné objednávky"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Slovak",
+      "translation": "Naše produkty"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Slovak",
+      "translation": "Zobraziť všetky produkty"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Slovak",
+      "translation": "Naše kategórie produktov"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Slovak",
+      "translation": "Objavte náš prémiový sortiment produktov vyrobených s láskou a dokonalosťou."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Slovak",
+      "translation": "Úroveň 1: Kategórie"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Slovak",
+      "translation": "Úroveň 2: Moduly"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Slovak",
+      "translation": "Úroveň 3: Obrazovky KPI"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Slovak",
+      "translation": "Úroveň 4: Akcie"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Slovak",
+      "translation": "Obnoviť navigáciu"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Slovak",
+      "translation": "Pre túto kategóriu nie sú k dispozícii žiadne podkategórie."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Slovak",
+      "translation": "Produkty"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Slovak",
+      "translation": "Podkategórie"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Slovak",
+      "translation": "Pekáreň"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Slovak",
+      "translation": "Čerstvo upečené pečivo a pečivo."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Slovak",
+      "translation": "Nápoje"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Slovak",
+      "translation": "Osviežujúce nápoje na každú príležitosť."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Slovak",
+      "translation": "Cukrovinky"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Slovak",
+      "translation": "Sladké maškrty a pochúťky."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Slovak",
+      "translation": "Kulinárske"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Slovak",
+      "translation": "Nevyhnutné ingrediencie do vašej kuchyne."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Slovak",
+      "translation": "Mrazené potraviny"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Slovak",
+      "translation": "Pohodlné a chutné mrazené jedlá."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Slovak",
+      "translation": "Cestoviny"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Slovak",
+      "translation": "Autentické odrody cestovín."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Slovak",
+      "translation": "Občerstvenie"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Slovak",
+      "translation": "Chutné občerstvenie kedykoľvek počas dňa."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Slovak",
+      "translation": "O spoločnosti Harvics"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Slovak",
+      "translation": "Excelentnosť v prémiovom spotrebnom tovare od roku 2019"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Slovak",
+      "translation": "Náš príbeh"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Slovak",
+      "translation": "Spoločnosť Harvics, založená v roku 2019, sa z vizionárskej myšlienky rozrástla na globálneho lídra v oblasti prémiového spotrebného tovaru. Našu cestu definuje neúnavné úsilie o kvalitu a odhodlanie inovovať."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Slovak",
+      "translation": "Pôsobíme vo viac ako 40 krajinách a dodávame produkty, ktoré obohacujú životy a nastavujú nové štandardy v tomto odvetví. Od našich skromných začiatkov až po našu globálnu prítomnosť zostávajú naše hodnoty nezmenené."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Slovak",
+      "translation": "Odhad 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Slovak",
+      "translation": "Viac ako 40 krajín"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Slovak",
+      "translation": "6 produktových radov"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Slovak",
+      "translation": "Spoločenská zodpovednosť firiem"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Slovak",
+      "translation": "V spoločnosti Harvics sa zaväzujeme mať pozitívny vplyv na svet. Naše iniciatívy v oblasti spoločenskej zodpovednosti podnikov sa zameriavajú na udržateľnosť, posilnenie postavenia komunity a etické obchodné praktiky."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Slovak",
+      "translation": "Roky vplyvu"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Slovak",
+      "translation": "Dosiahnuté krajiny"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Slovak",
+      "translation": "Dotknuté životy"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Slovak",
+      "translation": "Naše kľúčové iniciatívy"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Slovak",
+      "translation": "Zameriavame sa na štyri hlavné piliere s cieľom dosiahnuť udržateľnú zmenu a vytvoriť spoločnú hodnotu pre všetky zainteresované strany."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Slovak",
+      "translation": "Udržateľnosť"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Slovak",
+      "translation": "Znižovanie našej environmentálnej stopy prostredníctvom obnoviteľných zdrojov energie a znižovania odpadu."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Slovak",
+      "translation": "Obnoviteľná energia"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Slovak",
+      "translation": "Odklonený odpad"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Slovak",
+      "translation": "Redukcia uhlíka"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Slovak",
+      "translation": "Podpora komunity"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Slovak",
+      "translation": "Posilnenie postavenia miestnych komunít prostredníctvom vzdelávania, zdravotnej starostlivosti a hospodárskeho rozvoja."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Slovak",
+      "translation": "Podporované rodiny"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Slovak",
+      "translation": "Aktívne programy"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Slovak",
+      "translation": "Dobrovoľníci"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Slovak",
+      "translation": "Vzdelávanie"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Slovak",
+      "translation": "Poskytovanie prístupu ku kvalitnému vzdelaniu a štipendiám pre študentov zo sociálne znevýhodnených skupín."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Slovak",
+      "translation": "Štipendiá"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Slovak",
+      "translation": "Partnerské školy"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Slovak",
+      "translation": "Dotknutí študenti"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Slovak",
+      "translation": "Zdravie a wellness"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Slovak",
+      "translation": "Zlepšenie prístupu k zdravotnej starostlivosti a výžive v nedostatočne obsluhovaných regiónoch."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Slovak",
+      "translation": "Zdravotné kampane"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Slovak",
+      "translation": "Obslúžení ľudia"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Slovak",
+      "translation": "Mobilné kliniky"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Slovak",
+      "translation": "Najlepšia iniciatíva v oblasti spoločenskej zodpovednosti (CSR)"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Slovak",
+      "translation": "Ocenení za náš inovatívny prístup k spoločenskej zodpovednosti."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Slovak",
+      "translation": "Šampión komunity"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Slovak",
+      "translation": "Ocenené za naše rozsiahle programy zamerané na komunitu."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Slovak",
+      "translation": "Cena za globálnu udržateľnosť"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Slovak",
+      "translation": "Uznávaní za náš záväzok k uhlíkovej neutralite."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Slovak",
+      "translation": "Náš vplyv"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Slovak",
+      "translation": "Uznávame naše míľniky pri vytváraní lepšieho sveta."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Slovak",
+      "translation": "Pridajte sa k nám a zmeňte veci na lepšie"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Slovak",
+      "translation": "Staňte sa naším partnerom alebo sa dozviete viac o tom, ako budujeme udržateľnú budúcnosť."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Slovak",
+      "translation": "Kontaktujte tím CSR"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Slovak",
+      "translation": "Zistite viac"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Slovak",
+      "translation": "Kontaktujte nás"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Slovak",
+      "translation": "Radi by sme od vás počuli. Kontaktujte nás prostredníctvom ktoréhokoľvek z týchto kanálov."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Slovak",
+      "translation": "Telefón"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Slovak",
+      "translation": "E-mail"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Slovak",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Slovak",
+      "translation": "Zavolajte teraz"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Slovak",
+      "translation": "Odoslať e-mail"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Slovak",
+      "translation": "Napíšte nám"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Slovak",
+      "translation": "Mediálne centrum"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Slovak",
+      "translation": "Mediálne centrum | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Slovak",
+      "translation": "Tlačové zdroje, informácie o značke a najnovšie správy od spoločnosti Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Slovak",
+      "translation": "Firemné"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Slovak",
+      "translation": "Novinky a tlačové správy"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Slovak",
+      "translation": "Najnovšie oznámenia, expanzie na trh, uvedenie produktov na trh a firemné aktualizácie od spoločnosti Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Slovak",
+      "translation": "Prečítajte si najnovšie správy"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Slovak",
+      "translation": "Galéria obrázkov"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Slovak",
+      "translation": "Vysokorozlíšiteľné materiály značky, fotografie produktov, obrázky zariadení a spravodajstvo z podujatí pre mediálne použitie."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Slovak",
+      "translation": "Prehliadať galériu"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Slovak",
+      "translation": "Kontakty pre médiá"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Slovak",
+      "translation": "V prípade otázok pre tlač, žiadostí o rozhovor a oznámení o partnerstve kontaktujte náš komunikačný tím."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Slovak",
+      "translation": "Kontaktujte tlačový tím"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Slovak",
+      "translation": "Pokryté trhy"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Slovak",
+      "translation": "Vertikály odvetvia"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Slovak",
+      "translation": "Založené v Dubaji"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Slovak",
+      "translation": "Podporované jazyky"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Slovak",
+      "translation": "Najnovšie titulky"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Slovak",
+      "translation": "Spoločnosť Harvics rozširuje svoje aktivity v oblasti rýchloobrátkového spotrebného tovaru na 5 nových trhov juhovýchodnej Ázie"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Slovak",
+      "translation": "Nová platforma dodávateľského reťazca s umelou inteligenciou spustená pre globálnu distribúciu"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Slovak",
+      "translation": "Spoločnosť Harvics dosiahla míľnik uhlíkovej neutrality vo všetkých prevádzkach"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Slovak",
+      "translation": "Strategické partnerstvo s poprednými textilnými výrobcami v južnej Ázii"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Slovak",
+      "translation": "Harvicsov dom"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Slovak",
+      "translation": "Dedičstvo excelentnosti a tradície"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Slovak",
+      "translation": "Vitajte v Harvics House"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Slovak",
+      "translation": "Harvics House predstavuje vrchol nášho záväzku ku kvalite a dedičstvu. Tu spájame najlepší výber našich prémiových produktov, prezentovaných v prostredí, ktoré odráža naše hodnoty elegancie, tradície a inovácie."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Slovak",
+      "translation": "Preskúmajte naše exkluzívne kolekcie a objavte príbeh každého produktu, ktorý nesie meno Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Slovak",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Slovak",
+      "translation": "Excelentnosť v prémiovom spotrebnom tovare od roku 2019"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Slovak",
+      "translation": "Popredná svetová spoločnosť so spotrebným tovarom, ktorá dodáva prémiové potravinárske výrobky v rôznych kategóriách s medzinárodnými štandardmi kvality."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Slovak",
+      "translation": "Londýn • Miláno • New York"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Slovak",
+      "translation": "Od roku 2019"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Slovak",
+      "translation": "Harvics News"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Slovak",
+      "translation": "Prihláste sa na odber upozornení a aktualizácií"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Slovak",
+      "translation": "Zaregistrovať sa"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Slovak",
+      "translation": "Obavy z dodržiavania predpisov"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Slovak",
+      "translation": "Ozvite sa, ak máte obavy týkajúce sa dodržiavania predpisov alebo etiky"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Slovak",
+      "translation": "Ozvi sa"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Slovak",
+      "translation": "Kontaktujte nás"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Slovak",
+      "translation": "Kontaktujte náš tím"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Slovak",
+      "translation": "Kontaktujte nás"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Slovak",
+      "translation": "Užitočné odkazy"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Slovak",
+      "translation": "Opýtajte sa Harwicha"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Slovak",
+      "translation": "Hľadať pracovné miesta"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Slovak",
+      "translation": "Prihláste sa na odber noviniek"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Slovak",
+      "translation": "Spoločnosť"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Slovak",
+      "translation": "Globálne adresy"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Slovak",
+      "translation": "Stratégia"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Slovak",
+      "translation": "Naše vedenie"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Slovak",
+      "translation": "Značky od A po Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Slovak",
+      "translation": "Naša história"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Slovak",
+      "translation": "Udržateľnosť"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Slovak",
+      "translation": "Správy"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Slovak",
+      "translation": "Kontakty pre médiá"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Slovak",
+      "translation": "Obrázky"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Slovak",
+      "translation": "Investori"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Slovak",
+      "translation": "Správa a riadenie spoločností"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Slovak",
+      "translation": "Akcie, ADR a dlhopisy"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Slovak",
+      "translation": "Publikácie"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Slovak",
+      "translation": "Sledujte nás na"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Slovak",
+      "translation": "0 problémov"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Slovak",
+      "translation": "Mapa stránok"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Slovak",
+      "translation": "Odhlásiť sa z odberu"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Slovak",
+      "translation": "Pomocník"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Slovak",
+      "translation": "Súkromie"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Slovak",
+      "translation": "Súbory cookie"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Slovak",
+      "translation": "Podmienky používania"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Slovak",
+      "translation": "Prístupnosť"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Slovak",
+      "translation": "Uhlíková účinnosť"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Slovak",
+      "translation": "Dodávatelia"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Slovak",
+      "translation": "Sociálne médiá"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Slovak",
+      "translation": "Nastavenia súborov cookie"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Slovak",
+      "translation": "Prémiová kvalita"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Slovak",
+      "translation": "E-mailová adresa"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Slovak",
+      "translation": "Zadajte svoju e-mailovú adresu"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Slovak",
+      "translation": "Prihlásiť sa na odber"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Slovak",
+      "translation": "Prihlasovanie sa na odber..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Slovak",
+      "translation": "O nás"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Slovak",
+      "translation": "Médiá"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Slovak",
+      "translation": "Vyhľadávanie produktov, značiek alebo kategórií"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Slovak",
+      "translation": "Nenašli sa žiadne výsledky"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Slovak",
+      "translation": "Hľadá sa..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Slovak",
+      "translation": "Výsledky"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Slovak",
+      "translation": "Porozprávajte sa s nami"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Slovak",
+      "translation": "Napíšte svoju správu..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Slovak",
+      "translation": "Odoslať"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Slovak",
+      "translation": "Zatvoriť"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Slovak",
+      "translation": "Dobrý deň! Ako vám môžem dnes pomôcť?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Slovak",
+      "translation": "Prepáčte, nerozumel som tomu. Mohli by ste to, prosím, preformulovať?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Slovak",
+      "translation": "Môžem vám pomôcť s informáciami o produktoch, objednávkami alebo všeobecnými otázkami. Čo by ste chceli vedieť?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Slovak",
+      "translation": "Pre ďalšiu pomoc nás prosím kontaktujte na adrese support@harvics.com alebo zavolajte na číslo +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Slovak",
+      "translation": "Porozprávajte sa s nami"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Slovak",
+      "translation": "Načítava sa..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Slovak",
+      "translation": "Chyba"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Slovak",
+      "translation": "Úspech"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Slovak",
+      "translation": "Uložiť"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Slovak",
+      "translation": "Zrušiť"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Slovak",
+      "translation": "Odstrániť"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Slovak",
+      "translation": "Upraviť"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Slovak",
+      "translation": "Zobraziť"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Slovak",
+      "translation": "Odoslať"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Slovak",
+      "translation": "Hľadať"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Slovak",
+      "translation": "Filter"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Slovak",
+      "translation": "Jasné"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Slovak",
+      "translation": "Stiahnuť"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Slovak",
+      "translation": "Nahrať"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Slovak",
+      "translation": "Áno"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Slovak",
+      "translation": "Nie"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Slovak",
+      "translation": "Zatvoriť"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Slovak",
+      "translation": "Späť"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Slovak",
+      "translation": "Ďalej"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Slovak",
+      "translation": "Predchádzajúce"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Slovak",
+      "translation": "Akcie"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Slovak",
+      "translation": "Stav"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Slovak",
+      "translation": "Dátum"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Slovak",
+      "translation": "Meno"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Slovak",
+      "translation": "E-mail"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Slovak",
+      "translation": "Telefón"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Slovak",
+      "translation": "Adresa"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Slovak",
+      "translation": "Krajina"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Slovak",
+      "translation": "Mesto"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Slovak",
+      "translation": "Všetky"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Slovak",
+      "translation": "Žiadne"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Slovak",
+      "translation": "Vyberte"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Slovak",
+      "translation": "Vyberte jazyk"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Slovak",
+      "translation": "Vyberte krajinu"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Slovak",
+      "translation": "Zobraziť viac"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Slovak",
+      "translation": "Zobraziť menej"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Slovak",
+      "translation": "Povinné"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Slovak",
+      "translation": "Menu"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Slovak",
+      "translation": "Zobraziť produkty"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Slovak",
+      "translation": "Prehrávanie hudby"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Slovak",
+      "translation": "Pozastaviť hudbu"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Slovak",
+      "translation": "Stlmiť hudbu"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Slovak",
+      "translation": "Zapnúť zvuk hudby"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Slovak",
+      "translation": "Náš globálny dosah"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Slovak",
+      "translation": "Odkedy"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Slovak",
+      "translation": "Hlavný trh"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Slovak",
+      "translation": "Hlavné trhy"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Slovak",
+      "translation": "Prítomnosť"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Slovak",
+      "translation": "Obsluhované krajiny"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Slovak",
+      "translation": "Hlavné trhy"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Slovak",
+      "translation": "Kategórie produktov"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Slovak",
+      "translation": "Založené"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Slovak",
+      "translation": "Hierarchia územia"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Slovak",
+      "translation": "Celá cesta"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Slovak",
+      "translation": "Súčasné územie"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Slovak",
+      "translation": "Žiadne položky"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Slovak",
+      "translation": "Glóbus"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Slovak",
+      "translation": "Kontinent"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Slovak",
+      "translation": "Región"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Slovak",
+      "translation": "Krajina"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Slovak",
+      "translation": "Mesto"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Slovak",
+      "translation": "Okres"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Slovak",
+      "translation": "Poloha"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Slovak",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Slovak",
+      "translation": "Globálne"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Slovak",
+      "translation": "Vyberte región"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Slovak",
+      "translation": "Údaje o zákazníkovi"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Slovak",
+      "translation": "Vybrané"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Slovak",
+      "translation": "Celé meno"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Slovak",
+      "translation": "Zadajte svoje celé meno"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Slovak",
+      "translation": "Meno je povinné"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Slovak",
+      "translation": "E-mailová adresa"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Slovak",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Slovak",
+      "translation": "E-mail je povinný"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Slovak",
+      "translation": "Zadajte platnú e-mailovú adresu"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Slovak",
+      "translation": "Telefónne číslo"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Slovak",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Slovak",
+      "translation": "Telefónne číslo je povinné"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Slovak",
+      "translation": "Adresa"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Slovak",
+      "translation": "Vaša adresa"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Slovak",
+      "translation": "Adresa je povinná"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Slovak",
+      "translation": "Súhlasím so zasielaním marketingových informácií a aktualizácií"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Slovak",
+      "translation": "Odoslať a pokračovať"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Slovak",
+      "translation": "Odosielanie..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Slovak",
+      "translation": "Preskočiť a pokračovať"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Slovak",
+      "translation": "Kľúčové ukazovatele výkonnosti"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Slovak",
+      "translation": "Objednávky dnes"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Slovak",
+      "translation": "Odoslané cez Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Slovak",
+      "translation": "Čakajúce doručenia"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Slovak",
+      "translation": "Cez pridelené trasy"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Slovak",
+      "translation": "Maloobchodníci"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Slovak",
+      "translation": "Aktívne predajne v rozsahu"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Slovak",
+      "translation": "Skóre T & A"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Slovak",
+      "translation": "Pokrytie územia"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Slovak",
+      "translation": "Financie a zásoby"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Slovak",
+      "translation": "Nízke skladové zásoby SKU"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Slovak",
+      "translation": "Spustiť doplnenie"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Slovak",
+      "translation": "Nevyrovnané faktúry"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Slovak",
+      "translation": "Dátum vyzdvihnutia"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Slovak",
+      "translation": "Úverový limit"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Slovak",
+      "translation": "Pridelené finančným oddelením"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Slovak",
+      "translation": "Automatické schvaľovanie, dopĺňanie zásob a pripomienky faktúr povolené"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Slovak",
+      "translation": "Sebaschválenie"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Slovak",
+      "translation": "Dopĺňanie zásob"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Slovak",
+      "translation": "Pripomienky faktúr"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Slovak",
+      "translation": "Odporúčania umelej inteligencie"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Slovak",
+      "translation": "Úroveň rizika"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Slovak",
+      "translation": "Na základe využitia úveru a histórie platieb"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Slovak",
+      "translation": "Navrhované poradie"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Slovak",
+      "translation": "SKU odporúčané umelou inteligenciou na objednanie"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Slovak",
+      "translation": "Ďalšia akcia"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Slovak",
+      "translation": "Akcie a usmernenia"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Slovak",
+      "translation": "Sťažnosti"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Slovak",
+      "translation": "Problémy s maloobchodníkmi, ktoré čakajú na riešenie"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Slovak",
+      "translation": "Príručka"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Slovak",
+      "translation": "Uprednostnite čakajúce doručenia pred poludním."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Slovak",
+      "translation": "Všetky nevybavené sťažnosti uzavrite do 48 hodín."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Slovak",
+      "translation": "Spustiť doplnenie zásob pre skladové jednotky s nízkym stavom (automatické vytvorenie objednávky)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Slovak",
+      "translation": "Územie"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Slovak",
+      "translation": "Objednávky tento mesiac"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Slovak",
+      "translation": "Čakajúce objednávky"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Slovak",
+      "translation": "Doručené objednávky"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Slovak",
+      "translation": "Informácie o území"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Slovak",
+      "translation": "Krajina"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Slovak",
+      "translation": "Mesto"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Slovak",
+      "translation": "Región"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Slovak",
+      "translation": "Rýchle akcie"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Slovak",
+      "translation": "Nová objednávka"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Slovak",
+      "translation": "Zobraziť objednávky"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Slovak",
+      "translation": "Zobraziť faktúry"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Slovak",
+      "translation": "Nastavenia profilu"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Slovak",
+      "translation": "Načítava sa ovládací panel..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Slovak",
+      "translation": "Chyba"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Slovak",
+      "translation": "Moje objednávky"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Slovak",
+      "translation": "ID objednávky"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Slovak",
+      "translation": "Dátum"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Slovak",
+      "translation": "Stav"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Slovak",
+      "translation": "Položky"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Slovak",
+      "translation": "Celková suma"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Slovak",
+      "translation": "Akcie"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Slovak",
+      "translation": "Zobraziť podrobnosti"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Slovak",
+      "translation": "Stav"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Slovak",
+      "translation": "Dátum začiatku"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Slovak",
+      "translation": "Dátum ukončenia"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Slovak",
+      "translation": "Všetky stavy"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Slovak",
+      "translation": "Vymazať filtre"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Slovak",
+      "translation": "Čaká sa na spracovanie"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Slovak",
+      "translation": "Spracovanie"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Slovak",
+      "translation": "Doručené"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Slovak",
+      "translation": "Zrušené"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Slovak",
+      "translation": "Nenašli sa žiadne objednávky"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Slovak",
+      "translation": "Načítavajú sa objednávky..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Slovak",
+      "translation": "Strana"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Slovak",
+      "translation": "z"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Slovak",
+      "translation": "Predchádzajúce"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Slovak",
+      "translation": "Ďalej"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Slovak",
+      "translation": "Podrobnosti objednávky"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Slovak",
+      "translation": "Späť na objednávky"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Slovak",
+      "translation": "ID objednávky"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Slovak",
+      "translation": "Stav"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Slovak",
+      "translation": "Dátum objednávky"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Slovak",
+      "translation": "Dátum doručenia"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Slovak",
+      "translation": "Dodacia adresa"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Slovak",
+      "translation": "Poznámky"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Slovak",
+      "translation": "Položky objednávky"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Slovak",
+      "translation": "Produkt"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Slovak",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Slovak",
+      "translation": "Množstvo"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Slovak",
+      "translation": "Jednotková cena"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Slovak",
+      "translation": "Celkom"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Slovak",
+      "translation": "Celková suma"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Slovak",
+      "translation": "Časová os stavu"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Slovak",
+      "translation": "Objednávka sa nenašla"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Slovak",
+      "translation": "Vytvoriť novú objednávku"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Slovak",
+      "translation": "Položky objednávky"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Slovak",
+      "translation": "Pridať položku"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Slovak",
+      "translation": "Zatiaľ neboli pridané žiadne položky. Kliknite na tlačidlo „Pridať položku“ a začnite."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Slovak",
+      "translation": "Podrobnosti objednávky"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Slovak",
+      "translation": "Dátum doručenia"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Slovak",
+      "translation": "Dodacia adresa"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Slovak",
+      "translation": "Poznámky"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Slovak",
+      "translation": "Celková suma"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Slovak",
+      "translation": "Vytvoriť objednávku"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Slovak",
+      "translation": "Vytváranie objednávky..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Slovak",
+      "translation": "Zrušiť"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Slovak",
+      "translation": "Vyberte produkt"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Slovak",
+      "translation": "Produkt"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Slovak",
+      "translation": "Množstvo"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Slovak",
+      "translation": "Jednotková cena"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Slovak",
+      "translation": "Odstrániť"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Slovak",
+      "translation": "Medzisúčet"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Slovak",
+      "translation": "ID objednávky"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Slovak",
+      "translation": "Je vyžadovaná aspoň jedna položka objednávky"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Slovak",
+      "translation": "Produkt je povinný"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Slovak",
+      "translation": "Množstvo musí byť väčšie ako 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Slovak",
+      "translation": "Jednotková cena musí byť nezáporná"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Slovak",
+      "translation": "Neplatný formát dátumu doručenia"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Slovak",
+      "translation": "Dátum doručenia nemôže byť v minulosti"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Slovak",
+      "translation": "Moje faktúry"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Slovak",
+      "translation": "Číslo faktúry"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Slovak",
+      "translation": "Dátum faktúry"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Slovak",
+      "translation": "Dve rande"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Slovak",
+      "translation": "Suma"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Slovak",
+      "translation": "Zaplatená suma"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Slovak",
+      "translation": "Stav platby"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Slovak",
+      "translation": "Stav platby"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Slovak",
+      "translation": "Všetky stavy"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Slovak",
+      "translation": "Vymazať filtre"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Slovak",
+      "translation": "Platené"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Slovak",
+      "translation": "Nezaplatené"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Slovak",
+      "translation": "Čiastočné"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Slovak",
+      "translation": "Nenašli sa žiadne faktúry"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Slovak",
+      "translation": "Načítavajú sa faktúry..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Slovak",
+      "translation": "Môj profil"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Slovak",
+      "translation": "Informácie o účte"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Slovak",
+      "translation": "ID distribútora"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Slovak",
+      "translation": "Územie"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Slovak",
+      "translation": "Krajina"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Slovak",
+      "translation": "Mesto"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Slovak",
+      "translation": "Účet vytvorený"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Slovak",
+      "translation": "Aktualizovať profil"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Slovak",
+      "translation": "Meno"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Slovak",
+      "translation": "E-mail"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Slovak",
+      "translation": "Telefón"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Slovak",
+      "translation": "Adresa"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Slovak",
+      "translation": "Jazyk"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Slovak",
+      "translation": "Mena"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Slovak",
+      "translation": "Uložiť zmeny"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Slovak",
+      "translation": "Ukladá sa..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Slovak",
+      "translation": "Profil bol úspešne aktualizovaný"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Slovak",
+      "translation": "Načítava sa profil..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Slovak",
+      "translation": "Neplatný formát e-mailu"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Slovak",
+      "translation": "Neplatný formát telefónu"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Slovak",
+      "translation": "Chyba"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Slovak",
+      "translation": "Načítava sa..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Slovak",
+      "translation": "Uložiť"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Slovak",
+      "translation": "Zrušiť"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Slovak",
+      "translation": "Späť"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Slovak",
+      "translation": "Odoslať"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Slovak",
+      "translation": "Odstrániť"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Slovak",
+      "translation": "Upraviť"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Slovak",
+      "translation": "Zobraziť"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Slovak",
+      "translation": "Hľadať"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Slovak",
+      "translation": "Filter"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Slovak",
+      "translation": "Jasné"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Slovak",
+      "translation": "Použiť"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Slovak",
+      "translation": "Zatvoriť"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Slovak",
+      "translation": "Potvrdiť"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Slovak",
+      "translation": "Áno"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Slovak",
+      "translation": "Nie"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Slovak",
+      "translation": "Právny operačný systém"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Slovak",
+      "translation": "Právny operačný systém"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Slovak",
+      "translation": "Prístup zamietnutý"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Slovak",
+      "translation": "Nemáte povolenie na prístup k modulu Legal OS."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Slovak",
+      "translation": "Prístrojová doska"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Slovak",
+      "translation": "Zmluvy"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Slovak",
+      "translation": "Certifikáty"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Slovak",
+      "translation": "Súlad s predpismi"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Slovak",
+      "translation": "Právny panel"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Slovak",
+      "translation": "Prehľad právnych operácií a stavu dodržiavania predpisov"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Slovak",
+      "translation": "Aktívne ochranné známky"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Slovak",
+      "translation": "Aktívne zmluvy"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Slovak",
+      "translation": "Stav súladu"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Slovak",
+      "translation": "Ochranné známky"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Slovak",
+      "translation": "Správa registrácií a žiadostí o ochranné známky"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Slovak",
+      "translation": "Pridať novú ochrannú známku"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Slovak",
+      "translation": "Krajina"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Slovak",
+      "translation": "Stav"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Slovak",
+      "translation": "Všetky krajiny"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Slovak",
+      "translation": "Všetky stavy"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Slovak",
+      "translation": "Vymazať filtre"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Slovak",
+      "translation": "Názov značky"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Slovak",
+      "translation": "Trieda"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Slovak",
+      "translation": "Krajina"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Slovak",
+      "translation": "Číslo žiadosti"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Slovak",
+      "translation": "Stav"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Slovak",
+      "translation": "Dátum expirácie"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Slovak",
+      "translation": "Akcie"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Slovak",
+      "translation": "Upraviť ochrannú známku"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Slovak",
+      "translation": "Pridať novú ochrannú známku"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Slovak",
+      "translation": "Zobraziť ochrannú známku"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Slovak",
+      "translation": "Názov značky"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Slovak",
+      "translation": "Číslo triedy"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Slovak",
+      "translation": "Krajina"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Slovak",
+      "translation": "Číslo žiadosti"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Slovak",
+      "translation": "Stav"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Slovak",
+      "translation": "Dátum expirácie"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Slovak",
+      "translation": "Dokumenty"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Slovak",
+      "translation": "Žiadne priložené dokumenty"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Slovak",
+      "translation": "Pridať dokument"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Slovak",
+      "translation": "Odstrániť"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Slovak",
+      "translation": "Nepodarilo sa načítať ochranné známky"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Slovak",
+      "translation": "Uloženie ochrannej známky zlyhalo. Skúste to znova."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Slovak",
+      "translation": "Právne prípady"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Slovak",
+      "translation": "Spravujte právne prípady a sledujte ich stav"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Slovak",
+      "translation": "Nový prípad"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Slovak",
+      "translation": "Názov prípadu"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Slovak",
+      "translation": "Typ puzdra"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Slovak",
+      "translation": "Krajina"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Slovak",
+      "translation": "Popis"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Slovak",
+      "translation": "Pridelené komu"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Slovak",
+      "translation": "Stav"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Slovak",
+      "translation": "Dátum vypočutia"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Slovak",
+      "translation": "Názov prípadu"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Slovak",
+      "translation": "Typ"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Slovak",
+      "translation": "Krajina"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Slovak",
+      "translation": "Pridelené komu"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Slovak",
+      "translation": "Stav"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Slovak",
+      "translation": "Dátum vypočutia"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Slovak",
+      "translation": "Akcie"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Slovak",
+      "translation": "OTVORENÉ"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Slovak",
+      "translation": "Prebieha"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Slovak",
+      "translation": "ZATVORENÉ"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Slovak",
+      "translation": "Zrušené"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Slovak",
+      "translation": "Zobrazenie mapy flotily"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Slovak",
+      "translation": "Sledovanie obchodných zástupcov a doručovacích vozidiel v reálnom čase"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Slovak",
+      "translation": "Aktívni zamestnanci"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Slovak",
+      "translation": "Žiadni aktívni zamestnanci"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Slovak",
+      "translation": "Načítava sa..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Slovak",
+      "translation": "Prehratie trasy"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Slovak",
+      "translation": "Zamestnanec"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Slovak",
+      "translation": "Rýchlosť"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Slovak",
+      "translation": "Obnoviť"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Slovak",
+      "translation": "Hrať"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Slovak",
+      "translation": "Pozastaviť"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Slovak",
+      "translation": "body"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Slovak",
+      "translation": "Nie sú k dispozícii žiadne údaje o trase"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Slovak",
+      "translation": "Načítava sa trasa..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Slovak",
+      "translation": "Konkurenčné produkty"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Slovak",
+      "translation": "Sledujte informácie o produktoch konkurencie"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Slovak",
+      "translation": "Pridať produkt"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Slovak",
+      "translation": "Pridať konkurenčný produkt"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Slovak",
+      "translation": "Značka"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Slovak",
+      "translation": "Názov SKU"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Slovak",
+      "translation": "Kategória"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Slovak",
+      "translation": "Veľkosť"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Slovak",
+      "translation": "Cena"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Slovak",
+      "translation": "Mena"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Slovak",
+      "translation": "Krajina"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Slovak",
+      "translation": "Značka"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Slovak",
+      "translation": "Názov SKU"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Slovak",
+      "translation": "Kategória"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Slovak",
+      "translation": "Veľkosť"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Slovak",
+      "translation": "Cena"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Slovak",
+      "translation": "Krajina"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Slovak",
+      "translation": "Dátum pridania"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Slovak",
+      "translation": "Načítanie produktov zlyhalo"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Slovak",
+      "translation": "Vytvorenie produktu zlyhalo. Skúste to znova."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Slovak",
+      "translation": "Nenašli sa žiadne konkurenčné produkty"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Slovak",
+      "translation": "Načítavajú sa produkty..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Slovak",
+      "translation": "Ovládací panel konkurenta"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Slovak",
+      "translation": "Analytika a prehľady o konkurenčných produktoch"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Slovak",
+      "translation": "Celkový počet produktov"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Slovak",
+      "translation": "Sledované značky"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Slovak",
+      "translation": "Krajiny"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Slovak",
+      "translation": "Kategórie"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Slovak",
+      "translation": "Produkty podľa značky"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Slovak",
+      "translation": "Produkty podľa krajiny"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Slovak",
+      "translation": "Produkty podľa kategórie"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Slovak",
+      "translation": "Načítavajú sa štatistiky..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Slovak",
+      "translation": "Nie sú k dispozícii žiadne štatistiky"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Slovak",
+      "translation": "Prehľad"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Slovak",
+      "translation": "Objednávky"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Slovak",
+      "translation": "Inventár"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Slovak",
+      "translation": "Logistika"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Slovak",
+      "translation": "Financie"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Slovak",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Slovak",
+      "translation": "HR"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Slovak",
+      "translation": "Výkonný riaditeľ"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Slovak",
+      "translation": "Investor"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Slovak",
+      "translation": "Právne/IPR"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Slovak",
+      "translation": "Súťažiaci"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Slovak",
+      "translation": "Import/Export"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Slovak",
+      "translation": "GPS sledovanie"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Slovak",
+      "translation": "Lokalizácia"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Slovak",
+      "translation": "Pracovné postupy"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Slovak",
+      "translation": "Administrátor"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Slovak",
+      "translation": "CRM operačný systém"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Slovak",
+      "translation": "Zákazník 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Slovak",
+      "translation": "Kompletné profily zákazníkov, história interakcií a správa vzťahov"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Slovak",
+      "translation": "Digitálne kampane"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Slovak",
+      "translation": "Viackanálové marketingové kampane (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Slovak",
+      "translation": "Potenciálni zákazníci a príležitosti"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Slovak",
+      "translation": "Správa potenciálnych zákazníkov, kvalifikácia a kanál príležitostí"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Slovak",
+      "translation": "Zákaznícka podpora"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Slovak",
+      "translation": "Správa tiketov, zákaznícky servis a riešenie problémov"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Slovak",
+      "translation": "Vernostné programy"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Slovak",
+      "translation": "Správa vernostných programov, gamifikácie a odmien pre maloobchodníkov"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Slovak",
+      "translation": "Zákazník 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Slovak",
+      "translation": "Nový zákazník"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Slovak",
+      "translation": "Celkový počet zákazníkov"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Slovak",
+      "translation": "Aktívne"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Slovak",
+      "translation": "Nové"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Slovak",
+      "translation": "Spokojnosť"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Slovak",
+      "translation": "Správa zákazníkov"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Slovak",
+      "translation": "Zobrazte si a spravujte vzťahy so zákazníkmi, interakcie a kampane."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Slovak",
+      "translation": "Načítava sa..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Slovak",
+      "translation": "Chyba pri načítavaní údajov CRM"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Slovak",
+      "translation": "Prehľad"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Slovak",
+      "translation": "Objednávky"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Slovak",
+      "translation": "Inventár"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Slovak",
+      "translation": "Logistika"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Slovak",
+      "translation": "Financie"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Slovak",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Slovak",
+      "translation": "HR"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Slovak",
+      "translation": "Výkonný riaditeľ"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Slovak",
+      "translation": "Investor"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Slovak",
+      "translation": "Právne/IPR"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Slovak",
+      "translation": "Súťažiaci"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Slovak",
+      "translation": "Import/Export"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Slovak",
+      "translation": "GPS sledovanie"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Slovak",
+      "translation": "Lokalizácia"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Slovak",
+      "translation": "Pracovné postupy"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Slovak",
+      "translation": "Administrátor"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Slovak",
+      "translation": "Zákazníci"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Slovak",
+      "translation": "Zamestnanci"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Slovak",
+      "translation": "Zisk"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Slovak",
+      "translation": "Načítava sa kokpit dodávateľa…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Slovak",
+      "translation": "Objednávky"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Slovak",
+      "translation": "Vychované Harvicsom"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Slovak",
+      "translation": "Zásielky / Veľká ponuka"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Slovak",
+      "translation": "Prijaté tento týždeň"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Slovak",
+      "translation": "Vytvorené faktúry"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Slovak",
+      "translation": "Čaká sa na platbu"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Slovak",
+      "translation": "Čakajúce platby"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Slovak",
+      "translation": "Naplánované vydanie"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Slovak",
+      "translation": "Kvalita / sťažnosti"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Slovak",
+      "translation": "Otvorené lístky"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Slovak",
+      "translation": "Predpoveď (na ďalšie 4 týždne)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Slovak",
+      "translation": "Zástupný symbol umelej inteligencie"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Slovak",
+      "translation": "Akcie dodávateľa"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Slovak",
+      "translation": "Potvrďte nadchádzajúce zásielky a aktualizujte harmonogram GRN."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Slovak",
+      "translation": "Skontrolujte si neuhradené faktúry a podeľte sa o rady týkajúce sa platieb."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Slovak",
+      "translation": "Riešte otvorené sťažnosti týkajúce sa kvality pomocou dôkazov o zabezpečení kvality."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Slovak",
+      "translation": "Používateľské meno"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Slovak",
+      "translation": "Heslo"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Slovak",
+      "translation": "E-mail"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Slovak",
+      "translation": "Odoslať"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Slovak",
+      "translation": "Zrušiť"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Slovak",
+      "translation": "Uložiť"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Slovak",
+      "translation": "Odstrániť"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Slovak",
+      "translation": "Hľadať"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Slovak",
+      "translation": "Filter"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Slovak",
+      "translation": "Obnoviť"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Slovak",
+      "translation": "Zatvoriť"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Slovak",
+      "translation": "Späť"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Slovak",
+      "translation": "Ďalej"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Slovak",
+      "translation": "Predchádzajúce"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Slovak",
+      "translation": "Potvrdiť"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Slovak",
+      "translation": "Zapamätaj si ma"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Slovak",
+      "translation": "Zabudli ste heslo?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Slovak",
+      "translation": "E-mail je povinný"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Slovak",
+      "translation": "Zadajte platnú e-mailovú adresu"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Slovak",
+      "translation": "Produkty"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Slovak",
+      "translation": "Aké produkty ponúka Harvics?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Slovak",
+      "translation": "Ponúkame široký sortiment prémiových potravinárskych výrobkov vrátane cukroviniek, nápojov, občerstvenia, cestovín, pekárenských výrobkov a mrazených potravín vo viacerých kategóriách."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Slovak",
+      "translation": "Kde si môžem kúpiť produkty Harvics?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Slovak",
+      "translation": "Naše produkty sú dostupné v maloobchodných predajniach vo viac ako 40 krajinách. Použite náš vyhľadávač predajní alebo kontaktnú stránku a nájdite predajcu vo vašom okolí."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Slovak",
+      "translation": "Ponúkate hromadné objednávky?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Slovak",
+      "translation": "Áno, ponúkame zľavy za hromadné objednávky pre firmy a maloobchodníkov. Viac informácií nájdete na našej stránke Zľavy za hromadné objednávky."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Slovak",
+      "translation": "Objednávky a doprava"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Slovak",
+      "translation": "Aké máte možnosti dopravy?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Slovak",
+      "translation": "Ponúkame rôzne možnosti dopravy vrátane štandardnej, expresnej a medzinárodnej dopravy. Doprava zdarma je k dispozícii pre objednávky nad 50 USD."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Slovak",
+      "translation": "Ako dlho trvá doručenie?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Slovak",
+      "translation": "Dodacie lehoty sa líšia v závislosti od lokality. Štandardné doručenie zvyčajne trvá 5 – 7 pracovných dní, zatiaľ čo expresné doručenie trvá 2 – 3 pracovné dni."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Slovak",
+      "translation": "Môžem sledovať svoju objednávku?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Slovak",
+      "translation": "Áno, svoju objednávku môžete sledovať pomocou sledovacieho čísla uvedeného v e-maile s potvrdením objednávky."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Slovak",
+      "translation": "Účet a platby"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Slovak",
+      "translation": "Ako si vytvorím účet?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Slovak",
+      "translation": "Kliknite na „Prihlásiť sa“ v hlavičke a vyberte možnosť „Vytvoriť účet“ pre registráciu nového účtu."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Slovak",
+      "translation": "Aké spôsoby platby akceptujete?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Slovak",
+      "translation": "Pre objednávky B2B akceptujeme všetky hlavné kreditné karty, debetné karty, PayPal a bankové prevody."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Slovak",
+      "translation": "Sú moje platobné informácie v bezpečí?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Slovak",
+      "translation": "Áno, na ochranu vašich platobných informácií používame štandardné šifrovanie."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Slovak",
+      "translation": "Vrátenie tovaru a refundácie"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Slovak",
+      "translation": "Aké sú vaše pravidlá vrátenia tovaru?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Slovak",
+      "translation": "Na neotvorené produkty v originálnom balení ponúkame 30-dňovú lehotu na vrátenie. Pre autorizáciu vrátenia kontaktujte, prosím, náš zákaznícky servis."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Slovak",
+      "translation": "Ako môžem požiadať o vrátenie peňazí?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Slovak",
+      "translation": "Kontaktujte náš tím zákazníckej podpory s číslom vašej objednávky a dôvodom vrátenia. Vašu refundáciu spracujeme do 5-7 pracovných dní."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Slovak",
+      "translation": "Stále máte otázky?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Slovak",
+      "translation": "Náš tím zákazníckej podpory je tu, aby vám pomohol"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Slovak",
+      "translation": "Kontaktujte nás"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Slovak",
+      "translation": "Kariéra"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Slovak",
+      "translation": "Kariéra | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Slovak",
+      "translation": "Pridajte sa k Harvics Global Ventures – preskúmajte príležitosti vo viac ako 40 krajinách."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Slovak",
+      "translation": "Pridajte sa k nám"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Slovak",
+      "translation": "Budujte budúcnosť globálneho obchodu"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Slovak",
+      "translation": "Rastieme vo viac ako 40 krajinách. Pridajte sa k tímu, ktorý buduje operačný systém s umelou inteligenciou pre globálny obchod."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Slovak",
+      "translation": "Voľné pozície"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Slovak",
+      "translation": "Krajiny"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Slovak",
+      "translation": "Vertikály odvetvia"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Slovak",
+      "translation": "Hľadanie zamestnancov v oddeleniach"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Slovak",
+      "translation": "Voľné pozície podľa oddelenia"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Slovak",
+      "translation": "Predaj a distribúcia"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Slovak",
+      "translation": "Zvyšovanie príjmov na viac ako 40 trhoch. Riadenie územia, kľúčoví zákazníci, vzťahy s distribútormi."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Slovak",
+      "translation": "Dodávateľský reťazec a logistika"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Slovak",
+      "translation": "Komplexný dodávateľský reťazec od továrne až po regál. Správa vozového parku, skladovanie, doručenie na poslednú míľu."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Slovak",
+      "translation": "Technológia a umelá inteligencia"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Slovak",
+      "translation": "Vytvorte Harvics OS — našu podnikovú platformu s umelou inteligenciou. Full-stack, strojové učenie, dátová veda."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Slovak",
+      "translation": "Financie a pokladnica"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Slovak",
+      "translation": "Multimenové financovanie, obchodné financovanie, digitálne platby HPay, správa devíz naprieč regiónmi."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Slovak",
+      "translation": "Obstarávanie a získavanie zdrojov"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Slovak",
+      "translation": "Globálne zásobovanie z viac ako 15 krajín pôvodu. Audity dodávateľov, kontrola kvality, programy priameho predaja z továrne."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Slovak",
+      "translation": "Ľudské zdroje"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Slovak",
+      "translation": "Získavanie talentov, vzdelávanie a rozvoj, riadenie výkonnosti v rôznych geografických oblastiach a kultúrach."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Slovak",
+      "translation": "Právne záležitosti a dodržiavanie predpisov"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Slovak",
+      "translation": "Dodržiavanie obchodných predpisov, preverovanie sankcií, ochrana duševného vlastníctva, správa zmlúv naprieč jurisdikciami."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Slovak",
+      "translation": "Marketing a značka"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Slovak",
+      "translation": "Viacjazyčné kampane, obsah v 38 lokalitách, digitálny marketing, stratégia značky pre 10 vertikál."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Slovak",
+      "translation": "role"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Slovak",
+      "translation": "Prečo Harvics"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Slovak",
+      "translation": "Globálna mobilita"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Slovak",
+      "translation": "Práca v Dubaji, Londýne, Karáčí, Láhaure a na viac ako 40 trhoch"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Slovak",
+      "translation": "Rastová dráha"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Slovak",
+      "translation": "Rýchly kariérny postup v rastúcej spoločnosti"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Slovak",
+      "translation": "Kultúra založená na umelej inteligencii"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Slovak",
+      "translation": "Pracujte s najmodernejšími systémami umelej inteligencie a inteligencie v reálnom čase"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Slovak",
+      "translation": "Konkurenčný balíček"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Slovak",
+      "translation": "Popredné odmeňovanie, bývanie a benefity na trhu"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Slovak",
+      "translation": "Rozpočet na vzdelávanie"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Slovak",
+      "translation": "Ročný rozpočet na rozvoj kurzov, konferencií a certifikácií"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Slovak",
+      "translation": "Flexibilná práca"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Slovak",
+      "translation": "Hybridné dohody s regionálnymi centrami po celom svete"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Slovak",
+      "translation": "Naša stratégia"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Slovak",
+      "translation": "Stratégia | Harwich"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Slovak",
+      "translation": "Budovanie udržateľnej budúcnosti prostredníctvom inovácií a excelentnosti"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Slovak",
+      "translation": "Budovanie udržateľnej budúcnosti prostredníctvom inovácií a excelentnosti"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Slovak",
+      "translation": "Globálna expanzia"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Slovak",
+      "translation": "Rozširujeme našu prítomnosť na rozvíjajúcich sa trhoch a zároveň posilňujeme našu pozíciu na etablovaných trhoch"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Slovak",
+      "translation": "Inovácia produktov"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Slovak",
+      "translation": "Investovanie do výskumu a vývoja s cieľom vyvíjať nové produkty, ktoré spĺňajú meniace sa preferencie spotrebiteľov"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Slovak",
+      "translation": "Udržateľnosť"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Slovak",
+      "translation": "Zaviazali sme sa k udržateľným postupom v celom našom dodávateľskom reťazci a prevádzke"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Slovak",
+      "translation": "Digitálna transformácia"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Slovak",
+      "translation": "Využívanie technológií na zlepšenie zákazníckej skúsenosti a prevádzkovej efektívnosti"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Slovak",
+      "translation": "Naša vízia"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Slovak",
+      "translation": "Byť poprednou svetovou spoločnosťou v oblasti prémiového spotrebného tovaru, uznávanou pre kvalitu, inovácie a udržateľnosť."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Slovak",
+      "translation": "Harvics Global Ventures | Prémiové globálne obchodovanie"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Slovak",
+      "translation": "Popredná svetová obchodná spoločnosť dodávajúca prémiové produkty do viac ako 10 odvetví. Pôsobí vo viac ako 50 krajinách od roku 2019."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Slovak",
+      "translation": "O nás | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Slovak",
+      "translation": "Zistite, ako sa spoločnosť Harvics Global Ventures stala vedúcou silou v globálnom obchode vo viac ako 40 krajinách a 10 odvetviach."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Slovak",
+      "translation": "Kontaktujte nás | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Slovak",
+      "translation": "Spojte sa s pobočkami spoločnosti Harvics po celom svete na Blízkom východe, v južnej Ázii, Európe, Afrike a Amerike."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Slovak",
+      "translation": "Produkty | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Slovak",
+      "translation": "Preskúmajte prémiový sortiment produktov Harvics v oblasti rýchloobrátkového spotrebného tovaru, textilu, komodít a priemyselných riešení."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Slovak",
+      "translation": "Kariéra | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Slovak",
+      "translation": "Pridajte sa k Harvics Global Ventures – preskúmajte príležitosti vo viac ako 40 krajinách v oblasti rýchloobrátkového spotrebného tovaru, textilu, logistiky a technológií."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Slovak",
+      "translation": "Mediálne centrum | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Slovak",
+      "translation": "Mediálne centrum Harvics – tlačové správy, najnovšie správy, značkové materiály a kontakty na médiá."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Slovak",
+      "translation": "Naša stratégia | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Slovak",
+      "translation": "Strategická vízia spoločnosti Harvics pre globálnu expanziu, inovácie, udržateľnosť a digitálnu transformáciu."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Slovak",
+      "translation": "Spoločenská zodpovednosť firiem | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Slovak",
+      "translation": "Iniciatívy spoločnosti Harvics v oblasti spoločenskej zodpovednosti podnikov – environmentálna starostlivosť, komunitné programy a etické obchodné praktiky."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Slovak",
+      "translation": "Často kladené otázky | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Slovak",
+      "translation": "Často kladené otázky o produktoch, službách, objednávaní a globálnych operáciách spoločnosti Harvics."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Slovak",
+      "translation": "Globálne lokality | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Slovak",
+      "translation": "Kancelárie a prevádzky spoločnosti Harvics na Blízkom východe, v južnej Ázii, Európe, Afrike a Amerike."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Slovak",
+      "translation": "Vedenie | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Slovak",
+      "translation": "Zoznámte sa s vedúcim tímom, ktorý riadi spoločnosť Harvics Global Ventures na viac ako 40 trhoch a v 10 vertikálach odvetví."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Slovak",
+      "translation": "Centrum pomoci | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Slovak",
+      "translation": "Získajte pomoc s objednávkami, účtami, dopravou a službami Harvics."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Slovak",
+      "translation": "Dodržiavanie predpisov a etika | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Slovak",
+      "translation": "Záväzok spoločnosti Harvics k dodržiavaniu predpisov, etickým obchodným praktikám a globálnym štandardom."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Slovak",
+      "translation": "Naša história | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Slovak",
+      "translation": "Od dubajského startupu v roku 2019 až po globálny podnik s pôsobnosťou vo viac ako 40 krajinách – príbeh Harvics."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Slovak",
+      "translation": "Spravodaj | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Slovak",
+      "translation": "Prihláste sa na odber noviniek Harvics a získajte prehľad o odvetví a informácie o uvedení produktov na trh."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Slovak",
+      "translation": "Prihlásiť sa | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Slovak",
+      "translation": "Prihláste sa do svojho účtu Harvics a spravujte objednávky a získajte prístup k platforme."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Slovak",
+      "translation": "Výskum a inovácie | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Slovak",
+      "translation": "Výskumné iniciatívy a inovačné programy spoločnosti Harvics sú hnacou silou našej globálnej stratégie."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Slovak",
+      "translation": "Vzťahy s investormi | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Slovak",
+      "translation": "Informácie pre investorov, finančné správy a firemné oznámenia od spoločnosti Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Slovak",
+      "translation": "Stránka sa nenašla"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Slovak",
+      "translation": "404 — Stránka sa nenašla"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Slovak",
+      "translation": "Stránka, ktorú hľadáte, neexistuje alebo bola presunutá."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Slovak",
+      "translation": "Prejsť na domovskú stránku"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Slovak",
+      "translation": "Späť"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Slovak",
+      "translation": "Niečo sa pokazilo"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Slovak",
+      "translation": "Niečo sa pokazilo"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Slovak",
+      "translation": "Je nám ľúto, ale stalo sa niečo neočakávané. Skúste, prosím, obnoviť stránku."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Slovak",
+      "translation": "Skúste to znova"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Slovak",
+      "translation": "Znovu načítať stránku"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Slovak",
+      "translation": "Kontaktovať podporu"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Slovak",
+      "translation": "Chyba aplikácie"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Slovak",
+      "translation": "Kritická chyba"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Slovak",
+      "translation": "Vyskytla sa kritická chyba. Znova načítajte stránku."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Slovak",
+      "translation": "Znovu načítať aplikáciu"
+    }
+  }
+}

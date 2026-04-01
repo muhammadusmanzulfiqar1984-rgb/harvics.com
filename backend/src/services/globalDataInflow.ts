@@ -1,8 +1,9 @@
 import axios from 'axios';
 import puppeteer from 'puppeteer';
+import { gpsRetailersDb, satelliteDb, territoryAssignmentsDb, routesDb, ordersDb, inventoryDb } from '../core/db';
 
 // --- Sovereign Architect: Global Data Inflow ---
-// Real-time Intelligence Stream: Economic, Environmental, Competitive
+// Real-time Intelligence Stream: Economic, Environmental, Competitive, Internal Tier-2
 
 export interface RealTimeEconomicData {
   currencyRate: number;
@@ -125,5 +126,60 @@ export class GlobalDataInflow {
     } finally {
       if (browser) await browser.close();
     }
+  }
+
+  // 4. INTERNAL: GPS Retail Coverage
+  public static async getGPSCoverage(countryCode?: string) {
+    const all = await gpsRetailersDb.list(countryCode ? { countryCode } : {}, 1, 10000);
+    const filtered = all.data;
+    const countries = new Set(filtered.map((r: any) => r.countryCode));
+    return {
+      totalRetailers: filtered.length,
+      countriesCovered: countries.size,
+      totalMonthlySales: filtered.reduce((s: number, r: any) => s + (r.monthlySales || 0), 0),
+      byCountry: Array.from(countries).map(c => ({
+        country: c,
+        retailers: filtered.filter((r: any) => r.countryCode === c).length,
+        sales: filtered.filter((r: any) => r.countryCode === c).reduce((s: number, r: any) => s + (r.monthlySales || 0), 0)
+      }))
+    };
+  }
+
+  // 5. INTERNAL: Satellite Market Gaps
+  public static async getSatelliteInsights() {
+    const whitespaces = await satelliteDb.list({}, 1, 10000);
+    return {
+      totalOpportunities: whitespaces.total,
+      averageCoverage: whitespaces.data.reduce((s: number, w: any) => s + (w.coverageScore || 0), 0) / Math.max(whitespaces.total, 1),
+      criticalGaps: whitespaces.data.filter((w: any) => (w.coverageScore || 0) < 35),
+      opportunities: whitespaces.data
+    };
+  }
+
+  // 6. INTERNAL: Territory Performance
+  public static async getTerritoryPerformance() {
+    const assignments = await territoryAssignmentsDb.list({}, 1, 10000);
+    return {
+      totalTerritories: assignments.total,
+      averageCoverage: assignments.data.reduce((s: number, a: any) => s + (a.coverage || 0), 0) / Math.max(assignments.total, 1),
+      underperforming: assignments.data.filter((a: any) => (a.coverage || 0) < 50),
+      topPerforming: assignments.data.filter((a: any) => (a.coverage || 0) >= 75)
+    };
+  }
+
+  // 7. INTERNAL: Supply Chain Metrics
+  public static async getSupplyChainMetrics() {
+    const [routes, orders, inventory] = await Promise.all([
+      routesDb.list({}, 1, 10000),
+      ordersDb.list({}, 1, 10000),
+      inventoryDb.list({}, 1, 10000),
+    ]);
+    return {
+      activeRoutes: routes.data.filter((r: any) => r.status === 'In Transit').length,
+      totalRoutes: routes.total,
+      pendingOrders: orders.data.filter((o: any) => o.status === 'Pending').length,
+      lowStockItems: inventory.data.filter((i: any) => i.onHand < (i.minStock || 0)).length,
+      supplyChainHealth: routes.data.filter((r: any) => r.status !== 'Delayed').length / Math.max(routes.total, 1) * 100
+    };
   }
 }

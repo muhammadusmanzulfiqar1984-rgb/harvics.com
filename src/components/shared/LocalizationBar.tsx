@@ -3,7 +3,7 @@
 import React from 'react'
 import { useLocalization } from '@/utils/localization'
 import LanguageSwitcher from '@/components/ui/LanguageSwitcher'
-import CountrySelector from '@/components/ui/CountrySelector'
+import CountrySelector from '@/features/geo/CountrySelector'
 import GeoSelector from '@/components/shared/GeoSelector'
 import GeoMappingDisplay from '@/components/shared/GeoMappingDisplay'
 

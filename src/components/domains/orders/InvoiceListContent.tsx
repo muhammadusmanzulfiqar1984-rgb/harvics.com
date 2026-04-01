@@ -63,7 +63,7 @@ export default function InvoiceListContent({ persona, locale }: InvoiceListConte
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#C3A35E]"></div>
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#E5E5EA]"></div>
       </div>
     )
   }
@@ -80,8 +80,8 @@ export default function InvoiceListContent({ persona, locale }: InvoiceListConte
     <div className="space-y-6">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <h3 className="text-xl font-semibold text-black">Invoicing & Billing</h3>
-        <button className="bg-[#C3A35E] text-black px-4 py-2 rounded-lg font-semibold hover:bg-[#C3A35E] transition-colors">
+        <h3 className="text-sm font-semibold text-[#1D1D1F]">Invoicing & Billing</h3>
+        <button className="px-4 py-2 bg-[#6B1F2B] text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
           + Generate Invoice
         </button>
       </div>
@@ -96,17 +96,17 @@ export default function InvoiceListContent({ persona, locale }: InvoiceListConte
         <KPICard
           label="Total Value"
           value={`$${(totalValue / 1000).toFixed(1)}k`}
-          icon="💰"
+          icon={<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5v7M6 6h3.5a1 1 0 010 2H6.5a1 1 0 000 2H10"/></svg>}
         />
         <KPICard
           label="Paid"
           value={paidCount}
-          icon="✅"
+          icon={<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><circle cx="8" cy="8" r="6.5"/><path d="M5 8l2 2 4-4"/></svg>}
         />
         <KPICard
           label="Overdue"
           value={overdueCount}
-          icon="⚠️"
+          icon={<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><path d="M8 2L1.5 13.5h13L8 2z"/><path d="M8 7v3M8 11.5v.5"/></svg>}
           change={overdueCount > 0 ? { value: 5, trend: 'down', label: 'last week' } : undefined}
         />
       </div>
@@ -129,19 +129,19 @@ export default function InvoiceListContent({ persona, locale }: InvoiceListConte
             <tbody className="divide-y divide-gray-200">
               {invoices.length > 0 ? (
                 invoices.map((inv) => (
-                  <tr key={inv.id} className="hover:bg-gray-50">
+                  <tr key={inv.id} className="hover:bg-[#F5F5F7]">
                     <td className="px-4 py-3 text-sm text-black font-medium">{inv.id}</td>
-                    <td className="px-4 py-3 text-sm text-gray-600">{inv.orderId}</td>
+                    <td className="px-4 py-3 text-sm text-[#1D1D1F]">{inv.orderId}</td>
                     <td className="px-4 py-3 text-sm text-black">{inv.customer}</td>
                     <td className="px-4 py-3 text-sm text-black font-medium">
                       {inv.currency} {inv.amount.toLocaleString()}
                     </td>
                     <td className="px-4 py-3 text-sm">
                       <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                        inv.status === 'paid' ? 'bg-green-100 text-green-800' :
-                        inv.status === 'overdue' ? 'bg-red-100 text-red-800' :
-                        inv.status === 'issued' ? 'bg-blue-100 text-blue-800' :
-                        'bg-gray-100 text-gray-800'
+                        inv.status === 'paid' ? 'bg-[#F5F5F7] text-[#1D1D1F]' :
+                        inv.status === 'overdue' ? 'bg-[#F5F5F7] text-[#1D1D1F]' :
+                        inv.status === 'issued' ? 'bg-[#F5F5F7] text-[#1D1D1F]' :
+                        'bg-[#F5F5F7] text-[#1D1D1F]'
                       }`}>
                         {inv.status.toUpperCase()}
                       </span>

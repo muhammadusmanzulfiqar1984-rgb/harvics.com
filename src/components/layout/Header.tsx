@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
-import CountrySelector from '@/components/ui/CountrySelector'
+import CountrySelector from '@/features/geo/CountrySelector'
 import LanguageSwitcher from '@/components/ui/LanguageSwitcher'
 import SearchModal from '@/components/ui/SearchModal'
 import AnalogClock from '@/components/ui/AnalogClock'
@@ -59,6 +59,13 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
   // State management
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
   
   // Single active dropdown state to ensure mutual exclusivity
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
@@ -126,16 +133,31 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
   const canSwitchMarket = availableCountries.length > 1
 
   return (
-    <header className="relative z-[200] pointer-events-auto font-sans" style={{ background: '#F5F1E8' }}>
+    <header className="relative z-[200] pointer-events-auto font-sans">
 
-      {/* T1 — TOP UTILITY BAR: Maroon bg, gold text, 32px */}
-      <div style={{ background: '#6B1F2B', borderBottom: '1px solid rgba(195,163,94,0.2)' }}>
-        <div className="max-w-[1200px] mx-auto px-4">
+      {/* T1 — TOP UTILITY BAR: Rich maroon with subtle glass and gold shimmer */}
+      <div className="relative overflow-hidden" style={{ 
+        background: 'linear-gradient(135deg, #6B1F2B 0%, #8B3A47 100%)',
+        borderBottom: '1px solid rgba(195,163,94,0.5)',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.1), inset 0 1px 0 rgba(195,163,94,0.15)'
+      }}>
+        {/* Subtle gold shimmer overlay */}
+        <div className="absolute inset-0 pointer-events-none" style={{
+          background: 'linear-gradient(90deg, transparent 0%, rgba(195,163,94,0.12) 50%, transparent 100%)',
+          backgroundSize: '200% 100%',
+          animation: 'shimmer-slow 4s ease-in-out infinite'
+        }} />
+        <style jsx>{`
+          @keyframes shimmer-slow {
+            0%, 100% { background-position: -200% 0; }
+            50% { background-position: 200% 0; }
+          }
+        `}</style>
+        <div className="max-w-[1400px] mx-auto px-6">
           <div className="flex justify-between items-center" style={{ height: '32px' }}>
 
             {/* Left links */}
             <div className="hidden md:flex items-center gap-6">
-              <AnalogClock size={28} />
               {[
                 { href: `/${locale}/csr`, label: t('esgReport') },
                 { href: `/${locale}/investor-relations`, label: t('investors') },
@@ -160,7 +182,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
                   </svg>
                 </button>
                 <div className={`absolute top-full ${isRTLMode ? 'right-0' : 'left-0'} mt-1 w-72 z-50 transition-opacity duration-200 ${activeDropdown === 'countries' ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
-                  style={{ background: '#F5F1E8', border: '1px solid rgba(195,163,94,0.4)' }}>
+                  style={{ background: '#ffffff', border: '1px solid rgba(195,163,94,0.4)' }}>
                   <div className="p-3">
                     <CountrySelector buttonClassName="w-full justify-start text-left px-4 py-3 font-semibold" menuAlignment="left"
                       options={canSwitchMarket ? availableCountries.map(code => ({ code, name: formatCountry(code) })) : undefined} />
@@ -175,21 +197,21 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
             </div>
 
             {/* Right side */}
-            <div className="flex items-center gap-4">
-              <div className="hidden sm:block [&_button]:text-xs [&_button]:font-semibold" style={{ color: '#C3A35E' }}>
+            <div className="flex items-center gap-6">
+              <div className="hidden sm:block">
                 <LanguageSwitcher />
               </div>
               <Link href={`/${locale}/login`}
-                className="flex items-center gap-1.5 px-4 py-1 transition-all duration-200 hover:opacity-90"
+                className="flex items-center gap-1.5 transition-opacity duration-200 hover:opacity-70"
                 style={{ 
-                  color: '#6B1F2B', 
+                  color: '#C3A35E', 
                   fontSize: '11px', 
-                  fontWeight: 700, 
+                  fontWeight: 600, 
                   letterSpacing: '0.05em', 
                   textTransform: 'uppercase' as const, 
                   textDecoration: 'none',
-                  background: '#C3A35E',
-                  border: '1px solid #C3A35E',
+                  background: 'transparent',
+                  border: 'none',
                 }}
               >
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -203,18 +225,37 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
       </div>
 
       {/* T2 — MAIN BRAND BAR: Ivory bg, logo left, search center, icons right */}
-      <div style={{ background: '#F5F1E8', borderBottom: '1px solid rgba(195,163,94,0.3)' }}>
-        <div className="max-w-[1200px] mx-auto px-4">
+      <div className="relative" style={{
+        background: scrolled ? 'rgba(255,255,255,0.92)' : '#ffffff',
+        backdropFilter: scrolled ? 'blur(20px) saturate(180%)' : 'none',
+        WebkitBackdropFilter: scrolled ? 'blur(20px) saturate(180%)' : 'none',
+        borderBottom: '1px solid rgba(195,163,94,0.3)',
+        transition: 'background 0.4s ease, backdrop-filter 0.4s ease',
+      }}>
+        <div className="max-w-[1400px] mx-auto px-6">
           <div className="flex items-center justify-between" style={{ height: '64px' }}>
 
             {/* Logo */}
-            <Link href={`/${locale}`} className="flex-shrink-0 transition-opacity duration-200 hover:opacity-80">
-              <img src="/Images/logo.png" alt="Harvics" style={{ height: '48px', width: 'auto', objectFit: 'contain' }} />
+            <Link href={`/${locale}`} className="flex-shrink-0 transition-all duration-300 hover:opacity-90 hover:scale-105 relative group">
+              <div className="relative flex items-center gap-3">
+                <img src="/logo.svg" alt="Harvics" style={{ height: '48px', width: 'auto', objectFit: 'contain' }} />
+                <div className="flex flex-col">
+                  <span className="text-xl font-bold text-harvics-maroon tracking-tight">HARVICS</span>
+                  <span className="text-[10px] text-harvics-gold uppercase tracking-widest">Global Ventures</span>
+                </div>
+                {/* Gold accent glow on hover */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300" 
+                  style={{ 
+                    background: 'radial-gradient(circle, rgba(195,163,94,0.4) 0%, transparent 70%)',
+                    filter: 'blur(8px)'
+                  }} 
+                />
+              </div>
             </Link>
 
             {/* Search */}
-            <div className="flex-1 max-w-xl mx-8 hidden md:block">
-              <div className="w-full flex items-center overflow-hidden" style={{ background: '#FFFFFF', border: '1px solid rgba(195,163,94,0.4)' }}>
+            <div className="flex-1 max-w-xl mx-8 hidden md:block relative">
+              <div className="w-full flex items-center overflow-hidden relative" style={{ background: '#FFFFFF', border: '1px solid rgba(195,163,94,0.4)' }}>
                 <input type="text" placeholder={getTranslation('search', 'common', 'Search product, code or brand')}
                   onClick={() => setIsSearchOpen(true)} readOnly
                   className="flex-1 px-4 py-2.5 bg-transparent outline-none"
@@ -226,7 +267,24 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </button>
+                {/* Search bar specific gold line */}
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 overflow-hidden">
+                  <div 
+                    className="h-full"
+                    style={{
+                      width: '40%',
+                      background: 'linear-gradient(to right, transparent, #C3A35E, transparent)',
+                      animation: 'searchLine 2.5s ease-in-out infinite'
+                    }}
+                  />
+                </div>
               </div>
+              <style dangerouslySetInnerHTML={{__html: `
+                @keyframes searchLine {
+                  0%, 100% { transform: translateX(-100%); opacity: 0.6; }
+                  50% { transform: translateX(250%); opacity: 1; }
+                }
+              `}} />
             </div>
 
             {/* Right icons */}
@@ -267,6 +325,24 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
           </div>
         </div>
 
+        {/* Animated running gold line - Full width */}
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 overflow-hidden">
+          <div 
+            className="h-full"
+            style={{
+              width: '30%',
+              background: 'linear-gradient(to right, transparent, #C3A35E, transparent)',
+              animation: 'runningLine 3s linear infinite'
+            }}
+          />
+        </div>
+        <style dangerouslySetInnerHTML={{__html: `
+          @keyframes runningLine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(400%); }
+          }
+        `}} />
+
         {/* T3 — NAV BAR: 10 Industry verticals + mega dropdown */}
         <div className="hidden lg:block">
           <SupremeNavBar />
@@ -275,7 +351,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 z-50" style={{ background: '#F5F1E8', borderTop: '1px solid rgba(195,163,94,0.3)' }}>
+        <div className="lg:hidden absolute top-full left-0 right-0 z-50" style={{ background: '#ffffff', borderTop: '1px solid rgba(195,163,94,0.3)' }}>
           <div className="p-6 space-y-4">
             <div className="flex flex-col items-center text-sm space-y-1" style={{ color: '#6B1F2B' }}>
               {roleLabel && <span className="font-semibold uppercase">{roleLabel}</span>}

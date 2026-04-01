@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "bn",
+    "language": "Bengali",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Bengali. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Bengali",
+      "translation": "স্বাগতম"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Bengali",
+      "translation": "হারউইচ"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Bengali",
+      "translation": "২০১৯ সাল থেকে উৎকৃষ্ট মানের ভোগ্যপণ্যে শ্রেষ্ঠত্ব"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Bengali",
+      "translation": "একটি শীর্ষস্থানীয় বিশ্বব্যাপী ভোগ্যপণ্য সংস্থা, যা আন্তর্জাতিক গুণমান বজায় রেখে বিভিন্ন বিভাগে উৎকৃষ্ট মানের খাদ্যপণ্য সরবরাহ করে।"
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Bengali",
+      "translation": "পণ্যগুলি অন্বেষণ করুন"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Bengali",
+      "translation": "আমাদের সাথে যোগাযোগ করুন"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Bengali",
+      "translation": "আরও জানুন"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Bengali",
+      "translation": "প্রিমিয়াম ভোগ্যপণ্যে শ্রেষ্ঠত্ব যেহেতু"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Bengali",
+      "translation": "২০১৯"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Bengali",
+      "translation": "লন্ডন • মিলান • নিউ ইয়র্ক"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Bengali",
+      "translation": "বেকারি"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Bengali",
+      "translation": "পানীয়"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Bengali",
+      "translation": "মিষ্টান্ন"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Bengali",
+      "translation": "রন্ধনশিল্প"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Bengali",
+      "translation": "হিমায়িত খাবার"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Bengali",
+      "translation": "পাস্তা"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Bengali",
+      "translation": "জলখাবার"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Bengali",
+      "translation": "ইএসজি রিপোর্ট ২০২৫"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Bengali",
+      "translation": "লন্ডন • মিলান • নিউ ইয়র্ক"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Bengali",
+      "translation": "হোম"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Bengali",
+      "translation": "সম্পর্কে"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Bengali",
+      "translation": "আমাদের সম্পর্কে"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Bengali",
+      "translation": "ব্র্যান্ড স্টোরি"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Bengali",
+      "translation": "পণ্য"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Bengali",
+      "translation": "আমাদের পণ্য"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Bengali",
+      "translation": "সমস্ত পণ্য দেখুন"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Bengali",
+      "translation": "সিএসআর"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Bengali",
+      "translation": "বিনিয়োগকারী সম্পর্ক"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Bengali",
+      "translation": "বিনিয়োগকারীরা"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Bengali",
+      "translation": "মিডিয়া"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Bengali",
+      "translation": "আমাদের সাথে যোগাযোগ করুন"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস হাউস"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Bengali",
+      "translation": "দেশগুলি"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Bengali",
+      "translation": "পোর্টাল"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Bengali",
+      "translation": "সাইন ইন করুন"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Bengali",
+      "translation": "ইচ্ছাতালিকা"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Bengali",
+      "translation": "শপিং কার্ট"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Bengali",
+      "translation": "সাহায্য"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Bengali",
+      "translation": "দোকান খুঁজুন"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Bengali",
+      "translation": "টাকা"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Bengali",
+      "translation": "বিক্রয়"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Bengali",
+      "translation": "অফার"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Bengali",
+      "translation": "ডার্ক মোড"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Bengali",
+      "translation": "ক্রেডিট কার্ড"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Bengali",
+      "translation": "এমএন্ডএস রিওয়ার্ডস ক্রেডিট কার্ড"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Bengali",
+      "translation": "ক্লাব পুরস্কার"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Bengali",
+      "translation": "আমাদের ক্রেডিট কার্ড"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Bengali",
+      "translation": "বীমা"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Bengali",
+      "translation": "গৃহ বীমা"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Bengali",
+      "translation": "ভ্রমণ বীমা"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Bengali",
+      "translation": "ভ্রমণ পরিষেবা"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Bengali",
+      "translation": "ভ্রমণের টাকা"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Bengali",
+      "translation": "বিনিময় হার"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Bengali",
+      "translation": "অতিরিক্ত পরিষেবা"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Bengali",
+      "translation": "সঞ্চয় ও বিনিয়োগ"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Bengali",
+      "translation": "ব্যক্তিগত ঋণ"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Bengali",
+      "translation": "আর্থিক সহায়তা"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Bengali",
+      "translation": "বর্তমান বিক্রয়"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Bengali",
+      "translation": "ছাড়পত্র"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Bengali",
+      "translation": "মৌসুমী বিক্রয়"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Bengali",
+      "translation": "বিশেষ অফার"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Bengali",
+      "translation": "পদোন্নতি"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Bengali",
+      "translation": "বাল্ক অর্ডারে ছাড়"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Bengali",
+      "translation": "আমাদের পণ্য"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Bengali",
+      "translation": "সমস্ত পণ্য দেখুন"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Bengali",
+      "translation": "আমাদের পণ্যের বিভাগসমূহ"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Bengali",
+      "translation": "যত্ন ও উৎকর্ষতার সাথে নির্মিত আমাদের সেরা মানের পণ্যগুলো দেখুন।"
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Bengali",
+      "translation": "স্তর ১: বিভাগসমূহ"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Bengali",
+      "translation": "স্তর ২: মডিউল"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Bengali",
+      "translation": "স্তর ৩: কেপিআই স্ক্রিন"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Bengali",
+      "translation": "স্তর ৪: পদক্ষেপ"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Bengali",
+      "translation": "নেভিগেশন রিসেট করুন"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Bengali",
+      "translation": "এই বিভাগের জন্য কোনো উপবিভাগ উপলব্ধ নেই।"
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Bengali",
+      "translation": "পণ্য"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Bengali",
+      "translation": "উপশ্রেণী"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Bengali",
+      "translation": "বেকারি"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Bengali",
+      "translation": "সদ্য বেক করা খাবার ও পেস্ট্রি।"
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Bengali",
+      "translation": "পানীয়"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Bengali",
+      "translation": "প্রতিটি অনুষ্ঠানের জন্য সতেজ পানীয়।"
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Bengali",
+      "translation": "মিষ্টান্ন"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Bengali",
+      "translation": "মিষ্টি খাবার ও সুস্বাদু জিনিস।"
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Bengali",
+      "translation": "রন্ধনশিল্প"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Bengali",
+      "translation": "আপনার রান্নাঘরের জন্য প্রয়োজনীয় উপকরণ।"
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Bengali",
+      "translation": "হিমায়িত খাবার"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Bengali",
+      "translation": "সুবিধাজনক ও সুস্বাদু হিমায়িত খাবার।"
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Bengali",
+      "translation": "পাস্তা"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Bengali",
+      "translation": "খাঁটি পাস্তার প্রকারভেদ।"
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Bengali",
+      "translation": "জলখাবার"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Bengali",
+      "translation": "দিনের যেকোনো সময়ের জন্য সুস্বাদু নাস্তা।"
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস সম্পর্কে"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Bengali",
+      "translation": "২০১৯ সাল থেকে উৎকৃষ্ট মানের ভোগ্যপণ্যে শ্রেষ্ঠত্ব"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Bengali",
+      "translation": "আমাদের গল্প"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Bengali",
+      "translation": "২০১৯ সালে প্রতিষ্ঠিত হারভিকস একটি দূরদর্শী ধারণা থেকে প্রিমিয়াম ভোগ্যপণ্যের এক বিশ্বব্যাপী শীর্ষস্থানীয় প্রতিষ্ঠানে পরিণত হয়েছে। গুণমানের নিরলস সাধনা এবং উদ্ভাবনের প্রতি অঙ্গীকারই আমাদের এই যাত্রার মূল বৈশিষ্ট্য।"
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Bengali",
+      "translation": "আমরা ৪০টিরও বেশি দেশে কার্যক্রম পরিচালনা করি এবং এমন সব পণ্য সরবরাহ করি যা জীবনকে সমৃদ্ধ করে ও শিল্পে নতুন মানদণ্ড স্থাপন করে। আমাদের সাধারণ সূচনা থেকে বিশ্বব্যাপী উপস্থিতি পর্যন্ত, আমাদের মূল্যবোধ অপরিবর্তিত রয়েছে।"
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Bengali",
+      "translation": "প্রতিষ্ঠিত ২০১৯"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Bengali",
+      "translation": "৪০টিরও বেশি দেশ"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Bengali",
+      "translation": "৬টি পণ্য লাইন"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Bengali",
+      "translation": "কর্পোরেট সামাজিক দায়বদ্ধতা"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Bengali",
+      "translation": "হারভিক্সে, আমরা বিশ্বে একটি ইতিবাচক প্রভাব ফেলতে প্রতিশ্রুতিবদ্ধ। আমাদের সিএসআর উদ্যোগগুলো টেকসই উন্নয়ন, সামাজিক ক্ষমতায়ন এবং নৈতিক ব্যবসায়িক অনুশীলনের উপর আলোকপাত করে।"
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Bengali",
+      "translation": "প্রভাবের বছর"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Bengali",
+      "translation": "পৌঁছানো দেশসমূহ"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Bengali",
+      "translation": "জীবন স্পর্শ করেছে"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Bengali",
+      "translation": "আমাদের প্রধান উদ্যোগসমূহ"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Bengali",
+      "translation": "টেকসই পরিবর্তন আনতে এবং সকল অংশীজনের জন্য যৌথ মূল্য তৈরি করতে আমরা চারটি প্রধান স্তম্ভের ওপর মনোযোগ দিই।"
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Bengali",
+      "translation": "স্থায়িত্ব"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Bengali",
+      "translation": "নবায়নযোগ্য শক্তি ও বর্জ্য হ্রাসের মাধ্যমে পরিবেশের উপর আমাদের প্রভাব কমানো।"
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Bengali",
+      "translation": "নবায়নযোগ্য শক্তি"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Bengali",
+      "translation": "বর্জ্য অন্যত্র সরানো হয়েছে"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Bengali",
+      "translation": "কার্বন হ্রাস"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Bengali",
+      "translation": "সম্প্রদায় সমর্থন"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Bengali",
+      "translation": "শিক্ষা, স্বাস্থ্যসেবা ও অর্থনৈতিক উন্নয়নের মাধ্যমে স্থানীয় সম্প্রদায়কে ক্ষমতায়ন করা।"
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Bengali",
+      "translation": "পরিবার সমর্থিত"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Bengali",
+      "translation": "সক্রিয় প্রোগ্রাম"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Bengali",
+      "translation": "স্বেচ্ছাসেবক"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Bengali",
+      "translation": "শিক্ষা"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Bengali",
+      "translation": "সুবিধাবঞ্চিত শিক্ষার্থীদের জন্য মানসম্মত শিক্ষা ও বৃত্তির সুযোগ প্রদান।"
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Bengali",
+      "translation": "বৃত্তি"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Bengali",
+      "translation": "অংশীদার স্কুল"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Bengali",
+      "translation": "শিক্ষার্থীরা প্রভাবিত"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Bengali",
+      "translation": "স্বাস্থ্য ও সুস্থতা"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Bengali",
+      "translation": "সুবিধাবঞ্চিত অঞ্চলে স্বাস্থ্যসেবা ও পুষ্টির সুযোগ উন্নত করা।"
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Bengali",
+      "translation": "স্বাস্থ্য প্রচারণা"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Bengali",
+      "translation": "সেবাপ্রাপ্ত মানুষ"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Bengali",
+      "translation": "মোবাইল ক্লিনিক"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Bengali",
+      "translation": "সেরা সিএসআর উদ্যোগ"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Bengali",
+      "translation": "সামাজিক দায়বদ্ধতার প্রতি আমাদের উদ্ভাবনী পদ্ধতির জন্য সম্মানিত।"
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Bengali",
+      "translation": "কমিউনিটি চ্যাম্পিয়ন"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Bengali",
+      "translation": "আমাদের ব্যাপক জনসম্পৃক্ততামূলক কর্মসূচির জন্য পুরস্কৃত।"
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Bengali",
+      "translation": "গ্লোবাল সাসটেইনেবিলিটি অ্যাওয়ার্ড"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Bengali",
+      "translation": "কার্বন নিরপেক্ষতার প্রতি আমাদের অঙ্গীকারের জন্য স্বীকৃত।"
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Bengali",
+      "translation": "আমাদের প্রভাব"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Bengali",
+      "translation": "একটি উন্নততর বিশ্ব গড়ার পথে আমাদের মাইলফলকগুলোকে স্বীকৃতি প্রদান।"
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Bengali",
+      "translation": "পরিবর্তন আনতে আমাদের সাথে যোগ দিন"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Bengali",
+      "translation": "আমাদের সাথে অংশীদার হোন অথবা আমরা কীভাবে একটি টেকসই ভবিষ্যৎ গড়ে তুলছি সে সম্পর্কে আরও জানুন।"
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Bengali",
+      "translation": "সিএসআর টিমের সাথে যোগাযোগ করুন"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Bengali",
+      "translation": "আরও জানুন"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Bengali",
+      "translation": "যোগাযোগ করুন"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Bengali",
+      "translation": "আমরা আপনার মতামত জানতে আগ্রহী। এই মাধ্যমগুলোর যেকোনো একটির মাধ্যমে আমাদের সাথে যোগাযোগ করুন।"
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Bengali",
+      "translation": "ফোন"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Bengali",
+      "translation": "ইমেল"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Bengali",
+      "translation": "হোয়াটসঅ্যাপ"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Bengali",
+      "translation": "এখনই কল করুন"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Bengali",
+      "translation": "ইমেল পাঠান"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Bengali",
+      "translation": "আমাদেরকে বার্তা পাঠান"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Bengali",
+      "translation": "মিডিয়া সেন্টার"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Bengali",
+      "translation": "মিডিয়া সেন্টার | হারভিকস"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস গ্লোবাল ভেঞ্চারস-এর প্রেস রিসোর্স, ব্র্যান্ড অ্যাসেট এবং সর্বশেষ খবর।"
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Bengali",
+      "translation": "কর্পোরেট"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Bengali",
+      "translation": "সংবাদ ও প্রেস বিজ্ঞপ্তি"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস গ্লোবাল ভেঞ্চারস-এর সর্বশেষ ঘোষণা, বাজার সম্প্রসারণ, নতুন পণ্য উন্মোচন এবং প্রাতিষ্ঠানিক হালনাগাদ।"
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Bengali",
+      "translation": "সর্বশেষ খবর পড়ুন"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Bengali",
+      "translation": "ছবির গ্যালারি"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Bengali",
+      "translation": "মিডিয়ার ব্যবহারের জন্য উচ্চ রেজোলিউশনের ব্র্যান্ড অ্যাসেট, পণ্যের ছবি, প্রতিষ্ঠানের ছবি এবং ইভেন্টের কভারেজ।"
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Bengali",
+      "translation": "গ্যালারি ব্রাউজ করুন"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Bengali",
+      "translation": "গণমাধ্যম যোগাযোগ"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Bengali",
+      "translation": "সংবাদমাধ্যম সংক্রান্ত জিজ্ঞাসা, সাক্ষাৎকারের অনুরোধ এবং অংশীদারিত্ব ঘোষণার জন্য আমাদের যোগাযোগ দলের সাথে যোগাযোগ করুন।"
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Bengali",
+      "translation": "প্রেস টিমের সাথে যোগাযোগ করুন"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Bengali",
+      "translation": "অন্তর্ভুক্ত বাজারসমূহ"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Bengali",
+      "translation": "শিল্প উল্লম্ব"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Bengali",
+      "translation": "দুবাইতে প্রতিষ্ঠিত"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Bengali",
+      "translation": "সমর্থিত ভাষা"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Bengali",
+      "translation": "সাম্প্রতিক শিরোনাম"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস দক্ষিণ-পূর্ব এশিয়ার ৫টি নতুন বাজারে তার এফএমসিজি কার্যক্রম সম্প্রসারণ করেছে"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Bengali",
+      "translation": "বিশ্বব্যাপী বিতরণের জন্য নতুন এআই-চালিত সাপ্লাই চেইন প্ল্যাটফর্ম চালু করা হয়েছে"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস তার সকল স্থাপনায় কার্বন-নিরপেক্ষতার মাইলফলক অর্জন করেছে"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Bengali",
+      "translation": "দক্ষিণ এশিয়ার শীর্ষস্থানীয় বস্ত্র প্রস্তুতকারকদের সাথে কৌশলগত অংশীদারিত্ব"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস হাউস"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Bengali",
+      "translation": "শ্রেষ্ঠত্ব ও ঐতিহ্যের উত্তরাধিকার"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস হাউসে আপনাকে স্বাগতম"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস হাউস গুণমান ও ঐতিহ্যের প্রতি আমাদের অঙ্গীকারের সর্বোচ্চ নিদর্শন। এখানে আমরা আমাদের সেরা মানের পণ্যগুলোর সমাহার ঘটাই, যা এমন এক পরিবেশে প্রদর্শিত হয় যা আমাদের রুচিশীলতা, ঐতিহ্য এবং উদ্ভাবনের মূল্যবোধকে প্রতিফলিত করে।"
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Bengali",
+      "translation": "আমাদের এক্সক্লুসিভ কালেকশনগুলো ঘুরে দেখুন এবং হারভিকস নামের প্রতিটি পণ্যের পেছনের গল্প জানুন।"
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস গ্লোবাল ভেঞ্চারস"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Bengali",
+      "translation": "২০১৯ সাল থেকে উৎকৃষ্ট মানের ভোগ্যপণ্যে শ্রেষ্ঠত্ব"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Bengali",
+      "translation": "একটি শীর্ষস্থানীয় বিশ্বব্যাপী ভোগ্যপণ্য সংস্থা, যা আন্তর্জাতিক গুণমান বজায় রেখে বিভিন্ন বিভাগে উৎকৃষ্ট মানের খাদ্যপণ্য সরবরাহ করে।"
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Bengali",
+      "translation": "লন্ডন • মিলান • নিউ ইয়র্ক"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Bengali",
+      "translation": "২০১৯ সাল থেকে"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস নিউজ"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Bengali",
+      "translation": "সতর্কতা ও আপডেট পেতে সাবস্ক্রাইব করুন।"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Bengali",
+      "translation": "সাইন আপ করুন"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Bengali",
+      "translation": "সম্মতি সংক্রান্ত উদ্বেগ"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Bengali",
+      "translation": "নিয়মকানুন বা নৈতিকতা নিয়ে কোনো উদ্বেগ থাকলে তা জানান।"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Bengali",
+      "translation": "কথা বলুন"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Bengali",
+      "translation": "আমাদের সাথে যোগাযোগ করুন"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Bengali",
+      "translation": "আমাদের দলের সাথে যোগাযোগ করুন।"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Bengali",
+      "translation": "আমাদের সাথে যোগাযোগ করুন"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Bengali",
+      "translation": "দরকারী লিঙ্ক"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Bengali",
+      "translation": "আস্ক হ্যারউইচ"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Bengali",
+      "translation": "চাকরি খুঁজুন"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Bengali",
+      "translation": "খবরের জন্য সাইন আপ করুন"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Bengali",
+      "translation": "কোম্পানি"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Bengali",
+      "translation": "বিশ্বব্যাপী ঠিকানা"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Bengali",
+      "translation": "কৌশল"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Bengali",
+      "translation": "আমাদের নেতৃত্ব"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Bengali",
+      "translation": "ব্র্যান্ড এ-জেড"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Bengali",
+      "translation": "আমাদের ইতিহাস"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Bengali",
+      "translation": "স্থায়িত্ব"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Bengali",
+      "translation": "সংবাদ"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Bengali",
+      "translation": "গণমাধ্যম যোগাযোগ"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Bengali",
+      "translation": "ছবি"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Bengali",
+      "translation": "বিনিয়োগকারীরা"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Bengali",
+      "translation": "কর্পোরেট গভর্নেন্স"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Bengali",
+      "translation": "শেয়ার, এডিআর এবং বন্ড"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Bengali",
+      "translation": "প্রকাশনা"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Bengali",
+      "translation": "আমাদের অনুসরণ করুন"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Bengali",
+      "translation": "০টি সমস্যা"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Bengali",
+      "translation": "সাইট ম্যাপ"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Bengali",
+      "translation": "সদস্যতা বাতিল করুন"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Bengali",
+      "translation": "সাহায্য"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Bengali",
+      "translation": "গোপনীয়তা"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Bengali",
+      "translation": "কুকি"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Bengali",
+      "translation": "ব্যবহারের শর্তাবলী"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Bengali",
+      "translation": "প্রবেশগম্যতা"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Bengali",
+      "translation": "কার্বন দক্ষতা"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Bengali",
+      "translation": "সরবরাহকারী"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Bengali",
+      "translation": "সোশ্যাল মিডিয়া"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Bengali",
+      "translation": "কুকি সেটিংস"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Bengali",
+      "translation": "প্রিমিয়াম গুণমান"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Bengali",
+      "translation": "ইমেইল ঠিকানা"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Bengali",
+      "translation": "আপনার ইমেল ঠিকানা লিখুন"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Bengali",
+      "translation": "সাবস্ক্রাইব করুন"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Bengali",
+      "translation": "সাবস্ক্রাইব করা..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Bengali",
+      "translation": "আমাদের সম্পর্কে"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Bengali",
+      "translation": "মিডিয়া"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Bengali",
+      "translation": "পণ্য, ব্র্যান্ড বা বিভাগ অনুসন্ধান করুন"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Bengali",
+      "translation": "কোনো ফলাফল পাওয়া যায়নি"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Bengali",
+      "translation": "অনুসন্ধান করা হচ্ছে..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Bengali",
+      "translation": "ফলাফল"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Bengali",
+      "translation": "আমাদের সাথে চ্যাট করুন"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Bengali",
+      "translation": "আপনার বার্তা টাইপ করুন..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Bengali",
+      "translation": "পাঠান"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Bengali",
+      "translation": "বন্ধ করুন"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Bengali",
+      "translation": "হ্যালো! আজ আমি আপনাকে কীভাবে সাহায্য করতে পারি?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Bengali",
+      "translation": "দুঃখিত, আমি ব্যাপারটা বুঝতে পারিনি। আপনি কি অনুগ্রহ করে বিষয়টি আবার গুছিয়ে বলবেন?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Bengali",
+      "translation": "আমি আপনাকে পণ্যের তথ্য, অর্ডার বা সাধারণ জিজ্ঞাসার বিষয়ে সাহায্য করতে পারি। আপনি কী জানতে চান?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Bengali",
+      "translation": "আরও সহায়তার জন্য, অনুগ্রহ করে আমাদের সাথে support@harvics.com ইমেল ঠিকানায় যোগাযোগ করুন অথবা +1-800-HARVICS নম্বরে ফোন করুন।"
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Bengali",
+      "translation": "আমাদের সাথে চ্যাট করুন"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Bengali",
+      "translation": "লোড হচ্ছে..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Bengali",
+      "translation": "ত্রুটি"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Bengali",
+      "translation": "সাফল্য"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Bengali",
+      "translation": "সংরক্ষণ করুন"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Bengali",
+      "translation": "বাতিল করুন"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Bengali",
+      "translation": "মুছে ফেলুন"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Bengali",
+      "translation": "সম্পাদনা"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Bengali",
+      "translation": "দেখুন"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Bengali",
+      "translation": "জমা দিন"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Bengali",
+      "translation": "অনুসন্ধান"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Bengali",
+      "translation": "ফিল্টার"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Bengali",
+      "translation": "পরিষ্কার"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Bengali",
+      "translation": "ডাউনলোড করুন"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Bengali",
+      "translation": "আপলোড"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Bengali",
+      "translation": "হ্যাঁ"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Bengali",
+      "translation": "না"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Bengali",
+      "translation": "বন্ধ করুন"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Bengali",
+      "translation": "ফিরে যান"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Bengali",
+      "translation": "পরবর্তী"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Bengali",
+      "translation": "পূর্ববর্তী"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Bengali",
+      "translation": "কর্ম"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Bengali",
+      "translation": "অবস্থা"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Bengali",
+      "translation": "তারিখ"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Bengali",
+      "translation": "নাম"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Bengali",
+      "translation": "ইমেল"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Bengali",
+      "translation": "ফোন"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Bengali",
+      "translation": "ঠিকানা"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Bengali",
+      "translation": "দেশ"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Bengali",
+      "translation": "শহর"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Bengali",
+      "translation": "সব"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Bengali",
+      "translation": "কোনোটিই না"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Bengali",
+      "translation": "নির্বাচন করুন"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Bengali",
+      "translation": "ভাষা নির্বাচন করুন"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Bengali",
+      "translation": "দেশ নির্বাচন করুন"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Bengali",
+      "translation": "আরও দেখুন"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Bengali",
+      "translation": "কম দেখান"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Bengali",
+      "translation": "প্রয়োজনীয়"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Bengali",
+      "translation": "মেনু"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Bengali",
+      "translation": "পণ্য দেখুন"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Bengali",
+      "translation": "গান বাজান"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Bengali",
+      "translation": "সঙ্গীত থামান"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Bengali",
+      "translation": "নিঃশব্দ সঙ্গীত"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Bengali",
+      "translation": "আনমিউট মিউজিক"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Bengali",
+      "translation": "আমাদের বিশ্বব্যাপী প্রভাব"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Bengali",
+      "translation": "যেহেতু"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Bengali",
+      "translation": "প্রধান বাজার"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Bengali",
+      "translation": "প্রধান বাজার"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Bengali",
+      "translation": "উপস্থিতি"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Bengali",
+      "translation": "পরিষেবা প্রদানকারী দেশসমূহ"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Bengali",
+      "translation": "প্রধান বাজার"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Bengali",
+      "translation": "পণ্যের বিভাগ"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Bengali",
+      "translation": "প্রতিষ্ঠিত"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Bengali",
+      "translation": "অঞ্চল শ্রেণিবিন্যাস"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Bengali",
+      "translation": "সম্পূর্ণ পথ"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Bengali",
+      "translation": "বর্তমান অঞ্চল"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Bengali",
+      "translation": "কোন আইটেম নেই"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Bengali",
+      "translation": "গ্লোব"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Bengali",
+      "translation": "মহাদেশ"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Bengali",
+      "translation": "অঞ্চল"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Bengali",
+      "translation": "দেশ"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Bengali",
+      "translation": "শহর"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Bengali",
+      "translation": "জেলা"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Bengali",
+      "translation": "অবস্থান"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস গ্লোবাল"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Bengali",
+      "translation": "বিশ্বব্যাপী"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Bengali",
+      "translation": "অঞ্চল নির্বাচন করুন"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Bengali",
+      "translation": "গ্রাহকের বিবরণ"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Bengali",
+      "translation": "নির্বাচিত"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Bengali",
+      "translation": "পুরো নাম"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Bengali",
+      "translation": "আপনার পুরো নাম লিখুন"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Bengali",
+      "translation": "নাম আবশ্যক"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Bengali",
+      "translation": "ইমেইল ঠিকানা"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Bengali",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Bengali",
+      "translation": "ইমেল আবশ্যক"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Bengali",
+      "translation": "অনুগ্রহ করে একটি বৈধ ইমেল ঠিকানা লিখুন"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Bengali",
+      "translation": "ফোন নম্বর"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Bengali",
+      "translation": "+১ ২৩৪ ৫৬৭ ৮৯০০"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Bengali",
+      "translation": "ফোন নম্বর প্রয়োজন"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Bengali",
+      "translation": "ঠিকানা"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Bengali",
+      "translation": "আপনার ঠিকানা"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Bengali",
+      "translation": "ঠিকানা আবশ্যক"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Bengali",
+      "translation": "আমি বিপণন সংক্রান্ত যোগাযোগ এবং আপডেট পেতে সম্মত।"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Bengali",
+      "translation": "জমা দিন এবং চালিয়ে যান"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Bengali",
+      "translation": "জমা দেওয়া হচ্ছে..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Bengali",
+      "translation": "এড়িয়ে যান এবং চালিয়ে যান"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Bengali",
+      "translation": "মূল কর্মক্ষমতা সূচক"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Bengali",
+      "translation": "আজকের অর্ডার"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস সিআরএম-এর মাধ্যমে জমা দেওয়া হয়েছে"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Bengali",
+      "translation": "অপেক্ষমান ডেলিভারি"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Bengali",
+      "translation": "নির্ধারিত রুট জুড়ে"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Bengali",
+      "translation": "খুচরা বিক্রেতারা"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Bengali",
+      "translation": "আওতাভুক্ত সক্রিয় আউটলেটগুলি"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Bengali",
+      "translation": "টি অ্যান্ড এ স্কোর"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Bengali",
+      "translation": "অঞ্চল কভারেজ"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Bengali",
+      "translation": "আর্থিক ও ইনভেন্টরি"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Bengali",
+      "translation": "কম স্টক SKU"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Bengali",
+      "translation": "পুনরায় পূরণ ট্রিগার করুন"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Bengali",
+      "translation": "বকেয়া চালান"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Bengali",
+      "translation": "সংগ্রহের জন্য বকেয়া"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Bengali",
+      "translation": "ক্রেডিট সীমা"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Bengali",
+      "translation": "অর্থায়ন দ্বারা নির্ধারিত"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Bengali",
+      "translation": "স্বয়ংক্রিয় অনুমোদন, স্টক পুনঃপূরণ, এবং ইনভয়েস রিমাইন্ডার সক্রিয় করা হয়েছে"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Bengali",
+      "translation": "আত্ম-অনুমোদন"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Bengali",
+      "translation": "স্টক পুনঃপূরণ"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Bengali",
+      "translation": "ইনভয়েস রিমাইন্ডার"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Bengali",
+      "translation": "এআই সুপারিশ"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Bengali",
+      "translation": "ঝুঁকির মাত্রা"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Bengali",
+      "translation": "ক্রেডিট ব্যবহার এবং পরিশোধের ইতিহাসের উপর ভিত্তি করে"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Bengali",
+      "translation": "প্রস্তাবিত ক্রম"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Bengali",
+      "translation": "অর্ডার করার জন্য AI-প্রস্তাবিত SKU-গুলি"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Bengali",
+      "translation": "পরবর্তী পদক্ষেপ"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Bengali",
+      "translation": "কার্যক্রম ও নির্দেশনা"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Bengali",
+      "translation": "অভিযোগ"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Bengali",
+      "translation": "খুচরা বিক্রেতার সমস্যাগুলো সমাধানের অপেক্ষায় রয়েছে।"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Bengali",
+      "translation": "প্লেবুক"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Bengali",
+      "translation": "দুপুরের আগে অপেক্ষমান ডেলিভারিগুলোকে অগ্রাধিকার দিন।"
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Bengali",
+      "translation": "৪৮ ঘন্টার মধ্যে সকল অমীমাংসিত অভিযোগ নিষ্পত্তি করুন।"
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Bengali",
+      "translation": "কম স্টক থাকা SKU-গুলির জন্য পুনরায় স্টক পূরণের ব্যবস্থা চালু করুন (স্বয়ংক্রিয়ভাবে PO তৈরি করুন)।"
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Bengali",
+      "translation": "অঞ্চল"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Bengali",
+      "translation": "এই মাসের অর্ডার"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Bengali",
+      "translation": "বিচারাধীন আদেশ"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Bengali",
+      "translation": "ডেলিভারি করা অর্ডার"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Bengali",
+      "translation": "অঞ্চল তথ্য"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Bengali",
+      "translation": "দেশ"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Bengali",
+      "translation": "শহর"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Bengali",
+      "translation": "অঞ্চল"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Bengali",
+      "translation": "দ্রুত পদক্ষেপ"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Bengali",
+      "translation": "নতুন ব্যবস্থা"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Bengali",
+      "translation": "অর্ডারগুলো দেখুন"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Bengali",
+      "translation": "চালানগুলি দেখুন"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Bengali",
+      "translation": "প্রোফাইল সেটিংস"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Bengali",
+      "translation": "ড্যাশবোর্ড লোড হচ্ছে..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Bengali",
+      "translation": "ত্রুটি"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Bengali",
+      "translation": "আমার আদেশ"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Bengali",
+      "translation": "অর্ডার আইডি"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Bengali",
+      "translation": "তারিখ"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Bengali",
+      "translation": "অবস্থা"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Bengali",
+      "translation": "আইটেম"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Bengali",
+      "translation": "মোট পরিমাণ"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Bengali",
+      "translation": "কর্ম"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Bengali",
+      "translation": "বিস্তারিত দেখুন"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Bengali",
+      "translation": "অবস্থা"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Bengali",
+      "translation": "শুরুর তারিখ"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Bengali",
+      "translation": "শেষ তারিখ"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Bengali",
+      "translation": "সমস্ত স্ট্যাটাস"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Bengali",
+      "translation": "ফিল্টার পরিষ্কার করুন"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Bengali",
+      "translation": "বিচারাধীন"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Bengali",
+      "translation": "প্রক্রিয়াকরণ"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Bengali",
+      "translation": "বিতরণ করা হয়েছে"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Bengali",
+      "translation": "বাতিল করা হয়েছে"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Bengali",
+      "translation": "কোন অর্ডার পাওয়া যায়নি"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Bengali",
+      "translation": "অর্ডার লোড হচ্ছে..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Bengali",
+      "translation": "পৃষ্ঠা"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Bengali",
+      "translation": "এর"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Bengali",
+      "translation": "পূর্ববর্তী"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Bengali",
+      "translation": "পরবর্তী"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Bengali",
+      "translation": "অর্ডারের বিবরণ"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Bengali",
+      "translation": "অর্ডারগুলিতে ফিরে যান"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Bengali",
+      "translation": "অর্ডার আইডি"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Bengali",
+      "translation": "অবস্থা"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Bengali",
+      "translation": "আদেশের তারিখ"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Bengali",
+      "translation": "ডেলিভারির তারিখ"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Bengali",
+      "translation": "ডেলিভারি ঠিকানা"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Bengali",
+      "translation": "নোট"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Bengali",
+      "translation": "অর্ডার আইটেম"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Bengali",
+      "translation": "পণ্য"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Bengali",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Bengali",
+      "translation": "পরিমাণ"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Bengali",
+      "translation": "একক মূল্য"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Bengali",
+      "translation": "মোট"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Bengali",
+      "translation": "মোট পরিমাণ"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Bengali",
+      "translation": "স্ট্যাটাস টাইমলাইন"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Bengali",
+      "translation": "অর্ডারটি খুঁজে পাওয়া যায়নি"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Bengali",
+      "translation": "নতুন অর্ডার তৈরি করুন"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Bengali",
+      "translation": "অর্ডার আইটেম"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Bengali",
+      "translation": "আইটেম যোগ করুন"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Bengali",
+      "translation": "এখনো কোনো আইটেম যোগ করা হয়নি। শুরু করতে 'আইটেম যোগ করুন'-এ ক্লিক করুন।"
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Bengali",
+      "translation": "অর্ডারের বিবরণ"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Bengali",
+      "translation": "ডেলিভারির তারিখ"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Bengali",
+      "translation": "ডেলিভারি ঠিকানা"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Bengali",
+      "translation": "নোট"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Bengali",
+      "translation": "মোট পরিমাণ"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Bengali",
+      "translation": "অর্ডার তৈরি করুন"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Bengali",
+      "translation": "শৃঙ্খলা তৈরি করা হচ্ছে..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Bengali",
+      "translation": "বাতিল করুন"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Bengali",
+      "translation": "পণ্য নির্বাচন করুন"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Bengali",
+      "translation": "পণ্য"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Bengali",
+      "translation": "পরিমাণ"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Bengali",
+      "translation": "একক মূল্য"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Bengali",
+      "translation": "অপসারণ করুন"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Bengali",
+      "translation": "উপমোট"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Bengali",
+      "translation": "অর্ডার আইডি"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Bengali",
+      "translation": "কমপক্ষে একটি অর্ডার আইটেম প্রয়োজন"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Bengali",
+      "translation": "পণ্যটি প্রয়োজন"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Bengali",
+      "translation": "পরিমাণ অবশ্যই ০ অপেক্ষা বেশি হতে হবে।"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Bengali",
+      "translation": "একক মূল্য অবশ্যই অঋণাত্মক হতে হবে।"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Bengali",
+      "translation": "ডেলিভারির তারিখের ভুল ফরম্যাট"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Bengali",
+      "translation": "ডেলিভারির তারিখ অতীতের হতে পারবে না।"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Bengali",
+      "translation": "আমার চালানগুলি"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Bengali",
+      "translation": "চালান নম্বর"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Bengali",
+      "translation": "চালানের তারিখ"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Bengali",
+      "translation": "দুটি তারিখ"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Bengali",
+      "translation": "পরিমাণ"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Bengali",
+      "translation": "প্রদত্ত পরিমাণ"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Bengali",
+      "translation": "অর্থপ্রদানের অবস্থা"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Bengali",
+      "translation": "অর্থপ্রদানের অবস্থা"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Bengali",
+      "translation": "সমস্ত স্ট্যাটাস"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Bengali",
+      "translation": "ফিল্টার পরিষ্কার করুন"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Bengali",
+      "translation": "প্রদত্ত"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Bengali",
+      "translation": "অবৈতনিক"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Bengali",
+      "translation": "আংশিক"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Bengali",
+      "translation": "কোন চালান পাওয়া যায়নি"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Bengali",
+      "translation": "চালান লোড হচ্ছে..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Bengali",
+      "translation": "আমার প্রোফাইল"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Bengali",
+      "translation": "অ্যাকাউন্টের তথ্য"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Bengali",
+      "translation": "ডিস্ট্রিবিউটর আইডি"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Bengali",
+      "translation": "অঞ্চল"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Bengali",
+      "translation": "দেশ"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Bengali",
+      "translation": "শহর"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Bengali",
+      "translation": "অ্যাকাউন্ট তৈরি করা হয়েছে"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Bengali",
+      "translation": "প্রোফাইল আপডেট করুন"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Bengali",
+      "translation": "নাম"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Bengali",
+      "translation": "ইমেল"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Bengali",
+      "translation": "ফোন"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Bengali",
+      "translation": "ঠিকানা"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Bengali",
+      "translation": "ভাষা"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Bengali",
+      "translation": "মুদ্রা"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Bengali",
+      "translation": "পরিবর্তনগুলি সংরক্ষণ করুন"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Bengali",
+      "translation": "সঞ্চয়..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Bengali",
+      "translation": "প্রোফাইল সফলভাবে আপডেট করা হয়েছে"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Bengali",
+      "translation": "প্রোফাইল লোড হচ্ছে..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Bengali",
+      "translation": "অবৈধ ইমেল ফরম্যাট"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Bengali",
+      "translation": "অবৈধ ফোন ফরম্যাট"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Bengali",
+      "translation": "ত্রুটি"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Bengali",
+      "translation": "লোড হচ্ছে..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Bengali",
+      "translation": "সংরক্ষণ করুন"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Bengali",
+      "translation": "বাতিল করুন"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Bengali",
+      "translation": "ফিরে যান"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Bengali",
+      "translation": "জমা দিন"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Bengali",
+      "translation": "মুছে ফেলুন"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Bengali",
+      "translation": "সম্পাদনা"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Bengali",
+      "translation": "দেখুন"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Bengali",
+      "translation": "অনুসন্ধান"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Bengali",
+      "translation": "ফিল্টার"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Bengali",
+      "translation": "পরিষ্কার"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Bengali",
+      "translation": "আবেদন করুন"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Bengali",
+      "translation": "বন্ধ করুন"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Bengali",
+      "translation": "নিশ্চিত করুন"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Bengali",
+      "translation": "হ্যাঁ"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Bengali",
+      "translation": "না"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Bengali",
+      "translation": "আইনি অপারেটিং সিস্টেম"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Bengali",
+      "translation": "আইনি ওএস"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Bengali",
+      "translation": "প্রবেশাধিকার প্রত্যাখ্যাত"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Bengali",
+      "translation": "লিগ্যাল ওএস মডিউলটি অ্যাক্সেস করার অনুমতি আপনার নেই।"
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Bengali",
+      "translation": "ড্যাশবোর্ড"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Bengali",
+      "translation": "চুক্তি"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Bengali",
+      "translation": "সার্টিফিকেট"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Bengali",
+      "translation": "সম্মতি"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Bengali",
+      "translation": "আইনি ড্যাশবোর্ড"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Bengali",
+      "translation": "আইনি কার্যক্রম এবং সম্মতি স্থিতির সংক্ষিপ্ত বিবরণ"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Bengali",
+      "translation": "সক্রিয় ট্রেডমার্ক"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Bengali",
+      "translation": "সক্রিয় চুক্তি"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Bengali",
+      "translation": "সম্মতি স্থিতি"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Bengali",
+      "translation": "ট্রেডমার্ক"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Bengali",
+      "translation": "ট্রেডমার্ক নিবন্ধন এবং আবেদনপত্র পরিচালনা করুন"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Bengali",
+      "translation": "নতুন ট্রেডমার্ক যোগ করুন"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Bengali",
+      "translation": "দেশ"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Bengali",
+      "translation": "অবস্থা"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Bengali",
+      "translation": "সকল দেশ"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Bengali",
+      "translation": "সমস্ত স্ট্যাটাস"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Bengali",
+      "translation": "ফিল্টার পরিষ্কার করুন"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Bengali",
+      "translation": "ব্র্যান্ডের নাম"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Bengali",
+      "translation": "শ্রেণী"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Bengali",
+      "translation": "দেশ"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Bengali",
+      "translation": "আবেদন নং"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Bengali",
+      "translation": "অবস্থা"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Bengali",
+      "translation": "মেয়াদ উত্তীর্ণের তারিখ"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Bengali",
+      "translation": "কর্ম"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Bengali",
+      "translation": "ট্রেডমার্ক সম্পাদনা করুন"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Bengali",
+      "translation": "নতুন ট্রেডমার্ক যোগ করুন"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Bengali",
+      "translation": "ট্রেডমার্ক দেখুন"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Bengali",
+      "translation": "ব্র্যান্ডের নাম"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Bengali",
+      "translation": "শ্রেণী নম্বর"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Bengali",
+      "translation": "দেশ"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Bengali",
+      "translation": "আবেদন নম্বর"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Bengali",
+      "translation": "অবস্থা"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Bengali",
+      "translation": "মেয়াদ উত্তীর্ণের তারিখ"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Bengali",
+      "translation": "নথি"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Bengali",
+      "translation": "কোন নথি সংযুক্ত নেই"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Bengali",
+      "translation": "নথি যোগ করুন"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Bengali",
+      "translation": "অপসারণ করুন"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Bengali",
+      "translation": "ট্রেডমার্ক লোড করতে ব্যর্থ হয়েছে"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Bengali",
+      "translation": "ট্রেডমার্ক সংরক্ষণ করা সম্ভব হয়নি। অনুগ্রহ করে আবার চেষ্টা করুন।"
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Bengali",
+      "translation": "আইনি মামলা"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Bengali",
+      "translation": "আইনি মামলা পরিচালনা করুন এবং সেগুলোর অবস্থা পর্যবেক্ষণ করুন।"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Bengali",
+      "translation": "নতুন মামলা"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Bengali",
+      "translation": "মামলার শিরোনাম"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Bengali",
+      "translation": "মামলার ধরণ"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Bengali",
+      "translation": "দেশ"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Bengali",
+      "translation": "বর্ণনা"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Bengali",
+      "translation": "নির্ধারিত"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Bengali",
+      "translation": "অবস্থা"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Bengali",
+      "translation": "শুনানির তারিখ"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Bengali",
+      "translation": "মামলার শিরোনাম"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Bengali",
+      "translation": "প্রকার"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Bengali",
+      "translation": "দেশ"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Bengali",
+      "translation": "নির্ধারিত"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Bengali",
+      "translation": "অবস্থা"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Bengali",
+      "translation": "শুনানির তারিখ"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Bengali",
+      "translation": "কর্ম"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Bengali",
+      "translation": "খোলা"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Bengali",
+      "translation": "চলমান"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Bengali",
+      "translation": "বন্ধ"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Bengali",
+      "translation": "বাতিল করা হয়েছে"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Bengali",
+      "translation": "ফ্লিট ম্যাপ ভিউ"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Bengali",
+      "translation": "বিক্রয় কর্মকর্তা এবং ডেলিভারি যানবাহনের রিয়েল-টাইম ট্র্যাকিং"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Bengali",
+      "translation": "সক্রিয় কর্মচারী"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Bengali",
+      "translation": "কোন সক্রিয় কর্মচারী নেই"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Bengali",
+      "translation": "লোড হচ্ছে..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Bengali",
+      "translation": "রুট রিপ্লে"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Bengali",
+      "translation": "কর্মচারী"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Bengali",
+      "translation": "গতি"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Bengali",
+      "translation": "রিসেট"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Bengali",
+      "translation": "খেলা"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Bengali",
+      "translation": "বিরতি"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Bengali",
+      "translation": "পয়েন্ট"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Bengali",
+      "translation": "কোন রুট ডেটা উপলব্ধ নেই"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Bengali",
+      "translation": "রুট লোড হচ্ছে..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Bengali",
+      "translation": "প্রতিযোগী পণ্য"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Bengali",
+      "translation": "প্রতিযোগী পণ্যের তথ্য ট্র্যাক করুন"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Bengali",
+      "translation": "পণ্য যোগ করুন"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Bengali",
+      "translation": "প্রতিযোগী পণ্য যোগ করুন"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Bengali",
+      "translation": "ব্র্যান্ড"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Bengali",
+      "translation": "SKU নাম"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Bengali",
+      "translation": "বিভাগ"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Bengali",
+      "translation": "আকার"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Bengali",
+      "translation": "মূল্য"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Bengali",
+      "translation": "মুদ্রা"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Bengali",
+      "translation": "দেশ"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Bengali",
+      "translation": "ব্র্যান্ড"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Bengali",
+      "translation": "SKU নাম"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Bengali",
+      "translation": "বিভাগ"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Bengali",
+      "translation": "আকার"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Bengali",
+      "translation": "মূল্য"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Bengali",
+      "translation": "দেশ"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Bengali",
+      "translation": "যোগ করার তারিখ"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Bengali",
+      "translation": "পণ্য লোড করতে ব্যর্থ হয়েছে"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Bengali",
+      "translation": "পণ্যটি তৈরি করা সম্ভব হয়নি। অনুগ্রহ করে আবার চেষ্টা করুন।"
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Bengali",
+      "translation": "কোন প্রতিযোগী পণ্য খুঁজে পাওয়া যায়নি"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Bengali",
+      "translation": "পণ্য লোড হচ্ছে..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Bengali",
+      "translation": "প্রতিযোগী ড্যাশবোর্ড"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Bengali",
+      "translation": "প্রতিযোগী পণ্য সম্পর্কিত বিশ্লেষণ ও অন্তর্দৃষ্টি"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Bengali",
+      "translation": "মোট পণ্য"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Bengali",
+      "translation": "ট্র্যাক করা ব্র্যান্ডগুলি"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Bengali",
+      "translation": "দেশগুলি"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Bengali",
+      "translation": "বিভাগগুলি"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Bengali",
+      "translation": "ব্র্যান্ড অনুসারে পণ্য"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Bengali",
+      "translation": "দেশ অনুযায়ী পণ্য"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Bengali",
+      "translation": "বিভাগ অনুযায়ী পণ্য"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Bengali",
+      "translation": "পরিসংখ্যান লোড হচ্ছে..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Bengali",
+      "translation": "কোন পরিসংখ্যান উপলব্ধ নেই"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Bengali",
+      "translation": "সংক্ষিপ্ত বিবরণ"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Bengali",
+      "translation": "আদেশ"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Bengali",
+      "translation": "ইনভেন্টরি"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Bengali",
+      "translation": "লজিস্টিকস"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Bengali",
+      "translation": "অর্থায়ন"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Bengali",
+      "translation": "সিআরএম"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Bengali",
+      "translation": "এইচআর"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Bengali",
+      "translation": "নির্বাহী"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Bengali",
+      "translation": "বিনিয়োগকারী"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Bengali",
+      "translation": "আইনি/আইপিআর"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Bengali",
+      "translation": "প্রতিযোগী"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Bengali",
+      "translation": "আমদানি/রপ্তানি"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Bengali",
+      "translation": "জিপিএস ট্র্যাকিং"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Bengali",
+      "translation": "স্থানীয়করণ"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Bengali",
+      "translation": "ওয়ার্কফ্লো"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Bengali",
+      "translation": "প্রশাসক"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Bengali",
+      "translation": "সিআরএম ওএস"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Bengali",
+      "translation": "গ্রাহক ৩৬০"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Bengali",
+      "translation": "সম্পূর্ণ গ্রাহক প্রোফাইল, যোগাযোগের ইতিহাস এবং সম্পর্ক ব্যবস্থাপনা"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Bengali",
+      "translation": "ডিজিটাল প্রচারাভিযান"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Bengali",
+      "translation": "মাল্টি-চ্যানেল মার্কেটিং ক্যাম্পেইন (ইনস্টাগ্রাম, ফেসবুক, টিকটক, হোয়াটসঅ্যাপ)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Bengali",
+      "translation": "লিড এবং সুযোগ"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Bengali",
+      "translation": "লিড ম্যানেজমেন্ট, যোগ্যতা যাচাই, এবং সুযোগের পাইপলাইন"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Bengali",
+      "translation": "গ্রাহক সহায়তা"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Bengali",
+      "translation": "টিকিট ব্যবস্থাপনা, গ্রাহক সেবা এবং সমস্যার সমাধান"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Bengali",
+      "translation": "আনুগত্য প্রোগ্রাম"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Bengali",
+      "translation": "খুচরা বিক্রেতার আনুগত্য, গেমফিকেশন এবং পুরস্কার ব্যবস্থাপনা"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Bengali",
+      "translation": "গ্রাহক ৩৬০"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Bengali",
+      "translation": "নতুন গ্রাহক"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Bengali",
+      "translation": "মোট গ্রাহক"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Bengali",
+      "translation": "সক্রিয়"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Bengali",
+      "translation": "নতুন"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Bengali",
+      "translation": "সন্তুষ্টি"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Bengali",
+      "translation": "গ্রাহক ব্যবস্থাপনা"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Bengali",
+      "translation": "আপনার গ্রাহক সম্পর্ক, মিথস্ক্রিয়া এবং প্রচারাভিযানগুলো দেখুন ও পরিচালনা করুন।"
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Bengali",
+      "translation": "লোড হচ্ছে..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Bengali",
+      "translation": "CRM ডেটা লোড করতে ত্রুটি"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Bengali",
+      "translation": "সংক্ষিপ্ত বিবরণ"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Bengali",
+      "translation": "আদেশ"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Bengali",
+      "translation": "ইনভেন্টরি"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Bengali",
+      "translation": "লজিস্টিকস"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Bengali",
+      "translation": "অর্থায়ন"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Bengali",
+      "translation": "সিআরএম"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Bengali",
+      "translation": "এইচআর"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Bengali",
+      "translation": "নির্বাহী"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Bengali",
+      "translation": "বিনিয়োগকারী"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Bengali",
+      "translation": "আইনি/আইপিআর"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Bengali",
+      "translation": "প্রতিযোগী"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Bengali",
+      "translation": "আমদানি/রপ্তানি"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Bengali",
+      "translation": "জিপিএস ট্র্যাকিং"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Bengali",
+      "translation": "স্থানীয়করণ"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Bengali",
+      "translation": "ওয়ার্কফ্লো"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Bengali",
+      "translation": "প্রশাসক"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Bengali",
+      "translation": "গ্রাহকরা"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Bengali",
+      "translation": "কর্মচারীরা"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Bengali",
+      "translation": "লাভ"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Bengali",
+      "translation": "সরবরাহকারী ককপিট লোড হচ্ছে…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Bengali",
+      "translation": "ক্রয় আদেশ"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Bengali",
+      "translation": "হারভিকদের দ্বারা পালিত"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Bengali",
+      "translation": "চালান / জিআরএন"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Bengali",
+      "translation": "এই সপ্তাহে গৃহীত হয়েছে"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Bengali",
+      "translation": "চালান তৈরি করা হয়েছে"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Bengali",
+      "translation": "অর্থপ্রদানের অপেক্ষায়"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Bengali",
+      "translation": "বকেয়া পেমেন্ট"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Bengali",
+      "translation": "মুক্তির জন্য নির্ধারিত"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Bengali",
+      "translation": "গুণমান / অভিযোগ"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Bengali",
+      "translation": "টিকিট খোলা"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Bengali",
+      "translation": "পূর্বাভাস (আগামী ৪ সপ্তাহ)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Bengali",
+      "translation": "এআই প্লেসহোল্ডার"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Bengali",
+      "translation": "সরবরাহকারীর পদক্ষেপ"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Bengali",
+      "translation": "আসন্ন চালানগুলো নিশ্চিত করুন এবং জিআরএন সময়সূচী হালনাগাদ করুন।"
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Bengali",
+      "translation": "বকেয়া চালানগুলো পর্যালোচনা করুন এবং পরিশোধের পরামর্শ দিন।"
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Bengali",
+      "translation": "QA প্রমাণের সাহায্যে অমীমাংসিত গুণমান সংক্রান্ত অভিযোগগুলির সমাধান করুন।"
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Bengali",
+      "translation": "ব্যবহারকারীর নাম"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Bengali",
+      "translation": "পাসওয়ার্ড"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Bengali",
+      "translation": "ইমেল"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Bengali",
+      "translation": "জমা দিন"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Bengali",
+      "translation": "বাতিল করুন"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Bengali",
+      "translation": "সংরক্ষণ করুন"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Bengali",
+      "translation": "মুছে ফেলুন"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Bengali",
+      "translation": "অনুসন্ধান"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Bengali",
+      "translation": "ফিল্টার"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Bengali",
+      "translation": "রিসেট"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Bengali",
+      "translation": "বন্ধ করুন"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Bengali",
+      "translation": "ফিরে যান"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Bengali",
+      "translation": "পরবর্তী"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Bengali",
+      "translation": "পূর্ববর্তী"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Bengali",
+      "translation": "নিশ্চিত করুন"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Bengali",
+      "translation": "আমাকে মনে রেখো"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Bengali",
+      "translation": "পাসওয়ার্ড ভুলে গেছেন?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Bengali",
+      "translation": "ইমেল আবশ্যক"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Bengali",
+      "translation": "অনুগ্রহ করে একটি বৈধ ইমেল ঠিকানা লিখুন"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Bengali",
+      "translation": "পণ্য"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস কী কী পণ্য সরবরাহ করে?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Bengali",
+      "translation": "আমরা মিষ্টান্ন, পানীয়, স্ন্যাকস, পাস্তা, বেকারি সামগ্রী এবং হিমায়িত খাদ্য সহ বিভিন্ন বিভাগের নানা ধরনের উৎকৃষ্ট মানের খাদ্যপণ্য সরবরাহ করে থাকি।"
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Bengali",
+      "translation": "আমি হারভিকস পণ্য কোথায় কিনতে পারি?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Bengali",
+      "translation": "আমাদের পণ্য ৪০টিরও বেশি দেশের খুচরা দোকানে পাওয়া যায়। আপনার নিকটবর্তী খুচরা বিক্রেতা খুঁজে পেতে আমাদের স্টোর লোকেটার বা যোগাযোগ পৃষ্ঠা ব্যবহার করুন।"
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Bengali",
+      "translation": "আপনারা কি পাইকারি অর্ডারের সুবিধা দেন?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Bengali",
+      "translation": "হ্যাঁ, আমরা ব্যবসা প্রতিষ্ঠান ও খুচরা বিক্রেতাদের জন্য বাল্ক অর্ডারে ছাড় দিয়ে থাকি। আরও তথ্যের জন্য আমাদের বাল্ক অর্ডার ডিসকাউন্ট পেজটি দেখুন।"
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Bengali",
+      "translation": "অর্ডার এবং শিপিং"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Bengali",
+      "translation": "আপনার শিপিংয়ের বিকল্পগুলো কী কী?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Bengali",
+      "translation": "আমরা স্ট্যান্ডার্ড, এক্সপ্রেস এবং আন্তর্জাতিক শিপিং সহ বিভিন্ন শিপিং বিকল্প অফার করি। $50-এর বেশি অর্ডারে ফ্রি শিপিং পাওয়া যায়।"
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Bengali",
+      "translation": "ডেলিভারি হতে কতক্ষণ সময় লাগে?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Bengali",
+      "translation": "স্থানভেদে ডেলিভারির সময় ভিন্ন হয়। স্ট্যান্ডার্ড ডেলিভারিতে সাধারণত ৫-৭ কর্মদিবস এবং এক্সপ্রেস ডেলিভারিতে ২-৩ কর্মদিবস সময় লাগে।"
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Bengali",
+      "translation": "আমি কি আমার অর্ডার ট্র্যাক করতে পারি?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Bengali",
+      "translation": "হ্যাঁ, আপনার অর্ডার নিশ্চিতকরণ ইমেলে দেওয়া ট্র্যাকিং নম্বরটি ব্যবহার করে আপনি আপনার অর্ডার ট্র্যাক করতে পারেন।"
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Bengali",
+      "translation": "অ্যাকাউন্ট ও পেমেন্ট"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Bengali",
+      "translation": "আমি কীভাবে একটি অ্যাকাউন্ট তৈরি করব?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Bengali",
+      "translation": "নতুন অ্যাকাউন্ট নিবন্ধন করার জন্য হেডারে থাকা \"সাইন ইন\"-এ ক্লিক করুন এবং \"অ্যাকাউন্ট তৈরি করুন\" নির্বাচন করুন।"
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Bengali",
+      "translation": "আপনারা কোন কোন পেমেন্ট পদ্ধতি গ্রহণ করেন?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Bengali",
+      "translation": "B2B অর্ডারের জন্য আমরা সব প্রধান ক্রেডিট কার্ড, ডেবিট কার্ড, পেপাল এবং ব্যাংক ট্রান্সফার গ্রহণ করি।"
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Bengali",
+      "translation": "আমার পেমেন্টের তথ্য কি সুরক্ষিত?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Bengali",
+      "translation": "হ্যাঁ, আমরা আপনার পেমেন্টের তথ্য সুরক্ষিত রাখতে শিল্প-মানসম্মত এনক্রিপশন ব্যবহার করি।"
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Bengali",
+      "translation": "ফেরত ও রিফান্ড"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Bengali",
+      "translation": "আপনাদের পণ্য ফেরত নীতি কী?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Bengali",
+      "translation": "আমরা আসল প্যাকেজিং-সহ অব্যবহৃত পণ্যের জন্য ৩০ দিনের রিটার্ন পলিসি অফার করি। পণ্য ফেরতের অনুমোদনের জন্য অনুগ্রহ করে আমাদের কাস্টমার সার্ভিসে যোগাযোগ করুন।"
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Bengali",
+      "translation": "আমি কীভাবে টাকা ফেরতের জন্য অনুরোধ করব?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Bengali",
+      "translation": "আপনার অর্ডার নম্বর এবং ফেরত দেওয়ার কারণ উল্লেখ করে আমাদের গ্রাহক পরিষেবা দলের সাথে যোগাযোগ করুন। আমরা ৫-৭ কার্যদিবসের মধ্যে আপনার অর্থ ফেরতের ব্যবস্থা করব।"
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Bengali",
+      "translation": "এখনও কোনো প্রশ্ন আছে?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Bengali",
+      "translation": "আমাদের গ্রাহক পরিষেবা দল আপনাকে সাহায্য করার জন্য এখানে আছে।"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Bengali",
+      "translation": "আমাদের সাথে যোগাযোগ করুন"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Bengali",
+      "translation": "কর্মজীবন"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Bengali",
+      "translation": "ক্যারিয়ার | হারভিকস"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস গ্লোবাল ভেঞ্চারস-এ যোগ দিন — ৪০টিরও বেশি দেশে সুযোগ অন্বেষণ করুন।"
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Bengali",
+      "translation": "আমাদের সাথে যোগ দিন"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Bengali",
+      "translation": "বিশ্ব বাণিজ্যের ভবিষ্যৎ গড়ুন"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Bengali",
+      "translation": "আমরা ৪০টিরও বেশি দেশে আমাদের কার্যক্রম প্রসারিত করছি। এমন একটি দলে যোগ দিন যারা বিশ্ব বাণিজ্যের জন্য এআই-চালিত অপারেটিং সিস্টেম তৈরি করছে।"
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Bengali",
+      "translation": "খালি পদ"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Bengali",
+      "translation": "দেশগুলি"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Bengali",
+      "translation": "শিল্প উল্লম্ব"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Bengali",
+      "translation": "বিভাগ নিয়োগ"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Bengali",
+      "translation": "বিভাগ অনুযায়ী শূন্য পদ"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Bengali",
+      "translation": "বিক্রয় ও বিতরণ"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Bengali",
+      "translation": "৪০টিরও বেশি বাজারে রাজস্ব বৃদ্ধি করুন। এলাকা ব্যবস্থাপনা, গুরুত্বপূর্ণ গ্রাহক, পরিবেশক সম্পর্ক।"
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Bengali",
+      "translation": "সরবরাহ শৃঙ্খল ও লজিস্টিকস"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Bengali",
+      "translation": "কারখানা থেকে পণ্য তাক পর্যন্ত সম্পূর্ণ সরবরাহ শৃঙ্খল। যানবাহন ব্যবস্থাপনা, গুদামজাতকরণ, শেষ ধাপের ডেলিভারি।"
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Bengali",
+      "translation": "প্রযুক্তি ও এআই"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস ওএস তৈরি করুন — আমাদের এআই-চালিত এন্টারপ্রাইজ প্ল্যাটফর্ম। ফুল-স্ট্যাক, এমএল ইঞ্জিনিয়ারিং, ডেটা সায়েন্স।"
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Bengali",
+      "translation": "অর্থ ও কোষাগার"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Bengali",
+      "translation": "বহু-মুদ্রা ট্রেজারি, ট্রেড ফাইন্যান্স, এইচপে ডিজিটাল পেমেন্ট, এবং বিভিন্ন অঞ্চল জুড়ে বৈদেশিক মুদ্রা ব্যবস্থাপনা।"
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Bengali",
+      "translation": "সংগ্রহ ও উৎসায়ন"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Bengali",
+      "translation": "১৫টিরও বেশি উৎস দেশ থেকে বৈশ্বিক সংগ্রহ। সরবরাহকারী নিরীক্ষা, মান নিয়ন্ত্রণ, সরাসরি কারখানা থেকে পণ্য সংগ্রহের কার্যক্রম।"
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Bengali",
+      "translation": "মানব সম্পদ"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Bengali",
+      "translation": "বিভিন্ন ভৌগোলিক ও সাংস্কৃতিক প্রেক্ষাপটে প্রতিভা অধিগ্রহণ, প্রশিক্ষণ ও উন্নয়ন এবং কর্মদক্ষতা ব্যবস্থাপনা।"
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Bengali",
+      "translation": "আইনি ও সম্মতি"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Bengali",
+      "translation": "বাণিজ্যিক সম্মতি, নিষেধাজ্ঞা যাচাই, মেধাস্বত্ব সুরক্ষা, এবং বিভিন্ন এখতিয়ার জুড়ে চুক্তি ব্যবস্থাপনা।"
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Bengali",
+      "translation": "মার্কেটিং ও ব্র্যান্ড"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Bengali",
+      "translation": "বহুভাষিক প্রচারাভিযান, ৩৮টি অঞ্চলের বিষয়বস্তু, ডিজিটাল বিপণন, ১০টি ভিন্ন খাতের জন্য ব্র্যান্ড কৌশল।"
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Bengali",
+      "translation": "ভূমিকা"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Bengali",
+      "translation": "হারভিকদের কেন"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Bengali",
+      "translation": "বৈশ্বিক গতিশীলতা"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Bengali",
+      "translation": "দুবাই, লন্ডন, করাচি, লাহোর এবং ৪০টিরও বেশি বাজারে কাজ করুন।"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Bengali",
+      "translation": "বৃদ্ধির পথ"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Bengali",
+      "translation": "একটি ক্রমবর্ধমান প্রতিষ্ঠানে দ্রুত কর্মজীবনে উন্নতির সুযোগ।"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Bengali",
+      "translation": "এআই-প্রথম সংস্কৃতি"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Bengali",
+      "translation": "অত্যাধুনিক এআই এবং রিয়েল-টাইম ইন্টেলিজেন্স সিস্টেম নিয়ে কাজ করুন"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Bengali",
+      "translation": "প্রতিযোগিতামূলক প্যাকেজ"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Bengali",
+      "translation": "বাজারের সেরা বেতন, আবাসন এবং অন্যান্য সুবিধা"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Bengali",
+      "translation": "শেখার বাজেট"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Bengali",
+      "translation": "কোর্স, সম্মেলন এবং সার্টিফিকেশনের জন্য বার্ষিক উন্নয়ন বাজেট"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Bengali",
+      "translation": "নমনীয় কাজ"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Bengali",
+      "translation": "বিশ্বজুড়ে আঞ্চলিক হাব অফিসগুলির সাথে হাইব্রিড ব্যবস্থা"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Bengali",
+      "translation": "আমাদের কৌশল"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Bengali",
+      "translation": "কৌশল | হারউইচ"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Bengali",
+      "translation": "উদ্ভাবন ও শ্রেষ্ঠত্বের মাধ্যমে একটি টেকসই ভবিষ্যৎ নির্মাণ"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Bengali",
+      "translation": "উদ্ভাবন ও শ্রেষ্ঠত্বের মাধ্যমে একটি টেকসই ভবিষ্যৎ নির্মাণ"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Bengali",
+      "translation": "বৈশ্বিক সম্প্রসারণ"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Bengali",
+      "translation": "উদীয়মান বাজারগুলিতে আমাদের উপস্থিতি প্রসারিত করার পাশাপাশি প্রতিষ্ঠিত বাজারগুলিতে আমাদের অবস্থানকে শক্তিশালী করা।"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Bengali",
+      "translation": "পণ্য উদ্ভাবন"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Bengali",
+      "translation": "পরিবর্তনশীল ভোক্তা পছন্দ পূরণের লক্ষ্যে নতুন পণ্য উদ্ভাবনের জন্য গবেষণা ও উন্নয়নে বিনিয়োগ।"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Bengali",
+      "translation": "স্থায়িত্ব"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Bengali",
+      "translation": "আমাদের সরবরাহ শৃঙ্খল এবং কার্যক্রম জুড়ে টেকসই অনুশীলনে প্রতিশ্রুতিবদ্ধ।"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Bengali",
+      "translation": "ডিজিটাল রূপান্তর"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Bengali",
+      "translation": "গ্রাহক অভিজ্ঞতা এবং পরিচালন দক্ষতা বাড়াতে প্রযুক্তির ব্যবহার"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Bengali",
+      "translation": "আমাদের লক্ষ্য"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Bengali",
+      "translation": "গুণমান, উদ্ভাবন এবং স্থায়িত্বের জন্য স্বীকৃত বিশ্বের শীর্ষস্থানীয় প্রিমিয়াম ভোগ্যপণ্য কোম্পানি হওয়া।"
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস গ্লোবাল ভেঞ্চারস | প্রিমিয়াম গ্লোবাল ট্রেডিং"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Bengali",
+      "translation": "বিশ্বের শীর্ষস্থানীয় একটি ট্রেডিং কোম্পানি, যা ১০টিরও বেশি শিল্পখাতে উৎকৃষ্ট মানের পণ্য সরবরাহ করে। ২০১৯ সাল থেকে ৫০টিরও বেশি দেশে এর কার্যক্রম পরিচালিত হচ্ছে।"
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Bengali",
+      "translation": "আমাদের সম্পর্কে | হারভিকস গ্লোবাল ভেঞ্চারস"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Bengali",
+      "translation": "জানুন কীভাবে হারভিকস গ্লোবাল ভেঞ্চারস ৪০টিরও বেশি দেশ এবং ১০টি শিল্পখাতে বিশ্ব বাণিজ্যের এক অগ্রণী শক্তিতে পরিণত হয়েছে।"
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Bengali",
+      "translation": "আমাদের সাথে যোগাযোগ করুন | হারভিকস গ্লোবাল ভেঞ্চারস"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Bengali",
+      "translation": "মধ্যপ্রাচ্য, দক্ষিণ এশিয়া, ইউরোপ, আফ্রিকা এবং আমেরিকাজুড়ে অবস্থিত হারভিকস-এর বিশ্বব্যাপী অফিসগুলোর সাথে যোগাযোগ করুন।"
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Bengali",
+      "translation": "পণ্যসমূহ | হারভিকস গ্লোবাল ভেঞ্চারস"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Bengali",
+      "translation": "এফএমসিজি, টেক্সটাইল, কমোডিটি এবং ইন্ডাস্ট্রিয়াল সলিউশন জুড়ে হারভিক্সের প্রিমিয়াম পণ্যের সম্ভার অন্বেষণ করুন।"
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Bengali",
+      "translation": "ক্যারিয়ার | হারভিকস গ্লোবাল ভেঞ্চারস"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস গ্লোবাল ভেঞ্চারস-এ যোগ দিন — এফএমসিজি, টেক্সটাইল, লজিস্টিকস এবং প্রযুক্তি খাতে ৪০টিরও বেশি দেশে সুযোগ অন্বেষণ করুন।"
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Bengali",
+      "translation": "মিডিয়া সেন্টার | হারভিকস গ্লোবাল ভেঞ্চারস"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস মিডিয়া সেন্টার — প্রেস রিলিজ, সর্বশেষ সংবাদ, ব্র্যান্ড অ্যাসেট এবং মিডিয়া যোগাযোগ।"
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Bengali",
+      "translation": "আমাদের কৌশল | হারভিকস গ্লোবাল ভেঞ্চারস"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Bengali",
+      "translation": "বৈশ্বিক সম্প্রসারণ, উদ্ভাবন, স্থায়িত্ব এবং ডিজিটাল রূপান্তরের জন্য হারভিকসের কৌশলগত রূপকল্প।"
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Bengali",
+      "translation": "কর্পোরেট সামাজিক দায়বদ্ধতা | হারভিকস"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Bengali",
+      "translation": "হারভিক্সের সিএসআর উদ্যোগসমূহ — পরিবেশগত দায়িত্ববোধ, সামাজিক কর্মসূচি এবং নৈতিক ব্যবসায়িক অনুশীলন।"
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Bengali",
+      "translation": "প্রায়শই জিজ্ঞাসিত প্রশ্ন | হারভিকস গ্লোবাল ভেঞ্চারস"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Bengali",
+      "translation": "হারভিক্সের পণ্য, পরিষেবা, অর্ডার এবং বিশ্বব্যাপী কার্যক্রম সম্পর্কে প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী।"
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Bengali",
+      "translation": "বিশ্বব্যাপী অবস্থান | হারভিকস"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Bengali",
+      "translation": "মধ্যপ্রাচ্য, দক্ষিণ এশিয়া, ইউরোপ, আফ্রিকা এবং আমেরিকাজুড়ে হারভিকসের কার্যালয় ও কার্যক্রম রয়েছে।"
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Bengali",
+      "translation": "নেতৃত্ব দল | হারভিকস"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Bengali",
+      "translation": "৪০টিরও বেশি বাজার এবং ১০টি শিল্প খাতে হারভিকস গ্লোবাল ভেঞ্চারস-কে পরিচালনাকারী নেতৃত্ব দলের সাথে পরিচিত হোন।"
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Bengali",
+      "translation": "সহায়তা কেন্দ্র | হারভিকস"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Bengali",
+      "translation": "অর্ডার, অ্যাকাউন্ট, শিপিং এবং হারভিক্স পরিষেবা সংক্রান্ত বিষয়ে সাহায্য নিন।"
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Bengali",
+      "translation": "সম্মতি ও নৈতিকতা | হারভিকস"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Bengali",
+      "translation": "নিয়ন্ত্রক বিধি-বিধানের প্রতিপালন, নৈতিক ব্যবসায়িক চর্চা এবং বৈশ্বিক মানের প্রতি হারভিকের অঙ্গীকার।"
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Bengali",
+      "translation": "আমাদের ইতিহাস | হারভিকরা"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Bengali",
+      "translation": "২০১৯ সালের দুবাইয়ের একটি স্টার্টআপ থেকে ৪০টিরও বেশি দেশে বিস্তৃত এক বৈশ্বিক প্রতিষ্ঠানে পরিণত হওয়ার গল্প — হারভিকসের কাহিনী।"
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Bengali",
+      "translation": "নিউজলেটার | হারভিকস"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Bengali",
+      "translation": "শিল্প খাতের তথ্য ও নতুন পণ্যের খবরাখবর পেতে হারভিকস নিউজলেটারে সাবস্ক্রাইব করুন।"
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Bengali",
+      "translation": "সাইন ইন | হারভিকস"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Bengali",
+      "translation": "অর্ডার পরিচালনা করতে এবং প্ল্যাটফর্মটি ব্যবহার করতে আপনার হারভিকস অ্যাকাউন্টে সাইন ইন করুন।"
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Bengali",
+      "translation": "গবেষণা ও উদ্ভাবন | হারভিকস"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Bengali",
+      "translation": "হারভিক্সের গবেষণা উদ্যোগ এবং উদ্ভাবনী কর্মসূচিগুলো আমাদের বৈশ্বিক কৌশলকে চালিত করছে।"
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Bengali",
+      "translation": "বিনিয়োগকারী সম্পর্ক | হারভিকস"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Bengali",
+      "translation": "হারভিকস গ্লোবাল ভেঞ্চারস থেকে বিনিয়োগকারী তথ্য, আর্থিক প্রতিবেদন এবং প্রাতিষ্ঠানিক ঘোষণা।"
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Bengali",
+      "translation": "পৃষ্ঠাটি খুঁজে পাওয়া যায়নি"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Bengali",
+      "translation": "৪০৪ — পৃষ্ঠাটি খুঁজে পাওয়া যায়নি"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Bengali",
+      "translation": "আপনি যে পৃষ্ঠাটি খুঁজছেন তা বিদ্যমান নেই অথবা স্থানান্তরিত করা হয়েছে।"
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Bengali",
+      "translation": "হোমপেজে যান"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Bengali",
+      "translation": "ফিরে যান"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Bengali",
+      "translation": "কিছু একটা ভুল হয়েছে"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Bengali",
+      "translation": "কিছু একটা ভুল হয়েছে"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Bengali",
+      "translation": "আমরা দুঃখিত, কিন্তু একটি অপ্রত্যাশিত ঘটনা ঘটেছে। অনুগ্রহ করে পৃষ্ঠাটি রিফ্রেশ করার চেষ্টা করুন।"
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Bengali",
+      "translation": "আবার চেষ্টা করুন"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Bengali",
+      "translation": "পৃষ্ঠাটি পুনরায় লোড করুন"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Bengali",
+      "translation": "সহায়তার সাথে যোগাযোগ করুন"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Bengali",
+      "translation": "অ্যাপ্লিকেশন ত্রুটি"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Bengali",
+      "translation": "গুরুতর ত্রুটি"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Bengali",
+      "translation": "একটি গুরুতর ত্রুটি ঘটেছে। অনুগ্রহ করে পৃষ্ঠাটি পুনরায় লোড করুন।"
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Bengali",
+      "translation": "অ্যাপ্লিকেশনটি পুনরায় লোড করুন"
+    }
+  }
+}

@@ -1,18 +1,10 @@
 /**
  * Shared Locale Configuration
- * 
- * This file defines the locales that are actually supported.
- * Static files (en, ar) are loaded from src/locales/
- * Other locales are loaded from the backend API.
+ * All 38 locales load from static JSON files in src/locales/
  */
 
-// Locales that have static JSON files in src/locales/
-// Note: Skeleton files exist for all languages, but only en/ar/es are fully translated
-// Other locales will fallback to backend API or English
-export const STATIC_LOCALES = ['en', 'ar', 'es', 'fr'] as const;
+export const STATIC_LOCALES = ['en', 'ar', 'es', 'fr', 'de', 'zh', 'he', 'hi', 'pt', 'ru', 'ja', 'ko', 'it', 'nl', 'tr', 'pl', 'sv', 'da', 'fi', 'no', 'cs', 'ro', 'hu', 'el', 'uk', 'id', 'ms', 'th', 'vi', 'fa', 'ur', 'bn', 'sw', 'am', 'af', 'tl', 'sk', 'hr'] as const;
 
-// All supported locales - includes static files + backend API supported locales
-// Static files are preferred, but backend API can serve all of these
 export const SUPPORTED_LOCALES = [
   'en', 'ar', 'fr', 'es', 'de', 'zh', 'he', 'hi', 'pt', 'ru', 
   'ja', 'ko', 'it', 'nl', 'pl', 'tr', 'vi', 'th', 'id', 'ms', 

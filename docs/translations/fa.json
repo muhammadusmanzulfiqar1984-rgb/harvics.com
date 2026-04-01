@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "fa",
+    "language": "Persian (Farsi)",
+    "direction": "rtl",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Persian (Farsi). Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خوش آمدید به"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هارویچ"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برتری در کالاهای مصرفی ممتاز از سال ۲۰۱۹"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "یک شرکت پیشرو در زمینه کالاهای مصرفی جهانی که محصولات غذایی ممتاز را در دسته‌بندی‌های متنوع و با استانداردهای کیفیت بین‌المللی ارائه می‌دهد."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصولات را کاوش کنید"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تماس با ما"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اطلاعات بیشتر"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برتری در کالاهای مصرفی ممتاز از سال"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Persian (Farsi)",
+      "translation": "۲۰۱۹"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لندن • میلان • نیویورک"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نانوایی"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نوشیدنی‌ها"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قنادی"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آشپزی"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Persian (Farsi)",
+      "translation": "غذاهای منجمد"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پاستا"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تنقلات"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Persian (Farsi)",
+      "translation": "گزارش ESG 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لندن • میلان • نیویورک"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خانه"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Persian (Farsi)",
+      "translation": "درباره"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Persian (Farsi)",
+      "translation": "درباره ما"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Persian (Farsi)",
+      "translation": "داستان برند"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصولات"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصولات ما"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشاهده همه محصولات"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مسئولیت اجتماعی شرکتی"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Persian (Farsi)",
+      "translation": "روابط با سرمایه‌گذاران"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سرمایه‌گذاران"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Persian (Farsi)",
+      "translation": "رسانه"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تماس با ما"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خانه هارویس"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشورها"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پورتال‌ها"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ورود"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لیست علاقه‌مندی‌ها"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سبد خرید"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کمک"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فروشگاه را پیدا کنید"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پول"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فروش"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پیشنهادات"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حالت تاریک"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کارت اعتباری"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کارت اعتباری جوایز M&S"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جوایز باشگاه"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کارت‌های اعتباری ما"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بیمه"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بیمه خانه"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بیمه مسافرتی"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خدمات مسافرتی"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پول سفر"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نرخ ارز"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خدمات اضافی"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پس‌انداز و سرمایه‌گذاری"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Persian (Farsi)",
+      "translation": "وام‌های شخصی"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پشتیبانی مالی"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فروش فعلی"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ترخیص کالا"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فروش فصلی"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پیشنهادات ویژه"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تبلیغات"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تخفیف‌های سفارش عمده"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصولات ما"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشاهده همه محصولات"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دسته بندی محصولات ما"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "با طیف محصولات ممتاز ما که با دقت و کیفیت عالی ساخته شده‌اند، آشنا شوید."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ردیف ۱: دسته‌ها"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سطح ۲: ماژول‌ها"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سطح ۳: صفحات KPI"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ردیف ۴: اقدامات"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بازنشانی ناوبری"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هیچ زیرشاخه‌ای برای این دسته موجود نیست."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصولات"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Persian (Farsi)",
+      "translation": "زیرشاخه‌ها"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نانوایی"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شیرینی‌ها و محصولات تازه پخته شده."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نوشیدنی‌ها"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نوشیدنی‌های خنک برای هر موقعیتی."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شیرینی فروشی"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خوراکی‌های شیرین و دلچسب."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آشپزی"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مواد ضروری برای آشپزخانه شما."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Persian (Farsi)",
+      "translation": "غذاهای منجمد"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "غذاهای منجمد راحت و خوشمزه."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پاستا"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "انواع پاستای اصیل."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تنقلات"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "میان وعده های خوشمزه برای هر ساعت از روز."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "درباره هارویکس"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برتری در کالاهای مصرفی ممتاز از سال ۲۰۱۹"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Persian (Farsi)",
+      "translation": "داستان ما"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هارویکس که در سال ۲۰۱۹ تأسیس شد، از یک ایده‌ی رؤیایی به یک رهبر جهانی در کالاهای مصرفی ممتاز تبدیل شده است. سفر ما با پیگیری بی‌وقفه‌ی کیفیت و تعهد به نوآوری تعریف می‌شود."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ما در بیش از ۴۰ کشور فعالیت می‌کنیم و محصولاتی ارائه می‌دهیم که زندگی‌ها را غنی‌تر کرده و استانداردهای جدیدی را در صنعت تعیین می‌کنند. از آغاز فروتنانه تا حضور جهانی‌مان، ارزش‌های ما بدون تغییر باقی مانده‌اند."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تأسیس ۲۰۱۹"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بیش از ۴۰ کشور"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Persian (Farsi)",
+      "translation": "۶ خط تولید"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مسئولیت اجتماعی شرکتی"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در هارویکس، ما متعهد به ایجاد تأثیر مثبت بر جهان هستیم. ابتکارات مسئولیت اجتماعی شرکتی ما بر پایداری، توانمندسازی جامعه و شیوه‌های اخلاقی کسب و کار متمرکز است."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سال‌های تأثیرگذاری"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشورهای رسیده"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Persian (Farsi)",
+      "translation": "زندگی‌های تحت تأثیر قرار گرفته"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ابتکارات کلیدی ما"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ما بر چهار رکن اصلی تمرکز می‌کنیم تا تغییرات پایدار را هدایت کنیم و ارزش مشترکی برای همه ذینفعان ایجاد کنیم."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پایداری"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کاهش ردپای زیست‌محیطی از طریق انرژی‌های تجدیدپذیر و کاهش ضایعات."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Persian (Farsi)",
+      "translation": "انرژی تجدیدپذیر"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Persian (Farsi)",
+      "translation": "زباله‌ها هدایت می‌شوند"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کاهش کربن"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پشتیبانی جامعه"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "توانمندسازی جوامع محلی از طریق آموزش، مراقبت‌های بهداشتی و توسعه اقتصادی."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خانواده‌های تحت حمایت"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برنامه‌های فعال"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Persian (Farsi)",
+      "translation": "داوطلبان"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آموزش"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فراهم کردن دسترسی به آموزش با کیفیت و بورسیه تحصیلی برای دانش‌آموزان محروم."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بورسیه‌ها"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مدارس همکار"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دانش‌آموزان آسیب‌دیده"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سلامت و تندرستی"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بهبود دسترسی به مراقبت‌های بهداشتی و تغذیه در مناطق محروم."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کمپین‌های سلامت"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Persian (Farsi)",
+      "translation": "به مردم خدمت رسانی شد"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کلینیک‌های سیار"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بهترین ابتکار مسئولیت اجتماعی شرکتی (CSR)"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "به خاطر رویکرد نوآورانه ما در قبال مسئولیت اجتماعی مورد تقدیر قرار گرفت."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قهرمان جامعه"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "به خاطر برنامه‌های گسترده‌ی ما در زمینه‌ی اطلاع‌رسانی به جامعه، جایزه دریافت کردیم."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جایزه جهانی پایداری"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "به خاطر تعهدمان به بی‌طرفی کربن مورد تقدیر قرار گرفته‌ایم."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تأثیر ما"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شناخت نقاط عطف ما در ایجاد جهانی بهتر."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Persian (Farsi)",
+      "translation": "به ما بپیوندید در ایجاد تغییر"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "با ما همکاری کنید یا درباره چگونگی ساختن آینده‌ای پایدار توسط ما بیشتر بدانید."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تماس با تیم CSR"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اطلاعات بیشتر"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تماس بگیرید"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ما دوست داریم از شما بشنویم. از طریق هر یک از این کانال‌ها با ما تماس بگیرید."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تلفن"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ایمیل"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Persian (Farsi)",
+      "translation": "واتساپ"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Persian (Farsi)",
+      "translation": "همین حالا تماس بگیرید"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ارسال ایمیل"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Persian (Farsi)",
+      "translation": "به ما پیام دهید"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مرکز رسانه"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مرکز رسانه | هارویکس"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "منابع مطبوعاتی، دارایی‌های برند و آخرین اخبار از Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شرکتی"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اخبار و اطلاعیه‌های مطبوعاتی"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آخرین اطلاعیه‌ها، گسترش بازار، عرضه محصولات و به‌روزرسانی‌های شرکتی از Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آخرین اخبار را بخوانید"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Persian (Farsi)",
+      "translation": "گالری تصاویر"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دارایی‌های برند با وضوح بالا، عکاسی از محصولات، تصاویر تأسیسات و پوشش رویداد برای استفاده رسانه‌ای."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مرور گالری"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مخاطبین رسانه"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برای سوالات مطبوعاتی، درخواست مصاحبه و اعلام همکاری با تیم ارتباطات ما تماس بگیرید."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تماس با تیم مطبوعاتی"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بازارهای تحت پوشش"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Persian (Farsi)",
+      "translation": "صنایع عمودی"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در دبی تأسیس شد"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Persian (Farsi)",
+      "translation": "زبان‌های پشتیبانی‌شده"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Persian (Farsi)",
+      "translation": "عناوین اخیر"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هارویکس فعالیت‌های خود در حوزه کالاهای مصرفی سریع (FMCG) را به ۵ بازار جدید در جنوب شرقی آسیا گسترش می‌دهد."
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پلتفرم جدید زنجیره تأمین مبتنی بر هوش مصنوعی برای توزیع جهانی راه‌اندازی شد"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هارویکس به نقطه عطف کربن خنثی در تمام تأسیسات خود دست یافت"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Persian (Farsi)",
+      "translation": "همکاری استراتژیک با تولیدکنندگان پیشرو نساجی در جنوب آسیا"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خانه هارویس"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Persian (Farsi)",
+      "translation": "میراثی از تعالی و سنت"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Persian (Farsi)",
+      "translation": "به خانه هارویس خوش آمدید"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هارویکس هاوس اوج تعهد ما به کیفیت و میراث را نشان می‌دهد. در اینجا، ما بهترین مجموعه از محصولات ممتاز خود را گرد هم آورده‌ایم و در محیطی که منعکس کننده ارزش‌های ما از ظرافت، سنت و نوآوری است، به نمایش گذاشته‌ایم."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مجموعه‌های اختصاصی ما را کاوش کنید و داستان پشت هر محصولی که نام هارویکس را یدک می‌کشد، کشف کنید."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هارویکس گلوبال ونچرز"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برتری در کالاهای مصرفی ممتاز از سال ۲۰۱۹"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "یک شرکت پیشرو در زمینه کالاهای مصرفی جهانی که محصولات غذایی ممتاز را در دسته‌بندی‌های متنوع و با استانداردهای کیفیت بین‌المللی ارائه می‌دهد."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لندن • میلان • نیویورک"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Persian (Farsi)",
+      "translation": "از سال ۲۰۱۹"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اخبار هارویکس"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برای دریافت هشدارها و به‌روزرسانی‌ها مشترک شوید"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ثبت نام"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نگرانی‌های مربوط به انطباق"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اگر در مورد رعایت قوانین یا اخلاق نگرانی دارید، مطرح کنید"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Persian (Farsi)",
+      "translation": "صحبت کن"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تماس با ما"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Persian (Farsi)",
+      "translation": "با تیم ما در تماس باشید"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تماس با ما"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لینک‌های مفید"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "از هارویچ بپرسید"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جستجوی شغل"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برای اخبار ثبت نام کنید"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شرکت"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آدرس‌های جهانی"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Persian (Farsi)",
+      "translation": "استراتژی"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Persian (Farsi)",
+      "translation": "رهبری ما"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برندها از الف تا ی"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخچه ما"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پایداری"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اخبار"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مخاطبین رسانه"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تصاویر"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سرمایه‌گذاران"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حاکمیت شرکتی"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سهام، ADR و اوراق قرضه"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Persian (Farsi)",
+      "translation": "انتشارات"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ما را دنبال کنید"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Persian (Farsi)",
+      "translation": "0 مشکل"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نقشه سایت"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لغو اشتراک"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کمک"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حریم خصوصی"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کوکی‌ها"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شرایط استفاده"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دسترسی‌پذیری"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Persian (Farsi)",
+      "translation": "راندمان کربن"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تامین‌کنندگان"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Persian (Farsi)",
+      "translation": "رسانه‌های اجتماعی"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تنظیمات کوکی"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کیفیت ممتاز"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آدرس ایمیل"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آدرس ایمیل خود را وارد کنید"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اشتراک"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال عضویت..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Persian (Farsi)",
+      "translation": "درباره ما"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Persian (Farsi)",
+      "translation": "رسانه"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جستجوی محصولات، برندها یا دسته‌بندی‌ها"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هیچ نتیجه‌ای یافت نشد"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال جستجو..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نتایج"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Persian (Farsi)",
+      "translation": "با ما چت کنید"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پیام خود را تایپ کنید..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ارسال"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بستن"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سلام! چطور می‌توانم امروز به شما کمک کنم؟"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ببخشید، من متوجه منظورتان نشدم. لطفاً دوباره بنویسید؟"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "من می‌توانم در مورد اطلاعات محصول، سفارش یا سوالات عمومی به شما کمک کنم. چه چیزی می‌خواهید بدانید؟"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برای اطلاعات بیشتر، لطفاً با ما از طریق support@harvics.com یا با شماره +1-800-HARVICS تماس بگیرید."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Persian (Farsi)",
+      "translation": "با ما چت کنید"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال بارگذاری..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خطا"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Persian (Farsi)",
+      "translation": "موفقیت"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ذخیره"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لغو"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حذف"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ویرایش"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشاهده"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ارسال"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جستجو"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فیلتر"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پاک کردن"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دانلود"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آپلود"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بله"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خیر"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بستن"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برگشت"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بعدی"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قبلی"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اقدامات"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Persian (Farsi)",
+      "translation": "وضعیت"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخ"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نام"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ایمیل"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تلفن"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آدرس"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشور"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شهر"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Persian (Farsi)",
+      "translation": "همه"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هیچکدام"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Persian (Farsi)",
+      "translation": "انتخاب کنید"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Persian (Farsi)",
+      "translation": "انتخاب زبان"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشور را انتخاب کنید"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نمایش بیشتر"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نمایش کمتر"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مورد نیاز"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Persian (Farsi)",
+      "translation": "منو"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشاهده محصولات"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پخش موسیقی"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مکث موسیقی"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بی‌صدا کردن موسیقی"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بی‌صدا کردن موسیقی"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دسترسی جهانی ما"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Persian (Farsi)",
+      "translation": "از آنجایی که"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بازار عمده"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بازارهای عمده"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حضور"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشورهای تحت پوشش"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بازارهای عمده"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دسته بندی محصولات"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تأسیس شد"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سلسله مراتب قلمرو"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مسیر کامل"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قلمرو فعلی"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بدون آیتم"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Persian (Farsi)",
+      "translation": "گلوب"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قاره"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Persian (Farsi)",
+      "translation": "منطقه"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشور"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شهر"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ناحیه"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مکان"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هارویکس گلوبال"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جهانی"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Persian (Farsi)",
+      "translation": "منطقه را انتخاب کنید"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جزئیات مشتری"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Persian (Farsi)",
+      "translation": "انتخاب شده"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نام و نام خانوادگی"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نام کامل خود را وارد کنید"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نام الزامی است"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آدرس ایمیل"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Persian (Farsi)",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ایمیل الزامی است"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لطفا یک آدرس ایمیل معتبر وارد کنید"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شماره تلفن"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Persian (Farsi)",
+      "translation": "‎+1 234 567 8900‎"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شماره تلفن الزامی است"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آدرس"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آدرس شما"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آدرس الزامی است"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Persian (Farsi)",
+      "translation": "من موافقم که ارتباطات و به‌روزرسانی‌های بازاریابی را دریافت کنم"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ارسال و ادامه"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ارسال..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Persian (Farsi)",
+      "translation": "رد شدن و ادامه دادن"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شاخص‌های کلیدی عملکرد"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سفارش‌های امروز"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ارسال شده از طریق Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تحویل‌های در انتظار"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در مسیرهای تعیین شده"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خرده فروشان"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فروشگاه‌های فعال در محدوده"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Persian (Farsi)",
+      "translation": "امتیاز T و A"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پوشش قلمرو"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مالی و موجودی"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Persian (Farsi)",
+      "translation": "موجودی کم SKU ها"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دوباره پر کردن ماشه"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فاکتورهای معوق"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Persian (Farsi)",
+      "translation": "موعد تحویل"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محدودیت اعتبار"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Persian (Farsi)",
+      "translation": "واگذار شده توسط امور مالی"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تأیید خودکار، تکمیل موجودی و یادآوری فاکتور فعال شد"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خود-تاییدی"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تکمیل موجودی"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Persian (Farsi)",
+      "translation": "یادآوری فاکتور"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Persian (Farsi)",
+      "translation": "توصیه‌های هوش مصنوعی"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سطح ریسک"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بر اساس میزان استفاده از اعتبار و سابقه پرداخت"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ترتیب پیشنهادی"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Persian (Farsi)",
+      "translation": "SKU های توصیه شده توسط هوش مصنوعی برای سفارش"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اقدام بعدی"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اقدامات و راهنمایی‌ها"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شکایات"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشکلات خرده‌فروشان در انتظار اقدام"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دفترچه راهنما"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تحویل‌های معوقه قبل از ظهر را در اولویت قرار دهید."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تمام شکایات معوقه را ظرف ۴۸ ساعت ببندید."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فعال‌سازی فرآیند دوباره پر کردن برای SKU های کم موجودی (ایجاد خودکار سفارش خرید)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قلمرو"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سفارشات این ماه"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سفارشات در انتظار"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سفارشات تحویل داده شده"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اطلاعات قلمرو"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشور"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شهر"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Persian (Farsi)",
+      "translation": "منطقه"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اقدامات سریع"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سفارش جدید"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشاهده سفارشات"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشاهده فاکتورها"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تنظیمات پروفایل"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال بارگذاری داشبورد..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خطا"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سفارش‌های من"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شناسه سفارش"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخ"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Persian (Farsi)",
+      "translation": "وضعیت"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اقلام"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مبلغ کل"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اقدامات"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشاهده جزئیات"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Persian (Farsi)",
+      "translation": "وضعیت"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخ شروع"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخ پایان"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Persian (Farsi)",
+      "translation": "همه وضعیت‌ها"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فیلترها را پاک کنید"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال بررسی"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پردازش"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تحویل داده شد"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لغو شد"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هیچ سفارشی یافت نشد"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال بارگیری سفارشات..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Persian (Farsi)",
+      "translation": "صفحه"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Persian (Farsi)",
+      "translation": "از"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قبلی"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بعدی"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جزئیات سفارش"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بازگشت به سفارشات"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شناسه سفارش"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Persian (Farsi)",
+      "translation": "وضعیت"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخ سفارش"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخ تحویل"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آدرس تحویل"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Persian (Farsi)",
+      "translation": "یادداشت‌ها"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سفارش اقلام"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصول"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شناسه کالا"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مقدار"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قیمت واحد"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مجموع"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مبلغ کل"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جدول زمانی وضعیت"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سفارشی یافت نشد"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ایجاد سفارش جدید"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سفارش اقلام"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Persian (Farsi)",
+      "translation": "افزودن مورد"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هنوز موردی اضافه نشده است. برای شروع روی «افزودن مورد» کلیک کنید."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جزئیات سفارش"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخ تحویل"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آدرس تحویل"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Persian (Farsi)",
+      "translation": "یادداشت‌ها"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مبلغ کل"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ایجاد سفارش"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ایجاد سفارش ..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لغو"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Persian (Farsi)",
+      "translation": "انتخاب محصول"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصول"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مقدار"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قیمت واحد"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حذف"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جمع جزئی"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شناسه سفارش"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حداقل یک مورد سفارش الزامی است"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصول مورد نیاز است"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مقدار باید بزرگتر از 0 باشد"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قیمت واحد باید غیر منفی باشد"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فرمت تاریخ تحویل نامعتبر است"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخ تحویل نمی‌تواند مربوط به گذشته باشد"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فاکتورهای من"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شماره فاکتور"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخ فاکتور"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دو تاریخ"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مبلغ"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مبلغ پرداختی"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Persian (Farsi)",
+      "translation": "وضعیت پرداخت"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Persian (Farsi)",
+      "translation": "وضعیت پرداخت"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Persian (Farsi)",
+      "translation": "همه وضعیت‌ها"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فیلترها را پاک کنید"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پرداخت شده"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پرداخت نشده"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جزئی"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هیچ فاکتوری یافت نشد"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال بارگذاری فاکتورها..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پروفایل من"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اطلاعات حساب"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شناسه توزیع‌کننده"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قلمرو"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشور"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شهر"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حساب کاربری ایجاد شد"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Persian (Farsi)",
+      "translation": "به‌روزرسانی پروفایل"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نام"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ایمیل"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تلفن"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آدرس"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Persian (Farsi)",
+      "translation": "زبان"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ارز"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ذخیره تغییرات"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال ذخیره..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پروفایل با موفقیت به‌روزرسانی شد"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال بارگذاری پروفایل..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قالب ایمیل نامعتبر است"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فرمت گوشی نامعتبر است"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خطا"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال بارگذاری..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ذخیره"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لغو"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برگشت"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ارسال"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حذف"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ویرایش"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشاهده"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جستجو"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فیلتر"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پاک کردن"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اعمال کردن"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بستن"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تأیید"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بله"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خیر"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سیستم عامل قانونی"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سیستم عامل قانونی"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دسترسی رد شد"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شما اجازه دسترسی به ماژول سیستم عامل قانونی را ندارید."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Persian (Farsi)",
+      "translation": "داشبورد"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قراردادها"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Persian (Farsi)",
+      "translation": "گواهینامه‌ها"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Persian (Farsi)",
+      "translation": "انطباق"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Persian (Farsi)",
+      "translation": "داشبورد حقوقی"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بررسی اجمالی عملیات قانونی و وضعیت انطباق"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Persian (Farsi)",
+      "translation": "علائم تجاری فعال"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قراردادهای فعال"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Persian (Farsi)",
+      "translation": "وضعیت انطباق"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Persian (Farsi)",
+      "translation": "علائم تجاری"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مدیریت ثبت و درخواست علامت تجاری"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اضافه کردن علامت تجاری جدید"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشور"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Persian (Farsi)",
+      "translation": "وضعیت"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Persian (Farsi)",
+      "translation": "همه کشورها"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Persian (Farsi)",
+      "translation": "همه وضعیت‌ها"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فیلترها را پاک کنید"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نام تجاری"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کلاس"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشور"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شماره درخواست"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Persian (Farsi)",
+      "translation": "وضعیت"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخ انقضا"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اقدامات"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ویرایش علامت تجاری"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اضافه کردن علامت تجاری جدید"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشاهده علامت تجاری"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نام تجاری"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شماره کلاس"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشور"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شماره درخواست"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Persian (Farsi)",
+      "translation": "وضعیت"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخ انقضا"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اسناد"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هیچ مدرکی پیوست نشده است"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Persian (Farsi)",
+      "translation": "افزودن سند"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حذف"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بارگیری علائم تجاری ناموفق بود"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ذخیره علامت تجاری ناموفق بود. لطفاً دوباره امتحان کنید."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پرونده‌های حقوقی"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مدیریت پرونده‌های حقوقی و پیگیری وضعیت آنها"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مورد جدید"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Persian (Farsi)",
+      "translation": "عنوان پرونده"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نوع مورد"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشور"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Persian (Farsi)",
+      "translation": "توضیحات"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اختصاص داده شده به"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Persian (Farsi)",
+      "translation": "وضعیت"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخ جلسه رسیدگی"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Persian (Farsi)",
+      "translation": "عنوان پرونده"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نوع"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشور"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اختصاص داده شده به"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Persian (Farsi)",
+      "translation": "وضعیت"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخ جلسه رسیدگی"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اقدامات"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Persian (Farsi)",
+      "translation": "باز"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال انجام"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بسته"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لغو شد"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نمای نقشه ناوگان"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ردیابی لحظه‌ای ماموران فروش و وسایل نقلیه تحویل کالا"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کارمندان فعال"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بدون کارمند فعال"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال بارگذاری..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پخش مجدد مسیر"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کارمند"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سرعت"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تنظیم مجدد"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بازی"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مکث"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Persian (Farsi)",
+      "translation": "امتیازها"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هیچ داده مسیری در دسترس نیست"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مسیر بارگیری..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصولات رقیب"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اطلاعات محصول رقیب را پیگیری کنید"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اضافه کردن محصول"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصول رقیب را اضافه کنید"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برند"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نام SKU"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دسته بندی"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اندازه"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قیمت"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ارز"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشور"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برند"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نام SKU"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دسته بندی"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اندازه"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قیمت"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشور"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخ اضافه شدن"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بارگیری محصولات ناموفق بود"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ایجاد محصول ناموفق بود. لطفا دوباره امتحان کنید."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هیچ محصول رقیبی یافت نشد"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال بارگیری محصولات..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Persian (Farsi)",
+      "translation": "داشبورد رقبا"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تحلیل و بررسی محصولات رقبا"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کل محصولات"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برندهای ردیابی شده"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشورها"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دسته‌ها"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصولات بر اساس برند"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصولات بر اساس کشور"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصولات بر اساس دسته بندی"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال بارگذاری آمار..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آماری در دسترس نیست"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نمای کلی"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سفارشات"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Persian (Farsi)",
+      "translation": "موجودی"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لجستیک"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Persian (Farsi)",
+      "translation": "امور مالی"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مدیریت ارتباط با مشتری (CRM)"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Persian (Farsi)",
+      "translation": "منابع انسانی"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اجرایی"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سرمایه‌گذار"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حقوقی/حقوق مالکیت فکری"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Persian (Farsi)",
+      "translation": "رقیب"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Persian (Farsi)",
+      "translation": "واردات/صادرات"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ردیابی GPS"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محلی سازی"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Persian (Farsi)",
+      "translation": "گردش‌های کاری"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مدیر"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سیستم عامل CRM"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشتری ۳۶۰"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پروفایل کامل مشتری، تاریخچه تعاملات و مدیریت ارتباط با او"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کمپین‌های دیجیتال"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کمپین‌های بازاریابی چند کاناله (اینستاگرام، فیسبوک، تیک تاک، واتس‌اپ)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سرنخ‌ها و فرصت‌ها"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مدیریت سرنخ، صلاحیت و مسیر فرصت‌ها"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پشتیبانی مشتری"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مدیریت تیکت، خدمات مشتریان و حل مشکلات"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برنامه‌های وفاداری"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Persian (Farsi)",
+      "translation": "وفاداری خرده‌فروشان، بازی‌وارسازی و مدیریت پاداش‌ها"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشتری ۳۶۰"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشتری جدید"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کل مشتریان"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فعال"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جدید"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Persian (Farsi)",
+      "translation": "رضایت"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مدیریت مشتری"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "روابط، تعاملات و کمپین‌های مشتریان خود را مشاهده و مدیریت کنید."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در حال بارگذاری..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خطا در بارگیری داده‌های CRM"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نمای کلی"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سفارشات"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Persian (Farsi)",
+      "translation": "موجودی"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لجستیک"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Persian (Farsi)",
+      "translation": "امور مالی"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مدیریت ارتباط با مشتری (CRM)"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Persian (Farsi)",
+      "translation": "منابع انسانی"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اجرایی"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سرمایه‌گذار"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حقوقی/حقوق مالکیت فکری"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Persian (Farsi)",
+      "translation": "رقیب"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Persian (Farsi)",
+      "translation": "واردات/صادرات"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ردیابی GPS"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محلی سازی"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Persian (Farsi)",
+      "translation": "گردش‌های کاری"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مدیر"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشتریان"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کارمندان"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سود"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بارگیری کابین خلبان تأمین‌کننده…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سفارش‌های خرید"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "توسط هارویکس بزرگ شده است"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محموله‌ها / گرین"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Persian (Farsi)",
+      "translation": "این هفته پذیرفته شد"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فاکتورهای ایجاد شده"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در انتظار پرداخت"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پرداخت‌ها در انتظار"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برای انتشار برنامه‌ریزی شده است"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کیفیت / شکایات"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بلیط‌های باز"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پیش‌بینی (۴ هفته آینده)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جایگذار هوش مصنوعی"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اقدامات تأمین‌کنندگان"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محموله‌های آینده را تأیید کنید و برنامه GRN را به‌روزرسانی کنید."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فاکتورهای معوق را بررسی کنید و توصیه‌های پرداخت را به اشتراک بگذارید."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شکایات مربوط به کیفیت باز را با شواهد تضمین کیفیت حل کنید."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نام کاربری"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Persian (Farsi)",
+      "translation": "رمز عبور"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ایمیل"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ارسال"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لغو"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ذخیره"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حذف"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جستجو"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فیلتر"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تنظیم مجدد"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بستن"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برگشت"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بعدی"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Persian (Farsi)",
+      "translation": "قبلی"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تأیید"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مرا به خاطر بسپار"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "رمز عبور را فراموش کرده‌اید؟"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ایمیل الزامی است"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Persian (Farsi)",
+      "translation": "لطفا یک آدرس ایمیل معتبر وارد کنید"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصولات"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هارویکس چه محصولاتی ارائه می‌دهد؟"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ما طیف گسترده‌ای از محصولات غذایی ممتاز از جمله شیرینی‌جات، نوشیدنی‌ها، تنقلات، پاستا، اقلام نانوایی و غذاهای منجمد را در دسته‌بندی‌های مختلف ارائه می‌دهیم."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "از کجا می‌توانم محصولات هارویکس را خریداری کنم؟"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصولات ما در فروشگاه‌های خرده‌فروشی در بیش از ۴۰ کشور موجود است. برای یافتن فروشگاه‌های نزدیک خود، از فروشگاه‌یاب یا صفحه تماس ما استفاده کنید."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آیا سفارش عمده هم ارائه می‌دهید؟"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بله، ما تخفیف‌های سفارش عمده برای کسب‌وکارها و خرده‌فروشان ارائه می‌دهیم. برای اطلاعات بیشتر به صفحه تخفیف‌های سفارش عمده ما مراجعه کنید."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سفارشات و ارسال"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "گزینه‌های ارسال شما چیست؟"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ما گزینه‌های مختلف ارسال از جمله ارسال استاندارد، اکسپرس و بین‌المللی را ارائه می‌دهیم. ارسال رایگان برای سفارش‌های بالای ۵۰ دلار در دسترس است."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تحویل چقدر طول می‌کشد؟"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "زمان تحویل بسته به مکان متفاوت است. تحویل استاندارد معمولاً ۵-۷ روز کاری طول می‌کشد، در حالی که تحویل اکسپرس ۲-۳ روز کاری طول می‌کشد."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آیا می‌توانم سفارشم را پیگیری کنم؟"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بله، شما می‌توانید سفارش خود را با استفاده از شماره پیگیری ارائه شده در ایمیل تأیید سفارش خود پیگیری کنید."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حساب و پرداخت‌ها"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "چگونه یک حساب کاربری ایجاد کنم؟"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برای ثبت نام و ایجاد حساب کاربری جدید، روی «ورود» در سربرگ کلیک کنید و «ایجاد حساب کاربری» را انتخاب کنید."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "چه روش‌های پرداختی را می‌پذیرید؟"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ما تمام کارت‌های اعتباری اصلی، کارت‌های نقدی، پی‌پال و حواله‌های بانکی را برای سفارش‌های B2B می‌پذیریم."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آیا اطلاعات پرداخت من امن است؟"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بله، ما از رمزگذاری استاندارد صنعتی برای محافظت از اطلاعات پرداخت شما استفاده می‌کنیم."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بازگشت کالا و بازپرداخت وجه"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سیاست بازگشت وجه شما چیست؟"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ما برای محصولات باز نشده در بسته‌بندی اصلی، 30 روز مهلت بازگشت کالا ارائه می‌دهیم. لطفاً برای دریافت مجوز بازگشت با خدمات مشتریان ما تماس بگیرید."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "چگونه درخواست بازپرداخت وجه بدهم؟"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "با تیم خدمات مشتریان ما تماس بگیرید و شماره سفارش و دلیل بازگشت کالا را ذکر کنید. ما ظرف ۵ تا ۷ روز کاری وجه شما را بازپرداخت خواهیم کرد."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هنوز سوالی دارید؟"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تیم خدمات مشتری ما برای کمک به شما اینجاست"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تماس با ما"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فرصت‌های شغلی"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فرصت‌های شغلی | هارویکس"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "به Harvics Global Ventures بپیوندید - فرصت‌ها را در بیش از ۴۰ کشور جهان کشف کنید."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Persian (Farsi)",
+      "translation": "به ما بپیوندید"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Persian (Farsi)",
+      "translation": "آینده تجارت جهانی را بسازید"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ما در بیش از ۴۰ کشور در حال رشد هستیم. به تیمی بپیوندید که در حال ساخت سیستم عامل مبتنی بر هوش مصنوعی برای تجارت جهانی است."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Persian (Farsi)",
+      "translation": "موقعیت‌های باز"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کشورها"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Persian (Farsi)",
+      "translation": "صنایع عمودی"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Persian (Farsi)",
+      "translation": "استخدام دپارتمان‌ها"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Persian (Farsi)",
+      "translation": "موقعیت‌های شغلی خالی بر اساس دپارتمان"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فروش و توزیع"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "افزایش درآمد در بیش از ۴۰ بازار. مدیریت منطقه، حساب‌های کلیدی، روابط با توزیع‌کنندگان."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "زنجیره تامین و لجستیک"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "زنجیره تأمین سرتاسری از کارخانه تا قفسه فروشگاه. مدیریت ناوگان، انبارداری، تحویل در آخرین مرحله."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فناوری و هوش مصنوعی"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ساخت سیستم عامل Harvics — پلتفرم سازمانی مبتنی بر هوش مصنوعی ما. مهندسی فول استک، یادگیری ماشین، علم داده."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Persian (Farsi)",
+      "translation": "امور مالی و خزانه داری"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خزانه‌داری چند ارزی، تأمین مالی تجاری، پرداخت‌های دیجیتال HPay، مدیریت ارز در مناطق مختلف."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تدارکات و منبع یابی"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تامین جهانی از بیش از ۱۵ کشور مبدا. ممیزی تامین‌کنندگان، کنترل کیفیت، برنامه‌های مستقیم از کارخانه."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Persian (Farsi)",
+      "translation": "منابع انسانی"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "جذب استعداد، آموزش و توسعه، مدیریت عملکرد در مناطق جغرافیایی و فرهنگ‌های متنوع."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حقوقی و انطباق"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "انطباق با تجارت، غربالگری تحریم‌ها، حفاظت از مالکیت معنوی، مدیریت قرارداد در حوزه‌های قضایی مختلف."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بازاریابی و برند"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کمپین‌های چندزبانه، محتوای ۳۸ زبان، بازاریابی دیجیتال، استراتژی برند برای ۱۰ حوزه کاری مختلف."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نقش‌ها"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "چرا هارویکس"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تحرک جهانی"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کار در دبی، لندن، کراچی، لاهور و بیش از ۴۰ بازار"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مسیر رشد"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پیشرفت سریع شغلی در یک شرکت رو به رشد"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فرهنگ اول هوش مصنوعی"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Persian (Farsi)",
+      "translation": "با هوش مصنوعی پیشرفته و سیستم‌های اطلاعاتی بلادرنگ کار کنید"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بسته رقابتی"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Persian (Farsi)",
+      "translation": "حقوق و مزایای پیشرو در بازار، مسکن و مزایا"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بودجه آموزشی"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بودجه توسعه سالانه برای دوره‌ها، کنفرانس‌ها و گواهینامه‌ها"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Persian (Farsi)",
+      "translation": "کار انعطاف‌پذیر"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ترتیبات ترکیبی با دفاتر مرکزی منطقه‌ای در سراسر جهان"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Persian (Farsi)",
+      "translation": "استراتژی ما"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "استراتژی | هارویک"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ساختن آینده‌ای پایدار از طریق نوآوری و تعالی"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ساختن آینده‌ای پایدار از طریق نوآوری و تعالی"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Persian (Farsi)",
+      "translation": "گسترش جهانی"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Persian (Farsi)",
+      "translation": "گسترش حضورمان در بازارهای نوظهور و در عین حال تقویت جایگاهمان در بازارهای تثبیت‌شده"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Persian (Farsi)",
+      "translation": "نوآوری محصول"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سرمایه‌گذاری در تحقیق و توسعه برای توسعه محصولات جدید که ترجیحات در حال تحول مصرف‌کنندگان را برآورده می‌کنند"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Persian (Farsi)",
+      "translation": "پایداری"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Persian (Farsi)",
+      "translation": "متعهد به شیوه‌های پایدار در سراسر زنجیره تأمین و عملیات خود"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تحول دیجیتال"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Persian (Farsi)",
+      "translation": "استفاده از فناوری برای بهبود تجربه مشتری و افزایش بهره‌وری عملیاتی"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دیدگاه ما"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تبدیل شدن به شرکت پیشرو در زمینه کالاهای مصرفی ممتاز در جهان، که به خاطر کیفیت، نوآوری و پایداری شناخته می‌شود."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Persian (Farsi)",
+      "translation": "هارویکس گلوبال ونچرز | پریمیوم گلوبال تریدینگ"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "شرکت بازرگانی جهانی پیشرو که محصولات ممتاز را در بیش از ۱۰ صنعت ارائه می‌دهد. از سال ۲۰۱۹ در بیش از ۵۰ کشور فعالیت می‌کند."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Persian (Farsi)",
+      "translation": "درباره ما | شرکت سرمایه‌گذاری جهانی هارویکس"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دریابید که چگونه Harvics Global Ventures به یک نیروی پیشرو در تجارت جهانی در بیش از ۴۰ کشور و ۱۰ صنعت تبدیل شده است."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تماس با ما | شرکت سرمایه‌گذاری جهانی هارویکس"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "با دفاتر هارویکس در سراسر جهان در خاورمیانه، آسیای جنوبی، اروپا، آفریقا و آمریکا تماس بگیرید."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Persian (Farsi)",
+      "translation": "محصولات | شرکت سرمایه‌گذاری جهانی هارویکس"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "طیف محصولات ممتاز هارویکس را در حوزه کالاهای مصرفی سریع (FMCG)، منسوجات، کالاها و راهکارهای صنعتی بررسی کنید."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Persian (Farsi)",
+      "translation": "فرصت‌های شغلی | شرکت سرمایه‌گذاری جهانی هارویس"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "به Harvics Global Ventures بپیوندید - فرصت‌ها را در بیش از ۴۰ کشور در حوزه کالاهای مصرفی سریع (FMCG)، منسوجات، لجستیک و فناوری بررسی کنید."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مرکز رسانه | شرکت سرمایه‌گذاری جهانی هارویس"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مرکز رسانه‌ای هارویکس - اطلاعیه‌های مطبوعاتی، آخرین اخبار، دارایی‌های برند و مخاطبین رسانه‌ای."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Persian (Farsi)",
+      "translation": "استراتژی ما | شرکت سرمایه‌گذاری جهانی هارویس"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "چشم‌انداز استراتژیک هارویکس برای توسعه جهانی، نوآوری، پایداری و تحول دیجیتال."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مسئولیت اجتماعی شرکت | هارویکس"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ابتکارات مسئولیت اجتماعی شرکت هارویکس - نظارت بر محیط زیست، برنامه‌های اجتماعی و شیوه‌های اخلاقی کسب و کار."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سوالات متداول | شرکت سرمایه‌گذاری جهانی هارویکس"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "سوالات متداول در مورد محصولات، خدمات، سفارش‌گذاری و عملیات جهانی هارویکس."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مکان‌های جهانی | هارویکس"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دفاتر و عملیات Harvics در سراسر خاورمیانه، آسیای جنوبی، اروپا، آفریقا و آمریکا."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تیم رهبری | هارویکس"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "با تیم رهبری Harvics Global Ventures که در بیش از ۴۰ بازار و ۱۰ صنعت عمودی فعالیت می‌کنند، آشنا شوید."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مرکز راهنما | هارویکس"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "در مورد سفارشات، حساب‌ها، ارسال و خدمات هارویکس کمک بگیرید."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "انطباق و اخلاق | هارویکس"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تعهد هارویکس به رعایت مقررات، شیوه‌های اخلاقی کسب و کار و استانداردهای جهانی."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تاریخچه ما | هارویکس"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "از یک استارتاپ دبی در سال ۲۰۱۹ تا یک شرکت جهانی که بیش از ۴۰ کشور را در بر می‌گیرد - داستان هارویکس."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خبرنامه | هارویکس"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برای دریافت بینش‌های صنعتی و معرفی محصولات، در خبرنامه Harvics مشترک شوید."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ورود | هارویکس"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برای مدیریت سفارشات و دسترسی به پلتفرم، وارد حساب کاربری Harvics خود شوید."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تحقیق و نوآوری | هارویکس"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "ابتکارات تحقیقاتی و برنامه‌های نوآوری هارویکس، استراتژی جهانی ما را هدایت می‌کنند."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Persian (Farsi)",
+      "translation": "روابط با سرمایه‌گذاران | هارویکس"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "اطلاعات سرمایه‌گذاران، گزارش‌های مالی و اطلاعیه‌های شرکتی از Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Persian (Farsi)",
+      "translation": "صفحه یافت نشد"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Persian (Farsi)",
+      "translation": "۴۰۴ — صفحه یافت نشد"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "صفحه مورد نظر شما وجود ندارد یا منتقل شده است."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Persian (Farsi)",
+      "translation": "رفتن به صفحه اصلی"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Persian (Farsi)",
+      "translation": "برگرد"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Persian (Farsi)",
+      "translation": "مشکلی پیش آمد"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Persian (Farsi)",
+      "translation": "چیزی اشتباه پیش رفت"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "متاسفیم، اما اتفاق غیرمنتظره‌ای رخ داده است. لطفاً صفحه را رفرش کنید."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Persian (Farsi)",
+      "translation": "دوباره امتحان کنید"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Persian (Farsi)",
+      "translation": "صفحه را دوباره بارگذاری کنید"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Persian (Farsi)",
+      "translation": "تماس با پشتیبانی"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خطای برنامه"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Persian (Farsi)",
+      "translation": "خطای بحرانی"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Persian (Farsi)",
+      "translation": "یک خطای بحرانی رخ داده است. لطفاً صفحه را دوباره بارگذاری کنید."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Persian (Farsi)",
+      "translation": "بارگذاری مجدد برنامه"
+    }
+  }
+}

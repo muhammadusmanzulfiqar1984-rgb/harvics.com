@@ -50,7 +50,7 @@ export default function OrderHistory() {
             <select
               value={dateRange}
               onChange={(e) => setDateRange(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
             >
               <option value="all">All Time</option>
               <option value="today">Today</option>
@@ -64,7 +64,7 @@ export default function OrderHistory() {
             <select
               value={status}
               onChange={(e) => setStatus(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
             >
               <option value="All">All</option>
               <option value="Draft">Draft</option>
@@ -80,7 +80,7 @@ export default function OrderHistory() {
             <select
               value={country}
               onChange={(e) => setCountry(e.target.value)}
-              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
             >
               <option value="All">All</option>
               <option value="US">United States</option>

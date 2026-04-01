@@ -32,7 +32,7 @@ export default function RequestTerritory() {
                 required
                 value={formData.country}
                 onChange={(e) => setFormData({...formData, country: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
               >
                 <option value="">Select Country</option>
                 <option value="US">United States</option>
@@ -47,7 +47,7 @@ export default function RequestTerritory() {
                 required
                 value={formData.region}
                 onChange={(e) => setFormData({...formData, region: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
               >
                 <option value="">Select Region</option>
                 <option value="west">West</option>
@@ -109,7 +109,7 @@ export default function RequestTerritory() {
                 type="number"
                 value={formData.fleetSize}
                 onChange={(e) => setFormData({...formData, fleetSize: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                 placeholder="e.g., 5 vehicles"
               />
             </div>
@@ -120,7 +120,7 @@ export default function RequestTerritory() {
                 type="number"
                 value={formData.expectedVolume}
                 onChange={(e) => setFormData({...formData, expectedVolume: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                 placeholder="e.g., 50000"
               />
             </div>
@@ -132,7 +132,7 @@ export default function RequestTerritory() {
                 rows={5}
                 value={formData.reason}
                 onChange={(e) => setFormData({...formData, reason: e.target.value})}
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
                 placeholder="Explain why you want this territory and your business case..."
               />
             </div>
@@ -142,7 +142,7 @@ export default function RequestTerritory() {
               <input
                 type="file"
                 multiple
-                className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+                className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
               />
               <p className="text-xs text-[#C3A35E]/90 mt-1">Upload any supporting documents (business plan, financials, etc.)</p>
             </div>

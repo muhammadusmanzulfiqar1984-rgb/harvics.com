@@ -1,624 +1,1146 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
-    "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More"
+    "welcome": "Ласкаво просимо до",
+    "companyName": "Гарвіч",
+    "tagline": "Досконалість у сфері преміальних споживчих товарів з 2019 року",
+    "exploreProducts": "Ознайомитися з продуктами",
+    "contact": "Зв'яжіться з нами",
+    "learnMore": "Дізнатися більше",
+    "brandStatement": "Провідна світова компанія з продажу споживчих товарів, що постачає преміальні харчові продукти різних категорій, що відповідають міжнародним стандартам якості.",
+    "taglineStart": "Досконалість у сфері преміальних споживчих товарів з",
+    "taglineYear": "2019 рік",
+    "locations": "Лондон • Мілан • Нью-Йорк",
+    "categories": {
+      "bakery": "Пекарня",
+      "beverages": "Напої",
+      "confectionery": "Кондитерські вироби",
+      "culinary": "Кулінарія",
+      "frozenFoods": "Заморожені продукти",
+      "pasta": "Паста",
+      "snacks": "Закуски"
+    }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
-    "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
-    "media": "Media",
-    "contactUs": "Contact Us",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store"
+    "esgReport": "Звіт ESG за 2025 рік",
+    "locations": "Лондон • Мілан • Нью-Йорк",
+    "home": "Дім",
+    "about": "Про нас",
+    "aboutUs": "Про нас",
+    "brandStory": "Історія бренду",
+    "products": "Продукти",
+    "ourProducts": "Наші продукти",
+    "viewAllProducts": "Переглянути всі товари",
+    "csr": "КСВ",
+    "investorRelations": "Відносини з інвесторами",
+    "investors": "Інвестори",
+    "media": "Медіа",
+    "contactUs": "Зв'яжіться з нами",
+    "countries": "Країни",
+    "portals": "Портали",
+    "signIn": "Увійти",
+    "wishlist": "Список бажань",
+    "cart": "Кошик для покупок",
+    "help": "Допомога",
+    "findStore": "Знайти магазин",
+    "harvicsHouse": "Будинок Харвікс",
+    "money": "Гроші",
+    "sales": "Продажі",
+    "offers": "Пропозиції",
+    "darkMode": "Темний режим",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "Кредитна картка",
+        "msRewards": "Кредитна картка винагород M&S",
+        "clubRewards": "Клубні винагороди",
+        "ourCards": "Наші кредитні картки"
+      },
+      "insurance": {
+        "title": "Страхування",
+        "home": "Страхування житла",
+        "travel": "Страхування подорожей"
+      },
+      "travel": {
+        "title": "Туристичні послуги",
+        "money": "Гроші на подорожі",
+        "exchange": "Обмінні курси"
+      },
+      "additional": {
+        "title": "Додаткові послуги",
+        "savings": "Заощадження та інвестування",
+        "personalLoans": "Особисті позики",
+        "financialSupport": "Фінансова підтримка"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "Поточні продажі",
+      "clearance": "Розпродаж",
+      "seasonal": "Сезонні розпродажі"
+    },
+    "offersDropdown": {
+      "specialOffers": "Спеціальні пропозиції",
+      "promotions": "Акції",
+      "bulkOrders": "Знижки на оптові замовлення"
+    }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products"
+    "ourProducts": "Наші продукти",
+    "viewAllProducts": "Переглянути всі товари",
+    "productCategories": "Категорії наших продуктів",
+    "discoverPremium": "Відкрийте для себе наш преміальний асортимент продукції, виготовленої з турботою та досконалістю.",
+    "tier1": "Рівень 1: Категорії",
+    "tier2": "Рівень 2: Модулі",
+    "tier3": "Рівень 3: Екрани KPI",
+    "tier4": "Рівень 4: Дії",
+    "reset": "Скинути навігацію",
+    "noSubcategories": "Для цієї категорії немає підкатегорій.",
+    "pageTitle": "Продукти",
+    "subcategories": "Підкатегорії",
+    "bakery": "Пекарня",
+    "bakeryDesc": "Свіжовипічка та тістечка.",
+    "beverages": "Напої",
+    "beveragesDesc": "Освіжаючі напої для будь-якої нагоди.",
+    "confectionery": "Кондитерські вироби",
+    "confectioneryDesc": "Солодкі ласощі та смаколики.",
+    "culinary": "Кулінарія",
+    "culinaryDesc": "Незамінні інгредієнти для вашої кухні.",
+    "frozenFoods": "Заморожені продукти",
+    "frozenFoodsDesc": "Зручні та смачні заморожені страви.",
+    "pasta": "Паста",
+    "pastaDesc": "Автентичні різновиди пасти.",
+    "snacks": "Закуски",
+    "snacksDesc": "Смачні перекуси на будь-який час доби."
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
-    "email": "Email",
+    "title": "Зв'яжіться з нами",
+    "subtitle": "Ми будемо раді почути вашу думку. Зв'яжіться з нами будь-яким із цих каналів.",
+    "phone": "Телефон",
+    "email": "Електронна пошта",
     "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "callNow": "Зателефонуйте зараз",
+    "sendEmail": "Надіслати електронного листа",
+    "messageUs": "Напишіть нам"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "Медіацентр",
+    "pageTitle": "Медіацентр | Harvics",
+    "description": "Прес-ресурси, рекламні матеріали бренду та останні новини від Harvics Global Ventures.",
+    "corporate": "Корпоративний",
+    "sections": {
+      "news": {
+        "title": "Новини та прес-релізи",
+        "desc": "Останні оголошення, розширення ринку, запуски продуктів та корпоративні новини від Harvics Global Ventures.",
+        "cta": "Читайте останні новини"
+      },
+      "gallery": {
+        "title": "Галерея зображень",
+        "desc": "Фірмові матеріали високої роздільної здатності, фотографії продуктів, зображення об'єктів та висвітлення подій для використання в ЗМІ.",
+        "cta": "Переглянути галерею"
+      },
+      "contacts": {
+        "title": "Контакти для ЗМІ",
+        "desc": "Звертайтеся до нашої команди комунікацій щодо запитів преси, запитів на інтерв'ю та оголошень про партнерство.",
+        "cta": "Зв'язатися з прес-службою"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "Охоплені ринки",
+      "industryVerticals": "Галузеві вертикалі",
+      "foundedIn": "Заснована в Дубаї",
+      "languagesSupported": "Підтримувані мови"
+    },
+    "recentHeadlines": "Останні заголовки",
+    "headlines": {
+      "expansion": "Harvics розширює свою діяльність у сфері товарів швидкого попиту на 5 нових ринків Південно-Східної Азії",
+      "aiPlatform": "Запущено нову платформу ланцюга поставок на базі штучного інтелекту для глобальної дистрибуції",
+      "carbonNeutral": "Harvics досягає вуглецево-нейтрального етапу на всіх об'єктах",
+      "partnership": "Стратегічне партнерство з провідними виробниками текстилю в Південній Азії"
+    }
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
-    "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
-    "contactUsButton": "Contact Us",
-    "usefulLinks": "Useful Links",
-    "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
-    "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
-    "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
-    "privacy": "Privacy",
-    "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
+    "tagline": "Досконалість у сфері преміальних споживчих товарів з 2019 року",
+    "brandStatement": "Провідна світова компанія з продажу споживчих товарів, що постачає преміальні харчові продукти різних категорій, що відповідають міжнародним стандартам якості.",
+    "locations": "Лондон • Мілан • Нью-Йорк",
+    "since": "З 2019 року",
+    "harvicsNews": "Новини Харвікса",
+    "subscribeToAlerts": "Підпишіться, щоб отримувати сповіщення та оновлення",
+    "signUp": "Зареєструватися",
+    "complianceConcerns": "Проблеми дотримання вимог",
+    "speakUp": "Висловлюйте свої занепокоєння щодо дотримання вимог або етики",
+    "speakUpButton": "Висловлюйтесь",
+    "contactUs": "Зв'яжіться з нами",
+    "contactDescription": "Зв'яжіться з нашою командою",
+    "contactUsButton": "Зв'яжіться з нами",
+    "usefulLinks": "Корисні посилання",
+    "askHarvics": "Запитайте Гарвіча",
+    "searchForJobs": "Пошук вакансій",
+    "signUpForNews": "Підпишіться на новини",
+    "company": "Компанія",
+    "globalAddresses": "Глобальні адреси",
+    "strategy": "Стратегія",
+    "ourLeadership": "Наше лідерство",
+    "brandsAZ": "Бренди від А до Я",
+    "ourHistory": "Наша історія",
+    "sustainability": "Сталий розвиток",
+    "news": "Новини",
+    "mediaContacts": "Контакти для ЗМІ",
+    "images": "Зображення",
+    "investors": "Інвестори",
+    "corporateGovernance": "Корпоративне управління",
+    "sharesAdrsBonds": "Акції, АДР та облігації",
+    "publications": "Публікації",
+    "followUsOn": "Слідкуйте за нами",
+    "issuesCount": "0 проблем",
+    "siteMap": "Мапа сайту",
+    "unsubscribe": "Скасувати підписку",
+    "help": "Допомога",
+    "privacy": "Конфіденційність",
+    "cookies": "Файли cookie",
+    "termsOfUse": "Умови використання",
+    "accessibility": "Доступність",
+    "carbonEfficiency": "Вуглецева ефективність",
+    "suppliers": "Постачальники",
+    "socialMedia": "Соціальні мережі",
+    "cookieSettings": "Налаштування файлів cookie",
     "feature1Title": "Global Reach",
     "feature1Desc": "Serving customers across 40+ countries worldwide",
-    "feature2Title": "Premium Quality",
+    "feature2Title": "Преміальна якість",
     "feature2Desc": "International quality standards in every product",
     "feature3Title": "Innovation",
     "feature3Desc": "Leading innovation in consumer goods industry",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
-    "media": "Media"
+    "emailAddress": "Адреса електронної пошти",
+    "enterEmailPlaceholder": "Введіть свою адресу електронної пошти",
+    "subscribe": "Підписатися",
+    "subscribing": "Підписка...",
+    "aboutUs": "Про нас",
+    "media": "Медіа"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "Пошук товарів, брендів або категорій",
+    "noResults": "Результатів не знайдено",
+    "searching": "Пошук...",
+    "results": "Результати"
   },
   "chatbot": {
-    "title": "Chat with Us",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "title": "Зв'яжіться з нами",
+    "placeholder": "Введіть своє повідомлення...",
+    "send": "Надіслати",
+    "close": "Закрити",
+    "welcome": "Привіт! Чим я можу вам допомогти сьогодні?",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "Вибачте, я не зрозумів. Чи не могли б ви перефразувати?",
+      "help": "Я можу допомогти вам з інформацією про продукти, замовленнями або загальними запитами. Що б ви хотіли знати?",
+      "contact": "Щоб отримати додаткову допомогу, зв’яжіться з нами за адресою support@harvics.com або зателефонуйте за номером +1-800-HARVICS."
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
-    "filter": "Filter",
-    "clear": "Clear",
-    "download": "Download",
-    "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
-    "status": "Status",
-    "date": "Date",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
-    "selectCountry": "Select Country",
-    "required": "Required",
-    "menu": "Menu",
-    "viewProducts": "View Products"
+    "chatWithUs": "Зв'яжіться з нами",
+    "loading": "Завантаження...",
+    "error": "Помилка",
+    "success": "Успіх",
+    "save": "Зберегти",
+    "cancel": "Скасувати",
+    "delete": "Видалити",
+    "edit": "Редагувати",
+    "view": "Переглянути",
+    "submit": "Надіслати",
+    "search": "Пошук",
+    "filter": "Фільтр",
+    "clear": "Очистити",
+    "download": "Завантажити",
+    "upload": "Завантажити",
+    "yes": "Так",
+    "no": "Ні",
+    "close": "Закрити",
+    "back": "Назад",
+    "next": "Далі",
+    "previous": "Попередній",
+    "actions": "Дії",
+    "status": "Статус",
+    "date": "Дата",
+    "name": "Ім'я",
+    "email": "Електронна пошта",
+    "phone": "Телефон",
+    "address": "Адреса",
+    "country": "Країна",
+    "city": "Місто",
+    "all": "Усі",
+    "none": "Жоден",
+    "select": "Виберіть",
+    "selectCountry": "Виберіть країну",
+    "required": "Обов'язково",
+    "menu": "Меню",
+    "viewProducts": "Переглянути товари",
+    "selectLanguage": "Виберіть мову",
+    "showMore": "Показати більше",
+    "showLess": "Показати менше"
   },
   "music": {
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "Відтворити музику",
+    "pause": "Призупинити музику",
+    "mute": "Вимкнути музику",
+    "unmute": "Увімкнути музику"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "Наш глобальний охоплення",
+    "since": "З",
+    "majorMarket": "Великий ринок",
+    "majorMarkets": "Основні ринки",
+    "presence": "Присутність",
+    "countriesServed": "Країни обслуговування",
+    "majorMarketsCount": "Основні ринки",
+    "productCategoriesCount": "Категорії продуктів",
+    "establishedYear": "Засновано"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "Ієрархія території",
+    "fullPath": "Повний шлях",
+    "currentTerritory": "Поточна територія",
+    "noChildren": "Немає товарів",
     "tiers": {
-      "globe": "Globe",
-      "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
-      "district": "District",
-      "location": "Location"
+      "globe": "Глобус",
+      "continent": "Континент",
+      "region": "Регіон",
+      "country": "Країна",
+      "city": "Місто",
+      "district": "Район",
+      "location": "Розташування"
     }
   },
   "globalWorld": {
     "title": "Harvics Global",
-    "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "titleShort": "Глобальний",
+    "selectRegion": "Виберіть регіон",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
+      "title": "Відомості про клієнта",
+      "selected": "Вибрано",
+      "fullName": "Повне ім'я",
+      "namePlaceholder": "Введіть своє повне ім'я",
+      "nameRequired": "Ім'я обов'язкове",
+      "email": "Адреса електронної пошти",
       "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
+      "emailRequired": "Потрібно вказати електронну пошту",
+      "emailInvalid": "Будь ласка, введіть дійсну адресу електронної пошти",
+      "phone": "Номер телефону",
       "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "phoneRequired": "Номер телефону обов'язковий",
+      "address": "Адреса",
+      "addressPlaceholder": "Ваша адреса",
+      "addressRequired": "Адреса обов'язкова",
+      "marketingConsent": "Я погоджуюся отримувати маркетингові повідомлення та оновлення",
+      "submit": "Надіслати та продовжити",
+      "submitting": "Надсилання...",
+      "skip": "Пропустити та продовжити"
     }
   },
   "distributorPortal": {
     "dashboard": {
       "kpi": {
-        "title": "Key Performance Indicators",
-        "ordersToday": "Orders today",
-        "ordersTodaySubtitle": "Submitted via Harvics CRM",
-        "pendingDeliveries": "Pending deliveries",
-        "pendingDeliveriesSubtitle": "Across assigned routes",
-        "retailers": "Retailers",
-        "retailersSubtitle": "Active outlets in scope",
-        "attendance": "T & A Score",
-        "attendanceSubtitle": "Territory coverage"
+        "title": "Ключові показники ефективності",
+        "ordersToday": "Замовлення сьогодні",
+        "ordersTodaySubtitle": "Надіслано через Harvics CRM",
+        "pendingDeliveries": "Очікуються доставки",
+        "pendingDeliveriesSubtitle": "За призначеними маршрутами",
+        "retailers": "Роздрібні торговці",
+        "retailersSubtitle": "Активні торгові точки в охопленні",
+        "attendance": "Оцінка T & A",
+        "attendanceSubtitle": "Територіальне покриття"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "Фінанси та інвентаризація",
+        "lowStock": "Артикули з низьким рівнем запасів",
+        "lowStockSubtitle": "Поповнення активатора",
+        "outstandingInvoices": "Неоплачені рахунки-фактури",
+        "outstandingInvoicesSubtitle": "Термін стягнення",
+        "creditLimit": "Кредитний ліміт",
+        "creditLimitSubtitle": "Призначено фінансовим відділом"
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "Увімкнено автоматичне затвердження, поповнення запасів та нагадування про рахунки-фактури",
+        "autoApproval": "Самосхвалення",
+        "stockReplenishment": "Поповнення запасів",
+        "invoiceReminders": "Нагадування про рахунки-фактури"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "Рекомендації ШІ",
+        "riskLevel": "Рівень ризику",
+        "riskDescription": "На основі використання кредиту та історії платежів",
+        "suggestedOrder": "Рекомендований порядок",
+        "suggestedOrderSubtitle": "Артикули, рекомендовані штучним інтелектом, для замовлення",
+        "nextAction": "Наступна дія"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "Дії та вказівки",
+        "complaints": "Скарги",
+        "complaintsSubtitle": "Проблеми з роздрібним продавцем, що очікують вирішення",
+        "playbook": "Посібник",
+        "playbookItem1": "Надайте пріоритет доставкам, що очікують на добу до полудня.",
+        "playbookItem2": "Закрити всі нерозглянуті скарги протягом 48 годин.",
+        "playbookItem3": "Активувати поповнення запасів для товарних позицій з низьким рівнем запасів (автоматичне створення замовлення на придбання)."
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "Територія",
+      "ordersThisMonth": "Замовлення цього місяця",
+      "pendingOrders": "Відкладені ордери",
+      "deliveredOrders": "Доставлені замовлення",
+      "territoryInformation": "Інформація про територію",
+      "country": "Країна",
+      "city": "Місто",
+      "region": "Регіон",
+      "quickActions": "Швидкі дії",
+      "newOrder": "Новий порядок",
+      "viewOrders": "Переглянути замовлення",
+      "viewInvoices": "Переглянути рахунки-фактури",
+      "profileSettings": "Налаштування профілю",
+      "loading": "Завантаження панелі інструментів...",
+      "error": "Помилка"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
-      "date": "Date",
-      "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "title": "Мої замовлення",
+      "orderId": "Ідентифікатор замовлення",
+      "date": "Дата",
+      "status": "Статус",
+      "items": "Елементи",
+      "totalAmount": "Загальна сума",
+      "actions": "Дії",
+      "viewDetails": "Переглянути деталі",
       "filters": {
-        "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "Статус",
+        "startDate": "Дата початку",
+        "endDate": "Дата завершення",
+        "allStatuses": "Усі статуси",
+        "clearFilters": "Очистити фільтри"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "Очікує на розгляд",
+        "processing": "Обробка",
+        "delivered": "Доставлено",
+        "cancelled": "Скасовано"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
-      "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "noOrders": "Замовлень не знайдено",
+      "loading": "Завантаження замовлень...",
+      "page": "Сторінка",
+      "of": "з",
+      "previous": "Попередній",
+      "next": "Далі"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
-      "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "orderItems": "Order Items",
-      "product": "Product",
-      "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "title": "Деталі замовлення",
+      "backToOrders": "Назад до замовлень",
+      "orderId": "Ідентифікатор замовлення",
+      "status": "Статус",
+      "orderDate": "Дата замовлення",
+      "deliveryDate": "Дата доставки",
+      "deliveryAddress": "Адреса доставки",
+      "notes": "Нотатки",
+      "orderItems": "Товари замовлення",
+      "product": "Продукт",
+      "sku": "Артикул",
+      "quantity": "Кількість",
+      "unitPrice": "Ціна за одиницю",
+      "total": "Всього",
+      "totalAmount": "Загальна сума",
+      "statusTimeline": "Хронологія стану",
+      "orderNotFound": "Замовлення не знайдено"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
-      "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "title": "Створити нове замовлення",
+      "orderItems": "Товари замовлення",
+      "addItem": "Додати елемент",
+      "noItems": "Ще не додано жодного елемента. Натисніть «Додати елемент», щоб розпочати.",
+      "orderDetails": "Деталі замовлення",
+      "deliveryDate": "Дата доставки",
+      "deliveryAddress": "Адреса доставки",
+      "notes": "Нотатки",
+      "totalAmount": "Загальна сума",
+      "createOrder": "Створити замовлення",
+      "creatingOrder": "Створення замовлення...",
+      "cancel": "Скасувати",
+      "selectProduct": "Виберіть продукт",
+      "product": "Продукт",
+      "quantity": "Кількість",
+      "unitPrice": "Ціна за одиницю",
+      "remove": "Видалити",
+      "subtotal": "Проміжний підсумок",
+      "orderId": "Ідентифікатор замовлення",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "Потрібно вказати принаймні один елемент замовлення",
+        "productRequired": "Продукт обов'язковий",
+        "quantityRequired": "Кількість має бути більшою за 0",
+        "priceRequired": "Ціна за одиницю має бути невід'ємною",
+        "invalidDate": "Недійсний формат дати доставки",
+        "datePast": "Дата доставки не може бути в минулому"
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "Мої рахунки-фактури",
+      "invoiceNumber": "Номер рахунку-фактури",
+      "invoiceDate": "Дата рахунку-фактури",
+      "dueDate": "Два побачення",
+      "amount": "Сума",
+      "paidAmount": "Сплачена сума",
+      "paymentStatus": "Статус платежу",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "Статус платежу",
+        "allStatuses": "Усі статуси",
+        "clearFilters": "Очистити фільтри"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "Платно",
+        "unpaid": "Неоплачено",
+        "partial": "Часткове"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "Рахунки-фактури не знайдено",
+      "loading": "Завантаження рахунків-фактур..."
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "title": "Мій профіль",
+      "accountInformation": "Інформація про обліковий запис",
+      "distributorId": "Ідентифікатор дистриб'ютора",
+      "territory": "Територія",
+      "country": "Країна",
+      "city": "Місто",
+      "accountCreated": "Обліковий запис створено",
+      "updateProfile": "Оновити профіль",
+      "name": "Ім'я",
+      "email": "Електронна пошта",
+      "phone": "Телефон",
+      "address": "Адреса",
+      "language": "Мова",
+      "currency": "Валюта",
+      "saveChanges": "Зберегти зміни",
+      "saving": "Збереження...",
+      "profileUpdated": "Профіль успішно оновлено",
+      "loading": "Завантаження профілю...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "Недійсний формат електронної пошти",
+        "invalidPhone": "Недійсний формат телефону"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
-      "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "error": "Помилка",
+      "loading": "Завантаження...",
+      "save": "Зберегти",
+      "cancel": "Скасувати",
+      "back": "Назад",
+      "submit": "Надіслати",
+      "delete": "Видалити",
+      "edit": "Редагувати",
+      "view": "Переглянути",
+      "search": "Пошук",
+      "filter": "Фільтр",
+      "clear": "Очистити",
+      "apply": "Застосувати",
+      "close": "Закрити",
+      "confirm": "Підтвердити",
+      "yes": "Так",
+      "no": "Ні"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
-    "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "title": "Юридична операційна система",
+    "sidebarTitle": "Юридична ОС",
+    "accessDenied": "Доступ заборонено",
+    "accessDeniedMessage": "У вас немає дозволу на доступ до модуля Legal OS.",
+    "dashboard": "Інформаційна панель",
+    "contracts": "Контракти",
+    "certificates": "Сертифікати",
+    "compliance": "Відповідність",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "Юридична панель інструментів",
+      "description": "Огляд юридичних операцій та статусу відповідності",
+      "activeTrademarks": "Активні торгові марки",
+      "activeContracts": "Активні контракти",
+      "complianceStatus": "Статус відповідності"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "Торгові марки",
+      "description": "Керування реєстрацією та заявками на торговельні марки",
+      "addNew": "Додати нову торгову марку",
       "filters": {
-        "country": "Country",
-        "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "country": "Країна",
+        "status": "Статус",
+        "allCountries": "Усі країни",
+        "allStatuses": "Усі статуси",
+        "clearFilters": "Очистити фільтри"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "brandName": "Назва бренду",
+        "class": "Клас",
+        "country": "Країна",
+        "applicationNo": "Номер заявки",
+        "status": "Статус",
+        "expiryDate": "Термін дії",
+        "actions": "Дії"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "Редагувати торговельну марку",
+        "add": "Додати нову торгову марку",
+        "view": "Переглянути торговельну марку"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "brandName": "Назва бренду",
+        "classNumber": "Номер класу",
+        "country": "Країна",
+        "applicationNo": "Номер заявки",
+        "status": "Статус",
+        "expiryDate": "Термін дії",
+        "documents": "Документи",
+        "noDocuments": "Документів не додано",
+        "addDocument": "Додати документ",
+        "remove": "Видалити"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "Не вдалося завантажити торговельні марки",
+        "saveFailed": "Не вдалося зберегти торговельну марку. Спробуйте ще раз."
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "Судові справи",
+      "description": "Ведення юридичних справ та відстеження їхнього статусу",
+      "addNew": "Нова справа",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
-        "description": "Description",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date"
+        "caseTitle": "Назва справи",
+        "caseType": "Тип корпусу",
+        "country": "Країна",
+        "description": "Опис",
+        "assignedTo": "Призначено",
+        "status": "Статус",
+        "hearingDate": "Дата слухання"
       },
       "table": {
-        "caseTitle": "Case Title",
-        "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "caseTitle": "Назва справи",
+        "type": "Тип",
+        "country": "Країна",
+        "assignedTo": "Призначено",
+        "status": "Статус",
+        "hearingDate": "Дата слухання",
+        "actions": "Дії"
       },
       "status": {
-        "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "open": "ВІДЧИНЕНО",
+        "inProgress": "У процесі",
+        "closed": "ЗАЧИНЕНО",
+        "cancelled": "Скасовано"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "Перегляд карти автопарку",
+      "description": "Відстеження торгових представників та транспортних засобів доставки в режимі реального часу",
+      "activeEmployees": "Активні співробітники",
+      "noEmployees": "Немає активних співробітників",
+      "loading": "Завантаження..."
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
-      "reset": "Reset",
-      "play": "Play",
-      "pause": "Pause",
-      "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "title": "Повторення маршруту",
+      "employee": "Працівник",
+      "speed": "Швидкість",
+      "reset": "Скинути",
+      "play": "Грати",
+      "pause": "Пауза",
+      "points": "бали",
+      "noRoute": "Дані маршруту недоступні",
+      "loading": "Завантаження маршруту..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "Продукти конкурентів",
+      "description": "Відстежуйте інформацію про продукти конкурентів",
+      "addProduct": "Додати продукт",
+      "formTitle": "Додати продукт конкурента",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "Бренд",
+        "skuName": "Назва артикула",
+        "category": "Категорія",
+        "size": "Розмір",
+        "price": "Ціна",
+        "currency": "Валюта",
+        "country": "Країна"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "Бренд",
+        "skuName": "Назва артикула",
+        "category": "Категорія",
+        "size": "Розмір",
+        "price": "Ціна",
+        "country": "Країна",
+        "dateAdded": "Дата додавання"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "Не вдалося завантажити товари",
+        "createFailed": "Не вдалося створити продукт. Спробуйте ще раз."
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "Конкурентів не знайдено",
+      "loading": "Завантаження товарів..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "Панель керування конкурентами",
+      "description": "Аналітика та висновки щодо продуктів конкурентів",
+      "totalProducts": "Всього товарів",
+      "brandsTracked": "Відстежувані бренди",
+      "countries": "Країни",
+      "categories": "Категорії",
+      "byBrand": "Продукти за брендом",
+      "byCountry": "Продукти за країною",
+      "byCategory": "Продукти за категоріями",
+      "loading": "Завантаження статистики...",
+      "noStats": "Статистика недоступна"
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
-    "finance": "Finance",
+    "overview": "Огляд",
+    "orders": "Замовлення",
+    "inventory": "Інвентаризація",
+    "logistics": "Логістика",
+    "finance": "Фінанси",
     "crm": "CRM",
     "hr": "HR",
-    "executive": "Executive",
-    "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
-    "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
-    "admin": "Admin"
+    "executive": "Виконавчий директор",
+    "investor": "Інвестор",
+    "legal-ipr": "Юридичні питання/Права інтелектуальної власності",
+    "competitor": "Конкурент",
+    "import-export": "Імпорт/Експорт",
+    "gps-tracking": "GPS-відстеження",
+    "localization": "Локалізація",
+    "workflows": "Робочі процеси",
+    "admin": "Адміністратор"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
-      "finance": "Finance",
+      "overview": "Огляд",
+      "orders": "Замовлення",
+      "inventory": "Інвентаризація",
+      "logistics": "Логістика",
+      "finance": "Фінанси",
       "crm": "CRM",
       "hr": "HR",
-      "executive": "Executive",
-      "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
-      "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
-      "admin": "Admin"
+      "executive": "Виконавчий директор",
+      "investor": "Інвестор",
+      "legal-ipr": "Юридичні питання/Права інтелектуальної власності",
+      "competitor": "Конкурент",
+      "import-export": "Імпорт/Експорт",
+      "gps-tracking": "GPS-відстеження",
+      "localization": "Локалізація",
+      "workflows": "Робочі процеси",
+      "admin": "Адміністратор"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
-      "profit": "Profit"
+      "customers": "Клієнти",
+      "employees": "Співробітники",
+      "profit": "Прибуток"
+    },
+    "domain": {
+      "title": "CRM-ОС",
+      "customer360": {
+        "title": "Клієнт 360",
+        "description": "Повні профілі клієнтів, історія взаємодії та управління взаємовідносинами"
+      },
+      "campaigns": {
+        "title": "Цифрові кампанії",
+        "description": "Багатоканальні маркетингові кампанії (IG, FB, TikTok, WhatsApp)"
+      },
+      "leads": {
+        "title": "Ліди та можливості",
+        "description": "Управління лідами, кваліфікація та воронка можливостей"
+      },
+      "support": {
+        "title": "Підтримка клієнтів",
+        "description": "Управління заявками, обслуговування клієнтів та вирішення проблем"
+      },
+      "loyalty": {
+        "title": "Програми лояльності",
+        "description": "Управління лояльністю, гейміфікацією та винагородами для роздрібних торговців"
+      }
+    },
+    "customerList": {
+      "title": "Клієнт 360",
+      "newCustomer": "Новий клієнт",
+      "totalCustomers": "Загальна кількість клієнтів",
+      "active": "Активний",
+      "new": "Новий",
+      "satisfaction": "Задоволення",
+      "customerManagement": "Управління клієнтами",
+      "customerManagementDescription": "Переглядайте та керуйте відносинами з клієнтами, взаємодіями та кампаніями.",
+      "loading": "Завантаження...",
+      "error": "Помилка завантаження даних CRM"
     }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "Завантаження панелі постачальника…",
+      "purchaseOrders": "Замовлення на придбання",
+      "purchaseOrdersSubtitle": "Виховував Харвікс",
+      "shipments": "Відвантаження / GRN",
+      "shipmentsSubtitle": "Прийнято цього тижня",
+      "invoices": "Створено рахунків-фактур",
+      "invoicesSubtitle": "Очікується оплата",
+      "paymentsPending": "Очікуються платежі",
+      "paymentsPendingSubtitle": "Заплановано до випуску",
+      "qualityComplaints": "Якість / скарги",
+      "qualityComplaintsSubtitle": "Відкриті квитки",
+      "forecast": "Прогноз (на наступні 4 тижні)",
+      "forecastSubtitle": "Заповнювач ШІ",
+      "supplierActions": "Дії постачальника",
+      "action1": "Підтвердьте майбутні відправлення та оновіть графік GRN.",
+      "action2": "Перегляньте неоплачені рахунки-фактури та поділіться порадами щодо оплати.",
+      "action3": "Вирішуйте відкриті скарги щодо якості за допомогою доказів контролю якості."
+    }
+  },
+  "form": {
+    "username": "Ім'я користувача",
+    "password": "Пароль",
+    "email": "Електронна пошта",
+    "submit": "Надіслати",
+    "cancel": "Скасувати",
+    "save": "Зберегти",
+    "delete": "Видалити",
+    "search": "Пошук",
+    "filter": "Фільтр",
+    "reset": "Скинути",
+    "close": "Закрити",
+    "back": "Назад",
+    "next": "Далі",
+    "previous": "Попередній",
+    "confirm": "Підтвердити",
+    "rememberMe": "Запам'ятай мене",
+    "forgotPassword": "Забули пароль?",
+    "emailRequired": "Потрібно вказати електронну пошту",
+    "emailInvalid": "Будь ласка, введіть дійсну адресу електронної пошти"
+  },
+  "faq": {
+    "products": {
+      "category": "Продукти",
+      "q1": "Які продукти пропонує Harvics?",
+      "a1": "Ми пропонуємо широкий асортимент преміальних харчових продуктів, включаючи кондитерські вироби, напої, закуски, макаронні вироби, хлібобулочні вироби та заморожені продукти в кількох категоріях.",
+      "q2": "Де я можу придбати продукцію Harvics?",
+      "a2": "Наші продукти доступні в роздрібних магазинах у понад 40 країнах. Скористайтеся нашим пошуком магазинів або сторінкою контактів, щоб знайти продавця поруч із вами.",
+      "q3": "Ви пропонуєте оптові замовлення?",
+      "a3": "Так, ми пропонуємо знижки на оптові замовлення для підприємств та роздрібних торговців. Відвідайте нашу сторінку «Знижки на оптові замовлення» для отримання додаткової інформації."
+    },
+    "ordersShipping": {
+      "category": "Замовлення та доставка",
+      "q1": "Які у вас є варіанти доставки?",
+      "a1": "Ми пропонуємо різні варіанти доставки, включаючи стандартну, експрес- та міжнародну доставку. Безкоштовна доставка доступна для замовлень понад 50 доларів США.",
+      "q2": "Скільки часу триває доставка?",
+      "a2": "Терміни доставки залежать від місцезнаходження. Стандартна доставка зазвичай займає 5-7 робочих днів, тоді як експрес-доставка — 2-3 робочих дні.",
+      "q3": "Чи можу я відстежити своє замовлення?",
+      "a3": "Так, ви можете відстежувати своє замовлення, використовуючи номер відстеження, вказаний у вашому електронному листі з підтвердженням замовлення."
+    },
+    "accountPayments": {
+      "category": "Обліковий запис та платежі",
+      "q1": "Як створити обліковий запис?",
+      "a1": "Натисніть кнопку «Увійти» у заголовку та виберіть «Створити обліковий запис», щоб зареєструвати новий обліковий запис.",
+      "q2": "Які способи оплати ви приймаєте?",
+      "a2": "Ми приймаємо всі основні кредитні картки, дебетові картки, PayPal та банківські перекази для замовлень B2B.",
+      "q3": "Чи безпечна моя платіжна інформація?",
+      "a3": "Так, ми використовуємо стандартне галузеве шифрування для захисту вашої платіжної інформації."
+    },
+    "returnsRefunds": {
+      "category": "Повернення та відшкодування коштів",
+      "q1": "Яка ваша політика повернення?",
+      "a1": "Ми пропонуємо 30-денну політику повернення невідкритих товарів у оригінальній упаковці. Будь ласка, зверніться до нашої служби підтримки клієнтів для отримання дозволу на повернення.",
+      "q2": "Як мені подати запит на повернення коштів?",
+      "a2": "Зверніться до нашої служби підтримки клієнтів, повідомивши номер вашого замовлення та причину повернення. Ми опрацюємо ваше відшкодування протягом 5-7 робочих днів."
+    },
+    "contactCta": {
+      "title": "Все ще маєте запитання?",
+      "subtitle": "Наша служба підтримки клієнтів готова допомогти",
+      "button": "Зв'яжіться з нами"
+    }
+  },
+  "careers": {
+    "title": "Кар'єра",
+    "pageTitle": "Кар'єра | Harvics",
+    "description": "Приєднуйтесь до Harvics Global Ventures — досліджуйте можливості у понад 40 країнах.",
+    "joinUs": "Приєднуйтесь до нас",
+    "heroTitle": "Побудуйте майбутнє світової торгівлі",
+    "heroDesc": "Ми зростаємо у понад 40 країнах. Приєднуйтесь до команди, яка створює операційну систему на базі штучного інтелекту для глобальної комерції.",
+    "stats": {
+      "openPositions": "Відкриті вакансії",
+      "countries": "Країни",
+      "industryVerticals": "Галузеві вертикалі",
+      "departmentsHiring": "Відділи, що набирають персонал"
+    },
+    "openPositionsByDept": "Відкриті вакансії за відділами",
+    "departments": {
+      "sales": {
+        "name": "Продажі та дистрибуція",
+        "desc": "Збільшення доходу на понад 40 ринках. Управління територією, ключові клієнти, відносини з дистриб'юторами."
+      },
+      "supplyChain": {
+        "name": "Ланцюг поставок та логістика",
+        "desc": "Комплексний ланцюг поставок від заводу до полиці. Управління автопарком, складське зберігання, доставка «останньої милі»."
+      },
+      "technology": {
+        "name": "Технології та штучний інтелект",
+        "desc": "Створіть Harvics OS — нашу корпоративну платформу на базі штучного інтелекту. Повний стек, машинне навчання, наука про дані."
+      },
+      "finance": {
+        "name": "Фінанси та казначейство",
+        "desc": "Мультивалютне казначейство, торгове фінансування, цифрові платежі HPay, управління валютою в різних регіонах."
+      },
+      "procurement": {
+        "name": "Закупівлі та постачання",
+        "desc": "Глобальні постачальники з понад 15 країн походження. Аудит постачальників, контроль якості, програми прямих поставок з заводу."
+      },
+      "hr": {
+        "name": "Людські ресурси",
+        "desc": "Підбір талантів, навчання та розвиток, управління ефективністю в різних географічних регіонах та культурах."
+      },
+      "legal": {
+        "name": "Юридичні питання та дотримання вимог",
+        "desc": "Дотримання торговельних норм, перевірка санкцій, захист інтелектуальної власності, управління контрактами в різних юрисдикціях."
+      },
+      "marketing": {
+        "name": "Маркетинг і бренд",
+        "desc": "Багатомовні кампанії, контент для 38 локалізацій, цифровий маркетинг, бренд-стратегія для 10 вертикалей."
+      }
+    },
+    "roles": "ролі",
+    "whyHarvics": "Чому саме Харвікс",
+    "benefits": {
+      "globalMobility": {
+        "title": "Глобальна мобільність",
+        "desc": "Робота в Дубаї, Лондоні, Карачі, Лахорі та на понад 40 ринках"
+      },
+      "growthTrack": {
+        "title": "Трек зростання",
+        "desc": "Швидкий кар'єрний ріст у масштабованому підприємстві"
+      },
+      "aiCulture": {
+        "title": "Культура, що базується на штучному інтелекті",
+        "desc": "Працюйте з передовими системами штучного інтелекту та аналітики в режимі реального часу"
+      },
+      "competitivePackage": {
+        "title": "Конкурентний пакет",
+        "desc": "Провідні на ринку компенсації, житла та пільг"
+      },
+      "learningBudget": {
+        "title": "Бюджет навчання",
+        "desc": "Річний бюджет на розробку курсів, конференцій та сертифікацій"
+      },
+      "flexibleWork": {
+        "title": "Гнучкий графік роботи",
+        "desc": "Гібридні домовленості з регіональними центрами по всьому світу"
+      }
+    }
+  },
+  "strategy": {
+    "title": "Наша стратегія",
+    "pageTitle": "Стратегія | Гарвіч",
+    "description": "Побудова сталого майбутнього через інновації та досконалість",
+    "heroSubtitle": "Побудова сталого майбутнього через інновації та досконалість",
+    "pillars": {
+      "globalExpansion": {
+        "title": "Глобальна експансія",
+        "desc": "Розширення нашої присутності на ринках, що розвиваються, одночасно зміцнюючи наші позиції на сформованих ринках"
+      },
+      "productInnovation": {
+        "title": "Інновації продукту",
+        "desc": "Інвестування в дослідження та розробки для розробки нових продуктів, що відповідають мінливим уподобанням споживачів"
+      },
+      "sustainability": {
+        "title": "Сталий розвиток",
+        "desc": "Віддані принципам сталого розвитку в усьому нашому ланцюжку поставок та операціях"
+      },
+      "digitalTransformation": {
+        "title": "Цифрова трансформація",
+        "desc": "Використання технологій для покращення клієнтського досвіду та операційної ефективності"
+      }
+    },
+    "vision": {
+      "title": "Наше бачення",
+      "desc": "Бути провідною світовою компанією з виробництва преміальних споживчих товарів, визнаною за якість, інновації та сталий розвиток."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Harvics Global Ventures | Преміальна глобальна торгівля",
+      "description": "Провідна світова торгова компанія, що постачає преміальні продукти у понад 10 галузях промисловості. Працює у понад 50 країнах з 2019 року."
+    },
+    "about": {
+      "title": "Про нас | Harvics Global Ventures",
+      "description": "Дізнайтеся, як Harvics Global Ventures стала провідною силою у світовій торгівлі у понад 40 країнах та 10 галузях промисловості."
+    },
+    "contact": {
+      "title": "Зв'яжіться з нами | Harvics Global Ventures",
+      "description": "Зв'яжіться з офісами Harvics по всьому світу на Близькому Сході, в Південній Азії, Європі, Африці та Америці."
+    },
+    "products": {
+      "title": "Продукція | Harvics Global Ventures",
+      "description": "Ознайомтеся з преміальним асортиментом продукції Harvics, що охоплює товари широкого вжитку, текстиль, сировинні товари та промислові рішення."
+    },
+    "careers": {
+      "title": "Кар'єра | Harvics Global Ventures",
+      "description": "Приєднуйтесь до Harvics Global Ventures — досліджуйте можливості у понад 40 країнах світу у сфері товарів широкого вжитку, текстилю, логістики та технологій."
+    },
+    "media": {
+      "title": "Медіацентр | Harvics Global Ventures",
+      "description": "Медіацентр Harvics — прес-релізи, останні новини, матеріали бренду та контакти зі ЗМІ."
+    },
+    "strategy": {
+      "title": "Наша стратегія | Harvics Global Ventures",
+      "description": "Стратегічне бачення Harvics щодо глобальної експансії, інновацій, сталого розвитку та цифрової трансформації."
+    },
+    "csr": {
+      "title": "Корпоративна соціальна відповідальність | Harvics",
+      "description": "Ініціативи Harvics у сфері корпоративної соціальної відповідальності — екологічна відповідальність, громадські програми та етична бізнес-практика."
+    },
+    "faq": {
+      "title": "Найчастіші запитання | Harvics Global Ventures",
+      "description": "Часті запитання щодо продуктів, послуг, замовлень та глобальної діяльності Harvics."
+    },
+    "locations": {
+      "title": "Глобальні локації | Harvics",
+      "description": "Офіси та підприємства Harvics розташовані на Близькому Сході, у Південній Азії, Європі, Африці та Америці."
+    },
+    "leadership": {
+      "title": "Керівна команда | Harvics",
+      "description": "Зустрічайте команду керівництва, яка керує Harvics Global Ventures на понад 40 ринках та у 10 галузевих вертикалях."
+    },
+    "help": {
+      "title": "Центр допомоги | Harvics",
+      "description": "Отримайте допомогу із замовленнями, обліковими записами, доставкою та послугами Harvics."
+    },
+    "compliance": {
+      "title": "Відповідність та етика | Harvics",
+      "description": "Відданість компанії Harvic дотриманню нормативних вимог, етичної ділової практики та глобальних стандартів."
+    },
+    "history": {
+      "title": "Наша історія | Harvics",
+      "description": "Від дубайського стартапу 2019 року до глобального підприємства, що охоплює понад 40 країн — історія Harvics."
+    },
+    "newsletter": {
+      "title": "Інформаційний бюлетень | Harvics",
+      "description": "Підпишіться на розсилку Harvics, щоб отримувати галузеву аналітику та інформацію про запуск продуктів."
+    },
+    "login": {
+      "title": "Увійти | Harvics",
+      "description": "Увійдіть до свого облікового запису Harvics, щоб керувати замовленнями та отримати доступ до платформи."
+    },
+    "research": {
+      "title": "Дослідження та інновації | Harvics",
+      "description": "Дослідницькі ініціативи та інноваційні програми Harvics є рушійною силою нашої глобальної стратегії."
+    },
+    "investorRelations": {
+      "title": "Відділ зв'язків з інвесторами | Harvics",
+      "description": "Інформація для інвесторів, фінансові звіти та корпоративні оголошення від Harvics Global Ventures."
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Сторінку не знайдено",
+      "heading": "404 — Сторінку не знайдено",
+      "description": "Сторінка, яку ви шукаєте, не існує або була переміщена.",
+      "goHome": "Перейти на головну сторінку",
+      "goBack": "Назад"
+    },
+    "serverError": {
+      "title": "Щось пішло не так",
+      "heading": "Щось пішло не так",
+      "description": "Вибачте, але сталося щось непередбачене. Будь ласка, спробуйте оновити сторінку.",
+      "tryAgain": "Спробуйте ще раз",
+      "reload": "Перезавантажити сторінку",
+      "contactSupport": "Зверніться до служби підтримки"
+    },
+    "globalError": {
+      "title": "Помилка програми",
+      "heading": "Критична помилка",
+      "description": "Сталася критична помилка. Будь ласка, перезавантажте сторінку.",
+      "reload": "Перезавантажити програму"
+    }
+  },
+  "about": {
+    "title": "Про Харвікс",
+    "subtitle": "Досконалість у сфері преміальних споживчих товарів з 2019 року",
+    "ourStory": "Наша історія",
+    "story1": "Заснована у 2019 році, компанія Harvics перетворилася з далекоглядної ідеї на світового лідера у виробництві преміальних споживчих товарів. Наш шлях визначається невпинним прагненням до якості та відданістю інноваціям.",
+    "story2": "Ми працюємо у понад 40 країнах, пропонуючи продукти, які збагачують життя та встановлюють нові стандарти в галузі. Від наших скромних початків до нашої глобальної присутності наші цінності залишаються незмінними.",
+    "est2018": "Орієнтовно 2019",
+    "countries40": "40+ країн",
+    "productLines6": "6 лінійок продуктів"
+  },
+  "csr": {
+    "hero": {
+      "title": "Корпоративна соціальна відповідальність",
+      "description": "У Harvics ми прагнемо позитивно впливати на світ. Наші ініціативи у сфері корпоративної соціальної відповідальності зосереджені на сталому розвитку, розширенні можливостей громад та етичних практиках ведення бізнесу.",
+      "stats": {
+        "years": "Роки впливу",
+        "countries": "Охоплені країни",
+        "lives": "Доторкнулися до життів"
+      }
+    },
+    "initiatives": {
+      "title": "Наші ключові ініціативи",
+      "description": "Ми зосереджуємося на чотирьох основних напрямках для стимулювання сталих змін та створення спільних цінностей для всіх зацікавлених сторін."
+    },
+    "sustainability": {
+      "title": "Сталий розвиток",
+      "description": "Зменшення нашого впливу на навколишнє середовище за рахунок відновлюваної енергії та скорочення відходів.",
+      "stats": {
+        "renewable": "Відновлювана енергія",
+        "waste": "Відходи перенаправлені",
+        "carbon": "Скорочення викидів вуглецю"
+      }
+    },
+    "community": {
+      "title": "Підтримка громади",
+      "description": "Розширення можливостей місцевих громад через освіту, охорону здоров'я та економічний розвиток.",
+      "stats": {
+        "families": "Підтримувані сім'ї",
+        "programs": "Активні програми",
+        "volunteers": "Волонтери"
+      }
+    },
+    "education": {
+      "title": "Освіта",
+      "description": "Забезпечення доступу до якісної освіти та стипендій для студентів з малозабезпечених сімей.",
+      "stats": {
+        "scholarships": "Стипендії",
+        "schools": "Школи-партнери",
+        "students": "Студенти, на яких вплинуло"
+      }
+    },
+    "health": {
+      "title": "Здоров'я та благополуччя",
+      "description": "Покращення доступу до медичного обслуговування та харчування в недостатньо обслуговуваних регіонах.",
+      "stats": {
+        "campaigns": "Кампанії охорони здоров'я",
+        "people": "Обслуговувані люди",
+        "clinics": "Мобільні клініки"
+      }
+    },
+    "achievements": {
+      "2022": {
+        "title": "Найкраща ініціатива КСВ",
+        "description": "Відзначено за наш інноваційний підхід до соціальної відповідальності."
+      },
+      "2023": {
+        "title": "Чемпіон громади",
+        "description": "Нагороджено за наші масштабні програми роботи з громадою."
+      },
+      "2024": {
+        "title": "Глобальна нагорода за сталий розвиток",
+        "description": "Визнано за нашу відданість вуглецевій нейтральності."
+      },
+      "title": "Наш вплив",
+      "description": "Визнаючи наші віхи у створенні кращого світу."
+    },
+    "cta": {
+      "title": "Приєднуйтесь до нас, щоб змінити світ на краще",
+      "description": "Станьте нашим партнером або дізнайтеся більше про те, як ми будуємо стале майбутнє.",
+      "contact": "Зв'яжіться з командою КСВ",
+      "learnMore": "Дізнатися більше"
+    }
+  },
+  "harvicsHouse": {
+    "title": "Будинок Харвікс",
+    "subtitle": "Спадщина досконалості та традицій",
+    "aboutTitle": "Ласкаво просимо до будинку Харвікс",
+    "description": "Harvics House є вершиною нашої відданості якості та спадщині. Тут ми зібрали найкращий вибір наших преміальних продуктів, представлених в середовищі, яке відображає наші цінності елегантності, традицій та інновацій.",
+    "description2": "Ознайомтеся з нашими ексклюзивними колекціями та дізнайтеся історію кожного продукту, що носить ім'я Harvics."
   }
 }

@@ -1,0 +1,128 @@
+{
+  "_note": "Spanish backend translations - API responses, statuses, error messages",
+  "orders": {
+    "status": {
+      "pending": "Pendiente",
+      "inTransit": "En tránsito",
+      "completed": "Completado",
+      "cancelled": "Cancelado",
+      "processing": "Procesando",
+      "delivered": "Entregado",
+      "onHold": "En espera"
+    },
+    "messages": {
+      "created": "Pedido creado exitosamente",
+      "updated": "Pedido actualizado exitosamente",
+      "deleted": "Pedido eliminado exitosamente",
+      "notFound": "Pedido no encontrado"
+    }
+  },
+  "inventory": {
+    "categories": {
+      "frozenFoods": "Alimentos congelados",
+      "culinary": "Culinario",
+      "commodities": "Materias primas",
+      "industrial": "Industrial",
+      "grains": "Granos",
+      "pantry": "Despensa",
+      "confectionery": "Confitería",
+      "natural": "Natural",
+      "homeTextiles": "Textiles del hogar",
+      "beverages": "Bebidas"
+    },
+    "messages": {
+      "created": "Artículo de inventario creado exitosamente",
+      "updated": "Artículo de inventario actualizado exitosamente",
+      "deleted": "Artículo de inventario eliminado exitosamente",
+      "notFound": "Artículo de inventario no encontrado",
+      "lowStock": "Alerta de stock bajo"
+    }
+  },
+  "crm": {
+    "segments": {
+      "wholesale": "Mayorista",
+      "distributor": "Distribuidor",
+      "retail": "Minorista",
+      "b2b": "B2B",
+      "ecommerce": "Comercio electrónico",
+      "direct": "Directo"
+    },
+    "messages": {
+      "customerCreated": "Cliente creado exitosamente",
+      "customerUpdated": "Cliente actualizado exitosamente",
+      "customerDeleted": "Cliente eliminado exitosamente",
+      "customerNotFound": "Cliente no encontrado"
+    }
+  },
+  "hr": {
+    "departments": {
+      "sales": "Ventas",
+      "operations": "Operaciones",
+      "finance": "Finanzas",
+      "hr": "Recursos Humanos",
+      "it": "Tecnología de la Información",
+      "marketing": "Marketing",
+      "logistics": "Logística",
+      "procurement": "Adquisiciones",
+      "executive": "Ejecutivo",
+      "legal": "Legal"
+    },
+    "messages": {
+      "employeeCreated": "Registro de empleado creado exitosamente",
+      "employeeUpdated": "Registro de empleado actualizado exitosamente",
+      "employeeDeleted": "Registro de empleado eliminado exitosamente",
+      "employeeNotFound": "Empleado no encontrado"
+    }
+  },
+  "finance": {
+    "status": {
+      "paid": "Pagado",
+      "unpaid": "Sin pagar",
+      "overdue": "Vencido",
+      "partial": "Pago parcial"
+    },
+    "messages": {
+      "invoiceCreated": "Factura creada exitosamente",
+      "paymentReceived": "Pago recibido exitosamente",
+      "approvalRequired": "Requiere aprobación"
+    }
+  },
+  "logistics": {
+    "status": {
+      "scheduled": "Programado",
+      "inProgress": "En progreso",
+      "completed": "Completado",
+      "delayed": "Retrasado"
+    },
+    "messages": {
+      "routeCreated": "Ruta creada exitosamente",
+      "routeUpdated": "Ruta actualizada exitosamente",
+      "shipmentDispatched": "Envío despachado"
+    }
+  },
+  "errors": {
+    "invalidCredentials": "Usuario o contraseña inválidos",
+    "unauthorized": "Acceso no autorizado",
+    "forbidden": "Acceso prohibido",
+    "notFound": "Recurso no encontrado",
+    "serverError": "Error interno del servidor",
+    "validationError": "Error de validación",
+    "duplicateEntry": "Entrada duplicada",
+    "tokenExpired": "Sesión expirada, por favor inicie sesión nuevamente",
+    "tokenInvalid": "Token de autenticación inválido",
+    "missingFields": "Campos requeridos faltantes",
+    "invalidFormat": "Formato de datos inválido",
+    "databaseError": "Error de base de datos",
+    "networkError": "Error de red"
+  },
+  "messages": {
+    "success": "Operación completada exitosamente",
+    "created": "Creado exitosamente",
+    "updated": "Actualizado exitosamente",
+    "deleted": "Eliminado exitosamente",
+    "fetched": "Datos recuperados exitosamente",
+    "loginSuccess": "Inicio de sesión exitoso",
+    "logoutSuccess": "Cierre de sesión exitoso",
+    "welcome": "Bienvenido a Harvics OS"
+  }
+}

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function TestPortalPage() {
   return (
-    <div className="min-h-screen bg-[#F5F1E8] flex items-center justify-center px-4">
+    <div className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="text-center max-w-lg">
         <div className="w-20 h-20 bg-[#6B1F2B] flex items-center justify-center mx-auto mb-8">
           <span className="text-3xl text-white">✓</span>

@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "hr",
+    "language": "Croatian",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Croatian. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Croatian",
+      "translation": "Dobrodošli u"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Croatian",
+      "translation": "Harwich"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Croatian",
+      "translation": "Izvrsnost u premium potrošačkoj robi od 2019."
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Croatian",
+      "translation": "Vodeća globalna tvrtka za robu široke potrošnje koja isporučuje vrhunske prehrambene proizvode u različitim kategorijama s međunarodnim standardima kvalitete."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Croatian",
+      "translation": "Istražite proizvode"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Croatian",
+      "translation": "Kontaktirajte nas"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Croatian",
+      "translation": "Saznajte više"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Croatian",
+      "translation": "Izvrsnost u premium potrošačkim dobrima od"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Croatian",
+      "translation": "2019."
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Croatian",
+      "translation": "London • Milano • New York"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Croatian",
+      "translation": "Pekara"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Croatian",
+      "translation": "Pića"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Croatian",
+      "translation": "Slatkiši"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Croatian",
+      "translation": "Kulinarski"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Croatian",
+      "translation": "Smrznuta hrana"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Croatian",
+      "translation": "Tjestenina"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Croatian",
+      "translation": "Grickalice"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Croatian",
+      "translation": "Izvješće o ESG-u za 2025. godinu"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Croatian",
+      "translation": "London • Milano • New York"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Croatian",
+      "translation": "Dom"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Croatian",
+      "translation": "Oko"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Croatian",
+      "translation": "O nama"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Croatian",
+      "translation": "Priča o brendu"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Croatian",
+      "translation": "Proizvodi"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Croatian",
+      "translation": "Naši proizvodi"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Croatian",
+      "translation": "Pogledajte sve proizvode"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Croatian",
+      "translation": "Društvena odgovornost"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Croatian",
+      "translation": "Odnosi s investitorima"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Croatian",
+      "translation": "Investitori"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Croatian",
+      "translation": "Mediji"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Croatian",
+      "translation": "Kontaktirajte nas"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Croatian",
+      "translation": "Kuća Harvics"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Croatian",
+      "translation": "Zemlje"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Croatian",
+      "translation": "Portali"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Croatian",
+      "translation": "Prijava"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Croatian",
+      "translation": "Lista želja"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Croatian",
+      "translation": "Košarica za kupnju"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Croatian",
+      "translation": "Pomoć"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Croatian",
+      "translation": "Pronađi trgovinu"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Croatian",
+      "translation": "Novac"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Croatian",
+      "translation": "Prodajni"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Croatian",
+      "translation": "Ponude"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Croatian",
+      "translation": "Tamni način rada"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Croatian",
+      "translation": "Kreditna kartica"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Croatian",
+      "translation": "M&S Rewards kreditna kartica"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Croatian",
+      "translation": "Nagrade kluba"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Croatian",
+      "translation": "Naše kreditne kartice"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Croatian",
+      "translation": "Osiguranje"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Croatian",
+      "translation": "Osiguranje kuće"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Croatian",
+      "translation": "Putno osiguranje"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Croatian",
+      "translation": "Putničke usluge"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Croatian",
+      "translation": "Novac za putovanja"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Croatian",
+      "translation": "Tečajevi"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Croatian",
+      "translation": "Dodatne usluge"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Croatian",
+      "translation": "Štednja i ulaganje"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Croatian",
+      "translation": "Osobni krediti"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Croatian",
+      "translation": "Financijska podrška"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Croatian",
+      "translation": "Trenutna prodaja"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Croatian",
+      "translation": "Rasprodaja"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Croatian",
+      "translation": "Sezonska rasprodaja"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Croatian",
+      "translation": "Posebne ponude"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Croatian",
+      "translation": "Promocije"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Croatian",
+      "translation": "Popusti za velike narudžbe"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Croatian",
+      "translation": "Naši proizvodi"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Croatian",
+      "translation": "Pogledajte sve proizvode"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Croatian",
+      "translation": "Naše kategorije proizvoda"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Croatian",
+      "translation": "Otkrijte našu vrhunsku ponudu proizvoda izrađenih s pažnjom i izvrsnošću."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Croatian",
+      "translation": "Razina 1: Kategorije"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Croatian",
+      "translation": "Razina 2: Moduli"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Croatian",
+      "translation": "Razina 3: Zasloni KPI-jeva"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Croatian",
+      "translation": "Razina 4: Radnje"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Croatian",
+      "translation": "Poništi navigaciju"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Croatian",
+      "translation": "Za ovu kategoriju nema dostupnih podkategorija."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Croatian",
+      "translation": "Proizvodi"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Croatian",
+      "translation": "Potkategorije"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Croatian",
+      "translation": "Pekara"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Croatian",
+      "translation": "Svježe pečeni proizvodi i peciva."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Croatian",
+      "translation": "Pića"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Croatian",
+      "translation": "Osvježavajuća pića za svaku priliku."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Croatian",
+      "translation": "Slatkiši"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Croatian",
+      "translation": "Slatki zalogaji i poslastice."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Croatian",
+      "translation": "Kulinarski"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Croatian",
+      "translation": "Neophodni sastojci za vašu kuhinju."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Croatian",
+      "translation": "Smrznuta hrana"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Croatian",
+      "translation": "Praktična i ukusna smrznuta jela."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Croatian",
+      "translation": "Tjestenina"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Croatian",
+      "translation": "Autentične vrste tjestenine."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Croatian",
+      "translation": "Grickalice"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Croatian",
+      "translation": "Ukusni zalogaji za bilo koje doba dana."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Croatian",
+      "translation": "O Harvicsu"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Croatian",
+      "translation": "Izvrsnost u premium potrošačkoj robi od 2019."
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Croatian",
+      "translation": "Naša priča"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Croatian",
+      "translation": "Osnovan 2019. godine, Harvics je od vizionarske ideje izrastao u globalnog lidera u premium potrošačkoj robi. Naše putovanje definirano je neumornom težnjom za kvalitetom i predanošću inovacijama."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Croatian",
+      "translation": "Poslujemo u više od 40 zemalja, isporučujući proizvode koji obogaćuju živote i postavljaju nove standarde u industriji. Od naših skromnih početaka do naše globalne prisutnosti, naše vrijednosti ostaju nepromijenjene."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Croatian",
+      "translation": "Procjena 2019."
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Croatian",
+      "translation": "40+ zemalja"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Croatian",
+      "translation": "6 linija proizvoda"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Croatian",
+      "translation": "Društvena odgovornost tvrtke"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Croatian",
+      "translation": "U Harvicsu smo posvećeni pozitivnom utjecaju na svijet. Naše inicijative društvene odgovornosti usmjerene su na održivost, osnaživanje zajednice i etične poslovne prakse."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Croatian",
+      "translation": "Godine utjecaja"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Croatian",
+      "translation": "Dosegnute zemlje"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Croatian",
+      "translation": "Dotaknuti životi"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Croatian",
+      "translation": "Naše ključne inicijative"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Croatian",
+      "translation": "Usredotočujemo se na četiri glavna stupa kako bismo potaknuli održive promjene i stvorili zajedničku vrijednost za sve dionike."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Croatian",
+      "translation": "Održivost"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Croatian",
+      "translation": "Smanjenje našeg ekološkog otiska kroz obnovljive izvore energije i smanjenje otpada."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Croatian",
+      "translation": "Obnovljiva energija"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Croatian",
+      "translation": "Otpad preusmjeren"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Croatian",
+      "translation": "Smanjenje ugljika"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Croatian",
+      "translation": "Podrška zajednice"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Croatian",
+      "translation": "Osnaživanje lokalnih zajednica kroz obrazovanje, zdravstvo i gospodarski razvoj."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Croatian",
+      "translation": "Podržane obitelji"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Croatian",
+      "translation": "Aktivni programi"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Croatian",
+      "translation": "Volonteri"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Croatian",
+      "translation": "Obrazovanje"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Croatian",
+      "translation": "Omogućavanje pristupa kvalitetnom obrazovanju i stipendijama za učenike iz siromašnih obitelji."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Croatian",
+      "translation": "Stipendije"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Croatian",
+      "translation": "Partnerske škole"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Croatian",
+      "translation": "Pogođeni studenti"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Croatian",
+      "translation": "Zdravlje i dobrobit"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Croatian",
+      "translation": "Poboljšanje pristupa zdravstvenoj zaštiti i prehrani u nedovoljno opskrbljenim regijama."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Croatian",
+      "translation": "Zdravstvene kampanje"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Croatian",
+      "translation": "Usluženi ljudi"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Croatian",
+      "translation": "Mobilne klinike"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Croatian",
+      "translation": "Najbolja društveno odgovorna inicijativa"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Croatian",
+      "translation": "Počašćeni zbog našeg inovativnog pristupa društvenoj odgovornosti."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Croatian",
+      "translation": "Prvak zajednice"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Croatian",
+      "translation": "Nagrađeno za naše opsežne programe rada s lokalnom zajednicom."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Croatian",
+      "translation": "Nagrada za globalnu održivost"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Croatian",
+      "translation": "Prepoznati smo po našoj predanosti ugljičnoj neutralnosti."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Croatian",
+      "translation": "Naš utjecaj"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Croatian",
+      "translation": "Prepoznavanje naših prekretnica u stvaranju boljeg svijeta."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Croatian",
+      "translation": "Pridružite nam se u stvaranju promjene"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Croatian",
+      "translation": "Postanite naš partner ili saznajte više o tome kako gradimo održivu budućnost."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Croatian",
+      "translation": "Kontaktirajte tim za društvenu odgovornost"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Croatian",
+      "translation": "Saznajte više"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Croatian",
+      "translation": "Kontaktirajte nas"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Croatian",
+      "translation": "Voljeli bismo čuti vaše mišljenje. Kontaktirajte nas putem bilo kojeg od ovih kanala."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Croatian",
+      "translation": "Telefon"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Croatian",
+      "translation": "E-pošta"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Croatian",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Croatian",
+      "translation": "Nazovite odmah"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Croatian",
+      "translation": "Pošalji e-poštu"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Croatian",
+      "translation": "Pošaljite nam poruku"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Croatian",
+      "translation": "Medijski centar"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Croatian",
+      "translation": "Medijski centar | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Croatian",
+      "translation": "Resursi za medije, materijali o robnoj marki i najnovije vijesti iz tvrtke Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Croatian",
+      "translation": "Korporativno"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Croatian",
+      "translation": "Vijesti i priopćenja za medije"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Croatian",
+      "translation": "Najnovije najave, širenje tržišta, lansiranje proizvoda i korporativne novosti tvrtke Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Croatian",
+      "translation": "Pročitajte najnovije vijesti"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Croatian",
+      "translation": "Galerija slika"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Croatian",
+      "translation": "Materijali robne marke visoke rezolucije, fotografije proizvoda, slike objekata i izvještavanje o događajima za medijsku upotrebu."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Croatian",
+      "translation": "Pregledaj galeriju"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Croatian",
+      "translation": "Kontakti za medije"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Croatian",
+      "translation": "Za upite za medije, zahtjeve za intervjue i najave partnerstva obratite se našem komunikacijskom timu."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Croatian",
+      "translation": "Kontaktirajte tim za medije"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Croatian",
+      "translation": "Pokrivena tržišta"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Croatian",
+      "translation": "Industrijske vertikale"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Croatian",
+      "translation": "Osnovano u Dubaiju"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Croatian",
+      "translation": "Podržani jezici"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Croatian",
+      "translation": "Nedavni naslovi"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Croatian",
+      "translation": "Harvics proširuje poslovanje s robom široke potrošnje na 5 novih tržišta jugoistočne Azije"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Croatian",
+      "translation": "Pokrenuta nova platforma za opskrbni lanac s umjetnom inteligencijom za globalnu distribuciju"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Croatian",
+      "translation": "Harvics postiže prekretnicu ugljične neutralnosti u svim pogonima"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Croatian",
+      "translation": "Strateško partnerstvo s vodećim proizvođačima tekstila u Južnoj Aziji"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Croatian",
+      "translation": "Kuća Harvics"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Croatian",
+      "translation": "Nasljeđe izvrsnosti i tradicije"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Croatian",
+      "translation": "Dobrodošli u Harvics House"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Croatian",
+      "translation": "Harvics House predstavlja vrhunac naše predanosti kvaliteti i baštini. Ovdje okupljamo najfiniji izbor naših vrhunskih proizvoda, izloženih u okruženju koje odražava naše vrijednosti elegancije, tradicije i inovacije."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Croatian",
+      "translation": "Istražite naše ekskluzivne kolekcije i otkrijte priču koja stoji iza svakog proizvoda koji nosi ime Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Croatian",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Croatian",
+      "translation": "Izvrsnost u premium potrošačkoj robi od 2019."
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Croatian",
+      "translation": "Vodeća globalna tvrtka za robu široke potrošnje koja isporučuje vrhunske prehrambene proizvode u različitim kategorijama s međunarodnim standardima kvalitete."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Croatian",
+      "translation": "London • Milano • New York"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Croatian",
+      "translation": "Od 2019."
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Croatian",
+      "translation": "Harvics News"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Croatian",
+      "translation": "Pretplatite se za primanje obavijesti i novosti"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Croatian",
+      "translation": "Prijavi se"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Croatian",
+      "translation": "Problemi s usklađenošću"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Croatian",
+      "translation": "Progovorite ako imate nedoumica u vezi s usklađenošću ili etikom"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Croatian",
+      "translation": "Progovorite"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Croatian",
+      "translation": "Kontaktirajte nas"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Croatian",
+      "translation": "Kontaktirajte naš tim"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Croatian",
+      "translation": "Kontaktirajte nas"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Croatian",
+      "translation": "Korisne poveznice"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Croatian",
+      "translation": "Pitajte Harwicha"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Croatian",
+      "translation": "Traži poslove"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Croatian",
+      "translation": "Prijavite se za novosti"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Croatian",
+      "translation": "Tvrtka"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Croatian",
+      "translation": "Globalne adrese"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Croatian",
+      "translation": "Strategija"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Croatian",
+      "translation": "Naše vodstvo"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Croatian",
+      "translation": "Marke od A do Ž"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Croatian",
+      "translation": "Naša povijest"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Croatian",
+      "translation": "Održivost"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Croatian",
+      "translation": "Vijesti"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Croatian",
+      "translation": "Kontakti za medije"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Croatian",
+      "translation": "Slike"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Croatian",
+      "translation": "Investitori"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Croatian",
+      "translation": "Korporativno upravljanje"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Croatian",
+      "translation": "Dionice, ADR-ovi i obveznice"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Croatian",
+      "translation": "Publikacije"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Croatian",
+      "translation": "Pratite nas na"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Croatian",
+      "translation": "0 problema"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Croatian",
+      "translation": "Mapa stranice"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Croatian",
+      "translation": "Odjava"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Croatian",
+      "translation": "Pomoć"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Croatian",
+      "translation": "Privatnost"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Croatian",
+      "translation": "Kolačići"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Croatian",
+      "translation": "Uvjeti korištenja"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Croatian",
+      "translation": "Pristupačnost"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Croatian",
+      "translation": "Učinkovitost ugljika"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Croatian",
+      "translation": "Dobavljači"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Croatian",
+      "translation": "Društveni mediji"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Croatian",
+      "translation": "Postavke kolačića"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Croatian",
+      "translation": "Vrhunska kvaliteta"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Croatian",
+      "translation": "E-mail adresa"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Croatian",
+      "translation": "Unesite svoju adresu e-pošte"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Croatian",
+      "translation": "Pretplatite se"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Croatian",
+      "translation": "Pretplata..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Croatian",
+      "translation": "O nama"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Croatian",
+      "translation": "Mediji"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Croatian",
+      "translation": "Pretražite proizvode, marke ili kategorije"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Croatian",
+      "translation": "Nisu pronađeni rezultati"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Croatian",
+      "translation": "Pretraživanje..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Croatian",
+      "translation": "Rezultati"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Croatian",
+      "translation": "Razgovarajte s nama"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Croatian",
+      "translation": "Upišite svoju poruku..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Croatian",
+      "translation": "Poslati"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Croatian",
+      "translation": "Zatvoriti"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Croatian",
+      "translation": "Pozdrav! Kako vam mogu pomoći danas?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Croatian",
+      "translation": "Žao mi je, nisam to razumio/la. Možete li, molim vas, preformulirati?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Croatian",
+      "translation": "Mogu vam pomoći s informacijama o proizvodima, narudžbama ili općim upitima. Što biste željeli znati?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Croatian",
+      "translation": "Za dodatnu pomoć, kontaktirajte nas na support@harvics.com ili nazovite +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Croatian",
+      "translation": "Razgovarajte s nama"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Croatian",
+      "translation": "Učitavanje..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Croatian",
+      "translation": "Pogreška"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Croatian",
+      "translation": "Uspjeh"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Croatian",
+      "translation": "Uštedjeti"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Croatian",
+      "translation": "Otkazati"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Croatian",
+      "translation": "Izbrisati"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Croatian",
+      "translation": "Uredi"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Croatian",
+      "translation": "Pogled"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Croatian",
+      "translation": "Pošalji"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Croatian",
+      "translation": "Pretraživanje"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Croatian",
+      "translation": "Filter"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Croatian",
+      "translation": "Jasan"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Croatian",
+      "translation": "Preuzmi"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Croatian",
+      "translation": "Prenesi"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Croatian",
+      "translation": "Da"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Croatian",
+      "translation": "Ne"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Croatian",
+      "translation": "Zatvoriti"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Croatian",
+      "translation": "Nazad"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Croatian",
+      "translation": "Sljedeći"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Croatian",
+      "translation": "Prethodno"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Croatian",
+      "translation": "Radnje"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Croatian",
+      "translation": "Status"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Croatian",
+      "translation": "Datum"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Croatian",
+      "translation": "Ime"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Croatian",
+      "translation": "E-pošta"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Croatian",
+      "translation": "Telefon"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Croatian",
+      "translation": "Adresa"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Croatian",
+      "translation": "Zemlja"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Croatian",
+      "translation": "Grad"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Croatian",
+      "translation": "Sve"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Croatian",
+      "translation": "Ništa"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Croatian",
+      "translation": "Odaberite"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Croatian",
+      "translation": "Odaberite jezik"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Croatian",
+      "translation": "Odaberite državu"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Croatian",
+      "translation": "Prikaži više"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Croatian",
+      "translation": "Prikaži manje"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Croatian",
+      "translation": "Potreban"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Croatian",
+      "translation": "Jelovnik "
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Croatian",
+      "translation": "Pogledajte proizvode"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Croatian",
+      "translation": "Reproduciraj glazbu"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Croatian",
+      "translation": "Pauziraj glazbu"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Croatian",
+      "translation": "Utišavanje glazbe"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Croatian",
+      "translation": "Uključi zvuk glazbe"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Croatian",
+      "translation": "Naš globalni doseg"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Croatian",
+      "translation": "Od"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Croatian",
+      "translation": "Glavno tržište"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Croatian",
+      "translation": "Glavna tržišta"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Croatian",
+      "translation": "Prisutnost"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Croatian",
+      "translation": "Zemlje u kojima posluje"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Croatian",
+      "translation": "Glavna tržišta"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Croatian",
+      "translation": "Kategorije proizvoda"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Croatian",
+      "translation": "Osnovano"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Croatian",
+      "translation": "Hijerarhija teritorija"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Croatian",
+      "translation": "Puni put"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Croatian",
+      "translation": "Trenutni teritorij"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Croatian",
+      "translation": "Nema artikala"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Croatian",
+      "translation": "Globus"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Croatian",
+      "translation": "Kontinent"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Croatian",
+      "translation": "Regija"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Croatian",
+      "translation": "Zemlja"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Croatian",
+      "translation": "Grad"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Croatian",
+      "translation": "Okrug"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Croatian",
+      "translation": "Mjesto"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Croatian",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Croatian",
+      "translation": "Globalno"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Croatian",
+      "translation": "Odaberite regiju"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Croatian",
+      "translation": "Podaci o kupcu"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Croatian",
+      "translation": "Odabrano"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Croatian",
+      "translation": "Puno ime"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Croatian",
+      "translation": "Unesite svoje puno ime"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Croatian",
+      "translation": "Ime je obavezno"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Croatian",
+      "translation": "E-mail adresa"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Croatian",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Croatian",
+      "translation": "E-pošta je obavezna"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Croatian",
+      "translation": "Molimo unesite važeću adresu e-pošte"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Croatian",
+      "translation": "Broj telefona"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Croatian",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Croatian",
+      "translation": "Broj telefona je obavezan"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Croatian",
+      "translation": "Adresa"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Croatian",
+      "translation": "Vaša adresa"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Croatian",
+      "translation": "Adresa je obavezna"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Croatian",
+      "translation": "Slažem se s primanjem marketinških komunikacija i novosti"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Croatian",
+      "translation": "Pošalji i nastavi"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Croatian",
+      "translation": "Slanje..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Croatian",
+      "translation": "Preskoči i nastavi"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Croatian",
+      "translation": "Ključni pokazatelji uspješnosti"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Croatian",
+      "translation": "Narudžbe danas"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Croatian",
+      "translation": "Poslano putem Harvics CRM-a"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Croatian",
+      "translation": "Isporuke na čekanju"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Croatian",
+      "translation": "Preko dodijeljenih ruta"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Croatian",
+      "translation": "Trgovci na malo"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Croatian",
+      "translation": "Aktivne prodajne točke u dosegu"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Croatian",
+      "translation": "T & A rezultat"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Croatian",
+      "translation": "Pokrivenost teritorija"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Croatian",
+      "translation": "Financije i zalihe"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Croatian",
+      "translation": "SKU-ovi s niskom zalihom"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Croatian",
+      "translation": "Pokreni nadopunu"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Croatian",
+      "translation": "Nepodmirene fakture"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Croatian",
+      "translation": "Rok za naplatu"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Croatian",
+      "translation": "Kreditni limit"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Croatian",
+      "translation": "Dodijeljeno od strane financija"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Croatian",
+      "translation": "Omogućeno automatsko odobrenje, nadopunjavanje zaliha i podsjetnici za račune"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Croatian",
+      "translation": "Samoodobrenje"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Croatian",
+      "translation": "Obnavljanje zaliha"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Croatian",
+      "translation": "Podsjetnici za fakture"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Croatian",
+      "translation": "Preporuke umjetne inteligencije"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Croatian",
+      "translation": "Razina rizika"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Croatian",
+      "translation": "Na temelju korištenja kredita i povijesti plaćanja"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Croatian",
+      "translation": "Predloženi redoslijed"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Croatian",
+      "translation": "SKU-ovi koje preporučuje umjetna inteligencija za narudžbu"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Croatian",
+      "translation": "Sljedeća akcija"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Croatian",
+      "translation": "Radnje i smjernice"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Croatian",
+      "translation": "Pritužbe"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Croatian",
+      "translation": "Problemi s trgovcima koji čekaju rješavanje"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Croatian",
+      "translation": "Priručnik"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Croatian",
+      "translation": "Dajte prioritet isporukama koje čekaju prije podneva."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Croatian",
+      "translation": "Zatvorite sve neriješene pritužbe u roku od 48 sati."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Croatian",
+      "translation": "Pokreni nadopunu za artikle s niskim zalihama (automatsko kreiranje narudžbenice)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Croatian",
+      "translation": "Teritorija"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Croatian",
+      "translation": "Narudžbe ovog mjeseca"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Croatian",
+      "translation": "Nalozi na čekanju"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Croatian",
+      "translation": "Isporučene narudžbe"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Croatian",
+      "translation": "Informacije o teritoriju"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Croatian",
+      "translation": "Zemlja"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Croatian",
+      "translation": "Grad"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Croatian",
+      "translation": "Regija"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Croatian",
+      "translation": "Brze radnje"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Croatian",
+      "translation": "Novi red"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Croatian",
+      "translation": "Prikaži narudžbe"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Croatian",
+      "translation": "Pregled računa"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Croatian",
+      "translation": "Postavke profila"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Croatian",
+      "translation": "Učitavanje nadzorne ploče..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Croatian",
+      "translation": "Pogreška"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Croatian",
+      "translation": "Moje narudžbe"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Croatian",
+      "translation": "ID narudžbe"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Croatian",
+      "translation": "Datum"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Croatian",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Croatian",
+      "translation": "Stavke"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Croatian",
+      "translation": "Ukupan iznos"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Croatian",
+      "translation": "Radnje"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Croatian",
+      "translation": "Prikaži detalje"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Croatian",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Croatian",
+      "translation": "Datum početka"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Croatian",
+      "translation": "Datum završetka"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Croatian",
+      "translation": "Svi statusi"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Croatian",
+      "translation": "Obriši filtere"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Croatian",
+      "translation": "Na čekanju"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Croatian",
+      "translation": "Obrada"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Croatian",
+      "translation": "Dostavljeno"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Croatian",
+      "translation": "Otkazano"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Croatian",
+      "translation": "Nisu pronađene narudžbe"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Croatian",
+      "translation": "Učitavanje narudžbi..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Croatian",
+      "translation": "Stranica"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Croatian",
+      "translation": "od"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Croatian",
+      "translation": "Prethodno"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Croatian",
+      "translation": "Sljedeći"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Croatian",
+      "translation": "Detalji narudžbe"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Croatian",
+      "translation": "Natrag na narudžbe"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Croatian",
+      "translation": "ID narudžbe"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Croatian",
+      "translation": "Status"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Croatian",
+      "translation": "Datum narudžbe"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Croatian",
+      "translation": "Datum isporuke"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Croatian",
+      "translation": "Adresa za dostavu"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Croatian",
+      "translation": "Bilješke"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Croatian",
+      "translation": "Stavke narudžbe"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Croatian",
+      "translation": "Proizvod"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Croatian",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Croatian",
+      "translation": "Količina"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Croatian",
+      "translation": "Cijena jedinice"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Croatian",
+      "translation": "Ukupno"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Croatian",
+      "translation": "Ukupan iznos"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Croatian",
+      "translation": "Vremenska crta statusa"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Croatian",
+      "translation": "Narudžba nije pronađena"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Croatian",
+      "translation": "Izradi novu narudžbu"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Croatian",
+      "translation": "Stavke narudžbe"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Croatian",
+      "translation": "Dodaj stavku"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Croatian",
+      "translation": "Još nije dodana nijedna stavka. Kliknite \"Dodaj stavku\" za početak."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Croatian",
+      "translation": "Detalji narudžbe"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Croatian",
+      "translation": "Datum isporuke"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Croatian",
+      "translation": "Adresa za dostavu"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Croatian",
+      "translation": "Bilješke"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Croatian",
+      "translation": "Ukupan iznos"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Croatian",
+      "translation": "Izradi narudžbu"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Croatian",
+      "translation": "Izrada narudžbe..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Croatian",
+      "translation": "Otkazati"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Croatian",
+      "translation": "Odaberite proizvod"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Croatian",
+      "translation": "Proizvod"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Croatian",
+      "translation": "Količina"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Croatian",
+      "translation": "Cijena jedinice"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Croatian",
+      "translation": "Ukloniti"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Croatian",
+      "translation": "Međuzbroj"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Croatian",
+      "translation": "ID narudžbe"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Croatian",
+      "translation": "Potrebna je barem jedna stavka narudžbe"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Croatian",
+      "translation": "Proizvod je obavezan"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Croatian",
+      "translation": "Količina mora biti veća od 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Croatian",
+      "translation": "Cijena jedinice mora biti pozitivna"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Croatian",
+      "translation": "Nevažeći format datuma isporuke"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Croatian",
+      "translation": "Datum isporuke ne može biti u prošlosti"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Croatian",
+      "translation": "Moje fakture"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Croatian",
+      "translation": "Broj računa"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Croatian",
+      "translation": "Datum fakture"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Croatian",
+      "translation": "Dva spoja"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Croatian",
+      "translation": "Iznositi"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Croatian",
+      "translation": "Plaćeni iznos"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Croatian",
+      "translation": "Status plaćanja"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Croatian",
+      "translation": "Status plaćanja"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Croatian",
+      "translation": "Svi statusi"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Croatian",
+      "translation": "Obriši filtere"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Croatian",
+      "translation": "Plaćeno"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Croatian",
+      "translation": "Neplaćeno"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Croatian",
+      "translation": "Djelomično"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Croatian",
+      "translation": "Nisu pronađene fakture"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Croatian",
+      "translation": "Učitavanje faktura..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Croatian",
+      "translation": "Moj profil"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Croatian",
+      "translation": "Podaci o računu"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Croatian",
+      "translation": "ID distributera"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Croatian",
+      "translation": "Teritorija"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Croatian",
+      "translation": "Zemlja"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Croatian",
+      "translation": "Grad"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Croatian",
+      "translation": "Račun kreiran"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Croatian",
+      "translation": "Ažuriraj profil"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Croatian",
+      "translation": "Ime"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Croatian",
+      "translation": "E-pošta"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Croatian",
+      "translation": "Telefon"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Croatian",
+      "translation": "Adresa"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Croatian",
+      "translation": "Jezik"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Croatian",
+      "translation": "Valuta"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Croatian",
+      "translation": "Spremi promjene"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Croatian",
+      "translation": "Spremanje..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Croatian",
+      "translation": "Profil je uspješno ažuriran"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Croatian",
+      "translation": "Učitavanje profila..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Croatian",
+      "translation": "Nevažeći format e-pošte"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Croatian",
+      "translation": "Nevažeći format telefona"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Croatian",
+      "translation": "Pogreška"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Croatian",
+      "translation": "Učitavanje..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Croatian",
+      "translation": "Uštedjeti"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Croatian",
+      "translation": "Otkazati"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Croatian",
+      "translation": "Nazad"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Croatian",
+      "translation": "Pošalji"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Croatian",
+      "translation": "Izbrisati"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Croatian",
+      "translation": "Uredi"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Croatian",
+      "translation": "Pogled"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Croatian",
+      "translation": "Pretraživanje"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Croatian",
+      "translation": "Filter"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Croatian",
+      "translation": "Jasan"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Croatian",
+      "translation": "Primijeni"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Croatian",
+      "translation": "Zatvoriti"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Croatian",
+      "translation": "Potvrdi"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Croatian",
+      "translation": "Da"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Croatian",
+      "translation": "Ne"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Croatian",
+      "translation": "Pravni operativni sustav"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Croatian",
+      "translation": "Pravni OS"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Croatian",
+      "translation": "Pristup odbijen"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Croatian",
+      "translation": "Nemate dopuštenje za pristup modulu Legal OS."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Croatian",
+      "translation": "Nadzorna ploča"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Croatian",
+      "translation": "Ugovori"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Croatian",
+      "translation": "Certifikati"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Croatian",
+      "translation": "Usklađenost"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Croatian",
+      "translation": "Pravna nadzorna ploča"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Croatian",
+      "translation": "Pregled pravnih operacija i statusa usklađenosti"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Croatian",
+      "translation": "Aktivni zaštitni znakovi"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Croatian",
+      "translation": "Aktivni ugovori"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Croatian",
+      "translation": "Status usklađenosti"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Croatian",
+      "translation": "Zaštitni znakovi"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Croatian",
+      "translation": "Upravljanje registracijama i prijavama zaštitnih znakova"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Croatian",
+      "translation": "Dodaj novi zaštitni znak"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Croatian",
+      "translation": "Zemlja"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Croatian",
+      "translation": "Status"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Croatian",
+      "translation": "Sve zemlje"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Croatian",
+      "translation": "Svi statusi"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Croatian",
+      "translation": "Obriši filtere"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Croatian",
+      "translation": "Naziv robne marke"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Croatian",
+      "translation": "Razred"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Croatian",
+      "translation": "Zemlja"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Croatian",
+      "translation": "Broj prijave"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Croatian",
+      "translation": "Status"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Croatian",
+      "translation": "Datum isteka"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Croatian",
+      "translation": "Radnje"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Croatian",
+      "translation": "Uredi zaštitni znak"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Croatian",
+      "translation": "Dodaj novi zaštitni znak"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Croatian",
+      "translation": "Prikaži zaštitni znak"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Croatian",
+      "translation": "Naziv robne marke"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Croatian",
+      "translation": "Broj razreda"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Croatian",
+      "translation": "Zemlja"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Croatian",
+      "translation": "Broj prijave"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Croatian",
+      "translation": "Status"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Croatian",
+      "translation": "Datum isteka"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Croatian",
+      "translation": "Dokumenti"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Croatian",
+      "translation": "Nema priloženih dokumenata"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Croatian",
+      "translation": "Dodaj dokument"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Croatian",
+      "translation": "Ukloniti"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Croatian",
+      "translation": "Učitavanje zaštitnih znakova nije uspjelo"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Croatian",
+      "translation": "Spremanje zaštitnog znaka nije uspjelo. Pokušajte ponovno."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Croatian",
+      "translation": "Pravni slučajevi"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Croatian",
+      "translation": "Upravljajte pravnim slučajevima i pratite njihov status"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Croatian",
+      "translation": "Novi slučaj"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Croatian",
+      "translation": "Naslov slučaja"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Croatian",
+      "translation": "Vrsta slučaja"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Croatian",
+      "translation": "Zemlja"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Croatian",
+      "translation": "Opis"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Croatian",
+      "translation": "Dodijeljeno"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Croatian",
+      "translation": "Status"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Croatian",
+      "translation": "Datum saslušanja"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Croatian",
+      "translation": "Naslov slučaja"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Croatian",
+      "translation": "Tip"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Croatian",
+      "translation": "Zemlja"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Croatian",
+      "translation": "Dodijeljeno"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Croatian",
+      "translation": "Status"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Croatian",
+      "translation": "Datum saslušanja"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Croatian",
+      "translation": "Radnje"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Croatian",
+      "translation": "Otvoriti"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Croatian",
+      "translation": "U tijeku"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Croatian",
+      "translation": "Zatvoreno"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Croatian",
+      "translation": "Otkazano"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Croatian",
+      "translation": "Prikaz karte flote"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Croatian",
+      "translation": "Praćenje prodajnih službenika i dostavnih vozila u stvarnom vremenu"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Croatian",
+      "translation": "Aktivni zaposlenici"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Croatian",
+      "translation": "Nema aktivnih zaposlenika"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Croatian",
+      "translation": "Učitavanje..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Croatian",
+      "translation": "Ponovna reprodukcija rute"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Croatian",
+      "translation": "Zaposlenik"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Croatian",
+      "translation": "Ubrzati"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Croatian",
+      "translation": "Resetiraj"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Croatian",
+      "translation": "Igrati"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Croatian",
+      "translation": "Pauza"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Croatian",
+      "translation": "bodova"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Croatian",
+      "translation": "Nema dostupnih podataka o ruti"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Croatian",
+      "translation": "Učitavanje rute..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Croatian",
+      "translation": "Konkurentski proizvodi"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Croatian",
+      "translation": "Pratite informacije o proizvodima konkurenata"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Croatian",
+      "translation": "Dodaj proizvod"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Croatian",
+      "translation": "Dodaj konkurentski proizvod"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Croatian",
+      "translation": "Robna marka"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Croatian",
+      "translation": "Naziv artikla"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Croatian",
+      "translation": "Kategorija"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Croatian",
+      "translation": "Veličina"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Croatian",
+      "translation": "Cijena"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Croatian",
+      "translation": "Valuta"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Croatian",
+      "translation": "Zemlja"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Croatian",
+      "translation": "Robna marka"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Croatian",
+      "translation": "Naziv artikla"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Croatian",
+      "translation": "Kategorija"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Croatian",
+      "translation": "Veličina"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Croatian",
+      "translation": "Cijena"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Croatian",
+      "translation": "Zemlja"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Croatian",
+      "translation": "Datum dodavanja"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Croatian",
+      "translation": "Učitavanje proizvoda nije uspjelo"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Croatian",
+      "translation": "Nije uspjelo stvaranje proizvoda. Pokušajte ponovno."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Croatian",
+      "translation": "Nisu pronađeni konkurentski proizvodi"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Croatian",
+      "translation": "Učitavanje proizvoda..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Croatian",
+      "translation": "Nadzorna ploča konkurenata"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Croatian",
+      "translation": "Analitika i uvidi u konkurentske proizvode"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Croatian",
+      "translation": "Ukupno proizvoda"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Croatian",
+      "translation": "Praćene marke"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Croatian",
+      "translation": "Zemlje"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Croatian",
+      "translation": "Kategorije"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Croatian",
+      "translation": "Proizvodi po marki"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Croatian",
+      "translation": "Proizvodi po državama"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Croatian",
+      "translation": "Proizvodi po kategorijama"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Croatian",
+      "translation": "Učitavanje statistike..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Croatian",
+      "translation": "Nema dostupnih statistika"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Croatian",
+      "translation": "Pregled"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Croatian",
+      "translation": "Narudžbe"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Croatian",
+      "translation": "Inventar"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Croatian",
+      "translation": "Logistika"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Croatian",
+      "translation": "Financije"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Croatian",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Croatian",
+      "translation": "Ljudski resursi"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Croatian",
+      "translation": "Izvršni"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Croatian",
+      "translation": "Investitor"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Croatian",
+      "translation": "Pravna pitanja/Prava intelektualnog vlasništva"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Croatian",
+      "translation": "Konkurent"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Croatian",
+      "translation": "Uvoz/Izvoz"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Croatian",
+      "translation": "GPS praćenje"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Croatian",
+      "translation": "Lokalizacija"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Croatian",
+      "translation": "Tijekovi rada"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Croatian",
+      "translation": "Administrator"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Croatian",
+      "translation": "CRM OS"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Croatian",
+      "translation": "Kupac 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Croatian",
+      "translation": "Potpuni profili kupaca, povijest interakcije i upravljanje odnosima"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Croatian",
+      "translation": "Digitalne kampanje"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Croatian",
+      "translation": "Višekanalne marketinške kampanje (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Croatian",
+      "translation": "Potencijalni klijenti i prilike"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Croatian",
+      "translation": "Upravljanje potencijalnim klijentima, kvalifikacija i proces stvaranja prilika"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Croatian",
+      "translation": "Korisnička podrška"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Croatian",
+      "translation": "Upravljanje zahtjevima, korisnička podrška i rješavanje problema"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Croatian",
+      "translation": "Programi vjernosti"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Croatian",
+      "translation": "Upravljanje vjernošću, gamifikacijom i nagradama trgovaca"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Croatian",
+      "translation": "Kupac 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Croatian",
+      "translation": "Novi kupac"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Croatian",
+      "translation": "Ukupan broj kupaca"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Croatian",
+      "translation": "Aktivan"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Croatian",
+      "translation": "Novi"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Croatian",
+      "translation": "Zadovoljstvo"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Croatian",
+      "translation": "Upravljanje klijentima"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Croatian",
+      "translation": "Pregledajte i upravljajte odnosima s kupcima, interakcijama i kampanjama."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Croatian",
+      "translation": "Učitavanje..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Croatian",
+      "translation": "Pogreška pri učitavanju CRM podataka"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Croatian",
+      "translation": "Pregled"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Croatian",
+      "translation": "Narudžbe"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Croatian",
+      "translation": "Inventar"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Croatian",
+      "translation": "Logistika"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Croatian",
+      "translation": "Financije"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Croatian",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Croatian",
+      "translation": "Ljudski resursi"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Croatian",
+      "translation": "Izvršni"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Croatian",
+      "translation": "Investitor"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Croatian",
+      "translation": "Pravna pitanja/Prava intelektualnog vlasništva"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Croatian",
+      "translation": "Konkurent"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Croatian",
+      "translation": "Uvoz/Izvoz"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Croatian",
+      "translation": "GPS praćenje"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Croatian",
+      "translation": "Lokalizacija"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Croatian",
+      "translation": "Tijekovi rada"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Croatian",
+      "translation": "Administrator"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Croatian",
+      "translation": "Kupci"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Croatian",
+      "translation": "Zaposlenici"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Croatian",
+      "translation": "Dobit"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Croatian",
+      "translation": "Učitavanje kokpita dobavljača…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Croatian",
+      "translation": "Narudžbenice"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Croatian",
+      "translation": "Odgajao Harvics"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Croatian",
+      "translation": "Pošiljke / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Croatian",
+      "translation": "Prihvaćeno ovog tjedna"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Croatian",
+      "translation": "Izrađene fakture"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Croatian",
+      "translation": "Čeka se plaćanje"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Croatian",
+      "translation": "Plaćanja na čekanju"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Croatian",
+      "translation": "Planirano za objavu"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Croatian",
+      "translation": "Kvaliteta / pritužbe"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Croatian",
+      "translation": "Otvorene karte"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Croatian",
+      "translation": "Prognoza (sljedeća 4 tjedna)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Croatian",
+      "translation": "Rezervirano mjesto za umjetnu inteligenciju"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Croatian",
+      "translation": "Radnje dobavljača"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Croatian",
+      "translation": "Potvrdite nadolazeće pošiljke i ažurirajte raspored GRN-a."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Croatian",
+      "translation": "Pregledajte nepodmirene račune i podijelite savjete o plaćanju."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Croatian",
+      "translation": "Riješite otvorene pritužbe na kvalitetu s dokazima o osiguranju kvalitete."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Croatian",
+      "translation": "Korisničko ime"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Croatian",
+      "translation": "Lozinka"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Croatian",
+      "translation": "E-pošta"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Croatian",
+      "translation": "Pošalji"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Croatian",
+      "translation": "Otkazati"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Croatian",
+      "translation": "Uštedjeti"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Croatian",
+      "translation": "Izbrisati"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Croatian",
+      "translation": "Pretraživanje"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Croatian",
+      "translation": "Filter"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Croatian",
+      "translation": "Resetiraj"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Croatian",
+      "translation": "Zatvoriti"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Croatian",
+      "translation": "Nazad"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Croatian",
+      "translation": "Sljedeći"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Croatian",
+      "translation": "Prethodno"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Croatian",
+      "translation": "Potvrdi"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Croatian",
+      "translation": "Zapamti me"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Croatian",
+      "translation": "Zaboravili ste lozinku?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Croatian",
+      "translation": "E-pošta je obavezna"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Croatian",
+      "translation": "Molimo unesite važeću adresu e-pošte"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Croatian",
+      "translation": "Proizvodi"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Croatian",
+      "translation": "Koje proizvode nudi Harvics?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Croatian",
+      "translation": "Nudimo širok asortiman vrhunskih prehrambenih proizvoda, uključujući slastice, pića, grickalice, tjesteninu, pekarske proizvode i smrznutu hranu u više kategorija."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Croatian",
+      "translation": "Gdje mogu kupiti Harvics proizvode?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Croatian",
+      "translation": "Naši proizvodi dostupni su u maloprodajnim trgovinama u više od 40 zemalja. Koristite naš lokator trgovina ili stranicu za kontakt kako biste pronašli trgovca u vašoj blizini."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Croatian",
+      "translation": "Nudite li narudžbe na veliko?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Croatian",
+      "translation": "Da, nudimo popuste za velike narudžbe za tvrtke i trgovce. Posjetite našu stranicu Popusti za velike narudžbe za više informacija."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Croatian",
+      "translation": "Narudžbe i dostava"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Croatian",
+      "translation": "Koje su vam mogućnosti dostave?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Croatian",
+      "translation": "Nudimo razne mogućnosti dostave, uključujući standardnu, ekspresnu i međunarodnu dostavu. Besplatna dostava dostupna je za narudžbe preko 50 USD."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Croatian",
+      "translation": "Koliko dugo traje dostava?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Croatian",
+      "translation": "Rokovi dostave razlikuju se ovisno o lokaciji. Standardna dostava obično traje 5-7 radnih dana, dok ekspresna dostava traje 2-3 radna dana."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Croatian",
+      "translation": "Mogu li pratiti svoju narudžbu?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Croatian",
+      "translation": "Da, svoju narudžbu možete pratiti pomoću broja za praćenje koji ste naveli u e-poruci s potvrdom narudžbe."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Croatian",
+      "translation": "Račun i plaćanja"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Croatian",
+      "translation": "Kako mogu kreirati račun?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Croatian",
+      "translation": "Kliknite na \"Prijava\" u zaglavlju i odaberite \"Kreiraj račun\" za registraciju novog računa."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Croatian",
+      "translation": "Koje načine plaćanja prihvaćate?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Croatian",
+      "translation": "Primamo sve glavne kreditne kartice, debitne kartice, PayPal i bankovne transfere za B2B narudžbe."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Croatian",
+      "translation": "Jesu li moji podaci o plaćanju sigurni?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Croatian",
+      "translation": "Da, koristimo standardno industrijsko šifriranje kako bismo zaštitili vaše podatke o plaćanju."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Croatian",
+      "translation": "Povrat i refundacija"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Croatian",
+      "translation": "Kakva je vaša politika povrata?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Croatian",
+      "translation": "Nudimo 30-dnevnu politiku povrata za neotvorene proizvode u originalnom pakiranju. Za odobrenje povrata obratite se našoj korisničkoj službi."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Croatian",
+      "translation": "Kako mogu zatražiti povrat novca?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Croatian",
+      "translation": "Kontaktirajte naš tim za korisničku podršku s brojem narudžbe i razlogom povrata. Povrat ćemo obraditi u roku od 5-7 radnih dana."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Croatian",
+      "translation": "Još uvijek imate pitanja?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Croatian",
+      "translation": "Naš tim za korisničku podršku je tu da vam pomogne"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Croatian",
+      "translation": "Kontaktirajte nas"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Croatian",
+      "translation": "Karijere"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Croatian",
+      "translation": "Karijere | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Croatian",
+      "translation": "Pridružite se Harvics Global Ventures — istražite prilike u više od 40 zemalja."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Croatian",
+      "translation": "Pridružite nam se"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Croatian",
+      "translation": "Izgradite budućnost globalne trgovine"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Croatian",
+      "translation": "Rastemo u više od 40 zemalja. Pridružite se timu koji gradi operativni sustav pokretan umjetnom inteligencijom za globalnu trgovinu."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Croatian",
+      "translation": "Otvorene pozicije"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Croatian",
+      "translation": "Zemlje"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Croatian",
+      "translation": "Industrijske vertikale"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Croatian",
+      "translation": "Zapošljavanje u odjelima"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Croatian",
+      "translation": "Otvorena radna mjesta po odjelu"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Croatian",
+      "translation": "Prodaja i distribucija"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Croatian",
+      "translation": "Povećanje prihoda na više od 40 tržišta. Upravljanje teritorijom, ključni kupci, odnosi s distributerima."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Croatian",
+      "translation": "Lanac opskrbe i logistika"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Croatian",
+      "translation": "Lanac opskrbe od početka do kraja, od tvornice do police. Upravljanje voznim parkom, skladištenje, dostava na kraj."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Croatian",
+      "translation": "Tehnologija i umjetna inteligencija"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Croatian",
+      "translation": "Izgradite Harvics OS — našu poslovnu platformu pokretanu umjetnom inteligencijom. Full-stack, ML inženjering, znanost o podacima."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Croatian",
+      "translation": "Financije i riznica"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Croatian",
+      "translation": "Viševalutno upravljanje riznicom, trgovinsko financiranje, HPay digitalna plaćanja, upravljanje devizama u različitim regijama."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Croatian",
+      "translation": "Nabava i snabdijevanje"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Croatian",
+      "translation": "Globalna nabava iz više od 15 zemalja podrijetla. Revizije dobavljača, kontrola kvalitete, programi izravne prodaje iz tvornice."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Croatian",
+      "translation": "Ljudski resursi"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Croatian",
+      "translation": "Akvizicija talenata, učenje i razvoj, upravljanje učinkom u različitim geografskim područjima i kulturama."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Croatian",
+      "translation": "Pravni i usklađeni poslovi"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Croatian",
+      "translation": "Usklađenost s trgovinskim propisima, provjera sankcija, zaštita intelektualnog vlasništva, upravljanje ugovorima u različitim jurisdikcijama."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Croatian",
+      "translation": "Marketing i robna marka"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Croatian",
+      "translation": "Višejezične kampanje, sadržaj za 38 lokacija, digitalni marketing, strategija brenda za 10 vertikala."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Croatian",
+      "translation": "uloge"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Croatian",
+      "translation": "Zašto Harvics"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Croatian",
+      "translation": "Globalna mobilnost"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Croatian",
+      "translation": "Rad u Dubaiju, Londonu, Karachiju, Lahoreu i na više od 40 tržišta"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Croatian",
+      "translation": "Trag rasta"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Croatian",
+      "translation": "Brzo napredovanje u karijeri u rastućem poduzeću"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Croatian",
+      "translation": "Kultura usmjerena na umjetnu inteligenciju"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Croatian",
+      "translation": "Radite s najsuvremenijim sustavima umjetne inteligencije i inteligencije u stvarnom vremenu"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Croatian",
+      "translation": "Konkurentni paket"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Croatian",
+      "translation": "Vodeće naknade, stanovanje i beneficije na tržištu"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Croatian",
+      "translation": "Proračun za učenje"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Croatian",
+      "translation": "Godišnji proračun za razvoj tečajeva, konferencija i certifikata"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Croatian",
+      "translation": "Fleksibilan rad"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Croatian",
+      "translation": "Hibridni aranžmani s regionalnim središnjim uredima diljem svijeta"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Croatian",
+      "translation": "Naša strategija"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Croatian",
+      "translation": "Strategija | Harwich"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Croatian",
+      "translation": "Izgradnja održive budućnosti kroz inovacije i izvrsnost"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Croatian",
+      "translation": "Izgradnja održive budućnosti kroz inovacije i izvrsnost"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Croatian",
+      "translation": "Globalna ekspanzija"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Croatian",
+      "translation": "Širimo našu prisutnost na tržištima u razvoju uz istovremeno jačanje naše pozicije na etabliranim tržištima"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Croatian",
+      "translation": "Inovacija proizvoda"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Croatian",
+      "translation": "Ulaganje u istraživanje i razvoj kako bi se razvili novi proizvodi koji zadovoljavaju promjenjive preferencije potrošača"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Croatian",
+      "translation": "Održivost"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Croatian",
+      "translation": "Posvećeni održivim praksama u cijelom našem lancu opskrbe i poslovanju"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Croatian",
+      "translation": "Digitalna transformacija"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Croatian",
+      "translation": "Korištenje tehnologije za poboljšanje korisničkog iskustva i operativne učinkovitosti"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Croatian",
+      "translation": "Naša vizija"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Croatian",
+      "translation": "Biti vodeća svjetska tvrtka za vrhunsku robu široke potrošnje, prepoznata po kvaliteti, inovacijama i održivosti."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Croatian",
+      "translation": "Harvics Global Ventures | Premium Global Trading"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Croatian",
+      "translation": "Vodeća globalna trgovačka tvrtka koja isporučuje vrhunske proizvode u više od 10 industrija. Posluje u više od 50 zemalja od 2019. godine."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Croatian",
+      "translation": "O nama | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Croatian",
+      "translation": "Otkrijte kako je Harvics Global Ventures postao vodeća snaga u globalnoj trgovini u više od 40 zemalja i 10 industrija."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Croatian",
+      "translation": "Kontaktirajte nas | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Croatian",
+      "translation": "Kontaktirajte Harvics urede diljem svijeta na Bliskom istoku, u Južnoj Aziji, Europi, Africi i Americi."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Croatian",
+      "translation": "Proizvodi | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Croatian",
+      "translation": "Istražite Harvicsovu premium ponudu proizvoda u području robe široke potrošnje, tekstila, robe široke potrošnje i industrijskih rješenja."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Croatian",
+      "translation": "Karijere | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Croatian",
+      "translation": "Pridružite se Harvics Global Ventures — istražite prilike u više od 40 zemalja u području robe široke potrošnje, tekstila, logistike i tehnologije."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Croatian",
+      "translation": "Medijski centar | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Croatian",
+      "translation": "Harvics medijski centar — priopćenja za medije, najnovije vijesti, materijali o robnoj marki i medijski kontakti."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Croatian",
+      "translation": "Naša strategija | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Croatian",
+      "translation": "Harvicsova strateška vizija za globalno širenje, inovacije, održivost i digitalnu transformaciju."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Croatian",
+      "translation": "Društvena odgovornost tvrtke | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Croatian",
+      "translation": "Harvicsove inicijative za društvenu odgovornost — zaštita okoliša, programi u zajednici i etične poslovne prakse."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Croatian",
+      "translation": "Često postavljana pitanja | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Croatian",
+      "translation": "Često postavljana pitanja o Harvics proizvodima, uslugama, naručivanju i globalnom poslovanju."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Croatian",
+      "translation": "Globalne lokacije | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Croatian",
+      "translation": "Harvics uredi i operacije diljem Bliskog istoka, Južne Azije, Europe, Afrike i Amerike."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Croatian",
+      "translation": "Vodeći tim | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Croatian",
+      "translation": "Upoznajte vodeći tim koji vodi Harvics Global Ventures na više od 40 tržišta i u 10 industrijskih vertikala."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Croatian",
+      "translation": "Centar za pomoć | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Croatian",
+      "translation": "Zatražite pomoć s narudžbama, računima, dostavom i Harvics uslugama."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Croatian",
+      "translation": "Usklađenost i etika | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Croatian",
+      "translation": "Harvicsova predanost usklađenosti s propisima, etičkim poslovnim praksama i globalnim standardima."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Croatian",
+      "translation": "Naša povijest | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Croatian",
+      "translation": "Od startupa u Dubaiju 2019. godine do globalnog poduzeća koje obuhvaća više od 40 zemalja - priča o Harvicsu."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Croatian",
+      "translation": "Bilten | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Croatian",
+      "translation": "Pretplatite se na Harvics bilten za uvide u industriju i lansiranje proizvoda."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Croatian",
+      "translation": "Prijava | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Croatian",
+      "translation": "Prijavite se na svoj Harvics račun kako biste upravljali narudžbama i pristupili platformi."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Croatian",
+      "translation": "Istraživanje i inovacije | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Croatian",
+      "translation": "Harvicsove istraživačke inicijative i inovacijski programi pokreću našu globalnu strategiju."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Croatian",
+      "translation": "Odnosi s investitorima | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Croatian",
+      "translation": "Informacije za investitore, financijska izvješća i korporativne objave tvrtke Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Croatian",
+      "translation": "Stranica nije pronađena"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Croatian",
+      "translation": "404 — Stranica nije pronađena"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Croatian",
+      "translation": "Stranica koju tražite ne postoji ili je premještena."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Croatian",
+      "translation": "Idi na početnu stranicu"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Croatian",
+      "translation": "Natrag"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Croatian",
+      "translation": "Nešto je pošlo po zlu"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Croatian",
+      "translation": "Nešto je pošlo po zlu"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Croatian",
+      "translation": "Žao nam je, ali dogodilo se nešto neočekivano. Pokušajte osvježiti stranicu."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Croatian",
+      "translation": "Pokušaj ponovno"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Croatian",
+      "translation": "Ponovno učitavanje stranice"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Croatian",
+      "translation": "Kontaktirajte podršku"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Croatian",
+      "translation": "Pogreška aplikacije"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Croatian",
+      "translation": "Kritična pogreška"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Croatian",
+      "translation": "Došlo je do kritične pogreške. Ponovno učitajte stranicu."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Croatian",
+      "translation": "Ponovno učitavanje aplikacije"
+    }
+  }
+}

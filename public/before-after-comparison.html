@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HARVICS - Before vs After Comparison</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #f5f5f5;
+      padding: 40px 20px;
+    }
+    .container { max-width: 1600px; margin: 0 auto; }
+    
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      font-weight: 300;
+      color: #6B1F2B;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 60px;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .comparison-box {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+
+    .box-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    .box-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .current-icon { background: #e0e0e0; }
+    .new-icon { background: #C3A35E; color: white; }
+
+    .box-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: #6B1F2B;
+    }
+
+    .mockup-header {
+      background: rgba(255,255,255,0.98);
+      border: 1px solid rgba(195,163,94,0.3);
+      padding: 16px 24px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+
+    .mockup-nav {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      font-size: 15px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-weight: 700;
+      color: #6B1F2B;
+      margin-right: auto;
+    }
+
+    .nav-item {
+      color: #6B1F2B;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 4px 0;
+      position: relative;
+    }
+
+    .nav-item.new {
+      color: #C3A35E;
+      font-weight: 600;
+    }
+
+    .new-badge {
+      background: #C3A35E;
+      color: white;
+      font-size: 9px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 6px;
+      font-weight: 700;
+      text-transform: uppercase;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+
+    .description {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+
+    .description h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #6B1F2B;
+      margin-bottom: 12px;
+    }
+
+    .description ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .description li {
+      padding: 8px 0;
+      padding-left: 24px;
+      position: relative;
+      color: #666;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .description li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #28A745;
+      font-weight: 700;
+    }
+
+    .mockup-page {
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 24px;
+    }
+
+    .mockup-page-hero {
+      background: linear-gradient(135deg, #6B1F2B 0%, #8B3A47 100%);
+      color: white;
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    .mockup-page-hero h2 {
+      font-size: 32px;
+      font-weight: 300;
+      margin-bottom: 12px;
+    }
+
+    .mockup-page-hero p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .mockup-page-content {
+      padding: 24px;
+      background: white;
+    }
+
+    .mockup-tabs {
+      display: flex;
+      gap: 8px;
+      border-bottom: 2px solid #e0e0e0;
+      margin-bottom: 16px;
+    }
+
+    .mockup-tab {
+      padding: 12px 20px;
+      background: #f9f9f9;
+      border: none;
+      font-size: 13px;
+      font-weight: 600;
+      color: #666;
+      cursor: pointer;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .mockup-tab.active {
+      background: white;
+      color: #6B1F2B;
+      border-bottom: 2px solid #C3A35E;
+    }
+
+    .key-changes {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+
+    .key-changes h2 {
+      font-size: 32px;
+      font-weight: 300;
+      color: #6B1F2B;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .changes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .change-card {
+      background: #f9f9f9;
+      padding: 24px;
+      border-radius: 12px;
+      border-left: 4px solid #C3A35E;
+    }
+
+    .change-card h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #6B1F2B;
+      margin-bottom: 12px;
+    }
+
+    .change-card p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .change-number {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background: #C3A35E;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 32px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 1024px) {
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+      .changes-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Before vs After Comparison</h1>
+    <p class="subtitle">See exactly what changes when we add the Trading Platform</p>
+
+    <!-- BEFORE vs AFTER GRID -->
+    <div class="comparison-grid">
+      
+      <!-- CURRENT SITE -->
+      <div class="comparison-box">
+        <div class="box-header">
+          <div class="box-icon current-icon">📄</div>
+          <div class="box-title">Current Site</div>
+        </div>
+
+        <div class="description">
+          <h3>What You Have Now:</h3>
+          <ul>
+            <li>Corporate website (brand, products, about)</li>
+            <li>Industry pages (static information)</li>
+            <li>Contact forms</li>
+            <li>No direct buying/selling functionality</li>
+          </ul>
+        </div>
+
+        <div class="mockup-header">
+          <div class="mockup-nav">
+            <span class="logo">HARVICS</span>
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">Industries</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Contact</a>
+          </div>
+        </div>
+
+        <div style="background: #f9f9f9; padding: 40px; text-align: center; border-radius: 8px; color: #999;">
+          <p style="font-size: 14px; margin-bottom: 8px;">Current homepage content:</p>
+          <p style="font-size: 12px;">Brand story, company info, static pages</p>
+          <p style="font-size: 12px; margin-top: 12px; color: #C3A35E; font-weight: 600;">❌ No transaction functionality</p>
+        </div>
+      </div>
+
+      <!-- NEW SITE -->
+      <div class="comparison-box">
+        <div class="box-header">
+          <div class="box-icon new-icon">⚡</div>
+          <div class="box-title">New Site (With Trading)</div>
+        </div>
+
+        <div class="description">
+          <h3>What You'll Get:</h3>
+          <ul>
+            <li>Everything from current site (unchanged)</li>
+            <li>+ NEW "Trading Platform" tab in navigation</li>
+            <li>Browse products from suppliers</li>
+            <li>Request quotes (RFQ system)</li>
+            <li>Supplier registration</li>
+          </ul>
+        </div>
+
+        <div class="mockup-header">
+          <div class="mockup-nav">
+            <span class="logo">HARVICS</span>
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">Industries</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item new">
+              Trading Platform
+              <span class="new-badge">New</span>
+            </a>
+            <a href="#" class="nav-item">Contact</a>
+          </div>
+        </div>
+
+        <div class="mockup-page">
+          <div class="mockup-page-hero">
+            <h2>Global Trading Made Simple</h2>
+            <p>Connect with verified suppliers • Request quotes • Trade globally</p>
+          </div>
+          <div class="mockup-page-content">
+            <div class="mockup-tabs">
+              <button class="mockup-tab active">🔍 Browse Products</button>
+              <button class="mockup-tab">📋 Request Quote</button>
+              <button class="mockup-tab">📦 Become Supplier</button>
+            </div>
+            <p style="text-align: center; color: #999; font-size: 13px;">Product listings, filters, quote forms...</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- KEY CHANGES -->
+    <div class="key-changes">
+      <h2>What's Changing? (Summary)</h2>
+      
+      <div class="changes-grid">
+        <div class="change-card">
+          <div class="change-number">1</div>
+          <h3>Navigation Bar</h3>
+          <p>
+            <strong>Before:</strong> Home | Industries | About | Contact<br><br>
+            <strong>After:</strong> Home | Industries | About | <span style="color: #C3A35E; font-weight: 600;">Trading Platform [NEW]</span> | Contact
+          </p>
+        </div>
+
+        <div class="change-card">
+          <div class="change-number">2</div>
+          <h3>New Page Added</h3>
+          <p>
+            URL: <strong>/en/marketplace</strong><br><br>
+            Contains: Product browsing, quote requests, supplier onboarding forms<br><br>
+            <span style="color: #28A745; font-weight: 600;">✓ Fully functional trading platform</span>
+          </p>
+        </div>
+
+        <div class="change-card">
+          <div class="change-number">3</div>
+          <h3>Existing Site</h3>
+          <p>
+            <strong>UNCHANGED:</strong><br>
+            • Homepage stays the same<br>
+            • Industry pages stay the same<br>
+            • About/Contact stay the same<br><br>
+            <span style="color: #6B1F2B; font-weight: 600;">Only ADDING new functionality</span>
+          </p>
+        </div>
+
+        <div class="change-card">
+          <div class="change-number">4</div>
+          <h3>User Flow</h3>
+          <p>
+            <strong>Buyers:</strong> Browse products → Request quote → Get response<br><br>
+            <strong>Sellers:</strong> Register as supplier → List products → Receive inquiries<br><br>
+            All handled through the new Trading Platform tab
+          </p>
+        </div>
+
+        <div class="change-card">
+          <div class="change-number">5</div>
+          <h3>Backend Work</h3>
+          <p>
+            <strong>New database tables needed:</strong><br>
+            • Products<br>
+            • Suppliers<br>
+            • Quote requests<br>
+            • Orders (future)<br><br>
+            API endpoints for forms, search, filtering
+          </p>
+        </div>
+
+        <div class="change-card">
+          <div class="change-number">6</div>
+          <h3>Timeline</h3>
+          <p>
+            <strong>Phase 1 (Week 1):</strong> RFQ forms only<br>
+            <strong>Phase 2 (Week 2-3):</strong> Product browsing<br>
+            <strong>Phase 3 (Week 4+):</strong> Full marketplace<br><br>
+            <span style="color: #C3A35E; font-weight: 600;">Can go live incrementally</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

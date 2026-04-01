@@ -27,7 +27,7 @@ export default function GlobalFilters({
 }: GlobalFiltersProps) {
   const locale = useLocale()
   const { selectedCountry, availableCountries, countryData, setSelectedCountry } = useCountry()
-  const { getCurrencyCode, getCurrencySymbol, currency, setCurrency } = useLocalization()
+  const { getCurrencyCode, getCurrencySymbol, currency } = useLocalization()
 
   // Get default currency from country data - use localization hook currency as primary source
   const defaultCurrency = (currency?.code || countryData?.currency?.code || getCurrencyCode() || 'USD') as FilterState['currency']

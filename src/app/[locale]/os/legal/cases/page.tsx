@@ -146,7 +146,7 @@ export default function LegalCasesPage() {
                       type="text"
                       value={formData.case_title}
                       onChange={(e) => setFormData({ ...formData, case_title: e.target.value })}
-                      className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                      className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                       required
                     />
                   </div>
@@ -157,7 +157,7 @@ export default function LegalCasesPage() {
                         type="text"
                         value={formData.case_type}
                         onChange={(e) => setFormData({ ...formData, case_type: e.target.value })}
-                        className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                        className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                         required
                       />
                     </div>
@@ -167,7 +167,7 @@ export default function LegalCasesPage() {
                         type="text"
                         value={formData.country}
                         onChange={(e) => setFormData({ ...formData, country: e.target.value })}
-                        className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                        className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                         required
                       />
                     </div>
@@ -178,7 +178,7 @@ export default function LegalCasesPage() {
                       value={formData.description}
                       onChange={(e) => setFormData({ ...formData, description: e.target.value })}
                       rows={4}
-                      className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                      className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                     />
                   </div>
                   <div className="grid grid-cols-2 gap-4">
@@ -188,7 +188,7 @@ export default function LegalCasesPage() {
                         type="text"
                         value={formData.assigned_to}
                         onChange={(e) => setFormData({ ...formData, assigned_to: e.target.value })}
-                        className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                        className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                       />
                     </div>
                     <div>
@@ -196,7 +196,7 @@ export default function LegalCasesPage() {
                       <select
                         value={formData.status}
                         onChange={(e) => setFormData({ ...formData, status: e.target.value })}
-                        className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                        className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                       >
                         {statusOptions.map(status => (
                           <option key={status} value={status}>{status.charAt(0).toUpperCase() + status.slice(1).replace('-', ' ')}</option>
@@ -210,7 +210,7 @@ export default function LegalCasesPage() {
                       type="date"
                       value={formData.hearing_date}
                       onChange={(e) => setFormData({ ...formData, hearing_date: e.target.value })}
-                      className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                      className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                     />
                   </div>
                 </div>
@@ -228,7 +228,7 @@ export default function LegalCasesPage() {
                 </button>
                 <button
                   onClick={() => setShowForm(false)}
-                  className="mt-3 w-full inline-flex justify-center border border-black300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-[#C3A35E]/90 hover:bg-white sm:mt-0 sm:w-auto"
+                  className="mt-3 w-full inline-flex justify-center border border-gray-200 shadow-sm px-4 py-2 bg-white text-sm font-medium text-[#C3A35E]/90 hover:bg-white sm:mt-0 sm:w-auto"
                 >
                   Cancel
                 </button>

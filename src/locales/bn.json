@@ -1,624 +1,1146 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
-    "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More"
+    "welcome": "স্বাগতম",
+    "companyName": "হারউইচ",
+    "tagline": "২০১৯ সাল থেকে উৎকৃষ্ট মানের ভোগ্যপণ্যে শ্রেষ্ঠত্ব",
+    "exploreProducts": "পণ্যগুলি অন্বেষণ করুন",
+    "contact": "আমাদের সাথে যোগাযোগ করুন",
+    "learnMore": "আরও জানুন",
+    "brandStatement": "একটি শীর্ষস্থানীয় বিশ্বব্যাপী ভোগ্যপণ্য সংস্থা, যা আন্তর্জাতিক গুণমান বজায় রেখে বিভিন্ন বিভাগে উৎকৃষ্ট মানের খাদ্যপণ্য সরবরাহ করে।",
+    "taglineStart": "প্রিমিয়াম ভোগ্যপণ্যে শ্রেষ্ঠত্ব যেহেতু",
+    "taglineYear": "২০১৯",
+    "locations": "লন্ডন • মিলান • নিউ ইয়র্ক",
+    "categories": {
+      "bakery": "বেকারি",
+      "beverages": "পানীয়",
+      "confectionery": "মিষ্টান্ন",
+      "culinary": "রন্ধনশিল্প",
+      "frozenFoods": "হিমায়িত খাবার",
+      "pasta": "পাস্তা",
+      "snacks": "জলখাবার"
+    }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
-    "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
-    "media": "Media",
-    "contactUs": "Contact Us",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store"
+    "esgReport": "ইএসজি রিপোর্ট ২০২৫",
+    "locations": "লন্ডন • মিলান • নিউ ইয়র্ক",
+    "home": "হোম",
+    "about": "সম্পর্কে",
+    "aboutUs": "আমাদের সম্পর্কে",
+    "brandStory": "ব্র্যান্ড স্টোরি",
+    "products": "পণ্য",
+    "ourProducts": "আমাদের পণ্য",
+    "viewAllProducts": "সমস্ত পণ্য দেখুন",
+    "csr": "সিএসআর",
+    "investorRelations": "বিনিয়োগকারী সম্পর্ক",
+    "investors": "বিনিয়োগকারীরা",
+    "media": "মিডিয়া",
+    "contactUs": "আমাদের সাথে যোগাযোগ করুন",
+    "countries": "দেশগুলি",
+    "portals": "পোর্টাল",
+    "signIn": "সাইন ইন করুন",
+    "wishlist": "ইচ্ছাতালিকা",
+    "cart": "শপিং কার্ট",
+    "help": "সাহায্য",
+    "findStore": "দোকান খুঁজুন",
+    "harvicsHouse": "হারভিকস হাউস",
+    "money": "টাকা",
+    "sales": "বিক্রয়",
+    "offers": "অফার",
+    "darkMode": "ডার্ক মোড",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "ক্রেডিট কার্ড",
+        "msRewards": "এমএন্ডএস রিওয়ার্ডস ক্রেডিট কার্ড",
+        "clubRewards": "ক্লাব পুরস্কার",
+        "ourCards": "আমাদের ক্রেডিট কার্ড"
+      },
+      "insurance": {
+        "title": "বীমা",
+        "home": "গৃহ বীমা",
+        "travel": "ভ্রমণ বীমা"
+      },
+      "travel": {
+        "title": "ভ্রমণ পরিষেবা",
+        "money": "ভ্রমণের টাকা",
+        "exchange": "বিনিময় হার"
+      },
+      "additional": {
+        "title": "অতিরিক্ত পরিষেবা",
+        "savings": "সঞ্চয় ও বিনিয়োগ",
+        "personalLoans": "ব্যক্তিগত ঋণ",
+        "financialSupport": "আর্থিক সহায়তা"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "বর্তমান বিক্রয়",
+      "clearance": "ছাড়পত্র",
+      "seasonal": "মৌসুমী বিক্রয়"
+    },
+    "offersDropdown": {
+      "specialOffers": "বিশেষ অফার",
+      "promotions": "পদোন্নতি",
+      "bulkOrders": "বাল্ক অর্ডারে ছাড়"
+    }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products"
+    "ourProducts": "আমাদের পণ্য",
+    "viewAllProducts": "সমস্ত পণ্য দেখুন",
+    "productCategories": "আমাদের পণ্যের বিভাগসমূহ",
+    "discoverPremium": "যত্ন ও উৎকর্ষতার সাথে নির্মিত আমাদের সেরা মানের পণ্যগুলো দেখুন।",
+    "tier1": "স্তর ১: বিভাগসমূহ",
+    "tier2": "স্তর ২: মডিউল",
+    "tier3": "স্তর ৩: কেপিআই স্ক্রিন",
+    "tier4": "স্তর ৪: পদক্ষেপ",
+    "reset": "নেভিগেশন রিসেট করুন",
+    "noSubcategories": "এই বিভাগের জন্য কোনো উপবিভাগ উপলব্ধ নেই।",
+    "pageTitle": "পণ্য",
+    "subcategories": "উপশ্রেণী",
+    "bakery": "বেকারি",
+    "bakeryDesc": "সদ্য বেক করা খাবার ও পেস্ট্রি।",
+    "beverages": "পানীয়",
+    "beveragesDesc": "প্রতিটি অনুষ্ঠানের জন্য সতেজ পানীয়।",
+    "confectionery": "মিষ্টান্ন",
+    "confectioneryDesc": "মিষ্টি খাবার ও সুস্বাদু জিনিস।",
+    "culinary": "রন্ধনশিল্প",
+    "culinaryDesc": "আপনার রান্নাঘরের জন্য প্রয়োজনীয় উপকরণ।",
+    "frozenFoods": "হিমায়িত খাবার",
+    "frozenFoodsDesc": "সুবিধাজনক ও সুস্বাদু হিমায়িত খাবার।",
+    "pasta": "পাস্তা",
+    "pastaDesc": "খাঁটি পাস্তার প্রকারভেদ।",
+    "snacks": "জলখাবার",
+    "snacksDesc": "দিনের যেকোনো সময়ের জন্য সুস্বাদু নাস্তা।"
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
-    "email": "Email",
-    "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "title": "যোগাযোগ করুন",
+    "subtitle": "আমরা আপনার মতামত জানতে আগ্রহী। এই মাধ্যমগুলোর যেকোনো একটির মাধ্যমে আমাদের সাথে যোগাযোগ করুন।",
+    "phone": "ফোন",
+    "email": "ইমেল",
+    "whatsapp": "হোয়াটসঅ্যাপ",
+    "callNow": "এখনই কল করুন",
+    "sendEmail": "ইমেল পাঠান",
+    "messageUs": "আমাদেরকে বার্তা পাঠান"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "মিডিয়া সেন্টার",
+    "pageTitle": "মিডিয়া সেন্টার | হারভিকস",
+    "description": "হারভিকস গ্লোবাল ভেঞ্চারস-এর প্রেস রিসোর্স, ব্র্যান্ড অ্যাসেট এবং সর্বশেষ খবর।",
+    "corporate": "কর্পোরেট",
+    "sections": {
+      "news": {
+        "title": "সংবাদ ও প্রেস বিজ্ঞপ্তি",
+        "desc": "হারভিকস গ্লোবাল ভেঞ্চারস-এর সর্বশেষ ঘোষণা, বাজার সম্প্রসারণ, নতুন পণ্য উন্মোচন এবং প্রাতিষ্ঠানিক হালনাগাদ।",
+        "cta": "সর্বশেষ খবর পড়ুন"
+      },
+      "gallery": {
+        "title": "ছবির গ্যালারি",
+        "desc": "মিডিয়ার ব্যবহারের জন্য উচ্চ রেজোলিউশনের ব্র্যান্ড অ্যাসেট, পণ্যের ছবি, প্রতিষ্ঠানের ছবি এবং ইভেন্টের কভারেজ।",
+        "cta": "গ্যালারি ব্রাউজ করুন"
+      },
+      "contacts": {
+        "title": "গণমাধ্যম যোগাযোগ",
+        "desc": "সংবাদমাধ্যম সংক্রান্ত জিজ্ঞাসা, সাক্ষাৎকারের অনুরোধ এবং অংশীদারিত্ব ঘোষণার জন্য আমাদের যোগাযোগ দলের সাথে যোগাযোগ করুন।",
+        "cta": "প্রেস টিমের সাথে যোগাযোগ করুন"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "অন্তর্ভুক্ত বাজারসমূহ",
+      "industryVerticals": "শিল্প উল্লম্ব",
+      "foundedIn": "দুবাইতে প্রতিষ্ঠিত",
+      "languagesSupported": "সমর্থিত ভাষা"
+    },
+    "recentHeadlines": "সাম্প্রতিক শিরোনাম",
+    "headlines": {
+      "expansion": "হারভিকস দক্ষিণ-পূর্ব এশিয়ার ৫টি নতুন বাজারে তার এফএমসিজি কার্যক্রম সম্প্রসারণ করেছে",
+      "aiPlatform": "বিশ্বব্যাপী বিতরণের জন্য নতুন এআই-চালিত সাপ্লাই চেইন প্ল্যাটফর্ম চালু করা হয়েছে",
+      "carbonNeutral": "হারভিকস তার সকল স্থাপনায় কার্বন-নিরপেক্ষতার মাইলফলক অর্জন করেছে",
+      "partnership": "দক্ষিণ এশিয়ার শীর্ষস্থানীয় বস্ত্র প্রস্তুতকারকদের সাথে কৌশলগত অংশীদারিত্ব"
+    }
   },
   "footer": {
-    "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
-    "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
-    "contactUsButton": "Contact Us",
-    "usefulLinks": "Useful Links",
-    "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
-    "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
-    "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
-    "privacy": "Privacy",
-    "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
+    "companyName": "হারভিকস গ্লোবাল ভেঞ্চারস",
+    "tagline": "২০১৯ সাল থেকে উৎকৃষ্ট মানের ভোগ্যপণ্যে শ্রেষ্ঠত্ব",
+    "brandStatement": "একটি শীর্ষস্থানীয় বিশ্বব্যাপী ভোগ্যপণ্য সংস্থা, যা আন্তর্জাতিক গুণমান বজায় রেখে বিভিন্ন বিভাগে উৎকৃষ্ট মানের খাদ্যপণ্য সরবরাহ করে।",
+    "locations": "লন্ডন • মিলান • নিউ ইয়র্ক",
+    "since": "২০১৯ সাল থেকে",
+    "harvicsNews": "হারভিকস নিউজ",
+    "subscribeToAlerts": "সতর্কতা ও আপডেট পেতে সাবস্ক্রাইব করুন।",
+    "signUp": "সাইন আপ করুন",
+    "complianceConcerns": "সম্মতি সংক্রান্ত উদ্বেগ",
+    "speakUp": "নিয়মকানুন বা নৈতিকতা নিয়ে কোনো উদ্বেগ থাকলে তা জানান।",
+    "speakUpButton": "কথা বলুন",
+    "contactUs": "আমাদের সাথে যোগাযোগ করুন",
+    "contactDescription": "আমাদের দলের সাথে যোগাযোগ করুন।",
+    "contactUsButton": "আমাদের সাথে যোগাযোগ করুন",
+    "usefulLinks": "দরকারী লিঙ্ক",
+    "askHarvics": "আস্ক হ্যারউইচ",
+    "searchForJobs": "চাকরি খুঁজুন",
+    "signUpForNews": "খবরের জন্য সাইন আপ করুন",
+    "company": "কোম্পানি",
+    "globalAddresses": "বিশ্বব্যাপী ঠিকানা",
+    "strategy": "কৌশল",
+    "ourLeadership": "আমাদের নেতৃত্ব",
+    "brandsAZ": "ব্র্যান্ড এ-জেড",
+    "ourHistory": "আমাদের ইতিহাস",
+    "sustainability": "স্থায়িত্ব",
+    "news": "সংবাদ",
+    "mediaContacts": "গণমাধ্যম যোগাযোগ",
+    "images": "ছবি",
+    "investors": "বিনিয়োগকারীরা",
+    "corporateGovernance": "কর্পোরেট গভর্নেন্স",
+    "sharesAdrsBonds": "শেয়ার, এডিআর এবং বন্ড",
+    "publications": "প্রকাশনা",
+    "followUsOn": "আমাদের অনুসরণ করুন",
+    "issuesCount": "০টি সমস্যা",
+    "siteMap": "সাইট ম্যাপ",
+    "unsubscribe": "সদস্যতা বাতিল করুন",
+    "help": "সাহায্য",
+    "privacy": "গোপনীয়তা",
+    "cookies": "কুকি",
+    "termsOfUse": "ব্যবহারের শর্তাবলী",
+    "accessibility": "প্রবেশগম্যতা",
+    "carbonEfficiency": "কার্বন দক্ষতা",
+    "suppliers": "সরবরাহকারী",
+    "socialMedia": "সোশ্যাল মিডিয়া",
+    "cookieSettings": "কুকি সেটিংস",
     "feature1Title": "Global Reach",
     "feature1Desc": "Serving customers across 40+ countries worldwide",
-    "feature2Title": "Premium Quality",
+    "feature2Title": "প্রিমিয়াম গুণমান",
     "feature2Desc": "International quality standards in every product",
     "feature3Title": "Innovation",
     "feature3Desc": "Leading innovation in consumer goods industry",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
-    "media": "Media"
+    "emailAddress": "ইমেইল ঠিকানা",
+    "enterEmailPlaceholder": "আপনার ইমেল ঠিকানা লিখুন",
+    "subscribe": "সাবস্ক্রাইব করুন",
+    "subscribing": "সাবস্ক্রাইব করা...",
+    "aboutUs": "আমাদের সম্পর্কে",
+    "media": "মিডিয়া"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "পণ্য, ব্র্যান্ড বা বিভাগ অনুসন্ধান করুন",
+    "noResults": "কোনো ফলাফল পাওয়া যায়নি",
+    "searching": "অনুসন্ধান করা হচ্ছে...",
+    "results": "ফলাফল"
   },
   "chatbot": {
-    "title": "Chat with Us",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "title": "আমাদের সাথে চ্যাট করুন",
+    "placeholder": "আপনার বার্তা টাইপ করুন...",
+    "send": "পাঠান",
+    "close": "বন্ধ করুন",
+    "welcome": "হ্যালো! আজ আমি আপনাকে কীভাবে সাহায্য করতে পারি?",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "দুঃখিত, আমি ব্যাপারটা বুঝতে পারিনি। আপনি কি অনুগ্রহ করে বিষয়টি আবার গুছিয়ে বলবেন?",
+      "help": "আমি আপনাকে পণ্যের তথ্য, অর্ডার বা সাধারণ জিজ্ঞাসার বিষয়ে সাহায্য করতে পারি। আপনি কী জানতে চান?",
+      "contact": "আরও সহায়তার জন্য, অনুগ্রহ করে আমাদের সাথে support@harvics.com ইমেল ঠিকানায় যোগাযোগ করুন অথবা +1-800-HARVICS নম্বরে ফোন করুন।"
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
-    "filter": "Filter",
-    "clear": "Clear",
-    "download": "Download",
-    "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
-    "status": "Status",
-    "date": "Date",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
-    "selectCountry": "Select Country",
-    "required": "Required",
-    "menu": "Menu",
-    "viewProducts": "View Products"
+    "chatWithUs": "আমাদের সাথে চ্যাট করুন",
+    "loading": "লোড হচ্ছে...",
+    "error": "ত্রুটি",
+    "success": "সাফল্য",
+    "save": "সংরক্ষণ করুন",
+    "cancel": "বাতিল করুন",
+    "delete": "মুছে ফেলুন",
+    "edit": "সম্পাদনা",
+    "view": "দেখুন",
+    "submit": "জমা দিন",
+    "search": "অনুসন্ধান",
+    "filter": "ফিল্টার",
+    "clear": "পরিষ্কার",
+    "download": "ডাউনলোড করুন",
+    "upload": "আপলোড",
+    "yes": "হ্যাঁ",
+    "no": "না",
+    "close": "বন্ধ করুন",
+    "back": "ফিরে যান",
+    "next": "পরবর্তী",
+    "previous": "পূর্ববর্তী",
+    "actions": "কর্ম",
+    "status": "অবস্থা",
+    "date": "তারিখ",
+    "name": "নাম",
+    "email": "ইমেল",
+    "phone": "ফোন",
+    "address": "ঠিকানা",
+    "country": "দেশ",
+    "city": "শহর",
+    "all": "সব",
+    "none": "কোনোটিই না",
+    "select": "নির্বাচন করুন",
+    "selectCountry": "দেশ নির্বাচন করুন",
+    "required": "প্রয়োজনীয়",
+    "menu": "মেনু",
+    "viewProducts": "পণ্য দেখুন",
+    "selectLanguage": "ভাষা নির্বাচন করুন",
+    "showMore": "আরও দেখুন",
+    "showLess": "কম দেখান"
   },
   "music": {
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "গান বাজান",
+    "pause": "সঙ্গীত থামান",
+    "mute": "নিঃশব্দ সঙ্গীত",
+    "unmute": "আনমিউট মিউজিক"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "আমাদের বিশ্বব্যাপী প্রভাব",
+    "since": "যেহেতু",
+    "majorMarket": "প্রধান বাজার",
+    "majorMarkets": "প্রধান বাজার",
+    "presence": "উপস্থিতি",
+    "countriesServed": "পরিষেবা প্রদানকারী দেশসমূহ",
+    "majorMarketsCount": "প্রধান বাজার",
+    "productCategoriesCount": "পণ্যের বিভাগ",
+    "establishedYear": "প্রতিষ্ঠিত"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "অঞ্চল শ্রেণিবিন্যাস",
+    "fullPath": "সম্পূর্ণ পথ",
+    "currentTerritory": "বর্তমান অঞ্চল",
+    "noChildren": "কোন আইটেম নেই",
     "tiers": {
-      "globe": "Globe",
-      "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
-      "district": "District",
-      "location": "Location"
+      "globe": "গ্লোব",
+      "continent": "মহাদেশ",
+      "region": "অঞ্চল",
+      "country": "দেশ",
+      "city": "শহর",
+      "district": "জেলা",
+      "location": "অবস্থান"
     }
   },
   "globalWorld": {
-    "title": "Harvics Global",
-    "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "title": "হারভিকস গ্লোবাল",
+    "titleShort": "বিশ্বব্যাপী",
+    "selectRegion": "অঞ্চল নির্বাচন করুন",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
+      "title": "গ্রাহকের বিবরণ",
+      "selected": "নির্বাচিত",
+      "fullName": "পুরো নাম",
+      "namePlaceholder": "আপনার পুরো নাম লিখুন",
+      "nameRequired": "নাম আবশ্যক",
+      "email": "ইমেইল ঠিকানা",
       "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
-      "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "emailRequired": "ইমেল আবশ্যক",
+      "emailInvalid": "অনুগ্রহ করে একটি বৈধ ইমেল ঠিকানা লিখুন",
+      "phone": "ফোন নম্বর",
+      "phonePlaceholder": "+১ ২৩৪ ৫৬৭ ৮৯০০",
+      "phoneRequired": "ফোন নম্বর প্রয়োজন",
+      "address": "ঠিকানা",
+      "addressPlaceholder": "আপনার ঠিকানা",
+      "addressRequired": "ঠিকানা আবশ্যক",
+      "marketingConsent": "আমি বিপণন সংক্রান্ত যোগাযোগ এবং আপডেট পেতে সম্মত।",
+      "submit": "জমা দিন এবং চালিয়ে যান",
+      "submitting": "জমা দেওয়া হচ্ছে...",
+      "skip": "এড়িয়ে যান এবং চালিয়ে যান"
     }
   },
   "distributorPortal": {
     "dashboard": {
       "kpi": {
-        "title": "Key Performance Indicators",
-        "ordersToday": "Orders today",
-        "ordersTodaySubtitle": "Submitted via Harvics CRM",
-        "pendingDeliveries": "Pending deliveries",
-        "pendingDeliveriesSubtitle": "Across assigned routes",
-        "retailers": "Retailers",
-        "retailersSubtitle": "Active outlets in scope",
-        "attendance": "T & A Score",
-        "attendanceSubtitle": "Territory coverage"
+        "title": "মূল কর্মক্ষমতা সূচক",
+        "ordersToday": "আজকের অর্ডার",
+        "ordersTodaySubtitle": "হারভিকস সিআরএম-এর মাধ্যমে জমা দেওয়া হয়েছে",
+        "pendingDeliveries": "অপেক্ষমান ডেলিভারি",
+        "pendingDeliveriesSubtitle": "নির্ধারিত রুট জুড়ে",
+        "retailers": "খুচরা বিক্রেতারা",
+        "retailersSubtitle": "আওতাভুক্ত সক্রিয় আউটলেটগুলি",
+        "attendance": "টি অ্যান্ড এ স্কোর",
+        "attendanceSubtitle": "অঞ্চল কভারেজ"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "আর্থিক ও ইনভেন্টরি",
+        "lowStock": "কম স্টক SKU",
+        "lowStockSubtitle": "পুনরায় পূরণ ট্রিগার করুন",
+        "outstandingInvoices": "বকেয়া চালান",
+        "outstandingInvoicesSubtitle": "সংগ্রহের জন্য বকেয়া",
+        "creditLimit": "ক্রেডিট সীমা",
+        "creditLimitSubtitle": "অর্থায়ন দ্বারা নির্ধারিত"
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "স্বয়ংক্রিয় অনুমোদন, স্টক পুনঃপূরণ, এবং ইনভয়েস রিমাইন্ডার সক্রিয় করা হয়েছে",
+        "autoApproval": "আত্ম-অনুমোদন",
+        "stockReplenishment": "স্টক পুনঃপূরণ",
+        "invoiceReminders": "ইনভয়েস রিমাইন্ডার"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "এআই সুপারিশ",
+        "riskLevel": "ঝুঁকির মাত্রা",
+        "riskDescription": "ক্রেডিট ব্যবহার এবং পরিশোধের ইতিহাসের উপর ভিত্তি করে",
+        "suggestedOrder": "প্রস্তাবিত ক্রম",
+        "suggestedOrderSubtitle": "অর্ডার করার জন্য AI-প্রস্তাবিত SKU-গুলি",
+        "nextAction": "পরবর্তী পদক্ষেপ"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "কার্যক্রম ও নির্দেশনা",
+        "complaints": "অভিযোগ",
+        "complaintsSubtitle": "খুচরা বিক্রেতার সমস্যাগুলো সমাধানের অপেক্ষায় রয়েছে।",
+        "playbook": "প্লেবুক",
+        "playbookItem1": "দুপুরের আগে অপেক্ষমান ডেলিভারিগুলোকে অগ্রাধিকার দিন।",
+        "playbookItem2": "৪৮ ঘন্টার মধ্যে সকল অমীমাংসিত অভিযোগ নিষ্পত্তি করুন।",
+        "playbookItem3": "কম স্টক থাকা SKU-গুলির জন্য পুনরায় স্টক পূরণের ব্যবস্থা চালু করুন (স্বয়ংক্রিয়ভাবে PO তৈরি করুন)।"
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "অঞ্চল",
+      "ordersThisMonth": "এই মাসের অর্ডার",
+      "pendingOrders": "বিচারাধীন আদেশ",
+      "deliveredOrders": "ডেলিভারি করা অর্ডার",
+      "territoryInformation": "অঞ্চল তথ্য",
+      "country": "দেশ",
+      "city": "শহর",
+      "region": "অঞ্চল",
+      "quickActions": "দ্রুত পদক্ষেপ",
+      "newOrder": "নতুন ব্যবস্থা",
+      "viewOrders": "অর্ডারগুলো দেখুন",
+      "viewInvoices": "চালানগুলি দেখুন",
+      "profileSettings": "প্রোফাইল সেটিংস",
+      "loading": "ড্যাশবোর্ড লোড হচ্ছে...",
+      "error": "ত্রুটি"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
-      "date": "Date",
-      "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "title": "আমার আদেশ",
+      "orderId": "অর্ডার আইডি",
+      "date": "তারিখ",
+      "status": "অবস্থা",
+      "items": "আইটেম",
+      "totalAmount": "মোট পরিমাণ",
+      "actions": "কর্ম",
+      "viewDetails": "বিস্তারিত দেখুন",
       "filters": {
-        "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "অবস্থা",
+        "startDate": "শুরুর তারিখ",
+        "endDate": "শেষ তারিখ",
+        "allStatuses": "সমস্ত স্ট্যাটাস",
+        "clearFilters": "ফিল্টার পরিষ্কার করুন"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "বিচারাধীন",
+        "processing": "প্রক্রিয়াকরণ",
+        "delivered": "বিতরণ করা হয়েছে",
+        "cancelled": "বাতিল করা হয়েছে"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
-      "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "noOrders": "কোন অর্ডার পাওয়া যায়নি",
+      "loading": "অর্ডার লোড হচ্ছে...",
+      "page": "পৃষ্ঠা",
+      "of": "এর",
+      "previous": "পূর্ববর্তী",
+      "next": "পরবর্তী"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
-      "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "orderItems": "Order Items",
-      "product": "Product",
+      "title": "অর্ডারের বিবরণ",
+      "backToOrders": "অর্ডারগুলিতে ফিরে যান",
+      "orderId": "অর্ডার আইডি",
+      "status": "অবস্থা",
+      "orderDate": "আদেশের তারিখ",
+      "deliveryDate": "ডেলিভারির তারিখ",
+      "deliveryAddress": "ডেলিভারি ঠিকানা",
+      "notes": "নোট",
+      "orderItems": "অর্ডার আইটেম",
+      "product": "পণ্য",
       "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "quantity": "পরিমাণ",
+      "unitPrice": "একক মূল্য",
+      "total": "মোট",
+      "totalAmount": "মোট পরিমাণ",
+      "statusTimeline": "স্ট্যাটাস টাইমলাইন",
+      "orderNotFound": "অর্ডারটি খুঁজে পাওয়া যায়নি"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
-      "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "title": "নতুন অর্ডার তৈরি করুন",
+      "orderItems": "অর্ডার আইটেম",
+      "addItem": "আইটেম যোগ করুন",
+      "noItems": "এখনো কোনো আইটেম যোগ করা হয়নি। শুরু করতে 'আইটেম যোগ করুন'-এ ক্লিক করুন।",
+      "orderDetails": "অর্ডারের বিবরণ",
+      "deliveryDate": "ডেলিভারির তারিখ",
+      "deliveryAddress": "ডেলিভারি ঠিকানা",
+      "notes": "নোট",
+      "totalAmount": "মোট পরিমাণ",
+      "createOrder": "অর্ডার তৈরি করুন",
+      "creatingOrder": "শৃঙ্খলা তৈরি করা হচ্ছে...",
+      "cancel": "বাতিল করুন",
+      "selectProduct": "পণ্য নির্বাচন করুন",
+      "product": "পণ্য",
+      "quantity": "পরিমাণ",
+      "unitPrice": "একক মূল্য",
+      "remove": "অপসারণ করুন",
+      "subtotal": "উপমোট",
+      "orderId": "অর্ডার আইডি",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "কমপক্ষে একটি অর্ডার আইটেম প্রয়োজন",
+        "productRequired": "পণ্যটি প্রয়োজন",
+        "quantityRequired": "পরিমাণ অবশ্যই ০ অপেক্ষা বেশি হতে হবে।",
+        "priceRequired": "একক মূল্য অবশ্যই অঋণাত্মক হতে হবে।",
+        "invalidDate": "ডেলিভারির তারিখের ভুল ফরম্যাট",
+        "datePast": "ডেলিভারির তারিখ অতীতের হতে পারবে না।"
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "আমার চালানগুলি",
+      "invoiceNumber": "চালান নম্বর",
+      "invoiceDate": "চালানের তারিখ",
+      "dueDate": "দুটি তারিখ",
+      "amount": "পরিমাণ",
+      "paidAmount": "প্রদত্ত পরিমাণ",
+      "paymentStatus": "অর্থপ্রদানের অবস্থা",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "অর্থপ্রদানের অবস্থা",
+        "allStatuses": "সমস্ত স্ট্যাটাস",
+        "clearFilters": "ফিল্টার পরিষ্কার করুন"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "প্রদত্ত",
+        "unpaid": "অবৈতনিক",
+        "partial": "আংশিক"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "কোন চালান পাওয়া যায়নি",
+      "loading": "চালান লোড হচ্ছে..."
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "title": "আমার প্রোফাইল",
+      "accountInformation": "অ্যাকাউন্টের তথ্য",
+      "distributorId": "ডিস্ট্রিবিউটর আইডি",
+      "territory": "অঞ্চল",
+      "country": "দেশ",
+      "city": "শহর",
+      "accountCreated": "অ্যাকাউন্ট তৈরি করা হয়েছে",
+      "updateProfile": "প্রোফাইল আপডেট করুন",
+      "name": "নাম",
+      "email": "ইমেল",
+      "phone": "ফোন",
+      "address": "ঠিকানা",
+      "language": "ভাষা",
+      "currency": "মুদ্রা",
+      "saveChanges": "পরিবর্তনগুলি সংরক্ষণ করুন",
+      "saving": "সঞ্চয়...",
+      "profileUpdated": "প্রোফাইল সফলভাবে আপডেট করা হয়েছে",
+      "loading": "প্রোফাইল লোড হচ্ছে...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "অবৈধ ইমেল ফরম্যাট",
+        "invalidPhone": "অবৈধ ফোন ফরম্যাট"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
-      "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "error": "ত্রুটি",
+      "loading": "লোড হচ্ছে...",
+      "save": "সংরক্ষণ করুন",
+      "cancel": "বাতিল করুন",
+      "back": "ফিরে যান",
+      "submit": "জমা দিন",
+      "delete": "মুছে ফেলুন",
+      "edit": "সম্পাদনা",
+      "view": "দেখুন",
+      "search": "অনুসন্ধান",
+      "filter": "ফিল্টার",
+      "clear": "পরিষ্কার",
+      "apply": "আবেদন করুন",
+      "close": "বন্ধ করুন",
+      "confirm": "নিশ্চিত করুন",
+      "yes": "হ্যাঁ",
+      "no": "না"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
-    "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "title": "আইনি অপারেটিং সিস্টেম",
+    "sidebarTitle": "আইনি ওএস",
+    "accessDenied": "প্রবেশাধিকার প্রত্যাখ্যাত",
+    "accessDeniedMessage": "লিগ্যাল ওএস মডিউলটি অ্যাক্সেস করার অনুমতি আপনার নেই।",
+    "dashboard": "ড্যাশবোর্ড",
+    "contracts": "চুক্তি",
+    "certificates": "সার্টিফিকেট",
+    "compliance": "সম্মতি",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "আইনি ড্যাশবোর্ড",
+      "description": "আইনি কার্যক্রম এবং সম্মতি স্থিতির সংক্ষিপ্ত বিবরণ",
+      "activeTrademarks": "সক্রিয় ট্রেডমার্ক",
+      "activeContracts": "সক্রিয় চুক্তি",
+      "complianceStatus": "সম্মতি স্থিতি"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "ট্রেডমার্ক",
+      "description": "ট্রেডমার্ক নিবন্ধন এবং আবেদনপত্র পরিচালনা করুন",
+      "addNew": "নতুন ট্রেডমার্ক যোগ করুন",
       "filters": {
-        "country": "Country",
-        "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "country": "দেশ",
+        "status": "অবস্থা",
+        "allCountries": "সকল দেশ",
+        "allStatuses": "সমস্ত স্ট্যাটাস",
+        "clearFilters": "ফিল্টার পরিষ্কার করুন"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "brandName": "ব্র্যান্ডের নাম",
+        "class": "শ্রেণী",
+        "country": "দেশ",
+        "applicationNo": "আবেদন নং",
+        "status": "অবস্থা",
+        "expiryDate": "মেয়াদ উত্তীর্ণের তারিখ",
+        "actions": "কর্ম"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "ট্রেডমার্ক সম্পাদনা করুন",
+        "add": "নতুন ট্রেডমার্ক যোগ করুন",
+        "view": "ট্রেডমার্ক দেখুন"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "brandName": "ব্র্যান্ডের নাম",
+        "classNumber": "শ্রেণী নম্বর",
+        "country": "দেশ",
+        "applicationNo": "আবেদন নম্বর",
+        "status": "অবস্থা",
+        "expiryDate": "মেয়াদ উত্তীর্ণের তারিখ",
+        "documents": "নথি",
+        "noDocuments": "কোন নথি সংযুক্ত নেই",
+        "addDocument": "নথি যোগ করুন",
+        "remove": "অপসারণ করুন"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "ট্রেডমার্ক লোড করতে ব্যর্থ হয়েছে",
+        "saveFailed": "ট্রেডমার্ক সংরক্ষণ করা সম্ভব হয়নি। অনুগ্রহ করে আবার চেষ্টা করুন।"
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "আইনি মামলা",
+      "description": "আইনি মামলা পরিচালনা করুন এবং সেগুলোর অবস্থা পর্যবেক্ষণ করুন।",
+      "addNew": "নতুন মামলা",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
-        "description": "Description",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date"
+        "caseTitle": "মামলার শিরোনাম",
+        "caseType": "মামলার ধরণ",
+        "country": "দেশ",
+        "description": "বর্ণনা",
+        "assignedTo": "নির্ধারিত",
+        "status": "অবস্থা",
+        "hearingDate": "শুনানির তারিখ"
       },
       "table": {
-        "caseTitle": "Case Title",
-        "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "caseTitle": "মামলার শিরোনাম",
+        "type": "প্রকার",
+        "country": "দেশ",
+        "assignedTo": "নির্ধারিত",
+        "status": "অবস্থা",
+        "hearingDate": "শুনানির তারিখ",
+        "actions": "কর্ম"
       },
       "status": {
-        "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "open": "খোলা",
+        "inProgress": "চলমান",
+        "closed": "বন্ধ",
+        "cancelled": "বাতিল করা হয়েছে"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "ফ্লিট ম্যাপ ভিউ",
+      "description": "বিক্রয় কর্মকর্তা এবং ডেলিভারি যানবাহনের রিয়েল-টাইম ট্র্যাকিং",
+      "activeEmployees": "সক্রিয় কর্মচারী",
+      "noEmployees": "কোন সক্রিয় কর্মচারী নেই",
+      "loading": "লোড হচ্ছে..."
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
-      "reset": "Reset",
-      "play": "Play",
-      "pause": "Pause",
-      "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "title": "রুট রিপ্লে",
+      "employee": "কর্মচারী",
+      "speed": "গতি",
+      "reset": "রিসেট",
+      "play": "খেলা",
+      "pause": "বিরতি",
+      "points": "পয়েন্ট",
+      "noRoute": "কোন রুট ডেটা উপলব্ধ নেই",
+      "loading": "রুট লোড হচ্ছে..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "প্রতিযোগী পণ্য",
+      "description": "প্রতিযোগী পণ্যের তথ্য ট্র্যাক করুন",
+      "addProduct": "পণ্য যোগ করুন",
+      "formTitle": "প্রতিযোগী পণ্য যোগ করুন",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "ব্র্যান্ড",
+        "skuName": "SKU নাম",
+        "category": "বিভাগ",
+        "size": "আকার",
+        "price": "মূল্য",
+        "currency": "মুদ্রা",
+        "country": "দেশ"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "ব্র্যান্ড",
+        "skuName": "SKU নাম",
+        "category": "বিভাগ",
+        "size": "আকার",
+        "price": "মূল্য",
+        "country": "দেশ",
+        "dateAdded": "যোগ করার তারিখ"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "পণ্য লোড করতে ব্যর্থ হয়েছে",
+        "createFailed": "পণ্যটি তৈরি করা সম্ভব হয়নি। অনুগ্রহ করে আবার চেষ্টা করুন।"
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "কোন প্রতিযোগী পণ্য খুঁজে পাওয়া যায়নি",
+      "loading": "পণ্য লোড হচ্ছে..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "প্রতিযোগী ড্যাশবোর্ড",
+      "description": "প্রতিযোগী পণ্য সম্পর্কিত বিশ্লেষণ ও অন্তর্দৃষ্টি",
+      "totalProducts": "মোট পণ্য",
+      "brandsTracked": "ট্র্যাক করা ব্র্যান্ডগুলি",
+      "countries": "দেশগুলি",
+      "categories": "বিভাগগুলি",
+      "byBrand": "ব্র্যান্ড অনুসারে পণ্য",
+      "byCountry": "দেশ অনুযায়ী পণ্য",
+      "byCategory": "বিভাগ অনুযায়ী পণ্য",
+      "loading": "পরিসংখ্যান লোড হচ্ছে...",
+      "noStats": "কোন পরিসংখ্যান উপলব্ধ নেই"
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
-    "finance": "Finance",
-    "crm": "CRM",
-    "hr": "HR",
-    "executive": "Executive",
-    "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
-    "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
-    "admin": "Admin"
+    "overview": "সংক্ষিপ্ত বিবরণ",
+    "orders": "আদেশ",
+    "inventory": "ইনভেন্টরি",
+    "logistics": "লজিস্টিকস",
+    "finance": "অর্থায়ন",
+    "crm": "সিআরএম",
+    "hr": "এইচআর",
+    "executive": "নির্বাহী",
+    "investor": "বিনিয়োগকারী",
+    "legal-ipr": "আইনি/আইপিআর",
+    "competitor": "প্রতিযোগী",
+    "import-export": "আমদানি/রপ্তানি",
+    "gps-tracking": "জিপিএস ট্র্যাকিং",
+    "localization": "স্থানীয়করণ",
+    "workflows": "ওয়ার্কফ্লো",
+    "admin": "প্রশাসক"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
-      "finance": "Finance",
-      "crm": "CRM",
-      "hr": "HR",
-      "executive": "Executive",
-      "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
-      "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
-      "admin": "Admin"
+      "overview": "সংক্ষিপ্ত বিবরণ",
+      "orders": "আদেশ",
+      "inventory": "ইনভেন্টরি",
+      "logistics": "লজিস্টিকস",
+      "finance": "অর্থায়ন",
+      "crm": "সিআরএম",
+      "hr": "এইচআর",
+      "executive": "নির্বাহী",
+      "investor": "বিনিয়োগকারী",
+      "legal-ipr": "আইনি/আইপিআর",
+      "competitor": "প্রতিযোগী",
+      "import-export": "আমদানি/রপ্তানি",
+      "gps-tracking": "জিপিএস ট্র্যাকিং",
+      "localization": "স্থানীয়করণ",
+      "workflows": "ওয়ার্কফ্লো",
+      "admin": "প্রশাসক"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
-      "profit": "Profit"
+      "customers": "গ্রাহকরা",
+      "employees": "কর্মচারীরা",
+      "profit": "লাভ"
+    },
+    "domain": {
+      "title": "সিআরএম ওএস",
+      "customer360": {
+        "title": "গ্রাহক ৩৬০",
+        "description": "সম্পূর্ণ গ্রাহক প্রোফাইল, যোগাযোগের ইতিহাস এবং সম্পর্ক ব্যবস্থাপনা"
+      },
+      "campaigns": {
+        "title": "ডিজিটাল প্রচারাভিযান",
+        "description": "মাল্টি-চ্যানেল মার্কেটিং ক্যাম্পেইন (ইনস্টাগ্রাম, ফেসবুক, টিকটক, হোয়াটসঅ্যাপ)"
+      },
+      "leads": {
+        "title": "লিড এবং সুযোগ",
+        "description": "লিড ম্যানেজমেন্ট, যোগ্যতা যাচাই, এবং সুযোগের পাইপলাইন"
+      },
+      "support": {
+        "title": "গ্রাহক সহায়তা",
+        "description": "টিকিট ব্যবস্থাপনা, গ্রাহক সেবা এবং সমস্যার সমাধান"
+      },
+      "loyalty": {
+        "title": "আনুগত্য প্রোগ্রাম",
+        "description": "খুচরা বিক্রেতার আনুগত্য, গেমফিকেশন এবং পুরস্কার ব্যবস্থাপনা"
+      }
+    },
+    "customerList": {
+      "title": "গ্রাহক ৩৬০",
+      "newCustomer": "নতুন গ্রাহক",
+      "totalCustomers": "মোট গ্রাহক",
+      "active": "সক্রিয়",
+      "new": "নতুন",
+      "satisfaction": "সন্তুষ্টি",
+      "customerManagement": "গ্রাহক ব্যবস্থাপনা",
+      "customerManagementDescription": "আপনার গ্রাহক সম্পর্ক, মিথস্ক্রিয়া এবং প্রচারাভিযানগুলো দেখুন ও পরিচালনা করুন।",
+      "loading": "লোড হচ্ছে...",
+      "error": "CRM ডেটা লোড করতে ত্রুটি"
     }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "সরবরাহকারী ককপিট লোড হচ্ছে…",
+      "purchaseOrders": "ক্রয় আদেশ",
+      "purchaseOrdersSubtitle": "হারভিকদের দ্বারা পালিত",
+      "shipments": "চালান / জিআরএন",
+      "shipmentsSubtitle": "এই সপ্তাহে গৃহীত হয়েছে",
+      "invoices": "চালান তৈরি করা হয়েছে",
+      "invoicesSubtitle": "অর্থপ্রদানের অপেক্ষায়",
+      "paymentsPending": "বকেয়া পেমেন্ট",
+      "paymentsPendingSubtitle": "মুক্তির জন্য নির্ধারিত",
+      "qualityComplaints": "গুণমান / অভিযোগ",
+      "qualityComplaintsSubtitle": "টিকিট খোলা",
+      "forecast": "পূর্বাভাস (আগামী ৪ সপ্তাহ)",
+      "forecastSubtitle": "এআই প্লেসহোল্ডার",
+      "supplierActions": "সরবরাহকারীর পদক্ষেপ",
+      "action1": "আসন্ন চালানগুলো নিশ্চিত করুন এবং জিআরএন সময়সূচী হালনাগাদ করুন।",
+      "action2": "বকেয়া চালানগুলো পর্যালোচনা করুন এবং পরিশোধের পরামর্শ দিন।",
+      "action3": "QA প্রমাণের সাহায্যে অমীমাংসিত গুণমান সংক্রান্ত অভিযোগগুলির সমাধান করুন।"
+    }
+  },
+  "form": {
+    "username": "ব্যবহারকারীর নাম",
+    "password": "পাসওয়ার্ড",
+    "email": "ইমেল",
+    "submit": "জমা দিন",
+    "cancel": "বাতিল করুন",
+    "save": "সংরক্ষণ করুন",
+    "delete": "মুছে ফেলুন",
+    "search": "অনুসন্ধান",
+    "filter": "ফিল্টার",
+    "reset": "রিসেট",
+    "close": "বন্ধ করুন",
+    "back": "ফিরে যান",
+    "next": "পরবর্তী",
+    "previous": "পূর্ববর্তী",
+    "confirm": "নিশ্চিত করুন",
+    "rememberMe": "আমাকে মনে রেখো",
+    "forgotPassword": "পাসওয়ার্ড ভুলে গেছেন?",
+    "emailRequired": "ইমেল আবশ্যক",
+    "emailInvalid": "অনুগ্রহ করে একটি বৈধ ইমেল ঠিকানা লিখুন"
+  },
+  "faq": {
+    "products": {
+      "category": "পণ্য",
+      "q1": "হারভিকস কী কী পণ্য সরবরাহ করে?",
+      "a1": "আমরা মিষ্টান্ন, পানীয়, স্ন্যাকস, পাস্তা, বেকারি সামগ্রী এবং হিমায়িত খাদ্য সহ বিভিন্ন বিভাগের নানা ধরনের উৎকৃষ্ট মানের খাদ্যপণ্য সরবরাহ করে থাকি।",
+      "q2": "আমি হারভিকস পণ্য কোথায় কিনতে পারি?",
+      "a2": "আমাদের পণ্য ৪০টিরও বেশি দেশের খুচরা দোকানে পাওয়া যায়। আপনার নিকটবর্তী খুচরা বিক্রেতা খুঁজে পেতে আমাদের স্টোর লোকেটার বা যোগাযোগ পৃষ্ঠা ব্যবহার করুন।",
+      "q3": "আপনারা কি পাইকারি অর্ডারের সুবিধা দেন?",
+      "a3": "হ্যাঁ, আমরা ব্যবসা প্রতিষ্ঠান ও খুচরা বিক্রেতাদের জন্য বাল্ক অর্ডারে ছাড় দিয়ে থাকি। আরও তথ্যের জন্য আমাদের বাল্ক অর্ডার ডিসকাউন্ট পেজটি দেখুন।"
+    },
+    "ordersShipping": {
+      "category": "অর্ডার এবং শিপিং",
+      "q1": "আপনার শিপিংয়ের বিকল্পগুলো কী কী?",
+      "a1": "আমরা স্ট্যান্ডার্ড, এক্সপ্রেস এবং আন্তর্জাতিক শিপিং সহ বিভিন্ন শিপিং বিকল্প অফার করি। $50-এর বেশি অর্ডারে ফ্রি শিপিং পাওয়া যায়।",
+      "q2": "ডেলিভারি হতে কতক্ষণ সময় লাগে?",
+      "a2": "স্থানভেদে ডেলিভারির সময় ভিন্ন হয়। স্ট্যান্ডার্ড ডেলিভারিতে সাধারণত ৫-৭ কর্মদিবস এবং এক্সপ্রেস ডেলিভারিতে ২-৩ কর্মদিবস সময় লাগে।",
+      "q3": "আমি কি আমার অর্ডার ট্র্যাক করতে পারি?",
+      "a3": "হ্যাঁ, আপনার অর্ডার নিশ্চিতকরণ ইমেলে দেওয়া ট্র্যাকিং নম্বরটি ব্যবহার করে আপনি আপনার অর্ডার ট্র্যাক করতে পারেন।"
+    },
+    "accountPayments": {
+      "category": "অ্যাকাউন্ট ও পেমেন্ট",
+      "q1": "আমি কীভাবে একটি অ্যাকাউন্ট তৈরি করব?",
+      "a1": "নতুন অ্যাকাউন্ট নিবন্ধন করার জন্য হেডারে থাকা \"সাইন ইন\"-এ ক্লিক করুন এবং \"অ্যাকাউন্ট তৈরি করুন\" নির্বাচন করুন।",
+      "q2": "আপনারা কোন কোন পেমেন্ট পদ্ধতি গ্রহণ করেন?",
+      "a2": "B2B অর্ডারের জন্য আমরা সব প্রধান ক্রেডিট কার্ড, ডেবিট কার্ড, পেপাল এবং ব্যাংক ট্রান্সফার গ্রহণ করি।",
+      "q3": "আমার পেমেন্টের তথ্য কি সুরক্ষিত?",
+      "a3": "হ্যাঁ, আমরা আপনার পেমেন্টের তথ্য সুরক্ষিত রাখতে শিল্প-মানসম্মত এনক্রিপশন ব্যবহার করি।"
+    },
+    "returnsRefunds": {
+      "category": "ফেরত ও রিফান্ড",
+      "q1": "আপনাদের পণ্য ফেরত নীতি কী?",
+      "a1": "আমরা আসল প্যাকেজিং-সহ অব্যবহৃত পণ্যের জন্য ৩০ দিনের রিটার্ন পলিসি অফার করি। পণ্য ফেরতের অনুমোদনের জন্য অনুগ্রহ করে আমাদের কাস্টমার সার্ভিসে যোগাযোগ করুন।",
+      "q2": "আমি কীভাবে টাকা ফেরতের জন্য অনুরোধ করব?",
+      "a2": "আপনার অর্ডার নম্বর এবং ফেরত দেওয়ার কারণ উল্লেখ করে আমাদের গ্রাহক পরিষেবা দলের সাথে যোগাযোগ করুন। আমরা ৫-৭ কার্যদিবসের মধ্যে আপনার অর্থ ফেরতের ব্যবস্থা করব।"
+    },
+    "contactCta": {
+      "title": "এখনও কোনো প্রশ্ন আছে?",
+      "subtitle": "আমাদের গ্রাহক পরিষেবা দল আপনাকে সাহায্য করার জন্য এখানে আছে।",
+      "button": "আমাদের সাথে যোগাযোগ করুন"
+    }
+  },
+  "careers": {
+    "title": "কর্মজীবন",
+    "pageTitle": "ক্যারিয়ার | হারভিকস",
+    "description": "হারভিকস গ্লোবাল ভেঞ্চারস-এ যোগ দিন — ৪০টিরও বেশি দেশে সুযোগ অন্বেষণ করুন।",
+    "joinUs": "আমাদের সাথে যোগ দিন",
+    "heroTitle": "বিশ্ব বাণিজ্যের ভবিষ্যৎ গড়ুন",
+    "heroDesc": "আমরা ৪০টিরও বেশি দেশে আমাদের কার্যক্রম প্রসারিত করছি। এমন একটি দলে যোগ দিন যারা বিশ্ব বাণিজ্যের জন্য এআই-চালিত অপারেটিং সিস্টেম তৈরি করছে।",
+    "stats": {
+      "openPositions": "খালি পদ",
+      "countries": "দেশগুলি",
+      "industryVerticals": "শিল্প উল্লম্ব",
+      "departmentsHiring": "বিভাগ নিয়োগ"
+    },
+    "openPositionsByDept": "বিভাগ অনুযায়ী শূন্য পদ",
+    "departments": {
+      "sales": {
+        "name": "বিক্রয় ও বিতরণ",
+        "desc": "৪০টিরও বেশি বাজারে রাজস্ব বৃদ্ধি করুন। এলাকা ব্যবস্থাপনা, গুরুত্বপূর্ণ গ্রাহক, পরিবেশক সম্পর্ক।"
+      },
+      "supplyChain": {
+        "name": "সরবরাহ শৃঙ্খল ও লজিস্টিকস",
+        "desc": "কারখানা থেকে পণ্য তাক পর্যন্ত সম্পূর্ণ সরবরাহ শৃঙ্খল। যানবাহন ব্যবস্থাপনা, গুদামজাতকরণ, শেষ ধাপের ডেলিভারি।"
+      },
+      "technology": {
+        "name": "প্রযুক্তি ও এআই",
+        "desc": "হারভিকস ওএস তৈরি করুন — আমাদের এআই-চালিত এন্টারপ্রাইজ প্ল্যাটফর্ম। ফুল-স্ট্যাক, এমএল ইঞ্জিনিয়ারিং, ডেটা সায়েন্স।"
+      },
+      "finance": {
+        "name": "অর্থ ও কোষাগার",
+        "desc": "বহু-মুদ্রা ট্রেজারি, ট্রেড ফাইন্যান্স, এইচপে ডিজিটাল পেমেন্ট, এবং বিভিন্ন অঞ্চল জুড়ে বৈদেশিক মুদ্রা ব্যবস্থাপনা।"
+      },
+      "procurement": {
+        "name": "সংগ্রহ ও উৎসায়ন",
+        "desc": "১৫টিরও বেশি উৎস দেশ থেকে বৈশ্বিক সংগ্রহ। সরবরাহকারী নিরীক্ষা, মান নিয়ন্ত্রণ, সরাসরি কারখানা থেকে পণ্য সংগ্রহের কার্যক্রম।"
+      },
+      "hr": {
+        "name": "মানব সম্পদ",
+        "desc": "বিভিন্ন ভৌগোলিক ও সাংস্কৃতিক প্রেক্ষাপটে প্রতিভা অধিগ্রহণ, প্রশিক্ষণ ও উন্নয়ন এবং কর্মদক্ষতা ব্যবস্থাপনা।"
+      },
+      "legal": {
+        "name": "আইনি ও সম্মতি",
+        "desc": "বাণিজ্যিক সম্মতি, নিষেধাজ্ঞা যাচাই, মেধাস্বত্ব সুরক্ষা, এবং বিভিন্ন এখতিয়ার জুড়ে চুক্তি ব্যবস্থাপনা।"
+      },
+      "marketing": {
+        "name": "মার্কেটিং ও ব্র্যান্ড",
+        "desc": "বহুভাষিক প্রচারাভিযান, ৩৮টি অঞ্চলের বিষয়বস্তু, ডিজিটাল বিপণন, ১০টি ভিন্ন খাতের জন্য ব্র্যান্ড কৌশল।"
+      }
+    },
+    "roles": "ভূমিকা",
+    "whyHarvics": "হারভিকদের কেন",
+    "benefits": {
+      "globalMobility": {
+        "title": "বৈশ্বিক গতিশীলতা",
+        "desc": "দুবাই, লন্ডন, করাচি, লাহোর এবং ৪০টিরও বেশি বাজারে কাজ করুন।"
+      },
+      "growthTrack": {
+        "title": "বৃদ্ধির পথ",
+        "desc": "একটি ক্রমবর্ধমান প্রতিষ্ঠানে দ্রুত কর্মজীবনে উন্নতির সুযোগ।"
+      },
+      "aiCulture": {
+        "title": "এআই-প্রথম সংস্কৃতি",
+        "desc": "অত্যাধুনিক এআই এবং রিয়েল-টাইম ইন্টেলিজেন্স সিস্টেম নিয়ে কাজ করুন"
+      },
+      "competitivePackage": {
+        "title": "প্রতিযোগিতামূলক প্যাকেজ",
+        "desc": "বাজারের সেরা বেতন, আবাসন এবং অন্যান্য সুবিধা"
+      },
+      "learningBudget": {
+        "title": "শেখার বাজেট",
+        "desc": "কোর্স, সম্মেলন এবং সার্টিফিকেশনের জন্য বার্ষিক উন্নয়ন বাজেট"
+      },
+      "flexibleWork": {
+        "title": "নমনীয় কাজ",
+        "desc": "বিশ্বজুড়ে আঞ্চলিক হাব অফিসগুলির সাথে হাইব্রিড ব্যবস্থা"
+      }
+    }
+  },
+  "strategy": {
+    "title": "আমাদের কৌশল",
+    "pageTitle": "কৌশল | হারউইচ",
+    "description": "উদ্ভাবন ও শ্রেষ্ঠত্বের মাধ্যমে একটি টেকসই ভবিষ্যৎ নির্মাণ",
+    "heroSubtitle": "উদ্ভাবন ও শ্রেষ্ঠত্বের মাধ্যমে একটি টেকসই ভবিষ্যৎ নির্মাণ",
+    "pillars": {
+      "globalExpansion": {
+        "title": "বৈশ্বিক সম্প্রসারণ",
+        "desc": "উদীয়মান বাজারগুলিতে আমাদের উপস্থিতি প্রসারিত করার পাশাপাশি প্রতিষ্ঠিত বাজারগুলিতে আমাদের অবস্থানকে শক্তিশালী করা।"
+      },
+      "productInnovation": {
+        "title": "পণ্য উদ্ভাবন",
+        "desc": "পরিবর্তনশীল ভোক্তা পছন্দ পূরণের লক্ষ্যে নতুন পণ্য উদ্ভাবনের জন্য গবেষণা ও উন্নয়নে বিনিয়োগ।"
+      },
+      "sustainability": {
+        "title": "স্থায়িত্ব",
+        "desc": "আমাদের সরবরাহ শৃঙ্খল এবং কার্যক্রম জুড়ে টেকসই অনুশীলনে প্রতিশ্রুতিবদ্ধ।"
+      },
+      "digitalTransformation": {
+        "title": "ডিজিটাল রূপান্তর",
+        "desc": "গ্রাহক অভিজ্ঞতা এবং পরিচালন দক্ষতা বাড়াতে প্রযুক্তির ব্যবহার"
+      }
+    },
+    "vision": {
+      "title": "আমাদের লক্ষ্য",
+      "desc": "গুণমান, উদ্ভাবন এবং স্থায়িত্বের জন্য স্বীকৃত বিশ্বের শীর্ষস্থানীয় প্রিমিয়াম ভোগ্যপণ্য কোম্পানি হওয়া।"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "হারভিকস গ্লোবাল ভেঞ্চারস | প্রিমিয়াম গ্লোবাল ট্রেডিং",
+      "description": "বিশ্বের শীর্ষস্থানীয় একটি ট্রেডিং কোম্পানি, যা ১০টিরও বেশি শিল্পখাতে উৎকৃষ্ট মানের পণ্য সরবরাহ করে। ২০১৯ সাল থেকে ৫০টিরও বেশি দেশে এর কার্যক্রম পরিচালিত হচ্ছে।"
+    },
+    "about": {
+      "title": "আমাদের সম্পর্কে | হারভিকস গ্লোবাল ভেঞ্চারস",
+      "description": "জানুন কীভাবে হারভিকস গ্লোবাল ভেঞ্চারস ৪০টিরও বেশি দেশ এবং ১০টি শিল্পখাতে বিশ্ব বাণিজ্যের এক অগ্রণী শক্তিতে পরিণত হয়েছে।"
+    },
+    "contact": {
+      "title": "আমাদের সাথে যোগাযোগ করুন | হারভিকস গ্লোবাল ভেঞ্চারস",
+      "description": "মধ্যপ্রাচ্য, দক্ষিণ এশিয়া, ইউরোপ, আফ্রিকা এবং আমেরিকাজুড়ে অবস্থিত হারভিকস-এর বিশ্বব্যাপী অফিসগুলোর সাথে যোগাযোগ করুন।"
+    },
+    "products": {
+      "title": "পণ্যসমূহ | হারভিকস গ্লোবাল ভেঞ্চারস",
+      "description": "এফএমসিজি, টেক্সটাইল, কমোডিটি এবং ইন্ডাস্ট্রিয়াল সলিউশন জুড়ে হারভিক্সের প্রিমিয়াম পণ্যের সম্ভার অন্বেষণ করুন।"
+    },
+    "careers": {
+      "title": "ক্যারিয়ার | হারভিকস গ্লোবাল ভেঞ্চারস",
+      "description": "হারভিকস গ্লোবাল ভেঞ্চারস-এ যোগ দিন — এফএমসিজি, টেক্সটাইল, লজিস্টিকস এবং প্রযুক্তি খাতে ৪০টিরও বেশি দেশে সুযোগ অন্বেষণ করুন।"
+    },
+    "media": {
+      "title": "মিডিয়া সেন্টার | হারভিকস গ্লোবাল ভেঞ্চারস",
+      "description": "হারভিকস মিডিয়া সেন্টার — প্রেস রিলিজ, সর্বশেষ সংবাদ, ব্র্যান্ড অ্যাসেট এবং মিডিয়া যোগাযোগ।"
+    },
+    "strategy": {
+      "title": "আমাদের কৌশল | হারভিকস গ্লোবাল ভেঞ্চারস",
+      "description": "বৈশ্বিক সম্প্রসারণ, উদ্ভাবন, স্থায়িত্ব এবং ডিজিটাল রূপান্তরের জন্য হারভিকসের কৌশলগত রূপকল্প।"
+    },
+    "csr": {
+      "title": "কর্পোরেট সামাজিক দায়বদ্ধতা | হারভিকস",
+      "description": "হারভিক্সের সিএসআর উদ্যোগসমূহ — পরিবেশগত দায়িত্ববোধ, সামাজিক কর্মসূচি এবং নৈতিক ব্যবসায়িক অনুশীলন।"
+    },
+    "faq": {
+      "title": "প্রায়শই জিজ্ঞাসিত প্রশ্ন | হারভিকস গ্লোবাল ভেঞ্চারস",
+      "description": "হারভিক্সের পণ্য, পরিষেবা, অর্ডার এবং বিশ্বব্যাপী কার্যক্রম সম্পর্কে প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী।"
+    },
+    "locations": {
+      "title": "বিশ্বব্যাপী অবস্থান | হারভিকস",
+      "description": "মধ্যপ্রাচ্য, দক্ষিণ এশিয়া, ইউরোপ, আফ্রিকা এবং আমেরিকাজুড়ে হারভিকসের কার্যালয় ও কার্যক্রম রয়েছে।"
+    },
+    "leadership": {
+      "title": "নেতৃত্ব দল | হারভিকস",
+      "description": "৪০টিরও বেশি বাজার এবং ১০টি শিল্প খাতে হারভিকস গ্লোবাল ভেঞ্চারস-কে পরিচালনাকারী নেতৃত্ব দলের সাথে পরিচিত হোন।"
+    },
+    "help": {
+      "title": "সহায়তা কেন্দ্র | হারভিকস",
+      "description": "অর্ডার, অ্যাকাউন্ট, শিপিং এবং হারভিক্স পরিষেবা সংক্রান্ত বিষয়ে সাহায্য নিন।"
+    },
+    "compliance": {
+      "title": "সম্মতি ও নৈতিকতা | হারভিকস",
+      "description": "নিয়ন্ত্রক বিধি-বিধানের প্রতিপালন, নৈতিক ব্যবসায়িক চর্চা এবং বৈশ্বিক মানের প্রতি হারভিকের অঙ্গীকার।"
+    },
+    "history": {
+      "title": "আমাদের ইতিহাস | হারভিকরা",
+      "description": "২০১৯ সালের দুবাইয়ের একটি স্টার্টআপ থেকে ৪০টিরও বেশি দেশে বিস্তৃত এক বৈশ্বিক প্রতিষ্ঠানে পরিণত হওয়ার গল্প — হারভিকসের কাহিনী।"
+    },
+    "newsletter": {
+      "title": "নিউজলেটার | হারভিকস",
+      "description": "শিল্প খাতের তথ্য ও নতুন পণ্যের খবরাখবর পেতে হারভিকস নিউজলেটারে সাবস্ক্রাইব করুন।"
+    },
+    "login": {
+      "title": "সাইন ইন | হারভিকস",
+      "description": "অর্ডার পরিচালনা করতে এবং প্ল্যাটফর্মটি ব্যবহার করতে আপনার হারভিকস অ্যাকাউন্টে সাইন ইন করুন।"
+    },
+    "research": {
+      "title": "গবেষণা ও উদ্ভাবন | হারভিকস",
+      "description": "হারভিক্সের গবেষণা উদ্যোগ এবং উদ্ভাবনী কর্মসূচিগুলো আমাদের বৈশ্বিক কৌশলকে চালিত করছে।"
+    },
+    "investorRelations": {
+      "title": "বিনিয়োগকারী সম্পর্ক | হারভিকস",
+      "description": "হারভিকস গ্লোবাল ভেঞ্চারস থেকে বিনিয়োগকারী তথ্য, আর্থিক প্রতিবেদন এবং প্রাতিষ্ঠানিক ঘোষণা।"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "পৃষ্ঠাটি খুঁজে পাওয়া যায়নি",
+      "heading": "৪০৪ — পৃষ্ঠাটি খুঁজে পাওয়া যায়নি",
+      "description": "আপনি যে পৃষ্ঠাটি খুঁজছেন তা বিদ্যমান নেই অথবা স্থানান্তরিত করা হয়েছে।",
+      "goHome": "হোমপেজে যান",
+      "goBack": "ফিরে যান"
+    },
+    "serverError": {
+      "title": "কিছু একটা ভুল হয়েছে",
+      "heading": "কিছু একটা ভুল হয়েছে",
+      "description": "আমরা দুঃখিত, কিন্তু একটি অপ্রত্যাশিত ঘটনা ঘটেছে। অনুগ্রহ করে পৃষ্ঠাটি রিফ্রেশ করার চেষ্টা করুন।",
+      "tryAgain": "আবার চেষ্টা করুন",
+      "reload": "পৃষ্ঠাটি পুনরায় লোড করুন",
+      "contactSupport": "সহায়তার সাথে যোগাযোগ করুন"
+    },
+    "globalError": {
+      "title": "অ্যাপ্লিকেশন ত্রুটি",
+      "heading": "গুরুতর ত্রুটি",
+      "description": "একটি গুরুতর ত্রুটি ঘটেছে। অনুগ্রহ করে পৃষ্ঠাটি পুনরায় লোড করুন।",
+      "reload": "অ্যাপ্লিকেশনটি পুনরায় লোড করুন"
+    }
+  },
+  "about": {
+    "title": "হারভিকস সম্পর্কে",
+    "subtitle": "২০১৯ সাল থেকে উৎকৃষ্ট মানের ভোগ্যপণ্যে শ্রেষ্ঠত্ব",
+    "ourStory": "আমাদের গল্প",
+    "story1": "২০১৯ সালে প্রতিষ্ঠিত হারভিকস একটি দূরদর্শী ধারণা থেকে প্রিমিয়াম ভোগ্যপণ্যের এক বিশ্বব্যাপী শীর্ষস্থানীয় প্রতিষ্ঠানে পরিণত হয়েছে। গুণমানের নিরলস সাধনা এবং উদ্ভাবনের প্রতি অঙ্গীকারই আমাদের এই যাত্রার মূল বৈশিষ্ট্য।",
+    "story2": "আমরা ৪০টিরও বেশি দেশে কার্যক্রম পরিচালনা করি এবং এমন সব পণ্য সরবরাহ করি যা জীবনকে সমৃদ্ধ করে ও শিল্পে নতুন মানদণ্ড স্থাপন করে। আমাদের সাধারণ সূচনা থেকে বিশ্বব্যাপী উপস্থিতি পর্যন্ত, আমাদের মূল্যবোধ অপরিবর্তিত রয়েছে।",
+    "est2018": "প্রতিষ্ঠিত ২০১৯",
+    "countries40": "৪০টিরও বেশি দেশ",
+    "productLines6": "৬টি পণ্য লাইন"
+  },
+  "csr": {
+    "hero": {
+      "title": "কর্পোরেট সামাজিক দায়বদ্ধতা",
+      "description": "হারভিক্সে, আমরা বিশ্বে একটি ইতিবাচক প্রভাব ফেলতে প্রতিশ্রুতিবদ্ধ। আমাদের সিএসআর উদ্যোগগুলো টেকসই উন্নয়ন, সামাজিক ক্ষমতায়ন এবং নৈতিক ব্যবসায়িক অনুশীলনের উপর আলোকপাত করে।",
+      "stats": {
+        "years": "প্রভাবের বছর",
+        "countries": "পৌঁছানো দেশসমূহ",
+        "lives": "জীবন স্পর্শ করেছে"
+      }
+    },
+    "initiatives": {
+      "title": "আমাদের প্রধান উদ্যোগসমূহ",
+      "description": "টেকসই পরিবর্তন আনতে এবং সকল অংশীজনের জন্য যৌথ মূল্য তৈরি করতে আমরা চারটি প্রধান স্তম্ভের ওপর মনোযোগ দিই।"
+    },
+    "sustainability": {
+      "title": "স্থায়িত্ব",
+      "description": "নবায়নযোগ্য শক্তি ও বর্জ্য হ্রাসের মাধ্যমে পরিবেশের উপর আমাদের প্রভাব কমানো।",
+      "stats": {
+        "renewable": "নবায়নযোগ্য শক্তি",
+        "waste": "বর্জ্য অন্যত্র সরানো হয়েছে",
+        "carbon": "কার্বন হ্রাস"
+      }
+    },
+    "community": {
+      "title": "সম্প্রদায় সমর্থন",
+      "description": "শিক্ষা, স্বাস্থ্যসেবা ও অর্থনৈতিক উন্নয়নের মাধ্যমে স্থানীয় সম্প্রদায়কে ক্ষমতায়ন করা।",
+      "stats": {
+        "families": "পরিবার সমর্থিত",
+        "programs": "সক্রিয় প্রোগ্রাম",
+        "volunteers": "স্বেচ্ছাসেবক"
+      }
+    },
+    "education": {
+      "title": "শিক্ষা",
+      "description": "সুবিধাবঞ্চিত শিক্ষার্থীদের জন্য মানসম্মত শিক্ষা ও বৃত্তির সুযোগ প্রদান।",
+      "stats": {
+        "scholarships": "বৃত্তি",
+        "schools": "অংশীদার স্কুল",
+        "students": "শিক্ষার্থীরা প্রভাবিত"
+      }
+    },
+    "health": {
+      "title": "স্বাস্থ্য ও সুস্থতা",
+      "description": "সুবিধাবঞ্চিত অঞ্চলে স্বাস্থ্যসেবা ও পুষ্টির সুযোগ উন্নত করা।",
+      "stats": {
+        "campaigns": "স্বাস্থ্য প্রচারণা",
+        "people": "সেবাপ্রাপ্ত মানুষ",
+        "clinics": "মোবাইল ক্লিনিক"
+      }
+    },
+    "achievements": {
+      "2022": {
+        "title": "সেরা সিএসআর উদ্যোগ",
+        "description": "সামাজিক দায়বদ্ধতার প্রতি আমাদের উদ্ভাবনী পদ্ধতির জন্য সম্মানিত।"
+      },
+      "2023": {
+        "title": "কমিউনিটি চ্যাম্পিয়ন",
+        "description": "আমাদের ব্যাপক জনসম্পৃক্ততামূলক কর্মসূচির জন্য পুরস্কৃত।"
+      },
+      "2024": {
+        "title": "গ্লোবাল সাসটেইনেবিলিটি অ্যাওয়ার্ড",
+        "description": "কার্বন নিরপেক্ষতার প্রতি আমাদের অঙ্গীকারের জন্য স্বীকৃত।"
+      },
+      "title": "আমাদের প্রভাব",
+      "description": "একটি উন্নততর বিশ্ব গড়ার পথে আমাদের মাইলফলকগুলোকে স্বীকৃতি প্রদান।"
+    },
+    "cta": {
+      "title": "পরিবর্তন আনতে আমাদের সাথে যোগ দিন",
+      "description": "আমাদের সাথে অংশীদার হোন অথবা আমরা কীভাবে একটি টেকসই ভবিষ্যৎ গড়ে তুলছি সে সম্পর্কে আরও জানুন।",
+      "contact": "সিএসআর টিমের সাথে যোগাযোগ করুন",
+      "learnMore": "আরও জানুন"
+    }
+  },
+  "harvicsHouse": {
+    "title": "হারভিকস হাউস",
+    "subtitle": "শ্রেষ্ঠত্ব ও ঐতিহ্যের উত্তরাধিকার",
+    "aboutTitle": "হারভিকস হাউসে আপনাকে স্বাগতম",
+    "description": "হারভিকস হাউস গুণমান ও ঐতিহ্যের প্রতি আমাদের অঙ্গীকারের সর্বোচ্চ নিদর্শন। এখানে আমরা আমাদের সেরা মানের পণ্যগুলোর সমাহার ঘটাই, যা এমন এক পরিবেশে প্রদর্শিত হয় যা আমাদের রুচিশীলতা, ঐতিহ্য এবং উদ্ভাবনের মূল্যবোধকে প্রতিফলিত করে।",
+    "description2": "আমাদের এক্সক্লুসিভ কালেকশনগুলো ঘুরে দেখুন এবং হারভিকস নামের প্রতিটি পণ্যের পেছনের গল্প জানুন।"
   }
 }

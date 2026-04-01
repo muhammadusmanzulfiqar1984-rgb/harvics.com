@@ -95,7 +95,7 @@ export default function KidsPage({ params }: { params: { locale: string } }) {
   }, [activeCategory, sortBy, searchQuery])
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* ─── Hero Banner ─── */}
       <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] opacity-5" style={{ background: 'radial-gradient(circle, #C3A35E 0%, transparent 70%)' }} />
@@ -151,7 +151,7 @@ export default function KidsPage({ params }: { params: { locale: string } }) {
                 className={`px-5 py-2.5 text-sm font-medium border transition-colors ${
                   activeCategory === cat.key
                     ? 'bg-[#6B1F2B] text-white border-[#6B1F2B]'
-                    : 'bg-[#F5F1E8] border-[#C3A35E]/20 text-[#6B1F2B] hover:bg-[#6B1F2B] hover:text-white hover:border-[#6B1F2B]'
+                    : 'bg-white border-[#C3A35E]/20 text-[#6B1F2B] hover:bg-[#6B1F2B] hover:text-white hover:border-[#6B1F2B]'
                 }`}
                 style={{ borderRadius: 0 }}
               >
@@ -174,7 +174,7 @@ export default function KidsPage({ params }: { params: { locale: string } }) {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search kids products..."
-                className="w-full px-3 py-2 text-sm text-[#6B1F2B] bg-[#F5F1E8] border border-[#C3A35E]/20 focus:border-[#C3A35E] focus:outline-none placeholder:text-[#6B1F2B]/30"
+                className="w-full px-3 py-2 text-sm text-[#6B1F2B] bg-white border border-[#C3A35E]/20 focus:border-[#C3A35E] focus:outline-none placeholder:text-[#6B1F2B]/30"
                 style={{ borderRadius: 0 }}
               />
             </div>
@@ -284,7 +284,7 @@ export default function KidsPage({ params }: { params: { locale: string } }) {
                 )}
 
                 {/* Image */}
-                <div className="h-[280px] bg-[#F5F1E8] flex items-center justify-center border-b border-[#C3A35E]/20 overflow-hidden">
+                <div className="h-[280px] bg-white flex items-center justify-center border-b border-[#C3A35E]/20 overflow-hidden">
                   <img
                     src={getProductImage(product.keywords)}
                     alt={product.name}

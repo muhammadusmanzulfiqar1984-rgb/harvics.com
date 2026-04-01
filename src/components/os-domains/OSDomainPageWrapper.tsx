@@ -9,6 +9,7 @@ import BackButton from '@/components/shared/BackButton'
 import TierBreadcrumb from '@/components/shared/TierBreadcrumb'
 import GlobalFilters, { FilterState } from '@/components/shared/GlobalFilters'
 import { getTierColors } from '@/config/tier-colors'
+import AICopilotWidget from '@/features/ai/AICopilotWidget'
 
 interface OSDomainPageWrapperProps {
   children: React.ReactNode
@@ -97,12 +98,12 @@ export default function OSDomainPageWrapper({
                   >
                     Tier 1: OS Domain
                   </span>
-                  <h1 className="text-3xl font-bold text-[#6B1F2B] font-serif">{title}</h1>
+                  <h1 className="text-3xl font-semibold text-[#1D1D1F] ">{title}</h1>
                 </div>
               )
             })()}
             {description && (
-              <p className="text-[#6B1F2B]/70 text-sm max-w-4xl">{description}</p>
+              <p className="text-[#8E8E93] text-sm max-w-4xl">{description}</p>
             )}
           </div>
 
@@ -118,11 +119,14 @@ export default function OSDomainPageWrapper({
           </div>
 
           {/* Page Content */}
-          <div className="bg-white rounded-xl shadow-sm border border-[#C3A35E]/30 p-6">
+          <div className="bg-white rounded-xl shadow-sm border border-[#E5E5EA]/30 p-6">
             {children}
           </div>
         </main>
       </div>
+
+      {/* AI Copilot Widget - Floating bottom-right */}
+      <AICopilotWidget />
     </div>
   )
 }

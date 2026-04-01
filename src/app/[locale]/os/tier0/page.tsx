@@ -56,7 +56,7 @@ export default async function Tier0DetailPage() {
       id: 'operational',
       label: 'Operational Data Ocean',
       description: 'Real-time transactional data from all OS domains.',
-      href: '/os/data-ocean/operational',
+      href: '/os/tier0',
       icon: '📊',
       meta: 'Live data streams'
     },
@@ -64,7 +64,7 @@ export default async function Tier0DetailPage() {
       id: 'analytical',
       label: 'Analytical Data Ocean',
       description: 'Aggregated data warehouse for reporting and analytics.',
-      href: '/os/data-ocean/analytical',
+      href: '/os/tier0',
       icon: '📈',
       meta: 'Historical analytics'
     },
@@ -72,7 +72,7 @@ export default async function Tier0DetailPage() {
       id: 'vector',
       label: 'Vector Data Ocean',
       description: 'AI embeddings and semantic search data for copilot intelligence.',
-      href: '/os/data-ocean/vector',
+      href: '/os/tier0',
       icon: '🧠',
       meta: 'AI context storage'
     }

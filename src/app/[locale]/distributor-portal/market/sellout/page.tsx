@@ -34,7 +34,7 @@ export default function SelloutUpload() {
               type="month"
               value={selectedMonth}
               onChange={(e) => setSelectedMonth(e.target.value)}
-              className="px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+              className="px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
             />
           </div>
 
@@ -44,7 +44,7 @@ export default function SelloutUpload() {
               type="file"
               accept=".csv,.xlsx,.xls"
               onChange={handleFileUpload}
-              className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
             />
             <p className="text-xs text-[#C3A35E]/90 mt-2">
               <a href="#" className="text-white hover:underline">Download template</a> for correct format

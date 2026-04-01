@@ -92,15 +92,15 @@ export default function UsersAndAccess() {
             <form className="space-y-4">
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Name *</label>
-                <input type="text" className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required />
+                <input type="text" className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" required />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Email *</label>
-                <input type="email" className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required />
+                <input type="email" className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" required />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Role *</label>
-                <select className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required>
+                <select className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" required>
                   <option value="">Select Role</option>
                   <option value="Admin">Admin</option>
                   <option value="Sales">Sales</option>

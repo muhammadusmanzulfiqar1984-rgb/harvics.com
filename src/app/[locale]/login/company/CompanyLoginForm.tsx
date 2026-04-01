@@ -109,11 +109,11 @@ export default function CompanyLoginForm() {
           <label className="flex items-center">
             <input
               type="checkbox"
-              className="w-4 h-4 text-white bg-white border-[#C3A35E]/30 rounded focus:ring-black focus:ring-2"
+              className="w-4 h-4 text-[#6B1F2B] bg-white border-[#C3A35E]/30 rounded focus:ring-[#6B1F2B] focus:ring-2"
             />
             <span className="ml-2 text-sm text-black">Remember me</span>
           </label>
-          <a href="#" className="text-sm text-white hover:text-[#C3A35E]/90 transition-colors duration-300">
+          <a href="#" className="text-sm text-[#6B1F2B] hover:text-[#C3A35E] transition-colors duration-300">
             Forgot password?
           </a>
         </div>
@@ -121,7 +121,7 @@ export default function CompanyLoginForm() {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full bg-white hover:bg-white text-white font-bold py-3 px-4 transition-all duration-300 shadow-xl hover:shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 border-2 border-[#C3A35E]/30 hover:border-white"
+          className="w-full bg-[#6B1F2B] hover:bg-[#50000b] text-white font-bold py-3 px-4 transition-all duration-300 shadow-xl hover:shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 border-2 border-[#6B1F2B] hover:border-[#50000b]"
         >
           {isLoading ? (
             <>
@@ -140,7 +140,7 @@ export default function CompanyLoginForm() {
       <div className="mt-6 text-center">
         <p className="text-sm text-black">
           Don't have an account?{' '}
-          <a href="#" className="text-white hover:text-[#C3A35E]/90 font-medium transition-colors duration-300">
+          <a href="#" className="text-[#6B1F2B] hover:text-[#C3A35E] font-medium transition-colors duration-300">
             {tContact('title')}
           </a>
         </p>

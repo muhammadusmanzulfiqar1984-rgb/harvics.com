@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
+import { getTranslations } from 'next-intl/server'
 
-export const metadata: Metadata = {
-  title: 'Media Center | Harvics',
-  description: 'Harvics media center — press releases, news, brand assets, and media contacts.',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'media')
 }
 
 interface MediaPageProps {
@@ -12,56 +14,57 @@ interface MediaPageProps {
 
 export default async function MediaPage({ params }: MediaPageProps) {
   const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'media' })
 
   const sections = [
     {
       icon: '📰',
-      title: 'News & Press Releases',
-      desc: 'Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.',
+      title: t('sections.news.title'),
+      desc: t('sections.news.desc'),
       href: `/${locale}/media/news`,
-      cta: 'Read Latest News',
+      cta: t('sections.news.cta'),
     },
     {
       icon: '📸',
-      title: 'Image Gallery',
-      desc: 'High-resolution brand assets, product photography, facility images, and event coverage for media use.',
+      title: t('sections.gallery.title'),
+      desc: t('sections.gallery.desc'),
       href: `/${locale}/media/images`,
-      cta: 'Browse Gallery',
+      cta: t('sections.gallery.cta'),
     },
     {
       icon: '📞',
-      title: 'Media Contacts',
-      desc: 'Reach our communications team for press inquiries, interview requests, and partnership announcements.',
+      title: t('sections.contacts.title'),
+      desc: t('sections.contacts.desc'),
       href: `/${locale}/media/contacts`,
-      cta: 'Contact Press Team',
+      cta: t('sections.contacts.cta'),
     },
   ]
 
   const highlights = [
-    { num: '40+', label: 'Markets Covered' },
-    { num: '10', label: 'Industry Verticals' },
-    { num: '2019', label: 'Founded in Dubai' },
-    { num: '38', label: 'Languages Supported' },
+    { num: '40+', label: t('highlights.marketsCovered') },
+    { num: '10', label: t('highlights.industryVerticals') },
+    { num: '2019', label: t('highlights.foundedIn') },
+    { num: '38', label: t('highlights.languagesSupported') },
   ]
 
   const recentNews = [
-    { date: 'Dec 2025', title: 'Harvics Expands FMCG Operations to 5 New Southeast Asian Markets' },
-    { date: 'Nov 2025', title: 'New AI-Powered Supply Chain Platform Launched for Global Distribution' },
-    { date: 'Oct 2025', title: 'Harvics Achieves Carbon-Neutral Milestone Across All Facilities' },
-    { date: 'Sep 2025', title: 'Strategic Partnership with Leading Textile Manufacturers in South Asia' },
+    { date: 'Dec 2025', title: t('headlines.expansion') },
+    { date: 'Nov 2025', title: t('headlines.aiPlatform') },
+    { date: 'Oct 2025', title: t('headlines.carbonNeutral') },
+    { date: 'Sep 2025', title: t('headlines.partnership') },
   ]
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
       <section className="bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40">
         <div className="max-w-[1200px] mx-auto text-center">
-          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">Corporate</div>
+          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">{t('corporate')}</div>
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
-            Media Center
+            {t('title')}
           </h1>
           <p className="text-lg text-white/60 max-w-[600px] mx-auto leading-relaxed">
-            Press resources, brand assets, and the latest news from Harvics Global Ventures.
+            {t('description')}
           </p>
         </div>
       </section>
@@ -101,13 +104,13 @@ export default async function MediaPage({ params }: MediaPageProps) {
       {/* Recent Headlines */}
       <section className="bg-white border-t border-b border-[#C3A35E]/20">
         <div className="max-w-[1200px] mx-auto px-4 py-16">
-          <h2 className="text-2xl font-semibold text-[#6B1F2B] mb-8 text-center">Recent Headlines</h2>
+          <h2 className="text-2xl font-semibold text-[#6B1F2B] mb-8 text-center">{t('recentHeadlines')}</h2>
           <div className="space-y-4 max-w-[800px] mx-auto">
             {recentNews.map((n) => (
               <Link
                 key={n.title}
                 href={`/${locale}/media/news`}
-                className="flex items-center gap-4 p-5 border border-[#C3A35E]/15 bg-[#F5F1E8] hover:border-[#C3A35E] transition-colors group"
+                className="flex items-center gap-4 p-5 border border-[#C3A35E]/15 bg-white hover:border-[#C3A35E] transition-colors group"
                 style={{ borderRadius: 0 }}
               >
                 <span className="text-xs text-[#C3A35E] font-bold uppercase tracking-wider whitespace-nowrap min-w-[80px]">{n.date}</span>
@@ -119,20 +122,14 @@ export default async function MediaPage({ params }: MediaPageProps) {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#6B1F2B] border-t border-[#C3A35E]/30">
-        <div className="max-w-[1200px] mx-auto px-4 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div>
-            <h3 className="text-xl font-semibold text-white mb-2">Media Inquiries</h3>
-            <p className="text-white/50 text-sm">For press inquiries, interviews, or brand asset requests, contact our communications team.</p>
-          </div>
-          <Link
-            href={`/${locale}/media/contacts`}
-            className="px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors"
-            style={{ borderRadius: 0 }}
-          >
-            Contact Press Team
-          </Link>
-        </div>
+      <section className="max-w-[1200px] mx-auto px-4 py-16 text-center">
+        <Link
+          href={`/${locale}/contact`}
+          className="inline-block px-10 py-4 bg-[#6B1F2B] text-white text-sm font-bold hover:bg-[#5a1a24] transition-colors"
+          style={{ borderRadius: 0 }}
+        >
+          {t('sections.contacts.cta')}
+        </Link>
       </section>
     </main>
   )

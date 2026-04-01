@@ -240,30 +240,44 @@ function LanguageSwitcherInner() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`group flex items-center ${isRTLMode ? 'space-x-reverse space-x-2' : 'space-x-2'} px-3 py-2 rounded-md bg-gold border-2 border-maroon-deep hover:bg-maroon-deep hover:text-gold text-maroon-deep transition-all duration-200 font-bold shadow-md hover:shadow-lg`}
-        aria-label={t('selectLanguage') || 'Select Language'}
+        className={`flex items-center ${isRTLMode ? 'space-x-reverse space-x-2' : 'space-x-2'} transition-opacity duration-200 hover:opacity-70`}
+        style={{ 
+          color: '#C3A35E', 
+          fontSize: '11px', 
+          fontWeight: 600, 
+          letterSpacing: '0.05em', 
+          textTransform: 'uppercase',
+          background: 'none',
+          border: 'none',
+          cursor: 'pointer'
+        }}
+        aria-label={t('selectLanguage')}
         aria-expanded={isOpen}
       >
-        <span className="text-lg leading-none pt-0.5">{currentLanguage?.flag}</span>
-        <span className="hidden sm:inline-block font-ui-wide text-xs uppercase tracking-wider">{currentLanguage?.name}</span>
+        <span className="hidden sm:inline-block">{currentLanguage?.name}</span>
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
-          className={`w-3.5 h-3.5 flex-shrink-0 transition-transform duration-200 text-maroon-deep group-hover:text-gold ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-3 h-3 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
           fill="none" 
           viewBox="0 0 24 24" 
           stroke="currentColor"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
 
       {isOpen && (
         <div 
-          className={`absolute ${isRTLMode ? 'left-0' : 'right-0'} mt-2 w-48 bg-white border-2 border-maroon-deep rounded-md shadow-lg z-50 overflow-hidden transition-all duration-200 ease-out max-h-[400px] flex flex-col ${
+          className={`absolute ${isRTLMode ? 'left-0' : 'right-0'} mt-2 w-48 overflow-hidden transition-all duration-200 ease-out max-h-[400px] flex flex-col z-50 ${
           isOpen 
             ? 'opacity-100 translate-y-0 pointer-events-auto' 
             : 'opacity-0 -translate-y-1 pointer-events-none'
         }`}
+          style={{ 
+            background: '#FFFFFF', 
+            border: '1px solid rgba(0,0,0,0.1)',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+          }}
       >
         {/* Primary Languages - Always visible (like Zara) */}
         <div className="overflow-y-auto flex-1">
@@ -278,12 +292,28 @@ function LanguageSwitcherInner() {
                 e.stopPropagation()
                 switchLanguage(lang.code)
               }}
-              className={`w-full flex items-center ${isRTLMode ? 'space-x-reverse space-x-3' : 'space-x-3'} px-4 py-2.5 ${isRTLMode ? 'text-right' : 'text-left'} hover:bg-maroon-deep/5 transition-colors duration-150 ${
-                locale === lang.code ? 'bg-gold text-maroon-deep font-bold' : 'text-maroon-deep'
+              className={`w-full flex items-center ${isRTLMode ? 'space-x-reverse space-x-3' : 'space-x-3'} px-4 py-2.5 ${isRTLMode ? 'text-right' : 'text-left'} transition-all duration-150 ${
+                locale === lang.code ? 'font-semibold' : ''
               }`}
+              style={{
+                background: locale === lang.code ? 'rgba(0,0,0,0.05)' : 'transparent',
+                color: '#1d1d1f',
+                fontSize: '14px',
+                border: 'none',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                if (locale !== lang.code) {
+                  e.currentTarget.style.background = 'rgba(0,0,0,0.03)'
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (locale !== lang.code) {
+                  e.currentTarget.style.background = 'transparent'
+                }
+              }}
             >
-              <span className="text-xl">{lang.flag}</span>
-              <span className="flex-1 text-sm font-ui tracking-wide">{lang.name}</span>
+              <span className="flex-1">{lang.name}</span>
               {locale === lang.code && (
                 <svg className={`w-4 h-4 ${isRTLMode ? 'mr-auto' : 'ml-auto'} text-maroon-deep flex-shrink-0`} fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />

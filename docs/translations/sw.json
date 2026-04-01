@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "sw",
+    "language": "Swahili",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Swahili. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Swahili",
+      "translation": "Karibu"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Swahili",
+      "translation": "Harwich"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Swahili",
+      "translation": "Ubora katika Bidhaa za Watumiaji Bora Tangu 2019"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Swahili",
+      "translation": "Kampuni inayoongoza duniani ya bidhaa za walaji inayotoa bidhaa za chakula za hali ya juu katika kategoria mbalimbali zenye viwango vya ubora wa kimataifa."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Swahili",
+      "translation": "Gundua Bidhaa"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Swahili",
+      "translation": "Wasiliana Nasi"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Swahili",
+      "translation": "Jifunze Zaidi"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Swahili",
+      "translation": "Ubora katika Bidhaa za Watumiaji Bora Tangu"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Swahili",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Swahili",
+      "translation": "London • Milan • New York"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Swahili",
+      "translation": "Duka la mikate"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Swahili",
+      "translation": "Vinywaji"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Swahili",
+      "translation": "Kitoweo cha keki"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Swahili",
+      "translation": "Upishi"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Swahili",
+      "translation": "Vyakula Vilivyogandishwa"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Swahili",
+      "translation": "Pasta"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Swahili",
+      "translation": "Vitafunio"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Swahili",
+      "translation": "Ripoti ya ESG 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Swahili",
+      "translation": "London • Milan • New York"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Swahili",
+      "translation": "Nyumbani"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Swahili",
+      "translation": "Kuhusu"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Swahili",
+      "translation": "Kuhusu Sisi"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Swahili",
+      "translation": "Hadithi ya Chapa"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa Zetu"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Swahili",
+      "translation": "Tazama Bidhaa Zote"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Swahili",
+      "translation": "CSR"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Swahili",
+      "translation": "Mahusiano ya Wawekezaji"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Swahili",
+      "translation": "Wawekezaji"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Swahili",
+      "translation": "Vyombo vya habari"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Swahili",
+      "translation": "Wasiliana Nasi"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Swahili",
+      "translation": "Nyumba ya Harvics"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Swahili",
+      "translation": "Nchi"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Swahili",
+      "translation": "Milango"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Swahili",
+      "translation": "Ingia"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Swahili",
+      "translation": "Orodha ya matamanio"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Swahili",
+      "translation": "Kikapu cha Ununuzi"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Swahili",
+      "translation": "Msaada"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Swahili",
+      "translation": "Tafuta Duka"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Swahili",
+      "translation": "Pesa"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Swahili",
+      "translation": "Mauzo"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Swahili",
+      "translation": "Ofa"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Swahili",
+      "translation": "Hali nyeusi"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Swahili",
+      "translation": "Kadi ya Mkopo"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Swahili",
+      "translation": "Kadi ya Mkopo ya Zawadi za M&S"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Swahili",
+      "translation": "Zawadi za Klabu"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Swahili",
+      "translation": "Kadi Zetu za Mkopo"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Swahili",
+      "translation": "Bima"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Swahili",
+      "translation": "Bima ya Nyumba"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Swahili",
+      "translation": "Bima ya Usafiri"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Swahili",
+      "translation": "Huduma za Usafiri"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Swahili",
+      "translation": "Pesa za Kusafiri"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Swahili",
+      "translation": "Viwango vya Kubadilishana"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Swahili",
+      "translation": "Huduma za Ziada"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Swahili",
+      "translation": "Akiba na Uwekezaji"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Swahili",
+      "translation": "Mikopo ya Kibinafsi"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Swahili",
+      "translation": "Usaidizi wa Kifedha"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Swahili",
+      "translation": "Mauzo ya Sasa"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Swahili",
+      "translation": "Kibali"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Swahili",
+      "translation": "Mauzo ya Msimu"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Swahili",
+      "translation": "Ofa Maalum"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Swahili",
+      "translation": "Matangazo"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Swahili",
+      "translation": "Punguzo la Agizo la Jumla"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa Zetu"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Swahili",
+      "translation": "Tazama Bidhaa Zote"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Swahili",
+      "translation": "Aina Zetu za Bidhaa"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Swahili",
+      "translation": "Gundua aina zetu bora za bidhaa zilizotengenezwa kwa uangalifu na ubora."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Swahili",
+      "translation": "Ngazi ya 1: Aina"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Swahili",
+      "translation": "Ngazi ya 2: Moduli"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Swahili",
+      "translation": "Ngazi ya 3: Skrini za KPI"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Swahili",
+      "translation": "Daraja la 4: Vitendo"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Swahili",
+      "translation": "Weka Urambazaji upya"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Swahili",
+      "translation": "Hakuna kategoria ndogo zinazopatikana kwa kategoria hii."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Swahili",
+      "translation": "Kategoria ndogo"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Swahili",
+      "translation": "Duka la mikate"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa na keki zilizookwa hivi karibuni."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Swahili",
+      "translation": "Vinywaji"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Swahili",
+      "translation": "Vinywaji vya kuburudisha kwa kila tukio."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Swahili",
+      "translation": "Kiwanda cha keki"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Swahili",
+      "translation": "Vitamu na vitamu vitamu."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Swahili",
+      "translation": "Upishi"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Swahili",
+      "translation": "Viungo muhimu kwa jikoni yako."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Swahili",
+      "translation": "Vyakula Vilivyogandishwa"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Swahili",
+      "translation": "Milo iliyogandishwa kwa urahisi na ladha."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Swahili",
+      "translation": "Pasta"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Swahili",
+      "translation": "Aina halisi za pasta."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Swahili",
+      "translation": "Vitafunio"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Swahili",
+      "translation": "Vitafunio vitamu kwa wakati wowote wa siku."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Swahili",
+      "translation": "Kuhusu Harvics"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Swahili",
+      "translation": "Ubora katika Bidhaa za Watumiaji Bora Tangu 2019"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Swahili",
+      "translation": "Hadithi Yetu"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Swahili",
+      "translation": "Iliyoanzishwa mwaka wa 2019, Harvics imekua kutoka wazo lenye maono hadi kuwa kiongozi wa kimataifa katika bidhaa za watumiaji wa hali ya juu. Safari yetu inaelezewa na harakati zisizokoma za ubora na kujitolea kwa uvumbuzi."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Swahili",
+      "translation": "Tunafanya kazi katika nchi zaidi ya 40, tukitoa bidhaa zinazoboresha maisha na kuweka viwango vipya katika tasnia. Kuanzia mwanzo wetu mnyenyekevu hadi uwepo wetu duniani, maadili yetu hayajabadilika."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Swahili",
+      "translation": "Inatarajiwa 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Swahili",
+      "translation": "Nchi 40+"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Swahili",
+      "translation": "Mistari 6 ya Bidhaa"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Swahili",
+      "translation": "Uwajibikaji wa Kijamii wa Kampuni"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Swahili",
+      "translation": "Katika Harvics, tumejitolea kuleta athari chanya kwa ulimwengu. Mipango yetu ya CSR inazingatia uendelevu, uwezeshaji wa jamii, na desturi za kibiashara zenye maadili."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Swahili",
+      "translation": "Miaka ya Athari"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Swahili",
+      "translation": "Nchi Zilizofikiwa"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Swahili",
+      "translation": "Maisha Yaliyoguswa"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Swahili",
+      "translation": "Mipango Yetu Muhimu"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Swahili",
+      "translation": "Tunazingatia nguzo kuu nne ili kuendesha mabadiliko endelevu na kuunda thamani ya pamoja kwa wadau wote."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Swahili",
+      "translation": "Uendelevu"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Swahili",
+      "translation": "Kupunguza athari zetu za kimazingira kupitia nishati mbadala na kupunguza taka."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Swahili",
+      "translation": "Nishati Mbadala"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Swahili",
+      "translation": "Taka Zilizoelekezwa Mbali"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Swahili",
+      "translation": "Kupunguza Kaboni"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Swahili",
+      "translation": "Usaidizi wa Jamii"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Swahili",
+      "translation": "Kuwezesha jamii za wenyeji kupitia elimu, huduma za afya, na maendeleo ya kiuchumi."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Swahili",
+      "translation": "Familia Zinazoungwa Mkono"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Swahili",
+      "translation": "Programu Zinazotumika"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Swahili",
+      "translation": "Wajitolea"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Swahili",
+      "translation": "Elimu"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Swahili",
+      "translation": "Kutoa fursa ya kupata elimu bora na ufadhili wa masomo kwa wanafunzi wasiojiweza."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Swahili",
+      "translation": "Udhamini"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Swahili",
+      "translation": "Shule za Washirika"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Swahili",
+      "translation": "Wanafunzi Walioathiriwa"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Swahili",
+      "translation": "Afya na Ustawi"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Swahili",
+      "translation": "Kuboresha upatikanaji wa huduma za afya na lishe katika maeneo yasiyo na huduma za kutosha."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Swahili",
+      "translation": "Kampeni za Afya"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Swahili",
+      "translation": "Watu Waliohudumiwa"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Swahili",
+      "translation": "Kliniki Zinazohamishika"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Swahili",
+      "translation": "Mpango Bora wa CSR"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Swahili",
+      "translation": "Tuliheshimiwa kwa mbinu yetu bunifu ya uwajibikaji wa kijamii."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Swahili",
+      "translation": "Bingwa wa Jumuiya"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Swahili",
+      "translation": "Tuzo kwa programu zetu pana za kufikia jamii."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Swahili",
+      "translation": "Tuzo ya Uendelevu wa Dunia"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Swahili",
+      "translation": "Tunatambuliwa kwa kujitolea kwetu kwa kutoegemea upande wowote wa kaboni."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Swahili",
+      "translation": "Athari Yetu"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Swahili",
+      "translation": "Kutambua hatua zetu muhimu katika kuunda ulimwengu bora."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Swahili",
+      "translation": "Jiunge Nasi katika Kuleta Tofauti"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Swahili",
+      "translation": "Shirikiana nasi au jifunze zaidi kuhusu jinsi tunavyojenga mustakabali endelevu."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Swahili",
+      "translation": "Wasiliana na Timu ya CSR"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Swahili",
+      "translation": "Jifunze Zaidi"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Swahili",
+      "translation": "Wasiliana nasi"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Swahili",
+      "translation": "Tungependa kusikia kutoka kwako. Wasiliana nasi kupitia njia yoyote kati ya hizi."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Swahili",
+      "translation": "Simu"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Swahili",
+      "translation": "Barua pepe"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Swahili",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Swahili",
+      "translation": "Piga simu Sasa"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Swahili",
+      "translation": "Tuma Barua Pepe"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Swahili",
+      "translation": "Tutumie Ujumbe"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Swahili",
+      "translation": "Kituo cha Vyombo vya Habari"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Swahili",
+      "translation": "Kituo cha Vyombo vya Habari | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Swahili",
+      "translation": "Rasilimali za vyombo vya habari, mali za chapa, na habari mpya kutoka Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Swahili",
+      "translation": "Kampuni"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Swahili",
+      "translation": "Habari na Matangazo kwa Vyombo vya Habari"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Swahili",
+      "translation": "Matangazo ya hivi karibuni, upanuzi wa soko, uzinduzi wa bidhaa, na masasisho ya kampuni kutoka Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Swahili",
+      "translation": "Soma Habari za Hivi Punde"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Swahili",
+      "translation": "Matunzio ya Picha"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Swahili",
+      "translation": "Mali za chapa zenye ubora wa juu, upigaji picha wa bidhaa, picha za kituo, na habari za matukio kwa matumizi ya vyombo vya habari."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Swahili",
+      "translation": "Vinjari Matunzio"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Swahili",
+      "translation": "Mawasiliano ya Vyombo vya Habari"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Swahili",
+      "translation": "Wasiliana na timu yetu ya mawasiliano kwa maswali na waandishi wa habari, maombi ya mahojiano, na matangazo ya ushirikiano."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Swahili",
+      "translation": "Wasiliana na Timu ya Waandishi wa Habari"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Swahili",
+      "translation": "Masoko Yaliyofunikwa"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Swahili",
+      "translation": "Sekta ya Wima"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Swahili",
+      "translation": "Ilianzishwa Dubai"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Swahili",
+      "translation": "Lugha Zinazoungwa Mkono"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Swahili",
+      "translation": "Vichwa vya Habari vya Hivi Karibuni"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Swahili",
+      "translation": "Harvics Yapanua Uendeshaji wa FMCG kwa Masoko 5 Mapya ya Kusini-mashariki mwa Asia"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Swahili",
+      "translation": "Jukwaa Jipya la Ugavi Linalotumia AI Lazinduliwa kwa Usambazaji wa Kimataifa"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Swahili",
+      "translation": "Harvics Yafikia Hatua ya Kutokuwa na Kaboni Katika Vituo Vyote"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Swahili",
+      "translation": "Ushirikiano wa Kimkakati na Watengenezaji Wakuu wa Nguo Kusini mwa Asia"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Swahili",
+      "translation": "Nyumba ya Harvics"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Swahili",
+      "translation": "Urithi wa Ubora na Mila"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Swahili",
+      "translation": "Karibu Harvics House"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Swahili",
+      "translation": "Harvics House inawakilisha kilele cha kujitolea kwetu kwa ubora na urithi. Hapa, tunaleta pamoja uteuzi bora wa bidhaa zetu za hali ya juu, zinazoonyeshwa katika mazingira yanayoakisi maadili yetu ya uzuri, mila, na uvumbuzi."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Swahili",
+      "translation": "Gundua makusanyo yetu ya kipekee na ugundue hadithi nyuma ya kila bidhaa yenye jina la Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Swahili",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Swahili",
+      "translation": "Ubora katika Bidhaa za Watumiaji Bora Tangu 2019"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Swahili",
+      "translation": "Kampuni inayoongoza duniani ya bidhaa za walaji inayotoa bidhaa za chakula za hali ya juu katika kategoria mbalimbali zenye viwango vya ubora wa kimataifa."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Swahili",
+      "translation": "London • Milan • New York"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Swahili",
+      "translation": "Tangu 2019"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Swahili",
+      "translation": "Habari za Harvics"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Swahili",
+      "translation": "Jisajili ili upokee arifa na masasisho"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Swahili",
+      "translation": "Jisajili"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Swahili",
+      "translation": "Masuala ya Uzingatiaji wa Sheria"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Swahili",
+      "translation": "Zungumza ikiwa una wasiwasi kuhusu kufuata sheria au maadili"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Swahili",
+      "translation": "Zungumza kwa Ujasiri"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Swahili",
+      "translation": "Wasiliana Nasi"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Swahili",
+      "translation": "Wasiliana na timu yetu"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Swahili",
+      "translation": "Wasiliana Nasi"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Swahili",
+      "translation": "Viungo Muhimu"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Swahili",
+      "translation": "Muulize Harwich"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Swahili",
+      "translation": "Tafuta Kazi"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Swahili",
+      "translation": "Jisajili kwa Habari"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Swahili",
+      "translation": "Kampuni"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Swahili",
+      "translation": "Anwani za Kimataifa"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Swahili",
+      "translation": "Mkakati"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Swahili",
+      "translation": "Uongozi Wetu"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Swahili",
+      "translation": "Chapa A hadi Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Swahili",
+      "translation": "Historia Yetu"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Swahili",
+      "translation": "Uendelevu"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Swahili",
+      "translation": "Habari"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Swahili",
+      "translation": "Mawasiliano ya Vyombo vya Habari"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Swahili",
+      "translation": "Picha"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Swahili",
+      "translation": "Wawekezaji"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Swahili",
+      "translation": "Utawala wa Kampuni"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Swahili",
+      "translation": "Hisa, ADR na Dhamana"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Swahili",
+      "translation": "Machapisho"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Swahili",
+      "translation": "Tufuate Kwenye"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Swahili",
+      "translation": "Masuala 0"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Swahili",
+      "translation": "Ramani ya Tovuti"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Swahili",
+      "translation": "Jiondoe"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Swahili",
+      "translation": "Msaada"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Swahili",
+      "translation": "Faragha"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Swahili",
+      "translation": "Vidakuzi"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Swahili",
+      "translation": "Masharti ya Matumizi"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Swahili",
+      "translation": "Ufikivu"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Swahili",
+      "translation": "Ufanisi wa Kaboni"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Swahili",
+      "translation": "Wauzaji"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Swahili",
+      "translation": "Mitandao ya Kijamii"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Swahili",
+      "translation": "Mipangilio ya Vidakuzi"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Swahili",
+      "translation": "Ubora wa Hali ya Juu"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Swahili",
+      "translation": "Anwani ya barua pepe"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Swahili",
+      "translation": "Ingiza anwani yako ya barua pepe"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Swahili",
+      "translation": "Jisajili"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Swahili",
+      "translation": "Inajisajili..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Swahili",
+      "translation": "Kuhusu Sisi"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Swahili",
+      "translation": "Vyombo vya habari"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Swahili",
+      "translation": "Tafuta bidhaa, chapa, au kategoria"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Swahili",
+      "translation": "Hakuna matokeo yaliyopatikana"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Swahili",
+      "translation": "Inatafuta..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Swahili",
+      "translation": "Matokeo"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Swahili",
+      "translation": "Piga Gumzo Nasi"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Swahili",
+      "translation": "Andika ujumbe wako..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Swahili",
+      "translation": "Tuma"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Swahili",
+      "translation": "Funga"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Swahili",
+      "translation": "Habari! Ninawezaje kukusaidia leo?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Swahili",
+      "translation": "Samahani, sikuelewa hilo. Tafadhali unaweza kulitafsiri upya?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Swahili",
+      "translation": "Ninaweza kukusaidia na taarifa za bidhaa, maagizo, au maswali ya jumla. Ungependa kujua nini?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Swahili",
+      "translation": "Kwa usaidizi zaidi, tafadhali wasiliana nasi kwa support@harvics.com au piga simu +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Swahili",
+      "translation": "Piga Gumzo Nasi"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Swahili",
+      "translation": "Inapakia..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Swahili",
+      "translation": "Hitilafu"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Swahili",
+      "translation": "Mafanikio"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Swahili",
+      "translation": "Hifadhi"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Swahili",
+      "translation": "Ghairi"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Swahili",
+      "translation": "Futa"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Swahili",
+      "translation": "Hariri"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Swahili",
+      "translation": "Mwonekano"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Swahili",
+      "translation": "Wasilisha"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Swahili",
+      "translation": "Tafuta"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Swahili",
+      "translation": "Chuja"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Swahili",
+      "translation": "Wazi"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Swahili",
+      "translation": "Pakua"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Swahili",
+      "translation": "Pakia"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Swahili",
+      "translation": "Ndiyo"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Swahili",
+      "translation": "Hapana"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Swahili",
+      "translation": "Funga"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Swahili",
+      "translation": "Rudi"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Swahili",
+      "translation": "Inayofuata"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Swahili",
+      "translation": "Iliyotangulia"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Swahili",
+      "translation": "Vitendo"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Swahili",
+      "translation": "Hali"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Swahili",
+      "translation": "Tarehe"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Swahili",
+      "translation": "Jina"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Swahili",
+      "translation": "Barua pepe"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Swahili",
+      "translation": "Simu"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Swahili",
+      "translation": "Anwani"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Swahili",
+      "translation": "Nchi"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Swahili",
+      "translation": "Jiji"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Swahili",
+      "translation": "Zote"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Swahili",
+      "translation": "Hakuna"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Swahili",
+      "translation": "Chagua"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Swahili",
+      "translation": "Chagua Lugha"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Swahili",
+      "translation": "Chagua Nchi"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Swahili",
+      "translation": "Onyesha Zaidi"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Swahili",
+      "translation": "Onyesha Vidogo"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Swahili",
+      "translation": "Inahitajika"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Swahili",
+      "translation": "Menyu"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Swahili",
+      "translation": "Tazama Bidhaa"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Swahili",
+      "translation": "Cheza Muziki"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Swahili",
+      "translation": "Sitisha Muziki"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Swahili",
+      "translation": "Zima Muziki"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Swahili",
+      "translation": "Washa Muziki"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Swahili",
+      "translation": "Ufikiaji Wetu wa Kimataifa"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Swahili",
+      "translation": "Tangu"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Swahili",
+      "translation": "Soko Kubwa"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Swahili",
+      "translation": "Masoko Makuu"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Swahili",
+      "translation": "Uwepo"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Swahili",
+      "translation": "Nchi Zinazohudumiwa"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Swahili",
+      "translation": "Masoko Makuu"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Swahili",
+      "translation": "Aina za Bidhaa"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Swahili",
+      "translation": "Imara"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Swahili",
+      "translation": "Uongozi wa Eneo"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Swahili",
+      "translation": "Njia Kamili"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Swahili",
+      "translation": "Eneo la Sasa"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Swahili",
+      "translation": "Hakuna vitu"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Swahili",
+      "translation": "Globu"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Swahili",
+      "translation": "Bara"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Swahili",
+      "translation": "Eneo"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Swahili",
+      "translation": "Nchi"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Swahili",
+      "translation": "Jiji"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Swahili",
+      "translation": "Wilaya"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Swahili",
+      "translation": "Mahali"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Swahili",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Swahili",
+      "translation": "Kimataifa"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Swahili",
+      "translation": "Chagua Eneo"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Swahili",
+      "translation": "Maelezo ya Mteja"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Swahili",
+      "translation": "Imechaguliwa"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Swahili",
+      "translation": "Jina Kamili"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Swahili",
+      "translation": "Ingiza jina lako kamili"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Swahili",
+      "translation": "Jina linahitajika"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Swahili",
+      "translation": "Anwani ya Barua Pepe"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Swahili",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Swahili",
+      "translation": "Barua pepe inahitajika"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Swahili",
+      "translation": "Tafadhali weka anwani halali ya barua pepe"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Swahili",
+      "translation": "Nambari ya Simu"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Swahili",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Swahili",
+      "translation": "Nambari ya simu inahitajika"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Swahili",
+      "translation": "Anwani"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Swahili",
+      "translation": "Anwani yako"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Swahili",
+      "translation": "Anwani inahitajika"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Swahili",
+      "translation": "Nakubali kupokea mawasiliano na masasisho ya uuzaji"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Swahili",
+      "translation": "Wasilisha na Uendelee"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Swahili",
+      "translation": "Inawasilisha..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Swahili",
+      "translation": "Ruka na Uendelee"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Swahili",
+      "translation": "Viashiria Muhimu vya Utendaji"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Swahili",
+      "translation": "Maagizo leo"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Swahili",
+      "translation": "Imewasilishwa kupitia Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Swahili",
+      "translation": "Usafirishaji unaosubiriwa"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Swahili",
+      "translation": "Katika njia zilizotengwa"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Swahili",
+      "translation": "Wauzaji rejareja"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Swahili",
+      "translation": "Maduka yanayotumika katika wigo"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Swahili",
+      "translation": "Alama ya T & A"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Swahili",
+      "translation": "Eneo linalofunikwa"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Swahili",
+      "translation": "Fedha na Malipo"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Swahili",
+      "translation": "SKU za bei nafuu"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Swahili",
+      "translation": "Kujaza tena kichocheo"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Swahili",
+      "translation": "Ankara ambazo hazijalipwa"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Swahili",
+      "translation": "Inastahili kukusanywa"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Swahili",
+      "translation": "Kikomo cha mkopo"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Swahili",
+      "translation": "Imetolewa na fedha"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Swahili",
+      "translation": "Idhini ya kiotomatiki, kujaza tena hisa, na vikumbusho vya ankara vimewashwa"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Swahili",
+      "translation": "Kujikubali"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Swahili",
+      "translation": "Ujazaji wa Hisa"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Swahili",
+      "translation": "Vikumbusho vya Ankara"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Swahili",
+      "translation": "Mapendekezo ya AI"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Swahili",
+      "translation": "Kiwango cha Hatari"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Swahili",
+      "translation": "Kulingana na matumizi ya mikopo na historia ya malipo"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Swahili",
+      "translation": "Agizo Lililopendekezwa"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Swahili",
+      "translation": "SKU zinazopendekezwa na AI kwa kuagiza"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Swahili",
+      "translation": "Kitendo Kinachofuata"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Swahili",
+      "translation": "Vitendo na Mwongozo"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Swahili",
+      "translation": "Malalamiko"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Swahili",
+      "translation": "Masuala ya muuzaji yanasubiri hatua kuchukuliwa"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Swahili",
+      "translation": "Kitabu cha michezo"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Swahili",
+      "translation": "Weka kipaumbele katika usafirishaji unaosubiri kabla ya saa sita mchana."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Swahili",
+      "translation": "Funga malalamiko yote yaliyowasilishwa ndani ya saa 48."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Swahili",
+      "translation": "Kuanzisha upya kwa SKU zenye hisa ndogo (kuunda kiotomatiki PO)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Swahili",
+      "translation": "Eneo"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Swahili",
+      "translation": "Maagizo ya Mwezi Huu"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Swahili",
+      "translation": "Maagizo Yanayosubiri Kutolewa"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Swahili",
+      "translation": "Maagizo Yaliyowasilishwa"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Swahili",
+      "translation": "Taarifa za Eneo"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Swahili",
+      "translation": "Nchi"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Swahili",
+      "translation": "Jiji"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Swahili",
+      "translation": "Eneo"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Swahili",
+      "translation": "Vitendo vya Haraka"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Swahili",
+      "translation": "Agizo Jipya"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Swahili",
+      "translation": "Tazama Maagizo"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Swahili",
+      "translation": "Tazama Ankara"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Swahili",
+      "translation": "Mipangilio ya Wasifu"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Swahili",
+      "translation": "Inapakia dashibodi..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Swahili",
+      "translation": "Hitilafu"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Swahili",
+      "translation": "Maagizo Yangu"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Swahili",
+      "translation": "Kitambulisho cha Oda"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Swahili",
+      "translation": "Tarehe"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Swahili",
+      "translation": "Hali"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Swahili",
+      "translation": "Vitu"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Swahili",
+      "translation": "Jumla ya Kiasi"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Swahili",
+      "translation": "Vitendo"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Swahili",
+      "translation": "Tazama Maelezo"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Swahili",
+      "translation": "Hali"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Swahili",
+      "translation": "Tarehe ya Kuanza"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Swahili",
+      "translation": "Tarehe ya Mwisho"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Swahili",
+      "translation": "Hali Zote"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Swahili",
+      "translation": "Futa Vichujio"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Swahili",
+      "translation": "Inasubiri"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Swahili",
+      "translation": "Inachakata"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Swahili",
+      "translation": "Imewasilishwa"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Swahili",
+      "translation": "Imeghairiwa"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Swahili",
+      "translation": "Hakuna maagizo yaliyopatikana"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Swahili",
+      "translation": "Inapakia maagizo..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Swahili",
+      "translation": "Ukurasa"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Swahili",
+      "translation": "ya"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Swahili",
+      "translation": "Iliyotangulia"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Swahili",
+      "translation": "Inayofuata"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Swahili",
+      "translation": "Maelezo ya Agizo"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Swahili",
+      "translation": "Rudi kwenye Maagizo"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Swahili",
+      "translation": "Kitambulisho cha Oda"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Swahili",
+      "translation": "Hali"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Swahili",
+      "translation": "Tarehe ya Agizo"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Swahili",
+      "translation": "Tarehe ya Uwasilishaji"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Swahili",
+      "translation": "Anwani ya Usafirishaji"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Swahili",
+      "translation": "Vidokezo"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Swahili",
+      "translation": "Agiza Vitu"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Swahili",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Swahili",
+      "translation": "Kiasi"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Swahili",
+      "translation": "Bei ya Kitengo"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Swahili",
+      "translation": "Jumla"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Swahili",
+      "translation": "Jumla ya Kiasi"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Swahili",
+      "translation": "Ratiba ya Hali"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Swahili",
+      "translation": "Agizo halikupatikana"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Swahili",
+      "translation": "Unda Agizo Jipya"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Swahili",
+      "translation": "Agiza Vitu"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Swahili",
+      "translation": "Ongeza Kipengee"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Swahili",
+      "translation": "Hakuna vipengee vilivyoongezwa bado. Bonyeza \"Ongeza Kipengee\" ili kuanza."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Swahili",
+      "translation": "Maelezo ya Agizo"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Swahili",
+      "translation": "Tarehe ya Uwasilishaji"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Swahili",
+      "translation": "Anwani ya Usafirishaji"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Swahili",
+      "translation": "Vidokezo"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Swahili",
+      "translation": "Jumla ya Kiasi"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Swahili",
+      "translation": "Unda Agizo"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Swahili",
+      "translation": "Kuunda Agizo..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Swahili",
+      "translation": "Ghairi"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Swahili",
+      "translation": "Chagua Bidhaa"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Swahili",
+      "translation": "Kiasi"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Swahili",
+      "translation": "Bei ya Kitengo"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Swahili",
+      "translation": "Ondoa"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Swahili",
+      "translation": "Jumla Ndogo"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Swahili",
+      "translation": "Kitambulisho cha Oda"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Swahili",
+      "translation": "Angalau bidhaa moja ya kuagiza inahitajika"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa inahitajika"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Swahili",
+      "translation": "Kiasi lazima kiwe zaidi ya 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Swahili",
+      "translation": "Bei ya kitengo lazima isiwe hasi"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Swahili",
+      "translation": "Muundo batili wa tarehe ya uwasilishaji"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Swahili",
+      "translation": "Tarehe ya uwasilishaji haiwezi kuwa iliyopita"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Swahili",
+      "translation": "Ankara Zangu"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Swahili",
+      "translation": "Nambari ya Ankara"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Swahili",
+      "translation": "Tarehe ya Ankara"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Swahili",
+      "translation": "Tarehe Mbili"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Swahili",
+      "translation": "Kiasi"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Swahili",
+      "translation": "Kiasi Kilicholipwa"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Swahili",
+      "translation": "Hali ya Malipo"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Swahili",
+      "translation": "Hali ya Malipo"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Swahili",
+      "translation": "Hali Zote"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Swahili",
+      "translation": "Futa Vichujio"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Swahili",
+      "translation": "Imelipwa"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Swahili",
+      "translation": "Haijalipwa"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Swahili",
+      "translation": "Sehemu"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Swahili",
+      "translation": "Hakuna ankara zilizopatikana"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Swahili",
+      "translation": "Inapakia ankara..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Swahili",
+      "translation": "Wasifu Wangu"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Swahili",
+      "translation": "Taarifa za Akaunti"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Swahili",
+      "translation": "Kitambulisho cha Msambazaji"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Swahili",
+      "translation": "Eneo"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Swahili",
+      "translation": "Nchi"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Swahili",
+      "translation": "Jiji"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Swahili",
+      "translation": "Akaunti Imeundwa"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Swahili",
+      "translation": "Sasisha Wasifu"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Swahili",
+      "translation": "Jina"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Swahili",
+      "translation": "Barua pepe"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Swahili",
+      "translation": "Simu"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Swahili",
+      "translation": "Anwani"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Swahili",
+      "translation": "Lugha"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Swahili",
+      "translation": "Sarafu"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Swahili",
+      "translation": "Hifadhi Mabadiliko"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Swahili",
+      "translation": "Inahifadhi..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Swahili",
+      "translation": "Wasifu umesasishwa kwa mafanikio"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Swahili",
+      "translation": "Inapakia wasifu..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Swahili",
+      "translation": "Muundo wa barua pepe si sahihi"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Swahili",
+      "translation": "Muundo wa simu si sahihi"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Swahili",
+      "translation": "Hitilafu"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Swahili",
+      "translation": "Inapakia..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Swahili",
+      "translation": "Hifadhi"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Swahili",
+      "translation": "Ghairi"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Swahili",
+      "translation": "Rudi"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Swahili",
+      "translation": "Wasilisha"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Swahili",
+      "translation": "Futa"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Swahili",
+      "translation": "Hariri"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Swahili",
+      "translation": "Mwonekano"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Swahili",
+      "translation": "Tafuta"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Swahili",
+      "translation": "Chuja"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Swahili",
+      "translation": "Wazi"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Swahili",
+      "translation": "Tuma maombi"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Swahili",
+      "translation": "Funga"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Swahili",
+      "translation": "Thibitisha"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Swahili",
+      "translation": "Ndiyo"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Swahili",
+      "translation": "Hapana"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Swahili",
+      "translation": "Mfumo wa Uendeshaji Kisheria"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Swahili",
+      "translation": "Mfumo wa Kisheria"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Swahili",
+      "translation": "Ufikiaji Umekataliwa"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Swahili",
+      "translation": "Huna ruhusa ya kufikia moduli ya Mfumo wa Uendeshaji Kisheria."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Swahili",
+      "translation": "Dashibodi"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Swahili",
+      "translation": "Mikataba"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Swahili",
+      "translation": "Vyeti"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Swahili",
+      "translation": "Utiifu"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Swahili",
+      "translation": "Dashibodi ya Kisheria"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Swahili",
+      "translation": "Muhtasari wa shughuli za kisheria na hali ya kufuata sheria"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Swahili",
+      "translation": "Alama za Biashara Zinazotumika"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Swahili",
+      "translation": "Mikataba Inayotumika"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Swahili",
+      "translation": "Hali ya Utiifu"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Swahili",
+      "translation": "Alama za Biashara"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Swahili",
+      "translation": "Dhibiti usajili na maombi ya chapa za biashara"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Swahili",
+      "translation": "Ongeza Alama Mpya ya Biashara"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Swahili",
+      "translation": "Nchi"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Swahili",
+      "translation": "Hali"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Swahili",
+      "translation": "Nchi Zote"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Swahili",
+      "translation": "Hali Zote"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Swahili",
+      "translation": "Futa Vichujio"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Swahili",
+      "translation": "Jina la Chapa"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Swahili",
+      "translation": "Darasa"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Swahili",
+      "translation": "Nchi"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Swahili",
+      "translation": "Nambari ya Maombi"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Swahili",
+      "translation": "Hali"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Swahili",
+      "translation": "Tarehe ya Mwisho wa Matumizi"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Swahili",
+      "translation": "Vitendo"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Swahili",
+      "translation": "Hariri Alama ya Biashara"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Swahili",
+      "translation": "Ongeza Alama Mpya ya Biashara"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Swahili",
+      "translation": "Tazama Alama ya Biashara"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Swahili",
+      "translation": "Jina la Chapa"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Swahili",
+      "translation": "Nambari ya Daraja"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Swahili",
+      "translation": "Nchi"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Swahili",
+      "translation": "Nambari ya Maombi"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Swahili",
+      "translation": "Hali"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Swahili",
+      "translation": "Tarehe ya Mwisho wa Matumizi"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Swahili",
+      "translation": "Nyaraka"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Swahili",
+      "translation": "Hakuna hati zilizoambatanishwa"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Swahili",
+      "translation": "Ongeza Hati"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Swahili",
+      "translation": "Ondoa"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Swahili",
+      "translation": "Imeshindwa kupakia alama za biashara"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Swahili",
+      "translation": "Imeshindwa kuhifadhi chapa ya biashara. Tafadhali jaribu tena."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Swahili",
+      "translation": "Kesi za Kisheria"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Swahili",
+      "translation": "Dhibiti kesi za kisheria na ufuatilie hali zao"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Swahili",
+      "translation": "Kesi Mpya"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Swahili",
+      "translation": "Kichwa cha Kesi"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Swahili",
+      "translation": "Aina ya Kesi"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Swahili",
+      "translation": "Nchi"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Swahili",
+      "translation": "Maelezo"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Swahili",
+      "translation": "Imepewa"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Swahili",
+      "translation": "Hali"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Swahili",
+      "translation": "Tarehe ya Kusikilizwa kwa Kesi"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Swahili",
+      "translation": "Kichwa cha Kesi"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Swahili",
+      "translation": "Aina"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Swahili",
+      "translation": "Nchi"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Swahili",
+      "translation": "Imepewa"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Swahili",
+      "translation": "Hali"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Swahili",
+      "translation": "Tarehe ya Kusikilizwa kwa Kesi"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Swahili",
+      "translation": "Vitendo"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Swahili",
+      "translation": "Fungua"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Swahili",
+      "translation": "Inaendelea"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Swahili",
+      "translation": "Imefungwa"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Swahili",
+      "translation": "Imeghairiwa"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Swahili",
+      "translation": "Mtazamo wa Ramani ya Meli"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Swahili",
+      "translation": "Ufuatiliaji wa muda halisi wa maafisa wa mauzo na magari ya usafirishaji"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Swahili",
+      "translation": "Wafanyakazi Wanaofanya Kazi"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Swahili",
+      "translation": "Hakuna wafanyakazi wanaofanya kazi"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Swahili",
+      "translation": "Inapakia..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Swahili",
+      "translation": "Uchezaji wa Njia"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Swahili",
+      "translation": "Mfanyakazi"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Swahili",
+      "translation": "Kasi"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Swahili",
+      "translation": "Weka upya"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Swahili",
+      "translation": "Cheza"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Swahili",
+      "translation": "Sitisha"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Swahili",
+      "translation": "pointi"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Swahili",
+      "translation": "Hakuna data ya njia inayopatikana"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Swahili",
+      "translation": "Inapakia njia..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa za Washindani"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Swahili",
+      "translation": "Fuatilia taarifa za bidhaa za mshindani"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Swahili",
+      "translation": "Ongeza Bidhaa"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Swahili",
+      "translation": "Ongeza Bidhaa ya Mshindani"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Swahili",
+      "translation": "Chapa"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Swahili",
+      "translation": "Jina la SKU"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Swahili",
+      "translation": "Kategoria"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Swahili",
+      "translation": "Ukubwa"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Swahili",
+      "translation": "Bei"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Swahili",
+      "translation": "Sarafu"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Swahili",
+      "translation": "Nchi"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Swahili",
+      "translation": "Chapa"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Swahili",
+      "translation": "Jina la SKU"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Swahili",
+      "translation": "Kategoria"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Swahili",
+      "translation": "Ukubwa"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Swahili",
+      "translation": "Bei"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Swahili",
+      "translation": "Nchi"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Swahili",
+      "translation": "Tarehe Iliyoongezwa"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Swahili",
+      "translation": "Imeshindwa kupakia bidhaa"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Swahili",
+      "translation": "Imeshindwa kuunda bidhaa. Tafadhali jaribu tena."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Swahili",
+      "translation": "Hakuna bidhaa za mshindani zilizopatikana"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Swahili",
+      "translation": "Inapakia bidhaa..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Swahili",
+      "translation": "Dashibodi ya Mshindani"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Swahili",
+      "translation": "Uchanganuzi na maarifa kuhusu bidhaa za washindani"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Swahili",
+      "translation": "Jumla ya Bidhaa"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Swahili",
+      "translation": "Chapa Zinazofuatiliwa"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Swahili",
+      "translation": "Nchi"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Swahili",
+      "translation": "Aina"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa kutoka kwa Chapa"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa kwa Nchi"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa kwa Kategoria"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Swahili",
+      "translation": "Inapakia takwimu..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Swahili",
+      "translation": "Hakuna takwimu zinazopatikana"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Swahili",
+      "translation": "Muhtasari"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Swahili",
+      "translation": "Maagizo"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Swahili",
+      "translation": "Orodha ya bidhaa"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Swahili",
+      "translation": "Usafirishaji"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Swahili",
+      "translation": "Fedha"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Swahili",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Swahili",
+      "translation": "HR"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Swahili",
+      "translation": "Mtendaji"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Swahili",
+      "translation": "Mwekezaji"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Swahili",
+      "translation": "Kisheria/IPR"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Swahili",
+      "translation": "Mshindani"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Swahili",
+      "translation": "Ingiza/Usafirishaji nje"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Swahili",
+      "translation": "Ufuatiliaji wa GPS"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Swahili",
+      "translation": "Ujanibishaji"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Swahili",
+      "translation": "Mtiririko wa kazi"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Swahili",
+      "translation": "Msimamizi"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Swahili",
+      "translation": "Mfumo wa Uendeshaji wa CRM"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Swahili",
+      "translation": "Mteja 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Swahili",
+      "translation": "Kamilisha wasifu wa wateja, historia ya mwingiliano, na usimamizi wa uhusiano"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Swahili",
+      "translation": "Kampeni za Kidijitali"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Swahili",
+      "translation": "Kampeni za uuzaji za njia nyingi (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Swahili",
+      "translation": "Waongozaji na Fursa"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Swahili",
+      "translation": "Usimamizi wa viongozi, sifa, na bomba la fursa"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Swahili",
+      "translation": "Huduma kwa Wateja"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Swahili",
+      "translation": "Usimamizi wa tikiti, huduma kwa wateja, na utatuzi wa masuala"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Swahili",
+      "translation": "Programu za Uaminifu"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Swahili",
+      "translation": "Uaminifu wa muuzaji, uchezaji, na usimamizi wa zawadi"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Swahili",
+      "translation": "Mteja 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Swahili",
+      "translation": "Mteja Mpya"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Swahili",
+      "translation": "Jumla ya Wateja"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Swahili",
+      "translation": "Inayotumika"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Swahili",
+      "translation": "Mpya"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Swahili",
+      "translation": "Kuridhika"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Swahili",
+      "translation": "Usimamizi wa Wateja"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Swahili",
+      "translation": "Tazama na udhibiti mahusiano, mwingiliano, na kampeni za wateja wako."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Swahili",
+      "translation": "Inapakia..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Swahili",
+      "translation": "Hitilafu ya kupakia data ya CRM"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Swahili",
+      "translation": "Muhtasari"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Swahili",
+      "translation": "Maagizo"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Swahili",
+      "translation": "Orodha ya bidhaa"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Swahili",
+      "translation": "Usafirishaji"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Swahili",
+      "translation": "Fedha"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Swahili",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Swahili",
+      "translation": "HR"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Swahili",
+      "translation": "Mtendaji"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Swahili",
+      "translation": "Mwekezaji"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Swahili",
+      "translation": "Kisheria/IPR"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Swahili",
+      "translation": "Mshindani"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Swahili",
+      "translation": "Ingiza/Usafirishaji nje"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Swahili",
+      "translation": "Ufuatiliaji wa GPS"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Swahili",
+      "translation": "Ujanibishaji"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Swahili",
+      "translation": "Mtiririko wa kazi"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Swahili",
+      "translation": "Msimamizi"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Swahili",
+      "translation": "Wateja"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Swahili",
+      "translation": "Wafanyakazi"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Swahili",
+      "translation": "Faida"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Swahili",
+      "translation": "Inapakia chumba cha rubani cha muuzaji…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Swahili",
+      "translation": "Maagizo ya ununuzi"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Swahili",
+      "translation": "Imekuzwa na Harvics"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Swahili",
+      "translation": "Usafirishaji / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Swahili",
+      "translation": "Imekubaliwa wiki hii"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Swahili",
+      "translation": "Ankara zilizoundwa"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Swahili",
+      "translation": "Inasubiri malipo"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Swahili",
+      "translation": "Malipo yanasubiri"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Swahili",
+      "translation": "Imepangwa kutolewa"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Swahili",
+      "translation": "Ubora / malalamiko"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Swahili",
+      "translation": "Tikiti zilizo wazi"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Swahili",
+      "translation": "Utabiri (wiki 4 zijazo)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Swahili",
+      "translation": "Kishikilia nafasi cha AI"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Swahili",
+      "translation": "Vitendo vya muuzaji"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Swahili",
+      "translation": "Thibitisha usafirishaji ujao na usasishe ratiba ya GRN."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Swahili",
+      "translation": "Kagua ankara ambazo hazijalipwa na ushauri wa malipo ya hisa."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Swahili",
+      "translation": "Suluhisha malalamiko ya ubora wa wazi kwa kutumia ushahidi wa QA."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Swahili",
+      "translation": "Jina la mtumiaji"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Swahili",
+      "translation": "Nenosiri"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Swahili",
+      "translation": "Barua pepe"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Swahili",
+      "translation": "Wasilisha"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Swahili",
+      "translation": "Ghairi"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Swahili",
+      "translation": "Hifadhi"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Swahili",
+      "translation": "Futa"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Swahili",
+      "translation": "Tafuta"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Swahili",
+      "translation": "Chuja"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Swahili",
+      "translation": "Weka upya"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Swahili",
+      "translation": "Funga"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Swahili",
+      "translation": "Rudi"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Swahili",
+      "translation": "Inayofuata"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Swahili",
+      "translation": "Iliyotangulia"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Swahili",
+      "translation": "Thibitisha"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Swahili",
+      "translation": "Nikumbuke"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Swahili",
+      "translation": "Umesahau nenosiri?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Swahili",
+      "translation": "Barua pepe inahitajika"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Swahili",
+      "translation": "Tafadhali weka anwani halali ya barua pepe"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Swahili",
+      "translation": "Harvics hutoa bidhaa gani?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Swahili",
+      "translation": "Tunatoa aina mbalimbali za vyakula vya hali ya juu ikiwa ni pamoja na keki, vinywaji, vitafunio, pasta, bidhaa za mikate, na vyakula vilivyogandishwa katika kategoria nyingi."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Swahili",
+      "translation": "Ninaweza kununua wapi bidhaa za Harvics?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa zetu zinapatikana katika maduka ya rejareja katika nchi zaidi ya 40. Tumia kitafuta duka chetu au ukurasa wa mawasiliano ili kupata muuzaji karibu nawe."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Swahili",
+      "translation": "Je, mnatoa huduma ya kuagiza kwa wingi?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Swahili",
+      "translation": "Ndiyo, tunatoa punguzo la oda ya jumla kwa biashara na wauzaji rejareja. Tembelea ukurasa wetu wa Punguzo la Oda ya Jumla kwa maelezo zaidi."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Swahili",
+      "translation": "Maagizo na Usafirishaji"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Swahili",
+      "translation": "Chaguzi zako za usafirishaji ni zipi?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Swahili",
+      "translation": "Tunatoa chaguzi mbalimbali za usafirishaji ikiwa ni pamoja na usafirishaji wa kawaida, wa haraka, na wa kimataifa. Usafirishaji wa bure unapatikana kwa oda zaidi ya $50."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Swahili",
+      "translation": "Uwasilishaji huchukua muda gani?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Swahili",
+      "translation": "Muda wa uwasilishaji hutofautiana kulingana na eneo. Uwasilishaji wa kawaida kwa kawaida huchukua siku 5-7 za kazi, huku uwasilishaji wa haraka ukichukua siku 2-3 za kazi."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Swahili",
+      "translation": "Je, ninaweza kufuatilia agizo langu?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Swahili",
+      "translation": "Ndiyo, unaweza kufuatilia agizo lako kwa kutumia nambari ya ufuatiliaji iliyotolewa katika barua pepe yako ya uthibitisho wa agizo."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Swahili",
+      "translation": "Akaunti na Malipo"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Swahili",
+      "translation": "Ninawezaje kuunda akaunti?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Swahili",
+      "translation": "Bonyeza \"Ingia\" kwenye kichwa cha habari na uchague \"Unda Akaunti\" ili kujiandikisha kwa akaunti mpya."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Swahili",
+      "translation": "Unakubali njia gani za malipo?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Swahili",
+      "translation": "Tunakubali kadi zote kuu za mkopo, kadi za benki, PayPal, na uhamisho wa benki kwa maagizo ya B2B."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Swahili",
+      "translation": "Je, taarifa zangu za malipo ni salama?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Swahili",
+      "translation": "Ndiyo, tunatumia usimbaji fiche wa kiwango cha sekta ili kulinda taarifa zako za malipo."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Swahili",
+      "translation": "Marejesho na Marejesho"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Swahili",
+      "translation": "Sera yako ya kurejesha ni ipi?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Swahili",
+      "translation": "Tunatoa sera ya kurejesha bidhaa ambazo hazijafunguliwa katika vifungashio vya asili kwa siku 30. Tafadhali wasiliana na huduma yetu kwa wateja kwa idhini ya kurejesha."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Swahili",
+      "translation": "Ninawezaje kuomba kurejeshewa pesa?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Swahili",
+      "translation": "Wasiliana na timu yetu ya huduma kwa wateja ukiwa na nambari yako ya oda na sababu ya kurudisha. Tutashughulikia marejesho yako ndani ya siku 5-7 za kazi."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Swahili",
+      "translation": "Bado Una Maswali?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Swahili",
+      "translation": "Timu yetu ya huduma kwa wateja iko hapa kusaidia"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Swahili",
+      "translation": "Wasiliana Nasi"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Swahili",
+      "translation": "Kazi"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Swahili",
+      "translation": "Kazi | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Swahili",
+      "translation": "Jiunge na Harvics Global Ventures — chunguza fursa katika nchi zaidi ya 40."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Swahili",
+      "translation": "Jiunge Nasi"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Swahili",
+      "translation": "Jenga Mustakabali wa Biashara ya Kimataifa"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Swahili",
+      "translation": "Tunakua katika nchi zaidi ya 40. Jiunge na timu inayojenga mfumo endeshi unaoendeshwa na akili bandia kwa biashara ya kimataifa."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Swahili",
+      "translation": "Nafasi Zilizo wazi"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Swahili",
+      "translation": "Nchi"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Swahili",
+      "translation": "Sekta ya Wima"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Swahili",
+      "translation": "Kuajiri Idara"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Swahili",
+      "translation": "Nafasi Zilizo wazi kwa Idara"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Swahili",
+      "translation": "Mauzo na Usambazaji"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Swahili",
+      "translation": "Kukuza mapato katika masoko zaidi ya 40. Usimamizi wa eneo, akaunti muhimu, mahusiano ya wasambazaji."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Swahili",
+      "translation": "Mnyororo wa Ugavi na Usafirishaji"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Swahili",
+      "translation": "Mnyororo wa usambazaji kutoka kiwanda hadi rafu. Usimamizi wa meli, ghala, uwasilishaji wa mwisho."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Swahili",
+      "translation": "Teknolojia na AI"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Swahili",
+      "translation": "Jenga Harvics OS — jukwaa letu la biashara linaloendeshwa na akili bandia. Uhandisi kamili, ML, sayansi ya data."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Swahili",
+      "translation": "Fedha na Hazina"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Swahili",
+      "translation": "Hazina ya sarafu nyingi, fedha za biashara, malipo ya kidijitali ya HPay, usimamizi wa FX katika maeneo mbalimbali."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Swahili",
+      "translation": "Ununuzi na Ugavi"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Swahili",
+      "translation": "Utafutaji wa kimataifa kutoka nchi zaidi ya 15 asili. Ukaguzi wa wasambazaji, udhibiti wa ubora, programu za moja kwa moja kutoka kiwandani."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Swahili",
+      "translation": "Rasilimali Watu"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Swahili",
+      "translation": "Upatikanaji wa vipaji, L&D, usimamizi wa utendaji katika maeneo na tamaduni mbalimbali."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Swahili",
+      "translation": "Sheria na Uzingatiaji"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Swahili",
+      "translation": "Utiifu wa biashara, uchunguzi wa vikwazo, ulinzi wa IP, usimamizi wa mikataba katika maeneo mbalimbali."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Swahili",
+      "translation": "Masoko na Chapa"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Swahili",
+      "translation": "Kampeni za lugha nyingi, maudhui ya lugha 38, uuzaji wa kidijitali, mkakati wa chapa kwa watu 10 wa wima."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Swahili",
+      "translation": "majukumu"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Swahili",
+      "translation": "Kwa nini Harvics"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Swahili",
+      "translation": "Uhamaji wa Kimataifa"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Swahili",
+      "translation": "Fanya kazi kote Dubai, London, Karachi, Lahore, na masoko zaidi ya 40"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Swahili",
+      "translation": "Orodha ya Ukuaji"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Swahili",
+      "translation": "Kuharakisha maendeleo ya kazi katika biashara inayokua"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Swahili",
+      "translation": "Utamaduni wa Kwanza wa AI"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Swahili",
+      "translation": "Fanya kazi na mifumo ya kisasa ya akili bandia (AI) na mifumo ya akili ya wakati halisi"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Swahili",
+      "translation": "Kifurushi cha Ushindani"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Swahili",
+      "translation": "Fidia, nyumba, na marupurupu yanayoongoza sokoni"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Swahili",
+      "translation": "Bajeti ya Kujifunza"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Swahili",
+      "translation": "Bajeti ya maendeleo ya kila mwaka kwa ajili ya kozi, mikutano, na vyeti"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Swahili",
+      "translation": "Kazi Rahisi"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Swahili",
+      "translation": "Mipango mseto na ofisi za kitovu za kikanda duniani kote"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Swahili",
+      "translation": "Mkakati Wetu"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Swahili",
+      "translation": "Mkakati | Harwich"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Swahili",
+      "translation": "Kujenga mustakabali endelevu kupitia uvumbuzi na ubora"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Swahili",
+      "translation": "Kujenga mustakabali endelevu kupitia uvumbuzi na ubora"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Swahili",
+      "translation": "Upanuzi wa Kimataifa"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Swahili",
+      "translation": "Kupanua uwepo wetu katika masoko yanayoibuka huku tukiimarisha nafasi yetu katika masoko yaliyostawi"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Swahili",
+      "translation": "Ubunifu wa Bidhaa"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Swahili",
+      "translation": "Kuwekeza katika Utafiti na Maendeleo ili kutengeneza bidhaa mpya zinazokidhi mapendeleo ya watumiaji yanayobadilika"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Swahili",
+      "translation": "Uendelevu"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Swahili",
+      "translation": "Tumejitolea kwa mazoea endelevu katika mnyororo wetu wa usambazaji na shughuli zetu"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Swahili",
+      "translation": "Mabadiliko ya Kidijitali"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Swahili",
+      "translation": "Kutumia teknolojia ili kuongeza uzoefu wa wateja na ufanisi wa uendeshaji"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Swahili",
+      "translation": "Maono Yetu"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Swahili",
+      "translation": "Kuwa kampuni inayoongoza duniani ya bidhaa za walaji zenye ubora wa hali ya juu, inayotambuliwa kwa ubora, uvumbuzi, na uendelevu."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Swahili",
+      "translation": "Harvics Global Ventures | Biashara ya Premium Global"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Swahili",
+      "translation": "Kampuni inayoongoza ya biashara duniani ikitoa bidhaa za hali ya juu katika zaidi ya viwanda 10. Inafanya kazi katika nchi 50+ tangu 2019."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Swahili",
+      "translation": "Kuhusu Sisi | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Swahili",
+      "translation": "Gundua jinsi Harvics Global Ventures ilivyokua nguvu inayoongoza katika biashara ya kimataifa katika nchi zaidi ya 40 na viwanda 10."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Swahili",
+      "translation": "Wasiliana Nasi | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Swahili",
+      "translation": "Wasiliana na ofisi za Harvics duniani kote Mashariki ya Kati, Asia Kusini, Ulaya, Afrika, na Amerika."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Swahili",
+      "translation": "Bidhaa | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Swahili",
+      "translation": "Gundua aina mbalimbali za bidhaa za Harvics katika FMCG, nguo, bidhaa, na suluhisho za viwandani."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Swahili",
+      "translation": "Kazi | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Swahili",
+      "translation": "Jiunge na Harvics Global Ventures — chunguza fursa katika nchi zaidi ya 40 katika FMCG, nguo, vifaa, na teknolojia."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Swahili",
+      "translation": "Kituo cha Vyombo vya Habari | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Swahili",
+      "translation": "Kituo cha vyombo vya habari cha Harvics — taarifa kwa vyombo vya habari, habari za hivi punde, mali za chapa, na mawasiliano ya vyombo vya habari."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Swahili",
+      "translation": "Mkakati Wetu | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Swahili",
+      "translation": "Maono ya kimkakati ya Harvics kwa ajili ya upanuzi wa kimataifa, uvumbuzi, uendelevu, na mabadiliko ya kidijitali."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Swahili",
+      "translation": "Uwajibikaji wa Kijamii wa Kampuni | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Swahili",
+      "translation": "Mipango ya Harvics CSR — usimamizi wa mazingira, programu za jamii, na desturi za kimaadili za biashara."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Swahili",
+      "translation": "Maswali Yanayoulizwa Mara kwa Mara | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Swahili",
+      "translation": "Maswali yanayoulizwa mara kwa mara kuhusu bidhaa, huduma, uagizaji, na shughuli za kimataifa za Harvics."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Swahili",
+      "translation": "Maeneo ya Kimataifa | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Swahili",
+      "translation": "Ofisi na shughuli za Harvics kote Mashariki ya Kati, Asia Kusini, Ulaya, Afrika, na Amerika."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Swahili",
+      "translation": "Timu ya Uongozi | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Swahili",
+      "translation": "Kutana na timu ya uongozi inayoendesha Harvics Global Ventures katika masoko zaidi ya 40 na zaidi ya 10 ya sekta."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Swahili",
+      "translation": "Kituo cha Usaidizi | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Swahili",
+      "translation": "Pata usaidizi kuhusu maagizo, akaunti, usafirishaji, na huduma za Harvics."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Swahili",
+      "translation": "Uzingatiaji na Maadili | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Swahili",
+      "translation": "Kujitolea kwa Harvics kwa kufuata sheria, desturi za kimaadili za biashara, na viwango vya kimataifa."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Swahili",
+      "translation": "Historia Yetu | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Swahili",
+      "translation": "Kuanzia kampuni changa ya Dubai mwaka wa 2019 hadi biashara ya kimataifa inayohusisha nchi zaidi ya 40 — hadithi ya Harvics."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Swahili",
+      "translation": "Jarida | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Swahili",
+      "translation": "Jisajili kwa jarida la Harvics kwa maarifa ya tasnia na uzinduzi wa bidhaa."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Swahili",
+      "translation": "Ingia | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Swahili",
+      "translation": "Ingia katika akaunti yako ya Harvics ili kudhibiti maagizo na kufikia mfumo."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Swahili",
+      "translation": "Utafiti na Ubunifu | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Swahili",
+      "translation": "Mipango ya utafiti ya Harvics na programu za uvumbuzi zinazoendesha mkakati wetu wa kimataifa."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Swahili",
+      "translation": "Mahusiano ya Wawekezaji | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Swahili",
+      "translation": "Taarifa za wawekezaji, ripoti za fedha, na matangazo ya kampuni kutoka Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Swahili",
+      "translation": "Ukurasa Haujapatikana"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Swahili",
+      "translation": "404 — Ukurasa Haupatikani"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Swahili",
+      "translation": "Ukurasa unaoutafuta haupo au umehamishwa."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Swahili",
+      "translation": "Nenda kwenye Ukurasa wa Mwanzo"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Swahili",
+      "translation": "Rudi Nyuma"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Swahili",
+      "translation": "Kuna Kitu Kilichoenda Mbaya"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Swahili",
+      "translation": "Kuna kitu kimeenda vibaya"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Swahili",
+      "translation": "Samahani, lakini jambo lisilotarajiwa lilitokea. Tafadhali jaribu kuburudisha ukurasa."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Swahili",
+      "translation": "Jaribu Tena"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Swahili",
+      "translation": "Pakia Ukurasa Upya"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Swahili",
+      "translation": "Wasiliana na Usaidizi"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Swahili",
+      "translation": "Hitilafu ya Programu"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Swahili",
+      "translation": "Hitilafu Muhimu"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Swahili",
+      "translation": "Hitilafu muhimu imetokea. Tafadhali pakia upya ukurasa."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Swahili",
+      "translation": "Pakia Programu Upya"
+    }
+  }
+}

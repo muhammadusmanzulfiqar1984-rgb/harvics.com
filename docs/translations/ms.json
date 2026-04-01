@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "ms",
+    "language": "Malay",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Malay. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Malay",
+      "translation": "Selamat datang ke"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Malay",
+      "translation": "Harwich"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Malay",
+      "translation": "Kecemerlangan dalam Barangan Pengguna Premium Sejak 2019"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Malay",
+      "translation": "Sebuah syarikat barangan pengguna global yang terkemuka yang menyediakan produk makanan premium merentasi pelbagai kategori dengan piawaian kualiti antarabangsa."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Malay",
+      "translation": "Terokai Produk"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Malay",
+      "translation": "Hubungi Kami"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Malay",
+      "translation": "Ketahui Lebih Lanjut"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Malay",
+      "translation": "Kecemerlangan dalam Barangan Pengguna Premium Sejak"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Malay",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Malay",
+      "translation": "London • Milan • New York"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Malay",
+      "translation": "Kedai Roti"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Malay",
+      "translation": "Minuman"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Malay",
+      "translation": "Manisan"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Malay",
+      "translation": "Kulinari"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Malay",
+      "translation": "Makanan Sejuk Beku"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Malay",
+      "translation": "Pasta"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Malay",
+      "translation": "Snek"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Malay",
+      "translation": "Laporan ESG 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Malay",
+      "translation": "London • Milan • New York"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Malay",
+      "translation": "Laman Utama"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Malay",
+      "translation": "Mengenai"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Malay",
+      "translation": "Tentang Kami"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Malay",
+      "translation": "Kisah Jenama"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Malay",
+      "translation": "Produk"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Malay",
+      "translation": "Produk Kami"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Malay",
+      "translation": "Lihat Semua Produk"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Malay",
+      "translation": "CSR"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Malay",
+      "translation": "Perhubungan Pelabur"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Malay",
+      "translation": "Pelabur"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Malay",
+      "translation": "Media"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Malay",
+      "translation": "Hubungi Kami"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Malay",
+      "translation": "Rumah Harvics"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Malay",
+      "translation": "Negara-negara"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Malay",
+      "translation": "Portal"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Malay",
+      "translation": "Daftar Masuk"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Malay",
+      "translation": "Senarai Keinginan"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Malay",
+      "translation": "Troli Beli-belah"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Malay",
+      "translation": "Bantuan"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Malay",
+      "translation": "Cari Kedai"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Malay",
+      "translation": "Wang"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Malay",
+      "translation": "Jualan"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Malay",
+      "translation": "Tawaran"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Malay",
+      "translation": "Mod gelap"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Malay",
+      "translation": "Kad Kredit"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Malay",
+      "translation": "Kad Kredit Ganjaran M&S"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Malay",
+      "translation": "Ganjaran Kelab"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Malay",
+      "translation": "Kad Kredit Kami"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Malay",
+      "translation": "Insurans"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Malay",
+      "translation": "Insurans Rumah"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Malay",
+      "translation": "Insurans Perjalanan"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Malay",
+      "translation": "Perkhidmatan Perjalanan"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Malay",
+      "translation": "Wang Perjalanan"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Malay",
+      "translation": "Kadar Pertukaran"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Malay",
+      "translation": "Perkhidmatan Tambahan"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Malay",
+      "translation": "Simpanan & Pelaburan"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Malay",
+      "translation": "Pinjaman Peribadi"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Malay",
+      "translation": "Sokongan Kewangan"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Malay",
+      "translation": "Jualan Semasa"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Malay",
+      "translation": "Pelepasan"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Malay",
+      "translation": "Jualan Bermusim"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Malay",
+      "translation": "Tawaran Istimewa"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Malay",
+      "translation": "Promosi"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Malay",
+      "translation": "Diskaun Pesanan Pukal"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Malay",
+      "translation": "Produk Kami"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Malay",
+      "translation": "Lihat Semua Produk"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Malay",
+      "translation": "Kategori Produk Kami"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Malay",
+      "translation": "Temui rangkaian produk premium kami yang dihasilkan dengan teliti dan cemerlang."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Malay",
+      "translation": "Tahap 1: Kategori"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Malay",
+      "translation": "Tahap 2: Modul"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Malay",
+      "translation": "Tahap 3: Skrin KPI"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Malay",
+      "translation": "Tahap 4: Tindakan"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Malay",
+      "translation": "Tetapkan Semula Navigasi"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Malay",
+      "translation": "Tiada subkategori tersedia untuk kategori ini."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Malay",
+      "translation": "Produk"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Malay",
+      "translation": "Subkategori"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Malay",
+      "translation": "Kedai Roti"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Malay",
+      "translation": "Barangan dan pastri yang baru dibakar."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Malay",
+      "translation": "Minuman"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Malay",
+      "translation": "Minuman menyegarkan untuk setiap majlis."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Malay",
+      "translation": "Manisan"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Malay",
+      "translation": "Makanan manis dan nikmat."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Malay",
+      "translation": "Kulinari"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Malay",
+      "translation": "Bahan-bahan penting untuk dapur anda."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Malay",
+      "translation": "Makanan Sejuk Beku"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Malay",
+      "translation": "Hidangan sejuk beku yang mudah dan lazat."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Malay",
+      "translation": "Pasta"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Malay",
+      "translation": "Jenis pasta asli."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Malay",
+      "translation": "Snek"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Malay",
+      "translation": "Snek lazat untuk bila-bila masa sepanjang hari."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Malay",
+      "translation": "Mengenai Harvics"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Malay",
+      "translation": "Kecemerlangan dalam Barangan Pengguna Premium Sejak 2019"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Malay",
+      "translation": "Kisah Kami"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Malay",
+      "translation": "Ditubuhkan pada tahun 2019, Harvics telah berkembang daripada idea berwawasan kepada peneraju global dalam barangan pengguna premium. Perjalanan kami ditakrifkan oleh usaha berterusan untuk mencapai kualiti dan komitmen terhadap inovasi."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Malay",
+      "translation": "Kami beroperasi di lebih 40 buah negara, menyediakan produk yang memperkayakan kehidupan dan menetapkan piawaian baharu dalam industri. Daripada permulaan kami yang sederhana hinggalah kehadiran kami di peringkat global, nilai-nilai kami kekal tidak berubah."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Malay",
+      "translation": "Ditubuhkan 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Malay",
+      "translation": "40+ Negara"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Malay",
+      "translation": "6 Barisan Produk"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Malay",
+      "translation": "Tanggungjawab Sosial Korporat"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Malay",
+      "translation": "Di Harvics, kami komited untuk memberi impak positif kepada dunia. Inisiatif CSR kami memberi tumpuan kepada kemampanan, pemerkasaan komuniti dan amalan perniagaan yang beretika."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Malay",
+      "translation": "Tahun-tahun Kesan"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Malay",
+      "translation": "Negara-negara yang Dicapai"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Malay",
+      "translation": "Kehidupan Tersentuh"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Malay",
+      "translation": "Inisiatif Utama Kami"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Malay",
+      "translation": "Kami memberi tumpuan kepada empat tonggak utama untuk memacu perubahan yang mampan dan mewujudkan nilai bersama untuk semua pihak berkepentingan."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Malay",
+      "translation": "Kemampanan"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Malay",
+      "translation": "Mengurangkan jejak alam sekitar kita melalui tenaga boleh diperbaharui dan pengurangan sisa."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Malay",
+      "translation": "Tenaga Boleh Diperbaharui"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Malay",
+      "translation": "Sisa Dilencongkan"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Malay",
+      "translation": "Pengurangan Karbon"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Malay",
+      "translation": "Sokongan Komuniti"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Malay",
+      "translation": "Memperkasakan komuniti setempat melalui pendidikan, penjagaan kesihatan dan pembangunan ekonomi."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Malay",
+      "translation": "Keluarga Disokong"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Malay",
+      "translation": "Program Aktif"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Malay",
+      "translation": "Sukarelawan"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Malay",
+      "translation": "Pendidikan"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Malay",
+      "translation": "Menyediakan akses kepada pendidikan berkualiti dan biasiswa untuk pelajar yang kurang bernasib baik."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Malay",
+      "translation": "Biasiswa"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Malay",
+      "translation": "Sekolah Rakan Kongsi"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Malay",
+      "translation": "Pelajar Terpengaruh"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Malay",
+      "translation": "Kesihatan & Kesejahteraan"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Malay",
+      "translation": "Meningkatkan akses kepada penjagaan kesihatan dan pemakanan di kawasan yang kurang mendapat perkhidmatan."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Malay",
+      "translation": "Kempen Kesihatan"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Malay",
+      "translation": "Orang yang Dilayan"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Malay",
+      "translation": "Klinik Bergerak"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Malay",
+      "translation": "Inisiatif CSR Terbaik"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Malay",
+      "translation": "Diberi penghormatan atas pendekatan inovatif kami terhadap tanggungjawab sosial."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Malay",
+      "translation": "Juara Komuniti"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Malay",
+      "translation": "Dianugerahkan atas program jangkauan komuniti kami yang meluas."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Malay",
+      "translation": "Anugerah Kelestarian Global"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Malay",
+      "translation": "Diiktiraf atas komitmen kami terhadap peneutralan karbon."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Malay",
+      "translation": "Impak Kami"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Malay",
+      "translation": "Mengiktiraf pencapaian penting kita dalam mewujudkan dunia yang lebih baik."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Malay",
+      "translation": "Sertai Kami dalam Membuat Perubahan"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Malay",
+      "translation": "Bekerjasama dengan kami atau ketahui lebih lanjut tentang cara kami membina masa depan yang mampan."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Malay",
+      "translation": "Hubungi Pasukan CSR"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Malay",
+      "translation": "Ketahui Lebih Lanjut"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Malay",
+      "translation": "Hubungi Kami"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Malay",
+      "translation": "Kami ingin mendengar daripada anda. Hubungi kami melalui mana-mana saluran ini."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Malay",
+      "translation": "Telefon"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Malay",
+      "translation": "E-mel"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Malay",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Malay",
+      "translation": "Hubungi Sekarang"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Malay",
+      "translation": "Hantar E-mel"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Malay",
+      "translation": "Hantar Pesanan Kepada Kami"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Malay",
+      "translation": "Pusat Media"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Malay",
+      "translation": "Pusat Media | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Malay",
+      "translation": "Sumber akhbar, aset jenama dan berita terkini daripada Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Malay",
+      "translation": "Korporat"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Malay",
+      "translation": "Berita & Siaran Akhbar"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Malay",
+      "translation": "Pengumuman terkini, pengembangan pasaran, pelancaran produk dan kemas kini korporat daripada Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Malay",
+      "translation": "Baca Berita Terkini"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Malay",
+      "translation": "Galeri Imej"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Malay",
+      "translation": "Aset jenama beresolusi tinggi, fotografi produk, imej kemudahan dan liputan acara untuk kegunaan media."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Malay",
+      "translation": "Layari Galeri"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Malay",
+      "translation": "Kenalan Media"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Malay",
+      "translation": "Hubungi pasukan komunikasi kami untuk pertanyaan akhbar, permintaan temu bual dan pengumuman perkongsian."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Malay",
+      "translation": "Hubungi Pasukan Akhbar"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Malay",
+      "translation": "Pasaran yang Diliputi"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Malay",
+      "translation": "Vertikal Industri"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Malay",
+      "translation": "Ditubuhkan di Dubai"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Malay",
+      "translation": "Bahasa yang Disokong"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Malay",
+      "translation": "Tajuk Utama Terkini"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Malay",
+      "translation": "Harvics Memperluas Operasi FMCG ke 5 Pasaran Asia Tenggara Baharu"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Malay",
+      "translation": "Platform Rantaian Bekalan Berkuasa AI Baharu Dilancarkan untuk Pengedaran Global"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Malay",
+      "translation": "Harvics Mencapai Pencapaian Neutral Karbon Merentasi Semua Kemudahan"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Malay",
+      "translation": "Perkongsian Strategik dengan Pengilang Tekstil Terkemuka di Asia Selatan"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Malay",
+      "translation": "Rumah Harvics"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Malay",
+      "translation": "Legasi Kecemerlangan dan Tradisi"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Malay",
+      "translation": "Selamat datang ke Rumah Harvics"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Malay",
+      "translation": "Harvics House mewakili kemuncak komitmen kami terhadap kualiti dan warisan. Di sini, kami menggabungkan pilihan produk premium terbaik kami, yang dipamerkan dalam persekitaran yang mencerminkan nilai-nilai keanggunan, tradisi dan inovasi kami."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Malay",
+      "translation": "Terokai koleksi eksklusif kami dan temui kisah di sebalik setiap produk yang menggunakan nama Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Malay",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Malay",
+      "translation": "Kecemerlangan dalam Barangan Pengguna Premium Sejak 2019"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Malay",
+      "translation": "Sebuah syarikat barangan pengguna global yang terkemuka yang menyediakan produk makanan premium merentasi pelbagai kategori dengan piawaian kualiti antarabangsa."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Malay",
+      "translation": "London • Milan • New York"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Malay",
+      "translation": "Sejak 2019"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Malay",
+      "translation": "Berita Harvics"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Malay",
+      "translation": "Langgan untuk menerima makluman dan kemas kini"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Malay",
+      "translation": "Daftar"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Malay",
+      "translation": "Kebimbangan Pematuhan"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Malay",
+      "translation": "Bersuaralah jika anda mempunyai kebimbangan tentang pematuhan atau etika"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Malay",
+      "translation": "Bersuaralah"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Malay",
+      "translation": "Hubungi Kami"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Malay",
+      "translation": "Hubungi pasukan kami"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Malay",
+      "translation": "Hubungi Kami"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Malay",
+      "translation": "Pautan Berguna"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Malay",
+      "translation": "Tanya Harwich"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Malay",
+      "translation": "Cari Pekerjaan"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Malay",
+      "translation": "Daftar untuk Berita"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Malay",
+      "translation": "Syarikat"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Malay",
+      "translation": "Alamat Global"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Malay",
+      "translation": "Strategi"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Malay",
+      "translation": "Kepimpinan Kami"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Malay",
+      "translation": "Jenama A-Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Malay",
+      "translation": "Sejarah Kami"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Malay",
+      "translation": "Kemampanan"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Malay",
+      "translation": "Berita"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Malay",
+      "translation": "Kenalan Media"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Malay",
+      "translation": "Imej"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Malay",
+      "translation": "Pelabur"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Malay",
+      "translation": "Tadbir Urus Korporat"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Malay",
+      "translation": "Saham, ADR & Bon"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Malay",
+      "translation": "Penerbitan"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Malay",
+      "translation": "Ikuti Kami"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Malay",
+      "translation": "0 Isu"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Malay",
+      "translation": "Peta Laman"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Malay",
+      "translation": "Nyahlanggan"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Malay",
+      "translation": "Bantuan"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Malay",
+      "translation": "Privasi"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Malay",
+      "translation": "Kuki"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Malay",
+      "translation": "Syarat Penggunaan"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Malay",
+      "translation": "Kebolehcapaian"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Malay",
+      "translation": "Kecekapan Karbon"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Malay",
+      "translation": "Pembekal"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Malay",
+      "translation": "Media Sosial"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Malay",
+      "translation": "Tetapan Kuki"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Malay",
+      "translation": "Kualiti Premium"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Malay",
+      "translation": "Alamat e-mel"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Malay",
+      "translation": "Masukkan alamat e-mel anda"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Malay",
+      "translation": "Langgan"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Malay",
+      "translation": "Melanggan..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Malay",
+      "translation": "Tentang Kami"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Malay",
+      "translation": "Media"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Malay",
+      "translation": "Cari produk, jenama atau kategori"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Malay",
+      "translation": "Tiada hasil ditemui"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Malay",
+      "translation": "Mencari..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Malay",
+      "translation": "Keputusan"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Malay",
+      "translation": "Bersembang dengan Kami"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Malay",
+      "translation": "Taip mesej anda..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Malay",
+      "translation": "Hantar"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Malay",
+      "translation": "Tutup"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Malay",
+      "translation": "Salam! Apa yang boleh saya bantu hari ini?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Malay",
+      "translation": "Maaf, saya tidak faham. Bolehkah anda ubah suai perkataan itu?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Malay",
+      "translation": "Saya boleh membantu anda dengan maklumat produk, pesanan atau pertanyaan umum. Apa yang anda ingin tahu?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Malay",
+      "translation": "Untuk bantuan lanjut, sila hubungi kami di support@harvics.com atau hubungi +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Malay",
+      "translation": "Bersembang dengan Kami"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Malay",
+      "translation": "Memuatkan..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Malay",
+      "translation": "Ralat"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Malay",
+      "translation": "Kejayaan"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Malay",
+      "translation": "Simpan"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Malay",
+      "translation": "Batal"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Malay",
+      "translation": "Padam"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Malay",
+      "translation": "Sunting"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Malay",
+      "translation": "Lihat"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Malay",
+      "translation": "Hantar"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Malay",
+      "translation": "Carian"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Malay",
+      "translation": "Penapis"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Malay",
+      "translation": "Jelas"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Malay",
+      "translation": "Muat turun"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Malay",
+      "translation": "Muat Naik"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Malay",
+      "translation": "Ya"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Malay",
+      "translation": "Tidak"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Malay",
+      "translation": "Tutup"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Malay",
+      "translation": "Kembali"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Malay",
+      "translation": "Seterusnya"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Malay",
+      "translation": "Sebelumnya"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Malay",
+      "translation": "Tindakan"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Malay",
+      "translation": "Status"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Malay",
+      "translation": "Tarikh"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Malay",
+      "translation": "Nama"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Malay",
+      "translation": "E-mel"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Malay",
+      "translation": "Telefon"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Malay",
+      "translation": "Alamat"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Malay",
+      "translation": "Negara"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Malay",
+      "translation": "Bandar"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Malay",
+      "translation": "Semua"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Malay",
+      "translation": "Tiada"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Malay",
+      "translation": "Pilih"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Malay",
+      "translation": "Pilih Bahasa"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Malay",
+      "translation": "Pilih Negara"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Malay",
+      "translation": "Tunjukkan Lagi"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Malay",
+      "translation": "Tunjukkan Kurang"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Malay",
+      "translation": "Diperlukan"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Malay",
+      "translation": "Menu"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Malay",
+      "translation": "Lihat Produk"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Malay",
+      "translation": "Mainkan Muzik"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Malay",
+      "translation": "Jeda Muzik"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Malay",
+      "translation": "Muzik Bisu"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Malay",
+      "translation": "Nyahbisukan Muzik"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Malay",
+      "translation": "Jangkauan Global Kami"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Malay",
+      "translation": "Sejak"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Malay",
+      "translation": "Pasaran Utama"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Malay",
+      "translation": "Pasaran Utama"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Malay",
+      "translation": "Kehadiran"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Malay",
+      "translation": "Negara-negara yang Dilayani"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Malay",
+      "translation": "Pasaran Utama"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Malay",
+      "translation": "Kategori Produk"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Malay",
+      "translation": "Ditubuhkan"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Malay",
+      "translation": "Hierarki Wilayah"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Malay",
+      "translation": "Laluan Penuh"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Malay",
+      "translation": "Wilayah Semasa"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Malay",
+      "translation": "Tiada item"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Malay",
+      "translation": "Globe"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Malay",
+      "translation": "Benua"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Malay",
+      "translation": "Wilayah"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Malay",
+      "translation": "Negara"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Malay",
+      "translation": "Bandar"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Malay",
+      "translation": "Daerah"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Malay",
+      "translation": "Lokasi"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Malay",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Malay",
+      "translation": "Global"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Malay",
+      "translation": "Pilih Wilayah"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Malay",
+      "translation": "Butiran Pelanggan"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Malay",
+      "translation": "Dipilih"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Malay",
+      "translation": "Nama Penuh"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Malay",
+      "translation": "Masukkan nama penuh anda"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Malay",
+      "translation": "Nama diperlukan"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Malay",
+      "translation": "Alamat E-mel"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Malay",
+      "translation": "e-mel anda@contoh.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Malay",
+      "translation": "E-mel diperlukan"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Malay",
+      "translation": "Sila masukkan alamat e-mel yang sah"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Malay",
+      "translation": "Nombor Telefon"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Malay",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Malay",
+      "translation": "Nombor telefon diperlukan"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Malay",
+      "translation": "Alamat"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Malay",
+      "translation": "Alamat anda"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Malay",
+      "translation": "Alamat diperlukan"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Malay",
+      "translation": "Saya bersetuju untuk menerima komunikasi pemasaran dan kemas kini"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Malay",
+      "translation": "Hantar & Teruskan"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Malay",
+      "translation": "Menyerahkan..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Malay",
+      "translation": "Langkau & Teruskan"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Malay",
+      "translation": "Petunjuk Prestasi Utama"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Malay",
+      "translation": "Pesanan hari ini"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Malay",
+      "translation": "Dihantar melalui Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Malay",
+      "translation": "Penghantaran yang belum selesai"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Malay",
+      "translation": "Merentasi laluan yang ditetapkan"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Malay",
+      "translation": "Peruncit"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Malay",
+      "translation": "Cawangan aktif dalam skop"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Malay",
+      "translation": "Skor T & A"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Malay",
+      "translation": "Liputan wilayah"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Malay",
+      "translation": "Kewangan & Inventori"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Malay",
+      "translation": "SKU stok rendah"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Malay",
+      "translation": "Pengisian semula pencetus"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Malay",
+      "translation": "Invois tertunggak"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Malay",
+      "translation": "Perlu diambil"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Malay",
+      "translation": "Had kredit"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Malay",
+      "translation": "Ditugaskan oleh kewangan"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Malay",
+      "translation": "Kelulusan automatik, pengisian semula stok dan peringatan invois diaktifkan"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Malay",
+      "translation": "Kelulusan Kendiri"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Malay",
+      "translation": "Pengisian Semula Stok"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Malay",
+      "translation": "Peringatan Invois"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Malay",
+      "translation": "Cadangan AI"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Malay",
+      "translation": "Tahap Risiko"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Malay",
+      "translation": "Berdasarkan penggunaan kredit dan sejarah pembayaran"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Malay",
+      "translation": "Pesanan yang Dicadangkan"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Malay",
+      "translation": "SKU yang disyorkan AI untuk dipesan"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Malay",
+      "translation": "Tindakan Seterusnya"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Malay",
+      "translation": "Tindakan & Panduan"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Malay",
+      "translation": "Aduan"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Malay",
+      "translation": "Isu peruncit menunggu tindakan"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Malay",
+      "translation": "Buku Panduan"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Malay",
+      "translation": "Utamakan penghantaran yang belum selesai sebelum tengah hari."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Malay",
+      "translation": "Tutup semua aduan tertunggak dalam tempoh 48 jam."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Malay",
+      "translation": "Cetuskan pengisian semula untuk SKU stok rendah (cipta PO automatik)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Malay",
+      "translation": "Wilayah"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Malay",
+      "translation": "Pesanan Bulan Ini"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Malay",
+      "translation": "Pesanan Belum Selesai"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Malay",
+      "translation": "Pesanan yang Dihantar"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Malay",
+      "translation": "Maklumat Wilayah"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Malay",
+      "translation": "Negara"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Malay",
+      "translation": "Bandar"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Malay",
+      "translation": "Wilayah"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Malay",
+      "translation": "Tindakan Pantas"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Malay",
+      "translation": "Pesanan Baru"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Malay",
+      "translation": "Lihat Pesanan"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Malay",
+      "translation": "Lihat Invois"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Malay",
+      "translation": "Tetapan Profil"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Malay",
+      "translation": "Memuatkan papan pemuka..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Malay",
+      "translation": "Ralat"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Malay",
+      "translation": "Pesanan Saya"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Malay",
+      "translation": "ID Pesanan"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Malay",
+      "translation": "Tarikh"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Malay",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Malay",
+      "translation": "Barangan"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Malay",
+      "translation": "Jumlah Keseluruhan"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Malay",
+      "translation": "Tindakan"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Malay",
+      "translation": "Lihat Butiran"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Malay",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Malay",
+      "translation": "Tarikh Mula"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Malay",
+      "translation": "Tarikh Tamat"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Malay",
+      "translation": "Semua Status"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Malay",
+      "translation": "Kosongkan Penapis"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Malay",
+      "translation": "Belum selesai"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Malay",
+      "translation": "Pemprosesan"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Malay",
+      "translation": "Dihantar"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Malay",
+      "translation": "Dibatalkan"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Malay",
+      "translation": "Tiada pesanan ditemui"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Malay",
+      "translation": "Memuatkan pesanan..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Malay",
+      "translation": "Halaman"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Malay",
+      "translation": "daripada"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Malay",
+      "translation": "Sebelumnya"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Malay",
+      "translation": "Seterusnya"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Malay",
+      "translation": "Butiran Pesanan"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Malay",
+      "translation": "Kembali ke Pesanan"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Malay",
+      "translation": "ID Pesanan"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Malay",
+      "translation": "Status"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Malay",
+      "translation": "Tarikh Pesanan"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Malay",
+      "translation": "Tarikh Penghantaran"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Malay",
+      "translation": "Alamat Penghantaran"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Malay",
+      "translation": "Nota"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Malay",
+      "translation": "Barang Pesanan"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Malay",
+      "translation": "Produk"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Malay",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Malay",
+      "translation": "Kuantiti"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Malay",
+      "translation": "Harga Seunit"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Malay",
+      "translation": "Jumlah"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Malay",
+      "translation": "Jumlah Keseluruhan"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Malay",
+      "translation": "Garis Masa Status"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Malay",
+      "translation": "Pesanan tidak ditemui"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Malay",
+      "translation": "Cipta Pesanan Baharu"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Malay",
+      "translation": "Barang Pesanan"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Malay",
+      "translation": "Tambah Item"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Malay",
+      "translation": "Tiada item ditambah lagi. Klik \"Tambah Item\" untuk bermula."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Malay",
+      "translation": "Butiran Pesanan"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Malay",
+      "translation": "Tarikh Penghantaran"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Malay",
+      "translation": "Alamat Penghantaran"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Malay",
+      "translation": "Nota"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Malay",
+      "translation": "Jumlah Keseluruhan"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Malay",
+      "translation": "Cipta Pesanan"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Malay",
+      "translation": "Mencipta Pesanan..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Malay",
+      "translation": "Batal"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Malay",
+      "translation": "Pilih Produk"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Malay",
+      "translation": "Produk"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Malay",
+      "translation": "Kuantiti"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Malay",
+      "translation": "Harga Seunit"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Malay",
+      "translation": "Alih keluar"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Malay",
+      "translation": "Subjumlah"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Malay",
+      "translation": "ID Pesanan"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Malay",
+      "translation": "Sekurang-kurangnya satu item pesanan diperlukan"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Malay",
+      "translation": "Produk diperlukan"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Malay",
+      "translation": "Kuantiti mesti lebih besar daripada 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Malay",
+      "translation": "Harga seunit mestilah bukan negatif"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Malay",
+      "translation": "Format tarikh penghantaran tidak sah"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Malay",
+      "translation": "Tarikh penghantaran tidak boleh melepasi tarikh"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Malay",
+      "translation": "Invois Saya"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Malay",
+      "translation": "Nombor Invois"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Malay",
+      "translation": "Tarikh Invois"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Malay",
+      "translation": "Dua Tarikh"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Malay",
+      "translation": "Jumlah"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Malay",
+      "translation": "Jumlah yang Dibayar"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Malay",
+      "translation": "Status Pembayaran"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Malay",
+      "translation": "Status Pembayaran"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Malay",
+      "translation": "Semua Status"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Malay",
+      "translation": "Kosongkan Penapis"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Malay",
+      "translation": "Dibayar"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Malay",
+      "translation": "Tidak dibayar"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Malay",
+      "translation": "Sebahagian"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Malay",
+      "translation": "Tiada invois ditemui"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Malay",
+      "translation": "Memuatkan invois..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Malay",
+      "translation": "Profil Saya"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Malay",
+      "translation": "Maklumat Akaun"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Malay",
+      "translation": "ID Pengedar"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Malay",
+      "translation": "Wilayah"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Malay",
+      "translation": "Negara"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Malay",
+      "translation": "Bandar"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Malay",
+      "translation": "Akaun Dibuat"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Malay",
+      "translation": "Kemas Kini Profil"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Malay",
+      "translation": "Nama"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Malay",
+      "translation": "E-mel"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Malay",
+      "translation": "Telefon"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Malay",
+      "translation": "Alamat"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Malay",
+      "translation": "Bahasa"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Malay",
+      "translation": "Mata wang"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Malay",
+      "translation": "Simpan Perubahan"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Malay",
+      "translation": "Menyimpan..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Malay",
+      "translation": "Profil berjaya dikemas kini"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Malay",
+      "translation": "Memuatkan profil..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Malay",
+      "translation": "Format e-mel tidak sah"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Malay",
+      "translation": "Format telefon tidak sah"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Malay",
+      "translation": "Ralat"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Malay",
+      "translation": "Memuatkan..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Malay",
+      "translation": "Simpan"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Malay",
+      "translation": "Batal"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Malay",
+      "translation": "Kembali"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Malay",
+      "translation": "Hantar"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Malay",
+      "translation": "Padam"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Malay",
+      "translation": "Sunting"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Malay",
+      "translation": "Lihat"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Malay",
+      "translation": "Carian"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Malay",
+      "translation": "Penapis"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Malay",
+      "translation": "Jelas"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Malay",
+      "translation": "Mohon"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Malay",
+      "translation": "Tutup"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Malay",
+      "translation": "Sahkan"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Malay",
+      "translation": "Ya"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Malay",
+      "translation": "Tidak"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Malay",
+      "translation": "Sistem Pengendalian Perundangan"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Malay",
+      "translation": "OS Perundangan"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Malay",
+      "translation": "Akses Ditolak"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Malay",
+      "translation": "Anda tidak mempunyai kebenaran untuk mengakses modul OS Legal."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Malay",
+      "translation": "Papan Pemuka"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Malay",
+      "translation": "Kontrak"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Malay",
+      "translation": "Sijil"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Malay",
+      "translation": "Pematuhan"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Malay",
+      "translation": "Papan Pemuka Undang-undang"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Malay",
+      "translation": "Gambaran keseluruhan operasi perundangan dan status pematuhan"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Malay",
+      "translation": "Cap Dagangan Aktif"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Malay",
+      "translation": "Kontrak Aktif"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Malay",
+      "translation": "Status Pematuhan"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Malay",
+      "translation": "Cap Dagangan"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Malay",
+      "translation": "Mengurus pendaftaran dan permohonan tanda dagangan"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Malay",
+      "translation": "Tambah Cap Dagangan Baharu"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Malay",
+      "translation": "Negara"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Malay",
+      "translation": "Status"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Malay",
+      "translation": "Semua Negara"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Malay",
+      "translation": "Semua Status"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Malay",
+      "translation": "Kosongkan Penapis"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Malay",
+      "translation": "Nama Jenama"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Malay",
+      "translation": "Kelas"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Malay",
+      "translation": "Negara"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Malay",
+      "translation": "No. Permohonan"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Malay",
+      "translation": "Status"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Malay",
+      "translation": "Tarikh Luput"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Malay",
+      "translation": "Tindakan"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Malay",
+      "translation": "Edit Cap Dagangan"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Malay",
+      "translation": "Tambah Cap Dagangan Baharu"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Malay",
+      "translation": "Lihat Cap Dagangan"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Malay",
+      "translation": "Nama Jenama"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Malay",
+      "translation": "Nombor Kelas"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Malay",
+      "translation": "Negara"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Malay",
+      "translation": "Nombor Permohonan"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Malay",
+      "translation": "Status"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Malay",
+      "translation": "Tarikh Luput"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Malay",
+      "translation": "Dokumen"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Malay",
+      "translation": "Tiada dokumen yang dilampirkan"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Malay",
+      "translation": "Tambah Dokumen"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Malay",
+      "translation": "Alih keluar"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Malay",
+      "translation": "Gagal memuatkan tanda dagangan"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Malay",
+      "translation": "Gagal menyimpan tanda dagangan. Sila cuba lagi."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Malay",
+      "translation": "Kes-kes Perundangan"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Malay",
+      "translation": "Mengurus kes undang-undang dan menjejaki statusnya"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Malay",
+      "translation": "Kes Baharu"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Malay",
+      "translation": "Tajuk Kes"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Malay",
+      "translation": "Jenis Kes"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Malay",
+      "translation": "Negara"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Malay",
+      "translation": "Penerangan"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Malay",
+      "translation": "Ditugaskan Kepada"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Malay",
+      "translation": "Status"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Malay",
+      "translation": "Tarikh Pendengaran"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Malay",
+      "translation": "Tajuk Kes"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Malay",
+      "translation": "Jenis"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Malay",
+      "translation": "Negara"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Malay",
+      "translation": "Ditugaskan Kepada"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Malay",
+      "translation": "Status"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Malay",
+      "translation": "Tarikh Pendengaran"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Malay",
+      "translation": "Tindakan"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Malay",
+      "translation": "Buka"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Malay",
+      "translation": "Sedang Dijalankan"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Malay",
+      "translation": "Ditutup"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Malay",
+      "translation": "Dibatalkan"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Malay",
+      "translation": "Paparan Peta Armada"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Malay",
+      "translation": "Penjejakan masa nyata pegawai jualan dan kenderaan penghantaran"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Malay",
+      "translation": "Pekerja Aktif"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Malay",
+      "translation": "Tiada pekerja aktif"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Malay",
+      "translation": "Memuatkan..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Malay",
+      "translation": "Main Semula Laluan"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Malay",
+      "translation": "Pekerja"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Malay",
+      "translation": "Kelajuan"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Malay",
+      "translation": "Tetapkan semula"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Malay",
+      "translation": "Main"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Malay",
+      "translation": "Jeda"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Malay",
+      "translation": "mata"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Malay",
+      "translation": "Tiada data laluan tersedia"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Malay",
+      "translation": "Memuatkan laluan..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Malay",
+      "translation": "Produk Pesaing"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Malay",
+      "translation": "Jejaki maklumat produk pesaing"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Malay",
+      "translation": "Tambah Produk"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Malay",
+      "translation": "Tambah Produk Pesaing"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Malay",
+      "translation": "Jenama"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Malay",
+      "translation": "Nama SKU"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Malay",
+      "translation": "Kategori"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Malay",
+      "translation": "Saiz"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Malay",
+      "translation": "Harga"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Malay",
+      "translation": "Mata wang"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Malay",
+      "translation": "Negara"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Malay",
+      "translation": "Jenama"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Malay",
+      "translation": "Nama SKU"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Malay",
+      "translation": "Kategori"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Malay",
+      "translation": "Saiz"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Malay",
+      "translation": "Harga"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Malay",
+      "translation": "Negara"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Malay",
+      "translation": "Tarikh Ditambah"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Malay",
+      "translation": "Gagal memuatkan produk"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Malay",
+      "translation": "Gagal mencipta produk. Sila cuba lagi."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Malay",
+      "translation": "Tiada produk pesaing ditemui"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Malay",
+      "translation": "Memuatkan produk..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Malay",
+      "translation": "Papan Pemuka Pesaing"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Malay",
+      "translation": "Analisis dan pandangan tentang produk pesaing"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Malay",
+      "translation": "Jumlah Produk"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Malay",
+      "translation": "Jenama Dijejaki"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Malay",
+      "translation": "Negara-negara"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Malay",
+      "translation": "Kategori"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Malay",
+      "translation": "Produk mengikut Jenama"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Malay",
+      "translation": "Produk mengikut Negara"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Malay",
+      "translation": "Produk mengikut Kategori"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Malay",
+      "translation": "Memuatkan statistik..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Malay",
+      "translation": "Tiada statistik tersedia"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Malay",
+      "translation": "Gambaran Keseluruhan"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Malay",
+      "translation": "Pesanan"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Malay",
+      "translation": "Inventori"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Malay",
+      "translation": "Logistik"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Malay",
+      "translation": "Kewangan"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Malay",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Malay",
+      "translation": "Sumber Manusia"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Malay",
+      "translation": "Eksekutif"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Malay",
+      "translation": "Pelabur"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Malay",
+      "translation": "Perundangan/IPR"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Malay",
+      "translation": "Pesaing"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Malay",
+      "translation": "Import/Eksport"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Malay",
+      "translation": "Penjejakan GPS"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Malay",
+      "translation": "Penyetempatan"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Malay",
+      "translation": "Aliran kerja"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Malay",
+      "translation": "Pentadbir"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Malay",
+      "translation": "Sistem Operasi CRM"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Malay",
+      "translation": "Pelanggan 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Malay",
+      "translation": "Profil pelanggan yang lengkap, sejarah interaksi dan pengurusan perhubungan"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Malay",
+      "translation": "Kempen Digital"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Malay",
+      "translation": "Kempen pemasaran berbilang saluran (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Malay",
+      "translation": "Bakal Pelanggan & Peluang"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Malay",
+      "translation": "Pengurusan petunjuk, kelayakan dan saluran peluang"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Malay",
+      "translation": "Sokongan Pelanggan"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Malay",
+      "translation": "Pengurusan tiket, khidmat pelanggan dan penyelesaian isu"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Malay",
+      "translation": "Program Kesetiaan"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Malay",
+      "translation": "Kesetiaan peruncit, gamifikasi dan pengurusan ganjaran"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Malay",
+      "translation": "Pelanggan 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Malay",
+      "translation": "Pelanggan Baharu"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Malay",
+      "translation": "Jumlah Pelanggan"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Malay",
+      "translation": "Aktif"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Malay",
+      "translation": "Baru"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Malay",
+      "translation": "Kepuasan"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Malay",
+      "translation": "Pengurusan Pelanggan"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Malay",
+      "translation": "Lihat dan urus perhubungan, interaksi dan kempen pelanggan anda."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Malay",
+      "translation": "Memuatkan..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Malay",
+      "translation": "Ralat memuatkan data CRM"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Malay",
+      "translation": "Gambaran Keseluruhan"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Malay",
+      "translation": "Pesanan"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Malay",
+      "translation": "Inventori"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Malay",
+      "translation": "Logistik"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Malay",
+      "translation": "Kewangan"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Malay",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Malay",
+      "translation": "Sumber Manusia"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Malay",
+      "translation": "Eksekutif"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Malay",
+      "translation": "Pelabur"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Malay",
+      "translation": "Perundangan/IPR"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Malay",
+      "translation": "Pesaing"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Malay",
+      "translation": "Import/Eksport"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Malay",
+      "translation": "Penjejakan GPS"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Malay",
+      "translation": "Penyetempatan"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Malay",
+      "translation": "Aliran kerja"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Malay",
+      "translation": "Pentadbir"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Malay",
+      "translation": "Pelanggan"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Malay",
+      "translation": "Pekerja"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Malay",
+      "translation": "Keuntungan"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Malay",
+      "translation": "Memuatkan kokpit pembekal…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Malay",
+      "translation": "Pesanan pembelian"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Malay",
+      "translation": "Dibesarkan oleh Harvics"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Malay",
+      "translation": "Penghantaran / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Malay",
+      "translation": "Diterima minggu ini"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Malay",
+      "translation": "Invois dibuat"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Malay",
+      "translation": "Menunggu pembayaran"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Malay",
+      "translation": "Pembayaran belum selesai"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Malay",
+      "translation": "Dijadualkan untuk dikeluarkan"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Malay",
+      "translation": "Kualiti / aduan"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Malay",
+      "translation": "Tiket terbuka"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Malay",
+      "translation": "Ramalan (4 minggu akan datang)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Malay",
+      "translation": "Pemegang tempat AI"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Malay",
+      "translation": "Tindakan pembekal"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Malay",
+      "translation": "Sahkan penghantaran akan datang dan kemas kini jadual GRN."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Malay",
+      "translation": "Semak invois tertunggak dan kongsikan nasihat pembayaran."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Malay",
+      "translation": "Selesaikan aduan kualiti terbuka dengan bukti QA."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Malay",
+      "translation": "Nama pengguna"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Malay",
+      "translation": "Kata Laluan"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Malay",
+      "translation": "E-mel"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Malay",
+      "translation": "Hantar"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Malay",
+      "translation": "Batal"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Malay",
+      "translation": "Simpan"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Malay",
+      "translation": "Padam"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Malay",
+      "translation": "Carian"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Malay",
+      "translation": "Penapis"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Malay",
+      "translation": "Tetapkan semula"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Malay",
+      "translation": "Tutup"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Malay",
+      "translation": "Kembali"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Malay",
+      "translation": "Seterusnya"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Malay",
+      "translation": "Sebelumnya"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Malay",
+      "translation": "Sahkan"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Malay",
+      "translation": "Ingat saya"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Malay",
+      "translation": "Lupa kata laluan?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Malay",
+      "translation": "E-mel diperlukan"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Malay",
+      "translation": "Sila masukkan alamat e-mel yang sah"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Malay",
+      "translation": "Produk"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Malay",
+      "translation": "Apakah produk yang ditawarkan oleh Harvics?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Malay",
+      "translation": "Kami menawarkan pelbagai jenis produk makanan premium termasuk kuih-muih, minuman, snek, pasta, barangan bakeri dan makanan sejuk beku merentasi pelbagai kategori."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Malay",
+      "translation": "Di mana saya boleh membeli produk Harvics?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Malay",
+      "translation": "Produk kami boleh didapati di kedai runcit di lebih 40 buah negara. Gunakan pencari kedai atau halaman hubungan kami untuk mencari peruncit berhampiran anda."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Malay",
+      "translation": "Adakah anda menawarkan pesanan pukal?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Malay",
+      "translation": "Ya, kami menawarkan diskaun pesanan pukal untuk perniagaan dan peruncit. Lawati halaman Diskaun Pesanan Pukal kami untuk maklumat lanjut."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Malay",
+      "translation": "Pesanan & Penghantaran"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Malay",
+      "translation": "Apakah pilihan penghantaran anda?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Malay",
+      "translation": "Kami menawarkan pelbagai pilihan penghantaran termasuk penghantaran standard, ekspres dan antarabangsa. Penghantaran percuma tersedia untuk pesanan melebihi $50."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Malay",
+      "translation": "Berapa lama masa yang diperlukan untuk penghantaran?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Malay",
+      "translation": "Masa penghantaran berbeza mengikut lokasi. Penghantaran standard biasanya mengambil masa 5-7 hari bekerja, manakala penghantaran ekspres mengambil masa 2-3 hari bekerja."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Malay",
+      "translation": "Bolehkah saya menjejaki pesanan saya?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Malay",
+      "translation": "Ya, anda boleh menjejaki pesanan anda menggunakan nombor penjejakan yang diberikan dalam e-mel pengesahan pesanan anda."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Malay",
+      "translation": "Akaun & Pembayaran"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Malay",
+      "translation": "Bagaimanakah saya boleh membuat akaun?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Malay",
+      "translation": "Klik pada \"Log Masuk\" dalam pengepala dan pilih \"Buat Akaun\" untuk mendaftar akaun baharu."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Malay",
+      "translation": "Apakah kaedah pembayaran yang anda terima?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Malay",
+      "translation": "Kami menerima semua kad kredit utama, kad debit, PayPal dan pemindahan bank untuk pesanan B2B."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Malay",
+      "translation": "Adakah maklumat pembayaran saya selamat?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Malay",
+      "translation": "Ya, kami menggunakan penyulitan standard industri untuk melindungi maklumat pembayaran anda."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Malay",
+      "translation": "Pulangan & Bayaran Balik"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Malay",
+      "translation": "Apakah polisi pemulangan anda?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Malay",
+      "translation": "Kami menawarkan polisi pemulangan 30 hari untuk produk yang belum dibuka dalam pembungkusan asal. Sila hubungi khidmat pelanggan kami untuk kebenaran pemulangan."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Malay",
+      "translation": "Bagaimanakah saya boleh meminta bayaran balik?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Malay",
+      "translation": "Hubungi pasukan khidmat pelanggan kami dengan nombor pesanan anda dan sebab pemulangan. Kami akan memproses bayaran balik anda dalam tempoh 5-7 hari bekerja."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Malay",
+      "translation": "Masih Ada Soalan?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Malay",
+      "translation": "Pasukan khidmat pelanggan kami sedia membantu"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Malay",
+      "translation": "Hubungi Kami"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Malay",
+      "translation": "Kerjaya"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Malay",
+      "translation": "Kerjaya | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Malay",
+      "translation": "Sertai Harvics Global Ventures — terokai peluang merentasi 40+ buah negara."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Malay",
+      "translation": "Sertai Kami"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Malay",
+      "translation": "Bina Masa Depan Perdagangan Global"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Malay",
+      "translation": "Kami sedang berkembang merentasi lebih 40 buah negara. Sertai pasukan yang sedang membina sistem pengendalian berkuasa AI untuk perdagangan global."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Malay",
+      "translation": "Jawatan Terbuka"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Malay",
+      "translation": "Negara-negara"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Malay",
+      "translation": "Vertikal Industri"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Malay",
+      "translation": "Pengambilan Jabatan"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Malay",
+      "translation": "Jawatan Kosong Mengikut Jabatan"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Malay",
+      "translation": "Jualan & Pengedaran"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Malay",
+      "translation": "Memacu pendapatan merentasi lebih 40 pasaran. Pengurusan wilayah, akaun utama, hubungan pengedar."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Malay",
+      "translation": "Rantaian Bekalan & Logistik"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Malay",
+      "translation": "Rantaian bekalan hujung ke hujung dari kilang ke rak. Pengurusan armada, pergudangan, penghantaran peringkat akhir."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Malay",
+      "translation": "Teknologi & AI"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Malay",
+      "translation": "Bina Harvics OS — platform perusahaan kami yang dikuasakan AI. Kejuruteraan ML, tindanan penuh, sains data."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Malay",
+      "translation": "Kewangan & Perbendaharaan"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Malay",
+      "translation": "Perbendaharaan pelbagai mata wang, pembiayaan perdagangan, pembayaran digital HPay, pengurusan FX merentasi wilayah."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Malay",
+      "translation": "Perolehan & Sumber"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Malay",
+      "translation": "Sumber global dari 15+ negara asal. Audit pembekal, kawalan kualiti, program terus dari kilang."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Malay",
+      "translation": "Sumber Manusia"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Malay",
+      "translation": "Pemerolehan bakat, P&P, pengurusan prestasi merentasi pelbagai geografi dan budaya."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Malay",
+      "translation": "Perundangan & Pematuhan"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Malay",
+      "translation": "Pematuhan perdagangan, penyaringan sekatan, perlindungan IP, pengurusan kontrak merentasi bidang kuasa."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Malay",
+      "translation": "Pemasaran & Jenama"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Malay",
+      "translation": "Kempen berbilang bahasa, kandungan 38 lokasi, pemasaran digital, strategi jenama untuk 10 vertikal."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Malay",
+      "translation": "peranan"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Malay",
+      "translation": "Mengapa Harvics"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Malay",
+      "translation": "Mobiliti Global"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Malay",
+      "translation": "Bekerja di seluruh Dubai, London, Karachi, Lahore dan lebih 40 pasaran"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Malay",
+      "translation": "Trek Pertumbuhan"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Malay",
+      "translation": "Kemajuan kerjaya pantas dalam perusahaan yang berskala besar"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Malay",
+      "translation": "Budaya AI-Utama"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Malay",
+      "translation": "Bekerja dengan AI canggih dan sistem perisikan masa nyata"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Malay",
+      "translation": "Pakej Kompetitif"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Malay",
+      "translation": "Pampasan, perumahan dan faedah yang terkemuka di pasaran"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Malay",
+      "translation": "Bajet Pembelajaran"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Malay",
+      "translation": "Bajet pembangunan tahunan untuk kursus, persidangan dan pensijilan"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Malay",
+      "translation": "Kerja Fleksibel"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Malay",
+      "translation": "Pengaturan hibrid dengan pejabat hab serantau di seluruh dunia"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Malay",
+      "translation": "Strategi Kami"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Malay",
+      "translation": "Strategi | Harwich"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Malay",
+      "translation": "Membina masa depan yang mampan melalui inovasi dan kecemerlangan"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Malay",
+      "translation": "Membina masa depan yang mampan melalui inovasi dan kecemerlangan"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Malay",
+      "translation": "Pengembangan Global"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Malay",
+      "translation": "Memperluas kehadiran kami dalam pasaran baru muncul sambil mengukuhkan kedudukan kami dalam pasaran yang mantap"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Malay",
+      "translation": "Inovasi Produk"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Malay",
+      "translation": "Melabur dalam R&D untuk membangunkan produk baharu yang memenuhi citarasa pengguna yang sentiasa berubah"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Malay",
+      "translation": "Kemampanan"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Malay",
+      "translation": "Komited terhadap amalan mampan merentasi rantaian bekalan dan operasi kami"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Malay",
+      "translation": "Transformasi Digital"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Malay",
+      "translation": "Memanfaatkan teknologi untuk meningkatkan pengalaman pelanggan dan kecekapan operasi"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Malay",
+      "translation": "Visi Kami"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Malay",
+      "translation": "Untuk menjadi syarikat barangan pengguna premium yang terkemuka di dunia, diiktiraf atas kualiti, inovasi dan kemampanan."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Malay",
+      "translation": "Harvics Global Ventures | Perdagangan Global Premium"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Malay",
+      "translation": "Syarikat perdagangan global terkemuka yang menyediakan produk premium merentasi 10+ industri. Beroperasi di 50+ negara sejak 2019."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Malay",
+      "translation": "Tentang Kami | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Malay",
+      "translation": "Ketahui bagaimana Harvics Global Ventures menjadi kuasa utama dalam perdagangan global merentasi lebih 40 negara dan 10 industri."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Malay",
+      "translation": "Hubungi Kami | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Malay",
+      "translation": "Hubungi pejabat Harvics di seluruh dunia di Timur Tengah, Asia Selatan, Eropah, Afrika dan Amerika."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Malay",
+      "translation": "Produk | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Malay",
+      "translation": "Terokai rangkaian produk premium Harvics merentasi FMCG, tekstil, komoditi dan penyelesaian perindustrian."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Malay",
+      "translation": "Kerjaya | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Malay",
+      "translation": "Sertai Harvics Global Ventures — terokai peluang merentasi 40+ negara dalam FMCG, tekstil, logistik dan teknologi."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Malay",
+      "translation": "Pusat Media | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Malay",
+      "translation": "Pusat media Harvics — siaran akhbar, berita terkini, aset jenama dan kenalan media."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Malay",
+      "translation": "Strategi Kami | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Malay",
+      "translation": "Visi strategik Harvics untuk pengembangan global, inovasi, kemampanan dan transformasi digital."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Malay",
+      "translation": "Tanggungjawab Sosial Korporat | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Malay",
+      "translation": "Inisiatif CSR Harvics — pengawasan alam sekitar, program komuniti dan amalan perniagaan yang beretika."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Malay",
+      "translation": "Soalan Lazim | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Malay",
+      "translation": "Soalan lazim tentang produk, perkhidmatan, pesanan dan operasi global Harvics."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Malay",
+      "translation": "Lokasi Global | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Malay",
+      "translation": "Pejabat dan operasi Harvics merentasi Timur Tengah, Asia Selatan, Eropah, Afrika dan Amerika."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Malay",
+      "translation": "Pasukan Kepimpinan | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Malay",
+      "translation": "Temui pasukan kepimpinan yang memacu Harvics Global Ventures merentasi lebih 40 pasaran dan 10 vertikal industri."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Malay",
+      "translation": "Pusat Bantuan | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Malay",
+      "translation": "Dapatkan bantuan dengan pesanan, akaun, penghantaran dan perkhidmatan Harvics."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Malay",
+      "translation": "Pematuhan dan Etika | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Malay",
+      "translation": "Komitmen Harvics terhadap pematuhan peraturan, amalan perniagaan beretika dan piawaian global."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Malay",
+      "translation": "Sejarah Kami | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Malay",
+      "translation": "Daripada sebuah syarikat baharu di Dubai pada tahun 2019 kepada sebuah perusahaan global yang merangkumi lebih 40 buah negara — kisah Harvics."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Malay",
+      "translation": "Surat Berita | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Malay",
+      "translation": "Langgan surat berita Harvics untuk maklumat industri dan pelancaran produk."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Malay",
+      "translation": "Daftar Masuk | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Malay",
+      "translation": "Log masuk ke akaun Harvics anda untuk mengurus pesanan dan mengakses platform."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Malay",
+      "translation": "Penyelidikan dan Inovasi | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Malay",
+      "translation": "Inisiatif penyelidikan dan program inovasi Harvics yang memacu strategi global kami."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Malay",
+      "translation": "Perhubungan Pelabur | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Malay",
+      "translation": "Maklumat pelabur, laporan kewangan dan pengumuman korporat daripada Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Malay",
+      "translation": "Halaman Tidak Ditemui"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Malay",
+      "translation": "404 — Halaman Tidak Ditemui"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Malay",
+      "translation": "Halaman yang anda cari tidak wujud atau telah dipindahkan."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Malay",
+      "translation": "Pergi ke Laman Utama"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Malay",
+      "translation": "Kembali"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Malay",
+      "translation": "Ada yang Tidak Berlaku"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Malay",
+      "translation": "Ada yang tidak kena"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Malay",
+      "translation": "Kami memohon maaf, tetapi sesuatu yang tidak dijangka telah berlaku. Sila cuba muat semula halaman ini."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Malay",
+      "translation": "Cuba Lagi"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Malay",
+      "translation": "Muat Semula Halaman"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Malay",
+      "translation": "Hubungi Sokongan"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Malay",
+      "translation": "Ralat Aplikasi"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Malay",
+      "translation": "Ralat Kritikal"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Malay",
+      "translation": "Ralat kritikal telah berlaku. Sila muat semula halaman."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Malay",
+      "translation": "Permohonan Muat Semula"
+    }
+  }
+}

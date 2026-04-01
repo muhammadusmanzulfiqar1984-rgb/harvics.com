@@ -211,3 +211,43 @@ export function validatePhoneNumber(phone: string, countryCode: string): boolean
   const validator = validations[countryCode.toUpperCase()];
   return validator ? validator(digits) : digits.length >= 8 && digits.length <= 15;
 }
+
+/**
+ * Format a large number into compact locale-aware notation (K / M / B).
+ * Uses Intl.NumberFormat with `notation: 'compact'` where supported,
+ * with a manual fallback for environments that don't support it.
+ *
+ * @example
+ * formatCompact(4523000000, 'en', 'USD') // "$4.5B"
+ * formatCompact(4523000000, 'ar', 'AED') // "٤٫٥ مليار"
+ */
+export function formatCompact(
+  value: number,
+  locale: string = 'en',
+  currencyCode?: string
+): string {
+  try {
+    const options: Intl.NumberFormatOptions = {
+      notation: 'compact',
+      compactDisplay: 'short',
+      maximumFractionDigits: 1,
+      ...(currencyCode ? { style: 'currency', currency: currencyCode } : {}),
+    }
+    return new Intl.NumberFormat(locale, options).format(value)
+  } catch {
+    // Manual fallback
+    const symbol = currencyCode
+      ? (() => {
+          try {
+            const parts = new Intl.NumberFormat(locale, { style: 'currency', currency: currencyCode })
+              .formatToParts(0)
+            return parts.find(p => p.type === 'currency')?.value || currencyCode
+          } catch { return currencyCode }
+        })()
+      : ''
+    if (value >= 1_000_000_000) return `${symbol}${(value / 1_000_000_000).toFixed(1)}B`
+    if (value >= 1_000_000)     return `${symbol}${(value / 1_000_000).toFixed(1)}M`
+    if (value >= 1_000)         return `${symbol}${(value / 1_000).toFixed(1)}K`
+    return `${symbol}${value.toFixed(0)}`
+  }
+}

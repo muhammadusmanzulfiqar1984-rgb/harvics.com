@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "ja",
+    "language": "Japanese",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Japanese. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Japanese",
+      "translation": "ようこそ"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Japanese",
+      "translation": "ハーウィッチ"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Japanese",
+      "translation": "2019年以来、プレミアム消費財における卓越性"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Japanese",
+      "translation": "国際的な品質基準を満たした、多様なカテゴリーにわたる高品質な食品を提供する、世界有数の消費財企業。"
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Japanese",
+      "translation": "製品を探す"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Japanese",
+      "translation": "お問い合わせ"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Japanese",
+      "translation": "もっと詳しく知る"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Japanese",
+      "translation": "プレミアム消費財における卓越性"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Japanese",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Japanese",
+      "translation": "ロンドン・ミラノ・ニューヨーク"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Japanese",
+      "translation": "ベーカリー"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Japanese",
+      "translation": "飲料"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Japanese",
+      "translation": "菓子"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Japanese",
+      "translation": "料理"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Japanese",
+      "translation": "冷凍食品"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Japanese",
+      "translation": "パスタ"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Japanese",
+      "translation": "おやつ"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Japanese",
+      "translation": "ESGレポート2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Japanese",
+      "translation": "ロンドン・ミラノ・ニューヨーク"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Japanese",
+      "translation": "家"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Japanese",
+      "translation": "について"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Japanese",
+      "translation": "私たちについて"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Japanese",
+      "translation": "ブランドストーリー"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Japanese",
+      "translation": "製品"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Japanese",
+      "translation": "当社の製品"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Japanese",
+      "translation": "全商品を見る"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Japanese",
+      "translation": "CSR"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Japanese",
+      "translation": "投資家向け情報"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Japanese",
+      "translation": "投資家"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Japanese",
+      "translation": "メディア"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Japanese",
+      "translation": "お問い合わせ"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックス・ハウス"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Japanese",
+      "translation": "国々"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Japanese",
+      "translation": "ポータル"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Japanese",
+      "translation": "サインイン"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Japanese",
+      "translation": "ウィッシュリスト"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Japanese",
+      "translation": "ショッピングカート"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Japanese",
+      "translation": "ヘルプ"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Japanese",
+      "translation": "店舗を探す"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Japanese",
+      "translation": "お金"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Japanese",
+      "translation": "販売"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Japanese",
+      "translation": "オファー"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Japanese",
+      "translation": "ダークモード"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Japanese",
+      "translation": "クレジットカード"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Japanese",
+      "translation": "M&Sリワードクレジットカード"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Japanese",
+      "translation": "クラブ特典"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Japanese",
+      "translation": "当社のクレジットカード"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Japanese",
+      "translation": "保険"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Japanese",
+      "translation": "住宅保険"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Japanese",
+      "translation": "旅行保険"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Japanese",
+      "translation": "旅行サービス"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Japanese",
+      "translation": "旅行資金"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Japanese",
+      "translation": "為替レート"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Japanese",
+      "translation": "追加サービス"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Japanese",
+      "translation": "貯蓄と投資"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Japanese",
+      "translation": "個人向けローン"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Japanese",
+      "translation": "財政支援"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Japanese",
+      "translation": "現在の売上"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Japanese",
+      "translation": "クリアランス"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Japanese",
+      "translation": "季節限定セール"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Japanese",
+      "translation": "特別オファー"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Japanese",
+      "translation": "プロモーション"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Japanese",
+      "translation": "大量注文割引"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Japanese",
+      "translation": "当社の製品"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Japanese",
+      "translation": "全商品を見る"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Japanese",
+      "translation": "当社の製品カテゴリー"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Japanese",
+      "translation": "丹精込めて作られた、当社のプレミアム製品ラインナップをご覧ください。"
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Japanese",
+      "translation": "ティア1：カテゴリー"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Japanese",
+      "translation": "ティア2：モジュール"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Japanese",
+      "translation": "ティア3：KPI画面"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Japanese",
+      "translation": "ティア4：アクション"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Japanese",
+      "translation": "ナビゲーションをリセット"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Japanese",
+      "translation": "このカテゴリにはサブカテゴリがありません。"
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Japanese",
+      "translation": "製品"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Japanese",
+      "translation": "サブカテゴリ"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Japanese",
+      "translation": "ベーカリー"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Japanese",
+      "translation": "焼きたてのパンやペストリー。"
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Japanese",
+      "translation": "飲料"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Japanese",
+      "translation": "あらゆるシーンにぴったりの爽やかなドリンク。"
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Japanese",
+      "translation": "菓子"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Japanese",
+      "translation": "甘いお菓子とごちそう。"
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Japanese",
+      "translation": "料理"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Japanese",
+      "translation": "キッチンに欠かせない食材。"
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Japanese",
+      "translation": "冷凍食品"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Japanese",
+      "translation": "手軽でおいしい冷凍食品。"
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Japanese",
+      "translation": "パスタ"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Japanese",
+      "translation": "本格的なパスタ各種。"
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Japanese",
+      "translation": "おやつ"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Japanese",
+      "translation": "一日中いつでも楽しめる美味しいスナック。"
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックスについて"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Japanese",
+      "translation": "2019年以来、プレミアム消費財における卓越性"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Japanese",
+      "translation": "私たちの物語"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Japanese",
+      "translation": "2019年に設立されたHarvicsは、先見性のあるアイデアから、高級消費財分野におけるグローバルリーダーへと成長を遂げました。私たちの歩みは、品質への絶え間ない追求とイノベーションへの揺るぎない取り組みによって支えられています。"
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Japanese",
+      "translation": "私たちは40カ国以上で事業を展開し、人々の生活を豊かにし、業界に新たな基準を打ち立てる製品を提供しています。創業当初のささやかな規模からグローバル企業へと成長した現在に至るまで、私たちの価値観は変わっていません。"
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Japanese",
+      "translation": "設立：2019年"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Japanese",
+      "translation": "40カ国以上"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Japanese",
+      "translation": "6つの製品ライン"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Japanese",
+      "translation": "企業の社会的責任"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックスは、世界に良い影響を与えることに尽力しています。当社のCSR活動は、持続可能性、地域社会の活性化、そして倫理的な事業慣行に重点を置いています。"
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Japanese",
+      "translation": "長年にわたる影響"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Japanese",
+      "translation": "到達した国々"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Japanese",
+      "translation": "人生に影響を与えた"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Japanese",
+      "translation": "当社の主要な取り組み"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Japanese",
+      "translation": "私たちは、持続可能な変化を推進し、すべてのステークホルダーにとって共通の価値を創造するために、4つの主要な柱に重点を置いています。"
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Japanese",
+      "translation": "持続可能性"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Japanese",
+      "translation": "再生可能エネルギーの利用と廃棄物の削減を通じて、環境負荷を低減する。"
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Japanese",
+      "translation": "再生可能エネルギー"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Japanese",
+      "translation": "廃棄物の転用"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Japanese",
+      "translation": "炭素削減"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Japanese",
+      "translation": "コミュニティサポート"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Japanese",
+      "translation": "教育、医療、経済発展を通じて地域社会を活性化する。"
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Japanese",
+      "translation": "家族支援"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Japanese",
+      "translation": "実施中のプログラム"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Japanese",
+      "translation": "ボランティア"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Japanese",
+      "translation": "教育"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Japanese",
+      "translation": "恵まれない境遇にある学生に、質の高い教育と奨学金を提供する。"
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Japanese",
+      "translation": "奨学金"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Japanese",
+      "translation": "提携校"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Japanese",
+      "translation": "影響を受けた学生たち"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Japanese",
+      "translation": "健康とウェルネス"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Japanese",
+      "translation": "医療サービスが行き届いていない地域における、医療と栄養へのアクセスを改善する。"
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Japanese",
+      "translation": "健康キャンペーン"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Japanese",
+      "translation": "サービスを受けた人々"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Japanese",
+      "translation": "移動診療所"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Japanese",
+      "translation": "最優秀CSRイニシアチブ"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Japanese",
+      "translation": "社会的責任に対する革新的な取り組みが評価されました。"
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Japanese",
+      "translation": "コミュニティチャンピオン"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Japanese",
+      "translation": "広範な地域社会貢献プログラムが評価され、受賞しました。"
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Japanese",
+      "translation": "グローバルサステナビリティ賞"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Japanese",
+      "translation": "カーボンニュートラルへの取り組みが評価されました。"
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Japanese",
+      "translation": "私たちの影響"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Japanese",
+      "translation": "より良い世界を創造する上での私たちの節目を認識する。"
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Japanese",
+      "translation": "私たちと一緒に変化を起こしましょう"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Japanese",
+      "translation": "私たちと提携するか、私たちがどのように持続可能な未来を築いているかについて詳しく知りたい方は、こちらをご覧ください。"
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Japanese",
+      "translation": "CSRチームにお問い合わせください"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Japanese",
+      "translation": "もっと詳しく知る"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Japanese",
+      "translation": "お問い合わせください"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Japanese",
+      "translation": "ぜひご連絡ください。以下のいずれかの方法でご連絡いただけます。"
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Japanese",
+      "translation": "電話"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Japanese",
+      "translation": "メール"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Japanese",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Japanese",
+      "translation": "今すぐお電話ください"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Japanese",
+      "translation": "メールを送信する"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Japanese",
+      "translation": "お問い合わせはこちら"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Japanese",
+      "translation": "メディアセンター"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Japanese",
+      "translation": "メディアセンター | ハーヴィックス"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Japanese",
+      "translation": "Harvics Global Venturesのプレス向け資料、ブランド資産、最新ニュース。"
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Japanese",
+      "translation": "企業"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Japanese",
+      "translation": "ニュース＆プレスリリース"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Japanese",
+      "translation": "Harvics Global Venturesからの最新の発表、市場拡大、新製品発売、および企業情報に関する最新情報。"
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Japanese",
+      "translation": "最新ニュースを読む"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Japanese",
+      "translation": "画像ギャラリー"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Japanese",
+      "translation": "メディア向けに、高解像度のブランド素材、製品写真、施設写真、イベント写真を提供します。"
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Japanese",
+      "translation": "ギャラリーを閲覧する"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Japanese",
+      "translation": "メディア担当者"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Japanese",
+      "translation": "報道関係のお問い合わせ、インタビューのご依頼、提携に関する発表などは、弊社の広報チームまでご連絡ください。"
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Japanese",
+      "translation": "報道関係者へのお問い合わせ"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Japanese",
+      "translation": "対象市場"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Japanese",
+      "translation": "業界別分類"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Japanese",
+      "translation": "ドバイで設立"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Japanese",
+      "translation": "対応言語"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Japanese",
+      "translation": "最近のヘッドライン"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックス社、東南アジアの5つの新市場に日用消費財事業を拡大"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Japanese",
+      "translation": "グローバル流通向けにAIを活用した新たなサプライチェーンプラットフォームがローンチ"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックス社、全施設でカーボンニュートラルのマイルストーンを達成"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Japanese",
+      "translation": "南アジアの大手繊維メーカーとの戦略的パートナーシップ"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックス・ハウス"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Japanese",
+      "translation": "卓越性と伝統の遺産"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックス・ハウスへようこそ"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックス・ハウスは、品質と伝統への私たちのこだわりを象徴する場所です。ここでは、厳選された最高級製品を、優雅さ、伝統、そして革新という私たちの価値観を反映した空間で展示しています。"
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックスの限定コレクションをご覧いただき、ハーヴィックスの名を冠するすべての製品に込められたストーリーを発見してください。"
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックス・グローバル・ベンチャーズ"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Japanese",
+      "translation": "2019年以来、プレミアム消費財における卓越性"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Japanese",
+      "translation": "国際的な品質基準を満たした、多様なカテゴリーにわたる高品質な食品を提供する、世界有数の消費財企業。"
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Japanese",
+      "translation": "ロンドン・ミラノ・ニューヨーク"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Japanese",
+      "translation": "2019年以来"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックスニュース"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Japanese",
+      "translation": "アラートや最新情報を受け取るには登録してください"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Japanese",
+      "translation": "サインアップ"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Japanese",
+      "translation": "コンプライアンスに関する懸念"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Japanese",
+      "translation": "コンプライアンスや倫理に関して懸念がある場合は、遠慮なく発言してください。"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Japanese",
+      "translation": "声を上げよう"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Japanese",
+      "translation": "お問い合わせ"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Japanese",
+      "translation": "当チームにご連絡ください"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Japanese",
+      "translation": "お問い合わせ"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Japanese",
+      "translation": "役立つリンク集"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Japanese",
+      "translation": "ハーウィッチに聞いてみよう"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Japanese",
+      "translation": "求人検索"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Japanese",
+      "translation": "ニュース登録はこちら"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Japanese",
+      "translation": "会社"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Japanese",
+      "translation": "グローバルアドレス"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Japanese",
+      "translation": "戦略"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Japanese",
+      "translation": "私たちのリーダーシップ"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Japanese",
+      "translation": "ブランドA-Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Japanese",
+      "translation": "私たちの歴史"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Japanese",
+      "translation": "持続可能性"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Japanese",
+      "translation": "ニュース"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Japanese",
+      "translation": "メディア担当者"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Japanese",
+      "translation": "画像"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Japanese",
+      "translation": "投資家"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Japanese",
+      "translation": "コーポレートガバナンス"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Japanese",
+      "translation": "株式、ADR、債券"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Japanese",
+      "translation": "出版物"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Japanese",
+      "translation": "フォローしてください"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Japanese",
+      "translation": "問題なし"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Japanese",
+      "translation": "サイトマップ"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Japanese",
+      "translation": "購読解除"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Japanese",
+      "translation": "ヘルプ"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Japanese",
+      "translation": "プライバシー"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Japanese",
+      "translation": "クッキー"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Japanese",
+      "translation": "利用規約"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Japanese",
+      "translation": "アクセシビリティ"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Japanese",
+      "translation": "炭素効率"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Japanese",
+      "translation": "サプライヤー"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Japanese",
+      "translation": "ソーシャルメディア"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Japanese",
+      "translation": "クッキー設定"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Japanese",
+      "translation": "プレミアム品質"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Japanese",
+      "translation": "電子メールアドレス"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Japanese",
+      "translation": "メールアドレスを入力してください"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Japanese",
+      "translation": "購読する"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Japanese",
+      "translation": "購読中..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Japanese",
+      "translation": "私たちについて"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Japanese",
+      "translation": "メディア"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Japanese",
+      "translation": "商品、ブランド、またはカテゴリを検索"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Japanese",
+      "translation": "検索結果が見つかりませんでした"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Japanese",
+      "translation": "検索中..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Japanese",
+      "translation": "結果"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Japanese",
+      "translation": "チャットでお問い合わせください"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Japanese",
+      "translation": "メッセージを入力してください..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Japanese",
+      "translation": "送信"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Japanese",
+      "translation": "近い"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Japanese",
+      "translation": "こんにちは！本日はどのようなご用件でしょうか？"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Japanese",
+      "translation": "すみません、よく理解できませんでした。もう一度言い換えていただけますか？"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Japanese",
+      "translation": "製品情報、ご注文、その他ご質問など、何でもお手伝いいたします。どのようなことをお知りになりたいですか？"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Japanese",
+      "translation": "さらにサポートが必要な場合は、support@harvics.comまでメールでお問い合わせいただくか、+1-800-HARVICSまでお電話ください。"
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Japanese",
+      "translation": "チャットでお問い合わせください"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Japanese",
+      "translation": "読み込み中…"
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Japanese",
+      "translation": "エラー"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Japanese",
+      "translation": "成功"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Japanese",
+      "translation": "保存"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Japanese",
+      "translation": "キャンセル"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Japanese",
+      "translation": "消去"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Japanese",
+      "translation": "編集"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Japanese",
+      "translation": "ビュー"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Japanese",
+      "translation": "提出する"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Japanese",
+      "translation": "検索"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Japanese",
+      "translation": "フィルター"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Japanese",
+      "translation": "クリア"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Japanese",
+      "translation": "ダウンロード"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Japanese",
+      "translation": "アップロード"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Japanese",
+      "translation": "はい"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Japanese",
+      "translation": "いいえ"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Japanese",
+      "translation": "近い"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Japanese",
+      "translation": "戻る"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Japanese",
+      "translation": "次"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Japanese",
+      "translation": "前の"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Japanese",
+      "translation": "行動"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Japanese",
+      "translation": "状態"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Japanese",
+      "translation": "日付"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Japanese",
+      "translation": "名前"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Japanese",
+      "translation": "メール"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Japanese",
+      "translation": "電話"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Japanese",
+      "translation": "住所"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Japanese",
+      "translation": "国"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Japanese",
+      "translation": "市"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Japanese",
+      "translation": "全て"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Japanese",
+      "translation": "なし"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Japanese",
+      "translation": "選択"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Japanese",
+      "translation": "言語を選択"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Japanese",
+      "translation": "国を選択"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Japanese",
+      "translation": "もっと見る"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Japanese",
+      "translation": "表示を減らす"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Japanese",
+      "translation": "必須"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Japanese",
+      "translation": "メニュー"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Japanese",
+      "translation": "製品を見る"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Japanese",
+      "translation": "音楽を再生する"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Japanese",
+      "translation": "音楽を一時停止"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Japanese",
+      "translation": "音楽をミュート"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Japanese",
+      "translation": "音楽のミュートを解除する"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Japanese",
+      "translation": "グローバルな展開"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Japanese",
+      "translation": "以来"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Japanese",
+      "translation": "主要市場"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Japanese",
+      "translation": "主要市場"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Japanese",
+      "translation": "面前"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Japanese",
+      "translation": "サービス提供国"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Japanese",
+      "translation": "主要市場"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Japanese",
+      "translation": "製品カテゴリ"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Japanese",
+      "translation": "設立"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Japanese",
+      "translation": "縄張り階層"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Japanese",
+      "translation": "フルパス"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Japanese",
+      "translation": "現在の領域"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Japanese",
+      "translation": "商品なし"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Japanese",
+      "translation": "グローブ"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Japanese",
+      "translation": "大陸"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Japanese",
+      "translation": "地域"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Japanese",
+      "translation": "国"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Japanese",
+      "translation": "市"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Japanese",
+      "translation": "地区"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Japanese",
+      "translation": "位置"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックス・グローバル"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Japanese",
+      "translation": "グローバル"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Japanese",
+      "translation": "地域を選択"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Japanese",
+      "translation": "顧客情報"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Japanese",
+      "translation": "選ばれた"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Japanese",
+      "translation": "フルネーム"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Japanese",
+      "translation": "氏名を入力してください"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Japanese",
+      "translation": "名前は必須です"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Japanese",
+      "translation": "電子メールアドレス"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Japanese",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Japanese",
+      "translation": "メールアドレスは必須です。"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Japanese",
+      "translation": "有効なメールアドレスを入力してください"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Japanese",
+      "translation": "電話番号"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Japanese",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Japanese",
+      "translation": "電話番号は必須です。"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Japanese",
+      "translation": "住所"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Japanese",
+      "translation": "あなたの住所"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Japanese",
+      "translation": "住所は必須です。"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Japanese",
+      "translation": "マーケティング情報や最新情報を受け取ることに同意します"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Japanese",
+      "translation": "送信して続行"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Japanese",
+      "translation": "送信中..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Japanese",
+      "translation": "スキップして続行"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Japanese",
+      "translation": "主要業績評価指標"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Japanese",
+      "translation": "本日のご注文"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Japanese",
+      "translation": "Harvics CRM経由で送信されました"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Japanese",
+      "translation": "配達待ち"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Japanese",
+      "translation": "割り当てられたルート全体にわたって"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Japanese",
+      "translation": "小売業者"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Japanese",
+      "translation": "対象となるアクティブな販売チャネル"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Japanese",
+      "translation": "T&Aスコア"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Japanese",
+      "translation": "対象地域"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Japanese",
+      "translation": "財務および在庫"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Japanese",
+      "translation": "在庫が少ないSKU"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Japanese",
+      "translation": "補充開始"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Japanese",
+      "translation": "未払い請求書"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Japanese",
+      "translation": "回収期限"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Japanese",
+      "translation": "クレジット限度額"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Japanese",
+      "translation": "財務部により割り当てられました"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Japanese",
+      "translation": "自動承認、在庫補充、請求書リマインダーが有効になりました"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Japanese",
+      "translation": "自己承認"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Japanese",
+      "translation": "在庫補充"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Japanese",
+      "translation": "請求書のリマインダー"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Japanese",
+      "translation": "AIによるおすすめ"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Japanese",
+      "translation": "リスクレベル"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Japanese",
+      "translation": "信用利用率と支払い履歴に基づく"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Japanese",
+      "translation": "推奨注文順序"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Japanese",
+      "translation": "AIが推奨する注文商品"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Japanese",
+      "translation": "次のアクション"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Japanese",
+      "translation": "行動とガイダンス"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Japanese",
+      "translation": "苦情"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Japanese",
+      "translation": "小売業者の問題が対応待ちとなっている"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Japanese",
+      "translation": "プレイブック"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Japanese",
+      "translation": "午前中に配達予定の品目を優先的に配達してください。"
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Japanese",
+      "translation": "未解決の苦情はすべて48時間以内に解決してください。"
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Japanese",
+      "translation": "在庫が少なくなったSKUの補充をトリガーします（発注書を自動作成します）。"
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Japanese",
+      "translation": "地域"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Japanese",
+      "translation": "今月の注文"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Japanese",
+      "translation": "保留中の注文"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Japanese",
+      "translation": "配達済み注文"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Japanese",
+      "translation": "地域情報"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Japanese",
+      "translation": "国"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Japanese",
+      "translation": "市"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Japanese",
+      "translation": "地域"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Japanese",
+      "translation": "クイックアクション"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Japanese",
+      "translation": "ニューオーダー"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Japanese",
+      "translation": "注文を見る"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Japanese",
+      "translation": "請求書を表示する"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Japanese",
+      "translation": "プロフィール設定"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Japanese",
+      "translation": "ダッシュボードを読み込んでいます..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Japanese",
+      "translation": "エラー"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Japanese",
+      "translation": "私の注文"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Japanese",
+      "translation": "注文ID"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Japanese",
+      "translation": "日付"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Japanese",
+      "translation": "状態"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Japanese",
+      "translation": "商品"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Japanese",
+      "translation": "合計金額"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Japanese",
+      "translation": "行動"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Japanese",
+      "translation": "詳細を見る"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Japanese",
+      "translation": "状態"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Japanese",
+      "translation": "開始日"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Japanese",
+      "translation": "終了日"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Japanese",
+      "translation": "すべてのステータス"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Japanese",
+      "translation": "フィルターをクリア"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Japanese",
+      "translation": "保留中"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Japanese",
+      "translation": "処理"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Japanese",
+      "translation": "配達済み"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Japanese",
+      "translation": "キャンセル"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Japanese",
+      "translation": "注文が見つかりませんでした"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Japanese",
+      "translation": "注文を読み込んでいます..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Japanese",
+      "translation": "ページ"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Japanese",
+      "translation": "の"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Japanese",
+      "translation": "前の"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Japanese",
+      "translation": "次"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Japanese",
+      "translation": "注文の詳細"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Japanese",
+      "translation": "注文一覧に戻る"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Japanese",
+      "translation": "注文ID"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Japanese",
+      "translation": "状態"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Japanese",
+      "translation": "注文日"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Japanese",
+      "translation": "配送日"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Japanese",
+      "translation": "配送先住所"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Japanese",
+      "translation": "注記"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Japanese",
+      "translation": "注文品目"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Japanese",
+      "translation": "製品"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Japanese",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Japanese",
+      "translation": "量"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Japanese",
+      "translation": "単価"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Japanese",
+      "translation": "合計"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Japanese",
+      "translation": "合計金額"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Japanese",
+      "translation": "ステータスタイムライン"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Japanese",
+      "translation": "注文が見つかりません"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Japanese",
+      "translation": "新たな秩序を創造する"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Japanese",
+      "translation": "注文品目"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Japanese",
+      "translation": "アイテムを追加"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Japanese",
+      "translation": "まだアイテムが追加されていません。「アイテムを追加」をクリックして開始してください。"
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Japanese",
+      "translation": "注文の詳細"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Japanese",
+      "translation": "配送日"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Japanese",
+      "translation": "配送先住所"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Japanese",
+      "translation": "注記"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Japanese",
+      "translation": "合計金額"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Japanese",
+      "translation": "注文を作成する"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Japanese",
+      "translation": "秩序を生み出す…"
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Japanese",
+      "translation": "キャンセル"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Japanese",
+      "translation": "商品を選択"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Japanese",
+      "translation": "製品"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Japanese",
+      "translation": "量"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Japanese",
+      "translation": "単価"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Japanese",
+      "translation": "取り除く"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Japanese",
+      "translation": "小計"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Japanese",
+      "translation": "注文ID"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Japanese",
+      "translation": "少なくとも1つの注文品目が必要です"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Japanese",
+      "translation": "製品が必要です"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Japanese",
+      "translation": "数量は0より大きい必要があります"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Japanese",
+      "translation": "単価は負の値であってはならない"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Japanese",
+      "translation": "無効な配送日形式"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Japanese",
+      "translation": "配達日は過去の日付であってはならない"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Japanese",
+      "translation": "私の請求書"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Japanese",
+      "translation": "請求書番号"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Japanese",
+      "translation": "請求書発行日"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Japanese",
+      "translation": "2つのデート"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Japanese",
+      "translation": "額"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Japanese",
+      "translation": "支払金額"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Japanese",
+      "translation": "支払い状況"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Japanese",
+      "translation": "支払い状況"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Japanese",
+      "translation": "すべてのステータス"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Japanese",
+      "translation": "フィルターをクリア"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Japanese",
+      "translation": "有料"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Japanese",
+      "translation": "未払い"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Japanese",
+      "translation": "部分的"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Japanese",
+      "translation": "請求書は見つかりませんでした"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Japanese",
+      "translation": "請求書を読み込んでいます..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Japanese",
+      "translation": "マイプロフィール"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Japanese",
+      "translation": "アカウント情報"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Japanese",
+      "translation": "販売代理店ID"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Japanese",
+      "translation": "地域"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Japanese",
+      "translation": "国"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Japanese",
+      "translation": "市"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Japanese",
+      "translation": "アカウントが作成されました"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Japanese",
+      "translation": "プロフィールの更新"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Japanese",
+      "translation": "名前"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Japanese",
+      "translation": "メール"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Japanese",
+      "translation": "電話"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Japanese",
+      "translation": "住所"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Japanese",
+      "translation": "言語"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Japanese",
+      "translation": "通貨"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Japanese",
+      "translation": "変更を保存"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Japanese",
+      "translation": "保存中..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Japanese",
+      "translation": "プロフィールが正常に更新されました"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Japanese",
+      "translation": "プロファイルを読み込んでいます..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Japanese",
+      "translation": "無効なメール形式"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Japanese",
+      "translation": "無効な電話フォーマット"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Japanese",
+      "translation": "エラー"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Japanese",
+      "translation": "読み込み中…"
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Japanese",
+      "translation": "保存"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Japanese",
+      "translation": "キャンセル"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Japanese",
+      "translation": "戻る"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Japanese",
+      "translation": "提出する"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Japanese",
+      "translation": "消去"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Japanese",
+      "translation": "編集"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Japanese",
+      "translation": "ビュー"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Japanese",
+      "translation": "検索"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Japanese",
+      "translation": "フィルター"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Japanese",
+      "translation": "クリア"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Japanese",
+      "translation": "適用する"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Japanese",
+      "translation": "近い"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Japanese",
+      "translation": "確認する"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Japanese",
+      "translation": "はい"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Japanese",
+      "translation": "いいえ"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Japanese",
+      "translation": "法務運営システム"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Japanese",
+      "translation": "リーガルOS"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Japanese",
+      "translation": "アクセスが拒否されました"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Japanese",
+      "translation": "法務OSモジュールへのアクセス権限がありません。"
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Japanese",
+      "translation": "ダッシュボード"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Japanese",
+      "translation": "契約"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Japanese",
+      "translation": "証明書"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Japanese",
+      "translation": "コンプライアンス"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Japanese",
+      "translation": "法務ダッシュボード"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Japanese",
+      "translation": "法務業務の概要とコンプライアンス状況"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Japanese",
+      "translation": "有効な商標"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Japanese",
+      "translation": "有効な契約"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Japanese",
+      "translation": "コンプライアンス状況"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Japanese",
+      "translation": "商標"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Japanese",
+      "translation": "商標登録および出願の管理"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Japanese",
+      "translation": "新しい商標を追加する"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Japanese",
+      "translation": "国"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Japanese",
+      "translation": "状態"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Japanese",
+      "translation": "すべての国"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Japanese",
+      "translation": "すべてのステータス"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Japanese",
+      "translation": "フィルターをクリア"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Japanese",
+      "translation": "ブランド名"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Japanese",
+      "translation": "クラス"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Japanese",
+      "translation": "国"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Japanese",
+      "translation": "申請番号"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Japanese",
+      "translation": "状態"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Japanese",
+      "translation": "有効期限"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Japanese",
+      "translation": "行動"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Japanese",
+      "translation": "商標を編集する"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Japanese",
+      "translation": "新しい商標を追加する"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Japanese",
+      "translation": "商標を表示"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Japanese",
+      "translation": "ブランド名"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Japanese",
+      "translation": "クラス番号"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Japanese",
+      "translation": "国"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Japanese",
+      "translation": "申請番号"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Japanese",
+      "translation": "状態"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Japanese",
+      "translation": "有効期限"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Japanese",
+      "translation": "文書"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Japanese",
+      "translation": "添付書類はありません"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Japanese",
+      "translation": "ドキュメントを追加する"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Japanese",
+      "translation": "取り除く"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Japanese",
+      "translation": "商標の読み込みに失敗しました"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Japanese",
+      "translation": "商標の保存に失敗しました。もう一度お試しください。"
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Japanese",
+      "translation": "訴訟事件"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Japanese",
+      "translation": "訴訟案件を管理し、その状況を追跡する"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Japanese",
+      "translation": "新たな事例"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Japanese",
+      "translation": "事件名"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Japanese",
+      "translation": "ケースの種類"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Japanese",
+      "translation": "国"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Japanese",
+      "translation": "説明"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Japanese",
+      "translation": "担当者"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Japanese",
+      "translation": "状態"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Japanese",
+      "translation": "公聴会の日程"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Japanese",
+      "translation": "事件名"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Japanese",
+      "translation": "タイプ"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Japanese",
+      "translation": "国"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Japanese",
+      "translation": "担当者"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Japanese",
+      "translation": "状態"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Japanese",
+      "translation": "公聴会の日程"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Japanese",
+      "translation": "行動"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Japanese",
+      "translation": "開ける"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Japanese",
+      "translation": "進行中"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Japanese",
+      "translation": "閉店"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Japanese",
+      "translation": "キャンセル"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Japanese",
+      "translation": "艦隊マップビュー"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Japanese",
+      "translation": "営業担当者と配送車両のリアルタイム追跡"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Japanese",
+      "translation": "現役従業員"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Japanese",
+      "translation": "現役従業員なし"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Japanese",
+      "translation": "読み込み中…"
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Japanese",
+      "translation": "ルートリプレイ"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Japanese",
+      "translation": "従業員"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Japanese",
+      "translation": "スピード"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Japanese",
+      "translation": "リセット"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Japanese",
+      "translation": "遊ぶ"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Japanese",
+      "translation": "一時停止"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Japanese",
+      "translation": "ポイント"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Japanese",
+      "translation": "ルートデータがありません"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Japanese",
+      "translation": "ルートを読み込んでいます..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Japanese",
+      "translation": "競合製品"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Japanese",
+      "translation": "競合他社の製品情報を追跡する"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Japanese",
+      "translation": "商品を追加する"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Japanese",
+      "translation": "競合製品を追加する"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Japanese",
+      "translation": "ブランド"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Japanese",
+      "translation": "SKU名"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Japanese",
+      "translation": "カテゴリ"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Japanese",
+      "translation": "サイズ"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Japanese",
+      "translation": "価格"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Japanese",
+      "translation": "通貨"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Japanese",
+      "translation": "国"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Japanese",
+      "translation": "ブランド"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Japanese",
+      "translation": "SKU名"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Japanese",
+      "translation": "カテゴリ"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Japanese",
+      "translation": "サイズ"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Japanese",
+      "translation": "価格"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Japanese",
+      "translation": "国"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Japanese",
+      "translation": "追加日"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Japanese",
+      "translation": "製品の読み込みに失敗しました"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Japanese",
+      "translation": "製品の作成に失敗しました。もう一度お試しください。"
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Japanese",
+      "translation": "競合製品は見つかりませんでした"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Japanese",
+      "translation": "商品を読み込んでいます..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Japanese",
+      "translation": "競合他社ダッシュボード"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Japanese",
+      "translation": "競合製品に関する分析と洞察"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Japanese",
+      "translation": "トータルプロダクツ"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Japanese",
+      "translation": "追跡対象ブランド"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Japanese",
+      "translation": "国々"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Japanese",
+      "translation": "カテゴリー"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Japanese",
+      "translation": "ブランド別製品一覧"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Japanese",
+      "translation": "国別製品一覧"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Japanese",
+      "translation": "カテゴリー別製品一覧"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Japanese",
+      "translation": "統計情報を読み込んでいます..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Japanese",
+      "translation": "統計情報はありません"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Japanese",
+      "translation": "概要"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Japanese",
+      "translation": "注文"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Japanese",
+      "translation": "在庫"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Japanese",
+      "translation": "ロジスティクス"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Japanese",
+      "translation": "ファイナンス"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Japanese",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Japanese",
+      "translation": "人事部"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Japanese",
+      "translation": "エグゼクティブ"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Japanese",
+      "translation": "投資家"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Japanese",
+      "translation": "法律／知的財産権"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Japanese",
+      "translation": "競合相手"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Japanese",
+      "translation": "輸入／輸出"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Japanese",
+      "translation": "GPS追跡"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Japanese",
+      "translation": "ローカリゼーション"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Japanese",
+      "translation": "ワークフロー"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Japanese",
+      "translation": "管理者"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Japanese",
+      "translation": "CRM OS"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Japanese",
+      "translation": "顧客360度"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Japanese",
+      "translation": "顧客プロファイル、やり取りの履歴、および関係管理を完全に網羅する"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Japanese",
+      "translation": "デジタルキャンペーン"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Japanese",
+      "translation": "マルチチャネルマーケティングキャンペーン（Instagram、Facebook、TikTok、WhatsApp）"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Japanese",
+      "translation": "見込み客とビジネスチャンス"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Japanese",
+      "translation": "リード管理、資格審査、および商談パイプライン"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Japanese",
+      "translation": "カスタマーサポート"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Japanese",
+      "translation": "チケット管理、顧客サービス、問題解決"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Japanese",
+      "translation": "ロイヤルティプログラム"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Japanese",
+      "translation": "小売店の顧客ロイヤルティ、ゲーミフィケーション、および報酬管理"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Japanese",
+      "translation": "顧客360度"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Japanese",
+      "translation": "新規顧客"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Japanese",
+      "translation": "顧客総数"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Japanese",
+      "translation": "アクティブ"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Japanese",
+      "translation": "新しい"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Japanese",
+      "translation": "満足"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Japanese",
+      "translation": "顧客管理"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Japanese",
+      "translation": "顧客との関係、やり取り、キャンペーンを表示および管理できます。"
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Japanese",
+      "translation": "読み込み中…"
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Japanese",
+      "translation": "CRMデータの読み込みエラー"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Japanese",
+      "translation": "概要"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Japanese",
+      "translation": "注文"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Japanese",
+      "translation": "在庫"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Japanese",
+      "translation": "ロジスティクス"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Japanese",
+      "translation": "ファイナンス"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Japanese",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Japanese",
+      "translation": "人事部"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Japanese",
+      "translation": "エグゼクティブ"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Japanese",
+      "translation": "投資家"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Japanese",
+      "translation": "法律／知的財産権"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Japanese",
+      "translation": "競合相手"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Japanese",
+      "translation": "輸入／輸出"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Japanese",
+      "translation": "GPS追跡"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Japanese",
+      "translation": "ローカリゼーション"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Japanese",
+      "translation": "ワークフロー"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Japanese",
+      "translation": "管理者"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Japanese",
+      "translation": "顧客"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Japanese",
+      "translation": "従業員"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Japanese",
+      "translation": "利益"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Japanese",
+      "translation": "サプライヤーのコックピットを読み込み中…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Japanese",
+      "translation": "発注書"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックスに育てられた"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Japanese",
+      "translation": "出荷／GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Japanese",
+      "translation": "今週承認されました"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Japanese",
+      "translation": "請求書が作成されました"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Japanese",
+      "translation": "支払い待ち"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Japanese",
+      "translation": "支払い保留中"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Japanese",
+      "translation": "発売予定"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Japanese",
+      "translation": "品質／苦情"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Japanese",
+      "translation": "オープンチケット"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Japanese",
+      "translation": "天気予報（今後4週間）"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Japanese",
+      "translation": "AIプレースホルダー"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Japanese",
+      "translation": "サプライヤーの行動"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Japanese",
+      "translation": "今後の出荷状況を確認し、GRN（受領確認）スケジュールを更新してください。"
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Japanese",
+      "translation": "未払い請求書を確認し、支払いに関するアドバイスを共有する。"
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Japanese",
+      "translation": "品質保証の証拠に基づいて、未解決の品質に関する苦情を解決する。"
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Japanese",
+      "translation": "ユーザー名"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Japanese",
+      "translation": "パスワード"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Japanese",
+      "translation": "メール"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Japanese",
+      "translation": "提出する"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Japanese",
+      "translation": "キャンセル"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Japanese",
+      "translation": "保存"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Japanese",
+      "translation": "消去"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Japanese",
+      "translation": "検索"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Japanese",
+      "translation": "フィルター"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Japanese",
+      "translation": "リセット"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Japanese",
+      "translation": "近い"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Japanese",
+      "translation": "戻る"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Japanese",
+      "translation": "次"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Japanese",
+      "translation": "前の"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Japanese",
+      "translation": "確認する"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Japanese",
+      "translation": "私を覚えてますか"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Japanese",
+      "translation": "パスワードをお忘れですか？"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Japanese",
+      "translation": "メールアドレスは必須です。"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Japanese",
+      "translation": "有効なメールアドレスを入力してください"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Japanese",
+      "translation": "製品"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Japanese",
+      "translation": "Harvicsはどのような製品を提供していますか？"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Japanese",
+      "translation": "当社では、菓子、飲料、スナック、パスタ、ベーカリー製品、冷凍食品など、多岐にわたるカテゴリーの高品質な食品を幅広く取り揃えております。"
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Japanese",
+      "translation": "ハービック製品はどこで購入できますか？"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Japanese",
+      "translation": "当社の製品は40カ国以上の小売店でお求めいただけます。お近くの販売店をお探しの際は、店舗検索またはお問い合わせページをご利用ください。"
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Japanese",
+      "translation": "大量注文は可能ですか？"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Japanese",
+      "translation": "はい、企業様および小売店様向けに大量注文割引をご用意しております。詳しくは、大量注文割引ページをご覧ください。"
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Japanese",
+      "translation": "注文と配送"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Japanese",
+      "translation": "配送方法にはどのような選択肢がありますか？"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Japanese",
+      "translation": "弊社では、通常配送、速達配送、国際配送など、様々な配送オプションをご用意しております。50ドル以上のご注文は送料無料です。"
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Japanese",
+      "translation": "配達にはどれくらい時間がかかりますか？"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Japanese",
+      "translation": "配送日数は地域によって異なります。通常配送は5～7営業日、速達配送は2～3営業日かかります。"
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Japanese",
+      "translation": "注文状況を追跡できますか？"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Japanese",
+      "translation": "はい、ご注文確認メールに記載されている追跡番号を使ってご注文状況をご確認いただけます。"
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Japanese",
+      "translation": "アカウントと支払い"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Japanese",
+      "translation": "アカウントはどのように作成すればいいですか？"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Japanese",
+      "translation": "ヘッダーの「サインイン」をクリックし、「アカウント作成」を選択して新しいアカウントを登録してください。"
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Japanese",
+      "translation": "どのような支払い方法に対応していますか？"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Japanese",
+      "translation": "当社では、法人向け注文のお支払い方法として、主要なクレジットカード、デビットカード、PayPal、銀行振込に対応しております。"
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Japanese",
+      "translation": "私の支払い情報は安全ですか？"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Japanese",
+      "translation": "はい、お客様の決済情報を保護するために、業界標準の暗号化技術を使用しています。"
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Japanese",
+      "translation": "返品と返金"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Japanese",
+      "translation": "返品ポリシーを教えてください。"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Japanese",
+      "translation": "未開封で元のパッケージに入っている商品に限り、30日間の返品保証を提供しています。返品をご希望の場合は、カスタマーサービスまでご連絡ください。"
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Japanese",
+      "translation": "返金を請求するにはどうすればよいですか？"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Japanese",
+      "translation": "ご注文番号と返品理由を添えて、カスタマーサービスまでご連絡ください。5～7営業日以内に返金手続きを行います。"
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Japanese",
+      "translation": "まだご質問がありますか？"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Japanese",
+      "translation": "弊社のカスタマーサービスチームがお手伝いいたします。"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Japanese",
+      "translation": "お問い合わせ"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Japanese",
+      "translation": "採用情報"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Japanese",
+      "translation": "採用情報 | ハーヴィックス"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Japanese",
+      "translation": "Harvics Global Venturesに参加して、40カ国以上でビジネスチャンスを探りましょう。"
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Japanese",
+      "translation": "参加しませんか"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Japanese",
+      "translation": "グローバル貿易の未来を築く"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Japanese",
+      "translation": "私たちは40カ国以上で事業を拡大しています。グローバルコマース向けのAI搭載オペレーティングシステムを構築するチームに加わりませんか。"
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Japanese",
+      "translation": "募集中の職種"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Japanese",
+      "translation": "国々"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Japanese",
+      "translation": "業界別分類"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Japanese",
+      "translation": "採用中の部署"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Japanese",
+      "translation": "部門別募集職種"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Japanese",
+      "translation": "販売・流通"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Japanese",
+      "translation": "40以上の市場で収益を拡大する。担当地域管理、主要顧客管理、販売代理店との関係構築。"
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Japanese",
+      "translation": "サプライチェーン＆ロジスティクス"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Japanese",
+      "translation": "工場から店頭まで、エンドツーエンドのサプライチェーン全体。車両管理、倉庫管理、ラストマイル配送。"
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Japanese",
+      "translation": "テクノロジーとAI"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Japanese",
+      "translation": "当社のAI搭載エンタープライズプラットフォームであるHarvics OSを構築します。フルスタック開発、機械学習エンジニアリング、データサイエンスの経験が求められます。"
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Japanese",
+      "translation": "財務・資金管理"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Japanese",
+      "translation": "複数通貨の財務管理、貿易金融、HPayデジタル決済、地域をまたいだ為替管理。"
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Japanese",
+      "translation": "調達・ソーシング"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Japanese",
+      "translation": "15カ国以上からのグローバル調達。サプライヤー監査、品質管理、工場直送プログラム。"
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Japanese",
+      "translation": "人事"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Japanese",
+      "translation": "多様な地域や文化圏における人材獲得、人材育成、業績管理。"
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Japanese",
+      "translation": "法務およびコンプライアンス"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Japanese",
+      "translation": "貿易コンプライアンス、制裁措置スクリーニング、知的財産保護、複数法域にわたる契約管理。"
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Japanese",
+      "translation": "マーケティング＆ブランド"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Japanese",
+      "translation": "多言語キャンペーン、38の地域に対応したコンテンツ制作、デジタルマーケティング、10の業種におけるブランド戦略。"
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Japanese",
+      "translation": "役割"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックスを選ぶ理由"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Japanese",
+      "translation": "グローバルモビリティ"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Japanese",
+      "translation": "ドバイ、ロンドン、カラチ、ラホール、その他40以上の市場で活躍"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Japanese",
+      "translation": "成長トラック"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Japanese",
+      "translation": "急成長企業でのキャリアアップを加速させる"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Japanese",
+      "translation": "AIファーストの文化"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Japanese",
+      "translation": "最先端のAIとリアルタイムインテリジェンスシステムを活用して業務を行う"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Japanese",
+      "translation": "競争力のある待遇"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Japanese",
+      "translation": "業界トップクラスの報酬、住宅、福利厚生"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Japanese",
+      "translation": "学習予算"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Japanese",
+      "translation": "コース、会議、資格取得のための年間開発予算"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Japanese",
+      "translation": "柔軟な働き方"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Japanese",
+      "translation": "世界各地の地域ハブオフィスとのハイブリッド型契約"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Japanese",
+      "translation": "私たちの戦略"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Japanese",
+      "translation": "戦略 | ハーウィッチ"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Japanese",
+      "translation": "革新と卓越性を通じて持続可能な未来を築く"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Japanese",
+      "translation": "革新と卓越性を通じて持続可能な未来を築く"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Japanese",
+      "translation": "グローバル展開"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Japanese",
+      "translation": "新興市場におけるプレゼンスを拡大すると同時に、既存市場における地位を強化する。"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Japanese",
+      "translation": "製品イノベーション"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Japanese",
+      "translation": "変化する消費者の嗜好を満たす新製品を開発するための研究開発への投資"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Japanese",
+      "translation": "持続可能性"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Japanese",
+      "translation": "サプライチェーンと事業運営全体において、持続可能な取り組みに尽力しています。"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Japanese",
+      "translation": "デジタル変革"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Japanese",
+      "translation": "テクノロジーを活用して顧客体験と業務効率を向上させる"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Japanese",
+      "translation": "私たちのビジョン"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Japanese",
+      "translation": "品質、革新性、そして持続可能性において世界的に認められる、世界有数の高級消費財企業となること。"
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Japanese",
+      "translation": "ハーヴィックス・グローバル・ベンチャーズ | プレミアム・グローバル・トレーディング"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Japanese",
+      "translation": "10以上の業界に高品質な製品を提供する、世界有数の貿易会社。2019年より50カ国以上で事業を展開。"
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Japanese",
+      "translation": "会社概要 | ハーヴィックス・グローバル・ベンチャーズ"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Japanese",
+      "translation": "Harvics Global Venturesがどのようにして40カ国以上、10業種にわたるグローバル貿易のリーディングカンパニーとなったのかをご覧ください。"
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Japanese",
+      "translation": "お問い合わせ | ハーヴィックス・グローバル・ベンチャーズ"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Japanese",
+      "translation": "中東、南アジア、ヨーロッパ、アフリカ、アメリカ大陸など、世界各地にあるハービックスのオフィスにお問い合わせください。"
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Japanese",
+      "translation": "製品情報 | ハーヴィックス・グローバル・ベンチャーズ"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Japanese",
+      "translation": "Harvicsのプレミアム製品群を、日用消費財、繊維、原材料、産業ソリューションなど幅広い分野でご覧ください。"
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Japanese",
+      "translation": "採用情報 | ハーヴィックス・グローバル・ベンチャーズ"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Japanese",
+      "translation": "Harvics Global Venturesに参加して、日用消費財、繊維、物流、テクノロジーなど、40カ国以上におけるビジネスチャンスを探ってみませんか。"
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Japanese",
+      "translation": "メディアセンター | ハーヴィックス・グローバル・ベンチャーズ"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Japanese",
+      "translation": "ハービックスのメディアセンター ― プレスリリース、最新ニュース、ブランド資産、メディア担当者連絡先。"
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Japanese",
+      "translation": "当社の戦略 | ハーヴィックス・グローバル・ベンチャーズ"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Japanese",
+      "translation": "Harvicsのグローバル展開、イノベーション、持続可能性、そしてデジタル変革に関する戦略的ビジョン。"
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Japanese",
+      "translation": "企業の社会的責任 | ハーヴィックス"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Japanese",
+      "translation": "ハービックスのCSR活動 ― 環境保全、地域社会貢献プログラム、倫理的な事業慣行。"
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Japanese",
+      "translation": "よくある質問 | ハーヴィックス・グローバル・ベンチャーズ"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Japanese",
+      "translation": "Harvicsの製品、サービス、注文方法、およびグローバル事業に関するよくある質問。"
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Japanese",
+      "translation": "世界各地の拠点 | ハーヴィックス"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Japanese",
+      "translation": "ハービックスは、中東、南アジア、ヨーロッパ、アフリカ、アメリカ大陸にオフィスと事業拠点を展開しています。"
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Japanese",
+      "translation": "経営陣 | ハーヴィックス"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Japanese",
+      "translation": "40以上の市場と10の業界分野にわたってHarvics Global Venturesを牽引するリーダーシップチームをご紹介します。"
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Japanese",
+      "translation": "ヘルプセンター | ハーヴィックス"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Japanese",
+      "translation": "注文、アカウント、配送、およびHarvicsのサービスに関するサポートをご利用ください。"
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Japanese",
+      "translation": "コンプライアンスと倫理 | ハーヴィックス"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Japanese",
+      "translation": "Harvicsは、法令遵守、倫理的な事業慣行、およびグローバルスタンダードへの取り組みを重視しています。"
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Japanese",
+      "translation": "私たちの歴史 | ハーヴィックス"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Japanese",
+      "translation": "2019年にドバイで創業したスタートアップ企業から、40カ国以上に展開するグローバル企業へと成長したハーヴィックスの物語。"
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Japanese",
+      "translation": "ニュースレター | ハーヴィックス"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Japanese",
+      "translation": "業界の最新情報や新製品発表については、Harvicsのニュースレターにご登録ください。"
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Japanese",
+      "translation": "ログイン | ハーヴィックス"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Japanese",
+      "translation": "Harvicsアカウントにログインして、注文の管理やプラットフォームへのアクセスを行ってください。"
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Japanese",
+      "translation": "研究開発 | ハーヴィックス"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Japanese",
+      "translation": "Harvicsの研究開発イニシアチブとイノベーションプログラムは、当社のグローバル戦略を推進する原動力となっています。"
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Japanese",
+      "translation": "投資家向け情報 | ハーヴィックス"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Japanese",
+      "translation": "Harvics Global Venturesの投資家向け情報、財務報告書、および企業発表。"
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Japanese",
+      "translation": "ページが見つかりません"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Japanese",
+      "translation": "404 — ページが見つかりません"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Japanese",
+      "translation": "お探しのページは存在しないか、移動されました。"
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Japanese",
+      "translation": "ホームページへ"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Japanese",
+      "translation": "戻る"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Japanese",
+      "translation": "何かがうまくいかなかった"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Japanese",
+      "translation": "何らかの問題が発生しました"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Japanese",
+      "translation": "申し訳ございませんが、予期せぬ事態が発生しました。ページを更新してみてください。"
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Japanese",
+      "translation": "もう一度やり直してください"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Japanese",
+      "translation": "ページを再読み込み"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Japanese",
+      "translation": "サポートにお問い合わせください"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Japanese",
+      "translation": "アプリケーションエラー"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Japanese",
+      "translation": "重大なエラー"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Japanese",
+      "translation": "重大なエラーが発生しました。ページを再読み込みしてください。"
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Japanese",
+      "translation": "アプリケーションを再読み込みしてください"
+    }
+  }
+}

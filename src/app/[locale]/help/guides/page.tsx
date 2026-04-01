@@ -19,7 +19,7 @@ export default async function HelpGuidesPage({ params }: { params: Promise<{ loc
   ]
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="pt-20">
         <section className="h-[300px] relative bg-[#6B1F2B] overflow-hidden">
           {/* Decorative Elements */}

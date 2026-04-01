@@ -64,7 +64,7 @@ export default function InvoicesPage() {
   }
 
   return (
-    <AuthGuard allowedRoles={['distributor']}>
+    <AuthGuard allowedRoles={['distributor', 'sales_officer']}>
       <OSDomainPageWrapper
         title="Invoices"
         description="View and manage your invoices"

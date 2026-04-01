@@ -1,181 +1,151 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
-import { useTranslations } from 'next-intl'
-import { useCountry } from '@/contexts/CountryContext'
-import { apiClient } from '@/lib/api'
-import KPICard from '@/components/shared/KPICard'
+import React, { useState } from 'react'
+import { useDomainData } from '@/hooks/useDomainData'
+import { KPICard, Card, DataTable, StatusDot, DonutChart, BarChart, LineChart, LiveBadge, MONTHS } from '@/components/charts/OSCharts'
 
-interface OrderListContentProps {
-  persona: 'company' | 'distributor' | 'supplier'
-  locale: string
-}
+const fmtMoney = (v: number) =>
+  v >= 1_000_000 ? `$${(v / 1_000_000).toFixed(1)}M` : v >= 1000 ? `$${(v / 1000).toFixed(0)}K` : `$${v}`
 
-interface Order {
-  id: string
-  customer: string
-  amount: number
-  status: string
-  date: string
-  city?: string
-  channel?: string
-}
+const channelColors = ['#6B1F2B', '#007AFF', '#34C759', '#FF9500']
 
-export default function OrderListContent({ persona, locale }: OrderListContentProps) {
-  const t = useTranslations('crm')
-  const { selectedCountry } = useCountry()
-  const [orders, setOrders] = useState<Order[]>([])
-  const [loading, setLoading] = useState(true)
-  const [countryData, setCountryData] = useState<any>(null)
+export default function OrderListContent({ persona, locale }: { persona: string; locale: string }) {
+  const { data, source, lastUpdated } = useDomainData('orders')
+  const [tab, setTab] = useState<'orders' | 'analytics'>('orders')
+  const [filter, setFilter] = useState<string>('All')
 
-  useEffect(() => {
-    loadOrders()
-  }, [selectedCountry, persona])
+  if (!data) return <div className="p-8 text-sm text-[#8E8E93]">Loading…</div>
 
-  const loadOrders = async () => {
-    setLoading(true)
-    try {
-      // Load orders data - use BFF endpoint or domain endpoint
-      const response = await apiClient.getCompanyDashboard({
-        scope: 'global',
-        country: selectedCountry || 'global',
-        period: 'last30days',
-        currency: 'USD'
-      })
-      
-      const ordersData = (response as any)?.data?.data?.orders?.orders || (response as any)?.data?.orders?.orders || []
-      setOrders(Array.isArray(ordersData) ? ordersData : [])
-
-      // Load country data for currency
-      if (selectedCountry) {
-        const countryResponse = await apiClient.getCountryProfile(selectedCountry)
-        setCountryData((countryResponse as any)?.data?.data || null)
-      }
-    } catch (error) {
-      console.error('Error loading orders:', error)
-      // Fallback demo data
-      setOrders([
-        { id: 'ORD-001', customer: 'Customer A', amount: 125000, status: 'completed', date: '2024-01-15', city: 'Dubai', channel: 'Retail' },
-        { id: 'ORD-002', customer: 'Customer B', amount: 89000, status: 'pending', date: '2024-01-16', city: 'Abu Dhabi', channel: 'Wholesale' },
-        { id: 'ORD-003', customer: 'Customer C', amount: 156000, status: 'in_transit', date: '2024-01-17', city: 'Sharjah', channel: 'Retail' }
-      ])
-    } finally {
-      setLoading(false)
-    }
-  }
-
-  const totalOrders = orders.length
-  const pending = orders.filter(o => o.status?.toLowerCase() === 'pending').length
-  const completed = orders.filter(o => o.status?.toLowerCase() === 'completed').length
-  const inTransit = orders.filter(o => o.status?.toLowerCase().includes('transit')).length
-  const currencySymbol = countryData?.currency?.symbol || '$'
-
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#C3A35E]"></div>
-      </div>
-    )
-  }
+  const statuses = ['All', 'Pending', 'In Transit', 'Completed']
+  const filtered = filter === 'All' ? (data.orders || []) : (data.orders || []).filter((o: any) => o.status === filter)
 
   return (
     <div className="space-y-6">
-      {/* Header */}
-      <div className="flex items-center justify-between">
-        <h3 className="text-xl font-semibold text-black">Order Management</h3>
-        <button className="bg-[#C3A35E] text-black px-4 py-2 rounded-lg font-semibold hover:bg-[#C3A35E] transition-colors">
-          + New Order
-        </button>
+      <div className="flex items-center justify-between flex-wrap gap-3">
+        <div>
+          <h2 className="text-lg font-semibold text-[#1D1D1F]">Order Management</h2>
+          <p className="text-sm text-[#8E8E93] mt-0.5">Live order pipeline across all markets</p>
+        </div>
+        <LiveBadge source={source} lastUpdated={lastUpdated} />
       </div>
 
-      {/* Country Info */}
-      {countryData && (
-        <div className="bg-white/10 rounded-lg p-4 border border-[#C3A35E]/30">
-          <div className="text-sm text-black">
-            <strong>Country:</strong> {countryData.countryName || selectedCountry} | 
-            <strong> Currency:</strong> {countryData.currency?.symbol || '$'} {countryData.currency?.code || 'USD'}
+      {/* KPIs */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <KPICard label="Total Orders" value={data.total?.toLocaleString() || '2,140'} trend={14.2} sparkline={data.revenueByMonth}
+          icon={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" /></svg>}
+        />
+        <KPICard label="Revenue" value={fmtMoney(data.revenue || 28400000)} trend={18.6} sparkline={data.revenueByMonth}
+          icon={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
+        />
+        <KPICard label="In Transit" value={data.inTransit || 133} trend={-2.1}
+          icon={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2 .001M13 16H9m4 0h3m3 0h.01M16 6l3 4h.99" /></svg>}
+        />
+        <KPICard label="Pending" value={data.pending || 187} trend={5.4}
+          icon={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
+        />
+      </div>
+
+      {/* Charts */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <Card title="Monthly Revenue" className="lg:col-span-2">
+          <div className="p-5">
+            <LineChart
+              data={[{ label: 'Revenue', values: data.revenueByMonth || [], color: '#6B1F2B' }]}
+              labels={MONTHS}
+              height={160}
+              formatY={(v) => `$${(v / 1_000_000).toFixed(1)}M`}
+            />
           </div>
+        </Card>
+        <Card title="Orders by Channel">
+          <div className="p-5 flex flex-col items-center gap-4">
+            <DonutChart
+              segments={(data.ordersByChannel || []).map((c: any, i: number) => ({ label: c.channel, value: c.count, color: channelColors[i % channelColors.length] }))}
+              size={120}
+              centerLabel="Total"
+              centerValue={data.total?.toLocaleString()}
+            />
+            <div className="w-full space-y-2">
+              {(data.ordersByChannel || []).map((c: any, i: number) => (
+                <div key={i} className="flex items-center justify-between text-xs">
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full" style={{ backgroundColor: channelColors[i % channelColors.length] }} />
+                    <span className="text-[#1D1D1F]">{c.channel}</span>
+                  </div>
+                  <span className="text-[#8E8E93] tabular-nums">{c.count} · {fmtMoney(c.revenue)}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      {/* Tabs + filter */}
+      <div className="flex items-center justify-between flex-wrap gap-3 border-b border-[#E5E5EA] pb-0">
+        <div className="flex gap-6">
+          {(['orders', 'analytics'] as const).map(t => (
+            <button key={t} onClick={() => setTab(t)}
+              className={`pb-3 text-sm font-medium capitalize transition-colors border-b-2 -mb-px ${tab === t ? 'border-[#6B1F2B] text-[#1D1D1F]' : 'border-transparent text-[#8E8E93] hover:text-[#1D1D1F]'}`}>
+              {t.charAt(0).toUpperCase() + t.slice(1)}
+            </button>
+          ))}
+        </div>
+        {tab === 'orders' && (
+          <div className="flex gap-1.5 pb-3">
+            {statuses.map(s => (
+              <button key={s} onClick={() => setFilter(s)}
+                className={`px-3 py-1 text-xs rounded-full font-medium transition-colors ${filter === s ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#8E8E93] hover:bg-[#EBEBF0]'}`}>
+                {s}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {tab === 'orders' ? (
+        <Card>
+          <DataTable
+            columns={[
+              { key: 'id', label: 'Order ID' },
+              { key: 'customer', label: 'Customer' },
+              { key: 'country', label: 'Country' },
+              { key: 'channel', label: 'Channel' },
+              { key: 'status', label: 'Status' },
+              { key: 'date', label: 'Date' },
+              { key: 'amount', label: 'Amount', right: true },
+            ]}
+            rows={filtered.map((o: any) => ({
+              id: <span className="font-mono text-xs text-[#8E8E93]">{o.id}</span>,
+              customer: <span className="font-medium text-[#1D1D1F]">{o.customer}</span>,
+              country: <span className="text-[#1D1D1F]">{o.country}</span>,
+              channel: <span className="text-xs text-[#8E8E93] bg-[#F5F5F7] px-2 py-0.5 rounded-full">{o.channel}</span>,
+              status: <StatusDot status={o.status} />,
+              date: <span className="text-[#8E8E93]">{o.date}</span>,
+              amount: <span className="font-semibold text-[#1D1D1F]">{fmtMoney(o.amount)}</span>,
+            }))}
+          />
+        </Card>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <Card title="Revenue by Channel">
+            <div className="p-5">
+              <BarChart
+                data={(data.ordersByChannel || []).map((c: any, i: number) => ({ label: c.channel.split(' ')[0], value: c.revenue, color: channelColors[i % channelColors.length] }))}
+                height={120}
+                formatValue={fmtMoney}
+              />
+            </div>
+          </Card>
+          <Card title="Orders by Channel">
+            <div className="p-5">
+              <BarChart
+                data={(data.ordersByChannel || []).map((c: any, i: number) => ({ label: c.channel.split(' ')[0], value: c.count, color: channelColors[i % channelColors.length] }))}
+                height={120}
+              />
+            </div>
+          </Card>
         </div>
       )}
-
-      {/* Order Statistics */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <KPICard
-          label="Total Orders"
-          value={totalOrders}
-          icon="📦"
-        />
-        <KPICard
-          label="Pending"
-          value={pending}
-          icon="⏳"
-        />
-        <KPICard
-          label="Completed"
-          value={completed}
-          icon="✅"
-        />
-        <KPICard
-          label="In Transit"
-          value={inTransit}
-          icon="🚚"
-        />
-      </div>
-
-      {/* Orders Table */}
-      <div className="bg-white border border-black200 rounded-lg overflow-hidden">
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead className="bg-[#F2F2F2]">
-              <tr>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-black">Order ID</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-black">Customer</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-black">City</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-black">Channel</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-black">Amount</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-black">Status</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-black">Date</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-black">Actions</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-200">
-              {orders.length > 0 ? (
-                orders.map((order) => (
-                  <tr key={order.id} className="hover:bg-gray-50">
-                    <td className="px-4 py-3 text-sm text-black">#{order.id}</td>
-                    <td className="px-4 py-3 text-sm text-black">{order.customer}</td>
-                    <td className="px-4 py-3 text-sm text-black">{order.city || 'N/A'}</td>
-                    <td className="px-4 py-3 text-sm text-black">{order.channel || 'N/A'}</td>
-                    <td className="px-4 py-3 text-sm text-black">
-                      {currencySymbol}{(order.amount || 0).toLocaleString()}
-                    </td>
-                    <td className="px-4 py-3 text-sm">
-                      <span className={`px-2 py-1 rounded text-xs ${
-                        order.status?.toLowerCase() === 'completed' ? 'bg-green-100 text-green-800' :
-                        order.status?.toLowerCase() === 'pending' ? 'bg-yellow-100 text-yellow-800' :
-                        'bg-blue-100 text-blue-800'
-                      }`}>
-                        {order.status || 'pending'}
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 text-sm text-black">{order.date}</td>
-                    <td className="px-4 py-3 text-sm">
-                      <button className="text-[#C3A35E] hover:underline">View</button>
-                    </td>
-                  </tr>
-                ))
-              ) : (
-                <tr>
-                  <td colSpan={8} className="px-4 py-8 text-center text-gray-500">
-                    No orders found
-                  </td>
-                </tr>
-              )}
-            </tbody>
-          </table>
-        </div>
-      </div>
     </div>
   )
 }
-

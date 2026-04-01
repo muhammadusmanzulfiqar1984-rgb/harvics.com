@@ -1,3 +1,7 @@
+import { config } from 'dotenv';
+import { resolve } from 'path';
+config({ path: resolve(__dirname, '../../.env.local') });
+
 import express from 'express';
 import cors, { CorsOptions } from 'cors';
 import http from 'http';
@@ -25,8 +29,61 @@ const corsOptions: CorsOptions = {
   credentials: true,
 };
 
+// ─── In-process rate limiter ───────────────────────────────────────────────
+// Keeps a hit-count per IP in a rolling 1-minute window.
+// No external package required. Replace with express-rate-limit in production.
+const RATE_WINDOW_MS = 60_000;
+const RATE_MAX_REQUESTS = 200; // per IP per window
+const rateLimitStore = new Map<string, { count: number; windowStart: number }>();
+
+function rateLimit(req: express.Request, res: express.Response, next: express.NextFunction) {
+  const ip = (req.headers['x-forwarded-for'] as string)?.split(',')[0].trim() || req.socket.remoteAddress || 'unknown';
+  const now = Date.now();
+  const entry = rateLimitStore.get(ip);
+
+  if (!entry || now - entry.windowStart > RATE_WINDOW_MS) {
+    rateLimitStore.set(ip, { count: 1, windowStart: now });
+    return next();
+  }
+
+  entry.count++;
+  if (entry.count > RATE_MAX_REQUESTS) {
+    res.setHeader('Retry-After', String(Math.ceil((entry.windowStart + RATE_WINDOW_MS - now) / 1000)));
+    return res.status(429).json({ error: 'Too many requests. Please slow down.' });
+  }
+  return next();
+}
+
+// Stricter limiter for auth endpoints (20 req/min per IP)
+const AUTH_RATE_MAX = 20;
+const authRateLimitStore = new Map<string, { count: number; windowStart: number }>();
+
+function authRateLimit(req: express.Request, res: express.Response, next: express.NextFunction) {
+  const ip = (req.headers['x-forwarded-for'] as string)?.split(',')[0].trim() || req.socket.remoteAddress || 'unknown';
+  const now = Date.now();
+  const entry = authRateLimitStore.get(ip);
+
+  if (!entry || now - entry.windowStart > RATE_WINDOW_MS) {
+    authRateLimitStore.set(ip, { count: 1, windowStart: now });
+    return next();
+  }
+
+  entry.count++;
+  if (entry.count > AUTH_RATE_MAX) {
+    res.setHeader('Retry-After', String(Math.ceil((entry.windowStart + RATE_WINDOW_MS - now) / 1000)));
+    return res.status(429).json({ error: 'Too many login attempts. Please wait before retrying.' });
+  }
+  return next();
+}
+// ───────────────────────────────────────────────────────────────────────────
+
 app.use(cors(corsOptions));
 app.use(express.json());
+
+// Apply global rate limit to all /api routes
+app.use('/api', rateLimit);
+// Apply strict rate limit to auth endpoints
+app.use('/api/auth', authRateLimit);
 
 // Initialize Socket.io (Harvics Orchestrator Real-Time Layer)
 const io = new Server(server, {

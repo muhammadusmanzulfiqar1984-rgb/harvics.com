@@ -8,7 +8,7 @@ export default function CheckoutPage() {
   const locale = (params?.locale as string) || 'en'
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="pt-28 pb-20 px-4">
         {/* Hero */}
         <section className="max-w-5xl mx-auto text-center mb-16">
@@ -27,12 +27,12 @@ export default function CheckoutPage() {
                 Shipping Information
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input placeholder="First Name" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-[#F5F1E8] text-[#6B1F2B] placeholder-[#6B1F2B]/40 focus:border-[#C3A35E] focus:outline-none" />
-                <input placeholder="Last Name" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-[#F5F1E8] text-[#6B1F2B] placeholder-[#6B1F2B]/40 focus:border-[#C3A35E] focus:outline-none" />
-                <input placeholder="Email" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-[#F5F1E8] text-[#6B1F2B] placeholder-[#6B1F2B]/40 focus:border-[#C3A35E] focus:outline-none md:col-span-2" />
-                <input placeholder="Address" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-[#F5F1E8] text-[#6B1F2B] placeholder-[#6B1F2B]/40 focus:border-[#C3A35E] focus:outline-none md:col-span-2" />
-                <input placeholder="City" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-[#F5F1E8] text-[#6B1F2B] placeholder-[#6B1F2B]/40 focus:border-[#C3A35E] focus:outline-none" />
-                <input placeholder="Country" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-[#F5F1E8] text-[#6B1F2B] placeholder-[#6B1F2B]/40 focus:border-[#C3A35E] focus:outline-none" />
+                <input placeholder="First Name" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/40 focus:border-[#C3A35E] focus:outline-none" />
+                <input placeholder="Last Name" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/40 focus:border-[#C3A35E] focus:outline-none" />
+                <input placeholder="Email" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/40 focus:border-[#C3A35E] focus:outline-none md:col-span-2" />
+                <input placeholder="Address" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/40 focus:border-[#C3A35E] focus:outline-none md:col-span-2" />
+                <input placeholder="City" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/40 focus:border-[#C3A35E] focus:outline-none" />
+                <input placeholder="Country" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/40 focus:border-[#C3A35E] focus:outline-none" />
               </div>
             </div>
 

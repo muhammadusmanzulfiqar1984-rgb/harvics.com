@@ -100,12 +100,17 @@ class AutoBugDetector {
 
     for (const endpoint of endpoints) {
       try {
+        const token = typeof window !== 'undefined' ? localStorage.getItem('auth_token') : null
+        const headers: Record<string, string> = { 'Content-Type': 'application/json' }
+        if (token) headers['Authorization'] = `Bearer ${token}`
         const response = await fetch(`${apiUrl}${endpoint}`, {
           method: 'GET',
-          headers: { 'Content-Type': 'application/json' },
+          headers,
         })
 
         if (!response.ok) {
+          // 401 = unauthenticated (expected when user is not logged in), skip
+          if (response.status === 401) continue
           this.reportBug({
             type: 'integration',
             severity: 'high',
@@ -136,11 +141,15 @@ class AutoBugDetector {
     const token = localStorage.getItem('auth_token')
     if (!token) return
 
+    // Never auto-clear demo tokens — backend may not be running
+    if (token.startsWith('demo-token-')) return
+
     try {
       const { apiClient } = await import('@/lib/api')
       const response = await apiClient.verifyToken()
 
-      if (response.error) {
+      // Only treat as invalid if backend is reachable AND explicitly says invalid
+      if (!response.error && response.data && response.data.valid === false) {
         this.reportBug({
           type: 'security',
           severity: 'high',

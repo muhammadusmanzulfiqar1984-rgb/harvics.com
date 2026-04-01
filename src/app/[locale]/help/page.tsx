@@ -3,10 +3,11 @@ import Link from 'next/link'
 import { SUPPORTED_LOCALES } from '@/config/locales'
 
 import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Help Center | Harvics',
-  description: 'Get help with orders, accounts, and Harvics services.',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'help')
 }
 
 
@@ -64,7 +65,7 @@ export default async function HelpPage({ params }: { params: Promise<{ locale: s
   ]
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="pt-20">
         <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
           {/* Decorative Elements */}

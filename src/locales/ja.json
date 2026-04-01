@@ -1,624 +1,1146 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
-    "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More"
+    "welcome": "ようこそ",
+    "companyName": "ハーウィッチ",
+    "tagline": "2019年以来、プレミアム消費財における卓越性",
+    "exploreProducts": "製品を探す",
+    "contact": "お問い合わせ",
+    "learnMore": "もっと詳しく知る",
+    "brandStatement": "国際的な品質基準を満たした、多様なカテゴリーにわたる高品質な食品を提供する、世界有数の消費財企業。",
+    "taglineStart": "プレミアム消費財における卓越性",
+    "taglineYear": "2019",
+    "locations": "ロンドン・ミラノ・ニューヨーク",
+    "categories": {
+      "bakery": "ベーカリー",
+      "beverages": "飲料",
+      "confectionery": "菓子",
+      "culinary": "料理",
+      "frozenFoods": "冷凍食品",
+      "pasta": "パスタ",
+      "snacks": "おやつ"
+    }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
+    "esgReport": "ESGレポート2025",
+    "locations": "ロンドン・ミラノ・ニューヨーク",
+    "home": "家",
+    "about": "について",
+    "aboutUs": "私たちについて",
+    "brandStory": "ブランドストーリー",
+    "products": "製品",
+    "ourProducts": "当社の製品",
+    "viewAllProducts": "全商品を見る",
     "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
-    "media": "Media",
-    "contactUs": "Contact Us",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store"
+    "investorRelations": "投資家向け情報",
+    "investors": "投資家",
+    "media": "メディア",
+    "contactUs": "お問い合わせ",
+    "countries": "国々",
+    "portals": "ポータル",
+    "signIn": "サインイン",
+    "wishlist": "ウィッシュリスト",
+    "cart": "ショッピングカート",
+    "help": "ヘルプ",
+    "findStore": "店舗を探す",
+    "harvicsHouse": "ハーヴィックス・ハウス",
+    "money": "お金",
+    "sales": "販売",
+    "offers": "オファー",
+    "darkMode": "ダークモード",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "クレジットカード",
+        "msRewards": "M&Sリワードクレジットカード",
+        "clubRewards": "クラブ特典",
+        "ourCards": "当社のクレジットカード"
+      },
+      "insurance": {
+        "title": "保険",
+        "home": "住宅保険",
+        "travel": "旅行保険"
+      },
+      "travel": {
+        "title": "旅行サービス",
+        "money": "旅行資金",
+        "exchange": "為替レート"
+      },
+      "additional": {
+        "title": "追加サービス",
+        "savings": "貯蓄と投資",
+        "personalLoans": "個人向けローン",
+        "financialSupport": "財政支援"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "現在の売上",
+      "clearance": "クリアランス",
+      "seasonal": "季節限定セール"
+    },
+    "offersDropdown": {
+      "specialOffers": "特別オファー",
+      "promotions": "プロモーション",
+      "bulkOrders": "大量注文割引"
+    }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products"
+    "ourProducts": "当社の製品",
+    "viewAllProducts": "全商品を見る",
+    "productCategories": "当社の製品カテゴリー",
+    "discoverPremium": "丹精込めて作られた、当社のプレミアム製品ラインナップをご覧ください。",
+    "tier1": "ティア1：カテゴリー",
+    "tier2": "ティア2：モジュール",
+    "tier3": "ティア3：KPI画面",
+    "tier4": "ティア4：アクション",
+    "reset": "ナビゲーションをリセット",
+    "noSubcategories": "このカテゴリにはサブカテゴリがありません。",
+    "pageTitle": "製品",
+    "subcategories": "サブカテゴリ",
+    "bakery": "ベーカリー",
+    "bakeryDesc": "焼きたてのパンやペストリー。",
+    "beverages": "飲料",
+    "beveragesDesc": "あらゆるシーンにぴったりの爽やかなドリンク。",
+    "confectionery": "菓子",
+    "confectioneryDesc": "甘いお菓子とごちそう。",
+    "culinary": "料理",
+    "culinaryDesc": "キッチンに欠かせない食材。",
+    "frozenFoods": "冷凍食品",
+    "frozenFoodsDesc": "手軽でおいしい冷凍食品。",
+    "pasta": "パスタ",
+    "pastaDesc": "本格的なパスタ各種。",
+    "snacks": "おやつ",
+    "snacksDesc": "一日中いつでも楽しめる美味しいスナック。"
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
-    "email": "Email",
+    "title": "お問い合わせください",
+    "subtitle": "ぜひご連絡ください。以下のいずれかの方法でご連絡いただけます。",
+    "phone": "電話",
+    "email": "メール",
     "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "callNow": "今すぐお電話ください",
+    "sendEmail": "メールを送信する",
+    "messageUs": "お問い合わせはこちら"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "メディアセンター",
+    "pageTitle": "メディアセンター | ハーヴィックス",
+    "description": "Harvics Global Venturesのプレス向け資料、ブランド資産、最新ニュース。",
+    "corporate": "企業",
+    "sections": {
+      "news": {
+        "title": "ニュース＆プレスリリース",
+        "desc": "Harvics Global Venturesからの最新の発表、市場拡大、新製品発売、および企業情報に関する最新情報。",
+        "cta": "最新ニュースを読む"
+      },
+      "gallery": {
+        "title": "画像ギャラリー",
+        "desc": "メディア向けに、高解像度のブランド素材、製品写真、施設写真、イベント写真を提供します。",
+        "cta": "ギャラリーを閲覧する"
+      },
+      "contacts": {
+        "title": "メディア担当者",
+        "desc": "報道関係のお問い合わせ、インタビューのご依頼、提携に関する発表などは、弊社の広報チームまでご連絡ください。",
+        "cta": "報道関係者へのお問い合わせ"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "対象市場",
+      "industryVerticals": "業界別分類",
+      "foundedIn": "ドバイで設立",
+      "languagesSupported": "対応言語"
+    },
+    "recentHeadlines": "最近のヘッドライン",
+    "headlines": {
+      "expansion": "ハーヴィックス社、東南アジアの5つの新市場に日用消費財事業を拡大",
+      "aiPlatform": "グローバル流通向けにAIを活用した新たなサプライチェーンプラットフォームがローンチ",
+      "carbonNeutral": "ハーヴィックス社、全施設でカーボンニュートラルのマイルストーンを達成",
+      "partnership": "南アジアの大手繊維メーカーとの戦略的パートナーシップ"
+    }
   },
   "footer": {
-    "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
-    "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
-    "contactUsButton": "Contact Us",
-    "usefulLinks": "Useful Links",
-    "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
-    "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
-    "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
-    "privacy": "Privacy",
-    "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
+    "companyName": "ハーヴィックス・グローバル・ベンチャーズ",
+    "tagline": "2019年以来、プレミアム消費財における卓越性",
+    "brandStatement": "国際的な品質基準を満たした、多様なカテゴリーにわたる高品質な食品を提供する、世界有数の消費財企業。",
+    "locations": "ロンドン・ミラノ・ニューヨーク",
+    "since": "2019年以来",
+    "harvicsNews": "ハーヴィックスニュース",
+    "subscribeToAlerts": "アラートや最新情報を受け取るには登録してください",
+    "signUp": "サインアップ",
+    "complianceConcerns": "コンプライアンスに関する懸念",
+    "speakUp": "コンプライアンスや倫理に関して懸念がある場合は、遠慮なく発言してください。",
+    "speakUpButton": "声を上げよう",
+    "contactUs": "お問い合わせ",
+    "contactDescription": "当チームにご連絡ください",
+    "contactUsButton": "お問い合わせ",
+    "usefulLinks": "役立つリンク集",
+    "askHarvics": "ハーウィッチに聞いてみよう",
+    "searchForJobs": "求人検索",
+    "signUpForNews": "ニュース登録はこちら",
+    "company": "会社",
+    "globalAddresses": "グローバルアドレス",
+    "strategy": "戦略",
+    "ourLeadership": "私たちのリーダーシップ",
+    "brandsAZ": "ブランドA-Z",
+    "ourHistory": "私たちの歴史",
+    "sustainability": "持続可能性",
+    "news": "ニュース",
+    "mediaContacts": "メディア担当者",
+    "images": "画像",
+    "investors": "投資家",
+    "corporateGovernance": "コーポレートガバナンス",
+    "sharesAdrsBonds": "株式、ADR、債券",
+    "publications": "出版物",
+    "followUsOn": "フォローしてください",
+    "issuesCount": "問題なし",
+    "siteMap": "サイトマップ",
+    "unsubscribe": "購読解除",
+    "help": "ヘルプ",
+    "privacy": "プライバシー",
+    "cookies": "クッキー",
+    "termsOfUse": "利用規約",
+    "accessibility": "アクセシビリティ",
+    "carbonEfficiency": "炭素効率",
+    "suppliers": "サプライヤー",
+    "socialMedia": "ソーシャルメディア",
+    "cookieSettings": "クッキー設定",
     "feature1Title": "Global Reach",
     "feature1Desc": "Serving customers across 40+ countries worldwide",
-    "feature2Title": "Premium Quality",
+    "feature2Title": "プレミアム品質",
     "feature2Desc": "International quality standards in every product",
     "feature3Title": "Innovation",
     "feature3Desc": "Leading innovation in consumer goods industry",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
-    "media": "Media"
+    "emailAddress": "電子メールアドレス",
+    "enterEmailPlaceholder": "メールアドレスを入力してください",
+    "subscribe": "購読する",
+    "subscribing": "購読中...",
+    "aboutUs": "私たちについて",
+    "media": "メディア"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "商品、ブランド、またはカテゴリを検索",
+    "noResults": "検索結果が見つかりませんでした",
+    "searching": "検索中...",
+    "results": "結果"
   },
   "chatbot": {
-    "title": "Chat with Us",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "title": "チャットでお問い合わせください",
+    "placeholder": "メッセージを入力してください...",
+    "send": "送信",
+    "close": "近い",
+    "welcome": "こんにちは！本日はどのようなご用件でしょうか？",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "すみません、よく理解できませんでした。もう一度言い換えていただけますか？",
+      "help": "製品情報、ご注文、その他ご質問など、何でもお手伝いいたします。どのようなことをお知りになりたいですか？",
+      "contact": "さらにサポートが必要な場合は、support@harvics.comまでメールでお問い合わせいただくか、+1-800-HARVICSまでお電話ください。"
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
-    "filter": "Filter",
-    "clear": "Clear",
-    "download": "Download",
-    "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
-    "status": "Status",
-    "date": "Date",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
-    "selectCountry": "Select Country",
-    "required": "Required",
-    "menu": "Menu",
-    "viewProducts": "View Products"
+    "chatWithUs": "チャットでお問い合わせください",
+    "loading": "読み込み中…",
+    "error": "エラー",
+    "success": "成功",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "消去",
+    "edit": "編集",
+    "view": "ビュー",
+    "submit": "提出する",
+    "search": "検索",
+    "filter": "フィルター",
+    "clear": "クリア",
+    "download": "ダウンロード",
+    "upload": "アップロード",
+    "yes": "はい",
+    "no": "いいえ",
+    "close": "近い",
+    "back": "戻る",
+    "next": "次",
+    "previous": "前の",
+    "actions": "行動",
+    "status": "状態",
+    "date": "日付",
+    "name": "名前",
+    "email": "メール",
+    "phone": "電話",
+    "address": "住所",
+    "country": "国",
+    "city": "市",
+    "all": "全て",
+    "none": "なし",
+    "select": "選択",
+    "selectCountry": "国を選択",
+    "required": "必須",
+    "menu": "メニュー",
+    "viewProducts": "製品を見る",
+    "selectLanguage": "言語を選択",
+    "showMore": "もっと見る",
+    "showLess": "表示を減らす"
   },
   "music": {
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "音楽を再生する",
+    "pause": "音楽を一時停止",
+    "mute": "音楽をミュート",
+    "unmute": "音楽のミュートを解除する"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "グローバルな展開",
+    "since": "以来",
+    "majorMarket": "主要市場",
+    "majorMarkets": "主要市場",
+    "presence": "面前",
+    "countriesServed": "サービス提供国",
+    "majorMarketsCount": "主要市場",
+    "productCategoriesCount": "製品カテゴリ",
+    "establishedYear": "設立"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "縄張り階層",
+    "fullPath": "フルパス",
+    "currentTerritory": "現在の領域",
+    "noChildren": "商品なし",
     "tiers": {
-      "globe": "Globe",
-      "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
-      "district": "District",
-      "location": "Location"
+      "globe": "グローブ",
+      "continent": "大陸",
+      "region": "地域",
+      "country": "国",
+      "city": "市",
+      "district": "地区",
+      "location": "位置"
     }
   },
   "globalWorld": {
-    "title": "Harvics Global",
-    "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "title": "ハーヴィックス・グローバル",
+    "titleShort": "グローバル",
+    "selectRegion": "地域を選択",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
+      "title": "顧客情報",
+      "selected": "選ばれた",
+      "fullName": "フルネーム",
+      "namePlaceholder": "氏名を入力してください",
+      "nameRequired": "名前は必須です",
+      "email": "電子メールアドレス",
       "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
+      "emailRequired": "メールアドレスは必須です。",
+      "emailInvalid": "有効なメールアドレスを入力してください",
+      "phone": "電話番号",
       "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "phoneRequired": "電話番号は必須です。",
+      "address": "住所",
+      "addressPlaceholder": "あなたの住所",
+      "addressRequired": "住所は必須です。",
+      "marketingConsent": "マーケティング情報や最新情報を受け取ることに同意します",
+      "submit": "送信して続行",
+      "submitting": "送信中...",
+      "skip": "スキップして続行"
     }
   },
   "distributorPortal": {
     "dashboard": {
       "kpi": {
-        "title": "Key Performance Indicators",
-        "ordersToday": "Orders today",
-        "ordersTodaySubtitle": "Submitted via Harvics CRM",
-        "pendingDeliveries": "Pending deliveries",
-        "pendingDeliveriesSubtitle": "Across assigned routes",
-        "retailers": "Retailers",
-        "retailersSubtitle": "Active outlets in scope",
-        "attendance": "T & A Score",
-        "attendanceSubtitle": "Territory coverage"
+        "title": "主要業績評価指標",
+        "ordersToday": "本日のご注文",
+        "ordersTodaySubtitle": "Harvics CRM経由で送信されました",
+        "pendingDeliveries": "配達待ち",
+        "pendingDeliveriesSubtitle": "割り当てられたルート全体にわたって",
+        "retailers": "小売業者",
+        "retailersSubtitle": "対象となるアクティブな販売チャネル",
+        "attendance": "T&Aスコア",
+        "attendanceSubtitle": "対象地域"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "財務および在庫",
+        "lowStock": "在庫が少ないSKU",
+        "lowStockSubtitle": "補充開始",
+        "outstandingInvoices": "未払い請求書",
+        "outstandingInvoicesSubtitle": "回収期限",
+        "creditLimit": "クレジット限度額",
+        "creditLimitSubtitle": "財務部により割り当てられました"
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "自動承認、在庫補充、請求書リマインダーが有効になりました",
+        "autoApproval": "自己承認",
+        "stockReplenishment": "在庫補充",
+        "invoiceReminders": "請求書のリマインダー"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "AIによるおすすめ",
+        "riskLevel": "リスクレベル",
+        "riskDescription": "信用利用率と支払い履歴に基づく",
+        "suggestedOrder": "推奨注文順序",
+        "suggestedOrderSubtitle": "AIが推奨する注文商品",
+        "nextAction": "次のアクション"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "行動とガイダンス",
+        "complaints": "苦情",
+        "complaintsSubtitle": "小売業者の問題が対応待ちとなっている",
+        "playbook": "プレイブック",
+        "playbookItem1": "午前中に配達予定の品目を優先的に配達してください。",
+        "playbookItem2": "未解決の苦情はすべて48時間以内に解決してください。",
+        "playbookItem3": "在庫が少なくなったSKUの補充をトリガーします（発注書を自動作成します）。"
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "地域",
+      "ordersThisMonth": "今月の注文",
+      "pendingOrders": "保留中の注文",
+      "deliveredOrders": "配達済み注文",
+      "territoryInformation": "地域情報",
+      "country": "国",
+      "city": "市",
+      "region": "地域",
+      "quickActions": "クイックアクション",
+      "newOrder": "ニューオーダー",
+      "viewOrders": "注文を見る",
+      "viewInvoices": "請求書を表示する",
+      "profileSettings": "プロフィール設定",
+      "loading": "ダッシュボードを読み込んでいます...",
+      "error": "エラー"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
-      "date": "Date",
-      "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "title": "私の注文",
+      "orderId": "注文ID",
+      "date": "日付",
+      "status": "状態",
+      "items": "商品",
+      "totalAmount": "合計金額",
+      "actions": "行動",
+      "viewDetails": "詳細を見る",
       "filters": {
-        "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "状態",
+        "startDate": "開始日",
+        "endDate": "終了日",
+        "allStatuses": "すべてのステータス",
+        "clearFilters": "フィルターをクリア"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "保留中",
+        "processing": "処理",
+        "delivered": "配達済み",
+        "cancelled": "キャンセル"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
-      "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "noOrders": "注文が見つかりませんでした",
+      "loading": "注文を読み込んでいます...",
+      "page": "ページ",
+      "of": "の",
+      "previous": "前の",
+      "next": "次"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
-      "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "orderItems": "Order Items",
-      "product": "Product",
+      "title": "注文の詳細",
+      "backToOrders": "注文一覧に戻る",
+      "orderId": "注文ID",
+      "status": "状態",
+      "orderDate": "注文日",
+      "deliveryDate": "配送日",
+      "deliveryAddress": "配送先住所",
+      "notes": "注記",
+      "orderItems": "注文品目",
+      "product": "製品",
       "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "quantity": "量",
+      "unitPrice": "単価",
+      "total": "合計",
+      "totalAmount": "合計金額",
+      "statusTimeline": "ステータスタイムライン",
+      "orderNotFound": "注文が見つかりません"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
-      "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "title": "新たな秩序を創造する",
+      "orderItems": "注文品目",
+      "addItem": "アイテムを追加",
+      "noItems": "まだアイテムが追加されていません。「アイテムを追加」をクリックして開始してください。",
+      "orderDetails": "注文の詳細",
+      "deliveryDate": "配送日",
+      "deliveryAddress": "配送先住所",
+      "notes": "注記",
+      "totalAmount": "合計金額",
+      "createOrder": "注文を作成する",
+      "creatingOrder": "秩序を生み出す…",
+      "cancel": "キャンセル",
+      "selectProduct": "商品を選択",
+      "product": "製品",
+      "quantity": "量",
+      "unitPrice": "単価",
+      "remove": "取り除く",
+      "subtotal": "小計",
+      "orderId": "注文ID",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "少なくとも1つの注文品目が必要です",
+        "productRequired": "製品が必要です",
+        "quantityRequired": "数量は0より大きい必要があります",
+        "priceRequired": "単価は負の値であってはならない",
+        "invalidDate": "無効な配送日形式",
+        "datePast": "配達日は過去の日付であってはならない"
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "私の請求書",
+      "invoiceNumber": "請求書番号",
+      "invoiceDate": "請求書発行日",
+      "dueDate": "2つのデート",
+      "amount": "額",
+      "paidAmount": "支払金額",
+      "paymentStatus": "支払い状況",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "支払い状況",
+        "allStatuses": "すべてのステータス",
+        "clearFilters": "フィルターをクリア"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "有料",
+        "unpaid": "未払い",
+        "partial": "部分的"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "請求書は見つかりませんでした",
+      "loading": "請求書を読み込んでいます..."
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "title": "マイプロフィール",
+      "accountInformation": "アカウント情報",
+      "distributorId": "販売代理店ID",
+      "territory": "地域",
+      "country": "国",
+      "city": "市",
+      "accountCreated": "アカウントが作成されました",
+      "updateProfile": "プロフィールの更新",
+      "name": "名前",
+      "email": "メール",
+      "phone": "電話",
+      "address": "住所",
+      "language": "言語",
+      "currency": "通貨",
+      "saveChanges": "変更を保存",
+      "saving": "保存中...",
+      "profileUpdated": "プロフィールが正常に更新されました",
+      "loading": "プロファイルを読み込んでいます...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "無効なメール形式",
+        "invalidPhone": "無効な電話フォーマット"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
-      "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "error": "エラー",
+      "loading": "読み込み中…",
+      "save": "保存",
+      "cancel": "キャンセル",
+      "back": "戻る",
+      "submit": "提出する",
+      "delete": "消去",
+      "edit": "編集",
+      "view": "ビュー",
+      "search": "検索",
+      "filter": "フィルター",
+      "clear": "クリア",
+      "apply": "適用する",
+      "close": "近い",
+      "confirm": "確認する",
+      "yes": "はい",
+      "no": "いいえ"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
-    "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "title": "法務運営システム",
+    "sidebarTitle": "リーガルOS",
+    "accessDenied": "アクセスが拒否されました",
+    "accessDeniedMessage": "法務OSモジュールへのアクセス権限がありません。",
+    "dashboard": "ダッシュボード",
+    "contracts": "契約",
+    "certificates": "証明書",
+    "compliance": "コンプライアンス",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "法務ダッシュボード",
+      "description": "法務業務の概要とコンプライアンス状況",
+      "activeTrademarks": "有効な商標",
+      "activeContracts": "有効な契約",
+      "complianceStatus": "コンプライアンス状況"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "商標",
+      "description": "商標登録および出願の管理",
+      "addNew": "新しい商標を追加する",
       "filters": {
-        "country": "Country",
-        "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "country": "国",
+        "status": "状態",
+        "allCountries": "すべての国",
+        "allStatuses": "すべてのステータス",
+        "clearFilters": "フィルターをクリア"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "brandName": "ブランド名",
+        "class": "クラス",
+        "country": "国",
+        "applicationNo": "申請番号",
+        "status": "状態",
+        "expiryDate": "有効期限",
+        "actions": "行動"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "商標を編集する",
+        "add": "新しい商標を追加する",
+        "view": "商標を表示"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "brandName": "ブランド名",
+        "classNumber": "クラス番号",
+        "country": "国",
+        "applicationNo": "申請番号",
+        "status": "状態",
+        "expiryDate": "有効期限",
+        "documents": "文書",
+        "noDocuments": "添付書類はありません",
+        "addDocument": "ドキュメントを追加する",
+        "remove": "取り除く"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "商標の読み込みに失敗しました",
+        "saveFailed": "商標の保存に失敗しました。もう一度お試しください。"
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "訴訟事件",
+      "description": "訴訟案件を管理し、その状況を追跡する",
+      "addNew": "新たな事例",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
-        "description": "Description",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date"
+        "caseTitle": "事件名",
+        "caseType": "ケースの種類",
+        "country": "国",
+        "description": "説明",
+        "assignedTo": "担当者",
+        "status": "状態",
+        "hearingDate": "公聴会の日程"
       },
       "table": {
-        "caseTitle": "Case Title",
-        "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "caseTitle": "事件名",
+        "type": "タイプ",
+        "country": "国",
+        "assignedTo": "担当者",
+        "status": "状態",
+        "hearingDate": "公聴会の日程",
+        "actions": "行動"
       },
       "status": {
-        "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "open": "開ける",
+        "inProgress": "進行中",
+        "closed": "閉店",
+        "cancelled": "キャンセル"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "艦隊マップビュー",
+      "description": "営業担当者と配送車両のリアルタイム追跡",
+      "activeEmployees": "現役従業員",
+      "noEmployees": "現役従業員なし",
+      "loading": "読み込み中…"
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
-      "reset": "Reset",
-      "play": "Play",
-      "pause": "Pause",
-      "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "title": "ルートリプレイ",
+      "employee": "従業員",
+      "speed": "スピード",
+      "reset": "リセット",
+      "play": "遊ぶ",
+      "pause": "一時停止",
+      "points": "ポイント",
+      "noRoute": "ルートデータがありません",
+      "loading": "ルートを読み込んでいます..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "競合製品",
+      "description": "競合他社の製品情報を追跡する",
+      "addProduct": "商品を追加する",
+      "formTitle": "競合製品を追加する",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "ブランド",
+        "skuName": "SKU名",
+        "category": "カテゴリ",
+        "size": "サイズ",
+        "price": "価格",
+        "currency": "通貨",
+        "country": "国"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "ブランド",
+        "skuName": "SKU名",
+        "category": "カテゴリ",
+        "size": "サイズ",
+        "price": "価格",
+        "country": "国",
+        "dateAdded": "追加日"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "製品の読み込みに失敗しました",
+        "createFailed": "製品の作成に失敗しました。もう一度お試しください。"
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "競合製品は見つかりませんでした",
+      "loading": "商品を読み込んでいます..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "競合他社ダッシュボード",
+      "description": "競合製品に関する分析と洞察",
+      "totalProducts": "トータルプロダクツ",
+      "brandsTracked": "追跡対象ブランド",
+      "countries": "国々",
+      "categories": "カテゴリー",
+      "byBrand": "ブランド別製品一覧",
+      "byCountry": "国別製品一覧",
+      "byCategory": "カテゴリー別製品一覧",
+      "loading": "統計情報を読み込んでいます...",
+      "noStats": "統計情報はありません"
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
-    "finance": "Finance",
+    "overview": "概要",
+    "orders": "注文",
+    "inventory": "在庫",
+    "logistics": "ロジスティクス",
+    "finance": "ファイナンス",
     "crm": "CRM",
-    "hr": "HR",
-    "executive": "Executive",
-    "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
-    "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
-    "admin": "Admin"
+    "hr": "人事部",
+    "executive": "エグゼクティブ",
+    "investor": "投資家",
+    "legal-ipr": "法律／知的財産権",
+    "competitor": "競合相手",
+    "import-export": "輸入／輸出",
+    "gps-tracking": "GPS追跡",
+    "localization": "ローカリゼーション",
+    "workflows": "ワークフロー",
+    "admin": "管理者"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
-      "finance": "Finance",
+      "overview": "概要",
+      "orders": "注文",
+      "inventory": "在庫",
+      "logistics": "ロジスティクス",
+      "finance": "ファイナンス",
       "crm": "CRM",
-      "hr": "HR",
-      "executive": "Executive",
-      "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
-      "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
-      "admin": "Admin"
+      "hr": "人事部",
+      "executive": "エグゼクティブ",
+      "investor": "投資家",
+      "legal-ipr": "法律／知的財産権",
+      "competitor": "競合相手",
+      "import-export": "輸入／輸出",
+      "gps-tracking": "GPS追跡",
+      "localization": "ローカリゼーション",
+      "workflows": "ワークフロー",
+      "admin": "管理者"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
-      "profit": "Profit"
+      "customers": "顧客",
+      "employees": "従業員",
+      "profit": "利益"
+    },
+    "domain": {
+      "title": "CRM OS",
+      "customer360": {
+        "title": "顧客360度",
+        "description": "顧客プロファイル、やり取りの履歴、および関係管理を完全に網羅する"
+      },
+      "campaigns": {
+        "title": "デジタルキャンペーン",
+        "description": "マルチチャネルマーケティングキャンペーン（Instagram、Facebook、TikTok、WhatsApp）"
+      },
+      "leads": {
+        "title": "見込み客とビジネスチャンス",
+        "description": "リード管理、資格審査、および商談パイプライン"
+      },
+      "support": {
+        "title": "カスタマーサポート",
+        "description": "チケット管理、顧客サービス、問題解決"
+      },
+      "loyalty": {
+        "title": "ロイヤルティプログラム",
+        "description": "小売店の顧客ロイヤルティ、ゲーミフィケーション、および報酬管理"
+      }
+    },
+    "customerList": {
+      "title": "顧客360度",
+      "newCustomer": "新規顧客",
+      "totalCustomers": "顧客総数",
+      "active": "アクティブ",
+      "new": "新しい",
+      "satisfaction": "満足",
+      "customerManagement": "顧客管理",
+      "customerManagementDescription": "顧客との関係、やり取り、キャンペーンを表示および管理できます。",
+      "loading": "読み込み中…",
+      "error": "CRMデータの読み込みエラー"
     }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "サプライヤーのコックピットを読み込み中…",
+      "purchaseOrders": "発注書",
+      "purchaseOrdersSubtitle": "ハーヴィックスに育てられた",
+      "shipments": "出荷／GRN",
+      "shipmentsSubtitle": "今週承認されました",
+      "invoices": "請求書が作成されました",
+      "invoicesSubtitle": "支払い待ち",
+      "paymentsPending": "支払い保留中",
+      "paymentsPendingSubtitle": "発売予定",
+      "qualityComplaints": "品質／苦情",
+      "qualityComplaintsSubtitle": "オープンチケット",
+      "forecast": "天気予報（今後4週間）",
+      "forecastSubtitle": "AIプレースホルダー",
+      "supplierActions": "サプライヤーの行動",
+      "action1": "今後の出荷状況を確認し、GRN（受領確認）スケジュールを更新してください。",
+      "action2": "未払い請求書を確認し、支払いに関するアドバイスを共有する。",
+      "action3": "品質保証の証拠に基づいて、未解決の品質に関する苦情を解決する。"
+    }
+  },
+  "form": {
+    "username": "ユーザー名",
+    "password": "パスワード",
+    "email": "メール",
+    "submit": "提出する",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "消去",
+    "search": "検索",
+    "filter": "フィルター",
+    "reset": "リセット",
+    "close": "近い",
+    "back": "戻る",
+    "next": "次",
+    "previous": "前の",
+    "confirm": "確認する",
+    "rememberMe": "私を覚えてますか",
+    "forgotPassword": "パスワードをお忘れですか？",
+    "emailRequired": "メールアドレスは必須です。",
+    "emailInvalid": "有効なメールアドレスを入力してください"
+  },
+  "faq": {
+    "products": {
+      "category": "製品",
+      "q1": "Harvicsはどのような製品を提供していますか？",
+      "a1": "当社では、菓子、飲料、スナック、パスタ、ベーカリー製品、冷凍食品など、多岐にわたるカテゴリーの高品質な食品を幅広く取り揃えております。",
+      "q2": "ハービック製品はどこで購入できますか？",
+      "a2": "当社の製品は40カ国以上の小売店でお求めいただけます。お近くの販売店をお探しの際は、店舗検索またはお問い合わせページをご利用ください。",
+      "q3": "大量注文は可能ですか？",
+      "a3": "はい、企業様および小売店様向けに大量注文割引をご用意しております。詳しくは、大量注文割引ページをご覧ください。"
+    },
+    "ordersShipping": {
+      "category": "注文と配送",
+      "q1": "配送方法にはどのような選択肢がありますか？",
+      "a1": "弊社では、通常配送、速達配送、国際配送など、様々な配送オプションをご用意しております。50ドル以上のご注文は送料無料です。",
+      "q2": "配達にはどれくらい時間がかかりますか？",
+      "a2": "配送日数は地域によって異なります。通常配送は5～7営業日、速達配送は2～3営業日かかります。",
+      "q3": "注文状況を追跡できますか？",
+      "a3": "はい、ご注文確認メールに記載されている追跡番号を使ってご注文状況をご確認いただけます。"
+    },
+    "accountPayments": {
+      "category": "アカウントと支払い",
+      "q1": "アカウントはどのように作成すればいいですか？",
+      "a1": "ヘッダーの「サインイン」をクリックし、「アカウント作成」を選択して新しいアカウントを登録してください。",
+      "q2": "どのような支払い方法に対応していますか？",
+      "a2": "当社では、法人向け注文のお支払い方法として、主要なクレジットカード、デビットカード、PayPal、銀行振込に対応しております。",
+      "q3": "私の支払い情報は安全ですか？",
+      "a3": "はい、お客様の決済情報を保護するために、業界標準の暗号化技術を使用しています。"
+    },
+    "returnsRefunds": {
+      "category": "返品と返金",
+      "q1": "返品ポリシーを教えてください。",
+      "a1": "未開封で元のパッケージに入っている商品に限り、30日間の返品保証を提供しています。返品をご希望の場合は、カスタマーサービスまでご連絡ください。",
+      "q2": "返金を請求するにはどうすればよいですか？",
+      "a2": "ご注文番号と返品理由を添えて、カスタマーサービスまでご連絡ください。5～7営業日以内に返金手続きを行います。"
+    },
+    "contactCta": {
+      "title": "まだご質問がありますか？",
+      "subtitle": "弊社のカスタマーサービスチームがお手伝いいたします。",
+      "button": "お問い合わせ"
+    }
+  },
+  "careers": {
+    "title": "採用情報",
+    "pageTitle": "採用情報 | ハーヴィックス",
+    "description": "Harvics Global Venturesに参加して、40カ国以上でビジネスチャンスを探りましょう。",
+    "joinUs": "参加しませんか",
+    "heroTitle": "グローバル貿易の未来を築く",
+    "heroDesc": "私たちは40カ国以上で事業を拡大しています。グローバルコマース向けのAI搭載オペレーティングシステムを構築するチームに加わりませんか。",
+    "stats": {
+      "openPositions": "募集中の職種",
+      "countries": "国々",
+      "industryVerticals": "業界別分類",
+      "departmentsHiring": "採用中の部署"
+    },
+    "openPositionsByDept": "部門別募集職種",
+    "departments": {
+      "sales": {
+        "name": "販売・流通",
+        "desc": "40以上の市場で収益を拡大する。担当地域管理、主要顧客管理、販売代理店との関係構築。"
+      },
+      "supplyChain": {
+        "name": "サプライチェーン＆ロジスティクス",
+        "desc": "工場から店頭まで、エンドツーエンドのサプライチェーン全体。車両管理、倉庫管理、ラストマイル配送。"
+      },
+      "technology": {
+        "name": "テクノロジーとAI",
+        "desc": "当社のAI搭載エンタープライズプラットフォームであるHarvics OSを構築します。フルスタック開発、機械学習エンジニアリング、データサイエンスの経験が求められます。"
+      },
+      "finance": {
+        "name": "財務・資金管理",
+        "desc": "複数通貨の財務管理、貿易金融、HPayデジタル決済、地域をまたいだ為替管理。"
+      },
+      "procurement": {
+        "name": "調達・ソーシング",
+        "desc": "15カ国以上からのグローバル調達。サプライヤー監査、品質管理、工場直送プログラム。"
+      },
+      "hr": {
+        "name": "人事",
+        "desc": "多様な地域や文化圏における人材獲得、人材育成、業績管理。"
+      },
+      "legal": {
+        "name": "法務およびコンプライアンス",
+        "desc": "貿易コンプライアンス、制裁措置スクリーニング、知的財産保護、複数法域にわたる契約管理。"
+      },
+      "marketing": {
+        "name": "マーケティング＆ブランド",
+        "desc": "多言語キャンペーン、38の地域に対応したコンテンツ制作、デジタルマーケティング、10の業種におけるブランド戦略。"
+      }
+    },
+    "roles": "役割",
+    "whyHarvics": "ハーヴィックスを選ぶ理由",
+    "benefits": {
+      "globalMobility": {
+        "title": "グローバルモビリティ",
+        "desc": "ドバイ、ロンドン、カラチ、ラホール、その他40以上の市場で活躍"
+      },
+      "growthTrack": {
+        "title": "成長トラック",
+        "desc": "急成長企業でのキャリアアップを加速させる"
+      },
+      "aiCulture": {
+        "title": "AIファーストの文化",
+        "desc": "最先端のAIとリアルタイムインテリジェンスシステムを活用して業務を行う"
+      },
+      "competitivePackage": {
+        "title": "競争力のある待遇",
+        "desc": "業界トップクラスの報酬、住宅、福利厚生"
+      },
+      "learningBudget": {
+        "title": "学習予算",
+        "desc": "コース、会議、資格取得のための年間開発予算"
+      },
+      "flexibleWork": {
+        "title": "柔軟な働き方",
+        "desc": "世界各地の地域ハブオフィスとのハイブリッド型契約"
+      }
+    }
+  },
+  "strategy": {
+    "title": "私たちの戦略",
+    "pageTitle": "戦略 | ハーウィッチ",
+    "description": "革新と卓越性を通じて持続可能な未来を築く",
+    "heroSubtitle": "革新と卓越性を通じて持続可能な未来を築く",
+    "pillars": {
+      "globalExpansion": {
+        "title": "グローバル展開",
+        "desc": "新興市場におけるプレゼンスを拡大すると同時に、既存市場における地位を強化する。"
+      },
+      "productInnovation": {
+        "title": "製品イノベーション",
+        "desc": "変化する消費者の嗜好を満たす新製品を開発するための研究開発への投資"
+      },
+      "sustainability": {
+        "title": "持続可能性",
+        "desc": "サプライチェーンと事業運営全体において、持続可能な取り組みに尽力しています。"
+      },
+      "digitalTransformation": {
+        "title": "デジタル変革",
+        "desc": "テクノロジーを活用して顧客体験と業務効率を向上させる"
+      }
+    },
+    "vision": {
+      "title": "私たちのビジョン",
+      "desc": "品質、革新性、そして持続可能性において世界的に認められる、世界有数の高級消費財企業となること。"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "ハーヴィックス・グローバル・ベンチャーズ | プレミアム・グローバル・トレーディング",
+      "description": "10以上の業界に高品質な製品を提供する、世界有数の貿易会社。2019年より50カ国以上で事業を展開。"
+    },
+    "about": {
+      "title": "会社概要 | ハーヴィックス・グローバル・ベンチャーズ",
+      "description": "Harvics Global Venturesがどのようにして40カ国以上、10業種にわたるグローバル貿易のリーディングカンパニーとなったのかをご覧ください。"
+    },
+    "contact": {
+      "title": "お問い合わせ | ハーヴィックス・グローバル・ベンチャーズ",
+      "description": "中東、南アジア、ヨーロッパ、アフリカ、アメリカ大陸など、世界各地にあるハービックスのオフィスにお問い合わせください。"
+    },
+    "products": {
+      "title": "製品情報 | ハーヴィックス・グローバル・ベンチャーズ",
+      "description": "Harvicsのプレミアム製品群を、日用消費財、繊維、原材料、産業ソリューションなど幅広い分野でご覧ください。"
+    },
+    "careers": {
+      "title": "採用情報 | ハーヴィックス・グローバル・ベンチャーズ",
+      "description": "Harvics Global Venturesに参加して、日用消費財、繊維、物流、テクノロジーなど、40カ国以上におけるビジネスチャンスを探ってみませんか。"
+    },
+    "media": {
+      "title": "メディアセンター | ハーヴィックス・グローバル・ベンチャーズ",
+      "description": "ハービックスのメディアセンター ― プレスリリース、最新ニュース、ブランド資産、メディア担当者連絡先。"
+    },
+    "strategy": {
+      "title": "当社の戦略 | ハーヴィックス・グローバル・ベンチャーズ",
+      "description": "Harvicsのグローバル展開、イノベーション、持続可能性、そしてデジタル変革に関する戦略的ビジョン。"
+    },
+    "csr": {
+      "title": "企業の社会的責任 | ハーヴィックス",
+      "description": "ハービックスのCSR活動 ― 環境保全、地域社会貢献プログラム、倫理的な事業慣行。"
+    },
+    "faq": {
+      "title": "よくある質問 | ハーヴィックス・グローバル・ベンチャーズ",
+      "description": "Harvicsの製品、サービス、注文方法、およびグローバル事業に関するよくある質問。"
+    },
+    "locations": {
+      "title": "世界各地の拠点 | ハーヴィックス",
+      "description": "ハービックスは、中東、南アジア、ヨーロッパ、アフリカ、アメリカ大陸にオフィスと事業拠点を展開しています。"
+    },
+    "leadership": {
+      "title": "経営陣 | ハーヴィックス",
+      "description": "40以上の市場と10の業界分野にわたってHarvics Global Venturesを牽引するリーダーシップチームをご紹介します。"
+    },
+    "help": {
+      "title": "ヘルプセンター | ハーヴィックス",
+      "description": "注文、アカウント、配送、およびHarvicsのサービスに関するサポートをご利用ください。"
+    },
+    "compliance": {
+      "title": "コンプライアンスと倫理 | ハーヴィックス",
+      "description": "Harvicsは、法令遵守、倫理的な事業慣行、およびグローバルスタンダードへの取り組みを重視しています。"
+    },
+    "history": {
+      "title": "私たちの歴史 | ハーヴィックス",
+      "description": "2019年にドバイで創業したスタートアップ企業から、40カ国以上に展開するグローバル企業へと成長したハーヴィックスの物語。"
+    },
+    "newsletter": {
+      "title": "ニュースレター | ハーヴィックス",
+      "description": "業界の最新情報や新製品発表については、Harvicsのニュースレターにご登録ください。"
+    },
+    "login": {
+      "title": "ログイン | ハーヴィックス",
+      "description": "Harvicsアカウントにログインして、注文の管理やプラットフォームへのアクセスを行ってください。"
+    },
+    "research": {
+      "title": "研究開発 | ハーヴィックス",
+      "description": "Harvicsの研究開発イニシアチブとイノベーションプログラムは、当社のグローバル戦略を推進する原動力となっています。"
+    },
+    "investorRelations": {
+      "title": "投資家向け情報 | ハーヴィックス",
+      "description": "Harvics Global Venturesの投資家向け情報、財務報告書、および企業発表。"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "ページが見つかりません",
+      "heading": "404 — ページが見つかりません",
+      "description": "お探しのページは存在しないか、移動されました。",
+      "goHome": "ホームページへ",
+      "goBack": "戻る"
+    },
+    "serverError": {
+      "title": "何かがうまくいかなかった",
+      "heading": "何らかの問題が発生しました",
+      "description": "申し訳ございませんが、予期せぬ事態が発生しました。ページを更新してみてください。",
+      "tryAgain": "もう一度やり直してください",
+      "reload": "ページを再読み込み",
+      "contactSupport": "サポートにお問い合わせください"
+    },
+    "globalError": {
+      "title": "アプリケーションエラー",
+      "heading": "重大なエラー",
+      "description": "重大なエラーが発生しました。ページを再読み込みしてください。",
+      "reload": "アプリケーションを再読み込みしてください"
+    }
+  },
+  "about": {
+    "title": "ハーヴィックスについて",
+    "subtitle": "2019年以来、プレミアム消費財における卓越性",
+    "ourStory": "私たちの物語",
+    "story1": "2019年に設立されたHarvicsは、先見性のあるアイデアから、高級消費財分野におけるグローバルリーダーへと成長を遂げました。私たちの歩みは、品質への絶え間ない追求とイノベーションへの揺るぎない取り組みによって支えられています。",
+    "story2": "私たちは40カ国以上で事業を展開し、人々の生活を豊かにし、業界に新たな基準を打ち立てる製品を提供しています。創業当初のささやかな規模からグローバル企業へと成長した現在に至るまで、私たちの価値観は変わっていません。",
+    "est2018": "設立：2019年",
+    "countries40": "40カ国以上",
+    "productLines6": "6つの製品ライン"
+  },
+  "csr": {
+    "hero": {
+      "title": "企業の社会的責任",
+      "description": "ハーヴィックスは、世界に良い影響を与えることに尽力しています。当社のCSR活動は、持続可能性、地域社会の活性化、そして倫理的な事業慣行に重点を置いています。",
+      "stats": {
+        "years": "長年にわたる影響",
+        "countries": "到達した国々",
+        "lives": "人生に影響を与えた"
+      }
+    },
+    "initiatives": {
+      "title": "当社の主要な取り組み",
+      "description": "私たちは、持続可能な変化を推進し、すべてのステークホルダーにとって共通の価値を創造するために、4つの主要な柱に重点を置いています。"
+    },
+    "sustainability": {
+      "title": "持続可能性",
+      "description": "再生可能エネルギーの利用と廃棄物の削減を通じて、環境負荷を低減する。",
+      "stats": {
+        "renewable": "再生可能エネルギー",
+        "waste": "廃棄物の転用",
+        "carbon": "炭素削減"
+      }
+    },
+    "community": {
+      "title": "コミュニティサポート",
+      "description": "教育、医療、経済発展を通じて地域社会を活性化する。",
+      "stats": {
+        "families": "家族支援",
+        "programs": "実施中のプログラム",
+        "volunteers": "ボランティア"
+      }
+    },
+    "education": {
+      "title": "教育",
+      "description": "恵まれない境遇にある学生に、質の高い教育と奨学金を提供する。",
+      "stats": {
+        "scholarships": "奨学金",
+        "schools": "提携校",
+        "students": "影響を受けた学生たち"
+      }
+    },
+    "health": {
+      "title": "健康とウェルネス",
+      "description": "医療サービスが行き届いていない地域における、医療と栄養へのアクセスを改善する。",
+      "stats": {
+        "campaigns": "健康キャンペーン",
+        "people": "サービスを受けた人々",
+        "clinics": "移動診療所"
+      }
+    },
+    "achievements": {
+      "2022": {
+        "title": "最優秀CSRイニシアチブ",
+        "description": "社会的責任に対する革新的な取り組みが評価されました。"
+      },
+      "2023": {
+        "title": "コミュニティチャンピオン",
+        "description": "広範な地域社会貢献プログラムが評価され、受賞しました。"
+      },
+      "2024": {
+        "title": "グローバルサステナビリティ賞",
+        "description": "カーボンニュートラルへの取り組みが評価されました。"
+      },
+      "title": "私たちの影響",
+      "description": "より良い世界を創造する上での私たちの節目を認識する。"
+    },
+    "cta": {
+      "title": "私たちと一緒に変化を起こしましょう",
+      "description": "私たちと提携するか、私たちがどのように持続可能な未来を築いているかについて詳しく知りたい方は、こちらをご覧ください。",
+      "contact": "CSRチームにお問い合わせください",
+      "learnMore": "もっと詳しく知る"
+    }
+  },
+  "harvicsHouse": {
+    "title": "ハーヴィックス・ハウス",
+    "subtitle": "卓越性と伝統の遺産",
+    "aboutTitle": "ハーヴィックス・ハウスへようこそ",
+    "description": "ハーヴィックス・ハウスは、品質と伝統への私たちのこだわりを象徴する場所です。ここでは、厳選された最高級製品を、優雅さ、伝統、そして革新という私たちの価値観を反映した空間で展示しています。",
+    "description2": "ハーヴィックスの限定コレクションをご覧いただき、ハーヴィックスの名を冠するすべての製品に込められたストーリーを発見してください。"
   }
 }

@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "da",
+    "language": "Danish",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Danish. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Danish",
+      "translation": "Velkommen til"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Danish",
+      "translation": "Harwich"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Danish",
+      "translation": "Ekspertise inden for premium forbrugsvarer siden 2019"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Danish",
+      "translation": "En førende global virksomhed inden for forbrugsvarer, der leverer premium fødevarer på tværs af forskellige kategorier med internationale kvalitetsstandarder."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Danish",
+      "translation": "Udforsk produkter"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Danish",
+      "translation": "Kontakt os"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Danish",
+      "translation": "Lær mere"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Danish",
+      "translation": "Ekspertise inden for premium forbrugsvarer siden"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Danish",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Danish",
+      "translation": "London • Milano • New York"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Danish",
+      "translation": "Bageri"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Danish",
+      "translation": "Drikkevarer"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Danish",
+      "translation": "Konfekture"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Danish",
+      "translation": "Kulinarisk"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Danish",
+      "translation": "Frosne fødevarer"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Danish",
+      "translation": "Pasta"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Danish",
+      "translation": "Snacks"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Danish",
+      "translation": "ESG-rapport 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Danish",
+      "translation": "London • Milano • New York"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Danish",
+      "translation": "Hjem"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Danish",
+      "translation": "Om"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Danish",
+      "translation": "Om os"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Danish",
+      "translation": "Brandhistorie"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Danish",
+      "translation": "Produkter"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Danish",
+      "translation": "Vores produkter"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Danish",
+      "translation": "Se alle produkter"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Danish",
+      "translation": "CSR"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Danish",
+      "translation": "Investorrelationer"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Danish",
+      "translation": "Investorer"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Danish",
+      "translation": "Medier"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Danish",
+      "translation": "Kontakt os"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Danish",
+      "translation": "Harvics House"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Danish",
+      "translation": "Lande"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Danish",
+      "translation": "Portaler"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Danish",
+      "translation": "Log ind"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Danish",
+      "translation": "Ønskeliste"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Danish",
+      "translation": "Indkøbskurv"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Danish",
+      "translation": "Hjælp"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Danish",
+      "translation": "Find butik"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Danish",
+      "translation": "Penge"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Danish",
+      "translation": "Salg"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Danish",
+      "translation": "Tilbud"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Danish",
+      "translation": "Mørk tilstand"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Danish",
+      "translation": "Kreditkort"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Danish",
+      "translation": "M&S Rewards-kreditkort"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Danish",
+      "translation": "Klubbelønninger"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Danish",
+      "translation": "Vores kreditkort"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Danish",
+      "translation": "Forsikring"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Danish",
+      "translation": "Husforsikring"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Danish",
+      "translation": "Rejseforsikring"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Danish",
+      "translation": "Rejseservice"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Danish",
+      "translation": "Rejsepenge"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Danish",
+      "translation": "Valutakurser"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Danish",
+      "translation": "Yderligere tjenester"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Danish",
+      "translation": "Opsparing og investering"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Danish",
+      "translation": "Personlige lån"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Danish",
+      "translation": "Finansiel støtte"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Danish",
+      "translation": "Nuværende salg"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Danish",
+      "translation": "Udsalg"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Danish",
+      "translation": "Sæsonudsalg"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Danish",
+      "translation": "Særlige tilbud"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Danish",
+      "translation": "Kampagner"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Danish",
+      "translation": "Rabatter på store ordrer"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Danish",
+      "translation": "Vores produkter"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Danish",
+      "translation": "Se alle produkter"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Danish",
+      "translation": "Vores produktkategorier"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Danish",
+      "translation": "Oplev vores førsteklasses udvalg af produkter, der er fremstillet med omhu og ekspertise."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Danish",
+      "translation": "Niveau 1: Kategorier"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Danish",
+      "translation": "Niveau 2: Moduler"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Danish",
+      "translation": "Niveau 3: KPI-skærme"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Danish",
+      "translation": "Niveau 4: Handlinger"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Danish",
+      "translation": "Nulstil navigation"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Danish",
+      "translation": "Ingen underkategorier tilgængelige for denne kategori."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Danish",
+      "translation": "Produkter"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Danish",
+      "translation": "Underkategorier"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Danish",
+      "translation": "Bageri"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Danish",
+      "translation": "Friskbagte varer og kager."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Danish",
+      "translation": "Drikkevarer"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Danish",
+      "translation": "Forfriskende drinks til enhver lejlighed."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Danish",
+      "translation": "Konfekture"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Danish",
+      "translation": "Søde lækkerier og lækkerier."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Danish",
+      "translation": "Kulinarisk"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Danish",
+      "translation": "Vigtige ingredienser til dit køkken."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Danish",
+      "translation": "Frosne fødevarer"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Danish",
+      "translation": "Praktiske og lækre frosne måltider."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Danish",
+      "translation": "Pasta"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Danish",
+      "translation": "Autentiske pastasorter."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Danish",
+      "translation": "Snacks"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Danish",
+      "translation": "Lækre snacks til enhver tid af dagen."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Danish",
+      "translation": "Om Harvics"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Danish",
+      "translation": "Ekspertise inden for premium forbrugsvarer siden 2019"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Danish",
+      "translation": "Vores historie"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Danish",
+      "translation": "Harvics blev grundlagt i 2019 og har udviklet sig fra en visionær idé til en global leder inden for premium forbrugsvarer. Vores rejse er defineret af en utrættelig stræben efter kvalitet og et engagement i innovation."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Danish",
+      "translation": "Vi opererer i over 40 lande og leverer produkter, der beriger liv og sætter nye standarder i branchen. Fra vores ydmyge begyndelse til vores globale tilstedeværelse er vores værdier uændrede."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Danish",
+      "translation": "Etableret 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Danish",
+      "translation": "40+ lande"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Danish",
+      "translation": "6 produktlinjer"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Danish",
+      "translation": "Virksomheders sociale ansvar"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Danish",
+      "translation": "Hos Harvics er vi forpligtet til at gøre en positiv forskel på verden. Vores CSR-initiativer fokuserer på bæredygtighed, samfundsstyrkelse og etisk forretningspraksis."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Danish",
+      "translation": "År med indflydelse"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Danish",
+      "translation": "Lande nået"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Danish",
+      "translation": "Liv berørt"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Danish",
+      "translation": "Vores vigtigste initiativer"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Danish",
+      "translation": "Vi fokuserer på fire hovedsøjler for at drive bæredygtig forandring og skabe fælles værdi for alle interessenter."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Danish",
+      "translation": "Bæredygtighed"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Danish",
+      "translation": "Reducere vores miljømæssige fodaftryk gennem vedvarende energi og affaldsreduktion."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Danish",
+      "translation": "Vedvarende energi"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Danish",
+      "translation": "Affald omdirigeret"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Danish",
+      "translation": "Kulstofreduktion"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Danish",
+      "translation": "Støtte til lokalsamfundet"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Danish",
+      "translation": "Styrkelse af lokalsamfund gennem uddannelse, sundhedspleje og økonomisk udvikling."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Danish",
+      "translation": "Støttede familier"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Danish",
+      "translation": "Aktive programmer"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Danish",
+      "translation": "Frivillige"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Danish",
+      "translation": "Undervisning"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Danish",
+      "translation": "At give adgang til kvalitetsuddannelse og stipendier til underprivilegerede studerende."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Danish",
+      "translation": "Stipendier"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Danish",
+      "translation": "Partnerskoler"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Danish",
+      "translation": "Studerende berørt"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Danish",
+      "translation": "Sundhed og velvære"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Danish",
+      "translation": "Forbedring af adgangen til sundhedspleje og ernæring i underforsynede regioner."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Danish",
+      "translation": "Sundhedskampagner"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Danish",
+      "translation": "Mennesker betjent"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Danish",
+      "translation": "Mobile klinikker"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Danish",
+      "translation": "Bedste CSR-initiativ"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Danish",
+      "translation": "Hædret for vores innovative tilgang til socialt ansvar."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Danish",
+      "translation": "Fællesskabsmester"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Danish",
+      "translation": "Tildelt for vores omfattende opsøgende programmer i lokalsamfundet."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Danish",
+      "translation": "Global bæredygtighedspris"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Danish",
+      "translation": "Anerkendt for vores engagement i CO2-neutralitet."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Danish",
+      "translation": "Vores indflydelse"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Danish",
+      "translation": "Anerkendelse af vores milepæle i at skabe en bedre verden."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Danish",
+      "translation": "Vær med os og gør en forskel"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Danish",
+      "translation": "Bliv partner med os, eller lær mere om, hvordan vi bygger en bæredygtig fremtid."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Danish",
+      "translation": "Kontakt CSR-teamet"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Danish",
+      "translation": "Lær mere"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Danish",
+      "translation": "Kontakt os"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Danish",
+      "translation": "Vi vil meget gerne høre fra dig. Kontakt os via en af disse kanaler."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Danish",
+      "translation": "Telefon"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Danish",
+      "translation": "E-mail"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Danish",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Danish",
+      "translation": "Ring nu"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Danish",
+      "translation": "Send e-mail"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Danish",
+      "translation": "Send os en besked"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Danish",
+      "translation": "Mediecenter"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Danish",
+      "translation": "Mediecenter | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Danish",
+      "translation": "Presseressourcer, brandaktiver og de seneste nyheder fra Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Danish",
+      "translation": "Virksomheds"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Danish",
+      "translation": "Nyheder og pressemeddelelser"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Danish",
+      "translation": "Seneste meddelelser, markedsudvidelser, produktlanceringer og virksomhedsopdateringer fra Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Danish",
+      "translation": "Læs de seneste nyheder"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Danish",
+      "translation": "Billedgalleri"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Danish",
+      "translation": "Brandmaterialer i høj opløsning, produktfotografering, billeder af faciliteter og eventdækning til mediebrug."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Danish",
+      "translation": "Gennemse galleri"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Danish",
+      "translation": "Mediekontakter"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Danish",
+      "translation": "Kontakt vores kommunikationsteam for pressehenvendelser, interviewanmodninger og partnerskabsmeddelelser."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Danish",
+      "translation": "Kontakt presseteamet"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Danish",
+      "translation": "Dækkede markeder"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Danish",
+      "translation": "Branchevertikaler"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Danish",
+      "translation": "Grundlagt i Dubai"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Danish",
+      "translation": "Understøttede sprog"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Danish",
+      "translation": "Seneste overskrifter"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Danish",
+      "translation": "Harvics udvider FMCG-aktiviteter til 5 nye sydøstasiatiske markeder"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Danish",
+      "translation": "Ny AI-drevet forsyningskædeplatform lanceret til global distribution"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Danish",
+      "translation": "Harvics når CO2-neutral milepæl på tværs af alle faciliteter"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Danish",
+      "translation": "Strategisk partnerskab med førende tekstilproducenter i Sydasien"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Danish",
+      "translation": "Harvics House"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Danish",
+      "translation": "En arv af ekspertise og tradition"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Danish",
+      "translation": "Velkommen til Harvics Hus"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Danish",
+      "translation": "Harvics House repræsenterer toppen af vores engagement i kvalitet og kulturarv. Her samler vi det fineste udvalg af vores premiumprodukter, præsenteret i et miljø, der afspejler vores værdier om elegance, tradition og innovation."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Danish",
+      "translation": "Udforsk vores eksklusive kollektioner og opdag historien bag hvert produkt, der bærer navnet Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Danish",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Danish",
+      "translation": "Ekspertise inden for premium forbrugsvarer siden 2019"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Danish",
+      "translation": "En førende global virksomhed inden for forbrugsvarer, der leverer premium fødevarer på tværs af forskellige kategorier med internationale kvalitetsstandarder."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Danish",
+      "translation": "London • Milano • New York"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Danish",
+      "translation": "Siden 2019"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Danish",
+      "translation": "Harvics Nyheder"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Danish",
+      "translation": "Abonner for at modtage advarsler og opdateringer"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Danish",
+      "translation": "Tilmeld dig"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Danish",
+      "translation": "Overholdelsesproblemer"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Danish",
+      "translation": "Sig fra, hvis du har bekymringer om compliance eller etik"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Danish",
+      "translation": "Sig fra"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Danish",
+      "translation": "Kontakt os"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Danish",
+      "translation": "Kontakt vores team"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Danish",
+      "translation": "Kontakt os"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Danish",
+      "translation": "Nyttige links"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Danish",
+      "translation": "Spørg Harwich"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Danish",
+      "translation": "Søg efter job"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Danish",
+      "translation": "Tilmeld dig nyheder"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Danish",
+      "translation": "Selskab"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Danish",
+      "translation": "Globale adresser"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Danish",
+      "translation": "Strategi"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Danish",
+      "translation": "Vores lederskab"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Danish",
+      "translation": "Mærker A-Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Danish",
+      "translation": "Vores historie"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Danish",
+      "translation": "Bæredygtighed"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Danish",
+      "translation": "Nyheder"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Danish",
+      "translation": "Mediekontakter"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Danish",
+      "translation": "Billeder"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Danish",
+      "translation": "Investorer"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Danish",
+      "translation": "Selskabsledelse"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Danish",
+      "translation": "Aktier, ADR'er og obligationer"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Danish",
+      "translation": "Publikationer"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Danish",
+      "translation": "Følg os på"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Danish",
+      "translation": "0 udgaver"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Danish",
+      "translation": "Sitemap"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Danish",
+      "translation": "Afmeld abonnement"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Danish",
+      "translation": "Hjælp"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Danish",
+      "translation": "Privatliv"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Danish",
+      "translation": "Cookies"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Danish",
+      "translation": "Brugsbetingelser"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Danish",
+      "translation": "Tilgængelighed"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Danish",
+      "translation": "Kulstofeffektivitet"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Danish",
+      "translation": "Leverandører"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Danish",
+      "translation": "Sociale medier"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Danish",
+      "translation": "Cookie-indstillinger"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Danish",
+      "translation": "Premium kvalitet"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Danish",
+      "translation": "E-mailadresse"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Danish",
+      "translation": "Indtast din e-mailadresse"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Danish",
+      "translation": "Abonner"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Danish",
+      "translation": "Abonnerer..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Danish",
+      "translation": "Om os"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Danish",
+      "translation": "Medier"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Danish",
+      "translation": "Søg efter produkter, mærker eller kategorier"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Danish",
+      "translation": "Ingen resultater fundet"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Danish",
+      "translation": "Søger..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Danish",
+      "translation": "Resultater"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Danish",
+      "translation": "Chat med os"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Danish",
+      "translation": "Skriv din besked..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Danish",
+      "translation": "Sende"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Danish",
+      "translation": "Tæt"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Danish",
+      "translation": "Hej! Hvordan kan jeg hjælpe dig i dag?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Danish",
+      "translation": "Undskyld, jeg forstod det ikke. Kan du omformulere det?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Danish",
+      "translation": "Jeg kan hjælpe dig med produktinformation, ordrer eller generelle forespørgsler. Hvad vil du gerne vide?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Danish",
+      "translation": "For yderligere hjælp, kontakt os venligst på support@harvics.com eller ring +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Danish",
+      "translation": "Chat med os"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Danish",
+      "translation": "Indlæser..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Danish",
+      "translation": "Fejl"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Danish",
+      "translation": "Succes"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Danish",
+      "translation": "Spare"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Danish",
+      "translation": "Ophæve"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Danish",
+      "translation": "Slet"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Danish",
+      "translation": "Redigere"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Danish",
+      "translation": "Udsigt"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Danish",
+      "translation": "Indsend"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Danish",
+      "translation": "Søge"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Danish",
+      "translation": "Filter"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Danish",
+      "translation": "Klar"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Danish",
+      "translation": "Download"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Danish",
+      "translation": "Upload"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Danish",
+      "translation": "Ja"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Danish",
+      "translation": "Ingen"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Danish",
+      "translation": "Tæt"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Danish",
+      "translation": "Tilbage"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Danish",
+      "translation": "Næste"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Danish",
+      "translation": "Tidligere"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Danish",
+      "translation": "Handlinger"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Danish",
+      "translation": "Status"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Danish",
+      "translation": "Dato"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Danish",
+      "translation": "Navn"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Danish",
+      "translation": "E-mail"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Danish",
+      "translation": "Telefon"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Danish",
+      "translation": "Adresse"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Danish",
+      "translation": "Land"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Danish",
+      "translation": "By"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Danish",
+      "translation": "Alle"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Danish",
+      "translation": "Ingen"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Danish",
+      "translation": "Vælge"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Danish",
+      "translation": "Vælg sprog"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Danish",
+      "translation": "Vælg land"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Danish",
+      "translation": "Vis mere"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Danish",
+      "translation": "Vis mindre"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Danish",
+      "translation": "Påkrævet"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Danish",
+      "translation": "Menu"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Danish",
+      "translation": "Se produkter"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Danish",
+      "translation": "Afspil musik"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Danish",
+      "translation": "Pause musik"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Danish",
+      "translation": "Slå musik fra"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Danish",
+      "translation": "Slå lyden til for musik"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Danish",
+      "translation": "Vores globale rækkevidde"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Danish",
+      "translation": "Siden"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Danish",
+      "translation": "Stort marked"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Danish",
+      "translation": "Store markeder"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Danish",
+      "translation": "Tilstedeværelse"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Danish",
+      "translation": "Lande betjent"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Danish",
+      "translation": "Store markeder"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Danish",
+      "translation": "Produktkategorier"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Danish",
+      "translation": "Etableret"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Danish",
+      "translation": "Territoriumhierarki"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Danish",
+      "translation": "Fuld sti"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Danish",
+      "translation": "Nuværende territorium"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Danish",
+      "translation": "Ingen varer"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Danish",
+      "translation": "Globus"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Danish",
+      "translation": "Kontinent"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Danish",
+      "translation": "Område"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Danish",
+      "translation": "Land"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Danish",
+      "translation": "By"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Danish",
+      "translation": "Distrikt"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Danish",
+      "translation": "Beliggenhed"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Danish",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Danish",
+      "translation": "Global"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Danish",
+      "translation": "Vælg region"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Danish",
+      "translation": "Kundeoplysninger"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Danish",
+      "translation": "Valgt"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Danish",
+      "translation": "Fulde navn"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Danish",
+      "translation": "Indtast dit fulde navn"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Danish",
+      "translation": "Navn er påkrævet"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Danish",
+      "translation": "E-mailadresse"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Danish",
+      "translation": "din.email@eksempel.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Danish",
+      "translation": "E-mailadresse er påkrævet"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Danish",
+      "translation": "Indtast venligst en gyldig e-mailadresse"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Danish",
+      "translation": "Telefonnummer"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Danish",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Danish",
+      "translation": "Telefonnummer er påkrævet"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Danish",
+      "translation": "Adresse"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Danish",
+      "translation": "Din adresse"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Danish",
+      "translation": "Adresse er påkrævet"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Danish",
+      "translation": "Jeg accepterer at modtage markedsføringsmateriale og opdateringer"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Danish",
+      "translation": "Send og fortsæt"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Danish",
+      "translation": "Indsender..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Danish",
+      "translation": "Spring over og fortsæt"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Danish",
+      "translation": "Nøglepræstationsindikatorer"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Danish",
+      "translation": "Ordrer i dag"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Danish",
+      "translation": "Indsendt via Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Danish",
+      "translation": "Afventende leverancer"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Danish",
+      "translation": "På tværs af tildelte ruter"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Danish",
+      "translation": "Detailhandlere"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Danish",
+      "translation": "Aktive forretninger inden for rækkevidde"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Danish",
+      "translation": "T & A-score"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Danish",
+      "translation": "Områdedækning"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Danish",
+      "translation": "Finansiel og lagerbeholdning"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Danish",
+      "translation": "Lavt lagerbeholdning af varer"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Danish",
+      "translation": "Udløs genopfyldning"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Danish",
+      "translation": "Udestående fakturaer"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Danish",
+      "translation": "Forfalder til afhentning"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Danish",
+      "translation": "Kreditgrænse"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Danish",
+      "translation": "Tildelt af finans"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Danish",
+      "translation": "Automatisk godkendelse, lageropfyldning og fakturapåmindelser aktiveret"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Danish",
+      "translation": "Selvgodkendelse"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Danish",
+      "translation": "Lageropfyldning"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Danish",
+      "translation": "Fakturapåmindelser"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Danish",
+      "translation": "AI-anbefalinger"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Danish",
+      "translation": "Risikoniveau"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Danish",
+      "translation": "Baseret på kreditudnyttelse og betalingshistorik"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Danish",
+      "translation": "Foreslået rækkefølge"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Danish",
+      "translation": "AI-anbefalede SKU'er til bestilling"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Danish",
+      "translation": "Næste handling"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Danish",
+      "translation": "Handlinger og vejledning"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Danish",
+      "translation": "Klager"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Danish",
+      "translation": "Problemer med detailhandlere afventer handling"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Danish",
+      "translation": "Spillebog"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Danish",
+      "translation": "Prioriter ventende leverancer før middag."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Danish",
+      "translation": "Luk alle udestående klager inden for 48 timer."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Danish",
+      "translation": "Udløs genopfyldning for SKU'er med lav lagerbeholdning (automatisk opret indkøbsordre)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Danish",
+      "translation": "Territorium"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Danish",
+      "translation": "Ordrer denne måned"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Danish",
+      "translation": "Afventende ordrer"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Danish",
+      "translation": "Leverede ordrer"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Danish",
+      "translation": "Oplysninger om territorium"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Danish",
+      "translation": "Land"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Danish",
+      "translation": "By"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Danish",
+      "translation": "Område"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Danish",
+      "translation": "Hurtige handlinger"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Danish",
+      "translation": "Ny ordre"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Danish",
+      "translation": "Se ordrer"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Danish",
+      "translation": "Se fakturaer"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Danish",
+      "translation": "Profilindstillinger"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Danish",
+      "translation": "Indlæser dashboard..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Danish",
+      "translation": "Fejl"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Danish",
+      "translation": "Mine ordrer"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Danish",
+      "translation": "Ordre-ID"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Danish",
+      "translation": "Dato"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Danish",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Danish",
+      "translation": "Varer"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Danish",
+      "translation": "Samlet beløb"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Danish",
+      "translation": "Handlinger"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Danish",
+      "translation": "Se detaljer"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Danish",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Danish",
+      "translation": "Startdato"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Danish",
+      "translation": "Slutdato"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Danish",
+      "translation": "Alle statusser"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Danish",
+      "translation": "Ryd filtre"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Danish",
+      "translation": "Indtil"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Danish",
+      "translation": "Forarbejdning"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Danish",
+      "translation": "Leveret"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Danish",
+      "translation": "Annulleret"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Danish",
+      "translation": "Ingen ordrer fundet"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Danish",
+      "translation": "Indlæser ordrer..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Danish",
+      "translation": "Side"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Danish",
+      "translation": "af"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Danish",
+      "translation": "Tidligere"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Danish",
+      "translation": "Næste"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Danish",
+      "translation": "Ordreoplysninger"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Danish",
+      "translation": "Tilbage til ordrer"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Danish",
+      "translation": "Ordre-ID"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Danish",
+      "translation": "Status"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Danish",
+      "translation": "Ordredato"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Danish",
+      "translation": "Leveringsdato"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Danish",
+      "translation": "Leveringsadresse"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Danish",
+      "translation": "Noter"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Danish",
+      "translation": "Bestil varer"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Danish",
+      "translation": "Produkt"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Danish",
+      "translation": "Varenummer"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Danish",
+      "translation": "Mængde"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Danish",
+      "translation": "Enhedspris"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Danish",
+      "translation": "Total"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Danish",
+      "translation": "Samlet beløb"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Danish",
+      "translation": "Statustidslinje"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Danish",
+      "translation": "Ordren blev ikke fundet"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Danish",
+      "translation": "Opret ny ordre"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Danish",
+      "translation": "Bestil varer"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Danish",
+      "translation": "Tilføj element"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Danish",
+      "translation": "Ingen elementer tilføjet endnu. Klik på \"Tilføj element\" for at starte."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Danish",
+      "translation": "Ordreoplysninger"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Danish",
+      "translation": "Leveringsdato"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Danish",
+      "translation": "Leveringsadresse"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Danish",
+      "translation": "Noter"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Danish",
+      "translation": "Samlet beløb"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Danish",
+      "translation": "Opret ordre"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Danish",
+      "translation": "Opretter ordre..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Danish",
+      "translation": "Ophæve"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Danish",
+      "translation": "Vælg produkt"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Danish",
+      "translation": "Produkt"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Danish",
+      "translation": "Mængde"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Danish",
+      "translation": "Enhedspris"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Danish",
+      "translation": "Fjerne"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Danish",
+      "translation": "Subtotal"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Danish",
+      "translation": "Ordre-ID"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Danish",
+      "translation": "Mindst én ordrevare er påkrævet"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Danish",
+      "translation": "Produktet er påkrævet"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Danish",
+      "translation": "Mængden skal være større end 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Danish",
+      "translation": "Enhedsprisen skal være ikke-negativ"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Danish",
+      "translation": "Ugyldigt format for leveringsdato"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Danish",
+      "translation": "Leveringsdatoen må ikke være i fortiden"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Danish",
+      "translation": "Mine fakturaer"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Danish",
+      "translation": "Fakturanummer"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Danish",
+      "translation": "Fakturadato"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Danish",
+      "translation": "To datoer"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Danish",
+      "translation": "Beløb"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Danish",
+      "translation": "Betalt beløb"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Danish",
+      "translation": "Betalingsstatus"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Danish",
+      "translation": "Betalingsstatus"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Danish",
+      "translation": "Alle statusser"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Danish",
+      "translation": "Ryd filtre"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Danish",
+      "translation": "Betalt"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Danish",
+      "translation": "Ubetalt"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Danish",
+      "translation": "Delvis"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Danish",
+      "translation": "Ingen fakturaer fundet"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Danish",
+      "translation": "Indlæser fakturaer..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Danish",
+      "translation": "Min profil"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Danish",
+      "translation": "Kontooplysninger"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Danish",
+      "translation": "Distributør-ID"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Danish",
+      "translation": "Territorium"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Danish",
+      "translation": "Land"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Danish",
+      "translation": "By"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Danish",
+      "translation": "Konto oprettet"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Danish",
+      "translation": "Opdater profil"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Danish",
+      "translation": "Navn"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Danish",
+      "translation": "E-mail"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Danish",
+      "translation": "Telefon"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Danish",
+      "translation": "Adresse"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Danish",
+      "translation": "Sprog"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Danish",
+      "translation": "Valuta"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Danish",
+      "translation": "Gem ændringer"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Danish",
+      "translation": "Gemmer..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Danish",
+      "translation": "Profilen er blevet opdateret"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Danish",
+      "translation": "Indlæser profil..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Danish",
+      "translation": "Ugyldigt e-mailformat"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Danish",
+      "translation": "Ugyldigt telefonformat"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Danish",
+      "translation": "Fejl"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Danish",
+      "translation": "Indlæser..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Danish",
+      "translation": "Spare"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Danish",
+      "translation": "Ophæve"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Danish",
+      "translation": "Tilbage"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Danish",
+      "translation": "Indsend"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Danish",
+      "translation": "Slet"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Danish",
+      "translation": "Redigere"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Danish",
+      "translation": "Udsigt"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Danish",
+      "translation": "Søge"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Danish",
+      "translation": "Filter"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Danish",
+      "translation": "Klar"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Danish",
+      "translation": "Anvende"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Danish",
+      "translation": "Tæt"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Danish",
+      "translation": "Bekræfte"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Danish",
+      "translation": "Ja"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Danish",
+      "translation": "Ingen"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Danish",
+      "translation": "Juridisk operativsystem"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Danish",
+      "translation": "Lovligt operativsystem"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Danish",
+      "translation": "Adgang nægtet"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Danish",
+      "translation": "Du har ikke tilladelse til at få adgang til Legal OS-modulet."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Danish",
+      "translation": "Dashboard"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Danish",
+      "translation": "Kontrakter"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Danish",
+      "translation": "Certifikater"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Danish",
+      "translation": "Overholdelse"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Danish",
+      "translation": "Juridisk dashboard"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Danish",
+      "translation": "Oversigt over juridiske aktiviteter og compliance-status"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Danish",
+      "translation": "Aktive varemærker"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Danish",
+      "translation": "Aktive kontrakter"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Danish",
+      "translation": "Overholdelsesstatus"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Danish",
+      "translation": "Varemærker"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Danish",
+      "translation": "Administrer varemærkeregistreringer og -ansøgninger"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Danish",
+      "translation": "Tilføj nyt varemærke"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Danish",
+      "translation": "Land"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Danish",
+      "translation": "Status"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Danish",
+      "translation": "Alle lande"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Danish",
+      "translation": "Alle statusser"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Danish",
+      "translation": "Ryd filtre"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Danish",
+      "translation": "Mærkenavn"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Danish",
+      "translation": "Klasse"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Danish",
+      "translation": "Land"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Danish",
+      "translation": "Ansøgningsnr."
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Danish",
+      "translation": "Status"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Danish",
+      "translation": "Udløbsdato"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Danish",
+      "translation": "Handlinger"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Danish",
+      "translation": "Rediger varemærke"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Danish",
+      "translation": "Tilføj nyt varemærke"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Danish",
+      "translation": "Se varemærke"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Danish",
+      "translation": "Mærkenavn"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Danish",
+      "translation": "Klassenummer"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Danish",
+      "translation": "Land"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Danish",
+      "translation": "Ansøgningsnummer"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Danish",
+      "translation": "Status"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Danish",
+      "translation": "Udløbsdato"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Danish",
+      "translation": "Dokumenter"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Danish",
+      "translation": "Ingen dokumenter vedhæftet"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Danish",
+      "translation": "Tilføj dokument"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Danish",
+      "translation": "Fjerne"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Danish",
+      "translation": "Varemærker kunne ikke indlæses"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Danish",
+      "translation": "Varemærket kunne ikke gemmes. Prøv igen."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Danish",
+      "translation": "Retssager"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Danish",
+      "translation": "Administrer juridiske sager og spor deres status"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Danish",
+      "translation": "Ny sag"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Danish",
+      "translation": "Sagstitel"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Danish",
+      "translation": "Sagtype"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Danish",
+      "translation": "Land"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Danish",
+      "translation": "Beskrivelse"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Danish",
+      "translation": "Tildelt til"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Danish",
+      "translation": "Status"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Danish",
+      "translation": "Høringsdato"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Danish",
+      "translation": "Sagstitel"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Danish",
+      "translation": "Type"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Danish",
+      "translation": "Land"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Danish",
+      "translation": "Tildelt til"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Danish",
+      "translation": "Status"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Danish",
+      "translation": "Høringsdato"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Danish",
+      "translation": "Handlinger"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Danish",
+      "translation": "Åben"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Danish",
+      "translation": "I gang"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Danish",
+      "translation": "Lukket"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Danish",
+      "translation": "Annulleret"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Danish",
+      "translation": "Visning af flådekort"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Danish",
+      "translation": "Sporing af salgsansvarlige og leveringskøretøjer i realtid"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Danish",
+      "translation": "Aktive medarbejdere"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Danish",
+      "translation": "Ingen aktive medarbejdere"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Danish",
+      "translation": "Indlæser..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Danish",
+      "translation": "Rutegenafspilning"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Danish",
+      "translation": "Medarbejder"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Danish",
+      "translation": "Hastighed"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Danish",
+      "translation": "Nulstil"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Danish",
+      "translation": "Spil"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Danish",
+      "translation": "Pause"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Danish",
+      "translation": "point"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Danish",
+      "translation": "Ingen rutedata tilgængelige"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Danish",
+      "translation": "Indlæser rute..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Danish",
+      "translation": "Konkurrentprodukter"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Danish",
+      "translation": "Spor oplysninger om konkurrenters produkter"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Danish",
+      "translation": "Tilføj produkt"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Danish",
+      "translation": "Tilføj konkurrentprodukt"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Danish",
+      "translation": "Mærke"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Danish",
+      "translation": "SKU-navn"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Danish",
+      "translation": "Kategori"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Danish",
+      "translation": "Størrelse"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Danish",
+      "translation": "Pris"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Danish",
+      "translation": "Valuta"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Danish",
+      "translation": "Land"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Danish",
+      "translation": "Mærke"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Danish",
+      "translation": "SKU-navn"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Danish",
+      "translation": "Kategori"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Danish",
+      "translation": "Størrelse"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Danish",
+      "translation": "Pris"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Danish",
+      "translation": "Land"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Danish",
+      "translation": "Dato tilføjet"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Danish",
+      "translation": "Kunne ikke indlæse produkter"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Danish",
+      "translation": "Produktet kunne ikke oprettes. Prøv igen."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Danish",
+      "translation": "Ingen konkurrentprodukter fundet"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Danish",
+      "translation": "Indlæser produkter..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Danish",
+      "translation": "Konkurrentdashboard"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Danish",
+      "translation": "Analyse og indsigt i konkurrenternes produkter"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Danish",
+      "translation": "Samlede produkter"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Danish",
+      "translation": "Sporede mærker"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Danish",
+      "translation": "Lande"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Danish",
+      "translation": "Kategorier"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Danish",
+      "translation": "Produkter efter mærke"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Danish",
+      "translation": "Produkter efter land"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Danish",
+      "translation": "Produkter efter kategori"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Danish",
+      "translation": "Indlæser statistik..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Danish",
+      "translation": "Ingen statistik tilgængelig"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Danish",
+      "translation": "Oversigt"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Danish",
+      "translation": "Ordrer"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Danish",
+      "translation": "Inventar"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Danish",
+      "translation": "Logistik"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Danish",
+      "translation": "Finansiere"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Danish",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Danish",
+      "translation": "HR"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Danish",
+      "translation": "Direktør"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Danish",
+      "translation": "Investor"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Danish",
+      "translation": "Juridisk/IPR"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Danish",
+      "translation": "Konkurrent"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Danish",
+      "translation": "Import/Eksport"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Danish",
+      "translation": "GPS-sporing"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Danish",
+      "translation": "Lokalisering"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Danish",
+      "translation": "Arbejdsgange"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Danish",
+      "translation": "Admin"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Danish",
+      "translation": "CRM-operativsystem"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Danish",
+      "translation": "Kunde 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Danish",
+      "translation": "Komplette kundeprofiler, interaktionshistorik og relationsstyring"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Danish",
+      "translation": "Digitale kampagner"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Danish",
+      "translation": "Multikanal marketingkampagner (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Danish",
+      "translation": "Leads og muligheder"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Danish",
+      "translation": "Leadhåndtering, kvalifikation og salgsmulighedspipeline"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Danish",
+      "translation": "Kundesupport"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Danish",
+      "translation": "Billethåndtering, kundeservice og problemløsning"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Danish",
+      "translation": "Loyalitetsprogrammer"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Danish",
+      "translation": "Forhandlerloyalitet, gamification og belønningsstyring"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Danish",
+      "translation": "Kunde 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Danish",
+      "translation": "Ny kunde"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Danish",
+      "translation": "Samlede kunder"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Danish",
+      "translation": "Aktiv"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Danish",
+      "translation": "Ny"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Danish",
+      "translation": "Tilfredshed"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Danish",
+      "translation": "Kundestyring"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Danish",
+      "translation": "Se og administrer dine kunderelationer, interaktioner og kampagner."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Danish",
+      "translation": "Indlæser..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Danish",
+      "translation": "Fejl ved indlæsning af CRM-data"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Danish",
+      "translation": "Oversigt"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Danish",
+      "translation": "Ordrer"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Danish",
+      "translation": "Inventar"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Danish",
+      "translation": "Logistik"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Danish",
+      "translation": "Finansiere"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Danish",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Danish",
+      "translation": "HR"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Danish",
+      "translation": "Direktør"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Danish",
+      "translation": "Investor"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Danish",
+      "translation": "Juridisk/IPR"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Danish",
+      "translation": "Konkurrent"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Danish",
+      "translation": "Import/Eksport"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Danish",
+      "translation": "GPS-sporing"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Danish",
+      "translation": "Lokalisering"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Danish",
+      "translation": "Arbejdsgange"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Danish",
+      "translation": "Admin"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Danish",
+      "translation": "Kunder"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Danish",
+      "translation": "Medarbejdere"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Danish",
+      "translation": "Profit"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Danish",
+      "translation": "Indlæser leverandørens cockpit…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Danish",
+      "translation": "Indkøbsordrer"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Danish",
+      "translation": "Opdraget af Harvics"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Danish",
+      "translation": "Forsendelser / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Danish",
+      "translation": "Accepteret denne uge"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Danish",
+      "translation": "Fakturaer oprettet"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Danish",
+      "translation": "Venter på betaling"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Danish",
+      "translation": "Betalinger afventer"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Danish",
+      "translation": "Planlagt til udgivelse"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Danish",
+      "translation": "Kvalitet / klager"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Danish",
+      "translation": "Åbne billetter"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Danish",
+      "translation": "Vejrudsigt (de næste 4 uger)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Danish",
+      "translation": "AI-pladsholder"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Danish",
+      "translation": "Leverandørhandlinger"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Danish",
+      "translation": "Bekræft kommende forsendelser og opdater GRN-planen."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Danish",
+      "translation": "Gennemgå udestående fakturaer og del betalingsråd."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Danish",
+      "translation": "Løs åbne kvalitetsklager med QA-dokumentation."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Danish",
+      "translation": "Brugernavn"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Danish",
+      "translation": "Adgangskode"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Danish",
+      "translation": "E-mail"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Danish",
+      "translation": "Indsend"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Danish",
+      "translation": "Ophæve"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Danish",
+      "translation": "Spare"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Danish",
+      "translation": "Slet"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Danish",
+      "translation": "Søge"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Danish",
+      "translation": "Filter"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Danish",
+      "translation": "Nulstil"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Danish",
+      "translation": "Tæt"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Danish",
+      "translation": "Tilbage"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Danish",
+      "translation": "Næste"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Danish",
+      "translation": "Tidligere"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Danish",
+      "translation": "Bekræfte"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Danish",
+      "translation": "Husk mig"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Danish",
+      "translation": "Glemt adgangskode?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Danish",
+      "translation": "E-mailadresse er påkrævet"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Danish",
+      "translation": "Indtast venligst en gyldig e-mailadresse"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Danish",
+      "translation": "Produkter"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Danish",
+      "translation": "Hvilke produkter tilbyder Harvics?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Danish",
+      "translation": "Vi tilbyder et bredt udvalg af premium fødevarer, herunder konfekture, drikkevarer, snacks, pasta, bagværk og frostvarer på tværs af flere kategorier."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Danish",
+      "translation": "Hvor kan jeg købe Harvics produkter?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Danish",
+      "translation": "Vores produkter er tilgængelige i detailbutikker i over 40 lande. Brug vores butiksfinder eller kontaktside for at finde en forhandler i nærheden af dig."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Danish",
+      "translation": "Tilbyder I bulkbestillinger?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Danish",
+      "translation": "Ja, vi tilbyder rabatter på store ordrer til virksomheder og detailhandlere. Besøg vores side om rabatter på store ordrer for at få flere oplysninger."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Danish",
+      "translation": "Ordrer og forsendelse"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Danish",
+      "translation": "Hvad er dine forsendelsesmuligheder?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Danish",
+      "translation": "Vi tilbyder forskellige forsendelsesmuligheder, herunder standard-, ekspres- og international forsendelse. Gratis fragt er tilgængelig på ordrer over $50."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Danish",
+      "translation": "Hvor lang tid tager leveringen?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Danish",
+      "translation": "Leveringstiderne varierer afhængigt af lokationen. Standardlevering tager typisk 5-7 hverdage, mens ekspreslevering tager 2-3 hverdage."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Danish",
+      "translation": "Kan jeg spore min ordre?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Danish",
+      "translation": "Ja, du kan spore din ordre ved hjælp af sporingsnummeret i din ordrebekræftelsesmail."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Danish",
+      "translation": "Konto og betalinger"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Danish",
+      "translation": "Hvordan opretter jeg en konto?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Danish",
+      "translation": "Klik på \"Log ind\" i overskriften, og vælg \"Opret konto\" for at oprette en ny konto."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Danish",
+      "translation": "Hvilke betalingsmetoder accepterer I?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Danish",
+      "translation": "Vi accepterer alle større kreditkort, debetkort, PayPal og bankoverførsler til B2B-ordrer."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Danish",
+      "translation": "Er mine betalingsoplysninger sikre?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Danish",
+      "translation": "Ja, vi bruger branchestandardkryptering til at beskytte dine betalingsoplysninger."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Danish",
+      "translation": "Returnering og refusion"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Danish",
+      "translation": "Hvad er jeres returpolitik?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Danish",
+      "translation": "Vi tilbyder 30 dages returret på uåbnede produkter i original emballage. Kontakt venligst vores kundeservice for at få godkendt returneringen."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Danish",
+      "translation": "Hvordan anmoder jeg om refusion?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Danish",
+      "translation": "Kontakt vores kundeserviceteam med dit ordrenummer og årsagen til returneringen. Vi behandler din refusion inden for 5-7 hverdage."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Danish",
+      "translation": "Har du stadig spørgsmål?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Danish",
+      "translation": "Vores kundeserviceteam er her for at hjælpe"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Danish",
+      "translation": "Kontakt os"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Danish",
+      "translation": "Karriere"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Danish",
+      "translation": "Karriere | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Danish",
+      "translation": "Bliv en del af Harvics Global Ventures — udforsk muligheder i over 40 lande."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Danish",
+      "translation": "Deltag"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Danish",
+      "translation": "Byg fremtiden for global handel"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Danish",
+      "translation": "Vi vokser i over 40 lande. Bliv en del af et team, der bygger det AI-drevne operativsystem til global handel."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Danish",
+      "translation": "Ledige stillinger"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Danish",
+      "translation": "Lande"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Danish",
+      "translation": "Branchevertikaler"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Danish",
+      "translation": "Afdelinger Ansættelse"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Danish",
+      "translation": "Ledige stillinger efter afdeling"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Danish",
+      "translation": "Salg og distribution"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Danish",
+      "translation": "Øg omsætningen på tværs af over 40 markeder. Områdestyring, nøglekunder, distributørrelationer."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Danish",
+      "translation": "Forsyningskæde og logistik"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Danish",
+      "translation": "End-to-end forsyningskæde fra fabrik til hylde. Flådestyring, lagerstyring, levering til sidste kilometer."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Danish",
+      "translation": "Teknologi og kunstig intelligens"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Danish",
+      "translation": "Byg Harvics OS — vores AI-drevne virksomhedsplatform. Full-stack, ML-udvikling, datalogi."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Danish",
+      "translation": "Finans og treasury"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Danish",
+      "translation": "Multi-valuta treasury, handelsfinansiering, digitale HPay-betalinger, valutastyring på tværs af regioner."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Danish",
+      "translation": "Indkøb og sourcing"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Danish",
+      "translation": "Global sourcing fra over 15 oprindelseslande. Leverandørrevisioner, kvalitetskontrol, fabriks-direkte-programmer."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Danish",
+      "translation": "Menneskelige ressourcer"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Danish",
+      "translation": "Talentrekruttering, L&D og performance management på tværs af forskellige geografiske områder og kulturer."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Danish",
+      "translation": "Jura og compliance"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Danish",
+      "translation": "Handelsoverholdelse, sanktionsscreening, IP-beskyttelse, kontraktstyring på tværs af jurisdiktioner."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Danish",
+      "translation": "Markedsføring og branding"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Danish",
+      "translation": "Flersprogede kampagner, indhold med 38 sprogindstillinger, digital markedsføring, brandstrategi for 10 vertikaler."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Danish",
+      "translation": "roller"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Danish",
+      "translation": "Hvorfor Harvics"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Danish",
+      "translation": "Global mobilitet"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Danish",
+      "translation": "Arbejd i Dubai, London, Karachi, Lahore og over 40 markeder"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Danish",
+      "translation": "Vækstspor"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Danish",
+      "translation": "Hurtig karriereudvikling i en skalerende virksomhed"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Danish",
+      "translation": "AI-først kultur"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Danish",
+      "translation": "Arbejd med banebrydende AI og realtids-intelligenssystemer"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Danish",
+      "translation": "Konkurrencedygtig pakke"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Danish",
+      "translation": "Markedsførende kompensation, bolig og frynsegoder"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Danish",
+      "translation": "Læringsbudget"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Danish",
+      "translation": "Årligt udviklingsbudget for kurser, konferencer og certificeringer"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Danish",
+      "translation": "Fleksibelt arbejde"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Danish",
+      "translation": "Hybride aftaler med regionale hub-kontorer verden over"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Danish",
+      "translation": "Vores strategi"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Danish",
+      "translation": "Strategi | Harwich"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Danish",
+      "translation": "At bygge en bæredygtig fremtid gennem innovation og ekspertise"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Danish",
+      "translation": "At bygge en bæredygtig fremtid gennem innovation og ekspertise"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Danish",
+      "translation": "Global ekspansion"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Danish",
+      "translation": "Udvidelse af vores tilstedeværelse i vækstmarkeder og samtidig styrkelse af vores position i etablerede markeder"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Danish",
+      "translation": "Produktinnovation"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Danish",
+      "translation": "Investering i forskning og udvikling for at udvikle nye produkter, der imødekommer skiftende forbrugerpræferencer"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Danish",
+      "translation": "Bæredygtighed"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Danish",
+      "translation": "Forpligtet til bæredygtige praksisser på tværs af vores forsyningskæde og drift"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Danish",
+      "translation": "Digital transformation"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Danish",
+      "translation": "Udnyttelse af teknologi til at forbedre kundeoplevelsen og driftseffektiviteten"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Danish",
+      "translation": "Vores vision"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Danish",
+      "translation": "At være verdens førende virksomhed inden for premium forbrugsvarer, anerkendt for kvalitet, innovation og bæredygtighed."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Danish",
+      "translation": "Harvics Global Ventures | Premium Global Trading"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Danish",
+      "translation": "Førende global handelsvirksomhed, der leverer premiumprodukter på tværs af over 10 brancher. Har opereret i over 50 lande siden 2019."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Danish",
+      "translation": "Om os | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Danish",
+      "translation": "Opdag hvordan Harvics Global Ventures blev en førende kraft inden for global handel på tværs af mere end 40 lande og 10 brancher."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Danish",
+      "translation": "Kontakt os | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Danish",
+      "translation": "Kontakt Harvics kontorer verden over i Mellemøsten, Sydasien, Europa, Afrika og Amerika."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Danish",
+      "translation": "Produkter | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Danish",
+      "translation": "Udforsk Harvics premium-produktsortiment på tværs af FMCG, tekstiler, råvarer og industrielle løsninger."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Danish",
+      "translation": "Karriere | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Danish",
+      "translation": "Bliv en del af Harvics Global Ventures — udforsk muligheder i over 40 lande inden for FMCG, tekstiler, logistik og teknologi."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Danish",
+      "translation": "Mediecenter | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Danish",
+      "translation": "Harvics mediecenter — pressemeddelelser, seneste nyheder, brandaktiver og mediekontakter."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Danish",
+      "translation": "Vores strategi | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Danish",
+      "translation": "Harvics strategiske vision for global ekspansion, innovation, bæredygtighed og digital transformation."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Danish",
+      "translation": "Virksomheders sociale ansvar | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Danish",
+      "translation": "Harvics CSR-initiativer — miljøforvaltning, samfundsprogrammer og etiske forretningspraksisser."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Danish",
+      "translation": "Ofte stillede spørgsmål | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Danish",
+      "translation": "Ofte stillede spørgsmål om Harvics produkter, tjenester, bestilling og globale operationer."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Danish",
+      "translation": "Globale lokationer | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Danish",
+      "translation": "Harvics kontorer og operationer i Mellemøsten, Sydasien, Europa, Afrika og Amerika."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Danish",
+      "translation": "Lederteam | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Danish",
+      "translation": "Mød lederteamet, der driver Harvics Global Ventures på tværs af mere end 40 markeder og 10 brancher."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Danish",
+      "translation": "Hjælpecenter | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Danish",
+      "translation": "Få hjælp med ordrer, konti, forsendelse og Harvics-tjenester."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Danish",
+      "translation": "Overholdelse og etik | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Danish",
+      "translation": "Harvics forpligtelse til overholdelse af lovgivningen, etisk forretningspraksis og globale standarder."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Danish",
+      "translation": "Vores historie | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Danish",
+      "translation": "Fra en startup i Dubai i 2019 til en global virksomhed i over 40 lande — Harvics' historie."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Danish",
+      "translation": "Nyhedsbrev | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Danish",
+      "translation": "Tilmeld dig Harvics nyhedsbrev for at få brancheindsigt og produktlanceringer."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Danish",
+      "translation": "Log ind | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Danish",
+      "translation": "Log ind på din Harvics-konto for at administrere ordrer og få adgang til platformen."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Danish",
+      "translation": "Forskning og innovation | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Danish",
+      "translation": "Harvics forskningsinitiativer og innovationsprogrammer, der driver vores globale strategi."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Danish",
+      "translation": "Investorrelationer | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Danish",
+      "translation": "Investorinformation, finansielle rapporter og virksomhedsmeddelelser fra Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Danish",
+      "translation": "Siden blev ikke fundet"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Danish",
+      "translation": "404 — Side ikke fundet"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Danish",
+      "translation": "Den side, du leder efter, findes ikke eller er blevet flyttet."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Danish",
+      "translation": "Gå til hjemmesiden"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Danish",
+      "translation": "Gå tilbage"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Danish",
+      "translation": "Noget gik galt"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Danish",
+      "translation": "Noget gik galt"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Danish",
+      "translation": "Vi beklager, men der skete noget uventet. Prøv venligst at opdatere siden."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Danish",
+      "translation": "Prøv igen"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Danish",
+      "translation": "Genindlæs siden"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Danish",
+      "translation": "Kontakt support"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Danish",
+      "translation": "Applikationsfejl"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Danish",
+      "translation": "Kritisk fejl"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Danish",
+      "translation": "Der opstod en kritisk fejl. Genindlæs siden."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Danish",
+      "translation": "Genindlæs applikationen"
+    }
+  }
+}

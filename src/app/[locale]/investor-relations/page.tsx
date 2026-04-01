@@ -1,7 +1,7 @@
 import React from 'react'
-import StockTicker from '@/components/ui/StockTicker'
-import StockChart from '@/components/ui/StockChart'
-import BinanceLiveBoard from '@/components/ui/BinanceLiveBoard'
+import StockTicker from '@/features/finance/StockTicker'
+import StockChart from '@/features/finance/StockChart'
+import BinanceLiveBoard from '@/features/finance/BinanceLiveBoard'
 import InvestorRelationsTabs from '@/components/os-domains/InvestorRelationsTabs'
 import { useTranslations, useLocale } from 'next-intl'
 import Link from 'next/link'
@@ -11,10 +11,11 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
 import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Investor Relations | Harvics',
-  description: 'Harvics investor information and shareholder resources.',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'investorRelations')
 }
 
 
@@ -82,7 +83,7 @@ export default function InvestorRelationsPage() {
   const categories = getFolderBasedCategories()
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       <div className="fixed top-0 left-0 right-0 z-[1000] bg-white">
         <Header categories={categories} />
       </div>
@@ -94,7 +95,7 @@ export default function InvestorRelationsPage() {
         <InvestorRelationsTabs />
 
         {/* Stock Chart Section */}
-        <section className="py-12 md:py-16 bg-[#F5F1E8]">
+        <section className="py-12 md:py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8 md:mb-12">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#6B1F2B] mb-4 md:mb-6 font-serif">
@@ -170,7 +171,7 @@ export default function InvestorRelationsPage() {
         </section>
 
         {/* Investment Options Section - Premium Design */}
-        <section className="py-16 md:py-24 bg-[#F5F1E8] relative overflow-hidden">
+        <section className="py-16 md:py-24 bg-white relative overflow-hidden">
           {/* Background decorative elements */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#C3A35E] rounded-full blur-3xl"></div>
@@ -284,7 +285,7 @@ export default function InvestorRelationsPage() {
         </section>
 
         {/* Contact Form Section */}
-        <section className="py-12 md:py-16 bg-[#F5F1E8]">
+        <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8 md:mb-12">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#6B1F2B] mb-4 md:mb-6 font-serif">

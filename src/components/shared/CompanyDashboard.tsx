@@ -6,6 +6,7 @@ import { useLocale } from 'next-intl'
 import { useRouter } from 'next/navigation'
 import { apiClient } from '@/lib/api'
 import { useCountry } from '@/contexts/CountryContext'
+import { formatCompact, formatCurrency as fmtCurrency } from '@/utils/localeFormatting'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar } from 'recharts'
 import MarketHeatmap from './MarketHeatmap'
 import StrategyValidator from './StrategyValidator'
@@ -86,10 +87,10 @@ export default function CompanyDashboard() {
   }, [countryData?.currency?.code, selectedCountry])
   
   const [kpiData, setKpiData] = useState<KPIData>({
-    totalRevenue: 4523000000,
-    totalOrders: 15678,
-    activeDistributors: 234,
-    activeCountries: 45
+    totalRevenue: 0,
+    totalOrders: 0,
+    activeDistributors: 0,
+    activeCountries: 0
   })
   
   const [trendData, setTrendData] = useState<TrendData[]>([])
@@ -100,48 +101,20 @@ export default function CompanyDashboard() {
   const [loading, setLoading] = useState(false)
   const [chartView, setChartView] = useState<'revenue' | 'orders'>('revenue')
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => { setMounted(true) }, [])
 
-  // Format numbers with K/M abbreviations
-  const formatNumber = (num: number): string => {
-    if (num >= 1000000000) return `$${(num / 1000000000).toFixed(1)}B`
-    if (num >= 1000000) return `$${(num / 1000000).toFixed(1)}M`
-    if (num >= 1000) return `${(num / 1000).toFixed(1)}K`
-    return num.toString()
-  }
+  // Format large numbers with locale-aware compact notation (K / M / B)
+  const formatNumber = (num: number): string =>
+    formatCompact(num, locale)
 
-  // Format currency based on selected currency
-  const formatCurrency = (amount: number): string => {
-    // Use currency symbol from countryData if available, otherwise use fallback
-    const currencySymbol = countryData?.currency?.symbol || 
-      (filters.currency === 'USD' ? '$' :
-       filters.currency === 'EUR' ? '€' :
-       filters.currency === 'PKR' ? 'Rs' :
-       filters.currency === 'AED' ? 'د.إ' :
-       filters.currency === 'GBP' ? '£' : '$')
-    const symbol = currencySymbol
-    
-    // For chart formatting, use abbreviated format
-    if (amount >= 1000000) {
-      return `${symbol}${(amount / 1000000).toFixed(1)}M`
-    }
-    if (amount >= 1000) {
-      return `${symbol}${(amount / 1000).toFixed(1)}K`
-    }
-    return `${symbol}${amount.toFixed(0)}`
-  }
+  // Format currency in compact notation (e.g. $4.5B, AED 2.1M)
+  const formatCurrency = (amount: number): string =>
+    formatCompact(amount, locale, filters.currency || defaultCurrency)
 
-  // Format currency for display (not abbreviated)
-  const formatCurrencyFull = (amount: number): string => {
-    // Use currency symbol from countryData if available, otherwise use fallback
-    const currencySymbol = countryData?.currency?.symbol || 
-      (filters.currency === 'USD' ? '$' :
-       filters.currency === 'EUR' ? '€' :
-       filters.currency === 'PKR' ? 'Rs' :
-       filters.currency === 'AED' ? 'د.إ' :
-       filters.currency === 'GBP' ? '£' : '$')
-    const symbol = currencySymbol
-    return `${symbol}${formatNumber(amount)}`
-  }
+  // Format currency as full amount (not abbreviated)
+  const formatCurrencyFull = (amount: number): string =>
+    fmtCurrency(amount, filters.currency || defaultCurrency, locale)
 
   // Load dashboard data based on filters
   useEffect(() => {
@@ -152,7 +125,7 @@ export default function CompanyDashboard() {
     setLoading(true)
     try {
       // Call real backend API
-      const response = await apiClient.getCompanyDashboard(filters)
+      const response = await apiClient.getCompanyDashboard(filters as unknown as Record<string, string>)
       
       if (response.error) {
         console.error('Error loading dashboard:', response.error)
@@ -303,7 +276,7 @@ export default function CompanyDashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 flex">
+    <div className="min-h-screen bg-gray-100 flex">
       {/* Mobile Menu Overlay */}
       {sidebarOpen && (
         <div 
@@ -670,7 +643,7 @@ export default function CompanyDashboard() {
               }}>
                 Total Orders
               </div>
-              <div className="text-xl sm:text-2xl font-bold text-[#6B1F2B] leading-tight break-words font-serif">{kpiData.totalOrders.toLocaleString()}</div>
+              <div className="text-xl sm:text-2xl font-bold text-[#6B1F2B] leading-tight break-words font-serif">{mounted ? kpiData.totalOrders.toLocaleString() : kpiData.totalOrders}</div>
               <div className="mt-2 text-xs text-green-600 whitespace-nowrap flex items-center gap-1">
                 <span className="inline-block">↑</span>
                 <span>+8.3% vs previous</span>

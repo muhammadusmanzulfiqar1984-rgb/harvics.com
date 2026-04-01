@@ -8,7 +8,7 @@ export const hoverStates = {
   link: 'transition-all duration-200 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-1 rounded px-1',
   button: 'transition-all duration-200 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2',
   card: 'transition-all duration-300 hover:shadow-lg hover:-translate-y-1',
-  navLink: 'transition-all duration-200 hover:text-black hover:border-black300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-1 rounded-t'
+  navLink: 'transition-all duration-200 hover:text-black hover:border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-1 rounded-t'
 }
 
 // Loading state classes

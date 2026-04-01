@@ -1,0 +1,168 @@
+{
+  "_note": "Arabic backend translations - API responses, statuses, error messages",
+  "orders": {
+    "status": {
+      "pending": "قيد الانتظار",
+      "inTransit": "في الطريق",
+      "completed": "مكتمل",
+      "cancelled": "ملغى",
+      "processing": "قيد المعالجة",
+      "delivered": "تم التسليم",
+      "onHold": "معلق"
+    },
+    "messages": {
+      "created": "تم إنشاء الطلب بنجاح",
+      "updated": "تم تحديث الطلب بنجاح",
+      "deleted": "تم حذف الطلب بنجاح",
+      "notFound": "الطلب غير موجود"
+    }
+  },
+  "inventory": {
+    "categories": {
+      "frozenFoods": "أغذية مجمدة",
+      "culinary": "طهي",
+      "commodities": "سلع",
+      "industrial": "صناعي",
+      "grains": "حبوب",
+      "pantry": "مؤن",
+      "confectionery": "حلويات",
+      "natural": "طبيعي",
+      "homeTextiles": "منسوجات منزلية",
+      "beverages": "مشروبات"
+    },
+    "messages": {
+      "created": "تم إنشاء عنصر المخزون بنجاح",
+      "updated": "تم تحديث عنصر المخزون بنجاح",
+      "deleted": "تم حذف عنصر المخزون بنجاح",
+      "notFound": "عنصر المخزون غير موجود",
+      "lowStock": "تنبيه انخفاض المخزون"
+    }
+  },
+  "crm": {
+    "segments": {
+      "wholesale": "بيع بالجملة",
+      "distributor": "موزع",
+      "retail": "تجزئة",
+      "b2b": "أعمال لأعمال",
+      "ecommerce": "تجارة إلكترونية",
+      "direct": "مباشر"
+    },
+    "stages": {
+      "lead": "عميل محتمل",
+      "qualified": "مؤهل",
+      "proposal": "عرض",
+      "negotiation": "تفاوض",
+      "closed": "مغلق"
+    },
+    "messages": {
+      "customerCreated": "تم إنشاء العميل بنجاح",
+      "customerUpdated": "تم تحديث العميل بنجاح",
+      "customerDeleted": "تم حذف العميل بنجاح",
+      "customerNotFound": "العميل غير موجود",
+      "leadCreated": "تم إنشاء العميل المحتمل بنجاح",
+      "leadUpdated": "تم تحديث العميل المحتمل بنجاح",
+      "leadDeleted": "تم حذف العميل المحتمل بنجاح",
+      "leadNotFound": "العميل المحتمل غير موجود",
+      "campaignCreated": "تم إنشاء الحملة بنجاح",
+      "campaignUpdated": "تم تحديث الحملة بنجاح",
+      "campaignNotFound": "الحملة غير موجودة"
+    }
+  },
+  "hr": {
+    "departments": {
+      "sales": "المبيعات",
+      "operations": "العمليات",
+      "finance": "المالية",
+      "hr": "الموارد البشرية",
+      "it": "تقنية المعلومات",
+      "marketing": "التسويق",
+      "logistics": "اللوجستيات",
+      "procurement": "المشتريات",
+      "executive": "الإدارة التنفيذية",
+      "legal": "الشؤون القانونية"
+    },
+    "messages": {
+      "employeeCreated": "تم إنشاء سجل الموظف بنجاح",
+      "employeeUpdated": "تم تحديث سجل الموظف بنجاح",
+      "employeeDeleted": "تم حذف سجل الموظف بنجاح",
+      "employeeNotFound": "الموظف غير موجود"
+    }
+  },
+  "finance": {
+    "status": {
+      "paid": "مدفوع",
+      "unpaid": "غير مدفوع",
+      "overdue": "متأخر",
+      "partial": "مدفوع جزئياً"
+    },
+    "messages": {
+      "invoiceCreated": "تم إنشاء الفاتورة بنجاح",
+      "invoiceUpdated": "تم تحديث الفاتورة بنجاح",
+      "invoiceDeleted": "تم حذف الفاتورة بنجاح",
+      "invoiceNotFound": "الفاتورة غير موجودة",
+      "paymentReceived": "تم استلام الدفعة بنجاح",
+      "paymentCreated": "تم تسجيل الدفعة بنجاح",
+      "approvalRequired": "يتطلب الموافقة"
+    }
+  },
+  "logistics": {
+    "status": {
+      "pending": "قيد الانتظار",
+      "scheduled": "مجدول",
+      "inTransit": "في الطريق",
+      "inProgress": "قيد التنفيذ",
+      "completed": "مكتمل",
+      "delayed": "متأخر"
+    },
+    "messages": {
+      "routeCreated": "تم إنشاء المسار بنجاح",
+      "routeUpdated": "تم تحديث المسار بنجاح",
+      "routeDeleted": "تم حذف المسار بنجاح",
+      "routeNotFound": "المسار غير موجود",
+      "shipmentDispatched": "تم إرسال الشحنة"
+    }
+  },
+  "procurement": {
+    "status": {
+      "pending": "قيد الانتظار",
+      "approved": "موافق عليه",
+      "rejected": "مرفوض",
+      "partial": "جزئي",
+      "complete": "مكتمل"
+    },
+    "messages": {
+      "poCreated": "تم إنشاء أمر الشراء بنجاح",
+      "poUpdated": "تم تحديث أمر الشراء بنجاح",
+      "poDeleted": "تم حذف أمر الشراء بنجاح",
+      "poNotFound": "أمر الشراء غير موجود",
+      "grnCreated": "تم إنشاء إشعار استلام البضائع بنجاح",
+      "grnNotFound": "إشعار الاستلام غير موجود",
+      "approvalPending": "الطلب بانتظار الموافقة"
+    }
+  },
+  "errors": {
+    "invalidCredentials": "اسم المستخدم أو كلمة المرور غير صحيحة",
+    "unauthorized": "وصول غير مصرح",
+    "forbidden": "الوصول ممنوع",
+    "notFound": "المورد غير موجود",
+    "serverError": "خطأ في الخادم الداخلي",
+    "validationError": "خطأ في التحقق",
+    "duplicateEntry": "إدخال مكرر",
+    "tokenExpired": "انتهت الجلسة، يرجى تسجيل الدخول مرة أخرى",
+    "tokenInvalid": "رمز المصادقة غير صالح",
+    "missingFields": "الحقول المطلوبة مفقودة",
+    "invalidFormat": "تنسيق البيانات غير صالح",
+    "databaseError": "حدث خطأ في قاعدة البيانات",
+    "networkError": "حدث خطأ في الشبكة"
+  },
+  "messages": {
+    "success": "تمت العملية بنجاح",
+    "created": "تم الإنشاء بنجاح",
+    "updated": "تم التحديث بنجاح",
+    "deleted": "تم الحذف بنجاح",
+    "fetched": "تم استرداد البيانات بنجاح",
+    "loginSuccess": "تم تسجيل الدخول بنجاح",
+    "logoutSuccess": "تم تسجيل الخروج بنجاح",
+    "welcome": "مرحباً بك في نظام هارفيكس"
+  }
+}

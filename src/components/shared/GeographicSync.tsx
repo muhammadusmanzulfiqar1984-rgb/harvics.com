@@ -10,7 +10,7 @@
 import { useEffect } from 'react'
 import { useCountry } from '@/contexts/CountryContext'
 import { useRegion } from '@/contexts/RegionContext'
-import { useTerritory } from '@/contexts/TerritoryContext'
+import { useTerritoryStore as useTerritory } from '@/store/useTerritoryStore'
 import { getRegionIdForCountry, syncCountryToRegion } from '@/lib/geographic-sync'
 
 export function GeographicSync() {

@@ -56,34 +56,34 @@ const Footer: React.FC = () => {
       <NestleNewsSection />
 
       {/* Main Footer — Ivory background, Apple-clean */}
-      <footer style={{ background: '#F5F1E8', borderTop: '1px solid rgba(195,163,94,0.3)' }}>
+      <footer style={{ background: '#ffffff', borderTop: '1px solid rgba(195,163,94,0.3)' }}>
 
         {/* Brand + Links Grid */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 mb-3">
 
             {/* Brand */}
             <div className="lg:col-span-4">
-              <Link href={`/${locale}`} className="inline-block mb-4">
-                <h2 className="text-3xl tracking-wide" style={{ color: '#6B1F2B', fontWeight: 300 }}>
+              <Link href={`/${locale}`} className="inline-block mb-1">
+                <h2 className="text-lg tracking-wide" style={{ color: '#6B1F2B', fontWeight: 300 }}>
                   {t('companyName') || 'Harvics'}
                 </h2>
               </Link>
-              <p className="text-sm leading-relaxed mb-6" style={{ color: '#6B1F2B', opacity: 0.6, lineHeight: '1.7' }}>
+              <p className="text-xs leading-relaxed mb-2" style={{ color: '#6B1F2B', opacity: 0.6, lineHeight: '1.5' }}>
                 {t('brandStatement') || 'A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.'}
               </p>
-              <div className="w-14 h-14 opacity-50">
+              <div className="w-8 h-8 opacity-50">
                 <img src="/Images/logo.png" alt="Harvics Logo" className="w-full h-full object-contain" />
               </div>
             </div>
 
             {/* Links */}
-            <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+              <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
               <div>
-                <h3 className="mb-5 uppercase text-xs tracking-widest font-semibold" style={{ color: '#6B1F2B' }}>
+                <h3 className="mb-2 uppercase text-xs tracking-widest font-semibold" style={{ color: '#6B1F2B' }}>
                   {t('usefulLinks') || 'USEFUL LINKS'}
                 </h3>
-                <ul className="space-y-3">
+                <ul className="space-y-1">
                   {[
                     { href: `/${locale}/faq`, label: t('askHarvics') || 'Ask Harvics' },
                     { href: `/${locale}/contact`, label: t('contactUs') || 'Contact us' },
@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
                     { href: `/${locale}/compliance`, label: t('speakUp') || 'Speak Up' },
                   ].map(link => (
                     <li key={link.href}>
-                      <Link href={link.href} className="text-sm transition-opacity duration-200 hover:opacity-100" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
+                      <Link href={link.href} className="text-sm transition-all duration-200 hover:opacity-100 hover:translate-x-1 inline-block" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
                         {link.label}
                       </Link>
                     </li>
@@ -101,10 +101,10 @@ const Footer: React.FC = () => {
               </div>
 
               <div>
-                <h3 className="mb-5 uppercase text-xs tracking-widest font-semibold" style={{ color: '#6B1F2B' }}>
+                <h3 className="mb-2 uppercase text-xs tracking-widest font-semibold" style={{ color: '#6B1F2B' }}>
                   {t('company') || 'COMPANY'}
                 </h3>
-                <ul className="space-y-3">
+                <ul className="space-y-1">
                   {[
                     { href: `/${locale}/about`, label: t('aboutUs') || 'About us' },
                     { href: `/${locale}/locations`, label: t('globalAddresses') || 'Global addresses' },
@@ -115,7 +115,7 @@ const Footer: React.FC = () => {
                     { href: `/${locale}/csr`, label: t('sustainability') || 'Sustainability' },
                   ].map(link => (
                     <li key={link.href}>
-                      <Link href={link.href} className="text-sm transition-opacity duration-200 hover:opacity-100" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
+                      <Link href={link.href} className="text-sm transition-all duration-200 hover:opacity-100 hover:translate-x-1 inline-block" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
                         {link.label}
                       </Link>
                     </li>
@@ -124,10 +124,10 @@ const Footer: React.FC = () => {
               </div>
 
               <div>
-                <h3 className="mb-5 uppercase text-xs tracking-widest font-semibold" style={{ color: '#6B1F2B' }}>
+                <h3 className="mb-2 uppercase text-xs tracking-widest font-semibold" style={{ color: '#6B1F2B' }}>
                   {t('media') || 'MEDIA'}
                 </h3>
-                <ul className="space-y-3">
+                <ul className="space-y-1">
                   {[
                     { href: `/${locale}/media/news`, label: t('news') || 'News' },
                     { href: `/${locale}/media/contacts`, label: t('mediaContacts') || 'Media contacts' },
@@ -143,10 +143,10 @@ const Footer: React.FC = () => {
               </div>
 
               <div>
-                <h3 className="mb-5 uppercase text-xs tracking-widest font-semibold" style={{ color: '#6B1F2B' }}>
+                <h3 className="mb-2 uppercase text-xs tracking-widest font-semibold" style={{ color: '#6B1F2B' }}>
                   {t('investors') || 'INVESTORS'}
                 </h3>
-                <ul className="space-y-3">
+                <ul className="space-y-1">
                   {[
                     { href: `/${locale}/investors/governance`, label: t('corporateGovernance') || 'Corporate governance' },
                     { href: `/${locale}/investors/shares`, label: t('sharesAdrsBonds') || 'Shares, ADRs, & Bonds' },
@@ -163,48 +163,57 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Social Icons — maroon icons on ivory */}
-          <div className="flex items-center justify-center gap-4 py-6" style={{ borderTop: '1px solid rgba(195,163,94,0.2)' }}>
+          {/* Social Icons */}
+          <div className="flex items-center justify-center gap-3 py-2" style={{ borderTop: '1px solid rgba(195,163,94,0.2)' }}>
             {socialLinks.map(social => (
               <a
                 key={social.label}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 flex items-center justify-center transition-opacity duration-200 hover:opacity-100"
+                className="w-9 h-9 flex items-center justify-center transition-all duration-300 hover:opacity-100 hover:-translate-y-1 hover:shadow-md"
                 style={{ opacity: 0.5 }}
                 aria-label={social.label}
               >
-                <svg className="w-5 h-5" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 transition-transform duration-300 hover:scale-110" viewBox="0 0 24 24">
                   <path fill="#6B1F2B" d={social.path} />
                 </svg>
               </a>
             ))}
           </div>
 
-          {/* Newsletter — inline, clean */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 py-6" style={{ borderTop: '1px solid rgba(195,163,94,0.2)' }}>
+          {/* Newsletter */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 py-2" style={{ borderTop: '1px solid rgba(195,163,94,0.2)' }}>
             <form onSubmit={handleNewsletterSubmit} className="flex items-center gap-2 w-full max-w-md">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t('enterEmailPlaceholder') || 'Enter your email'}
-                className="flex-1 px-4 py-2 text-sm focus:outline-none"
+                className="flex-1 px-4 py-2.5 text-sm transition-all duration-300 outline-none"
                 style={{ background: 'white', border: '1px solid rgba(195,163,94,0.3)', color: '#6B1F2B' }}
+                onFocus={(e) => {
+                  e.target.style.borderColor = 'rgba(195,163,94,0.7)'
+                  e.target.style.boxShadow = '0 0 0 3px rgba(195,163,94,0.12)'
+                }}
+                onBlur={(e) => {
+                  e.target.style.borderColor = 'rgba(195,163,94,0.3)'
+                  e.target.style.boxShadow = 'none'
+                }}
                 required
               />
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="px-5 py-2 text-sm font-semibold transition-opacity duration-200 hover:opacity-80 disabled:opacity-50"
+                className="group relative px-5 py-2.5 text-sm font-semibold overflow-hidden transition-all duration-300 disabled:opacity-50"
                 style={{ background: '#6B1F2B', color: '#F5F1E8' }}
               >
-                {isSubmitting ? '...' : (t('subscribe') || 'Subscribe')}
+                <span className="relative z-10">{isSubmitting ? '...' : (t('subscribe') || 'Subscribe')}</span>
+                <div className="absolute inset-0 bg-[#5a1a24] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
               </button>
             </form>
             {submitMessage && (
-              <p className="text-sm mt-1" style={{ color: submitMessage.includes('Thank') ? '#6B1F2B' : '#dc2626' }}>
+              <p className="text-sm mt-1 animate-pulse" style={{ color: submitMessage.includes('Thank') ? '#6B1F2B' : '#dc2626' }}>
                 {submitMessage}
               </p>
             )}

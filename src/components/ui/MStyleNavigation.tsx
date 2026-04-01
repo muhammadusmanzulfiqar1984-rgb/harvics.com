@@ -54,7 +54,7 @@ const MStyleNavigation: React.FC<MStyleNavigationProps> = ({ activeTab }) => {
 
   return (
     <div className="relative w-full z-[100]">
-      <div className="w-full relative z-[100]" style={{ background: '#F5F1E8', borderBottom: '1px solid rgba(195,163,94,0.3)' }}>
+      <div className="w-full relative z-[100]" style={{ background: '#ffffff', borderBottom: '1px solid rgba(195,163,94,0.3)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex items-center justify-between h-12 w-full relative z-[100]">
             

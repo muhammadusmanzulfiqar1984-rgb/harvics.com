@@ -29,29 +29,25 @@ export default async function AnalyticsReportsPage() {
             label="Total Revenue"
             value="$4.2M"
             icon="💰"
-            change={12.5}
-            changeLabel="vs last month"
+            change={{ value: 12.5, label: 'vs last month', trend: 'up' }}
           />
           <KPICard
             label="Active Users"
             value="12.5K"
             icon="👥"
-            change={8.2}
-            changeLabel="vs last month"
+            change={{ value: 8.2, label: 'vs last month', trend: 'up' }}
           />
           <KPICard
             label="Market Share"
             value="28%"
             icon="📈"
-            change={2.1}
-            changeLabel="vs last month"
+            change={{ value: 2.1, label: 'vs last month', trend: 'up' }}
           />
           <KPICard
             label="System Health"
             value="99.9%"
             icon="⚡"
-            change={0}
-            changeLabel="stable"
+            change={{ value: 0, label: 'stable', trend: 'neutral' }}
           />
         </div>
 

@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "cs",
+    "language": "Czech",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Czech. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Czech",
+      "translation": "Vítejte v"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Czech",
+      "translation": "Harwich"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Czech",
+      "translation": "Excelence v oblasti prémiového spotřebního zboží od roku 2019"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Czech",
+      "translation": "Přední světová společnost spotřebního zboží dodávající prémiové potravinářské výrobky v různých kategoriích s mezinárodními standardy kvality."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Czech",
+      "translation": "Prozkoumat produkty"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Czech",
+      "translation": "Kontaktujte nás"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Czech",
+      "translation": "Zjistěte více"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Czech",
+      "translation": "Excelence v prémiovém spotřebním zboží od roku"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Czech",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Czech",
+      "translation": "Londýn • Milán • New York"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Czech",
+      "translation": "Pekárna"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Czech",
+      "translation": "Nápoje"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Czech",
+      "translation": "Cukrovinky"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Czech",
+      "translation": "Kulinářské"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Czech",
+      "translation": "Mražené potraviny"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Czech",
+      "translation": "Těstoviny"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Czech",
+      "translation": "Svačinky"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Czech",
+      "translation": "Zpráva ESG 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Czech",
+      "translation": "Londýn • Milán • New York"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Czech",
+      "translation": "Domov"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Czech",
+      "translation": "O"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Czech",
+      "translation": "O nás"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Czech",
+      "translation": "Příběh značky"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Czech",
+      "translation": "Produkty"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Czech",
+      "translation": "Naše produkty"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Czech",
+      "translation": "Zobrazit všechny produkty"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Czech",
+      "translation": "Společenská odpovědnost (CSR)"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Czech",
+      "translation": "Vztahy s investory"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Czech",
+      "translation": "Investoři"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Czech",
+      "translation": "Média"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Czech",
+      "translation": "Kontaktujte nás"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Czech",
+      "translation": "Harvicsův dům"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Czech",
+      "translation": "Země"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Czech",
+      "translation": "Portály"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Czech",
+      "translation": "Přihlásit se"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Czech",
+      "translation": "Seznam přání"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Czech",
+      "translation": "Nákupní vozík"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Czech",
+      "translation": "Pomoc"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Czech",
+      "translation": "Najít obchod"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Czech",
+      "translation": "Peníze"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Czech",
+      "translation": "Prodej"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Czech",
+      "translation": "Nabídky"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Czech",
+      "translation": "Tmavý režim"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Czech",
+      "translation": "Kreditní karta"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Czech",
+      "translation": "Kreditní karta M&S Rewards"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Czech",
+      "translation": "Klubové odměny"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Czech",
+      "translation": "Naše kreditní karty"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Czech",
+      "translation": "Pojištění"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Czech",
+      "translation": "Pojištění domácnosti"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Czech",
+      "translation": "Cestovní pojištění"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Czech",
+      "translation": "Cestovní služby"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Czech",
+      "translation": "Cestovní peníze"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Czech",
+      "translation": "Směnné kurzy"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Czech",
+      "translation": "Doplňkové služby"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Czech",
+      "translation": "Spoření a investování"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Czech",
+      "translation": "Osobní půjčky"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Czech",
+      "translation": "Finanční podpora"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Czech",
+      "translation": "Aktuální prodeje"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Czech",
+      "translation": "Odbavení"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Czech",
+      "translation": "Sezónní výprodeje"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Czech",
+      "translation": "Speciální nabídky"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Czech",
+      "translation": "Propagace"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Czech",
+      "translation": "Slevy za hromadné objednávky"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Czech",
+      "translation": "Naše produkty"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Czech",
+      "translation": "Zobrazit všechny produkty"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Czech",
+      "translation": "Naše kategorie produktů"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Czech",
+      "translation": "Objevte naši prémiovou řadu produktů vyrobených s péčí a dokonalostí."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Czech",
+      "translation": "Úroveň 1: Kategorie"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Czech",
+      "translation": "Úroveň 2: Moduly"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Czech",
+      "translation": "Úroveň 3: Obrazovky klíčových ukazatelů výkonnosti (KPI)"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Czech",
+      "translation": "Úroveň 4: Akce"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Czech",
+      "translation": "Obnovit navigaci"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Czech",
+      "translation": "Pro tuto kategorii nejsou k dispozici žádné podkategorie."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Czech",
+      "translation": "Produkty"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Czech",
+      "translation": "Podkategorie"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Czech",
+      "translation": "Pekárna"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Czech",
+      "translation": "Čerstvě upečené pečivo a pečivo."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Czech",
+      "translation": "Nápoje"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Czech",
+      "translation": "Osvěžující nápoje pro každou příležitost."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Czech",
+      "translation": "Cukrovinky"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Czech",
+      "translation": "Sladké dobroty a pochoutky."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Czech",
+      "translation": "Kulinářské"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Czech",
+      "translation": "Nezbytné ingredience pro vaši kuchyň."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Czech",
+      "translation": "Mražené potraviny"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Czech",
+      "translation": "Pohodlná a chutná mražená jídla."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Czech",
+      "translation": "Těstoviny"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Czech",
+      "translation": "Autentické druhy těstovin."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Czech",
+      "translation": "Svačinky"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Czech",
+      "translation": "Chutné svačinky pro každou denní dobu."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Czech",
+      "translation": "O Harvics"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Czech",
+      "translation": "Excelence v oblasti prémiového spotřebního zboží od roku 2019"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Czech",
+      "translation": "Náš příběh"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Czech",
+      "translation": "Společnost Harvics, založená v roce 2019, se z vizionářské myšlenky rozrostla v globálního lídra v oblasti prémiového spotřebního zboží. Naše cesta je definována neúnavnou snahou o kvalitu a závazkem k inovacím."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Czech",
+      "translation": "Působíme ve více než 40 zemích a dodáváme produkty, které obohacují životy a nastavují nové standardy v oboru. Od našich skromných začátků až po naši globální působnost zůstávají naše hodnoty nezměněny."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Czech",
+      "translation": "Odhad 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Czech",
+      "translation": "Více než 40 zemí"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Czech",
+      "translation": "6 produktových řad"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Czech",
+      "translation": "Společenská odpovědnost firem"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Czech",
+      "translation": "Ve společnosti Harvics se zavázali k pozitivnímu dopadu na svět. Naše iniciativy v oblasti společenské odpovědnosti firem se zaměřují na udržitelnost, posilování komunity a etické obchodní praktiky."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Czech",
+      "translation": "Roky dopadu"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Czech",
+      "translation": "Dosažené země"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Czech",
+      "translation": "Dotčené životy"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Czech",
+      "translation": "Naše klíčové iniciativy"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Czech",
+      "translation": "Zaměřujeme se na čtyři hlavní pilíře, abychom podpořili udržitelnou změnu a vytvořili sdílenou hodnotu pro všechny zúčastněné strany."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Czech",
+      "translation": "Udržitelnost"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Czech",
+      "translation": "Snižování naší ekologické stopy prostřednictvím obnovitelných zdrojů energie a snižování odpadu."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Czech",
+      "translation": "Obnovitelná energie"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Czech",
+      "translation": "Odklon odpadu"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Czech",
+      "translation": "Snížení obsahu uhlíku"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Czech",
+      "translation": "Podpora komunity"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Czech",
+      "translation": "Posílení místních komunit prostřednictvím vzdělávání, zdravotní péče a ekonomického rozvoje."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Czech",
+      "translation": "Podporované rodiny"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Czech",
+      "translation": "Aktivní programy"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Czech",
+      "translation": "Dobrovolníci"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Czech",
+      "translation": "Školství"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Czech",
+      "translation": "Zajištění přístupu ke kvalitnímu vzdělání a stipendiím pro studenty ze znevýhodněných rodin."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Czech",
+      "translation": "Stipendia"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Czech",
+      "translation": "Partnerské školy"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Czech",
+      "translation": "Dotčení studenti"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Czech",
+      "translation": "Zdraví a wellness"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Czech",
+      "translation": "Zlepšení přístupu ke zdravotní péči a výživě v nedostatečně obsloužených regionech."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Czech",
+      "translation": "Zdravotní kampaně"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Czech",
+      "translation": "Obsloužení lidé"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Czech",
+      "translation": "Mobilní kliniky"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Czech",
+      "translation": "Nejlepší iniciativa v oblasti společenské odpovědnosti firem (CSR)"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Czech",
+      "translation": "Oceněni za náš inovativní přístup ke společenské odpovědnosti."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Czech",
+      "translation": "Šampion komunity"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Czech",
+      "translation": "Oceněno za naše rozsáhlé programy zaměřené na komunitní pomoc."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Czech",
+      "translation": "Cena za globální udržitelnost"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Czech",
+      "translation": "Uznáváni za náš závazek k uhlíkové neutralitě."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Czech",
+      "translation": "Náš dopad"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Czech",
+      "translation": "Uznáváme naše milníky při vytváření lepšího světa."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Czech",
+      "translation": "Přidejte se k nám a pomozte nám něco změnit"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Czech",
+      "translation": "Staňte se naším partnerem nebo se dozvíte více o tom, jak budujeme udržitelnou budoucnost."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Czech",
+      "translation": "Kontaktujte tým CSR"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Czech",
+      "translation": "Zjistěte více"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Czech",
+      "translation": "Kontaktujte nás"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Czech",
+      "translation": "Rádi bychom od vás slyšeli. Kontaktujte nás prostřednictvím kteréhokoli z těchto kanálů."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Czech",
+      "translation": "Telefon"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Czech",
+      "translation": "E-mail"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Czech",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Czech",
+      "translation": "Zavolejte nyní"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Czech",
+      "translation": "Odeslat e-mail"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Czech",
+      "translation": "Napište nám"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Czech",
+      "translation": "Mediální centrum"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Czech",
+      "translation": "Mediální centrum | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Czech",
+      "translation": "Tiskové zdroje, informace o značce a nejnovější zprávy od společnosti Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Czech",
+      "translation": "Firemní"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Czech",
+      "translation": "Novinky a tiskové zprávy"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Czech",
+      "translation": "Nejnovější oznámení, expanze na trh, uvedení produktů na trh a firemní novinky od společnosti Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Czech",
+      "translation": "Přečtěte si nejnovější zprávy"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Czech",
+      "translation": "Galerie obrázků"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Czech",
+      "translation": "Vysoce kvalitní materiály značky, produktové fotografie, snímky zařízení a reportáže z akcí pro mediální použití."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Czech",
+      "translation": "Procházet galerii"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Czech",
+      "translation": "Kontakty pro média"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Czech",
+      "translation": "S dotazy pro tisk, žádostmi o rozhovory a oznámeními o partnerstvích se obraťte na náš komunikační tým."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Czech",
+      "translation": "Kontaktujte tiskový tým"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Czech",
+      "translation": "Pokryté trhy"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Czech",
+      "translation": "Vertikály odvětví"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Czech",
+      "translation": "Založeno v Dubaji"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Czech",
+      "translation": "Podporované jazyky"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Czech",
+      "translation": "Nedávné titulky"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Czech",
+      "translation": "Harvics rozšiřuje své aktivity v oblasti rychloobrátkového spotřebního zboží (FMCG) na 5 nových trhů v jihovýchodní Asii"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Czech",
+      "translation": "Spuštěna nová platforma dodavatelského řetězce s umělou inteligencí pro globální distribuci"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Czech",
+      "translation": "Společnost Harvics dosáhla milníku uhlíkové neutrality ve všech svých provozech"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Czech",
+      "translation": "Strategické partnerství s předními textilními výrobci v jižní Asii"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Czech",
+      "translation": "Harvicsův dům"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Czech",
+      "translation": "Odkaz excelence a tradice"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Czech",
+      "translation": "Vítejte v Harvics House"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Czech",
+      "translation": "Harvics House představuje vrchol našeho závazku ke kvalitě a odkazu. Zde sdružujeme ten nejlepší výběr našich prémiových produktů, prezentovaných v prostředí, které odráží naše hodnoty elegance, tradice a inovací."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Czech",
+      "translation": "Prozkoumejte naše exkluzivní kolekce a objevte příběh každého produktu, který nese jméno Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Czech",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Czech",
+      "translation": "Excelence v oblasti prémiového spotřebního zboží od roku 2019"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Czech",
+      "translation": "Přední světová společnost spotřebního zboží dodávající prémiové potravinářské výrobky v různých kategoriích s mezinárodními standardy kvality."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Czech",
+      "translation": "Londýn • Milán • New York"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Czech",
+      "translation": "Od roku 2019"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Czech",
+      "translation": "Harvics News"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Czech",
+      "translation": "Přihlaste se k odběru upozornění a aktualizací"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Czech",
+      "translation": "Registrovat se"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Czech",
+      "translation": "Obavy z dodržování předpisů"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Czech",
+      "translation": "Ozvěte se, pokud máte obavy ohledně dodržování předpisů nebo etiky"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Czech",
+      "translation": "Ozvěte se"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Czech",
+      "translation": "Kontaktujte nás"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Czech",
+      "translation": "Spojte se s naším týmem"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Czech",
+      "translation": "Kontaktujte nás"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Czech",
+      "translation": "Užitečné odkazy"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Czech",
+      "translation": "Zeptejte se Harwiche"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Czech",
+      "translation": "Hledat pracovní místa"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Czech",
+      "translation": "Přihlásit se k odběru novinek"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Czech",
+      "translation": "Společnost"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Czech",
+      "translation": "Globální adresy"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Czech",
+      "translation": "Strategie"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Czech",
+      "translation": "Naše vedení"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Czech",
+      "translation": "Značky A-Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Czech",
+      "translation": "Naše historie"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Czech",
+      "translation": "Udržitelnost"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Czech",
+      "translation": "Zprávy"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Czech",
+      "translation": "Kontakty pro média"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Czech",
+      "translation": "Obrázky"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Czech",
+      "translation": "Investoři"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Czech",
+      "translation": "Správa a řízení společností"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Czech",
+      "translation": "Akcie, ADR a dluhopisy"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Czech",
+      "translation": "Publikace"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Czech",
+      "translation": "Sledujte nás na"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Czech",
+      "translation": "0 problémů"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Czech",
+      "translation": "Mapa stránek"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Czech",
+      "translation": "Odhlásit se z odběru"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Czech",
+      "translation": "Pomoc"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Czech",
+      "translation": "Soukromí"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Czech",
+      "translation": "Soubory cookie"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Czech",
+      "translation": "Podmínky použití"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Czech",
+      "translation": "Přístupnost"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Czech",
+      "translation": "Uhlíková účinnost"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Czech",
+      "translation": "Dodavatelé"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Czech",
+      "translation": "Sociální média"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Czech",
+      "translation": "Nastavení souborů cookie"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Czech",
+      "translation": "Prémiová kvalita"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Czech",
+      "translation": "E-mailová adresa"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Czech",
+      "translation": "Zadejte svou e-mailovou adresu"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Czech",
+      "translation": "Upsat"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Czech",
+      "translation": "Přihlašování k odběru..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Czech",
+      "translation": "O nás"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Czech",
+      "translation": "Média"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Czech",
+      "translation": "Hledat produkty, značky nebo kategorie"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Czech",
+      "translation": "Nenalezeny žádné výsledky"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Czech",
+      "translation": "Hledání..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Czech",
+      "translation": "Výsledky"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Czech",
+      "translation": "Chatujte s námi"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Czech",
+      "translation": "Napište svou zprávu..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Czech",
+      "translation": "Poslat"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Czech",
+      "translation": "Blízko"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Czech",
+      "translation": "Dobrý den! Jak vám dnes mohu pomoci?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Czech",
+      "translation": "Promiňte, nerozuměl jsem tomu. Mohl byste to prosím přeformulovat?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Czech",
+      "translation": "Mohu vám pomoci s informacemi o produktech, objednávkami nebo obecnými dotazy. Co byste chtěli vědět?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Czech",
+      "translation": "Pro další pomoc nás prosím kontaktujte na adrese support@harvics.com nebo volejte na číslo +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Czech",
+      "translation": "Chatujte s námi"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Czech",
+      "translation": "Načítání..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Czech",
+      "translation": "Chyba"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Czech",
+      "translation": "Úspěch"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Czech",
+      "translation": "Uložit"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Czech",
+      "translation": "Zrušit"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Czech",
+      "translation": "Vymazat"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Czech",
+      "translation": "Upravit"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Czech",
+      "translation": "Pohled"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Czech",
+      "translation": "Předložit"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Czech",
+      "translation": "Vyhledávání"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Czech",
+      "translation": "Filtr"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Czech",
+      "translation": "Jasný"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Czech",
+      "translation": "Stáhnout"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Czech",
+      "translation": "Nahrát"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Czech",
+      "translation": "Ano"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Czech",
+      "translation": "Žádný"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Czech",
+      "translation": "Blízko"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Czech",
+      "translation": "Zadní"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Czech",
+      "translation": "Další"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Czech",
+      "translation": "Předchozí"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Czech",
+      "translation": "Akce"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Czech",
+      "translation": "Postavení"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Czech",
+      "translation": "Datum"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Czech",
+      "translation": "Jméno"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Czech",
+      "translation": "E-mail"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Czech",
+      "translation": "Telefon"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Czech",
+      "translation": "Adresa"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Czech",
+      "translation": "Země"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Czech",
+      "translation": "Město"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Czech",
+      "translation": "Vše"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Czech",
+      "translation": "Žádný"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Czech",
+      "translation": "Vybrat"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Czech",
+      "translation": "Vyberte jazyk"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Czech",
+      "translation": "Vyberte zemi"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Czech",
+      "translation": "Zobrazit více"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Czech",
+      "translation": "Zobrazit méně"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Czech",
+      "translation": "Požadovaný"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Czech",
+      "translation": "Menu"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Czech",
+      "translation": "Zobrazit produkty"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Czech",
+      "translation": "Přehrát hudbu"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Czech",
+      "translation": "Pozastavit hudbu"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Czech",
+      "translation": "Ztlumit hudbu"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Czech",
+      "translation": "Zapnout zvuk hudby"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Czech",
+      "translation": "Náš globální dosah"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Czech",
+      "translation": "Od"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Czech",
+      "translation": "Hlavní trh"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Czech",
+      "translation": "Hlavní trhy"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Czech",
+      "translation": "Přítomnost"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Czech",
+      "translation": "Země, ve kterých působíme"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Czech",
+      "translation": "Hlavní trhy"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Czech",
+      "translation": "Kategorie produktů"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Czech",
+      "translation": "Založeno"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Czech",
+      "translation": "Hierarchie teritorií"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Czech",
+      "translation": "Celá cesta"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Czech",
+      "translation": "Současné území"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Czech",
+      "translation": "Žádné položky"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Czech",
+      "translation": "Zeměkoule"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Czech",
+      "translation": "Kontinent"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Czech",
+      "translation": "Kraj"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Czech",
+      "translation": "Země"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Czech",
+      "translation": "Město"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Czech",
+      "translation": "Okres"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Czech",
+      "translation": "Umístění"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Czech",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Czech",
+      "translation": "Globální"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Czech",
+      "translation": "Vyberte oblast"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Czech",
+      "translation": "Údaje o zákazníkovi"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Czech",
+      "translation": "Vybraný"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Czech",
+      "translation": "Celé jméno"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Czech",
+      "translation": "Zadejte své celé jméno"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Czech",
+      "translation": "Jméno je povinné"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Czech",
+      "translation": "E-mailová adresa"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Czech",
+      "translation": "váš.e-mail@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Czech",
+      "translation": "E-mail je povinný"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Czech",
+      "translation": "Zadejte prosím platnou e-mailovou adresu"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Czech",
+      "translation": "Telefonní číslo"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Czech",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Czech",
+      "translation": "Telefonní číslo je povinné"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Czech",
+      "translation": "Adresa"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Czech",
+      "translation": "Vaše adresa"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Czech",
+      "translation": "Adresa je povinná"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Czech",
+      "translation": "Souhlasím se zasíláním marketingových sdělení a aktualizací"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Czech",
+      "translation": "Odeslat a pokračovat"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Czech",
+      "translation": "Odesílání..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Czech",
+      "translation": "Přeskočit a pokračovat"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Czech",
+      "translation": "Klíčové ukazatele výkonnosti"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Czech",
+      "translation": "Objednávky dnes"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Czech",
+      "translation": "Odesláno přes Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Czech",
+      "translation": "Čekající dodávky"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Czech",
+      "translation": "Napříč přidělenými trasami"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Czech",
+      "translation": "Maloobchodníci"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Czech",
+      "translation": "Aktivní prodejny v rozsahu"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Czech",
+      "translation": "Skóre T & A"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Czech",
+      "translation": "Pokrytí území"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Czech",
+      "translation": "Finance a zásoby"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Czech",
+      "translation": "Nízké skladové zásoby"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Czech",
+      "translation": "Spustit doplnění"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Czech",
+      "translation": "Nevyřízené faktury"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Czech",
+      "translation": "K vyzvednutí"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Czech",
+      "translation": "Úvěrový limit"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Czech",
+      "translation": "Přiřazeno finančním oddělením"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Czech",
+      "translation": "Automatické schvalování, doplňování zásob a připomenutí faktur povoleny"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Czech",
+      "translation": "Sebeschválení"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Czech",
+      "translation": "Doplňování zásob"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Czech",
+      "translation": "Upomínky faktur"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Czech",
+      "translation": "Doporučení umělé inteligence"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Czech",
+      "translation": "Úroveň rizika"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Czech",
+      "translation": "Na základě využití úvěru a historie plateb"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Czech",
+      "translation": "Navrhované pořadí"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Czech",
+      "translation": "SKU doporučené umělou inteligencí k objednání"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Czech",
+      "translation": "Další akce"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Czech",
+      "translation": "Akce a pokyny"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Czech",
+      "translation": "Stížnosti"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Czech",
+      "translation": "Problémy maloobchodníků čekající na řešení"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Czech",
+      "translation": "Příručka"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Czech",
+      "translation": "Upřednostněte doručení čekající na doručení před polednem."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Czech",
+      "translation": "Uzavřete všechny nevyřízené stížnosti do 48 hodin."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Czech",
+      "translation": "Spouštět doplňování zásob pro skladové jednotky s nízkým stavem (automatické vytváření objednávek)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Czech",
+      "translation": "Území"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Czech",
+      "translation": "Objednávky tento měsíc"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Czech",
+      "translation": "Čekající objednávky"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Czech",
+      "translation": "Doručené objednávky"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Czech",
+      "translation": "Informace o území"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Czech",
+      "translation": "Země"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Czech",
+      "translation": "Město"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Czech",
+      "translation": "Kraj"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Czech",
+      "translation": "Rychlé akce"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Czech",
+      "translation": "Nová objednávka"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Czech",
+      "translation": "Zobrazit objednávky"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Czech",
+      "translation": "Zobrazit faktury"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Czech",
+      "translation": "Nastavení profilu"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Czech",
+      "translation": "Načítání řídicího panelu..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Czech",
+      "translation": "Chyba"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Czech",
+      "translation": "Moje objednávky"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Czech",
+      "translation": "ID objednávky"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Czech",
+      "translation": "Datum"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Czech",
+      "translation": "Postavení"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Czech",
+      "translation": "Položky"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Czech",
+      "translation": "Celková částka"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Czech",
+      "translation": "Akce"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Czech",
+      "translation": "Zobrazit podrobnosti"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Czech",
+      "translation": "Postavení"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Czech",
+      "translation": "Datum zahájení"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Czech",
+      "translation": "Datum ukončení"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Czech",
+      "translation": "Všechny stavy"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Czech",
+      "translation": "Vymazat filtry"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Czech",
+      "translation": "Čeká na vyřízení"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Czech",
+      "translation": "Zpracování"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Czech",
+      "translation": "Doručeno"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Czech",
+      "translation": "Zrušeno"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Czech",
+      "translation": "Nenalezeny žádné objednávky"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Czech",
+      "translation": "Načítání objednávek..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Czech",
+      "translation": "Strana"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Czech",
+      "translation": "z"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Czech",
+      "translation": "Předchozí"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Czech",
+      "translation": "Další"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Czech",
+      "translation": "Podrobnosti objednávky"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Czech",
+      "translation": "Zpět k objednávkám"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Czech",
+      "translation": "ID objednávky"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Czech",
+      "translation": "Postavení"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Czech",
+      "translation": "Datum objednávky"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Czech",
+      "translation": "Datum dodání"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Czech",
+      "translation": "Dodací adresa"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Czech",
+      "translation": "Poznámky"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Czech",
+      "translation": "Položky objednávky"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Czech",
+      "translation": "Produkt"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Czech",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Czech",
+      "translation": "Množství"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Czech",
+      "translation": "Jednotková cena"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Czech",
+      "translation": "Celkový"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Czech",
+      "translation": "Celková částka"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Czech",
+      "translation": "Časová osa stavu"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Czech",
+      "translation": "Objednávka nenalezena"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Czech",
+      "translation": "Vytvořit novou objednávku"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Czech",
+      "translation": "Položky objednávky"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Czech",
+      "translation": "Přidat položku"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Czech",
+      "translation": "Zatím nebyly přidány žádné položky. Klikněte na tlačítko „Přidat položku“ pro zahájení."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Czech",
+      "translation": "Podrobnosti objednávky"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Czech",
+      "translation": "Datum dodání"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Czech",
+      "translation": "Dodací adresa"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Czech",
+      "translation": "Poznámky"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Czech",
+      "translation": "Celková částka"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Czech",
+      "translation": "Vytvořit objednávku"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Czech",
+      "translation": "Vytváření objednávky..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Czech",
+      "translation": "Zrušit"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Czech",
+      "translation": "Vyberte produkt"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Czech",
+      "translation": "Produkt"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Czech",
+      "translation": "Množství"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Czech",
+      "translation": "Jednotková cena"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Czech",
+      "translation": "Odstranit"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Czech",
+      "translation": "Mezisoučet"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Czech",
+      "translation": "ID objednávky"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Czech",
+      "translation": "Je vyžadována alespoň jedna položka objednávky"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Czech",
+      "translation": "Produkt je povinný"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Czech",
+      "translation": "Množství musí být větší než 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Czech",
+      "translation": "Jednotková cena musí být nezáporná"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Czech",
+      "translation": "Neplatný formát data doručení"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Czech",
+      "translation": "Datum doručení nemůže být v minulosti"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Czech",
+      "translation": "Moje faktury"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Czech",
+      "translation": "Číslo faktury"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Czech",
+      "translation": "Datum faktury"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Czech",
+      "translation": "Dvě rande"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Czech",
+      "translation": "Množství"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Czech",
+      "translation": "Zaplacená částka"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Czech",
+      "translation": "Stav platby"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Czech",
+      "translation": "Stav platby"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Czech",
+      "translation": "Všechny stavy"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Czech",
+      "translation": "Vymazat filtry"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Czech",
+      "translation": "Placené"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Czech",
+      "translation": "Nezaplaceno"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Czech",
+      "translation": "Částečný"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Czech",
+      "translation": "Nenalezeny žádné faktury"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Czech",
+      "translation": "Načítání faktur..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Czech",
+      "translation": "Můj profil"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Czech",
+      "translation": "Informace o účtu"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Czech",
+      "translation": "ID distributora"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Czech",
+      "translation": "Území"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Czech",
+      "translation": "Země"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Czech",
+      "translation": "Město"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Czech",
+      "translation": "Účet vytvořen"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Czech",
+      "translation": "Aktualizovat profil"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Czech",
+      "translation": "Jméno"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Czech",
+      "translation": "E-mail"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Czech",
+      "translation": "Telefon"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Czech",
+      "translation": "Adresa"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Czech",
+      "translation": "Jazyk"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Czech",
+      "translation": "Měna"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Czech",
+      "translation": "Uložit změny"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Czech",
+      "translation": "Ukládání..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Czech",
+      "translation": "Profil byl úspěšně aktualizován"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Czech",
+      "translation": "Načítání profilu..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Czech",
+      "translation": "Neplatný formát e-mailu"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Czech",
+      "translation": "Neplatný formát telefonu"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Czech",
+      "translation": "Chyba"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Czech",
+      "translation": "Načítání..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Czech",
+      "translation": "Uložit"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Czech",
+      "translation": "Zrušit"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Czech",
+      "translation": "Zadní"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Czech",
+      "translation": "Předložit"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Czech",
+      "translation": "Vymazat"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Czech",
+      "translation": "Upravit"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Czech",
+      "translation": "Pohled"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Czech",
+      "translation": "Vyhledávání"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Czech",
+      "translation": "Filtr"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Czech",
+      "translation": "Jasný"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Czech",
+      "translation": "Použít"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Czech",
+      "translation": "Blízko"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Czech",
+      "translation": "Potvrdit"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Czech",
+      "translation": "Ano"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Czech",
+      "translation": "Žádný"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Czech",
+      "translation": "Právní operační systém"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Czech",
+      "translation": "Právní operační systém"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Czech",
+      "translation": "Přístup odepřen"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Czech",
+      "translation": "Nemáte oprávnění k přístupu k modulu Legal OS."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Czech",
+      "translation": "Dashboard"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Czech",
+      "translation": "Smlouvy"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Czech",
+      "translation": "Certifikáty"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Czech",
+      "translation": "Dodržování"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Czech",
+      "translation": "Právní panel"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Czech",
+      "translation": "Přehled právních operací a stavu dodržování předpisů"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Czech",
+      "translation": "Aktivní ochranné známky"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Czech",
+      "translation": "Aktivní smlouvy"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Czech",
+      "translation": "Stav shody"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Czech",
+      "translation": "Ochranné známky"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Czech",
+      "translation": "Správa registrací a žádostí o ochranné známky"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Czech",
+      "translation": "Přidat novou ochrannou známku"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Czech",
+      "translation": "Země"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Czech",
+      "translation": "Postavení"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Czech",
+      "translation": "Všechny země"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Czech",
+      "translation": "Všechny stavy"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Czech",
+      "translation": "Vymazat filtry"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Czech",
+      "translation": "Název značky"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Czech",
+      "translation": "Třída"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Czech",
+      "translation": "Země"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Czech",
+      "translation": "Číslo žádosti"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Czech",
+      "translation": "Postavení"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Czech",
+      "translation": "Datum expirace"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Czech",
+      "translation": "Akce"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Czech",
+      "translation": "Upravit ochrannou známku"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Czech",
+      "translation": "Přidat novou ochrannou známku"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Czech",
+      "translation": "Zobrazit ochrannou známku"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Czech",
+      "translation": "Název značky"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Czech",
+      "translation": "Číslo třídy"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Czech",
+      "translation": "Země"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Czech",
+      "translation": "Číslo žádosti"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Czech",
+      "translation": "Postavení"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Czech",
+      "translation": "Datum expirace"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Czech",
+      "translation": "Dokumenty"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Czech",
+      "translation": "Žádné dokumenty nejsou připojeny"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Czech",
+      "translation": "Přidat dokument"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Czech",
+      "translation": "Odstranit"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Czech",
+      "translation": "Načtení ochranných známek se nezdařilo"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Czech",
+      "translation": "Uložení ochranné známky se nezdařilo. Zkuste to prosím znovu."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Czech",
+      "translation": "Právní případy"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Czech",
+      "translation": "Spravujte právní případy a sledujte jejich stav"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Czech",
+      "translation": "Nový případ"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Czech",
+      "translation": "Název případu"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Czech",
+      "translation": "Typ pouzdra"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Czech",
+      "translation": "Země"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Czech",
+      "translation": "Popis"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Czech",
+      "translation": "Přiřazeno komu"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Czech",
+      "translation": "Postavení"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Czech",
+      "translation": "Datum slyšení"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Czech",
+      "translation": "Název případu"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Czech",
+      "translation": "Typ"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Czech",
+      "translation": "Země"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Czech",
+      "translation": "Přiřazeno komu"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Czech",
+      "translation": "Postavení"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Czech",
+      "translation": "Datum slyšení"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Czech",
+      "translation": "Akce"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Czech",
+      "translation": "OTEVŘENO"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Czech",
+      "translation": "Probíhá"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Czech",
+      "translation": "ZAVŘENO"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Czech",
+      "translation": "Zrušeno"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Czech",
+      "translation": "Zobrazení mapy vozového parku"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Czech",
+      "translation": "Sledování obchodních zástupců a rozvozových vozidel v reálném čase"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Czech",
+      "translation": "Aktivní zaměstnanci"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Czech",
+      "translation": "Žádní aktivní zaměstnanci"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Czech",
+      "translation": "Načítání..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Czech",
+      "translation": "Přehrání trasy"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Czech",
+      "translation": "Zaměstnanec"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Czech",
+      "translation": "Rychlost"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Czech",
+      "translation": "Obnovit"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Czech",
+      "translation": "Hrát"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Czech",
+      "translation": "Pauza"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Czech",
+      "translation": "body"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Czech",
+      "translation": "Nejsou k dispozici žádná data o trase"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Czech",
+      "translation": "Načítání trasy..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Czech",
+      "translation": "Konkurenční produkty"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Czech",
+      "translation": "Sledování informací o produktech konkurence"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Czech",
+      "translation": "Přidat produkt"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Czech",
+      "translation": "Přidat konkurenční produkt"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Czech",
+      "translation": "Značka"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Czech",
+      "translation": "Název SKU"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Czech",
+      "translation": "Kategorie"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Czech",
+      "translation": "Velikost"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Czech",
+      "translation": "Cena"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Czech",
+      "translation": "Měna"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Czech",
+      "translation": "Země"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Czech",
+      "translation": "Značka"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Czech",
+      "translation": "Název SKU"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Czech",
+      "translation": "Kategorie"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Czech",
+      "translation": "Velikost"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Czech",
+      "translation": "Cena"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Czech",
+      "translation": "Země"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Czech",
+      "translation": "Datum přidání"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Czech",
+      "translation": "Načtení produktů se nezdařilo"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Czech",
+      "translation": "Vytvoření produktu se nezdařilo. Zkuste to prosím znovu."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Czech",
+      "translation": "Nenalezeny žádné konkurenční produkty"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Czech",
+      "translation": "Načítání produktů..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Czech",
+      "translation": "Panel konkurence"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Czech",
+      "translation": "Analytika a poznatky o konkurenčních produktech"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Czech",
+      "translation": "Celkem produktů"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Czech",
+      "translation": "Sledované značky"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Czech",
+      "translation": "Země"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Czech",
+      "translation": "Kategorie"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Czech",
+      "translation": "Produkty podle značky"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Czech",
+      "translation": "Produkty podle země"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Czech",
+      "translation": "Produkty podle kategorie"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Czech",
+      "translation": "Načítání statistik..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Czech",
+      "translation": "Žádné statistiky nejsou k dispozici"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Czech",
+      "translation": "Přehled"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Czech",
+      "translation": "Objednávky"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Czech",
+      "translation": "Inventář"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Czech",
+      "translation": "Logistika"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Czech",
+      "translation": "Finance"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Czech",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Czech",
+      "translation": "Personální oddělení"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Czech",
+      "translation": "Výkonný"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Czech",
+      "translation": "Investor"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Czech",
+      "translation": "Právní/IPR"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Czech",
+      "translation": "Závodník"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Czech",
+      "translation": "Import/Export"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Czech",
+      "translation": "GPS sledování"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Czech",
+      "translation": "Lokalizace"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Czech",
+      "translation": "Pracovní postupy"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Czech",
+      "translation": "Administrátor"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Czech",
+      "translation": "CRM operační systém"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Czech",
+      "translation": "Zákazník 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Czech",
+      "translation": "Kompletní profily zákazníků, historie interakcí a správa vztahů"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Czech",
+      "translation": "Digitální kampaně"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Czech",
+      "translation": "Vícekanálové marketingové kampaně (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Czech",
+      "translation": "Zákazníci a příležitosti"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Czech",
+      "translation": "Správa leadů, kvalifikace a proces tvorby příležitostí"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Czech",
+      "translation": "Zákaznická podpora"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Czech",
+      "translation": "Správa tiketů, zákaznický servis a řešení problémů"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Czech",
+      "translation": "Věrnostní programy"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Czech",
+      "translation": "Správa věrnostních programů, gamifikace a odměn pro maloobchodníky"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Czech",
+      "translation": "Zákazník 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Czech",
+      "translation": "Nový zákazník"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Czech",
+      "translation": "Celkový počet zákazníků"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Czech",
+      "translation": "Aktivní"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Czech",
+      "translation": "Nový"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Czech",
+      "translation": "Spokojenost"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Czech",
+      "translation": "Správa zákazníků"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Czech",
+      "translation": "Zobrazte a spravujte vztahy se zákazníky, interakce a kampaně."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Czech",
+      "translation": "Načítání..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Czech",
+      "translation": "Chyba při načítání dat CRM"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Czech",
+      "translation": "Přehled"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Czech",
+      "translation": "Objednávky"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Czech",
+      "translation": "Inventář"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Czech",
+      "translation": "Logistika"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Czech",
+      "translation": "Finance"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Czech",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Czech",
+      "translation": "Personální oddělení"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Czech",
+      "translation": "Výkonný"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Czech",
+      "translation": "Investor"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Czech",
+      "translation": "Právní/IPR"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Czech",
+      "translation": "Závodník"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Czech",
+      "translation": "Import/Export"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Czech",
+      "translation": "GPS sledování"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Czech",
+      "translation": "Lokalizace"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Czech",
+      "translation": "Pracovní postupy"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Czech",
+      "translation": "Administrátor"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Czech",
+      "translation": "Zákazníci"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Czech",
+      "translation": "Zaměstnanci"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Czech",
+      "translation": "Zisk"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Czech",
+      "translation": "Načítání kokpitu dodavatele…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Czech",
+      "translation": "Objednávky"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Czech",
+      "translation": "Vychováno Harvicsem"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Czech",
+      "translation": "Zásilky / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Czech",
+      "translation": "Přijato tento týden"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Czech",
+      "translation": "Vytvořené faktury"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Czech",
+      "translation": "Čeká se na platbu"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Czech",
+      "translation": "Platby čekající na vyřízení"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Czech",
+      "translation": "Plánované vydání"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Czech",
+      "translation": "Kvalita / stížnosti"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Czech",
+      "translation": "Otevřené vstupenky"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Czech",
+      "translation": "Předpověď (příští 4 týdny)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Czech",
+      "translation": "Zástupný symbol umělé inteligence"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Czech",
+      "translation": "Akce dodavatele"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Czech",
+      "translation": "Potvrďte nadcházející zásilky a aktualizujte harmonogram GRN."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Czech",
+      "translation": "Prohlédněte si neuhrazené faktury a sdělte jim rady ohledně plateb."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Czech",
+      "translation": "Řešte otevřené stížnosti na kvalitu pomocí důkazů o zajištění kvality."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Czech",
+      "translation": "Uživatelské jméno"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Czech",
+      "translation": "Heslo"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Czech",
+      "translation": "E-mail"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Czech",
+      "translation": "Předložit"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Czech",
+      "translation": "Zrušit"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Czech",
+      "translation": "Uložit"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Czech",
+      "translation": "Vymazat"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Czech",
+      "translation": "Vyhledávání"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Czech",
+      "translation": "Filtr"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Czech",
+      "translation": "Obnovit"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Czech",
+      "translation": "Blízko"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Czech",
+      "translation": "Zadní"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Czech",
+      "translation": "Další"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Czech",
+      "translation": "Předchozí"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Czech",
+      "translation": "Potvrdit"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Czech",
+      "translation": "Zapamatuj si mě"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Czech",
+      "translation": "Zapomněli jste heslo?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Czech",
+      "translation": "E-mail je povinný"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Czech",
+      "translation": "Zadejte prosím platnou e-mailovou adresu"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Czech",
+      "translation": "Produkty"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Czech",
+      "translation": "Jaké produkty Harvics nabízí?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Czech",
+      "translation": "Nabízíme širokou škálu prémiových potravinářských výrobků včetně cukrovinek, nápojů, svačin, těstovin, pečiva a mražených potravin v několika kategoriích."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Czech",
+      "translation": "Kde si mohu koupit produkty Harvics?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Czech",
+      "translation": "Naše produkty jsou k dispozici v maloobchodních prodejnách ve více než 40 zemích. Pro nalezení prodejce ve vašem okolí použijte náš vyhledávač prodejen nebo kontaktní stránku."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Czech",
+      "translation": "Nabízíte hromadné objednávky?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Czech",
+      "translation": "Ano, nabízíme slevy na hromadné objednávky pro firmy a maloobchodníky. Více informací naleznete na naší stránce Slevy na hromadné objednávky."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Czech",
+      "translation": "Objednávky a doprava"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Czech",
+      "translation": "Jaké máte možnosti dopravy?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Czech",
+      "translation": "Nabízíme různé možnosti dopravy, včetně standardní, expresní a mezinárodní dopravy. Doprava zdarma je k dispozici u objednávek nad 50 USD."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Czech",
+      "translation": "Jak dlouho trvá doručení?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Czech",
+      "translation": "Dodací lhůty se liší podle lokality. Standardní doručení obvykle trvá 5–7 pracovních dnů, zatímco expresní doručení trvá 2–3 pracovní dny."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Czech",
+      "translation": "Mohu sledovat svou objednávku?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Czech",
+      "translation": "Ano, svou objednávku můžete sledovat pomocí sledovacího čísla uvedeného v e-mailu s potvrzením objednávky."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Czech",
+      "translation": "Účet a platby"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Czech",
+      "translation": "Jak si vytvořím účet?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Czech",
+      "translation": "Klikněte na „Přihlásit se“ v záhlaví a vyberte „Vytvořit účet“ pro registraci nového účtu."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Czech",
+      "translation": "Jaké platební metody akceptujete?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Czech",
+      "translation": "Pro B2B objednávky akceptujeme všechny hlavní kreditní karty, debetní karty, PayPal a bankovní převody."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Czech",
+      "translation": "Jsou mé platební údaje v bezpečí?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Czech",
+      "translation": "Ano, k ochraně vašich platebních údajů používáme standardní šifrování."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Czech",
+      "translation": "Vrácení zboží a refundace"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Czech",
+      "translation": "Jaké jsou vaše podmínky pro vrácení zboží?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Czech",
+      "translation": "Nabízíme 30denní lhůtu pro vrácení neotevřených produktů v originálním balení. Pro autorizaci vrácení prosím kontaktujte náš zákaznický servis."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Czech",
+      "translation": "Jak mohu požádat o vrácení peněz?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Czech",
+      "translation": "Kontaktujte náš zákaznický servis s číslem objednávky a důvodem vrácení. Vaši refundaci zpracujeme do 5–7 pracovních dnů."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Czech",
+      "translation": "Stále máte otázky?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Czech",
+      "translation": "Náš tým zákaznických služeb je tu, aby vám pomohl"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Czech",
+      "translation": "Kontaktujte nás"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Czech",
+      "translation": "Kariéra"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Czech",
+      "translation": "Kariéra | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Czech",
+      "translation": "Přidejte se k Harvics Global Ventures – prozkoumejte příležitosti ve více než 40 zemích."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Czech",
+      "translation": "Přidejte se k nám"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Czech",
+      "translation": "Budujte budoucnost globálního obchodu"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Czech",
+      "translation": "Rosteme ve více než 40 zemích. Přidejte se k týmu, který vytváří operační systém s umělou inteligencí pro globální obchod."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Czech",
+      "translation": "Volné pozice"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Czech",
+      "translation": "Země"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Czech",
+      "translation": "Vertikály odvětví"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Czech",
+      "translation": "Nábor zaměstnanců v odděleních"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Czech",
+      "translation": "Volné pozice podle oddělení"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Czech",
+      "translation": "Prodej a distribuce"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Czech",
+      "translation": "Zvyšování tržeb na více než 40 trzích. Řízení teritoria, klíčoví zákazníci, vztahy s distributory."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Czech",
+      "translation": "Dodavatelský řetězec a logistika"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Czech",
+      "translation": "Komplexní dodavatelský řetězec od továrny až po sklad. Správa vozového parku, skladování, doručení na poslední míli."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Czech",
+      "translation": "Technologie a umělá inteligence"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Czech",
+      "translation": "Vytvořte Harvics OS — naši podnikovou platformu s umělou inteligencí. Full-stack, strojové učení, datová věda."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Czech",
+      "translation": "Finance a pokladna"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Czech",
+      "translation": "Multiměnové treasury, obchodní financování, digitální platby HPay, správa deviz napříč regiony."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Czech",
+      "translation": "Nákup a sourcing"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Czech",
+      "translation": "Globální zdroje z více než 15 zemí původu. Audity dodavatelů, kontrola kvality, programy přímého prodeje z továrny."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Czech",
+      "translation": "Lidské zdroje"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Czech",
+      "translation": "Nábor talentů, vzdělávání a rozvoj, řízení výkonnosti v různých geografických oblastech a kulturách."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Czech",
+      "translation": "Právní a dodržování předpisů"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Czech",
+      "translation": "Dodržování obchodních předpisů, screening sankcí, ochrana duševního vlastnictví, správa smluv napříč jurisdikcemi."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Czech",
+      "translation": "Marketing a značka"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Czech",
+      "translation": "Vícejazyčné kampaně, obsah v 38 lokalitách, digitální marketing, strategie značky pro 10 vertikál."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Czech",
+      "translation": "role"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Czech",
+      "translation": "Proč Harvics"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Czech",
+      "translation": "Globální mobilita"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Czech",
+      "translation": "Práce v Dubaji, Londýně, Karáčí, Láhauru a na více než 40 trzích"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Czech",
+      "translation": "Růstová dráha"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Czech",
+      "translation": "Rychlý kariérní postup v rostoucí firmě"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Czech",
+      "translation": "Kultura zaměřená na umělou inteligenci"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Czech",
+      "translation": "Pracujte s nejmodernějšími systémy umělé inteligence a inteligence v reálném čase"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Czech",
+      "translation": "Konkurenční balíček"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Czech",
+      "translation": "Nejlepší odměňování, bydlení a benefity na trhu"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Czech",
+      "translation": "Rozpočet na vzdělávání"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Czech",
+      "translation": "Roční rozpočet na rozvoj kurzů, konferencí a certifikací"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Czech",
+      "translation": "Flexibilní práce"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Czech",
+      "translation": "Hybridní ujednání s regionálními ústřednami po celém světě"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Czech",
+      "translation": "Naše strategie"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Czech",
+      "translation": "Strategie | Harwich"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Czech",
+      "translation": "Budování udržitelné budoucnosti prostřednictvím inovací a excelence"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Czech",
+      "translation": "Budování udržitelné budoucnosti prostřednictvím inovací a excelence"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Czech",
+      "translation": "Globální expanze"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Czech",
+      "translation": "Rozšiřování naší přítomnosti na rozvíjejících se trzích a zároveň posilování naší pozice na zavedených trzích"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Czech",
+      "translation": "Inovace produktů"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Czech",
+      "translation": "Investice do výzkumu a vývoje s cílem vyvíjet nové produkty, které splňují vyvíjející se preference spotřebitelů"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Czech",
+      "translation": "Udržitelnost"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Czech",
+      "translation": "Zavázáni k udržitelným postupům v celém našem dodavatelském řetězci a provozu"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Czech",
+      "translation": "Digitální transformace"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Czech",
+      "translation": "Využití technologií pro zlepšení zákaznické zkušenosti a provozní efektivity"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Czech",
+      "translation": "Naše vize"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Czech",
+      "translation": "Být přední světovou společností v oblasti prémiového spotřebního zboží, uznávanou pro kvalitu, inovace a udržitelnost."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Czech",
+      "translation": "Harvics Global Ventures | Prémiové globální obchodování"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Czech",
+      "translation": "Přední světová obchodní společnost dodávající prémiové produkty do více než 10 odvětví. Působí ve více než 50 zemích od roku 2019."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Czech",
+      "translation": "O nás | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Czech",
+      "translation": "Zjistěte, jak se společnost Harvics Global Ventures stala přední silou v globálním obchodu ve více než 40 zemích a 10 odvětvích."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Czech",
+      "translation": "Kontaktujte nás | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Czech",
+      "translation": "Spojte se s pobočkami společnosti Harvics po celém světě na Blízkém východě, v jižní Asii, Evropě, Africe a Americe."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Czech",
+      "translation": "Produkty | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Czech",
+      "translation": "Prozkoumejte prémiovou řadu produktů Harvics v oblasti rychloobrátkového spotřebního zboží, textilu, komodit a průmyslových řešení."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Czech",
+      "translation": "Kariéra | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Czech",
+      "translation": "Přidejte se k Harvics Global Ventures a prozkoumejte příležitosti ve více než 40 zemích v oblasti rychloobrátkového spotřebního zboží, textilu, logistiky a technologií."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Czech",
+      "translation": "Mediální centrum | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Czech",
+      "translation": "Mediální centrum Harvics – tiskové zprávy, nejnovější zprávy, značkové materiály a kontakty na média."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Czech",
+      "translation": "Naše strategie | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Czech",
+      "translation": "Strategická vize společnosti Harvics pro globální expanzi, inovace, udržitelnost a digitální transformaci."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Czech",
+      "translation": "Společenská odpovědnost firem | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Czech",
+      "translation": "Iniciativy společnosti Harvics v oblasti společenské odpovědnosti firem – environmentální péče, komunitní programy a etické obchodní praktiky."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Czech",
+      "translation": "Často kladené otázky | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Czech",
+      "translation": "Často kladené otázky o produktech, službách, objednávání a globálním působení společnosti Harvics."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Czech",
+      "translation": "Globální pobočky | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Czech",
+      "translation": "Kanceláře a provozovny společnosti Harvics na Blízkém východě, v jižní Asii, Evropě, Africe a Americe."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Czech",
+      "translation": "Vedení | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Czech",
+      "translation": "Seznamte se s vedením společnosti Harvics Global Ventures na více než 40 trzích a v 10 vertikálních odvětvích."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Czech",
+      "translation": "Centrum nápovědy | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Czech",
+      "translation": "Získejte pomoc s objednávkami, účty, dopravou a službami Harvics."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Czech",
+      "translation": "Dodržování předpisů a etika | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Czech",
+      "translation": "Závazek společnosti Harvics k dodržování předpisů, etickým obchodním praktikám a globálním standardům."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Czech",
+      "translation": "Naše historie | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Czech",
+      "translation": "Od dubajského startupu v roce 2019 až po globální podnik s rozsáhlým působením ve více než 40 zemích – příběh Harvics."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Czech",
+      "translation": "Zpravodaj | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Czech",
+      "translation": "Přihlaste se k odběru newsletteru Harvics a získejte informace o oboru a novinkách v oblasti produktů."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Czech",
+      "translation": "Přihlásit se | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Czech",
+      "translation": "Pro správu objednávek a přístup k platformě se přihlaste ke svému účtu Harvics."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Czech",
+      "translation": "Výzkum a inovace | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Czech",
+      "translation": "Výzkumné iniciativy a inovační programy společnosti Harvics jsou hnací silou naší globální strategie."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Czech",
+      "translation": "Vztahy s investory | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Czech",
+      "translation": "Informace pro investory, finanční zprávy a firemní oznámení od společnosti Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Czech",
+      "translation": "Stránka nenalezena"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Czech",
+      "translation": "404 — Stránka nenalezena"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Czech",
+      "translation": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Czech",
+      "translation": "Přejít na domovskou stránku"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Czech",
+      "translation": "Zpět"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Czech",
+      "translation": "Něco se pokazilo"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Czech",
+      "translation": "Něco se pokazilo"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Czech",
+      "translation": "Je nám líto, ale stalo se něco neočekávaného. Zkuste prosím obnovit stránku."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Czech",
+      "translation": "Zkuste to znovu"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Czech",
+      "translation": "Znovu načíst stránku"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Czech",
+      "translation": "Kontaktovat podporu"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Czech",
+      "translation": "Chyba aplikace"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Czech",
+      "translation": "Kritická chyba"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Czech",
+      "translation": "Došlo k kritické chybě. Znovu načtěte stránku."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Czech",
+      "translation": "Znovu načíst aplikaci"
+    }
+  }
+}

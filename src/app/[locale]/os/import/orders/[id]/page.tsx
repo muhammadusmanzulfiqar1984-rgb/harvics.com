@@ -37,7 +37,7 @@ export default function ImportOrderDetailPage() {
   const locale = useLocale()
   const t = useTranslations('import')
   const { countryData } = useCountry()
-  const orderId = params.id as string
+  const orderId = params?.id as string
   const [order, setOrder] = useState<ImportOrder | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)

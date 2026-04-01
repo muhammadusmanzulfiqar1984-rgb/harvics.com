@@ -67,7 +67,7 @@ export default function DistributorCheckout() {
   const total = subtotal + shipping + tax
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen bg-gray-100">
       <div className="pt-20">
         {/* Hero Section */}
         <section className="h-[300px] relative bg-[#6B1F2B] overflow-hidden">

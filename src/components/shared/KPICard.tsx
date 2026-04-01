@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 interface KPICardProps {
   label: string
@@ -23,62 +23,63 @@ export default function KPICard({
   onClick,
   className = ''
 }: KPICardProps) {
-  const formattedValue = typeof value === 'number' 
-    ? value.toLocaleString() 
-    : value
-
-  const changeColor = change?.trend === 'up' 
-    ? 'text-green-700' 
-    : change?.trend === 'down'
-    ? 'text-red-700'
-    : 'text-[#6B1F2B]'
-
-  const changeIcon = change?.trend === 'up'
-    ? '↑'
-    : change?.trend === 'down'
-    ? '↓'
-    : ''
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => { setMounted(true) }, [])
+  // Only format with locale on client to avoid SSR hydration mismatch
+  const formattedValue = typeof value === 'number' ? (mounted ? value.toLocaleString() : String(value)) : value
+  const trendUp = change?.trend === 'up'
+  const trendDown = change?.trend === 'down'
 
   return (
     <div
       onClick={onClick}
-      className={`bg-white border border-[#C3A35E]/30 rounded-lg p-4 sm:p-6 flex flex-col justify-between min-h-[140px] transition-all overflow-hidden ${
-        onClick ? 'cursor-pointer hover:shadow-xl hover:border-[#C3A35E] hover:bg-[#C3A35E]/5' : 'hover:shadow-md'
+      className={`relative flex flex-col gap-4 rounded-2xl p-5 overflow-hidden transition-all duration-200 ${
+        onClick ? 'cursor-pointer' : ''
       } ${className}`}
       style={{
-        boxShadow: '0 4px 6px -1px rgba(212, 175, 55, 0.1), 0 2px 4px -1px rgba(212, 175, 55, 0.06)'
+        background: 'rgba(255,255,255,0.72)',
+        border: '1.5px solid rgba(195,163,94,0.4)',
+        boxShadow: '0 4px 24px rgba(107,31,43,0.10), inset 0 1px 0 rgba(255,255,255,0.95), inset 0 -1px 0 rgba(195,163,94,0.12)',
+      }}
+      onMouseEnter={e => {
+        if (onClick) {
+          (e.currentTarget as HTMLElement).style.boxShadow = '0 16px 48px rgba(107,31,43,0.22), inset 0 1px 0 rgba(255,255,255,0.98), inset 0 -1px 0 rgba(195,163,94,0.2)'
+          ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(195,163,94,0.75)'
+          ;(e.currentTarget as HTMLElement).style.transform = 'translateY(-1px)'
+        }
+      }}
+      onMouseLeave={e => {
+        if (onClick) {
+          (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 24px rgba(107,31,43,0.10), inset 0 1px 0 rgba(255,255,255,0.95), inset 0 -1px 0 rgba(195,163,94,0.12)'
+          ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(195,163,94,0.4)'
+          ;(e.currentTarget as HTMLElement).style.transform = 'translateY(0)'
+        }
       }}
     >
-      <div className="flex items-start justify-between mb-3 gap-2 min-h-[28px]">
-        {icon && <div className="text-2xl leading-none flex-shrink-0 drop-shadow-sm">{icon}</div>}
-        {change && (
-          <div className={`text-xs font-bold ${changeColor} flex items-center gap-1 flex-shrink-0 flex-wrap justify-end bg-[#F8F9FA] px-2 py-1 rounded-full border border-[#C3A35E]/20`}>
-            <span className="leading-none">{changeIcon}</span>
-            <span className="whitespace-nowrap">{Math.abs(change.value)}%</span>
-            {change.label && <span className="text-[#6B1F2B]/60 text-[10px] whitespace-nowrap hidden sm:inline">vs {change.label}</span>}
+      {/* Glossy top sheen */}
+      <div className="absolute inset-x-0 top-0 h-px" style={{ background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.9), transparent)' }} />
+      <div className="flex items-center justify-between">
+        {icon && (
+          <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{
+            background: 'linear-gradient(135deg, rgba(107,31,43,0.12), rgba(107,31,43,0.06))',
+            border: '1px solid rgba(195,163,94,0.3)',
+            color: '#6B1F2B'
+          }}>
+            {icon}
           </div>
         )}
-        {!icon && !change && <div></div>}
+        {change && (
+          <span className={`text-xs font-semibold tabular-nums ${
+            trendUp ? 'text-emerald-600' : trendDown ? 'text-red-500' : 'text-amber-600'
+          }`}>
+            {trendUp ? '↑' : trendDown ? '↓' : ''}{Math.abs(change.value)}%
+          </span>
+        )}
+        {!icon && !change && <div />}
       </div>
-      
-      <div className="flex-1 flex flex-col justify-end gap-2">
-        <div 
-          className="text-[10px] sm:text-xs font-bold text-[#6B1F2B] uppercase tracking-wider break-words overflow-hidden"
-          style={{
-            display: '-webkit-box',
-            WebkitLineClamp: 2,
-            WebkitBoxOrient: 'vertical',
-            maxHeight: '2.5rem',
-            lineHeight: '1.25rem',
-            wordBreak: 'break-word'
-          }}
-        >
-          {label}
-        </div>
-        
-        <div className="text-xl sm:text-2xl font-bold text-[#6B1F2B] leading-tight break-words overflow-hidden font-serif">
-          {formattedValue}
-        </div>
+      <div>
+        <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-2" style={{ color: 'rgba(107,31,43,0.5)' }}>{label}</p>
+        <p className="text-2xl font-bold tracking-tight leading-none" style={{ color: '#2C1810' }}>{formattedValue}</p>
       </div>
     </div>
   )

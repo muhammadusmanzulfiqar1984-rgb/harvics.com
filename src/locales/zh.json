@@ -1,624 +1,1146 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
-    "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More"
+    "welcome": "欢迎来到",
+    "companyName": "哈里奇",
+    "tagline": "自2019年以来，我们始终致力于打造卓越的高端消费品。",
+    "exploreProducts": "探索产品",
+    "contact": "联系我们",
+    "learnMore": "了解更多",
+    "brandStatement": "一家领先的全球消费品公司，提供符合国际质量标准的各类优质食品。",
+    "taglineStart": "自成立以来，我们始终致力于打造卓越的高端消费品。",
+    "taglineYear": "2019",
+    "locations": "伦敦 • 米兰 • 纽约",
+    "categories": {
+      "bakery": "面包店",
+      "beverages": "饮料",
+      "confectionery": "糖果",
+      "culinary": "烹饪",
+      "frozenFoods": "冷冻食品",
+      "pasta": "面食",
+      "snacks": "零食"
+    }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
-    "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
-    "media": "Media",
-    "contactUs": "Contact Us",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store"
+    "esgReport": "2025年ESG报告",
+    "locations": "伦敦 • 米兰 • 纽约",
+    "home": "家",
+    "about": "关于",
+    "aboutUs": "关于我们",
+    "brandStory": "品牌故事",
+    "products": "产品",
+    "ourProducts": "我们的产品",
+    "viewAllProducts": "查看所有产品",
+    "csr": "企业社会责任",
+    "investorRelations": "投资者关系",
+    "investors": "投资者",
+    "media": "媒体",
+    "contactUs": "联系我们",
+    "countries": "国家",
+    "portals": "门户",
+    "signIn": "登入",
+    "wishlist": "愿望清单",
+    "cart": "购物车",
+    "help": "帮助",
+    "findStore": "查找门店",
+    "harvicsHouse": "哈维克之家",
+    "money": "钱",
+    "sales": "销售量",
+    "offers": "优惠",
+    "darkMode": "深色模式",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "信用卡",
+        "msRewards": "M&S奖励信用卡",
+        "clubRewards": "俱乐部奖励",
+        "ourCards": "我们的信用卡"
+      },
+      "insurance": {
+        "title": "保险",
+        "home": "房屋保险",
+        "travel": "旅行保险"
+      },
+      "travel": {
+        "title": "旅行服务",
+        "money": "旅行资金",
+        "exchange": "汇率"
+      },
+      "additional": {
+        "title": "附加服务",
+        "savings": "储蓄与投资",
+        "personalLoans": "个人贷款",
+        "financialSupport": "财政支持"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "当前销售",
+      "clearance": "清除",
+      "seasonal": "季节性促销"
+    },
+    "offersDropdown": {
+      "specialOffers": "特价优惠",
+      "promotions": "促销",
+      "bulkOrders": "批量订购折扣"
+    }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products"
+    "ourProducts": "我们的产品",
+    "viewAllProducts": "查看所有产品",
+    "productCategories": "我们的产品类别",
+    "discoverPremium": "探索我们精心打造的优质产品系列。",
+    "tier1": "一级：类别",
+    "tier2": "第二层级：模块",
+    "tier3": "第三层级：KPI筛选",
+    "tier4": "第四层级：行动",
+    "reset": "重置导航",
+    "noSubcategories": "此类别暂无子类别。",
+    "pageTitle": "产品",
+    "subcategories": "子类别",
+    "bakery": "面包店",
+    "bakeryDesc": "新鲜出炉的烘焙食品和糕点。",
+    "beverages": "饮料",
+    "beveragesDesc": "适合各种场合的清爽饮品。",
+    "confectionery": "糖果",
+    "confectioneryDesc": "甜点和美味佳肴。",
+    "culinary": "烹饪",
+    "culinaryDesc": "厨房必备食材。",
+    "frozenFoods": "冷冻食品",
+    "frozenFoodsDesc": "方便又美味的冷冻食品。",
+    "pasta": "面食",
+    "pastaDesc": "正宗的意大利面品种。",
+    "snacks": "零食",
+    "snacksDesc": "美味小吃，随时享用。"
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
-    "email": "Email",
+    "title": "联系我们",
+    "subtitle": "我们非常乐意收到您的来信。您可以通过以下任何渠道联系我们。",
+    "phone": "电话",
+    "email": "电子邮件",
     "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "callNow": "立即致电",
+    "sendEmail": "发送电子邮件",
+    "messageUs": "联系我们"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "媒体中心",
+    "pageTitle": "媒体中心 | 哈维克斯",
+    "description": "来自 Harvics Global Ventures 的新闻资源、品牌资产和最新消息。",
+    "corporate": "公司的",
+    "sections": {
+      "news": {
+        "title": "新闻稿",
+        "desc": "来自 Harvics Global Ventures 的最新公告、市场扩张、产品发布和公司动态。",
+        "cta": "阅读最新消息"
+      },
+      "gallery": {
+        "title": "图片库",
+        "desc": "高分辨率品牌素材、产品摄影、设施图片和活动报道，供媒体使用。",
+        "cta": "浏览图库"
+      },
+      "contacts": {
+        "title": "媒体联系人",
+        "desc": "如有媒体问询、采访请求或合作公告，请联系我们的宣传团队。",
+        "cta": "联系新闻团队"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "涵盖市场",
+      "industryVerticals": "行业垂直领域",
+      "foundedIn": "成立于迪拜",
+      "languagesSupported": "支持的语言"
+    },
+    "recentHeadlines": "近期头条新闻",
+    "headlines": {
+      "expansion": "Harvics将快速消费品业务拓展至东南亚5个新市场",
+      "aiPlatform": "面向全球分销的新型人工智能供应链平台上线",
+      "carbonNeutral": "哈维克公司所有设施均实现碳中和里程碑",
+      "partnership": "与南亚领先纺织品制造商建立战略合作伙伴关系"
+    }
   },
   "footer": {
-    "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
-    "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
-    "contactUsButton": "Contact Us",
-    "usefulLinks": "Useful Links",
-    "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
-    "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
-    "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
-    "privacy": "Privacy",
-    "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
+    "companyName": "哈维克全球风险投资公司",
+    "tagline": "自2019年以来，我们始终致力于打造卓越的高端消费品。",
+    "brandStatement": "一家领先的全球消费品公司，提供符合国际质量标准的各类优质食品。",
+    "locations": "伦敦 • 米兰 • 纽约",
+    "since": "自2019年以来",
+    "harvicsNews": "哈维克新闻",
+    "subscribeToAlerts": "订阅以接收提醒和更新",
+    "signUp": "报名",
+    "complianceConcerns": "合规性问题",
+    "speakUp": "如果您对合规或道德方面有任何疑虑，请及时提出。",
+    "speakUpButton": "畅所欲言",
+    "contactUs": "联系我们",
+    "contactDescription": "联系我们的团队",
+    "contactUsButton": "联系我们",
+    "usefulLinks": "实用链接",
+    "askHarvics": "问问哈里奇",
+    "searchForJobs": "搜索职位",
+    "signUpForNews": "订阅新闻",
+    "company": "公司",
+    "globalAddresses": "全球地址",
+    "strategy": "战略",
+    "ourLeadership": "我们的领导层",
+    "brandsAZ": "品牌 A-Z",
+    "ourHistory": "我们的历史",
+    "sustainability": "可持续性",
+    "news": "消息",
+    "mediaContacts": "媒体联系人",
+    "images": "图片",
+    "investors": "投资者",
+    "corporateGovernance": "公司治理",
+    "sharesAdrsBonds": "股票、美国存托凭证和债券",
+    "publications": "出版物",
+    "followUsOn": "关注我们",
+    "issuesCount": "0 个问题",
+    "siteMap": "网站地图",
+    "unsubscribe": "取消订阅",
+    "help": "帮助",
+    "privacy": "隐私",
+    "cookies": "曲奇饼",
+    "termsOfUse": "使用条款",
+    "accessibility": "无障碍",
+    "carbonEfficiency": "碳效率",
+    "suppliers": "供应商",
+    "socialMedia": "社交媒体",
+    "cookieSettings": "Cookie 设置",
     "feature1Title": "Global Reach",
     "feature1Desc": "Serving customers across 40+ countries worldwide",
-    "feature2Title": "Premium Quality",
+    "feature2Title": "优质",
     "feature2Desc": "International quality standards in every product",
     "feature3Title": "Innovation",
     "feature3Desc": "Leading innovation in consumer goods industry",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
-    "media": "Media"
+    "emailAddress": "电子邮件",
+    "enterEmailPlaceholder": "请输入您的电子邮件地址",
+    "subscribe": "订阅",
+    "subscribing": "订阅中……",
+    "aboutUs": "关于我们",
+    "media": "媒体"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "搜索产品、品牌或类别",
+    "noResults": "未找到结果",
+    "searching": "正在搜索……",
+    "results": "结果"
   },
   "chatbot": {
-    "title": "Chat with Us",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "title": "与我们聊天",
+    "placeholder": "输入您的留言……",
+    "send": "发送",
+    "close": "关闭",
+    "welcome": "您好！今天有什么可以帮到您的吗？",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "抱歉，我没听懂。您能换个说法吗？",
+      "help": "我可以帮您查询产品信息、下单或解答一般性问题。您想了解什么？",
+      "contact": "如需更多帮助，请联系 support@harvics.com 或致电 +1-800-HARVICS。"
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
-    "filter": "Filter",
-    "clear": "Clear",
-    "download": "Download",
-    "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
-    "status": "Status",
-    "date": "Date",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
-    "selectCountry": "Select Country",
-    "required": "Required",
-    "menu": "Menu",
-    "viewProducts": "View Products"
+    "chatWithUs": "与我们聊天",
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "save": "节省",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "view": "看法",
+    "submit": "提交",
+    "search": "搜索",
+    "filter": "筛选",
+    "clear": "清除",
+    "download": "下载",
+    "upload": "上传",
+    "yes": "是的",
+    "no": "不",
+    "close": "关闭",
+    "back": "后退",
+    "next": "下一个",
+    "previous": "以前的",
+    "actions": "行动",
+    "status": "地位",
+    "date": "日期",
+    "name": "姓名",
+    "email": "电子邮件",
+    "phone": "电话",
+    "address": "地址",
+    "country": "国家",
+    "city": "城市",
+    "all": "全部",
+    "none": "没有任何",
+    "select": "选择",
+    "selectCountry": "选择国家/地区",
+    "required": "必需的",
+    "menu": "菜单",
+    "viewProducts": "查看产品",
+    "selectLanguage": "选择语言",
+    "showMore": "显示更多",
+    "showLess": "显示更少"
   },
   "music": {
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "奏乐",
+    "pause": "暂停音乐",
+    "mute": "静音音乐",
+    "unmute": "取消音乐静音"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "我们的全球影响力",
+    "since": "自从",
+    "majorMarket": "主要市场",
+    "majorMarkets": "主要市场",
+    "presence": "在场",
+    "countriesServed": "服务国家",
+    "majorMarketsCount": "主要市场",
+    "productCategoriesCount": "产品类别",
+    "establishedYear": "已确立的"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "领土等级制度",
+    "fullPath": "完整路径",
+    "currentTerritory": "当前领土",
+    "noChildren": "无商品",
     "tiers": {
-      "globe": "Globe",
-      "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
-      "district": "District",
-      "location": "Location"
+      "globe": "地球",
+      "continent": "大陆",
+      "region": "地区",
+      "country": "国家",
+      "city": "城市",
+      "district": "区",
+      "location": "地点"
     }
   },
   "globalWorld": {
-    "title": "Harvics Global",
-    "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "title": "哈维克全球",
+    "titleShort": "全球的",
+    "selectRegion": "选择区域",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
-      "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
+      "title": "客户详情",
+      "selected": "已选",
+      "fullName": "姓名",
+      "namePlaceholder": "请输入您的全名",
+      "nameRequired": "姓名（必填）",
+      "email": "电子邮件",
+      "emailPlaceholder": "你的邮箱地址@example.com",
+      "emailRequired": "必须提供电子邮件地址",
+      "emailInvalid": "请输入有效的电子邮件地址",
+      "phone": "电话号码",
       "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "phoneRequired": "必须提供电话号码",
+      "address": "地址",
+      "addressPlaceholder": "您的地址",
+      "addressRequired": "必须填写地址",
+      "marketingConsent": "我同意接收营销信息和更新",
+      "submit": "提交并继续",
+      "submitting": "正在提交……",
+      "skip": "跳过并继续"
     }
   },
   "distributorPortal": {
     "dashboard": {
       "kpi": {
-        "title": "Key Performance Indicators",
-        "ordersToday": "Orders today",
-        "ordersTodaySubtitle": "Submitted via Harvics CRM",
-        "pendingDeliveries": "Pending deliveries",
-        "pendingDeliveriesSubtitle": "Across assigned routes",
-        "retailers": "Retailers",
-        "retailersSubtitle": "Active outlets in scope",
-        "attendance": "T & A Score",
-        "attendanceSubtitle": "Territory coverage"
+        "title": "关键绩效指标",
+        "ordersToday": "今日订单",
+        "ordersTodaySubtitle": "通过 Harvics CRM 提交",
+        "pendingDeliveries": "待交付",
+        "pendingDeliveriesSubtitle": "在指定路线上",
+        "retailers": "零售商",
+        "retailersSubtitle": "活跃的销售点",
+        "attendance": "T&A 评分",
+        "attendanceSubtitle": "区域覆盖范围"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "财务与库存",
+        "lowStock": "库存量低的SKU",
+        "lowStockSubtitle": "触发补充",
+        "outstandingInvoices": "未结发票",
+        "outstandingInvoicesSubtitle": "到期收款",
+        "creditLimit": "信用额度",
+        "creditLimitSubtitle": "由财务部门指派"
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "已启用自动审批、库存补货和发票提醒功能",
+        "autoApproval": "自我认可",
+        "stockReplenishment": "库存补充",
+        "invoiceReminders": "发票提醒"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "人工智能推荐",
+        "riskLevel": "风险等级",
+        "riskDescription": "基于信用额度使用情况和支付历史",
+        "suggestedOrder": "建议顺序",
+        "suggestedOrderSubtitle": "AI推荐的订购SKU",
+        "nextAction": "下一步行动"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "行动与指导",
+        "complaints": "投诉",
+        "complaintsSubtitle": "零售商问题待处理",
+        "playbook": "剧本",
+        "playbookItem1": "优先处理中午前待交付的货物。",
+        "playbookItem2": "48小时内结清所有未决投诉。",
+        "playbookItem3": "触发低库存 SKU 的补货（自动创建采购订单）。"
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "领土",
+      "ordersThisMonth": "本月订单",
+      "pendingOrders": "待处理订单",
+      "deliveredOrders": "已送达订单",
+      "territoryInformation": "领土信息",
+      "country": "国家",
+      "city": "城市",
+      "region": "地区",
+      "quickActions": "快速操作",
+      "newOrder": "新秩序",
+      "viewOrders": "查看订单",
+      "viewInvoices": "查看发票",
+      "profileSettings": "个人资料设置",
+      "loading": "正在加载仪表盘...",
+      "error": "错误"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
-      "date": "Date",
-      "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "title": "我的订单",
+      "orderId": "订单号",
+      "date": "日期",
+      "status": "地位",
+      "items": "项目",
+      "totalAmount": "总金额",
+      "actions": "行动",
+      "viewDetails": "查看详情",
       "filters": {
-        "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "地位",
+        "startDate": "开始日期",
+        "endDate": "结束日期",
+        "allStatuses": "所有状态",
+        "clearFilters": "清除筛选条件"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "待办的",
+        "processing": "加工",
+        "delivered": "发表",
+        "cancelled": "取消"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
-      "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "noOrders": "未找到订单",
+      "loading": "正在加载订单……",
+      "page": "页",
+      "of": "的",
+      "previous": "以前的",
+      "next": "下一个"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
-      "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "orderItems": "Order Items",
-      "product": "Product",
+      "title": "订单详情",
+      "backToOrders": "返回订单页面",
+      "orderId": "订单号",
+      "status": "地位",
+      "orderDate": "订单日期",
+      "deliveryDate": "交货日期",
+      "deliveryAddress": "收货地址",
+      "notes": "笔记",
+      "orderItems": "订单项目",
+      "product": "产品",
       "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "quantity": "数量",
+      "unitPrice": "单价",
+      "total": "全部的",
+      "totalAmount": "总金额",
+      "statusTimeline": "状态时间表",
+      "orderNotFound": "未找到订单"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
-      "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "title": "创建新订单",
+      "orderItems": "订单项目",
+      "addItem": "添加项目",
+      "noItems": "尚未添加任何商品。点击“添加商品”开始。",
+      "orderDetails": "订单详情",
+      "deliveryDate": "交货日期",
+      "deliveryAddress": "收货地址",
+      "notes": "笔记",
+      "totalAmount": "总金额",
+      "createOrder": "创建订单",
+      "creatingOrder": "创建订单……",
+      "cancel": "取消",
+      "selectProduct": "选择产品",
+      "product": "产品",
+      "quantity": "数量",
+      "unitPrice": "单价",
+      "remove": "消除",
+      "subtotal": "小计",
+      "orderId": "订单号",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "至少需要订购一件商品",
+        "productRequired": "需要该产品",
+        "quantityRequired": "数量必须大于 0",
+        "priceRequired": "单价必须为非负数。",
+        "invalidDate": "无效的交货日期格式",
+        "datePast": "交货日期不能是过去的日期。"
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "我的发票",
+      "invoiceNumber": "发票号码",
+      "invoiceDate": "发票日期",
+      "dueDate": "两个日期",
+      "amount": "数量",
+      "paidAmount": "已付金额",
+      "paymentStatus": "付款状态",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "付款状态",
+        "allStatuses": "所有状态",
+        "clearFilters": "清除筛选条件"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "有薪酬的",
+        "unpaid": "未付",
+        "partial": "部分的"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "未找到发票",
+      "loading": "正在加载发票……"
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "title": "我的个人资料",
+      "accountInformation": "账户信息",
+      "distributorId": "分销商 ID",
+      "territory": "领土",
+      "country": "国家",
+      "city": "城市",
+      "accountCreated": "账户已创建",
+      "updateProfile": "更新个人资料",
+      "name": "姓名",
+      "email": "电子邮件",
+      "phone": "电话",
+      "address": "地址",
+      "language": "语言",
+      "currency": "货币",
+      "saveChanges": "保存更改",
+      "saving": "保存...",
+      "profileUpdated": "个人资料已成功更新",
+      "loading": "正在加载配置文件...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "电子邮件格式无效",
+        "invalidPhone": "无效的电话号码格式"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
-      "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "error": "错误",
+      "loading": "加载中...",
+      "save": "节省",
+      "cancel": "取消",
+      "back": "后退",
+      "submit": "提交",
+      "delete": "删除",
+      "edit": "编辑",
+      "view": "看法",
+      "search": "搜索",
+      "filter": "筛选",
+      "clear": "清除",
+      "apply": "申请",
+      "close": "关闭",
+      "confirm": "确认",
+      "yes": "是的",
+      "no": "不"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
-    "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "title": "法律操作系统",
+    "sidebarTitle": "法律操作系统",
+    "accessDenied": "拒绝访问",
+    "accessDeniedMessage": "您没有权限访问 Legal OS 模块。",
+    "dashboard": "仪表板",
+    "contracts": "合同",
+    "certificates": "证书",
+    "compliance": "遵守",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "法律信息中心",
+      "description": "法律运营和合规状况概述",
+      "activeTrademarks": "有效商标",
+      "activeContracts": "有效合同",
+      "complianceStatus": "合规状态"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "商标",
+      "description": "管理商标注册和申请",
+      "addNew": "添加新商标",
       "filters": {
-        "country": "Country",
-        "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "country": "国家",
+        "status": "地位",
+        "allCountries": "所有国家",
+        "allStatuses": "所有状态",
+        "clearFilters": "清除筛选条件"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "brandName": "品牌名称",
+        "class": "班级",
+        "country": "国家",
+        "applicationNo": "申请编号",
+        "status": "地位",
+        "expiryDate": "到期日",
+        "actions": "行动"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "编辑商标",
+        "add": "添加新商标",
+        "view": "查看商标"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "brandName": "品牌名称",
+        "classNumber": "班级编号",
+        "country": "国家",
+        "applicationNo": "申请编号",
+        "status": "地位",
+        "expiryDate": "到期日",
+        "documents": "文件",
+        "noDocuments": "未附带任何文件",
+        "addDocument": "添加文档",
+        "remove": "消除"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "商标加载失败",
+        "saveFailed": "商标保存失败，请重试。"
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "法律案件",
+      "description": "管理法律案件并跟踪其状态",
+      "addNew": "新案例",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
-        "description": "Description",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date"
+        "caseTitle": "案件标题",
+        "caseType": "案例类型",
+        "country": "国家",
+        "description": "描述",
+        "assignedTo": "分配给",
+        "status": "地位",
+        "hearingDate": "听证日期"
       },
       "table": {
-        "caseTitle": "Case Title",
-        "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "caseTitle": "案件标题",
+        "type": "类型",
+        "country": "国家",
+        "assignedTo": "分配给",
+        "status": "地位",
+        "hearingDate": "听证日期",
+        "actions": "行动"
       },
       "status": {
-        "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "open": "打开",
+        "inProgress": "进行中",
+        "closed": "关闭",
+        "cancelled": "取消"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "舰队地图视图",
+      "description": "实时追踪销售人员和送货车辆",
+      "activeEmployees": "在职员工",
+      "noEmployees": "目前没有在职员工",
+      "loading": "加载中..."
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
-      "reset": "Reset",
-      "play": "Play",
-      "pause": "Pause",
-      "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "title": "路线重放",
+      "employee": "员工",
+      "speed": "速度",
+      "reset": "重置",
+      "play": "玩",
+      "pause": "暂停",
+      "points": "积分",
+      "noRoute": "暂无路线数据",
+      "loading": "正在加载路线..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "竞争对手产品",
+      "description": "追踪竞争对手的产品信息",
+      "addProduct": "添加产品",
+      "formTitle": "添加竞品",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "品牌",
+        "skuName": "SKU名称",
+        "category": "类别",
+        "size": "尺寸",
+        "price": "价格",
+        "currency": "货币",
+        "country": "国家"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "品牌",
+        "skuName": "SKU名称",
+        "category": "类别",
+        "size": "尺寸",
+        "price": "价格",
+        "country": "国家",
+        "dateAdded": "添加日期"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "产品加载失败",
+        "createFailed": "产品创建失败，请重试。"
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "未发现竞品",
+      "loading": "正在加载产品..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "竞争对手仪表盘",
+      "description": "对竞争对手产品的分析和洞察",
+      "totalProducts": "总产品",
+      "brandsTracked": "追踪的品牌",
+      "countries": "国家",
+      "categories": "类别",
+      "byBrand": "按品牌分类的产品",
+      "byCountry": "按国家/地区划分的产品",
+      "byCategory": "按类别浏览产品",
+      "loading": "正在加载统计信息……",
+      "noStats": "暂无统计数据"
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
-    "finance": "Finance",
-    "crm": "CRM",
-    "hr": "HR",
-    "executive": "Executive",
-    "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
-    "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
-    "admin": "Admin"
+    "overview": "概述",
+    "orders": "订单",
+    "inventory": "存货",
+    "logistics": "后勤",
+    "finance": "金融",
+    "crm": "客户关系管理",
+    "hr": "人力资源",
+    "executive": "管理人员",
+    "investor": "投资者",
+    "legal-ipr": "法律/知识产权",
+    "competitor": "竞争者",
+    "import-export": "进出口",
+    "gps-tracking": "GPS追踪",
+    "localization": "本土化",
+    "workflows": "工作流程",
+    "admin": "行政"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
-      "finance": "Finance",
-      "crm": "CRM",
-      "hr": "HR",
-      "executive": "Executive",
-      "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
-      "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
-      "admin": "Admin"
+      "overview": "概述",
+      "orders": "订单",
+      "inventory": "存货",
+      "logistics": "后勤",
+      "finance": "金融",
+      "crm": "客户关系管理",
+      "hr": "人力资源",
+      "executive": "管理人员",
+      "investor": "投资者",
+      "legal-ipr": "法律/知识产权",
+      "competitor": "竞争者",
+      "import-export": "进出口",
+      "gps-tracking": "GPS追踪",
+      "localization": "本土化",
+      "workflows": "工作流程",
+      "admin": "行政"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
-      "profit": "Profit"
+      "customers": "顾客",
+      "employees": "雇员",
+      "profit": "利润"
+    },
+    "domain": {
+      "title": "CRM操作系统",
+      "customer360": {
+        "title": "客户360",
+        "description": "完整的客户资料、互动历史记录和关系管理"
+      },
+      "campaigns": {
+        "title": "数字营销活动",
+        "description": "多渠道营销活动（Instagram、Facebook、TikTok、WhatsApp）"
+      },
+      "leads": {
+        "title": "销售线索和商机",
+        "description": "线索管理、资格审查和商机渠道"
+      },
+      "support": {
+        "title": "客户支持",
+        "description": "票务管理、客户服务和问题解决"
+      },
+      "loyalty": {
+        "title": "会员忠诚计划",
+        "description": "零售商忠诚度、游戏化和奖励管理"
+      }
+    },
+    "customerList": {
+      "title": "客户360",
+      "newCustomer": "新客户",
+      "totalCustomers": "客户总数",
+      "active": "积极的",
+      "new": "新的",
+      "satisfaction": "满意",
+      "customerManagement": "客户管理",
+      "customerManagementDescription": "查看和管理您的客户关系、互动和营销活动。",
+      "loading": "加载中...",
+      "error": "加载 CRM 数据时出错"
     }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "正在加载供应商驾驶舱…",
+      "purchaseOrders": "采购订单",
+      "purchaseOrdersSubtitle": "由哈维克斯抚养长大",
+      "shipments": "发货/GRN",
+      "shipmentsSubtitle": "本周已接受",
+      "invoices": "已创建的发票",
+      "invoicesSubtitle": "等待付款",
+      "paymentsPending": "待付款",
+      "paymentsPendingSubtitle": "计划发布",
+      "qualityComplaints": "质量/投诉",
+      "qualityComplaintsSubtitle": "开放门票",
+      "forecast": "预测（未来 4 周）",
+      "forecastSubtitle": "AI占位符",
+      "supplierActions": "供应商行动",
+      "action1": "确认即将发货的货物并更新GRN计划。",
+      "action2": "审核未结发票并分享付款建议。",
+      "action3": "用质量保证证据解决未决的质量投诉。"
+    }
+  },
+  "form": {
+    "username": "用户名",
+    "password": "密码",
+    "email": "电子邮件",
+    "submit": "提交",
+    "cancel": "取消",
+    "save": "节省",
+    "delete": "删除",
+    "search": "搜索",
+    "filter": "筛选",
+    "reset": "重置",
+    "close": "关闭",
+    "back": "后退",
+    "next": "下一个",
+    "previous": "以前的",
+    "confirm": "确认",
+    "rememberMe": "记住账号",
+    "forgotPassword": "忘记密码？",
+    "emailRequired": "必须提供电子邮件地址",
+    "emailInvalid": "请输入有效的电子邮件地址"
+  },
+  "faq": {
+    "products": {
+      "category": "产品",
+      "q1": "Harvics提供哪些产品？",
+      "a1": "我们提供种类繁多的优质食品，包括糖果、饮料、零食、意大利面、烘焙食品和冷冻食品等，涵盖多个类别。",
+      "q2": "哪里可以买到Harvics的产品？",
+      "a2": "我们的产品在40多个国家的零售店均有销售。请使用我们的门店定位器或联系页面查找您附近的零售商。",
+      "q3": "你们提供批量订购吗？",
+      "a3": "是的，我们为企业和零售商提供批量订购折扣。请访问我们的批量订购折扣页面了解更多信息。"
+    },
+    "ordersShipping": {
+      "category": "订单与配送",
+      "q1": "你们有哪些配送方式？",
+      "a1": "我们提供多种配送方式，包括标准配送、快递配送和国际配送。订单满 50 美元即可享受免运费。",
+      "q2": "配送需要多长时间？",
+      "a2": "配送时间因地点而异。标准配送通常需要 5-7 个工作日，而加急配送需要 2-3 个工作日。",
+      "q3": "我可以追踪我的订单吗？",
+      "a3": "是的，您可以使用订单确认邮件中提供的追踪号码追踪您的订单。"
+    },
+    "accountPayments": {
+      "category": "账户与支付",
+      "q1": "如何创建账户？",
+      "a1": "点击标题栏中的“登录”，然后选择“创建账户”注册新账户。",
+      "q2": "你们接受哪些付款方式？",
+      "a2": "我们接受所有主流信用卡、借记卡、PayPal 和银行转账进行 B2B 订单付款。",
+      "q3": "我的支付信息安全吗？",
+      "a3": "是的，我们采用行业标准的加密技术来保护您的支付信息。"
+    },
+    "returnsRefunds": {
+      "category": "退货与退款",
+      "q1": "你们的退货政策是什么？",
+      "a1": "我们为未开封且包装完好的产品提供 30 天退货政策。请联系我们的客服获取退货授权。",
+      "q2": "我该如何申请退款？",
+      "a2": "请联系我们的客服团队，并提供您的订单号和退货原因。我们将在 5-7 个工作日内处理您的退款。"
+    },
+    "contactCta": {
+      "title": "还有其他问题吗？",
+      "subtitle": "我们的客服团队随时为您提供帮助。",
+      "button": "联系我们"
+    }
+  },
+  "careers": {
+    "title": "职业生涯",
+    "pageTitle": "职业发展 | 哈维克斯",
+    "description": "加入 Harvics Global Ventures — 探索遍布 40 多个国家的机遇。",
+    "joinUs": "加入我们",
+    "heroTitle": "构建全球贸易的未来",
+    "heroDesc": "我们的业务遍及40多个国家。加入我们，共同打造面向全球商业的AI驱动型操作系统。",
+    "stats": {
+      "openPositions": "招聘职位",
+      "countries": "国家",
+      "industryVerticals": "行业垂直领域",
+      "departmentsHiring": "招聘部门"
+    },
+    "openPositionsByDept": "各部门空缺职位",
+    "departments": {
+      "sales": {
+        "name": "销售与分销",
+        "desc": "负责40多个市场的营收增长。包括区域管理、重点客户维护和分销商关系维护。"
+      },
+      "supplyChain": {
+        "name": "供应链与物流",
+        "desc": "从工厂到货架的端到端供应链。车队管理、仓储、最后一公里配送。"
+      },
+      "technology": {
+        "name": "技术与人工智能",
+        "desc": "构建 Harvics OS——我们基于人工智能的企业平台。涵盖全栈开发、机器学习工程和数据科学。"
+      },
+      "finance": {
+        "name": "财务与资金管理",
+        "desc": "多币种资金管理、贸易融资、HPay 数字支付、跨区域外汇管理。"
+      },
+      "procurement": {
+        "name": "采购与寻源",
+        "desc": "全球采购，涵盖15个以上原产国。供应商审核、质量控制、厂家直销项目。"
+      },
+      "hr": {
+        "name": "人力资源",
+        "desc": "跨地域和文化的人才招聘、学习与发展、绩效管理。"
+      },
+      "legal": {
+        "name": "法律与合规",
+        "desc": "贸易合规、制裁筛查、知识产权保护、跨司法管辖区的合同管理。"
+      },
+      "marketing": {
+        "name": "市场营销与品牌",
+        "desc": "多语言营销活动、38 个地区的内容、数字营销、10 个垂直领域的品牌战略。"
+      }
+    },
+    "roles": "角色",
+    "whyHarvics": "为什么选择哈维克斯？",
+    "benefits": {
+      "globalMobility": {
+        "title": "全球流动性",
+        "desc": "工作地点涵盖迪拜、伦敦、卡拉奇、拉合尔以及其他 40 多个市场"
+      },
+      "growthTrack": {
+        "title": "成长之路",
+        "desc": "在快速发展的企业中获得快速职业晋升机会"
+      },
+      "aiCulture": {
+        "title": "人工智能优先文化",
+        "desc": "使用尖端人工智能和实时智能系统"
+      },
+      "competitivePackage": {
+        "title": "具有竞争力的薪酬待遇",
+        "desc": "行业领先的薪酬、住房和福利"
+      },
+      "learningBudget": {
+        "title": "学习预算",
+        "desc": "课程、会议和认证的年度发展预算"
+      },
+      "flexibleWork": {
+        "title": "灵活工作",
+        "desc": "与全球区域中心办事处合作的混合模式"
+      }
+    }
+  },
+  "strategy": {
+    "title": "我们的策略",
+    "pageTitle": "战略 | 哈里奇",
+    "description": "通过创新和卓越构建可持续的未来",
+    "heroSubtitle": "通过创新和卓越构建可持续的未来",
+    "pillars": {
+      "globalExpansion": {
+        "title": "全球扩张",
+        "desc": "在扩大我们在新兴市场的业务的同时，巩固我们在成熟市场的地位"
+      },
+      "productInnovation": {
+        "title": "产品创新",
+        "desc": "投资研发，开发满足不断变化的消费者偏好的新产品"
+      },
+      "sustainability": {
+        "title": "可持续性",
+        "desc": "我们致力于在整个供应链和运营过程中践行可持续发展理念。"
+      },
+      "digitalTransformation": {
+        "title": "数字化转型",
+        "desc": "利用技术提升客户体验和运营效率"
+      }
+    },
+    "vision": {
+      "title": "我们的愿景",
+      "desc": "成为世界领先的高端消费品公司，以品质、创新和可持续发展而闻名。"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "哈维克全球风险投资公司 | 高端全球交易",
+      "description": "领先的全球贸易公司，为10多个行业提供优质产品。自2019年以来，业务遍及50多个国家。"
+    },
+    "about": {
+      "title": "关于我们 | 哈维克斯全球风险投资公司",
+      "description": "了解 Harvics Global Ventures 如何成为 40 多个国家和 10 个行业的全球贸易领军力量。"
+    },
+    "contact": {
+      "title": "联系我们 | 哈维克斯全球风险投资公司",
+      "description": "联系 Harvics 在中东、南亚、欧洲、非洲和美洲的全球办事处。"
+    },
+    "products": {
+      "title": "产品 | 哈维克全球风险投资公司",
+      "description": "探索 Harvics 的优质产品系列，涵盖快速消费品、纺织品、大宗商品和工业解决方案。"
+    },
+    "careers": {
+      "title": "职业发展 | 哈维克全球风险投资公司",
+      "description": "加入 Harvics Global Ventures — 探索 40 多个国家/地区的快速消费品、纺织品、物流和技术领域的机遇。"
+    },
+    "media": {
+      "title": "媒体中心 | 哈维克全球风险投资公司",
+      "description": "Harvics 媒体中心——新闻稿、最新消息、品牌资产和媒体联系方式。"
+    },
+    "strategy": {
+      "title": "我们的战略 | 哈维克全球风险投资公司",
+      "description": "Harvics 的全球扩张、创新、可持续发展和数字化转型战略愿景。"
+    },
+    "csr": {
+      "title": "企业社会责任 | 哈维克",
+      "description": "Harvics 的企业社会责任举措——环境管理、社区项目和道德商业实践。"
+    },
+    "faq": {
+      "title": "常见问题解答 | 哈维克全球风险投资公司",
+      "description": "关于 Harvics 产品、服务、订购和全球运营的常见问题。"
+    },
+    "locations": {
+      "title": "全球位置 | 哈维克斯",
+      "description": "Harvics 在中东、南亚、欧洲、非洲和美洲均设有办事处和运营机构。"
+    },
+    "leadership": {
+      "title": "领导团队 | 哈维克斯",
+      "description": "认识一下领导 Harvics Global Ventures 在 40 多个市场和 10 个行业垂直领域开展业务的领导团队。"
+    },
+    "help": {
+      "title": "帮助中心 | Harvics",
+      "description": "获取有关订单、账户、运输和 Harvics 服务的帮助。"
+    },
+    "compliance": {
+      "title": "合规与道德 | 哈维克斯",
+      "description": "Harvics 致力于遵守监管规定、恪守商业道德并遵循全球标准。"
+    },
+    "history": {
+      "title": "我们的历史 | 哈维克斯",
+      "description": "从 2019 年迪拜的一家初创公司发展成为业务遍及 40 多个国家的全球企业——Harvics 的故事。"
+    },
+    "newsletter": {
+      "title": "新闻简报 | 哈维克斯",
+      "description": "订阅 Harvics 新闻简报，获取行业洞察和产品发布信息。"
+    },
+    "login": {
+      "title": "登录 | 哈维克斯",
+      "description": "登录您的 Harvics 账户以管理订单并访问平台。"
+    },
+    "research": {
+      "title": "研究与创新 | 哈维克斯",
+      "description": "Harvics 的研究计划和创新项目推动着我们的全球战略。"
+    },
+    "investorRelations": {
+      "title": "投资者关系 | 哈维克斯",
+      "description": "来自 Harvics Global Ventures 的投资者信息、财务报告和公司公告。"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "页面未找到",
+      "heading": "404 — 页面未找到",
+      "description": "您要查找的页面不存在或已被移动。",
+      "goHome": "返回首页",
+      "goBack": "回去"
+    },
+    "serverError": {
+      "title": "出问题了",
+      "heading": "出问题了",
+      "description": "抱歉，发生了一些意外情况。请尝试刷新页面。",
+      "tryAgain": "重试",
+      "reload": "重新加载页面",
+      "contactSupport": "联系客服"
+    },
+    "globalError": {
+      "title": "应用程序错误",
+      "heading": "严重错误",
+      "description": "发生严重错误，请重新加载页面。",
+      "reload": "重新加载应用程序"
+    }
+  },
+  "about": {
+    "title": "关于哈维克斯",
+    "subtitle": "自2019年以来，我们始终致力于打造卓越的高端消费品。",
+    "ourStory": "我们的故事",
+    "story1": "Harvics成立于2019年，从一个富有远见的理念发展成为全球领先的高端消费品公司。我们始终坚持对品质的不懈追求和对创新的执着承诺，并以此为基石，不断前行。",
+    "story2": "我们的业务遍及40多个国家，致力于提供丰富人们生活并树立行业新标杆的产品。从最初的创业到如今的全球布局，我们的价值观始终如一。",
+    "est2018": "成立于2019年",
+    "countries40": "40多个国家",
+    "productLines6": "6条产品线"
+  },
+  "csr": {
+    "hero": {
+      "title": "企业社会责任",
+      "description": "在哈维克，我们致力于为世界带来积极影响。我们的企业社会责任举措侧重于可持续发展、社区赋能和商业道德实践。",
+      "stats": {
+        "years": "多年的影响",
+        "countries": "覆盖国家",
+        "lives": "生命被触动"
+      }
+    },
+    "initiatives": {
+      "title": "我们的主要举措",
+      "description": "我们着重关注四大支柱，以推动可持续变革，并为所有利益相关者创造共享价值。"
+    },
+    "sustainability": {
+      "title": "可持续性",
+      "description": "通过利用可再生能源和减少浪费来降低我们对环境的影响。",
+      "stats": {
+        "renewable": "可再生能源",
+        "waste": "废物转移",
+        "carbon": "碳减排"
+      }
+    },
+    "community": {
+      "title": "社区支持",
+      "description": "通过教育、医疗保健和经济发展赋能当地社区。",
+      "stats": {
+        "families": "支持的家庭",
+        "programs": "活跃项目",
+        "volunteers": "志愿者"
+      }
+    },
+    "education": {
+      "title": "教育",
+      "description": "为贫困学生提供接受优质教育和奖学金的机会。",
+      "stats": {
+        "scholarships": "奖学金",
+        "schools": "合作学校",
+        "students": "受影响的学生"
+      }
+    },
+    "health": {
+      "title": "健康与保健",
+      "description": "改善服务不足地区获得医疗保健和营养的机会。",
+      "stats": {
+        "campaigns": "健康宣传活动",
+        "people": "服务对象",
+        "clinics": "移动诊所"
+      }
+    },
+    "achievements": {
+      "2022": {
+        "title": "最佳企业社会责任倡议",
+        "description": "我们因在社会责任方面的创新做法而受到表彰。"
+      },
+      "2023": {
+        "title": "社区冠军",
+        "description": "因我们广泛的社区服务项目而获奖。"
+      },
+      "2024": {
+        "title": "全球可持续发展奖",
+        "description": "因致力于实现碳中和而获得认可。"
+      },
+      "title": "我们的影响",
+      "description": "表彰我们在创造更美好世界过程中取得的里程碑式成就。"
+    },
+    "cta": {
+      "title": "加入我们，共同改变世界",
+      "description": "与我们合作或了解更多关于我们如何构建可持续未来的信息。",
+      "contact": "联系企业社会责任团队",
+      "learnMore": "了解更多"
+    }
+  },
+  "harvicsHouse": {
+    "title": "哈维克之家",
+    "subtitle": "卓越与传统的传承",
+    "aboutTitle": "欢迎来到哈维克之家",
+    "description": "哈维克之家代表了我们对品质和传承的最高追求。在这里，我们汇聚了精选的优质产品，并以优雅、传统和创新为核心价值观的环境进行展示。",
+    "description2": "探索我们的独家系列，了解每一件带有 Harvics 标志的产品背后的故事。"
   }
 }

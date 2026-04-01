@@ -28,7 +28,7 @@ export default async function PromotionsPage({ params }: PromotionsPageProps) {
   const content = getOffersPageContent('promotions', locale)
 
   // Use promotions from content populator or fallback to default
-  const promotions = content.sections[0]?.items || [
+  const promotions: Array<{ icon: string; title: string; description: string; color: string }> = (content.sections[0]?.items as any[]) || [
     { icon: '🎁', title: 'Buy 2 Get 1 Free', description: 'On selected items', color: 'from-blue-500 to-cyan-500' },
     { icon: '🚚', title: 'Free Shipping', description: 'On orders over $50', color: 'from-green-500 to-emerald-500' },
     { icon: '🎓', title: 'Student Discount', description: '20% off with valid ID', color: 'from-purple-500 to-pink-500' },
@@ -39,7 +39,7 @@ export default async function PromotionsPage({ params }: PromotionsPageProps) {
   const promotionProductImages = getProductImages(3)
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="pt-20">
         <section className="py-12 md:py-24 bg-gradient-to-br from-[#ffffff] via-[#ffffff] to-[#ffffff]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

@@ -45,7 +45,7 @@ const SubcategoryClient: React.FC<SubcategoryClientProps> = ({
           <nav className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm md:text-base flex-wrap">
             <Link href={`/${locale}/products`} className="text-white hover:text-[#C3A35E]/90 transition-colors duration-300 flex items-center space-x-1 font-bold">
               <span className="text-sm sm:text-base">←</span>
-              <span className="hidden sm:inline">{t('pageTitle') || 'Products'}</span>
+              <span className="hidden sm:inline">{t('pageTitle')}</span>
               <span className="sm:hidden">Products</span>
             </Link>
             <span className="text-white/60 mx-1">/</span>
@@ -88,7 +88,7 @@ const SubcategoryClient: React.FC<SubcategoryClientProps> = ({
       </section>
 
       {/* Products Grid - Site Design Guidelines */}
-      <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-[#F5F1E8] relative overflow-hidden">
+      <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-white relative overflow-hidden">
         
         <div className="relative z-10 w-full">
           {images.length > 0 ? (

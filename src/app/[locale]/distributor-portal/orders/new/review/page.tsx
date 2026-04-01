@@ -59,7 +59,7 @@ export default function OrderReview() {
           </div>
           <div>
             <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-1">Delivery Address</label>
-            <select className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black">
+            <select className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black">
               <option>{order.deliveryAddress}</option>
             </select>
           </div>

@@ -1,624 +1,1146 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
-    "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More"
+    "welcome": "Velkommen til",
+    "companyName": "Harwich",
+    "tagline": "Ekspertise inden for premium forbrugsvarer siden 2019",
+    "exploreProducts": "Udforsk produkter",
+    "contact": "Kontakt os",
+    "learnMore": "Lær mere",
+    "brandStatement": "En førende global virksomhed inden for forbrugsvarer, der leverer premium fødevarer på tværs af forskellige kategorier med internationale kvalitetsstandarder.",
+    "taglineStart": "Ekspertise inden for premium forbrugsvarer siden",
+    "taglineYear": "2019",
+    "locations": "London • Milano • New York",
+    "categories": {
+      "bakery": "Bageri",
+      "beverages": "Drikkevarer",
+      "confectionery": "Konfekture",
+      "culinary": "Kulinarisk",
+      "frozenFoods": "Frosne fødevarer",
+      "pasta": "Pasta",
+      "snacks": "Snacks"
+    }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
+    "esgReport": "ESG-rapport 2025",
+    "locations": "London • Milano • New York",
+    "home": "Hjem",
+    "about": "Om",
+    "aboutUs": "Om os",
+    "brandStory": "Brandhistorie",
+    "products": "Produkter",
+    "ourProducts": "Vores produkter",
+    "viewAllProducts": "Se alle produkter",
     "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
-    "media": "Media",
-    "contactUs": "Contact Us",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store"
+    "investorRelations": "Investorrelationer",
+    "investors": "Investorer",
+    "media": "Medier",
+    "contactUs": "Kontakt os",
+    "countries": "Lande",
+    "portals": "Portaler",
+    "signIn": "Log ind",
+    "wishlist": "Ønskeliste",
+    "cart": "Indkøbskurv",
+    "help": "Hjælp",
+    "findStore": "Find butik",
+    "harvicsHouse": "Harvics House",
+    "money": "Penge",
+    "sales": "Salg",
+    "offers": "Tilbud",
+    "darkMode": "Mørk tilstand",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "Kreditkort",
+        "msRewards": "M&S Rewards-kreditkort",
+        "clubRewards": "Klubbelønninger",
+        "ourCards": "Vores kreditkort"
+      },
+      "insurance": {
+        "title": "Forsikring",
+        "home": "Husforsikring",
+        "travel": "Rejseforsikring"
+      },
+      "travel": {
+        "title": "Rejseservice",
+        "money": "Rejsepenge",
+        "exchange": "Valutakurser"
+      },
+      "additional": {
+        "title": "Yderligere tjenester",
+        "savings": "Opsparing og investering",
+        "personalLoans": "Personlige lån",
+        "financialSupport": "Finansiel støtte"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "Nuværende salg",
+      "clearance": "Udsalg",
+      "seasonal": "Sæsonudsalg"
+    },
+    "offersDropdown": {
+      "specialOffers": "Særlige tilbud",
+      "promotions": "Kampagner",
+      "bulkOrders": "Rabatter på store ordrer"
+    }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products"
+    "ourProducts": "Vores produkter",
+    "viewAllProducts": "Se alle produkter",
+    "productCategories": "Vores produktkategorier",
+    "discoverPremium": "Oplev vores førsteklasses udvalg af produkter, der er fremstillet med omhu og ekspertise.",
+    "tier1": "Niveau 1: Kategorier",
+    "tier2": "Niveau 2: Moduler",
+    "tier3": "Niveau 3: KPI-skærme",
+    "tier4": "Niveau 4: Handlinger",
+    "reset": "Nulstil navigation",
+    "noSubcategories": "Ingen underkategorier tilgængelige for denne kategori.",
+    "pageTitle": "Produkter",
+    "subcategories": "Underkategorier",
+    "bakery": "Bageri",
+    "bakeryDesc": "Friskbagte varer og kager.",
+    "beverages": "Drikkevarer",
+    "beveragesDesc": "Forfriskende drinks til enhver lejlighed.",
+    "confectionery": "Konfekture",
+    "confectioneryDesc": "Søde lækkerier og lækkerier.",
+    "culinary": "Kulinarisk",
+    "culinaryDesc": "Vigtige ingredienser til dit køkken.",
+    "frozenFoods": "Frosne fødevarer",
+    "frozenFoodsDesc": "Praktiske og lækre frosne måltider.",
+    "pasta": "Pasta",
+    "pastaDesc": "Autentiske pastasorter.",
+    "snacks": "Snacks",
+    "snacksDesc": "Lækre snacks til enhver tid af dagen."
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
-    "email": "Email",
+    "title": "Kontakt os",
+    "subtitle": "Vi vil meget gerne høre fra dig. Kontakt os via en af disse kanaler.",
+    "phone": "Telefon",
+    "email": "E-mail",
     "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "callNow": "Ring nu",
+    "sendEmail": "Send e-mail",
+    "messageUs": "Send os en besked"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "Mediecenter",
+    "pageTitle": "Mediecenter | Harvics",
+    "description": "Presseressourcer, brandaktiver og de seneste nyheder fra Harvics Global Ventures.",
+    "corporate": "Virksomheds",
+    "sections": {
+      "news": {
+        "title": "Nyheder og pressemeddelelser",
+        "desc": "Seneste meddelelser, markedsudvidelser, produktlanceringer og virksomhedsopdateringer fra Harvics Global Ventures.",
+        "cta": "Læs de seneste nyheder"
+      },
+      "gallery": {
+        "title": "Billedgalleri",
+        "desc": "Brandmaterialer i høj opløsning, produktfotografering, billeder af faciliteter og eventdækning til mediebrug.",
+        "cta": "Gennemse galleri"
+      },
+      "contacts": {
+        "title": "Mediekontakter",
+        "desc": "Kontakt vores kommunikationsteam for pressehenvendelser, interviewanmodninger og partnerskabsmeddelelser.",
+        "cta": "Kontakt presseteamet"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "Dækkede markeder",
+      "industryVerticals": "Branchevertikaler",
+      "foundedIn": "Grundlagt i Dubai",
+      "languagesSupported": "Understøttede sprog"
+    },
+    "recentHeadlines": "Seneste overskrifter",
+    "headlines": {
+      "expansion": "Harvics udvider FMCG-aktiviteter til 5 nye sydøstasiatiske markeder",
+      "aiPlatform": "Ny AI-drevet forsyningskædeplatform lanceret til global distribution",
+      "carbonNeutral": "Harvics når CO2-neutral milepæl på tværs af alle faciliteter",
+      "partnership": "Strategisk partnerskab med førende tekstilproducenter i Sydasien"
+    }
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
-    "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
-    "contactUsButton": "Contact Us",
-    "usefulLinks": "Useful Links",
-    "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
-    "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
-    "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
-    "privacy": "Privacy",
+    "tagline": "Ekspertise inden for premium forbrugsvarer siden 2019",
+    "brandStatement": "En førende global virksomhed inden for forbrugsvarer, der leverer premium fødevarer på tværs af forskellige kategorier med internationale kvalitetsstandarder.",
+    "locations": "London • Milano • New York",
+    "since": "Siden 2019",
+    "harvicsNews": "Harvics Nyheder",
+    "subscribeToAlerts": "Abonner for at modtage advarsler og opdateringer",
+    "signUp": "Tilmeld dig",
+    "complianceConcerns": "Overholdelsesproblemer",
+    "speakUp": "Sig fra, hvis du har bekymringer om compliance eller etik",
+    "speakUpButton": "Sig fra",
+    "contactUs": "Kontakt os",
+    "contactDescription": "Kontakt vores team",
+    "contactUsButton": "Kontakt os",
+    "usefulLinks": "Nyttige links",
+    "askHarvics": "Spørg Harwich",
+    "searchForJobs": "Søg efter job",
+    "signUpForNews": "Tilmeld dig nyheder",
+    "company": "Selskab",
+    "globalAddresses": "Globale adresser",
+    "strategy": "Strategi",
+    "ourLeadership": "Vores lederskab",
+    "brandsAZ": "Mærker A-Z",
+    "ourHistory": "Vores historie",
+    "sustainability": "Bæredygtighed",
+    "news": "Nyheder",
+    "mediaContacts": "Mediekontakter",
+    "images": "Billeder",
+    "investors": "Investorer",
+    "corporateGovernance": "Selskabsledelse",
+    "sharesAdrsBonds": "Aktier, ADR'er og obligationer",
+    "publications": "Publikationer",
+    "followUsOn": "Følg os på",
+    "issuesCount": "0 udgaver",
+    "siteMap": "Sitemap",
+    "unsubscribe": "Afmeld abonnement",
+    "help": "Hjælp",
+    "privacy": "Privatliv",
     "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
+    "termsOfUse": "Brugsbetingelser",
+    "accessibility": "Tilgængelighed",
+    "carbonEfficiency": "Kulstofeffektivitet",
+    "suppliers": "Leverandører",
+    "socialMedia": "Sociale medier",
+    "cookieSettings": "Cookie-indstillinger",
     "feature1Title": "Global Reach",
     "feature1Desc": "Serving customers across 40+ countries worldwide",
-    "feature2Title": "Premium Quality",
+    "feature2Title": "Premium kvalitet",
     "feature2Desc": "International quality standards in every product",
     "feature3Title": "Innovation",
     "feature3Desc": "Leading innovation in consumer goods industry",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
-    "media": "Media"
+    "emailAddress": "E-mailadresse",
+    "enterEmailPlaceholder": "Indtast din e-mailadresse",
+    "subscribe": "Abonner",
+    "subscribing": "Abonnerer...",
+    "aboutUs": "Om os",
+    "media": "Medier"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "Søg efter produkter, mærker eller kategorier",
+    "noResults": "Ingen resultater fundet",
+    "searching": "Søger...",
+    "results": "Resultater"
   },
   "chatbot": {
-    "title": "Chat with Us",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "title": "Chat med os",
+    "placeholder": "Skriv din besked...",
+    "send": "Sende",
+    "close": "Tæt",
+    "welcome": "Hej! Hvordan kan jeg hjælpe dig i dag?",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "Undskyld, jeg forstod det ikke. Kan du omformulere det?",
+      "help": "Jeg kan hjælpe dig med produktinformation, ordrer eller generelle forespørgsler. Hvad vil du gerne vide?",
+      "contact": "For yderligere hjælp, kontakt os venligst på support@harvics.com eller ring +1-800-HARVICS."
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
+    "chatWithUs": "Chat med os",
+    "loading": "Indlæser...",
+    "error": "Fejl",
+    "success": "Succes",
+    "save": "Spare",
+    "cancel": "Ophæve",
+    "delete": "Slet",
+    "edit": "Redigere",
+    "view": "Udsigt",
+    "submit": "Indsend",
+    "search": "Søge",
     "filter": "Filter",
-    "clear": "Clear",
+    "clear": "Klar",
     "download": "Download",
     "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
+    "yes": "Ja",
+    "no": "Ingen",
+    "close": "Tæt",
+    "back": "Tilbage",
+    "next": "Næste",
+    "previous": "Tidligere",
+    "actions": "Handlinger",
     "status": "Status",
-    "date": "Date",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
-    "selectCountry": "Select Country",
-    "required": "Required",
+    "date": "Dato",
+    "name": "Navn",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "country": "Land",
+    "city": "By",
+    "all": "Alle",
+    "none": "Ingen",
+    "select": "Vælge",
+    "selectCountry": "Vælg land",
+    "required": "Påkrævet",
     "menu": "Menu",
-    "viewProducts": "View Products"
+    "viewProducts": "Se produkter",
+    "selectLanguage": "Vælg sprog",
+    "showMore": "Vis mere",
+    "showLess": "Vis mindre"
   },
   "music": {
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "Afspil musik",
+    "pause": "Pause musik",
+    "mute": "Slå musik fra",
+    "unmute": "Slå lyden til for musik"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "Vores globale rækkevidde",
+    "since": "Siden",
+    "majorMarket": "Stort marked",
+    "majorMarkets": "Store markeder",
+    "presence": "Tilstedeværelse",
+    "countriesServed": "Lande betjent",
+    "majorMarketsCount": "Store markeder",
+    "productCategoriesCount": "Produktkategorier",
+    "establishedYear": "Etableret"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "Territoriumhierarki",
+    "fullPath": "Fuld sti",
+    "currentTerritory": "Nuværende territorium",
+    "noChildren": "Ingen varer",
     "tiers": {
-      "globe": "Globe",
-      "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
-      "district": "District",
-      "location": "Location"
+      "globe": "Globus",
+      "continent": "Kontinent",
+      "region": "Område",
+      "country": "Land",
+      "city": "By",
+      "district": "Distrikt",
+      "location": "Beliggenhed"
     }
   },
   "globalWorld": {
     "title": "Harvics Global",
     "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "selectRegion": "Vælg region",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
-      "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
+      "title": "Kundeoplysninger",
+      "selected": "Valgt",
+      "fullName": "Fulde navn",
+      "namePlaceholder": "Indtast dit fulde navn",
+      "nameRequired": "Navn er påkrævet",
+      "email": "E-mailadresse",
+      "emailPlaceholder": "din.email@eksempel.com",
+      "emailRequired": "E-mailadresse er påkrævet",
+      "emailInvalid": "Indtast venligst en gyldig e-mailadresse",
+      "phone": "Telefonnummer",
       "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "phoneRequired": "Telefonnummer er påkrævet",
+      "address": "Adresse",
+      "addressPlaceholder": "Din adresse",
+      "addressRequired": "Adresse er påkrævet",
+      "marketingConsent": "Jeg accepterer at modtage markedsføringsmateriale og opdateringer",
+      "submit": "Send og fortsæt",
+      "submitting": "Indsender...",
+      "skip": "Spring over og fortsæt"
     }
   },
   "distributorPortal": {
     "dashboard": {
       "kpi": {
-        "title": "Key Performance Indicators",
-        "ordersToday": "Orders today",
-        "ordersTodaySubtitle": "Submitted via Harvics CRM",
-        "pendingDeliveries": "Pending deliveries",
-        "pendingDeliveriesSubtitle": "Across assigned routes",
-        "retailers": "Retailers",
-        "retailersSubtitle": "Active outlets in scope",
-        "attendance": "T & A Score",
-        "attendanceSubtitle": "Territory coverage"
+        "title": "Nøglepræstationsindikatorer",
+        "ordersToday": "Ordrer i dag",
+        "ordersTodaySubtitle": "Indsendt via Harvics CRM",
+        "pendingDeliveries": "Afventende leverancer",
+        "pendingDeliveriesSubtitle": "På tværs af tildelte ruter",
+        "retailers": "Detailhandlere",
+        "retailersSubtitle": "Aktive forretninger inden for rækkevidde",
+        "attendance": "T & A-score",
+        "attendanceSubtitle": "Områdedækning"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "Finansiel og lagerbeholdning",
+        "lowStock": "Lavt lagerbeholdning af varer",
+        "lowStockSubtitle": "Udløs genopfyldning",
+        "outstandingInvoices": "Udestående fakturaer",
+        "outstandingInvoicesSubtitle": "Forfalder til afhentning",
+        "creditLimit": "Kreditgrænse",
+        "creditLimitSubtitle": "Tildelt af finans"
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "Automatisk godkendelse, lageropfyldning og fakturapåmindelser aktiveret",
+        "autoApproval": "Selvgodkendelse",
+        "stockReplenishment": "Lageropfyldning",
+        "invoiceReminders": "Fakturapåmindelser"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "AI-anbefalinger",
+        "riskLevel": "Risikoniveau",
+        "riskDescription": "Baseret på kreditudnyttelse og betalingshistorik",
+        "suggestedOrder": "Foreslået rækkefølge",
+        "suggestedOrderSubtitle": "AI-anbefalede SKU'er til bestilling",
+        "nextAction": "Næste handling"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "Handlinger og vejledning",
+        "complaints": "Klager",
+        "complaintsSubtitle": "Problemer med detailhandlere afventer handling",
+        "playbook": "Spillebog",
+        "playbookItem1": "Prioriter ventende leverancer før middag.",
+        "playbookItem2": "Luk alle udestående klager inden for 48 timer.",
+        "playbookItem3": "Udløs genopfyldning for SKU'er med lav lagerbeholdning (automatisk opret indkøbsordre)."
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "Territorium",
+      "ordersThisMonth": "Ordrer denne måned",
+      "pendingOrders": "Afventende ordrer",
+      "deliveredOrders": "Leverede ordrer",
+      "territoryInformation": "Oplysninger om territorium",
+      "country": "Land",
+      "city": "By",
+      "region": "Område",
+      "quickActions": "Hurtige handlinger",
+      "newOrder": "Ny ordre",
+      "viewOrders": "Se ordrer",
+      "viewInvoices": "Se fakturaer",
+      "profileSettings": "Profilindstillinger",
+      "loading": "Indlæser dashboard...",
+      "error": "Fejl"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
-      "date": "Date",
+      "title": "Mine ordrer",
+      "orderId": "Ordre-ID",
+      "date": "Dato",
       "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "items": "Varer",
+      "totalAmount": "Samlet beløb",
+      "actions": "Handlinger",
+      "viewDetails": "Se detaljer",
       "filters": {
         "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "startDate": "Startdato",
+        "endDate": "Slutdato",
+        "allStatuses": "Alle statusser",
+        "clearFilters": "Ryd filtre"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "Indtil",
+        "processing": "Forarbejdning",
+        "delivered": "Leveret",
+        "cancelled": "Annulleret"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
-      "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "noOrders": "Ingen ordrer fundet",
+      "loading": "Indlæser ordrer...",
+      "page": "Side",
+      "of": "af",
+      "previous": "Tidligere",
+      "next": "Næste"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
+      "title": "Ordreoplysninger",
+      "backToOrders": "Tilbage til ordrer",
+      "orderId": "Ordre-ID",
       "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "orderItems": "Order Items",
-      "product": "Product",
-      "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
+      "orderDate": "Ordredato",
+      "deliveryDate": "Leveringsdato",
+      "deliveryAddress": "Leveringsadresse",
+      "notes": "Noter",
+      "orderItems": "Bestil varer",
+      "product": "Produkt",
+      "sku": "Varenummer",
+      "quantity": "Mængde",
+      "unitPrice": "Enhedspris",
       "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "totalAmount": "Samlet beløb",
+      "statusTimeline": "Statustidslinje",
+      "orderNotFound": "Ordren blev ikke fundet"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
-      "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
+      "title": "Opret ny ordre",
+      "orderItems": "Bestil varer",
+      "addItem": "Tilføj element",
+      "noItems": "Ingen elementer tilføjet endnu. Klik på \"Tilføj element\" for at starte.",
+      "orderDetails": "Ordreoplysninger",
+      "deliveryDate": "Leveringsdato",
+      "deliveryAddress": "Leveringsadresse",
+      "notes": "Noter",
+      "totalAmount": "Samlet beløb",
+      "createOrder": "Opret ordre",
+      "creatingOrder": "Opretter ordre...",
+      "cancel": "Ophæve",
+      "selectProduct": "Vælg produkt",
+      "product": "Produkt",
+      "quantity": "Mængde",
+      "unitPrice": "Enhedspris",
+      "remove": "Fjerne",
       "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "orderId": "Ordre-ID",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "Mindst én ordrevare er påkrævet",
+        "productRequired": "Produktet er påkrævet",
+        "quantityRequired": "Mængden skal være større end 0",
+        "priceRequired": "Enhedsprisen skal være ikke-negativ",
+        "invalidDate": "Ugyldigt format for leveringsdato",
+        "datePast": "Leveringsdatoen må ikke være i fortiden"
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "Mine fakturaer",
+      "invoiceNumber": "Fakturanummer",
+      "invoiceDate": "Fakturadato",
+      "dueDate": "To datoer",
+      "amount": "Beløb",
+      "paidAmount": "Betalt beløb",
+      "paymentStatus": "Betalingsstatus",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "Betalingsstatus",
+        "allStatuses": "Alle statusser",
+        "clearFilters": "Ryd filtre"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "Betalt",
+        "unpaid": "Ubetalt",
+        "partial": "Delvis"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "Ingen fakturaer fundet",
+      "loading": "Indlæser fakturaer..."
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "title": "Min profil",
+      "accountInformation": "Kontooplysninger",
+      "distributorId": "Distributør-ID",
+      "territory": "Territorium",
+      "country": "Land",
+      "city": "By",
+      "accountCreated": "Konto oprettet",
+      "updateProfile": "Opdater profil",
+      "name": "Navn",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "address": "Adresse",
+      "language": "Sprog",
+      "currency": "Valuta",
+      "saveChanges": "Gem ændringer",
+      "saving": "Gemmer...",
+      "profileUpdated": "Profilen er blevet opdateret",
+      "loading": "Indlæser profil...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "Ugyldigt e-mailformat",
+        "invalidPhone": "Ugyldigt telefonformat"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
+      "error": "Fejl",
+      "loading": "Indlæser...",
+      "save": "Spare",
+      "cancel": "Ophæve",
+      "back": "Tilbage",
+      "submit": "Indsend",
+      "delete": "Slet",
+      "edit": "Redigere",
+      "view": "Udsigt",
+      "search": "Søge",
       "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "clear": "Klar",
+      "apply": "Anvende",
+      "close": "Tæt",
+      "confirm": "Bekræfte",
+      "yes": "Ja",
+      "no": "Ingen"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
+    "title": "Juridisk operativsystem",
+    "sidebarTitle": "Lovligt operativsystem",
+    "accessDenied": "Adgang nægtet",
+    "accessDeniedMessage": "Du har ikke tilladelse til at få adgang til Legal OS-modulet.",
     "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "contracts": "Kontrakter",
+    "certificates": "Certifikater",
+    "compliance": "Overholdelse",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "Juridisk dashboard",
+      "description": "Oversigt over juridiske aktiviteter og compliance-status",
+      "activeTrademarks": "Aktive varemærker",
+      "activeContracts": "Aktive kontrakter",
+      "complianceStatus": "Overholdelsesstatus"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "Varemærker",
+      "description": "Administrer varemærkeregistreringer og -ansøgninger",
+      "addNew": "Tilføj nyt varemærke",
       "filters": {
-        "country": "Country",
+        "country": "Land",
         "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "allCountries": "Alle lande",
+        "allStatuses": "Alle statusser",
+        "clearFilters": "Ryd filtre"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
+        "brandName": "Mærkenavn",
+        "class": "Klasse",
+        "country": "Land",
+        "applicationNo": "Ansøgningsnr.",
         "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "expiryDate": "Udløbsdato",
+        "actions": "Handlinger"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "Rediger varemærke",
+        "add": "Tilføj nyt varemærke",
+        "view": "Se varemærke"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
+        "brandName": "Mærkenavn",
+        "classNumber": "Klassenummer",
+        "country": "Land",
+        "applicationNo": "Ansøgningsnummer",
         "status": "Status",
-        "expiryDate": "Expiry Date",
-        "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "expiryDate": "Udløbsdato",
+        "documents": "Dokumenter",
+        "noDocuments": "Ingen dokumenter vedhæftet",
+        "addDocument": "Tilføj dokument",
+        "remove": "Fjerne"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "Varemærker kunne ikke indlæses",
+        "saveFailed": "Varemærket kunne ikke gemmes. Prøv igen."
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "Retssager",
+      "description": "Administrer juridiske sager og spor deres status",
+      "addNew": "Ny sag",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
-        "description": "Description",
-        "assignedTo": "Assigned To",
+        "caseTitle": "Sagstitel",
+        "caseType": "Sagtype",
+        "country": "Land",
+        "description": "Beskrivelse",
+        "assignedTo": "Tildelt til",
         "status": "Status",
-        "hearingDate": "Hearing Date"
+        "hearingDate": "Høringsdato"
       },
       "table": {
-        "caseTitle": "Case Title",
+        "caseTitle": "Sagstitel",
         "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
+        "country": "Land",
+        "assignedTo": "Tildelt til",
         "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "hearingDate": "Høringsdato",
+        "actions": "Handlinger"
       },
       "status": {
-        "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "open": "Åben",
+        "inProgress": "I gang",
+        "closed": "Lukket",
+        "cancelled": "Annulleret"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "Visning af flådekort",
+      "description": "Sporing af salgsansvarlige og leveringskøretøjer i realtid",
+      "activeEmployees": "Aktive medarbejdere",
+      "noEmployees": "Ingen aktive medarbejdere",
+      "loading": "Indlæser..."
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
-      "reset": "Reset",
-      "play": "Play",
+      "title": "Rutegenafspilning",
+      "employee": "Medarbejder",
+      "speed": "Hastighed",
+      "reset": "Nulstil",
+      "play": "Spil",
       "pause": "Pause",
-      "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "points": "point",
+      "noRoute": "Ingen rutedata tilgængelige",
+      "loading": "Indlæser rute..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "Konkurrentprodukter",
+      "description": "Spor oplysninger om konkurrenters produkter",
+      "addProduct": "Tilføj produkt",
+      "formTitle": "Tilføj konkurrentprodukt",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "Mærke",
+        "skuName": "SKU-navn",
+        "category": "Kategori",
+        "size": "Størrelse",
+        "price": "Pris",
+        "currency": "Valuta",
+        "country": "Land"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "Mærke",
+        "skuName": "SKU-navn",
+        "category": "Kategori",
+        "size": "Størrelse",
+        "price": "Pris",
+        "country": "Land",
+        "dateAdded": "Dato tilføjet"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "Kunne ikke indlæse produkter",
+        "createFailed": "Produktet kunne ikke oprettes. Prøv igen."
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "Ingen konkurrentprodukter fundet",
+      "loading": "Indlæser produkter..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "Konkurrentdashboard",
+      "description": "Analyse og indsigt i konkurrenternes produkter",
+      "totalProducts": "Samlede produkter",
+      "brandsTracked": "Sporede mærker",
+      "countries": "Lande",
+      "categories": "Kategorier",
+      "byBrand": "Produkter efter mærke",
+      "byCountry": "Produkter efter land",
+      "byCategory": "Produkter efter kategori",
+      "loading": "Indlæser statistik...",
+      "noStats": "Ingen statistik tilgængelig"
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
-    "finance": "Finance",
+    "overview": "Oversigt",
+    "orders": "Ordrer",
+    "inventory": "Inventar",
+    "logistics": "Logistik",
+    "finance": "Finansiere",
     "crm": "CRM",
     "hr": "HR",
-    "executive": "Executive",
+    "executive": "Direktør",
     "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
-    "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
+    "legal-ipr": "Juridisk/IPR",
+    "competitor": "Konkurrent",
+    "import-export": "Import/Eksport",
+    "gps-tracking": "GPS-sporing",
+    "localization": "Lokalisering",
+    "workflows": "Arbejdsgange",
     "admin": "Admin"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
-      "finance": "Finance",
+      "overview": "Oversigt",
+      "orders": "Ordrer",
+      "inventory": "Inventar",
+      "logistics": "Logistik",
+      "finance": "Finansiere",
       "crm": "CRM",
       "hr": "HR",
-      "executive": "Executive",
+      "executive": "Direktør",
       "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
-      "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
+      "legal-ipr": "Juridisk/IPR",
+      "competitor": "Konkurrent",
+      "import-export": "Import/Eksport",
+      "gps-tracking": "GPS-sporing",
+      "localization": "Lokalisering",
+      "workflows": "Arbejdsgange",
       "admin": "Admin"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
+      "customers": "Kunder",
+      "employees": "Medarbejdere",
       "profit": "Profit"
+    },
+    "domain": {
+      "title": "CRM-operativsystem",
+      "customer360": {
+        "title": "Kunde 360",
+        "description": "Komplette kundeprofiler, interaktionshistorik og relationsstyring"
+      },
+      "campaigns": {
+        "title": "Digitale kampagner",
+        "description": "Multikanal marketingkampagner (IG, FB, TikTok, WhatsApp)"
+      },
+      "leads": {
+        "title": "Leads og muligheder",
+        "description": "Leadhåndtering, kvalifikation og salgsmulighedspipeline"
+      },
+      "support": {
+        "title": "Kundesupport",
+        "description": "Billethåndtering, kundeservice og problemløsning"
+      },
+      "loyalty": {
+        "title": "Loyalitetsprogrammer",
+        "description": "Forhandlerloyalitet, gamification og belønningsstyring"
+      }
+    },
+    "customerList": {
+      "title": "Kunde 360",
+      "newCustomer": "Ny kunde",
+      "totalCustomers": "Samlede kunder",
+      "active": "Aktiv",
+      "new": "Ny",
+      "satisfaction": "Tilfredshed",
+      "customerManagement": "Kundestyring",
+      "customerManagementDescription": "Se og administrer dine kunderelationer, interaktioner og kampagner.",
+      "loading": "Indlæser...",
+      "error": "Fejl ved indlæsning af CRM-data"
     }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "Indlæser leverandørens cockpit…",
+      "purchaseOrders": "Indkøbsordrer",
+      "purchaseOrdersSubtitle": "Opdraget af Harvics",
+      "shipments": "Forsendelser / GRN",
+      "shipmentsSubtitle": "Accepteret denne uge",
+      "invoices": "Fakturaer oprettet",
+      "invoicesSubtitle": "Venter på betaling",
+      "paymentsPending": "Betalinger afventer",
+      "paymentsPendingSubtitle": "Planlagt til udgivelse",
+      "qualityComplaints": "Kvalitet / klager",
+      "qualityComplaintsSubtitle": "Åbne billetter",
+      "forecast": "Vejrudsigt (de næste 4 uger)",
+      "forecastSubtitle": "AI-pladsholder",
+      "supplierActions": "Leverandørhandlinger",
+      "action1": "Bekræft kommende forsendelser og opdater GRN-planen.",
+      "action2": "Gennemgå udestående fakturaer og del betalingsråd.",
+      "action3": "Løs åbne kvalitetsklager med QA-dokumentation."
+    }
+  },
+  "form": {
+    "username": "Brugernavn",
+    "password": "Adgangskode",
+    "email": "E-mail",
+    "submit": "Indsend",
+    "cancel": "Ophæve",
+    "save": "Spare",
+    "delete": "Slet",
+    "search": "Søge",
+    "filter": "Filter",
+    "reset": "Nulstil",
+    "close": "Tæt",
+    "back": "Tilbage",
+    "next": "Næste",
+    "previous": "Tidligere",
+    "confirm": "Bekræfte",
+    "rememberMe": "Husk mig",
+    "forgotPassword": "Glemt adgangskode?",
+    "emailRequired": "E-mailadresse er påkrævet",
+    "emailInvalid": "Indtast venligst en gyldig e-mailadresse"
+  },
+  "faq": {
+    "products": {
+      "category": "Produkter",
+      "q1": "Hvilke produkter tilbyder Harvics?",
+      "a1": "Vi tilbyder et bredt udvalg af premium fødevarer, herunder konfekture, drikkevarer, snacks, pasta, bagværk og frostvarer på tværs af flere kategorier.",
+      "q2": "Hvor kan jeg købe Harvics produkter?",
+      "a2": "Vores produkter er tilgængelige i detailbutikker i over 40 lande. Brug vores butiksfinder eller kontaktside for at finde en forhandler i nærheden af dig.",
+      "q3": "Tilbyder I bulkbestillinger?",
+      "a3": "Ja, vi tilbyder rabatter på store ordrer til virksomheder og detailhandlere. Besøg vores side om rabatter på store ordrer for at få flere oplysninger."
+    },
+    "ordersShipping": {
+      "category": "Ordrer og forsendelse",
+      "q1": "Hvad er dine forsendelsesmuligheder?",
+      "a1": "Vi tilbyder forskellige forsendelsesmuligheder, herunder standard-, ekspres- og international forsendelse. Gratis fragt er tilgængelig på ordrer over $50.",
+      "q2": "Hvor lang tid tager leveringen?",
+      "a2": "Leveringstiderne varierer afhængigt af lokationen. Standardlevering tager typisk 5-7 hverdage, mens ekspreslevering tager 2-3 hverdage.",
+      "q3": "Kan jeg spore min ordre?",
+      "a3": "Ja, du kan spore din ordre ved hjælp af sporingsnummeret i din ordrebekræftelsesmail."
+    },
+    "accountPayments": {
+      "category": "Konto og betalinger",
+      "q1": "Hvordan opretter jeg en konto?",
+      "a1": "Klik på \"Log ind\" i overskriften, og vælg \"Opret konto\" for at oprette en ny konto.",
+      "q2": "Hvilke betalingsmetoder accepterer I?",
+      "a2": "Vi accepterer alle større kreditkort, debetkort, PayPal og bankoverførsler til B2B-ordrer.",
+      "q3": "Er mine betalingsoplysninger sikre?",
+      "a3": "Ja, vi bruger branchestandardkryptering til at beskytte dine betalingsoplysninger."
+    },
+    "returnsRefunds": {
+      "category": "Returnering og refusion",
+      "q1": "Hvad er jeres returpolitik?",
+      "a1": "Vi tilbyder 30 dages returret på uåbnede produkter i original emballage. Kontakt venligst vores kundeservice for at få godkendt returneringen.",
+      "q2": "Hvordan anmoder jeg om refusion?",
+      "a2": "Kontakt vores kundeserviceteam med dit ordrenummer og årsagen til returneringen. Vi behandler din refusion inden for 5-7 hverdage."
+    },
+    "contactCta": {
+      "title": "Har du stadig spørgsmål?",
+      "subtitle": "Vores kundeserviceteam er her for at hjælpe",
+      "button": "Kontakt os"
+    }
+  },
+  "careers": {
+    "title": "Karriere",
+    "pageTitle": "Karriere | Harvics",
+    "description": "Bliv en del af Harvics Global Ventures — udforsk muligheder i over 40 lande.",
+    "joinUs": "Deltag",
+    "heroTitle": "Byg fremtiden for global handel",
+    "heroDesc": "Vi vokser i over 40 lande. Bliv en del af et team, der bygger det AI-drevne operativsystem til global handel.",
+    "stats": {
+      "openPositions": "Ledige stillinger",
+      "countries": "Lande",
+      "industryVerticals": "Branchevertikaler",
+      "departmentsHiring": "Afdelinger Ansættelse"
+    },
+    "openPositionsByDept": "Ledige stillinger efter afdeling",
+    "departments": {
+      "sales": {
+        "name": "Salg og distribution",
+        "desc": "Øg omsætningen på tværs af over 40 markeder. Områdestyring, nøglekunder, distributørrelationer."
+      },
+      "supplyChain": {
+        "name": "Forsyningskæde og logistik",
+        "desc": "End-to-end forsyningskæde fra fabrik til hylde. Flådestyring, lagerstyring, levering til sidste kilometer."
+      },
+      "technology": {
+        "name": "Teknologi og kunstig intelligens",
+        "desc": "Byg Harvics OS — vores AI-drevne virksomhedsplatform. Full-stack, ML-udvikling, datalogi."
+      },
+      "finance": {
+        "name": "Finans og treasury",
+        "desc": "Multi-valuta treasury, handelsfinansiering, digitale HPay-betalinger, valutastyring på tværs af regioner."
+      },
+      "procurement": {
+        "name": "Indkøb og sourcing",
+        "desc": "Global sourcing fra over 15 oprindelseslande. Leverandørrevisioner, kvalitetskontrol, fabriks-direkte-programmer."
+      },
+      "hr": {
+        "name": "Menneskelige ressourcer",
+        "desc": "Talentrekruttering, L&D og performance management på tværs af forskellige geografiske områder og kulturer."
+      },
+      "legal": {
+        "name": "Jura og compliance",
+        "desc": "Handelsoverholdelse, sanktionsscreening, IP-beskyttelse, kontraktstyring på tværs af jurisdiktioner."
+      },
+      "marketing": {
+        "name": "Markedsføring og branding",
+        "desc": "Flersprogede kampagner, indhold med 38 sprogindstillinger, digital markedsføring, brandstrategi for 10 vertikaler."
+      }
+    },
+    "roles": "roller",
+    "whyHarvics": "Hvorfor Harvics",
+    "benefits": {
+      "globalMobility": {
+        "title": "Global mobilitet",
+        "desc": "Arbejd i Dubai, London, Karachi, Lahore og over 40 markeder"
+      },
+      "growthTrack": {
+        "title": "Vækstspor",
+        "desc": "Hurtig karriereudvikling i en skalerende virksomhed"
+      },
+      "aiCulture": {
+        "title": "AI-først kultur",
+        "desc": "Arbejd med banebrydende AI og realtids-intelligenssystemer"
+      },
+      "competitivePackage": {
+        "title": "Konkurrencedygtig pakke",
+        "desc": "Markedsførende kompensation, bolig og frynsegoder"
+      },
+      "learningBudget": {
+        "title": "Læringsbudget",
+        "desc": "Årligt udviklingsbudget for kurser, konferencer og certificeringer"
+      },
+      "flexibleWork": {
+        "title": "Fleksibelt arbejde",
+        "desc": "Hybride aftaler med regionale hub-kontorer verden over"
+      }
+    }
+  },
+  "strategy": {
+    "title": "Vores strategi",
+    "pageTitle": "Strategi | Harwich",
+    "description": "At bygge en bæredygtig fremtid gennem innovation og ekspertise",
+    "heroSubtitle": "At bygge en bæredygtig fremtid gennem innovation og ekspertise",
+    "pillars": {
+      "globalExpansion": {
+        "title": "Global ekspansion",
+        "desc": "Udvidelse af vores tilstedeværelse i vækstmarkeder og samtidig styrkelse af vores position i etablerede markeder"
+      },
+      "productInnovation": {
+        "title": "Produktinnovation",
+        "desc": "Investering i forskning og udvikling for at udvikle nye produkter, der imødekommer skiftende forbrugerpræferencer"
+      },
+      "sustainability": {
+        "title": "Bæredygtighed",
+        "desc": "Forpligtet til bæredygtige praksisser på tværs af vores forsyningskæde og drift"
+      },
+      "digitalTransformation": {
+        "title": "Digital transformation",
+        "desc": "Udnyttelse af teknologi til at forbedre kundeoplevelsen og driftseffektiviteten"
+      }
+    },
+    "vision": {
+      "title": "Vores vision",
+      "desc": "At være verdens førende virksomhed inden for premium forbrugsvarer, anerkendt for kvalitet, innovation og bæredygtighed."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Harvics Global Ventures | Premium Global Trading",
+      "description": "Førende global handelsvirksomhed, der leverer premiumprodukter på tværs af over 10 brancher. Har opereret i over 50 lande siden 2019."
+    },
+    "about": {
+      "title": "Om os | Harvics Global Ventures",
+      "description": "Opdag hvordan Harvics Global Ventures blev en førende kraft inden for global handel på tværs af mere end 40 lande og 10 brancher."
+    },
+    "contact": {
+      "title": "Kontakt os | Harvics Global Ventures",
+      "description": "Kontakt Harvics kontorer verden over i Mellemøsten, Sydasien, Europa, Afrika og Amerika."
+    },
+    "products": {
+      "title": "Produkter | Harvics Global Ventures",
+      "description": "Udforsk Harvics premium-produktsortiment på tværs af FMCG, tekstiler, råvarer og industrielle løsninger."
+    },
+    "careers": {
+      "title": "Karriere | Harvics Global Ventures",
+      "description": "Bliv en del af Harvics Global Ventures — udforsk muligheder i over 40 lande inden for FMCG, tekstiler, logistik og teknologi."
+    },
+    "media": {
+      "title": "Mediecenter | Harvics Global Ventures",
+      "description": "Harvics mediecenter — pressemeddelelser, seneste nyheder, brandaktiver og mediekontakter."
+    },
+    "strategy": {
+      "title": "Vores strategi | Harvics Global Ventures",
+      "description": "Harvics strategiske vision for global ekspansion, innovation, bæredygtighed og digital transformation."
+    },
+    "csr": {
+      "title": "Virksomheders sociale ansvar | Harvics",
+      "description": "Harvics CSR-initiativer — miljøforvaltning, samfundsprogrammer og etiske forretningspraksisser."
+    },
+    "faq": {
+      "title": "Ofte stillede spørgsmål | Harvics Global Ventures",
+      "description": "Ofte stillede spørgsmål om Harvics produkter, tjenester, bestilling og globale operationer."
+    },
+    "locations": {
+      "title": "Globale lokationer | Harvics",
+      "description": "Harvics kontorer og operationer i Mellemøsten, Sydasien, Europa, Afrika og Amerika."
+    },
+    "leadership": {
+      "title": "Lederteam | Harvics",
+      "description": "Mød lederteamet, der driver Harvics Global Ventures på tværs af mere end 40 markeder og 10 brancher."
+    },
+    "help": {
+      "title": "Hjælpecenter | Harvics",
+      "description": "Få hjælp med ordrer, konti, forsendelse og Harvics-tjenester."
+    },
+    "compliance": {
+      "title": "Overholdelse og etik | Harvics",
+      "description": "Harvics forpligtelse til overholdelse af lovgivningen, etisk forretningspraksis og globale standarder."
+    },
+    "history": {
+      "title": "Vores historie | Harvics",
+      "description": "Fra en startup i Dubai i 2019 til en global virksomhed i over 40 lande — Harvics' historie."
+    },
+    "newsletter": {
+      "title": "Nyhedsbrev | Harvics",
+      "description": "Tilmeld dig Harvics nyhedsbrev for at få brancheindsigt og produktlanceringer."
+    },
+    "login": {
+      "title": "Log ind | Harvics",
+      "description": "Log ind på din Harvics-konto for at administrere ordrer og få adgang til platformen."
+    },
+    "research": {
+      "title": "Forskning og innovation | Harvics",
+      "description": "Harvics forskningsinitiativer og innovationsprogrammer, der driver vores globale strategi."
+    },
+    "investorRelations": {
+      "title": "Investorrelationer | Harvics",
+      "description": "Investorinformation, finansielle rapporter og virksomhedsmeddelelser fra Harvics Global Ventures."
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Siden blev ikke fundet",
+      "heading": "404 — Side ikke fundet",
+      "description": "Den side, du leder efter, findes ikke eller er blevet flyttet.",
+      "goHome": "Gå til hjemmesiden",
+      "goBack": "Gå tilbage"
+    },
+    "serverError": {
+      "title": "Noget gik galt",
+      "heading": "Noget gik galt",
+      "description": "Vi beklager, men der skete noget uventet. Prøv venligst at opdatere siden.",
+      "tryAgain": "Prøv igen",
+      "reload": "Genindlæs siden",
+      "contactSupport": "Kontakt support"
+    },
+    "globalError": {
+      "title": "Applikationsfejl",
+      "heading": "Kritisk fejl",
+      "description": "Der opstod en kritisk fejl. Genindlæs siden.",
+      "reload": "Genindlæs applikationen"
+    }
+  },
+  "about": {
+    "title": "Om Harvics",
+    "subtitle": "Ekspertise inden for premium forbrugsvarer siden 2019",
+    "ourStory": "Vores historie",
+    "story1": "Harvics blev grundlagt i 2019 og har udviklet sig fra en visionær idé til en global leder inden for premium forbrugsvarer. Vores rejse er defineret af en utrættelig stræben efter kvalitet og et engagement i innovation.",
+    "story2": "Vi opererer i over 40 lande og leverer produkter, der beriger liv og sætter nye standarder i branchen. Fra vores ydmyge begyndelse til vores globale tilstedeværelse er vores værdier uændrede.",
+    "est2018": "Etableret 2019",
+    "countries40": "40+ lande",
+    "productLines6": "6 produktlinjer"
+  },
+  "csr": {
+    "hero": {
+      "title": "Virksomheders sociale ansvar",
+      "description": "Hos Harvics er vi forpligtet til at gøre en positiv forskel på verden. Vores CSR-initiativer fokuserer på bæredygtighed, samfundsstyrkelse og etisk forretningspraksis.",
+      "stats": {
+        "years": "År med indflydelse",
+        "countries": "Lande nået",
+        "lives": "Liv berørt"
+      }
+    },
+    "initiatives": {
+      "title": "Vores vigtigste initiativer",
+      "description": "Vi fokuserer på fire hovedsøjler for at drive bæredygtig forandring og skabe fælles værdi for alle interessenter."
+    },
+    "sustainability": {
+      "title": "Bæredygtighed",
+      "description": "Reducere vores miljømæssige fodaftryk gennem vedvarende energi og affaldsreduktion.",
+      "stats": {
+        "renewable": "Vedvarende energi",
+        "waste": "Affald omdirigeret",
+        "carbon": "Kulstofreduktion"
+      }
+    },
+    "community": {
+      "title": "Støtte til lokalsamfundet",
+      "description": "Styrkelse af lokalsamfund gennem uddannelse, sundhedspleje og økonomisk udvikling.",
+      "stats": {
+        "families": "Støttede familier",
+        "programs": "Aktive programmer",
+        "volunteers": "Frivillige"
+      }
+    },
+    "education": {
+      "title": "Undervisning",
+      "description": "At give adgang til kvalitetsuddannelse og stipendier til underprivilegerede studerende.",
+      "stats": {
+        "scholarships": "Stipendier",
+        "schools": "Partnerskoler",
+        "students": "Studerende berørt"
+      }
+    },
+    "health": {
+      "title": "Sundhed og velvære",
+      "description": "Forbedring af adgangen til sundhedspleje og ernæring i underforsynede regioner.",
+      "stats": {
+        "campaigns": "Sundhedskampagner",
+        "people": "Mennesker betjent",
+        "clinics": "Mobile klinikker"
+      }
+    },
+    "achievements": {
+      "2022": {
+        "title": "Bedste CSR-initiativ",
+        "description": "Hædret for vores innovative tilgang til socialt ansvar."
+      },
+      "2023": {
+        "title": "Fællesskabsmester",
+        "description": "Tildelt for vores omfattende opsøgende programmer i lokalsamfundet."
+      },
+      "2024": {
+        "title": "Global bæredygtighedspris",
+        "description": "Anerkendt for vores engagement i CO2-neutralitet."
+      },
+      "title": "Vores indflydelse",
+      "description": "Anerkendelse af vores milepæle i at skabe en bedre verden."
+    },
+    "cta": {
+      "title": "Vær med os og gør en forskel",
+      "description": "Bliv partner med os, eller lær mere om, hvordan vi bygger en bæredygtig fremtid.",
+      "contact": "Kontakt CSR-teamet",
+      "learnMore": "Lær mere"
+    }
+  },
+  "harvicsHouse": {
+    "title": "Harvics House",
+    "subtitle": "En arv af ekspertise og tradition",
+    "aboutTitle": "Velkommen til Harvics Hus",
+    "description": "Harvics House repræsenterer toppen af vores engagement i kvalitet og kulturarv. Her samler vi det fineste udvalg af vores premiumprodukter, præsenteret i et miljø, der afspejler vores værdier om elegance, tradition og innovation.",
+    "description2": "Udforsk vores eksklusive kollektioner og opdag historien bag hvert produkt, der bærer navnet Harvics."
   }
 }

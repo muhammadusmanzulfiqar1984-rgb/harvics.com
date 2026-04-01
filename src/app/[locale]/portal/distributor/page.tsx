@@ -8,7 +8,7 @@ export async function generateStaticParams() {
 }
 
 export default async function DistributorPortalPage() {
-  const allowedRoles: UserRole[] = ['distributor']
+  const allowedRoles: UserRole[] = ['distributor', 'sales_officer', 'company_admin', 'admin', 'hq', 'super_admin']
 
   return (
     <AuthGuard allowedRoles={allowedRoles}>

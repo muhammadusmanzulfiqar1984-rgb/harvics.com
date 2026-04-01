@@ -1,34 +1,43 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Inter, Playfair_Display, Noto_Sans_Arabic, JetBrains_Mono } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
-import BackgroundMusic from '@/components/ui/BackgroundMusic';
-import AutoBugDetector from '@/components/shared/AutoBugDetector';
-import ChatbotWidget from '@/components/ui/ChatbotWidget';
-import GlobalScrollReveal from '@/components/shared/GlobalScrollReveal';
-import FrontendWatchdogClient from '@/components/shared/FrontendWatchdogClient';
+import dynamic from 'next/dynamic'
 import { RegionProvider } from '@/contexts/RegionContext';
 import { CountryProvider } from '@/contexts/CountryContext';
-import { TerritoryProvider } from '@/contexts/TerritoryContext';
 import { FoundationProviders } from '@/components/shared/FoundationProviders';
 import ErrorBoundary from '@/components/shared/ErrorBoundary';
+import PageTransition from '@/components/ui/PageTransition';
 import { SUPPORTED_LOCALES, getValidLocale } from '@/config/locales';
 import { isRTL } from '@/utils/rtl';
 import ConditionalHeader from '@/components/layout/ConditionalHeader';
-import Footer from '@/components/layout/Footer';
+import ConditionalFooter from '@/components/layout/ConditionalFooter';
 import { BackendStatusProvider } from '@/context/BackendStatusContext';
 import { GeographicSyncWrapper } from '@/components/shared/GeographicSyncWrapper';
 import { getFolderBasedCategories } from '@/data/folderBasedProducts';
+import { generateSEOMetadata, generateOrganizationSchema } from '@/lib/seo';
 import '../globals.css'
+import '@/styles/apple-effects.css'
+
+// Lazy-load non-critical widgets so they don't block initial page render
+const BackgroundMusic = dynamic(() => import('@/components/ui/BackgroundMusic'))
+const AutoBugDetector = dynamic(() => import('@/components/shared/AutoBugDetector'))
+const ChatbotWidget = dynamic(() => import('@/features/ai/ChatbotWidget'))
+const GlobalScrollReveal = dynamic(() => import('@/components/shared/GlobalScrollReveal'))
+const FrontendWatchdogClient = dynamic(() => import('@/components/shared/FrontendWatchdogClient'))
+const AppleStyleScrollEffects = dynamic(() => import('@/components/effects/AppleStyleScrollEffects'))
 
 const inter = Inter({ subsets: ['latin'] })
 const playfairDisplay = Playfair_Display({ subsets: ['latin', 'latin-ext'], variable: '--font-playfair-display', weight: ['400', '500', '600', '700', '800', '900'] });
+const notoSansArabic = Noto_Sans_Arabic({ subsets: ['arabic'], variable: '--font-arabic', weight: ['400', '500', '600', '700'], display: 'swap' });
+const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono', weight: ['400', '500', '700'], display: 'swap' });
 
-export const metadata: Metadata = {
-  title: 'Harvics - Corporate Website',
-  description: 'Harvics Corporate Website - Dubai, UAE. Since 2019. Food, Beverages, Services and More.',
-}
+export const metadata: Metadata = generateSEOMetadata({
+  title: 'Harvics Global Ventures',
+  description: 'Leading global trading company delivering premium products across 10+ industries. Textiles, FMCG, commodities, industrial solutions, minerals, oil & gas, real estate, sourcing, technology, and AI automation. Operating in 50+ countries since 2019.',
+  url: 'https://www.harvics.com',
+})
 
 // Supported locales - matches the locale files we have
 const locales = [...SUPPORTED_LOCALES];
@@ -145,7 +154,20 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} dir={textDirection} suppressHydrationWarning>
-      <body className={`${inter.className} ${playfairDisplay.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Organization Schema for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(generateOrganizationSchema()),
+          }}
+        />
+      </head>
+      <body className={`${inter.className} ${playfairDisplay.variable} ${notoSansArabic.variable} ${jetbrainsMono.variable}`} suppressHydrationWarning>
+        {/* Accessibility: Skip to content */}
+        <a href="#main-content" className="skip-to-content">
+          Skip to main content
+        </a>
         <NextIntlClientProvider messages={messages}>
           <ErrorBoundary>
             {/* Foundation Providers - LocaleProvider and GeoProvider */}
@@ -153,7 +175,6 @@ export default async function LocaleLayout({
             <FoundationProviders initialLocale={locale}>
               {/* Legacy Providers - Keep for backward compatibility */}
               <ErrorBoundary>
-                <TerritoryProvider>
                   <RegionProvider>
                     <CountryProvider>
                       <GeographicSyncWrapper />
@@ -175,20 +196,22 @@ export default async function LocaleLayout({
                           '/dashboard'
                         ]} 
                       />
-                      {/* Page content */}
-                      <div>
-                        {children}
-                      </div>
-                      {/* Footer - shown on all pages by default */}
-                      <Footer />
+                      {/* Page content with transition */}
+                      <PageTransition>
+                        <div id="main-content" suppressHydrationWarning>
+                          {children}
+                        </div>
+                      </PageTransition>
+                      {/* Footer - hidden on homepage (shown as snap Frame 9 there) */}
+                      <ConditionalFooter />
                       <FrontendWatchdogClient />
                       <BackgroundMusic />
                       <AutoBugDetector />
                       <GlobalScrollReveal />
                       <ChatbotWidget />
+                      <AppleStyleScrollEffects />
                     </CountryProvider>
                   </RegionProvider>
-                </TerritoryProvider>
               </ErrorBoundary>
             </FoundationProviders>
             </BackendStatusProvider>

@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "nl",
+    "language": "Dutch",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Dutch. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Dutch",
+      "translation": "Welkom bij"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Dutch",
+      "translation": "Harwich"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Dutch",
+      "translation": "Uitmuntendheid in hoogwaardige consumentengoederen sinds 2019."
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Dutch",
+      "translation": "Een toonaangevend wereldwijd bedrijf in consumentengoederen dat hoogwaardige voedingsproducten levert in diverse categorieën, met internationale kwaliteitsnormen."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Dutch",
+      "translation": "Ontdek producten"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Dutch",
+      "translation": "Neem contact met ons op"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Dutch",
+      "translation": "Meer informatie"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Dutch",
+      "translation": "Uitmuntendheid in hoogwaardige consumentengoederen sinds"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Dutch",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Dutch",
+      "translation": "Londen • Milaan • New York"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Dutch",
+      "translation": "Bakkerij"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Dutch",
+      "translation": "Dranken"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Dutch",
+      "translation": "Banketbakkerij"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Dutch",
+      "translation": "Culinaire"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Dutch",
+      "translation": "Diepvriesproducten"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Dutch",
+      "translation": "Pasta"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Dutch",
+      "translation": "Snacks"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Dutch",
+      "translation": "ESG-rapport 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Dutch",
+      "translation": "Londen • Milaan • New York"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Dutch",
+      "translation": "Thuis"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Dutch",
+      "translation": "Over"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Dutch",
+      "translation": "Over ons"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Dutch",
+      "translation": "Merkverhaal"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Dutch",
+      "translation": "Producten"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Dutch",
+      "translation": "Onze producten"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Dutch",
+      "translation": "Bekijk alle producten"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Dutch",
+      "translation": "MVO"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Dutch",
+      "translation": "Investeerdersrelaties"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Dutch",
+      "translation": "Investeerders"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Dutch",
+      "translation": "Media"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Dutch",
+      "translation": "Neem contact met ons op"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Dutch",
+      "translation": "Harvics Huis"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Dutch",
+      "translation": "Landen"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Dutch",
+      "translation": "Portalen"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Dutch",
+      "translation": "Inloggen"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Dutch",
+      "translation": "Verlanglijst"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Dutch",
+      "translation": "Winkelwagen"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Dutch",
+      "translation": "Hulp"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Dutch",
+      "translation": "Vind een winkel"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Dutch",
+      "translation": "Geld"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Dutch",
+      "translation": "Verkoop"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Dutch",
+      "translation": "Aanbiedingen"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Dutch",
+      "translation": "Donkere modus"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Dutch",
+      "translation": "Creditcard"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Dutch",
+      "translation": "M&S Rewards-creditcard"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Dutch",
+      "translation": "Clubbeloningen"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Dutch",
+      "translation": "Onze creditcards"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Dutch",
+      "translation": "Verzekering"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Dutch",
+      "translation": "Woningverzekering"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Dutch",
+      "translation": "Reisverzekering"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Dutch",
+      "translation": "Reisdiensten"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Dutch",
+      "translation": "Reisgeld"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Dutch",
+      "translation": "Wisselkoersen"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Dutch",
+      "translation": "Aanvullende diensten"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Dutch",
+      "translation": "Sparen en beleggen"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Dutch",
+      "translation": "Persoonlijke leningen"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Dutch",
+      "translation": "Financiële ondersteuning"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Dutch",
+      "translation": "Huidige verkoop"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Dutch",
+      "translation": "Opruiming"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Dutch",
+      "translation": "Seizoensaanbiedingen"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Dutch",
+      "translation": "Speciale aanbiedingen"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Dutch",
+      "translation": "Promoties"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Dutch",
+      "translation": "Korting bij bulkbestellingen"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Dutch",
+      "translation": "Onze producten"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Dutch",
+      "translation": "Bekijk alle producten"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Dutch",
+      "translation": "Onze productcategorieën"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Dutch",
+      "translation": "Ontdek ons premium assortiment producten, met zorg en uitmuntendheid vervaardigd."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Dutch",
+      "translation": "Niveau 1: Categorieën"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Dutch",
+      "translation": "Niveau 2: Modules"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Dutch",
+      "translation": "Niveau 3: KPI-schermen"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Dutch",
+      "translation": "Niveau 4: Acties"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Dutch",
+      "translation": "Navigatie opnieuw instellen"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Dutch",
+      "translation": "Voor deze categorie zijn geen subcategorieën beschikbaar."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Dutch",
+      "translation": "Producten"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Dutch",
+      "translation": "Subcategorieën"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Dutch",
+      "translation": "Bakkerij"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Dutch",
+      "translation": "Versgebakken producten en gebak."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Dutch",
+      "translation": "Dranken"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Dutch",
+      "translation": "Verfrissende drankjes voor elke gelegenheid."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Dutch",
+      "translation": "Banketbakkerij"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Dutch",
+      "translation": "Zoete lekkernijen en verwennerijen."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Dutch",
+      "translation": "Culinaire"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Dutch",
+      "translation": "Essentiële ingrediënten voor in uw keuken."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Dutch",
+      "translation": "Diepvriesproducten"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Dutch",
+      "translation": "Handige en heerlijke diepvriesmaaltijden."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Dutch",
+      "translation": "Pasta"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Dutch",
+      "translation": "Authentieke pastasoorten."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Dutch",
+      "translation": "Snacks"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Dutch",
+      "translation": "Lekkere snacks voor elk moment van de dag."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Dutch",
+      "translation": "Over Harvics"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Dutch",
+      "translation": "Uitmuntendheid in hoogwaardige consumentengoederen sinds 2019."
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Dutch",
+      "translation": "Ons verhaal"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Dutch",
+      "translation": "Harvics, opgericht in 2019, is uitgegroeid van een visionair idee tot een wereldwijde leider in hoogwaardige consumentengoederen. Onze reis wordt gekenmerkt door een onophoudelijke zoektocht naar kwaliteit en een toewijding aan innovatie."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Dutch",
+      "translation": "We zijn actief in meer dan 40 landen en leveren producten die levens verrijken en nieuwe normen in de branche stellen. Van onze bescheiden beginjaren tot onze wereldwijde aanwezigheid zijn onze waarden onveranderd gebleven."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Dutch",
+      "translation": "Opgericht in 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Dutch",
+      "translation": "Meer dan 40 landen"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Dutch",
+      "translation": "6 productlijnen"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Dutch",
+      "translation": "Maatschappelijk verantwoord ondernemen"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Dutch",
+      "translation": "Bij Harvics zetten we ons in om een positieve impact op de wereld te hebben. Onze MVO-initiatieven richten zich op duurzaamheid, het versterken van de gemeenschap en ethische bedrijfspraktijken."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Dutch",
+      "translation": "Jarenlange impact"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Dutch",
+      "translation": "Bereikte landen"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Dutch",
+      "translation": "Levens geraakt"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Dutch",
+      "translation": "Onze belangrijkste initiatieven"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Dutch",
+      "translation": "We richten ons op vier hoofdpijlers om duurzame verandering te bewerkstelligen en gedeelde waarde te creëren voor alle belanghebbenden."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Dutch",
+      "translation": "Duurzaamheid"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Dutch",
+      "translation": "Het verkleinen van onze ecologische voetafdruk door middel van hernieuwbare energie en afvalvermindering."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Dutch",
+      "translation": "Hernieuwbare energie"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Dutch",
+      "translation": "Afval gescheiden"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Dutch",
+      "translation": "Koolstofreductie"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Dutch",
+      "translation": "Gemeenschapssteun"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Dutch",
+      "translation": "Lokale gemeenschappen versterken door middel van onderwijs, gezondheidszorg en economische ontwikkeling."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Dutch",
+      "translation": "Gezinnen ondersteund"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Dutch",
+      "translation": "Actieve programma's"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Dutch",
+      "translation": "Vrijwilligers"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Dutch",
+      "translation": "Onderwijs"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Dutch",
+      "translation": "Het bieden van toegang tot kwalitatief goed onderwijs en beurzen voor kansarme studenten."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Dutch",
+      "translation": "Beurzen"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Dutch",
+      "translation": "Partnerscholen"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Dutch",
+      "translation": "Studenten getroffen"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Dutch",
+      "translation": "Gezondheid en welzijn"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Dutch",
+      "translation": "Verbetering van de toegang tot gezondheidszorg en voeding in achtergestelde regio's."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Dutch",
+      "translation": "Gezondheidscampagnes"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Dutch",
+      "translation": "Mensen bediend"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Dutch",
+      "translation": "Mobiele klinieken"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Dutch",
+      "translation": "Beste MVO-initiatief"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Dutch",
+      "translation": "Onderscheiden voor onze innovatieve aanpak van maatschappelijke verantwoordelijkheid."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Dutch",
+      "translation": "Gemeenschapskampioen"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Dutch",
+      "translation": "Bekroond voor onze uitgebreide programma's gericht op maatschappelijke betrokkenheid."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Dutch",
+      "translation": "Wereldwijde Duurzaamheidsprijs"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Dutch",
+      "translation": "Erkend voor onze inzet voor CO2-neutraliteit."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Dutch",
+      "translation": "Onze impact"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Dutch",
+      "translation": "We erkennen onze mijlpalen in het creëren van een betere wereld."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Dutch",
+      "translation": "Doe met ons mee en maak het verschil!"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Dutch",
+      "translation": "Werk met ons samen of kom meer te weten over hoe wij bouwen aan een duurzame toekomst."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Dutch",
+      "translation": "Neem contact op met het CSR-team."
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Dutch",
+      "translation": "Meer informatie"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Dutch",
+      "translation": "Neem contact op"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Dutch",
+      "translation": "We horen graag van u. Neem contact met ons op via een van deze kanalen."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Dutch",
+      "translation": "Telefoon"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Dutch",
+      "translation": "E-mail"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Dutch",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Dutch",
+      "translation": "Bel nu"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Dutch",
+      "translation": "E-mail verzenden"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Dutch",
+      "translation": "Stuur ons een bericht"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Dutch",
+      "translation": "Mediacentrum"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Dutch",
+      "translation": "Mediacentrum | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Dutch",
+      "translation": "Persmateriaal, merkmateriaal en het laatste nieuws van Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Dutch",
+      "translation": "Zakelijk"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Dutch",
+      "translation": "Nieuws en persberichten"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Dutch",
+      "translation": "De nieuwste aankondigingen, marktuitbreidingen, productlanceringen en bedrijfsupdates van Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Dutch",
+      "translation": "Lees het laatste nieuws"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Dutch",
+      "translation": "Fotogalerij"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Dutch",
+      "translation": "Merkmateriaal in hoge resolutie, productfotografie, foto's van faciliteiten en verslaggeving van evenementen voor mediagebruik."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Dutch",
+      "translation": "Bekijk de galerij"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Dutch",
+      "translation": "Contactpersonen voor de media"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Dutch",
+      "translation": "Neem contact op met ons communicatieteam voor persvragen, interviewverzoeken en aankondigingen van samenwerkingen."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Dutch",
+      "translation": "Neem contact op met het persteam."
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Dutch",
+      "translation": "Bestreken markten"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Dutch",
+      "translation": "Brancheverticalen"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Dutch",
+      "translation": "Opgericht in Dubai"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Dutch",
+      "translation": "Ondersteunde talen"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Dutch",
+      "translation": "Recente krantenkoppen"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Dutch",
+      "translation": "Harvics breidt activiteiten in de fast-moving consumer goods (FMCG) sector uit naar 5 nieuwe Zuidoost-Aziatische markten."
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Dutch",
+      "translation": "Nieuw AI-gestuurd platform voor de toeleveringsketen gelanceerd voor wereldwijde distributie"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Dutch",
+      "translation": "Harvics bereikt mijlpaal van CO2-neutraliteit voor al haar vestigingen"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Dutch",
+      "translation": "Strategisch partnerschap met toonaangevende textielfabrikanten in Zuid-Azië"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Dutch",
+      "translation": "Harvics Huis"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Dutch",
+      "translation": "Een erfenis van uitmuntendheid en traditie"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Dutch",
+      "translation": "Welkom bij Harvics House"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Dutch",
+      "translation": "Harvics House vertegenwoordigt het hoogtepunt van onze toewijding aan kwaliteit en erfgoed. Hier brengen we de mooiste selectie van onze premium producten samen, tentoongesteld in een omgeving die onze waarden van elegantie, traditie en innovatie weerspiegelt."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Dutch",
+      "translation": "Ontdek onze exclusieve collecties en leer meer over het verhaal achter elk product met de naam Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Dutch",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Dutch",
+      "translation": "Uitmuntendheid in hoogwaardige consumentengoederen sinds 2019."
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Dutch",
+      "translation": "Een toonaangevend wereldwijd bedrijf in consumentengoederen dat hoogwaardige voedingsproducten levert in diverse categorieën volgens internationale kwaliteitsnormen."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Dutch",
+      "translation": "Londen • Milaan • New York"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Dutch",
+      "translation": "Sinds 2019"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Dutch",
+      "translation": "Harvics Nieuws"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Dutch",
+      "translation": "Abonneer u om meldingen en updates te ontvangen."
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Dutch",
+      "translation": "Aanmelden"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Dutch",
+      "translation": "Zorgen over naleving"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Dutch",
+      "translation": "Spreek je uit als je je zorgen maakt over naleving van de regels of ethiek."
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Dutch",
+      "translation": "Spreek je uit!"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Dutch",
+      "translation": "Neem contact met ons op"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Dutch",
+      "translation": "Neem contact op met ons team."
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Dutch",
+      "translation": "Neem contact met ons op"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Dutch",
+      "translation": "Nuttige links"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Dutch",
+      "translation": "Vraag het aan Harwich"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Dutch",
+      "translation": "Zoek naar vacatures"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Dutch",
+      "translation": "Meld je aan voor nieuws"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Dutch",
+      "translation": "Bedrijf"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Dutch",
+      "translation": "Wereldwijde adressen"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Dutch",
+      "translation": "Strategie"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Dutch",
+      "translation": "Ons leiderschap"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Dutch",
+      "translation": "Merken van A tot Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Dutch",
+      "translation": "Onze geschiedenis"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Dutch",
+      "translation": "Duurzaamheid"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Dutch",
+      "translation": "Nieuws"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Dutch",
+      "translation": "Contactpersonen voor de media"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Dutch",
+      "translation": "Afbeeldingen"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Dutch",
+      "translation": "Investeerders"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Dutch",
+      "translation": "Corporate governance"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Dutch",
+      "translation": "Aandelen, ADR's en obligaties"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Dutch",
+      "translation": "Publicaties"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Dutch",
+      "translation": "Volg ons op"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Dutch",
+      "translation": "0 problemen"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Dutch",
+      "translation": "Sitemap"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Dutch",
+      "translation": "Uitschrijven"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Dutch",
+      "translation": "Hulp"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Dutch",
+      "translation": "Privacy"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Dutch",
+      "translation": "Cookies"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Dutch",
+      "translation": "Gebruiksvoorwaarden"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Dutch",
+      "translation": "Toegankelijkheid"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Dutch",
+      "translation": "Koolstofefficiëntie"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Dutch",
+      "translation": "Leveranciers"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Dutch",
+      "translation": "Sociale media"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Dutch",
+      "translation": "Cookie-instellingen"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Dutch",
+      "translation": "Premium kwaliteit"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Dutch",
+      "translation": "E-mailadres"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Dutch",
+      "translation": "Voer uw e-mailadres in"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Dutch",
+      "translation": "Abonneren"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Dutch",
+      "translation": "Abonneren..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Dutch",
+      "translation": "Over ons"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Dutch",
+      "translation": "Media"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Dutch",
+      "translation": "Zoek naar producten, merken of categorieën."
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Dutch",
+      "translation": "Geen resultaten gevonden"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Dutch",
+      "translation": "Zoeken..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Dutch",
+      "translation": "Resultaten"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Dutch",
+      "translation": "Chat met ons"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Dutch",
+      "translation": "Typ je bericht..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Dutch",
+      "translation": "Versturen"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Dutch",
+      "translation": "Dichtbij"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Dutch",
+      "translation": "Hallo! Hoe kan ik u vandaag van dienst zijn?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Dutch",
+      "translation": "Sorry, ik heb dat niet begrepen. Zou u het alstublieft anders kunnen formuleren?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Dutch",
+      "translation": "Ik kan u helpen met productinformatie, bestellingen of algemene vragen. Wat wilt u weten?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Dutch",
+      "translation": "Voor verdere hulp kunt u contact met ons opnemen via support@harvics.com of bellen naar +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Dutch",
+      "translation": "Chat met ons"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Dutch",
+      "translation": "Laden..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Dutch",
+      "translation": "Fout"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Dutch",
+      "translation": "Succes"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Dutch",
+      "translation": "Redden"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Dutch",
+      "translation": "Annuleren"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Dutch",
+      "translation": "Verwijderen"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Dutch",
+      "translation": "Bewerking"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Dutch",
+      "translation": "Weergave"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Dutch",
+      "translation": "Indienen"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Dutch",
+      "translation": "Zoekopdracht"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Dutch",
+      "translation": "Filter"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Dutch",
+      "translation": "Duidelijk"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Dutch",
+      "translation": "Download"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Dutch",
+      "translation": "Uploaden"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Dutch",
+      "translation": "Ja"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Dutch",
+      "translation": "Nee"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Dutch",
+      "translation": "Dichtbij"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Dutch",
+      "translation": "Rug"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Dutch",
+      "translation": "Volgende"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Dutch",
+      "translation": "Vorig"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Dutch",
+      "translation": "Acties"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Dutch",
+      "translation": "Status"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Dutch",
+      "translation": "Datum"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Dutch",
+      "translation": "Naam"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Dutch",
+      "translation": "E-mail"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Dutch",
+      "translation": "Telefoon"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Dutch",
+      "translation": "Adres"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Dutch",
+      "translation": "Land"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Dutch",
+      "translation": "Stad"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Dutch",
+      "translation": "Alle"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Dutch",
+      "translation": "Geen"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Dutch",
+      "translation": "Select"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Dutch",
+      "translation": "Taal selecteren"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Dutch",
+      "translation": "Land selecteren"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Dutch",
+      "translation": "Meer weergeven"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Dutch",
+      "translation": "Minder weergeven"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Dutch",
+      "translation": "Vereist"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Dutch",
+      "translation": "Menu"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Dutch",
+      "translation": "Bekijk producten"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Dutch",
+      "translation": "Speel muziek"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Dutch",
+      "translation": "Pauzeer de muziek"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Dutch",
+      "translation": "Muziek dempen"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Dutch",
+      "translation": "Muziek inschakelen"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Dutch",
+      "translation": "Ons wereldwijde bereik"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Dutch",
+      "translation": "Sinds"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Dutch",
+      "translation": "Grote markt"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Dutch",
+      "translation": "Grote markten"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Dutch",
+      "translation": "Aanwezigheid"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Dutch",
+      "translation": "Landen die bediend worden"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Dutch",
+      "translation": "Grote markten"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Dutch",
+      "translation": "Productcategorieën"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Dutch",
+      "translation": "Gevestigd"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Dutch",
+      "translation": "Territoriale hiërarchie"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Dutch",
+      "translation": "Volledig pad"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Dutch",
+      "translation": "Huidig grondgebied"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Dutch",
+      "translation": "Geen artikelen"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Dutch",
+      "translation": "Bol"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Dutch",
+      "translation": "Continent"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Dutch",
+      "translation": "Regio"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Dutch",
+      "translation": "Land"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Dutch",
+      "translation": "Stad"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Dutch",
+      "translation": "Wijk"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Dutch",
+      "translation": "Locatie"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Dutch",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Dutch",
+      "translation": "Wereldwijd"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Dutch",
+      "translation": "Selecteer regio"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Dutch",
+      "translation": "Klantgegevens"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Dutch",
+      "translation": "Gekozen"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Dutch",
+      "translation": "Volledige naam"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Dutch",
+      "translation": "Vul uw volledige naam in"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Dutch",
+      "translation": "Naam is verplicht"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Dutch",
+      "translation": "E-mailadres"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Dutch",
+      "translation": "jouw.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Dutch",
+      "translation": "Een e-mailadres is verplicht."
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Dutch",
+      "translation": "Voer een geldig e-mailadres in."
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Dutch",
+      "translation": "Telefoonnummer"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Dutch",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Dutch",
+      "translation": "Telefoonnummer is verplicht"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Dutch",
+      "translation": "Adres"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Dutch",
+      "translation": "Uw adres"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Dutch",
+      "translation": "Een adres is verplicht."
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Dutch",
+      "translation": "Ik ga ermee akkoord marketingberichten en updates te ontvangen."
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Dutch",
+      "translation": "Verzenden en verdergaan"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Dutch",
+      "translation": "Verzenden..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Dutch",
+      "translation": "Overslaan en verdergaan"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Dutch",
+      "translation": "Kernprestatie-indicatoren"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Dutch",
+      "translation": "Bestel vandaag nog!"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Dutch",
+      "translation": "Ingediend via Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Dutch",
+      "translation": "Leveringen in afwachting"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Dutch",
+      "translation": "Over toegewezen routes"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Dutch",
+      "translation": "Detailhandelaren"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Dutch",
+      "translation": "Actieve verkooppunten binnen dit bereik"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Dutch",
+      "translation": "T & A Score"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Dutch",
+      "translation": "Territoriale dekking"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Dutch",
+      "translation": "Financiën & Inventaris"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Dutch",
+      "translation": "SKU's met een lage voorraad"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Dutch",
+      "translation": "Activeer aanvulling"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Dutch",
+      "translation": "Openstaande facturen"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Dutch",
+      "translation": "Afhalen mogelijk"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Dutch",
+      "translation": "Kredietlimiet"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Dutch",
+      "translation": "Toegewezen door de financiële afdeling."
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Dutch",
+      "translation": "Automatische goedkeuring, voorraadbeheer en factuurherinneringen ingeschakeld"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Dutch",
+      "translation": "Zelfgoedkeuring"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Dutch",
+      "translation": "Voorraadaanvulling"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Dutch",
+      "translation": "Factuurherinneringen"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Dutch",
+      "translation": "AI-aanbevelingen"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Dutch",
+      "translation": "Risiconiveau"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Dutch",
+      "translation": "Gebaseerd op kredietgebruik en betalingsgeschiedenis."
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Dutch",
+      "translation": "Voorgestelde volgorde"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Dutch",
+      "translation": "Door AI aanbevolen SKU's om te bestellen"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Dutch",
+      "translation": "Volgende actie"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Dutch",
+      "translation": "Acties en richtlijnen"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Dutch",
+      "translation": "Klachten"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Dutch",
+      "translation": "Problemen met detailhandelaren die nog moeten worden opgelost."
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Dutch",
+      "translation": "Speelboek"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Dutch",
+      "translation": "Geef prioriteit aan leveringen die vóór 12.00 uur moeten worden afgeleverd."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Dutch",
+      "translation": "Sluit alle openstaande klachten binnen 48 uur af."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Dutch",
+      "translation": "Activeer aanvulling voor artikelen met een lage voorraad (automatisch inkooporder aanmaken)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Dutch",
+      "translation": "Grondgebied"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Dutch",
+      "translation": "Bestellingen deze maand"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Dutch",
+      "translation": "Bestellingen in behandeling"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Dutch",
+      "translation": "Bezorgde bestellingen"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Dutch",
+      "translation": "Territoriale informatie"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Dutch",
+      "translation": "Land"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Dutch",
+      "translation": "Stad"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Dutch",
+      "translation": "Regio"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Dutch",
+      "translation": "Snelle acties"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Dutch",
+      "translation": "Nieuwe Orde"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Dutch",
+      "translation": "Bestellingen bekijken"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Dutch",
+      "translation": "Facturen bekijken"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Dutch",
+      "translation": "Profielinstellingen"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Dutch",
+      "translation": "Dashboard wordt geladen..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Dutch",
+      "translation": "Fout"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Dutch",
+      "translation": "Mijn bestellingen"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Dutch",
+      "translation": "Bestelnummer"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Dutch",
+      "translation": "Datum"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Dutch",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Dutch",
+      "translation": "Artikelen"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Dutch",
+      "translation": "Totaalbedrag"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Dutch",
+      "translation": "Acties"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Dutch",
+      "translation": "Bekijk details"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Dutch",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Dutch",
+      "translation": "Startdatum"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Dutch",
+      "translation": "Einddatum"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Dutch",
+      "translation": "Alle statussen"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Dutch",
+      "translation": "Filters wissen"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Dutch",
+      "translation": "In behandeling"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Dutch",
+      "translation": "Verwerking"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Dutch",
+      "translation": "Afgeleverd"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Dutch",
+      "translation": "Geannuleerd"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Dutch",
+      "translation": "Geen bestellingen gevonden"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Dutch",
+      "translation": "Bestellingen laden..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Dutch",
+      "translation": "Pagina"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Dutch",
+      "translation": "van"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Dutch",
+      "translation": "Vorig"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Dutch",
+      "translation": "Volgende"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Dutch",
+      "translation": "Bestelgegevens"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Dutch",
+      "translation": "Terug naar bestellingen"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Dutch",
+      "translation": "Bestelnummer"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Dutch",
+      "translation": "Status"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Dutch",
+      "translation": "Besteldatum"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Dutch",
+      "translation": "Leveringsdatum"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Dutch",
+      "translation": "Bezorgadres"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Dutch",
+      "translation": "Notities"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Dutch",
+      "translation": "Bestelartikelen"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Dutch",
+      "translation": "Product"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Dutch",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Dutch",
+      "translation": "Hoeveelheid"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Dutch",
+      "translation": "Eenheidsprijs"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Dutch",
+      "translation": "Totaal"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Dutch",
+      "translation": "Totaalbedrag"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Dutch",
+      "translation": "Statustijdlijn"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Dutch",
+      "translation": "Bestelling niet gevonden"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Dutch",
+      "translation": "Nieuwe bestelling plaatsen"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Dutch",
+      "translation": "Bestelartikelen"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Dutch",
+      "translation": "Item toevoegen"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Dutch",
+      "translation": "Er zijn nog geen items toegevoegd. Klik op \"Item toevoegen\" om te beginnen."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Dutch",
+      "translation": "Bestelgegevens"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Dutch",
+      "translation": "Leveringsdatum"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Dutch",
+      "translation": "Bezorgadres"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Dutch",
+      "translation": "Notities"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Dutch",
+      "translation": "Totaalbedrag"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Dutch",
+      "translation": "Bestelling plaatsen"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Dutch",
+      "translation": "Orde scheppen..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Dutch",
+      "translation": "Annuleren"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Dutch",
+      "translation": "Selecteer product"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Dutch",
+      "translation": "Product"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Dutch",
+      "translation": "Hoeveelheid"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Dutch",
+      "translation": "Eenheidsprijs"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Dutch",
+      "translation": "Verwijderen"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Dutch",
+      "translation": "Subtotaal"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Dutch",
+      "translation": "Bestelnummer"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Dutch",
+      "translation": "Er is minimaal één bestelartikel vereist."
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Dutch",
+      "translation": "Product vereist"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Dutch",
+      "translation": "De hoeveelheid moet groter zijn dan 0."
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Dutch",
+      "translation": "De eenheidsprijs mag niet negatief zijn."
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Dutch",
+      "translation": "Ongeldig formaat voor de leverdatum"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Dutch",
+      "translation": "De leverdatum mag niet in het verleden liggen."
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Dutch",
+      "translation": "Mijn facturen"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Dutch",
+      "translation": "Factuurnummer"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Dutch",
+      "translation": "Factuurdatum"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Dutch",
+      "translation": "Twee afspraakjes"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Dutch",
+      "translation": "Hoeveelheid"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Dutch",
+      "translation": "Betaald bedrag"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Dutch",
+      "translation": "Betalingsstatus"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Dutch",
+      "translation": "Betalingsstatus"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Dutch",
+      "translation": "Alle statussen"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Dutch",
+      "translation": "Filters wissen"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Dutch",
+      "translation": "Betaald"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Dutch",
+      "translation": "Onbetaald"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Dutch",
+      "translation": "Gedeeltelijk"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Dutch",
+      "translation": "Geen facturen gevonden"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Dutch",
+      "translation": "Facturen worden geladen..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Dutch",
+      "translation": "Mijn profiel"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Dutch",
+      "translation": "Accountgegevens"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Dutch",
+      "translation": "Distributeur-ID"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Dutch",
+      "translation": "Grondgebied"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Dutch",
+      "translation": "Land"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Dutch",
+      "translation": "Stad"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Dutch",
+      "translation": "Account aangemaakt"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Dutch",
+      "translation": "Profiel bijwerken"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Dutch",
+      "translation": "Naam"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Dutch",
+      "translation": "E-mail"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Dutch",
+      "translation": "Telefoon"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Dutch",
+      "translation": "Adres"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Dutch",
+      "translation": "Taal"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Dutch",
+      "translation": "Munteenheid"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Dutch",
+      "translation": "Wijzigingen opslaan"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Dutch",
+      "translation": "Besparing..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Dutch",
+      "translation": "Profiel succesvol bijgewerkt"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Dutch",
+      "translation": "Profiel laden..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Dutch",
+      "translation": "Ongeldig e-mailformaat"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Dutch",
+      "translation": "Ongeldig telefoonformaat"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Dutch",
+      "translation": "Fout"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Dutch",
+      "translation": "Laden..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Dutch",
+      "translation": "Redden"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Dutch",
+      "translation": "Annuleren"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Dutch",
+      "translation": "Rug"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Dutch",
+      "translation": "Indienen"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Dutch",
+      "translation": "Verwijderen"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Dutch",
+      "translation": "Bewerking"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Dutch",
+      "translation": "Weergave"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Dutch",
+      "translation": "Zoekopdracht"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Dutch",
+      "translation": "Filter"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Dutch",
+      "translation": "Duidelijk"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Dutch",
+      "translation": "Toepassen"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Dutch",
+      "translation": "Dichtbij"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Dutch",
+      "translation": "Bevestigen"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Dutch",
+      "translation": "Ja"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Dutch",
+      "translation": "Nee"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Dutch",
+      "translation": "Juridisch besturingssysteem"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Dutch",
+      "translation": "Juridisch OS"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Dutch",
+      "translation": "Toegang geweigerd"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Dutch",
+      "translation": "Je hebt geen toestemming om toegang te krijgen tot de Legal OS-module."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Dutch",
+      "translation": "Dashboard"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Dutch",
+      "translation": "Contracten"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Dutch",
+      "translation": "Certificaten"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Dutch",
+      "translation": "Naleving"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Dutch",
+      "translation": "Juridisch dashboard"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Dutch",
+      "translation": "Overzicht van juridische procedures en nalevingsstatus"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Dutch",
+      "translation": "Actieve handelsmerken"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Dutch",
+      "translation": "Actieve contracten"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Dutch",
+      "translation": "Nalevingsstatus"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Dutch",
+      "translation": "Handelsmerken"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Dutch",
+      "translation": "Beheer merkregistraties en -aanvragen."
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Dutch",
+      "translation": "Nieuw handelsmerk toevoegen"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Dutch",
+      "translation": "Land"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Dutch",
+      "translation": "Status"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Dutch",
+      "translation": "Alle landen"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Dutch",
+      "translation": "Alle statussen"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Dutch",
+      "translation": "Filters wissen"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Dutch",
+      "translation": "Merknaam"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Dutch",
+      "translation": "Klas"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Dutch",
+      "translation": "Land"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Dutch",
+      "translation": "Aanvraagnummer"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Dutch",
+      "translation": "Status"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Dutch",
+      "translation": "Vervaldatum"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Dutch",
+      "translation": "Acties"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Dutch",
+      "translation": "Handelsmerk bewerken"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Dutch",
+      "translation": "Nieuw handelsmerk toevoegen"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Dutch",
+      "translation": "Bekijk handelsmerk"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Dutch",
+      "translation": "Merknaam"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Dutch",
+      "translation": "Klasnummer"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Dutch",
+      "translation": "Land"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Dutch",
+      "translation": "Aanvraagnummer"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Dutch",
+      "translation": "Status"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Dutch",
+      "translation": "Vervaldatum"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Dutch",
+      "translation": "Documenten"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Dutch",
+      "translation": "Geen documenten bijgevoegd"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Dutch",
+      "translation": "Document toevoegen"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Dutch",
+      "translation": "Verwijderen"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Dutch",
+      "translation": "Het laden van handelsmerken is mislukt."
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Dutch",
+      "translation": "Het opslaan van het handelsmerk is mislukt. Probeer het opnieuw."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Dutch",
+      "translation": "Juridische zaken"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Dutch",
+      "translation": "Beheer juridische zaken en volg hun status."
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Dutch",
+      "translation": "Nieuwe zaak"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Dutch",
+      "translation": "Zaaktitel"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Dutch",
+      "translation": "Casetype"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Dutch",
+      "translation": "Land"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Dutch",
+      "translation": "Beschrijving"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Dutch",
+      "translation": "Toegewezen aan"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Dutch",
+      "translation": "Status"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Dutch",
+      "translation": "Datum van de hoorzitting"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Dutch",
+      "translation": "Zaaktitel"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Dutch",
+      "translation": "Type"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Dutch",
+      "translation": "Land"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Dutch",
+      "translation": "Toegewezen aan"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Dutch",
+      "translation": "Status"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Dutch",
+      "translation": "Datum van de hoorzitting"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Dutch",
+      "translation": "Acties"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Dutch",
+      "translation": "Open"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Dutch",
+      "translation": "In behandeling"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Dutch",
+      "translation": "Gesloten"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Dutch",
+      "translation": "Geannuleerd"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Dutch",
+      "translation": "Kaartweergave van de vloot"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Dutch",
+      "translation": "Realtime tracking van verkoopmedewerkers en bezorgvoertuigen"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Dutch",
+      "translation": "Actieve werknemers"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Dutch",
+      "translation": "Geen actieve werknemers"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Dutch",
+      "translation": "Laden..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Dutch",
+      "translation": "Route opnieuw afspelen"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Dutch",
+      "translation": "Medewerker"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Dutch",
+      "translation": "Snelheid"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Dutch",
+      "translation": "Reset"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Dutch",
+      "translation": "Toneelstuk"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Dutch",
+      "translation": "Pauze"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Dutch",
+      "translation": "punten"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Dutch",
+      "translation": "Geen routegegevens beschikbaar"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Dutch",
+      "translation": "Route laden..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Dutch",
+      "translation": "Producten van concurrenten"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Dutch",
+      "translation": "Volg productinformatie van concurrenten"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Dutch",
+      "translation": "Product toevoegen"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Dutch",
+      "translation": "Voeg een concurrerend product toe"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Dutch",
+      "translation": "Merk"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Dutch",
+      "translation": "SKU-naam"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Dutch",
+      "translation": "Categorie"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Dutch",
+      "translation": "Maat"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Dutch",
+      "translation": "Prijs"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Dutch",
+      "translation": "Munteenheid"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Dutch",
+      "translation": "Land"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Dutch",
+      "translation": "Merk"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Dutch",
+      "translation": "SKU-naam"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Dutch",
+      "translation": "Categorie"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Dutch",
+      "translation": "Maat"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Dutch",
+      "translation": "Prijs"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Dutch",
+      "translation": "Land"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Dutch",
+      "translation": "Datum toegevoegd"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Dutch",
+      "translation": "Producten laden mislukt"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Dutch",
+      "translation": "Het aanmaken van het product is mislukt. Probeer het opnieuw."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Dutch",
+      "translation": "Geen concurrerende producten gevonden"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Dutch",
+      "translation": "Producten laden..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Dutch",
+      "translation": "Concurrentendashboard"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Dutch",
+      "translation": "Analyses en inzichten over concurrerende producten"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Dutch",
+      "translation": "Totale producten"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Dutch",
+      "translation": "Gevolgde merken"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Dutch",
+      "translation": "Landen"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Dutch",
+      "translation": "Categorieën"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Dutch",
+      "translation": "Producten van het merk"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Dutch",
+      "translation": "Producten per land"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Dutch",
+      "translation": "Producten per categorie"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Dutch",
+      "translation": "Statistieken laden..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Dutch",
+      "translation": "Geen statistieken beschikbaar"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Dutch",
+      "translation": "Overzicht"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Dutch",
+      "translation": "Bestellingen"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Dutch",
+      "translation": "Inventaris"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Dutch",
+      "translation": "Logistiek"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Dutch",
+      "translation": "Financiën"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Dutch",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Dutch",
+      "translation": "HR"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Dutch",
+      "translation": "Leidinggevend"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Dutch",
+      "translation": "Investeerder"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Dutch",
+      "translation": "Juridische informatie/Intellectuele eigendomsrechten"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Dutch",
+      "translation": "Concurrent"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Dutch",
+      "translation": "Import/Export"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Dutch",
+      "translation": "GPS-tracking"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Dutch",
+      "translation": "Lokalisatie"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Dutch",
+      "translation": "Werkstromen"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Dutch",
+      "translation": "Beheerder"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Dutch",
+      "translation": "CRM-besturingssysteem"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Dutch",
+      "translation": "Klant 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Dutch",
+      "translation": "Complete klantprofielen, interactiegeschiedenis en relatiebeheer."
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Dutch",
+      "translation": "Digitale campagnes"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Dutch",
+      "translation": "Multichannel marketingcampagnes (Instagram, Facebook, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Dutch",
+      "translation": "Leads en kansen"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Dutch",
+      "translation": "Leadmanagement, kwalificatie en het genereren van leads."
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Dutch",
+      "translation": "Klantenservice"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Dutch",
+      "translation": "Ticketbeheer, klantenservice en probleemoplossing"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Dutch",
+      "translation": "Loyaliteitsprogramma's"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Dutch",
+      "translation": "Retailer loyaliteitsprogramma's, gamificatie en beloningsmanagement"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Dutch",
+      "translation": "Klant 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Dutch",
+      "translation": "Nieuwe klant"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Dutch",
+      "translation": "Totaal aantal klanten"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Dutch",
+      "translation": "Actief"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Dutch",
+      "translation": "Nieuw"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Dutch",
+      "translation": "Tevredenheid"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Dutch",
+      "translation": "Klantenbeheer"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Dutch",
+      "translation": "Bekijk en beheer uw klantrelaties, interacties en campagnes."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Dutch",
+      "translation": "Laden..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Dutch",
+      "translation": "Fout bij het laden van CRM-gegevens."
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Dutch",
+      "translation": "Overzicht"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Dutch",
+      "translation": "Bestellingen"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Dutch",
+      "translation": "Inventaris"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Dutch",
+      "translation": "Logistiek"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Dutch",
+      "translation": "Financiën"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Dutch",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Dutch",
+      "translation": "HR"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Dutch",
+      "translation": "Leidinggevend"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Dutch",
+      "translation": "Investeerder"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Dutch",
+      "translation": "Juridische informatie/Intellectuele eigendomsrechten"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Dutch",
+      "translation": "Concurrent"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Dutch",
+      "translation": "Import/Export"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Dutch",
+      "translation": "GPS-tracking"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Dutch",
+      "translation": "Lokalisatie"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Dutch",
+      "translation": "Werkstromen"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Dutch",
+      "translation": "Beheerder"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Dutch",
+      "translation": "Klanten"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Dutch",
+      "translation": "Medewerkers"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Dutch",
+      "translation": "Winst"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Dutch",
+      "translation": "Leveranciersdashboard laden…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Dutch",
+      "translation": "Inkooporders"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Dutch",
+      "translation": "Opgevoed door Harvics"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Dutch",
+      "translation": "Verzendingen / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Dutch",
+      "translation": "Deze week aangenomen"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Dutch",
+      "translation": "Facturen aangemaakt"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Dutch",
+      "translation": "Wachtend op betaling"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Dutch",
+      "translation": "Betalingen in behandeling"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Dutch",
+      "translation": "Gepland voor release"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Dutch",
+      "translation": "Kwaliteit / klachten"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Dutch",
+      "translation": "Open tickets"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Dutch",
+      "translation": "Voorspelling (voor de komende 4 weken)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Dutch",
+      "translation": "AI-placeholder"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Dutch",
+      "translation": "Acties van leveranciers"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Dutch",
+      "translation": "Bevestig de aankomende zendingen en werk het GRN-schema bij."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Dutch",
+      "translation": "Controleer openstaande facturen en deel betalingsadviezen."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Dutch",
+      "translation": "Los openstaande kwaliteitsklachten op met bewijsmateriaal van de kwaliteitsborging."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Dutch",
+      "translation": "Gebruikersnaam"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Dutch",
+      "translation": "Wachtwoord"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Dutch",
+      "translation": "E-mail"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Dutch",
+      "translation": "Indienen"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Dutch",
+      "translation": "Annuleren"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Dutch",
+      "translation": "Redden"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Dutch",
+      "translation": "Verwijderen"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Dutch",
+      "translation": "Zoekopdracht"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Dutch",
+      "translation": "Filter"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Dutch",
+      "translation": "Reset"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Dutch",
+      "translation": "Dichtbij"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Dutch",
+      "translation": "Rug"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Dutch",
+      "translation": "Volgende"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Dutch",
+      "translation": "Vorig"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Dutch",
+      "translation": "Bevestigen"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Dutch",
+      "translation": "Herinner je me nog?"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Dutch",
+      "translation": "Wachtwoord vergeten?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Dutch",
+      "translation": "Een e-mailadres is verplicht."
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Dutch",
+      "translation": "Voer een geldig e-mailadres in."
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Dutch",
+      "translation": "Producten"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Dutch",
+      "translation": "Welke producten biedt Harvics aan?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Dutch",
+      "translation": "Wij bieden een breed assortiment hoogwaardige voedingsproducten aan, waaronder zoetwaren, dranken, snacks, pasta, bakkerijproducten en diepvriesproducten in diverse categorieën."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Dutch",
+      "translation": "Waar kan ik Harvics-producten kopen?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Dutch",
+      "translation": "Onze producten zijn verkrijgbaar in winkels in meer dan 40 landen. Gebruik onze winkellocator of contactpagina om een verkooppunt bij u in de buurt te vinden."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Dutch",
+      "translation": "Biedt u de mogelijkheid tot bulkbestellingen?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Dutch",
+      "translation": "Ja, we bieden kortingen voor grote bestellingen aan bedrijven en detailhandelaren. Ga naar onze pagina 'Kortingen voor grote bestellingen' voor meer informatie."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Dutch",
+      "translation": "Bestellingen en verzending"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Dutch",
+      "translation": "Wat zijn jullie verzendopties?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Dutch",
+      "translation": "Wij bieden verschillende verzendopties aan, waaronder standaard, express en internationale verzending. Gratis verzending is beschikbaar voor bestellingen boven de $50."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Dutch",
+      "translation": "Hoe lang duurt de levering?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Dutch",
+      "translation": "De levertijden variëren per locatie. Standaardlevering duurt doorgaans 5-7 werkdagen, terwijl expresslevering 2-3 werkdagen duurt."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Dutch",
+      "translation": "Kan ik mijn bestelling volgen?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Dutch",
+      "translation": "Ja, u kunt uw bestelling volgen met behulp van het trackingnummer dat u in de orderbevestigingsmail hebt ontvangen."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Dutch",
+      "translation": "Account & Betalingen"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Dutch",
+      "translation": "Hoe maak ik een account aan?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Dutch",
+      "translation": "Klik op 'Inloggen' in de header en selecteer 'Account aanmaken' om een nieuw account te registreren."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Dutch",
+      "translation": "Welke betaalmethoden accepteert u?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Dutch",
+      "translation": "Voor zakelijke bestellingen accepteren we alle gangbare creditcards, betaalkaarten, PayPal en bankoverschrijvingen."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Dutch",
+      "translation": "Zijn mijn betaalgegevens veilig?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Dutch",
+      "translation": "Ja, we gebruiken standaardversleuteling om uw betalingsgegevens te beschermen."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Dutch",
+      "translation": "Retourneren en terugbetalingen"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Dutch",
+      "translation": "Wat is jullie retourbeleid?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Dutch",
+      "translation": "Wij bieden een retourtermijn van 30 dagen voor ongeopende producten in de originele verpakking. Neem contact op met onze klantenservice voor een retourmachtiging."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Dutch",
+      "translation": "Hoe vraag ik een terugbetaling aan?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Dutch",
+      "translation": "Neem contact op met onze klantenservice en vermeld uw bestelnummer en de reden voor de retourzending. Wij verwerken uw terugbetaling binnen 5-7 werkdagen."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Dutch",
+      "translation": "Heb je nog vragen?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Dutch",
+      "translation": "Ons klantenserviceteam staat klaar om u te helpen."
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Dutch",
+      "translation": "Neem contact met ons op"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Dutch",
+      "translation": "Carrières"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Dutch",
+      "translation": "Carrières | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Dutch",
+      "translation": "Sluit je aan bij Harvics Global Ventures en ontdek carrièremogelijkheden in meer dan 40 landen."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Dutch",
+      "translation": "Doe mee!"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Dutch",
+      "translation": "Bouw aan de toekomst van de wereldhandel."
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Dutch",
+      "translation": "We groeien in meer dan 40 landen. Sluit je aan bij een team dat het AI-gestuurde besturingssysteem voor wereldwijde handel bouwt."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Dutch",
+      "translation": "Openstaande vacatures"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Dutch",
+      "translation": "Landen"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Dutch",
+      "translation": "Brancheverticalen"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Dutch",
+      "translation": "Afdelingen die personeel werven"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Dutch",
+      "translation": "Openstaande vacatures per afdeling"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Dutch",
+      "translation": "Verkoop en distributie"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Dutch",
+      "translation": "Verhoog de omzet in meer dan 40 markten. Gebiedsbeheer, belangrijke klanten, relaties met distributeurs."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Dutch",
+      "translation": "Supply Chain & Logistiek"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Dutch",
+      "translation": "Complete toeleveringsketen van fabriek tot schap. Wagenparkbeheer, warehousing, levering aan de eindklant."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Dutch",
+      "translation": "Technologie en AI"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Dutch",
+      "translation": "Bouw Harvics OS – ons AI-gestuurde bedrijfsplatform. Full-stack ontwikkeling, machine learning en data science."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Dutch",
+      "translation": "Financiën en schatkist"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Dutch",
+      "translation": "Treasury in meerdere valuta, handelsfinanciering, HPay digitale betalingen, valutabeheer in verschillende regio's."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Dutch",
+      "translation": "Inkoop en sourcing"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Dutch",
+      "translation": "Wereldwijde inkoop vanuit meer dan 15 landen. Leveranciersaudits, kwaliteitscontrole, programma's voor directe inkoop bij de fabriek."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Dutch",
+      "translation": "Personeelszaken"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Dutch",
+      "translation": "Talentwerving, training en ontwikkeling, en prestatiebeheer in diverse geografische gebieden en culturen."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Dutch",
+      "translation": "Juridische zaken en naleving van wet- en regelgeving"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Dutch",
+      "translation": "Handelsnaleving, sanctiescreening, bescherming van intellectueel eigendom, contractbeheer in verschillende rechtsgebieden."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Dutch",
+      "translation": "Marketing & Merk"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Dutch",
+      "translation": "Campagnes in meerdere talen, content in 38 talen, digitale marketing, merkstrategie voor 10 branches."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Dutch",
+      "translation": "rollen"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Dutch",
+      "translation": "Waarom Harvics?"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Dutch",
+      "translation": "Wereldwijde mobiliteit"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Dutch",
+      "translation": "Werkzaamheden in Dubai, Londen, Karachi, Lahore en meer dan 40 andere markten."
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Dutch",
+      "translation": "Groeitraject"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Dutch",
+      "translation": "Snelle carrièregroei binnen een groeiend bedrijf"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Dutch",
+      "translation": "AI-eerst cultuur"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Dutch",
+      "translation": "Werk met geavanceerde AI- en realtime-intelligentiesystemen."
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Dutch",
+      "translation": "Concurrerend pakket"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Dutch",
+      "translation": "Marktconform salaris, huisvesting en secundaire arbeidsvoorwaarden"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Dutch",
+      "translation": "Leerbudget"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Dutch",
+      "translation": "Jaarlijks ontwikkelingsbudget voor cursussen, conferenties en certificeringen"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Dutch",
+      "translation": "Flexibel werken"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Dutch",
+      "translation": "Hybride samenwerkingsverbanden met regionale vestigingen wereldwijd."
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Dutch",
+      "translation": "Onze strategie"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Dutch",
+      "translation": "Strategie | Harwich"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Dutch",
+      "translation": "Een duurzame toekomst opbouwen door innovatie en uitmuntendheid."
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Dutch",
+      "translation": "Een duurzame toekomst opbouwen door innovatie en uitmuntendheid."
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Dutch",
+      "translation": "Wereldwijde expansie"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Dutch",
+      "translation": "Onze aanwezigheid in opkomende markten uitbreiden en tegelijkertijd onze positie in gevestigde markten versterken."
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Dutch",
+      "translation": "Productinnovatie"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Dutch",
+      "translation": "Investeren in onderzoek en ontwikkeling om nieuwe producten te ontwikkelen die aansluiten bij de veranderende voorkeuren van de consument."
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Dutch",
+      "translation": "Duurzaamheid"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Dutch",
+      "translation": "Wij zetten ons in voor duurzame werkwijzen in onze gehele toeleveringsketen en bedrijfsvoering."
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Dutch",
+      "translation": "Digitale transformatie"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Dutch",
+      "translation": "Technologie inzetten om de klantervaring en operationele efficiëntie te verbeteren."
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Dutch",
+      "translation": "Onze visie"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Dutch",
+      "translation": "Het is onze missie om 's werelds toonaangevende producent van hoogwaardige consumentengoederen te zijn, erkend om kwaliteit, innovatie en duurzaamheid."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Dutch",
+      "translation": "Harvics Global Ventures | Premium Global Trading"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Dutch",
+      "translation": "Toonaangevend wereldwijd handelsbedrijf dat hoogwaardige producten levert aan meer dan 10 sectoren. Actief in meer dan 50 landen sinds 2019."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Dutch",
+      "translation": "Over ons | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Dutch",
+      "translation": "Ontdek hoe Harvics Global Ventures een toonaangevende speler is geworden in de wereldhandel, actief in meer dan 40 landen en 10 sectoren."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Dutch",
+      "translation": "Neem contact met ons op | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Dutch",
+      "translation": "Neem contact op met de kantoren van Harvics wereldwijd in het Midden-Oosten, Zuid-Azië, Europa, Afrika en Noord- en Zuid-Amerika."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Dutch",
+      "translation": "Producten | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Dutch",
+      "translation": "Ontdek het hoogwaardige productassortiment van Harvic op het gebied van fast-moving consumer goods (FMCG), textiel, grondstoffen en industriële oplossingen."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Dutch",
+      "translation": "Carrières | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Dutch",
+      "translation": "Sluit je aan bij Harvics Global Ventures en ontdek carrièremogelijkheden in meer dan 40 landen in de sectoren fast-moving consumer goods (FMCG), textiel, logistiek en technologie."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Dutch",
+      "translation": "Mediacentrum | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Dutch",
+      "translation": "Harvics mediacentrum — persberichten, het laatste nieuws, merkmateriaal en mediacontacten."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Dutch",
+      "translation": "Onze strategie | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Dutch",
+      "translation": "De strategische visie van Harvic op wereldwijde expansie, innovatie, duurzaamheid en digitale transformatie."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Dutch",
+      "translation": "Maatschappelijk verantwoord ondernemen | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Dutch",
+      "translation": "De MVO-initiatieven van Harvics omvatten milieubeheer, maatschappelijke programma's en ethische bedrijfspraktijken."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Dutch",
+      "translation": "Veelgestelde vragen | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Dutch",
+      "translation": "Veelgestelde vragen over de producten, diensten, bestellingen en wereldwijde activiteiten van Harvics."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Dutch",
+      "translation": "Wereldwijde locaties | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Dutch",
+      "translation": "Harvics heeft kantoren en vestigingen in het Midden-Oosten, Zuid-Azië, Europa, Afrika en Noord- en Zuid-Amerika."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Dutch",
+      "translation": "Leiderschapsteam | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Dutch",
+      "translation": "Maak kennis met het managementteam dat Harvics Global Ventures aanstuurt in meer dan 40 markten en 10 verschillende branches."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Dutch",
+      "translation": "Helpcentrum | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Dutch",
+      "translation": "Krijg hulp bij bestellingen, accounts, verzending en Harvics-services."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Dutch",
+      "translation": "Compliance en ethiek | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Dutch",
+      "translation": "Harvics zet zich in voor naleving van de regelgeving, ethische bedrijfspraktijken en wereldwijde normen."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Dutch",
+      "translation": "Onze geschiedenis | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Dutch",
+      "translation": "Van een startup in Dubai in 2019 tot een wereldwijd bedrijf met vestigingen in meer dan 40 landen: het verhaal van Harvics."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Dutch",
+      "translation": "Nieuwsbrief | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Dutch",
+      "translation": "Abonneer u op de nieuwsbrief van Harvics voor branche-inzichten en productlanceringen."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Dutch",
+      "translation": "Inloggen | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Dutch",
+      "translation": "Log in op uw Harvics-account om bestellingen te beheren en toegang te krijgen tot het platform."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Dutch",
+      "translation": "Onderzoek en innovatie | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Dutch",
+      "translation": "De onderzoeksinitiatieven en innovatieprogramma's van Harvic vormen de basis van onze wereldwijde strategie."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Dutch",
+      "translation": "Investor Relations | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Dutch",
+      "translation": "Beleggersinformatie, financiële rapporten en bedrijfsmededelingen van Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Dutch",
+      "translation": "Pagina niet gevonden"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Dutch",
+      "translation": "404 — Pagina niet gevonden"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Dutch",
+      "translation": "De pagina die u zoekt bestaat niet of is verplaatst."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Dutch",
+      "translation": "Ga naar de homepage"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Dutch",
+      "translation": "Ga terug"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Dutch",
+      "translation": "Er is iets misgegaan"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Dutch",
+      "translation": "Er is iets misgegaan."
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Dutch",
+      "translation": "Het spijt ons, maar er is iets onverwachts gebeurd. Probeer de pagina opnieuw te laden."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Dutch",
+      "translation": "Probeer het opnieuw"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Dutch",
+      "translation": "Pagina opnieuw laden"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Dutch",
+      "translation": "Neem contact op met de ondersteuning."
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Dutch",
+      "translation": "Toepassingsfout"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Dutch",
+      "translation": "Kritieke fout"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Dutch",
+      "translation": "Er is een kritieke fout opgetreden. Vernieuw de pagina."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Dutch",
+      "translation": "Applicatie opnieuw laden"
+    }
+  }
+}

@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "fi",
+    "language": "Finnish",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Finnish. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Finnish",
+      "translation": "Tervetuloa"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Finnish",
+      "translation": "Harwich"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Finnish",
+      "translation": "Huippuosaamista premium-kulutustavaroissa vuodesta 2019 lähtien"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Finnish",
+      "translation": "Johtava maailmanlaajuinen kulutustavarayritys, joka toimittaa korkealaatuisia elintarvikkeita eri kategorioihin kansainvälisten laatustandardien mukaisesti."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Finnish",
+      "translation": "Tutustu tuotteisiin"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Finnish",
+      "translation": "Lue lisää"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Finnish",
+      "translation": "Huippuosaamista premium-kulutustavaroissa vuodesta"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Finnish",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Finnish",
+      "translation": "Lontoo • Milano • New York"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Finnish",
+      "translation": "Leipomo"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Finnish",
+      "translation": "Juomat"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Finnish",
+      "translation": "Makeiset"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Finnish",
+      "translation": "Kulinaarinen"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Finnish",
+      "translation": "Pakastetut ruoat"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Finnish",
+      "translation": "Pasta"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Finnish",
+      "translation": "Välipalat"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Finnish",
+      "translation": "ESG-raportti 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Finnish",
+      "translation": "Lontoo • Milano • New York"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Finnish",
+      "translation": "Kotiin"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Finnish",
+      "translation": "Noin"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Finnish",
+      "translation": "Tietoa meistä"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Finnish",
+      "translation": "Bränditarina"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Finnish",
+      "translation": "Tuotteet"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Finnish",
+      "translation": "Tuotteemme"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Finnish",
+      "translation": "Näytä kaikki tuotteet"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Finnish",
+      "translation": "Yritysten yhteiskuntavastuu"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Finnish",
+      "translation": "Sijoittajasuhteet"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Finnish",
+      "translation": "Sijoittajat"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Finnish",
+      "translation": "Media"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Finnish",
+      "translation": "Harvicsin talo"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Finnish",
+      "translation": "Maat"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Finnish",
+      "translation": "Portaalit"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Finnish",
+      "translation": "Kirjaudu sisään"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Finnish",
+      "translation": "Toivelista"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Finnish",
+      "translation": "Ostoskori"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Finnish",
+      "translation": "Auttaa"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Finnish",
+      "translation": "Etsi myymälä"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Finnish",
+      "translation": "Raha"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Finnish",
+      "translation": "Myynti"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Finnish",
+      "translation": "Tarjoukset"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Finnish",
+      "translation": "Tumma tila"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Finnish",
+      "translation": "Luottokortti"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Finnish",
+      "translation": "M&S Rewards -luottokortti"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Finnish",
+      "translation": "Klubipalkinnot"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Finnish",
+      "translation": "Luottokorttimme"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Finnish",
+      "translation": "Vakuutus"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Finnish",
+      "translation": "Kotivakuutus"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Finnish",
+      "translation": "Matkavakuutus"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Finnish",
+      "translation": "Matkapalvelut"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Finnish",
+      "translation": "Matkarahat"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Finnish",
+      "translation": "Valuuttakurssit"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Finnish",
+      "translation": "Lisäpalvelut"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Finnish",
+      "translation": "Säästöt ja sijoittaminen"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Finnish",
+      "translation": "Henkilökohtaiset lainat"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Finnish",
+      "translation": "Taloudellinen tuki"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Finnish",
+      "translation": "Nykyinen myynti"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Finnish",
+      "translation": "Puhdistus"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Finnish",
+      "translation": "Kausimyynnit"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Finnish",
+      "translation": "Erikoistarjoukset"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Finnish",
+      "translation": "Kampanjat"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Finnish",
+      "translation": "Irtotilausalennukset"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Finnish",
+      "translation": "Tuotteemme"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Finnish",
+      "translation": "Näytä kaikki tuotteet"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Finnish",
+      "translation": "Tuotekategoriamme"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Finnish",
+      "translation": "Tutustu premium-tuotevalikoimaamme, joka on valmistettu huolella ja erinomaisuudella."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Finnish",
+      "translation": "Taso 1: Luokat"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Finnish",
+      "translation": "Taso 2: Moduulit"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Finnish",
+      "translation": "Taso 3: KPI-näytöt"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Finnish",
+      "translation": "Taso 4: Toiminnot"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Finnish",
+      "translation": "Palauta navigointi"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Finnish",
+      "translation": "Tälle kategorialle ei ole saatavilla alakategorioita."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Finnish",
+      "translation": "Tuotteet"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Finnish",
+      "translation": "Alaluokat"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Finnish",
+      "translation": "Leipomo"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Finnish",
+      "translation": "Tuoreita leivonnaisia ja leivonnaisia."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Finnish",
+      "translation": "Juomat"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Finnish",
+      "translation": "Virkistäviä juomia jokaiseen tilaisuuteen."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Finnish",
+      "translation": "Makeiset"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Finnish",
+      "translation": "Makeita herkkuja ja herkkuja."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Finnish",
+      "translation": "Kulinaarinen"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Finnish",
+      "translation": "Keittiösi välttämättömät ainekset."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Finnish",
+      "translation": "Pakastetut ruoat"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Finnish",
+      "translation": "Käteviä ja herkullisia pakasteaterioita."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Finnish",
+      "translation": "Pasta"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Finnish",
+      "translation": "Aitoja pastalajikkeita."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Finnish",
+      "translation": "Välipalat"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Finnish",
+      "translation": "Herkullisia välipaloja mihin tahansa aikaan päivästä."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Finnish",
+      "translation": "Tietoja Harvicsista"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Finnish",
+      "translation": "Huippuosaamista premium-kulutustavaroissa vuodesta 2019 lähtien"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Finnish",
+      "translation": "Tarinamme"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Finnish",
+      "translation": "Vuonna 2019 perustettu Harvics on kasvanut visionäärisestä ideasta premium-kulutustavaroiden globaaliksi johtajaksi. Matkaamme määrittelee väsymätön laadun tavoittelu ja sitoutuminen innovaatioihin."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Finnish",
+      "translation": "Toimimme yli 40 maassa ja toimitamme tuotteita, jotka rikastuttavat elämää ja asettavat uusia standardeja alalle. Vaatimattomista alkuajoistamme aina globaaliin läsnäoloomme asti arvomme ovat pysyneet muuttumattomina."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Finnish",
+      "translation": "Per. 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Finnish",
+      "translation": "Yli 40 maata"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Finnish",
+      "translation": "6 tuotelinjaa"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Finnish",
+      "translation": "Yritysten yhteiskuntavastuu"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Finnish",
+      "translation": "Harvicsilla olemme sitoutuneet vaikuttamaan myönteisesti maailmaan. Yritysvastuualoitteemme keskittyvät kestävään kehitykseen, yhteisön voimaannuttamiseen ja eettisiin liiketoimintatapoihin."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Finnish",
+      "translation": "Vaikutusvuosia"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Finnish",
+      "translation": "Maat, joissa on saavutettu"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Finnish",
+      "translation": "Elämät kosketettuina"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Finnish",
+      "translation": "Keskeiset aloitteemme"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Finnish",
+      "translation": "Keskitymme neljään pääpilariin edistääksemme kestävää muutosta ja luodaksemme yhteistä arvoa kaikille sidosryhmille."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Finnish",
+      "translation": "Kestävä kehitys"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Finnish",
+      "translation": "Ympäristöjalanjälkemme pienentäminen uusiutuvan energian ja jätteen vähentämisen avulla."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Finnish",
+      "translation": "Uusiutuva energia"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Finnish",
+      "translation": "Jätteen ohjautuminen"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Finnish",
+      "translation": "Hiilidioksidin vähentäminen"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Finnish",
+      "translation": "Yhteisön tuki"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Finnish",
+      "translation": "Paikallisyhteisöjen voimaannuttaminen koulutuksen, terveydenhuollon ja talouskehityksen avulla."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Finnish",
+      "translation": "Tuetut perheet"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Finnish",
+      "translation": "Aktiiviset ohjelmat"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Finnish",
+      "translation": "Vapaaehtoiset"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Finnish",
+      "translation": "Koulutus"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Finnish",
+      "translation": "Tarjota laadukasta koulutusta ja stipendejä heikommassa asemassa oleville opiskelijoille."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Finnish",
+      "translation": "Apurahat"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Finnish",
+      "translation": "Yhteistyökoulut"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Finnish",
+      "translation": "Opiskelijat, joihin tämä vaikuttaa"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Finnish",
+      "translation": "Terveys ja hyvinvointi"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Finnish",
+      "translation": "Terveydenhuollon ja ravitsemuksen saatavuuden parantaminen alipalvelluilla alueilla."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Finnish",
+      "translation": "Terveyskampanjat"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Finnish",
+      "translation": "Palveltuja ihmisiä"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Finnish",
+      "translation": "Liikkuvat klinikat"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Finnish",
+      "translation": "Paras yritysvastuualoite"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Finnish",
+      "translation": "Palkittu innovatiivisesta lähestymistavastamme yhteiskuntavastuuseen."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Finnish",
+      "translation": "Yhteisön mestari"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Finnish",
+      "translation": "Palkittu laajoista yhteisötyöohjelmistamme."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Finnish",
+      "translation": "Globaali kestävän kehityksen palkinto"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Finnish",
+      "translation": "Tunnustettu sitoutumisestamme hiilineutraaliuteen."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Finnish",
+      "translation": "Vaikutuksemme"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Finnish",
+      "translation": "Tunnustamme virstanpylväät paremman maailman luomisessa."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Finnish",
+      "translation": "Liity mukaan tekemään muutosta"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Finnish",
+      "translation": "Ryhdy yhteistyökumppaniksemme tai lue lisää siitä, miten rakennamme kestävää tulevaisuutta."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä yritysvastuutiimiin"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Finnish",
+      "translation": "Lue lisää"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Finnish",
+      "translation": "Kuulisimme mielellämme sinusta. Ota meihin yhteyttä jonkin näistä kanavista kautta."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Finnish",
+      "translation": "Puhelin"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Finnish",
+      "translation": "Sähköposti"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Finnish",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Finnish",
+      "translation": "Soita nyt"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Finnish",
+      "translation": "Lähetä sähköpostia"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Finnish",
+      "translation": "Lähetä meille viesti"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Finnish",
+      "translation": "Mediakeskus"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Finnish",
+      "translation": "Mediakeskus | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Finnish",
+      "translation": "Lehdistöresursseja, brändiresursseja ja uusimpia uutisia Harvics Global Venturesilta."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Finnish",
+      "translation": "Yritys"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Finnish",
+      "translation": "Uutiset ja lehdistötiedotteet"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Finnish",
+      "translation": "Harvics Global Venturesin uusimmat tiedotteet, markkinalaajennukset, tuotelanseeraukset ja yrityspäivitykset."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Finnish",
+      "translation": "Lue uusimmat uutiset"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Finnish",
+      "translation": "Kuvagalleria"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Finnish",
+      "translation": "Korkean resoluution brändimateriaalit, tuotekuvat, tilakuvat ja tapahtumajulkaisut mediakäyttöön."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Finnish",
+      "translation": "Selaa galleriaa"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Finnish",
+      "translation": "Median yhteystiedot"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä viestintätiimiimme lehdistötiedusteluja, haastattelupyyntöjä ja kumppanuusilmoituksia varten."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä lehdistötiimiin"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Finnish",
+      "translation": "Katetut markkinat"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Finnish",
+      "translation": "Toimialat"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Finnish",
+      "translation": "Perustettu Dubaissa"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Finnish",
+      "translation": "Tuetut kielet"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Finnish",
+      "translation": "Viimeaikaiset otsikot"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Finnish",
+      "translation": "Harvics laajentaa päivittäistavarakauppatoimintaansa viidelle uudelle Kaakkois-Aasian markkinalle"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Finnish",
+      "translation": "Uusi tekoälyllä toimiva toimitusketjualusta lanseerattu globaaliin jakeluun"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Finnish",
+      "translation": "Harvics saavutti hiilineutraalin virstanpylvään kaikissa toimipisteissään"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Finnish",
+      "translation": "Strateginen kumppanuus Etelä-Aasian johtavien tekstiilivalmistajien kanssa"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Finnish",
+      "translation": "Harvicsin talo"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Finnish",
+      "translation": "Erinomaisuuden ja perinteiden perintö"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Finnish",
+      "translation": "Tervetuloa Harvicsin taloon"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Finnish",
+      "translation": "Harvics House edustaa sitoutumistamme laatuun ja perinteeseen. Täällä kokoamme yhteen parhaan valikoiman premium-tuotteitamme, jotka esitellään ympäristössä, joka heijastaa arvojamme, kuten eleganssia, perinteitä ja innovaatioita."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Finnish",
+      "translation": "Tutustu eksklusiivisiin mallistoihin ja löydä tarina jokaisen Harvics-nimeä kantavan tuotteen takana."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Finnish",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Finnish",
+      "translation": "Huippuosaamista premium-kulutustavaroissa vuodesta 2019 lähtien"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Finnish",
+      "translation": "Johtava maailmanlaajuinen kulutustavarayritys, joka toimittaa korkealaatuisia elintarvikkeita eri kategorioihin kansainvälisten laatustandardien mukaisesti."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Finnish",
+      "translation": "Lontoo • Milano • New York"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Finnish",
+      "translation": "Vuodesta 2019 lähtien"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Finnish",
+      "translation": "Harvics-uutiset"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Finnish",
+      "translation": "Tilaa saadaksesi ilmoituksia ja päivityksiä"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Finnish",
+      "translation": "Rekisteröidy"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Finnish",
+      "translation": "Vaatimustenmukaisuuteen liittyvät huolenaiheet"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä, jos sinulla on huolenaiheita vaatimustenmukaisuudesta tai etiikasta"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Finnish",
+      "translation": "Puhu ääneen"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä tiimiimme"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Finnish",
+      "translation": "Hyödyllisiä linkkejä"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Finnish",
+      "translation": "Kysy Harwichilta"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Finnish",
+      "translation": "Hae työpaikkoja"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Finnish",
+      "translation": "Rekisteröidy uutisiin"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Finnish",
+      "translation": "Yritys"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Finnish",
+      "translation": "Globaalit osoitteet"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Finnish",
+      "translation": "Strategia"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Finnish",
+      "translation": "Johtajuutemme"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Finnish",
+      "translation": "Tuotemerkit A-Ö"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Finnish",
+      "translation": "Historiamme"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Finnish",
+      "translation": "Kestävä kehitys"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Finnish",
+      "translation": "Uutiset"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Finnish",
+      "translation": "Median yhteystiedot"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Finnish",
+      "translation": "Kuvat"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Finnish",
+      "translation": "Sijoittajat"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Finnish",
+      "translation": "Yrityshallinto"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Finnish",
+      "translation": "Osakkeet, ADR:t ja joukkovelkakirjat"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Finnish",
+      "translation": "Julkaisut"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Finnish",
+      "translation": "Seuraa meitä"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Finnish",
+      "translation": "0 numeroa"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Finnish",
+      "translation": "Sivukartta"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Finnish",
+      "translation": "Peruuta tilaus"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Finnish",
+      "translation": "Auttaa"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Finnish",
+      "translation": "Tietosuoja"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Finnish",
+      "translation": "Evästeet"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Finnish",
+      "translation": "Käyttöehdot"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Finnish",
+      "translation": "Esteettömyys"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Finnish",
+      "translation": "Hiilidioksiditehokkuus"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Finnish",
+      "translation": "Toimittajat"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Finnish",
+      "translation": "Sosiaalinen media"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Finnish",
+      "translation": "Evästeasetukset"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Finnish",
+      "translation": "Ensiluokkainen laatu"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Finnish",
+      "translation": "Sähköpostiosoite"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Finnish",
+      "translation": "Anna sähköpostiosoitteesi"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Finnish",
+      "translation": "Tilaa"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Finnish",
+      "translation": "Tilataan..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Finnish",
+      "translation": "Tietoa meistä"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Finnish",
+      "translation": "Media"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Finnish",
+      "translation": "Hae tuotteita, tuotemerkkejä tai luokkia"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Finnish",
+      "translation": "Ei tuloksia"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Finnish",
+      "translation": "Haetaan..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Finnish",
+      "translation": "Tulokset"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Finnish",
+      "translation": "Keskustele kanssamme"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Finnish",
+      "translation": "Kirjoita viestisi..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Finnish",
+      "translation": "Lähetä"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Finnish",
+      "translation": "Lähellä"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Finnish",
+      "translation": "Hei! Kuinka voin auttaa sinua tänään?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Finnish",
+      "translation": "Anteeksi, en ymmärtänyt. Voisitko muotoilla asian uudelleen?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Finnish",
+      "translation": "Voin auttaa sinua tuotetietojen, tilausten tai yleisten tiedustelujen kanssa. Mitä haluaisit tietää?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Finnish",
+      "translation": "Jos tarvitset lisätietoja, ota meihin yhteyttä osoitteessa support@harvics.com tai soita numeroon +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Finnish",
+      "translation": "Keskustele kanssamme"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Finnish",
+      "translation": "Ladataan..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Finnish",
+      "translation": "Virhe"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Finnish",
+      "translation": "Menestys"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Finnish",
+      "translation": "Tallentaa"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Finnish",
+      "translation": "Peruuttaa"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Finnish",
+      "translation": "Poistaa"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Finnish",
+      "translation": "Muokata"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Finnish",
+      "translation": "Näytä"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Finnish",
+      "translation": "Lähetä"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Finnish",
+      "translation": "Haku"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Finnish",
+      "translation": "Suodattaa"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Finnish",
+      "translation": "Tyhjennä"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Finnish",
+      "translation": "Lataa"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Finnish",
+      "translation": "Lataa"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Finnish",
+      "translation": "Kyllä"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Finnish",
+      "translation": "Ei"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Finnish",
+      "translation": "Lähellä"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Finnish",
+      "translation": "Takaisin"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Finnish",
+      "translation": "Seuraava"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Finnish",
+      "translation": "Edellinen"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Finnish",
+      "translation": "Toiminnot"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Finnish",
+      "translation": "Status"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Finnish",
+      "translation": "Päivämäärä"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Finnish",
+      "translation": "Nimi"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Finnish",
+      "translation": "Sähköposti"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Finnish",
+      "translation": "Puhelin"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Finnish",
+      "translation": "Osoite"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Finnish",
+      "translation": "Maa"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Finnish",
+      "translation": "Kaupunki"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Finnish",
+      "translation": "Kaikki"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Finnish",
+      "translation": "Ei mitään"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Finnish",
+      "translation": "Valitse"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Finnish",
+      "translation": "Valitse kieli"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Finnish",
+      "translation": "Valitse maa"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Finnish",
+      "translation": "Näytä lisää"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Finnish",
+      "translation": "Näytä vähemmän"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Finnish",
+      "translation": "Pakollinen"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Finnish",
+      "translation": "Valikko"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Finnish",
+      "translation": "Näytä tuotteet"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Finnish",
+      "translation": "Soita musiikkia"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Finnish",
+      "translation": "Tauko Musiikki"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Finnish",
+      "translation": "Mykistä musiikki"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Finnish",
+      "translation": "Poista musiikin mykistys"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Finnish",
+      "translation": "Maailmanlaajuinen ulottuvuutemme"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Finnish",
+      "translation": "Koska"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Finnish",
+      "translation": "Suuret markkinat"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Finnish",
+      "translation": "Suuret markkinat"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Finnish",
+      "translation": "Läsnäolo"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Finnish",
+      "translation": "Maat, joissa toimitaan"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Finnish",
+      "translation": "Suuret markkinat"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Finnish",
+      "translation": "Tuotekategoriat"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Finnish",
+      "translation": "Vakiintunut"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Finnish",
+      "translation": "Aluehierarkia"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Finnish",
+      "translation": "Koko polku"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Finnish",
+      "translation": "Nykyinen alue"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Finnish",
+      "translation": "Ei kohteita"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Finnish",
+      "translation": "Maapallo"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Finnish",
+      "translation": "maanosa"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Finnish",
+      "translation": "Alue"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Finnish",
+      "translation": "Maa"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Finnish",
+      "translation": "Kaupunki"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Finnish",
+      "translation": "Alue"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Finnish",
+      "translation": "Sijainti"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Finnish",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Finnish",
+      "translation": "Globaali"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Finnish",
+      "translation": "Valitse alue"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Finnish",
+      "translation": "Asiakkaan tiedot"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Finnish",
+      "translation": "Valittu"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Finnish",
+      "translation": "Koko nimi"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Finnish",
+      "translation": "Anna koko nimesi"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Finnish",
+      "translation": "Nimi on pakollinen"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Finnish",
+      "translation": "Sähköpostiosoite"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Finnish",
+      "translation": "sähköpostiosoitteesi@esimerkki.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Finnish",
+      "translation": "Sähköpostiosoite vaaditaan"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Finnish",
+      "translation": "Anna kelvollinen sähköpostiosoite"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Finnish",
+      "translation": "Puhelinnumero"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Finnish",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Finnish",
+      "translation": "Puhelinnumero vaaditaan"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Finnish",
+      "translation": "Osoite"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Finnish",
+      "translation": "Osoitteesi"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Finnish",
+      "translation": "Osoite vaaditaan"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Finnish",
+      "translation": "Hyväksyn markkinointiviestien ja päivitysten vastaanottamisen"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Finnish",
+      "translation": "Lähetä ja jatka"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Finnish",
+      "translation": "Lähetetään..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Finnish",
+      "translation": "Ohita ja jatka"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Finnish",
+      "translation": "Keskeiset suorituskykyindikaattorit"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Finnish",
+      "translation": "Tilaukset tänään"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Finnish",
+      "translation": "Lähetetty Harvics CRM:n kautta"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Finnish",
+      "translation": "Odottavat toimitukset"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Finnish",
+      "translation": "Määrättyjen reittien yli"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Finnish",
+      "translation": "Jälleenmyyjät"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Finnish",
+      "translation": "Aktiiviset myyntipisteet kuuluvuusalueella"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Finnish",
+      "translation": "T & A-pisteet"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Finnish",
+      "translation": "Alueellinen kattavuus"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Finnish",
+      "translation": "Talous ja varasto"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Finnish",
+      "translation": "Vähävarastoiset tuotenumerot"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Finnish",
+      "translation": "Liipaisintä täydennystä"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Finnish",
+      "translation": "Maksamattomat laskut"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Finnish",
+      "translation": "Noudettavaksi erääntyy"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Finnish",
+      "translation": "Luottoraja"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Finnish",
+      "translation": "Rahoituslaitoksen määräämä"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Finnish",
+      "translation": "Automaattinen hyväksyntä, varaston täydennys ja laskumuistutukset käytössä"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Finnish",
+      "translation": "Itsehyväksyntä"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Finnish",
+      "translation": "Varaston täydennys"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Finnish",
+      "translation": "Laskumuistutukset"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Finnish",
+      "translation": "Tekoälyn suositukset"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Finnish",
+      "translation": "Riskitaso"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Finnish",
+      "translation": "Luoton käytön ja maksuhistorian perusteella"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Finnish",
+      "translation": "Ehdotettu järjestys"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Finnish",
+      "translation": "Tekoälyn suosittelemat tilattavat tuotenumerot"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Finnish",
+      "translation": "Seuraava toiminto"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Finnish",
+      "translation": "Toimenpiteet ja ohjeet"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Finnish",
+      "translation": "Valitukset"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Finnish",
+      "translation": "Jälleenmyyjän ongelmat odottavat toimia"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Finnish",
+      "translation": "Pelikirja"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Finnish",
+      "translation": "Priorisoi ennen puoltapäivää odottavat toimitukset."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Finnish",
+      "translation": "Sulje kaikki avoimet valitukset 48 tunnin kuluessa."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Finnish",
+      "translation": "Käynnistä täydennys vähävaraisille SKU-tuotteille (luo ostotilaus automaattisesti)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Finnish",
+      "translation": "Alue"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Finnish",
+      "translation": "Tilaukset tässä kuussa"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Finnish",
+      "translation": "Odottavat tilaukset"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Finnish",
+      "translation": "Toimitetut tilaukset"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Finnish",
+      "translation": "Alueen tiedot"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Finnish",
+      "translation": "Maa"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Finnish",
+      "translation": "Kaupunki"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Finnish",
+      "translation": "Alue"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Finnish",
+      "translation": "Pikatoiminnot"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Finnish",
+      "translation": "Uusi järjestys"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Finnish",
+      "translation": "Näytä tilaukset"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Finnish",
+      "translation": "Näytä laskut"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Finnish",
+      "translation": "Profiiliasetukset"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Finnish",
+      "translation": "Kojelautaa ladataan..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Finnish",
+      "translation": "Virhe"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Finnish",
+      "translation": "Tilaukseni"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Finnish",
+      "translation": "Tilaustunnus"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Finnish",
+      "translation": "Päivämäärä"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Finnish",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Finnish",
+      "translation": "Kohteet"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Finnish",
+      "translation": "Kokonaissumma"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Finnish",
+      "translation": "Toiminnot"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Finnish",
+      "translation": "Näytä tiedot"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Finnish",
+      "translation": "Status"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Finnish",
+      "translation": "Aloituspäivämäärä"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Finnish",
+      "translation": "Päättymispäivä"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Finnish",
+      "translation": "Kaikki tilat"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Finnish",
+      "translation": "Tyhjennä suodattimet"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Finnish",
+      "translation": "Odottaa"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Finnish",
+      "translation": "Käsittely"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Finnish",
+      "translation": "Toimitettu"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Finnish",
+      "translation": "Peruutettu"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Finnish",
+      "translation": "Ei tilauksia löytynyt"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Finnish",
+      "translation": "Tilauksia ladataan..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Finnish",
+      "translation": "Sivu"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Finnish",
+      "translation": "jostakin"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Finnish",
+      "translation": "Edellinen"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Finnish",
+      "translation": "Seuraava"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Finnish",
+      "translation": "Tilauksen tiedot"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Finnish",
+      "translation": "Takaisin tilauksiin"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Finnish",
+      "translation": "Tilaustunnus"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Finnish",
+      "translation": "Status"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Finnish",
+      "translation": "Tilauspäivämäärä"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Finnish",
+      "translation": "Toimituspäivämäärä"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Finnish",
+      "translation": "Toimitusosoite"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Finnish",
+      "translation": "Muistiinpanoja"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Finnish",
+      "translation": "Tilaustuotteet"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Finnish",
+      "translation": "Tuote"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Finnish",
+      "translation": "Tuotenumero"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Finnish",
+      "translation": "Määrä"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Finnish",
+      "translation": "Yksikköhinta"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Finnish",
+      "translation": "Kokonais"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Finnish",
+      "translation": "Kokonaissumma"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Finnish",
+      "translation": "Tilan aikajana"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Finnish",
+      "translation": "Tilausta ei löytynyt"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Finnish",
+      "translation": "Luo uusi tilaus"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Finnish",
+      "translation": "Tilaustuotteet"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Finnish",
+      "translation": "Lisää kohde"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Finnish",
+      "translation": "Ei vielä lisättyjä tuotteita. Aloita napsauttamalla \"Lisää tuote\"."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Finnish",
+      "translation": "Tilauksen tiedot"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Finnish",
+      "translation": "Toimituspäivämäärä"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Finnish",
+      "translation": "Toimitusosoite"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Finnish",
+      "translation": "Muistiinpanoja"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Finnish",
+      "translation": "Kokonaissumma"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Finnish",
+      "translation": "Luo tilaus"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Finnish",
+      "translation": "Tilausta luodaan..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Finnish",
+      "translation": "Peruuttaa"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Finnish",
+      "translation": "Valitse tuote"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Finnish",
+      "translation": "Tuote"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Finnish",
+      "translation": "Määrä"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Finnish",
+      "translation": "Yksikköhinta"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Finnish",
+      "translation": "Poistaa"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Finnish",
+      "translation": "Välisumma"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Finnish",
+      "translation": "Tilaustunnus"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Finnish",
+      "translation": "Vähintään yksi tilaustuote vaaditaan"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Finnish",
+      "translation": "Tuote on pakollinen"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Finnish",
+      "translation": "Määrän on oltava suurempi kuin 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Finnish",
+      "translation": "Yksikköhinnan on oltava ei-negatiivinen"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Finnish",
+      "translation": "Virheellinen toimituspäivämäärän muoto"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Finnish",
+      "translation": "Toimituspäivämäärä ei voi olla menneisyydessä"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Finnish",
+      "translation": "Laskuni"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Finnish",
+      "translation": "Laskun numero"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Finnish",
+      "translation": "Laskun päivämäärä"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Finnish",
+      "translation": "Kaksi päivämäärää"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Finnish",
+      "translation": "Määrä"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Finnish",
+      "translation": "Maksettu summa"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Finnish",
+      "translation": "Maksun tila"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Finnish",
+      "translation": "Maksun tila"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Finnish",
+      "translation": "Kaikki tilat"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Finnish",
+      "translation": "Tyhjennä suodattimet"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Finnish",
+      "translation": "Maksettu"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Finnish",
+      "translation": "Palkaton"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Finnish",
+      "translation": "Osittainen"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Finnish",
+      "translation": "Ei laskuja löytynyt"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Finnish",
+      "translation": "Laskuja ladataan..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Finnish",
+      "translation": "Profiilini"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Finnish",
+      "translation": "Tilitiedot"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Finnish",
+      "translation": "Jälleenmyyjän tunnus"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Finnish",
+      "translation": "Alue"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Finnish",
+      "translation": "Maa"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Finnish",
+      "translation": "Kaupunki"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Finnish",
+      "translation": "Tili luotu"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Finnish",
+      "translation": "Päivitä profiili"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Finnish",
+      "translation": "Nimi"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Finnish",
+      "translation": "Sähköposti"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Finnish",
+      "translation": "Puhelin"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Finnish",
+      "translation": "Osoite"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Finnish",
+      "translation": "Kieli"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Finnish",
+      "translation": "Valuutta"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Finnish",
+      "translation": "Tallenna muutokset"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Finnish",
+      "translation": "Tallennetaan..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Finnish",
+      "translation": "Profiili päivitetty onnistuneesti"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Finnish",
+      "translation": "Profiilia ladataan..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Finnish",
+      "translation": "Virheellinen sähköpostiosoitteen muoto"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Finnish",
+      "translation": "Virheellinen puhelinnumeron muoto"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Finnish",
+      "translation": "Virhe"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Finnish",
+      "translation": "Ladataan..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Finnish",
+      "translation": "Tallentaa"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Finnish",
+      "translation": "Peruuttaa"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Finnish",
+      "translation": "Takaisin"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Finnish",
+      "translation": "Lähetä"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Finnish",
+      "translation": "Poistaa"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Finnish",
+      "translation": "Muokata"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Finnish",
+      "translation": "Näytä"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Finnish",
+      "translation": "Haku"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Finnish",
+      "translation": "Suodattaa"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Finnish",
+      "translation": "Tyhjennä"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Finnish",
+      "translation": "Käytä"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Finnish",
+      "translation": "Lähellä"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Finnish",
+      "translation": "Vahvistaa"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Finnish",
+      "translation": "Kyllä"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Finnish",
+      "translation": "Ei"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Finnish",
+      "translation": "Oikeudellinen käyttöjärjestelmä"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Finnish",
+      "translation": "Oikeudellinen käyttöjärjestelmä"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Finnish",
+      "translation": "Käyttö estetty"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Finnish",
+      "translation": "Sinulla ei ole oikeutta käyttää Legal OS -moduulia."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Finnish",
+      "translation": "Kojelauta"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Finnish",
+      "translation": "Sopimukset"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Finnish",
+      "translation": "Todistukset"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Finnish",
+      "translation": "Vaatimustenmukaisuus"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Finnish",
+      "translation": "Lakiasioiden hallintapaneeli"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Finnish",
+      "translation": "Yleiskatsaus oikeudellisiin toimiin ja vaatimustenmukaisuustilaan"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Finnish",
+      "translation": "Aktiiviset tavaramerkit"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Finnish",
+      "translation": "Aktiiviset sopimukset"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Finnish",
+      "translation": "Vaatimustenmukaisuustila"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Finnish",
+      "translation": "Tavaramerkit"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Finnish",
+      "translation": "Hallinnoi tavaramerkkirekisteröintejä ja -hakemuksia"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Finnish",
+      "translation": "Lisää uusi tavaramerkki"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Finnish",
+      "translation": "Maa"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Finnish",
+      "translation": "Status"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Finnish",
+      "translation": "Kaikki maat"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Finnish",
+      "translation": "Kaikki tilat"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Finnish",
+      "translation": "Tyhjennä suodattimet"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Finnish",
+      "translation": "Tuotemerkki"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Finnish",
+      "translation": "Luokka"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Finnish",
+      "translation": "Maa"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Finnish",
+      "translation": "Hakemusnumero"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Finnish",
+      "translation": "Status"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Finnish",
+      "translation": "Voimassaolopäivä"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Finnish",
+      "translation": "Toiminnot"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Finnish",
+      "translation": "Muokkaa tavaramerkkiä"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Finnish",
+      "translation": "Lisää uusi tavaramerkki"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Finnish",
+      "translation": "Näytä tavaramerkki"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Finnish",
+      "translation": "Tuotemerkki"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Finnish",
+      "translation": "Luokan numero"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Finnish",
+      "translation": "Maa"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Finnish",
+      "translation": "Hakemusnumero"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Finnish",
+      "translation": "Status"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Finnish",
+      "translation": "Voimassaolopäivä"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Finnish",
+      "translation": "Dokumentit"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Finnish",
+      "translation": "Ei liitteenä olevia asiakirjoja"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Finnish",
+      "translation": "Lisää asiakirja"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Finnish",
+      "translation": "Poistaa"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Finnish",
+      "translation": "Tavaramerkkien lataaminen epäonnistui"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Finnish",
+      "translation": "Tavaramerkin tallentaminen epäonnistui. Yritä uudelleen."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Finnish",
+      "translation": "Oikeudelliset tapaukset"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Finnish",
+      "translation": "Hallinnoi oikeustapauksia ja seuraa niiden tilaa"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Finnish",
+      "translation": "Uusi tapaus"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Finnish",
+      "translation": "Asian otsikko"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Finnish",
+      "translation": "Tapaustyyppi"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Finnish",
+      "translation": "Maa"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Finnish",
+      "translation": "Kuvaus"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Finnish",
+      "translation": "Määrätty"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Finnish",
+      "translation": "Status"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Finnish",
+      "translation": "Kuulemispäivä"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Finnish",
+      "translation": "Asian otsikko"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Finnish",
+      "translation": "Tyyppi"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Finnish",
+      "translation": "Maa"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Finnish",
+      "translation": "Määrätty"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Finnish",
+      "translation": "Status"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Finnish",
+      "translation": "Kuulemispäivä"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Finnish",
+      "translation": "Toiminnot"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Finnish",
+      "translation": "Avata"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Finnish",
+      "translation": "Käynnissä"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Finnish",
+      "translation": "Suljettu"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Finnish",
+      "translation": "Peruutettu"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Finnish",
+      "translation": "Laivaston karttanäkymä"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Finnish",
+      "translation": "Myyntihenkilöstön ja toimitusajoneuvojen reaaliaikainen seuranta"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Finnish",
+      "translation": "Aktiiviset työntekijät"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Finnish",
+      "translation": "Ei aktiivisia työntekijöitä"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Finnish",
+      "translation": "Ladataan..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Finnish",
+      "translation": "Reitin toisto"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Finnish",
+      "translation": "Työntekijä"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Finnish",
+      "translation": "Nopeus"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Finnish",
+      "translation": "Nollaa"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Finnish",
+      "translation": "Pelata"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Finnish",
+      "translation": "Tauko"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Finnish",
+      "translation": "pisteet"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Finnish",
+      "translation": "Reittitietoja ei saatavilla"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Finnish",
+      "translation": "Reittiä ladataan..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Finnish",
+      "translation": "Kilpailijoiden tuotteet"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Finnish",
+      "translation": "Seuraa kilpailijoiden tuotetietoja"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Finnish",
+      "translation": "Lisää tuote"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Finnish",
+      "translation": "Lisää kilpailijan tuote"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Finnish",
+      "translation": "Merkki"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Finnish",
+      "translation": "Tuotenumeron nimi"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Finnish",
+      "translation": "Kategoria"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Finnish",
+      "translation": "Koko"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Finnish",
+      "translation": "Hinta"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Finnish",
+      "translation": "Valuutta"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Finnish",
+      "translation": "Maa"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Finnish",
+      "translation": "Merkki"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Finnish",
+      "translation": "Tuotenumeron nimi"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Finnish",
+      "translation": "Kategoria"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Finnish",
+      "translation": "Koko"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Finnish",
+      "translation": "Hinta"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Finnish",
+      "translation": "Maa"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Finnish",
+      "translation": "Lisäyspäivämäärä"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Finnish",
+      "translation": "Tuotteiden lataaminen epäonnistui"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Finnish",
+      "translation": "Tuotteen luominen epäonnistui. Yritä uudelleen."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Finnish",
+      "translation": "Kilpailevia tuotteita ei löytynyt"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Finnish",
+      "translation": "Tuotteita ladataan..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Finnish",
+      "translation": "Kilpailijan kojelauta"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Finnish",
+      "translation": "Analytiikkaa ja näkemyksiä kilpailijoiden tuotteista"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Finnish",
+      "translation": "Tuotteita yhteensä"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Finnish",
+      "translation": "Seuratut tuotemerkit"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Finnish",
+      "translation": "Maat"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Finnish",
+      "translation": "Luokat"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Finnish",
+      "translation": "Tuotteet tuotemerkeittain"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Finnish",
+      "translation": "Tuotteet maittain"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Finnish",
+      "translation": "Tuotteet luokittain"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Finnish",
+      "translation": "Ladataan tilastoja..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Finnish",
+      "translation": "Ei tilastoja saatavilla"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Finnish",
+      "translation": "Yleiskatsaus"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Finnish",
+      "translation": "Tilaukset"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Finnish",
+      "translation": "Varasto"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Finnish",
+      "translation": "Logistiikka"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Finnish",
+      "translation": "Rahoitus"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Finnish",
+      "translation": "Asiakkuudenhallinta"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Finnish",
+      "translation": "HR-palvelut"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Finnish",
+      "translation": "Johtaja"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Finnish",
+      "translation": "Sijoittaja"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Finnish",
+      "translation": "Lakiasiain-/Immateriaalioikeudet"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Finnish",
+      "translation": "Kilpailija"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Finnish",
+      "translation": "Tuonti/vienti"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Finnish",
+      "translation": "GPS-seuranta"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Finnish",
+      "translation": "Lokalisointi"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Finnish",
+      "translation": "Työnkulut"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Finnish",
+      "translation": "Ylläpitäjä"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Finnish",
+      "translation": "CRM-käyttöjärjestelmä"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Finnish",
+      "translation": "Asiakas 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Finnish",
+      "translation": "Täydelliset asiakasprofiilit, vuorovaikutushistoria ja suhteiden hallinta"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Finnish",
+      "translation": "Digitaaliset kampanjat"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Finnish",
+      "translation": "Monikanavaiset markkinointikampanjat (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Finnish",
+      "translation": "Liidit ja mahdollisuudet"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Finnish",
+      "translation": "Liidien hallinta, kelpuutus ja mahdollisuuksien prosessi"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Finnish",
+      "translation": "Asiakastuki"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Finnish",
+      "translation": "Tikettien hallinta, asiakaspalvelu ja ongelmanratkaisu"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Finnish",
+      "translation": "Kanta-asiakasohjelmat"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Finnish",
+      "translation": "Jälleenmyyjän uskollisuus-, pelillistämis- ja palkkiohallinta"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Finnish",
+      "translation": "Asiakas 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Finnish",
+      "translation": "Uusi asiakas"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Finnish",
+      "translation": "Asiakkaita yhteensä"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Finnish",
+      "translation": "Aktiivinen"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Finnish",
+      "translation": "Uusi"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Finnish",
+      "translation": "Tyytyväisyys"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Finnish",
+      "translation": "Asiakkuudenhallinta"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Finnish",
+      "translation": "Tarkastele ja hallinnoi asiakassuhteitasi, vuorovaikutustasi ja kampanjoitasi."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Finnish",
+      "translation": "Ladataan..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Finnish",
+      "translation": "Virhe CRM-tietojen lataamisessa"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Finnish",
+      "translation": "Yleiskatsaus"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Finnish",
+      "translation": "Tilaukset"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Finnish",
+      "translation": "Varasto"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Finnish",
+      "translation": "Logistiikka"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Finnish",
+      "translation": "Rahoitus"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Finnish",
+      "translation": "Asiakkuudenhallinta"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Finnish",
+      "translation": "HR-palvelut"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Finnish",
+      "translation": "Johtaja"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Finnish",
+      "translation": "Sijoittaja"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Finnish",
+      "translation": "Lakiasiain-/Immateriaalioikeudet"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Finnish",
+      "translation": "Kilpailija"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Finnish",
+      "translation": "Tuonti/vienti"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Finnish",
+      "translation": "GPS-seuranta"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Finnish",
+      "translation": "Lokalisointi"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Finnish",
+      "translation": "Työnkulut"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Finnish",
+      "translation": "Ylläpitäjä"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Finnish",
+      "translation": "Asiakkaat"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Finnish",
+      "translation": "Työntekijät"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Finnish",
+      "translation": "Voitto"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Finnish",
+      "translation": "Ladataan toimittajan ohjaamoa…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Finnish",
+      "translation": "Ostotilaukset"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Finnish",
+      "translation": "Harvicsin kasvattama"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Finnish",
+      "translation": "Lähetykset / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Finnish",
+      "translation": "Hyväksytty tällä viikolla"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Finnish",
+      "translation": "Luodut laskut"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Finnish",
+      "translation": "Maksua odotetaan"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Finnish",
+      "translation": "Maksut odottavat"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Finnish",
+      "translation": "Julkaisuaikataulu"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Finnish",
+      "translation": "Laatu / valitukset"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Finnish",
+      "translation": "Avoimet liput"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Finnish",
+      "translation": "Ennuste (seuraavat 4 viikkoa)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Finnish",
+      "translation": "Tekoälyn paikkamerkki"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Finnish",
+      "translation": "Toimittajien toimet"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Finnish",
+      "translation": "Vahvista tulevat toimitukset ja päivitä GRN-aikataulu."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Finnish",
+      "translation": "Tarkista maksamattomat laskut ja jaa maksuohjeet."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Finnish",
+      "translation": "Ratkaise avoimet laatuvalitukset laadunvarmistustodisteiden avulla."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Finnish",
+      "translation": "Käyttäjätunnus"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Finnish",
+      "translation": "Salasana"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Finnish",
+      "translation": "Sähköposti"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Finnish",
+      "translation": "Lähetä"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Finnish",
+      "translation": "Peruuttaa"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Finnish",
+      "translation": "Tallentaa"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Finnish",
+      "translation": "Poistaa"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Finnish",
+      "translation": "Haku"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Finnish",
+      "translation": "Suodattaa"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Finnish",
+      "translation": "Nollaa"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Finnish",
+      "translation": "Lähellä"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Finnish",
+      "translation": "Takaisin"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Finnish",
+      "translation": "Seuraava"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Finnish",
+      "translation": "Edellinen"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Finnish",
+      "translation": "Vahvistaa"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Finnish",
+      "translation": "Muista minut"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Finnish",
+      "translation": "Unohditko salasanasi?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Finnish",
+      "translation": "Sähköpostiosoite vaaditaan"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Finnish",
+      "translation": "Anna kelvollinen sähköpostiosoite"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Finnish",
+      "translation": "Tuotteet"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Finnish",
+      "translation": "Mitä tuotteita Harvics tarjoaa?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Finnish",
+      "translation": "Tarjoamme laajan valikoiman ensiluokkaisia elintarvikkeita, kuten makeisia, juomia, välipaloja, pastaa, leivonnaisia ja pakasteita useissa eri tuoteryhmissä."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Finnish",
+      "translation": "Mistä voin ostaa Harvicsin tuotteita?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Finnish",
+      "translation": "Tuotteitamme on saatavilla vähittäismyymälöissä yli 40 maassa. Käytä myymälähakuamme tai yhteydenottosivuamme löytääksesi lähimmän jälleenmyyjän."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Finnish",
+      "translation": "Tarjoatteko irtotilauksia?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Finnish",
+      "translation": "Kyllä, tarjoamme yrityksille ja jälleenmyyjille alennuksia suurista tilauksista. Lisätietoja on suurista tilauksista -sivullamme."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Finnish",
+      "translation": "Tilaukset ja toimitus"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Finnish",
+      "translation": "Mitä toimitusvaihtoehtoja teillä on?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Finnish",
+      "translation": "Tarjoamme useita toimitusvaihtoehtoja, kuten vakiotoimituksen, pikatoimituksen ja kansainvälisen toimituksen. Ilmainen toimitus on saatavilla yli 50 dollarin tilauksille."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Finnish",
+      "translation": "Kuinka kauan toimitus kestää?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Finnish",
+      "translation": "Toimitusajat vaihtelevat sijainnin mukaan. Normaali toimitus kestää tyypillisesti 5–7 arkipäivää, kun taas pikatoimitus kestää 2–3 arkipäivää."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Finnish",
+      "translation": "Voinko seurata tilaustani?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Finnish",
+      "translation": "Kyllä, voit seurata tilaustasi tilausvahvistussähköpostissa olevalla seurantanumerolla."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Finnish",
+      "translation": "Tili ja maksut"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Finnish",
+      "translation": "Miten luon tilin?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Finnish",
+      "translation": "Napsauta otsikossa olevaa \"Kirjaudu sisään\" ja valitse \"Luo tili\" rekisteröidäksesi uuden tilin."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Finnish",
+      "translation": "Mitä maksutapoja hyväksytte?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Finnish",
+      "translation": "Hyväksymme kaikki yleisimmät luottokortit, pankkikortit, PayPalin ja tilisiirrot B2B-tilauksiin."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Finnish",
+      "translation": "Ovatko maksutietoni turvassa?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Finnish",
+      "translation": "Kyllä, käytämme alan standardin mukaista salausta maksutietojesi suojaamiseen."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Finnish",
+      "translation": "Palautukset ja hyvitykset"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Finnish",
+      "translation": "Mikä on palautuskäytäntönne?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Finnish",
+      "translation": "Tarjoamme 30 päivän palautusoikeuden avaamattomille tuotteille alkuperäispakkauksessa. Ota yhteyttä asiakaspalveluumme saadaksesi palautusluvan."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Finnish",
+      "translation": "Miten voin pyytää hyvitystä?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä asiakaspalveluumme ja kerro tilausnumerosi sekä palautuksen syy. Käsittelemme hyvityksesi 5–7 arkipäivän kuluessa."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Finnish",
+      "translation": "Onko sinulla vielä kysyttävää?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Finnish",
+      "translation": "Asiakaspalvelumme on täällä auttaakseen"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Finnish",
+      "translation": "Urat"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Finnish",
+      "translation": "Työpaikat | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Finnish",
+      "translation": "Liity Harvics Global Venturesiin — tutustu mahdollisuuksiin yli 40 maassa."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Finnish",
+      "translation": "Liity mukaan"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Finnish",
+      "translation": "Rakenna globaalin kaupan tulevaisuutta"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Finnish",
+      "translation": "Kasvamme yli 40 maassa. Liity tiimiin, joka rakentaa tekoälypohjaista käyttöjärjestelmää globaaliin kaupankäyntiin."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Finnish",
+      "translation": "Avoimet työpaikat"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Finnish",
+      "translation": "Maat"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Finnish",
+      "translation": "Toimialat"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Finnish",
+      "translation": "Osastojen rekrytointi"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Finnish",
+      "translation": "Avoimet työpaikat osastoittain"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Finnish",
+      "translation": "Myynti ja jakelu"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Finnish",
+      "translation": "Liikevaihdon kasvattaminen yli 40 markkina-alueella. Aluehallinta, avainasiakkaat, jakelijasuhteet."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Finnish",
+      "translation": "Toimitusketju ja logistiikka"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Finnish",
+      "translation": "Kokonaisvaltainen toimitusketju tehtaalta hyllylle. Kalustonhallinta, varastointi, viimeisen mailin toimitus."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Finnish",
+      "translation": "Teknologia ja tekoäly"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Finnish",
+      "translation": "Rakenna Harvics OS — tekoälypohjainen yritysalustamme. Full-stack, koneoppimistekniikka, datatiede."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Finnish",
+      "translation": "Rahoitus ja rahastonhoito"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Finnish",
+      "translation": "Monivaluuttainen treasury, kaupan rahoitus, HPay-digitaaliset maksut, valuuttahallinta eri alueilla."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Finnish",
+      "translation": "Hankinta ja hankinta"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Finnish",
+      "translation": "Globaali hankinta yli 15 alkuperämaasta. Toimittajien auditoinnit, laadunvalvonta, suoraan tehtaalta saatavat ohjelmat."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Finnish",
+      "translation": "Henkilöstöhallinto"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Finnish",
+      "translation": "Osaajien hankinta, oppiminen ja kehittäminen, suorituskyvyn johtaminen eri maantieteellisillä alueilla ja kulttuureissa."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Finnish",
+      "translation": "Lakiasiain ja vaatimustenmukaisuus"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Finnish",
+      "translation": "Kaupankäyntisäännösten noudattaminen, pakotteiden seulonta, immateriaalioikeuksien suojaus, sopimusten hallinta eri lainkäyttöalueilla."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Finnish",
+      "translation": "Markkinointi ja brändi"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Finnish",
+      "translation": "Monikieliset kampanjat, 38 kieliversiota sisältävä sisältö, digitaalinen markkinointi, brändistrategia 10 toimialalle."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Finnish",
+      "translation": "roolit"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Finnish",
+      "translation": "Miksi Harvics"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Finnish",
+      "translation": "Globaali liikkuvuus"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Finnish",
+      "translation": "Työskentele Dubaissa, Lontoossa, Karachissa, Lahoressa ja yli 40 markkina-alueella"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Finnish",
+      "translation": "Kasvupolku"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Finnish",
+      "translation": "Nopea urakehitys kasvavassa yrityksessä"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Finnish",
+      "translation": "Tekoälykeskeinen kulttuuri"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Finnish",
+      "translation": "Työskentele huippuluokan tekoälyn ja reaaliaikaisten älyjärjestelmien kanssa"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Finnish",
+      "translation": "Kilpailukykyinen paketti"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Finnish",
+      "translation": "Markkinoiden johtava palkkio, asuminen ja edut"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Finnish",
+      "translation": "Oppimisbudjetti"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Finnish",
+      "translation": "Kurssien, konferenssien ja sertifiointien vuosittainen kehitysbudjetti"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Finnish",
+      "translation": "Joustava työ"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Finnish",
+      "translation": "Hybridijärjestelyt alueellisten keskustoimistojen kanssa maailmanlaajuisesti"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Finnish",
+      "translation": "Strategiamme"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Finnish",
+      "translation": "Strategia | Harwich"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Finnish",
+      "translation": "Kestävän tulevaisuuden rakentaminen innovaatioiden ja huippuosaamisen avulla"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Finnish",
+      "translation": "Kestävän tulevaisuuden rakentaminen innovaatioiden ja huippuosaamisen avulla"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Finnish",
+      "translation": "Globaali laajentuminen"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Finnish",
+      "translation": "Laajennamme läsnäoloamme kehittyvillä markkinoilla ja vahvistamme samalla asemaamme vakiintuneilla markkinoilla"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Finnish",
+      "translation": "Tuoteinnovaatio"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Finnish",
+      "translation": "Investoimalla tutkimukseen ja kehitykseen kehittääksemme uusia tuotteita, jotka vastaavat kehittyviin kuluttajien mieltymyksiin"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Finnish",
+      "translation": "Kestävä kehitys"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Finnish",
+      "translation": "Sitoutunut kestäviin käytäntöihin koko toimitusketjussamme ja toiminnassamme"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Finnish",
+      "translation": "Digitaalinen transformaatio"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Finnish",
+      "translation": "Teknologian hyödyntäminen asiakaskokemuksen ja toiminnan tehokkuuden parantamiseksi"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Finnish",
+      "translation": "Visiomme"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Finnish",
+      "translation": "Olla maailman johtava premium-kulutustavarayritys, joka tunnetaan laadusta, innovaatioista ja kestävyydestä."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Finnish",
+      "translation": "Harvics Global Ventures | Premium Global Trading"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Finnish",
+      "translation": "Johtava maailmanlaajuinen kauppayhtiö, joka toimittaa premium-tuotteita yli 10 toimialalle. Toiminut yli 50 maassa vuodesta 2019 lähtien."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Finnish",
+      "translation": "Tietoa meistä | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Finnish",
+      "translation": "Ota selvää, kuinka Harvics Global Venturesista tuli johtava toimija maailmanlaajuisessa kaupassa yli 40 maassa ja 10 toimialalla."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä Harvicsin toimistoihin maailmanlaajuisesti Lähi-idässä, Etelä-Aasiassa, Euroopassa, Afrikassa ja Amerikassa."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Finnish",
+      "translation": "Tuotteet | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Finnish",
+      "translation": "Tutustu Harvicsin premium-tuotevalikoimaan päivittäistavaroiden, tekstiilien, hyödykkeiden ja teollisuusratkaisujen aloilla."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Finnish",
+      "translation": "Työpaikat | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Finnish",
+      "translation": "Liity Harvics Global Venturesiin — tutustu mahdollisuuksiin yli 40 maassa päivittäistavaroiden, tekstiilien, logistiikan ja teknologian aloilla."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Finnish",
+      "translation": "Mediakeskus | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Finnish",
+      "translation": "Harvicsin mediakeskus — lehdistötiedotteet, uusimmat uutiset, brändimateriaalit ja mediayhteydet."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Finnish",
+      "translation": "Strategiamme | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Finnish",
+      "translation": "Harvicsin strateginen visio globaalista laajentumisesta, innovaatioista, kestävästä kehityksestä ja digitaalisesta transformaatiosta."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Finnish",
+      "translation": "Yritysten yhteiskuntavastuu | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Finnish",
+      "translation": "Harvicsin yritysvastuualoitteet — ympäristönsuojelu, yhteisöohjelmat ja eettiset liiketoimintatavat."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Finnish",
+      "translation": "Usein kysytyt kysymykset | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Finnish",
+      "translation": "Usein kysytyt kysymykset Harvicsin tuotteista, palveluista, tilaamisesta ja globaalista toiminnasta."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Finnish",
+      "translation": "Maailmanlaajuiset toimipisteet | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Finnish",
+      "translation": "Harvicsin toimistot ja toiminnot Lähi-idässä, Etelä-Aasiassa, Euroopassa, Afrikassa ja Amerikassa."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Finnish",
+      "translation": "Johtotiimi | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Finnish",
+      "translation": "Tapaa Harvics Global Venturesin johtotiimi, joka toimii yli 40 markkina-alueella ja 10 toimialalla."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Finnish",
+      "translation": "Ohjekeskus | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Finnish",
+      "translation": "Saat apua tilauksiin, tileihin, toimituksiin ja Harvicsin palveluihin liittyen."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Finnish",
+      "translation": "Vaatimustenmukaisuus ja etiikka | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Finnish",
+      "translation": "Harvicin sitoutuminen sääntelyn noudattamiseen, eettisiin liiketoimintatapoihin ja globaaleihin standardeihin."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Finnish",
+      "translation": "Historiamme | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Finnish",
+      "translation": "Dubaissa vuonna 2019 perustetusta startup-yrityksestä yli 40 maassa toimivaksi globaaliksi yritykseksi – Harvicsin tarina."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Finnish",
+      "translation": "Uutiskirje | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Finnish",
+      "translation": "Tilaa Harvicsin uutiskirje saadaksesi tietoa toimialasta ja tuotelanseerauksista."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Finnish",
+      "translation": "Kirjaudu sisään | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Finnish",
+      "translation": "Kirjaudu Harvics-tilillesi hallitaksesi tilauksia ja käyttääksesi alustaa."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Finnish",
+      "translation": "Tutkimus ja innovaatio | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Finnish",
+      "translation": "Harvicsin tutkimushankkeet ja innovaatio-ohjelmat ohjaavat globaalia strategiaamme."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Finnish",
+      "translation": "Sijoittajasuhteet | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Finnish",
+      "translation": "Sijoittajatietoja, taloudellisia raportteja ja yritystiedotteita Harvics Global Venturesilta."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Finnish",
+      "translation": "Sivua ei löytynyt"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Finnish",
+      "translation": "404 — Sivua ei löytynyt"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Finnish",
+      "translation": "Etsimääsi sivua ei ole olemassa tai se on siirretty."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Finnish",
+      "translation": "Siirry kotisivulle"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Finnish",
+      "translation": "Palaa takaisin"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Finnish",
+      "translation": "Jokin meni pieleen"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Finnish",
+      "translation": "Jokin meni pieleen"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Finnish",
+      "translation": "Olemme pahoillamme, mutta jotain odottamatonta tapahtui. Yritä päivittää sivu."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Finnish",
+      "translation": "Yritä uudelleen"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Finnish",
+      "translation": "Lataa sivu uudelleen"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Finnish",
+      "translation": "Ota yhteyttä tukeen"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Finnish",
+      "translation": "Sovellusvirhe"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Finnish",
+      "translation": "Kriittinen virhe"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Finnish",
+      "translation": "Kriittinen virhe. Lataa sivu uudelleen."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Finnish",
+      "translation": "Lataa sovellus uudelleen"
+    }
+  }
+}

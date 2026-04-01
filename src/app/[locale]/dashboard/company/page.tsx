@@ -12,7 +12,7 @@ export default async function CompanyDashboardPage({ params }: { params: Promise
   const { locale } = await params
 
   return (
-    <AuthGuard allowedRoles={['hq', 'country_manager', 'company_admin', 'super_admin']}>
+    <AuthGuard allowedRoles={['hq', 'country_manager', 'company_admin', 'super_admin', 'admin', 'company', 'company_admin']}>
       <CompanyDashboard />
     </AuthGuard>
   )

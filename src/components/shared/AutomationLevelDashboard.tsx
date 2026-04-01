@@ -15,6 +15,7 @@ export const AutomationLevelDashboard: React.FC = () => {
   const t = useTranslations('automation')
   const locale = useLocale()
   const [overallAutomation, setOverallAutomation] = useState(72)
+  const [loading, setLoading] = useState(true)
   const [metrics, setMetrics] = useState<AutomationMetric[]>([
     { category: 'Order Processing', current: 85, target: 95, gap: 10, status: 'excellent' },
     { category: 'Inventory Management', current: 80, target: 95, gap: 15, status: 'good' },
@@ -25,6 +26,49 @@ export const AutomationLevelDashboard: React.FC = () => {
     { category: 'Route Optimization', current: 70, target: 95, gap: 25, status: 'needs-improvement' },
     { category: 'Customer Support', current: 60, target: 80, gap: 20, status: 'needs-improvement' }
   ])
+
+  useEffect(() => {
+    loadAutomationScore()
+  }, [])
+
+  const loadAutomationScore = async () => {
+    try {
+      const response = await fetch('/api/intelligence/automation-score')
+      const data = await response.json()
+      if (data.success) {
+        setOverallAutomation(data.overall)
+        
+        // Map domain scores to metrics
+        const domainMap: Record<string, string> = {
+          'orders': 'Order Processing',
+          'inventory': 'Inventory Management',
+          'finance': 'Payment Processing',
+          'logistics': 'Route Optimization',
+          'crm': 'Customer Support',
+          'hr': 'System Monitoring',
+          'procurement': 'Pricing Optimization'
+        }
+
+        const updatedMetrics = metrics.map(metric => {
+          const domainKey = Object.keys(domainMap).find(key => domainMap[key] === metric.category)
+          if (domainKey && data.byDomain[domainKey]) {
+            const score = data.byDomain[domainKey].score
+            const target = metric.target
+            const gap = target - score
+            const status = score >= 80 ? 'excellent' : score >= 60 ? 'good' : 'needs-improvement'
+            return { ...metric, current: score, gap, status }
+          }
+          return metric
+        })
+
+        setMetrics(updatedMetrics as AutomationMetric[])
+      }
+    } catch (error) {
+      console.error('Error loading automation score:', error)
+    } finally {
+      setLoading(false)
+    }
+  }
 
   const worldClassTarget = 95
   const gapToWorldClass = worldClassTarget - overallAutomation
@@ -51,16 +95,22 @@ export const AutomationLevelDashboard: React.FC = () => {
     <div className="space-y-6">
       {/* Overall Automation Score */}
       <div className="bg-gradient-to-br from-[#6B1F2B] to-[#6B1F2B] rounded-lg p-6 text-white">
-        <div className="flex items-center justify-between mb-4">
-          <div>
-            <h2 className="text-2xl font-bold mb-2">Overall Automation Level</h2>
-            <p className="text-[#C3A35E]/80 text-sm">How human-less we've become</p>
+        {loading ? (
+          <div className="flex items-center justify-center py-8">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
           </div>
-          <div className="text-right">
-            <div className="text-5xl font-bold">{overallAutomation}%</div>
-            <div className="text-sm text-[#C3A35E]/80 mt-1">Automated</div>
-          </div>
-        </div>
+        ) : (
+          <>
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <h2 className="text-2xl font-bold mb-2">Overall Automation Level</h2>
+                <p className="text-[#C3A35E]/80 text-sm">How human-less we've become</p>
+              </div>
+              <div className="text-right">
+                <div className="text-5xl font-bold">{overallAutomation}%</div>
+                <div className="text-sm text-[#C3A35E]/80 mt-1">Automated</div>
+              </div>
+            </div>
 
         {/* Progress Bar */}
         <div className="mb-4">
@@ -99,6 +149,8 @@ export const AutomationLevelDashboard: React.FC = () => {
             <div className="text-xs text-amber-300 mt-1">-{gapToWorldClass}% to reach</div>
           </div>
         </div>
+        </>
+        )}
       </div>
 
       {/* Detailed Metrics */}

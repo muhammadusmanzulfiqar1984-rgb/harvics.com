@@ -7,12 +7,20 @@ interface RegionStatus {
   profitMargin: number;
   inflationRate: number;
   competitorStock: 'In Stock' | 'Out of Stock';
+  passport?: {
+    origin: string;
+    farmerId: string;
+    fairTradeStatus: string;
+    ethicalScore: number;
+  };
 }
 
 const MarketHeatmap: React.FC = () => {
   const [regions, setRegions] = useState<RegionStatus[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
 
   useEffect(() => {
     const fetchAttackPlan = async () => {
@@ -83,6 +91,24 @@ const MarketHeatmap: React.FC = () => {
     );
   }
 
+  if (regions.length === 0) {
+    return (
+      <div className="p-6 bg-white rounded-xl border border-gray-200 shadow-sm">
+        <div className="flex items-center gap-2 mb-4">
+          <h2 className="text-xl font-bold text-gray-900">🌍 Global Market Heatmap</h2>
+          <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-1 bg-gray-100 text-gray-500 rounded-full">Offline</span>
+        </div>
+        <div className="flex items-center gap-3 p-4 bg-amber-50 border border-amber-200 rounded-lg">
+          <span className="text-amber-500 text-xl">⚠️</span>
+          <div>
+            <p className="text-sm font-medium text-amber-800">Intelligence engine offline</p>
+            <p className="text-xs text-amber-600">Start the backend server on port 4000 to see live market data</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-200 w-full transition-all duration-300 hover:shadow-md">
       <div className="flex justify-between items-center mb-6">
@@ -94,7 +120,7 @@ const MarketHeatmap: React.FC = () => {
           <p className="text-xs text-gray-500 mt-1">Real-time arbitrage & inflation tracking across territories</p>
         </div>
         <div className="text-right">
-          <div className="text-xs font-mono text-gray-400">SYNC: {new Date().toLocaleTimeString()}</div>
+          <div className="text-xs font-mono text-gray-400">SYNC: {mounted ? new Date().toLocaleTimeString() : '—'}</div>
           <div className="flex items-center justify-end gap-1 mt-1">
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
             <span className="text-[10px] font-medium text-green-600">SENTINEL ACTIVE</span>

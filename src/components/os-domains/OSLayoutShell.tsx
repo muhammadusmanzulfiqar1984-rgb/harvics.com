@@ -97,7 +97,7 @@ export default function OSLayoutShell({
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center bg-white rounded-lg shadow-lg p-8 max-w-md">
-          <h1 className="text-2xl font-bold text-black mb-4">Access Denied</h1>
+          <h1 className="text-base font-semibold text-black mb-4">Access Denied</h1>
           <p className="text-black mb-6">You don't have permission to access this domain.</p>
           <Link
             href={`/${locale}/dashboard/company`}
@@ -116,20 +116,20 @@ export default function OSLayoutShell({
       <aside
         className={`${
           sidebarOpen ? 'w-[280px]' : 'w-16'
-        } bg-[#6B1F2B] text-[#C3A35E] transition-all duration-300 flex flex-col border-r border-[#C3A35E]/30 fixed left-0 top-0 h-full z-[999] shadow-2xl`}
+        } bg-[#6B1F2B] text-[#C3A35E] transition-all duration-300 flex flex-col border-r border-[#E5E5EA]/30 fixed left-0 top-0 h-full z-[999] shadow-2xl`}
         style={{ height: '100vh', top: '64px' }}
       >
         {/* Sidebar Header */}
-        <div className="p-4 border-b border-[#C3A35E]/30 flex items-center justify-between min-h-[64px]">
+        <div className="p-4 border-b border-[#E5E5EA]/30 flex items-center justify-between min-h-[64px]">
           {sidebarOpen && (
             <div className="flex items-center gap-2">
               <span className="text-2xl drop-shadow-md">{domainIcon}</span>
-              <h2 className="text-lg font-bold text-[#C3A35E] font-serif tracking-wide">{domainName}</h2>
+              <h2 className="text-lg font-bold text-[#C3A35E]  tracking-wide">{domainName}</h2>
             </div>
           )}
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="text-[#C3A35E] hover:text-white transition-colors p-1 rounded hover:bg-[#C3A35E]/10"
+            className="text-[#C3A35E] hover:text-white transition-colors p-1 rounded hover:bg-[#F5F5F7]"
             aria-label={sidebarOpen ? 'Collapse sidebar' : 'Expand sidebar'}
           >
             {sidebarOpen ? '←' : '→'}
@@ -147,15 +147,15 @@ export default function OSLayoutShell({
                     {sidebarOpen && <span>{item.label}</span>}
                   </div>
                   {sidebarOpen && (
-                    <div className="ml-4 space-y-1 mt-1 border-l border-[#C3A35E]/20 pl-2">
+                    <div className="ml-4 space-y-1 mt-1 border-l border-[#E5E5EA]/20 pl-2">
                       {item.children.map((child, childIndex) => (
                         <Link
                           key={childIndex}
                           href={child.href}
                           className={`block px-3 py-2 rounded-md text-sm transition-all duration-200 ${
                             isActive(child.href)
-                              ? 'bg-[#C3A35E] text-[#6B1F2B] font-bold shadow-lg transform translate-x-1'
-                              : 'text-[#C3A35E]/70 hover:text-[#C3A35E] hover:bg-[#C3A35E]/10'
+                              ? 'bg-[#6B1F2B] text-[#1D1D1F] font-bold shadow-lg transform translate-x-1'
+                              : 'text-[#C3A35E]/70 hover:text-[#C3A35E] hover:bg-[#F5F5F7]'
                           }`}
                         >
                           {child.label}
@@ -169,8 +169,8 @@ export default function OSLayoutShell({
                   href={item.href}
                   className={`flex items-center space-x-2 px-3 py-2.5 rounded-md transition-all duration-200 ${
                     isActive(item.href)
-                      ? 'bg-[#C3A35E] text-[#6B1F2B] font-bold shadow-lg'
-                      : 'text-[#C3A35E]/70 hover:text-[#C3A35E] hover:bg-[#C3A35E]/10'
+                      ? 'bg-[#6B1F2B] text-[#6B1F2B] font-bold shadow-lg'
+                      : 'text-[#C3A35E]/70 hover:text-[#C3A35E] hover:bg-[#F5F5F7]'
                   }`}
                 >
                   <span className="text-lg">{item.icon}</span>
@@ -194,23 +194,23 @@ export default function OSLayoutShell({
       >
         {/* Top Bar - V16 Spec: 64px fixed */}
         <header 
-          className="bg-[#C3A35E] border-b border-[#6B1F2B]/20 px-6 py-4 flex items-center justify-between fixed top-0 left-0 right-0 z-[1000] shadow-md"
+          className="bg-[#6B1F2B] border-b border-[#6B1F2B]/20 px-6 py-4 flex items-center justify-between fixed top-0 left-0 right-0 z-[1000] shadow-md"
           style={{ height: '64px' }}
         >
           {/* Left: Logo + Domain Name */}
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <span className="text-2xl drop-shadow-sm">{domainIcon}</span>
-              <h1 className="text-xl font-bold text-[#6B1F2B] font-serif tracking-wide">{domainName}</h1>
+              <h1 className="text-xl font-semibold text-[#1D1D1F]  tracking-wide">{domainName}</h1>
             </div>
             {countryData && (
               <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-white/20 rounded-lg border border-[#6B1F2B]/10 backdrop-blur-sm">
-                <span className="text-xs text-[#6B1F2B]/80 font-semibold uppercase">Country:</span>
-                <span className="text-sm font-bold text-[#6B1F2B]">{countryData.countryName || selectedCountry}</span>
+                <span className="text-xs text-[#8E8E93] font-semibold uppercase">Country:</span>
+                <span className="text-sm font-semibold text-[#1D1D1F]">{countryData.countryName || selectedCountry}</span>
                 {countryData.currency && (
                   <>
-                    <span className="text-[#6B1F2B]/40">•</span>
-                    <span className="text-sm text-[#6B1F2B] font-bold">{countryData.currency.symbol} {countryData.currency.code}</span>
+                    <span className="text-[#8E8E93]">•</span>
+                    <span className="text-sm text-[#1D1D1F] font-bold">{countryData.currency.symbol} {countryData.currency.code}</span>
                   </>
                 )}
               </div>
@@ -229,16 +229,16 @@ export default function OSLayoutShell({
                 className="relative p-2 rounded-lg hover:bg-[#6B1F2B]/10 transition-colors group"
                 aria-label="Notifications"
               >
-                <span className="text-xl text-[#6B1F2B]">🔔</span>
-                <span className="absolute top-1 right-1 w-2 h-2 bg-[#dc2626] rounded-full border border-[#C3A35E]"></span>
+                <span className="text-xl text-[#6B1F2B]"></span>
+                <span className="absolute top-1 right-1 w-2 h-2 bg-[#dc2626] rounded-full border border-[#E5E5EA]"></span>
               </button>
               {notificationsOpen && (
-                <div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-[#C3A35E]/30 z-50 ring-1 ring-[#6B1F2B]/5">
-                  <div className="p-4 border-b border-gray-100 bg-[#C3A35E]/5">
-                    <h3 className="font-bold text-[#6B1F2B]">Notifications</h3>
+                <div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-[#E5E5EA]/30 z-50 ring-1 ring-[#6B1F2B]/5">
+                  <div className="p-4 border-b border-gray-100 bg-[#F5F5F7]">
+                    <h3 className="font-semibold text-[#1D1D1F]">Notifications</h3>
                   </div>
                   <div className="max-h-96 overflow-y-auto">
-                    <div className="p-4 text-sm text-gray-600">No new notifications</div>
+                    <div className="p-4 text-sm text-[#1D1D1F]">No new notifications</div>
                   </div>
                 </div>
               )}
@@ -254,24 +254,24 @@ export default function OSLayoutShell({
                 className="flex items-center gap-2 p-1.5 pr-3 rounded-lg hover:bg-[#6B1F2B]/10 transition-colors border border-[#6B1F2B]/10 bg-white/10"
                 aria-label="User menu"
               >
-                <div className="w-8 h-8 rounded-full bg-[#6B1F2B] flex items-center justify-center text-[#C3A35E] font-bold text-sm border-2 border-[#C3A35E]">
+                <div className="w-8 h-8 rounded-full bg-[#6B1F2B] flex items-center justify-center text-[#C3A35E] font-bold text-sm border-2 border-[#E5E5EA]">
                   {username.charAt(0).toUpperCase()}
                 </div>
-                <span className="text-sm font-bold text-[#6B1F2B] hidden md:inline">{username}</span>
+                <span className="text-sm font-semibold text-[#1D1D1F] hidden md:inline">{username}</span>
               </button>
               {userMenuOpen && (
-                <div className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-[#C3A35E]/30 z-50 ring-1 ring-[#6B1F2B]/5">
+                <div className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-[#E5E5EA]/30 z-50 ring-1 ring-[#6B1F2B]/5">
                   <div className="p-2">
-                    <div className="px-4 py-3 border-b border-gray-100 bg-[#C3A35E]/5">
-                      <div className="font-bold text-[#6B1F2B] text-sm">Logged in as</div>
-                      <div className="text-xs text-gray-600 mt-0.5 font-medium">{username}</div>
+                    <div className="px-4 py-3 border-b border-gray-100 bg-[#F5F5F7]">
+                      <div className="font-semibold text-[#1D1D1F] text-sm">Logged in as</div>
+                      <div className="text-xs text-[#1D1D1F] mt-0.5 font-medium">{username}</div>
                     </div>
                     <div className="my-1">
                       <button 
                         onClick={handleLogout}
-                        className="w-full text-left px-4 py-2 text-sm text-[#6B1F2B] hover:bg-[#6B1F2B]/5 rounded-md transition-colors font-medium flex items-center gap-2"
+                        className="w-full text-left px-4 py-2 text-sm text-[#1D1D1F] hover:bg-[#6B1F2B]/5 rounded-md transition-colors font-medium flex items-center gap-2"
                       >
-                        <span>🚪</span> Logout
+                        <span></span> Logout
                       </button>
                     </div>
                   </div>

@@ -171,20 +171,20 @@
       }
     },
     "achievements": {
-      "title": "Our Impact",
-      "description": "Recognizing our milestones in creating a better world.",
-      "2024": {
-        "title": "Global Sustainability Award",
-        "description": "Recognized for our commitment to carbon neutrality."
+      "2022": {
+        "title": "Best CSR Initiative",
+        "description": "Honored for our innovative approach to social responsibility."
       },
       "2023": {
         "title": "Community Champion",
         "description": "Awarded for our extensive community outreach programs."
       },
-      "2022": {
-        "title": "Best CSR Initiative",
-        "description": "Honored for our innovative approach to social responsibility."
-      }
+      "2024": {
+        "title": "Global Sustainability Award",
+        "description": "Recognized for our commitment to carbon neutrality."
+      },
+      "title": "Our Impact",
+      "description": "Recognizing our milestones in creating a better world."
     },
     "cta": {
       "title": "Join Us in Making a Difference",
@@ -204,7 +204,40 @@
     "messageUs": "Message Us"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "Media Center",
+    "pageTitle": "Media Center | Harvics",
+    "description": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+    "corporate": "Corporate",
+    "sections": {
+      "news": {
+        "title": "News & Press Releases",
+        "desc": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+        "cta": "Read Latest News"
+      },
+      "gallery": {
+        "title": "Image Gallery",
+        "desc": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+        "cta": "Browse Gallery"
+      },
+      "contacts": {
+        "title": "Media Contacts",
+        "desc": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+        "cta": "Contact Press Team"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "Markets Covered",
+      "industryVerticals": "Industry Verticals",
+      "foundedIn": "Founded in Dubai",
+      "languagesSupported": "Languages Supported"
+    },
+    "recentHeadlines": "Recent Headlines",
+    "headlines": {
+      "expansion": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "aiPlatform": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "carbonNeutral": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "partnership": "Strategic Partnership with Leading Textile Manufacturers in South Asia"
+    }
   },
   "harvicsHouse": {
     "title": "Harvics House",
@@ -435,16 +468,13 @@
         "playbookItem2": "Close all outstanding complaints within 48h.",
         "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
       },
-      "territory": {
-        "title": "Territory Hierarchy"
-      },
+      "territory": "Territory",
       "ordersThisMonth": "Orders This Month",
       "pendingOrders": "Pending Orders",
       "deliveredOrders": "Delivered Orders",
       "territoryInformation": "Territory Information",
       "country": "Country",
       "city": "City",
-      "territory": "Territory",
       "region": "Region",
       "quickActions": "Quick Actions",
       "newOrder": "New Order",
@@ -825,6 +855,291 @@
       "customers": "Customers",
       "employees": "Employees",
       "profit": "Profit"
+    }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "Loading supplier cockpit…",
+      "purchaseOrders": "Purchase orders",
+      "purchaseOrdersSubtitle": "Raised by Harvics",
+      "shipments": "Shipments / GRN",
+      "shipmentsSubtitle": "Accepted this week",
+      "invoices": "Invoices created",
+      "invoicesSubtitle": "Awaiting payment",
+      "paymentsPending": "Payments pending",
+      "paymentsPendingSubtitle": "Scheduled for release",
+      "qualityComplaints": "Quality / complaints",
+      "qualityComplaintsSubtitle": "Open tickets",
+      "forecast": "Forecast (next 4 weeks)",
+      "forecastSubtitle": "AI placeholder",
+      "supplierActions": "Supplier actions",
+      "action1": "Confirm upcoming shipments and update GRN schedule.",
+      "action2": "Review outstanding invoices and share payment advice.",
+      "action3": "Resolve open quality complaints with QA evidence."
+    }
+  },
+  "form": {
+    "username": "Username",
+    "password": "Password",
+    "email": "Email",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "search": "Search",
+    "filter": "Filter",
+    "reset": "Reset",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "confirm": "Confirm",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address"
+  },
+  "faq": {
+    "products": {
+      "category": "Products",
+      "q1": "What products does Harvics offer?",
+      "a1": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "q2": "Where can I buy Harvics products?",
+      "a2": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "q3": "Do you offer bulk ordering?",
+      "a3": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information."
+    },
+    "ordersShipping": {
+      "category": "Orders & Shipping",
+      "q1": "What are your shipping options?",
+      "a1": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "q2": "How long does delivery take?",
+      "a2": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "q3": "Can I track my order?",
+      "a3": "Yes, you can track your order using the tracking number provided in your order confirmation email."
+    },
+    "accountPayments": {
+      "category": "Account & Payments",
+      "q1": "How do I create an account?",
+      "a1": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "q2": "What payment methods do you accept?",
+      "a2": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "q3": "Is my payment information secure?",
+      "a3": "Yes, we use industry-standard encryption to protect your payment information."
+    },
+    "returnsRefunds": {
+      "category": "Returns & Refunds",
+      "q1": "What is your return policy?",
+      "a1": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "q2": "How do I request a refund?",
+      "a2": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days."
+    },
+    "contactCta": {
+      "title": "Still Have Questions?",
+      "subtitle": "Our customer service team is here to help",
+      "button": "Contact Us"
+    }
+  },
+  "careers": {
+    "title": "Careers",
+    "pageTitle": "Careers | Harvics",
+    "description": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+    "joinUs": "Join Us",
+    "heroTitle": "Build the Future of Global Trade",
+    "heroDesc": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+    "stats": {
+      "openPositions": "Open Positions",
+      "countries": "Countries",
+      "industryVerticals": "Industry Verticals",
+      "departmentsHiring": "Departments Hiring"
+    },
+    "openPositionsByDept": "Open Positions by Department",
+    "departments": {
+      "sales": {
+        "name": "Sales & Distribution",
+        "desc": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations."
+      },
+      "supplyChain": {
+        "name": "Supply Chain & Logistics",
+        "desc": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery."
+      },
+      "technology": {
+        "name": "Technology & AI",
+        "desc": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science."
+      },
+      "finance": {
+        "name": "Finance & Treasury",
+        "desc": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions."
+      },
+      "procurement": {
+        "name": "Procurement & Sourcing",
+        "desc": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs."
+      },
+      "hr": {
+        "name": "Human Resources",
+        "desc": "Talent acquisition, L&D, performance management across diverse geographies and cultures."
+      },
+      "legal": {
+        "name": "Legal & Compliance",
+        "desc": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions."
+      },
+      "marketing": {
+        "name": "Marketing & Brand",
+        "desc": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals."
+      }
+    },
+    "roles": "roles",
+    "whyHarvics": "Why Harvics",
+    "benefits": {
+      "globalMobility": {
+        "title": "Global Mobility",
+        "desc": "Work across Dubai, London, Karachi, Lahore, and 40+ markets"
+      },
+      "growthTrack": {
+        "title": "Growth Track",
+        "desc": "Fast-track career progression in a scaling enterprise"
+      },
+      "aiCulture": {
+        "title": "AI-First Culture",
+        "desc": "Work with cutting-edge AI and real-time intelligence systems"
+      },
+      "competitivePackage": {
+        "title": "Competitive Package",
+        "desc": "Market-leading compensation, housing, and benefits"
+      },
+      "learningBudget": {
+        "title": "Learning Budget",
+        "desc": "Annual development budget for courses, conferences, and certifications"
+      },
+      "flexibleWork": {
+        "title": "Flexible Work",
+        "desc": "Hybrid arrangements with regional hub offices worldwide"
+      }
+    }
+  },
+  "strategy": {
+    "title": "Our Strategy",
+    "pageTitle": "Strategy | Harvics",
+    "description": "Building a sustainable future through innovation and excellence",
+    "heroSubtitle": "Building a sustainable future through innovation and excellence",
+    "pillars": {
+      "globalExpansion": {
+        "title": "Global Expansion",
+        "desc": "Expanding our presence in emerging markets while strengthening our position in established markets"
+      },
+      "productInnovation": {
+        "title": "Product Innovation",
+        "desc": "Investing in R&D to develop new products that meet evolving consumer preferences"
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "desc": "Committed to sustainable practices across our supply chain and operations"
+      },
+      "digitalTransformation": {
+        "title": "Digital Transformation",
+        "desc": "Leveraging technology to enhance customer experience and operational efficiency"
+      }
+    },
+    "vision": {
+      "title": "Our Vision",
+      "desc": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Harvics Global Ventures | Premium Global Trading",
+      "description": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019."
+    },
+    "about": {
+      "title": "About Us | Harvics Global Ventures",
+      "description": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries."
+    },
+    "contact": {
+      "title": "Contact Us | Harvics Global Ventures",
+      "description": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas."
+    },
+    "products": {
+      "title": "Products | Harvics Global Ventures",
+      "description": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions."
+    },
+    "careers": {
+      "title": "Careers | Harvics Global Ventures",
+      "description": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology."
+    },
+    "media": {
+      "title": "Media Center | Harvics Global Ventures",
+      "description": "Harvics media center — press releases, latest news, brand assets, and media contacts."
+    },
+    "strategy": {
+      "title": "Our Strategy | Harvics Global Ventures",
+      "description": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation."
+    },
+    "csr": {
+      "title": "Corporate Social Responsibility | Harvics",
+      "description": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices."
+    },
+    "faq": {
+      "title": "FAQ | Harvics Global Ventures",
+      "description": "Frequently asked questions about Harvics products, services, ordering, and global operations."
+    },
+    "locations": {
+      "title": "Global Locations | Harvics",
+      "description": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas."
+    },
+    "leadership": {
+      "title": "Leadership Team | Harvics",
+      "description": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals."
+    },
+    "help": {
+      "title": "Help Center | Harvics",
+      "description": "Get help with orders, accounts, shipping, and Harvics services."
+    },
+    "compliance": {
+      "title": "Compliance and Ethics | Harvics",
+      "description": "Harvics commitment to regulatory compliance, ethical business practices, and global standards."
+    },
+    "history": {
+      "title": "Our History | Harvics",
+      "description": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story."
+    },
+    "newsletter": {
+      "title": "Newsletter | Harvics",
+      "description": "Subscribe to Harvics newsletter for industry insights and product launches."
+    },
+    "login": {
+      "title": "Sign In | Harvics",
+      "description": "Sign in to your Harvics account to manage orders and access the platform."
+    },
+    "research": {
+      "title": "Research and Innovation | Harvics",
+      "description": "Harvics research initiatives and innovation programs driving our global strategy."
+    },
+    "investorRelations": {
+      "title": "Investor Relations | Harvics",
+      "description": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures."
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page Not Found",
+      "heading": "404 — Page Not Found",
+      "description": "The page you are looking for does not exist or has been moved.",
+      "goHome": "Go to Homepage",
+      "goBack": "Go Back"
+    },
+    "serverError": {
+      "title": "Something Went Wrong",
+      "heading": "Something went wrong",
+      "description": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "tryAgain": "Try Again",
+      "reload": "Reload Page",
+      "contactSupport": "Contact Support"
+    },
+    "globalError": {
+      "title": "Application Error",
+      "heading": "Critical Error",
+      "description": "A critical error occurred. Please reload the page.",
+      "reload": "Reload Application"
     }
   }
 }

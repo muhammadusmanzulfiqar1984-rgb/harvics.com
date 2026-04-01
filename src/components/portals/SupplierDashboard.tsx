@@ -46,7 +46,7 @@ export default function V16SupplierDashboard() {
   ]
 
   return (
-    <div className="min-h-screen bg-[#F8F9FA]">
+    <div className="portal-page min-h-screen bg-[#F8F9FA]">
       {/* Header */}
       <PortalOSHeader 
         portal="supplier" 

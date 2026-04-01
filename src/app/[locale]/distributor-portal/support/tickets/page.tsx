@@ -108,7 +108,7 @@ export default function Tickets() {
             <form className="space-y-4">
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Category *</label>
-                <select className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required>
+                <select className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" required>
                   <option value="">Select Category</option>
                   <option value="Product">Product</option>
                   <option value="Finance">Finance</option>
@@ -118,15 +118,15 @@ export default function Tickets() {
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Subject *</label>
-                <input type="text" className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required />
+                <input type="text" className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" required />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Description *</label>
-                <textarea rows={5} className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required />
+                <textarea rows={5} className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" required />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Order ID (Optional)</label>
-                <select className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black">
+                <select className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black">
                   <option value="">Select Order</option>
                   <option value="ORD-12345">ORD-12345</option>
                   <option value="ORD-12346">ORD-12346</option>
@@ -134,11 +134,11 @@ export default function Tickets() {
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Upload File/Image (Optional)</label>
-                <input type="file" className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" />
+                <input type="file" className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Priority *</label>
-                <select className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required>
+                <select className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" required>
                   <option value="Low">Low</option>
                   <option value="Medium">Medium</option>
                   <option value="High">High</option>

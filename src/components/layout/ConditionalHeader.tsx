@@ -1,6 +1,7 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
+import { useEffect, useRef, useState } from 'react'
 import Header from './Header'
 import type { ProductCategory } from '@/data/folderBasedProducts'
 
@@ -14,9 +15,23 @@ export default function ConditionalHeader({
   hideOnPaths = [] 
 }: ConditionalHeaderProps) {
   const pathname = usePathname()
+  const headerRef = useRef<HTMLDivElement>(null)
+  const [headerHeight, setHeaderHeight] = useState(136)
+
+  useEffect(() => {
+    const measure = () => {
+      if (headerRef.current) {
+        setHeaderHeight(headerRef.current.offsetHeight)
+      }
+    }
+    measure()
+    // Re-measure on resize (T3 nav shows/hides based on width)
+    window.addEventListener('resize', measure)
+    return () => window.removeEventListener('resize', measure)
+  }, [])
   
-  const shouldHide = hideOnPaths.some(path => pathname.includes(path))
-  const isAnalyticsPage = pathname.includes('/reports/analytics')
+  const shouldHide = hideOnPaths.some(path => pathname?.includes(path))
+  const isAnalyticsPage = pathname?.includes('/reports/analytics')
   
   if (shouldHide || isAnalyticsPage) {
     return null
@@ -24,11 +39,11 @@ export default function ConditionalHeader({
   
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-[1000]" style={{ background: '#F5F1E8' }}>
+      <div ref={headerRef} className="fixed top-0 left-0 right-0 z-[1000]">
         <Header categories={categories} />
       </div>
-      {/* Spacer: T1(32px) + T2(64px) + T3 nav(40px) = ~136px */}
-      <div className="h-[136px]" />
+      {/* Dynamic spacer — matches actual header height at any screen width */}
+      <div style={{ height: headerHeight }} />
     </>
   )
 }

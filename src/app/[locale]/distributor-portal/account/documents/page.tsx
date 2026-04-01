@@ -89,11 +89,11 @@ export default function Documents() {
             <form className="space-y-4">
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Document Name *</label>
-                <input type="text" className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required />
+                <input type="text" className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" required />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Type *</label>
-                <select className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required>
+                <select className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" required>
                   <option value="">Select Type</option>
                   <option value="Contract">Contract</option>
                   <option value="License">License</option>
@@ -104,11 +104,11 @@ export default function Documents() {
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Expiry Date (Optional)</label>
-                <input type="date" className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" />
+                <input type="date" className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Upload File *</label>
-                <input type="file" className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black" required />
+                <input type="file" className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" required />
               </div>
               <div className="flex space-x-4">
                 <button type="submit" className="flex-1 bg-[#C3A35E] text-[#6B1F2B] px-6 py-3 font-semibold hover:opacity-90 transition-opacity">

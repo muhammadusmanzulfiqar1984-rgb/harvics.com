@@ -165,7 +165,7 @@ export default function TrademarksPage() {
             <select
               value={filterCountry}
               onChange={(e) => setFilterCountry(e.target.value)}
-              className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+              className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
             >
               <option value="">All Countries</option>
               {countries.map(country => (
@@ -178,7 +178,7 @@ export default function TrademarksPage() {
             <select
               value={filterStatus}
               onChange={(e) => setFilterStatus(e.target.value)}
-              className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+              className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
             >
               <option value="">All Statuses</option>
               {statuses.map(status => (
@@ -192,7 +192,7 @@ export default function TrademarksPage() {
                 setFilterCountry('')
                 setFilterStatus('')
               }}
-              className="w-full px-4 py-2 text-sm text-[#C3A35E]/90 border border-black300 hover:bg-white transition-colors"
+              className="w-full px-4 py-2 text-sm text-[#C3A35E]/90 border border-gray-200 hover:bg-white transition-colors"
             >
               Clear Filters
             </button>
@@ -298,7 +298,7 @@ export default function TrademarksPage() {
                         type="text"
                         value={formData.brand_name}
                         onChange={(e) => setFormData({ ...formData, brand_name: e.target.value })}
-                        className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                        className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                         required
                       />
                     </div>
@@ -309,7 +309,7 @@ export default function TrademarksPage() {
                           type="text"
                           value={formData.class_number}
                           onChange={(e) => setFormData({ ...formData, class_number: e.target.value })}
-                          className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                          className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                         />
                       </div>
                       <div>
@@ -317,7 +317,7 @@ export default function TrademarksPage() {
                         <select
                           value={formData.country}
                           onChange={(e) => setFormData({ ...formData, country: e.target.value })}
-                          className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                          className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                           required
                         >
                           <option value="">Select Country</option>
@@ -334,7 +334,7 @@ export default function TrademarksPage() {
                           type="text"
                           value={formData.application_no}
                           onChange={(e) => setFormData({ ...formData, application_no: e.target.value })}
-                          className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                          className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                         />
                       </div>
                       <div>
@@ -342,7 +342,7 @@ export default function TrademarksPage() {
                         <select
                           value={formData.status}
                           onChange={(e) => setFormData({ ...formData, status: e.target.value })}
-                          className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                          className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                           required
                         >
                           {statuses.map(status => (
@@ -357,12 +357,12 @@ export default function TrademarksPage() {
                         type="date"
                         value={formData.expiry_date}
                         onChange={(e) => setFormData({ ...formData, expiry_date: e.target.value })}
-                        className="w-full px-3 py-2 border border-black300 focus:ring-2 focus:ring-black focus:border-transparent"
+                        className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Documents</label>
-                      <div className="border border-black300 p-4">
+                      <div className="border border-gray-200 p-4">
                         {formData.documents.length > 0 ? (
                           <ul className="space-y-2">
                             {formData.documents.map((doc, idx) => (
@@ -459,7 +459,7 @@ export default function TrademarksPage() {
                 )}
                 <button
                   onClick={() => setIsModalOpen(false)}
-                  className="mt-3 w-full inline-flex justify-center border border-black300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-[#C3A35E]/90 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black sm:mt-0 sm:ml-3 sm:w-auto"
+                  className="mt-3 w-full inline-flex justify-center border border-gray-200 shadow-sm px-4 py-2 bg-white text-sm font-medium text-[#C3A35E]/90 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black sm:mt-0 sm:ml-3 sm:w-auto"
                 >
                   Close
                 </button>

@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "ko",
+    "language": "Korean",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Korean. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Korean",
+      "translation": "환영합니다"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Korean",
+      "translation": "하위치"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Korean",
+      "translation": "2019년부터 프리미엄 소비재 분야에서 탁월한 성과를 거두고 있습니다."
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Korean",
+      "translation": "세계적인 소비재 기업으로서 국제적인 품질 기준에 부합하는 다양한 종류의 프리미엄 식품을 제공합니다."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Korean",
+      "translation": "제품 살펴보기"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Korean",
+      "translation": "문의하기"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Korean",
+      "translation": "더 알아보기"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Korean",
+      "translation": "프리미엄 소비재 분야의 탁월함"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Korean",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Korean",
+      "translation": "런던 • 밀라노 • 뉴욕"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Korean",
+      "translation": "빵집"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Korean",
+      "translation": "음료수"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Korean",
+      "translation": "제과류"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Korean",
+      "translation": "요리"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Korean",
+      "translation": "냉동식품"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Korean",
+      "translation": "파스타"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Korean",
+      "translation": "간식"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Korean",
+      "translation": "ESG 보고서 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Korean",
+      "translation": "런던 • 밀라노 • 뉴욕"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Korean",
+      "translation": "집"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Korean",
+      "translation": "에 대한"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Korean",
+      "translation": "회사 소개"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Korean",
+      "translation": "브랜드 스토리"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Korean",
+      "translation": "제품"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Korean",
+      "translation": "저희 제품"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Korean",
+      "translation": "모든 제품 보기"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Korean",
+      "translation": "CSR"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Korean",
+      "translation": "투자자 관계"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Korean",
+      "translation": "투자자들"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Korean",
+      "translation": "메디아"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Korean",
+      "translation": "문의하기"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Korean",
+      "translation": "하빅스 하우스"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Korean",
+      "translation": "국가"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Korean",
+      "translation": "포털"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Korean",
+      "translation": "로그인"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Korean",
+      "translation": "위시리스트"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Korean",
+      "translation": "쇼핑 카트"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Korean",
+      "translation": "돕다"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Korean",
+      "translation": "매장 찾기"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Korean",
+      "translation": "돈"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Korean",
+      "translation": "매상"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Korean",
+      "translation": "제안"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Korean",
+      "translation": "다크 모드"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Korean",
+      "translation": "신용카드"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Korean",
+      "translation": "M&S 리워드 신용카드"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Korean",
+      "translation": "클럽 리워드"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Korean",
+      "translation": "저희 신용카드"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Korean",
+      "translation": "보험"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Korean",
+      "translation": "주택 보험"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Korean",
+      "translation": "여행자 보험"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Korean",
+      "translation": "여행 서비스"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Korean",
+      "translation": "여행 경비"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Korean",
+      "translation": "환율"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Korean",
+      "translation": "추가 서비스"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Korean",
+      "translation": "저축 및 투자"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Korean",
+      "translation": "개인 대출"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Korean",
+      "translation": "재정 지원"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Korean",
+      "translation": "현재 판매 중"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Korean",
+      "translation": "정리"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Korean",
+      "translation": "계절별 세일"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Korean",
+      "translation": "특별 할인"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Korean",
+      "translation": "프로모션"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Korean",
+      "translation": "대량 주문 할인"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Korean",
+      "translation": "저희 제품"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Korean",
+      "translation": "모든 제품 보기"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Korean",
+      "translation": "제품 카테고리"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Korean",
+      "translation": "정성과 뛰어난 품질을 담아 제작된 프리미엄 제품들을 만나보세요."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Korean",
+      "translation": "1단계: 카테고리"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Korean",
+      "translation": "2단계: 모듈"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Korean",
+      "translation": "3단계: KPI 화면"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Korean",
+      "translation": "4단계: 행동"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Korean",
+      "translation": "내비게이션 재설정"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Korean",
+      "translation": "이 카테고리에 해당하는 하위 카테고리가 없습니다."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Korean",
+      "translation": "제품"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Korean",
+      "translation": "하위 카테고리"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Korean",
+      "translation": "빵집"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Korean",
+      "translation": "갓 구운 빵과 페이스트리."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Korean",
+      "translation": "음료수"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Korean",
+      "translation": "어떤 자리에도 어울리는 상쾌한 음료."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Korean",
+      "translation": "과자"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Korean",
+      "translation": "달콤한 간식과 즐거움."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Korean",
+      "translation": "요리"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Korean",
+      "translation": "주방에 꼭 필요한 재료들."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Korean",
+      "translation": "냉동식품"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Korean",
+      "translation": "간편하고 맛있는 냉동식품."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Korean",
+      "translation": "파스타"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Korean",
+      "translation": "정통 파스타 종류."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Korean",
+      "translation": "간식"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Korean",
+      "translation": "언제든 즐길 수 있는 맛있는 간식."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Korean",
+      "translation": "하빅스 소개"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Korean",
+      "translation": "2019년부터 프리미엄 소비재 분야에서 탁월한 성과를 거두고 있습니다."
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Korean",
+      "translation": "우리의 이야기"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Korean",
+      "translation": "2019년에 설립된 하빅스는 혁신적인 아이디어에서 출발하여 프리미엄 소비재 분야의 글로벌 리더로 성장했습니다. 하빅스의 여정은 품질에 대한 끊임없는 추구와 혁신에 대한 헌신으로 특징지어집니다."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Korean",
+      "translation": "저희는 40개국 이상에서 사업을 운영하며 삶을 풍요롭게 하고 업계에 새로운 기준을 제시하는 제품을 제공합니다. 소규모 기업으로 시작하여 세계적인 기업으로 성장했지만, 저희의 핵심 가치는 변함없이 지켜지고 있습니다."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Korean",
+      "translation": "2019년 설립"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Korean",
+      "translation": "40개국 이상"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Korean",
+      "translation": "6가지 제품 라인"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Korean",
+      "translation": "기업의 사회적 책임"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Korean",
+      "translation": "하빅스는 세상에 긍정적인 영향을 미치기 위해 최선을 다하고 있습니다. 당사의 사회적 책임(CSR) 활동은 지속가능성, 지역사회 역량 강화, 그리고 윤리적인 사업 관행에 중점을 두고 있습니다."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Korean",
+      "translation": "수년간의 영향"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Korean",
+      "translation": "도달 국가"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Korean",
+      "translation": "삶에 영향을 준 사람들"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Korean",
+      "translation": "우리의 주요 사업"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Korean",
+      "translation": "우리는 지속 가능한 변화를 이끌고 모든 이해관계자를 위한 공유 가치를 창출하기 위해 네 가지 핵심 기둥에 집중합니다."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Korean",
+      "translation": "지속가능성"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Korean",
+      "translation": "재생에너지 사용과 폐기물 감축을 통해 환경 발자국을 줄입니다."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Korean",
+      "translation": "재생에너지"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Korean",
+      "translation": "폐기물 재활용"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Korean",
+      "translation": "탄소 감축"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Korean",
+      "translation": "지역사회 지원"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Korean",
+      "translation": "교육, 의료 및 경제 개발을 통해 지역 사회에 힘을 실어줍니다."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Korean",
+      "translation": "지원받은 가족"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Korean",
+      "translation": "활성 프로그램"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Korean",
+      "translation": "자원봉사자들"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Korean",
+      "translation": "교육"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Korean",
+      "translation": "경제적으로 어려운 학생들에게 양질의 교육과 장학금을 제공합니다."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Korean",
+      "translation": "장학금"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Korean",
+      "translation": "협력 학교"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Korean",
+      "translation": "영향을 받는 학생 수"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Korean",
+      "translation": "건강 및 웰빙"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Korean",
+      "translation": "의료 서비스 및 영양 공급이 부족한 지역의 의료 접근성 개선."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Korean",
+      "translation": "건강 캠페인"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Korean",
+      "translation": "서비스를 받은 사람 수"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Korean",
+      "translation": "이동식 진료소"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Korean",
+      "translation": "최고의 기업의 사회적 책임(CSR) 활동"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Korean",
+      "translation": "사회적 책임에 대한 혁신적인 접근 방식을 인정받아 수상했습니다."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Korean",
+      "translation": "커뮤니티 챔피언"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Korean",
+      "translation": "저희의 광범위한 지역사회 봉사 프로그램을 인정받아 수상했습니다."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Korean",
+      "translation": "글로벌 지속가능성 어워드"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Korean",
+      "translation": "탄소 중립에 대한 우리의 노력을 인정받았습니다."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Korean",
+      "translation": "우리의 영향력"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Korean",
+      "translation": "더 나은 세상을 만들기 위한 우리의 주요 성과들을 기념합니다."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Korean",
+      "translation": "함께 변화를 만들어 갑시다!"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Korean",
+      "translation": "저희와 파트너십을 맺거나, 저희가 어떻게 지속 가능한 미래를 만들어가고 있는지 자세히 알아보세요."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Korean",
+      "translation": "CSR 팀에 문의하세요"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Korean",
+      "translation": "더 알아보기"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Korean",
+      "translation": "연락 주세요"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Korean",
+      "translation": "여러분의 의견을 기다립니다. 아래 채널 중 하나를 통해 연락 주세요."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Korean",
+      "translation": "핸드폰"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Korean",
+      "translation": "이메일"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Korean",
+      "translation": "왓츠앱"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Korean",
+      "translation": "지금 바로 전화하세요"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Korean",
+      "translation": "이메일 보내기"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Korean",
+      "translation": "저희에게 메시지를 보내주세요"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Korean",
+      "translation": "미디어 센터"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Korean",
+      "translation": "미디어 센터 | 하빅스"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Korean",
+      "translation": "하빅스 글로벌 벤처스의 보도 자료, 브랜드 자산 및 최신 뉴스입니다."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Korean",
+      "translation": "기업"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Korean",
+      "translation": "뉴스 및 보도 자료"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Korean",
+      "translation": "하빅스 글로벌 벤처스의 최신 발표, 시장 확장, 제품 출시 및 기업 업데이트 소식입니다."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Korean",
+      "translation": "최신 뉴스를 읽어보세요"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Korean",
+      "translation": "이미지 갤러리"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Korean",
+      "translation": "미디어 활용을 위한 고해상도 브랜드 이미지, 제품 사진, 시설 사진 및 이벤트 사진."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Korean",
+      "translation": "갤러리 둘러보기"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Korean",
+      "translation": "언론 담당자 연락처"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Korean",
+      "translation": "언론 문의, 인터뷰 요청 및 파트너십 발표는 당사 홍보팀으로 연락해 주십시오."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Korean",
+      "translation": "보도팀에 문의하세요"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Korean",
+      "translation": "대상 시장"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Korean",
+      "translation": "산업 분야"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Korean",
+      "translation": "두바이에서 설립됨"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Korean",
+      "translation": "지원되는 언어"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Korean",
+      "translation": "최근 주요 뉴스"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Korean",
+      "translation": "하빅스, 동남아시아 5개 신규 시장으로 소비재 사업 확장"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Korean",
+      "translation": "글로벌 유통을 위한 새로운 AI 기반 공급망 플랫폼 출시"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Korean",
+      "translation": "하빅스, 모든 시설에서 탄소 중립 달성이라는 중요한 이정표 달성"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Korean",
+      "translation": "남아시아 주요 섬유 제조업체와의 전략적 파트너십"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Korean",
+      "translation": "하빅스 하우스"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Korean",
+      "translation": "탁월함과 전통의 유산"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Korean",
+      "translation": "하빅스 하우스에 오신 것을 환영합니다"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Korean",
+      "translation": "하빅스 하우스는 품질과 전통에 대한 당사의 헌신이 최고조에 달한 곳입니다. 이곳에서는 당사의 최고급 제품들을 한자리에 모아 우아함, 전통, 혁신이라는 가치를 반영하는 공간에서 선보입니다."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Korean",
+      "translation": "하빅스의 특별한 컬렉션을 둘러보고 하빅스라는 이름이 붙은 모든 제품에 담긴 이야기를 알아보세요."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Korean",
+      "translation": "하빅스 글로벌 벤처스"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Korean",
+      "translation": "2019년부터 프리미엄 소비재 분야에서 탁월한 성과를 거두고 있습니다."
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Korean",
+      "translation": "세계적인 소비재 기업으로서 국제적인 품질 기준에 부합하는 다양한 종류의 프리미엄 식품을 제공합니다."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Korean",
+      "translation": "런던 • 밀라노 • 뉴욕"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Korean",
+      "translation": "2019년부터"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Korean",
+      "translation": "하빅스 뉴스"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Korean",
+      "translation": "알림 및 업데이트를 받으려면 구독하세요."
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Korean",
+      "translation": "회원가입"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Korean",
+      "translation": "규정 준수 관련 문제"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Korean",
+      "translation": "규정 준수나 윤리에 대해 우려되는 점이 있으면 주저하지 말고 말씀해 주세요."
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Korean",
+      "translation": "목소리를 내세요"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Korean",
+      "translation": "문의하기"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Korean",
+      "translation": "저희 팀에 연락하세요"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Korean",
+      "translation": "문의하기"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Korean",
+      "translation": "유용한 링크"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Korean",
+      "translation": "하위치에게 문의하세요"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Korean",
+      "translation": "구인 정보 검색"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Korean",
+      "translation": "뉴스레터를 구독하세요"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Korean",
+      "translation": "회사"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Korean",
+      "translation": "글로벌 주소"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Korean",
+      "translation": "전략"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Korean",
+      "translation": "우리의 리더십"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Korean",
+      "translation": "브랜드 A-Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Korean",
+      "translation": "우리의 역사"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Korean",
+      "translation": "지속가능성"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Korean",
+      "translation": "소식"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Korean",
+      "translation": "언론 담당자 연락처"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Korean",
+      "translation": "이미지"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Korean",
+      "translation": "투자자들"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Korean",
+      "translation": "기업 지배구조"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Korean",
+      "translation": "주식, ADR 및 채권"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Korean",
+      "translation": "출판물"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Korean",
+      "translation": "팔로우하세요"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Korean",
+      "translation": "0개의 문제"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Korean",
+      "translation": "사이트맵"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Korean",
+      "translation": "구독 취소"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Korean",
+      "translation": "돕다"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Korean",
+      "translation": "은둔"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Korean",
+      "translation": "쿠키"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Korean",
+      "translation": "이용약관"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Korean",
+      "translation": "접근성"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Korean",
+      "translation": "탄소 효율성"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Korean",
+      "translation": "공급업체"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Korean",
+      "translation": "소셜 미디어"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Korean",
+      "translation": "쿠키 설정"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Korean",
+      "translation": "프리미엄 품질"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Korean",
+      "translation": "이메일 주소"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Korean",
+      "translation": "이메일 주소를 입력하세요"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Korean",
+      "translation": "구독하다"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Korean",
+      "translation": "구독 중..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Korean",
+      "translation": "회사 소개"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Korean",
+      "translation": "메디아"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Korean",
+      "translation": "제품, 브랜드 또는 카테고리를 검색하세요."
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Korean",
+      "translation": "검색 결과가 없습니다."
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Korean",
+      "translation": "수색..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Korean",
+      "translation": "결과"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Korean",
+      "translation": "저희와 채팅하세요"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Korean",
+      "translation": "메시지를 입력하세요..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Korean",
+      "translation": "보내다"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Korean",
+      "translation": "닫다"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Korean",
+      "translation": "안녕하세요! 오늘 어떻게 도와드릴까요?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Korean",
+      "translation": "죄송합니다, 잘 이해하지 못했습니다. 다시 설명해 주시겠습니까?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Korean",
+      "translation": "제품 정보, 주문 또는 일반 문의 사항에 대해 도와드릴 수 있습니다. 무엇을 알고 싶으신가요?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Korean",
+      "translation": "추가적인 도움이 필요하시면 support@harvics.com으로 이메일을 보내시거나 +1-800-HARVICS로 전화해 주십시오."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Korean",
+      "translation": "저희와 채팅하세요"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Korean",
+      "translation": "로딩 중..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Korean",
+      "translation": "오류"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Korean",
+      "translation": "성공"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Korean",
+      "translation": "구하다"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Korean",
+      "translation": "취소"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Korean",
+      "translation": "삭제"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Korean",
+      "translation": "편집하다"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Korean",
+      "translation": "보다"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Korean",
+      "translation": "제출하다"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Korean",
+      "translation": "찾다"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Korean",
+      "translation": "필터"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Korean",
+      "translation": "분명한"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Korean",
+      "translation": "다운로드"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Korean",
+      "translation": "업로드"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Korean",
+      "translation": "예"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Korean",
+      "translation": "아니요"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Korean",
+      "translation": "닫다"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Korean",
+      "translation": "뒤쪽에"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Korean",
+      "translation": "다음"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Korean",
+      "translation": "이전의"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Korean",
+      "translation": "행위"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Korean",
+      "translation": "상태"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Korean",
+      "translation": "날짜"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Korean",
+      "translation": "이름"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Korean",
+      "translation": "이메일"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Korean",
+      "translation": "핸드폰"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Korean",
+      "translation": "주소"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Korean",
+      "translation": "국가"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Korean",
+      "translation": "도시"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Korean",
+      "translation": "모두"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Korean",
+      "translation": "없음"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Korean",
+      "translation": "선택하다"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Korean",
+      "translation": "언어를 선택하세요"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Korean",
+      "translation": "국가를 선택하세요"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Korean",
+      "translation": "더 보기"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Korean",
+      "translation": "간략히 보기"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Korean",
+      "translation": "필수의"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Korean",
+      "translation": "메뉴"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Korean",
+      "translation": "제품 보기"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Korean",
+      "translation": "음악 재생"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Korean",
+      "translation": "음악 일시 정지"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Korean",
+      "translation": "음악 음소거"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Korean",
+      "translation": "음악 음소거 해제"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Korean",
+      "translation": "우리의 글로벌 영향력"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Korean",
+      "translation": "부터"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Korean",
+      "translation": "주요 시장"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Korean",
+      "translation": "주요 시장"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Korean",
+      "translation": "있음"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Korean",
+      "translation": "서비스 제공 국가"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Korean",
+      "translation": "주요 시장"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Korean",
+      "translation": "제품 카테고리"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Korean",
+      "translation": "확립된"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Korean",
+      "translation": "영토 계층 구조"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Korean",
+      "translation": "전체 경로"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Korean",
+      "translation": "현재 영토"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Korean",
+      "translation": "품목 없음"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Korean",
+      "translation": "지구"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Korean",
+      "translation": "대륙"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Korean",
+      "translation": "지역"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Korean",
+      "translation": "국가"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Korean",
+      "translation": "도시"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Korean",
+      "translation": "구역"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Korean",
+      "translation": "위치"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Korean",
+      "translation": "하빅스 글로벌"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Korean",
+      "translation": "글로벌"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Korean",
+      "translation": "지역을 선택하세요"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Korean",
+      "translation": "고객 정보"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Korean",
+      "translation": "선택된"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Korean",
+      "translation": "성명"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Korean",
+      "translation": "성명을 입력하세요"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Korean",
+      "translation": "이름은 필수 입력 사항입니다."
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Korean",
+      "translation": "이메일 주소"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Korean",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Korean",
+      "translation": "이메일 주소는 필수입니다."
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Korean",
+      "translation": "유효한 이메일 주소를 입력해 주세요."
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Korean",
+      "translation": "전화 번호"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Korean",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Korean",
+      "translation": "전화번호는 필수입니다."
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Korean",
+      "translation": "주소"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Korean",
+      "translation": "귀하의 주소"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Korean",
+      "translation": "주소는 필수 입력 사항입니다."
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Korean",
+      "translation": "마케팅 정보 및 업데이트 수신에 동의합니다."
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Korean",
+      "translation": "제출 및 계속"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Korean",
+      "translation": "제출 중..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Korean",
+      "translation": "건너뛰고 계속하기"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Korean",
+      "translation": "주요 성과 지표"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Korean",
+      "translation": "오늘 주문"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Korean",
+      "translation": "Harvics CRM을 통해 제출되었습니다."
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Korean",
+      "translation": "배송 예정"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Korean",
+      "translation": "지정된 경로를 따라"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Korean",
+      "translation": "소매업체"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Korean",
+      "translation": "범위 내 활성 콘센트"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Korean",
+      "translation": "T & A 점수"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Korean",
+      "translation": "관할 지역"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Korean",
+      "translation": "재무 및 재고"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Korean",
+      "translation": "재고가 부족한 SKU"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Korean",
+      "translation": "트리거 보충"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Korean",
+      "translation": "미결제 청구서"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Korean",
+      "translation": "수령 예정"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Korean",
+      "translation": "신용 한도"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Korean",
+      "translation": "재무부에서 배정함"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Korean",
+      "translation": "자동 승인, 재고 보충 및 송장 알림 기능이 활성화되었습니다."
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Korean",
+      "translation": "자기 승인"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Korean",
+      "translation": "재고 보충"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Korean",
+      "translation": "청구서 납부 알림"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Korean",
+      "translation": "AI 추천"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Korean",
+      "translation": "위험 수준"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Korean",
+      "translation": "신용 이용률 및 결제 이력을 기준으로"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Korean",
+      "translation": "권장 주문 순서"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Korean",
+      "translation": "AI가 추천하는 주문 가능한 SKU"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Korean",
+      "translation": "다음 동작"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Korean",
+      "translation": "조치 및 지침"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Korean",
+      "translation": "불만사항"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Korean",
+      "translation": "소매업체 관련 문제, 조치 대기 중"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Korean",
+      "translation": "플레이북"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Korean",
+      "translation": "정오 이전에 배송될 예정인 물품을 우선 처리해 주세요."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Korean",
+      "translation": "모든 미처리된 불만 사항은 48시간 이내에 처리해 주십시오."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Korean",
+      "translation": "재고가 부족한 SKU에 대한 재고 보충을 트리거합니다(자동 구매 주문 생성)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Korean",
+      "translation": "지역"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Korean",
+      "translation": "이번 달 주문"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Korean",
+      "translation": "보류 중인 주문"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Korean",
+      "translation": "배송 완료된 주문"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Korean",
+      "translation": "영토 정보"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Korean",
+      "translation": "국가"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Korean",
+      "translation": "도시"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Korean",
+      "translation": "지역"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Korean",
+      "translation": "빠른 조치"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Korean",
+      "translation": "새로운 질서"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Korean",
+      "translation": "주문 내역 보기"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Korean",
+      "translation": "청구서 보기"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Korean",
+      "translation": "프로필 설정"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Korean",
+      "translation": "대시보드를 불러오는 중..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Korean",
+      "translation": "오류"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Korean",
+      "translation": "내 주문"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Korean",
+      "translation": "주문 ID"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Korean",
+      "translation": "날짜"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Korean",
+      "translation": "상태"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Korean",
+      "translation": "품목"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Korean",
+      "translation": "총액"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Korean",
+      "translation": "행위"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Korean",
+      "translation": "상세 정보 보기"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Korean",
+      "translation": "상태"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Korean",
+      "translation": "시작일"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Korean",
+      "translation": "종료일"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Korean",
+      "translation": "모든 상태"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Korean",
+      "translation": "필터 지우기"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Korean",
+      "translation": "보류 중"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Korean",
+      "translation": "처리 중"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Korean",
+      "translation": "배송 완료"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Korean",
+      "translation": "취소"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Korean",
+      "translation": "주문 내역을 찾을 수 없습니다."
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Korean",
+      "translation": "주문 불러오는 중..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Korean",
+      "translation": "페이지"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Korean",
+      "translation": "~의"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Korean",
+      "translation": "이전의"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Korean",
+      "translation": "다음"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Korean",
+      "translation": "주문 상세 정보"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Korean",
+      "translation": "주문 목록으로 돌아가기"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Korean",
+      "translation": "주문 ID"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Korean",
+      "translation": "상태"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Korean",
+      "translation": "주문 날짜"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Korean",
+      "translation": "배송일"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Korean",
+      "translation": "배송 주소"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Korean",
+      "translation": "메모"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Korean",
+      "translation": "주문 상품"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Korean",
+      "translation": "제품"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Korean",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Korean",
+      "translation": "수량"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Korean",
+      "translation": "단가"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Korean",
+      "translation": "총"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Korean",
+      "translation": "총액"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Korean",
+      "translation": "상태 타임라인"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Korean",
+      "translation": "주문을 찾을 수 없습니다"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Korean",
+      "translation": "새 주문 생성"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Korean",
+      "translation": "주문 상품"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Korean",
+      "translation": "항목 추가"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Korean",
+      "translation": "아직 항목이 추가되지 않았습니다. \"항목 추가\"를 클릭하여 시작하세요."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Korean",
+      "translation": "주문 상세 정보"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Korean",
+      "translation": "배송일"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Korean",
+      "translation": "배송 주소"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Korean",
+      "translation": "메모"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Korean",
+      "translation": "총액"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Korean",
+      "translation": "주문 생성"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Korean",
+      "translation": "질서를 만들어가는 중..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Korean",
+      "translation": "취소"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Korean",
+      "translation": "제품을 선택하세요"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Korean",
+      "translation": "제품"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Korean",
+      "translation": "수량"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Korean",
+      "translation": "단가"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Korean",
+      "translation": "제거하다"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Korean",
+      "translation": "소계"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Korean",
+      "translation": "주문 ID"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Korean",
+      "translation": "주문 시 최소 한 가지 이상의 품목을 선택해야 합니다."
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Korean",
+      "translation": "제품이 필요합니다"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Korean",
+      "translation": "수량은 0보다 커야 합니다."
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Korean",
+      "translation": "단가는 음수가 될 수 없습니다."
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Korean",
+      "translation": "잘못된 배송일 형식입니다."
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Korean",
+      "translation": "배송일은 과거일 수 없습니다."
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Korean",
+      "translation": "내 청구서"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Korean",
+      "translation": "송장 번호"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Korean",
+      "translation": "송장 날짜"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Korean",
+      "translation": "두 번의 데이트"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Korean",
+      "translation": "양"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Korean",
+      "translation": "지불 금액"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Korean",
+      "translation": "결제 상태"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Korean",
+      "translation": "결제 상태"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Korean",
+      "translation": "모든 상태"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Korean",
+      "translation": "필터 지우기"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Korean",
+      "translation": "유급의"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Korean",
+      "translation": "미지급"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Korean",
+      "translation": "부분적"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Korean",
+      "translation": "송장을 찾을 수 없습니다."
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Korean",
+      "translation": "송장 불러오는 중..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Korean",
+      "translation": "내 프로필"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Korean",
+      "translation": "계정 정보"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Korean",
+      "translation": "유통업체 ID"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Korean",
+      "translation": "지역"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Korean",
+      "translation": "국가"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Korean",
+      "translation": "도시"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Korean",
+      "translation": "계정 생성됨"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Korean",
+      "translation": "프로필 업데이트"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Korean",
+      "translation": "이름"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Korean",
+      "translation": "이메일"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Korean",
+      "translation": "핸드폰"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Korean",
+      "translation": "주소"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Korean",
+      "translation": "언어"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Korean",
+      "translation": "통화"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Korean",
+      "translation": "변경 사항 저장"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Korean",
+      "translation": "절약..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Korean",
+      "translation": "프로필이 성공적으로 업데이트되었습니다."
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Korean",
+      "translation": "프로필 불러오는 중..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Korean",
+      "translation": "잘못된 이메일 형식입니다"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Korean",
+      "translation": "잘못된 전화번호 형식입니다"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Korean",
+      "translation": "오류"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Korean",
+      "translation": "로딩 중..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Korean",
+      "translation": "구하다"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Korean",
+      "translation": "취소"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Korean",
+      "translation": "뒤쪽에"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Korean",
+      "translation": "제출하다"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Korean",
+      "translation": "삭제"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Korean",
+      "translation": "편집하다"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Korean",
+      "translation": "보다"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Korean",
+      "translation": "찾다"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Korean",
+      "translation": "필터"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Korean",
+      "translation": "분명한"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Korean",
+      "translation": "적용하다"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Korean",
+      "translation": "닫다"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Korean",
+      "translation": "확인하다"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Korean",
+      "translation": "예"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Korean",
+      "translation": "아니요"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Korean",
+      "translation": "법률 운영 체제"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Korean",
+      "translation": "법률 OS"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Korean",
+      "translation": "접근 불가"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Korean",
+      "translation": "Legal OS 모듈에 접근할 권한이 없습니다."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Korean",
+      "translation": "계기반"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Korean",
+      "translation": "계약"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Korean",
+      "translation": "인증서"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Korean",
+      "translation": "규정 준수"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Korean",
+      "translation": "법률 대시보드"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Korean",
+      "translation": "법률 운영 및 규정 준수 현황 개요"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Korean",
+      "translation": "활성 상표"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Korean",
+      "translation": "활성 계약"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Korean",
+      "translation": "준수 상태"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Korean",
+      "translation": "상표"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Korean",
+      "translation": "상표 등록 및 출원 관리"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Korean",
+      "translation": "새 상표 추가"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Korean",
+      "translation": "국가"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Korean",
+      "translation": "상태"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Korean",
+      "translation": "제국"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Korean",
+      "translation": "모든 상태"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Korean",
+      "translation": "필터 지우기"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Korean",
+      "translation": "브랜드 이름"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Korean",
+      "translation": "수업"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Korean",
+      "translation": "국가"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Korean",
+      "translation": "신청 번호"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Korean",
+      "translation": "상태"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Korean",
+      "translation": "만료일"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Korean",
+      "translation": "행위"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Korean",
+      "translation": "상표 편집"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Korean",
+      "translation": "새 상표 추가"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Korean",
+      "translation": "상표 보기"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Korean",
+      "translation": "브랜드 이름"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Korean",
+      "translation": "수업 번호"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Korean",
+      "translation": "국가"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Korean",
+      "translation": "신청 번호"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Korean",
+      "translation": "상태"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Korean",
+      "translation": "만료일"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Korean",
+      "translation": "서류"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Korean",
+      "translation": "첨부된 문서 없음"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Korean",
+      "translation": "문서 추가"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Korean",
+      "translation": "제거하다"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Korean",
+      "translation": "상표를 불러오는 데 실패했습니다."
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Korean",
+      "translation": "상표 저장에 실패했습니다. 다시 시도해 주세요."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Korean",
+      "translation": "법적 소송"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Korean",
+      "translation": "법률 사건을 관리하고 진행 상황을 추적하세요."
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Korean",
+      "translation": "새로운 사건"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Korean",
+      "translation": "사건 제목"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Korean",
+      "translation": "케이스 유형"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Korean",
+      "translation": "국가"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Korean",
+      "translation": "설명"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Korean",
+      "translation": "담당자에게 배정됨"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Korean",
+      "translation": "상태"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Korean",
+      "translation": "심리 날짜"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Korean",
+      "translation": "사건 제목"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Korean",
+      "translation": "유형"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Korean",
+      "translation": "국가"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Korean",
+      "translation": "담당자에게 배정됨"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Korean",
+      "translation": "상태"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Korean",
+      "translation": "심리 날짜"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Korean",
+      "translation": "행위"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Korean",
+      "translation": "열려 있는"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Korean",
+      "translation": "진행 중"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Korean",
+      "translation": "닫은"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Korean",
+      "translation": "취소"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Korean",
+      "translation": "함대 지도 보기"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Korean",
+      "translation": "영업 사원 및 배송 차량의 실시간 위치 추적"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Korean",
+      "translation": "현직 직원"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Korean",
+      "translation": "현직 직원 없음"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Korean",
+      "translation": "로딩 중..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Korean",
+      "translation": "경로 재생"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Korean",
+      "translation": "직원"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Korean",
+      "translation": "속도"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Korean",
+      "translation": "다시 놓기"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Korean",
+      "translation": "놀다"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Korean",
+      "translation": "정지시키다"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Korean",
+      "translation": "전철기"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Korean",
+      "translation": "경로 데이터가 없습니다."
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Korean",
+      "translation": "경로를 불러오는 중..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Korean",
+      "translation": "경쟁사 제품"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Korean",
+      "translation": "경쟁사 제품 정보 추적"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Korean",
+      "translation": "제품 추가"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Korean",
+      "translation": "경쟁사 제품 추가"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Korean",
+      "translation": "상표"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Korean",
+      "translation": "SKU 이름"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Korean",
+      "translation": "범주"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Korean",
+      "translation": "크기"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Korean",
+      "translation": "가격"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Korean",
+      "translation": "통화"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Korean",
+      "translation": "국가"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Korean",
+      "translation": "상표"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Korean",
+      "translation": "SKU 이름"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Korean",
+      "translation": "범주"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Korean",
+      "translation": "크기"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Korean",
+      "translation": "가격"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Korean",
+      "translation": "국가"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Korean",
+      "translation": "추가된 날짜"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Korean",
+      "translation": "제품을 불러오는 데 실패했습니다."
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Korean",
+      "translation": "제품 생성에 실패했습니다. 다시 시도해 주세요."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Korean",
+      "translation": "경쟁사 제품이 없습니다."
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Korean",
+      "translation": "제품을 불러오는 중..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Korean",
+      "translation": "경쟁사 대시보드"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Korean",
+      "translation": "경쟁사 제품에 대한 분석 및 인사이트"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Korean",
+      "translation": "총 제품"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Korean",
+      "translation": "추적 대상 브랜드"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Korean",
+      "translation": "국가"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Korean",
+      "translation": "카테고리"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Korean",
+      "translation": "브랜드별 제품"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Korean",
+      "translation": "국가별 제품"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Korean",
+      "translation": "카테고리별 제품"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Korean",
+      "translation": "통계 자료를 불러오는 중..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Korean",
+      "translation": "이용 가능한 통계가 없습니다."
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Korean",
+      "translation": "개요"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Korean",
+      "translation": "명령"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Korean",
+      "translation": "목록"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Korean",
+      "translation": "기호 논리학"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Korean",
+      "translation": "재원"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Korean",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Korean",
+      "translation": "인사부"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Korean",
+      "translation": "경영진"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Korean",
+      "translation": "투자자"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Korean",
+      "translation": "법률/지식재산권"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Korean",
+      "translation": "경쟁자"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Korean",
+      "translation": "수입/수출"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Korean",
+      "translation": "GPS 추적"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Korean",
+      "translation": "현지화"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Korean",
+      "translation": "워크플로"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Korean",
+      "translation": "관리자"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Korean",
+      "translation": "CRM OS"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Korean",
+      "translation": "고객 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Korean",
+      "translation": "고객 프로필, 상호 작용 기록 및 관계 관리를 완벽하게 제공합니다."
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Korean",
+      "translation": "디지털 캠페인"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Korean",
+      "translation": "멀티채널 마케팅 캠페인(인스타그램, 페이스북, 틱톡, 왓츠앱)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Korean",
+      "translation": "잠재 고객 및 기회"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Korean",
+      "translation": "잠재고객 관리, 자격 검증 및 기회 파이프라인"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Korean",
+      "translation": "고객 지원"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Korean",
+      "translation": "티켓 관리, 고객 서비스 및 문제 해결"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Korean",
+      "translation": "로열티 프로그램"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Korean",
+      "translation": "소매업체 고객 충성도, 게임화 및 보상 관리"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Korean",
+      "translation": "고객 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Korean",
+      "translation": "신규 고객"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Korean",
+      "translation": "총 고객 수"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Korean",
+      "translation": "활동적인"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Korean",
+      "translation": "새로운"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Korean",
+      "translation": "만족"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Korean",
+      "translation": "고객 관리"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Korean",
+      "translation": "고객 관계, 상호 작용 및 캠페인을 확인하고 관리하세요."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Korean",
+      "translation": "로딩 중..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Korean",
+      "translation": "CRM 데이터 불러오는 중 오류 발생"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Korean",
+      "translation": "개요"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Korean",
+      "translation": "명령"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Korean",
+      "translation": "목록"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Korean",
+      "translation": "기호 논리학"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Korean",
+      "translation": "재원"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Korean",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Korean",
+      "translation": "인사부"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Korean",
+      "translation": "경영진"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Korean",
+      "translation": "투자자"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Korean",
+      "translation": "법률/지식재산권"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Korean",
+      "translation": "경쟁자"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Korean",
+      "translation": "수입/수출"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Korean",
+      "translation": "GPS 추적"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Korean",
+      "translation": "현지화"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Korean",
+      "translation": "워크플로"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Korean",
+      "translation": "관리자"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Korean",
+      "translation": "고객"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Korean",
+      "translation": "직원"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Korean",
+      "translation": "이익"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Korean",
+      "translation": "공급업체 조종석을 불러오는 중…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Korean",
+      "translation": "구매 주문서"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Korean",
+      "translation": "하빅스에서 자랐습니다"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Korean",
+      "translation": "선적/GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Korean",
+      "translation": "이번 주에 승인됨"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Korean",
+      "translation": "송장 생성됨"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Korean",
+      "translation": "결제 대기 중"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Korean",
+      "translation": "결제 대기 중"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Korean",
+      "translation": "출시 예정"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Korean",
+      "translation": "품질/불만사항"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Korean",
+      "translation": "오픈 티켓"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Korean",
+      "translation": "향후 4주간 전망"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Korean",
+      "translation": "AI 자리 표시자"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Korean",
+      "translation": "공급업체 조치"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Korean",
+      "translation": "예정된 선적을 확인하고 GRN 일정을 업데이트하십시오."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Korean",
+      "translation": "미수금을 검토하고 지급 안내를 공유합니다."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Korean",
+      "translation": "품질 관련 불만 사항은 품질 보증 증거를 통해 해결하십시오."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Korean",
+      "translation": "사용자 이름"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Korean",
+      "translation": "비밀번호"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Korean",
+      "translation": "이메일"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Korean",
+      "translation": "제출하다"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Korean",
+      "translation": "취소"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Korean",
+      "translation": "구하다"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Korean",
+      "translation": "삭제"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Korean",
+      "translation": "찾다"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Korean",
+      "translation": "필터"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Korean",
+      "translation": "다시 놓기"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Korean",
+      "translation": "닫다"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Korean",
+      "translation": "뒤쪽에"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Korean",
+      "translation": "다음"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Korean",
+      "translation": "이전의"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Korean",
+      "translation": "확인하다"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Korean",
+      "translation": "나를 기억해줘"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Korean",
+      "translation": "비밀번호를 잊으셨나요?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Korean",
+      "translation": "이메일 주소는 필수입니다."
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Korean",
+      "translation": "유효한 이메일 주소를 입력해 주세요."
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Korean",
+      "translation": "제품"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Korean",
+      "translation": "하빅스는 어떤 제품을 제공하나요?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Korean",
+      "translation": "저희는 과자, 음료, 스낵, 파스타, 제빵류, 냉동식품 등 다양한 카테고리의 프리미엄 식품을 폭넓게 제공합니다."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Korean",
+      "translation": "하빅스 제품은 어디에서 구입할 수 있나요?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Korean",
+      "translation": "저희 제품은 40개국 이상의 소매점에서 구매하실 수 있습니다. 가까운 판매점을 찾으시려면 매장 찾기 또는 문의 페이지를 이용해 주세요."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Korean",
+      "translation": "대량 주문도 가능한가요?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Korean",
+      "translation": "네, 저희는 기업 및 소매업체를 위한 대량 주문 할인 혜택을 제공합니다. 자세한 내용은 대량 주문 할인 페이지를 참조하세요."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Korean",
+      "translation": "주문 및 배송"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Korean",
+      "translation": "배송 옵션은 무엇인가요?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Korean",
+      "translation": "저희는 일반 배송, 특급 배송, 국제 배송 등 다양한 배송 옵션을 제공합니다. 50달러 이상 주문 시 무료 배송이 가능합니다."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Korean",
+      "translation": "배송은 얼마나 걸리나요?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Korean",
+      "translation": "배송 시간은 지역에 따라 다릅니다. 일반 배송은 보통 5~7영업일이 소요되며, 특급 배송은 2~3영업일이 소요됩니다."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Korean",
+      "translation": "내 주문을 추적할 수 있나요?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Korean",
+      "translation": "네, 주문 확인 이메일에 제공된 추적 번호를 사용하여 주문을 추적할 수 있습니다."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Korean",
+      "translation": "계정 및 결제"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Korean",
+      "translation": "계정은 어떻게 만드나요?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Korean",
+      "translation": "상단의 \"로그인\"을 클릭하고 \"계정 생성\"을 선택하여 새 계정을 등록하세요."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Korean",
+      "translation": "어떤 결제 방법을 이용할 수 있나요?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Korean",
+      "translation": "저희는 모든 주요 신용카드, 직불카드, 페이팔 및 은행 송금(B2B 주문의 경우)을 허용합니다."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Korean",
+      "translation": "내 결제 정보는 안전한가요?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Korean",
+      "translation": "네, 저희는 업계 표준 암호화 기술을 사용하여 고객님의 결제 정보를 보호합니다."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Korean",
+      "translation": "반품 및 환불"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Korean",
+      "translation": "반품 정책은 어떻게 되나요?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Korean",
+      "translation": "미개봉 제품에 한해 원래 포장 상태 그대로 30일 이내 반품이 가능합니다. 반품 승인을 받으시려면 고객 서비스 센터로 문의해 주세요."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Korean",
+      "translation": "환불은 어떻게 요청하나요?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Korean",
+      "translation": "주문 번호와 반품 사유를 알려주시고 고객 서비스 팀에 문의해 주세요. 5~7영업일 이내에 환불 처리를 완료해 드리겠습니다."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Korean",
+      "translation": "궁금한 점이 더 있으신가요?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Korean",
+      "translation": "저희 고객 서비스 팀이 도와드리겠습니다."
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Korean",
+      "translation": "문의하기"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Korean",
+      "translation": "직업"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Korean",
+      "translation": "채용 정보 | 하빅스"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Korean",
+      "translation": "하빅스 글로벌 벤처스에 합류하여 40개국 이상에서 펼쳐지는 기회를 탐색해 보세요."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Korean",
+      "translation": "함께해요"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Korean",
+      "translation": "글로벌 무역의 미래를 만들어가세요"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Korean",
+      "translation": "우리는 40개국 이상으로 사업을 확장하고 있습니다. 글로벌 상거래를 위한 AI 기반 운영 체제를 구축하는 팀에 합류하세요."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Korean",
+      "translation": "채용 공고"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Korean",
+      "translation": "국가"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Korean",
+      "translation": "산업 분야"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Korean",
+      "translation": "부서 채용 공고"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Korean",
+      "translation": "부서별 채용 공고"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Korean",
+      "translation": "판매 및 유통"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Korean",
+      "translation": "40개 이상의 시장에서 매출 증대를 이끌어냅니다. 지역 관리, 주요 고객 관리, 유통업체 관계 관리 등을 담당합니다."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Korean",
+      "translation": "공급망 및 물류"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Korean",
+      "translation": "공장에서 매장까지 전 과정에 걸친 공급망 관리. 차량 관리, 창고 보관, 최종 배송까지 포함합니다."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Korean",
+      "translation": "기술 및 인공지능"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Korean",
+      "translation": "Harvics OS 구축 - AI 기반 엔터프라이즈 플랫폼. 풀스택, 머신러닝 엔지니어링, 데이터 과학."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Korean",
+      "translation": "재무 및 재정"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Korean",
+      "translation": "다중 통화 재무 관리, 무역 금융, HPay 디지털 결제, 지역별 외환 관리."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Korean",
+      "translation": "조달 및 소싱"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Korean",
+      "translation": "15개국 이상에서 글로벌 소싱을 진행합니다. 공급업체 감사, 품질 관리, 공장 직송 프로그램을 제공합니다."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Korean",
+      "translation": "인사부"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Korean",
+      "translation": "다양한 지역과 문화권에 걸친 인재 확보, 교육 및 개발, 성과 관리."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Korean",
+      "translation": "법률 및 규정 준수"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Korean",
+      "translation": "무역 규정 준수, 제재 대상 심사, 지적 재산권 보호, 여러 관할 지역에 걸친 계약 관리."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Korean",
+      "translation": "마케팅 및 브랜드"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Korean",
+      "translation": "다국어 캠페인, 38개 지역 콘텐츠, 디지털 마케팅, 10개 산업 분야에 대한 브랜드 전략."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Korean",
+      "translation": "역할"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Korean",
+      "translation": "하빅스를 선택하는 이유"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Korean",
+      "translation": "글로벌 이동성"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Korean",
+      "translation": "두바이, 런던, 카라치, 라호르를 비롯한 40개 이상의 시장에서 업무를 진행하세요."
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Korean",
+      "translation": "성장 트랙"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Korean",
+      "translation": "성장하는 기업에서 빠른 경력 발전을 이루세요"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Korean",
+      "translation": "AI 우선 문화"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Korean",
+      "translation": "최첨단 AI 및 실시간 인텔리전스 시스템을 활용하여 업무를 진행하세요."
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Korean",
+      "translation": "경쟁력 있는 패키지"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Korean",
+      "translation": "업계 최고 수준의 급여, 주택 및 복리후생"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Korean",
+      "translation": "학습 예산"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Korean",
+      "translation": "강좌, 컨퍼런스 및 자격증 취득을 위한 연간 개발 예산"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Korean",
+      "translation": "유연 근무"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Korean",
+      "translation": "전 세계 지역 허브 사무소를 갖춘 하이브리드 방식"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Korean",
+      "translation": "우리의 전략"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Korean",
+      "translation": "전략 | 하위치"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Korean",
+      "translation": "혁신과 탁월함을 통해 지속 가능한 미래를 만들어 갑니다."
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Korean",
+      "translation": "혁신과 탁월함을 통해 지속 가능한 미래를 만들어 갑니다."
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Korean",
+      "translation": "글로벌 확장"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Korean",
+      "translation": "신흥 시장에서의 입지를 확대하는 동시에 기존 시장에서의 입지를 강화합니다."
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Korean",
+      "translation": "제품 혁신"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Korean",
+      "translation": "변화하는 소비자 선호도를 충족하는 신제품 개발을 위한 연구 개발 투자"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Korean",
+      "translation": "지속가능성"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Korean",
+      "translation": "당사는 공급망 및 운영 전반에 걸쳐 지속 가능한 관행을 실천하기 위해 최선을 다하고 있습니다."
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Korean",
+      "translation": "디지털 전환"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Korean",
+      "translation": "기술을 활용하여 고객 경험과 운영 효율성을 향상시킵니다."
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Korean",
+      "translation": "우리의 비전"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Korean",
+      "translation": "품질, 혁신 및 지속가능성으로 인정받는 세계 최고의 프리미엄 소비재 기업이 되는 것."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Korean",
+      "translation": "하빅스 글로벌 벤처스 | 프리미엄 글로벌 트레이딩"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Korean",
+      "translation": "10개 이상의 산업 분야에 걸쳐 프리미엄 제품을 공급하는 세계적인 선도 무역 회사입니다. 2019년부터 50개국 이상에서 사업을 운영하고 있습니다."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Korean",
+      "translation": "회사 소개 | 하빅스 글로벌 벤처스"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Korean",
+      "translation": "하빅스 글로벌 벤처스가 어떻게 40개국 이상, 10개 산업 분야에 걸쳐 글로벌 무역을 선도하는 기업으로 성장했는지 알아보세요."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Korean",
+      "translation": "문의하기 | 하빅스 글로벌 벤처스"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Korean",
+      "translation": "중동, 남아시아, 유럽, 아프리카 및 미주 지역에 있는 하빅스 지사에 문의하십시오."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Korean",
+      "translation": "제품 | 하빅스 글로벌 벤처스"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Korean",
+      "translation": "소비재, 섬유, 원자재 및 산업 솔루션을 아우르는 Harvic의 프리미엄 제품군을 살펴보세요."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Korean",
+      "translation": "채용 정보 | 하빅스 글로벌 벤처스"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Korean",
+      "translation": "Harvics Global Ventures에 합류하여 소비재, 섬유, 물류 및 기술 분야에서 40개국 이상에 걸쳐 사업 기회를 모색해 보세요."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Korean",
+      "translation": "미디어 센터 | 하빅스 글로벌 벤처스"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Korean",
+      "translation": "하빅스 미디어 센터 - 보도 자료, 최신 뉴스, 브랜드 자료 및 언론 담당자 연락처."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Korean",
+      "translation": "우리의 전략 | 하빅스 글로벌 벤처스"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Korean",
+      "translation": "Harvic의 글로벌 확장, 혁신, 지속가능성 및 디지털 전환을 위한 전략적 비전."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Korean",
+      "translation": "기업의 사회적 책임 | 하빅스"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Korean",
+      "translation": "Harvics의 CSR 활동 — 환경 보호, 지역 사회 프로그램 및 윤리적인 사업 관행."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Korean",
+      "translation": "FAQ | 하빅스 글로벌 벤처스"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Korean",
+      "translation": "하빅스 제품, 서비스, 주문 및 글로벌 운영에 대한 자주 묻는 질문입니다."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Korean",
+      "translation": "전 세계 지점 | 하빅스"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Korean",
+      "translation": "하빅스는 중동, 남아시아, 유럽, 아프리카 및 미주 지역에 사무소와 사업장을 두고 있습니다."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Korean",
+      "translation": "경영진 | 하빅스"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Korean",
+      "translation": "40개 이상의 시장과 10개 산업 분야에서 Harvics Global Ventures를 이끌어가는 리더십 팀을 만나보세요."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Korean",
+      "translation": "고객 지원 센터 | 하빅스"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Korean",
+      "translation": "주문, 회계, 배송 및 Harvics 서비스 관련 도움을 받으세요."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Korean",
+      "translation": "준법 및 윤리 | 하빅스"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Korean",
+      "translation": "하빅스는 규제 준수, 윤리적인 사업 관행 및 글로벌 표준에 전념합니다."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Korean",
+      "translation": "회사 연혁 | 하빅스"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Korean",
+      "translation": "2019년 두바이의 스타트업에서 40개국 이상에 걸쳐 사업을 확장한 글로벌 기업으로 성장한 하빅스의 이야기."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Korean",
+      "translation": "뉴스레터 | 하빅스"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Korean",
+      "translation": "하빅스 뉴스레터를 구독하시면 업계 동향 및 신제품 출시 정보를 받아보실 수 있습니다."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Korean",
+      "translation": "로그인 | 하빅스"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Korean",
+      "translation": "Harvics 계정에 로그인하여 주문을 관리하고 플랫폼을 이용하세요."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Korean",
+      "translation": "연구 및 혁신 | 하빅스"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Korean",
+      "translation": "하빅스의 연구 이니셔티브와 혁신 프로그램은 당사의 글로벌 전략을 주도합니다."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Korean",
+      "translation": "투자자 관계 | 하빅스"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Korean",
+      "translation": "하빅스 글로벌 벤처스의 투자 정보, 재무 보고서 및 기업 공시 자료입니다."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Korean",
+      "translation": "페이지를 찾을 수 없습니다"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Korean",
+      "translation": "404 — 페이지를 찾을 수 없음"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Korean",
+      "translation": "찾으시는 페이지가 없거나 이동되었습니다."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Korean",
+      "translation": "홈페이지로 이동"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Korean",
+      "translation": "뒤로 가기"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Korean",
+      "translation": "뭔가 잘못됐어요"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Korean",
+      "translation": "뭔가 잘못됐어요"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Korean",
+      "translation": "죄송합니다만, 예상치 못한 문제가 발생했습니다. 페이지를 새로고침해 주세요."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Korean",
+      "translation": "다시 시도하세요"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Korean",
+      "translation": "페이지 새로고침"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Korean",
+      "translation": "고객 지원팀에 문의하세요"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Korean",
+      "translation": "애플리케이션 오류"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Korean",
+      "translation": "치명적인 오류"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Korean",
+      "translation": "심각한 오류가 발생했습니다. 페이지를 새로고침해 주세요."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Korean",
+      "translation": "애플리케이션 새로 고침"
+    }
+  }
+}

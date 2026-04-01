@@ -1,624 +1,1146 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
-    "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More"
+    "welcome": "ښه راغلاست",
+    "companyName": "هارویچ",
+    "tagline": "له ۲۰۱۹ کال راهیسې په پریمیم مصرفي توکو کې غوره والی",
+    "exploreProducts": "محصولات وپلټئ",
+    "contact": "موږ سره اړیکه ونیسئ",
+    "learnMore": "نور معلومات ترلاسه کړئ",
+    "brandStatement": "د نړیوال مصرفي توکو یو مخکښ شرکت چې د نړیوال کیفیت معیارونو سره سم په مختلفو کټګوریو کې غوره خوراکي محصولات وړاندې کوي.",
+    "taglineStart": "د پریمیم مصرفي توکو کې غوره والی له هغه راهیسې",
+    "taglineYear": "۲۰۱۹",
+    "locations": "لندن • میلان • نیویارک",
+    "categories": {
+      "bakery": "بیکري",
+      "beverages": "مشروبات",
+      "confectionery": "د شیرینی ځای",
+      "culinary": "پخلی",
+      "frozenFoods": "کنګل شوي خواړه",
+      "pasta": "پاستا",
+      "snacks": "ناشته"
+    }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
-    "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
-    "media": "Media",
-    "contactUs": "Contact Us",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store"
+    "esgReport": "د ESG راپور ۲۰۲۵",
+    "locations": "لندن • میلان • نیویارک",
+    "home": "کور",
+    "about": "په اړه",
+    "aboutUs": "زموږ په اړه",
+    "brandStory": "د برانډ کیسه",
+    "products": "محصولات",
+    "ourProducts": "زموږ محصولات",
+    "viewAllProducts": "ټول محصولات وګورئ",
+    "csr": "د ټولنیز ټولنیز مسؤلیت (CSR)",
+    "investorRelations": "د پانګوالو اړیکې",
+    "investors": "پانګوال",
+    "media": "رسنۍ",
+    "contactUs": "موږ سره اړیکه ونیسئ",
+    "countries": "هېوادونه",
+    "portals": "پورټلونه",
+    "signIn": "سيستم ته داخل کيدل",
+    "wishlist": "د غوښتنې لېست",
+    "cart": "د سودا ګاډی",
+    "help": "مرسته",
+    "findStore": "هټۍ ومومئ",
+    "harvicsHouse": "هارویکس هاوس",
+    "money": "پیسې",
+    "sales": "خرڅلاو",
+    "offers": "وړاندیزونه",
+    "darkMode": "تیاره حالت",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "کریډیټ کارت",
+        "msRewards": "د M&S انعامونو کریډیټ کارت",
+        "clubRewards": "د کلب انعامونه",
+        "ourCards": "زموږ کریډیټ کارتونه"
+      },
+      "insurance": {
+        "title": "بیمه",
+        "home": "د کور بیمه",
+        "travel": "د سفر بیمه"
+      },
+      "travel": {
+        "title": "د سفر خدمتونه",
+        "money": "د سفر پیسې",
+        "exchange": "د تبادلې نرخونه"
+      },
+      "additional": {
+        "title": "اضافي خدمات",
+        "savings": "سپما او پانګونه",
+        "personalLoans": "شخصي پورونه",
+        "financialSupport": "مالي ملاتړ"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "اوسنی خرڅلاو",
+      "clearance": "تصفیه",
+      "seasonal": "موسمي خرڅلاو"
+    },
+    "offersDropdown": {
+      "specialOffers": "ځانګړي وړاندیزونه",
+      "promotions": "ترفیعات",
+      "bulkOrders": "د لویو امرونو تخفیفونه"
+    }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products"
+    "ourProducts": "زموږ محصولات",
+    "viewAllProducts": "ټول محصولات وګورئ",
+    "productCategories": "زموږ د محصول کټګورۍ",
+    "discoverPremium": "زموږ د محصولاتو غوره لړۍ ومومئ چې په پاملرنې او غوره والي سره جوړ شوي دي.",
+    "tier1": "لومړۍ درجه: کټګورۍ",
+    "tier2": "دوهمه درجه: ماډلونه",
+    "tier3": "دریمه درجه: د KPI سکرینونه",
+    "tier4": "څلورمه برخه: کړنې",
+    "reset": "نیویګیشن بیا تنظیم کړئ",
+    "noSubcategories": "د دې کټګورۍ لپاره هیڅ فرعي کټګورۍ شتون نلري.",
+    "pageTitle": "محصولات",
+    "subcategories": "فرعي کټګورۍ",
+    "bakery": "بیکري",
+    "bakeryDesc": "تازه پخه شوي توکي او پیسټري.",
+    "beverages": "مشروبات",
+    "beveragesDesc": "د هر فرصت لپاره تازه څښاک.",
+    "confectionery": "شیرینی",
+    "confectioneryDesc": "خواږه خواړه او خوندونه.",
+    "culinary": "پخلی",
+    "culinaryDesc": "ستاسو د پخلنځي لپاره اړین توکي.",
+    "frozenFoods": "کنګل شوي خواړه",
+    "frozenFoodsDesc": "اسانه او خوندور منجمد خواړه.",
+    "pasta": "پاستا",
+    "pastaDesc": "د پاستا اصلي ډولونه.",
+    "snacks": "ناشته",
+    "snacksDesc": "د ورځې د هر وخت لپاره خوندور خواړه."
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
-    "email": "Email",
-    "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "title": "په تماس کې شئ",
+    "subtitle": "موږ به خوښ شو چې له تاسو څخه واورو. د دې لارو له لارې موږ سره اړیکه ونیسئ.",
+    "phone": "تلیفون",
+    "email": "استول",
+    "whatsapp": "واټس اپ",
+    "callNow": "اوس زنګ ووهئ",
+    "sendEmail": "برېښنالیک ولېږئ",
+    "messageUs": "موږ ته پیغام ورکړئ"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "د رسنیو مرکز",
+    "pageTitle": "د رسنیو مرکز | هارویکس",
+    "description": "مطبوعاتي سرچینې، د برانډ شتمنۍ، او د هارویکس ګلوبل وینچرز څخه وروستي خبرونه.",
+    "corporate": "کارپوریټ",
+    "sections": {
+      "news": {
+        "title": "خبرونه او مطبوعاتي اعلامیې",
+        "desc": "د هارویکس ګلوبل وینچرز څخه وروستي اعلانونه، د بازار پراختیا، د محصول لانچونه، او د کارپوریټ تازه معلومات.",
+        "cta": "وروستي خبرونه ولولئ"
+      },
+      "gallery": {
+        "title": "د انځورونو ګالري",
+        "desc": "د لوړ ریزولوشن برانډ شتمنۍ، د محصول عکس اخیستل، د تاسیساتو انځورونه، او د رسنیو کارولو لپاره د پیښو پوښښ.",
+        "cta": "ګالري وګورئ"
+      },
+      "contacts": {
+        "title": "د رسنیو اړیکې",
+        "desc": "د مطبوعاتي پوښتنو، د مرکې غوښتنو، او د ملګرتیا اعلانونو لپاره زموږ د اړیکو ټیم سره اړیکه ونیسئ.",
+        "cta": "د مطبوعاتي ټیم سره اړیکه ونیسئ"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "تر پوښښ لاندې بازارونه",
+      "industryVerticals": "د صنعت عمودی",
+      "foundedIn": "په دوبۍ کې تاسیس شوی",
+      "languagesSupported": "ملاتړ شوې ژبې"
+    },
+    "recentHeadlines": "وروستي سرټکي",
+    "headlines": {
+      "expansion": "هارویکس د FMCG عملیات د جنوب ختیځې آسیا پنځو نویو بازارونو ته غځوي",
+      "aiPlatform": "د نړیوال توزیع لپاره د مصنوعي ذهانت په واسطه چلول شوی د اکمالاتو نوی سلسله پلیټ فارم پیل شو",
+      "carbonNeutral": "هارویکس په ټولو تاسیساتو کې د کاربن بې طرفه هدف ترلاسه کوي",
+      "partnership": "په جنوبي اسیا کې د مخکښو ټوکر جوړونکو سره ستراتیژیک ملګرتیا"
+    }
   },
   "footer": {
-    "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
-    "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
-    "contactUsButton": "Contact Us",
-    "usefulLinks": "Useful Links",
-    "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
-    "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
-    "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
-    "privacy": "Privacy",
-    "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
+    "companyName": "هارویکس ګلوبل وینچرز",
+    "tagline": "له ۲۰۱۹ کال راهیسې په پریمیم مصرفي توکو کې غوره والی",
+    "brandStatement": "د نړیوال مصرفي توکو یو مخکښ شرکت چې د نړیوال کیفیت معیارونو سره سم په مختلفو کټګوریو کې غوره خوراکي محصولات وړاندې کوي.",
+    "locations": "لندن • میلان • نیویارک",
+    "since": "له ۲۰۱۹ کال راهیسې",
+    "harvicsNews": "د هارویکس خبرونه",
+    "subscribeToAlerts": "د خبرتیاو او تازه معلوماتو ترلاسه کولو لپاره ګډون وکړئ",
+    "signUp": "ګډون کول",
+    "complianceConcerns": "د اطاعت اندیښنې",
+    "speakUp": "که تاسو د اطاعت یا اخلاقو په اړه اندیښنې لرئ نو خبرې وکړئ",
+    "speakUpButton": "خبرې وکړئ",
+    "contactUs": "موږ سره اړیکه ونیسئ",
+    "contactDescription": "زموږ د ټیم سره اړیکه ونیسئ",
+    "contactUsButton": "موږ سره اړیکه ونیسئ",
+    "usefulLinks": "ګټورې لینکونه",
+    "askHarvics": "له هارویچ څخه پوښتنه وکړئ",
+    "searchForJobs": "د دندو لټون",
+    "signUpForNews": "د خبرونو لپاره لاسلیک وکړئ",
+    "company": "شرکت",
+    "globalAddresses": "نړیوال پتې",
+    "strategy": "ستراتیژي",
+    "ourLeadership": "زموږ رهبري",
+    "brandsAZ": "برانډونه A-Z",
+    "ourHistory": "زموږ تاریخ",
+    "sustainability": "دوام",
+    "news": "خبرونه",
+    "mediaContacts": "د رسنیو اړیکې",
+    "images": "انځورونه",
+    "investors": "پانګوال",
+    "corporateGovernance": "د شرکت حکومتداري",
+    "sharesAdrsBonds": "ونډې، ADRs او بانډونه",
+    "publications": "خپرونې",
+    "followUsOn": "موږ تعقیب کړئ",
+    "issuesCount": "۰ مسلې",
+    "siteMap": "د سایټ نقشه",
+    "unsubscribe": "ګډون لغوه کړئ",
+    "help": "مرسته",
+    "privacy": "محرمیت",
+    "cookies": "کوکیز",
+    "termsOfUse": "د کارولو شرایط",
+    "accessibility": "لاسرسی",
+    "carbonEfficiency": "د کاربن موثریت",
+    "suppliers": "عرضه کوونکي",
+    "socialMedia": "ټولنیز رسنۍ",
+    "cookieSettings": "د کوکي ترتیبات",
     "feature1Title": "Global Reach",
     "feature1Desc": "Serving customers across 40+ countries worldwide",
-    "feature2Title": "Premium Quality",
+    "feature2Title": "لوړ کیفیت",
     "feature2Desc": "International quality standards in every product",
     "feature3Title": "Innovation",
     "feature3Desc": "Leading innovation in consumer goods industry",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
-    "media": "Media"
+    "emailAddress": "بریښنا‌لیک",
+    "enterEmailPlaceholder": "خپل برېښنالیک پته دننه کړئ",
+    "subscribe": "ګډون وکړئ",
+    "subscribing": "ګډون کول...",
+    "aboutUs": "زموږ په اړه",
+    "media": "رسنۍ"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "محصولات، نښې، یا کټګورۍ وپلټئ",
+    "noResults": "هیڅ پایلې ونه موندل شوې",
+    "searching": "لټون...",
+    "results": "پایلې"
   },
   "chatbot": {
-    "title": "Chat with Us",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "title": "زموږ سره خبرې وکړئ",
+    "placeholder": "خپل پیغام ولیکئ...",
+    "send": "ولېږئ",
+    "close": "تړل",
+    "welcome": "سلام! نن څنګه ستاسو سره مرسته کولی شم؟",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "بخښنه غواړم، زه دا نه پوهېدم. مهرباني وکړئ بیا یې ولیکئ؟",
+      "help": "زه کولی شم ستاسو سره د محصول معلوماتو، فرمایشونو، یا عمومي پوښتنو کې مرسته وکړم. تاسو څه پوهیدل غواړئ؟",
+      "contact": "د نورو مرستو لپاره، مهرباني وکړئ موږ سره په support@harvics.com اړیکه ونیسئ یا +1-800-HARVICS ته زنګ ووهئ."
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
-    "filter": "Filter",
-    "clear": "Clear",
-    "download": "Download",
-    "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
-    "status": "Status",
-    "date": "Date",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
-    "selectCountry": "Select Country",
-    "required": "Required",
-    "menu": "Menu",
-    "viewProducts": "View Products"
+    "chatWithUs": "زموږ سره خبرې وکړئ",
+    "loading": "بارول کیږي...",
+    "error": "تېروتنه",
+    "success": "بریالیتوب",
+    "save": "خوندي کړئ",
+    "cancel": "لغوه کول",
+    "delete": "ړنګول",
+    "edit": "سمون",
+    "view": "لید",
+    "submit": "سپارل",
+    "search": "د لټون",
+    "filter": "فلټر",
+    "clear": "روښانه",
+    "download": "ډاونلوډ کړئ",
+    "upload": "پورته کول",
+    "yes": "هو",
+    "no": "نه",
+    "close": "تړل",
+    "back": "شاته",
+    "next": "بل",
+    "previous": "مخکینی",
+    "actions": "کړنې",
+    "status": "وضعیت",
+    "date": "نیټه",
+    "name": "نوم",
+    "email": "استول",
+    "phone": "تلیفون",
+    "address": "پته",
+    "country": "هیواد",
+    "city": "ښار",
+    "all": "ټول",
+    "none": "هیڅ نه",
+    "select": "غوره کړئ",
+    "selectCountry": "هیواد غوره کړئ",
+    "required": "اړین دی",
+    "menu": "مینو",
+    "viewProducts": "محصولات وګورئ",
+    "selectLanguage": "ژبه غوره کړه",
+    "showMore": "نور ښکاره کړئ",
+    "showLess": "لږ وښایاست"
   },
   "music": {
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "موسيقي غږول",
+    "pause": "موسيقي ودروئ",
+    "mute": "موسیقي خاموشه کړئ",
+    "unmute": "موسیقي غیر غږ کړئ"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "زموږ نړیواله لاسرسی",
+    "since": "له هغه وخته",
+    "majorMarket": "لوی بازار",
+    "majorMarkets": "لوی بازارونه",
+    "presence": "شتون",
+    "countriesServed": "هغه هیوادونه چې خدمت کوي",
+    "majorMarketsCount": "لوی بازارونه",
+    "productCategoriesCount": "د محصول کټګورۍ",
+    "establishedYear": "تاسیس شو"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "د سیمې مراتب",
+    "fullPath": "بشپړه لاره",
+    "currentTerritory": "اوسنی سیمه",
+    "noChildren": "هیڅ توکي نشته",
     "tiers": {
-      "globe": "Globe",
-      "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
-      "district": "District",
-      "location": "Location"
+      "globe": "ګلوب",
+      "continent": "براعظم",
+      "region": "سیمه",
+      "country": "هیواد",
+      "city": "ښار",
+      "district": "ولسوالي",
+      "location": "ځای"
     }
   },
   "globalWorld": {
-    "title": "Harvics Global",
-    "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "title": "هارویکس ګلوبل",
+    "titleShort": "نړیوال",
+    "selectRegion": "سیمه غوره کړئ",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
+      "title": "د پیرودونکو توضیحات",
+      "selected": "غوره شوی",
+      "fullName": "بشپړ نوم",
+      "namePlaceholder": "خپل بشپړ نوم ولیکئ",
+      "nameRequired": "نوم اړین دی",
+      "email": "بریښنا‌لیک",
       "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
-      "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "emailRequired": "برېښنالیک اړین دی",
+      "emailInvalid": "مهرباني وکړئ یو باوري برېښنالیک پته دننه کړئ",
+      "phone": "د تلیفون شمیره",
+      "phonePlaceholder": "+۱ ۲۳۴ ۵۶۷ ۸۹۰۰",
+      "phoneRequired": "د تلیفون شمیره اړینه ده",
+      "address": "پته",
+      "addressPlaceholder": "ستاسو پته",
+      "addressRequired": "پته اړینه ده",
+      "marketingConsent": "زه موافق یم چې د بازار موندنې اړیکې او تازه معلومات ترلاسه کړم",
+      "submit": "وسپارئ او دوام ورکړئ",
+      "submitting": "سپارل...",
+      "skip": "پریږدئ او دوام ورکړئ"
     }
   },
   "distributorPortal": {
     "dashboard": {
       "kpi": {
-        "title": "Key Performance Indicators",
-        "ordersToday": "Orders today",
-        "ordersTodaySubtitle": "Submitted via Harvics CRM",
-        "pendingDeliveries": "Pending deliveries",
-        "pendingDeliveriesSubtitle": "Across assigned routes",
-        "retailers": "Retailers",
-        "retailersSubtitle": "Active outlets in scope",
-        "attendance": "T & A Score",
-        "attendanceSubtitle": "Territory coverage"
+        "title": "د فعالیت کلیدي شاخصونه",
+        "ordersToday": "نن ورځ امرونه",
+        "ordersTodaySubtitle": "د هارویکس CRM له لارې سپارل شوی",
+        "pendingDeliveries": "د سپارلو انتظار",
+        "pendingDeliveriesSubtitle": "په ټاکل شویو لارو کې",
+        "retailers": "پرچون پلورونکي",
+        "retailersSubtitle": "په ساحه کې فعالې رسنۍ",
+        "attendance": "د T & A نمره",
+        "attendanceSubtitle": "د سیمې پوښښ"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "مالي او انوینټري",
+        "lowStock": "ټیټ سټاک SKUs",
+        "lowStockSubtitle": "د بیا ډکولو محرک",
+        "outstandingInvoices": "پاتې رسیدونه",
+        "outstandingInvoicesSubtitle": "د راټولولو لپاره پاتې دي",
+        "creditLimit": "د کریډیټ حد",
+        "creditLimitSubtitle": "د مالي چارو لخوا ټاکل شوی"
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "اتوماتیک تصویب، د سټاک بیا ډکول، او د رسید یادښتونه فعال شوي دي",
+        "autoApproval": "ځان تاییدول",
+        "stockReplenishment": "د سټاک بیا ډکول",
+        "invoiceReminders": "د بل یادونې"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "د مصنوعي ذهانت سپارښتنې",
+        "riskLevel": "د خطر کچه",
+        "riskDescription": "د کریډیټ کارولو او تادیې تاریخ پراساس",
+        "suggestedOrder": "وړاندیز شوی امر",
+        "suggestedOrderSubtitle": "د آرډر کولو لپاره د AI لخوا وړاندیز شوي SKUs",
+        "nextAction": "راتلونکی عمل"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "کړنې او لارښوونې",
+        "complaints": "شکایتونه",
+        "complaintsSubtitle": "د پرچون پلورونکو ستونزې چې د عمل په تمه دي",
+        "playbook": "د لوبو کتاب",
+        "playbookItem1": "له غرمې مخکې د تحویلۍ انتظار ته لومړیتوب ورکړئ.",
+        "playbookItem2": "ټول پاتې شکایتونه په ۴۸ ساعتونو کې بند کړئ.",
+        "playbookItem3": "د ټیټ سټاک SKUs لپاره د بیا ډکولو پیل (د PO اتومات جوړول)."
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "سیمه",
+      "ordersThisMonth": "په دې میاشت کې امرونه",
+      "pendingOrders": "د انتظار امرونه",
+      "deliveredOrders": "سپارل شوي امرونه",
+      "territoryInformation": "د سیمې معلومات",
+      "country": "هیواد",
+      "city": "ښار",
+      "region": "سیمه",
+      "quickActions": "چټک اقدامات",
+      "newOrder": "نوی امر",
+      "viewOrders": "امرونه وګورئ",
+      "viewInvoices": "بلونه وګورئ",
+      "profileSettings": "د پروفایل ترتیبات",
+      "loading": "ډشبورډ پورته کیږي...",
+      "error": "تېروتنه"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
-      "date": "Date",
-      "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "title": "زما امرونه",
+      "orderId": "د امر ID",
+      "date": "نیټه",
+      "status": "وضعیت",
+      "items": "توکي",
+      "totalAmount": "ټول مقدار",
+      "actions": "کړنې",
+      "viewDetails": "په بشپړه توګه کتل",
       "filters": {
-        "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "وضعیت",
+        "startDate": "د پیل نیټه",
+        "endDate": "د پای نیټه",
+        "allStatuses": "ټول حالتونه",
+        "clearFilters": "فلټرونه پاک کړئ"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "په تمه",
+        "processing": "پروسس کول",
+        "delivered": "سپارل شوی",
+        "cancelled": "لغوه شوی"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
-      "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "noOrders": "هیڅ امر ونه موندل شو",
+      "loading": "امرونه بارېږي...",
+      "page": "پاڼه",
+      "of": "د",
+      "previous": "مخکینی",
+      "next": "بل"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
-      "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "orderItems": "Order Items",
-      "product": "Product",
+      "title": "د امر جزئیات",
+      "backToOrders": "بیرته امرونو ته",
+      "orderId": "د امر ID",
+      "status": "وضعیت",
+      "orderDate": "د امر نیټه",
+      "deliveryDate": "د سپارلو نیټه",
+      "deliveryAddress": "د سپارلو پته",
+      "notes": "یادښتونه",
+      "orderItems": "توکي امر کړئ",
+      "product": "د محصول",
       "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "quantity": "مقدار",
+      "unitPrice": "د واحد قیمت",
+      "total": "ټول",
+      "totalAmount": "ټول مقدار",
+      "statusTimeline": "د حالت مهال ویش",
+      "orderNotFound": "امر ونه موندل شو"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
-      "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "title": "نوی امر جوړ کړئ",
+      "orderItems": "توکي امر کړئ",
+      "addItem": "توکي اضافه کړئ",
+      "noItems": "تر اوسه کوم توکي نه دي اضافه شوي. د پیل کولو لپاره \"توکي اضافه کړئ\" کلیک وکړئ.",
+      "orderDetails": "د امر جزئیات",
+      "deliveryDate": "د سپارلو نیټه",
+      "deliveryAddress": "د سپارلو پته",
+      "notes": "یادښتونه",
+      "totalAmount": "ټول مقدار",
+      "createOrder": "امر جوړ کړئ",
+      "creatingOrder": "امر جوړول...",
+      "cancel": "لغوه کول",
+      "selectProduct": "محصول غوره کړئ",
+      "product": "د محصول",
+      "quantity": "مقدار",
+      "unitPrice": "د واحد قیمت",
+      "remove": "لرې کړئ",
+      "subtotal": "فرعي ټولګه",
+      "orderId": "د امر ID",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "لږ تر لږه د امر یو توکي اړین دی",
+        "productRequired": "محصول اړین دی",
+        "quantityRequired": "مقدار باید له صفر څخه زیات وي",
+        "priceRequired": "د واحد قیمت باید غیر منفي وي",
+        "invalidDate": "د سپارلو نیټې ناسمه بڼه",
+        "datePast": "د سپارلو نیټه په تیرو وختونو کې نشي کیدی"
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "زما بلونه",
+      "invoiceNumber": "د بل شمیره",
+      "invoiceDate": "د بل نیټه",
+      "dueDate": "دوه نیټې",
+      "amount": "اندازه",
+      "paidAmount": "ورکړل شوې اندازه",
+      "paymentStatus": "د تادیې حالت",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "د تادیې حالت",
+        "allStatuses": "ټول حالتونه",
+        "clearFilters": "فلټرونه پاک کړئ"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "ورکړل شوی",
+        "unpaid": "بې معاشه",
+        "partial": "جزوي"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "هیڅ بل ونه موندل شو",
+      "loading": "بلونه پورته کېږي..."
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "title": "زما پروفایل",
+      "accountInformation": "د حساب معلومات",
+      "distributorId": "د توزیع کونکي ID",
+      "territory": "سیمه",
+      "country": "هیواد",
+      "city": "ښار",
+      "accountCreated": "حساب جوړ شو",
+      "updateProfile": "پروفایل تازه کړئ",
+      "name": "نوم",
+      "email": "استول",
+      "phone": "تلیفون",
+      "address": "پته",
+      "language": "ژبه",
+      "currency": "د اسعارو",
+      "saveChanges": "بدلونونه خوندي کړئ",
+      "saving": "خوندي کول...",
+      "profileUpdated": "پروفایل په بریالیتوب سره تازه شو",
+      "loading": "پروفایل پورته کیږي...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "د برېښنالیک ناسمه بڼه",
+        "invalidPhone": "د تلیفون ناسمه بڼه"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
-      "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "error": "تېروتنه",
+      "loading": "بارول کیږي...",
+      "save": "خوندي کړئ",
+      "cancel": "لغوه کول",
+      "back": "شاته",
+      "submit": "سپارل",
+      "delete": "ړنګول",
+      "edit": "سمون",
+      "view": "لید",
+      "search": "د لټون",
+      "filter": "فلټر",
+      "clear": "روښانه",
+      "apply": "درخواست وکړئ",
+      "close": "تړل",
+      "confirm": "تایید کړئ",
+      "yes": "هو",
+      "no": "نه"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
-    "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "title": "قانوني عملیاتي سیسټم",
+    "sidebarTitle": "قانوني عملیاتي سیسټم",
+    "accessDenied": "لاسرسی رد شو",
+    "accessDeniedMessage": "تاسو د قانوني OS ماډل ته د لاسرسي اجازه نلرئ.",
+    "dashboard": "ډشبورډ",
+    "contracts": "قراردادونه",
+    "certificates": "سندونه",
+    "compliance": "اطاعت",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "قانوني ډشبورډ",
+      "description": "د قانوني عملیاتو او د اطاعت حالت عمومي کتنه",
+      "activeTrademarks": "فعال سوداګریزې نښې",
+      "activeContracts": "فعال قراردادونه",
+      "complianceStatus": "د اطاعت حالت"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "سوداګریزې نښې",
+      "description": "د سوداګریزې نښې ثبتونه او غوښتنلیکونه اداره کړئ",
+      "addNew": "نوی سوداګریز نښه اضافه کړئ",
       "filters": {
-        "country": "Country",
-        "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "country": "هیواد",
+        "status": "وضعیت",
+        "allCountries": "ټول هیوادونه",
+        "allStatuses": "ټول حالتونه",
+        "clearFilters": "فلټرونه پاک کړئ"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "brandName": "د برانډ نوم",
+        "class": "ټولګی",
+        "country": "هیواد",
+        "applicationNo": "د غوښتنلیک شمیره",
+        "status": "وضعیت",
+        "expiryDate": "د پای نیټه",
+        "actions": "کړنې"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "سوداګریز نښه سمول",
+        "add": "نوی سوداګریز نښه اضافه کړئ",
+        "view": "سوداګریز نښه وګورئ"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "brandName": "د برانډ نوم",
+        "classNumber": "د ټولګي شمېره",
+        "country": "هیواد",
+        "applicationNo": "د غوښتنلیک شمیره",
+        "status": "وضعیت",
+        "expiryDate": "د پای نیټه",
+        "documents": "اسناد",
+        "noDocuments": "هیڅ سندونه ضمیمه نه دي",
+        "addDocument": "سند اضافه کړئ",
+        "remove": "لرې کړئ"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "د سوداګریزو نښو بارولو کې پاتې راغلل",
+        "saveFailed": "د سوداګریزې نښې خوندي کولو کې پاتې راغی. مهرباني وکړئ بیا هڅه وکړئ."
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "قانوني قضیې",
+      "description": "قانوني قضیې اداره کړئ او د هغوی حالت تعقیب کړئ",
+      "addNew": "نوې قضیه",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
-        "description": "Description",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date"
+        "caseTitle": "د قضیې سرلیک",
+        "caseType": "د قضیې ډول",
+        "country": "هیواد",
+        "description": "تفصیل",
+        "assignedTo": "ټاکل شوی",
+        "status": "وضعیت",
+        "hearingDate": "د اورېدنې نیټه"
       },
       "table": {
-        "caseTitle": "Case Title",
-        "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "caseTitle": "د قضیې سرلیک",
+        "type": "ډول",
+        "country": "هیواد",
+        "assignedTo": "ټاکل شوی",
+        "status": "وضعیت",
+        "hearingDate": "د اورېدنې نیټه",
+        "actions": "کړنې"
       },
       "status": {
-        "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "open": "خلاص",
+        "inProgress": "د پرمختګ په حال کې",
+        "closed": "تړل شوی",
+        "cancelled": "لغوه شوی"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "د بیړۍ نقشه لید",
+      "description": "د پلور افسرانو او تحویلي موټرو ریښتیني وخت تعقیب",
+      "activeEmployees": "فعال کارمندان",
+      "noEmployees": "فعال کارمندان نشته",
+      "loading": "بارول کیږي..."
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
-      "reset": "Reset",
-      "play": "Play",
-      "pause": "Pause",
-      "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "title": "د لارې بیا غږول",
+      "employee": "کارمند",
+      "speed": "سرعت",
+      "reset": "بیا تنظیمول",
+      "play": "لوبه وکړئ",
+      "pause": "وقفه",
+      "points": "ټکي",
+      "noRoute": "د لارې معلومات نشته",
+      "loading": "لاره پورته کېږي..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "د سیالي محصولات",
+      "description": "د سیالي کونکي محصول معلومات تعقیب کړئ",
+      "addProduct": "محصول اضافه کړئ",
+      "formTitle": "د سیالي کونکي محصول اضافه کړئ",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "برانډ",
+        "skuName": "د SKU نوم",
+        "category": "کټګوري",
+        "size": "اندازه",
+        "price": "د بیې",
+        "currency": "د اسعارو",
+        "country": "هیواد"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "برانډ",
+        "skuName": "د SKU نوم",
+        "category": "کټګوري",
+        "size": "اندازه",
+        "price": "د بیې",
+        "country": "هیواد",
+        "dateAdded": "د اضافه کولو نیټه"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "د محصولاتو بارولو کې پاتې راغلل",
+        "createFailed": "د محصول په جوړولو کې پاتې راغی. مهرباني وکړئ بیا هڅه وکړئ."
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "د سیالانو کوم محصول ونه موندل شو",
+      "loading": "محصولات بارول..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "د سیالي کونکي ډشبورډ",
+      "description": "د سیالي کونکو محصولاتو په اړه تحلیلونه او بصیرتونه",
+      "totalProducts": "ټول محصولات",
+      "brandsTracked": "برانډونه تعقیب شوي",
+      "countries": "هېوادونه",
+      "categories": "کټګورۍ",
+      "byBrand": "محصولات د برانډ له مخې",
+      "byCountry": "د هیواد له مخې محصولات",
+      "byCategory": "محصولات د کټګورۍ له مخې",
+      "loading": "احصایې بارېږي...",
+      "noStats": "هیڅ احصایه شتون نلري"
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
-    "finance": "Finance",
-    "crm": "CRM",
-    "hr": "HR",
-    "executive": "Executive",
-    "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
-    "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
-    "admin": "Admin"
+    "overview": "عمومي کتنه",
+    "orders": "امرونه",
+    "inventory": "انوینټري",
+    "logistics": "لوژستیک",
+    "finance": "اقتصاد",
+    "crm": "د سي آر ایم",
+    "hr": "د بشري سرچینو څانګه",
+    "executive": "اجرایوي",
+    "investor": "پانګوال",
+    "legal-ipr": "قانوني/معلوماتي ملکیت (IPR)",
+    "competitor": "سیالي کوونکی",
+    "import-export": "واردول/صادرول",
+    "gps-tracking": "د GPS تعقیب",
+    "localization": "ځایي کول",
+    "workflows": "کاري جریانونه",
+    "admin": "اډمین"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
-      "finance": "Finance",
-      "crm": "CRM",
-      "hr": "HR",
-      "executive": "Executive",
-      "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
-      "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
-      "admin": "Admin"
+      "overview": "عمومي کتنه",
+      "orders": "امرونه",
+      "inventory": "انوینټري",
+      "logistics": "لوژستیک",
+      "finance": "اقتصاد",
+      "crm": "د سي آر ایم",
+      "hr": "د بشري سرچینو څانګه",
+      "executive": "اجرایوي",
+      "investor": "پانګوال",
+      "legal-ipr": "قانوني/معلوماتي ملکیت (IPR)",
+      "competitor": "سیالي کوونکی",
+      "import-export": "واردول/صادرول",
+      "gps-tracking": "د GPS تعقیب",
+      "localization": "ځایي کول",
+      "workflows": "کاري جریانونه",
+      "admin": "اډمین"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
-      "profit": "Profit"
+      "customers": "پیرودونکي",
+      "employees": "کارکوونکي",
+      "profit": "ګټه"
+    },
+    "domain": {
+      "title": "د CRM عملیاتي سیسټم",
+      "customer360": {
+        "title": "پېرېدونکی ۳۶۰",
+        "description": "د پیرودونکو بشپړ پروفایلونه، د تعامل تاریخ، او د اړیکو مدیریت"
+      },
+      "campaigns": {
+        "title": "ډیجیټل کمپاینونه",
+        "description": "د څو چینلونو بازار موندنې کمپاینونه (IG، FB، TikTok، WhatsApp)"
+      },
+      "leads": {
+        "title": "مخکښان او فرصتونه",
+        "description": "د رهبرۍ مدیریت، وړتیا، او د فرصتونو پایپ لاین"
+      },
+      "support": {
+        "title": "د پیرودونکو ملاتړ",
+        "description": "د ټکټ مدیریت، د پیرودونکو خدمت، او د ستونزې حل"
+      },
+      "loyalty": {
+        "title": "د وفادارۍ پروګرامونه",
+        "description": "د پرچون پلورونکي وفاداري، لوبې کول، او د انعامونو مدیریت"
+      }
+    },
+    "customerList": {
+      "title": "پېرېدونکی ۳۶۰",
+      "newCustomer": "نوی پیرودونکی",
+      "totalCustomers": "ټول پیرودونکي",
+      "active": "فعال",
+      "new": "نوی",
+      "satisfaction": "رضایت",
+      "customerManagement": "د پیرودونکو مدیریت",
+      "customerManagementDescription": "د خپلو پیرودونکو اړیکې، تعاملات، او کمپاینونه وګورئ او اداره کړئ.",
+      "loading": "بارول کیږي...",
+      "error": "د CRM معلوماتو بارولو کې تېروتنه"
     }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "د عرضه کوونکي کاکپیټ بارول…",
+      "purchaseOrders": "د پیرود امرونه",
+      "purchaseOrdersSubtitle": "د هارویکس لخوا راپورته شوی",
+      "shipments": "بار وړل / GRN",
+      "shipmentsSubtitle": "په دې اونۍ کې ومنل شو",
+      "invoices": "انوائسونه جوړ شول",
+      "invoicesSubtitle": "د تادیې په تمه",
+      "paymentsPending": "تادیات په تمه دي",
+      "paymentsPendingSubtitle": "د خپریدو لپاره مهالویش شوی",
+      "qualityComplaints": "کیفیت / شکایتونه",
+      "qualityComplaintsSubtitle": "ټکټونه خلاص کړئ",
+      "forecast": "وړاندوینه (راتلونکې څلور اونۍ)",
+      "forecastSubtitle": "د AI ځای ساتونکی",
+      "supplierActions": "د عرضه کوونکي کړنې",
+      "action1": "د راتلونکو بار وړلو تایید وکړئ او د GRN مهالویش تازه کړئ.",
+      "action2": "د پاتې رسیدونو بیاکتنه وکړئ او د تادیې مشوره شریک کړئ.",
+      "action3": "د کیفیت د ډاډ شواهدو سره د خلاص کیفیت شکایتونه حل کړئ."
+    }
+  },
+  "form": {
+    "username": "کارن نوم",
+    "password": "رمز",
+    "email": "استول",
+    "submit": "سپارل",
+    "cancel": "لغوه کول",
+    "save": "خوندي کړئ",
+    "delete": "ړنګول",
+    "search": "د لټون",
+    "filter": "فلټر",
+    "reset": "بیا تنظیمول",
+    "close": "تړل",
+    "back": "شاته",
+    "next": "بل",
+    "previous": "مخکینی",
+    "confirm": "تایید کړئ",
+    "rememberMe": "ما په یاد ولره",
+    "forgotPassword": "خپل پټ نوم درڅخه هیر دی؟",
+    "emailRequired": "برېښنالیک اړین دی",
+    "emailInvalid": "مهرباني وکړئ یو باوري برېښنالیک پته دننه کړئ"
+  },
+  "faq": {
+    "products": {
+      "category": "محصولات",
+      "q1": "هارویکس کوم محصولات وړاندې کوي؟",
+      "a1": "موږ د پریمیم خوراکي محصولاتو پراخه لړۍ وړاندې کوو پشمول د کنفیکشنري، مشروباتو، ناشتو، پاستا، بیکري توکو، او منجمد خواړو په ډیری کټګوریو کې.",
+      "q2": "د هارویکس محصولات چیرته اخیستلی شم؟",
+      "a2": "زموږ محصولات په ۴۰+ هیوادونو کې په پرچون پلورنځیو کې شتون لري. زموږ د پلورنځي لوکیټر یا د اړیکې پاڼې څخه کار واخلئ ترڅو خپل نږدې پرچون پلورونکی ومومئ.",
+      "q3": "آیا تاسو په لویه کچه امر ورکوئ؟",
+      "a3": "هو، موږ د سوداګرۍ او پرچون پلورونکو لپاره د لویو امرونو تخفیفونه وړاندې کوو. د نورو معلوماتو لپاره زموږ د لویو امرونو تخفیفونو پاڼې ته مراجعه وکړئ."
+    },
+    "ordersShipping": {
+      "category": "امرونه او لېږدول",
+      "q1": "ستاسو د بار وړلو انتخابونه کوم دي؟",
+      "a1": "موږ د بار وړلو مختلف انتخابونه وړاندې کوو په شمول د معیاري، ایکسپریس او نړیوال بار وړلو. د ۵۰ ډالرو څخه زیاتو امرونو لپاره وړیا بار وړل شتون لري.",
+      "q2": "تحویلي څومره وخت نیسي؟",
+      "a2": "د سپارلو وختونه د موقعیت له مخې توپیر لري. معیاري لېږد معمولا ۵-۷ کاري ورځې وخت نیسي، پداسې حال کې چې ایکسپریس لېږد ۲-۳ کاري ورځې وخت نیسي.",
+      "q3": "ایا زه کولی شم خپل امر تعقیب کړم؟",
+      "a3": "هو، تاسو کولی شئ خپل امر د هغه تعقیب شمیرې په کارولو سره تعقیب کړئ چې ستاسو د امر تایید بریښنالیک کې چمتو شوی."
+    },
+    "accountPayments": {
+      "category": "حساب او تادیات",
+      "q1": "څنګه حساب جوړ کړم؟",
+      "a1": "په سرلیک کې \"ننوتل\" باندې کلیک وکړئ او د نوي حساب لپاره راجستر کولو لپاره \"حساب جوړ کړئ\" غوره کړئ.",
+      "q2": "تاسو د تادیې کومې طریقې منئ؟",
+      "a2": "موږ د B2B امرونو لپاره ټول لوی کریډیټ کارتونه، ډیبټ کارتونه، PayPal، او بانکي لیږدونه منو.",
+      "q3": "ایا زما د تادیې معلومات خوندي دي؟",
+      "a3": "هو، موږ ستاسو د تادیې معلوماتو د ساتنې لپاره د صنعت معیاري کوډ کولو څخه کار اخلو."
+    },
+    "returnsRefunds": {
+      "category": "بیرته ستنیدل او بیرته ستنیدل",
+      "q1": "ستاسو د بیرته ستنیدو پالیسي څه ده؟",
+      "a1": "موږ د هغو محصولاتو لپاره چې په اصلي بسته بندۍ کې نه خلاص شوي وي د 30 ورځو بیرته راستنیدو پالیسي وړاندې کوو. مهرباني وکړئ د بیرته راستنیدو اجازه لپاره زموږ د پیرودونکي خدماتو سره اړیکه ونیسئ.",
+      "q2": "زه څنګه د بیرته ورکولو غوښتنه وکړم؟",
+      "a2": "زموږ د پیرودونکو خدماتو ټیم سره د خپل امر شمیره او د بیرته ستنیدو دلیل سره اړیکه ونیسئ. موږ به ستاسو بیرته ستنیدنه د 5-7 کاري ورځو دننه پروسس کړو."
+    },
+    "contactCta": {
+      "title": "اوس هم پوښتنې لرئ؟",
+      "subtitle": "زموږ د پیرودونکو خدماتو ټیم دلته د مرستې لپاره دی",
+      "button": "موږ سره اړیکه ونیسئ"
+    }
+  },
+  "careers": {
+    "title": "مسلکونه",
+    "pageTitle": "مسلکونه | هارویکس",
+    "description": "د هارویکس ګلوبل وینچرز سره یوځای شئ — په 40+ هیوادونو کې فرصتونه وپلټئ.",
+    "joinUs": "مونږ سره یو ځای شئ",
+    "heroTitle": "د نړیوالې سوداګرۍ راتلونکې جوړه کړئ",
+    "heroDesc": "موږ په ۴۰+ هیوادونو کې وده کوو. د هغه ټیم سره یوځای شئ چې د نړیوال سوداګرۍ لپاره د مصنوعي ذهانت په واسطه چلیز سیسټم جوړوي.",
+    "stats": {
+      "openPositions": "خلاص پوستونه",
+      "countries": "هېوادونه",
+      "industryVerticals": "د صنعت عمودی",
+      "departmentsHiring": "د څانګو ګمارنه"
+    },
+    "openPositionsByDept": "د څانګې له مخې خلاص پوستونه",
+    "departments": {
+      "sales": {
+        "name": "خرڅلاو او ویش",
+        "desc": "په ۴۰+ بازارونو کې عاید زیات کړئ. د سیمې مدیریت، کلیدي حسابونه، د توزیع کونکو اړیکې."
+      },
+      "supplyChain": {
+        "name": "د اکمالاتو سلسله او لوژستیک",
+        "desc": "له فابریکې څخه تر المارۍ پورې د اکمالاتو لړۍ پای ته رسیږي. د بیړیو مدیریت، ګودام، د وروستي مایل تحویلي."
+      },
+      "technology": {
+        "name": "ټیکنالوژي او مصنوعي ذهانت",
+        "desc": "د هارویکس عملیاتي سیسټم جوړ کړئ — زموږ د مصنوعي ذهانت په واسطه چلېدونکی تصدۍ پلیټ فارم. بشپړ سټیک، د ML انجینرۍ، د معلوماتو ساینس."
+      },
+      "finance": {
+        "name": "مالي او خزانه",
+        "desc": "د څو اسعارو خزانه، سوداګریز مالي چارې، د HPay ډیجیټل تادیات، په ټولو سیمو کې د FX مدیریت."
+      },
+      "procurement": {
+        "name": "تدارکات او سرچینه اخیستل",
+        "desc": "د ۱۵+ اصلي هیوادونو څخه نړیوال سرچینه. د عرضه کونکو پلټنې، د کیفیت کنټرول، د فابریکې مستقیم پروګرامونه."
+      },
+      "hr": {
+        "name": "بشري سرچینې",
+        "desc": "د استعدادونو ترلاسه کول، L&D، په مختلفو جغرافیایي او کلتوري سیمو کې د فعالیت مدیریت."
+      },
+      "legal": {
+        "name": "قانوني او اطاعت",
+        "desc": "د سوداګرۍ اطاعت، د بندیزونو معاینه کول، د IP ساتنه، د قضایي قوې په اوږدو کې د قرارداد مدیریت."
+      },
+      "marketing": {
+        "name": "بازار موندنه او برانډ",
+        "desc": "د څو ژبو کمپاینونه، ۳۸ ځایي محتوا، ډیجیټل بازار موندنه، د ۱۰ عمودی برخو لپاره د برانډ ستراتیژي."
+      }
+    },
+    "roles": "رولونه",
+    "whyHarvics": "ولې هارویکس",
+    "benefits": {
+      "globalMobility": {
+        "title": "نړیوال خوځښت",
+        "desc": "په دوبۍ، لندن، کراچۍ، لاهور، او له ۴۰ څخه زیاتو بازارونو کې کار وکړئ"
+      },
+      "growthTrack": {
+        "title": "د ودې لار",
+        "desc": "په یوه پراخه تصدۍ کې د مسلکي پرمختګ چټکتیا"
+      },
+      "aiCulture": {
+        "title": "د مصنوعي ذهانت لومړی کلتور",
+        "desc": "د عصري مصنوعي ذهانت او ریښتیني وخت استخباراتي سیسټمونو سره کار وکړئ"
+      },
+      "competitivePackage": {
+        "title": "سیالي کېدونکې بسته",
+        "desc": "د بازار مخکښ خساره، کور، او ګټې"
+      },
+      "learningBudget": {
+        "title": "د زده کړې بودیجه",
+        "desc": "د کورسونو، کنفرانسونو او تصدیقونو لپاره کلنۍ پراختیایي بودیجه"
+      },
+      "flexibleWork": {
+        "title": "انعطاف منونکی کار",
+        "desc": "په ټوله نړۍ کې د سیمه ایزو مرکزونو دفترونو سره هایبرډ ترتیبات"
+      }
+    }
+  },
+  "strategy": {
+    "title": "زموږ ستراتیژي",
+    "pageTitle": "ستراتیژي | هارویچ",
+    "description": "د نوښت او غوره والي له لارې د دوامداره راتلونکي جوړول",
+    "heroSubtitle": "د نوښت او غوره والي له لارې د دوامداره راتلونکي جوړول",
+    "pillars": {
+      "globalExpansion": {
+        "title": "نړیوال پراختیا",
+        "desc": "په مخ پر ودې بازارونو کې زموږ د شتون پراخول پداسې حال کې چې په تاسیس شویو بازارونو کې زموږ دریځ پیاوړی کول"
+      },
+      "productInnovation": {
+        "title": "د محصول نوښت",
+        "desc": "په R&D کې پانګونه کول ترڅو نوي محصولات رامینځته کړي چې د مخ پر ودې مصرف کونکو غوره توبونو سره سمون ولري"
+      },
+      "sustainability": {
+        "title": "دوام",
+        "desc": "زموږ د اکمالاتي لړۍ او عملیاتو په اوږدو کې دوامداره کړنو ته ژمن یو"
+      },
+      "digitalTransformation": {
+        "title": "ډیجیټل بدلون",
+        "desc": "د پیرودونکو تجربې او عملیاتي موثریت لوړولو لپاره د ټیکنالوژۍ کارول"
+      }
+    },
+    "vision": {
+      "title": "زموږ لید",
+      "desc": "د نړۍ د مخکښ پریمیم مصرفي توکو شرکت کیدو لپاره، چې د کیفیت، نوښت او پایښت لپاره پیژندل شوی وي."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "هارویکس ګلوبل وینچرز | پریمیم ګلوبل ټریډینګ",
+      "description": "مخکښ نړیوال سوداګریز شرکت چې په ۱۰+ صنعتونو کې غوره محصولات وړاندې کوي. له ۲۰۱۹ کال راهیسې په ۵۰+ هیوادونو کې فعالیت کوي."
+    },
+    "about": {
+      "title": "زموږ په اړه | هارویکس ګلوبل وینچرز",
+      "description": "ومومئ چې څنګه هارویکس ګلوبل وینچرز په 40+ هیوادونو او 10 صنعتونو کې په نړیواله سوداګرۍ کې مخکښ ځواک شو."
+    },
+    "contact": {
+      "title": "موږ سره اړیکه ونیسئ | هارویکس ګلوبل وینچرز",
+      "description": "په ټوله نړۍ کې په منځني ختیځ، سویلي آسیا، اروپا، افریقا او امریکا کې د هارویکس دفترونو سره اړیکه ونیسئ."
+    },
+    "products": {
+      "title": "محصولات | هارویکس ګلوبل وینچرز",
+      "description": "د FMCG، ټوکرانو، توکو، او صنعتي حلونو په برخه کې د هارویکس پریمیم محصولاتو لړۍ وپلټئ."
+    },
+    "careers": {
+      "title": "مسلکونه | هارویکس ګلوبل وینچرز",
+      "description": "د هارویکس ګلوبل وینچرز سره یوځای شئ — په ۴۰+ هیوادونو کې د FMCG، ټوکر، لوژستیک او ټیکنالوژۍ په برخه کې فرصتونه وپلټئ."
+    },
+    "media": {
+      "title": "د رسنیو مرکز | هارویکس ګلوبل وینچرز",
+      "description": "د هارویکس میډیا سنټر — مطبوعاتي اعلامیې، وروستي خبرونه، د برانډ شتمنۍ، او د رسنیو اړیکې."
+    },
+    "strategy": {
+      "title": "زموږ ستراتیژي | هارویکس ګلوبل وینچرز",
+      "description": "د نړیوال پراختیا، نوښت، پایښت، او ډیجیټل بدلون لپاره د هارویکس ستراتیژیک لید."
+    },
+    "csr": {
+      "title": "د کارپوریټ ټولنیز مسؤلیت | هارویکس",
+      "description": "د هارویکس د CSR نوښتونه - د چاپیریال ساتنه، د ټولنې پروګرامونه، او اخلاقي سوداګریزې کړنې."
+    },
+    "faq": {
+      "title": "ډیری پوښتل شوي پوښتنې | هارویکس ګلوبل وینچرز",
+      "description": "د هارویکس محصولاتو، خدماتو، امر کولو، او نړیوالو عملیاتو په اړه ډیری پوښتل شوي پوښتنې."
+    },
+    "locations": {
+      "title": "نړیوال ځایونه | هارویکس",
+      "description": "د هارویکس دفترونه او عملیات په منځني ختیځ، سویلي آسیا، اروپا، افریقا او امریکا کې دي."
+    },
+    "leadership": {
+      "title": "د مشرتابه ټیم | هارویکس",
+      "description": "د مشرتابه ټیم سره وګورئ چې د هارویکس ګلوبل وینچرز په 40+ بازارونو او 10 صنعتي عمودی برخو کې چلوي."
+    },
+    "help": {
+      "title": "د مرستې مرکز | هارویکس",
+      "description": "د فرمایشونو، حسابونو، بار وړلو، او هارویکس خدماتو سره مرسته ترلاسه کړئ."
+    },
+    "compliance": {
+      "title": "اطاعت او اخلاق | هارویکس",
+      "description": "هارویکس د تنظیمي اطاعت، اخلاقي سوداګریزو کړنو، او نړیوالو معیارونو ته ژمن دی."
+    },
+    "history": {
+      "title": "زموږ تاریخ | هارویکس",
+      "description": "په ۲۰۱۹ کال کې د دوبۍ له یوې نوې سوداګرۍ څخه تر ۴۰+ هېوادونو پورې یوې نړیوالې تصدۍ پورې - د هارویکس کیسه."
+    },
+    "newsletter": {
+      "title": "خبر پاڼه | هارویکس",
+      "description": "د صنعت بصیرتونو او محصولاتو لانچونو لپاره د هارویکس خبر پاڼې کې ګډون وکړئ."
+    },
+    "login": {
+      "title": "ننوتل | هارویکس",
+      "description": "د فرمایشونو اداره کولو او پلیټ فارم ته د لاسرسي لپاره خپل هارویکس حساب ته ننوځئ."
+    },
+    "research": {
+      "title": "څېړنه او نوښت | هارویکس",
+      "description": "د هارویکس څیړنیز نوښتونه او د نوښت پروګرامونه زموږ نړیواله ستراتیژي پرمخ وړي."
+    },
+    "investorRelations": {
+      "title": "د پانګوالو اړیکې | هارویکس",
+      "description": "د پانګوالو معلومات، مالي راپورونه، او د هارویکس ګلوبل وینچرز څخه د شرکتونو اعلانونه."
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "پاڼه ونه موندل شوه",
+      "heading": "۴۰۴ — پاڼه ونه موندل شوه",
+      "description": "هغه پاڼه چې تاسو یې په لټه کې یاست شتون نلري یا لیږدول شوې ده.",
+      "goHome": "کور پاڼې ته لاړ شئ",
+      "goBack": "بیرته تګ"
+    },
+    "serverError": {
+      "title": "یو څه غلط شول",
+      "heading": "یو څه غلط شول",
+      "description": "بخښنه غواړو، خو یو څه ناڅاپي پیښ شول. مهرباني وکړئ پاڼه تازه کړئ.",
+      "tryAgain": "بیا هڅه وکړه",
+      "reload": "پاڼه بیا پورته کړئ",
+      "contactSupport": "د ملاتړ سره اړیکه ونیسئ"
+    },
+    "globalError": {
+      "title": "د غوښتنلیک تېروتنه",
+      "heading": "جدي تېروتنه",
+      "description": "یوه جدي تېروتنه رامنځته شوه. مهرباني وکړئ پاڼه بیا پورته کړئ.",
+      "reload": "کاریال بیا پورته کړئ"
+    }
+  },
+  "about": {
+    "title": "د هارویکس په اړه",
+    "subtitle": "له ۲۰۱۹ کال راهیسې په پریمیم مصرفي توکو کې غوره والی",
+    "ourStory": "زموږ کیسه",
+    "story1": "هارویکس، چې په ۲۰۱۹ کال کې تاسیس شو، له یوې لید لرونکې مفکورې څخه د غوره مصرفي توکو په برخه کې په نړیوال مشر بدل شو. زموږ سفر د کیفیت د نه ستړې کیدونکې تعقیب او نوښت ته د ژمنتیا له مخې تعریف شوی دی.",
+    "story2": "موږ په ۴۰+ هیوادونو کې فعالیت کوو، داسې محصولات وړاندې کوو چې ژوند بډایه کوي او په صنعت کې نوي معیارونه ټاکي. زموږ د عاجز پیل څخه تر نړیوال شتون پورې، زموږ ارزښتونه بدل شوي ندي.",
+    "est2018": "اټکل ۲۰۱۹ کال",
+    "countries40": "۴۰+ هیوادونه",
+    "productLines6": "۶ د محصول کرښې"
+  },
+  "csr": {
+    "hero": {
+      "title": "د شرکت ټولنیز مسؤلیت",
+      "description": "په هارویکس کې، موږ ژمن یو چې په نړۍ باندې مثبت اغیزه وکړو. زموږ د CSR نوښتونه په پایښت، د ټولنې پیاوړتیا، او اخلاقي سوداګریزو کړنو تمرکز کوي.",
+      "stats": {
+        "years": "د اغیزو کلونه",
+        "countries": "هغه هېوادونه چې رسیدلي دي",
+        "lives": "ژوندونه لمس شوي"
+      }
+    },
+    "initiatives": {
+      "title": "زموږ مهم نوښتونه",
+      "description": "موږ په څلورو اصلي ستنو تمرکز کوو ترڅو دوامداره بدلون رامینځته کړو او د ټولو ښکیلو اړخونو لپاره ګډ ارزښت رامینځته کړو."
+    },
+    "sustainability": {
+      "title": "دوام",
+      "description": "د نوي کیدونکي انرژۍ او د ضایعاتو کمولو له لارې زموږ د چاپیریال اغیز کمول.",
+      "stats": {
+        "renewable": "د نوي کیدونکي انرژۍ",
+        "waste": "د کثافاتو اړول",
+        "carbon": "د کاربن کمښت"
+      }
+    },
+    "community": {
+      "title": "د ټولنې ملاتړ",
+      "description": "د پوهنې، روغتیا پاملرنې، او اقتصادي پراختیا له لارې د سیمه ییزو ټولنو پیاوړتیا.",
+      "stats": {
+        "families": "ملاتړ شوي کورنۍ",
+        "programs": "فعال پروګرامونه",
+        "volunteers": "رضاکاران"
+      }
+    },
+    "education": {
+      "title": "زده کړه",
+      "description": "د بې وزلو زده کونکو لپاره د باکیفیته زده کړې او سکالرشپونو ته لاسرسی برابرول.",
+      "stats": {
+        "scholarships": "بورسونه",
+        "schools": "د ملګرو ښوونځي",
+        "students": "زده کوونکي اغیزمن شول"
+      }
+    },
+    "health": {
+      "title": "روغتیا او هوساینه",
+      "description": "په محرومو سیمو کې روغتیا پاملرنې او تغذیې ته د لاسرسي ښه کول.",
+      "stats": {
+        "campaigns": "د روغتیا کمپاینونه",
+        "people": "خلکو خدمت وکړ",
+        "clinics": "ګرځنده کلینیکونه"
+      }
+    },
+    "achievements": {
+      "2022": {
+        "title": "د CSR غوره نوښت",
+        "description": "د ټولنیز مسؤلیت په اړه زموږ د نوښتګر چلند لپاره ویاړ."
+      },
+      "2023": {
+        "title": "د ټولنې اتل",
+        "description": "زموږ د پراخو ټولنیزو پروګرامونو لپاره جایزه ورکړل شوه."
+      },
+      "2024": {
+        "title": "د نړیوال پایښت جایزه",
+        "description": "د کاربن بې طرفۍ لپاره زموږ د ژمنې لپاره پیژندل شوی."
+      },
+      "title": "زموږ اغېز",
+      "description": "د یوې غوره نړۍ په جوړولو کې زموږ د مهمو لاسته راوړنو پیژندل."
+    },
+    "cta": {
+      "title": "د بدلون راوستلو لپاره له موږ سره یوځای شئ",
+      "description": "زموږ سره ملګرتیا وکړئ یا د دې په اړه نور معلومات زده کړئ چې موږ څنګه یو دوامداره راتلونکی جوړوو.",
+      "contact": "د CSR ټیم سره اړیکه ونیسئ",
+      "learnMore": "نور معلومات ترلاسه کړئ"
+    }
+  },
+  "harvicsHouse": {
+    "title": "هارویکس هاوس",
+    "subtitle": "د غوره والي او دود میراث",
+    "aboutTitle": "هارویکس هاوس ته ښه راغلاست",
+    "description": "هارویکس هاوس د کیفیت او میراث په وړاندې زموږ د ژمنې لوړوالی استازیتوب کوي. دلته، موږ د خپلو غوره محصولاتو غوره انتخاب سره یوځای کوو، چې په داسې چاپیریال کې نندارې ته وړاندې کیږي چې زموږ د ښکلا، دود او نوښت ارزښتونه منعکس کوي.",
+    "description2": "زموږ ځانګړي ټولګې وپلټئ او د هر هغه محصول تر شا کیسه ومومئ چې د هارویکس نوم لري."
   }
 }

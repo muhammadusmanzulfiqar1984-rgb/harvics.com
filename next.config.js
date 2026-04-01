@@ -8,6 +8,29 @@ const path = require('path')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   outputFileTracingRoot: path.join(__dirname),
+  // Exclude archive folder from all Next.js processing
+  excludeDefaultMomentLocales: true,
+  webpack: (config) => {
+    config.watchOptions = {
+      ...config.watchOptions,
+      ignored: [
+        '**/node_modules/**',
+        '**/.next/**',
+        '**/.next_old/**',
+        '**/HARVICS OLD/**',
+        '**/backend/backups/**',
+        '**/_archive/**',
+        '**/public/_originals/**',
+      ],
+    }
+    return config
+  },
+  experimental: {
+    staleTimes: {
+      dynamic: 30,
+      static: 180,
+    },
+  },
   typescript: {
     // Pre-existing type errors in distributor/competitor pages; safe to ignore during build
     ignoreBuildErrors: true,
@@ -16,8 +39,16 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ['localhost', 'www.harvics.com', 'harvics.com'],
-    unoptimized: true,
+    remotePatterns: [
+      { protocol: 'http', hostname: 'localhost' },
+      { protocol: 'https', hostname: 'www.harvics.com' },
+      { protocol: 'https', hostname: 'harvics.com' },
+      { protocol: 'https', hostname: 'images.unsplash.com' },
+    ],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    formats: ['image/avif', 'image/webp'],
+    minimumCacheTTL: 86400,
   },
   trailingSlash: false, // Disable trailing slashes for API routes to work properly
   // output: 'export', // Commented out for development
@@ -69,6 +100,15 @@ const nextConfig = {
       ...(backendUrl.startsWith('http') ? [backendUrl, backendUrl.replace('http', 'ws')] : []),
       // Production API URL (if configured)
       ...(isProduction && apiUrl.startsWith('http') ? [apiUrl, apiUrl.replace('http', 'ws')] : []),
+      // Google APIs (Gemini, Maps, Translate, Vision)
+      "https://generativelanguage.googleapis.com",
+      "https://maps.googleapis.com",
+      "https://maps.gstatic.com",
+      "https://translation.googleapis.com",
+      "https://vision.googleapis.com",
+      // Weather and currency APIs
+      "https://api.openweathermap.org",
+      "https://openexchangerates.org",
       // Common production API patterns
       ...(isProduction ? [
         "https://api.harvics.com",
@@ -79,6 +119,28 @@ const nextConfig = {
     ].join(' ');
 
     return [
+      // Cache static images for 1 year
+      {
+        source: '/(:path*\\.(?:jpg|jpeg|png|gif|webp|avif|svg|ico))',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+        ],
+      },
+      // Cache fonts for 1 year
+      {
+        source: '/(:path*\\.(?:woff|woff2|ttf|otf|eot))',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+        ],
+      },
+      // Cache videos for 7 days with range support
+      {
+        source: '/(:path*\\.(?:mp4|webm|mov))',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=604800' },
+          { key: 'Accept-Ranges', value: 'bytes' },
+        ],
+      },
       {
         source: '/:path*',
         headers: [
@@ -86,12 +148,13 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.youtube.com https://www.googletagmanager.com",
-              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+              "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.youtube.com https://www.googletagmanager.com https://maps.googleapis.com https://maps.gstatic.com",
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://maps.googleapis.com",
               "font-src 'self' https://fonts.gstatic.com data:",
-              "img-src 'self' data: blob: https:",
+              "img-src 'self' data: blob: https: https://maps.gstatic.com https://maps.googleapis.com https://openweathermap.org",
               `connect-src ${connectSrc}`,
               "frame-src 'self' https://www.youtube.com https://youtube.com",
+              "worker-src blob:",
               "object-src 'none'",
               "base-uri 'self'",
               "form-action 'self'",

@@ -1,17 +1,71 @@
 'use client'
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
 import DashboardLayout from '@/components/layouts/DashboardLayout'
 import KPICard from '@/components/shared/KPICard'
+import { apiClient } from '@/lib/api'
 
 export default function MarketDistributionOSPage() {
   const locale = useLocale()
   const pathname = usePathname()
+  const [loading, setLoading] = useState(true)
+  const [data, setData] = useState<any>(null)
   
   const portal = pathname?.includes('/portal/distributor') ? 'distributor' :
                  pathname?.includes('/portal/supplier') ? 'supplier' : 'company'
+
+  useEffect(() => {
+    loadData()
+  }, [])
+
+  const loadData = async () => {
+    setLoading(true)
+    try {
+      const [crmRes, territoryRes, logisticsRes] = await Promise.all([
+        apiClient.request('/crm/summary'),
+        apiClient.request('/territory/continents'),
+        apiClient.request('/logistics/summary')
+      ])
+      
+      const crm = (crmRes?.data as any) || {}
+      const territories = (territoryRes?.data as any[]) || []
+      const logistics = (logisticsRes?.data as any) || {}
+      
+      // Calculate coverage percentage based on active vs total
+      const totalCustomers = crm.totalCustomers || 0
+      const activeRoutes = logistics.totalRoutes || 0
+      const coverage = totalCustomers > 0 ? Math.min(95, Math.floor((activeRoutes / totalCustomers) * 100)) : 0
+      
+      setData({
+        distributors: totalCustomers, // Using customers as distributors proxy
+        territories: territories.length || 0,
+        coverage: coverage,
+        performance: 88 // Mock for now
+      })
+    } catch (error) {
+      console.error('Error loading market distribution data:', error)
+      setData({
+        distributors: 0,
+        territories: 0,
+        coverage: 0,
+        performance: 0
+      })
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  if (loading) {
+    return (
+      <DashboardLayout portal={portal} pageTitle="Market & Distribution OS">
+        <div className="flex items-center justify-center py-12">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#C3A35E]"></div>
+        </div>
+      </DashboardLayout>
+    )
+  }
 
   return (
     <DashboardLayout
@@ -22,22 +76,22 @@ export default function MarketDistributionOSPage() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
           <KPICard
             label="Active Distributors"
-            value="234"
+            value={data?.distributors || 0}
             icon="🚚"
           />
           <KPICard
             label="Territories"
-            value="45"
+            value={data?.territories || 0}
             icon="🗺️"
           />
           <KPICard
             label="Coverage"
-            value="92%"
+            value={`${data?.coverage || 0}%`}
             icon="📊"
           />
           <KPICard
             label="Performance Score"
-            value="88"
+            value={data?.performance || 0}
             icon="⭐"
           />
         </div>

@@ -1,0 +1,300 @@
+// HARVICS OS — Prisma Schema
+// SQLite for dev, swap provider to "postgresql" for production
+// Run: npx prisma migrate dev --name init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ── CRM ─────────────────────────────────────────────────────────────
+
+model Customer {
+  id            String    @id @default(cuid())
+  name          String
+  segment       String? // Wholesale, Distributor, Retail, B2B
+  country       String?
+  city          String?
+  creditRating  String? // A+, A, B, C
+  lifetimeValue Float     @default(0)
+  contactEmail  String?
+  orders        Order[]
+  invoices      Invoice[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([segment])
+  @@index([country])
+}
+
+// ── ORDERS ──────────────────────────────────────────────────────────
+
+model Order {
+  id              String      @id @default(cuid())
+  customerId      String?
+  customer        Customer?   @relation(fields: [customerId], references: [id])
+  customerName    String? // Legacy/Fallback string
+  city            String?
+  channel         String? // Direct, Distributor, E-commerce, B2B, Wholesale
+  amount          Float       @default(0)
+  currency        String      @default("USD")
+  status          String      @default("Pending") // Pending, In Transit, Completed, Cancelled
+  shippingAddress String?
+  items           OrderItem[]
+  routes          Route[]
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+
+  @@index([status])
+  @@index([customerId])
+}
+
+model OrderItem {
+  id        String @id @default(cuid())
+  orderId   String
+  order     Order  @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  sku       String
+  qty       Int
+  unitPrice Float  @default(0)
+
+  @@index([orderId])
+}
+
+// ── INVENTORY ───────────────────────────────────────────────────────
+
+model InventoryItem {
+  id          String   @id @default(cuid())
+  sku         String   @unique
+  description String
+  category    String?
+  onHand      Int      @default(0)
+  minStock    Int      @default(0)
+  warehouse   String?
+  unitCost    Float    @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([category])
+  @@index([warehouse])
+}
+
+model Lead {
+  id        String   @id @default(cuid())
+  company   String
+  contact   String?
+  email     String?
+  stage     String   @default("Lead") // Lead, Qualified, Proposal, Negotiation
+  value     Float    @default(0)
+  source    String? // Trade Show, Website, Referral, Manual
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([stage])
+}
+
+model Campaign {
+  id          String   @id @default(cuid())
+  name        String
+  type        String? // Seasonal, Regional, General
+  status      String   @default("Active") // Active, Completed, Paused
+  budget      Float    @default(0)
+  spent       Float    @default(0)
+  leads       Int      @default(0)
+  conversions Int      @default(0)
+  startDate   String?
+  endDate     String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// ── HR ──────────────────────────────────────────────────────────────
+
+model Employee {
+  id         String   @id @default(cuid())
+  name       String
+  department String?
+  position   String?
+  country    String?
+  city       String?
+  salary     Float    @default(0)
+  currency   String   @default("USD")
+  status     String   @default("Active") // Active, Inactive, On Leave
+  joinDate   String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([department])
+  @@index([country])
+}
+
+model Payroll {
+  id            String   @id @default(cuid())
+  period        String
+  totalAmount   Float    @default(0)
+  currency      String   @default("USD")
+  employeeCount Int      @default(0)
+  status        String   @default("Pending") // Processed, Pending, Failed
+  processedDate String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+// ── FINANCE ─────────────────────────────────────────────────────────
+
+model Invoice {
+  id           String    @id @default(cuid())
+  invoiceNo    String    @unique
+  customerId   String?
+  customer     Customer? @relation(fields: [customerId], references: [id])
+  customerName String? // Fallback
+  amount       Float     @default(0)
+  currency     String    @default("USD")
+  status       String    @default("Unpaid") // Unpaid, Paid, Overdue
+  dueDate      String?
+  type         String? // AR, AP
+  payments     Payment[]
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@index([status])
+}
+
+model Payment {
+  id           String   @id @default(cuid())
+  invoiceNo    String
+  invoice      Invoice  @relation(fields: [invoiceNo], references: [invoiceNo])
+  amount       Float    @default(0)
+  currency     String   @default("USD")
+  method       String? // Bank Transfer, Check, Cash, Card
+  reference    String?
+  receivedDate String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([invoiceNo])
+}
+
+model JournalEntry {
+  id          String   @id @default(cuid())
+  entryNo     String   @unique
+  description String?
+  debit       String?
+  credit      String?
+  amount      Float    @default(0)
+  currency    String   @default("USD")
+  postedDate  String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// ── LOGISTICS ───────────────────────────────────────────────────────
+
+model Route {
+  id          String   @id @default(cuid())
+  routeId     String   @unique
+  origin      String
+  destination String
+  driver      String?
+  vehicle     String?
+  status      String   @default("Pending") // Pending, In Transit, Completed, Delayed
+  eta         String?
+  distance    Float?
+  orderId     String?
+  delayReason String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  order       Order?   @relation(fields: [orderId], references: [id])
+
+  @@index([status])
+}
+
+// ── PROCUREMENT ─────────────────────────────────────────────────────
+
+model PurchaseOrder {
+  id           String         @id @default(cuid())
+  poNumber     String         @unique
+  supplier     String
+  total        Float          @default(0)
+  currency     String         @default("USD")
+  status       String         @default("Pending") // Approved, Pending, Received, Rejected
+  expectedDate String?
+  items        PurchaseItem[]
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+}
+
+model PurchaseItem {
+  id              String        @id @default(cuid())
+  purchaseOrderId String
+  purchaseOrder   PurchaseOrder @relation(fields: [purchaseOrderId], references: [id], onDelete: Cascade)
+  sku             String
+  qty             Int
+  unitPrice       Float         @default(0)
+
+  @@index([purchaseOrderId])
+}
+
+model Approval {
+  id              String   @id @default(cuid())
+  type            String // purchase_order, expense, budget
+  referenceId     String
+  description     String?
+  amount          Float    @default(0)
+  currency        String   @default("USD")
+  requestedBy     String?
+  tier            String? // country, regional, global
+  status          String   @default("Pending")
+  requiredRole    String?
+  approvedBy      String?
+  approvedAt      String?
+  rejectedBy      String?
+  rejectedAt      String?
+  rejectionReason String?
+  notes           String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+// ── GPS / TIER-2 ────────────────────────────────────────────────────
+
+model GPSRetailer {
+  id           String   @id @default(cuid())
+  outletName   String
+  city         String?
+  outletType   String? // modern_trade, cash_and_carry, hypermarket
+  lat          Float?
+  lng          Float?
+  countryCode  String?
+  monthlySales Float    @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([countryCode])
+}
+
+model Satellite {
+  id            String   @id @default(cuid())
+  region        String
+  type          String // whitespace, expansion, consolidation
+  opportunity   String?
+  coverageScore Float    @default(0)
+  detectedAt    String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model TerritoryAssignment {
+  id            String   @id @default(cuid())
+  territoryCode String   @unique
+  assignedTo    String
+  region        String?
+  status        String   @default("Active")
+  retailers     Int      @default(0)
+  coverage      Float    @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}

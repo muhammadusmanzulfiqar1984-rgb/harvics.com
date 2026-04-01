@@ -55,7 +55,10 @@ navigationRouter.get('/all', (req: Request, res: Response) => {
     payments: paymentMethods
   })
 })
-
+// Root route
+navigationRouter.get('/', (req: Request, res: Response) => {
+  res.redirect('./menu/en');
+});
 export default navigationRouter
 
 

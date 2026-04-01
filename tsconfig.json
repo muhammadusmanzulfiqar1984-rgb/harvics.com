@@ -37,6 +37,10 @@
   ],
   "exclude": [
     "node_modules",
-    "backend/**/*"
+    "backend/**/*",
+    "HARVICS OLD/**/*",
+    "_archive/**/*",
+    "docs-html/**/*",
+    "docs-reports/**/*"
   ]
 }

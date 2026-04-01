@@ -29,7 +29,15 @@ export type DomainEvent =
   // AI
   | 'ai.anomaly.detected' | 'ai.forecast.generated' | 'ai.recommendation.ready'
   // Approval
-  | 'approval.requested' | 'approval.approved' | 'approval.rejected';
+  | 'approval.requested' | 'approval.approved' | 'approval.rejected'
+  // Tier-2: GPS
+  | 'gps.location.updated' | 'gps.retailer.added' | 'gps.route.optimized'
+  // Tier-2: Satellite
+  | 'satellite.whitespace.detected' | 'satellite.coverage.updated'
+  // Tier-2: Territory
+  | 'territory.assignment.changed' | 'territory.coverage.expanded'
+  // Tier-2: Supply Chain
+  | 'supplychain.node.added' | 'supplychain.graph.updated';
 
 interface EventLog {
   event: DomainEvent;
@@ -126,6 +134,55 @@ eventBus.on('procurement.grn.received', (data) => {
     items: data.items,
     poId: data.poId
   }, 'procurement');
+});
+
+// ── TIER-2 CROSS-DOMAIN LISTENERS ───────────────────────────────────
+
+// When GPS retailer added → notify CRM + territory
+eventBus.on('gps.retailer.added', (data) => {
+  console.log(`[CrossDomain] gps.retailer.added → CRM + territory update`);
+  eventBus.emitDomain('crm.customer.created', {
+    source: 'gps_retailer',
+    outletName: data.outletName,
+    city: data.city,
+    countryCode: data.countryCode
+  }, 'gps');
+  eventBus.emitDomain('territory.coverage.expanded', {
+    countryCode: data.countryCode,
+    city: data.city,
+    lat: data.lat,
+    lng: data.lng
+  }, 'gps');
+});
+
+// When satellite detects whitespace → trigger AI analysis + territory alert
+eventBus.on('satellite.whitespace.detected', (data) => {
+  console.log(`[CrossDomain] satellite.whitespace → AI anomaly + territory`);
+  eventBus.emitDomain('ai.anomaly.detected', {
+    source: 'satellite',
+    type: 'market_whitespace',
+    region: data.region,
+    opportunity: data.opportunity
+  }, 'satellite');
+});
+
+// When territory assignment changes → update GPS routes + logistics
+eventBus.on('territory.assignment.changed', (data) => {
+  console.log(`[CrossDomain] territory.assignment → GPS route optimization`);
+  eventBus.emitDomain('gps.route.optimized', {
+    territoryId: data.territoryId,
+    newAssignment: data.newAssignment
+  }, 'territory');
+});
+
+// When supply chain node added → update logistics + procurement
+eventBus.on('supplychain.node.added', (data) => {
+  console.log(`[CrossDomain] supplychain.node → logistics + procurement`);
+  eventBus.emitDomain('logistics.route.created', {
+    source: 'supply_chain',
+    nodeId: data.nodeId,
+    location: data.location
+  }, 'supplychain');
 });
 
 export default eventBus;

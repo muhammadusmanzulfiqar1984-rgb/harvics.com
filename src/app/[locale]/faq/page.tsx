@@ -5,10 +5,11 @@ import { getFolderBasedCategories } from '@/data/folderBasedProducts'
 import { getFooterPageContent } from '@/utils/contentPopulator'
 
 import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'FAQ | Harvics',
-  description: 'Frequently asked questions about Harvics products and services.',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'faq')
 }
 
 
@@ -30,45 +31,46 @@ interface FAQPageProps {
 
 export default async function FAQPage({ params }: FAQPageProps) {
   const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'faq' })
   const categories = getFolderBasedCategories()
   const content = getFooterPageContent('faq', locale)
 
   const faqs = [
     {
-      category: 'Products',
+      category: t('products.category'),
       questions: [
-        { q: 'What products does Harvics offer?', a: 'We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.' },
-        { q: 'Where can I buy Harvics products?', a: 'Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.' },
-        { q: 'Do you offer bulk ordering?', a: 'Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.' }
+        { q: t('products.q1'), a: t('products.a1') },
+        { q: t('products.q2'), a: t('products.a2') },
+        { q: t('products.q3'), a: t('products.a3') }
       ]
     },
     {
-      category: 'Orders & Shipping',
+      category: t('ordersShipping.category'),
       questions: [
-        { q: 'What are your shipping options?', a: 'We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.' },
-        { q: 'How long does delivery take?', a: 'Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.' },
-        { q: 'Can I track my order?', a: 'Yes, you can track your order using the tracking number provided in your order confirmation email.' }
+        { q: t('ordersShipping.q1'), a: t('ordersShipping.a1') },
+        { q: t('ordersShipping.q2'), a: t('ordersShipping.a2') },
+        { q: t('ordersShipping.q3'), a: t('ordersShipping.a3') }
       ]
     },
     {
-      category: 'Account & Payments',
+      category: t('accountPayments.category'),
       questions: [
-        { q: 'How do I create an account?', a: 'Click on "Sign In" in the header and select "Create Account" to register for a new account.' },
-        { q: 'What payment methods do you accept?', a: 'We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.' },
-        { q: 'Is my payment information secure?', a: 'Yes, we use industry-standard encryption to protect your payment information.' }
+        { q: t('accountPayments.q1'), a: t('accountPayments.a1') },
+        { q: t('accountPayments.q2'), a: t('accountPayments.a2') },
+        { q: t('accountPayments.q3'), a: t('accountPayments.a3') }
       ]
     },
     {
-      category: 'Returns & Refunds',
+      category: t('returnsRefunds.category'),
       questions: [
-        { q: 'What is your return policy?', a: 'We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.' },
-        { q: 'How do I request a refund?', a: 'Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.' }
+        { q: t('returnsRefunds.q1'), a: t('returnsRefunds.a1') },
+        { q: t('returnsRefunds.q2'), a: t('returnsRefunds.a2') }
       ]
     }
   ]
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       
       <div className="pt-20">
         <section className="py-12 md:py-24 px-4 md:px-6 bg-gradient-to-br from-[#ffffff] via-[#ffffff] to-[#ffffff]">
@@ -99,13 +101,13 @@ export default async function FAQPage({ params }: FAQPageProps) {
             ))}
 
             <div className="bg-gradient-to-r from-[#6B1F2B] to-[#6B1F2B] p-8 md:p-12 text-white text-center mt-12">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">Still Have Questions?</h2>
-              <p className="mb-6 text-lg">Our customer service team is here to help</p>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">{t('contactCta.title')}</h2>
+              <p className="mb-6 text-lg">{t('contactCta.subtitle')}</p>
               <a
                 href={`/${locale}/contact`}
                 className="inline-block bg-gradient-to-r from-[#ffffff] to-[#ffffff] text-black px-8 py-4 font-bold text-lg hover:scale-105 transition-all duration-300"
               >
-                Contact Us
+                {t('contactCta.button')}
               </a>
             </div>
           </div>

@@ -1,109 +1,371 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
 import DashboardLayout from '@/components/layouts/DashboardLayout'
 import KPICard from '@/components/shared/KPICard'
 
+interface Summary {
+  totalPOs: number
+  pendingPOs: number
+  approvedPOs: number
+  totalValue: number
+  totalGRNs: number
+  pendingGRNs: number
+  totalVendors: number
+  activeVendors: number
+  openRFQs: number
+  totalRFQs: number
+}
+
+interface Vendor {
+  id: string
+  name: string
+  country: string
+  category: string
+  paymentTerms: string
+  status: string
+  riskScore: string
+  rating: number
+}
+
+interface RFQ {
+  id: string
+  rfqNo: string
+  title: string
+  category: string
+  targetPrice: number
+  currency: string
+  deadline: string
+  status: string
+  suppliersInvited: number
+  quotesReceived: number
+}
+
+interface PO {
+  id: string
+  poNumber: string
+  supplier: string
+  total: number
+  currency: string
+  status: string
+  expectedDate: string
+}
+
+const STATUS_COLORS: Record<string, string> = {
+  Active: 'bg-green-100 text-green-800',
+  'Under Review': 'bg-yellow-100 text-yellow-800',
+  Inactive: 'bg-gray-100 text-gray-600',
+  Open: 'bg-blue-100 text-blue-800',
+  Closed: 'bg-gray-100 text-gray-600',
+  Approved: 'bg-green-100 text-green-800',
+  Pending: 'bg-yellow-100 text-yellow-800',
+  Received: 'bg-green-100 text-green-800',
+  Rejected: 'bg-red-100 text-red-800',
+}
+
+const StatusBadge = ({ status }: { status: string }) => (
+  <span className={`px-2 py-0.5 rounded text-xs font-semibold ${STATUS_COLORS[status] || 'bg-gray-100 text-gray-600'}`}>
+    {status}
+  </span>
+)
+
 export default function SupplierProcurementOSPage() {
   const locale = useLocale()
   const pathname = usePathname()
-  
-  const portal = pathname?.includes('/portal/distributor') ? 'distributor' :
-                 pathname?.includes('/portal/supplier') ? 'supplier' : 'company'
+  const portal = pathname?.includes('/portal/distributor') ? 'distributor'
+    : pathname?.includes('/portal/supplier') ? 'supplier' : 'company'
+
+  const [summary, setSummary] = useState<Summary | null>(null)
+  const [vendors, setVendors] = useState<Vendor[]>([])
+  const [rfqs, setRFQs] = useState<RFQ[]>([])
+  const [pos, setPOs] = useState<PO[]>([])
+  const [activeTab, setActiveTab] = useState<'overview' | 'vendors' | 'rfq' | 'po'>('overview')
+  const [loading, setLoading] = useState(true)
+
+  // 3-way match state
+  const [matchPONumber, setMatchPONumber] = useState('')
+  const [matchResult, setMatchResult] = useState<any>(null)
+  const [matchLoading, setMatchLoading] = useState(false)
+
+  useEffect(() => {
+    const base = '/api/procurement-crud'
+    Promise.all([
+      fetch(`${base}/summary`).then(r => r.json()),
+      fetch(`${base}/vendor`).then(r => r.json()),
+      fetch(`${base}/rfq`).then(r => r.json()),
+      fetch(`${base}/po`).then(r => r.json()),
+    ]).then(([s, v, r, p]) => {
+      if (s.success) setSummary(s.data)
+      if (v.success) setVendors(v.data)
+      if (r.success) setRFQs(r.data)
+      if (p.success) setPOs(p.data)
+    }).finally(() => setLoading(false))
+  }, [])
+
+  const run3WayMatch = async () => {
+    if (!matchPONumber.trim()) return
+    setMatchLoading(true)
+    setMatchResult(null)
+    try {
+      const res = await fetch(`/api/procurement-crud/3way-match/${matchPONumber.trim()}`)
+      const data = await res.json()
+      setMatchResult(data)
+    } finally {
+      setMatchLoading(false)
+    }
+  }
+
+  const tabs = [
+    { key: 'overview', label: 'Overview' },
+    { key: 'vendors', label: `Vendors (${vendors.length})` },
+    { key: 'rfq', label: `RFQs (${rfqs.length})` },
+    { key: 'po', label: `Purchase Orders (${pos.length})` },
+  ]
 
   return (
-    <DashboardLayout
-      portal={portal}
-      pageTitle="Supplier & Procurement OS"
-    >
+    <DashboardLayout portal={portal} pageTitle="Supplier & Procurement OS">
       <div className="space-y-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-          <KPICard
-            label="Active Suppliers"
-            value="156"
-            icon="🏭"
-          />
-          <KPICard
-            label="Open RFQs"
-            value="23"
-            icon="📄"
-          />
-          <KPICard
-            label="Pending POs"
-            value="45"
-            icon="📋"
-          />
-          <KPICard
-            label="Avg Lead Time"
-            value="5.2"
-            icon="⏱️"
-          />
+
+        {/* KPI Cards — live data */}
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <KPICard label="Active Vendors" value={loading ? '—' : String(summary?.activeVendors ?? 0)} icon="🏭" />
+          <KPICard label="Open RFQs" value={loading ? '—' : String(summary?.openRFQs ?? 0)} icon="📄" />
+          <KPICard label="Pending POs" value={loading ? '—' : String(summary?.pendingPOs ?? 0)} icon="📋" />
+          <KPICard label="Approved POs" value={loading ? '—' : String(summary?.approvedPOs ?? 0)} icon="✅" />
+          <KPICard label="Total PO Value" value={loading ? '—' : `$${((summary?.totalValue ?? 0) / 1000).toFixed(0)}K`} icon="💰" />
         </div>
 
-        <div className="border-t border-[#C3A35E]/30 pt-6">
-          <h3 className="text-lg font-semibold text-[#6B1F2B] mb-4">Procurement Workflow</h3>
-          <div className="space-y-4">
-            <div className="flex items-center gap-4 p-4 bg-white border border-[#C3A35E]/30 hover:shadow-md transition-shadow">
-              <div className="text-2xl grayscale-0">1️⃣</div>
-              <div className="flex-1">
-                <h4 className="font-semibold text-[#6B1F2B]">RFQ (Request for Quotation)</h4>
-                <p className="text-sm text-[#6B1F2B]/70">Create and send RFQs to suppliers</p>
+        {/* Tabs */}
+        <div className="flex gap-1 border-b border-[#C3A35E]/30">
+          {tabs.map(tab => (
+            <button
+              key={tab.key}
+              onClick={() => setActiveTab(tab.key as any)}
+              className={`px-4 py-2 text-sm font-medium transition-colors ${
+                activeTab === tab.key
+                  ? 'border-b-2 border-[#6B1F2B] text-[#6B1F2B]'
+                  : 'text-[#6B1F2B]/60 hover:text-[#6B1F2B]'
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+
+        {/* OVERVIEW TAB */}
+        {activeTab === 'overview' && (
+          <div className="space-y-6">
+            {/* Workflow */}
+            <div>
+              <h3 className="text-lg font-semibold text-[#6B1F2B] mb-4">Procurement Workflow</h3>
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+                {[
+                  { step: '1', label: 'RFQ', desc: 'Request for Quotation sent to vendors' },
+                  { step: '2', label: 'Purchase Order', desc: 'PO raised after quote comparison' },
+                  { step: '3', label: 'GRN', desc: 'Goods Receipt Note on delivery' },
+                  { step: '4', label: '3-Way Match', desc: 'PO + GRN + Invoice verified before payment' },
+                ].map(w => (
+                  <div key={w.step} className="flex items-start gap-3 p-4 bg-white border border-[#C3A35E]/30 hover:shadow-md transition-shadow">
+                    <div className="w-8 h-8 rounded-full bg-[#6B1F2B] text-white flex items-center justify-center text-sm font-bold shrink-0">{w.step}</div>
+                    <div>
+                      <h4 className="font-semibold text-[#6B1F2B] text-sm">{w.label}</h4>
+                      <p className="text-xs text-[#6B1F2B]/60 mt-0.5">{w.desc}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className="flex items-center gap-4 p-4 bg-white border border-[#C3A35E]/30 hover:shadow-md transition-shadow">
-              <div className="text-2xl grayscale-0">2️⃣</div>
-              <div className="flex-1">
-                <h4 className="font-semibold text-[#6B1F2B]">Purchase Orders</h4>
-                <p className="text-sm text-[#6B1F2B]/70">Create and manage purchase orders</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4 p-4 bg-white border border-[#C3A35E]/30 hover:shadow-md transition-shadow">
-              <div className="text-2xl grayscale-0">3️⃣</div>
-              <div className="flex-1">
-                <h4 className="font-semibold text-[#6B1F2B]">GRN (Goods Receipt Note)</h4>
-                <p className="text-sm text-[#6B1F2B]/70">Process goods receipts and quality checks</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4 p-4 bg-white border border-[#C3A35E]/30 hover:shadow-md transition-shadow">
-              <div className="text-2xl grayscale-0">4️⃣</div>
-              <div className="flex-1">
-                <h4 className="font-semibold text-[#6B1F2B]">Payment Processing</h4>
-                <p className="text-sm text-[#6B1F2B]/70">Manage supplier payments and invoices</p>
+
+            {/* 3-Way Match Lookup */}
+            <div>
+              <h3 className="text-lg font-semibold text-[#6B1F2B] mb-4">3-Way Match Check</h3>
+              <div className="bg-white border border-[#C3A35E]/30 p-4">
+                <div className="flex gap-3 mb-4">
+                  <input
+                    type="text"
+                    placeholder="Enter PO Number (e.g. PO-2026-001)"
+                    value={matchPONumber}
+                    onChange={e => setMatchPONumber(e.target.value)}
+                    onKeyDown={e => e.key === 'Enter' && run3WayMatch()}
+                    className="flex-1 border border-[#C3A35E]/40 px-3 py-2 text-sm text-[#6B1F2B] focus:outline-none focus:border-[#6B1F2B]"
+                  />
+                  <button
+                    onClick={run3WayMatch}
+                    disabled={matchLoading}
+                    className="px-4 py-2 bg-[#6B1F2B] text-white text-sm font-medium hover:bg-[#8B2F3B] disabled:opacity-50 transition-colors"
+                  >
+                    {matchLoading ? 'Checking…' : 'Run Match'}
+                  </button>
+                </div>
+
+                {matchResult && (
+                  <div className="border border-[#C3A35E]/20 p-4 bg-[#FAFAF8]">
+                    {matchResult.success ? (
+                      <div className="space-y-3">
+                        <div className="flex items-center justify-between">
+                          <span className="font-semibold text-[#6B1F2B]">{matchResult.data.poNumber}</span>
+                          <StatusBadge status={matchResult.data.matchStatus} />
+                        </div>
+                        <div className="grid grid-cols-3 gap-3 text-sm">
+                          <div className="p-3 border border-[#C3A35E]/20">
+                            <div className="text-xs text-[#6B1F2B]/60 mb-1">Purchase Order</div>
+                            <div className="font-semibold text-[#6B1F2B]">{matchResult.data.po.supplier}</div>
+                            <div className="text-xs">${matchResult.data.po.value?.toLocaleString()} {matchResult.data.po.currency}</div>
+                            <StatusBadge status={matchResult.data.po.status} />
+                          </div>
+                          <div className="p-3 border border-[#C3A35E]/20">
+                            <div className="text-xs text-[#6B1F2B]/60 mb-1">GRN</div>
+                            {matchResult.data.grn
+                              ? <><div className="font-semibold text-[#6B1F2B]">{matchResult.data.grn.grnNo}</div>
+                                  <div className="text-xs">{matchResult.data.grn.receivedDate}</div>
+                                  <StatusBadge status={matchResult.data.grn.status} /></>
+                              : <div className="text-xs text-[#6B1F2B]/50">Not received yet</div>
+                            }
+                          </div>
+                          <div className="p-3 border border-[#C3A35E]/20">
+                            <div className="text-xs text-[#6B1F2B]/60 mb-1">Invoice</div>
+                            <div className="text-xs text-[#6B1F2B]/50">Pending AP module</div>
+                          </div>
+                        </div>
+                        {matchResult.data.discrepancy && (
+                          <div className="text-xs text-yellow-700 bg-yellow-50 border border-yellow-200 p-2">
+                            ⚠ {matchResult.data.discrepancy}
+                          </div>
+                        )}
+                        {matchResult.data.readyForPayment && (
+                          <div className="text-xs text-green-700 bg-green-50 border border-green-200 p-2">
+                            ✓ All legs matched — ready for payment authorisation
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      <p className="text-sm text-red-600">{matchResult.error}</p>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           </div>
-        </div>
+        )}
 
-        <div className="border-t border-[#C3A35E]/30 pt-6">
-          <h3 className="text-lg font-semibold text-[#6B1F2B] mb-4">Supplier Performance</h3>
-          <div className="bg-white border border-[#C3A35E]/30 p-4 shadow-sm">
-            <p className="text-[#6B1F2B]/80 mb-4">
-              Track supplier performance metrics including on-time delivery,
-              quality scores, lead times, and payment terms.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-[#6B1F2B]">
-              <div className="p-3 bg-[#F5F1E8] border border-[#C3A35E]/10">
-                <div className="font-semibold opacity-70 mb-1">On-Time Delivery</div>
-                <div className="text-xl font-bold text-[#6B1F2B]">96%</div>
-              </div>
-              <div className="p-3 bg-[#F5F1E8] border border-[#C3A35E]/10">
-                <div className="font-semibold opacity-70 mb-1">Quality Score</div>
-                <div className="text-xl font-bold text-[#6B1F2B]">94%</div>
-              </div>
-              <div className="p-3 bg-[#F5F1E8] border border-[#C3A35E]/10">
-                <div className="font-semibold opacity-70 mb-1">Avg Lead Time</div>
-                <div className="text-xl font-bold text-[#6B1F2B]">5.2 days</div>
-              </div>
-              <div className="p-3 bg-[#F5F1E8] border border-[#C3A35E]/10">
-                <div className="font-semibold opacity-70 mb-1">Payment Score</div>
-                <div className="text-xl font-bold text-[#6B1F2B]">98%</div>
-              </div>
+        {/* VENDORS TAB */}
+        {activeTab === 'vendors' && (
+          <div>
+            <h3 className="text-lg font-semibold text-[#6B1F2B] mb-4">Vendor Master</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border border-[#C3A35E]/30">
+                <thead className="bg-[#6B1F2B] text-white">
+                  <tr>
+                    {['Vendor Name', 'Country', 'Category', 'Payment Terms', 'Risk', 'Rating', 'Status'].map(h => (
+                      <th key={h} className="px-3 py-2 text-left font-medium text-xs">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {vendors.map((v, i) => (
+                    <tr key={v.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                      <td className="px-3 py-2 font-medium text-[#6B1F2B]">{v.name}</td>
+                      <td className="px-3 py-2 text-[#6B1F2B]/70">{v.country}</td>
+                      <td className="px-3 py-2 text-[#6B1F2B]/70">{v.category}</td>
+                      <td className="px-3 py-2 text-[#6B1F2B]/70">{v.paymentTerms}</td>
+                      <td className="px-3 py-2">
+                        <span className={`px-2 py-0.5 rounded text-xs font-semibold ${v.riskScore === 'Low' ? 'bg-green-100 text-green-800' : v.riskScore === 'Medium' ? 'bg-yellow-100 text-yellow-800' : 'bg-red-100 text-red-800'}`}>
+                          {v.riskScore}
+                        </span>
+                      </td>
+                      <td className="px-3 py-2 text-[#6B1F2B]">{v.rating > 0 ? `${v.rating} ★` : '—'}</td>
+                      <td className="px-3 py-2"><StatusBadge status={v.status} /></td>
+                    </tr>
+                  ))}
+                  {vendors.length === 0 && (
+                    <tr><td colSpan={7} className="px-3 py-6 text-center text-[#6B1F2B]/40">No vendors found</td></tr>
+                  )}
+                </tbody>
+              </table>
             </div>
           </div>
-        </div>
+        )}
+
+        {/* RFQ TAB */}
+        {activeTab === 'rfq' && (
+          <div>
+            <h3 className="text-lg font-semibold text-[#6B1F2B] mb-4">Request for Quotation</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border border-[#C3A35E]/30">
+                <thead className="bg-[#6B1F2B] text-white">
+                  <tr>
+                    {['RFQ No', 'Title', 'Category', 'Target Price', 'Deadline', 'Suppliers', 'Quotes', 'Status'].map(h => (
+                      <th key={h} className="px-3 py-2 text-left font-medium text-xs">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {rfqs.map((r, i) => (
+                    <tr key={r.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                      <td className="px-3 py-2 font-mono text-xs text-[#6B1F2B]">{r.rfqNo}</td>
+                      <td className="px-3 py-2 font-medium text-[#6B1F2B]">{r.title}</td>
+                      <td className="px-3 py-2 text-[#6B1F2B]/70">{r.category}</td>
+                      <td className="px-3 py-2 text-[#6B1F2B]">${r.targetPrice?.toLocaleString()} {r.currency}</td>
+                      <td className="px-3 py-2 text-[#6B1F2B]/70">{r.deadline}</td>
+                      <td className="px-3 py-2 text-center text-[#6B1F2B]">{r.suppliersInvited}</td>
+                      <td className="px-3 py-2 text-center text-[#6B1F2B]">{r.quotesReceived}</td>
+                      <td className="px-3 py-2"><StatusBadge status={r.status} /></td>
+                    </tr>
+                  ))}
+                  {rfqs.length === 0 && (
+                    <tr><td colSpan={8} className="px-3 py-6 text-center text-[#6B1F2B]/40">No RFQs found</td></tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+
+        {/* PURCHASE ORDERS TAB */}
+        {activeTab === 'po' && (
+          <div>
+            <h3 className="text-lg font-semibold text-[#6B1F2B] mb-4">Purchase Orders</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border border-[#C3A35E]/30">
+                <thead className="bg-[#6B1F2B] text-white">
+                  <tr>
+                    {['PO Number', 'Supplier', 'Total', 'Currency', 'Expected', 'Status', 'Match'].map(h => (
+                      <th key={h} className="px-3 py-2 text-left font-medium text-xs">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {pos.map((p, i) => (
+                    <tr key={p.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                      <td className="px-3 py-2 font-mono text-xs text-[#6B1F2B]">{p.poNumber}</td>
+                      <td className="px-3 py-2 font-medium text-[#6B1F2B]">{p.supplier}</td>
+                      <td className="px-3 py-2 text-[#6B1F2B]">${p.total?.toLocaleString()}</td>
+                      <td className="px-3 py-2 text-[#6B1F2B]/70">{p.currency}</td>
+                      <td className="px-3 py-2 text-[#6B1F2B]/70">{p.expectedDate || '—'}</td>
+                      <td className="px-3 py-2"><StatusBadge status={p.status} /></td>
+                      <td className="px-3 py-2">
+                        <button
+                          onClick={() => { setMatchPONumber(p.poNumber); setActiveTab('overview') }}
+                          className="text-xs text-[#6B1F2B] underline hover:text-[#8B2F3B]"
+                        >
+                          Check
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                  {pos.length === 0 && (
+                    <tr><td colSpan={7} className="px-3 py-6 text-center text-[#6B1F2B]/40">No purchase orders found</td></tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+
       </div>
     </DashboardLayout>
   )
 }
+

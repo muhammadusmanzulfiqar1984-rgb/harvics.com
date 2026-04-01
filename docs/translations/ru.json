@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "ru",
+    "language": "Russian",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Russian. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Russian",
+      "translation": "Добро пожаловать в"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Russian",
+      "translation": "Харвич"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Russian",
+      "translation": "Превосходство в сфере товаров премиум-класса для потребителей с 2019 года."
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Russian",
+      "translation": "Ведущая мировая компания по производству потребительских товаров, поставляющая высококачественные продукты питания в различных категориях, соответствующие международным стандартам качества."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Russian",
+      "translation": "Ознакомиться с продуктами"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Russian",
+      "translation": "Связаться с нами"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Russian",
+      "translation": "Узнать больше"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Russian",
+      "translation": "Превосходство в сфере потребительских товаров премиум-класса с"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Russian",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Russian",
+      "translation": "Лондон • Милан • Нью-Йорк"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Russian",
+      "translation": "Пекарня"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Russian",
+      "translation": "Напитки"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Russian",
+      "translation": "Кондитерские изделия"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Russian",
+      "translation": "Кулинарное"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Russian",
+      "translation": "Замороженные продукты"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Russian",
+      "translation": "Паста"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Russian",
+      "translation": "Закуски"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Russian",
+      "translation": "Отчет по ESG за 2025 год"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Russian",
+      "translation": "Лондон • Милан • Нью-Йорк"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Russian",
+      "translation": "Дом"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Russian",
+      "translation": "О"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Russian",
+      "translation": "О нас"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Russian",
+      "translation": "История бренда"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Russian",
+      "translation": "Продукты"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Russian",
+      "translation": "Наша продукция"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Russian",
+      "translation": "Просмотреть все товары"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Russian",
+      "translation": "КСО"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Russian",
+      "translation": "Отношения с инвесторами"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Russian",
+      "translation": "Инвесторы"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Russian",
+      "translation": "СМИ"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Russian",
+      "translation": "Связаться с нами"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Russian",
+      "translation": "Дом Харвика"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Russian",
+      "translation": "Страны"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Russian",
+      "translation": "Порталы"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Russian",
+      "translation": "Войти"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Russian",
+      "translation": "Список желаний"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Russian",
+      "translation": "Корзина"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Russian",
+      "translation": "Помощь"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Russian",
+      "translation": "Найти магазин"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Russian",
+      "translation": "Деньги"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Russian",
+      "translation": "Продажи"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Russian",
+      "translation": "Предложения"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Russian",
+      "translation": "Темный режим"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Russian",
+      "translation": "Кредитная карта"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Russian",
+      "translation": "Кредитная карта M&S Rewards"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Russian",
+      "translation": "Клубные награды"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Russian",
+      "translation": "Наши кредитные карты"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Russian",
+      "translation": "Страхование"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Russian",
+      "translation": "Страхование жилья"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Russian",
+      "translation": "Страхование путешествий"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Russian",
+      "translation": "Туристические услуги"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Russian",
+      "translation": "Деньги для путешествий"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Russian",
+      "translation": "Обменные курсы"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Russian",
+      "translation": "Дополнительные услуги"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Russian",
+      "translation": "Сбережения и инвестиции"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Russian",
+      "translation": "Потребительские кредиты"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Russian",
+      "translation": "Финансовая поддержка"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Russian",
+      "translation": "Текущие продажи"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Russian",
+      "translation": "Разрешение"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Russian",
+      "translation": "Сезонные распродажи"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Russian",
+      "translation": "Специальные предложения"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Russian",
+      "translation": "Акции"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Russian",
+      "translation": "Скидки на оптовые заказы"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Russian",
+      "translation": "Наша продукция"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Russian",
+      "translation": "Просмотреть все товары"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Russian",
+      "translation": "Наши товарные категории"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Russian",
+      "translation": "Откройте для себя наш премиальный ассортимент продукции, созданной с заботой и вниманием к деталям."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Russian",
+      "translation": "Уровень 1: Категории"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Russian",
+      "translation": "Уровень 2: Модули"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Russian",
+      "translation": "Уровень 3: Экраны KPI"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Russian",
+      "translation": "Уровень 4: Действия"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Russian",
+      "translation": "Сбросить навигацию"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Russian",
+      "translation": "Для этой категории нет доступных подкатегорий."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Russian",
+      "translation": "Продукты"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Russian",
+      "translation": "Подкатегории"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Russian",
+      "translation": "Пекарня"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Russian",
+      "translation": "Свежая выпечка и кондитерские изделия."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Russian",
+      "translation": "Напитки"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Russian",
+      "translation": "Освежающие напитки на любой случай."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Russian",
+      "translation": "Кондитерские изделия"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Russian",
+      "translation": "Сладкие угощения и лакомства."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Russian",
+      "translation": "Кулинарное"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Russian",
+      "translation": "Необходимые ингредиенты для вашей кухни."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Russian",
+      "translation": "Замороженные продукты"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Russian",
+      "translation": "Удобные и вкусные замороженные блюда."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Russian",
+      "translation": "Паста"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Russian",
+      "translation": "Настоящие сорта пасты."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Russian",
+      "translation": "Закуски"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Russian",
+      "translation": "Вкусные закуски на любое время дня."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Russian",
+      "translation": "О компании Harvics"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Russian",
+      "translation": "Превосходство в сфере товаров премиум-класса для потребителей с 2019 года."
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Russian",
+      "translation": "Наша история"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Russian",
+      "translation": "Компания Harvics, основанная в 2019 году, выросла из новаторской идеи в мирового лидера в сфере потребительских товаров премиум-класса. Наш путь определяется неустанным стремлением к качеству и приверженностью инновациям."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Russian",
+      "translation": "Мы работаем более чем в 40 странах, поставляя продукцию, которая улучшает жизнь и устанавливает новые стандарты в отрасли. С момента нашего скромного начала и до глобального присутствия наши ценности остаются неизменными."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Russian",
+      "translation": "Основано в 2019 году."
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Russian",
+      "translation": "Более 40 стран"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Russian",
+      "translation": "6 продуктовых линеек"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Russian",
+      "translation": "Корпоративная социальная ответственность"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Russian",
+      "translation": "В компании Harvics мы стремимся оказывать позитивное влияние на мир. Наши инициативы в области корпоративной социальной ответственности сосредоточены на устойчивом развитии, расширении прав и возможностей местных сообществ и этичных деловых практиках."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Russian",
+      "translation": "Годы влияния"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Russian",
+      "translation": "Страны, до которых удалось добраться"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Russian",
+      "translation": "Жизни, затронутые произошедшим"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Russian",
+      "translation": "Наши ключевые инициативы"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Russian",
+      "translation": "Для обеспечения устойчивых изменений и создания общей ценности для всех заинтересованных сторон мы сосредотачиваемся на четырех основных направлениях."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Russian",
+      "translation": "Устойчивое развитие"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Russian",
+      "translation": "Сокращение нашего воздействия на окружающую среду за счет использования возобновляемых источников энергии и сокращения отходов."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Russian",
+      "translation": "Возобновляемая энергия"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Russian",
+      "translation": "Переработанные отходы"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Russian",
+      "translation": "Сокращение выбросов углерода"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Russian",
+      "translation": "Поддержка сообщества"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Russian",
+      "translation": "Расширение возможностей местных сообществ посредством образования, здравоохранения и экономического развития."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Russian",
+      "translation": "Семьи, получающие поддержку"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Russian",
+      "translation": "Активные программы"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Russian",
+      "translation": "Волонтеры"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Russian",
+      "translation": "Образование"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Russian",
+      "translation": "Обеспечение доступа к качественному образованию и стипендиям для учащихся из малообеспеченных семей."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Russian",
+      "translation": "Стипендии"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Russian",
+      "translation": "Школы-партнеры"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Russian",
+      "translation": "Затронутые студенты"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Russian",
+      "translation": "Здоровье и благополучие"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Russian",
+      "translation": "Улучшение доступа к здравоохранению и питанию в регионах с недостаточным уровнем медицинского обслуживания."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Russian",
+      "translation": "Кампании в области здравоохранения"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Russian",
+      "translation": "Люди, которым оказывалась помощь"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Russian",
+      "translation": "Мобильные клиники"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Russian",
+      "translation": "Лучшая инициатива в области корпоративной социальной ответственности"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Russian",
+      "translation": "Мы удостоены награды за наш новаторский подход к социальной ответственности."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Russian",
+      "translation": "Чемпион сообщества"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Russian",
+      "translation": "Награждены за наши масштабные программы взаимодействия с местным сообществом."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Russian",
+      "translation": "Премия «Глобальная устойчивость»"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Russian",
+      "translation": "Нас признали приверженными принципу углеродной нейтральности."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Russian",
+      "translation": "Наше влияние"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Russian",
+      "translation": "Отмечаем наши достижения на пути к созданию лучшего мира."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Russian",
+      "translation": "Присоединяйтесь к нам и измените мир к лучшему!"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Russian",
+      "translation": "Станьте нашим партнером или узнайте больше о том, как мы строим устойчивое будущее."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Russian",
+      "translation": "Свяжитесь с командой по корпоративной социальной ответственности"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Russian",
+      "translation": "Узнать больше"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Russian",
+      "translation": "Свяжитесь с нами"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Russian",
+      "translation": "Мы будем рады получить от вас обратную связь. Свяжитесь с нами любым из указанных способов."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Russian",
+      "translation": "Телефон"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Russian",
+      "translation": "Электронная почта"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Russian",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Russian",
+      "translation": "Позвоните прямо сейчас"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Russian",
+      "translation": "Отправить электронное письмо"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Russian",
+      "translation": "Напишите нам"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Russian",
+      "translation": "Медиацентр"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Russian",
+      "translation": "Медиацентр | Харвикс"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Russian",
+      "translation": "Пресс-ресурсы, фирменные материалы и последние новости от Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Russian",
+      "translation": "Корпоративный"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Russian",
+      "translation": "Новости и пресс-релизы"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Russian",
+      "translation": "Последние объявления, информация о расширении рынка, запуске новых продуктов и корпоративные новости от Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Russian",
+      "translation": "Читайте последние новости"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Russian",
+      "translation": "Галерея изображений"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Russian",
+      "translation": "Высококачественные фирменные материалы, фотографии продукции, изображения объектов и репортажи с мероприятий для использования в СМИ."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Russian",
+      "translation": "Просмотреть галерею"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Russian",
+      "translation": "Контакты для СМИ"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Russian",
+      "translation": "Обращайтесь в нашу коммуникационную команду по вопросам взаимодействия со СМИ, запросам на интервью и объявлениям о партнерстве."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Russian",
+      "translation": "Связаться с пресс-службой"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Russian",
+      "translation": "Охваченные рынки"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Russian",
+      "translation": "Отраслевые вертикали"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Russian",
+      "translation": "Основана в Дубае"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Russian",
+      "translation": "Поддерживаемые языки"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Russian",
+      "translation": "Последние заголовки"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Russian",
+      "translation": "Компания Harvics расширяет свою деятельность в сфере товаров повседневного спроса на 5 новых рынков Юго-Восточной Азии."
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Russian",
+      "translation": "Запущена новая платформа для управления цепочками поставок на основе искусственного интеллекта для глобальной дистрибуции."
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Russian",
+      "translation": "Компания Harvics достигла углеродной нейтральности на всех своих предприятиях."
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Russian",
+      "translation": "Стратегическое партнерство с ведущими производителями текстиля в Южной Азии."
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Russian",
+      "translation": "Дом Харвика"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Russian",
+      "translation": "Наследие совершенства и традиций"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Russian",
+      "translation": "Добро пожаловать в дом Харвика!"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Russian",
+      "translation": "Harvics House – это вершина нашей приверженности качеству и традициям. Здесь мы собрали лучшие образцы нашей продукции премиум-класса, представленные в обстановке, отражающей наши ценности: элегантность, традиции и инновации."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Russian",
+      "translation": "Ознакомьтесь с нашими эксклюзивными коллекциями и узнайте историю каждого продукта, носящего имя Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Russian",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Russian",
+      "translation": "Превосходство в сфере товаров премиум-класса для потребителей с 2019 года."
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Russian",
+      "translation": "Ведущая мировая компания по производству потребительских товаров, поставляющая высококачественные продукты питания в различных категориях, соответствующие международным стандартам качества."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Russian",
+      "translation": "Лондон • Милан • Нью-Йорк"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Russian",
+      "translation": "С 2019 года"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Russian",
+      "translation": "Новости Харвикса"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Russian",
+      "translation": "Подпишитесь, чтобы получать уведомления и обновления."
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Russian",
+      "translation": "Зарегистрироваться"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Russian",
+      "translation": "Проблемы, связанные с соблюдением нормативных требований"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Russian",
+      "translation": "Не стесняйтесь высказывать свои опасения по поводу соблюдения нормативных требований или этических норм."
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Russian",
+      "translation": "Выскажитесь"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Russian",
+      "translation": "Связаться с нами"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Russian",
+      "translation": "Свяжитесь с нашей командой"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Russian",
+      "translation": "Связаться с нами"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Russian",
+      "translation": "Полезные ссылки"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Russian",
+      "translation": "Спросите Харвича"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Russian",
+      "translation": "Поиск работы"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Russian",
+      "translation": "Подпишитесь на новости"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Russian",
+      "translation": "Компания"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Russian",
+      "translation": "Глобальные адреса"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Russian",
+      "translation": "Стратегия"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Russian",
+      "translation": "Наше руководство"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Russian",
+      "translation": "Бренды от А до Я"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Russian",
+      "translation": "Наша история"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Russian",
+      "translation": "Устойчивое развитие"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Russian",
+      "translation": "Новости"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Russian",
+      "translation": "Контакты для СМИ"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Russian",
+      "translation": "Изображения"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Russian",
+      "translation": "Инвесторы"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Russian",
+      "translation": "Корпоративное управление"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Russian",
+      "translation": "Акции, американские депозитарные расписки и облигации"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Russian",
+      "translation": "Публикации"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Russian",
+      "translation": "Подписывайтесь на нас!"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Russian",
+      "translation": "0 выпусков"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Russian",
+      "translation": "Карта сайта"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Russian",
+      "translation": "Отписаться"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Russian",
+      "translation": "Помощь"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Russian",
+      "translation": "Конфиденциальность"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Russian",
+      "translation": "Печенье"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Russian",
+      "translation": "Условия эксплуатации"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Russian",
+      "translation": "Доступность"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Russian",
+      "translation": "Углеродная эффективность"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Russian",
+      "translation": "Поставщики"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Russian",
+      "translation": "Социальные сети"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Russian",
+      "translation": "Настройки файлов cookie"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Russian",
+      "translation": "Премиум качество"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Russian",
+      "translation": "Адрес электронной почты"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Russian",
+      "translation": "Введите свой адрес электронной почты"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Russian",
+      "translation": "Подписаться"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Russian",
+      "translation": "Подписка..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Russian",
+      "translation": "О нас"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Russian",
+      "translation": "СМИ"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Russian",
+      "translation": "Поиск товаров, брендов или категорий"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Russian",
+      "translation": "Результаты не найдены"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Russian",
+      "translation": "Идет поиск..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Russian",
+      "translation": "Результаты"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Russian",
+      "translation": "Пообщайтесь с нами"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Russian",
+      "translation": "Введите ваше сообщение..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Russian",
+      "translation": "Отправлять"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Russian",
+      "translation": "Закрывать"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Russian",
+      "translation": "Здравствуйте! Чем я могу вам сегодня помочь?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Russian",
+      "translation": "Прошу прощения, я не понял. Не могли бы вы перефразировать?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Russian",
+      "translation": "Я могу помочь вам с информацией о товарах, оформлением заказов или ответить на общие вопросы. Что бы вы хотели узнать?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Russian",
+      "translation": "Для получения дополнительной помощи, пожалуйста, свяжитесь с нами по адресу support@harvics.com или позвоните по телефону +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Russian",
+      "translation": "Пообщайтесь с нами"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Russian",
+      "translation": "Загрузка..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Russian",
+      "translation": "Ошибка"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Russian",
+      "translation": "Успех"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Russian",
+      "translation": "Сохранять"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Russian",
+      "translation": "Отмена"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Russian",
+      "translation": "Удалить"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Russian",
+      "translation": "Редактировать"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Russian",
+      "translation": "Вид"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Russian",
+      "translation": "Представлять на рассмотрение"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Russian",
+      "translation": "Поиск"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Russian",
+      "translation": "Фильтр"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Russian",
+      "translation": "Прозрачный"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Russian",
+      "translation": "Скачать"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Russian",
+      "translation": "Загрузить"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Russian",
+      "translation": "Да"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Russian",
+      "translation": "Нет"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Russian",
+      "translation": "Закрывать"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Russian",
+      "translation": "Назад"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Russian",
+      "translation": "Следующий"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Russian",
+      "translation": "Предыдущий"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Russian",
+      "translation": "Действия"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Russian",
+      "translation": "Статус"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Russian",
+      "translation": "Дата"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Russian",
+      "translation": "Имя"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Russian",
+      "translation": "Электронная почта"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Russian",
+      "translation": "Телефон"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Russian",
+      "translation": "Адрес"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Russian",
+      "translation": "Страна"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Russian",
+      "translation": "Город"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Russian",
+      "translation": "Все"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Russian",
+      "translation": "Никто"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Russian",
+      "translation": "Выбирать"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Russian",
+      "translation": "Выберите язык"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Russian",
+      "translation": "Выберите страну"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Russian",
+      "translation": "Показать больше"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Russian",
+      "translation": "Показать меньше"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Russian",
+      "translation": "Необходимый"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Russian",
+      "translation": "Меню"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Russian",
+      "translation": "Просмотреть товары"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Russian",
+      "translation": "Воспроизвести музыку"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Russian",
+      "translation": "Пауза музыки"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Russian",
+      "translation": "Беззвучная музыка"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Russian",
+      "translation": "Отключить звук музыки"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Russian",
+      "translation": "Наш глобальный охват"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Russian",
+      "translation": "С"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Russian",
+      "translation": "Крупный рынок"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Russian",
+      "translation": "Основные рынки"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Russian",
+      "translation": "Присутствие"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Russian",
+      "translation": "Страны обслуживания"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Russian",
+      "translation": "Основные рынки"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Russian",
+      "translation": "Категории товаров"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Russian",
+      "translation": "Учредил"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Russian",
+      "translation": "Территориальная иерархия"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Russian",
+      "translation": "Полный путь"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Russian",
+      "translation": "Текущая территория"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Russian",
+      "translation": "Нет товаров"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Russian",
+      "translation": "Глоб"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Russian",
+      "translation": "Континент"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Russian",
+      "translation": "Область"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Russian",
+      "translation": "Страна"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Russian",
+      "translation": "Город"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Russian",
+      "translation": "Округ"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Russian",
+      "translation": "Расположение"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Russian",
+      "translation": "Harvics Global"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Russian",
+      "translation": "Глобальный"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Russian",
+      "translation": "Выберите регион"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Russian",
+      "translation": "Данные клиента"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Russian",
+      "translation": "Избранные"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Russian",
+      "translation": "Полное имя"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Russian",
+      "translation": "Введите ваше полное имя"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Russian",
+      "translation": "Имя обязательно для указания."
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Russian",
+      "translation": "Адрес электронной почты"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Russian",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Russian",
+      "translation": "Требуется указать адрес электронной почты."
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Russian",
+      "translation": "Пожалуйста, введите действительный адрес электронной почты"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Russian",
+      "translation": "Номер телефона"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Russian",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Russian",
+      "translation": "Номер телефона обязателен"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Russian",
+      "translation": "Адрес"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Russian",
+      "translation": "Ваш адрес"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Russian",
+      "translation": "Адрес обязателен"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Russian",
+      "translation": "Я согласен получать маркетинговые сообщения и обновления."
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Russian",
+      "translation": "Отправить и продолжить"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Russian",
+      "translation": "Отправка..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Russian",
+      "translation": "Пропустить и продолжить"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Russian",
+      "translation": "Ключевые показатели эффективности"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Russian",
+      "translation": "Закажите сегодня"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Russian",
+      "translation": "Отправлено через Harvics CRM"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Russian",
+      "translation": "Ожидаемые поставки"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Russian",
+      "translation": "По назначенным маршрутам"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Russian",
+      "translation": "Розничные торговцы"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Russian",
+      "translation": "Действующие торговые точки в рамках охвата"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Russian",
+      "translation": "Оценка T & A"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Russian",
+      "translation": "Территориальное покрытие"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Russian",
+      "translation": "Финансовые и товарные запасы"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Russian",
+      "translation": "Товаров с низким запасом"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Russian",
+      "translation": "Запуск пополнения"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Russian",
+      "translation": "Неоплаченные счета"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Russian",
+      "translation": "Подлежит сбору"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Russian",
+      "translation": "Кредитный лимит"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Russian",
+      "translation": "Назначено финансовым отделом."
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Russian",
+      "translation": "Включены автоматическое утверждение, пополнение запасов и напоминания об оплате счетов."
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Russian",
+      "translation": "Самоодобрение"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Russian",
+      "translation": "Пополнение запасов"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Russian",
+      "translation": "Напоминания об оплате счетов"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Russian",
+      "translation": "Рекомендации ИИ"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Russian",
+      "translation": "Уровень риска"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Russian",
+      "translation": "На основе использования кредита и истории платежей."
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Russian",
+      "translation": "Рекомендуемый порядок"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Russian",
+      "translation": "Рекомендованные ИИ товары для заказа"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Russian",
+      "translation": "Следующее действие"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Russian",
+      "translation": "Действия и рекомендации"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Russian",
+      "translation": "Жалобы"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Russian",
+      "translation": "Вопросы, возникающие у розничных продавцов и ожидающие решения."
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Russian",
+      "translation": "Сборник игр"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Russian",
+      "translation": "В первую очередь следует отдать приоритет заказам, ожидающим доставки до полудня."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Russian",
+      "translation": "Все нерассмотренные жалобы должны быть закрыты в течение 48 часов."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Russian",
+      "translation": "Запуск пополнения запасов для товаров с низким уровнем запасов (автоматическое создание заказа на покупку)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Russian",
+      "translation": "Территория"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Russian",
+      "translation": "Заказы в этом месяце"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Russian",
+      "translation": "Ожидающие заказы"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Russian",
+      "translation": "Доставленные заказы"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Russian",
+      "translation": "Информация о территории"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Russian",
+      "translation": "Страна"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Russian",
+      "translation": "Город"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Russian",
+      "translation": "Область"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Russian",
+      "translation": "Быстрые действия"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Russian",
+      "translation": "Новый порядок"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Russian",
+      "translation": "Просмотр заказов"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Russian",
+      "translation": "Просмотр счетов-фактур"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Russian",
+      "translation": "Настройки профиля"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Russian",
+      "translation": "Загрузка панели управления..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Russian",
+      "translation": "Ошибка"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Russian",
+      "translation": "Мои заказы"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Russian",
+      "translation": "Идентификатор заказа"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Russian",
+      "translation": "Дата"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Russian",
+      "translation": "Статус"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Russian",
+      "translation": "Предметы"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Russian",
+      "translation": "Общая сумма"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Russian",
+      "translation": "Действия"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Russian",
+      "translation": "Просмотреть подробности"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Russian",
+      "translation": "Статус"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Russian",
+      "translation": "Дата начала"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Russian",
+      "translation": "Дата окончания"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Russian",
+      "translation": "Все статусы"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Russian",
+      "translation": "Очистить фильтры"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Russian",
+      "translation": "В ожидании"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Russian",
+      "translation": "Обработка"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Russian",
+      "translation": "Доставленный"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Russian",
+      "translation": "Отменено"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Russian",
+      "translation": "Заказы не найдены"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Russian",
+      "translation": "Заказы на погрузку..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Russian",
+      "translation": "Страница"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Russian",
+      "translation": "из"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Russian",
+      "translation": "Предыдущий"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Russian",
+      "translation": "Следующий"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Russian",
+      "translation": "Детали заказа"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Russian",
+      "translation": "Вернуться к заказам"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Russian",
+      "translation": "Идентификатор заказа"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Russian",
+      "translation": "Статус"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Russian",
+      "translation": "Дата заказа"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Russian",
+      "translation": "Дата доставки"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Russian",
+      "translation": "Адрес доставки"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Russian",
+      "translation": "Примечания"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Russian",
+      "translation": "Заказ товаров"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Russian",
+      "translation": "Продукт"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Russian",
+      "translation": "Артикул"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Russian",
+      "translation": "Количество"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Russian",
+      "translation": "Цена за единицу товара"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Russian",
+      "translation": "Общий"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Russian",
+      "translation": "Общая сумма"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Russian",
+      "translation": "Хронология событий"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Russian",
+      "translation": "Заказ не найден"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Russian",
+      "translation": "Создать новый заказ"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Russian",
+      "translation": "Заказ товаров"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Russian",
+      "translation": "Добавить товар"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Russian",
+      "translation": "Пока ни одного товара не добавлено. Нажмите «Добавить товар», чтобы начать."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Russian",
+      "translation": "Детали заказа"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Russian",
+      "translation": "Дата доставки"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Russian",
+      "translation": "Адрес доставки"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Russian",
+      "translation": "Примечания"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Russian",
+      "translation": "Общая сумма"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Russian",
+      "translation": "Создать заказ"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Russian",
+      "translation": "Создание заказа..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Russian",
+      "translation": "Отмена"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Russian",
+      "translation": "Выберите товар"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Russian",
+      "translation": "Продукт"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Russian",
+      "translation": "Количество"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Russian",
+      "translation": "Цена за единицу товара"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Russian",
+      "translation": "Удалять"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Russian",
+      "translation": "Итого"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Russian",
+      "translation": "Идентификатор заказа"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Russian",
+      "translation": "Необходимо наличие хотя бы одного товара в заказе."
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Russian",
+      "translation": "Требуется продукт"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Russian",
+      "translation": "Количество должно быть больше 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Russian",
+      "translation": "Цена за единицу товара должна быть неотрицательной."
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Russian",
+      "translation": "Неверный формат даты доставки."
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Russian",
+      "translation": "Дата доставки не может быть в прошлом."
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Russian",
+      "translation": "Мои счета"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Russian",
+      "translation": "Номер счета-фактуры"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Russian",
+      "translation": "Дата выставления счета"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Russian",
+      "translation": "Два свидания"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Russian",
+      "translation": "Количество"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Russian",
+      "translation": "Оплаченная сумма"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Russian",
+      "translation": "Статус платежа"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Russian",
+      "translation": "Статус платежа"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Russian",
+      "translation": "Все статусы"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Russian",
+      "translation": "Очистить фильтры"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Russian",
+      "translation": "Оплаченный"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Russian",
+      "translation": "Неоплачено"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Russian",
+      "translation": "Частичный"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Russian",
+      "translation": "Счета-фактуры не найдены"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Russian",
+      "translation": "Загрузка счетов-фактур..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Russian",
+      "translation": "Мой профиль"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Russian",
+      "translation": "Информация об учетной записи"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Russian",
+      "translation": "Идентификатор дистрибьютора"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Russian",
+      "translation": "Территория"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Russian",
+      "translation": "Страна"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Russian",
+      "translation": "Город"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Russian",
+      "translation": "Учетная запись создана"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Russian",
+      "translation": "Обновить профиль"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Russian",
+      "translation": "Имя"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Russian",
+      "translation": "Электронная почта"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Russian",
+      "translation": "Телефон"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Russian",
+      "translation": "Адрес"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Russian",
+      "translation": "Язык"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Russian",
+      "translation": "Валюта"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Russian",
+      "translation": "Сохранить изменения"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Russian",
+      "translation": "Сохранение..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Russian",
+      "translation": "Профиль успешно обновлен."
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Russian",
+      "translation": "Загрузка профиля..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Russian",
+      "translation": "Неверный формат электронного письма"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Russian",
+      "translation": "Неверный формат телефона"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Russian",
+      "translation": "Ошибка"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Russian",
+      "translation": "Загрузка..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Russian",
+      "translation": "Сохранять"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Russian",
+      "translation": "Отмена"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Russian",
+      "translation": "Назад"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Russian",
+      "translation": "Представлять на рассмотрение"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Russian",
+      "translation": "Удалить"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Russian",
+      "translation": "Редактировать"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Russian",
+      "translation": "Вид"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Russian",
+      "translation": "Поиск"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Russian",
+      "translation": "Фильтр"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Russian",
+      "translation": "Прозрачный"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Russian",
+      "translation": "Применять"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Russian",
+      "translation": "Закрывать"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Russian",
+      "translation": "Подтверждать"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Russian",
+      "translation": "Да"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Russian",
+      "translation": "Нет"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Russian",
+      "translation": "Правовая операционная система"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Russian",
+      "translation": "Легальная ОС"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Russian",
+      "translation": "Доступ запрещен"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Russian",
+      "translation": "У вас нет разрешения на доступ к модулю Legal OS."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Russian",
+      "translation": "Панель управления"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Russian",
+      "translation": "Контракты"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Russian",
+      "translation": "Сертификаты"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Russian",
+      "translation": "Согласие"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Russian",
+      "translation": "Юридическая панель управления"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Russian",
+      "translation": "Обзор правовых операций и состояния соблюдения законодательства."
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Russian",
+      "translation": "Действующие товарные знаки"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Russian",
+      "translation": "Действующие контракты"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Russian",
+      "translation": "Статус соответствия"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Russian",
+      "translation": "Торговые марки"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Russian",
+      "translation": "Управление регистрацией и подачей заявок на товарные знаки."
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Russian",
+      "translation": "Добавить новый товарный знак"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Russian",
+      "translation": "Страна"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Russian",
+      "translation": "Статус"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Russian",
+      "translation": "Все страны"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Russian",
+      "translation": "Все статусы"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Russian",
+      "translation": "Очистить фильтры"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Russian",
+      "translation": "Название бренда"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Russian",
+      "translation": "Сорт"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Russian",
+      "translation": "Страна"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Russian",
+      "translation": "Номер заявки"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Russian",
+      "translation": "Статус"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Russian",
+      "translation": "Дата истечения срока действия"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Russian",
+      "translation": "Действия"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Russian",
+      "translation": "Редактировать товарный знак"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Russian",
+      "translation": "Добавить новый товарный знак"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Russian",
+      "translation": "Просмотреть товарный знак"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Russian",
+      "translation": "Название бренда"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Russian",
+      "translation": "Номер класса"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Russian",
+      "translation": "Страна"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Russian",
+      "translation": "Номер заявки"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Russian",
+      "translation": "Статус"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Russian",
+      "translation": "Дата истечения срока действия"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Russian",
+      "translation": "Документы"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Russian",
+      "translation": "Документы не приложены."
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Russian",
+      "translation": "Добавить документ"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Russian",
+      "translation": "Удалять"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Russian",
+      "translation": "Не удалось загрузить товарные знаки"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Russian",
+      "translation": "Не удалось сохранить товарный знак. Пожалуйста, попробуйте еще раз."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Russian",
+      "translation": "Судебные дела"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Russian",
+      "translation": "Ведение юридических дел и отслеживание их статуса."
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Russian",
+      "translation": "Новое дело"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Russian",
+      "translation": "Название дела"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Russian",
+      "translation": "Тип дела"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Russian",
+      "translation": "Страна"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Russian",
+      "translation": "Описание"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Russian",
+      "translation": "Назначен в"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Russian",
+      "translation": "Статус"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Russian",
+      "translation": "Дата слушания"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Russian",
+      "translation": "Название дела"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Russian",
+      "translation": "Тип"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Russian",
+      "translation": "Страна"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Russian",
+      "translation": "Назначен в"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Russian",
+      "translation": "Статус"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Russian",
+      "translation": "Дата слушания"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Russian",
+      "translation": "Действия"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Russian",
+      "translation": "Открыть"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Russian",
+      "translation": "В ходе выполнения"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Russian",
+      "translation": "Закрыто"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Russian",
+      "translation": "Отменено"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Russian",
+      "translation": "Карта флота"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Russian",
+      "translation": "Отслеживание в режиме реального времени торговых представителей и транспортных средств доставки."
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Russian",
+      "translation": "Действующие сотрудники"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Russian",
+      "translation": "Нет действующих сотрудников."
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Russian",
+      "translation": "Загрузка..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Russian",
+      "translation": "Повтор маршрута"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Russian",
+      "translation": "Сотрудник"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Russian",
+      "translation": "Скорость"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Russian",
+      "translation": "Перезагрузить"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Russian",
+      "translation": "Играть"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Russian",
+      "translation": "Пауза"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Russian",
+      "translation": "баллы"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Russian",
+      "translation": "Данные о маршруте отсутствуют."
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Russian",
+      "translation": "Маршрут загрузки..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Russian",
+      "translation": "Продукция конкурентов"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Russian",
+      "translation": "Отслеживайте информацию о продукции конкурентов."
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Russian",
+      "translation": "Добавить товар"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Russian",
+      "translation": "Добавить продукт конкурента"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Russian",
+      "translation": "Бренд"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Russian",
+      "translation": "Название артикула"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Russian",
+      "translation": "Категория"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Russian",
+      "translation": "Размер"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Russian",
+      "translation": "Цена"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Russian",
+      "translation": "Валюта"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Russian",
+      "translation": "Страна"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Russian",
+      "translation": "Бренд"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Russian",
+      "translation": "Название артикула"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Russian",
+      "translation": "Категория"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Russian",
+      "translation": "Размер"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Russian",
+      "translation": "Цена"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Russian",
+      "translation": "Страна"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Russian",
+      "translation": "Дата добавления"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Russian",
+      "translation": "Не удалось загрузить товары."
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Russian",
+      "translation": "Не удалось создать товар. Пожалуйста, попробуйте еще раз."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Russian",
+      "translation": "Конкурирующих товаров не найдено."
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Russian",
+      "translation": "Загрузка товаров..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Russian",
+      "translation": "Панель мониторинга конкурентов"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Russian",
+      "translation": "Аналитика и информация о продуктах конкурентов."
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Russian",
+      "translation": "Совокупный объем продукции"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Russian",
+      "translation": "Отслеживаемые бренды"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Russian",
+      "translation": "Страны"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Russian",
+      "translation": "Категории"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Russian",
+      "translation": "Товары по брендам"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Russian",
+      "translation": "Товары по странам"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Russian",
+      "translation": "Товары по категориям"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Russian",
+      "translation": "Загрузка статистики..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Russian",
+      "translation": "Статистические данные отсутствуют."
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Russian",
+      "translation": "Обзор"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Russian",
+      "translation": "Заказы"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Russian",
+      "translation": "Инвентаризация"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Russian",
+      "translation": "Логистика"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Russian",
+      "translation": "Финансы"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Russian",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Russian",
+      "translation": "HR"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Russian",
+      "translation": "Исполнительный"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Russian",
+      "translation": "Инвестор"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Russian",
+      "translation": "Юридические вопросы/Права интеллектуальной собственности"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Russian",
+      "translation": "Конкурент"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Russian",
+      "translation": "Импорт/экспорт"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Russian",
+      "translation": "GPS-отслеживание"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Russian",
+      "translation": "Локализация"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Russian",
+      "translation": "Рабочие процессы"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Russian",
+      "translation": "Администратор"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Russian",
+      "translation": "ОС CRM"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Russian",
+      "translation": "Клиент 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Russian",
+      "translation": "Полные профили клиентов, история взаимодействий и управление взаимоотношениями."
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Russian",
+      "translation": "Цифровые кампании"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Russian",
+      "translation": "Многоканальные маркетинговые кампании (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Russian",
+      "translation": "Потенциальные клиенты и возможности"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Russian",
+      "translation": "Управление потенциальными клиентами, их квалификация и формирование кадрового резерва"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Russian",
+      "translation": "Служба поддержки клиентов"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Russian",
+      "translation": "Управление заявками, обслуживание клиентов и решение проблем."
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Russian",
+      "translation": "Программы лояльности"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Russian",
+      "translation": "Управление программами лояльности, геймификацией и вознаграждениями для розничных продавцов"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Russian",
+      "translation": "Клиент 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Russian",
+      "translation": "Новый клиент"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Russian",
+      "translation": "Общее количество клиентов"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Russian",
+      "translation": "Активный"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Russian",
+      "translation": "Новый"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Russian",
+      "translation": "Удовлетворение"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Russian",
+      "translation": "Управление клиентами"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Russian",
+      "translation": "Просматривайте и управляйте своими взаимоотношениями с клиентами, взаимодействиями и кампаниями."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Russian",
+      "translation": "Загрузка..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Russian",
+      "translation": "Ошибка при загрузке данных CRM."
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Russian",
+      "translation": "Обзор"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Russian",
+      "translation": "Заказы"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Russian",
+      "translation": "Инвентаризация"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Russian",
+      "translation": "Логистика"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Russian",
+      "translation": "Финансы"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Russian",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Russian",
+      "translation": "HR"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Russian",
+      "translation": "Исполнительный"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Russian",
+      "translation": "Инвестор"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Russian",
+      "translation": "Юридические вопросы/Права интеллектуальной собственности"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Russian",
+      "translation": "Конкурент"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Russian",
+      "translation": "Импорт/экспорт"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Russian",
+      "translation": "GPS-отслеживание"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Russian",
+      "translation": "Локализация"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Russian",
+      "translation": "Рабочие процессы"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Russian",
+      "translation": "Администратор"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Russian",
+      "translation": "Клиенты"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Russian",
+      "translation": "Сотрудники"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Russian",
+      "translation": "Выгода"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Russian",
+      "translation": "Загрузка кабины поставщика…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Russian",
+      "translation": "Заказы на закупку"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Russian",
+      "translation": "Воспитан в Харвике"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Russian",
+      "translation": "Отгрузки / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Russian",
+      "translation": "Принято на этой неделе"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Russian",
+      "translation": "Созданы счета-фактуры"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Russian",
+      "translation": "Ожидание оплаты"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Russian",
+      "translation": "Ожидающие платежи"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Russian",
+      "translation": "Планируется к выпуску"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Russian",
+      "translation": "Качество / жалобы"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Russian",
+      "translation": "Открытые билеты"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Russian",
+      "translation": "Прогноз (на следующие 4 недели)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Russian",
+      "translation": "ИИ-заполнитель"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Russian",
+      "translation": "Действия поставщика"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Russian",
+      "translation": "Подтвердите предстоящие отгрузки и обновите график приемки товаров."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Russian",
+      "translation": "Проверьте неоплаченные счета и предоставьте платежное поручение."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Russian",
+      "translation": "Разрешите открытые жалобы на качество, предоставив подтверждающие документы отдела контроля качества."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Russian",
+      "translation": "Имя пользователя"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Russian",
+      "translation": "Пароль"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Russian",
+      "translation": "Электронная почта"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Russian",
+      "translation": "Представлять на рассмотрение"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Russian",
+      "translation": "Отмена"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Russian",
+      "translation": "Сохранять"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Russian",
+      "translation": "Удалить"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Russian",
+      "translation": "Поиск"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Russian",
+      "translation": "Фильтр"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Russian",
+      "translation": "Перезагрузить"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Russian",
+      "translation": "Закрывать"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Russian",
+      "translation": "Назад"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Russian",
+      "translation": "Следующий"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Russian",
+      "translation": "Предыдущий"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Russian",
+      "translation": "Подтверждать"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Russian",
+      "translation": "Запомнить меня"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Russian",
+      "translation": "Забыли пароль?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Russian",
+      "translation": "Требуется указать адрес электронной почты."
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Russian",
+      "translation": "Пожалуйста, введите действительный адрес электронной почты"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Russian",
+      "translation": "Продукты"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Russian",
+      "translation": "Какую продукцию предлагает компания Harvics?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Russian",
+      "translation": "Мы предлагаем широкий ассортимент высококачественных продуктов питания, включая кондитерские изделия, напитки, закуски, макаронные изделия, хлебобулочные изделия и замороженные продукты в различных категориях."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Russian",
+      "translation": "Где можно купить продукцию Harvics?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Russian",
+      "translation": "Наша продукция представлена в розничных магазинах более чем в 40 странах мира. Воспользуйтесь нашим поиском магазинов или страницей контактов, чтобы найти ближайшего к вам продавца."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Russian",
+      "translation": "Вы принимаете оптовые заказы?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Russian",
+      "translation": "Да, мы предлагаем скидки на оптовые заказы для предприятий и розничных продавцов. Для получения более подробной информации посетите нашу страницу «Скидки на оптовые заказы»."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Russian",
+      "translation": "Заказы и доставка"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Russian",
+      "translation": "Какие у вас варианты доставки?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Russian",
+      "translation": "Мы предлагаем различные варианты доставки, включая стандартную, экспресс-доставку и международную доставку. Бесплатная доставка предоставляется при заказе на сумму свыше 50 долларов."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Russian",
+      "translation": "Сколько времени занимает доставка?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Russian",
+      "translation": "Сроки доставки зависят от местоположения. Стандартная доставка обычно занимает 5-7 рабочих дней, а экспресс-доставка — 2-3 рабочих дня."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Russian",
+      "translation": "Могу ли я отследить свой заказ?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Russian",
+      "translation": "Да, вы можете отследить свой заказ, используя номер отслеживания, указанный в электронном письме с подтверждением заказа."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Russian",
+      "translation": "Учет и платежи"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Russian",
+      "translation": "Как мне создать учетную запись?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Russian",
+      "translation": "Нажмите на кнопку «Войти» в заголовке и выберите «Создать учетную запись», чтобы зарегистрировать новую учетную запись."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Russian",
+      "translation": "Какие способы оплаты вы принимаете?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Russian",
+      "translation": "Мы принимаем все основные кредитные и дебетовые карты, PayPal, а также банковские переводы для заказов B2B."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Russian",
+      "translation": "Насколько защищена моя платежная информация?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Russian",
+      "translation": "Да, мы используем стандартное для отрасли шифрование для защиты вашей платежной информации."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Russian",
+      "translation": "Возврат и возмещение средств"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Russian",
+      "translation": "Каковы ваши правила возврата товара?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Russian",
+      "translation": "Мы предлагаем 30-дневную политику возврата для нераспакованных товаров в оригинальной упаковке. Для получения разрешения на возврат, пожалуйста, свяжитесь с нашей службой поддержки клиентов."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Russian",
+      "translation": "Как мне запросить возврат средств?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Russian",
+      "translation": "Свяжитесь с нашей службой поддержки клиентов, указав номер вашего заказа и причину возврата. Мы обработаем ваш возврат средств в течение 5-7 рабочих дней."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Russian",
+      "translation": "Остались вопросы?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Russian",
+      "translation": "Наша команда обслуживания клиентов всегда готова помочь."
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Russian",
+      "translation": "Связаться с нами"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Russian",
+      "translation": "Карьера"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Russian",
+      "translation": "Карьера | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Russian",
+      "translation": "Присоединяйтесь к Harvics Global Ventures — изучите возможности в более чем 40 странах мира."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Russian",
+      "translation": "Присоединяйтесь к нам"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Russian",
+      "translation": "Постройте будущее глобальной торговли"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Russian",
+      "translation": "Мы расширяемся более чем в 40 странах. Присоединяйтесь к команде, которая создает операционную систему на базе искусственного интеллекта для глобальной коммерции."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Russian",
+      "translation": "Открытые вакансии"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Russian",
+      "translation": "Страны"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Russian",
+      "translation": "Отраслевые вертикали"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Russian",
+      "translation": "Отделы, осуществляющие набор персонала"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Russian",
+      "translation": "Открытые вакансии по отделам"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Russian",
+      "translation": "Продажи и дистрибуция"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Russian",
+      "translation": "Увеличение выручки на более чем 40 рынках. Управление территорией, работа с ключевыми клиентами, отношения с дистрибьюторами."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Russian",
+      "translation": "Управление цепочками поставок и логистика"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Russian",
+      "translation": "Комплексная цепочка поставок от завода до полки магазина. Управление автопарком, складирование, доставка «последней мили»."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Russian",
+      "translation": "Технологии и ИИ"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Russian",
+      "translation": "Разрабатываем Harvics OS — нашу корпоративную платформу на базе искусственного интеллекта. Полный цикл разработки, машинное обучение, анализ данных."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Russian",
+      "translation": "Финансы и казначейство"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Russian",
+      "translation": "Управление казначейскими операциями в нескольких валютах, торговое финансирование, цифровые платежи HPay, управление валютными операциями в разных регионах."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Russian",
+      "translation": "Закупки и снабжение"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Russian",
+      "translation": "Глобальные закупки из более чем 15 стран-производителей. Аудит поставщиков, контроль качества, программы прямых поставок с заводов."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Russian",
+      "translation": "Человеческие ресурсы"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Russian",
+      "translation": "Подбор персонала, обучение и развитие, управление эффективностью работы в различных географических регионах и культурах."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Russian",
+      "translation": "Правовые вопросы и соблюдение нормативных требований"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Russian",
+      "translation": "Соблюдение торговых правил, проверка на соответствие санкциям, защита интеллектуальной собственности, управление контрактами в разных юрисдикциях."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Russian",
+      "translation": "Маркетинг и бренд"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Russian",
+      "translation": "Многоязычные кампании, контент на 38 языках, цифровой маркетинг, стратегия бренда для 10 вертикалей."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Russian",
+      "translation": "роли"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Russian",
+      "translation": "Почему именно Harvics?"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Russian",
+      "translation": "Глобальная мобильность"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Russian",
+      "translation": "Работа в Дубае, Лондоне, Карачи, Лахоре и более чем 40 городах мира."
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Russian",
+      "translation": "Путь роста"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Russian",
+      "translation": "Ускоренное продвижение по карьерной лестнице в быстрорастущей компании."
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Russian",
+      "translation": "Культура, ориентированная на ИИ"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Russian",
+      "translation": "Работайте с передовыми системами искусственного интеллекта и интеллектуального анализа в реальном времени."
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Russian",
+      "translation": "Конкурентоспособный пакет"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Russian",
+      "translation": "Лидирующие на рынке компенсации, жилье и льготы."
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Russian",
+      "translation": "Бюджет на обучение"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Russian",
+      "translation": "Ежегодный бюджет на разработку курсов, конференций и сертификаций."
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Russian",
+      "translation": "Гибкий график работы"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Russian",
+      "translation": "Гибридные соглашения с региональными представительствами по всему миру."
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Russian",
+      "translation": "Наша стратегия"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Russian",
+      "translation": "Стратегия | Харвич"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Russian",
+      "translation": "Построение устойчивого будущего посредством инноваций и совершенства."
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Russian",
+      "translation": "Построение устойчивого будущего посредством инноваций и совершенства."
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Russian",
+      "translation": "Глобальная экспансия"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Russian",
+      "translation": "Расширение нашего присутствия на развивающихся рынках и укрепление позиций на устоявшихся рынках."
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Russian",
+      "translation": "Инновации в продуктах"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Russian",
+      "translation": "Инвестиции в НИОКР для разработки новых продуктов, отвечающих меняющимся предпочтениям потребителей."
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Russian",
+      "translation": "Устойчивое развитие"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Russian",
+      "translation": "Мы привержены принципам устойчивого развития во всей нашей цепочке поставок и операционной деятельности."
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Russian",
+      "translation": "Цифровая трансформация"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Russian",
+      "translation": "Использование технологий для улучшения качества обслуживания клиентов и повышения операционной эффективности."
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Russian",
+      "translation": "Наше видение"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Russian",
+      "translation": "Стать ведущей мировой компанией по производству потребительских товаров премиум-класса, признанной за качество, инновации и устойчивое развитие."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Russian",
+      "translation": "Harvics Global Ventures | Премиум-торговля на мировом рынке"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Russian",
+      "translation": "Ведущая мировая торговая компания, поставляющая продукцию премиум-класса в более чем 10 отраслях. Работает в более чем 50 странах с 2019 года."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Russian",
+      "translation": "О нас | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Russian",
+      "translation": "Узнайте, как Harvics Global Ventures стала ведущей силой в мировой торговле, охватывающей более 40 стран и 10 отраслей."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Russian",
+      "translation": "Свяжитесь с нами | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Russian",
+      "translation": "Свяжитесь с офисами Harvics по всему миру: на Ближнем Востоке, в Южной Азии, Европе, Африке и Северной и Южной Америке."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Russian",
+      "translation": "Продукция | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Russian",
+      "translation": "Ознакомьтесь с премиальным ассортиментом продукции Harvics в секторах товаров повседневного спроса, текстиля, сырьевых товаров и промышленных решений."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Russian",
+      "translation": "Вакансии | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Russian",
+      "translation": "Присоединяйтесь к Harvics Global Ventures — изучите возможности работы в более чем 40 странах мира в секторах товаров повседневного спроса, текстиля, логистики и технологий."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Russian",
+      "translation": "Медиацентр | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Russian",
+      "translation": "Медиацентр Harvics — пресс-релизы, последние новости, фирменные материалы и контакты для СМИ."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Russian",
+      "translation": "Наша стратегия | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Russian",
+      "translation": "Стратегическое видение компании Harvics в отношении глобального расширения, инноваций, устойчивого развития и цифровой трансформации."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Russian",
+      "translation": "Корпоративная социальная ответственность | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Russian",
+      "translation": "Инициативы Harvics в области корпоративной социальной ответственности — охрана окружающей среды, общественные программы и этические принципы ведения бизнеса."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Russian",
+      "translation": "Часто задаваемые вопросы | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Russian",
+      "translation": "Часто задаваемые вопросы о продукции, услугах, оформлении заказов и деятельности компании Harvics по всему миру."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Russian",
+      "translation": "Глобальные представительства | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Russian",
+      "translation": "Офисы и подразделения Harvics расположены на Ближнем Востоке, в Южной Азии, Европе, Африке и Северной и Южной Америке."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Russian",
+      "translation": "Руководящая команда | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Russian",
+      "translation": "Познакомьтесь с командой руководителей, управляющей Harvics Global Ventures на более чем 40 рынках и в 10 отраслях."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Russian",
+      "translation": "Центр поддержки | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Russian",
+      "translation": "Получите помощь по вопросам заказов, учета, доставки и услуг Harvics."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Russian",
+      "translation": "Соблюдение нормативных требований и этика | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Russian",
+      "translation": "Компания Harvics привержена соблюдению нормативных требований, этическим принципам ведения бизнеса и мировым стандартам."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Russian",
+      "translation": "Наша история | Харвикс"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Russian",
+      "translation": "История компании Harvics: от стартапа в Дубае в 2019 году до глобального предприятия, работающего в более чем 40 странах."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Russian",
+      "translation": "Информационный бюллетень | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Russian",
+      "translation": "Подпишитесь на новостную рассылку Harvics, чтобы получать информацию об отраслевых тенденциях и новинках продукции."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Russian",
+      "translation": "Войти | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Russian",
+      "translation": "Войдите в свою учетную запись Harvics, чтобы управлять заказами и получать доступ к платформе."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Russian",
+      "translation": "Исследования и инновации | Гарвикс"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Russian",
+      "translation": "Научно-исследовательские инициативы и инновационные программы Harvics лежат в основе нашей глобальной стратегии."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Russian",
+      "translation": "Связи с инвесторами | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Russian",
+      "translation": "Информация для инвесторов, финансовые отчеты и корпоративные объявления от Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Russian",
+      "translation": "Страница не найдена"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Russian",
+      "translation": "404 — Страница не найдена"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Russian",
+      "translation": "Страница, которую вы ищете, либо не существует, либо была перемещена."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Russian",
+      "translation": "Перейти на главную страницу"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Russian",
+      "translation": "Возвращаться"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Russian",
+      "translation": "Что-то пошло не так."
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Russian",
+      "translation": "Что-то пошло не так."
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Russian",
+      "translation": "Приносим свои извинения, но произошла непредвиденная ситуация. Пожалуйста, попробуйте обновить страницу."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Russian",
+      "translation": "Попробуйте еще раз"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Russian",
+      "translation": "Обновить страницу"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Russian",
+      "translation": "Связаться со службой поддержки"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Russian",
+      "translation": "Ошибка приложения"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Russian",
+      "translation": "Критическая ошибка"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Russian",
+      "translation": "Произошла критическая ошибка. Пожалуйста, перезагрузите страницу."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Russian",
+      "translation": "Перезагрузить приложение"
+    }
+  }
+}

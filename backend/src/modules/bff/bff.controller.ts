@@ -9,7 +9,8 @@ bffRouter.get('/:persona', (req, res) => {
   }
 
   const { persona } = req.params;
-  const countryCode = req.userScope.countries[0] || 'US';
+  const countries = req.userScope.countries || req.userScope.geographic?.countries || [];
+  const countryCode = countries[0] || 'US';
   const profile = getCountryProfile(countryCode) || getCountryProfile('US');
 
   const base = {
@@ -42,6 +43,23 @@ bffRouter.get('/:persona', (req, res) => {
         recentActivity: [
           { description: 'New order placed', created_at: new Date().toISOString() },
           { description: 'Inventory updated', created_at: new Date(Date.now() - 3600000).toISOString() },
+        ],
+      });
+    case 'company-dashboard':
+    case 'company_admin':
+    case 'admin':
+    case 'hq':
+      return res.json({
+        ...base,
+        kpis: {
+          totalRevenue: 4523000000,
+          totalOrders: 15678,
+          activeDistributors: 234,
+          activeCountries: 45,
+        },
+        recentActivity: [
+          { description: 'New distributor onboarded', created_at: new Date().toISOString() },
+          { description: 'Monthly report generated', created_at: new Date(Date.now() - 3600000).toISOString() },
         ],
       });
     case 'copilot':

@@ -1,0 +1,266 @@
+{
+  "_generated": "2026-03-20",
+  "_total_keys_pending": 29744,
+  "_instructions": "Send each locale file to a translator. When done, run the apply_translations.py script to merge back into src/locales/.",
+  "locales": {
+    "ar": {
+      "language": "Arabic",
+      "direction": "rtl",
+      "status": "pending",
+      "pending_translations": 560,
+      "workbook": "docs/translations/ar.json"
+    },
+    "bg": {
+      "language": "Bulgarian",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/bg.json"
+    },
+    "bn": {
+      "language": "Bengali",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/bn.json"
+    },
+    "cs": {
+      "language": "Czech",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/cs.json"
+    },
+    "da": {
+      "language": "Danish",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/da.json"
+    },
+    "de": {
+      "language": "German",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/de.json"
+    },
+    "el": {
+      "language": "Greek",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/el.json"
+    },
+    "es": {
+      "language": "Spanish",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 484,
+      "workbook": "docs/translations/es.json"
+    },
+    "fa": {
+      "language": "Persian (Farsi)",
+      "direction": "rtl",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/fa.json"
+    },
+    "fi": {
+      "language": "Finnish",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/fi.json"
+    },
+    "fr": {
+      "language": "French",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 684,
+      "workbook": "docs/translations/fr.json"
+    },
+    "he": {
+      "language": "Hebrew",
+      "direction": "rtl",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/he.json"
+    },
+    "hi": {
+      "language": "Hindi",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/hi.json"
+    },
+    "hr": {
+      "language": "Croatian",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/hr.json"
+    },
+    "hu": {
+      "language": "Hungarian",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/hu.json"
+    },
+    "id": {
+      "language": "Indonesian",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/id.json"
+    },
+    "it": {
+      "language": "Italian",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/it.json"
+    },
+    "ja": {
+      "language": "Japanese",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/ja.json"
+    },
+    "ko": {
+      "language": "Korean",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/ko.json"
+    },
+    "ms": {
+      "language": "Malay",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/ms.json"
+    },
+    "nl": {
+      "language": "Dutch",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/nl.json"
+    },
+    "no": {
+      "language": "Norwegian",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/no.json"
+    },
+    "pl": {
+      "language": "Polish",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/pl.json"
+    },
+    "ps": {
+      "language": "Pashto",
+      "direction": "rtl",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/ps.json"
+    },
+    "pt": {
+      "language": "Portuguese",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/pt.json"
+    },
+    "ro": {
+      "language": "Romanian",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/ro.json"
+    },
+    "ru": {
+      "language": "Russian",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/ru.json"
+    },
+    "sk": {
+      "language": "Slovak",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/sk.json"
+    },
+    "sr": {
+      "language": "Serbian",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/sr.json"
+    },
+    "sv": {
+      "language": "Swedish",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/sv.json"
+    },
+    "sw": {
+      "language": "Swahili",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/sw.json"
+    },
+    "th": {
+      "language": "Thai",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/th.json"
+    },
+    "tr": {
+      "language": "Turkish",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/tr.json"
+    },
+    "uk": {
+      "language": "Ukrainian",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/uk.json"
+    },
+    "ur": {
+      "language": "Urdu",
+      "direction": "rtl",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/ur.json"
+    },
+    "vi": {
+      "language": "Vietnamese",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/vi.json"
+    },
+    "zh": {
+      "language": "Chinese (Simplified)",
+      "direction": "ltr",
+      "status": "pending",
+      "pending_translations": 824,
+      "workbook": "docs/translations/zh.json"
+    }
+  }
+}

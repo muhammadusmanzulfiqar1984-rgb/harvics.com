@@ -1114,21 +1114,12 @@ export const getTranslationsHandler = async (req: any, res: any) => {
     });
   } catch (error) {
     console.error('Error fetching translations:', error);
-    // Return English translations as last resort
-    try {
-      const localeTranslations = translations.en || {};
-      return res.json({
-        success: true,
-        locale: 'en',
-        messages: localeTranslations
-      });
-    } catch (fallbackError) {
-      console.error('Fallback error:', fallbackError);
-      return res.status(500).json({
-        success: false,
-        error: 'Failed to fetch translations'
-      });
-    }
+    // Return empty fallback on error
+    return res.status(500).json({
+      success: false,
+      error: 'Failed to fetch translations',
+      messages: {}
+    });
   }
 };
 

@@ -59,7 +59,7 @@ export default function EmployeeLoginForm() {
             value={formData.username}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-3 border border-black300 dark:border-black600 focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white dark:bg-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300"
+            className="w-full px-4 py-3 border border-gray-200 dark:border-black600 focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white dark:bg-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300"
             placeholder={t('form.usernamePlaceholder')}
           />
         </div>
@@ -75,7 +75,7 @@ export default function EmployeeLoginForm() {
             value={formData.password}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-3 border border-black300 dark:border-black600 focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white dark:bg-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300"
+            className="w-full px-4 py-3 border border-gray-200 dark:border-black600 focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white dark:bg-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300"
             placeholder={t('form.passwordPlaceholder')}
           />
         </div>
@@ -84,7 +84,7 @@ export default function EmployeeLoginForm() {
           <label className="flex items-center">
             <input
               type="checkbox"
-              className="w-4 h-4 text-purple-600 bg-white border-black300 rounded focus:ring-purple-500 dark:focus:ring-purple-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-black600"
+              className="w-4 h-4 text-purple-600 bg-white border-gray-200 rounded focus:ring-purple-500 dark:focus:ring-purple-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-black600"
             />
             <span className="ml-2 text-sm text-black dark:text-gray-300">{t('form.rememberMe')}</span>
           </label>

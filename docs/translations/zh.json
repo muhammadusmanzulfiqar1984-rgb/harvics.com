@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "zh",
+    "language": "Chinese (Simplified)",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Chinese (Simplified). Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "欢迎来到"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "哈里奇"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "自2019年以来，我们始终致力于打造卓越的高端消费品。"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "一家领先的全球消费品公司，提供符合国际质量标准的各类优质食品。"
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "探索产品"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "联系我们"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "了解更多"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "自成立以来，我们始终致力于打造卓越的高端消费品。"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "伦敦 • 米兰 • 纽约"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "面包店"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "饮料"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "糖果"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "烹饪"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "冷冻食品"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "面食"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "零食"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "2025年ESG报告"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "伦敦 • 米兰 • 纽约"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "家"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "关于"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "关于我们"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "品牌故事"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "产品"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的产品"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "查看所有产品"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "企业社会责任"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "投资者关系"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "投资者"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "媒体"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "联系我们"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "哈维克之家"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "国家"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "门户"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "登入"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "愿望清单"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "购物车"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "帮助"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "查找门店"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "钱"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "销售量"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "优惠"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "深色模式"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "信用卡"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "M&S奖励信用卡"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "俱乐部奖励"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的信用卡"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "保险"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "房屋保险"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "旅行保险"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "旅行服务"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "旅行资金"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "汇率"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "附加服务"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "储蓄与投资"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "个人贷款"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "财政支持"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "当前销售"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "清除"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "季节性促销"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "特价优惠"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "促销"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "批量订购折扣"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的产品"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "查看所有产品"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的产品类别"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "探索我们精心打造的优质产品系列。"
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "一级：类别"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "第二层级：模块"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "第三层级：KPI筛选"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "第四层级：行动"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "重置导航"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "此类别暂无子类别。"
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "产品"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "子类别"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "面包店"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "新鲜出炉的烘焙食品和糕点。"
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "饮料"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "适合各种场合的清爽饮品。"
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "糖果"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "甜点和美味佳肴。"
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "烹饪"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "厨房必备食材。"
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "冷冻食品"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "方便又美味的冷冻食品。"
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "面食"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "正宗的意大利面品种。"
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "零食"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "美味小吃，随时享用。"
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "关于哈维克斯"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "自2019年以来，我们始终致力于打造卓越的高端消费品。"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的故事"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "Harvics成立于2019年，从一个富有远见的理念发展成为全球领先的高端消费品公司。我们始终坚持对品质的不懈追求和对创新的执着承诺，并以此为基石，不断前行。"
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的业务遍及40多个国家，致力于提供丰富人们生活并树立行业新标杆的产品。从最初的创业到如今的全球布局，我们的价值观始终如一。"
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "成立于2019年"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "40多个国家"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "6条产品线"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "企业社会责任"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "在哈维克，我们致力于为世界带来积极影响。我们的企业社会责任举措侧重于可持续发展、社区赋能和商业道德实践。"
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "多年的影响"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "覆盖国家"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "生命被触动"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的主要举措"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们着重关注四大支柱，以推动可持续变革，并为所有利益相关者创造共享价值。"
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "可持续性"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "通过利用可再生能源和减少浪费来降低我们对环境的影响。"
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "可再生能源"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "废物转移"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "碳减排"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "社区支持"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "通过教育、医疗保健和经济发展赋能当地社区。"
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "支持的家庭"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "活跃项目"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "志愿者"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "教育"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "为贫困学生提供接受优质教育和奖学金的机会。"
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "奖学金"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "合作学校"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "受影响的学生"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "健康与保健"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "改善服务不足地区获得医疗保健和营养的机会。"
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "健康宣传活动"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "服务对象"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "移动诊所"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "最佳企业社会责任倡议"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们因在社会责任方面的创新做法而受到表彰。"
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "社区冠军"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "因我们广泛的社区服务项目而获奖。"
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "全球可持续发展奖"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "因致力于实现碳中和而获得认可。"
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的影响"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "表彰我们在创造更美好世界过程中取得的里程碑式成就。"
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "加入我们，共同改变世界"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "与我们合作或了解更多关于我们如何构建可持续未来的信息。"
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "联系企业社会责任团队"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "了解更多"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "联系我们"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们非常乐意收到您的来信。您可以通过以下任何渠道联系我们。"
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "电话"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "电子邮件"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "立即致电"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "发送电子邮件"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "联系我们"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "媒体中心"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "媒体中心 | 哈维克斯"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "来自 Harvics Global Ventures 的新闻资源、品牌资产和最新消息。"
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "公司的"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "新闻稿"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "来自 Harvics Global Ventures 的最新公告、市场扩张、产品发布和公司动态。"
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "阅读最新消息"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "图片库"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "高分辨率品牌素材、产品摄影、设施图片和活动报道，供媒体使用。"
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "浏览图库"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "媒体联系人"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "如有媒体问询、采访请求或合作公告，请联系我们的宣传团队。"
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "联系新闻团队"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "涵盖市场"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "行业垂直领域"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "成立于迪拜"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "支持的语言"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "近期头条新闻"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "Harvics将快速消费品业务拓展至东南亚5个新市场"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "面向全球分销的新型人工智能供应链平台上线"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "哈维克公司所有设施均实现碳中和里程碑"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "与南亚领先纺织品制造商建立战略合作伙伴关系"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "哈维克之家"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "卓越与传统的传承"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "欢迎来到哈维克之家"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "哈维克之家代表了我们对品质和传承的最高追求。在这里，我们汇聚了精选的优质产品，并以优雅、传统和创新为核心价值观的环境进行展示。"
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "探索我们的独家系列，了解每一件带有 Harvics 标志的产品背后的故事。"
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "哈维克全球风险投资公司"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "自2019年以来，我们始终致力于打造卓越的高端消费品。"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "一家领先的全球消费品公司，提供符合国际质量标准的各类优质食品。"
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "伦敦 • 米兰 • 纽约"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "自2019年以来"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "哈维克新闻"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订阅以接收提醒和更新"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "报名"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "合规性问题"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "如果您对合规或道德方面有任何疑虑，请及时提出。"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "畅所欲言"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "联系我们"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "联系我们的团队"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "联系我们"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "实用链接"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "问问哈里奇"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "搜索职位"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订阅新闻"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "公司"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "全球地址"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "战略"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的领导层"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "品牌 A-Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的历史"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "可持续性"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "消息"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "媒体联系人"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "图片"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "投资者"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "公司治理"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "股票、美国存托凭证和债券"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "出版物"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "关注我们"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "0 个问题"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "网站地图"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "取消订阅"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "帮助"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "隐私"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "曲奇饼"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "使用条款"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "无障碍"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "碳效率"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "供应商"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "社交媒体"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "Cookie 设置"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "优质"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "电子邮件"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "请输入您的电子邮件地址"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订阅"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订阅中……"
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "关于我们"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "媒体"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "搜索产品、品牌或类别"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "未找到结果"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "正在搜索……"
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "结果"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "与我们聊天"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "输入您的留言……"
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "发送"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "关闭"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "您好！今天有什么可以帮到您的吗？"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "抱歉，我没听懂。您能换个说法吗？"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我可以帮您查询产品信息、下单或解答一般性问题。您想了解什么？"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "如需更多帮助，请联系 support@harvics.com 或致电 +1-800-HARVICS。"
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "与我们聊天"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "加载中..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "错误"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "成功"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "节省"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "取消"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "删除"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "编辑"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "看法"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "提交"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "搜索"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "筛选"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "清除"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "下载"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "上传"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "是的"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "不"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "关闭"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "后退"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "下一个"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "以前的"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "行动"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地位"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "日期"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "姓名"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "电子邮件"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "电话"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地址"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "国家"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "城市"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "全部"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "没有任何"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "选择"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "选择语言"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "选择国家/地区"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "显示更多"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "显示更少"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "必需的"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "菜单"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "查看产品"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "奏乐"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "暂停音乐"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "静音音乐"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "取消音乐静音"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的全球影响力"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "自从"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "主要市场"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "主要市场"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "在场"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "服务国家"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "主要市场"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "产品类别"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "已确立的"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "领土等级制度"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "完整路径"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "当前领土"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "无商品"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地球"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "大陆"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地区"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "国家"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "城市"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "区"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地点"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "哈维克全球"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "全球的"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "选择区域"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "客户详情"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "已选"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "姓名"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "请输入您的全名"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "姓名（必填）"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "电子邮件"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "你的邮箱地址@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "必须提供电子邮件地址"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "请输入有效的电子邮件地址"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "电话号码"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "必须提供电话号码"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地址"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "您的地址"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "必须填写地址"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我同意接收营销信息和更新"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "提交并继续"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "正在提交……"
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "跳过并继续"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "关键绩效指标"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "今日订单"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "通过 Harvics CRM 提交"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "待交付"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "在指定路线上"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "零售商"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "活跃的销售点"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "T&A 评分"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "区域覆盖范围"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "财务与库存"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "库存量低的SKU"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "触发补充"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "未结发票"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "到期收款"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "信用额度"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "由财务部门指派"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "已启用自动审批、库存补货和发票提醒功能"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "自我认可"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "库存补充"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "发票提醒"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "人工智能推荐"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "风险等级"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "基于信用额度使用情况和支付历史"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "建议顺序"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "AI推荐的订购SKU"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "下一步行动"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "行动与指导"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "投诉"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "零售商问题待处理"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "剧本"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "优先处理中午前待交付的货物。"
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "48小时内结清所有未决投诉。"
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "触发低库存 SKU 的补货（自动创建采购订单）。"
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "领土"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "本月订单"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "待处理订单"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "已送达订单"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "领土信息"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "国家"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "城市"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地区"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "快速操作"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "新秩序"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "查看订单"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "查看发票"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "个人资料设置"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "正在加载仪表盘..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "错误"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我的订单"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订单号"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "日期"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地位"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "项目"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "总金额"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "行动"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "查看详情"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地位"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "开始日期"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "结束日期"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "所有状态"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "清除筛选条件"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "待办的"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "加工"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "发表"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "取消"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "未找到订单"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "正在加载订单……"
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "页"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "的"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "以前的"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "下一个"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订单详情"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "返回订单页面"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订单号"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地位"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订单日期"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "交货日期"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "收货地址"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "笔记"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订单项目"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "产品"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "数量"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "单价"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "全部的"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "总金额"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "状态时间表"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "未找到订单"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "创建新订单"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订单项目"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "添加项目"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "尚未添加任何商品。点击“添加商品”开始。"
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订单详情"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "交货日期"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "收货地址"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "笔记"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "总金额"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "创建订单"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "创建订单……"
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "取消"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "选择产品"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "产品"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "数量"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "单价"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "消除"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "小计"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订单号"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "至少需要订购一件商品"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "需要该产品"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "数量必须大于 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "单价必须为非负数。"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "无效的交货日期格式"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "交货日期不能是过去的日期。"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我的发票"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "发票号码"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "发票日期"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "两个日期"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "数量"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "已付金额"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "付款状态"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "付款状态"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "所有状态"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "清除筛选条件"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "有薪酬的"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "未付"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "部分的"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "未找到发票"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "正在加载发票……"
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我的个人资料"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "账户信息"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "分销商 ID"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "领土"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "国家"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "城市"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "账户已创建"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "更新个人资料"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "姓名"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "电子邮件"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "电话"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地址"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "语言"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "货币"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "保存更改"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "保存..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "个人资料已成功更新"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "正在加载配置文件..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "电子邮件格式无效"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "无效的电话号码格式"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "错误"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "加载中..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "节省"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "取消"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "后退"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "提交"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "删除"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "编辑"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "看法"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "搜索"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "筛选"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "清除"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "申请"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "关闭"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "确认"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "是的"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "不"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "法律操作系统"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "法律操作系统"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "拒绝访问"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "您没有权限访问 Legal OS 模块。"
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "仪表板"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "合同"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "证书"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "遵守"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "法律信息中心"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "法律运营和合规状况概述"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "有效商标"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "有效合同"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "合规状态"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "商标"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "管理商标注册和申请"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "添加新商标"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "国家"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地位"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "所有国家"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "所有状态"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "清除筛选条件"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "品牌名称"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "班级"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "国家"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "申请编号"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地位"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "到期日"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "行动"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "编辑商标"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "添加新商标"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "查看商标"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "品牌名称"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "班级编号"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "国家"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "申请编号"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地位"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "到期日"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "文件"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "未附带任何文件"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "添加文档"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "消除"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "商标加载失败"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "商标保存失败，请重试。"
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "法律案件"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "管理法律案件并跟踪其状态"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "新案例"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "案件标题"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "案例类型"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "国家"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "描述"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "分配给"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地位"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "听证日期"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "案件标题"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "类型"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "国家"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "分配给"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "地位"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "听证日期"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "行动"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "打开"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "进行中"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "关闭"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "取消"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "舰队地图视图"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "实时追踪销售人员和送货车辆"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "在职员工"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "目前没有在职员工"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "加载中..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "路线重放"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "员工"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "速度"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "重置"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "玩"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "暂停"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "积分"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "暂无路线数据"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "正在加载路线..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "竞争对手产品"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "追踪竞争对手的产品信息"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "添加产品"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "添加竞品"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "品牌"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "SKU名称"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "类别"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "尺寸"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "价格"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "货币"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "国家"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "品牌"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "SKU名称"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "类别"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "尺寸"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "价格"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "国家"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "添加日期"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "产品加载失败"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "产品创建失败，请重试。"
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "未发现竞品"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "正在加载产品..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "竞争对手仪表盘"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "对竞争对手产品的分析和洞察"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "总产品"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "追踪的品牌"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "国家"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "类别"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "按品牌分类的产品"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "按国家/地区划分的产品"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "按类别浏览产品"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "正在加载统计信息……"
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "暂无统计数据"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "概述"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订单"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "存货"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "后勤"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "金融"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "客户关系管理"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "人力资源"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "管理人员"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "投资者"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "法律/知识产权"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "竞争者"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "进出口"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "GPS追踪"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "本土化"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "工作流程"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "行政"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "CRM操作系统"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "客户360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "完整的客户资料、互动历史记录和关系管理"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "数字营销活动"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "多渠道营销活动（Instagram、Facebook、TikTok、WhatsApp）"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "销售线索和商机"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "线索管理、资格审查和商机渠道"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "客户支持"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "票务管理、客户服务和问题解决"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "会员忠诚计划"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "零售商忠诚度、游戏化和奖励管理"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "客户360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "新客户"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "客户总数"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "积极的"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "新的"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "满意"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "客户管理"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "查看和管理您的客户关系、互动和营销活动。"
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "加载中..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "加载 CRM 数据时出错"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "概述"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订单"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "存货"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "后勤"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "金融"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "客户关系管理"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "人力资源"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "管理人员"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "投资者"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "法律/知识产权"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "竞争者"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "进出口"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "GPS追踪"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "本土化"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "工作流程"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "行政"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "顾客"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "雇员"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "利润"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "正在加载供应商驾驶舱…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "采购订单"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "由哈维克斯抚养长大"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "发货/GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "本周已接受"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "已创建的发票"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "等待付款"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "待付款"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "计划发布"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "质量/投诉"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "开放门票"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "预测（未来 4 周）"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "AI占位符"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "供应商行动"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "确认即将发货的货物并更新GRN计划。"
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "审核未结发票并分享付款建议。"
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "用质量保证证据解决未决的质量投诉。"
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "用户名"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "密码"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "电子邮件"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "提交"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "取消"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "节省"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "删除"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "搜索"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "筛选"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "重置"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "关闭"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "后退"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "下一个"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "以前的"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "确认"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "记住账号"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "忘记密码？"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "必须提供电子邮件地址"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "请输入有效的电子邮件地址"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "产品"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "Harvics提供哪些产品？"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们提供种类繁多的优质食品，包括糖果、饮料、零食、意大利面、烘焙食品和冷冻食品等，涵盖多个类别。"
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "哪里可以买到Harvics的产品？"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的产品在40多个国家的零售店均有销售。请使用我们的门店定位器或联系页面查找您附近的零售商。"
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "你们提供批量订购吗？"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "是的，我们为企业和零售商提供批量订购折扣。请访问我们的批量订购折扣页面了解更多信息。"
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订单与配送"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "你们有哪些配送方式？"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们提供多种配送方式，包括标准配送、快递配送和国际配送。订单满 50 美元即可享受免运费。"
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "配送需要多长时间？"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "配送时间因地点而异。标准配送通常需要 5-7 个工作日，而加急配送需要 2-3 个工作日。"
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我可以追踪我的订单吗？"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "是的，您可以使用订单确认邮件中提供的追踪号码追踪您的订单。"
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "账户与支付"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "如何创建账户？"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "点击标题栏中的“登录”，然后选择“创建账户”注册新账户。"
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "你们接受哪些付款方式？"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们接受所有主流信用卡、借记卡、PayPal 和银行转账进行 B2B 订单付款。"
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我的支付信息安全吗？"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "是的，我们采用行业标准的加密技术来保护您的支付信息。"
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "退货与退款"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "你们的退货政策是什么？"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们为未开封且包装完好的产品提供 30 天退货政策。请联系我们的客服获取退货授权。"
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我该如何申请退款？"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "请联系我们的客服团队，并提供您的订单号和退货原因。我们将在 5-7 个工作日内处理您的退款。"
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "还有其他问题吗？"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的客服团队随时为您提供帮助。"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "联系我们"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "职业生涯"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "职业发展 | 哈维克斯"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "加入 Harvics Global Ventures — 探索遍布 40 多个国家的机遇。"
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "加入我们"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "构建全球贸易的未来"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的业务遍及40多个国家。加入我们，共同打造面向全球商业的AI驱动型操作系统。"
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "招聘职位"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "国家"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "行业垂直领域"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "招聘部门"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "各部门空缺职位"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "销售与分销"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "负责40多个市场的营收增长。包括区域管理、重点客户维护和分销商关系维护。"
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "供应链与物流"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "从工厂到货架的端到端供应链。车队管理、仓储、最后一公里配送。"
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "技术与人工智能"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "构建 Harvics OS——我们基于人工智能的企业平台。涵盖全栈开发、机器学习工程和数据科学。"
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "财务与资金管理"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "多币种资金管理、贸易融资、HPay 数字支付、跨区域外汇管理。"
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "采购与寻源"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "全球采购，涵盖15个以上原产国。供应商审核、质量控制、厂家直销项目。"
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "人力资源"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "跨地域和文化的人才招聘、学习与发展、绩效管理。"
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "法律与合规"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "贸易合规、制裁筛查、知识产权保护、跨司法管辖区的合同管理。"
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "市场营销与品牌"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "多语言营销活动、38 个地区的内容、数字营销、10 个垂直领域的品牌战略。"
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "角色"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "为什么选择哈维克斯？"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "全球流动性"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "工作地点涵盖迪拜、伦敦、卡拉奇、拉合尔以及其他 40 多个市场"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "成长之路"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "在快速发展的企业中获得快速职业晋升机会"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "人工智能优先文化"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "使用尖端人工智能和实时智能系统"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "具有竞争力的薪酬待遇"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "行业领先的薪酬、住房和福利"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "学习预算"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "课程、会议和认证的年度发展预算"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "灵活工作"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "与全球区域中心办事处合作的混合模式"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的策略"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "战略 | 哈里奇"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "通过创新和卓越构建可持续的未来"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "通过创新和卓越构建可持续的未来"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "全球扩张"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "在扩大我们在新兴市场的业务的同时，巩固我们在成熟市场的地位"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "产品创新"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "投资研发，开发满足不断变化的消费者偏好的新产品"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "可持续性"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们致力于在整个供应链和运营过程中践行可持续发展理念。"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "数字化转型"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "利用技术提升客户体验和运营效率"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的愿景"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "成为世界领先的高端消费品公司，以品质、创新和可持续发展而闻名。"
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "哈维克全球风险投资公司 | 高端全球交易"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "领先的全球贸易公司，为10多个行业提供优质产品。自2019年以来，业务遍及50多个国家。"
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "关于我们 | 哈维克斯全球风险投资公司"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "了解 Harvics Global Ventures 如何成为 40 多个国家和 10 个行业的全球贸易领军力量。"
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "联系我们 | 哈维克斯全球风险投资公司"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "联系 Harvics 在中东、南亚、欧洲、非洲和美洲的全球办事处。"
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "产品 | 哈维克全球风险投资公司"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "探索 Harvics 的优质产品系列，涵盖快速消费品、纺织品、大宗商品和工业解决方案。"
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "职业发展 | 哈维克全球风险投资公司"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "加入 Harvics Global Ventures — 探索 40 多个国家/地区的快速消费品、纺织品、物流和技术领域的机遇。"
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "媒体中心 | 哈维克全球风险投资公司"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "Harvics 媒体中心——新闻稿、最新消息、品牌资产和媒体联系方式。"
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的战略 | 哈维克全球风险投资公司"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "Harvics 的全球扩张、创新、可持续发展和数字化转型战略愿景。"
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "企业社会责任 | 哈维克"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "Harvics 的企业社会责任举措——环境管理、社区项目和道德商业实践。"
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "常见问题解答 | 哈维克全球风险投资公司"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "关于 Harvics 产品、服务、订购和全球运营的常见问题。"
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "全球位置 | 哈维克斯"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "Harvics 在中东、南亚、欧洲、非洲和美洲均设有办事处和运营机构。"
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "领导团队 | 哈维克斯"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "认识一下领导 Harvics Global Ventures 在 40 多个市场和 10 个行业垂直领域开展业务的领导团队。"
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "帮助中心 | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "获取有关订单、账户、运输和 Harvics 服务的帮助。"
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "合规与道德 | 哈维克斯"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "Harvics 致力于遵守监管规定、恪守商业道德并遵循全球标准。"
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "我们的历史 | 哈维克斯"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "从 2019 年迪拜的一家初创公司发展成为业务遍及 40 多个国家的全球企业——Harvics 的故事。"
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "新闻简报 | 哈维克斯"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "订阅 Harvics 新闻简报，获取行业洞察和产品发布信息。"
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "登录 | 哈维克斯"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "登录您的 Harvics 账户以管理订单并访问平台。"
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "研究与创新 | 哈维克斯"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "Harvics 的研究计划和创新项目推动着我们的全球战略。"
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "投资者关系 | 哈维克斯"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "来自 Harvics Global Ventures 的投资者信息、财务报告和公司公告。"
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "页面未找到"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "404 — 页面未找到"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "您要查找的页面不存在或已被移动。"
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "返回首页"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "回去"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "出问题了"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "出问题了"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "抱歉，发生了一些意外情况。请尝试刷新页面。"
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "重试"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "重新加载页面"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "联系客服"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "应用程序错误"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "严重错误"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "发生严重错误，请重新加载页面。"
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Chinese (Simplified)",
+      "translation": "重新加载应用程序"
+    }
+  }
+}

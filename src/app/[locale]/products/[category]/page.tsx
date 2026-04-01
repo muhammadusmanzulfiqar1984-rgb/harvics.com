@@ -50,7 +50,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const categories = getFolderBasedCategories() || []
   
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       
       <div className="pt-20">
         <ProductCategoryClient

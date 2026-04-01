@@ -1,624 +1,1146 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
-    "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More"
+    "welcome": "Tervetuloa",
+    "companyName": "Harwich",
+    "tagline": "Huippuosaamista premium-kulutustavaroissa vuodesta 2019 lähtien",
+    "exploreProducts": "Tutustu tuotteisiin",
+    "contact": "Ota yhteyttä",
+    "learnMore": "Lue lisää",
+    "brandStatement": "Johtava maailmanlaajuinen kulutustavarayritys, joka toimittaa korkealaatuisia elintarvikkeita eri kategorioihin kansainvälisten laatustandardien mukaisesti.",
+    "taglineStart": "Huippuosaamista premium-kulutustavaroissa vuodesta",
+    "taglineYear": "2019",
+    "locations": "Lontoo • Milano • New York",
+    "categories": {
+      "bakery": "Leipomo",
+      "beverages": "Juomat",
+      "confectionery": "Makeiset",
+      "culinary": "Kulinaarinen",
+      "frozenFoods": "Pakastetut ruoat",
+      "pasta": "Pasta",
+      "snacks": "Välipalat"
+    }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
-    "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
+    "esgReport": "ESG-raportti 2025",
+    "locations": "Lontoo • Milano • New York",
+    "home": "Kotiin",
+    "about": "Noin",
+    "aboutUs": "Tietoa meistä",
+    "brandStory": "Bränditarina",
+    "products": "Tuotteet",
+    "ourProducts": "Tuotteemme",
+    "viewAllProducts": "Näytä kaikki tuotteet",
+    "csr": "Yritysten yhteiskuntavastuu",
+    "investorRelations": "Sijoittajasuhteet",
+    "investors": "Sijoittajat",
     "media": "Media",
-    "contactUs": "Contact Us",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store"
+    "contactUs": "Ota yhteyttä",
+    "countries": "Maat",
+    "portals": "Portaalit",
+    "signIn": "Kirjaudu sisään",
+    "wishlist": "Toivelista",
+    "cart": "Ostoskori",
+    "help": "Auttaa",
+    "findStore": "Etsi myymälä",
+    "harvicsHouse": "Harvicsin talo",
+    "money": "Raha",
+    "sales": "Myynti",
+    "offers": "Tarjoukset",
+    "darkMode": "Tumma tila",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "Luottokortti",
+        "msRewards": "M&S Rewards -luottokortti",
+        "clubRewards": "Klubipalkinnot",
+        "ourCards": "Luottokorttimme"
+      },
+      "insurance": {
+        "title": "Vakuutus",
+        "home": "Kotivakuutus",
+        "travel": "Matkavakuutus"
+      },
+      "travel": {
+        "title": "Matkapalvelut",
+        "money": "Matkarahat",
+        "exchange": "Valuuttakurssit"
+      },
+      "additional": {
+        "title": "Lisäpalvelut",
+        "savings": "Säästöt ja sijoittaminen",
+        "personalLoans": "Henkilökohtaiset lainat",
+        "financialSupport": "Taloudellinen tuki"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "Nykyinen myynti",
+      "clearance": "Puhdistus",
+      "seasonal": "Kausimyynnit"
+    },
+    "offersDropdown": {
+      "specialOffers": "Erikoistarjoukset",
+      "promotions": "Kampanjat",
+      "bulkOrders": "Irtotilausalennukset"
+    }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products"
+    "ourProducts": "Tuotteemme",
+    "viewAllProducts": "Näytä kaikki tuotteet",
+    "productCategories": "Tuotekategoriamme",
+    "discoverPremium": "Tutustu premium-tuotevalikoimaamme, joka on valmistettu huolella ja erinomaisuudella.",
+    "tier1": "Taso 1: Luokat",
+    "tier2": "Taso 2: Moduulit",
+    "tier3": "Taso 3: KPI-näytöt",
+    "tier4": "Taso 4: Toiminnot",
+    "reset": "Palauta navigointi",
+    "noSubcategories": "Tälle kategorialle ei ole saatavilla alakategorioita.",
+    "pageTitle": "Tuotteet",
+    "subcategories": "Alaluokat",
+    "bakery": "Leipomo",
+    "bakeryDesc": "Tuoreita leivonnaisia ja leivonnaisia.",
+    "beverages": "Juomat",
+    "beveragesDesc": "Virkistäviä juomia jokaiseen tilaisuuteen.",
+    "confectionery": "Makeiset",
+    "confectioneryDesc": "Makeita herkkuja ja herkkuja.",
+    "culinary": "Kulinaarinen",
+    "culinaryDesc": "Keittiösi välttämättömät ainekset.",
+    "frozenFoods": "Pakastetut ruoat",
+    "frozenFoodsDesc": "Käteviä ja herkullisia pakasteaterioita.",
+    "pasta": "Pasta",
+    "pastaDesc": "Aitoja pastalajikkeita.",
+    "snacks": "Välipalat",
+    "snacksDesc": "Herkullisia välipaloja mihin tahansa aikaan päivästä."
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
-    "email": "Email",
+    "title": "Ota yhteyttä",
+    "subtitle": "Kuulisimme mielellämme sinusta. Ota meihin yhteyttä jonkin näistä kanavista kautta.",
+    "phone": "Puhelin",
+    "email": "Sähköposti",
     "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "callNow": "Soita nyt",
+    "sendEmail": "Lähetä sähköpostia",
+    "messageUs": "Lähetä meille viesti"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "Mediakeskus",
+    "pageTitle": "Mediakeskus | Harvics",
+    "description": "Lehdistöresursseja, brändiresursseja ja uusimpia uutisia Harvics Global Venturesilta.",
+    "corporate": "Yritys",
+    "sections": {
+      "news": {
+        "title": "Uutiset ja lehdistötiedotteet",
+        "desc": "Harvics Global Venturesin uusimmat tiedotteet, markkinalaajennukset, tuotelanseeraukset ja yrityspäivitykset.",
+        "cta": "Lue uusimmat uutiset"
+      },
+      "gallery": {
+        "title": "Kuvagalleria",
+        "desc": "Korkean resoluution brändimateriaalit, tuotekuvat, tilakuvat ja tapahtumajulkaisut mediakäyttöön.",
+        "cta": "Selaa galleriaa"
+      },
+      "contacts": {
+        "title": "Median yhteystiedot",
+        "desc": "Ota yhteyttä viestintätiimiimme lehdistötiedusteluja, haastattelupyyntöjä ja kumppanuusilmoituksia varten.",
+        "cta": "Ota yhteyttä lehdistötiimiin"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "Katetut markkinat",
+      "industryVerticals": "Toimialat",
+      "foundedIn": "Perustettu Dubaissa",
+      "languagesSupported": "Tuetut kielet"
+    },
+    "recentHeadlines": "Viimeaikaiset otsikot",
+    "headlines": {
+      "expansion": "Harvics laajentaa päivittäistavarakauppatoimintaansa viidelle uudelle Kaakkois-Aasian markkinalle",
+      "aiPlatform": "Uusi tekoälyllä toimiva toimitusketjualusta lanseerattu globaaliin jakeluun",
+      "carbonNeutral": "Harvics saavutti hiilineutraalin virstanpylvään kaikissa toimipisteissään",
+      "partnership": "Strateginen kumppanuus Etelä-Aasian johtavien tekstiilivalmistajien kanssa"
+    }
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
-    "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
-    "contactUsButton": "Contact Us",
-    "usefulLinks": "Useful Links",
-    "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
-    "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
-    "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
-    "privacy": "Privacy",
-    "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
+    "tagline": "Huippuosaamista premium-kulutustavaroissa vuodesta 2019 lähtien",
+    "brandStatement": "Johtava maailmanlaajuinen kulutustavarayritys, joka toimittaa korkealaatuisia elintarvikkeita eri kategorioihin kansainvälisten laatustandardien mukaisesti.",
+    "locations": "Lontoo • Milano • New York",
+    "since": "Vuodesta 2019 lähtien",
+    "harvicsNews": "Harvics-uutiset",
+    "subscribeToAlerts": "Tilaa saadaksesi ilmoituksia ja päivityksiä",
+    "signUp": "Rekisteröidy",
+    "complianceConcerns": "Vaatimustenmukaisuuteen liittyvät huolenaiheet",
+    "speakUp": "Ota yhteyttä, jos sinulla on huolenaiheita vaatimustenmukaisuudesta tai etiikasta",
+    "speakUpButton": "Puhu ääneen",
+    "contactUs": "Ota yhteyttä",
+    "contactDescription": "Ota yhteyttä tiimiimme",
+    "contactUsButton": "Ota yhteyttä",
+    "usefulLinks": "Hyödyllisiä linkkejä",
+    "askHarvics": "Kysy Harwichilta",
+    "searchForJobs": "Hae työpaikkoja",
+    "signUpForNews": "Rekisteröidy uutisiin",
+    "company": "Yritys",
+    "globalAddresses": "Globaalit osoitteet",
+    "strategy": "Strategia",
+    "ourLeadership": "Johtajuutemme",
+    "brandsAZ": "Tuotemerkit A-Ö",
+    "ourHistory": "Historiamme",
+    "sustainability": "Kestävä kehitys",
+    "news": "Uutiset",
+    "mediaContacts": "Median yhteystiedot",
+    "images": "Kuvat",
+    "investors": "Sijoittajat",
+    "corporateGovernance": "Yrityshallinto",
+    "sharesAdrsBonds": "Osakkeet, ADR:t ja joukkovelkakirjat",
+    "publications": "Julkaisut",
+    "followUsOn": "Seuraa meitä",
+    "issuesCount": "0 numeroa",
+    "siteMap": "Sivukartta",
+    "unsubscribe": "Peruuta tilaus",
+    "help": "Auttaa",
+    "privacy": "Tietosuoja",
+    "cookies": "Evästeet",
+    "termsOfUse": "Käyttöehdot",
+    "accessibility": "Esteettömyys",
+    "carbonEfficiency": "Hiilidioksiditehokkuus",
+    "suppliers": "Toimittajat",
+    "socialMedia": "Sosiaalinen media",
+    "cookieSettings": "Evästeasetukset",
     "feature1Title": "Global Reach",
     "feature1Desc": "Serving customers across 40+ countries worldwide",
-    "feature2Title": "Premium Quality",
+    "feature2Title": "Ensiluokkainen laatu",
     "feature2Desc": "International quality standards in every product",
     "feature3Title": "Innovation",
     "feature3Desc": "Leading innovation in consumer goods industry",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
+    "emailAddress": "Sähköpostiosoite",
+    "enterEmailPlaceholder": "Anna sähköpostiosoitteesi",
+    "subscribe": "Tilaa",
+    "subscribing": "Tilataan...",
+    "aboutUs": "Tietoa meistä",
     "media": "Media"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "Hae tuotteita, tuotemerkkejä tai luokkia",
+    "noResults": "Ei tuloksia",
+    "searching": "Haetaan...",
+    "results": "Tulokset"
   },
   "chatbot": {
-    "title": "Chat with Us",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "title": "Keskustele kanssamme",
+    "placeholder": "Kirjoita viestisi...",
+    "send": "Lähetä",
+    "close": "Lähellä",
+    "welcome": "Hei! Kuinka voin auttaa sinua tänään?",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "Anteeksi, en ymmärtänyt. Voisitko muotoilla asian uudelleen?",
+      "help": "Voin auttaa sinua tuotetietojen, tilausten tai yleisten tiedustelujen kanssa. Mitä haluaisit tietää?",
+      "contact": "Jos tarvitset lisätietoja, ota meihin yhteyttä osoitteessa support@harvics.com tai soita numeroon +1-800-HARVICS."
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
-    "filter": "Filter",
-    "clear": "Clear",
-    "download": "Download",
-    "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
+    "chatWithUs": "Keskustele kanssamme",
+    "loading": "Ladataan...",
+    "error": "Virhe",
+    "success": "Menestys",
+    "save": "Tallentaa",
+    "cancel": "Peruuttaa",
+    "delete": "Poistaa",
+    "edit": "Muokata",
+    "view": "Näytä",
+    "submit": "Lähetä",
+    "search": "Haku",
+    "filter": "Suodattaa",
+    "clear": "Tyhjennä",
+    "download": "Lataa",
+    "upload": "Lataa",
+    "yes": "Kyllä",
+    "no": "Ei",
+    "close": "Lähellä",
+    "back": "Takaisin",
+    "next": "Seuraava",
+    "previous": "Edellinen",
+    "actions": "Toiminnot",
     "status": "Status",
-    "date": "Date",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
-    "selectCountry": "Select Country",
-    "required": "Required",
-    "menu": "Menu",
-    "viewProducts": "View Products"
+    "date": "Päivämäärä",
+    "name": "Nimi",
+    "email": "Sähköposti",
+    "phone": "Puhelin",
+    "address": "Osoite",
+    "country": "Maa",
+    "city": "Kaupunki",
+    "all": "Kaikki",
+    "none": "Ei mitään",
+    "select": "Valitse",
+    "selectCountry": "Valitse maa",
+    "required": "Pakollinen",
+    "menu": "Valikko",
+    "viewProducts": "Näytä tuotteet",
+    "selectLanguage": "Valitse kieli",
+    "showMore": "Näytä lisää",
+    "showLess": "Näytä vähemmän"
   },
   "music": {
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "Soita musiikkia",
+    "pause": "Tauko Musiikki",
+    "mute": "Mykistä musiikki",
+    "unmute": "Poista musiikin mykistys"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "Maailmanlaajuinen ulottuvuutemme",
+    "since": "Koska",
+    "majorMarket": "Suuret markkinat",
+    "majorMarkets": "Suuret markkinat",
+    "presence": "Läsnäolo",
+    "countriesServed": "Maat, joissa toimitaan",
+    "majorMarketsCount": "Suuret markkinat",
+    "productCategoriesCount": "Tuotekategoriat",
+    "establishedYear": "Vakiintunut"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "Aluehierarkia",
+    "fullPath": "Koko polku",
+    "currentTerritory": "Nykyinen alue",
+    "noChildren": "Ei kohteita",
     "tiers": {
-      "globe": "Globe",
-      "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
-      "district": "District",
-      "location": "Location"
+      "globe": "Maapallo",
+      "continent": "maanosa",
+      "region": "Alue",
+      "country": "Maa",
+      "city": "Kaupunki",
+      "district": "Alue",
+      "location": "Sijainti"
     }
   },
   "globalWorld": {
     "title": "Harvics Global",
-    "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "titleShort": "Globaali",
+    "selectRegion": "Valitse alue",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
-      "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
+      "title": "Asiakkaan tiedot",
+      "selected": "Valittu",
+      "fullName": "Koko nimi",
+      "namePlaceholder": "Anna koko nimesi",
+      "nameRequired": "Nimi on pakollinen",
+      "email": "Sähköpostiosoite",
+      "emailPlaceholder": "sähköpostiosoitteesi@esimerkki.com",
+      "emailRequired": "Sähköpostiosoite vaaditaan",
+      "emailInvalid": "Anna kelvollinen sähköpostiosoite",
+      "phone": "Puhelinnumero",
       "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "phoneRequired": "Puhelinnumero vaaditaan",
+      "address": "Osoite",
+      "addressPlaceholder": "Osoitteesi",
+      "addressRequired": "Osoite vaaditaan",
+      "marketingConsent": "Hyväksyn markkinointiviestien ja päivitysten vastaanottamisen",
+      "submit": "Lähetä ja jatka",
+      "submitting": "Lähetetään...",
+      "skip": "Ohita ja jatka"
     }
   },
   "distributorPortal": {
     "dashboard": {
       "kpi": {
-        "title": "Key Performance Indicators",
-        "ordersToday": "Orders today",
-        "ordersTodaySubtitle": "Submitted via Harvics CRM",
-        "pendingDeliveries": "Pending deliveries",
-        "pendingDeliveriesSubtitle": "Across assigned routes",
-        "retailers": "Retailers",
-        "retailersSubtitle": "Active outlets in scope",
-        "attendance": "T & A Score",
-        "attendanceSubtitle": "Territory coverage"
+        "title": "Keskeiset suorituskykyindikaattorit",
+        "ordersToday": "Tilaukset tänään",
+        "ordersTodaySubtitle": "Lähetetty Harvics CRM:n kautta",
+        "pendingDeliveries": "Odottavat toimitukset",
+        "pendingDeliveriesSubtitle": "Määrättyjen reittien yli",
+        "retailers": "Jälleenmyyjät",
+        "retailersSubtitle": "Aktiiviset myyntipisteet kuuluvuusalueella",
+        "attendance": "T & A-pisteet",
+        "attendanceSubtitle": "Alueellinen kattavuus"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "Talous ja varasto",
+        "lowStock": "Vähävarastoiset tuotenumerot",
+        "lowStockSubtitle": "Liipaisintä täydennystä",
+        "outstandingInvoices": "Maksamattomat laskut",
+        "outstandingInvoicesSubtitle": "Noudettavaksi erääntyy",
+        "creditLimit": "Luottoraja",
+        "creditLimitSubtitle": "Rahoituslaitoksen määräämä"
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "Automaattinen hyväksyntä, varaston täydennys ja laskumuistutukset käytössä",
+        "autoApproval": "Itsehyväksyntä",
+        "stockReplenishment": "Varaston täydennys",
+        "invoiceReminders": "Laskumuistutukset"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "Tekoälyn suositukset",
+        "riskLevel": "Riskitaso",
+        "riskDescription": "Luoton käytön ja maksuhistorian perusteella",
+        "suggestedOrder": "Ehdotettu järjestys",
+        "suggestedOrderSubtitle": "Tekoälyn suosittelemat tilattavat tuotenumerot",
+        "nextAction": "Seuraava toiminto"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "Toimenpiteet ja ohjeet",
+        "complaints": "Valitukset",
+        "complaintsSubtitle": "Jälleenmyyjän ongelmat odottavat toimia",
+        "playbook": "Pelikirja",
+        "playbookItem1": "Priorisoi ennen puoltapäivää odottavat toimitukset.",
+        "playbookItem2": "Sulje kaikki avoimet valitukset 48 tunnin kuluessa.",
+        "playbookItem3": "Käynnistä täydennys vähävaraisille SKU-tuotteille (luo ostotilaus automaattisesti)."
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "Alue",
+      "ordersThisMonth": "Tilaukset tässä kuussa",
+      "pendingOrders": "Odottavat tilaukset",
+      "deliveredOrders": "Toimitetut tilaukset",
+      "territoryInformation": "Alueen tiedot",
+      "country": "Maa",
+      "city": "Kaupunki",
+      "region": "Alue",
+      "quickActions": "Pikatoiminnot",
+      "newOrder": "Uusi järjestys",
+      "viewOrders": "Näytä tilaukset",
+      "viewInvoices": "Näytä laskut",
+      "profileSettings": "Profiiliasetukset",
+      "loading": "Kojelautaa ladataan...",
+      "error": "Virhe"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
-      "date": "Date",
+      "title": "Tilaukseni",
+      "orderId": "Tilaustunnus",
+      "date": "Päivämäärä",
       "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "items": "Kohteet",
+      "totalAmount": "Kokonaissumma",
+      "actions": "Toiminnot",
+      "viewDetails": "Näytä tiedot",
       "filters": {
         "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "startDate": "Aloituspäivämäärä",
+        "endDate": "Päättymispäivä",
+        "allStatuses": "Kaikki tilat",
+        "clearFilters": "Tyhjennä suodattimet"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "Odottaa",
+        "processing": "Käsittely",
+        "delivered": "Toimitettu",
+        "cancelled": "Peruutettu"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
-      "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "noOrders": "Ei tilauksia löytynyt",
+      "loading": "Tilauksia ladataan...",
+      "page": "Sivu",
+      "of": "jostakin",
+      "previous": "Edellinen",
+      "next": "Seuraava"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
+      "title": "Tilauksen tiedot",
+      "backToOrders": "Takaisin tilauksiin",
+      "orderId": "Tilaustunnus",
       "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "orderItems": "Order Items",
-      "product": "Product",
-      "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "orderDate": "Tilauspäivämäärä",
+      "deliveryDate": "Toimituspäivämäärä",
+      "deliveryAddress": "Toimitusosoite",
+      "notes": "Muistiinpanoja",
+      "orderItems": "Tilaustuotteet",
+      "product": "Tuote",
+      "sku": "Tuotenumero",
+      "quantity": "Määrä",
+      "unitPrice": "Yksikköhinta",
+      "total": "Kokonais",
+      "totalAmount": "Kokonaissumma",
+      "statusTimeline": "Tilan aikajana",
+      "orderNotFound": "Tilausta ei löytynyt"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
-      "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "title": "Luo uusi tilaus",
+      "orderItems": "Tilaustuotteet",
+      "addItem": "Lisää kohde",
+      "noItems": "Ei vielä lisättyjä tuotteita. Aloita napsauttamalla \"Lisää tuote\".",
+      "orderDetails": "Tilauksen tiedot",
+      "deliveryDate": "Toimituspäivämäärä",
+      "deliveryAddress": "Toimitusosoite",
+      "notes": "Muistiinpanoja",
+      "totalAmount": "Kokonaissumma",
+      "createOrder": "Luo tilaus",
+      "creatingOrder": "Tilausta luodaan...",
+      "cancel": "Peruuttaa",
+      "selectProduct": "Valitse tuote",
+      "product": "Tuote",
+      "quantity": "Määrä",
+      "unitPrice": "Yksikköhinta",
+      "remove": "Poistaa",
+      "subtotal": "Välisumma",
+      "orderId": "Tilaustunnus",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "Vähintään yksi tilaustuote vaaditaan",
+        "productRequired": "Tuote on pakollinen",
+        "quantityRequired": "Määrän on oltava suurempi kuin 0",
+        "priceRequired": "Yksikköhinnan on oltava ei-negatiivinen",
+        "invalidDate": "Virheellinen toimituspäivämäärän muoto",
+        "datePast": "Toimituspäivämäärä ei voi olla menneisyydessä"
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "Laskuni",
+      "invoiceNumber": "Laskun numero",
+      "invoiceDate": "Laskun päivämäärä",
+      "dueDate": "Kaksi päivämäärää",
+      "amount": "Määrä",
+      "paidAmount": "Maksettu summa",
+      "paymentStatus": "Maksun tila",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "Maksun tila",
+        "allStatuses": "Kaikki tilat",
+        "clearFilters": "Tyhjennä suodattimet"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "Maksettu",
+        "unpaid": "Palkaton",
+        "partial": "Osittainen"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "Ei laskuja löytynyt",
+      "loading": "Laskuja ladataan..."
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "title": "Profiilini",
+      "accountInformation": "Tilitiedot",
+      "distributorId": "Jälleenmyyjän tunnus",
+      "territory": "Alue",
+      "country": "Maa",
+      "city": "Kaupunki",
+      "accountCreated": "Tili luotu",
+      "updateProfile": "Päivitä profiili",
+      "name": "Nimi",
+      "email": "Sähköposti",
+      "phone": "Puhelin",
+      "address": "Osoite",
+      "language": "Kieli",
+      "currency": "Valuutta",
+      "saveChanges": "Tallenna muutokset",
+      "saving": "Tallennetaan...",
+      "profileUpdated": "Profiili päivitetty onnistuneesti",
+      "loading": "Profiilia ladataan...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "Virheellinen sähköpostiosoitteen muoto",
+        "invalidPhone": "Virheellinen puhelinnumeron muoto"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
-      "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "error": "Virhe",
+      "loading": "Ladataan...",
+      "save": "Tallentaa",
+      "cancel": "Peruuttaa",
+      "back": "Takaisin",
+      "submit": "Lähetä",
+      "delete": "Poistaa",
+      "edit": "Muokata",
+      "view": "Näytä",
+      "search": "Haku",
+      "filter": "Suodattaa",
+      "clear": "Tyhjennä",
+      "apply": "Käytä",
+      "close": "Lähellä",
+      "confirm": "Vahvistaa",
+      "yes": "Kyllä",
+      "no": "Ei"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
-    "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "title": "Oikeudellinen käyttöjärjestelmä",
+    "sidebarTitle": "Oikeudellinen käyttöjärjestelmä",
+    "accessDenied": "Käyttö estetty",
+    "accessDeniedMessage": "Sinulla ei ole oikeutta käyttää Legal OS -moduulia.",
+    "dashboard": "Kojelauta",
+    "contracts": "Sopimukset",
+    "certificates": "Todistukset",
+    "compliance": "Vaatimustenmukaisuus",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "Lakiasioiden hallintapaneeli",
+      "description": "Yleiskatsaus oikeudellisiin toimiin ja vaatimustenmukaisuustilaan",
+      "activeTrademarks": "Aktiiviset tavaramerkit",
+      "activeContracts": "Aktiiviset sopimukset",
+      "complianceStatus": "Vaatimustenmukaisuustila"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "Tavaramerkit",
+      "description": "Hallinnoi tavaramerkkirekisteröintejä ja -hakemuksia",
+      "addNew": "Lisää uusi tavaramerkki",
       "filters": {
-        "country": "Country",
+        "country": "Maa",
         "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "allCountries": "Kaikki maat",
+        "allStatuses": "Kaikki tilat",
+        "clearFilters": "Tyhjennä suodattimet"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
+        "brandName": "Tuotemerkki",
+        "class": "Luokka",
+        "country": "Maa",
+        "applicationNo": "Hakemusnumero",
         "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "expiryDate": "Voimassaolopäivä",
+        "actions": "Toiminnot"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "Muokkaa tavaramerkkiä",
+        "add": "Lisää uusi tavaramerkki",
+        "view": "Näytä tavaramerkki"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
+        "brandName": "Tuotemerkki",
+        "classNumber": "Luokan numero",
+        "country": "Maa",
+        "applicationNo": "Hakemusnumero",
         "status": "Status",
-        "expiryDate": "Expiry Date",
-        "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "expiryDate": "Voimassaolopäivä",
+        "documents": "Dokumentit",
+        "noDocuments": "Ei liitteenä olevia asiakirjoja",
+        "addDocument": "Lisää asiakirja",
+        "remove": "Poistaa"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "Tavaramerkkien lataaminen epäonnistui",
+        "saveFailed": "Tavaramerkin tallentaminen epäonnistui. Yritä uudelleen."
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "Oikeudelliset tapaukset",
+      "description": "Hallinnoi oikeustapauksia ja seuraa niiden tilaa",
+      "addNew": "Uusi tapaus",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
-        "description": "Description",
-        "assignedTo": "Assigned To",
+        "caseTitle": "Asian otsikko",
+        "caseType": "Tapaustyyppi",
+        "country": "Maa",
+        "description": "Kuvaus",
+        "assignedTo": "Määrätty",
         "status": "Status",
-        "hearingDate": "Hearing Date"
+        "hearingDate": "Kuulemispäivä"
       },
       "table": {
-        "caseTitle": "Case Title",
-        "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
+        "caseTitle": "Asian otsikko",
+        "type": "Tyyppi",
+        "country": "Maa",
+        "assignedTo": "Määrätty",
         "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "hearingDate": "Kuulemispäivä",
+        "actions": "Toiminnot"
       },
       "status": {
-        "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "open": "Avata",
+        "inProgress": "Käynnissä",
+        "closed": "Suljettu",
+        "cancelled": "Peruutettu"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "Laivaston karttanäkymä",
+      "description": "Myyntihenkilöstön ja toimitusajoneuvojen reaaliaikainen seuranta",
+      "activeEmployees": "Aktiiviset työntekijät",
+      "noEmployees": "Ei aktiivisia työntekijöitä",
+      "loading": "Ladataan..."
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
-      "reset": "Reset",
-      "play": "Play",
-      "pause": "Pause",
-      "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "title": "Reitin toisto",
+      "employee": "Työntekijä",
+      "speed": "Nopeus",
+      "reset": "Nollaa",
+      "play": "Pelata",
+      "pause": "Tauko",
+      "points": "pisteet",
+      "noRoute": "Reittitietoja ei saatavilla",
+      "loading": "Reittiä ladataan..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "Kilpailijoiden tuotteet",
+      "description": "Seuraa kilpailijoiden tuotetietoja",
+      "addProduct": "Lisää tuote",
+      "formTitle": "Lisää kilpailijan tuote",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "Merkki",
+        "skuName": "Tuotenumeron nimi",
+        "category": "Kategoria",
+        "size": "Koko",
+        "price": "Hinta",
+        "currency": "Valuutta",
+        "country": "Maa"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "Merkki",
+        "skuName": "Tuotenumeron nimi",
+        "category": "Kategoria",
+        "size": "Koko",
+        "price": "Hinta",
+        "country": "Maa",
+        "dateAdded": "Lisäyspäivämäärä"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "Tuotteiden lataaminen epäonnistui",
+        "createFailed": "Tuotteen luominen epäonnistui. Yritä uudelleen."
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "Kilpailevia tuotteita ei löytynyt",
+      "loading": "Tuotteita ladataan..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "Kilpailijan kojelauta",
+      "description": "Analytiikkaa ja näkemyksiä kilpailijoiden tuotteista",
+      "totalProducts": "Tuotteita yhteensä",
+      "brandsTracked": "Seuratut tuotemerkit",
+      "countries": "Maat",
+      "categories": "Luokat",
+      "byBrand": "Tuotteet tuotemerkeittain",
+      "byCountry": "Tuotteet maittain",
+      "byCategory": "Tuotteet luokittain",
+      "loading": "Ladataan tilastoja...",
+      "noStats": "Ei tilastoja saatavilla"
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
-    "finance": "Finance",
-    "crm": "CRM",
-    "hr": "HR",
-    "executive": "Executive",
-    "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
-    "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
-    "admin": "Admin"
+    "overview": "Yleiskatsaus",
+    "orders": "Tilaukset",
+    "inventory": "Varasto",
+    "logistics": "Logistiikka",
+    "finance": "Rahoitus",
+    "crm": "Asiakkuudenhallinta",
+    "hr": "HR-palvelut",
+    "executive": "Johtaja",
+    "investor": "Sijoittaja",
+    "legal-ipr": "Lakiasiain-/Immateriaalioikeudet",
+    "competitor": "Kilpailija",
+    "import-export": "Tuonti/vienti",
+    "gps-tracking": "GPS-seuranta",
+    "localization": "Lokalisointi",
+    "workflows": "Työnkulut",
+    "admin": "Ylläpitäjä"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
-      "finance": "Finance",
-      "crm": "CRM",
-      "hr": "HR",
-      "executive": "Executive",
-      "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
-      "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
-      "admin": "Admin"
+      "overview": "Yleiskatsaus",
+      "orders": "Tilaukset",
+      "inventory": "Varasto",
+      "logistics": "Logistiikka",
+      "finance": "Rahoitus",
+      "crm": "Asiakkuudenhallinta",
+      "hr": "HR-palvelut",
+      "executive": "Johtaja",
+      "investor": "Sijoittaja",
+      "legal-ipr": "Lakiasiain-/Immateriaalioikeudet",
+      "competitor": "Kilpailija",
+      "import-export": "Tuonti/vienti",
+      "gps-tracking": "GPS-seuranta",
+      "localization": "Lokalisointi",
+      "workflows": "Työnkulut",
+      "admin": "Ylläpitäjä"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
-      "profit": "Profit"
+      "customers": "Asiakkaat",
+      "employees": "Työntekijät",
+      "profit": "Voitto"
+    },
+    "domain": {
+      "title": "CRM-käyttöjärjestelmä",
+      "customer360": {
+        "title": "Asiakas 360",
+        "description": "Täydelliset asiakasprofiilit, vuorovaikutushistoria ja suhteiden hallinta"
+      },
+      "campaigns": {
+        "title": "Digitaaliset kampanjat",
+        "description": "Monikanavaiset markkinointikampanjat (IG, FB, TikTok, WhatsApp)"
+      },
+      "leads": {
+        "title": "Liidit ja mahdollisuudet",
+        "description": "Liidien hallinta, kelpuutus ja mahdollisuuksien prosessi"
+      },
+      "support": {
+        "title": "Asiakastuki",
+        "description": "Tikettien hallinta, asiakaspalvelu ja ongelmanratkaisu"
+      },
+      "loyalty": {
+        "title": "Kanta-asiakasohjelmat",
+        "description": "Jälleenmyyjän uskollisuus-, pelillistämis- ja palkkiohallinta"
+      }
+    },
+    "customerList": {
+      "title": "Asiakas 360",
+      "newCustomer": "Uusi asiakas",
+      "totalCustomers": "Asiakkaita yhteensä",
+      "active": "Aktiivinen",
+      "new": "Uusi",
+      "satisfaction": "Tyytyväisyys",
+      "customerManagement": "Asiakkuudenhallinta",
+      "customerManagementDescription": "Tarkastele ja hallinnoi asiakassuhteitasi, vuorovaikutustasi ja kampanjoitasi.",
+      "loading": "Ladataan...",
+      "error": "Virhe CRM-tietojen lataamisessa"
     }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "Ladataan toimittajan ohjaamoa…",
+      "purchaseOrders": "Ostotilaukset",
+      "purchaseOrdersSubtitle": "Harvicsin kasvattama",
+      "shipments": "Lähetykset / GRN",
+      "shipmentsSubtitle": "Hyväksytty tällä viikolla",
+      "invoices": "Luodut laskut",
+      "invoicesSubtitle": "Maksua odotetaan",
+      "paymentsPending": "Maksut odottavat",
+      "paymentsPendingSubtitle": "Julkaisuaikataulu",
+      "qualityComplaints": "Laatu / valitukset",
+      "qualityComplaintsSubtitle": "Avoimet liput",
+      "forecast": "Ennuste (seuraavat 4 viikkoa)",
+      "forecastSubtitle": "Tekoälyn paikkamerkki",
+      "supplierActions": "Toimittajien toimet",
+      "action1": "Vahvista tulevat toimitukset ja päivitä GRN-aikataulu.",
+      "action2": "Tarkista maksamattomat laskut ja jaa maksuohjeet.",
+      "action3": "Ratkaise avoimet laatuvalitukset laadunvarmistustodisteiden avulla."
+    }
+  },
+  "form": {
+    "username": "Käyttäjätunnus",
+    "password": "Salasana",
+    "email": "Sähköposti",
+    "submit": "Lähetä",
+    "cancel": "Peruuttaa",
+    "save": "Tallentaa",
+    "delete": "Poistaa",
+    "search": "Haku",
+    "filter": "Suodattaa",
+    "reset": "Nollaa",
+    "close": "Lähellä",
+    "back": "Takaisin",
+    "next": "Seuraava",
+    "previous": "Edellinen",
+    "confirm": "Vahvistaa",
+    "rememberMe": "Muista minut",
+    "forgotPassword": "Unohditko salasanasi?",
+    "emailRequired": "Sähköpostiosoite vaaditaan",
+    "emailInvalid": "Anna kelvollinen sähköpostiosoite"
+  },
+  "faq": {
+    "products": {
+      "category": "Tuotteet",
+      "q1": "Mitä tuotteita Harvics tarjoaa?",
+      "a1": "Tarjoamme laajan valikoiman ensiluokkaisia elintarvikkeita, kuten makeisia, juomia, välipaloja, pastaa, leivonnaisia ja pakasteita useissa eri tuoteryhmissä.",
+      "q2": "Mistä voin ostaa Harvicsin tuotteita?",
+      "a2": "Tuotteitamme on saatavilla vähittäismyymälöissä yli 40 maassa. Käytä myymälähakuamme tai yhteydenottosivuamme löytääksesi lähimmän jälleenmyyjän.",
+      "q3": "Tarjoatteko irtotilauksia?",
+      "a3": "Kyllä, tarjoamme yrityksille ja jälleenmyyjille alennuksia suurista tilauksista. Lisätietoja on suurista tilauksista -sivullamme."
+    },
+    "ordersShipping": {
+      "category": "Tilaukset ja toimitus",
+      "q1": "Mitä toimitusvaihtoehtoja teillä on?",
+      "a1": "Tarjoamme useita toimitusvaihtoehtoja, kuten vakiotoimituksen, pikatoimituksen ja kansainvälisen toimituksen. Ilmainen toimitus on saatavilla yli 50 dollarin tilauksille.",
+      "q2": "Kuinka kauan toimitus kestää?",
+      "a2": "Toimitusajat vaihtelevat sijainnin mukaan. Normaali toimitus kestää tyypillisesti 5–7 arkipäivää, kun taas pikatoimitus kestää 2–3 arkipäivää.",
+      "q3": "Voinko seurata tilaustani?",
+      "a3": "Kyllä, voit seurata tilaustasi tilausvahvistussähköpostissa olevalla seurantanumerolla."
+    },
+    "accountPayments": {
+      "category": "Tili ja maksut",
+      "q1": "Miten luon tilin?",
+      "a1": "Napsauta otsikossa olevaa \"Kirjaudu sisään\" ja valitse \"Luo tili\" rekisteröidäksesi uuden tilin.",
+      "q2": "Mitä maksutapoja hyväksytte?",
+      "a2": "Hyväksymme kaikki yleisimmät luottokortit, pankkikortit, PayPalin ja tilisiirrot B2B-tilauksiin.",
+      "q3": "Ovatko maksutietoni turvassa?",
+      "a3": "Kyllä, käytämme alan standardin mukaista salausta maksutietojesi suojaamiseen."
+    },
+    "returnsRefunds": {
+      "category": "Palautukset ja hyvitykset",
+      "q1": "Mikä on palautuskäytäntönne?",
+      "a1": "Tarjoamme 30 päivän palautusoikeuden avaamattomille tuotteille alkuperäispakkauksessa. Ota yhteyttä asiakaspalveluumme saadaksesi palautusluvan.",
+      "q2": "Miten voin pyytää hyvitystä?",
+      "a2": "Ota yhteyttä asiakaspalveluumme ja kerro tilausnumerosi sekä palautuksen syy. Käsittelemme hyvityksesi 5–7 arkipäivän kuluessa."
+    },
+    "contactCta": {
+      "title": "Onko sinulla vielä kysyttävää?",
+      "subtitle": "Asiakaspalvelumme on täällä auttaakseen",
+      "button": "Ota yhteyttä"
+    }
+  },
+  "careers": {
+    "title": "Urat",
+    "pageTitle": "Työpaikat | Harvics",
+    "description": "Liity Harvics Global Venturesiin — tutustu mahdollisuuksiin yli 40 maassa.",
+    "joinUs": "Liity mukaan",
+    "heroTitle": "Rakenna globaalin kaupan tulevaisuutta",
+    "heroDesc": "Kasvamme yli 40 maassa. Liity tiimiin, joka rakentaa tekoälypohjaista käyttöjärjestelmää globaaliin kaupankäyntiin.",
+    "stats": {
+      "openPositions": "Avoimet työpaikat",
+      "countries": "Maat",
+      "industryVerticals": "Toimialat",
+      "departmentsHiring": "Osastojen rekrytointi"
+    },
+    "openPositionsByDept": "Avoimet työpaikat osastoittain",
+    "departments": {
+      "sales": {
+        "name": "Myynti ja jakelu",
+        "desc": "Liikevaihdon kasvattaminen yli 40 markkina-alueella. Aluehallinta, avainasiakkaat, jakelijasuhteet."
+      },
+      "supplyChain": {
+        "name": "Toimitusketju ja logistiikka",
+        "desc": "Kokonaisvaltainen toimitusketju tehtaalta hyllylle. Kalustonhallinta, varastointi, viimeisen mailin toimitus."
+      },
+      "technology": {
+        "name": "Teknologia ja tekoäly",
+        "desc": "Rakenna Harvics OS — tekoälypohjainen yritysalustamme. Full-stack, koneoppimistekniikka, datatiede."
+      },
+      "finance": {
+        "name": "Rahoitus ja rahastonhoito",
+        "desc": "Monivaluuttainen treasury, kaupan rahoitus, HPay-digitaaliset maksut, valuuttahallinta eri alueilla."
+      },
+      "procurement": {
+        "name": "Hankinta ja hankinta",
+        "desc": "Globaali hankinta yli 15 alkuperämaasta. Toimittajien auditoinnit, laadunvalvonta, suoraan tehtaalta saatavat ohjelmat."
+      },
+      "hr": {
+        "name": "Henkilöstöhallinto",
+        "desc": "Osaajien hankinta, oppiminen ja kehittäminen, suorituskyvyn johtaminen eri maantieteellisillä alueilla ja kulttuureissa."
+      },
+      "legal": {
+        "name": "Lakiasiain ja vaatimustenmukaisuus",
+        "desc": "Kaupankäyntisäännösten noudattaminen, pakotteiden seulonta, immateriaalioikeuksien suojaus, sopimusten hallinta eri lainkäyttöalueilla."
+      },
+      "marketing": {
+        "name": "Markkinointi ja brändi",
+        "desc": "Monikieliset kampanjat, 38 kieliversiota sisältävä sisältö, digitaalinen markkinointi, brändistrategia 10 toimialalle."
+      }
+    },
+    "roles": "roolit",
+    "whyHarvics": "Miksi Harvics",
+    "benefits": {
+      "globalMobility": {
+        "title": "Globaali liikkuvuus",
+        "desc": "Työskentele Dubaissa, Lontoossa, Karachissa, Lahoressa ja yli 40 markkina-alueella"
+      },
+      "growthTrack": {
+        "title": "Kasvupolku",
+        "desc": "Nopea urakehitys kasvavassa yrityksessä"
+      },
+      "aiCulture": {
+        "title": "Tekoälykeskeinen kulttuuri",
+        "desc": "Työskentele huippuluokan tekoälyn ja reaaliaikaisten älyjärjestelmien kanssa"
+      },
+      "competitivePackage": {
+        "title": "Kilpailukykyinen paketti",
+        "desc": "Markkinoiden johtava palkkio, asuminen ja edut"
+      },
+      "learningBudget": {
+        "title": "Oppimisbudjetti",
+        "desc": "Kurssien, konferenssien ja sertifiointien vuosittainen kehitysbudjetti"
+      },
+      "flexibleWork": {
+        "title": "Joustava työ",
+        "desc": "Hybridijärjestelyt alueellisten keskustoimistojen kanssa maailmanlaajuisesti"
+      }
+    }
+  },
+  "strategy": {
+    "title": "Strategiamme",
+    "pageTitle": "Strategia | Harwich",
+    "description": "Kestävän tulevaisuuden rakentaminen innovaatioiden ja huippuosaamisen avulla",
+    "heroSubtitle": "Kestävän tulevaisuuden rakentaminen innovaatioiden ja huippuosaamisen avulla",
+    "pillars": {
+      "globalExpansion": {
+        "title": "Globaali laajentuminen",
+        "desc": "Laajennamme läsnäoloamme kehittyvillä markkinoilla ja vahvistamme samalla asemaamme vakiintuneilla markkinoilla"
+      },
+      "productInnovation": {
+        "title": "Tuoteinnovaatio",
+        "desc": "Investoimalla tutkimukseen ja kehitykseen kehittääksemme uusia tuotteita, jotka vastaavat kehittyviin kuluttajien mieltymyksiin"
+      },
+      "sustainability": {
+        "title": "Kestävä kehitys",
+        "desc": "Sitoutunut kestäviin käytäntöihin koko toimitusketjussamme ja toiminnassamme"
+      },
+      "digitalTransformation": {
+        "title": "Digitaalinen transformaatio",
+        "desc": "Teknologian hyödyntäminen asiakaskokemuksen ja toiminnan tehokkuuden parantamiseksi"
+      }
+    },
+    "vision": {
+      "title": "Visiomme",
+      "desc": "Olla maailman johtava premium-kulutustavarayritys, joka tunnetaan laadusta, innovaatioista ja kestävyydestä."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Harvics Global Ventures | Premium Global Trading",
+      "description": "Johtava maailmanlaajuinen kauppayhtiö, joka toimittaa premium-tuotteita yli 10 toimialalle. Toiminut yli 50 maassa vuodesta 2019 lähtien."
+    },
+    "about": {
+      "title": "Tietoa meistä | Harvics Global Ventures",
+      "description": "Ota selvää, kuinka Harvics Global Venturesista tuli johtava toimija maailmanlaajuisessa kaupassa yli 40 maassa ja 10 toimialalla."
+    },
+    "contact": {
+      "title": "Ota yhteyttä | Harvics Global Ventures",
+      "description": "Ota yhteyttä Harvicsin toimistoihin maailmanlaajuisesti Lähi-idässä, Etelä-Aasiassa, Euroopassa, Afrikassa ja Amerikassa."
+    },
+    "products": {
+      "title": "Tuotteet | Harvics Global Ventures",
+      "description": "Tutustu Harvicsin premium-tuotevalikoimaan päivittäistavaroiden, tekstiilien, hyödykkeiden ja teollisuusratkaisujen aloilla."
+    },
+    "careers": {
+      "title": "Työpaikat | Harvics Global Ventures",
+      "description": "Liity Harvics Global Venturesiin — tutustu mahdollisuuksiin yli 40 maassa päivittäistavaroiden, tekstiilien, logistiikan ja teknologian aloilla."
+    },
+    "media": {
+      "title": "Mediakeskus | Harvics Global Ventures",
+      "description": "Harvicsin mediakeskus — lehdistötiedotteet, uusimmat uutiset, brändimateriaalit ja mediayhteydet."
+    },
+    "strategy": {
+      "title": "Strategiamme | Harvics Global Ventures",
+      "description": "Harvicsin strateginen visio globaalista laajentumisesta, innovaatioista, kestävästä kehityksestä ja digitaalisesta transformaatiosta."
+    },
+    "csr": {
+      "title": "Yritysten yhteiskuntavastuu | Harvics",
+      "description": "Harvicsin yritysvastuualoitteet — ympäristönsuojelu, yhteisöohjelmat ja eettiset liiketoimintatavat."
+    },
+    "faq": {
+      "title": "Usein kysytyt kysymykset | Harvics Global Ventures",
+      "description": "Usein kysytyt kysymykset Harvicsin tuotteista, palveluista, tilaamisesta ja globaalista toiminnasta."
+    },
+    "locations": {
+      "title": "Maailmanlaajuiset toimipisteet | Harvics",
+      "description": "Harvicsin toimistot ja toiminnot Lähi-idässä, Etelä-Aasiassa, Euroopassa, Afrikassa ja Amerikassa."
+    },
+    "leadership": {
+      "title": "Johtotiimi | Harvics",
+      "description": "Tapaa Harvics Global Venturesin johtotiimi, joka toimii yli 40 markkina-alueella ja 10 toimialalla."
+    },
+    "help": {
+      "title": "Ohjekeskus | Harvics",
+      "description": "Saat apua tilauksiin, tileihin, toimituksiin ja Harvicsin palveluihin liittyen."
+    },
+    "compliance": {
+      "title": "Vaatimustenmukaisuus ja etiikka | Harvics",
+      "description": "Harvicin sitoutuminen sääntelyn noudattamiseen, eettisiin liiketoimintatapoihin ja globaaleihin standardeihin."
+    },
+    "history": {
+      "title": "Historiamme | Harvics",
+      "description": "Dubaissa vuonna 2019 perustetusta startup-yrityksestä yli 40 maassa toimivaksi globaaliksi yritykseksi – Harvicsin tarina."
+    },
+    "newsletter": {
+      "title": "Uutiskirje | Harvics",
+      "description": "Tilaa Harvicsin uutiskirje saadaksesi tietoa toimialasta ja tuotelanseerauksista."
+    },
+    "login": {
+      "title": "Kirjaudu sisään | Harvics",
+      "description": "Kirjaudu Harvics-tilillesi hallitaksesi tilauksia ja käyttääksesi alustaa."
+    },
+    "research": {
+      "title": "Tutkimus ja innovaatio | Harvics",
+      "description": "Harvicsin tutkimushankkeet ja innovaatio-ohjelmat ohjaavat globaalia strategiaamme."
+    },
+    "investorRelations": {
+      "title": "Sijoittajasuhteet | Harvics",
+      "description": "Sijoittajatietoja, taloudellisia raportteja ja yritystiedotteita Harvics Global Venturesilta."
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Sivua ei löytynyt",
+      "heading": "404 — Sivua ei löytynyt",
+      "description": "Etsimääsi sivua ei ole olemassa tai se on siirretty.",
+      "goHome": "Siirry kotisivulle",
+      "goBack": "Palaa takaisin"
+    },
+    "serverError": {
+      "title": "Jokin meni pieleen",
+      "heading": "Jokin meni pieleen",
+      "description": "Olemme pahoillamme, mutta jotain odottamatonta tapahtui. Yritä päivittää sivu.",
+      "tryAgain": "Yritä uudelleen",
+      "reload": "Lataa sivu uudelleen",
+      "contactSupport": "Ota yhteyttä tukeen"
+    },
+    "globalError": {
+      "title": "Sovellusvirhe",
+      "heading": "Kriittinen virhe",
+      "description": "Kriittinen virhe. Lataa sivu uudelleen.",
+      "reload": "Lataa sovellus uudelleen"
+    }
+  },
+  "about": {
+    "title": "Tietoja Harvicsista",
+    "subtitle": "Huippuosaamista premium-kulutustavaroissa vuodesta 2019 lähtien",
+    "ourStory": "Tarinamme",
+    "story1": "Vuonna 2019 perustettu Harvics on kasvanut visionäärisestä ideasta premium-kulutustavaroiden globaaliksi johtajaksi. Matkaamme määrittelee väsymätön laadun tavoittelu ja sitoutuminen innovaatioihin.",
+    "story2": "Toimimme yli 40 maassa ja toimitamme tuotteita, jotka rikastuttavat elämää ja asettavat uusia standardeja alalle. Vaatimattomista alkuajoistamme aina globaaliin läsnäoloomme asti arvomme ovat pysyneet muuttumattomina.",
+    "est2018": "Per. 2019",
+    "countries40": "Yli 40 maata",
+    "productLines6": "6 tuotelinjaa"
+  },
+  "csr": {
+    "hero": {
+      "title": "Yritysten yhteiskuntavastuu",
+      "description": "Harvicsilla olemme sitoutuneet vaikuttamaan myönteisesti maailmaan. Yritysvastuualoitteemme keskittyvät kestävään kehitykseen, yhteisön voimaannuttamiseen ja eettisiin liiketoimintatapoihin.",
+      "stats": {
+        "years": "Vaikutusvuosia",
+        "countries": "Maat, joissa on saavutettu",
+        "lives": "Elämät kosketettuina"
+      }
+    },
+    "initiatives": {
+      "title": "Keskeiset aloitteemme",
+      "description": "Keskitymme neljään pääpilariin edistääksemme kestävää muutosta ja luodaksemme yhteistä arvoa kaikille sidosryhmille."
+    },
+    "sustainability": {
+      "title": "Kestävä kehitys",
+      "description": "Ympäristöjalanjälkemme pienentäminen uusiutuvan energian ja jätteen vähentämisen avulla.",
+      "stats": {
+        "renewable": "Uusiutuva energia",
+        "waste": "Jätteen ohjautuminen",
+        "carbon": "Hiilidioksidin vähentäminen"
+      }
+    },
+    "community": {
+      "title": "Yhteisön tuki",
+      "description": "Paikallisyhteisöjen voimaannuttaminen koulutuksen, terveydenhuollon ja talouskehityksen avulla.",
+      "stats": {
+        "families": "Tuetut perheet",
+        "programs": "Aktiiviset ohjelmat",
+        "volunteers": "Vapaaehtoiset"
+      }
+    },
+    "education": {
+      "title": "Koulutus",
+      "description": "Tarjota laadukasta koulutusta ja stipendejä heikommassa asemassa oleville opiskelijoille.",
+      "stats": {
+        "scholarships": "Apurahat",
+        "schools": "Yhteistyökoulut",
+        "students": "Opiskelijat, joihin tämä vaikuttaa"
+      }
+    },
+    "health": {
+      "title": "Terveys ja hyvinvointi",
+      "description": "Terveydenhuollon ja ravitsemuksen saatavuuden parantaminen alipalvelluilla alueilla.",
+      "stats": {
+        "campaigns": "Terveyskampanjat",
+        "people": "Palveltuja ihmisiä",
+        "clinics": "Liikkuvat klinikat"
+      }
+    },
+    "achievements": {
+      "2022": {
+        "title": "Paras yritysvastuualoite",
+        "description": "Palkittu innovatiivisesta lähestymistavastamme yhteiskuntavastuuseen."
+      },
+      "2023": {
+        "title": "Yhteisön mestari",
+        "description": "Palkittu laajoista yhteisötyöohjelmistamme."
+      },
+      "2024": {
+        "title": "Globaali kestävän kehityksen palkinto",
+        "description": "Tunnustettu sitoutumisestamme hiilineutraaliuteen."
+      },
+      "title": "Vaikutuksemme",
+      "description": "Tunnustamme virstanpylväät paremman maailman luomisessa."
+    },
+    "cta": {
+      "title": "Liity mukaan tekemään muutosta",
+      "description": "Ryhdy yhteistyökumppaniksemme tai lue lisää siitä, miten rakennamme kestävää tulevaisuutta.",
+      "contact": "Ota yhteyttä yritysvastuutiimiin",
+      "learnMore": "Lue lisää"
+    }
+  },
+  "harvicsHouse": {
+    "title": "Harvicsin talo",
+    "subtitle": "Erinomaisuuden ja perinteiden perintö",
+    "aboutTitle": "Tervetuloa Harvicsin taloon",
+    "description": "Harvics House edustaa sitoutumistamme laatuun ja perinteeseen. Täällä kokoamme yhteen parhaan valikoiman premium-tuotteitamme, jotka esitellään ympäristössä, joka heijastaa arvojamme, kuten eleganssia, perinteitä ja innovaatioita.",
+    "description2": "Tutustu eksklusiivisiin mallistoihin ja löydä tarina jokaisen Harvics-nimeä kantavan tuotteen takana."
   }
 }

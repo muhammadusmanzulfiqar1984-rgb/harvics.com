@@ -1,0 +1,40 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- HARVICS: The Global Exchange -->
+  <!-- Concept: Trade flows converging at intelligent hub -->
+  <!-- Inspired by: Glencore simplicity + Mitsubishi geometry + Vitol flow -->
+  
+  <!-- Central Hub (HARVICS as the exchange) -->
+  <circle cx="32" cy="32" r="8" fill="#C3A35E" opacity="0.95"/>
+  <circle cx="32" cy="32" r="4" fill="#6B1F2B"/>
+  
+  <!-- 10 Trade Flow Arrows (representing 10 industries) -->
+  <!-- Converging inward = Sourcing/buying -->
+  <!-- Radiating outward = Selling/distribution -->
+  
+  <!-- Top: FMCG flow -->
+  <path d="M32 4L32 16L28 12L32 16L36 12" stroke="#6B1F2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Top-right: Textiles -->
+  <path d="M50 14L42 22L44 18L42 22L46 24" stroke="#6B1F2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Right: Commodities -->
+  <path d="M60 32L48 32L52 28L48 32L52 36" stroke="#6B1F2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Bottom-right: Industrial -->
+  <path d="M50 50L42 42L46 40L42 42L44 46" stroke="#6B1F2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Bottom: Minerals -->
+  <path d="M32 60L32 48L28 52L32 48L36 52" stroke="#6B1F2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Bottom-left: Oil & Gas -->
+  <path d="M14 50L22 42L18 44L22 42L20 46" stroke="#6B1F2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Left: Real Estate -->
+  <path d="M4 32L16 32L12 28L16 32L12 36" stroke="#6B1F2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Top-left: Sourcing -->
+  <path d="M14 14L22 22L20 18L22 22L18 24" stroke="#6B1F2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Subtle connecting circle (global network) -->
+  <circle cx="32" cy="32" r="22" stroke="#C3A35E" stroke-width="1" opacity="0.3" fill="none"/>
+</svg>

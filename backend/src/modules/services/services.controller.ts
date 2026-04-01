@@ -24,7 +24,7 @@ import { DiscoveryNode } from '../../services/discoveryNode';
 import { AlertService } from '../../services/alertService';
 import { ProductSynthesisEngine } from '../../services/productSynthesizer';
 import { eventBus } from '../../core/eventBus';
-import { approvalsStore } from '../../core/dataStore';
+import { approvalsDb } from '../../core/db';
 
 const router = Router();
 // All services use static methods — no instances needed
@@ -183,42 +183,56 @@ router.get('/events/log', (req: Request, res: Response) => {
 // ═══════════════════════════════════════════════════════════════════
 // APPROVALS
 // ═══════════════════════════════════════════════════════════════════
-router.get('/approvals/pending', (req: Request, res: Response) => {
+router.get('/approvals/pending', async (req: Request, res: Response) => {
   const { tier } = req.query;
-  const result = approvalsStore.list(
+  const result = await approvalsDb.list(
     tier ? { tier, status: 'Pending' } : { status: 'Pending' },
     1, 100
   );
   res.json({ success: true, ...result });
 });
 
-router.get('/approvals/history', (req: Request, res: Response) => {
-  const result = approvalsStore.list({}, Number(req.query.page) || 1, Number(req.query.limit) || 50);
+router.get('/approvals/history', async (req: Request, res: Response) => {
+  const result = await approvalsDb.list({}, Number(req.query.page) || 1, Number(req.query.limit) || 50);
   res.json({ success: true, ...result });
 });
 
-router.post('/approvals/:id/approve', (req: Request, res: Response) => {
-  const updated = approvalsStore.update(req.params.id, {
-    status: 'Approved',
-    approvedBy: req.body.approvedBy || 'system',
-    approvedAt: new Date().toISOString(),
-    notes: req.body.notes || ''
-  }, 'approval.approved');
-  if (!updated) return res.status(404).json({ success: false, error: 'Approval not found' });
-  res.json({ success: true, data: updated });
+router.post('/approvals/:id/approve', async (req: Request, res: Response) => {
+  const { prisma } = await import('../../core/prisma');
+  try {
+    const updated = await prisma.approval.update({
+      where: { id: req.params.id },
+      data: {
+        status: 'Approved',
+        approvedBy: req.body.approvedBy || 'system',
+        approvedAt: new Date().toISOString(),
+        notes: req.body.notes || ''
+      }
+    });
+    res.json({ success: true, data: updated });
+  } catch {
+    res.status(404).json({ success: false, error: 'Approval not found' });
+  }
 });
 
-router.post('/approvals/:id/reject', (req: Request, res: Response) => {
+router.post('/approvals/:id/reject', async (req: Request, res: Response) => {
   const { reason } = req.body;
   if (!reason) return res.status(400).json({ success: false, error: 'reason is required' });
-  const updated = approvalsStore.update(req.params.id, {
-    status: 'Rejected',
-    rejectedBy: req.body.rejectedBy || 'system',
-    rejectedAt: new Date().toISOString(),
-    rejectionReason: reason
-  }, 'approval.rejected');
-  if (!updated) return res.status(404).json({ success: false, error: 'Approval not found' });
-  res.json({ success: true, data: updated });
+  const { prisma } = await import('../../core/prisma');
+  try {
+    const updated = await prisma.approval.update({
+      where: { id: req.params.id },
+      data: {
+        status: 'Rejected',
+        rejectedBy: req.body.rejectedBy || 'system',
+        rejectedAt: new Date().toISOString(),
+        rejectionReason: reason
+      }
+    });
+    res.json({ success: true, data: updated });
+  } catch {
+    res.status(404).json({ success: false, error: 'Approval not found' });
+  }
 });
 
 export default router;

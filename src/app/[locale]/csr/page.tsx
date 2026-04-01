@@ -4,10 +4,11 @@ import Footer from '@/components/layout/Footer'
 import { getFolderBasedCategories } from '@/data/folderBasedProducts'
 
 import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Corporate Social Responsibility | Harvics',
-  description: 'Harvics CSR initiatives across 40+ countries.',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'csr')
 }
 
 
@@ -115,7 +116,7 @@ export default async function CSRPage({ params }: CSRPageProps) {
   const categories = getFolderBasedCategories()
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="fixed top-0 left-0 right-0 z-[1000] bg-white shadow-sm">
         <Header categories={categories} />
       </div>
@@ -211,7 +212,7 @@ export default async function CSRPage({ params }: CSRPageProps) {
         </section>
 
         {/* Key Achievements */}
-        <section className="py-12 md:py-24 bg-[#F5F1E8]">
+        <section className="py-12 md:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 md:mb-16">
               <h2 className="text-3xl md:text-4xl font-serif font-medium text-gray-900 mb-6">

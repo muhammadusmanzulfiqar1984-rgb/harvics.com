@@ -45,7 +45,7 @@ export default function CustomsPage() {
           placeholder="Search HS codes or descriptions..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full border border-black300 px-4 py-2"
+          className="w-full border border-gray-200 px-4 py-2"
         />
       </div>
 

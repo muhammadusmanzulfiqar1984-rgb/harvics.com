@@ -38,7 +38,7 @@ export default function KnowledgeBase() {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Search articles..."
-          className="w-full px-4 py-2 border border-black300 focus:ring-2 focus:ring-black"
+          className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
         />
       </div>
 

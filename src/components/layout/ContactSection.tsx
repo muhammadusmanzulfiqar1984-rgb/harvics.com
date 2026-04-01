@@ -38,11 +38,11 @@ const ContactSection: React.FC = () => {
   ]
 
   return (
-    <section ref={ref} className={`py-16 sm:py-20 ${revealClass(isVisible, 'up')}`} style={{ background: '#F5F1E8' }}>
+    <section ref={ref} className={`h-full flex flex-col justify-center ${revealClass(isVisible, 'up')}`} style={{ background: '#ffffff' }}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <span className="text-xs font-bold uppercase tracking-widest mb-3 block" style={{ color: '#C3A35E', letterSpacing: '0.2em' }}>
             Get in Touch
           </span>
@@ -56,7 +56,7 @@ const ContactSection: React.FC = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {cards.map(card => (
             <div key={card.title} className="text-center p-8 transition-opacity duration-200 hover:opacity-80" style={{ border: '1px solid rgba(195,163,94,0.3)', background: 'white' }}>
               <div className="w-10 h-10 mx-auto mb-5 flex items-center justify-center" style={{ opacity: 0.6 }}>

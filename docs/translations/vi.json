@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "vi",
+    "language": "Vietnamese",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Vietnamese. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Vietnamese",
+      "translation": "Chào mừng đến với"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Harwich"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Vietnamese",
+      "translation": "Xuất sắc trong lĩnh vực hàng tiêu dùng cao cấp từ năm 2019."
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Vietnamese",
+      "translation": "Một công ty hàng tiêu dùng toàn cầu hàng đầu cung cấp các sản phẩm thực phẩm cao cấp thuộc nhiều danh mục khác nhau với tiêu chuẩn chất lượng quốc tế."
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Vietnamese",
+      "translation": "Khám phá sản phẩm"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Vietnamese",
+      "translation": "Liên hệ với chúng tôi"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Vietnamese",
+      "translation": "Tìm hiểu thêm"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Vietnamese",
+      "translation": "Xuất sắc trong lĩnh vực hàng tiêu dùng cao cấp từ năm..."
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Vietnamese",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Vietnamese",
+      "translation": "Luân Đôn • Milan • New York"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Vietnamese",
+      "translation": "Tiệm bánh"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Vietnamese",
+      "translation": "Đồ uống"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Vietnamese",
+      "translation": "Bánh kẹo"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Vietnamese",
+      "translation": "Ẩm thực"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Vietnamese",
+      "translation": "Thực phẩm đông lạnh"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Vietnamese",
+      "translation": "Mì Ý"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Vietnamese",
+      "translation": "Đồ ăn nhẹ"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Vietnamese",
+      "translation": "Báo cáo ESG năm 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Vietnamese",
+      "translation": "Luân Đôn • Milan • New York"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Vietnamese",
+      "translation": "Trang chủ"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Vietnamese",
+      "translation": "Về"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Vietnamese",
+      "translation": "Về chúng tôi"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Vietnamese",
+      "translation": "Câu chuyện thương hiệu"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Vietnamese",
+      "translation": "Các sản phẩm"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Vietnamese",
+      "translation": "Sản phẩm của chúng tôi"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Vietnamese",
+      "translation": "Xem tất cả sản phẩm"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Vietnamese",
+      "translation": "Trách nhiệm xã hội doanh nghiệp (CSR)"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Vietnamese",
+      "translation": "Quan hệ nhà đầu tư"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Vietnamese",
+      "translation": "Nhà đầu tư"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Vietnamese",
+      "translation": "Phương tiện truyền thông"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Vietnamese",
+      "translation": "Liên hệ với chúng tôi"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Vietnamese",
+      "translation": "Nhà Harvics"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Vietnamese",
+      "translation": "Các quốc gia"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Vietnamese",
+      "translation": "Cổng thông tin"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Vietnamese",
+      "translation": "Đăng nhập"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Vietnamese",
+      "translation": "Danh sách mong muốn"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Vietnamese",
+      "translation": "Giỏ hàng"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Vietnamese",
+      "translation": "Giúp đỡ"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Vietnamese",
+      "translation": "Tìm cửa hàng"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Vietnamese",
+      "translation": "Tiền bạc"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Vietnamese",
+      "translation": "Việc bán hàng"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Vietnamese",
+      "translation": "Ưu đãi"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Vietnamese",
+      "translation": "Chế độ tối"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Vietnamese",
+      "translation": "Thẻ tín dụng"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Vietnamese",
+      "translation": "Thẻ tín dụng M&S Rewards"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Vietnamese",
+      "translation": "Phần thưởng Câu lạc bộ"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Vietnamese",
+      "translation": "Thẻ tín dụng của chúng tôi"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Vietnamese",
+      "translation": "Bảo hiểm"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Vietnamese",
+      "translation": "Bảo hiểm nhà ở"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Vietnamese",
+      "translation": "Bảo hiểm du lịch"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Vietnamese",
+      "translation": "Dịch vụ du lịch"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Vietnamese",
+      "translation": "Tiền du lịch"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Vietnamese",
+      "translation": "Tỷ giá hối đoái"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Vietnamese",
+      "translation": "Dịch vụ bổ sung"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Vietnamese",
+      "translation": "Tiết kiệm & Đầu tư"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Vietnamese",
+      "translation": "Vay cá nhân"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Vietnamese",
+      "translation": "Hỗ trợ tài chính"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Vietnamese",
+      "translation": "Doanh số hiện tại"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Vietnamese",
+      "translation": "Giải phóng mặt bằng"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Vietnamese",
+      "translation": "Giảm giá theo mùa"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Vietnamese",
+      "translation": "Ưu đãi đặc biệt"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Vietnamese",
+      "translation": "Khuyến mãi"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Vietnamese",
+      "translation": "Chiết khấu cho đơn hàng số lượng lớn"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Vietnamese",
+      "translation": "Sản phẩm của chúng tôi"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Vietnamese",
+      "translation": "Xem tất cả sản phẩm"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Vietnamese",
+      "translation": "Các danh mục sản phẩm của chúng tôi"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Vietnamese",
+      "translation": "Khám phá dòng sản phẩm cao cấp của chúng tôi được chế tác tỉ mỉ và hoàn hảo."
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Vietnamese",
+      "translation": "Cấp độ 1: Danh mục"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Vietnamese",
+      "translation": "Cấp độ 2: Các mô-đun"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Vietnamese",
+      "translation": "Cấp độ 3: Màn hình KPI"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Vietnamese",
+      "translation": "Cấp độ 4: Hành động"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Vietnamese",
+      "translation": "Đặt lại điều hướng"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Vietnamese",
+      "translation": "Không có danh mục con nào cho danh mục này."
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Vietnamese",
+      "translation": "Các sản phẩm"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Vietnamese",
+      "translation": "Danh mục phụ"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Vietnamese",
+      "translation": "Tiệm bánh"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Vietnamese",
+      "translation": "Các loại bánh nướng và bánh ngọt mới ra lò."
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Vietnamese",
+      "translation": "Đồ uống"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Vietnamese",
+      "translation": "Những thức uống giải khát cho mọi dịp."
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Vietnamese",
+      "translation": "Bánh kẹo"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Vietnamese",
+      "translation": "Những món ngọt và ngon miệng."
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Vietnamese",
+      "translation": "Ẩm thực"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Vietnamese",
+      "translation": "Những nguyên liệu thiết yếu cho căn bếp của bạn."
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Vietnamese",
+      "translation": "Thực phẩm đông lạnh"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Vietnamese",
+      "translation": "Các món ăn đông lạnh tiện lợi và ngon miệng."
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Vietnamese",
+      "translation": "Mì Ý"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Vietnamese",
+      "translation": "Các loại mì Ý chính gốc."
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Vietnamese",
+      "translation": "Đồ ăn nhẹ"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Vietnamese",
+      "translation": "Những món ăn nhẹ ngon miệng cho bất cứ thời điểm nào trong ngày."
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Giới thiệu về Harvics"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Vietnamese",
+      "translation": "Xuất sắc trong lĩnh vực hàng tiêu dùng cao cấp từ năm 2019."
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Vietnamese",
+      "translation": "Câu chuyện của chúng tôi"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Vietnamese",
+      "translation": "Được thành lập vào năm 2019, Harvics đã phát triển từ một ý tưởng đầy tầm nhìn thành một nhà lãnh đạo toàn cầu trong lĩnh vực hàng tiêu dùng cao cấp. Hành trình của chúng tôi được định hình bởi sự theo đuổi không ngừng nghỉ chất lượng và cam kết đổi mới."
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Vietnamese",
+      "translation": "Chúng tôi hoạt động tại hơn 40 quốc gia, cung cấp các sản phẩm làm phong phú thêm cuộc sống và thiết lập các tiêu chuẩn mới trong ngành. Từ những khởi đầu khiêm tốn đến sự hiện diện toàn cầu, các giá trị của chúng tôi vẫn không thay đổi."
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Vietnamese",
+      "translation": "Thành lập năm 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Vietnamese",
+      "translation": "Hơn 40 quốc gia"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Vietnamese",
+      "translation": "6 Dòng sản phẩm"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Vietnamese",
+      "translation": "Trách nhiệm xã hội của doanh nghiệp"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Vietnamese",
+      "translation": "Tại Harvics, chúng tôi cam kết tạo ra tác động tích cực đến thế giới. Các sáng kiến trách nhiệm xã hội doanh nghiệp (CSR) của chúng tôi tập trung vào tính bền vững, trao quyền cho cộng đồng và các hoạt động kinh doanh có đạo đức."
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Vietnamese",
+      "translation": "Nhiều năm tác động"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Vietnamese",
+      "translation": "Các quốc gia đã tiếp cận"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Vietnamese",
+      "translation": "Những cuộc đời bị ảnh hưởng"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Vietnamese",
+      "translation": "Các sáng kiến chính của chúng tôi"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Vietnamese",
+      "translation": "Chúng tôi tập trung vào bốn trụ cột chính để thúc đẩy sự thay đổi bền vững và tạo ra giá trị chung cho tất cả các bên liên quan."
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Vietnamese",
+      "translation": "Tính bền vững"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Vietnamese",
+      "translation": "Giảm thiểu tác động đến môi trường thông qua năng lượng tái tạo và giảm thiểu chất thải."
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Vietnamese",
+      "translation": "Năng lượng tái tạo"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Vietnamese",
+      "translation": "Chất thải được chuyển hướng"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Vietnamese",
+      "translation": "Giảm lượng khí thải carbon"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Vietnamese",
+      "translation": "Hỗ trợ cộng đồng"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Vietnamese",
+      "translation": "Tăng cường năng lực cho cộng đồng địa phương thông qua giáo dục, chăm sóc sức khỏe và phát triển kinh tế."
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Vietnamese",
+      "translation": "Các gia đình được hỗ trợ"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Vietnamese",
+      "translation": "Các chương trình hoạt động"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Vietnamese",
+      "translation": "Tình nguyện viên"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Vietnamese",
+      "translation": "Giáo dục"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Vietnamese",
+      "translation": "Cung cấp cơ hội tiếp cận giáo dục chất lượng và học bổng cho học sinh có hoàn cảnh khó khăn."
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Vietnamese",
+      "translation": "Học bổng"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Vietnamese",
+      "translation": "Các trường đối tác"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Vietnamese",
+      "translation": "Sinh viên bị ảnh hưởng"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Vietnamese",
+      "translation": "Sức khỏe & Thể chất"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Vietnamese",
+      "translation": "Cải thiện khả năng tiếp cận dịch vụ chăm sóc sức khỏe và dinh dưỡng tại các vùng thiếu thốn."
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Vietnamese",
+      "translation": "Chiến dịch sức khỏe"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Vietnamese",
+      "translation": "Những người được phục vụ"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Vietnamese",
+      "translation": "Phòng khám lưu động"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Vietnamese",
+      "translation": "Sáng kiến CSR tốt nhất"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Vietnamese",
+      "translation": "Được vinh danh vì cách tiếp cận sáng tạo của chúng tôi đối với trách nhiệm xã hội."
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Vietnamese",
+      "translation": "Nhà vô địch cộng đồng"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Vietnamese",
+      "translation": "Được trao giải thưởng nhờ các chương trình tiếp cận cộng đồng rộng khắp của chúng tôi."
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Vietnamese",
+      "translation": "Giải thưởng Phát triển bền vững toàn cầu"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Vietnamese",
+      "translation": "Được ghi nhận vì cam kết của chúng tôi đối với mục tiêu trung hòa carbon."
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Vietnamese",
+      "translation": "Tác động của chúng tôi"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Vietnamese",
+      "translation": "Ghi nhận những cột mốc quan trọng của chúng ta trong việc kiến tạo một thế giới tốt đẹp hơn."
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Vietnamese",
+      "translation": "Hãy cùng chúng tôi tạo nên sự khác biệt"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Vietnamese",
+      "translation": "Hãy hợp tác với chúng tôi hoặc tìm hiểu thêm về cách chúng tôi đang xây dựng một tương lai bền vững."
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Vietnamese",
+      "translation": "Liên hệ với nhóm Chăm sóc Khách hàng"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Vietnamese",
+      "translation": "Tìm hiểu thêm"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Vietnamese",
+      "translation": "Liên hệ với chúng tôi"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Vietnamese",
+      "translation": "Chúng tôi rất mong nhận được phản hồi từ bạn. Hãy liên hệ với chúng tôi qua bất kỳ kênh nào sau đây."
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Vietnamese",
+      "translation": "Điện thoại"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Vietnamese",
+      "translation": "E-mail"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Vietnamese",
+      "translation": "WhatsApp"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Vietnamese",
+      "translation": "Gọi ngay"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Vietnamese",
+      "translation": "Gửi email"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Vietnamese",
+      "translation": "Liên hệ với chúng tôi"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Vietnamese",
+      "translation": "Trung tâm truyền thông"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Trung tâm Truyền thông | Harvics"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Vietnamese",
+      "translation": "Tài liệu báo chí, hình ảnh thương hiệu và tin tức mới nhất từ Harvics Global Ventures."
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Vietnamese",
+      "translation": "Doanh nghiệp"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Vietnamese",
+      "translation": "Tin tức & Thông cáo báo chí"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Vietnamese",
+      "translation": "Những thông báo mới nhất, kế hoạch mở rộng thị trường, ra mắt sản phẩm và cập nhật tình hình doanh nghiệp từ Harvics Global Ventures."
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Vietnamese",
+      "translation": "Đọc tin tức mới nhất"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Vietnamese",
+      "translation": "Bộ sưu tập hình ảnh"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Vietnamese",
+      "translation": "Hình ảnh thương hiệu độ phân giải cao, ảnh sản phẩm, ảnh cơ sở vật chất và ảnh sự kiện để phục vụ mục đích truyền thông."
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Vietnamese",
+      "translation": "Xem bộ sưu tập"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Vietnamese",
+      "translation": "Liên hệ truyền thông"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Vietnamese",
+      "translation": "Vui lòng liên hệ với nhóm truyền thông của chúng tôi để được hỗ trợ về thông tin báo chí, yêu cầu phỏng vấn và thông báo hợp tác."
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Vietnamese",
+      "translation": "Liên hệ với nhóm báo chí"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Vietnamese",
+      "translation": "Các thị trường được đề cập"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Vietnamese",
+      "translation": "Các ngành dọc"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Vietnamese",
+      "translation": "Được thành lập tại Dubai"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Vietnamese",
+      "translation": "Ngôn ngữ được hỗ trợ"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Vietnamese",
+      "translation": "Tin tức mới nhất"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Vietnamese",
+      "translation": "Harvics mở rộng hoạt động kinh doanh hàng tiêu dùng nhanh sang 5 thị trường mới tại Đông Nam Á."
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Vietnamese",
+      "translation": "Nền tảng chuỗi cung ứng mới dựa trên trí tuệ nhân tạo (AI) dành cho phân phối toàn cầu đã được ra mắt."
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Vietnamese",
+      "translation": "Harvics đạt được cột mốc trung hòa carbon trên tất cả các cơ sở."
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Vietnamese",
+      "translation": "Quan hệ đối tác chiến lược với các nhà sản xuất dệt may hàng đầu tại Nam Á"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Vietnamese",
+      "translation": "Nhà Harvics"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Vietnamese",
+      "translation": "Di sản của sự xuất sắc và truyền thống"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Vietnamese",
+      "translation": "Chào mừng đến với Harvics House"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Vietnamese",
+      "translation": "Harvics House là đỉnh cao trong cam kết của chúng tôi về chất lượng và di sản. Tại đây, chúng tôi quy tụ những sản phẩm cao cấp nhất, được trưng bày trong một không gian phản ánh các giá trị về sự thanh lịch, truyền thống và đổi mới của chúng tôi."
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Vietnamese",
+      "translation": "Khám phá các bộ sưu tập độc quyền của chúng tôi và tìm hiểu câu chuyện đằng sau mỗi sản phẩm mang tên Harvics."
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Vietnamese",
+      "translation": "Harvics Global Ventures"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Vietnamese",
+      "translation": "Xuất sắc trong lĩnh vực hàng tiêu dùng cao cấp từ năm 2019."
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Vietnamese",
+      "translation": "Một công ty hàng tiêu dùng toàn cầu hàng đầu cung cấp các sản phẩm thực phẩm cao cấp thuộc nhiều danh mục khác nhau với tiêu chuẩn chất lượng quốc tế."
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Vietnamese",
+      "translation": "Luân Đôn • Milan • New York"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Vietnamese",
+      "translation": "Từ năm 2019"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Vietnamese",
+      "translation": "Tin tức Harvics"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Vietnamese",
+      "translation": "Đăng ký để nhận thông báo và cập nhật"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Vietnamese",
+      "translation": "Đăng ký"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Vietnamese",
+      "translation": "Các vấn đề liên quan đến tuân thủ"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Vietnamese",
+      "translation": "Hãy lên tiếng nếu bạn có bất kỳ lo ngại nào về việc tuân thủ quy định hoặc đạo đức nghề nghiệp."
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Vietnamese",
+      "translation": "Hãy lên tiếng"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Vietnamese",
+      "translation": "Liên hệ với chúng tôi"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Vietnamese",
+      "translation": "Hãy liên hệ với nhóm của chúng tôi"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Vietnamese",
+      "translation": "Liên hệ với chúng tôi"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Vietnamese",
+      "translation": "Liên kết hữu ích"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Hỏi Harwich"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Vietnamese",
+      "translation": "Tìm việc làm"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Vietnamese",
+      "translation": "Đăng ký nhận tin tức"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Vietnamese",
+      "translation": "Công ty"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Vietnamese",
+      "translation": "Địa chỉ toàn cầu"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Vietnamese",
+      "translation": "Chiến lược"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Vietnamese",
+      "translation": "Ban lãnh đạo của chúng tôi"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Vietnamese",
+      "translation": "Các thương hiệu từ A đến Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Vietnamese",
+      "translation": "Lịch sử của chúng tôi"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Vietnamese",
+      "translation": "Tính bền vững"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Vietnamese",
+      "translation": "Tin tức"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Vietnamese",
+      "translation": "Liên hệ truyền thông"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Vietnamese",
+      "translation": "Hình ảnh"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Vietnamese",
+      "translation": "Nhà đầu tư"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Vietnamese",
+      "translation": "Quản trị doanh nghiệp"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Vietnamese",
+      "translation": "Cổ phiếu, chứng chỉ lưu ký (ADR) và trái phiếu"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Vietnamese",
+      "translation": "Ấn phẩm"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Vietnamese",
+      "translation": "Theo dõi chúng tôi trên"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Vietnamese",
+      "translation": "0 Vấn đề"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Vietnamese",
+      "translation": "Sơ đồ trang web"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Vietnamese",
+      "translation": "Hủy đăng ký"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Vietnamese",
+      "translation": "Giúp đỡ"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Vietnamese",
+      "translation": "Sự riêng tư"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Vietnamese",
+      "translation": "Bánh quy"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Vietnamese",
+      "translation": "Điều khoản sử dụng"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Vietnamese",
+      "translation": "Khả năng tiếp cận"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Vietnamese",
+      "translation": "Hiệu quả carbon"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Vietnamese",
+      "translation": "Nhà cung cấp"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Vietnamese",
+      "translation": "Mạng xã hội"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Vietnamese",
+      "translation": "Cài đặt cookie"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Vietnamese",
+      "translation": "Chất lượng cao cấp"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Vietnamese",
+      "translation": "Địa chỉ email"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Vietnamese",
+      "translation": "Nhập địa chỉ email của bạn"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Vietnamese",
+      "translation": "Đặt mua"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Vietnamese",
+      "translation": "Đăng ký..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Vietnamese",
+      "translation": "Về chúng tôi"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Vietnamese",
+      "translation": "Phương tiện truyền thông"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Vietnamese",
+      "translation": "Tìm kiếm sản phẩm, thương hiệu hoặc danh mục"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Vietnamese",
+      "translation": "Không tìm thấy kết quả nào."
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tìm kiếm..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Vietnamese",
+      "translation": "Kết quả"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Vietnamese",
+      "translation": "Trò chuyện với chúng tôi"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Vietnamese",
+      "translation": "Nhập tin nhắn của bạn..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Vietnamese",
+      "translation": "Gửi"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Vietnamese",
+      "translation": "Đóng"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Vietnamese",
+      "translation": "Chào bạn! Tôi có thể giúp gì cho bạn hôm nay?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Vietnamese",
+      "translation": "Tôi xin lỗi, tôi không hiểu. Bạn có thể diễn đạt lại được không?"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Vietnamese",
+      "translation": "Tôi có thể giúp bạn về thông tin sản phẩm, đặt hàng hoặc các thắc mắc chung. Bạn muốn biết điều gì?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Vietnamese",
+      "translation": "Để được hỗ trợ thêm, vui lòng liên hệ với chúng tôi qua địa chỉ support@harvics.com hoặc gọi điện đến số +1-800-HARVICS."
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Vietnamese",
+      "translation": "Trò chuyện với chúng tôi"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tải..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Vietnamese",
+      "translation": "Lỗi"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Vietnamese",
+      "translation": "Thành công"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Vietnamese",
+      "translation": "Cứu"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Vietnamese",
+      "translation": "Hủy bỏ"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Vietnamese",
+      "translation": "Xóa bỏ"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Vietnamese",
+      "translation": "Biên tập"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Vietnamese",
+      "translation": "Xem"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Vietnamese",
+      "translation": "Nộp"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Vietnamese",
+      "translation": "Tìm kiếm"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Vietnamese",
+      "translation": "Lọc"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Vietnamese",
+      "translation": "Thông thoáng"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Vietnamese",
+      "translation": "Tải xuống"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Vietnamese",
+      "translation": "Tải lên"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Vietnamese",
+      "translation": "Đúng"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Vietnamese",
+      "translation": "KHÔNG"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Vietnamese",
+      "translation": "Đóng"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Vietnamese",
+      "translation": "Mặt sau"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Vietnamese",
+      "translation": "Kế tiếp"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Vietnamese",
+      "translation": "Trước"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Vietnamese",
+      "translation": "Hành động"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Vietnamese",
+      "translation": "Trạng thái"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Vietnamese",
+      "translation": "Ngày"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Vietnamese",
+      "translation": "Tên"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Vietnamese",
+      "translation": "E-mail"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Vietnamese",
+      "translation": "Điện thoại"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Vietnamese",
+      "translation": "Địa chỉ"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Vietnamese",
+      "translation": "Quốc gia"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Vietnamese",
+      "translation": "Thành phố"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Vietnamese",
+      "translation": "Tất cả"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Vietnamese",
+      "translation": "Không có"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Vietnamese",
+      "translation": "Lựa chọn"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Vietnamese",
+      "translation": "Chọn ngôn ngữ"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Vietnamese",
+      "translation": "Chọn quốc gia"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Vietnamese",
+      "translation": "Hiển thị thêm"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Vietnamese",
+      "translation": "Hiển thị ít hơn"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Vietnamese",
+      "translation": "Yêu cầu"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Vietnamese",
+      "translation": "Thực đơn"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Vietnamese",
+      "translation": "Xem sản phẩm"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Vietnamese",
+      "translation": "Phát nhạc"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Vietnamese",
+      "translation": "Tạm dừng nhạc"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Vietnamese",
+      "translation": "Tắt nhạc"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Vietnamese",
+      "translation": "Bật âm thanh"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Vietnamese",
+      "translation": "Phạm vi toàn cầu của chúng tôi"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Vietnamese",
+      "translation": "Từ"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Vietnamese",
+      "translation": "Thị trường chính"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Vietnamese",
+      "translation": "Các thị trường chính"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Vietnamese",
+      "translation": "Sự hiện diện"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Vietnamese",
+      "translation": "Các quốc gia được phục vụ"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Vietnamese",
+      "translation": "Các thị trường chính"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Vietnamese",
+      "translation": "Danh mục sản phẩm"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Vietnamese",
+      "translation": "Thành lập"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Vietnamese",
+      "translation": "Hệ thống phân cấp lãnh thổ"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Vietnamese",
+      "translation": "Đường dẫn đầy đủ"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Vietnamese",
+      "translation": "Lãnh thổ hiện tại"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Vietnamese",
+      "translation": "Không có mặt hàng nào"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Vietnamese",
+      "translation": "Khối cầu"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Vietnamese",
+      "translation": "Lục địa"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Vietnamese",
+      "translation": "Vùng đất"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Vietnamese",
+      "translation": "Quốc gia"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Vietnamese",
+      "translation": "Thành phố"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Vietnamese",
+      "translation": "Huyện"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Vietnamese",
+      "translation": "Vị trí"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Vietnamese",
+      "translation": "Harvics Toàn cầu"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Vietnamese",
+      "translation": "Toàn cầu"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Vietnamese",
+      "translation": "Chọn khu vực"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Vietnamese",
+      "translation": "Thông tin khách hàng"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Vietnamese",
+      "translation": "Đã chọn"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Vietnamese",
+      "translation": "Họ và tên đầy đủ"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Vietnamese",
+      "translation": "Nhập đầy đủ họ của bạn"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Vietnamese",
+      "translation": "Tên là bắt buộc"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Vietnamese",
+      "translation": "Địa chỉ email"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Vietnamese",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Vietnamese",
+      "translation": "Cần có email."
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Vietnamese",
+      "translation": "Vui lòng nhập địa chỉ email hợp lệ."
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Vietnamese",
+      "translation": "Số điện thoại"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Vietnamese",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Vietnamese",
+      "translation": "Cần có số điện thoại."
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Vietnamese",
+      "translation": "Địa chỉ"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Vietnamese",
+      "translation": "Địa chỉ của bạn"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Vietnamese",
+      "translation": "Địa chỉ là bắt buộc"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Vietnamese",
+      "translation": "Tôi đồng ý nhận các thông tin tiếp thị và cập nhật."
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Vietnamese",
+      "translation": "Gửi & Tiếp tục"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang gửi..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Vietnamese",
+      "translation": "Bỏ qua & Tiếp tục"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Vietnamese",
+      "translation": "Các chỉ số hiệu suất chính"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Vietnamese",
+      "translation": "Đặt hàng hôm nay"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Vietnamese",
+      "translation": "Được gửi qua hệ thống CRM của Harvics."
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Vietnamese",
+      "translation": "Đang chờ giao hàng"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Vietnamese",
+      "translation": "Trên các tuyến đường được chỉ định"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Vietnamese",
+      "translation": "Các nhà bán lẻ"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Vietnamese",
+      "translation": "Các ổ cắm đang hoạt động nằm trong phạm vi"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Vietnamese",
+      "translation": "Điểm T & A"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Vietnamese",
+      "translation": "Phạm vi lãnh thổ"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Vietnamese",
+      "translation": "Tài chính & Hàng tồn kho"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Vietnamese",
+      "translation": "SKU có số lượng tồn kho thấp"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Vietnamese",
+      "translation": "Kích hoạt bổ sung"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Vietnamese",
+      "translation": "Hóa đơn chưa thanh toán"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Vietnamese",
+      "translation": "Đến hạn thu hồi"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Vietnamese",
+      "translation": "Hạn mức tín dụng"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Vietnamese",
+      "translation": "Được phân công bởi bộ phận tài chính"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Vietnamese",
+      "translation": "Đã bật tính năng tự động phê duyệt, bổ sung hàng tồn kho và nhắc nhở hóa đơn."
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Vietnamese",
+      "translation": "Tự chấp thuận"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Vietnamese",
+      "translation": "Bổ sung hàng tồn kho"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Vietnamese",
+      "translation": "Nhắc nhở thanh toán hóa đơn"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Vietnamese",
+      "translation": "Đề xuất của AI"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Vietnamese",
+      "translation": "Mức độ rủi ro"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Vietnamese",
+      "translation": "Dựa trên lịch sử sử dụng tín dụng và lịch sử thanh toán."
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Vietnamese",
+      "translation": "Thứ tự đề xuất"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Vietnamese",
+      "translation": "Các mã sản phẩm (SKU) được AI đề xuất nên đặt hàng"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Vietnamese",
+      "translation": "Hành động tiếp theo"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Vietnamese",
+      "translation": "Hành động & Hướng dẫn"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Vietnamese",
+      "translation": "Khiếu nại"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Vietnamese",
+      "translation": "Các vấn đề của nhà bán lẻ đang chờ xử lý."
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Vietnamese",
+      "translation": "Sổ tay chiến thuật"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Vietnamese",
+      "translation": "Ưu tiên các đơn hàng đang chờ giao trước trưa."
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Vietnamese",
+      "translation": "Giải quyết tất cả các khiếu nại chưa được giải quyết trong vòng 48 giờ."
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Vietnamese",
+      "translation": "Kích hoạt chế độ bổ sung hàng cho các SKU có số lượng tồn kho thấp (tự động tạo đơn đặt hàng)."
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Vietnamese",
+      "translation": "Lãnh thổ"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Vietnamese",
+      "translation": "Đơn hàng tháng này"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Vietnamese",
+      "translation": "Đơn hàng đang chờ xử lý"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Vietnamese",
+      "translation": "Đơn hàng đã giao"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Vietnamese",
+      "translation": "Thông tin lãnh thổ"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Vietnamese",
+      "translation": "Quốc gia"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Vietnamese",
+      "translation": "Thành phố"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Vietnamese",
+      "translation": "Vùng đất"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Vietnamese",
+      "translation": "Thao tác nhanh"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Vietnamese",
+      "translation": "Trật tự mới"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Vietnamese",
+      "translation": "Xem đơn hàng"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Vietnamese",
+      "translation": "Xem hóa đơn"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Vietnamese",
+      "translation": "Cài đặt hồ sơ"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tải bảng điều khiển..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Vietnamese",
+      "translation": "Lỗi"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Vietnamese",
+      "translation": "Đơn hàng của tôi"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Vietnamese",
+      "translation": "Mã đơn hàng"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Vietnamese",
+      "translation": "Ngày"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Vietnamese",
+      "translation": "Trạng thái"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Vietnamese",
+      "translation": "Mặt hàng"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Vietnamese",
+      "translation": "Tổng số tiền"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Vietnamese",
+      "translation": "Hành động"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Vietnamese",
+      "translation": "Xem chi tiết"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Vietnamese",
+      "translation": "Trạng thái"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Vietnamese",
+      "translation": "Ngày bắt đầu"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Vietnamese",
+      "translation": "Ngày kết thúc"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Vietnamese",
+      "translation": "Tất cả trạng thái"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Vietnamese",
+      "translation": "Xóa bộ lọc"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Vietnamese",
+      "translation": "Chưa giải quyết"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Vietnamese",
+      "translation": "Xử lý"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Vietnamese",
+      "translation": "Đã giao hàng"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Vietnamese",
+      "translation": "Đã hủy"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Vietnamese",
+      "translation": "Không tìm thấy đơn hàng nào"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tải đơn hàng..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Vietnamese",
+      "translation": "Trang"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Vietnamese",
+      "translation": "của"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Vietnamese",
+      "translation": "Trước"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Vietnamese",
+      "translation": "Kế tiếp"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Vietnamese",
+      "translation": "Chi tiết đơn hàng"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Vietnamese",
+      "translation": "Trở lại đơn hàng"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Vietnamese",
+      "translation": "Mã đơn hàng"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Vietnamese",
+      "translation": "Trạng thái"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Vietnamese",
+      "translation": "Ngày đặt hàng"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Vietnamese",
+      "translation": "Ngày giao hàng"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Vietnamese",
+      "translation": "Địa chỉ giao hàng"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Vietnamese",
+      "translation": "Ghi chú"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Vietnamese",
+      "translation": "Đặt hàng các mặt hàng"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Vietnamese",
+      "translation": "Sản phẩm"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Vietnamese",
+      "translation": "Mã SKU"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Vietnamese",
+      "translation": "Số lượng"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Vietnamese",
+      "translation": "Đơn giá"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Vietnamese",
+      "translation": "Tổng cộng"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Vietnamese",
+      "translation": "Tổng số tiền"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Vietnamese",
+      "translation": "Dòng thời gian trạng thái"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Vietnamese",
+      "translation": "Không tìm thấy đơn hàng"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Vietnamese",
+      "translation": "Tạo đơn hàng mới"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Vietnamese",
+      "translation": "Đặt hàng các mặt hàng"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Vietnamese",
+      "translation": "Thêm mục"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Vietnamese",
+      "translation": "Chưa có mặt hàng nào được thêm. Nhấp vào \"Thêm mặt hàng\" để bắt đầu."
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Vietnamese",
+      "translation": "Chi tiết đơn hàng"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Vietnamese",
+      "translation": "Ngày giao hàng"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Vietnamese",
+      "translation": "Địa chỉ giao hàng"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Vietnamese",
+      "translation": "Ghi chú"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Vietnamese",
+      "translation": "Tổng số tiền"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Vietnamese",
+      "translation": "Tạo đơn hàng"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tạo đơn hàng..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Vietnamese",
+      "translation": "Hủy bỏ"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Vietnamese",
+      "translation": "Chọn sản phẩm"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Vietnamese",
+      "translation": "Sản phẩm"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Vietnamese",
+      "translation": "Số lượng"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Vietnamese",
+      "translation": "Đơn giá"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Vietnamese",
+      "translation": "Di dời"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Vietnamese",
+      "translation": "Tổng phụ"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Vietnamese",
+      "translation": "Mã đơn hàng"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Vietnamese",
+      "translation": "Ít nhất một mặt hàng cần phải đặt."
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Vietnamese",
+      "translation": "Sản phẩm là bắt buộc"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Vietnamese",
+      "translation": "Số lượng phải lớn hơn 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Vietnamese",
+      "translation": "Đơn giá phải là số dương."
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Vietnamese",
+      "translation": "Định dạng ngày giao hàng không hợp lệ"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Vietnamese",
+      "translation": "Ngày giao hàng không được quá khứ."
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Vietnamese",
+      "translation": "Hóa đơn của tôi"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Vietnamese",
+      "translation": "Số hóa đơn"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Vietnamese",
+      "translation": "Ngày lập hóa đơn"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Vietnamese",
+      "translation": "Hai cuộc hẹn"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Vietnamese",
+      "translation": "Số lượng"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Vietnamese",
+      "translation": "Số tiền đã thanh toán"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Vietnamese",
+      "translation": "Trạng thái thanh toán"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Vietnamese",
+      "translation": "Trạng thái thanh toán"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Vietnamese",
+      "translation": "Tất cả trạng thái"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Vietnamese",
+      "translation": "Xóa bộ lọc"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Vietnamese",
+      "translation": "Trả"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Vietnamese",
+      "translation": "Chưa được trả lương"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Vietnamese",
+      "translation": "Một phần"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Vietnamese",
+      "translation": "Không tìm thấy hóa đơn nào"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tải hóa đơn..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Vietnamese",
+      "translation": "Hồ sơ của tôi"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Vietnamese",
+      "translation": "Thông tin tài khoản"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Vietnamese",
+      "translation": "Mã định danh nhà phân phối"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Vietnamese",
+      "translation": "Lãnh thổ"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Vietnamese",
+      "translation": "Quốc gia"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Vietnamese",
+      "translation": "Thành phố"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Vietnamese",
+      "translation": "Tài khoản đã được tạo"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Vietnamese",
+      "translation": "Cập nhật hồ sơ"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Vietnamese",
+      "translation": "Tên"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Vietnamese",
+      "translation": "E-mail"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Vietnamese",
+      "translation": "Điện thoại"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Vietnamese",
+      "translation": "Địa chỉ"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Vietnamese",
+      "translation": "Ngôn ngữ"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Vietnamese",
+      "translation": "Tiền tệ"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Vietnamese",
+      "translation": "Lưu thay đổi"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang lưu..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Vietnamese",
+      "translation": "Hồ sơ đã được cập nhật thành công."
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tải hồ sơ..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Vietnamese",
+      "translation": "Định dạng email không hợp lệ"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Vietnamese",
+      "translation": "Định dạng điện thoại không hợp lệ"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Vietnamese",
+      "translation": "Lỗi"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tải..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Vietnamese",
+      "translation": "Cứu"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Vietnamese",
+      "translation": "Hủy bỏ"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Vietnamese",
+      "translation": "Mặt sau"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Vietnamese",
+      "translation": "Nộp"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Vietnamese",
+      "translation": "Xóa bỏ"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Vietnamese",
+      "translation": "Biên tập"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Vietnamese",
+      "translation": "Xem"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Vietnamese",
+      "translation": "Tìm kiếm"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Vietnamese",
+      "translation": "Lọc"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Vietnamese",
+      "translation": "Thông thoáng"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Vietnamese",
+      "translation": "Áp dụng"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Vietnamese",
+      "translation": "Đóng"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Vietnamese",
+      "translation": "Xác nhận"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Vietnamese",
+      "translation": "Đúng"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Vietnamese",
+      "translation": "KHÔNG"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Vietnamese",
+      "translation": "Hệ điều hành hợp pháp"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Vietnamese",
+      "translation": "Hệ điều hành hợp pháp"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Vietnamese",
+      "translation": "Quyền truy cập bị từ chối"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Vietnamese",
+      "translation": "Bạn không có quyền truy cập vào mô-đun Hệ điều hành pháp lý."
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Vietnamese",
+      "translation": "Bảng điều khiển"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Vietnamese",
+      "translation": "Hợp đồng"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Vietnamese",
+      "translation": "Chứng chỉ"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Vietnamese",
+      "translation": "Sự tuân thủ"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Vietnamese",
+      "translation": "Bảng điều khiển pháp lý"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Vietnamese",
+      "translation": "Tổng quan về hoạt động pháp lý và tình trạng tuân thủ pháp luật"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Vietnamese",
+      "translation": "Nhãn hiệu đang hoạt động"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Vietnamese",
+      "translation": "Hợp đồng đang hoạt động"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Vietnamese",
+      "translation": "Trạng thái tuân thủ"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Vietnamese",
+      "translation": "Nhãn hiệu"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Vietnamese",
+      "translation": "Quản lý việc đăng ký và nộp đơn xin nhãn hiệu."
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Vietnamese",
+      "translation": "Thêm nhãn hiệu mới"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Vietnamese",
+      "translation": "Quốc gia"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Vietnamese",
+      "translation": "Trạng thái"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Vietnamese",
+      "translation": "Tất cả các quốc gia"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Vietnamese",
+      "translation": "Tất cả trạng thái"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Vietnamese",
+      "translation": "Xóa bộ lọc"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Vietnamese",
+      "translation": "Tên thương hiệu"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Vietnamese",
+      "translation": "Lớp học"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Vietnamese",
+      "translation": "Quốc gia"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Vietnamese",
+      "translation": "Số đơn đăng ký"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Vietnamese",
+      "translation": "Trạng thái"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Vietnamese",
+      "translation": "Ngày hết hạn"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Vietnamese",
+      "translation": "Hành động"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Vietnamese",
+      "translation": "Chỉnh sửa nhãn hiệu"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Vietnamese",
+      "translation": "Thêm nhãn hiệu mới"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Vietnamese",
+      "translation": "Xem nhãn hiệu"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Vietnamese",
+      "translation": "Tên thương hiệu"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Vietnamese",
+      "translation": "Mã số lớp"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Vietnamese",
+      "translation": "Quốc gia"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Vietnamese",
+      "translation": "Số đơn đăng ký"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Vietnamese",
+      "translation": "Trạng thái"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Vietnamese",
+      "translation": "Ngày hết hạn"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Vietnamese",
+      "translation": "Tài liệu"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Vietnamese",
+      "translation": "Không có tài liệu nào được đính kèm."
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Vietnamese",
+      "translation": "Thêm tài liệu"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Vietnamese",
+      "translation": "Di dời"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Vietnamese",
+      "translation": "Không thể tải nhãn hiệu."
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Vietnamese",
+      "translation": "Không thể lưu nhãn hiệu. Vui lòng thử lại."
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Vietnamese",
+      "translation": "Các vụ kiện pháp lý"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Vietnamese",
+      "translation": "Quản lý các vụ kiện pháp lý và theo dõi tình trạng của chúng."
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Vietnamese",
+      "translation": "Vỏ mới"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Vietnamese",
+      "translation": "Tên vụ án"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Vietnamese",
+      "translation": "Loại trường hợp"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Vietnamese",
+      "translation": "Quốc gia"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Vietnamese",
+      "translation": "Sự miêu tả"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Vietnamese",
+      "translation": "Được giao cho"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Vietnamese",
+      "translation": "Trạng thái"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Vietnamese",
+      "translation": "Ngày xét xử"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Vietnamese",
+      "translation": "Tên vụ án"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Vietnamese",
+      "translation": "Kiểu"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Vietnamese",
+      "translation": "Quốc gia"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Vietnamese",
+      "translation": "Được giao cho"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Vietnamese",
+      "translation": "Trạng thái"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Vietnamese",
+      "translation": "Ngày xét xử"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Vietnamese",
+      "translation": "Hành động"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Vietnamese",
+      "translation": "Mở"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tiến hành"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Vietnamese",
+      "translation": "Đóng cửa"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Vietnamese",
+      "translation": "Đã hủy"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Vietnamese",
+      "translation": "Chế độ xem bản đồ đội tàu"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Vietnamese",
+      "translation": "Theo dõi thời gian thực vị trí của nhân viên bán hàng và xe giao hàng"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Vietnamese",
+      "translation": "Nhân viên tích cực"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Vietnamese",
+      "translation": "Không có nhân viên nào đang hoạt động."
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tải..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Vietnamese",
+      "translation": "Phát lại lộ trình"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Vietnamese",
+      "translation": "Người lao động"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Vietnamese",
+      "translation": "Tốc độ"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Vietnamese",
+      "translation": "Cài lại"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Vietnamese",
+      "translation": "Chơi"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Vietnamese",
+      "translation": "Tạm dừng"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Vietnamese",
+      "translation": "điểm"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Vietnamese",
+      "translation": "Không có dữ liệu về tuyến đường."
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tải tuyến đường..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Vietnamese",
+      "translation": "Sản phẩm của đối thủ cạnh tranh"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Vietnamese",
+      "translation": "Theo dõi thông tin sản phẩm của đối thủ cạnh tranh"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Vietnamese",
+      "translation": "Thêm sản phẩm"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Vietnamese",
+      "translation": "Thêm sản phẩm của đối thủ cạnh tranh"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Vietnamese",
+      "translation": "Thương hiệu"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Vietnamese",
+      "translation": "Tên SKU"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Vietnamese",
+      "translation": "Loại"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Vietnamese",
+      "translation": "Kích cỡ"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Vietnamese",
+      "translation": "Giá"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Vietnamese",
+      "translation": "Tiền tệ"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Vietnamese",
+      "translation": "Quốc gia"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Vietnamese",
+      "translation": "Thương hiệu"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Vietnamese",
+      "translation": "Tên SKU"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Vietnamese",
+      "translation": "Loại"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Vietnamese",
+      "translation": "Kích cỡ"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Vietnamese",
+      "translation": "Giá"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Vietnamese",
+      "translation": "Quốc gia"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Vietnamese",
+      "translation": "Ngày thêm"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Vietnamese",
+      "translation": "Không thể tải sản phẩm"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Vietnamese",
+      "translation": "Không thể tạo sản phẩm. Vui lòng thử lại."
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Vietnamese",
+      "translation": "Không tìm thấy sản phẩm cạnh tranh nào."
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tải sản phẩm..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Vietnamese",
+      "translation": "Bảng điều khiển đối thủ cạnh tranh"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Vietnamese",
+      "translation": "Phân tích và hiểu biết sâu sắc về sản phẩm của đối thủ cạnh tranh."
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Vietnamese",
+      "translation": "Tổng sản phẩm"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Vietnamese",
+      "translation": "Các thương hiệu được theo dõi"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Vietnamese",
+      "translation": "Các quốc gia"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Vietnamese",
+      "translation": "Thể loại"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Vietnamese",
+      "translation": "Sản phẩm theo thương hiệu"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Vietnamese",
+      "translation": "Sản phẩm theo quốc gia"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Vietnamese",
+      "translation": "Sản phẩm theo danh mục"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tải số liệu thống kê..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Vietnamese",
+      "translation": "Không có số liệu thống kê nào."
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Vietnamese",
+      "translation": "Tổng quan"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Vietnamese",
+      "translation": "Đơn đặt hàng"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Vietnamese",
+      "translation": "Hàng tồn kho"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Vietnamese",
+      "translation": "Hậu cần"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Vietnamese",
+      "translation": "Tài chính"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Vietnamese",
+      "translation": "CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Vietnamese",
+      "translation": "Nhân sự"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Vietnamese",
+      "translation": "Điều hành"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Vietnamese",
+      "translation": "Nhà đầu tư"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Vietnamese",
+      "translation": "Pháp luật/Quyền sở hữu trí tuệ"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Vietnamese",
+      "translation": "Đối thủ cạnh tranh"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Vietnamese",
+      "translation": "Nhập khẩu/Xuất khẩu"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Vietnamese",
+      "translation": "Theo dõi GPS"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Vietnamese",
+      "translation": "Định vị"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Vietnamese",
+      "translation": "Quy trình làm việc"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Vietnamese",
+      "translation": "Quản trị viên"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Vietnamese",
+      "translation": "Hệ điều hành CRM"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Vietnamese",
+      "translation": "Khách hàng 360"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Vietnamese",
+      "translation": "Hồ sơ khách hàng đầy đủ, lịch sử tương tác và quản lý mối quan hệ."
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Vietnamese",
+      "translation": "Chiến dịch kỹ thuật số"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Vietnamese",
+      "translation": "Các chiến dịch tiếp thị đa kênh (Instagram, Facebook, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Vietnamese",
+      "translation": "Khách hàng tiềm năng & Cơ hội"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Vietnamese",
+      "translation": "Quản lý khách hàng tiềm năng, sàng lọc và xây dựng nguồn cơ hội kinh doanh."
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Vietnamese",
+      "translation": "Hỗ trợ khách hàng"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Vietnamese",
+      "translation": "Quản lý vé, dịch vụ khách hàng và giải quyết vấn đề"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Vietnamese",
+      "translation": "Chương trình khách hàng thân thiết"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Vietnamese",
+      "translation": "Chương trình khách hàng thân thiết của nhà bán lẻ, trò chơi hóa và quản lý phần thưởng."
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Vietnamese",
+      "translation": "Khách hàng 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Vietnamese",
+      "translation": "Khách hàng mới"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Vietnamese",
+      "translation": "Tổng số khách hàng"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Vietnamese",
+      "translation": "Tích cực"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Vietnamese",
+      "translation": "Mới"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Vietnamese",
+      "translation": "Sự hài lòng"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Vietnamese",
+      "translation": "Quản lý khách hàng"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Vietnamese",
+      "translation": "Xem và quản lý các mối quan hệ, tương tác và chiến dịch với khách hàng."
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tải..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Vietnamese",
+      "translation": "Lỗi khi tải dữ liệu CRM"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Vietnamese",
+      "translation": "Tổng quan"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Vietnamese",
+      "translation": "Đơn đặt hàng"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Vietnamese",
+      "translation": "Hàng tồn kho"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Vietnamese",
+      "translation": "Hậu cần"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Vietnamese",
+      "translation": "Tài chính"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Vietnamese",
+      "translation": "CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Vietnamese",
+      "translation": "Nhân sự"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Vietnamese",
+      "translation": "Điều hành"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Vietnamese",
+      "translation": "Nhà đầu tư"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Vietnamese",
+      "translation": "Pháp luật/Quyền sở hữu trí tuệ"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Vietnamese",
+      "translation": "Đối thủ cạnh tranh"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Vietnamese",
+      "translation": "Nhập khẩu/Xuất khẩu"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Vietnamese",
+      "translation": "Theo dõi GPS"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Vietnamese",
+      "translation": "Định vị"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Vietnamese",
+      "translation": "Quy trình làm việc"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Vietnamese",
+      "translation": "Quản trị viên"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Vietnamese",
+      "translation": "Khách hàng"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Vietnamese",
+      "translation": "Người lao động"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Vietnamese",
+      "translation": "Lợi nhuận"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Vietnamese",
+      "translation": "Đang tải bảng điều khiển nhà cung cấp…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Vietnamese",
+      "translation": "Đơn đặt hàng"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Được nuôi dưỡng bởi Harvics"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Vietnamese",
+      "translation": "Lô hàng / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Vietnamese",
+      "translation": "Đã được chấp nhận trong tuần này"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Vietnamese",
+      "translation": "Hóa đơn đã tạo"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Vietnamese",
+      "translation": "Đang chờ thanh toán"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Vietnamese",
+      "translation": "Các khoản thanh toán đang chờ xử lý"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Vietnamese",
+      "translation": "Dự kiến phát hành"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Vietnamese",
+      "translation": "Chất lượng / khiếu nại"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Vietnamese",
+      "translation": "Vé mở"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Vietnamese",
+      "translation": "Dự báo (4 tuần tới)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Vietnamese",
+      "translation": "Trình giữ chỗ AI"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Vietnamese",
+      "translation": "Hành động của nhà cung cấp"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Vietnamese",
+      "translation": "Xác nhận các lô hàng sắp tới và cập nhật lịch trình GRN."
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Vietnamese",
+      "translation": "Xem xét các hóa đơn chưa thanh toán và thông báo về việc thanh toán."
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Vietnamese",
+      "translation": "Giải quyết các khiếu nại về chất lượng còn tồn đọng bằng chứng cứ kiểm soát chất lượng."
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Vietnamese",
+      "translation": "Tên người dùng"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Vietnamese",
+      "translation": "Mật khẩu"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Vietnamese",
+      "translation": "E-mail"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Vietnamese",
+      "translation": "Nộp"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Vietnamese",
+      "translation": "Hủy bỏ"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Vietnamese",
+      "translation": "Cứu"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Vietnamese",
+      "translation": "Xóa bỏ"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Vietnamese",
+      "translation": "Tìm kiếm"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Vietnamese",
+      "translation": "Lọc"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Vietnamese",
+      "translation": "Cài lại"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Vietnamese",
+      "translation": "Đóng"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Vietnamese",
+      "translation": "Mặt sau"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Vietnamese",
+      "translation": "Kế tiếp"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Vietnamese",
+      "translation": "Trước"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Vietnamese",
+      "translation": "Xác nhận"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Vietnamese",
+      "translation": "Hãy nhớ đến tôi"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Vietnamese",
+      "translation": "Quên mật khẩu?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Vietnamese",
+      "translation": "Cần có email."
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Vietnamese",
+      "translation": "Vui lòng nhập địa chỉ email hợp lệ."
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Vietnamese",
+      "translation": "Các sản phẩm"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Vietnamese",
+      "translation": "Harvics cung cấp những sản phẩm gì?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Vietnamese",
+      "translation": "Chúng tôi cung cấp nhiều loại sản phẩm thực phẩm cao cấp bao gồm bánh kẹo, đồ uống, đồ ăn nhẹ, mì ống, các loại bánh mì và thực phẩm đông lạnh thuộc nhiều danh mục khác nhau."
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Vietnamese",
+      "translation": "Tôi có thể mua các sản phẩm của Harvics ở đâu?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Vietnamese",
+      "translation": "Sản phẩm của chúng tôi có bán tại các cửa hàng bán lẻ trên hơn 40 quốc gia. Vui lòng sử dụng công cụ tìm cửa hàng hoặc trang liên hệ của chúng tôi để tìm nhà bán lẻ gần bạn."
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Vietnamese",
+      "translation": "Bạn có nhận đặt hàng số lượng lớn không?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Vietnamese",
+      "translation": "Có, chúng tôi có cung cấp chiết khấu cho đơn hàng số lượng lớn dành cho doanh nghiệp và nhà bán lẻ. Vui lòng truy cập trang Chiết khấu đơn hàng số lượng lớn của chúng tôi để biết thêm thông tin."
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Vietnamese",
+      "translation": "Đơn hàng & Vận chuyển"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Vietnamese",
+      "translation": "Bạn có những phương thức vận chuyển nào?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Vietnamese",
+      "translation": "Chúng tôi cung cấp nhiều lựa chọn vận chuyển khác nhau, bao gồm vận chuyển tiêu chuẩn, chuyển phát nhanh và vận chuyển quốc tế. Miễn phí vận chuyển cho đơn hàng trên 50 đô la."
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Vietnamese",
+      "translation": "Thời gian giao hàng mất bao lâu?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Vietnamese",
+      "translation": "Thời gian giao hàng có thể khác nhau tùy thuộc vào địa điểm. Giao hàng tiêu chuẩn thường mất 5-7 ngày làm việc, trong khi giao hàng nhanh mất 2-3 ngày làm việc."
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Vietnamese",
+      "translation": "Tôi có thể theo dõi đơn hàng của mình không?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Vietnamese",
+      "translation": "Vâng, bạn có thể theo dõi đơn hàng của mình bằng số vận đơn được cung cấp trong email xác nhận đơn hàng."
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Vietnamese",
+      "translation": "Tài khoản & Thanh toán"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Vietnamese",
+      "translation": "Tôi cần làm gì để tạo tài khoản?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Vietnamese",
+      "translation": "Nhấp vào \"Đăng nhập\" ở phần đầu trang và chọn \"Tạo tài khoản\" để đăng ký tài khoản mới."
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Vietnamese",
+      "translation": "Bạn chấp nhận những phương thức thanh toán nào?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Vietnamese",
+      "translation": "Chúng tôi chấp nhận tất cả các loại thẻ tín dụng, thẻ ghi nợ, PayPal và chuyển khoản ngân hàng cho các đơn đặt hàng B2B."
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Vietnamese",
+      "translation": "Thông tin thanh toán của tôi có an toàn không?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Vietnamese",
+      "translation": "Vâng, chúng tôi sử dụng mã hóa theo tiêu chuẩn ngành để bảo vệ thông tin thanh toán của bạn."
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Vietnamese",
+      "translation": "Chính sách đổi trả và hoàn tiền"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Vietnamese",
+      "translation": "Chính sách đổi trả hàng của bạn là gì?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Vietnamese",
+      "translation": "Chúng tôi cung cấp chính sách đổi trả trong vòng 30 ngày đối với các sản phẩm chưa mở hộp và còn nguyên bao bì. Vui lòng liên hệ với bộ phận chăm sóc khách hàng của chúng tôi để được cấp phép đổi trả."
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Vietnamese",
+      "translation": "Tôi có thể yêu cầu hoàn tiền bằng cách nào?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Vietnamese",
+      "translation": "Vui lòng liên hệ với bộ phận chăm sóc khách hàng của chúng tôi kèm theo số đơn hàng và lý do trả hàng. Chúng tôi sẽ xử lý hoàn tiền trong vòng 5-7 ngày làm việc."
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Vietnamese",
+      "translation": "Bạn vẫn còn thắc mắc?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Vietnamese",
+      "translation": "Đội ngũ chăm sóc khách hàng của chúng tôi luôn sẵn sàng hỗ trợ bạn."
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Vietnamese",
+      "translation": "Liên hệ với chúng tôi"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Vietnamese",
+      "translation": "Nghề nghiệp"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Cơ hội nghề nghiệp | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Vietnamese",
+      "translation": "Hãy gia nhập Harvics Global Ventures — khám phá các cơ hội tại hơn 40 quốc gia."
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Vietnamese",
+      "translation": "Hãy tham gia cùng chúng tôi"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Vietnamese",
+      "translation": "Xây dựng tương lai của thương mại toàn cầu"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Vietnamese",
+      "translation": "Chúng tôi đang phát triển tại hơn 40 quốc gia. Hãy gia nhập đội ngũ đang xây dựng hệ điều hành dựa trên trí tuệ nhân tạo cho thương mại toàn cầu."
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Vietnamese",
+      "translation": "Các vị trí đang tuyển dụng"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Vietnamese",
+      "translation": "Các quốc gia"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Vietnamese",
+      "translation": "Các ngành dọc"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Vietnamese",
+      "translation": "Các phòng ban đang tuyển dụng"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Vietnamese",
+      "translation": "Các vị trí còn trống theo từng phòng ban"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Vietnamese",
+      "translation": "Bán hàng & Phân phối"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Vietnamese",
+      "translation": "Thúc đẩy doanh thu trên hơn 40 thị trường. Quản lý khu vực, khách hàng trọng điểm, quan hệ nhà phân phối."
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Vietnamese",
+      "translation": "Chuỗi cung ứng & Hậu cần"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Vietnamese",
+      "translation": "Chuỗi cung ứng khép kín từ nhà máy đến kệ hàng. Quản lý đội xe, kho bãi, giao hàng chặng cuối."
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Vietnamese",
+      "translation": "Công nghệ & Trí tuệ nhân tạo"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Vietnamese",
+      "translation": "Xây dựng Harvics OS — nền tảng doanh nghiệp dựa trên trí tuệ nhân tạo của chúng tôi. Phát triển toàn diện, kỹ thuật học máy, khoa học dữ liệu."
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Vietnamese",
+      "translation": "Tài chính & Ngân quỹ"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Vietnamese",
+      "translation": "Quản lý kho bạc đa tiền tệ, tài trợ thương mại, thanh toán kỹ thuật số HPay, quản lý ngoại hối trên nhiều khu vực."
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Vietnamese",
+      "translation": "Mua sắm & Tìm nguồn cung ứng"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Vietnamese",
+      "translation": "Thu mua nguyên liệu toàn cầu từ hơn 15 quốc gia xuất xứ. Kiểm tra nhà cung cấp, kiểm soát chất lượng, chương trình mua hàng trực tiếp từ nhà máy."
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Vietnamese",
+      "translation": "Nhân sự"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Vietnamese",
+      "translation": "Tuyển dụng nhân tài, đào tạo và phát triển, quản lý hiệu suất làm việc trên nhiều khu vực địa lý và nền văn hóa khác nhau."
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Vietnamese",
+      "translation": "Pháp lý & Tuân thủ"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Vietnamese",
+      "translation": "Tuân thủ quy định thương mại, sàng lọc lệnh trừng phạt, bảo vệ sở hữu trí tuệ, quản lý hợp đồng xuyên quốc gia."
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Vietnamese",
+      "translation": "Tiếp thị & Thương hiệu"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Vietnamese",
+      "translation": "Các chiến dịch đa ngôn ngữ, nội dung 38 ngôn ngữ, tiếp thị kỹ thuật số, chiến lược thương hiệu cho 10 lĩnh vực."
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Vietnamese",
+      "translation": "vai trò"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Tại sao nên chọn Harvics?"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Vietnamese",
+      "translation": "Di chuyển toàn cầu"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Vietnamese",
+      "translation": "Làm việc tại Dubai, London, Karachi, Lahore và hơn 40 thị trường khác."
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Vietnamese",
+      "translation": "Lộ trình tăng trưởng"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Vietnamese",
+      "translation": "Cơ hội thăng tiến nghề nghiệp nhanh chóng trong một doanh nghiệp đang phát triển."
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Vietnamese",
+      "translation": "Văn hóa ưu tiên AI"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Vietnamese",
+      "translation": "Làm việc với trí tuệ nhân tạo tiên tiến và các hệ thống thông minh thời gian thực."
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Vietnamese",
+      "translation": "Gói đãi ngộ cạnh tranh"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Vietnamese",
+      "translation": "Mức lương, nhà ở và phúc lợi hàng đầu thị trường."
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Vietnamese",
+      "translation": "Ngân sách học tập"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Vietnamese",
+      "translation": "Ngân sách phát triển hàng năm cho các khóa học, hội nghị và chứng chỉ."
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Vietnamese",
+      "translation": "Làm việc linh hoạt"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Vietnamese",
+      "translation": "Mô hình làm việc kết hợp với các văn phòng trung tâm khu vực trên toàn thế giới."
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Vietnamese",
+      "translation": "Chiến lược của chúng tôi"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Chiến lược | Harwich"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Vietnamese",
+      "translation": "Xây dựng tương lai bền vững thông qua sự đổi mới và xuất sắc."
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Vietnamese",
+      "translation": "Xây dựng tương lai bền vững thông qua sự đổi mới và xuất sắc."
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Vietnamese",
+      "translation": "Mở rộng toàn cầu"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Vietnamese",
+      "translation": "Mở rộng sự hiện diện của chúng tôi tại các thị trường mới nổi đồng thời củng cố vị thế của chúng tôi tại các thị trường đã phát triển."
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Vietnamese",
+      "translation": "Đổi mới sản phẩm"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Vietnamese",
+      "translation": "Đầu tư vào nghiên cứu và phát triển để tạo ra các sản phẩm mới đáp ứng sở thích ngày càng thay đổi của người tiêu dùng."
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Vietnamese",
+      "translation": "Tính bền vững"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Vietnamese",
+      "translation": "Chúng tôi cam kết thực hiện các hoạt động bền vững trong toàn bộ chuỗi cung ứng và hoạt động kinh doanh của mình."
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Vietnamese",
+      "translation": "Chuyển đổi số"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Vietnamese",
+      "translation": "Ứng dụng công nghệ để nâng cao trải nghiệm khách hàng và hiệu quả hoạt động."
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Vietnamese",
+      "translation": "Tầm nhìn của chúng tôi"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Vietnamese",
+      "translation": "Trở thành công ty hàng tiêu dùng cao cấp hàng đầu thế giới, được công nhận về chất lượng, sự đổi mới và tính bền vững."
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Vietnamese",
+      "translation": "Harvics Global Ventures | Giao dịch toàn cầu cao cấp"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Vietnamese",
+      "translation": "Công ty thương mại toàn cầu hàng đầu cung cấp các sản phẩm cao cấp cho hơn 10 ngành công nghiệp. Hoạt động tại hơn 50 quốc gia từ năm 2019."
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Vietnamese",
+      "translation": "Về chúng tôi | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Vietnamese",
+      "translation": "Khám phá cách Harvics Global Ventures trở thành một thế lực hàng đầu trong thương mại toàn cầu tại hơn 40 quốc gia và 10 ngành công nghiệp."
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Vietnamese",
+      "translation": "Liên hệ với chúng tôi | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Vietnamese",
+      "translation": "Hãy liên hệ với các văn phòng của Harvics trên toàn thế giới tại Trung Đông, Nam Á, Châu Âu, Châu Phi và Châu Mỹ."
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Vietnamese",
+      "translation": "Sản phẩm | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Vietnamese",
+      "translation": "Khám phá dòng sản phẩm cao cấp của Harvics trong các lĩnh vực hàng tiêu dùng nhanh, dệt may, hàng hóa và giải pháp công nghiệp."
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Vietnamese",
+      "translation": "Cơ hội nghề nghiệp | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Vietnamese",
+      "translation": "Hãy gia nhập Harvics Global Ventures — khám phá các cơ hội tại hơn 40 quốc gia trong các lĩnh vực hàng tiêu dùng nhanh, dệt may, logistics và công nghệ."
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Vietnamese",
+      "translation": "Trung tâm Truyền thông | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Vietnamese",
+      "translation": "Trung tâm truyền thông của Harvics — thông cáo báo chí, tin tức mới nhất, tài sản thương hiệu và thông tin liên hệ truyền thông."
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Vietnamese",
+      "translation": "Chiến lược của chúng tôi | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Vietnamese",
+      "translation": "Tầm nhìn chiến lược của Harvics về mở rộng toàn cầu, đổi mới, phát triển bền vững và chuyển đổi số."
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Trách nhiệm xã hội doanh nghiệp | Harvics"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Vietnamese",
+      "translation": "Các sáng kiến trách nhiệm xã hội doanh nghiệp (CSR) của Harvics bao gồm bảo vệ môi trường, các chương trình cộng đồng và thực tiễn kinh doanh có đạo đức."
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Vietnamese",
+      "translation": "Câu hỏi thường gặp | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Vietnamese",
+      "translation": "Câu hỏi thường gặp về sản phẩm, dịch vụ, đặt hàng và hoạt động toàn cầu của Harvics."
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Địa điểm toàn cầu | Harvics"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Vietnamese",
+      "translation": "Các văn phòng và hoạt động của Harvic trải rộng khắp Trung Đông, Nam Á, Châu Âu, Châu Phi và Châu Mỹ."
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Đội ngũ lãnh đạo | Harvics"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Vietnamese",
+      "translation": "Hãy cùng gặp gỡ đội ngũ lãnh đạo đang dẫn dắt Harvics Global Ventures trên hơn 40 thị trường và 10 lĩnh vực công nghiệp khác nhau."
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Trung tâm trợ giúp | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Vietnamese",
+      "translation": "Nhận hỗ trợ về đơn đặt hàng, tài khoản, vận chuyển và các dịch vụ của Harvics."
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Tuân thủ và Đạo đức | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Vietnamese",
+      "translation": "Harvics cam kết tuân thủ các quy định pháp luật, thực hiện các hoạt động kinh doanh có đạo đức và đáp ứng các tiêu chuẩn toàn cầu."
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Lịch sử của chúng tôi | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Vietnamese",
+      "translation": "Từ một công ty khởi nghiệp ở Dubai năm 2019 đến một doanh nghiệp toàn cầu hoạt động tại hơn 40 quốc gia - đó là câu chuyện của Harvics."
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Bản tin | Harvics"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Vietnamese",
+      "translation": "Đăng ký nhận bản tin của Harvics để cập nhật thông tin chuyên ngành và các sản phẩm mới ra mắt."
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Đăng nhập | Harvics"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Vietnamese",
+      "translation": "Đăng nhập vào tài khoản Harvics của bạn để quản lý đơn hàng và truy cập nền tảng."
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Nghiên cứu và Đổi mới | Harvics"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Vietnamese",
+      "translation": "Các sáng kiến nghiên cứu và chương trình đổi mới của Harvics đang thúc đẩy chiến lược toàn cầu của chúng tôi."
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Vietnamese",
+      "translation": "Quan hệ nhà đầu tư | Harvics"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Vietnamese",
+      "translation": "Thông tin dành cho nhà đầu tư, báo cáo tài chính và thông báo của công ty Harvics Global Ventures."
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Vietnamese",
+      "translation": "Không tìm thấy trang"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Vietnamese",
+      "translation": "404 — Không tìm thấy trang"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Vietnamese",
+      "translation": "Trang bạn đang tìm kiếm không tồn tại hoặc đã được di chuyển."
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Vietnamese",
+      "translation": "Trở về trang chủ"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Vietnamese",
+      "translation": "Quay lại"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Vietnamese",
+      "translation": "Đã xảy ra lỗi"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Vietnamese",
+      "translation": "Đã xảy ra lỗi"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Vietnamese",
+      "translation": "Rất tiếc, nhưng đã xảy ra sự cố ngoài ý muốn. Vui lòng thử làm mới trang."
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Vietnamese",
+      "translation": "Thử lại"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Vietnamese",
+      "translation": "Tải lại trang"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Vietnamese",
+      "translation": "Liên hệ bộ phận hỗ trợ"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Vietnamese",
+      "translation": "Lỗi ứng dụng"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Vietnamese",
+      "translation": "Lỗi nghiêm trọng"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Vietnamese",
+      "translation": "Đã xảy ra lỗi nghiêm trọng. Vui lòng tải lại trang."
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Vietnamese",
+      "translation": "Tải lại ứng dụng"
+    }
+  }
+}

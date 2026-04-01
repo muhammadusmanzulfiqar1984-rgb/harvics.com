@@ -1,624 +1,1146 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
-    "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More"
+    "welcome": "Welkom bij",
+    "companyName": "Harwich",
+    "tagline": "Uitmuntendheid in hoogwaardige consumentengoederen sinds 2019.",
+    "exploreProducts": "Ontdek producten",
+    "contact": "Neem contact met ons op",
+    "learnMore": "Meer informatie",
+    "brandStatement": "Een toonaangevend wereldwijd bedrijf in consumentengoederen dat hoogwaardige voedingsproducten levert in diverse categorieën, met internationale kwaliteitsnormen.",
+    "taglineStart": "Uitmuntendheid in hoogwaardige consumentengoederen sinds",
+    "taglineYear": "2019",
+    "locations": "Londen • Milaan • New York",
+    "categories": {
+      "bakery": "Bakkerij",
+      "beverages": "Dranken",
+      "confectionery": "Banketbakkerij",
+      "culinary": "Culinaire",
+      "frozenFoods": "Diepvriesproducten",
+      "pasta": "Pasta",
+      "snacks": "Snacks"
+    }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
-    "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
+    "esgReport": "ESG-rapport 2025",
+    "locations": "Londen • Milaan • New York",
+    "home": "Thuis",
+    "about": "Over",
+    "aboutUs": "Over ons",
+    "brandStory": "Merkverhaal",
+    "products": "Producten",
+    "ourProducts": "Onze producten",
+    "viewAllProducts": "Bekijk alle producten",
+    "csr": "MVO",
+    "investorRelations": "Investeerdersrelaties",
+    "investors": "Investeerders",
     "media": "Media",
-    "contactUs": "Contact Us",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store"
+    "contactUs": "Neem contact met ons op",
+    "countries": "Landen",
+    "portals": "Portalen",
+    "signIn": "Inloggen",
+    "wishlist": "Verlanglijst",
+    "cart": "Winkelwagen",
+    "help": "Hulp",
+    "findStore": "Vind een winkel",
+    "harvicsHouse": "Harvics Huis",
+    "money": "Geld",
+    "sales": "Verkoop",
+    "offers": "Aanbiedingen",
+    "darkMode": "Donkere modus",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "Creditcard",
+        "msRewards": "M&S Rewards-creditcard",
+        "clubRewards": "Clubbeloningen",
+        "ourCards": "Onze creditcards"
+      },
+      "insurance": {
+        "title": "Verzekering",
+        "home": "Woningverzekering",
+        "travel": "Reisverzekering"
+      },
+      "travel": {
+        "title": "Reisdiensten",
+        "money": "Reisgeld",
+        "exchange": "Wisselkoersen"
+      },
+      "additional": {
+        "title": "Aanvullende diensten",
+        "savings": "Sparen en beleggen",
+        "personalLoans": "Persoonlijke leningen",
+        "financialSupport": "Financiële ondersteuning"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "Huidige verkoop",
+      "clearance": "Opruiming",
+      "seasonal": "Seizoensaanbiedingen"
+    },
+    "offersDropdown": {
+      "specialOffers": "Speciale aanbiedingen",
+      "promotions": "Promoties",
+      "bulkOrders": "Korting bij bulkbestellingen"
+    }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products"
+    "ourProducts": "Onze producten",
+    "viewAllProducts": "Bekijk alle producten",
+    "productCategories": "Onze productcategorieën",
+    "discoverPremium": "Ontdek ons premium assortiment producten, met zorg en uitmuntendheid vervaardigd.",
+    "tier1": "Niveau 1: Categorieën",
+    "tier2": "Niveau 2: Modules",
+    "tier3": "Niveau 3: KPI-schermen",
+    "tier4": "Niveau 4: Acties",
+    "reset": "Navigatie opnieuw instellen",
+    "noSubcategories": "Voor deze categorie zijn geen subcategorieën beschikbaar.",
+    "pageTitle": "Producten",
+    "subcategories": "Subcategorieën",
+    "bakery": "Bakkerij",
+    "bakeryDesc": "Versgebakken producten en gebak.",
+    "beverages": "Dranken",
+    "beveragesDesc": "Verfrissende drankjes voor elke gelegenheid.",
+    "confectionery": "Banketbakkerij",
+    "confectioneryDesc": "Zoete lekkernijen en verwennerijen.",
+    "culinary": "Culinaire",
+    "culinaryDesc": "Essentiële ingrediënten voor in uw keuken.",
+    "frozenFoods": "Diepvriesproducten",
+    "frozenFoodsDesc": "Handige en heerlijke diepvriesmaaltijden.",
+    "pasta": "Pasta",
+    "pastaDesc": "Authentieke pastasoorten.",
+    "snacks": "Snacks",
+    "snacksDesc": "Lekkere snacks voor elk moment van de dag."
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
-    "email": "Email",
+    "title": "Neem contact op",
+    "subtitle": "We horen graag van u. Neem contact met ons op via een van deze kanalen.",
+    "phone": "Telefoon",
+    "email": "E-mail",
     "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "callNow": "Bel nu",
+    "sendEmail": "E-mail verzenden",
+    "messageUs": "Stuur ons een bericht"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "Mediacentrum",
+    "pageTitle": "Mediacentrum | Harvics",
+    "description": "Persmateriaal, merkmateriaal en het laatste nieuws van Harvics Global Ventures.",
+    "corporate": "Zakelijk",
+    "sections": {
+      "news": {
+        "title": "Nieuws en persberichten",
+        "desc": "De nieuwste aankondigingen, marktuitbreidingen, productlanceringen en bedrijfsupdates van Harvics Global Ventures.",
+        "cta": "Lees het laatste nieuws"
+      },
+      "gallery": {
+        "title": "Fotogalerij",
+        "desc": "Merkmateriaal in hoge resolutie, productfotografie, foto's van faciliteiten en verslaggeving van evenementen voor mediagebruik.",
+        "cta": "Bekijk de galerij"
+      },
+      "contacts": {
+        "title": "Contactpersonen voor de media",
+        "desc": "Neem contact op met ons communicatieteam voor persvragen, interviewverzoeken en aankondigingen van samenwerkingen.",
+        "cta": "Neem contact op met het persteam."
+      }
+    },
+    "highlights": {
+      "marketsCovered": "Bestreken markten",
+      "industryVerticals": "Brancheverticalen",
+      "foundedIn": "Opgericht in Dubai",
+      "languagesSupported": "Ondersteunde talen"
+    },
+    "recentHeadlines": "Recente krantenkoppen",
+    "headlines": {
+      "expansion": "Harvics breidt activiteiten in de fast-moving consumer goods (FMCG) sector uit naar 5 nieuwe Zuidoost-Aziatische markten.",
+      "aiPlatform": "Nieuw AI-gestuurd platform voor de toeleveringsketen gelanceerd voor wereldwijde distributie",
+      "carbonNeutral": "Harvics bereikt mijlpaal van CO2-neutraliteit voor al haar vestigingen",
+      "partnership": "Strategisch partnerschap met toonaangevende textielfabrikanten in Zuid-Azië"
+    }
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
-    "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
-    "contactUsButton": "Contact Us",
-    "usefulLinks": "Useful Links",
-    "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
-    "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
-    "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
+    "tagline": "Uitmuntendheid in hoogwaardige consumentengoederen sinds 2019.",
+    "brandStatement": "Een toonaangevend wereldwijd bedrijf in consumentengoederen dat hoogwaardige voedingsproducten levert in diverse categorieën volgens internationale kwaliteitsnormen.",
+    "locations": "Londen • Milaan • New York",
+    "since": "Sinds 2019",
+    "harvicsNews": "Harvics Nieuws",
+    "subscribeToAlerts": "Abonneer u om meldingen en updates te ontvangen.",
+    "signUp": "Aanmelden",
+    "complianceConcerns": "Zorgen over naleving",
+    "speakUp": "Spreek je uit als je je zorgen maakt over naleving van de regels of ethiek.",
+    "speakUpButton": "Spreek je uit!",
+    "contactUs": "Neem contact met ons op",
+    "contactDescription": "Neem contact op met ons team.",
+    "contactUsButton": "Neem contact met ons op",
+    "usefulLinks": "Nuttige links",
+    "askHarvics": "Vraag het aan Harwich",
+    "searchForJobs": "Zoek naar vacatures",
+    "signUpForNews": "Meld je aan voor nieuws",
+    "company": "Bedrijf",
+    "globalAddresses": "Wereldwijde adressen",
+    "strategy": "Strategie",
+    "ourLeadership": "Ons leiderschap",
+    "brandsAZ": "Merken van A tot Z",
+    "ourHistory": "Onze geschiedenis",
+    "sustainability": "Duurzaamheid",
+    "news": "Nieuws",
+    "mediaContacts": "Contactpersonen voor de media",
+    "images": "Afbeeldingen",
+    "investors": "Investeerders",
+    "corporateGovernance": "Corporate governance",
+    "sharesAdrsBonds": "Aandelen, ADR's en obligaties",
+    "publications": "Publicaties",
+    "followUsOn": "Volg ons op",
+    "issuesCount": "0 problemen",
+    "siteMap": "Sitemap",
+    "unsubscribe": "Uitschrijven",
+    "help": "Hulp",
     "privacy": "Privacy",
     "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
+    "termsOfUse": "Gebruiksvoorwaarden",
+    "accessibility": "Toegankelijkheid",
+    "carbonEfficiency": "Koolstofefficiëntie",
+    "suppliers": "Leveranciers",
+    "socialMedia": "Sociale media",
+    "cookieSettings": "Cookie-instellingen",
     "feature1Title": "Global Reach",
     "feature1Desc": "Serving customers across 40+ countries worldwide",
-    "feature2Title": "Premium Quality",
+    "feature2Title": "Premium kwaliteit",
     "feature2Desc": "International quality standards in every product",
     "feature3Title": "Innovation",
     "feature3Desc": "Leading innovation in consumer goods industry",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
+    "emailAddress": "E-mailadres",
+    "enterEmailPlaceholder": "Voer uw e-mailadres in",
+    "subscribe": "Abonneren",
+    "subscribing": "Abonneren...",
+    "aboutUs": "Over ons",
     "media": "Media"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "Zoek naar producten, merken of categorieën.",
+    "noResults": "Geen resultaten gevonden",
+    "searching": "Zoeken...",
+    "results": "Resultaten"
   },
   "chatbot": {
-    "title": "Chat with Us",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "title": "Chat met ons",
+    "placeholder": "Typ je bericht...",
+    "send": "Versturen",
+    "close": "Dichtbij",
+    "welcome": "Hallo! Hoe kan ik u vandaag van dienst zijn?",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "Sorry, ik heb dat niet begrepen. Zou u het alstublieft anders kunnen formuleren?",
+      "help": "Ik kan u helpen met productinformatie, bestellingen of algemene vragen. Wat wilt u weten?",
+      "contact": "Voor verdere hulp kunt u contact met ons opnemen via support@harvics.com of bellen naar +1-800-HARVICS."
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
+    "chatWithUs": "Chat met ons",
+    "loading": "Laden...",
+    "error": "Fout",
+    "success": "Succes",
+    "save": "Redden",
+    "cancel": "Annuleren",
+    "delete": "Verwijderen",
+    "edit": "Bewerking",
+    "view": "Weergave",
+    "submit": "Indienen",
+    "search": "Zoekopdracht",
     "filter": "Filter",
-    "clear": "Clear",
+    "clear": "Duidelijk",
     "download": "Download",
-    "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
+    "upload": "Uploaden",
+    "yes": "Ja",
+    "no": "Nee",
+    "close": "Dichtbij",
+    "back": "Rug",
+    "next": "Volgende",
+    "previous": "Vorig",
+    "actions": "Acties",
     "status": "Status",
-    "date": "Date",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
+    "date": "Datum",
+    "name": "Naam",
+    "email": "E-mail",
+    "phone": "Telefoon",
+    "address": "Adres",
+    "country": "Land",
+    "city": "Stad",
+    "all": "Alle",
+    "none": "Geen",
     "select": "Select",
-    "selectCountry": "Select Country",
-    "required": "Required",
+    "selectCountry": "Land selecteren",
+    "required": "Vereist",
     "menu": "Menu",
-    "viewProducts": "View Products"
+    "viewProducts": "Bekijk producten",
+    "selectLanguage": "Taal selecteren",
+    "showMore": "Meer weergeven",
+    "showLess": "Minder weergeven"
   },
   "music": {
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "Speel muziek",
+    "pause": "Pauzeer de muziek",
+    "mute": "Muziek dempen",
+    "unmute": "Muziek inschakelen"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "Ons wereldwijde bereik",
+    "since": "Sinds",
+    "majorMarket": "Grote markt",
+    "majorMarkets": "Grote markten",
+    "presence": "Aanwezigheid",
+    "countriesServed": "Landen die bediend worden",
+    "majorMarketsCount": "Grote markten",
+    "productCategoriesCount": "Productcategorieën",
+    "establishedYear": "Gevestigd"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "Territoriale hiërarchie",
+    "fullPath": "Volledig pad",
+    "currentTerritory": "Huidig grondgebied",
+    "noChildren": "Geen artikelen",
     "tiers": {
-      "globe": "Globe",
+      "globe": "Bol",
       "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
-      "district": "District",
-      "location": "Location"
+      "region": "Regio",
+      "country": "Land",
+      "city": "Stad",
+      "district": "Wijk",
+      "location": "Locatie"
     }
   },
   "globalWorld": {
     "title": "Harvics Global",
-    "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "titleShort": "Wereldwijd",
+    "selectRegion": "Selecteer regio",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
-      "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
+      "title": "Klantgegevens",
+      "selected": "Gekozen",
+      "fullName": "Volledige naam",
+      "namePlaceholder": "Vul uw volledige naam in",
+      "nameRequired": "Naam is verplicht",
+      "email": "E-mailadres",
+      "emailPlaceholder": "jouw.email@example.com",
+      "emailRequired": "Een e-mailadres is verplicht.",
+      "emailInvalid": "Voer een geldig e-mailadres in.",
+      "phone": "Telefoonnummer",
       "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "phoneRequired": "Telefoonnummer is verplicht",
+      "address": "Adres",
+      "addressPlaceholder": "Uw adres",
+      "addressRequired": "Een adres is verplicht.",
+      "marketingConsent": "Ik ga ermee akkoord marketingberichten en updates te ontvangen.",
+      "submit": "Verzenden en verdergaan",
+      "submitting": "Verzenden...",
+      "skip": "Overslaan en verdergaan"
     }
   },
   "distributorPortal": {
     "dashboard": {
       "kpi": {
-        "title": "Key Performance Indicators",
-        "ordersToday": "Orders today",
-        "ordersTodaySubtitle": "Submitted via Harvics CRM",
-        "pendingDeliveries": "Pending deliveries",
-        "pendingDeliveriesSubtitle": "Across assigned routes",
-        "retailers": "Retailers",
-        "retailersSubtitle": "Active outlets in scope",
+        "title": "Kernprestatie-indicatoren",
+        "ordersToday": "Bestel vandaag nog!",
+        "ordersTodaySubtitle": "Ingediend via Harvics CRM",
+        "pendingDeliveries": "Leveringen in afwachting",
+        "pendingDeliveriesSubtitle": "Over toegewezen routes",
+        "retailers": "Detailhandelaren",
+        "retailersSubtitle": "Actieve verkooppunten binnen dit bereik",
         "attendance": "T & A Score",
-        "attendanceSubtitle": "Territory coverage"
+        "attendanceSubtitle": "Territoriale dekking"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "Financiën & Inventaris",
+        "lowStock": "SKU's met een lage voorraad",
+        "lowStockSubtitle": "Activeer aanvulling",
+        "outstandingInvoices": "Openstaande facturen",
+        "outstandingInvoicesSubtitle": "Afhalen mogelijk",
+        "creditLimit": "Kredietlimiet",
+        "creditLimitSubtitle": "Toegewezen door de financiële afdeling."
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "Automatische goedkeuring, voorraadbeheer en factuurherinneringen ingeschakeld",
+        "autoApproval": "Zelfgoedkeuring",
+        "stockReplenishment": "Voorraadaanvulling",
+        "invoiceReminders": "Factuurherinneringen"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "AI-aanbevelingen",
+        "riskLevel": "Risiconiveau",
+        "riskDescription": "Gebaseerd op kredietgebruik en betalingsgeschiedenis.",
+        "suggestedOrder": "Voorgestelde volgorde",
+        "suggestedOrderSubtitle": "Door AI aanbevolen SKU's om te bestellen",
+        "nextAction": "Volgende actie"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "Acties en richtlijnen",
+        "complaints": "Klachten",
+        "complaintsSubtitle": "Problemen met detailhandelaren die nog moeten worden opgelost.",
+        "playbook": "Speelboek",
+        "playbookItem1": "Geef prioriteit aan leveringen die vóór 12.00 uur moeten worden afgeleverd.",
+        "playbookItem2": "Sluit alle openstaande klachten binnen 48 uur af.",
+        "playbookItem3": "Activeer aanvulling voor artikelen met een lage voorraad (automatisch inkooporder aanmaken)."
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "Grondgebied",
+      "ordersThisMonth": "Bestellingen deze maand",
+      "pendingOrders": "Bestellingen in behandeling",
+      "deliveredOrders": "Bezorgde bestellingen",
+      "territoryInformation": "Territoriale informatie",
+      "country": "Land",
+      "city": "Stad",
+      "region": "Regio",
+      "quickActions": "Snelle acties",
+      "newOrder": "Nieuwe Orde",
+      "viewOrders": "Bestellingen bekijken",
+      "viewInvoices": "Facturen bekijken",
+      "profileSettings": "Profielinstellingen",
+      "loading": "Dashboard wordt geladen...",
+      "error": "Fout"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
-      "date": "Date",
+      "title": "Mijn bestellingen",
+      "orderId": "Bestelnummer",
+      "date": "Datum",
       "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "items": "Artikelen",
+      "totalAmount": "Totaalbedrag",
+      "actions": "Acties",
+      "viewDetails": "Bekijk details",
       "filters": {
         "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "startDate": "Startdatum",
+        "endDate": "Einddatum",
+        "allStatuses": "Alle statussen",
+        "clearFilters": "Filters wissen"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "In behandeling",
+        "processing": "Verwerking",
+        "delivered": "Afgeleverd",
+        "cancelled": "Geannuleerd"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
-      "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "noOrders": "Geen bestellingen gevonden",
+      "loading": "Bestellingen laden...",
+      "page": "Pagina",
+      "of": "van",
+      "previous": "Vorig",
+      "next": "Volgende"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
+      "title": "Bestelgegevens",
+      "backToOrders": "Terug naar bestellingen",
+      "orderId": "Bestelnummer",
       "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "orderItems": "Order Items",
+      "orderDate": "Besteldatum",
+      "deliveryDate": "Leveringsdatum",
+      "deliveryAddress": "Bezorgadres",
+      "notes": "Notities",
+      "orderItems": "Bestelartikelen",
       "product": "Product",
       "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "quantity": "Hoeveelheid",
+      "unitPrice": "Eenheidsprijs",
+      "total": "Totaal",
+      "totalAmount": "Totaalbedrag",
+      "statusTimeline": "Statustijdlijn",
+      "orderNotFound": "Bestelling niet gevonden"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
+      "title": "Nieuwe bestelling plaatsen",
+      "orderItems": "Bestelartikelen",
+      "addItem": "Item toevoegen",
+      "noItems": "Er zijn nog geen items toegevoegd. Klik op \"Item toevoegen\" om te beginnen.",
+      "orderDetails": "Bestelgegevens",
+      "deliveryDate": "Leveringsdatum",
+      "deliveryAddress": "Bezorgadres",
+      "notes": "Notities",
+      "totalAmount": "Totaalbedrag",
+      "createOrder": "Bestelling plaatsen",
+      "creatingOrder": "Orde scheppen...",
+      "cancel": "Annuleren",
+      "selectProduct": "Selecteer product",
       "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "quantity": "Hoeveelheid",
+      "unitPrice": "Eenheidsprijs",
+      "remove": "Verwijderen",
+      "subtotal": "Subtotaal",
+      "orderId": "Bestelnummer",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "Er is minimaal één bestelartikel vereist.",
+        "productRequired": "Product vereist",
+        "quantityRequired": "De hoeveelheid moet groter zijn dan 0.",
+        "priceRequired": "De eenheidsprijs mag niet negatief zijn.",
+        "invalidDate": "Ongeldig formaat voor de leverdatum",
+        "datePast": "De leverdatum mag niet in het verleden liggen."
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "Mijn facturen",
+      "invoiceNumber": "Factuurnummer",
+      "invoiceDate": "Factuurdatum",
+      "dueDate": "Twee afspraakjes",
+      "amount": "Hoeveelheid",
+      "paidAmount": "Betaald bedrag",
+      "paymentStatus": "Betalingsstatus",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "Betalingsstatus",
+        "allStatuses": "Alle statussen",
+        "clearFilters": "Filters wissen"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "Betaald",
+        "unpaid": "Onbetaald",
+        "partial": "Gedeeltelijk"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "Geen facturen gevonden",
+      "loading": "Facturen worden geladen..."
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "title": "Mijn profiel",
+      "accountInformation": "Accountgegevens",
+      "distributorId": "Distributeur-ID",
+      "territory": "Grondgebied",
+      "country": "Land",
+      "city": "Stad",
+      "accountCreated": "Account aangemaakt",
+      "updateProfile": "Profiel bijwerken",
+      "name": "Naam",
+      "email": "E-mail",
+      "phone": "Telefoon",
+      "address": "Adres",
+      "language": "Taal",
+      "currency": "Munteenheid",
+      "saveChanges": "Wijzigingen opslaan",
+      "saving": "Besparing...",
+      "profileUpdated": "Profiel succesvol bijgewerkt",
+      "loading": "Profiel laden...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "Ongeldig e-mailformaat",
+        "invalidPhone": "Ongeldig telefoonformaat"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
+      "error": "Fout",
+      "loading": "Laden...",
+      "save": "Redden",
+      "cancel": "Annuleren",
+      "back": "Rug",
+      "submit": "Indienen",
+      "delete": "Verwijderen",
+      "edit": "Bewerking",
+      "view": "Weergave",
+      "search": "Zoekopdracht",
       "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "clear": "Duidelijk",
+      "apply": "Toepassen",
+      "close": "Dichtbij",
+      "confirm": "Bevestigen",
+      "yes": "Ja",
+      "no": "Nee"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
+    "title": "Juridisch besturingssysteem",
+    "sidebarTitle": "Juridisch OS",
+    "accessDenied": "Toegang geweigerd",
+    "accessDeniedMessage": "Je hebt geen toestemming om toegang te krijgen tot de Legal OS-module.",
     "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "contracts": "Contracten",
+    "certificates": "Certificaten",
+    "compliance": "Naleving",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "Juridisch dashboard",
+      "description": "Overzicht van juridische procedures en nalevingsstatus",
+      "activeTrademarks": "Actieve handelsmerken",
+      "activeContracts": "Actieve contracten",
+      "complianceStatus": "Nalevingsstatus"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "Handelsmerken",
+      "description": "Beheer merkregistraties en -aanvragen.",
+      "addNew": "Nieuw handelsmerk toevoegen",
       "filters": {
-        "country": "Country",
+        "country": "Land",
         "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "allCountries": "Alle landen",
+        "allStatuses": "Alle statussen",
+        "clearFilters": "Filters wissen"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
+        "brandName": "Merknaam",
+        "class": "Klas",
+        "country": "Land",
+        "applicationNo": "Aanvraagnummer",
         "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "expiryDate": "Vervaldatum",
+        "actions": "Acties"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "Handelsmerk bewerken",
+        "add": "Nieuw handelsmerk toevoegen",
+        "view": "Bekijk handelsmerk"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
+        "brandName": "Merknaam",
+        "classNumber": "Klasnummer",
+        "country": "Land",
+        "applicationNo": "Aanvraagnummer",
         "status": "Status",
-        "expiryDate": "Expiry Date",
-        "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "expiryDate": "Vervaldatum",
+        "documents": "Documenten",
+        "noDocuments": "Geen documenten bijgevoegd",
+        "addDocument": "Document toevoegen",
+        "remove": "Verwijderen"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "Het laden van handelsmerken is mislukt.",
+        "saveFailed": "Het opslaan van het handelsmerk is mislukt. Probeer het opnieuw."
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "Juridische zaken",
+      "description": "Beheer juridische zaken en volg hun status.",
+      "addNew": "Nieuwe zaak",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
-        "description": "Description",
-        "assignedTo": "Assigned To",
+        "caseTitle": "Zaaktitel",
+        "caseType": "Casetype",
+        "country": "Land",
+        "description": "Beschrijving",
+        "assignedTo": "Toegewezen aan",
         "status": "Status",
-        "hearingDate": "Hearing Date"
+        "hearingDate": "Datum van de hoorzitting"
       },
       "table": {
-        "caseTitle": "Case Title",
+        "caseTitle": "Zaaktitel",
         "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
+        "country": "Land",
+        "assignedTo": "Toegewezen aan",
         "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "hearingDate": "Datum van de hoorzitting",
+        "actions": "Acties"
       },
       "status": {
         "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "inProgress": "In behandeling",
+        "closed": "Gesloten",
+        "cancelled": "Geannuleerd"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "Kaartweergave van de vloot",
+      "description": "Realtime tracking van verkoopmedewerkers en bezorgvoertuigen",
+      "activeEmployees": "Actieve werknemers",
+      "noEmployees": "Geen actieve werknemers",
+      "loading": "Laden..."
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
+      "title": "Route opnieuw afspelen",
+      "employee": "Medewerker",
+      "speed": "Snelheid",
       "reset": "Reset",
-      "play": "Play",
-      "pause": "Pause",
-      "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "play": "Toneelstuk",
+      "pause": "Pauze",
+      "points": "punten",
+      "noRoute": "Geen routegegevens beschikbaar",
+      "loading": "Route laden..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "Producten van concurrenten",
+      "description": "Volg productinformatie van concurrenten",
+      "addProduct": "Product toevoegen",
+      "formTitle": "Voeg een concurrerend product toe",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "Merk",
+        "skuName": "SKU-naam",
+        "category": "Categorie",
+        "size": "Maat",
+        "price": "Prijs",
+        "currency": "Munteenheid",
+        "country": "Land"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "Merk",
+        "skuName": "SKU-naam",
+        "category": "Categorie",
+        "size": "Maat",
+        "price": "Prijs",
+        "country": "Land",
+        "dateAdded": "Datum toegevoegd"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "Producten laden mislukt",
+        "createFailed": "Het aanmaken van het product is mislukt. Probeer het opnieuw."
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "Geen concurrerende producten gevonden",
+      "loading": "Producten laden..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "Concurrentendashboard",
+      "description": "Analyses en inzichten over concurrerende producten",
+      "totalProducts": "Totale producten",
+      "brandsTracked": "Gevolgde merken",
+      "countries": "Landen",
+      "categories": "Categorieën",
+      "byBrand": "Producten van het merk",
+      "byCountry": "Producten per land",
+      "byCategory": "Producten per categorie",
+      "loading": "Statistieken laden...",
+      "noStats": "Geen statistieken beschikbaar"
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
-    "finance": "Finance",
+    "overview": "Overzicht",
+    "orders": "Bestellingen",
+    "inventory": "Inventaris",
+    "logistics": "Logistiek",
+    "finance": "Financiën",
     "crm": "CRM",
     "hr": "HR",
-    "executive": "Executive",
-    "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
+    "executive": "Leidinggevend",
+    "investor": "Investeerder",
+    "legal-ipr": "Juridische informatie/Intellectuele eigendomsrechten",
+    "competitor": "Concurrent",
     "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
-    "admin": "Admin"
+    "gps-tracking": "GPS-tracking",
+    "localization": "Lokalisatie",
+    "workflows": "Werkstromen",
+    "admin": "Beheerder"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
-      "finance": "Finance",
+      "overview": "Overzicht",
+      "orders": "Bestellingen",
+      "inventory": "Inventaris",
+      "logistics": "Logistiek",
+      "finance": "Financiën",
       "crm": "CRM",
       "hr": "HR",
-      "executive": "Executive",
-      "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
+      "executive": "Leidinggevend",
+      "investor": "Investeerder",
+      "legal-ipr": "Juridische informatie/Intellectuele eigendomsrechten",
+      "competitor": "Concurrent",
       "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
-      "admin": "Admin"
+      "gps-tracking": "GPS-tracking",
+      "localization": "Lokalisatie",
+      "workflows": "Werkstromen",
+      "admin": "Beheerder"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
-      "profit": "Profit"
+      "customers": "Klanten",
+      "employees": "Medewerkers",
+      "profit": "Winst"
+    },
+    "domain": {
+      "title": "CRM-besturingssysteem",
+      "customer360": {
+        "title": "Klant 360",
+        "description": "Complete klantprofielen, interactiegeschiedenis en relatiebeheer."
+      },
+      "campaigns": {
+        "title": "Digitale campagnes",
+        "description": "Multichannel marketingcampagnes (Instagram, Facebook, TikTok, WhatsApp)"
+      },
+      "leads": {
+        "title": "Leads en kansen",
+        "description": "Leadmanagement, kwalificatie en het genereren van leads."
+      },
+      "support": {
+        "title": "Klantenservice",
+        "description": "Ticketbeheer, klantenservice en probleemoplossing"
+      },
+      "loyalty": {
+        "title": "Loyaliteitsprogramma's",
+        "description": "Retailer loyaliteitsprogramma's, gamificatie en beloningsmanagement"
+      }
+    },
+    "customerList": {
+      "title": "Klant 360",
+      "newCustomer": "Nieuwe klant",
+      "totalCustomers": "Totaal aantal klanten",
+      "active": "Actief",
+      "new": "Nieuw",
+      "satisfaction": "Tevredenheid",
+      "customerManagement": "Klantenbeheer",
+      "customerManagementDescription": "Bekijk en beheer uw klantrelaties, interacties en campagnes.",
+      "loading": "Laden...",
+      "error": "Fout bij het laden van CRM-gegevens."
     }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "Leveranciersdashboard laden…",
+      "purchaseOrders": "Inkooporders",
+      "purchaseOrdersSubtitle": "Opgevoed door Harvics",
+      "shipments": "Verzendingen / GRN",
+      "shipmentsSubtitle": "Deze week aangenomen",
+      "invoices": "Facturen aangemaakt",
+      "invoicesSubtitle": "Wachtend op betaling",
+      "paymentsPending": "Betalingen in behandeling",
+      "paymentsPendingSubtitle": "Gepland voor release",
+      "qualityComplaints": "Kwaliteit / klachten",
+      "qualityComplaintsSubtitle": "Open tickets",
+      "forecast": "Voorspelling (voor de komende 4 weken)",
+      "forecastSubtitle": "AI-placeholder",
+      "supplierActions": "Acties van leveranciers",
+      "action1": "Bevestig de aankomende zendingen en werk het GRN-schema bij.",
+      "action2": "Controleer openstaande facturen en deel betalingsadviezen.",
+      "action3": "Los openstaande kwaliteitsklachten op met bewijsmateriaal van de kwaliteitsborging."
+    }
+  },
+  "form": {
+    "username": "Gebruikersnaam",
+    "password": "Wachtwoord",
+    "email": "E-mail",
+    "submit": "Indienen",
+    "cancel": "Annuleren",
+    "save": "Redden",
+    "delete": "Verwijderen",
+    "search": "Zoekopdracht",
+    "filter": "Filter",
+    "reset": "Reset",
+    "close": "Dichtbij",
+    "back": "Rug",
+    "next": "Volgende",
+    "previous": "Vorig",
+    "confirm": "Bevestigen",
+    "rememberMe": "Herinner je me nog?",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "emailRequired": "Een e-mailadres is verplicht.",
+    "emailInvalid": "Voer een geldig e-mailadres in."
+  },
+  "faq": {
+    "products": {
+      "category": "Producten",
+      "q1": "Welke producten biedt Harvics aan?",
+      "a1": "Wij bieden een breed assortiment hoogwaardige voedingsproducten aan, waaronder zoetwaren, dranken, snacks, pasta, bakkerijproducten en diepvriesproducten in diverse categorieën.",
+      "q2": "Waar kan ik Harvics-producten kopen?",
+      "a2": "Onze producten zijn verkrijgbaar in winkels in meer dan 40 landen. Gebruik onze winkellocator of contactpagina om een verkooppunt bij u in de buurt te vinden.",
+      "q3": "Biedt u de mogelijkheid tot bulkbestellingen?",
+      "a3": "Ja, we bieden kortingen voor grote bestellingen aan bedrijven en detailhandelaren. Ga naar onze pagina 'Kortingen voor grote bestellingen' voor meer informatie."
+    },
+    "ordersShipping": {
+      "category": "Bestellingen en verzending",
+      "q1": "Wat zijn jullie verzendopties?",
+      "a1": "Wij bieden verschillende verzendopties aan, waaronder standaard, express en internationale verzending. Gratis verzending is beschikbaar voor bestellingen boven de $50.",
+      "q2": "Hoe lang duurt de levering?",
+      "a2": "De levertijden variëren per locatie. Standaardlevering duurt doorgaans 5-7 werkdagen, terwijl expresslevering 2-3 werkdagen duurt.",
+      "q3": "Kan ik mijn bestelling volgen?",
+      "a3": "Ja, u kunt uw bestelling volgen met behulp van het trackingnummer dat u in de orderbevestigingsmail hebt ontvangen."
+    },
+    "accountPayments": {
+      "category": "Account & Betalingen",
+      "q1": "Hoe maak ik een account aan?",
+      "a1": "Klik op 'Inloggen' in de header en selecteer 'Account aanmaken' om een nieuw account te registreren.",
+      "q2": "Welke betaalmethoden accepteert u?",
+      "a2": "Voor zakelijke bestellingen accepteren we alle gangbare creditcards, betaalkaarten, PayPal en bankoverschrijvingen.",
+      "q3": "Zijn mijn betaalgegevens veilig?",
+      "a3": "Ja, we gebruiken standaardversleuteling om uw betalingsgegevens te beschermen."
+    },
+    "returnsRefunds": {
+      "category": "Retourneren en terugbetalingen",
+      "q1": "Wat is jullie retourbeleid?",
+      "a1": "Wij bieden een retourtermijn van 30 dagen voor ongeopende producten in de originele verpakking. Neem contact op met onze klantenservice voor een retourmachtiging.",
+      "q2": "Hoe vraag ik een terugbetaling aan?",
+      "a2": "Neem contact op met onze klantenservice en vermeld uw bestelnummer en de reden voor de retourzending. Wij verwerken uw terugbetaling binnen 5-7 werkdagen."
+    },
+    "contactCta": {
+      "title": "Heb je nog vragen?",
+      "subtitle": "Ons klantenserviceteam staat klaar om u te helpen.",
+      "button": "Neem contact met ons op"
+    }
+  },
+  "careers": {
+    "title": "Carrières",
+    "pageTitle": "Carrières | Harvics",
+    "description": "Sluit je aan bij Harvics Global Ventures en ontdek carrièremogelijkheden in meer dan 40 landen.",
+    "joinUs": "Doe mee!",
+    "heroTitle": "Bouw aan de toekomst van de wereldhandel.",
+    "heroDesc": "We groeien in meer dan 40 landen. Sluit je aan bij een team dat het AI-gestuurde besturingssysteem voor wereldwijde handel bouwt.",
+    "stats": {
+      "openPositions": "Openstaande vacatures",
+      "countries": "Landen",
+      "industryVerticals": "Brancheverticalen",
+      "departmentsHiring": "Afdelingen die personeel werven"
+    },
+    "openPositionsByDept": "Openstaande vacatures per afdeling",
+    "departments": {
+      "sales": {
+        "name": "Verkoop en distributie",
+        "desc": "Verhoog de omzet in meer dan 40 markten. Gebiedsbeheer, belangrijke klanten, relaties met distributeurs."
+      },
+      "supplyChain": {
+        "name": "Supply Chain & Logistiek",
+        "desc": "Complete toeleveringsketen van fabriek tot schap. Wagenparkbeheer, warehousing, levering aan de eindklant."
+      },
+      "technology": {
+        "name": "Technologie en AI",
+        "desc": "Bouw Harvics OS – ons AI-gestuurde bedrijfsplatform. Full-stack ontwikkeling, machine learning en data science."
+      },
+      "finance": {
+        "name": "Financiën en schatkist",
+        "desc": "Treasury in meerdere valuta, handelsfinanciering, HPay digitale betalingen, valutabeheer in verschillende regio's."
+      },
+      "procurement": {
+        "name": "Inkoop en sourcing",
+        "desc": "Wereldwijde inkoop vanuit meer dan 15 landen. Leveranciersaudits, kwaliteitscontrole, programma's voor directe inkoop bij de fabriek."
+      },
+      "hr": {
+        "name": "Personeelszaken",
+        "desc": "Talentwerving, training en ontwikkeling, en prestatiebeheer in diverse geografische gebieden en culturen."
+      },
+      "legal": {
+        "name": "Juridische zaken en naleving van wet- en regelgeving",
+        "desc": "Handelsnaleving, sanctiescreening, bescherming van intellectueel eigendom, contractbeheer in verschillende rechtsgebieden."
+      },
+      "marketing": {
+        "name": "Marketing & Merk",
+        "desc": "Campagnes in meerdere talen, content in 38 talen, digitale marketing, merkstrategie voor 10 branches."
+      }
+    },
+    "roles": "rollen",
+    "whyHarvics": "Waarom Harvics?",
+    "benefits": {
+      "globalMobility": {
+        "title": "Wereldwijde mobiliteit",
+        "desc": "Werkzaamheden in Dubai, Londen, Karachi, Lahore en meer dan 40 andere markten."
+      },
+      "growthTrack": {
+        "title": "Groeitraject",
+        "desc": "Snelle carrièregroei binnen een groeiend bedrijf"
+      },
+      "aiCulture": {
+        "title": "AI-eerst cultuur",
+        "desc": "Werk met geavanceerde AI- en realtime-intelligentiesystemen."
+      },
+      "competitivePackage": {
+        "title": "Concurrerend pakket",
+        "desc": "Marktconform salaris, huisvesting en secundaire arbeidsvoorwaarden"
+      },
+      "learningBudget": {
+        "title": "Leerbudget",
+        "desc": "Jaarlijks ontwikkelingsbudget voor cursussen, conferenties en certificeringen"
+      },
+      "flexibleWork": {
+        "title": "Flexibel werken",
+        "desc": "Hybride samenwerkingsverbanden met regionale vestigingen wereldwijd."
+      }
+    }
+  },
+  "strategy": {
+    "title": "Onze strategie",
+    "pageTitle": "Strategie | Harwich",
+    "description": "Een duurzame toekomst opbouwen door innovatie en uitmuntendheid.",
+    "heroSubtitle": "Een duurzame toekomst opbouwen door innovatie en uitmuntendheid.",
+    "pillars": {
+      "globalExpansion": {
+        "title": "Wereldwijde expansie",
+        "desc": "Onze aanwezigheid in opkomende markten uitbreiden en tegelijkertijd onze positie in gevestigde markten versterken."
+      },
+      "productInnovation": {
+        "title": "Productinnovatie",
+        "desc": "Investeren in onderzoek en ontwikkeling om nieuwe producten te ontwikkelen die aansluiten bij de veranderende voorkeuren van de consument."
+      },
+      "sustainability": {
+        "title": "Duurzaamheid",
+        "desc": "Wij zetten ons in voor duurzame werkwijzen in onze gehele toeleveringsketen en bedrijfsvoering."
+      },
+      "digitalTransformation": {
+        "title": "Digitale transformatie",
+        "desc": "Technologie inzetten om de klantervaring en operationele efficiëntie te verbeteren."
+      }
+    },
+    "vision": {
+      "title": "Onze visie",
+      "desc": "Het is onze missie om 's werelds toonaangevende producent van hoogwaardige consumentengoederen te zijn, erkend om kwaliteit, innovatie en duurzaamheid."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Harvics Global Ventures | Premium Global Trading",
+      "description": "Toonaangevend wereldwijd handelsbedrijf dat hoogwaardige producten levert aan meer dan 10 sectoren. Actief in meer dan 50 landen sinds 2019."
+    },
+    "about": {
+      "title": "Over ons | Harvics Global Ventures",
+      "description": "Ontdek hoe Harvics Global Ventures een toonaangevende speler is geworden in de wereldhandel, actief in meer dan 40 landen en 10 sectoren."
+    },
+    "contact": {
+      "title": "Neem contact met ons op | Harvics Global Ventures",
+      "description": "Neem contact op met de kantoren van Harvics wereldwijd in het Midden-Oosten, Zuid-Azië, Europa, Afrika en Noord- en Zuid-Amerika."
+    },
+    "products": {
+      "title": "Producten | Harvics Global Ventures",
+      "description": "Ontdek het hoogwaardige productassortiment van Harvic op het gebied van fast-moving consumer goods (FMCG), textiel, grondstoffen en industriële oplossingen."
+    },
+    "careers": {
+      "title": "Carrières | Harvics Global Ventures",
+      "description": "Sluit je aan bij Harvics Global Ventures en ontdek carrièremogelijkheden in meer dan 40 landen in de sectoren fast-moving consumer goods (FMCG), textiel, logistiek en technologie."
+    },
+    "media": {
+      "title": "Mediacentrum | Harvics Global Ventures",
+      "description": "Harvics mediacentrum — persberichten, het laatste nieuws, merkmateriaal en mediacontacten."
+    },
+    "strategy": {
+      "title": "Onze strategie | Harvics Global Ventures",
+      "description": "De strategische visie van Harvic op wereldwijde expansie, innovatie, duurzaamheid en digitale transformatie."
+    },
+    "csr": {
+      "title": "Maatschappelijk verantwoord ondernemen | Harvics",
+      "description": "De MVO-initiatieven van Harvics omvatten milieubeheer, maatschappelijke programma's en ethische bedrijfspraktijken."
+    },
+    "faq": {
+      "title": "Veelgestelde vragen | Harvics Global Ventures",
+      "description": "Veelgestelde vragen over de producten, diensten, bestellingen en wereldwijde activiteiten van Harvics."
+    },
+    "locations": {
+      "title": "Wereldwijde locaties | Harvics",
+      "description": "Harvics heeft kantoren en vestigingen in het Midden-Oosten, Zuid-Azië, Europa, Afrika en Noord- en Zuid-Amerika."
+    },
+    "leadership": {
+      "title": "Leiderschapsteam | Harvics",
+      "description": "Maak kennis met het managementteam dat Harvics Global Ventures aanstuurt in meer dan 40 markten en 10 verschillende branches."
+    },
+    "help": {
+      "title": "Helpcentrum | Harvics",
+      "description": "Krijg hulp bij bestellingen, accounts, verzending en Harvics-services."
+    },
+    "compliance": {
+      "title": "Compliance en ethiek | Harvics",
+      "description": "Harvics zet zich in voor naleving van de regelgeving, ethische bedrijfspraktijken en wereldwijde normen."
+    },
+    "history": {
+      "title": "Onze geschiedenis | Harvics",
+      "description": "Van een startup in Dubai in 2019 tot een wereldwijd bedrijf met vestigingen in meer dan 40 landen: het verhaal van Harvics."
+    },
+    "newsletter": {
+      "title": "Nieuwsbrief | Harvics",
+      "description": "Abonneer u op de nieuwsbrief van Harvics voor branche-inzichten en productlanceringen."
+    },
+    "login": {
+      "title": "Inloggen | Harvics",
+      "description": "Log in op uw Harvics-account om bestellingen te beheren en toegang te krijgen tot het platform."
+    },
+    "research": {
+      "title": "Onderzoek en innovatie | Harvics",
+      "description": "De onderzoeksinitiatieven en innovatieprogramma's van Harvic vormen de basis van onze wereldwijde strategie."
+    },
+    "investorRelations": {
+      "title": "Investor Relations | Harvics",
+      "description": "Beleggersinformatie, financiële rapporten en bedrijfsmededelingen van Harvics Global Ventures."
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Pagina niet gevonden",
+      "heading": "404 — Pagina niet gevonden",
+      "description": "De pagina die u zoekt bestaat niet of is verplaatst.",
+      "goHome": "Ga naar de homepage",
+      "goBack": "Ga terug"
+    },
+    "serverError": {
+      "title": "Er is iets misgegaan",
+      "heading": "Er is iets misgegaan.",
+      "description": "Het spijt ons, maar er is iets onverwachts gebeurd. Probeer de pagina opnieuw te laden.",
+      "tryAgain": "Probeer het opnieuw",
+      "reload": "Pagina opnieuw laden",
+      "contactSupport": "Neem contact op met de ondersteuning."
+    },
+    "globalError": {
+      "title": "Toepassingsfout",
+      "heading": "Kritieke fout",
+      "description": "Er is een kritieke fout opgetreden. Vernieuw de pagina.",
+      "reload": "Applicatie opnieuw laden"
+    }
+  },
+  "about": {
+    "title": "Over Harvics",
+    "subtitle": "Uitmuntendheid in hoogwaardige consumentengoederen sinds 2019.",
+    "ourStory": "Ons verhaal",
+    "story1": "Harvics, opgericht in 2019, is uitgegroeid van een visionair idee tot een wereldwijde leider in hoogwaardige consumentengoederen. Onze reis wordt gekenmerkt door een onophoudelijke zoektocht naar kwaliteit en een toewijding aan innovatie.",
+    "story2": "We zijn actief in meer dan 40 landen en leveren producten die levens verrijken en nieuwe normen in de branche stellen. Van onze bescheiden beginjaren tot onze wereldwijde aanwezigheid zijn onze waarden onveranderd gebleven.",
+    "est2018": "Opgericht in 2019",
+    "countries40": "Meer dan 40 landen",
+    "productLines6": "6 productlijnen"
+  },
+  "csr": {
+    "hero": {
+      "title": "Maatschappelijk verantwoord ondernemen",
+      "description": "Bij Harvics zetten we ons in om een positieve impact op de wereld te hebben. Onze MVO-initiatieven richten zich op duurzaamheid, het versterken van de gemeenschap en ethische bedrijfspraktijken.",
+      "stats": {
+        "years": "Jarenlange impact",
+        "countries": "Bereikte landen",
+        "lives": "Levens geraakt"
+      }
+    },
+    "initiatives": {
+      "title": "Onze belangrijkste initiatieven",
+      "description": "We richten ons op vier hoofdpijlers om duurzame verandering te bewerkstelligen en gedeelde waarde te creëren voor alle belanghebbenden."
+    },
+    "sustainability": {
+      "title": "Duurzaamheid",
+      "description": "Het verkleinen van onze ecologische voetafdruk door middel van hernieuwbare energie en afvalvermindering.",
+      "stats": {
+        "renewable": "Hernieuwbare energie",
+        "waste": "Afval gescheiden",
+        "carbon": "Koolstofreductie"
+      }
+    },
+    "community": {
+      "title": "Gemeenschapssteun",
+      "description": "Lokale gemeenschappen versterken door middel van onderwijs, gezondheidszorg en economische ontwikkeling.",
+      "stats": {
+        "families": "Gezinnen ondersteund",
+        "programs": "Actieve programma's",
+        "volunteers": "Vrijwilligers"
+      }
+    },
+    "education": {
+      "title": "Onderwijs",
+      "description": "Het bieden van toegang tot kwalitatief goed onderwijs en beurzen voor kansarme studenten.",
+      "stats": {
+        "scholarships": "Beurzen",
+        "schools": "Partnerscholen",
+        "students": "Studenten getroffen"
+      }
+    },
+    "health": {
+      "title": "Gezondheid en welzijn",
+      "description": "Verbetering van de toegang tot gezondheidszorg en voeding in achtergestelde regio's.",
+      "stats": {
+        "campaigns": "Gezondheidscampagnes",
+        "people": "Mensen bediend",
+        "clinics": "Mobiele klinieken"
+      }
+    },
+    "achievements": {
+      "2022": {
+        "title": "Beste MVO-initiatief",
+        "description": "Onderscheiden voor onze innovatieve aanpak van maatschappelijke verantwoordelijkheid."
+      },
+      "2023": {
+        "title": "Gemeenschapskampioen",
+        "description": "Bekroond voor onze uitgebreide programma's gericht op maatschappelijke betrokkenheid."
+      },
+      "2024": {
+        "title": "Wereldwijde Duurzaamheidsprijs",
+        "description": "Erkend voor onze inzet voor CO2-neutraliteit."
+      },
+      "title": "Onze impact",
+      "description": "We erkennen onze mijlpalen in het creëren van een betere wereld."
+    },
+    "cta": {
+      "title": "Doe met ons mee en maak het verschil!",
+      "description": "Werk met ons samen of kom meer te weten over hoe wij bouwen aan een duurzame toekomst.",
+      "contact": "Neem contact op met het CSR-team.",
+      "learnMore": "Meer informatie"
+    }
+  },
+  "harvicsHouse": {
+    "title": "Harvics Huis",
+    "subtitle": "Een erfenis van uitmuntendheid en traditie",
+    "aboutTitle": "Welkom bij Harvics House",
+    "description": "Harvics House vertegenwoordigt het hoogtepunt van onze toewijding aan kwaliteit en erfgoed. Hier brengen we de mooiste selectie van onze premium producten samen, tentoongesteld in een omgeving die onze waarden van elegantie, traditie en innovatie weerspiegelt.",
+    "description2": "Ontdek onze exclusieve collecties en leer meer over het verhaal achter elk product met de naam Harvics."
   }
 }

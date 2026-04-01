@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Our History | Harvics',
-  description: 'From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics journey.',
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'history')
 }
 
 interface HistoryPageProps {
@@ -25,7 +26,7 @@ export default async function HistoryPage({ params }: HistoryPageProps) {
   ]
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
       <section className="bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40">
         <div className="max-w-[1200px] mx-auto text-center">

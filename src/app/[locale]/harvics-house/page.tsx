@@ -8,7 +8,7 @@ export default function HarvicsHousePage() {
   const t = useTranslations('harvicsHouse')
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       {/* Hero Section */}
       <section className="relative h-[60vh] bg-[#6B1F2B] overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 opacity-20">
@@ -22,10 +22,10 @@ export default function HarvicsHousePage() {
         </div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-5xl md:text-7xl font-serif text-[#C3A35E] mb-6 tracking-wide">
-            {t('title') || 'Harvics House'}
+            {t('title')}
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto font-light">
-            {t('subtitle') || 'A Legacy of Excellence and Tradition'}
+            {t('subtitle')}
           </p>
         </div>
       </section>
@@ -35,10 +35,10 @@ export default function HarvicsHousePage() {
         <div className="flex flex-col items-center">
           <div className="w-full mb-12 text-center">
              <h2 className="text-3xl font-serif text-[#6B1F2B] mb-6 border-b border-[#C3A35E]/30 pb-4 inline-block">
-              {t('aboutTitle') || 'Welcome to Harvics House'}
+              {t('aboutTitle')}
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6 text-lg max-w-3xl mx-auto">
-              {t('description') || 'Harvics House represents the pinnacle of our commitment to quality and heritage.'}
+              {t('description')}
             </p>
           </div>
 

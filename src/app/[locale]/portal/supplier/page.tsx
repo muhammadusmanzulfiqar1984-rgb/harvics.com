@@ -16,7 +16,7 @@ export default async function SupplierPortalPage({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const allowedRoles: UserRole[] = ['supplier']
+  const allowedRoles: UserRole[] = ['supplier', 'company_admin', 'admin', 'hq', 'super_admin']
 
   return (
     <AuthGuard allowedRoles={allowedRoles}>

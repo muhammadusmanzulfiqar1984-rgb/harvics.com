@@ -143,25 +143,25 @@ export default function V16CompanyDashboard() {
 
   // Tier-0 Foundational Engines
   const tier0Engines = [
-    { id: 'identity', title: 'Identity & Access Engine', desc: 'User management, roles, permissions, SSO', icon: '🔐' },
-    { id: 'localization', title: 'Localization Engine', desc: '38 languages, 8-level geographic hierarchy', icon: '🌍' },
-    { id: 'geo', title: 'Geo Engine', desc: 'Territory maps, GPS trails, heatmaps', icon: '📍' }
+    { id: 'identity', label: 'Identity & Access Engine', description: 'User management, roles, permissions, SSO', href: `/${locale}/os/identity`, icon: '🔐' },
+    { id: 'localization', label: 'Localization Engine', description: '38 languages, 8-level geographic hierarchy', href: `/${locale}/os/localization`, icon: '🌍' },
+    { id: 'geo', label: 'Geo Engine', description: 'Territory maps, GPS trails, heatmaps', href: `/${locale}/os/geo`, icon: '📍' }
   ]
 
   // Tier-1 Core OS Domains
   const tier1Domains = [
-    { id: 'market-distribution', title: 'Market & Distribution OS', desc: 'Distributor management, territories, pricing', icon: '📦' },
-    { id: 'supplier-procurement', title: 'Supplier & Procurement OS', desc: 'Supplier master, RFQ, GRN, performance', icon: '🏭' },
-    { id: 'orders-sales', title: 'Orders / Sales OS', desc: 'Order management, sales workflows', icon: '📋' },
-    { id: 'inventory', title: 'Inventory OS', desc: 'Warehouse, SKU tracking, replenishment', icon: '📦' },
-    { id: 'finance', title: 'Finance OS', desc: 'AR, AP, GL, Tax, Cash management', icon: '💰' },
-    { id: 'crm', title: 'Customer & Brand CRM OS', desc: 'Retailer master, tickets, campaigns', icon: '👥' },
-    { id: 'hr', title: 'HR & Talent OS', desc: 'Workforce, attendance, KPIs, payroll', icon: '👔' },
-    { id: 'logistics', title: 'Logistics & Transport OS', desc: 'Fleet, routes, GPS tracking, delivery', icon: '🚚' },
-    { id: 'executive', title: 'Executive Control Tower', desc: 'P&L, KPIs, risk alerts, dashboards', icon: '🎯' },
-    { id: 'legal', title: 'Legal / IPR & Compliance OS', desc: 'IPR, counterfeit, compliance, contracts', icon: '⚖️' },
-    { id: 'competitor', title: 'Competitor Intelligence OS', desc: 'Product tracking, price intelligence', icon: '🔍' },
-    { id: 'import-export', title: 'Import / Export OS', desc: 'Import/export orders, customs, trade docs', icon: '🌐' }
+    { id: 'market-distribution', label: 'Market & Distribution OS', description: 'Distributor management, territories, pricing', href: `/${locale}/os/market-distribution`, icon: '📦' },
+    { id: 'supplier-procurement', label: 'Supplier & Procurement OS', description: 'Supplier master, RFQ, GRN, performance', href: `/${locale}/os/supplier-procurement`, icon: '🏭' },
+    { id: 'orders-sales', label: 'Orders / Sales OS', description: 'Order management, sales workflows', href: `/${locale}/os/orders-sales`, icon: '📋' },
+    { id: 'inventory', label: 'Inventory OS', description: 'Warehouse, SKU tracking, replenishment', href: `/${locale}/os/inventory`, icon: '📦' },
+    { id: 'finance', label: 'Finance OS', description: 'AR, AP, GL, Tax, Cash management', href: `/${locale}/os/finance`, icon: '💰' },
+    { id: 'crm', label: 'Customer & Brand CRM OS', description: 'Retailer master, tickets, campaigns', href: `/${locale}/os/crm`, icon: '👥' },
+    { id: 'hr', label: 'HR & Talent OS', description: 'Workforce, attendance, KPIs, payroll', href: `/${locale}/os/hr`, icon: '👔' },
+    { id: 'logistics', label: 'Logistics & Transport OS', description: 'Fleet, routes, GPS tracking, delivery', href: `/${locale}/os/logistics`, icon: '🚚' },
+    { id: 'executive', label: 'Executive Control Tower', description: 'P&L, KPIs, risk alerts, dashboards', href: `/${locale}/os/executive`, icon: '🎯' },
+    { id: 'legal', label: 'Legal / IPR & Compliance OS', description: 'IPR, counterfeit, compliance, contracts', href: `/${locale}/os/legal`, icon: '⚖️' },
+    { id: 'competitor', label: 'Competitor Intelligence OS', description: 'Product tracking, price intelligence', href: `/${locale}/os/competitor`, icon: '🔍' },
+    { id: 'import-export', label: 'Import / Export OS', description: 'Import/export orders, customs, trade docs', href: `/${locale}/os/import-export`, icon: '🌐' }
   ]
 
   if (loading) {
@@ -177,22 +177,21 @@ export default function V16CompanyDashboard() {
 
   return (
     <DashboardLayout portal="company" pageTitle="Company Dashboard">
-      <GlobalFilters onFilterChange={handleFilterChange} initialFilters={filters} />
+      <GlobalFilters onFilterChange={handleFilterChange} defaultFilters={filters} />
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mb-6">
-        <KPICard title="Total Revenue" value={formatCurrency(data?.kpis.totalRevenue || 0)} trend="+5.2%" />
-        <KPICard title="Total Orders" value={data?.kpis.totalOrders.toLocaleString() || '0'} trend="+8.1%" />
-        <KPICard title="Regions Covered" value={data?.kpis.regionsCovered.toString() || '0'} />
-        <KPICard title="Active Distributors" value={data?.kpis.activeDistributors.toLocaleString() || '0'} />
-        <KPICard title="Compliance Score" value={`${data?.kpis.complianceScore || 0}%`} trend="+1.5%" />
+        <KPICard label="Total Revenue" value={formatCurrency(data?.kpis.totalRevenue || 0)} change={{ value: 5.2, trend: 'up' }} />
+        <KPICard label="Total Orders" value={data?.kpis.totalOrders.toLocaleString() || '0'} change={{ value: 8.1, trend: 'up' }} />
+        <KPICard label="Regions Covered" value={data?.kpis.regionsCovered.toString() || '0'} />
+        <KPICard label="Active Distributors" value={data?.kpis.activeDistributors.toLocaleString() || '0'} />
+        <KPICard label="Compliance Score" value={`${data?.kpis.complianceScore || 0}%`} change={{ value: 1.5, trend: 'up' }} />
       </div>
 
       <div className="mb-6">
         <LineChartCard 
           title="Revenue & Orders Trend" 
           data={data?.trendData || []}
-          view={chartView}
-          onViewChange={setChartView}
+          dataKeys={[chartView]}
         />
       </div>
 
@@ -221,17 +220,17 @@ export default function V16CompanyDashboard() {
 
       {(activeTier === null || activeTier === 'tier0') && (
         <SectionCard title="Tier-0 Foundational Engines">
-          <DomainGrid domains={tier0Engines} onDomainClick={(id) => router.push(`/${locale}/os/${id}`)} />
+          <DomainGrid domains={tier0Engines} />
         </SectionCard>
       )}
 
       {(activeTier === null || activeTier === 'tier1') && (
-        <SectionCard title="Tier-1 Core OS Domains" containerClassName="mt-6">
-          <DomainGrid domains={tier1Domains} onDomainClick={(id) => router.push(`/${locale}/os/${id}`)} />
+        <SectionCard title="Tier-1 Core OS Domains" className="mt-6">
+          <DomainGrid domains={tier1Domains} />
         </SectionCard>
       )}
 
-      <AIInsightsPanel isOpen={aiPanelOpen} onClose={() => setAiPanelOpen(false)} />
+      <AIInsightsPanel isOpen={aiPanelOpen} onClose={() => setAiPanelOpen(false)} insights={[]} />
     </DashboardLayout>
   )
 }

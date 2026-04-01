@@ -65,7 +65,7 @@ export default function SupplierCheckout() {
   const total = subtotal + shipping + tax
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen bg-gray-100">
       <div className="pt-20">
         {/* Hero Section */}
         <section className="py-12 md:py-16 px-4 md:px-6 bg-[#6B1F2B]">

@@ -5,11 +5,10 @@ import { SUPPORTED_LOCALES, DEFAULT_LOCALE } from '@/config/locales';
 
 // Use shared locale configuration
 const intlMiddleware = createMiddleware({
-  // A list of all locales that are supported
   locales: [...SUPPORTED_LOCALES],
-
-  // Used when no locale matches
-  defaultLocale: DEFAULT_LOCALE
+  defaultLocale: DEFAULT_LOCALE,
+  localePrefix: 'always',
+  localeDetection: false
 });
 
 export default function middleware(request: NextRequest) {

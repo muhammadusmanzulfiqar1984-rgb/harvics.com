@@ -29,9 +29,9 @@ export default function DistributorOrders() {
   const [orders, setOrders] = useState<Order[]>([])
   const [error, setError] = useState<string | null>(null)
   const [filters, setFilters] = useState({
-    status: searchParams.get('status') || '',
-    startDate: searchParams.get('startDate') || '',
-    endDate: searchParams.get('endDate') || '',
+    status: searchParams?.get('status') || '',
+    startDate: searchParams?.get('startDate') || '',
+    endDate: searchParams?.get('endDate') || '',
   })
   const [pagination, setPagination] = useState({
     page: 1,
@@ -161,7 +161,7 @@ export default function DistributorOrders() {
                 <select
                   value={filters.status}
                   onChange={(e) => handleFilterChange('status', e.target.value)}
-                  className="w-full border border-black300 px-4 py-2"
+                  className="w-full border border-gray-200 px-4 py-2"
                 >
                   <option value="">{t('filters.allStatuses')}</option>
                   <option value="pending">{t('statuses.pending')}</option>
@@ -178,7 +178,7 @@ export default function DistributorOrders() {
                   type="date"
                   value={filters.startDate}
                   onChange={(e) => handleFilterChange('startDate', e.target.value)}
-                  className="w-full border border-black300 px-4 py-2"
+                  className="w-full border border-gray-200 px-4 py-2"
                 />
               </div>
               <div>
@@ -189,7 +189,7 @@ export default function DistributorOrders() {
                   type="date"
                   value={filters.endDate}
                   onChange={(e) => handleFilterChange('endDate', e.target.value)}
-                  className="w-full border border-black300 px-4 py-2"
+                  className="w-full border border-gray-200 px-4 py-2"
                 />
               </div>
               <div className="flex items-end">
@@ -289,7 +289,7 @@ export default function DistributorOrders() {
               <button
                 onClick={() => setPagination((prev) => ({ ...prev, page: prev.page - 1 }))}
                 disabled={pagination.page === 1}
-                className="px-4 py-2 border border-black300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 border border-gray-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {t('previous')}
               </button>
@@ -299,7 +299,7 @@ export default function DistributorOrders() {
               <button
                 onClick={() => setPagination((prev) => ({ ...prev, page: prev.page + 1 }))}
                 disabled={pagination.page >= pagination.totalPages}
-                className="px-4 py-2 border border-black300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 border border-gray-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {t('next')}
               </button>

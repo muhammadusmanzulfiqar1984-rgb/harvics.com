@@ -56,7 +56,7 @@ const StrategyValidator: React.FC = () => {
 
   if (!proposal && status === 'listening') {
     return (
-      <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-200 animate-pulse flex items-center justify-center gap-3">
+      <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center gap-3">
         <div className="w-3 h-3 bg-green-500 rounded-full animate-ping"></div>
         <span className="text-sm font-medium text-gray-500">Orchestrator Listening for Market Signals...</span>
       </div>

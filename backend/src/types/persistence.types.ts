@@ -1,5 +1,13 @@
 
-export type EntityType = 'DECISION_OUTPUT' | 'SUPPLIER_PROFILE' | 'FEEDBACK_SIGNAL' | 'LEARNING_STATE';
+export type EntityType = 
+  | 'DECISION_OUTPUT' | 'SUPPLIER_PROFILE' | 'FEEDBACK_SIGNAL' | 'LEARNING_STATE'
+  // Tier-2 entity types
+  | 'GPS_RETAILER' | 'GPS_ROUTE' | 'GPS_VEHICLE'
+  | 'SATELLITE_WHITESPACE' | 'SATELLITE_COVERAGE'
+  | 'TERRITORY_ASSIGNMENT' | 'TERRITORY_COVERAGE'
+  | 'SUPPLYCHAIN_NODE' | 'SUPPLYCHAIN_GRAPH'
+  // Domain entity types
+  | 'ORDER' | 'INVENTORY_ITEM' | 'CUSTOMER' | 'EMPLOYEE' | 'INVOICE' | 'LOGISTICS_ROUTE';
 
 export interface EntitySnapshot {
   entity_id: string;

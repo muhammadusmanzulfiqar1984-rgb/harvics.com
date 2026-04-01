@@ -1,624 +1,1146 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
-    "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More"
+    "welcome": "Добро пожаловать в",
+    "companyName": "Харвич",
+    "tagline": "Превосходство в сфере товаров премиум-класса для потребителей с 2019 года.",
+    "exploreProducts": "Ознакомиться с продуктами",
+    "contact": "Связаться с нами",
+    "learnMore": "Узнать больше",
+    "brandStatement": "Ведущая мировая компания по производству потребительских товаров, поставляющая высококачественные продукты питания в различных категориях, соответствующие международным стандартам качества.",
+    "taglineStart": "Превосходство в сфере потребительских товаров премиум-класса с",
+    "taglineYear": "2019",
+    "locations": "Лондон • Милан • Нью-Йорк",
+    "categories": {
+      "bakery": "Пекарня",
+      "beverages": "Напитки",
+      "confectionery": "Кондитерские изделия",
+      "culinary": "Кулинарное",
+      "frozenFoods": "Замороженные продукты",
+      "pasta": "Паста",
+      "snacks": "Закуски"
+    }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
-    "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
-    "media": "Media",
-    "contactUs": "Contact Us",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store"
+    "esgReport": "Отчет по ESG за 2025 год",
+    "locations": "Лондон • Милан • Нью-Йорк",
+    "home": "Дом",
+    "about": "О",
+    "aboutUs": "О нас",
+    "brandStory": "История бренда",
+    "products": "Продукты",
+    "ourProducts": "Наша продукция",
+    "viewAllProducts": "Просмотреть все товары",
+    "csr": "КСО",
+    "investorRelations": "Отношения с инвесторами",
+    "investors": "Инвесторы",
+    "media": "СМИ",
+    "contactUs": "Связаться с нами",
+    "countries": "Страны",
+    "portals": "Порталы",
+    "signIn": "Войти",
+    "wishlist": "Список желаний",
+    "cart": "Корзина",
+    "help": "Помощь",
+    "findStore": "Найти магазин",
+    "harvicsHouse": "Дом Харвика",
+    "money": "Деньги",
+    "sales": "Продажи",
+    "offers": "Предложения",
+    "darkMode": "Темный режим",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "Кредитная карта",
+        "msRewards": "Кредитная карта M&S Rewards",
+        "clubRewards": "Клубные награды",
+        "ourCards": "Наши кредитные карты"
+      },
+      "insurance": {
+        "title": "Страхование",
+        "home": "Страхование жилья",
+        "travel": "Страхование путешествий"
+      },
+      "travel": {
+        "title": "Туристические услуги",
+        "money": "Деньги для путешествий",
+        "exchange": "Обменные курсы"
+      },
+      "additional": {
+        "title": "Дополнительные услуги",
+        "savings": "Сбережения и инвестиции",
+        "personalLoans": "Потребительские кредиты",
+        "financialSupport": "Финансовая поддержка"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "Текущие продажи",
+      "clearance": "Разрешение",
+      "seasonal": "Сезонные распродажи"
+    },
+    "offersDropdown": {
+      "specialOffers": "Специальные предложения",
+      "promotions": "Акции",
+      "bulkOrders": "Скидки на оптовые заказы"
+    }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products"
+    "ourProducts": "Наша продукция",
+    "viewAllProducts": "Просмотреть все товары",
+    "productCategories": "Наши товарные категории",
+    "discoverPremium": "Откройте для себя наш премиальный ассортимент продукции, созданной с заботой и вниманием к деталям.",
+    "tier1": "Уровень 1: Категории",
+    "tier2": "Уровень 2: Модули",
+    "tier3": "Уровень 3: Экраны KPI",
+    "tier4": "Уровень 4: Действия",
+    "reset": "Сбросить навигацию",
+    "noSubcategories": "Для этой категории нет доступных подкатегорий.",
+    "pageTitle": "Продукты",
+    "subcategories": "Подкатегории",
+    "bakery": "Пекарня",
+    "bakeryDesc": "Свежая выпечка и кондитерские изделия.",
+    "beverages": "Напитки",
+    "beveragesDesc": "Освежающие напитки на любой случай.",
+    "confectionery": "Кондитерские изделия",
+    "confectioneryDesc": "Сладкие угощения и лакомства.",
+    "culinary": "Кулинарное",
+    "culinaryDesc": "Необходимые ингредиенты для вашей кухни.",
+    "frozenFoods": "Замороженные продукты",
+    "frozenFoodsDesc": "Удобные и вкусные замороженные блюда.",
+    "pasta": "Паста",
+    "pastaDesc": "Настоящие сорта пасты.",
+    "snacks": "Закуски",
+    "snacksDesc": "Вкусные закуски на любое время дня."
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
-    "email": "Email",
+    "title": "Свяжитесь с нами",
+    "subtitle": "Мы будем рады получить от вас обратную связь. Свяжитесь с нами любым из указанных способов.",
+    "phone": "Телефон",
+    "email": "Электронная почта",
     "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "callNow": "Позвоните прямо сейчас",
+    "sendEmail": "Отправить электронное письмо",
+    "messageUs": "Напишите нам"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "Медиацентр",
+    "pageTitle": "Медиацентр | Харвикс",
+    "description": "Пресс-ресурсы, фирменные материалы и последние новости от Harvics Global Ventures.",
+    "corporate": "Корпоративный",
+    "sections": {
+      "news": {
+        "title": "Новости и пресс-релизы",
+        "desc": "Последние объявления, информация о расширении рынка, запуске новых продуктов и корпоративные новости от Harvics Global Ventures.",
+        "cta": "Читайте последние новости"
+      },
+      "gallery": {
+        "title": "Галерея изображений",
+        "desc": "Высококачественные фирменные материалы, фотографии продукции, изображения объектов и репортажи с мероприятий для использования в СМИ.",
+        "cta": "Просмотреть галерею"
+      },
+      "contacts": {
+        "title": "Контакты для СМИ",
+        "desc": "Обращайтесь в нашу коммуникационную команду по вопросам взаимодействия со СМИ, запросам на интервью и объявлениям о партнерстве.",
+        "cta": "Связаться с пресс-службой"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "Охваченные рынки",
+      "industryVerticals": "Отраслевые вертикали",
+      "foundedIn": "Основана в Дубае",
+      "languagesSupported": "Поддерживаемые языки"
+    },
+    "recentHeadlines": "Последние заголовки",
+    "headlines": {
+      "expansion": "Компания Harvics расширяет свою деятельность в сфере товаров повседневного спроса на 5 новых рынков Юго-Восточной Азии.",
+      "aiPlatform": "Запущена новая платформа для управления цепочками поставок на основе искусственного интеллекта для глобальной дистрибуции.",
+      "carbonNeutral": "Компания Harvics достигла углеродной нейтральности на всех своих предприятиях.",
+      "partnership": "Стратегическое партнерство с ведущими производителями текстиля в Южной Азии."
+    }
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
-    "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
-    "contactUsButton": "Contact Us",
-    "usefulLinks": "Useful Links",
-    "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
-    "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
-    "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
-    "privacy": "Privacy",
-    "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
+    "tagline": "Превосходство в сфере товаров премиум-класса для потребителей с 2019 года.",
+    "brandStatement": "Ведущая мировая компания по производству потребительских товаров, поставляющая высококачественные продукты питания в различных категориях, соответствующие международным стандартам качества.",
+    "locations": "Лондон • Милан • Нью-Йорк",
+    "since": "С 2019 года",
+    "harvicsNews": "Новости Харвикса",
+    "subscribeToAlerts": "Подпишитесь, чтобы получать уведомления и обновления.",
+    "signUp": "Зарегистрироваться",
+    "complianceConcerns": "Проблемы, связанные с соблюдением нормативных требований",
+    "speakUp": "Не стесняйтесь высказывать свои опасения по поводу соблюдения нормативных требований или этических норм.",
+    "speakUpButton": "Выскажитесь",
+    "contactUs": "Связаться с нами",
+    "contactDescription": "Свяжитесь с нашей командой",
+    "contactUsButton": "Связаться с нами",
+    "usefulLinks": "Полезные ссылки",
+    "askHarvics": "Спросите Харвича",
+    "searchForJobs": "Поиск работы",
+    "signUpForNews": "Подпишитесь на новости",
+    "company": "Компания",
+    "globalAddresses": "Глобальные адреса",
+    "strategy": "Стратегия",
+    "ourLeadership": "Наше руководство",
+    "brandsAZ": "Бренды от А до Я",
+    "ourHistory": "Наша история",
+    "sustainability": "Устойчивое развитие",
+    "news": "Новости",
+    "mediaContacts": "Контакты для СМИ",
+    "images": "Изображения",
+    "investors": "Инвесторы",
+    "corporateGovernance": "Корпоративное управление",
+    "sharesAdrsBonds": "Акции, американские депозитарные расписки и облигации",
+    "publications": "Публикации",
+    "followUsOn": "Подписывайтесь на нас!",
+    "issuesCount": "0 выпусков",
+    "siteMap": "Карта сайта",
+    "unsubscribe": "Отписаться",
+    "help": "Помощь",
+    "privacy": "Конфиденциальность",
+    "cookies": "Печенье",
+    "termsOfUse": "Условия эксплуатации",
+    "accessibility": "Доступность",
+    "carbonEfficiency": "Углеродная эффективность",
+    "suppliers": "Поставщики",
+    "socialMedia": "Социальные сети",
+    "cookieSettings": "Настройки файлов cookie",
     "feature1Title": "Global Reach",
     "feature1Desc": "Serving customers across 40+ countries worldwide",
-    "feature2Title": "Premium Quality",
+    "feature2Title": "Премиум качество",
     "feature2Desc": "International quality standards in every product",
     "feature3Title": "Innovation",
     "feature3Desc": "Leading innovation in consumer goods industry",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
-    "media": "Media"
+    "emailAddress": "Адрес электронной почты",
+    "enterEmailPlaceholder": "Введите свой адрес электронной почты",
+    "subscribe": "Подписаться",
+    "subscribing": "Подписка...",
+    "aboutUs": "О нас",
+    "media": "СМИ"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "Поиск товаров, брендов или категорий",
+    "noResults": "Результаты не найдены",
+    "searching": "Идет поиск...",
+    "results": "Результаты"
   },
   "chatbot": {
-    "title": "Chat with Us",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "title": "Пообщайтесь с нами",
+    "placeholder": "Введите ваше сообщение...",
+    "send": "Отправлять",
+    "close": "Закрывать",
+    "welcome": "Здравствуйте! Чем я могу вам сегодня помочь?",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "Прошу прощения, я не понял. Не могли бы вы перефразировать?",
+      "help": "Я могу помочь вам с информацией о товарах, оформлением заказов или ответить на общие вопросы. Что бы вы хотели узнать?",
+      "contact": "Для получения дополнительной помощи, пожалуйста, свяжитесь с нами по адресу support@harvics.com или позвоните по телефону +1-800-HARVICS."
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
-    "filter": "Filter",
-    "clear": "Clear",
-    "download": "Download",
-    "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
-    "status": "Status",
-    "date": "Date",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
-    "selectCountry": "Select Country",
-    "required": "Required",
-    "menu": "Menu",
-    "viewProducts": "View Products"
+    "chatWithUs": "Пообщайтесь с нами",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успех",
+    "save": "Сохранять",
+    "cancel": "Отмена",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "view": "Вид",
+    "submit": "Представлять на рассмотрение",
+    "search": "Поиск",
+    "filter": "Фильтр",
+    "clear": "Прозрачный",
+    "download": "Скачать",
+    "upload": "Загрузить",
+    "yes": "Да",
+    "no": "Нет",
+    "close": "Закрывать",
+    "back": "Назад",
+    "next": "Следующий",
+    "previous": "Предыдущий",
+    "actions": "Действия",
+    "status": "Статус",
+    "date": "Дата",
+    "name": "Имя",
+    "email": "Электронная почта",
+    "phone": "Телефон",
+    "address": "Адрес",
+    "country": "Страна",
+    "city": "Город",
+    "all": "Все",
+    "none": "Никто",
+    "select": "Выбирать",
+    "selectCountry": "Выберите страну",
+    "required": "Необходимый",
+    "menu": "Меню",
+    "viewProducts": "Просмотреть товары",
+    "selectLanguage": "Выберите язык",
+    "showMore": "Показать больше",
+    "showLess": "Показать меньше"
   },
   "music": {
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "Воспроизвести музыку",
+    "pause": "Пауза музыки",
+    "mute": "Беззвучная музыка",
+    "unmute": "Отключить звук музыки"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "Наш глобальный охват",
+    "since": "С",
+    "majorMarket": "Крупный рынок",
+    "majorMarkets": "Основные рынки",
+    "presence": "Присутствие",
+    "countriesServed": "Страны обслуживания",
+    "majorMarketsCount": "Основные рынки",
+    "productCategoriesCount": "Категории товаров",
+    "establishedYear": "Учредил"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "Территориальная иерархия",
+    "fullPath": "Полный путь",
+    "currentTerritory": "Текущая территория",
+    "noChildren": "Нет товаров",
     "tiers": {
-      "globe": "Globe",
-      "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
-      "district": "District",
-      "location": "Location"
+      "globe": "Глоб",
+      "continent": "Континент",
+      "region": "Область",
+      "country": "Страна",
+      "city": "Город",
+      "district": "Округ",
+      "location": "Расположение"
     }
   },
   "globalWorld": {
     "title": "Harvics Global",
-    "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "titleShort": "Глобальный",
+    "selectRegion": "Выберите регион",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
+      "title": "Данные клиента",
+      "selected": "Избранные",
+      "fullName": "Полное имя",
+      "namePlaceholder": "Введите ваше полное имя",
+      "nameRequired": "Имя обязательно для указания.",
+      "email": "Адрес электронной почты",
       "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
+      "emailRequired": "Требуется указать адрес электронной почты.",
+      "emailInvalid": "Пожалуйста, введите действительный адрес электронной почты",
+      "phone": "Номер телефона",
       "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "phoneRequired": "Номер телефона обязателен",
+      "address": "Адрес",
+      "addressPlaceholder": "Ваш адрес",
+      "addressRequired": "Адрес обязателен",
+      "marketingConsent": "Я согласен получать маркетинговые сообщения и обновления.",
+      "submit": "Отправить и продолжить",
+      "submitting": "Отправка...",
+      "skip": "Пропустить и продолжить"
     }
   },
   "distributorPortal": {
     "dashboard": {
       "kpi": {
-        "title": "Key Performance Indicators",
-        "ordersToday": "Orders today",
-        "ordersTodaySubtitle": "Submitted via Harvics CRM",
-        "pendingDeliveries": "Pending deliveries",
-        "pendingDeliveriesSubtitle": "Across assigned routes",
-        "retailers": "Retailers",
-        "retailersSubtitle": "Active outlets in scope",
-        "attendance": "T & A Score",
-        "attendanceSubtitle": "Territory coverage"
+        "title": "Ключевые показатели эффективности",
+        "ordersToday": "Закажите сегодня",
+        "ordersTodaySubtitle": "Отправлено через Harvics CRM",
+        "pendingDeliveries": "Ожидаемые поставки",
+        "pendingDeliveriesSubtitle": "По назначенным маршрутам",
+        "retailers": "Розничные торговцы",
+        "retailersSubtitle": "Действующие торговые точки в рамках охвата",
+        "attendance": "Оценка T & A",
+        "attendanceSubtitle": "Территориальное покрытие"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "Финансовые и товарные запасы",
+        "lowStock": "Товаров с низким запасом",
+        "lowStockSubtitle": "Запуск пополнения",
+        "outstandingInvoices": "Неоплаченные счета",
+        "outstandingInvoicesSubtitle": "Подлежит сбору",
+        "creditLimit": "Кредитный лимит",
+        "creditLimitSubtitle": "Назначено финансовым отделом."
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "Включены автоматическое утверждение, пополнение запасов и напоминания об оплате счетов.",
+        "autoApproval": "Самоодобрение",
+        "stockReplenishment": "Пополнение запасов",
+        "invoiceReminders": "Напоминания об оплате счетов"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "Рекомендации ИИ",
+        "riskLevel": "Уровень риска",
+        "riskDescription": "На основе использования кредита и истории платежей.",
+        "suggestedOrder": "Рекомендуемый порядок",
+        "suggestedOrderSubtitle": "Рекомендованные ИИ товары для заказа",
+        "nextAction": "Следующее действие"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "Действия и рекомендации",
+        "complaints": "Жалобы",
+        "complaintsSubtitle": "Вопросы, возникающие у розничных продавцов и ожидающие решения.",
+        "playbook": "Сборник игр",
+        "playbookItem1": "В первую очередь следует отдать приоритет заказам, ожидающим доставки до полудня.",
+        "playbookItem2": "Все нерассмотренные жалобы должны быть закрыты в течение 48 часов.",
+        "playbookItem3": "Запуск пополнения запасов для товаров с низким уровнем запасов (автоматическое создание заказа на покупку)."
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "Территория",
+      "ordersThisMonth": "Заказы в этом месяце",
+      "pendingOrders": "Ожидающие заказы",
+      "deliveredOrders": "Доставленные заказы",
+      "territoryInformation": "Информация о территории",
+      "country": "Страна",
+      "city": "Город",
+      "region": "Область",
+      "quickActions": "Быстрые действия",
+      "newOrder": "Новый порядок",
+      "viewOrders": "Просмотр заказов",
+      "viewInvoices": "Просмотр счетов-фактур",
+      "profileSettings": "Настройки профиля",
+      "loading": "Загрузка панели управления...",
+      "error": "Ошибка"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
-      "date": "Date",
-      "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "title": "Мои заказы",
+      "orderId": "Идентификатор заказа",
+      "date": "Дата",
+      "status": "Статус",
+      "items": "Предметы",
+      "totalAmount": "Общая сумма",
+      "actions": "Действия",
+      "viewDetails": "Просмотреть подробности",
       "filters": {
-        "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "Статус",
+        "startDate": "Дата начала",
+        "endDate": "Дата окончания",
+        "allStatuses": "Все статусы",
+        "clearFilters": "Очистить фильтры"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "В ожидании",
+        "processing": "Обработка",
+        "delivered": "Доставленный",
+        "cancelled": "Отменено"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
-      "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "noOrders": "Заказы не найдены",
+      "loading": "Заказы на погрузку...",
+      "page": "Страница",
+      "of": "из",
+      "previous": "Предыдущий",
+      "next": "Следующий"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
-      "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "orderItems": "Order Items",
-      "product": "Product",
-      "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "title": "Детали заказа",
+      "backToOrders": "Вернуться к заказам",
+      "orderId": "Идентификатор заказа",
+      "status": "Статус",
+      "orderDate": "Дата заказа",
+      "deliveryDate": "Дата доставки",
+      "deliveryAddress": "Адрес доставки",
+      "notes": "Примечания",
+      "orderItems": "Заказ товаров",
+      "product": "Продукт",
+      "sku": "Артикул",
+      "quantity": "Количество",
+      "unitPrice": "Цена за единицу товара",
+      "total": "Общий",
+      "totalAmount": "Общая сумма",
+      "statusTimeline": "Хронология событий",
+      "orderNotFound": "Заказ не найден"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
-      "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "title": "Создать новый заказ",
+      "orderItems": "Заказ товаров",
+      "addItem": "Добавить товар",
+      "noItems": "Пока ни одного товара не добавлено. Нажмите «Добавить товар», чтобы начать.",
+      "orderDetails": "Детали заказа",
+      "deliveryDate": "Дата доставки",
+      "deliveryAddress": "Адрес доставки",
+      "notes": "Примечания",
+      "totalAmount": "Общая сумма",
+      "createOrder": "Создать заказ",
+      "creatingOrder": "Создание заказа...",
+      "cancel": "Отмена",
+      "selectProduct": "Выберите товар",
+      "product": "Продукт",
+      "quantity": "Количество",
+      "unitPrice": "Цена за единицу товара",
+      "remove": "Удалять",
+      "subtotal": "Итого",
+      "orderId": "Идентификатор заказа",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "Необходимо наличие хотя бы одного товара в заказе.",
+        "productRequired": "Требуется продукт",
+        "quantityRequired": "Количество должно быть больше 0",
+        "priceRequired": "Цена за единицу товара должна быть неотрицательной.",
+        "invalidDate": "Неверный формат даты доставки.",
+        "datePast": "Дата доставки не может быть в прошлом."
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "Мои счета",
+      "invoiceNumber": "Номер счета-фактуры",
+      "invoiceDate": "Дата выставления счета",
+      "dueDate": "Два свидания",
+      "amount": "Количество",
+      "paidAmount": "Оплаченная сумма",
+      "paymentStatus": "Статус платежа",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "Статус платежа",
+        "allStatuses": "Все статусы",
+        "clearFilters": "Очистить фильтры"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "Оплаченный",
+        "unpaid": "Неоплачено",
+        "partial": "Частичный"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "Счета-фактуры не найдены",
+      "loading": "Загрузка счетов-фактур..."
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "title": "Мой профиль",
+      "accountInformation": "Информация об учетной записи",
+      "distributorId": "Идентификатор дистрибьютора",
+      "territory": "Территория",
+      "country": "Страна",
+      "city": "Город",
+      "accountCreated": "Учетная запись создана",
+      "updateProfile": "Обновить профиль",
+      "name": "Имя",
+      "email": "Электронная почта",
+      "phone": "Телефон",
+      "address": "Адрес",
+      "language": "Язык",
+      "currency": "Валюта",
+      "saveChanges": "Сохранить изменения",
+      "saving": "Сохранение...",
+      "profileUpdated": "Профиль успешно обновлен.",
+      "loading": "Загрузка профиля...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "Неверный формат электронного письма",
+        "invalidPhone": "Неверный формат телефона"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
-      "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "error": "Ошибка",
+      "loading": "Загрузка...",
+      "save": "Сохранять",
+      "cancel": "Отмена",
+      "back": "Назад",
+      "submit": "Представлять на рассмотрение",
+      "delete": "Удалить",
+      "edit": "Редактировать",
+      "view": "Вид",
+      "search": "Поиск",
+      "filter": "Фильтр",
+      "clear": "Прозрачный",
+      "apply": "Применять",
+      "close": "Закрывать",
+      "confirm": "Подтверждать",
+      "yes": "Да",
+      "no": "Нет"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
-    "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "title": "Правовая операционная система",
+    "sidebarTitle": "Легальная ОС",
+    "accessDenied": "Доступ запрещен",
+    "accessDeniedMessage": "У вас нет разрешения на доступ к модулю Legal OS.",
+    "dashboard": "Панель управления",
+    "contracts": "Контракты",
+    "certificates": "Сертификаты",
+    "compliance": "Согласие",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "Юридическая панель управления",
+      "description": "Обзор правовых операций и состояния соблюдения законодательства.",
+      "activeTrademarks": "Действующие товарные знаки",
+      "activeContracts": "Действующие контракты",
+      "complianceStatus": "Статус соответствия"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "Торговые марки",
+      "description": "Управление регистрацией и подачей заявок на товарные знаки.",
+      "addNew": "Добавить новый товарный знак",
       "filters": {
-        "country": "Country",
-        "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "country": "Страна",
+        "status": "Статус",
+        "allCountries": "Все страны",
+        "allStatuses": "Все статусы",
+        "clearFilters": "Очистить фильтры"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "brandName": "Название бренда",
+        "class": "Сорт",
+        "country": "Страна",
+        "applicationNo": "Номер заявки",
+        "status": "Статус",
+        "expiryDate": "Дата истечения срока действия",
+        "actions": "Действия"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "Редактировать товарный знак",
+        "add": "Добавить новый товарный знак",
+        "view": "Просмотреть товарный знак"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "brandName": "Название бренда",
+        "classNumber": "Номер класса",
+        "country": "Страна",
+        "applicationNo": "Номер заявки",
+        "status": "Статус",
+        "expiryDate": "Дата истечения срока действия",
+        "documents": "Документы",
+        "noDocuments": "Документы не приложены.",
+        "addDocument": "Добавить документ",
+        "remove": "Удалять"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "Не удалось загрузить товарные знаки",
+        "saveFailed": "Не удалось сохранить товарный знак. Пожалуйста, попробуйте еще раз."
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "Судебные дела",
+      "description": "Ведение юридических дел и отслеживание их статуса.",
+      "addNew": "Новое дело",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
-        "description": "Description",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date"
+        "caseTitle": "Название дела",
+        "caseType": "Тип дела",
+        "country": "Страна",
+        "description": "Описание",
+        "assignedTo": "Назначен в",
+        "status": "Статус",
+        "hearingDate": "Дата слушания"
       },
       "table": {
-        "caseTitle": "Case Title",
-        "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "caseTitle": "Название дела",
+        "type": "Тип",
+        "country": "Страна",
+        "assignedTo": "Назначен в",
+        "status": "Статус",
+        "hearingDate": "Дата слушания",
+        "actions": "Действия"
       },
       "status": {
-        "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "open": "Открыть",
+        "inProgress": "В ходе выполнения",
+        "closed": "Закрыто",
+        "cancelled": "Отменено"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "Карта флота",
+      "description": "Отслеживание в режиме реального времени торговых представителей и транспортных средств доставки.",
+      "activeEmployees": "Действующие сотрудники",
+      "noEmployees": "Нет действующих сотрудников.",
+      "loading": "Загрузка..."
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
-      "reset": "Reset",
-      "play": "Play",
-      "pause": "Pause",
-      "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "title": "Повтор маршрута",
+      "employee": "Сотрудник",
+      "speed": "Скорость",
+      "reset": "Перезагрузить",
+      "play": "Играть",
+      "pause": "Пауза",
+      "points": "баллы",
+      "noRoute": "Данные о маршруте отсутствуют.",
+      "loading": "Маршрут загрузки..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "Продукция конкурентов",
+      "description": "Отслеживайте информацию о продукции конкурентов.",
+      "addProduct": "Добавить товар",
+      "formTitle": "Добавить продукт конкурента",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "Бренд",
+        "skuName": "Название артикула",
+        "category": "Категория",
+        "size": "Размер",
+        "price": "Цена",
+        "currency": "Валюта",
+        "country": "Страна"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "Бренд",
+        "skuName": "Название артикула",
+        "category": "Категория",
+        "size": "Размер",
+        "price": "Цена",
+        "country": "Страна",
+        "dateAdded": "Дата добавления"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "Не удалось загрузить товары.",
+        "createFailed": "Не удалось создать товар. Пожалуйста, попробуйте еще раз."
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "Конкурирующих товаров не найдено.",
+      "loading": "Загрузка товаров..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "Панель мониторинга конкурентов",
+      "description": "Аналитика и информация о продуктах конкурентов.",
+      "totalProducts": "Совокупный объем продукции",
+      "brandsTracked": "Отслеживаемые бренды",
+      "countries": "Страны",
+      "categories": "Категории",
+      "byBrand": "Товары по брендам",
+      "byCountry": "Товары по странам",
+      "byCategory": "Товары по категориям",
+      "loading": "Загрузка статистики...",
+      "noStats": "Статистические данные отсутствуют."
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
-    "finance": "Finance",
+    "overview": "Обзор",
+    "orders": "Заказы",
+    "inventory": "Инвентаризация",
+    "logistics": "Логистика",
+    "finance": "Финансы",
     "crm": "CRM",
     "hr": "HR",
-    "executive": "Executive",
-    "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
-    "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
-    "admin": "Admin"
+    "executive": "Исполнительный",
+    "investor": "Инвестор",
+    "legal-ipr": "Юридические вопросы/Права интеллектуальной собственности",
+    "competitor": "Конкурент",
+    "import-export": "Импорт/экспорт",
+    "gps-tracking": "GPS-отслеживание",
+    "localization": "Локализация",
+    "workflows": "Рабочие процессы",
+    "admin": "Администратор"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
-      "finance": "Finance",
+      "overview": "Обзор",
+      "orders": "Заказы",
+      "inventory": "Инвентаризация",
+      "logistics": "Логистика",
+      "finance": "Финансы",
       "crm": "CRM",
       "hr": "HR",
-      "executive": "Executive",
-      "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
-      "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
-      "admin": "Admin"
+      "executive": "Исполнительный",
+      "investor": "Инвестор",
+      "legal-ipr": "Юридические вопросы/Права интеллектуальной собственности",
+      "competitor": "Конкурент",
+      "import-export": "Импорт/экспорт",
+      "gps-tracking": "GPS-отслеживание",
+      "localization": "Локализация",
+      "workflows": "Рабочие процессы",
+      "admin": "Администратор"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
-      "profit": "Profit"
+      "customers": "Клиенты",
+      "employees": "Сотрудники",
+      "profit": "Выгода"
+    },
+    "domain": {
+      "title": "ОС CRM",
+      "customer360": {
+        "title": "Клиент 360",
+        "description": "Полные профили клиентов, история взаимодействий и управление взаимоотношениями."
+      },
+      "campaigns": {
+        "title": "Цифровые кампании",
+        "description": "Многоканальные маркетинговые кампании (IG, FB, TikTok, WhatsApp)"
+      },
+      "leads": {
+        "title": "Потенциальные клиенты и возможности",
+        "description": "Управление потенциальными клиентами, их квалификация и формирование кадрового резерва"
+      },
+      "support": {
+        "title": "Служба поддержки клиентов",
+        "description": "Управление заявками, обслуживание клиентов и решение проблем."
+      },
+      "loyalty": {
+        "title": "Программы лояльности",
+        "description": "Управление программами лояльности, геймификацией и вознаграждениями для розничных продавцов"
+      }
+    },
+    "customerList": {
+      "title": "Клиент 360",
+      "newCustomer": "Новый клиент",
+      "totalCustomers": "Общее количество клиентов",
+      "active": "Активный",
+      "new": "Новый",
+      "satisfaction": "Удовлетворение",
+      "customerManagement": "Управление клиентами",
+      "customerManagementDescription": "Просматривайте и управляйте своими взаимоотношениями с клиентами, взаимодействиями и кампаниями.",
+      "loading": "Загрузка...",
+      "error": "Ошибка при загрузке данных CRM."
     }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "Загрузка кабины поставщика…",
+      "purchaseOrders": "Заказы на закупку",
+      "purchaseOrdersSubtitle": "Воспитан в Харвике",
+      "shipments": "Отгрузки / GRN",
+      "shipmentsSubtitle": "Принято на этой неделе",
+      "invoices": "Созданы счета-фактуры",
+      "invoicesSubtitle": "Ожидание оплаты",
+      "paymentsPending": "Ожидающие платежи",
+      "paymentsPendingSubtitle": "Планируется к выпуску",
+      "qualityComplaints": "Качество / жалобы",
+      "qualityComplaintsSubtitle": "Открытые билеты",
+      "forecast": "Прогноз (на следующие 4 недели)",
+      "forecastSubtitle": "ИИ-заполнитель",
+      "supplierActions": "Действия поставщика",
+      "action1": "Подтвердите предстоящие отгрузки и обновите график приемки товаров.",
+      "action2": "Проверьте неоплаченные счета и предоставьте платежное поручение.",
+      "action3": "Разрешите открытые жалобы на качество, предоставив подтверждающие документы отдела контроля качества."
+    }
+  },
+  "form": {
+    "username": "Имя пользователя",
+    "password": "Пароль",
+    "email": "Электронная почта",
+    "submit": "Представлять на рассмотрение",
+    "cancel": "Отмена",
+    "save": "Сохранять",
+    "delete": "Удалить",
+    "search": "Поиск",
+    "filter": "Фильтр",
+    "reset": "Перезагрузить",
+    "close": "Закрывать",
+    "back": "Назад",
+    "next": "Следующий",
+    "previous": "Предыдущий",
+    "confirm": "Подтверждать",
+    "rememberMe": "Запомнить меня",
+    "forgotPassword": "Забыли пароль?",
+    "emailRequired": "Требуется указать адрес электронной почты.",
+    "emailInvalid": "Пожалуйста, введите действительный адрес электронной почты"
+  },
+  "faq": {
+    "products": {
+      "category": "Продукты",
+      "q1": "Какую продукцию предлагает компания Harvics?",
+      "a1": "Мы предлагаем широкий ассортимент высококачественных продуктов питания, включая кондитерские изделия, напитки, закуски, макаронные изделия, хлебобулочные изделия и замороженные продукты в различных категориях.",
+      "q2": "Где можно купить продукцию Harvics?",
+      "a2": "Наша продукция представлена в розничных магазинах более чем в 40 странах мира. Воспользуйтесь нашим поиском магазинов или страницей контактов, чтобы найти ближайшего к вам продавца.",
+      "q3": "Вы принимаете оптовые заказы?",
+      "a3": "Да, мы предлагаем скидки на оптовые заказы для предприятий и розничных продавцов. Для получения более подробной информации посетите нашу страницу «Скидки на оптовые заказы»."
+    },
+    "ordersShipping": {
+      "category": "Заказы и доставка",
+      "q1": "Какие у вас варианты доставки?",
+      "a1": "Мы предлагаем различные варианты доставки, включая стандартную, экспресс-доставку и международную доставку. Бесплатная доставка предоставляется при заказе на сумму свыше 50 долларов.",
+      "q2": "Сколько времени занимает доставка?",
+      "a2": "Сроки доставки зависят от местоположения. Стандартная доставка обычно занимает 5-7 рабочих дней, а экспресс-доставка — 2-3 рабочих дня.",
+      "q3": "Могу ли я отследить свой заказ?",
+      "a3": "Да, вы можете отследить свой заказ, используя номер отслеживания, указанный в электронном письме с подтверждением заказа."
+    },
+    "accountPayments": {
+      "category": "Учет и платежи",
+      "q1": "Как мне создать учетную запись?",
+      "a1": "Нажмите на кнопку «Войти» в заголовке и выберите «Создать учетную запись», чтобы зарегистрировать новую учетную запись.",
+      "q2": "Какие способы оплаты вы принимаете?",
+      "a2": "Мы принимаем все основные кредитные и дебетовые карты, PayPal, а также банковские переводы для заказов B2B.",
+      "q3": "Насколько защищена моя платежная информация?",
+      "a3": "Да, мы используем стандартное для отрасли шифрование для защиты вашей платежной информации."
+    },
+    "returnsRefunds": {
+      "category": "Возврат и возмещение средств",
+      "q1": "Каковы ваши правила возврата товара?",
+      "a1": "Мы предлагаем 30-дневную политику возврата для нераспакованных товаров в оригинальной упаковке. Для получения разрешения на возврат, пожалуйста, свяжитесь с нашей службой поддержки клиентов.",
+      "q2": "Как мне запросить возврат средств?",
+      "a2": "Свяжитесь с нашей службой поддержки клиентов, указав номер вашего заказа и причину возврата. Мы обработаем ваш возврат средств в течение 5-7 рабочих дней."
+    },
+    "contactCta": {
+      "title": "Остались вопросы?",
+      "subtitle": "Наша команда обслуживания клиентов всегда готова помочь.",
+      "button": "Связаться с нами"
+    }
+  },
+  "careers": {
+    "title": "Карьера",
+    "pageTitle": "Карьера | Harvics",
+    "description": "Присоединяйтесь к Harvics Global Ventures — изучите возможности в более чем 40 странах мира.",
+    "joinUs": "Присоединяйтесь к нам",
+    "heroTitle": "Постройте будущее глобальной торговли",
+    "heroDesc": "Мы расширяемся более чем в 40 странах. Присоединяйтесь к команде, которая создает операционную систему на базе искусственного интеллекта для глобальной коммерции.",
+    "stats": {
+      "openPositions": "Открытые вакансии",
+      "countries": "Страны",
+      "industryVerticals": "Отраслевые вертикали",
+      "departmentsHiring": "Отделы, осуществляющие набор персонала"
+    },
+    "openPositionsByDept": "Открытые вакансии по отделам",
+    "departments": {
+      "sales": {
+        "name": "Продажи и дистрибуция",
+        "desc": "Увеличение выручки на более чем 40 рынках. Управление территорией, работа с ключевыми клиентами, отношения с дистрибьюторами."
+      },
+      "supplyChain": {
+        "name": "Управление цепочками поставок и логистика",
+        "desc": "Комплексная цепочка поставок от завода до полки магазина. Управление автопарком, складирование, доставка «последней мили»."
+      },
+      "technology": {
+        "name": "Технологии и ИИ",
+        "desc": "Разрабатываем Harvics OS — нашу корпоративную платформу на базе искусственного интеллекта. Полный цикл разработки, машинное обучение, анализ данных."
+      },
+      "finance": {
+        "name": "Финансы и казначейство",
+        "desc": "Управление казначейскими операциями в нескольких валютах, торговое финансирование, цифровые платежи HPay, управление валютными операциями в разных регионах."
+      },
+      "procurement": {
+        "name": "Закупки и снабжение",
+        "desc": "Глобальные закупки из более чем 15 стран-производителей. Аудит поставщиков, контроль качества, программы прямых поставок с заводов."
+      },
+      "hr": {
+        "name": "Человеческие ресурсы",
+        "desc": "Подбор персонала, обучение и развитие, управление эффективностью работы в различных географических регионах и культурах."
+      },
+      "legal": {
+        "name": "Правовые вопросы и соблюдение нормативных требований",
+        "desc": "Соблюдение торговых правил, проверка на соответствие санкциям, защита интеллектуальной собственности, управление контрактами в разных юрисдикциях."
+      },
+      "marketing": {
+        "name": "Маркетинг и бренд",
+        "desc": "Многоязычные кампании, контент на 38 языках, цифровой маркетинг, стратегия бренда для 10 вертикалей."
+      }
+    },
+    "roles": "роли",
+    "whyHarvics": "Почему именно Harvics?",
+    "benefits": {
+      "globalMobility": {
+        "title": "Глобальная мобильность",
+        "desc": "Работа в Дубае, Лондоне, Карачи, Лахоре и более чем 40 городах мира."
+      },
+      "growthTrack": {
+        "title": "Путь роста",
+        "desc": "Ускоренное продвижение по карьерной лестнице в быстрорастущей компании."
+      },
+      "aiCulture": {
+        "title": "Культура, ориентированная на ИИ",
+        "desc": "Работайте с передовыми системами искусственного интеллекта и интеллектуального анализа в реальном времени."
+      },
+      "competitivePackage": {
+        "title": "Конкурентоспособный пакет",
+        "desc": "Лидирующие на рынке компенсации, жилье и льготы."
+      },
+      "learningBudget": {
+        "title": "Бюджет на обучение",
+        "desc": "Ежегодный бюджет на разработку курсов, конференций и сертификаций."
+      },
+      "flexibleWork": {
+        "title": "Гибкий график работы",
+        "desc": "Гибридные соглашения с региональными представительствами по всему миру."
+      }
+    }
+  },
+  "strategy": {
+    "title": "Наша стратегия",
+    "pageTitle": "Стратегия | Харвич",
+    "description": "Построение устойчивого будущего посредством инноваций и совершенства.",
+    "heroSubtitle": "Построение устойчивого будущего посредством инноваций и совершенства.",
+    "pillars": {
+      "globalExpansion": {
+        "title": "Глобальная экспансия",
+        "desc": "Расширение нашего присутствия на развивающихся рынках и укрепление позиций на устоявшихся рынках."
+      },
+      "productInnovation": {
+        "title": "Инновации в продуктах",
+        "desc": "Инвестиции в НИОКР для разработки новых продуктов, отвечающих меняющимся предпочтениям потребителей."
+      },
+      "sustainability": {
+        "title": "Устойчивое развитие",
+        "desc": "Мы привержены принципам устойчивого развития во всей нашей цепочке поставок и операционной деятельности."
+      },
+      "digitalTransformation": {
+        "title": "Цифровая трансформация",
+        "desc": "Использование технологий для улучшения качества обслуживания клиентов и повышения операционной эффективности."
+      }
+    },
+    "vision": {
+      "title": "Наше видение",
+      "desc": "Стать ведущей мировой компанией по производству потребительских товаров премиум-класса, признанной за качество, инновации и устойчивое развитие."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Harvics Global Ventures | Премиум-торговля на мировом рынке",
+      "description": "Ведущая мировая торговая компания, поставляющая продукцию премиум-класса в более чем 10 отраслях. Работает в более чем 50 странах с 2019 года."
+    },
+    "about": {
+      "title": "О нас | Harvics Global Ventures",
+      "description": "Узнайте, как Harvics Global Ventures стала ведущей силой в мировой торговле, охватывающей более 40 стран и 10 отраслей."
+    },
+    "contact": {
+      "title": "Свяжитесь с нами | Harvics Global Ventures",
+      "description": "Свяжитесь с офисами Harvics по всему миру: на Ближнем Востоке, в Южной Азии, Европе, Африке и Северной и Южной Америке."
+    },
+    "products": {
+      "title": "Продукция | Harvics Global Ventures",
+      "description": "Ознакомьтесь с премиальным ассортиментом продукции Harvics в секторах товаров повседневного спроса, текстиля, сырьевых товаров и промышленных решений."
+    },
+    "careers": {
+      "title": "Вакансии | Harvics Global Ventures",
+      "description": "Присоединяйтесь к Harvics Global Ventures — изучите возможности работы в более чем 40 странах мира в секторах товаров повседневного спроса, текстиля, логистики и технологий."
+    },
+    "media": {
+      "title": "Медиацентр | Harvics Global Ventures",
+      "description": "Медиацентр Harvics — пресс-релизы, последние новости, фирменные материалы и контакты для СМИ."
+    },
+    "strategy": {
+      "title": "Наша стратегия | Harvics Global Ventures",
+      "description": "Стратегическое видение компании Harvics в отношении глобального расширения, инноваций, устойчивого развития и цифровой трансформации."
+    },
+    "csr": {
+      "title": "Корпоративная социальная ответственность | Harvics",
+      "description": "Инициативы Harvics в области корпоративной социальной ответственности — охрана окружающей среды, общественные программы и этические принципы ведения бизнеса."
+    },
+    "faq": {
+      "title": "Часто задаваемые вопросы | Harvics Global Ventures",
+      "description": "Часто задаваемые вопросы о продукции, услугах, оформлении заказов и деятельности компании Harvics по всему миру."
+    },
+    "locations": {
+      "title": "Глобальные представительства | Harvics",
+      "description": "Офисы и подразделения Harvics расположены на Ближнем Востоке, в Южной Азии, Европе, Африке и Северной и Южной Америке."
+    },
+    "leadership": {
+      "title": "Руководящая команда | Harvics",
+      "description": "Познакомьтесь с командой руководителей, управляющей Harvics Global Ventures на более чем 40 рынках и в 10 отраслях."
+    },
+    "help": {
+      "title": "Центр поддержки | Harvics",
+      "description": "Получите помощь по вопросам заказов, учета, доставки и услуг Harvics."
+    },
+    "compliance": {
+      "title": "Соблюдение нормативных требований и этика | Harvics",
+      "description": "Компания Harvics привержена соблюдению нормативных требований, этическим принципам ведения бизнеса и мировым стандартам."
+    },
+    "history": {
+      "title": "Наша история | Харвикс",
+      "description": "История компании Harvics: от стартапа в Дубае в 2019 году до глобального предприятия, работающего в более чем 40 странах."
+    },
+    "newsletter": {
+      "title": "Информационный бюллетень | Harvics",
+      "description": "Подпишитесь на новостную рассылку Harvics, чтобы получать информацию об отраслевых тенденциях и новинках продукции."
+    },
+    "login": {
+      "title": "Войти | Harvics",
+      "description": "Войдите в свою учетную запись Harvics, чтобы управлять заказами и получать доступ к платформе."
+    },
+    "research": {
+      "title": "Исследования и инновации | Гарвикс",
+      "description": "Научно-исследовательские инициативы и инновационные программы Harvics лежат в основе нашей глобальной стратегии."
+    },
+    "investorRelations": {
+      "title": "Связи с инвесторами | Harvics",
+      "description": "Информация для инвесторов, финансовые отчеты и корпоративные объявления от Harvics Global Ventures."
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Страница не найдена",
+      "heading": "404 — Страница не найдена",
+      "description": "Страница, которую вы ищете, либо не существует, либо была перемещена.",
+      "goHome": "Перейти на главную страницу",
+      "goBack": "Возвращаться"
+    },
+    "serverError": {
+      "title": "Что-то пошло не так.",
+      "heading": "Что-то пошло не так.",
+      "description": "Приносим свои извинения, но произошла непредвиденная ситуация. Пожалуйста, попробуйте обновить страницу.",
+      "tryAgain": "Попробуйте еще раз",
+      "reload": "Обновить страницу",
+      "contactSupport": "Связаться со службой поддержки"
+    },
+    "globalError": {
+      "title": "Ошибка приложения",
+      "heading": "Критическая ошибка",
+      "description": "Произошла критическая ошибка. Пожалуйста, перезагрузите страницу.",
+      "reload": "Перезагрузить приложение"
+    }
+  },
+  "about": {
+    "title": "О компании Harvics",
+    "subtitle": "Превосходство в сфере товаров премиум-класса для потребителей с 2019 года.",
+    "ourStory": "Наша история",
+    "story1": "Компания Harvics, основанная в 2019 году, выросла из новаторской идеи в мирового лидера в сфере потребительских товаров премиум-класса. Наш путь определяется неустанным стремлением к качеству и приверженностью инновациям.",
+    "story2": "Мы работаем более чем в 40 странах, поставляя продукцию, которая улучшает жизнь и устанавливает новые стандарты в отрасли. С момента нашего скромного начала и до глобального присутствия наши ценности остаются неизменными.",
+    "est2018": "Основано в 2019 году.",
+    "countries40": "Более 40 стран",
+    "productLines6": "6 продуктовых линеек"
+  },
+  "csr": {
+    "hero": {
+      "title": "Корпоративная социальная ответственность",
+      "description": "В компании Harvics мы стремимся оказывать позитивное влияние на мир. Наши инициативы в области корпоративной социальной ответственности сосредоточены на устойчивом развитии, расширении прав и возможностей местных сообществ и этичных деловых практиках.",
+      "stats": {
+        "years": "Годы влияния",
+        "countries": "Страны, до которых удалось добраться",
+        "lives": "Жизни, затронутые произошедшим"
+      }
+    },
+    "initiatives": {
+      "title": "Наши ключевые инициативы",
+      "description": "Для обеспечения устойчивых изменений и создания общей ценности для всех заинтересованных сторон мы сосредотачиваемся на четырех основных направлениях."
+    },
+    "sustainability": {
+      "title": "Устойчивое развитие",
+      "description": "Сокращение нашего воздействия на окружающую среду за счет использования возобновляемых источников энергии и сокращения отходов.",
+      "stats": {
+        "renewable": "Возобновляемая энергия",
+        "waste": "Переработанные отходы",
+        "carbon": "Сокращение выбросов углерода"
+      }
+    },
+    "community": {
+      "title": "Поддержка сообщества",
+      "description": "Расширение возможностей местных сообществ посредством образования, здравоохранения и экономического развития.",
+      "stats": {
+        "families": "Семьи, получающие поддержку",
+        "programs": "Активные программы",
+        "volunteers": "Волонтеры"
+      }
+    },
+    "education": {
+      "title": "Образование",
+      "description": "Обеспечение доступа к качественному образованию и стипендиям для учащихся из малообеспеченных семей.",
+      "stats": {
+        "scholarships": "Стипендии",
+        "schools": "Школы-партнеры",
+        "students": "Затронутые студенты"
+      }
+    },
+    "health": {
+      "title": "Здоровье и благополучие",
+      "description": "Улучшение доступа к здравоохранению и питанию в регионах с недостаточным уровнем медицинского обслуживания.",
+      "stats": {
+        "campaigns": "Кампании в области здравоохранения",
+        "people": "Люди, которым оказывалась помощь",
+        "clinics": "Мобильные клиники"
+      }
+    },
+    "achievements": {
+      "2022": {
+        "title": "Лучшая инициатива в области корпоративной социальной ответственности",
+        "description": "Мы удостоены награды за наш новаторский подход к социальной ответственности."
+      },
+      "2023": {
+        "title": "Чемпион сообщества",
+        "description": "Награждены за наши масштабные программы взаимодействия с местным сообществом."
+      },
+      "2024": {
+        "title": "Премия «Глобальная устойчивость»",
+        "description": "Нас признали приверженными принципу углеродной нейтральности."
+      },
+      "title": "Наше влияние",
+      "description": "Отмечаем наши достижения на пути к созданию лучшего мира."
+    },
+    "cta": {
+      "title": "Присоединяйтесь к нам и измените мир к лучшему!",
+      "description": "Станьте нашим партнером или узнайте больше о том, как мы строим устойчивое будущее.",
+      "contact": "Свяжитесь с командой по корпоративной социальной ответственности",
+      "learnMore": "Узнать больше"
+    }
+  },
+  "harvicsHouse": {
+    "title": "Дом Харвика",
+    "subtitle": "Наследие совершенства и традиций",
+    "aboutTitle": "Добро пожаловать в дом Харвика!",
+    "description": "Harvics House – это вершина нашей приверженности качеству и традициям. Здесь мы собрали лучшие образцы нашей продукции премиум-класса, представленные в обстановке, отражающей наши ценности: элегантность, традиции и инновации.",
+    "description2": "Ознакомьтесь с нашими эксклюзивными коллекциями и узнайте историю каждого продукта, носящего имя Harvics."
   }
 }

@@ -22,7 +22,7 @@ export default function InvestorLoginPage() {
   const locale = useLocale()
 
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen bg-gray-100">
       <div className="pt-20">
         {/* Hero Section */}
         <section className="py-20 px-6 bg-[#6B1F2B] text-center pb-32">

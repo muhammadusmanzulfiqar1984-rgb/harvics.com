@@ -35,7 +35,7 @@ const CompetenceSection: React.FC = () => {
       <div className="relative z-10 flex items-center min-h-[85vh] px-6">
         <div className="max-w-[1200px] mx-auto w-full">
           <div
-            className={`max-w-[600px] bg-[#F5F1E8]/95 p-12 ${revealClass(isVisible, 'up')}`}
+            className={`max-w-[600px] bg-white/95 p-12 ${revealClass(isVisible, 'up')}`}
             style={{ borderRadius: 0, backdropFilter: 'blur(8px)' }}
           >
             <div className="text-xs font-bold text-[#C3A35E] uppercase tracking-[0.2em] mb-4">

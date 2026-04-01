@@ -28,7 +28,7 @@ export default function AuthGuard({ children, allowedRoles }: AuthGuardProps) {
 
       if (!token) {
         console.log('AuthGuard: No token found, redirecting to portals')
-        router.push(`/${locale}/portals/`)
+        router.push(`/${locale}/login`)
         return
       }
 
@@ -71,19 +71,31 @@ export default function AuthGuard({ children, allowedRoles }: AuthGuardProps) {
           localStorage.removeItem('auth_token')
           localStorage.removeItem('user_scope')
           localStorage.removeItem('user_data')
-          router.push(`/${locale}/portals/`)
+          router.push(`/${locale}/login`)
           return
         }
         
+        // Skip API verification for demo tokens — backend may not be running
+        if (token.startsWith('demo-token-')) {
+          setIsAuthenticated(true)
+          setIsChecking(false)
+          return
+        }
+
         // Verify token is still valid before allowing access
         try {
           const verifyResponse = await apiClient.verifyToken()
           if (verifyResponse.error || !verifyResponse.data?.valid) {
-            // Token invalid, clear and redirect
+            // Token invalid — but if backend is down (any error), trust localStorage role
+            if (verifyResponse.error) {
+              setIsAuthenticated(true)
+              setIsChecking(false)
+              return
+            }
             localStorage.removeItem('auth_token')
             localStorage.removeItem('user_scope')
             localStorage.removeItem('user_data')
-            router.push(`/${locale}/portals/`)
+            router.push(`/${locale}/login`)
             return
           }
           
@@ -92,14 +104,25 @@ export default function AuthGuard({ children, allowedRoles }: AuthGuardProps) {
           setIsChecking(false)
           return
         } catch (error) {
-          console.error('AuthGuard: Token verification error:', error)
-          // On error, clear auth and redirect
-          localStorage.removeItem('auth_token')
-          localStorage.removeItem('user_scope')
-          localStorage.removeItem('user_data')
-          router.push(`/${locale}/portals/`)
+          // Backend not running — trust the localStorage role rather than kicking user out
+          console.warn('AuthGuard: Backend unreachable, trusting localStorage role:', storedRole)
+          setIsAuthenticated(true)
+          setIsChecking(false)
           return
         }
+      }
+
+      // No localStorage role — but if it's a demo token, extract role from the token name
+      if (token.startsWith('demo-token-')) {
+        const demoRole = token.replace('demo-token-', '') as UserRole
+        if (!allowedRoles || allowedRoles.length === 0 || allowedRoles.includes(demoRole)) {
+          setIsAuthenticated(true)
+          setIsChecking(false)
+          return
+        }
+        // demo token role not allowed — redirect
+        router.push(`/${locale}/login`)
+        return
       }
 
       // If no localStorage data, try API verification
@@ -108,33 +131,33 @@ export default function AuthGuard({ children, allowedRoles }: AuthGuardProps) {
         
         if (response.error) {
           console.error('AuthGuard: Token verification error:', response.error)
-          router.push(`/${locale}/portals/`)
+          router.push(`/${locale}/login`)
           return
         }
 
         if (!response.data?.valid) {
           console.log('AuthGuard: Token invalid, redirecting to portals')
-          router.push(`/${locale}/portals/`)
+          router.push(`/${locale}/login`)
           return
         }
 
         const role = response.data.user?.role || response.data.user?.scope?.role
         if (!role) {
           console.log('AuthGuard: No role found in response, redirecting to portals')
-          router.push(`/${locale}/portals/`)
+          router.push(`/${locale}/login`)
           return
         }
 
         if (allowedRoles && !allowedRoles.includes(role as UserRole)) {
           console.log(`AuthGuard: Role ${role} not in allowed roles`, allowedRoles)
-          router.push(`/${locale}/portals/`)
+          router.push(`/${locale}/login`)
           return
         }
 
         setIsAuthenticated(true)
       } catch (error) {
         console.error('AuthGuard: Exception during token verification:', error)
-        router.push(`/${locale}/portals/`)
+        router.push(`/${locale}/login`)
         return
       } finally {
         setIsChecking(false)

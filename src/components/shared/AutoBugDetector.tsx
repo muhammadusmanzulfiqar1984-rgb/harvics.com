@@ -6,7 +6,7 @@ import { autoBugDetector, type BugReport } from '@/services/auto-bug-detector'
 export default function AutoBugDetector() {
   const [bugs, setBugs] = useState<BugReport[]>([])
   const [stats, setStats] = useState(autoBugDetector.getStats())
-  const [monitorSnapshot, setMonitorSnapshot] = useState(autoBugDetector.getMonitorSnapshot())
+  const [monitorSnapshot, setMonitorSnapshot] = useState<any>(autoBugDetector.getMonitorSnapshot())
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {

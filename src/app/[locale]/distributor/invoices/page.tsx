@@ -57,19 +57,12 @@ export default function DistributorInvoices() {
         }
 
         if (response?.data) {
-          interface InvoicesResponseData {
-            data?: {
-              invoices?: unknown[]
-              pagination?: unknown
-            }
-            [key: string]: unknown
-          }
-          const responseData = response.data as InvoicesResponseData | unknown[]
+          const responseData = response.data as any
           if (Array.isArray(responseData)) {
-            setInvoices(responseData)
-          } else if ('data' in responseData && responseData.data) {
-            setInvoices((responseData.data.invoices as unknown[]) || [])
-            setPagination((responseData.data.pagination as typeof pagination) || pagination)
+            setInvoices(responseData as typeof invoices)
+          } else if (responseData?.data) {
+            setInvoices((responseData.data.invoices || []) as typeof invoices)
+            setPagination(responseData.data.pagination || pagination)
           }
         }
       } catch (err) {
@@ -152,7 +145,7 @@ export default function DistributorInvoices() {
                 <select
                   value={filters.status}
                   onChange={(e) => handleFilterChange('status', e.target.value)}
-                  className="w-full border border-black300 px-4 py-2"
+                  className="w-full border border-gray-200 px-4 py-2"
                 >
                   <option value="">{t('filters.allStatuses')}</option>
                   <option value="PAID">{t('statuses.paid')}</option>
@@ -252,7 +245,7 @@ export default function DistributorInvoices() {
               <button
                 onClick={() => setPagination((prev) => ({ ...prev, page: prev.page - 1 }))}
                 disabled={pagination.page === 1}
-                className="px-4 py-2 border border-black300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 border border-gray-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Previous
               </button>
@@ -262,7 +255,7 @@ export default function DistributorInvoices() {
               <button
                 onClick={() => setPagination((prev) => ({ ...prev, page: prev.page + 1 }))}
                 disabled={pagination.page >= pagination.totalPages}
-                className="px-4 py-2 border border-black300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 border border-gray-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Next
               </button>

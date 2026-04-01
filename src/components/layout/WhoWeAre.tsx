@@ -15,7 +15,7 @@ const WhoWeAre: React.FC = () => {
   const { ref, isVisible } = useScrollReveal()
 
   return (
-    <section ref={ref} className="bg-[#F5F1E8] py-24 px-6">
+    <section ref={ref} className="bg-white py-24 px-6">
       <div className="max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left — Copy */}

@@ -1,0 +1,128 @@
+{
+  "_note": "French backend translations - API responses, statuses, error messages",
+  "orders": {
+    "status": {
+      "pending": "En attente",
+      "inTransit": "En transit",
+      "completed": "Terminé",
+      "cancelled": "Annulé",
+      "processing": "En traitement",
+      "delivered": "Livré",
+      "onHold": "En suspens"
+    },
+    "messages": {
+      "created": "Commande créée avec succès",
+      "updated": "Commande mise à jour avec succès",
+      "deleted": "Commande supprimée avec succès",
+      "notFound": "Commande introuvable"
+    }
+  },
+  "inventory": {
+    "categories": {
+      "frozenFoods": "Surgelés",
+      "culinary": "Culinaire",
+      "commodities": "Matières premières",
+      "industrial": "Industriel",
+      "grains": "Céréales",
+      "pantry": "Épicerie",
+      "confectionery": "Confiserie",
+      "natural": "Naturel",
+      "homeTextiles": "Textiles de maison",
+      "beverages": "Boissons"
+    },
+    "messages": {
+      "created": "Article d'inventaire créé avec succès",
+      "updated": "Article d'inventaire mis à jour avec succès",
+      "deleted": "Article d'inventaire supprimé avec succès",
+      "notFound": "Article d'inventaire introuvable",
+      "lowStock": "Alerte de stock bas"
+    }
+  },
+  "crm": {
+    "segments": {
+      "wholesale": "Grossiste",
+      "distributor": "Distributeur",
+      "retail": "Détaillant",
+      "b2b": "B2B",
+      "ecommerce": "E-commerce",
+      "direct": "Direct"
+    },
+    "messages": {
+      "customerCreated": "Client créé avec succès",
+      "customerUpdated": "Client mis à jour avec succès",
+      "customerDeleted": "Client supprimé avec succès",
+      "customerNotFound": "Client introuvable"
+    }
+  },
+  "hr": {
+    "departments": {
+      "sales": "Ventes",
+      "operations": "Opérations",
+      "finance": "Finance",
+      "hr": "Ressources Humaines",
+      "it": "Informatique",
+      "marketing": "Marketing",
+      "logistics": "Logistique",
+      "procurement": "Achats",
+      "executive": "Direction",
+      "legal": "Juridique"
+    },
+    "messages": {
+      "employeeCreated": "Dossier employé créé avec succès",
+      "employeeUpdated": "Dossier employé mis à jour avec succès",
+      "employeeDeleted": "Dossier employé supprimé avec succès",
+      "employeeNotFound": "Employé introuvable"
+    }
+  },
+  "finance": {
+    "status": {
+      "paid": "Payé",
+      "unpaid": "Non payé",
+      "overdue": "En retard",
+      "partial": "Paiement partiel"
+    },
+    "messages": {
+      "invoiceCreated": "Facture créée avec succès",
+      "paymentReceived": "Paiement reçu avec succès",
+      "approvalRequired": "Approbation requise"
+    }
+  },
+  "logistics": {
+    "status": {
+      "scheduled": "Planifié",
+      "inProgress": "En cours",
+      "completed": "Terminé",
+      "delayed": "Retardé"
+    },
+    "messages": {
+      "routeCreated": "Itinéraire créé avec succès",
+      "routeUpdated": "Itinéraire mis à jour avec succès",
+      "shipmentDispatched": "Expédition envoyée"
+    }
+  },
+  "errors": {
+    "invalidCredentials": "Nom d'utilisateur ou mot de passe invalide",
+    "unauthorized": "Accès non autorisé",
+    "forbidden": "Accès interdit",
+    "notFound": "Ressource introuvable",
+    "serverError": "Erreur interne du serveur",
+    "validationError": "Erreur de validation",
+    "duplicateEntry": "Entrée en double",
+    "tokenExpired": "Session expirée, veuillez vous reconnecter",
+    "tokenInvalid": "Jeton d'authentification invalide",
+    "missingFields": "Champs obligatoires manquants",
+    "invalidFormat": "Format de données invalide",
+    "databaseError": "Erreur de base de données",
+    "networkError": "Erreur réseau"
+  },
+  "messages": {
+    "success": "Opération effectuée avec succès",
+    "created": "Créé avec succès",
+    "updated": "Mis à jour avec succès",
+    "deleted": "Supprimé avec succès",
+    "fetched": "Données récupérées avec succès",
+    "loginSuccess": "Connexion réussie",
+    "logoutSuccess": "Déconnexion réussie",
+    "welcome": "Bienvenue sur Harvics OS"
+  }
+}

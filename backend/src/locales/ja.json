@@ -1,0 +1,168 @@
+{
+  "_note": "Japanese backend translations - API responses, statuses, error messages",
+  "orders": {
+    "status": {
+      "pending": "保留中",
+      "inTransit": "輸送中",
+      "completed": "完了",
+      "cancelled": "キャンセル",
+      "processing": "処理中",
+      "delivered": "配達済み",
+      "onHold": "保留"
+    },
+    "messages": {
+      "created": "注文が正常に作成されました",
+      "updated": "注文が正常に更新されました",
+      "deleted": "注文が正常に削除されました",
+      "notFound": "注文が見つかりません"
+    }
+  },
+  "inventory": {
+    "categories": {
+      "frozenFoods": "冷凍食品",
+      "culinary": "料理",
+      "commodities": "商品",
+      "industrial": "産業",
+      "grains": "穀物",
+      "pantry": "パントリー",
+      "confectionery": "製菓",
+      "natural": "ナチュラル",
+      "homeTextiles": "ホームテキスタイル",
+      "beverages": "飲料"
+    },
+    "messages": {
+      "created": "在庫品目が正常に作成されました",
+      "updated": "在庫品目が正常に更新されました",
+      "deleted": "在庫品目が正常に削除されました",
+      "notFound": "在庫品目が見つかりません",
+      "lowStock": "在庫不足アラート"
+    }
+  },
+  "crm": {
+    "segments": {
+      "wholesale": "卸売",
+      "distributor": "代理店",
+      "retail": "小売",
+      "b2b": "B2B",
+      "ecommerce": "Eコマース",
+      "direct": "直接"
+    },
+    "stages": {
+      "lead": "リード",
+      "qualified": "適格",
+      "proposal": "提案",
+      "negotiation": "交渉",
+      "closed": "クローズ"
+    },
+    "messages": {
+      "customerCreated": "顧客が正常に作成されました",
+      "customerUpdated": "顧客が正常に更新されました",
+      "customerDeleted": "顧客が正常に削除されました",
+      "customerNotFound": "顧客が見つかりません",
+      "leadCreated": "リードが正常に作成されました",
+      "leadUpdated": "リードが正常に更新されました",
+      "leadDeleted": "リードが正常に削除されました",
+      "leadNotFound": "リードが見つかりません",
+      "campaignCreated": "キャンペーンが正常に作成されました",
+      "campaignUpdated": "キャンペーンが正常に更新されました",
+      "campaignNotFound": "キャンペーンが見つかりません"
+    }
+  },
+  "hr": {
+    "departments": {
+      "sales": "営業",
+      "operations": "オペレーション",
+      "finance": "財務",
+      "hr": "人事",
+      "it": "情報技術",
+      "marketing": "マーケティング",
+      "logistics": "物流",
+      "procurement": "調達",
+      "executive": "経営",
+      "legal": "法務"
+    },
+    "messages": {
+      "employeeCreated": "従業員記録が正常に作成されました",
+      "employeeUpdated": "従業員記録が正常に更新されました",
+      "employeeDeleted": "従業員記録が正常に削除されました",
+      "employeeNotFound": "従業員が見つかりません"
+    }
+  },
+  "finance": {
+    "status": {
+      "paid": "支払済み",
+      "unpaid": "未払い",
+      "overdue": "期限超過",
+      "partial": "一部支払済み"
+    },
+    "messages": {
+      "invoiceCreated": "請求書が正常に作成されました",
+      "invoiceUpdated": "請求書が正常に更新されました",
+      "invoiceDeleted": "請求書が正常に削除されました",
+      "invoiceNotFound": "請求書が見つかりません",
+      "paymentReceived": "支払いが正常に受領されました",
+      "paymentCreated": "支払いが正常に記録されました",
+      "approvalRequired": "承認が必要です"
+    }
+  },
+  "logistics": {
+    "status": {
+      "pending": "保留中",
+      "scheduled": "予定済み",
+      "inTransit": "輸送中",
+      "inProgress": "進行中",
+      "completed": "完了",
+      "delayed": "遅延"
+    },
+    "messages": {
+      "routeCreated": "ルートが正常に作成されました",
+      "routeUpdated": "ルートが正常に更新されました",
+      "routeDeleted": "ルートが正常に削除されました",
+      "routeNotFound": "ルートが見つかりません",
+      "shipmentDispatched": "出荷されました"
+    }
+  },
+  "procurement": {
+    "status": {
+      "pending": "保留中",
+      "approved": "承認済み",
+      "rejected": "却下",
+      "partial": "部分的",
+      "complete": "完了"
+    },
+    "messages": {
+      "poCreated": "発注書が正常に作成されました",
+      "poUpdated": "発注書が正常に更新されました",
+      "poDeleted": "発注書が正常に削除されました",
+      "poNotFound": "発注書が見つかりません",
+      "grnCreated": "入荷通知書が正常に作成されました",
+      "grnNotFound": "入荷通知書が見つかりません",
+      "approvalPending": "注文は承認待ちです"
+    }
+  },
+  "errors": {
+    "invalidCredentials": "ユーザー名またはパスワードが無効です",
+    "unauthorized": "アクセス権限がありません",
+    "forbidden": "アクセスが禁止されています",
+    "notFound": "リソースが見つかりません",
+    "serverError": "内部サーバーエラー",
+    "validationError": "検証エラー",
+    "duplicateEntry": "重複エントリー",
+    "tokenExpired": "セッションが期限切れです。再度ログインしてください",
+    "tokenInvalid": "無効な認証トークン",
+    "missingFields": "必須フィールドが不足しています",
+    "invalidFormat": "データ形式が無効です",
+    "databaseError": "データベースエラーが発生しました",
+    "networkError": "ネットワークエラーが発生しました"
+  },
+  "messages": {
+    "success": "操作が正常に完了しました",
+    "created": "正常に作成されました",
+    "updated": "正常に更新されました",
+    "deleted": "正常に削除されました",
+    "fetched": "データが正常に取得されました",
+    "loginSuccess": "ログイン成功",
+    "logoutSuccess": "ログアウト成功",
+    "welcome": "Harvics OSへようこそ"
+  }
+}

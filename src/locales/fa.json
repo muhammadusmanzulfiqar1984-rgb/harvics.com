@@ -1,624 +1,1146 @@
 {
   "_note": "Translation skeleton - English text used as placeholder. Needs translation.",
   "home": {
-    "welcome": "Welcome to",
-    "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "exploreProducts": "Explore Products",
-    "contact": "Contact Us",
-    "learnMore": "Learn More"
+    "welcome": "خوش آمدید به",
+    "companyName": "هارویچ",
+    "tagline": "برتری در کالاهای مصرفی ممتاز از سال ۲۰۱۹",
+    "exploreProducts": "محصولات را کاوش کنید",
+    "contact": "تماس با ما",
+    "learnMore": "اطلاعات بیشتر",
+    "brandStatement": "یک شرکت پیشرو در زمینه کالاهای مصرفی جهانی که محصولات غذایی ممتاز را در دسته‌بندی‌های متنوع و با استانداردهای کیفیت بین‌المللی ارائه می‌دهد.",
+    "taglineStart": "برتری در کالاهای مصرفی ممتاز از سال",
+    "taglineYear": "۲۰۱۹",
+    "locations": "لندن • میلان • نیویورک",
+    "categories": {
+      "bakery": "نانوایی",
+      "beverages": "نوشیدنی‌ها",
+      "confectionery": "قنادی",
+      "culinary": "آشپزی",
+      "frozenFoods": "غذاهای منجمد",
+      "pasta": "پاستا",
+      "snacks": "تنقلات"
+    }
   },
   "navigation": {
-    "esgReport": "ESG Report 2025",
-    "locations": "London • Milan • New York",
-    "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "brandStory": "Brand Story",
-    "products": "Products",
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products",
-    "csr": "CSR",
-    "investorRelations": "Investor Relations",
-    "investors": "Investors",
-    "media": "Media",
-    "contactUs": "Contact Us",
-    "countries": "Countries",
-    "portals": "Portals",
-    "signIn": "Sign In",
-    "wishlist": "Wishlist",
-    "cart": "Shopping Cart",
-    "help": "Help",
-    "findStore": "Find Store"
+    "esgReport": "گزارش ESG 2025",
+    "locations": "لندن • میلان • نیویورک",
+    "home": "خانه",
+    "about": "درباره",
+    "aboutUs": "درباره ما",
+    "brandStory": "داستان برند",
+    "products": "محصولات",
+    "ourProducts": "محصولات ما",
+    "viewAllProducts": "مشاهده همه محصولات",
+    "csr": "مسئولیت اجتماعی شرکتی",
+    "investorRelations": "روابط با سرمایه‌گذاران",
+    "investors": "سرمایه‌گذاران",
+    "media": "رسانه",
+    "contactUs": "تماس با ما",
+    "countries": "کشورها",
+    "portals": "پورتال‌ها",
+    "signIn": "ورود",
+    "wishlist": "لیست علاقه‌مندی‌ها",
+    "cart": "سبد خرید",
+    "help": "کمک",
+    "findStore": "فروشگاه را پیدا کنید",
+    "harvicsHouse": "خانه هارویس",
+    "money": "پول",
+    "sales": "فروش",
+    "offers": "پیشنهادات",
+    "darkMode": "حالت تاریک",
+    "moneyDropdown": {
+      "creditCard": {
+        "title": "کارت اعتباری",
+        "msRewards": "کارت اعتباری جوایز M&S",
+        "clubRewards": "جوایز باشگاه",
+        "ourCards": "کارت‌های اعتباری ما"
+      },
+      "insurance": {
+        "title": "بیمه",
+        "home": "بیمه خانه",
+        "travel": "بیمه مسافرتی"
+      },
+      "travel": {
+        "title": "خدمات مسافرتی",
+        "money": "پول سفر",
+        "exchange": "نرخ ارز"
+      },
+      "additional": {
+        "title": "خدمات اضافی",
+        "savings": "پس‌انداز و سرمایه‌گذاری",
+        "personalLoans": "وام‌های شخصی",
+        "financialSupport": "پشتیبانی مالی"
+      }
+    },
+    "salesDropdown": {
+      "currentSales": "فروش فعلی",
+      "clearance": "ترخیص کالا",
+      "seasonal": "فروش فصلی"
+    },
+    "offersDropdown": {
+      "specialOffers": "پیشنهادات ویژه",
+      "promotions": "تبلیغات",
+      "bulkOrders": "تخفیف‌های سفارش عمده"
+    }
   },
   "products": {
-    "ourProducts": "Our Products",
-    "viewAllProducts": "View All Products"
+    "ourProducts": "محصولات ما",
+    "viewAllProducts": "مشاهده همه محصولات",
+    "productCategories": "دسته بندی محصولات ما",
+    "discoverPremium": "با طیف محصولات ممتاز ما که با دقت و کیفیت عالی ساخته شده‌اند، آشنا شوید.",
+    "tier1": "ردیف ۱: دسته‌ها",
+    "tier2": "سطح ۲: ماژول‌ها",
+    "tier3": "سطح ۳: صفحات KPI",
+    "tier4": "ردیف ۴: اقدامات",
+    "reset": "بازنشانی ناوبری",
+    "noSubcategories": "هیچ زیرشاخه‌ای برای این دسته موجود نیست.",
+    "pageTitle": "محصولات",
+    "subcategories": "زیرشاخه‌ها",
+    "bakery": "نانوایی",
+    "bakeryDesc": "شیرینی‌ها و محصولات تازه پخته شده.",
+    "beverages": "نوشیدنی‌ها",
+    "beveragesDesc": "نوشیدنی‌های خنک برای هر موقعیتی.",
+    "confectionery": "شیرینی فروشی",
+    "confectioneryDesc": "خوراکی‌های شیرین و دلچسب.",
+    "culinary": "آشپزی",
+    "culinaryDesc": "مواد ضروری برای آشپزخانه شما.",
+    "frozenFoods": "غذاهای منجمد",
+    "frozenFoodsDesc": "غذاهای منجمد راحت و خوشمزه.",
+    "pasta": "پاستا",
+    "pastaDesc": "انواع پاستای اصیل.",
+    "snacks": "تنقلات",
+    "snacksDesc": "میان وعده های خوشمزه برای هر ساعت از روز."
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you. Reach out to us through any of these channels.",
-    "phone": "Phone",
-    "email": "Email",
-    "whatsapp": "WhatsApp",
-    "callNow": "Call Now",
-    "sendEmail": "Send Email",
-    "messageUs": "Message Us"
+    "title": "تماس بگیرید",
+    "subtitle": "ما دوست داریم از شما بشنویم. از طریق هر یک از این کانال‌ها با ما تماس بگیرید.",
+    "phone": "تلفن",
+    "email": "ایمیل",
+    "whatsapp": "واتساپ",
+    "callNow": "همین حالا تماس بگیرید",
+    "sendEmail": "ارسال ایمیل",
+    "messageUs": "به ما پیام دهید"
   },
   "media": {
-    "title": "Media & Promotions"
+    "title": "مرکز رسانه",
+    "pageTitle": "مرکز رسانه | هارویکس",
+    "description": "منابع مطبوعاتی، دارایی‌های برند و آخرین اخبار از Harvics Global Ventures.",
+    "corporate": "شرکتی",
+    "sections": {
+      "news": {
+        "title": "اخبار و اطلاعیه‌های مطبوعاتی",
+        "desc": "آخرین اطلاعیه‌ها، گسترش بازار، عرضه محصولات و به‌روزرسانی‌های شرکتی از Harvics Global Ventures.",
+        "cta": "آخرین اخبار را بخوانید"
+      },
+      "gallery": {
+        "title": "گالری تصاویر",
+        "desc": "دارایی‌های برند با وضوح بالا، عکاسی از محصولات، تصاویر تأسیسات و پوشش رویداد برای استفاده رسانه‌ای.",
+        "cta": "مرور گالری"
+      },
+      "contacts": {
+        "title": "مخاطبین رسانه",
+        "desc": "برای سوالات مطبوعاتی، درخواست مصاحبه و اعلام همکاری با تیم ارتباطات ما تماس بگیرید.",
+        "cta": "تماس با تیم مطبوعاتی"
+      }
+    },
+    "highlights": {
+      "marketsCovered": "بازارهای تحت پوشش",
+      "industryVerticals": "صنایع عمودی",
+      "foundedIn": "در دبی تأسیس شد",
+      "languagesSupported": "زبان‌های پشتیبانی‌شده"
+    },
+    "recentHeadlines": "عناوین اخیر",
+    "headlines": {
+      "expansion": "هارویکس فعالیت‌های خود در حوزه کالاهای مصرفی سریع (FMCG) را به ۵ بازار جدید در جنوب شرقی آسیا گسترش می‌دهد.",
+      "aiPlatform": "پلتفرم جدید زنجیره تأمین مبتنی بر هوش مصنوعی برای توزیع جهانی راه‌اندازی شد",
+      "carbonNeutral": "هارویکس به نقطه عطف کربن خنثی در تمام تأسیسات خود دست یافت",
+      "partnership": "همکاری استراتژیک با تولیدکنندگان پیشرو نساجی در جنوب آسیا"
+    }
   },
   "footer": {
-    "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
-    "locations": "London • Milan • New York",
-    "since": "Since 2019",
-    "harvicsNews": "Harvics News",
-    "subscribeToAlerts": "Subscribe to receive alerts and updates",
-    "signUp": "Sign Up",
-    "complianceConcerns": "Compliance Concerns",
-    "speakUp": "Speak up if you have concerns about compliance or ethics",
-    "speakUpButton": "Speak Up",
-    "contactUs": "Contact Us",
-    "contactDescription": "Get in touch with our team",
-    "contactUsButton": "Contact Us",
-    "usefulLinks": "Useful Links",
-    "askHarvics": "Ask Harvics",
-    "searchForJobs": "Search for Jobs",
-    "signUpForNews": "Sign Up for News",
-    "company": "Company",
-    "globalAddresses": "Global Addresses",
-    "strategy": "Strategy",
-    "ourLeadership": "Our Leadership",
-    "brandsAZ": "Brands A-Z",
-    "ourHistory": "Our History",
-    "sustainability": "Sustainability",
-    "news": "News",
-    "mediaContacts": "Media Contacts",
-    "images": "Images",
-    "investors": "Investors",
-    "corporateGovernance": "Corporate Governance",
-    "sharesAdrsBonds": "Shares, ADRs & Bonds",
-    "publications": "Publications",
-    "followUsOn": "Follow Us On",
-    "issuesCount": "0 Issues",
-    "siteMap": "Site Map",
-    "unsubscribe": "Unsubscribe",
-    "help": "Help",
-    "privacy": "Privacy",
-    "cookies": "Cookies",
-    "termsOfUse": "Terms of Use",
-    "accessibility": "Accessibility",
-    "carbonEfficiency": "Carbon Efficiency",
-    "suppliers": "Suppliers",
-    "socialMedia": "Social Media",
-    "cookieSettings": "Cookie Settings",
+    "companyName": "هارویکس گلوبال ونچرز",
+    "tagline": "برتری در کالاهای مصرفی ممتاز از سال ۲۰۱۹",
+    "brandStatement": "یک شرکت پیشرو در زمینه کالاهای مصرفی جهانی که محصولات غذایی ممتاز را در دسته‌بندی‌های متنوع و با استانداردهای کیفیت بین‌المللی ارائه می‌دهد.",
+    "locations": "لندن • میلان • نیویورک",
+    "since": "از سال ۲۰۱۹",
+    "harvicsNews": "اخبار هارویکس",
+    "subscribeToAlerts": "برای دریافت هشدارها و به‌روزرسانی‌ها مشترک شوید",
+    "signUp": "ثبت نام",
+    "complianceConcerns": "نگرانی‌های مربوط به انطباق",
+    "speakUp": "اگر در مورد رعایت قوانین یا اخلاق نگرانی دارید، مطرح کنید",
+    "speakUpButton": "صحبت کن",
+    "contactUs": "تماس با ما",
+    "contactDescription": "با تیم ما در تماس باشید",
+    "contactUsButton": "تماس با ما",
+    "usefulLinks": "لینک‌های مفید",
+    "askHarvics": "از هارویچ بپرسید",
+    "searchForJobs": "جستجوی شغل",
+    "signUpForNews": "برای اخبار ثبت نام کنید",
+    "company": "شرکت",
+    "globalAddresses": "آدرس‌های جهانی",
+    "strategy": "استراتژی",
+    "ourLeadership": "رهبری ما",
+    "brandsAZ": "برندها از الف تا ی",
+    "ourHistory": "تاریخچه ما",
+    "sustainability": "پایداری",
+    "news": "اخبار",
+    "mediaContacts": "مخاطبین رسانه",
+    "images": "تصاویر",
+    "investors": "سرمایه‌گذاران",
+    "corporateGovernance": "حاکمیت شرکتی",
+    "sharesAdrsBonds": "سهام، ADR و اوراق قرضه",
+    "publications": "انتشارات",
+    "followUsOn": "ما را دنبال کنید",
+    "issuesCount": "0 مشکل",
+    "siteMap": "نقشه سایت",
+    "unsubscribe": "لغو اشتراک",
+    "help": "کمک",
+    "privacy": "حریم خصوصی",
+    "cookies": "کوکی‌ها",
+    "termsOfUse": "شرایط استفاده",
+    "accessibility": "دسترسی‌پذیری",
+    "carbonEfficiency": "راندمان کربن",
+    "suppliers": "تامین‌کنندگان",
+    "socialMedia": "رسانه‌های اجتماعی",
+    "cookieSettings": "تنظیمات کوکی",
     "feature1Title": "Global Reach",
     "feature1Desc": "Serving customers across 40+ countries worldwide",
-    "feature2Title": "Premium Quality",
+    "feature2Title": "کیفیت ممتاز",
     "feature2Desc": "International quality standards in every product",
     "feature3Title": "Innovation",
     "feature3Desc": "Leading innovation in consumer goods industry",
-    "emailAddress": "Email address",
-    "enterEmailPlaceholder": "Enter your email address",
-    "subscribe": "Subscribe",
-    "subscribing": "Subscribing...",
-    "aboutUs": "About Us",
-    "media": "Media"
+    "emailAddress": "آدرس ایمیل",
+    "enterEmailPlaceholder": "آدرس ایمیل خود را وارد کنید",
+    "subscribe": "اشتراک",
+    "subscribing": "در حال عضویت...",
+    "aboutUs": "درباره ما",
+    "media": "رسانه"
   },
   "search": {
-    "placeholder": "Search products, brands, or categories",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "results": "Results"
+    "placeholder": "جستجوی محصولات، برندها یا دسته‌بندی‌ها",
+    "noResults": "هیچ نتیجه‌ای یافت نشد",
+    "searching": "در حال جستجو...",
+    "results": "نتایج"
   },
   "chatbot": {
-    "title": "Chat with Us",
-    "placeholder": "Type your message...",
-    "send": "Send",
-    "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "title": "با ما چت کنید",
+    "placeholder": "پیام خود را تایپ کنید...",
+    "send": "ارسال",
+    "close": "بستن",
+    "welcome": "سلام! چطور می‌توانم امروز به شما کمک کنم؟",
     "fallback": {
-      "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "default": "ببخشید، من متوجه منظورتان نشدم. لطفاً دوباره بنویسید؟",
+      "help": "من می‌توانم در مورد اطلاعات محصول، سفارش یا سوالات عمومی به شما کمک کنم. چه چیزی می‌خواهید بدانید؟",
+      "contact": "برای اطلاعات بیشتر، لطفاً با ما از طریق support@harvics.com یا با شماره +1-800-HARVICS تماس بگیرید."
     }
   },
   "common": {
-    "chatWithUs": "Chat with Us",
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "submit": "Submit",
-    "search": "Search",
-    "filter": "Filter",
-    "clear": "Clear",
-    "download": "Download",
-    "upload": "Upload",
-    "yes": "Yes",
-    "no": "No",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "actions": "Actions",
-    "status": "Status",
-    "date": "Date",
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "country": "Country",
-    "city": "City",
-    "all": "All",
-    "none": "None",
-    "select": "Select",
-    "selectCountry": "Select Country",
-    "required": "Required",
-    "menu": "Menu",
-    "viewProducts": "View Products"
+    "chatWithUs": "با ما چت کنید",
+    "loading": "در حال بارگذاری...",
+    "error": "خطا",
+    "success": "موفقیت",
+    "save": "ذخیره",
+    "cancel": "لغو",
+    "delete": "حذف",
+    "edit": "ویرایش",
+    "view": "مشاهده",
+    "submit": "ارسال",
+    "search": "جستجو",
+    "filter": "فیلتر",
+    "clear": "پاک کردن",
+    "download": "دانلود",
+    "upload": "آپلود",
+    "yes": "بله",
+    "no": "خیر",
+    "close": "بستن",
+    "back": "برگشت",
+    "next": "بعدی",
+    "previous": "قبلی",
+    "actions": "اقدامات",
+    "status": "وضعیت",
+    "date": "تاریخ",
+    "name": "نام",
+    "email": "ایمیل",
+    "phone": "تلفن",
+    "address": "آدرس",
+    "country": "کشور",
+    "city": "شهر",
+    "all": "همه",
+    "none": "هیچکدام",
+    "select": "انتخاب کنید",
+    "selectCountry": "کشور را انتخاب کنید",
+    "required": "مورد نیاز",
+    "menu": "منو",
+    "viewProducts": "مشاهده محصولات",
+    "selectLanguage": "انتخاب زبان",
+    "showMore": "نمایش بیشتر",
+    "showLess": "نمایش کمتر"
   },
   "music": {
-    "play": "Play Music",
-    "pause": "Pause Music",
-    "mute": "Mute Music",
-    "unmute": "Unmute Music"
+    "play": "پخش موسیقی",
+    "pause": "مکث موسیقی",
+    "mute": "بی‌صدا کردن موسیقی",
+    "unmute": "بی‌صدا کردن موسیقی"
   },
   "worldMap": {
-    "globalReach": "Our Global Reach",
-    "since": "Since",
-    "majorMarket": "Major Market",
-    "majorMarkets": "Major Markets",
-    "presence": "Presence",
-    "countriesServed": "Countries Served",
-    "majorMarketsCount": "Major Markets",
-    "productCategoriesCount": "Product Categories",
-    "establishedYear": "Established"
+    "globalReach": "دسترسی جهانی ما",
+    "since": "از آنجایی که",
+    "majorMarket": "بازار عمده",
+    "majorMarkets": "بازارهای عمده",
+    "presence": "حضور",
+    "countriesServed": "کشورهای تحت پوشش",
+    "majorMarketsCount": "بازارهای عمده",
+    "productCategoriesCount": "دسته بندی محصولات",
+    "establishedYear": "تأسیس شد"
   },
   "territory": {
-    "title": "Territory Hierarchy",
-    "fullPath": "Full Path",
-    "currentTerritory": "Current Territory",
-    "noChildren": "No items",
+    "title": "سلسله مراتب قلمرو",
+    "fullPath": "مسیر کامل",
+    "currentTerritory": "قلمرو فعلی",
+    "noChildren": "بدون آیتم",
     "tiers": {
-      "globe": "Globe",
-      "continent": "Continent",
-      "region": "Region",
-      "country": "Country",
-      "city": "City",
-      "district": "District",
-      "location": "Location"
+      "globe": "گلوب",
+      "continent": "قاره",
+      "region": "منطقه",
+      "country": "کشور",
+      "city": "شهر",
+      "district": "ناحیه",
+      "location": "مکان"
     }
   },
   "globalWorld": {
-    "title": "Harvics Global",
-    "titleShort": "Global",
-    "selectRegion": "Select Region",
+    "title": "هارویکس گلوبال",
+    "titleShort": "جهانی",
+    "selectRegion": "منطقه را انتخاب کنید",
     "form": {
-      "title": "Customer Details",
-      "selected": "Selected",
-      "fullName": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "nameRequired": "Name is required",
-      "email": "Email Address",
+      "title": "جزئیات مشتری",
+      "selected": "انتخاب شده",
+      "fullName": "نام و نام خانوادگی",
+      "namePlaceholder": "نام کامل خود را وارد کنید",
+      "nameRequired": "نام الزامی است",
+      "email": "آدرس ایمیل",
       "emailPlaceholder": "your.email@example.com",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Please enter a valid email address",
-      "phone": "Phone Number",
-      "phonePlaceholder": "+1 234 567 8900",
-      "phoneRequired": "Phone number is required",
-      "address": "Address",
-      "addressPlaceholder": "Your address",
-      "addressRequired": "Address is required",
-      "marketingConsent": "I agree to receive marketing communications and updates",
-      "submit": "Submit & Continue",
-      "submitting": "Submitting...",
-      "skip": "Skip & Continue"
+      "emailRequired": "ایمیل الزامی است",
+      "emailInvalid": "لطفا یک آدرس ایمیل معتبر وارد کنید",
+      "phone": "شماره تلفن",
+      "phonePlaceholder": "‎+1 234 567 8900‎",
+      "phoneRequired": "شماره تلفن الزامی است",
+      "address": "آدرس",
+      "addressPlaceholder": "آدرس شما",
+      "addressRequired": "آدرس الزامی است",
+      "marketingConsent": "من موافقم که ارتباطات و به‌روزرسانی‌های بازاریابی را دریافت کنم",
+      "submit": "ارسال و ادامه",
+      "submitting": "ارسال...",
+      "skip": "رد شدن و ادامه دادن"
     }
   },
   "distributorPortal": {
     "dashboard": {
       "kpi": {
-        "title": "Key Performance Indicators",
-        "ordersToday": "Orders today",
-        "ordersTodaySubtitle": "Submitted via Harvics CRM",
-        "pendingDeliveries": "Pending deliveries",
-        "pendingDeliveriesSubtitle": "Across assigned routes",
-        "retailers": "Retailers",
-        "retailersSubtitle": "Active outlets in scope",
-        "attendance": "T & A Score",
-        "attendanceSubtitle": "Territory coverage"
+        "title": "شاخص‌های کلیدی عملکرد",
+        "ordersToday": "سفارش‌های امروز",
+        "ordersTodaySubtitle": "ارسال شده از طریق Harvics CRM",
+        "pendingDeliveries": "تحویل‌های در انتظار",
+        "pendingDeliveriesSubtitle": "در مسیرهای تعیین شده",
+        "retailers": "خرده فروشان",
+        "retailersSubtitle": "فروشگاه‌های فعال در محدوده",
+        "attendance": "امتیاز T و A",
+        "attendanceSubtitle": "پوشش قلمرو"
       },
       "financial": {
-        "title": "Financial & Inventory",
-        "lowStock": "Low stock SKUs",
-        "lowStockSubtitle": "Trigger replenishment",
-        "outstandingInvoices": "Outstanding invoices",
-        "outstandingInvoicesSubtitle": "Due for collection",
-        "creditLimit": "Credit limit",
-        "creditLimitSubtitle": "Assigned by finance"
+        "title": "مالی و موجودی",
+        "lowStock": "موجودی کم SKU ها",
+        "lowStockSubtitle": "دوباره پر کردن ماشه",
+        "outstandingInvoices": "فاکتورهای معوق",
+        "outstandingInvoicesSubtitle": "موعد تحویل",
+        "creditLimit": "محدودیت اعتبار",
+        "creditLimitSubtitle": "واگذار شده توسط امور مالی"
       },
       "aiAutomation": {
-        "status": "Auto-approval, stock replenishment, and invoice reminders enabled",
-        "autoApproval": "Auto-Approval",
-        "stockReplenishment": "Stock Replenishment",
-        "invoiceReminders": "Invoice Reminders"
+        "status": "تأیید خودکار، تکمیل موجودی و یادآوری فاکتور فعال شد",
+        "autoApproval": "خود-تاییدی",
+        "stockReplenishment": "تکمیل موجودی",
+        "invoiceReminders": "یادآوری فاکتور"
       },
       "aiRecommendations": {
-        "title": "AI Recommendations",
-        "riskLevel": "Risk Level",
-        "riskDescription": "Based on credit utilization and payment history",
-        "suggestedOrder": "Suggested Order",
-        "suggestedOrderSubtitle": "AI-recommended SKUs to order",
-        "nextAction": "Next Action"
+        "title": "توصیه‌های هوش مصنوعی",
+        "riskLevel": "سطح ریسک",
+        "riskDescription": "بر اساس میزان استفاده از اعتبار و سابقه پرداخت",
+        "suggestedOrder": "ترتیب پیشنهادی",
+        "suggestedOrderSubtitle": "SKU های توصیه شده توسط هوش مصنوعی برای سفارش",
+        "nextAction": "اقدام بعدی"
       },
       "actions": {
-        "title": "Actions & Guidance",
-        "complaints": "Complaints",
-        "complaintsSubtitle": "Retailer issues awaiting action",
-        "playbook": "Playbook",
-        "playbookItem1": "Prioritise pending deliveries before noon.",
-        "playbookItem2": "Close all outstanding complaints within 48h.",
-        "playbookItem3": "Trigger replenishment for low-stock SKUs (auto-create PO)."
+        "title": "اقدامات و راهنمایی‌ها",
+        "complaints": "شکایات",
+        "complaintsSubtitle": "مشکلات خرده‌فروشان در انتظار اقدام",
+        "playbook": "دفترچه راهنما",
+        "playbookItem1": "تحویل‌های معوقه قبل از ظهر را در اولویت قرار دهید.",
+        "playbookItem2": "تمام شکایات معوقه را ظرف ۴۸ ساعت ببندید.",
+        "playbookItem3": "فعال‌سازی فرآیند دوباره پر کردن برای SKU های کم موجودی (ایجاد خودکار سفارش خرید)."
       },
-      "territory": "Territory",
-      "ordersThisMonth": "Orders This Month",
-      "pendingOrders": "Pending Orders",
-      "deliveredOrders": "Delivered Orders",
-      "territoryInformation": "Territory Information",
-      "country": "Country",
-      "city": "City",
-      "region": "Region",
-      "quickActions": "Quick Actions",
-      "newOrder": "New Order",
-      "viewOrders": "View Orders",
-      "viewInvoices": "View Invoices",
-      "profileSettings": "Profile Settings",
-      "loading": "Loading dashboard...",
-      "error": "Error"
+      "territory": "قلمرو",
+      "ordersThisMonth": "سفارشات این ماه",
+      "pendingOrders": "سفارشات در انتظار",
+      "deliveredOrders": "سفارشات تحویل داده شده",
+      "territoryInformation": "اطلاعات قلمرو",
+      "country": "کشور",
+      "city": "شهر",
+      "region": "منطقه",
+      "quickActions": "اقدامات سریع",
+      "newOrder": "سفارش جدید",
+      "viewOrders": "مشاهده سفارشات",
+      "viewInvoices": "مشاهده فاکتورها",
+      "profileSettings": "تنظیمات پروفایل",
+      "loading": "در حال بارگذاری داشبورد...",
+      "error": "خطا"
     },
     "orders": {
-      "title": "My Orders",
-      "orderId": "Order ID",
-      "date": "Date",
-      "status": "Status",
-      "items": "Items",
-      "totalAmount": "Total Amount",
-      "actions": "Actions",
-      "viewDetails": "View Details",
+      "title": "سفارش‌های من",
+      "orderId": "شناسه سفارش",
+      "date": "تاریخ",
+      "status": "وضعیت",
+      "items": "اقلام",
+      "totalAmount": "مبلغ کل",
+      "actions": "اقدامات",
+      "viewDetails": "مشاهده جزئیات",
       "filters": {
-        "status": "Status",
-        "startDate": "Start Date",
-        "endDate": "End Date",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "وضعیت",
+        "startDate": "تاریخ شروع",
+        "endDate": "تاریخ پایان",
+        "allStatuses": "همه وضعیت‌ها",
+        "clearFilters": "فیلترها را پاک کنید"
       },
       "statuses": {
-        "pending": "Pending",
-        "processing": "Processing",
-        "delivered": "Delivered",
-        "cancelled": "Cancelled"
+        "pending": "در حال بررسی",
+        "processing": "پردازش",
+        "delivered": "تحویل داده شد",
+        "cancelled": "لغو شد"
       },
-      "noOrders": "No orders found",
-      "loading": "Loading orders...",
-      "page": "Page",
-      "of": "of",
-      "previous": "Previous",
-      "next": "Next"
+      "noOrders": "هیچ سفارشی یافت نشد",
+      "loading": "در حال بارگیری سفارشات...",
+      "page": "صفحه",
+      "of": "از",
+      "previous": "قبلی",
+      "next": "بعدی"
     },
     "orderDetail": {
-      "title": "Order Details",
-      "backToOrders": "Back to Orders",
-      "orderId": "Order ID",
-      "status": "Status",
-      "orderDate": "Order Date",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "orderItems": "Order Items",
-      "product": "Product",
-      "sku": "SKU",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "total": "Total",
-      "totalAmount": "Total Amount",
-      "statusTimeline": "Status Timeline",
-      "orderNotFound": "Order not found"
+      "title": "جزئیات سفارش",
+      "backToOrders": "بازگشت به سفارشات",
+      "orderId": "شناسه سفارش",
+      "status": "وضعیت",
+      "orderDate": "تاریخ سفارش",
+      "deliveryDate": "تاریخ تحویل",
+      "deliveryAddress": "آدرس تحویل",
+      "notes": "یادداشت‌ها",
+      "orderItems": "سفارش اقلام",
+      "product": "محصول",
+      "sku": "شناسه کالا",
+      "quantity": "مقدار",
+      "unitPrice": "قیمت واحد",
+      "total": "مجموع",
+      "totalAmount": "مبلغ کل",
+      "statusTimeline": "جدول زمانی وضعیت",
+      "orderNotFound": "سفارشی یافت نشد"
     },
     "newOrder": {
-      "title": "Create New Order",
-      "orderItems": "Order Items",
-      "addItem": "Add Item",
-      "noItems": "No items added yet. Click \"Add Item\" to start.",
-      "orderDetails": "Order Details",
-      "deliveryDate": "Delivery Date",
-      "deliveryAddress": "Delivery Address",
-      "notes": "Notes",
-      "totalAmount": "Total Amount",
-      "createOrder": "Create Order",
-      "creatingOrder": "Creating Order...",
-      "cancel": "Cancel",
-      "selectProduct": "Select Product",
-      "product": "Product",
-      "quantity": "Quantity",
-      "unitPrice": "Unit Price",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "orderId": "Order ID",
+      "title": "ایجاد سفارش جدید",
+      "orderItems": "سفارش اقلام",
+      "addItem": "افزودن مورد",
+      "noItems": "هنوز موردی اضافه نشده است. برای شروع روی «افزودن مورد» کلیک کنید.",
+      "orderDetails": "جزئیات سفارش",
+      "deliveryDate": "تاریخ تحویل",
+      "deliveryAddress": "آدرس تحویل",
+      "notes": "یادداشت‌ها",
+      "totalAmount": "مبلغ کل",
+      "createOrder": "ایجاد سفارش",
+      "creatingOrder": "ایجاد سفارش ...",
+      "cancel": "لغو",
+      "selectProduct": "انتخاب محصول",
+      "product": "محصول",
+      "quantity": "مقدار",
+      "unitPrice": "قیمت واحد",
+      "remove": "حذف",
+      "subtotal": "جمع جزئی",
+      "orderId": "شناسه سفارش",
       "validation": {
-        "itemsRequired": "At least one order item is required",
-        "productRequired": "Product is required",
-        "quantityRequired": "Quantity must be greater than 0",
-        "priceRequired": "Unit price must be non-negative",
-        "invalidDate": "Invalid delivery date format",
-        "datePast": "Delivery date cannot be in the past"
+        "itemsRequired": "حداقل یک مورد سفارش الزامی است",
+        "productRequired": "محصول مورد نیاز است",
+        "quantityRequired": "مقدار باید بزرگتر از 0 باشد",
+        "priceRequired": "قیمت واحد باید غیر منفی باشد",
+        "invalidDate": "فرمت تاریخ تحویل نامعتبر است",
+        "datePast": "تاریخ تحویل نمی‌تواند مربوط به گذشته باشد"
       }
     },
     "invoices": {
-      "title": "My Invoices",
-      "invoiceNumber": "Invoice Number",
-      "invoiceDate": "Invoice Date",
-      "dueDate": "Due Date",
-      "amount": "Amount",
-      "paidAmount": "Paid Amount",
-      "paymentStatus": "Payment Status",
+      "title": "فاکتورهای من",
+      "invoiceNumber": "شماره فاکتور",
+      "invoiceDate": "تاریخ فاکتور",
+      "dueDate": "دو تاریخ",
+      "amount": "مبلغ",
+      "paidAmount": "مبلغ پرداختی",
+      "paymentStatus": "وضعیت پرداخت",
       "filters": {
-        "status": "Payment Status",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "status": "وضعیت پرداخت",
+        "allStatuses": "همه وضعیت‌ها",
+        "clearFilters": "فیلترها را پاک کنید"
       },
       "statuses": {
-        "paid": "Paid",
-        "unpaid": "Unpaid",
-        "partial": "Partial"
+        "paid": "پرداخت شده",
+        "unpaid": "پرداخت نشده",
+        "partial": "جزئی"
       },
-      "noInvoices": "No invoices found",
-      "loading": "Loading invoices..."
+      "noInvoices": "هیچ فاکتوری یافت نشد",
+      "loading": "در حال بارگذاری فاکتورها..."
     },
     "profile": {
-      "title": "My Profile",
-      "accountInformation": "Account Information",
-      "distributorId": "Distributor ID",
-      "territory": "Territory",
-      "country": "Country",
-      "city": "City",
-      "accountCreated": "Account Created",
-      "updateProfile": "Update Profile",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "address": "Address",
-      "language": "Language",
-      "currency": "Currency",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
-      "profileUpdated": "Profile updated successfully",
-      "loading": "Loading profile...",
+      "title": "پروفایل من",
+      "accountInformation": "اطلاعات حساب",
+      "distributorId": "شناسه توزیع‌کننده",
+      "territory": "قلمرو",
+      "country": "کشور",
+      "city": "شهر",
+      "accountCreated": "حساب کاربری ایجاد شد",
+      "updateProfile": "به‌روزرسانی پروفایل",
+      "name": "نام",
+      "email": "ایمیل",
+      "phone": "تلفن",
+      "address": "آدرس",
+      "language": "زبان",
+      "currency": "ارز",
+      "saveChanges": "ذخیره تغییرات",
+      "saving": "در حال ذخیره...",
+      "profileUpdated": "پروفایل با موفقیت به‌روزرسانی شد",
+      "loading": "در حال بارگذاری پروفایل...",
       "validation": {
-        "invalidEmail": "Invalid email format",
-        "invalidPhone": "Invalid phone format"
+        "invalidEmail": "قالب ایمیل نامعتبر است",
+        "invalidPhone": "فرمت گوشی نامعتبر است"
       }
     },
     "common": {
-      "error": "Error",
-      "loading": "Loading...",
-      "save": "Save",
-      "cancel": "Cancel",
-      "back": "Back",
-      "submit": "Submit",
-      "delete": "Delete",
-      "edit": "Edit",
-      "view": "View",
-      "search": "Search",
-      "filter": "Filter",
-      "clear": "Clear",
-      "apply": "Apply",
-      "close": "Close",
-      "confirm": "Confirm",
-      "yes": "Yes",
-      "no": "No"
+      "error": "خطا",
+      "loading": "در حال بارگذاری...",
+      "save": "ذخیره",
+      "cancel": "لغو",
+      "back": "برگشت",
+      "submit": "ارسال",
+      "delete": "حذف",
+      "edit": "ویرایش",
+      "view": "مشاهده",
+      "search": "جستجو",
+      "filter": "فیلتر",
+      "clear": "پاک کردن",
+      "apply": "اعمال کردن",
+      "close": "بستن",
+      "confirm": "تأیید",
+      "yes": "بله",
+      "no": "خیر"
     }
   },
   "legal": {
-    "title": "Legal Operating System",
-    "sidebarTitle": "Legal OS",
-    "accessDenied": "Access Denied",
-    "accessDeniedMessage": "You don't have permission to access the Legal OS module.",
-    "dashboard": "Dashboard",
-    "contracts": "Contracts",
-    "certificates": "Certificates",
-    "compliance": "Compliance",
+    "title": "سیستم عامل قانونی",
+    "sidebarTitle": "سیستم عامل قانونی",
+    "accessDenied": "دسترسی رد شد",
+    "accessDeniedMessage": "شما اجازه دسترسی به ماژول سیستم عامل قانونی را ندارید.",
+    "dashboard": "داشبورد",
+    "contracts": "قراردادها",
+    "certificates": "گواهینامه‌ها",
+    "compliance": "انطباق",
     "dashboardPage": {
-      "title": "Legal Dashboard",
-      "description": "Overview of legal operations and compliance status",
-      "activeTrademarks": "Active Trademarks",
-      "activeContracts": "Active Contracts",
-      "complianceStatus": "Compliance Status"
+      "title": "داشبورد حقوقی",
+      "description": "بررسی اجمالی عملیات قانونی و وضعیت انطباق",
+      "activeTrademarks": "علائم تجاری فعال",
+      "activeContracts": "قراردادهای فعال",
+      "complianceStatus": "وضعیت انطباق"
     },
     "trademarks": {
-      "title": "Trademarks",
-      "description": "Manage trademark registrations and applications",
-      "addNew": "Add New Trademark",
+      "title": "علائم تجاری",
+      "description": "مدیریت ثبت و درخواست علامت تجاری",
+      "addNew": "اضافه کردن علامت تجاری جدید",
       "filters": {
-        "country": "Country",
-        "status": "Status",
-        "allCountries": "All Countries",
-        "allStatuses": "All Statuses",
-        "clearFilters": "Clear Filters"
+        "country": "کشور",
+        "status": "وضعیت",
+        "allCountries": "همه کشورها",
+        "allStatuses": "همه وضعیت‌ها",
+        "clearFilters": "فیلترها را پاک کنید"
       },
       "table": {
-        "brandName": "Brand Name",
-        "class": "Class",
-        "country": "Country",
-        "applicationNo": "Application No",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "actions": "Actions"
+        "brandName": "نام تجاری",
+        "class": "کلاس",
+        "country": "کشور",
+        "applicationNo": "شماره درخواست",
+        "status": "وضعیت",
+        "expiryDate": "تاریخ انقضا",
+        "actions": "اقدامات"
       },
       "modal": {
-        "edit": "Edit Trademark",
-        "add": "Add New Trademark",
-        "view": "View Trademark"
+        "edit": "ویرایش علامت تجاری",
+        "add": "اضافه کردن علامت تجاری جدید",
+        "view": "مشاهده علامت تجاری"
       },
       "form": {
-        "brandName": "Brand Name",
-        "classNumber": "Class Number",
-        "country": "Country",
-        "applicationNo": "Application Number",
-        "status": "Status",
-        "expiryDate": "Expiry Date",
-        "documents": "Documents",
-        "noDocuments": "No documents attached",
-        "addDocument": "Add Document",
-        "remove": "Remove"
+        "brandName": "نام تجاری",
+        "classNumber": "شماره کلاس",
+        "country": "کشور",
+        "applicationNo": "شماره درخواست",
+        "status": "وضعیت",
+        "expiryDate": "تاریخ انقضا",
+        "documents": "اسناد",
+        "noDocuments": "هیچ مدرکی پیوست نشده است",
+        "addDocument": "افزودن سند",
+        "remove": "حذف"
       },
       "errors": {
-        "loadFailed": "Failed to load trademarks",
-        "saveFailed": "Failed to save trademark. Please try again."
+        "loadFailed": "بارگیری علائم تجاری ناموفق بود",
+        "saveFailed": "ذخیره علامت تجاری ناموفق بود. لطفاً دوباره امتحان کنید."
       }
     },
     "legalCases": {
-      "title": "Legal Cases",
-      "description": "Manage legal cases and track their status",
-      "addNew": "New Case",
+      "title": "پرونده‌های حقوقی",
+      "description": "مدیریت پرونده‌های حقوقی و پیگیری وضعیت آنها",
+      "addNew": "مورد جدید",
       "form": {
-        "caseTitle": "Case Title",
-        "caseType": "Case Type",
-        "country": "Country",
-        "description": "Description",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date"
+        "caseTitle": "عنوان پرونده",
+        "caseType": "نوع مورد",
+        "country": "کشور",
+        "description": "توضیحات",
+        "assignedTo": "اختصاص داده شده به",
+        "status": "وضعیت",
+        "hearingDate": "تاریخ جلسه رسیدگی"
       },
       "table": {
-        "caseTitle": "Case Title",
-        "type": "Type",
-        "country": "Country",
-        "assignedTo": "Assigned To",
-        "status": "Status",
-        "hearingDate": "Hearing Date",
-        "actions": "Actions"
+        "caseTitle": "عنوان پرونده",
+        "type": "نوع",
+        "country": "کشور",
+        "assignedTo": "اختصاص داده شده به",
+        "status": "وضعیت",
+        "hearingDate": "تاریخ جلسه رسیدگی",
+        "actions": "اقدامات"
       },
       "status": {
-        "open": "Open",
-        "inProgress": "In Progress",
-        "closed": "Closed",
-        "cancelled": "Cancelled"
+        "open": "باز",
+        "inProgress": "در حال انجام",
+        "closed": "بسته",
+        "cancelled": "لغو شد"
       }
     }
   },
   "gps": {
     "fleetMap": {
-      "title": "Fleet Map View",
-      "description": "Real-time tracking of sales officers and delivery vehicles",
-      "activeEmployees": "Active Employees",
-      "noEmployees": "No active employees",
-      "loading": "Loading..."
+      "title": "نمای نقشه ناوگان",
+      "description": "ردیابی لحظه‌ای ماموران فروش و وسایل نقلیه تحویل کالا",
+      "activeEmployees": "کارمندان فعال",
+      "noEmployees": "بدون کارمند فعال",
+      "loading": "در حال بارگذاری..."
     },
     "routeReplay": {
-      "title": "Route Replay",
-      "employee": "Employee",
-      "speed": "Speed",
-      "reset": "Reset",
-      "play": "Play",
-      "pause": "Pause",
-      "points": "points",
-      "noRoute": "No route data available",
-      "loading": "Loading route..."
+      "title": "پخش مجدد مسیر",
+      "employee": "کارمند",
+      "speed": "سرعت",
+      "reset": "تنظیم مجدد",
+      "play": "بازی",
+      "pause": "مکث",
+      "points": "امتیازها",
+      "noRoute": "هیچ داده مسیری در دسترس نیست",
+      "loading": "مسیر بارگیری..."
     }
   },
   "competitor": {
     "products": {
-      "title": "Competitor Products",
-      "description": "Track competitor product information",
-      "addProduct": "Add Product",
-      "formTitle": "Add Competitor Product",
+      "title": "محصولات رقیب",
+      "description": "اطلاعات محصول رقیب را پیگیری کنید",
+      "addProduct": "اضافه کردن محصول",
+      "formTitle": "محصول رقیب را اضافه کنید",
       "form": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "currency": "Currency",
-        "country": "Country"
+        "brand": "برند",
+        "skuName": "نام SKU",
+        "category": "دسته بندی",
+        "size": "اندازه",
+        "price": "قیمت",
+        "currency": "ارز",
+        "country": "کشور"
       },
       "table": {
-        "brand": "Brand",
-        "skuName": "SKU Name",
-        "category": "Category",
-        "size": "Size",
-        "price": "Price",
-        "country": "Country",
-        "dateAdded": "Date Added"
+        "brand": "برند",
+        "skuName": "نام SKU",
+        "category": "دسته بندی",
+        "size": "اندازه",
+        "price": "قیمت",
+        "country": "کشور",
+        "dateAdded": "تاریخ اضافه شدن"
       },
       "errors": {
-        "loadFailed": "Failed to load products",
-        "createFailed": "Failed to create product. Please try again."
+        "loadFailed": "بارگیری محصولات ناموفق بود",
+        "createFailed": "ایجاد محصول ناموفق بود. لطفا دوباره امتحان کنید."
       },
-      "noProducts": "No competitor products found",
-      "loading": "Loading products..."
+      "noProducts": "هیچ محصول رقیبی یافت نشد",
+      "loading": "در حال بارگیری محصولات..."
     },
     "dashboard": {
-      "title": "Competitor Dashboard",
-      "description": "Analytics and insights on competitor products",
-      "totalProducts": "Total Products",
-      "brandsTracked": "Brands Tracked",
-      "countries": "Countries",
-      "categories": "Categories",
-      "byBrand": "Products by Brand",
-      "byCountry": "Products by Country",
-      "byCategory": "Products by Category",
-      "loading": "Loading statistics...",
-      "noStats": "No statistics available"
+      "title": "داشبورد رقبا",
+      "description": "تحلیل و بررسی محصولات رقبا",
+      "totalProducts": "کل محصولات",
+      "brandsTracked": "برندهای ردیابی شده",
+      "countries": "کشورها",
+      "categories": "دسته‌ها",
+      "byBrand": "محصولات بر اساس برند",
+      "byCountry": "محصولات بر اساس کشور",
+      "byCategory": "محصولات بر اساس دسته بندی",
+      "loading": "در حال بارگذاری آمار...",
+      "noStats": "آماری در دسترس نیست"
     }
   },
   "tabs": {
-    "overview": "Overview",
-    "orders": "Orders",
-    "inventory": "Inventory",
-    "logistics": "Logistics",
-    "finance": "Finance",
-    "crm": "CRM",
-    "hr": "HR",
-    "executive": "Executive",
-    "investor": "Investor",
-    "legal-ipr": "Legal/IPR",
-    "competitor": "Competitor",
-    "import-export": "Import/Export",
-    "gps-tracking": "GPS Tracking",
-    "localization": "Localization",
-    "workflows": "Workflows",
-    "admin": "Admin"
+    "overview": "نمای کلی",
+    "orders": "سفارشات",
+    "inventory": "موجودی",
+    "logistics": "لجستیک",
+    "finance": "امور مالی",
+    "crm": "مدیریت ارتباط با مشتری (CRM)",
+    "hr": "منابع انسانی",
+    "executive": "اجرایی",
+    "investor": "سرمایه‌گذار",
+    "legal-ipr": "حقوقی/حقوق مالکیت فکری",
+    "competitor": "رقیب",
+    "import-export": "واردات/صادرات",
+    "gps-tracking": "ردیابی GPS",
+    "localization": "محلی سازی",
+    "workflows": "گردش‌های کاری",
+    "admin": "مدیر"
   },
   "crm": {
     "tabs": {
-      "overview": "Overview",
-      "orders": "Orders",
-      "inventory": "Inventory",
-      "logistics": "Logistics",
-      "finance": "Finance",
-      "crm": "CRM",
-      "hr": "HR",
-      "executive": "Executive",
-      "investor": "Investor",
-      "legal-ipr": "Legal/IPR",
-      "competitor": "Competitor",
-      "import-export": "Import/Export",
-      "gps-tracking": "GPS Tracking",
-      "localization": "Localization",
-      "workflows": "Workflows",
-      "admin": "Admin"
+      "overview": "نمای کلی",
+      "orders": "سفارشات",
+      "inventory": "موجودی",
+      "logistics": "لجستیک",
+      "finance": "امور مالی",
+      "crm": "مدیریت ارتباط با مشتری (CRM)",
+      "hr": "منابع انسانی",
+      "executive": "اجرایی",
+      "investor": "سرمایه‌گذار",
+      "legal-ipr": "حقوقی/حقوق مالکیت فکری",
+      "competitor": "رقیب",
+      "import-export": "واردات/صادرات",
+      "gps-tracking": "ردیابی GPS",
+      "localization": "محلی سازی",
+      "workflows": "گردش‌های کاری",
+      "admin": "مدیر"
     },
     "kpis": {
-      "customers": "Customers",
-      "employees": "Employees",
-      "profit": "Profit"
+      "customers": "مشتریان",
+      "employees": "کارمندان",
+      "profit": "سود"
+    },
+    "domain": {
+      "title": "سیستم عامل CRM",
+      "customer360": {
+        "title": "مشتری ۳۶۰",
+        "description": "پروفایل کامل مشتری، تاریخچه تعاملات و مدیریت ارتباط با او"
+      },
+      "campaigns": {
+        "title": "کمپین‌های دیجیتال",
+        "description": "کمپین‌های بازاریابی چند کاناله (اینستاگرام، فیسبوک، تیک تاک، واتس‌اپ)"
+      },
+      "leads": {
+        "title": "سرنخ‌ها و فرصت‌ها",
+        "description": "مدیریت سرنخ، صلاحیت و مسیر فرصت‌ها"
+      },
+      "support": {
+        "title": "پشتیبانی مشتری",
+        "description": "مدیریت تیکت، خدمات مشتریان و حل مشکلات"
+      },
+      "loyalty": {
+        "title": "برنامه‌های وفاداری",
+        "description": "وفاداری خرده‌فروشان، بازی‌وارسازی و مدیریت پاداش‌ها"
+      }
+    },
+    "customerList": {
+      "title": "مشتری ۳۶۰",
+      "newCustomer": "مشتری جدید",
+      "totalCustomers": "کل مشتریان",
+      "active": "فعال",
+      "new": "جدید",
+      "satisfaction": "رضایت",
+      "customerManagement": "مدیریت مشتری",
+      "customerManagementDescription": "روابط، تعاملات و کمپین‌های مشتریان خود را مشاهده و مدیریت کنید.",
+      "loading": "در حال بارگذاری...",
+      "error": "خطا در بارگیری داده‌های CRM"
     }
+  },
+  "supplierPortal": {
+    "dashboard": {
+      "loading": "بارگیری کابین خلبان تأمین‌کننده…",
+      "purchaseOrders": "سفارش‌های خرید",
+      "purchaseOrdersSubtitle": "توسط هارویکس بزرگ شده است",
+      "shipments": "محموله‌ها / گرین",
+      "shipmentsSubtitle": "این هفته پذیرفته شد",
+      "invoices": "فاکتورهای ایجاد شده",
+      "invoicesSubtitle": "در انتظار پرداخت",
+      "paymentsPending": "پرداخت‌ها در انتظار",
+      "paymentsPendingSubtitle": "برای انتشار برنامه‌ریزی شده است",
+      "qualityComplaints": "کیفیت / شکایات",
+      "qualityComplaintsSubtitle": "بلیط‌های باز",
+      "forecast": "پیش‌بینی (۴ هفته آینده)",
+      "forecastSubtitle": "جایگذار هوش مصنوعی",
+      "supplierActions": "اقدامات تأمین‌کنندگان",
+      "action1": "محموله‌های آینده را تأیید کنید و برنامه GRN را به‌روزرسانی کنید.",
+      "action2": "فاکتورهای معوق را بررسی کنید و توصیه‌های پرداخت را به اشتراک بگذارید.",
+      "action3": "شکایات مربوط به کیفیت باز را با شواهد تضمین کیفیت حل کنید."
+    }
+  },
+  "form": {
+    "username": "نام کاربری",
+    "password": "رمز عبور",
+    "email": "ایمیل",
+    "submit": "ارسال",
+    "cancel": "لغو",
+    "save": "ذخیره",
+    "delete": "حذف",
+    "search": "جستجو",
+    "filter": "فیلتر",
+    "reset": "تنظیم مجدد",
+    "close": "بستن",
+    "back": "برگشت",
+    "next": "بعدی",
+    "previous": "قبلی",
+    "confirm": "تأیید",
+    "rememberMe": "مرا به خاطر بسپار",
+    "forgotPassword": "رمز عبور را فراموش کرده‌اید؟",
+    "emailRequired": "ایمیل الزامی است",
+    "emailInvalid": "لطفا یک آدرس ایمیل معتبر وارد کنید"
+  },
+  "faq": {
+    "products": {
+      "category": "محصولات",
+      "q1": "هارویکس چه محصولاتی ارائه می‌دهد؟",
+      "a1": "ما طیف گسترده‌ای از محصولات غذایی ممتاز از جمله شیرینی‌جات، نوشیدنی‌ها، تنقلات، پاستا، اقلام نانوایی و غذاهای منجمد را در دسته‌بندی‌های مختلف ارائه می‌دهیم.",
+      "q2": "از کجا می‌توانم محصولات هارویکس را خریداری کنم؟",
+      "a2": "محصولات ما در فروشگاه‌های خرده‌فروشی در بیش از ۴۰ کشور موجود است. برای یافتن فروشگاه‌های نزدیک خود، از فروشگاه‌یاب یا صفحه تماس ما استفاده کنید.",
+      "q3": "آیا سفارش عمده هم ارائه می‌دهید؟",
+      "a3": "بله، ما تخفیف‌های سفارش عمده برای کسب‌وکارها و خرده‌فروشان ارائه می‌دهیم. برای اطلاعات بیشتر به صفحه تخفیف‌های سفارش عمده ما مراجعه کنید."
+    },
+    "ordersShipping": {
+      "category": "سفارشات و ارسال",
+      "q1": "گزینه‌های ارسال شما چیست؟",
+      "a1": "ما گزینه‌های مختلف ارسال از جمله ارسال استاندارد، اکسپرس و بین‌المللی را ارائه می‌دهیم. ارسال رایگان برای سفارش‌های بالای ۵۰ دلار در دسترس است.",
+      "q2": "تحویل چقدر طول می‌کشد؟",
+      "a2": "زمان تحویل بسته به مکان متفاوت است. تحویل استاندارد معمولاً ۵-۷ روز کاری طول می‌کشد، در حالی که تحویل اکسپرس ۲-۳ روز کاری طول می‌کشد.",
+      "q3": "آیا می‌توانم سفارشم را پیگیری کنم؟",
+      "a3": "بله، شما می‌توانید سفارش خود را با استفاده از شماره پیگیری ارائه شده در ایمیل تأیید سفارش خود پیگیری کنید."
+    },
+    "accountPayments": {
+      "category": "حساب و پرداخت‌ها",
+      "q1": "چگونه یک حساب کاربری ایجاد کنم؟",
+      "a1": "برای ثبت نام و ایجاد حساب کاربری جدید، روی «ورود» در سربرگ کلیک کنید و «ایجاد حساب کاربری» را انتخاب کنید.",
+      "q2": "چه روش‌های پرداختی را می‌پذیرید؟",
+      "a2": "ما تمام کارت‌های اعتباری اصلی، کارت‌های نقدی، پی‌پال و حواله‌های بانکی را برای سفارش‌های B2B می‌پذیریم.",
+      "q3": "آیا اطلاعات پرداخت من امن است؟",
+      "a3": "بله، ما از رمزگذاری استاندارد صنعتی برای محافظت از اطلاعات پرداخت شما استفاده می‌کنیم."
+    },
+    "returnsRefunds": {
+      "category": "بازگشت کالا و بازپرداخت وجه",
+      "q1": "سیاست بازگشت وجه شما چیست؟",
+      "a1": "ما برای محصولات باز نشده در بسته‌بندی اصلی، 30 روز مهلت بازگشت کالا ارائه می‌دهیم. لطفاً برای دریافت مجوز بازگشت با خدمات مشتریان ما تماس بگیرید.",
+      "q2": "چگونه درخواست بازپرداخت وجه بدهم؟",
+      "a2": "با تیم خدمات مشتریان ما تماس بگیرید و شماره سفارش و دلیل بازگشت کالا را ذکر کنید. ما ظرف ۵ تا ۷ روز کاری وجه شما را بازپرداخت خواهیم کرد."
+    },
+    "contactCta": {
+      "title": "هنوز سوالی دارید؟",
+      "subtitle": "تیم خدمات مشتری ما برای کمک به شما اینجاست",
+      "button": "تماس با ما"
+    }
+  },
+  "careers": {
+    "title": "فرصت‌های شغلی",
+    "pageTitle": "فرصت‌های شغلی | هارویکس",
+    "description": "به Harvics Global Ventures بپیوندید - فرصت‌ها را در بیش از ۴۰ کشور جهان کشف کنید.",
+    "joinUs": "به ما بپیوندید",
+    "heroTitle": "آینده تجارت جهانی را بسازید",
+    "heroDesc": "ما در بیش از ۴۰ کشور در حال رشد هستیم. به تیمی بپیوندید که در حال ساخت سیستم عامل مبتنی بر هوش مصنوعی برای تجارت جهانی است.",
+    "stats": {
+      "openPositions": "موقعیت‌های باز",
+      "countries": "کشورها",
+      "industryVerticals": "صنایع عمودی",
+      "departmentsHiring": "استخدام دپارتمان‌ها"
+    },
+    "openPositionsByDept": "موقعیت‌های شغلی خالی بر اساس دپارتمان",
+    "departments": {
+      "sales": {
+        "name": "فروش و توزیع",
+        "desc": "افزایش درآمد در بیش از ۴۰ بازار. مدیریت منطقه، حساب‌های کلیدی، روابط با توزیع‌کنندگان."
+      },
+      "supplyChain": {
+        "name": "زنجیره تامین و لجستیک",
+        "desc": "زنجیره تأمین سرتاسری از کارخانه تا قفسه فروشگاه. مدیریت ناوگان، انبارداری، تحویل در آخرین مرحله."
+      },
+      "technology": {
+        "name": "فناوری و هوش مصنوعی",
+        "desc": "ساخت سیستم عامل Harvics — پلتفرم سازمانی مبتنی بر هوش مصنوعی ما. مهندسی فول استک، یادگیری ماشین، علم داده."
+      },
+      "finance": {
+        "name": "امور مالی و خزانه داری",
+        "desc": "خزانه‌داری چند ارزی، تأمین مالی تجاری، پرداخت‌های دیجیتال HPay، مدیریت ارز در مناطق مختلف."
+      },
+      "procurement": {
+        "name": "تدارکات و منبع یابی",
+        "desc": "تامین جهانی از بیش از ۱۵ کشور مبدا. ممیزی تامین‌کنندگان، کنترل کیفیت، برنامه‌های مستقیم از کارخانه."
+      },
+      "hr": {
+        "name": "منابع انسانی",
+        "desc": "جذب استعداد، آموزش و توسعه، مدیریت عملکرد در مناطق جغرافیایی و فرهنگ‌های متنوع."
+      },
+      "legal": {
+        "name": "حقوقی و انطباق",
+        "desc": "انطباق با تجارت، غربالگری تحریم‌ها، حفاظت از مالکیت معنوی، مدیریت قرارداد در حوزه‌های قضایی مختلف."
+      },
+      "marketing": {
+        "name": "بازاریابی و برند",
+        "desc": "کمپین‌های چندزبانه، محتوای ۳۸ زبان، بازاریابی دیجیتال، استراتژی برند برای ۱۰ حوزه کاری مختلف."
+      }
+    },
+    "roles": "نقش‌ها",
+    "whyHarvics": "چرا هارویکس",
+    "benefits": {
+      "globalMobility": {
+        "title": "تحرک جهانی",
+        "desc": "کار در دبی، لندن، کراچی، لاهور و بیش از ۴۰ بازار"
+      },
+      "growthTrack": {
+        "title": "مسیر رشد",
+        "desc": "پیشرفت سریع شغلی در یک شرکت رو به رشد"
+      },
+      "aiCulture": {
+        "title": "فرهنگ اول هوش مصنوعی",
+        "desc": "با هوش مصنوعی پیشرفته و سیستم‌های اطلاعاتی بلادرنگ کار کنید"
+      },
+      "competitivePackage": {
+        "title": "بسته رقابتی",
+        "desc": "حقوق و مزایای پیشرو در بازار، مسکن و مزایا"
+      },
+      "learningBudget": {
+        "title": "بودجه آموزشی",
+        "desc": "بودجه توسعه سالانه برای دوره‌ها، کنفرانس‌ها و گواهینامه‌ها"
+      },
+      "flexibleWork": {
+        "title": "کار انعطاف‌پذیر",
+        "desc": "ترتیبات ترکیبی با دفاتر مرکزی منطقه‌ای در سراسر جهان"
+      }
+    }
+  },
+  "strategy": {
+    "title": "استراتژی ما",
+    "pageTitle": "استراتژی | هارویک",
+    "description": "ساختن آینده‌ای پایدار از طریق نوآوری و تعالی",
+    "heroSubtitle": "ساختن آینده‌ای پایدار از طریق نوآوری و تعالی",
+    "pillars": {
+      "globalExpansion": {
+        "title": "گسترش جهانی",
+        "desc": "گسترش حضورمان در بازارهای نوظهور و در عین حال تقویت جایگاهمان در بازارهای تثبیت‌شده"
+      },
+      "productInnovation": {
+        "title": "نوآوری محصول",
+        "desc": "سرمایه‌گذاری در تحقیق و توسعه برای توسعه محصولات جدید که ترجیحات در حال تحول مصرف‌کنندگان را برآورده می‌کنند"
+      },
+      "sustainability": {
+        "title": "پایداری",
+        "desc": "متعهد به شیوه‌های پایدار در سراسر زنجیره تأمین و عملیات خود"
+      },
+      "digitalTransformation": {
+        "title": "تحول دیجیتال",
+        "desc": "استفاده از فناوری برای بهبود تجربه مشتری و افزایش بهره‌وری عملیاتی"
+      }
+    },
+    "vision": {
+      "title": "دیدگاه ما",
+      "desc": "تبدیل شدن به شرکت پیشرو در زمینه کالاهای مصرفی ممتاز در جهان، که به خاطر کیفیت، نوآوری و پایداری شناخته می‌شود."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "هارویکس گلوبال ونچرز | پریمیوم گلوبال تریدینگ",
+      "description": "شرکت بازرگانی جهانی پیشرو که محصولات ممتاز را در بیش از ۱۰ صنعت ارائه می‌دهد. از سال ۲۰۱۹ در بیش از ۵۰ کشور فعالیت می‌کند."
+    },
+    "about": {
+      "title": "درباره ما | شرکت سرمایه‌گذاری جهانی هارویکس",
+      "description": "دریابید که چگونه Harvics Global Ventures به یک نیروی پیشرو در تجارت جهانی در بیش از ۴۰ کشور و ۱۰ صنعت تبدیل شده است."
+    },
+    "contact": {
+      "title": "تماس با ما | شرکت سرمایه‌گذاری جهانی هارویکس",
+      "description": "با دفاتر هارویکس در سراسر جهان در خاورمیانه، آسیای جنوبی، اروپا، آفریقا و آمریکا تماس بگیرید."
+    },
+    "products": {
+      "title": "محصولات | شرکت سرمایه‌گذاری جهانی هارویکس",
+      "description": "طیف محصولات ممتاز هارویکس را در حوزه کالاهای مصرفی سریع (FMCG)، منسوجات، کالاها و راهکارهای صنعتی بررسی کنید."
+    },
+    "careers": {
+      "title": "فرصت‌های شغلی | شرکت سرمایه‌گذاری جهانی هارویس",
+      "description": "به Harvics Global Ventures بپیوندید - فرصت‌ها را در بیش از ۴۰ کشور در حوزه کالاهای مصرفی سریع (FMCG)، منسوجات، لجستیک و فناوری بررسی کنید."
+    },
+    "media": {
+      "title": "مرکز رسانه | شرکت سرمایه‌گذاری جهانی هارویس",
+      "description": "مرکز رسانه‌ای هارویکس - اطلاعیه‌های مطبوعاتی، آخرین اخبار، دارایی‌های برند و مخاطبین رسانه‌ای."
+    },
+    "strategy": {
+      "title": "استراتژی ما | شرکت سرمایه‌گذاری جهانی هارویس",
+      "description": "چشم‌انداز استراتژیک هارویکس برای توسعه جهانی، نوآوری، پایداری و تحول دیجیتال."
+    },
+    "csr": {
+      "title": "مسئولیت اجتماعی شرکت | هارویکس",
+      "description": "ابتکارات مسئولیت اجتماعی شرکت هارویکس - نظارت بر محیط زیست، برنامه‌های اجتماعی و شیوه‌های اخلاقی کسب و کار."
+    },
+    "faq": {
+      "title": "سوالات متداول | شرکت سرمایه‌گذاری جهانی هارویکس",
+      "description": "سوالات متداول در مورد محصولات، خدمات، سفارش‌گذاری و عملیات جهانی هارویکس."
+    },
+    "locations": {
+      "title": "مکان‌های جهانی | هارویکس",
+      "description": "دفاتر و عملیات Harvics در سراسر خاورمیانه، آسیای جنوبی، اروپا، آفریقا و آمریکا."
+    },
+    "leadership": {
+      "title": "تیم رهبری | هارویکس",
+      "description": "با تیم رهبری Harvics Global Ventures که در بیش از ۴۰ بازار و ۱۰ صنعت عمودی فعالیت می‌کنند، آشنا شوید."
+    },
+    "help": {
+      "title": "مرکز راهنما | هارویکس",
+      "description": "در مورد سفارشات، حساب‌ها، ارسال و خدمات هارویکس کمک بگیرید."
+    },
+    "compliance": {
+      "title": "انطباق و اخلاق | هارویکس",
+      "description": "تعهد هارویکس به رعایت مقررات، شیوه‌های اخلاقی کسب و کار و استانداردهای جهانی."
+    },
+    "history": {
+      "title": "تاریخچه ما | هارویکس",
+      "description": "از یک استارتاپ دبی در سال ۲۰۱۹ تا یک شرکت جهانی که بیش از ۴۰ کشور را در بر می‌گیرد - داستان هارویکس."
+    },
+    "newsletter": {
+      "title": "خبرنامه | هارویکس",
+      "description": "برای دریافت بینش‌های صنعتی و معرفی محصولات، در خبرنامه Harvics مشترک شوید."
+    },
+    "login": {
+      "title": "ورود | هارویکس",
+      "description": "برای مدیریت سفارشات و دسترسی به پلتفرم، وارد حساب کاربری Harvics خود شوید."
+    },
+    "research": {
+      "title": "تحقیق و نوآوری | هارویکس",
+      "description": "ابتکارات تحقیقاتی و برنامه‌های نوآوری هارویکس، استراتژی جهانی ما را هدایت می‌کنند."
+    },
+    "investorRelations": {
+      "title": "روابط با سرمایه‌گذاران | هارویکس",
+      "description": "اطلاعات سرمایه‌گذاران، گزارش‌های مالی و اطلاعیه‌های شرکتی از Harvics Global Ventures."
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "صفحه یافت نشد",
+      "heading": "۴۰۴ — صفحه یافت نشد",
+      "description": "صفحه مورد نظر شما وجود ندارد یا منتقل شده است.",
+      "goHome": "رفتن به صفحه اصلی",
+      "goBack": "برگرد"
+    },
+    "serverError": {
+      "title": "مشکلی پیش آمد",
+      "heading": "چیزی اشتباه پیش رفت",
+      "description": "متاسفیم، اما اتفاق غیرمنتظره‌ای رخ داده است. لطفاً صفحه را رفرش کنید.",
+      "tryAgain": "دوباره امتحان کنید",
+      "reload": "صفحه را دوباره بارگذاری کنید",
+      "contactSupport": "تماس با پشتیبانی"
+    },
+    "globalError": {
+      "title": "خطای برنامه",
+      "heading": "خطای بحرانی",
+      "description": "یک خطای بحرانی رخ داده است. لطفاً صفحه را دوباره بارگذاری کنید.",
+      "reload": "بارگذاری مجدد برنامه"
+    }
+  },
+  "about": {
+    "title": "درباره هارویکس",
+    "subtitle": "برتری در کالاهای مصرفی ممتاز از سال ۲۰۱۹",
+    "ourStory": "داستان ما",
+    "story1": "هارویکس که در سال ۲۰۱۹ تأسیس شد، از یک ایده‌ی رؤیایی به یک رهبر جهانی در کالاهای مصرفی ممتاز تبدیل شده است. سفر ما با پیگیری بی‌وقفه‌ی کیفیت و تعهد به نوآوری تعریف می‌شود.",
+    "story2": "ما در بیش از ۴۰ کشور فعالیت می‌کنیم و محصولاتی ارائه می‌دهیم که زندگی‌ها را غنی‌تر کرده و استانداردهای جدیدی را در صنعت تعیین می‌کنند. از آغاز فروتنانه تا حضور جهانی‌مان، ارزش‌های ما بدون تغییر باقی مانده‌اند.",
+    "est2018": "تأسیس ۲۰۱۹",
+    "countries40": "بیش از ۴۰ کشور",
+    "productLines6": "۶ خط تولید"
+  },
+  "csr": {
+    "hero": {
+      "title": "مسئولیت اجتماعی شرکتی",
+      "description": "در هارویکس، ما متعهد به ایجاد تأثیر مثبت بر جهان هستیم. ابتکارات مسئولیت اجتماعی شرکتی ما بر پایداری، توانمندسازی جامعه و شیوه‌های اخلاقی کسب و کار متمرکز است.",
+      "stats": {
+        "years": "سال‌های تأثیرگذاری",
+        "countries": "کشورهای رسیده",
+        "lives": "زندگی‌های تحت تأثیر قرار گرفته"
+      }
+    },
+    "initiatives": {
+      "title": "ابتکارات کلیدی ما",
+      "description": "ما بر چهار رکن اصلی تمرکز می‌کنیم تا تغییرات پایدار را هدایت کنیم و ارزش مشترکی برای همه ذینفعان ایجاد کنیم."
+    },
+    "sustainability": {
+      "title": "پایداری",
+      "description": "کاهش ردپای زیست‌محیطی از طریق انرژی‌های تجدیدپذیر و کاهش ضایعات.",
+      "stats": {
+        "renewable": "انرژی تجدیدپذیر",
+        "waste": "زباله‌ها هدایت می‌شوند",
+        "carbon": "کاهش کربن"
+      }
+    },
+    "community": {
+      "title": "پشتیبانی جامعه",
+      "description": "توانمندسازی جوامع محلی از طریق آموزش، مراقبت‌های بهداشتی و توسعه اقتصادی.",
+      "stats": {
+        "families": "خانواده‌های تحت حمایت",
+        "programs": "برنامه‌های فعال",
+        "volunteers": "داوطلبان"
+      }
+    },
+    "education": {
+      "title": "آموزش",
+      "description": "فراهم کردن دسترسی به آموزش با کیفیت و بورسیه تحصیلی برای دانش‌آموزان محروم.",
+      "stats": {
+        "scholarships": "بورسیه‌ها",
+        "schools": "مدارس همکار",
+        "students": "دانش‌آموزان آسیب‌دیده"
+      }
+    },
+    "health": {
+      "title": "سلامت و تندرستی",
+      "description": "بهبود دسترسی به مراقبت‌های بهداشتی و تغذیه در مناطق محروم.",
+      "stats": {
+        "campaigns": "کمپین‌های سلامت",
+        "people": "به مردم خدمت رسانی شد",
+        "clinics": "کلینیک‌های سیار"
+      }
+    },
+    "achievements": {
+      "2022": {
+        "title": "بهترین ابتکار مسئولیت اجتماعی شرکتی (CSR)",
+        "description": "به خاطر رویکرد نوآورانه ما در قبال مسئولیت اجتماعی مورد تقدیر قرار گرفت."
+      },
+      "2023": {
+        "title": "قهرمان جامعه",
+        "description": "به خاطر برنامه‌های گسترده‌ی ما در زمینه‌ی اطلاع‌رسانی به جامعه، جایزه دریافت کردیم."
+      },
+      "2024": {
+        "title": "جایزه جهانی پایداری",
+        "description": "به خاطر تعهدمان به بی‌طرفی کربن مورد تقدیر قرار گرفته‌ایم."
+      },
+      "title": "تأثیر ما",
+      "description": "شناخت نقاط عطف ما در ایجاد جهانی بهتر."
+    },
+    "cta": {
+      "title": "به ما بپیوندید در ایجاد تغییر",
+      "description": "با ما همکاری کنید یا درباره چگونگی ساختن آینده‌ای پایدار توسط ما بیشتر بدانید.",
+      "contact": "تماس با تیم CSR",
+      "learnMore": "اطلاعات بیشتر"
+    }
+  },
+  "harvicsHouse": {
+    "title": "خانه هارویس",
+    "subtitle": "میراثی از تعالی و سنت",
+    "aboutTitle": "به خانه هارویس خوش آمدید",
+    "description": "هارویکس هاوس اوج تعهد ما به کیفیت و میراث را نشان می‌دهد. در اینجا، ما بهترین مجموعه از محصولات ممتاز خود را گرد هم آورده‌ایم و در محیطی که منعکس کننده ارزش‌های ما از ظرافت، سنت و نوآوری است، به نمایش گذاشته‌ایم.",
+    "description2": "مجموعه‌های اختصاصی ما را کاوش کنید و داستان پشت هر محصولی که نام هارویکس را یدک می‌کشد، کشف کنید."
   }
 }

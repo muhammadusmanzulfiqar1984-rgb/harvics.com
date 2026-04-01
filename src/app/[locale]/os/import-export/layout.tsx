@@ -6,7 +6,7 @@ export default function ImportExportOSLayout({
 }: {
   children: React.ReactNode
 }) {
-  const allowedRoles: UserRole[] = ['import_export_admin', 'admin', 'super_admin', 'hq']
+  const allowedRoles: UserRole[] = ['import_export_admin', 'admin', 'super_admin', 'hq', 'company_admin']
   
   return (
     <AuthGuard allowedRoles={allowedRoles}>

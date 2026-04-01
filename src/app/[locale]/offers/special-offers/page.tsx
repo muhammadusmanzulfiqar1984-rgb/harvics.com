@@ -31,7 +31,7 @@ export default async function SpecialOffersPage({ params }: SpecialOffersPagePro
   const specialOfferImages = getProductImages(6)
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="pt-20">
         <section className="py-12 md:py-24 bg-[#6B1F2B]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

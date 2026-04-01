@@ -1,0 +1,4131 @@
+{
+  "_meta": {
+    "locale": "th",
+    "language": "Thai",
+    "direction": "ltr",
+    "pending_translations": 824,
+    "instructions": "Fill in the \"translation\" field for each key below. Translate from English to Thai. Do not change the key names. Return the completed file to add translations back into the app."
+  },
+  "keys": {
+    "home.welcome": {
+      "en": "Welcome to",
+      "translate_to": "Thai",
+      "translation": "ยินดีต้อนรับสู่"
+    },
+    "home.companyName": {
+      "en": "Harvics",
+      "translate_to": "Thai",
+      "translation": "ฮาร์วิช"
+    },
+    "home.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Thai",
+      "translation": "ความเป็นเลิศด้านสินค้าอุปโภคบริโภคระดับพรีเมียม ตั้งแต่ปี 2019"
+    },
+    "home.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Thai",
+      "translation": "บริษัทชั้นนำระดับโลกด้านสินค้าอุปโภคบริโภคที่จัดจำหน่ายผลิตภัณฑ์อาหารคุณภาพสูงหลากหลายประเภท ด้วยมาตรฐานคุณภาพระดับสากล"
+    },
+    "home.exploreProducts": {
+      "en": "Explore Products",
+      "translate_to": "Thai",
+      "translation": "สำรวจผลิตภัณฑ์"
+    },
+    "home.contact": {
+      "en": "Contact Us",
+      "translate_to": "Thai",
+      "translation": "ติดต่อเรา"
+    },
+    "home.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Thai",
+      "translation": "เรียนรู้เพิ่มเติม"
+    },
+    "home.taglineStart": {
+      "en": "Excellence in Premium Consumer Goods Since",
+      "translate_to": "Thai",
+      "translation": "ความเป็นเลิศในสินค้าอุปโภคบริโภคระดับพรีเมียม ตั้งแต่ปี"
+    },
+    "home.taglineYear": {
+      "en": "2019",
+      "translate_to": "Thai",
+      "translation": "2019"
+    },
+    "home.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Thai",
+      "translation": "ลอนดอน • มิลาน • นิวยอร์ก"
+    },
+    "home.categories.bakery": {
+      "en": "Bakery",
+      "translate_to": "Thai",
+      "translation": "เบเกอรี่"
+    },
+    "home.categories.beverages": {
+      "en": "Beverages",
+      "translate_to": "Thai",
+      "translation": "เครื่องดื่ม"
+    },
+    "home.categories.confectionery": {
+      "en": "Confectionary",
+      "translate_to": "Thai",
+      "translation": "ขนมหวาน"
+    },
+    "home.categories.culinary": {
+      "en": "Culinary",
+      "translate_to": "Thai",
+      "translation": "การทำอาหาร"
+    },
+    "home.categories.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Thai",
+      "translation": "อาหารแช่แข็ง"
+    },
+    "home.categories.pasta": {
+      "en": "Pasta",
+      "translate_to": "Thai",
+      "translation": "พาสต้า"
+    },
+    "home.categories.snacks": {
+      "en": "Snacks",
+      "translate_to": "Thai",
+      "translation": "ของว่าง"
+    },
+    "navigation.esgReport": {
+      "en": "ESG Report 2025",
+      "translate_to": "Thai",
+      "translation": "รายงาน ESG ปี 2025"
+    },
+    "navigation.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Thai",
+      "translation": "ลอนดอน • มิลาน • นิวยอร์ก"
+    },
+    "navigation.home": {
+      "en": "Home",
+      "translate_to": "Thai",
+      "translation": "บ้าน"
+    },
+    "navigation.about": {
+      "en": "About",
+      "translate_to": "Thai",
+      "translation": "เกี่ยวกับ"
+    },
+    "navigation.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Thai",
+      "translation": "เกี่ยวกับเรา"
+    },
+    "navigation.brandStory": {
+      "en": "Brand Story",
+      "translate_to": "Thai",
+      "translation": "เรื่องราวของแบรนด์"
+    },
+    "navigation.products": {
+      "en": "Products",
+      "translate_to": "Thai",
+      "translation": "สินค้า"
+    },
+    "navigation.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Thai",
+      "translation": "ผลิตภัณฑ์ของเรา"
+    },
+    "navigation.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Thai",
+      "translation": "ดูสินค้าทั้งหมด"
+    },
+    "navigation.csr": {
+      "en": "CSR",
+      "translate_to": "Thai",
+      "translation": "ความรับผิดชอบต่อสังคม (CSR)"
+    },
+    "navigation.investorRelations": {
+      "en": "Investor Relations",
+      "translate_to": "Thai",
+      "translation": "ฝ่ายสัมพันธ์นักลงทุน"
+    },
+    "navigation.investors": {
+      "en": "Investors",
+      "translate_to": "Thai",
+      "translation": "นักลงทุน"
+    },
+    "navigation.media": {
+      "en": "Media",
+      "translate_to": "Thai",
+      "translation": "สื่อ"
+    },
+    "navigation.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Thai",
+      "translation": "ติดต่อเรา"
+    },
+    "navigation.harvicsHouse": {
+      "en": "Harvics House",
+      "translate_to": "Thai",
+      "translation": "บ้านฮาร์วิคส์"
+    },
+    "navigation.countries": {
+      "en": "Countries",
+      "translate_to": "Thai",
+      "translation": "ประเทศ"
+    },
+    "navigation.portals": {
+      "en": "Portals",
+      "translate_to": "Thai",
+      "translation": "พอร์ทัล"
+    },
+    "navigation.signIn": {
+      "en": "Sign In",
+      "translate_to": "Thai",
+      "translation": "เข้าสู่ระบบ"
+    },
+    "navigation.wishlist": {
+      "en": "Wishlist",
+      "translate_to": "Thai",
+      "translation": "รายการสิ่งที่อยากได้"
+    },
+    "navigation.cart": {
+      "en": "Shopping Cart",
+      "translate_to": "Thai",
+      "translation": "ตะกร้าสินค้า"
+    },
+    "navigation.help": {
+      "en": "Help",
+      "translate_to": "Thai",
+      "translation": "ช่วย"
+    },
+    "navigation.findStore": {
+      "en": "Find Store",
+      "translate_to": "Thai",
+      "translation": "ค้นหาร้านค้า"
+    },
+    "navigation.money": {
+      "en": "Money",
+      "translate_to": "Thai",
+      "translation": "เงิน"
+    },
+    "navigation.sales": {
+      "en": "Sales",
+      "translate_to": "Thai",
+      "translation": "ฝ่ายขาย"
+    },
+    "navigation.offers": {
+      "en": "Offers",
+      "translate_to": "Thai",
+      "translation": "ข้อเสนอ"
+    },
+    "navigation.darkMode": {
+      "en": "Dark mode",
+      "translate_to": "Thai",
+      "translation": "โหมดมืด"
+    },
+    "navigation.moneyDropdown.creditCard.title": {
+      "en": "Credit Card",
+      "translate_to": "Thai",
+      "translation": "บัตรเครดิต"
+    },
+    "navigation.moneyDropdown.creditCard.msRewards": {
+      "en": "M&S Rewards Credit Card",
+      "translate_to": "Thai",
+      "translation": "บัตรเครดิต M&S Rewards"
+    },
+    "navigation.moneyDropdown.creditCard.clubRewards": {
+      "en": "Club Rewards",
+      "translate_to": "Thai",
+      "translation": "รางวัลคลับ"
+    },
+    "navigation.moneyDropdown.creditCard.ourCards": {
+      "en": "Our Credit Cards",
+      "translate_to": "Thai",
+      "translation": "บัตรเครดิตของเรา"
+    },
+    "navigation.moneyDropdown.insurance.title": {
+      "en": "Insurance",
+      "translate_to": "Thai",
+      "translation": "ประกันภัย"
+    },
+    "navigation.moneyDropdown.insurance.home": {
+      "en": "Home Insurance",
+      "translate_to": "Thai",
+      "translation": "ประกันภัยบ้าน"
+    },
+    "navigation.moneyDropdown.insurance.travel": {
+      "en": "Travel Insurance",
+      "translate_to": "Thai",
+      "translation": "ประกันภัยการเดินทาง"
+    },
+    "navigation.moneyDropdown.travel.title": {
+      "en": "Travel Services",
+      "translate_to": "Thai",
+      "translation": "บริการท่องเที่ยว"
+    },
+    "navigation.moneyDropdown.travel.money": {
+      "en": "Travel Money",
+      "translate_to": "Thai",
+      "translation": "เงินสำหรับการเดินทาง"
+    },
+    "navigation.moneyDropdown.travel.exchange": {
+      "en": "Exchange Rates",
+      "translate_to": "Thai",
+      "translation": "อัตราแลกเปลี่ยน"
+    },
+    "navigation.moneyDropdown.additional.title": {
+      "en": "Additional Services",
+      "translate_to": "Thai",
+      "translation": "บริการเพิ่มเติม"
+    },
+    "navigation.moneyDropdown.additional.savings": {
+      "en": "Savings & Investing",
+      "translate_to": "Thai",
+      "translation": "การออมและการลงทุน"
+    },
+    "navigation.moneyDropdown.additional.personalLoans": {
+      "en": "Personal Loans",
+      "translate_to": "Thai",
+      "translation": "สินเชื่อส่วนบุคคล"
+    },
+    "navigation.moneyDropdown.additional.financialSupport": {
+      "en": "Financial Support",
+      "translate_to": "Thai",
+      "translation": "การสนับสนุนทางการเงิน"
+    },
+    "navigation.salesDropdown.currentSales": {
+      "en": "Current Sales",
+      "translate_to": "Thai",
+      "translation": "ยอดขายปัจจุบัน"
+    },
+    "navigation.salesDropdown.clearance": {
+      "en": "Clearance",
+      "translate_to": "Thai",
+      "translation": "การเคลียร์พื้นที่"
+    },
+    "navigation.salesDropdown.seasonal": {
+      "en": "Seasonal Sales",
+      "translate_to": "Thai",
+      "translation": "การขายตามฤดูกาล"
+    },
+    "navigation.offersDropdown.specialOffers": {
+      "en": "Special Offers",
+      "translate_to": "Thai",
+      "translation": "ข้อเสนอพิเศษ"
+    },
+    "navigation.offersDropdown.promotions": {
+      "en": "Promotions",
+      "translate_to": "Thai",
+      "translation": "โปรโมชั่น"
+    },
+    "navigation.offersDropdown.bulkOrders": {
+      "en": "Bulk Order Discounts",
+      "translate_to": "Thai",
+      "translation": "ส่วนลดสำหรับการสั่งซื้อจำนวนมาก"
+    },
+    "products.ourProducts": {
+      "en": "Our Products",
+      "translate_to": "Thai",
+      "translation": "ผลิตภัณฑ์ของเรา"
+    },
+    "products.viewAllProducts": {
+      "en": "View All Products",
+      "translate_to": "Thai",
+      "translation": "ดูสินค้าทั้งหมด"
+    },
+    "products.productCategories": {
+      "en": "Our Product Categories",
+      "translate_to": "Thai",
+      "translation": "หมวดหมู่ผลิตภัณฑ์ของเรา"
+    },
+    "products.discoverPremium": {
+      "en": "Discover our premium range of products crafted with care and excellence.",
+      "translate_to": "Thai",
+      "translation": "ค้นพบผลิตภัณฑ์ระดับพรีเมียมของเราที่ผลิตขึ้นด้วยความเอาใจใส่และคุณภาพที่ยอดเยี่ยม"
+    },
+    "products.tier1": {
+      "en": "Tier 1: Categories",
+      "translate_to": "Thai",
+      "translation": "ระดับที่ 1: หมวดหมู่"
+    },
+    "products.tier2": {
+      "en": "Tier 2: Modules",
+      "translate_to": "Thai",
+      "translation": "ระดับ 2: โมดูล"
+    },
+    "products.tier3": {
+      "en": "Tier 3: KPI Screens",
+      "translate_to": "Thai",
+      "translation": "ระดับ 3: หน้าจอ KPI"
+    },
+    "products.tier4": {
+      "en": "Tier 4: Actions",
+      "translate_to": "Thai",
+      "translation": "ระดับ 4: การกระทำ"
+    },
+    "products.reset": {
+      "en": "Reset Navigation",
+      "translate_to": "Thai",
+      "translation": "รีเซ็ตการนำทาง"
+    },
+    "products.noSubcategories": {
+      "en": "No subcategories available for this category.",
+      "translate_to": "Thai",
+      "translation": "ไม่มีหมวดหมู่ย่อยสำหรับหมวดหมู่นี้"
+    },
+    "products.pageTitle": {
+      "en": "Products",
+      "translate_to": "Thai",
+      "translation": "สินค้า"
+    },
+    "products.subcategories": {
+      "en": "Subcategories",
+      "translate_to": "Thai",
+      "translation": "หมวดหมู่ย่อย"
+    },
+    "products.bakery": {
+      "en": "Bakery",
+      "translate_to": "Thai",
+      "translation": "เบเกอรี่"
+    },
+    "products.bakeryDesc": {
+      "en": "Freshly baked goods and pastries.",
+      "translate_to": "Thai",
+      "translation": "ขนมอบและเบเกอรี่อบสดใหม่"
+    },
+    "products.beverages": {
+      "en": "Beverages",
+      "translate_to": "Thai",
+      "translation": "เครื่องดื่ม"
+    },
+    "products.beveragesDesc": {
+      "en": "Refreshing drinks for every occasion.",
+      "translate_to": "Thai",
+      "translation": "เครื่องดื่มสดชื่นสำหรับทุกโอกาส"
+    },
+    "products.confectionery": {
+      "en": "Confectionery",
+      "translate_to": "Thai",
+      "translation": "ขนมหวาน"
+    },
+    "products.confectioneryDesc": {
+      "en": "Sweet treats and delights.",
+      "translate_to": "Thai",
+      "translation": "ขนมหวานและของอร่อย"
+    },
+    "products.culinary": {
+      "en": "Culinary",
+      "translate_to": "Thai",
+      "translation": "การทำอาหาร"
+    },
+    "products.culinaryDesc": {
+      "en": "Essential ingredients for your kitchen.",
+      "translate_to": "Thai",
+      "translation": "ส่วนประกอบสำคัญสำหรับห้องครัวของคุณ"
+    },
+    "products.frozenFoods": {
+      "en": "Frozen Foods",
+      "translate_to": "Thai",
+      "translation": "อาหารแช่แข็ง"
+    },
+    "products.frozenFoodsDesc": {
+      "en": "Convenient and delicious frozen meals.",
+      "translate_to": "Thai",
+      "translation": "อาหารแช่แข็งที่สะดวกและอร่อย"
+    },
+    "products.pasta": {
+      "en": "Pasta",
+      "translate_to": "Thai",
+      "translation": "พาสต้า"
+    },
+    "products.pastaDesc": {
+      "en": "Authentic pasta varieties.",
+      "translate_to": "Thai",
+      "translation": "พาสต้าหลากหลายชนิดต้นตำรับ"
+    },
+    "products.snacks": {
+      "en": "Snacks",
+      "translate_to": "Thai",
+      "translation": "ของว่าง"
+    },
+    "products.snacksDesc": {
+      "en": "Tasty snacks for any time of day.",
+      "translate_to": "Thai",
+      "translation": "ของว่างแสนอร่อยทานได้ทุกเวลา"
+    },
+    "about.title": {
+      "en": "About Harvics",
+      "translate_to": "Thai",
+      "translation": "เกี่ยวกับ Harvics"
+    },
+    "about.subtitle": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Thai",
+      "translation": "ความเป็นเลิศด้านสินค้าอุปโภคบริโภคระดับพรีเมียม ตั้งแต่ปี 2019"
+    },
+    "about.ourStory": {
+      "en": "Our Story",
+      "translate_to": "Thai",
+      "translation": "เรื่องราวของเรา"
+    },
+    "about.story1": {
+      "en": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
+      "translate_to": "Thai",
+      "translation": "Harvics ก่อตั้งขึ้นในปี 2019 โดยเริ่มต้นจากแนวคิดที่ก้าวล้ำ จนเติบโตเป็นผู้นำระดับโลกในสินค้าอุปโภคบริโภคระดับพรีเมียม เส้นทางของเรานั้นขับเคลื่อนด้วยการแสวงหาคุณภาพอย่างไม่หยุดยั้ง และความมุ่งมั่นในการสร้างสรรค์นวัตกรรม"
+    },
+    "about.story2": {
+      "en": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
+      "translate_to": "Thai",
+      "translation": "เราดำเนินธุรกิจในกว่า 40 ประเทศ ส่งมอบผลิตภัณฑ์ที่ช่วยยกระดับคุณภาพชีวิตและสร้างมาตรฐานใหม่ในอุตสาหกรรม จากจุดเริ่มต้นเล็กๆ สู่การเป็นบริษัทระดับโลก ค่านิยมของเรายังคงไม่เปลี่ยนแปลง"
+    },
+    "about.est2018": {
+      "en": "Est. 2019",
+      "translate_to": "Thai",
+      "translation": "ก่อตั้งเมื่อปี 2019"
+    },
+    "about.countries40": {
+      "en": "40+ Countries",
+      "translate_to": "Thai",
+      "translation": "กว่า 40 ประเทศ"
+    },
+    "about.productLines6": {
+      "en": "6 Product Lines",
+      "translate_to": "Thai",
+      "translation": "6 กลุ่มผลิตภัณฑ์"
+    },
+    "csr.hero.title": {
+      "en": "Corporate Social Responsibility",
+      "translate_to": "Thai",
+      "translation": "ความรับผิดชอบต่อสังคมขององค์กร"
+    },
+    "csr.hero.description": {
+      "en": "At Harvics, we are committed to making a positive impact on the world. Our CSR initiatives focus on sustainability, community empowerment, and ethical business practices.",
+      "translate_to": "Thai",
+      "translation": "ที่ Harvics เรามุ่งมั่นที่จะสร้างผลกระทบเชิงบวกต่อโลก โครงการความรับผิดชอบต่อสังคมของเรามุ่งเน้นไปที่ความยั่งยืน การเสริมสร้างศักยภาพชุมชน และการดำเนินธุรกิจอย่างมีจริยธรรม"
+    },
+    "csr.hero.stats.years": {
+      "en": "Years of Impact",
+      "translate_to": "Thai",
+      "translation": "ผลกระทบหลายปี"
+    },
+    "csr.hero.stats.countries": {
+      "en": "Countries Reached",
+      "translate_to": "Thai",
+      "translation": "ประเทศที่เข้าถึงได้"
+    },
+    "csr.hero.stats.lives": {
+      "en": "Lives Touched",
+      "translate_to": "Thai",
+      "translation": "ชีวิตที่เปลี่ยนแปลง"
+    },
+    "csr.initiatives.title": {
+      "en": "Our Key Initiatives",
+      "translate_to": "Thai",
+      "translation": "โครงการริเริ่มหลักของเรา"
+    },
+    "csr.initiatives.description": {
+      "en": "We focus on four main pillars to drive sustainable change and create shared value for all stakeholders.",
+      "translate_to": "Thai",
+      "translation": "เรามุ่งเน้นที่เสาหลักสำคัญสี่ประการเพื่อขับเคลื่อนการเปลี่ยนแปลงที่ยั่งยืนและสร้างคุณค่าร่วมกันสำหรับผู้มีส่วนได้ส่วนเสียทุกฝ่าย"
+    },
+    "csr.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Thai",
+      "translation": "ความยั่งยืน"
+    },
+    "csr.sustainability.description": {
+      "en": "Reducing our environmental footprint through renewable energy and waste reduction.",
+      "translate_to": "Thai",
+      "translation": "ลดผลกระทบต่อสิ่งแวดล้อมของเราด้วยพลังงานหมุนเวียนและการลดปริมาณขยะ"
+    },
+    "csr.sustainability.stats.renewable": {
+      "en": "Renewable Energy",
+      "translate_to": "Thai",
+      "translation": "พลังงานหมุนเวียน"
+    },
+    "csr.sustainability.stats.waste": {
+      "en": "Waste Diverted",
+      "translate_to": "Thai",
+      "translation": "ขยะที่ถูกนำไปใช้ประโยชน์ใหม่"
+    },
+    "csr.sustainability.stats.carbon": {
+      "en": "Carbon Reduction",
+      "translate_to": "Thai",
+      "translation": "การลดคาร์บอน"
+    },
+    "csr.community.title": {
+      "en": "Community Support",
+      "translate_to": "Thai",
+      "translation": "การสนับสนุนชุมชน"
+    },
+    "csr.community.description": {
+      "en": "Empowering local communities through education, healthcare, and economic development.",
+      "translate_to": "Thai",
+      "translation": "เสริมสร้างศักยภาพชุมชนท้องถิ่นผ่านการศึกษา การดูแลสุขภาพ และการพัฒนาเศรษฐกิจ"
+    },
+    "csr.community.stats.families": {
+      "en": "Families Supported",
+      "translate_to": "Thai",
+      "translation": "ครอบครัวที่ได้รับการสนับสนุน"
+    },
+    "csr.community.stats.programs": {
+      "en": "Active Programs",
+      "translate_to": "Thai",
+      "translation": "โปรแกรมเชิงรุก"
+    },
+    "csr.community.stats.volunteers": {
+      "en": "Volunteers",
+      "translate_to": "Thai",
+      "translation": "อาสาสมัคร"
+    },
+    "csr.education.title": {
+      "en": "Education",
+      "translate_to": "Thai",
+      "translation": "การศึกษา"
+    },
+    "csr.education.description": {
+      "en": "Providing access to quality education and scholarships for underprivileged students.",
+      "translate_to": "Thai",
+      "translation": "การให้โอกาสทางการศึกษาที่มีคุณภาพและทุนการศึกษาแก่นักเรียนที่ด้อยโอกาส"
+    },
+    "csr.education.stats.scholarships": {
+      "en": "Scholarships",
+      "translate_to": "Thai",
+      "translation": "ทุนการศึกษา"
+    },
+    "csr.education.stats.schools": {
+      "en": "Partner Schools",
+      "translate_to": "Thai",
+      "translation": "โรงเรียนพันธมิตร"
+    },
+    "csr.education.stats.students": {
+      "en": "Students Impacted",
+      "translate_to": "Thai",
+      "translation": "นักเรียนที่ได้รับผลกระทบ"
+    },
+    "csr.health.title": {
+      "en": "Health & Wellness",
+      "translate_to": "Thai",
+      "translation": "สุขภาพและความเป็นอยู่ที่ดี"
+    },
+    "csr.health.description": {
+      "en": "Improving access to healthcare and nutrition in underserved regions.",
+      "translate_to": "Thai",
+      "translation": "การปรับปรุงการเข้าถึงบริการด้านสุขภาพและโภชนาการในพื้นที่ด้อยโอกาส"
+    },
+    "csr.health.stats.campaigns": {
+      "en": "Health Campaigns",
+      "translate_to": "Thai",
+      "translation": "แคมเปญด้านสุขภาพ"
+    },
+    "csr.health.stats.people": {
+      "en": "People Served",
+      "translate_to": "Thai",
+      "translation": "ผู้คนที่ได้รับบริการ"
+    },
+    "csr.health.stats.clinics": {
+      "en": "Mobile Clinics",
+      "translate_to": "Thai",
+      "translation": "คลินิกเคลื่อนที่"
+    },
+    "csr.achievements.2022.title": {
+      "en": "Best CSR Initiative",
+      "translate_to": "Thai",
+      "translation": "โครงการความรับผิดชอบต่อสังคมที่ดีที่สุด"
+    },
+    "csr.achievements.2022.description": {
+      "en": "Honored for our innovative approach to social responsibility.",
+      "translate_to": "Thai",
+      "translation": "ได้รับรางวัลชมเชยสำหรับแนวทางการสร้างสรรค์นวัตกรรมด้านความรับผิดชอบต่อสังคม"
+    },
+    "csr.achievements.2023.title": {
+      "en": "Community Champion",
+      "translate_to": "Thai",
+      "translation": "ผู้ส่งเสริมชุมชน"
+    },
+    "csr.achievements.2023.description": {
+      "en": "Awarded for our extensive community outreach programs.",
+      "translate_to": "Thai",
+      "translation": "ได้รับรางวัลนี้จากโครงการช่วยเหลือชุมชนที่ครอบคลุมของเรา"
+    },
+    "csr.achievements.2024.title": {
+      "en": "Global Sustainability Award",
+      "translate_to": "Thai",
+      "translation": "รางวัลความยั่งยืนระดับโลก"
+    },
+    "csr.achievements.2024.description": {
+      "en": "Recognized for our commitment to carbon neutrality.",
+      "translate_to": "Thai",
+      "translation": "ได้รับการยอมรับในด้านความมุ่งมั่นของเราต่อความเป็นกลางทางคาร์บอน"
+    },
+    "csr.achievements.title": {
+      "en": "Our Impact",
+      "translate_to": "Thai",
+      "translation": "ผลกระทบของเรา"
+    },
+    "csr.achievements.description": {
+      "en": "Recognizing our milestones in creating a better world.",
+      "translate_to": "Thai",
+      "translation": "ตระหนักถึงความสำเร็จครั้งสำคัญของเราในการสร้างโลกที่ดีขึ้น"
+    },
+    "csr.cta.title": {
+      "en": "Join Us in Making a Difference",
+      "translate_to": "Thai",
+      "translation": "มาร่วมสร้างความเปลี่ยนแปลงไปกับเรา"
+    },
+    "csr.cta.description": {
+      "en": "Partner with us or learn more about how we are building a sustainable future.",
+      "translate_to": "Thai",
+      "translation": "ร่วมเป็นพันธมิตรกับเรา หรือเรียนรู้เพิ่มเติมเกี่ยวกับวิธีที่เรากำลังสร้างอนาคตที่ยั่งยืน"
+    },
+    "csr.cta.contact": {
+      "en": "Contact CSR Team",
+      "translate_to": "Thai",
+      "translation": "ติดต่อทีมงานฝ่ายความรับผิดชอบต่อสังคม (CSR)"
+    },
+    "csr.cta.learnMore": {
+      "en": "Learn More",
+      "translate_to": "Thai",
+      "translation": "เรียนรู้เพิ่มเติม"
+    },
+    "contact.title": {
+      "en": "Get in Touch",
+      "translate_to": "Thai",
+      "translation": "ติดต่อเรา"
+    },
+    "contact.subtitle": {
+      "en": "We'd love to hear from you. Reach out to us through any of these channels.",
+      "translate_to": "Thai",
+      "translation": "เรายินดีรับฟังความคิดเห็นของคุณ โปรดติดต่อเราผ่านช่องทางใดก็ได้เหล่านี้"
+    },
+    "contact.phone": {
+      "en": "Phone",
+      "translate_to": "Thai",
+      "translation": "โทรศัพท์"
+    },
+    "contact.email": {
+      "en": "Email",
+      "translate_to": "Thai",
+      "translation": "อีเมล"
+    },
+    "contact.whatsapp": {
+      "en": "WhatsApp",
+      "translate_to": "Thai",
+      "translation": "วาส"
+    },
+    "contact.callNow": {
+      "en": "Call Now",
+      "translate_to": "Thai",
+      "translation": "โทรเลย"
+    },
+    "contact.sendEmail": {
+      "en": "Send Email",
+      "translate_to": "Thai",
+      "translation": "ส่งอีเมล"
+    },
+    "contact.messageUs": {
+      "en": "Message Us",
+      "translate_to": "Thai",
+      "translation": "ติดต่อเรา"
+    },
+    "media.title": {
+      "en": "Media Center",
+      "translate_to": "Thai",
+      "translation": "ศูนย์สื่อ"
+    },
+    "media.pageTitle": {
+      "en": "Media Center | Harvics",
+      "translate_to": "Thai",
+      "translation": "ศูนย์สื่อ | ฮาร์วิคส์"
+    },
+    "media.description": {
+      "en": "Press resources, brand assets, and the latest news from Harvics Global Ventures.",
+      "translate_to": "Thai",
+      "translation": "แหล่งข้อมูลสำหรับสื่อมวลชน ทรัพย์สินของแบรนด์ และข่าวสารล่าสุดจาก Harvics Global Ventures"
+    },
+    "media.corporate": {
+      "en": "Corporate",
+      "translate_to": "Thai",
+      "translation": "บริษัท"
+    },
+    "media.sections.news.title": {
+      "en": "News & Press Releases",
+      "translate_to": "Thai",
+      "translation": "ข่าวและข่าวประชาสัมพันธ์"
+    },
+    "media.sections.news.desc": {
+      "en": "Latest announcements, market expansions, product launches, and corporate updates from Harvics Global Ventures.",
+      "translate_to": "Thai",
+      "translation": "ประกาศล่าสุด การขยายตลาด การเปิดตัวผลิตภัณฑ์ และข่าวสารองค์กรจาก Harvics Global Ventures"
+    },
+    "media.sections.news.cta": {
+      "en": "Read Latest News",
+      "translate_to": "Thai",
+      "translation": "อ่านข่าวล่าสุด"
+    },
+    "media.sections.gallery.title": {
+      "en": "Image Gallery",
+      "translate_to": "Thai",
+      "translation": "แกลเลอรีรูปภาพ"
+    },
+    "media.sections.gallery.desc": {
+      "en": "High-resolution brand assets, product photography, facility images, and event coverage for media use.",
+      "translate_to": "Thai",
+      "translation": "ภาพแบรนด์ความละเอียดสูง ภาพถ่ายผลิตภัณฑ์ ภาพสถานที่ และภาพงานอีเวนต์ สำหรับสื่อมวลชนใช้งาน"
+    },
+    "media.sections.gallery.cta": {
+      "en": "Browse Gallery",
+      "translate_to": "Thai",
+      "translation": "เรียกดูแกลเลอรี่"
+    },
+    "media.sections.contacts.title": {
+      "en": "Media Contacts",
+      "translate_to": "Thai",
+      "translation": "ติดต่อสื่อมวลชน"
+    },
+    "media.sections.contacts.desc": {
+      "en": "Reach our communications team for press inquiries, interview requests, and partnership announcements.",
+      "translate_to": "Thai",
+      "translation": "สำหรับคำถามจากสื่อมวลชน คำขอสัมภาษณ์ และประกาศความร่วมมือ โปรดติดต่อทีมสื่อสารของเรา"
+    },
+    "media.sections.contacts.cta": {
+      "en": "Contact Press Team",
+      "translate_to": "Thai",
+      "translation": "ติดต่อทีมงานฝ่ายประชาสัมพันธ์"
+    },
+    "media.highlights.marketsCovered": {
+      "en": "Markets Covered",
+      "translate_to": "Thai",
+      "translation": "ตลาดที่ครอบคลุม"
+    },
+    "media.highlights.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Thai",
+      "translation": "กลุ่มอุตสาหกรรมเฉพาะทาง"
+    },
+    "media.highlights.foundedIn": {
+      "en": "Founded in Dubai",
+      "translate_to": "Thai",
+      "translation": "ก่อตั้งในดูไบ"
+    },
+    "media.highlights.languagesSupported": {
+      "en": "Languages Supported",
+      "translate_to": "Thai",
+      "translation": "ภาษาที่รองรับ"
+    },
+    "media.recentHeadlines": {
+      "en": "Recent Headlines",
+      "translate_to": "Thai",
+      "translation": "ข่าวพาดหัวล่าสุด"
+    },
+    "media.headlines.expansion": {
+      "en": "Harvics Expands FMCG Operations to 5 New Southeast Asian Markets",
+      "translate_to": "Thai",
+      "translation": "Harvics ขยายธุรกิจสินค้าอุปโภคบริโภคไปยัง 5 ตลาดใหม่ในเอเชียตะวันออกเฉียงใต้"
+    },
+    "media.headlines.aiPlatform": {
+      "en": "New AI-Powered Supply Chain Platform Launched for Global Distribution",
+      "translate_to": "Thai",
+      "translation": "เปิดตัวแพลตฟอร์มซัพพลายเชนที่ขับเคลื่อนด้วย AI ใหม่สำหรับการจัดจำหน่ายทั่วโลก"
+    },
+    "media.headlines.carbonNeutral": {
+      "en": "Harvics Achieves Carbon-Neutral Milestone Across All Facilities",
+      "translate_to": "Thai",
+      "translation": "Harvics บรรลุเป้าหมายความเป็นกลางทางคาร์บอนในทุกโรงงาน"
+    },
+    "media.headlines.partnership": {
+      "en": "Strategic Partnership with Leading Textile Manufacturers in South Asia",
+      "translate_to": "Thai",
+      "translation": "ความร่วมมือเชิงกลยุทธ์กับผู้ผลิตสิ่งทอชั้นนำในเอเชียใต้"
+    },
+    "harvicsHouse.title": {
+      "en": "Harvics House",
+      "translate_to": "Thai",
+      "translation": "บ้านฮาร์วิคส์"
+    },
+    "harvicsHouse.subtitle": {
+      "en": "A Legacy of Excellence and Tradition",
+      "translate_to": "Thai",
+      "translation": "มรดกแห่งความเป็นเลิศและประเพณีอันยาวนาน"
+    },
+    "harvicsHouse.aboutTitle": {
+      "en": "Welcome to Harvics House",
+      "translate_to": "Thai",
+      "translation": "ยินดีต้อนรับสู่บ้านฮาร์วิคส์"
+    },
+    "harvicsHouse.description": {
+      "en": "Harvics House represents the pinnacle of our commitment to quality and heritage. Here, we bring together the finest selection of our premium products, showcased in an environment that reflects our values of elegance, tradition, and innovation.",
+      "translate_to": "Thai",
+      "translation": "Harvics House คือจุดสูงสุดของความมุ่งมั่นของเราในด้านคุณภาพและมรดก ที่นี่เรารวบรวมผลิตภัณฑ์ระดับพรีเมียมที่ดีที่สุดมาจัดแสดงในสภาพแวดล้อมที่สะท้อนถึงคุณค่าของเราในด้านความสง่างาม ประเพณี และนวัตกรรม"
+    },
+    "harvicsHouse.description2": {
+      "en": "Explore our exclusive collections and discover the story behind every product that bears the Harvics name.",
+      "translate_to": "Thai",
+      "translation": "สำรวจคอลเลกชันสุดพิเศษของเราและค้นพบเรื่องราวเบื้องหลังผลิตภัณฑ์ทุกชิ้นที่ใช้ชื่อ Harvics"
+    },
+    "footer.companyName": {
+      "en": "Harvics Global Ventures",
+      "translate_to": "Thai",
+      "translation": "ฮาร์วิคส์ โกลบอล เวนเจอร์ส"
+    },
+    "footer.tagline": {
+      "en": "Excellence in Premium Consumer Goods Since 2019",
+      "translate_to": "Thai",
+      "translation": "ความเป็นเลิศด้านสินค้าอุปโภคบริโภคระดับพรีเมียม ตั้งแต่ปี 2019"
+    },
+    "footer.brandStatement": {
+      "en": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+      "translate_to": "Thai",
+      "translation": "บริษัทชั้นนำระดับโลกด้านสินค้าอุปโภคบริโภคที่จัดจำหน่ายผลิตภัณฑ์อาหารคุณภาพสูงหลากหลายประเภท ด้วยมาตรฐานคุณภาพระดับสากล"
+    },
+    "footer.locations": {
+      "en": "London • Milan • New York",
+      "translate_to": "Thai",
+      "translation": "ลอนดอน • มิลาน • นิวยอร์ก"
+    },
+    "footer.since": {
+      "en": "Since 2019",
+      "translate_to": "Thai",
+      "translation": "ตั้งแต่ปี 2019 เป็นต้นมา"
+    },
+    "footer.harvicsNews": {
+      "en": "Harvics News",
+      "translate_to": "Thai",
+      "translation": "ข่าวฮาร์วิคส์"
+    },
+    "footer.subscribeToAlerts": {
+      "en": "Subscribe to receive alerts and updates",
+      "translate_to": "Thai",
+      "translation": "สมัครรับการแจ้งเตือนและข่าวสารอัปเดต"
+    },
+    "footer.signUp": {
+      "en": "Sign Up",
+      "translate_to": "Thai",
+      "translation": "ลงทะเบียน"
+    },
+    "footer.complianceConcerns": {
+      "en": "Compliance Concerns",
+      "translate_to": "Thai",
+      "translation": "ข้อกังวลด้านการปฏิบัติตามกฎระเบียบ"
+    },
+    "footer.speakUp": {
+      "en": "Speak up if you have concerns about compliance or ethics",
+      "translate_to": "Thai",
+      "translation": "หากคุณมีข้อกังวลเกี่ยวกับเรื่องการปฏิบัติตามกฎระเบียบหรือจริยธรรม โปรดแจ้งให้เราทราบ"
+    },
+    "footer.speakUpButton": {
+      "en": "Speak Up",
+      "translate_to": "Thai",
+      "translation": "พูดออกมา"
+    },
+    "footer.contactUs": {
+      "en": "Contact Us",
+      "translate_to": "Thai",
+      "translation": "ติดต่อเรา"
+    },
+    "footer.contactDescription": {
+      "en": "Get in touch with our team",
+      "translate_to": "Thai",
+      "translation": "ติดต่อทีมงานของเราได้เลย"
+    },
+    "footer.contactUsButton": {
+      "en": "Contact Us",
+      "translate_to": "Thai",
+      "translation": "ติดต่อเรา"
+    },
+    "footer.usefulLinks": {
+      "en": "Useful Links",
+      "translate_to": "Thai",
+      "translation": "ลิงก์ที่เป็นประโยชน์"
+    },
+    "footer.askHarvics": {
+      "en": "Ask Harvics",
+      "translate_to": "Thai",
+      "translation": "ถามฮาร์วิช"
+    },
+    "footer.searchForJobs": {
+      "en": "Search for Jobs",
+      "translate_to": "Thai",
+      "translation": "ค้นหางาน"
+    },
+    "footer.signUpForNews": {
+      "en": "Sign Up for News",
+      "translate_to": "Thai",
+      "translation": "ลงทะเบียนเพื่อรับข่าวสาร"
+    },
+    "footer.company": {
+      "en": "Company",
+      "translate_to": "Thai",
+      "translation": "บริษัท"
+    },
+    "footer.globalAddresses": {
+      "en": "Global Addresses",
+      "translate_to": "Thai",
+      "translation": "ที่อยู่ทั่วโลก"
+    },
+    "footer.strategy": {
+      "en": "Strategy",
+      "translate_to": "Thai",
+      "translation": "กลยุทธ์"
+    },
+    "footer.ourLeadership": {
+      "en": "Our Leadership",
+      "translate_to": "Thai",
+      "translation": "คณะผู้บริหารของเรา"
+    },
+    "footer.brandsAZ": {
+      "en": "Brands A-Z",
+      "translate_to": "Thai",
+      "translation": "แบรนด์ต่างๆ เรียงตามตัวอักษร A-Z"
+    },
+    "footer.ourHistory": {
+      "en": "Our History",
+      "translate_to": "Thai",
+      "translation": "ประวัติของเรา"
+    },
+    "footer.sustainability": {
+      "en": "Sustainability",
+      "translate_to": "Thai",
+      "translation": "ความยั่งยืน"
+    },
+    "footer.news": {
+      "en": "News",
+      "translate_to": "Thai",
+      "translation": "ข่าว"
+    },
+    "footer.mediaContacts": {
+      "en": "Media Contacts",
+      "translate_to": "Thai",
+      "translation": "ติดต่อสื่อมวลชน"
+    },
+    "footer.images": {
+      "en": "Images",
+      "translate_to": "Thai",
+      "translation": "รูปภาพ"
+    },
+    "footer.investors": {
+      "en": "Investors",
+      "translate_to": "Thai",
+      "translation": "นักลงทุน"
+    },
+    "footer.corporateGovernance": {
+      "en": "Corporate Governance",
+      "translate_to": "Thai",
+      "translation": "การกำกับดูแลกิจการ"
+    },
+    "footer.sharesAdrsBonds": {
+      "en": "Shares, ADRs & Bonds",
+      "translate_to": "Thai",
+      "translation": "หุ้น, ADRs และพันธบัตร"
+    },
+    "footer.publications": {
+      "en": "Publications",
+      "translate_to": "Thai",
+      "translation": "สิ่งพิมพ์"
+    },
+    "footer.followUsOn": {
+      "en": "Follow Us On",
+      "translate_to": "Thai",
+      "translation": "ติดตามเราได้ที่"
+    },
+    "footer.issuesCount": {
+      "en": "0 Issues",
+      "translate_to": "Thai",
+      "translation": "0 ปัญหา"
+    },
+    "footer.siteMap": {
+      "en": "Site Map",
+      "translate_to": "Thai",
+      "translation": "แผนผังเว็บไซต์"
+    },
+    "footer.unsubscribe": {
+      "en": "Unsubscribe",
+      "translate_to": "Thai",
+      "translation": "ยกเลิกการสมัครรับข้อมูล"
+    },
+    "footer.help": {
+      "en": "Help",
+      "translate_to": "Thai",
+      "translation": "ช่วย"
+    },
+    "footer.privacy": {
+      "en": "Privacy",
+      "translate_to": "Thai",
+      "translation": "ความเป็นส่วนตัว"
+    },
+    "footer.cookies": {
+      "en": "Cookies",
+      "translate_to": "Thai",
+      "translation": "คุกกี้"
+    },
+    "footer.termsOfUse": {
+      "en": "Terms of Use",
+      "translate_to": "Thai",
+      "translation": "ข้อกำหนดในการใช้งาน"
+    },
+    "footer.accessibility": {
+      "en": "Accessibility",
+      "translate_to": "Thai",
+      "translation": "การเข้าถึง"
+    },
+    "footer.carbonEfficiency": {
+      "en": "Carbon Efficiency",
+      "translate_to": "Thai",
+      "translation": "ประสิทธิภาพด้านคาร์บอน"
+    },
+    "footer.suppliers": {
+      "en": "Suppliers",
+      "translate_to": "Thai",
+      "translation": "ซัพพลายเออร์"
+    },
+    "footer.socialMedia": {
+      "en": "Social Media",
+      "translate_to": "Thai",
+      "translation": "สื่อสังคมออนไลน์"
+    },
+    "footer.cookieSettings": {
+      "en": "Cookie Settings",
+      "translate_to": "Thai",
+      "translation": "การตั้งค่าคุกกี้"
+    },
+    "footer.feature2Title": {
+      "en": "Premium Quality",
+      "translate_to": "Thai",
+      "translation": "คุณภาพระดับพรีเมียม"
+    },
+    "footer.emailAddress": {
+      "en": "Email address",
+      "translate_to": "Thai",
+      "translation": "ที่อยู่อีเมล"
+    },
+    "footer.enterEmailPlaceholder": {
+      "en": "Enter your email address",
+      "translate_to": "Thai",
+      "translation": "ป้อนที่อยู่อีเมลของคุณ"
+    },
+    "footer.subscribe": {
+      "en": "Subscribe",
+      "translate_to": "Thai",
+      "translation": "สมัครสมาชิก"
+    },
+    "footer.subscribing": {
+      "en": "Subscribing...",
+      "translate_to": "Thai",
+      "translation": "กำลังติดตาม..."
+    },
+    "footer.aboutUs": {
+      "en": "About Us",
+      "translate_to": "Thai",
+      "translation": "เกี่ยวกับเรา"
+    },
+    "footer.media": {
+      "en": "Media",
+      "translate_to": "Thai",
+      "translation": "สื่อ"
+    },
+    "search.placeholder": {
+      "en": "Search products, brands, or categories",
+      "translate_to": "Thai",
+      "translation": "ค้นหาสินค้า แบรนด์ หรือหมวดหมู่"
+    },
+    "search.noResults": {
+      "en": "No results found",
+      "translate_to": "Thai",
+      "translation": "ไม่พบผลลัพธ์"
+    },
+    "search.searching": {
+      "en": "Searching...",
+      "translate_to": "Thai",
+      "translation": "กำลังค้นหา..."
+    },
+    "search.results": {
+      "en": "Results",
+      "translate_to": "Thai",
+      "translation": "ผลลัพธ์"
+    },
+    "chatbot.title": {
+      "en": "Chat with Us",
+      "translate_to": "Thai",
+      "translation": "แชทกับเรา"
+    },
+    "chatbot.placeholder": {
+      "en": "Type your message...",
+      "translate_to": "Thai",
+      "translation": "พิมพ์ข้อความของคุณ..."
+    },
+    "chatbot.send": {
+      "en": "Send",
+      "translate_to": "Thai",
+      "translation": "ส่ง"
+    },
+    "chatbot.close": {
+      "en": "Close",
+      "translate_to": "Thai",
+      "translation": "ปิด"
+    },
+    "chatbot.welcome": {
+      "en": "Hello! How can I help you today?",
+      "translate_to": "Thai",
+      "translation": "สวัสดี! วันนี้ฉันสามารถช่วยอะไรคุณได้บ้าง?"
+    },
+    "chatbot.fallback.default": {
+      "en": "I'm sorry, I didn't understand that. Could you please rephrase?",
+      "translate_to": "Thai",
+      "translation": "ขอโทษค่ะ ฉันไม่เข้าใจ รบกวนช่วยอธิบายใหม่อีกครั้งได้ไหมคะ"
+    },
+    "chatbot.fallback.help": {
+      "en": "I can help you with product information, orders, or general inquiries. What would you like to know?",
+      "translate_to": "Thai",
+      "translation": "ฉันสามารถช่วยคุณได้ในเรื่องข้อมูลผลิตภัณฑ์ การสั่งซื้อ หรือข้อสงสัยทั่วไป คุณต้องการทราบอะไรบ้าง?"
+    },
+    "chatbot.fallback.contact": {
+      "en": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS.",
+      "translate_to": "Thai",
+      "translation": "หากต้องการความช่วยเหลือเพิ่มเติม โปรดติดต่อเราได้ที่ support@harvics.com หรือโทร +1-800-HARVICS"
+    },
+    "common.chatWithUs": {
+      "en": "Chat with Us",
+      "translate_to": "Thai",
+      "translation": "แชทกับเรา"
+    },
+    "common.loading": {
+      "en": "Loading...",
+      "translate_to": "Thai",
+      "translation": "กำลังโหลด..."
+    },
+    "common.error": {
+      "en": "Error",
+      "translate_to": "Thai",
+      "translation": "ข้อผิดพลาด"
+    },
+    "common.success": {
+      "en": "Success",
+      "translate_to": "Thai",
+      "translation": "ความสำเร็จ"
+    },
+    "common.save": {
+      "en": "Save",
+      "translate_to": "Thai",
+      "translation": "บันทึก"
+    },
+    "common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Thai",
+      "translation": "ยกเลิก"
+    },
+    "common.delete": {
+      "en": "Delete",
+      "translate_to": "Thai",
+      "translation": "ลบ"
+    },
+    "common.edit": {
+      "en": "Edit",
+      "translate_to": "Thai",
+      "translation": "แก้ไข"
+    },
+    "common.view": {
+      "en": "View",
+      "translate_to": "Thai",
+      "translation": "ดู"
+    },
+    "common.submit": {
+      "en": "Submit",
+      "translate_to": "Thai",
+      "translation": "ส่ง"
+    },
+    "common.search": {
+      "en": "Search",
+      "translate_to": "Thai",
+      "translation": "ค้นหา"
+    },
+    "common.filter": {
+      "en": "Filter",
+      "translate_to": "Thai",
+      "translation": "กรอง"
+    },
+    "common.clear": {
+      "en": "Clear",
+      "translate_to": "Thai",
+      "translation": "ชัดเจน"
+    },
+    "common.download": {
+      "en": "Download",
+      "translate_to": "Thai",
+      "translation": "ดาวน์โหลด"
+    },
+    "common.upload": {
+      "en": "Upload",
+      "translate_to": "Thai",
+      "translation": "อัปโหลด"
+    },
+    "common.yes": {
+      "en": "Yes",
+      "translate_to": "Thai",
+      "translation": "ใช่"
+    },
+    "common.no": {
+      "en": "No",
+      "translate_to": "Thai",
+      "translation": "เลขที่"
+    },
+    "common.close": {
+      "en": "Close",
+      "translate_to": "Thai",
+      "translation": "ปิด"
+    },
+    "common.back": {
+      "en": "Back",
+      "translate_to": "Thai",
+      "translation": "กลับ"
+    },
+    "common.next": {
+      "en": "Next",
+      "translate_to": "Thai",
+      "translation": "ต่อไป"
+    },
+    "common.previous": {
+      "en": "Previous",
+      "translate_to": "Thai",
+      "translation": "ก่อนหน้า"
+    },
+    "common.actions": {
+      "en": "Actions",
+      "translate_to": "Thai",
+      "translation": "การกระทำ"
+    },
+    "common.status": {
+      "en": "Status",
+      "translate_to": "Thai",
+      "translation": "สถานะ"
+    },
+    "common.date": {
+      "en": "Date",
+      "translate_to": "Thai",
+      "translation": "วันที่"
+    },
+    "common.name": {
+      "en": "Name",
+      "translate_to": "Thai",
+      "translation": "ชื่อ"
+    },
+    "common.email": {
+      "en": "Email",
+      "translate_to": "Thai",
+      "translation": "อีเมล"
+    },
+    "common.phone": {
+      "en": "Phone",
+      "translate_to": "Thai",
+      "translation": "โทรศัพท์"
+    },
+    "common.address": {
+      "en": "Address",
+      "translate_to": "Thai",
+      "translation": "ที่อยู่"
+    },
+    "common.country": {
+      "en": "Country",
+      "translate_to": "Thai",
+      "translation": "ประเทศ"
+    },
+    "common.city": {
+      "en": "City",
+      "translate_to": "Thai",
+      "translation": "เมือง"
+    },
+    "common.all": {
+      "en": "All",
+      "translate_to": "Thai",
+      "translation": "ทั้งหมด"
+    },
+    "common.none": {
+      "en": "None",
+      "translate_to": "Thai",
+      "translation": "ไม่มี"
+    },
+    "common.select": {
+      "en": "Select",
+      "translate_to": "Thai",
+      "translation": "เลือก"
+    },
+    "common.selectLanguage": {
+      "en": "Select Language",
+      "translate_to": "Thai",
+      "translation": "เลือกภาษา"
+    },
+    "common.selectCountry": {
+      "en": "Select Country",
+      "translate_to": "Thai",
+      "translation": "เลือกประเทศ"
+    },
+    "common.showMore": {
+      "en": "Show More",
+      "translate_to": "Thai",
+      "translation": "แสดงเพิ่มเติม"
+    },
+    "common.showLess": {
+      "en": "Show Less",
+      "translate_to": "Thai",
+      "translation": "แสดงน้อยลง"
+    },
+    "common.required": {
+      "en": "Required",
+      "translate_to": "Thai",
+      "translation": "ที่จำเป็น"
+    },
+    "common.menu": {
+      "en": "Menu",
+      "translate_to": "Thai",
+      "translation": "เมนู"
+    },
+    "common.viewProducts": {
+      "en": "View Products",
+      "translate_to": "Thai",
+      "translation": "ดูสินค้า"
+    },
+    "music.play": {
+      "en": "Play Music",
+      "translate_to": "Thai",
+      "translation": "เล่นดนตรี"
+    },
+    "music.pause": {
+      "en": "Pause Music",
+      "translate_to": "Thai",
+      "translation": "หยุดเพลง"
+    },
+    "music.mute": {
+      "en": "Mute Music",
+      "translate_to": "Thai",
+      "translation": "ปิดเสียงเพลง"
+    },
+    "music.unmute": {
+      "en": "Unmute Music",
+      "translate_to": "Thai",
+      "translation": "เปิดเสียงเพลง"
+    },
+    "worldMap.globalReach": {
+      "en": "Our Global Reach",
+      "translate_to": "Thai",
+      "translation": "ขอบเขตการดำเนินงานทั่วโลกของเรา"
+    },
+    "worldMap.since": {
+      "en": "Since",
+      "translate_to": "Thai",
+      "translation": "เนื่องจาก"
+    },
+    "worldMap.majorMarket": {
+      "en": "Major Market",
+      "translate_to": "Thai",
+      "translation": "ตลาดหลัก"
+    },
+    "worldMap.majorMarkets": {
+      "en": "Major Markets",
+      "translate_to": "Thai",
+      "translation": "ตลาดหลัก"
+    },
+    "worldMap.presence": {
+      "en": "Presence",
+      "translate_to": "Thai",
+      "translation": "การมีอยู่"
+    },
+    "worldMap.countriesServed": {
+      "en": "Countries Served",
+      "translate_to": "Thai",
+      "translation": "ประเทศที่ให้บริการ"
+    },
+    "worldMap.majorMarketsCount": {
+      "en": "Major Markets",
+      "translate_to": "Thai",
+      "translation": "ตลาดหลัก"
+    },
+    "worldMap.productCategoriesCount": {
+      "en": "Product Categories",
+      "translate_to": "Thai",
+      "translation": "หมวดหมู่สินค้า"
+    },
+    "worldMap.establishedYear": {
+      "en": "Established",
+      "translate_to": "Thai",
+      "translation": "ที่จัดตั้งขึ้น"
+    },
+    "territory.title": {
+      "en": "Territory Hierarchy",
+      "translate_to": "Thai",
+      "translation": "ลำดับชั้นของอาณาเขต"
+    },
+    "territory.fullPath": {
+      "en": "Full Path",
+      "translate_to": "Thai",
+      "translation": "เส้นทางเต็ม"
+    },
+    "territory.currentTerritory": {
+      "en": "Current Territory",
+      "translate_to": "Thai",
+      "translation": "อาณาเขตปัจจุบัน"
+    },
+    "territory.noChildren": {
+      "en": "No items",
+      "translate_to": "Thai",
+      "translation": "ไม่มีรายการ"
+    },
+    "territory.tiers.globe": {
+      "en": "Globe",
+      "translate_to": "Thai",
+      "translation": "โลก"
+    },
+    "territory.tiers.continent": {
+      "en": "Continent",
+      "translate_to": "Thai",
+      "translation": "ทวีป"
+    },
+    "territory.tiers.region": {
+      "en": "Region",
+      "translate_to": "Thai",
+      "translation": "ภูมิภาค"
+    },
+    "territory.tiers.country": {
+      "en": "Country",
+      "translate_to": "Thai",
+      "translation": "ประเทศ"
+    },
+    "territory.tiers.city": {
+      "en": "City",
+      "translate_to": "Thai",
+      "translation": "เมือง"
+    },
+    "territory.tiers.district": {
+      "en": "District",
+      "translate_to": "Thai",
+      "translation": "เขต"
+    },
+    "territory.tiers.location": {
+      "en": "Location",
+      "translate_to": "Thai",
+      "translation": "ที่ตั้ง"
+    },
+    "globalWorld.title": {
+      "en": "Harvics Global",
+      "translate_to": "Thai",
+      "translation": "ฮาร์วิคส์ โกลบอล"
+    },
+    "globalWorld.titleShort": {
+      "en": "Global",
+      "translate_to": "Thai",
+      "translation": "ทั่วโลก"
+    },
+    "globalWorld.selectRegion": {
+      "en": "Select Region",
+      "translate_to": "Thai",
+      "translation": "เลือกภูมิภาค"
+    },
+    "globalWorld.form.title": {
+      "en": "Customer Details",
+      "translate_to": "Thai",
+      "translation": "รายละเอียดลูกค้า"
+    },
+    "globalWorld.form.selected": {
+      "en": "Selected",
+      "translate_to": "Thai",
+      "translation": "เลือกแล้ว"
+    },
+    "globalWorld.form.fullName": {
+      "en": "Full Name",
+      "translate_to": "Thai",
+      "translation": "ชื่อเต็ม"
+    },
+    "globalWorld.form.namePlaceholder": {
+      "en": "Enter your full name",
+      "translate_to": "Thai",
+      "translation": "กรุณาป้อนชื่อเต็มของคุณ"
+    },
+    "globalWorld.form.nameRequired": {
+      "en": "Name is required",
+      "translate_to": "Thai",
+      "translation": "ต้องระบุชื่อ"
+    },
+    "globalWorld.form.email": {
+      "en": "Email Address",
+      "translate_to": "Thai",
+      "translation": "ที่อยู่อีเมล"
+    },
+    "globalWorld.form.emailPlaceholder": {
+      "en": "your.email@example.com",
+      "translate_to": "Thai",
+      "translation": "your.email@example.com"
+    },
+    "globalWorld.form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Thai",
+      "translation": "ต้องระบุอีเมล"
+    },
+    "globalWorld.form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Thai",
+      "translation": "โปรดป้อนที่อยู่อีเมลที่ถูกต้อง"
+    },
+    "globalWorld.form.phone": {
+      "en": "Phone Number",
+      "translate_to": "Thai",
+      "translation": "หมายเลขโทรศัพท์"
+    },
+    "globalWorld.form.phonePlaceholder": {
+      "en": "+1 234 567 8900",
+      "translate_to": "Thai",
+      "translation": "+1 234 567 8900"
+    },
+    "globalWorld.form.phoneRequired": {
+      "en": "Phone number is required",
+      "translate_to": "Thai",
+      "translation": "ต้องระบุหมายเลขโทรศัพท์"
+    },
+    "globalWorld.form.address": {
+      "en": "Address",
+      "translate_to": "Thai",
+      "translation": "ที่อยู่"
+    },
+    "globalWorld.form.addressPlaceholder": {
+      "en": "Your address",
+      "translate_to": "Thai",
+      "translation": "ที่อยู่ของคุณ"
+    },
+    "globalWorld.form.addressRequired": {
+      "en": "Address is required",
+      "translate_to": "Thai",
+      "translation": "ต้องระบุที่อยู่"
+    },
+    "globalWorld.form.marketingConsent": {
+      "en": "I agree to receive marketing communications and updates",
+      "translate_to": "Thai",
+      "translation": "ฉันยินยอมรับข่าวสารและข้อมูลอัปเดตทางการตลาด"
+    },
+    "globalWorld.form.submit": {
+      "en": "Submit & Continue",
+      "translate_to": "Thai",
+      "translation": "ส่งและดำเนินการต่อ"
+    },
+    "globalWorld.form.submitting": {
+      "en": "Submitting...",
+      "translate_to": "Thai",
+      "translation": "กำลังส่ง..."
+    },
+    "globalWorld.form.skip": {
+      "en": "Skip & Continue",
+      "translate_to": "Thai",
+      "translation": "ข้ามและดำเนินการต่อ"
+    },
+    "distributorPortal.dashboard.kpi.title": {
+      "en": "Key Performance Indicators",
+      "translate_to": "Thai",
+      "translation": "ตัวชี้วัดประสิทธิภาพหลัก"
+    },
+    "distributorPortal.dashboard.kpi.ordersToday": {
+      "en": "Orders today",
+      "translate_to": "Thai",
+      "translation": "สั่งซื้อวันนี้"
+    },
+    "distributorPortal.dashboard.kpi.ordersTodaySubtitle": {
+      "en": "Submitted via Harvics CRM",
+      "translate_to": "Thai",
+      "translation": "ส่งผ่านระบบ CRM ของ Harvics"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveries": {
+      "en": "Pending deliveries",
+      "translate_to": "Thai",
+      "translation": "การส่งมอบที่รอดำเนินการ"
+    },
+    "distributorPortal.dashboard.kpi.pendingDeliveriesSubtitle": {
+      "en": "Across assigned routes",
+      "translate_to": "Thai",
+      "translation": "ตามเส้นทางที่กำหนดไว้"
+    },
+    "distributorPortal.dashboard.kpi.retailers": {
+      "en": "Retailers",
+      "translate_to": "Thai",
+      "translation": "ผู้ค้าปลีก"
+    },
+    "distributorPortal.dashboard.kpi.retailersSubtitle": {
+      "en": "Active outlets in scope",
+      "translate_to": "Thai",
+      "translation": "ร้านค้าที่ใช้งานอยู่ซึ่งอยู่ในขอบเขต"
+    },
+    "distributorPortal.dashboard.kpi.attendance": {
+      "en": "T & A Score",
+      "translate_to": "Thai",
+      "translation": "คะแนน T & A"
+    },
+    "distributorPortal.dashboard.kpi.attendanceSubtitle": {
+      "en": "Territory coverage",
+      "translate_to": "Thai",
+      "translation": "ขอบเขตการครอบคลุม"
+    },
+    "distributorPortal.dashboard.financial.title": {
+      "en": "Financial & Inventory",
+      "translate_to": "Thai",
+      "translation": "การเงินและสินค้าคงคลัง"
+    },
+    "distributorPortal.dashboard.financial.lowStock": {
+      "en": "Low stock SKUs",
+      "translate_to": "Thai",
+      "translation": "สินค้ามีจำนวนจำกัด"
+    },
+    "distributorPortal.dashboard.financial.lowStockSubtitle": {
+      "en": "Trigger replenishment",
+      "translate_to": "Thai",
+      "translation": "กระตุ้นการเติม"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoices": {
+      "en": "Outstanding invoices",
+      "translate_to": "Thai",
+      "translation": "ใบแจ้งหนี้ค้างชำระ"
+    },
+    "distributorPortal.dashboard.financial.outstandingInvoicesSubtitle": {
+      "en": "Due for collection",
+      "translate_to": "Thai",
+      "translation": "ถึงกำหนดรับสินค้าแล้ว"
+    },
+    "distributorPortal.dashboard.financial.creditLimit": {
+      "en": "Credit limit",
+      "translate_to": "Thai",
+      "translation": "วงเงินเครดิต"
+    },
+    "distributorPortal.dashboard.financial.creditLimitSubtitle": {
+      "en": "Assigned by finance",
+      "translate_to": "Thai",
+      "translation": "มอบหมายโดยฝ่ายการเงิน"
+    },
+    "distributorPortal.dashboard.aiAutomation.status": {
+      "en": "Auto-approval, stock replenishment, and invoice reminders enabled",
+      "translate_to": "Thai",
+      "translation": "เปิดใช้งานการอนุมัติอัตโนมัติ การเติมสต็อก และการแจ้งเตือนใบแจ้งหนี้"
+    },
+    "distributorPortal.dashboard.aiAutomation.autoApproval": {
+      "en": "Auto-Approval",
+      "translate_to": "Thai",
+      "translation": "การอนุมัติตนเอง"
+    },
+    "distributorPortal.dashboard.aiAutomation.stockReplenishment": {
+      "en": "Stock Replenishment",
+      "translate_to": "Thai",
+      "translation": "การเติมสต็อก"
+    },
+    "distributorPortal.dashboard.aiAutomation.invoiceReminders": {
+      "en": "Invoice Reminders",
+      "translate_to": "Thai",
+      "translation": "การแจ้งเตือนการชำระเงิน"
+    },
+    "distributorPortal.dashboard.aiRecommendations.title": {
+      "en": "AI Recommendations",
+      "translate_to": "Thai",
+      "translation": "คำแนะนำจาก AI"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskLevel": {
+      "en": "Risk Level",
+      "translate_to": "Thai",
+      "translation": "ระดับความเสี่ยง"
+    },
+    "distributorPortal.dashboard.aiRecommendations.riskDescription": {
+      "en": "Based on credit utilization and payment history",
+      "translate_to": "Thai",
+      "translation": "พิจารณาจากประวัติการใช้เครดิตและการชำระเงิน"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrder": {
+      "en": "Suggested Order",
+      "translate_to": "Thai",
+      "translation": "ลำดับการสั่งซื้อที่แนะนำ"
+    },
+    "distributorPortal.dashboard.aiRecommendations.suggestedOrderSubtitle": {
+      "en": "AI-recommended SKUs to order",
+      "translate_to": "Thai",
+      "translation": "รหัสสินค้า (SKU) ที่ AI แนะนำให้สั่งซื้อ"
+    },
+    "distributorPortal.dashboard.aiRecommendations.nextAction": {
+      "en": "Next Action",
+      "translate_to": "Thai",
+      "translation": "ขั้นตอนต่อไป"
+    },
+    "distributorPortal.dashboard.actions.title": {
+      "en": "Actions & Guidance",
+      "translate_to": "Thai",
+      "translation": "การดำเนินการและคำแนะนำ"
+    },
+    "distributorPortal.dashboard.actions.complaints": {
+      "en": "Complaints",
+      "translate_to": "Thai",
+      "translation": "การร้องเรียน"
+    },
+    "distributorPortal.dashboard.actions.complaintsSubtitle": {
+      "en": "Retailer issues awaiting action",
+      "translate_to": "Thai",
+      "translation": "ปัญหาของผู้ค้าปลีกที่รอการดำเนินการ"
+    },
+    "distributorPortal.dashboard.actions.playbook": {
+      "en": "Playbook",
+      "translate_to": "Thai",
+      "translation": "สมุดคู่มือ"
+    },
+    "distributorPortal.dashboard.actions.playbookItem1": {
+      "en": "Prioritise pending deliveries before noon.",
+      "translate_to": "Thai",
+      "translation": "ให้ความสำคัญกับการจัดส่งที่ค้างอยู่ก่อนเที่ยงเป็นลำดับแรก"
+    },
+    "distributorPortal.dashboard.actions.playbookItem2": {
+      "en": "Close all outstanding complaints within 48h.",
+      "translate_to": "Thai",
+      "translation": "ดำเนินการปิดข้อร้องเรียนที่ค้างอยู่ทั้งหมดภายใน 48 ชั่วโมง"
+    },
+    "distributorPortal.dashboard.actions.playbookItem3": {
+      "en": "Trigger replenishment for low-stock SKUs (auto-create PO).",
+      "translate_to": "Thai",
+      "translation": "สั่งเติมสินค้าสำหรับ SKU ที่มีสต็อกเหลือน้อย (สร้างใบสั่งซื้ออัตโนมัติ)"
+    },
+    "distributorPortal.dashboard.territory": {
+      "en": "Territory",
+      "translate_to": "Thai",
+      "translation": "อาณาเขต"
+    },
+    "distributorPortal.dashboard.ordersThisMonth": {
+      "en": "Orders This Month",
+      "translate_to": "Thai",
+      "translation": "ยอดสั่งซื้อในเดือนนี้"
+    },
+    "distributorPortal.dashboard.pendingOrders": {
+      "en": "Pending Orders",
+      "translate_to": "Thai",
+      "translation": "คำสั่งซื้อที่รอดำเนินการ"
+    },
+    "distributorPortal.dashboard.deliveredOrders": {
+      "en": "Delivered Orders",
+      "translate_to": "Thai",
+      "translation": "คำสั่งซื้อที่จัดส่งแล้ว"
+    },
+    "distributorPortal.dashboard.territoryInformation": {
+      "en": "Territory Information",
+      "translate_to": "Thai",
+      "translation": "ข้อมูลเกี่ยวกับอาณาเขต"
+    },
+    "distributorPortal.dashboard.country": {
+      "en": "Country",
+      "translate_to": "Thai",
+      "translation": "ประเทศ"
+    },
+    "distributorPortal.dashboard.city": {
+      "en": "City",
+      "translate_to": "Thai",
+      "translation": "เมือง"
+    },
+    "distributorPortal.dashboard.region": {
+      "en": "Region",
+      "translate_to": "Thai",
+      "translation": "ภูมิภาค"
+    },
+    "distributorPortal.dashboard.quickActions": {
+      "en": "Quick Actions",
+      "translate_to": "Thai",
+      "translation": "การดำเนินการด่วน"
+    },
+    "distributorPortal.dashboard.newOrder": {
+      "en": "New Order",
+      "translate_to": "Thai",
+      "translation": "คำสั่งใหม่"
+    },
+    "distributorPortal.dashboard.viewOrders": {
+      "en": "View Orders",
+      "translate_to": "Thai",
+      "translation": "ดูคำสั่งซื้อ"
+    },
+    "distributorPortal.dashboard.viewInvoices": {
+      "en": "View Invoices",
+      "translate_to": "Thai",
+      "translation": "ดูใบแจ้งหนี้"
+    },
+    "distributorPortal.dashboard.profileSettings": {
+      "en": "Profile Settings",
+      "translate_to": "Thai",
+      "translation": "การตั้งค่าโปรไฟล์"
+    },
+    "distributorPortal.dashboard.loading": {
+      "en": "Loading dashboard...",
+      "translate_to": "Thai",
+      "translation": "กำลังโหลดแดชบอร์ด..."
+    },
+    "distributorPortal.dashboard.error": {
+      "en": "Error",
+      "translate_to": "Thai",
+      "translation": "ข้อผิดพลาด"
+    },
+    "distributorPortal.orders.title": {
+      "en": "My Orders",
+      "translate_to": "Thai",
+      "translation": "คำสั่งซื้อของฉัน"
+    },
+    "distributorPortal.orders.orderId": {
+      "en": "Order ID",
+      "translate_to": "Thai",
+      "translation": "รหัสคำสั่งซื้อ"
+    },
+    "distributorPortal.orders.date": {
+      "en": "Date",
+      "translate_to": "Thai",
+      "translation": "วันที่"
+    },
+    "distributorPortal.orders.status": {
+      "en": "Status",
+      "translate_to": "Thai",
+      "translation": "สถานะ"
+    },
+    "distributorPortal.orders.items": {
+      "en": "Items",
+      "translate_to": "Thai",
+      "translation": "รายการ"
+    },
+    "distributorPortal.orders.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Thai",
+      "translation": "จำนวนเงินทั้งหมด"
+    },
+    "distributorPortal.orders.actions": {
+      "en": "Actions",
+      "translate_to": "Thai",
+      "translation": "การกระทำ"
+    },
+    "distributorPortal.orders.viewDetails": {
+      "en": "View Details",
+      "translate_to": "Thai",
+      "translation": "ดูรายละเอียด"
+    },
+    "distributorPortal.orders.filters.status": {
+      "en": "Status",
+      "translate_to": "Thai",
+      "translation": "สถานะ"
+    },
+    "distributorPortal.orders.filters.startDate": {
+      "en": "Start Date",
+      "translate_to": "Thai",
+      "translation": "วันที่เริ่มต้น"
+    },
+    "distributorPortal.orders.filters.endDate": {
+      "en": "End Date",
+      "translate_to": "Thai",
+      "translation": "วันสิ้นสุด"
+    },
+    "distributorPortal.orders.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Thai",
+      "translation": "สถานะทั้งหมด"
+    },
+    "distributorPortal.orders.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Thai",
+      "translation": "ล้างตัวกรอง"
+    },
+    "distributorPortal.orders.statuses.pending": {
+      "en": "Pending",
+      "translate_to": "Thai",
+      "translation": "รอดำเนินการ"
+    },
+    "distributorPortal.orders.statuses.processing": {
+      "en": "Processing",
+      "translate_to": "Thai",
+      "translation": "กำลังประมวลผล"
+    },
+    "distributorPortal.orders.statuses.delivered": {
+      "en": "Delivered",
+      "translate_to": "Thai",
+      "translation": "จัดส่งแล้ว"
+    },
+    "distributorPortal.orders.statuses.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Thai",
+      "translation": "ยกเลิก"
+    },
+    "distributorPortal.orders.noOrders": {
+      "en": "No orders found",
+      "translate_to": "Thai",
+      "translation": "ไม่พบคำสั่งซื้อ"
+    },
+    "distributorPortal.orders.loading": {
+      "en": "Loading orders...",
+      "translate_to": "Thai",
+      "translation": "กำลังโหลดคำสั่งซื้อ..."
+    },
+    "distributorPortal.orders.page": {
+      "en": "Page",
+      "translate_to": "Thai",
+      "translation": "หน้าหนังสือ"
+    },
+    "distributorPortal.orders.of": {
+      "en": "of",
+      "translate_to": "Thai",
+      "translation": "ของ"
+    },
+    "distributorPortal.orders.previous": {
+      "en": "Previous",
+      "translate_to": "Thai",
+      "translation": "ก่อนหน้า"
+    },
+    "distributorPortal.orders.next": {
+      "en": "Next",
+      "translate_to": "Thai",
+      "translation": "ต่อไป"
+    },
+    "distributorPortal.orderDetail.title": {
+      "en": "Order Details",
+      "translate_to": "Thai",
+      "translation": "รายละเอียดการสั่งซื้อ"
+    },
+    "distributorPortal.orderDetail.backToOrders": {
+      "en": "Back to Orders",
+      "translate_to": "Thai",
+      "translation": "กลับไปที่หน้าคำสั่งซื้อ"
+    },
+    "distributorPortal.orderDetail.orderId": {
+      "en": "Order ID",
+      "translate_to": "Thai",
+      "translation": "รหัสคำสั่งซื้อ"
+    },
+    "distributorPortal.orderDetail.status": {
+      "en": "Status",
+      "translate_to": "Thai",
+      "translation": "สถานะ"
+    },
+    "distributorPortal.orderDetail.orderDate": {
+      "en": "Order Date",
+      "translate_to": "Thai",
+      "translation": "วันที่สั่งซื้อ"
+    },
+    "distributorPortal.orderDetail.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Thai",
+      "translation": "วันที่ส่งมอบ"
+    },
+    "distributorPortal.orderDetail.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Thai",
+      "translation": "ที่อยู่จัดส่งสินค้า"
+    },
+    "distributorPortal.orderDetail.notes": {
+      "en": "Notes",
+      "translate_to": "Thai",
+      "translation": "หมายเหตุ"
+    },
+    "distributorPortal.orderDetail.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Thai",
+      "translation": "รายการสั่งซื้อ"
+    },
+    "distributorPortal.orderDetail.product": {
+      "en": "Product",
+      "translate_to": "Thai",
+      "translation": "ผลิตภัณฑ์"
+    },
+    "distributorPortal.orderDetail.sku": {
+      "en": "SKU",
+      "translate_to": "Thai",
+      "translation": "รหัสสินค้า"
+    },
+    "distributorPortal.orderDetail.quantity": {
+      "en": "Quantity",
+      "translate_to": "Thai",
+      "translation": "ปริมาณ"
+    },
+    "distributorPortal.orderDetail.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Thai",
+      "translation": "ราคาต่อหน่วย"
+    },
+    "distributorPortal.orderDetail.total": {
+      "en": "Total",
+      "translate_to": "Thai",
+      "translation": "ทั้งหมด"
+    },
+    "distributorPortal.orderDetail.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Thai",
+      "translation": "จำนวนเงินทั้งหมด"
+    },
+    "distributorPortal.orderDetail.statusTimeline": {
+      "en": "Status Timeline",
+      "translate_to": "Thai",
+      "translation": "ไทม์ไลน์สถานะ"
+    },
+    "distributorPortal.orderDetail.orderNotFound": {
+      "en": "Order not found",
+      "translate_to": "Thai",
+      "translation": "ไม่พบคำสั่งซื้อ"
+    },
+    "distributorPortal.newOrder.title": {
+      "en": "Create New Order",
+      "translate_to": "Thai",
+      "translation": "สร้างคำสั่งซื้อใหม่"
+    },
+    "distributorPortal.newOrder.orderItems": {
+      "en": "Order Items",
+      "translate_to": "Thai",
+      "translation": "รายการสั่งซื้อ"
+    },
+    "distributorPortal.newOrder.addItem": {
+      "en": "Add Item",
+      "translate_to": "Thai",
+      "translation": "เพิ่มรายการ"
+    },
+    "distributorPortal.newOrder.noItems": {
+      "en": "No items added yet. Click \"Add Item\" to start.",
+      "translate_to": "Thai",
+      "translation": "ยังไม่มีการเพิ่มรายการใดๆ คลิก \"เพิ่มรายการ\" เพื่อเริ่มต้น"
+    },
+    "distributorPortal.newOrder.orderDetails": {
+      "en": "Order Details",
+      "translate_to": "Thai",
+      "translation": "รายละเอียดการสั่งซื้อ"
+    },
+    "distributorPortal.newOrder.deliveryDate": {
+      "en": "Delivery Date",
+      "translate_to": "Thai",
+      "translation": "วันที่ส่งมอบ"
+    },
+    "distributorPortal.newOrder.deliveryAddress": {
+      "en": "Delivery Address",
+      "translate_to": "Thai",
+      "translation": "ที่อยู่จัดส่งสินค้า"
+    },
+    "distributorPortal.newOrder.notes": {
+      "en": "Notes",
+      "translate_to": "Thai",
+      "translation": "หมายเหตุ"
+    },
+    "distributorPortal.newOrder.totalAmount": {
+      "en": "Total Amount",
+      "translate_to": "Thai",
+      "translation": "จำนวนเงินทั้งหมด"
+    },
+    "distributorPortal.newOrder.createOrder": {
+      "en": "Create Order",
+      "translate_to": "Thai",
+      "translation": "สร้างคำสั่งซื้อ"
+    },
+    "distributorPortal.newOrder.creatingOrder": {
+      "en": "Creating Order...",
+      "translate_to": "Thai",
+      "translation": "กำลังสร้างคำสั่งซื้อ..."
+    },
+    "distributorPortal.newOrder.cancel": {
+      "en": "Cancel",
+      "translate_to": "Thai",
+      "translation": "ยกเลิก"
+    },
+    "distributorPortal.newOrder.selectProduct": {
+      "en": "Select Product",
+      "translate_to": "Thai",
+      "translation": "เลือกสินค้า"
+    },
+    "distributorPortal.newOrder.product": {
+      "en": "Product",
+      "translate_to": "Thai",
+      "translation": "ผลิตภัณฑ์"
+    },
+    "distributorPortal.newOrder.quantity": {
+      "en": "Quantity",
+      "translate_to": "Thai",
+      "translation": "ปริมาณ"
+    },
+    "distributorPortal.newOrder.unitPrice": {
+      "en": "Unit Price",
+      "translate_to": "Thai",
+      "translation": "ราคาต่อหน่วย"
+    },
+    "distributorPortal.newOrder.remove": {
+      "en": "Remove",
+      "translate_to": "Thai",
+      "translation": "ลบ"
+    },
+    "distributorPortal.newOrder.subtotal": {
+      "en": "Subtotal",
+      "translate_to": "Thai",
+      "translation": "ยอดรวมย่อย"
+    },
+    "distributorPortal.newOrder.orderId": {
+      "en": "Order ID",
+      "translate_to": "Thai",
+      "translation": "รหัสคำสั่งซื้อ"
+    },
+    "distributorPortal.newOrder.validation.itemsRequired": {
+      "en": "At least one order item is required",
+      "translate_to": "Thai",
+      "translation": "ต้องมีรายการสั่งซื้ออย่างน้อยหนึ่งรายการ"
+    },
+    "distributorPortal.newOrder.validation.productRequired": {
+      "en": "Product is required",
+      "translate_to": "Thai",
+      "translation": "จำเป็นต้องใช้ผลิตภัณฑ์"
+    },
+    "distributorPortal.newOrder.validation.quantityRequired": {
+      "en": "Quantity must be greater than 0",
+      "translate_to": "Thai",
+      "translation": "ปริมาณต้องมากกว่า 0"
+    },
+    "distributorPortal.newOrder.validation.priceRequired": {
+      "en": "Unit price must be non-negative",
+      "translate_to": "Thai",
+      "translation": "ราคาต่อหน่วยต้องไม่ติดลบ"
+    },
+    "distributorPortal.newOrder.validation.invalidDate": {
+      "en": "Invalid delivery date format",
+      "translate_to": "Thai",
+      "translation": "รูปแบบวันที่จัดส่งไม่ถูกต้อง"
+    },
+    "distributorPortal.newOrder.validation.datePast": {
+      "en": "Delivery date cannot be in the past",
+      "translate_to": "Thai",
+      "translation": "วันส่งมอบสินค้าต้องไม่ใช่ในอดีต"
+    },
+    "distributorPortal.invoices.title": {
+      "en": "My Invoices",
+      "translate_to": "Thai",
+      "translation": "ใบแจ้งหนี้ของฉัน"
+    },
+    "distributorPortal.invoices.invoiceNumber": {
+      "en": "Invoice Number",
+      "translate_to": "Thai",
+      "translation": "หมายเลขใบแจ้งหนี้"
+    },
+    "distributorPortal.invoices.invoiceDate": {
+      "en": "Invoice Date",
+      "translate_to": "Thai",
+      "translation": "วันที่ออกใบแจ้งหนี้"
+    },
+    "distributorPortal.invoices.dueDate": {
+      "en": "Due Date",
+      "translate_to": "Thai",
+      "translation": "สองเดท"
+    },
+    "distributorPortal.invoices.amount": {
+      "en": "Amount",
+      "translate_to": "Thai",
+      "translation": "จำนวน"
+    },
+    "distributorPortal.invoices.paidAmount": {
+      "en": "Paid Amount",
+      "translate_to": "Thai",
+      "translation": "จำนวนเงินที่ชำระ"
+    },
+    "distributorPortal.invoices.paymentStatus": {
+      "en": "Payment Status",
+      "translate_to": "Thai",
+      "translation": "สถานะการชำระเงิน"
+    },
+    "distributorPortal.invoices.filters.status": {
+      "en": "Payment Status",
+      "translate_to": "Thai",
+      "translation": "สถานะการชำระเงิน"
+    },
+    "distributorPortal.invoices.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Thai",
+      "translation": "สถานะทั้งหมด"
+    },
+    "distributorPortal.invoices.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Thai",
+      "translation": "ล้างตัวกรอง"
+    },
+    "distributorPortal.invoices.statuses.paid": {
+      "en": "Paid",
+      "translate_to": "Thai",
+      "translation": "จ่าย"
+    },
+    "distributorPortal.invoices.statuses.unpaid": {
+      "en": "Unpaid",
+      "translate_to": "Thai",
+      "translation": "ไม่ได้รับค่าจ้าง"
+    },
+    "distributorPortal.invoices.statuses.partial": {
+      "en": "Partial",
+      "translate_to": "Thai",
+      "translation": "บางส่วน"
+    },
+    "distributorPortal.invoices.noInvoices": {
+      "en": "No invoices found",
+      "translate_to": "Thai",
+      "translation": "ไม่พบใบแจ้งหนี้"
+    },
+    "distributorPortal.invoices.loading": {
+      "en": "Loading invoices...",
+      "translate_to": "Thai",
+      "translation": "กำลังโหลดใบแจ้งหนี้..."
+    },
+    "distributorPortal.profile.title": {
+      "en": "My Profile",
+      "translate_to": "Thai",
+      "translation": "โปรไฟล์ของฉัน"
+    },
+    "distributorPortal.profile.accountInformation": {
+      "en": "Account Information",
+      "translate_to": "Thai",
+      "translation": "ข้อมูลบัญชี"
+    },
+    "distributorPortal.profile.distributorId": {
+      "en": "Distributor ID",
+      "translate_to": "Thai",
+      "translation": "รหัสผู้จัดจำหน่าย"
+    },
+    "distributorPortal.profile.territory": {
+      "en": "Territory",
+      "translate_to": "Thai",
+      "translation": "อาณาเขต"
+    },
+    "distributorPortal.profile.country": {
+      "en": "Country",
+      "translate_to": "Thai",
+      "translation": "ประเทศ"
+    },
+    "distributorPortal.profile.city": {
+      "en": "City",
+      "translate_to": "Thai",
+      "translation": "เมือง"
+    },
+    "distributorPortal.profile.accountCreated": {
+      "en": "Account Created",
+      "translate_to": "Thai",
+      "translation": "สร้างบัญชีแล้ว"
+    },
+    "distributorPortal.profile.updateProfile": {
+      "en": "Update Profile",
+      "translate_to": "Thai",
+      "translation": "อัปเดตโปรไฟล์"
+    },
+    "distributorPortal.profile.name": {
+      "en": "Name",
+      "translate_to": "Thai",
+      "translation": "ชื่อ"
+    },
+    "distributorPortal.profile.email": {
+      "en": "Email",
+      "translate_to": "Thai",
+      "translation": "อีเมล"
+    },
+    "distributorPortal.profile.phone": {
+      "en": "Phone",
+      "translate_to": "Thai",
+      "translation": "โทรศัพท์"
+    },
+    "distributorPortal.profile.address": {
+      "en": "Address",
+      "translate_to": "Thai",
+      "translation": "ที่อยู่"
+    },
+    "distributorPortal.profile.language": {
+      "en": "Language",
+      "translate_to": "Thai",
+      "translation": "ภาษา"
+    },
+    "distributorPortal.profile.currency": {
+      "en": "Currency",
+      "translate_to": "Thai",
+      "translation": "สกุลเงิน"
+    },
+    "distributorPortal.profile.saveChanges": {
+      "en": "Save Changes",
+      "translate_to": "Thai",
+      "translation": "บันทึกการเปลี่ยนแปลง"
+    },
+    "distributorPortal.profile.saving": {
+      "en": "Saving...",
+      "translate_to": "Thai",
+      "translation": "ประหยัด..."
+    },
+    "distributorPortal.profile.profileUpdated": {
+      "en": "Profile updated successfully",
+      "translate_to": "Thai",
+      "translation": "อัปเดตข้อมูลโปรไฟล์สำเร็จแล้ว"
+    },
+    "distributorPortal.profile.loading": {
+      "en": "Loading profile...",
+      "translate_to": "Thai",
+      "translation": "กำลังโหลดข้อมูลโปรไฟล์..."
+    },
+    "distributorPortal.profile.validation.invalidEmail": {
+      "en": "Invalid email format",
+      "translate_to": "Thai",
+      "translation": "รูปแบบอีเมลไม่ถูกต้อง"
+    },
+    "distributorPortal.profile.validation.invalidPhone": {
+      "en": "Invalid phone format",
+      "translate_to": "Thai",
+      "translation": "รูปแบบโทรศัพท์ไม่ถูกต้อง"
+    },
+    "distributorPortal.common.error": {
+      "en": "Error",
+      "translate_to": "Thai",
+      "translation": "ข้อผิดพลาด"
+    },
+    "distributorPortal.common.loading": {
+      "en": "Loading...",
+      "translate_to": "Thai",
+      "translation": "กำลังโหลด..."
+    },
+    "distributorPortal.common.save": {
+      "en": "Save",
+      "translate_to": "Thai",
+      "translation": "บันทึก"
+    },
+    "distributorPortal.common.cancel": {
+      "en": "Cancel",
+      "translate_to": "Thai",
+      "translation": "ยกเลิก"
+    },
+    "distributorPortal.common.back": {
+      "en": "Back",
+      "translate_to": "Thai",
+      "translation": "กลับ"
+    },
+    "distributorPortal.common.submit": {
+      "en": "Submit",
+      "translate_to": "Thai",
+      "translation": "ส่ง"
+    },
+    "distributorPortal.common.delete": {
+      "en": "Delete",
+      "translate_to": "Thai",
+      "translation": "ลบ"
+    },
+    "distributorPortal.common.edit": {
+      "en": "Edit",
+      "translate_to": "Thai",
+      "translation": "แก้ไข"
+    },
+    "distributorPortal.common.view": {
+      "en": "View",
+      "translate_to": "Thai",
+      "translation": "ดู"
+    },
+    "distributorPortal.common.search": {
+      "en": "Search",
+      "translate_to": "Thai",
+      "translation": "ค้นหา"
+    },
+    "distributorPortal.common.filter": {
+      "en": "Filter",
+      "translate_to": "Thai",
+      "translation": "กรอง"
+    },
+    "distributorPortal.common.clear": {
+      "en": "Clear",
+      "translate_to": "Thai",
+      "translation": "ชัดเจน"
+    },
+    "distributorPortal.common.apply": {
+      "en": "Apply",
+      "translate_to": "Thai",
+      "translation": "นำมาใช้"
+    },
+    "distributorPortal.common.close": {
+      "en": "Close",
+      "translate_to": "Thai",
+      "translation": "ปิด"
+    },
+    "distributorPortal.common.confirm": {
+      "en": "Confirm",
+      "translate_to": "Thai",
+      "translation": "ยืนยัน"
+    },
+    "distributorPortal.common.yes": {
+      "en": "Yes",
+      "translate_to": "Thai",
+      "translation": "ใช่"
+    },
+    "distributorPortal.common.no": {
+      "en": "No",
+      "translate_to": "Thai",
+      "translation": "เลขที่"
+    },
+    "legal.title": {
+      "en": "Legal Operating System",
+      "translate_to": "Thai",
+      "translation": "ระบบปฏิบัติการทางกฎหมาย"
+    },
+    "legal.sidebarTitle": {
+      "en": "Legal OS",
+      "translate_to": "Thai",
+      "translation": "ระบบปฏิบัติการทางกฎหมาย"
+    },
+    "legal.accessDenied": {
+      "en": "Access Denied",
+      "translate_to": "Thai",
+      "translation": "การเข้าถึงถูกปฏิเสธ"
+    },
+    "legal.accessDeniedMessage": {
+      "en": "You don't have permission to access the Legal OS module.",
+      "translate_to": "Thai",
+      "translation": "คุณไม่มีสิทธิ์เข้าถึงโมดูลระบบปฏิบัติการด้านกฎหมาย"
+    },
+    "legal.dashboard": {
+      "en": "Dashboard",
+      "translate_to": "Thai",
+      "translation": "แดชบอร์ด"
+    },
+    "legal.contracts": {
+      "en": "Contracts",
+      "translate_to": "Thai",
+      "translation": "สัญญา"
+    },
+    "legal.certificates": {
+      "en": "Certificates",
+      "translate_to": "Thai",
+      "translation": "ใบรับรอง"
+    },
+    "legal.compliance": {
+      "en": "Compliance",
+      "translate_to": "Thai",
+      "translation": "การปฏิบัติตามกฎระเบียบ"
+    },
+    "legal.dashboardPage.title": {
+      "en": "Legal Dashboard",
+      "translate_to": "Thai",
+      "translation": "แดชบอร์ดด้านกฎหมาย"
+    },
+    "legal.dashboardPage.description": {
+      "en": "Overview of legal operations and compliance status",
+      "translate_to": "Thai",
+      "translation": "ภาพรวมการดำเนินงานด้านกฎหมายและสถานะการปฏิบัติตามกฎหมาย"
+    },
+    "legal.dashboardPage.activeTrademarks": {
+      "en": "Active Trademarks",
+      "translate_to": "Thai",
+      "translation": "เครื่องหมายการค้าที่ยังใช้งานอยู่"
+    },
+    "legal.dashboardPage.activeContracts": {
+      "en": "Active Contracts",
+      "translate_to": "Thai",
+      "translation": "สัญญาที่ใช้งานอยู่"
+    },
+    "legal.dashboardPage.complianceStatus": {
+      "en": "Compliance Status",
+      "translate_to": "Thai",
+      "translation": "สถานะการปฏิบัติตามข้อกำหนด"
+    },
+    "legal.trademarks.title": {
+      "en": "Trademarks",
+      "translate_to": "Thai",
+      "translation": "เครื่องหมายการค้า"
+    },
+    "legal.trademarks.description": {
+      "en": "Manage trademark registrations and applications",
+      "translate_to": "Thai",
+      "translation": "จัดการการจดทะเบียนและการยื่นขอจดทะเบียนเครื่องหมายการค้า"
+    },
+    "legal.trademarks.addNew": {
+      "en": "Add New Trademark",
+      "translate_to": "Thai",
+      "translation": "เพิ่มเครื่องหมายการค้าใหม่"
+    },
+    "legal.trademarks.filters.country": {
+      "en": "Country",
+      "translate_to": "Thai",
+      "translation": "ประเทศ"
+    },
+    "legal.trademarks.filters.status": {
+      "en": "Status",
+      "translate_to": "Thai",
+      "translation": "สถานะ"
+    },
+    "legal.trademarks.filters.allCountries": {
+      "en": "All Countries",
+      "translate_to": "Thai",
+      "translation": "ทุกประเทศ"
+    },
+    "legal.trademarks.filters.allStatuses": {
+      "en": "All Statuses",
+      "translate_to": "Thai",
+      "translation": "สถานะทั้งหมด"
+    },
+    "legal.trademarks.filters.clearFilters": {
+      "en": "Clear Filters",
+      "translate_to": "Thai",
+      "translation": "ล้างตัวกรอง"
+    },
+    "legal.trademarks.table.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Thai",
+      "translation": "ชื่อแบรนด์"
+    },
+    "legal.trademarks.table.class": {
+      "en": "Class",
+      "translate_to": "Thai",
+      "translation": "ระดับ"
+    },
+    "legal.trademarks.table.country": {
+      "en": "Country",
+      "translate_to": "Thai",
+      "translation": "ประเทศ"
+    },
+    "legal.trademarks.table.applicationNo": {
+      "en": "Application No",
+      "translate_to": "Thai",
+      "translation": "หมายเลขใบสมัคร"
+    },
+    "legal.trademarks.table.status": {
+      "en": "Status",
+      "translate_to": "Thai",
+      "translation": "สถานะ"
+    },
+    "legal.trademarks.table.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Thai",
+      "translation": "วันหมดอายุ"
+    },
+    "legal.trademarks.table.actions": {
+      "en": "Actions",
+      "translate_to": "Thai",
+      "translation": "การกระทำ"
+    },
+    "legal.trademarks.modal.edit": {
+      "en": "Edit Trademark",
+      "translate_to": "Thai",
+      "translation": "แก้ไขเครื่องหมายการค้า"
+    },
+    "legal.trademarks.modal.add": {
+      "en": "Add New Trademark",
+      "translate_to": "Thai",
+      "translation": "เพิ่มเครื่องหมายการค้าใหม่"
+    },
+    "legal.trademarks.modal.view": {
+      "en": "View Trademark",
+      "translate_to": "Thai",
+      "translation": "ดูเครื่องหมายการค้า"
+    },
+    "legal.trademarks.form.brandName": {
+      "en": "Brand Name",
+      "translate_to": "Thai",
+      "translation": "ชื่อแบรนด์"
+    },
+    "legal.trademarks.form.classNumber": {
+      "en": "Class Number",
+      "translate_to": "Thai",
+      "translation": "หมายเลขชั้นเรียน"
+    },
+    "legal.trademarks.form.country": {
+      "en": "Country",
+      "translate_to": "Thai",
+      "translation": "ประเทศ"
+    },
+    "legal.trademarks.form.applicationNo": {
+      "en": "Application Number",
+      "translate_to": "Thai",
+      "translation": "หมายเลขใบสมัคร"
+    },
+    "legal.trademarks.form.status": {
+      "en": "Status",
+      "translate_to": "Thai",
+      "translation": "สถานะ"
+    },
+    "legal.trademarks.form.expiryDate": {
+      "en": "Expiry Date",
+      "translate_to": "Thai",
+      "translation": "วันหมดอายุ"
+    },
+    "legal.trademarks.form.documents": {
+      "en": "Documents",
+      "translate_to": "Thai",
+      "translation": "เอกสาร"
+    },
+    "legal.trademarks.form.noDocuments": {
+      "en": "No documents attached",
+      "translate_to": "Thai",
+      "translation": "ไม่มีเอกสารแนบ"
+    },
+    "legal.trademarks.form.addDocument": {
+      "en": "Add Document",
+      "translate_to": "Thai",
+      "translation": "เพิ่มเอกสาร"
+    },
+    "legal.trademarks.form.remove": {
+      "en": "Remove",
+      "translate_to": "Thai",
+      "translation": "ลบ"
+    },
+    "legal.trademarks.errors.loadFailed": {
+      "en": "Failed to load trademarks",
+      "translate_to": "Thai",
+      "translation": "ไม่สามารถโหลดเครื่องหมายการค้าได้"
+    },
+    "legal.trademarks.errors.saveFailed": {
+      "en": "Failed to save trademark. Please try again.",
+      "translate_to": "Thai",
+      "translation": "ไม่สามารถบันทึกเครื่องหมายการค้าได้ โปรดลองอีกครั้ง"
+    },
+    "legal.legalCases.title": {
+      "en": "Legal Cases",
+      "translate_to": "Thai",
+      "translation": "คดีความทางกฎหมาย"
+    },
+    "legal.legalCases.description": {
+      "en": "Manage legal cases and track their status",
+      "translate_to": "Thai",
+      "translation": "จัดการคดีความและติดตามสถานะของคดี"
+    },
+    "legal.legalCases.addNew": {
+      "en": "New Case",
+      "translate_to": "Thai",
+      "translation": "เคสใหม่"
+    },
+    "legal.legalCases.form.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Thai",
+      "translation": "ชื่อคดี"
+    },
+    "legal.legalCases.form.caseType": {
+      "en": "Case Type",
+      "translate_to": "Thai",
+      "translation": "ประเภทเคส"
+    },
+    "legal.legalCases.form.country": {
+      "en": "Country",
+      "translate_to": "Thai",
+      "translation": "ประเทศ"
+    },
+    "legal.legalCases.form.description": {
+      "en": "Description",
+      "translate_to": "Thai",
+      "translation": "คำอธิบาย"
+    },
+    "legal.legalCases.form.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Thai",
+      "translation": "มอบหมายให้"
+    },
+    "legal.legalCases.form.status": {
+      "en": "Status",
+      "translate_to": "Thai",
+      "translation": "สถานะ"
+    },
+    "legal.legalCases.form.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Thai",
+      "translation": "วันนัดพิจารณาคดี"
+    },
+    "legal.legalCases.table.caseTitle": {
+      "en": "Case Title",
+      "translate_to": "Thai",
+      "translation": "ชื่อคดี"
+    },
+    "legal.legalCases.table.type": {
+      "en": "Type",
+      "translate_to": "Thai",
+      "translation": "พิมพ์"
+    },
+    "legal.legalCases.table.country": {
+      "en": "Country",
+      "translate_to": "Thai",
+      "translation": "ประเทศ"
+    },
+    "legal.legalCases.table.assignedTo": {
+      "en": "Assigned To",
+      "translate_to": "Thai",
+      "translation": "มอบหมายให้"
+    },
+    "legal.legalCases.table.status": {
+      "en": "Status",
+      "translate_to": "Thai",
+      "translation": "สถานะ"
+    },
+    "legal.legalCases.table.hearingDate": {
+      "en": "Hearing Date",
+      "translate_to": "Thai",
+      "translation": "วันนัดพิจารณาคดี"
+    },
+    "legal.legalCases.table.actions": {
+      "en": "Actions",
+      "translate_to": "Thai",
+      "translation": "การกระทำ"
+    },
+    "legal.legalCases.status.open": {
+      "en": "Open",
+      "translate_to": "Thai",
+      "translation": "เปิด"
+    },
+    "legal.legalCases.status.inProgress": {
+      "en": "In Progress",
+      "translate_to": "Thai",
+      "translation": "กำลังดำเนินการ"
+    },
+    "legal.legalCases.status.closed": {
+      "en": "Closed",
+      "translate_to": "Thai",
+      "translation": "ปิด"
+    },
+    "legal.legalCases.status.cancelled": {
+      "en": "Cancelled",
+      "translate_to": "Thai",
+      "translation": "ยกเลิก"
+    },
+    "gps.fleetMap.title": {
+      "en": "Fleet Map View",
+      "translate_to": "Thai",
+      "translation": "ดูแผนที่กองเรือ"
+    },
+    "gps.fleetMap.description": {
+      "en": "Real-time tracking of sales officers and delivery vehicles",
+      "translate_to": "Thai",
+      "translation": "การติดตามตำแหน่งพนักงานขายและรถส่งสินค้าแบบเรียลไทม์"
+    },
+    "gps.fleetMap.activeEmployees": {
+      "en": "Active Employees",
+      "translate_to": "Thai",
+      "translation": "พนักงานที่ปฏิบัติงาน"
+    },
+    "gps.fleetMap.noEmployees": {
+      "en": "No active employees",
+      "translate_to": "Thai",
+      "translation": "ไม่มีพนักงานที่ปฏิบัติงานอยู่"
+    },
+    "gps.fleetMap.loading": {
+      "en": "Loading...",
+      "translate_to": "Thai",
+      "translation": "กำลังโหลด..."
+    },
+    "gps.routeReplay.title": {
+      "en": "Route Replay",
+      "translate_to": "Thai",
+      "translation": "เล่นเส้นทางซ้ำ"
+    },
+    "gps.routeReplay.employee": {
+      "en": "Employee",
+      "translate_to": "Thai",
+      "translation": "พนักงาน"
+    },
+    "gps.routeReplay.speed": {
+      "en": "Speed",
+      "translate_to": "Thai",
+      "translation": "ความเร็ว"
+    },
+    "gps.routeReplay.reset": {
+      "en": "Reset",
+      "translate_to": "Thai",
+      "translation": "รีเซ็ต"
+    },
+    "gps.routeReplay.play": {
+      "en": "Play",
+      "translate_to": "Thai",
+      "translation": "เล่น"
+    },
+    "gps.routeReplay.pause": {
+      "en": "Pause",
+      "translate_to": "Thai",
+      "translation": "หยุดชั่วคราว"
+    },
+    "gps.routeReplay.points": {
+      "en": "points",
+      "translate_to": "Thai",
+      "translation": "คะแนน"
+    },
+    "gps.routeReplay.noRoute": {
+      "en": "No route data available",
+      "translate_to": "Thai",
+      "translation": "ไม่มีข้อมูลเส้นทาง"
+    },
+    "gps.routeReplay.loading": {
+      "en": "Loading route...",
+      "translate_to": "Thai",
+      "translation": "กำลังโหลดเส้นทาง..."
+    },
+    "competitor.products.title": {
+      "en": "Competitor Products",
+      "translate_to": "Thai",
+      "translation": "ผลิตภัณฑ์ของคู่แข่ง"
+    },
+    "competitor.products.description": {
+      "en": "Track competitor product information",
+      "translate_to": "Thai",
+      "translation": "ติดตามข้อมูลผลิตภัณฑ์ของคู่แข่ง"
+    },
+    "competitor.products.addProduct": {
+      "en": "Add Product",
+      "translate_to": "Thai",
+      "translation": "เพิ่มสินค้า"
+    },
+    "competitor.products.formTitle": {
+      "en": "Add Competitor Product",
+      "translate_to": "Thai",
+      "translation": "เพิ่มผลิตภัณฑ์ของคู่แข่ง"
+    },
+    "competitor.products.form.brand": {
+      "en": "Brand",
+      "translate_to": "Thai",
+      "translation": "ยี่ห้อ"
+    },
+    "competitor.products.form.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Thai",
+      "translation": "ชื่อ SKU"
+    },
+    "competitor.products.form.category": {
+      "en": "Category",
+      "translate_to": "Thai",
+      "translation": "หมวดหมู่"
+    },
+    "competitor.products.form.size": {
+      "en": "Size",
+      "translate_to": "Thai",
+      "translation": "ขนาด"
+    },
+    "competitor.products.form.price": {
+      "en": "Price",
+      "translate_to": "Thai",
+      "translation": "ราคา"
+    },
+    "competitor.products.form.currency": {
+      "en": "Currency",
+      "translate_to": "Thai",
+      "translation": "สกุลเงิน"
+    },
+    "competitor.products.form.country": {
+      "en": "Country",
+      "translate_to": "Thai",
+      "translation": "ประเทศ"
+    },
+    "competitor.products.table.brand": {
+      "en": "Brand",
+      "translate_to": "Thai",
+      "translation": "ยี่ห้อ"
+    },
+    "competitor.products.table.skuName": {
+      "en": "SKU Name",
+      "translate_to": "Thai",
+      "translation": "ชื่อ SKU"
+    },
+    "competitor.products.table.category": {
+      "en": "Category",
+      "translate_to": "Thai",
+      "translation": "หมวดหมู่"
+    },
+    "competitor.products.table.size": {
+      "en": "Size",
+      "translate_to": "Thai",
+      "translation": "ขนาด"
+    },
+    "competitor.products.table.price": {
+      "en": "Price",
+      "translate_to": "Thai",
+      "translation": "ราคา"
+    },
+    "competitor.products.table.country": {
+      "en": "Country",
+      "translate_to": "Thai",
+      "translation": "ประเทศ"
+    },
+    "competitor.products.table.dateAdded": {
+      "en": "Date Added",
+      "translate_to": "Thai",
+      "translation": "วันที่เพิ่ม"
+    },
+    "competitor.products.errors.loadFailed": {
+      "en": "Failed to load products",
+      "translate_to": "Thai",
+      "translation": "ไม่สามารถโหลดสินค้าได้"
+    },
+    "competitor.products.errors.createFailed": {
+      "en": "Failed to create product. Please try again.",
+      "translate_to": "Thai",
+      "translation": "ไม่สามารถสร้างผลิตภัณฑ์ได้ โปรดลองอีกครั้ง"
+    },
+    "competitor.products.noProducts": {
+      "en": "No competitor products found",
+      "translate_to": "Thai",
+      "translation": "ไม่พบผลิตภัณฑ์คู่แข่ง"
+    },
+    "competitor.products.loading": {
+      "en": "Loading products...",
+      "translate_to": "Thai",
+      "translation": "กำลังโหลดสินค้า..."
+    },
+    "competitor.dashboard.title": {
+      "en": "Competitor Dashboard",
+      "translate_to": "Thai",
+      "translation": "แดชบอร์ดคู่แข่ง"
+    },
+    "competitor.dashboard.description": {
+      "en": "Analytics and insights on competitor products",
+      "translate_to": "Thai",
+      "translation": "การวิเคราะห์และข้อมูลเชิงลึกเกี่ยวกับผลิตภัณฑ์ของคู่แข่ง"
+    },
+    "competitor.dashboard.totalProducts": {
+      "en": "Total Products",
+      "translate_to": "Thai",
+      "translation": "ผลิตภัณฑ์ทั้งหมด"
+    },
+    "competitor.dashboard.brandsTracked": {
+      "en": "Brands Tracked",
+      "translate_to": "Thai",
+      "translation": "แบรนด์ที่ติดตาม"
+    },
+    "competitor.dashboard.countries": {
+      "en": "Countries",
+      "translate_to": "Thai",
+      "translation": "ประเทศ"
+    },
+    "competitor.dashboard.categories": {
+      "en": "Categories",
+      "translate_to": "Thai",
+      "translation": "หมวดหมู่"
+    },
+    "competitor.dashboard.byBrand": {
+      "en": "Products by Brand",
+      "translate_to": "Thai",
+      "translation": "สินค้าตามแบรนด์"
+    },
+    "competitor.dashboard.byCountry": {
+      "en": "Products by Country",
+      "translate_to": "Thai",
+      "translation": "สินค้าแยกตามประเทศ"
+    },
+    "competitor.dashboard.byCategory": {
+      "en": "Products by Category",
+      "translate_to": "Thai",
+      "translation": "สินค้าแบ่งตามหมวดหมู่"
+    },
+    "competitor.dashboard.loading": {
+      "en": "Loading statistics...",
+      "translate_to": "Thai",
+      "translation": "กำลังโหลดสถิติ..."
+    },
+    "competitor.dashboard.noStats": {
+      "en": "No statistics available",
+      "translate_to": "Thai",
+      "translation": "ไม่มีสถิติให้ดู"
+    },
+    "tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Thai",
+      "translation": "ภาพรวม"
+    },
+    "tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Thai",
+      "translation": "คำสั่งซื้อ"
+    },
+    "tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Thai",
+      "translation": "รายการสิ่งของ"
+    },
+    "tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Thai",
+      "translation": "โลจิสติกส์"
+    },
+    "tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Thai",
+      "translation": "การเงิน"
+    },
+    "tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Thai",
+      "translation": "ระบบ CRM"
+    },
+    "tabs.hr": {
+      "en": "HR",
+      "translate_to": "Thai",
+      "translation": "ฝ่ายทรัพยากรบุคคล"
+    },
+    "tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Thai",
+      "translation": "ผู้บริหาร"
+    },
+    "tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Thai",
+      "translation": "นักลงทุน"
+    },
+    "tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Thai",
+      "translation": "กฎหมาย/ทรัพย์สินทางปัญญา"
+    },
+    "tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Thai",
+      "translation": "คู่แข่ง"
+    },
+    "tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Thai",
+      "translation": "นำเข้า/ส่งออก"
+    },
+    "tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Thai",
+      "translation": "การติดตามด้วย GPS"
+    },
+    "tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Thai",
+      "translation": "การแปลเป็นภาษาท้องถิ่น"
+    },
+    "tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Thai",
+      "translation": "เวิร์กโฟลว์"
+    },
+    "tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Thai",
+      "translation": "ผู้ดูแลระบบ"
+    },
+    "crm.domain.title": {
+      "en": "CRM OS",
+      "translate_to": "Thai",
+      "translation": "CRM OS"
+    },
+    "crm.domain.customer360.title": {
+      "en": "Customer 360",
+      "translate_to": "Thai",
+      "translation": "ลูกค้า 360 องศา"
+    },
+    "crm.domain.customer360.description": {
+      "en": "Complete customer profiles, interaction history, and relationship management",
+      "translate_to": "Thai",
+      "translation": "ข้อมูลลูกค้าที่สมบูรณ์ ประวัติการติดต่อ และการจัดการความสัมพันธ์"
+    },
+    "crm.domain.campaigns.title": {
+      "en": "Digital Campaigns",
+      "translate_to": "Thai",
+      "translation": "แคมเปญดิจิทัล"
+    },
+    "crm.domain.campaigns.description": {
+      "en": "Multi-channel marketing campaigns (IG, FB, TikTok, WhatsApp)",
+      "translate_to": "Thai",
+      "translation": "แคมเปญการตลาดแบบหลายช่องทาง (IG, FB, TikTok, WhatsApp)"
+    },
+    "crm.domain.leads.title": {
+      "en": "Leads & Opportunities",
+      "translate_to": "Thai",
+      "translation": "โอกาสและช่องทางใหม่ๆ"
+    },
+    "crm.domain.leads.description": {
+      "en": "Lead management, qualification, and opportunity pipeline",
+      "translate_to": "Thai",
+      "translation": "การบริหารจัดการลูกค้าเป้าหมาย การคัดกรอง และการสร้างโอกาสทางธุรกิจ"
+    },
+    "crm.domain.support.title": {
+      "en": "Customer Support",
+      "translate_to": "Thai",
+      "translation": "ฝ่ายบริการลูกค้า"
+    },
+    "crm.domain.support.description": {
+      "en": "Ticket management, customer service, and issue resolution",
+      "translate_to": "Thai",
+      "translation": "การจัดการตั๋ว การบริการลูกค้า และการแก้ไขปัญหา"
+    },
+    "crm.domain.loyalty.title": {
+      "en": "Loyalty Programs",
+      "translate_to": "Thai",
+      "translation": "โปรแกรมสะสมแต้ม"
+    },
+    "crm.domain.loyalty.description": {
+      "en": "Retailer loyalty, gamification, and rewards management",
+      "translate_to": "Thai",
+      "translation": "การจัดการความภักดีของลูกค้าค้าปลีก การใช้กลไกเกม และระบบรางวัล"
+    },
+    "crm.customerList.title": {
+      "en": "Customer 360",
+      "translate_to": "Thai",
+      "translation": "ลูกค้า 360"
+    },
+    "crm.customerList.newCustomer": {
+      "en": "New Customer",
+      "translate_to": "Thai",
+      "translation": "ลูกค้าใหม่"
+    },
+    "crm.customerList.totalCustomers": {
+      "en": "Total Customers",
+      "translate_to": "Thai",
+      "translation": "ลูกค้าทั้งหมด"
+    },
+    "crm.customerList.active": {
+      "en": "Active",
+      "translate_to": "Thai",
+      "translation": "คล่องแคล่ว"
+    },
+    "crm.customerList.new": {
+      "en": "New",
+      "translate_to": "Thai",
+      "translation": "ใหม่"
+    },
+    "crm.customerList.satisfaction": {
+      "en": "Satisfaction",
+      "translate_to": "Thai",
+      "translation": "ความพึงพอใจ"
+    },
+    "crm.customerList.customerManagement": {
+      "en": "Customer Management",
+      "translate_to": "Thai",
+      "translation": "การจัดการลูกค้า"
+    },
+    "crm.customerList.customerManagementDescription": {
+      "en": "View and manage your customer relationships, interactions, and campaigns.",
+      "translate_to": "Thai",
+      "translation": "ดูและจัดการความสัมพันธ์กับลูกค้า การโต้ตอบ และแคมเปญต่างๆ ของคุณ"
+    },
+    "crm.customerList.loading": {
+      "en": "Loading...",
+      "translate_to": "Thai",
+      "translation": "กำลังโหลด..."
+    },
+    "crm.customerList.error": {
+      "en": "Error loading CRM data",
+      "translate_to": "Thai",
+      "translation": "เกิดข้อผิดพลาดในการโหลดข้อมูล CRM"
+    },
+    "crm.tabs.overview": {
+      "en": "Overview",
+      "translate_to": "Thai",
+      "translation": "ภาพรวม"
+    },
+    "crm.tabs.orders": {
+      "en": "Orders",
+      "translate_to": "Thai",
+      "translation": "คำสั่งซื้อ"
+    },
+    "crm.tabs.inventory": {
+      "en": "Inventory",
+      "translate_to": "Thai",
+      "translation": "รายการสิ่งของ"
+    },
+    "crm.tabs.logistics": {
+      "en": "Logistics",
+      "translate_to": "Thai",
+      "translation": "โลจิสติกส์"
+    },
+    "crm.tabs.finance": {
+      "en": "Finance",
+      "translate_to": "Thai",
+      "translation": "การเงิน"
+    },
+    "crm.tabs.crm": {
+      "en": "CRM",
+      "translate_to": "Thai",
+      "translation": "ระบบ CRM"
+    },
+    "crm.tabs.hr": {
+      "en": "HR",
+      "translate_to": "Thai",
+      "translation": "ฝ่ายทรัพยากรบุคคล"
+    },
+    "crm.tabs.executive": {
+      "en": "Executive",
+      "translate_to": "Thai",
+      "translation": "ผู้บริหาร"
+    },
+    "crm.tabs.investor": {
+      "en": "Investor",
+      "translate_to": "Thai",
+      "translation": "นักลงทุน"
+    },
+    "crm.tabs.legal-ipr": {
+      "en": "Legal/IPR",
+      "translate_to": "Thai",
+      "translation": "กฎหมาย/ทรัพย์สินทางปัญญา"
+    },
+    "crm.tabs.competitor": {
+      "en": "Competitor",
+      "translate_to": "Thai",
+      "translation": "คู่แข่ง"
+    },
+    "crm.tabs.import-export": {
+      "en": "Import/Export",
+      "translate_to": "Thai",
+      "translation": "นำเข้า/ส่งออก"
+    },
+    "crm.tabs.gps-tracking": {
+      "en": "GPS Tracking",
+      "translate_to": "Thai",
+      "translation": "การติดตามด้วย GPS"
+    },
+    "crm.tabs.localization": {
+      "en": "Localization",
+      "translate_to": "Thai",
+      "translation": "การแปลเป็นภาษาท้องถิ่น"
+    },
+    "crm.tabs.workflows": {
+      "en": "Workflows",
+      "translate_to": "Thai",
+      "translation": "เวิร์กโฟลว์"
+    },
+    "crm.tabs.admin": {
+      "en": "Admin",
+      "translate_to": "Thai",
+      "translation": "ผู้ดูแลระบบ"
+    },
+    "crm.kpis.customers": {
+      "en": "Customers",
+      "translate_to": "Thai",
+      "translation": "ลูกค้า"
+    },
+    "crm.kpis.employees": {
+      "en": "Employees",
+      "translate_to": "Thai",
+      "translation": "พนักงาน"
+    },
+    "crm.kpis.profit": {
+      "en": "Profit",
+      "translate_to": "Thai",
+      "translation": "กำไร"
+    },
+    "supplierPortal.dashboard.loading": {
+      "en": "Loading supplier cockpit…",
+      "translate_to": "Thai",
+      "translation": "กำลังโหลดหน้าจอแสดงผลของซัพพลายเออร์…"
+    },
+    "supplierPortal.dashboard.purchaseOrders": {
+      "en": "Purchase orders",
+      "translate_to": "Thai",
+      "translation": "ใบสั่งซื้อ"
+    },
+    "supplierPortal.dashboard.purchaseOrdersSubtitle": {
+      "en": "Raised by Harvics",
+      "translate_to": "Thai",
+      "translation": "เลี้ยงดูโดย Harvics"
+    },
+    "supplierPortal.dashboard.shipments": {
+      "en": "Shipments / GRN",
+      "translate_to": "Thai",
+      "translation": "การจัดส่งสินค้า / GRN"
+    },
+    "supplierPortal.dashboard.shipmentsSubtitle": {
+      "en": "Accepted this week",
+      "translate_to": "Thai",
+      "translation": "ได้รับการยอมรับในสัปดาห์นี้"
+    },
+    "supplierPortal.dashboard.invoices": {
+      "en": "Invoices created",
+      "translate_to": "Thai",
+      "translation": "สร้างใบแจ้งหนี้แล้ว"
+    },
+    "supplierPortal.dashboard.invoicesSubtitle": {
+      "en": "Awaiting payment",
+      "translate_to": "Thai",
+      "translation": "รอการชำระเงิน"
+    },
+    "supplierPortal.dashboard.paymentsPending": {
+      "en": "Payments pending",
+      "translate_to": "Thai",
+      "translation": "การชำระเงินที่รอดำเนินการ"
+    },
+    "supplierPortal.dashboard.paymentsPendingSubtitle": {
+      "en": "Scheduled for release",
+      "translate_to": "Thai",
+      "translation": "กำหนดวางจำหน่าย"
+    },
+    "supplierPortal.dashboard.qualityComplaints": {
+      "en": "Quality / complaints",
+      "translate_to": "Thai",
+      "translation": "คุณภาพ / ข้อร้องเรียน"
+    },
+    "supplierPortal.dashboard.qualityComplaintsSubtitle": {
+      "en": "Open tickets",
+      "translate_to": "Thai",
+      "translation": "ตั๋วเปิด"
+    },
+    "supplierPortal.dashboard.forecast": {
+      "en": "Forecast (next 4 weeks)",
+      "translate_to": "Thai",
+      "translation": "พยากรณ์อากาศ (4 สัปดาห์ข้างหน้า)"
+    },
+    "supplierPortal.dashboard.forecastSubtitle": {
+      "en": "AI placeholder",
+      "translate_to": "Thai",
+      "translation": "ตัวแทน AI"
+    },
+    "supplierPortal.dashboard.supplierActions": {
+      "en": "Supplier actions",
+      "translate_to": "Thai",
+      "translation": "การดำเนินการของซัพพลายเออร์"
+    },
+    "supplierPortal.dashboard.action1": {
+      "en": "Confirm upcoming shipments and update GRN schedule.",
+      "translate_to": "Thai",
+      "translation": "ยืนยันการจัดส่งสินค้าที่จะเกิดขึ้นและอัปเดตตารางการรับสินค้า (GRN)"
+    },
+    "supplierPortal.dashboard.action2": {
+      "en": "Review outstanding invoices and share payment advice.",
+      "translate_to": "Thai",
+      "translation": "ตรวจสอบใบแจ้งหนี้ที่ค้างชำระและแจ้งรายละเอียดการชำระเงิน"
+    },
+    "supplierPortal.dashboard.action3": {
+      "en": "Resolve open quality complaints with QA evidence.",
+      "translate_to": "Thai",
+      "translation": "แก้ไขข้อร้องเรียนด้านคุณภาพที่ยังค้างอยู่โดยใช้หลักฐานจากฝ่ายควบคุมคุณภาพ"
+    },
+    "form.username": {
+      "en": "Username",
+      "translate_to": "Thai",
+      "translation": "ชื่อผู้ใช้"
+    },
+    "form.password": {
+      "en": "Password",
+      "translate_to": "Thai",
+      "translation": "รหัสผ่าน"
+    },
+    "form.email": {
+      "en": "Email",
+      "translate_to": "Thai",
+      "translation": "อีเมล"
+    },
+    "form.submit": {
+      "en": "Submit",
+      "translate_to": "Thai",
+      "translation": "ส่ง"
+    },
+    "form.cancel": {
+      "en": "Cancel",
+      "translate_to": "Thai",
+      "translation": "ยกเลิก"
+    },
+    "form.save": {
+      "en": "Save",
+      "translate_to": "Thai",
+      "translation": "บันทึก"
+    },
+    "form.delete": {
+      "en": "Delete",
+      "translate_to": "Thai",
+      "translation": "ลบ"
+    },
+    "form.search": {
+      "en": "Search",
+      "translate_to": "Thai",
+      "translation": "ค้นหา"
+    },
+    "form.filter": {
+      "en": "Filter",
+      "translate_to": "Thai",
+      "translation": "กรอง"
+    },
+    "form.reset": {
+      "en": "Reset",
+      "translate_to": "Thai",
+      "translation": "รีเซ็ต"
+    },
+    "form.close": {
+      "en": "Close",
+      "translate_to": "Thai",
+      "translation": "ปิด"
+    },
+    "form.back": {
+      "en": "Back",
+      "translate_to": "Thai",
+      "translation": "กลับ"
+    },
+    "form.next": {
+      "en": "Next",
+      "translate_to": "Thai",
+      "translation": "ต่อไป"
+    },
+    "form.previous": {
+      "en": "Previous",
+      "translate_to": "Thai",
+      "translation": "ก่อนหน้า"
+    },
+    "form.confirm": {
+      "en": "Confirm",
+      "translate_to": "Thai",
+      "translation": "ยืนยัน"
+    },
+    "form.rememberMe": {
+      "en": "Remember me",
+      "translate_to": "Thai",
+      "translation": "จำฉันไว้ด้วยนะ"
+    },
+    "form.forgotPassword": {
+      "en": "Forgot password?",
+      "translate_to": "Thai",
+      "translation": "ลืมรหัสผ่านใช่ไหม?"
+    },
+    "form.emailRequired": {
+      "en": "Email is required",
+      "translate_to": "Thai",
+      "translation": "ต้องระบุอีเมล"
+    },
+    "form.emailInvalid": {
+      "en": "Please enter a valid email address",
+      "translate_to": "Thai",
+      "translation": "โปรดป้อนที่อยู่อีเมลที่ถูกต้อง"
+    },
+    "faq.products.category": {
+      "en": "Products",
+      "translate_to": "Thai",
+      "translation": "สินค้า"
+    },
+    "faq.products.q1": {
+      "en": "What products does Harvics offer?",
+      "translate_to": "Thai",
+      "translation": "Harvics จำหน่ายผลิตภัณฑ์อะไรบ้าง?"
+    },
+    "faq.products.a1": {
+      "en": "We offer a wide range of premium food products including confectionery, beverages, snacks, pasta, bakery items, and frozen foods across multiple categories.",
+      "translate_to": "Thai",
+      "translation": "เรานำเสนอผลิตภัณฑ์อาหารคุณภาพเยี่ยมหลากหลายประเภท รวมถึงขนมหวาน เครื่องดื่ม ขนมขบเคี้ยว พาสต้า ขนมอบ และอาหารแช่แข็งในหลายหมวดหมู่"
+    },
+    "faq.products.q2": {
+      "en": "Where can I buy Harvics products?",
+      "translate_to": "Thai",
+      "translation": "ฉันสามารถซื้อผลิตภัณฑ์ Harvics ได้ที่ไหน?"
+    },
+    "faq.products.a2": {
+      "en": "Our products are available in retail stores across 40+ countries. Use our store locator or contact page to find a retailer near you.",
+      "translate_to": "Thai",
+      "translation": "ผลิตภัณฑ์ของเรามีจำหน่ายในร้านค้าปลีกกว่า 40 ประเทศทั่วโลก ใช้เครื่องมือค้นหาร้านค้าหรือหน้าติดต่อเราเพื่อค้นหาร้านค้าใกล้บ้านคุณ"
+    },
+    "faq.products.q3": {
+      "en": "Do you offer bulk ordering?",
+      "translate_to": "Thai",
+      "translation": "คุณรับสั่งซื้อจำนวนมากหรือไม่?"
+    },
+    "faq.products.a3": {
+      "en": "Yes, we offer bulk order discounts for businesses and retailers. Visit our Bulk Order Discounts page for more information.",
+      "translate_to": "Thai",
+      "translation": "ใช่ เรามีส่วนลดสำหรับการสั่งซื้อจำนวนมากสำหรับธุรกิจและร้านค้าปลีก โปรดเยี่ยมชมหน้าส่วนลดสำหรับการสั่งซื้อจำนวนมากของเราเพื่อดูข้อมูลเพิ่มเติม"
+    },
+    "faq.ordersShipping.category": {
+      "en": "Orders & Shipping",
+      "translate_to": "Thai",
+      "translation": "การสั่งซื้อและการจัดส่ง"
+    },
+    "faq.ordersShipping.q1": {
+      "en": "What are your shipping options?",
+      "translate_to": "Thai",
+      "translation": "คุณมีตัวเลือกการจัดส่งอะไรบ้าง?"
+    },
+    "faq.ordersShipping.a1": {
+      "en": "We offer various shipping options including standard, express, and international shipping. Free shipping is available on orders over $50.",
+      "translate_to": "Thai",
+      "translation": "เรามีบริการจัดส่งสินค้าหลากหลายรูปแบบ ทั้งแบบมาตรฐาน แบบด่วน และแบบระหว่างประเทศ จัดส่งฟรีเมื่อสั่งซื้อสินค้าครบ 50 ดอลลาร์ขึ้นไป"
+    },
+    "faq.ordersShipping.q2": {
+      "en": "How long does delivery take?",
+      "translate_to": "Thai",
+      "translation": "การจัดส่งใช้เวลานานแค่ไหน?"
+    },
+    "faq.ordersShipping.a2": {
+      "en": "Delivery times vary by location. Standard delivery typically takes 5-7 business days, while express delivery takes 2-3 business days.",
+      "translate_to": "Thai",
+      "translation": "ระยะเวลาในการจัดส่งแตกต่างกันไปตามสถานที่ โดยปกติการจัดส่งแบบมาตรฐานจะใช้เวลา 5-7 วันทำการ ส่วนการจัดส่งด่วนจะใช้เวลา 2-3 วันทำการ"
+    },
+    "faq.ordersShipping.q3": {
+      "en": "Can I track my order?",
+      "translate_to": "Thai",
+      "translation": "ฉันสามารถติดตามสถานะคำสั่งซื้อของฉันได้หรือไม่?"
+    },
+    "faq.ordersShipping.a3": {
+      "en": "Yes, you can track your order using the tracking number provided in your order confirmation email.",
+      "translate_to": "Thai",
+      "translation": "ใช่ คุณสามารถติดตามสถานะการสั่งซื้อของคุณได้โดยใช้หมายเลขติดตามที่ระบุไว้ในอีเมลยืนยันการสั่งซื้อของคุณ"
+    },
+    "faq.accountPayments.category": {
+      "en": "Account & Payments",
+      "translate_to": "Thai",
+      "translation": "บัญชีและการชำระเงิน"
+    },
+    "faq.accountPayments.q1": {
+      "en": "How do I create an account?",
+      "translate_to": "Thai",
+      "translation": "ฉันจะสร้างบัญชีได้อย่างไร?"
+    },
+    "faq.accountPayments.a1": {
+      "en": "Click on \"Sign In\" in the header and select \"Create Account\" to register for a new account.",
+      "translate_to": "Thai",
+      "translation": "คลิกที่ \"เข้าสู่ระบบ\" ในส่วนหัว แล้วเลือก \"สร้างบัญชี\" เพื่อลงทะเบียนบัญชีใหม่"
+    },
+    "faq.accountPayments.q2": {
+      "en": "What payment methods do you accept?",
+      "translate_to": "Thai",
+      "translation": "คุณรับชำระเงินด้วยวิธีใดบ้าง?"
+    },
+    "faq.accountPayments.a2": {
+      "en": "We accept all major credit cards, debit cards, PayPal, and bank transfers for B2B orders.",
+      "translate_to": "Thai",
+      "translation": "เรารับชำระเงินด้วยบัตรเครดิต บัตรเดบิต PayPal และการโอนเงินผ่านธนาคารสำหรับการสั่งซื้อแบบ B2B ทุกประเภท"
+    },
+    "faq.accountPayments.q3": {
+      "en": "Is my payment information secure?",
+      "translate_to": "Thai",
+      "translation": "ข้อมูลการชำระเงินของฉันปลอดภัยหรือไม่?"
+    },
+    "faq.accountPayments.a3": {
+      "en": "Yes, we use industry-standard encryption to protect your payment information.",
+      "translate_to": "Thai",
+      "translation": "ใช่ เราใช้การเข้ารหัสตามมาตรฐานอุตสาหกรรมเพื่อปกป้องข้อมูลการชำระเงินของคุณ"
+    },
+    "faq.returnsRefunds.category": {
+      "en": "Returns & Refunds",
+      "translate_to": "Thai",
+      "translation": "การคืนสินค้าและการขอคืนเงิน"
+    },
+    "faq.returnsRefunds.q1": {
+      "en": "What is your return policy?",
+      "translate_to": "Thai",
+      "translation": "นโยบายการคืนสินค้าของคุณคืออะไร?"
+    },
+    "faq.returnsRefunds.a1": {
+      "en": "We offer a 30-day return policy for unopened products in original packaging. Please contact our customer service for return authorization.",
+      "translate_to": "Thai",
+      "translation": "เรามีนโยบายคืนสินค้าภายใน 30 วัน สำหรับสินค้าที่ยังไม่เปิดใช้และอยู่ในบรรจุภัณฑ์เดิม กรุณาติดต่อฝ่ายบริการลูกค้าเพื่อขออนุมัติการคืนสินค้า"
+    },
+    "faq.returnsRefunds.q2": {
+      "en": "How do I request a refund?",
+      "translate_to": "Thai",
+      "translation": "ฉันจะขอเงินคืนได้อย่างไร?"
+    },
+    "faq.returnsRefunds.a2": {
+      "en": "Contact our customer service team with your order number and reason for return. We will process your refund within 5-7 business days.",
+      "translate_to": "Thai",
+      "translation": "โปรดติดต่อทีมบริการลูกค้าของเรา พร้อมแจ้งหมายเลขคำสั่งซื้อและเหตุผลในการคืนสินค้า เราจะดำเนินการคืนเงินให้คุณภายใน 5-7 วันทำการ"
+    },
+    "faq.contactCta.title": {
+      "en": "Still Have Questions?",
+      "translate_to": "Thai",
+      "translation": "ยังมีคำถามเพิ่มเติมหรือไม่?"
+    },
+    "faq.contactCta.subtitle": {
+      "en": "Our customer service team is here to help",
+      "translate_to": "Thai",
+      "translation": "ทีมบริการลูกค้าของเราพร้อมให้ความช่วยเหลือ"
+    },
+    "faq.contactCta.button": {
+      "en": "Contact Us",
+      "translate_to": "Thai",
+      "translation": "ติดต่อเรา"
+    },
+    "careers.title": {
+      "en": "Careers",
+      "translate_to": "Thai",
+      "translation": "อาชีพ"
+    },
+    "careers.pageTitle": {
+      "en": "Careers | Harvics",
+      "translate_to": "Thai",
+      "translation": "ร่วมงานกับเรา | Harvics"
+    },
+    "careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries.",
+      "translate_to": "Thai",
+      "translation": "เข้าร่วม Harvics Global Ventures — สำรวจโอกาสทางธุรกิจในกว่า 40 ประเทศ"
+    },
+    "careers.joinUs": {
+      "en": "Join Us",
+      "translate_to": "Thai",
+      "translation": "มาร่วมกับเรา"
+    },
+    "careers.heroTitle": {
+      "en": "Build the Future of Global Trade",
+      "translate_to": "Thai",
+      "translation": "สร้างอนาคตของการค้าโลก"
+    },
+    "careers.heroDesc": {
+      "en": "We're growing across 40+ countries. Join a team that's building the AI-powered operating system for global commerce.",
+      "translate_to": "Thai",
+      "translation": "เรากำลังขยายธุรกิจไปกว่า 40 ประเทศ เข้าร่วมทีมที่กำลังสร้างระบบปฏิบัติการที่ขับเคลื่อนด้วย AI สำหรับการค้าทั่วโลก"
+    },
+    "careers.stats.openPositions": {
+      "en": "Open Positions",
+      "translate_to": "Thai",
+      "translation": "ตำแหน่งงานว่าง"
+    },
+    "careers.stats.countries": {
+      "en": "Countries",
+      "translate_to": "Thai",
+      "translation": "ประเทศ"
+    },
+    "careers.stats.industryVerticals": {
+      "en": "Industry Verticals",
+      "translate_to": "Thai",
+      "translation": "กลุ่มอุตสาหกรรมเฉพาะทาง"
+    },
+    "careers.stats.departmentsHiring": {
+      "en": "Departments Hiring",
+      "translate_to": "Thai",
+      "translation": "ฝ่ายรับสมัครงาน"
+    },
+    "careers.openPositionsByDept": {
+      "en": "Open Positions by Department",
+      "translate_to": "Thai",
+      "translation": "ตำแหน่งงานว่างแยกตามแผนก"
+    },
+    "careers.departments.sales.name": {
+      "en": "Sales & Distribution",
+      "translate_to": "Thai",
+      "translation": "ฝ่ายขายและการจัดจำหน่าย"
+    },
+    "careers.departments.sales.desc": {
+      "en": "Drive revenue across 40+ markets. Territory management, key accounts, distributor relations.",
+      "translate_to": "Thai",
+      "translation": "ขับเคลื่อนรายได้ในกว่า 40 ตลาด การบริหารจัดการพื้นที่ การดูแลลูกค้าหลัก และความสัมพันธ์กับตัวแทนจำหน่าย"
+    },
+    "careers.departments.supplyChain.name": {
+      "en": "Supply Chain & Logistics",
+      "translate_to": "Thai",
+      "translation": "ห่วงโซ่อุปทานและโลจิสติกส์"
+    },
+    "careers.departments.supplyChain.desc": {
+      "en": "End-to-end supply chain from factory to shelf. Fleet management, warehousing, last-mile delivery.",
+      "translate_to": "Thai",
+      "translation": "ห่วงโซ่อุปทานแบบครบวงจร ตั้งแต่โรงงานจนถึงชั้นวางสินค้า การจัดการยานพาหนะ คลังสินค้า การจัดส่งถึงปลายทาง"
+    },
+    "careers.departments.technology.name": {
+      "en": "Technology & AI",
+      "translate_to": "Thai",
+      "translation": "เทคโนโลยีและปัญญาประดิษฐ์"
+    },
+    "careers.departments.technology.desc": {
+      "en": "Build Harvics OS — our AI-powered enterprise platform. Full-stack, ML engineering, data science.",
+      "translate_to": "Thai",
+      "translation": "สร้าง Harvics OS — แพลตฟอร์มระดับองค์กรที่ขับเคลื่อนด้วย AI ของเรา ครบวงจรทั้งด้านวิศวกรรม Machine Learning และวิทยาศาสตร์ข้อมูล"
+    },
+    "careers.departments.finance.name": {
+      "en": "Finance & Treasury",
+      "translate_to": "Thai",
+      "translation": "การเงินและการคลัง"
+    },
+    "careers.departments.finance.desc": {
+      "en": "Multi-currency treasury, trade finance, HPay digital payments, FX management across regions.",
+      "translate_to": "Thai",
+      "translation": "การบริหารเงินทุนหลายสกุลเงิน การเงินเพื่อการค้า การชำระเงินดิจิทัล HPay การจัดการอัตราแลกเปลี่ยนข้ามภูมิภาค"
+    },
+    "careers.departments.procurement.name": {
+      "en": "Procurement & Sourcing",
+      "translate_to": "Thai",
+      "translation": "การจัดซื้อจัดหา"
+    },
+    "careers.departments.procurement.desc": {
+      "en": "Global sourcing from 15+ origin countries. Supplier audits, quality control, factory-direct programs.",
+      "translate_to": "Thai",
+      "translation": "จัดหาวัตถุดิบจากกว่า 15 ประเทศทั่วโลก มีการตรวจสอบผู้จำหน่าย การควบคุมคุณภาพ และโปรแกรมซื้อขายตรงจากโรงงาน"
+    },
+    "careers.departments.hr.name": {
+      "en": "Human Resources",
+      "translate_to": "Thai",
+      "translation": "ฝ่ายทรัพยากรบุคคล"
+    },
+    "careers.departments.hr.desc": {
+      "en": "Talent acquisition, L&D, performance management across diverse geographies and cultures.",
+      "translate_to": "Thai",
+      "translation": "การสรรหาบุคลากร การพัฒนาและฝึกอบรม การบริหารผลการปฏิบัติงานในหลากหลายภูมิภาคและวัฒนธรรม"
+    },
+    "careers.departments.legal.name": {
+      "en": "Legal & Compliance",
+      "translate_to": "Thai",
+      "translation": "กฎหมายและการปฏิบัติตามกฎระเบียบ"
+    },
+    "careers.departments.legal.desc": {
+      "en": "Trade compliance, sanctions screening, IP protection, contract management across jurisdictions.",
+      "translate_to": "Thai",
+      "translation": "การปฏิบัติตามกฎระเบียบทางการค้า การตรวจสอบการคว่ำบาตร การคุ้มครองทรัพย์สินทางปัญญา การบริหารจัดการสัญญาข้ามเขตอำนาจศาล"
+    },
+    "careers.departments.marketing.name": {
+      "en": "Marketing & Brand",
+      "translate_to": "Thai",
+      "translation": "การตลาดและแบรนด์"
+    },
+    "careers.departments.marketing.desc": {
+      "en": "Multi-language campaigns, 38-locale content, digital marketing, brand strategy for 10 verticals.",
+      "translate_to": "Thai",
+      "translation": "แคมเปญหลายภาษา, เนื้อหาสำหรับ 38 ภาษา, การตลาดดิจิทัล, กลยุทธ์แบรนด์สำหรับ 10 กลุ่มธุรกิจเฉพาะทาง"
+    },
+    "careers.roles": {
+      "en": "roles",
+      "translate_to": "Thai",
+      "translation": "บทบาท"
+    },
+    "careers.whyHarvics": {
+      "en": "Why Harvics",
+      "translate_to": "Thai",
+      "translation": "ทำไมต้อง Harvics"
+    },
+    "careers.benefits.globalMobility.title": {
+      "en": "Global Mobility",
+      "translate_to": "Thai",
+      "translation": "การเคลื่อนย้ายระดับโลก"
+    },
+    "careers.benefits.globalMobility.desc": {
+      "en": "Work across Dubai, London, Karachi, Lahore, and 40+ markets",
+      "translate_to": "Thai",
+      "translation": "ดำเนินงานในดูไบ ลอนดอน การาจี ลาฮอร์ และอีกกว่า 40 ตลาดทั่วโลก"
+    },
+    "careers.benefits.growthTrack.title": {
+      "en": "Growth Track",
+      "translate_to": "Thai",
+      "translation": "เส้นทางการเติบโต"
+    },
+    "careers.benefits.growthTrack.desc": {
+      "en": "Fast-track career progression in a scaling enterprise",
+      "translate_to": "Thai",
+      "translation": "ก้าวหน้าในสายอาชีพอย่างรวดเร็วในองค์กรที่กำลังเติบโต"
+    },
+    "careers.benefits.aiCulture.title": {
+      "en": "AI-First Culture",
+      "translate_to": "Thai",
+      "translation": "วัฒนธรรมที่ให้ความสำคัญกับ AI เป็นหลัก"
+    },
+    "careers.benefits.aiCulture.desc": {
+      "en": "Work with cutting-edge AI and real-time intelligence systems",
+      "translate_to": "Thai",
+      "translation": "ทำงานร่วมกับระบบ AI ล้ำสมัยและระบบอัจฉริยะแบบเรียลไทม์"
+    },
+    "careers.benefits.competitivePackage.title": {
+      "en": "Competitive Package",
+      "translate_to": "Thai",
+      "translation": "แพ็คเกจการแข่งขัน"
+    },
+    "careers.benefits.competitivePackage.desc": {
+      "en": "Market-leading compensation, housing, and benefits",
+      "translate_to": "Thai",
+      "translation": "ค่าตอบแทน ที่พัก และสวัสดิการที่ดีที่สุดในตลาด"
+    },
+    "careers.benefits.learningBudget.title": {
+      "en": "Learning Budget",
+      "translate_to": "Thai",
+      "translation": "งบประมาณการเรียนรู้"
+    },
+    "careers.benefits.learningBudget.desc": {
+      "en": "Annual development budget for courses, conferences, and certifications",
+      "translate_to": "Thai",
+      "translation": "งบประมาณประจำปีสำหรับการพัฒนาหลักสูตร การประชุม และการรับรองต่างๆ"
+    },
+    "careers.benefits.flexibleWork.title": {
+      "en": "Flexible Work",
+      "translate_to": "Thai",
+      "translation": "การทำงานแบบยืดหยุ่น"
+    },
+    "careers.benefits.flexibleWork.desc": {
+      "en": "Hybrid arrangements with regional hub offices worldwide",
+      "translate_to": "Thai",
+      "translation": "รูปแบบการทำงานแบบผสมผสาน โดยมีสำนักงานศูนย์กลางระดับภูมิภาคทั่วโลก"
+    },
+    "strategy.title": {
+      "en": "Our Strategy",
+      "translate_to": "Thai",
+      "translation": "กลยุทธ์ของเรา"
+    },
+    "strategy.pageTitle": {
+      "en": "Strategy | Harvics",
+      "translate_to": "Thai",
+      "translation": "กลยุทธ์ | ฮาร์วิช"
+    },
+    "strategy.description": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Thai",
+      "translation": "สร้างอนาคตที่ยั่งยืนด้วยนวัตกรรมและความเป็นเลิศ"
+    },
+    "strategy.heroSubtitle": {
+      "en": "Building a sustainable future through innovation and excellence",
+      "translate_to": "Thai",
+      "translation": "สร้างอนาคตที่ยั่งยืนด้วยนวัตกรรมและความเป็นเลิศ"
+    },
+    "strategy.pillars.globalExpansion.title": {
+      "en": "Global Expansion",
+      "translate_to": "Thai",
+      "translation": "การขยายธุรกิจไปทั่วโลก"
+    },
+    "strategy.pillars.globalExpansion.desc": {
+      "en": "Expanding our presence in emerging markets while strengthening our position in established markets",
+      "translate_to": "Thai",
+      "translation": "ขยายการดำเนินงานของเราในตลาดเกิดใหม่พร้อมทั้งเสริมสร้างความแข็งแกร่งในตลาดที่มีอยู่เดิม"
+    },
+    "strategy.pillars.productInnovation.title": {
+      "en": "Product Innovation",
+      "translate_to": "Thai",
+      "translation": "นวัตกรรมผลิตภัณฑ์"
+    },
+    "strategy.pillars.productInnovation.desc": {
+      "en": "Investing in R&D to develop new products that meet evolving consumer preferences",
+      "translate_to": "Thai",
+      "translation": "การลงทุนด้านการวิจัยและพัฒนาเพื่อพัฒนาผลิตภัณฑ์ใหม่ที่ตอบสนองความต้องการของผู้บริโภคที่เปลี่ยนแปลงไป"
+    },
+    "strategy.pillars.sustainability.title": {
+      "en": "Sustainability",
+      "translate_to": "Thai",
+      "translation": "ความยั่งยืน"
+    },
+    "strategy.pillars.sustainability.desc": {
+      "en": "Committed to sustainable practices across our supply chain and operations",
+      "translate_to": "Thai",
+      "translation": "เรามุ่งมั่นที่จะปฏิบัติตามแนวทางที่ยั่งยืนตลอดห่วงโซ่อุปทานและการดำเนินงานของเรา"
+    },
+    "strategy.pillars.digitalTransformation.title": {
+      "en": "Digital Transformation",
+      "translate_to": "Thai",
+      "translation": "การเปลี่ยนแปลงทางดิจิทัล"
+    },
+    "strategy.pillars.digitalTransformation.desc": {
+      "en": "Leveraging technology to enhance customer experience and operational efficiency",
+      "translate_to": "Thai",
+      "translation": "การใช้เทคโนโลยีเพื่อยกระดับประสบการณ์ของลูกค้าและประสิทธิภาพการดำเนินงาน"
+    },
+    "strategy.vision.title": {
+      "en": "Our Vision",
+      "translate_to": "Thai",
+      "translation": "วิสัยทัศน์ของเรา"
+    },
+    "strategy.vision.desc": {
+      "en": "To be the world's leading premium consumer goods company, recognized for quality, innovation, and sustainability.",
+      "translate_to": "Thai",
+      "translation": "เพื่อก้าวขึ้นเป็นบริษัทสินค้าอุปโภคบริโภคระดับพรีเมียมชั้นนำของโลก ที่ได้รับการยอมรับในด้านคุณภาพ นวัตกรรม และความยั่งยืน"
+    },
+    "seo.home.title": {
+      "en": "Harvics Global Ventures | Premium Global Trading",
+      "translate_to": "Thai",
+      "translation": "Harvics Global Ventures | การซื้อขายระดับโลกพรีเมียม"
+    },
+    "seo.home.description": {
+      "en": "Leading global trading company delivering premium products across 10+ industries. Operating in 50+ countries since 2019.",
+      "translate_to": "Thai",
+      "translation": "บริษัทการค้าชั้นนำระดับโลกที่จัดจำหน่ายผลิตภัณฑ์คุณภาพสูงในกว่า 10 อุตสาหกรรม ดำเนินงานในกว่า 50 ประเทศตั้งแต่ปี 2019"
+    },
+    "seo.about.title": {
+      "en": "About Us | Harvics Global Ventures",
+      "translate_to": "Thai",
+      "translation": "เกี่ยวกับเรา | Harvics Global Ventures"
+    },
+    "seo.about.description": {
+      "en": "Discover how Harvics Global Ventures became a leading force in global trade across 40+ countries and 10 industries.",
+      "translate_to": "Thai",
+      "translation": "ค้นพบว่า Harvics Global Ventures ก้าวขึ้นเป็นผู้นำด้านการค้าระดับโลกในกว่า 40 ประเทศและ 10 อุตสาหกรรมได้อย่างไร"
+    },
+    "seo.contact.title": {
+      "en": "Contact Us | Harvics Global Ventures",
+      "translate_to": "Thai",
+      "translation": "ติดต่อเรา | Harvics Global Ventures"
+    },
+    "seo.contact.description": {
+      "en": "Get in touch with Harvics offices worldwide across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Thai",
+      "translation": "ติดต่อสำนักงาน Harvics ทั่วโลก ครอบคลุมทั้งตะวันออกกลาง เอเชียใต้ ยุโรป แอฟริกา และอเมริกา"
+    },
+    "seo.products.title": {
+      "en": "Products | Harvics Global Ventures",
+      "translate_to": "Thai",
+      "translation": "ผลิตภัณฑ์ | Harvics Global Ventures"
+    },
+    "seo.products.description": {
+      "en": "Explore Harvics premium product range across FMCG, textiles, commodities, and industrial solutions.",
+      "translate_to": "Thai",
+      "translation": "สำรวจผลิตภัณฑ์ระดับพรีเมียมของ Harvics ครอบคลุมสินค้าอุปโภคบริโภค สิ่งทอ สินค้าโภคภัณฑ์ และโซลูชันสำหรับอุตสาหกรรม"
+    },
+    "seo.careers.title": {
+      "en": "Careers | Harvics Global Ventures",
+      "translate_to": "Thai",
+      "translation": "ร่วมงานกับเรา | Harvics Global Ventures"
+    },
+    "seo.careers.description": {
+      "en": "Join Harvics Global Ventures — explore opportunities across 40+ countries in FMCG, textiles, logistics, and technology.",
+      "translate_to": "Thai",
+      "translation": "เข้าร่วมกับ Harvics Global Ventures — สำรวจโอกาสทางธุรกิจในกว่า 40 ประเทศทั่วโลก ในอุตสาหกรรมสินค้าอุปโภคบริโภค สิ่งทอ โลจิสติกส์ และเทคโนโลยี"
+    },
+    "seo.media.title": {
+      "en": "Media Center | Harvics Global Ventures",
+      "translate_to": "Thai",
+      "translation": "ศูนย์สื่อ | Harvics Global Ventures"
+    },
+    "seo.media.description": {
+      "en": "Harvics media center — press releases, latest news, brand assets, and media contacts.",
+      "translate_to": "Thai",
+      "translation": "ศูนย์ข้อมูลสื่อของ Harvics — ข่าวประชาสัมพันธ์ ข่าวสารล่าสุด ทรัพย์สินของแบรนด์ และรายชื่อผู้ติดต่อสื่อมวลชน"
+    },
+    "seo.strategy.title": {
+      "en": "Our Strategy | Harvics Global Ventures",
+      "translate_to": "Thai",
+      "translation": "กลยุทธ์ของเรา | Harvics Global Ventures"
+    },
+    "seo.strategy.description": {
+      "en": "Harvics strategic vision for global expansion, innovation, sustainability, and digital transformation.",
+      "translate_to": "Thai",
+      "translation": "วิสัยทัศน์เชิงกลยุทธ์ของ Harvics สำหรับการขยายธุรกิจไปทั่วโลก นวัตกรรม ความยั่งยืน และการเปลี่ยนแปลงทางดิจิทัล"
+    },
+    "seo.csr.title": {
+      "en": "Corporate Social Responsibility | Harvics",
+      "translate_to": "Thai",
+      "translation": "ความรับผิดชอบต่อสังคมขององค์กร | ฮาร์วิคส์"
+    },
+    "seo.csr.description": {
+      "en": "Harvics CSR initiatives — environmental stewardship, community programs, and ethical business practices.",
+      "translate_to": "Thai",
+      "translation": "โครงการความรับผิดชอบต่อสังคมของ Harvics ได้แก่ การดูแลรักษาสิ่งแวดล้อม โครงการเพื่อชุมชน และการดำเนินธุรกิจอย่างมีจริยธรรม"
+    },
+    "seo.faq.title": {
+      "en": "FAQ | Harvics Global Ventures",
+      "translate_to": "Thai",
+      "translation": "คำถามที่พบบ่อย | Harvics Global Ventures"
+    },
+    "seo.faq.description": {
+      "en": "Frequently asked questions about Harvics products, services, ordering, and global operations.",
+      "translate_to": "Thai",
+      "translation": "คำถามที่พบบ่อยเกี่ยวกับผลิตภัณฑ์ บริการ การสั่งซื้อ และการดำเนินงานทั่วโลกของ Harvics"
+    },
+    "seo.locations.title": {
+      "en": "Global Locations | Harvics",
+      "translate_to": "Thai",
+      "translation": "สถานที่ตั้งทั่วโลก | ฮาร์วิคส์"
+    },
+    "seo.locations.description": {
+      "en": "Harvics offices and operations across the Middle East, South Asia, Europe, Africa, and the Americas.",
+      "translate_to": "Thai",
+      "translation": "สำนักงานและกิจการของ Harvics กระจายอยู่ทั่วตะวันออกกลาง เอเชียใต้ ยุโรป แอฟริกา และอเมริกา"
+    },
+    "seo.leadership.title": {
+      "en": "Leadership Team | Harvics",
+      "translate_to": "Thai",
+      "translation": "ทีมผู้บริหาร | ฮาร์วิคส์"
+    },
+    "seo.leadership.description": {
+      "en": "Meet the leadership team driving Harvics Global Ventures across 40+ markets and 10 industry verticals.",
+      "translate_to": "Thai",
+      "translation": "พบกับทีมผู้บริหารที่ขับเคลื่อน Harvics Global Ventures ในกว่า 40 ตลาดและ 10 กลุ่มอุตสาหกรรม"
+    },
+    "seo.help.title": {
+      "en": "Help Center | Harvics",
+      "translate_to": "Thai",
+      "translation": "ศูนย์ช่วยเหลือ | Harvics"
+    },
+    "seo.help.description": {
+      "en": "Get help with orders, accounts, shipping, and Harvics services.",
+      "translate_to": "Thai",
+      "translation": "รับความช่วยเหลือเกี่ยวกับคำสั่งซื้อ บัญชี การจัดส่ง และบริการต่างๆ ของ Harvics"
+    },
+    "seo.compliance.title": {
+      "en": "Compliance and Ethics | Harvics",
+      "translate_to": "Thai",
+      "translation": "การปฏิบัติตามกฎระเบียบและจริยธรรม | Harvics"
+    },
+    "seo.compliance.description": {
+      "en": "Harvics commitment to regulatory compliance, ethical business practices, and global standards.",
+      "translate_to": "Thai",
+      "translation": "Harvics มุ่งมั่นที่จะปฏิบัติตามกฎระเบียบ ดำเนินธุรกิจอย่างมีจริยธรรม และยึดมั่นในมาตรฐานระดับโลก"
+    },
+    "seo.history.title": {
+      "en": "Our History | Harvics",
+      "translate_to": "Thai",
+      "translation": "ประวัติของเรา | Harvics"
+    },
+    "seo.history.description": {
+      "en": "From a Dubai startup in 2019 to a global enterprise spanning 40+ countries — the Harvics story.",
+      "translate_to": "Thai",
+      "translation": "จากบริษัทสตาร์ทอัพในดูไบเมื่อปี 2019 สู่องค์กรระดับโลกที่ขยายธุรกิจไปกว่า 40 ประเทศ นี่คือเรื่องราวของ Harvics"
+    },
+    "seo.newsletter.title": {
+      "en": "Newsletter | Harvics",
+      "translate_to": "Thai",
+      "translation": "จดหมายข่าว | ฮาร์วิคส์"
+    },
+    "seo.newsletter.description": {
+      "en": "Subscribe to Harvics newsletter for industry insights and product launches.",
+      "translate_to": "Thai",
+      "translation": "สมัครรับจดหมายข่าวของ Harvics เพื่อรับข้อมูลเชิงลึกในอุตสาหกรรมและการเปิดตัวผลิตภัณฑ์ใหม่"
+    },
+    "seo.login.title": {
+      "en": "Sign In | Harvics",
+      "translate_to": "Thai",
+      "translation": "เข้าสู่ระบบ | ฮาร์วิคส์"
+    },
+    "seo.login.description": {
+      "en": "Sign in to your Harvics account to manage orders and access the platform.",
+      "translate_to": "Thai",
+      "translation": "ลงชื่อเข้าใช้บัญชี Harvics ของคุณเพื่อจัดการคำสั่งซื้อและเข้าใช้งานแพลตฟอร์ม"
+    },
+    "seo.research.title": {
+      "en": "Research and Innovation | Harvics",
+      "translate_to": "Thai",
+      "translation": "งานวิจัยและนวัตกรรม | ฮาร์วิคส์"
+    },
+    "seo.research.description": {
+      "en": "Harvics research initiatives and innovation programs driving our global strategy.",
+      "translate_to": "Thai",
+      "translation": "โครงการวิจัยและนวัตกรรมของ Harvics เป็นแรงขับเคลื่อนกลยุทธ์ระดับโลกของเรา"
+    },
+    "seo.investorRelations.title": {
+      "en": "Investor Relations | Harvics",
+      "translate_to": "Thai",
+      "translation": "ฝ่ายนักลงทุนสัมพันธ์ | ฮาร์วิคส์"
+    },
+    "seo.investorRelations.description": {
+      "en": "Investor information, financial reports, and corporate announcements from Harvics Global Ventures.",
+      "translate_to": "Thai",
+      "translation": "ข้อมูลสำหรับนักลงทุน รายงานทางการเงิน และประกาศต่างๆ จาก Harvics Global Ventures"
+    },
+    "errors.notFound.title": {
+      "en": "Page Not Found",
+      "translate_to": "Thai",
+      "translation": "ไม่พบหน้าเว็บ"
+    },
+    "errors.notFound.heading": {
+      "en": "404 — Page Not Found",
+      "translate_to": "Thai",
+      "translation": "404 — ไม่พบหน้าเว็บ"
+    },
+    "errors.notFound.description": {
+      "en": "The page you are looking for does not exist or has been moved.",
+      "translate_to": "Thai",
+      "translation": "หน้าที่คุณกำลังมองหาไม่มีอยู่จริง หรือถูกย้ายไปแล้ว"
+    },
+    "errors.notFound.goHome": {
+      "en": "Go to Homepage",
+      "translate_to": "Thai",
+      "translation": "ไปที่หน้าแรก"
+    },
+    "errors.notFound.goBack": {
+      "en": "Go Back",
+      "translate_to": "Thai",
+      "translation": "ย้อนกลับ"
+    },
+    "errors.serverError.title": {
+      "en": "Something Went Wrong",
+      "translate_to": "Thai",
+      "translation": "เกิดความผิดพลาดบางอย่างขึ้น"
+    },
+    "errors.serverError.heading": {
+      "en": "Something went wrong",
+      "translate_to": "Thai",
+      "translation": "เกิดข้อผิดพลาดบางอย่าง"
+    },
+    "errors.serverError.description": {
+      "en": "We are sorry, but something unexpected happened. Please try refreshing the page.",
+      "translate_to": "Thai",
+      "translation": "ขออภัย เกิดข้อผิดพลาดที่ไม่คาดคิด โปรดลองรีเฟรชหน้าเว็บอีกครั้ง"
+    },
+    "errors.serverError.tryAgain": {
+      "en": "Try Again",
+      "translate_to": "Thai",
+      "translation": "ลองอีกครั้ง"
+    },
+    "errors.serverError.reload": {
+      "en": "Reload Page",
+      "translate_to": "Thai",
+      "translation": "โหลดหน้าเว็บใหม่"
+    },
+    "errors.serverError.contactSupport": {
+      "en": "Contact Support",
+      "translate_to": "Thai",
+      "translation": "ติดต่อฝ่ายสนับสนุน"
+    },
+    "errors.globalError.title": {
+      "en": "Application Error",
+      "translate_to": "Thai",
+      "translation": "ข้อผิดพลาดของแอปพลิเคชัน"
+    },
+    "errors.globalError.heading": {
+      "en": "Critical Error",
+      "translate_to": "Thai",
+      "translation": "ข้อผิดพลาดร้ายแรง"
+    },
+    "errors.globalError.description": {
+      "en": "A critical error occurred. Please reload the page.",
+      "translate_to": "Thai",
+      "translation": "เกิดข้อผิดพลาดร้ายแรง โปรดรีเฟรชหน้าเว็บใหม่"
+    },
+    "errors.globalError.reload": {
+      "en": "Reload Application",
+      "translate_to": "Thai",
+      "translation": "โหลดแอปพลิเคชันใหม่"
+    }
+  }
+}

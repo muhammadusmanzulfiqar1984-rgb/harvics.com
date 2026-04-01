@@ -128,7 +128,7 @@ export default function ContractsPage() {
                   required
                   value={formData.contract_type}
                   onChange={(e) => setFormData({ ...formData, contract_type: e.target.value })}
-                  className="w-full border border-black300 px-3 py-2"
+                  className="w-full border border-gray-200 px-3 py-2"
                 >
                   <option value="">Select type</option>
                   <option value="Distribution Agreement">Distribution Agreement</option>
@@ -144,7 +144,7 @@ export default function ContractsPage() {
                   required
                   value={formData.title}
                   onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                  className="w-full border border-black300 px-3 py-2"
+                  className="w-full border border-gray-200 px-3 py-2"
                 />
               </div>
               <div>
@@ -154,7 +154,7 @@ export default function ContractsPage() {
                   required
                   value={formData.party_name}
                   onChange={(e) => setFormData({ ...formData, party_name: e.target.value })}
-                  className="w-full border border-black300 px-3 py-2"
+                  className="w-full border border-gray-200 px-3 py-2"
                 />
               </div>
               <div>
@@ -162,7 +162,7 @@ export default function ContractsPage() {
                 <select
                   value={formData.currency}
                   onChange={(e) => setFormData({ ...formData, currency: e.target.value })}
-                  className="w-full border border-black300 px-3 py-2"
+                  className="w-full border border-gray-200 px-3 py-2"
                 >
                   <option value="USD">USD</option>
                   <option value="EUR">EUR</option>
@@ -177,7 +177,7 @@ export default function ContractsPage() {
                   required
                   value={formData.start_date}
                   onChange={(e) => setFormData({ ...formData, start_date: e.target.value })}
-                  className="w-full border border-black300 px-3 py-2"
+                  className="w-full border border-gray-200 px-3 py-2"
                 />
               </div>
               <div>
@@ -186,7 +186,7 @@ export default function ContractsPage() {
                   type="date"
                   value={formData.end_date}
                   onChange={(e) => setFormData({ ...formData, end_date: e.target.value })}
-                  className="w-full border border-black300 px-3 py-2"
+                  className="w-full border border-gray-200 px-3 py-2"
                 />
               </div>
               <div>
@@ -195,7 +195,7 @@ export default function ContractsPage() {
                   type="number"
                   value={formData.value}
                   onChange={(e) => setFormData({ ...formData, value: e.target.value })}
-                  className="w-full border border-black300 px-3 py-2"
+                  className="w-full border border-gray-200 px-3 py-2"
                 />
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function ContractsPage() {
               <button
                 type="button"
                 onClick={() => setShowForm(false)}
-                className="px-4 py-2 border border-black300 hover:bg-white"
+                className="px-4 py-2 border border-gray-200 hover:bg-white"
               >
                 Cancel
               </button>

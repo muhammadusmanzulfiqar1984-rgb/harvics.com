@@ -82,7 +82,7 @@ export default function PaymentHistoryPage() {
   }
 
   return (
-    <AuthGuard allowedRoles={['distributor']}>
+    <AuthGuard allowedRoles={['distributor', 'sales_officer']}>
       <OSDomainPageWrapper
         title="Payment History"
         description="View all your payment transactions and their status"

@@ -46,7 +46,7 @@ export default function OrderAnalyticsContent({ persona, locale }: OrderAnalytic
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-xl font-semibold text-black">Order Analytics & Insights</h3>
+        <h3 className="text-sm font-semibold text-[#1D1D1F]">Order Analytics & Insights</h3>
         <select 
             value={timeRange} 
             onChange={(e) => setTimeRange(e.target.value)}
@@ -61,9 +61,9 @@ export default function OrderAnalyticsContent({ persona, locale }: OrderAnalytic
 
       {/* KPI Row */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <KPICard label="Order Volume" value="1,606" icon="📦" change={{ value: 12, trend: 'up', label: 'vs last month' }} />
+        <KPICard label="Order Volume" value="1,606" icon={<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><path d="M2 5.5l6-3.5 6 3.5v6L8 15 2 11.5V5.5z"/><path d="M8 2v13M2 5.5l6 3.5 6-3.5"/></svg>} change={{ value: 12, trend: 'up', label: 'vs last month' }} />
         <KPICard label="Avg Order Value" value="$2,450" icon="💵" change={{ value: 5, trend: 'up', label: 'vs last month' }} />
-        <KPICard label="Fulfillment Rate" value="98.2%" icon="🚚" change={{ value: 0.2, trend: 'neutral', label: 'stable' }} />
+        <KPICard label="Fulfillment Rate" value="98.2%" icon={<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><rect x="1" y="6" width="9" height="7" rx="1"/><path d="M10 8h3.5L15 10.5V13h-5"/><circle cx="4.5" cy="13.5" r="1.5"/><circle cx="12.5" cy="13.5" r="1.5"/></svg>} change={{ value: 0.2, trend: 'neutral', label: 'stable' }} />
         <KPICard label="Return Rate" value="1.4%" icon="↩️" change={{ value: 0.1, trend: 'down', label: 'improvement' }} />
       </div>
 
@@ -71,7 +71,7 @@ export default function OrderAnalyticsContent({ persona, locale }: OrderAnalytic
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Order Volume Trend */}
         <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <h4 className="text-lg font-semibold text-black mb-4">Order Volume Trend</h4>
+            <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Order Volume Trend</h4>
             <div className="h-64">
                 <ResponsiveContainer width="100%" height="100%">
                     <BarChart data={monthlyData}>
@@ -89,7 +89,7 @@ export default function OrderAnalyticsContent({ persona, locale }: OrderAnalytic
 
         {/* Revenue Trend */}
         <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <h4 className="text-lg font-semibold text-black mb-4">Revenue Correlation</h4>
+            <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Revenue Correlation</h4>
             <div className="h-64">
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart data={monthlyData}>
@@ -106,13 +106,13 @@ export default function OrderAnalyticsContent({ persona, locale }: OrderAnalytic
 
       {/* Channel Performance */}
       <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-        <h4 className="text-lg font-semibold text-black mb-4">Channel Performance</h4>
+        <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Channel Performance</h4>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {channelData.map((channel) => (
-                <div key={channel.name} className="p-4 bg-gray-50 rounded-lg text-center">
+                <div key={channel.name} className="p-4 bg-[#F5F5F7] rounded-lg text-center">
                     <div className="text-sm text-gray-500 mb-1">{channel.name}</div>
-                    <div className="text-2xl font-bold text-[#6B1F2B]">{channel.value}%</div>
-                    <div className="w-full bg-gray-200 h-1.5 rounded-full mt-2">
+                    <div className="text-2xl font-semibold text-[#1D1D1F]">{channel.value}%</div>
+                    <div className="w-full bg-[#F5F5F7] h-1.5 rounded-full mt-2">
                         <div className="bg-[#6B1F2B] h-1.5 rounded-full" style={{ width: `${channel.value}%` }}></div>
                     </div>
                 </div>

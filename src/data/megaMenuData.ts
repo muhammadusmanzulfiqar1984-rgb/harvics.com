@@ -18,7 +18,7 @@ export interface NavVertical {
 
 export const megaMenuData: Record<string, MegaMenuBlock[]> = {
   textiles: [
-    { title: 'Apparel', items: ["Men's Wear", "Ladies' Wear", "Kids' Wear", 'Sportswear'] },
+    { title: 'Apparel', items: ['Mens Wear', 'Ladies Wear', 'Kids Wear', 'Sportswear'] },
     { title: 'Home Textiles', items: ['Bed Linen', 'Bath Linen', 'Curtains', 'Kitchen'] },
     { title: 'Fabrics', items: ['Cotton', 'Polyester', 'Blends', 'Denim'] },
     { title: 'Accessories', items: ['Scarves', 'Bags', 'Belts', 'Shoes'] },

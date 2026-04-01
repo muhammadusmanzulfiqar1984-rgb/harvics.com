@@ -8,10 +8,10 @@ import { filterByGeographicScope, createGeographicScopeFromUserScope } from '@/l
 import type { GeographicScope } from '@/types/geographicScope'
 import type { UserScope } from '@/types/userScope'
 import { logger } from '@/lib/logger'
-import InteractiveWorldMap from '@/components/ui/InteractiveWorldMap'
+import InteractiveWorldMap from '@/features/geo/InteractiveWorldMap'
 import AdminPanel from '@/components/shared/AdminPanel'
-import StockTicker from '@/components/ui/StockTicker'
-import StockChart from '@/components/ui/StockChart'
+import StockTicker from '@/features/finance/StockTicker'
+import StockChart from '@/features/finance/StockChart'
 import InvestorRelationsForm from '@/app/[locale]/investor-relations/InvestorRelationsForm'
 
 // Type definitions for domain data
@@ -858,31 +858,24 @@ export default function EnterpriseCRM({ persona, locale: localeProp }: Enterpris
 
   return (
     <div 
-      className="crm-theme w-full bg-white rounded-xl shadow-lg overflow-hidden border border-[#C3A35E]/30 font-sans font-inter"
-      style={{
-        fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-        WebkitFontSmoothing: 'antialiased',
-        MozOsxFontSmoothing: 'grayscale',
-        textRendering: 'optimizeLegibility',
-        lineHeight: '1.6',
-        letterSpacing: '0.01em'
-      }}
+      className="crm-theme w-full bg-white rounded-xl shadow-lg overflow-hidden border border-black/5 antialiased font-sans"
+      
     >
       {/* CRM Header - Clean Professional Design */}
-      <div className="bg-white border-b border-[#C3A35E]/30">
+      <div className="bg-white border-b border-black/5">
         {/* Top Header Row */}
         <div className="px-6 py-4 flex items-center justify-between flex-wrap gap-4">
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-white flex items-center justify-center border border-[#C3A35E]/30 shadow-sm">
-                <span className="text-xl font-bold text-[#6B1F2B]">
+              <div className="w-10 h-10 rounded-lg bg-white flex items-center justify-center border border-black/5 shadow-sm">
+                <span className="text-xl font-bold text-slate-900">
                   {actualRole === 'supplier' ? 'S' : 
                    actualRole === 'distributor' || actualRole === 'sales_officer' ? 'D' : 
                    'H'}
                 </span>
               </div>
               <h2 
-                className="text-xl md:text-2xl lg:text-3xl font-bold text-[#6B1F2B] tracking-tight font-serif" 
+                className="text-xl md:text-2xl lg:text-3xl font-bold text-slate-900 tracking-tight font-serif" 
               >
                 {actualRole === 'supplier' ? 'Supplier CRM' : 
                  actualRole === 'distributor' || actualRole === 'sales_officer' ? 'Distributor CRM' : 
@@ -890,14 +883,14 @@ export default function EnterpriseCRM({ persona, locale: localeProp }: Enterpris
               </h2>
             </div>
             <div className="flex items-center gap-3">
-              <span className="hidden md:inline text-xs font-bold text-[#6B1F2B] bg-[#F8F9FA] px-4 py-1.5 rounded-full border border-[#C3A35E]/30">
+              <span className="hidden md:inline text-xs font-bold text-slate-900 bg-[#F8F9FA] px-4 py-1.5 rounded-full border border-black/5">
                 {actualRole === 'supplier' ? 'Supplier Portal' : 
                  actualRole === 'distributor' || actualRole === 'sales_officer' ? 'Distributor Portal' : 
                  actualRole === 'company' || actualRole === 'hq' || actualRole === 'country_manager' ? 'Company Portal' :
                  getRoleLabel()}
               </span>
               <span 
-                className={`hidden md:inline text-xs font-bold text-[#6B1F2B] px-3 py-1.5 rounded-full border bg-[#F8F9FA] border-[#C3A35E]/30`} 
+                className={`hidden md:inline text-xs font-bold text-slate-900 px-3 py-1.5 rounded-full border bg-[#F8F9FA] border-black/5`} 
                 title={`Geographic scope: ${getGeographicScopeLabel()}`}
               >
                 {getGeographicScopeLabel()}
@@ -906,9 +899,9 @@ export default function EnterpriseCRM({ persona, locale: localeProp }: Enterpris
           </div>
 
           <div className="flex items-center gap-4 text-sm" title="Switch countries globally from the site header">
-            <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-[#F8F9FA] rounded-lg border border-[#C3A35E]/30">
-              <span className="text-[#6B1F2B] text-xs font-bold uppercase tracking-wider">Country:</span>
-              <span className="font-bold text-[#6B1F2B]">{selectedCountryLabel}</span>
+            <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-[#F8F9FA] rounded-lg border border-black/5">
+              <span className="text-slate-900 text-xs font-bold uppercase tracking-wider">Country:</span>
+              <span className="font-bold text-slate-900">{selectedCountryLabel}</span>
             </div>
             {countryLoading && (
               <div className="animate-spin rounded-full h-4 w-4 border-2 border-[#C3A35E] border-t-[#6B1F2B]"></div>
@@ -916,91 +909,68 @@ export default function EnterpriseCRM({ persona, locale: localeProp }: Enterpris
           </div>
         </div>
 
-        {/* Component Description Banner */}
-        <div className="px-4 py-3 bg-[#C3A35E]/5 border-b border-[#C3A35E]/20">
-          <div className="flex items-start gap-3">
-            <div className="flex-shrink-0 mt-0.5">
-              <span className="text-lg">ℹ️</span>
-            </div>
-            <div className="flex-1">
-              <p className="text-sm font-medium text-[#6B1F2B] mb-1">
-                <strong>Multi-Domain Dashboard</strong> - This component provides an overview of all OS domains (Orders, Inventory, Finance, CRM, HR, Executive, etc.)
-              </p>
-              <p className="text-xs text-[#6B1F2B]/70">
-                For dedicated CRM functions, navigate to <strong>CRM OS Domain</strong> at <code className="bg-white/50 px-1.5 py-0.5 rounded text-[10px] text-[#6B1F2B] border border-[#C3A35E]/20">/os/crm</code>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Tabs Navigation - Clean Professional with Gold */}
-        <div className="px-4 py-3 bg-white border-b border-[#C3A35E]/20 w-full">
-          <div role="tablist" className="overflow-x-auto scrollbar-hide w-full" style={{ 
-            scrollbarWidth: 'none',
-            msOverflowStyle: 'none',
-            WebkitOverflowScrolling: 'touch'
-          }}>
-            <div className="flex flex-row gap-0 min-w-max items-center">
-              {availableTabs.map((tab) => (
-                <button
-                  key={tab}
-                  type="button"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    e.stopPropagation()
-                    setActiveTab(tab)
-                    const crmContainer = e.currentTarget.closest('.crm-theme')
-                    if (crmContainer) {
-                      crmContainer.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                    }
-                  }}
-                  className={`group relative flex items-center justify-center gap-2 px-5 py-3 transition-all duration-200 ease-in-out whitespace-nowrap flex-shrink-0 min-h-[48px] border-b-2 ${
-                    activeTab === tab
-                      ? 'text-[#6B1F2B] font-bold bg-[#C3A35E] shadow-md border-b-2 border-[#C3A35E] rounded-t-lg'
-                      : 'text-[#6B1F2B]/70 hover:text-[#6B1F2B] hover:bg-[#C3A35E]/10 font-medium border-b-2 border-transparent hover:border-[#C3A35E]/40 rounded-t-lg'
-                  }`}
-                  style={{
-                    fontFamily: 'Inter, system-ui, sans-serif',
-                    WebkitFontSmoothing: 'antialiased',
-                    MozOsxFontSmoothing: 'grayscale',
-                    textRendering: 'optimizeLegibility',
-                    fontSize: '0.875rem',
-                    letterSpacing: '0.025em',
-                    lineHeight: '1.5'
-                  }}
-                  aria-label={t(`tabs.${tab}`)}
-                  aria-pressed={activeTab === tab}
-                  aria-selected={activeTab === tab}
-                  role="tab"
-                >
-                  <span className="text-base leading-none">
-                    {tabIcons[tab]}
-                  </span>
-                  <span className="hidden sm:inline leading-tight">
-                    {t(`tabs.${tab}`)}
-                  </span>
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
 
-      {/* Localisation Indicator - Clean Professional */}
-      <div className="bg-white px-6 py-3 flex flex-col md:flex-row gap-4 text-sm border-b border-[#C3A35E]/30">
+      {/* Sidebar Navigation - Glassmorphic Apple-esque */}
+      <div className="flex flex-col md:flex-row w-full flex-1 min-h-[800px] bg-[#f8fafc]">
+        <aside className="w-full md:w-64 lg:w-72 flex-shrink-0 bg-white/80 backdrop-blur-xl border-r border-black/5 p-4 flex flex-col gap-2 z-20 sticky top-0 h-[100vh] overflow-y-auto hidden md:flex">
+          <div className="px-3 py-2 text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Modules</div>
+          <div className="flex flex-col gap-1">
+            {availableTabs.map((tab) => (
+              <button
+                key={tab}
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setActiveTab(tab);
+                  const crmContainer = e.currentTarget.closest('.crm-theme');
+                  if (crmContainer) {
+                    crmContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }}
+                className={`group relative flex items-center gap-3 px-4 py-3 transition-all duration-300 ease-in-out whitespace-nowrap rounded-xl ${
+                  activeTab === tab
+                    ? 'text-black bg-white shadow-[0_2px_10px_rgba(0,0,0,0.08)] font-medium border border-black/5'
+                    : 'text-slate-500 hover:text-black hover:bg-black/5 font-medium border border-transparent'
+                }`}
+              >
+                <span className={`text-lg transition-transform duration-300 ${activeTab === tab ? 'scale-110' : 'group-hover:scale-110'}`}>
+                  {tabIcons[tab]}
+                </span>
+                <span className="text-sm capitalize font-medium">
+                  {t(`tabs.${tab}`)}
+                </span>
+              </button>
+            ))}
+          </div>
+          
+          <div className="mt-auto pt-6 px-4">
+             <div className="bg-gradient-to-br from-slate-100 to-white border border-slate-200 p-4 rounded-xl shadow-sm text-center">
+                <div className="text-2xl mb-2">✨</div>
+                <div className="text-xs font-medium text-slate-800">Harvics OS Enterprise</div>
+                <div className="text-[10px] text-slate-500 mt-1">v2.0 Beta</div>
+             </div>
+          </div>
+        </aside>
+
+        {/* Main Content Area */}
+        <main className="flex-1 flex flex-col min-w-0 overflow-hidden bg-[#f8fafc]/50">
+        {/* Localisation Indicator - Clean Professional */}
+      <div className="bg-white px-6 py-3 flex flex-col md:flex-row gap-4 text-sm border-b border-black/5">
         <div className="flex items-center gap-3">
-          <span className="text-[#6B1F2B] text-xs font-bold uppercase tracking-wider">Code</span>
-          <span className="font-bold text-[#6B1F2B] text-base">{normalizedCountryCode}</span>
+          <span className="text-slate-900 text-xs font-bold uppercase tracking-wider">Code</span>
+          <span className="font-bold text-slate-900 text-base">{normalizedCountryCode}</span>
         </div>
         <div className="flex items-center gap-3">
-          <span className="text-[#6B1F2B] text-xs font-bold uppercase tracking-wider">Currency</span>
-          <span className="font-bold text-[#6B1F2B] text-base">
+          <span className="text-slate-900 text-xs font-bold uppercase tracking-wider">Currency</span>
+          <span className="font-bold text-slate-900 text-base">
             {currencySymbol} {currencyCode}
           </span>
         </div>
         <div className="flex items-center gap-3">
-          <span className="text-[#6B1F2B] text-xs font-bold uppercase tracking-wider">Entity</span>
-          <span className="font-medium text-[#6B1F2B]">{sampleEntity || 'N/A'}</span>
+          <span className="text-slate-900 text-xs font-bold uppercase tracking-wider">Entity</span>
+          <span className="font-medium text-slate-900">{sampleEntity || 'N/A'}</span>
         </div>
       </div>
 
@@ -1009,16 +979,12 @@ export default function EnterpriseCRM({ persona, locale: localeProp }: Enterpris
         {loading ? (
           <div className="text-center py-16">
             <div className="relative mx-auto w-16 h-16">
-              <div className="absolute inset-0 border-4 border-[#C3A35E]/30 rounded-full"></div>
+              <div className="absolute inset-0 border-4 border-black/5 rounded-full"></div>
               <div className="absolute inset-0 border-4 border-[#6B1F2B] border-t-transparent rounded-full animate-spin"></div>
             </div>
             <p 
-              className="mt-6 text-[#6B1F2B] font-medium"
-              style={{
-                fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-                WebkitFontSmoothing: 'antialiased',
-                MozOsxFontSmoothing: 'grayscale'
-              }}
+              className="mt-6 text-slate-900 font-medium"
+              
             >
               Loading data for {(countryData as any)?.countryName || selectedCountry}...
             </p>
@@ -1167,6 +1133,8 @@ export default function EnterpriseCRM({ persona, locale: localeProp }: Enterpris
           </div>
         )}
       </div>
+        </main>
+      </div>
     </div>
   )
 }
@@ -1274,18 +1242,18 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
   })()
 
   return (
-    <div className="space-y-6 font-inter" style={{ lineHeight: '1.6' }}>
+    <div className="space-y-6 font-inter" >
       {/* Reporting Module - Export Buttons */}
       <div className="flex items-center justify-end gap-2 mb-4">
         <button 
-          className="bg-white text-[#6B1F2B] px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#F8F9FA] flex items-center gap-2 border border-[#C3A35E]/30 shadow-sm"
-          style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}
+          className="bg-white text-slate-900 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#F8F9FA] flex items-center gap-2 border border-black/5 shadow-sm"
+          
         >
           📄 Export PDF
         </button>
         <button 
-          className="bg-white text-[#6B1F2B] px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#F8F9FA] flex items-center gap-2 border border-[#C3A35E]/30 shadow-sm"
-          style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}
+          className="bg-white text-slate-900 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#F8F9FA] flex items-center gap-2 border border-black/5 shadow-sm"
+          
         >
           📊 Export Excel
         </button>
@@ -1296,28 +1264,28 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
         {kpis.map((kpi, idx) => (
           <div 
             key={idx} 
-            className="group relative bg-white border border-[#C3A35E]/30 text-[#6B1F2B] p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 overflow-hidden card-elegant"
-            style={{ animationDelay: `${idx * 0.1}s` }}
+            className="group relative bg-white border border-black/5 text-slate-900 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 overflow-hidden card-elegant"
+            
           >
             {/* Shimmer Effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#C3A35E]/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
             
             <div className="relative z-10">
               <div className="flex items-center justify-between mb-3">
-                <div className="w-12 h-12 rounded-xl bg-[#6B1F2B]/5 flex items-center justify-center border border-[#C3A35E]/20 group-hover:scale-110 transition-transform duration-300 text-[#6B1F2B]">
+                <div className="w-12 h-12 rounded-xl bg-slate-900/5 flex items-center justify-center border border-black/5 group-hover:scale-110 transition-transform duration-300 text-slate-900">
               <span className="text-2xl">{kpi.icon}</span>
             </div>
-                <span className="text-xs font-bold text-[#6B1F2B] bg-[#C3A35E]/10 px-2.5 py-1 rounded-full border border-[#C3A35E]/20">KPI</span>
+                <span className="text-xs font-bold text-slate-900 bg-[#C3A35E]/10 px-2.5 py-1 rounded-full border border-black/5">KPI</span>
               </div>
               <div 
-                className="text-3xl font-bold text-[#6B1F2B] mb-2 tracking-tight"
-                style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif', fontWeight: 700 }}
+                className="text-3xl font-bold text-slate-900 mb-2 tracking-tight"
+                
               >
                 {kpi.value}
               </div>
               <div 
-                className="text-sm text-[#6B1F2B]/70 font-medium"
-                style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}
+                className="text-sm text-slate-900/70 font-medium"
+                
               >
                 {kpi.label}
               </div>
@@ -1327,8 +1295,8 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
       </div>
 
       {/* Quick Links to OS Domains - Role-Specific */}
-      <div className="bg-[#F8F9FA] border border-[#C3A35E]/30 rounded-lg p-4">
-        <p className="text-sm text-[#6B1F2B] mb-2 font-bold uppercase tracking-wider">
+      <div className="bg-[#F8F9FA] border border-black/5 rounded-lg p-4">
+        <p className="text-sm text-slate-900 mb-2 font-bold uppercase tracking-wider">
           📑 OS Domains for {persona === 'distributor' || persona === 'sales_officer' ? 'Distributor' : persona === 'supplier' ? 'Supplier' : 'Company'}:
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 mt-3">
@@ -1351,16 +1319,16 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
               <a
                 key={tab}
                 href={`/${locale}/os/${domainPath}`}
-                className="flex items-center gap-2 text-xs font-medium text-[#6B1F2B] bg-white px-3 py-2 rounded border border-[#C3A35E]/20 hover:bg-[#C3A35E]/10 hover:border-[#C3A35E]/40 transition-colors shadow-sm"
+                className="flex items-center gap-2 text-xs font-medium text-slate-900 bg-white px-3 py-2 rounded border border-black/5 hover:bg-[#C3A35E]/10 hover:border-[#C3A35E]/40 transition-colors shadow-sm"
               >
                 <span>{tabIcons[tab]}</span>
                 <span className="capitalize">{t(`tabs.${tab}`)}</span>
-                <span className="ml-auto text-[#C3A35E]">→</span>
+                <span className="ml-auto text-blue-600">→</span>
               </a>
             )
           })}
         </div>
-        <p className="text-xs text-[#6B1F2B]/60 mt-3">
+        <p className="text-xs text-slate-900/60 mt-3">
           💡 Click on any domain above to access detailed views. This dashboard provides an overview - use OS domains for detailed management.
         </p>
       </div>
@@ -1369,22 +1337,22 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
       {((countryData as any)?.populationBreakdown || (countryData as any)?.weather) && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {(countryData as any)?.populationBreakdown && (
-            <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-              <h4 className="text-sm font-bold text-[#6B1F2B] uppercase tracking-wider mb-2">Population</h4>
-              <div className="text-3xl font-bold text-[#6B1F2B]">
+            <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+              <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-2">Population</h4>
+              <div className="text-3xl font-bold text-slate-900">
                 {((countryData as any).populationBreakdown?.value || 0).toLocaleString()}
               </div>
               {(countryData as any).populationBreakdown?.urbanPercent !== undefined && (
-                <div className="text-xs text-[#6B1F2B]/70 mt-1">
+                <div className="text-xs text-slate-900/70 mt-1">
                   Urbanization: {(countryData as any).populationBreakdown.urbanPercent}%
                 </div>
               )}
             </div>
           )}
           {(countryData as any)?.weather && (
-            <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-              <h4 className="text-sm font-bold text-[#6B1F2B] uppercase tracking-wider mb-2">Weather - {(countryData as any).weather?.city || 'N/A'}</h4>
-              <div className="text-3xl font-bold text-[#6B1F2B]">
+            <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+              <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-2">Weather - {(countryData as any).weather?.city || 'N/A'}</h4>
+              <div className="text-3xl font-bold text-slate-900">
                 {(() => {
                   const temp = (countryData as any).weather?.temperature
                   if (!temp) return 'N/A'
@@ -1392,7 +1360,7 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
                   return `${tempC.toFixed(1)}°C`
                 })()}
               </div>
-              <div className="text-xs text-[#6B1F2B]/70 mt-1 capitalize">
+              <div className="text-xs text-slate-900/70 mt-1 capitalize">
                 {(countryData as any).weather.description} • Humidity {(countryData as any).weather.humidity}% • Wind {(countryData as any).weather.windSpeed} m/s
               </div>
             </div>
@@ -1404,31 +1372,31 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
       {((countryData as any)?.tax || (countryData as any)?.macroIndicators) && (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {(countryData as any)?.tax && (
-            <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-              <h4 className="text-sm font-bold text-[#6B1F2B] uppercase tracking-wider mb-2">Tax Model</h4>
-              <p className="text-sm text-[#6B1F2B]">VAT: <strong>{(countryData as any).tax.vat}%</strong></p>
-              <p className="text-sm text-[#6B1F2B]">GST: <strong>{(countryData as any).tax.gst}%</strong></p>
-              <p className="text-sm text-[#6B1F2B]">Import Duty: <strong>{(countryData as any).tax.importDuty}%</strong></p>
+            <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+              <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-2">Tax Model</h4>
+              <p className="text-sm text-slate-900">VAT: <strong>{(countryData as any).tax.vat}%</strong></p>
+              <p className="text-sm text-slate-900">GST: <strong>{(countryData as any).tax.gst}%</strong></p>
+              <p className="text-sm text-slate-900">Import Duty: <strong>{(countryData as any).tax.importDuty}%</strong></p>
             </div>
           )}
           {(countryData as any)?.macroIndicators && (
-            <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-              <h4 className="text-sm font-bold text-[#6B1F2B] uppercase tracking-wider mb-2">Macro Indicators</h4>
-              <p className="text-sm text-[#6B1F2B]">Inflation: <strong>{(countryData as any).macroIndicators?.inflation ?? 'n/a'}%</strong></p>
-              <p className="text-sm text-[#6B1F2B]">Unemployment: <strong>{(countryData as any).macroIndicators?.unemployment ?? 'n/a'}%</strong></p>
+            <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+              <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-2">Macro Indicators</h4>
+              <p className="text-sm text-slate-900">Inflation: <strong>{(countryData as any).macroIndicators?.inflation ?? 'n/a'}%</strong></p>
+              <p className="text-sm text-slate-900">Unemployment: <strong>{(countryData as any).macroIndicators?.unemployment ?? 'n/a'}%</strong></p>
               {(countryData as any)?.gdpPerCapita !== undefined && (
-                <p className="text-sm text-[#6B1F2B]">GDP / Capita: <strong>${((countryData as any).gdpPerCapita as number).toLocaleString()}</strong></p>
+                <p className="text-sm text-slate-900">GDP / Capita: <strong>${((countryData as any).gdpPerCapita as number).toLocaleString()}</strong></p>
               )}
             </div>
           )}
           {(countryData as any)?.paymentConnectors && (
-            <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-              <h4 className="text-sm font-bold text-[#6B1F2B] uppercase tracking-wider mb-2">Payments</h4>
-              <ul className="space-y-1 text-sm text-[#6B1F2B]">
+            <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+              <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-2">Payments</h4>
+              <ul className="space-y-1 text-sm text-slate-900">
                 {(countryData as { paymentConnectors?: unknown[] })?.paymentConnectors?.slice(0, 4).map((pay: any) => (
                   <li key={pay.name} className="flex items-center justify-between">
                     <span>{pay.name}</span>
-                    <span className={`text-xs px-2 py-0.5 rounded-full border ${pay.status === 'active' ? 'bg-[#6B1F2B]/10 text-[#6B1F2B] border-[#C3A35E]/30' : 'bg-gray-100 text-gray-500 border-gray-200'}`}>
+                    <span className={`text-xs px-2 py-0.5 rounded-full border ${pay.status === 'active' ? 'bg-slate-900/10 text-slate-900 border-black/5' : 'bg-gray-100 text-gray-500 border-gray-200'}`}>
                       {pay.status}
                     </span>
                   </li>
@@ -1441,18 +1409,18 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
 
       {/* AI Strategy Snapshot */}
       {aiStrategy && (
-        <div className="bg-[#6B1F2B] rounded-lg p-6 border border-[#C3A35E]/30 text-white shadow-md">
+        <div className="bg-slate-900 rounded-lg p-6 border border-black/5 text-white shadow-md">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
-              <div className="text-sm text-[#C3A35E] mb-1 uppercase tracking-wider font-bold">Market Score</div>
+              <div className="text-sm text-blue-600 mb-1 uppercase tracking-wider font-bold">Market Score</div>
               <div className="text-3xl font-bold text-white">{(aiStrategy as any).marketScore || '--'}</div>
             </div>
             <div>
-              <div className="text-sm text-[#C3A35E] mb-1 uppercase tracking-wider font-bold">Price Band</div>
+              <div className="text-sm text-blue-600 mb-1 uppercase tracking-wider font-bold">Price Band</div>
               <div className="text-2xl font-bold text-white capitalize">{(aiStrategy as any).priceBand || 'tbd'}</div>
             </div>
             <div>
-              <div className="text-sm text-[#C3A35E] mb-1 uppercase tracking-wider font-bold">Coverage Gaps</div>
+              <div className="text-sm text-blue-600 mb-1 uppercase tracking-wider font-bold">Coverage Gaps</div>
               <div className="text-2xl font-bold text-white capitalize">{(aiStrategy as any).coverageGaps || 'n/a'}</div>
             </div>
           </div>
@@ -1462,27 +1430,27 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
 
       {/* SKU Recommendations */}
       {(aiStrategy as any)?.recommendedSKUs?.length > 0 && (
-        <div className="bg-white rounded-lg border border-[#C3A35E]/30 p-6 shadow-sm">
-          <h4 className="text-lg font-bold text-[#6B1F2B] mb-4 font-serif">🎯 AI Recommended SKUs</h4>
+        <div className="bg-white rounded-lg border border-black/5 p-6 shadow-sm">
+          <h4 className="text-lg font-bold text-slate-900 mb-4 font-serif">🎯 AI Recommended SKUs</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {((aiStrategy as any)?.recommendedSKUs || []).map((sku: any, idx: number) => (
-              <div key={`${sku.name}-${idx}`} className="border border-[#C3A35E]/20 rounded-lg p-4 hover:border-[#C3A35E]/50 transition-colors">
+              <div key={`${sku.name}-${idx}`} className="border border-black/5 rounded-lg p-4 hover:border-[#C3A35E]/50 transition-colors">
                 <div className="flex items-center justify-between mb-2">
-                  <h5 className="font-bold text-[#6B1F2B]">{sku.name}</h5>
+                  <h5 className="font-bold text-slate-900">{sku.name}</h5>
                   <span
                     className={`text-xs px-2 py-1 rounded-full font-medium ${
                       sku.priority === 'critical'
-                        ? 'bg-[#6B1F2B]/10 text-[#6B1F2B] border border-[#C3A35E]/30'
+                        ? 'bg-slate-900/10 text-slate-900 border border-black/5'
                         : sku.priority === 'monitor'
                         ? 'bg-gray-100 text-gray-700 border border-gray-200'
-                        : 'bg-[#C3A35E]/10 text-[#6B1F2B] border border-[#C3A35E]/20'
+                        : 'bg-[#C3A35E]/10 text-slate-900 border border-black/5'
                     }`}
                   >
                     {sku.priority || 'stable'}
                   </span>
                 </div>
-                <p className="text-xs text-[#6B1F2B]/70 mb-1">{sku.format}</p>
-                <p className="text-xs text-[#6B1F2B]/70">Channel: {sku.channel}</p>
+                <p className="text-xs text-slate-900/70 mb-1">{sku.format}</p>
+                <p className="text-xs text-slate-900/70">Channel: {sku.channel}</p>
               </div>
             ))}
           </div>
@@ -1491,17 +1459,17 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
 
       {/* Market Analysis Section (Country-Driven) */}
       {loadingAnalysis ? (
-        <div className="bg-white rounded-lg p-6 border border-[#C3A35E]/30">
+        <div className="bg-white rounded-lg p-6 border border-black/5">
           <div className="text-center py-4">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white mx-auto"></div>
-            <p className="mt-2 text-sm text-[#C3A35E]/90">Loading market analysis for {selectedCountry}...</p>
+            <p className="mt-2 text-sm text-blue-600/90">Loading market analysis for {selectedCountry}...</p>
           </div>
         </div>
       ) : marketAnalysis ? (
-        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-[#C3A35E]/30">
+        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-black/5">
           <h3 className="text-lg font-semibold text-black mb-4">📊 Market Analysis - {(countryData as any)?.countryName || selectedCountry}</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+            <div className="bg-white rounded-lg p-4 border border-black/5">
               <div className="text-sm text-black mb-1">Market Score</div>
               <div className={`text-2xl font-bold ${
                 ((marketAnalysis as any).scoring?.overall || 0) >= 80 ? 'text-white' :
@@ -1511,15 +1479,15 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
                 {(marketAnalysis as any).scoring?.overall || 'N/A'}
               </div>
             </div>
-            <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+            <div className="bg-white rounded-lg p-4 border border-black/5">
               <div className="text-sm text-black mb-1">Grade</div>
               <div className="text-2xl font-bold text-black">{(marketAnalysis as any).scoring?.grade || 'N/A'}</div>
             </div>
-            <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+            <div className="bg-white rounded-lg p-4 border border-black/5">
               <div className="text-sm text-black mb-1">Price Band</div>
               <div className="text-lg font-semibold text-black">{(marketAnalysis as any).priceBand?.band || 'Unknown'}</div>
             </div>
-            <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+            <div className="bg-white rounded-lg p-4 border border-black/5">
               <div className="text-sm text-black mb-1">Currency</div>
               <div className="text-lg font-semibold text-white">{(countryData as any)?.currency?.symbol || '$'} {(countryData as any)?.currency?.code || 'USD'}</div>
             </div>
@@ -1631,7 +1599,7 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
               </div>
             ))
           ) : (
-            <div className="text-[#C3A35E]/90 text-center py-4">Loading SKU data...</div>
+            <div className="text-blue-600/90 text-center py-4">Loading SKU data...</div>
           )}
         </div>
       </div>
@@ -1675,45 +1643,45 @@ function OrdersTab({ data, selectedCountry, countryData }: OrdersTabProps) {
       <div className="flex items-center justify-between gap-2 mb-4">
         <div></div>
         <div className="flex gap-2">
-          <button className="bg-white text-[#6B1F2B] px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#F8F9FA] flex items-center gap-2 border border-[#C3A35E]/30 shadow-sm transition-all">
+          <button className="bg-white text-slate-900 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#F8F9FA] flex items-center gap-2 border border-black/5 shadow-sm transition-all">
             📄 Export PDF
           </button>
-          <button className="bg-white text-[#6B1F2B] px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#F8F9FA] flex items-center gap-2 border border-[#C3A35E]/30 shadow-sm transition-all">
+          <button className="bg-white text-slate-900 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#F8F9FA] flex items-center gap-2 border border-black/5 shadow-sm transition-all">
             📊 Export Excel
           </button>
         </div>
       </div>
 
       <div className="flex items-center justify-between">
-        <h3 className="text-xl font-bold text-[#6B1F2B] font-serif">{t('orders.orderManagement')}</h3>
-        <button className="bg-[#6B1F2B] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#50000b] border border-[#C3A35E]/30 shadow-md transition-all">
+        <h3 className="text-xl font-bold text-slate-900 font-serif">{t('orders.orderManagement')}</h3>
+        <button className="bg-slate-900 text-white px-4 py-2 rounded-lg font-semibold hover:bg-slate-800 border border-black/5 shadow-md transition-all">
           {t('orders.newOrder')}
         </button>
       </div>
 
       {/* Country-Specific Info & Product Structure */}
-      <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/30">
-        <div className="text-sm text-[#6B1F2B] mb-2">
+      <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+        <div className="text-sm text-slate-900 mb-2">
           <strong>Country:</strong> {(countryData as any)?.countryName || selectedCountry} | 
           <strong> Currency:</strong> {(countryData as any)?.currency?.symbol || '$'} {(countryData as any)?.currency?.code || 'USD'}
         </div>
         {/* Country-Specific Price Bands */}
-        <div className="text-xs text-[#6B1F2B]/80">
+        <div className="text-xs text-slate-900/80">
           <strong>Price Band:</strong> {(marketAnalysis as any)?.priceBand?.band || 'Standard'} | 
           <strong> Product Structure:</strong> Country-specific SKUs & Pack Sizes Available
         </div>
       </div>
 
       {(countryData as any)?.skuStructureDetail && (
-        <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-          <h4 className="text-lg font-bold text-[#6B1F2B] mb-4 font-serif">🧱 SKU Structure</h4>
+        <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+          <h4 className="text-lg font-bold text-slate-900 mb-4 font-serif">🧱 SKU Structure</h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {((countryData as any).skuStructureDetail || []).map((tier: any) => (
-              <div key={tier.tier} className="border border-[#C3A35E]/20 rounded-lg p-4 bg-[#F8F9FA]">
-                <div className="text-sm text-[#6B1F2B] uppercase font-bold tracking-wider">{tier.tier}</div>
-                <div className="text-2xl font-bold text-[#6B1F2B]">{tier.share}%</div>
-                <div className="text-xs text-[#6B1F2B]/70 mt-2">Hero SKUs:</div>
-                <ul className="text-xs text-[#6B1F2B]/70 list-disc list-inside">
+              <div key={tier.tier} className="border border-black/5 rounded-lg p-4 bg-[#F8F9FA]">
+                <div className="text-sm text-slate-900 uppercase font-bold tracking-wider">{tier.tier}</div>
+                <div className="text-2xl font-bold text-slate-900">{tier.share}%</div>
+                <div className="text-xs text-slate-900/70 mt-2">Hero SKUs:</div>
+                <ul className="text-xs text-slate-900/70 list-disc list-inside">
                   {tier.heroSkus.slice(0, 3).map((sku: string) => (
                     <li key={sku}>{sku}</li>
                   ))}
@@ -1726,108 +1694,108 @@ function OrdersTab({ data, selectedCountry, countryData }: OrdersTabProps) {
 
       {/* Order Statistics */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-          <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase tracking-wide">{t('orders.totalOrders')}</div>
-          <div className="text-2xl font-bold text-[#6B1F2B]">{totalOrders}</div>
+        <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+          <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">{t('orders.totalOrders')}</div>
+          <div className="text-2xl font-bold text-slate-900">{totalOrders}</div>
         </div>
-        <div className="bg-[#6B1F2B] border border-[#6B1F2B] rounded-lg p-4 shadow-sm text-white">
+        <div className="bg-slate-900 border border-[#6B1F2B] rounded-lg p-4 shadow-sm text-white">
           <div className="text-sm text-white/80 mb-1 font-medium uppercase tracking-wide">{t('orders.pending')}</div>
           <div className="text-2xl font-bold text-white">{pending}</div>
         </div>
-        <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-          <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase tracking-wide">{t('orders.completed')}</div>
-          <div className="text-2xl font-bold text-[#6B1F2B]">{completed}</div>
+        <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+          <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">{t('orders.completed')}</div>
+          <div className="text-2xl font-bold text-slate-900">{completed}</div>
         </div>
-        <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-          <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase tracking-wide">{t('orders.inTransit')}</div>
-          <div className="text-2xl font-bold text-[#6B1F2B]">{inTransit}</div>
+        <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+          <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">{t('orders.inTransit')}</div>
+          <div className="text-2xl font-bold text-slate-900">{inTransit}</div>
         </div>
       </div>
 
       {/* Workflow Engine UI - Orders Tab */}
-      <div className="bg-[#F8F9FA] rounded-lg p-6 border border-[#C3A35E]/30 shadow-sm">
-        <h4 className="text-lg font-bold text-[#6B1F2B] mb-4 font-serif">⚙️ Workflow Engine - Order Management</h4>
+      <div className="bg-[#F8F9FA] rounded-lg p-6 border border-black/5 shadow-sm">
+        <h4 className="text-lg font-bold text-slate-900 mb-4 font-serif">⚙️ Workflow Engine - Order Management</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Pending Approvals */}
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/20 shadow-sm hover:shadow-md transition-all">
+          <div className="bg-white rounded-lg p-4 border border-black/5 shadow-sm hover:shadow-md transition-all">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm font-bold text-[#6B1F2B]">Pending Approvals</span>
-              <span className="text-xs bg-[#C3A35E]/20 text-[#6B1F2B] px-2 py-1 rounded-full font-bold">3</span>
+              <span className="text-sm font-bold text-slate-900">Pending Approvals</span>
+              <span className="text-xs bg-[#C3A35E]/20 text-slate-900 px-2 py-1 rounded-full font-bold">3</span>
             </div>
-            <div className="text-xs text-[#6B1F2B]/70">Orders awaiting approval</div>
-            <button className="mt-2 text-xs text-[#C3A35E] hover:text-[#6B1F2B] font-bold uppercase tracking-wider">View All →</button>
+            <div className="text-xs text-slate-900/70">Orders awaiting approval</div>
+            <button className="mt-2 text-xs text-blue-600 hover:text-slate-900 font-bold uppercase tracking-wider">View All →</button>
           </div>
 
           {/* Credit Override Alerts */}
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/20 shadow-sm hover:shadow-md transition-all">
+          <div className="bg-white rounded-lg p-4 border border-black/5 shadow-sm hover:shadow-md transition-all">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm font-bold text-[#6B1F2B]">Credit Overrides</span>
+              <span className="text-sm font-bold text-slate-900">Credit Overrides</span>
               <span className="text-xs bg-red-100 text-red-800 px-2 py-1 rounded-full font-bold">2</span>
             </div>
-            <div className="text-xs text-[#6B1F2B]/70">Requires attention</div>
-            <button className="mt-2 text-xs text-[#C3A35E] hover:text-[#6B1F2B] font-bold uppercase tracking-wider">Review →</button>
+            <div className="text-xs text-slate-900/70">Requires attention</div>
+            <button className="mt-2 text-xs text-blue-600 hover:text-slate-900 font-bold uppercase tracking-wider">Review →</button>
           </div>
 
           {/* Compliance Warnings */}
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/20 shadow-sm hover:shadow-md transition-all">
+          <div className="bg-white rounded-lg p-4 border border-black/5 shadow-sm hover:shadow-md transition-all">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm font-bold text-[#6B1F2B]">Compliance Warnings</span>
+              <span className="text-sm font-bold text-slate-900">Compliance Warnings</span>
               <span className="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded-full font-bold">1</span>
             </div>
-            <div className="text-xs text-[#6B1F2B]/70">Regulatory flags</div>
-            <button className="mt-2 text-xs text-[#C3A35E] hover:text-[#6B1F2B] font-bold uppercase tracking-wider">Check →</button>
+            <div className="text-xs text-slate-900/70">Regulatory flags</div>
+            <button className="mt-2 text-xs text-blue-600 hover:text-slate-900 font-bold uppercase tracking-wider">Check →</button>
           </div>
 
           {/* Exceptions Queue */}
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/20 shadow-sm hover:shadow-md transition-all">
+          <div className="bg-white rounded-lg p-4 border border-black/5 shadow-sm hover:shadow-md transition-all">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm font-bold text-[#6B1F2B]">Exceptions Queue</span>
+              <span className="text-sm font-bold text-slate-900">Exceptions Queue</span>
               <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-bold">5</span>
             </div>
-            <div className="text-xs text-[#6B1F2B]/70">Manual processing needed</div>
-            <button className="mt-2 text-xs text-[#C3A35E] hover:text-[#6B1F2B] font-bold uppercase tracking-wider">Process →</button>
+            <div className="text-xs text-slate-900/70">Manual processing needed</div>
+            <button className="mt-2 text-xs text-blue-600 hover:text-slate-900 font-bold uppercase tracking-wider">Process →</button>
           </div>
         </div>
       </div>
 
       {/* Orders Table */}
-      <div className="bg-white border border-[#C3A35E]/30 rounded-lg overflow-hidden shadow-sm">
+      <div className="bg-white border border-black/5 rounded-lg overflow-hidden shadow-sm">
         <div className="overflow-x-auto">
           <table className="w-full">
-            <thead className="bg-[#F8F9FA] border-b border-[#C3A35E]/20">
+            <thead className="bg-[#F8F9FA] border-b border-black/5">
               <tr>
-                <th className="px-4 py-3 text-left text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">{t('orders.orderId')}</th>
-                <th className="px-4 py-3 text-left text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">{t('orders.customer')}</th>
-                <th className="px-4 py-3 text-left text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">City</th>
-                <th className="px-4 py-3 text-left text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">Channel</th>
-                <th className="px-4 py-3 text-left text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">{t('orders.amount')}</th>
-                <th className="px-4 py-3 text-left text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">{t('orders.status')}</th>
-                <th className="px-4 py-3 text-left text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">{t('orders.date')}</th>
-                <th className="px-4 py-3 text-left text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">Actions</th>
+                <th className="px-4 py-3 text-left text-xs font-bold text-slate-900 uppercase tracking-wider">{t('orders.orderId')}</th>
+                <th className="px-4 py-3 text-left text-xs font-bold text-slate-900 uppercase tracking-wider">{t('orders.customer')}</th>
+                <th className="px-4 py-3 text-left text-xs font-bold text-slate-900 uppercase tracking-wider">City</th>
+                <th className="px-4 py-3 text-left text-xs font-bold text-slate-900 uppercase tracking-wider">Channel</th>
+                <th className="px-4 py-3 text-left text-xs font-bold text-slate-900 uppercase tracking-wider">{t('orders.amount')}</th>
+                <th className="px-4 py-3 text-left text-xs font-bold text-slate-900 uppercase tracking-wider">{t('orders.status')}</th>
+                <th className="px-4 py-3 text-left text-xs font-bold text-slate-900 uppercase tracking-wider">{t('orders.date')}</th>
+                <th className="px-4 py-3 text-left text-xs font-bold text-slate-900 uppercase tracking-wider">Actions</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-[#C3A35E]/10">
               {orders.slice(0, 10).map((order: any, idx: number) => (
                 <tr key={idx} className="hover:bg-[#F8F9FA] transition-colors">
-                  <td className="px-4 py-3 text-sm font-medium text-[#6B1F2B]">#{order.id || idx + 1}</td>
-                  <td className="px-4 py-3 text-sm text-[#6B1F2B]">{order.customer || 'N/A'}</td>
-                  <td className="px-4 py-3 text-sm text-[#6B1F2B]">{order.city || 'N/A'}</td>
-                  <td className="px-4 py-3 text-sm text-[#6B1F2B]">{order.channel || 'N/A'}</td>
-                  <td className="px-4 py-3 text-sm font-bold text-[#6B1F2B]">
+                  <td className="px-4 py-3 text-sm font-medium text-slate-900">#{order.id || idx + 1}</td>
+                  <td className="px-4 py-3 text-sm text-slate-900">{order.customer || 'N/A'}</td>
+                  <td className="px-4 py-3 text-sm text-slate-900">{order.city || 'N/A'}</td>
+                  <td className="px-4 py-3 text-sm text-slate-900">{order.channel || 'N/A'}</td>
+                  <td className="px-4 py-3 text-sm font-bold text-slate-900">
                     {currencySymbol}{(order.amount || 0).toLocaleString()}
                   </td>
                   <td className="px-4 py-3 text-sm">
                     <span className={`px-2 py-1 rounded text-xs font-bold uppercase tracking-wide ${
                       (order.status || '').toLowerCase() === 'completed' ? 'bg-green-100 text-green-800' :
-                      (order.status || '').toLowerCase() === 'pending' ? 'bg-[#C3A35E]/20 text-[#6B1F2B]' :
+                      (order.status || '').toLowerCase() === 'pending' ? 'bg-[#C3A35E]/20 text-slate-900' :
                       'bg-blue-100 text-blue-800'
                     }`}>
                       {order.status || 'pending'}
                     </span>
                   </td>
-                  <td className="px-4 py-3 text-sm text-[#6B1F2B]/70">{order.date || order.eta || 'N/A'}</td>
+                  <td className="px-4 py-3 text-sm text-slate-900/70">{order.date || order.eta || 'N/A'}</td>
                   <td className="px-4 py-3 text-sm">
-                    <button className="text-[#C3A35E] hover:text-[#6B1F2B] font-medium hover:underline">{t('orders.viewDetails')}</button>
+                    <button className="text-blue-600 hover:text-slate-900 font-medium hover:underline">{t('orders.viewDetails')}</button>
                   </td>
                 </tr>
               ))}
@@ -1860,34 +1828,34 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
     <div className="space-y-6">
       {/* Reporting Module - Export Buttons */}
       <div className="flex items-center justify-end gap-2 mb-4">
-        <button className="bg-white text-[#6B1F2B] px-4 py-2 rounded-lg text-sm font-bold hover:bg-[#F8F9FA] flex items-center gap-2 border border-[#C3A35E]/30 shadow-sm transition-all">
+        <button className="bg-white text-slate-900 px-4 py-2 rounded-lg text-sm font-bold hover:bg-[#F8F9FA] flex items-center gap-2 border border-black/5 shadow-sm transition-all">
           📄 Export PDF
         </button>
-        <button className="bg-white text-[#6B1F2B] px-4 py-2 rounded-lg text-sm font-bold hover:bg-[#F8F9FA] flex items-center gap-2 border border-[#C3A35E]/30 shadow-sm transition-all">
+        <button className="bg-white text-slate-900 px-4 py-2 rounded-lg text-sm font-bold hover:bg-[#F8F9FA] flex items-center gap-2 border border-black/5 shadow-sm transition-all">
           📊 Export Excel
         </button>
       </div>
       <div className="flex items-center justify-between flex-wrap gap-4">
-        <h3 className="text-xl font-bold text-[#6B1F2B] font-serif">{t('inventory.inventoryManagement')}</h3>
+        <h3 className="text-xl font-bold text-slate-900 font-serif">{t('inventory.inventoryManagement')}</h3>
         {/* Country-Specific Info */}
-        <div className="text-sm text-[#6B1F2B]/80 bg-[#F8F9FA] px-4 py-2 rounded-lg border border-[#C3A35E]/20">
+        <div className="text-sm text-slate-900/80 bg-[#F8F9FA] px-4 py-2 rounded-lg border border-black/5">
           <strong>{(countryData as any)?.countryName || selectedCountry}</strong> | 
           Currency: {(countryData as any)?.currency?.symbol || '$'} {(countryData as any)?.currency?.code || 'USD'}
         </div>
       </div>
 
       {/* Sub-tabs */}
-      <div className="flex gap-2 border-b border-[#C3A35E]/30 bg-[#F8F9FA] px-2 py-1 rounded-t-lg">
+      <div className="flex gap-2 border-b border-black/5 bg-[#F8F9FA] px-2 py-1 rounded-t-lg">
         {(['overview', 'stock', 'warehouse', 'expiry', 'batch'] as const).map((tab) => (
           <button
             key={tab}
             onClick={() => setSubTab(tab)}
             className={`px-4 py-2.5 transition-all rounded-t-lg font-medium text-sm ${
               subTab === tab
-                ? 'border-b-2 border-[#6B1F2B] text-[#6B1F2B] bg-white shadow-sm'
-                : 'text-[#6B1F2B]/70 hover:text-[#6B1F2B] hover:bg-white/50 border-b border-transparent'
+                ? 'border-b-2 border-[#6B1F2B] text-slate-900 bg-white shadow-sm'
+                : 'text-slate-900/70 hover:text-slate-900 hover:bg-white/50 border-b border-transparent'
             }`}
-            style={{ fontFamily: 'Inter, system-ui, sans-serif', letterSpacing: '0.025em' }}
+            
           >
             {tab.charAt(0).toUpperCase() + tab.slice(1)}
           </button>
@@ -1898,71 +1866,71 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
       {subTab === 'overview' && (
         <>
           {/* Workflow Engine UI - Inventory Tab */}
-          <div className="bg-white rounded-lg p-6 border border-[#C3A35E]/30 mb-6 shadow-sm">
-            <h4 className="text-lg font-bold text-[#6B1F2B] mb-4 font-serif">⚙️ Workflow Engine - Inventory Management</h4>
+          <div className="bg-white rounded-lg p-6 border border-black/5 mb-6 shadow-sm">
+            <h4 className="text-lg font-bold text-slate-900 mb-4 font-serif">⚙️ Workflow Engine - Inventory Management</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {/* Auto-Replenishment Proposals */}
-              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
+              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm font-bold text-[#6B1F2B]">Replenishment Proposals</span>
+                  <span className="text-sm font-bold text-slate-900">Replenishment Proposals</span>
                   <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded font-medium">12</span>
                 </div>
-                <div className="text-xs text-[#6B1F2B]/70">AI-generated suggestions</div>
-                <button className="mt-2 text-xs text-[#C3A35E] hover:text-[#C3A35E] hover:underline font-bold">Review →</button>
+                <div className="text-xs text-slate-900/70">AI-generated suggestions</div>
+                <button className="mt-2 text-xs text-blue-600 hover:text-blue-600 hover:underline font-bold">Review →</button>
               </div>
 
               {/* Stock Exceptions */}
-              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
+              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm font-bold text-[#6B1F2B]">Stock Exceptions</span>
+                  <span className="text-sm font-bold text-slate-900">Stock Exceptions</span>
                   <span className="text-xs bg-red-100 text-red-800 px-2 py-1 rounded font-medium">7</span>
                 </div>
-                <div className="text-xs text-[#6B1F2B]/70">Below threshold or expired</div>
-                <button className="mt-2 text-xs text-[#C3A35E] hover:text-[#C3A35E] hover:underline font-bold">View →</button>
+                <div className="text-xs text-slate-900/70">Below threshold or expired</div>
+                <button className="mt-2 text-xs text-blue-600 hover:text-blue-600 hover:underline font-bold">View →</button>
               </div>
 
               {/* AI Reorder Suggestions */}
-              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
+              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm font-bold text-[#6B1F2B]">AI Reorder Suggestions</span>
+                  <span className="text-sm font-bold text-slate-900">AI Reorder Suggestions</span>
                   <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded font-medium">15</span>
                 </div>
-                <div className="text-xs text-[#6B1F2B]/70">ML-powered recommendations</div>
-                <button className="mt-2 text-xs text-[#C3A35E] hover:text-[#C3A35E] hover:underline font-bold">Apply →</button>
+                <div className="text-xs text-slate-900/70">ML-powered recommendations</div>
+                <button className="mt-2 text-xs text-blue-600 hover:text-blue-600 hover:underline font-bold">Apply →</button>
               </div>
             </div>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-              <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase tracking-wide">{t('inventory.totalValue')}</div>
-              <div className="text-2xl font-bold text-[#6B1F2B]">
+            <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+              <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">{t('inventory.totalValue')}</div>
+              <div className="text-2xl font-bold text-slate-900">
                 {(countryData as any)?.currency?.symbol || '$'}{(totalValue / 1000).toFixed(1)}K
               </div>
             </div>
-            <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-              <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase tracking-wide">{t('inventory.totalItems')}</div>
-              <div className="text-2xl font-bold text-[#6B1F2B]">{totalItems}</div>
+            <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+              <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">{t('inventory.totalItems')}</div>
+              <div className="text-2xl font-bold text-slate-900">{totalItems}</div>
             </div>
-            <div className="bg-[#6B1F2B] border border-[#6B1F2B] rounded-lg p-4 shadow-sm">
+            <div className="bg-slate-900 border border-[#6B1F2B] rounded-lg p-4 shadow-sm">
               <div className="text-sm text-white/80 mb-1 font-medium uppercase tracking-wide">{t('inventory.lowStock')}</div>
               <div className="text-2xl font-bold text-white">{lowStock}</div>
             </div>
-            <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-              <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase tracking-wide">{t('inventory.expiryRisk')}</div>
-              <div className="text-2xl font-bold text-[#6B1F2B]">{expiryRisk}</div>
+            <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+              <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">{t('inventory.expiryRisk')}</div>
+              <div className="text-2xl font-bold text-slate-900">{expiryRisk}</div>
             </div>
           </div>
 
           {(countryData as any)?.demandPockets && (
-            <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 mt-6 shadow-sm">
-              <h4 className="font-bold text-[#6B1F2B] mb-4 font-serif">🔥 Localization Demand Pockets</h4>
+            <div className="bg-white border border-black/5 rounded-lg p-6 mt-6 shadow-sm">
+              <h4 className="font-bold text-slate-900 mb-4 font-serif">🔥 Localization Demand Pockets</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {((countryData as any).demandPockets || []).slice(0, 4).map((pocket: any, idx: number) => (
-                  <div key={`${pocket.region}-${idx}`} className="border border-[#C3A35E]/20 rounded-lg p-4 bg-[#F8F9FA]">
-                    <div className="text-sm text-[#6B1F2B] mb-1 font-bold">{pocket.region}</div>
-                    <div className="text-xl font-bold text-[#6B1F2B]">{pocket.velocity}</div>
-                    <div className="text-xs text-[#6B1F2B]/70 mt-1">Focus SKU: {pocket.focusSKU}</div>
+                  <div key={`${pocket.region}-${idx}`} className="border border-black/5 rounded-lg p-4 bg-[#F8F9FA]">
+                    <div className="text-sm text-slate-900 mb-1 font-bold">{pocket.region}</div>
+                    <div className="text-xl font-bold text-slate-900">{pocket.velocity}</div>
+                    <div className="text-xs text-slate-900/70 mt-1">Focus SKU: {pocket.focusSKU}</div>
                   </div>
                 ))}
               </div>
@@ -1974,42 +1942,42 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
       {/* Stock Levels Sub-tab */}
       {subTab === 'stock' && (
         <>
-          <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-            <h4 className="font-bold text-[#6B1F2B] mb-4 font-serif">Stock Levels</h4>
-            <p className="text-[#6B1F2B]">Detailed stock tracking for {(countryData as any)?.countryName || selectedCountry}</p>
+          <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+            <h4 className="font-bold text-slate-900 mb-4 font-serif">Stock Levels</h4>
+            <p className="text-slate-900">Detailed stock tracking for {(countryData as any)?.countryName || selectedCountry}</p>
           </div>
 
           {Array.isArray(data?.skus) && data.skus.length > 0 && (
-            <div className="bg-white border border-[#C3A35E]/30 rounded-lg overflow-hidden shadow-sm mt-4">
+            <div className="bg-white border border-black/5 rounded-lg overflow-hidden shadow-sm mt-4">
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
-                  <thead className="bg-[#F8F9FA] border-b border-[#C3A35E]/20">
+                  <thead className="bg-[#F8F9FA] border-b border-black/5">
                     <tr>
-                      <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">SKU</th>
-                      <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Pack Size</th>
-                      <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">MRP</th>
-                      <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">On Hand</th>
-                      <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Min / Safety</th>
-                      <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Coverage (days)</th>
+                      <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">SKU</th>
+                      <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Pack Size</th>
+                      <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">MRP</th>
+                      <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">On Hand</th>
+                      <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Min / Safety</th>
+                      <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Coverage (days)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-[#C3A35E]/10">
                     {data.skus.slice(0, 8).map((sku: any) => (
                       <tr key={sku.sku} className="hover:bg-[#F8F9FA]">
-                        <td className="px-4 py-3 font-medium text-[#6B1F2B]">
+                        <td className="px-4 py-3 font-medium text-slate-900">
                           <div>{sku.description}</div>
-                          <div className="text-xs text-[#6B1F2B]/70">{sku.sku}</div>
+                          <div className="text-xs text-slate-900/70">{sku.sku}</div>
                         </td>
-                        <td className="px-4 py-3 text-[#6B1F2B]">{sku.packSize}</td>
-                        <td className="px-4 py-3 text-[#6B1F2B]">
+                        <td className="px-4 py-3 text-slate-900">{sku.packSize}</td>
+                        <td className="px-4 py-3 text-slate-900">
                           {(countryData as any)?.currency?.symbol || '$'}
                           {sku.mrp?.toLocaleString()}
                         </td>
-                        <td className="px-4 py-3 text-[#6B1F2B]">{sku.onHand}</td>
-                        <td className="px-4 py-3 text-[#6B1F2B]">
+                        <td className="px-4 py-3 text-slate-900">{sku.onHand}</td>
+                        <td className="px-4 py-3 text-slate-900">
                           {sku.minStock}/{sku.safetyStock}
                         </td>
-                        <td className="px-4 py-3 text-[#6B1F2B]">{sku.coverageDays}d</td>
+                        <td className="px-4 py-3 text-slate-900">{sku.coverageDays}d</td>
                       </tr>
                     ))}
                   </tbody>
@@ -2022,70 +1990,70 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
 
       {/* Warehouse Sub-tab */}
       {subTab === 'warehouse' && (
-        <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-          <h4 className="font-bold text-[#6B1F2B] mb-4 font-serif">Warehouse Locations - {(countryData as any)?.countryName || selectedCountry}</h4>
+        <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+          <h4 className="font-bold text-slate-900 mb-4 font-serif">Warehouse Locations - {(countryData as any)?.countryName || selectedCountry}</h4>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-            <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-              <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Total Warehouses</div>
-              <div className="text-xl font-bold text-[#6B1F2B]">
+            <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+              <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Total Warehouses</div>
+              <div className="text-xl font-bold text-slate-900">
                 {warehouses}
               </div>
             </div>
-            <div className="bg-[#6B1F2B] rounded-lg p-4 border border-[#6B1F2B]">
+            <div className="bg-slate-900 rounded-lg p-4 border border-[#6B1F2B]">
               <div className="text-sm text-white/80 mb-1 font-medium uppercase">Total Capacity</div>
               <div className="text-xl font-bold text-white">
                 {coldChainCapacity}
               </div>
             </div>
-            <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-              <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Utilization</div>
-              <div className="text-xl font-bold text-[#6B1F2B]">
+            <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+              <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Utilization</div>
+              <div className="text-xl font-bold text-slate-900">
                 {activeRoutes ? `${Math.min(99, Math.max(35, Math.round((activeRoutes / (warehouses || 1)) * 12)))}%` : 'N/A'}
               </div>
             </div>
           </div>
-          <p className="text-[#6B1F2B] mt-4 text-sm">Country-specific warehouse locations and capacity for {(countryData as any)?.countryName || selectedCountry}</p>
+          <p className="text-slate-900 mt-4 text-sm">Country-specific warehouse locations and capacity for {(countryData as any)?.countryName || selectedCountry}</p>
         </div>
       )}
 
       {/* Expiry Monitor Sub-tab */}
       {subTab === 'expiry' && (
         <div className="space-y-6">
-          <div className="bg-white rounded-lg p-6 border border-[#C3A35E]/30 shadow-sm">
-            <h4 className="text-lg font-bold text-[#6B1F2B] mb-4 font-serif">⏰ Expiry Monitor (FEFO) - First Expiry First Out</h4>
+          <div className="bg-white rounded-lg p-6 border border-black/5 shadow-sm">
+            <h4 className="text-lg font-bold text-slate-900 mb-4 font-serif">⏰ Expiry Monitor (FEFO) - First Expiry First Out</h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-                <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Expiring Soon (30 days)</div>
+              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+                <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Expiring Soon (30 days)</div>
                 <div className="text-2xl font-bold text-orange-600">{expiryRisk || 12}</div>
               </div>
-              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-                <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Expiring This Week</div>
+              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+                <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Expiring This Week</div>
                 <div className="text-2xl font-bold text-red-600">{Math.max(0, expiryRisk - 8) || 3}</div>
               </div>
-              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-                <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Total Expired</div>
-                <div className="text-2xl font-bold text-[#6B1F2B]">{Math.max(0, expiryRisk - 15) || 0}</div>
+              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+                <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Total Expired</div>
+                <div className="text-2xl font-bold text-slate-900">{Math.max(0, expiryRisk - 15) || 0}</div>
               </div>
-              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-                <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">FEFO Compliance</div>
+              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+                <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">FEFO Compliance</div>
                 <div className="text-2xl font-bold text-green-600">98%</div>
               </div>
             </div>
           </div>
 
-          <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-            <h5 className="font-bold text-[#6B1F2B] mb-4 font-serif">📋 Items Expiring Soon</h5>
+          <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+            <h5 className="font-bold text-slate-900 mb-4 font-serif">📋 Items Expiring Soon</h5>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
-                <thead className="bg-[#F8F9FA] border-b border-[#C3A35E]/20">
+                <thead className="bg-[#F8F9FA] border-b border-black/5">
                   <tr>
-                    <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">SKU</th>
-                    <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Description</th>
-                    <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Batch/Lot</th>
-                    <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Expiry Date</th>
-                    <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Days Remaining</th>
-                    <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Quantity</th>
-                    <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Status</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">SKU</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Description</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Batch/Lot</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Expiry Date</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Days Remaining</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Quantity</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Status</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#C3A35E]/10">
@@ -2096,10 +2064,10 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
                     { sku: 'SKU-EXP-004', description: 'Product D - 750ml', batch: 'BATCH-2024-004', expiry: '2025-01-10', days: 21, qty: 150, status: 'Warning' },
                   ].map((item, idx) => (
                     <tr key={idx} className="hover:bg-[#F8F9FA]">
-                      <td className="px-4 py-3 font-medium text-[#6B1F2B]">{item.sku}</td>
-                      <td className="px-4 py-3 text-[#6B1F2B]">{item.description}</td>
-                      <td className="px-4 py-3 text-[#6B1F2B]">{item.batch}</td>
-                      <td className="px-4 py-3 text-[#6B1F2B]">{item.expiry}</td>
+                      <td className="px-4 py-3 font-medium text-slate-900">{item.sku}</td>
+                      <td className="px-4 py-3 text-slate-900">{item.description}</td>
+                      <td className="px-4 py-3 text-slate-900">{item.batch}</td>
+                      <td className="px-4 py-3 text-slate-900">{item.expiry}</td>
                       <td className="px-4 py-3">
                         <span className={`px-2 py-1 rounded text-xs font-bold ${
                           item.days <= 7 ? 'bg-red-100 text-red-800' :
@@ -2109,7 +2077,7 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
                           {item.days} days
                         </span>
                       </td>
-                      <td className="px-4 py-3 text-[#6B1F2B]">{item.qty} units</td>
+                      <td className="px-4 py-3 text-slate-900">{item.qty} units</td>
                       <td className="px-4 py-3">
                         <span className={`px-2 py-1 rounded text-xs font-bold ${
                           item.status === 'Critical' ? 'bg-red-100 text-red-800' :
@@ -2126,18 +2094,18 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
             </div>
           </div>
 
-          <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-            <h5 className="font-bold text-[#6B1F2B] mb-4 font-serif">🔄 FEFO Recommendations</h5>
+          <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+            <h5 className="font-bold text-slate-900 mb-4 font-serif">🔄 FEFO Recommendations</h5>
             <div className="space-y-3">
               {[
                 { action: 'Prioritize shipment of BATCH-2024-001', reason: 'Expires in 5 days', priority: 'High' },
                 { action: 'Move BATCH-2024-002 to front of warehouse', reason: 'Expires in 8 days', priority: 'High' },
                 { action: 'Schedule discount promotion for BATCH-2024-003', reason: 'Expires in 16 days', priority: 'Medium' },
               ].map((rec, idx) => (
-                <div key={idx} className="flex items-start justify-between p-3 bg-[#F8F9FA] rounded-lg border border-[#C3A35E]/20 hover:border-[#C3A35E] transition-colors">
+                <div key={idx} className="flex items-start justify-between p-3 bg-[#F8F9FA] rounded-lg border border-black/5 hover:border-[#C3A35E] transition-colors">
                   <div>
-                    <div className="font-bold text-[#6B1F2B]">{rec.action}</div>
-                    <div className="text-sm text-[#6B1F2B]/70 mt-1">{rec.reason}</div>
+                    <div className="font-bold text-slate-900">{rec.action}</div>
+                    <div className="text-sm text-slate-900/70 mt-1">{rec.reason}</div>
                   </div>
                   <span className={`px-2 py-1 rounded text-xs font-bold ${
                     rec.priority === 'High' ? 'bg-red-100 text-red-800' : 'bg-orange-100 text-orange-800'
@@ -2154,41 +2122,41 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
       {/* Batch Tracking Sub-tab */}
       {subTab === 'batch' && (
         <div className="space-y-6">
-          <div className="bg-white rounded-lg p-6 border border-[#C3A35E]/30 shadow-sm">
-            <h4 className="text-lg font-bold text-[#6B1F2B] mb-4 font-serif">🔍 Batch Tracking & Lot Traceability</h4>
+          <div className="bg-white rounded-lg p-6 border border-black/5 shadow-sm">
+            <h4 className="text-lg font-bold text-slate-900 mb-4 font-serif">🔍 Batch Tracking & Lot Traceability</h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-                <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Active Batches</div>
+              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+                <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Active Batches</div>
                 <div className="text-2xl font-bold text-blue-600">{totalItems || 45}</div>
               </div>
-              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-                <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Under Investigation</div>
+              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+                <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Under Investigation</div>
                 <div className="text-2xl font-bold text-orange-600">2</div>
               </div>
-              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-                <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Traceability Score</div>
+              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+                <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Traceability Score</div>
                 <div className="text-2xl font-bold text-green-600">99%</div>
               </div>
-              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-                <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Quality Issues</div>
+              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+                <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Quality Issues</div>
                 <div className="text-2xl font-bold text-red-600">1</div>
               </div>
             </div>
           </div>
 
-          <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-            <h5 className="font-bold text-[#6B1F2B] mb-4 font-serif">📦 Active Batch Tracking</h5>
+          <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+            <h5 className="font-bold text-slate-900 mb-4 font-serif">📦 Active Batch Tracking</h5>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
-                <thead className="bg-[#F8F9FA] border-b border-[#C3A35E]/20">
+                <thead className="bg-[#F8F9FA] border-b border-black/5">
                   <tr>
-                    <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Batch/Lot ID</th>
-                    <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">SKU</th>
-                    <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Manufacturing Date</th>
-                    <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Expiry Date</th>
-                    <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Quantity</th>
-                    <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Location</th>
-                    <th className="px-4 py-3 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Status</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Batch/Lot ID</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">SKU</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Manufacturing Date</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Expiry Date</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Quantity</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Location</th>
+                    <th className="px-4 py-3 text-left font-bold text-slate-900 uppercase tracking-wider">Status</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#C3A35E]/10">
@@ -2199,12 +2167,12 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
                     { batch: 'BATCH-2024-004', sku: 'SKU-004', mfg: '2024-09-05', expiry: '2025-09-05', qty: 450, location: 'WH-B-02', status: 'Active' },
                   ].map((item, idx) => (
                     <tr key={idx} className="hover:bg-[#F8F9FA]">
-                      <td className="px-4 py-3 font-medium text-[#6B1F2B]">{item.batch}</td>
-                      <td className="px-4 py-3 text-[#6B1F2B]">{item.sku}</td>
-                      <td className="px-4 py-3 text-[#6B1F2B]">{item.mfg}</td>
-                      <td className="px-4 py-3 text-[#6B1F2B]">{item.expiry}</td>
-                      <td className="px-4 py-3 text-[#6B1F2B]">{item.qty} units</td>
-                      <td className="px-4 py-3 text-[#6B1F2B]">{item.location}</td>
+                      <td className="px-4 py-3 font-medium text-slate-900">{item.batch}</td>
+                      <td className="px-4 py-3 text-slate-900">{item.sku}</td>
+                      <td className="px-4 py-3 text-slate-900">{item.mfg}</td>
+                      <td className="px-4 py-3 text-slate-900">{item.expiry}</td>
+                      <td className="px-4 py-3 text-slate-900">{item.qty} units</td>
+                      <td className="px-4 py-3 text-slate-900">{item.location}</td>
                       <td className="px-4 py-3">
                         <span className={`px-2 py-1 rounded text-xs font-bold ${
                           item.status === 'Active' ? 'bg-green-100 text-green-800' :
@@ -2221,16 +2189,16 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
             </div>
           </div>
 
-          <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-            <h5 className="font-bold text-[#6B1F2B] mb-4 font-serif">🔗 Batch Traceability Chain</h5>
+          <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+            <h5 className="font-bold text-slate-900 mb-4 font-serif">🔗 Batch Traceability Chain</h5>
             <div className="space-y-4">
               {[
                 { batch: 'BATCH-2024-001', chain: 'Supplier → Manufacturing → Warehouse → Distribution → Retailer', status: 'Complete' },
                 { batch: 'BATCH-2024-002', chain: 'Supplier → Manufacturing → Warehouse → Distribution', status: 'In Transit' },
               ].map((item, idx) => (
-                <div key={idx} className="p-4 bg-[#F8F9FA] rounded-lg border border-[#C3A35E]/20 hover:border-[#C3A35E] transition-colors">
+                <div key={idx} className="p-4 bg-[#F8F9FA] rounded-lg border border-black/5 hover:border-[#C3A35E] transition-colors">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-bold text-[#6B1F2B]">{item.batch}</span>
+                    <span className="font-bold text-slate-900">{item.batch}</span>
                     <span className={`px-2 py-1 rounded text-xs font-bold ${
                       item.status === 'Complete' ? 'bg-green-100 text-green-800' : 'bg-blue-100 text-blue-800'
                     }`}>
@@ -2272,66 +2240,66 @@ function LogisticsTab({ data, selectedCountry, countryData, gpsIntel, gpsHeatmap
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between flex-wrap gap-4">
-        <h3 className="text-xl font-bold text-[#6B1F2B] font-serif">{t('logistics.logisticsManagement')}</h3>
-        <div className="text-sm text-[#6B1F2B]/80 bg-[#F8F9FA] px-4 py-2 rounded-lg border border-[#C3A35E]/20">
+        <h3 className="text-xl font-bold text-slate-900 font-serif">{t('logistics.logisticsManagement')}</h3>
+        <div className="text-sm text-slate-900/80 bg-[#F8F9FA] px-4 py-2 rounded-lg border border-black/5">
           <strong>Country:</strong> {(countryData as any)?.countryName || selectedCountry}
         </div>
       </div>
 
       {data && (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30 shadow-sm">
-            <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Network Efficiency</div>
-            <div className="text-2xl font-bold text-[#6B1F2B]">{logisticsSummary.efficiency ?? '—'}%</div>
+          <div className="bg-white rounded-lg p-4 border border-black/5 shadow-sm">
+            <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Network Efficiency</div>
+            <div className="text-2xl font-bold text-slate-900">{logisticsSummary.efficiency ?? '—'}%</div>
           </div>
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30 shadow-sm">
-            <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Deliveries / Month</div>
-            <div className="text-2xl font-bold text-[#6B1F2B]">{logisticsSummary.totalDeliveries ?? '—'}</div>
+          <div className="bg-white rounded-lg p-4 border border-black/5 shadow-sm">
+            <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Deliveries / Month</div>
+            <div className="text-2xl font-bold text-slate-900">{logisticsSummary.totalDeliveries ?? '—'}</div>
           </div>
-          <div className="bg-[#6B1F2B] rounded-lg p-4 border border-[#6B1F2B] shadow-sm">
+          <div className="bg-slate-900 rounded-lg p-4 border border-[#6B1F2B] shadow-sm">
             <div className="text-sm text-white/80 mb-1 font-medium uppercase">On-time Rate</div>
             <div className="text-2xl font-bold text-white">{logisticsSummary.onTimeRate ?? '—'}%</div>
           </div>
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30 shadow-sm">
-            <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Active Routes</div>
-            <div className="text-2xl font-bold text-[#6B1F2B]">{logisticsSummary.activeRoutes ?? routes.length}</div>
+          <div className="bg-white rounded-lg p-4 border border-black/5 shadow-sm">
+            <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Active Routes</div>
+            <div className="text-2xl font-bold text-slate-900">{logisticsSummary.activeRoutes ?? routes.length}</div>
           </div>
         </div>
       )}
 
       {/* GPS Integration Section */}
-      <div className="bg-white rounded-lg p-6 border border-[#C3A35E]/30 shadow-sm">
-        <h4 className="text-lg font-bold text-[#6B1F2B] mb-4 font-serif">🗺️ GPS Coverage & Retailers - {(countryData as any)?.countryName || selectedCountry}</h4>
+      <div className="bg-white rounded-lg p-6 border border-black/5 shadow-sm">
+        <h4 className="text-lg font-bold text-slate-900 mb-4 font-serif">🗺️ GPS Coverage & Retailers - {(countryData as any)?.countryName || selectedCountry}</h4>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-            <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Retailers Tracked</div>
-            <div className="text-2xl font-bold text-[#6B1F2B]">{totalRetailers}</div>
+          <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+            <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Retailers Tracked</div>
+            <div className="text-2xl font-bold text-slate-900">{totalRetailers}</div>
           </div>
-          <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-            <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Avg Monthly Sales</div>
-            <div className="text-2xl font-bold text-[#6B1F2B]">
+          <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+            <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Avg Monthly Sales</div>
+            <div className="text-2xl font-bold text-slate-900">
               {currencySymbol}{(avgSales / 1000).toFixed(1)}K
             </div>
           </div>
-          <div className="bg-[#6B1F2B] rounded-lg p-4 border border-[#6B1F2B]">
+          <div className="bg-slate-900 rounded-lg p-4 border border-[#6B1F2B]">
             <div className="text-sm text-white/80 mb-1 font-medium uppercase">Heatmap Points</div>
             <div className="text-2xl font-bold text-white">{heatmap?.totalPoints || totalRetailers}</div>
           </div>
-          <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-            <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">White Spaces</div>
-            <div className="text-2xl font-bold text-[#6B1F2B]">{whitespaceCount}</div>
+          <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+            <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">White Spaces</div>
+            <div className="text-2xl font-bold text-slate-900">{whitespaceCount}</div>
           </div>
       {heatmap?.points && heatmap.points.length > 0 && (
-        <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 col-span-2 md:col-span-4 mt-4 shadow-sm">
-          <h4 className="font-bold text-[#6B1F2B] mb-4 font-serif">📍 Coverage Hotspots</h4>
+        <div className="bg-white border border-black/5 rounded-lg p-6 col-span-2 md:col-span-4 mt-4 shadow-sm">
+          <h4 className="font-bold text-slate-900 mb-4 font-serif">📍 Coverage Hotspots</h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {heatmap.points.slice(0, 6).map((point: any, idx: number) => (
-              <div key={`${point.lat}-${idx}`} className="border border-[#C3A35E]/20 rounded-lg p-4 bg-[#F8F9FA]">
-                <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium">Lat/Lng</div>
-                <div className="text-lg font-bold text-[#6B1F2B]">
+              <div key={`${point.lat}-${idx}`} className="border border-black/5 rounded-lg p-4 bg-[#F8F9FA]">
+                <div className="text-sm text-slate-900/70 mb-1 font-medium">Lat/Lng</div>
+                <div className="text-lg font-bold text-slate-900">
                   {point.lat.toFixed(3)}, {point.lng.toFixed(3)}
                 </div>
-                <div className="text-xs text-[#6B1F2B] mt-1">Intensity: {(point.intensity * 100).toFixed(0)}%</div>
+                <div className="text-xs text-slate-900 mt-1">Intensity: {(point.intensity * 100).toFixed(0)}%</div>
               </div>
             ))}
           </div>
@@ -2341,20 +2309,20 @@ function LogisticsTab({ data, selectedCountry, countryData, gpsIntel, gpsHeatmap
       </div>
 
       {localisationGps && (
-        <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-          <h4 className="font-bold text-[#6B1F2B] mb-4 font-serif">🌐 FIRST-BRICK Coverage Intel</h4>
+        <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+          <h4 className="font-bold text-slate-900 mb-4 font-serif">🌐 FIRST-BRICK Coverage Intel</h4>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-              <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Coverage %</div>
+            <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+              <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Coverage %</div>
               <div className="text-2xl font-bold text-emerald-700">{localisationGps.coveragePercent}%</div>
             </div>
-            <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20">
-              <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Active Routes</div>
+            <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+              <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Active Routes</div>
               <div className="text-2xl font-bold text-emerald-700">{localisationGps.activeRoutes}</div>
             </div>
-            <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/20 col-span-2">
-              <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Priority Cities</div>
-              <div className="text-xs text-[#6B1F2B]">
+            <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5 col-span-2">
+              <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Priority Cities</div>
+              <div className="text-xs text-slate-900">
                 {localisationGps.priorityCities?.join(', ') || '—'}
               </div>
             </div>
@@ -2363,15 +2331,15 @@ function LogisticsTab({ data, selectedCountry, countryData, gpsIntel, gpsHeatmap
       )}
 
       {/* Retailer Table */}
-      <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-        <h4 className="font-bold text-[#6B1F2B] mb-4 font-serif">Top Retail Nodes</h4>
+      <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+        <h4 className="font-bold text-slate-900 mb-4 font-serif">Top Retail Nodes</h4>
         {retailers.length === 0 ? (
-          <p className="text-sm text-[#6B1F2B]">No retailer telemetry for this market yet.</p>
+          <p className="text-sm text-slate-900">No retailer telemetry for this market yet.</p>
         ) : (
           <div className="overflow-x-auto">
             <table className="min-w-full">
               <thead>
-                <tr className="text-left text-xs font-bold text-[#6B1F2B] uppercase tracking-wider border-b border-[#C3A35E]/20 bg-[#F8F9FA]">
+                <tr className="text-left text-xs font-bold text-slate-900 uppercase tracking-wider border-b border-black/5 bg-[#F8F9FA]">
                   <th className="px-4 py-3">Retailer</th>
                   <th className="px-4 py-3">City</th>
                   <th className="px-4 py-3">Monthly Sales</th>
@@ -2381,12 +2349,12 @@ function LogisticsTab({ data, selectedCountry, countryData, gpsIntel, gpsHeatmap
               <tbody className="divide-y divide-[#C3A35E]/10 text-sm">
                 {retailers.slice(0, 6).map((retailer: any) => (
                   <tr key={retailer.id} className="hover:bg-[#F8F9FA]">
-                    <td className="px-4 py-3 font-medium text-[#6B1F2B]">{retailer.outletName}</td>
-                    <td className="px-4 py-3 text-[#6B1F2B]">{retailer.city}</td>
-                    <td className="px-4 py-3 text-[#6B1F2B] font-medium">
+                    <td className="px-4 py-3 font-medium text-slate-900">{retailer.outletName}</td>
+                    <td className="px-4 py-3 text-slate-900">{retailer.city}</td>
+                    <td className="px-4 py-3 text-slate-900 font-medium">
                       {currencySymbol}{retailer.monthlySales ? retailer.monthlySales.toLocaleString() : '—'}
                     </td>
-                    <td className="px-4 py-3 text-[#6B1F2B]">
+                    <td className="px-4 py-3 text-slate-900">
                       {retailer.lat}, {retailer.lng}
                     </td>
                   </tr>
@@ -2398,23 +2366,23 @@ function LogisticsTab({ data, selectedCountry, countryData, gpsIntel, gpsHeatmap
       </div>
 
       {/* Satellite White Spaces */}
-      <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-        <h4 className="font-bold text-[#6B1F2B] mb-4 font-serif">🛰️ Satellite White Spaces</h4>
+      <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+        <h4 className="font-bold text-slate-900 mb-4 font-serif">🛰️ Satellite White Spaces</h4>
         {satelliteIntel ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="border border-[#C3A35E]/20 rounded-lg p-4 bg-[#F8F9FA]">
-              <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">White Spaces</div>
-              <div className="text-2xl font-bold text-[#6B1F2B]">{satelliteIntel.whitespaces}</div>
+            <div className="border border-black/5 rounded-lg p-4 bg-[#F8F9FA]">
+              <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">White Spaces</div>
+              <div className="text-2xl font-bold text-slate-900">{satelliteIntel.whitespaces}</div>
             </div>
-            <div className="border border-[#C3A35E]/20 rounded-lg p-4 bg-[#F8F9FA]">
-              <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Density Index</div>
-              <div className="text-2xl font-bold text-[#6B1F2B]">{(satelliteIntel.densityIndex * 100).toFixed(0)}%</div>
+            <div className="border border-black/5 rounded-lg p-4 bg-[#F8F9FA]">
+              <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Density Index</div>
+              <div className="text-2xl font-bold text-slate-900">{(satelliteIntel.densityIndex * 100).toFixed(0)}%</div>
             </div>
             <div className="md:col-span-2">
-              <h5 className="text-sm font-bold text-[#6B1F2B] mb-2 font-serif">Priority Zones</h5>
-              <div className="flex flex-wrap gap-2 text-xs text-[#6B1F2B]">
+              <h5 className="text-sm font-bold text-slate-900 mb-2 font-serif">Priority Zones</h5>
+              <div className="flex flex-wrap gap-2 text-xs text-slate-900">
                 {satelliteIntel.priorityZones?.map((zone: string) => (
-                  <span key={zone} className="px-3 py-1 bg-[#C3A35E]/10 border border-[#C3A35E]/30 rounded-full font-medium">{zone}</span>
+                  <span key={zone} className="px-3 py-1 bg-[#C3A35E]/10 border border-black/5 rounded-full font-medium">{zone}</span>
                 ))}
               </div>
             </div>
@@ -2422,70 +2390,70 @@ function LogisticsTab({ data, selectedCountry, countryData, gpsIntel, gpsHeatmap
         ) : whitespaceReport ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {whitespaceReport.tiles?.filter((tile: any) => tile.whiteSpace).slice(0, 6).map((tile: any) => (
-              <div key={tile.tileId} className="border border-[#C3A35E]/20 rounded-lg p-4 bg-[#F8F9FA]">
+              <div key={tile.tileId} className="border border-black/5 rounded-lg p-4 bg-[#F8F9FA]">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="font-bold text-[#6B1F2B]">{tile.territory}</span>
-                  <span className="text-xs text-[#6B1F2B] bg-[#C3A35E]/20 px-2 py-0.5 rounded">White space</span>
+                  <span className="font-bold text-slate-900">{tile.territory}</span>
+                  <span className="text-xs text-slate-900 bg-[#C3A35E]/20 px-2 py-0.5 rounded">White space</span>
                 </div>
-                <p className="text-xs text-[#6B1F2B]">Lat/Lng: {tile.centerLat}, {tile.centerLng}</p>
-                <p className="text-xs text-[#6B1F2B]">Coverage Score: {tile.coverageScore}</p>
+                <p className="text-xs text-slate-900">Lat/Lng: {tile.centerLat}, {tile.centerLng}</p>
+                <p className="text-xs text-slate-900">Coverage Score: {tile.coverageScore}</p>
               </div>
             ))}
           </div>
         ) : (
-          <p className="text-sm text-[#6B1F2B]">Satellite analysis not available.</p>
+          <p className="text-sm text-slate-900">Satellite analysis not available.</p>
         )}
       </div>
 
       {/* Logistics Statistics */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-          <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">{t('logistics.efficiency')}</div>
-          <div className="text-2xl font-bold text-[#6B1F2B]">{data?.efficiency || 0}%</div>
+        <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+          <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">{t('logistics.efficiency')}</div>
+          <div className="text-2xl font-bold text-slate-900">{data?.efficiency || 0}%</div>
         </div>
-        <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-          <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">{t('logistics.deliveries')}</div>
-          <div className="text-2xl font-bold text-[#6B1F2B]">{data?.totalDeliveries || 0}</div>
+        <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+          <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">{t('logistics.deliveries')}</div>
+          <div className="text-2xl font-bold text-slate-900">{data?.totalDeliveries || 0}</div>
         </div>
-        <div className="bg-[#6B1F2B] border border-[#6B1F2B] rounded-lg p-4 shadow-sm">
+        <div className="bg-slate-900 border border-[#6B1F2B] rounded-lg p-4 shadow-sm">
           <div className="text-sm text-white/80 mb-1 font-medium uppercase">{t('logistics.onTime')}</div>
           <div className="text-2xl font-bold text-white">{data?.onTimeRate || 0}%</div>
         </div>
-        <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-          <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">{t('logistics.routes')}</div>
-          <div className="text-2xl font-bold text-[#6B1F2B]">{(data as any)?.activeRoutes || 0}</div>
+        <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+          <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">{t('logistics.routes')}</div>
+          <div className="text-2xl font-bold text-slate-900">{(data as any)?.activeRoutes || 0}</div>
         </div>
-        <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-          <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase">Tracked Retailers</div>
-          <div className="text-2xl font-bold text-[#6B1F2B]">{totalRetailers}</div>
+        <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+          <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Tracked Retailers</div>
+          <div className="text-2xl font-bold text-slate-900">{totalRetailers}</div>
         </div>
-        <div className="bg-[#6B1F2B] border border-[#6B1F2B] rounded-lg p-4 shadow-sm">
+        <div className="bg-slate-900 border border-[#6B1F2B] rounded-lg p-4 shadow-sm">
           <div className="text-sm text-white/80 mb-1 font-medium uppercase">Coverage Rate</div>
           <div className="text-2xl font-bold text-white">{coverageRate}%</div>
         </div>
       </div>
-      <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-        <h4 className="font-bold text-[#6B1F2B] mb-4 font-serif">🛰️ Priority White Space Tiles</h4>
+      <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+        <h4 className="font-bold text-slate-900 mb-4 font-serif">🛰️ Priority White Space Tiles</h4>
         {logisticWhiteSpaces.length === 0 ? (
-          <p className="text-sm text-[#6B1F2B]">No white space tiles for this country.</p>
+          <p className="text-sm text-slate-900">No white space tiles for this country.</p>
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
-              <thead className="bg-[#F8F9FA] border-b border-[#C3A35E]/20">
+              <thead className="bg-[#F8F9FA] border-b border-black/5">
                 <tr>
-                  <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Tile</th>
-                  <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Population</th>
-                  <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Retailers</th>
-                  <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Coverage Score</th>
+                  <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Tile</th>
+                  <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Population</th>
+                  <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Retailers</th>
+                  <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Coverage Score</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#C3A35E]/10">
                 {logisticWhiteSpaces.map((tile: any) => (
                   <tr key={tile.tileId} className="hover:bg-[#F8F9FA]">
-                    <td className="px-4 py-2 font-medium text-[#6B1F2B]">{tile.tileId}</td>
-                    <td className="px-4 py-2 text-[#6B1F2B]">{tile.approxPopulation.toLocaleString()}</td>
-                    <td className="px-4 py-2 text-[#6B1F2B]">{tile.retailerCount}</td>
-                    <td className="px-4 py-2 text-[#6B1F2B]">{tile.coverageScore}</td>
+                    <td className="px-4 py-2 font-medium text-slate-900">{tile.tileId}</td>
+                    <td className="px-4 py-2 text-slate-900">{tile.approxPopulation.toLocaleString()}</td>
+                    <td className="px-4 py-2 text-slate-900">{tile.retailerCount}</td>
+                    <td className="px-4 py-2 text-slate-900">{tile.coverageScore}</td>
                   </tr>
                 ))}
               </tbody>
@@ -2494,28 +2462,28 @@ function LogisticsTab({ data, selectedCountry, countryData, gpsIntel, gpsHeatmap
         )}
       </div>
 
-      <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-        <h4 className="font-bold text-[#6B1F2B] mb-4 font-serif">🚚 Distributor Routes</h4>
+      <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+        <h4 className="font-bold text-slate-900 mb-4 font-serif">🚚 Distributor Routes</h4>
         {routes.length === 0 ? (
-          <p className="text-sm text-[#6B1F2B]">No distributor routes captured for this market.</p>
+          <p className="text-sm text-slate-900">No distributor routes captured for this market.</p>
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
-              <thead className="bg-[#F8F9FA] border-b border-[#C3A35E]/20">
+              <thead className="bg-[#F8F9FA] border-b border-black/5">
                 <tr>
-                  <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Route ID</th>
-                  <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Distributor</th>
-                  <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Distance (km)</th>
-                  <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Duration (min)</th>
+                  <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Route ID</th>
+                  <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Distributor</th>
+                  <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Distance (km)</th>
+                  <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Duration (min)</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#C3A35E]/10">
                 {routes.slice(0, 5).map((route: any) => (
                   <tr key={route.routeId} className="hover:bg-[#F8F9FA]">
-                    <td className="px-4 py-2 font-medium text-[#6B1F2B]">{route.routeId}</td>
-                    <td className="px-4 py-2 text-[#6B1F2B]">{route.distributor}</td>
-                    <td className="px-4 py-2 text-[#6B1F2B]">{route.distanceKm}</td>
-                    <td className="px-4 py-2 text-[#6B1F2B]">{route.durationMinutes}</td>
+                    <td className="px-4 py-2 font-medium text-slate-900">{route.routeId}</td>
+                    <td className="px-4 py-2 text-slate-900">{route.distributor}</td>
+                    <td className="px-4 py-2 text-slate-900">{route.distanceKm}</td>
+                    <td className="px-4 py-2 text-slate-900">{route.durationMinutes}</td>
                   </tr>
                 ))}
               </tbody>
@@ -2547,16 +2515,16 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
     <div className="space-y-6">
       {/* Reporting Module - Export Buttons */}
       <div className="flex items-center justify-end gap-2 mb-4">
-        <button className="bg-white text-[#6B1F2B] px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#F8F9FA] flex items-center gap-2 border border-[#C3A35E]/30 shadow-sm transition-all">
+        <button className="bg-white text-slate-900 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#F8F9FA] flex items-center gap-2 border border-black/5 shadow-sm transition-all">
           📄 Export PDF
         </button>
-        <button className="bg-white text-[#6B1F2B] px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#F8F9FA] flex items-center gap-2 border border-[#C3A35E]/30 shadow-sm transition-all">
+        <button className="bg-white text-slate-900 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#F8F9FA] flex items-center gap-2 border border-black/5 shadow-sm transition-all">
           📊 Export Excel
         </button>
       </div>
       <div className="flex items-center justify-between flex-wrap gap-4">
-        <h3 className="text-xl font-bold text-[#6B1F2B] font-serif">{t('finance.financeManagement')}</h3>
-        <div className="text-sm text-[#6B1F2B]/80 bg-[#F8F9FA] px-4 py-2 rounded-lg border border-[#C3A35E]/20">
+        <h3 className="text-xl font-bold text-slate-900 font-serif">{t('finance.financeManagement')}</h3>
+        <div className="text-sm text-slate-900/80 bg-[#F8F9FA] px-4 py-2 rounded-lg border border-black/5">
           <strong>{countryProfile?.name || (countryData as any)?.countryName || selectedCountry}</strong> | 
           Currency: {currency.symbol} {currency.code} | 
           VAT: {vatRate}% | GST: {gstRate}% | Import Duty: {importDuty}% | 
@@ -2565,17 +2533,17 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
       </div>
 
       {/* Sub-tabs */}
-      <div className="flex gap-2 border-b border-[#C3A35E]/30 bg-[#F8F9FA] px-2 py-1 rounded-t-lg overflow-x-auto">
+      <div className="flex gap-2 border-b border-black/5 bg-[#F8F9FA] px-2 py-1 rounded-t-lg overflow-x-auto">
         {(['overview', 'ar', 'ap', 'gl', 'cash', 'payments'] as const).map((tab) => (
           <button
             key={tab}
             onClick={() => setSubTab(tab)}
             className={`px-4 py-2.5 transition-all whitespace-nowrap flex-shrink-0 rounded-t-lg font-medium text-sm ${
               subTab === tab
-                ? 'border-b-2 border-[#6B1F2B] text-[#6B1F2B] bg-white shadow-sm'
-                : 'text-[#6B1F2B]/70 hover:text-[#6B1F2B] hover:bg-white/50 border-b border-transparent'
+                ? 'border-b-2 border-[#6B1F2B] text-slate-900 bg-white shadow-sm'
+                : 'text-slate-900/70 hover:text-slate-900 hover:bg-white/50 border-b border-transparent'
             }`}
-            style={{ fontFamily: 'Inter, system-ui, sans-serif', letterSpacing: '0.025em' }}
+            
           >
             {tab === 'ar' ? 'AR' : tab === 'ap' ? 'AP' : tab === 'gl' ? 'GL' : tab === 'payments' ? '💳 Payments' : tab.charAt(0).toUpperCase() + tab.slice(1)}
           </button>
@@ -2586,54 +2554,54 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
       {subTab === 'overview' && (
         <>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-              <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase tracking-wide">{t('finance.revenue')}</div>
-              <div className="text-2xl font-bold text-[#6B1F2B]">
+            <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+              <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">{t('finance.revenue')}</div>
+              <div className="text-2xl font-bold text-slate-900">
                 {currency.symbol}{((data?.revenue || 0) / 1000).toFixed(1)}K
               </div>
             </div>
-            <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-              <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase tracking-wide">{t('finance.expenses')}</div>
-              <div className="text-2xl font-bold text-[#6B1F2B]">
+            <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+              <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">{t('finance.expenses')}</div>
+              <div className="text-2xl font-bold text-slate-900">
                 {currency.symbol}{((data?.expenses || 0) / 1000).toFixed(1)}K
               </div>
             </div>
-            <div className="bg-[#6B1F2B] border border-[#6B1F2B] rounded-lg p-4 shadow-sm text-white">
+            <div className="bg-slate-900 border border-[#6B1F2B] rounded-lg p-4 shadow-sm text-white">
               <div className="text-sm text-white/80 mb-1 font-medium uppercase tracking-wide">{t('finance.profit')}</div>
               <div className="text-2xl font-bold text-white">
                 {currency.symbol}{((data?.profit || 0) / 1000).toFixed(1)}K
               </div>
             </div>
-            <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-              <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase tracking-wide">{t('finance.pending')}</div>
-              <div className="text-2xl font-bold text-[#6B1F2B]">
+            <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+              <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">{t('finance.pending')}</div>
+              <div className="text-2xl font-bold text-slate-900">
                 {currency.symbol}{((data?.pendingPayments || 0) / 1000).toFixed(1)}K
               </div>
             </div>
           </div>
 
-          <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 mt-4 shadow-sm">
-            <h4 className="font-bold text-[#6B1F2B] mb-4 font-serif">📦 Trade Flow Snapshot</h4>
+          <div className="bg-white border border-black/5 rounded-lg p-6 mt-4 shadow-sm">
+            <h4 className="font-bold text-slate-900 mb-4 font-serif">📦 Trade Flow Snapshot</h4>
             {tradeHsCodes.length === 0 ? (
-              <p className="text-sm text-[#6B1F2B]/70">Trade data unavailable for this country.</p>
+              <p className="text-sm text-slate-900/70">Trade data unavailable for this country.</p>
             ) : (
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
-                  <thead className="bg-[#F8F9FA] border-b border-[#C3A35E]/20">
+                  <thead className="bg-[#F8F9FA] border-b border-black/5">
                     <tr>
-                      <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">HS Code</th>
-                      <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Description</th>
-                      <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Imports (USD)</th>
-                      <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Exports (USD)</th>
+                      <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">HS Code</th>
+                      <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Description</th>
+                      <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Imports (USD)</th>
+                      <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Exports (USD)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-[#C3A35E]/10">
                     {tradeHsCodes.slice(0, 5).map((flow: any) => (
                       <tr key={flow.hsCode} className="hover:bg-[#F8F9FA]">
-                        <td className="px-4 py-2 font-medium text-[#6B1F2B]">{flow.hsCode}</td>
-                        <td className="px-4 py-2 text-[#6B1F2B]">{flow.description}</td>
-                        <td className="px-4 py-2 text-[#6B1F2B] font-medium">${flow.importValueUSD.toLocaleString()}</td>
-                        <td className="px-4 py-2 text-[#6B1F2B] font-medium">${flow.exportValueUSD.toLocaleString()}</td>
+                        <td className="px-4 py-2 font-medium text-slate-900">{flow.hsCode}</td>
+                        <td className="px-4 py-2 text-slate-900">{flow.description}</td>
+                        <td className="px-4 py-2 text-slate-900 font-medium">${flow.importValueUSD.toLocaleString()}</td>
+                        <td className="px-4 py-2 text-slate-900 font-medium">${flow.exportValueUSD.toLocaleString()}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -2643,22 +2611,22 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
           </div>
 
           {(countryData as any)?.procurement && (
-            <div className="bg-[#F8F9FA] rounded-lg p-6 border border-[#C3A35E]/30 mt-6 shadow-sm">
-              <h4 className="text-lg font-bold text-[#6B1F2B] mb-4 font-serif">🛒 Procurement Hotspots</h4>
+            <div className="bg-[#F8F9FA] rounded-lg p-6 border border-black/5 mt-6 shadow-sm">
+              <h4 className="text-lg font-bold text-slate-900 mb-4 font-serif">🛒 Procurement Hotspots</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {((countryData as any).procurement?.hotspots || []).map((spot: any) => (
-                  <div key={spot.region} className="bg-white rounded-lg p-4 border border-[#C3A35E]/20 shadow-sm">
-                    <div className="text-sm font-bold text-[#6B1F2B] mb-1">{spot.region}</div>
-                    <div className="text-xs text-[#6B1F2B]/70">Materials: {spot.materials?.join(', ')}</div>
+                  <div key={spot.region} className="bg-white rounded-lg p-4 border border-black/5 shadow-sm">
+                    <div className="text-sm font-bold text-slate-900 mb-1">{spot.region}</div>
+                    <div className="text-xs text-slate-900/70">Materials: {spot.materials?.join(', ')}</div>
                   </div>
                 ))}
               </div>
               {((countryData as any).procurement?.suppliers || []).length > 0 && (
                 <div className="mt-4">
-                  <h5 className="text-sm font-bold text-[#6B1F2B] mb-2 uppercase tracking-wide">Key Suppliers</h5>
-                  <div className="flex flex-wrap gap-2 text-xs text-[#6B1F2B]">
+                  <h5 className="text-sm font-bold text-slate-900 mb-2 uppercase tracking-wide">Key Suppliers</h5>
+                  <div className="flex flex-wrap gap-2 text-xs text-slate-900">
                     {((countryData as any).procurement?.suppliers || []).slice(0, 4).map((supplier: any) => (
-                      <span key={supplier.name} className="px-3 py-1 bg-white border border-[#C3A35E]/30 rounded-full shadow-sm">
+                      <span key={supplier.name} className="px-3 py-1 bg-white border border-black/5 rounded-full shadow-sm">
                         {supplier.name} • {supplier.category} • {supplier.reliability}
                       </span>
                     ))}
@@ -2674,26 +2642,26 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
       {subTab === 'payments' && (
         <div className="space-y-6">
           {/* Payment Connectors Section */}
-          <div className="bg-[#F8F9FA] rounded-lg p-6 border border-[#C3A35E]/30 shadow-sm">
-            <h4 className="text-lg font-bold text-[#6B1F2B] mb-4 font-serif">💳 Payment Connectors - {(countryData as any)?.countryName || selectedCountry}</h4>
+          <div className="bg-[#F8F9FA] rounded-lg p-6 border border-black/5 shadow-sm">
+            <h4 className="text-lg font-bold text-slate-900 mb-4 font-serif">💳 Payment Connectors - {(countryData as any)?.countryName || selectedCountry}</h4>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {paymentConnectors.length > 0 ? (
                 paymentConnectors.map((connector: any, idx: number) => (
-                  <div key={idx} className="bg-white rounded-lg p-4 border border-[#C3A35E]/20 shadow-sm hover:shadow-md transition-all">
+                  <div key={idx} className="bg-white rounded-lg p-4 border border-black/5 shadow-sm hover:shadow-md transition-all">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="font-bold text-[#6B1F2B] text-sm">{connector.name}</span>
+                      <span className="font-bold text-slate-900 text-sm">{connector.name}</span>
                       <div className={`w-2 h-2 rounded-full ${
                         connector.status === 'active' ? 'bg-green-500' :
                         connector.status === 'pending' ? 'bg-yellow-500' : 'bg-red-500'
                       }`}></div>
                     </div>
-                    <div className="text-xs text-[#6B1F2B]/70">
+                    <div className="text-xs text-slate-900/70">
                       Priority: {connector.priority} | Status: {connector.status}
                     </div>
                   </div>
                 ))
               ) : (
-                <div className="col-span-full text-center py-4 text-[#6B1F2B]/70">
+                <div className="col-span-full text-center py-4 text-slate-900/70">
                   Loading payment connectors for {(countryData as any)?.countryName || selectedCountry}...
                 </div>
               )}
@@ -2701,16 +2669,16 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
           </div>
 
           {/* Payment Breakdown */}
-          <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-            <h4 className="font-bold text-[#6B1F2B] mb-4 font-serif">Payment Breakdown (Last 30 Days)</h4>
+          <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+            <h4 className="font-bold text-slate-900 mb-4 font-serif">Payment Breakdown (Last 30 Days)</h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {paymentConnectors.slice(0, 4).map((connector: any, idx: number) => (
-                <div key={idx} className="bg-white rounded-lg p-4 border border-[#C3A35E]/20">
-                  <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium">{connector.name}</div>
-                  <div className="text-xl font-bold text-[#6B1F2B]">
+                <div key={idx} className="bg-white rounded-lg p-4 border border-black/5">
+                  <div className="text-sm text-slate-900/70 mb-1 font-medium">{connector.name}</div>
+                  <div className="text-xl font-bold text-slate-900">
                     {currency.symbol}{((Math.random() * 50000 + 10000) / 1000).toFixed(1)}K
                   </div>
-                  <div className="text-xs text-[#6B1F2B]/60 mt-1">
+                  <div className="text-xs text-slate-900/60 mt-1">
                     {Math.round(Math.random() * 20 + 10)}% of total
                   </div>
                 </div>
@@ -2719,60 +2687,60 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
           </div>
 
           {/* Settlement Summary */}
-          <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-6 shadow-sm">
-            <h4 className="font-bold text-[#6B1F2B] mb-4 font-serif">Settlement Summary</h4>
+          <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
+            <h4 className="font-bold text-slate-900 mb-4 font-serif">Settlement Summary</h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-[#C3A35E]/30">
-                <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase tracking-wide">Total Settled</div>
-                <div className="text-2xl font-bold text-[#6B1F2B]">
+              <div className="bg-[#F8F9FA] rounded-lg p-4 border border-black/5">
+                <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">Total Settled</div>
+                <div className="text-2xl font-bold text-slate-900">
                   {currency.symbol}{((data?.revenue || 4500000) / 1000).toFixed(1)}K
                 </div>
               </div>
-              <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30 shadow-sm">
-                <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase tracking-wide">Pending</div>
-                <div className="text-2xl font-bold text-[#6B1F2B]">
+              <div className="bg-white rounded-lg p-4 border border-black/5 shadow-sm">
+                <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">Pending</div>
+                <div className="text-2xl font-bold text-slate-900">
                   {currency.symbol}{((data?.pendingPayments || 125000) / 1000).toFixed(1)}K
                 </div>
               </div>
               <div className="bg-red-50 rounded-lg p-4 border border-red-200">
-                <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase tracking-wide">Failed</div>
-                <div className="text-2xl font-bold text-[#6B1F2B]">
+                <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">Failed</div>
+                <div className="text-2xl font-bold text-slate-900">
                   {currency.symbol}{((Math.random() * 5000) / 1000).toFixed(1)}K
                 </div>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border border-green-200">
-                <div className="text-sm text-[#6B1F2B]/70 mb-1 font-medium uppercase tracking-wide">Reconciliation</div>
-                <div className="text-2xl font-bold text-[#6B1F2B]">98%</div>
+                <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">Reconciliation</div>
+                <div className="text-2xl font-bold text-slate-900">98%</div>
               </div>
             </div>
           </div>
 
           {/* Failed/Flagged Payments */}
-          <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-4 shadow-sm">
-            <h4 className="font-bold text-[#6B1F2B] mb-4 font-serif">Failed/Flagged Payments</h4>
+          <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
+            <h4 className="font-bold text-slate-900 mb-4 font-serif">Failed/Flagged Payments</h4>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
-                <thead className="bg-[#F8F9FA] border-b border-[#C3A35E]/20">
+                <thead className="bg-[#F8F9FA] border-b border-black/5">
                   <tr>
-                    <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Payment ID</th>
-                    <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Method</th>
-                    <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Amount</th>
-                    <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Status</th>
-                    <th className="px-4 py-2 text-left font-bold text-[#6B1F2B] uppercase tracking-wider">Date</th>
+                    <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Payment ID</th>
+                    <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Method</th>
+                    <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Amount</th>
+                    <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Status</th>
+                    <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Date</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#C3A35E]/10">
                   {[1, 2, 3].map((idx) => (
                     <tr key={idx} className="hover:bg-[#F8F9FA]">
-                      <td className="px-4 py-2 font-medium text-[#6B1F2B]">#PAY{String(idx).padStart(6, '0')}</td>
-                      <td className="px-4 py-2 text-[#6B1F2B]">{paymentConnectors[idx % paymentConnectors.length]?.name || 'N/A'}</td>
-                      <td className="px-4 py-2 text-[#6B1F2B] font-bold">
+                      <td className="px-4 py-2 font-medium text-slate-900">#PAY{String(idx).padStart(6, '0')}</td>
+                      <td className="px-4 py-2 text-slate-900">{paymentConnectors[idx % paymentConnectors.length]?.name || 'N/A'}</td>
+                      <td className="px-4 py-2 text-slate-900 font-bold">
                         {currency.symbol}{(Math.random() * 5000 + 1000).toFixed(2)}
                       </td>
                       <td className="px-4 py-2">
                         <span className="px-2 py-1 rounded bg-red-100 text-red-800 text-xs font-bold uppercase tracking-wide">Failed</span>
                       </td>
-                      <td className="px-4 py-2 text-[#6B1F2B]">
+                      <td className="px-4 py-2 text-slate-900">
                         {new Date(Date.now() - Math.random() * 7 * 24 * 60 * 60 * 1000).toLocaleDateString()}
                       </td>
                     </tr>
@@ -2786,37 +2754,37 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
 
       {/* Workflow Engine UI - Finance Tab */}
       {subTab === 'overview' && (
-        <div className="bg-[#F8F9FA] rounded-lg p-6 border border-[#C3A35E]/30 shadow-sm mt-6">
-          <h4 className="text-lg font-bold text-[#6B1F2B] mb-4 font-serif">⚙️ Workflow Engine - Finance Management</h4>
+        <div className="bg-[#F8F9FA] rounded-lg p-6 border border-black/5 shadow-sm mt-6">
+          <h4 className="text-lg font-bold text-slate-900 mb-4 font-serif">⚙️ Workflow Engine - Finance Management</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* Payment Exceptions */}
-            <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/20 shadow-sm hover:shadow-md transition-all">
+            <div className="bg-white rounded-lg p-4 border border-black/5 shadow-sm hover:shadow-md transition-all">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-sm font-bold text-[#6B1F2B]">Payment Exceptions</span>
+                <span className="text-sm font-bold text-slate-900">Payment Exceptions</span>
                 <span className="text-xs bg-red-100 text-red-800 px-2 py-1 rounded-full font-bold">4</span>
               </div>
-              <div className="text-xs text-[#6B1F2B]/70">Failed or flagged payments</div>
-              <button className="mt-2 text-xs text-[#C3A35E] hover:text-[#6B1F2B] font-bold uppercase tracking-wider">Resolve →</button>
+              <div className="text-xs text-slate-900/70">Failed or flagged payments</div>
+              <button className="mt-2 text-xs text-blue-600 hover:text-slate-900 font-bold uppercase tracking-wider">Resolve →</button>
             </div>
 
             {/* Settlement Delays */}
-            <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/20 shadow-sm hover:shadow-md transition-all">
+            <div className="bg-white rounded-lg p-4 border border-black/5 shadow-sm hover:shadow-md transition-all">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-sm font-bold text-[#6B1F2B]">Settlement Delays</span>
-                <span className="text-xs bg-[#C3A35E]/20 text-[#6B1F2B] px-2 py-1 rounded-full font-bold">2</span>
+                <span className="text-sm font-bold text-slate-900">Settlement Delays</span>
+                <span className="text-xs bg-[#C3A35E]/20 text-slate-900 px-2 py-1 rounded-full font-bold">2</span>
               </div>
-              <div className="text-xs text-[#6B1F2B]/70">Overdue settlements</div>
-              <button className="mt-2 text-xs text-[#C3A35E] hover:text-[#6B1F2B] font-bold uppercase tracking-wider">Follow Up →</button>
+              <div className="text-xs text-slate-900/70">Overdue settlements</div>
+              <button className="mt-2 text-xs text-blue-600 hover:text-slate-900 font-bold uppercase tracking-wider">Follow Up →</button>
             </div>
 
             {/* Risk Alerts */}
-            <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/20 shadow-sm hover:shadow-md transition-all">
+            <div className="bg-white rounded-lg p-4 border border-black/5 shadow-sm hover:shadow-md transition-all">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-sm font-bold text-[#6B1F2B]">Risk Alerts</span>
+                <span className="text-sm font-bold text-slate-900">Risk Alerts</span>
                 <span className="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded-full font-bold">3</span>
               </div>
-              <div className="text-xs text-[#6B1F2B]/70">Credit/fraud risk flags</div>
-              <button className="mt-2 text-xs text-[#C3A35E] hover:text-[#6B1F2B] font-bold uppercase tracking-wider">Review →</button>
+              <div className="text-xs text-slate-900/70">Credit/fraud risk flags</div>
+              <button className="mt-2 text-xs text-blue-600 hover:text-slate-900 font-bold uppercase tracking-wider">Review →</button>
             </div>
           </div>
         </div>
@@ -2825,8 +2793,8 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
       {/* Accounts Receivable Sub-tab */}
       {subTab === 'ar' && (
         <div className="space-y-6">
-          <div className="bg-white rounded-lg p-6 border border-[#C3A35E]/30 shadow-sm">
-            <h4 className="text-lg font-bold text-[#6B1F2B] mb-4 font-serif">📥 Accounts Receivable - {(countryData as any)?.countryName || selectedCountry}</h4>
+          <div className="bg-white rounded-lg p-6 border border-black/5 shadow-sm">
+            <h4 className="text-lg font-bold text-slate-900 mb-4 font-serif">📥 Accounts Receivable - {(countryData as any)?.countryName || selectedCountry}</h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="bg-white rounded-lg p-4 border border-green-200">
                 <div className="text-sm text-gray-600 mb-1">Total AR</div>
@@ -2909,8 +2877,8 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
       {/* Accounts Payable Sub-tab */}
       {subTab === 'ap' && (
         <div className="space-y-6">
-          <div className="bg-white rounded-lg p-6 border border-[#C3A35E]/30 shadow-sm">
-            <h4 className="text-lg font-bold text-[#6B1F2B] mb-4 font-serif">📤 Accounts Payable - {(countryData as any)?.countryName || selectedCountry}</h4>
+          <div className="bg-white rounded-lg p-6 border border-black/5 shadow-sm">
+            <h4 className="text-lg font-bold text-slate-900 mb-4 font-serif">📤 Accounts Payable - {(countryData as any)?.countryName || selectedCountry}</h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="bg-white rounded-lg p-4 border border-red-200">
                 <div className="text-sm text-gray-600 mb-1">Total AP</div>
@@ -2986,8 +2954,8 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
       {/* General Ledger Sub-tab */}
       {subTab === 'gl' && (
         <div className="space-y-6">
-          <div className="bg-white rounded-lg p-6 border border-[#C3A35E]/30 shadow-sm">
-            <h4 className="text-lg font-bold text-[#6B1F2B] mb-4 font-serif">📚 General Ledger - {(countryData as any)?.countryName || selectedCountry}</h4>
+          <div className="bg-white rounded-lg p-6 border border-black/5 shadow-sm">
+            <h4 className="text-lg font-bold text-slate-900 mb-4 font-serif">📚 General Ledger - {(countryData as any)?.countryName || selectedCountry}</h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="bg-white rounded-lg p-4 border border-purple-200">
                 <div className="text-sm text-gray-600 mb-1">Total Assets</div>
@@ -3172,22 +3140,22 @@ function CRMTab({ data, selectedCountry, countryData, countryProfile }: any) {
       </div>
 
       {/* Country-Specific Distributor Hierarchy */}
-      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-[#C3A35E]/30">
+      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-black/5">
         <h4 className="font-semibold text-black mb-4">📍 Distributor Hierarchy - {(countryData as any)?.countryName || selectedCountry}</h4>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+          <div className="bg-white rounded-lg p-4 border border-black/5">
             <div className="text-sm text-black mb-1">Total Distributors</div>
             <div className="text-2xl font-bold text-black">
               {distributorCount}
             </div>
           </div>
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+          <div className="bg-white rounded-lg p-4 border border-black/5">
             <div className="text-sm text-black mb-1">Regional Tiers</div>
             <div className="text-2xl font-bold text-white">
               {regionalTierCount}
             </div>
           </div>
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+          <div className="bg-white rounded-lg p-4 border border-black/5">
             <div className="text-sm text-black mb-1">Active Routes</div>
             <div className="text-2xl font-bold text-white">
               {activeRoutes}
@@ -3299,32 +3267,32 @@ function InvestorTab({ data, selectedCountry, countryData }: any) {
     <div className="space-y-6">
       <div className="mb-6">
         <h3 className="text-2xl font-bold text-white mb-2">📈 Investor Relations - {(countryData as any)?.countryName || selectedCountry}</h3>
-        <p className="text-[#C3A35E]/90 text-sm">Comprehensive investor dashboard with stock performance and investment opportunities</p>
+        <p className="text-blue-600/90 text-sm">Comprehensive investor dashboard with stock performance and investment opportunities</p>
       </div>
 
       {/* Stock Ticker */}
-      <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-xl border border-[#C3A35E]/20 overflow-hidden">
+      <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-xl border border-black/5 overflow-hidden">
         <StockTicker />
       </div>
 
       {/* Stock Chart */}
-      <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-xl border border-[#C3A35E]/20 p-4">
+      <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-xl border border-black/5 p-4">
         <StockChart />
       </div>
 
       {/* Investor KPIs */}
       {data?.kpis && (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-white/10 backdrop-blur-sm border border-[#C3A35E]/30 rounded-lg p-4">
-            <div className="text-sm text-[#C3A35E]/80 mb-1">Total Orders</div>
+          <div className="bg-white/10 backdrop-blur-sm border border-black/5 rounded-lg p-4">
+            <div className="text-sm text-blue-600/80 mb-1">Total Orders</div>
             <div className="text-2xl font-bold text-white">{data.kpis.totalOrders || 0}</div>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm border border-[#C3A35E]/30 rounded-lg p-4">
-            <div className="text-sm text-[#C3A35E]/80 mb-1">Revenue</div>
+          <div className="bg-white/10 backdrop-blur-sm border border-black/5 rounded-lg p-4">
+            <div className="text-sm text-blue-600/80 mb-1">Revenue</div>
             <div className="text-2xl font-bold text-white">{currencySymbol}{((data.kpis.revenue || 0) / 1000).toFixed(1)}K</div>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm border border-[#C3A35E]/30 rounded-lg p-4">
-            <div className="text-sm text-[#C3A35E]/80 mb-1">Customers</div>
+          <div className="bg-white/10 backdrop-blur-sm border border-black/5 rounded-lg p-4">
+            <div className="text-sm text-blue-600/80 mb-1">Customers</div>
             <div className="text-2xl font-bold text-white">{data.kpis.customers || 0}</div>
           </div>
         </div>
@@ -3332,7 +3300,7 @@ function InvestorTab({ data, selectedCountry, countryData }: any) {
 
       {/* Recent Activity */}
       {data?.recentActivity && data.recentActivity.length > 0 && (
-        <div className="bg-white/10 backdrop-blur-sm border border-[#C3A35E]/30 rounded-lg p-6">
+        <div className="bg-white/10 backdrop-blur-sm border border-black/5 rounded-lg p-6">
           <h4 className="text-lg font-semibold text-white mb-4">Recent Activity</h4>
           <div className="space-y-3">
             {data.recentActivity.map((activity: any, index: number) => (
@@ -3348,7 +3316,7 @@ function InvestorTab({ data, selectedCountry, countryData }: any) {
       )}
 
       {/* Investment Form */}
-      <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-xl border border-[#C3A35E]/20 p-6">
+      <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-xl border border-black/5 p-6">
         <h4 className="text-xl font-bold text-white mb-4">Investment Inquiry</h4>
         <InvestorRelationsForm />
       </div>
@@ -3364,7 +3332,7 @@ function InvestorTab({ data, selectedCountry, countryData }: any) {
           <div className="text-center">
             <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">💵</div>
             <h3 className="text-xl font-bold text-white mb-2">Fiat Investment</h3>
-            <p className="text-[#C3A35E]/80 text-sm">Invest using traditional currencies (USD, EUR, GBP)</p>
+            <p className="text-blue-600/80 text-sm">Invest using traditional currencies (USD, EUR, GBP)</p>
           </div>
         </a>
 
@@ -3377,7 +3345,7 @@ function InvestorTab({ data, selectedCountry, countryData }: any) {
           <div className="text-center">
             <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">₿</div>
             <h3 className="text-xl font-bold text-white mb-2">Bitcoin Investment</h3>
-            <p className="text-[#C3A35E]/80 text-sm">Invest using Bitcoin with secure blockchain technology</p>
+            <p className="text-blue-600/80 text-sm">Invest using Bitcoin with secure blockchain technology</p>
           </div>
         </a>
       </div>
@@ -3669,11 +3637,11 @@ function ExecutiveTab({ data, selectedCountry, countryData, whitespaceReport, ai
       </div>
 
       {/* Integrations Health Panel */}
-      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-[#C3A35E]/30">
+      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-black/5">
         <h4 className="text-lg font-semibold text-black mb-4">🔌 Integrations Health Panel</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* ERP Connector */}
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+          <div className="bg-white rounded-lg p-4 border border-black/5">
             <div className="flex items-center justify-between mb-2">
               <h5 className="font-semibold text-black">ERP Connector</h5>
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -3683,7 +3651,7 @@ function ExecutiveTab({ data, selectedCountry, countryData, whitespaceReport, ai
           </div>
 
           {/* WMS / 3PL Connector */}
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+          <div className="bg-white rounded-lg p-4 border border-black/5">
             <div className="flex items-center justify-between mb-2">
               <h5 className="font-semibold text-black">WMS / 3PL</h5>
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -3693,7 +3661,7 @@ function ExecutiveTab({ data, selectedCountry, countryData, whitespaceReport, ai
           </div>
 
           {/* Payments Gateway */}
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+          <div className="bg-white rounded-lg p-4 border border-black/5">
             <div className="flex items-center justify-between mb-2">
               <h5 className="font-semibold text-black">Payments Gateway</h5>
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -3705,7 +3673,7 @@ function ExecutiveTab({ data, selectedCountry, countryData, whitespaceReport, ai
           </div>
 
           {/* Messaging Providers */}
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+          <div className="bg-white rounded-lg p-4 border border-black/5">
             <div className="flex items-center justify-between mb-2">
               <h5 className="font-semibold text-black">WhatsApp/SMS/Email</h5>
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -3715,7 +3683,7 @@ function ExecutiveTab({ data, selectedCountry, countryData, whitespaceReport, ai
           </div>
 
           {/* Marketplaces */}
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+          <div className="bg-white rounded-lg p-4 border border-black/5">
             <div className="flex items-center justify-between mb-2">
               <h5 className="font-semibold text-black">Amazon/Noon</h5>
               <div className="w-2 h-2 bg-white/100 rounded-full"></div>
@@ -3725,7 +3693,7 @@ function ExecutiveTab({ data, selectedCountry, countryData, whitespaceReport, ai
           </div>
 
           {/* Integration Alerts */}
-          <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+          <div className="bg-white rounded-lg p-4 border border-black/5">
             <div className="flex items-center justify-between mb-2">
               <h5 className="font-semibold text-black">Integration Alerts</h5>
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -4240,10 +4208,10 @@ function LegalIPRTab({ selectedCountry, countryData, data: apiData }: any) {
               onClick={() => setActiveSubTab(tab.id as any)}
               className={`px-4 py-2.5 text-sm whitespace-nowrap border-b-2 transition-all rounded-t-lg font-medium ${
                 activeSubTab === tab.id
-                  ? 'border-[#6B1F2B] text-[#6B1F2B] bg-white shadow-sm'
-                  : 'border-transparent text-gray-600 hover:text-[#6B1F2B] hover:bg-white/50'
+                  ? 'border-[#6B1F2B] text-slate-900 bg-white shadow-sm'
+                  : 'border-transparent text-gray-600 hover:text-slate-900 hover:bg-white/50'
               }`}
-              style={{ fontFamily: 'Inter, system-ui, sans-serif', letterSpacing: '0.025em' }}
+              
             >
               <span className="mr-2">{tab.icon}</span>
               {tab.label}
@@ -4375,7 +4343,7 @@ function LegalIPRTab({ selectedCountry, countryData, data: apiData }: any) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white/95 border border-[#C3A35E]/30 rounded-lg p-6">
+            <div className="bg-white/95 border border-black/5 rounded-lg p-6">
               <h4 className="text-lg font-semibold text-black mb-4">© Copyrights</h4>
               <div className="space-y-3">
                 {legalData.ipr.copyrights.map((cr: Copyright) => (
@@ -4390,7 +4358,7 @@ function LegalIPRTab({ selectedCountry, countryData, data: apiData }: any) {
               </div>
             </div>
 
-            <div className="bg-white/95 border border-[#C3A35E]/30 rounded-lg p-6">
+            <div className="bg-white/95 border border-black/5 rounded-lg p-6">
               <h4 className="text-lg font-semibold text-black mb-4">🎨 Design Rights</h4>
               <div className="space-y-3">
                 {legalData.ipr.designRights.map((dr: DesignRight) => (
@@ -4519,7 +4487,7 @@ function LegalIPRTab({ selectedCountry, countryData, data: apiData }: any) {
                           <div className="ml-2 w-24 bg-white rounded-full h-2">
                             <div 
                               className="bg-green-600 h-2 rounded-full" 
-                              style={{ width: `${country.complianceScore}%` }}
+                              
                             ></div>
                           </div>
                         </div>
@@ -4572,22 +4540,22 @@ function LegalIPRTab({ selectedCountry, countryData, data: apiData }: any) {
       {/* Contracts Sub-tab */}
       {activeSubTab === 'contracts' && (
         <div className="space-y-6">
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-[#C3A35E]/30">
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-black/5">
             <h4 className="text-lg font-semibold text-black mb-4">📝 Contract Management</h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+              <div className="bg-white rounded-lg p-4 border border-black/5">
                 <div className="text-sm text-black mb-1">Active Contracts</div>
                 <div className="text-2xl font-bold text-black">{legalData.contracts.active}</div>
               </div>
-              <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+              <div className="bg-white rounded-lg p-4 border border-black/5">
                 <div className="text-sm text-black mb-1">Expiring Soon</div>
                 <div className="text-2xl font-bold text-orange-600">{legalData.contracts.expiring}</div>
               </div>
-              <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+              <div className="bg-white rounded-lg p-4 border border-black/5">
                 <div className="text-sm text-black mb-1">Pending Review</div>
                 <div className="text-2xl font-bold text-white">{legalData.contracts.pending}</div>
               </div>
-              <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+              <div className="bg-white rounded-lg p-4 border border-black/5">
                 <div className="text-sm text-black mb-1">Total Value</div>
                 <div className="text-lg font-bold text-white">$9.5M</div>
               </div>
@@ -4853,7 +4821,7 @@ function ImportExportTab({ selectedCountry, countryData, data: apiData }: any) {
       </div>
 
       {/* Sub-tabs Navigation */}
-      <div className="border-b border-[#C3A35E]/20">
+      <div className="border-b border-black/5">
         <div className="flex overflow-x-auto">
           {subTabs.map((tab) => (
             <button
@@ -4862,9 +4830,9 @@ function ImportExportTab({ selectedCountry, countryData, data: apiData }: any) {
               className={`px-4 py-2 text-sm whitespace-nowrap border-b-2 transition-all ${
                 activeSubTab === tab.id
                   ? 'border-white text-black bg-white'
-                  : 'border-transparent text-[#C3A35E]/80 hover:text-[#C3A35E] hover:bg-white/10 hover:border-white/40'
+                  : 'border-transparent text-blue-600/80 hover:text-blue-600 hover:bg-white/10 hover:border-white/40'
               }`}
-              style={{ fontFamily: 'sans-serif', fontWeight: 300, letterSpacing: '0.1em' }}
+              
             >
               <span className="mr-2">{tab.icon}</span>
               {tab.label}
@@ -4903,7 +4871,7 @@ function ImportExportTab({ selectedCountry, countryData, data: apiData }: any) {
           </div>
 
           {flows.length > 0 && (
-            <div className="bg-white/95 border border-[#C3A35E]/30 rounded-lg p-6">
+            <div className="bg-white/95 border border-black/5 rounded-lg p-6">
               <h4 className="font-semibold text-black mb-4">🚢 Recent Trade Flows</h4>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
@@ -5245,7 +5213,7 @@ function GPSTrackingTab({ selectedCountry, countryData, data: apiData, gpsIntel,
       </div>
 
       {/* Sub-tabs Navigation */}
-      <div className="border-b border-[#C3A35E]/20">
+      <div className="border-b border-black/5">
         <div className="flex overflow-x-auto">
           {subTabs.map((tab) => (
             <button
@@ -5254,9 +5222,9 @@ function GPSTrackingTab({ selectedCountry, countryData, data: apiData, gpsIntel,
               className={`px-4 py-2 text-sm whitespace-nowrap border-b-2 transition-all ${
                 activeSubTab === tab.id
                   ? 'border-white text-black bg-white'
-                  : 'border-transparent text-[#C3A35E]/80 hover:text-[#C3A35E] hover:bg-white/10 hover:border-white/40'
+                  : 'border-transparent text-blue-600/80 hover:text-blue-600 hover:bg-white/10 hover:border-white/40'
               }`}
-              style={{ fontFamily: 'sans-serif', fontWeight: 300, letterSpacing: '0.1em' }}
+              
             >
               <span className="mr-2">{tab.icon}</span>
               {tab.label}
@@ -5297,7 +5265,7 @@ function GPSTrackingTab({ selectedCountry, countryData, data: apiData, gpsIntel,
           {/* Map Visualization Placeholder */}
           <div className="bg-white border border-black200 rounded-lg p-6">
             <h4 className="text-lg font-semibold text-black mb-4">🗺️ Real-Time Map View</h4>
-            <div className="bg-white rounded-lg h-96 flex items-center justify-center border-2 border-dashed border-black300">
+            <div className="bg-white rounded-lg h-96 flex items-center justify-center border-2 border-dashed border-gray-200">
               <div className="text-center">
                 <div className="text-4xl mb-2">🗺️</div>
                 <div className="text-black font-semibold">Interactive GPS Map</div>
@@ -5422,7 +5390,7 @@ function GPSTrackingTab({ selectedCountry, countryData, data: apiData, gpsIntel,
                           <div className="ml-2 w-16 bg-white rounded-full h-2">
                             <div 
                               className="bg-green-600 h-2 rounded-full" 
-                              style={{ width: `${route.efficiency}%` }}
+                              
                             ></div>
                           </div>
                         </div>
@@ -5457,7 +5425,7 @@ function GPSTrackingTab({ selectedCountry, countryData, data: apiData, gpsIntel,
                   <div className="mt-2 w-full bg-white rounded-full h-2">
                     <div 
                       className="bg-blue-600 h-2 rounded-full" 
-                      style={{ width: `${(warehouse.currentStock / warehouse.capacity) * 100}%` }}
+                      
                     ></div>
                   </div>
                 </div>
@@ -5545,7 +5513,7 @@ function GPSTrackingTab({ selectedCountry, countryData, data: apiData, gpsIntel,
 
           <div className="bg-white border border-black200 rounded-lg p-6">
             <h4 className="text-lg font-semibold text-black mb-4">📊 Performance Trends</h4>
-            <div className="bg-white rounded-lg h-64 flex items-center justify-center border-2 border-dashed border-black300">
+            <div className="bg-white rounded-lg h-64 flex items-center justify-center border-2 border-dashed border-gray-200">
               <div className="text-center text-black">
                 <div className="text-3xl mb-2">📈</div>
                 <div>Performance Charts & Trends</div>
@@ -5658,7 +5626,7 @@ function LocalizationTab({ selectedCountry, countryData, data: apiData }: any) {
       </div>
 
       {/* Sub-tabs Navigation */}
-      <div className="border-b border-[#C3A35E]/20">
+      <div className="border-b border-black/5">
         <div className="flex overflow-x-auto">
           {subTabs.map((tab) => (
             <button
@@ -5667,9 +5635,9 @@ function LocalizationTab({ selectedCountry, countryData, data: apiData }: any) {
               className={`px-4 py-2 text-sm whitespace-nowrap border-b-2 transition-all ${
                 activeSubTab === tab.id
                   ? 'border-white text-black bg-white'
-                  : 'border-transparent text-[#C3A35E]/80 hover:text-[#C3A35E] hover:bg-white/10 hover:border-white/40'
+                  : 'border-transparent text-blue-600/80 hover:text-blue-600 hover:bg-white/10 hover:border-white/40'
               }`}
-              style={{ fontFamily: 'sans-serif', fontWeight: 300, letterSpacing: '0.1em' }}
+              
             >
               <span className="mr-2">{tab.icon}</span>
               {tab.label}
@@ -5681,27 +5649,27 @@ function LocalizationTab({ selectedCountry, countryData, data: apiData }: any) {
       {/* Overview Sub-tab */}
       {activeSubTab === 'overview' && (
         <div className="space-y-6">
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-[#C3A35E]/30">
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-black/5">
             <h4 className="text-lg font-semibold text-black mb-4">Localization Dashboard</h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+              <div className="bg-white rounded-lg p-4 border border-black/5">
                 <div className="text-sm text-black mb-1">Active Countries</div>
                 <div className="text-2xl font-bold text-black">{localizationData.overview.activeCountries}</div>
               </div>
-              <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+              <div className="bg-white rounded-lg p-4 border border-black/5">
                 <div className="text-sm text-black mb-1">Supported Currencies</div>
                 <div className="text-2xl font-bold text-white">{localizationData.overview.supportedCurrencies}</div>
               </div>
-              <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+              <div className="bg-white rounded-lg p-4 border border-black/5">
                 <div className="text-sm text-black mb-1">Tax Configurations</div>
                 <div className="text-2xl font-bold text-white">{localizationData.overview.taxConfigurations}</div>
               </div>
-              <div className="bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+              <div className="bg-white rounded-lg p-4 border border-black/5">
                 <div className="text-sm text-black mb-1">Business Rules</div>
                 <div className="text-2xl font-bold text-purple-600">{localizationData.overview.businessRules}</div>
               </div>
             </div>
-            <div className="mt-4 bg-white rounded-lg p-4 border border-[#C3A35E]/30">
+            <div className="mt-4 bg-white rounded-lg p-4 border border-black/5">
               <div className="text-sm text-black mb-1">Last Synchronization</div>
               <div className="text-lg font-semibold text-black">{localizationData.overview.lastSync}</div>
             </div>
@@ -5757,7 +5725,7 @@ function LocalizationTab({ selectedCountry, countryData, data: apiData }: any) {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
               <div>
                 <label className="block text-sm font-semibold text-black mb-2">From Currency</label>
-                <select className="w-full px-4 py-2 border border-black300 rounded-lg">
+                <select className="w-full px-4 py-2 border border-gray-200 rounded-lg">
                   {currencies.map((c: Currency) => (
                     <option key={c.code} value={c.code}>{c.code} - {c.name}</option>
                   ))}
@@ -5765,11 +5733,11 @@ function LocalizationTab({ selectedCountry, countryData, data: apiData }: any) {
               </div>
               <div>
                 <label className="block text-sm font-semibold text-black mb-2">Amount</label>
-                <input type="number" className="w-full px-4 py-2 border border-black300 rounded-lg" placeholder="1000" />
+                <input type="number" className="w-full px-4 py-2 border border-gray-200 rounded-lg" placeholder="1000" />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-black mb-2">To Currency</label>
-                <select className="w-full px-4 py-2 border border-black300 rounded-lg">
+                <select className="w-full px-4 py-2 border border-gray-200 rounded-lg">
                   {currencies.map((c: Currency) => (
                     <option key={c.code} value={c.code}>{c.code} - {c.name}</option>
                   ))}
@@ -6094,7 +6062,7 @@ function WorkflowsTab({ selectedCountry, countryData, data: apiData }: any) {
       </div>
 
       {/* Sub-tabs Navigation */}
-      <div className="border-b border-[#C3A35E]/20">
+      <div className="border-b border-black/5">
         <div className="flex overflow-x-auto">
           {subTabs.map((tab) => (
             <button
@@ -6103,9 +6071,9 @@ function WorkflowsTab({ selectedCountry, countryData, data: apiData }: any) {
               className={`px-4 py-2 text-sm whitespace-nowrap border-b-2 transition-all ${
                 activeSubTab === tab.id
                   ? 'border-white text-black bg-white'
-                  : 'border-transparent text-[#C3A35E]/80 hover:text-[#C3A35E] hover:bg-white/10 hover:border-white/40'
+                  : 'border-transparent text-blue-600/80 hover:text-blue-600 hover:bg-white/10 hover:border-white/40'
               }`}
-              style={{ fontFamily: 'sans-serif', fontWeight: 300, letterSpacing: '0.1em' }}
+              
             >
               <span className="mr-2">{tab.icon}</span>
               {tab.label}
@@ -6199,14 +6167,14 @@ function WorkflowsTab({ selectedCountry, countryData, data: apiData }: any) {
                     {idx < workflowData.orderFulfillment.workflow.length - 1 && (
                       <div className={`absolute top-5 left-1/2 w-full h-0.5 ${
                         step.status === 'Completed' ? 'bg-green-500' : 'bg-white'
-                      }`} style={{ width: 'calc(100% - 2.5rem)', marginLeft: '2.5rem' }}></div>
+                      }`} ></div>
                     )}
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-white/95 border border-[#C3A35E]/30 rounded-lg p-6">
+            <div className="bg-white/95 border border-black/5 rounded-lg p-6">
               <h5 className="font-semibold text-black mb-4">Active Orders in Workflow</h5>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
@@ -6238,7 +6206,7 @@ function WorkflowsTab({ selectedCountry, countryData, data: apiData }: any) {
                             <div className="w-24 bg-white rounded-full h-2 mr-2">
                               <div 
                                 className="bg-blue-600 h-2 rounded-full" 
-                                style={{ width: `${order.progress}%` }}
+                                
                               ></div>
                             </div>
                             <span className="text-xs text-black">{order.progress}%</span>
@@ -6261,7 +6229,7 @@ function WorkflowsTab({ selectedCountry, countryData, data: apiData }: any) {
       {activeSubTab === 'import-export-flow' && (
         <div className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white/95 border border-[#C3A35E]/30 rounded-lg p-6">
+            <div className="bg-white/95 border border-black/5 rounded-lg p-6">
               <h4 className="text-lg font-semibold text-black mb-4">📥 Import Workflow</h4>
               <div className="space-y-3">
                 {workflowData.importExportFlow.importWorkflow.map((step: WorkflowStep, idx: number) => (
@@ -6282,7 +6250,7 @@ function WorkflowsTab({ selectedCountry, countryData, data: apiData }: any) {
               </div>
             </div>
 
-            <div className="bg-white/95 border border-[#C3A35E]/30 rounded-lg p-6">
+            <div className="bg-white/95 border border-black/5 rounded-lg p-6">
               <h4 className="text-lg font-semibold text-black mb-4">📤 Export Workflow</h4>
               <div className="space-y-3">
                 {workflowData.importExportFlow.exportWorkflow.map((step: WorkflowStep, idx: number) => (
@@ -6343,7 +6311,7 @@ function WorkflowsTab({ selectedCountry, countryData, data: apiData }: any) {
                           <div className="w-24 bg-white rounded-full h-2 mr-2">
                             <div 
                               className="bg-blue-600 h-2 rounded-full" 
-                              style={{ width: `${flow.progress}%` }}
+                              
                             ></div>
                           </div>
                           <span className="text-xs text-black">{flow.progress}%</span>
