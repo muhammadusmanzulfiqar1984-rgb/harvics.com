@@ -1,27 +1,37 @@
 /**
  * AUTH CONTROLLER
  * Handles user authentication with locale-aware responses
- * 
+ *
  * LOCALIZATION: All responses are locale-aware based on req.locale
+ * SECURITY: Uses HMAC-SHA256 signed JWT (jsonwebtoken). No plain base64url.
  */
 
 import { Router, Request } from 'express';
+import jwt from 'jsonwebtoken';
 import { getMockUserScope, mockUserCredentials } from './userScopes.data';
 import { UserScopeTokenPayload } from './userScope.types';
 import { translateError, translateMessage } from '../../core/translate';
+import { auditLogService } from '../../services/auditLog.service';
 // Import locale middleware types
 import '../../middleware/locale';
 
 const authRouter = Router();
 
+const JWT_SECRET = process.env.JWT_SECRET || 'harvics-os-fallback-secret-change-in-production';
+const TOKEN_TTL = '24h';
+
 // Helper to get locale with fallback
 const getLocale = (req: Request): string => (req as any).locale || 'en';
 
-const encodeToken = (payload: UserScopeTokenPayload) =>
-  Buffer.from(JSON.stringify(payload)).toString('base64url');
+export function signToken(payload: UserScopeTokenPayload): string {
+  // jwt.sign adds iat automatically; we pass exp via expiresIn
+  const { iat: _iat, exp: _exp, ...rest } = payload;
+  return jwt.sign(rest, JWT_SECRET, { expiresIn: TOKEN_TTL });
+}
 
-const decodeToken = (token: string): UserScopeTokenPayload =>
-  JSON.parse(Buffer.from(token, 'base64url').toString('utf8'));
+export function verifyToken(token: string): UserScopeTokenPayload {
+  return jwt.verify(token, JWT_SECRET) as UserScopeTokenPayload;
+}
 
 authRouter.post('/login', (req, res) => {
   const locale = getLocale(req);
@@ -31,9 +41,22 @@ authRouter.post('/login', (req, res) => {
     return res.status(400).json({ success: false, error: translateError('missingFields', locale) });
   }
 
-  // Validate password
+  // Validate password (mock plain-text for dev; production: bcrypt.compare)
   const credentials = mockUserCredentials[username];
   if (!credentials || credentials.password !== password) {
+    auditLogService.write({
+      userId: username || 'unknown',
+      userRole: 'unknown',
+      action: 'login:failed',
+      resource: 'users',
+      method: 'POST',
+      path: '/api/auth/login',
+      statusCode: 401,
+      allowed: false,
+      reason: 'Invalid credentials',
+      ip: req.ip || 'unknown',
+      userAgent: req.headers['user-agent'] || 'unknown',
+    });
     return res.status(401).json({ success: false, error: translateError('invalidCredentials', locale) });
   }
 
@@ -43,17 +66,28 @@ authRouter.post('/login', (req, res) => {
     return res.status(401).json({ success: false, error: translateError('invalidCredentials', locale) });
   }
 
-  const TOKEN_TTL_SECONDS = 24 * 60 * 60; // 24 hours
   const nowSeconds = Math.floor(Date.now() / 1000);
-
   const tokenPayload: UserScopeTokenPayload = {
     sub: username,
     scope,
     iat: nowSeconds,
-    exp: nowSeconds + TOKEN_TTL_SECONDS,
+    exp: nowSeconds + 86400,
   };
 
-  const token = encodeToken(tokenPayload);
+  const token = signToken(tokenPayload);
+
+  auditLogService.write({
+    userId: username,
+    userRole: scope.role,
+    action: 'login:success',
+    resource: 'users',
+    method: 'POST',
+    path: '/api/auth/login',
+    statusCode: 200,
+    allowed: true,
+    ip: req.ip || 'unknown',
+    userAgent: req.headers['user-agent'] || 'unknown',
+  });
 
   return res.json({
     success: true,
@@ -79,25 +113,27 @@ authRouter.get('/verify', (req, res) => {
   }
 
   try {
-    const decoded = decodeToken(token);
-
-    // Enforce expiry on verify too
-    const nowSeconds = Math.floor(Date.now() / 1000);
-    if (decoded.exp && decoded.exp < nowSeconds) {
-      return res.json({ success: false, valid: false, user: null, error: translateError('tokenExpired', locale) });
-    }
+    const decoded = verifyToken(token);
 
     return res.json({
       success: true,
       valid: true,
       user: {
         username: decoded.sub,
-        role: decoded.scope.role,
+        role: decoded.scope?.role,
         scope: decoded.scope,
       },
     });
-  } catch {
-    return res.json({ success: false, valid: false, user: null, error: translateError('tokenInvalid', locale) });
+  } catch (err: unknown) {
+    const isExpired = err instanceof Error && err.message === 'jwt expired';
+    return res.json({
+      success: false,
+      valid: false,
+      user: null,
+      error: isExpired
+        ? translateError('tokenExpired', locale)
+        : translateError('tokenInvalid', locale),
+    });
   }
 });
 

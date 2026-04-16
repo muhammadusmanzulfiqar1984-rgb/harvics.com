@@ -1,0 +1,330 @@
+'use client'
+
+import React, { useRef, useState, useEffect } from 'react'
+
+const certifications = [
+  {
+    code: 'ISO 22000',
+    name: 'Food Safety Management',
+    body: 'International Organization for Standardization',
+    color: '#1a6b3c',
+    backdrop: 'radial-gradient(ellipse at 30% 40%, rgba(26,107,60,0.35) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(26,107,60,0.22) 0%, transparent 55%)',
+    icon: '🔬',
+  },
+  {
+    code: 'HACCP',
+    name: 'Hazard Analysis Critical Control',
+    body: 'Codex Alimentarius / EU Regulation 852/2004',
+    color: '#1a4a6b',
+    backdrop: 'radial-gradient(ellipse at 60% 30%, rgba(26,74,107,0.35) 0%, transparent 60%), radial-gradient(ellipse at 25% 70%, rgba(26,74,107,0.22) 0%, transparent 55%)',
+    icon: '🛡️',
+  },
+  {
+    code: 'HALAL',
+    name: 'Halal Certified',
+    body: 'ESMA UAE · JAKIM Malaysia · HFA UK',
+    color: '#2d6b1a',
+    backdrop: 'radial-gradient(ellipse at 45% 35%, rgba(45,107,26,0.35) 0%, transparent 60%), radial-gradient(ellipse at 80% 65%, rgba(45,107,26,0.22) 0%, transparent 55%)',
+    icon: '☪️',
+  },
+  {
+    code: 'BRC',
+    name: 'British Retail Consortium',
+    body: 'Global Standard for Food Safety — Grade A',
+    color: '#6b1a1a',
+    backdrop: 'radial-gradient(ellipse at 70% 40%, rgba(107,26,26,0.35) 0%, transparent 60%), radial-gradient(ellipse at 30% 60%, rgba(107,26,26,0.22) 0%, transparent 55%)',
+    icon: '🏅',
+  },
+  {
+    code: 'FSSC 22000',
+    name: 'Food Safety System Certification',
+    body: 'GFSI Recognised — Version 6',
+    color: '#3d1a6b',
+    backdrop: 'radial-gradient(ellipse at 50% 50%, rgba(61,26,107,0.35) 0%, transparent 60%), radial-gradient(ellipse at 20% 30%, rgba(61,26,107,0.22) 0%, transparent 55%)',
+    icon: '✅',
+  },
+  {
+    code: 'CE / EU',
+    name: 'European Conformity',
+    body: 'EU Food & Labelling Regulations Compliant',
+    color: '#1a3d6b',
+    backdrop: 'radial-gradient(ellipse at 40% 60%, rgba(26,61,107,0.35) 0%, transparent 60%), radial-gradient(ellipse at 75% 30%, rgba(26,61,107,0.22) 0%, transparent 55%)',
+    icon: '🇪🇺',
+  },
+]
+
+const markets = [
+  { flag: '/Images/flags/uk.svg', country: 'United Kingdom', city: 'London HQ', role: 'Headquarters', backdrop: 'radial-gradient(ellipse at 35% 45%, rgba(107,31,43,0.32) 0%, transparent 60%), radial-gradient(ellipse at 70% 30%, rgba(195,163,94,0.22) 0%, transparent 50%)' },
+  { flag: '/Images/flags/saudiarabia.svg', country: 'UAE & GCC', city: 'Dubai', role: 'Regional Hub', backdrop: 'radial-gradient(ellipse at 60% 40%, rgba(195,163,94,0.38) 0%, transparent 60%), radial-gradient(ellipse at 25% 65%, rgba(139,110,50,0.20) 0%, transparent 55%)' },
+  { flag: '/Images/flags/pakistan.svg', country: 'Pakistan', city: 'Karachi', role: 'Sourcing Hub', backdrop: 'radial-gradient(ellipse at 45% 50%, rgba(0,100,0,0.30) 0%, transparent 60%), radial-gradient(ellipse at 70% 30%, rgba(0,100,0,0.18) 0%, transparent 50%)' },
+  { flag: '/Images/flags/usa.svg', country: 'United States', city: 'New York', role: 'Trade Office', backdrop: 'radial-gradient(ellipse at 50% 35%, rgba(0,40,104,0.30) 0%, transparent 60%), radial-gradient(ellipse at 30% 70%, rgba(187,19,62,0.20) 0%, transparent 55%)' },
+  { flag: '/Images/flags/italy.svg', country: 'Italy', city: 'Milan', role: 'Procurement', backdrop: 'radial-gradient(ellipse at 55% 45%, rgba(0,87,63,0.30) 0%, transparent 60%), radial-gradient(ellipse at 35% 60%, rgba(206,43,55,0.20) 0%, transparent 55%)' },
+  { flag: '/Images/flags/china.svg', country: 'China', city: 'Shanghai', role: 'Manufacturing', backdrop: 'radial-gradient(ellipse at 40% 40%, rgba(222,41,16,0.28) 0%, transparent 60%), radial-gradient(ellipse at 65% 65%, rgba(255,222,0,0.20) 0%, transparent 55%)' },
+  { flag: '/Images/flags/india.svg', country: 'India', city: 'Mumbai', role: 'Sourcing', backdrop: 'radial-gradient(ellipse at 50% 50%, rgba(255,153,51,0.30) 0%, transparent 60%), radial-gradient(ellipse at 30% 35%, rgba(0,100,0,0.20) 0%, transparent 55%)' },
+  { flag: '/Images/flags/brazil.svg', country: 'Brazil', city: 'São Paulo', role: 'Emerging Market', backdrop: 'radial-gradient(ellipse at 45% 55%, rgba(0,156,59,0.30) 0%, transparent 60%), radial-gradient(ellipse at 65% 30%, rgba(255,223,0,0.20) 0%, transparent 55%)' },
+]
+
+const TrustSection: React.FC = () => {
+  const sectionRef = useRef<HTMLDivElement>(null)
+  const [visible, setVisible] = useState(false)
+  const [hoveredBackdrop, setHoveredBackdrop] = useState<string | null>(null)
+  const [hoveredLabel, setHoveredLabel] = useState<string | null>(null)
+  const [hoveredIcon, setHoveredIcon] = useState<string | null>(null)
+
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      ([e]) => { if (e.isIntersecting) setVisible(true) },
+      { threshold: 0.2 }
+    )
+    if (sectionRef.current) obs.observe(sectionRef.current)
+    return () => obs.disconnect()
+  }, [])
+
+  return (
+    <section ref={sectionRef} className="relative h-full flex flex-col justify-center overflow-hidden"
+      style={{ background: 'linear-gradient(180deg, #ffffff 0%, #faf9f7 50%, #f5f4f2 100%)' }}>
+
+      {/* Dynamic backdrop that changes on hover */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: hoveredBackdrop || 'transparent',
+          transition: 'background 0.6s ease',
+          zIndex: 0,
+        }}
+      />
+
+      {/* Hovered item label — large faded text in background */}
+      <div
+        className="absolute inset-0 flex items-center justify-center pointer-events-none"
+        style={{ zIndex: 0 }}
+      >
+        {hoveredLabel && (
+          <div style={{
+            fontSize: 'clamp(80px, 16vw, 220px)',
+            fontWeight: 900,
+            color: 'rgba(107,31,43,0.07)',
+            letterSpacing: '-0.04em',
+            textTransform: 'uppercase',
+            fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
+            whiteSpace: 'nowrap',
+            userSelect: 'none',
+          }}>
+            {hoveredLabel}
+          </div>
+        )}
+      </div>
+
+      {/* Hovered icon — large centered behind content */}
+      {hoveredIcon && (
+        <div
+          className="absolute inset-0 flex items-center justify-center pointer-events-none"
+          style={{ zIndex: 0, fontSize: 'clamp(120px, 22vw, 300px)', opacity: 0.15 }}
+        >
+          {hoveredIcon}
+        </div>
+      )}
+
+      <div className="relative z-10 max-w-[1100px] mx-auto px-6 w-full">
+
+        {/* ── TOP: CERTIFICATIONS ── */}
+        <div style={{
+          marginBottom: '16px',
+          opacity: visible ? 1 : 0,
+          transform: visible ? 'translateY(0)' : 'translateY(20px)',
+          transition: 'opacity 0.6s ease 0.1s, transform 0.6s ease 0.1s',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '6px' }}>
+            <div style={{ height: '1px', width: '28px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
+            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>Certifications</span>
+            <div style={{ height: '1px', width: '28px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
+          </div>
+          <h2 style={{
+            textAlign: 'center',
+            fontSize: 'clamp(16px, 2vw, 24px)', fontWeight: 700, letterSpacing: '-0.03em',
+            color: '#1d1d1f', lineHeight: 1.1, marginBottom: '12px',
+            fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
+          }}>
+            Every product ships with full compliance documentation
+          </h2>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '8px' }}>
+            {certifications.map((cert, i) => (
+              <div key={i} className="trust-card cert-shimmer" style={{
+                padding: '12px 8px',
+                background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
+                backgroundSize: '220% 100%',
+                borderRadius: '12px',
+                textAlign: 'center',
+                opacity: visible ? 1 : 0,
+                transform: visible ? 'translateY(0) scale(1)' : 'translateY(16px) scale(0.95)',
+                transition: `opacity 0.5s ease ${0.2 + i * 0.07}s, transform 0.5s ease ${0.2 + i * 0.07}s`,
+                cursor: 'pointer',
+                position: 'relative',
+                overflow: 'hidden',
+              }}
+              onMouseEnter={e => {
+                const el = e.currentTarget as HTMLElement
+                el.style.transform = 'translateY(-3px) scale(1.02)'
+                el.style.boxShadow = '0 8px 24px rgba(195,163,94,0.18)'
+                setHoveredBackdrop(cert.backdrop)
+                setHoveredLabel(cert.code)
+                setHoveredIcon(cert.icon)
+              }}
+              onMouseLeave={e => {
+                const el = e.currentTarget as HTMLElement
+                el.style.transform = 'translateY(0) scale(1)'
+                el.style.boxShadow = 'none'
+                setHoveredBackdrop(null)
+                setHoveredLabel(null)
+                setHoveredIcon(null)
+              }}
+              >
+                {/* Color dot */}
+                <div style={{
+                  width: '8px', height: '8px', borderRadius: '50%',
+                  background: cert.color, margin: '0 auto 8px',
+                  boxShadow: `0 0 6px ${cert.color}80`,
+                  border: '1.5px solid rgba(255,255,255,0.5)',
+                }} />
+                <div style={{
+                  fontSize: '12px', fontWeight: 800, color: '#1a0d00',
+                  letterSpacing: '-0.01em', marginBottom: '3px',
+                  fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
+                }}>
+                  {cert.code}
+                </div>
+                <div style={{ fontSize: '9px', fontWeight: 600, color: 'rgba(26,13,0,0.6)', lineHeight: 1.3, fontFamily: '-apple-system, sans-serif' }}>
+                  {cert.name}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div style={{
+          height: '1px',
+          background: 'linear-gradient(90deg, transparent, rgba(195,163,94,0.3), transparent)',
+          marginBottom: '14px',
+          opacity: visible ? 1 : 0,
+          transition: 'opacity 0.6s ease 0.6s',
+        }} />
+
+        {/* ── BOTTOM: KEY MARKETS ── */}
+        <div style={{
+          opacity: visible ? 1 : 0,
+          transform: visible ? 'translateY(0)' : 'translateY(20px)',
+          transition: 'opacity 0.6s ease 0.5s, transform 0.6s ease 0.5s',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '6px' }}>
+            <div style={{ height: '1px', width: '28px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
+            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>Key Markets</span>
+            <div style={{ height: '1px', width: '28px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
+          </div>
+          <p style={{ textAlign: 'center', fontSize: '12px', color: 'rgba(107,31,43,0.4)', marginBottom: '10px', fontFamily: '-apple-system, sans-serif' }}>
+            42 active markets · 6 continents · offices in 5 cities
+          </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '6px' }}>
+            {markets.map((market, i) => (
+              <div key={i} className="trust-card market-shimmer" style={{
+                padding: '10px 6px',
+                background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
+                backgroundSize: '220% 100%',
+                borderRadius: '10px',
+                textAlign: 'center',
+                opacity: visible ? 1 : 0,
+                transform: visible ? 'translateY(0)' : 'translateY(12px)',
+                transition: `opacity 0.4s ease ${0.6 + i * 0.06}s, transform 0.4s ease ${0.6 + i * 0.06}s`,
+                cursor: 'pointer',
+                position: 'relative',
+                overflow: 'hidden',
+              }}
+              onMouseEnter={e => {
+                const el = e.currentTarget as HTMLElement
+                el.style.transform = 'translateY(-3px) scale(1.03)'
+                el.style.boxShadow = '0 6px 20px rgba(107,31,43,0.12)'
+                setHoveredBackdrop(market.backdrop)
+                setHoveredLabel(market.city)
+                setHoveredIcon(null)
+              }}
+              onMouseLeave={e => {
+                const el = e.currentTarget as HTMLElement
+                el.style.transform = 'translateY(0) scale(1)'
+                el.style.boxShadow = 'none'
+                setHoveredBackdrop(null)
+                setHoveredLabel(null)
+              }}
+              >
+                <img
+                  src={market.flag}
+                  alt={market.country}
+                  style={{ width: '28px', height: '20px', objectFit: 'cover', margin: '0 auto 6px', borderRadius: '2px', display: 'block' }}
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+                />
+                <div style={{ fontSize: '10px', fontWeight: 700, color: '#1a0d00', fontFamily: '-apple-system, sans-serif', marginBottom: '2px', lineHeight: 1.2 }}>
+                  {market.city}
+                </div>
+                <div style={{ fontSize: '8px', fontWeight: 600, color: 'rgba(26,13,0,0.55)', textTransform: 'uppercase', letterSpacing: '0.08em', fontFamily: '-apple-system, sans-serif' }}>
+                  {market.role}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        .trust-card {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cert-shimmer {
+          border: none;
+          animation: goldBgShimmer 2.8s linear infinite;
+        }
+        .cert-shimmer::after {
+          content: '';
+          position: absolute;
+          top: 0; left: -100%;
+          width: 60%;
+          height: 100%;
+          background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,0.35) 50%, transparent 80%);
+          animation: goldSweep 2.8s ease-in-out infinite;
+          pointer-events: none;
+        }
+        .cert-shimmer:hover {
+          box-shadow: 0 6px 24px rgba(195,163,94,0.4), 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .market-shimmer {
+          border: none;
+          animation: goldBgShimmer 3.5s linear infinite;
+        }
+        .market-shimmer::after {
+          content: '';
+          position: absolute;
+          top: 0; left: -100%;
+          width: 60%;
+          height: 100%;
+          background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,0.3) 50%, transparent 80%);
+          animation: goldSweep 3.5s ease-in-out infinite;
+          pointer-events: none;
+        }
+        .market-shimmer:hover {
+          box-shadow: 0 4px 18px rgba(195,163,94,0.35), 0 2px 6px rgba(0,0,0,0.08);
+        }
+        @keyframes goldBgShimmer {
+          0%   { background-position: 100% 0; }
+          100% { background-position: -100% 0; }
+        }
+        @keyframes goldSweep {
+          0%   { left: -100%; }
+          50%  { left: 200%; }
+          100% { left: 200%; }
+        }
+      `}</style>
+    </section>
+  )
+}
+
+export default TrustSection

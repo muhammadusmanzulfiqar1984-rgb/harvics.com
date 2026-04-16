@@ -153,7 +153,7 @@ const nextConfig = {
               "font-src 'self' https://fonts.gstatic.com data:",
               "img-src 'self' data: blob: https: https://maps.gstatic.com https://maps.googleapis.com https://openweathermap.org",
               `connect-src ${connectSrc}`,
-              "frame-src 'self' https://www.youtube.com https://youtube.com",
+              "frame-src 'self' https://www.youtube.com https://youtube.com https://www.google.com https://maps.google.com",
               "worker-src blob:",
               "object-src 'none'",
               "base-uri 'self'",

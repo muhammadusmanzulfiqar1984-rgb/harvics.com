@@ -82,6 +82,7 @@ export default async function SubcategoryPage({ params }: SubcategoryPageProps) 
           images={images}
           categoryTitle={categoryTitle}
           subcategoryTitle={subcategoryTitle}
+          subcategoryDescription={currentSubcategory.description}
           locale={locale}
           categoryKey={category}
           subcategorySlug={subcategory}

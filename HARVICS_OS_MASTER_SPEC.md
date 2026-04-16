@@ -1,5 +1,5 @@
 # HARVICS OS — MASTER SPECIFICATION
-# Last Updated: March 30, 2026
+# Last Updated: April 13, 2026 (Session 3 — App Store)
 # READ THIS FIRST. EVERY SESSION. NO EXCEPTIONS.
 
 ---
@@ -363,43 +363,48 @@ AuditLog     = every write, every user, every field, every timestamp
 
 ---
 
-### DOMAIN 16 — ADMIN & SECURITY
+### DOMAIN 16 — ADMIN & SECURITY (Updated April 2, 2026)
 *Source: Okta, Azure AD, ServiceNow*
-- User Management (bcrypt hashed)
-- Role-Based Access Control
-- Permission Matrix
-- Audit Log (every write, every field)
-- SSO + MFA
-- API Key Management (hashed)
-- Data Retention Policies
-- Session Management
-- IP Whitelisting
-- Failed Login Alerts
-- Data Export Controls
-- GDPR + PDPA Compliance
-- Software Licence Register
-- System Health Monitor
-- Background Job Manager
-**Current Status:** Basic JWT auth exists. Missing: proper User model, Permission Matrix, full Audit Log, MFA, IP whitelisting.
+- User Management (bcrypt hashed) — mock users exist; bcrypt pending DB User model
+- Role-Based Access Control ✅ BUILT (rbac.permissions.ts — full matrix: company/hq/country_manager/sales_officer/distributor/supplier × 20 resources × 7 actions)
+- Permission Matrix ✅ BUILT (requirePermission(resource, action) middleware — use on any route)
+- Audit Log (every write, every field) ✅ BUILT (auditLogService — 5000-entry capped in-memory store, query/filter/summary API, neuralGovernance writes to it)
+- Audit Log API ✅ BUILT (GET /api/audit-log, /api/audit-log/summary, /api/audit-log/user/:userId — company/hq only)
+- JWT Token Security ✅ UPGRADED (HMAC-SHA256 signed JWT via jsonwebtoken — replaces insecure base64url)
+- Login Audit ✅ BUILT (failed + successful logins recorded to audit log)
+- SSO + MFA — not built
+- API Key Management (hashed) — not built
+- Data Retention Policies — not built
+- Session Management — not built
+- IP Whitelisting — not built
+- Failed Login Alerts — not built
+- Data Export Controls — not built
+- GDPR + PDPA Compliance — partial (GDPR check in neuralGovernance)
+- Software Licence Register — not built
+- System Health Monitor — not built
+- Background Job Manager — not built
+**Current Status:** RBAC Permission Matrix COMPLETE. Audit Log COMPLETE. JWT upgraded to signed tokens. Missing: User DB model, MFA, IP whitelisting, session management.
 
 ---
 
-### DOMAIN 17 — COMMUNICATION LAYER
+### DOMAIN 17 — COMMUNICATION LAYER (Updated April 2, 2026)
 *Source: Slack, Teams, Intercom*
-- In-App Notifications
-- Email Notifications
-- SMS Alerts
-- Mobile Push Notifications
-- In-System Messaging
-- Task Assignment on Any Record
-- Comment Thread on Any Record
-- Approval Request Routing
-- Escalation Engine
-- Document Collaboration
-- Announcements Channel
-- Webhook Outbound
-- Audit Notification Log
-**Current Status:** alertService.ts exists. No notification model or real-time layer.
+- In-App Notifications ✅ BUILT (notificationService — 5000-entry store, per-user + role-broadcast)
+- Real-Time Push ✅ BUILT (Socket.IO — users join userId + role rooms via 'identify' event)
+- Approval Request Routing ✅ BUILT (requestApproval, decideApproval, addComment — with escalation rules)
+- Escalation Engine ✅ BUILT (5 rules: PO >$10K → country_manager, PO >$100K → hq, Invoice >$50K → hq, JE >$500K → company, Employee → country_manager)
+- System Alerts / Announcements ✅ BUILT (POST /api/comms/system-alert — role broadcast)
+- Domain Event → Notification Auto-wiring ✅ BUILT (eventBus listeners: PO created, low-stock, payment received, AI anomaly)
+- Notification REST API ✅ BUILT (GET/PATCH /api/comms/notifications, read-all)
+- Approvals REST API ✅ BUILT (GET/POST /api/comms/approvals, /decide, /comment, /all)
+- Email Notifications — not built
+- SMS Alerts — not built
+- Mobile Push Notifications — not built
+- In-System Messaging (threads on records) — not built
+- Webhook Outbound — not built
+- Document Collaboration — not built
+- Audit Notification Log — merged into Audit Log (Domain 16)
+**Current Status:** Core communication layer COMPLETE. In-app notifications + real-time push + approval routing + domain event wiring all live. Missing: Email, SMS, mobile push, record threads, webhooks.
 
 ---
 
@@ -684,8 +689,18 @@ Deliverable: Full frontend connected to Teams 1-4.
 | 2026-03-29 | Session 3 | Domain 9 Procurement gaps filled: Vendor Master CRUD, RFQ management + quote submission, 3-Way Match endpoint (PO+GRN legs), Supplier Procurement page wired to live API with 4 tabs. Pre-existing tsc errors only (MStyleNavigation, SmartImage). |
 | 2026-03-29 | Session 4 | Domain 6 Inventory gaps filled: Universal Batch/Lot (7 seeded, industry-neutral with industryVertical field), FEFO engine (FEFO+FIFO fallback), Location/Bin registry (6 warehouses), Stock Movement log (IN/OUT/TRANSFER/ADJUSTMENT), UOM catalog (10 UOMs, conversion endpoint), Inventory Summary endpoint. InventoryDomainContent.tsx wired to 5 live API endpoints. tsc: pre-existing errors only. |
 | 2026-03-29 | Session 5 | Domain 1 Finance gaps filled: Fixed Assets (5 seeded, Straight-Line + Declining-Balance, depreciation run endpoint), Cost Centers (6 seeded, budget vs actual), Budgeting (3 budgets, variance analysis), Period Close Engine (3 periods, debit/credit validation, close/reopen), Chart of Accounts (11 GL accounts), Finance Dashboard endpoint. /api/payments/* 404 fixed. FinanceDomainContent.tsx extended with 4 new live modules. tsc: pre-existing errors only. |
-| 2026-03-30 | Session 6 | Blueprint structural gaps closed: (1) Bloomberg-grade live engine — Finance streams at 1.5s, 2-3 cells flash green/red simultaneously, ms clock, scrolling dark ticker tape. (2) Harvoice AI Smart Alerts Panel (240px, Blueprint-mandated) added to OSDomainTierStructure — appears on ALL 20 OS domains, domain-specific alert sets for all 15 named domains. (3) Gold pill primary action button + Harvoice mic button in every OS header bar. (4) JetBrains Mono font wired via Google Fonts + Tailwind font-mono token — all identifiers (CC-001, ORD-4821, asset codes, clocks) now use JetBrains Mono. tsc: 0 errors. |
+| 2026-04-09 | Session 8 | Product system fixed: (1) folderScanner.ts path corrected from `Images/Harvics.com` → `FMCG IMAGES` — 201 product images now live. (2) All 9 categories mapped with real descriptions. (3) Subcategory descriptions added for every subcategory (Wafer Bars, Chips & Crisps, Sauces, Frozen Meat, etc.) — description now shows in subcategory hero instead of raw category name. (4) Image filenames cleaned up: "wafer -1 (2)" → "Wafer" (Title Case, no numbers). (5) Leadership page: removed 5 fake people (Ahmed Al-Rashid, Sara Khan, David Chen, Fatima Al-Maktoum, James Okonkwo) — only real founder Muhammad Usman Zulfiqar remains. (6) Subcategory interface updated with description field. tsc: 0 new errors. |
 
+
+## CURRENT STATE — April 2, 2026
+
+### WORLD MAP — REBUILT (April 2, 2026)
+- Component: src/features/geo/InteractiveWorldMap.tsx
+- Geography: src/features/geo/worldPaths.ts — 286 real country SVG paths from Natural Earth GeoJSON
+- Projection: Mercator, 1000×480 viewBox — NO image, NO filter hacks, pure SVG
+- Theme: White/cream (80%) + Burgundy (15%) + Gold (5%) — matches site palette
+- Features: Live clocks per timezone, animated gold arc routes, burgundy+gold city nodes, crosshair targeting, real coordinates, side panel with trade data, city selector tabs, ticker bar
+- Offices: London (HQ), New York, Dubai, Karachi, Milan
 
 ## CURRENT STATE — March 26, 2026
 

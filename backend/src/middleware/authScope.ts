@@ -1,16 +1,15 @@
 import { Request, Response, NextFunction } from 'express';
 import { UserScopeTokenPayload } from '../modules/auth/userScope.types';
-
-const decodeToken = (token: string): UserScopeTokenPayload =>
-  JSON.parse(Buffer.from(token, 'base64url').toString('utf8'));
+import { verifyToken } from '../modules/auth/auth.controller';
 
 // Demo tokens issued by frontend for local testing
 const DEMO_SCOPES: Record<string, UserScopeTokenPayload> = {
-  'demo-token-company_admin': { sub: 'admin', scope: { userId: 'admin', role: 'company_admin', geographic: { global: true, countries: [], territories: [] } } },
-  'demo-token-supplier':      { sub: 'supplier_user', scope: { userId: 'supplier_user', role: 'supplier', geographic: { global: false, countries: [], territories: [] } } },
-  'demo-token-distributor':   { sub: 'distributor_user', scope: { userId: 'distributor_user', role: 'distributor', geographic: { global: false, countries: [], territories: [] } } },
-  'demo-token-hq':            { sub: 'hq_user', scope: { userId: 'hq_user', role: 'hq', geographic: { global: true, countries: [], territories: [] } } },
-  'demo-token-sales_officer': { sub: 'sales_officer_user', scope: { userId: 'sales_officer_user', role: 'sales_officer', geographic: { global: false, countries: [], territories: [] } } },
+  'demo-token-company_admin': { sub: 'admin', scope: { userId: 'admin', role: 'company', countries: [], territories: [], warehouseIds: [], currency: 'USD', geographic: { global: true } }, iat: 0, exp: 9999999999 },
+  'demo-token-supplier':      { sub: 'supplier_user', scope: { userId: 'supplier_user', role: 'supplier', countries: [], territories: [], warehouseIds: [], currency: 'USD', geographic: { global: false } }, iat: 0, exp: 9999999999 },
+  'demo-token-distributor':   { sub: 'distributor_user', scope: { userId: 'distributor_user', role: 'distributor', countries: [], territories: [], warehouseIds: [], currency: 'USD', geographic: { global: false } }, iat: 0, exp: 9999999999 },
+  'demo-token-hq':            { sub: 'hq_user', scope: { userId: 'hq_user', role: 'hq', countries: [], territories: [], warehouseIds: [], currency: 'USD', geographic: { global: true } }, iat: 0, exp: 9999999999 },
+  'demo-token-sales_officer': { sub: 'sales_officer_user', scope: { userId: 'sales_officer_user', role: 'sales_officer', countries: [], territories: [], warehouseIds: [], currency: 'USD', geographic: { global: false } }, iat: 0, exp: 9999999999 },
+  'demo-token-country_manager': { sub: 'country_manager_user', scope: { userId: 'country_manager_user', role: 'country_manager', countries: [], territories: [], warehouseIds: [], currency: 'USD', geographic: { global: false } }, iat: 0, exp: 9999999999 },
 };
 
 export const requireAuthScope = (req: Request, res: Response, next: NextFunction) => {
@@ -30,22 +29,19 @@ export const requireAuthScope = (req: Request, res: Response, next: NextFunction
   }
 
   try {
-    const payload = decodeToken(token);
-
-    // Enforce token expiry
-    const nowSeconds = Math.floor(Date.now() / 1000);
-    if (payload.exp && payload.exp < nowSeconds) {
-      return res.status(401).json({ error: 'Token expired', code: 'TOKEN_EXPIRED' });
-    }
-
+    const payload = verifyToken(token);
     req.userScope = payload.scope;
     req.user = {
       id: payload.sub,
-      role: payload.scope.role,
+      role: payload.scope?.role,
     };
     return next();
-  } catch (error) {
-    return res.status(401).json({ error: 'Invalid token' });
+  } catch (err: unknown) {
+    const isExpired = err instanceof Error && err.message === 'jwt expired';
+    return res.status(401).json({
+      error: isExpired ? 'Token expired' : 'Invalid token',
+      code: isExpired ? 'TOKEN_EXPIRED' : 'TOKEN_INVALID',
+    });
   }
 };
 

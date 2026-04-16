@@ -4,7 +4,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
 
-const WORDS = ['Trading.', 'Distribution.', 'Growth.', 'Innovation.', 'Trust.']
+const WORDS = ['Trading.', 'Distribution.', 'Growth.', 'Innovation.', 'Trust.', 'Intelligence.', 'Precision.']
 
 const STATS = [
   { label: 'Active Markets', value: '42' },
@@ -43,6 +43,7 @@ const LiquidGlassHero: React.FC = () => {
   const markets = useCountUp(42, 1600, statsVisible)
   const products = useCountUp(1185, 2000, statsVisible)
   const countries = useCountUp(50, 1400, statsVisible)
+  const delivery = useCountUp(94, 1800, statsVisible)
 
   useEffect(() => { setIsLoaded(true) }, [])
 
@@ -78,7 +79,7 @@ const LiquidGlassHero: React.FC = () => {
       {/* Background image with parallax zoom */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/Images/Hero Page1.png"
+          src="/Images/hero-page-1.png"
           alt="Global Trade Operations"
           className="w-full h-full object-cover hero-zoom"
           draggable={false}
@@ -113,14 +114,14 @@ const LiquidGlassHero: React.FC = () => {
           Ventures
         </h1>
         <div style={{
-          fontSize: 'clamp(14px, 1.4vw, 18px)',
+          fontSize: 'clamp(13px, 1.3vw, 17px)',
           color: 'rgba(195,163,94,0.85)',
           fontWeight: 400,
-          letterSpacing: '0.08em',
+          letterSpacing: '0.06em',
           marginBottom: '20px',
           fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
         }}>
-          Exploring across Hemisphere
+          Enterprise-Grade Commerce &nbsp;·&nbsp; 10 Industry Verticals &nbsp;·&nbsp; 50+ Nations
         </div>
 
         {/* Animated Word Swap */}
@@ -198,6 +199,7 @@ const LiquidGlassHero: React.FC = () => {
             { num: markets, suffix: '+', label: 'Active Markets' },
             { num: products, suffix: '+', label: 'Products Listed' },
             { num: countries, suffix: '+', label: 'Countries Served' },
+            { num: delivery, suffix: '%', label: 'On-Time Delivery' },
           ].map((s, i) => (
             <div key={i} style={{
               transform: isLoaded ? 'translateY(0)' : 'translateY(24px)',
@@ -250,6 +252,28 @@ const LiquidGlassHero: React.FC = () => {
               Annual Trade Volume
             </div>
           </div>
+        </div>
+
+        {/* Trust badges row */}
+        <div style={{
+          display: 'flex', gap: '18px', flexWrap: 'wrap', alignItems: 'center',
+          marginTop: '24px',
+          transform: isLoaded ? 'translateY(0)' : 'translateY(20px)',
+          transition: 'transform 0.9s cubic-bezier(0.16,1,0.3,1) 1.0s',
+        }}>
+          {['ISO Certified', 'HACCP Compliant', 'Halal Verified', 'BRC Approved'].map((badge, i) => (
+            <div key={i} style={{
+              display: 'flex', alignItems: 'center', gap: '5px',
+              fontSize: '9px', fontWeight: 700, letterSpacing: '0.12em',
+              color: 'rgba(195,163,94,0.75)', textTransform: 'uppercase',
+              fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+            }}>
+              <svg width="8" height="8" viewBox="0 0 12 12" fill="none">
+                <path d="M2 6l3 3 5-5" stroke="#C3A35E" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              {badge}
+            </div>
+          ))}
         </div>
       </div>
 

@@ -1,3 +1,5 @@
+@import '../styles/premium-animations.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,9 +22,8 @@ body {
 }
 
 /* Premium Liquid Glass & Animation System */
-@import '../styles/premium-animations.css';
 
-/* ===== GLOBAL SCROLL REVEAL ANIMATIONS ===== */
+
 /* Applied automatically by GlobalScrollReveal component */
 .scroll-reveal {
   opacity: 0;
@@ -1574,32 +1575,32 @@ button,
 /* Gold Text on Dark Backgrounds */
 .bg-dark,
 .bg-maroon,
-.bg-\[#6B1F2B\] {
+.bg-harvics-maroon {
   color: #C3A35E;
 }
 
 .bg-dark *,
 .bg-maroon *,
-.bg-\[#6B1F2B\] * {
+.bg-harvics-maroon * {
   color: inherit;
 }
 
 .bg-dark a,
 .bg-maroon a,
-.bg-\[#6B1F2B\] a {
+.bg-harvics-maroon a {
   color: #C3A35E;
 }
 
 .bg-dark a:hover,
 .bg-maroon a:hover,
-.bg-\[#6B1F2B\] a:hover {
+.bg-harvics-maroon a:hover {
   color: #FFD700;
 }
 
 /* Replace white text with gold on dark backgrounds */
 .bg-dark .text-white,
 .bg-maroon .text-white,
-.bg-\[#6B1F2B\] .text-white,
+.bg-harvics-maroon .text-white,
 header .text-white,
 footer .text-white {
   color: #C3A35E !important;
@@ -1607,13 +1608,13 @@ footer .text-white {
 
 .bg-dark .text-white\/80,
 .bg-maroon .text-white\/80,
-.bg-\[#6B1F2B\] .text-white\/80 {
+.bg-harvics-maroon .text-white\/80 {
   color: rgba(212, 175, 55, 0.8) !important;
 }
 
 .bg-dark .text-white\/70,
 .bg-maroon .text-white\/70,
-.bg-\[#6B1F2B\] .text-white\/70 {
+.bg-harvics-maroon .text-white\/70 {
   color: rgba(212, 175, 55, 0.7) !important;
 }
 

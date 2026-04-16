@@ -6,16 +6,16 @@ import { useLocale } from 'next-intl'
 import { navVerticals } from '@/data/megaMenuData'
 
 const industryMeta: Record<string, { desc: string; gradient: string; image?: string; products: number; markets: number }> = {
-  textiles:       { desc: 'Premium apparel, fabrics, and home textiles for global markets', gradient: 'from-slate-50 to-blue-50', image: '/Images/Textile .png', products: 240, markets: 28 },
+  textiles:       { desc: 'Premium apparel, fabrics, and home textiles for global markets', gradient: 'from-slate-50 to-blue-50', image: '/Images/textile.png', products: 240, markets: 28 },
   fmcg:           { desc: 'Food, beverages, personal care and home essentials', gradient: 'from-slate-50 to-emerald-50', image: '/Images/FMCG.png', products: 380, markets: 42 },
   commodities:    { desc: 'Strategic trading in agriculture, energy, and metals', gradient: 'from-slate-50 to-amber-50', image: '/Images/commodities.png', products: 60, markets: 31 },
   industrial:     { desc: 'Advanced chemicals, machinery, and safety equipment', gradient: 'from-slate-50 to-zinc-50', image: '/Images/industrialsolutions.png', products: 180, markets: 22 },
   minerals:       { desc: 'Precious metals, energy minerals, and industrial resources', gradient: 'from-slate-50 to-stone-50', image: '/Images/Minerals.png', products: 45, markets: 18 },
   'oil-gas':      { desc: 'Complete upstream, midstream, and downstream operations', gradient: 'from-slate-50 to-orange-50', image: '/Images/oilandgas.png', products: 30, markets: 15 },
   'real-estate':  { desc: 'Commercial and residential property development', gradient: 'from-slate-50 to-cyan-50', image: '/Images/real estate.png', products: 120, markets: 12 },
-  sourcing:       { desc: 'Global sourcing, quality control, and logistics solutions', gradient: 'from-slate-50 to-violet-50', image: '/Images/Sourcing Solutions.png', products: 95, markets: 38 },
+  sourcing:       { desc: 'Global sourcing, quality control, and logistics solutions', gradient: 'from-slate-50 to-violet-50', image: '/Images/sourcing-solutions.png', products: 95, markets: 38 },
   finance:        { desc: 'Trade finance, HPay digital payments, and compliance', gradient: 'from-slate-50 to-teal-50', image: '/Images/financial.png', products: 20, markets: 24 },
-  ai:             { desc: 'Machine learning, predictive analytics, and automation', gradient: 'from-slate-50 to-pink-50', image: '/Images/IT Solutition .png', products: 15, markets: 10 },
+  ai:             { desc: 'Machine learning, predictive analytics, and automation', gradient: 'from-slate-50 to-pink-50', image: '/Images/it-solutions.png', products: 15, markets: 10 },
 }
 
 const CARD_WIDTH = 420
@@ -93,14 +93,17 @@ const EnhancedIndustryGrid: React.FC = () => {
           color: '#1d1d1f', lineHeight: 1.1,
           fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif'
         }}>
-          Explore Industries
+          One Platform.{' '}
+          <span style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #6B1F2B 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+            Ten Industries.
+          </span>
         </h2>
         <p style={{
           fontSize: '14px', color: '#6e6e73', marginTop: '6px',
           fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
           letterSpacing: '-0.01em'
         }}>
-          Delivering excellence across ten global verticals
+          From commodities to AI — one intelligent commercial engine covering every sector.
         </p>
       </div>
 

@@ -4,23 +4,16 @@ import EnhancedIndustryGrid from '@/components/premium/EnhancedIndustryGrid'
 import Footer from '@/components/layout/Footer'
 import ThreeDErrorBoundary from '@/components/shared/ThreeDErrorBoundary'
 import ContactSection from '@/components/layout/ContactSection'
-import ScrollReveal from '@/components/shared/ScrollReveal'
 import FrameDotNav from '@/components/premium/FrameDotNav'
+import LazySection from '@/components/shared/LazySection'
+
+const HowItWorksSection = dynamic(() => import('@/components/premium/HowItWorksSection'))
+const TrustSection = dynamic(() => import('@/components/premium/TrustSection'))
+const AudienceRoutingSection = dynamic(() => import('@/components/premium/AudienceRoutingSection'))
 
 const Interactive3DProductViewer = dynamic(
   () => import('@/components/premium/Interactive3DProductViewer'),
-  { 
-    loading: () => (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="w-10 h-10 border-2 border-t-transparent rounded-full animate-spin border-harvics-gold" style={{ borderTopColor: 'transparent' }}></div>
-      </div>
-    )
-  }
-)
-
-const ImmersiveProductShowcase = dynamic(
-  () => import('@/components/premium/ImmersiveProductShowcase'),
-  { 
+  {
     loading: () => (
       <div className="min-h-screen flex items-center justify-center">
         <div className="w-10 h-10 border-2 border-t-transparent rounded-full animate-spin border-harvics-gold" style={{ borderTopColor: 'transparent' }}></div>
@@ -99,7 +92,7 @@ export default async function Home() {
         style={{ scrollSnapType: 'y mandatory', height: frameHeight }}
       >
         {/* Apple-style right-side frame dot navigation */}
-        <FrameDotNav totalFrames={9} />
+        <FrameDotNav totalFrames={11} />
 
         {/* Frame 1: Hero — slightly more opaque so hero imagery pops */}
         <div data-frame="1" data-animate className="overflow-hidden relative" style={glassA}>
@@ -113,46 +106,62 @@ export default async function Home() {
 
         {/* Frame 3: 3D Product Viewer */}
         <div data-frame="3" data-animate className="overflow-hidden relative" style={glassA}>
-          <ThreeDErrorBoundary>
-            <Interactive3DProductViewer />
-          </ThreeDErrorBoundary>
+          <LazySection minHeight="100vh">
+            <ThreeDErrorBoundary>
+              <Interactive3DProductViewer />
+            </ThreeDErrorBoundary>
+          </LazySection>
         </div>
 
-        {/* Frame 4: Immersive Product Showcase */}
+        {/* Frame 4: How It Works */}
         <div data-frame="4" data-animate className="overflow-hidden relative" style={glassB}>
-          <ThreeDErrorBoundary>
-            <ImmersiveProductShowcase />
-          </ThreeDErrorBoundary>
+          <HowItWorksSection />
         </div>
 
-        {/* Frame 5: Scroll Narrative */}
+        {/* Frame 5: Trust — Certifications + Key Markets */}
         <div data-frame="5" data-animate className="overflow-hidden relative" style={glassA}>
-          <ThreeDErrorBoundary>
-            <ScrollNarrativeSection />
-          </ThreeDErrorBoundary>
+          <TrustSection />
         </div>
 
-        {/* Frame 6: Supply Chain Wheel */}
+        {/* Frame 6: Audience Routing — Buyers / Distributors / Suppliers */}
         <div data-frame="6" data-animate className="overflow-hidden relative" style={glassB}>
-          <ThreeDErrorBoundary>
-            <SupplyChainWheel />
-          </ThreeDErrorBoundary>
+          <AudienceRoutingSection />
         </div>
 
-        {/* Frame 7: World Map */}
+        {/* Frame 7: Scroll Narrative */}
         <div data-frame="7" data-animate className="overflow-hidden relative" style={glassA}>
-          <ThreeDErrorBoundary>
-            <InteractiveWorldMap />
-          </ThreeDErrorBoundary>
+          <LazySection minHeight="100vh">
+            <ThreeDErrorBoundary>
+              <ScrollNarrativeSection />
+            </ThreeDErrorBoundary>
+          </LazySection>
         </div>
 
-        {/* Frame 8: Contact */}
+        {/* Frame 8: Supply Chain Wheel */}
         <div data-frame="8" data-animate className="overflow-hidden relative" style={glassB}>
+          <LazySection minHeight="100vh">
+            <ThreeDErrorBoundary>
+              <SupplyChainWheel />
+            </ThreeDErrorBoundary>
+          </LazySection>
+        </div>
+
+        {/* Frame 9: World Map */}
+        <div data-frame="9" data-animate className="relative" style={{ ...glassA, height: 'auto', minHeight: frameHeight, scrollSnapAlign: 'start' }}>
+          <LazySection minHeight={frameHeight}>
+            <ThreeDErrorBoundary>
+              <InteractiveWorldMap />
+            </ThreeDErrorBoundary>
+          </LazySection>
+        </div>
+
+        {/* Frame 10: Contact */}
+        <div data-frame="10" data-animate className="overflow-hidden relative" style={glassB}>
           <ContactSection />
         </div>
 
-        {/* Frame 9: Footer */}
-        <div data-frame="9" data-animate className="overflow-y-auto relative" style={{ ...frameStyle, background: 'rgba(255,255,255,0.93)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
+        {/* Frame 11: Footer */}
+        <div data-frame="11" data-animate className="overflow-y-auto relative" style={{ ...frameStyle, background: 'rgba(255,255,255,0.93)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
           <Footer />
         </div>
       </main>

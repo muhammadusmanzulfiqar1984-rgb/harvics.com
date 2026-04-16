@@ -10,6 +10,7 @@ import routes from './routes';
 import { localeMiddleware } from './middleware/locale';
 import { ProfitSentinel } from './services/profitSentinel';
 import { HarvicsAlphaEngine } from './services/harvicsAlphaEngine';
+import { setNotificationPushFn } from './modules/comms/notification.service';
 
 const app = express();
 const server = http.createServer(app);
@@ -96,9 +97,22 @@ const io = new Server(server, {
 // Pass socket instance to Alpha Engine for broadcasting proposals
 HarvicsAlphaEngine.setSocketServer(io);
 
+// Wire notification push to Socket.IO
+// Each user joins their own room (userId) and their role room (role:<role>)
+setNotificationPushFn((recipientId, notification) => {
+  io.to(recipientId).emit('notification', notification);
+});
+
 io.on('connection', (socket) => {
   console.log('Harvics Orchestrator: CEO Dashboard Connected (Socket ID:', socket.id, ')');
-  
+
+  // Client must send { userId, role } on connect to join their rooms
+  socket.on('identify', (data: { userId: string; role: string }) => {
+    if (data?.userId) socket.join(data.userId);
+    if (data?.role)   socket.join(`role:${data.role}`);
+    console.log(`Socket identified: userId=${data?.userId} role=${data?.role}`);
+  });
+
   socket.on('disconnect', () => {
     console.log('Harvics Orchestrator: CEO Dashboard Disconnected');
   });

@@ -125,6 +125,15 @@ export default async function CSRPage({ params }: CSRPageProps) {
       <div>
         {/* Hero Section */}
         <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
+          {/* Hero Background Image */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1200&h=600&fit=crop&q=75"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
+          />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
           {/* Decorative Elements */}
           <div className="absolute inset-0">
              <div className="absolute top-0 left-0 w-full h-full bg-[url('/patterns/grid.svg')] opacity-10"></div>

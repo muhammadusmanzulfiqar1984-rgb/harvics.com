@@ -140,6 +140,20 @@ const verticalMeta: Record<string, { tagline: string; description: string; stats
   },
 }
 
+/** Unsplash hero images for each vertical */
+const verticalHeroImages: Record<string, string> = {
+  textiles: 'https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1200&h=600&fit=crop&q=75',
+  fmcg: 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=1200&h=600&fit=crop&q=75',
+  commodities: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=600&fit=crop&q=75',
+  industrial: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=600&fit=crop&q=75',
+  minerals: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=600&fit=crop&q=75',
+  'oil-gas': 'https://images.unsplash.com/photo-1513828583688-c52646db42da?w=1200&h=600&fit=crop&q=75',
+  'real-estate': 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=600&fit=crop&q=75',
+  sourcing: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=600&fit=crop&q=75',
+  finance: 'https://images.unsplash.com/photo-1560472355-536de3962603?w=1200&h=600&fit=crop&q=75',
+  ai: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop&q=75',
+}
+
 interface VerticalPageClientProps {
   vertical: NavVertical
   locale: string
@@ -175,8 +189,21 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
       {/* ═══════ HERO BANNER ═══════ */}
       <section
         ref={heroSection.ref}
-        className="relative bg-white py-24 md:py-32 px-4 overflow-hidden border-b border-[#C3A35E]/20"
+        className={`relative bg-gradient-to-br ${meta.gradient} py-24 md:py-32 px-4 overflow-hidden border-b border-[#C3A35E]/20`}
       >
+        {/* Hero Background Image */}
+        {verticalHeroImages[vertical.key] && (
+          <>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={verticalHeroImages[vertical.key]}
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover"
+              style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
+            />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
+          </>
+        )}
         {/* Top gold accent */}
         <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#C3A35E]/40 to-transparent" />
 
@@ -185,7 +212,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
             <div className="lg:max-w-[680px]">
               {/* Breadcrumb */}
               <nav
-                className="flex items-center text-xs text-[#6B1F2B]/60 mb-6 transition-all duration-700"
+                className="flex items-center text-xs text-white/60 mb-6 transition-all duration-700"
                 style={{
                   opacity: heroSection.inView ? 1 : 0,
                   transform: heroSection.inView ? 'translateY(0)' : 'translateY(12px)',
@@ -211,7 +238,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
 
               {/* Title */}
               <h1
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#6B1F2B] mb-5 transition-all duration-700 delay-200"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5 transition-all duration-700 delay-200"
                 style={{
                   letterSpacing: '-0.03em',
                   lineHeight: 1.1,
@@ -250,7 +277,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
                 </Link>
                 <a
                   href="#products"
-                  className="px-7 py-3 border border-[#C3A35E]/30 text-[#C3A35E] text-sm font-medium uppercase tracking-wider hover:border-[#C3A35E] hover:bg-[#C3A35E]/5 transition-all duration-300"
+                  className="px-7 py-3 border border-[#C3A35E]/30 text-white text-sm font-medium uppercase tracking-wider hover:border-[#C3A35E] hover:bg-[#C3A35E]/10 transition-all duration-300"
                 >
                   Browse Products
                 </a>

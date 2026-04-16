@@ -65,17 +65,16 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
         ref={heroRef.ref}
         className="relative bg-gradient-to-br from-[#6B1F2B] via-[#5a1a24] to-[#4a1520] py-20 md:py-24 px-4 overflow-hidden"
       >
-        {/* Background image for textile categories */}
-        {vertical === 'textiles' && (
-          <div className="absolute inset-0 opacity-10">
-            <SmartImage
-              keyword={block.title.toLowerCase()}
-              alt={`${block.title} Background`}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-[#6B1F2B]/90 via-[#5a1a24]/85 to-[#4a1520]/90" />
-          </div>
-        )}
+        {/* Background image for all categories */}
+        <div className="absolute inset-0">
+          <SmartImage
+            keyword={block.title.toLowerCase()}
+            alt={`${block.title} Background`}
+            className="w-full h-full object-cover"
+            style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
+          />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
+        </div>
         
         {/* Background decorations */}
         <div className="absolute inset-0 pointer-events-none">

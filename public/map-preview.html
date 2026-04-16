@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Georgia,serif}
+body{background:#f5f0eb;padding:20px}
+.section{padding:40px;border-bottom:3px solid #C3A35E;margin-bottom:30px}
+.label{display:inline-block;background:#6B1F2B;color:white;padding:4px 14px;font-size:11px;letter-spacing:3px;margin-bottom:16px;text-transform:uppercase}
+.title{font-size:22px;color:#6B1F2B;margin-bottom:6px;font-weight:bold}
+.sub{font-size:12px;color:#888;margin-bottom:20px}
+
+/* Option A */
+.mapA{background:#ddd8d0;border:2px solid #C3A35E;border-radius:10px;height:300px;display:flex;align-items:center;justify-content:center;color:#6B1F2B;font-size:15px;position:relative;overflow:hidden}
+.mapA::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#e8e0d8 0%,#d4cdc4 100%)}
+.map-text{position:relative;z-index:1;text-align:center;color:#6B1F2B}
+.pin{position:absolute;z-index:2}
+.dot{width:14px;height:14px;background:#6B1F2B;border-radius:50%;border:3px solid #C3A35E;box-shadow:0 0 0 4px rgba(195,163,94,0.3)}
+.tip{background:#6B1F2B;color:white;padding:4px 8px;font-size:10px;border-radius:3px;white-space:nowrap;margin-top:4px;text-align:center}
+
+/* Option C */
+.splitC{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:start}
+.mapLeft{background:#ddd8d0;border:1px solid #C3A35E;border-radius:10px;height:300px;display:flex;align-items:center;justify-content:center;color:#6B1F2B;font-size:13px;flex-direction:column;gap:8px}
+.cardsRight{display:flex;flex-direction:column;gap:14px}
+.card{background:white;border-left:4px solid #C3A35E;padding:16px 18px;border-radius:0 6px 6px 0;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.city{font-size:16px;font-weight:bold;color:#6B1F2B}
+.addr{font-size:12px;color:#666;margin-top:4px;line-height:1.5}
+.badge{display:inline-block;background:#C3A35E;color:white;font-size:9px;padding:2px 10px;border-radius:10px;margin-top:8px;letter-spacing:1px;text-transform:uppercase}
+.hq{background:#6B1F2B}
+
+/* Option D */
+.mapD{position:relative;height:380px;background:#ddd8d0;border-radius:10px;overflow:hidden}
+.mapDinner{width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;color:#6B1F2B}
+.glass{position:absolute;background:rgba(255,255,255,0.92);border:1px solid rgba(195,163,94,0.8);border-radius:8px;padding:12px 16px;box-shadow:0 4px 20px rgba(0,0,0,0.12)}
+.gcity{font-size:13px;font-weight:bold;color:#6B1F2B}
+.gaddr{font-size:11px;color:#888;margin-top:2px}
+</style>
+</head>
+<body>
+
+<!-- OPTION A -->
+<div class="section">
+  <div class="label">Option A</div>
+  <div class="title">Google Maps — Interactive Full Width</div>
+  <div class="sub">Real Google Map tiles fill the entire section. Zoomable, pannable. Custom pins on London, Milan, New York. Click pin → info card pops up.</div>
+  <div class="mapA">
+    <div class="map-text">
+      <div style="font-size:32px;margin-bottom:8px">🗺</div>
+      <div>Live Google Map renders here</div>
+      <div style="font-size:11px;color:#999;margin-top:4px">Satellite / Road toggle available</div>
+    </div>
+    <div class="pin" style="top:35%;left:49%"><div class="dot"></div><div class="tip">🇬🇧 London HQ</div></div>
+    <div class="pin" style="top:42%;left:53%"><div class="dot" style="background:#C3A35E"></div><div class="tip">🇮🇹 Milan</div></div>
+    <div class="pin" style="top:35%;left:25%"><div class="dot" style="background:#C3A35E"></div><div class="tip">🇺🇸 New York</div></div>
+  </div>
+</div>
+
+<!-- OPTION C -->
+<div class="section">
+  <div class="label">Option C</div>
+  <div class="title">Split Layout — Map Left + Office Cards Right</div>
+  <div class="sub">Google Maps iframe on the left showing Europe/Atlantic. Structured office cards on the right. Clean enterprise look — like Bloomberg or institutional finance sites.</div>
+  <div class="splitC">
+    <div class="mapLeft">
+      <div style="font-size:28px">🗺</div>
+      <div>Google Map</div>
+      <div style="font-size:11px;color:#999">Centered on Europe / Atlantic</div>
+    </div>
+    <div class="cardsRight">
+      <div class="card">
+        <div class="city">🇬🇧 London</div>
+        <div class="addr">Harvics Head Office<br>London, United Kingdom</div>
+        <div class="badge hq">Headquarters</div>
+      </div>
+      <div class="card">
+        <div class="city">🇮🇹 Milan</div>
+        <div class="addr">Harvics Office<br>Milan, Italy</div>
+        <div class="badge">Regional Office</div>
+      </div>
+      <div class="card">
+        <div class="city">🇺🇸 New York</div>
+        <div class="addr">Harvics Office<br>New York, United States</div>
+        <div class="badge">Regional Office</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- OPTION D -->
+<div class="section">
+  <div class="label">Option D</div>
+  <div class="title">Full-Screen Map + Floating Glass Cards</div>
+  <div class="sub">Google Maps spans the full width as background. Glassmorphism info cards float over each pin location. Most premium / luxury feel.</div>
+  <div class="mapD">
+    <div class="mapDinner">
+      <div style="font-size:32px">🗺</div>
+      <div>Google Maps — Full Width Background</div>
+      <div style="font-size:11px;color:#999">Cards float over the map at each office pin</div>
+    </div>
+    <div class="glass" style="top:40px;left:50px">
+      <div class="gcity">🇬🇧 London HQ</div>
+      <div class="gaddr">Harvics Head Office</div>
+      <div class="badge hq" style="font-size:9px;padding:2px 8px;border-radius:10px;display:inline-block;color:white;margin-top:6px;letter-spacing:1px">HQ</div>
+    </div>
+    <div class="glass" style="top:130px;left:50%;transform:translateX(-50%)">
+      <div class="gcity">🇮🇹 Milan</div>
+      <div class="gaddr">Harvics Office</div>
+    </div>
+    <div class="glass" style="bottom:50px;right:60px">
+      <div class="gcity">🇺🇸 New York</div>
+      <div class="gaddr">Harvics Office</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

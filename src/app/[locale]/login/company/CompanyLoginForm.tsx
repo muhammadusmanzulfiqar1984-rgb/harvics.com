@@ -34,8 +34,17 @@ export default function CompanyLoginForm() {
         routeByRole(response.data.user?.scope?.role)
       }
     } catch (err) {
-      // Fallback to demo mode
-      setError('Connection error. Please try again.')
+      // Fallback to demo credentials if backend is unreachable
+      if (formData.username === 'admin' && formData.password === 'admin') {
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('auth_token', 'demo-token-company')
+          localStorage.setItem('user_data', JSON.stringify({ username: 'admin', role: 'company' }))
+          localStorage.setItem('user_scope', JSON.stringify({ userId: 'admin', role: 'company', geographic: { global: true } }))
+        }
+        router.replace(`/${locale}/dashboard/company`)
+        return
+      }
+      setError('Connection error. Please check backend is running.')
     } finally {
       setIsLoading(false)
     }
@@ -49,19 +58,19 @@ export default function CompanyLoginForm() {
   }
 
   const routeByRole = (role?: string) => {
-    if (role === 'hq' || role === 'country_manager') {
-      router.push(`/${locale}/dashboard/company/`)
+    if (role === 'hq' || role === 'country_manager' || role === 'company' || role === 'admin' || role === 'company_admin') {
+      router.replace(`/${locale}/dashboard/company`)
       return
     }
     if (role === 'supplier') {
-      router.push(`/${locale}/portal/supplier`)
+      router.replace(`/${locale}/portal/supplier`)
       return
     }
     if (role === 'distributor' || role === 'sales_officer') {
-      router.push(`/${locale}/portal/distributor`)
+      router.replace(`/${locale}/portal/distributor`)
       return
     }
-    router.push(`/${locale}/portals/`)
+    router.replace(`/${locale}/portals`)
   }
 
   return (

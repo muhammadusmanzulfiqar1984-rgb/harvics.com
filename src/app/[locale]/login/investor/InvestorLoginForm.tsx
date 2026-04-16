@@ -24,13 +24,35 @@ export default function InvestorLoginForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
-    
-    // Simulate login process
-    setTimeout(() => {
+
+    try {
+      const { apiClient } = await import('@/lib/api')
+      const response = await apiClient.login(formData.email, formData.password)
+
+      if (response.data) {
+        if (typeof window !== 'undefined' && response.data.token) {
+          localStorage.setItem('auth_token', response.data.token)
+          localStorage.setItem('user_data', JSON.stringify(response.data.user))
+        }
+        window.location.replace(`/${locale}/investor-relations`)
+      } else {
+        // Demo fallback
+        if (formData.email === 'admin' && formData.password === 'admin') {
+          window.location.replace(`/${locale}/investor-relations`)
+        } else {
+          alert(response.error || 'Invalid credentials. Use admin/admin for demo.')
+        }
+      }
+    } catch {
+      // Offline fallback
+      if (formData.email === 'admin' && formData.password === 'admin') {
+        window.location.replace(`/${locale}/investor-relations`)
+      } else {
+        alert('Connection error. Use admin/admin for demo access.')
+      }
+    } finally {
       setIsLoading(false)
-      // In a real app, you would handle authentication here
-      alert('Login functionality would be implemented here')
-    }, 2000)
+    }
   }
 
   return (

@@ -98,6 +98,14 @@ export default function KidsPage({ params }: { params: { locale: string } }) {
     <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* ─── Hero Banner ─── */}
       <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=1200&h=600&fit=crop&q=75"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
+        />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
         <div className="absolute top-0 right-0 w-[500px] h-[500px] opacity-5" style={{ background: 'radial-gradient(circle, #C3A35E 0%, transparent 70%)' }} />
         <div className="max-w-[1200px] mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">

@@ -1,0 +1,16 @@
+import type { Metadata } from 'next'
+import AppsPageClient from './AppsPageClient'
+
+export const metadata: Metadata = {
+  title: 'App Store — Harvics OS',
+  description: 'Enterprise-grade applications built on the Harvics platform. Explore and activate modules for HR, Finance, CRM, and more.',
+}
+
+interface AppsPageProps {
+  params: Promise<{ locale: string }>
+}
+
+export default async function AppsPage({ params }: AppsPageProps) {
+  const { locale } = await params
+  return <AppsPageClient locale={locale} />
+}

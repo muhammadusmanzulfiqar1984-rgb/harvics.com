@@ -149,6 +149,16 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
         ref={heroRef.ref}
         className="relative bg-gradient-to-br from-[#6B1F2B] via-[#5a1a24] to-[#4a1520] py-16 px-4 overflow-hidden"
       >
+        {/* Hero Background Image */}
+        <div className="absolute inset-0">
+          <SmartImage
+            keyword={matchedItem.toLowerCase()}
+            alt=""
+            className="w-full h-full object-cover"
+            style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
+          />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
+        </div>
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 right-0 w-[400px] h-[400px] opacity-[0.05]"
             style={{ background: 'radial-gradient(circle, #C3A35E 0%, transparent 65%)' }} />

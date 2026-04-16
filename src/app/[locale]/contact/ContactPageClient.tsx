@@ -46,6 +46,15 @@ const ContactPageClient: React.FC<ContactPageClientProps> = ({ locale, translati
           ref={heroRef.ref}
           className="relative bg-gradient-to-br from-[#6B1F2B] via-[#5a1a24] to-[#4a1520] py-28 md:py-32 px-4 overflow-hidden"
         >
+          {/* Hero Background Image */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=600&fit=crop&q=75"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
+          />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 right-0 w-[600px] h-[600px] opacity-[0.06]"
               style={{ background: 'radial-gradient(circle, #C3A35E 0%, transparent 65%)' }} />

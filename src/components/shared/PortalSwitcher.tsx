@@ -41,6 +41,19 @@ export default function PortalSwitcher({ currentPortal }: PortalSwitcherProps) {
     }
   }, [])
 
+  const handleLogout = () => {
+    setIsOpen(false)
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('auth_token')
+      localStorage.removeItem('user_data')
+      localStorage.removeItem('user_scope')
+      localStorage.removeItem('user_type')
+      document.cookie = 'auth_token=; path=/; max-age=0'
+      document.cookie = 'x_role=; path=/; max-age=0'
+    }
+    router.replace(`/${locale}/login`)
+  }
+
   return (
     <div className="relative" ref={dropdownRef}>
       <button
@@ -78,6 +91,19 @@ export default function PortalSwitcher({ currentPortal }: PortalSwitcherProps) {
                 </div>
               </button>
             ))}
+          </div>
+
+          {/* Logout */}
+          <div className="mt-2 pt-2 border-t border-[#C3A35E]/20 px-2">
+            <button
+              onClick={handleLogout}
+              className="w-full flex items-center gap-3 px-3 py-2 rounded-md text-left text-sm text-gray-500 hover:bg-red-50 hover:text-red-600 transition-colors"
+            >
+              <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+              </svg>
+              Sign out
+            </button>
           </div>
         </div>
       )}

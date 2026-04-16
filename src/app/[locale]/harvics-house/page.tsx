@@ -13,7 +13,7 @@ export default function HarvicsHousePage() {
       <section className="relative h-[60vh] bg-[#6B1F2B] overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="/Images/HARVICS FOODS.png"
+            src="/Images/harvics-foods.png"
             alt="Harvics House Background"
             fill
             className="object-cover"

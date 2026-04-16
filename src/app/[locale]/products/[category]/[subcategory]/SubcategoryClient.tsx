@@ -9,6 +9,7 @@ interface SubcategoryClientProps {
   images: string[]
   categoryTitle: string
   subcategoryTitle: string
+  subcategoryDescription: string
   locale: string
   categoryKey: string
   subcategorySlug: string
@@ -18,6 +19,7 @@ const SubcategoryClient: React.FC<SubcategoryClientProps> = ({
   images,
   categoryTitle,
   subcategoryTitle,
+  subcategoryDescription,
   locale,
   categoryKey,
   subcategorySlug
@@ -80,8 +82,8 @@ const SubcategoryClient: React.FC<SubcategoryClientProps> = ({
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-2 sm:mb-3 md:mb-4 font-serif drop-shadow-2xl px-4">
               {subcategoryTitle}
             </h1>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed px-4 font-semibold">
-              {categoryTitle}
+            <p className="text-sm sm:text-base md:text-lg text-white/80 max-w-3xl mx-auto leading-relaxed px-4 font-normal">
+              {subcategoryDescription}
             </p>
           </div>
         </div>
@@ -95,7 +97,14 @@ const SubcategoryClient: React.FC<SubcategoryClientProps> = ({
             <div className="px-[2px] sm:px-2">
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5" style={{gap: '2px'}}>
                 {images.map((image, index) => {
-                  const imageName = image.split('/').pop()?.replace(/\.[^/.]+$/, '') || `Product ${index + 1}`
+                  const rawName = image.split('/').pop()?.replace(/\.[^/.]+$/, '') || `Product ${index + 1}`
+                  // Clean filename: remove numbers in parentheses, dashes, underscores → Title Case
+                  const imageName = rawName
+                    .replace(/\s*[\(\-]\s*\d+[\)\s]*/g, ' ')
+                    .replace(/[-_]+/g, ' ')
+                    .replace(/\b\w/g, c => c.toUpperCase())
+                    .replace(/\s+/g, ' ')
+                    .trim() || `${subcategoryTitle} ${index + 1}`
                   return (
                     <div
                       key={index}

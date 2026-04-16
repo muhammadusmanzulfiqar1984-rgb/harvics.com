@@ -20,6 +20,10 @@ import { requireAuthScope } from './middleware/authScope';
 import { enforceAIProtocol, requireAIEngine } from './middleware/aiProtocolEnforcement';
 import { neuralGovernance } from './middleware/neuralGovernance';
 import { buildLocalisationPayload, listCountryProfiles } from './modules/localisation/localisation.service';
+import { auditLogRouter } from './modules/admin/auditLog.controller';
+import { commsRouter } from './modules/comms/comms.controller';
+import { notificationService } from './modules/comms/notification.service';
+import { eventBus } from './core/eventBus';
 
 import { HarvicsAlphaEngine } from './services/harvicsAlphaEngine';
 
@@ -232,5 +236,68 @@ router.use('/intelligence', requireAuthScope, intelligenceRouter);
 
 // ── EXPOSED SERVICES (PROTECTED - AUTH REQUIRED) ─────────────────────
 router.use('/services', requireAuthScope, servicesRouter);
+
+// ── ADMIN: AUDIT LOG (company + hq only — enforced inside router) ─────
+router.use('/audit-log', auditLogRouter);
+
+// ── DOMAIN 17: COMMUNICATION LAYER ──────────────────────────────────────────
+router.use('/comms', commsRouter);
+
+// ── DOMAIN EVENT → NOTIFICATION WIRING ──────────────────────────────────────
+// These fire automatically when any domain emits an event via the eventBus.
+// No polling. No manual triggering.
+
+eventBus.on('procurement.po.created', (data: any) => {
+  const amount = data?.totalAmount ?? data?.amount ?? 0;
+  if (amount >= 10000) {
+    notificationService.requestApproval({
+      requesterId: data?.createdBy ?? 'system',
+      requesterRole: data?.createdByRole ?? 'sales_officer',
+      entityType: 'PurchaseOrder',
+      entityId: data?.id ?? data?.poId ?? 'unknown',
+      entitySummary: `PO ${data?.poNumber ?? data?.id} — $${Number(amount).toLocaleString()} — ${data?.vendorName ?? 'Vendor'}`,
+      amount,
+      priority: amount >= 100000 ? 'critical' : 'high',
+    });
+  }
+});
+
+eventBus.on('inventory.low-stock', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'country_manager',
+    category: 'inventory_alert',
+    priority: 'high',
+    title: 'Low Stock Alert',
+    body: `SKU ${data?.sku ?? 'unknown'} is below reorder point. Current stock: ${data?.qty ?? 0} ${data?.uom ?? 'units'}.`,
+    actionUrl: '/os/inventory',
+    relatedEntityId: data?.sku,
+    relatedEntityType: 'InventoryItem',
+  });
+});
+
+eventBus.on('finance.payment.received', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'finance_alert',
+    priority: 'normal',
+    title: 'Payment Received',
+    body: `Payment of $${Number(data?.amount ?? 0).toLocaleString()} received from ${data?.customer ?? 'customer'}.`,
+    actionUrl: '/os/finance',
+    relatedEntityId: data?.invoiceId,
+    relatedEntityType: 'Invoice',
+  });
+});
+
+eventBus.on('ai.anomaly.detected', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'ai_insight',
+    priority: 'critical',
+    title: 'AI Anomaly Detected',
+    body: data?.message ?? 'The Intelligence System has detected an anomaly requiring review.',
+    actionUrl: '/os/intelligence',
+    relatedEntityType: 'AIInsight',
+  });
+});
 
 export default router;

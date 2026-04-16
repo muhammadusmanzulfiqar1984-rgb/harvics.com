@@ -73,8 +73,16 @@ export default async function FAQPage({ params }: FAQPageProps) {
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
       
       <div className="pt-20">
-        <section className="py-12 md:py-24 px-4 md:px-6 bg-gradient-to-br from-[#ffffff] via-[#ffffff] to-[#ffffff]">
-          <div className="max-w-7xl mx-auto text-center">
+        <section className="py-12 md:py-24 px-4 md:px-6 bg-[#6B1F2B] relative overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=600&fit=crop&q=75"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
+          />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
+          <div className="max-w-7xl mx-auto text-center relative z-10">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
               {content.hero.title}
             </h1>

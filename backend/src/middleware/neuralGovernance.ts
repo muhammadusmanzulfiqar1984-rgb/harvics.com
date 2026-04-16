@@ -12,24 +12,13 @@
  */
 
 import { Request, Response, NextFunction } from 'express'
+import { auditLogService } from '../services/auditLog.service'
 
 interface GovernanceResult {
   check: string
   passed: boolean
   reason?: string
 }
-
-// ── Immutable in-memory audit log (replace with DB write in production) ──
-const AUDIT_LOG: {
-  ts: Date
-  userId: string
-  method: string
-  path: string
-  blocked: boolean
-  checks: GovernanceResult[]
-}[] = []
-
-export function getAuditLog() { return AUDIT_LOG }
 
 // ── Individual check functions (wired to real data in production) ──
 
@@ -107,18 +96,24 @@ export function neuralGovernance(req: Request, res: Response, next: NextFunction
 
   const failed = checks.filter(c => !c.passed)
   const userId = (req as any).user?.id || 'anonymous'
+  const userRole = (req as any).user?.role || 'unknown'
 
-  // Always log to audit trail
-  AUDIT_LOG.unshift({
-    ts: new Date(),
+  // Write to unified Audit Log service
+  auditLogService.write({
     userId,
+    userRole,
+    action: `governance:${req.method.toLowerCase()}`,
+    resource: req.path.split('/')[1] || 'unknown',
     method: req.method,
     path: req.path,
-    blocked: failed.length > 0,
-    checks,
+    statusCode: failed.length > 0 ? 403 : 0,
+    allowed: failed.length === 0,
+    reason: failed.length > 0
+      ? failed.map(f => `[${f.check}] ${f.reason}`).join(' | ')
+      : undefined,
+    ip: req.ip || req.socket?.remoteAddress || 'unknown',
+    userAgent: req.headers['user-agent'] || 'unknown',
   })
-  // Cap log at 1000 entries in memory
-  if (AUDIT_LOG.length > 1000) AUDIT_LOG.splice(1000)
 
   if (failed.length > 0) {
     return res.status(403).json({

@@ -138,7 +138,7 @@ export default function UnifiedLoginForm() {
       console.error('Unified login failed', err)
       const errorMessage = err instanceof Error ? err.message : 'Unknown error'
       if (errorMessage.includes('Failed to fetch') || errorMessage.includes('NetworkError')) {
-        setError('Cannot connect to server. Please ensure the backend is running and accessible through http://localhost:3000')
+        setError('Cannot connect to server. Please ensure the backend is running on http://localhost:4000')
       } else {
         setError(`Connection error: ${errorMessage}`)
       }
@@ -175,6 +175,12 @@ export default function UnifiedLoginForm() {
       case 'company':
         router.replace(`/${locale}/dashboard/company`)
         break
+      case 'investor':
+        router.replace(`/${locale}/investor-relations`)
+        break
+      case 'employee':
+        router.replace(`/${locale}/os/hr`)
+        break
       default:
         router.replace(`/${locale}/portals`)
         break
@@ -210,7 +216,7 @@ export default function UnifiedLoginForm() {
             onChange={handleInputChange}
             required
             className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent bg-gray-50 text-gray-900 placeholder-gray-400 transition-all duration-300"
-            placeholder="supplier_user, distributor_user…"
+            placeholder="Enter your username"
           />
         </div>
 

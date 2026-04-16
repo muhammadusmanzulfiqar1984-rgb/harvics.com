@@ -23,8 +23,8 @@ export default function EmployeeLoginForm() {
     // Simulate login process
     setTimeout(() => {
       if (formData.username === 'admin' && formData.password === 'admin') {
-        // Redirect to employee dashboard
-        router.push(`/${locale}/dashboard/employee`)
+        // Redirect to HR module (employee dashboard)
+        router.replace(`/${locale}/os/hr`)
       } else {
         setError('Invalid username or password. Use admin/admin for demo.')
       }

@@ -13,6 +13,7 @@ export interface Subcategory {
   slug: string
   images: string[]
   imageCount: number
+  description: string
 }
 
 export interface CategoryData {
@@ -28,13 +29,58 @@ export interface CategoryData {
 
 // Map folder names to category keys
 const categoryMapping: { [key: string]: { key: string; name: string; icon: string; color: string; description: string } } = {
-  'Bakery': { key: 'bakery', name: 'Bakery', icon: '🥖', color: 'from-amber-500 to-orange-500', description: 'Fresh baked goods' },
-  'Beverages': { key: 'beverages', name: 'Beverages', icon: '🥤', color: 'from-blue-500 to-cyan-500', description: 'Refreshing drinks and beverages' },
-  'Confectionary': { key: 'confectionery', name: 'Confectionary', icon: '🍬', color: 'from-pink-500 to-harvics-red', description: 'Sweet treats and confectionery' },
-  'Culinary': { key: 'culinary', name: 'Culinary', icon: '🍽️', color: 'from-orange-500 to-white', description: 'Culinary products and ingredients' },
-  'Frozen Foods': { key: 'frozenFoods', name: 'Frozen Foods', icon: '🧊', color: 'from-blue-500 to-purple-500', description: 'Frozen food products' },
-  'Pastas': { key: 'pasta', name: 'Pasta', icon: '🍝', color: 'from-harvics-red to-pink-500', description: 'Quality pasta products' },
-  'Snacks': { key: 'snacks', name: 'Snacks', icon: '🍿', color: 'from-white to-orange-500', description: 'Delicious snacks and treats' }
+  'Bakery': { key: 'bakery', name: 'Bakery', icon: '🥖', color: 'from-amber-500 to-orange-500', description: 'Premium biscuits, wafers, cakes and baked snacks sourced from certified European manufacturers.' },
+  'Beverages': { key: 'beverages', name: 'Beverages', icon: '🥤', color: 'from-blue-500 to-cyan-500', description: 'Carbonated, functional, health and hot drinks distributed across 42+ international markets.' },
+  'Confectionary': { key: 'confectionery', name: 'Confectionery', icon: '🍬', color: 'from-pink-500 to-rose-600', description: 'Bubble gum, jellies, sugar candy and toffees — Halal certified, globally compliant.' },
+  'Culinary': { key: 'culinary', name: 'Culinary', icon: '🍽️', color: 'from-orange-500 to-amber-600', description: 'Cooking oils, spices, sauces, pickles and ready-to-cook products for retail and foodservice.' },
+  'Frozen Foods': { key: 'frozenFoods', name: 'Frozen Foods', icon: '🧊', color: 'from-blue-500 to-purple-500', description: 'IQF chicken, fish fillets, frozen meat and vegetables — cold chain maintained from source to shelf.' },
+  'Pastas': { key: 'pasta', name: 'Pasta', icon: '🍝', color: 'from-red-600 to-orange-500', description: 'Durum wheat pasta in all formats — fusilli, bucatini, farfalle — from premium Italian producers.' },
+  'Snacks': { key: 'snacks', name: 'Snacks', icon: '🍿', color: 'from-yellow-500 to-orange-500', description: 'Chips, crisps, baked snacks and fusion varieties across 15+ flavour profiles for global retail.' },
+  'BearPops Characters': { key: 'bearpops', name: 'BearPops', icon: '🐻', color: 'from-pink-400 to-purple-500', description: 'BearPops — the Harvics character brand. Fun, vibrant confectionery designed for kids and gifting markets.' },
+  'Product Photos': { key: 'productPhotos', name: 'Product Range', icon: '📦', color: 'from-harvics-maroon to-harvics-gold', description: 'Full Harvics product portfolio — FMCG across all categories, globally sourced and quality assured.' },
+}
+
+// Descriptions for every subcategory — keyed by slug
+const subcategoryDescriptions: Record<string, string> = {
+  // Bakery
+  'bakery-snacks-and-dry-cakes': 'Dry cakes, rusks and cupcakes baked to consistent moisture levels. Long shelf life with nitrogen-flush packaging. Ideal for retail and foodservice.',
+  'biscuits-and-cookies': 'Cream-filled biscuits, digestives, butter cookies and chocolate-coated varieties. Sourced from FSSC 22000 certified bakeries with multi-language labeling for export.',
+  'cakes-and-pastreis': 'Individually wrapped cakes and pastries with controlled water activity for extended shelf life. Suitable for ambient retail and convenience channels.',
+  'wafer-and-wafer-bars': 'Crispy layered wafers and coated wafer bars in chocolate, vanilla, hazelnut and strawberry. Packed for retail and impulse formats. MOQ from 500 cartons.',
+  // Beverages
+  'carbonated': 'Sparkling waters, sodas and carbonated soft drinks in 250ml to 1.5L formats. Full private-label capability with custom flavours and nutrition panels.',
+  'functional': 'Energy drinks, sports recovery and fortified functional beverages. Taurine, B-vitamin and electrolyte formulations for active consumer segments.',
+  'health-special': 'Health-focused beverages including vitamin waters, immunity blends and low-sugar variants. Clean-label, no artificial colours. Halal and EU-certified.',
+  'hot-and-ready-drink': 'Ready-to-drink teas, coffees and hot chocolate in aseptic carton and PET formats. Shelf-stable at ambient temperature with 12–18 month shelf life.',
+  'non-carbonated': 'Still juices, nectars, flavoured water and non-carbonated soft drinks. Cold-press and UHT options. Multi-pack and single-serve formats.',
+  // Confectionery
+  'bubble-gum': 'Fruit and mint bubble gum in pillow, stick and ball formats. Halal certified. Bright consumer packaging designed for checkout impulse and gifting.',
+  'jelly': 'Fruit jellies, gummy bears and BearPops jelly characters. Halal gelatine-free and gelatine options. Popular in GCC, South Asia and European impulse retail.',
+  'sugar-candy': 'Boiled sweets, fruit drops and lollipops in bulk jar and flow-wrap formats. Consistent sugar profiles with Halal and Kosher certification available.',
+  'toffees': 'Eclairs, milk toffees and caramel chews. Individually wrapped for hygiene compliance. Popular single-serve and counter-display formats for emerging markets.',
+  // Culinary
+  'cooking-oil-fats-and-dressing': 'Sunflower, vegetable and blended cooking oils in 500ml–5L. Mayonnaise, salad dressings and vinaigrettes in retail and foodservice sizes.',
+  'pickle-s-chutnyes-and-preserves': 'Mixed pickles, mango chutney, jam and fruit preserves. Traditional South Asian and Middle Eastern recipes with modern retail packaging.',
+  'ready-to-cook': 'Marinated meat kits, curry pastes, spice kits and ready-to-cook meal solutions. Designed for minimal preparation — retailer-ready with full allergen labeling.',
+  'seasoning-spices-and-marinade': 'Whole and ground spices — black pepper, chili, turmeric, cumin, coriander. Custom spice blends and marinades. Steam-sterilized, ETO-free processing.',
+  'sauces-and-condiments': 'Ketchup, BBQ sauce, hot sauce, soy sauce, oyster sauce, pizza sauce, peri peri, honey mustard, Worcestershire and more. Retail and foodservice sizes.',
+  // Frozen Foods
+  'chicken-nuggets': 'Breaded and plain chicken nuggets from Halal-certified processing plants. IQF (Individually Quick Frozen) for consistent portion control. For QSR and retail.',
+  'fish-fillet': 'White fish fillets — battered, breaded and plain. MSC-certified sourcing options. Cold chain maintained at -18°C from processing to delivery.',
+  'frozen-meat': 'Halal-certified frozen chicken portions, beef cuts and lamb. Vacuum-packed and blast-frozen. Full HACCP traceability from farm to fork.',
+  'frozen-vegitables': 'IQF mixed vegetables, peas, sweetcorn, spinach and stir-fry blends. No additives, no preservatives. Sourced from controlled agricultural supply chains.',
+  // Pasta
+  'all': 'Durum wheat semolina pasta — fusilli, bucatini, farfalle, fettuccine, linguine and more. Bronze-die extruded for authentic texture. From premium Italian and Spanish producers.',
+  // Snacks
+  'baked-and-roasted': 'Oven-baked and air-roasted snacks — chickpeas, corn puffs and grain-based crisps. Lower fat than fried alternatives. Clean label for health-conscious retail.',
+  'chips-and-crisps': 'Potato chips, vegetable crisps and rice crackers in 30g–200g retail formats. 15+ flavour profiles. Nitrogen-flush packaging for maximum crunch retention.',
+  'fusion-snacks': 'East-meets-West snack fusions — masala puffs, wasabi beans, chili corn. Designed for multicultural urban retail and export markets across Europe and GCC.',
+  'ready-to-eat-bite': 'Bite-size snack portions for convenience and on-the-go consumption. Single-serve and multipacks. High repeatability for vending, travel retail and convenience.',
+  'savory': 'Savoury baked goods, breadsticks, crackers and pretzel formats. Cheese, herb and smoked flavours. Ideal for gifting, hospitality and premium retail.',
+  // BearPops
+  'bearpops-characters': 'BearPops character confectionery — the Harvics kids brand. Gummy bears, jellies and lollipops with collectible character designs. Halal certified, EU compliant.',
+  // Product Photos
+  'product-photos': 'Full Harvics FMCG portfolio — all categories photographed for catalogue, digital and retail display use.',
 }
 
 // Helper function to create URL-friendly slug
@@ -90,14 +136,14 @@ export function getCategoriesFromFolder(): CategoryData[] {
   }
 
   // Try both case variations for cross-platform compatibility
-  const imagesPath1 = path.join(process.cwd(), 'public', 'Images', 'Harvics.com')
-  const imagesPath2 = path.join(process.cwd(), 'public', 'images', 'Harvics.com')
+  const imagesPath1 = path.join(process.cwd(), 'public', 'FMCG IMAGES')
+  const imagesPath2 = path.join(process.cwd(), 'public', 'fmcg images')
   
   let basePath = imagesPath1
   if (!fs.existsSync(basePath)) {
     basePath = imagesPath2
     if (!fs.existsSync(basePath)) {
-      console.warn('Harvics.com folder not found at:', imagesPath1, 'or', imagesPath2)
+      console.warn('FMCG IMAGES folder not found at:', imagesPath1, 'or', imagesPath2)
       // Cache empty result to avoid repeated checks
       categoriesCache = []
       cacheTimestamp = now
@@ -138,11 +184,13 @@ export function getCategoriesFromFolder(): CategoryData[] {
           const images = getImageFiles(subcategoryPath)
           
           if (images.length > 0) {
+            const subSlug = createSlug(subcategoryDir)
             subcategories.push({
               name: subcategoryDir,
-              slug: createSlug(subcategoryDir),
+              slug: subSlug,
               images,
-              imageCount: images.length
+              imageCount: images.length,
+              description: subcategoryDescriptions[subSlug] || `Premium ${subcategoryDir.toLowerCase()} — quality assured, globally sourced by Harvics Global Ventures.`,
             })
           }
         }
@@ -154,7 +202,8 @@ export function getCategoriesFromFolder(): CategoryData[] {
             name: 'All',
             slug: 'all',
             images,
-            imageCount: images.length
+            imageCount: images.length,
+            description: subcategoryDescriptions['all'] || categoryMapping[categoryFolder]?.description || 'Premium products globally sourced by Harvics Global Ventures.',
           })
         }
       }

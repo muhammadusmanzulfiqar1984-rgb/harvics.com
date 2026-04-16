@@ -57,8 +57,8 @@ const DEFAULT_IMAGES = [
   '/Images/Harvics.com/Bakery/Cakes and Pastreis/cake.png',
   '/Images/Harvics.com/Beverages/Functional/energy (2).png',
   '/Images/Harvics.com/Bakery/Wafer and Wafer Bars/wafer.png',
-  '/Images/6607de09-0cc0-4118-9c32-facc547a75bd.JPG',
-  '/Images/d9e78976-4d7d-4838-8342-07102dcf573d.JPG',
+  '/Images/hero-banner-1.jpg',
+  '/Images/hero-banner-2.jpg',
   // 👆 Add more images above this line 👆
   // Example: '/Images/your-new-image.jpg',
 ]

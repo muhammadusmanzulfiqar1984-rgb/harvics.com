@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import type { ProductCategory } from '@/data/folderBasedProducts'
 
@@ -108,11 +109,13 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ categories }) => {
             <div className="relative bg-white/85 rounded-xl shadow-xl border-l-4 border-gold px-6 sm:px-8 lg:px-10 py-6 sm:py-8 lg:py-10">
               <div className="mb-8 border-b border-gold/40 pb-6">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16">
-                    <img 
+                  <div className="relative w-16 h-16">
+                    <Image 
                       src="/Images/logo.png" 
                       alt="Harvics Logo" 
-                      className="w-full h-full object-contain brightness-0 invert"
+                      fill
+                      sizes="64px"
+                      className="object-contain brightness-0 invert"
                     />
                   </div>
                   <div>

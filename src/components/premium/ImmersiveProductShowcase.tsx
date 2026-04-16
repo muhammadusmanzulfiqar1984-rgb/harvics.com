@@ -21,7 +21,7 @@ const industryVideos: IndustryVideo[] = [
   {
     name: 'Textiles & Apparel',
     category: 'Premium Fabrics',
-    poster: '/Images/Textile .png',
+    poster: '/Images/textile.png',
     description: 'Global sourcing of premium textiles and apparel',
     color: '#4F46E5',
   },
@@ -70,7 +70,7 @@ const industryVideos: IndustryVideo[] = [
   {
     name: 'Sourcing Solutions',
     category: 'Global Procurement',
-    poster: '/Images/Sourcing Solutions.png',
+    poster: '/Images/sourcing-solutions.png',
     description: 'Global sourcing, quality control, and logistics',
     color: '#8B5CF6',
   },
@@ -84,7 +84,7 @@ const industryVideos: IndustryVideo[] = [
   {
     name: 'AI & IT Solutions',
     category: 'Technology',
-    poster: '/Images/IT Solutition .png',
+    poster: '/Images/it-solutions.png',
     description: 'Machine learning, analytics, and automation',
     color: '#F43F5E',
   },

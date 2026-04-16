@@ -77,6 +77,15 @@ const SupremeNavBar: React.FC = () => {
 
   const activeVertical = navVerticals.find(v => v.key === activeDropdown)
 
+  // Shorter labels for the nav bar to prevent overflow
+  const navLabels: Record<string, string> = {
+    textiles: 'Apparels',
+    industrial: 'Industrial',
+    sourcing: 'Sourcing',
+    finance: 'Finance & HPay',
+    ai: 'AI & Tech',
+  }
+
   return (
     <>
       <nav
@@ -88,7 +97,7 @@ const SupremeNavBar: React.FC = () => {
       >
         {/* Nav Links */}
         <div className="max-w-[1400px] mx-auto px-6">
-          <ul className="flex items-center justify-center gap-2 lg:gap-4 list-none m-0 p-0 h-[48px]" role="menubar" aria-label="Main navigation">
+          <ul className="flex items-center justify-center gap-1 lg:gap-2 list-none m-0 p-0 h-[48px]" role="menubar" aria-label="Main navigation">
             {navVerticals.map((vertical, idx) => (
               <li
                 key={vertical.key}
@@ -103,7 +112,7 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${vertical.href}`}
-                  className="relative flex items-center h-full px-3 lg:px-4 text-[11px] tracking-[0.04em] whitespace-nowrap group"
+                  className="relative flex items-center h-full px-2 lg:px-3 text-[10px] lg:text-[11px] tracking-[0.04em] whitespace-nowrap group"
                   role="menuitem"
                   aria-haspopup="true"
                   aria-expanded={activeDropdown === vertical.key}
@@ -115,7 +124,7 @@ const SupremeNavBar: React.FC = () => {
                   }}
                 >
                   <span className={`transition-opacity duration-300 ${activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? 'opacity-100' : 'opacity-60 group-hover:opacity-100'}`}>
-                    {vertical.label}
+                    {navLabels[vertical.key] || vertical.label}
                   </span>
                   {/* Active indicator line */}
                   <span 
@@ -129,6 +138,31 @@ const SupremeNavBar: React.FC = () => {
               </li>
             ))}
 
+            {/* Apps — highlighted tab */}
+            <li
+              className="relative h-full flex items-center ml-2"
+              style={{
+                animation: `fadeSlideIn 0.4s ease-out forwards`,
+                animationDelay: `${navVerticals.length * 0.05}s`,
+                opacity: 0,
+              }}
+              onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
+            >
+              <Link
+                href={`/${locale}/apps`}
+                className="relative flex items-center h-full px-3 lg:px-4 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
+                style={{
+                  color: isActive(`/${locale}/apps`) ? '#fff' : '#C3A35E',
+                  textDecoration: 'none',
+                  textTransform: 'uppercase' as const,
+                  background: isActive(`/${locale}/apps`) ? '#C3A35E' : 'transparent',
+                  border: '1px solid #C3A35E',
+                }}
+              >
+                ⬡ Apps
+              </Link>
+            </li>
+
             {/* Static links */}
             {[
               { label: 'About', href: '/about' },
@@ -137,13 +171,13 @@ const SupremeNavBar: React.FC = () => {
               <li key={link.href} className="relative h-full flex items-center"
                 style={{
                   animation: `fadeSlideIn 0.4s ease-out forwards`,
-                  animationDelay: `${(navVerticals.length + idx) * 0.05}s`,
+                  animationDelay: `${(navVerticals.length + 1 + idx) * 0.05}s`,
                   opacity: 0,
                 }}
               >
                 <Link
                   href={`/${locale}${link.href}`}
-                  className="relative flex items-center h-full px-3 lg:px-4 text-[11px] tracking-[0.04em] whitespace-nowrap group"
+                  className="relative flex items-center h-full px-2 lg:px-3 text-[10px] lg:text-[11px] tracking-[0.04em] whitespace-nowrap group"
                   style={{
                     color: '#6B1F2B',
                     fontWeight: isActive(`/${locale}${link.href}`) ? 600 : 400,

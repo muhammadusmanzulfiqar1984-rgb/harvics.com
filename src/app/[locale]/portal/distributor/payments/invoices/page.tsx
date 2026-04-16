@@ -81,7 +81,7 @@ export default function InvoicesPage() {
               <select
                 value={statusFilter}
                 onChange={(e) => setStatusFilter(e.target.value)}
-                className="px-3 py-1.5 text-sm border border-black200 bg-white text-black"
+                className="px-3 py-1.5 text-sm border border-gray-200 bg-white text-black"
               >
                 <option value="ALL">All Invoices</option>
                 <option value="PENDING">Pending</option>

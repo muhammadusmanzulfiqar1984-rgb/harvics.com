@@ -122,7 +122,7 @@ export default function UploadInvoicePage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-black mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
                     Invoice Number <span className="text-red-600">*</span>
                   </label>
                   <input
@@ -131,13 +131,13 @@ export default function UploadInvoicePage() {
                     value={formData.invoiceNumber}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 py-2 border border-black200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
+                    className="w-full px-3 py-2 border border-gray-200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
                     placeholder="INV-2024-001"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-black mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
                     Invoice Date <span className="text-red-600">*</span>
                   </label>
                   <input
@@ -146,12 +146,12 @@ export default function UploadInvoicePage() {
                     value={formData.invoiceDate}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 py-2 border border-black200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
+                    className="w-full px-3 py-2 border border-gray-200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-black mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
                     Amount <span className="text-red-600">*</span>
                   </label>
                   <input
@@ -161,13 +161,13 @@ export default function UploadInvoicePage() {
                     value={formData.amount}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 py-2 border border-black200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
+                    className="w-full px-3 py-2 border border-gray-200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
                     placeholder="0.00"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-black mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
                     Currency <span className="text-red-600">*</span>
                   </label>
                   <select
@@ -175,7 +175,7 @@ export default function UploadInvoicePage() {
                     value={formData.currency}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 py-2 border border-black200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
+                    className="w-full px-3 py-2 border border-gray-200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
                   >
                     <option value="USD">USD ($)</option>
                     <option value="EUR">EUR (€)</option>
@@ -187,7 +187,7 @@ export default function UploadInvoicePage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-black mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
                     Due Date
                   </label>
                   <input
@@ -195,12 +195,12 @@ export default function UploadInvoicePage() {
                     name="dueDate"
                     value={formData.dueDate}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-black200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
+                    className="w-full px-3 py-2 border border-gray-200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-black mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
                     Invoice PDF <span className="text-red-600">*</span>
                   </label>
                   <input
@@ -208,7 +208,7 @@ export default function UploadInvoicePage() {
                     accept=".pdf"
                     onChange={handleFileChange}
                     required
-                    className="w-full px-3 py-2 border border-black200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
+                    className="w-full px-3 py-2 border border-gray-200 text-black focus:outline-none focus:ring-2 focus:ring-[#F5C542]"
                   />
                   <p className="text-xs text-black/70 mt-1">
                     Maximum file size: 10MB. PDF format only.
@@ -216,7 +216,7 @@ export default function UploadInvoicePage() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 pt-4 border-t border-black100">
+              <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
                 <button
                   type="submit"
                   disabled={loading}
@@ -227,7 +227,7 @@ export default function UploadInvoicePage() {
                 <button
                   type="button"
                   onClick={() => router.back()}
-                  className="px-6 py-2 border border-black200 text-black font-medium rounded hover:bg-[#F2F2F2] transition-colors"
+                  className="px-6 py-2 border border-gray-200 text-black font-medium rounded hover:bg-[#F2F2F2] transition-colors"
                 >
                   Cancel
                 </button>

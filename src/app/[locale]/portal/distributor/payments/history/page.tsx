@@ -99,7 +99,7 @@ export default function PaymentHistoryPage() {
               <select
                 value={statusFilter}
                 onChange={(e) => setStatusFilter(e.target.value as PaymentStatus | 'ALL')}
-                className="px-3 py-1.5 text-sm border border-black200 bg-white text-black"
+                className="px-3 py-1.5 text-sm border border-gray-200 bg-white text-black"
               >
                 <option value="ALL">All Status</option>
                 <option value={PaymentStatus.PENDING}>Pending</option>
@@ -135,7 +135,7 @@ export default function PaymentHistoryPage() {
                 {payments.map((payment) => (
                   <div
                     key={payment.id}
-                    className="p-4 border border-black200 hover:shadow-md transition-all"
+                    className="p-4 border border-gray-200 hover:shadow-md transition-all"
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex-1">
@@ -163,14 +163,14 @@ export default function PaymentHistoryPage() {
                             href={payment.proof_url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-3 py-1.5 text-xs font-medium text-black border border-black200 rounded hover:bg-[#F2F2F2] transition-colors"
+                            className="px-3 py-1.5 text-xs font-medium text-black border border-gray-200 rounded hover:bg-[#F2F2F2] transition-colors"
                           >
                             View Proof
                           </a>
                         )}
                         <button
                           onClick={() => window.location.href = `/${locale}/portal/distributor/payments/history/${payment.id}`}
-                          className="px-3 py-1.5 text-xs font-medium text-black border border-black200 rounded hover:bg-[#F2F2F2] transition-colors"
+                          className="px-3 py-1.5 text-xs font-medium text-black border border-gray-200 rounded hover:bg-[#F2F2F2] transition-colors"
                         >
                           View Details
                         </button>

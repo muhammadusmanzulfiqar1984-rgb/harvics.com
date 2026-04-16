@@ -28,8 +28,16 @@ export default async function HistoryPage({ params }: HistoryPageProps) {
   return (
     <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
-      <section className="bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40">
-        <div className="max-w-[1200px] mx-auto text-center">
+      <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=600&fit=crop&q=75"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
+        />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
+        <div className="max-w-[1200px] mx-auto text-center relative z-10">
           <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">Since 2019</div>
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
             Our Journey

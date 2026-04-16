@@ -76,6 +76,15 @@ export default async function ResearchPage({ params }: ResearchPageProps) {
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="pt-20">
         <section className="h-[380px] relative bg-[#6B1F2B] overflow-hidden">
+          {/* Hero Background Image */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1200&h=600&fit=crop&q=75"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
+          />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
           <div className="absolute inset-0">
             <div className="absolute top-0 left-0 w-full h-full bg-[url('/patterns/grid.svg')] opacity-10"></div>
             <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>

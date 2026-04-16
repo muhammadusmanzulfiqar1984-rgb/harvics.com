@@ -109,7 +109,7 @@ export default function ReceiptsPage() {
                 {payments.map((payment) => (
                   <div
                     key={payment.id}
-                    className="p-4 border border-black200 hover:shadow-md transition-all"
+                    className="p-4 border border-gray-200 hover:shadow-md transition-all"
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex-1">
