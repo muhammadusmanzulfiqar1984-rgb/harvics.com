@@ -99,6 +99,31 @@ const SupremeNavBar: React.FC = () => {
         {/* Nav Links */}
         <div className="max-w-[1400px] mx-auto px-6">
           <ul className="flex items-center justify-center gap-1 lg:gap-2 list-none m-0 p-0 h-[48px]" role="menubar" aria-label="Main navigation">
+            {/* About — first tab */}
+            <li
+              className="relative h-full flex items-center"
+              style={{
+                animation: `fadeSlideIn 0.4s ease-out forwards`,
+                animationDelay: '0s',
+                opacity: 0,
+              }}
+            >
+              <Link
+                href={`/${locale}/about`}
+                className="relative flex items-center h-full px-2 lg:px-3 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
+                style={{
+                  color: '#6B1F2B',
+                  textDecoration: 'none',
+                  textTransform: 'uppercase' as const,
+                  background: isActive(`/${locale}/about`) ? '#C3A35E' : 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)',
+                  border: '1px solid #C3A35E',
+                }}
+                onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
+              >
+                About
+              </Link>
+            </li>
+
             {navVerticals.map((vertical, idx) => (
               <li
                 key={vertical.key}
@@ -113,28 +138,20 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${vertical.href}`}
-                  className="relative flex items-center h-full px-2 lg:px-3 text-[10px] lg:text-[11px] tracking-[0.04em] whitespace-nowrap group"
+                  className="relative flex items-center h-full px-2 lg:px-3 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
                   role="menuitem"
                   aria-haspopup="true"
                   aria-expanded={activeDropdown === vertical.key}
                   style={{
-                    color: '#C3A35E',
-                    fontWeight: isActive(`/${locale}${vertical.href}`) ? 600 : 400,
+                    color: '#6B1F2B',
                     textDecoration: 'none',
                     textTransform: 'uppercase' as const,
+                    background: activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? '#C3A35E' : 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)',
+                    border: '1px solid #C3A35E',
+                    opacity: activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? 1 : 0.85,
                   }}
                 >
-                  <span className={`transition-opacity duration-300 ${activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? 'opacity-100' : 'opacity-60 group-hover:opacity-100'}`}>
-                    {navLabels[vertical.key] || vertical.label}
-                  </span>
-                  {/* Active indicator line */}
-                  <span 
-                    className={`absolute bottom-0 left-1/2 h-0.5 bg-[#C3A35E] transition-all duration-300 ${
-                      activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) 
-                        ? 'w-4/5 -translate-x-1/2 opacity-100' 
-                        : 'w-0 -translate-x-1/2 opacity-0 group-hover:w-1/2 group-hover:opacity-50'
-                    }`}
-                  />
+                  {navLabels[vertical.key] || vertical.label}
                 </Link>
               </li>
             ))}
@@ -153,10 +170,10 @@ const SupremeNavBar: React.FC = () => {
                 href={`/${locale}/apps`}
                 className="relative flex items-center h-full px-3 lg:px-4 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
                 style={{
-                  color: isActive(`/${locale}/apps`) ? '#6B1F2B' : '#C3A35E',
+                  color: '#6B1F2B',
                   textDecoration: 'none',
                   textTransform: 'uppercase' as const,
-                  background: isActive(`/${locale}/apps`) ? '#C3A35E' : 'transparent',
+                  background: isActive(`/${locale}/apps`) ? '#C3A35E' : 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)',
                   border: '1px solid #C3A35E',
                 }}
               >
@@ -191,7 +208,6 @@ const SupremeNavBar: React.FC = () => {
 
             {/* Static links */}
             {[
-              { label: 'About', href: '/about' },
               { label: 'Contact', href: '/contact' },
             ].map((link, idx) => (
               <li key={link.href} className="relative h-full flex items-center"
@@ -205,23 +221,15 @@ const SupremeNavBar: React.FC = () => {
                   href={`/${locale}${link.href}`}
                   className="relative flex items-center h-full px-2 lg:px-3 text-[10px] lg:text-[11px] tracking-[0.04em] whitespace-nowrap group"
                   style={{
-                    color: '#C3A35E',
-                    fontWeight: isActive(`/${locale}${link.href}`) ? 600 : 400,
+                    color: '#6B1F2B',
                     textDecoration: 'none',
                     textTransform: 'uppercase' as const,
+                    background: isActive(`/${locale}${link.href}`) ? '#C3A35E' : 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)',
+                    border: '1px solid #C3A35E',
                   }}
                   onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
                 >
-                  <span className={`transition-opacity duration-300 ${isActive(`/${locale}${link.href}`) ? 'opacity-100' : 'opacity-60 group-hover:opacity-100'}`}>
-                    {link.label}
-                  </span>
-                  <span 
-                    className={`absolute bottom-0 left-1/2 h-0.5 bg-[#C3A35E] transition-all duration-300 ${
-                      isActive(`/${locale}${link.href}`) 
-                        ? 'w-4/5 -translate-x-1/2 opacity-100' 
-                        : 'w-0 -translate-x-1/2 opacity-0 group-hover:w-1/2 group-hover:opacity-50'
-                    }`}
-                  />
+                  {link.label}
                 </Link>
               </li>
             ))}
