@@ -1,10 +1,12 @@
+// Header and Footer are provided by layout.tsx - DO NOT import them here
+import Link from 'next/link'
+import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
 
-import Footer from '@/components/layout/Footer'
-import { getTranslations } from 'next-intl/server'
-import { getFolderBasedCategories } from '@/data/folderBasedProducts'
-import { getSalesPageContent } from '@/utils/contentPopulator'
-import { getProductImages } from '@/utils/harvicsProductImages'
-import Image from 'next/image'
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'sales')
+}
 
 export async function generateStaticParams() {
   return [
@@ -24,66 +26,89 @@ interface CurrentSalesPageProps {
 
 export default async function CurrentSalesPage({ params }: CurrentSalesPageProps) {
   const { locale } = await params
-  const categories = getFolderBasedCategories()
-  // Get intelligent content from content populator
-  const content = getSalesPageContent('current-sales', locale)
-  
-  // Get product images for current sales
-  const saleProductImages = getProductImages(6)
+
+  const navItems = [
+    { label: 'Current Offers', href: `/${locale}/sales/current-sales`, active: true },
+    { label: 'Seasonal', href: `/${locale}/sales/seasonal`, active: false },
+    { label: 'Clearance', href: `/${locale}/sales/clearance`, active: false },
+  ]
+
+  const offers = [
+    { category: 'FMCG', title: 'Snacks & Confectionery — Spring Bulk Offer', desc: 'Wafer bars, chips, biscuits, and confectionery from our European and Asian suppliers. Minimum order 1 pallet. FOB Dubai/CIF available.', moq: '500 cartons', saving: 'Up to 18% off list', regions: 'GCC, Africa, South Asia' },
+    { category: 'Textiles', title: 'Workwear & Safety Apparel — Q2 Stock', desc: 'Hi-vis jackets, safety boots, FR coveralls, and industrial gloves. Certified to EN ISO 20471, EN 11612. Ready stock ex-Dubai warehouse.', moq: '200 pieces', saving: 'Up to 25% off list', regions: 'Middle East, Africa, Europe' },
+    { category: 'Commodities', title: 'Basmati Rice — Pakistani Origin', desc: 'Premium 1121 Sella Basmati, crop year 2025. SGS inspected, fumigation certificate included. Containerised shipment 20ft/40ft.', moq: '1 FCL (25 MT)', saving: 'Spot price advantage', regions: 'GCC, Africa, Southeast Asia' },
+    { category: 'FMCG', title: 'Sauces & Condiments — European Brands', desc: 'Ketchup, mayonnaise, mustard, and specialty sauces from Spain and Italy. Private label and branded options available.', moq: '300 cartons', saving: 'Up to 15% off list', regions: 'Middle East, Africa' },
+    { category: 'Industrial', title: 'PPE & Safety Equipment Bundle', desc: 'Complete workplace safety packages: hard hats, goggles, ear protection, respiratory masks, and first aid kits. CE certified.', moq: '100 units', saving: 'Bundle discount 20%', regions: 'Global' },
+    { category: 'Textiles', title: 'Cotton Apparel — Summer Collection', desc: 'Men\'s and women\'s cotton basics: t-shirts, polos, casual trousers. 180-220 GSM combed cotton, pre-shrunk. Custom branding available.', moq: '500 pieces', saving: 'Up to 22% off list', regions: 'Europe, Middle East' },
+  ]
 
   return (
-    <main className="min-h-screen" style={{ background: '#ffffff' }}>
-      
-      <div className="pt-20">
-        <section className="py-12 md:py-24 bg-gradient-to-br from-[#6B1F2B] via-[#5a000c] to-[#6B1F2B]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
-              {String(content.hero.title)}
-            </h1>
-            <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto">
-              {String(content.hero.subtitle)}
-            </p>
-            {/* Show dynamic count if available */}
-            {!!content.sections[0]?.config?.showCount && (
-              <div className="mt-6 text-[#C3A35E] text-lg">
-                <span className="font-bold">{(content.sections[0]?.items as any[])?.length || 156}</span> items on sale
-              </div>
-            )}
-          </div>
-        </section>
+    <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
+      {/* Hero */}
+      <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.95) 0%, rgba(90,26,36,0.9) 100%)' }} />
+        <div className="max-w-[1200px] mx-auto text-center relative z-10">
+          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">Trade Offers</div>
+          <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
+            Current Trade Offers
+          </h1>
+          <p className="text-lg text-white/60 max-w-[700px] mx-auto leading-relaxed">
+            Live wholesale offers across FMCG, textiles, commodities, and industrial products. Updated weekly.
+          </p>
+        </div>
+      </section>
 
-        <section className="py-12 md:py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-              {[1, 2, 3, 4, 5, 6].map((item, index) => (
-                <div key={item} className="bg-white border border-[#C3A35E]/20 p-6 shadow-lg hover:shadow-xl transition-all">
-                  <div className="bg-[#C3A35E] text-[#6B1F2B] px-3 py-1 rounded-full text-sm font-bold inline-block mb-4">
-                    SALE
-                  </div>
-                  <div className="relative h-48 mb-4 overflow-hidden bg-gray-100">
-                    <Image
-                      src={saleProductImages[index]}
-                      alt={`Harvics Product on Sale ${item}`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
-                  </div>
-                  <h3 className="text-xl font-bold text-[#6B1F2B] mb-2">Product Name {item}</h3>
-                  <div className="flex items-center space-x-2 mb-4">
-                    <span className="text-2xl font-bold text-[#6B1F2B]">$29.99</span>
-                    <span className="text-gray-500 line-through">$49.99</span>
-                    <span className="text-red-600 text-sm font-bold">40% OFF</span>
-                  </div>
-                  <button className="w-full bg-[#6B1F2B] text-[#C3A35E] py-3 font-bold hover:bg-[#5a000c] transition-colors border border-[#C3A35E]/50">
-                    Add to Cart
-                  </button>
+      {/* Sales Nav */}
+      <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
+        <div className="max-w-[1200px] mx-auto px-4 flex gap-0">
+          {navItems.map((n) => (
+            <Link key={n.label} href={n.href}
+              className={`px-6 py-4 text-sm font-semibold transition-colors ${n.active ? 'text-[#C3A35E] border-b-2 border-[#C3A35E]' : 'text-white/50 hover:text-white/80'}`}>
+              {n.label}
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Offers Grid */}
+      <section className="max-w-[1200px] mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {offers.map((offer) => (
+            <div key={offer.title} className="bg-white border border-[#C3A35E]/15 p-8 flex flex-col">
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-xs font-bold text-[#C3A35E] bg-[#C3A35E]/10 px-2 py-0.5 uppercase tracking-wider">{offer.category}</span>
+                <span className="text-xs font-bold text-[#6B1F2B] bg-[#6B1F2B]/5 px-2 py-0.5">{offer.saving}</span>
+              </div>
+              <h3 className="text-lg font-semibold text-[#6B1F2B] mb-3" style={{ letterSpacing: '-0.01em' }}>{offer.title}</h3>
+              <p className="text-sm text-[#6B1F2B]/55 leading-relaxed mb-6 flex-1">{offer.desc}</p>
+              <div className="border-t border-[#C3A35E]/10 pt-4 space-y-2">
+                <div className="flex justify-between text-xs">
+                  <span className="text-[#6B1F2B]/40">MOQ</span>
+                  <span className="font-semibold text-[#6B1F2B]">{offer.moq}</span>
                 </div>
-              ))}
+                <div className="flex justify-between text-xs">
+                  <span className="text-[#6B1F2B]/40">Markets</span>
+                  <span className="font-semibold text-[#6B1F2B]">{offer.regions}</span>
+                </div>
+              </div>
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-[#6B1F2B] border-t border-[#C3A35E]/30">
+        <div className="max-w-[1200px] mx-auto px-4 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">Request a Quote</h3>
+            <p className="text-white/50 text-sm">All offers subject to availability. Contact our trade desk for pricing and lead times.</p>
           </div>
-        </section>
-      </div>
+          <a href="mailto:trade@harvics.com"
+            className="px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors">
+            Contact Trade Desk
+          </a>
+        </div>
+      </section>
     </main>
   )
 }

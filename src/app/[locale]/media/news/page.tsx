@@ -1,7 +1,12 @@
-import { getTranslations } from 'next-intl/server'
-import { getFolderBasedCategories } from '@/data/folderBasedProducts'
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
+// Header and Footer are provided by layout.tsx - DO NOT import them here
+import Link from 'next/link'
+import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'media')
+}
 
 export async function generateStaticParams() {
   return [
@@ -21,54 +26,59 @@ interface NewsPageProps {
 
 export default async function NewsPage({ params }: NewsPageProps) {
   const { locale } = await params
-  const categories = getFolderBasedCategories()
 
   const newsItems = [
-    { date: '2024-12-15', title: 'Harvics Expands to 5 New Markets', excerpt: 'Company announces expansion into Southeast Asia' },
-    { date: '2024-11-20', title: 'New Product Line Launch', excerpt: 'Introducing premium organic product range' },
-    { date: '2024-10-10', title: 'Sustainability Milestone Achieved', excerpt: 'Reached carbon-neutral operations across all facilities' }
+    { date: 'April 2026', title: 'Harvics OS v2.5 Launches with Neural Governance Layer', excerpt: 'The latest release of our enterprise operating system introduces AI-powered compliance validation on every transaction — checking legal, budget, and contractual obligations in real-time across 40+ jurisdictions before any action executes.' },
+    { date: 'March 2026', title: 'Expansion into Southeast Asian Markets', excerpt: 'Harvics Global Ventures announces entry into Vietnam, Thailand, and Indonesia — bringing our multi-vertical trading capabilities to one of the world\'s fastest-growing economic regions. Operations begin Q2 2026.' },
+    { date: 'February 2026', title: 'Strategic Partnership with Gulf Logistics Network', excerpt: 'New partnership enables real-time container tracking, cold chain monitoring, and AI-optimised routing across GCC ports — reducing average delivery times by 23% for FMCG and commodities shipments.' },
+    { date: 'January 2026', title: 'Harvics Deploys AI Demand Forecasting Across All Verticals', excerpt: 'Six machine learning models now live in production — correlating weather patterns, cultural calendars, competitor intelligence, and historical transactions to predict demand with 89% accuracy across 10 industry verticals.' },
+    { date: 'December 2025', title: '40+ Countries Milestone Reached', excerpt: 'Harvics Global Ventures surpasses the 40-country mark with new operations in East Africa and Central Asia. The platform now supports 38 languages with native localisation — not just translation.' },
+    { date: 'November 2025', title: 'Multi-Language Platform Supporting 38 Languages', excerpt: 'Full RTL support for Arabic, Hebrew, Farsi, and Urdu. Every module, every label, every document — available in the user\'s native language with culturally appropriate formatting for dates, currencies, and addresses.' },
+    { date: 'October 2025', title: 'Carbon-Neutral Operations Commitment', excerpt: 'Harvics commits to carbon-neutral supply chain operations by 2028. Initial programmes include green logistics partnerships, renewable energy procurement for warehousing, and ESG tracking integrated into Harvics OS.' },
   ]
 
   return (
     <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
-      <div className="fixed top-0 left-0 right-0 z-[1000] bg-white shadow-sm">
-        <Header categories={categories} />
-      </div>
-      <div className="h-[172px]" /> {/* Spacer */}
-      
-      <div className="pt-0">
-        <section className="py-16 md:py-24 px-4 md:px-6 bg-[#6B1F2B] relative overflow-hidden">
-          {/* Abstract Background Shapes */}
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#C3A35E] rounded-full filter blur-[120px] translate-x-1/2 -translate-y-1/2"></div>
-            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#C3A35E] rounded-full filter blur-[120px] -translate-x-1/2 translate-y-1/2"></div>
-          </div>
-          
-          <div className="relative max-w-7xl mx-auto text-center z-10">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium text-white mb-4 md:mb-6 font-serif">
-              News & Press Releases
-            </h1>
-            <p className="text-base md:text-xl text-white/80 max-w-3xl mx-auto font-light">
-              Stay updated with the latest news from Harvics
-            </p>
-          </div>
-        </section>
+      {/* Hero */}
+      <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.95) 0%, rgba(90,26,36,0.9) 100%)' }} />
+        <div className="max-w-[1200px] mx-auto text-center relative z-10">
+          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">Press Room</div>
+          <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
+            News & Press Releases
+          </h1>
+          <p className="text-lg text-white/60 max-w-[600px] mx-auto leading-relaxed">
+            The latest developments from Harvics Global Ventures.
+          </p>
+        </div>
+      </section>
 
-        <section className="py-12 md:py-24 px-4 md:px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-6">
-              {newsItems.map((item, index) => (
-                <div key={index} className="bg-white border border-gray-100 p-8 shadow-md hover:shadow-lg transition-all group">
-                  <div className="text-sm text-gray-400 mb-2 font-medium tracking-wide">{new Date(item.date).toLocaleDateString()}</div>
-                  <h3 className="text-xl font-medium text-[#6B1F2B] mb-3 group-hover:text-[#C3A35E] transition-colors font-serif">{item.title}</h3>
-                  <p className="text-gray-600 leading-relaxed font-light">{item.excerpt}</p>
-                </div>
-              ))}
+      {/* News List */}
+      <section className="max-w-[900px] mx-auto px-4 py-16">
+        <div className="space-y-6">
+          {newsItems.map((item, index) => (
+            <div key={index} className="bg-white border border-[#C3A35E]/15 p-8 hover:border-[#C3A35E] transition-colors">
+              <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-wider mb-3">{item.date}</div>
+              <h3 className="text-xl font-semibold text-[#6B1F2B] mb-3" style={{ letterSpacing: '-0.01em' }}>{item.title}</h3>
+              <p className="text-sm text-[#6B1F2B]/55 leading-relaxed">{item.excerpt}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-[#6B1F2B] border-t border-[#C3A35E]/30">
+        <div className="max-w-[1200px] mx-auto px-4 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">Media Inquiries</h3>
+            <p className="text-white/50 text-sm">For press enquiries, interviews, and media kits contact media@harvics.com</p>
           </div>
-        </section>
-      </div>
-      <Footer />
+          <Link href={`/${locale}/media/contacts`}
+            className="px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors">
+            Media Contacts
+          </Link>
+        </div>
+      </section>
     </main>
   )
 }

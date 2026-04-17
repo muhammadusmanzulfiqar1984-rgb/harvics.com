@@ -1,7 +1,5 @@
+// Header and Footer are provided by layout.tsx - DO NOT import them here
 import { getTranslations } from 'next-intl/server'
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
-import { getFolderBasedCategories } from '@/data/folderBasedProducts'
 
 import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
@@ -113,16 +111,9 @@ export default async function CSRPage({ params }: CSRPageProps) {
     }
   ]
 
-  const categories = getFolderBasedCategories()
-
   return (
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
-      <div className="fixed top-0 left-0 right-0 z-[1000] bg-white shadow-sm">
-        <Header categories={categories} />
-      </div>
-      <div className="h-[172px]" /> {/* Spacer */}
-      
-      <div>
+      <div className="pt-20">
         {/* Hero Section */}
         <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
           {/* Hero Background Image */}
@@ -295,7 +286,6 @@ export default async function CSRPage({ params }: CSRPageProps) {
           </div>
         </section>
       </div>
-      <Footer />
     </main>
   )
 }

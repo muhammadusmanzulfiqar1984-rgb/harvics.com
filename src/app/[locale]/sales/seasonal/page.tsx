@@ -1,9 +1,12 @@
+// Header and Footer are provided by layout.tsx - DO NOT import them here
+import Link from 'next/link'
+import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
 
-import Footer from '@/components/layout/Footer'
-import { getTranslations } from 'next-intl/server'
-import { getFolderBasedCategories } from '@/data/folderBasedProducts'
-import { getProductImages } from '@/utils/harvicsProductImages'
-import Image from 'next/image'
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'sales')
+}
 
 export async function generateStaticParams() {
   return [
@@ -23,85 +26,102 @@ interface SeasonalPageProps {
 
 export default async function SeasonalPage({ params }: SeasonalPageProps) {
   const { locale } = await params
-  const categories = getFolderBasedCategories()
-  
-  // Get product images for seasonal items
-  const seasonalProductImages = getProductImages(3)
+
+  const navItems = [
+    { label: 'Current Offers', href: `/${locale}/sales/current-sales`, active: false },
+    { label: 'Seasonal', href: `/${locale}/sales/seasonal`, active: true },
+    { label: 'Clearance', href: `/${locale}/sales/clearance`, active: false },
+  ]
 
   const seasons = [
-    { name: 'Spring Collection', discount: '30% OFF', color: 'from-green-400 to-emerald-500', icon: '🌸' },
-    { name: 'Summer Sale', discount: '40% OFF', color: 'from-white to-white200', icon: '☀️' },
-    { name: 'Autumn Deals', discount: '35% OFF', color: 'from-orange-500 to-red-500', icon: '🍂' },
-    { name: 'Winter Specials', discount: '50% OFF', color: 'from-blue-400 to-cyan-500', icon: '❄️' },
+    { icon: '🌸', title: 'Spring/Ramadan — Q1', period: 'January – March', offers: [
+      'Ramadan gifting hampers — dates, chocolates, juices (GCC & South Asia)',
+      'Spring fashion basics — cotton polos, linen shirts (Europe & Middle East)',
+      'Agricultural commodities — pre-harvest forward contracts (Africa)',
+    ]},
+    { icon: '☀️', title: 'Summer — Q2', period: 'April – June', offers: [
+      'Beverages & frozen goods — ice cream, juices, water (all markets)',
+      'Lightweight workwear — breathable safety gear for hot climates',
+      'Commodity spot trading — sugar, rice, wheat pre-monsoon (South Asia)',
+    ]},
+    { icon: '🍂', title: 'Autumn/Back-to-School — Q3', period: 'July – September', offers: [
+      'School uniforms & apparel — bulk orders for educational institutions',
+      'FMCG back-to-school packs — stationery bundles, lunch snacks',
+      'Winter stock pre-orders — early booking discounts on winter lines',
+    ]},
+    { icon: '❄️', title: 'Winter/Festive — Q4', period: 'October – December', offers: [
+      'Festive confectionery — Christmas, Diwali, New Year gift boxes',
+      'Thermal workwear — insulated jackets, thermal boots, cold-weather PPE',
+      'Year-end clearance — bulk discounts on slow-moving inventory across all verticals',
+    ]},
   ]
 
   return (
-    <main className="min-h-screen" style={{ background: '#ffffff' }}>
-      
-      <div className="pt-20">
-        <section className="py-12 md:py-24 bg-gradient-to-br from-[#ffffff] via-[#ffffff] to-[#ffffff]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
-              Seasonal Sales
-            </h1>
-            <p className="text-base md:text-xl text-white max-w-3xl mx-auto">
-              Shop seasonal collections with exclusive discounts
-            </p>
-          </div>
-        </section>
+    <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
+      {/* Hero */}
+      <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.95) 0%, rgba(90,26,36,0.9) 100%)' }} />
+        <div className="max-w-[1200px] mx-auto text-center relative z-10">
+          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">Trade Calendar</div>
+          <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
+            Seasonal Trade Programmes
+          </h1>
+          <p className="text-lg text-white/60 max-w-[700px] mx-auto leading-relaxed">
+            Harvics aligns trade offers with cultural calendars, climate patterns, and market demand cycles across 40+ countries.
+          </p>
+        </div>
+      </section>
 
-        <section className="py-12 md:py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
-              {seasons.map((season, index) => {
-                const productImage = seasonalProductImages[index % seasonalProductImages.length]
-                return (
-                  <div key={index} className={`bg-gradient-to-r ${season.color} p-8 text-white shadow-lg hover:shadow-xl transition-all relative overflow-hidden`}>
-                    <div className="absolute top-0 right-0 w-32 h-32 md:w-40 md:h-40 opacity-20">
-                      <Image
-                        src={productImage}
-                        alt={`Harvics ${season.name}`}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 128px, 160px"
-                      />
-                    </div>
-                    <div className="relative z-10">
-                      <div className="text-6xl mb-4">{season.icon}</div>
-                      <h3 className="text-2xl font-bold mb-2">{season.name}</h3>
-                      <div className="text-3xl font-bold mb-4">{season.discount}</div>
-                      <button className="bg-white text-black px-6 py-3 font-bold hover:scale-105 transition-all">
-                        Shop Now
-                      </button>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
+      {/* Sales Nav */}
+      <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
+        <div className="max-w-[1200px] mx-auto px-4 flex gap-0">
+          {navItems.map((n) => (
+            <Link key={n.label} href={n.href}
+              className={`px-6 py-4 text-sm font-semibold transition-colors ${n.active ? 'text-[#C3A35E] border-b-2 border-[#C3A35E]' : 'text-white/50 hover:text-white/80'}`}>
+              {n.label}
+            </Link>
+          ))}
+        </div>
+      </section>
 
-            <div className="bg-white border-2 border-[#6B1F2B]/20 p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-black mb-4 text-center">Current Seasonal Offers</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[1, 2, 3].map((item, index) => (
-                  <div key={item} className="text-center">
-                    <div className="relative h-32 mb-4 overflow-hidden">
-                      <Image
-                        src={seasonalProductImages[index]}
-                        alt={`Harvics Seasonal Product ${item}`}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 33vw"
-                      />
-                    </div>
-                    <h4 className="font-bold text-black mb-2">Seasonal Product {item}</h4>
-                    <div className="text-white font-bold">Special Price</div>
-                  </div>
-                ))}
+      {/* Seasonal Grid */}
+      <section className="max-w-[1200px] mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {seasons.map((s) => (
+            <div key={s.title} className="bg-white border border-[#C3A35E]/15 p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-3xl">{s.icon}</span>
+                <div>
+                  <h3 className="text-lg font-semibold text-[#6B1F2B]">{s.title}</h3>
+                  <span className="text-xs text-[#C3A35E] font-bold uppercase tracking-wider">{s.period}</span>
+                </div>
               </div>
+              <ul className="space-y-3">
+                {s.offers.map((offer) => (
+                  <li key={offer} className="flex items-start gap-2">
+                    <span className="text-[#C3A35E] mt-0.5 flex-shrink-0">→</span>
+                    <span className="text-sm text-[#6B1F2B]/55 leading-relaxed">{offer}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-[#6B1F2B] border-t border-[#C3A35E]/30">
+        <div className="max-w-[1200px] mx-auto px-4 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">Plan Your Seasonal Orders</h3>
+            <p className="text-white/50 text-sm">Early booking secures priority allocation and the best trade pricing. Contact us to discuss volume commitments.</p>
           </div>
-        </section>
-      </div>
+          <a href="mailto:trade@harvics.com"
+            className="px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors">
+            Contact Trade Desk
+          </a>
+        </div>
+      </section>
     </main>
   )
 }
