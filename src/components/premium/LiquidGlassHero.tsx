@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useLocale } from 'next-intl'
 
 const WORDS = ['Trading.', 'Distribution.', 'Growth.', 'Innovation.', 'Trust.', 'Intelligence.', 'Precision.']
@@ -78,12 +79,13 @@ const LiquidGlassHero: React.FC = () => {
 
       {/* Background image with parallax zoom */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="/Images/hero-page-1.png"
+        <Image
+          src="/Images/hero-page-1.webp"
           alt="Global Trade Operations"
-          className="w-full h-full object-cover hero-zoom"
+          fill
+          priority
+          className="object-cover hero-zoom"
           draggable={false}
-          loading="eager"
           style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
         />
         {/* Cinematic gradient overlay */}
@@ -99,26 +101,27 @@ const LiquidGlassHero: React.FC = () => {
 
         {/* Primary Headline */}
         <h1 style={{
-          fontSize: 'clamp(32px, 4vw, 56px)',
+          fontSize: 'clamp(34px, 4.2vw, 60px)',
           fontWeight: 300,
-          lineHeight: 1.12,
-          letterSpacing: '-0.02em',
+          lineHeight: 1.08,
+          letterSpacing: '-0.03em',
           color: '#ffffff',
-          maxWidth: '580px',
+          maxWidth: '600px',
           transform: isLoaded ? 'translateY(0)' : 'translateY(28px)',
           transition: 'transform 0.9s cubic-bezier(0.16,1,0.3,1) 0.2s',
-          marginBottom: '14px',
+          marginBottom: '12px',
           fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif',
         }}>
-          <span style={{ fontWeight: 500, color: '#E5C07B' }}>Harvics</span> Global<br />
+          <span style={{ fontWeight: 600, color: '#E5C07B' }}>Harvics</span> Global<br />
           Ventures
         </h1>
         <div style={{
-          fontSize: 'clamp(13px, 1.3vw, 17px)',
-          color: 'rgba(195,163,94,0.85)',
-          fontWeight: 400,
-          letterSpacing: '0.06em',
-          marginBottom: '20px',
+          fontSize: 'clamp(11px, 1.1vw, 14px)',
+          color: 'rgba(195,163,94,0.75)',
+          fontWeight: 500,
+          letterSpacing: '0.12em',
+          textTransform: 'uppercase',
+          marginBottom: '22px',
           fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
         }}>
           Enterprise-Grade Commerce &nbsp;·&nbsp; 10 Industry Verticals &nbsp;·&nbsp; 50+ Nations
@@ -163,31 +166,31 @@ const LiquidGlassHero: React.FC = () => {
           marginBottom: '40px',
         }}>
           <Link href={`/${locale}/products`} className="gold-btn" style={{
-            display: 'inline-flex', alignItems: 'center', gap: '6px',
-            padding: '10px 22px',
+            display: 'inline-flex', alignItems: 'center', gap: '7px',
+            padding: '11px 26px',
             background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
             backgroundSize: '220% 100%',
             border: 'none',
             color: '#1a0d00',
-            fontSize: '11px', fontWeight: 600, letterSpacing: '0.1em',
+            fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em',
             textTransform: 'uppercase', textDecoration: 'none',
             fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
           }}>
             Explore Industries
-            <svg width="11" height="11" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
             </svg>
           </Link>
-          <Link href={`/${locale}/contact`} className="gold-btn" style={{
+          <Link href={`/${locale}/contact`} style={{
             display: 'inline-flex', alignItems: 'center',
-            padding: '10px 22px',
-            background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
-            backgroundSize: '220% 100%',
-            border: 'none',
-            color: '#1a0d00',
-            fontSize: '11px', fontWeight: 600, letterSpacing: '0.1em',
+            padding: '11px 26px',
+            background: 'transparent',
+            border: '1px solid rgba(195,163,94,0.55)',
+            color: '#E5C07B',
+            fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em',
             textTransform: 'uppercase', textDecoration: 'none',
             fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+            transition: 'border-color 0.25s ease, background 0.25s ease',
           }}>
             Contact Us
           </Link>
@@ -209,15 +212,15 @@ const LiquidGlassHero: React.FC = () => {
                 fontSize: 'clamp(22px, 2.4vw, 32px)',
                 fontWeight: 700,
                 color: '#ffffff',
-                letterSpacing: '-0.02em',
+                letterSpacing: '-0.03em',
                 lineHeight: 1,
                 fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
               }}>
                 {s.num}{s.suffix}
               </div>
               <div style={{
-                fontSize: '10px', fontWeight: 600, letterSpacing: '0.1em',
-                color: '#C3A35E', textTransform: 'uppercase', marginTop: '4px',
+                fontSize: '9px', fontWeight: 700, letterSpacing: '0.12em',
+                color: 'rgba(195,163,94,0.8)', textTransform: 'uppercase', marginTop: '5px',
                 fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
               }}>
                 {s.label}

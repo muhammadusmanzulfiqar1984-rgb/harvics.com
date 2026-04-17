@@ -87,23 +87,23 @@ const HowItWorksSection: React.FC = () => {
             transform: visible ? 'translateY(0)' : 'translateY(24px)',
             transition: 'opacity 0.7s ease, transform 0.7s ease',
           }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '8px' }}>
-            <div style={{ height: '1px', width: '28px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
-            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>How It Works</span>
-            <div style={{ height: '1px', width: '28px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '10px' }}>
+            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
+            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>How It Works</span>
+            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
           </div>
           <h2 style={{
-            fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.03em',
-            color: '#1d1d1f', lineHeight: 1.1,
+            fontSize: 'clamp(22px, 3vw, 38px)', fontWeight: 700, letterSpacing: '-0.03em',
+            color: '#1d1d1f', lineHeight: 1.08,
             fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
-            marginBottom: '6px',
+            marginBottom: '8px',
           }}>
             From Brief to{' '}
             <span style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #6B1F2B 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
               Shelf in 3 Steps
             </span>
           </h2>
-          <p style={{ fontSize: '13px', color: 'rgba(107,31,43,0.5)', maxWidth: '400px', margin: '0 auto', lineHeight: 1.6, fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>
+          <p style={{ fontSize: '13px', color: 'rgba(107,31,43,0.45)', maxWidth: '420px', margin: '0 auto', lineHeight: 1.65, fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>
             No middlemen. No guesswork. A repeatable commercial process built for serious buyers.
           </p>
         </div>
@@ -133,11 +133,10 @@ const HowItWorksSection: React.FC = () => {
               <div className="hiw-gold-card" style={{
                 background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
                 backgroundSize: '220% 100%',
-                border: activeStep === i ? '2px solid rgba(26,13,0,0.2)' : '1.5px solid rgba(160,130,60,0.2)',
-                borderRadius: '16px',
-                padding: '24px 20px',
-                boxShadow: activeStep === i ? '0 8px 32px rgba(195,163,94,0.35)' : '0 2px 8px rgba(195,163,94,0.12)',
-                transition: 'all 0.3s ease',
+                border: activeStep === i ? '2px solid rgba(26,13,0,0.18)' : '1.5px solid rgba(160,130,60,0.18)',
+                padding: '26px 22px',
+                boxShadow: activeStep === i ? '0 10px 36px rgba(195,163,94,0.32), 0 2px 8px rgba(0,0,0,0.08)' : '0 2px 6px rgba(195,163,94,0.1)',
+                transition: 'all 0.3s cubic-bezier(0.4,0,0.2,1)',
                 height: '100%',
                 position: 'relative' as const,
                 overflow: 'hidden',

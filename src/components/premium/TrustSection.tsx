@@ -134,15 +134,15 @@ const TrustSection: React.FC = () => {
           transform: visible ? 'translateY(0)' : 'translateY(20px)',
           transition: 'opacity 0.6s ease 0.1s, transform 0.6s ease 0.1s',
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '6px' }}>
-            <div style={{ height: '1px', width: '28px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
-            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>Certifications</span>
-            <div style={{ height: '1px', width: '28px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '8px' }}>
+            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
+            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>Certifications</span>
+            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
           </div>
           <h2 style={{
             textAlign: 'center',
-            fontSize: 'clamp(16px, 2vw, 24px)', fontWeight: 700, letterSpacing: '-0.03em',
-            color: '#1d1d1f', lineHeight: 1.1, marginBottom: '12px',
+            fontSize: 'clamp(16px, 2vw, 26px)', fontWeight: 700, letterSpacing: '-0.025em',
+            color: '#1d1d1f', lineHeight: 1.1, marginBottom: '14px',
             fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
           }}>
             Every product ships with full compliance documentation
@@ -205,8 +205,8 @@ const TrustSection: React.FC = () => {
         {/* Divider */}
         <div style={{
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, rgba(195,163,94,0.3), transparent)',
-          marginBottom: '14px',
+          background: 'linear-gradient(90deg, transparent, rgba(195,163,94,0.25), transparent)',
+          margin: '18px 0',
           opacity: visible ? 1 : 0,
           transition: 'opacity 0.6s ease 0.6s',
         }} />
@@ -217,13 +217,13 @@ const TrustSection: React.FC = () => {
           transform: visible ? 'translateY(0)' : 'translateY(20px)',
           transition: 'opacity 0.6s ease 0.5s, transform 0.6s ease 0.5s',
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '6px' }}>
-            <div style={{ height: '1px', width: '28px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
-            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>Key Markets</span>
-            <div style={{ height: '1px', width: '28px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '8px' }}>
+            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
+            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>Key Markets</span>
+            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
           </div>
-          <p style={{ textAlign: 'center', fontSize: '12px', color: 'rgba(107,31,43,0.4)', marginBottom: '10px', fontFamily: '-apple-system, sans-serif' }}>
-            42 active markets · 6 continents · offices in 5 cities
+          <p style={{ textAlign: 'center', fontSize: '12px', color: 'rgba(107,31,43,0.38)', marginBottom: '12px', fontFamily: '-apple-system, sans-serif', letterSpacing: '-0.005em' }}>
+            42 active markets &nbsp;·&nbsp; 6 continents &nbsp;·&nbsp; offices in 5 cities
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '6px' }}>
@@ -260,13 +260,14 @@ const TrustSection: React.FC = () => {
                 <img
                   src={market.flag}
                   alt={market.country}
+                  loading="lazy"
                   style={{ width: '28px', height: '20px', objectFit: 'cover', margin: '0 auto 6px', borderRadius: '2px', display: 'block' }}
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
                 />
                 <div style={{ fontSize: '10px', fontWeight: 700, color: '#1a0d00', fontFamily: '-apple-system, sans-serif', marginBottom: '2px', lineHeight: 1.2 }}>
                   {market.city}
                 </div>
-                <div style={{ fontSize: '8px', fontWeight: 600, color: 'rgba(26,13,0,0.55)', textTransform: 'uppercase', letterSpacing: '0.08em', fontFamily: '-apple-system, sans-serif' }}>
+                <div style={{ fontSize: '8px', fontWeight: 700, color: 'rgba(26,13,0,0.5)', textTransform: 'uppercase', letterSpacing: '0.1em', fontFamily: '-apple-system, sans-serif' }}>
                   {market.role}
                 </div>
               </div>

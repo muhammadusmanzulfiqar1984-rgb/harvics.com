@@ -59,18 +59,18 @@ const ContactSection: React.FC = () => {
 
         {/* Header */}
         <div className="text-center mb-8">
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '8px' }}>
-            <div style={{ height: '1px', width: '28px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
-            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>Enterprise Enquiries</span>
-            <div style={{ height: '1px', width: '28px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '10px' }}>
+            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
+            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>Enterprise Enquiries</span>
+            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
           </div>
-          <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.03em', color: '#1d1d1f', lineHeight: 1.1, fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif', marginBottom: '6px' }}>
+          <h2 style={{ fontSize: 'clamp(22px, 3vw, 38px)', fontWeight: 700, letterSpacing: '-0.03em', color: '#1d1d1f', lineHeight: 1.08, fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif', marginBottom: '8px' }}>
             Let&apos;s Build{' '}
             <span style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #6B1F2B 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
               Something Together
             </span>
           </h2>
-          <p style={{ fontSize: '13px', color: 'rgba(107,31,43,0.5)', maxWidth: '420px', margin: '0 auto', lineHeight: 1.6, fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>
+          <p style={{ fontSize: '13px', color: 'rgba(107,31,43,0.42)', maxWidth: '440px', margin: '0 auto', lineHeight: 1.65, fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>
             Whether you are a buyer, distributor, or institution — our team responds within 24 hours.
           </p>
         </div>
@@ -79,13 +79,12 @@ const ContactSection: React.FC = () => {
 
           {/* Left: Contact form */}
           <div className="lg:col-span-3" style={{
-            background: 'rgba(255,255,255,0.88)',
-            backdropFilter: 'blur(20px)',
-            WebkitBackdropFilter: 'blur(20px)',
-            border: '1px solid rgba(195,163,94,0.2)',
-            borderRadius: '16px',
-            padding: '28px',
-            boxShadow: '0 8px 32px rgba(107,31,43,0.06)',
+            background: 'rgba(255,255,255,0.92)',
+            backdropFilter: 'blur(24px)',
+            WebkitBackdropFilter: 'blur(24px)',
+            border: '1px solid rgba(195,163,94,0.18)',
+            padding: '32px',
+            boxShadow: '0 4px 24px rgba(107,31,43,0.05), 0 1px 4px rgba(107,31,43,0.04)',
           }}>
             {sent ? (
               <div style={{ textAlign: 'center', padding: '32px 0' }}>
@@ -108,7 +107,7 @@ const ContactSection: React.FC = () => {
                       value={form.name}
                       onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
                       placeholder="Shah Tabraiz"
-                      style={{ width: '100%', padding: '9px 12px', fontSize: '13px', border: '1px solid rgba(107,31,43,0.15)', borderRadius: '8px', outline: 'none', fontFamily: '-apple-system, sans-serif', background: '#fdfcfb', color: '#1d1d1f', boxSizing: 'border-box' }}
+                      style={{ width: '100%', padding: '10px 13px', fontSize: '13px', border: '1px solid rgba(195,163,94,0.25)', outline: 'none', fontFamily: '-apple-system, sans-serif', background: '#fdfcfb', color: '#1d1d1f', boxSizing: 'border-box', transition: 'border-color 0.2s ease' }}
                     />
                   </div>
                   <div>
@@ -118,7 +117,7 @@ const ContactSection: React.FC = () => {
                       value={form.company}
                       onChange={e => setForm(f => ({ ...f, company: e.target.value }))}
                       placeholder="Your Organisation"
-                      style={{ width: '100%', padding: '9px 12px', fontSize: '13px', border: '1px solid rgba(107,31,43,0.15)', borderRadius: '8px', outline: 'none', fontFamily: '-apple-system, sans-serif', background: '#fdfcfb', color: '#1d1d1f', boxSizing: 'border-box' }}
+                      style={{ width: '100%', padding: '10px 13px', fontSize: '13px', border: '1px solid rgba(195,163,94,0.25)', outline: 'none', fontFamily: '-apple-system, sans-serif', background: '#fdfcfb', color: '#1d1d1f', boxSizing: 'border-box', transition: 'border-color 0.2s ease' }}
                     />
                   </div>
                 </div>
@@ -130,7 +129,7 @@ const ContactSection: React.FC = () => {
                     value={form.email}
                     onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
                     placeholder="you@company.com"
-                    style={{ width: '100%', padding: '9px 12px', fontSize: '13px', border: '1px solid rgba(107,31,43,0.15)', borderRadius: '8px', outline: 'none', fontFamily: '-apple-system, sans-serif', background: '#fdfcfb', color: '#1d1d1f', boxSizing: 'border-box' }}
+                    style={{ width: '100%', padding: '10px 13px', fontSize: '13px', border: '1px solid rgba(195,163,94,0.25)', outline: 'none', fontFamily: '-apple-system, sans-serif', background: '#fdfcfb', color: '#1d1d1f', boxSizing: 'border-box', transition: 'border-color 0.2s ease' }}
                   />
                 </div>
                 <div>
@@ -140,26 +139,26 @@ const ContactSection: React.FC = () => {
                     value={form.message}
                     onChange={e => setForm(f => ({ ...f, message: e.target.value }))}
                     placeholder="Tell us about your sourcing needs, volumes, or partnership interest..."
-                    style={{ width: '100%', padding: '9px 12px', fontSize: '13px', border: '1px solid rgba(107,31,43,0.15)', borderRadius: '8px', outline: 'none', fontFamily: '-apple-system, sans-serif', background: '#fdfcfb', color: '#1d1d1f', resize: 'none', boxSizing: 'border-box' }}
+                    style={{ width: '100%', padding: '10px 13px', fontSize: '13px', border: '1px solid rgba(195,163,94,0.25)', outline: 'none', fontFamily: '-apple-system, sans-serif', background: '#fdfcfb', color: '#1d1d1f', resize: 'none', boxSizing: 'border-box', transition: 'border-color 0.2s ease' }}
                   />
                 </div>
                 <button
                   type="submit"
                   disabled={sending}
                   style={{
-                    padding: '11px 24px',
-                    background: sending ? 'rgba(107,31,43,0.4)' : 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
+                    padding: '12px 28px',
+                    background: sending ? 'rgba(107,31,43,0.35)' : 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
                     backgroundSize: '220% 100%',
                     border: 'none',
-                    borderRadius: '8px',
                     color: '#1a0d00',
                     fontSize: '11px',
                     fontWeight: 700,
-                    letterSpacing: '0.12em',
+                    letterSpacing: '0.1em',
                     textTransform: 'uppercase' as const,
                     cursor: sending ? 'not-allowed' : 'pointer',
                     fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
                     alignSelf: 'flex-start',
+                    transition: 'opacity 0.2s ease, transform 0.2s ease',
                   }}
                 >
                   {sending ? 'Sending...' : 'Send Enquiry →'}

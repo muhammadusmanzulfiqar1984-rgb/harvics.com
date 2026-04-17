@@ -90,23 +90,23 @@ const AudienceRoutingSection: React.FC = () => {
           transform: visible ? 'translateY(0)' : 'translateY(24px)',
           transition: 'opacity 0.6s ease, transform 0.6s ease',
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '8px' }}>
-            <div style={{ height: '1px', width: '28px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
-            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>Who Are You?</span>
-            <div style={{ height: '1px', width: '28px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '10px' }}>
+            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
+            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>Who Are You?</span>
+            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
           </div>
           <h2 style={{
-            fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 700, letterSpacing: '-0.03em',
-            color: '#1d1d1f', lineHeight: 1.1,
+            fontSize: 'clamp(22px, 3vw, 38px)', fontWeight: 700, letterSpacing: '-0.03em',
+            color: '#1d1d1f', lineHeight: 1.08,
             fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
-            marginBottom: '6px',
+            marginBottom: '8px',
           }}>
             Built for every side of{' '}
             <span style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #6B1F2B 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
               global trade
             </span>
           </h2>
-          <p style={{ fontSize: '13px', color: 'rgba(107,31,43,0.45)', maxWidth: '420px', margin: '0 auto', lineHeight: 1.6, fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>
+          <p style={{ fontSize: '13px', color: 'rgba(107,31,43,0.4)', maxWidth: '440px', margin: '0 auto', lineHeight: 1.65, fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>
             Whether you buy, distribute or manufacture — Harvics has a dedicated pathway for you.
           </p>
         </div>
@@ -128,15 +128,17 @@ const AudienceRoutingSection: React.FC = () => {
                 background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
                 backgroundSize: '220% 100%',
                 border: 'none',
-                borderRadius: '18px',
-                padding: '28px 22px',
+                padding: '30px 24px',
                 height: '100%',
-                boxShadow: hovered === i ? '0 8px 32px rgba(195,163,94,0.4), 0 2px 8px rgba(0,0,0,0.1)' : '0 2px 8px rgba(195,163,94,0.12)',
-                transition: 'all 0.3s ease',
+                boxShadow: hovered === i
+                  ? '0 12px 36px rgba(195,163,94,0.38), 0 3px 10px rgba(0,0,0,0.1)'
+                  : '0 2px 6px rgba(195,163,94,0.1)',
+                transition: 'all 0.3s cubic-bezier(0.4,0,0.2,1)',
                 display: 'flex',
                 flexDirection: 'column' as const,
                 position: 'relative' as const,
                 overflow: 'hidden',
+                transform: hovered === i ? 'translateY(-4px)' : 'translateY(0)',
               }}>
 
                 {/* Icon */}

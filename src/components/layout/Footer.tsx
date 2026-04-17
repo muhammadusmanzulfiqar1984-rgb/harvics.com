@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import NestleNewsSection from './NestleNewsSection'
 
@@ -56,7 +57,7 @@ const Footer: React.FC = () => {
       <NestleNewsSection />
 
       {/* Main Footer — Ivory background, Apple-clean */}
-      <footer style={{ background: '#ffffff', borderTop: '1px solid rgba(195,163,94,0.3)' }}>
+      <footer style={{ background: '#ffffff', borderTop: '1px solid rgba(195,163,94,0.2)' }}>
 
         {/* Brand + Links Grid */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -73,14 +74,14 @@ const Footer: React.FC = () => {
                 {t('brandStatement') || 'A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.'}
               </p>
               <div className="w-8 h-8 opacity-50">
-                <img src="/Images/logo.png" alt="Harvics Logo" className="w-full h-full object-contain" />
+                <Image src="/Images/logo.png" alt="Harvics Logo" width={32} height={32} className="w-full h-full object-contain" />
               </div>
             </div>
 
             {/* Links */}
               <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
               <div>
-                <h3 className="mb-2 uppercase text-xs tracking-widest font-semibold" style={{ color: '#6B1F2B' }}>
+                <h3 className="mb-3 uppercase text-xs font-bold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px' }}>
                   {t('usefulLinks') || 'USEFUL LINKS'}
                 </h3>
                 <ul className="space-y-1">
@@ -101,7 +102,7 @@ const Footer: React.FC = () => {
               </div>
 
               <div>
-                <h3 className="mb-2 uppercase text-xs tracking-widest font-semibold" style={{ color: '#6B1F2B' }}>
+                <h3 className="mb-3 uppercase text-xs font-bold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px' }}>
                   {t('company') || 'COMPANY'}
                 </h3>
                 <ul className="space-y-1">
@@ -124,7 +125,7 @@ const Footer: React.FC = () => {
               </div>
 
               <div>
-                <h3 className="mb-2 uppercase text-xs tracking-widest font-semibold" style={{ color: '#6B1F2B' }}>
+                <h3 className="mb-3 uppercase text-xs font-bold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px' }}>
                   {t('media') || 'MEDIA'}
                 </h3>
                 <ul className="space-y-1">
@@ -143,7 +144,7 @@ const Footer: React.FC = () => {
               </div>
 
               <div>
-                <h3 className="mb-2 uppercase text-xs tracking-widest font-semibold" style={{ color: '#6B1F2B' }}>
+                <h3 className="mb-3 uppercase text-xs font-bold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px' }}>
                   {t('investors') || 'INVESTORS'}
                 </h3>
                 <ul className="space-y-1">
@@ -164,15 +165,15 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="flex items-center justify-center gap-3 py-2" style={{ borderTop: '1px solid rgba(195,163,94,0.2)' }}>
+          <div className="flex items-center justify-center gap-4 py-3" style={{ borderTop: '1px solid rgba(195,163,94,0.15)' }}>
             {socialLinks.map(social => (
               <a
                 key={social.label}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 flex items-center justify-center transition-all duration-300 hover:opacity-100 hover:-translate-y-1 hover:shadow-md"
-                style={{ opacity: 0.5 }}
+                className="w-8 h-8 flex items-center justify-center transition-all duration-200 hover:opacity-100 hover:-translate-y-0.5"
+                style={{ opacity: 0.45 }}
                 aria-label={social.label}
               >
                 <svg className="w-5 h-5 transition-transform duration-300 hover:scale-110" viewBox="0 0 24 24">

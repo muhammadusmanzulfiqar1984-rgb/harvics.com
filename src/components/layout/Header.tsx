@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
 import CountrySelector from '@/features/geo/CountrySelector'
@@ -238,7 +239,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
             {/* Logo */}
             <Link href={`/${locale}`} className="flex-shrink-0 transition-all duration-300 hover:opacity-90 hover:scale-105 relative group">
               <div className="relative flex items-center gap-3">
-                <img src="/logo.svg" alt="Harvics" style={{ height: '48px', width: 'auto', objectFit: 'contain' }} />
+                    <Image src="/logo.svg" alt="Harvics" width={48} height={48} style={{ width: '48px', height: 'auto', objectFit: 'contain' }} priority />
                 <div className="flex flex-col">
                   <span className="text-xl font-bold text-harvics-maroon tracking-tight">HARVICS</span>
                   <span className="text-[10px] text-harvics-gold uppercase tracking-widest">Global Ventures</span>

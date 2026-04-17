@@ -2,20 +2,21 @@
 
 import React, { useEffect, useRef, useState, useCallback } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useLocale } from 'next-intl'
 import { navVerticals } from '@/data/megaMenuData'
 
-const industryMeta: Record<string, { desc: string; gradient: string; image?: string; products: number; markets: number }> = {
-  textiles:       { desc: 'Premium apparel, fabrics, and home textiles for global markets', gradient: 'from-slate-50 to-blue-50', image: '/Images/textile.png', products: 240, markets: 28 },
-  fmcg:           { desc: 'Food, beverages, personal care and home essentials', gradient: 'from-slate-50 to-emerald-50', image: '/Images/FMCG.png', products: 380, markets: 42 },
-  commodities:    { desc: 'Strategic trading in agriculture, energy, and metals', gradient: 'from-slate-50 to-amber-50', image: '/Images/commodities.png', products: 60, markets: 31 },
-  industrial:     { desc: 'Advanced chemicals, machinery, and safety equipment', gradient: 'from-slate-50 to-zinc-50', image: '/Images/industrialsolutions.png', products: 180, markets: 22 },
-  minerals:       { desc: 'Precious metals, energy minerals, and industrial resources', gradient: 'from-slate-50 to-stone-50', image: '/Images/Minerals.png', products: 45, markets: 18 },
-  'oil-gas':      { desc: 'Complete upstream, midstream, and downstream operations', gradient: 'from-slate-50 to-orange-50', image: '/Images/oilandgas.png', products: 30, markets: 15 },
-  'real-estate':  { desc: 'Commercial and residential property development', gradient: 'from-slate-50 to-cyan-50', image: '/Images/real estate.png', products: 120, markets: 12 },
-  sourcing:       { desc: 'Global sourcing, quality control, and logistics solutions', gradient: 'from-slate-50 to-violet-50', image: '/Images/sourcing-solutions.png', products: 95, markets: 38 },
-  finance:        { desc: 'Trade finance, HPay digital payments, and compliance', gradient: 'from-slate-50 to-teal-50', image: '/Images/financial.png', products: 20, markets: 24 },
-  ai:             { desc: 'Machine learning, predictive analytics, and automation', gradient: 'from-slate-50 to-pink-50', image: '/Images/it-solutions.png', products: 15, markets: 10 },
+const industryMeta: Record<string, { desc: string; gradient: string; image?: string; products: number; markets: number; bg: string; accent: string; bgPhoto: string }> = {
+  textiles:       { desc: 'Premium apparel, fabrics, and home textiles for global markets', gradient: 'from-slate-50 to-blue-50', image: '/Images/textile.webp', products: 240, markets: 28, bg: '#f8f9ff', accent: 'rgba(59,130,246,0.15)', bgPhoto: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=60&fit=crop' },
+  fmcg:           { desc: 'Food, beverages, personal care and home essentials', gradient: 'from-slate-50 to-emerald-50', image: '/Images/FMCG.webp', products: 380, markets: 42, bg: '#f6fdf9', accent: 'rgba(16,185,129,0.15)', bgPhoto: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=1400&q=60&fit=crop' },
+  commodities:    { desc: 'Strategic trading in agriculture, energy, and metals', gradient: 'from-slate-50 to-amber-50', image: '/Images/commodities.webp', products: 60, markets: 31, bg: '#fdfaf4', accent: 'rgba(195,163,94,0.2)', bgPhoto: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1400&q=60&fit=crop' },
+  industrial:     { desc: 'Advanced chemicals, machinery, and safety equipment', gradient: 'from-slate-50 to-zinc-50', image: '/Images/industrialsolutions.webp', products: 180, markets: 22, bg: '#f8f8f9', accent: 'rgba(113,113,122,0.12)', bgPhoto: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1400&q=60&fit=crop' },
+  minerals:       { desc: 'Precious metals, energy minerals, and industrial resources', gradient: 'from-slate-50 to-stone-50', image: '/Images/Minerals.webp', products: 45, markets: 18, bg: '#faf9f7', accent: 'rgba(120,113,108,0.12)', bgPhoto: 'https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=1400&q=60&fit=crop' },
+  'oil-gas':      { desc: 'Complete upstream, midstream, and downstream operations', gradient: 'from-slate-50 to-orange-50', image: '/Images/oilandgas.webp', products: 30, markets: 15, bg: '#fdf8f3', accent: 'rgba(249,115,22,0.12)', bgPhoto: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1400&q=60&fit=crop' },
+  'real-estate':  { desc: 'Commercial and residential property development', gradient: 'from-slate-50 to-cyan-50', image: '/Images/real estate.webp', products: 120, markets: 12, bg: '#f3fbfd', accent: 'rgba(6,182,212,0.12)', bgPhoto: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=60&fit=crop' },
+  sourcing:       { desc: 'Global sourcing, quality control, and logistics solutions', gradient: 'from-slate-50 to-violet-50', image: '/Images/sourcing-solutions.webp', products: 95, markets: 38, bg: '#f8f5ff', accent: 'rgba(139,92,246,0.12)', bgPhoto: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1400&q=60&fit=crop' },
+  finance:        { desc: 'Trade finance, HPay digital payments, and compliance', gradient: 'from-slate-50 to-teal-50', image: '/Images/financial.webp', products: 20, markets: 24, bg: '#f3fdfb', accent: 'rgba(20,184,166,0.12)', bgPhoto: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1400&q=60&fit=crop' },
+  ai:             { desc: 'Machine learning, predictive analytics, and automation', gradient: 'from-slate-50 to-pink-50', image: '/Images/it-solutions.webp', products: 15, markets: 10, bg: '#fdf4fa', accent: 'rgba(236,72,153,0.1)', bgPhoto: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1400&q=60&fit=crop' },
 }
 
 const CARD_WIDTH = 420
@@ -29,8 +30,17 @@ const EnhancedIndustryGrid: React.FC = () => {
   const [dragStartX, setDragStartX] = useState(0)
   const [dragDelta, setDragDelta] = useState(0)
   const [isHoveringSlider, setIsHoveringSlider] = useState(false)
+  const [winWidth, setWinWidth] = useState(1440)
   const autoRef = useRef<NodeJS.Timeout | null>(null)
   const total = navVerticals.length
+
+  // Fix SSR/client mismatch for centering
+  useEffect(() => {
+    const update = () => setWinWidth(window.innerWidth)
+    update()
+    window.addEventListener('resize', update)
+    return () => window.removeEventListener('resize', update)
+  }, [])
 
   const goTo = useCallback((idx: number) => {
     setActive((idx + total) % total)
@@ -65,32 +75,59 @@ const EnhancedIndustryGrid: React.FC = () => {
   }
 
   // Offset: center the active card
-  const baseOffset = (typeof window !== 'undefined' ? window.innerWidth : 1440) / 2 - CARD_WIDTH / 2
+  const baseOffset = winWidth / 2 - CARD_WIDTH / 2
   const trackX = baseOffset - active * (CARD_WIDTH + CARD_GAP) + dragDelta
+
+  // Active industry background
+  const activeKey = navVerticals[active]?.key
+  const activeMeta = industryMeta[activeKey] || { bg: '#ffffff', accent: 'transparent' }
 
   return (
     <section
       className="relative h-full flex flex-col justify-center overflow-hidden"
-      style={{ background: '#ffffff' }}
+      style={{ background: activeMeta.bg }}
       onMouseEnter={() => setIsHoveringSlider(true)}
       onMouseLeave={() => setIsHoveringSlider(false)}
     >
-      {/* Ambient glow */}
-      <div className="absolute top-1/3 right-1/4 w-[600px] h-[600px] rounded-full blur-[180px] opacity-[0.07] pointer-events-none"
-        style={{ background: 'radial-gradient(circle, #E5C07B, transparent)' }} />
+      {/* Cross-fading background photo — Option A: opacity 0.12, blur 40px */}
+      {navVerticals.map((v, idx) => {
+        const m = industryMeta[v.key]
+        if (!m?.bgPhoto) return null
+        // Only render DOM node for active, previous, and next — skip the rest until needed
+        if (Math.abs(idx - active) > 2 && idx !== active) return null
+        return (
+          <div
+            key={v.key}
+            aria-hidden="true"
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              backgroundImage: `url(${m.bgPhoto})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              filter: 'blur(42px) saturate(0.8)',
+              transform: 'scale(1.12)',
+              opacity: idx === active ? 0.12 : 0,
+              transition: 'opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1)',
+              zIndex: 0,
+            }}
+          />
+        )
+      })}
+      {/* White wash over the blurred photo to keep ivory tone */}
+      <div className="absolute inset-0 pointer-events-none" style={{ background: 'rgba(255,255,255,0.72)', zIndex: 1 }} />
 
       {/* Header */}
-      <div className="text-center mb-6 relative z-10 px-6">
+      <div className="text-center mb-6 relative px-6" style={{ zIndex: 2 }}>
         <p style={{
-          fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em',
-          color: '#C3A35E', textTransform: 'uppercase', marginBottom: '8px',
+          fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em',
+          color: '#C3A35E', textTransform: 'uppercase', marginBottom: '10px',
           fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
         }}>
-          10 Verticals · 42 Markets · 1,185+ Products
+          10 Verticals &nbsp;·&nbsp; 42 Markets &nbsp;·&nbsp; 1,185+ Products
         </p>
         <h2 style={{
-          fontSize: '28px', fontWeight: 600, letterSpacing: '-0.03em',
-          color: '#1d1d1f', lineHeight: 1.1,
+          fontSize: 'clamp(24px, 3vw, 40px)', fontWeight: 700, letterSpacing: '-0.03em',
+          color: '#1d1d1f', lineHeight: 1.08,
           fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif'
         }}>
           One Platform.{' '}
@@ -109,8 +146,8 @@ const EnhancedIndustryGrid: React.FC = () => {
 
       {/* Slider track */}
       <div
-        className="relative z-10 select-none"
-        style={{ cursor: dragging ? 'grabbing' : 'grab', overflow: 'visible' }}
+        className="relative select-none"
+        style={{ cursor: dragging ? 'grabbing' : 'grab', overflow: 'visible', zIndex: 2 }}
         onMouseDown={onDragStart}
         onMouseMove={onDragMove}
         onMouseUp={onDragEnd}
@@ -124,7 +161,7 @@ const EnhancedIndustryGrid: React.FC = () => {
             display: 'flex',
             gap: `${CARD_GAP}px`,
             transform: `translateX(${trackX}px)`,
-            transition: dragging ? 'none' : 'transform 0.72s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+            transition: dragging ? 'none' : 'transform 0.85s cubic-bezier(0.16, 1, 0.3, 1)',
             willChange: 'transform',
           }}
         >
@@ -132,8 +169,8 @@ const EnhancedIndustryGrid: React.FC = () => {
             const meta = industryMeta[vertical.key] || { desc: '', gradient: 'from-slate-50 to-gray-50' }
             const isActive = idx === active
             const dist = Math.abs(idx - active)
-            const scale = isActive ? 1 : dist === 1 ? 0.88 : 0.78
-            const opacity = isActive ? 1 : dist === 1 ? 0.55 : 0.3
+            const scale = isActive ? 1 : dist === 1 ? 0.90 : 0.80
+            const opacity = isActive ? 1 : dist === 1 ? 0.6 : 0.32
             const hasImage = !!meta.image
 
             return (
@@ -144,7 +181,7 @@ const EnhancedIndustryGrid: React.FC = () => {
                   flexShrink: 0,
                   transform: `scale(${scale})`,
                   opacity,
-                  transition: dragging ? 'none' : 'transform 0.72s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.72s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                  transition: dragging ? 'none' : 'transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1)',
                   transformOrigin: 'center center',
                   pointerEvents: isActive ? 'auto' : 'none',
                 }}
@@ -168,13 +205,15 @@ const EnhancedIndustryGrid: React.FC = () => {
                   {hasImage && (
                     <>
                       <div className="absolute inset-0 overflow-hidden" style={{ borderRadius: '20px' }}>
-                        <img
-                          src={meta.image}
+                        <Image
+                          src={meta.image!}
                           alt={vertical.label}
-                          className="w-full h-full object-cover"
+                          fill
+                          loading={idx <= 2 ? 'eager' : 'lazy'}
+                          className="object-cover"
                           style={{
                             transform: isActive ? 'scale(1.05)' : 'scale(1)',
-                            transition: 'transform 0.72s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                            transition: 'transform 0.85s cubic-bezier(0.16, 1, 0.3, 1)',
                           }}
                         />
                       </div>
@@ -259,7 +298,7 @@ const EnhancedIndustryGrid: React.FC = () => {
       </div>
 
       {/* Dot indicators */}
-      <div className="flex justify-center gap-2 mt-6 relative z-10">
+      <div className="flex justify-center gap-2 mt-6" style={{ zIndex: 2, position: 'relative' }}>
         {navVerticals.map((_, idx) => (
           <button
             key={idx}
