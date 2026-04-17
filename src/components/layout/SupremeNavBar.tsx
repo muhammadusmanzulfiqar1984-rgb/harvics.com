@@ -91,6 +91,7 @@ const SupremeNavBar: React.FC = () => {
       <nav
         ref={navRef}
         className="relative"
+        style={{ background: '#6B1F2B' }}
         onMouseLeave={closeDropdown}
         role="navigation"
         aria-label="Main navigation"
@@ -117,7 +118,7 @@ const SupremeNavBar: React.FC = () => {
                   aria-haspopup="true"
                   aria-expanded={activeDropdown === vertical.key}
                   style={{
-                    color: '#6B1F2B',
+                    color: '#C3A35E',
                     fontWeight: isActive(`/${locale}${vertical.href}`) ? 600 : 400,
                     textDecoration: 'none',
                     textTransform: 'uppercase' as const,
@@ -152,7 +153,7 @@ const SupremeNavBar: React.FC = () => {
                 href={`/${locale}/apps`}
                 className="relative flex items-center h-full px-3 lg:px-4 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
                 style={{
-                  color: isActive(`/${locale}/apps`) ? '#fff' : '#C3A35E',
+                  color: isActive(`/${locale}/apps`) ? '#6B1F2B' : '#C3A35E',
                   textDecoration: 'none',
                   textTransform: 'uppercase' as const,
                   background: isActive(`/${locale}/apps`) ? '#C3A35E' : 'transparent',
@@ -160,6 +161,31 @@ const SupremeNavBar: React.FC = () => {
                 }}
               >
                 ⬡ Apps
+              </Link>
+            </li>
+
+            {/* HarvicTrade — B2B Marketplace tab */}
+            <li
+              className="relative h-full flex items-center ml-2"
+              style={{
+                animation: `fadeSlideIn 0.4s ease-out forwards`,
+                animationDelay: `${(navVerticals.length + 0.5) * 0.05}s`,
+                opacity: 0,
+              }}
+              onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
+            >
+              <Link
+                href={`/${locale}/harvictrade`}
+                className="relative flex items-center h-full px-3 lg:px-4 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
+                style={{
+                  color: isActive(`/${locale}/harvictrade`) ? '#6B1F2B' : '#6B1F2B',
+                  textDecoration: 'none',
+                  textTransform: 'uppercase' as const,
+                  background: isActive(`/${locale}/harvictrade`) ? '#C3A35E' : 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)',
+                  border: '1px solid #C3A35E',
+                }}
+              >
+                ◆ HarvicTrade
               </Link>
             </li>
 
@@ -179,7 +205,7 @@ const SupremeNavBar: React.FC = () => {
                   href={`/${locale}${link.href}`}
                   className="relative flex items-center h-full px-2 lg:px-3 text-[10px] lg:text-[11px] tracking-[0.04em] whitespace-nowrap group"
                   style={{
-                    color: '#6B1F2B',
+                    color: '#C3A35E',
                     fontWeight: isActive(`/${locale}${link.href}`) ? 600 : 400,
                     textDecoration: 'none',
                     textTransform: 'uppercase' as const,
