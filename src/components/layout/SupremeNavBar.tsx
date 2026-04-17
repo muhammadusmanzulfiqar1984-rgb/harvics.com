@@ -101,7 +101,7 @@ const SupremeNavBar: React.FC = () => {
           <ul className="flex items-center justify-center gap-1 lg:gap-2 list-none m-0 p-0 h-[48px]" role="menubar" aria-label="Main navigation">
             {/* About — first tab */}
             <li
-              className="relative h-full flex items-center"
+              className="relative flex items-center"
               style={{
                 animation: `fadeSlideIn 0.4s ease-out forwards`,
                 animationDelay: '0s',
@@ -110,7 +110,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/about`}
-                className="relative flex items-center h-full px-2 lg:px-3 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
+                className="relative flex items-center px-2 lg:px-3 py-1.5 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
                 style={{
                   color: '#6B1F2B',
                   textDecoration: 'none',
@@ -127,7 +127,7 @@ const SupremeNavBar: React.FC = () => {
             {navVerticals.map((vertical, idx) => (
               <li
                 key={vertical.key}
-                className="relative h-full flex items-center"
+                className="relative flex items-center"
                 role="none"
                 onMouseEnter={() => openDropdown(vertical.key)}
                 style={{
@@ -138,7 +138,7 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${vertical.href}`}
-                  className="relative flex items-center h-full px-2 lg:px-3 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
+                  className="relative flex items-center px-2 lg:px-3 py-1.5 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
                   role="menuitem"
                   aria-haspopup="true"
                   aria-expanded={activeDropdown === vertical.key}
@@ -158,7 +158,7 @@ const SupremeNavBar: React.FC = () => {
 
             {/* Apps — highlighted tab */}
             <li
-              className="relative h-full flex items-center ml-2"
+              className="relative flex items-center ml-2"
               style={{
                 animation: `fadeSlideIn 0.4s ease-out forwards`,
                 animationDelay: `${navVerticals.length * 0.05}s`,
@@ -168,7 +168,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/apps`}
-                className="relative flex items-center h-full px-3 lg:px-4 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
+                className="relative flex items-center px-3 lg:px-4 py-1.5 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
                 style={{
                   color: '#6B1F2B',
                   textDecoration: 'none',
@@ -183,7 +183,7 @@ const SupremeNavBar: React.FC = () => {
 
             {/* HarvicTrade — B2B Marketplace tab */}
             <li
-              className="relative h-full flex items-center ml-2"
+              className="relative flex items-center ml-2"
               style={{
                 animation: `fadeSlideIn 0.4s ease-out forwards`,
                 animationDelay: `${(navVerticals.length + 0.5) * 0.05}s`,
@@ -193,7 +193,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/harvictrade`}
-                className="relative flex items-center h-full px-3 lg:px-4 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
+                className="relative flex items-center px-3 lg:px-4 py-1.5 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
                 style={{
                   color: isActive(`/${locale}/harvictrade`) ? '#6B1F2B' : '#6B1F2B',
                   textDecoration: 'none',
@@ -210,7 +210,7 @@ const SupremeNavBar: React.FC = () => {
             {[
               { label: 'Contact', href: '/contact' },
             ].map((link, idx) => (
-              <li key={link.href} className="relative h-full flex items-center"
+              <li key={link.href} className="relative flex items-center"
                 style={{
                   animation: `fadeSlideIn 0.4s ease-out forwards`,
                   animationDelay: `${(navVerticals.length + 1 + idx) * 0.05}s`,
@@ -219,7 +219,7 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${link.href}`}
-                  className="relative flex items-center h-full px-2 lg:px-3 text-[10px] lg:text-[11px] tracking-[0.04em] whitespace-nowrap group"
+                  className="relative flex items-center px-2 lg:px-3 py-1.5 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
                   style={{
                     color: '#6B1F2B',
                     textDecoration: 'none',
