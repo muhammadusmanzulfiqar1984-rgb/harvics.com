@@ -86,3 +86,11 @@ temp/
 *.tmp
 
 /generated/prisma
+
+# Images — stored separately, not in git
+public/FMCG IMAGES/
+public/Images/
+public/Industries Picture/
+public/*.png
+public/*.jpg
+public/*.jpeg
