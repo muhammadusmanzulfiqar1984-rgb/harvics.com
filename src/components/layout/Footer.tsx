@@ -86,16 +86,22 @@ const Footer: React.FC = () => {
                 </h3>
                 <ul className="space-y-1">
                   {[
-                    { href: `/${locale}/faq`, label: t('askHarvics') || 'Ask Harvics' },
-                    { href: `/${locale}/contact`, label: t('contactUs') || 'Contact us' },
-                    { href: `/${locale}/careers`, label: t('searchForJobs') || 'Search for jobs' },
-                    { href: `/${locale}/newsletter`, label: t('signUpForNews') || 'Sign up for news' },
-                    { href: `/${locale}/compliance`, label: t('speakUp') || 'Speak Up' },
+                    { href: `/${locale}/faq`, label: t('askHarvics') || 'Ask Harvics', gold: false },
+                    { href: `/${locale}/contact`, label: t('contactUs') || 'Contact us', gold: true },
+                    { href: `/${locale}/careers`, label: t('searchForJobs') || 'Search for jobs', gold: false },
+                    { href: `/${locale}/newsletter`, label: t('signUpForNews') || 'Sign up for news', gold: true },
+                    { href: `/${locale}/compliance`, label: t('speakUp') || 'Speak Up', gold: true },
                   ].map(link => (
                     <li key={link.href}>
-                      <Link href={link.href} className="text-xs inline-block px-2 py-1 font-bold transition-all duration-200 hover:opacity-100" style={{ color: '#6B1F2B', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E', textDecoration: 'none', opacity: 0.85 }}>
-                        {link.label}
-                      </Link>
+                      {link.gold ? (
+                        <Link href={link.href} className="text-xs inline-block px-2 py-1 font-bold transition-all duration-200 hover:opacity-100" style={{ color: '#6B1F2B', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E', textDecoration: 'none', opacity: 0.85 }}>
+                          {link.label}
+                        </Link>
+                      ) : (
+                        <Link href={link.href} className="text-sm transition-all duration-200 hover:opacity-100 hover:translate-x-1 inline-block" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
+                          {link.label}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -223,12 +229,12 @@ const Footer: React.FC = () => {
         {/* Bottom Bar — thin maroon strip, only place maroon is used as bg */}
         <div style={{ background: '#6B1F2B', padding: '12px 0' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs" style={{ color: 'rgba(245,241,232,0.7)' }}>
+            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs" style={{ color: '#C3A35E' }}>
               <span>&copy; {new Date().getFullYear()} {t('companyName') || 'Harvics'}</span>
               {bottomLinks.map((link, i) => (
                 <React.Fragment key={link.href}>
                   <span style={{ opacity: 0.3 }}>|</span>
-                  <Link href={link.href} className="transition-opacity duration-200 hover:opacity-100" style={{ color: 'rgba(245,241,232,0.7)', textDecoration: 'none' }}>
+                  <Link href={link.href} className="transition-opacity duration-200 hover:opacity-100" style={{ color: '#C3A35E', opacity: 0.7, textDecoration: 'none' }}>
                     {link.label}
                   </Link>
                 </React.Fragment>
