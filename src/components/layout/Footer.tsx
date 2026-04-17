@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
                     { href: `/${locale}/compliance`, label: t('speakUp') || 'Speak Up' },
                   ].map(link => (
                     <li key={link.href}>
-                      <Link href={link.href} className="text-sm transition-all duration-200 hover:opacity-100 hover:translate-x-1 inline-block" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
+                      <Link href={link.href} className="text-xs inline-block px-2 py-1 font-bold transition-all duration-200 hover:opacity-100" style={{ color: '#6B1F2B', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E', textDecoration: 'none', opacity: 0.85 }}>
                         {link.label}
                       </Link>
                     </li>
@@ -165,7 +165,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="flex items-center justify-center gap-4 py-3" style={{ borderTop: '1px solid rgba(195,163,94,0.15)' }}>
+          <div className="flex items-center justify-center gap-4 py-4" style={{ background: '#6B1F2B', borderTop: '1px solid rgba(195,163,94,0.3)' }}>
             {socialLinks.map(social => (
               <a
                 key={social.label}
@@ -173,18 +173,18 @@ const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 flex items-center justify-center transition-all duration-200 hover:opacity-100 hover:-translate-y-0.5"
-                style={{ opacity: 0.45 }}
+                style={{ opacity: 0.7 }}
                 aria-label={social.label}
               >
                 <svg className="w-5 h-5 transition-transform duration-300 hover:scale-110" viewBox="0 0 24 24">
-                  <path fill="#6B1F2B" d={social.path} />
+                  <path fill="#C3A35E" d={social.path} />
                 </svg>
               </a>
             ))}
           </div>
 
           {/* Newsletter */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 py-2" style={{ borderTop: '1px solid rgba(195,163,94,0.2)' }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 py-4 px-4" style={{ background: '#6B1F2B' }}>
             <form onSubmit={handleNewsletterSubmit} className="flex items-center gap-2 w-full max-w-md">
               <input
                 type="email"
@@ -192,13 +192,13 @@ const Footer: React.FC = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t('enterEmailPlaceholder') || 'Enter your email'}
                 className="flex-1 px-4 py-2.5 text-sm transition-all duration-300 outline-none"
-                style={{ background: 'white', border: '1px solid rgba(195,163,94,0.3)', color: '#6B1F2B' }}
+                style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(195,163,94,0.5)', color: '#C3A35E' }}
                 onFocus={(e) => {
-                  e.target.style.borderColor = 'rgba(195,163,94,0.7)'
-                  e.target.style.boxShadow = '0 0 0 3px rgba(195,163,94,0.12)'
+                  e.target.style.borderColor = '#C3A35E'
+                  e.target.style.boxShadow = '0 0 0 3px rgba(195,163,94,0.2)'
                 }}
                 onBlur={(e) => {
-                  e.target.style.borderColor = 'rgba(195,163,94,0.3)'
+                  e.target.style.borderColor = 'rgba(195,163,94,0.5)'
                   e.target.style.boxShadow = 'none'
                 }}
                 required
@@ -206,15 +206,14 @@ const Footer: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="group relative px-5 py-2.5 text-sm font-semibold overflow-hidden transition-all duration-300 disabled:opacity-50"
-                style={{ background: '#6B1F2B', color: '#F5F1E8' }}
+                className="group relative px-5 py-2.5 text-sm font-bold overflow-hidden transition-all duration-300 disabled:opacity-50"
+                style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', color: '#6B1F2B', border: '1px solid #C3A35E' }}
               >
                 <span className="relative z-10">{isSubmitting ? '...' : (t('subscribe') || 'Subscribe')}</span>
-                <div className="absolute inset-0 bg-[#5a1a24] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
               </button>
             </form>
             {submitMessage && (
-              <p className="text-sm mt-1 animate-pulse" style={{ color: submitMessage.includes('Thank') ? '#6B1F2B' : '#dc2626' }}>
+              <p className="text-sm mt-1 animate-pulse" style={{ color: submitMessage.includes('Thank') ? '#C3A35E' : '#dc2626' }}>
                 {submitMessage}
               </p>
             )}
