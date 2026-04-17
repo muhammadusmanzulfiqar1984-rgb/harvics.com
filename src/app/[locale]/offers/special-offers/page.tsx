@@ -1,9 +1,12 @@
-import { getTranslations } from 'next-intl/server'
-import { getFolderBasedCategories } from '@/data/folderBasedProducts'
-import { getOffersPageContent } from '@/utils/contentPopulator'
-import { getProductImages } from '@/utils/harvicsProductImages'
-import Image from 'next/image'
-// Header and Footer are provided by layout.tsx
+// Header and Footer are provided by layout.tsx - DO NOT import them here
+import Link from 'next/link'
+import type { Metadata } from 'next'
+import { generateLocalizedMetadata } from '@/lib/seo'
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  return generateLocalizedMetadata(locale, 'offers')
+}
 
 export async function generateStaticParams() {
   return [
@@ -23,77 +26,98 @@ interface SpecialOffersPageProps {
 
 export default async function SpecialOffersPage({ params }: SpecialOffersPageProps) {
   const { locale } = await params
-  const categories = getFolderBasedCategories()
-  // Get intelligent content from content populator
-  const content = getOffersPageContent('special-offers', locale)
-  
-  // Get product images for special offers
-  const specialOfferImages = getProductImages(6)
+
+  const featured = {
+    title: 'Q2 2026 — Volume Commitment Programme',
+    desc: 'Lock in preferential pricing across FMCG, textiles, and commodities by committing to quarterly volumes. Early commitments secure priority allocation during peak demand periods (Ramadan, Back-to-School, Festive Season).',
+    benefits: ['5–15% below standard trade pricing', 'Priority allocation during peak seasons', 'Dedicated account manager', 'Flexible delivery scheduling across all markets'],
+  }
+
+  const offers = [
+    { icon: '🚀', title: 'New Market Entry Package', desc: 'First-time buyers in new territories receive introductory pricing, sample shipments at cost, and a dedicated onboarding specialist. Available for buyers in Africa, Central Asia, and Southeast Asia.', tag: 'New Buyers', validity: 'Ongoing' },
+    { icon: '📦', title: 'Full Container Load Discount', desc: 'Order a full 20ft or 40ft container across any product category and receive automatic volume discount. Combinable with seasonal offers. All Incoterms supported.', tag: 'Volume', validity: 'Permanent' },
+    { icon: '🤝', title: 'Distributor Partnership Tier', desc: 'Exclusive distributors with annual commitments above $500K receive tiered rebates, marketing support funding, and co-branded materials. Includes access to Harvics OS distributor portal.', tag: 'Partners', validity: 'Annual' },
+    { icon: '🔄', title: 'Multi-Vertical Bundle', desc: 'Combine orders across 2 or more verticals (e.g., FMCG + Textiles) in a single shipment and receive consolidated logistics pricing plus a 7% cross-vertical discount.', tag: 'Bundle', validity: 'Ongoing' },
+    { icon: '📅', title: 'Pre-Season Booking Incentive', desc: 'Book seasonal stock 60+ days in advance and lock current pricing with no price escalation clause. Applies to Ramadan, Summer, Back-to-School, and Festive season lines.', tag: 'Seasonal', validity: 'Per Season' },
+    { icon: '💳', title: 'Early Payment Discount', desc: 'Settle invoices within 10 days of shipment and receive a 2.5% cash discount. Available on all trade terms. Applicable to LC at sight and TT payments.', tag: 'Finance', validity: 'Permanent' },
+  ]
 
   return (
-    <main className="min-h-screen" style={{ background: '#ffffff' }}>
-      <div className="pt-20">
-        <section className="py-12 md:py-24 bg-[#6B1F2B]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium text-[#C3A35E] mb-4 md:mb-6 font-serif">
-              {content.hero.title}
-            </h1>
-            <p className="text-base md:text-xl text-white/80 max-w-3xl mx-auto font-light">
-              {content.hero.subtitle}
-            </p>
+    <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
+      {/* Hero */}
+      <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.95) 0%, rgba(90,26,36,0.9) 100%)' }} />
+        <div className="max-w-[1200px] mx-auto text-center relative z-10">
+          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">Trade Programmes</div>
+          <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
+            Special Trade Offers
+          </h1>
+          <p className="text-lg text-white/60 max-w-[700px] mx-auto leading-relaxed">
+            Structured incentive programmes for buyers, distributors, and trade partners across all 10 verticals.
+          </p>
+        </div>
+      </section>
+
+      {/* Featured Programme */}
+      <section className="max-w-[1200px] mx-auto px-4 py-16">
+        <div className="bg-[#6B1F2B] p-8 md:p-12">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="text-xs font-bold text-[#C3A35E] bg-[#C3A35E]/20 px-3 py-1 uppercase tracking-wider">Featured</span>
           </div>
-        </section>
-
-        <section className="py-12 md:py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-to-r from-[#6B1F2B] to-[#5a000c] p-8 md:p-12 text-white mb-12 text-center relative overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 opacity-20">
-                <Image
-                  src={specialOfferImages[0]}
-                  alt="Harvics Flash Sale"
-                  fill
-                  className="object-cover"
-                  sizes="100vw"
-                />
+          <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>{featured.title}</h2>
+          <p className="text-white/55 leading-relaxed mb-8 max-w-3xl">{featured.desc}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {featured.benefits.map((b) => (
+              <div key={b} className="flex items-center gap-2">
+                <span className="text-[#C3A35E]">✓</span>
+                <span className="text-sm text-white/70">{b}</span>
               </div>
-              <div className="relative z-10">
-                <h2 className="text-3xl font-medium mb-4 font-serif text-[#C3A35E]">Flash Sale - Limited Time!</h2>
-                <p className="text-xl mb-6 font-light">Ends in: 2 days, 14 hours, 32 minutes</p>
-                <button className="bg-[#C3A35E] text-[#6B1F2B] px-8 py-4 font-semibold text-lg hover:scale-105 transition-all shadow-lg">
-                  Shop Flash Sale
-                </button>
-              </div>
-            </div>
+            ))}
+          </div>
+          <div className="mt-8">
+            <a href="mailto:trade@harvics.com" className="inline-block px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors">
+              Enquire About Volume Commitment
+            </a>
+          </div>
+        </div>
+      </section>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-              {[1, 2, 3, 4, 5, 6].map((item, index) => (
-                <div key={item} className="bg-white border border-gray-100 p-6 shadow-lg hover:shadow-2xl transition-all group">
-                  <div className="bg-[#6B1F2B] text-[#C3A35E] px-3 py-1 rounded-full text-xs font-semibold inline-block mb-4 tracking-wider uppercase">
-                    SPECIAL
-                  </div>
-                  <div className="relative h-48 mb-4 overflow-hidden">
-                    <Image
-                      src={specialOfferImages[index]}
-                      alt={`Harvics Special Offer Product ${item}`}
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-500"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
-                  </div>
-                  <h3 className="text-xl font-medium text-[#6B1F2B] mb-2 font-serif">Special Offer {item}</h3>
-                  <div className="flex items-center space-x-2 mb-4">
-                    <span className="text-2xl font-semibold text-[#C3A35E]">$39.99</span>
-                    <span className="text-gray-400 line-through text-sm">$79.99</span>
-                  </div>
-                  <button className="w-full bg-[#6B1F2B] text-white py-3 font-medium hover:bg-[#5a000c] transition-colors">
-                    View Offer
-                  </button>
+      {/* Offers Grid */}
+      <section className="max-w-[1200px] mx-auto px-4 pb-16">
+        <h2 className="text-2xl font-semibold text-[#6B1F2B] mb-8 text-center">All Trade Programmes</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {offers.map((offer) => (
+            <div key={offer.title} className="bg-white border border-[#C3A35E]/15 p-8 flex flex-col">
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-3xl">{offer.icon}</span>
+                <span className="text-xs font-bold text-[#C3A35E] bg-[#C3A35E]/10 px-2 py-0.5 uppercase tracking-wider">{offer.tag}</span>
+              </div>
+              <h3 className="text-lg font-semibold text-[#6B1F2B] mb-3">{offer.title}</h3>
+              <p className="text-sm text-[#6B1F2B]/55 leading-relaxed mb-6 flex-1">{offer.desc}</p>
+              <div className="border-t border-[#C3A35E]/10 pt-4">
+                <div className="flex justify-between text-xs">
+                  <span className="text-[#6B1F2B]/40">Validity</span>
+                  <span className="font-semibold text-[#6B1F2B]">{offer.validity}</span>
                 </div>
-              ))}
+              </div>
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-[#6B1F2B] border-t border-[#C3A35E]/30">
+        <div className="max-w-[1200px] mx-auto px-4 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">Custom Trade Terms Available</h3>
+            <p className="text-white/50 text-sm">For bespoke pricing, exclusive territory rights, or white-label partnerships — speak with our commercial team.</p>
           </div>
-        </section>
-      </div>
+          <a href="mailto:trade@harvics.com"
+            className="px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors">
+            Contact Commercial Team
+          </a>
+        </div>
+      </section>
     </main>
   )
 }
