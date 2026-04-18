@@ -52,7 +52,7 @@ export default function DistributorLoginForm() {
           router.push(`/${locale}/portal/distributor`)
           return
         } else {
-          setError(response.error || 'Invalid username or password. Try: admin/admin or distributor_user/password')
+          setError(response.error || 'Invalid username or password.')
         }
       } else if (response.data) {
         // Successful login - save token and redirect
@@ -87,7 +87,7 @@ export default function DistributorLoginForm() {
         }
         router.push(`/${locale}/portal/distributor`)
       } else {
-        setError('Connection error. Please try again or use: admin/admin or distributor_user/password')
+        setError('Connection error. Please try again later.')
       }
     } finally {
       setIsLoading(false)

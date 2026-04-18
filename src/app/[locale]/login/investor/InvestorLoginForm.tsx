@@ -40,7 +40,7 @@ export default function InvestorLoginForm() {
         if (formData.email === 'admin' && formData.password === 'admin') {
           window.location.replace(`/${locale}/investor-relations`)
         } else {
-          alert(response.error || 'Invalid credentials. Use admin/admin for demo.')
+          alert(response.error || 'Invalid credentials.')
         }
       }
     } catch {
@@ -48,7 +48,7 @@ export default function InvestorLoginForm() {
       if (formData.email === 'admin' && formData.password === 'admin') {
         window.location.replace(`/${locale}/investor-relations`)
       } else {
-        alert('Connection error. Use admin/admin for demo access.')
+        alert('Connection error. Please try again later.')
       }
     } finally {
       setIsLoading(false)

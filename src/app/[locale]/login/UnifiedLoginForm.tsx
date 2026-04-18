@@ -277,28 +277,6 @@ export default function UnifiedLoginForm() {
           </a>
         </p>
       </div>
-
-      <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded">
-        <p className="text-xs font-semibold text-amber-800 mb-2">Demo Credentials (password: <code className="bg-amber-100 px-1 rounded">password</code> / <code className="bg-amber-100 px-1 rounded">admin</code>):</p>
-        <div className="grid grid-cols-2 gap-1 text-xs">
-          <div className="bg-white border border-amber-100 rounded p-1">
-            <span className="font-medium text-[#6B1F2B]">admin</span> <span className="text-gray-400">/ admin</span>
-            <div className="text-gray-400 text-[10px]">Company HQ</div>
-          </div>
-          <div className="bg-white border border-amber-100 rounded p-1">
-            <span className="font-medium text-[#6B1F2B]">supplier_user</span> <span className="text-gray-400">/ password</span>
-            <div className="text-gray-400 text-[10px]">Supplier Portal</div>
-          </div>
-          <div className="bg-white border border-amber-100 rounded p-1">
-            <span className="font-medium text-[#6B1F2B]">distributor_user</span> <span className="text-gray-400">/ password</span>
-            <div className="text-gray-400 text-[10px]">Distributor Portal</div>
-          </div>
-          <div className="bg-white border border-amber-100 rounded p-1">
-            <span className="font-medium text-[#6B1F2B]">hq_user</span> <span className="text-gray-400">/ password</span>
-            <div className="text-gray-400 text-[10px]">HQ Dashboard</div>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }

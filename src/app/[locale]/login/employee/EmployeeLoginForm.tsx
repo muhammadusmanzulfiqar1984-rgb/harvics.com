@@ -26,7 +26,7 @@ export default function EmployeeLoginForm() {
         // Redirect to HR module (employee dashboard)
         router.replace(`/${locale}/os/hr`)
       } else {
-        setError('Invalid username or password. Use admin/admin for demo.')
+        setError('Invalid username or password.')
       }
       setIsLoading(false)
     }, 1000)
@@ -121,11 +121,6 @@ export default function EmployeeLoginForm() {
         </p>
       </div>
 
-      {/* Demo Credentials */}
-      <div className="mt-4 p-3 bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800">
-        <p className="text-xs text-purple-700 dark:text-purple-300 font-medium mb-1">Demo Credentials:</p>
-        <p className="text-xs text-purple-600 dark:text-purple-400">Username: admin | Password: admin</p>
-      </div>
     </div>
   )
 }

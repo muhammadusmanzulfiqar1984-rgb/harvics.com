@@ -53,7 +53,7 @@ export default function SupplierLoginForm() {
           router.push(`/${locale}/portal/supplier`)
           return
         } else {
-          setError(response.error || 'Invalid username or password. Try: admin/admin or supplier_user/password')
+          setError(response.error || 'Invalid username or password.')
         }
       } else if (response.data) {
         // Successful login - save token and redirect
@@ -88,7 +88,7 @@ export default function SupplierLoginForm() {
         }
         router.push(`/${locale}/portal/supplier`)
       } else {
-        setError('Connection error. Please try again or use: admin/admin or supplier_user/password')
+        setError('Connection error. Please try again later.')
       }
     } finally {
       setIsLoading(false)
