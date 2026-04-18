@@ -42,16 +42,21 @@ interface BarChartProps {
 export function BarChart({ data, height = 120, formatValue = (v) => String(v) }: BarChartProps) {
   const max = Math.max(...data.map(d => d.value), 1)
   return (
-    <div className="flex items-end gap-1.5 w-full" style={{ height }}>
+    <div className="flex items-end gap-2 w-full" style={{ height }}>
       {data.map((d, i) => {
         const pct = (d.value / max) * 100
+        const barColor = d.color || '#6B1F2B'
         return (
           <div key={i} className="flex-1 flex flex-col items-center gap-1 group relative">
-            <div className="absolute -top-8 left-1/2 -translate-x-1/2 hidden group-hover:flex bg-[#1D1D1F] text-white text-[10px] rounded px-1.5 py-0.5 whitespace-nowrap z-10">
+            <div className="absolute -top-9 left-1/2 -translate-x-1/2 hidden group-hover:flex bg-[#1D1D1F] text-white text-[10px] rounded-md px-2 py-1 whitespace-nowrap z-10 shadow-lg">
               {formatValue(d.value)}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-[#1D1D1F]" />
             </div>
-            <div className="w-full rounded-t-sm transition-all duration-500" style={{ height: `${pct}%`, backgroundColor: d.color || '#6B1F2B', minHeight: 2 }} />
-            <span className="text-[10px] text-[#8E8E93] text-center leading-tight truncate w-full text-center">{d.label}</span>
+            <div className="w-full rounded-t-md transition-all duration-700 relative overflow-hidden" style={{ height: `${pct}%`, minHeight: 4 }}>
+              <div className="absolute inset-0" style={{ background: `linear-gradient(to top, ${barColor}, ${barColor}dd)` }} />
+              <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.15), transparent, rgba(255,255,255,0.08))' }} />
+            </div>
+            <span className="text-[10px] text-[#8E8E93] text-center leading-tight truncate w-full font-medium">{d.label}</span>
           </div>
         )
       })}
@@ -286,11 +291,11 @@ interface LineChartProps {
 
 export function LineChart({ data, labels, height = 160, formatY = (v) => String(v) }: LineChartProps) {
   const allVals = data.flatMap(d => d.values)
-  const min = Math.min(...allVals) * 0.9
-  const max = Math.max(...allVals) * 1.05
+  const min = Math.min(...allVals) * 0.85
+  const max = Math.max(...allVals) * 1.08
   const range = max - min || 1
   const W = 500, H = height
-  const padL = 52, padR = 12, padT = 12, padB = 24
+  const padL = 56, padR = 16, padT = 16, padB = 28
   const chartW = W - padL - padR
   const chartH = H - padT - padB
 
@@ -303,35 +308,77 @@ export function LineChart({ data, labels, height = 160, formatY = (v) => String(
 
   return (
     <svg viewBox={`0 0 ${W} ${H}`} className="w-full" style={{ height }}>
+      <defs>
+        {data.map((series, si) => (
+          <linearGradient key={`grad-${si}`} id={`lineGrad-${si}`} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor={series.color} stopOpacity="0.35" />
+            <stop offset="50%" stopColor={series.color} stopOpacity="0.12" />
+            <stop offset="100%" stopColor={series.color} stopOpacity="0.02" />
+          </linearGradient>
+        ))}
+        {data.map((series, si) => (
+          <filter key={`glow-${si}`} id={`lineGlow-${si}`}>
+            <feGaussianBlur stdDeviation="2" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        ))}
+      </defs>
       {/* Grid lines */}
       {tickVals.map((v, i) => (
         <g key={i}>
-          <line x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#F5F5F7" strokeWidth="1" />
-          <text x={padL - 6} y={toY(v)} textAnchor="end" dominantBaseline="middle" className="text-[10px]" fill="#8E8E93" fontSize="10">
+          <line x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#E5E5EA" strokeWidth="0.5" strokeDasharray="4 3" />
+          <text x={padL - 8} y={toY(v)} textAnchor="end" dominantBaseline="middle" fill="#8E8E93" fontSize="10" fontWeight="500">
             {formatY(v)}
           </text>
         </g>
       ))}
-      {/* Lines */}
+      {/* Area fill + lines */}
       {data.map((series, si) => {
-        const pts = series.values.map((v, i) => `${toX(i)},${toY(v)}`).join(' ')
-        const fillPts = `${toX(0)},${H - padB} ${series.values.map((v, i) => `${toX(i)},${toY(v)}`).join(' ')} ${toX(series.values.length - 1)},${H - padB}`
+        // Build smooth curve using cardinal spline
+        const points = series.values.map((v, i) => ({ x: toX(i), y: toY(v) }))
+        const d = points.map((p, i) => {
+          if (i === 0) return `M${p.x},${p.y}`
+          const prev = points[i - 1]
+          const cpx = (prev.x + p.x) / 2
+          return `C${cpx},${prev.y} ${cpx},${p.y} ${p.x},${p.y}`
+        }).join(' ')
+        const areaD = `${d} L${points[points.length - 1].x},${H - padB} L${points[0].x},${H - padB} Z`
         return (
           <g key={si}>
-            <polygon points={fillPts} fill={series.color} opacity="0.06" />
-            <polyline points={pts} fill="none" stroke={series.color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            {/* Gradient area fill */}
+            <path d={areaD} fill={`url(#lineGrad-${si})`} />
+            {/* Main line with glow */}
+            <path d={d} fill="none" stroke={series.color} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" filter={`url(#lineGlow-${si})`} />
+            {/* Data points */}
             {series.values.map((v, i) => (
-              <circle key={i} cx={toX(i)} cy={toY(v)} r="3" fill="white" stroke={series.color} strokeWidth="1.5" />
+              <g key={i}>
+                <circle cx={toX(i)} cy={toY(v)} r="5" fill={series.color} opacity="0.15" />
+                <circle cx={toX(i)} cy={toY(v)} r="3" fill="white" stroke={series.color} strokeWidth="2" />
+              </g>
             ))}
+            {/* Last value label */}
+            {series.values.length > 0 && (
+              <g>
+                <rect x={toX(series.values.length - 1) - 28} y={toY(series.values[series.values.length - 1]) - 22} width="56" height="18" rx="4" fill={series.color} />
+                <text x={toX(series.values.length - 1)} y={toY(series.values[series.values.length - 1]) - 10} textAnchor="middle" fill="white" fontSize="9" fontWeight="700">
+                  {formatY(series.values[series.values.length - 1])}
+                </text>
+              </g>
+            )}
           </g>
         )
       })}
       {/* X axis labels */}
       {labels.map((l, i) => (
         i % Math.ceil(labels.length / 8) === 0 ? (
-          <text key={i} x={toX(i)} y={H - 4} textAnchor="middle" fill="#8E8E93" fontSize="10">{l}</text>
+          <text key={i} x={toX(i)} y={H - 4} textAnchor="middle" fill="#8E8E93" fontSize="10" fontWeight="500">{l}</text>
         ) : null
       ))}
+      {/* Bottom axis line */}
+      <line x1={padL} x2={W - padR} y1={H - padB} y2={H - padB} stroke="#C3A35E" strokeWidth="0.5" strokeOpacity="0.4" />
     </svg>
   )
 }

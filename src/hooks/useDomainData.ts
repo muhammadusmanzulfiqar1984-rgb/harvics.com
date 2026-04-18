@@ -7,7 +7,7 @@ import { apiClient } from '@/lib/api'
 const MOCK: Record<string, any> = {
   crm: {
     totalCustomers: 487, activeCustomers: 412, newCustomers: 47, satisfaction: 96,
-    revenueByMonth: [310, 345, 328, 380, 415, 440, 462, 435, 478, 502, 528, 556],
+    revenueByMonth: [1840000, 2120000, 1950000, 2380000, 2650000, 2800000, 2950000, 2700000, 3100000, 3250000, 3400000, 3600000],
     customersByRegion: [
       { region: 'Middle East', count: 132, revenue: 5800000 },
       { region: 'South Asia', count: 104, revenue: 4200000 },
