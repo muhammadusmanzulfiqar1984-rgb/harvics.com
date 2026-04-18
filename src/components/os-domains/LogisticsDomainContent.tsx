@@ -6,6 +6,7 @@ import RouteListContent from '@/components/domains/logistics/RouteListContent'
 import ActiveVehiclesContent from '@/components/domains/logistics/ActiveVehiclesContent'
 import DeliveryQueueContent from '@/components/domains/logistics/DeliveryQueueContent'
 import PendingReturnsContent from '@/components/domains/logistics/PendingReturnsContent'
+import { LogisticsAnalyticsCharts } from '@/components/os-domains/DomainAnalyticsCharts'
 
 interface LogisticsDomainContentProps {
   persona: 'company' | 'distributor' | 'supplier'
@@ -399,12 +400,21 @@ export default function LogisticsDomainContent({ persona, locale }: LogisticsDom
     }
   ]
 
+  tier2Modules.unshift({
+    id: 'logistics-analytics',
+    label: 'Analytics Dashboard',
+    icon: '',
+    description: 'Logistics analytics — delivery rates, shipment volumes, cost breakdown, trade routes',
+    component: <LogisticsAnalyticsCharts />,
+    tier3Screens: [{ id: 'logistics-charts', label: 'Logistics Charts', icon: '', component: <LogisticsAnalyticsCharts /> }]
+  })
+
   return (
     <OSDomainTierStructure
       domainId="logistics"
       domainName="Logistics OS"
       tier2Modules={tier2Modules}
-      defaultModule="route-planning"
+      defaultModule="logistics-analytics"
     />
   )
 }

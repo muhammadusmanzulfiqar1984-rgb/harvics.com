@@ -5,6 +5,7 @@ import OSDomainTierStructure, { Tier2Module } from '@/components/shared/OSDomain
 import EmployeeListContent from '@/components/domains/hr/EmployeeListContent'
 import PayrollProcessingContent from '@/components/domains/hr/PayrollProcessingContent'
 import PerformanceReviewsContent from '@/components/domains/hr/PerformanceReviewsContent'
+import { HRAnalyticsCharts } from '@/components/os-domains/DomainAnalyticsCharts'
 
 interface HRDomainContentProps {
   persona: 'company' | 'distributor' | 'supplier'
@@ -296,6 +297,16 @@ export default function HRDomainContent({ persona, locale }: HRDomainContentProp
       ]
     }
   ]
+
+  // Add Analytics Dashboard as first module
+  tier2Modules.unshift({
+    id: 'hr-analytics',
+    label: 'Analytics Dashboard',
+    icon: '',
+    description: 'HR analytics — headcount, payroll trends, hiring vs exits, workforce distribution',
+    component: <HRAnalyticsCharts />,
+    tier3Screens: [{ id: 'hr-charts', label: 'HR Charts', icon: '', component: <HRAnalyticsCharts /> }]
+  })
 
   return (
     <OSDomainTierStructure

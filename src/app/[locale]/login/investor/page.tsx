@@ -3,6 +3,7 @@ import React from 'react'
 import { useTranslations, useLocale } from 'next-intl'
 import Link from 'next/link'
 import InvestorLoginForm from './InvestorLoginForm'
+import AnimatedStats from '@/components/ui/AnimatedStats'
 
 // Generate static params for all locales
 export async function generateStaticParams() {
@@ -33,6 +34,21 @@ export default function InvestorLoginPage() {
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
               {t('login.subtitle')}
             </p>
+          </div>
+        </section>
+
+        {/* Stats Bar */}
+        <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
+          <div className="max-w-[1200px] mx-auto px-4 py-5">
+            <AnimatedStats
+              stats={[
+                { num: '42+', label: 'Operating Countries' },
+                { num: '10', label: 'Industry Verticals' },
+                { num: '$1.2B+', label: 'Trade Volume' },
+                { num: '94.2%', label: 'On-Time Delivery' },
+              ]}
+              containerClassName="grid grid-cols-2 md:grid-cols-4 gap-4 text-center"
+            />
           </div>
         </section>
 

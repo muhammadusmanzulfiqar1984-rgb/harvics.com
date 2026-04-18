@@ -24,10 +24,10 @@ export const localeToCountryMap: Record<string, LocaleCountryMapping> = {
   },
   'ar': {
     locale: 'ar',
-    defaultCountry: 'uae',
-    countryCode: 'AE',
+    defaultCountry: 'saudi-arabia',
+    countryCode: 'SA',
     region: 'Middle East',
-    countryName: 'United Arab Emirates'
+    countryName: 'Saudi Arabia'
   },
   'fr': {
     locale: 'fr',

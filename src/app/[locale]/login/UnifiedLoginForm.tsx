@@ -245,7 +245,7 @@ export default function UnifiedLoginForm() {
             />
             <span className="ml-2 text-sm text-gray-600">{tForm('rememberMe') || 'Remember me'}</span>
           </label>
-          <a href="#" className="text-sm text-[#6B1F2B] hover:text-[#50000b] transition-colors duration-300">
+          <a href="/en/contact" className="text-sm text-[#6B1F2B] hover:text-[#50000b] transition-colors duration-300">
             {tForm('forgotPassword') || 'Forgot password?'}
           </a>
         </div>
@@ -272,7 +272,7 @@ export default function UnifiedLoginForm() {
       <div className="mt-6 text-center">
         <p className="text-sm text-gray-600">
           Don't have an account?{' '}
-          <a href="#" className="text-[#6B1F2B] hover:text-[#50000b] font-medium transition-colors duration-300">
+          <a href="/en/contact" className="text-[#6B1F2B] hover:text-[#50000b] font-medium transition-colors duration-300">
             {tContact('title')}
           </a>
         </p>

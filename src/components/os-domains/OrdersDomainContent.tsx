@@ -6,6 +6,7 @@ import OrderListContent from '@/components/domains/orders/OrderListContent'
 import InvoiceListContent from '@/components/domains/orders/InvoiceListContent'
 import CreditLimitsContent from '@/components/domains/orders/CreditLimitsContent'
 import OrderAnalyticsContent from '@/components/domains/orders/OrderAnalyticsContent'
+import { SalesAnalyticsCharts } from '@/components/os-domains/DomainAnalyticsCharts'
 
 interface OrdersDomainContentProps {
   persona: 'company' | 'distributor' | 'supplier'
@@ -249,12 +250,21 @@ export default function OrdersDomainContent({ persona, locale }: OrdersDomainCon
     }
   ]
 
+  tier2Modules.unshift({
+    id: 'sales-analytics',
+    label: 'Sales Analytics',
+    icon: '',
+    description: 'Sales analytics — revenue trends, channel mix, vertical performance, order volume',
+    component: <SalesAnalyticsCharts />,
+    tier3Screens: [{ id: 'sales-charts', label: 'Sales Charts', icon: '', component: <SalesAnalyticsCharts /> }]
+  })
+
   return (
     <OSDomainTierStructure
       domainId="orders-sales"
       domainName="Orders / Sales OS"
       tier2Modules={tier2Modules}
-      defaultModule="order-management"
+      defaultModule="sales-analytics"
     />
   )
 }

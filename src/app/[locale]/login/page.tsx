@@ -3,6 +3,7 @@ import UnifiedLoginForm from './UnifiedLoginForm'
 
 import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
+import AnimatedStats from '@/components/ui/AnimatedStats'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
@@ -43,6 +44,21 @@ export default async function LoginPage() {
              <p className="text-white/80 text-lg max-w-2xl font-light">
                Access your personalized dashboard and manage your operations
              </p>
+          </div>
+        </section>
+
+        {/* Stats Bar */}
+        <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
+          <div className="max-w-[1200px] mx-auto px-4 py-5">
+            <AnimatedStats
+              stats={[
+                { num: '42+', label: 'Active Markets' },
+                { num: '10', label: 'Industry Verticals' },
+                { num: '1,185+', label: 'Products Listed' },
+                { num: '$1.2B+', label: 'Trade Volume' },
+              ]}
+              containerClassName="grid grid-cols-2 md:grid-cols-4 gap-4 text-center"
+            />
           </div>
         </section>
 

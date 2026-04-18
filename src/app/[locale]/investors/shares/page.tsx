@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
+import AnimatedStats from '@/components/ui/AnimatedStats'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
@@ -91,18 +92,16 @@ export default async function SharesPage({ params }: SharesPageProps) {
 
       {/* Key Metrics */}
       <section className="bg-[#6B1F2B] py-14 px-4">
-        <div className="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[
-            { num: '40+', label: 'Operating Countries' },
-            { num: '10', label: 'Industry Verticals' },
-            { num: '$250M+', label: 'Trade Volume (Annual)' },
-            { num: 'A-', label: 'Internal Credit Rating' },
-          ].map((s) => (
-            <div key={s.label}>
-              <div className="text-2xl font-bold text-[#C3A35E]">{s.num}</div>
-              <div className="text-xs text-white/50 mt-1">{s.label}</div>
-            </div>
-          ))}
+        <div className="max-w-[1200px] mx-auto">
+          <AnimatedStats
+            stats={[
+              { num: '42+', label: 'Operating Countries' },
+              { num: '10', label: 'Industry Verticals' },
+              { num: '$250M+', label: 'Trade Volume (Annual)' },
+              { num: 'A-', label: 'Internal Credit Rating' },
+            ]}
+            containerClassName="grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+          />
         </div>
       </section>
 

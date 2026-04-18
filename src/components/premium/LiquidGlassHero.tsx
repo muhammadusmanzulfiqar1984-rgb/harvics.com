@@ -11,7 +11,7 @@ const STATS = [
   { label: 'Active Markets', value: '42' },
   { label: 'Industry Verticals', value: '10' },
   { label: 'Trade Volume', value: '$1.2B+' },
-  { label: 'Countries Served', value: '50+' },
+  { label: 'Countries Served', value: '42+' },
   { label: 'Founded', value: '2019' },
   { label: 'On-Time Delivery', value: '94.2%' },
 ]
@@ -43,7 +43,7 @@ const LiquidGlassHero: React.FC = () => {
 
   const markets = useCountUp(42, 1600, statsVisible)
   const products = useCountUp(1185, 2000, statsVisible)
-  const countries = useCountUp(50, 1400, statsVisible)
+  const countries = useCountUp(42, 1400, statsVisible)
   const delivery = useCountUp(94, 1800, statsVisible)
 
   useEffect(() => { setIsLoaded(true) }, [])
@@ -124,7 +124,7 @@ const LiquidGlassHero: React.FC = () => {
           marginBottom: '22px',
           fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
         }}>
-          Enterprise-Grade Commerce &nbsp;·&nbsp; 10 Industry Verticals &nbsp;·&nbsp; 50+ Nations
+          Enterprise-Grade Commerce &nbsp;·&nbsp; 10 Industry Verticals &nbsp;·&nbsp; 42+ Markets
         </div>
 
         {/* Animated Word Swap */}

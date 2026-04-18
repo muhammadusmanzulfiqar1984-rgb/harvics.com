@@ -2,12 +2,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
+import AnimatedStats from '@/components/ui/AnimatedStats'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
   return {
     title: 'HarvicTrade — Global B2B Marketplace | Harvics',
-    description: 'Source products from verified suppliers across 40+ countries. FMCG, textiles, commodities, industrial — all on one platform.',
+    description: 'Source products from verified suppliers across 42+ countries. FMCG, textiles, commodities, industrial — all on one platform.',
   }
 }
 
@@ -31,10 +32,10 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
   ]
 
   const stats = [
-    { num: '8,150+', label: 'Products Listed' },
-    { num: '40+', label: 'Source Countries' },
+    { num: '1,185+', label: 'Products Listed' },
+    { num: '42+', label: 'Source Countries' },
     { num: '1,200+', label: 'Verified Suppliers' },
-    { num: '50+', label: 'Buyer Countries' },
+    { num: '42+', label: 'Buyer Countries' },
   ]
 
   const featuredProducts = [
@@ -49,7 +50,7 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
   ]
 
   const howItWorks = [
-    { step: '01', title: 'Browse & Search', desc: 'Explore 8,150+ products across 6 industry categories. Filter by origin, MOQ, certification, and delivery terms.' },
+    { step: '01', title: 'Browse & Search', desc: 'Explore 1,185+ products across 10 industry categories. Filter by origin, MOQ, certification, and delivery terms.' },
     { step: '02', title: 'Send RFQ', desc: 'Request a quote directly from verified suppliers. Specify your quantity, delivery location, Incoterms, and timeline.' },
     { step: '03', title: 'Compare & Negotiate', desc: 'Receive competitive quotes. Our AI suggests the best supplier match based on price, lead time, and reliability score.' },
     { step: '04', title: 'Trade Securely', desc: 'Execute orders through Harvics — protected by escrow, trade finance (LC/TT), and end-to-end shipment tracking.' },
@@ -78,7 +79,7 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style={{ letterSpacing: '-0.03em' }}>
               Source. Trade. Scale.<br />
-              <span className="text-[#C3A35E]">Across 40+ Countries.</span>
+              <span className="text-[#C3A35E]">Across 42+ Countries.</span>
             </h1>
             <p className="text-lg text-white/50 max-w-2xl mx-auto leading-relaxed mb-10">
               The enterprise B2B marketplace by Harvics Global Ventures. Verified suppliers, AI-matched sourcing, trade finance, and end-to-end logistics — all on one platform.
@@ -110,13 +111,12 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
 
         {/* ═══════ STATS BAR ═══════ */}
         <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
-          <div className="max-w-[1200px] mx-auto px-4 py-5 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            {stats.map((s) => (
-              <div key={s.label}>
-                <div className="text-xl md:text-2xl font-bold text-[#C3A35E]">{s.num}</div>
-                <div className="text-xs text-white/50 mt-1">{s.label}</div>
-              </div>
-            ))}
+          <div className="max-w-[1200px] mx-auto px-4 py-5">
+            <AnimatedStats
+              stats={stats}
+              numClassName="text-xl md:text-2xl font-bold text-[#C3A35E]"
+              containerClassName="grid grid-cols-2 md:grid-cols-4 gap-4 text-center"
+            />
           </div>
         </section>
 
@@ -129,7 +129,7 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
               <div className="w-6 h-[2px] bg-[#C3A35E]/50" />
             </div>
             <h2 className="text-3xl font-bold text-[#6B1F2B]" style={{ letterSpacing: '-0.02em' }}>
-              6 Industry Verticals. 8,150+ Products.
+              10 Industry Verticals. 1,185+ Products.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -223,7 +223,7 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
                 { icon: '🔒', title: 'Trade Assurance', desc: 'Escrow protection on every transaction. Your payment is released only on confirmed delivery.' },
                 { icon: '🧠', title: 'AI-Matched Sourcing', desc: 'Our AI recommends the best suppliers based on price, reliability, lead time, and your history.' },
                 { icon: '📋', title: 'Verified Suppliers', desc: 'Every supplier is verified — business license, factory audit, and trade references checked.' },
-                { icon: '🌍', title: 'Global Logistics', desc: 'Integrated shipping across 40+ countries. Real-time tracking, customs clearance, and documentation.' },
+                { icon: '🌍', title: 'Global Logistics', desc: 'Integrated shipping across 42+ countries. Real-time tracking, customs clearance, and documentation.' },
               ].map((t) => (
                 <div key={t.title} className="text-center">
                   <div className="text-3xl mb-3">{t.icon}</div>

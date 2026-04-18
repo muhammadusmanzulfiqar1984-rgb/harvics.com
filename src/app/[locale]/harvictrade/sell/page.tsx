@@ -43,7 +43,7 @@ export default async function SellPage({ params }: { params: Promise<{ locale: s
             <span className="text-[#C3A35E]">From Day One.</span>
           </h1>
           <p className="text-lg text-white/50 max-w-2xl mx-auto leading-relaxed mb-10">
-            List your products on HarvicTrade and reach verified B2B buyers in 50+ countries. No cold calls. No trade shows. Just qualified leads, AI-matched to your catalogue.
+            List your products on HarvicTrade and reach verified B2B buyers in 42+ countries. No cold calls. No trade shows. Just qualified leads, AI-matched to your catalogue.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href={`/${locale}/harvictrade/register`}

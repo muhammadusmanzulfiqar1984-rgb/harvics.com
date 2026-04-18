@@ -85,7 +85,7 @@ const verticalMeta: Record<string, { tagline: string; description: string; stats
   commodities: {
     tagline: 'Agri, Energy, Metals & Softs',
     description: 'Strategic commodities trading — energy, metals, agricultural products, edible oils, proteins, and industrial chemicals. Spot and contract-based trading with global counterparties.',
-    stats: [{ label: 'Verticals', value: '7' }, { label: 'Trade Volume', value: '$120M+' }, { label: 'Partners', value: '80+' }],
+    stats: [{ label: 'Verticals', value: '10' }, { label: 'Trade Volume', value: '$120M+' }, { label: 'Partners', value: '80+' }],
     icon: '📦',
     gradient: 'from-[#6B1F2B] via-[#582028] to-[#461820]',
   },

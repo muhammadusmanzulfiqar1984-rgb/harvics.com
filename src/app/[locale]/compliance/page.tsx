@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
+import AnimatedStats from '@/components/ui/AnimatedStats'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
@@ -53,25 +54,23 @@ export default async function CompliancePage({ params }: CompliancePageProps) {
             Compliance & Ethics
           </h1>
           <p className="text-lg text-white/60 max-w-[700px] mx-auto leading-relaxed">
-            Integrity is the foundation of every transaction. We operate under strict regulatory frameworks across 40+ countries.
+            Integrity is the foundation of every transaction. We operate under strict regulatory frameworks across 42+ countries.
           </p>
         </div>
       </section>
 
       {/* Key Numbers */}
       <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
-        <div className="max-w-[1200px] mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          {[
-            { num: '40+', label: 'Countries Regulated' },
-            { num: '100%', label: 'Sanctions Screening' },
-            { num: 'ISO 9001', label: 'Quality Certified' },
-            { num: 'Zero', label: 'Tolerance for Bribery' },
-          ].map((s) => (
-            <div key={s.label}>
-              <div className="text-2xl font-bold text-[#C3A35E]">{s.num}</div>
-              <div className="text-xs text-white/50 mt-1">{s.label}</div>
-            </div>
-          ))}
+        <div className="max-w-[1200px] mx-auto px-4 py-6">
+          <AnimatedStats
+            stats={[
+              { num: '42+', label: 'Countries Regulated' },
+              { num: '100%', label: 'Sanctions Screening' },
+              { num: 'ISO 9001', label: 'Quality Certified' },
+              { num: 'Zero', label: 'Tolerance for Bribery' },
+            ]}
+            containerClassName="grid grid-cols-2 md:grid-cols-4 gap-4 text-center"
+          />
         </div>
       </section>
 

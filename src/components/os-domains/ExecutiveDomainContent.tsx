@@ -5,6 +5,7 @@ import OSDomainTierStructure, { Tier2Module } from '@/components/shared/OSDomain
 import PLOverviewContent from '@/components/domains/executive/PLOverviewContent'
 import AlertDashboardContent from '@/components/domains/executive/AlertDashboardContent'
 import RiskAlertsContent from '@/components/domains/executive/RiskAlertsContent'
+import { ExecutiveAnalyticsCharts } from '@/components/os-domains/DomainAnalyticsCharts'
 
 interface ExecutiveDomainContentProps {
   persona: 'company' | 'distributor' | 'supplier'
@@ -288,12 +289,21 @@ export default function ExecutiveDomainContent({ persona, locale }: ExecutiveDom
     }
   ]
 
+  tier2Modules.unshift({
+    id: 'executive-analytics',
+    label: 'Analytics Dashboard',
+    icon: '',
+    description: 'Executive analytics — P&L trends, revenue by region, EBITDA, quarterly performance',
+    component: <ExecutiveAnalyticsCharts />,
+    tier3Screens: [{ id: 'exec-charts', label: 'Executive Charts', icon: '', component: <ExecutiveAnalyticsCharts /> }]
+  })
+
   return (
     <OSDomainTierStructure
       domainId="executive"
       domainName="Executive Control Tower"
       tier2Modules={tier2Modules}
-      defaultModule="p-l-control"
+      defaultModule="executive-analytics"
     />
   )
 }

@@ -18,7 +18,7 @@ export default async function LeadershipPage({ params }: LeadershipPageProps) {
     {
       name: 'Muhammad Usman Zulfiqar',
       role: 'Founder & Chief Executive Officer',
-      bio: 'Founder of Harvics Global Ventures, established in 2019. Leads the company\'s expansion across 40+ countries with a focus on AI-driven supply chain excellence, multi-vertical global trading, and building repeatable commercial systems that convert opportunity into sustained global value.',
+      bio: 'Founder of Harvics Global Ventures, established in 2019. Leads the company\'s expansion across 42+ countries with a focus on AI-driven supply chain excellence, multi-vertical global trading, and building repeatable commercial systems that convert opportunity into sustained global value.',
       image: undefined,
     },
   ]
@@ -41,7 +41,7 @@ export default async function LeadershipPage({ params }: LeadershipPageProps) {
             Our Leadership
           </h1>
           <p className="text-lg text-white/60 max-w-[600px] mx-auto leading-relaxed">
-            Meet the team driving Harvics across 40+ countries, 10 industry verticals, and 38 languages.
+            Meet the team driving Harvics across 42+ countries, 10 industry verticals, and 38 languages.
           </p>
         </div>
       </section>

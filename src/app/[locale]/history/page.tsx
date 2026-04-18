@@ -20,7 +20,7 @@ export default async function HistoryPage({ params }: HistoryPageProps) {
     { year: '2021', title: 'Multi-Vertical Expansion', description: 'Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.', highlight: '5 New Verticals' },
     { year: '2022', title: 'Digital Transformation', description: 'Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.', highlight: 'Harvics OS v1' },
     { year: '2023', title: 'Sustainability & Scale', description: 'Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.', highlight: '30+ Countries' },
-    { year: '2024', title: 'Global Enterprise', description: 'Surpassed 40+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.', highlight: '40+ Countries' },
+    { year: '2024', title: 'Global Enterprise', description: 'Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.', highlight: '42+ Countries' },
     { year: '2025', title: 'AI-First Operating System', description: 'Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.', highlight: 'Harvics OS v2' },
     { year: '2026', title: 'The Vision Ahead', description: 'Scaling to 60+ countries. Building the world\'s first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.', highlight: '60+ Target' },
   ]
@@ -43,7 +43,7 @@ export default async function HistoryPage({ params }: HistoryPageProps) {
             Our Journey
           </h1>
           <p className="text-lg text-white/60 max-w-[700px] mx-auto leading-relaxed">
-            From a Dubai startup to a global enterprise spanning 40+ countries, 10 industry verticals, and 38 languages.
+            From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages.
           </p>
         </div>
       </section>

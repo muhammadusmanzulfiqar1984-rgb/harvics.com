@@ -12,7 +12,7 @@ interface CustomerListContentProps {
 const fmtMoney = (v: number) =>
   v >= 1_000_000 ? `$${(v / 1_000_000).toFixed(1)}M` : v >= 1000 ? `$${(v / 1000).toFixed(0)}K` : `$${v}`
 
-const regionColors = ['#6B1F2B', '#007AFF', '#34C759', '#FF9500', '#8E8E93']
+const regionColors = ['#6B1F2B', '#007AFF', '#34C759', '#FF9500', '#8E8E93', '#AF52DE']
 
 export default function CustomerListContent({ persona, locale }: CustomerListContentProps) {
   const { data, loading, source, lastUpdated } = useDomainData('crm')

@@ -3,6 +3,7 @@
 import React from 'react'
 import OSDomainTierStructure, { Tier2Module } from '@/components/shared/OSDomainTierStructure'
 import KPICard from '@/components/shared/KPICard'
+import { InvestorAnalyticsCharts } from '@/components/os-domains/DomainAnalyticsCharts'
 
 interface InvestorDomainContentProps {
   persona: 'company' | 'distributor' | 'supplier'
@@ -123,6 +124,7 @@ function ReportsScreen() {
 
 export default function InvestorDomainContent({ persona, locale }: InvestorDomainContentProps) {
   const tier2Modules: Tier2Module[] = [
+    { id: 'investor-analytics', label: 'Analytics Dashboard', icon: '', description: 'Share price trends, EPS, shareholder structure, revenue charts', component: <InvestorAnalyticsCharts />, tier3Screens: [{ id: 'investor-charts', label: 'Investor Charts', icon: '', component: <InvestorAnalyticsCharts /> }] },
     { id: 'investor-overview', label: 'Investor Dashboard', icon: '', description: 'Stock performance, market cap, KPIs, and latest news', component: <InvestorOverviewScreen />, tier3Screens: [{ id: 'overview', label: 'Overview', icon: '', component: <InvestorOverviewScreen /> }] },
     { id: 'financial-results', label: 'Financial Results', icon: '', description: 'Quarterly and annual financial performance data', component: <FinancialResultsScreen />, tier3Screens: [{ id: 'quarterly', label: 'Quarterly', icon: '', component: <FinancialResultsScreen /> }] },
     { id: 'reports-filings', label: 'Reports & Filings', icon: '', description: 'Annual reports, earnings reports, and regulatory filings', component: <ReportsScreen />, tier3Screens: [{ id: 'reports', label: 'Reports', icon: '', component: <ReportsScreen /> }] }

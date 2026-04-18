@@ -66,7 +66,7 @@ export default async function GovernancePage({ params }: GovernancePageProps) {
             Corporate Governance
           </h1>
           <p className="text-lg text-white/60 max-w-[700px] mx-auto leading-relaxed">
-            Integrity, transparency, and accountability are the foundations of how we operate across 40+ countries and 10 industry verticals.
+            Integrity, transparency, and accountability are the foundations of how we operate across 42+ countries and 10 industry verticals.
           </p>
         </div>
       </section>

@@ -110,7 +110,7 @@ const StrategyValidator: React.FC = () => {
               <span className="text-gray-600">
                 Ethical Audit Score: <strong>{proposal.passport.ethicalScore}/100</strong>
               </span>
-              <a href="#" className="text-blue-600 hover:underline ml-1">View Audit Log</a>
+              <a href="/en/os/legal" className="text-blue-600 hover:underline ml-1">View Audit Log</a>
             </div>
           )}
         </div>

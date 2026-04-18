@@ -47,7 +47,7 @@ export default function SelloutUpload() {
               className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
             />
             <p className="text-xs text-[#C3A35E]/90 mt-2">
-              <a href="#" className="text-white hover:underline">Download template</a> for correct format
+              <a href="/en/contact" className="text-white hover:underline">Download template</a> for correct format
             </p>
           </div>
 

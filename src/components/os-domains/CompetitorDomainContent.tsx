@@ -3,6 +3,7 @@
 import React from 'react'
 import OSDomainTierStructure, { Tier2Module } from '@/components/shared/OSDomainTierStructure'
 import KPICard from '@/components/shared/KPICard'
+import { CompetitorAnalyticsCharts } from '@/components/os-domains/DomainAnalyticsCharts'
 
 interface CompetitorDomainContentProps {
   persona: 'company' | 'distributor' | 'supplier'
@@ -163,12 +164,21 @@ export default function CompetitorDomainContent({ persona, locale }: CompetitorD
     }
   ]
 
+  tier2Modules.unshift({
+    id: 'competitor-analytics',
+    label: 'Analytics Dashboard',
+    icon: '',
+    description: 'Competitive intelligence — market share, pricing index, trend analysis',
+    component: <CompetitorAnalyticsCharts />,
+    tier3Screens: [{ id: 'competitor-charts', label: 'Competitor Charts', icon: '', component: <CompetitorAnalyticsCharts /> }]
+  })
+
   return (
     <OSDomainTierStructure
       domainId="competitor-intelligence"
       domainName="Competitor Intelligence OS"
       tier2Modules={tier2Modules}
-      defaultModule="market-share"
+      defaultModule="competitor-analytics"
     />
   )
 }

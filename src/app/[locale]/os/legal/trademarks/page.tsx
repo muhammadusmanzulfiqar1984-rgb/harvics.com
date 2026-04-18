@@ -424,7 +424,7 @@ export default function TrademarksPage() {
                         <ul className="space-y-2">
                           {formData.documents.map((doc, idx) => (
                             <li key={idx} className="text-sm text-[#C3A35E]/90">
-                              <a href="#" className="text-white hover:text-[#C3A35E]/90">{doc}</a>
+                              <a href="/en/os/legal" className="text-white hover:text-[#C3A35E]/90">{doc}</a>
                             </li>
                           ))}
                         </ul>

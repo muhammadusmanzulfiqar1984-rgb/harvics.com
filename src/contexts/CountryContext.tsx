@@ -80,17 +80,26 @@ export const CountryProvider: React.FC<{ children: React.ReactNode }> = ({ child
   const isUpdatingFromLocale = useRef(false)
   const isUpdatingFromCountry = useRef(false)
 
-  // Update country when locale changes - this ensures language changes update country/currency
+  // Update country when locale changes - but ONLY if user hasn't manually selected one
   useEffect(() => {
     if (isUpdatingFromCountry.current) {
-      // If we're updating from country change, skip this to prevent loop
       isUpdatingFromCountry.current = false
       return
     }
     
+    // Respect user's explicit country choice (stored in sessionStorage)
+    if (typeof window !== 'undefined') {
+      try {
+        const userPickedCountry = sessionStorage.getItem('harvics_user_country')
+        if (userPickedCountry) {
+          // User previously chose a country manually — don't override it
+          return
+        }
+      } catch { /* private browsing */ }
+    }
+    
     const defaultCountryForLocale = getDefaultCountryForLocale(locale)
     if (defaultCountryForLocale && !userScope) {
-      // Only auto-update if user doesn't have restricted access
       isUpdatingFromLocale.current = true
       setSelectedCountryState(defaultCountryForLocale)
       isUpdatingFromLocale.current = false
@@ -280,6 +289,13 @@ export const CountryProvider: React.FC<{ children: React.ReactNode }> = ({ child
         console.warn('Selected country is not within your access scope')
         return
       }
+    }
+    
+    // Mark that user has explicitly chosen a country — locale changes should not override this
+    if (typeof window !== 'undefined') {
+      try {
+        sessionStorage.setItem('harvics_user_country', normalized)
+      } catch { /* private browsing */ }
     }
     
     // UNIFIED SYSTEM: When country changes, automatically switch to country's primary language

@@ -16,7 +16,7 @@ export default function DistributorCheckout() {
   // Get available payment methods for distributor portal
   const availableMethods = getAvailablePaymentMethods('distributor')
   const availableMethodTypes = availableMethods.map(m => m.method)
-  // Dummy cart items for distributor
+  // Cart items for distributor
   const cartItems = [
     {
       id: 1,

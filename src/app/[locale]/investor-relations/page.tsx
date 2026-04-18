@@ -378,7 +378,7 @@ export default function InvestorRelationsPage() {
                     </div>
                   </div>
                   <p className="text-white/70 leading-relaxed text-base md:text-lg font-light">
-                    {getTranslation('info.global.description', 'Operating in 40+ countries with a strong presence across multiple continents and markets.')}
+                    {getTranslation('info.global.description', 'Operating in 42+ countries with a strong presence across multiple continents and markets.')}
                   </p>
                 </div>
               </div>

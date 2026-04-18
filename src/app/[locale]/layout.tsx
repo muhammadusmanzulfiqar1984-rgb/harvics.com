@@ -35,7 +35,7 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mon
 
 export const metadata: Metadata = generateSEOMetadata({
   title: 'Harvics Global Ventures',
-  description: 'Leading global trading company delivering premium products across 10+ industries. Textiles, FMCG, commodities, industrial solutions, minerals, oil & gas, real estate, sourcing, technology, and AI automation. Operating in 50+ countries since 2019.',
+  description: 'Leading global trading company delivering premium products across 10 industries. Textiles, FMCG, commodities, industrial solutions, minerals, oil & gas, real estate, sourcing, technology, and AI automation. Operating in 42+ countries since 2019.',
   url: 'https://www.harvics.com',
 })
 

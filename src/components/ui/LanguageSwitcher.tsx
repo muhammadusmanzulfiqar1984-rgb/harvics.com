@@ -152,6 +152,11 @@ function LanguageSwitcherInner() {
     if (typeof window !== 'undefined') {
       localStorage.setItem('preferred_language', newLocale)
       sessionStorage.setItem('harvics_locale', newLocale)
+      // Clear user's explicit country choice so the new language's default country applies
+      sessionStorage.removeItem('harvics_user_country')
+      sessionStorage.removeItem('harvics_currency')
+      sessionStorage.removeItem('harvics_currency_symbol')
+      sessionStorage.removeItem('harvics_country_code')
     }
     
     // Skip updating LocaleProvider context directly to avoid race conditions

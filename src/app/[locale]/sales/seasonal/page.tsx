@@ -67,7 +67,7 @@ export default async function SeasonalPage({ params }: SeasonalPageProps) {
             Seasonal Trade Programmes
           </h1>
           <p className="text-lg text-white/60 max-w-[700px] mx-auto leading-relaxed">
-            Harvics aligns trade offers with cultural calendars, climate patterns, and market demand cycles across 40+ countries.
+            Harvics aligns trade offers with cultural calendars, climate patterns, and market demand cycles across 42+ countries.
           </p>
         </div>
       </section>

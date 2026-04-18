@@ -7,7 +7,9 @@ import { getLocaleConfig } from '@/config/localeConfig'
  * Format currency based on locale
  * @param amount - The numeric amount
  * @param locale - The locale code (e.g., 'en', 'ar', 'zh')
- * @param currency - Optional currency code override
+ * @param currency - Optional currency code override. If omitted, uses the
+ *                   session-active currency (set by GeographicSyncWrapper when
+ *                   the user switches country), then falls back to locale config.
  */
 export const formatCurrency = (
   amount: number,
@@ -15,7 +17,17 @@ export const formatCurrency = (
   currency?: string
 ): string => {
   const config = getLocaleConfig(locale)
-  const currencyCode = currency || config.currency
+  
+  // Priority: explicit param → session currency → locale config default
+  let currencyCode = currency
+  if (!currencyCode && typeof window !== 'undefined') {
+    try {
+      currencyCode = sessionStorage.getItem('harvics_currency') || undefined
+    } catch { /* SSR or private browsing */ }
+  }
+  if (!currencyCode) {
+    currencyCode = config.currency
+  }
 
   try {
     return new Intl.NumberFormat(locale, {

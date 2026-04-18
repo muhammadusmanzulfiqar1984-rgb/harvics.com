@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
+import AnimatedStats from '@/components/ui/AnimatedStats'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
@@ -91,18 +92,16 @@ export default async function LocationsPage({ params }: LocationsPageProps) {
 
       {/* Stats */}
       <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
-        <div className="max-w-[1200px] mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          {[
-            { num: '11', label: 'Office Locations' },
-            { num: '5', label: 'Continents' },
-            { num: '40+', label: 'Countries Served' },
-            { num: '24/7', label: 'Global Operations' },
-          ].map((s) => (
-            <div key={s.label}>
-              <div className="text-2xl font-bold text-[#C3A35E]">{s.num}</div>
-              <div className="text-xs text-white/50 mt-1">{s.label}</div>
-            </div>
-          ))}
+        <div className="max-w-[1200px] mx-auto px-4 py-6">
+          <AnimatedStats
+            stats={[
+              { num: '11', label: 'Office Locations' },
+              { num: '5', label: 'Continents' },
+              { num: '42+', label: 'Countries Served' },
+              { num: '24/7', label: 'Global Operations' },
+            ]}
+            containerClassName="grid grid-cols-2 md:grid-cols-4 gap-4 text-center"
+          />
         </div>
       </section>
 

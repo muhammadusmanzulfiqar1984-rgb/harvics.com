@@ -22,8 +22,8 @@ const NestleNewsSection: React.FC = () => {
             </p>
             <Link
               href={`/${locale}/newsletter`}
-              className="inline-block px-4 py-1.5 text-xs font-semibold transition-opacity duration-200 hover:opacity-80"
-              style={{ background: '#6B1F2B', color: '#F5F1E8', letterSpacing: '0.08em' }}
+              className="inline-block px-4 py-1.5 text-xs font-bold transition-all duration-200 hover:opacity-100"
+              style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', color: '#6B1F2B', border: '1px solid #C3A35E', letterSpacing: '0.08em', opacity: 0.85 }}
             >
               {t('signUp') || 'Sign Up'}
             </Link>
@@ -38,8 +38,8 @@ const NestleNewsSection: React.FC = () => {
             </p>
             <Link
               href={`/${locale}/compliance`}
-              className="inline-block px-4 py-1.5 text-xs font-semibold transition-opacity duration-200 hover:opacity-80"
-              style={{ background: '#6B1F2B', color: '#F5F1E8', letterSpacing: '0.08em' }}
+              className="inline-block px-4 py-1.5 text-xs font-bold transition-all duration-200 hover:opacity-100"
+              style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', color: '#6B1F2B', border: '1px solid #C3A35E', letterSpacing: '0.08em', opacity: 0.85 }}
             >
               {t('speakUpButton') || 'Speak Up'}
             </Link>
@@ -54,8 +54,8 @@ const NestleNewsSection: React.FC = () => {
             </p>
             <Link
               href={`/${locale}/contact`}
-              className="inline-block px-4 py-1.5 text-xs font-semibold transition-opacity duration-200 hover:opacity-80"
-              style={{ border: '1px solid #6B1F2B', color: '#6B1F2B', background: 'transparent', letterSpacing: '0.08em' }}
+              className="inline-block px-4 py-1.5 text-xs font-bold transition-all duration-200 hover:opacity-100"
+              style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', color: '#6B1F2B', border: '1px solid #C3A35E', letterSpacing: '0.08em', opacity: 0.85 }}
             >
               {t('contactUsButton') || 'Contact Us'}
             </Link>

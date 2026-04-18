@@ -63,7 +63,7 @@ const APPS = [
       { tier: 'Enterprise', price: 'Custom', seats: 'Unlimited', highlight: true },
     ],
     stats: [
-      { label: 'Countries Supported', value: '40+' },
+      { label: 'Countries Supported', value: '42+' },
       { label: 'Currencies', value: '80+' },
       { label: 'Compliance Frameworks', value: '15+' },
     ],
@@ -649,7 +649,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
           <div className="inline-grid grid-cols-3 divide-x divide-white/10 border border-white/10 bg-white/5">
             {[
               { value: '6', label: 'Apps in Store' },
-              { value: '40+', label: 'Countries' },
+              { value: '42+', label: 'Countries' },
               { value: '1', label: 'Unified Platform' },
             ].map((s) => (
               <div key={s.label} className="px-8 py-4">

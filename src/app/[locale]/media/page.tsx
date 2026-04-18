@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
 import { getTranslations } from 'next-intl/server'
 
+import AnimatedStats from '@/components/ui/AnimatedStats'
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
   return generateLocalizedMetadata(locale, 'media')
@@ -41,7 +43,7 @@ export default async function MediaPage({ params }: MediaPageProps) {
   ]
 
   const highlights = [
-    { num: '40+', label: t('highlights.marketsCovered') },
+    { num: '42+', label: t('highlights.marketsCovered') },
     { num: '10', label: t('highlights.industryVerticals') },
     { num: '2019', label: t('highlights.foundedIn') },
     { num: '38', label: t('highlights.languagesSupported') },
@@ -79,13 +81,11 @@ export default async function MediaPage({ params }: MediaPageProps) {
 
       {/* Key Numbers */}
       <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
-        <div className="max-w-[1200px] mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          {highlights.map((h) => (
-            <div key={h.label}>
-              <div className="text-2xl font-bold text-[#C3A35E]">{h.num}</div>
-              <div className="text-xs text-white/50 mt-1">{h.label}</div>
-            </div>
-          ))}
+        <div className="max-w-[1200px] mx-auto px-4 py-6">
+          <AnimatedStats
+            stats={highlights}
+            containerClassName="grid grid-cols-2 md:grid-cols-4 gap-4 text-center"
+          />
         </div>
       </section>
 

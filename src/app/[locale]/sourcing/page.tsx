@@ -113,7 +113,7 @@ const SOURCING_DATA: SourcingCategory[] = [
   {
     id: 'logistics',
     title: 'Logistics & Distribution',
-    description: 'Seamless global movement of goods — international freight, customs clearance, warehousing, and last-mile delivery across 40+ countries.',
+    description: 'Seamless global movement of goods — international freight, customs clearance, warehousing, and last-mile delivery across 42+ countries.',
     services: [
       {
         title: 'Global Logistics & Distribution',

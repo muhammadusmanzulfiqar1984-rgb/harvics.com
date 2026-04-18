@@ -98,7 +98,7 @@ export default function InvestorLoginForm() {
             />
             <span className="ml-2 text-gray-300">{t('login.rememberMe')}</span>
           </label>
-          <a href="#" className="text-white hover:text-yellow-300 transition-colors">
+          <a href="/en/contact" className="text-white hover:text-yellow-300 transition-colors">
             {t('login.forgotPassword')}
           </a>
         </div>

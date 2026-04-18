@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
 import { getTranslations } from 'next-intl/server'
 
+import AnimatedStats from '@/components/ui/AnimatedStats'
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
   return generateLocalizedMetadata(locale, 'careers')
@@ -38,7 +40,7 @@ export default async function CareersPage({ params }: CareersPageProps) {
 
   const stats = [
     { num: '54+', label: t('stats.openPositions') },
-    { num: '40+', label: t('stats.countries') },
+    { num: '42+', label: t('stats.countries') },
     { num: '10', label: t('stats.industryVerticals') },
     { num: '8', label: t('stats.departmentsHiring') },
   ]
@@ -68,13 +70,11 @@ export default async function CareersPage({ params }: CareersPageProps) {
 
       {/* Stats Bar */}
       <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
-        <div className="max-w-[1200px] mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          {stats.map((s) => (
-            <div key={s.label}>
-              <div className="text-2xl font-bold text-[#C3A35E]">{s.num}</div>
-              <div className="text-xs text-white/50 mt-1">{s.label}</div>
-            </div>
-          ))}
+        <div className="max-w-[1200px] mx-auto px-4 py-6">
+          <AnimatedStats
+            stats={stats}
+            containerClassName="grid grid-cols-2 md:grid-cols-4 gap-4 text-center"
+          />
         </div>
       </section>
 

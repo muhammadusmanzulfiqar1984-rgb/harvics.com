@@ -35,10 +35,10 @@ export default async function PublicationsPage({ params }: PublicationsPageProps
 
   const publications = [
     { year: '2026', title: 'H1 2026 Investor Update', type: 'PDF', category: 'Investor Update', desc: 'Half-year performance summary covering trade volume growth, market expansion, and Harvics OS platform milestones.' },
-    { year: '2025', title: 'Annual Report 2025', type: 'PDF', category: 'Annual Report', desc: 'Comprehensive review of operations across 40+ countries, financial performance, and strategic outlook for 2026.' },
+    { year: '2025', title: 'Annual Report 2025', type: 'PDF', category: 'Annual Report', desc: 'Comprehensive review of operations across 42+ countries, financial performance, and strategic outlook for 2026.' },
     { year: '2025', title: 'ESG & Sustainability Report 2025', type: 'PDF', category: 'ESG Report', desc: 'Environmental, social, and governance performance metrics including carbon footprint, supply chain ethics, and community impact.' },
     { year: '2025', title: 'Technology & AI Platform Overview', type: 'PDF', category: 'Technology', desc: 'Technical overview of Harvics OS — the AI-powered enterprise operating system covering 10 industry verticals and 20 business domains.' },
-    { year: '2024', title: 'Annual Report 2024', type: 'PDF', category: 'Annual Report', desc: 'Year-end review covering expansion to 40+ countries, launch of AI-driven demand forecasting, and multi-language platform deployment.' },
+    { year: '2024', title: 'Annual Report 2024', type: 'PDF', category: 'Annual Report', desc: 'Year-end review covering expansion to 42+ countries, launch of AI-driven demand forecasting, and multi-language platform deployment.' },
     { year: '2024', title: 'Corporate Governance Report 2024', type: 'PDF', category: 'Governance', desc: 'Board composition, committee activities, risk management framework, and compliance programme performance across all jurisdictions.' },
   ]
 

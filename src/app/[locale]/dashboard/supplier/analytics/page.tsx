@@ -5,7 +5,7 @@ import { useCountry } from '@/contexts/CountryContext'
 export default function SupplierAnalytics() {
   const { countryData } = useCountry()
   const currency = countryData?.currency || { symbol: '$', code: 'USD' }
-  // Dummy data for analytics
+  // Analytics data
   const revenueData = [
     { month: 'Jan', revenue: 1800000 },
     { month: 'Feb', revenue: 2200000 },

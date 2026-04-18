@@ -1,38 +1,65 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
 import { getFolderBasedCategories } from '@/data/folderBasedProducts'
+
+function useCountUp(target: number, duration: number, start: boolean) {
+  const [count, setCount] = useState(0)
+  useEffect(() => {
+    if (!start) return
+    let startTime: number | null = null
+    const step = (ts: number) => {
+      if (!startTime) startTime = ts
+      const progress = Math.min((ts - startTime) / duration, 1)
+      const eased = 1 - Math.pow(1 - progress, 3)
+      setCount(Math.floor(eased * target))
+      if (progress < 1) requestAnimationFrame(step)
+    }
+    requestAnimationFrame(step)
+  }, [start, target, duration])
+  return count
+}
 
 const CreativeStatsSection: React.FC = () => {
   const t = useTranslations()
   const locale = useLocale()
   const [isVisible, setIsVisible] = useState(false)
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null)
+  const [statsVisible, setStatsVisible] = useState(false)
+  const statsRef = useRef<HTMLDivElement>(null)
 
   const categories = getFolderBasedCategories()
 
   const stats = [
     { 
-      number: '40+', 
+      number: '42+', 
+      target: 42,
+      suffix: '+',
       label: t('stats.countriesServed'), 
       icon: '🌍',
       color: 'from-red-500 to-red-700'
     },
     { 
-      number: '6', 
+      number: '10', 
+      target: 10,
+      suffix: '',
       label: t('stats.productCategories'), 
       icon: '📦',
       color: 'from-white to-white'
     },
     { 
-      number: '1000+', 
+      number: '1,185+', 
+      target: 1185,
+      suffix: '+',
       label: t('stats.productsDelivered'), 
       icon: '🚚',
       color: 'from-white to-white200'
     },
     { 
       number: '2019', 
+      target: 2019,
+      suffix: '',
       label: t('stats.establishedYear'), 
       icon: '🏢',
       color: 'from-red-500 to-red-700'
@@ -42,6 +69,23 @@ const CreativeStatsSection: React.FC = () => {
   useEffect(() => {
     setIsVisible(true)
   }, [])
+
+  useEffect(() => {
+    const el = statsRef.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setStatsVisible(true); observer.disconnect() } },
+      { threshold: 0.3 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
+  const countCountries = useCountUp(42, 1800, statsVisible)
+  const countCategories = useCountUp(10, 1200, statsVisible)
+  const countProducts = useCountUp(1185, 2000, statsVisible)
+  const countYear = useCountUp(2019, 1600, statsVisible)
+  const animatedNumbers = [countCountries + '+', String(countCategories), countProducts.toLocaleString() + '+', String(countYear)]
 
   return (
     <section className="py-20 px-6 bg-[#F8F9FA] relative overflow-hidden min-h-screen flex items-center">
@@ -110,7 +154,7 @@ const CreativeStatsSection: React.FC = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div ref={statsRef} className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}
@@ -121,7 +165,7 @@ const CreativeStatsSection: React.FC = () => {
             >
               <div className="text-6xl mb-4">{stat.icon}</div>
               <div className="text-4xl font-bold text-[#6B1F2B] mb-2">
-                {stat.number}
+                {animatedNumbers[index]}
               </div>
               <div className="text-gray-600 font-medium">
                 {stat.label}

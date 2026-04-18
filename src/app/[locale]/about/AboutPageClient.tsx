@@ -66,7 +66,7 @@ const verticals = [
 ]
 
 const stats = [
-  { value: '40+', label: 'Countries' },
+  { value: '42+', label: 'Countries' },
   { value: '10', label: 'Industry Verticals' },
   { value: '38', label: 'Languages Supported' },
   { value: '2019', label: 'Founded' },

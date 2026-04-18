@@ -163,7 +163,7 @@ export default function DistributorLoginForm() {
             />
             <span className="ml-2 text-sm text-black">Remember me</span>
           </label>
-          <a href="#" className="text-sm text-[#6B1F2B] hover:text-[#C3A35E] transition-colors duration-300">
+          <a href="/en/contact" className="text-sm text-[#6B1F2B] hover:text-[#C3A35E] transition-colors duration-300">
             Forgot password?
           </a>
         </div>

@@ -54,7 +54,7 @@ export default function InteractiveWorldMap() {
   const timer = useRef<ReturnType<typeof setInterval> | null>(null)
 
   const offices = useCountUp(5, 1200, visible)
-  const markets = useCountUp(50, 1600, visible)
+  const markets = useCountUp(42, 1600, visible)
   const volume = useCountUp(14, 1400, visible)
   const industries = useCountUp(10, 1000, visible)
 

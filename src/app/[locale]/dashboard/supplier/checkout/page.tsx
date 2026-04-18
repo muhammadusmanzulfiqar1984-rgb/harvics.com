@@ -14,7 +14,7 @@ export default function SupplierCheckout() {
   // Get available payment methods for supplier portal
   const availableMethods = getAvailablePaymentMethods('supplier')
   const availableMethodTypes = availableMethods.map(m => m.method)
-  // Dummy cart items for supplier
+  // Cart items for supplier
   const cartItems = [
     {
       id: 1,

@@ -88,7 +88,7 @@ export default function EmployeeLoginForm() {
             />
             <span className="ml-2 text-sm text-black dark:text-gray-300">{t('form.rememberMe')}</span>
           </label>
-          <a href="#" className="text-sm text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors duration-300">
+          <a href="/en/contact" className="text-sm text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors duration-300">
             {t('form.forgotPassword')}
           </a>
         </div>
@@ -115,7 +115,7 @@ export default function EmployeeLoginForm() {
       <div className="mt-6 text-center">
         <p className="text-sm text-black dark:text-black">
           {t('form.noAccount')}{' '}
-          <a href="#" className="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-medium transition-colors duration-300">
+          <a href="/en/contact" className="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-medium transition-colors duration-300">
             {t('form.contactUs')}
           </a>
         </p>

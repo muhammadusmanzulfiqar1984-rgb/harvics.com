@@ -47,7 +47,7 @@ export default async function BrandStoryPage({ params }: BrandStoryPageProps) {
     {
       year: '2023–2024',
       title: 'Intelligence at Scale',
-      text: 'Harvics OS became the nervous system of the business. Six machine learning models went live — demand forecasting, dynamic pricing, territory coverage, SKU optimization, strategy generation, and competitor intelligence. We reached 40+ countries, 38 languages, and deployed AI-driven governance that validates every transaction against legal, budget, and compliance rules before execution.',
+      text: 'Harvics OS became the nervous system of the business. Six machine learning models went live — demand forecasting, dynamic pricing, territory coverage, SKU optimization, strategy generation, and competitor intelligence. We reached 42+ countries, 38 languages, and deployed AI-driven governance that validates every transaction against legal, budget, and compliance rules before execution.',
     },
     {
       year: '2025–2026',

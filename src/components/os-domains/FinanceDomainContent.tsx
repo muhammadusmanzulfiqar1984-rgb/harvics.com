@@ -6,6 +6,7 @@ import GLOverviewContent from '@/components/domains/finance/GLOverviewContent'
 import ARContent from '@/components/domains/finance/ARContent'
 import APContent from '@/components/domains/finance/APContent'
 import CashBankContent from '@/components/domains/finance/CashBankContent'
+import { FinanceAnalyticsCharts } from '@/components/os-domains/DomainAnalyticsCharts'
 
 interface FinanceDomainContentProps {
   persona: 'company' | 'distributor' | 'supplier'
@@ -1056,12 +1057,21 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
     }
   ]
 
+  tier2Modules.unshift({
+    id: 'finance-analytics',
+    label: 'Analytics Dashboard',
+    icon: '',
+    description: 'Finance analytics — cash flow, budget variance, AR/AP trends, department spending',
+    component: <FinanceAnalyticsCharts />,
+    tier3Screens: [{ id: 'finance-charts', label: 'Finance Charts', icon: '', component: <FinanceAnalyticsCharts /> }]
+  })
+
   return (
     <OSDomainTierStructure
       domainId="finance"
       domainName="Finance OS"
       tier2Modules={tier2Modules}
-      defaultModule="general-ledger"
+      defaultModule="finance-analytics"
     />
   )
 }
