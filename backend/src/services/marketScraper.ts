@@ -51,7 +51,7 @@ export class MarketScraper {
       const priceSelector = '.product-sales-price, .value, [data-test="product-price"]'; 
       const nameSelector = '.product-name, [data-test="product-title"]';
 
-      const data = await page.evaluate((pSel, nSel) => {
+      const data = await page.evaluate((pSel: string, nSel: string) => {
         const priceEl = document.querySelector(pSel);
         const nameEl = document.querySelector(nSel);
         

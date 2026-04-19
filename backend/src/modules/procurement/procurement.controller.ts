@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { getProcurementMap } from './procurement.service'
+import { procurementService } from './procurement.service'
 
 const procurementRouter = Router()
 
@@ -9,7 +9,7 @@ procurementRouter.get('/map/:country', (req, res) => {
     return res.status(400).json({ error: 'Country parameter is required' })
   }
 
-  const data = getProcurementMap(country)
+  const data = procurementService.getProcurementMap(country)
   return res.json(data)
 })
 

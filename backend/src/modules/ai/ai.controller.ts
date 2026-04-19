@@ -3,7 +3,7 @@ import { fetchAiStrategy } from './ai.client'
 import { getCountryProfile } from '../localisation/localisation.service'
 import { buildWhiteSpaceReport } from '../satellite/satellite.service'
 import { getTradeFlows } from '../trade/trade.service'
-import { getProcurementMap } from '../procurement/procurement.service'
+import { procurementService } from '../procurement/procurement.service'
 
 const aiRouter = Router()
 
@@ -24,7 +24,7 @@ aiRouter.get('/strategy/:country', async (req, res) => {
     const coverage = buildWhiteSpaceReport(country)
     const whiteSpaceCount = coverage.summary.whiteSpaces
     const tradeFlows = getTradeFlows(country)
-    const procurementMap = getProcurementMap(country)
+    const procurementMap = procurementService.getProcurementMap(country)
 
     const aiResponse = await fetchAiStrategy({
       countryCode: country.toUpperCase(),

@@ -9,7 +9,9 @@ const mockTransaction: IntelligenceContext = {
     productCategory: 'Electronics',
     volume: 5000,
     targetPrice: 100,
-    urgency: 'High'
+    urgency: 'High',
+    jurisdiction: 'AE',
+    useCase: 'BULK_TRADE'
   },
   buyer: {
     buyerId: 'BUY-999',

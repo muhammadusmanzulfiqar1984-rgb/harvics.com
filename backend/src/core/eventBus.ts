@@ -37,7 +37,13 @@ export type DomainEvent =
   // Tier-2: Territory
   | 'territory.assignment.changed' | 'territory.coverage.expanded'
   // Tier-2: Supply Chain
-  | 'supplychain.node.added' | 'supplychain.graph.updated';
+  | 'supplychain.node.added' | 'supplychain.graph.updated'
+  // Finance extended
+  | 'finance.gl.account.created' | 'finance.asset.created' | 'finance.costcenter.created' | 'finance.budget.created'
+  // Inventory extended
+  | 'inventory.batch.created' | 'inventory.location.created' | 'inventory.movement.recorded'
+  // Procurement extended
+  | 'procurement.vendor.created' | 'procurement.rfq.created';
 
 interface EventLog {
   event: DomainEvent;

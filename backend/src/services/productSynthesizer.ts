@@ -1,4 +1,13 @@
-import { IntelligenceNode, RegionalVector } from './intelligenceNode';
+import { IntelligenceNode } from './intelligenceNode';
+
+interface RegionalVector {
+  economic: { purchasingPower: string; gdpPerCapita: number; inflationImpact?: string; taxBurden?: number };
+  competitive: { marketVoidScore: number; topCompetitors: string[]; competitorPrice?: number };
+  cultural: { preferences: string[]; seasonalPeaks: string[] };
+  regulatory: { importRestrictions: string[]; certRequired: string[] };
+  environmental?: { shelfLifeRisk?: string; realTimeTemp?: number };
+  behavioral?: { flavorBias: string[] };
+}
 
 // --- Sovereign Architect: Product Synthesis Engine ---
 // "Market Voids" -> Auto-Generated SKUs -> Margin Protection
@@ -90,7 +99,7 @@ export class ProductSynthesisEngine {
     }
 
     // 4. ENVIRONMENTAL URGENCY (Heat Wave / Scarcity)
-    if (vector.environmental.shelfLifeRisk === 'High') {
+    if (vector.environmental?.shelfLifeRisk === 'High') {
       // High risk = High Reward required
       margin += 0.10;
       if (strategy === 'STANDARD_YIELD') strategy = 'RISK_PREMIUM';
@@ -127,7 +136,7 @@ export class ProductSynthesisEngine {
   }
 
   public static async generateSku(countryCode: string, existingVector?: RegionalVector): Promise<SkuProfile | null> {
-    const vector = existingVector || await IntelligenceNode.analyzeTerritory(countryCode);
+    const vector = existingVector || await (IntelligenceNode as any).analyzeTerritory?.(countryCode) as RegionalVector | null;
     if (!vector) return null;
 
     // 1. Detect Market Void (Lower threshold for aggressive entry)
@@ -147,17 +156,17 @@ export class ProductSynthesisEngine {
     if (['NG', 'GH'].includes(countryCode)) flavor = 'Hibiscus & Chili'; // West Africa
     else if (countryCode === 'GB') flavor = 'Salted Caramel'; // UK
     // Fallback to Behavioral Vector
-    else if (vector.behavioral.flavorBias.includes('spicy')) flavor = 'Fire Chili';
-    else if (vector.behavioral.flavorBias.includes('sweet')) flavor = 'Honey Glaze';
-    else if (vector.behavioral.flavorBias.includes('masala')) flavor = 'Royal Masala';
-    else if (vector.behavioral.flavorBias.includes('herbal')) flavor = 'Botanical Infusion';
+    else if (vector.behavioral?.flavorBias.includes('spicy')) flavor = 'Fire Chili';
+    else if (vector.behavioral?.flavorBias.includes('sweet')) flavor = 'Honey Glaze';
+    else if (vector.behavioral?.flavorBias.includes('masala')) flavor = 'Royal Masala';
+    else if (vector.behavioral?.flavorBias.includes('herbal')) flavor = 'Botanical Infusion';
 
     // --- CORRELATION ENGINE: Weather + Income ---
     // If Weather > 35°C AND Income == "Low" -> Prioritize "Small-Batch Hydration Snacks"
     let productName = `Harvics ${flavor} ${isHighEnd ? 'Selection' : 'Snap'}`;
     let packSize = isHighEnd ? '150g Matte Pouch' : '50g Shiny Sachet';
 
-    if ((vector.environmental.realTimeTemp || 0) > 35 && vector.economic.purchasingPower === 'Low') {
+    if ((vector.environmental?.realTimeTemp || 0) > 35 && vector.economic.purchasingPower === 'Low') {
       productName = `Harvics ${flavor} Hydration Sachet`;
       packSize = '20g Electrolyte Mix';
       console.log(`[${countryCode}] ⚠️ High Heat + Low Income Correlation -> Switching to Hydration SKU`);
@@ -170,8 +179,8 @@ export class ProductSynthesisEngine {
     // 3. AI PRICING ENGINE
     // Base cost assumption (Manufacturing + Logistics)
     const baseMfgCost = isHighEnd ? 1.50 : 0.25; 
-    const logisticsCost = vector.environmental.shelfLifeRisk === 'High' ? (baseMfgCost * 0.20) : (baseMfgCost * 0.10);
-    const totalBaseCost = baseMfgCost + logisticsCost + (baseMfgCost * (vector.economic.taxBurden / 100)); // Add tax to cost base for margin calc
+    const logisticsCost = vector.environmental?.shelfLifeRisk === 'High' ? (baseMfgCost * 0.20) : (baseMfgCost * 0.10);
+    const totalBaseCost = baseMfgCost + logisticsCost + (baseMfgCost * ((vector.economic.taxBurden || 0) / 100)); // Add tax to cost base for margin calc
     
     // Use Real-Time Competitor Price from Intelligence Node (Scraped Data)
     // Fallback to simulation only if scraping failed completely
@@ -200,7 +209,7 @@ export class ProductSynthesisEngine {
         usdtPeg: `${alphaDecision.finalPrice.toFixed(2)} USDT` // 1:1 Peg assumption for simplicity
       },
       passport,
-      reasoning: `Void ${vector.competitive.marketVoidScore}. ${alphaDecision.strategy} triggered by ${vector.economic.inflationImpact} inflation & ${vector.environmental.shelfLifeRisk} risk. ${alphaDecision.integrityNote}`
+      reasoning: `Void ${vector.competitive.marketVoidScore}. ${alphaDecision.strategy} triggered by ${vector.economic.inflationImpact || 'Normal'} inflation & ${vector.environmental?.shelfLifeRisk || 'Normal'} risk. ${alphaDecision.integrityNote}`
     };
   }
 }

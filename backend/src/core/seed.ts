@@ -54,7 +54,7 @@ async function main() {
   for (const o of ordersData) {
     await prisma.order.create({
       data: {
-        customer: o.customer, city: o.city, channel: o.channel,
+        customerName: o.customer, city: o.city, channel: o.channel,
         amount: o.amount, currency: o.currency, status: o.status,
         items: { create: o.items.map(i => ({ sku: i.sku, qty: i.qty, unitPrice: 0 })) },
       },
@@ -163,9 +163,9 @@ async function main() {
   // ── FINANCE: INVOICES ───────────────────────────────────────────
   console.log('🧾 Seeding invoices...');
   const invoicesData = [
-    { invoiceNo: 'INV-2026-001', customer: 'Al Madina Trading', amount: 45000, currency: 'AED', status: 'Unpaid', dueDate: '2026-04-01', type: 'AR' },
-    { invoiceNo: 'INV-2026-002', customer: 'Lahore Wholesale', amount: 32000, currency: 'PKR', status: 'Paid', dueDate: '2026-03-15', type: 'AR' },
-    { invoiceNo: 'INV-2026-003', customer: 'London Retail Ltd', amount: 18500, currency: 'GBP', status: 'Overdue', dueDate: '2026-02-28', type: 'AR' },
+    { invoiceNo: 'INV-2026-001', customerName: 'Al Madina Trading', amount: 45000, currency: 'AED', status: 'Unpaid', dueDate: '2026-04-01', type: 'AR' },
+    { invoiceNo: 'INV-2026-002', customerName: 'Lahore Wholesale', amount: 32000, currency: 'PKR', status: 'Paid', dueDate: '2026-03-15', type: 'AR' },
+    { invoiceNo: 'INV-2026-003', customerName: 'London Retail Ltd', amount: 18500, currency: 'GBP', status: 'Overdue', dueDate: '2026-02-28', type: 'AR' },
   ];
   for (const inv of invoicesData) {
     await prisma.invoice.create({ data: inv });
