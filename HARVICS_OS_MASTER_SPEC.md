@@ -1,6 +1,170 @@
 # HARVICS OS — MASTER SPECIFICATION
-# Last Updated: April 13, 2026 (Session 3 — App Store)
+# Last Updated: April 30, 2026 (Session 10 — Missing Module Domain Completion)
 # READ THIS FIRST. EVERY SESSION. NO EXCEPTIONS.
+
+---
+
+## ✅ LATEST SESSION UPDATE (April 30, 2026)
+
+**TASK COMPLETED:** Remaining missing domain module scaffolding pass
+- **Scope:** Completed major unbuilt domain scaffolds beyond the initial 4-module pass
+- **Frontend Deliverables:**
+  - Added OS domain components:
+    - `src/components/os-domains/TreasuryBankingDomainContent.tsx`
+    - `src/components/os-domains/PaymentsDigitalFinanceDomainContent.tsx`
+    - `src/components/os-domains/MarketingDomainContent.tsx`
+    - `src/components/os-domains/ShippingTradeDomainContent.tsx`
+  - Added OS page routes:
+    - `/[locale]/os/treasury-banking`
+    - `/[locale]/os/payments-digital-finance`
+    - `/[locale]/os/marketing`
+    - `/[locale]/os/shipping-trade`
+  - Updated company Tier-1 navigation in `src/components/shared/PortalOSNavigation.tsx` to include all 4 new modules
+- **Backend Deliverables:**
+  - Extended `backend/src/modules/services/missing-modules.crud.controller.ts` with protected CRUD routers for:
+    - Treasury (`/api/treasury`)
+    - Digital Finance (`/api/digital-finance`)
+    - Marketing (`/api/marketing`)
+    - Shipping & Trade (`/api/shipping-trade`)
+  - Mounted all new routes in `backend/src/routes.ts` with `requireAuthScope + neuralGovernance`
+
+**Validation Note:**
+- Ran `npx tsc --skipLibCheck --noEmit`
+- Result: only one pre-existing frontend error remains in `src/components/ui/MStyleNavigation.tsx` (`SaleMegaMenu` import missing)
+
+---
+
+## ✅ LATEST SESSION UPDATE (April 30, 2026)
+
+**TASK COMPLETED:** Inside-page picture deduplication for confectionery product lines
+- **Scope:** Product image assignments within one high-traffic page data file
+- **Deliverables:**
+  - Replaced repeated Unsplash URLs so each product SKU uses a unique image inside:
+    - `src/app/[locale]/products/confectionery/[productLine]/page.tsx`
+
+**Validation Note:**
+- No TypeScript errors introduced in edited file
+- Duplicate check on this file now shows single-use image URLs only
+
+---
+
+## ✅ LATEST SESSION UPDATE (April 30, 2026)
+
+**TASK COMPLETED:** Escalated image deduplication across shared maps and page heroes
+- **Scope:** High-frequency Unsplash duplicates in shared image dictionaries and repeated page hero references
+- **Deliverables:**
+  - Rebalanced image mappings in `src/components/ui/SmartImage.tsx` for finance/AI/logistics/industrial/oil-gas keyword clusters
+  - Rebalanced image mappings in `src/data/productCatalog.ts` for analytics/integration/API/reporting/finance clusters
+  - Replaced repeated hero images in:
+    - `src/app/[locale]/history/page.tsx`
+    - `src/app/[locale]/leadership/page.tsx`
+    - `src/app/[locale]/sourcing/page.tsx`
+    - `src/app/[locale]/compliance/page.tsx`
+    - `src/app/[locale]/help/page.tsx`
+    - `src/app/[locale]/apps/AppsPageClient.tsx`
+
+**Validation Note:**
+- No TypeScript errors introduced in edited files
+- Duplicate concentration reduced from peak overuse (single URL count 16) down to 10 in latest scan
+
+---
+
+## ✅ LATEST SESSION UPDATE (April 30, 2026)
+
+**TASK COMPLETED:** Final pictures and content production pass before go-live
+- **Scope:** Shared UI map template plus centralized image mapping sources
+- **Deliverables:**
+  - Replaced remaining map shell fallback copy in `src/components/portals/templates/MapTemplate.tsx` with production-safe operational guidance content
+  - Diversified repeated keyword image mappings in `src/components/ui/SmartImage.tsx`
+  - Diversified repeated keyword image mappings and default fallback visual in `src/data/productCatalog.ts`
+  - Verified no remaining `coming soon` text in `src/app` and `src/components`
+
+**Validation Note:**
+- No TypeScript errors introduced in edited files:
+  - `src/components/portals/templates/MapTemplate.tsx`
+  - `src/components/ui/SmartImage.tsx`
+  - `src/data/productCatalog.ts`
+
+---
+
+## ✅ LATEST SESSION UPDATE (April 30, 2026)
+
+**TASK COMPLETED:** Missing module scaffolding for easiest Tier-1 gaps
+- **Scope:** Added production scaffolds for Manufacturing, Quality Management, Project Management, and Financial Planning & BI
+- **Backend Deliverables:**
+  - Added protected CRUD routers with summaries for 4 modules via `backend/src/modules/services/missing-modules.crud.controller.ts`
+  - Mounted routes in `backend/src/routes.ts` under:
+    - `/api/manufacturing`
+    - `/api/quality`
+    - `/api/projects`
+    - `/api/bi`
+  - All routes are guarded with `requireAuthScope + neuralGovernance`
+- **Frontend Deliverables:**
+  - Added OS domain components:
+    - `src/components/os-domains/ManufacturingDomainContent.tsx`
+    - `src/components/os-domains/QualityDomainContent.tsx`
+    - `src/components/os-domains/ProjectManagementDomainContent.tsx`
+    - `src/components/os-domains/FinancialPlanningBIDomainContent.tsx`
+  - Added OS page routes:
+    - `/[locale]/os/manufacturing`
+    - `/[locale]/os/quality`
+    - `/[locale]/os/project-management`
+    - `/[locale]/os/financial-planning-bi`
+  - Updated sidebar navigation in `src/components/shared/PortalOSNavigation.tsx`
+    - Added new company Tier-1 links for all 4 modules
+    - Updated supplier quality link from `/os/inventory` to `/os/quality`
+
+**Validation Note:**
+- Ran `npx tsc --skipLibCheck --noEmit`
+- Result: only one pre-existing frontend error remains in `src/components/ui/MStyleNavigation.tsx` (`SaleMegaMenu` import missing)
+
+---
+
+## ✅ LATEST SESSION UPDATE (April 29, 2026)
+
+## ✅ LATEST SESSION UPDATE (April 30, 2026)
+
+**TASK COMPLETED:** Full UI remediation pass for placeholder content and repeated imagery
+- **Scope:** Critical and medium-priority UI pages in `src/app/[locale]` plus shared image mapping assets
+- **Deliverables:**
+  - Replaced placeholder and shell copy in Global Map and OS dashboards with contextual production content
+  - Removed all `coming soon` strings from page-level app routes
+  - Added meaningful operational content blocks to Competitor, Logistics, GPS, Finance Reconciliation, and Product Line UI states
+  - Reduced duplicate Unsplash usage by diversifying keyword image mappings in shared catalog/image lookup files
+
+**Key Results:**
+- Global map route now contains full context sections instead of map-only shell
+- OS pages no longer present placeholder `coming soon` messaging in audited routes
+- Reconciliation and GPS map sections now show data-driven status and action guidance
+- Shared image mappings now use broader, domain-aligned visual variety to reduce repeated image collisions
+
+**Validation Note:**
+- Frontend TypeScript check reports one unrelated pre-existing error in `src/components/ui/MStyleNavigation.tsx` (missing `SaleMegaMenu` module)
+
+---
+
+## ✅ LATEST SESSION UPDATE (April 29, 2026)
+
+**TASK COMPLETED:** Comprehensive UI Structure Audit
+- **Scope:** All 189 pages in src/app/[locale] analyzed
+- **Duration:** 1 session
+- **Deliverables:** 
+  - UI_STRUCTURE_AUDIT_REPORT.md (600+ lines, comprehensive analysis)
+  - AUDIT_QUICK_REFERENCE.md (action checklist + timeline)
+  - PAGE_AUDIT_DETAILED.csv (spreadsheet with all pages)
+  - AUDIT_EXECUTIVE_SUMMARY.md (executive overview)
+
+**Key Findings:**
+- Overall Grade: 6.5/10 (Good foundation, content gaps)
+- 24 CRITICAL pages (empty/shell - 12.7%)
+- 4 HIGH pages (TODO markers - 2.1%)
+- 21 MEDIUM pages (placeholder content - 11.1%)
+- 47+ MEDIUM pages (duplicate content - 25%)
+- 0 broken images (100% healthy)
+- 87.3% pages have proper headings
+
+**Recommended Timeline:** 6 weeks to production-ready
+**Next Focus:** Address CRITICAL issues, consolidate duplicates, integrate payment gateways
 
 ---
 

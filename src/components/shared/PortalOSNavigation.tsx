@@ -42,7 +42,11 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
     if (portal === 'company') {
       return [
         ...commonDomains,
+        { id: 'treasury-banking', label: 'Treasury & Banking', icon: '🏦', path: `/os/treasury-banking`, tier: '1' },
+        { id: 'payments-digital-finance', label: 'Payments & Digital Finance', icon: '💳', path: `/os/payments-digital-finance`, tier: '1' },
+        { id: 'marketing', label: 'Marketing', icon: '📣', path: `/os/marketing`, tier: '1' },
         { id: 'logistics', label: 'Logistics', icon: '🚚', path: `/os/logistics`, tier: '1' },
+        { id: 'shipping-trade', label: 'Shipping & Trade', icon: '🚢', path: `/os/shipping-trade`, tier: '1' },
         { id: 'hr', label: 'HR', icon: '👔', path: `/os/hr`, tier: '1' },
         { id: 'executive', label: 'Executive', icon: '🎯', path: `/os/executive`, tier: '1' },
         { id: 'legal', label: 'Legal/IPR', icon: '⚖️', path: `/os/legal`, tier: '1' },
@@ -51,6 +55,10 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
         { id: 'gps-tracking', label: 'GPS Tracking', icon: '📍', path: `/os/gps-tracking`, tier: '1' },
         { id: 'investor-relations', label: 'Investor Relations', icon: '📈', path: `/os/investor-relations`, tier: '1' },
         { id: 'workflows', label: 'Workflows', icon: '⚙️', path: `/os/workflows`, tier: '1' },
+        { id: 'manufacturing', label: 'Manufacturing', icon: '🏗️', path: `/os/manufacturing`, tier: '1' },
+        { id: 'quality', label: 'Quality Management', icon: '🧪', path: `/os/quality`, tier: '1' },
+        { id: 'project-management', label: 'Project Management', icon: '📐', path: `/os/project-management`, tier: '1' },
+        { id: 'financial-planning-bi', label: 'Financial Planning & BI', icon: '📊', path: `/os/financial-planning-bi`, tier: '1' },
         { id: 'market-distribution', label: 'Market & Distribution', icon: '📦', path: `/os/market-distribution`, tier: '1' },
         { id: 'supplier-procurement', label: 'Supplier & Procurement', icon: '🏭', path: `/os/supplier-procurement`, tier: '1' }
       ]
@@ -64,7 +72,7 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
       return [
         ...commonDomains.filter(d => d.id !== 'crm'), // Suppliers don't need CRM
         { id: 'procurement', label: 'Procurement', icon: '🏭', path: `/os/supplier-procurement`, tier: '1' },
-        { id: 'quality', label: 'Quality Control', icon: '✅', path: `/os/inventory`, tier: '1' }
+        { id: 'quality', label: 'Quality Control', icon: '✅', path: `/os/quality`, tier: '1' }
       ]
     }
   }

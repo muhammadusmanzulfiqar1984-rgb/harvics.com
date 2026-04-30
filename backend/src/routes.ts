@@ -35,6 +35,16 @@ import crmCrudRouter from './modules/crm/crm.crud.controller';
 import hrCrudRouter from './modules/hr/hr.crud.controller';
 import logisticsCrudRouter from './modules/logistics/logistics.crud.controller';
 import procurementCrudRouter from './modules/procurement/procurement.crud.controller';
+import {
+  manufacturingCrudRouter,
+  qualityCrudRouter,
+  projectManagementCrudRouter,
+  biCrudRouter,
+  treasuryCrudRouter,
+  digitalFinanceCrudRouter,
+  marketingCrudRouter,
+  shippingTradeCrudRouter,
+} from './modules/services/missing-modules.crud.controller';
 import intelligenceRouter from './modules/intelligence/intelligence.controller';
 import servicesRouter from './modules/services/services.controller';
 
@@ -230,6 +240,14 @@ router.use('/crm',              requireAuthScope, neuralGovernance, crmCrudRoute
 router.use('/hr',               requireAuthScope, neuralGovernance, hrCrudRouter);
 router.use('/logistics',        requireAuthScope, neuralGovernance, logisticsCrudRouter);
 router.use('/procurement-crud', requireAuthScope, neuralGovernance, procurementCrudRouter);
+router.use('/manufacturing',    requireAuthScope, neuralGovernance, manufacturingCrudRouter);
+router.use('/quality',          requireAuthScope, neuralGovernance, qualityCrudRouter);
+router.use('/projects',         requireAuthScope, neuralGovernance, projectManagementCrudRouter);
+router.use('/bi',               requireAuthScope, neuralGovernance, biCrudRouter);
+router.use('/treasury',         requireAuthScope, neuralGovernance, treasuryCrudRouter);
+router.use('/digital-finance',  requireAuthScope, neuralGovernance, digitalFinanceCrudRouter);
+router.use('/marketing',        requireAuthScope, neuralGovernance, marketingCrudRouter);
+router.use('/shipping-trade',   requireAuthScope, neuralGovernance, shippingTradeCrudRouter);
 
 // ── AI INTELLIGENCE ROUTES (PROTECTED - AUTH REQUIRED) ───────────────
 router.use('/intelligence', requireAuthScope, intelligenceRouter);
