@@ -24,6 +24,7 @@ import { auditLogRouter } from './modules/admin/auditLog.controller';
 import { commsRouter } from './modules/comms/comms.controller';
 import { notificationService } from './modules/comms/notification.service';
 import { eventBus } from './core/eventBus';
+import { customersDb, leadsDb, employeesDb } from './core/db';
 
 // In-memory demo store for command-center Orders CRUD (no DB dependency)
 type DemoOrder = {
@@ -1099,155 +1100,168 @@ router.patch('/modules/demo/vendor-invoices/:id/pay', (req: Request, res: Respon
 // In-memory + persisted to demo-store.json. No auth (demo workspace only).
 // ════════════════════════════════════════════════════════════════════════════
 
-// ── HR: Employees ───────────────────────────────────────────────────────────
-router.get('/modules/demo/employees', (_req: Request, res: Response) => {
-  return res.json({ success: true, data: [...demoEmployeesStore].reverse(), total: demoEmployeesStore.length });
+// ── HR: Employees (Prisma-backed) ───────────────────────────────────────────
+const mapEmployee = (e: any) => e ? { ...e, role: e.position || 'Staff', hiredAt: e.joinDate || e.createdAt?.toISOString?.() || new Date().toISOString() } : e;
+
+router.get('/modules/demo/employees', async (_req: Request, res: Response) => {
+  try {
+    const result = await employeesDb.list({}, 1, 1000);
+    return res.json({ success: true, data: result.data.map(mapEmployee), total: result.total });
+  } catch (err: any) {
+    return res.status(500).json({ success: false, error: err?.message || 'db error' });
+  }
 });
 
-router.post('/modules/demo/employees', (req: Request, res: Response) => {
+router.post('/modules/demo/employees', async (req: Request, res: Response) => {
   const p = req.body || {};
   if (!p.name || !p.role) {
     return res.status(400).json({ success: false, error: 'name and role are required' });
   }
-  const emp: DemoEmployee = {
-    id: newEmployeeId(),
-    name: String(p.name),
-    role: String(p.role),
-    department: String(p.department || 'General'),
-    salary: Number(p.salary) || 0,
-    currency: String(p.currency || 'USD'),
-    status: (p.status as DemoEmployee['status']) || 'Active',
-    hiredAt: new Date().toISOString(),
-  };
-  demoEmployeesStore.push(emp);
-  logWorkflow('hr.employee.hired', `${emp.name} hired as ${emp.role} (${emp.department})`, emp.id);
-  eventBus.emit('hr.employee.hired', emp);
-  persistStore();
-  return res.status(201).json({ success: true, data: emp });
+  try {
+    const emp = await employeesDb.create({
+      name: String(p.name),
+      position: String(p.role),
+      department: String(p.department || 'General'),
+      salary: Number(p.salary) || 0,
+      currency: String(p.currency || 'USD'),
+      status: String(p.status || 'Active'),
+      joinDate: new Date().toISOString(),
+    });
+    logWorkflow('hr.employee.hired', `${emp.name} hired as ${p.role} (${emp.department})`, emp.id);
+    eventBus.emit('hr.employee.hired', emp);
+    return res.status(201).json({ success: true, data: mapEmployee(emp) });
+  } catch (err: any) {
+    return res.status(500).json({ success: false, error: err?.message || 'db error' });
+  }
 });
 
-router.patch('/modules/demo/employees/:id', (req: Request, res: Response) => {
-  const emp = demoEmployeesStore.find(e => e.id === req.params.id);
-  if (!emp) return res.status(404).json({ success: false, error: 'employee not found' });
+router.patch('/modules/demo/employees/:id', async (req: Request, res: Response) => {
   const p = req.body || {};
-  if (p.status) emp.status = p.status;
-  if (typeof p.salary === 'number') emp.salary = p.salary;
-  if (p.role) emp.role = String(p.role);
-  if (p.department) emp.department = String(p.department);
-  logWorkflow('hr.employee.updated', `${emp.name} updated (${emp.status}, ${emp.role})`, emp.id);
-  persistStore();
-  return res.json({ success: true, data: emp });
+  const patch: any = {};
+  if (p.status) patch.status = String(p.status);
+  if (typeof p.salary === 'number') patch.salary = p.salary;
+  if (p.role) patch.position = String(p.role);
+  if (p.department) patch.department = String(p.department);
+  const updated = await employeesDb.update(req.params.id, patch);
+  if (!updated) return res.status(404).json({ success: false, error: 'employee not found' });
+  logWorkflow('hr.employee.updated', `${updated.name} updated (${updated.status}, ${updated.position})`, updated.id);
+  return res.json({ success: true, data: mapEmployee(updated) });
 });
 
-router.delete('/modules/demo/employees/:id', (req: Request, res: Response) => {
-  const idx = demoEmployeesStore.findIndex(e => e.id === req.params.id);
-  if (idx === -1) return res.status(404).json({ success: false, error: 'employee not found' });
-  const [removed] = demoEmployeesStore.splice(idx, 1);
-  logWorkflow('hr.employee.terminated', `${removed.name} removed from roster`, removed.id);
-  persistStore();
-  return res.json({ success: true, data: removed });
+router.delete('/modules/demo/employees/:id', async (req: Request, res: Response) => {
+  const existing = await employeesDb.get(req.params.id);
+  if (!existing) return res.status(404).json({ success: false, error: 'employee not found' });
+  await employeesDb.delete(req.params.id);
+  logWorkflow('hr.employee.terminated', `${existing.name} removed from roster`, existing.id);
+  return res.json({ success: true, data: mapEmployee(existing) });
 });
 
-// ── CRM: Customers ──────────────────────────────────────────────────────────
-router.get('/modules/demo/customers', (_req: Request, res: Response) => {
-  return res.json({ success: true, data: [...demoCustomersStore].reverse(), total: demoCustomersStore.length });
+// ── CRM: Customers (Prisma-backed) ──────────────────────────────────────────
+const mapCustomer = (c: any) => c ? { ...c, company: c.name, ltv: c.lifetimeValue || 0, currency: 'USD' } : c;
+
+router.get('/modules/demo/customers', async (_req: Request, res: Response) => {
+  try {
+    const result = await customersDb.list({}, 1, 1000);
+    return res.json({ success: true, data: result.data.map(mapCustomer), total: result.total });
+  } catch (err: any) {
+    return res.status(500).json({ success: false, error: err?.message || 'db error' });
+  }
 });
 
-router.post('/modules/demo/customers', (req: Request, res: Response) => {
+router.post('/modules/demo/customers', async (req: Request, res: Response) => {
   const p = req.body || {};
   if (!p.name || !p.company) {
     return res.status(400).json({ success: false, error: 'name and company are required' });
   }
-  const c: DemoCustomer = {
-    id: newCustomerId(),
-    name: String(p.name),
-    company: String(p.company),
-    country: String(p.country || 'AE'),
-    segment: String(p.segment || 'Retail'),
-    ltv: Number(p.ltv) || 0,
-    currency: String(p.currency || 'USD'),
-    createdAt: new Date().toISOString(),
-  };
-  demoCustomersStore.push(c);
-  logWorkflow('crm.customer.created', `Customer ${c.company} added (${c.segment})`, c.id);
-  persistStore();
-  return res.status(201).json({ success: true, data: c });
+  try {
+    const c = await customersDb.create({
+      name: String(p.company),
+      segment: String(p.segment || 'Retail'),
+      country: String(p.country || 'AE'),
+      lifetimeValue: Number(p.ltv) || 0,
+      contactEmail: String(p.name),
+    }, 'crm.customer.created');
+    logWorkflow('crm.customer.created', `Customer ${c.name} added (${c.segment})`, c.id);
+    return res.status(201).json({ success: true, data: mapCustomer(c) });
+  } catch (err: any) {
+    return res.status(500).json({ success: false, error: err?.message || 'db error' });
+  }
 });
 
-router.delete('/modules/demo/customers/:id', (req: Request, res: Response) => {
-  const idx = demoCustomersStore.findIndex(c => c.id === req.params.id);
-  if (idx === -1) return res.status(404).json({ success: false, error: 'customer not found' });
-  const [removed] = demoCustomersStore.splice(idx, 1);
-  logWorkflow('crm.customer.deleted', `Customer ${removed.company} removed`, removed.id);
-  persistStore();
-  return res.json({ success: true, data: removed });
+router.delete('/modules/demo/customers/:id', async (req: Request, res: Response) => {
+  const existing = await customersDb.get(req.params.id);
+  if (!existing) return res.status(404).json({ success: false, error: 'customer not found' });
+  await customersDb.delete(req.params.id);
+  logWorkflow('crm.customer.deleted', `Customer ${existing.name} removed`, existing.id);
+  return res.json({ success: true, data: mapCustomer(existing) });
 });
 
-// ── CRM: Leads (with stage transition + auto-convert on Won) ────────────────
-router.get('/modules/demo/leads', (_req: Request, res: Response) => {
-  return res.json({ success: true, data: [...demoLeadsStore].reverse(), total: demoLeadsStore.length });
+// ── CRM: Leads (Prisma-backed, with stage transition + auto-convert on Won) ─
+const mapLead = (l: any) => l ? { ...l, name: l.contact || l.company, currency: 'USD', owner: 'Unassigned' } : l;
+
+router.get('/modules/demo/leads', async (_req: Request, res: Response) => {
+  try {
+    const result = await leadsDb.list({}, 1, 1000);
+    return res.json({ success: true, data: result.data.map(mapLead), total: result.total });
+  } catch (err: any) {
+    return res.status(500).json({ success: false, error: err?.message || 'db error' });
+  }
 });
 
-router.post('/modules/demo/leads', (req: Request, res: Response) => {
+router.post('/modules/demo/leads', async (req: Request, res: Response) => {
   const p = req.body || {};
   if (!p.name || !p.company) {
     return res.status(400).json({ success: false, error: 'name and company are required' });
   }
-  const lead: DemoLead = {
-    id: newLeadId(),
-    name: String(p.name),
-    company: String(p.company),
-    source: String(p.source || 'Inbound'),
-    stage: (p.stage as DemoLead['stage']) || 'New',
-    value: Number(p.value) || 0,
-    currency: String(p.currency || 'USD'),
-    owner: String(p.owner || 'Unassigned'),
-    createdAt: new Date().toISOString(),
-  };
-  demoLeadsStore.push(lead);
-  logWorkflow('crm.lead.created', `Lead ${lead.company} (${lead.stage}) — ${lead.currency} ${lead.value.toLocaleString()}`, lead.id);
-  persistStore();
-  return res.status(201).json({ success: true, data: lead });
+  try {
+    const lead = await leadsDb.create({
+      company: String(p.company),
+      contact: String(p.name),
+      email: String(p.email || ''),
+      source: String(p.source || 'Inbound'),
+      stage: String(p.stage || 'Lead'),
+      value: Number(p.value) || 0,
+    }, 'crm.lead.created');
+    logWorkflow('crm.lead.created', `Lead ${lead.company} (${lead.stage}) — USD ${(lead.value || 0).toLocaleString()}`, lead.id);
+    return res.status(201).json({ success: true, data: mapLead(lead) });
+  } catch (err: any) {
+    return res.status(500).json({ success: false, error: err?.message || 'db error' });
+  }
 });
 
-router.patch('/modules/demo/leads/:id/stage', (req: Request, res: Response) => {
-  const lead = demoLeadsStore.find(l => l.id === req.params.id);
+router.patch('/modules/demo/leads/:id/stage', async (req: Request, res: Response) => {
+  const lead = await leadsDb.get(req.params.id);
   if (!lead) return res.status(404).json({ success: false, error: 'lead not found' });
-  const stage = String(req.body?.stage || '') as DemoLead['stage'];
-  const valid: DemoLead['stage'][] = ['New', 'Qualified', 'Proposal', 'Won', 'Lost'];
+  const stage = String(req.body?.stage || '');
+  const valid = ['New', 'Lead', 'Qualified', 'Proposal', 'Negotiation', 'Won', 'Lost'];
   if (!valid.includes(stage)) return res.status(400).json({ success: false, error: 'invalid stage' });
   const prev = lead.stage;
-  lead.stage = stage;
-  logWorkflow('crm.lead.stage', `Lead ${lead.company}: ${prev} → ${stage}`, lead.id);
+  const updated = await leadsDb.update(req.params.id, { stage });
+  if (!updated) return res.status(500).json({ success: false, error: 'update failed' });
+  logWorkflow('crm.lead.stage', `Lead ${updated.company}: ${prev} → ${stage}`, updated.id);
 
   // Auto-convert on Won
-  let convertedCustomer: DemoCustomer | null = null;
+  let convertedCustomer: any = null;
   if (stage === 'Won' && prev !== 'Won') {
-    convertedCustomer = {
-      id: newCustomerId(),
-      name: lead.name,
-      company: lead.company,
-      country: 'AE',
+    convertedCustomer = await customersDb.create({
+      name: updated.company,
       segment: 'Converted Lead',
-      ltv: lead.value,
-      currency: lead.currency,
-      createdAt: new Date().toISOString(),
-    };
-    demoCustomersStore.push(convertedCustomer);
-    logWorkflow('crm.lead.converted', `Lead ${lead.id} converted → customer ${convertedCustomer.id}`, lead.id);
-    eventBus.emit('crm.lead.won', lead);
+      country: 'AE',
+      lifetimeValue: updated.value || 0,
+      contactEmail: updated.contact || updated.email || '',
+    }, 'crm.customer.created');
+    logWorkflow('crm.lead.converted', `Lead ${updated.id} converted → customer ${convertedCustomer.id}`, updated.id);
+    eventBus.emit('crm.lead.won', updated);
   }
-  persistStore();
-  return res.json({ success: true, data: lead, customer: convertedCustomer });
+  return res.json({ success: true, data: mapLead(updated), customer: convertedCustomer ? mapCustomer(convertedCustomer) : null });
 });
 
-router.delete('/modules/demo/leads/:id', (req: Request, res: Response) => {
-  const idx = demoLeadsStore.findIndex(l => l.id === req.params.id);
-  if (idx === -1) return res.status(404).json({ success: false, error: 'lead not found' });
-  const [removed] = demoLeadsStore.splice(idx, 1);
-  logWorkflow('crm.lead.deleted', `Lead ${removed.company} removed`, removed.id);
-  persistStore();
-  return res.json({ success: true, data: removed });
+router.delete('/modules/demo/leads/:id', async (req: Request, res: Response) => {
+  const existing = await leadsDb.get(req.params.id);
+  if (!existing) return res.status(404).json({ success: false, error: 'lead not found' });
+  await leadsDb.delete(req.params.id);
+  logWorkflow('crm.lead.deleted', `Lead ${existing.company} removed`, existing.id);
+  return res.json({ success: true, data: mapLead(existing) });
 });
 
 // ── Finance: General Ledger ─────────────────────────────────────────────────
