@@ -14,7 +14,11 @@ const portals = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
       </svg>
     ),
-    actions: ['Browse Products', 'Request Sample', 'Get Quote'],
+    actions: [
+      { label: 'Browse Products', href: '/products' },
+      { label: 'Request Sample', href: '/contact?topic=sample' },
+      { label: 'Get Quote', href: '/contact?topic=quote' },
+    ],
     href: '/products',
     gradient: 'linear-gradient(135deg, #C3A35E 0%, #E5C07B 100%)',
     bg: 'rgba(195,163,94,0.05)',
@@ -31,7 +35,11 @@ const portals = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
       </svg>
     ),
-    actions: ['View Portal', 'Territory Map', 'Apply Now'],
+    actions: [
+      { label: 'View Portal', href: '/portal/distributor' },
+      { label: 'Territory Map', href: '/portal/distributor/retailers' },
+      { label: 'Apply Now', href: '/login/distributor' },
+    ],
     href: '/portal/distributor',
     gradient: 'linear-gradient(135deg, #6B1F2B 0%, #9B3A4B 100%)',
     bg: 'rgba(107,31,43,0.05)',
@@ -47,7 +55,11 @@ const portals = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
       </svg>
     ),
-    actions: ['Supplier Portal', 'Submit RFQ', 'List Products'],
+    actions: [
+      { label: 'Supplier Portal', href: '/portal/supplier' },
+      { label: 'Submit RFQ', href: '/portal/supplier/rfqs' },
+      { label: 'List Products', href: '/portal/supplier/pos' },
+    ],
     href: '/portal/supplier',
     gradient: 'linear-gradient(135deg, #2563EB 0%, #60A5FA 100%)',
     bg: 'rgba(37,99,235,0.04)',
@@ -179,7 +191,7 @@ const AudienceRoutingSection: React.FC = () => {
                   {portal.actions.map((action, j) => (
                     <Link
                       key={j}
-                      href={`/${locale}${portal.href}`}
+                      href={`/${locale}${action.href}`}
                       style={{
                         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
                         padding: '8px 12px',
@@ -194,7 +206,7 @@ const AudienceRoutingSection: React.FC = () => {
                         transition: 'all 0.25s ease',
                       }}
                     >
-                      {action}
+                      {action.label}
                       <svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                       </svg>

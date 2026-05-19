@@ -12,52 +12,104 @@ interface Product {
   name: string
   category: string
   image: string
+  emoji?: string
   description: string
   features: string[]
 }
 
 const products: Product[] = [
+  // ── FMCG (real product photography) ──
   {
     name: 'Premium Fusilli',
-    category: 'Pasta',
+    category: 'FMCG · Pasta',
     image: '/FMCG IMAGES/Pastas/fusilli -1.png',
     description: 'Artisan spiral pasta crafted from finest durum wheat semolina with traditional bronze die extrusion.',
     features: ['Bronze Die Cut', 'Slow Dried', '100% Durum'],
   },
   {
     name: 'BearPops Gummy',
-    category: 'Confectionary',
+    category: 'FMCG · Confectionary',
     image: '/FMCG IMAGES/Confectionary/Jelly/bearpops.jpg',
     description: 'Playful bear-shaped jelly pops in vibrant natural fruit flavors kids love.',
     features: ['Natural Flavors', 'Halal Certified', 'Fun Shapes'],
   },
   {
     name: 'Wafer Bars',
-    category: 'Bakery',
+    category: 'FMCG · Bakery',
     image: '/FMCG IMAGES/Bakery/Wafer and Wafer Bars/wafer -1.png',
     description: 'Crispy multi-layered wafers with rich chocolate and hazelnut cream filling.',
     features: ['Multi-Layer', 'Real Chocolate', 'Hazelnut Cream'],
   },
   {
     name: 'Crispy Chips',
-    category: 'Snacks',
+    category: 'FMCG · Snacks',
     image: '/FMCG IMAGES/Snacks/Chips and Crisps/chips and crisp.png',
     description: 'Golden thin-cut potato crisps seasoned with premium spice blends.',
     features: ['Thin Sliced', 'Premium Spice', 'Small Batch'],
   },
+  // ── Other 9 HARVICS verticals — using real photography from /public/Industries Picture & /public/Images ──
   {
-    name: 'Bucatini',
-    category: 'Pasta',
-    image: '/FMCG IMAGES/Pastas/bucatini -1.png',
-    description: 'Traditional hollow long pasta, perfect for rich and hearty Italian sauces.',
-    features: ['Hollow Core', 'Traditional Cut', 'Al Dente Perfect'],
+    name: 'Industrial Solutions',
+    category: 'Industrial',
+    image: '/Industries Picture/Industrial Solutions.jpg',
+    description: 'Heavy-duty machinery, valves, chemicals and PPE for refineries, plants and factories across 22 markets.',
+    features: ['ISO 9001', 'API 6D', '316 Stainless'],
   },
   {
-    name: 'Farfalle',
-    category: 'Pasta',
-    image: '/FMCG IMAGES/Pastas/farfalle -1.png',
-    description: 'Elegant bow-tie pasta, ideal for light cream and fresh vegetable dishes.',
-    features: ['Bow-Tie Shape', 'Versatile', 'Elegant Plating'],
+    name: 'Premium Textiles',
+    category: 'Textiles',
+    image: '/Industries Picture/Textile.jpg',
+    description: 'Sustainably sourced cotton, denim and home textiles shipped to 28 markets in standard or custom GSM.',
+    features: ['BCI Cotton', 'OEKO-TEX', 'Custom GSM'],
+  },
+  {
+    name: 'Oil & Gas',
+    category: 'Energy · Oil',
+    image: '/Industries Picture/Oil and Gas .jpg',
+    description: 'Upstream, midstream and downstream oil & gas trading — crude, refined fuels and petrochemical feedstocks.',
+    features: ['ISO 8217', 'BL Tracked', 'Bonded Tank'],
+  },
+  {
+    name: 'Agro Commodities',
+    category: 'Agro · Commodities',
+    image: '/Industries Picture/Commodities .jpg',
+    description: 'Wheat, rice, sugar and pulses sourced direct from farms — bulk shipments with full lab certification.',
+    features: ['Origin Audited', 'Lab Tested', 'Bulk / Bagged'],
+  },
+  {
+    name: 'Minerals & Metals',
+    category: 'Trading House',
+    image: '/Industries Picture/Minerals.jpg',
+    description: 'Precious metals, energy minerals and industrial resources traded through HARVICS Trading House.',
+    features: ['LBMA Good', 'Origin Audit', 'Vault Stored'],
+  },
+  {
+    name: 'IT & Technology',
+    category: 'Tech',
+    image: '/Industries Picture/IT.jpg',
+    description: 'Enterprise IT, smart logistics platforms and IoT-tracked sourcing across all HARVICS verticals.',
+    features: ['Real-Time GPS', 'Multi-modal', 'API First'],
+  },
+  {
+    name: 'Sourcing Solutions',
+    category: 'Sourcing',
+    image: '/Industries Picture/Sourcing.jpg',
+    description: 'Global sourcing, supplier qualification and quality control across 38 markets and 95+ product lines.',
+    features: ['Audited Mills', 'QC On-Site', '38 Markets'],
+  },
+  {
+    name: 'Real Estate',
+    category: 'Construction',
+    image: '/Industries Picture/Real Estate.jpg',
+    description: 'OPC, PPC and white cement, structural steel and finishing materials for large-scale EPC projects.',
+    features: ['EN 197-1', 'Grade 53', 'EPC Ready'],
+  },
+  {
+    name: 'Trade Finance',
+    category: 'Finance · Trading House',
+    image: '/Industries Picture/Finance.jpg',
+    description: 'Trade finance, LC issuance and treasury services that move HARVICS commerce across the globe.',
+    features: ['LC / DA', 'Multi-Currency', 'Bank-Backed'],
   },
 ]
 
@@ -144,41 +196,34 @@ const Interactive3DProductViewer: React.FC = () => {
       ref={sectionRef}
       onMouseMove={handleSectionMouse}
       className="relative h-full overflow-hidden flex flex-col justify-center"
-      style={{ background: 'linear-gradient(180deg, #ffffff 0%, #faf9f7 40%, #f5f4f2 70%, #ffffff 100%)' }}
+      style={{ background: 'linear-gradient(160deg, #ffffff 0%, #fdfcfa 40%, #f7f4ef 70%, #fdfcfa 100%)' }}
     >
-      {/* Decorative ambient orbs */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div
-          className="absolute w-[700px] h-[700px] rounded-full blur-[160px] opacity-[0.07]"
-          style={{
-            background: 'radial-gradient(circle, #C3A35E 0%, transparent 70%)',
-            left: `${25 + px * 0.3}%`,
-            top: `${15 + py * 0.3}%`,
-            transform: 'translate(-50%, -50%)',
-          }}
-        />
-        <div
-          className="absolute w-[500px] h-[500px] rounded-full blur-[120px] opacity-[0.05]"
-          style={{
-            background: 'radial-gradient(circle, #6B1F2B 0%, transparent 70%)',
-            right: `${15 - px * 0.2}%`,
-            bottom: `${10 - py * 0.2}%`,
-            transform: 'translate(50%, 50%)',
-          }}
-        />
-      </div>
+      {/* Soft gold radial glow — focused only behind the product area */}
+      <div className="absolute pointer-events-none" style={{
+        width: '600px', height: '600px',
+        borderRadius: '50%',
+        background: 'radial-gradient(circle, rgba(195,163,94,0.10) 0%, rgba(195,163,94,0.04) 45%, transparent 70%)',
+        filter: 'blur(60px)',
+        left: `${28 + px * 0.2}%`,
+        top: `${50 + py * 0.15}%`,
+        transform: 'translate(-50%, -50%)',
+        transition: 'left 0.5s ease, top 0.5s ease',
+      }} />
 
-      {/* Subtle grid pattern */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-[0.03]"
-        style={{
-          backgroundImage: `
-            linear-gradient(#6B1F2B 1px, transparent 1px),
-            linear-gradient(90deg, #6B1F2B 1px, transparent 1px)
-          `,
-          backgroundSize: '80px 80px',
-        }}
-      />
+      {/* Very subtle maroon whisper — top right corner only */}
+      <div className="absolute pointer-events-none" style={{
+        width: '400px', height: '400px',
+        borderRadius: '50%',
+        background: 'radial-gradient(circle, rgba(107,31,43,0.04) 0%, transparent 70%)',
+        filter: 'blur(80px)',
+        right: '-5%', top: '5%',
+      }} />
+
+      {/* Barely-there grid */}
+      <div className="absolute inset-0 pointer-events-none" style={{
+        backgroundImage: 'linear-gradient(rgba(107,31,43,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(107,31,43,0.025) 1px, transparent 1px)',
+        backgroundSize: '80px 80px',
+      }} />
 
       {/* Section Header */}
       <div className="text-center mb-4 relative z-10">
@@ -247,7 +292,7 @@ const Interactive3DProductViewer: React.FC = () => {
                   transition: isDragging ? 'none' : 'transform 0.15s ease-out',
                 }}
               >
-                {/* Card face — Premium glassmorphism on brand colors */}
+                {/* Card face — Light glass on cream */}
                 <div
                   className="absolute inset-0 overflow-hidden"
                   style={{
@@ -255,10 +300,9 @@ const Interactive3DProductViewer: React.FC = () => {
                     border: '1px solid rgba(195,163,94,0.25)',
                     borderRadius: '28px',
                     boxShadow: `
-                      0 30px 80px rgba(107,31,43,0.08),
-                      0 12px 30px rgba(107,31,43,0.05),
-                      0 0 0 1px rgba(255,255,255,0.6) inset,
-                      0 2px 0 rgba(255,255,255,0.8) inset
+                      0 30px 80px rgba(107,31,43,0.07),
+                      0 8px 24px rgba(107,31,43,0.04),
+                      0 0 0 1px rgba(255,255,255,0.7) inset
                     `,
                     backfaceVisibility: 'hidden',
                   }}
@@ -298,18 +342,39 @@ const Interactive3DProductViewer: React.FC = () => {
                     </span>
                   </div>
 
-                  {/* Product Image — hero placement */}
+                  {/* Product Image — hero placement (image OR emoji glyph fallback) */}
                   <div className="absolute inset-0 top-12 bottom-32 flex items-center justify-center px-8">
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-full object-contain transition-all duration-500"
-                      style={{
-                        filter: 'drop-shadow(0 16px 40px rgba(107,31,43,0.12)) drop-shadow(0 4px 12px rgba(195,163,94,0.15))',
-                        transform: `translateY(${Math.sin(rotation.y * 0.02) * 3}px)`,
-                      }}
-                      draggable={false}
-                    />
+                    {product.image ? (
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-full object-contain transition-all duration-500"
+                        style={{
+                          filter: 'drop-shadow(0 16px 40px rgba(107,31,43,0.12)) drop-shadow(0 4px 12px rgba(195,163,94,0.15))',
+                          transform: `translateY(${Math.sin(rotation.y * 0.02) * 3}px)`,
+                        }}
+                        draggable={false}
+                      />
+                    ) : (
+                      <div
+                        className="flex items-center justify-center select-none"
+                        style={{
+                          width: '78%',
+                          height: '78%',
+                          borderRadius: '50%',
+                          background: 'radial-gradient(circle at 30% 25%, rgba(255,255,255,0.95) 0%, rgba(245,241,232,0.85) 55%, rgba(195,163,94,0.18) 100%)',
+                          border: '1px solid rgba(195,163,94,0.35)',
+                          boxShadow: 'inset 0 4px 18px rgba(255,255,255,0.7), 0 18px 40px rgba(107,31,43,0.10), 0 4px 12px rgba(195,163,94,0.18)',
+                          fontSize: 'clamp(96px, 16vw, 180px)',
+                          lineHeight: 1,
+                          transform: `translateY(${Math.sin(rotation.y * 0.02) * 3}px)`,
+                        }}
+                      >
+                        <span style={{ filter: 'drop-shadow(0 8px 14px rgba(107,31,43,0.18))' }}>
+                          {product.emoji || '✦'}
+                        </span>
+                      </div>
+                    )}
                   </div>
 
                   {/* Subtle texture dots */}
@@ -422,14 +487,15 @@ const Interactive3DProductViewer: React.FC = () => {
             <div className="flex-1 h-px bg-[#C3A35E]/15" />
           </div>
 
-          {/* Product selector thumbnails */}
-          <div className="grid grid-cols-3 gap-3">
+          {/* Product selector thumbnails — 5-col grid scrollable for all 10 verticals */}
+          <div className="grid grid-cols-5 gap-2 max-h-[260px] overflow-y-auto pr-1" style={{ scrollbarWidth: 'thin' }}>
             {products.map((p, idx) => (
               <button
                 key={idx}
                 onClick={() => switchProduct(idx)}
-                className={`relative p-3 rounded-2xl transition-all duration-400 group ${
-                  idx === activeIndex ? 'scale-[1.02]' : 'hover:scale-[1.01]'
+                title={p.name}
+                className={`relative p-2 rounded-xl transition-all duration-300 group ${
+                  idx === activeIndex ? 'scale-[1.04]' : 'hover:scale-[1.02]'
                 }`}
                 style={{
                   background: idx === activeIndex
@@ -445,23 +511,29 @@ const Interactive3DProductViewer: React.FC = () => {
               >
                 {/* Active indicator dot */}
                 {idx === activeIndex && (
-                  <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-[#C3A35E] shadow-sm shadow-[#C3A35E]/30" />
+                  <div className="absolute top-1.5 right-1.5 w-1.5 h-1.5 rounded-full bg-[#C3A35E] shadow-sm shadow-[#C3A35E]/30" />
                 )}
-                <img
-                  src={p.image}
-                  alt={p.name}
-                  className="w-full h-16 object-contain transition-transform duration-300 group-hover:scale-110"
-                  style={{
-                    filter: idx === activeIndex
-                      ? 'drop-shadow(0 4px 8px rgba(107,31,43,0.1))'
-                      : 'none',
-                  }}
-                  draggable={false}
-                />
-                <span className={`text-[10px] mt-1.5 block text-center truncate font-medium transition-colors ${
-                  idx === activeIndex ? 'text-[#6B1F2B]' : 'text-[#6B1F2B]/35'
-                }`}>
-                  {p.name}
+                {p.image ? (
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="w-full h-12 object-contain transition-transform duration-300 group-hover:scale-110"
+                    style={{
+                      filter: idx === activeIndex
+                        ? 'drop-shadow(0 4px 8px rgba(107,31,43,0.1))'
+                        : 'none',
+                    }}
+                    draggable={false}
+                  />
+                ) : (
+                  <div className="w-full h-12 flex items-center justify-center text-3xl transition-transform duration-300 group-hover:scale-110">
+                    <span style={{ filter: idx === activeIndex ? 'drop-shadow(0 4px 8px rgba(107,31,43,0.15))' : 'none' }}>
+                      {p.emoji || '✦'}
+                    </span>
+                  </div>
+                )}
+                <span className={`text-[9px] mt-1 block text-center truncate font-medium transition-colors ${idx === activeIndex ? 'text-[#6B1F2B]' : 'text-[#6B1F2B]/35'}`}>
+                  {p.name.split(' ')[0]}
                 </span>
               </button>
             ))}

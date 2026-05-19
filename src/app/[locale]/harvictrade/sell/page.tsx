@@ -1,11 +1,9 @@
 // Header and Footer are provided by layout.tsx - DO NOT import them here
 import Link from 'next/link'
+import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 
 export async function generateStaticParams() {
-  return [
-    { locale: 'en' }, { locale: 'ar' }, { locale: 'fr' },
-    { locale: 'es' }, { locale: 'de' }, { locale: 'zh' }, { locale: 'he' }
-  ]
+  return generateAllLocaleParams()
 }
 
 export default async function SellPage({ params }: { params: Promise<{ locale: string }> }) {

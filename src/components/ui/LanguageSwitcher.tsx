@@ -7,6 +7,7 @@ import { apiClient } from '@/lib/api'
 import { useCountry } from '@/contexts/CountryContext'
 import { useLocaleContext } from '@/contexts/LocaleProvider'
 import { isRTL } from '@/utils/rtl'
+import { SUPPORTED_LOCALES } from '@/config/locales'
 
 // Primary languages - Most commonly used (like Zara shows only key languages)
 const primaryLanguages = [
@@ -56,6 +57,9 @@ const extendedLanguages = [
 
 // Fallback - combine primary + extended for API fallback
 const fallbackLanguages = [...primaryLanguages, ...extendedLanguages]
+const allSupportedFallbackLanguages = fallbackLanguages.filter((lang) =>
+  SUPPORTED_LOCALES.includes(lang.code as (typeof SUPPORTED_LOCALES)[number])
+)
 
 // Wrapper component to safely use LocaleProvider
 function LanguageSwitcherInner() {
@@ -101,21 +105,34 @@ function LanguageSwitcherInner() {
           )
           
           if (validLanguages.length > 0) {
-            setLanguages(validLanguages)
+            // Merge API metadata over the full supported static list so all 38 locales are always visible.
+            const byCode = new Map(
+              allSupportedFallbackLanguages.map((lang) => [lang.code, { ...lang }])
+            )
+
+            validLanguages.forEach((lang) => {
+              const existing = byCode.get(lang.code) || {}
+              byCode.set(lang.code, {
+                ...existing,
+                ...lang,
+              })
+            })
+
+            setLanguages(Array.from(byCode.values()))
           } else {
             // If API returned invalid data, use fallback
             console.warn('API returned invalid language data, using fallback')
-            setLanguages(fallbackLanguages)
+            setLanguages(allSupportedFallbackLanguages)
           }
         } else {
           // If API returned empty or invalid response, use fallback
           console.warn('API returned empty or invalid languages, using fallback')
-          setLanguages(fallbackLanguages)
+          setLanguages(allSupportedFallbackLanguages)
         }
       } catch (error) {
         console.warn('Failed to fetch languages from API, using fallback:', error)
         // Use fallback languages if API fails
-        setLanguages(fallbackLanguages)
+        setLanguages(allSupportedFallbackLanguages)
       } finally {
         setLoading(false)
       }
@@ -137,8 +154,11 @@ function LanguageSwitcherInner() {
   const switchLanguage = async (newLocale: string) => {
     setIsOpen(false)
     
-    // Validate locale
-    if (!fallbackLanguages.find(lang => lang.code === newLocale)) {
+    const supportedLocaleCodes = new Set(SUPPORTED_LOCALES)
+    const isSupportedLocale = supportedLocaleCodes.has(newLocale as (typeof SUPPORTED_LOCALES)[number])
+
+    // Validate locale against shared app config (single source of truth)
+    if (!isSupportedLocale) {
       console.warn(`Invalid locale: ${newLocale}`)
       return
     }
@@ -259,7 +279,7 @@ function LanguageSwitcherInner() {
         aria-label={t('selectLanguage')}
         aria-expanded={isOpen}
       >
-        <span className="hidden sm:inline-block">{currentLanguage?.name}</span>
+        <span>{currentLanguage?.flag} {currentLanguage?.name}</span>
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
           className={`w-3 h-3 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
@@ -273,7 +293,7 @@ function LanguageSwitcherInner() {
 
       {isOpen && (
         <div 
-          className={`absolute ${isRTLMode ? 'left-0' : 'right-0'} mt-2 w-48 overflow-hidden transition-all duration-200 ease-out max-h-[400px] flex flex-col z-50 ${
+          className={`absolute ${isRTLMode ? 'right-0' : 'left-0'} mt-2 w-48 overflow-hidden transition-all duration-200 ease-out max-h-[400px] flex flex-col ${
           isOpen 
             ? 'opacity-100 translate-y-0 pointer-events-auto' 
             : 'opacity-0 -translate-y-1 pointer-events-none'
@@ -281,7 +301,8 @@ function LanguageSwitcherInner() {
           style={{ 
             background: '#FFFFFF', 
             border: '1px solid rgba(0,0,0,0.1)',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+            boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+            zIndex: 9999
           }}
       >
         {/* Primary Languages - Always visible (like Zara) */}

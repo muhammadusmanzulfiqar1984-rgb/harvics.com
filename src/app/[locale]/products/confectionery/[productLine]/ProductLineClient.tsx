@@ -172,10 +172,11 @@ const ProductLineClient: React.FC<ProductLineClientProps> = ({
           ) : (
             <div className="text-center py-20">
               <h3 className="text-3xl font-bold text-black dark:text-white mb-4">
-                Coming Soon
+                Product Line Setup In Progress
               </h3>
               <p className="text-black dark:text-black mb-8">
-                Products in this line will be available soon.
+                This product line is ready for launch but catalog entries are not published yet.
+                Please return to the confectionery index to browse active assortments.
               </p>
               <Link
                 href={`/${locale}/products/confectionery`}

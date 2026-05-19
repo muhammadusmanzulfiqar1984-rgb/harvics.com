@@ -1,4 +1,5 @@
 import { redirect } from 'next/navigation'
+import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 
 export default async function SupplierLoginPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -7,13 +8,5 @@ export default async function SupplierLoginPage({ params }: { params: Promise<{ 
 
 // Generate static params for all locales
 export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ar' },
-    { locale: 'fr' },
-    { locale: 'es' },
-    { locale: 'de' },
-    { locale: 'zh' },
-    { locale: 'he' }
-  ]
+  return generateAllLocaleParams()
 }

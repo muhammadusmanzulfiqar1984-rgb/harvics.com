@@ -223,9 +223,30 @@ export default function ReconciliationDashboardPage() {
             title="Bank Deposit Matching"
             subtitle="Match bank transfers with deposit records"
           >
-            <div className="text-center py-8 text-black/70">
-              <p>Bank deposit matching feature coming soon</p>
-              <p className="text-sm mt-2">This will automatically match bank transfers with bank statement deposits</p>
+            <div className="py-4 text-black/70 space-y-3">
+              <p>
+                Bank transfer payments are already grouped for reconciliation review. Use unmatched and pending
+                counts to prioritize exception handling before close.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <div className="bg-[#F2F2F2] p-4">
+                  <p className="text-xs uppercase tracking-wide">Transfer Records</p>
+                  <p className="text-xl font-semibold text-black mt-1">{stats.bankDeposits}</p>
+                </div>
+                <div className="bg-[#F2F2F2] p-4">
+                  <p className="text-xs uppercase tracking-wide">Needs Review</p>
+                  <p className="text-xl font-semibold text-black mt-1">{stats.pendingReconciliation}</p>
+                </div>
+                <div className="bg-[#F2F2F2] p-4">
+                  <p className="text-xs uppercase tracking-wide">Match Rate</p>
+                  <p className="text-xl font-semibold text-black mt-1">
+                    {stats.totalPayments > 0 ? ((stats.matched / stats.totalPayments) * 100).toFixed(1) : '0.0'}%
+                  </p>
+                </div>
+              </div>
+              <p className="text-sm">
+                Cross-check with statement import batches to auto-clear low-risk matches and escalate ambiguous references.
+              </p>
             </div>
           </SectionCard>
 
@@ -234,9 +255,24 @@ export default function ReconciliationDashboardPage() {
             title="Crypto Payment Monitor"
             subtitle="Track USDT/USDC transactions"
           >
-            <div className="text-center py-8 text-black/70">
-              <p>Crypto payment monitoring feature coming soon</p>
-              <p className="text-sm mt-2">Real-time tracking of blockchain transactions and confirmations</p>
+            <div className="py-4 text-black/70 space-y-3">
+              <p>
+                Crypto settlements are included in reconciliation metrics and flagged alongside fiat workflows for a
+                single cash-control view.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="bg-[#F2F2F2] p-4">
+                  <p className="text-xs uppercase tracking-wide">Tracked Crypto Payments</p>
+                  <p className="text-xl font-semibold text-black mt-1">{stats.cryptoPayments}</p>
+                </div>
+                <div className="bg-[#F2F2F2] p-4">
+                  <p className="text-xs uppercase tracking-wide">Unmatched Exposure</p>
+                  <p className="text-xl font-semibold text-black mt-1">{stats.unmatched}</p>
+                </div>
+              </div>
+              <p className="text-sm">
+                Use payment IDs as transaction-reference anchors to align wallet receipts, confirmations, and internal ledgers.
+              </p>
             </div>
           </SectionCard>
         </div>

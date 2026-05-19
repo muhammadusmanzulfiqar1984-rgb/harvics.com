@@ -8,6 +8,7 @@ import PortalOSHeader from '@/components/shared/PortalOSHeader'
 import BackButton from '@/components/shared/BackButton'
 import TierBreadcrumb from '@/components/shared/TierBreadcrumb'
 import GlobalFilters, { FilterState } from '@/components/shared/GlobalFilters'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 import { getTierColors } from '@/config/tier-colors'
 import AICopilotWidget from '@/features/ai/AICopilotWidget'
 
@@ -105,6 +106,11 @@ export default function OSDomainPageWrapper({
             {description && (
               <p className="text-[#8E8E93] text-sm max-w-4xl">{description}</p>
             )}
+          </div>
+
+          {/* Unified localization controls for OS pages */}
+          <div className="mb-6">
+            <LocalizationBar compact showGeo={false} className="items-center gap-2" />
           </div>
 
           {/* Global Filters for Currency, Country, Period, Scope */}

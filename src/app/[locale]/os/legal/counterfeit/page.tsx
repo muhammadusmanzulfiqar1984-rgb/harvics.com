@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { apiClient } from '@/lib/api'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function CounterfeitReportsPage() {
   const t = useTranslations('legal')
@@ -71,6 +72,7 @@ export default function CounterfeitReportsPage() {
 
   return (
     <>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       {/* Page Header - V16 Spec */}
       <div className="mb-6">
         <div className="flex justify-between items-center">

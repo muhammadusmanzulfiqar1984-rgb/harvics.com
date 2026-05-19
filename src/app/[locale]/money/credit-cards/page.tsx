@@ -2,17 +2,10 @@
 import Footer from '@/components/layout/Footer'
 import { getTranslations } from 'next-intl/server'
 import { getFolderBasedCategories } from '@/data/folderBasedProducts'
+import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 
 export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ar' },
-    { locale: 'fr' },
-    { locale: 'es' },
-    { locale: 'de' },
-    { locale: 'zh' },
-    { locale: 'he' }
-  ]
+  return generateAllLocaleParams()
 }
 
 interface CreditCardsPageProps {

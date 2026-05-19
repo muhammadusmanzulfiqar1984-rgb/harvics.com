@@ -3,11 +3,15 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 
 const OFFICES = [
-  { id: 'london',  city: 'London',   role: 'Headquarters', country: 'United Kingdom', flag: '🇬🇧', cx: 487, cy: 165, isHQ: true  },
-  { id: 'newyork', city: 'New York', role: 'Trade Office', country: 'United States',  flag: '🇺🇸', cx: 261, cy: 178, isHQ: false },
-  { id: 'dubai',   city: 'Dubai',    role: 'Regional Hub', country: 'UAE',            flag: '🇦🇪', cx: 590, cy: 213, isHQ: false },
-  { id: 'karachi', city: 'Karachi',  role: 'Sourcing Hub', country: 'Pakistan',       flag: '🇵🇰', cx: 617, cy: 203, isHQ: false },
-  { id: 'milan',   city: 'Milan',    role: 'Procurement',  country: 'Italy',          flag: '🇮🇹', cx: 505, cy: 170, isHQ: false },
+  { id: 'london',    city: 'London',     role: 'Headquarters',  country: 'United Kingdom', flag: '🇬🇧', cx: 468, cy: 152, isHQ: true  },
+  { id: 'newyork',   city: 'New York',   role: 'Trade Office',  country: 'United States',  flag: '🇺🇸', cx: 235, cy: 172, isHQ: false },
+  { id: 'dubai',     city: 'Dubai',      role: 'Regional Hub',  country: 'UAE',            flag: '🇦🇪', cx: 598, cy: 218, isHQ: false },
+  { id: 'karachi',   city: 'Karachi',    role: 'Sourcing Hub',  country: 'Pakistan',       flag: '🇵🇰', cx: 632, cy: 205, isHQ: false },
+  { id: 'milan',     city: 'Milan',      role: 'Procurement',   country: 'Italy',          flag: '🇮🇹', cx: 498, cy: 165, isHQ: false },
+  { id: 'singapore', city: 'Singapore',  role: 'Asia Hub',      country: 'Singapore',      flag: '🇸🇬', cx: 732, cy: 268, isHQ: false },
+  { id: 'istanbul',  city: 'Istanbul',   role: 'Trade Gateway', country: 'Turkey',         flag: '🇹🇷', cx: 542, cy: 172, isHQ: false },
+  { id: 'cairo',     city: 'Cairo',      role: 'Africa Hub',    country: 'Egypt',          flag: '🇪🇬', cx: 533, cy: 222, isHQ: false },
+  { id: 'lagos',     city: 'Lagos',      role: 'West Africa',   country: 'Nigeria',        flag: '🇳🇬', cx: 462, cy: 265, isHQ: false },
 ]
 
 const ROUTES = [
@@ -16,7 +20,17 @@ const ROUTES = [
   { from: 0, to: 3 },
   { from: 0, to: 4 },
   { from: 2, to: 3 },
+  { from: 0, to: 5 },
+  { from: 0, to: 6 },
+  { from: 2, to: 7 },
+  { from: 0, to: 8 },
 ]
+
+// Golden rain drop data — cycles through each office
+interface RainDrop {
+  officeIdx: number
+  id: number
+}
 
 function arc(x1: number, y1: number, x2: number, y2: number) {
   const mx = (x1 + x2) / 2
@@ -50,10 +64,14 @@ export default function InteractiveWorldMap() {
   const [hoveredPath, setHoveredPath] = useState<number | null>(null)
   const [hoveredDot, setHoveredDot] = useState<number | null>(null)
   const [visible, setVisible] = useState(false)
+  const [rainDrops, setRainDrops] = useState<RainDrop[]>([])
+  const [landedIdx, setLandedIdx] = useState<number | null>(null)
+  const rainCounter = useRef(0)
   const sectionRef = useRef<HTMLElement>(null)
   const timer = useRef<ReturnType<typeof setInterval> | null>(null)
+  const rainTimer = useRef<ReturnType<typeof setInterval> | null>(null)
 
-  const offices = useCountUp(5, 1200, visible)
+  const offices = useCountUp(9, 1200, visible)
   const markets = useCountUp(42, 1600, visible)
   const volume = useCountUp(14, 1400, visible)
   const industries = useCountUp(10, 1000, visible)
@@ -79,6 +97,26 @@ export default function InteractiveWorldMap() {
     }, 4000)
     return () => { if (timer.current) clearInterval(timer.current) }
   }, [])
+
+  // Golden rain effect — fires a drop every 3s cycling through all offices
+  useEffect(() => {
+    if (!visible) return
+    let idx = 0
+    rainTimer.current = setInterval(() => {
+      const officeIdx = idx % OFFICES.length
+      const id = rainCounter.current++
+      setRainDrops(prev => [...prev, { officeIdx, id }])
+      // After drop falls (1s) mark as landed for glow+text
+      setTimeout(() => {
+        setLandedIdx(officeIdx)
+        setTimeout(() => setLandedIdx(null), 2500)
+      }, 1000)
+      // Remove drop from state after full animation (1s fall + 2.2s text + buffer)
+      setTimeout(() => setRainDrops(prev => prev.filter(d => d.id !== id)), 4000)
+      idx++
+    }, 3000)
+    return () => { if (rainTimer.current) clearInterval(rainTimer.current) }
+  }, [visible])
 
   return (
     <section ref={sectionRef} style={{ background: '#ffffff', padding: '40px 0 32px', fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif' }}>
@@ -197,6 +235,94 @@ export default function InteractiveWorldMap() {
                 </g>
               )
             })}
+
+            {/* Golden rain drops */}
+            {rainDrops.map(drop => {
+              const o = OFFICES[drop.officeIdx]
+              return (
+                <g key={drop.id}>
+                  {/* Falling gold streak */}
+                  <line
+                    x1={o.cx} y1={o.cy - 100}
+                    x2={o.cx} y2={o.cy - 80}
+                    stroke="#f0d08e"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    opacity="0"
+                  >
+                    <animate attributeName="y1" values={`${o.cy - 120};${o.cy - 4}`} dur="1s" begin="0s" fill="freeze" />
+                    <animate attributeName="y2" values={`${o.cy - 100};${o.cy + 16}`} dur="1s" begin="0s" fill="freeze" />
+                    <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.8;1" dur="1s" begin="0s" fill="freeze" />
+                  </line>
+                  {/* Glowing tip of the drop */}
+                  <circle r="3.5" fill="#f0d08e" filter="url(#bigglow)">
+                    <animate attributeName="cy" values={`${o.cy - 120};${o.cy}`} dur="1s" begin="0s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.2 1" />
+                    <animate attributeName="cx" values={`${o.cx};${o.cx}`} dur="1s" begin="0s" fill="freeze" />
+                    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="1s" begin="0s" fill="freeze" />
+                  </circle>
+                  {/* Impact burst — outer ring */}
+                  <circle cx={o.cx} cy={o.cy} fill="none" stroke="#C3A35E" strokeWidth="1.5" r="0" opacity="0">
+                    <animate attributeName="r" values="0;24" dur="0.7s" begin="1s" fill="freeze" />
+                    <animate attributeName="opacity" values="1;0" dur="0.7s" begin="1s" fill="freeze" />
+                  </circle>
+                  {/* Impact burst — inner ring */}
+                  <circle cx={o.cx} cy={o.cy} fill="rgba(195,163,94,0.3)" r="0" opacity="0">
+                    <animate attributeName="r" values="0;10" dur="0.4s" begin="1s" fill="freeze" />
+                    <animate attributeName="opacity" values="0.8;0" dur="0.4s" begin="1s" fill="freeze" />
+                  </circle>
+                  {/* Gold splat particles — 4 directions */}
+                  {[[-1,-1],[1,-1],[-1,1],[1,1]].map(([dx,dy], pi) => (
+                    <circle key={pi} r="2" fill="#f0d08e" opacity="0">
+                      <animate attributeName="cx" values={`${o.cx};${o.cx + dx * 14}`} dur="0.5s" begin="1s" fill="freeze" />
+                      <animate attributeName="cy" values={`${o.cy};${o.cy + dy * 14}`} dur="0.5s" begin="1s" fill="freeze" />
+                      <animate attributeName="opacity" values="1;0" dur="0.5s" begin="1s" fill="freeze" />
+                    </circle>
+                  ))}
+                  {/* City name rising — big bold gold */}
+                  <text
+                    x={o.cx}
+                    textAnchor="middle"
+                    fontSize="13"
+                    fontWeight="800"
+                    fontFamily="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif"
+                    fill="#C3A35E"
+                    filter="url(#glow)"
+                    letterSpacing="0.15em"
+                    opacity="0"
+                  >
+                    <animate attributeName="y" values={`${o.cy - 10};${o.cy - 52}`} dur="2.2s" begin="1s" fill="freeze" calcMode="spline" keySplines="0.1 0 0.3 1" />
+                    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.65;1" dur="2.2s" begin="1s" fill="freeze" />
+                    {o.city.toUpperCase()}
+                  </text>
+                  {/* Role subtitle rising just below name */}
+                  <text
+                    x={o.cx}
+                    textAnchor="middle"
+                    fontSize="7"
+                    fontWeight="600"
+                    fontFamily="-apple-system, BlinkMacSystemFont, sans-serif"
+                    fill="rgba(240,208,142,0.85)"
+                    letterSpacing="0.2em"
+                    opacity="0"
+                  >
+                    <animate attributeName="y" values={`${o.cy - 2};${o.cy - 38}`} dur="2.2s" begin="1.1s" fill="freeze" calcMode="spline" keySplines="0.1 0 0.3 1" />
+                    <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.08;0.65;1" dur="2.2s" begin="1.1s" fill="freeze" />
+                    {o.role.toUpperCase()}
+                  </text>
+                </g>
+              )
+            })}
+
+            {/* Persistent gold glow on landed city */}
+            {landedIdx !== null && (() => {
+              const o = OFFICES[landedIdx]
+              return (
+                <circle cx={o.cx} cy={o.cy} r="14" fill="rgba(195,163,94,0.4)" filter="url(#bigglow)">
+                  <animate attributeName="r" values="10;20;10" dur="1.2s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1.2s" repeatCount="indefinite" />
+                </circle>
+              )
+            })()}
 
             {/* City dots — larger, pulsing */}
             {OFFICES.map((o, i) => {

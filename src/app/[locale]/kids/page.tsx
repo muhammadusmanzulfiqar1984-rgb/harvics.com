@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useMemo } from 'react'
+import React, { use, useState, useMemo } from 'react'
 import Link from 'next/link'
 import { getProductImage } from '@/data/productCatalog'
 
@@ -68,8 +68,8 @@ const REGIONS = ['Europe', 'GCC', 'Asia', 'Africa']
 
 // ─── Page Component ──────────────────────────────────────────────────────────
 
-export default function KidsPage({ params }: { params: { locale: string } }) {
-  const locale = params.locale || 'en'
+export default function KidsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale = 'en' } = use(params)
   const [activeCategory, setActiveCategory] = useState('all')
   const [sortBy, setSortBy] = useState<'name' | 'price'>('name')
   const [searchQuery, setSearchQuery] = useState('')

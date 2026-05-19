@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { useCountry } from '@/contexts/CountryContext'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 interface GPSDashboard {
   activeTracks: number
@@ -49,6 +50,7 @@ export default function GPSFleetMapPage() {
 
   return (
     <div>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">GPS Tracking Dashboard</h1>
         <p className="text-[#C3A35E]/90">Real-time vehicle tracking and fleet management</p>
@@ -85,8 +87,17 @@ export default function GPSFleetMapPage() {
 
       <div className="mt-6 bg-white shadow p-6">
         <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Real-time GPS Map</h2>
-        <div className="bg-white h-96 flex items-center justify-center">
-          <p className="text-[#C3A35E]/90">GPS Map View - Coming Soon</p>
+        <div className="bg-white h-96 border border-black100 p-6 flex flex-col justify-center">
+          <p className="text-[#C3A35E]/90 mb-3">
+            Fleet telemetry is actively summarized above. This panel is reserved for live route geometry,
+            geofencing, and ETA confidence overlays.
+          </p>
+          <p className="text-sm text-[#C3A35E]/90">
+            Current active tracks: {(dashboard?.activeTracks || 0).toLocaleString()} across {(dashboard?.activeFleet || 0).toLocaleString()} active vehicles.
+          </p>
+          <p className="text-sm text-[#C3A35E]/90 mt-2">
+            Connect telematics provider streams to render turn-by-turn map traces in this view.
+          </p>
         </div>
       </div>
     </div>

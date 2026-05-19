@@ -4,6 +4,7 @@ import React from 'react'
 import { useLocale } from 'next-intl'
 import { getProductImages } from '@/utils/harvicsProductImages'
 import Image from 'next/image'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function Promotions() {
   const locale = useLocale()
@@ -40,6 +41,7 @@ export default function Promotions() {
 
   return (
     <div className="space-y-6">
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <h1 className="text-2xl font-bold text-[#C3A35E]">Promotions</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -2,12 +2,6 @@
 
 import React, { useRef, useEffect, useState } from 'react'
 
-/**
- * ScrollNarrativeSection — Full-width scroll-triggered narrative.
- * Text, images, and elements animate into place as user scrolls,
- * creating a cinematic storytelling flow.
- */
-
 const pillars = [
   {
     icon: (
@@ -20,6 +14,9 @@ const pillars = [
     unit: 'Countries',
     description: 'Operating across six continents with direct supply chain access and local market intelligence.',
     gradient: 'from-[#C3A35E] to-[#E8D5A3]',
+    video: '/vedios/compressed/global-reach.mp4',
+    hoverTitle: 'Across Every Continent',
+    hoverDesc: 'Our network spans 50+ countries — sourcing locally, delivering globally with zero compromise on speed or quality.',
   },
   {
     icon: (
@@ -32,6 +29,9 @@ const pillars = [
     unit: 'Tested',
     description: 'Every product passes ISO, HACCP, BRC and Halal multi-stage certification before dispatch.',
     gradient: 'from-[#6B1F2B] to-[#9B3A4B]',
+    video: '/vedios/compressed/principles.mp4',
+    hoverTitle: 'Zero Compromise',
+    hoverDesc: 'ISO, HACCP, Halal, BRC — every product certified before it leaves source. Our principles are non-negotiable.',
   },
   {
     icon: (
@@ -44,6 +44,9 @@ const pillars = [
     unit: 'Transit',
     description: 'Multi-modal freight — air, sea, road — with real-time container tracking and SLA guarantees.',
     gradient: 'from-[#2563EB] to-[#60A5FA]',
+    video: '/vedios/compressed/supply-chain.mp4',
+    hoverTitle: 'Goods in Motion',
+    hoverDesc: 'Air, sea, road — your cargo tracked in real time from factory floor to warehouse door. 72h is our promise.',
   },
   {
     icon: (
@@ -56,6 +59,9 @@ const pillars = [
     unit: 'Monitoring',
     description: 'Predictive demand forecasting and automated compliance checks running around the clock.',
     gradient: 'from-[#10B981] to-[#6EE7B7]',
+    video: '/vedios/compressed/digital-infrastructure.mp4',
+    hoverTitle: 'Intelligence at Scale',
+    hoverDesc: 'Machine learning forecasts demand. AI flags compliance risks before they surface. Our infrastructure never sleeps.',
   },
   {
     icon: (
@@ -68,6 +74,9 @@ const pillars = [
     unit: 'Volume',
     description: 'Letters of credit, escrow, and HPAY digital settlements enabling seamless cross-border trade.',
     gradient: 'from-[#C3A35E] to-[#6B1F2B]',
+    video: '/vedios/compressed/global-network.mp4',
+    hoverTitle: 'Capital Flows Freely',
+    hoverDesc: 'LCs, escrow, HPay digital payments — our financial network moves $1.2B+ annually across 50+ markets.',
   },
   {
     icon: (
@@ -80,6 +89,9 @@ const pillars = [
     unit: 'Verticals',
     description: 'FMCG to Oil & Gas, Real Estate to AI — one commercial engine powering every sector.',
     gradient: 'from-[#7C3AED] to-[#A78BFA]',
+    video: '/vedios/compressed/product-portfolio.mp4',
+    hoverTitle: 'One Engine. Ten Sectors.',
+    hoverDesc: 'FMCG, Commodities, Textiles, Oil & Gas, Real Estate, AI — a single commercial platform built to dominate every vertical.',
   },
   {
     icon: (
@@ -92,6 +104,9 @@ const pillars = [
     unit: 'Specialists',
     description: 'Category experts, compliance officers, and field agents embedded in every market we serve.',
     gradient: 'from-[#6B1F2B] to-[#C3A35E]',
+    video: '/vedios/compressed/who-we-are.mp4',
+    hoverTitle: 'The People Behind It',
+    hoverDesc: '200+ specialists — category experts, compliance officers, field agents — embedded in every market, every timezone.',
   },
   {
     icon: (
@@ -104,6 +119,9 @@ const pillars = [
     unit: 'Jurisdictions',
     description: 'Sanctions checks, AML controls, and regulatory filing across every country we operate in.',
     gradient: 'from-[#0891B2] to-[#67E8F9]',
+    video: '/vedios/compressed/speed.mp4',
+    hoverTitle: 'Cleared at Every Border',
+    hoverDesc: 'AML, sanctions screening, HS code filing — compliance processed at speed so your goods never stop moving.',
   },
 ]
 
@@ -112,6 +130,7 @@ const ScrollNarrativeSection: React.FC = () => {
   const headingRef = useRef<HTMLDivElement>(null)
   const [scrollProgress, setScrollProgress] = useState(0)
   const [headingVisible, setHeadingVisible] = useState(false)
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -253,86 +272,129 @@ const ScrollNarrativeSection: React.FC = () => {
 
       {/* MIDDLE THIRD — Row 1: 4 cards (pillars 0-3) */}
       <div className="relative z-10 grid grid-cols-4 gap-0" style={{ borderTop: '1px solid rgba(107,31,43,0.1)' }}>
-        {[
-          { pillar: pillars[0], delay: 0, stat: null, label: null },
-          { pillar: pillars[1], delay: 60, stat: pillars[1].stat, label: pillars[1].unit },
-          { pillar: pillars[2], delay: 120, stat: pillars[2].stat, label: pillars[2].unit },
-          { pillar: pillars[3], delay: 180, stat: null, label: null },
-        ].map(({ pillar, delay, stat, label }, i) => (
-          <div key={i} className="h-full" style={{
-            opacity: headingVisible ? 1 : 0,
-            transform: headingVisible ? 'translateY(0)' : 'translateY(24px)',
-            transition: `opacity 0.6s ease ${0.3 + delay / 1000}s, transform 0.6s ease ${0.3 + delay / 1000}s`,
-          }}>
-            <div className="eq-card h-full flex flex-col justify-between p-5 cursor-pointer" style={{
-              borderRight: i < 3 ? '1px solid rgba(160,130,60,0.2)' : 'none',
-              background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
-              backgroundSize: '220% 100%',
+        {[0,1,2,3].map((pi, i) => {
+          const pillar = pillars[pi]
+          const isHovered = hoveredCard === pi
+          return (
+            <div key={pi} className="h-full" style={{
+              opacity: headingVisible ? 1 : 0,
+              transform: headingVisible ? 'translateY(0)' : 'translateY(24px)',
+              transition: `opacity 0.6s ease ${0.3 + i * 0.06}s, transform 0.6s ease ${0.3 + i * 0.06}s`,
             }}>
-              {/* Top: icon */}
-              <div>
-                <div className={`inline-flex items-center justify-center w-9 h-9 mb-3 text-white bg-gradient-to-br ${pillar.gradient}`} style={{ borderRadius: '10px', boxShadow: '0 4px 14px rgba(0,0,0,0.22)' }}>
-                  {pillar.icon}
+              <div
+                className="eq-card h-full flex flex-col justify-between p-5 cursor-pointer"
+                style={{
+                  borderRight: i < 3 ? '1px solid rgba(160,130,60,0.15)' : 'none',
+                  background: '#0d0608',
+                  position: 'relative',
+                  overflow: 'hidden',
+                }}
+                onMouseEnter={() => setHoveredCard(pi)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
+                {/* Video always playing */}
+                <video
+                  src={pillar.video}
+                  autoPlay muted loop playsInline
+                  style={{
+                    position: 'absolute', inset: 0,
+                    width: '100%', height: '100%',
+                    objectFit: 'cover',
+                    opacity: 1,
+                    zIndex: 0,
+                  }}
+                />
+                {/* Gold border on hover */}
+                <div style={{
+                  position: 'absolute', inset: 0,
+                  border: isHovered ? '2px solid rgba(195,163,94,0.6)' : '1px solid rgba(195,163,94,0.12)',
+                  transition: 'border 0.3s ease',
+                  zIndex: 2, pointerEvents: 'none',
+                }} />
+
+                {/* Card content */}
+                <div style={{ position: 'relative', zIndex: 3 }}>
+                  <div className={`inline-flex items-center justify-center w-9 h-9 mb-3 text-white bg-gradient-to-br ${pillar.gradient}`} style={{ borderRadius: '10px', boxShadow: '0 4px 14px rgba(0,0,0,0.22)' }}>
+                    {pillar.icon}
+                  </div>
+                  {/* Default state */}
+                  <div style={{ opacity: isHovered ? 0 : 1, transition: 'opacity 0.3s ease', position: isHovered ? 'absolute' : 'relative' }}>
+                    <div style={{ fontSize: 'clamp(28px, 3vw, 44px)', fontWeight: 800, color: '#f0d08e', lineHeight: 1, letterSpacing: '-0.04em', fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif', marginBottom: '3px' }}>{pillar.stat}</div>
+                    <div style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(240,208,142,0.55)', fontFamily: '-apple-system, sans-serif' }}>{pillar.unit}</div>
+                    <p style={{ fontSize: '11px', color: 'rgba(240,208,142,0.4)', lineHeight: 1.5, fontFamily: '-apple-system, sans-serif', marginTop: '6px' }}>{pillar.description}</p>
+                  </div>
+                  {/* Hover state */}
+                  <div style={{ opacity: isHovered ? 1 : 0, transition: 'opacity 0.4s ease 0.1s', position: isHovered ? 'relative' : 'absolute', top: 0 }}>
+                    <h3 style={{ fontSize: '15px', fontWeight: 800, color: '#f0d08e', letterSpacing: '-0.02em', marginBottom: '8px', fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif', lineHeight: 1.2 }}>{pillar.hoverTitle}</h3>
+                    <p style={{ fontSize: '11px', color: 'rgba(240,208,142,0.8)', lineHeight: 1.65, fontFamily: '-apple-system, sans-serif' }}>{pillar.hoverDesc}</p>
+                  </div>
                 </div>
-                {stat ? (
-                  <>
-                    <div style={{ fontSize: 'clamp(32px, 3.5vw, 48px)', fontWeight: 800, color: '#1a0d00', lineHeight: 1, letterSpacing: '-0.04em', fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif', marginBottom: '3px' }}>{stat}</div>
-                    <div style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#6B1F2B', fontFamily: '-apple-system, sans-serif' }}>{label}</div>
-                    <p style={{ fontSize: '11px', color: 'rgba(26,13,0,0.55)', lineHeight: 1.5, fontFamily: '-apple-system, sans-serif', marginTop: '6px' }}>{pillar.description}</p>
-                  </>
-                ) : (
-                  <>
-                    <h3 style={{ fontSize: '14px', fontWeight: 700, color: '#1a0d00', letterSpacing: '-0.02em', marginBottom: '5px', fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif' }}>{pillar.title}</h3>
-                    <p style={{ fontSize: '11px', color: 'rgba(26,13,0,0.55)', lineHeight: 1.55, fontFamily: '-apple-system, sans-serif' }}>{pillar.description}</p>
-                  </>
-                )}
+                <div style={{ position: 'relative', zIndex: 3, height: '2px', background: isHovered ? 'linear-gradient(90deg, #C3A35E, transparent)' : 'linear-gradient(90deg, rgba(195,163,94,0.4), transparent)', marginTop: '10px', width: isHovered ? '80%' : '48px', borderRadius: '1px', transition: 'width 0.4s ease, background 0.3s ease' }} />
               </div>
-              {/* Bottom: accent line */}
-              <div style={{ height: '2px', background: 'linear-gradient(90deg, rgba(26,13,0,0.25), transparent)', marginTop: '10px', width: stat ? '48px' : '60%', borderRadius: '1px' }} />
             </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
 
       {/* BOTTOM THIRD — Row 2: 4 cards (pillars 4-7) */}
       <div className="relative z-10 grid grid-cols-4 gap-0" style={{ borderTop: '1px solid rgba(160,130,60,0.2)' }}>
-        {[
-          { pillar: pillars[4], delay: 0, stat: pillars[4].stat, label: pillars[4].unit },
-          { pillar: pillars[5], delay: 60, stat: null, label: null },
-          { pillar: pillars[6], delay: 120, stat: null, label: null },
-          { pillar: pillars[7], delay: 180, stat: pillars[7].stat, label: pillars[7].unit },
-        ].map(({ pillar, delay, stat, label }, i) => (
-          <div key={i} className="h-full" style={{
-            opacity: headingVisible ? 1 : 0,
-            transform: headingVisible ? 'translateY(0)' : 'translateY(24px)',
-            transition: `opacity 0.6s ease ${0.6 + delay / 1000}s, transform 0.6s ease ${0.6 + delay / 1000}s`,
-          }}>
-            <div className="eq-card h-full flex flex-col justify-between p-5 cursor-pointer" style={{
-              borderRight: i < 3 ? '1px solid rgba(160,130,60,0.2)' : 'none',
-              background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
-              backgroundSize: '220% 100%',
+        {[4,5,6,7].map((pi, i) => {
+          const pillar = pillars[pi]
+          const isHovered = hoveredCard === pi
+          return (
+            <div key={pi} className="h-full" style={{
+              opacity: headingVisible ? 1 : 0,
+              transform: headingVisible ? 'translateY(0)' : 'translateY(24px)',
+              transition: `opacity 0.6s ease ${0.6 + i * 0.06}s, transform 0.6s ease ${0.6 + i * 0.06}s`,
             }}>
-              <div>
-                <div className={`inline-flex items-center justify-center w-9 h-9 mb-3 text-white bg-gradient-to-br ${pillar.gradient}`} style={{ borderRadius: '10px', boxShadow: '0 4px 14px rgba(0,0,0,0.22)' }}>
-                  {pillar.icon}
+              <div
+                className="eq-card h-full flex flex-col justify-between p-5 cursor-pointer"
+                style={{
+                  borderRight: i < 3 ? '1px solid rgba(160,130,60,0.15)' : 'none',
+                  background: '#0d0608',
+                  position: 'relative',
+                  overflow: 'hidden',
+                }}
+                onMouseEnter={() => setHoveredCard(pi)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
+                <video
+                  src={pillar.video}
+                  autoPlay muted loop playsInline
+                  style={{
+                    position: 'absolute', inset: 0,
+                    width: '100%', height: '100%',
+                    objectFit: 'cover',
+                    opacity: 1,
+                    zIndex: 0,
+                  }}
+                />
+                <div style={{
+                  position: 'absolute', inset: 0,
+                  border: isHovered ? '2px solid rgba(195,163,94,0.6)' : '1px solid rgba(195,163,94,0.12)',
+                  transition: 'border 0.3s ease',
+                  zIndex: 2, pointerEvents: 'none',
+                }} />
+
+                <div style={{ position: 'relative', zIndex: 3 }}>
+                  <div className={`inline-flex items-center justify-center w-9 h-9 mb-3 text-white bg-gradient-to-br ${pillar.gradient}`} style={{ borderRadius: '10px', boxShadow: '0 4px 14px rgba(0,0,0,0.22)' }}>
+                    {pillar.icon}
+                  </div>
+                  <div style={{ opacity: isHovered ? 0 : 1, transition: 'opacity 0.3s ease', position: isHovered ? 'absolute' : 'relative' }}>
+                    <div style={{ fontSize: 'clamp(28px, 3vw, 44px)', fontWeight: 800, color: '#f0d08e', lineHeight: 1, letterSpacing: '-0.04em', fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif', marginBottom: '3px' }}>{pillar.stat}</div>
+                    <div style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(240,208,142,0.55)', fontFamily: '-apple-system, sans-serif' }}>{pillar.unit}</div>
+                    <p style={{ fontSize: '11px', color: 'rgba(240,208,142,0.4)', lineHeight: 1.5, fontFamily: '-apple-system, sans-serif', marginTop: '6px' }}>{pillar.description}</p>
+                  </div>
+                  <div style={{ opacity: isHovered ? 1 : 0, transition: 'opacity 0.4s ease 0.1s', position: isHovered ? 'relative' : 'absolute', top: 0 }}>
+                    <h3 style={{ fontSize: '15px', fontWeight: 800, color: '#f0d08e', letterSpacing: '-0.02em', marginBottom: '8px', fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif', lineHeight: 1.2 }}>{pillar.hoverTitle}</h3>
+                    <p style={{ fontSize: '11px', color: 'rgba(240,208,142,0.8)', lineHeight: 1.65, fontFamily: '-apple-system, sans-serif' }}>{pillar.hoverDesc}</p>
+                  </div>
                 </div>
-                {stat ? (
-                  <>
-                    <div style={{ fontSize: 'clamp(32px, 3.5vw, 48px)', fontWeight: 800, color: '#1a0d00', lineHeight: 1, letterSpacing: '-0.04em', fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif', marginBottom: '3px' }}>{stat}</div>
-                    <div style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#6B1F2B', fontFamily: '-apple-system, sans-serif' }}>{label}</div>
-                    <p style={{ fontSize: '11px', color: 'rgba(26,13,0,0.55)', lineHeight: 1.5, fontFamily: '-apple-system, sans-serif', marginTop: '6px' }}>{pillar.description}</p>
-                  </>
-                ) : (
-                  <>
-                    <h3 style={{ fontSize: '14px', fontWeight: 700, color: '#1a0d00', letterSpacing: '-0.02em', marginBottom: '5px', fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif' }}>{pillar.title}</h3>
-                    <p style={{ fontSize: '11px', color: 'rgba(26,13,0,0.55)', lineHeight: 1.55, fontFamily: '-apple-system, sans-serif' }}>{pillar.description}</p>
-                  </>
-                )}
+                <div style={{ position: 'relative', zIndex: 3, height: '2px', background: isHovered ? 'linear-gradient(90deg, #C3A35E, transparent)' : 'linear-gradient(90deg, rgba(195,163,94,0.35), transparent)', marginTop: '10px', width: isHovered ? '80%' : '48px', borderRadius: '1px', transition: 'width 0.4s ease, background 0.3s ease' }} />
               </div>
-              <div style={{ height: '2px', background: 'linear-gradient(90deg, rgba(26,13,0,0.25), transparent)', marginTop: '10px', width: stat ? '48px' : '60%', borderRadius: '1px' }} />
             </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
 
       <style jsx>{`
@@ -340,25 +402,10 @@ const ScrollNarrativeSection: React.FC = () => {
           transition: transform 0.2s ease, box-shadow 0.2s ease;
           position: relative;
           overflow: hidden;
-          animation: eqGoldShimmer 2.8s linear infinite;
-        }
-        .eq-card::after {
-          content: '';
-          position: absolute;
-          top: 0; left: -100%;
-          width: 60%;
-          height: 100%;
-          background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,0.35) 50%, transparent 80%);
-          animation: eqSweep 3s ease-in-out infinite;
-          pointer-events: none;
         }
         .eq-card:hover {
-          box-shadow: 0 6px 24px rgba(195,163,94,0.4), 0 2px 8px rgba(0,0,0,0.1);
+          box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 0 0 1px rgba(195,163,94,0.4);
           transform: translateY(-2px);
-        }
-        @keyframes eqGoldShimmer {
-          0%   { background-position: 100% 0; }
-          100% { background-position: -100% 0; }
         }
         @keyframes eqSweep {
           0%   { left: -100%; }

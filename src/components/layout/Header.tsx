@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import CountrySelector from '@/features/geo/CountrySelector'
 import LanguageSwitcher from '@/components/ui/LanguageSwitcher'
 import SearchModal from '@/components/ui/SearchModal'
@@ -57,16 +57,37 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
   const pathname = usePathname()
   const isRTLMode = isRTL(locale)
   
+  const router = useRouter()
+
   // State management
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+  useEffect(() => {
+    const checkAuth = () => setIsLoggedIn(!!localStorage.getItem('auth_token'))
+    checkAuth()
+    window.addEventListener('storage', checkAuth)
+    return () => window.removeEventListener('storage', checkAuth)
+  }, [])
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  const handleLogout = () => {
+    localStorage.removeItem('auth_token')
+    localStorage.removeItem('user_scope')
+    localStorage.removeItem('user_data')
+    localStorage.removeItem('user_type')
+    document.cookie = 'auth_token=; path=/; max-age=0'
+    document.cookie = 'x_role=; path=/; max-age=0'
+    setIsLoggedIn(false)
+    router.push(`/${locale}/login`)
+  }
   
   // Single active dropdown state to ensure mutual exclusivity
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
@@ -137,7 +158,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
     <header className="relative z-[200] pointer-events-auto font-sans">
 
       {/* T1 — TOP UTILITY BAR: Rich maroon with subtle glass and gold shimmer */}
-      <div className="relative overflow-hidden" style={{ 
+      <div className="relative hidden lg:block" style={{ 
         background: 'linear-gradient(135deg, #6B1F2B 0%, #8B3A47 100%)',
         borderBottom: '1px solid rgba(195,163,94,0.5)',
         boxShadow: '0 2px 8px rgba(0,0,0,0.1), inset 0 1px 0 rgba(195,163,94,0.15)'
@@ -158,7 +179,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
           <div className="flex justify-between items-center" style={{ height: '32px' }}>
 
             {/* Left links */}
-            <div className="hidden md:flex items-center gap-6">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '20px', whiteSpace: 'nowrap' }}>
               {[
                 { href: `/${locale}/csr`, label: t('esgReport') },
                 { href: `/${locale}/investor-relations`, label: t('investors') },
@@ -166,7 +187,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               ].map((link) => (
                 <Link key={link.href} href={link.href}
                   className="transition-opacity duration-200 hover:opacity-70"
-                  style={{ color: '#C3A35E', fontSize: '11px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase', textDecoration: 'none' }}
+                  style={{ color: '#C3A35E', fontSize: '11px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap' }}
                 >{link.label}</Link>
               ))}
 
@@ -174,7 +195,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               <div className="relative" onMouseEnter={() => handleMouseEnter('countries')} onMouseLeave={handleMouseLeave}>
                 <button
                   className="flex items-center gap-1 transition-opacity duration-200 hover:opacity-70"
-                  style={{ color: '#C3A35E', fontSize: '11px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase', background: 'none', border: 'none', cursor: 'pointer' }}
+                  style={{ color: '#C3A35E', fontSize: '11px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase', background: 'none', border: 'none', cursor: 'pointer', whiteSpace: 'nowrap' }}
                   aria-expanded={activeDropdown === 'countries'}
                 >
                   <span>{t('countries')}</span>
@@ -182,8 +203,8 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                <div className={`absolute top-full ${isRTLMode ? 'right-0' : 'left-0'} mt-1 w-72 z-50 transition-opacity duration-200 ${activeDropdown === 'countries' ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
-                  style={{ background: '#ffffff', border: '1px solid rgba(195,163,94,0.4)' }}>
+                <div className={`absolute top-full ${isRTLMode ? 'right-0' : 'left-0'} mt-1 w-72 transition-opacity duration-200 ${activeDropdown === 'countries' ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+                  style={{ background: '#ffffff', border: '1px solid rgba(195,163,94,0.4)', zIndex: 9999 }}>
                   <div className="p-3">
                     <CountrySelector buttonClassName="w-full justify-start text-left px-4 py-3 font-semibold" menuAlignment="left"
                       options={canSwitchMarket ? availableCountries.map(code => ({ code, name: formatCountry(code) })) : undefined} />
@@ -193,33 +214,52 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
 
               <Link href={`/${locale}/contact`}
                 className="transition-opacity duration-200 hover:opacity-70"
-                style={{ color: '#C3A35E', fontSize: '11px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase', textDecoration: 'none' }}
+                style={{ color: '#C3A35E', fontSize: '11px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap' }}
               >{t('contactUs')}</Link>
             </div>
 
             {/* Right side */}
-            <div className="flex items-center gap-6">
-              <div className="hidden sm:block">
-                <LanguageSwitcher />
-              </div>
-              <Link href={`/${locale}/login`}
-                className="flex items-center gap-1.5 transition-opacity duration-200 hover:opacity-70"
-                style={{ 
-                  color: '#C3A35E', 
-                  fontSize: '11px', 
-                  fontWeight: 600, 
-                  letterSpacing: '0.05em', 
-                  textTransform: 'uppercase' as const, 
-                  textDecoration: 'none',
-                  background: 'transparent',
-                  border: 'none',
-                }}
-              >
-                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-                {getTranslation('signIn', 'navigation', 'Sign In')}
-              </Link>
+            <div className="flex items-center gap-5" style={{ whiteSpace: 'nowrap' }}>
+              <LanguageSwitcher />
+              {isLoggedIn ? (
+                <button
+                  onClick={handleLogout}
+                  className="flex items-center gap-1.5 transition-opacity duration-200 hover:opacity-70"
+                  style={{ 
+                    color: '#C3A35E', 
+                    fontSize: '11px', 
+                    fontWeight: 600, 
+                    letterSpacing: '0.05em', 
+                    textTransform: 'uppercase' as const, 
+                    background: 'transparent',
+                    border: 'none',
+                    cursor: 'pointer',
+                  }}
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                  </svg>
+                  Logout
+                </button>
+              ) : (
+                <Link
+                  href={`/${locale}/login`}
+                  className="flex items-center gap-1.5 transition-opacity duration-200 hover:opacity-70"
+                  style={{ 
+                    color: '#C3A35E', 
+                    fontSize: '11px', 
+                    fontWeight: 600, 
+                    letterSpacing: '0.05em', 
+                    textTransform: 'uppercase' as const, 
+                    textDecoration: 'none',
+                  }}
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                  </svg>
+                  Login
+                </Link>
+              )}
             </div>
           </div>
         </div>
@@ -253,6 +293,11 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
                 />
               </div>
             </Link>
+
+            {/* Analog Clock */}
+            <div className="hidden md:flex items-center justify-center" style={{ marginLeft: '16px' }}>
+              <AnalogClock size={36} />
+            </div>
 
             {/* Search */}
             <div className="flex-1 max-w-xl mx-8 hidden md:block relative">
@@ -290,15 +335,26 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
 
             {/* Right icons */}
             <div className="flex items-center gap-3">
-              {/* Account / Login */}
-              <Link href={`/${locale}/login`} className="p-2 transition-opacity duration-200 hover:opacity-60 group relative" style={{ color: '#6B1F2B' }}>
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-                <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: '#6B1F2B' }}>
-                  {getTranslation('signIn', 'navigation', 'Sign In')}
-                </span>
-              </Link>
+              {/* Account / Login / Logout */}
+              {isLoggedIn ? (
+                <button onClick={handleLogout} className="p-2 transition-opacity duration-200 hover:opacity-60 group relative" style={{ color: '#6B1F2B', background: 'none', border: 'none', cursor: 'pointer' }}>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                  </svg>
+                  <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: '#6B1F2B' }}>
+                    Logout
+                  </span>
+                </button>
+              ) : (
+                <Link href={`/${locale}/login`} className="p-2 transition-opacity duration-200 hover:opacity-60 group relative" style={{ color: '#6B1F2B' }}>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                  <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: '#6B1F2B' }}>
+                    Login
+                  </span>
+                </Link>
+              )}
               <Link href={`/${locale}/wishlist`} className="p-2 transition-opacity duration-200 hover:opacity-60" style={{ color: '#6B1F2B' }}>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -372,6 +428,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
                 { href: `/${locale}`, label: t('home') },
                 { href: `/${locale}/about`, label: t('about') },
                 { href: `/${locale}/products`, label: t('products') },
+                { href: `/${locale}/videos`, label: 'Videos' },
                 { href: `/${locale}/csr`, label: t('csr') },
                 { href: `/${locale}/investor-relations`, label: t('investorRelations') },
                 { href: `/${locale}/portals/`, label: t('portals') },

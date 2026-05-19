@@ -1,4 +1,5 @@
 import EnterpriseCRM from '@/components/shared/EnterpriseCRM'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 import { notFound } from 'next/navigation'
 import { SUPPORTED_LOCALES } from '@/config/locales'
 
@@ -50,6 +51,9 @@ export default async function AdminPortalCRMPage({
         zIndex: 1000
       }}>
         🔓 ADMIN ACCESS - CRM Portal (No Authentication Required) | Persona: {persona} | Locale: {locale}
+      </div>
+      <div style={{ backgroundColor: '#ffffff', padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>
+        <LocalizationBar compact showGeo={false} className="items-center gap-2" />
       </div>
       <EnterpriseCRM persona={crmPersona} locale={locale} />
     </div>

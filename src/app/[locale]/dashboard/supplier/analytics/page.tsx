@@ -1,6 +1,7 @@
 'use client'
 
 import { useCountry } from '@/contexts/CountryContext'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function SupplierAnalytics() {
   const { countryData } = useCountry()
@@ -59,6 +60,7 @@ export default function SupplierAnalytics() {
 
   return (
     <main className="min-h-screen bg-gray-100">
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="pt-20">
         {/* Hero Section */}
         <section className="py-12 md:py-16 px-4 md:px-6 bg-[#6B1F2B]">

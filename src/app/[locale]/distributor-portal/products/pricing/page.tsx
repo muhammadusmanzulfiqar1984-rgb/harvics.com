@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { useLocale } from 'next-intl'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function PriceLists() {
   const locale = useLocale()
@@ -18,6 +19,7 @@ export default function PriceLists() {
 
   return (
     <div className="space-y-6">
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold text-[#C3A35E]">Price Lists</h1>
         <div className="flex space-x-2">

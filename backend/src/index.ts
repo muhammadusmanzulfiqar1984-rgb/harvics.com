@@ -1,6 +1,23 @@
+import { existsSync } from 'fs';
 import { config } from 'dotenv';
 import { resolve } from 'path';
-config({ path: resolve(__dirname, '../../.env.local') });
+
+const envCandidates = [
+  resolve(__dirname, `../../.env.${process.env.NODE_ENV || 'development'}`),
+  resolve(__dirname, '../../.env.local'),
+  resolve(__dirname, '../../.env'),
+];
+
+for (const envPath of envCandidates) {
+  if (existsSync(envPath)) {
+    config({ path: envPath, override: false });
+  }
+}
+
+// In offline/dev mode, also silence Tier-0 intelligence chatter
+if (process.env.HARVICS_OFFLINE_DATA === '1' && !process.env.HARVICS_QUIET_LOGS) {
+  process.env.HARVICS_QUIET_LOGS = '1';
+}
 
 import express from 'express';
 import cors, { CorsOptions } from 'cors';
@@ -12,21 +29,34 @@ import { ProfitSentinel } from './services/profitSentinel';
 import { HarvicsAlphaEngine } from './services/harvicsAlphaEngine';
 import { setNotificationPushFn } from './modules/comms/notification.service';
 
+// Prevent backend crash from unexpected async errors (e.g. stale Prisma client, network hiccups)
+process.on('unhandledRejection', (reason: any) => {
+  console.error('[unhandledRejection]', reason?.message || reason);
+});
+process.on('uncaughtException', (err: any) => {
+  console.error('[uncaughtException]', err?.message || err);
+});
+
 const app = express();
 const server = http.createServer(app);
+const isProduction = process.env.NODE_ENV === 'production';
 
 // TODO: Connect Postgres persistence layer once credentials are ready.
 // TODO: Wire Redis/Vectordb caches for localisation lookups.
 // TODO: Enforce auth middleware once identity module is hooked up.
 const PORT = Number(process.env.PORT) || 4000;
 
-const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'http://localhost:3000')
+const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'http://localhost:3000,http://localhost:3002,http://127.0.0.1:3000,http://127.0.0.1:3002')
   .split(',')
   .map((origin) => origin.trim())
   .filter((origin) => origin.length > 0);
 
 const corsOptions: CorsOptions = {
-  origin: true, // Allow all origins for development
+  origin: (origin, callback) => {
+    if (!isProduction || !origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) return callback(null, true);
+    return callback(new Error(`Origin not allowed by CORS: ${origin}`));
+  },
   credentials: true,
 };
 
@@ -89,7 +119,7 @@ app.use('/api/auth', authRateLimit);
 // Initialize Socket.io (Harvics Orchestrator Real-Time Layer)
 const io = new Server(server, {
   cors: {
-    origin: "*", // Allow frontend access
+    origin: isProduction ? allowedOrigins : true,
     methods: ["GET", "POST"]
   }
 });
@@ -148,9 +178,14 @@ app.get('/health', (_req, res) => {
 if (process.env.NODE_ENV !== 'test') {
   server.listen(PORT, () => {
     console.log(`Harvics backend running on port ${PORT}`);
-    
-    // Start the Profit Sentinel Background Agent
-    ProfitSentinel.start();
+
+    // Profit Sentinel only runs against live data feeds. In offline/dev mode
+    // there is nothing to monitor and the cycle would just spam fallback logs.
+    if (process.env.HARVICS_OFFLINE_DATA === '1' || process.env.NODE_ENV !== 'production') {
+      console.log('[ProfitSentinel] skipped (offline/dev mode — unset HARVICS_OFFLINE_DATA to enable)');
+    } else {
+      ProfitSentinel.start();
+    }
   });
 }
 

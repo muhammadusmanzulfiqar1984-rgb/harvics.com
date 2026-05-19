@@ -1,70 +1,70 @@
 /**
  * Harvics Product Images
- * Collection of Harvics branded product images for use across the website
- * All images are from the public/Images/products directory
+ * Collection of product images for use across the website
+ * Using high-quality Unsplash images organized by category
  */
 
 export const harvicsProductImages = [
   // Confectionary Products
-  '/Images/products/Confectionary/WhatsApp Image 2025-09-19 at 1.50.06 AM (1).jpeg',
-  '/Images/products/Confectionary/WhatsApp Image 2025-09-19 at 1.50.08 AM.jpeg',
-  '/Images/products/Confectionary/WhatsApp Image 2025-09-19 at 1.50.05 AM (1).jpeg',
-  '/Images/products/Confectionary/WhatsApp Image 2025-09-19 at 1.50.07 AM (1).jpeg',
-  '/Images/products/Confectionary/WhatsApp Image 2025-09-19 at 1.50.05 AM.jpeg',
-  '/Images/products/Confectionary/WhatsApp Image 2025-09-19 at 1.50.04 AM.jpeg',
-  '/Images/products/Confectionary/WhatsApp Image 2025-09-19 at 1.50.04 AM (2).jpeg',
-  '/Images/products/Confectionary/WhatsApp Image 2025-09-19 at 1.50.07 AM (2).jpeg',
-  '/Images/products/Confectionary/WhatsApp Image 2025-09-19 at 1.50.06 AM.jpeg',
-  '/Images/products/Confectionary/WhatsApp Image 2025-09-19 at 1.50.04 AM (1).jpeg',
-  '/Images/products/Confectionary/WhatsApp Image 2025-09-19 at 1.50.07 AM.jpeg',
-  '/Images/products/Confectionary/4369d6f1-c1c3-41be-be7b-76372de99401.JPG',
-  '/Images/products/Confectionary/a86ea5cf-ff7f-46b2-8e58-e6f4eb7a882e.JPG',
-  
+  'https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1548907040-4baa42d10919?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1587132137056-bfbf0166836e?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1575224300306-1b8da36134ec?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1560857876-0519c4857c56?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1534119768988-c496e0738c44?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1563262924-641a8b3d397f?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=800&h=600&fit=crop&q=70',
+
   // Beverages - Energy Drinks
-  '/Images/products/Beverages/Energy Drinks/WhatsApp Image 2025-09-21 at 11.53.36 PM (1).jpeg',
-  '/Images/products/Beverages/Energy Drinks/WhatsApp Image 2025-09-21 at 11.53.35 PM.jpeg',
-  '/Images/products/Beverages/Energy Drinks/WhatsApp Image 2025-09-21 at 10.36.33 PM.jpeg',
-  '/Images/products/Beverages/Energy Drinks/WhatsApp Image 2025-09-21 at 11.53.34 PM.jpeg',
-  '/Images/products/Beverages/Energy Drinks/WhatsApp Image 2025-09-21 at 11.53.35 PM (2).jpeg',
-  '/Images/products/Beverages/Energy Drinks/WhatsApp Image 2025-09-21 at 11.53.36 PM.jpeg',
-  '/Images/products/Beverages/Energy Drinks/WhatsApp Image 2025-09-21 at 11.53.35 PM (1).jpeg',
-  '/Images/products/Beverages/Energy Drinks/WhatsApp Image 2025-09-21 at 11.53.37 PM.jpeg',
-  '/Images/products/Beverages/Energy Drinks/WhatsApp Image 2025-09-21 at 11.53.37 PM (1).jpeg',
-  '/Images/products/Beverages/Energy Drinks/WhatsApp Image 2025-09-21 at 11.53.37 PM (2).jpeg',
-  
+  'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1527960471264-932f39eb5846?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1513558161293-cdaf765ed514?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1570197571499-166b36435e9f?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1554866585-cd94860890b7?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1598614187854-26a60e982dc4?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1596803244618-8dce2b1f5c3a?w=800&h=600&fit=crop&q=70',
+
   // Beverages - Flavored Milk
-  '/Images/products/Beverages/Flavored milk/2d263ee0-4a3a-4bfb-a83b-d172356cb589.JPG',
-  '/Images/products/Beverages/Flavored milk/WhatsApp Image 2025-09-21 at 10.36.32 PM.jpeg',
-  '/Images/products/Beverages/Flavored milk/WhatsApp Image 2025-09-21 at 10.36.31 PM.jpeg',
-  '/Images/products/Beverages/Flavored milk/WhatsApp Image 2025-09-17 at 12.44.40 AM.jpeg',
-  '/Images/products/Beverages/Flavored milk/WhatsApp Image 2025-09-21 at 10.36.30 PM.jpeg',
-  '/Images/products/Beverages/Flavored milk/WhatsApp Image 2025-09-21 at 10.36.34 PM.jpeg',
-  '/Images/products/Beverages/Flavored milk/WhatsApp Image 2025-09-21 at 10.36.36 PM.jpeg',
-  '/Images/products/Beverages/Flavored milk/WhatsApp Image 2025-09-21 at 10.36.31 PM (1).jpeg',
-  
+  'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1563636619-e9143da7973b?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1517448931760-9bf4414148c5?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1600788886242-5c96aabe3757?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1595981234058-a9302fb97229?w=800&h=600&fit=crop&q=70',
+
   // Beverages - Juices
-  '/Images/products/Beverages/Juices/7211e9c4-96d0-4e7f-aa8c-22b73e6e15fa.JPG',
-  
+  'https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=800&h=600&fit=crop&q=70',
+
   // Bakery Products
-  '/Images/products/Bakery/2844c337-e8e4-40f5-be1e-0545a4f1055f.JPG',
-  '/Images/products/Bakery/f28925d1-0064-4d80-8223-08b420869965.JPG',
-  '/Images/products/Bakery/2332.JPG',
-  
+  'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1549931319-a545753467c8?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=800&h=600&fit=crop&q=70',
+
   // Pasta Products
-  '/Images/products/Pasta/pasta.png',
-  
+  'https://images.unsplash.com/photo-1551462147-ff29053bfc14?w=800&h=600&fit=crop&q=70',
+
   // General Product Images
-  '/Images/products/2d263ee0-4a3a-4bfb-a83b-d172356cb589.JPG',
-  '/Images/products/2844c337-e8e4-40f5-be1e-0545a4f1055f.JPG',
-  '/Images/products/7211e9c4-96d0-4e7f-aa8c-22b73e6e15fa.JPG',
-  '/Images/products/f28925d1-0064-4d80-8223-08b420869965.JPG',
-  '/Images/products/5c80817c-c6e8-48d0-b61a-5c202ad913c9.JPG',
-  '/Images/products/4a1969df-20da-4289-b344-9b14313efe98.JPG',
-  '/Images/products/4369d6f1-c1c3-41be-be7b-76372de99401.JPG',
-  '/Images/products/a86ea5cf-ff7f-46b2-8e58-e6f4eb7a882e.JPG',
-  '/Images/products/a109ca36-2a04-4370-9060-e0f9809aad95.JPG',
-  '/Images/products/1ef0fde6-f142-4628-ae70-83bd55148225.JPG',
-  '/Images/products/5720440d-9ce9-4024-b649-9111f2263a9f.JPG',
+  'https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&h=600&fit=crop&q=70',
+  'https://images.unsplash.com/photo-1530025809667-1f4bcff8e60f?w=800&h=600&fit=crop&q=70',
 ]
 
 /**

@@ -101,7 +101,7 @@ export class IntelligenceNode {
   }
 
   public static async processTransaction(rawInputs: any): Promise<DecisionOutput> {
-    console.log(`[Tier-0] Ingesting Transaction: ${rawInputs.traceId}`);
+    if (process.env.HARVICS_QUIET_LOGS !== '1') console.log(`[Tier-0] Ingesting Transaction: ${rawInputs.traceId}`);
 
     // A. NORMALIZE
     const normalizedData = this.normalizeData(rawInputs);
@@ -131,16 +131,16 @@ export class IntelligenceNode {
   }
 
   private static normalizeData(raw: any): Partial<IntelligenceContext> {
-    console.log('[Tier-0] Normalizing Data (Units, Currency, Language)...');
+    if (process.env.HARVICS_QUIET_LOGS !== '1') console.log('[Tier-0] Normalizing Data (Units, Currency, Language)...');
     return raw; 
   }
 
   private static validateData(ctx: Partial<IntelligenceContext>): boolean {
     if (!ctx.traceId || !ctx.sales || !ctx.localisation) {
-      console.warn('[Tier-0] Validation Error: Missing critical signals');
+      if (process.env.HARVICS_QUIET_LOGS !== '1') console.warn('[Tier-0] Validation Error: Missing critical signals');
       return false;
     }
-    console.log('[Tier-0] Data Validation Passed: Certified Data Pool Ready');
+    if (process.env.HARVICS_QUIET_LOGS !== '1') console.log('[Tier-0] Data Validation Passed: Certified Data Pool Ready');
     return true;
   }
 

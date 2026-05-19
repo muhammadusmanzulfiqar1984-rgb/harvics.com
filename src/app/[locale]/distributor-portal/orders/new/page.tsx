@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function PlaceNewOrder() {
   const locale = useLocale()
@@ -35,6 +36,7 @@ export default function PlaceNewOrder() {
 
   return (
     <div className="space-y-6">
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold text-[#C3A35E]">Place New Order</h1>
         <Link

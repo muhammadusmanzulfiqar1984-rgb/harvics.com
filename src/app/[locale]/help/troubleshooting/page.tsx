@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { getTranslations } from 'next-intl/server'
 import { SUPPORTED_LOCALES } from '@/config/locales'
 
 export async function generateStaticParams() {
@@ -7,12 +8,13 @@ export async function generateStaticParams() {
 
 export default async function TroubleshootingPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
+  const t = await getTranslations('help')
 
   const issues = [
-    { id: 'login', title: 'Login Issues', description: 'Problems signing in', icon: '🔐' },
-    { id: 'payment', title: 'Payment Problems', description: 'Payment not processing', icon: '💳' },
-    { id: 'delivery', title: 'Delivery Delays', description: 'Order not arriving', icon: '🚚' },
-    { id: 'website', title: 'Website Errors', description: 'Page not loading', icon: '🌐' }
+    { id: 'login', title: t('troubleshooting.items.login.title'), description: t('troubleshooting.items.login.description'), icon: '🔐' },
+    { id: 'payment', title: t('troubleshooting.items.payment.title'), description: t('troubleshooting.items.payment.description'), icon: '💳' },
+    { id: 'delivery', title: t('troubleshooting.items.delivery.title'), description: t('troubleshooting.items.delivery.description'), icon: '🚚' },
+    { id: 'website', title: t('troubleshooting.items.website.title'), description: t('troubleshooting.items.website.description'), icon: '🌐' }
   ]
 
   return (
@@ -28,10 +30,10 @@ export default async function TroubleshootingPage({ params }: { params: Promise<
           
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
             <h1 className="text-4xl md:text-5xl font-serif font-medium text-white mb-4">
-              Troubleshooting
+              {t('troubleshooting.title')}
             </h1>
             <p className="text-lg text-white/80 max-w-2xl mx-auto font-light">
-              Common issues and quick solutions
+              {t('troubleshooting.subtitle')}
             </p>
           </div>
         </section>
@@ -40,7 +42,7 @@ export default async function TroubleshootingPage({ params }: { params: Promise<
           <div className="max-w-7xl mx-auto">
              <div className="mb-8">
               <Link href={`/${locale}/help/`} className="inline-flex items-center text-[#6B1F2B] hover:text-[#50000b] font-medium transition-colors bg-white px-4 py-2 shadow-sm">
-                ← Back to Help Center
+                ← {t('backToHelpCenter')}
               </Link>
             </div>
             

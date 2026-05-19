@@ -4,6 +4,8 @@ import React, { useRef, useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
 
+
+
 const steps = [
   {
     number: '01',
@@ -55,13 +57,12 @@ const HowItWorksSection: React.FC = () => {
   useEffect(() => {
     const obs = new IntersectionObserver(
       ([e]) => { if (e.isIntersecting) setVisible(true) },
-      { threshold: 0.25 }
+      { threshold: 0.15 }
     )
     if (sectionRef.current) obs.observe(sectionRef.current)
     return () => obs.disconnect()
   }, [])
 
-  // Auto-cycle active step
   useEffect(() => {
     if (!visible) return
     const t = setInterval(() => setActiveStep(s => (s + 1) % 3), 3200)
@@ -69,97 +70,186 @@ const HowItWorksSection: React.FC = () => {
   }, [visible])
 
   return (
-    <section ref={sectionRef} className="relative h-full flex flex-col justify-center overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #ffffff 0%, #faf9f7 60%, #f5f4f2 100%)' }}>
+    <section
+      ref={sectionRef}
+      className="relative overflow-hidden py-20"
+      style={{ background: 'linear-gradient(160deg, #ffffff 0%, #faf9f7 60%, #f5f4f2 100%)' }}
+    >
+      <style jsx>{`
+        @keyframes hiwGoldShimmer {
+          0%   { background-position: 100% 0; }
+          100% { background-position: -100% 0; }
+        }
+        @keyframes hiwSweep {
+          0%   { left: -100%; }
+          60%  { left: 200%; }
+          100% { left: 200%; }
+        }
+        @keyframes ctaPulse {
+          0%, 100% { box-shadow: 0 0 0 0 rgba(195,163,94,0.5); }
+          50%       { box-shadow: 0 0 0 10px rgba(195,163,94,0); }
+        }
+        .hiw-gold-card {
+          animation: hiwGoldShimmer 3s linear infinite;
+        }
+        .hiw-gold-card::after {
+          content: '';
+          position: absolute;
+          top: 0; left: -100%;
+          width: 60%;
+          height: 100%;
+          background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,0.28) 50%, transparent 80%);
+          animation: hiwSweep 3.2s ease-in-out infinite;
+          pointer-events: none;
+        }
+        .cta-pulse {
+          animation: ctaPulse 2s ease-in-out infinite;
+        }
+      `}</style>
 
-      {/* Subtle grid */}
+      {/* Subtle grid overlay */}
       <div className="absolute inset-0 pointer-events-none" style={{
         backgroundImage: 'linear-gradient(rgba(107,31,43,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(107,31,43,0.03) 1px, transparent 1px)',
         backgroundSize: '80px 80px',
       }} />
 
-      <div className="relative z-10 max-w-[1100px] mx-auto px-6 w-full">
+      <div className="relative z-10 max-w-[1140px] mx-auto px-6 w-full">
 
-        {/* Header */}
-        <div className="text-center mb-10"
+        {/* ── Header ── */}
+        <div
+          className="text-center mb-14"
           style={{
             opacity: visible ? 1 : 0,
-            transform: visible ? 'translateY(0)' : 'translateY(24px)',
+            transform: visible ? 'translateY(0)' : 'translateY(28px)',
             transition: 'opacity 0.7s ease, transform 0.7s ease',
-          }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '10px' }}>
-            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
-            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>How It Works</span>
-            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
+          }}
+        >
+          {/* Eyebrow */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '14px', marginBottom: '14px' }}>
+            <div style={{ height: '1px', width: '48px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
+            <span style={{
+              color: '#C3A35E', fontSize: '11px', fontWeight: 800,
+              letterSpacing: '0.22em', textTransform: 'uppercase',
+              fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+            }}>
+              How It Works
+            </span>
+            <div style={{ height: '1px', width: '48px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
           </div>
+
+          {/* Main heading */}
           <h2 style={{
-            fontSize: 'clamp(22px, 3vw, 38px)', fontWeight: 700, letterSpacing: '-0.03em',
-            color: '#1d1d1f', lineHeight: 1.08,
+            fontSize: 'clamp(28px, 4vw, 48px)',
+            fontWeight: 800,
+            letterSpacing: '-0.04em',
+            color: '#1d1d1f',
+            lineHeight: 1.05,
             fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
-            marginBottom: '8px',
+            marginBottom: '14px',
           }}>
             From Brief to{' '}
-            <span style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #6B1F2B 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+            <span style={{
+              background: 'linear-gradient(135deg, #C3A35E 0%, #6B1F2B 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+            }}>
               Shelf in 3 Steps
             </span>
           </h2>
-          <p style={{ fontSize: '13px', color: 'rgba(107,31,43,0.45)', maxWidth: '420px', margin: '0 auto', lineHeight: 1.65, fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>
+
+          <p style={{
+            fontSize: '15px',
+            color: 'rgba(107,31,43,0.5)',
+            maxWidth: '460px',
+            margin: '0 auto',
+            lineHeight: 1.7,
+            fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+          }}>
             No middlemen. No guesswork. A repeatable commercial process built for serious buyers.
           </p>
         </div>
 
-        {/* Steps */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', position: 'relative' }}>
+        {/* ── Steps Grid ── */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', position: 'relative', alignItems: 'stretch' }}>
 
-          {/* Connector line */}
-          <div className="absolute top-[52px] left-[calc(16.66%+20px)] right-[calc(16.66%+20px)] pointer-events-none" style={{
-            height: '1px',
-            background: 'linear-gradient(90deg, #C3A35E, rgba(107,31,43,0.3), #C3A35E)',
-            zIndex: 0,
-          }} />
+          {/* Connector line with arrows */}
+          <div className="absolute pointer-events-none" style={{
+            top: '56px',
+            left: 'calc(33.33% - 12px)',
+            right: 'calc(33.33% - 12px)',
+            height: '2px',
+            background: 'linear-gradient(90deg, #C3A35E 0%, rgba(107,31,43,0.4) 50%, #C3A35E 100%)',
+            zIndex: 2,
+          }}>
+            {/* Arrow left-center */}
+            <div style={{
+              position: 'absolute', left: '50%', top: '50%',
+              transform: 'translate(-50%, -50%)',
+              width: 0, height: 0,
+              borderTop: '5px solid transparent',
+              borderBottom: '5px solid transparent',
+              borderLeft: '8px solid #C3A35E',
+            }} />
+          </div>
 
           {steps.map((step, i) => (
             <div
               key={i}
               onClick={() => setActiveStep(i)}
               style={{
-                position: 'relative', zIndex: 1,
                 opacity: visible ? 1 : 0,
-                transform: visible ? 'translateY(0)' : 'translateY(32px)',
-                transition: `opacity 0.6s ease ${0.2 + i * 0.15}s, transform 0.6s ease ${0.2 + i * 0.15}s`,
+                transform: visible ? 'translateY(0)' : 'translateY(40px)',
+                transition: `opacity 0.65s ease ${0.15 + i * 0.18}s, transform 0.65s cubic-bezier(0.22,1,0.36,1) ${0.15 + i * 0.18}s`,
                 cursor: 'pointer',
+                position: 'relative',
+                zIndex: 1,
               }}
             >
-              <div className="hiw-gold-card" style={{
-                background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
-                backgroundSize: '220% 100%',
-                border: activeStep === i ? '2px solid rgba(26,13,0,0.18)' : '1.5px solid rgba(160,130,60,0.18)',
-                padding: '26px 22px',
-                boxShadow: activeStep === i ? '0 10px 36px rgba(195,163,94,0.32), 0 2px 8px rgba(0,0,0,0.08)' : '0 2px 6px rgba(195,163,94,0.1)',
-                transition: 'all 0.3s cubic-bezier(0.4,0,0.2,1)',
-                height: '100%',
-                position: 'relative' as const,
-                overflow: 'hidden',
-              }}>
-
-                {/* Number + Icon */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+              <div
+                className="hiw-gold-card"
+                style={{
+                  background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
+                  backgroundSize: '220% 100%',
+                  border: activeStep === i
+                    ? '2px solid rgba(26,13,0,0.22)'
+                    : '1.5px solid rgba(160,130,60,0.2)',
+                  borderRadius: '16px',
+                  padding: '28px 24px 24px',
+                  boxShadow: activeStep === i
+                    ? '0 16px 48px rgba(195,163,94,0.38), 0 4px 16px rgba(0,0,0,0.1)'
+                    : '0 4px 16px rgba(195,163,94,0.14), 0 1px 4px rgba(0,0,0,0.04)',
+                  transition: 'box-shadow 0.3s ease, border 0.3s ease, transform 0.3s ease',
+                  transform: activeStep === i ? 'translateY(-4px)' : 'translateY(0)',
+                  height: '100%',
+                  position: 'relative' as const,
+                  overflow: 'hidden',
+                  display: 'flex',
+                  flexDirection: 'column' as const,
+                }}
+              >
+                {/* Number + Icon row */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '18px' }}>
+                  {/* Icon box */}
                   <div style={{
-                    width: '48px', height: '48px', borderRadius: '12px', flexShrink: 0,
+                    width: '52px', height: '52px', borderRadius: '14px', flexShrink: 0,
                     background: activeStep === i
                       ? `linear-gradient(135deg, ${step.color}, ${i === 1 ? '#C3A35E' : '#6B1F2B'})`
                       : 'rgba(26,13,0,0.1)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     color: activeStep === i ? '#fff' : '#1a0d00',
                     transition: 'all 0.3s ease',
-                    boxShadow: activeStep === i ? `0 4px 16px ${step.color}40` : 'none',
+                    boxShadow: activeStep === i ? `0 6px 20px ${step.color}55` : 'none',
                   }}>
                     {step.icon}
                   </div>
+
+                  {/* Bold step number */}
                   <div style={{
-                    fontSize: 'clamp(28px, 3vw, 40px)', fontWeight: 800,
-                    color: activeStep === i ? step.color : 'rgba(26,13,0,0.18)',
-                    letterSpacing: '-0.04em', lineHeight: 1,
+                    fontSize: 'clamp(40px, 4vw, 56px)',
+                    fontWeight: 900,
+                    color: activeStep === i ? step.color : 'rgba(26,13,0,0.15)',
+                    letterSpacing: '-0.05em',
+                    lineHeight: 1,
                     fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
                     transition: 'color 0.3s ease',
                   }}>
@@ -169,108 +259,95 @@ const HowItWorksSection: React.FC = () => {
 
                 {/* Title */}
                 <h3 style={{
-                  fontSize: '16px', fontWeight: 700, color: '#1a0d00',
-                  letterSpacing: '-0.02em', marginBottom: '2px',
+                  fontSize: '20px', fontWeight: 800, color: '#1a0d00',
+                  letterSpacing: '-0.03em', marginBottom: '4px',
                   fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
                 }}>
                   {step.title}
                 </h3>
-                <div style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6B1F2B', marginBottom: '10px', fontFamily: '-apple-system, sans-serif' }}>
+
+                {/* Subtitle */}
+                <div style={{
+                  fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em',
+                  textTransform: 'uppercase', color: '#6B1F2B',
+                  marginBottom: '12px',
+                  fontFamily: '-apple-system, sans-serif',
+                }}>
                   {step.subtitle}
                 </div>
 
-                {/* Description */}
+                {/* Description — always fully visible */}
                 <p style={{
-                  fontSize: '11.5px', color: 'rgba(26,13,0,0.55)', lineHeight: 1.6,
+                  fontSize: '13px', color: 'rgba(26,13,0,0.6)', lineHeight: 1.65,
                   fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
-                  marginBottom: '14px',
-                  maxHeight: activeStep === i ? '200px' : '60px',
-                  overflow: 'hidden',
-                  transition: 'max-height 0.4s ease',
+                  marginBottom: '18px',
+                  flex: 1,
                 }}>
                   {step.description}
                 </p>
 
-                {/* Detail pills */}
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+                {/* Detail pills — spaced out */}
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '7px', marginBottom: '14px' }}>
                   {step.details.map((d, j) => (
                     <span key={j} style={{
-                      fontSize: '9px', fontWeight: 700, letterSpacing: '0.08em',
-                      padding: '3px 8px',
-                      background: activeStep === i ? 'rgba(26,13,0,0.1)' : 'rgba(26,13,0,0.06)',
-                      color: activeStep === i ? '#1a0d00' : 'rgba(26,13,0,0.5)',
+                      fontSize: '10px', fontWeight: 700, letterSpacing: '0.08em',
+                      padding: '5px 12px',
+                      background: activeStep === i ? 'rgba(26,13,0,0.12)' : 'rgba(26,13,0,0.07)',
+                      color: activeStep === i ? '#1a0d00' : 'rgba(26,13,0,0.55)',
                       borderRadius: '20px',
                       fontFamily: '-apple-system, sans-serif',
                       textTransform: 'uppercase',
                       transition: 'all 0.3s ease',
+                      border: '1px solid rgba(26,13,0,0.08)',
                     }}>
                       {d}
                     </span>
                   ))}
                 </div>
 
-                {/* Active indicator bar */}
+                {/* Active progress bar */}
                 <div style={{
-                  height: '2px',
+                  height: '3px',
                   background: `linear-gradient(90deg, ${step.color}, transparent)`,
-                  marginTop: '14px',
-                  width: activeStep === i ? '60%' : '20%',
-                  borderRadius: '1px',
-                  transition: 'width 0.4s ease',
+                  width: activeStep === i ? '70%' : '15%',
+                  borderRadius: '2px',
+                  transition: 'width 0.5s ease',
                 }} />
               </div>
             </div>
           ))}
         </div>
 
-        {/* CTA */}
+        {/* ── CTA ── */}
         <div style={{
-          textAlign: 'center', marginTop: '28px',
+          textAlign: 'center', marginTop: '36px',
           opacity: visible ? 1 : 0,
-          transition: 'opacity 0.6s ease 0.8s',
+          transform: visible ? 'translateY(0)' : 'translateY(16px)',
+          transition: 'opacity 0.6s ease 0.9s, transform 0.6s ease 0.9s',
         }}>
-          <Link href={`/${locale}/contact`} style={{
-            display: 'inline-flex', alignItems: 'center', gap: '7px',
-            padding: '11px 28px',
-            background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
-            backgroundSize: '220% 100%',
-            color: '#1a0d00', fontSize: '11px', fontWeight: 700,
-            letterSpacing: '0.12em', textTransform: 'uppercase',
-            textDecoration: 'none', borderRadius: '8px',
-            fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
-          }}>
+          <Link
+            href={`/${locale}/contact`}
+            className="cta-pulse"
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: '8px',
+              padding: '14px 36px',
+              background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
+              backgroundSize: '220% 100%',
+              color: '#1a0d00', fontSize: '12px', fontWeight: 800,
+              letterSpacing: '0.14em', textTransform: 'uppercase',
+              textDecoration: 'none', borderRadius: '10px',
+              fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+              border: '1.5px solid rgba(26,13,0,0.14)',
+            }}
+          >
             Start Your Sourcing Brief
-            <svg width="11" height="11" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
             </svg>
           </Link>
         </div>
-      </div>
 
-      <style jsx>{`
-        .hiw-gold-card {
-          animation: hiwGoldShimmer 2.8s linear infinite;
-        }
-        .hiw-gold-card::after {
-          content: '';
-          position: absolute;
-          top: 0; left: -100%;
-          width: 60%;
-          height: 100%;
-          background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,0.3) 50%, transparent 80%);
-          animation: hiwSweep 3s ease-in-out infinite;
-          pointer-events: none;
-        }
-        @keyframes hiwGoldShimmer {
-          0%   { background-position: 100% 0; }
-          100% { background-position: -100% 0; }
-        }
-        @keyframes hiwSweep {
-          0%   { left: -100%; }
-          50%  { left: 200%; }
-          100% { left: 200%; }
-        }
-      `}</style>
+      </div>
     </section>
   )
 }

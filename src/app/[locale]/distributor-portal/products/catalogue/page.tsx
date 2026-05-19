@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function ProductCatalogue() {
   const locale = useLocale()
@@ -21,6 +22,7 @@ export default function ProductCatalogue() {
 
   return (
     <div className="space-y-6">
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <h1 className="text-2xl font-bold text-[#C3A35E]">{t('title')}</h1>
 
       {/* Filters */}

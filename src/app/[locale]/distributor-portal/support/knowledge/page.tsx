@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { useLocale } from 'next-intl'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function KnowledgeBase() {
   const locale = useLocale()
@@ -29,6 +30,7 @@ export default function KnowledgeBase() {
 
   return (
     <div className="space-y-6">
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <h1 className="text-2xl font-bold text-[#C3A35E]">Knowledge Base</h1>
 
       {/* Search Bar */}

@@ -60,8 +60,16 @@ const MapTemplate: React.FC<MapTemplateProps> = ({
           <div className="bg-white rounded-lg shadow overflow-hidden">
             <div className="w-full h-[600px] rounded-lg">
               {map || (
-                <div className="w-full h-full bg-white flex items-center justify-center">
-                  <p className="text-black">Map view coming soon</p>
+                <div className="w-full h-full bg-gradient-to-br from-[#F5F1E8] to-white flex items-center justify-center p-8">
+                  <div className="max-w-xl text-center">
+                    <h2 className="text-xl font-semibold text-[#6B1F2B]">Map Data Is Not Available Yet</h2>
+                    <p className="mt-3 text-sm text-black/70">
+                      Live geographic data could not be loaded for this view. You can still use filters and side panels, or retry to refresh map layers.
+                    </p>
+                    <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-[#C3A35E]/40 bg-white px-4 py-2 text-xs text-[#6B1F2B]">
+                      Operational mode: panel data remains available while map tiles recover.
+                    </div>
+                  </div>
                 </div>
               )}
             </div>

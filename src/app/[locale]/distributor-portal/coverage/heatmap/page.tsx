@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { useLocale } from 'next-intl'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function CoverageHeatmap() {
   const locale = useLocale()
@@ -17,6 +18,7 @@ export default function CoverageHeatmap() {
 
   return (
     <div className="space-y-6">
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <h1 className="text-2xl font-bold text-[#C3A35E]">Coverage Heatmap</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">

@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { useCountry } from '@/contexts/CountryContext'
 import { formatCurrency } from '@/data/countryData'
 import { formatDate } from '@/utils/dateUtils'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 interface ImportOrder {
   order_id: string
@@ -98,6 +99,7 @@ export default function ImportOrdersPage() {
 
   return (
     <>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       {/* Page Header - V16 Spec */}
       <div className="mb-6">
         <div className="flex justify-between items-center">

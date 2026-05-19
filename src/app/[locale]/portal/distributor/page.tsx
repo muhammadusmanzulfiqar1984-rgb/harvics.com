@@ -1,5 +1,6 @@
 import AuthGuard from '@/components/shared/AuthGuard'
 import DistributorDashboard from '@/components/portals/DistributorDashboard'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 import { UserRole } from '@/types/userScope'
 
@@ -12,7 +13,10 @@ export default async function DistributorPortalPage() {
 
   return (
     <AuthGuard allowedRoles={allowedRoles}>
-      <DistributorDashboard />
+      <div className="space-y-4">
+        <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} />
+        <DistributorDashboard />
+      </div>
     </AuthGuard>
   )
 }

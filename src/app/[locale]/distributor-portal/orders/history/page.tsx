@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function OrderHistory() {
   const locale = useLocale()
@@ -32,6 +33,7 @@ export default function OrderHistory() {
 
   return (
     <div className="space-y-6">
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold text-[#C3A35E]">Order History</h1>
         <Link

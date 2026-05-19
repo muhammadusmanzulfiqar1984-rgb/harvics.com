@@ -58,7 +58,7 @@ export const foodMegaMenu: NavigationMenu = {
           id: 'food-inspiration',
           label: 'Food Inspiration',
           href: '/food/inspiration',
-          image: '/Images/food-inspiration.jpg',
+          image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop&q=70',
           category: 'product',
           order: 1
         },
@@ -66,7 +66,7 @@ export const foodMegaMenu: NavigationMenu = {
           id: 'food-in-store',
           label: 'Food in Store',
           href: '/food/in-store',
-          image: '/Images/food-in-store.jpg',
+          image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&h=300&fit=crop&q=70',
           category: 'product',
           order: 2
         },
@@ -74,7 +74,7 @@ export const foodMegaMenu: NavigationMenu = {
           id: 'food-drink-gifts',
           label: 'Food & Drink Gifts',
           href: '/food/gifts',
-          image: '/Images/food-gifts.jpg',
+          image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed514?w=400&h=300&fit=crop&q=70',
           category: 'product',
           order: 3
         },
@@ -82,7 +82,7 @@ export const foodMegaMenu: NavigationMenu = {
           id: 'christmas-food',
           label: 'Christmas Food To Order',
           href: '/food/christmas',
-          image: '/Images/christmas-food.jpg',
+          image: 'https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=400&h=300&fit=crop&q=70',
           category: 'product',
           order: 4
         },
@@ -90,7 +90,7 @@ export const foodMegaMenu: NavigationMenu = {
           id: 'recipes',
           label: 'M&S Recipes',
           href: '/food/recipes',
-          image: '/Images/recipes.jpg',
+          image: 'https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=400&h=300&fit=crop&q=70',
           category: 'product',
           order: 5
         },
@@ -98,7 +98,7 @@ export const foodMegaMenu: NavigationMenu = {
           id: 'tom-kerridge',
           label: 'M&S X Tom Kerridge',
           href: '/food/tom-kerridge',
-          image: '/Images/tom-kerridge.jpg',
+          image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&h=300&fit=crop&q=70',
           category: 'product',
           order: 6
         },
@@ -106,7 +106,7 @@ export const foodMegaMenu: NavigationMenu = {
           id: 'cafe',
           label: 'M&S Café',
           href: '/food/cafe',
-          image: '/Images/cafe.jpg',
+          image: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&h=300&fit=crop&q=70',
           category: 'product',
           order: 7
         }

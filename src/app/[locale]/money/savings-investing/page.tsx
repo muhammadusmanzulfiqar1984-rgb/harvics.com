@@ -1,17 +1,10 @@
 import { getTranslations } from 'next-intl/server'
 import { getFolderBasedCategories } from '@/data/folderBasedProducts'
 import { getMoneyPageContent } from '@/utils/contentPopulator'
+import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 
 export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ar' },
-    { locale: 'fr' },
-    { locale: 'es' },
-    { locale: 'de' },
-    { locale: 'zh' },
-    { locale: 'he' }
-  ]
+  return generateAllLocaleParams()
 }
 
 interface SavingsInvestingPageProps {

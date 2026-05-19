@@ -8,7 +8,7 @@
 
 import { Router, Request } from 'express';
 import jwt from 'jsonwebtoken';
-import { getMockUserScope, mockUserCredentials } from './userScopes.data';
+import { getMockUserScope, mockUserCredentials, verifyPassword } from './userScopes.data';
 import { UserScopeTokenPayload } from './userScope.types';
 import { translateError, translateMessage } from '../../core/translate';
 import { auditLogService } from '../../services/auditLog.service';
@@ -41,9 +41,9 @@ authRouter.post('/login', (req, res) => {
     return res.status(400).json({ success: false, error: translateError('missingFields', locale) });
   }
 
-  // Validate password (mock plain-text for dev; production: bcrypt.compare)
+  // Validate password (bcrypt; demo seed users are hashed at startup)
   const credentials = mockUserCredentials[username];
-  if (!credentials || credentials.password !== password) {
+  if (!credentials || !verifyPassword(username, password)) {
     auditLogService.write({
       userId: username || 'unknown',
       userRole: 'unknown',

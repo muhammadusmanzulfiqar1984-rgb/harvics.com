@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { apiClient } from '@/lib/api'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function GPSAnalyticsPage() {
   const [analytics, setAnalytics] = useState<any>(null)
@@ -31,6 +32,7 @@ export default function GPSAnalyticsPage() {
 
   return (
     <>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       {/* Page Header - V16 Spec */}
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">GPS Analytics</h1>

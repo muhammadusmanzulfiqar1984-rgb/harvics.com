@@ -12,6 +12,7 @@ import Footer from '@/components/layout/Footer'
 
 import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
+import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
@@ -21,15 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 // Generate static params for all locales
 export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ar' },
-    { locale: 'fr' },
-    { locale: 'es' },
-    { locale: 'de' },
-    { locale: 'zh' },
-    { locale: 'he' }
-  ]
+  return generateAllLocaleParams()
 }
 
 export default function InvestorRelationsPage() {

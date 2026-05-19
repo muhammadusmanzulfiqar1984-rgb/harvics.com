@@ -62,6 +62,9 @@ export default function UnifiedLoginForm() {
         localStorage.setItem('auth_token', mockToken)
         localStorage.setItem('user_data', JSON.stringify(mockUser))
         localStorage.setItem('user_scope', JSON.stringify(mockUser.scope))
+        // Set cookies so server-side RBAC middleware lets us through
+        document.cookie = `auth_token=${mockToken}; path=/; max-age=86400; SameSite=Lax`
+        document.cookie = `x_role=${mockRole}; path=/; max-age=86400; SameSite=Lax`
         routeByRole(mockRole)
         return
       }

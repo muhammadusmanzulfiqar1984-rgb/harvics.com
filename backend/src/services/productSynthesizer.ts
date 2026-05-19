@@ -138,6 +138,10 @@ export class ProductSynthesisEngine {
   public static async generateSku(countryCode: string, existingVector?: RegionalVector): Promise<SkuProfile | null> {
     const vector = existingVector || await (IntelligenceNode as any).analyzeTerritory?.(countryCode) as RegionalVector | null;
     if (!vector) return null;
+    if (!vector.competitive || typeof vector.competitive.marketVoidScore !== 'number') {
+      // Upstream signal incomplete (offline data feeds, etc.) — skip silently.
+      return null;
+    }
 
     // 1. Detect Market Void (Lower threshold for aggressive entry)
     if (vector.competitive.marketVoidScore < 40) {

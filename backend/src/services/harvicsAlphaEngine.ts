@@ -33,7 +33,8 @@ export class HarvicsAlphaEngine {
 
   // The Daily Cron Job
   public static async generateDailyAttackPlan(targetTerritories: string[]): Promise<MarketAttackEntry[]> {
-    console.log(`\n=== HARVICS ALPHA: GENERATING DAILY ATTACK PLAN [${new Date().toISOString().split('T')[0]}] ===\n`);
+    const quiet = process.env.HARVICS_QUIET_LOGS === '1';
+    if (!quiet) console.log(`\n=== HARVICS ALPHA: GENERATING DAILY ATTACK PLAN [${new Date().toISOString().split('T')[0]}] ===\n`);
     
     const attackPlan: MarketAttackEntry[] = [];
 
@@ -47,7 +48,7 @@ export class HarvicsAlphaEngine {
           timestamp: new Date().toISOString(),
         });
       } catch (e) {
-        console.log(`[${code}] Intelligence scan failed, using fallback vector`);
+        if (!quiet) console.log(`[${code}] Intelligence scan failed, using fallback vector`);
         vector = { territory: code, riskScore: 0.3, margin: 0.25, inflationRate: 2.5 };
       }
       if (!vector) continue;
@@ -96,7 +97,7 @@ export class HarvicsAlphaEngine {
         }
 
       } else {
-        console.log(`[${code}] HOLD POSITION. No viable entry vector detected.`);
+        if (!quiet) console.log(`[${code}] HOLD POSITION. No viable entry vector detected.`);
       }
     }
 

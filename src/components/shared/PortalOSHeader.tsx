@@ -1,10 +1,9 @@
 'use client'
 
 import React from 'react'
-import GeoSelector from '@/components/shared/GeoSelector'
 import PortalSwitcher from '@/components/shared/PortalSwitcher'
 import BackButton from '@/components/shared/BackButton'
-import { useLocalization } from '@/utils/localization'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 interface PortalOSHeaderProps {
   portal: 'company' | 'distributor' | 'supplier'
@@ -39,8 +38,6 @@ export default function PortalOSHeader({
   }
 
   const portalInfo = portalLabels[portal]
-  const { getCurrencySymbol, getCurrencyCode, getCountryName } = useLocalization()
-
   return (
     <header className="border-b border-[#EAE0D5] sticky top-0 z-50" style={{ background: 'rgba(255,255,255,0.88)', boxShadow: '0 1px 0 rgba(195,163,94,0.25), 0 4px 16px rgba(107,31,43,0.06)' }}>
       <div className="max-w-[1920px] mx-auto px-6">
@@ -62,14 +59,9 @@ export default function PortalOSHeader({
 
           {/* Right */}
           <div className="flex items-center gap-3">
-            <div className="hidden md:flex items-center gap-1.5 px-3 py-1.5 bg-[#FAF8F5] rounded-lg border border-[#EAE0D5]">
-              <span className="text-xs font-medium text-[#1D1D1F]">
-                {getCurrencySymbol()} {getCurrencyCode()}
-              </span>
-              <span className="text-[#C3A35E] text-xs">·</span>
-              <span className="text-xs text-[#8E8E93]">{getCountryName()}</span>
+            <div className="hidden lg:flex">
+              <LocalizationBar compact showGeo={false} className="items-center gap-2" />
             </div>
-            <GeoSelector />
             <PortalSwitcher currentPortal={portal} />
           </div>
         </div>

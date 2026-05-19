@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { getTranslations } from 'next-intl/server'
 import { SUPPORTED_LOCALES } from '@/config/locales'
 
 export async function generateStaticParams() {
@@ -7,6 +8,7 @@ export async function generateStaticParams() {
 
 export default async function OrdersHelpPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
+  const t = await getTranslations('help')
 
   return (
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
@@ -21,10 +23,10 @@ export default async function OrdersHelpPage({ params }: { params: Promise<{ loc
           
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
             <h1 className="text-4xl md:text-5xl font-serif font-medium text-white mb-4">
-              Order Support
+              {t('orders.title')}
             </h1>
             <p className="text-lg text-white/80 max-w-2xl mx-auto font-light">
-              Track and manage your orders and deliveries
+              {t('orders.subtitle')}
             </p>
           </div>
         </section>
@@ -33,12 +35,28 @@ export default async function OrdersHelpPage({ params }: { params: Promise<{ loc
           <div className="max-w-4xl mx-auto">
              <div className="mb-6">
               <Link href={`/${locale}/help/`} className="inline-flex items-center text-[#6B1F2B] hover:text-[#50000b] font-medium transition-colors bg-white px-4 py-2 shadow-sm">
-                ← Back to Help Center
+                ← {t('backToHelpCenter')}
               </Link>
             </div>
             
             <div className="bg-white p-8 border border-gray-100 shadow-sm">
-              <p className="text-gray-600 leading-relaxed text-lg">Order and delivery support content will appear here.</p>
+              <div className="space-y-5 text-[#2b2b2b] leading-relaxed">
+                <p>
+                  Harvics order operations are engineered for corridor-scale reliability. From RFQ to dispatch, each order event is
+                  traceable through validation, allocation, shipment, and financial settlement, giving buyers and suppliers a single
+                  operational truth across multi-country execution environments.
+                </p>
+                <p>
+                  For private-label and strategic sourcing volumes, we advise using milestone-based order governance: commercial confirmation,
+                  quality lock, production release, dispatch authorization, and landed reconciliation. This approach reduces variance,
+                  protects margin visibility, and supports board-level reporting integrity.
+                </p>
+                <p>
+                  If an order exception appears, open a support request with order ID, corridor, and delivery milestone status.
+                  Our operations teams can triage inventory, customs, documentation, or payment dependencies and provide a controlled
+                  recovery path aligned with HarvicsOS execution standards.
+                </p>
+              </div>
             </div>
           </div>
         </section>

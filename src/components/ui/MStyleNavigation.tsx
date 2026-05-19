@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
-import SaleMegaMenu from './SaleMegaMenu'
+import SaleMegaMenu from '@/features/navigation/SaleMegaMenu'
 
 interface NavigationItem {
   id: string

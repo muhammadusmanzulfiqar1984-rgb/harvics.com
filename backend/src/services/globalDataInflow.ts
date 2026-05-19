@@ -30,60 +30,41 @@ export class GlobalDataInflow {
   // 1. ECONOMIC: Inflation & Currency
   // Uses ExchangeRate-API (Free Tier or Key)
   public static async getEconomicData(countryCode: string, baseCurrency: string = 'USD'): Promise<RealTimeEconomicData> {
+    // Skip external call entirely when offline-mode is enabled (default for demo)
+    if (process.env.HARVICS_OFFLINE_DATA === '1' || process.env.NODE_ENV !== 'production') {
+      return { currencyRate: 1, inflation: 0.03, taxRate: 0.15 };
+    }
     try {
-      console.log(`[GlobalDataInflow] Fetching economic data for ${countryCode}...`);
-      // In production, move API key to env variable
-      const response = await axios.get(`https://api.exchangerate-api.com/v4/latest/${baseCurrency}`);
-      
+      const response = await axios.get(`https://api.exchangerate-api.com/v4/latest/${baseCurrency}`, { timeout: 4000 });
       const rates = response.data.rates;
       const rate = rates[countryCode] || 1.0;
-
-      // Logic: Inflation estimation (Placeholder - would connect to World Bank API)
-      const inflationEstimate = 0.05; 
-      
-      return {
-        currencyRate: rate,
-        inflation: inflationEstimate,
-        taxRate: 0.15 // Default fallback, should override with local Tax Rules
-      };
-    } catch (error) {
-      console.error('[GlobalDataInflow] Economic API Error:', error);
-      return { currencyRate: 1, inflation: 0.03, taxRate: 0.15 }; // Fallback
+      return { currencyRate: rate, inflation: 0.05, taxRate: 0.15 };
+    } catch (err) {
+      console.warn(`[GlobalDataInflow] economic feed offline (${countryCode}) — using fallback`);
+      return { currencyRate: 1, inflation: 0.03, taxRate: 0.15 };
     }
   }
 
   // 2. ENVIRONMENTAL: Weather
   // Uses OpenWeatherMap
   public static async getWeather(city: string): Promise<RealTimeWeatherData> {
+    if (process.env.HARVICS_OFFLINE_DATA === '1' || process.env.NODE_ENV !== 'production') {
+      return { tempCelsius: 28, condition: 'Sunny (demo)', shelfLifeRisk: 'Medium' };
+    }
     try {
-      console.log(`[GlobalDataInflow] Fetching weather for ${city}...`);
-      const API_KEY = process.env.OPENWEATHER_API_KEY || 'YOUR_FREE_KEY'; 
-      
-      // If no key provided in env, return simulation to prevent crash
-      if (API_KEY === 'YOUR_FREE_KEY') {
-         console.warn('[GlobalDataInflow] No Weather API Key. Returning simulation.');
-         return { tempCelsius: 35, condition: 'Sunny (Simulated)', shelfLifeRisk: 'High' };
+      const API_KEY = process.env.OPENWEATHER_API_KEY;
+      if (!API_KEY) {
+        return { tempCelsius: 28, condition: 'Sunny (no key)', shelfLifeRisk: 'Medium' };
       }
-
-      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`);
-      
-      const tempK = response.data.main.temp;
-      const tempC = tempK - 273.15;
+      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`, { timeout: 4000 });
+      const tempC = response.data.main.temp - 273.15;
       const condition = response.data.weather[0].main;
-
       let risk: 'High' | 'Medium' | 'Low' = 'Low';
-      if (tempC > 30) risk = 'High';
-      else if (tempC > 20) risk = 'Medium';
-
-      return {
-        tempCelsius: parseFloat(tempC.toFixed(1)),
-        condition,
-        shelfLifeRisk: risk
-      };
-
-    } catch (error) {
-      console.error('[GlobalDataInflow] Weather API Error:', error);
-      return { tempCelsius: 25, condition: 'Unknown', shelfLifeRisk: 'Low' }; // Fallback
+      if (tempC > 30) risk = 'High'; else if (tempC > 20) risk = 'Medium';
+      return { tempCelsius: parseFloat(tempC.toFixed(1)), condition, shelfLifeRisk: risk };
+    } catch (err) {
+      console.warn(`[GlobalDataInflow] weather feed offline (${city}) — using fallback`);
+      return { tempCelsius: 25, condition: 'Unknown', shelfLifeRisk: 'Low' };
     }
   }
 

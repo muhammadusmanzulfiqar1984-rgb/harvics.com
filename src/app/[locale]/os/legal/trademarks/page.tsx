@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { apiClient } from '@/lib/api'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 interface Trademark {
   id: string
@@ -141,6 +142,7 @@ export default function TrademarksPage() {
 
   return (
     <>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       {/* Page Header - V16 Spec */}
       <div className="mb-6">
         <div className="flex items-center justify-between">

@@ -16,6 +16,8 @@ interface LocalizationBarProps {
   orientation?: 'horizontal' | 'vertical'
   showLabels?: boolean
   compact?: boolean
+  showGeo?: boolean
+  showCurrency?: boolean
   className?: string
 }
 
@@ -23,6 +25,8 @@ export default function LocalizationBar({
   orientation = 'horizontal',
   showLabels = true,
   compact = false,
+  showGeo = true,
+  showCurrency = true,
   className = ''
 }: LocalizationBarProps) {
   const { locale, country, currency, getCountryName, getCurrencySymbol, getTimezone } = useLocalization()
@@ -36,6 +40,13 @@ export default function LocalizationBar({
       <div className={containerClass}>
         <LanguageSwitcher />
         <CountrySelector />
+        {showCurrency && (
+          <div className="flex items-center gap-1 px-3 py-2 rounded-md border border-[#C3A35E]/30 bg-white text-black text-xs font-semibold whitespace-nowrap">
+            <span>{getCurrencySymbol()}</span>
+            <span>{currency.code}</span>
+          </div>
+        )}
+        {showGeo && <GeoSelector />}
       </div>
     )
   }
@@ -63,14 +74,16 @@ export default function LocalizationBar({
       </div>
 
       {/* Geo Selector */}
-      <div className={orientation === 'vertical' ? 'w-full' : ''}>
-        {showLabels && orientation === 'vertical' && (
-          <label className="block text-xs font-semibold text-black mb-1 uppercase tracking-wider">
-            Region
-          </label>
-        )}
-        <GeoSelector />
-      </div>
+      {showGeo && (
+        <div className={orientation === 'vertical' ? 'w-full' : ''}>
+          {showLabels && orientation === 'vertical' && (
+            <label className="block text-xs font-semibold text-black mb-1 uppercase tracking-wider">
+              Region
+            </label>
+          )}
+          <GeoSelector />
+        </div>
+      )}
 
       {/* Geo Mapping Display */}
       <GeoMappingDisplay 
@@ -81,7 +94,7 @@ export default function LocalizationBar({
       />
 
       {/* Currency Info */}
-      {showLabels && (
+      {showLabels && showCurrency && (
         <div className={`flex ${orientation === 'vertical' ? 'flex-col' : 'items-center'} gap-2 text-xs text-black`}>
           <div className="flex items-center gap-1">
             <span className="font-semibold">Currency:</span>

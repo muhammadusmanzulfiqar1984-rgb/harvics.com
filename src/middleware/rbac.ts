@@ -33,10 +33,14 @@ function getUserFromRequest(request: NextRequest): AuthUser | null {
   return null
 }
 
-// Check if route requires authentication
-function requiresAuth(_pathname: string): boolean {
-  // All auth is handled client-side — middleware never blocks any route
-  return false
+// Routes that require an authenticated session.
+// Public surface (homepage, marketing, login, static) stays open.
+const PROTECTED_PREFIXES = ['/admin', '/portal', '/os', '/dashboard', '/distributor-portal']
+
+function requiresAuth(pathname: string): boolean {
+  // Strip locale prefix like /en, /ar, /fr/, etc.
+  const stripped = pathname.replace(/^\/[a-z]{2}(\/|$)/, '/')
+  return PROTECTED_PREFIXES.some(p => stripped === p || stripped.startsWith(`${p}/`))
 }
 
 // Check if route is a portal route

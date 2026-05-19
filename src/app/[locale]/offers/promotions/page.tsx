@@ -3,18 +3,11 @@ import { getFolderBasedCategories } from '@/data/folderBasedProducts'
 import { getOffersPageContent } from '@/utils/contentPopulator'
 import { getProductImages } from '@/utils/harvicsProductImages'
 import Image from 'next/image'
+import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 // Header and Footer are provided by layout.tsx
 
 export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ar' },
-    { locale: 'fr' },
-    { locale: 'es' },
-    { locale: 'de' },
-    { locale: 'zh' },
-    { locale: 'he' }
-  ]
+  return generateAllLocaleParams()
 }
 
 interface PromotionsPageProps {

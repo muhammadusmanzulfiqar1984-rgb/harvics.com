@@ -22,43 +22,43 @@ export default async function HelpPage({ params }: { params: Promise<{ locale: s
   const helpCategories = [
     {
       id: 'faq',
-      title: 'Frequently Asked Questions',
-      description: 'Find answers to common questions',
+      title: t('categories.faq.title'),
+      description: t('categories.faq.description'),
       icon: '❓',
       href: `/${locale}/faq/`
     },
     {
       id: 'contact',
-      title: 'Contact Support',
-      description: 'Get in touch with our support team',
+      title: t('categories.contact.title'),
+      description: t('categories.contact.description'),
       icon: '📞',
       href: `/${locale}/contact/`
     },
     {
       id: 'guides',
-      title: 'User Guides',
-      description: 'Step-by-step guides and tutorials',
+      title: t('categories.guides.title'),
+      description: t('categories.guides.description'),
       icon: '📚',
       href: `/${locale}/help/guides/`
     },
     {
       id: 'troubleshooting',
-      title: 'Troubleshooting',
-      description: 'Solve common issues',
+      title: t('categories.troubleshooting.title'),
+      description: t('categories.troubleshooting.description'),
       icon: '🔧',
       href: `/${locale}/help/troubleshooting/`
     },
     {
       id: 'account',
-      title: 'Account Help',
-      description: 'Manage your account and settings',
+      title: t('categories.account.title'),
+      description: t('categories.account.description'),
       icon: '👤',
       href: `/${locale}/help/account/`
     },
     {
       id: 'orders',
-      title: 'Order Support',
-      description: 'Help with orders and deliveries',
+      title: t('categories.orders.title'),
+      description: t('categories.orders.description'),
       icon: '📦',
       href: `/${locale}/help/orders/`
     }
@@ -71,7 +71,7 @@ export default async function HelpPage({ params }: { params: Promise<{ locale: s
           {/* Hero Background Image */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&h=600&fit=crop&q=75"
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=600&fit=crop&q=75"
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
             style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
@@ -86,10 +86,10 @@ export default async function HelpPage({ params }: { params: Promise<{ locale: s
           
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-white mb-6">
-              Help Center
+              {t('page.title')}
             </h1>
             <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto font-light leading-relaxed">
-              Find the help you need
+              {t('page.subtitle')}
             </p>
           </div>
         </section>

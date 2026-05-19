@@ -157,11 +157,6 @@ export const CountryProvider: React.FC<{ children: React.ReactNode }> = ({ child
   }, [])
 
   useEffect(() => {
-    const defaultCountry = getDefaultCountryForLocale(locale)
-    setSelectedCountryState(defaultCountry)
-  }, [locale])
-
-  useEffect(() => {
     const loadScope = async () => {
       setAccessLoading(true)
       try {

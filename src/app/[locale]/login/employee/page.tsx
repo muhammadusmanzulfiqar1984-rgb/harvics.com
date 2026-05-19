@@ -1,18 +1,11 @@
 // Header and Footer are provided by layout.tsx - DO NOT import them here to avoid duplication
 import { getTranslations } from 'next-intl/server'
 import EmployeeLoginForm from './EmployeeLoginForm'
+import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 
 // Generate static params for all locales
 export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ar' },
-    { locale: 'fr' },
-    { locale: 'es' },
-    { locale: 'de' },
-    { locale: 'zh' },
-    { locale: 'he' }
-  ]
+  return generateAllLocaleParams()
 }
 
 export default async function EmployeeLoginPage() {

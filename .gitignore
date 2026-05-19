@@ -94,3 +94,5 @@ public/Industries Picture/
 public/*.png
 public/*.jpg
 public/*.jpeg
+.next-prod/
+.next/

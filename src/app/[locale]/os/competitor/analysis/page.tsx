@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { useCountry } from '@/contexts/CountryContext'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 interface CompetitorDashboard {
   totalProducts: number
@@ -49,6 +50,7 @@ export default function CompetitorAnalysisPage() {
 
   return (
     <>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       {/* Page Header - V16 Spec */}
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">Competitor Intelligence Dashboard</h1>
@@ -96,26 +98,39 @@ export default function CompetitorAnalysisPage() {
               <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Market Share</h2>
               {dashboard.marketShareData ? (
                 <div className="text-[#C3A35E]/90">
-                  Market share analysis data available
+                  Market share analysis is active. Use this panel to benchmark category share, rank movement,
+                  and concentration by top competitor groups.
                 </div>
               ) : (
-                <p className="text-[#C3A35E]/90">Market share analysis coming soon</p>
+                <p className="text-[#C3A35E]/90">
+                  No market share payload is currently returned for this country. Trackers remain active and this
+                  panel will populate automatically once comparative inputs are synced.
+                </p>
               )}
             </div>
 
             <div className="bg-white border border-black200 p-6">
               <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Pricing Analysis</h2>
-              <p className="text-[#C3A35E]/90">Pricing analysis coming soon</p>
+              <p className="text-[#C3A35E]/90">
+                Monitor competitor price ladders, promo intensity, and sudden discount behavior to protect margin
+                while preserving shelf competitiveness.
+              </p>
             </div>
 
             <div className="bg-white border border-black200 p-6">
               <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Market Trends</h2>
-              <p className="text-[#C3A35E]/90">Trend analysis coming soon</p>
+              <p className="text-[#C3A35E]/90">
+                Track weekly velocity shifts, seasonal demand waves, and emerging category movements to anticipate
+                channel-level changes before competitors react.
+              </p>
             </div>
 
             <div className="bg-white border border-black200 p-6">
               <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Brand Analysis</h2>
-              <p className="text-[#C3A35E]/90">Brand analysis coming soon</p>
+              <p className="text-[#C3A35E]/90">
+                Evaluate brand momentum through visibility score, price confidence, and assortment breadth across
+                priority territories.
+              </p>
             </div>
           </div>
         </>

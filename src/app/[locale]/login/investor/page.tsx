@@ -4,18 +4,11 @@ import { useTranslations, useLocale } from 'next-intl'
 import Link from 'next/link'
 import InvestorLoginForm from './InvestorLoginForm'
 import AnimatedStats from '@/components/ui/AnimatedStats'
+import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 
 // Generate static params for all locales
 export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ar' },
-    { locale: 'fr' },
-    { locale: 'es' },
-    { locale: 'de' },
-    { locale: 'zh' },
-    { locale: 'he' }
-  ]
+  return generateAllLocaleParams()
 }
 
 export default function InvestorLoginPage() {

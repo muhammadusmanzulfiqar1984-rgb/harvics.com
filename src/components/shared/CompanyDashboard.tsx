@@ -10,6 +10,7 @@ import { formatCompact, formatCurrency as fmtCurrency } from '@/utils/localeForm
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar } from 'recharts'
 import MarketHeatmap from './MarketHeatmap'
 import StrategyValidator from './StrategyValidator'
+import LocalizationBar from './LocalizationBar'
 
 interface FilterState {
   scope: 'global' | 'region' | 'country' | 'city'
@@ -276,7 +277,13 @@ export default function CompanyDashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 flex">
+    <div className="min-h-screen bg-gray-100 flex pt-14">
+      <div className="fixed top-0 left-0 right-0 z-[120] bg-white border-b border-[#C3A35E]/20 px-4 md:px-6 py-2">
+        <div className="max-w-7xl mx-auto">
+          <LocalizationBar compact showGeo={false} className="items-center gap-2" />
+        </div>
+      </div>
+
       {/* Mobile Menu Overlay */}
       {sidebarOpen && (
         <div 

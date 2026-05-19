@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { apiClient } from '@/lib/api'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function CompliancePage() {
   const t = useTranslations('legal')
@@ -47,6 +48,7 @@ export default function CompliancePage() {
 
   return (
     <>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       {/* Page Header - V16 Spec */}
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">Legal Compliance</h1>

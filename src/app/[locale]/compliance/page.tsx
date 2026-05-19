@@ -42,7 +42,7 @@ export default async function CompliancePage({ params }: CompliancePageProps) {
       <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=600&fit=crop&q=75"
+          src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=1200&h=600&fit=crop&q=75"
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
           style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}

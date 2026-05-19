@@ -1,6 +1,7 @@
 import AuthGuard from '@/components/shared/AuthGuard'
 import { SupplierDashboard as SupplierDashboardWidget } from '@/apps/crm/widgets/SupplierDashboard'
 import EnterpriseCRM from '@/components/shared/EnterpriseCRM'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 import { UserRole } from '@/types/userScope'
 import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 import { useLocale } from 'next-intl'
@@ -21,6 +22,8 @@ export default async function SupplierPortalPage({
   return (
     <AuthGuard allowedRoles={allowedRoles}>
       <div className="space-y-8 p-6">
+        <LocalizationBar compact showGeo={false} className="items-center gap-2" />
+
         {/* Supplier Dashboard Widget (KPIs & Actions) */}
         <div>
           <h1 className="text-2xl font-bold text-[#C3A35E] mb-6">Supplier Cockpit</h1>

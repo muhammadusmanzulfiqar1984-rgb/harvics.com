@@ -1,14 +1,27 @@
+import bcrypt from 'bcryptjs';
 import { UserScope } from './userScope.types';
 
-// Mock user credentials - in production, use bcrypt hashed passwords
-export const mockUserCredentials: Record<string, { password: string }> = {
-  admin: { password: 'admin' },
-  supplier_user: { password: 'password' },
-  distributor_user: { password: 'password' },
-  sales_officer_user: { password: 'password' },
-  country_manager_user: { password: 'password' },
-  hq_user: { password: 'password' },
+// Demo credentials. Plain-text passwords are hashed at module load with
+// bcryptjs so the runtime path uses the same compare logic as production.
+// Swap this map for a real users table — no other call sites change.
+const DEMO_PASSWORDS: Record<string, string> = {
+  admin: 'admin',
+  supplier_user: 'password',
+  distributor_user: 'password',
+  sales_officer_user: 'password',
+  country_manager_user: 'password',
+  hq_user: 'password',
 };
+
+export const mockUserCredentials: Record<string, { passwordHash: string }> = Object.fromEntries(
+  Object.entries(DEMO_PASSWORDS).map(([user, pwd]) => [user, { passwordHash: bcrypt.hashSync(pwd, 10) }])
+);
+
+export function verifyPassword(username: string, plaintext: string): boolean {
+  const record = mockUserCredentials[username];
+  if (!record) return false;
+  return bcrypt.compareSync(plaintext, record.passwordHash);
+}
 
 export const mockUserScopes: Record<string, UserScope> = {
   admin: {

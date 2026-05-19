@@ -13,6 +13,9 @@ import AdminPanel from '@/components/shared/AdminPanel'
 import StockTicker from '@/features/finance/StockTicker'
 import StockChart from '@/features/finance/StockChart'
 import InvestorRelationsForm from '@/app/[locale]/investor-relations/InvestorRelationsForm'
+import ModuleArchitectureExplorer from '@/components/os-domains/ModuleArchitectureExplorer'
+import WorkflowConsole from '@/components/os-domains/WorkflowConsole'
+import ERPConsoles from '@/components/os-domains/erp/ERPConsoles'
 
 // Type definitions for domain data
 interface OrderData {
@@ -132,6 +135,7 @@ type TabType =
   | 'gps-tracking'
   | 'localization'
   | 'workflows'
+  | 'modules'
   | 'admin'
 
 const countrySlugToISO: Record<string, string> = {
@@ -626,8 +630,8 @@ export default function EnterpriseCRM({ persona, locale: localeProp }: Enterpris
       // Suppliers see: Overview, Orders (POs received), Inventory (raw materials/finished goods), Logistics (shipments), Finance (invoices), CRM (Harvics relationship)
       return ['overview', 'orders', 'inventory', 'logistics', 'finance', 'crm']
     } else if (actualRole === 'company' || actualRole === 'hq' || actualRole === 'country_manager') {
-      // Company/Admin gets ALL modules: Full enterprise access
-      return ['overview', 'orders', 'inventory', 'logistics', 'finance', 'crm', 'hr', 'executive', 'investor', 'legal-ipr', 'competitor', 'import-export', 'gps-tracking', 'localization', 'workflows', 'admin']
+      // Company/Admin gets ALL modules: Full enterprise access including 71-module explorer
+      return ['overview', 'orders', 'inventory', 'logistics', 'finance', 'crm', 'hr', 'executive', 'investor', 'legal-ipr', 'competitor', 'import-export', 'gps-tracking', 'localization', 'workflows', 'modules', 'admin']
     }
     // Fallback to persona prop if role not found
     switch (persona) {
@@ -637,7 +641,7 @@ export default function EnterpriseCRM({ persona, locale: localeProp }: Enterpris
         return ['overview', 'orders', 'inventory', 'logistics', 'finance', 'crm']
       case 'company':
       case 'manager':
-        return ['overview', 'orders', 'inventory', 'logistics', 'finance', 'crm', 'hr', 'executive', 'investor', 'legal-ipr', 'competitor', 'import-export', 'gps-tracking', 'localization', 'workflows', 'admin']
+        return ['overview', 'orders', 'inventory', 'logistics', 'finance', 'crm', 'hr', 'executive', 'investor', 'legal-ipr', 'competitor', 'import-export', 'gps-tracking', 'localization', 'workflows', 'modules', 'admin']
       default:
         return ['overview', 'orders', 'inventory', 'logistics', 'finance', 'crm']
     }
@@ -819,6 +823,7 @@ export default function EnterpriseCRM({ persona, locale: localeProp }: Enterpris
     'gps-tracking': '📍',
     localization: '🌍',
     workflows: '⚙️',
+    modules: '⬡',
     admin: '🔧'
   }
 
@@ -853,6 +858,18 @@ export default function EnterpriseCRM({ persona, locale: localeProp }: Enterpris
         return t('roleIndicator.manager')
       default:
         return ''
+    }
+  }
+
+  const getTabLabel = (tab: TabType) => {
+    try {
+      return t(`tabs.${tab}`)
+    } catch {
+      if (tab === 'modules') return 'Modules'
+      return tab
+        .split('-')
+        .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+        .join(' ')
     }
   }
 
@@ -939,7 +956,7 @@ export default function EnterpriseCRM({ persona, locale: localeProp }: Enterpris
                   {tabIcons[tab]}
                 </span>
                 <span className="text-sm capitalize font-medium">
-                  {t(`tabs.${tab}`)}
+                  {getTabLabel(tab)}
                 </span>
               </button>
             ))}
@@ -1123,6 +1140,13 @@ export default function EnterpriseCRM({ persona, locale: localeProp }: Enterpris
                 countryData={countryData}
                 data={data?.workflow}
               />
+            )}
+            {activeTab === 'modules' && (
+              <div className="p-8 max-w-7xl">
+                <ModuleArchitectureExplorer />
+                <WorkflowConsole />
+                <ERPConsoles />
+              </div>
             )}
             {activeTab === 'admin' && (
               <AdminPanel 

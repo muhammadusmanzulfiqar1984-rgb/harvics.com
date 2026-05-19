@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { apiClient } from '@/lib/api'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function FleetPage() {
   const [vehicles, setVehicles] = useState<any[]>([])
@@ -37,6 +38,7 @@ export default function FleetPage() {
 
   return (
     <div>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       {/* Page Header - V16 Spec */}
       <div className="mb-6">
         <div className="flex justify-between items-center">

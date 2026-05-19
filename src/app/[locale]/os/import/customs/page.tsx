@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { apiClient } from '@/lib/api'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function CustomsPage() {
   const [hsCodes, setHsCodes] = useState<any[]>([])
@@ -33,6 +34,7 @@ export default function CustomsPage() {
 
   return (
     <>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       {/* Page Header - V16 Spec */}
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">Customs & Tariffs</h1>

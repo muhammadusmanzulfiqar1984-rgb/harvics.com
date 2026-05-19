@@ -222,7 +222,7 @@ const APPS = [
       { label: 'Industries', value: '10' },
       { label: 'Integrations', value: '30+' },
     ],
-    unsplash: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop&q=80',
+    unsplash: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=600&fit=crop&q=80',
   },
 ]
 

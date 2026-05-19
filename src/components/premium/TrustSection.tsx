@@ -10,6 +10,7 @@ const certifications = [
     color: '#1a6b3c',
     backdrop: 'radial-gradient(ellipse at 30% 40%, rgba(26,107,60,0.35) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(26,107,60,0.22) 0%, transparent 55%)',
     icon: '🔬',
+    bgPhoto: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1400&q=60&fit=crop',
   },
   {
     code: 'HACCP',
@@ -18,6 +19,7 @@ const certifications = [
     color: '#1a4a6b',
     backdrop: 'radial-gradient(ellipse at 60% 30%, rgba(26,74,107,0.35) 0%, transparent 60%), radial-gradient(ellipse at 25% 70%, rgba(26,74,107,0.22) 0%, transparent 55%)',
     icon: '🛡️',
+    bgPhoto: 'https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=1400&q=60&fit=crop',
   },
   {
     code: 'HALAL',
@@ -26,6 +28,7 @@ const certifications = [
     color: '#2d6b1a',
     backdrop: 'radial-gradient(ellipse at 45% 35%, rgba(45,107,26,0.35) 0%, transparent 60%), radial-gradient(ellipse at 80% 65%, rgba(45,107,26,0.22) 0%, transparent 55%)',
     icon: '☪️',
+    bgPhoto: 'https://images.unsplash.com/photo-1567529692333-de9fd6772897?w=1400&q=60&fit=crop',
   },
   {
     code: 'BRC',
@@ -34,6 +37,7 @@ const certifications = [
     color: '#6b1a1a',
     backdrop: 'radial-gradient(ellipse at 70% 40%, rgba(107,26,26,0.35) 0%, transparent 60%), radial-gradient(ellipse at 30% 60%, rgba(107,26,26,0.22) 0%, transparent 55%)',
     icon: '🏅',
+    bgPhoto: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1400&q=60&fit=crop',
   },
   {
     code: 'FSSC 22000',
@@ -42,6 +46,7 @@ const certifications = [
     color: '#3d1a6b',
     backdrop: 'radial-gradient(ellipse at 50% 50%, rgba(61,26,107,0.35) 0%, transparent 60%), radial-gradient(ellipse at 20% 30%, rgba(61,26,107,0.22) 0%, transparent 55%)',
     icon: '✅',
+    bgPhoto: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1400&q=60&fit=crop',
   },
   {
     code: 'CE / EU',
@@ -50,6 +55,7 @@ const certifications = [
     color: '#1a3d6b',
     backdrop: 'radial-gradient(ellipse at 40% 60%, rgba(26,61,107,0.35) 0%, transparent 60%), radial-gradient(ellipse at 75% 30%, rgba(26,61,107,0.22) 0%, transparent 55%)',
     icon: '🇪🇺',
+    bgPhoto: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400&q=60&fit=crop',
   },
 ]
 
@@ -71,6 +77,8 @@ const TrustSection: React.FC = () => {
   const [hoveredLabel, setHoveredLabel] = useState<string | null>(null)
   const [hoveredIcon, setHoveredIcon] = useState<string | null>(null)
 
+  const [hoveredIdx, setHoveredIdx] = useState<number>(0)
+
   useEffect(() => {
     const obs = new IntersectionObserver(
       ([e]) => { if (e.isIntersecting) setVisible(true) },
@@ -82,13 +90,59 @@ const TrustSection: React.FC = () => {
 
   return (
     <section ref={sectionRef} className="relative h-full flex flex-col justify-center overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #ffffff 0%, #faf9f7 50%, #f5f4f2 100%)' }}>
+      style={{ background: '#faf9f7' }}>
+
+      {/* Cross-fading background photo — same style as industries */}
+      {certifications.map((cert, idx) => (
+        <div
+          key={cert.code}
+          aria-hidden="true"
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage: `url(${cert.bgPhoto})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'blur(38px) saturate(1.05)',
+            transform: 'scale(1.12)',
+            opacity: idx === hoveredIdx ? 0.32 : 0,
+            transition: 'opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1)',
+            zIndex: 0,
+          }}
+        />
+      ))}
+      {/* Lighter wash so the backdrop photo + label + icon stay visible */}
+      <div className="absolute inset-0 pointer-events-none" style={{ background: 'rgba(255,255,255,0.40)', zIndex: 1 }} />
+
+      {/* Ambient glow orbs — slow-moving behind content */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 1 }}>
+        <div style={{
+          position: 'absolute', width: '500px', height: '500px', borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(195,163,94,0.12) 0%, rgba(195,163,94,0.04) 40%, transparent 70%)',
+          top: '5%', left: '10%',
+          animation: 'certGlow1 16s ease-in-out infinite',
+          filter: 'blur(40px)',
+        }} />
+        <div style={{
+          position: 'absolute', width: '450px', height: '450px', borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(107,31,43,0.10) 0%, rgba(107,31,43,0.03) 40%, transparent 70%)',
+          bottom: '0%', right: '5%',
+          animation: 'certGlow2 20s ease-in-out infinite',
+          filter: 'blur(50px)',
+        }} />
+        <div style={{
+          position: 'absolute', width: '300px', height: '300px', borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(195,163,94,0.08) 0%, transparent 60%)',
+          top: '40%', right: '30%',
+          animation: 'certGlow3 14s ease-in-out infinite',
+          filter: 'blur(35px)',
+        }} />
+      </div>
 
       {/* Dynamic backdrop that changes on hover */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: hoveredBackdrop || 'transparent',
+          background: hoveredBackdrop || 'radial-gradient(ellipse at 40% 40%, rgba(195,163,94,0.12) 0%, transparent 55%), radial-gradient(ellipse at 65% 55%, rgba(107,31,43,0.10) 0%, transparent 50%)',
           transition: 'background 0.6s ease',
           zIndex: 0,
         }}
@@ -103,12 +157,13 @@ const TrustSection: React.FC = () => {
           <div style={{
             fontSize: 'clamp(80px, 16vw, 220px)',
             fontWeight: 900,
-            color: 'rgba(107,31,43,0.07)',
+            color: 'rgba(107,31,43,0.32)',
             letterSpacing: '-0.04em',
             textTransform: 'uppercase',
             fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
             whiteSpace: 'nowrap',
             userSelect: 'none',
+            textShadow: '0 4px 40px rgba(107,31,43,0.18)',
           }}>
             {hoveredLabel}
           </div>
@@ -119,7 +174,7 @@ const TrustSection: React.FC = () => {
       {hoveredIcon && (
         <div
           className="absolute inset-0 flex items-center justify-center pointer-events-none"
-          style={{ zIndex: 0, fontSize: 'clamp(120px, 22vw, 300px)', opacity: 0.15 }}
+          style={{ zIndex: 0, fontSize: 'clamp(120px, 22vw, 300px)', opacity: 0.65, filter: 'drop-shadow(0 8px 24px rgba(107,31,43,0.25))' }}
         >
           {hoveredIcon}
         </div>
@@ -158,23 +213,26 @@ const TrustSection: React.FC = () => {
                 textAlign: 'center',
                 opacity: visible ? 1 : 0,
                 transform: visible ? 'translateY(0) scale(1)' : 'translateY(16px) scale(0.95)',
-                transition: `opacity 0.5s ease ${0.2 + i * 0.07}s, transform 0.5s ease ${0.2 + i * 0.07}s`,
+                transition: `opacity 0.5s ease ${0.2 + i * 0.07}s, transform 0.5s ease ${0.2 + i * 0.07}s, box-shadow 0.3s ease`,
                 cursor: 'pointer',
                 position: 'relative',
                 overflow: 'hidden',
+                border: '1px solid rgba(107,31,43,0.25)',
+                boxShadow: '0 4px 14px rgba(107,31,43,0.10), 0 1px 3px rgba(107,31,43,0.08), inset 0 1px 0 rgba(255,255,255,0.45)',
               }}
               onMouseEnter={e => {
                 const el = e.currentTarget as HTMLElement
                 el.style.transform = 'translateY(-3px) scale(1.02)'
-                el.style.boxShadow = '0 8px 24px rgba(195,163,94,0.18)'
+                el.style.boxShadow = '0 12px 28px rgba(107,31,43,0.22), 0 4px 10px rgba(195,163,94,0.25), inset 0 1px 0 rgba(255,255,255,0.6)'
                 setHoveredBackdrop(cert.backdrop)
                 setHoveredLabel(cert.code)
                 setHoveredIcon(cert.icon)
+                setHoveredIdx(i)
               }}
               onMouseLeave={e => {
                 const el = e.currentTarget as HTMLElement
                 el.style.transform = 'translateY(0) scale(1)'
-                el.style.boxShadow = 'none'
+                el.style.boxShadow = '0 4px 14px rgba(107,31,43,0.10), 0 1px 3px rgba(107,31,43,0.08), inset 0 1px 0 rgba(255,255,255,0.45)'
                 setHoveredBackdrop(null)
                 setHoveredLabel(null)
                 setHoveredIcon(null)
@@ -191,10 +249,11 @@ const TrustSection: React.FC = () => {
                   fontSize: '12px', fontWeight: 800, color: '#1a0d00',
                   letterSpacing: '-0.01em', marginBottom: '3px',
                   fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
+                  textShadow: '0 1px 0 rgba(255,255,255,0.4)',
                 }}>
                   {cert.code}
                 </div>
-                <div style={{ fontSize: '9px', fontWeight: 600, color: 'rgba(26,13,0,0.6)', lineHeight: 1.3, fontFamily: '-apple-system, sans-serif' }}>
+                <div style={{ fontSize: '9px', fontWeight: 700, color: 'rgba(26,13,0,0.78)', lineHeight: 1.3, fontFamily: '-apple-system, sans-serif' }}>
                   {cert.name}
                 </div>
               </div>
@@ -236,15 +295,17 @@ const TrustSection: React.FC = () => {
                 textAlign: 'center',
                 opacity: visible ? 1 : 0,
                 transform: visible ? 'translateY(0)' : 'translateY(12px)',
-                transition: `opacity 0.4s ease ${0.6 + i * 0.06}s, transform 0.4s ease ${0.6 + i * 0.06}s`,
+                transition: `opacity 0.4s ease ${0.6 + i * 0.06}s, transform 0.4s ease ${0.6 + i * 0.06}s, box-shadow 0.3s ease`,
                 cursor: 'pointer',
                 position: 'relative',
                 overflow: 'hidden',
+                border: '1px solid rgba(107,31,43,0.22)',
+                boxShadow: '0 3px 10px rgba(107,31,43,0.08), 0 1px 2px rgba(107,31,43,0.06), inset 0 1px 0 rgba(255,255,255,0.4)',
               }}
               onMouseEnter={e => {
                 const el = e.currentTarget as HTMLElement
                 el.style.transform = 'translateY(-3px) scale(1.03)'
-                el.style.boxShadow = '0 6px 20px rgba(107,31,43,0.12)'
+                el.style.boxShadow = '0 10px 22px rgba(107,31,43,0.20), 0 4px 8px rgba(195,163,94,0.20), inset 0 1px 0 rgba(255,255,255,0.55)'
                 setHoveredBackdrop(market.backdrop)
                 setHoveredLabel(market.city)
                 setHoveredIcon(null)
@@ -252,8 +313,8 @@ const TrustSection: React.FC = () => {
               onMouseLeave={e => {
                 const el = e.currentTarget as HTMLElement
                 el.style.transform = 'translateY(0) scale(1)'
-                el.style.boxShadow = 'none'
-                setHoveredBackdrop(null)
+                el.style.boxShadow = '0 3px 10px rgba(107,31,43,0.08), 0 1px 2px rgba(107,31,43,0.06), inset 0 1px 0 rgba(255,255,255,0.4)'
+                setHoveredBackdrop(market.backdrop)
                 setHoveredLabel(null)
               }}
               >
@@ -322,6 +383,20 @@ const TrustSection: React.FC = () => {
           0%   { left: -100%; }
           50%  { left: 200%; }
           100% { left: 200%; }
+        }
+        @keyframes certGlow1 {
+          0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.7; }
+          33% { transform: translate(50px, 30px) scale(1.15); opacity: 1; }
+          66% { transform: translate(-30px, -20px) scale(0.9); opacity: 0.8; }
+        }
+        @keyframes certGlow2 {
+          0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.6; }
+          40% { transform: translate(-40px, -35px) scale(1.2); opacity: 1; }
+          70% { transform: translate(25px, 20px) scale(0.85); opacity: 0.7; }
+        }
+        @keyframes certGlow3 {
+          0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+          50% { transform: translate(35px, -25px) scale(1.1); opacity: 0.9; }
         }
       `}</style>
     </section>

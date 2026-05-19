@@ -21,7 +21,7 @@ const industryMeta: Record<string, { desc: string; gradient: string; image?: str
 
 const CARD_WIDTH = 420
 const CARD_GAP = 16
-const AUTO_ADVANCE_MS = 3800
+const AUTO_ADVANCE_MS = 3200
 
 const EnhancedIndustryGrid: React.FC = () => {
   const locale = useLocale()
@@ -29,7 +29,6 @@ const EnhancedIndustryGrid: React.FC = () => {
   const [dragging, setDragging] = useState(false)
   const [dragStartX, setDragStartX] = useState(0)
   const [dragDelta, setDragDelta] = useState(0)
-  const [isHoveringSlider, setIsHoveringSlider] = useState(false)
   const [winWidth, setWinWidth] = useState(1440)
   const autoRef = useRef<NodeJS.Timeout | null>(null)
   const total = navVerticals.length
@@ -47,12 +46,11 @@ const EnhancedIndustryGrid: React.FC = () => {
     setDragDelta(0)
   }, [total])
 
-  // Auto-advance
+  // Auto-advance — always runs, never paused
   useEffect(() => {
-    if (isHoveringSlider) return
     autoRef.current = setInterval(() => goTo(active + 1), AUTO_ADVANCE_MS)
     return () => { if (autoRef.current) clearInterval(autoRef.current) }
-  }, [active, isHoveringSlider, goTo])
+  }, [active, goTo])
 
   // Drag handlers
   const onDragStart = (e: React.MouseEvent | React.TouchEvent) => {
@@ -85,16 +83,13 @@ const EnhancedIndustryGrid: React.FC = () => {
   return (
     <section
       className="relative h-full flex flex-col justify-center overflow-hidden"
-      style={{ background: activeMeta.bg }}
-      onMouseEnter={() => setIsHoveringSlider(true)}
-      onMouseLeave={() => setIsHoveringSlider(false)}
+      style={{ background: '#0a0a0a' }}
     >
-      {/* Cross-fading background photo — Option A: opacity 0.12, blur 40px */}
+      {/* Single cinematic backdrop — only render active */}
       {navVerticals.map((v, idx) => {
         const m = industryMeta[v.key]
         if (!m?.bgPhoto) return null
-        // Only render DOM node for active, previous, and next — skip the rest until needed
-        if (Math.abs(idx - active) > 2 && idx !== active) return null
+        if (Math.abs(idx - active) > 1 && idx !== active) return null
         return (
           <div
             key={v.key}
@@ -104,41 +99,46 @@ const EnhancedIndustryGrid: React.FC = () => {
               backgroundImage: `url(${m.bgPhoto})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              filter: 'blur(42px) saturate(0.8)',
-              transform: 'scale(1.12)',
-              opacity: idx === active ? 0.12 : 0,
-              transition: 'opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1)',
+              opacity: idx === active ? 0.45 : 0,
+              transition: 'opacity 0.6s ease-out',
               zIndex: 0,
             }}
           />
         )
       })}
-      {/* White wash over the blurred photo to keep ivory tone */}
-      <div className="absolute inset-0 pointer-events-none" style={{ background: 'rgba(255,255,255,0.72)', zIndex: 1 }} />
+      {/* Dark overlay — left-weighted for narrative depth */}
+      <div className="absolute inset-0 pointer-events-none" style={{
+        background: 'linear-gradient(105deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.2) 45%, rgba(0,0,0,0.55) 100%)',
+        zIndex: 1,
+      }} />
 
-      {/* Header */}
-      <div className="text-center mb-6 relative px-6" style={{ zIndex: 2 }}>
+
+
+      {/* Header — Hubtown-style left-aligned narrative */}
+      <div className="mb-6 relative px-8 md:px-14 max-w-3xl" style={{ zIndex: 2 }}>
         <p style={{
-          fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em',
-          color: '#C3A35E', textTransform: 'uppercase', marginBottom: '10px',
+          fontSize: '10px', fontWeight: 700, letterSpacing: '0.22em',
+          color: '#C3A35E', textTransform: 'uppercase', marginBottom: '14px',
           fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+          borderLeft: '2px solid #C3A35E', paddingLeft: '10px',
         }}>
           10 Verticals &nbsp;·&nbsp; 42 Markets &nbsp;·&nbsp; 1,185+ Products
         </p>
         <h2 style={{
-          fontSize: 'clamp(24px, 3vw, 40px)', fontWeight: 700, letterSpacing: '-0.03em',
-          color: '#1d1d1f', lineHeight: 1.08,
+          fontSize: 'clamp(26px, 3.2vw, 46px)', fontWeight: 600, letterSpacing: '-0.03em',
+          color: '#ffffff', lineHeight: 1.1, textShadow: '0 2px 24px rgba(0,0,0,0.4)',
           fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif'
         }}>
-          One Platform.{' '}
-          <span style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #6B1F2B 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            Ten Industries.
+          One platform.{' '}
+          <br />
+          <span style={{ color: '#C3A35E' }}>
+            Ten industries.
           </span>
         </h2>
         <p style={{
-          fontSize: '14px', color: '#6e6e73', marginTop: '6px',
+          fontSize: '14px', color: 'rgba(255,255,255,0.6)', marginTop: '10px',
           fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
-          letterSpacing: '-0.01em'
+          letterSpacing: '-0.005em', maxWidth: '420px',
         }}>
           From commodities to AI — one intelligent commercial engine covering every sector.
         </p>
@@ -161,7 +161,7 @@ const EnhancedIndustryGrid: React.FC = () => {
             display: 'flex',
             gap: `${CARD_GAP}px`,
             transform: `translateX(${trackX}px)`,
-            transition: dragging ? 'none' : 'transform 0.85s cubic-bezier(0.16, 1, 0.3, 1)',
+            transition: dragging ? 'none' : 'transform 0.5s ease-out',
             willChange: 'transform',
           }}
         >
@@ -181,7 +181,7 @@ const EnhancedIndustryGrid: React.FC = () => {
                   flexShrink: 0,
                   transform: `scale(${scale})`,
                   opacity,
-                  transition: dragging ? 'none' : 'transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1)',
+                  transition: dragging ? 'none' : 'transform 0.5s ease-out, opacity 0.5s ease-out',
                   transformOrigin: 'center center',
                   pointerEvents: isActive ? 'auto' : 'none',
                 }}
@@ -193,45 +193,38 @@ const EnhancedIndustryGrid: React.FC = () => {
                   style={{
                     height: '280px',
                     borderRadius: '20px',
-                    background: hasImage ? '#000' : 'white',
+                    background: 'rgba(0,0,0,0.5)',
+                    border: isActive
+                      ? '1px solid rgba(255,255,255,0.25)'
+                      : '1px solid rgba(255,255,255,0.08)',
                     boxShadow: isActive
-                      ? '0 32px 64px rgba(0,0,0,0.18), 0 8px 16px rgba(0,0,0,0.1)'
-                      : '0 4px 12px rgba(0,0,0,0.06)',
-                    transition: 'box-shadow 0.72s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                      ? '0 20px 50px rgba(0,0,0,0.4)'
+                      : '0 4px 12px rgba(0,0,0,0.2)',
+                    transition: 'box-shadow 0.4s ease, border-color 0.4s ease',
                   }}
                   onClick={e => { if (dragging || Math.abs(dragDelta) > 5) e.preventDefault() }}
                 >
-                  {/* Background image */}
+                  {/* Card image — full with gradient fade + Samsung-style lift on hover */}
                   {hasImage && (
-                    <>
-                      <div className="absolute inset-0 overflow-hidden" style={{ borderRadius: '20px' }}>
+                    <div className="absolute inset-0 overflow-hidden" style={{ borderRadius: '20px' }}>
                         <Image
                           src={meta.image!}
                           alt={vertical.label}
                           fill
                           loading={idx <= 2 ? 'eager' : 'lazy'}
-                          className="object-cover"
+                          className="object-cover group-hover:scale-105 group-hover:-translate-y-3 transition-all duration-300 ease-out"
                           style={{
-                            transform: isActive ? 'scale(1.05)' : 'scale(1)',
-                            transition: 'transform 0.85s cubic-bezier(0.16, 1, 0.3, 1)',
+                            opacity: 0.7,
                           }}
                         />
-                      </div>
                       <div className="absolute inset-0" style={{
-                        background: 'linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.2) 60%, transparent 100%)',
-                        borderRadius: '20px'
+                        background: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 50%, transparent 100%)',
+                        borderRadius: '20px',
                       }} />
-                    </>
+                    </div>
                   )}
 
-                  {/* Maroon+gold border glow on active */}
-                  {isActive && (
-                    <div className="absolute inset-0 pointer-events-none" style={{
-                      borderRadius: '20px',
-                      border: '2px solid rgba(107,31,43,0.8)',
-                      boxShadow: '0 0 0 1px rgba(195,163,94,0.4), 0 0 32px rgba(107,31,43,0.25) inset, 0 0 40px rgba(107,31,43,0.15)',
-                    }} />
-                  )}
+
 
                   {/* Content */}
                   <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -258,12 +251,13 @@ const EnhancedIndustryGrid: React.FC = () => {
                     }}>
                       {meta.desc}
                     </p>
-                    {/* Product count + Enter CTA row */}
+                    {/* Product count + Enter CTA row — Samsung-style slide-up reveal on hover */}
                     <div style={{
                       marginTop: '14px', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
                       opacity: isActive ? 1 : 0,
-                      transform: isActive ? 'translateY(0)' : 'translateY(8px)',
-                      transition: 'opacity 0.4s ease 0.2s, transform 0.4s ease 0.2s',
+                      transform: isActive ? 'translateY(0)' : 'translateY(16px)',
+                      transition: 'opacity 0.35s cubic-bezier(0.35, 0, 0.36, 1) 0.1s, transform 0.35s cubic-bezier(0.35, 0, 0.36, 1) 0.1s',
+                      pointerEvents: isActive ? 'auto' : 'none',
                     }}>
                       <div style={{ display: 'flex', gap: '16px' }}>
                         <span style={{ fontSize: '11px', fontWeight: 700, color: 'rgba(195,163,94,0.9)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
@@ -297,59 +291,83 @@ const EnhancedIndustryGrid: React.FC = () => {
         </div>
       </div>
 
-      {/* Dot indicators */}
-      <div className="flex justify-center gap-2 mt-6" style={{ zIndex: 2, position: 'relative' }}>
-        {navVerticals.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => goTo(idx)}
-            style={{
-              width: idx === active ? '20px' : '6px',
-              height: '6px',
-              borderRadius: '3px',
-              background: idx === active ? '#C3A35E' : 'rgba(195,163,94,0.3)',
-              border: 'none',
-              padding: 0,
-              cursor: 'pointer',
-              transition: 'all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-            }}
-          />
-        ))}
+      {/* Apple-style progress indicator */}
+      <div className="flex flex-col items-center gap-3 mt-6" style={{ zIndex: 2, position: 'relative' }}>
+        {/* Thin progress bar */}
+        <div style={{ width: '200px', height: '2px', background: 'rgba(255,255,255,0.15)', borderRadius: '1px', overflow: 'hidden', position: 'relative' }}>
+          <div style={{
+            position: 'absolute', left: 0, top: 0, height: '100%',
+            width: `${((active + 1) / total) * 100}%`,
+            background: 'linear-gradient(90deg, #6B1F2B, #C3A35E)',
+            borderRadius: '1px',
+            transition: 'width 0.85s cubic-bezier(0.16, 1, 0.3, 1)',
+          }} />
+        </div>
+        {/* Minimal dots */}
+        <div className="flex justify-center gap-1.5">
+          {navVerticals.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => goTo(idx)}
+              aria-label={`Go to slide ${idx + 1}`}
+              style={{
+                width: idx === active ? '24px' : '4px',
+                height: '4px',
+                borderRadius: '2px',
+                background: idx === active
+                  ? 'linear-gradient(90deg, #6B1F2B, #C3A35E)'
+                  : 'rgba(255,255,255,0.25)',
+                border: 'none',
+                padding: 0,
+                cursor: 'pointer',
+                transition: 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
+              }}
+            />
+          ))}
+        </div>
+        {/* Current label */}
+        <p style={{
+          fontSize: '11px', color: 'rgba(255,255,255,0.6)', fontWeight: 500,
+          fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
+          letterSpacing: '0.02em',
+          transition: 'opacity 0.4s ease',
+        }}>
+          {navVerticals[active]?.label}
+        </p>
       </div>
 
-      {/* Prev / Next arrows */}
+      {/* Invisible edge tap zones (Apple style — no visible arrows) */}
       <button
         onClick={() => goTo(active - 1)}
+        aria-label="Previous"
         style={{
-          position: 'absolute', left: '24px', top: '50%', transform: 'translateY(-50%)',
-          zIndex: 20, background: '#ffffff',
-          border: '1px solid rgba(0,0,0,0.08)', borderRadius: '50%',
-          width: '44px', height: '44px', cursor: 'pointer',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-          transition: 'all 0.2s ease',
+          position: 'absolute', left: 0, top: 0, bottom: 0,
+          width: '80px', zIndex: 20, background: 'transparent',
+          border: 'none', cursor: 'w-resize', opacity: 0,
         }}
-      >
-        <svg width="18" height="18" fill="none" stroke="#1d1d1f" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
+      />
       <button
         onClick={() => goTo(active + 1)}
+        aria-label="Next"
         style={{
-          position: 'absolute', right: '24px', top: '50%', transform: 'translateY(-50%)',
-          zIndex: 20, background: '#ffffff',
-          border: '1px solid rgba(0,0,0,0.08)', borderRadius: '50%',
-          width: '44px', height: '44px', cursor: 'pointer',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-          transition: 'all 0.2s ease',
+          position: 'absolute', right: 0, top: 0, bottom: 0,
+          width: '80px', zIndex: 20, background: 'transparent',
+          border: 'none', cursor: 'e-resize', opacity: 0,
         }}
-      >
-        <svg width="18" height="18" fill="none" stroke="#1d1d1f" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
+      />
+
+      <style jsx>{`
+        @keyframes floatOrb1 {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          33% { transform: translate(-40px, 30px) scale(1.1); }
+          66% { transform: translate(20px, -20px) scale(0.95); }
+        }
+        @keyframes floatOrb2 {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          33% { transform: translate(30px, -40px) scale(1.08); }
+          66% { transform: translate(-25px, 25px) scale(0.92); }
+        }
+      `}</style>
     </section>
   )
 }

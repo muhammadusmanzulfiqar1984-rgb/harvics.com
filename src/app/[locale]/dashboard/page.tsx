@@ -1,15 +1,8 @@
 import { redirect } from 'next/navigation'
+import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 
 export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ar' },
-    { locale: 'fr' },
-    { locale: 'es' },
-    { locale: 'de' },
-    { locale: 'zh' },
-    { locale: 'he' }
-  ]
+  return generateAllLocaleParams()
 }
 
 export default async function DashboardIndexPage({ params }: { params: Promise<{ locale: string }> }) {

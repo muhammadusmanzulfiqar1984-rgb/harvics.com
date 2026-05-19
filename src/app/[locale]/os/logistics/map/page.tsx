@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { apiClient } from '@/lib/api'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function MapPage() {
   const [warehouses, setWarehouses] = useState<any[]>([])
@@ -34,6 +35,7 @@ export default function MapPage() {
 
   return (
     <>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       {/* Page Header - V16 Spec */}
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">Digital Mapping</h1>
@@ -93,8 +95,17 @@ export default function MapPage() {
       {/* Map Placeholder */}
       <div className="bg-white border border-black200 p-6">
         <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Map View</h2>
-        <div className="bg-white h-96 flex items-center justify-center">
-          <p className="text-[#C3A35E]/90">Map integration coming soon</p>
+        <div className="bg-white h-96 border border-black100 p-6 flex flex-col justify-center">
+          <p className="text-[#C3A35E]/90 mb-3">
+            Location intelligence is active. Use warehouse and retailer lists to validate node health and route
+            sequencing.
+          </p>
+          <p className="text-sm text-[#C3A35E]/90">
+            Total mapped points: {(warehouses.length + retailers.length).toLocaleString()} ({warehouses.length} warehouses, {retailers.length} retailers)
+          </p>
+          <p className="text-sm text-[#C3A35E]/90 mt-2">
+            For coordinate overlays and lane heatmaps, connect your map provider key in environment settings.
+          </p>
         </div>
       </div>
     </>

@@ -5,15 +5,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useLocale } from 'next-intl'
 
-const WORDS = ['Trading.', 'Distribution.', 'Growth.', 'Innovation.', 'Trust.', 'Intelligence.', 'Precision.']
+const WORDS = ['Execution.', 'Trade Corridors.', 'Private Label.', 'AI Procurement.', 'Governance.', 'Velocity.', 'Scale.']
 
 const STATS = [
-  { label: 'Active Markets', value: '42' },
+  { label: 'Track Record', value: '$700M+' },
+  { label: 'Operating Legacy', value: '18 Years' },
   { label: 'Industry Verticals', value: '10' },
-  { label: 'Trade Volume', value: '$1.2B+' },
-  { label: 'Countries Served', value: '42+' },
-  { label: 'Founded', value: '2019' },
-  { label: 'On-Time Delivery', value: '94.2%' },
+  { label: 'Continents', value: '3' },
+  { label: 'HarvicsOS Modules', value: '71' },
+  { label: 'Trade Corridors', value: 'EU-GCC-South Asia' },
 ]
 
 function useCountUp(target: number, duration = 1800, start = false) {
@@ -41,10 +41,10 @@ const LiquidGlassHero: React.FC = () => {
   const [statsVisible, setStatsVisible] = useState(false)
   const statsRef = useRef<HTMLDivElement>(null)
 
-  const markets = useCountUp(42, 1600, statsVisible)
-  const products = useCountUp(1185, 2000, statsVisible)
-  const countries = useCountUp(42, 1400, statsVisible)
-  const delivery = useCountUp(94, 1800, statsVisible)
+  const trackRecord = useCountUp(700, 1800, statsVisible)
+  const years = useCountUp(18, 1200, statsVisible)
+  const verticals = useCountUp(10, 1200, statsVisible)
+  const continents = useCountUp(3, 900, statsVisible)
 
   useEffect(() => { setIsLoaded(true) }, [])
 
@@ -124,7 +124,7 @@ const LiquidGlassHero: React.FC = () => {
           marginBottom: '22px',
           fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
         }}>
-          Enterprise-Grade Commerce &nbsp;·&nbsp; 10 Industry Verticals &nbsp;·&nbsp; 42+ Markets
+          Sovereign Trade Infrastructure &nbsp;·&nbsp; Founder &amp; CEO Muhammad Usman &nbsp;·&nbsp; EU-GCC-South Asia Corridor
         </div>
 
         {/* Animated Word Swap */}
@@ -144,7 +144,7 @@ const LiquidGlassHero: React.FC = () => {
           fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
           letterSpacing: '-0.01em',
         }}>
-          Connecting 42 markets through intelligent
+          We architect cross-border growth for enterprise buyers across Czech Republic, Germany, Poland, Scandinavia, UAE, KSA, and Pakistan through
           <span style={{
             display: 'inline-block',
             color: '#E5C07B',
@@ -199,10 +199,10 @@ const LiquidGlassHero: React.FC = () => {
         {/* Animated Stats Row */}
         <div ref={statsRef} style={{ display: 'flex', gap: 'clamp(20px, 4vw, 52px)', flexWrap: 'wrap' }}>
           {[
-            { num: markets, suffix: '+', label: 'Active Markets' },
-            { num: products, suffix: '+', label: 'Products Listed' },
-            { num: countries, suffix: '+', label: 'Countries Served' },
-            { num: delivery, suffix: '%', label: 'On-Time Delivery' },
+            { num: trackRecord, prefix: '$', suffix: 'M+', label: 'Track Record' },
+            { num: years, suffix: '', label: 'Years' },
+            { num: verticals, suffix: '', label: 'Verticals' },
+            { num: continents, suffix: '', label: 'Continents' },
           ].map((s, i) => (
             <div key={i} style={{
               transform: isLoaded ? 'translateY(0)' : 'translateY(24px)',
@@ -216,7 +216,7 @@ const LiquidGlassHero: React.FC = () => {
                 lineHeight: 1,
                 fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
               }}>
-                {s.num}{s.suffix}
+                {s.prefix || ''}{s.num}{s.suffix}
               </div>
               <div style={{
                 fontSize: '9px', fontWeight: 700, letterSpacing: '0.12em',
@@ -233,28 +233,6 @@ const LiquidGlassHero: React.FC = () => {
             alignSelf: 'stretch',
             margin: '4px 0',
           }} />
-          <div style={{
-            transform: isLoaded ? 'translateY(0)' : 'translateY(24px)',
-            transition: 'transform 0.8s ease 0.9s',
-          }}>
-            <div style={{
-              fontSize: 'clamp(22px, 2.4vw, 32px)',
-              fontWeight: 700,
-              color: '#ffffff',
-              letterSpacing: '-0.02em',
-              lineHeight: 1,
-              fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
-            }}>
-              $1.2B+
-            </div>
-            <div style={{
-              fontSize: '10px', fontWeight: 600, letterSpacing: '0.1em',
-              color: '#C3A35E', textTransform: 'uppercase', marginTop: '4px',
-              fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
-            }}>
-              Annual Trade Volume
-            </div>
-          </div>
         </div>
 
         {/* Trust badges row */}

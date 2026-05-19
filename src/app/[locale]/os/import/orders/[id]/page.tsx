@@ -8,6 +8,7 @@ import { useCountry } from '@/contexts/CountryContext'
 import { formatCurrency } from '@/data/countryData'
 import { formatDate } from '@/utils/dateUtils'
 import Link from 'next/link'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 interface ImportOrder {
   id: string
@@ -81,31 +82,38 @@ export default function ImportOrderDetailPage() {
 
   if (loading) {
     return (
-      <div className="text-center py-12">
-        <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-[#6B1F2B]"></div>
-        <p className="mt-2 text-[#C3A35E]/90">{t('common.loading') || 'Loading...'}</p>
-      </div>
+      <>
+        <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
+        <div className="text-center py-12">
+          <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-[#6B1F2B]"></div>
+          <p className="mt-2 text-[#C3A35E]/90">{t('common.loading') || 'Loading...'}</p>
+        </div>
+      </>
     )
   }
 
   if (error || !order) {
     return (
-      <div className="space-y-6">
-        <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3">
-          {error || 'Order not found'}
+      <>
+        <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
+        <div className="space-y-6">
+          <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3">
+            {error || 'Order not found'}
+          </div>
+          <Link
+            href={`/${locale}/os/import/orders`}
+            className="text-[#C3A35E]/90 hover:text-[#5a000c] font-medium"
+          >
+            ← Back to Import Orders
+          </Link>
         </div>
-        <Link
-          href={`/${locale}/os/import/orders`}
-          className="text-[#C3A35E]/90 hover:text-[#5a000c] font-medium"
-        >
-          ← Back to Import Orders
-        </Link>
-      </div>
+      </>
     )
   }
 
   return (
     <>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       {/* Breadcrumb - V16 Spec */}
       <div className="mb-4">
         <Link

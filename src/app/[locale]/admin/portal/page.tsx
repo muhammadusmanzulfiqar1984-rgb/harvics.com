@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 import { SUPPORTED_LOCALES } from '@/config/locales'
 
 export async function generateStaticParams() {
@@ -99,6 +100,12 @@ export default async function AdminPortalHubPage({
 
   return (
     <div className="min-h-screen bg-white">
+      <div className="bg-white border-b border-[#C3A35E]/20">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <LocalizationBar compact showGeo={false} className="items-center gap-2" />
+        </div>
+      </div>
+
       <div className="bg-[#6B1F2B] bg-[url('/Images/noise.png')] pt-24 pb-32 relative overflow-hidden">
         {/* Abstract Background Shapes */}
         <div className="absolute inset-0 opacity-20">

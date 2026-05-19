@@ -8,14 +8,15 @@ export async function generateStaticParams() {
 
 export default async function HelpGuidesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
+  const t = await getTranslations('help')
 
   const guides = [
-    { id: 'getting-started', title: 'Getting Started', description: 'Learn the basics', icon: '🚀' },
-    { id: 'account-setup', title: 'Account Setup', description: 'Set up your account', icon: '⚙️' },
-    { id: 'ordering', title: 'How to Order', description: 'Place and track orders', icon: '🛒' },
-    { id: 'payment', title: 'Payment Methods', description: 'Payment options and security', icon: '💳' },
-    { id: 'shipping', title: 'Shipping & Delivery', description: 'Delivery information', icon: '📦' },
-    { id: 'returns', title: 'Returns & Refunds', description: 'Return policy and process', icon: '↩️' }
+    { id: 'getting-started', title: t('guides.items.gettingStarted.title'), description: t('guides.items.gettingStarted.description'), icon: '🚀' },
+    { id: 'account-setup', title: t('guides.items.accountSetup.title'), description: t('guides.items.accountSetup.description'), icon: '⚙️' },
+    { id: 'ordering', title: t('guides.items.ordering.title'), description: t('guides.items.ordering.description'), icon: '🛒' },
+    { id: 'payment', title: t('guides.items.payment.title'), description: t('guides.items.payment.description'), icon: '💳' },
+    { id: 'shipping', title: t('guides.items.shipping.title'), description: t('guides.items.shipping.description'), icon: '📦' },
+    { id: 'returns', title: t('guides.items.returns.title'), description: t('guides.items.returns.description'), icon: '↩️' }
   ]
 
   return (
@@ -31,10 +32,10 @@ export default async function HelpGuidesPage({ params }: { params: Promise<{ loc
           
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
             <h1 className="text-4xl md:text-5xl font-serif font-medium text-white mb-4">
-              User Guides
+              {t('guides.title')}
             </h1>
             <p className="text-lg text-white/80 max-w-2xl mx-auto font-light">
-              Step-by-step guides to help you get the most out of Harvics
+              {t('guides.subtitle')}
             </p>
           </div>
         </section>
@@ -43,7 +44,7 @@ export default async function HelpGuidesPage({ params }: { params: Promise<{ loc
           <div className="max-w-7xl mx-auto">
              <div className="mb-8">
               <Link href={`/${locale}/help/`} className="inline-flex items-center text-[#6B1F2B] hover:text-[#50000b] font-medium transition-colors bg-white px-4 py-2 shadow-sm">
-                ← Back to Help Center
+                ← {t('backToHelpCenter')}
               </Link>
             </div>
             

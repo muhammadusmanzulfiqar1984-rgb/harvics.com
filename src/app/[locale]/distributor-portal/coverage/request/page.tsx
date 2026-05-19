@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function RequestTerritory() {
   const [formData, setFormData] = useState({
@@ -21,6 +22,7 @@ export default function RequestTerritory() {
 
   return (
     <div className="space-y-6">
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <h1 className="text-2xl font-bold text-[#C3A35E]">Request Territory</h1>
 
       <div className="bg-white border border-black200 shadow-sm p-6">

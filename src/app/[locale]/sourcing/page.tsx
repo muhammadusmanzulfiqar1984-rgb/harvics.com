@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useRef } from 'react'
+import React, { use, useState, useRef } from 'react'
 import Link from 'next/link'
 import { getProductImage } from '@/data/productCatalog'
 
@@ -267,8 +267,8 @@ const STATS = [
 
 // ─── Page Component ──────────────────────────────────────────────────────────
 
-export default function SourcingPage({ params }: { params: { locale: string } }) {
-  const locale = params.locale || 'en'
+export default function SourcingPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale = 'en' } = use(params)
   const [activeSection, setActiveSection] = useState<string | null>(null)
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({})
 
@@ -285,7 +285,7 @@ export default function SourcingPage({ params }: { params: { locale: string } })
       <section className="relative bg-[#6B1F2B] py-24 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=600&fit=crop&q=75"
+          src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1200&h=600&fit=crop&q=75"
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
           style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}

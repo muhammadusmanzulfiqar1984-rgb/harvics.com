@@ -6,7 +6,7 @@ import { useLocale } from 'next-intl'
 import { useRouter } from 'next/navigation'
 import AuthGuard from '@/components/shared/AuthGuard'
 import PortalSwitcher from '@/components/shared/PortalSwitcher'
-import GeoSelector from '@/components/shared/GeoSelector'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 import GlobalFilters from '@/components/shared/GlobalFilters'
 import { UserRole } from '@/types/userScope'
 
@@ -112,9 +112,11 @@ export default function PortalSubPageLayout({
                 </Link>
               </div>
 
-              {/* Right: geo + portal switcher + logout */}
+              {/* Right: localization + portal switcher + logout */}
               <div className="flex items-center gap-2">
-                <GeoSelector />
+                <div className="hidden lg:flex">
+                  <LocalizationBar compact showGeo={false} className="items-center gap-2" />
+                </div>
                 <PortalSwitcher currentPortal={portal} />
                 <button
                   onClick={handleLogout}

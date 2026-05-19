@@ -3,6 +3,7 @@ import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
+import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
@@ -14,15 +15,7 @@ interface BrandStoryPageProps {
 }
 
 export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ar' },
-    { locale: 'fr' },
-    { locale: 'es' },
-    { locale: 'de' },
-    { locale: 'zh' },
-    { locale: 'he' }
-  ]
+  return generateAllLocaleParams()
 }
 
 export default async function BrandStoryPage({ params }: BrandStoryPageProps) {

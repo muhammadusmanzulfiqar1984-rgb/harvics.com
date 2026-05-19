@@ -5,6 +5,7 @@ import { useLocale } from 'next-intl'
 import { apiClient } from '@/lib/api'
 import { useCountry } from '@/contexts/CountryContext'
 import Link from 'next/link'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 interface DashboardData {
   imports: {
@@ -68,6 +69,7 @@ export default function ImportExportDashboardPage() {
 
   return (
     <>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       {/* Page Header - V16 Spec */}
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">Import/Export OS Dashboard</h1>

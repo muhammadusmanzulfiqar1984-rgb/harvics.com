@@ -5,6 +5,7 @@ import PaymentMethodsList from '@/components/finance/payments/PaymentMethodsList
 import { getAvailablePaymentMethods } from '@/components/finance/payments/PaymentMethodConfig'
 import { PaymentMethod } from '@/types/payments'
 import { useCountry } from '@/contexts/CountryContext'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function SupplierCheckout() {
   const { countryData } = useCountry()
@@ -66,6 +67,7 @@ export default function SupplierCheckout() {
 
   return (
     <main className="min-h-screen bg-gray-100">
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="pt-20">
         {/* Hero Section */}
         <section className="py-12 md:py-16 px-4 md:px-6 bg-[#6B1F2B]">

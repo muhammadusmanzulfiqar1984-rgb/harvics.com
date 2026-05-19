@@ -6,6 +6,7 @@ import { getFooterPageContent } from '@/utils/contentPopulator'
 
 import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
+import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
@@ -14,15 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 
 export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ar' },
-    { locale: 'fr' },
-    { locale: 'es' },
-    { locale: 'de' },
-    { locale: 'zh' },
-    { locale: 'he' }
-  ]
+  return generateAllLocaleParams()
 }
 
 interface FAQPageProps {

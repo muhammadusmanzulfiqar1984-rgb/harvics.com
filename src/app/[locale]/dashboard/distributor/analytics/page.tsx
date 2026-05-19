@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import api from '@/lib/api'
 import type { DistributorOverview } from '@/types/distributor'
 import type { ApiResponse } from '@/lib/api'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function DistributorAnalytics() {
   const { countryData } = useCountry()
@@ -38,6 +39,7 @@ export default function DistributorAnalytics() {
   if (loading) {
     return (
       <div className="flex h-screen items-center justify-center bg-white">
+        <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
         <div className="text-center">
           <div className="mb-4 h-12 w-12 animate-spin rounded-full border-4 border-solid border-[#6B1F2B] border-t-transparent"></div>
           <p className="text-lg font-semibold text-[#6B1F2B]">
@@ -51,6 +53,7 @@ export default function DistributorAnalytics() {
   if (error) {
     return (
       <div className="flex h-screen items-center justify-center bg-white">
+        <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
         <div className="text-center">
           <h2 className="mb-4 text-2xl font-bold text-red-600">
             Error Loading Data
@@ -64,6 +67,7 @@ export default function DistributorAnalytics() {
   if (!overview) {
     return (
       <div className="flex h-screen items-center justify-center bg-white">
+        <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
         <div className="text-center">
           <h2 className="mb-4 text-2xl font-bold text-[#6B1F2B]">
             No Data Available
@@ -89,6 +93,7 @@ export default function DistributorAnalytics() {
 
   return (
     <main className="min-h-screen bg-gray-100">
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="pt-20">
         {/* Hero Section */}
         <section className="h-[300px] relative bg-[#6B1F2B] overflow-hidden">

@@ -4,12 +4,17 @@ import React from 'react'
 import { useLocale } from 'next-intl'
 import EnterpriseCRM from '@/components/shared/EnterpriseCRM'
 import { DistributorDashboard as DistributorDashboardWidget } from '@/apps/crm/widgets/DistributorDashboard'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 export default function DistributorPortalPage() {
   const locale = useLocale()
 
   return (
     <div className="space-y-8">
+      <div className="px-2 pt-2">
+        <LocalizationBar compact showGeo={false} className="items-center gap-2" />
+      </div>
+
       {/* Distributor Dashboard Widget (AI & Analytics) */}
       <DistributorDashboardWidget />
 

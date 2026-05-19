@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import LocalizationBar from '@/components/shared/LocalizationBar'
 
 interface LegalCase {
   id: string
@@ -90,6 +91,7 @@ export default function LegalCasesPage() {
 
   return (
     <div>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       {/* Page Header - V16 Spec */}
       <div className="mb-6">
         <div className="flex items-center justify-between">

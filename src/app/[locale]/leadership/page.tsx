@@ -29,7 +29,7 @@ export default async function LeadershipPage({ params }: LeadershipPageProps) {
       <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://images.unsplash.com/photo-1560472355-536de3962603?w=1200&h=600&fit=crop&q=75"
+          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop&q=75"
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
           style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}

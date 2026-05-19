@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic'
 import LiquidGlassHero from '@/components/premium/LiquidGlassHero'
 import EnhancedIndustryGrid from '@/components/premium/EnhancedIndustryGrid'
+import HarvicsGlobe from '@/components/HarvicsGlobe'
 import Footer from '@/components/layout/Footer'
 import ThreeDErrorBoundary from '@/components/shared/ThreeDErrorBoundary'
 import ContactSection from '@/components/layout/ContactSection'
@@ -39,6 +40,17 @@ const SupplyChainWheel = dynamic(
     loading: () => (
       <div className="min-h-[50vh] flex items-center justify-center">
         <div className="w-10 h-10 border-4 border-harvics-maroon border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    )
+  }
+)
+
+const CinematicSupplyChainSection = dynamic(
+  () => import('@/components/SupplyChainSection'),
+  {
+    loading: () => (
+      <div className="min-h-[50vh] flex items-center justify-center bg-[#06080a]">
+        <div className="w-10 h-10 border-4 border-[#C9A84C] border-t-transparent rounded-full animate-spin"></div>
       </div>
     )
   }
@@ -137,22 +149,28 @@ export default async function Home() {
           </LazySection>
         </div>
 
-        {/* Frame 8: Supply Chain Wheel */}
-        <div data-frame="8" data-animate className="overflow-hidden relative" style={glassB}>
+        {/* Frame 8: Cinematic Supply Chain — TEMP: SupplyChainWheel hidden */}
+        <div data-frame="8" data-animate className="overflow-hidden relative" style={{ scrollSnapAlign: 'start' }}>
+          <LazySection minHeight="100vh">
+            <ThreeDErrorBoundary>
+              <CinematicSupplyChainSection />
+            </ThreeDErrorBoundary>
+          </LazySection>
+        </div>
+
+        {/* Frame 8b: Supply Chain Wheel — TEMP HIDDEN
+        <div data-frame="8b" data-animate className="overflow-hidden relative" style={glassB}>
           <LazySection minHeight="100vh">
             <ThreeDErrorBoundary>
               <SupplyChainWheel />
             </ThreeDErrorBoundary>
           </LazySection>
         </div>
+        */}
 
-        {/* Frame 9: World Map */}
-        <div data-frame="9" data-animate className="relative" style={{ ...glassA, height: 'auto', minHeight: frameHeight, scrollSnapAlign: 'start' }}>
-          <LazySection minHeight={frameHeight}>
-            <ThreeDErrorBoundary>
-              <InteractiveWorldMap />
-            </ThreeDErrorBoundary>
-          </LazySection>
+        {/* Frame 9: Harvics Globe */}
+        <div data-frame="9" data-animate className="relative overflow-hidden" style={{ ...frameStyle, scrollSnapAlign: 'start' }}>
+          <HarvicsGlobe />
         </div>
 
         {/* Frame 10: Contact */}

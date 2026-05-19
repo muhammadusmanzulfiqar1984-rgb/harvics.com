@@ -1,15 +1,9 @@
 import Link from 'next/link'
+import LocalizationBar from '@/components/shared/LocalizationBar'
+import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 
 export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'ar' },
-    { locale: 'fr' },
-    { locale: 'es' },
-    { locale: 'de' },
-    { locale: 'zh' },
-    { locale: 'he' }
-  ]
+  return generateAllLocaleParams()
 }
 
 export default async function PortalsPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -60,6 +54,12 @@ export default async function PortalsPage({ params }: { params: Promise<{ locale
 
   return (
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
+      <section className="bg-white border-b border-[#C3A35E]/20">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <LocalizationBar compact showGeo={false} className="items-center gap-2" />
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="relative py-20 md:py-24 bg-[#6B1F2B] overflow-hidden">
         {/* Abstract Background Shapes */}

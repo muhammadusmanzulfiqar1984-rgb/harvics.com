@@ -226,9 +226,13 @@ router.post('/copilot/chat', async (req: Request, res: Response) => {
 router.get('/recommendations/:domain', async (req: Request, res: Response) => {
   const generator = domainInsights[req.params.domain];
   if (!generator) return res.status(404).json({ success: false, error: 'Domain not found' });
-  const insights = await generator();
-  const recs = insights.filter((i: any) => i.type === 'recommendation');
-  res.json({ success: true, domain: req.params.domain, recommendations: recs });
+  try {
+    const insights = await generator();
+    const recs = insights.filter((i: any) => i.type === 'recommendation');
+    res.json({ success: true, domain: req.params.domain, recommendations: recs });
+  } catch (err: any) {
+    res.json({ success: true, domain: req.params.domain, recommendations: [], note: 'data unavailable' });
+  }
 });
 
 // ── AUTOMATION SCORE ─────────────────────────────────────────────────
