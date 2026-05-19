@@ -10,11 +10,46 @@
  */
 
 import { Router, Request, Response } from 'express';
+import { z } from 'zod';
 import { customersDb, leadsDb, campaignsDb } from '../../core/db';
 import { translateCustomerSegment, translateError, translateMessage, t } from '../../core/translate';
 import '../../middleware/locale';
 
 const router = Router();
+
+// ── Zod schemas ─────────────────────────────────────────────────────
+const CustomerCreateSchema = z.object({
+  name: z.string().min(1).max(200),
+  segment: z.string().max(50).optional(),
+  country: z.string().max(80).optional(),
+  city: z.string().max(120).optional(),
+  contactEmail: z.string().email().optional().or(z.literal('')),
+});
+
+const LeadCreateSchema = z.object({
+  company: z.string().min(1).max(200),
+  contact: z.string().max(120).optional(),
+  email: z.string().email().optional().or(z.literal('')),
+  stage: z.enum(['Lead', 'Qualified', 'Proposal', 'Negotiation', 'Won', 'Lost']).optional(),
+  value: z.number().nonnegative().max(1_000_000_000).optional(),
+  source: z.string().max(80).optional(),
+});
+
+const CampaignCreateSchema = z.object({
+  name: z.string().min(1).max(200),
+  type: z.string().max(80).optional(),
+  budget: z.number().nonnegative().max(1_000_000_000).optional(),
+  startDate: z.string().max(30).optional(),
+  endDate: z.string().max(30).optional(),
+});
+
+function validationError(res: Response, error: z.ZodError, locale: string) {
+  return res.status(400).json({
+    success: false,
+    error: translateError('missingFields', locale),
+    issues: error.issues.map(i => ({ path: i.path.join('.'), message: i.message }))
+  });
+}
 
 // Helper to get locale
 const getLocale = (req: Request): string => (req as any).locale || 'en';
@@ -76,8 +111,9 @@ router.get('/customers/:id', async (req: Request, res: Response) => {
 
 router.post('/customers', async (req: Request, res: Response) => {
   const locale = getLocale(req);
-  const { name, segment, country, city, contactEmail } = req.body;
-  if (!name) return res.status(400).json({ success: false, error: translateError('missingFields', locale) });
+  const parsed = CustomerCreateSchema.safeParse(req.body || {});
+  if (!parsed.success) return validationError(res, parsed.error, locale);
+  const { name, segment, country, city, contactEmail } = parsed.data;
   const customer = await customersDb.create({
     name, segment: segment || 'Retail', country, city,
     creditRating: 'B', lifetimeValue: 0,
@@ -118,8 +154,9 @@ router.get('/leads/:id', async (req: Request, res: Response) => {
 
 router.post('/leads', async (req: Request, res: Response) => {
   const locale = getLocale(req);
-  const { company, contact, email, stage, value, source } = req.body;
-  if (!company) return res.status(400).json({ success: false, error: translateError('missingFields', locale) });
+  const parsed = LeadCreateSchema.safeParse(req.body || {});
+  if (!parsed.success) return validationError(res, parsed.error, locale);
+  const { company, contact, email, stage, value, source } = parsed.data;
   const lead = await leadsDb.create({
     company, contact, email, stage: stage || 'Lead',
     value: value || 0, source: source || 'Manual'
@@ -151,8 +188,9 @@ router.get('/campaigns', async (req: Request, res: Response) => {
 
 router.post('/campaigns', async (req: Request, res: Response) => {
   const locale = getLocale(req);
-  const { name, type, budget, startDate, endDate } = req.body;
-  if (!name) return res.status(400).json({ success: false, error: translateError('missingFields', locale) });
+  const parsed = CampaignCreateSchema.safeParse(req.body || {});
+  if (!parsed.success) return validationError(res, parsed.error, locale);
+  const { name, type, budget, startDate, endDate } = parsed.data;
   const campaign = await campaignsDb.create({
     name, type: type || 'General', status: 'Active',
     budget: budget || 0, spent: 0, leads: 0, conversions: 0,

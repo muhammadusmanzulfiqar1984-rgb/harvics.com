@@ -24,7 +24,7 @@ import { auditLogRouter } from './modules/admin/auditLog.controller';
 import { commsRouter } from './modules/comms/comms.controller';
 import { notificationService } from './modules/comms/notification.service';
 import { eventBus } from './core/eventBus';
-import { customersDb, leadsDb, employeesDb } from './core/db';
+import { customersDb, leadsDb, employeesDb, inventoryDb } from './core/db';
 
 // In-memory demo store for command-center Orders CRUD (no DB dependency)
 type DemoOrder = {

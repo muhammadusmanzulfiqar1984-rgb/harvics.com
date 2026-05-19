@@ -104,7 +104,43 @@ export function rbacMiddleware(request: NextRequest): NextResponse | undefined {
     return response
   }
 
-  // Authenticated — allow access, client-side handles role-based UI
+  // ── STRICT PORTAL ROLE ENFORCEMENT ───────────────────────────────
+  // Map portal segment → allowed roles
+  const role = String(user.role || '').toLowerCase()
+  const PORTAL_ROLE_MAP: Record<string, string[]> = {
+    distributor: ['distributor', 'sales_officer', 'admin', 'company_admin', 'super_admin', 'hq'],
+    supplier:    ['supplier', 'admin', 'company_admin', 'super_admin', 'hq'],
+    admin:       ['admin', 'company_admin', 'super_admin', 'hq', 'company'],
+  }
+
+  let portalSegment: string | null = null
+  if (pathname.includes('/portal/distributor') || pathname.includes('/distributor-portal')) portalSegment = 'distributor'
+  else if (pathname.includes('/portal/supplier')) portalSegment = 'supplier'
+  else if (pathname.includes('/admin') || pathname.includes('/dashboard/company')) portalSegment = 'admin'
+
+  if (portalSegment) {
+    const allowed = PORTAL_ROLE_MAP[portalSegment] || []
+    if (!allowed.includes(role)) {
+      const localeMatch = pathname.match(/^\/([a-z]{2})(\/|$)/)
+      const locale = localeMatch ? localeMatch[1] : 'en'
+      // Redirect wrong-role users to their own portal landing
+      const homeForRole: Record<string, string> = {
+        distributor: `/${locale}/portal/distributor`,
+        sales_officer: `/${locale}/portal/distributor`,
+        supplier: `/${locale}/portal/supplier`,
+        admin: `/${locale}/dashboard/company`,
+        company_admin: `/${locale}/dashboard/company`,
+        super_admin: `/${locale}/dashboard/company`,
+        hq: `/${locale}/dashboard/company`,
+      }
+      const target = homeForRole[role] || `/${locale}/portals`
+      const denyResp = NextResponse.redirect(new URL(target, request.url))
+      denyResp.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate')
+      denyResp.headers.set('x-rbac-deny', `role=${role} portal=${portalSegment}`)
+      return denyResp
+    }
+  }
+
   return undefined
 }
 
