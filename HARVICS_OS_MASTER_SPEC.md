@@ -1,6 +1,28 @@
 # HARVICS OS — MASTER SPECIFICATION
-# Last Updated: May 19, 2026 (Session 28 — Production Go-Live Hardening)
+# Last Updated: May 20, 2026 (Session 29 — Live v2 Data Wiring Continued)
 # READ THIS FIRST. EVERY SESSION. NO EXCEPTIONS.
+
+---
+
+## ✅ LATEST SESSION UPDATE (May 20, 2026 · Session 29 — CONTINUE)
+
+**TASK COMPLETED:** Wired remaining `/api/v2` Postgres endpoints into 3 additional OS module pages.
+
+### Frontend deliverables
+- `src/app/[locale]/os/legal/page.tsx` now renders 2 live panels:
+  - `/api/v2/documents` (Documents & Contracts)
+  - `/api/v2/audit-events` (Audit Trail — last 500 events)
+- `src/app/[locale]/os/executive/page.tsx` now renders 1 live panel:
+  - `/api/v2/notifications` (Live Notifications Feed)
+- `src/app/[locale]/os/inventory/page.tsx` now renders 1 live panel:
+  - `/api/v2/assets` (Assets Register)
+- All panels reuse existing `src/components/shared/LiveModuleData.tsx` (no new components).
+
+### Validation
+- Diagnostics clean for all 3 edited files.
+- Backend smoke test: 4/4 endpoints returning HTTP 200 with `{success:true, data:[], total:0}`.
+- Total OS pages now wired to live Postgres v2 data: **8** (was 5).
+- Total live tables rendered across OS shell: **11** (was 7).
 
 ---
 
@@ -1673,6 +1695,13 @@ Deliverable: Full frontend connected to Teams 1-4.
 
 
 ## CURRENT STATE — April 2, 2026
+
+### INDUSTRIAL VERTICAL HERO — SLIDER ENABLED (May 20, 2026)
+- File: src/app/[locale]/[vertical]/VerticalPageClient.tsx
+- Scope: Industrial vertical only
+- Change: Replaced single static hero image with a local 3-slide carousel using existing industrial assets
+- Assets: /public/Industries Picture/Industrial Solutions.jpg, /public/Images/industrialsolutions.webp, /public/Images/industrialsolutions.png
+- UX: Apple-style visual rotation preserved while keeping current hero copy, stats, and CTA structure intact
 
 ### WORLD MAP — REBUILT (April 2, 2026)
 - Component: src/features/geo/InteractiveWorldMap.tsx
