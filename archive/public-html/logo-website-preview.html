@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HARVICS - Website Preview with New Logo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #ffffff;
+    }
+
+    /* Navigation Header */
+    .header {
+      background: #ffffff;
+      border-bottom: 1px solid rgba(195, 163, 94, 0.2);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .logo-section img {
+      height: 48px;
+      width: auto;
+    }
+    .company-name {
+      font-size: 28px;
+      font-weight: 700;
+      color: #6B1F2B;
+      letter-spacing: -0.02em;
+    }
+    .tagline {
+      font-size: 12px;
+      color: #C3A35E;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-top: -4px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: #6B1F2B;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: #C3A35E;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #6B1F2B 0%, #8B3A47 100%);
+      color: white;
+      padding: 120px 40px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      line-height: 1.1;
+    }
+    .hero p {
+      font-size: 20px;
+      opacity: 0.95;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+    .hero-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .btn-primary {
+      background: #C3A35E;
+      color: #6B1F2B;
+      padding: 16px 40px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(195, 163, 94, 0.3);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+      padding: 14px 40px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover {
+      background: white;
+      color: #6B1F2B;
+    }
+
+    /* Industries Section */
+    .industries {
+      padding: 100px 40px;
+      background: #f9f9f9;
+    }
+    .industries h2 {
+      text-align: center;
+      font-size: 42px;
+      color: #6B1F2B;
+      margin-bottom: 16px;
+    }
+    .industries-subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 60px;
+    }
+    .industries-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 30px;
+    }
+    .industry-card {
+      background: white;
+      padding: 30px 20px;
+      text-align: center;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      transition: all 0.3s;
+    }
+    .industry-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      border-color: #C3A35E;
+    }
+    .industry-icon {
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
+    .industry-card h3 {
+      font-size: 16px;
+      color: #6B1F2B;
+      font-weight: 600;
+    }
+
+    /* Stats Section */
+    .stats {
+      padding: 80px 40px;
+      background: white;
+    }
+    .stats-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+    }
+    .stat-item {
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 48px;
+      font-weight: 700;
+      color: #C3A35E;
+      margin-bottom: 8px;
+    }
+    .stat-label {
+      font-size: 14px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* Footer */
+    .footer {
+      background: #1a1a1a;
+      color: white;
+      padding: 60px 40px 30px;
+    }
+    .footer-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 40px;
+    }
+    .footer-logo-section img {
+      height: 56px;
+      margin-bottom: 20px;
+    }
+    .footer-tagline {
+      color: #C3A35E;
+      font-size: 14px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .footer-desc {
+      color: rgba(255,255,255,0.7);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .footer h4 {
+      color: #C3A35E;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+    }
+    .footer ul {
+      list-style: none;
+    }
+    .footer ul li {
+      margin-bottom: 12px;
+    }
+    .footer ul li a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+    .footer ul li a:hover {
+      color: #C3A35E;
+    }
+    .footer-bottom {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .copyright {
+      color: rgba(255,255,255,0.5);
+      font-size: 13px;
+    }
+    .social-links {
+      display: flex;
+      gap: 20px;
+    }
+    .social-links a {
+      color: rgba(255,255,255,0.7);
+      font-size: 20px;
+      transition: color 0.2s;
+    }
+    .social-links a:hover {
+      color: #C3A35E;
+    }
+
+    /* Preview Banner */
+    .preview-banner {
+      background: linear-gradient(90deg, #C3A35E 0%, #D4B46E 100%);
+      color: #6B1F2B;
+      padding: 16px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 2000;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Preview Banner -->
+  <div class="preview-banner">
+    🎨 LOGO PREVIEW - This is how your website will look with the new trading house logo
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-section">
+        <img src="/logo-trading-house.svg" alt="HARVICS Logo">
+        <div>
+          <div class="company-name">HARVICS</div>
+          <div class="tagline">Global Ventures</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#">Industries</a>
+        <a href="#">About</a>
+        <a href="#">Solutions</a>
+        <a href="#">Contact</a>
+        <a href="#" class="btn-primary" style="padding: 12px 24px; font-size: 14px;">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Global Trade.<br>Intelligent Platform.</h1>
+    <p>
+      Trading across 10 industries. Sourcing from everywhere. Digital finance. AI-powered operations.
+      One platform managing billions in global commerce.
+    </p>
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary">Explore Industries</a>
+      <a href="#" class="btn-secondary">Book a Demo</a>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section class="industries">
+    <h2>10 Industries. One Platform.</h2>
+    <p class="industries-subtitle">From FMCG to oil & gas, real estate to AI — we trade, source, and manage it all</p>
+    
+    <div class="industries-grid">
+      <div class="industry-card">
+        <div class="industry-icon">🛒</div>
+        <h3>FMCG</h3>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon">👔</div>
+        <h3>Textiles</h3>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon">📦</div>
+        <h3>Commodities</h3>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon">⚙️</div>
+        <h3>Industrial</h3>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon">💎</div>
+        <h3>Minerals</h3>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon">🛢️</div>
+        <h3>Oil & Gas</h3>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon">🏢</div>
+        <h3>Real Estate</h3>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon">🌐</div>
+        <h3>Sourcing</h3>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon">💰</div>
+        <h3>Finance</h3>
+      </div>
+      <div class="industry-card">
+        <div class="industry-icon">🤖</div>
+        <h3>AI & Tech</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">$1.2B+</div>
+        <div class="stat-label">Annual Trade Volume</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Countries Served</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">42</div>
+        <div class="stat-label">Active Markets</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">10</div>
+        <div class="stat-label">Industry Verticals</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo-section">
+        <img src="/logo-trading-house-white.svg" alt="HARVICS Logo">
+        <div class="footer-tagline">Global Trade • Technology • Finance</div>
+        <p class="footer-desc">
+          A global trading conglomerate operating across 10 industries with AI-powered operations and digital finance solutions.
+        </p>
+      </div>
+      
+      <div>
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="#">FMCG</a></li>
+          <li><a href="#">Textiles & Apparels</a></li>
+          <li><a href="#">Commodities</a></li>
+          <li><a href="#">Industrial Solutions</a></li>
+          <li><a href="#">Minerals</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="#">HARVICS OS</a></li>
+          <li><a href="#">HPAY Finance</a></li>
+          <li><a href="#">Global Sourcing</a></li>
+          <li><a href="#">Trade Platform</a></li>
+          <li><a href="#">AI Automation</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="copyright">
+        © 2026 HARVICS Global Ventures. All rights reserved.
+      </div>
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

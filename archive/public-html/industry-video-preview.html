@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HARVICS — Industry Video Loop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0a0a0a; overflow: hidden; height: 100vh; }
+
+    .video-bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .video-bg video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.75) contrast(1.08) saturate(1.05);
+      transition: opacity 0.35s ease;
+      opacity: 1;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background: linear-gradient(
+        105deg,
+        rgba(0,0,0,0.82) 0%,
+        rgba(0,0,0,0.50) 45%,
+        rgba(0,0,0,0.20) 100%
+      );
+    }
+  </style>
+</head>
+<body>
+  <div class="video-bg">
+    <video id="bgVideo" autoplay muted playsinline></video>
+  </div>
+  <div class="overlay"></div>
+
+  <script>
+    const videoFiles = [
+      '/Vedios/compressed/fmcg.mp4',
+      '/Vedios/compressed/textiles.mp4',
+      '/Vedios/compressed/commodities.mp4',
+      '/Vedios/compressed/industrial.mp4',
+      '/Vedios/compressed/minerals.mp4',
+      '/Vedios/compressed/oil-gas.mp4',
+      '/Vedios/compressed/real-estate.mp4',
+      '/Vedios/compressed/sourcing.mp4',
+      '/Vedios/compressed/finance.mp4',
+      '/Vedios/compressed/ai-tech.mp4',
+    ];
+
+    const video = document.getElementById('bgVideo');
+    let idx = 0;
+
+    function playAt(index) {
+      idx = ((index % videoFiles.length) + videoFiles.length) % videoFiles.length;
+      video.style.opacity = '0.15';
+      video.src = videoFiles[idx];
+      video.load();
+      video.play().then(() => {
+        video.style.opacity = '1';
+      }).catch(() => {
+        idx += 1;
+        playAt(idx);
+      });
+    }
+
+    video.addEventListener('ended', () => {
+      playAt(idx + 1);
+    });
+
+    video.addEventListener('error', () => {
+      playAt(idx + 1);
+    });
+
+    playAt(0);
+  </script>
+</body>
+</html>

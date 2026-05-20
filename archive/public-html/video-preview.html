@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HARVICS — Video Section Preview (After Industries)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #faf9f7;
+      color: #1a1a1a;
+    }
+
+    /* ─── QUIET INDUSTRY STRIP (above, so you see the flow) ─── */
+    .industry-mock {
+      background: #f7f5f1;
+      padding: 48px 28px;
+      text-align: center;
+      color: #2a2a2a;
+      border-bottom: 1px solid rgba(195,163,94,0.24);
+    }
+    .industry-mock h2 { font-size: 1.9rem; font-weight: 700; margin-bottom: 10px; color: #6B1F2B; }
+    .industry-mock p { font-size: 0.98rem; opacity: 0.75; }
+    .industry-tiles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      max-width: 980px;
+      margin: 26px auto 0;
+    }
+    .industry-tile {
+      background: white;
+      border: 1px solid rgba(195,163,94,0.28);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #6B1F2B;
+    }
+    .industry-tile span { margin-right: 6px; }
+
+    /* ─── VIDEO SECTION ─── */
+    .video-section {
+      background: linear-gradient(160deg, #ffffff 0%, #fdfcfb 50%, #faf9f7 100%);
+      padding: 90px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Subtle background orb */
+    .video-section::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(195,163,94,0.08) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .video-section::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -80px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(107,31,43,0.06) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 56px;
+    }
+    .section-tag {
+      display: inline-block;
+      background: rgba(195,163,94,0.15);
+      color: #C3A35E;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 99px;
+      border: 1px solid rgba(195,163,94,0.3);
+      margin-bottom: 16px;
+    }
+    .section-header h2 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #6B1F2B;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+    .section-header p {
+      font-size: 1.05rem;
+      color: rgba(0,0,0,0.55);
+      line-height: 1.7;
+    }
+
+    /* ─── MAIN PLAYER ─── */
+    .player-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .main-player {
+      background: #000;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(107,31,43,0.18), 0 4px 16px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    .main-player video {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16/9;
+    }
+    .main-player-info {
+      padding: 20px 24px;
+      background: #fff;
+      border: 1px solid rgba(195,163,94,0.2);
+      border-top: none;
+      border-radius: 0 0 16px 16px;
+    }
+    .main-player-info h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #6B1F2B;
+      margin-bottom: 4px;
+    }
+    .main-player-info p {
+      font-size: 0.88rem;
+      color: rgba(0,0,0,0.55);
+    }
+    .tag-pill {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 4px 12px;
+      background: rgba(107,31,43,0.08);
+      color: #6B1F2B;
+      border-radius: 99px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    /* ─── PLAYLIST SIDEBAR ─── */
+    .playlist {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-height: 540px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+    .playlist::-webkit-scrollbar { width: 4px; }
+    .playlist::-webkit-scrollbar-track { background: transparent; }
+    .playlist::-webkit-scrollbar-thumb { background: rgba(195,163,94,0.4); border-radius: 2px; }
+
+    .playlist-item {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      padding: 12px 14px;
+      background: #fff;
+      border: 1px solid rgba(195,163,94,0.2);
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .playlist-item:hover, .playlist-item.active {
+      border-color: #6B1F2B;
+      box-shadow: 0 2px 12px rgba(107,31,43,0.12);
+    }
+    .playlist-item.active { background: rgba(107,31,43,0.04); }
+
+    .playlist-thumb {
+      width: 60px;
+      height: 42px;
+      background: linear-gradient(135deg, rgba(107,31,43,0.15), rgba(195,163,94,0.15));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.2rem;
+      color: #6B1F2B;
+      position: relative;
+    }
+    .playlist-item.active .playlist-thumb::after {
+      content: '▶';
+      position: absolute;
+      font-size: 0.7rem;
+      color: white;
+      background: #6B1F2B;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      bottom: -4px; right: -4px;
+      line-height: 18px;
+      text-align: center;
+      padding-left: 2px;
+    }
+    .playlist-meta { flex: 1; min-width: 0; }
+    .playlist-meta h4 {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 2px;
+    }
+    .playlist-meta span {
+      font-size: 0.72rem;
+      color: rgba(0,0,0,0.45);
+    }
+
+    .playlist-note {
+      max-width: 1100px;
+      margin: 26px auto 0;
+      font-size: 0.86rem;
+      color: rgba(0,0,0,0.58);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MOCK: Industry Grid above (so you see the flow) -->
+  <div class="industry-mock">
+    <h2>Our 10 Industries</h2>
+    <p>One platform. Every vertical. Built for global scale.</p>
+    <div class="industry-tiles">
+      <div class="industry-tile"><span>🛒</span>FMCG</div>
+      <div class="industry-tile"><span>🧵</span>Textiles</div>
+      <div class="industry-tile"><span>📦</span>Commodities</div>
+      <div class="industry-tile"><span>🏭</span>Industrial</div>
+      <div class="industry-tile"><span>⛽</span>Oil & Gas</div>
+      <div class="industry-tile"><span>💳</span>Finance</div>
+    </div>
+  </div>
+
+  <!-- ✅ VIDEO SECTION — this is what goes after Industry Grid -->
+  <div class="video-section">
+
+    <div class="section-header">
+      <div class="section-tag">▶ Video Library</div>
+      <h2>See Harvics in Action</h2>
+      <p>Six selected FMCG-focused videos, shown in one clean player with no tabs and no clutter.</p>
+    </div>
+
+    <!-- Main Player + Playlist -->
+    <div class="player-container">
+
+      <!-- Main Video Player -->
+      <div class="main-player">
+        <video id="mainVideo" controls autoplay muted>
+          <source src="/Vedios/compressed/product-portfolio.mp4" type="video/mp4" />
+        </video>
+        <div class="main-player-info">
+          <h3 id="videoTitle">Product Portfolio</h3>
+          <p id="videoDesc">FMCG assortment overview and category depth.</p>
+          <span class="tag-pill" id="videoTag">FMCG</span>
+        </div>
+      </div>
+
+      <!-- Playlist Sidebar -->
+      <div class="playlist" id="playlist">
+
+        <div class="playlist-item active" onclick="playVideo(this, '/Vedios/compressed/product-portfolio.mp4', 'Product Portfolio', 'FMCG assortment overview and category depth.', 'FMCG', '📦')">
+          <div class="playlist-thumb">📦</div>
+          <div class="playlist-meta">
+            <h4>Product Portfolio</h4>
+            <span>FMCG</span>
+          </div>
+        </div>
+
+        <div class="playlist-item" onclick="playVideo(this, '/Vedios/compressed/service-portfolio.mp4', 'Service Portfolio', 'FMCG route-to-market and service capability.', 'FMCG', '🧩')">
+          <div class="playlist-thumb">🧩</div>
+          <div class="playlist-meta">
+            <h4>Service Portfolio</h4>
+            <span>FMCG</span>
+          </div>
+        </div>
+
+        <div class="playlist-item" onclick="playVideo(this, '/Vedios/compressed/supply-chain.mp4', 'Supply Chain', 'FMCG supply movement from source to shelf.', 'FMCG', '🚚')">
+          <div class="playlist-thumb">🚚</div>
+          <div class="playlist-meta">
+            <h4>Supply Chain</h4>
+            <span>FMCG</span>
+          </div>
+        </div>
+
+        <div class="playlist-item" onclick="playVideo(this, '/Vedios/compressed/speed.mp4', 'Speed to Market', 'Faster FMCG replenishment and distribution cycles.', 'FMCG', '⚡')">
+          <div class="playlist-thumb">⚡</div>
+          <div class="playlist-meta">
+            <h4>Speed to Market</h4>
+            <span>FMCG</span>
+          </div>
+        </div>
+
+        <div class="playlist-item" onclick="playVideo(this, '/Vedios/compressed/global-reach.mp4', 'Global Reach', 'FMCG market access across multiple regions.', 'FMCG', '🌍')">
+          <div class="playlist-thumb">🌍</div>
+          <div class="playlist-meta">
+            <h4>Global Reach</h4>
+            <span>FMCG</span>
+          </div>
+        </div>
+
+        <div class="playlist-item" onclick="playVideo(this, '/Vedios/compressed/sustainability.mp4', 'Sustainability', 'Responsible FMCG sourcing and operational footprint.', 'FMCG', '🌱')">
+          <div class="playlist-thumb">🌱</div>
+          <div class="playlist-meta">
+            <h4>Sustainability</h4>
+            <span>FMCG</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <p class="playlist-note">Showing 6 FMCG videos in one continuous playlist view.</p>
+
+  </div><!-- end video-section -->
+
+  <script>
+    function playVideo(el, src, title, desc, tag, icon) {
+      // Update video
+      const video = document.getElementById('mainVideo')
+      video.src = src
+      video.play()
+      // Update info
+      document.getElementById('videoTitle').textContent = title
+      document.getElementById('videoDesc').textContent = desc
+      document.getElementById('videoTag').textContent = tag
+      // Update active state
+      document.querySelectorAll('.playlist-item').forEach(i => i.classList.remove('active'))
+      el.classList.add('active')
+    }
+
+    
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HARVICS — Homepage Recommendation (Trial)</title>
+<style>
+  :root{
+    --maroon:#6B1F2B;
+    --maroon-soft:rgba(107,31,43,0.08);
+    --gold:#C3A35E;
+    --gold-soft:rgba(195,163,94,0.12);
+    --ink:#1a1a1a;
+    --muted:#5a5a5a;
+    --bg:#fdfcfb;
+    --header-h:72px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter",sans-serif;color:var(--ink);background:var(--bg);scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+
+  /* Fixed backdrop — visible because frames are now translucent (~0.4 not 0.88) */
+  .backdrop{
+    position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background:
+      radial-gradient(ellipse at 8% 6%, rgba(107,31,43,0.10) 0%, transparent 42%),
+      radial-gradient(ellipse at 92% 90%, rgba(195,163,94,0.14) 0%, transparent 44%),
+      radial-gradient(ellipse at 90% 8%, rgba(195,163,94,0.08) 0%, transparent 38%),
+      linear-gradient(160deg,#ffffff 0%,#fdfcfb 45%,#f6f3ee 100%);
+  }
+
+  /* Header — slim 72px, auto-hide handled by JS */
+  header.site{
+    position:fixed;top:0;left:0;right:0;height:var(--header-h);z-index:50;
+    display:flex;align-items:center;justify-content:space-between;padding:0 28px;
+    background:rgba(255,255,255,0.78);backdrop-filter:saturate(180%) blur(18px);-webkit-backdrop-filter:saturate(180%) blur(18px);
+    border-bottom:1px solid rgba(0,0,0,0.06);
+    transition:transform .35s cubic-bezier(.4,0,.2,1), background .3s;
+  }
+  header.site.hidden{transform:translateY(-100%)}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:.5px;color:var(--maroon)}
+  .brand .dot{width:10px;height:10px;background:var(--gold);border-radius:50%}
+  nav.top a{color:var(--ink);text-decoration:none;margin-left:24px;font-size:14px;opacity:.78}
+  nav.top a:hover{opacity:1;color:var(--maroon)}
+
+  /* Main scroll container — proximity snap (not mandatory). Footer lives OUTSIDE. */
+  main.scroller{
+    margin-top:var(--header-h);
+    height:calc(100vh - var(--header-h));
+    overflow-y:scroll;
+    scroll-snap-type:y proximity; /* was: mandatory — now feels natural on trackpad */
+  }
+
+  section.frame{
+    min-height:calc(100vh - var(--header-h));
+    scroll-snap-align:start;
+    scroll-snap-stop:normal;
+    padding:64px 7vw;
+    display:flex;flex-direction:column;justify-content:center;
+    position:relative;
+    /* Lighter glass so the gradient backdrop is actually visible */
+    background:rgba(255,255,255,0.42);
+    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(0,0,0,0.04);
+  }
+  section.frame.alt{background:rgba(255,255,255,0.62)}
+
+  h1,h2,h3{font-family:"SF Pro Display","Inter",sans-serif;letter-spacing:-0.02em;line-height:1.05}
+  h1{font-size:clamp(40px,5.8vw,84px);font-weight:600;color:var(--maroon)}
+  h2{font-size:clamp(28px,3.4vw,48px);font-weight:600;color:var(--maroon);margin-bottom:12px}
+  h3{font-size:18px;font-weight:600;color:var(--ink)}
+  p.lead{font-size:clamp(16px,1.3vw,20px);color:var(--muted);max-width:640px;line-height:1.55;margin-top:18px}
+  small.tag{display:inline-block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px}
+
+  /* ============ FRAME 1: HERO with primary CTA + audience routing baked in ============ */
+  .hero-grid{display:grid;grid-template-columns:1.2fr .9fr;gap:64px;align-items:center}
+  @media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+
+  .cta-row{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .18s, box-shadow .18s;border:1px solid transparent}
+  .btn-primary{background:var(--maroon);color:#fff;box-shadow:0 8px 24px rgba(107,31,43,0.25)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(107,31,43,0.35)}
+  .btn-ghost{background:rgba(255,255,255,0.6);color:var(--maroon);border-color:rgba(107,31,43,0.2)}
+  .btn-ghost:hover{background:#fff}
+
+  /* Audience routing cards — sit IN the hero, not buried at frame 6 */
+  .audience{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+  @media (max-width:600px){.audience{grid-template-columns:1fr}}
+  .aud-card{
+    padding:18px 18px 16px;background:rgba(255,255,255,0.7);border:1px solid rgba(107,31,43,0.08);
+    border-radius:14px;cursor:pointer;transition:all .25s;text-decoration:none;color:inherit;display:block;
+  }
+  .aud-card:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 14px 30px rgba(0,0,0,0.06)}
+  .aud-card .ic{width:36px;height:36px;border-radius:10px;background:var(--maroon-soft);display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:10px}
+  .aud-card h3{font-size:15px;color:var(--maroon)}
+  .aud-card p{font-size:13px;color:var(--muted);margin-top:4px}
+
+  /* Hero visual — abstract glass orb instead of heavy 3D on first paint */
+  .hero-visual{position:relative;aspect-ratio:1;max-width:520px;margin-left:auto}
+  .orb{
+    position:absolute;inset:0;border-radius:50%;
+    background:
+      radial-gradient(circle at 30% 28%, rgba(255,255,255,0.9) 0%, transparent 35%),
+      radial-gradient(circle at 65% 70%, var(--gold-soft) 0%, transparent 60%),
+      conic-gradient(from 220deg, var(--maroon) 0deg, var(--gold) 120deg, var(--maroon) 240deg, var(--maroon) 360deg);
+    filter:blur(.3px);
+    box-shadow:inset 0 0 60px rgba(255,255,255,0.5), 0 30px 80px rgba(107,31,43,0.25);
+    animation:spin 22s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .orb::after{
+    content:"";position:absolute;inset:8%;border-radius:50%;
+    background:rgba(255,255,255,0.35);backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,0.6);
+  }
+
+  /* ============ FRAME 2: 3D PRODUCT (single hero interactive) ============ */
+  .product-stage{
+    height:50vh;min-height:380px;border-radius:24px;
+    background:linear-gradient(160deg,#fff 0%,#f5f0e8 100%);
+    border:1px solid rgba(195,163,94,0.25);
+    display:flex;align-items:center;justify-content:center;color:var(--muted);
+    box-shadow:0 30px 60px rgba(107,31,43,0.08);
+    margin-top:24px;
+  }
+
+  /* ============ FRAME 3: INDUSTRIES ============ */
+  .ind-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:28px}
+  @media (max-width:900px){.ind-grid{grid-template-columns:repeat(2,1fr)}}
+  .ind{
+    aspect-ratio:1;border-radius:16px;background:rgba(255,255,255,0.75);
+    border:1px solid rgba(0,0,0,0.05);padding:18px;display:flex;flex-direction:column;justify-content:space-between;
+    transition:all .25s;cursor:pointer;
+  }
+  .ind:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 18px 40px rgba(0,0,0,0.08)}
+  .ind .num{font-size:11px;color:var(--gold);font-weight:700;letter-spacing:.15em}
+  .ind .name{font-size:15px;font-weight:600;color:var(--maroon)}
+
+  /* ============ FRAME 4: TRUST ============ */
+  .trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:32px}
+  @media (max-width:800px){.trust-grid{grid-template-columns:1fr}}
+  .cert-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
+  .cert{padding:8px 14px;border-radius:999px;background:var(--maroon-soft);color:var(--maroon);font-size:13px;font-weight:600}
+  .stat{display:flex;gap:18px;padding:18px 0;border-bottom:1px solid rgba(0,0,0,0.06)}
+  .stat .v{font-size:32px;font-weight:600;color:var(--maroon);min-width:96px}
+  .stat .l{color:var(--muted);font-size:14px;align-self:center}
+
+  /* ============ FRAME 5: HOW IT WORKS (replaces both narrative + wheel — one is enough) ============ */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:32px}
+  @media (max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+  .step{padding:24px;background:rgba(255,255,255,0.72);border-radius:16px;border:1px solid rgba(0,0,0,0.05)}
+  .step .n{font-size:13px;color:var(--gold);font-weight:700;letter-spacing:.2em;margin-bottom:10px}
+  .step h3{color:var(--maroon);font-size:18px;margin-bottom:6px}
+  .step p{color:var(--muted);font-size:14px;line-height:1.55}
+
+  /* ============ FRAME 6: WORLD MAP ============ */
+  .map-stage{
+    height:60vh;min-height:420px;border-radius:24px;margin-top:24px;
+    background:radial-gradient(circle at 30% 40%, rgba(195,163,94,0.18), transparent 60%),linear-gradient(160deg,#1a2332 0%,#0f1822 100%);
+    display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);
+    border:1px solid rgba(195,163,94,0.3);
+  }
+
+  /* ============ FRAME 7: CONTACT ============ */
+  .contact-card{
+    margin-top:28px;padding:36px;border-radius:24px;
+    background:linear-gradient(135deg,var(--maroon) 0%,#4a1620 100%);color:#fff;
+    display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;
+  }
+  @media (max-width:800px){.contact-card{grid-template-columns:1fr}}
+  .contact-card h2{color:#fff}
+  .contact-card .btn-primary{background:var(--gold);color:var(--maroon)}
+
+  /* ============ FOOTER (outside snap container) ============ */
+  footer.site{
+    background:#1a1612;color:rgba(255,255,255,0.7);padding:56px 7vw 32px;
+    display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;
+  }
+  @media (max-width:800px){footer.site{grid-template-columns:1fr 1fr}}
+  footer.site h4{color:#fff;font-size:13px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:14px}
+  footer.site a{color:rgba(255,255,255,0.6);text-decoration:none;display:block;padding:5px 0;font-size:14px}
+  footer.site a:hover{color:var(--gold)}
+  footer.site .brand-block p{font-size:14px;line-height:1.6;margin-top:10px}
+  footer.bottom{background:#0f0c0a;color:rgba(255,255,255,0.4);padding:18px 7vw;font-size:12px;display:flex;justify-content:space-between}
+
+  /* Slim dot nav — 7 frames, not 11 */
+  .dotnav{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:40;display:flex;flex-direction:column;gap:12px}
+  .dotnav button{width:9px;height:9px;border-radius:50%;border:none;background:rgba(107,31,43,0.25);cursor:pointer;padding:0;transition:all .25s}
+  .dotnav button.active{background:var(--maroon);transform:scale(1.4)}
+  .dotnav button:hover{background:var(--gold)}
+
+  /* Recommendation banner */
+  .rec-banner{
+    position:fixed;bottom:18px;left:18px;z-index:60;max-width:340px;
+    background:rgba(26,22,18,0.92);color:#fff;padding:14px 16px;border-radius:12px;font-size:12px;line-height:1.5;
+    backdrop-filter:blur(10px);border:1px solid rgba(195,163,94,0.4);
+  }
+  .rec-banner b{color:var(--gold)}
+  .rec-banner .close{float:right;background:none;border:none;color:rgba(255,255,255,0.6);cursor:pointer;font-size:16px;line-height:1;margin-left:8px}
+</style>
+</head>
+<body>
+
+<div class="backdrop" aria-hidden="true"></div>
+
+<header class="site" id="header">
+  <div class="brand"><span class="dot"></span> HARVICS</div>
+  <nav class="top">
+    <a href="#product">Product</a>
+    <a href="#industries">Industries</a>
+    <a href="#how">How it works</a>
+    <a href="#trust">Trust</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<aside class="dotnav" id="dotnav"></aside>
+
+<main class="scroller" id="scroller">
+
+  <!-- FRAME 1: HERO + PRIMARY CTA + AUDIENCE ROUTING (all above the fold) -->
+  <section class="frame" data-label="Home">
+    <div class="hero-grid">
+      <div>
+        <small class="tag">Universal Enterprise Platform</small>
+        <h1>One operating system for ten industries.</h1>
+        <p class="lead">HARVICS unifies sourcing, production, distribution and trade across vertical markets — built on a single ledger, a shared identity layer, and AI that already speaks your industry.</p>
+        <div class="cta-row">
+          <a href="#contact" class="btn btn-primary">Request a demo →</a>
+          <a href="#product" class="btn btn-ghost">See the platform</a>
+        </div>
+
+        <div class="audience">
+          <a class="aud-card" href="#"><div class="ic">🛒</div><h3>I'm a Buyer</h3><p>Source verified suppliers worldwide.</p></a>
+          <a class="aud-card" href="#"><div class="ic">🚚</div><h3>I'm a Distributor</h3><p>Manage territories & channels.</p></a>
+          <a class="aud-card" href="#"><div class="ic">🏭</div><h3>I'm a Supplier</h3><p>Reach qualified global buyers.</p></a>
+        </div>
+      </div>
+      <div class="hero-visual"><div class="orb"></div></div>
+    </div>
+  </section>
+
+  <!-- FRAME 2: SINGLE HERO INTERACTIVE — the 3D product viewer -->
+  <section class="frame alt" id="product" data-label="Product">
+    <small class="tag">The Platform</small>
+    <h2>Built as one. Deployed as ten.</h2>
+    <p class="lead">A single 3D product viewer placeholder — this is the one heavy interactive on the page. Other 3D sections were demoted to static illustrations to keep performance crisp on mid-tier laptops.</p>
+    <div class="product-stage">[ Interactive 3D Product Viewer ]</div>
+  </section>
+
+  <!-- FRAME 3: INDUSTRIES (now AFTER the visitor knows what HARVICS is) -->
+  <section class="frame" id="industries" data-label="Industries">
+    <small class="tag">10 Verticals</small>
+    <h2>Pick the industry. The OS adapts.</h2>
+    <p class="lead">Each vertical inherits the same ledger, identity, and AI core — only the workflows, terminology, and compliance layers change.</p>
+    <div class="ind-grid">
+      <div class="ind"><div class="num">01</div><div class="name">Trading House</div></div>
+      <div class="ind"><div class="num">02</div><div class="name">Manufacturing</div></div>
+      <div class="ind"><div class="num">03</div><div class="name">Agriculture</div></div>
+      <div class="ind"><div class="num">04</div><div class="name">Logistics</div></div>
+      <div class="ind"><div class="num">05</div><div class="name">Pharma</div></div>
+      <div class="ind"><div class="num">06</div><div class="name">Energy</div></div>
+      <div class="ind"><div class="num">07</div><div class="name">Construction</div></div>
+      <div class="ind"><div class="num">08</div><div class="name">Retail / FMCG</div></div>
+      <div class="ind"><div class="num">09</div><div class="name">Hospitality</div></div>
+      <div class="ind"><div class="num">10</div><div class="name">Financial Services</div></div>
+    </div>
+  </section>
+
+  <!-- FRAME 4: TRUST -->
+  <section class="frame alt" id="trust" data-label="Trust">
+    <div class="trust-grid">
+      <div>
+        <small class="tag">Certifications</small>
+        <h2>Built for regulated trade.</h2>
+        <p class="lead">Compliance baked into every transaction — not bolted on at the end.</p>
+        <div class="cert-row">
+          <span class="cert">ISO 27001</span>
+          <span class="cert">SOC 2 Type II</span>
+          <span class="cert">GDPR</span>
+          <span class="cert">HIPAA-ready</span>
+          <span class="cert">PCI DSS</span>
+          <span class="cert">Halal Certified</span>
+        </div>
+      </div>
+      <div>
+        <small class="tag">By the numbers</small>
+        <div class="stat"><div class="v">42</div><div class="l">Countries with active operations</div></div>
+        <div class="stat"><div class="v">71</div><div class="l">Modules across the OS</div></div>
+        <div class="stat"><div class="v">99.97%</div><div class="l">Platform uptime, last 12 months</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRAME 5: HOW IT WORKS (replaces narrative + wheel — one section is enough) -->
+  <section class="frame" id="how" data-label="How">
+    <small class="tag">How it works</small>
+    <h2>From signup to live operations in four steps.</h2>
+    <div class="steps">
+      <div class="step"><div class="n">STEP 01</div><h3>Pick your vertical</h3><p>Choose from 10 industry templates — workflows, glossary and KPIs preconfigured.</p></div>
+      <div class="step"><div class="n">STEP 02</div><h3>Connect your data</h3><p>Import suppliers, SKUs and channels via CSV, API or our migration team.</p></div>
+      <div class="step"><div class="n">STEP 03</div><h3>Invite your network</h3><p>Buyers, distributors and suppliers get role-scoped access on day one.</p></div>
+      <div class="step"><div class="n">STEP 04</div><h3>Operate & scale</h3><p>Real ledger, real AI co-pilot, real-time dashboards across every territory.</p></div>
+    </div>
+  </section>
+
+  <!-- FRAME 6: WORLD MAP -->
+  <section class="frame alt" data-label="Reach">
+    <small class="tag">Global Reach</small>
+    <h2>One platform. Every market.</h2>
+    <div class="map-stage">[ Interactive World Map — 42 countries, 8 hub regions ]</div>
+  </section>
+
+  <!-- FRAME 7: CONTACT -->
+  <section class="frame" id="contact" data-label="Contact">
+    <small class="tag">Get started</small>
+    <h2>Ready to see HARVICS on your data?</h2>
+    <p class="lead">Book a 30-minute working session. We'll demo the modules relevant to your vertical and share a custom rollout plan.</p>
+    <div class="contact-card">
+      <div>
+        <h2 style="margin:0 0 8px">Talk to our team</h2>
+        <p style="opacity:.85;margin:0">Live in your industry within 14 days of kickoff.</p>
+      </div>
+      <a href="#" class="btn btn-primary">Schedule demo →</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER lives OUTSIDE the snap scroller — no nested scroll trap -->
+<footer class="site">
+  <div class="brand-block">
+    <h4 style="color:var(--gold)">HARVICS</h4>
+    <p>Universal enterprise OS for ten industry verticals. One ledger. One identity. Ten verticals.</p>
+  </div>
+  <div>
+    <h4>Platform</h4>
+    <a href="#">Product</a><a href="#">Industries</a><a href="#">Pricing</a><a href="#">Security</a>
+  </div>
+  <div>
+    <h4>Company</h4>
+    <a href="#">About</a><a href="#">Careers</a><a href="#">News</a><a href="#">Contact</a>
+  </div>
+  <div>
+    <h4>Resources</h4>
+    <a href="#">Docs</a><a href="#">API</a><a href="#">Status</a><a href="#">Changelog</a>
+  </div>
+</footer>
+<div class="bottom">
+  <span>© 2026 HARVICS. All rights reserved.</span>
+  <span>Privacy · Terms · Cookies</span>
+</div>
+
+<div class="rec-banner" id="banner">
+  <button class="close" onclick="document.getElementById('banner').remove()">×</button>
+  <b>Trial preview.</b> 7 frames (was 11), proximity snap (not mandatory), audience routing in hero, single 3D interactive, footer outside snap container, 72px slim header with auto-hide. Scroll naturally — try a trackpad flick.
+</div>
+
+<script>
+  // Build dot nav from sections
+  const scroller = document.getElementById('scroller');
+  const sections = scroller.querySelectorAll('section.frame');
+  const dotnav = document.getElementById('dotnav');
+  sections.forEach((s,i)=>{
+    const b = document.createElement('button');
+    b.title = s.dataset.label || ('Frame '+(i+1));
+    b.addEventListener('click',()=>s.scrollIntoView({behavior:'smooth',block:'start'}));
+    dotnav.appendChild(b);
+  });
+  const dots = dotnav.querySelectorAll('button');
+
+  // Active dot via IntersectionObserver
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        const idx = [...sections].indexOf(e.target);
+        dots.forEach((d,i)=>d.classList.toggle('active',i===idx));
+      }
+    });
+  },{root:scroller,threshold:0.55});
+  sections.forEach(s=>io.observe(s));
+
+  // Auto-hide header on scroll down, show on scroll up
+  const header = document.getElementById('header');
+  let lastY = 0;
+  scroller.addEventListener('scroll',()=>{
+    const y = scroller.scrollTop;
+    if(y > lastY + 8 && y > 120) header.classList.add('hidden');
+    else if(y < lastY - 4) header.classList.remove('hidden');
+    lastY = y;
+  });
+</script>
+
+</body>
+</html>

@@ -96,3 +96,10 @@ public/*.jpg
 public/*.jpeg
 .next-prod/
 .next/
+.next_*/
+backend/dist/
+build_output.txt
+build_output_check.txt
+build_exit_code.txt
+count_pages.ts
+get_output.sh

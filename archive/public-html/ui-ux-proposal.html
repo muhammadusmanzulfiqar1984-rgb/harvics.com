@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HARVICS /x Trial UI</title>
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --panel: #ffffff;
+      --ink: #1a1a1a;
+      --muted: #5e5e5e;
+      --gold: #c3a35e;
+      --maroon: #6b1f2b;
+      --ok: #0f8b5f;
+      --line: #e8e2d5;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "DM Sans", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(195, 163, 94, 0.12), transparent 45%),
+        radial-gradient(circle at 85% 20%, rgba(107, 31, 43, 0.08), transparent 40%),
+        var(--bg);
+      min-height: 100vh;
+    }
+
+    .trial-banner {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: linear-gradient(90deg, #d7be80, #c3a35e);
+      color: #351017;
+      text-align: center;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(53, 16, 23, 0.15);
+    }
+
+    .container {
+      width: min(1400px, 94vw);
+      margin: 24px auto 48px;
+    }
+
+    .hero {
+      background: linear-gradient(140deg, #1f0f14 0%, #3d161f 45%, #5e1f2d 100%);
+      color: #fff;
+      border: 1px solid rgba(195, 163, 94, 0.28);
+      border-radius: 20px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+    }
+
+    .hero-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      margin: 8px 0 0;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 14px;
+      max-width: 860px;
+    }
+
+    .kpis {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(140px, 1fr));
+      gap: 10px;
+    }
+
+    .kpi {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(195, 163, 94, 0.28);
+      border-radius: 14px;
+      padding: 12px;
+    }
+
+    .kpi .label {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.72);
+      margin-bottom: 6px;
+    }
+
+    .kpi .value {
+      font-family: "JetBrains Mono", monospace;
+      font-weight: 700;
+      font-size: 24px;
+      color: #f2dfb5;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 270px 1fr 330px;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .panel-head {
+      padding: 14px 14px 10px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .panel-title {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .filters {
+      padding: 12px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+
+    .field label {
+      font-size: 11px;
+      color: #4f4f4f;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+    }
+
+    .field select,
+    .field input {
+      width: 100%;
+      border: 1px solid #d6d0c3;
+      border-radius: 10px;
+      padding: 10px 11px;
+      font-size: 13px;
+      background: #fff;
+      color: #2b2b2b;
+      outline: none;
+    }
+
+    .chips {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+    }
+
+    .chip.gold {
+      background: rgba(195, 163, 94, 0.14);
+      border-color: rgba(195, 163, 94, 0.44);
+      color: #75551a;
+    }
+
+    .chip.maroon {
+      background: rgba(107, 31, 43, 0.1);
+      border-color: rgba(107, 31, 43, 0.28);
+      color: #6b1f2b;
+    }
+
+    .chip.green {
+      background: rgba(15, 139, 95, 0.1);
+      border-color: rgba(15, 139, 95, 0.34);
+      color: #0f8b5f;
+    }
+
+    .feed {
+      padding: 10px;
+      display: grid;
+      gap: 10px;
+      max-height: 72vh;
+      overflow: auto;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      padding: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .card-title {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .meta {
+      font-size: 12px;
+      color: #666;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .quick {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: 1px solid #d6d0c3;
+      border-radius: 9px;
+      background: #fff;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      color: #3a3a3a;
+    }
+
+    .btn.primary {
+      background: #6b1f2b;
+      border-color: #6b1f2b;
+      color: #fff;
+    }
+
+    .insights {
+      padding: 12px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .insight-block {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      padding: 11px;
+    }
+
+    .insight-block h4 {
+      margin: 0 0 6px;
+      font-size: 13px;
+    }
+
+    .insight-block p {
+      margin: 0;
+      font-size: 12px;
+      color: #5d5d5d;
+      line-height: 1.5;
+    }
+
+    .sticky-actions {
+      position: sticky;
+      bottom: 14px;
+      margin-top: 10px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      padding: 10px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .kbd {
+      font-family: "JetBrains Mono", monospace;
+      background: #f3eee2;
+      border: 1px solid #dfd5bf;
+      border-radius: 6px;
+      padding: 2px 6px;
+      font-size: 11px;
+      color: #745926;
+    }
+
+    @media (max-width: 1100px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .feed { max-height: none; }
+      .kpis { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="trial-banner">Trial Preview: HARVICS /x Command Center UI</div>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-row">
+        <div>
+          <h1>X Command Center</h1>
+          <p>Real-time signals, approvals, and action orchestration across modules with AI-generated priority paths.</p>
+        </div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="label">Open Actions</div><div class="value">128</div></div>
+        <div class="kpi"><div class="label">Risk Alerts</div><div class="value">17</div></div>
+        <div class="kpi"><div class="label">Today Throughput</div><div class="value">$2.4M</div></div>
+      </div>
+    </section>
+
+    <section class="layout">
+      <aside class="panel">
+        <header class="panel-head">
+          <h2 class="panel-title">Filters</h2>
+          <span class="muted">Region + Scope</span>
+        </header>
+        <div class="filters">
+          <div class="field"><label>Region</label><select><option>Global</option><option>Middle East</option><option>South Asia</option></select></div>
+          <div class="field"><label>Module</label><select><option>All Modules</option><option>Finance</option><option>Logistics</option><option>Procurement</option></select></div>
+          <div class="field"><label>Priority</label><select><option>All</option><option>Critical</option><option>High</option><option>Medium</option></select></div>
+          <div class="field"><label>Owner</label><input placeholder="Search owner" /></div>
+          <div class="field"><label>Time Range</label><select><option>Last 24h</option><option>Last 7d</option><option>Last 30d</option></select></div>
+          <div class="chips">
+            <span class="chip gold">Live</span>
+            <span class="chip maroon">Escalated</span>
+            <span class="chip green">Verified</span>
+          </div>
+        </div>
+      </aside>
+
+      <section class="panel">
+        <header class="panel-head">
+          <h2 class="panel-title">Live Activity Feed</h2>
+          <span class="muted">12 updates/min</span>
+        </header>
+        <div class="feed">
+          <article class="card">
+            <div class="card-top">
+              <h3 class="card-title">Approval Request: Cross-Border Payment Batch</h3>
+              <span class="chip maroon">High Risk</span>
+            </div>
+            <div class="meta">
+              <span>Confidence: 92%</span>
+              <span>Impact: $480,000</span>
+              <span>Owner: Finance Ops</span>
+            </div>
+            <div class="quick">
+              <button class="btn primary">Approve</button>
+              <button class="btn">Escalate</button>
+              <button class="btn">Assign</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3 class="card-title">Alert: Territory Fulfillment Dropped Below SLA</h3>
+              <span class="chip gold">Action Needed</span>
+            </div>
+            <div class="meta">
+              <span>Confidence: 88%</span>
+              <span>Impact: -6.3% OTIF</span>
+              <span>Owner: Logistics</span>
+            </div>
+            <div class="quick">
+              <button class="btn">View Route</button>
+              <button class="btn">Assign Task</button>
+              <button class="btn">Create Incident</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3 class="card-title">Decision: Rebalance SKU Inventory to 4 Warehouses</h3>
+              <span class="chip green">AI Recommended</span>
+            </div>
+            <div class="meta">
+              <span>Confidence: 95%</span>
+              <span>Impact: +12% service level</span>
+              <span>Owner: Supply Chain</span>
+            </div>
+            <div class="quick">
+              <button class="btn primary">Execute</button>
+              <button class="btn">Simulate</button>
+              <button class="btn">Export Plan</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3 class="card-title">Task: Contract Renewal Check for 3 Suppliers</h3>
+              <span class="chip gold">Due Today</span>
+            </div>
+            <div class="meta">
+              <span>Confidence: 79%</span>
+              <span>Impact: Procurement continuity</span>
+              <span>Owner: Legal</span>
+            </div>
+            <div class="quick">
+              <button class="btn">Open Contracts</button>
+              <button class="btn">Escalate Legal</button>
+              <button class="btn">Snooze 24h</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <header class="panel-head">
+          <h2 class="panel-title">Intelligence Panel</h2>
+          <span class="muted">AI Summary</span>
+        </header>
+        <div class="insights">
+          <div class="insight-block">
+            <h4>Top anomaly</h4>
+            <p>Three territories show synchronized service decline after a carrier capacity shift at 10:40 UTC.</p>
+          </div>
+          <div class="insight-block">
+            <h4>Recommended next actions</h4>
+            <p>1) Redirect 22% load to alternate route pool.<br>2) Auto-prioritize high-margin SKU replenishment.<br>3) Trigger finance hold-release review for delayed batch.</p>
+          </div>
+          <div class="insight-block">
+            <h4>Governance pulse</h4>
+            <p>5-point checks pass rate: 98.4%. Most rejections are budget-threshold related in procurement.</p>
+          </div>
+          <div class="insight-block">
+            <h4>Keyboard shortcuts</h4>
+            <p><span class="kbd">A</span> Approve &nbsp; <span class="kbd">E</span> Escalate &nbsp; <span class="kbd">/</span> Focus search</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="sticky-actions">
+      <button class="btn primary">Approve</button>
+      <button class="btn">Escalate</button>
+      <button class="btn">Assign</button>
+      <button class="btn">Export</button>
+    </div>
+  </main>
+</body>
+</html>
