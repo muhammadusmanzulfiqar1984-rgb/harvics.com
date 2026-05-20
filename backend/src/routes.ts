@@ -25,6 +25,7 @@ import { commsRouter } from './modules/comms/comms.controller';
 import { notificationService } from './modules/comms/notification.service';
 import { eventBus } from './core/eventBus';
 import { customersDb, leadsDb, employeesDb, inventoryDb } from './core/db';
+import productionRouter from './modules/production/production.controller';
 
 // In-memory demo store for command-center Orders CRUD (no DB dependency)
 type DemoOrder = {
@@ -1908,6 +1909,8 @@ router.use('/finance',          requireAuthScope, neuralGovernance, financeCrudR
 // /api/payments/* — alias so existing frontend api-payments.ts clients don't 404
 router.use('/payments',         requireAuthScope, neuralGovernance, financeCrudRouter);
 router.use('/crm',              requireAuthScope, neuralGovernance, crmCrudRouter);
+// Production v2 routes — 15 new Prisma-backed tables (manufacturing, quality, projects, treasury, marketing, documents, comms, audit, assets)
+router.use('/v2',               productionRouter);
 router.use('/hr',               requireAuthScope, neuralGovernance, hrCrudRouter);
 router.use('/logistics',        requireAuthScope, neuralGovernance, logisticsCrudRouter);
 router.use('/procurement-crud', requireAuthScope, neuralGovernance, procurementCrudRouter);
