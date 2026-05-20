@@ -1,0 +1,672 @@
+{
+  "orders": [
+    {
+      "id": "demo-004",
+      "customer": "Smoke Customer",
+      "city": "Karachi",
+      "amount": 125,
+      "currency": "USD",
+      "status": "Completed",
+      "items": [
+        {
+          "sku": "FMCG-001",
+          "qty": 10
+        }
+      ],
+      "createdAt": "2026-05-10T02:46:26.372Z"
+    },
+    {
+      "id": "demo-001",
+      "customer": "Global Retail LLC",
+      "city": "Dubai",
+      "amount": 12500,
+      "currency": "USD",
+      "status": "Pending",
+      "items": [
+        {
+          "sku": "FMCG-001",
+          "qty": 100
+        }
+      ],
+      "createdAt": "2026-05-09T18:00:24.252Z"
+    },
+    {
+      "id": "demo-002",
+      "customer": "North Hub Distribution",
+      "city": "Islamabad",
+      "amount": 8200,
+      "currency": "USD",
+      "status": "Processing",
+      "items": [
+        {
+          "sku": "FMCG-002",
+          "qty": 50
+        }
+      ],
+      "createdAt": "2026-05-09T18:00:24.252Z"
+    },
+    {
+      "id": "demo-003",
+      "customer": "Emirates Trade Co",
+      "city": "Abu Dhabi",
+      "amount": 31000,
+      "currency": "USD",
+      "status": "Completed",
+      "items": [
+        {
+          "sku": "FMCG-003",
+          "qty": 200
+        }
+      ],
+      "createdAt": "2026-05-09T18:00:24.252Z"
+    }
+  ],
+  "orderSeq": 5,
+  "inventory": [
+    {
+      "sku": "FMCG-001",
+      "name": "Premium Coffee 500g",
+      "category": "Beverages",
+      "warehouse": "Dubai-W1",
+      "qty": 1190,
+      "reserved": 0,
+      "unitPrice": 12.5,
+      "currency": "USD",
+      "updatedAt": "2026-05-10T02:46:42.096Z"
+    },
+    {
+      "sku": "FMCG-002",
+      "name": "Organic Tea Pack",
+      "category": "Beverages",
+      "warehouse": "Islamabad-W1",
+      "qty": 800,
+      "reserved": 0,
+      "unitPrice": 8,
+      "currency": "USD",
+      "updatedAt": "2026-05-09T18:00:24.252Z"
+    },
+    {
+      "sku": "FMCG-003",
+      "name": "Whole Wheat Flour 5kg",
+      "category": "Staples",
+      "warehouse": "Dubai-W2",
+      "qty": 450,
+      "reserved": 0,
+      "unitPrice": 15,
+      "currency": "USD",
+      "updatedAt": "2026-05-09T18:00:24.252Z"
+    },
+    {
+      "sku": "FMCG-004",
+      "name": "Dates Premium 1kg",
+      "category": "Snacks",
+      "warehouse": "Abu-Dhabi-W1",
+      "qty": 320,
+      "reserved": 0,
+      "unitPrice": 22,
+      "currency": "USD",
+      "updatedAt": "2026-05-09T18:00:24.252Z"
+    },
+    {
+      "sku": "FMCG-005",
+      "name": "FMCG-005",
+      "category": "General",
+      "warehouse": "Dubai-W1",
+      "qty": 750,
+      "reserved": 0,
+      "unitPrice": 10,
+      "currency": "USD",
+      "updatedAt": "2026-05-10T02:46:26.413Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv-0001",
+      "orderId": "demo-004",
+      "customer": "Smoke Customer",
+      "amount": 125,
+      "currency": "USD",
+      "status": "Paid",
+      "issuedAt": "2026-05-10T02:46:26.372Z"
+    }
+  ],
+  "invoiceSeq": 2,
+  "workflow": [
+    {
+      "id": "evt-00032",
+      "type": "crm.lead.converted",
+      "message": "Lead cmpd5xn3p0001odn7g8vymj8b converted → customer cmpd5xn530002odn7n28oedyy",
+      "ref": "cmpd5xn3p0001odn7g8vymj8b",
+      "at": "2026-05-19T21:46:36.520Z"
+    },
+    {
+      "id": "evt-00031",
+      "type": "crm.lead.stage",
+      "message": "Lead Wire Test Co: Lead → Won",
+      "ref": "cmpd5xn3p0001odn7g8vymj8b",
+      "at": "2026-05-19T21:46:36.518Z"
+    },
+    {
+      "id": "evt-00030",
+      "type": "crm.lead.created",
+      "message": "Lead Wire Test Co (Lead) — USD 99,000",
+      "ref": "cmpd5xn3p0001odn7g8vymj8b",
+      "at": "2026-05-19T21:46:36.470Z"
+    },
+    {
+      "id": "evt-00029",
+      "type": "crm.lead.created",
+      "message": "Lead Wire Test Co (Lead) — USD 99,000",
+      "ref": "cmpd5xih90000odn7vrfi8bfe",
+      "at": "2026-05-19T21:46:30.500Z"
+    },
+    {
+      "id": "evt-00028",
+      "type": "crm.lead.converted",
+      "message": "Lead lead-005 converted → customer cust-006",
+      "ref": "lead-005",
+      "at": "2026-05-19T18:48:34.536Z"
+    },
+    {
+      "id": "evt-00027",
+      "type": "crm.lead.stage",
+      "message": "Lead Live Ops QA: New → Won",
+      "ref": "lead-005",
+      "at": "2026-05-19T18:48:34.536Z"
+    },
+    {
+      "id": "evt-00026",
+      "type": "crm.lead.created",
+      "message": "Lead Live Ops QA (New) — USD 42,000",
+      "ref": "lead-005",
+      "at": "2026-05-19T18:48:34.497Z"
+    },
+    {
+      "id": "evt-00025",
+      "type": "hr.employee.hired",
+      "message": "Test Run hired as QA (Demo)",
+      "ref": "emp-007",
+      "at": "2026-05-11T13:40:54.069Z"
+    },
+    {
+      "id": "evt-00024",
+      "type": "ledger.posted",
+      "message": "Cash D:75000 C:0 — Capital injection",
+      "ref": "DEMO-CAP-1",
+      "at": "2026-05-10T14:21:59.060Z"
+    },
+    {
+      "id": "evt-00023",
+      "type": "crm.lead.converted",
+      "message": "Lead lead-001 converted → customer cust-005",
+      "ref": "lead-001",
+      "at": "2026-05-10T14:21:59.050Z"
+    },
+    {
+      "id": "evt-00022",
+      "type": "crm.lead.stage",
+      "message": "Lead Gulf FMCG Holdings: Qualified → Won",
+      "ref": "lead-001",
+      "at": "2026-05-10T14:21:59.050Z"
+    },
+    {
+      "id": "evt-00021",
+      "type": "hr.employee.hired",
+      "message": "Sara Wire hired as Field Rep (Sales)",
+      "ref": "emp-006",
+      "at": "2026-05-10T14:21:59.038Z"
+    },
+    {
+      "id": "evt-00020",
+      "type": "inventory.shipped",
+      "message": "Shipped order demo-004, inventory decremented",
+      "ref": "demo-004",
+      "at": "2026-05-10T02:46:42.096Z"
+    },
+    {
+      "id": "evt-00019",
+      "type": "shipment.delivered",
+      "message": "Shipment ship-0002 delivered to Karachi",
+      "ref": "ship-0002",
+      "at": "2026-05-10T02:46:42.096Z"
+    },
+    {
+      "id": "evt-00018",
+      "type": "ledger.posted",
+      "message": "Revenue D:0 C:125 — Sales revenue inv-0001",
+      "ref": "inv-0001",
+      "at": "2026-05-10T02:46:42.096Z"
+    },
+    {
+      "id": "evt-00017",
+      "type": "ledger.posted",
+      "message": "AR D:125 C:0 — Receivable cleared inv-0001",
+      "ref": "inv-0001",
+      "at": "2026-05-10T02:46:42.096Z"
+    },
+    {
+      "id": "evt-00016",
+      "type": "invoice.paid",
+      "message": "Invoice inv-0001 marked paid",
+      "ref": "inv-0001",
+      "at": "2026-05-10T02:46:42.096Z"
+    },
+    {
+      "id": "evt-00015",
+      "type": "order.status",
+      "message": "Order demo-004: Pending → Completed",
+      "ref": "demo-004",
+      "at": "2026-05-10T02:46:42.096Z"
+    },
+    {
+      "id": "evt-00014",
+      "type": "mfg.workorder.completed",
+      "message": "Work order wo-0002 done: +250 FMCG-005 to stock",
+      "ref": "wo-0002",
+      "at": "2026-05-10T02:46:26.413Z"
+    },
+    {
+      "id": "evt-00013",
+      "type": "mfg.workorder.opened",
+      "message": "Work order wo-0002 opened: produce 250 × FMCG-005",
+      "ref": "wo-0002",
+      "at": "2026-05-10T02:46:26.391Z"
+    },
+    {
+      "id": "evt-00012",
+      "type": "shipment.created",
+      "message": "Shipment ship-0002 pending dispatch for demo-004",
+      "ref": "ship-0002",
+      "at": "2026-05-10T02:46:26.372Z"
+    },
+    {
+      "id": "evt-00011",
+      "type": "invoice.issued",
+      "message": "Invoice inv-0001 issued for USD 125",
+      "ref": "inv-0001",
+      "at": "2026-05-10T02:46:26.372Z"
+    },
+    {
+      "id": "evt-00010",
+      "type": "inventory.reserved",
+      "message": "Reserved 10 units across 1 SKUs",
+      "ref": "demo-004",
+      "at": "2026-05-10T02:46:26.372Z"
+    },
+    {
+      "id": "evt-00009",
+      "type": "order.created",
+      "message": "Order demo-004 created for Smoke Customer",
+      "ref": "demo-004",
+      "at": "2026-05-10T02:46:26.372Z"
+    },
+    {
+      "id": "evt-00008",
+      "type": "crm.lead.converted",
+      "message": "Lead lead-004 converted → customer cust-004",
+      "ref": "lead-004",
+      "at": "2026-05-10T02:46:26.364Z"
+    },
+    {
+      "id": "evt-00007",
+      "type": "crm.lead.stage",
+      "message": "Lead SmokeCo: New → Won",
+      "ref": "lead-004",
+      "at": "2026-05-10T02:46:26.364Z"
+    },
+    {
+      "id": "evt-00006",
+      "type": "crm.lead.created",
+      "message": "Lead SmokeCo (New) — USD 50,000",
+      "ref": "lead-004",
+      "at": "2026-05-10T02:46:26.215Z"
+    },
+    {
+      "id": "evt-00005",
+      "type": "hr.employee.hired",
+      "message": "Test User hired as Engineer (IT)",
+      "ref": "emp-005",
+      "at": "2026-05-10T02:46:26.201Z"
+    },
+    {
+      "id": "evt-00004",
+      "type": "vendor-invoice.paid",
+      "message": "Paid vendor invoice vinv-0001 (USD 5,000)",
+      "ref": "vinv-0001",
+      "at": "2026-05-09T18:00:48.762Z"
+    },
+    {
+      "id": "evt-00003",
+      "type": "vendor-invoice.created",
+      "message": "Vendor invoice vinv-0001 pending payment",
+      "ref": "vinv-0001",
+      "at": "2026-05-09T18:00:48.722Z"
+    },
+    {
+      "id": "evt-00002",
+      "type": "inventory.received",
+      "message": "Goods receipt for po-0001: 1 SKUs added",
+      "ref": "po-0001",
+      "at": "2026-05-09T18:00:48.722Z"
+    },
+    {
+      "id": "evt-00001",
+      "type": "po.issued",
+      "message": "PO po-0001 issued to Acme Coffee Co for USD 5,000",
+      "ref": "po-0001",
+      "at": "2026-05-09T18:00:48.493Z"
+    }
+  ],
+  "workflowSeq": 33,
+  "purchaseOrders": [
+    {
+      "id": "po-0001",
+      "vendor": "Acme Coffee Co",
+      "status": "Paid",
+      "items": [
+        {
+          "sku": "FMCG-005",
+          "qty": 500,
+          "unitPrice": 10
+        }
+      ],
+      "amount": 5000,
+      "currency": "USD",
+      "createdAt": "2026-05-09T18:00:48.488Z"
+    }
+  ],
+  "poSeq": 2,
+  "vendorInvoices": [
+    {
+      "id": "vinv-0001",
+      "poId": "po-0001",
+      "vendor": "Acme Coffee Co",
+      "amount": 5000,
+      "currency": "USD",
+      "status": "Paid",
+      "receivedAt": "2026-05-09T18:00:48.722Z"
+    }
+  ],
+  "vendorInvoiceSeq": 2,
+  "employees": [
+    {
+      "id": "emp-001",
+      "name": "Ayesha Khan",
+      "role": "Country Manager",
+      "department": "Operations",
+      "salary": 9500,
+      "currency": "USD",
+      "status": "Active",
+      "hiredAt": "2026-05-10T02:45:53.579Z"
+    },
+    {
+      "id": "emp-002",
+      "name": "Omar Farouk",
+      "role": "Sales Lead",
+      "department": "Sales",
+      "salary": 6200,
+      "currency": "USD",
+      "status": "Active",
+      "hiredAt": "2026-05-10T02:45:53.579Z"
+    },
+    {
+      "id": "emp-003",
+      "name": "Priya Mehta",
+      "role": "Warehouse Supervisor",
+      "department": "Logistics",
+      "salary": 4100,
+      "currency": "USD",
+      "status": "Active",
+      "hiredAt": "2026-05-10T02:45:53.579Z"
+    },
+    {
+      "id": "emp-004",
+      "name": "Ali Raza",
+      "role": "Production Engineer",
+      "department": "Manufacturing",
+      "salary": 5400,
+      "currency": "USD",
+      "status": "OnLeave",
+      "hiredAt": "2026-05-10T02:45:53.579Z"
+    },
+    {
+      "id": "emp-005",
+      "name": "Test User",
+      "role": "Engineer",
+      "department": "IT",
+      "salary": 7500,
+      "currency": "USD",
+      "status": "Active",
+      "hiredAt": "2026-05-10T02:46:26.201Z"
+    },
+    {
+      "id": "emp-006",
+      "name": "Sara Wire",
+      "role": "Field Rep",
+      "department": "Sales",
+      "salary": 4500,
+      "currency": "USD",
+      "status": "Active",
+      "hiredAt": "2026-05-10T14:21:59.038Z"
+    },
+    {
+      "id": "emp-007",
+      "name": "Test Run",
+      "role": "QA",
+      "department": "Demo",
+      "salary": 3000,
+      "currency": "USD",
+      "status": "Active",
+      "hiredAt": "2026-05-11T13:40:54.069Z"
+    }
+  ],
+  "employeeSeq": 8,
+  "customers": [
+    {
+      "id": "cust-001",
+      "name": "Khalid Mansour",
+      "company": "Global Retail LLC",
+      "country": "AE",
+      "segment": "Enterprise",
+      "ltv": 145000,
+      "currency": "USD",
+      "createdAt": "2026-05-10T02:45:53.579Z"
+    },
+    {
+      "id": "cust-002",
+      "name": "Sara Ahmed",
+      "company": "North Hub Distribution",
+      "country": "PK",
+      "segment": "Distributor",
+      "ltv": 82000,
+      "currency": "USD",
+      "createdAt": "2026-05-10T02:45:53.579Z"
+    },
+    {
+      "id": "cust-003",
+      "name": "Yusuf Trading",
+      "company": "Emirates Trade Co",
+      "country": "AE",
+      "segment": "Wholesaler",
+      "ltv": 211000,
+      "currency": "USD",
+      "createdAt": "2026-05-10T02:45:53.579Z"
+    },
+    {
+      "id": "cust-004",
+      "name": "Smoke Lead",
+      "company": "SmokeCo",
+      "country": "AE",
+      "segment": "Converted Lead",
+      "ltv": 50000,
+      "currency": "USD",
+      "createdAt": "2026-05-10T02:46:26.364Z"
+    },
+    {
+      "id": "cust-005",
+      "name": "Hassan Al-Mutairi",
+      "company": "Gulf FMCG Holdings",
+      "country": "AE",
+      "segment": "Converted Lead",
+      "ltv": 35000,
+      "currency": "USD",
+      "createdAt": "2026-05-10T14:21:59.050Z"
+    },
+    {
+      "id": "cust-006",
+      "name": "Backend QA",
+      "company": "Live Ops QA",
+      "country": "AE",
+      "segment": "Converted Lead",
+      "ltv": 42000,
+      "currency": "USD",
+      "createdAt": "2026-05-19T18:48:34.536Z"
+    }
+  ],
+  "customerSeq": 7,
+  "leads": [
+    {
+      "id": "lead-001",
+      "name": "Hassan Al-Mutairi",
+      "company": "Gulf FMCG Holdings",
+      "source": "Trade Show",
+      "stage": "Won",
+      "value": 35000,
+      "currency": "USD",
+      "owner": "Omar Farouk",
+      "createdAt": "2026-05-10T02:45:53.579Z"
+    },
+    {
+      "id": "lead-002",
+      "name": "Mei Lin",
+      "company": "Asia Pacific Foods",
+      "source": "Inbound",
+      "stage": "Proposal",
+      "value": 78000,
+      "currency": "USD",
+      "owner": "Omar Farouk",
+      "createdAt": "2026-05-10T02:45:53.579Z"
+    },
+    {
+      "id": "lead-003",
+      "name": "Carlos Rivera",
+      "company": "LatAm Grocers",
+      "source": "Referral",
+      "stage": "New",
+      "value": 12000,
+      "currency": "USD",
+      "owner": "Ayesha Khan",
+      "createdAt": "2026-05-10T02:45:53.579Z"
+    },
+    {
+      "id": "lead-004",
+      "name": "Smoke Lead",
+      "company": "SmokeCo",
+      "source": "Inbound",
+      "stage": "Won",
+      "value": 50000,
+      "currency": "USD",
+      "owner": "tester",
+      "createdAt": "2026-05-10T02:46:26.211Z"
+    },
+    {
+      "id": "lead-005",
+      "name": "Backend QA",
+      "company": "Live Ops QA",
+      "source": "QA",
+      "stage": "Won",
+      "value": 42000,
+      "currency": "USD",
+      "owner": "Ops Bot",
+      "createdAt": "2026-05-19T18:48:34.475Z"
+    }
+  ],
+  "leadSeq": 6,
+  "ledger": [
+    {
+      "id": "gl-0005",
+      "date": "2026-05-10T14:21:59.060Z",
+      "account": "Cash",
+      "debit": 75000,
+      "credit": 0,
+      "ref": "DEMO-CAP-1",
+      "memo": "Capital injection"
+    },
+    {
+      "id": "gl-0004",
+      "date": "2026-05-10T02:46:42.096Z",
+      "account": "Revenue",
+      "debit": 0,
+      "credit": 125,
+      "ref": "inv-0001",
+      "memo": "Sales revenue inv-0001"
+    },
+    {
+      "id": "gl-0003",
+      "date": "2026-05-10T02:46:42.096Z",
+      "account": "AR",
+      "debit": 125,
+      "credit": 0,
+      "ref": "inv-0001",
+      "memo": "Receivable cleared inv-0001"
+    },
+    {
+      "id": "gl-0001",
+      "date": "2026-05-10T02:45:53.579Z",
+      "account": "Cash",
+      "debit": 50000,
+      "credit": 0,
+      "memo": "Opening balance"
+    },
+    {
+      "id": "gl-0002",
+      "date": "2026-05-10T02:45:53.579Z",
+      "account": "Equity",
+      "debit": 0,
+      "credit": 50000,
+      "memo": "Owner contribution"
+    }
+  ],
+  "ledgerSeq": 6,
+  "shipments": [
+    {
+      "id": "ship-0002",
+      "orderId": "demo-004",
+      "origin": "Dubai-W1",
+      "destination": "Karachi",
+      "carrier": "Aramex",
+      "status": "Delivered",
+      "eta": "2026-05-13T02:46:26.372Z",
+      "createdAt": "2026-05-10T02:46:26.372Z"
+    },
+    {
+      "id": "ship-0001",
+      "orderId": "demo-003",
+      "origin": "Dubai-W2",
+      "destination": "Abu Dhabi",
+      "carrier": "Aramex",
+      "status": "Delivered",
+      "eta": "2026-05-10T02:45:53.579Z",
+      "createdAt": "2026-05-10T02:45:53.579Z"
+    }
+  ],
+  "shipmentSeq": 3,
+  "workOrders": [
+    {
+      "id": "wo-0001",
+      "sku": "FMCG-001",
+      "qty": 500,
+      "status": "InProgress",
+      "startDate": "2026-05-10T02:45:53.579Z"
+    },
+    {
+      "id": "wo-0002",
+      "sku": "FMCG-005",
+      "qty": 250,
+      "status": "Completed",
+      "startDate": "2026-05-10T02:46:26.391Z",
+      "completedAt": "2026-05-10T02:46:26.413Z"
+    }
+  ],
+  "workOrderSeq": 3
+}
