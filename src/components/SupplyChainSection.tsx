@@ -274,7 +274,7 @@ export default function SupplyChainSection() {
         style={{ background: `linear-gradient(90deg, transparent, ${GOLD}, transparent)` }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-14 lg:py-16">
         {/* Header */}
         <div className="mb-12">
           <p
@@ -301,12 +301,12 @@ export default function SupplyChainSection() {
           <div className="relative flex items-center justify-center">
             <div
               ref={wheelRef}
-              className="relative"
+              className="relative supply-chain-wheel"
               style={{ width: wheelSize, height: wheelSize, maxWidth: '100%' }}
             >
               {/* Outer halo */}
               <div
-                className="absolute inset-0 rounded-full"
+                className="absolute inset-0 rounded-full wheel-circle"
                 style={{
                   background: `radial-gradient(circle, ${MAROON}22 0%, transparent 70%)`,
                   filter: 'blur(12px)',
@@ -315,14 +315,14 @@ export default function SupplyChainSection() {
 
               {/* Rotating rings (spin slowly) */}
               <div
-                className="absolute inset-0 rounded-full"
+                className="absolute inset-0 rounded-full wheel-circle"
                 style={{
                   border: `1px solid ${GOLD}55`,
                   animation: 'sc-spin 60s linear infinite',
                 }}
               />
               <div
-                className="absolute rounded-full"
+                className="absolute rounded-full wheel-circle"
                 style={{
                   inset: 28,
                   border: `1px dashed ${GOLD}33`,
@@ -330,7 +330,7 @@ export default function SupplyChainSection() {
                 }}
               />
               <div
-                className="absolute rounded-full"
+                className="absolute rounded-full wheel-circle"
                 style={{
                   inset: 56,
                   border: `1px solid ${MAROON}88`,
@@ -339,7 +339,7 @@ export default function SupplyChainSection() {
 
               {/* Center hub */}
               <div
-                className="absolute rounded-full flex flex-col items-center justify-center text-center"
+                className="absolute rounded-full wheel-circle flex flex-col items-center justify-center text-center"
                 style={{
                   inset: '38%',
                   background: `radial-gradient(circle, ${MAROON} 0%, ${BG} 80%)`,
@@ -377,7 +377,7 @@ export default function SupplyChainSection() {
                       }}
                     >
                       <span
-                        className="block rounded-full transition-all"
+                        className="block rounded-full wheel-circle transition-all"
                         style={{
                           width: isActive ? 16 : 10,
                           height: isActive ? 16 : 10,
@@ -579,7 +579,7 @@ function ActivePulse({
   // static halo on the wheel center instead (the ring nodes themselves already glow when active).
   return (
     <div
-      className="absolute pointer-events-none rounded-full"
+      className="absolute pointer-events-none rounded-full wheel-circle"
       style={{
         left: center,
         top: center,

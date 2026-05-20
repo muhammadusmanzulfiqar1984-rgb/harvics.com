@@ -39,6 +39,7 @@ export default function FrameDotNav({ totalFrames }: { totalFrames: number }) {
 
   return (
     <div
+      className="frame-dot-nav"
       style={{
         position: 'fixed',
         right: '20px',

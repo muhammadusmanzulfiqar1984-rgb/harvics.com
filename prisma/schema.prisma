@@ -1,7 +1,3 @@
-// HARVICS OS — Prisma Schema
-// SQLite for dev, swap provider to "postgresql" for production
-// Run: npx prisma migrate dev --name init
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -11,43 +7,39 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// ── CRM ─────────────────────────────────────────────────────────────
-
 model Customer {
   id            String    @id @default(cuid())
   name          String
-  segment       String? // Wholesale, Distributor, Retail, B2B
+  segment       String?
   country       String?
   city          String?
-  creditRating  String? // A+, A, B, C
+  creditRating  String?
   lifetimeValue Float     @default(0)
   contactEmail  String?
-  orders        Order[]
-  invoices      Invoice[]
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
+  invoices      Invoice[]
+  orders        Order[]
 
   @@index([segment])
   @@index([country])
 }
 
-// ── ORDERS ──────────────────────────────────────────────────────────
-
 model Order {
   id              String      @id @default(cuid())
   customerId      String?
-  customer        Customer?   @relation(fields: [customerId], references: [id])
-  customerName    String? // Legacy/Fallback string
+  customerName    String?
   city            String?
-  channel         String? // Direct, Distributor, E-commerce, B2B, Wholesale
+  channel         String?
   amount          Float       @default(0)
   currency        String      @default("USD")
-  status          String      @default("Pending") // Pending, In Transit, Completed, Cancelled
+  status          String      @default("Pending")
   shippingAddress String?
-  items           OrderItem[]
-  routes          Route[]
   createdAt       DateTime    @default(now())
   updatedAt       DateTime    @updatedAt
+  customer        Customer?   @relation(fields: [customerId], references: [id])
+  items           OrderItem[]
+  routes          Route[]
 
   @@index([status])
   @@index([customerId])
@@ -56,15 +48,13 @@ model Order {
 model OrderItem {
   id        String @id @default(cuid())
   orderId   String
-  order     Order  @relation(fields: [orderId], references: [id], onDelete: Cascade)
   sku       String
   qty       Int
   unitPrice Float  @default(0)
+  order     Order  @relation(fields: [orderId], references: [id], onDelete: Cascade)
 
   @@index([orderId])
 }
-
-// ── INVENTORY ───────────────────────────────────────────────────────
 
 model InventoryItem {
   id          String   @id @default(cuid())
@@ -87,9 +77,9 @@ model Lead {
   company   String
   contact   String?
   email     String?
-  stage     String   @default("Lead") // Lead, Qualified, Proposal, Negotiation
+  stage     String   @default("Lead")
   value     Float    @default(0)
-  source    String? // Trade Show, Website, Referral, Manual
+  source    String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -99,8 +89,8 @@ model Lead {
 model Campaign {
   id          String   @id @default(cuid())
   name        String
-  type        String? // Seasonal, Regional, General
-  status      String   @default("Active") // Active, Completed, Paused
+  type        String?
+  status      String   @default("Active")
   budget      Float    @default(0)
   spent       Float    @default(0)
   leads       Int      @default(0)
@@ -111,8 +101,6 @@ model Campaign {
   updatedAt   DateTime @updatedAt
 }
 
-// ── HR ──────────────────────────────────────────────────────────────
-
 model Employee {
   id         String   @id @default(cuid())
   name       String
@@ -122,7 +110,7 @@ model Employee {
   city       String?
   salary     Float    @default(0)
   currency   String   @default("USD")
-  status     String   @default("Active") // Active, Inactive, On Leave
+  status     String   @default("Active")
   joinDate   String?
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
@@ -137,28 +125,26 @@ model Payroll {
   totalAmount   Float    @default(0)
   currency      String   @default("USD")
   employeeCount Int      @default(0)
-  status        String   @default("Pending") // Processed, Pending, Failed
+  status        String   @default("Pending")
   processedDate String?
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
 }
 
-// ── FINANCE ─────────────────────────────────────────────────────────
-
 model Invoice {
   id           String    @id @default(cuid())
   invoiceNo    String    @unique
   customerId   String?
-  customer     Customer? @relation(fields: [customerId], references: [id])
-  customerName String? // Fallback
+  customerName String?
   amount       Float     @default(0)
   currency     String    @default("USD")
-  status       String    @default("Unpaid") // Unpaid, Paid, Overdue
+  status       String    @default("Unpaid")
   dueDate      String?
-  type         String? // AR, AP
-  payments     Payment[]
+  type         String?
   createdAt    DateTime  @default(now())
   updatedAt    DateTime  @updatedAt
+  customer     Customer? @relation(fields: [customerId], references: [id])
+  payments     Payment[]
 
   @@index([status])
 }
@@ -166,14 +152,14 @@ model Invoice {
 model Payment {
   id           String   @id @default(cuid())
   invoiceNo    String
-  invoice      Invoice  @relation(fields: [invoiceNo], references: [invoiceNo])
   amount       Float    @default(0)
   currency     String   @default("USD")
-  method       String? // Bank Transfer, Check, Cash, Card
+  method       String?
   reference    String?
   receivedDate String?
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+  invoice      Invoice  @relation(fields: [invoiceNo], references: [invoiceNo])
 
   @@index([invoiceNo])
 }
@@ -191,8 +177,6 @@ model JournalEntry {
   updatedAt   DateTime @updatedAt
 }
 
-// ── LOGISTICS ───────────────────────────────────────────────────────
-
 model Route {
   id          String   @id @default(cuid())
   routeId     String   @unique
@@ -200,7 +184,7 @@ model Route {
   destination String
   driver      String?
   vehicle     String?
-  status      String   @default("Pending") // Pending, In Transit, Completed, Delayed
+  status      String   @default("Pending")
   eta         String?
   distance    Float?
   orderId     String?
@@ -212,41 +196,39 @@ model Route {
   @@index([status])
 }
 
-// ── PROCUREMENT ─────────────────────────────────────────────────────
-
 model PurchaseOrder {
   id           String         @id @default(cuid())
   poNumber     String         @unique
   supplier     String
   total        Float          @default(0)
   currency     String         @default("USD")
-  status       String         @default("Pending") // Approved, Pending, Received, Rejected
+  status       String         @default("Pending")
   expectedDate String?
-  items        PurchaseItem[]
   createdAt    DateTime       @default(now())
   updatedAt    DateTime       @updatedAt
+  items        PurchaseItem[]
 }
 
 model PurchaseItem {
   id              String        @id @default(cuid())
   purchaseOrderId String
-  purchaseOrder   PurchaseOrder @relation(fields: [purchaseOrderId], references: [id], onDelete: Cascade)
   sku             String
   qty             Int
   unitPrice       Float         @default(0)
+  purchaseOrder   PurchaseOrder @relation(fields: [purchaseOrderId], references: [id], onDelete: Cascade)
 
   @@index([purchaseOrderId])
 }
 
 model Approval {
   id              String   @id @default(cuid())
-  type            String // purchase_order, expense, budget
+  type            String
   referenceId     String
   description     String?
   amount          Float    @default(0)
   currency        String   @default("USD")
   requestedBy     String?
-  tier            String? // country, regional, global
+  tier            String?
   status          String   @default("Pending")
   requiredRole    String?
   approvedBy      String?
@@ -259,13 +241,11 @@ model Approval {
   updatedAt       DateTime @updatedAt
 }
 
-// ── GPS / TIER-2 ────────────────────────────────────────────────────
-
 model GPSRetailer {
   id           String   @id @default(cuid())
   outletName   String
   city         String?
-  outletType   String? // modern_trade, cash_and_carry, hypermarket
+  outletType   String?
   lat          Float?
   lng          Float?
   countryCode  String?
@@ -279,7 +259,7 @@ model GPSRetailer {
 model Satellite {
   id            String   @id @default(cuid())
   region        String
-  type          String // whitespace, expansion, consolidation
+  type          String
   opportunity   String?
   coverageScore Float    @default(0)
   detectedAt    String?
@@ -299,38 +279,34 @@ model TerritoryAssignment {
   updatedAt     DateTime @updatedAt
 }
 
-// ── MANUFACTURING ───────────────────────────────────────────────────
-
 model WorkOrder {
-  id              String           @id @default(cuid())
-  workOrderNo     String           @unique
-  productSku      String
-  qty             Int              @default(0)
-  status          String           @default("Planned") // Planned, InProgress, Completed, Cancelled
-  startDate       String?
-  completionDate  String?
-  priority        String           @default("Normal") // Low, Normal, High, Critical
-  notes           String?
-  bomItems        BOMItem[]
-  createdAt       DateTime         @default(now())
-  updatedAt       DateTime         @updatedAt
+  id             String    @id @default(cuid())
+  workOrderNo    String    @unique
+  productSku     String
+  qty            Int       @default(0)
+  status         String    @default("Planned")
+  startDate      String?
+  completionDate String?
+  priority       String    @default("Normal")
+  notes          String?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  bomItems       BOMItem[]
 
   @@index([status])
   @@index([productSku])
 }
 
 model BOMItem {
-  id           String     @id @default(cuid())
+  id           String    @id @default(cuid())
   workOrderId  String
-  workOrder    WorkOrder  @relation(fields: [workOrderId], references: [id], onDelete: Cascade)
   componentSku String
   qty          Int
-  unitCost     Float      @default(0)
+  unitCost     Float     @default(0)
+  workOrder    WorkOrder @relation(fields: [workOrderId], references: [id], onDelete: Cascade)
 
   @@index([workOrderId])
 }
-
-// ── QUALITY ─────────────────────────────────────────────────────────
 
 model QualityCheck {
   id           String    @id @default(cuid())
@@ -338,7 +314,7 @@ model QualityCheck {
   workOrderId  String?
   productSku   String
   inspector    String?
-  status       String    @default("Pending") // Pending, Pass, Fail, Hold
+  status       String    @default("Pending")
   defectsFound Int       @default(0)
   notes        String?
   inspectedAt  DateTime?
@@ -350,58 +326,56 @@ model QualityCheck {
 }
 
 model NonConformanceReport {
-  id            String   @id @default(cuid())
-  ncrNo         String   @unique
-  qualityCheckId String?
-  severity      String   @default("Minor") // Minor, Major, Critical
-  description   String
-  rootCause     String?
+  id               String    @id @default(cuid())
+  ncrNo            String    @unique
+  qualityCheckId   String?
+  severity         String    @default("Minor")
+  description      String
+  rootCause        String?
   correctiveAction String?
-  status        String   @default("Open") // Open, InvestigatingClosed
-  assignedTo    String?
-  closedAt      DateTime?
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
+  status           String    @default("Open")
+  assignedTo       String?
+  closedAt         DateTime?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
 
   @@index([status])
   @@index([severity])
 }
 
-// ── PROJECTS ────────────────────────────────────────────────────────
-
 model Project {
-  id          String   @id @default(cuid())
-  code        String   @unique
+  id          String      @id @default(cuid())
+  code        String      @unique
   name        String
   description String?
-  status      String   @default("Active") // Planning, Active, OnHold, Completed, Cancelled
-  priority    String   @default("Normal")
+  status      String      @default("Active")
+  priority    String      @default("Normal")
   startDate   String?
   endDate     String?
   ownerId     String?
-  budget      Float    @default(0)
-  spent       Float    @default(0)
-  currency    String   @default("USD")
-  tasks       Task[]
+  budget      Float       @default(0)
+  spent       Float       @default(0)
+  currency    String      @default("USD")
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
   milestones  Milestone[]
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  tasks       Task[]
 
   @@index([status])
 }
 
 model Task {
-  id         String   @id @default(cuid())
-  projectId  String
-  project    Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
-  title      String
-  status     String   @default("Todo") // Todo, InProgress, Done, Blocked
-  priority   String   @default("Normal")
-  assigneeId String?
-  dueDate    String?
+  id          String    @id @default(cuid())
+  projectId   String
+  title       String
+  status      String    @default("Todo")
+  priority    String    @default("Normal")
+  assigneeId  String?
+  dueDate     String?
   completedAt DateTime?
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  project     Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
 
   @@index([projectId])
   @@index([status])
@@ -410,154 +384,144 @@ model Task {
 model Milestone {
   id        String   @id @default(cuid())
   projectId String
-  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
   title     String
   dueDate   String?
   status    String   @default("Pending")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
 
   @@index([projectId])
 }
 
-// ── TREASURY / BANKING ──────────────────────────────────────────────
-
 model BankAccount {
-  id            String   @id @default(cuid())
-  accountNo     String   @unique
-  bankName      String
-  currency      String   @default("USD")
-  balance       Float    @default(0)
-  accountType   String   @default("Operating") // Operating, Reserve, Payroll, FX
-  country       String?
-  status        String   @default("Active")
-  transactions  BankTransaction[]
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
+  id           String            @id @default(cuid())
+  accountNo    String            @unique
+  bankName     String
+  currency     String            @default("USD")
+  balance      Float             @default(0)
+  accountType  String            @default("Operating")
+  country      String?
+  status       String            @default("Active")
+  createdAt    DateTime          @default(now())
+  updatedAt    DateTime          @updatedAt
+  transactions BankTransaction[]
 }
 
 model BankTransaction {
-  id            String   @id @default(cuid())
-  accountId     String
-  account       BankAccount @relation(fields: [accountId], references: [id], onDelete: Cascade)
-  type          String // Credit, Debit
-  amount        Float
-  currency      String   @default("USD")
-  reference     String?
-  description   String?
-  postedAt      DateTime @default(now())
-  createdAt     DateTime @default(now())
+  id          String      @id @default(cuid())
+  accountId   String
+  type        String
+  amount      Float
+  currency    String      @default("USD")
+  reference   String?
+  description String?
+  postedAt    DateTime    @default(now())
+  createdAt   DateTime    @default(now())
+  account     BankAccount @relation(fields: [accountId], references: [id], onDelete: Cascade)
 
   @@index([accountId])
   @@index([postedAt])
 }
 
 model FxRate {
-  id        String   @id @default(cuid())
-  fromCcy   String
-  toCcy     String
-  rate      Float
+  id            String   @id @default(cuid())
+  fromCcy       String
+  toCcy         String
+  rate          Float
   effectiveDate String
-  source    String?
-  createdAt DateTime @default(now())
+  source        String?
+  createdAt     DateTime @default(now())
 
   @@unique([fromCcy, toCcy, effectiveDate])
   @@index([effectiveDate])
 }
 
-// ── MARKETING ───────────────────────────────────────────────────────
-
 model EmailCampaign {
-  id          String   @id @default(cuid())
+  id          String    @id @default(cuid())
   name        String
   subject     String
   segment     String?
-  status      String   @default("Draft") // Draft, Scheduled, Sent, Cancelled
-  sentCount   Int      @default(0)
-  openCount   Int      @default(0)
-  clickCount  Int      @default(0)
+  status      String    @default("Draft")
+  sentCount   Int       @default(0)
+  openCount   Int       @default(0)
+  clickCount  Int       @default(0)
   scheduledAt DateTime?
   sentAt      DateTime?
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
 
   @@index([status])
 }
 
 model SocialPost {
-  id          String   @id @default(cuid())
-  platform    String // FB, IG, X, LinkedIn, TikTok
+  id          String    @id @default(cuid())
+  platform    String
   content     String
   mediaUrl    String?
-  status      String   @default("Draft")
+  status      String    @default("Draft")
   scheduledAt DateTime?
   publishedAt DateTime?
-  impressions Int      @default(0)
-  engagements Int      @default(0)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  impressions Int       @default(0)
+  engagements Int       @default(0)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
 
   @@index([platform])
   @@index([status])
 }
 
-// ── DOCUMENTS / CONTRACTS ───────────────────────────────────────────
-
 model Document {
-  id         String   @id @default(cuid())
-  title      String
-  type       String // Contract, Policy, SOP, Certificate, Other
-  category   String?
-  url        String?
-  ownerId    String?
-  partyId    String? // counterparty (customer/supplier id)
-  status     String   @default("Draft") // Draft, Active, Expired, Archived
+  id            String    @id @default(cuid())
+  title         String
+  type          String
+  category      String?
+  url           String?
+  ownerId       String?
+  partyId       String?
+  status        String    @default("Draft")
   effectiveDate String?
   expiryDate    String?
-  signedAt   DateTime?
-  metadata   Json?
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+  signedAt      DateTime?
+  metadata      Json?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
 
   @@index([type])
   @@index([status])
 }
 
-// ── COMMS / NOTIFICATIONS ───────────────────────────────────────────
-
 model Notification {
-  id         String   @id @default(cuid())
-  userId     String?
-  channel    String   @default("in-app") // in-app, email, sms, push
-  category   String?
-  title      String
-  message    String
-  actionUrl  String?
-  severity   String   @default("info") // info, success, warning, error, critical
-  read       Boolean  @default(false)
-  readAt     DateTime?
-  createdAt  DateTime @default(now())
+  id        String    @id @default(cuid())
+  userId    String?
+  channel   String    @default("in-app")
+  category  String?
+  title     String
+  message   String
+  actionUrl String?
+  severity  String    @default("info")
+  read      Boolean   @default(false)
+  readAt    DateTime?
+  createdAt DateTime  @default(now())
 
   @@index([userId])
   @@index([read])
   @@index([category])
 }
 
-// ── AUDIT LOG ───────────────────────────────────────────────────────
-
 model AuditEvent {
-  id         String   @id @default(cuid())
-  actorId    String?
-  actorRole  String?
-  action     String // crm.lead.created, orders.created, etc.
-  module     String?
-  entity     String?
-  entityId   String?
-  ipAddress  String?
-  userAgent  String?
-  payload    Json?
-  result     String   @default("success") // success, failure, denied
-  createdAt  DateTime @default(now())
+  id        String   @id @default(cuid())
+  actorId   String?
+  actorRole String?
+  action    String
+  module    String?
+  entity    String?
+  entityId  String?
+  ipAddress String?
+  userAgent String?
+  payload   Json?
+  result    String   @default("success")
+  createdAt DateTime @default(now())
 
   @@index([actorId])
   @@index([action])
@@ -565,40 +529,38 @@ model AuditEvent {
   @@index([createdAt])
 }
 
-// ── ASSETS / MAINTENANCE ────────────────────────────────────────────
-
 model Asset {
-  id            String   @id @default(cuid())
-  assetCode     String   @unique
-  name          String
-  category      String? // Vehicle, Equipment, Machinery, Building, IT
-  location      String?
-  status        String   @default("Active") // Active, InMaintenance, Retired, Lost
-  purchaseDate  String?
-  purchasePrice Float    @default(0)
-  currency      String   @default("USD")
+  id             String           @id @default(cuid())
+  assetCode      String           @unique
+  name           String
+  category       String?
+  location       String?
+  status         String           @default("Active")
+  purchaseDate   String?
+  purchasePrice  Float            @default(0)
+  currency       String           @default("USD")
   warrantyExpiry String?
-  ownerId       String?
-  maintenances  MaintenanceLog[]
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
+  ownerId        String?
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  maintenances   MaintenanceLog[]
 
   @@index([status])
   @@index([category])
 }
 
 model MaintenanceLog {
-  id           String   @id @default(cuid())
-  assetId      String
-  asset        Asset    @relation(fields: [assetId], references: [id], onDelete: Cascade)
-  type         String // Preventive, Corrective, Emergency
-  description  String
-  cost         Float    @default(0)
-  currency     String   @default("USD")
-  technician   String?
-  performedAt  DateTime @default(now())
-  nextDueAt    String?
-  createdAt    DateTime @default(now())
+  id          String   @id @default(cuid())
+  assetId     String
+  type        String
+  description String
+  cost        Float    @default(0)
+  currency    String   @default("USD")
+  technician  String?
+  performedAt DateTime @default(now())
+  nextDueAt   String?
+  createdAt   DateTime @default(now())
+  asset       Asset    @relation(fields: [assetId], references: [id], onDelete: Cascade)
 
   @@index([assetId])
   @@index([performedAt])

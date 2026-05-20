@@ -5,6 +5,56 @@ import Link from 'next/link'
 import { slugify, type NavVertical } from '@/data/megaMenuData'
 import { getProductImage } from '@/data/productCatalog'
 import SmartImage from '@/components/ui/SmartImage'
+import ImageCarousel from '@/components/ui/ImageCarousel'
+
+const verticalFallbackSlides: Record<string, string[]> = {
+  textiles: [
+    'https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1200&h=600&fit=crop&q=75',
+    'https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200&h=600&fit=crop&q=75',
+  ],
+  fmcg: [
+    'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=1200&h=600&fit=crop&q=75',
+    'https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200&h=600&fit=crop&q=75',
+  ],
+  commodities: [
+    'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=600&fit=crop&q=75',
+    'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&h=600&fit=crop&q=75',
+  ],
+  industrial: [
+    '/Industries Picture/Industrial Solutions.jpg',
+    '/Images/industrialsolutions.webp',
+    '/Images/industrialsolutions.png',
+  ],
+  minerals: [
+    'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=600&fit=crop&q=75',
+    'https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=1200&h=600&fit=crop&q=75',
+  ],
+  'oil-gas': [
+    'https://images.unsplash.com/photo-1513828583688-c52646db42da?w=1200&h=600&fit=crop&q=75',
+    'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&h=600&fit=crop&q=75',
+  ],
+  'real-estate': [
+    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=600&fit=crop&q=75',
+    'https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&h=600&fit=crop&q=75',
+  ],
+  sourcing: [
+    'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=600&fit=crop&q=75',
+    'https://images.unsplash.com/photo-1586528116493-cee1c6e18f42?w=1200&h=600&fit=crop&q=75',
+  ],
+  finance: [
+    'https://images.unsplash.com/photo-1560472355-536de3962603?w=1200&h=600&fit=crop&q=75',
+    'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=600&fit=crop&q=75',
+  ],
+  ai: [
+    'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop&q=75',
+    'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=600&fit=crop&q=75',
+  ],
+}
+
+const defaultSlides = [
+  'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=600&fit=crop&q=75',
+  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop&q=75',
+]
 
 /* ───── Intersection Observer Hook ───── */
 function useInView(threshold = 0.15) {
@@ -46,6 +96,12 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
   const ctaRef = useInView(0.2)
 
   const icon = verticalIcons[vertical] || '📊'
+  const categoryImage = getProductImage(block.title.toLowerCase())
+  const categorySlides = [
+    categoryImage,
+    ...(verticalFallbackSlides[vertical] || []),
+    ...defaultSlides,
+  ].filter((src, index, arr) => Boolean(src) && !String(src).includes('placeholder') && arr.indexOf(src) === index)
 
   return (
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
@@ -67,12 +123,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
       >
         {/* Background image for all categories */}
         <div className="absolute inset-0">
-          <SmartImage
-            keyword={block.title.toLowerCase()}
-            alt={`${block.title} Background`}
-            className="w-full h-full object-cover"
-            style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
-          />
+          <ImageCarousel images={categorySlides} autoSlideInterval={4500} height="h-full" />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
         </div>
         

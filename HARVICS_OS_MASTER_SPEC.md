@@ -1703,6 +1703,15 @@ Deliverable: Full frontend connected to Teams 1-4.
 - Assets: /public/Industries Picture/Industrial Solutions.jpg, /public/Images/industrialsolutions.webp, /public/Images/industrialsolutions.png
 - UX: Apple-style visual rotation preserved while keeping current hero copy, stats, and CTA structure intact
 
+### SUBPAGE HERO SLIDER EFFECT — ROLLED OUT (May 20, 2026)
+- Scope: All vertical subpage layers
+- Files:
+  - src/app/[locale]/[vertical]/VerticalPageClient.tsx
+  - src/app/[locale]/[vertical]/[category]/CategoryPageClient.tsx
+  - src/app/[locale]/[vertical]/[category]/[item]/ItemPageClient.tsx
+- Change: Applied ImageCarousel hero backgrounds with retained maroon-gold overlay treatment
+- Result: Slider effect now appears on vertical landing, category pages, and item detail pages
+
 ### WORLD MAP — REBUILT (April 2, 2026)
 - Component: src/features/geo/InteractiveWorldMap.tsx
 - Geography: src/features/geo/worldPaths.ts — 286 real country SVG paths from Natural Earth GeoJSON

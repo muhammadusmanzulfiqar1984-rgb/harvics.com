@@ -69,49 +69,24 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   height = 'h-[600px] md:h-[700px] lg:h-[800px]'
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [isTransitioning, setIsTransitioning] = useState(false)
-  const timeoutRefs = React.useRef<NodeJS.Timeout[]>([])
+  const [isPaused, setIsPaused] = useState(false)
+  const [isUserPaused, setIsUserPaused] = useState(false)
 
-  // Cleanup all timeouts on unmount
+  // Auto-slide with pause-on-hover behavior.
   useEffect(() => {
-    return () => {
-      timeoutRefs.current.forEach(timeout => clearTimeout(timeout))
-      timeoutRefs.current = []
-    }
-  }, [])
+    if (images.length <= 1 || isPaused || isUserPaused) return
 
-  // Auto-slide functionality removed - images stay static
-  // Users can manually navigate using arrows or dots
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+    }, autoSlideInterval)
+
+    return () => clearInterval(interval)
+  }, [images.length, autoSlideInterval, isPaused, isUserPaused])
 
   // Manual navigation
   const goToSlide = (index: number) => {
     if (index === currentIndex) return
-    setIsTransitioning(true)
-    const timeout = setTimeout(() => {
-      setCurrentIndex(index)
-      setIsTransitioning(false)
-    }, 150)
-    timeoutRefs.current.push(timeout)
-  }
-
-  const goToPrevious = () => {
-    setIsTransitioning(true)
-    const timeout = setTimeout(() => {
-      setCurrentIndex((prevIndex) => 
-        prevIndex === 0 ? images.length - 1 : prevIndex - 1
-      )
-      setIsTransitioning(false)
-    }, 150)
-    timeoutRefs.current.push(timeout)
-  }
-
-  const goToNext = () => {
-    setIsTransitioning(true)
-    const timeout = setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-      setIsTransitioning(false)
-    }, 150)
-    timeoutRefs.current.push(timeout)
+    setCurrentIndex(index)
   }
 
   if (images.length === 0) {
@@ -119,7 +94,11 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   }
 
   return (
-    <div className={`relative w-full ${height} overflow-hidden bg-white`}>
+    <div
+      className={`relative w-full ${height} overflow-hidden bg-[#f5f5f7]`}
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
       {/* Main Carousel Container */}
       <div className="relative w-full h-full">
         {images.map((image, index) => {
@@ -131,7 +110,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               className={`absolute inset-0 transition-all duration-700 ease-in-out ${
                 isActive
                   ? 'opacity-100 scale-100 z-10'
-                  : 'opacity-0 scale-105 z-0'
+                  : 'opacity-0 scale-[1.02] z-0'
               }`}
             >
               <div className="relative w-full h-full">
@@ -150,86 +129,45 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
                     }
                   }}
                 />
-                {/* Gradient Overlay for better text readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#6B1F2B]/80 via-transparent to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#6B1F2B]/60" />
               </div>
             </div>
           )
         })}
       </div>
 
-      {/* Navigation Arrows */}
+      {/* Apple-style controls */}
       {images.length > 1 && (
-        <>
-          <button
-            onClick={goToPrevious}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/60 hover:bg-white/80 backdrop-blur-sm text-white border-2 border-[#C3A35E]/30 p-3 rounded-full transition-all duration-300 hover:scale-110 group"
-            aria-label="Previous image"
-          >
-            <svg
-              className="w-6 h-6 md:w-8 md:h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex items-center gap-3">
+          <div className="rounded-full bg-black/25 backdrop-blur-md px-3 py-2 flex items-center gap-2">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  index === currentIndex
+                    ? 'w-7 bg-white/95'
+                    : 'w-1.5 bg-white/45 hover:bg-white/70'
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
               />
-            </svg>
-          </button>
+            ))}
+          </div>
           <button
-            onClick={goToNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/60 hover:bg-white/80 backdrop-blur-sm text-white border-2 border-[#C3A35E]/30 p-3 rounded-full transition-all duration-300 hover:scale-110 group"
-            aria-label="Next image"
+            onClick={() => setIsUserPaused((prev) => !prev)}
+            className="w-9 h-9 rounded-full bg-black/30 backdrop-blur-md text-white flex items-center justify-center hover:bg-black/45 transition-colors"
+            aria-label={isUserPaused ? 'Play carousel' : 'Pause carousel'}
+            title={isUserPaused ? 'Play' : 'Pause'}
           >
-            <svg
-              className="w-6 h-6 md:w-8 md:h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
+            {isUserPaused ? (
+              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            ) : (
+              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
+                <path d="M7 5h3v14H7zm7 0h3v14h-3z" />
+              </svg>
+            )}
           </button>
-        </>
-      )}
-
-      {/* Dots Indicator */}
-      {images.length > 1 && (
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex space-x-2 md:space-x-3">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={`transition-all duration-300 rounded-full ${
-                index === currentIndex
-                  ? 'bg-white w-8 h-3 md:w-12 md:h-3 shadow-lg shadow-white/50'
-                  : 'bg-white/40 hover:bg-white/60 w-3 h-3'
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
-      )}
-
-      {/* Progress Bar */}
-      {images.length > 1 && (
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/20 z-20">
-          <div
-            className="h-full bg-white transition-all duration-100 ease-linear"
-            style={{
-              width: `${((currentIndex + 1) / images.length) * 100}%`,
-            }}
-          />
         </div>
       )}
     </div>

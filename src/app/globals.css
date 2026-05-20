@@ -321,6 +321,34 @@ html, body {
   padding-bottom: 0;
 }
 
+/* Homepage scroll stability */
+#homepage-main {
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 1024px) {
+  #homepage-main {
+    scroll-snap-type: none !important;
+  }
+
+  #homepage-main [data-frame] {
+    scroll-snap-align: none !important;
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  .frame-dot-nav {
+    display: none !important;
+  }
+}
+
+/* Keep supply-chain wheel circular despite global flat-corner rule */
+.supply-chain-wheel,
+.supply-chain-wheel .wheel-circle {
+  border-radius: 50% !important;
+}
+
 /* Tab button improvements */
 .crm-theme button[role="tab"] {
   touch-action: manipulation;

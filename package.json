@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3002 --turbopack",
+    "dev": "next dev -p 3002",
     "backend": "tsx --tsconfig backend/tsconfig.json backend/src/index.ts",
     "backend:watch": "tsx watch --tsconfig backend/tsconfig.json backend/src/index.ts",
+    "backend:build": "tsc -p backend/tsconfig.json",
+    "backend:start": "node backend/dist/index.js",
     "build": "next build",
+    "build:prod": "npm run backend:build && npm run build",
     "start": "next start",
     "lint": "next lint",
     "export": "next build && next export",
@@ -17,7 +20,9 @@
     "test": "./scripts/test-all.sh",
     "verify": "./scripts/test-all.sh",
     "start-servers": "./scripts/START_SERVERS.sh",
-    "stop-servers": "./scripts/STOP_SERVERS.sh"
+    "stop-servers": "./scripts/STOP_SERVERS.sh",
+    "images:compress": "node scripts/compress-images.mjs",
+    "images:bulk": "node scripts/compress-images.mjs --mode=bulk-copy"
   },
   "dependencies": {
     "@prisma/client": "^6.19.2",
@@ -34,6 +39,7 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.3",
     "lucide-react": "^1.7.0",
+    "mapbox-gl": "^3.24.0",
     "next": "^15.5.6",
     "next-intl": "^3.0.0",
     "postcss": "^8.4.47",

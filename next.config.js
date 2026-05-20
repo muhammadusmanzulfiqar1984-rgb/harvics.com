@@ -4,6 +4,7 @@ const withNextIntl = require('next-intl/plugin')(
 );
 
 const path = require('path')
+const distDir = process.env.NEXT_DIST_DIR || '.next'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -11,6 +12,10 @@ const nextConfig = {
   // Exclude archive folder from all Next.js processing
   excludeDefaultMomentLocales: true,
   webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      'mapbox-gl': 'mapbox-gl',
+    }
     config.watchOptions = {
       ...config.watchOptions,
       ignored: [
@@ -31,9 +36,10 @@ const nextConfig = {
       static: 180,
     },
   },
+  output: process.env.NODE_ENV === 'production' ? 'standalone' : undefined,
   typescript: {
-    // Pre-existing type errors in distributor/competitor pages; safe to ignore during build
-    ignoreBuildErrors: true,
+    // Keep dev flexible, but production builds must not ship with hidden TS failures.
+    ignoreBuildErrors: process.env.NODE_ENV !== 'production',
   },
   eslint: {
     ignoreDuringBuilds: true,
@@ -53,7 +59,7 @@ const nextConfig = {
   trailingSlash: false, // Disable trailing slashes for API routes to work properly
   // output: 'export', // Commented out for development
   // output: process.env.NODE_ENV === 'production' ? 'standalone' : undefined, // Disabled for dev mode
-  distDir: '.next',
+  distDir,
   reactStrictMode: true,
   // Increase timeout for static generation
   staticPageGenerationTimeout: 300,
@@ -106,6 +112,9 @@ const nextConfig = {
       "https://maps.gstatic.com",
       "https://translation.googleapis.com",
       "https://vision.googleapis.com",
+      // Mapbox APIs (HarvicsGlobe)
+      "https://api.mapbox.com",
+      "https://events.mapbox.com",
       // Weather and currency APIs
       "https://api.openweathermap.org",
       "https://openexchangerates.org",

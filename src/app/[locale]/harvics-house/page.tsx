@@ -45,7 +45,7 @@ export default function HarvicsHousePage() {
           {/* PDF Viewer */}
           <div className="w-full h-[85vh] bg-gray-100 shadow-2xl border-4 border-[#C3A35E]/20 overflow-hidden relative">
             <iframe
-              src="/files/Harvics_House.pdf"
+              src="/api/files/harvics-house"
               className="w-full h-full"
               title="Harvics House PDF"
             >
@@ -54,7 +54,7 @@ export default function HarvicsHousePage() {
                   Unable to display PDF file.
                 </p>
                 <a 
-                  href="/files/Harvics_House.pdf"
+                  href="/api/files/harvics-house"
                   className="bg-[#C3A35E] text-[#6B1F2B] px-6 py-3 rounded hover:bg-[#b89628] transition-colors"
                   download
                 >

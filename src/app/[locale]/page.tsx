@@ -11,7 +11,6 @@ import LazySection from '@/components/shared/LazySection'
 const HowItWorksSection = dynamic(() => import('@/components/premium/HowItWorksSection'))
 const TrustSection = dynamic(() => import('@/components/premium/TrustSection'))
 const AudienceRoutingSection = dynamic(() => import('@/components/premium/AudienceRoutingSection'))
-
 const Interactive3DProductViewer = dynamic(
   () => import('@/components/premium/Interactive3DProductViewer'),
   {
@@ -74,7 +73,7 @@ const InteractiveWorldMap = dynamic(
 
 export default async function Home() {
   const frameHeight = 'calc(100vh - 136px)'
-  const frameStyle = { scrollSnapAlign: 'start' as const, height: frameHeight }
+  const frameStyle = { scrollSnapAlign: 'start' as const, minHeight: frameHeight }
 
   // Glass frame styles — alternating opacity to create depth rhythm
   const glassA = { ...frameStyle, background: 'rgba(255,255,255,0.88)', backdropFilter: 'blur(14px)', WebkitBackdropFilter: 'blur(14px)' }
@@ -100,8 +99,8 @@ export default async function Home() {
 
       <main
         id="homepage-main"
-        className="overflow-y-scroll bg-transparent"
-        style={{ scrollSnapType: 'y mandatory', height: frameHeight }}
+        className="overflow-y-auto bg-transparent"
+        style={{ scrollSnapType: 'y proximity', height: frameHeight }}
       >
         {/* Apple-style right-side frame dot navigation */}
         <FrameDotNav totalFrames={11} />
@@ -111,8 +110,8 @@ export default async function Home() {
           <LiquidGlassHero />
         </div>
 
-        {/* Frame 2: Industry Grid */}
-        <div data-frame="2" data-animate className="overflow-hidden relative" style={glassB}>
+        {/* Frame 3: Industry Grid */}
+        <div data-frame="3" data-animate className="overflow-hidden relative" style={glassB}>
           <EnhancedIndustryGrid />
         </div>
 
@@ -151,7 +150,7 @@ export default async function Home() {
 
         {/* Frame 8: Cinematic Supply Chain — TEMP: SupplyChainWheel hidden */}
         <div data-frame="8" data-animate className="overflow-hidden relative" style={{ scrollSnapAlign: 'start' }}>
-          <LazySection minHeight="100vh">
+          <LazySection minHeight="82vh">
             <ThreeDErrorBoundary>
               <CinematicSupplyChainSection />
             </ThreeDErrorBoundary>
@@ -179,7 +178,7 @@ export default async function Home() {
         </div>
 
         {/* Frame 11: Footer */}
-        <div data-frame="11" data-animate className="overflow-y-auto relative" style={{ ...frameStyle, background: 'rgba(255,255,255,0.93)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
+        <div data-frame="11" data-animate className="overflow-hidden relative" style={{ ...frameStyle, background: 'rgba(255,255,255,0.93)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
           <Footer />
         </div>
       </main>

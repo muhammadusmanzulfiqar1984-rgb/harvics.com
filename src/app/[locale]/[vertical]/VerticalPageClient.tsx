@@ -6,6 +6,7 @@ import { slugify, type NavVertical } from '@/data/megaMenuData'
 import { getVerticalProducts, getVerticalSubcategories, getSubcategoryProducts, getProductImage, type Product } from '@/data/productCatalog'
 import { getVerticalLanding, getAllCategoryDescriptions } from '@/data/verticalDescriptions'
 import SmartImage from '@/components/ui/SmartImage'
+import ImageCarousel from '@/components/ui/ImageCarousel'
 
 /* ───── Animated Counter Hook ───── */
 function useAnimatedCounter(target: string, isVisible: boolean) {
@@ -154,6 +155,19 @@ const verticalHeroImages: Record<string, string> = {
   ai: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop&q=75',
 }
 
+const verticalHeroSlides: Record<string, string[]> = {
+  industrial: [
+    '/Industries Picture/Industrial Solutions.jpg',
+    '/Images/industrialsolutions.webp',
+    '/Images/industrialsolutions.png',
+  ],
+}
+
+const defaultHeroSlides = [
+  'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=600&fit=crop&q=75',
+  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop&q=75',
+]
+
 interface VerticalPageClientProps {
   vertical: NavVertical
   locale: string
@@ -184,6 +198,11 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
     return 0
   })
 
+  const heroSlides = verticalHeroSlides[vertical.key] || [
+    verticalHeroImages[vertical.key],
+    ...defaultHeroSlides,
+  ]
+
   return (
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
       {/* ═══════ HERO BANNER ═══════ */}
@@ -192,7 +211,12 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
         className={`relative bg-gradient-to-br ${meta.gradient} py-24 md:py-32 px-4 overflow-hidden border-b border-[#C3A35E]/20`}
       >
         {/* Hero Background Image */}
-        {verticalHeroImages[vertical.key] && (
+        {heroSlides.length > 0 ? (
+          <div className="absolute inset-0">
+            <ImageCarousel images={heroSlides} autoSlideInterval={4500} height="h-full" />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.82) 0%, rgba(107,31,43,0.48) 45%, rgba(107,31,43,0.24) 100%)' }} />
+          </div>
+        ) : verticalHeroImages[vertical.key] && (
           <>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img

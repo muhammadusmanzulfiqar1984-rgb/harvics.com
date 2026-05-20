@@ -10,7 +10,7 @@ const certifications = [
     color: '#1a6b3c',
     backdrop: 'radial-gradient(ellipse at 30% 40%, rgba(26,107,60,0.35) 0%, transparent 60%), radial-gradient(ellipse at 70% 60%, rgba(26,107,60,0.22) 0%, transparent 55%)',
     icon: '🔬',
-    bgPhoto: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1400&q=60&fit=crop',
+    bgPhoto: 'https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=1400&q=60&fit=crop',
   },
   {
     code: 'HACCP',
