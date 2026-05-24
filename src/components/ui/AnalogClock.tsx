@@ -71,16 +71,19 @@ const AnalogClock: React.FC<{ size?: number }> = ({ size = 32 }) => {
       {/* Engraved inner rim */}
       <circle cx="16" cy="16" r="12.4" fill="none" stroke="#7A5A24" strokeWidth="0.25" opacity="0.55" />
 
-      {/* Hour markers — engraved into dial */}
+      {/* Hour markers — engraved into dial. Coordinates are rounded to 3dp
+          to keep server-rendered SVG byte-identical to client output and
+          avoid React hydration mismatches caused by float serialization. */}
       {Array.from({ length: 12 }).map((_, i) => {
         const angle = (i * 30 - 90) * (Math.PI / 180)
         const isCardinal = i % 3 === 0
         const r1 = isCardinal ? 10.2 : 11
         const r2 = 12
-        const x1 = 16 + Math.cos(angle) * r1
-        const y1 = 16 + Math.sin(angle) * r1
-        const x2 = 16 + Math.cos(angle) * r2
-        const y2 = 16 + Math.sin(angle) * r2
+        const round = (n: number) => Math.round(n * 1000) / 1000
+        const x1 = round(16 + Math.cos(angle) * r1)
+        const y1 = round(16 + Math.sin(angle) * r1)
+        const x2 = round(16 + Math.cos(angle) * r2)
+        const y2 = round(16 + Math.sin(angle) * r2)
         return (
           <line
             key={i}

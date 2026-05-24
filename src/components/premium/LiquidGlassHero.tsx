@@ -5,10 +5,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useLocale } from 'next-intl'
 
-const WORDS = ['Execution.', 'Trade Corridors.', 'Private Label.', 'AI Procurement.', 'Governance.', 'Velocity.', 'Scale.']
-
 const STATS = [
-  { label: 'Track Record', value: '$700M+' },
+  { label: 'Track Record', value: '$1.2B+' },
   { label: 'Operating Legacy', value: '18 Years' },
   { label: 'Industry Verticals', value: '10' },
   { label: 'Continents', value: '3' },
@@ -35,12 +33,10 @@ function useCountUp(target: number, duration = 1800, start = false) {
 const LiquidGlassHero: React.FC = () => {
   const locale = useLocale()
   const [isLoaded, setIsLoaded] = useState(false)
-  const [wordIdx, setWordIdx] = useState(0)
-  const [wordVisible, setWordVisible] = useState(true)
   const [statsVisible, setStatsVisible] = useState(false)
   const statsRef = useRef<HTMLDivElement>(null)
 
-  const trackRecord = useCountUp(700, 1800, statsVisible)
+  const trackRecord = useCountUp(12, 1800, statsVisible)
   const years = useCountUp(18, 1200, statsVisible)
   const verticals = useCountUp(10, 1200, statsVisible)
   const continents = useCountUp(3, 900, statsVisible)
@@ -51,15 +47,6 @@ const LiquidGlassHero: React.FC = () => {
     const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setStatsVisible(true) }, { threshold: 0.3 })
     if (statsRef.current) obs.observe(statsRef.current)
     return () => obs.disconnect()
-  }, [])
-
-  // Word swap
-  useEffect(() => {
-    const t = setInterval(() => {
-      setWordVisible(false)
-      setTimeout(() => { setWordIdx(i => (i + 1) % WORDS.length); setWordVisible(true) }, 280)
-    }, 2200)
-    return () => clearInterval(t)
   }, [])
 
   // Ticker now runs as a pure CSS animation (no React re-renders).
@@ -114,41 +101,10 @@ const LiquidGlassHero: React.FC = () => {
           fontWeight: 500,
           letterSpacing: '0.12em',
           textTransform: 'uppercase',
-          marginBottom: '22px',
-          fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
-        }}>
-          Sovereign Trade Infrastructure &nbsp;·&nbsp; Founder &amp; CEO Muhammad Usman &nbsp;·&nbsp; EU-GCC-South Asia Corridor
-        </div>
-
-        {/* Animated Word Swap */}
-        <div style={{
-          fontSize: 'clamp(13px, 1.2vw, 16px)',
-          color: 'rgba(255,255,255,0.6)',
-          fontWeight: 300,
-          lineHeight: 1.6,
-          maxWidth: '440px',
-          transform: isLoaded ? 'translateY(0)' : 'translateY(20px)',
-          transition: 'transform 0.9s cubic-bezier(0.16,1,0.3,1) 0.35s',
           marginBottom: '28px',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '6px',
-          flexWrap: 'wrap',
           fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
-          letterSpacing: '-0.01em',
         }}>
-          We architect cross-border growth for enterprise buyers across Czech Republic, Germany, Poland, Scandinavia, UAE, KSA, and Pakistan through
-          <span style={{
-            display: 'inline-block',
-            color: '#E5C07B',
-            fontWeight: 500,
-            opacity: wordVisible ? 1 : 0,
-            transform: wordVisible ? 'translateY(0)' : 'translateY(5px)',
-            transition: 'opacity 0.28s ease, transform 0.28s ease',
-            minWidth: '110px',
-          }}>
-            {WORDS[wordIdx]}
-          </span>
+          Sovereign Trade Infrastructure
         </div>
 
         {/* CTAs */}
@@ -192,7 +148,7 @@ const LiquidGlassHero: React.FC = () => {
         {/* Animated Stats Row */}
         <div ref={statsRef} style={{ display: 'flex', gap: 'clamp(20px, 4vw, 52px)', flexWrap: 'wrap' }}>
           {[
-            { num: trackRecord, prefix: '$', suffix: 'M+', label: 'Track Record' },
+            { num: trackRecord / 10, prefix: '$', suffix: 'B+', label: 'Track Record' },
             { num: years, suffix: '', label: 'Years' },
             { num: verticals, suffix: '', label: 'Verticals' },
             { num: continents, suffix: '', label: 'Continents' },
