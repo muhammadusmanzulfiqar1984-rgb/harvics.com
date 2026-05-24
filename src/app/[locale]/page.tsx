@@ -74,8 +74,8 @@ const InteractiveWorldMap = dynamic(
 // Header and Footer are provided by layout.tsx
 
 export default async function Home() {
-  const frameHeight = 'calc(100vh - 136px)'
-  const frameStyle = { scrollSnapAlign: 'start' as const, minHeight: frameHeight }
+  const frameHeight = 'calc(100dvh - var(--harvics-header-h, 136px))'
+  const frameStyle = { scrollSnapAlign: 'start' as const, minHeight: frameHeight, height: frameHeight }
 
   // Solid frame backgrounds — alternating to create depth rhythm.
   // NOTE: backdrop-filter blur was removed because re-blurring the entire
@@ -160,7 +160,7 @@ export default async function Home() {
           </LazySection>
         </div>
 
-        {/* Frame 8: Supply Chain Cloud — fixed height, no LazySection (component owns its own height) */}
+        {/* Frame 8: Supply Chain Wheel */}
         <div
           data-frame="8"
           data-animate
@@ -168,28 +168,15 @@ export default async function Home() {
           style={{ ...frameStyle, scrollSnapAlign: 'start' }}
         >
           <ThreeDErrorBoundary>
-            <CinematicSupplyChainSection />
+            <SupplyChainWheel />
           </ThreeDErrorBoundary>
         </div>
 
-        {/* Frame 8b: Supply Chain Wheel — TEMP HIDDEN
-        <div data-frame="8b" data-animate className="overflow-hidden relative" style={glassB}>
+        {/* Frame 9: Interactive World Map */}
+        <div data-frame="9" data-animate className="overflow-hidden relative" style={glassA}>
           <LazySection minHeight="100vh">
-            <ThreeDErrorBoundary>
-              <SupplyChainWheel />
-            </ThreeDErrorBoundary>
+            <InteractiveWorldMap />
           </LazySection>
-        </div>
-        */}
-
-        {/* Frame 9: Harvics Globe */}
-        <div
-          data-frame="9"
-          data-animate
-          className="relative overflow-hidden"
-          style={{ ...frameStyle, scrollSnapAlign: 'start', background: '#06080a' }}
-        >
-          <HarvicsGlobe />
         </div>
 
         {/* Frame 10: Contact */}

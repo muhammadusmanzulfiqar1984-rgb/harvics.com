@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3002",
+    "dev": "next dev -p 3000",
     "backend": "tsx --tsconfig backend/tsconfig.json backend/src/index.ts",
     "backend:watch": "tsx watch --tsconfig backend/tsconfig.json backend/src/index.ts",
     "backend:build": "tsc -p backend/tsconfig.json",

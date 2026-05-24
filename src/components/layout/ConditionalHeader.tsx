@@ -21,7 +21,9 @@ export default function ConditionalHeader({
   useEffect(() => {
     const measure = () => {
       if (headerRef.current) {
-        setHeaderHeight(headerRef.current.offsetHeight)
+        const h = headerRef.current.offsetHeight
+        setHeaderHeight(h)
+        document.documentElement.style.setProperty('--harvics-header-h', `${h}px`)
       }
     }
     measure()
