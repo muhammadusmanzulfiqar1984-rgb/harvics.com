@@ -1,10 +1,39 @@
 # HARVICS OS — MASTER SPECIFICATION
-# Last Updated: May 23, 2026 (Session 35 — Production Hardening T10)
+# Last Updated: May 24, 2026 (Session 36 — v2-audit-emit-on-writes)
 # READ THIS FIRST. EVERY SESSION. NO EXCEPTIONS.
 
 ---
 
-## ✅ LATEST SESSION UPDATE (May 23, 2026 · Session 35 — Production Hardening T10)
+## ✅ LATEST SESSION UPDATE (May 24, 2026 · Session 36 — v2-audit-emit-on-writes)
+
+**TASK COMPLETED:** Every state-changing handler on the `/api/v2/*` surface now emits an audit record.
+
+### Audit of prior claim
+- Session 35 (T10) added Zod validation to 24 v2 writes but did **not** add audit emission.
+- Pre-change grep of `production.controller.ts`: only one call site touched `prisma.auditEvent` — the dedicated `POST /audit-events` endpoint.
+- Decision: close the gap with a controller-only change. No schema, no auth additions.
+
+### Backend deliverables
+- **`backend/src/modules/production/production.controller.ts`**
+  - New helper `emitAudit(req, action, entity, entityId, payload?)` — fire-and-forget, writes to existing `AuditEvent` Prisma model (no migration). Failures swallowed so audit can never break a user request.
+  - Helper wired into **24 write handlers**: workOrder, qualityCheck, ncr, project, task, bankAccount, bankTransaction, fxRate, emailCampaign, socialPost, document, notification, asset, maintenanceLog (each `create` / `update` / `delete` as applicable).
+  - `/audit-events` POST left untouched (it *is* the audit endpoint — no self-recursion).
+  - Action naming convention: `entity.created`, `entity.updated`, `entity.deleted`. `module` field tagged `"v2"` so audit queries can filter the production surface.
+
+### Known limitation recorded
+- `/api/v2/*` is currently mounted **without `requireAuthScope`** (see `backend/src/routes.ts:1913`). `actorId` and `actorRole` will therefore be `null` until v2 auth is added in a follow-up task. The helper reads `req.user` defensively so it will start populating those fields automatically the moment auth is added — no controller change needed then.
+
+### Validation
+- `npx tsc --skipLibCheck --noEmit` clean (backend).
+- No schema change. No new dependencies. No behaviour change for existing callers — audit is fire-and-forget.
+
+### Security gains
+- OWASP A09 (Security Logging & Monitoring Failures) — every write to the production data surface now leaves a queryable audit trail (entity, action, entityId, ip, user-agent, payload, timestamp).
+- Compliance posture: write-side audit completeness moved from 1/24 endpoints (4%) → 24/24 (100%).
+
+---
+
+## ✅ PRIOR SESSION (May 23, 2026 · Session 35 — Production Hardening T10)
 
 **TASK COMPLETED:** Zod validation sweep on every `/api/v2/*` POST/PATCH body.
 

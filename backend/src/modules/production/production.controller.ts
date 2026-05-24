@@ -57,6 +57,41 @@ function handle(fn: (req: Request, res: Response) => Promise<any>) {
   };
 }
 
+/**
+ * Fire-and-forget audit emission for every v2 write.
+ * Writes to the existing `AuditEvent` Prisma model (no schema change).
+ * Failures are swallowed so a bad audit row never breaks the user-facing request.
+ * Note: /v2 is currently mounted without `requireAuthScope`, so `actorId`/`actorRole`
+ * may be null. When auth is added in a later task, those fields will start populating
+ * automatically because `requireAuthScope` sets `req.user`.
+ */
+async function emitAudit(
+  req: Request,
+  action: string,
+  entity: string,
+  entityId: string | undefined,
+  payload?: unknown,
+) {
+  try {
+    const user = (req as any).user as { id?: string; role?: string } | undefined;
+    await prisma.auditEvent.create({
+      data: {
+        actorId: user?.id ?? null,
+        actorRole: user?.role ?? null,
+        action,
+        module: 'v2',
+        entity,
+        entityId: entityId ?? null,
+        ipAddress: req.ip ?? null,
+        userAgent: req.get('user-agent') ?? null,
+        payload: (payload as any) ?? undefined,
+      },
+    });
+  } catch {
+    // Audit must never break the request. Swallow.
+  }
+}
+
 // ── MANUFACTURING ───────────────────────────────────────────────────
 router.get('/manufacturing/work-orders', handle(async (_req, res) => {
   const data = await prisma.workOrder.findMany({ include: { bomItems: true }, orderBy: { createdAt: 'desc' }, take: 200 });
@@ -64,14 +99,17 @@ router.get('/manufacturing/work-orders', handle(async (_req, res) => {
 }));
 router.post('/manufacturing/work-orders', validateBody(WorkOrderCreateSchema), handle(async (req, res) => {
   const wo = await prisma.workOrder.create({ data: req.body });
+  void emitAudit(req, 'workOrder.created', 'WorkOrder', wo.id, req.body);
   res.status(201).json({ success: true, data: wo });
 }));
 router.patch('/manufacturing/work-orders/:id', validateBody(WorkOrderUpdateSchema), handle(async (req, res) => {
   const updated = await prisma.workOrder.update({ where: { id: req.params.id }, data: req.body });
+  void emitAudit(req, 'workOrder.updated', 'WorkOrder', updated.id, req.body);
   res.json({ success: true, data: updated });
 }));
 router.delete('/manufacturing/work-orders/:id', handle(async (req, res) => {
   await prisma.workOrder.delete({ where: { id: req.params.id } });
+  void emitAudit(req, 'workOrder.deleted', 'WorkOrder', req.params.id);
   res.json({ success: true });
 }));
 
@@ -82,14 +120,17 @@ router.get('/quality/checks', handle(async (_req, res) => {
 }));
 router.post('/quality/checks', validateBody(QualityCheckCreateSchema), handle(async (req, res) => {
   const check = await prisma.qualityCheck.create({ data: req.body });
+  void emitAudit(req, 'qualityCheck.created', 'QualityCheck', check.id, req.body);
   res.status(201).json({ success: true, data: check });
 }));
 router.patch('/quality/checks/:id', validateBody(QualityCheckUpdateSchema), handle(async (req, res) => {
   const updated = await prisma.qualityCheck.update({ where: { id: req.params.id }, data: req.body });
+  void emitAudit(req, 'qualityCheck.updated', 'QualityCheck', updated.id, req.body);
   res.json({ success: true, data: updated });
 }));
 router.delete('/quality/checks/:id', handle(async (req, res) => {
   await prisma.qualityCheck.delete({ where: { id: req.params.id } });
+  void emitAudit(req, 'qualityCheck.deleted', 'QualityCheck', req.params.id);
   res.json({ success: true });
 }));
 
@@ -99,14 +140,17 @@ router.get('/quality/ncrs', handle(async (_req, res) => {
 }));
 router.post('/quality/ncrs', validateBody(NCRCreateSchema), handle(async (req, res) => {
   const ncr = await prisma.nonConformanceReport.create({ data: req.body });
+  void emitAudit(req, 'ncr.created', 'NonConformanceReport', ncr.id, req.body);
   res.status(201).json({ success: true, data: ncr });
 }));
 router.patch('/quality/ncrs/:id', validateBody(NCRUpdateSchema), handle(async (req, res) => {
   const updated = await prisma.nonConformanceReport.update({ where: { id: req.params.id }, data: req.body });
+  void emitAudit(req, 'ncr.updated', 'NonConformanceReport', updated.id, req.body);
   res.json({ success: true, data: updated });
 }));
 router.delete('/quality/ncrs/:id', handle(async (req, res) => {
   await prisma.nonConformanceReport.delete({ where: { id: req.params.id } });
+  void emitAudit(req, 'ncr.deleted', 'NonConformanceReport', req.params.id);
   res.json({ success: true });
 }));
 
@@ -117,14 +161,17 @@ router.get('/projects', handle(async (_req, res) => {
 }));
 router.post('/projects', validateBody(ProjectCreateSchema), handle(async (req, res) => {
   const p = await prisma.project.create({ data: req.body });
+  void emitAudit(req, 'project.created', 'Project', p.id, req.body);
   res.status(201).json({ success: true, data: p });
 }));
 router.patch('/projects/:id', validateBody(ProjectUpdateSchema), handle(async (req, res) => {
   const updated = await prisma.project.update({ where: { id: req.params.id }, data: req.body });
+  void emitAudit(req, 'project.updated', 'Project', updated.id, req.body);
   res.json({ success: true, data: updated });
 }));
 router.delete('/projects/:id', handle(async (req, res) => {
   await prisma.project.delete({ where: { id: req.params.id } });
+  void emitAudit(req, 'project.deleted', 'Project', req.params.id);
   res.json({ success: true });
 }));
 
@@ -134,14 +181,17 @@ router.get('/projects/:id/tasks', handle(async (req, res) => {
 }));
 router.post('/projects/:id/tasks', validateBody(TaskCreateSchema), handle(async (req, res) => {
   const task = await prisma.task.create({ data: { ...req.body, projectId: req.params.id } });
+  void emitAudit(req, 'task.created', 'Task', task.id, { ...req.body, projectId: req.params.id });
   res.status(201).json({ success: true, data: task });
 }));
 router.patch('/projects/tasks/:taskId', validateBody(TaskUpdateSchema), handle(async (req, res) => {
   const updated = await prisma.task.update({ where: { id: req.params.taskId }, data: req.body });
+  void emitAudit(req, 'task.updated', 'Task', updated.id, req.body);
   res.json({ success: true, data: updated });
 }));
 router.delete('/projects/tasks/:taskId', handle(async (req, res) => {
   await prisma.task.delete({ where: { id: req.params.taskId } });
+  void emitAudit(req, 'task.deleted', 'Task', req.params.taskId);
   res.json({ success: true });
 }));
 
@@ -152,6 +202,7 @@ router.get('/treasury/accounts', handle(async (_req, res) => {
 }));
 router.post('/treasury/accounts', validateBody(BankAccountCreateSchema), handle(async (req, res) => {
   const acc = await prisma.bankAccount.create({ data: req.body });
+  void emitAudit(req, 'bankAccount.created', 'BankAccount', acc.id, req.body);
   res.status(201).json({ success: true, data: acc });
 }));
 router.get('/treasury/accounts/:id/transactions', handle(async (req, res) => {
@@ -163,6 +214,7 @@ router.post('/treasury/accounts/:id/transactions', validateBody(BankTransactionC
   const tx = await prisma.bankTransaction.create({ data: { ...req.body, accountId: req.params.id } });
   const delta = type === 'Credit' ? amount : -amount;
   await prisma.bankAccount.update({ where: { id: req.params.id }, data: { balance: { increment: delta } } });
+  void emitAudit(req, 'bankTransaction.created', 'BankTransaction', tx.id, { ...req.body, accountId: req.params.id, balanceDelta: delta });
   res.status(201).json({ success: true, data: tx });
 }));
 
@@ -172,6 +224,7 @@ router.get('/treasury/fx-rates', handle(async (_req, res) => {
 }));
 router.post('/treasury/fx-rates', validateBody(FxRateCreateSchema), handle(async (req, res) => {
   const fx = await prisma.fxRate.create({ data: req.body });
+  void emitAudit(req, 'fxRate.created', 'FxRate', fx.id, req.body);
   res.status(201).json({ success: true, data: fx });
 }));
 
@@ -182,14 +235,17 @@ router.get('/marketing/email-campaigns', handle(async (_req, res) => {
 }));
 router.post('/marketing/email-campaigns', validateBody(EmailCampaignCreateSchema), handle(async (req, res) => {
   const c = await prisma.emailCampaign.create({ data: req.body });
+  void emitAudit(req, 'emailCampaign.created', 'EmailCampaign', c.id, req.body);
   res.status(201).json({ success: true, data: c });
 }));
 router.patch('/marketing/email-campaigns/:id', validateBody(EmailCampaignUpdateSchema), handle(async (req, res) => {
   const updated = await prisma.emailCampaign.update({ where: { id: req.params.id }, data: req.body });
+  void emitAudit(req, 'emailCampaign.updated', 'EmailCampaign', updated.id, req.body);
   res.json({ success: true, data: updated });
 }));
 router.delete('/marketing/email-campaigns/:id', handle(async (req, res) => {
   await prisma.emailCampaign.delete({ where: { id: req.params.id } });
+  void emitAudit(req, 'emailCampaign.deleted', 'EmailCampaign', req.params.id);
   res.json({ success: true });
 }));
 
@@ -199,14 +255,17 @@ router.get('/marketing/social-posts', handle(async (_req, res) => {
 }));
 router.post('/marketing/social-posts', validateBody(SocialPostCreateSchema), handle(async (req, res) => {
   const p = await prisma.socialPost.create({ data: req.body });
+  void emitAudit(req, 'socialPost.created', 'SocialPost', p.id, req.body);
   res.status(201).json({ success: true, data: p });
 }));
 router.patch('/marketing/social-posts/:id', validateBody(SocialPostUpdateSchema), handle(async (req, res) => {
   const updated = await prisma.socialPost.update({ where: { id: req.params.id }, data: req.body });
+  void emitAudit(req, 'socialPost.updated', 'SocialPost', updated.id, req.body);
   res.json({ success: true, data: updated });
 }));
 router.delete('/marketing/social-posts/:id', handle(async (req, res) => {
   await prisma.socialPost.delete({ where: { id: req.params.id } });
+  void emitAudit(req, 'socialPost.deleted', 'SocialPost', req.params.id);
   res.json({ success: true });
 }));
 
@@ -220,14 +279,17 @@ router.get('/documents', handle(async (req, res) => {
 }));
 router.post('/documents', validateBody(DocumentCreateSchema), handle(async (req, res) => {
   const d = await prisma.document.create({ data: req.body });
+  void emitAudit(req, 'document.created', 'Document', d.id, req.body);
   res.status(201).json({ success: true, data: d });
 }));
 router.patch('/documents/:id', validateBody(DocumentUpdateSchema), handle(async (req, res) => {
   const updated = await prisma.document.update({ where: { id: req.params.id }, data: req.body });
+  void emitAudit(req, 'document.updated', 'Document', updated.id, req.body);
   res.json({ success: true, data: updated });
 }));
 router.delete('/documents/:id', handle(async (req, res) => {
   await prisma.document.delete({ where: { id: req.params.id } });
+  void emitAudit(req, 'document.deleted', 'Document', req.params.id);
   res.json({ success: true });
 }));
 
@@ -241,14 +303,17 @@ router.get('/notifications', handle(async (req, res) => {
 }));
 router.post('/notifications', validateBody(NotificationCreateSchema), handle(async (req, res) => {
   const n = await prisma.notification.create({ data: req.body });
+  void emitAudit(req, 'notification.created', 'Notification', n.id, req.body);
   res.status(201).json({ success: true, data: n });
 }));
 router.patch('/notifications/:id', validateBody(NotificationUpdateSchema), handle(async (req, res) => {
   const updated = await prisma.notification.update({ where: { id: req.params.id }, data: { ...req.body, readAt: req.body?.read ? new Date() : undefined } });
+  void emitAudit(req, 'notification.updated', 'Notification', updated.id, req.body);
   res.json({ success: true, data: updated });
 }));
 router.delete('/notifications/:id', handle(async (req, res) => {
   await prisma.notification.delete({ where: { id: req.params.id } });
+  void emitAudit(req, 'notification.deleted', 'Notification', req.params.id);
   res.json({ success: true });
 }));
 
@@ -273,14 +338,17 @@ router.get('/assets', handle(async (_req, res) => {
 }));
 router.post('/assets', validateBody(AssetCreateSchema), handle(async (req, res) => {
   const a = await prisma.asset.create({ data: req.body });
+  void emitAudit(req, 'asset.created', 'Asset', a.id, req.body);
   res.status(201).json({ success: true, data: a });
 }));
 router.patch('/assets/:id', validateBody(AssetUpdateSchema), handle(async (req, res) => {
   const updated = await prisma.asset.update({ where: { id: req.params.id }, data: req.body });
+  void emitAudit(req, 'asset.updated', 'Asset', updated.id, req.body);
   res.json({ success: true, data: updated });
 }));
 router.delete('/assets/:id', handle(async (req, res) => {
   await prisma.asset.delete({ where: { id: req.params.id } });
+  void emitAudit(req, 'asset.deleted', 'Asset', req.params.id);
   res.json({ success: true });
 }));
 
@@ -291,6 +359,7 @@ router.get('/assets/:id/maintenance', handle(async (req, res) => {
 router.post('/assets/:id/maintenance', validateBody(MaintenanceLogCreateSchema), handle(async (req, res) => {
   const log = await prisma.maintenanceLog.create({ data: { ...req.body, assetId: req.params.id } });
   await prisma.asset.update({ where: { id: req.params.id }, data: { status: 'InMaintenance' } });
+  void emitAudit(req, 'maintenanceLog.created', 'MaintenanceLog', log.id, { ...req.body, assetId: req.params.id });
   res.status(201).json({ success: true, data: log });
 }));
 
