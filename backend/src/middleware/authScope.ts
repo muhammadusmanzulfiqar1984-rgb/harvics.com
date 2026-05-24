@@ -20,8 +20,11 @@ export const requireAuthScope = (req: Request, res: Response, next: NextFunction
     return res.status(401).json({ error: 'Missing Authorization header' });
   }
 
-  // Allow frontend demo tokens (local dev only)
+  // Allow frontend demo tokens (local dev only \u2014 NEVER in production)
   if (token.startsWith('demo-token-') && DEMO_SCOPES[token]) {
+    if (process.env.NODE_ENV === 'production') {
+      return res.status(401).json({ error: 'Demo tokens are disabled in production', code: 'TOKEN_INVALID' });
+    }
     const demo = DEMO_SCOPES[token];
     req.userScope = demo.scope;
     req.user = { id: demo.sub, role: demo.scope.role };

@@ -1,6 +1,190 @@
 # HARVICS OS — MASTER SPECIFICATION
-# Last Updated: May 20, 2026 (Session 29 — Live v2 Data Wiring Continued)
+# Last Updated: May 23, 2026 (Session 35 — Production Hardening T10)
 # READ THIS FIRST. EVERY SESSION. NO EXCEPTIONS.
+
+---
+
+## ✅ LATEST SESSION UPDATE (May 23, 2026 · Session 35 — Production Hardening T10)
+
+**TASK COMPLETED:** Zod validation sweep on every `/api/v2/*` POST/PATCH body.
+
+### Backend deliverables
+- **New: `backend/src/middleware/validate.ts`**
+  - `validateBody(schema)` and `validateQuery(schema)` middleware.
+  - Returns RFC7807 `application/problem+json` with field-level `errors[{path,message}]` on 400.
+  - Replaces `req.body` / `req.query` with the validated/coerced value.
+- **New: `backend/src/modules/production/production.schemas.ts`**
+  - 25+ zod schemas covering every POST/PATCH body across the `/api/v2/*` surface.
+  - Strict primitives: ISO currency codes (`/^[A-Z]{3}$/`), positive/non-negative number coercion, ISO date coercion, length caps on every string, enum for severity/transaction type.
+  - All update schemas derived via `.partial()` — additive safety.
+- **Refactor: `backend/src/modules/production/production.controller.ts`**
+  - Every POST/PATCH handler now wrapped in `validateBody(...)` — 24 routes hardened.
+  - Ad-hoc `if (!x || !y) return 400` checks removed (replaced by schema).
+  - Prisma `P2025` (record not found) now surfaces as `404` instead of `500`.
+
+### Routes hardened (v2)
+- Manufacturing work-orders (POST/PATCH)
+- Quality checks (POST/PATCH), Quality NCRs (POST/PATCH)
+- Projects (POST/PATCH), Project tasks (POST/PATCH)
+- Treasury accounts (POST), transactions (POST), FX rates (POST)
+- Marketing email-campaigns (POST/PATCH), social-posts (POST/PATCH)
+- Documents (POST/PATCH)
+- Notifications (POST/PATCH)
+- Audit events (POST)
+- Assets (POST/PATCH), Asset maintenance (POST)
+
+### Validation
+- `npx tsc --skipLibCheck --noEmit` clean (backend).
+- No diagnostics on new files.
+
+### Security gains
+- OWASP A03 (Injection) — type/length-bounded inputs at API boundary; unknown fields stripped before Prisma.
+- OWASP A04 (Insecure Design) — strict ISO currency, enum-bounded enums, no silent `Number(undefined) → NaN` paths.
+- Improved DX — clients get actionable RFC7807 field-level errors instead of generic 400s.
+
+---
+
+## ✅ LATEST SESSION UPDATE (May 23, 2026 · Session 34 — Production Hardening T8 + T11)
+
+**TASK COMPLETED:** Auth hardening + security headers (OWASP-aligned).
+
+### Backend deliverables
+- **`backend/src/index.ts`**
+  - Added `helmet` with strict CSP in production (`default-src 'self'`, no `unsafe-inline` scripts, `frame-ancestors 'none'`), HSTS (180d, includeSubDomains, preload), `Referrer-Policy: strict-origin-when-cross-origin`.
+  - Capped JSON body size at `1mb`.
+  - Production fail-fast env validation: backend refuses to boot if `JWT_SECRET` missing/contains "fallback" or `ALLOWED_ORIGINS` unset.
+- **`backend/src/modules/auth/auth.controller.ts`**
+  - Access token TTL reduced from **24h → 15m** (env: `ACCESS_TOKEN_TTL`).
+  - New refresh token flow: `POST /api/auth/refresh` rotates the pair, revokes old `jti`.
+  - New `POST /api/auth/logout` revokes refresh token.
+  - Per-username login lockout: 5 failed attempts within 15m locks account → `423 Locked` + audit log entry.
+  - Separate `JWT_REFRESH_SECRET` (defaults to `JWT_SECRET + ':refresh'`).
+- **`backend/src/middleware/authScope.ts`**
+  - Demo tokens (`demo-token-*`) now **rejected in production**, accepted only in dev.
+- **`.env.example`**
+  - Documented all required production env vars and auth tuning knobs.
+- Installed `helmet@^7.1.0`.
+
+### Validation
+- `npx tsc --skipLibCheck --noEmit` clean (backend).
+- All existing endpoints unchanged in behavior for dev mode.
+- Login response is additive — adds `refreshToken` field.
+
+### Security gains
+- OWASP A02 (Cryptographic Failures) — short access tokens + rotated refresh.
+- OWASP A05 (Security Misconfiguration) — helmet headers, HSTS, CSP, body-size cap.
+- OWASP A07 (Identification & Auth Failures) — account lockout, refresh rotation, prod-blocked demo tokens, fail-fast env validation.
+
+---
+
+## ✅ LATEST SESSION UPDATE (May 23, 2026 · Session 33 — Homepage Globe Runaway Fix)
+
+**TASK COMPLETED:** Stopped the Frame 9 (HarvicsGlobe) infinite-resize loop that was freezing Chrome and triggering "Page Unresponsive" / tab crash.
+
+### Root cause
+- Frame 9 was wrapped in `<LazySection>`, whose root `<div>` collapses to `min-height: auto` once visible. That broke the `h-full` chain into `HarvicsGlobe`'s `<section>`, so the section resolved to **0 px**.
+- Inside that 0-px section the mapbox-gl container then sized itself, was observed by an internal `ResizeObserver`, which called `map.resize()`, which grew the canvas, which the flexbox section accepted (`min-height: auto` default), which fired the ResizeObserver again — a positive feedback loop.
+- Measured: section ballooned to **~130,000 px** tall, JS heap to **~1.8 GB**, then Chrome killed the tab.
+
+### Files changed
+- `src/app/[locale]/page.tsx` — removed `<LazySection>` from Frame 9; wrapper now uses the standard `frameStyle` like every other frame, with `background: '#06080a'` to avoid white flash before the globe mounts.
+- `src/components/HarvicsGlobe.tsx`
+  - Section: dropped `flex flex-col`; set explicit `height: calc(100vh - 136px)` + matching `minHeight`. Section can no longer collapse or grow.
+  - Map container: now `position: absolute; inset: 0` — taken out of normal flow so canvas size cannot push parent dimensions.
+  - Removed the runaway `ResizeObserver`; kept the `IntersectionObserver` and a single deferred `map.resize()` on visibility transitions (sufficient for snap-scroll).
+  - Added strict-mode double-mount guard (`cancelled` flag) so the dynamic `import('mapbox-gl')` resolution can't create an orphan map after teardown.
+  - Single `rotateStarted` latch prevents the rAF rotation loop from starting twice.
+- `src/components/shared/LazySection.tsx` — reverted to its original behaviour (no height propagation). The fix lives entirely in the globe and its wrapper now.
+
+### Verification
+- Live DOM measurement after scrolling to Frame 9: `frameH=258, sectionH=258, canvasH=258, canvasW=538, 12 city markers rendered`. No memory growth.
+- `npx tsc --skipLibCheck --noEmit` clean.
+- Dev server stable on port 3002 throughout.
+
+### New rule recorded in memory
+- **Never wrap a section whose child relies on `height:100%` in `<LazySection>`.** `LazySection`'s rendered state collapses to `min-height:auto`, breaking the height chain. If lazy-mounting is required for a full-height component, give the section an explicit pixel/`calc(...)` height of its own.
+
+---
+
+## ✅ PRIOR SESSION (May 23, 2026 · Session 32 — Production Hardening T4)
+
+**TASK COMPLETED:** API migration matrix — full inventory of `/api/modules/demo/*` vs `/api/v2/*`.
+
+### Deliverable
+- **New file:** `docs-reports/API_MIGRATION_MATRIX.md`
+  - 52 demo endpoint groups catalogued across 5 batch sections (core, batch2, batch4, batch5, batch6/7).
+  - 12 v2 endpoint groups already live + mapped to OS pages.
+  - Per-row status: `live` / `partial` / `missing` / `keep-demo`.
+  - Migration order proposed (T5 → T6 → batch sweeps).
+  - Standardized cutover pattern (Prisma + zod + RBAC + audit + test + frontend flip + sunset headers).
+
+### Snapshot
+- Demo endpoints: **52 groups** (~71+ handlers).
+- v2 already live: **12** groups → **8** OS pages wired.
+- v2 partial (cutover ready): **11**.
+- v2 missing (must build): **~35**.
+
+### Risks recorded
+- Several demo endpoints lack Prisma models (deal-desk, commissions, forecasts, OKR, incidents) → T14 schema lock must add them before cutover.
+- `workflow` demo should become a derived view over `AuditEvent`, not a new model.
+
+### Why this matters
+- Removes ambiguity about what "production-grade" means for the API layer.
+- Gives every future migration session a single checklist row to close.
+- Couples directly to `src/lib/modules/registry.ts` — flipping a row to `live` triggers a registry status update.
+
+---
+
+## ✅ LATEST SESSION UPDATE (May 23, 2026 · Session 31 — Production Hardening T2)
+
+**TASK COMPLETED:** Canonical Module Registry (single source of truth for 71 modules).
+
+### Deliverables
+- **New file:** `src/lib/modules/registry.ts` — canonical registry of all 71 modules across 14 architecture bands.
+  - Exports: `MODULE_REGISTRY`, `MODULES_BY_BAND`, `MODULE_BANDS`, `TOTAL_MODULES`, `TOTAL_BANDS`, `countByStatus()`, `getModuleById()`.
+  - Types: `ModuleRegistryEntry`, `IntelligenceLevel`, `ReportingType`, `ModuleStatus` (`live` | `demo` | `stub` | `planned`).
+  - Each entry carries: `id`, `band`, `name`, `route` (backend), optional `osPath` (frontend), `intelligence`, `reporting`, `status`.
+  - Build-time guards detect count drift and duplicate ids.
+- **Refactor:** `src/components/os-domains/ModuleArchitectureExplorer.tsx` now sources `MODULE_ARCHITECTURE` from the registry. Inline 71-module literal removed. UI copy "71 modules" replaced with derived `{TOTAL_MODULES}`.
+- **Module status snapshot** (from registry): live=12, demo=15, stub=44. Drives readiness dashboards going forward.
+
+### Validation
+- Frontend `npx tsc --skipLibCheck --noEmit` clean.
+- No diagnostics on `registry.ts` or `ModuleArchitectureExplorer.tsx`.
+- Module ids 1–71 verified unique, total=71.
+
+### Why this matters
+- Eliminates count drift (previous risk: spec says 71, marketing says 72, code inlines its own copy).
+- Future module additions/status changes go in ONE file and propagate everywhere.
+- Lays groundwork for T4 (API migration matrix) and readiness/coverage KPIs.
+
+---
+
+## ✅ LATEST SESSION UPDATE (May 23, 2026 · Session 30 — Production Hardening T1)
+
+**TASK COMPLETED:** EnterpriseCRM shell reconcile — corrected stale documentation, no code change.
+
+### Reality check
+- `src/components/shared/EnterpriseCRM.tsx` = **6,423 lines** (full composite, NOT a thin shell).
+- `src/components/shared/EnterpriseCRM.backup.tsx` = **6,431 lines** (intact, safe).
+- Live file is a strict **superset** of backup: adds `modules` tab integrating `ModuleArchitectureExplorer`, plus color/style neutralization. No data lost.
+- Previous memory/spec entries claiming "EnterpriseCRM reduced to 121-line thin shell" were aspirational and never landed in this branch.
+
+### Decision (locked)
+- EnterpriseCRM **remains the full composite** used by 4 portal entry points:
+  - `src/app/[locale]/admin/portal/[persona]/crm/page.tsx`
+  - `src/app/[locale]/portal/supplier/page.tsx`
+  - `src/app/[locale]/distributor-portal/page.tsx`
+  - `src/components/portals/DistributorDashboard.tsx`
+- The 14 OS domain pages under `src/app/[locale]/os/*` remain the canonical drill-down surface.
+- No refactor performed (per workspace rule #2: never refactor without explicit instruction).
+
+### Module count locked
+- **71 modules** across 14 architecture bands. Confirmed across spec, master plan, archive, and live UI. No 72-module variant exists.
+
+### Validation
+- `diff EnterpriseCRM.tsx EnterpriseCRM.backup.tsx` confirms additive-only changes.
+- Backup file untouched.
 
 ---
 

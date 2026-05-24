@@ -1,13 +1,15 @@
 import dynamic from 'next/dynamic'
 import LiquidGlassHero from '@/components/premium/LiquidGlassHero'
-import EnhancedIndustryGrid from '@/components/premium/EnhancedIndustryGrid'
-import HarvicsGlobe from '@/components/HarvicsGlobe'
 import Footer from '@/components/layout/Footer'
 import ThreeDErrorBoundary from '@/components/shared/ThreeDErrorBoundary'
 import ContactSection from '@/components/layout/ContactSection'
 import FrameDotNav from '@/components/premium/FrameDotNav'
 import LazySection from '@/components/shared/LazySection'
 
+// All below-the-fold sections are dynamic-imported so they don't block
+// the initial main-thread render of the hero.
+const EnhancedIndustryGrid = dynamic(() => import('@/components/premium/EnhancedIndustryGrid'))
+const HarvicsGlobe = dynamic(() => import('@/components/HarvicsGlobe'))
 const HowItWorksSection = dynamic(() => import('@/components/premium/HowItWorksSection'))
 const TrustSection = dynamic(() => import('@/components/premium/TrustSection'))
 const AudienceRoutingSection = dynamic(() => import('@/components/premium/AudienceRoutingSection'))
@@ -75,9 +77,11 @@ export default async function Home() {
   const frameHeight = 'calc(100vh - 136px)'
   const frameStyle = { scrollSnapAlign: 'start' as const, minHeight: frameHeight }
 
-  // Glass frame styles — alternating opacity to create depth rhythm
-  const glassA = { ...frameStyle, background: 'rgba(255,255,255,0.88)', backdropFilter: 'blur(14px)', WebkitBackdropFilter: 'blur(14px)' }
-  const glassB = { ...frameStyle, background: 'rgba(255,255,255,0.70)', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)' }
+  // Solid frame backgrounds — alternating to create depth rhythm.
+  // NOTE: backdrop-filter blur was removed because re-blurring the entire
+  // viewport on every paint across ~10 frames was making the page unresponsive.
+  const glassA = { ...frameStyle, background: '#ffffff' }
+  const glassB = { ...frameStyle, background: '#faf9f7' }
 
   return (
     <>
@@ -112,7 +116,9 @@ export default async function Home() {
 
         {/* Frame 3: Industry Grid */}
         <div data-frame="3" data-animate className="overflow-hidden relative" style={glassB}>
-          <EnhancedIndustryGrid />
+          <LazySection minHeight="100vh">
+            <EnhancedIndustryGrid />
+          </LazySection>
         </div>
 
         {/* Frame 3: 3D Product Viewer */}
@@ -126,17 +132,23 @@ export default async function Home() {
 
         {/* Frame 4: How It Works */}
         <div data-frame="4" data-animate className="overflow-hidden relative" style={glassB}>
-          <HowItWorksSection />
+          <LazySection minHeight="100vh">
+            <HowItWorksSection />
+          </LazySection>
         </div>
 
         {/* Frame 5: Trust — Certifications + Key Markets */}
         <div data-frame="5" data-animate className="overflow-hidden relative" style={glassA}>
-          <TrustSection />
+          <LazySection minHeight="100vh">
+            <TrustSection />
+          </LazySection>
         </div>
 
         {/* Frame 6: Audience Routing — Buyers / Distributors / Suppliers */}
         <div data-frame="6" data-animate className="overflow-hidden relative" style={glassB}>
-          <AudienceRoutingSection />
+          <LazySection minHeight="100vh">
+            <AudienceRoutingSection />
+          </LazySection>
         </div>
 
         {/* Frame 7: Scroll Narrative */}
@@ -148,13 +160,16 @@ export default async function Home() {
           </LazySection>
         </div>
 
-        {/* Frame 8: Cinematic Supply Chain — TEMP: SupplyChainWheel hidden */}
-        <div data-frame="8" data-animate className="overflow-hidden relative" style={{ scrollSnapAlign: 'start' }}>
-          <LazySection minHeight="82vh">
-            <ThreeDErrorBoundary>
-              <CinematicSupplyChainSection />
-            </ThreeDErrorBoundary>
-          </LazySection>
+        {/* Frame 8: Supply Chain Cloud — fixed height, no LazySection (component owns its own height) */}
+        <div
+          data-frame="8"
+          data-animate
+          className="relative overflow-hidden"
+          style={{ ...frameStyle, scrollSnapAlign: 'start' }}
+        >
+          <ThreeDErrorBoundary>
+            <CinematicSupplyChainSection />
+          </ThreeDErrorBoundary>
         </div>
 
         {/* Frame 8b: Supply Chain Wheel — TEMP HIDDEN
@@ -168,17 +183,24 @@ export default async function Home() {
         */}
 
         {/* Frame 9: Harvics Globe */}
-        <div data-frame="9" data-animate className="relative overflow-hidden" style={{ ...frameStyle, scrollSnapAlign: 'start' }}>
+        <div
+          data-frame="9"
+          data-animate
+          className="relative overflow-hidden"
+          style={{ ...frameStyle, scrollSnapAlign: 'start', background: '#06080a' }}
+        >
           <HarvicsGlobe />
         </div>
 
         {/* Frame 10: Contact */}
         <div data-frame="10" data-animate className="overflow-hidden relative" style={glassB}>
-          <ContactSection />
+          <LazySection minHeight="100vh">
+            <ContactSection />
+          </LazySection>
         </div>
 
         {/* Frame 11: Footer */}
-        <div data-frame="11" data-animate className="overflow-hidden relative" style={{ ...frameStyle, background: 'rgba(255,255,255,0.93)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
+        <div data-frame="11" data-animate className="overflow-hidden relative" style={{ ...frameStyle, background: '#ffffff' }}>
           <Footer />
         </div>
       </main>

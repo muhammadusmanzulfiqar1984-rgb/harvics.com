@@ -21,6 +21,7 @@ if (process.env.HARVICS_OFFLINE_DATA === '1' && !process.env.HARVICS_QUIET_LOGS)
 
 import express from 'express';
 import cors, { CorsOptions } from 'cors';
+import helmet from 'helmet';
 import http from 'http';
 import { Server } from 'socket.io';
 import routes from './routes';
@@ -28,6 +29,23 @@ import { localeMiddleware } from './middleware/locale';
 import { ProfitSentinel } from './services/profitSentinel';
 import { HarvicsAlphaEngine } from './services/harvicsAlphaEngine';
 import { setNotificationPushFn } from './modules/comms/notification.service';
+
+// ─── Production env validation (fail-fast) ─────────────────────────────────
+// In production we refuse to boot with insecure defaults.
+if (process.env.NODE_ENV === 'production') {
+  const missing: string[] = [];
+  if (!process.env.JWT_SECRET || process.env.JWT_SECRET.includes('fallback')) {
+    missing.push('JWT_SECRET (must be a strong, unique secret; fallback values are rejected)');
+  }
+  if (!process.env.ALLOWED_ORIGINS) {
+    missing.push('ALLOWED_ORIGINS (comma-separated list of permitted origins)');
+  }
+  if (missing.length > 0) {
+    console.error('[harvics-backend] Refusing to start in production. Missing/invalid env vars:');
+    missing.forEach((m) => console.error('  - ' + m));
+    process.exit(1);
+  }
+}
 
 // Prevent backend crash from unexpected async errors (e.g. stale Prisma client, network hiccups)
 process.on('unhandledRejection', (reason: any) => {
@@ -108,8 +126,34 @@ function authRateLimit(req: express.Request, res: express.Response, next: expres
 }
 // ───────────────────────────────────────────────────────────────────────────
 
+// Security headers (helmet). CSP is intentionally conservative here because
+// the frontend is served by Next.js, not this backend — backend only emits
+// API responses, error pages and the small landing HTML at /.
+app.use(
+  helmet({
+    contentSecurityPolicy: isProduction
+      ? {
+          useDefaults: true,
+          directives: {
+            'default-src': ["'self'"],
+            'script-src': ["'self'"],
+            'style-src': ["'self'", "'unsafe-inline'"],
+            'img-src': ["'self'", 'data:'],
+            'connect-src': ["'self'", ...allowedOrigins],
+            'object-src': ["'none'"],
+            'frame-ancestors': ["'none'"],
+          },
+        }
+      : false,
+    crossOriginEmbedderPolicy: false,
+    crossOriginResourcePolicy: { policy: 'cross-origin' },
+    hsts: isProduction ? { maxAge: 15552000, includeSubDomains: true, preload: true } : false,
+    referrerPolicy: { policy: 'strict-origin-when-cross-origin' },
+  })
+);
+
 app.use(cors(corsOptions));
-app.use(express.json());
+app.use(express.json({ limit: '1mb' }));
 
 // Apply global rate limit to all /api routes
 app.use('/api', rateLimit);

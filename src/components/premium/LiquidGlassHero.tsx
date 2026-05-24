@@ -37,7 +37,6 @@ const LiquidGlassHero: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false)
   const [wordIdx, setWordIdx] = useState(0)
   const [wordVisible, setWordVisible] = useState(true)
-  const [tickerOffset, setTickerOffset] = useState(0)
   const [statsVisible, setStatsVisible] = useState(false)
   const statsRef = useRef<HTMLDivElement>(null)
 
@@ -63,13 +62,7 @@ const LiquidGlassHero: React.FC = () => {
     return () => clearInterval(t)
   }, [])
 
-  // Ticker
-  useEffect(() => {
-    let frame: number; let pos = 0
-    const step = () => { pos -= 0.7; setTickerOffset(pos); frame = requestAnimationFrame(step) }
-    frame = requestAnimationFrame(step)
-    return () => cancelAnimationFrame(frame)
-  }, [])
+  // Ticker now runs as a pure CSS animation (no React re-renders).
 
   const tickerText = STATS.map(s => `${s.value}  ${s.label}`).join('   ·   ')
   const repeated = `${tickerText}   ·   ${tickerText}   ·   ${tickerText}`
@@ -269,15 +262,14 @@ const LiquidGlassHero: React.FC = () => {
       {/* Live Ticker */}
       <div className="absolute bottom-0 left-0 right-0 z-30" style={{
         background: 'rgba(107,31,43,0.92)',
-        backdropFilter: 'blur(12px)',
         borderTop: '1px solid rgba(195,163,94,0.25)',
         height: '38px',
         overflow: 'hidden',
       }}>
-        <div style={{
+        <div className="hv-ticker-track" style={{
           display: 'flex', alignItems: 'center', height: '100%',
           whiteSpace: 'nowrap',
-          transform: `translateX(${tickerOffset % 2000}px)`,
+          willChange: 'transform',
         }}>
           <span style={{
             fontSize: '10px', fontWeight: 800, letterSpacing: '0.14em',
@@ -295,6 +287,13 @@ const LiquidGlassHero: React.FC = () => {
         @keyframes heroZoom {
           from { transform: scale(1.0); }
           to   { transform: scale(1.06); }
+        }
+        .hv-ticker-track {
+          animation: hvTickerScroll 60s linear infinite;
+        }
+        @keyframes hvTickerScroll {
+          from { transform: translateX(0); }
+          to   { transform: translateX(-50%); }
         }
         .shimmer-sweep {
           background: linear-gradient(110deg, transparent 30%, rgba(255,215,120,0.4) 50%, transparent 70%);

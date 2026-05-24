@@ -37,8 +37,18 @@ export default function HarvicsGlobe() {
 
     let loadTimeout: NodeJS.Timeout | null = null
     let didLoad = false
+    let rafId: number | null = null
+    let rotateStarted = false
+    let isVisible = false
+    let cancelled = false
+    let visibilityObserver: IntersectionObserver | null = null
 
     import('mapbox-gl').then((mapboxgl) => {
+      // If the effect was torn down (strict-mode double mount) before the
+      // dynamic import resolved, do NOT create an orphan map that would keep
+      // a rAF loop alive on a disposed container.
+      if (cancelled || !mapContainer.current) return
+
       mapboxgl.default.accessToken = MAPBOX_TOKEN
 
       const map = new mapboxgl.default.Map({
@@ -48,6 +58,16 @@ export default function HarvicsGlobe() {
         zoom: 1.4,
         center: [20, 25],
         pitch: 0,
+        // Critical: do NOT hijack page wheel scroll
+        scrollZoom: false,
+        boxZoom: false,
+        doubleClickZoom: false,
+        touchZoomRotate: false,
+        dragRotate: false,
+        dragPan: false,
+        keyboard: false,
+        interactive: false,
+        attributionControl: false,
       })
 
       mapRef.current = map
@@ -61,7 +81,10 @@ export default function HarvicsGlobe() {
       map.on('load', () => {
         didLoad = true
         setLoaded(true)
-        map.resize()
+        // Defer resize one frame so the container has its final laid-out size
+        requestAnimationFrame(() => map.resize())
+        // And once more after fonts/layout settle
+        setTimeout(() => map.resize(), 250)
       })
 
       map.on('style.load', () => {
@@ -105,21 +128,42 @@ export default function HarvicsGlobe() {
 
       })
 
-      // Slow auto-rotate
+      // Slow auto-rotate — only while section is on-screen, throttled to ~30fps
       let userInteracting = false
       map.on('mousedown', () => { userInteracting = true })
       map.on('mouseup', () => { userInteracting = false })
 
-      const rotate = () => {
-        if (!userInteracting) {
-          map.setCenter([
-            (map.getCenter().lng + 0.08) % 360,
-            map.getCenter().lat,
-          ])
+      let lastTick = 0
+      const rotate = (ts: number) => {
+        if (cancelled) return
+        if (isVisible && !userInteracting && ts - lastTick > 33) {
+          lastTick = ts
+          const c = map.getCenter()
+          map.setCenter([(c.lng + 0.12) % 360, c.lat])
         }
-        requestAnimationFrame(rotate)
+        rafId = requestAnimationFrame(rotate)
       }
-      map.on('load', rotate)
+      map.on('load', () => {
+        if (rotateStarted || cancelled) return
+        rotateStarted = true
+        rafId = requestAnimationFrame(rotate)
+      })
+
+      // Pause rotation when section is off-screen. One-shot resize on visibility
+      // transition (NO ResizeObserver — that was feeding back into mapbox's
+      // own canvas resize and ballooning the section to 100k+ px).
+      if (mapContainer.current) {
+        visibilityObserver = new IntersectionObserver(
+          ([entry]) => {
+            isVisible = entry.isIntersecting && entry.intersectionRatio > 0.1
+            if (isVisible && mapRef.current) {
+              requestAnimationFrame(() => mapRef.current?.resize())
+            }
+          },
+          { threshold: [0, 0.1, 0.5] }
+        )
+        visibilityObserver.observe(mapContainer.current)
+      }
 
       loadTimeout = setTimeout(() => {
         if (!didLoad) {
@@ -131,14 +175,20 @@ export default function HarvicsGlobe() {
     })
 
     return () => {
+      cancelled = true
       if (loadTimeout) clearTimeout(loadTimeout)
-      mapRef.current?.remove()
+      if (rafId !== null) cancelAnimationFrame(rafId)
+      if (visibilityObserver) visibilityObserver.disconnect()
+      try { mapRef.current?.remove() } catch {}
       mapRef.current = null
     }
   }, [])
 
   return (
-    <section className="relative w-full h-full flex flex-col items-center justify-center overflow-hidden bg-[#06080a]">
+    <section
+      className="relative w-full overflow-hidden bg-[#06080a]"
+      style={{ height: 'calc(100vh - 136px)', minHeight: 'calc(100vh - 136px)' }}
+    >
       {/* Header */}
       <div className="absolute top-10 left-8 md:left-14 z-10 max-w-xl">
         <p style={{
@@ -161,7 +211,7 @@ export default function HarvicsGlobe() {
 
       {/* Globe or error */}
       {error ? (
-        <div className="flex flex-col items-center justify-center h-full gap-4 text-center px-8">
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 text-center px-8">
           <div style={{
             border: '1px solid rgba(195,163,94,0.3)',
             background: 'rgba(10,10,10,0.8)',
@@ -182,7 +232,17 @@ export default function HarvicsGlobe() {
           </div>
         </div>
       ) : (
-        <div ref={mapContainer} style={{ width: '100%', height: '100%' }} />
+        <div
+          ref={mapContainer}
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            pointerEvents: 'none',
+            touchAction: 'pan-y',
+          }}
+        />
       )}
 
       {!loaded && !error && (

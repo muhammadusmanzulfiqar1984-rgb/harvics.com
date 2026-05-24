@@ -2,111 +2,25 @@
 
 import { useEffect, useState } from 'react'
 import ModuleWorkspace from './ModuleWorkspace'
+import { MODULES_BY_BAND, TOTAL_MODULES } from '@/lib/modules/registry'
 
-// 71-module complete architecture definition
-const MODULE_ARCHITECTURE = {
-  'Finance & Controlling': [
-    { id: 1, name: 'Financial Accounting', route: '/api/finance/gl', intelligence: 'L2', reporting: 'Operational' },
-    { id: 2, name: 'Controlling', route: '/api/finance/controlling', intelligence: 'L3', reporting: 'Management' },
-    { id: 3, name: 'Accounts Receivable', route: '/api/finance/ar', intelligence: 'L3', reporting: 'Operational' },
-    { id: 4, name: 'Accounts Payable', route: '/api/finance/ap', intelligence: 'L3', reporting: 'Operational' },
-    { id: 5, name: 'Treasury & Risk', route: '/api/finance/treasury', intelligence: 'L4', reporting: 'Executive' },
-    { id: 6, name: 'HPay Payments', route: '/api/finance/hpay', intelligence: 'L4', reporting: 'Transaction' },
-    { id: 7, name: 'Financial Planning', route: '/api/finance/planning', intelligence: 'L4', reporting: 'Executive' },
-  ],
-  'Commercial & Sales': [
-    { id: 8, name: 'CRM + Sales', route: '/api/crm/sales', intelligence: 'L4', reporting: 'Management' },
-    { id: 9, name: 'CPQ Engine', route: '/api/crm/cpq', intelligence: 'L3', reporting: 'Operational' },
-    { id: 10, name: 'Sales & Distribution', route: '/api/crm/sales-dist', intelligence: 'L3', reporting: 'Operational' },
-    { id: 11, name: 'Marketing Automation', route: '/api/marketing', intelligence: 'L4', reporting: 'Management' },
-    { id: 12, name: 'Distributor Portal', route: '/api/distributor', intelligence: 'L2', reporting: 'Operational' },
-  ],
-  'Procurement & Sourcing': [
-    { id: 13, name: 'Procurement', route: '/api/procurement', intelligence: 'L3', reporting: 'Operational' },
-    { id: 14, name: 'Vendor Management', route: '/api/procurement/vendors', intelligence: 'L4', reporting: 'Management' },
-    { id: 15, name: 'Contract Lifecycle', route: '/api/procurement/contracts', intelligence: 'L3', reporting: 'Operational' },
-    { id: 16, name: 'Sourcing Network', route: '/api/procurement/sourcing', intelligence: 'L3', reporting: 'Operational' },
-  ],
-  'Manufacturing': [
-    { id: 17, name: 'Production Planning', route: '/api/manufacturing', intelligence: 'L4', reporting: 'Management' },
-    { id: 18, name: 'Shop Floor Control', route: '/api/manufacturing/floor', intelligence: 'L3', reporting: 'Operational' },
-    { id: 19, name: 'Bill of Materials', route: '/api/manufacturing/bom', intelligence: 'L2', reporting: 'Operational' },
-    { id: 20, name: 'Quality Management', route: '/api/quality', intelligence: 'L4', reporting: 'Management' },
-    { id: 21, name: 'Recipe Management', route: '/api/manufacturing/recipes', intelligence: 'L2', reporting: 'Operational' },
-  ],
-  'Inventory & Warehouse': [
-    { id: 22, name: 'Inventory Management', route: '/api/inventory', intelligence: 'L3', reporting: 'Operational' },
-    { id: 23, name: 'Warehouse Management', route: '/api/warehouse', intelligence: 'L3', reporting: 'Operational' },
-    { id: 24, name: 'Demand Planning', route: '/api/inventory/demand', intelligence: 'L4', reporting: 'Management' },
-  ],
-  'Logistics & Trade': [
-    { id: 25, name: 'Fleet Management', route: '/api/logistics/fleet', intelligence: 'L3', reporting: 'Operational' },
-    { id: 26, name: 'Shipping & Freight', route: '/api/logistics/shipping', intelligence: 'L2', reporting: 'Operational' },
-    { id: 27, name: 'Trade & Customs', route: '/api/logistics/trade', intelligence: 'L4', reporting: 'Management' },
-    { id: 28, name: '3PL Integration', route: '/api/logistics/3pl', intelligence: 'L2', reporting: 'Operational' },
-  ],
-  'Human Capital': [
-    { id: 29, name: 'HR Core & Payroll', route: '/api/hr/payroll', intelligence: 'L3', reporting: 'Operational' },
-    { id: 30, name: 'Talent Acquisition', route: '/api/hr/recruitment', intelligence: 'L3', reporting: 'Management' },
-    { id: 31, name: 'Learning Management', route: '/api/hr/learning', intelligence: 'L2', reporting: 'Operational' },
-    { id: 32, name: 'Performance & Succession', route: '/api/hr/performance', intelligence: 'L3', reporting: 'Management' },
-    { id: 33, name: 'Workforce Planning', route: '/api/hr/workforce', intelligence: 'L3', reporting: 'Operational' },
-  ],
-  'Asset & Maintenance': [
-    { id: 34, name: 'Fixed Assets', route: '/api/assets', intelligence: 'L2', reporting: 'Transaction' },
-    { id: 35, name: 'Plant Maintenance', route: '/api/maintenance', intelligence: 'L4', reporting: 'Management' },
-    { id: 36, name: 'Real Estate & Facilities', route: '/api/facilities', intelligence: 'L2', reporting: 'Operational' },
-  ],
-  'GRC': [
-    { id: 37, name: 'GRC Core', route: '/api/grc', intelligence: 'L3', reporting: 'Management' },
-    { id: 38, name: 'Internal Audit', route: '/api/grc/audit', intelligence: 'L3', reporting: 'Management' },
-    { id: 39, name: 'Legal & Compliance', route: '/api/grc/compliance', intelligence: 'L4', reporting: 'Executive' },
-    { id: 40, name: 'Neural Governance', route: '/api/governance', intelligence: 'L5', reporting: 'Executive' },
-  ],
-  'Analytics & Intelligence': [
-    { id: 41, name: 'BI & Reporting', route: '/api/bi', intelligence: 'L3', reporting: 'Management' },
-    { id: 42, name: 'Board Pack Generator', route: '/api/bi/board', intelligence: 'L5', reporting: 'Executive' },
-    { id: 43, name: 'OKR Tracking', route: '/api/bi/okr', intelligence: 'L3', reporting: 'Management' },
-    { id: 44, name: 'AI Variance Commentary', route: '/api/ai/variance', intelligence: 'L5', reporting: 'Executive' },
-  ],
-  'Projects & Services': [
-    { id: 45, name: 'Project Management', route: '/api/projects', intelligence: 'L3', reporting: 'Operational' },
-    { id: 46, name: 'Service Management', route: '/api/services', intelligence: 'L3', reporting: 'Operational' },
-    { id: 47, name: 'Professional Services', route: '/api/projects/psa', intelligence: 'L3', reporting: 'Management' },
-  ],
-  'Platform & Infrastructure': [
-    { id: 48, name: 'Tax Engine', route: '/api/platform/tax', intelligence: 'L2', reporting: 'Transaction' },
-    { id: 49, name: 'FX Engine', route: '/api/platform/fx', intelligence: 'L3', reporting: 'Operational' },
-    { id: 50, name: 'Audit Log', route: '/api/audit-log', intelligence: 'L2', reporting: 'Management' },
-    { id: 51, name: 'Notifications', route: '/api/comms/notifications', intelligence: 'L2', reporting: 'Operational' },
-    { id: 52, name: 'Document Vault', route: '/api/documents', intelligence: 'L2', reporting: 'Operational' },
-    { id: 53, name: 'Admin & Security', route: '/api/admin', intelligence: 'L2', reporting: 'Management' },
-    { id: 54, name: 'Integration Bus', route: '/api/integration', intelligence: 'L2', reporting: 'Operational' },
-  ],
-  'Data & AI': [
-    { id: 55, name: 'Data Ocean', route: '/api/data-ocean', intelligence: 'L5', reporting: 'Foundation' },
-    { id: 56, name: 'AI Engine', route: '/api/ai/models', intelligence: 'L5', reporting: 'Foundation' },
-    { id: 57, name: 'Harvoice', route: '/api/ai/harvoice', intelligence: 'L5', reporting: 'Interactive' },
-    { id: 58, name: 'Globalisation', route: '/api/ai/globalisation', intelligence: 'L3', reporting: 'Foundation' },
-  ],
-  'HARVICS Universe': [
-    { id: 59, name: 'FunFeed', route: '/api/universe/feed', intelligence: 'L2', reporting: 'Social' },
-    { id: 60, name: 'Harvics Mall', route: '/api/universe/mall', intelligence: 'L2', reporting: 'B2C' },
-    { id: 61, name: 'Trade Floor', route: '/api/universe/trade', intelligence: 'L3', reporting: 'B2C' },
-    { id: 62, name: 'Playroom', route: '/api/universe/games', intelligence: 'L1', reporting: 'Engagement' },
-    { id: 63, name: 'Experts Hub', route: '/api/universe/experts', intelligence: 'L2', reporting: 'Gig' },
-    { id: 64, name: 'Jobs + Travel', route: '/api/universe/jobs', intelligence: 'L2', reporting: 'Gig' },
-    { id: 65, name: 'Crypto Lite', route: '/api/universe/crypto', intelligence: 'L3', reporting: 'Trading' },
-    { id: 66, name: 'Harvicoins', route: '/api/universe/harvicoins', intelligence: 'L2', reporting: 'Wallet' },
-    { id: 67, name: 'HPay Wallet', route: '/api/universe/hpay', intelligence: 'L3', reporting: 'Wallet' },
-    { id: 68, name: 'Circle Referral', route: '/api/universe/referral', intelligence: 'L2', reporting: 'Program' },
-  ],
-  'Portals': [
-    { id: 69, name: 'Customer Portal', route: '/api/portals/customer', intelligence: 'L1', reporting: 'B2C' },
-    { id: 70, name: 'Vendor Portal', route: '/api/portals/vendor', intelligence: 'L2', reporting: 'B2B' },
-    { id: 71, name: 'Field Officer Portal', route: '/api/portals/field', intelligence: 'L2', reporting: 'Field' },
-  ],
-}
+// Canonical 71-module architecture is sourced from src/lib/modules/registry.ts.
+// Mapped into the legacy shape this component consumes — DO NOT inline modules here.
+const MODULE_ARCHITECTURE: Record<
+  string,
+  Array<{ id: number; name: string; route: string; intelligence: string; reporting: string }>
+> = Object.fromEntries(
+  Object.entries(MODULES_BY_BAND).map(([band, mods]) => [
+    band,
+    mods.map((m) => ({
+      id: m.id,
+      name: m.name,
+      route: m.route,
+      intelligence: m.intelligence,
+      reporting: m.reporting,
+    })),
+  ]),
+)
 
 interface ModuleData {
   status: string
@@ -517,7 +431,7 @@ export default function ModuleArchitectureExplorer() {
             <div>
               <h2 className="text-[clamp(28px,4vw,44px)] font-bold leading-none tracking-[-0.02em]">X Command Center</h2>
               <p className="mt-2 max-w-4xl text-sm text-white/80">
-                Real-time signals, approvals, and action orchestration across all 71 modules with AI-ranked next steps,
+                Real-time signals, approvals, and action orchestration across all {TOTAL_MODULES} modules with AI-ranked next steps,
                 governance-aware execution, and live contract readiness.
               </p>
             </div>

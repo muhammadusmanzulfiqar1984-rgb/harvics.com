@@ -80,9 +80,14 @@ const SupremeNavBar: React.FC = () => {
   // Shorter labels for the nav bar to prevent overflow
   const navLabels: Record<string, string> = {
     textiles: 'Apparels',
+    fmcg: 'FMCG',
+    commodities: 'Commodities',
     industrial: 'Industrial',
+    minerals: 'Minerals',
+    'oil-gas': 'Oil & Gas',
+    'real-estate': 'Real Estate',
     sourcing: 'Sourcing',
-    finance: 'Finance & HPay',
+    finance: 'Finance',
     ai: 'AI & Tech',
   }
 
@@ -97,8 +102,8 @@ const SupremeNavBar: React.FC = () => {
         aria-label="Main navigation"
       >
         {/* Nav Links */}
-        <div className="max-w-[1400px] mx-auto px-6">
-          <ul className="flex items-center justify-center gap-1 lg:gap-2 list-none m-0 p-0 h-[48px]" role="menubar" aria-label="Main navigation">
+        <div className="max-w-[1400px] mx-auto px-4">
+          <ul className="flex items-center justify-center flex-nowrap gap-[3px] lg:gap-1 list-none m-0 p-0 h-[48px] overflow-hidden" role="menubar" aria-label="Main navigation">
             {/* About — first tab */}
             <li
               className="relative flex items-center"
@@ -110,7 +115,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/about`}
-                className="relative flex items-center px-2 lg:px-3 py-1.5 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
+                className="relative flex items-center px-1.5 lg:px-2 py-1.5 text-[10px] lg:text-[10.5px] tracking-[0.04em] whitespace-nowrap font-bold"
                 style={{
                   color: '#6B1F2B',
                   textDecoration: 'none',
@@ -138,7 +143,7 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${vertical.href}`}
-                  className="relative flex items-center px-2 lg:px-3 py-1.5 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
+                  className="relative flex items-center px-1.5 lg:px-2 py-1.5 text-[10px] lg:text-[10.5px] tracking-[0.04em] whitespace-nowrap font-bold"
                   role="menuitem"
                   aria-haspopup="true"
                   aria-expanded={activeDropdown === vertical.key}
@@ -158,7 +163,7 @@ const SupremeNavBar: React.FC = () => {
 
             {/* Apps — highlighted tab */}
             <li
-              className="relative flex items-center ml-2"
+              className="relative flex items-center"
               style={{
                 animation: `fadeSlideIn 0.4s ease-out forwards`,
                 animationDelay: `${navVerticals.length * 0.05}s`,
@@ -168,7 +173,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/apps`}
-                className="relative flex items-center px-3 lg:px-4 py-1.5 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
+                className="relative flex items-center px-2 lg:px-2.5 py-1.5 text-[10px] lg:text-[10.5px] tracking-[0.04em] whitespace-nowrap font-bold"
                 style={{
                   color: '#6B1F2B',
                   textDecoration: 'none',
@@ -183,7 +188,7 @@ const SupremeNavBar: React.FC = () => {
 
             {/* HarvicTrade — B2B Marketplace tab */}
             <li
-              className="relative flex items-center ml-2"
+              className="relative flex items-center"
               style={{
                 animation: `fadeSlideIn 0.4s ease-out forwards`,
                 animationDelay: `${(navVerticals.length + 0.5) * 0.05}s`,
@@ -193,7 +198,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/harvictrade`}
-                className="relative flex items-center px-3 lg:px-4 py-1.5 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
+                className="relative flex items-center px-2 lg:px-2.5 py-1.5 text-[10px] lg:text-[10.5px] tracking-[0.04em] whitespace-nowrap font-bold"
                 style={{
                   color: isActive(`/${locale}/harvictrade`) ? '#6B1F2B' : '#6B1F2B',
                   textDecoration: 'none',
@@ -219,7 +224,7 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${link.href}`}
-                  className="relative flex items-center px-2 lg:px-3 py-1.5 text-[10px] lg:text-[11px] tracking-[0.06em] whitespace-nowrap font-bold"
+                  className="relative flex items-center px-1.5 lg:px-2 py-1.5 text-[10px] lg:text-[10.5px] tracking-[0.04em] whitespace-nowrap font-bold"
                   style={{
                     color: '#6B1F2B',
                     textDecoration: 'none',

@@ -3,75 +3,70 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 /* ============================================================
-   HARVICS — Cinematic Supply Chain Section
-   Brand tokens:
-     bg     #06080a
-     maroon #7B1C2E
-     gold   #C9A84C
-     white  #ffffff
+   HARVICS — Supply Chain Map  (batcloud-inspired)
+
+   Flat 2D circle. Inside: a swarm of gold particles forming
+   organic strands (river-delta / mycelium feel). Particles
+   continuously drift + flicker in place. Around the rim: 14
+   stage labels set tangentially. Faint maroon radial dividers
+   split the circle into 14 sectors.
+
+   Hover a stage label → the particles in that sector glow
+   brighter gold and drift more energetically. Rest dim.
+
+   Safety:
+     - canvas particles capped 2200
+     - rAF gated by IntersectionObserver
+     - no backdrop-filter, no ResizeObserver
+     - section locked to one snap frame height
    ============================================================ */
 
-const BG = '#06080a'
-const MAROON = '#7B1C2E'
-const GOLD = '#C9A84C'
-
-type StageNode = {
-  id: string
-  label: string
-  metric: string
-  value: number   // 0-100 bar fill
-  desc: string
+const COLORS = {
+  bgFrom: '#FFFFFF',
+  bgTo: '#F4ECDB',
+  goldBase: '#C9A84C',
+  goldLight: '#E8C76A',
+  goldDeep: '#8C6B1F',
+  amber: '#D78A1B',
+  maroon: '#6B1F2B',
+  maroonDeep: '#4A1620',
+  charcoal: '#3A2A2A',
 }
 
-const NODES: StageNode[] = [
-  { id: 'sourcing',     label: 'Sourcing',         metric: 'Suppliers',     value: 92, desc: 'Global supplier network across 47 countries with real-time qualification scoring.' },
-  { id: 'procurement',  label: 'Procurement',      metric: 'PO Cycle',      value: 78, desc: 'AI-driven PO routing cuts cycle time by 41% across raw material classes.' },
-  { id: 'inbound',      label: 'Inbound Logistics',metric: 'On-Time Recv.', value: 88, desc: 'Predictive ETA on every container — port to gate, hour-level accuracy.' },
-  { id: 'warehouse',    label: 'Warehousing',      metric: 'Slot Util.',    value: 84, desc: 'Dynamic bin allocation. Robotic put-away orchestrated by HARVICS WMS.' },
-  { id: 'production',   label: 'Production',       metric: 'OEE',           value: 81, desc: 'Line OEE telemetry streamed every 2 seconds with anomaly auto-flag.' },
-  { id: 'quality',      label: 'Quality',          metric: 'First-Pass',    value: 96, desc: 'Vision-AI inspection on every unit. Defect signatures learned per SKU.' },
-  { id: 'packaging',    label: 'Packaging',        metric: 'Throughput',    value: 89, desc: 'Adaptive packaging line — auto-switch SKUs in under 90 seconds.' },
-  { id: 'outbound',     label: 'Outbound',         metric: 'Dock Time',     value: 76, desc: 'Smart dock scheduling pairs trucks to lanes by carrier SLA.' },
-  { id: 'distribution', label: 'Distribution',     metric: 'Fill Rate',     value: 93, desc: 'Multi-echelon distribution with daily replenishment optimization.' },
-  { id: 'transport',    label: 'Transport',        metric: 'Route Eff.',    value: 87, desc: 'Live fleet telematics + dynamic re-routing for fuel + ETA.' },
-  { id: 'lastmile',     label: 'Last Mile',        metric: 'DIFOT',         value: 91, desc: 'Last-mile orchestration across 3PL and own fleet — single pane.' },
-  { id: 'retail',       label: 'Retail / B2B',     metric: 'Shelf Avail.',  value: 85, desc: 'Sell-through and shelf availability tracked SKU × store × day.' },
-  { id: 'returns',      label: 'Returns',          metric: 'Recovery',      value: 72, desc: 'Reverse-logistics graph routes returns to nearest refurb / disposal node.' },
-  { id: 'analytics',    label: 'Insights',         metric: 'Coverage',      value: 99, desc: 'Every event, every node, every minute — fed into HARVICS AI Engine.' },
+const STAGES = [
+  'Sourcing', 'Procurement', 'Inbound', 'Warehousing',
+  'Production', 'Quality', 'Packaging', 'Outbound',
+  'Distribution', 'Transport', 'Last Mile', 'Retail',
+  'Returns', 'Insights',
 ]
 
-const STREAMS = [
-  { tag: 'Cold Chain',    hint: 'Temperature-controlled lane with 0–8°C continuous telemetry.' },
-  { tag: 'Cross-Dock',    hint: 'Zero-storage transfer — inbound truck to outbound truck under 4h.' },
-  { tag: 'Just-In-Time',  hint: 'Synchronized material flow tied to production takt time.' },
-  { tag: 'Reverse Flow',  hint: 'Returns, recalls, and refurbishment loop into circular supply.' },
-]
+// Map of which stage is currently being highlighted (from the rim labels).
+// -1 means nothing hovered. Stored in a ref to avoid React re-renders inside rAF.
 
 export default function SupplyChainSection() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const rafRef = useRef<number | null>(null)
-  const wheelRef = useRef<HTMLDivElement | null>(null)
-  const [activeNode, setActiveNode] = useState<string>(NODES[0].id)
-  const [hoverStream, setHoverStream] = useState<number | null>(null)
+  const activeSectorRef = useRef<number>(-1)
+  const [activeSector, setActiveSector] = useState<number>(-1)
 
-  const active = NODES.find(n => n.id === activeNode) || NODES[0]
-
-  /* ---------- Cinematic canvas backdrop ---------- */
   useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
-    const ctx = canvas.getContext('2d')
+    const ctx = canvas.getContext('2d', { alpha: true })
     if (!ctx) return
 
-    let W = 0, H = 0, dpr = Math.min(window.devicePixelRatio || 1, 2)
+    const dpr = Math.min(window.devicePixelRatio || 1, 2)
+    let W = 0, H = 0
+    let isVisible = false
+    let cancelled = false
 
     const resize = () => {
       const parent = canvas.parentElement
       if (!parent) return
       W = parent.clientWidth
       H = parent.clientHeight
-      canvas.width = W * dpr
-      canvas.height = H * dpr
+      canvas.width = Math.max(1, Math.floor(W * dpr))
+      canvas.height = Math.max(1, Math.floor(H * dpr))
       canvas.style.width = W + 'px'
       canvas.style.height = H + 'px'
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
@@ -79,516 +74,440 @@ export default function SupplyChainSection() {
     resize()
     window.addEventListener('resize', resize)
 
-    // Drifting cargo containers
-    type Container = { x: number; y: number; w: number; h: number; vx: number; hue: string; alpha: number }
-    const containers: Container[] = Array.from({ length: 14 }, () => ({
-      x: Math.random() * 1600 - 200,
-      y: Math.random() * 600 + 40,
-      w: 60 + Math.random() * 90,
-      h: 22 + Math.random() * 14,
-      vx: 0.15 + Math.random() * 0.45,
-      hue: Math.random() > 0.55 ? MAROON : GOLD,
-      alpha: 0.06 + Math.random() * 0.12,
-    }))
+    // ------ Particles (organic swarm: clusters + tendrils, not flat confetti) ------
+    // We seed 70 anchor clusters spread around the circle; each particle is
+    // assigned to a cluster and offset around it with falloff. This gives the
+    // organic "river-delta / mycelium" look you see in batcloud.
+    type P = {
+      angle: number
+      radiusUnit: number
+      driftPhase: number
+      flickerPhase: number
+      flickerSpeed: number
+      size: number
+      baseAlpha: number
+      sector: number
+      brightness: number    // per-particle base brightness multiplier (creates tendril highlights)
+    }
+    const PARTICLE_COUNT = 2200
+    const particles: P[] = new Array(PARTICLE_COUNT)
+    const sectorCount = STAGES.length
 
-    // Trade-route paths (gold data particles flow along these sine curves)
-    const routes = [
-      { yBase: 120, amp: 30, period: 380, speed: 0.6 },
-      { yBase: 240, amp: 50, period: 460, speed: 0.4 },
-      { yBase: 380, amp: 40, period: 320, speed: 0.7 },
-      { yBase: 500, amp: 55, period: 540, speed: 0.35 },
-    ]
+    // 70 anchor clusters scattered across the disc
+    const ANCHORS = 70
+    const anchors: Array<{ a: number; r: number; b: number }> = []
+    for (let k = 0; k < ANCHORS; k++) {
+      anchors.push({
+        a: Math.random() * Math.PI * 2,
+        r: Math.pow(Math.random(), 0.45) * 0.88,    // bias toward outer 2/3
+        b: 0.35 + Math.random() * 0.65,             // cluster brightness
+      })
+    }
 
-    type Particle = { t: number; route: number; speed: number; size: number; alpha: number }
-    const particles: Particle[] = Array.from({ length: 90 }, () => ({
-      t: Math.random() * 2000,
-      route: Math.floor(Math.random() * routes.length),
-      speed: 0.6 + Math.random() * 1.6,
-      size: 1 + Math.random() * 2.2,
-      alpha: 0.4 + Math.random() * 0.6,
-    }))
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+      // Pick a random anchor; offset around it with gaussian-ish falloff
+      const anchor = anchors[Math.floor(Math.random() * ANCHORS)]
+      // Two-axis offset: tangential (along arc) + radial.
+      // tangentialSigma is small → cluster stays tight; radialSigma
+      // larger → tendrils stretch toward / away from center.
+      const tang = (Math.random() + Math.random() + Math.random() - 1.5) * 0.18   // sum-of-3 ≈ gaussian
+      const radl = (Math.random() + Math.random() + Math.random() - 1.5) * 0.13
+      const a = anchor.a + tang
+      let r = anchor.r + radl
+      // keep particle inside the disc
+      if (r < 0.04) r = 0.04 + Math.random() * 0.06
+      if (r > 0.97) r = 0.97 - Math.random() * 0.06
 
-    // Floating stage labels (drift across like ghost text)
-    const STAGE_WORDS = ['SOURCE', 'MOVE', 'STORE', 'MAKE', 'INSPECT', 'SHIP', 'DELIVER', 'SENSE']
-    type FloatLabel = { x: number; y: number; vx: number; text: string; alpha: number; size: number }
-    const labels: FloatLabel[] = Array.from({ length: 6 }, () => ({
-      x: Math.random() * 1400 - 200,
-      y: 80 + Math.random() * 500,
-      vx: 0.08 + Math.random() * 0.22,
-      text: STAGE_WORDS[Math.floor(Math.random() * STAGE_WORDS.length)],
-      alpha: 0.04 + Math.random() * 0.06,
-      size: 40 + Math.random() * 80,
-    }))
+      // Sector lookup: which of 14 sectors this particle's angle falls in.
+      // Sector 0 starts at top (-π/2) and goes clockwise.
+      const normalized = (((a + Math.PI / 2) % (Math.PI * 2)) + Math.PI * 2) % (Math.PI * 2)
+      const sectorIdx = Math.floor(normalized / (Math.PI * 2) * sectorCount) % sectorCount
 
-    let t0 = performance.now()
+      particles[i] = {
+        angle: a,
+        radiusUnit: r,
+        driftPhase: Math.random() * Math.PI * 2,
+        flickerPhase: Math.random() * Math.PI * 2,
+        flickerSpeed: 0.5 + Math.random() * 1.6,
+        size: 0.5 + Math.random() * 1.1,
+        baseAlpha: 0.28 + anchor.b * 0.35,           // cluster centers brighter
+        sector: sectorIdx,
+        brightness: anchor.b * (0.75 + Math.random() * 0.5),
+      }
+    }
+
+    // ------ Continuous breathing wave ------
+    // A wave-crest sweeps outward from center over WAVE_PERIOD_MS. Particles
+    // get a brightness lift as the crest passes through their radiusUnit.
+    // Two waves staggered for a continuous "pulse".
+    const WAVE_PERIOD_MS = 4200
+    const WAVE_WIDTH = 0.22    // fraction of radius the crest spans
+    const WAVE_LIFT = 0.85     // alpha boost on crest
+
+    // Smoothed sector glow ramp (so hover-on/off fades softly)
+    const sectorGlow = new Float32Array(sectorCount)
+    let lastNow = performance.now()
+
     const draw = (now: number) => {
-      const dt = Math.min(40, now - t0)
-      t0 = now
+      if (cancelled) return
+      rafRef.current = requestAnimationFrame(draw)
+      if (!isVisible) { lastNow = now; return }
 
-      // Base fade — slight trail so particles ribbon
-      ctx.fillStyle = 'rgba(6,8,10,0.35)'
+      const dt = Math.min(64, now - lastNow)
+      lastNow = now
+      const time = now * 0.001
+
+      // Smooth sector glow
+      const active = activeSectorRef.current
+      for (let s = 0; s < sectorCount; s++) {
+        const target = s === active ? 1 : 0
+        sectorGlow[s] += (target - sectorGlow[s]) * Math.min(1, dt / 220)
+      }
+
+      // ------ Background ------
+      const bg = ctx.createRadialGradient(W * 0.5, H * 0.55, 0, W * 0.5, H * 0.55, Math.max(W, H) * 0.8)
+      bg.addColorStop(0, COLORS.bgTo)
+      bg.addColorStop(1, COLORS.bgFrom)
+      ctx.fillStyle = bg
       ctx.fillRect(0, 0, W, H)
 
-      // Maroon ambient glow blobs
-      const g1 = ctx.createRadialGradient(W * 0.15, H * 0.3, 20, W * 0.15, H * 0.3, 360)
-      g1.addColorStop(0, 'rgba(123,28,46,0.35)')
-      g1.addColorStop(1, 'rgba(123,28,46,0)')
-      ctx.fillStyle = g1
+      // ------ Maroon halo ------
+      const halo = ctx.createRadialGradient(W * 0.5, H * 0.55, 0, W * 0.5, H * 0.55, Math.min(W, H) * 0.55)
+      halo.addColorStop(0, 'rgba(107,31,43,0.10)')
+      halo.addColorStop(1, 'rgba(107,31,43,0)')
+      ctx.fillStyle = halo
       ctx.fillRect(0, 0, W, H)
 
-      const g2 = ctx.createRadialGradient(W * 0.85, H * 0.75, 20, W * 0.85, H * 0.75, 400)
-      g2.addColorStop(0, 'rgba(201,168,76,0.18)')
-      g2.addColorStop(1, 'rgba(201,168,76,0)')
-      ctx.fillStyle = g2
-      ctx.fillRect(0, 0, W, H)
+      // ------ Geometry ------
+      const cx = W * 0.5
+      const cy = H * 0.55
+      const R = Math.min(W * 0.46, H * 0.44)
 
-      // Floating stage labels
-      labels.forEach(l => {
-        l.x += l.vx * (dt / 16)
-        if (l.x > W + 300) {
-          l.x = -300
-          l.y = 80 + Math.random() * (H - 160)
-          l.text = STAGE_WORDS[Math.floor(Math.random() * STAGE_WORDS.length)]
-        }
-        ctx.save()
-        ctx.globalAlpha = l.alpha
-        ctx.fillStyle = GOLD
-        ctx.font = `700 ${l.size}px ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto`
-        ctx.fillText(l.text, l.x, l.y)
-        ctx.restore()
-      })
-
-      // Drifting cargo containers
-      containers.forEach(c => {
-        c.x += c.vx * (dt / 16)
-        if (c.x > W + 200) {
-          c.x = -c.w - 50
-          c.y = Math.random() * (H - 80) + 40
-        }
-        ctx.save()
-        ctx.globalAlpha = c.alpha
-        ctx.strokeStyle = c.hue
-        ctx.lineWidth = 1
-        ctx.fillStyle = c.hue
-        ctx.fillRect(c.x, c.y, c.w, c.h)
-        // container ridges
-        ctx.strokeStyle = 'rgba(0,0,0,0.4)'
-        for (let i = 1; i < 6; i++) {
-          const rx = c.x + (c.w / 6) * i
-          ctx.beginPath()
-          ctx.moveTo(rx, c.y)
-          ctx.lineTo(rx, c.y + c.h)
-          ctx.stroke()
-        }
-        ctx.restore()
-      })
-
-      // Trade routes (thin gold sine lines)
-      routes.forEach((r, ri) => {
-        ctx.save()
-        ctx.strokeStyle = 'rgba(201,168,76,0.10)'
-        ctx.lineWidth = 1
-        ctx.beginPath()
-        for (let x = 0; x <= W; x += 8) {
-          const y = r.yBase + Math.sin((x + now * 0.03 * r.speed) / r.period * Math.PI * 2) * r.amp
-          if (x === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y)
-        }
-        ctx.stroke()
-        ctx.restore()
-        void ri
-      })
-
-      // Gold data particles flowing along routes
-      particles.forEach(p => {
-        p.t += p.speed * (dt / 16) * 4
-        const r = routes[p.route]
-        const x = (p.t % (W + 200)) - 100
-        const y = r.yBase + Math.sin((x + now * 0.03 * r.speed) / r.period * Math.PI * 2) * r.amp
-        ctx.save()
-        ctx.globalAlpha = p.alpha
-        const grad = ctx.createRadialGradient(x, y, 0, x, y, p.size * 4)
-        grad.addColorStop(0, GOLD)
-        grad.addColorStop(1, 'rgba(201,168,76,0)')
-        ctx.fillStyle = grad
-        ctx.beginPath()
-        ctx.arc(x, y, p.size * 4, 0, Math.PI * 2)
-        ctx.fill()
-        ctx.fillStyle = '#fff8d6'
-        ctx.beginPath()
-        ctx.arc(x, y, p.size, 0, Math.PI * 2)
-        ctx.fill()
-        ctx.restore()
-      })
-
-      // Subtle scanline
+      // ------ Outer circle outline ------
       ctx.save()
-      ctx.globalAlpha = 0.04
-      ctx.fillStyle = GOLD
-      const scanY = (now * 0.05) % H
-      ctx.fillRect(0, scanY, W, 1)
+      ctx.strokeStyle = 'rgba(107,31,43,0.25)'
+      ctx.lineWidth = 1
+      ctx.beginPath()
+      ctx.arc(cx, cy, R, 0, Math.PI * 2)
+      ctx.stroke()
       ctx.restore()
 
-      // Vignette
-      const vg = ctx.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.3, W / 2, H / 2, Math.max(W, H) * 0.75)
-      vg.addColorStop(0, 'rgba(0,0,0,0)')
-      vg.addColorStop(1, 'rgba(0,0,0,0.65)')
-      ctx.fillStyle = vg
-      ctx.fillRect(0, 0, W, H)
+      // ------ 14 radial dividers ------
+      ctx.save()
+      ctx.strokeStyle = 'rgba(107,31,43,0.10)'
+      ctx.lineWidth = 1
+      for (let i = 0; i < sectorCount; i++) {
+        const a = (i / sectorCount) * Math.PI * 2 - Math.PI / 2
+        ctx.beginPath()
+        ctx.moveTo(cx + Math.cos(a) * R * 0.05, cy + Math.sin(a) * R * 0.05)
+        ctx.lineTo(cx + Math.cos(a) * R * 0.98, cy + Math.sin(a) * R * 0.98)
+        ctx.stroke()
+      }
+      ctx.restore()
 
-      rafRef.current = requestAnimationFrame(draw)
+      // ------ Particle swarm ------
+      // Compute current wave crest positions (two waves, staggered).
+      const wave1U = (now / WAVE_PERIOD_MS) % 1            // 0..1
+      const wave2U = ((now / WAVE_PERIOD_MS) + 0.5) % 1
+
+      for (let i = 0; i < PARTICLE_COUNT; i++) {
+        const p = particles[i]
+        const glow = sectorGlow[p.sector]   // 0..1
+
+        // Drift around its home position. Hovered sector drifts harder.
+        const driftAmp = 0.010 + glow * 0.022
+        const angleDrift = Math.sin(time * 0.6 + p.driftPhase) * driftAmp
+        const radiusDrift = Math.cos(time * 0.55 + p.driftPhase * 1.3) * driftAmp * 0.7
+        const a = p.angle + angleDrift
+        const rU = Math.max(0.02, Math.min(0.97, p.radiusUnit + radiusDrift))
+        const r = R * rU
+        const x = cx + Math.cos(a) * r
+        const y = cy + Math.sin(a) * r
+
+        // Wave brightness: each crest contributes a lift when it passes
+        // through this particle's radiusUnit. Smooth (quadratic) falloff.
+        let waveAdd = 0
+        const d1 = Math.abs(rU - wave1U)
+        if (d1 < WAVE_WIDTH) { const k = 1 - d1 / WAVE_WIDTH; waveAdd += k * k * WAVE_LIFT }
+        const d2 = Math.abs(rU - wave2U)
+        if (d2 < WAVE_WIDTH) { const k = 1 - d2 / WAVE_WIDTH; waveAdd += k * k * WAVE_LIFT * 0.7 }
+
+        // Flicker (per-particle twinkle)
+        const flick = 0.55 + 0.45 * (0.5 + 0.5 * Math.sin(time * p.flickerSpeed + p.flickerPhase))
+
+        // Sector dimming: if any sector is hovered, non-hovered sectors dim.
+        const anyActive = active >= 0
+        const dimMul = anyActive ? (0.30 + glow * 0.70) : 1
+
+        // Final alpha: base * tendril brightness * flicker * wave * dim
+        const alpha = Math.min(1, (p.baseAlpha + waveAdd * 0.55) * p.brightness * flick * dimMul)
+
+        // Color: hovered sector → light gold; on-crest → amber-light; else gold base
+        let color: string
+        if (glow > 0.5) color = COLORS.goldLight
+        else if (waveAdd > 0.5) color = COLORS.goldLight
+        else if (waveAdd > 0.2 || glow > 0.15) color = COLORS.amber
+        else color = COLORS.goldBase
+
+        // Hovered + on-crest particles slightly larger
+        const sz = p.size * (1 + glow * 0.6 + (waveAdd > 0.4 ? 0.5 : 0))
+
+        ctx.globalAlpha = alpha
+        ctx.fillStyle = color
+        ctx.beginPath()
+        ctx.arc(x, y, sz, 0, Math.PI * 2)
+        ctx.fill()
+      }
+      ctx.globalAlpha = 1
+
+      // ------ Center hub ------
+      const hubR = 22
+      ctx.save()
+      ctx.shadowColor = 'rgba(107,31,43,0.4)'
+      ctx.shadowBlur = 16
+      ctx.fillStyle = COLORS.maroon
+      ctx.beginPath()
+      ctx.arc(cx, cy, hubR, 0, Math.PI * 2)
+      ctx.fill()
+      ctx.shadowBlur = 0
+      ctx.strokeStyle = COLORS.goldBase
+      ctx.lineWidth = 1
+      ctx.stroke()
+      ctx.fillStyle = COLORS.goldLight
+      ctx.font = '600 8px ui-monospace, SFMono-Regular, Menlo, monospace'
+      ctx.textAlign = 'center'
+      ctx.textBaseline = 'middle'
+      ctx.fillText('HARVICS', cx, cy - 4)
+      ctx.fillText('CORE', cx, cy + 6)
+      ctx.restore()
     }
+
     rafRef.current = requestAnimationFrame(draw)
 
+    const visObs = new IntersectionObserver(
+      ([entry]) => { isVisible = entry.isIntersecting && entry.intersectionRatio > 0.05 },
+      { threshold: [0, 0.05, 0.3, 0.5] }
+    )
+    visObs.observe(canvas)
+
     return () => {
+      cancelled = true
       window.removeEventListener('resize', resize)
       if (rafRef.current) cancelAnimationFrame(rafRef.current)
+      visObs.disconnect()
     }
   }, [])
 
-  /* ---------- Rotating wheel geometry ---------- */
-  const wheelSize = 520
-  const radius = wheelSize / 2 - 60
-  const center = wheelSize / 2
+  // Keep ref in sync with state for the rAF loop
+  useEffect(() => { activeSectorRef.current = activeSector }, [activeSector])
 
   return (
     <section
       className="relative w-full overflow-hidden"
-      style={{ background: BG, minHeight: 760, color: '#fff' }}
+      style={{
+        height: 'calc(100vh - 136px)',
+        minHeight: 'calc(100vh - 136px)',
+        background: `linear-gradient(180deg, ${COLORS.bgFrom} 0%, ${COLORS.bgTo} 100%)`,
+      }}
     >
-      {/* Cinematic canvas */}
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 w-full h-full pointer-events-none"
-        style={{ display: 'block' }}
-      />
+      {/* gallery corner brackets */}
+      <CornerBrackets />
 
-      {/* Top gradient sheen */}
-      <div
-        className="absolute inset-x-0 top-0 h-40 pointer-events-none"
-        style={{ background: 'linear-gradient(180deg, rgba(123,28,46,0.35) 0%, rgba(6,8,10,0) 100%)' }}
-      />
-
-      {/* Bottom maroon edge */}
-      <div
-        className="absolute inset-x-0 bottom-0 h-px"
-        style={{ background: `linear-gradient(90deg, transparent, ${GOLD}, transparent)` }}
-      />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-14 lg:py-16">
-        {/* Header */}
-        <div className="mb-12">
-          <p
-            className="text-[11px] tracking-[0.4em] mb-3"
-            style={{ color: GOLD }}
+      <div className="relative h-full w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 px-6 lg:px-10">
+        {/* ----- LEFT: round map + tangential labels ----- */}
+        <div className="relative h-full flex items-center justify-center">
+          <div
+            className="relative supplychain-stage"
+            style={{ width: 'min(100%, 68vh)', aspectRatio: '1 / 1' }}
           >
-            HARVICS — SUPPLY CHAIN OS
-          </p>
-          <h2
-            className="text-4xl lg:text-6xl font-light leading-tight"
-            style={{ color: '#fff', letterSpacing: '-0.02em' }}
-          >
-            One spine. <span style={{ color: GOLD, fontWeight: 600 }}>Fourteen stages.</span>
-            <br />
-            <span style={{ color: '#fff', opacity: 0.65 }}>Zero blind spots.</span>
-          </h2>
-          <p className="mt-4 max-w-2xl text-sm lg:text-base" style={{ color: 'rgba(255,255,255,0.65)' }}>
-            A single command surface for every node, every flow, every signal — from raw source to shelf and back again.
-          </p>
-        </div>
+            <canvas
+              ref={canvasRef}
+              className="absolute inset-0 w-full h-full"
+              style={{ display: 'block', pointerEvents: 'none' }}
+              aria-hidden="true"
+            />
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-12 items-start">
-          {/* ---------- LEFT: Rotating Wheel ---------- */}
-          <div className="relative flex items-center justify-center">
-            <div
-              ref={wheelRef}
-              className="relative supply-chain-wheel"
-              style={{ width: wheelSize, height: wheelSize, maxWidth: '100%' }}
+            {/* Tangential rim labels via SVG textPath. textPath follows
+                a circle just outside the canvas circle so labels sit on
+                the rim and read along the arc. */}
+            <svg
+              viewBox="0 0 200 200"
+              className="absolute inset-0 w-full h-full"
+              style={{ overflow: 'visible' }}
             >
-              {/* Outer halo */}
-              <div
-                className="absolute inset-0 rounded-full wheel-circle"
-                style={{
-                  background: `radial-gradient(circle, ${MAROON}22 0%, transparent 70%)`,
-                  filter: 'blur(12px)',
-                }}
-              />
+              <defs>
+                {STAGES.map((s, i) => {
+                  // Each label has its own arc path. We always draw the arc
+                  // ABOVE the rim (so the text baseline sits outside the
+                  // circle). For sectors on the bottom half of the circle the
+                  // arc is swept the other way so text never reads upside-down.
+                  const cx = 100, cy = 100
+                  const sectorCount = STAGES.length
+                  // mid angle in standard math (0° = right, 90° = top), measured CCW from +x
+                  // SVG y grows downward; we lay out so sector 0 sits at TOP.
+                  const midDeg = (i / sectorCount) * 360 - 90   // -90 = top
+                  const arcSpan = (360 / sectorCount) * 0.88
 
-              {/* Rotating rings (spin slowly) */}
-              <div
-                className="absolute inset-0 rounded-full wheel-circle"
-                style={{
-                  border: `1px solid ${GOLD}55`,
-                  animation: 'sc-spin 60s linear infinite',
-                }}
-              />
-              <div
-                className="absolute rounded-full wheel-circle"
-                style={{
-                  inset: 28,
-                  border: `1px dashed ${GOLD}33`,
-                  animation: 'sc-spin-rev 80s linear infinite',
-                }}
-              />
-              <div
-                className="absolute rounded-full wheel-circle"
-                style={{
-                  inset: 56,
-                  border: `1px solid ${MAROON}88`,
-                }}
-              />
+                  // Decide if this label is on the bottom half (would be upside down).
+                  // In SVG coords, "bottom half" = midDeg between 0° and 180° (where sin>0).
+                  // After our −90° offset, sector 0..6 are above the equator, sectors 7..13 below.
+                  const norm = ((midDeg % 360) + 360) % 360
+                  const isBottom = norm > 0 && norm < 180
 
-              {/* Center hub */}
-              <div
-                className="absolute rounded-full wheel-circle flex flex-col items-center justify-center text-center"
-                style={{
-                  inset: '38%',
-                  background: `radial-gradient(circle, ${MAROON} 0%, ${BG} 80%)`,
-                  border: `1px solid ${GOLD}`,
-                  boxShadow: `0 0 40px ${MAROON}88, inset 0 0 20px ${GOLD}33`,
-                }}
-              >
-                <p style={{ color: GOLD, fontSize: 10, letterSpacing: '0.3em' }}>HARVICS</p>
-                <p style={{ color: '#fff', fontSize: 14, fontWeight: 600, marginTop: 2 }}>CORE</p>
-              </div>
+                  // Place the text path at a different radius for top vs bottom:
+                  //   top labels — arc OUTSIDE the rim, swept clockwise → text sits above the curve, readable
+                  //   bottom labels — arc OUTSIDE the rim, swept counter-clockwise → flipped right-side up
+                  const r = 99
 
-              {/* Node ring — counter-spinning container so labels stay upright while ring rotates */}
-              <div
-                className="absolute inset-0"
-                style={{ animation: 'sc-spin 90s linear infinite' }}
-              >
-                {NODES.map((n, i) => {
-                  const angle = (i / NODES.length) * Math.PI * 2 - Math.PI / 2
-                  const x = center + Math.cos(angle) * radius
-                  const y = center + Math.sin(angle) * radius
-                  const isActive = n.id === activeNode
+                  let startDeg: number, endDeg: number, sweep: 0 | 1
+                  if (!isBottom) {
+                    startDeg = midDeg - arcSpan / 2
+                    endDeg = midDeg + arcSpan / 2
+                    sweep = 1   // clockwise in SVG (because y is flipped)
+                  } else {
+                    // reverse direction so the baseline is on the OUTSIDE
+                    // and the glyphs render upright
+                    startDeg = midDeg + arcSpan / 2
+                    endDeg = midDeg - arcSpan / 2
+                    sweep = 0
+                  }
+
+                  const sRad = (startDeg * Math.PI) / 180
+                  const eRad = (endDeg * Math.PI) / 180
+                  const sx = cx + Math.cos(sRad) * r
+                  const sy = cy + Math.sin(sRad) * r
+                  const ex = cx + Math.cos(eRad) * r
+                  const ey = cy + Math.sin(eRad) * r
                   return (
-                    <button
-                      key={n.id}
-                      type="button"
-                      onMouseEnter={() => setActiveNode(n.id)}
-                      onFocus={() => setActiveNode(n.id)}
-                      onClick={() => setActiveNode(n.id)}
-                      className="absolute flex items-center justify-center group"
-                      style={{
-                        left: x,
-                        top: y,
-                        transform: 'translate(-50%, -50%)',
-                        animation: 'sc-spin-rev 90s linear infinite', // counter-rotate so text stays upright
-                      }}
-                    >
-                      <span
-                        className="block rounded-full wheel-circle transition-all"
-                        style={{
-                          width: isActive ? 16 : 10,
-                          height: isActive ? 16 : 10,
-                          background: isActive ? GOLD : '#ffffff',
-                          boxShadow: isActive
-                            ? `0 0 18px ${GOLD}, 0 0 4px ${GOLD}`
-                            : `0 0 6px rgba(255,255,255,0.5)`,
-                          border: isActive ? `2px solid ${MAROON}` : '1px solid rgba(255,255,255,0.4)',
-                        }}
-                      />
-                      <span
-                        className="absolute whitespace-nowrap text-[10px] tracking-wider uppercase pointer-events-none"
-                        style={{
-                          top: 22,
-                          color: isActive ? GOLD : 'rgba(255,255,255,0.7)',
-                          fontWeight: isActive ? 700 : 500,
-                          textShadow: '0 1px 4px rgba(0,0,0,0.8)',
-                        }}
-                      >
-                        {n.label}
-                      </span>
-                    </button>
+                    <path
+                      key={s}
+                      id={`supplychain-arc-${i}`}
+                      d={`M ${sx} ${sy} A ${r} ${r} 0 0 ${sweep} ${ex} ${ey}`}
+                      fill="none"
+                    />
                   )
                 })}
-              </div>
-
-              {/* Pulse ring at active node — drawn as overlay */}
-              <ActivePulse activeId={activeNode} center={center} radius={radius} />
-            </div>
+              </defs>
+              {STAGES.map((s, i) => {
+                const isActive = activeSector === i
+                return (
+                  <g
+                    key={s}
+                    style={{ cursor: 'pointer' }}
+                    onMouseEnter={() => setActiveSector(i)}
+                    onMouseLeave={() => setActiveSector((cur) => cur === i ? -1 : cur)}
+                  >
+                    <text
+                      fill={isActive ? COLORS.maroonDeep : COLORS.maroon}
+                      fontSize={isActive ? 4.6 : 4.0}
+                      fontWeight={isActive ? 700 : 600}
+                      letterSpacing={0.6}
+                      style={{
+                        fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace',
+                        textTransform: 'uppercase',
+                        transition: 'font-size 0.2s, fill 0.2s',
+                      }}
+                    >
+                      <textPath
+                        href={`#supplychain-arc-${i}`}
+                        startOffset="50%"
+                        textAnchor="middle"
+                      >
+                        {s}
+                      </textPath>
+                    </text>
+                  </g>
+                )
+              })}
+            </svg>
           </div>
+        </div>
 
-          {/* ---------- RIGHT: Live Stage Metrics ---------- */}
-          <div>
-            <div
-              className="relative rounded-md p-6 lg:p-8"
+        {/* ----- RIGHT: text + CTA ----- */}
+        <div className="relative flex flex-col justify-center h-full">
+          <p
+            className="text-[10px] mb-3"
+            style={{
+              color: COLORS.maroon,
+              letterSpacing: '0.42em',
+              fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace',
+              fontWeight: 700,
+            }}
+          >
+            HARVICS · OPERATING SYSTEM
+          </p>
+
+          <h2
+            className="font-light leading-[1.05]"
+            style={{
+              color: COLORS.maroonDeep,
+              fontSize: 'clamp(28px, 4.2vw, 56px)',
+              letterSpacing: '-0.02em',
+            }}
+          >
+            One spine.
+            <br />
+            <span style={{ color: COLORS.goldBase, fontWeight: 600 }}>Fourteen stages.</span>
+            <br />
+            <span style={{ color: COLORS.maroonDeep, opacity: 0.55 }}>Zero blind spots.</span>
+          </h2>
+
+          <p
+            className="mt-5 max-w-md text-sm lg:text-[15px] leading-relaxed"
+            style={{ color: COLORS.charcoal, opacity: 0.78 }}
+          >
+            A single command surface for every node, every flow, every signal —
+            from raw source to shelf and back again. Hover any stage on the
+            map to light its territory.
+          </p>
+
+          {activeSector >= 0 && (
+            <p
+              className="mt-3 text-[11px]"
               style={{
-                background: 'rgba(10,12,14,0.72)',
-                border: `1px solid ${GOLD}33`,
-                backdropFilter: 'blur(6px)',
-                WebkitBackdropFilter: 'blur(6px)',
+                color: COLORS.maroon,
+                letterSpacing: '0.3em',
+                fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace',
+                fontWeight: 700,
               }}
             >
-              <div className="flex items-center justify-between mb-5">
-                <div>
-                  <p className="text-[10px] tracking-[0.3em]" style={{ color: GOLD }}>LIVE STAGE METRICS</p>
-                  <p className="text-xs mt-1" style={{ color: 'rgba(255,255,255,0.5)' }}>
-                    Hover a wheel node to inspect
-                  </p>
-                </div>
-                <span
-                  className="flex items-center gap-2 text-[10px] uppercase tracking-widest"
-                  style={{ color: 'rgba(255,255,255,0.6)' }}
-                >
-                  <span
-                    className="inline-block w-1.5 h-1.5 rounded-full"
-                    style={{ background: GOLD, boxShadow: `0 0 8px ${GOLD}` }}
-                  />
-                  Streaming
-                </span>
-              </div>
+              ▸ {STAGES[activeSector].toUpperCase()}
+            </p>
+          )}
 
-              {/* Metric rows */}
-              <div className="space-y-2.5">
-                {NODES.map(n => {
-                  const isActive = n.id === activeNode
-                  return (
-                    <button
-                      key={n.id}
-                      type="button"
-                      onMouseEnter={() => setActiveNode(n.id)}
-                      onFocus={() => setActiveNode(n.id)}
-                      className="w-full text-left group transition-all"
-                      style={{
-                        padding: '8px 10px',
-                        borderRadius: 4,
-                        background: isActive ? `${MAROON}33` : 'transparent',
-                        borderLeft: `2px solid ${isActive ? GOLD : 'transparent'}`,
-                      }}
-                    >
-                      <div className="flex items-center justify-between mb-1.5">
-                        <span
-                          className="text-xs"
-                          style={{ color: isActive ? '#fff' : 'rgba(255,255,255,0.78)', fontWeight: isActive ? 600 : 400 }}
-                        >
-                          {n.label}
-                        </span>
-                        <span
-                          className="text-[10px] tabular-nums tracking-wider"
-                          style={{ color: isActive ? GOLD : 'rgba(255,255,255,0.5)' }}
-                        >
-                          {n.metric} · <span style={{ color: isActive ? '#fff' : 'rgba(255,255,255,0.7)', fontWeight: 600 }}>{n.value}%</span>
-                        </span>
-                      </div>
-                      <div
-                        className="relative h-[3px] rounded-full overflow-hidden"
-                        style={{ background: 'rgba(255,255,255,0.07)' }}
-                      >
-                        <div
-                          style={{
-                            width: `${n.value}%`,
-                            height: '100%',
-                            background: isActive
-                              ? `linear-gradient(90deg, ${MAROON}, ${GOLD})`
-                              : `linear-gradient(90deg, ${MAROON}88, ${GOLD}aa)`,
-                            transition: 'width 1.2s cubic-bezier(.2,.8,.2,1)',
-                            boxShadow: isActive ? `0 0 8px ${GOLD}88` : 'none',
-                          }}
-                        />
-                      </div>
-                    </button>
-                  )
-                })}
-              </div>
-
-              {/* Active node description panel */}
-              <div
-                className="mt-5 p-4 rounded"
-                style={{
-                  background: `linear-gradient(135deg, ${MAROON}40, rgba(6,8,10,0.6))`,
-                  border: `1px solid ${GOLD}44`,
-                  minHeight: 90,
-                }}
-                key={active.id}
-              >
-                <div className="flex items-baseline justify-between mb-1.5">
-                  <p className="text-sm font-semibold" style={{ color: GOLD }}>{active.label}</p>
-                  <p className="text-[10px] tracking-widest" style={{ color: 'rgba(255,255,255,0.5)' }}>
-                    {active.metric.toUpperCase()} · {active.value}%
-                  </p>
-                </div>
-                <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.78)' }}>
-                  {active.desc}
-                </p>
-              </div>
-
-              {/* Stream tags */}
-              <div className="mt-5 flex flex-wrap gap-2">
-                {STREAMS.map((s, i) => (
-                  <button
-                    key={s.tag}
-                    type="button"
-                    onMouseEnter={() => setHoverStream(i)}
-                    onMouseLeave={() => setHoverStream(null)}
-                    onFocus={() => setHoverStream(i)}
-                    onBlur={() => setHoverStream(null)}
-                    className="text-[10px] uppercase tracking-widest px-3 py-1.5 rounded transition-all"
-                    style={{
-                      color: hoverStream === i ? BG : GOLD,
-                      background: hoverStream === i ? GOLD : 'transparent',
-                      border: `1px solid ${GOLD}66`,
-                      fontWeight: 600,
-                    }}
-                  >
-                    {s.tag}
-                  </button>
-                ))}
-              </div>
-
-              {hoverStream !== null && (
-                <p
-                  className="mt-3 text-xs"
-                  style={{ color: 'rgba(255,255,255,0.7)', borderLeft: `2px solid ${GOLD}`, paddingLeft: 10 }}
-                >
-                  {STREAMS[hoverStream].hint}
-                </p>
-              )}
-            </div>
-          </div>
+          <a
+            href="/en/os"
+            className="inline-flex items-center gap-2 mt-7 text-[11px] uppercase tracking-[0.32em] transition-all"
+            style={{
+              background: COLORS.maroon,
+              color: COLORS.goldLight,
+              padding: '14px 26px',
+              border: `1px solid ${COLORS.maroon}`,
+              fontWeight: 600,
+              width: 'fit-content',
+            }}
+          >
+            Enter the cloud
+            <span aria-hidden="true" style={{ fontSize: 14 }}>→</span>
+          </a>
         </div>
       </div>
-
-      {/* Keyframes */}
-      <style jsx>{`
-        @keyframes sc-spin {
-          to { transform: rotate(360deg); }
-        }
-        @keyframes sc-spin-rev {
-          to { transform: rotate(-360deg); }
-        }
-      `}</style>
     </section>
   )
 }
 
-/* ---------- Active node pulse ring overlay ---------- */
-function ActivePulse({
-  activeId,
-  center,
-  radius,
-}: {
-  activeId: string
-  center: number
-  radius: number
-}) {
-  const idx = NODES.findIndex(n => n.id === activeId)
-  if (idx < 0) return null
-  // Position calculated against the same rotating ring transform — the parent ring rotates,
-  // so we render the pulse inside the same rotating group. To keep things simple we render a
-  // static halo on the wheel center instead (the ring nodes themselves already glow when active).
+/* ----- gallery corner brackets (top-left, top-right, bottom-left, bottom-right) ----- */
+function CornerBrackets() {
+  const arm = 18
+  const inset = 22
+  const color = COLORS.maroon
+  const style: React.CSSProperties = { position: 'absolute', width: arm, height: arm, borderColor: color, borderStyle: 'solid', opacity: 0.55 }
   return (
-    <div
-      className="absolute pointer-events-none rounded-full wheel-circle"
-      style={{
-        left: center,
-        top: center,
-        width: radius * 2,
-        height: radius * 2,
-        transform: 'translate(-50%, -50%)',
-        border: `1px solid ${GOLD}22`,
-        animation: 'sc-spin 120s linear infinite',
-      }}
-    />
+    <>
+      <span style={{ ...style, top: inset, left: inset, borderWidth: '1px 0 0 1px' }} />
+      <span style={{ ...style, top: inset, right: inset, borderWidth: '1px 1px 0 0' }} />
+      <span style={{ ...style, bottom: inset, left: inset, borderWidth: '0 0 1px 1px' }} />
+      <span style={{ ...style, bottom: inset, right: inset, borderWidth: '0 1px 1px 0' }} />
+    </>
   )
 }
