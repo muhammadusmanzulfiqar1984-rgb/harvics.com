@@ -11,9 +11,10 @@ const VICTORIAN_PHONE_SVG = 'https://unpkg.com/lucide-static@latest/icons/phone.
 
 const config = {
   position: 'bottom-right',
-  offset: '76px', // sits just to the LEFT of the chatbot (which is at right-4 = 16px, w-11 = 44px)
-  width: '56px',
-  height: '56px',
+  // Mobile: stack widget above chatbot (chatbot is at bottom-4 = 16px, w-11 = 44px tall + padding)
+  offset: '76px',
+  width: '60px',
+  height: '60px',
   idle: {
     color: 'rgb(195,163,94)',
     type: 'round',
@@ -85,6 +86,16 @@ function injectStyle() {
       68% { transform: rotate(6deg); }
       70% { transform: rotate(0deg); }
     }
+    /* Mobile: bump up to 64×64, stack above the chatbot button instead of beside it */
+    @media (max-width: 640px) {
+      [id^="vapi-support-btn"], div[id^="vapi-"] > button:first-of-type {
+        width: 64px !important;
+        height: 64px !important;
+        bottom: 76px !important;
+        right: 12px !important;
+        left: auto !important;
+      }
+    }
   `
   const style = document.createElement('style')
   style.id = STYLE_ID
@@ -99,6 +110,33 @@ export default function VapiWidget() {
     w.__vapiBootstrapped = true
 
     injectStyle()
+
+    // Mobile (iOS Safari especially): pre-grant the mic on the first user tap of the Vapi button.
+    // Vapi/Daily.co sometimes fails silently if getUserMedia is requested from a deep callback
+    // rather than a direct user gesture.
+    let micPrimed = false
+    const primeMic = async () => {
+      if (micPrimed) return
+      micPrimed = true
+      try {
+        if (navigator.mediaDevices?.getUserMedia) {
+          const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false })
+          // Immediately release — Vapi/Daily will reopen its own stream with its constraints
+          stream.getTracks().forEach((t) => t.stop())
+        }
+      } catch (err) {
+        console.warn('[Vapi] mic permission denied or unavailable:', err)
+      }
+    }
+    const onAnyPointer = (e: Event) => {
+      const target = e.target as HTMLElement | null
+      if (!target) return
+      // Only prime when the Vapi button (or its child img) is tapped
+      if (target.closest('[id^="vapi-support-btn"], div[id^="vapi-"] > button:first-of-type')) {
+        void primeMic()
+      }
+    }
+    document.addEventListener('pointerdown', onAnyPointer, true)
 
     const tryInit = (attempt = 0) => {
       if (w.vapiInstance) return
@@ -128,6 +166,10 @@ export default function VapiWidget() {
       document.head.appendChild(s)
     } else {
       tryInit()
+    }
+
+    return () => {
+      document.removeEventListener('pointerdown', onAnyPointer, true)
     }
   }, [])
 
