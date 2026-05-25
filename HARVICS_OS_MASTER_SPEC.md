@@ -1,10 +1,34 @@
 # HARVICS OS — MASTER SPECIFICATION
-# Last Updated: May 24, 2026 (Session 36 — v2-audit-emit-on-writes)
+# Last Updated: May 25, 2026 (Session 37 — T14 schema lock)
 # READ THIS FIRST. EVERY SESSION. NO EXCEPTIONS.
 
 ---
 
-## ✅ LATEST SESSION UPDATE (May 24, 2026 · Session 36 — v2-audit-emit-on-writes)
+## ✅ LATEST SESSION UPDATE (May 25, 2026 · Session 37 — T14 schema lock)
+
+**TASK COMPLETED:** Added 5 missing Prisma models so previously demo-only endpoints can graduate to Prisma-backed.
+
+### Schema deliverables (additive only)
+- **`prisma/schema.prisma`** — appended `DealDesk`, `Commission`, `SalesForecast`, `OKR`, `Incident` models. No existing model touched. Field shapes mirror the demo TypeScript interfaces in `backend/src/batch2-commercial.ts`, `batch5-ops-grc.ts`, and `batch67-analytics-universe.ts` so controllers can swap in-memory stores for `prisma.*` calls without consumer changes.
+- Indexes added on the high-cardinality / filter fields (`status`, `customerId`, `employeeId`, `period`, `forecastPeriod`, `severity`).
+
+### Validation
+- `npx prisma format` → ok
+- `npx prisma validate` → schema valid
+- `npx prisma generate` → client regenerated (v6.19.2)
+- `npx tsc --skipLibCheck --noEmit -p backend/tsconfig.json` → EXIT=0
+
+### NOT done in this session (deliberate scope cap — one task per session)
+- No migration was applied. To create + apply the SQL migration when ready:
+  `npx prisma migrate dev --name add_t14_dealdesk_commission_forecast_okr_incident`
+- Controllers in batch2/batch5/batch67 still use in-memory stores. Swap to Prisma is the next session.
+
+### Module registry impact
+- No registry edits needed — these 5 models unblock future promotion of: CRM #8 (deal-desk + commission + forecast), Analytics #41/#43 (OKR), GRC #37 (Incident).
+
+---
+
+## ✅ PRIOR SESSION (May 24, 2026 · Session 36 — v2-audit-emit-on-writes)
 
 **TASK COMPLETED:** Every state-changing handler on the `/api/v2/*` surface now emits an audit record.
 

@@ -176,7 +176,7 @@ const ChatbotWidget: React.FC = () => {
       {/* ═══ CHAT TOGGLE BUTTON ═══ */}
       <button
         onClick={handleToggle}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 flex items-center justify-center group"
+        className="fixed bottom-4 right-4 z-50 w-11 h-11 flex items-center justify-center group"
         style={{
           background: isOpen
             ? 'linear-gradient(135deg, #6B1F2B 0%, #4a1520 100%)'
@@ -233,7 +233,7 @@ const ChatbotWidget: React.FC = () => {
           id="harvics-chat-panel"
           role="dialog"
           aria-label="Harvics Chat Assistant"
-          className="fixed bottom-24 right-6 z-50 w-[380px] h-[560px] flex flex-col overflow-hidden"
+          className="fixed bottom-20 right-4 z-50 w-[320px] h-[460px] flex flex-col overflow-hidden"
           style={{
             background: 'linear-gradient(135deg, rgba(245, 241, 232, 0.95) 0%, rgba(255, 255, 255, 0.92) 100%)',
             backdropFilter: 'blur(24px)',

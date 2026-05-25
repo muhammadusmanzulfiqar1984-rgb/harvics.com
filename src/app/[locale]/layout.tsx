@@ -27,6 +27,7 @@ const ChatbotWidget = dynamic(() => import('@/features/ai/ChatbotWidget'))
 const GlobalScrollReveal = dynamic(() => import('@/components/shared/GlobalScrollReveal'))
 const FrontendWatchdogClient = dynamic(() => import('@/components/shared/FrontendWatchdogClient'))
 const AppleStyleScrollEffects = dynamic(() => import('@/components/effects/AppleStyleScrollEffects'))
+const VapiWidget = dynamic(() => import('@/components/shared/VapiWidget'))
 
 const inter = Inter({ subsets: ['latin'] })
 const playfairDisplay = Playfair_Display({ subsets: ['latin', 'latin-ext'], variable: '--font-playfair-display', weight: ['400', '500', '600', '700', '800', '900'] });
@@ -210,6 +211,7 @@ export default async function LocaleLayout({
                       <GlobalScrollReveal />
                       <ChatbotWidget />
                       <AppleStyleScrollEffects />
+                      <VapiWidget />
                     </CountryProvider>
                   </RegionProvider>
               </ErrorBoundary>
