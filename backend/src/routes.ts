@@ -425,6 +425,9 @@ import { platformRouter } from './modules/platform/platform.controller';
 import { wave3Router } from './modules/wave3/wave3.controller';
 import { wave4Router } from './modules/wave4/wave4.controller';
 import { wave5Router } from './modules/wave5/wave5.controller';
+import { wave6Router } from './modules/wave6/wave6.controller';
+import { wave7Router } from './modules/wave7/wave7.controller';
+import { wave8Router } from './modules/wave8/wave8.controller';
 import { stubCatalogRouter } from './modules/stub-catalog/stub.catalog';
 import { buildGenericRouter, seedAllModules } from './modules/generic/mount';
 import {
@@ -1689,6 +1692,20 @@ router.use('/wave4', wave4Router);
 // ShopFloor, 3PL, Talent, LMS, Performance, Workforce, PM, Properties,
 // BI Reports, Board Pack, Variance AI, Service tickets, Pro Services).
 router.use('/wave5', wave5Router);
+
+// Wave 6 — Bucket C (15 modules: Wallet, Feed, Communities, Marketplace,
+// JobBoard, Events, Knowledge, Mentorship, Polls, Kudos, Referrals,
+// Customer/Supplier/Partner portals, Mobile API Gateway).
+router.use('/wave6', wave6Router);
+
+// Wave 7 — Final 6 modules (Controlling, Integration Bus, Data Ocean,
+// Harvoice, Trade Floor, Crypto Lite). Brings HARVICS OS to 71/71 live.
+router.use('/wave7', wave7Router);
+
+// Wave 8 — Smart CRM (AI-powered, Groq Llama 3.3 70B). Lead scoring,
+// email drafting, activity timeline, pipeline metrics. Graceful degrade
+// when GROQ_API_KEY is missing.
+router.use('/wave8', wave8Router);
 
 router.get('/modules/contracts', (_req: Request, res: Response) => {
   const generated = Array.from(CONTRACT_READY_SEGMENTS)

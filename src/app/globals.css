@@ -2095,3 +2095,65 @@ p {
 .text-harvics-gold { color: #C9A84C !important; }
 .border-harvics-gold\/10 { border-color: rgba(201, 168, 76, 0.1) !important; }
 .ease-vault { transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important; }
+
+.harvics-dropdown-panel { 
+  background-color: var(--harvics-cream); 
+  border: 1px solid rgba(201, 168, 76, 0.2); 
+  border-radius: 0px; 
+  box-shadow: 4px 4px 0px rgba(26, 5, 5, 0.08); 
+} 
+.harvics-dropdown-item { 
+  padding: 10px 16px; 
+  font-size: 12px; 
+  color: var(--harvics-burgundy); 
+  transition: background-color 0.2s; 
+  cursor: pointer; 
+} 
+.harvics-dropdown-item:hover { 
+  background-color: rgba(201, 168, 76, 0.08); 
+  color: var(--harvics-gold); 
+}
+
+.harvics-dropdown-panel { 
+  background-color: var(--harvics-cream); 
+  border: 1px solid rgba(201, 168, 76, 0.2); 
+  border-radius: 0px; 
+  box-shadow: 4px 4px 0px rgba(26, 5, 5, 0.08); 
+} 
+.harvics-dropdown-item { 
+  padding: 10px 16px; 
+  font-size: 12px; 
+  color: var(--harvics-burgundy); 
+  transition: background-color 0.2s; 
+  cursor: pointer; 
+} 
+.harvics-dropdown-item:hover { 
+  background-color: rgba(201, 168, 76, 0.08); 
+  color: var(--harvics-gold); 
+}
+.harvics-footer-dark-stratum {
+  background-color: #110303 !important;
+}
+.harvics-footer-metric-bg {
+  background-color: rgba(26, 5, 5, 0.4) !important;
+}
+
+.harvics-dropdown-panel {
+  background-color: var(--harvics-cream);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-radius: 0px;
+  box-shadow: 4px 4px 0px rgba(26, 5, 5, 0.08);
+}
+
+.harvics-dropdown-item {
+  padding: 10px 16px;
+  font-size: 12px;
+  color: var(--harvics-burgundy);
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.harvics-dropdown-item:hover {
+  background-color: rgba(201, 168, 76, 0.08);
+  color: var(--harvics-gold);
+}

@@ -72,7 +72,7 @@ export type ModuleBand = (typeof MODULE_BANDS)[number]
 export const MODULE_REGISTRY: readonly ModuleRegistryEntry[] = [
   // Finance & Controlling (1-7)
   { id: 1, band: 'Finance & Controlling', name: 'Financial Accounting', route: '/api/wave3/coa', osPath: '/os/finance', intelligence: 'L2', reporting: 'Operational', status: 'live' },
-  { id: 2, band: 'Finance & Controlling', name: 'Controlling', route: '/api/finance/controlling', intelligence: 'L3', reporting: 'Management', status: 'demo' },
+  { id: 2, band: 'Finance & Controlling', name: 'Controlling', route: '/api/wave7/controlling/report', osPath: '/os/controlling', intelligence: 'L3', reporting: 'Management', status: 'live' },
   { id: 3, band: 'Finance & Controlling', name: 'Accounts Receivable', route: '/api/wave3/ar/aging', intelligence: 'L3', reporting: 'Operational', status: 'live' },
   { id: 4, band: 'Finance & Controlling', name: 'Accounts Payable', route: '/api/wave3/ap/receipts', intelligence: 'L3', reporting: 'Operational', status: 'live' },
   { id: 5, band: 'Finance & Controlling', name: 'Treasury & Risk', route: '/api/v2/treasury/accounts', osPath: '/os/treasury-banking', intelligence: 'L4', reporting: 'Executive', status: 'live' },
@@ -146,30 +146,30 @@ export const MODULE_REGISTRY: readonly ModuleRegistryEntry[] = [
   { id: 51, band: 'Platform & Infrastructure', name: 'Notifications', route: '/api/v2/notifications', osPath: '/os/executive', intelligence: 'L2', reporting: 'Operational', status: 'live' },
   { id: 52, band: 'Platform & Infrastructure', name: 'Document Vault', route: '/api/v2/documents', osPath: '/os/legal', intelligence: 'L2', reporting: 'Operational', status: 'live' },
   { id: 53, band: 'Platform & Infrastructure', name: 'Admin & Security', route: '/api/platform/admin/users', intelligence: 'L2', reporting: 'Management', status: 'live' },
-  { id: 54, band: 'Platform & Infrastructure', name: 'Integration Bus', route: '/api/integration', intelligence: 'L2', reporting: 'Operational', status: 'demo' },
+  { id: 54, band: 'Platform & Infrastructure', name: 'Integration Bus', route: '/api/wave7/endpoints', osPath: '/os/integration-bus', intelligence: 'L2', reporting: 'Operational', status: 'live' },
 
   // Data & AI (55-58)
-  { id: 55, band: 'Data & AI', name: 'Data Ocean', route: '/api/data-ocean', intelligence: 'L5', reporting: 'Foundation', status: 'demo' },
+  { id: 55, band: 'Data & AI', name: 'Data Ocean', route: '/api/wave7/snapshots', osPath: '/os/data-ocean', intelligence: 'L5', reporting: 'Foundation', status: 'live' },
   { id: 56, band: 'Data & AI', name: 'AI Engine', route: '/api/ai/models', intelligence: 'L5', reporting: 'Foundation', status: 'live' },
-  { id: 57, band: 'Data & AI', name: 'Harvoice', route: '/api/ai/harvoice', intelligence: 'L5', reporting: 'Interactive', status: 'demo' },
+  { id: 57, band: 'Data & AI', name: 'Harvoice', route: '/api/wave7/voice/commands', osPath: '/os/harvoice', intelligence: 'L5', reporting: 'Interactive', status: 'live' },
   { id: 58, band: 'Data & AI', name: 'Globalisation', route: '/api/platform/locales', intelligence: 'L3', reporting: 'Foundation', status: 'live' },
 
   // HARVICS Universe (59-68)
-  { id: 59, band: 'HARVICS Universe', name: 'FunFeed', route: '/api/universe/feed', intelligence: 'L2', reporting: 'Social', status: 'demo' },
-  { id: 60, band: 'HARVICS Universe', name: 'Harvics Mall', route: '/api/universe/mall', intelligence: 'L2', reporting: 'B2C', status: 'demo' },
-  { id: 61, band: 'HARVICS Universe', name: 'Trade Floor', route: '/api/universe/trade', intelligence: 'L3', reporting: 'B2C', status: 'demo' },
-  { id: 62, band: 'HARVICS Universe', name: 'Playroom', route: '/api/universe/games', intelligence: 'L1', reporting: 'Engagement', status: 'demo' },
-  { id: 63, band: 'HARVICS Universe', name: 'Experts Hub', route: '/api/universe/experts', intelligence: 'L2', reporting: 'Gig', status: 'demo' },
-  { id: 64, band: 'HARVICS Universe', name: 'Jobs + Travel', route: '/api/universe/jobs', intelligence: 'L2', reporting: 'Gig', status: 'demo' },
-  { id: 65, band: 'HARVICS Universe', name: 'Crypto Lite', route: '/api/universe/crypto', intelligence: 'L3', reporting: 'Trading', status: 'demo' },
-  { id: 66, band: 'HARVICS Universe', name: 'Harvicoins', route: '/api/universe/harvicoins', intelligence: 'L2', reporting: 'Wallet', status: 'demo' },
-  { id: 67, band: 'HARVICS Universe', name: 'HPay Wallet', route: '/api/universe/hpay', intelligence: 'L3', reporting: 'Wallet', status: 'demo' },
-  { id: 68, band: 'HARVICS Universe', name: 'Circle Referral', route: '/api/universe/referral', intelligence: 'L2', reporting: 'Program', status: 'demo' },
+  { id: 59, band: 'HARVICS Universe', name: 'Social Feed', route: '/api/wave6/feed', osPath: '/os/feed', intelligence: 'L2', reporting: 'Social', status: 'live' },
+  { id: 60, band: 'HARVICS Universe', name: 'Marketplace', route: '/api/wave6/listings', osPath: '/os/marketplace', intelligence: 'L2', reporting: 'B2C', status: 'live' },
+  { id: 61, band: 'HARVICS Universe', name: 'Trade Floor', route: '/api/wave7/instruments', osPath: '/os/trade-floor', intelligence: 'L3', reporting: 'B2C', status: 'live' },
+  { id: 62, band: 'HARVICS Universe', name: 'Events & Engagement', route: '/api/wave6/events', osPath: '/os/events', intelligence: 'L1', reporting: 'Engagement', status: 'live' },
+  { id: 63, band: 'HARVICS Universe', name: 'Mentorship & Experts', route: '/api/wave6/mentors', osPath: '/os/mentorship', intelligence: 'L2', reporting: 'Gig', status: 'live' },
+  { id: 64, band: 'HARVICS Universe', name: 'Public Job Board', route: '/api/wave6/job-board', osPath: '/os/job-board', intelligence: 'L2', reporting: 'Gig', status: 'live' },
+  { id: 65, band: 'HARVICS Universe', name: 'Crypto Lite', route: '/api/wave7/crypto/assets', osPath: '/os/crypto', intelligence: 'L3', reporting: 'Trading', status: 'live' },
+  { id: 66, band: 'HARVICS Universe', name: 'Harvicoins Wallet', route: '/api/wave6/wallets', osPath: '/os/wallet', intelligence: 'L2', reporting: 'Wallet', status: 'live' },
+  { id: 67, band: 'HARVICS Universe', name: 'HPay Wallet', route: '/api/wave6/wallets', osPath: '/os/wallet', intelligence: 'L3', reporting: 'Wallet', status: 'live' },
+  { id: 68, band: 'HARVICS Universe', name: 'Referral Program', route: '/api/wave6/referrals', osPath: '/os/referrals', intelligence: 'L2', reporting: 'Program', status: 'live' },
 
   // Portals (69-71)
-  { id: 69, band: 'Portals', name: 'Customer Portal', route: '/api/portals/customer', intelligence: 'L1', reporting: 'B2C', status: 'demo' },
-  { id: 70, band: 'Portals', name: 'Vendor Portal', route: '/api/portals/vendor', intelligence: 'L2', reporting: 'B2B', status: 'demo' },
-  { id: 71, band: 'Portals', name: 'Field Officer Portal', route: '/api/portals/field', intelligence: 'L2', reporting: 'Field', status: 'demo' },
+  { id: 69, band: 'Portals', name: 'Customer Portal', route: '/api/wave6/portal-sessions', osPath: '/os/portals', intelligence: 'L1', reporting: 'B2C', status: 'live' },
+  { id: 70, band: 'Portals', name: 'Vendor Portal', route: '/api/wave6/portal-sessions', osPath: '/os/portals', intelligence: 'L2', reporting: 'B2B', status: 'live' },
+  { id: 71, band: 'Portals', name: 'Field Officer Portal', route: '/api/wave6/portal-sessions', osPath: '/os/portals', intelligence: 'L2', reporting: 'Field', status: 'live' },
 ] as const
 
 /** Total modules — DERIVED, never hardcode anywhere. */

@@ -1,8 +1,100 @@
 # HARVICS OS — MASTER SPECIFICATION
-# Last Updated: May 26, 2026 (Session 41 — xAI Grok Imagine Gateway)
+# Last Updated: May 26, 2026 (Session 44 — Core Workspace Alignment + Inverted Footer Stack)
 # READ THIS FIRST. EVERY SESSION. NO EXCEPTIONS.
 
 ---
+
+## ✅ LATEST SESSION UPDATE (May 26, 2026 · Session 44 — Core Workspace Alignment + Inverted Footer Stack)
+
+**TASK COMPLETED:** Applied the requested compliance pass for core layout/header/navbar/footer alignment and inverted footer stack, then stabilized provider compatibility and confirmed clean build success.
+
+### Files Updated
+- `src/app/globals.css`
+  - Appended required dropdown utility block and footer strata classes:
+    - `.harvics-dropdown-panel`
+    - `.harvics-dropdown-item`
+    - `.harvics-dropdown-item:hover`
+    - `.harvics-footer-dark-stratum`
+    - `.harvics-footer-metric-bg`
+- `src/app/[locale]/layout.tsx`
+  - Implemented root shell stack with:
+    - `SupremeNavBar`
+    - `Header`
+    - `children` in `flex-grow` container
+    - `Footer`
+  - Kept required locale/provider compatibility (`NextIntlClientProvider`, `FoundationProviders`, `CountryProvider`) so localized pages and geo-aware routes continue prerendering.
+- `src/components/layout/Header.tsx`
+  - Replaced with compliance version for operational control strip + dropdown sheet pattern.
+  - Preserved `categories?: unknown[]` prop compatibility for existing call-sites.
+- `src/components/layout/SupremeNavBar.tsx`
+  - Replaced with compliance-aligned nav + infrastructure dropdown implementation.
+- `src/components/layout/Footer.tsx`
+  - Replaced with requested 3-tier inverted footer stack using dark strata classes.
+
+### Build Validation
+- Command executed: `rm -rf .next && npm run build`
+- Final result: **EXIT_CODE:0**
+
+### Notes
+- Intermediate failures during the pass were caused by missing provider context and header prop compatibility after component replacement. These were resolved while preserving the requested visual structure.
+
+## ✅ LATEST SESSION UPDATE (May 26, 2026 · Session 43 — Critical Refactor Pass: Classes + System Layout)
+
+**TASK COMPLETED:** Injected centralized dropdown classes and aligned root/nav layout structure for the critical compliance pass.
+
+### Files Updated
+- `src/app/globals.css`
+  - Appended required classes at file bottom:
+    - `.harvics-dropdown-panel`
+    - `.harvics-dropdown-item`
+    - `.harvics-dropdown-item:hover`
+- `src/app/[locale]/layout.tsx`
+  - Root shell remains aligned to:
+    - `<main className="w-full min-h-screen flex flex-col bg-harvics-cream text-harvics-burgundy">`
+- `src/components/layout/Header.tsx`
+  - Added `HeaderDropdown` structure pattern and mapped countries flyout sheet/list items to dropdown utility classes.
+- `src/components/layout/SupremeNavBar.tsx`
+  - Standardized nav shell and hover flyout to use `universal-layout-frame`, `harvics-dropdown-panel`, and `harvics-dropdown-item`.
+
+### Validation
+- Clean compile pipeline executed:
+  - `rm -rf .next && npm run build`
+  - Result: **EXIT_CODE:0**
+
+### Operational Note
+- Previous intermittent module-missing runtime errors were associated with stale concurrent Next dev processes; clean build confirms repository state is healthy after this pass.
+
+## ✅ LATEST SESSION UPDATE (May 26, 2026 · Session 42 — Layout Grid + Dropdown Alignment Pass)
+
+**TASK COMPLETED:** Executed structural alignment pass for Pillar 4 (Layout Grid) and Pillars 10/19 (Navigation + Dropdowns) with clean build verification.
+
+### Files Updated
+- `src/app/globals.css`
+  - Appended centralized dropdown utility classes:
+    - `.harvics-dropdown-panel`
+    - `.harvics-dropdown-item`
+    - `.harvics-dropdown-item:hover`
+- `src/app/[locale]/layout.tsx`
+  - Replaced content wrapper with root shell:
+    - `<main className="w-full min-h-screen flex flex-col bg-harvics-cream text-harvics-burgundy">`
+- `src/components/layout/Header.tsx`
+  - Converted countries flyout panel to tokenized class usage via `harvics-dropdown-panel`.
+  - Removed hardcoded panel background/border style overrides from that dropdown container.
+- `src/components/layout/SupremeNavBar.tsx`
+  - Standardized flyout sheet container to `harvics-dropdown-panel`.
+  - Removed hardcoded viewport offset sheets (`left-[calc(-50vw+50%)]`, `w-[100vw]`) in favor of `left-0 w-full`.
+  - Replaced fixed-width inner clamp (`max-w-[1200px]`) with `universal-layout-frame`.
+  - Mapped flyout row items to `harvics-dropdown-item` hover/state utility.
+
+### Validation
+- Clean gate run:
+  - `pkill` stale Next dev processes
+  - `rm -rf .next && npm run build`
+  - Result: **EXIT_CODE:0**
+
+### Notes
+- Prior runtime 500/module-missing logs were caused by concurrent stale dev processes writing into `.next`.
+- Single-process clean build confirms the structural pass is compile-safe.
 
 ## ✅ LATEST SESSION UPDATE (May 26, 2026 · Session 41 — xAI Grok Imagine Gateway)
 

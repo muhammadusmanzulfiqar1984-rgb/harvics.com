@@ -57,3 +57,6 @@ Never deviate without explicit approval.
 - No emojis.
 - No Option A replacements.
 - Skin only unless explicitly approved.
+- `SupremeNavBar.tsx` is LOCKED. Never rewrite, simplify, or replace.
+- `SupremeNavBar.tsx` consumes `navVerticals` from `@/data/megaMenuData`.
+- All 13 sectors, mega-menu, dropdown state, hover timers, route/escape handling, and page-dimming overlay must remain intact at all times.

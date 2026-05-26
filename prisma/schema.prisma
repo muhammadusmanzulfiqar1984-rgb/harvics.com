@@ -73,17 +73,24 @@ model InventoryItem {
 }
 
 model Lead {
-  id        String   @id @default(cuid())
-  company   String
-  contact   String?
-  email     String?
-  stage     String   @default("Lead")
-  value     Float    @default(0)
-  source    String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id         String    @id @default(cuid())
+  company    String
+  contact    String?
+  email      String?
+  stage      String    @default("Lead")
+  value      Float     @default(0)
+  source     String?
+  notes      String?
+  aiScore    Int?
+  aiTier     String?
+  aiScoredAt DateTime?
+  ownerId    String?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
 
   @@index([stage])
+  @@index([aiTier])
+  @@index([ownerId])
 }
 
 model Campaign {
@@ -991,13 +998,14 @@ model Attendance {
 
 // #2 Controlling — cost centers + allocations
 model CostCenter {
-  id        String   @id @default(cuid())
-  code      String   @unique
+  id        String        @id @default(cuid())
+  code      String        @unique
   name      String
   manager   String?
-  active    Boolean  @default(true)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  active    Boolean       @default(true)
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+  postings  CostPosting[]
 }
 
 model CostAllocation {
@@ -1638,4 +1646,602 @@ model TimeEntry {
   @@index([engagementId])
   @@index([employeeId])
   @@index([date])
+}
+
+// ─── WAVE 6 · Bucket C (15 social / portal / wallet modules) ────────────────
+
+// #56 HPay Wallet
+model Wallet {
+  id           String      @id @default(cuid())
+  ownerType    String // user|tenant|customer|supplier
+  ownerId      String
+  currency     String      @default("USD")
+  balance      Float       @default(0)
+  status       String      @default("Active") // Active|Frozen|Closed
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  transactions WalletTxn[]
+
+  @@unique([ownerType, ownerId, currency])
+  @@index([ownerId])
+}
+
+model WalletTxn {
+  id           String   @id @default(cuid())
+  walletId     String
+  type         String // topup|withdraw|transfer_in|transfer_out|payment|refund
+  amount       Float
+  currency     String
+  balanceAfter Float
+  counterparty String?
+  reference    String?
+  status       String   @default("Posted") // Pending|Posted|Reversed
+  createdAt    DateTime @default(now())
+  wallet       Wallet   @relation(fields: [walletId], references: [id], onDelete: Cascade)
+
+  @@index([walletId])
+  @@index([type])
+}
+
+// #58 Social Feed
+model FeedPost {
+  id           String        @id @default(cuid())
+  authorId     String
+  authorName   String
+  body         String
+  imageUrl     String?
+  likeCount    Int           @default(0)
+  commentCount Int           @default(0)
+  visibility   String        @default("public") // public|tenant|group
+  groupId      String?
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  comments     FeedComment[]
+  likes        FeedLike[]
+
+  @@index([authorId])
+  @@index([groupId])
+}
+
+model FeedComment {
+  id         String   @id @default(cuid())
+  postId     String
+  authorId   String
+  authorName String
+  body       String
+  createdAt  DateTime @default(now())
+  post       FeedPost @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@index([postId])
+}
+
+model FeedLike {
+  id        String   @id @default(cuid())
+  postId    String
+  userId    String
+  createdAt DateTime @default(now())
+  post      FeedPost @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@unique([postId, userId])
+}
+
+// #59 Groups & Communities
+model Community {
+  id          String            @id @default(cuid())
+  slug        String            @unique
+  name        String
+  description String?
+  visibility  String            @default("public") // public|private
+  memberCount Int               @default(0)
+  createdBy   String?
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+  members     CommunityMember[]
+}
+
+model CommunityMember {
+  id          String    @id @default(cuid())
+  communityId String
+  userId      String
+  role        String    @default("member") // owner|admin|member
+  joinedAt    DateTime  @default(now())
+  community   Community @relation(fields: [communityId], references: [id], onDelete: Cascade)
+
+  @@unique([communityId, userId])
+  @@index([userId])
+}
+
+// #60 Marketplace listings
+model MarketListing {
+  id           String   @id @default(cuid())
+  sellerId     String
+  sellerName   String
+  title        String
+  description  String?
+  category     String?
+  price        Float
+  currency     String   @default("USD")
+  qtyAvailable Int      @default(1)
+  imageUrl     String?
+  status       String   @default("Active") // Active|Sold|Withdrawn
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([sellerId])
+  @@index([status])
+  @@index([category])
+}
+
+// #61 External Job Board (shares JobPosting; this is a public-feed view) — using SavedJobPost wrapper
+model SavedJobPost {
+  id          String   @id @default(cuid())
+  postingId   String   @unique
+  publishedAt DateTime @default(now())
+  externalUrl String?
+  views       Int      @default(0)
+  applies     Int      @default(0)
+}
+
+// #62 Events & Webinars
+model Event {
+  id            String              @id @default(cuid())
+  slug          String              @unique
+  title         String
+  description   String?
+  type          String              @default("Webinar") // Webinar|InPerson|Hybrid
+  startsAt      DateTime
+  endsAt        DateTime
+  capacity      Int                 @default(100)
+  location      String?
+  meetingUrl    String?
+  status        String              @default("Scheduled") // Scheduled|Live|Completed|Cancelled
+  createdAt     DateTime            @default(now())
+  updatedAt     DateTime            @updatedAt
+  registrations EventRegistration[]
+}
+
+model EventRegistration {
+  id        String   @id @default(cuid())
+  eventId   String
+  userId    String
+  userName  String
+  attended  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  event     Event    @relation(fields: [eventId], references: [id], onDelete: Cascade)
+
+  @@unique([eventId, userId])
+}
+
+// #63 Knowledge Hub
+model KnowledgeArticle {
+  id          String    @id @default(cuid())
+  slug        String    @unique
+  title       String
+  category    String?
+  body        String
+  tags        String?
+  authorId    String?
+  authorName  String?
+  views       Int       @default(0)
+  status      String    @default("Draft") // Draft|Published|Archived
+  publishedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([status])
+  @@index([category])
+}
+
+// #64 Mentorship
+model MentorProfile {
+  id               String              @id @default(cuid())
+  userId           String              @unique
+  name             String
+  bio              String?
+  expertise        String? // comma-separated
+  yearsExp         Int                 @default(0)
+  rating           Float               @default(0)
+  acceptingMentees Boolean             @default(true)
+  createdAt        DateTime            @default(now())
+  updatedAt        DateTime            @updatedAt
+  sessions         MentorshipSession[]
+}
+
+model MentorshipSession {
+  id           String        @id @default(cuid())
+  mentorId     String
+  menteeId     String
+  topic        String
+  scheduledAt  DateTime
+  durationMins Int           @default(30)
+  status       String        @default("Requested") // Requested|Confirmed|Completed|Cancelled
+  notes        String?
+  rating       Int? // 1-5
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  mentor       MentorProfile @relation(fields: [mentorId], references: [id], onDelete: Cascade)
+
+  @@index([mentorId])
+  @@index([menteeId])
+}
+
+// #65 Polls & Surveys
+model Poll {
+  id          String         @id @default(cuid())
+  question    String
+  options     Json // ["A","B","C"]
+  multiSelect Boolean        @default(false)
+  closesAt    DateTime?
+  status      String         @default("Open") // Open|Closed
+  createdBy   String?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  responses   PollResponse[]
+}
+
+model PollResponse {
+  id        String   @id @default(cuid())
+  pollId    String
+  userId    String
+  choices   Json // ["A"] or ["A","C"]
+  createdAt DateTime @default(now())
+  poll      Poll     @relation(fields: [pollId], references: [id], onDelete: Cascade)
+
+  @@unique([pollId, userId])
+}
+
+// #66 Recognition / Kudos
+model Kudos {
+  id         String   @id @default(cuid())
+  fromUserId String
+  fromName   String
+  toUserId   String
+  toName     String
+  category   String   @default("Teamwork") // Teamwork|Innovation|Customer|Excellence|Leadership
+  message    String
+  points     Int      @default(10)
+  visibility String   @default("public")
+  createdAt  DateTime @default(now())
+
+  @@index([toUserId])
+  @@index([fromUserId])
+}
+
+// #67 Referral Program
+model Referral {
+  id             String    @id @default(cuid())
+  referralCode   String    @unique
+  referrerId     String
+  referrerName   String
+  refereeEmail   String
+  refereeName    String?
+  status         String    @default("Pending") // Pending|Signed|Qualified|Paid|Expired
+  rewardAmount   Float     @default(0)
+  rewardCurrency String    @default("USD")
+  signedAt       DateTime?
+  qualifiedAt    DateTime?
+  paidAt         DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  @@index([referrerId])
+  @@index([status])
+}
+
+// #68/#69/#70 Portal sessions (customer/supplier/partner self-service tracking)
+model PortalSession {
+  id           String    @id @default(cuid())
+  portalType   String // customer|supplier|partner
+  externalId   String // customer.id or supplier.id or partner code
+  externalName String
+  loginAt      DateTime  @default(now())
+  ipAddress    String?
+  userAgent    String?
+  actionsCount Int       @default(0)
+  lastActionAt DateTime?
+
+  @@index([portalType])
+  @@index([externalId])
+}
+
+model PortalAction {
+  id         String   @id @default(cuid())
+  sessionId  String
+  portalType String
+  externalId String
+  action     String // viewed_invoices|placed_order|raised_ticket|updated_profile|downloaded_report
+  payload    Json?
+  createdAt  DateTime @default(now())
+
+  @@index([sessionId])
+  @@index([portalType, externalId])
+}
+
+// #71 Mobile API Gateway — token registry + call audit
+model MobileApiToken {
+  id         String    @id @default(cuid())
+  token      String    @unique
+  userId     String
+  deviceId   String?
+  platform   String? // ios|android|web
+  scopes     String    @default("read")
+  active     Boolean   @default(true)
+  lastUsedAt DateTime?
+  expiresAt  DateTime?
+  createdAt  DateTime  @default(now())
+
+  @@index([userId])
+}
+
+model MobileApiCall {
+  id         String   @id @default(cuid())
+  tokenId    String?
+  endpoint   String
+  method     String
+  statusCode Int
+  latencyMs  Int      @default(0)
+  createdAt  DateTime @default(now())
+
+  @@index([endpoint])
+  @@index([createdAt])
+}
+
+// ─── WAVE 7 · Final 6 modules ──────────────────────────────────────────────
+
+// #2 Controlling — postings linked to existing Wave 4 CostCenter
+model CostPosting {
+  id           String     @id @default(cuid())
+  costCenterId String
+  period       String // YYYY-MM
+  account      String
+  amount       Float
+  description  String?
+  type         String     @default("Actual") // Actual|Plan
+  createdAt    DateTime   @default(now())
+  costCenter   CostCenter @relation(fields: [costCenterId], references: [id], onDelete: Cascade)
+
+  @@index([costCenterId])
+  @@index([period])
+}
+
+// #54 Integration Bus — generic webhook/adapter framework
+model IntegrationEndpoint {
+  id          String                @id @default(cuid())
+  code        String                @unique
+  name        String
+  url         String
+  method      String                @default("POST")
+  authType    String                @default("none") // none|bearer|basic|hmac
+  authValue   String?
+  active      Boolean               @default(true)
+  retryPolicy String                @default("3x-exponential")
+  createdAt   DateTime              @default(now())
+  updatedAt   DateTime              @updatedAt
+  deliveries  IntegrationDelivery[]
+}
+
+model IntegrationDelivery {
+  id           String              @id @default(cuid())
+  endpointId   String
+  event        String
+  payload      Json
+  status       String              @default("Pending") // Pending|Delivered|Failed|DLQ
+  attempts     Int                 @default(0)
+  responseCode Int?
+  responseBody String?
+  deliveredAt  DateTime?
+  nextRetryAt  DateTime?
+  createdAt    DateTime            @default(now())
+  endpoint     IntegrationEndpoint @relation(fields: [endpointId], references: [id], onDelete: Cascade)
+
+  @@index([endpointId])
+  @@index([status])
+}
+
+// #55 Data Ocean — table snapshot warehouse
+model DataSnapshot {
+  id          String   @id @default(cuid())
+  tableName   String
+  recordCount Int      @default(0)
+  sizeBytes   Int      @default(0)
+  format      String   @default("json") // json|csv|parquet
+  storageRef  String? // file path / s3 url
+  capturedAt  DateTime @default(now())
+  capturedBy  String?
+  metadata    Json?
+
+  @@index([tableName])
+  @@index([capturedAt])
+}
+
+// #57 Harvoice — voice command transcription + intent
+model VoiceCommand {
+  id           String   @id @default(cuid())
+  userId       String?
+  transcript   String
+  intent       String // search|create|update|navigate|report|unknown
+  entities     Json? // extracted entities
+  confidence   Float    @default(0)
+  responseText String?
+  durationMs   Int      @default(0)
+  status       String   @default("Processed") // Processed|Failed
+  createdAt    DateTime @default(now())
+
+  @@index([intent])
+  @@index([createdAt])
+}
+
+// #61 Trade Floor — B2B trading exchange (bid/ask order book)
+model TradeInstrument {
+  id           String       @id @default(cuid())
+  symbol       String       @unique
+  name         String
+  category     String       @default("Commodity") // Commodity|Equity|FX|Crypto
+  unit         String       @default("unit")
+  lastPrice    Float        @default(0)
+  baseCurrency String       @default("USD")
+  active       Boolean      @default(true)
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  orders       TradeOrder[]
+  trades       Trade[]
+}
+
+model TradeOrder {
+  id           String          @id @default(cuid())
+  instrumentId String
+  traderId     String
+  side         String // buy|sell
+  orderType    String          @default("limit") // limit|market
+  price        Float
+  qty          Float
+  filledQty    Float           @default(0)
+  status       String          @default("Open") // Open|Filled|PartiallyFilled|Cancelled
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+  instrument   TradeInstrument @relation(fields: [instrumentId], references: [id], onDelete: Cascade)
+
+  @@index([instrumentId])
+  @@index([status])
+}
+
+model Trade {
+  id           String          @id @default(cuid())
+  instrumentId String
+  buyOrderId   String
+  sellOrderId  String
+  price        Float
+  qty          Float
+  buyerId      String
+  sellerId     String
+  createdAt    DateTime        @default(now())
+  instrument   TradeInstrument @relation(fields: [instrumentId], references: [id], onDelete: Cascade)
+
+  @@index([instrumentId])
+  @@index([createdAt])
+}
+
+// #65 Crypto Lite — sandbox crypto wallet + trade simulator
+model CryptoAsset {
+  id        String          @id @default(cuid())
+  symbol    String          @unique
+  name      String
+  priceUsd  Float           @default(0)
+  change24h Float           @default(0)
+  active    Boolean         @default(true)
+  updatedAt DateTime        @updatedAt
+  createdAt DateTime        @default(now())
+  holdings  CryptoHolding[]
+  trades    CryptoTrade[]
+}
+
+model CryptoHolding {
+  id         String      @id @default(cuid())
+  userId     String
+  assetId    String
+  qty        Float       @default(0)
+  avgCostUsd Float       @default(0)
+  updatedAt  DateTime    @updatedAt
+  asset      CryptoAsset @relation(fields: [assetId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, assetId])
+  @@index([userId])
+}
+
+model CryptoTrade {
+  id        String      @id @default(cuid())
+  userId    String
+  assetId   String
+  side      String // buy|sell
+  qty       Float
+  priceUsd  Float
+  totalUsd  Float
+  createdAt DateTime    @default(now())
+  asset     CryptoAsset @relation(fields: [assetId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([assetId])
+}
+
+// ─── WAVE 8 · Smart CRM (AI-powered) ───────────────────────────────────────
+
+// Contacts attached to a Lead/Deal/Account
+model CrmContact {
+  id         String        @id @default(cuid())
+  leadId     String?
+  dealId     String?
+  customerId String?
+  name       String
+  title      String?
+  email      String?
+  phone      String?
+  linkedin   String?
+  notes      String?
+  isPrimary  Boolean       @default(false)
+  createdAt  DateTime      @default(now())
+  updatedAt  DateTime      @updatedAt
+  activities CrmActivity[]
+
+  @@index([leadId])
+  @@index([dealId])
+  @@index([customerId])
+  @@index([email])
+}
+
+// Activities: calls, emails, meetings, notes — on any CRM entity
+model CrmActivity {
+  id         String      @id @default(cuid())
+  type       String // call|email|meeting|note|task|demo
+  subject    String
+  body       String?
+  outcome    String? // positive|neutral|negative|no_show
+  leadId     String?
+  dealId     String?
+  customerId String?
+  contactId  String?
+  ownerId    String?
+  occurredAt DateTime    @default(now())
+  createdAt  DateTime    @default(now())
+  contact    CrmContact? @relation(fields: [contactId], references: [id], onDelete: SetNull)
+
+  @@index([leadId])
+  @@index([dealId])
+  @@index([customerId])
+  @@index([type])
+  @@index([occurredAt])
+}
+
+// AI-generated insights cached on a Lead/Deal (re-score on demand)
+model CrmAiInsight {
+  id          String   @id @default(cuid())
+  leadId      String?
+  dealId      String?
+  score       Int      @default(0) // 0-100
+  tier        String? // Hot|Warm|Cool|Cold
+  reasoning   String?
+  nextAction  String?
+  aiGenerated Boolean  @default(true)
+  modelName   String?
+  createdAt   DateTime @default(now())
+
+  @@index([leadId])
+  @@index([dealId])
+}
+
+// Email drafts (so user can review before sending)
+model CrmEmailDraft {
+  id          String    @id @default(cuid())
+  leadId      String?
+  dealId      String?
+  purpose     String // follow_up|demo_request|objection_handle|thank_you
+  subject     String
+  body        String
+  status      String    @default("Draft") // Draft|Sent|Discarded
+  aiGenerated Boolean   @default(true)
+  createdAt   DateTime  @default(now())
+  sentAt      DateTime?
+
+  @@index([leadId])
+  @@index([dealId])
+  @@index([status])
 }
