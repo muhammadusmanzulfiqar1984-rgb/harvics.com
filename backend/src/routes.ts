@@ -421,6 +421,7 @@ import logisticsCrudRouter from './modules/logistics/logistics.crud.controller';
 import procurementCrudRouter from './modules/procurement/procurement.crud.controller';
 import { t14 } from './modules/t14/t14.store';
 import { stubCatalogRouter } from './modules/stub-catalog/stub.catalog';
+import { buildGenericRouter, seedAllModules } from './modules/generic/mount';
 import {
   manufacturingCrudRouter,
   qualityCrudRouter,
@@ -1929,6 +1930,20 @@ router.use('/treasury',         requireAuthScope, neuralGovernance, treasuryCrud
 router.use('/digital-finance',  requireAuthScope, neuralGovernance, digitalFinanceCrudRouter);
 router.use('/marketing',        requireAuthScope, neuralGovernance, marketingCrudRouter);
 router.use('/shipping-trade',   requireAuthScope, neuralGovernance, shippingTradeCrudRouter);
+
+// ── GENERIC MODULE FACTORY (Session 39 · Wave 0+1) ──────────────────────────
+// Auto-mounts CRUD for every demo/live module in the registry that does NOT
+// already have a bespoke controller. Backed by `GenericModuleRecord` table.
+// Mounted LAST so all bespoke routes above take precedence.
+const _generic = buildGenericRouter();
+router.use('/', _generic.router);
+// eslint-disable-next-line no-console
+console.log(`[generic-factory] mounted ${_generic.mounted} canonical + ${_generic.uniformMounted} at /api/m/:id, skipped ${_generic.reserved} reserved`);
+// Fire-and-forget seed — safe to ignore failures; routes will just return empty arrays.
+void seedAllModules().then(({ seeded, skipped }) => {
+  // eslint-disable-next-line no-console
+  console.log(`[generic-factory] seeded ${seeded} module bucket(s), skipped ${skipped}`);
+});
 
 // ── AI INTELLIGENCE ROUTES (PROTECTED - AUTH REQUIRED) ───────────────
 router.use('/intelligence', requireAuthScope, intelligenceRouter);

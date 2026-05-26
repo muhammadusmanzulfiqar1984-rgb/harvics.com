@@ -630,6 +630,14 @@ export default function ModuleArchitectureExplorer() {
                       >
                         Open Workspace
                       </button>
+                      <a
+                        href={`/en/os/module/${module.id}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="rounded-xl border border-[#c3a35e] bg-[#c3a35e] px-3 py-2 text-xs font-bold text-[#6b1f2b]"
+                      >
+                        Open Module →
+                      </a>
                       {data?.contract?.sampleCreatePayload ? (
                         <button
                           type="button"

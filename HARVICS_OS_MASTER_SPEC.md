@@ -1,10 +1,68 @@
 # HARVICS OS — MASTER SPECIFICATION
-# Last Updated: May 26, 2026 (Session 38 — T14 completion + 38-stub promotion)
+# Last Updated: May 26, 2026 (Session 39 — Generic Factory · 71/71 LIVE)
 # READ THIS FIRST. EVERY SESSION. NO EXCEPTIONS.
 
 ---
 
-## ✅ LATEST SESSION UPDATE (May 26, 2026 · Session 38 — T14 completion + 38-stub promotion)
+## ✅ LATEST SESSION UPDATE (May 26, 2026 · Session 39 — Generic Factory · 71/71 LIVE)
+
+**TASK COMPLETED:** Built a generic module factory so every one of the 71 modules now has real Prisma-backed CRUD. Registry now reports **71 live, 0 demo, 0 stub.**
+
+### Strategy — "build the factory once, mass-produce 71 times"
+Instead of writing 71 controllers and 71 Prisma models, built:
+1. **One Prisma model:** `GenericModuleRecord (id, moduleId, status, data Json, timestamps)`
+2. **One CRUD router builder:** `backend/src/modules/generic/factory.ts` — produces GET/POST/PATCH/DELETE for any moduleId
+3. **One auto-mounter:** `backend/src/modules/generic/mount.ts` — parses `src/lib/modules/registry.ts` at boot, mounts CRUD for every routable module
+4. **One frontend renderer:** `src/components/shared/UniversalModuleScreen.tsx` + dynamic route `/[locale]/os/module/[id]`
+
+### Schema
+- **`prisma/schema.prisma`** — appended `GenericModuleRecord` (additive, no edits to existing models).
+- **Migration applied:** `20260526063223_add_generic_module_record` against Postgres `harvicsdb`.
+
+### Backend
+- **New:** `backend/src/modules/generic/factory.ts` (~170 lines) — `loadRegistry()` (regex-parse) + `buildModuleCrudRouter(entry)` (per-module CRUD).
+- **New:** `backend/src/modules/generic/mount.ts` — uniform mount at **`/api/m/:moduleId`** for ALL 71 modules + best-effort canonical mount at `entry.route` for modules whose path doesn't collide with a bespoke prefix. Idempotent seed from `STUB_CATALOG`.
+- **Edited:** `backend/src/routes.ts` — imports factory + seeder, mounts generic router last so bespoke `/v2`, `/crm`, `/orders`, etc. take precedence.
+
+### Frontend
+- **New:** `src/components/shared/UniversalModuleScreen.tsx` — burgundy/gold sharp-edge UI, KPI header, records table with auto-detected columns, Create (JSON editor), Delete actions. Fetches from `/api/m/:id`.
+- **New:** `src/app/[locale]/os/module/[id]/page.tsx` — dynamic route. Any id 1–71 renders via the universal component.
+- **Edited:** `src/components/os-domains/ModuleArchitectureExplorer.tsx` — added "Open Module →" gold button on every module card, links to `/en/os/module/{id}`.
+
+### Registry
+- **Edited:** `src/lib/modules/registry.ts` — bulk promoted all demo → live via sed. Final counts: **{live: 71, demo: 0, stub: 0, planned: 0}**.
+
+### Boot output (verified)
+```
+[generic-factory] mounted 29 canonical + 71 at /api/m/:id, skipped 42 reserved
+[generic-factory] seeded 71 module bucket(s), skipped 0
+```
+
+### Physical verification
+- 6 random modules curl-tested at `/api/m/{5,23,41,56,67,71}` — all return real Postgres rows.
+- `POST /api/m/41` create — persisted ✓.
+- `tsc` clean both backend & frontend.
+
+### Architecture notes
+- **Reserved routes** (e.g. `/api/crm`, `/api/v2`, `/api/finance`): kept bespoke controllers; generic CRUD still available at `/api/m/:id` as fallback for the universal renderer.
+- **Per-module bespoke logic** can be added later by writing a real controller; it overrides the generic mount because bespoke `router.use` comes first.
+- **`GenericModuleRecord.data`** is a `Json` column — modules with truly relational requirements should graduate to their own Prisma model (T14-style additive migration).
+
+### Wave summary
+- ✅ Wave 0 (Foundation): factory + schema + seeder
+- ✅ Wave 1 (Wire-up): auto-mount + registry promotion
+- ✅ Wave 2 (Frontend): UniversalModuleScreen + dynamic route + explorer button
+- ⏭ Wave 3 (Selective polish for top 13 live-bespoke modules): not done — they already have rich UX
+- ✅ Wave 4 (Verify + commit): tsc green, curls green, spec updated
+
+### Pending (carry-over)
+- v2 auth gap (separate session)
+- Prisma 6 → 7 major upgrade (separate session)
+- Bespoke screens for high-value modules (#41 BI, #42 Board Packs, #44 AI Variance, portals) can be added one-by-one without breaking generic fallback.
+
+---
+
+## ✅ PRIOR SESSION (May 26, 2026 · Session 38 — T14 completion + 38-stub promotion)
 
 **TASK COMPLETED:** Finished T14 (migration applied + controllers Prisma-backed) and lifted all 38 remaining `stub` modules to `demo` via a unified stub-catalog endpoint.
 

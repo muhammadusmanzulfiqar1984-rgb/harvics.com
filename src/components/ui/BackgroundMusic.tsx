@@ -165,6 +165,31 @@ const BackgroundMusic: React.FC = () => {
     }
   }
 
+  // Auto-pause music while a Vapi voice call is active, then resume after
+  useEffect(() => {
+    let wasPlayingBeforeCall = false
+    const onCallStart = () => {
+      const audio = audioRef.current
+      if (!audio) return
+      wasPlayingBeforeCall = !audio.paused
+      if (wasPlayingBeforeCall) {
+        audio.pause()
+        setIsPlaying(false)
+      }
+    }
+    const onCallEnd = () => {
+      const audio = audioRef.current
+      if (!audio || !wasPlayingBeforeCall) return
+      audio.play().then(() => setIsPlaying(true)).catch(() => {})
+    }
+    window.addEventListener('harvics:vapi-call-start', onCallStart)
+    window.addEventListener('harvics:vapi-call-end', onCallEnd)
+    return () => {
+      window.removeEventListener('harvics:vapi-call-start', onCallStart)
+      window.removeEventListener('harvics:vapi-call-end', onCallEnd)
+    }
+  }, [])
+
   return (
     <>
       {/* Hidden audio element */}

@@ -120,6 +120,16 @@ export default function VapiWidget() {
             assistant: VAPI_ASSISTANT_ID,
             config,
           })
+          // Wire call lifecycle to background music pause/resume
+          const inst = w.vapiInstance as { on?: (e: string, cb: () => void) => void } | undefined
+          if (inst && typeof inst.on === 'function') {
+            inst.on('call-start', () => {
+              window.dispatchEvent(new CustomEvent('harvics:vapi-call-start'))
+            })
+            inst.on('call-end', () => {
+              window.dispatchEvent(new CustomEvent('harvics:vapi-call-end'))
+            })
+          }
         } catch (err) {
           console.error('[Vapi] init failed:', err)
         }
