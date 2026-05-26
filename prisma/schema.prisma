@@ -673,3 +673,558 @@ model GenericModuleRecord {
   @@index([moduleId, status])
   @@index([createdAt])
 }
+
+// ─── WAVE 2 · Platform models (Session 39) ──────────────────────────────────
+
+// Neural Governance — policies enforced at request boundary
+model GovernancePolicy {
+  id        String   @id @default(cuid())
+  name      String
+  scope     String // 'global' | 'module' | 'route'
+  targetKey String? // module name or route prefix when scope != 'global'
+  rule      Json // { type, params } — interpreted by middleware
+  severity  String   @default("medium") // low|medium|high|critical
+  enabled   Boolean  @default(true)
+  createdBy String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([enabled])
+  @@index([scope, targetKey])
+}
+
+model GovernanceDecision {
+  id        String   @id @default(cuid())
+  policyId  String
+  actorId   String?
+  actorRole String?
+  module    String?
+  route     String?
+  outcome   String // allow | deny | warn
+  reason    String?
+  ipAddress String?
+  createdAt DateTime @default(now())
+
+  @@index([policyId])
+  @@index([outcome])
+  @@index([createdAt])
+}
+
+// Tax Engine — rates per country/region + calc log
+model TaxRate {
+  id            String    @id @default(cuid())
+  country       String // ISO 3166-1 alpha-2
+  region        String? // state/province code
+  taxType       String // VAT | GST | Sales | Excise | Withholding
+  ratePercent   Float
+  effectiveFrom DateTime  @default(now())
+  effectiveTo   DateTime?
+  notes         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([country, taxType])
+  @@index([effectiveFrom])
+}
+
+// Admin & Security — application users and role grants
+model AppUser {
+  id          String    @id @default(cuid())
+  username    String    @unique
+  email       String?   @unique
+  displayName String?
+  role        String    @default("operator") // operator | manager | admin | superadmin
+  active      Boolean   @default(true)
+  lastLoginAt DateTime?
+  mfaEnabled  Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([role])
+  @@index([active])
+}
+
+// Localisation — registered locales + per-locale toggle state
+model LocaleConfig {
+  id           String   @id @default(cuid())
+  code         String   @unique // e.g. 'en', 'ar', 'zh-CN'
+  name         String
+  direction    String   @default("ltr") // ltr | rtl
+  enabled      Boolean  @default(true)
+  fallback     String? // fallback locale code
+  numberFormat Json? // { decimal, thousand }
+  dateFormat   String?
+  currency     String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([enabled])
+}
+
+// ─── WAVE 3 · Completing the 11 incomplete modules (Session 39) ─────────────
+
+// #1 Financial Accounting — chart of accounts hierarchy + posting periods
+model ChartAccount {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  name        String
+  accountType String // Asset | Liability | Equity | Revenue | Expense
+  parentCode  String?
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([accountType])
+  @@index([parentCode])
+}
+
+model PostingPeriod {
+  id        String    @id @default(cuid())
+  code      String    @unique // 2026-05, 2026-Q2
+  startDate DateTime
+  endDate   DateTime
+  status    String    @default("Open") // Open | Closed | Adjusting
+  closedBy  String?
+  closedAt  DateTime?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@index([status])
+}
+
+// #4 AP — Goods Receipt for 3-way match
+model GoodsReceipt {
+  id              String   @id @default(cuid())
+  receiptNo       String   @unique
+  purchaseOrderId String
+  receivedDate    DateTime @default(now())
+  receivedBy      String?
+  qtyReceived     Int      @default(0)
+  notes           String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([purchaseOrderId])
+}
+
+// #8 CRM — Deal pipeline stages
+model Deal {
+  id            String    @id @default(cuid())
+  name          String
+  customerId    String?
+  ownerId       String?
+  stage         String    @default("Prospecting") // Prospecting|Qualified|Proposal|Negotiation|Closed Won|Closed Lost
+  value         Float     @default(0)
+  currency      String    @default("USD")
+  probability   Int       @default(20)
+  expectedClose DateTime?
+  source        String?
+  notes         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([stage])
+  @@index([ownerId])
+}
+
+// #13 Procurement — RFQ workflow
+model RFQ {
+  id          String        @id @default(cuid())
+  rfqNo       String        @unique
+  title       String
+  description String?
+  category    String?
+  dueDate     DateTime?
+  status      String        @default("Draft") // Draft|Open|Closed|Awarded|Cancelled
+  awardedTo   String?
+  awardedAt   DateTime?
+  createdBy   String?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  responses   RFQResponse[]
+
+  @@index([status])
+}
+
+model RFQResponse {
+  id           String   @id @default(cuid())
+  rfqId        String
+  vendorId     String
+  vendorName   String?
+  amount       Float    @default(0)
+  currency     String   @default("USD")
+  leadTimeDays Int?
+  notes        String?
+  status       String   @default("Submitted") // Submitted|Shortlisted|Awarded|Rejected
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  rfq          RFQ      @relation(fields: [rfqId], references: [id], onDelete: Cascade)
+
+  @@index([rfqId])
+  @@index([status])
+}
+
+// #14 Vendor scoring
+model VendorScorecard {
+  id             String   @id @default(cuid())
+  vendorId       String
+  vendorName     String?
+  period         String // e.g. 2026-Q2
+  onTimePercent  Float    @default(0)
+  qualityScore   Float    @default(0) // 0-100
+  priceScore     Float    @default(0) // 0-100
+  responseScore  Float    @default(0) // 0-100
+  overallScore   Float    @default(0)
+  recommendation String   @default("Maintain") // Promote|Maintain|Warn|Drop
+  notes          String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@unique([vendorId, period])
+  @@index([overallScore])
+}
+
+// #22 Inventory — cycle count
+model CycleCount {
+  id          String   @id @default(cuid())
+  sku         String
+  warehouseId String?
+  systemQty   Int      @default(0)
+  countedQty  Int      @default(0)
+  variance    Int      @default(0)
+  countedBy   String?
+  countedAt   DateTime @default(now())
+  status      String   @default("Pending") // Pending|Confirmed|Adjusted
+  notes       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([sku])
+  @@index([status])
+}
+
+// #26 Shipping & Freight
+model Shipment {
+  id             String          @id @default(cuid())
+  trackingNo     String          @unique
+  origin         String
+  destination    String
+  carrier        String?
+  service        String? // air|sea|road|rail
+  weightKg       Float           @default(0)
+  status         String          @default("Booked") // Booked|InTransit|Delivered|Exception
+  bookedAt       DateTime        @default(now())
+  estimatedEta   DateTime?
+  actualDelivery DateTime?
+  orderId        String?
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  events         TrackingEvent[]
+
+  @@index([status])
+}
+
+model TrackingEvent {
+  id          String   @id @default(cuid())
+  shipmentId  String
+  location    String
+  status      String
+  eventTime   DateTime @default(now())
+  description String?
+  createdAt   DateTime @default(now())
+  shipment    Shipment @relation(fields: [shipmentId], references: [id], onDelete: Cascade)
+
+  @@index([shipmentId])
+  @@index([eventTime])
+}
+
+// #27 Trade & Customs — HS codes + duty lookup
+model HSCode {
+  id          String   @id @default(cuid())
+  code        String   @unique // e.g. 0901.21
+  description String
+  category    String? // food|electronics|textile|...
+  dutyPercent Float    @default(0)
+  notes       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([category])
+}
+
+// #29 HR — leave + attendance
+model LeaveRequest {
+  id         String    @id @default(cuid())
+  employeeId String
+  leaveType  String // Annual|Sick|Unpaid|Maternity|Paternity|Bereavement
+  startDate  DateTime
+  endDate    DateTime
+  days       Int
+  reason     String?
+  status     String    @default("Pending") // Pending|Approved|Rejected|Cancelled
+  approvedBy String?
+  approvedAt DateTime?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  @@index([employeeId])
+  @@index([status])
+}
+
+model Attendance {
+  id          String    @id @default(cuid())
+  employeeId  String
+  date        DateTime
+  clockIn     DateTime?
+  clockOut    DateTime?
+  hoursWorked Float     @default(0)
+  status      String    @default("Present") // Present|Absent|Late|Half-Day|WFH
+  notes       String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([employeeId, date])
+  @@index([date])
+}
+
+// ─── WAVE 4 · Bucket A completions (Session 39) ─────────────────────────────
+
+// #2 Controlling — cost centers + allocations
+model CostCenter {
+  id        String   @id @default(cuid())
+  code      String   @unique
+  name      String
+  manager   String?
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model CostAllocation {
+  id           String   @id @default(cuid())
+  period       String // 2026-05
+  fromAccount  String // GL code
+  toCostCenter String // CostCenter.code
+  amount       Float    @default(0)
+  currency     String   @default("USD")
+  basis        String? // headcount|sqft|revenue|manual
+  notes        String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([period])
+  @@index([toCostCenter])
+}
+
+// #7 Financial Planning — budget vs actual
+model BudgetLine {
+  id         String   @id @default(cuid())
+  period     String // 2026-05
+  account    String // GL code
+  costCenter String?
+  budgeted   Float    @default(0)
+  scenario   String   @default("Base") // Base|Upside|Downside
+  notes      String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([period, account, costCenter, scenario])
+  @@index([period])
+}
+
+// #10 Sales & Distribution — channels + delivery slots
+model SalesChannel {
+  id           String   @id @default(cuid())
+  code         String   @unique
+  name         String
+  type         String // direct|distributor|online|retail|wholesale
+  priority     Int      @default(50) // for routing ties
+  active       Boolean  @default(true)
+  leadTimeDays Int      @default(1)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model DeliverySlot {
+  id           String   @id @default(cuid())
+  orderId      String?
+  channelCode  String
+  scheduledFor DateTime
+  windowStart  String? // "09:00"
+  windowEnd    String? // "12:00"
+  status       String   @default("Scheduled") // Scheduled|InTransit|Delivered|Failed
+  driver       String?
+  vehicle      String?
+  notes        String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([scheduledFor])
+  @@index([status])
+}
+
+// #19 Bill of Materials — standalone multi-level BOM (separate from WO-attached BOMItem)
+model BillOfMaterial {
+  id          String         @id @default(cuid())
+  productSku  String         @unique
+  productName String
+  version     String         @default("v1")
+  uom         String         @default("EA")
+  active      Boolean        @default(true)
+  notes       String?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  components  BOMComponent[]
+}
+
+model BOMComponent {
+  id            String         @id @default(cuid())
+  bomId         String
+  componentSku  String
+  componentName String?
+  qtyPer        Float // qty of component per 1 unit of parent
+  uom           String         @default("EA")
+  scrapPercent  Float          @default(0)
+  unitCost      Float          @default(0)
+  bom           BillOfMaterial @relation(fields: [bomId], references: [id], onDelete: Cascade)
+
+  @@index([bomId])
+  @@index([componentSku])
+}
+
+// #21 Recipe Management — for food/beverage scaling
+model Recipe {
+  id          String             @id @default(cuid())
+  code        String             @unique
+  name        String
+  category    String? // beverage|food|sauce|...
+  baseYield   Float              @default(1) // produces this many baseUom
+  baseUom     String             @default("L")
+  notes       String?
+  active      Boolean            @default(true)
+  createdAt   DateTime           @default(now())
+  updatedAt   DateTime           @updatedAt
+  ingredients RecipeIngredient[]
+}
+
+model RecipeIngredient {
+  id         String  @id @default(cuid())
+  recipeId   String
+  ingredient String
+  qty        Float
+  uom        String  @default("kg")
+  unitCost   Float   @default(0)
+  notes      String?
+  recipe     Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+
+  @@index([recipeId])
+}
+
+// #23 Warehouse Management — warehouses + bins + putaway moves
+model Warehouse {
+  id        String   @id @default(cuid())
+  code      String   @unique
+  name      String
+  location  String?
+  type      String   @default("DC") // DC|Store|Cold|Bonded
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  bins      Bin[]
+}
+
+model Bin {
+  id          String    @id @default(cuid())
+  warehouseId String
+  code        String // unique within warehouse
+  aisle       String?
+  rack        String?
+  level       String?
+  zone        String? // pick|reserve|bulk|cold
+  capacityUom String    @default("EA")
+  capacity    Float     @default(0)
+  occupied    Float     @default(0)
+  active      Boolean   @default(true)
+  warehouse   Warehouse @relation(fields: [warehouseId], references: [id], onDelete: Cascade)
+
+  @@unique([warehouseId, code])
+  @@index([zone])
+}
+
+model PutawayMove {
+  id        String   @id @default(cuid())
+  sku       String
+  qty       Float
+  fromBinId String?
+  toBinId   String
+  strategy  String? // FIFO|LIFO|nearest-pick|zone-match
+  movedBy   String?
+  movedAt   DateTime @default(now())
+  notes     String?
+  createdAt DateTime @default(now())
+
+  @@index([sku])
+  @@index([movedAt])
+}
+
+// #24 Demand Planning — historical periods + forecasts
+model DemandHistory {
+  id        String   @id @default(cuid())
+  sku       String
+  period    String // 2026-05
+  units     Float    @default(0)
+  revenue   Float    @default(0)
+  createdAt DateTime @default(now())
+
+  @@unique([sku, period])
+  @@index([period])
+}
+
+model DemandForecast {
+  id            String   @id @default(cuid())
+  sku           String
+  period        String // future 2026-06
+  forecastUnits Float    @default(0)
+  method        String   @default("moving_avg") // moving_avg|exp_smooth|seasonal|manual
+  confidence    Float    @default(0) // 0-1
+  seasonality   Float    @default(1) // multiplier vs base
+  notes         String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@unique([sku, period, method])
+  @@index([period])
+}
+
+// #25 Fleet Management — vehicles + trips with route-opt scoring
+model FleetVehicle {
+  id         String   @id @default(cuid())
+  plate      String   @unique
+  type       String // van|truck|car|reefer
+  capacityKg Float    @default(0)
+  homeDepot  String?
+  driver     String?
+  status     String   @default("Available") // Available|InRoute|Maintenance|OffDuty
+  odometerKm Float    @default(0)
+  fuelType   String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model FleetTrip {
+  id          String    @id @default(cuid())
+  vehicleId   String
+  driver      String?
+  startedAt   DateTime?
+  completedAt DateTime?
+  stops       Json // [{seq, address, lat, lng, eta, status}]
+  distanceKm  Float     @default(0)
+  optimizedKm Float     @default(0)
+  savingsKm   Float     @default(0)
+  status      String    @default("Planned") // Planned|Active|Completed|Cancelled
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([vehicleId])
+  @@index([status])
+}

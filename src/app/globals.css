@@ -1,3 +1,4 @@
+@import '../styles/harvics-tokens.css';
 @import '../styles/premium-animations.css';
 
 @tailwind base;
@@ -260,6 +261,169 @@ select:focus-visible {
 html, body {
   background: #ffffff !important;
   background-color: #ffffff !important;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* ==========================================================================
+   UNIVERSAL ARCHITECTURAL STABILIZER (SAFE FOR CRM, PORTALS, & ALL SUB-PAGES)
+   This normalizes layout structures across all 160+ routes instantly.
+   ========================================================================== */
+
+/* 1. UNIVERSAL ALIGNMENT LAYER (Applies to ALL Pages and ALL Sub-Pages)
+   This clips layout overflows and locks the screen width. It does NOT force
+   a background color, so your light CRM and dark landing pages stay exactly as designed. */
+html,
+body,
+main,
+#__next,
+[data-reactroot] {
+  width: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* 2. EDGE-BLEED PROTECTION SYSTEM
+   Forces layout rows to calculate spatial widths accurately without breaking boundaries. */
+section,
+header,
+.container {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* 3. MASTER FOOTER PROTECTION LAYER (Applies Universally Across ALL Routes)
+   This directly targets your footer component. It forces a solid, opaque background
+   so the layout engine never goes transparent, fixing the bleed bug permanently. */
+footer {
+  background-color: #F5F0E8 !important; /* Locks premium Alabaster Cream on the footer */
+  width: 100% !important;
+  max-width: 100% !important;
+  position: relative !important;
+  z-index: 50 !important; /* Ensures it stays on top of the layout stack */
+}
+
+/* 4. HIGH-PERFORMANCE CINEMATIC ENGINE
+   Applies an elite, smooth animation easing function to all interactive states site-wide. */
+*, *::before, *::after {
+  box-sizing: inherit;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Keep smooth scrolling + body stacking context */
+body {
+  position: relative !important;
+  scroll-behavior: smooth;
+}
+
+/* ==========================================================================
+   HARVICS MANAGEMENT ECOSYSTEM BLUEPRINT
+   ========================================================================== */
+
+.universal-layout-frame {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.universal-vertical-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ==========================================================================
+   PREMIUM GLOBAL NAVBAR ENGINE
+   ========================================================================== */
+
+/* 1. Global Navbar Pinning Layer — transparent so each row carries its own bg */
+.universal-header-sticky {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100 !important;
+  backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid rgba(26, 5, 5, 0.06) !important;
+}
+
+/* Engraved Horology Asset Container (analog clock bezel) */
+.engraved-clock-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #F5F0E8 0%, #E6DCC8 100%);
+  box-shadow:
+    inset 0 2px 4px rgba(26, 5, 5, 0.15),
+    inset 0 -1px 2px rgba(255, 255, 255, 0.8),
+    0 1px 2px rgba(26, 5, 5, 0.05);
+  border: 1px solid rgba(201, 168, 76, 0.3);
+}
+
+/* 2. Premium Sector Link Layout */
+.sector-navigation-bar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 6px !important;
+  overflow-x: auto !important; /* Gracefully allows scrolling on smaller desktop screens */
+  white-space: nowrap !important;
+}
+.sector-navigation-bar::-webkit-scrollbar { display: none; }
+.sector-navigation-bar { scrollbar-width: none; }
+
+.sector-nav-link {
+  font-size: 0.75rem !important; /* 12px for maximum editorial density */
+  font-weight: 600 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  color: #1A0505 !important;
+  padding: 8px 12px !important;
+  border-radius: 4px !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Luxury minimal hover highlight style */
+.sector-nav-link:hover {
+  background-color: rgba(201, 168, 76, 0.1) !important; /* Soft gold tint fill */
+  color: #C9A84C !important; /* Direct brand gold shift */
+}
+
+.sector-nav-link.active-sector {
+  background-color: #1A0505 !important; /* Inverted corporate fill */
+  color: #F5F0E8 !important;
+}
+
+/* Ensure SVGs inside navigation actions stay vertically aligned with labels */
+.nav-action-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  color: #1A0505 !important;
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+  transition: color 0.2s ease !important;
+}
+
+.nav-action-btn:hover {
+  color: #C9A84C !important;
+}
+
+.nav-action-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
 }
 
 /* RTL (Right-to-Left) Support */

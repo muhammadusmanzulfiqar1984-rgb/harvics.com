@@ -95,15 +95,14 @@ const SupremeNavBar: React.FC = () => {
     <>
       <nav
         ref={navRef}
-        className="relative"
-        style={{ background: '#6B1F2B' }}
+        className="relative bg-white"
         onMouseLeave={closeDropdown}
         role="navigation"
         aria-label="Main navigation"
       >
         {/* Nav Links */}
-        <div className="max-w-[1400px] mx-auto px-4">
-          <ul className="flex items-center justify-center flex-nowrap gap-[3px] lg:gap-1 list-none m-0 p-0 h-[48px] overflow-hidden" role="menubar" aria-label="Main navigation">
+        <div className="universal-layout-frame">
+          <ul className="flex items-center justify-between gap-2 overflow-x-auto whitespace-nowrap list-none m-0 p-0 h-[48px]" role="menubar" aria-label="Main navigation">
             {/* About — first tab */}
             <li
               className="relative flex items-center"
@@ -115,14 +114,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/about`}
-                className="relative flex items-center px-1.5 lg:px-2 py-1.5 text-[10px] lg:text-[10.5px] tracking-[0.04em] whitespace-nowrap font-bold"
-                style={{
-                  color: '#6B1F2B',
-                  textDecoration: 'none',
-                  textTransform: 'uppercase' as const,
-                  background: isActive(`/${locale}/about`) ? '#C3A35E' : 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)',
-                  border: '1px solid #C3A35E',
-                }}
+                className={`text-[12px] font-semibold tracking-wider uppercase px-3 py-2 rounded transition-all duration-200 ${isActive(`/${locale}/about`) ? 'bg-[#1A0505] text-[#F5F0E8]' : 'text-[#1A0505] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
                 onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
               >
                 About
@@ -143,18 +135,10 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${vertical.href}`}
-                  className="relative flex items-center px-1.5 lg:px-2 py-1.5 text-[10px] lg:text-[10.5px] tracking-[0.04em] whitespace-nowrap font-bold"
+                  className={`text-[12px] font-semibold tracking-wider uppercase px-3 py-2 rounded transition-all duration-200 ${activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? 'bg-[#1A0505] text-[#F5F0E8]' : 'text-[#1A0505] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
                   role="menuitem"
                   aria-haspopup="true"
                   aria-expanded={activeDropdown === vertical.key}
-                  style={{
-                    color: '#6B1F2B',
-                    textDecoration: 'none',
-                    textTransform: 'uppercase' as const,
-                    background: activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? '#C3A35E' : 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)',
-                    border: '1px solid #C3A35E',
-                    opacity: activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? 1 : 0.85,
-                  }}
                 >
                   {navLabels[vertical.key] || vertical.label}
                 </Link>
@@ -173,14 +157,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/apps`}
-                className="relative flex items-center px-2 lg:px-2.5 py-1.5 text-[10px] lg:text-[10.5px] tracking-[0.04em] whitespace-nowrap font-bold"
-                style={{
-                  color: '#6B1F2B',
-                  textDecoration: 'none',
-                  textTransform: 'uppercase' as const,
-                  background: isActive(`/${locale}/apps`) ? '#C3A35E' : 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)',
-                  border: '1px solid #C3A35E',
-                }}
+                className={`text-[12px] font-semibold tracking-wider uppercase px-3 py-2 rounded transition-all duration-200 ${isActive(`/${locale}/apps`) ? 'bg-[#1A0505] text-[#F5F0E8]' : 'text-[#1A0505] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
               >
                 ⬡ Apps
               </Link>
@@ -198,16 +175,9 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/harvictrade`}
-                className="relative flex items-center px-2 lg:px-2.5 py-1.5 text-[10px] lg:text-[10.5px] tracking-[0.04em] whitespace-nowrap font-bold"
-                style={{
-                  color: isActive(`/${locale}/harvictrade`) ? '#6B1F2B' : '#6B1F2B',
-                  textDecoration: 'none',
-                  textTransform: 'uppercase' as const,
-                  background: isActive(`/${locale}/harvictrade`) ? '#C3A35E' : 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)',
-                  border: '1px solid #C3A35E',
-                }}
+                className="text-[12px] font-bold text-[#1A0505] border-l border-gray-200 pl-3 tracking-wider hover:text-[#C9A84C] transition-colors duration-200"
               >
-                ◆ HarvicTrade
+                ♦ HARVICTRADE
               </Link>
             </li>
 
@@ -224,14 +194,7 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${link.href}`}
-                  className="relative flex items-center px-1.5 lg:px-2 py-1.5 text-[10px] lg:text-[10.5px] tracking-[0.04em] whitespace-nowrap font-bold"
-                  style={{
-                    color: '#6B1F2B',
-                    textDecoration: 'none',
-                    textTransform: 'uppercase' as const,
-                    background: isActive(`/${locale}${link.href}`) ? '#C3A35E' : 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)',
-                    border: '1px solid #C3A35E',
-                  }}
+                  className={`text-[12px] font-semibold tracking-wider uppercase px-3 py-2 rounded transition-all duration-200 ${isActive(`/${locale}${link.href}`) ? 'bg-[#1A0505] text-[#F5F0E8]' : 'text-[#1A0505] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
                   onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
                 >
                   {link.label}

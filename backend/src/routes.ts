@@ -420,6 +420,10 @@ import hrCrudRouter from './modules/hr/hr.crud.controller';
 import logisticsCrudRouter from './modules/logistics/logistics.crud.controller';
 import procurementCrudRouter from './modules/procurement/procurement.crud.controller';
 import { t14 } from './modules/t14/t14.store';
+import { t14Router } from './modules/t14/t14.controller';
+import { platformRouter } from './modules/platform/platform.controller';
+import { wave3Router } from './modules/wave3/wave3.controller';
+import { wave4Router } from './modules/wave4/wave4.controller';
 import { stubCatalogRouter } from './modules/stub-catalog/stub.catalog';
 import { buildGenericRouter, seedAllModules } from './modules/generic/mount';
 import {
@@ -1663,6 +1667,22 @@ router.post('/modules/probe', (req: Request, res: Response) => {
 // 71-module explorer can render a coherent preview for every module.
 // Public (no auth) to match the rest of /modules/* probe endpoints.
 router.use('/modules', stubCatalogRouter);
+
+// T14 modules (DealDesk, Commission, SalesForecast, Incident, OKR) — full
+// CRUD + workflows + validation + audit. Public for now (matches /modules/*).
+router.use('/t14', t14Router);
+
+// Platform modules (Governance, Tax, Audit search, Admin users, Locales).
+router.use('/platform', platformRouter);
+
+// Wave 3 — completes 11 incomplete modules (GL hierarchy, AR aging,
+// AP 3-way match, CRM pipeline, RFQ, vendor scoring, cycle count, ABC,
+// fleet alerts, shipments, HS codes, leave, attendance).
+router.use('/wave3', wave3Router);
+
+// Wave 4 — Bucket A completions (Controlling, FP&A, S&D routing,
+// BOM explode, Recipe scaling, Warehouse bins+putaway, Demand forecast, Fleet trips).
+router.use('/wave4', wave4Router);
 
 router.get('/modules/contracts', (_req: Request, res: Response) => {
   const generated = Array.from(CONTRACT_READY_SEGMENTS)

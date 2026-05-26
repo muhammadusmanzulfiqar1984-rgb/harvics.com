@@ -73,11 +73,7 @@ const markets = [
 const TrustSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState(false)
-  const [hoveredBackdrop, setHoveredBackdrop] = useState<string | null>(null)
-  const [hoveredLabel, setHoveredLabel] = useState<string | null>(null)
-  const [hoveredIcon, setHoveredIcon] = useState<string | null>(null)
-
-  const [hoveredIdx, setHoveredIdx] = useState<number>(0)
+  const [visibleCards, setVisibleCards] = useState<number>(0)
 
   useEffect(() => {
     const obs = new IntersectionObserver(
@@ -88,173 +84,149 @@ const TrustSection: React.FC = () => {
     return () => obs.disconnect()
   }, [])
 
+  // Staggered entrance once the section is visible
+  useEffect(() => {
+    if (!visible) return
+    let i = 0
+    const total = certifications.length
+    const tick = () => {
+      i += 1
+      setVisibleCards(i)
+      if (i < total) setTimeout(tick, 100)
+    }
+    setTimeout(tick, 100)
+  }, [visible])
+
+  // Per-card 3D magnetic tilt + mouse-tracked laser radial gradient
+  const handleCardMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const card = e.currentTarget
+    const rect = card.getBoundingClientRect()
+    const x = e.clientX - rect.left
+    const y = e.clientY - rect.top
+    card.style.setProperty('--mouse-x', `${x}px`)
+    card.style.setProperty('--mouse-y', `${y}px`)
+    const centerX = x - rect.width / 2
+    const centerY = y - rect.height / 2
+    const rotateX = -(centerY / rect.height) * 6
+    const rotateY = (centerX / rect.width) * 6
+    card.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`
+  }
+  const handleCardEnter = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.currentTarget.style.transition = 'background 300ms ease, border-color 300ms ease'
+  }
+  const handleCardLeave = (e: React.MouseEvent<HTMLDivElement>) => {
+    const card = e.currentTarget
+    card.style.transition = 'transform 600ms cubic-bezier(0.16, 1, 0.3, 1), background 300ms ease, border-color 300ms ease'
+    card.style.transform = 'perspective(1200px) rotateX(0deg) rotateY(0deg) translateY(0px)'
+  }
+
   return (
-    <section ref={sectionRef} className="relative h-full flex flex-col justify-center overflow-hidden"
-      style={{ background: '#faf9f7' }}>
-
-      {/* Cross-fading background photo — same style as industries */}
-      {certifications.map((cert, idx) => (
-        <div
-          key={cert.code}
-          aria-hidden="true"
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            backgroundImage: `url(${cert.bgPhoto})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'blur(38px) saturate(1.05)',
-            transform: 'scale(1.12)',
-            opacity: idx === hoveredIdx ? 0.32 : 0,
-            transition: 'opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1)',
-            zIndex: 0,
-          }}
-        />
-      ))}
-      {/* Lighter wash so the backdrop photo + label + icon stay visible */}
-      <div className="absolute inset-0 pointer-events-none" style={{ background: 'rgba(255,255,255,0.40)', zIndex: 1 }} />
-
-      {/* Ambient glow orbs — slow-moving behind content */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 1 }}>
-        <div style={{
-          position: 'absolute', width: '500px', height: '500px', borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(195,163,94,0.12) 0%, rgba(195,163,94,0.04) 40%, transparent 70%)',
-          top: '5%', left: '10%',
-          animation: 'certGlow1 16s ease-in-out infinite',
-          filter: 'blur(40px)',
-        }} />
-        <div style={{
-          position: 'absolute', width: '450px', height: '450px', borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(107,31,43,0.10) 0%, rgba(107,31,43,0.03) 40%, transparent 70%)',
-          bottom: '0%', right: '5%',
-          animation: 'certGlow2 20s ease-in-out infinite',
-          filter: 'blur(50px)',
-        }} />
-        <div style={{
-          position: 'absolute', width: '300px', height: '300px', borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(195,163,94,0.08) 0%, transparent 60%)',
-          top: '40%', right: '30%',
-          animation: 'certGlow3 14s ease-in-out infinite',
-          filter: 'blur(35px)',
-        }} />
-      </div>
-
-      {/* Dynamic backdrop that changes on hover */}
+    <section
+      ref={sectionRef}
+      className="relative h-full flex flex-col justify-center overflow-hidden"
+      style={{ background: '#0D0D0D', padding: '96px 0', color: '#F5F0E8' }}
+    >
+      {/* Vault glow — soft gold radial bloom anchored at center */}
       <div
+        aria-hidden="true"
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: hoveredBackdrop || 'radial-gradient(ellipse at 40% 40%, rgba(195,163,94,0.12) 0%, transparent 55%), radial-gradient(ellipse at 65% 55%, rgba(107,31,43,0.10) 0%, transparent 50%)',
-          transition: 'background 0.6s ease',
+          background: 'radial-gradient(circle at 50% 50%, rgba(201, 168, 76, 0.04) 0%, transparent 70%)',
+          zIndex: 0,
+        }}
+      />
+      {/* Subtle grain overlay — vault/paper texture feel */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          opacity: 0.03,
+          mixBlendMode: 'overlay',
+          backgroundImage:
+            "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")",
           zIndex: 0,
         }}
       />
 
-      {/* Hovered item label — large faded text in background */}
-      <div
-        className="absolute inset-0 flex items-center justify-center pointer-events-none"
-        style={{ zIndex: 0 }}
-      >
-        {hoveredLabel && (
-          <div style={{
-            fontSize: 'clamp(80px, 16vw, 220px)',
-            fontWeight: 900,
-            color: 'rgba(107,31,43,0.32)',
-            letterSpacing: '-0.04em',
-            textTransform: 'uppercase',
-            fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
-            whiteSpace: 'nowrap',
-            userSelect: 'none',
-            textShadow: '0 4px 40px rgba(107,31,43,0.18)',
-          }}>
-            {hoveredLabel}
-          </div>
-        )}
-      </div>
+      <div className="relative z-10 max-w-[1200px] mx-auto px-6 w-full">
 
-      {/* Hovered icon — large centered behind content */}
-      {hoveredIcon && (
-        <div
-          className="absolute inset-0 flex items-center justify-center pointer-events-none"
-          style={{ zIndex: 0, fontSize: 'clamp(120px, 22vw, 300px)', opacity: 0.65, filter: 'drop-shadow(0 8px 24px rgba(107,31,43,0.25))' }}
-        >
-          {hoveredIcon}
-        </div>
-      )}
-
-      <div className="relative z-10 max-w-[1100px] mx-auto px-6 w-full">
-
-        {/* ── TOP: CERTIFICATIONS ── */}
+        {/* ── TOP: CERTIFICATIONS — DOCUMENT VAULT ── */}
         <div style={{
-          marginBottom: '16px',
+          marginBottom: '64px',
           opacity: visible ? 1 : 0,
           transform: visible ? 'translateY(0)' : 'translateY(20px)',
           transition: 'opacity 0.6s ease 0.1s, transform 0.6s ease 0.1s',
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '8px' }}>
-            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
-            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>Certifications</span>
-            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
-          </div>
+          {/* Thin gold gradient divider above title */}
+          <div style={{
+            height: '1px',
+            width: '192px',
+            background: 'linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent)',
+            margin: '0 auto 24px',
+          }} />
+          <p style={{
+            textAlign: 'center',
+            color: '#8a7d6b',
+            fontSize: '11px',
+            fontWeight: 500,
+            letterSpacing: '0.3em',
+            textTransform: 'uppercase',
+            marginBottom: '14px',
+            fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+          }}>
+            Global Standards
+          </p>
           <h2 style={{
             textAlign: 'center',
-            fontSize: 'clamp(16px, 2vw, 26px)', fontWeight: 700, letterSpacing: '-0.025em',
-            color: '#1d1d1f', lineHeight: 1.1, marginBottom: '14px',
+            fontSize: 'clamp(22px, 3vw, 36px)',
+            fontWeight: 300,
+            letterSpacing: '0.01em',
+            color: '#F5F0E8',
+            lineHeight: 1.25,
+            marginBottom: '56px',
             fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
           }}>
-            Every product ships with full compliance documentation
+            Every product ships with{' '}
+            <span style={{ fontWeight: 400, color: '#C9A84C' }}>full compliance documentation</span>
           </h2>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '8px' }}>
+          <div className="cert-grid">
             {certifications.map((cert, i) => (
-              <div key={i} className="trust-card cert-shimmer" style={{
-                padding: '12px 8px',
-                background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
-                backgroundSize: '220% 100%',
-                borderRadius: '12px',
-                textAlign: 'center',
-                opacity: visible ? 1 : 0,
-                transform: visible ? 'translateY(0) scale(1)' : 'translateY(16px) scale(0.95)',
-                transition: `opacity 0.5s ease ${0.2 + i * 0.07}s, transform 0.5s ease ${0.2 + i * 0.07}s, box-shadow 0.3s ease`,
-                cursor: 'pointer',
-                position: 'relative',
-                overflow: 'hidden',
-                border: '1px solid rgba(107,31,43,0.25)',
-                boxShadow: '0 4px 14px rgba(107,31,43,0.10), 0 1px 3px rgba(107,31,43,0.08), inset 0 1px 0 rgba(255,255,255,0.45)',
-              }}
-              onMouseEnter={e => {
-                const el = e.currentTarget as HTMLElement
-                el.style.transform = 'translateY(-3px) scale(1.02)'
-                el.style.boxShadow = '0 12px 28px rgba(107,31,43,0.22), 0 4px 10px rgba(195,163,94,0.25), inset 0 1px 0 rgba(255,255,255,0.6)'
-                setHoveredBackdrop(cert.backdrop)
-                setHoveredLabel(cert.code)
-                setHoveredIcon(cert.icon)
-                setHoveredIdx(i)
-              }}
-              onMouseLeave={e => {
-                const el = e.currentTarget as HTMLElement
-                el.style.transform = 'translateY(0) scale(1)'
-                el.style.boxShadow = '0 4px 14px rgba(107,31,43,0.10), 0 1px 3px rgba(107,31,43,0.08), inset 0 1px 0 rgba(255,255,255,0.45)'
-                setHoveredBackdrop(null)
-                setHoveredLabel(null)
-                setHoveredIcon(null)
-              }}
+              <div
+                key={cert.code}
+                className={`cert-card group${i < visibleCards ? ' visible' : ''}`}
+                onMouseMove={handleCardMove}
+                onMouseEnter={handleCardEnter}
+                onMouseLeave={handleCardLeave}
               >
-                {/* Color dot */}
-                <div style={{
-                  width: '8px', height: '8px', borderRadius: '50%',
-                  background: cert.color, margin: '0 auto 8px',
-                  boxShadow: `0 0 6px ${cert.color}80`,
-                  border: '1.5px solid rgba(255,255,255,0.5)',
-                }} />
-                <div style={{
-                  fontSize: '12px', fontWeight: 800, color: '#1a0d00',
-                  letterSpacing: '-0.01em', marginBottom: '3px',
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
-                  textShadow: '0 1px 0 rgba(255,255,255,0.4)',
-                }}>
-                  {cert.code}
+                {/* Laser radial gradient follows the cursor */}
+                <span className="cert-card__laser" aria-hidden="true" />
+
+                {/* Gold accent left border (expands width on hover) */}
+                <span className="cert-card__accent" aria-hidden="true" />
+
+                <div className="cert-card__head">
+                  <div className="cert-card__head-left">
+                    {/* Document/shield icon — turns gold on hover */}
+                    <svg className="cert-card__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                    </svg>
+                    <span className="cert-card__code">{cert.code}</span>
+                  </div>
+                  <span className="cert-card__secured">Secured</span>
                 </div>
-                <div style={{ fontSize: '9px', fontWeight: 700, color: 'rgba(26,13,0,0.78)', lineHeight: 1.3, fontFamily: '-apple-system, sans-serif' }}>
-                  {cert.name}
+
+                <div className="cert-card__body-wrap">
+                  <div className="cert-card__content">
+                    <h3 className="cert-card__name">{cert.name}</h3>
+                    <p className="cert-card__desc">{cert.body}</p>
+                  </div>
+                  <div className="cert-card__cta">
+                    <span>View Certificate</span>
+                    <svg className="cert-card__cta-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             ))}
@@ -264,8 +236,8 @@ const TrustSection: React.FC = () => {
         {/* Divider */}
         <div style={{
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, rgba(195,163,94,0.25), transparent)',
-          margin: '18px 0',
+          background: 'linear-gradient(90deg, transparent, rgba(201,168,76,0.30), transparent)',
+          margin: '8px 0 48px',
           opacity: visible ? 1 : 0,
           transition: 'opacity 0.6s ease 0.6s',
         }} />
@@ -277,46 +249,24 @@ const TrustSection: React.FC = () => {
           transition: 'opacity 0.6s ease 0.5s, transform 0.6s ease 0.5s',
         }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '8px' }}>
-            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
-            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>Key Markets</span>
-            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
+            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, transparent, #C9A84C)' }} />
+            <span style={{ color: '#C9A84C', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>Key Markets</span>
+            <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, #C9A84C, transparent)' }} />
           </div>
-          <p style={{ textAlign: 'center', fontSize: '12px', color: 'rgba(107,31,43,0.38)', marginBottom: '12px', fontFamily: '-apple-system, sans-serif', letterSpacing: '-0.005em' }}>
+          <p style={{ textAlign: 'center', fontSize: '12px', color: '#8a7d6b', marginBottom: '20px', fontFamily: '-apple-system, sans-serif', letterSpacing: '-0.005em' }}>
             42 active markets &nbsp;·&nbsp; 6 continents &nbsp;·&nbsp; offices in 5 cities
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '6px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '8px' }}>
             {markets.map((market, i) => (
-              <div key={i} className="trust-card market-shimmer" style={{
-                padding: '10px 6px',
-                background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
-                backgroundSize: '220% 100%',
-                borderRadius: '10px',
-                textAlign: 'center',
-                opacity: visible ? 1 : 0,
-                transform: visible ? 'translateY(0)' : 'translateY(12px)',
-                transition: `opacity 0.4s ease ${0.6 + i * 0.06}s, transform 0.4s ease ${0.6 + i * 0.06}s, box-shadow 0.3s ease`,
-                cursor: 'pointer',
-                position: 'relative',
-                overflow: 'hidden',
-                border: '1px solid rgba(107,31,43,0.22)',
-                boxShadow: '0 3px 10px rgba(107,31,43,0.08), 0 1px 2px rgba(107,31,43,0.06), inset 0 1px 0 rgba(255,255,255,0.4)',
-              }}
-              onMouseEnter={e => {
-                const el = e.currentTarget as HTMLElement
-                el.style.transform = 'translateY(-3px) scale(1.03)'
-                el.style.boxShadow = '0 10px 22px rgba(107,31,43,0.20), 0 4px 8px rgba(195,163,94,0.20), inset 0 1px 0 rgba(255,255,255,0.55)'
-                setHoveredBackdrop(market.backdrop)
-                setHoveredLabel(market.city)
-                setHoveredIcon(null)
-              }}
-              onMouseLeave={e => {
-                const el = e.currentTarget as HTMLElement
-                el.style.transform = 'translateY(0) scale(1)'
-                el.style.boxShadow = '0 3px 10px rgba(107,31,43,0.08), 0 1px 2px rgba(107,31,43,0.06), inset 0 1px 0 rgba(255,255,255,0.4)'
-                setHoveredBackdrop(market.backdrop)
-                setHoveredLabel(null)
-              }}
+              <div
+                key={i}
+                className="market-card"
+                style={{
+                  opacity: visible ? 1 : 0,
+                  transform: visible ? 'translateY(0)' : 'translateY(12px)',
+                  transition: `opacity 0.4s ease ${0.6 + i * 0.05}s, transform 0.4s ease ${0.6 + i * 0.05}s, border-color 0.3s ease, transform 0.3s ease`,
+                }}
               >
                 <img
                   src={market.flag}
@@ -325,10 +275,10 @@ const TrustSection: React.FC = () => {
                   style={{ width: '28px', height: '20px', objectFit: 'cover', margin: '0 auto 6px', borderRadius: '2px', display: 'block' }}
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
                 />
-                <div style={{ fontSize: '10px', fontWeight: 700, color: '#1a0d00', fontFamily: '-apple-system, sans-serif', marginBottom: '2px', lineHeight: 1.2 }}>
+                <div style={{ fontSize: '10px', fontWeight: 600, color: '#F5F0E8', fontFamily: '-apple-system, sans-serif', marginBottom: '2px', lineHeight: 1.2 }}>
                   {market.city}
                 </div>
-                <div style={{ fontSize: '8px', fontWeight: 700, color: 'rgba(26,13,0,0.5)', textTransform: 'uppercase', letterSpacing: '0.1em', fontFamily: '-apple-system, sans-serif' }}>
+                <div style={{ fontSize: '8px', fontWeight: 700, color: '#8a7d6b', textTransform: 'uppercase', letterSpacing: '0.1em', fontFamily: '-apple-system, sans-serif' }}>
                   {market.role}
                 </div>
               </div>
@@ -338,65 +288,194 @@ const TrustSection: React.FC = () => {
       </div>
 
       <style jsx>{`
-        .trust-card {
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .cert-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 20px;
         }
-        .cert-shimmer {
-          border: none;
-          animation: goldBgShimmer 2.8s linear infinite;
+        @media (max-width: 900px) {
+          .cert-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
         }
-        .cert-shimmer::after {
-          content: '';
+        @media (max-width: 600px) {
+          .cert-grid { grid-template-columns: 1fr; }
+        }
+
+        .cert-card {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          overflow: hidden;
+          background: #141414;
+          border: 1px solid rgba(255, 255, 255, 0.04);
+          border-radius: 8px;
+          padding: 32px;
+          height: 288px;
+          cursor: pointer;
+          opacity: 0;
+          transform: translateY(30px);
+          transform-style: preserve-3d;
+          will-change: transform;
+          transition: opacity 800ms cubic-bezier(0.16, 1, 0.3, 1),
+                      transform 800ms cubic-bezier(0.16, 1, 0.3, 1),
+                      background 300ms ease,
+                      border-color 300ms ease;
+        }
+        .cert-card.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .cert-card:hover {
+          background: #181818;
+          border-color: rgba(255, 255, 255, 0.08);
+        }
+        .cert-card__laser {
           position: absolute;
-          top: 0; left: -100%;
-          width: 60%;
-          height: 100%;
-          background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,0.35) 50%, transparent 80%);
-          animation: goldSweep 2.8s ease-in-out infinite;
+          inset: -1px;
+          background: radial-gradient(300px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(201, 168, 76, 0.15), transparent 40%);
+          border-radius: 8px;
+          z-index: 0;
+          pointer-events: none;
+          opacity: 0;
+          transition: opacity 300ms ease;
+        }
+        .cert-card:hover .cert-card__laser {
+          opacity: 1;
+        }
+        .cert-card__accent {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 0;
+          background: #C9A84C;
+          z-index: 10;
+          transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .cert-card:hover .cert-card__accent {
+          width: 3px;
+        }
+        .cert-card__head {
+          position: relative;
+          z-index: 1;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
           pointer-events: none;
         }
-        .cert-shimmer:hover {
-          box-shadow: 0 6px 24px rgba(195,163,94,0.4), 0 2px 8px rgba(0,0,0,0.1);
+        .cert-card__head-left {
+          display: flex;
+          align-items: center;
+          gap: 12px;
         }
-        .market-shimmer {
-          border: none;
-          animation: goldBgShimmer 3.5s linear infinite;
+        .cert-card__icon {
+          color: #8a7d6b;
+          transition: color 0.3s ease;
+          flex-shrink: 0;
         }
-        .market-shimmer::after {
-          content: '';
-          position: absolute;
-          top: 0; left: -100%;
-          width: 60%;
-          height: 100%;
-          background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,0.3) 50%, transparent 80%);
-          animation: goldSweep 3.5s ease-in-out infinite;
+        .cert-card:hover .cert-card__icon {
+          color: #C9A84C;
+        }
+        .cert-card__code {
+          font-family: -apple-system, BlinkMacSystemFont, "SF Mono", "JetBrains Mono", monospace;
+          font-size: 11px;
+          font-weight: 600;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: #8a7d6b;
+          transition: color 0.3s ease;
+        }
+        .cert-card:hover .cert-card__code {
+          color: #ffffff;
+        }
+        .cert-card__secured {
+          font-family: -apple-system, BlinkMacSystemFont, "SF Mono", monospace;
+          font-size: 10px;
+          font-weight: 600;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.2);
+          transition: color 0.3s ease;
+        }
+        .cert-card:hover .cert-card__secured {
+          color: rgba(201, 168, 76, 0.4);
+        }
+        .cert-card__body-wrap {
+          position: relative;
+          z-index: 1;
+          min-height: 110px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding-bottom: 4px;
           pointer-events: none;
         }
-        .market-shimmer:hover {
-          box-shadow: 0 4px 18px rgba(195,163,94,0.35), 0 2px 6px rgba(0,0,0,0.08);
+        .cert-card__content {
+          transform: translateY(0);
+          transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        @keyframes goldBgShimmer {
-          0%   { background-position: 100% 0; }
-          100% { background-position: -100% 0; }
+        .cert-card:hover .cert-card__content {
+          transform: translateY(-24px);
         }
-        @keyframes goldSweep {
-          0%   { left: -100%; }
-          50%  { left: 200%; }
-          100% { left: 200%; }
+        .cert-card__name {
+          font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 0.01em;
+          color: #F5F0E8;
+          line-height: 1.3;
+          margin: 0 0 6px;
         }
-        @keyframes certGlow1 {
-          0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.7; }
-          33% { transform: translate(50px, 30px) scale(1.15); opacity: 1; }
-          66% { transform: translate(-30px, -20px) scale(0.9); opacity: 0.8; }
+        .cert-card__desc {
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 1.6;
+          color: #8a7d6b;
+          margin: 0;
         }
-        @keyframes certGlow2 {
-          0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.6; }
-          40% { transform: translate(-40px, -35px) scale(1.2); opacity: 1; }
-          70% { transform: translate(25px, 20px) scale(0.85); opacity: 0.7; }
+        .cert-card__cta {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          align-items: center;
+          color: #C9A84C;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+          font-size: 11px;
+          font-weight: 500;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          opacity: 0;
+          transform: translateY(16px);
+          transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        @keyframes certGlow3 {
-          0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
-          50% { transform: translate(35px, -25px) scale(1.1); opacity: 0.9; }
+        .cert-card:hover .cert-card__cta {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .cert-card__cta-arrow {
+          margin-left: 6px;
+          transition: transform 0.3s ease;
+        }
+        .cert-card:hover .cert-card__cta-arrow {
+          transform: translateX(4px);
+        }
+
+        .market-card {
+          padding: 12px 6px;
+          background: #141414;
+          border: 1px solid rgba(255, 255, 255, 0.04);
+          border-radius: 6px;
+          text-align: center;
+          cursor: default;
+          transition: border-color 0.3s ease, transform 0.3s ease, background 0.3s ease;
+        }
+        .market-card:hover {
+          background: #181818;
+          border-color: rgba(201, 168, 76, 0.35);
+          transform: translateY(-2px);
         }
       `}</style>
     </section>
