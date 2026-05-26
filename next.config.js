@@ -170,7 +170,7 @@ const nextConfig = {
               "img-src 'self' data: blob: https: https://maps.gstatic.com https://maps.googleapis.com https://openweathermap.org https://unpkg.com",
               "media-src 'self' blob: https: data:",
               `connect-src ${connectSrc}`,
-              "frame-src 'self' https://www.youtube.com https://youtube.com https://www.google.com https://maps.google.com",
+              "frame-src 'self' https://www.youtube.com https://youtube.com https://www.google.com https://maps.google.com https://*.daily.co https://*.vapi.ai",
               "worker-src blob:",
               "object-src 'none'",
               "base-uri 'self'",
@@ -178,6 +178,13 @@ const nextConfig = {
               "frame-ancestors 'none'",
               ...(isProduction ? ["upgrade-insecure-requests"] : []),
             ].join('; '),
+          },
+          {
+            // Allow microphone (and camera) so Vapi/Daily.co WebRTC iframes can capture audio.
+            // Note: Permissions-Policy origin lists do NOT support wildcards, so we use * (all
+            // origins) here — Vapi/Daily provision call sessions on unpredictable subdomains.
+            key: 'Permissions-Policy',
+            value: 'microphone=*, camera=*, autoplay=(self), display-capture=()',
           },
         ],
       },
