@@ -1,10 +1,53 @@
 # HARVICS OS — MASTER SPECIFICATION
-# Last Updated: May 25, 2026 (Session 37 — T14 schema lock)
+# Last Updated: May 26, 2026 (Session 38 — T14 completion + 38-stub promotion)
 # READ THIS FIRST. EVERY SESSION. NO EXCEPTIONS.
 
 ---
 
-## ✅ LATEST SESSION UPDATE (May 25, 2026 · Session 37 — T14 schema lock)
+## ✅ LATEST SESSION UPDATE (May 26, 2026 · Session 38 — T14 completion + 38-stub promotion)
+
+**TASK COMPLETED:** Finished T14 (migration applied + controllers Prisma-backed) and lifted all 38 remaining `stub` modules to `demo` via a unified stub-catalog endpoint.
+
+### Migration applied
+- `npx prisma migrate dev --name add_t14_dealdesk_commission_forecast_okr_incident` → ran against Postgres `harvicsdb`. 5 new tables created: DealDesk, Commission, SalesForecast, OKR, Incident.
+
+### Controllers swapped (5 endpoints, Prisma-backed)
+- **New:** `backend/src/modules/t14/t14.store.ts` — Prisma accessors + idempotent seed-on-first-import from existing `BATCH_*_SEED` constants. Seed failures are swallowed so they cannot crash the backend.
+- **Modified:** `backend/src/routes.ts` — replaced in-memory reads with prisma-backed `t14.*` for:
+  - `GET /api/modules/demo/batch2/commissions`
+  - `GET /api/modules/demo/batch2/deal-desk`
+  - `POST /api/modules/demo/batch2/deal-desk/:id/approve` (now persists)
+  - `GET /api/modules/demo/batch2/forecasts`
+  - `GET /api/modules/demo/batch5/incidents`
+  - `GET /api/modules/demo/batch6/okr`
+
+### Stub catalog — 38 modules promoted to demo
+- **New:** `backend/src/modules/stub-catalog/stub.catalog.ts` — uniform `{ summary: KPI[], records: any[] }` seed data for all 38 previously-stub modules (Controlling, HPay, Financial Planning, CPQ, Contracts, Sourcing, Shop Floor, BOM, Recipe, WMS, Demand Planning, 3PL, Talent Acquisition, Learning, Performance, Workforce Planning, Plant Maintenance, Facilities, BI, Board Pack, AI Variance, Service Mgmt, PSA, Integration Bus, Harvoice, FunFeed, Mall, Trade Floor, Playroom, Experts, Jobs+Travel, Crypto Lite, Harvicoins, HPay Wallet, Circle Referral, Customer Portal, Vendor Portal, Field Officer Portal).
+- **New routes (unauth, matches `/modules/probe` convention):**
+  - `GET /api/modules/stub` → list of catalogued module ids
+  - `GET /api/modules/stub/:id` → seed for one module
+- **Registry:** `src/lib/modules/registry.ts` — all 38 entries lifted `status: 'stub'` → `status: 'demo'` (plus OKR #43 + GRC Core #37 from earlier in this session).
+
+### Status counts now
+- Total: **71** (live=13, demo=58, stub=0, planned=0). Zero unreachable modules.
+
+### Band count reconciliation
+- Registry has **15 bands** (Portals split from HARVICS Universe). Spec text earlier said "14"; corrected to 15 with the historical note preserved.
+
+### Validation
+- `npx prisma format / validate / generate` → ok (client v6.19.2).
+- `npx tsc --skipLibCheck --noEmit -p backend/tsconfig.json` → EXIT=0.
+- `npx tsc --skipLibCheck --noEmit` (frontend) → EXIT=0.
+- Backend restarted, all 6 new/swapped endpoints curl-verified.
+
+### NOT done (carry-over)
+- v2 auth gap: `/api/v2/*` still mounted **without** `requireAuthScope` (routes.ts:1913). Adding it is risky — existing explorer/CRM hits v2 unauthenticated. Separate session.
+- Prisma 6 → 7 major upgrade.
+- The 38 "stub-catalog" modules now have demo *data* but no real CRUD/business logic. Promoting any from demo→live is a per-module job (separate sessions).
+
+---
+
+## ✅ PRIOR SESSION (May 25, 2026 · Session 37 — T14 schema lock)
 
 **TASK COMPLETED:** Added 5 missing Prisma models so previously demo-only endpoints can graduate to Prisma-backed.
 
@@ -193,7 +236,7 @@
 **TASK COMPLETED:** Canonical Module Registry (single source of truth for 71 modules).
 
 ### Deliverables
-- **New file:** `src/lib/modules/registry.ts` — canonical registry of all 71 modules across 14 architecture bands.
+- **New file:** `src/lib/modules/registry.ts` — canonical registry of all 71 modules across 15 architecture bands.
   - Exports: `MODULE_REGISTRY`, `MODULES_BY_BAND`, `MODULE_BANDS`, `TOTAL_MODULES`, `TOTAL_BANDS`, `countByStatus()`, `getModuleById()`.
   - Types: `ModuleRegistryEntry`, `IntelligenceLevel`, `ReportingType`, `ModuleStatus` (`live` | `demo` | `stub` | `planned`).
   - Each entry carries: `id`, `band`, `name`, `route` (backend), optional `osPath` (frontend), `intelligence`, `reporting`, `status`.
@@ -233,7 +276,7 @@
 - No refactor performed (per workspace rule #2: never refactor without explicit instruction).
 
 ### Module count locked
-- **71 modules** across 14 architecture bands. Confirmed across spec, master plan, archive, and live UI. No 72-module variant exists.
+- **71 modules** across 15 architecture bands (Finance & Controlling, Commercial & Sales, Procurement & Sourcing, Manufacturing, Inventory & Warehouse, Logistics & Trade, Human Capital, Asset & Maintenance, GRC, Analytics & Intelligence, Projects & Services, Platform & Infrastructure, Data & AI, HARVICS Universe, Portals). Earlier docs said "14 bands" — Portals was historically merged into Universe; registry separates them.
 
 ### Validation
 - `diff EnterpriseCRM.tsx EnterpriseCRM.backup.tsx` confirms additive-only changes.

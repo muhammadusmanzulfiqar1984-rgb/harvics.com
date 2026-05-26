@@ -656,3 +656,20 @@ model Incident {
   @@index([status])
   @@index([severity])
 }
+
+// ─── GENERIC MODULE FACTORY (Session 39 · Wave 0) ───────────────────────────
+// Single table that backs CRUD for every "demo" module via a uniform shape.
+// Records are scoped by `moduleId` (1..71 from registry). `data` carries the
+// module-specific payload as JSON so we don't need a Prisma model per module.
+model GenericModuleRecord {
+  id        String   @id @default(cuid())
+  moduleId  Int
+  status    String   @default("Active")
+  data      Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([moduleId])
+  @@index([moduleId, status])
+  @@index([createdAt])
+}

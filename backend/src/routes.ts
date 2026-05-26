@@ -419,6 +419,8 @@ import crmCrudRouter from './modules/crm/crm.crud.controller';
 import hrCrudRouter from './modules/hr/hr.crud.controller';
 import logisticsCrudRouter from './modules/logistics/logistics.crud.controller';
 import procurementCrudRouter from './modules/procurement/procurement.crud.controller';
+import { t14 } from './modules/t14/t14.store';
+import { stubCatalogRouter } from './modules/stub-catalog/stub.catalog';
 import {
   manufacturingCrudRouter,
   qualityCrudRouter,
@@ -1656,6 +1658,11 @@ router.post('/modules/probe', (req: Request, res: Response) => {
   });
 });
 
+// Stub catalog — placeholder demo data for the previously-stub modules so the
+// 71-module explorer can render a coherent preview for every module.
+// Public (no auth) to match the rest of /modules/* probe endpoints.
+router.use('/modules', stubCatalogRouter);
+
 router.get('/modules/contracts', (_req: Request, res: Response) => {
   const generated = Array.from(CONTRACT_READY_SEGMENTS)
     .filter((segment) => !CORE_MODULE_CONTRACTS[segment])
@@ -2099,28 +2106,32 @@ router.get('/modules/demo/batch2/territories', (_req: Request, res: Response) =>
   return res.json({ success: true, data: batch2.territories, total: batch2.territories.length });
 });
 
-// Commission Tracking module
-router.get('/modules/demo/batch2/commissions', (_req: Request, res: Response) => {
-  return res.json({ success: true, data: batch2.commissions, total: batch2.commissions.length });
+// Commission Tracking module — Prisma-backed (T14)
+router.get('/modules/demo/batch2/commissions', async (_req: Request, res: Response) => {
+  const rows = await t14.listCommissions();
+  return res.json({ success: true, data: rows, total: rows.length });
 });
 
-// Deal Desk module
-router.get('/modules/demo/batch2/deal-desk', (_req: Request, res: Response) => {
-  return res.json({ success: true, data: batch2.dealDesk, total: batch2.dealDesk.length });
+// Deal Desk module — Prisma-backed (T14)
+router.get('/modules/demo/batch2/deal-desk', async (_req: Request, res: Response) => {
+  const rows = await t14.listDeals();
+  return res.json({ success: true, data: rows, total: rows.length });
 });
 
-router.post('/modules/demo/batch2/deal-desk/:id/approve', (req: Request, res: Response) => {
-  const deal = batch2.dealDesk.find(d => d.id === req.params.id);
-  if (!deal) return res.status(404).json({ success: false, error: 'Deal not found' });
-  deal.status = 'Approved';
-  deal.approvedDiscount = req.body?.approvedDiscount || deal.requestedDiscount;
-  deal.decisionDate = new Date().toISOString();
-  return res.json({ success: true, data: deal });
+router.post('/modules/demo/batch2/deal-desk/:id/approve', async (req: Request, res: Response) => {
+  try {
+    const approvedDiscount = typeof req.body?.approvedDiscount === 'number' ? req.body.approvedDiscount : undefined;
+    const deal = await t14.approveDeal(req.params.id, approvedDiscount);
+    return res.json({ success: true, data: deal });
+  } catch {
+    return res.status(404).json({ success: false, error: 'Deal not found' });
+  }
 });
 
-// Sales Forecasting module
-router.get('/modules/demo/batch2/forecasts', (_req: Request, res: Response) => {
-  return res.json({ success: true, data: batch2.forecasts, total: batch2.forecasts.length });
+// Sales Forecasting module — Prisma-backed (T14)
+router.get('/modules/demo/batch2/forecasts', async (_req: Request, res: Response) => {
+  const rows = await t14.listForecasts();
+  return res.json({ success: true, data: rows, total: rows.length });
 });
 
 // ── BATCH 4: FINANCE + PEOPLE RING (10 modules) ────────────────────────────
@@ -2212,8 +2223,9 @@ router.get('/modules/demo/batch5/facilities', (_req: Request, res: Response) => 
   return res.json({ success: true, data: batch5.facilities, total: batch5.facilities.length });
 });
 
-router.get('/modules/demo/batch5/incidents', (_req: Request, res: Response) => {
-  return res.json({ success: true, data: batch5.incidents, total: batch5.incidents.length });
+router.get('/modules/demo/batch5/incidents', async (_req: Request, res: Response) => {
+  const rows = await t14.listIncidents();
+  return res.json({ success: true, data: rows, total: rows.length });
 });
 
 router.get('/modules/demo/batch5/audit-trail', (_req: Request, res: Response) => {
@@ -2227,7 +2239,7 @@ const b67 = BATCH_67_SEED;
 
 // ── Batch 6: Analytics + AI + Platform ──────────────────────────────────────
 router.get('/modules/demo/batch6/bi-reports', (_req: Request, res: Response) => res.json({ success: true, data: b67.biReports, total: b67.biReports.length }));
-router.get('/modules/demo/batch6/okr', (_req: Request, res: Response) => res.json({ success: true, data: b67.okr, total: b67.okr.length }));
+router.get('/modules/demo/batch6/okr', async (_req: Request, res: Response) => { const rows = await t14.listOkr(); return res.json({ success: true, data: rows, total: rows.length }); });
 router.get('/modules/demo/batch6/ai-insights', (_req: Request, res: Response) => res.json({ success: true, data: b67.aiInsights, total: b67.aiInsights.length }));
 router.get('/modules/demo/batch6/tax', (_req: Request, res: Response) => res.json({ success: true, data: b67.taxRecords, total: b67.taxRecords.length }));
 router.get('/modules/demo/batch6/fx', (_req: Request, res: Response) => res.json({ success: true, data: b67.fxRates, total: b67.fxRates.length }));

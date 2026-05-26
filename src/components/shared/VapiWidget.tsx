@@ -111,33 +111,6 @@ export default function VapiWidget() {
 
     injectStyle()
 
-    // Mobile (iOS Safari especially): pre-grant the mic on the first user tap of the Vapi button.
-    // Vapi/Daily.co sometimes fails silently if getUserMedia is requested from a deep callback
-    // rather than a direct user gesture.
-    let micPrimed = false
-    const primeMic = async () => {
-      if (micPrimed) return
-      micPrimed = true
-      try {
-        if (navigator.mediaDevices?.getUserMedia) {
-          const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false })
-          // Immediately release — Vapi/Daily will reopen its own stream with its constraints
-          stream.getTracks().forEach((t) => t.stop())
-        }
-      } catch (err) {
-        console.warn('[Vapi] mic permission denied or unavailable:', err)
-      }
-    }
-    const onAnyPointer = (e: Event) => {
-      const target = e.target as HTMLElement | null
-      if (!target) return
-      // Only prime when the Vapi button (or its child img) is tapped
-      if (target.closest('[id^="vapi-support-btn"], div[id^="vapi-"] > button:first-of-type')) {
-        void primeMic()
-      }
-    }
-    document.addEventListener('pointerdown', onAnyPointer, true)
-
     const tryInit = (attempt = 0) => {
       if (w.vapiInstance) return
       if (w.vapiSDK?.run) {
@@ -166,10 +139,6 @@ export default function VapiWidget() {
       document.head.appendChild(s)
     } else {
       tryInit()
-    }
-
-    return () => {
-      document.removeEventListener('pointerdown', onAnyPointer, true)
     }
   }, [])
 
