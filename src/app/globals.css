@@ -55,76 +55,13 @@ body {
 /* ===== SUPREME DESIGN OVERRIDES ===== */
 /* Flat, premium, no-noise aesthetic from Harvics Supreme */
 :root {
-  /* ── Core Brand Palette ── */
-  --harvics-maroon: #6B1F2B;
-  --harvics-maroon-dark: #5a1a24;
-  --harvics-maroon-deep: #4a1520;
-  --harvics-gold: #C3A35E;
-  --harvics-gold-light: #d4b46e;
-  --harvics-gold-muted: rgba(195, 163, 94, 0.5);
-  --harvics-cream: #ffffff;
-  --harvics-cream-dark: #ffffff;
-  --harvics-white: #ffffff;
-
-  /* ── Status Colors ── */
-  --status-success: #28A745;
-  --status-warning: #FFC107;
-  --status-error: #DC3545;
-  --status-info: #17A2B8;
-
-  /* ── Dark Mode Ready (future use) ── */
-  --color-bg-primary: var(--harvics-cream);
-  --color-bg-secondary: var(--harvics-white);
-  --color-bg-accent: var(--harvics-maroon);
-  --color-text-primary: var(--harvics-maroon);
-  --color-text-secondary: rgba(107, 31, 43, 0.6);
-  --color-border: rgba(195, 163, 94, 0.2);
-  --color-accent: var(--harvics-gold);
-
-  /* ── Semantic Aliases ── */
-  --burgundy: var(--harvics-maroon);
-  --gold: var(--harvics-gold);
-  --ivory: var(--harvics-cream);
-  --offwhite: var(--harvics-cream);
-  --text: var(--harvics-maroon);
-  --text-muted: rgba(107, 31, 43, 0.5);
-  --divider: var(--harvics-gold);
-  --divider-light: rgba(195, 163, 94, 0.2);
-
-  /* ── Surface & Overlay ── */
-  --surface-primary: var(--harvics-white);
-  --surface-card: var(--harvics-white);
-  --surface-overlay: rgba(255, 255, 255, 0.92);
-  --surface-glass: rgba(255, 255, 255, 0.85);
-
-  /* ── Focus & Accessibility ── */
-  --focus-ring: rgba(195, 163, 94, 0.5);
-  --focus-ring-offset: var(--harvics-white);
-
-  /* ── Spacing Scale ── */
-  --section-gap: 5rem;
-  --section-gap-sm: 3rem;
-  --container-max: 1240px;
-
-  /* ── Typography Scale ── */
-  --text-xs: 0.6875rem;    /* 11px */
-  --text-sm: 0.8125rem;    /* 13px */
-  --text-base: 0.9375rem;  /* 15px */
-  --text-lg: 1.0625rem;    /* 17px */
-  --text-xl: 1.25rem;      /* 20px */
-  --text-2xl: 1.5rem;      /* 24px */
-  --text-3xl: 1.875rem;    /* 30px */
-  --text-4xl: 2.25rem;     /* 36px */
-
-  /* ── Transition Tokens ── */
-  --transition-fast: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-
-  /* ── Shadow Scale ── */
-  --shadow-card: 0 1px 3px rgba(107,31,43,0.06), 0 4px 12px rgba(107,31,43,0.06);
-  --shadow-card-hover: 0 4px 8px rgba(107,31,43,0.08), 0 12px 28px rgba(107,31,43,0.1);
-  --shadow-gold: 0 2px 8px rgba(195,163,94,0.18);
+  --harvics-burgundy: #1A0505;
+  --harvics-cream: #F5F0E8;
+  --harvics-gold: #C9A84C;
+  --harvics-muted: #8A7D6B;
+  --harvics-dark: #0D0D0D;
+  --harvics-ease-vault: cubic-bezier(0.16, 1, 0.3, 1);
+  --harvics-layout-max: 1440px;
 }
 
 /* Flat design — sharp corners, no default radii */
@@ -376,8 +313,6 @@ body {
   overflow-x: auto !important; /* Gracefully allows scrolling on smaller desktop screens */
   white-space: nowrap !important;
 }
-.sector-navigation-bar::-webkit-scrollbar { display: none; }
-.sector-navigation-bar { scrollbar-width: none; }
 
 .sector-nav-link {
   font-size: 0.75rem !important; /* 12px for maximum editorial density */
@@ -554,9 +489,6 @@ body {
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
 }
 
 /* Flag emoji display utilities */
@@ -855,22 +787,23 @@ label {
 .border-gold { border-color: var(--border-gold-light) !important; }
 .text-gold { color: var(--accent-gold-hex) !important; }
 
-/* Custom Scrollbar — refined gold accent */
+/* Unified Global Scrollbar */
 ::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--harvics-burgundy);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(195, 163, 94, 0.25);
+  background: var(--harvics-gold);
+  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(195, 163, 94, 0.5);
+  background: var(--harvics-gold);
 }
 
 /* Selection highlight — brand gold */
@@ -882,6 +815,77 @@ label {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Pillar 13 Surface Classes */
+  .harvics-card-light {
+    background-color: var(--harvics-cream);
+    border: 1px solid rgba(26, 5, 5, 0.1);
+    border-radius: 0px;
+    box-shadow: 2px 2px 0px rgba(26, 5, 5, 0.05);
+  }
+
+  .harvics-card-dark {
+    background-color: var(--harvics-burgundy);
+    border: 1px solid rgba(201, 168, 76, 0.15);
+    border-radius: 0px;
+    color: var(--harvics-cream);
+    box-shadow: 4px 4px 0px rgba(13, 13, 13, 0.3);
+  }
+
+  /* Pillar 3 & 6 Precision Scale Override */
+  .harvics-divider-gold {
+    border-color: rgba(201, 168, 76, 0.15) !important;
+    border-width: 1px !important;
+  }
+
+  .harvics-divider-burgundy {
+    border-color: rgba(26, 5, 5, 0.1) !important;
+    border-width: 1px !important;
+  }
+
+  /* Pillar 16 Enterprise Table Engine */
+  table.harvics-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--harvics-cream);
+  }
+
+  table.harvics-table th {
+    background-color: var(--harvics-burgundy);
+    color: var(--harvics-cream);
+    font-family: var(--font-playfair-display), serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 2px solid var(--harvics-gold);
+  }
+
+  table.harvics-table td {
+    padding: 12px 16px;
+    font-size: 13px;
+    color: var(--harvics-burgundy);
+    border-bottom: 1px solid rgba(26, 5, 5, 0.08);
+  }
+
+  /* Pillar 12 Strict Form Elements */
+  input.harvics-input-field,
+  select.harvics-input-field {
+    background-color: var(--harvics-cream) !important;
+    color: var(--harvics-burgundy) !important;
+    border: 1px solid rgba(26, 5, 5, 0.2) !important;
+    border-radius: 0px !important;
+    padding: 8px 12px !important;
+    font-size: 13px !important;
+  }
+
+  input.harvics-input-field:focus,
+  select.harvics-input-field:focus {
+    border-color: var(--harvics-gold) !important;
+    outline: none !important;
+    box-shadow: 0 0 0 2px rgba(201, 168, 76, 0.2) !important;
   }
   
   /* Global font utilities - Consistent font stack */
@@ -1202,10 +1206,6 @@ nav a:hover, nav button:hover {
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
 }
 
 /* Elegant Card Hover */
@@ -1609,23 +1609,7 @@ nav a:hover, nav button:hover {
   top: 0;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #1a252f;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #ffffff;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #ffffff;
-}
+/* Scrollbar handled by unified global block above */
 
 /* Navigation Tab Active States — cleaned up, no forced styles */
 
@@ -1674,23 +1658,10 @@ div[role="tablist"],
   width: 100%;
   overflow-x: auto;
   scrollbar-width: thin;
-  scrollbar-color: rgba(212, 175, 55, 0.3) transparent;
+  scrollbar-color: var(--harvics-gold) var(--harvics-burgundy);
 }
 
-nav[role="tablist"]::-webkit-scrollbar,
-div[role="tablist"]::-webkit-scrollbar,
-.tab-container::-webkit-scrollbar,
-.tab-navigation::-webkit-scrollbar {
-  height: 4px;
-}
-
-nav[role="tablist"]::-webkit-scrollbar-thumb,
-div[role="tablist"]::-webkit-scrollbar-thumb,
-.tab-container::-webkit-scrollbar-thumb,
-.tab-navigation::-webkit-scrollbar-thumb {
-  background: rgba(212, 175, 55, 0.3);
-  border-radius: 2px;
-}
+*:focus-visible { outline: 2px solid var(--harvics-gold) !important; outline-offset: 2px !important; }
 
 /* Tab Buttons - Perfect Alignment */
 button[role="tab"],
@@ -2116,3 +2087,11 @@ p {
   65%  { transform: translate(-50px, -80px) scale(0.97); opacity: 0.85; }
   100% { transform: translate(0, 0) scale(1); opacity: 0.8; }
 }
+
+.bg-harvics-burgundy { background-color: #1A0505 !important; }
+.bg-harvics-cream { background-color: #F5F0E8 !important; }
+.text-harvics-cream { color: #F5F0E8 !important; }
+.text-harvics-burgundy { color: #1A0505 !important; }
+.text-harvics-gold { color: #C9A84C !important; }
+.border-harvics-gold\/10 { border-color: rgba(201, 168, 76, 0.1) !important; }
+.ease-vault { transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important; }

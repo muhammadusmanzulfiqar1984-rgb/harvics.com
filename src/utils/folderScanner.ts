@@ -29,15 +29,15 @@ export interface CategoryData {
 
 // Map folder names to category keys
 const categoryMapping: { [key: string]: { key: string; name: string; icon: string; color: string; description: string } } = {
-  'Bakery': { key: 'bakery', name: 'Bakery', icon: '🥖', color: 'from-amber-500 to-orange-500', description: 'Premium biscuits, wafers, cakes and baked snacks sourced from certified European manufacturers.' },
-  'Beverages': { key: 'beverages', name: 'Beverages', icon: '🥤', color: 'from-blue-500 to-cyan-500', description: 'Carbonated, functional, health and hot drinks distributed across 42+ international markets.' },
-  'Confectionary': { key: 'confectionery', name: 'Confectionery', icon: '🍬', color: 'from-pink-500 to-rose-600', description: 'Bubble gum, jellies, sugar candy and toffees — Halal certified, globally compliant.' },
-  'Culinary': { key: 'culinary', name: 'Culinary', icon: '🍽️', color: 'from-orange-500 to-amber-600', description: 'Cooking oils, spices, sauces, pickles and ready-to-cook products for retail and foodservice.' },
-  'Frozen Foods': { key: 'frozenFoods', name: 'Frozen Foods', icon: '🧊', color: 'from-blue-500 to-purple-500', description: 'IQF chicken, fish fillets, frozen meat and vegetables — cold chain maintained from source to shelf.' },
-  'Pastas': { key: 'pasta', name: 'Pasta', icon: '🍝', color: 'from-red-600 to-orange-500', description: 'Durum wheat pasta in all formats — fusilli, bucatini, farfalle — from premium Italian producers.' },
-  'Snacks': { key: 'snacks', name: 'Snacks', icon: '🍿', color: 'from-yellow-500 to-orange-500', description: 'Chips, crisps, baked snacks and fusion varieties across 15+ flavour profiles for global retail.' },
-  'BearPops Characters': { key: 'bearpops', name: 'BearPops', icon: '🐻', color: 'from-pink-400 to-purple-500', description: 'BearPops — the Harvics character brand. Fun, vibrant confectionery designed for kids and gifting markets.' },
-  'Product Photos': { key: 'productPhotos', name: 'Product Range', icon: '📦', color: 'from-harvics-maroon to-harvics-gold', description: 'Full Harvics product portfolio — FMCG across all categories, globally sourced and quality assured.' },
+  'Bakery': { key: 'bakery', name: 'Bakery', icon: 'icon-bakery', color: 'from-amber-500 to-orange-500', description: 'Premium biscuits, wafers, cakes and baked snacks sourced from certified European manufacturers.' },
+  'Beverages': { key: 'beverages', name: 'Beverages', icon: 'icon-beverage', color: 'from-blue-500 to-cyan-500', description: 'Carbonated, functional, health and hot drinks distributed across 42+ international markets.' },
+  'Confectionary': { key: 'confectionery', name: 'Confectionery', icon: 'icon-candy', color: 'from-pink-500 to-rose-600', description: 'Bubble gum, jellies, sugar candy and toffees — Halal certified, globally compliant.' },
+  'Culinary': { key: 'culinary', name: 'Culinary', icon: 'icon-culinary', color: 'from-orange-500 to-amber-600', description: 'Cooking oils, spices, sauces, pickles and ready-to-cook products for retail and foodservice.' },
+  'Frozen Foods': { key: 'frozenFoods', name: 'Frozen Foods', icon: 'icon-frozen', color: 'from-blue-500 to-purple-500', description: 'IQF chicken, fish fillets, frozen meat and vegetables — cold chain maintained from source to shelf.' },
+  'Pastas': { key: 'pasta', name: 'Pasta', icon: 'icon-pasta', color: 'from-red-600 to-orange-500', description: 'Durum wheat pasta in all formats — fusilli, bucatini, farfalle — from premium Italian producers.' },
+  'Snacks': { key: 'snacks', name: 'Snacks', icon: 'icon-snack', color: 'from-yellow-500 to-orange-500', description: 'Chips, crisps, baked snacks and fusion varieties across 15+ flavour profiles for global retail.' },
+  'BearPops Characters': { key: 'bearpops', name: 'BearPops', icon: 'icon-bear', color: 'from-pink-400 to-purple-500', description: 'BearPops — the Harvics character brand. Fun, vibrant confectionery designed for kids and gifting markets.' },
+  'Product Photos': { key: 'productPhotos', name: 'Product Range', icon: 'icon-package', color: 'from-harvics-maroon to-harvics-gold', description: 'Full Harvics product portfolio — FMCG across all categories, globally sourced and quality assured.' },
 }
 
 // Descriptions for every subcategory — keyed by slug

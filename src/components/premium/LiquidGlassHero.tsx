@@ -55,7 +55,7 @@ const LiquidGlassHero: React.FC = () => {
   const repeated = `${tickerText}   ·   ${tickerText}   ·   ${tickerText}`
 
   return (
-    <section className="hero relative w-full h-full overflow-hidden bg-black">
+    <section className="hero relative w-full h-full overflow-hidden bg-harvics-dark">
 
       {/* Background image with parallax zoom */}
       <div className="absolute inset-0 z-0">
@@ -77,7 +77,7 @@ const LiquidGlassHero: React.FC = () => {
       </div>
 
       {/* ── MAIN CONTENT ── */}
-      <div className={`relative z-20 h-full flex flex-col justify-center pl-[6%] pr-[4%] pb-12 transition-all duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+      <div className={`relative z-20 h-full max-w-harvics-layout mx-auto px-6 flex flex-col justify-center pb-12 transition-all duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
 
         {/* Primary Headline */}
         <h1 style={{

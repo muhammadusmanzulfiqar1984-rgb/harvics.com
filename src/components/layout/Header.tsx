@@ -155,11 +155,11 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
   const canSwitchMarket = availableCountries.length > 1
 
   return (
-    <header className="sticky top-0 z-50 w-full backdrop-blur-md border-b border-[#1A0505]/10 pointer-events-auto font-sans">
+    <header className="sticky top-0 z-50 w-full backdrop-blur-md border-b border-harvics-burgundy/10 pointer-events-auto font-sans">
 
       {/* T1 — TOP UTILITY BAR: deep oxblood with cream text */}
-      <div className="relative hidden lg:block w-full bg-[#1A0505] text-[#F5F0E8] py-2 text-[11px] font-medium tracking-wider">
-        <div className="universal-layout-frame">
+      <div className="relative hidden lg:block w-full bg-harvics-burgundy text-harvics-cream border-b border-harvics-gold/10 py-2 text-[11px] font-medium tracking-wider">
+        <div className="universal-layout-frame max-w-harvics-layout mx-auto">
           <div className="flex justify-between items-center" style={{ height: '32px' }}>
 
             {/* Left links */}
@@ -170,7 +170,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
                 { href: `/${locale}/media`, label: t('media') },
               ].map((link) => (
                 <Link key={link.href} href={link.href}
-                  className="transition-opacity duration-200 hover:opacity-70"
+                  className="hover:text-harvics-gold transition-colors duration-300 ease-vault"
                   style={{ color: '#C9A84C', fontSize: '11px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap' }}
                 >{link.label}</Link>
               ))}
@@ -178,7 +178,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               {/* Countries dropdown */}
               <div className="relative" onMouseEnter={() => handleMouseEnter('countries')} onMouseLeave={handleMouseLeave}>
                 <button
-                  className="flex items-center gap-1 transition-opacity duration-200 hover:opacity-70"
+                  className="flex items-center gap-1 hover:text-harvics-gold transition-colors duration-300 ease-vault"
                   style={{ color: '#C9A84C', fontSize: '11px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase', background: 'none', border: 'none', cursor: 'pointer', whiteSpace: 'nowrap' }}
                   aria-expanded={activeDropdown === 'countries'}
                 >
@@ -197,7 +197,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               </div>
 
               <Link href={`/${locale}/contact`}
-                className="transition-opacity duration-200 hover:opacity-70"
+                className="hover:text-harvics-gold transition-colors duration-300 ease-vault"
                 style={{ color: '#C9A84C', fontSize: '11px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap' }}
               >{t('contactUs')}</Link>
             </div>
@@ -208,7 +208,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               {isLoggedIn ? (
                 <button
                   onClick={handleLogout}
-                  className="flex items-center gap-1.5 transition-opacity duration-200 hover:opacity-70"
+                  className="flex items-center gap-1.5 hover:text-harvics-gold transition-colors duration-300 ease-vault"
                   style={{ 
                     color: '#C9A84C', 
                     fontSize: '11px', 
@@ -228,7 +228,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               ) : (
                 <Link
                   href={`/${locale}/login`}
-                  className="flex items-center gap-1.5 transition-opacity duration-200 hover:opacity-70"
+                  className="flex items-center gap-1.5 hover:text-harvics-gold transition-colors duration-300 ease-vault"
                   style={{ 
                     color: '#C9A84C', 
                     fontSize: '11px', 
@@ -249,14 +249,14 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
         </div>
       </div>
 
-      {/* T2 — MAIN BRAND BAR: Cream bg, logo left, search center, icons right */}
-      <div className="relative w-full py-2 border-b border-[#1A0505]/10" style={{
-        background: scrolled ? 'rgba(245,240,232,0.92)' : '#F5F0E8',
+      {/* T2 — MAIN BRAND BAR: Ivory bg, logo left, search center, icons right */}
+      <div className="relative w-full py-2 bg-harvics-cream text-harvics-burgundy border-b border-harvics-burgundy/10" style={{
+        background: scrolled ? 'rgba(255,255,255,0.92)' : '#ffffff',
         backdropFilter: scrolled ? 'blur(20px) saturate(180%)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(20px) saturate(180%)' : 'none',
         transition: 'background 0.4s ease, backdrop-filter 0.4s ease',
       }}>
-        <div className="universal-layout-frame">
+        <div className="universal-layout-frame max-w-harvics-layout mx-auto">
           <div className="flex items-center justify-between" style={{ height: '64px' }}>
 
             {/* Logo */}
@@ -264,8 +264,8 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               <div className="relative flex items-center gap-3">
                     <Image src="/logo.svg" alt="Harvics" width={48} height={48} style={{ width: '48px', height: 'auto', objectFit: 'contain' }} priority />
                 <div className="flex flex-col">
-                  <span className="text-xl font-bold tracking-tight" style={{ color: '#1A0505' }}>HARVICS</span>
-                  <span className="text-[10px] uppercase tracking-widest" style={{ color: '#C9A84C' }}>Global Ventures</span>
+                  <span className="text-xl font-bold text-harvics-maroon tracking-tight">HARVICS</span>
+                  <span className="text-[10px] text-harvics-gold uppercase tracking-widest">Global Ventures</span>
                 </div>
                 {/* Gold accent glow on hover */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300" 
@@ -388,8 +388,8 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
         `}} />
 
         {/* T3 — NAV BAR: 10 Industry verticals + mega dropdown */}
-        <div className="hidden lg:block w-full py-2.5 bg-white shadow-sm overflow-hidden">
-          <div className="universal-layout-frame">
+        <div className="hidden lg:block w-full py-2.5 bg-harvics-cream text-harvics-burgundy shadow-sm overflow-hidden border-b border-harvics-gold/10">
+          <div className="universal-layout-frame max-w-harvics-layout mx-auto">
             <SupremeNavBar />
           </div>
         </div>

@@ -424,6 +424,7 @@ import { t14Router } from './modules/t14/t14.controller';
 import { platformRouter } from './modules/platform/platform.controller';
 import { wave3Router } from './modules/wave3/wave3.controller';
 import { wave4Router } from './modules/wave4/wave4.controller';
+import { wave5Router } from './modules/wave5/wave5.controller';
 import { stubCatalogRouter } from './modules/stub-catalog/stub.catalog';
 import { buildGenericRouter, seedAllModules } from './modules/generic/mount';
 import {
@@ -1683,6 +1684,11 @@ router.use('/wave3', wave3Router);
 // Wave 4 — Bucket A completions (Controlling, FP&A, S&D routing,
 // BOM explode, Recipe scaling, Warehouse bins+putaway, Demand forecast, Fleet trips).
 router.use('/wave4', wave4Router);
+
+// Wave 5 — Bucket B (16 modules: PaymentRun, CPQ, Contracts, Sourcing,
+// ShopFloor, 3PL, Talent, LMS, Performance, Workforce, PM, Properties,
+// BI Reports, Board Pack, Variance AI, Service tickets, Pro Services).
+router.use('/wave5', wave5Router);
 
 router.get('/modules/contracts', (_req: Request, res: Response) => {
   const generated = Array.from(CONTRACT_READY_SEGMENTS)

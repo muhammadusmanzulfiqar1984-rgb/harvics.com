@@ -14,6 +14,7 @@ export type ReportingType =
   | 'Transaction'
   | 'Operational'
   | 'Management'
+  | 'Strategic'
   | 'Executive'
   | 'Foundation'
   | 'Interactive'
@@ -75,12 +76,12 @@ export const MODULE_REGISTRY: readonly ModuleRegistryEntry[] = [
   { id: 3, band: 'Finance & Controlling', name: 'Accounts Receivable', route: '/api/wave3/ar/aging', intelligence: 'L3', reporting: 'Operational', status: 'live' },
   { id: 4, band: 'Finance & Controlling', name: 'Accounts Payable', route: '/api/wave3/ap/receipts', intelligence: 'L3', reporting: 'Operational', status: 'live' },
   { id: 5, band: 'Finance & Controlling', name: 'Treasury & Risk', route: '/api/v2/treasury/accounts', osPath: '/os/treasury-banking', intelligence: 'L4', reporting: 'Executive', status: 'live' },
-  { id: 6, band: 'Finance & Controlling', name: 'HPay Payments', route: '/api/finance/hpay', osPath: '/os/payments-digital-finance', intelligence: 'L4', reporting: 'Transaction', status: 'demo' },
+  { id: 6, band: 'Finance & Controlling', name: 'HPay Payments', route: '/api/wave5/payment-runs', osPath: '/os/payment-runs', intelligence: 'L4', reporting: 'Transaction', status: 'live' },
   { id: 7, band: 'Finance & Controlling', name: 'Financial Planning', route: '/api/wave4/budgets', osPath: '/os/budgets', intelligence: 'L4', reporting: 'Executive', status: 'live' },
 
   // Commercial & Sales (8-12)
   { id: 8, band: 'Commercial & Sales', name: 'CRM + Sales', route: '/api/wave3/crm/pipeline', osPath: '/os/pipeline', intelligence: 'L4', reporting: 'Management', status: 'live' },
-  { id: 9, band: 'Commercial & Sales', name: 'CPQ Engine', route: '/api/crm/cpq', intelligence: 'L3', reporting: 'Operational', status: 'demo' },
+  { id: 9, band: 'Commercial & Sales', name: 'CPQ Engine', route: '/api/wave5/quotes', osPath: '/os/cpq', intelligence: 'L3', reporting: 'Operational', status: 'live' },
   { id: 10, band: 'Commercial & Sales', name: 'Sales & Distribution', route: '/api/wave4/channels', osPath: '/os/sales-distribution', intelligence: 'L3', reporting: 'Operational', status: 'live' },
   { id: 11, band: 'Commercial & Sales', name: 'Marketing Automation', route: '/api/v2/marketing/email-campaigns', osPath: '/os/marketing', intelligence: 'L4', reporting: 'Management', status: 'live' },
   { id: 12, band: 'Commercial & Sales', name: 'Distributor Portal', route: '/api/distributor', intelligence: 'L2', reporting: 'Operational', status: 'live' },
@@ -88,12 +89,12 @@ export const MODULE_REGISTRY: readonly ModuleRegistryEntry[] = [
   // Procurement & Sourcing (13-16)
   { id: 13, band: 'Procurement & Sourcing', name: 'Procurement', route: '/api/wave3/procurement/rfqs', intelligence: 'L3', reporting: 'Operational', status: 'live' },
   { id: 14, band: 'Procurement & Sourcing', name: 'Vendor Management', route: '/api/wave3/vendors/scorecards', intelligence: 'L4', reporting: 'Management', status: 'live' },
-  { id: 15, band: 'Procurement & Sourcing', name: 'Contract Lifecycle', route: '/api/procurement/contracts', intelligence: 'L3', reporting: 'Operational', status: 'demo' },
-  { id: 16, band: 'Procurement & Sourcing', name: 'Sourcing Network', route: '/api/procurement/sourcing', intelligence: 'L3', reporting: 'Operational', status: 'demo' },
+  { id: 15, band: 'Procurement & Sourcing', name: 'Contract Lifecycle', route: '/api/wave5/contracts', osPath: '/os/contracts', intelligence: 'L3', reporting: 'Operational', status: 'live' },
+  { id: 16, band: 'Procurement & Sourcing', name: 'Sourcing Network', route: '/api/wave5/sourcing-suppliers', osPath: '/os/sourcing', intelligence: 'L3', reporting: 'Operational', status: 'live' },
 
   // Manufacturing (17-21)
   { id: 17, band: 'Manufacturing', name: 'Production Planning', route: '/api/v2/manufacturing/work-orders', osPath: '/os/manufacturing', intelligence: 'L4', reporting: 'Management', status: 'live' },
-  { id: 18, band: 'Manufacturing', name: 'Shop Floor Control', route: '/api/manufacturing/floor', intelligence: 'L3', reporting: 'Operational', status: 'demo' },
+  { id: 18, band: 'Manufacturing', name: 'Shop Floor Control', route: '/api/wave5/shop-floor-ops', osPath: '/os/shop-floor', intelligence: 'L3', reporting: 'Operational', status: 'live' },
   { id: 19, band: 'Manufacturing', name: 'Bill of Materials', route: '/api/wave4/boms', osPath: '/os/bom', intelligence: 'L2', reporting: 'Operational', status: 'live' },
   { id: 20, band: 'Manufacturing', name: 'Quality Management', route: '/api/v2/quality/checks', osPath: '/os/quality', intelligence: 'L4', reporting: 'Management', status: 'live' },
   { id: 21, band: 'Manufacturing', name: 'Recipe Management', route: '/api/wave4/recipes', osPath: '/os/recipes', intelligence: 'L2', reporting: 'Operational', status: 'live' },
@@ -107,19 +108,19 @@ export const MODULE_REGISTRY: readonly ModuleRegistryEntry[] = [
   { id: 25, band: 'Logistics & Trade', name: 'Fleet Management', route: '/api/wave4/vehicles', osPath: '/os/fleet', intelligence: 'L3', reporting: 'Operational', status: 'live' },
   { id: 26, band: 'Logistics & Trade', name: 'Shipping & Freight', route: '/api/wave3/shipping/shipments', osPath: '/os/shipping-trade', intelligence: 'L2', reporting: 'Operational', status: 'live' },
   { id: 27, band: 'Logistics & Trade', name: 'Trade & Customs', route: '/api/wave3/trade/hs-codes', osPath: '/os/import-export', intelligence: 'L4', reporting: 'Management', status: 'live' },
-  { id: 28, band: 'Logistics & Trade', name: '3PL Integration', route: '/api/logistics/3pl', intelligence: 'L2', reporting: 'Operational', status: 'demo' },
+  { id: 28, band: 'Logistics & Trade', name: '3PL Integration', route: '/api/wave5/threepl-partners', osPath: '/os/threepl', intelligence: 'L2', reporting: 'Operational', status: 'live' },
 
   // Human Capital (29-33)
   { id: 29, band: 'Human Capital', name: 'HR Core & Payroll', route: '/api/wave3/hr/leave', osPath: '/os/hr', intelligence: 'L3', reporting: 'Operational', status: 'live' },
-  { id: 30, band: 'Human Capital', name: 'Talent Acquisition', route: '/api/hr/recruitment', intelligence: 'L3', reporting: 'Management', status: 'demo' },
-  { id: 31, band: 'Human Capital', name: 'Learning Management', route: '/api/hr/learning', intelligence: 'L2', reporting: 'Operational', status: 'demo' },
-  { id: 32, band: 'Human Capital', name: 'Performance & Succession', route: '/api/hr/performance', intelligence: 'L3', reporting: 'Management', status: 'demo' },
-  { id: 33, band: 'Human Capital', name: 'Workforce Planning', route: '/api/hr/workforce', intelligence: 'L3', reporting: 'Operational', status: 'demo' },
+  { id: 30, band: 'Human Capital', name: 'Talent Acquisition', route: '/api/wave5/postings', osPath: '/os/talent', intelligence: 'L3', reporting: 'Management', status: 'live' },
+  { id: 31, band: 'Human Capital', name: 'Learning Management', route: '/api/wave5/courses', osPath: '/os/lms', intelligence: 'L2', reporting: 'Operational', status: 'live' },
+  { id: 32, band: 'Human Capital', name: 'Performance & Succession', route: '/api/wave5/perf-reviews', osPath: '/os/performance', intelligence: 'L3', reporting: 'Management', status: 'live' },
+  { id: 33, band: 'Human Capital', name: 'Workforce Planning', route: '/api/wave5/headcount-plans', osPath: '/os/workforce', intelligence: 'L3', reporting: 'Operational', status: 'live' },
 
   // Asset & Maintenance (34-36)
   { id: 34, band: 'Asset & Maintenance', name: 'Fixed Assets', route: '/api/v2/assets', osPath: '/os/inventory', intelligence: 'L2', reporting: 'Transaction', status: 'live' },
-  { id: 35, band: 'Asset & Maintenance', name: 'Plant Maintenance', route: '/api/maintenance', intelligence: 'L4', reporting: 'Management', status: 'demo' },
-  { id: 36, band: 'Asset & Maintenance', name: 'Real Estate & Facilities', route: '/api/facilities', intelligence: 'L2', reporting: 'Operational', status: 'demo' },
+  { id: 35, band: 'Asset & Maintenance', name: 'Plant Maintenance', route: '/api/wave5/pm-orders', osPath: '/os/plant-maintenance', intelligence: 'L4', reporting: 'Management', status: 'live' },
+  { id: 36, band: 'Asset & Maintenance', name: 'Real Estate & Facilities', route: '/api/wave5/properties', osPath: '/os/properties', intelligence: 'L2', reporting: 'Operational', status: 'live' },
 
   // GRC (37-40)
   { id: 37, band: 'GRC', name: 'GRC Core', route: '/api/t14/incidents', intelligence: 'L3', reporting: 'Management', status: 'live' },
@@ -128,15 +129,15 @@ export const MODULE_REGISTRY: readonly ModuleRegistryEntry[] = [
   { id: 40, band: 'GRC', name: 'Neural Governance', route: '/api/platform/governance/policies', intelligence: 'L5', reporting: 'Executive', status: 'live' },
 
   // Analytics & Intelligence (41-44)
-  { id: 41, band: 'Analytics & Intelligence', name: 'BI & Reporting', route: '/api/bi', osPath: '/os/financial-planning-bi', intelligence: 'L3', reporting: 'Management', status: 'demo' },
-  { id: 42, band: 'Analytics & Intelligence', name: 'Board Pack Generator', route: '/api/bi/board', osPath: '/os/executive', intelligence: 'L5', reporting: 'Executive', status: 'demo' },
+  { id: 41, band: 'Analytics & Intelligence', name: 'BI & Reporting', route: '/api/wave5/reports', osPath: '/os/bi-reports', intelligence: 'L3', reporting: 'Management', status: 'live' },
+  { id: 42, band: 'Analytics & Intelligence', name: 'Board Pack Generator', route: '/api/wave5/board-packs', osPath: '/os/board-pack', intelligence: 'L5', reporting: 'Executive', status: 'live' },
   { id: 43, band: 'Analytics & Intelligence', name: 'OKR Tracking', route: '/api/t14/okr', intelligence: 'L3', reporting: 'Management', status: 'live' },
-  { id: 44, band: 'Analytics & Intelligence', name: 'AI Variance Commentary', route: '/api/ai/variance', intelligence: 'L5', reporting: 'Executive', status: 'demo' },
+  { id: 44, band: 'Analytics & Intelligence', name: 'AI Variance Commentary', route: '/api/wave5/variance-commentary', osPath: '/os/variance-ai', intelligence: 'L5', reporting: 'Executive', status: 'live' },
 
   // Projects & Services (45-47)
   { id: 45, band: 'Projects & Services', name: 'Project Management', route: '/api/v2/projects', osPath: '/os/project-management', intelligence: 'L3', reporting: 'Operational', status: 'live' },
-  { id: 46, band: 'Projects & Services', name: 'Service Management', route: '/api/services', intelligence: 'L3', reporting: 'Operational', status: 'demo' },
-  { id: 47, band: 'Projects & Services', name: 'Professional Services', route: '/api/projects/psa', intelligence: 'L3', reporting: 'Management', status: 'demo' },
+  { id: 46, band: 'Projects & Services', name: 'Service Management', route: '/api/wave5/service-tickets', osPath: '/os/service-tickets', intelligence: 'L3', reporting: 'Operational', status: 'live' },
+  { id: 47, band: 'Projects & Services', name: 'Professional Services', route: '/api/wave5/engagements', osPath: '/os/professional-services', intelligence: 'L3', reporting: 'Management', status: 'live' },
 
   // Platform & Infrastructure (48-54)
   { id: 48, band: 'Platform & Infrastructure', name: 'Tax Engine', route: '/api/platform/tax/rates', osPath: '/os/localization', intelligence: 'L2', reporting: 'Transaction', status: 'live' },

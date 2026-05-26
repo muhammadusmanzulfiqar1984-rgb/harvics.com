@@ -110,7 +110,7 @@ export default async function Home() {
         <FrameDotNav totalFrames={11} />
 
         {/* Frame 1: Hero — slightly more opaque so hero imagery pops */}
-        <div data-frame="1" data-animate className="overflow-hidden relative" style={glassA}>
+        <div data-frame="1" data-animate className="overflow-hidden relative bg-harvics-dark" style={glassA}>
           <LiquidGlassHero />
         </div>
 

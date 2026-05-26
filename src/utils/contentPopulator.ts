@@ -54,17 +54,17 @@ export function getMoneyPageContent(pageKey: string, locale: string = 'en'): Pag
           title: 'Key Benefits',
           items: [
             {
-              icon: '💳',
+              icon: 'icon-credit-card',
               title: 'Cashback Rewards',
               description: 'Earn up to 5% cashback on all purchases'
             },
             {
-              icon: '🎁',
+              icon: 'icon-gift',
               title: 'Exclusive Offers',
               description: 'Access to special promotions and discounts'
             },
             {
-              icon: '✈️',
+              icon: 'icon-plane',
               title: 'Travel Benefits',
               description: 'Complimentary travel insurance and airport lounge access'
             }
@@ -92,17 +92,17 @@ export function getMoneyPageContent(pageKey: string, locale: string = 'en'): Pag
           title: 'Membership Benefits',
           items: [
             {
-              icon: '⭐',
+              icon: 'icon-star',
               title: 'Points on Every Purchase',
               description: 'Earn points with every transaction'
             },
             {
-              icon: '🎂',
+              icon: 'icon-cake',
               title: 'Birthday Rewards',
               description: 'Special offers on your special day'
             },
             {
-              icon: '🚚',
+              icon: 'icon-truck',
               title: 'Free Shipping',
               description: 'Free shipping on orders over $50'
             }
@@ -125,17 +125,17 @@ export function getMoneyPageContent(pageKey: string, locale: string = 'en'): Pag
           title: 'Investment Options',
           items: [
             {
-              icon: '💰',
+              icon: 'icon-wallet',
               title: 'Savings Accounts',
               description: 'Competitive interest rates on savings accounts'
             },
             {
-              icon: '📈',
+              icon: 'icon-chart-up',
               title: 'Investment Plans',
               description: 'Diversified investment portfolios for long-term growth'
             },
             {
-              icon: '🎯',
+              icon: 'icon-target',
               title: 'Retirement Planning',
               description: 'Secure your future with retirement savings plans'
             }
@@ -158,17 +158,17 @@ export function getMoneyPageContent(pageKey: string, locale: string = 'en'): Pag
           title: 'Loan Features',
           items: [
             {
-              icon: '💳',
+              icon: 'icon-credit-card',
               title: 'Competitive Rates',
               description: 'Interest rates from 3.9% APR'
             },
             {
-              icon: '📊',
+              icon: 'icon-chart',
               title: 'Flexible Terms',
               description: 'Repayment terms from 1-7 years'
             },
             {
-              icon: '⚡',
+              icon: 'icon-lightning',
               title: 'Quick Approval',
               description: 'Fast application and approval process'
             }
@@ -191,17 +191,17 @@ export function getMoneyPageContent(pageKey: string, locale: string = 'en'): Pag
           title: 'Support Services',
           items: [
             {
-              icon: '💬',
+              icon: 'icon-message',
               title: 'Financial Counseling',
               description: 'Expert advice on managing your finances'
             },
             {
-              icon: '📚',
+              icon: 'icon-book',
               title: 'Educational Resources',
               description: 'Learn about financial planning and management'
             },
             {
-              icon: '🛠️',
+              icon: 'icon-tools',
               title: 'Online Tools',
               description: 'Budget calculators and planning tools'
             }
@@ -415,12 +415,12 @@ function getActivePromotions(key: string): Array<{ icon: string; title: string; 
   // This would fetch from API/database
   return [
     {
-      icon: '🎁',
+      icon: 'icon-gift',
       title: 'Buy 2 Get 1 Free',
       description: 'On selected items'
     },
     {
-      icon: '🚚',
+      icon: 'icon-truck',
       title: 'Free Shipping',
       description: 'On orders over $50'
     }
@@ -505,8 +505,8 @@ export function getFooterPageContent(pageKey: string, locale: string = 'en'): Pa
           type: 'features',
           title: 'Why Work With Us',
           items: [
-            { icon: '🌍', title: 'Global Opportunities', description: 'Work across 40+ countries' },
-            { icon: '💼', title: 'Career Growth', description: 'Professional development programs' },
+            { icon: 'icon-globe', title: 'Global Opportunities', description: 'Work across 40+ countries' },
+            { icon: 'icon-briefcase', title: 'Career Growth', description: 'Professional development programs' },
             { icon: '⚖️', title: 'Work-Life Balance', description: 'Flexible working arrangements' }
           ]
         }

@@ -57,16 +57,16 @@ const Footer: React.FC = () => {
       <NestleNewsSection />
 
       {/* Main Footer — Ivory background, Apple-clean */}
-      <footer style={{ background: '#ffffff', borderTop: '1px solid rgba(195,163,94,0.2)' }}>
+      <footer className="w-full bg-harvics-burgundy text-harvics-cream" style={{ background: '#ffffff', borderTop: '1px solid rgba(195,163,94,0.2)' }}>
 
         {/* Brand + Links Grid */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="w-full max-w-harvics-layout mx-auto px-6 py-4">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 mb-3">
 
             {/* Brand */}
             <div className="lg:col-span-4">
               <Link href={`/${locale}`} className="inline-block mb-1">
-                <h2 className="text-lg tracking-wide" style={{ color: '#6B1F2B', fontWeight: 300 }}>
+                <h2 className="text-lg tracking-wide text-harvics-cream" style={{ color: '#6B1F2B', fontWeight: 300 }}>
                   {t('companyName') || 'Harvics'}
                 </h2>
               </Link>
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
             {/* Links */}
               <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
               <div>
-                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E' }}>
+                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold text-harvics-gold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E' }}>
                   {t('usefulLinks') || 'USEFUL LINKS'}
                 </h3>
                 <ul className="space-y-1">
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
                     { href: `/${locale}/compliance`, label: t('speakUp') || 'Speak Up' },
                   ].map(link => (
                     <li key={link.href}>
-                      <Link href={link.href} className="text-sm transition-all duration-200 hover:opacity-100 hover:translate-x-1 inline-block" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
+                      <Link href={link.href} className="text-sm text-harvics-muted hover:text-harvics-gold transition-colors duration-300 ease-vault inline-block" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
                         {link.label}
                       </Link>
                     </li>
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
               </div>
 
               <div>
-                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E' }}>
+                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold text-harvics-gold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E' }}>
                   {t('company') || 'COMPANY'}
                 </h3>
                 <ul className="space-y-1">
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
                     { href: `/${locale}/csr`, label: t('sustainability') || 'Sustainability' },
                   ].map(link => (
                     <li key={link.href}>
-                      <Link href={link.href} className="text-sm transition-all duration-200 hover:opacity-100 hover:translate-x-1 inline-block" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
+                      <Link href={link.href} className="text-sm text-harvics-muted hover:text-harvics-gold transition-colors duration-300 ease-vault inline-block" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
                         {link.label}
                       </Link>
                     </li>
@@ -125,7 +125,7 @@ const Footer: React.FC = () => {
               </div>
 
               <div>
-                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E' }}>
+                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold text-harvics-gold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E' }}>
                   {t('media') || 'MEDIA'}
                 </h3>
                 <ul className="space-y-1">
@@ -135,7 +135,7 @@ const Footer: React.FC = () => {
                     { href: `/${locale}/media/images`, label: t('images') || 'Images' },
                   ].map(link => (
                     <li key={link.href}>
-                      <Link href={link.href} className="text-sm transition-opacity duration-200 hover:opacity-100" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
+                      <Link href={link.href} className="text-sm text-harvics-muted hover:text-harvics-gold transition-colors duration-300 ease-vault" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
                         {link.label}
                       </Link>
                     </li>
@@ -144,7 +144,7 @@ const Footer: React.FC = () => {
               </div>
 
               <div>
-                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E' }}>
+                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold text-harvics-gold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E' }}>
                   {t('investors') || 'INVESTORS'}
                 </h3>
                 <ul className="space-y-1">
@@ -154,7 +154,7 @@ const Footer: React.FC = () => {
                     { href: `/${locale}/investors/publications`, label: t('publications') || 'Publications' },
                   ].map(link => (
                     <li key={link.href}>
-                      <Link href={link.href} className="text-sm transition-opacity duration-200 hover:opacity-100" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
+                      <Link href={link.href} className="text-sm text-harvics-muted hover:text-harvics-gold transition-colors duration-300 ease-vault" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
                         {link.label}
                       </Link>
                     </li>

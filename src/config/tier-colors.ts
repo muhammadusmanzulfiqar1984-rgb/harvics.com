@@ -26,64 +26,59 @@ export interface TierColorScheme {
 
 export const TIER_COLORS: Record<TierLevel, TierColorScheme> = {
   '0': {
-    // Tier 0: Purple - Foundational Engines
-    primary: '#9333ea',        // Purple 600
-    primaryDark: '#7e22ce',    // Purple 700
-    primaryLight: '#a855f7',   // Purple 500
-    bg: '#f3e8ff',             // Purple 100
-    bgHover: '#e9d5ff',        // Purple 200
-    border: '#9333ea',         // Purple 600
-    text: '#581c87',           // Purple 900
-    textActive: '#7e22ce',     // Purple 700
-    badge: '#a855f7'           // Purple 500
+    primary: 'var(--harvics-burgundy)',
+    primaryDark: 'var(--harvics-dark)',
+    primaryLight: 'var(--harvics-gold)',
+    bg: 'var(--harvics-cream)',
+    bgHover: 'var(--harvics-cream)',
+    border: 'var(--harvics-burgundy)',
+    text: 'var(--harvics-burgundy)',
+    textActive: 'var(--harvics-dark)',
+    badge: 'var(--harvics-gold)'
   },
   '1': {
-    // Tier 1: Blue - OS Domains
-    primary: '#2563eb',        // Blue 600
-    primaryDark: '#1d4ed8',    // Blue 700
-    primaryLight: '#3b82f6',   // Blue 500
-    bg: '#dbeafe',             // Blue 100
-    bgHover: '#bfdbfe',        // Blue 200
-    border: '#2563eb',         // Blue 600
-    text: '#1e40af',           // Blue 900
-    textActive: '#1d4ed8',     // Blue 700
-    badge: '#3b82f6'           // Blue 500
+    primary: 'var(--harvics-burgundy)',
+    primaryDark: 'var(--harvics-dark)',
+    primaryLight: 'var(--harvics-gold)',
+    bg: 'var(--harvics-cream)',
+    bgHover: 'var(--harvics-cream)',
+    border: 'var(--harvics-burgundy)',
+    text: 'var(--harvics-burgundy)',
+    textActive: 'var(--harvics-dark)',
+    badge: 'var(--harvics-gold)'
   },
   '2': {
-    // Tier 2: Green - Modules
-    primary: '#16a34a',        // Green 600
-    primaryDark: '#15803d',    // Green 700
-    primaryLight: '#22c55e',   // Green 500
-    bg: '#dcfce7',             // Green 100
-    bgHover: '#bbf7d0',        // Green 200
-    border: '#16a34a',         // Green 600
-    text: '#14532d',           // Green 900
-    textActive: '#15803d',     // Green 700
-    badge: '#22c55e'           // Green 500
+    primary: 'var(--harvics-burgundy)',
+    primaryDark: 'var(--harvics-dark)',
+    primaryLight: 'var(--harvics-gold)',
+    bg: 'var(--harvics-cream)',
+    bgHover: 'var(--harvics-cream)',
+    border: 'var(--harvics-burgundy)',
+    text: 'var(--harvics-burgundy)',
+    textActive: 'var(--harvics-dark)',
+    badge: 'var(--harvics-gold)'
   },
   '3': {
-    // Tier 3: Gold/Yellow - Screens (using Harvics brand gold)
-    primary: '#C3A35E',        // Harvics Gold
-    primaryDark: '#C3A35E',    // Dark Goldenrod
-    primaryLight: '#F5C542',   // Light Gold
-    bg: '#fef9c3',             // Yellow 100
-    bgHover: '#fef08a',        // Yellow 200
-    border: '#C3A35E',         // Harvics Gold
-    text: '#713f12',           // Yellow 900
-    textActive: '#C3A35E',     // Dark Goldenrod
-    badge: '#F5C542'           // Light Gold
+    primary: 'var(--harvics-gold)',
+    primaryDark: 'var(--harvics-burgundy)',
+    primaryLight: 'var(--harvics-gold)',
+    bg: 'var(--harvics-cream)',
+    bgHover: 'var(--harvics-cream)',
+    border: 'var(--harvics-gold)',
+    text: 'var(--harvics-burgundy)',
+    textActive: 'var(--harvics-gold)',
+    badge: 'var(--harvics-gold)'
   },
   '4': {
-    // Tier 4: Orange - Actions
-    primary: '#ea580c',        // Orange 600
-    primaryDark: '#c2410c',    // Orange 700
-    primaryLight: '#f97316',   // Orange 500
-    bg: '#ffedd5',             // Orange 100
-    bgHover: '#fed7aa',        // Orange 200
-    border: '#ea580c',         // Orange 600
-    text: '#7c2d12',           // Orange 900
-    textActive: '#c2410c',     // Orange 700
-    badge: '#f97316'           // Orange 500
+    primary: 'var(--harvics-burgundy)',
+    primaryDark: 'var(--harvics-dark)',
+    primaryLight: 'var(--harvics-gold)',
+    bg: 'var(--harvics-cream)',
+    bgHover: 'var(--harvics-cream)',
+    border: 'var(--harvics-burgundy)',
+    text: 'var(--harvics-burgundy)',
+    textActive: 'var(--harvics-dark)',
+    badge: 'var(--harvics-gold)'
   }
 }
 

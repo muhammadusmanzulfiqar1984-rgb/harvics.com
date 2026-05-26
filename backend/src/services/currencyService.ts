@@ -15,6 +15,21 @@ interface ExchangeRateResponse {
   rates: Record<string, number>;
 }
 
+const FALLBACK_EXCHANGE_RATES: ExchangeRateResponse = {
+  base: 'USD',
+  date: 'static',
+  rates: {
+    USD: 1,
+    EUR: 0.92,
+    GBP: 0.79,
+    AED: 3.67,
+    SAR: 3.75,
+    PKR: 278,
+    INR: 83.2,
+    CNY: 7.24,
+  },
+};
+
 let cachedRates: ExchangeRateResponse | null = null;
 let cacheTimestamp = 0;
 const CACHE_DURATION = 3600000; // 1 hour in milliseconds
@@ -42,11 +57,11 @@ export async function getExchangeRates(): Promise<Record<string, number> | null>
       return data.rates;
     } else {
       console.error(`ExchangeRate-API error: ${response.statusCode}`);
-      return cachedRates?.rates || null; // Return cached if available
+      return cachedRates?.rates || FALLBACK_EXCHANGE_RATES.rates;
     }
   } catch (error) {
     console.error('Failed to fetch exchange rates:', error);
-    return cachedRates?.rates || null; // Return cached if available
+    return cachedRates?.rates || FALLBACK_EXCHANGE_RATES.rates;
   }
 }
 

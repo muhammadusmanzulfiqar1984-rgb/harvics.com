@@ -1228,3 +1228,414 @@ model FleetTrip {
   @@index([vehicleId])
   @@index([status])
 }
+
+// ─── WAVE 5 · Bucket B (16 modules) ─────────────────────────────────────────
+
+// #6 HPay Payments — outbound payment runs
+model PaymentRun {
+  id          String           @id @default(cuid())
+  runNo       String           @unique
+  description String?
+  totalAmount Float            @default(0)
+  currency    String           @default("USD")
+  itemCount   Int              @default(0)
+  status      String           @default("Draft") // Draft|Approved|Released|Paid|Cancelled
+  releasedAt  DateTime?
+  releasedBy  String?
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  items       PaymentRunItem[]
+
+  @@index([status])
+}
+
+model PaymentRunItem {
+  id           String     @id @default(cuid())
+  runId        String
+  payeeName    String
+  payeeAccount String?
+  amount       Float
+  currency     String     @default("USD")
+  invoiceRef   String?
+  status       String     @default("Pending") // Pending|Paid|Failed
+  run          PaymentRun @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@index([runId])
+}
+
+// #9 CPQ Engine — quotes + line config
+model Quote {
+  id           String      @id @default(cuid())
+  quoteNo      String      @unique
+  customerName String
+  status       String      @default("Draft") // Draft|Sent|Accepted|Rejected|Expired
+  validUntil   DateTime?
+  subtotal     Float       @default(0)
+  discount     Float       @default(0)
+  total        Float       @default(0)
+  currency     String      @default("USD")
+  notes        String?
+  createdBy    String?
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  lines        QuoteLine[]
+
+  @@index([status])
+}
+
+model QuoteLine {
+  id          String  @id @default(cuid())
+  quoteId     String
+  sku         String
+  description String?
+  qty         Float
+  unitPrice   Float
+  discount    Float   @default(0)
+  lineTotal   Float   @default(0)
+  quote       Quote   @relation(fields: [quoteId], references: [id], onDelete: Cascade)
+
+  @@index([quoteId])
+}
+
+// #15 Contract Lifecycle Management
+model Contract {
+  id           String    @id @default(cuid())
+  contractNo   String    @unique
+  title        String
+  counterparty String
+  type         String    @default("MSA") // MSA|SOW|NDA|Lease|Purchase|Service
+  value        Float     @default(0)
+  currency     String    @default("USD")
+  startDate    DateTime
+  endDate      DateTime
+  status       String    @default("Draft") // Draft|Negotiating|Signed|Active|Expired|Terminated
+  signedAt     DateTime?
+  signedBy     String?
+  notes        String?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@index([status])
+  @@index([endDate])
+}
+
+// #16 Sourcing Network — supplier discovery & qualification
+model SourcingSupplier {
+  id              String   @id @default(cuid())
+  name            String
+  country         String?
+  category        String?
+  certifications  String? // comma-separated
+  capabilities    String?
+  rating          Float    @default(0) // 0-5
+  qualifiedStatus String   @default("Discovered") // Discovered|InReview|Qualified|Rejected
+  contactEmail    String?
+  contactPhone    String?
+  notes           String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([qualifiedStatus])
+  @@index([category])
+}
+
+// #18 Shop Floor Control — operations + execution events
+model ShopFloorOp {
+  id          String    @id @default(cuid())
+  workOrderId String?
+  operationNo Int
+  workCenter  String
+  description String?
+  setupMins   Int       @default(0)
+  runMins     Int       @default(0)
+  qtyPlanned  Float     @default(0)
+  qtyDone     Float     @default(0)
+  qtyScrap    Float     @default(0)
+  status      String    @default("Queued") // Queued|InProgress|Paused|Completed|Scrapped
+  operator    String?
+  startedAt   DateTime?
+  completedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([workOrderId])
+  @@index([status])
+}
+
+// #28 3PL Integration — partners + EDI events
+model ThreePLPartner {
+  id         String   @id @default(cuid())
+  code       String   @unique
+  name       String
+  apiBaseUrl String?
+  authMode   String   @default("apikey") // apikey|oauth|none
+  active     Boolean  @default(true)
+  webhookUrl String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model ThreePLEvent {
+  id          String   @id @default(cuid())
+  partnerCode String
+  eventType   String // shipment_created|status_update|exception
+  payload     Json
+  processed   Boolean  @default(false)
+  receivedAt  DateTime @default(now())
+
+  @@index([partnerCode])
+  @@index([eventType])
+  @@index([processed])
+}
+
+// #30 Talent Acquisition
+model JobPosting {
+  id          String      @id @default(cuid())
+  reqNo       String      @unique
+  title       String
+  department  String?
+  location    String?
+  level       String? // Junior|Mid|Senior|Lead|Director
+  status      String      @default("Open") // Open|Paused|Filled|Cancelled
+  description String?
+  postedAt    DateTime    @default(now())
+  filledAt    DateTime?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  candidates  Candidate[]
+
+  @@index([status])
+}
+
+model Candidate {
+  id        String     @id @default(cuid())
+  postingId String
+  name      String
+  email     String?
+  phone     String?
+  stage     String     @default("Applied") // Applied|Screened|Interview|Offer|Hired|Rejected
+  rating    Int        @default(0)
+  notes     String?
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  posting   JobPosting @relation(fields: [postingId], references: [id], onDelete: Cascade)
+
+  @@index([postingId])
+  @@index([stage])
+}
+
+// #31 LMS — courses + enrollments
+model Course {
+  id          String       @id @default(cuid())
+  code        String       @unique
+  title       String
+  category    String?
+  durationHrs Float        @default(1)
+  level       String? // Beginner|Intermediate|Advanced
+  active      Boolean      @default(true)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  enrollments Enrollment[]
+}
+
+model Enrollment {
+  id          String    @id @default(cuid())
+  courseId    String
+  employeeId  String
+  enrolledAt  DateTime  @default(now())
+  completedAt DateTime?
+  score       Float? // 0-100
+  status      String    @default("Enrolled") // Enrolled|InProgress|Completed|Failed
+  course      Course    @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@unique([courseId, employeeId])
+  @@index([status])
+}
+
+// #32 Performance & Succession
+model PerformanceReview {
+  id           String   @id @default(cuid())
+  employeeId   String
+  period       String // 2026-H1
+  reviewer     String?
+  selfRating   Int      @default(0) // 1-5
+  mgrRating    Int      @default(0)
+  overallScore Float    @default(0)
+  strengths    String?
+  improvements String?
+  potential    String   @default("Hold") // Promote|Stretch|Hold|PIP
+  status       String   @default("Draft") // Draft|Submitted|Acknowledged|Closed
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([employeeId])
+  @@index([period])
+}
+
+// #33 Workforce Planning
+model HeadcountPlan {
+  id           String   @id @default(cuid())
+  period       String // 2026-Q3
+  department   String
+  currentFte   Float    @default(0)
+  plannedFte   Float    @default(0)
+  attritionPct Float    @default(0)
+  hiringNeed   Float    @default(0)
+  notes        String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@unique([period, department])
+}
+
+// #35 Plant Maintenance — work orders against assets
+model PMWorkOrder {
+  id          String    @id @default(cuid())
+  woNo        String    @unique
+  assetId     String
+  type        String    @default("Corrective") // Preventive|Corrective|Predictive|Emergency
+  priority    String    @default("Medium") // Low|Medium|High|Critical
+  description String
+  status      String    @default("Open") // Open|Assigned|InProgress|Completed|Cancelled
+  assignedTo  String?
+  scheduledAt DateTime?
+  completedAt DateTime?
+  laborHours  Float     @default(0)
+  partsCost   Float     @default(0)
+  totalCost   Float     @default(0)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([assetId])
+  @@index([status])
+}
+
+// #36 Real Estate & Facilities
+model Property {
+  id           String    @id @default(cuid())
+  code         String    @unique
+  name         String
+  type         String // Office|Warehouse|Retail|Plant|Land
+  address      String?
+  sqft         Float     @default(0)
+  occupancyPct Float     @default(0)
+  monthlyRent  Float     @default(0)
+  currency     String    @default("USD")
+  leaseEnd     DateTime?
+  status       String    @default("Active") // Active|Vacant|UnderRenovation|Sold
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@index([status])
+}
+
+// #41 BI & Reporting — saved reports
+model SavedReport {
+  id          String    @id @default(cuid())
+  name        String
+  category    String? // sales|finance|ops|hr
+  sourceTable String // which canonical entity to query
+  filters     Json?
+  groupBy     String?
+  metric      String // count|sum|avg|min|max
+  metricField String?
+  description String?
+  lastRunAt   DateTime?
+  createdBy   String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+// #42 Board Pack Generator
+model BoardPack {
+  id          String    @id @default(cuid())
+  period      String    @unique // 2026-Q2
+  title       String
+  sections    Json // [{name, content, kpis}]
+  status      String    @default("Draft") // Draft|Review|Approved|Distributed
+  generatedAt DateTime  @default(now())
+  approvedBy  String?
+  approvedAt  DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+// #44 AI Variance Commentary
+model VarianceCommentary {
+  id             String   @id @default(cuid())
+  period         String
+  account        String
+  costCenter     String?
+  variance       Float
+  variancePct    Float?
+  commentary     String
+  classification String   @default("Unexplained") // FX|Volume|Mix|Price|Timing|Other|Unexplained
+  generatedBy    String   @default("ai") // ai|user
+  approved       Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([period])
+  @@index([account])
+}
+
+// #46 Service Management — service tickets
+model ServiceTicket {
+  id           String    @id @default(cuid())
+  ticketNo     String    @unique
+  customerName String
+  subject      String
+  description  String?
+  priority     String    @default("Medium") // Low|Medium|High|Urgent
+  status       String    @default("Open") // Open|InProgress|OnHold|Resolved|Closed
+  assignedTo   String?
+  category     String?
+  resolution   String?
+  openedAt     DateTime  @default(now())
+  resolvedAt   DateTime?
+  closedAt     DateTime?
+  slaBreached  Boolean   @default(false)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@index([status])
+  @@index([priority])
+}
+
+// #47 Professional Services — engagements + time entries
+model Engagement {
+  id          String      @id @default(cuid())
+  code        String      @unique
+  clientName  String
+  title       String
+  type        String      @default("FixedFee") // FixedFee|TimeMaterial|Retainer
+  budget      Float       @default(0)
+  spent       Float       @default(0)
+  status      String      @default("Active") // Active|OnHold|Completed|Cancelled
+  startDate   DateTime
+  endDate     DateTime?
+  manager     String?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  timeEntries TimeEntry[]
+
+  @@index([status])
+}
+
+model TimeEntry {
+  id           String     @id @default(cuid())
+  engagementId String
+  employeeId   String
+  date         DateTime
+  hours        Float
+  rate         Float      @default(0)
+  amount       Float      @default(0)
+  description  String?
+  billable     Boolean    @default(true)
+  createdAt    DateTime   @default(now())
+  engagement   Engagement @relation(fields: [engagementId], references: [id], onDelete: Cascade)
+
+  @@index([engagementId])
+  @@index([employeeId])
+  @@index([date])
+}

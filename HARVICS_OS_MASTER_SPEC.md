@@ -1,8 +1,46 @@
 # HARVICS OS — MASTER SPECIFICATION
-# Last Updated: May 26, 2026 (Session 39 — Generic Factory · 71/71 LIVE)
+# Last Updated: May 26, 2026 (Session 41 — xAI Grok Imagine Gateway)
 # READ THIS FIRST. EVERY SESSION. NO EXCEPTIONS.
 
 ---
+
+## ✅ LATEST SESSION UPDATE (May 26, 2026 · Session 41 — xAI Grok Imagine Gateway)
+
+**TASK COMPLETED:** Added an isolated server-only xAI image generation gateway route for Grok Imagine.
+
+### Deliverable
+- **New:** `src/app/api/grok/imagine/route.ts`
+
+### Behavior
+- Implements `POST` gateway to `https://api.x.ai/v1/images/generations`.
+- Uses server-only key `process.env.XAI_API_KEY` (never exposed to client).
+- Uses model `grok-imagine-image-quality`.
+- Appends strict corporate style enforcement to user prompt for brand-safe visual direction.
+- Supports bounded `n` (1..10), optional `aspect_ratio`, optional `response_format`.
+- Returns normalized JSON payload `{ success: true, data: [...] }` from upstream response.
+
+### Scope Guard
+- No header/visual/layout files touched.
+- No routing tree changes outside the new API route.
+
+## ✅ LATEST SESSION UPDATE (May 26, 2026 · Session 40 — xAI Grok Secure Gateway)
+
+**TASK COMPLETED:** Added an isolated server-only xAI Grok gateway route for secure streaming completions.
+
+### Deliverable
+- **New:** `src/app/api/grok/route.ts`
+
+### Behavior
+- Implements `POST` gateway to `https://api.x.ai/v1/chat/completions`.
+- Uses server-only key `process.env.XAI_API_KEY` (never exposed to client).
+- Falls back to model `grok-4.3` when no model is provided.
+- Injects immutable system prompt:
+  - "You are the Harvics Sovereign Trade Infrastructure Copilot. You must only return responses tailored for an Alabaster Cream canvas platform (#F5F0E8). All tabular data structures you return must match the standard 'harvics-table' layout schema cleanly."
+- Returns upstream readable stream back to callers.
+
+### Scope Guard
+- No header/visual/layout files touched.
+- No dashboard routing tree changes.
 
 ## ✅ LATEST SESSION UPDATE (May 26, 2026 · Session 39 — Generic Factory · 71/71 LIVE)
 
@@ -2033,6 +2071,32 @@ Deliverable: Full frontend connected to Teams 1-4.
 
 
 ## CURRENT STATE — April 2, 2026
+
+### GLOBAL INFRASTRUCTURE RE-ENGINEERING PASS (May 26, 2026)
+- Scope: Compiler/layout-layer design infrastructure only (no backend/auth/i18n/routing logic edits)
+- Updated: `src/app/globals.css`
+  - Top-level token root normalized to `--harvics-*` core tokens (`burgundy`, `cream`, `gold`, `muted`, `dark`, vault easing, 1440 layout)
+  - Consolidated global scrollbar definition to a single brand-token block
+  - Added utility contracts: `.harvics-card-light`, `.harvics-card-dark`, `.harvics-divider-gold`, `.harvics-divider-burgundy`
+  - Added global enterprise contracts: `.harvics-table` and `.harvics-input-field`
+  - Added strict global focus-visible rule using `var(--harvics-gold)`
+- Updated: `src/config/tier-colors.ts`
+  - Replaced hardcoded tier hex palette entries with `var(--harvics-*)` token references
+- Updated: `src/utils/contentPopulator.ts`, `src/utils/folderScanner.ts`
+  - Removed emoji-based `icon` strings and replaced with neutral icon keys for SVG pipeline compatibility
+- Verification:
+  - `next build` compiles assets successfully but fails on pre-existing type issue:
+    - `src/app/[locale]/os/controlling/page.tsx`: invalid Page export field `Hdr`
+
+### DESIGN SYSTEM LAW — ROOT RULES FILE ADDED (May 26, 2026)
+- File: `HARVICS_SYSTEM_RULES.md`
+- Scope: Permanent visual/design compliance law for the codebase
+- Contents: master palette, 25 compliance pillars, fixed header zone mapping, and explicit rules against hardcoded hex, emojis, and destructive Option A replacements without approval
+
+### AGENT SCOPE GUARDRAIL — REPO RULES ADDED (May 26, 2026)
+- File: `.cursorrules`
+- Scope policy: color/font/design-system requests default to GLOBAL repository scope unless user explicitly narrows scope
+- Clarification: T1/T2/T3 are header-local zones and must not be treated as global scope on their own
 
 ### INDUSTRIAL VERTICAL HERO — SLIDER ENABLED (May 20, 2026)
 - File: src/app/[locale]/[vertical]/VerticalPageClient.tsx
