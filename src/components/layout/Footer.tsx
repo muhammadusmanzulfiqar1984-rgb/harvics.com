@@ -56,21 +56,22 @@ const Footer: React.FC = () => {
     <>
       <NestleNewsSection />
 
-      {/* Main Footer — Ivory background, Apple-clean */}
-      <footer style={{ background: '#ffffff', borderTop: '1px solid rgba(195,163,94,0.2)' }}>
+      {/* Main Footer — full-width outer shell, constrained inner content */}
+      <footer className="w-full bg-[#1A0505]">
 
         {/* Brand + Links Grid */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="w-full bg-harvics-cream border-t border-harvics-gold/20">
+          <div className="universal-layout-frame py-4">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 mb-3">
 
             {/* Brand */}
             <div className="lg:col-span-4">
               <Link href={`/${locale}`} className="inline-block mb-1">
-                <h2 className="text-lg tracking-wide" style={{ color: '#6B1F2B', fontWeight: 300 }}>
+                <h2 className="text-lg tracking-wide" style={{ color: 'var(--harvics-burgundy)', fontWeight: 300 }}>
                   {t('companyName') || 'Harvics'}
                 </h2>
               </Link>
-              <p className="text-xs leading-relaxed mb-2" style={{ color: '#6B1F2B', opacity: 0.6, lineHeight: '1.5' }}>
+              <p className="text-xs leading-relaxed mb-2" style={{ color: 'var(--harvics-burgundy)', opacity: 0.6, lineHeight: '1.5' }}>
                 {t('brandStatement') || 'A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.'}
               </p>
               <div className="w-8 h-8 opacity-50">
@@ -81,7 +82,7 @@ const Footer: React.FC = () => {
             {/* Links */}
               <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
               <div>
-                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E' }}>
+                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold" style={{ color: 'var(--harvics-burgundy)', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C9A84C 0%, #C9A84C 100%)', border: '1px solid #C9A84C' }}>
                   {t('usefulLinks') || 'USEFUL LINKS'}
                 </h3>
                 <ul className="space-y-1">
@@ -93,7 +94,7 @@ const Footer: React.FC = () => {
                     { href: `/${locale}/compliance`, label: t('speakUp') || 'Speak Up' },
                   ].map(link => (
                     <li key={link.href}>
-                      <Link href={link.href} className="text-sm transition-all duration-200 hover:opacity-100 hover:translate-x-1 inline-block" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
+                      <Link href={link.href} className="text-sm transition-all duration-200 hover:opacity-100 hover:translate-x-1 inline-block" style={{ color: 'var(--harvics-burgundy)', opacity: 0.6, textDecoration: 'none' }}>
                         {link.label}
                       </Link>
                     </li>
@@ -102,7 +103,7 @@ const Footer: React.FC = () => {
               </div>
 
               <div>
-                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E' }}>
+                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold" style={{ color: 'var(--harvics-burgundy)', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C9A84C 0%, #C9A84C 100%)', border: '1px solid #C9A84C' }}>
                   {t('company') || 'COMPANY'}
                 </h3>
                 <ul className="space-y-1">
@@ -116,7 +117,7 @@ const Footer: React.FC = () => {
                     { href: `/${locale}/csr`, label: t('sustainability') || 'Sustainability' },
                   ].map(link => (
                     <li key={link.href}>
-                      <Link href={link.href} className="text-sm transition-all duration-200 hover:opacity-100 hover:translate-x-1 inline-block" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
+                      <Link href={link.href} className="text-sm transition-all duration-200 hover:opacity-100 hover:translate-x-1 inline-block" style={{ color: 'var(--harvics-burgundy)', opacity: 0.6, textDecoration: 'none' }}>
                         {link.label}
                       </Link>
                     </li>
@@ -125,7 +126,7 @@ const Footer: React.FC = () => {
               </div>
 
               <div>
-                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E' }}>
+                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold" style={{ color: 'var(--harvics-burgundy)', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C9A84C 0%, #C9A84C 100%)', border: '1px solid #C9A84C' }}>
                   {t('media') || 'MEDIA'}
                 </h3>
                 <ul className="space-y-1">
@@ -135,7 +136,7 @@ const Footer: React.FC = () => {
                     { href: `/${locale}/media/images`, label: t('images') || 'Images' },
                   ].map(link => (
                     <li key={link.href}>
-                      <Link href={link.href} className="text-sm transition-opacity duration-200 hover:opacity-100" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
+                      <Link href={link.href} className="text-sm transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--harvics-burgundy)', opacity: 0.6, textDecoration: 'none' }}>
                         {link.label}
                       </Link>
                     </li>
@@ -144,7 +145,7 @@ const Footer: React.FC = () => {
               </div>
 
               <div>
-                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold" style={{ color: '#6B1F2B', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', border: '1px solid #C3A35E' }}>
+                <h3 className="mb-3 inline-block px-3 py-1.5 uppercase text-xs font-bold" style={{ color: 'var(--harvics-burgundy)', letterSpacing: '0.12em', fontSize: '10px', background: 'linear-gradient(135deg, #C9A84C 0%, #C9A84C 100%)', border: '1px solid #C9A84C' }}>
                   {t('investors') || 'INVESTORS'}
                 </h3>
                 <ul className="space-y-1">
@@ -154,7 +155,7 @@ const Footer: React.FC = () => {
                     { href: `/${locale}/investors/publications`, label: t('publications') || 'Publications' },
                   ].map(link => (
                     <li key={link.href}>
-                      <Link href={link.href} className="text-sm transition-opacity duration-200 hover:opacity-100" style={{ color: '#6B1F2B', opacity: 0.6, textDecoration: 'none' }}>
+                      <Link href={link.href} className="text-sm transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--harvics-burgundy)', opacity: 0.6, textDecoration: 'none' }}>
                         {link.label}
                       </Link>
                     </li>
@@ -163,9 +164,12 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
+          </div>
+        </div>
 
-          {/* Social Icons */}
-          <div className="flex items-center justify-center gap-4 py-4" style={{ background: '#6B1F2B', borderTop: '1px solid rgba(195,163,94,0.3)' }}>
+          {/* Social Icons — T1-style utility stratum */}
+          <div className="w-full" style={{ background: '#1A0505', borderTop: '1px solid rgba(201,168,76,0.3)', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
+            <div className="universal-layout-frame flex items-center justify-center gap-4 py-4">
             {socialLinks.map(social => (
               <a
                 key={social.label}
@@ -173,18 +177,21 @@ const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 flex items-center justify-center transition-all duration-200 hover:opacity-100 hover:-translate-y-0.5"
-                style={{ opacity: 0.7 }}
+                style={{ opacity: 0.8 }}
                 aria-label={social.label}
               >
                 <svg className="w-5 h-5 transition-transform duration-300 hover:scale-110" viewBox="0 0 24 24">
-                  <path fill="#C3A35E" d={social.path} />
+                  <path fill="#C9A84C" d={social.path} />
                 </svg>
               </a>
             ))}
+            </div>
           </div>
 
           {/* Newsletter */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 py-4 px-4" style={{ background: '#6B1F2B' }}>
+          <div className="w-full bg-harvics-cream">
+            <div className="universal-layout-frame">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-2 py-4 px-4">
             <form onSubmit={handleNewsletterSubmit} className="flex items-center gap-2 w-full max-w-md">
               <input
                 type="email"
@@ -192,13 +199,13 @@ const Footer: React.FC = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t('enterEmailPlaceholder') || 'Enter your email'}
                 className="flex-1 px-4 py-2.5 text-sm transition-all duration-300 outline-none"
-                style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(195,163,94,0.5)', color: '#C3A35E' }}
+                style={{ background: '#ffffff', border: '1px solid rgba(201,168,76,0.5)', color: 'var(--harvics-burgundy)' }}
                 onFocus={(e) => {
-                  e.target.style.borderColor = '#C3A35E'
-                  e.target.style.boxShadow = '0 0 0 3px rgba(195,163,94,0.2)'
+                  e.target.style.borderColor = '#C9A84C'
+                  e.target.style.boxShadow = '0 0 0 3px rgba(201,168,76,0.2)'
                 }}
                 onBlur={(e) => {
-                  e.target.style.borderColor = 'rgba(195,163,94,0.5)'
+                  e.target.style.borderColor = 'rgba(201,168,76,0.5)'
                   e.target.style.boxShadow = 'none'
                 }}
                 required
@@ -207,28 +214,29 @@ const Footer: React.FC = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className="group relative px-5 py-2.5 text-sm font-bold overflow-hidden transition-all duration-300 disabled:opacity-50"
-                style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #d4b46e 100%)', color: '#6B1F2B', border: '1px solid #C3A35E' }}
+                style={{ background: '#1A0505', color: '#F5F0E8', border: '1px solid #C9A84C' }}
               >
                 <span className="relative z-10">{isSubmitting ? '...' : (t('subscribe') || 'Subscribe')}</span>
               </button>
             </form>
             {submitMessage && (
-              <p className="text-sm mt-1 animate-pulse" style={{ color: submitMessage.includes('Thank') ? '#C3A35E' : '#dc2626' }}>
+              <p className="text-sm mt-1 animate-pulse" style={{ color: submitMessage.includes('Thank') ? '#C9A84C' : '#dc2626' }}>
                 {submitMessage}
               </p>
             )}
+              </div>
+            </div>
           </div>
-        </div>
 
-        {/* Bottom Bar — thin maroon strip, only place maroon is used as bg */}
-        <div style={{ background: '#6B1F2B', padding: '12px 0' }}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs" style={{ color: 'rgba(245,241,232,0.7)' }}>
+        {/* Bottom Bar — extreme utility stratum (inverse T1) */}
+        <div style={{ background: '#1A0505', padding: '12px 0' }}>
+          <div className="universal-layout-frame">
+            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs" style={{ color: 'rgba(201,168,76,0.9)' }}>
               <span>&copy; {new Date().getFullYear()} {t('companyName') || 'Harvics'}</span>
               {bottomLinks.map((link, i) => (
                 <React.Fragment key={link.href}>
-                  <span style={{ opacity: 0.3 }}>|</span>
-                  <Link href={link.href} className="transition-opacity duration-200 hover:opacity-100" style={{ color: 'rgba(245,241,232,0.7)', textDecoration: 'none' }}>
+                  <span style={{ opacity: 0.45 }}>|</span>
+                  <Link href={link.href} className="transition-opacity duration-200 hover:opacity-100" style={{ color: 'rgba(201,168,76,0.9)', textDecoration: 'none' }}>
                     {link.label}
                   </Link>
                 </React.Fragment>

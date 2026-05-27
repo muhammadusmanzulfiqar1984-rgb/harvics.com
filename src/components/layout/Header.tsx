@@ -158,9 +158,9 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
     <header className="sticky top-0 z-50 w-full backdrop-blur-md border-b border-[#1A0505]/10 pointer-events-auto font-sans">
 
       {/* T1 — TOP UTILITY BAR: deep oxblood with cream text */}
-      <div className="relative hidden lg:block w-full bg-[#1A0505] text-[#F5F0E8] py-2 text-[11px] font-medium tracking-wider">
-        <div className="universal-layout-frame">
-          <div className="flex justify-between items-center" style={{ height: '32px' }}>
+      <div className="w-full bg-[#1A0505]">
+        <div className="relative hidden lg:block text-[#F5F0E8] py-2 text-[11px] font-medium tracking-wider">
+          <div className="universal-layout-frame max-w-harvics-layout flex justify-between items-center" style={{ height: '32px' }}>
 
             {/* Left links */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '20px', whiteSpace: 'nowrap' }}>
@@ -388,7 +388,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
         `}} />
 
         {/* T3 — NAV BAR: 10 Industry verticals + mega dropdown */}
-        <div className="hidden lg:block w-full py-2.5 bg-white shadow-sm overflow-hidden">
+        <div className="hidden lg:block w-full py-2.5 bg-white shadow-sm">
           <div className="universal-layout-frame">
             <SupremeNavBar />
           </div>

@@ -33,6 +33,7 @@ const GlobalAnalyticsDashboard: React.FC = () => {
   const [timeRange, setTimeRange] = useState<'1D' | '7D' | '1M' | '3M' | '1Y' | 'ALL'>('1Y')
   const [analyticsData, setAnalyticsData] = useState<AnalyticsData | null>(null)
   const [activeView, setActiveView] = useState<'overview' | 'products' | 'cities' | 'hr'>('overview')
+  const [isRefreshing, setIsRefreshing] = useState(false)
   const [liveMetrics, setLiveMetrics] = useState({
     totalRevenue: 100000000,
     growth: 15,
@@ -40,24 +41,54 @@ const GlobalAnalyticsDashboard: React.FC = () => {
     distributors: 100
   })
 
-  // Add live fluctuations to key metrics
-  useEffect(() => {
-    const fluctuationInterval = setInterval(() => {
-      const baseRevenue = selectedLocation?.data?.revenue || 100000000
-      const baseGrowth = selectedLocation?.data?.growth || 15
-      const baseDistributors = selectedLocation?.data?.distributors || 100
-      const currentMarketShare = analyticsData?.marketShare?.[analyticsData.marketShare.length - 1] || 20
+  const fetchLiveMetrics = async () => {
+    setIsRefreshing(true);
+    try {
+      const res = await fetch('/api/grok', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          messages: [{ role: 'user', content: 'Generate realistic, randomized global analytics data for a dashboard. Return ONLY a raw, minified JSON object (no markdown, no backticks, no explanations) with exactly these 4 keys: "totalRevenue" (number between 90000000 and 150000000), "growth" (number between 5 and 35), "marketShare" (number between 10 and 30), and "distributors" (number between 50 and 200).' }]
+        })
+      });
       
-        setLiveMetrics(prev => ({
-          totalRevenue: baseRevenue * (1 + (Math.random() - 0.5) * 0.02),
-          growth: Math.max(10, Math.min(30, baseGrowth + (Math.random() - 0.5) * 2)),
-          marketShare: Math.max(15, Math.min(25, currentMarketShare + (Math.random() - 0.5) * 0.5)),
-          distributors: Math.max(0, baseDistributors + Math.floor((Math.random() - 0.5) * 10))
-        }))
-    }, 2000) // Changed to 2 seconds for more visible updates
+      if (res.body) {
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let jsonString = '';
+        
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          
+          const chunkStr = decoder.decode(value, { stream: true });
+          const lines = chunkStr.split('\n');
+          for (const line of lines) {
+            if (line.startsWith('data: ') && line !== 'data: [DONE]') {
+              try {
+                const data = JSON.parse(line.slice(6));
+                const content = data.choices[0]?.delta?.content;
+                if (content) jsonString += content;
+              } catch (e) {}
+            }
+          }
+        }
+        
+        // Clean up any potential markdown formatting the AI might have snuck in
+        const cleanJson = jsonString.replace(/```json/g, '').replace(/```/g, '').trim();
+        const parsed = JSON.parse(cleanJson);
+        setLiveMetrics(parsed);
+      }
+    } catch (error) {
+      console.error("Gateway fetch failed", error);
+    }
+    setIsRefreshing(false);
+  };
 
-    return () => clearInterval(fluctuationInterval)
-  }, [analyticsData, selectedLocation])
+  // Run once on mount
+  useEffect(() => {
+    fetchLiveMetrics();
+  }, [selectedLocation]);
 
   // Generate comprehensive analytics data
   useEffect(() => {
@@ -177,6 +208,17 @@ const GlobalAnalyticsDashboard: React.FC = () => {
                   {range}
                 </button>
               ))}
+              <button
+                onClick={fetchLiveMetrics}
+                disabled={isRefreshing}
+                className={`ml-4 px-4 py-2 rounded-lg text-sm font-bold transition-all duration-300 flex items-center gap-2 ${
+                  isRefreshing 
+                    ? 'bg-gray-600 text-gray-400 cursor-not-allowed' 
+                    : 'bg-[#C3A35E] text-black hover:bg-white shadow-lg shadow-[#C3A35E]/20'
+                }`}
+              >
+                {isRefreshing ? 'STREAMING...' : '🔄 REFRESH LIVE DATA'}
+              </button>
             </div>
           </div>
         </div>
