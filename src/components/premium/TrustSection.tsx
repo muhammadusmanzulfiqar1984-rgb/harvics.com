@@ -123,8 +123,8 @@ const TrustSection: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-full flex flex-col justify-center overflow-hidden"
-      style={{ background: '#0D0D0D', padding: '96px 0', color: '#F5F0E8' }}
+      className="relative min-h-screen flex flex-col justify-center overflow-hidden"
+      style={{ background: '#0D0D0D', padding: '56px 0', color: '#F5F0E8' }}
     >
       {/* Vault glow — soft gold radial bloom anchored at center */}
       <div
@@ -152,7 +152,7 @@ const TrustSection: React.FC = () => {
 
         {/* ── TOP: CERTIFICATIONS — DOCUMENT VAULT ── */}
         <div style={{
-          marginBottom: '64px',
+          marginBottom: '40px',
           opacity: visible ? 1 : 0,
           transform: visible ? 'translateY(0)' : 'translateY(20px)',
           transition: 'opacity 0.6s ease 0.1s, transform 0.6s ease 0.1s',
@@ -162,7 +162,7 @@ const TrustSection: React.FC = () => {
             height: '1px',
             width: '192px',
             background: 'linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent)',
-            margin: '0 auto 24px',
+            margin: '0 auto 18px',
           }} />
           <p style={{
             textAlign: 'center',
@@ -178,12 +178,12 @@ const TrustSection: React.FC = () => {
           </p>
           <h2 style={{
             textAlign: 'center',
-            fontSize: 'clamp(22px, 3vw, 36px)',
+            fontSize: 'clamp(20px, 2.6vw, 32px)',
             fontWeight: 300,
             letterSpacing: '0.01em',
             color: '#F5F0E8',
             lineHeight: 1.25,
-            marginBottom: '56px',
+            marginBottom: '32px',
             fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
           }}>
             Every product ships with{' '}
@@ -237,7 +237,7 @@ const TrustSection: React.FC = () => {
         <div style={{
           height: '1px',
           background: 'linear-gradient(90deg, transparent, rgba(201,168,76,0.30), transparent)',
-          margin: '8px 0 48px',
+          margin: '8px 0 32px',
           opacity: visible ? 1 : 0,
           transition: 'opacity 0.6s ease 0.6s',
         }} />

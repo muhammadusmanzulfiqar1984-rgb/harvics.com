@@ -52,7 +52,7 @@ const ContactSection: React.FC = () => {
   return (
     <section
       ref={ref}
-      className={`h-full flex flex-col justify-center ${revealClass(isVisible, 'up')}`}
+      className={`min-h-screen flex flex-col justify-center ${revealClass(isVisible, 'up')}`}
       style={{ background: 'linear-gradient(160deg, #ffffff 0%, #faf9f7 60%, #f5f4f2 100%)' }}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">

@@ -1686,26 +1686,26 @@ router.use('/wave3', wave3Router);
 
 // Wave 4 — Bucket A completions (Controlling, FP&A, S&D routing,
 // BOM explode, Recipe scaling, Warehouse bins+putaway, Demand forecast, Fleet trips).
-router.use('/wave4', wave4Router);
+router.use('/wave4', requireAuthScope, wave4Router);
 
 // Wave 5 — Bucket B (16 modules: PaymentRun, CPQ, Contracts, Sourcing,
 // ShopFloor, 3PL, Talent, LMS, Performance, Workforce, PM, Properties,
 // BI Reports, Board Pack, Variance AI, Service tickets, Pro Services).
-router.use('/wave5', wave5Router);
+router.use('/wave5', requireAuthScope, wave5Router);
 
 // Wave 6 — Bucket C (15 modules: Wallet, Feed, Communities, Marketplace,
 // JobBoard, Events, Knowledge, Mentorship, Polls, Kudos, Referrals,
 // Customer/Supplier/Partner portals, Mobile API Gateway).
-router.use('/wave6', wave6Router);
+router.use('/wave6', requireAuthScope, wave6Router);
 
 // Wave 7 — Final 6 modules (Controlling, Integration Bus, Data Ocean,
 // Harvoice, Trade Floor, Crypto Lite). Brings HARVICS OS to 71/71 live.
-router.use('/wave7', wave7Router);
+router.use('/wave7', requireAuthScope, wave7Router);
 
 // Wave 8 — Smart CRM (AI-powered, Groq Llama 3.3 70B). Lead scoring,
 // email drafting, activity timeline, pipeline metrics. Graceful degrade
 // when GROQ_API_KEY is missing.
-router.use('/wave8', wave8Router);
+router.use('/wave8', requireAuthScope, wave8Router);
 
 router.get('/modules/contracts', (_req: Request, res: Response) => {
   const generated = Array.from(CONTRACT_READY_SEGMENTS)
@@ -1990,6 +1990,10 @@ void seedAllModules().then(({ seeded, skipped }) => {
 
 // ── AI INTELLIGENCE ROUTES (PROTECTED - AUTH REQUIRED) ───────────────
 router.use('/intelligence', requireAuthScope, intelligenceRouter);
+
+// ── FX (PUBLIC — exchange rates are public data, cached 1h) ──────────
+import { fxRouter } from './modules/services/fx.controller';
+router.use('/services/fx', fxRouter);
 
 // ── EXPOSED SERVICES (PROTECTED - AUTH REQUIRED) ─────────────────────
 router.use('/services', requireAuthScope, servicesRouter);

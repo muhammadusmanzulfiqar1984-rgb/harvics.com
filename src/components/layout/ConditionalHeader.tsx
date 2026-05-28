@@ -1,20 +1,16 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import Header from './Header'
 import type { ProductCategory } from '@/data/folderBasedProducts'
 
 interface ConditionalHeaderProps {
   categories?: ProductCategory[]
-  hideOnPaths?: string[]
 }
 
 export default function ConditionalHeader({ 
-  categories = [], 
-  hideOnPaths = [] 
+  categories = []
 }: ConditionalHeaderProps) {
-  const pathname = usePathname()
   const headerRef = useRef<HTMLDivElement>(null)
   const [headerHeight, setHeaderHeight] = useState(136)
 
@@ -31,13 +27,6 @@ export default function ConditionalHeader({
     window.addEventListener('resize', measure)
     return () => window.removeEventListener('resize', measure)
   }, [])
-  
-  const shouldHide = hideOnPaths.some(path => pathname?.includes(path))
-  const isAnalyticsPage = pathname?.includes('/reports/analytics')
-  
-  if (shouldHide || isAnalyticsPage) {
-    return null
-  }
   
   return (
     <>

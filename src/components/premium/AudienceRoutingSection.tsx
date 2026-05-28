@@ -84,7 +84,7 @@ const AudienceRoutingSection: React.FC = () => {
   }, [])
 
   return (
-    <section ref={sectionRef} className="relative h-full flex flex-col justify-center overflow-hidden"
+    <section ref={sectionRef} className="relative min-h-screen flex flex-col justify-center overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #fdfcfb 0%, #f5f4f2 100%)' }}>
 
       {/* Background radials */}
@@ -97,7 +97,7 @@ const AudienceRoutingSection: React.FC = () => {
 
         {/* Header */}
         <div style={{
-          textAlign: 'center', marginBottom: '36px',
+          textAlign: 'center', marginBottom: '24px',
           opacity: visible ? 1 : 0,
           transform: visible ? 'translateY(0)' : 'translateY(24px)',
           transition: 'opacity 0.6s ease, transform 0.6s ease',
@@ -108,7 +108,7 @@ const AudienceRoutingSection: React.FC = () => {
             <div style={{ height: '1px', width: '32px', background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
           </div>
           <h2 style={{
-            fontSize: 'clamp(22px, 3vw, 38px)', fontWeight: 700, letterSpacing: '-0.03em',
+            fontSize: 'clamp(20px, 2.8vw, 32px)', fontWeight: 700, letterSpacing: '-0.03em',
             color: '#1d1d1f', lineHeight: 1.08,
             fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
             marginBottom: '8px',
@@ -124,7 +124,7 @@ const AudienceRoutingSection: React.FC = () => {
         </div>
 
         {/* Cards */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px' }}>
           {portals.map((portal, i) => (
             <div
               key={i}
@@ -140,7 +140,7 @@ const AudienceRoutingSection: React.FC = () => {
                 background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
                 backgroundSize: '220% 100%',
                 border: 'none',
-                padding: '30px 24px',
+                padding: '20px 18px',
                 height: '100%',
                 boxShadow: hovered === i
                   ? '0 12px 36px rgba(195,163,94,0.38), 0 3px 10px rgba(0,0,0,0.1)'
@@ -172,7 +172,7 @@ const AudienceRoutingSection: React.FC = () => {
                   {portal.audience}
                 </div>
                 <h3 style={{
-                  fontSize: '20px', fontWeight: 700, color: '#1a0d00',
+                  fontSize: '18px', fontWeight: 700, color: '#1a0d00',
                   letterSpacing: '-0.03em', marginBottom: '10px',
                   fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
                 }}>

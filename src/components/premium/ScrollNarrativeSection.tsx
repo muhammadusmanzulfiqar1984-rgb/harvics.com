@@ -158,9 +158,9 @@ const ScrollNarrativeSection: React.FC = () => {
   const bars = [0.4, 0.7, 0.55, 0.9, 0.65, 0.45, 0.8, 0.6, 0.75, 0.5, 0.85, 0.4]
 
   return (
-    <section ref={sectionRef} className="relative h-full overflow-hidden" style={{
+    <section ref={sectionRef} className="relative min-h-screen overflow-hidden flex flex-col" style={{
       display: 'grid',
-      gridTemplateRows: '33.33% 33.33% 33.34%',
+      gridTemplateRows: 'auto auto auto',
       background: 'linear-gradient(180deg, #ffffff 0%, #faf9f7 50%, #f5f4f2 100%)',
     }}>
 
@@ -200,7 +200,7 @@ const ScrollNarrativeSection: React.FC = () => {
           border: '1px solid rgba(255,255,255,0.8)',
           boxShadow: '0 4px 24px rgba(107,31,43,0.05), 0 1px 0 rgba(255,255,255,0.9) inset',
         }} />
-        <div ref={headingRef} className="text-center relative z-10 py-4" style={{
+        <div ref={headingRef} className="text-center relative z-10 py-2" style={{
             opacity: headingVisible ? 1 : 0,
             transform: headingVisible ? 'translateY(0)' : 'translateY(20px)',
             transition: 'opacity 0.8s ease, transform 0.8s ease',
@@ -214,7 +214,7 @@ const ScrollNarrativeSection: React.FC = () => {
 
             {/* Animated Headline */}
             <h2 style={{
-              fontSize: 'clamp(22px, 3vw, 34px)',
+              fontSize: 'clamp(20px, 2.8vw, 30px)',
               fontWeight: 700,
               letterSpacing: '-0.03em',
               color: '#1d1d1f',
@@ -276,13 +276,13 @@ const ScrollNarrativeSection: React.FC = () => {
           const pillar = pillars[pi]
           const isHovered = hoveredCard === pi
           return (
-            <div key={pi} className="h-full" style={{
+            <div key={pi} className="h-fit" style={{
               opacity: headingVisible ? 1 : 0,
               transform: headingVisible ? 'translateY(0)' : 'translateY(24px)',
               transition: `opacity 0.6s ease ${0.3 + i * 0.06}s, transform 0.6s ease ${0.3 + i * 0.06}s`,
             }}>
               <div
-                className="eq-card h-full flex flex-col justify-between p-5 cursor-pointer"
+                className="eq-card h-fit flex flex-col justify-between p-4 cursor-pointer"
                 style={{
                   borderRight: i < 3 ? '1px solid rgba(160,130,60,0.15)' : 'none',
                   background: '#0d0608',
@@ -342,13 +342,13 @@ const ScrollNarrativeSection: React.FC = () => {
           const pillar = pillars[pi]
           const isHovered = hoveredCard === pi
           return (
-            <div key={pi} className="h-full" style={{
+            <div key={pi} className="h-fit" style={{
               opacity: headingVisible ? 1 : 0,
               transform: headingVisible ? 'translateY(0)' : 'translateY(24px)',
               transition: `opacity 0.6s ease ${0.6 + i * 0.06}s, transform 0.6s ease ${0.6 + i * 0.06}s`,
             }}>
               <div
-                className="eq-card h-full flex flex-col justify-between p-5 cursor-pointer"
+                className="eq-card h-fit flex flex-col justify-between p-4 cursor-pointer"
                 style={{
                   borderRight: i < 3 ? '1px solid rgba(160,130,60,0.15)' : 'none',
                   background: '#0d0608',

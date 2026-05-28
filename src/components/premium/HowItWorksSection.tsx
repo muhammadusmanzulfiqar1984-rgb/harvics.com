@@ -72,7 +72,7 @@ const HowItWorksSection: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden py-20"
+      className="relative overflow-hidden min-h-screen flex flex-col py-10"
       style={{ background: 'linear-gradient(160deg, #ffffff 0%, #faf9f7 60%, #f5f4f2 100%)' }}
     >
       <style jsx>{`
@@ -117,7 +117,7 @@ const HowItWorksSection: React.FC = () => {
 
         {/* ── Header ── */}
         <div
-          className="text-center mb-14"
+          className="text-center mb-8"
           style={{
             opacity: visible ? 1 : 0,
             transform: visible ? 'translateY(0)' : 'translateY(28px)',
@@ -139,7 +139,7 @@ const HowItWorksSection: React.FC = () => {
 
           {/* Main heading */}
           <h2 style={{
-            fontSize: 'clamp(28px, 4vw, 48px)',
+            fontSize: 'clamp(24px, 3vw, 40px)',
             fontWeight: 800,
             letterSpacing: '-0.04em',
             color: '#1d1d1f',
@@ -170,7 +170,7 @@ const HowItWorksSection: React.FC = () => {
         </div>
 
         {/* ── Steps Grid ── */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', position: 'relative', alignItems: 'stretch' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', position: 'relative', alignItems: 'stretch' }}>
 
           {/* Connector line with arrows */}
           <div className="absolute pointer-events-none" style={{
@@ -214,7 +214,7 @@ const HowItWorksSection: React.FC = () => {
                     ? '2px solid rgba(26,13,0,0.22)'
                     : '1.5px solid rgba(160,130,60,0.2)',
                   borderRadius: '16px',
-                  padding: '28px 24px 24px',
+                  padding: '20px 18px 18px',
                   boxShadow: activeStep === i
                     ? '0 16px 48px rgba(195,163,94,0.38), 0 4px 16px rgba(0,0,0,0.1)'
                     : '0 4px 16px rgba(195,163,94,0.14), 0 1px 4px rgba(0,0,0,0.04)',
@@ -231,7 +231,7 @@ const HowItWorksSection: React.FC = () => {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '18px' }}>
                   {/* Icon box */}
                   <div style={{
-                    width: '52px', height: '52px', borderRadius: '14px', flexShrink: 0,
+                    width: '44px', height: '44px', borderRadius: '14px', flexShrink: 0,
                     background: activeStep === i
                       ? `linear-gradient(135deg, ${step.color}, ${i === 1 ? '#C3A35E' : '#6B1F2B'})`
                       : 'rgba(26,13,0,0.1)',
@@ -245,7 +245,7 @@ const HowItWorksSection: React.FC = () => {
 
                   {/* Bold step number */}
                   <div style={{
-                    fontSize: 'clamp(40px, 4vw, 56px)',
+                    fontSize: 'clamp(32px, 3vw, 44px)',
                     fontWeight: 900,
                     color: activeStep === i ? step.color : 'rgba(26,13,0,0.15)',
                     letterSpacing: '-0.05em',

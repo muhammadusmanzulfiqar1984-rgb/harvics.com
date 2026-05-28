@@ -28,6 +28,24 @@ interface ChatOpts {
   json?: boolean; // ask Groq for JSON output
 }
 
+export interface MarketContext {
+  locale: string;
+  country: string;
+  currency: string;
+  timezone: string;
+}
+
+const DEFAULT_MARKET_CONTEXT: MarketContext = {
+  locale: 'en',
+  country: 'US',
+  currency: 'USD',
+  timezone: 'UTC',
+};
+
+function withMarketContext(context?: Partial<MarketContext>): MarketContext {
+  return { ...DEFAULT_MARKET_CONTEXT, ...(context || {}) };
+}
+
 /** Low-level call. Returns string content, or throws on hard failure. */
 export async function groqChat(messages: ChatMsg[], opts: ChatOpts = {}): Promise<string> {
   if (!aiEnabled()) throw new Error('AI_DISABLED');
@@ -103,11 +121,15 @@ function fallbackScore(lead: { value?: number; stage?: string; source?: string; 
 export async function scoreLead(lead: {
   company: string; contact?: string | null; email?: string | null;
   stage?: string; value?: number; source?: string | null; notes?: string | null;
-}): Promise<LeadScoreResult> {
+}, context?: Partial<MarketContext>): Promise<LeadScoreResult> {
+  const m = withMarketContext(context);
   if (!aiEnabled()) return fallbackScore(lead);
 
-  const sys = 'You are an enterprise B2B sales coach. Score the lead 0-100 and respond ONLY with JSON: {"score":int,"tier":"Hot|Warm|Cool|Cold","reasoning":"1 sentence","nextAction":"1 actionable next step"}.';
-  const user = `Lead:\nCompany: ${lead.company}\nContact: ${lead.contact || '—'}\nEmail: ${lead.email || '—'}\nStage: ${lead.stage || 'Lead'}\nDeal value: $${(lead.value || 0).toLocaleString()}\nSource: ${lead.source || '—'}\nNotes: ${lead.notes || '—'}`;
+  const sys = `You are an enterprise B2B sales coach.
+Respond in locale ${m.locale} and use culturally appropriate business language for country ${m.country}.
+Monetary references must use currency ${m.currency}.
+Score the lead 0-100 and respond ONLY with JSON: {"score":int,"tier":"Hot|Warm|Cool|Cold","reasoning":"1 sentence","nextAction":"1 actionable next step"}.`;
+  const user = `Lead:\nCompany: ${lead.company}\nContact: ${lead.contact || '—'}\nEmail: ${lead.email || '—'}\nStage: ${lead.stage || 'Lead'}\nDeal value: ${m.currency} ${(lead.value || 0).toLocaleString(m.locale)}\nSource: ${lead.source || '—'}\nNotes: ${lead.notes || '—'}\nMarket context: locale=${m.locale}, country=${m.country}, currency=${m.currency}, timezone=${m.timezone}`;
 
   const raw = await safeChat([{ role: 'system', content: sys }, { role: 'user', content: user }], { temperature: 0.2, json: true });
   const parsed = safeJson<LeadScoreResult>(raw);
@@ -125,7 +147,8 @@ export async function draftEmail(input: {
   company: string; contact?: string | null; stage?: string; value?: number;
   purpose: 'follow_up' | 'demo_request' | 'objection_handle' | 'thank_you';
   context?: string;
-}): Promise<{ subject: string; body: string; aiGenerated: boolean }> {
+}, marketContext?: Partial<MarketContext>): Promise<{ subject: string; body: string; aiGenerated: boolean }> {
+  const m = withMarketContext(marketContext);
   if (!aiEnabled()) {
     return {
       subject: `Following up — ${input.company}`,
@@ -133,8 +156,12 @@ export async function draftEmail(input: {
       aiGenerated: false,
     };
   }
-  const sys = 'You write concise B2B sales emails. Respond ONLY with JSON: {"subject":"...","body":"..."}. Keep body under 120 words, no fluff, end with one clear CTA.';
-  const user = `Write a ${input.purpose.replace('_', ' ')} email.\nCompany: ${input.company}\nContact: ${input.contact || 'their team'}\nStage: ${input.stage || 'Lead'}\nDeal value: $${(input.value || 0).toLocaleString()}\nExtra context: ${input.context || 'none'}`;
+  const sys = `You write concise B2B sales emails.
+Language must be ${m.locale}. Tone must match business expectations in ${m.country}.
+Use currency ${m.currency} when mentioning money.
+Respond ONLY with JSON: {"subject":"...","body":"..."}.
+Keep body under 120 words, no fluff, end with one clear CTA.`;
+  const user = `Write a ${input.purpose.replace('_', ' ')} email.\nCompany: ${input.company}\nContact: ${input.contact || 'their team'}\nStage: ${input.stage || 'Lead'}\nDeal value: ${m.currency} ${(input.value || 0).toLocaleString(m.locale)}\nExtra context: ${input.context || 'none'}\nMarket context: locale=${m.locale}, country=${m.country}, currency=${m.currency}, timezone=${m.timezone}`;
   const raw = await safeChat([{ role: 'system', content: sys }, { role: 'user', content: user }], { temperature: 0.5, json: true });
   const parsed = safeJson<{ subject: string; body: string }>(raw);
   if (!parsed?.subject || !parsed?.body) {
@@ -147,13 +174,20 @@ export async function draftEmail(input: {
   return { subject: parsed.subject, body: parsed.body, aiGenerated: true };
 }
 
-export async function summariseActivities(activities: Array<{ type: string; note: string; at: Date }>): Promise<{ summary: string; aiGenerated: boolean }> {
+export async function summariseActivities(
+  activities: Array<{ type: string; note: string; at: Date }>,
+  marketContext?: Partial<MarketContext>
+): Promise<{ summary: string; aiGenerated: boolean }> {
+  const m = withMarketContext(marketContext);
   if (activities.length === 0) return { summary: 'No activities yet.', aiGenerated: false };
   if (!aiEnabled() || activities.length < 2) {
     return { summary: `${activities.length} touchpoint(s). Latest: ${activities[0].type} — ${activities[0].note.slice(0, 80)}`, aiGenerated: false };
   }
-  const sys = 'You summarise CRM activity timelines into 1-2 sentence executive briefs. Mention sentiment if clear. Always factual, never invented.';
-  const user = 'Activities (newest first):\n' + activities.slice(0, 20).map(a => `- [${a.type}] ${a.at.toISOString().slice(0, 10)}: ${a.note}`).join('\n');
+  const sys = `You summarise CRM activity timelines into 1-2 sentence executive briefs.
+Use locale ${m.locale} language and phrasing for country ${m.country}.
+Always factual, never invented.`;
+  const user = `Market context: locale=${m.locale}, country=${m.country}, currency=${m.currency}, timezone=${m.timezone}\n` +
+    'Activities (newest first):\n' + activities.slice(0, 20).map(a => `- [${a.type}] ${a.at.toISOString().slice(0, 10)}: ${a.note}`).join('\n');
   const raw = await safeChat([{ role: 'system', content: sys }, { role: 'user', content: user }], { temperature: 0.3, maxTokens: 200 });
   if (!raw) return { summary: `${activities.length} touchpoints recorded.`, aiGenerated: false };
   return { summary: raw.trim(), aiGenerated: true };

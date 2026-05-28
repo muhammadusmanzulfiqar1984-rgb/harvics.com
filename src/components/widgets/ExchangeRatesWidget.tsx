@@ -39,9 +39,9 @@ export function ExchangeRatesWidget() {
   }, [])
 
   const fetchRates = async () => {
-    const appId = process.env.NEXT_PUBLIC_EXCHANGE_RATES_APP_ID || process.env.OPEN_EXCHANGE_RATES_APP_ID || ''
     try {
-      const res = await fetch(`https://openexchangerates.org/api/latest.json?app_id=${appId}&symbols=${TRACKED.map(t => t.code).join(',')}`)
+      // Use backend FX route — cached server-side, no app ID exposed in browser
+      const res = await fetch(`/api/services/fx/rates?symbols=${TRACKED.map(t => t.code).join(',')}`)
       const data = await res.json()
       const allRates = data?.rates || FALLBACK
       buildRates(allRates)

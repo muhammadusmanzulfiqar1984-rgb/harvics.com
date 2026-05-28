@@ -55,7 +55,7 @@ const LiquidGlassHero: React.FC = () => {
   const repeated = `${tickerText}   ·   ${tickerText}   ·   ${tickerText}`
 
   return (
-    <section className="hero relative w-full h-full overflow-hidden bg-harvics-dark">
+    <section className="hero relative w-full min-h-screen overflow-hidden bg-harvics-dark">
 
       {/* Background image with parallax zoom */}
       <div className="absolute inset-0 z-0">

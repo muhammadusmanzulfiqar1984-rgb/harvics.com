@@ -206,13 +206,12 @@ const SupremeNavBar: React.FC = () => {
 
         {/* Mega Dropdown — Apple-style full width, animated */}
         <div
-          className="absolute top-full left-[calc(-50vw+50%)] w-[100vw] overflow-hidden"
+          className={`absolute top-full left-[calc(-50vw+50%)] w-[100vw] overflow-hidden transition-all duration-300 ease-vault ${activeDropdown && activeVertical ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[-8px]'}`}
           role="menu"
           aria-label={activeVertical ? `${activeVertical.label} submenu` : undefined}
           style={{
             maxHeight: activeDropdown && activeVertical ? '450px' : '0px',
-            opacity: activeDropdown && activeVertical ? 1 : 0,
-            transition: 'max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease',
+            transition: 'max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1)',
             zIndex: 9999,
           }}
           onMouseEnter={cancelClose}
@@ -222,7 +221,7 @@ const SupremeNavBar: React.FC = () => {
             style={{
               background: 'linear-gradient(180deg, #ffffff 0%, #ffffff 100%)',
               borderTop: '1px solid rgba(255,255,255,1)',
-              borderBottom: '1px solid rgba(195, 163, 94, 0.12)',
+              borderBottom: '1px solid rgba(201, 168, 76, 0.12)',
               boxShadow: '0 1px 0 rgba(255,255,255,1) inset, 0 -1px 0 rgba(255,255,255,0.8) inset, 0 16px 48px rgba(0,0,0,0.10), 0 4px 12px rgba(0,0,0,0.05)',
             }}
           >
@@ -242,7 +241,7 @@ const SupremeNavBar: React.FC = () => {
                         href={`/${locale}/${activeVertical.key}/${slugify(block.title)}`}
                         className="block mb-4 group/title"
                         style={{
-                          color: '#6B1F2B',
+                          color: '#1A0505',
                           fontSize: '12px',
                           fontWeight: 700,
                           textTransform: 'uppercase' as const,
@@ -250,7 +249,7 @@ const SupremeNavBar: React.FC = () => {
                           textDecoration: 'none',
                         }}
                       >
-                        <span className="transition-colors duration-200 group-hover/title:text-[#C3A35E]">
+                        <span className="transition-colors duration-200 group-hover/title:text-[#C9A84C]">
                           {block.title}
                         </span>
                       </Link>
@@ -262,7 +261,7 @@ const SupremeNavBar: React.FC = () => {
                             className="group/item relative pl-0 transition-all duration-200 hover:pl-2.5 py-1"
                             style={{
                               display: 'block',
-                              color: '#6B1F2B',
+                              color: '#1A0505',
                               fontSize: '13px',
                               fontWeight: 400,
                               opacity: hoveredItem === `${block.title}-${item}` ? 1 : 0.5,
@@ -277,9 +276,9 @@ const SupremeNavBar: React.FC = () => {
                             <span className="relative">
                               {item}
                               {/* Gold dot indicator */}
-                              <span className="absolute -left-3 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-[#C3A35E] rounded-full opacity-0 scale-0 transition-all duration-200 group-hover/item:opacity-100 group-hover/item:scale-100" />
+                              <span className="absolute -left-3 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-[#C9A84C] rounded-full opacity-0 scale-0 transition-all duration-200 group-hover/item:opacity-100 group-hover/item:scale-100" />
                               {/* Gold underline slide */}
-                              <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#C3A35E]/60 group-hover/item:w-full transition-all duration-300 ease-out" />
+                              <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#C9A84C]/60 group-hover/item:w-full transition-all duration-300 ease-out" />
                             </span>
                           </Link>
                         ))}

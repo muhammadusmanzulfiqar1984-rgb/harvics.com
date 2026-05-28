@@ -2,6 +2,7 @@
 /** #56 HPay Wallet */
 import { useEffect, useState } from 'react'
 import { Hdr, Panel, Page, Grid, Form, Inp, Sel, Tbl, btnB, btnA, td, Pill, getJson, postJson } from '@/components/os/w5ui'
+import { ExchangeRatesWidget } from '@/components/widgets/ExchangeRatesWidget'
 export default function P(){
   const [rows,setRows]=useState<any[]>([]);const [txns,setTxns]=useState<any[]>([]);const [selected,setSelected]=useState<string>('')
   const [form,setForm]=useState({ownerType:'user',ownerId:'',currency:'USD'})
@@ -59,5 +60,9 @@ export default function P(){
         </tr>)}
       </Tbl>
     </Panel>}
-  </Grid></Page>
+  </Grid>
+  <div style={{maxWidth:480,marginTop:16}}>
+    <ExchangeRatesWidget />
+  </div>
+  </Page>
 }

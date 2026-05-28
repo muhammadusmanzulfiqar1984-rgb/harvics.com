@@ -26,9 +26,18 @@ function zerr(err: unknown, res: any) {
   return null;
 }
 
+function getMarketContext(req: any) {
+  const locale = String(req.headers['x-locale'] || req.headers['accept-language'] || 'en').split(',')[0].trim() || 'en';
+  const country = String(req.headers['x-country'] || 'US').toUpperCase();
+  const currency = String(req.headers['x-currency'] || 'USD').toUpperCase();
+  const timezone = String(req.headers['x-timezone'] || 'UTC');
+  return { locale, country, currency, timezone };
+}
+
 // ─── AI HEALTH ──────────────────────────────────────────────────────────────
-wave8Router.get('/ai/health', async (_req, res) => {
-  res.json({ success: true, aiEnabled: aiEnabled(), provider: 'Groq', model: process.env.GROQ_MODEL || 'llama-3.3-70b-versatile' });
+wave8Router.get('/ai/health', async (req, res) => {
+  const market = getMarketContext(req);
+  res.json({ success: true, aiEnabled: aiEnabled(), provider: 'Groq', model: process.env.GROQ_MODEL || 'llama-3.3-70b-versatile', market });
 });
 
 // ─── LEADS ──────────────────────────────────────────────────────────────────
@@ -60,9 +69,10 @@ wave8Router.post('/leads', async (req, res) => {
 });
 
 wave8Router.post('/leads/:id/score', async (req, res) => {
+  const market = getMarketContext(req);
   const lead = await prisma.lead.findUnique({ where: { id: req.params.id } });
   if (!lead) return res.status(404).json({ success: false, error: 'Lead not found' });
-  const result = await scoreLead(lead);
+  const result = await scoreLead(lead, market);
   const updated = await prisma.lead.update({
     where: { id: lead.id },
     data: { aiScore: result.score, aiTier: result.tier, aiScoredAt: new Date() },
@@ -78,21 +88,23 @@ wave8Router.post('/leads/:id/score', async (req, res) => {
       modelName: result.aiGenerated ? (process.env.GROQ_MODEL || 'groq') : 'heuristic',
     },
   });
-  res.json({ success: true, data: updated, insight: result });
+  res.json({ success: true, data: updated, insight: result, market });
 });
 
-wave8Router.post('/leads/bulk-score', async (_req, res) => {
+wave8Router.post('/leads/bulk-score', async (req, res) => {
+  const market = getMarketContext(req);
   const leads = await prisma.lead.findMany({ where: { OR: [{ aiScoredAt: null }, { aiScoredAt: { lt: new Date(Date.now() - 24 * 3600_000) } }] }, take: 25 });
   const results = [];
   for (const lead of leads) {
-    const r = await scoreLead(lead);
+    const r = await scoreLead(lead, market);
     await prisma.lead.update({ where: { id: lead.id }, data: { aiScore: r.score, aiTier: r.tier, aiScoredAt: new Date() } });
     results.push({ id: lead.id, company: lead.company, score: r.score, tier: r.tier });
   }
-  res.json({ success: true, scored: results.length, aiEnabled: aiEnabled(), data: results });
+  res.json({ success: true, scored: results.length, aiEnabled: aiEnabled(), data: results, market });
 });
 
 wave8Router.post('/leads/:id/email-draft', async (req, res) => {
+  const market = getMarketContext(req);
   const Body = z.object({
     purpose: z.enum(['follow_up', 'demo_request', 'objection_handle', 'thank_you']),
     context: z.string().optional(),
@@ -101,11 +113,11 @@ wave8Router.post('/leads/:id/email-draft', async (req, res) => {
     const b = Body.parse(req.body);
     const lead = await prisma.lead.findUnique({ where: { id: req.params.id } });
     if (!lead) return res.status(404).json({ success: false, error: 'Lead not found' });
-    const draft = await draftEmail({ company: lead.company, contact: lead.contact, stage: lead.stage, value: lead.value, purpose: b.purpose, context: b.context });
+    const draft = await draftEmail({ company: lead.company, contact: lead.contact, stage: lead.stage, value: lead.value, purpose: b.purpose, context: b.context }, market);
     const row = await prisma.crmEmailDraft.create({
       data: { leadId: lead.id, purpose: b.purpose, subject: draft.subject, body: draft.body, aiGenerated: draft.aiGenerated },
     });
-    res.status(201).json({ success: true, data: row, aiGenerated: draft.aiGenerated });
+    res.status(201).json({ success: true, data: row, aiGenerated: draft.aiGenerated, market });
   } catch (e) { const z = zerr(e, res); if (z) return; res.status(500).json({ success: false, error: 'draft failed' }); }
 });
 
@@ -157,6 +169,7 @@ wave8Router.get('/activities', async (req, res) => {
 });
 
 wave8Router.get('/leads/:id/timeline', async (req, res) => {
+  const market = getMarketContext(req);
   const lead = await prisma.lead.findUnique({ where: { id: req.params.id } });
   if (!lead) return res.status(404).json({ success: false, error: 'Lead not found' });
   const [activities, insights, drafts] = await Promise.all([
@@ -164,8 +177,8 @@ wave8Router.get('/leads/:id/timeline', async (req, res) => {
     prisma.crmAiInsight.findMany({ where: { leadId: lead.id }, orderBy: { createdAt: 'desc' }, take: 5 }),
     prisma.crmEmailDraft.findMany({ where: { leadId: lead.id }, orderBy: { createdAt: 'desc' }, take: 5 }),
   ]);
-  const summary = await summariseActivities(activities.map(a => ({ type: a.type, note: a.subject + (a.body ? ' — ' + a.body : ''), at: a.occurredAt })));
-  res.json({ success: true, lead, activities, insights, drafts, aiSummary: summary });
+  const summary = await summariseActivities(activities.map(a => ({ type: a.type, note: a.subject + (a.body ? ' — ' + a.body : ''), at: a.occurredAt })), market);
+  res.json({ success: true, lead, activities, insights, drafts, aiSummary: summary, market });
 });
 
 // ─── PIPELINE METRICS ───────────────────────────────────────────────────────

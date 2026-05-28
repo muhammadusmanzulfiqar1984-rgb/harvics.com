@@ -86,7 +86,7 @@ const SupplyChainWheel: React.FC = () => {
   const activeNode = hoveredLabel !== null ? wheelNodes[hoveredLabel] : null
 
   return (
-    <section className="relative h-full px-6 overflow-hidden flex flex-col justify-center" style={{ background: '#ffffff' }}>
+    <section className="relative min-h-screen px-6 overflow-hidden flex flex-col justify-center" style={{ background: '#ffffff' }}>
       <div className="max-w-[1600px] mx-auto">
         {/* Section Header */}
         <div className="text-center mb-4">

@@ -4,6 +4,9 @@
  * Features: lead list, AI scoring, email drafting, activity timeline, pipeline view.
  */
 import { useEffect, useState } from 'react'
+import { useLocale } from 'next-intl'
+import { useCountry } from '@/contexts/CountryContext'
+import { getCurrency } from '@/config/localeConfig'
 
 const B = '#6B1F2B'
 const G = '#C9A84C'
@@ -30,8 +33,21 @@ interface Insight {
   aiGenerated: boolean
 }
 
-async function api(path: string, init?: RequestInit) {
-  const r = await fetch(path, { cache: 'no-store', ...init, headers: { 'Content-Type': 'application/json', ...(init?.headers || {}) } })
+async function api(path: string, init?: RequestInit, marketHeaders?: Record<string, string>) {
+  const token = typeof window !== 'undefined' ? localStorage.getItem('auth_token') : null
+  const authHeader: Record<string, string> = token
+    ? { Authorization: `Bearer ${token}` }
+    : { Authorization: 'Bearer demo-token-company_admin' } // dev fallback
+  const r = await fetch(path, {
+    cache: 'no-store',
+    ...init,
+    headers: {
+      'Content-Type': 'application/json',
+      ...authHeader,
+      ...(marketHeaders || {}),
+      ...(init?.headers || {}),
+    },
+  })
   const j = await r.json()
   if (!r.ok || j.success === false) throw new Error(j.error || `HTTP ${r.status}`)
   return j
@@ -51,6 +67,8 @@ function TierPill({ tier }: { tier?: string | null }) {
 }
 
 export default function SmartCRM() {
+  const locale = useLocale()
+  const { selectedCountry, countryData } = useCountry()
   const [leads, setLeads] = useState<Lead[]>([])
   const [pipeline, setPipeline] = useState<any>(null)
   const [aiHealth, setAiHealth] = useState<any>(null)
@@ -61,24 +79,56 @@ export default function SmartCRM() {
   const [busy, setBusy] = useState<string>('')
   const [form, setForm] = useState({ company: '', contact: '', email: '', value: 0, source: 'Inbound', stage: 'Lead', notes: '' })
   const [activityForm, setActivityForm] = useState({ type: 'note', subject: '', body: '', outcome: 'neutral' })
+  const [usdEquiv, setUsdEquiv] = useState<number | null>(null)
+
+  const marketCurrency = (countryData?.currency?.code || getCurrency(locale) || 'USD').toUpperCase()
+  const marketCountry = (selectedCountry || 'US').toUpperCase()
+  const marketHeaders = {
+    'x-locale': locale,
+    'x-country': marketCountry,
+    'x-currency': marketCurrency,
+    'x-timezone': Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC',
+  }
+
+  const formatMoney = (value: number) =>
+    new Intl.NumberFormat(locale, { style: 'currency', currency: marketCurrency, maximumFractionDigits: 0 }).format(value || 0)
+
+  const formatDate = (value: string | Date) =>
+    new Intl.DateTimeFormat(locale, {
+      dateStyle: 'medium',
+      timeStyle: 'short',
+      timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    }).format(new Date(value))
 
   const load = async () => {
     const [l, p, h] = await Promise.all([
-      api('/api/wave8/leads'),
-      api('/api/wave8/pipeline'),
-      api('/api/wave8/ai/health'),
+      api('/api/wave8/leads', undefined, marketHeaders),
+      api('/api/wave8/pipeline', undefined, marketHeaders),
+      api('/api/wave8/ai/health', undefined, marketHeaders),
     ])
     setLeads(l.data || [])
     setPipeline(p.data)
     setAiHealth(h)
   }
-  useEffect(() => { void load() }, [])
+  useEffect(() => { void load() }, [locale, selectedCountry, countryData?.currency?.code])
+
+  // Convert pipeline total → USD via backend FX
+  useEffect(() => {
+    if (!pipeline?.totals?.totalPipelineValue || marketCurrency === 'USD') {
+      setUsdEquiv(null)
+      return
+    }
+    fetch(`/api/services/fx/convert?from=${marketCurrency}&to=USD&amount=${pipeline.totals.totalPipelineValue}`)
+      .then(r => r.json())
+      .then(j => { if (j?.success) setUsdEquiv(j.amount) })
+      .catch(() => setUsdEquiv(null))
+  }, [pipeline?.totals?.totalPipelineValue, marketCurrency])
 
   const openLead = async (lead: Lead) => {
     setSelected(lead)
     setInsight(null)
     setDraft(null)
-    const t = await api(`/api/wave8/leads/${lead.id}/timeline`)
+    const t = await api(`/api/wave8/leads/${lead.id}/timeline`, undefined, marketHeaders)
     setTimeline(t)
   }
 
@@ -86,7 +136,7 @@ export default function SmartCRM() {
     if (!form.company) return alert('Company required')
     setBusy('create')
     try {
-      await api('/api/wave8/leads', { method: 'POST', body: JSON.stringify({ ...form, value: +form.value || 0, email: form.email || null }) })
+      await api('/api/wave8/leads', { method: 'POST', body: JSON.stringify({ ...form, value: +form.value || 0, email: form.email || null }) }, marketHeaders)
       setForm({ company: '', contact: '', email: '', value: 0, source: 'Inbound', stage: 'Lead', notes: '' })
       await load()
     } catch (e: any) { alert(e.message) } finally { setBusy('') }
@@ -95,7 +145,7 @@ export default function SmartCRM() {
   const scoreLead = async (id: string) => {
     setBusy('score-' + id)
     try {
-      const r = await api(`/api/wave8/leads/${id}/score`, { method: 'POST' })
+      const r = await api(`/api/wave8/leads/${id}/score`, { method: 'POST' }, marketHeaders)
       setInsight(r.insight)
       await load()
       if (selected?.id === id) await openLead({ ...selected, aiScore: r.data.aiScore, aiTier: r.data.aiTier })
@@ -105,7 +155,7 @@ export default function SmartCRM() {
   const bulkScore = async () => {
     setBusy('bulk')
     try {
-      const r = await api('/api/wave8/leads/bulk-score', { method: 'POST' })
+      const r = await api('/api/wave8/leads/bulk-score', { method: 'POST' }, marketHeaders)
       alert(`Scored ${r.scored} leads ${r.aiEnabled ? 'with Groq AI 🚀' : '(heuristic fallback — add GROQ_API_KEY)'}`)
       await load()
     } catch (e: any) { alert(e.message) } finally { setBusy('') }
@@ -115,7 +165,7 @@ export default function SmartCRM() {
     if (!selected) return
     setBusy('draft')
     try {
-      const r = await api(`/api/wave8/leads/${selected.id}/email-draft`, { method: 'POST', body: JSON.stringify({ purpose }) })
+      const r = await api(`/api/wave8/leads/${selected.id}/email-draft`, { method: 'POST', body: JSON.stringify({ purpose }) }, marketHeaders)
       setDraft(r.data)
     } catch (e: any) { alert(e.message) } finally { setBusy('') }
   }
@@ -124,7 +174,7 @@ export default function SmartCRM() {
     if (!selected || !activityForm.subject) return
     setBusy('activity')
     try {
-      await api('/api/wave8/activities', { method: 'POST', body: JSON.stringify({ ...activityForm, leadId: selected.id }) })
+      await api('/api/wave8/activities', { method: 'POST', body: JSON.stringify({ ...activityForm, leadId: selected.id }) }, marketHeaders)
       setActivityForm({ type: 'note', subject: '', body: '', outcome: 'neutral' })
       await openLead(selected)
     } catch (e: any) { alert(e.message) } finally { setBusy('') }
@@ -135,7 +185,7 @@ export default function SmartCRM() {
     if (!confirm(`Convert "${selected.company}" to Deal?`)) return
     setBusy('convert')
     try {
-      const r = await api(`/api/wave8/leads/${selected.id}/convert`, { method: 'POST' })
+      const r = await api(`/api/wave8/leads/${selected.id}/convert`, { method: 'POST' }, marketHeaders)
       alert(r.message)
       await load()
       setSelected(null); setTimeline(null)
@@ -155,6 +205,7 @@ export default function SmartCRM() {
           <div style={{ fontSize: 10, color: G, letterSpacing: '0.15em', fontWeight: 700 }}>WAVE 8 · SMART CRM</div>
           <h1 style={{ fontSize: 28, color: B, margin: 0, fontWeight: 800 }}>AI Lead Pipeline</h1>
           <div style={{ fontSize: 12, color: '#666' }}>Lead scoring + email drafting + activity timeline — powered by Groq Llama 3.3 70B</div>
+          <div style={{ fontSize: 11, color: '#888' }}>Market: {marketCountry} · Locale: {locale} · Currency: {marketCurrency}</div>
         </div>
         <div style={{ ...panel, marginBottom: 0, padding: '10px 14px' }}>
           {aiHealth?.aiEnabled ? (
@@ -177,8 +228,13 @@ export default function SmartCRM() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 12, marginBottom: 16 }}>
           <div style={panel}>
             <div style={{ fontSize: 10, color: G, fontWeight: 700 }}>TOTAL PIPELINE</div>
-            <div style={{ fontSize: 28, color: B, fontWeight: 800 }}>${(pipeline.totals.totalPipelineValue || 0).toLocaleString()}</div>
-            <div style={{ fontSize: 11, color: '#666' }}>Leads ${(pipeline.totals.totalLeadValue).toLocaleString()} + Deals ${(pipeline.totals.totalDealValue).toLocaleString()}</div>
+            <div style={{ fontSize: 28, color: B, fontWeight: 800 }}>{formatMoney(pipeline.totals.totalPipelineValue || 0)}</div>
+            {usdEquiv !== null && (
+              <div style={{ fontSize: 11, color: '#0F766E', fontWeight: 600 }}>
+                ≈ {new Intl.NumberFormat(locale, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(usdEquiv)} USD
+              </div>
+            )}
+            <div style={{ fontSize: 11, color: '#666' }}>Leads {formatMoney(pipeline.totals.totalLeadValue)} + Deals {formatMoney(pipeline.totals.totalDealValue)}</div>
           </div>
           <div style={panel}>
             <div style={{ fontSize: 10, color: G, fontWeight: 700 }}>LEADS BY STAGE</div>
@@ -217,7 +273,7 @@ export default function SmartCRM() {
               <input style={inp} placeholder="Company *" value={form.company} onChange={e => setForm({ ...form, company: e.target.value })} />
               <input style={inp} placeholder="Contact" value={form.contact} onChange={e => setForm({ ...form, contact: e.target.value })} />
               <input style={inp} placeholder="Email" value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} />
-              <input style={inp} placeholder="Value $" type="number" value={form.value} onChange={e => setForm({ ...form, value: +e.target.value })} />
+              <input style={inp} placeholder={`Value (${marketCurrency})`} type="number" value={form.value} onChange={e => setForm({ ...form, value: +e.target.value })} />
               <select style={inp} value={form.source} onChange={e => setForm({ ...form, source: e.target.value })}>
                 {['Inbound', 'Referral', 'Outbound', 'Event', 'Partner', 'Demo'].map(s => <option key={s}>{s}</option>)}
               </select>
@@ -250,7 +306,7 @@ export default function SmartCRM() {
                       <div style={{ fontSize: 10, color: '#888' }}>{l.contact || '—'} · {l.source || '—'}</div>
                     </td>
                     <td style={{ padding: 6 }}>{l.stage}</td>
-                    <td style={{ padding: 6, textAlign: 'right', fontWeight: 700, color: B }}>${l.value.toLocaleString()}</td>
+                    <td style={{ padding: 6, textAlign: 'right', fontWeight: 700, color: B }}>{formatMoney(l.value)}</td>
                     <td style={{ padding: 6, textAlign: 'center', fontWeight: 700, fontSize: 16, color: (l.aiScore ?? 0) >= 75 ? '#991B1B' : (l.aiScore ?? 0) >= 55 ? '#92400E' : '#666' }}>
                       {l.aiScore ?? '—'}
                     </td>
@@ -281,7 +337,7 @@ export default function SmartCRM() {
                 <button onClick={() => { setSelected(null); setTimeline(null) }} style={{ ...btnGhost, padding: '4px 10px' }}>✕</button>
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 8, marginTop: 12 }}>
-                <div><div style={{ fontSize: 10, color: G, fontWeight: 700 }}>VALUE</div><div style={{ fontSize: 18, color: B, fontWeight: 700 }}>${selected.value.toLocaleString()}</div></div>
+                <div><div style={{ fontSize: 10, color: G, fontWeight: 700 }}>VALUE</div><div style={{ fontSize: 18, color: B, fontWeight: 700 }}>{formatMoney(selected.value)}</div></div>
                 <div><div style={{ fontSize: 10, color: G, fontWeight: 700 }}>STAGE</div><div style={{ fontSize: 14 }}>{selected.stage}</div></div>
                 <div><div style={{ fontSize: 10, color: G, fontWeight: 700 }}>AI TIER</div><div><TierPill tier={selected.aiTier} /> <span style={{ fontWeight: 700 }}>{selected.aiScore ?? '—'}</span></div></div>
               </div>
@@ -345,7 +401,7 @@ export default function SmartCRM() {
                   <div key={a.id} style={{ padding: 8, borderBottom: '1px solid #6B1F2B11' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                       <span style={{ fontSize: 11, fontWeight: 700, color: B, textTransform: 'uppercase' }}>{a.type}</span>
-                      <span style={{ fontSize: 10, color: '#888' }}>{new Date(a.occurredAt).toLocaleString()}</span>
+                      <span style={{ fontSize: 10, color: '#888' }}>{formatDate(a.occurredAt)}</span>
                     </div>
                     <div style={{ fontSize: 13, marginTop: 2, color: '#111' }}>{a.subject}</div>
                     {a.body && <div style={{ fontSize: 11, marginTop: 2, color: '#444' }}>{a.body}</div>}

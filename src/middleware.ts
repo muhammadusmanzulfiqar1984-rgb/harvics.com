@@ -1,5 +1,6 @@
 import createMiddleware from 'next-intl/middleware';
 import { NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
 import { rbacMiddleware } from './middleware/rbac';
 import { SUPPORTED_LOCALES, DEFAULT_LOCALE } from '@/config/locales';
 
@@ -12,6 +13,20 @@ const intlMiddleware = createMiddleware({
 });
 
 export default function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  // Temporary safe redirects for legacy/missing pages.
+  const parts = pathname.split('/').filter(Boolean);
+  if (parts.length >= 2 && SUPPORTED_LOCALES.includes(parts[0])) {
+    const locale = parts[0];
+    const page = parts[1];
+    if (page === 'architecture' || page === 'modules') {
+      const url = request.nextUrl.clone();
+      url.pathname = `/${locale}/os`;
+      return NextResponse.redirect(url);
+    }
+  }
+
   // Skip middleware for API routes
   if (request.nextUrl.pathname.startsWith('/api/')) {
     return;

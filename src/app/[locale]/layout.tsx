@@ -179,31 +179,15 @@ export default async function LocaleLayout({
                   <RegionProvider>
                     <CountryProvider>
                       <GeographicSyncWrapper />
-                      {/* Header - hidden on investor-relations, csr, portals, admin pages, OS domain pages, and dashboard pages */}
-                      <ConditionalHeader 
-                        categories={categories} 
-                        hideOnPaths={[
-                          '/investor-relations',
-                          '/csr',
-                          '/portals',
-                          '/portal',
-                          '/distributor-portal',
-                          '/investors',
-                          '/login/investor',
-                          '/admin/company-dashboard',
-                          '/admin',
-                          '/os/',
-                          '/dashboard/company',
-                          '/dashboard'
-                        ]} 
-                      />
+                      {/* Header - global across all routes */}
+                      <ConditionalHeader categories={categories} />
                       {/* Page content with transition */}
                       <PageTransition>
                         <div id="main-content" suppressHydrationWarning>
                           {children}
                         </div>
                       </PageTransition>
-                      {/* Footer - hidden on homepage (shown as snap Frame 9 there) */}
+                      {/* Footer - global across all routes */}
                       <ConditionalFooter />
                       <FrontendWatchdogClient />
                       <BackgroundMusic />
