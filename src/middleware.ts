@@ -12,12 +12,14 @@ const intlMiddleware = createMiddleware({
   localeDetection: false
 });
 
+const SUPPORTED_LOCALE_SET = new Set<string>(SUPPORTED_LOCALES as readonly string[]);
+
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Temporary safe redirects for legacy/missing pages.
   const parts = pathname.split('/').filter(Boolean);
-  if (parts.length >= 2 && SUPPORTED_LOCALES.includes(parts[0])) {
+  if (parts.length >= 2 && SUPPORTED_LOCALE_SET.has(parts[0])) {
     const locale = parts[0];
     const page = parts[1];
     if (page === 'architecture' || page === 'modules') {
