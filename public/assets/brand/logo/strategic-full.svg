@@ -1,0 +1,62 @@
+<svg width="400" height="80" viewBox="0 0 400 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- HARVICS Full Logo: Strategic Icon + Optimized Wordmark -->
+  
+  <!-- Decagon Hub Icon (scaled for full logo) -->
+  <g transform="translate(10, 10)">
+    <!-- Central Hub -->
+    <circle cx="30" cy="30" r="6.18" fill="#C3A35E"/>
+    
+    <!-- 10 Industry Nodes -->
+    <circle cx="30" cy="6" r="3" fill="#6B1F2B"/>
+    <circle cx="46.5" cy="11.5" r="3" fill="#6B1F2B"/>
+    <circle cx="52" cy="24" r="3" fill="#6B1F2B"/>
+    <circle cx="48" cy="38" r="3" fill="#6B1F2B"/>
+    <circle cx="36" cy="47" r="3" fill="#6B1F2B"/>
+    <circle cx="30" cy="54" r="3" fill="#6B1F2B"/>
+    <circle cx="24" cy="47" r="3" fill="#6B1F2B"/>
+    <circle cx="12" cy="38" r="3" fill="#6B1F2B"/>
+    <circle cx="8" cy="24" r="3" fill="#6B1F2B"/>
+    <circle cx="13.5" cy="11.5" r="3" fill="#6B1F2B"/>
+    
+    <!-- Connection Lines -->
+    <g opacity="0.12" stroke="#6B1F2B" stroke-width="1">
+      <line x1="30" y1="6" x2="30" y2="23.82"/>
+      <line x1="46.5" y1="11.5" x2="35" y2="26"/>
+      <line x1="52" y1="24" x2="36" y2="29"/>
+      <line x1="48" y1="38" x2="36" y2="34"/>
+      <line x1="36" y1="47" x2="34" y2="36"/>
+      <line x1="30" y1="54" x2="30" y2="36.18"/>
+      <line x1="24" y1="47" x2="26" y2="36"/>
+      <line x1="12" y1="38" x2="24" y2="34"/>
+      <line x1="8" y1="24" x2="24" y2="29"/>
+      <line x1="13.5" y1="11.5" x2="25" y2="26"/>
+    </g>
+  </g>
+  
+  <!-- HARVICS Wordmark - Golden Ratio Typography -->
+  <g transform="translate(85, 16)">
+    <!-- H -->
+    <path d="M0 0V48M0 0H8V48H8M0 24H24M24 0V48M24 0H32V48H32M24 24H32" fill="#6B1F2B" stroke="#6B1F2B" stroke-width="0.5"/>
+    
+    <!-- A -->
+    <path d="M50 48L60 0H70L80 48H72L70 38H60L58 48H50ZM62 30H68L65 10L62 30Z" fill="#6B1F2B"/>
+    
+    <!-- R -->
+    <path d="M95 0H110C117 0 122 5 122 12C122 16 120 19 117 21L125 48H116L109 27H103V48H95V0ZM103 20H109C112 20 114 18 114 16C114 14 112 12 109 12H103V20Z" fill="#6B1F2B"/>
+    
+    <!-- V -->
+    <path d="M140 0H148L160 36L172 0H180L164 48H156L140 0Z" fill="#6B1F2B"/>
+    
+    <!-- I -->
+    <path d="M195 0H203V48H195V0Z" fill="#6B1F2B"/>
+    
+    <!-- C -->
+    <path d="M220 12V36C225 36 230 31 230 24C230 17 225 12 220 12ZM212 0H220C230 0 238 8 238 24C238 40 230 48 220 48H212V0Z" fill="#6B1F2B"/>
+    
+    <!-- S -->
+    <path d="M255 12C260 12 263 15 263 18H271C271 11 265 4 255 4C245 4 239 11 239 18C239 24 243 27 251 29C257 30 259 32 259 35C259 38 257 40 253 40C248 40 245 37 245 34H237C237 41 243 48 253 48C263 48 269 41 269 35C269 29 265 26 257 24C251 23 249 21 249 18C249 15 251 12 255 12Z" fill="#6B1F2B"/>
+  </g>
+  
+  <!-- Gold accent line (Golden ratio positioned) -->
+  <rect x="10" y="70" width="380" height="1.618" fill="#C3A35E" opacity="0.5"/>
+</svg>
