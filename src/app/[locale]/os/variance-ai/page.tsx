@@ -13,7 +13,7 @@ export default function P(){
     <Panel title="GENERATE">
       <Inp l="Period (YYYY-MM)" v={period} on={v=>setPeriod(v)}/>
       <button onClick={generate} style={btnB}>GENERATE FROM VARIANCE</button>
-      <div style={{marginTop:10,padding:10,background:'#F5F1E8',borderLeft:'4px solid #C3A35E',fontSize:11,color:'#6B1F2B'}}>
+      <div style={{marginTop:10,padding:10,background:'#F5F0E8',borderLeft:'4px solid #C3A35E',fontSize:11,color:'#6B1F2B'}}>
         Reads budget lines + actual allocations for the period, computes variances, then classifies each as Timing / Volume / Price / Mix / Other and produces a draft narrative for review.
       </div>
     </Panel>

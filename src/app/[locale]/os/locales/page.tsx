@@ -7,7 +7,7 @@
 import { useEffect, useState } from 'react'
 
 interface Loc { id:string; code:string; name:string; direction:string; enabled:boolean; fallback:string|null; dateFormat:string|null; currency:string|null }
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F1E8'
+const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
 
 export default function LocalesPage() {
   const [rows, setRows] = useState<Loc[]>([])

@@ -382,7 +382,7 @@ const ChatbotWidget: React.FC = () => {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder={t('placeholder')}
-                className="flex-1 px-3.5 py-2.5 text-sm text-[#6B1F2B] bg-[#F5F1E8]/60 border border-[#C3A35E]/15 focus:outline-none focus:border-[#C3A35E]/40 transition-colors duration-200 placeholder:text-[#6B1F2B]/30"
+                className="flex-1 px-3.5 py-2.5 text-sm text-[#6B1F2B] bg-[#F5F0E8]/60 border border-[#C3A35E]/15 focus:outline-none focus:border-[#C3A35E]/40 transition-colors duration-200 placeholder:text-[#6B1F2B]/30"
                 disabled={loading}
               />
               <button

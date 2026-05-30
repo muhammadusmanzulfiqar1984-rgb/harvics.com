@@ -15,11 +15,11 @@ export default function P(){
       <Inp l="Transcript" v={transcript} on={setTranscript}/>
       <button onClick={send} style={btnB}>🎙 PROCESS</button>
       <div style={{marginTop:10,fontSize:10,color:B,fontWeight:600}}>EXAMPLES</div>
-      {EXAMPLES.map(e=><button key={e} onClick={()=>setTranscript(e)} style={{display:'block',width:'100%',textAlign:'left',padding:4,marginTop:2,fontSize:11,background:'#F5F1E8',color:B,border:'none',cursor:'pointer'}}>"{e}"</button>)}
+      {EXAMPLES.map(e=><button key={e} onClick={()=>setTranscript(e)} style={{display:'block',width:'100%',textAlign:'left',padding:4,marginTop:2,fontSize:11,background:'#F5F0E8',color:B,border:'none',cursor:'pointer'}}>"{e}"</button>)}
     </Panel>
     <Panel title="STATS">
       {!stats?'Loading...':<>
-        <div style={{padding:8,background:'#F5F1E8',marginBottom:8}}>
+        <div style={{padding:8,background:'#F5F0E8',marginBottom:8}}>
           <div style={{fontSize:10,color:B,fontWeight:600}}>TOTAL COMMANDS</div>
           <div style={{fontSize:28,fontWeight:700,color:B}}>{stats.total||0}</div>
           <div style={{fontSize:11,color:'#666'}}>Avg confidence: <b>{stats.avgConfidence||0}</b> · Avg ms: <b>{stats.avgDurationMs||0}</b></div>

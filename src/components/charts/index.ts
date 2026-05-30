@@ -2,7 +2,7 @@
  * Harvics OS — Chart Components
  * 
  * Production-grade interactive charts built on Recharts.
- * All styled with SUPREME design language: maroon #6B1F2B, gold #C3A35E, ivory #F5F1E8.
+ * All styled with SUPREME design language: maroon #6B1F2B, gold #C3A35E, ivory #F5F0E8.
  * All use borderRadius: 0, boxShadow: none — no rounded corners anywhere.
  * 
  * Usage:

@@ -86,7 +86,7 @@ export default function ARContent() {
       </div>
 
       {showRecordPayment && (
-        <div className="bg-[#F5F1E8] border border-[#E5E5EA]/30 p-4 space-y-3" style={{ borderRadius: 0 }}>
+        <div className="bg-[#F5F0E8] border border-[#E5E5EA]/30 p-4 space-y-3" style={{ borderRadius: 0 }}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             <select value={newPayment.invoiceNo} onChange={e => setNewPayment(p => ({ ...p, invoiceNo: e.target.value }))}
               className="px-3 py-2 border border-[#E5E5EA]/30 text-sm" style={{ borderRadius: 0 }}>
@@ -124,7 +124,7 @@ export default function ARContent() {
           </thead>
           <tbody>
             {unpaid.map((inv, i) => (
-              <tr key={inv.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F1E8]/50'}>
+              <tr key={inv.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F0E8]/50'}>
                 <td className="px-4 py-3 font-mono font-semibold text-[#1D1D1F]">{inv.invoiceNo}</td>
                 <td className="px-4 py-3 text-[#6B1F2B]">{inv.customer}</td>
                 <td className="px-4 py-3 text-right font-bold">{inv.currency} {inv.amount.toLocaleString()}</td>
@@ -152,7 +152,7 @@ export default function ARContent() {
             </tr></thead>
             <tbody>
               {payments.map((p, i) => (
-                <tr key={p.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F1E8]/50'}>
+                <tr key={p.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F0E8]/50'}>
                   <td className="px-4 py-2 font-mono">{p.invoiceNo}</td>
                   <td className="px-4 py-2 text-right font-bold text-[#1D1D1F]">{p.currency} {p.amount.toLocaleString()}</td>
                   <td className="px-4 py-2">{p.method}</td>

@@ -17,7 +17,7 @@ export default function P(){
   <Grid cols={3}>
     <Panel title="PORTAL TYPE">
       <Sel l="Active portal" v={portalType} on={setPortalType} opts={['customer','supplier','partner']}/>
-      <div style={{marginTop:10,padding:10,background:'#F5F1E8',borderLeft:`4px solid ${B}`,fontSize:11,color:B}}>Same backend serves all 3 portals (#68 customer / #69 supplier / #70 partner). Switch above to filter.</div>
+      <div style={{marginTop:10,padding:10,background:'#F5F0E8',borderLeft:`4px solid ${B}`,fontSize:11,color:B}}>Same backend serves all 3 portals (#68 customer / #69 supplier / #70 partner). Switch above to filter.</div>
     </Panel>
     <Panel title="START SESSION">
       <Inp l="External ID *" v={form.externalId} on={v=>setForm({...form,externalId:v})}/>

@@ -127,7 +127,7 @@ export default function HarvicsOSShell({
   }
 
   return (
-    <div className="flex h-screen bg-[#F5F1E8] overflow-hidden">
+    <div className="flex h-screen bg-[#F5F0E8] overflow-hidden">
       {/* ─── Mobile Overlay ─── */}
       {sidebarMobileOpen && (
         <div
@@ -338,7 +338,7 @@ export default function HarvicsOSShell({
         </header>
 
         {/* Page Title Bar */}
-        <div className="bg-[#F5F1E8] border-b border-[#C3A35E]/15 px-4 lg:px-6 py-3 flex items-center justify-between">
+        <div className="bg-[#F5F0E8] border-b border-[#C3A35E]/15 px-4 lg:px-6 py-3 flex items-center justify-between">
           <div>
             <h1 className="text-xl font-bold text-[#6B1F2B] font-serif tracking-tight">{title}</h1>
             {subtitle && <p className="text-xs text-[#6B1F2B]/50 mt-0.5">{subtitle}</p>}
@@ -346,7 +346,7 @@ export default function HarvicsOSShell({
         </div>
 
         {/* Main Content */}
-        <main className="flex-1 overflow-y-auto p-4 lg:p-6 bg-[#F5F1E8]">
+        <main className="flex-1 overflow-y-auto p-4 lg:p-6 bg-[#F5F0E8]">
           {children}
         </main>
       </div>

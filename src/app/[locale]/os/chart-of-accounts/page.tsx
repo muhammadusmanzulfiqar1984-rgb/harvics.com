@@ -1,7 +1,7 @@
 'use client'
 /** HARVICS OS — Chart of Accounts (Module #1) — hierarchy + posting periods */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F1E8'
+const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
 interface CoA { id:string; code:string; name:string; accountType:string; parentCode:string|null; active:boolean; children?:CoA[] }
 interface Per { id:string; code:string; startDate:string; endDate:string; status:string }
 const TYPES=['Asset','Liability','Equity','Revenue','Expense']

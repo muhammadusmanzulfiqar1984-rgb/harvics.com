@@ -1,7 +1,7 @@
 'use client'
 /** #2 Controlling — Cost Centers + Allocations + Variance */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F1E8'
+const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
 interface CC{id:string;code:string;name:string;manager:string|null}
 interface Alloc{id:string;period:string;fromAccount:string;toCostCenter:string;amount:number;basis:string|null}
 interface VarRow{account:string;costCenter:string;budgeted:number;actual:number;variance:number;variancePct:number|null}

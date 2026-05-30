@@ -7,7 +7,7 @@
  * `GET /api/m/:moduleId`. Supports list, create, delete with optimistic UI.
  *
  * Design: HARVICS sharp-edge cards (burgundy #6B1F2B, gold #C3A35E, cream
- * #F5F1E8, borderRadius: 0). Mirrors OSDomainTierStructure visual language.
+ * #F5F0E8, borderRadius: 0). Mirrors OSDomainTierStructure visual language.
  */
 
 import { useEffect, useMemo, useState } from 'react'
@@ -28,7 +28,7 @@ interface UniversalModuleScreenProps {
 
 const BURGUNDY = '#6B1F2B'
 const GOLD = '#C3A35E'
-const CREAM = '#F5F1E8'
+const CREAM = '#F5F0E8'
 
 export default function UniversalModuleScreen({ moduleId }: UniversalModuleScreenProps) {
   const entry = getModuleById(moduleId)

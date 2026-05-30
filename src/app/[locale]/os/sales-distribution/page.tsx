@@ -1,7 +1,7 @@
 'use client'
 /** #10 Sales & Distribution — Channels + Routing + Delivery slots */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F1E8'
+const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
 const TYPES=['direct','distributor','online','retail','wholesale'] as const
 interface Ch{id:string;code:string;name:string;type:string;priority:number;leadTimeDays:number;active:boolean}
 interface Slot{id:string;orderId:string|null;channelCode:string;scheduledFor:string;windowStart:string|null;windowEnd:string|null;status:string;driver:string|null}

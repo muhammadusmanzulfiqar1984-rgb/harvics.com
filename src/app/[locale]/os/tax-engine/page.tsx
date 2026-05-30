@@ -7,7 +7,7 @@
 import { useEffect, useState } from 'react'
 
 interface Rate { id: string; country: string; region: string | null; taxType: string; ratePercent: number; effectiveFrom: string; effectiveTo: string | null; notes: string | null }
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F1E8'
+const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
 
 export default function TaxPage() {
   const [rows, setRows] = useState<Rate[]>([])

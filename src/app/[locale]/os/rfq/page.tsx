@@ -1,7 +1,7 @@
 'use client'
 /** HARVICS OS — RFQ Workflow (Module #13) */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F1E8'
+const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
 const SS:Record<string,string>={Draft:'#666',Open:'#1565C0',Closed:'#B8860B',Awarded:'#2E7D32',Cancelled:'#8B0000'}
 interface Resp{id:string;vendorId:string;vendorName:string|null;amount:number;currency:string;leadTimeDays:number|null;status:string;notes:string|null}
 interface RFQ{id:string;rfqNo:string;title:string;status:string;category:string|null;dueDate:string|null;awardedTo:string|null;responses:Resp[]}

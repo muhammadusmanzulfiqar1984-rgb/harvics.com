@@ -63,7 +63,7 @@ function ExportDropdown({ onExport }: { onExport: (format: 'csv' | 'excel' | 'pd
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-[#6B1F2B] bg-white border border-[#C3A35E]/30 hover:border-[#C3A35E] hover:bg-[#F5F1E8] transition-colors uppercase tracking-wider"
+        className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-[#6B1F2B] bg-white border border-[#C3A35E]/30 hover:border-[#C3A35E] hover:bg-[#F5F0E8] transition-colors uppercase tracking-wider"
         style={{ borderRadius: 0 }}
         title="Export data"
       >
@@ -77,19 +77,19 @@ function ExportDropdown({ onExport }: { onExport: (format: 'csv' | 'excel' | 'pd
         >
           <button
             onClick={() => { onExport('csv'); setOpen(false) }}
-            className="block w-full text-left px-4 py-2.5 text-xs text-[#6B1F2B] hover:bg-[#F5F1E8] transition-colors font-medium"
+            className="block w-full text-left px-4 py-2.5 text-xs text-[#6B1F2B] hover:bg-[#F5F0E8] transition-colors font-medium"
           >
             Export as CSV
           </button>
           <button
             onClick={() => { onExport('excel'); setOpen(false) }}
-            className="block w-full text-left px-4 py-2.5 text-xs text-[#6B1F2B] hover:bg-[#F5F1E8] transition-colors font-medium border-t border-[#C3A35E]/10"
+            className="block w-full text-left px-4 py-2.5 text-xs text-[#6B1F2B] hover:bg-[#F5F0E8] transition-colors font-medium border-t border-[#C3A35E]/10"
           >
             Export as Excel
           </button>
           <button
             onClick={() => { onExport('pdf'); setOpen(false) }}
-            className="block w-full text-left px-4 py-2.5 text-xs text-[#6B1F2B] hover:bg-[#F5F1E8] transition-colors font-medium border-t border-[#C3A35E]/10"
+            className="block w-full text-left px-4 py-2.5 text-xs text-[#6B1F2B] hover:bg-[#F5F0E8] transition-colors font-medium border-t border-[#C3A35E]/10"
           >
             Export as PDF
           </button>
@@ -121,7 +121,7 @@ function ViewModeToggle({
           className={`px-2.5 py-2 text-xs transition-colors ${
             mode === m.key
               ? 'bg-[#6B1F2B] text-[#C3A35E]'
-              : 'bg-white text-[#6B1F2B]/60 hover:bg-[#F5F1E8] hover:text-[#6B1F2B]'
+              : 'bg-white text-[#6B1F2B]/60 hover:bg-[#F5F0E8] hover:text-[#6B1F2B]'
           }`}
           title={m.label}
           style={{ borderRadius: 0 }}
@@ -167,7 +167,7 @@ export default function ActionBar({
       case 'ai':
         return 'bg-[#C3A35E] text-[#6B1F2B] hover:bg-[#D4B86A] border-[#C3A35E]'
       default:
-        return 'bg-white text-[#6B1F2B] border-[#C3A35E]/30 hover:border-[#C3A35E] hover:bg-[#F5F1E8]'
+        return 'bg-white text-[#6B1F2B] border-[#C3A35E]/30 hover:border-[#C3A35E] hover:bg-[#F5F0E8]'
     }
   }
 
@@ -279,7 +279,7 @@ export default function ActionBar({
             className={`flex items-center gap-1.5 px-3 py-2 text-xs font-semibold border transition-colors uppercase tracking-wider ${
               filterActive
                 ? 'bg-[#6B1F2B] text-[#C3A35E] border-[#6B1F2B]'
-                : 'bg-white text-[#6B1F2B] border-[#C3A35E]/30 hover:border-[#C3A35E] hover:bg-[#F5F1E8]'
+                : 'bg-white text-[#6B1F2B] border-[#C3A35E]/30 hover:border-[#C3A35E] hover:bg-[#F5F0E8]'
             }`}
             style={{ borderRadius: 0 }}
             title="Toggle filters"
@@ -296,7 +296,7 @@ export default function ActionBar({
         {onRefresh && (
           <button
             onClick={onRefresh}
-            className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-[#6B1F2B] bg-white border border-[#C3A35E]/30 hover:border-[#C3A35E] hover:bg-[#F5F1E8] transition-colors"
+            className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-[#6B1F2B] bg-white border border-[#C3A35E]/30 hover:border-[#C3A35E] hover:bg-[#F5F0E8] transition-colors"
             style={{ borderRadius: 0 }}
             title="Refresh data"
           >

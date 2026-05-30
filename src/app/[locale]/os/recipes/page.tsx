@@ -1,7 +1,7 @@
 'use client'
 /** #21 Recipe Management — recipe scaling */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F1E8'
+const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
 interface Ing{id:string;ingredient:string;qty:number;uom:string;unitCost:number}
 interface Rec{id:string;code:string;name:string;category:string|null;baseYield:number;baseUom:string;ingredients:Ing[]}
 export default function RecipePage(){

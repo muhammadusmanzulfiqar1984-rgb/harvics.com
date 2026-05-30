@@ -13,11 +13,11 @@ export default function P(){
     <Panel title="CAPTURE SNAPSHOT">
       <Sel l="Source table" v={pick} on={setPick} opts={tables}/>
       <button onClick={snap} style={btnB}>📸 SNAPSHOT NOW</button>
-      <div style={{marginTop:10,padding:8,background:'#F5F1E8',borderLeft:`4px solid ${B}`,fontSize:11,color:B}}>Each snapshot counts records, estimates size, and registers it as an immutable lake artefact.</div>
+      <div style={{marginTop:10,padding:8,background:'#F5F0E8',borderLeft:`4px solid ${B}`,fontSize:11,color:B}}>Each snapshot counts records, estimates size, and registers it as an immutable lake artefact.</div>
     </Panel>
     <Panel title="LAKE STATS">
       {!stats?'Loading...':<>
-        <div style={{padding:8,background:'#F5F1E8',marginBottom:8}}>
+        <div style={{padding:8,background:'#F5F0E8',marginBottom:8}}>
           <div style={{fontSize:10,color:B,fontWeight:600}}>TOTAL SNAPSHOTS</div>
           <div style={{fontSize:28,fontWeight:700,color:B}}>{stats.totalSnapshots||0}</div>
           <div style={{fontSize:11,color:'#666'}}>Storage: <b>{stats.totalMB||0} MB</b></div>

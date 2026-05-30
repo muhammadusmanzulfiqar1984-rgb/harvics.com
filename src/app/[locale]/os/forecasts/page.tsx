@@ -13,7 +13,7 @@ interface Forecast {
   confidence: number; notes: string | null
 }
 
-const B = '#6B1F2B'; const G = '#C3A35E'; const C = '#F5F1E8'
+const B = '#6B1F2B'; const G = '#C3A35E'; const C = '#F5F0E8'
 
 export default function ForecastsPage() {
   const [rows, setRows] = useState<Forecast[]>([])

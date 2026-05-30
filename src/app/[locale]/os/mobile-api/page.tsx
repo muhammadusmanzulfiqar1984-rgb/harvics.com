@@ -21,7 +21,7 @@ export default function P(){
     </Panel>
     <Panel title="GATEWAY STATS">
       {!stats?<div style={{padding:20,color:'#888'}}>Loading...</div>:<>
-        <div style={{padding:8,background:'#F5F1E8',marginBottom:8}}>
+        <div style={{padding:8,background:'#F5F0E8',marginBottom:8}}>
           <div style={{fontSize:10,color:B,fontWeight:600}}>TOTAL CALLS</div>
           <div style={{fontSize:24,fontWeight:700,color:B}}>{stats.totalCalls?.toLocaleString()||0}</div>
           <div style={{fontSize:11,color:'#666'}}>Avg latency: <b>{stats.avgLatencyMs||0}ms</b></div>

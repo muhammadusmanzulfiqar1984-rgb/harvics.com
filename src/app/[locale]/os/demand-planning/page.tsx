@@ -1,7 +1,7 @@
 'use client'
 /** #24 Demand Planning — moving-average forecast */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F1E8'
+const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
 interface H{id:string;sku:string;period:string;units:number;revenue:number}
 interface F{id:string;sku:string;period:string;forecastUnits:number;method:string;confidence:number;seasonality:number}
 export default function DemandPage(){

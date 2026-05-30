@@ -128,7 +128,7 @@ export default function PieChartCard({
               innerRadius={innerRadius}
               outerRadius={outerRadius}
               dataKey="value"
-              stroke="#F5F1E8"
+              stroke="#F5F0E8"
               strokeWidth={2}
               label={showLabels ? (renderCustomLabel as unknown as boolean) : undefined}
               labelLine={false}

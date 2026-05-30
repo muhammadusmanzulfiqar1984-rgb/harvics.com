@@ -4,7 +4,7 @@ import React, { CSSProperties } from 'react'
 
 export const B = '#6B1F2B'
 export const G = '#C3A35E'
-export const C = '#F5F1E8'
+export const C = '#F5F0E8'
 
 export function Hdr({ no, band, title, sub }: { no: string; band: string; title: string; sub: string }) {
   return (

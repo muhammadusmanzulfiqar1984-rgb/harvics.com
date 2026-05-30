@@ -28,7 +28,7 @@ export default function P(){
     </Panel>
     <Panel title={`ORDER BOOK — ${pick||'—'}`}>
       {!book?<div style={{padding:20,color:'#888',textAlign:'center'}}>Pick instrument →</div>:<>
-        <div style={{padding:6,background:'#F5F1E8',marginBottom:6,fontSize:11,color:B,fontWeight:600}}>Last: <b style={{fontSize:14}}>${book.instrument?.lastPrice}</b> · Spread: {book.spread!==null?`$${book.spread}`:'—'}</div>
+        <div style={{padding:6,background:'#F5F0E8',marginBottom:6,fontSize:11,color:B,fontWeight:600}}>Last: <b style={{fontSize:14}}>${book.instrument?.lastPrice}</b> · Spread: {book.spread!==null?`$${book.spread}`:'—'}</div>
         <div style={{fontSize:10,color:'#B71C1C',fontWeight:700}}>ASKS (sell)</div>
         <Tbl head={['PRICE','QTY']}>{(book.asks||[]).slice(0,5).reverse().map((o:any)=><tr key={o.id}><td style={{...td,color:'#B71C1C',fontWeight:700}}>${o.price}</td><td style={td}>{o.qty}</td></tr>)}</Tbl>
         <div style={{fontSize:10,color:'#2E7D32',fontWeight:700,marginTop:6}}>BIDS (buy)</div>

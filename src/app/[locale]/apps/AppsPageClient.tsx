@@ -333,7 +333,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
             <span
               key={f}
               className="text-[10px] px-2 py-1 tracking-[0.04em]"
-              style={{ background: '#f5f1e8', color: '#6B1F2B', border: '1px solid rgba(107,31,43,0.1)' }}
+              style={{ background: '#F5F0E8', color: '#6B1F2B', border: '1px solid rgba(107,31,43,0.1)' }}
             >
               {f}
             </span>
@@ -488,7 +488,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
                   <div
                     key={s.label}
                     className="p-4 text-center"
-                    style={{ background: '#f5f1e8', border: '1px solid rgba(195,163,94,0.2)' }}
+                    style={{ background: '#F5F0E8', border: '1px solid rgba(195,163,94,0.2)' }}
                   >
                     <div className="text-2xl font-bold" style={{ color: '#6B1F2B' }}>{s.value}</div>
                     <div className="text-[10px] tracking-[0.06em] uppercase mt-1" style={{ color: '#9a8070' }}>{s.label}</div>
@@ -526,7 +526,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
                       key={plan.tier}
                       className="p-4"
                       style={{
-                        background: plan.highlight ? '#6B1F2B' : '#f5f1e8',
+                        background: plan.highlight ? '#6B1F2B' : '#F5F0E8',
                         border: plan.highlight ? 'none' : '1px solid rgba(195,163,94,0.2)',
                       }}
                     >
@@ -555,7 +555,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
             ) : (
               <div
                 className="p-5 text-center"
-                style={{ background: '#f5f1e8', border: '1px solid rgba(195,163,94,0.2)' }}
+                style={{ background: '#F5F0E8', border: '1px solid rgba(195,163,94,0.2)' }}
               >
                 <div className="text-xs font-bold tracking-[0.1em] uppercase mb-2" style={{ color: '#C3A35E' }}>
                   Pricing
@@ -608,7 +608,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
   const filtered = activeCategory === 'All' ? APPS : APPS.filter((a) => a.category === activeCategory)
 
   return (
-    <main style={{ background: '#F5F1E8', minHeight: '100vh' }}>
+    <main style={{ background: '#F5F0E8', minHeight: '100vh' }}>
       {/* ── HERO ── */}
       <section
         className="relative py-24 overflow-hidden"

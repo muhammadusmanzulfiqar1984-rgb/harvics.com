@@ -1,7 +1,7 @@
 'use client'
 /** #23 Warehouse Management — bins + putaway */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F1E8'
+const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
 interface Bin{id:string;code:string;zone:string|null;capacity:number;occupied:number;active:boolean;aisle:string|null;rack:string|null;level:string|null}
 interface WH{id:string;code:string;name:string;type:string;bins:Bin[]}
 export default function WHPage(){

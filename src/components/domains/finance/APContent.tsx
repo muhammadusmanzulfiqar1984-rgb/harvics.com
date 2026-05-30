@@ -56,7 +56,7 @@ export default function APContent() {
           </thead>
           <tbody>
             {pos.map((po, i) => (
-              <tr key={po.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F1E8]/50'}>
+              <tr key={po.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F0E8]/50'}>
                 <td className="px-4 py-3 font-mono font-semibold text-[#1D1D1F]">{po.poNumber}</td>
                 <td className="px-4 py-3 text-[#6B1F2B]">{po.supplier}</td>
                 <td className="px-4 py-3 text-right font-bold">{po.currency} {po.total.toLocaleString()}</td>
@@ -70,7 +70,7 @@ export default function APContent() {
         </table>
       </div>
 
-      <div className="bg-[#F5F1E8] border-l-4 border-[#E5E5EA] p-4" style={{ borderRadius: 0 }}>
+      <div className="bg-[#F5F0E8] border-l-4 border-[#E5E5EA] p-4" style={{ borderRadius: 0 }}>
         <div className="flex items-start gap-3">
           <span className="text-xl">🤖</span>
           <div>

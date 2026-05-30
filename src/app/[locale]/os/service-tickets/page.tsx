@@ -21,7 +21,7 @@ export default function P(){
       <Inp l="Description" v={form.description} on={v=>setForm({...form,description:v})}/>
       <Form><Inp l="Category" v={form.category} on={v=>setForm({...form,category:v})}/><Inp l="Assign to" v={form.assignedTo} on={v=>setForm({...form,assignedTo:v})}/></Form>
       <button onClick={create} style={btnB}>+ OPEN TICKET</button>
-      <div style={{marginTop:8,padding:8,background:'#F5F1E8',borderLeft:'4px solid #C3A35E',fontSize:11,color:'#6B1F2B'}}>SLA: Urgent 4h · High 24h · Medium 72h · Low 168h. Breach auto-flagged on resolve.</div>
+      <div style={{marginTop:8,padding:8,background:'#F5F0E8',borderLeft:'4px solid #C3A35E',fontSize:11,color:'#6B1F2B'}}>SLA: Urgent 4h · High 24h · Medium 72h · Low 168h. Breach auto-flagged on resolve.</div>
     </Panel>
     <Panel title="ALL TICKETS" full>
       <Tbl head={['TICKET','CUSTOMER','SUBJECT','PRI','STATUS','OPENED','SLA','RESOLVE']}>

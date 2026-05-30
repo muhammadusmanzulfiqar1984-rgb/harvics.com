@@ -21,7 +21,7 @@ export default function P(){
       <Inp l="Group by (column name)" v={form.groupBy} on={v=>setForm({...form,groupBy:v})}/>
       <Inp l="Description" v={form.description} on={v=>setForm({...form,description:v})}/>
       <button onClick={create} style={btnB}>+ SAVE REPORT</button>
-      <div style={{marginTop:8,padding:10,background:'#F5F1E8',borderLeft:'4px solid #C3A35E',fontSize:11,color:'#6B1F2B'}}>
+      <div style={{marginTop:8,padding:10,background:'#F5F0E8',borderLeft:'4px solid #C3A35E',fontSize:11,color:'#6B1F2B'}}>
         Examples:<br/>• Sales count by status: source=Order, metric=count, groupBy=status<br/>• Total invoiced: source=Invoice, metric=sum, field=amount<br/>• AR by status: source=Invoice, metric=sum, field=amount, groupBy=status
       </div>
     </Panel>

@@ -1,7 +1,7 @@
 'use client'
 /** #19 Bill of Materials — header + components + explode */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F1E8'
+const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
 interface Comp{id:string;componentSku:string;componentName:string|null;qtyPer:number;uom:string;scrapPercent:number;unitCost:number}
 interface BOM{id:string;productSku:string;productName:string;version:string;uom:string;active:boolean;components:Comp[]}
 export default function BOMPage(){

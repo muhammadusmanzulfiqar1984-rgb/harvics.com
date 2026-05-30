@@ -25,7 +25,7 @@ export default function P(){
     </Panel>
     <Panel title={sel?`TOP-UP / TRANSFER — ${sel.ownerType}/${sel.ownerId.slice(-8)}`:'TOP-UP / TRANSFER'}>
       {!sel?<div style={{padding:20,color:'#888',textAlign:'center'}}>Pick a wallet from the list →</div>:<>
-        <div style={{padding:8,background:'#F5F1E8',borderLeft:'4px solid #C3A35E',marginBottom:8}}>
+        <div style={{padding:8,background:'#F5F0E8',borderLeft:'4px solid #C3A35E',marginBottom:8}}>
           <div style={{fontSize:10,color:'#6B1F2B',fontWeight:600}}>BALANCE</div>
           <div style={{fontSize:24,fontWeight:700,color:'#6B1F2B'}}>{sel.currency} {sel.balance.toLocaleString()}</div>
         </div>
@@ -40,7 +40,7 @@ export default function P(){
     </Panel>
     <Panel title={`WALLETS (${rows.length})`}>
       <Tbl head={['OWNER','CCY','BALANCE','STATUS','PICK']}>
-        {rows.map(w=><tr key={w.id} style={{background:selected===w.id?'#F5F1E8':undefined,borderBottom:'1px solid #6B1F2B11'}}>
+        {rows.map(w=><tr key={w.id} style={{background:selected===w.id?'#F5F0E8':undefined,borderBottom:'1px solid #6B1F2B11'}}>
           <td style={{...td,fontSize:11}}><b>{w.ownerType}</b>/{w.ownerId.slice(-8)}</td>
           <td style={td}>{w.currency}</td><td style={{...td,fontWeight:700,color:'#6B1F2B'}}>{w.balance.toLocaleString()}</td>
           <td style={td}><Pill s={w.status}/></td>

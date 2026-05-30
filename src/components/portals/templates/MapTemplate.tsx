@@ -60,7 +60,7 @@ const MapTemplate: React.FC<MapTemplateProps> = ({
           <div className="bg-white rounded-lg shadow overflow-hidden">
             <div className="w-full h-[600px] rounded-lg">
               {map || (
-                <div className="w-full h-full bg-gradient-to-br from-[#F5F1E8] to-white flex items-center justify-center p-8">
+                <div className="w-full h-full bg-gradient-to-br from-[#F5F0E8] to-white flex items-center justify-center p-8">
                   <div className="max-w-xl text-center">
                     <h2 className="text-xl font-semibold text-[#6B1F2B]">Map Data Is Not Available Yet</h2>
                     <p className="mt-3 text-sm text-black/70">

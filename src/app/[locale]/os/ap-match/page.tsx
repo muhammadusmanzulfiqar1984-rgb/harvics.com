@@ -1,7 +1,7 @@
 'use client'
 /** HARVICS OS — AP 3-Way Match (Module #4) */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F1E8'
+const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
 interface PO { id:string; poNumber:string; supplier:string; total:number; currency:string; status:string }
 interface Match { poNumber:string; supplier:string; poQty:number; grQty:number; qtyMatch:boolean; poAmount:number; invoiceAmount:number; amountMatch:boolean; receipts:number; canPay:boolean; candidateInvoices:any[] }
 export default function ApMatchPage(){

@@ -29,7 +29,7 @@ export default function P(){
           </div>
           <div style={{fontSize:11,color:'#666',marginTop:2}}>{l.category||'Uncategorised'} · by {l.sellerName}</div>
           {l.description && <div style={{fontSize:11,marginTop:6,color:'#444'}}>{l.description}</div>}
-          <div style={{marginTop:8,padding:6,background:'#F5F1E8',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
+          <div style={{marginTop:8,padding:6,background:'#F5F0E8',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
             <div><div style={{fontSize:18,fontWeight:700,color:B}}>{l.currency} {l.price}</div><div style={{fontSize:10,color:'#666'}}>{l.qtyAvailable} avail</div></div>
             {l.status==='Active'&&<div style={{display:'flex',gap:2}}>
               <input type="number" defaultValue={1} min={1} max={l.qtyAvailable} onChange={e=>setBuy({...buy,[l.id]:+e.target.value})} style={{width:40,padding:3,border:`1px solid ${B}55`,fontSize:11}}/>

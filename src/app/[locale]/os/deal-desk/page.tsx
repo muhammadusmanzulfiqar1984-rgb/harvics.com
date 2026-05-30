@@ -25,7 +25,7 @@ interface Deal {
 
 const BURGUNDY = '#6B1F2B'
 const GOLD = '#C3A35E'
-const CREAM = '#F5F1E8'
+const CREAM = '#F5F0E8'
 
 const STATUS_COLORS: Record<string, string> = {
   Pending: '#B8860B',
