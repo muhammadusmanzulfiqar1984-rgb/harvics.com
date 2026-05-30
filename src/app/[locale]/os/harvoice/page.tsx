@@ -33,7 +33,7 @@ export default function P(){
           <td style={{...td,fontSize:11}}>{new Date(c.createdAt).toLocaleTimeString()}</td>
           <td style={{...td,fontSize:11,fontStyle:'italic'}}>"{c.transcript}"</td>
           <td style={td}><Pill s={c.intent==='unknown'?'Cancelled':'Active'}/> {c.intent}</td>
-          <td style={{...td,fontWeight:700,color:c.confidence>0.7?'#2E7D32':c.confidence>0.4?'#C9A84C':'#B71C1C'}}>{(c.confidence*100).toFixed(0)}%</td>
+          <td style={{...td,fontWeight:700,color:c.confidence>0.7?'#2E7D32':c.confidence>0.4?'#C3A35E':'#B71C1C'}}>{(c.confidence*100).toFixed(0)}%</td>
           <td style={{...td,fontSize:10,fontFamily:'monospace'}}>{c.entities?JSON.stringify(c.entities):'—'}</td>
           <td style={{...td,fontSize:11}}>{c.responseText}</td>
         </tr>)}

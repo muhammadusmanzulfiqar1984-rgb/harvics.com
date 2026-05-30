@@ -24,7 +24,7 @@ import React, { useEffect, useRef, useState } from 'react'
 const COLORS = {
   bgFrom: '#FFFFFF',
   bgTo: '#F4ECDB',
-  goldBase: '#C9A84C',
+  goldBase: '#C3A35E',
   goldLight: '#E8C76A',
   goldDeep: '#8C6B1F',
   amber: '#D78A1B',

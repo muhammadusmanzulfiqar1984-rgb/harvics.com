@@ -57,7 +57,7 @@ body {
 :root {
   --harvics-burgundy: #1A0505;
   --harvics-cream: #F5F0E8;
-  --harvics-gold: #C9A84C;
+  --harvics-gold: #C3A35E;
   --harvics-muted: #8A7D6B;
   --harvics-dark: #0D0D0D;
   --harvics-ease-vault: cubic-bezier(0.16, 1, 0.3, 1);
@@ -328,7 +328,7 @@ body {
 /* Luxury minimal hover highlight style */
 .sector-nav-link:hover {
   background-color: rgba(201, 168, 76, 0.1) !important; /* Soft gold tint fill */
-  color: #C9A84C !important; /* Direct brand gold shift */
+  color: #C3A35E !important; /* Direct brand gold shift */
 }
 
 .sector-nav-link.active-sector {
@@ -351,7 +351,7 @@ body {
 }
 
 .nav-action-btn:hover {
-  color: #C9A84C !important;
+  color: #C3A35E !important;
 }
 
 .nav-action-btn svg {
@@ -2108,7 +2108,7 @@ p {
 .bg-harvics-cream { background-color: #F5F0E8 !important; }
 .text-harvics-cream { color: #F5F0E8 !important; }
 .text-harvics-burgundy { color: #1A0505 !important; }
-.text-harvics-gold { color: #C9A84C !important; }
+.text-harvics-gold { color: #C3A35E !important; }
 .border-harvics-gold\/10 { border-color: rgba(201, 168, 76, 0.1) !important; }
 .ease-vault { transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important; }
 

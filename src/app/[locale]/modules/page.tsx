@@ -61,7 +61,7 @@ export default function ModuleCatalogPage() {
       <div style={{ maxWidth: 1400, margin: '0 auto' }}>
         {/* Header */}
         <div style={{ marginBottom: 24 }}>
-          <div style={{ fontSize: 11, color: '#C9A84C', fontWeight: 700, letterSpacing: 1, marginBottom: 6 }}>HARVICS OS</div>
+          <div style={{ fontSize: 11, color: '#C3A35E', fontWeight: 700, letterSpacing: 1, marginBottom: 6 }}>HARVICS OS</div>
           <h1 style={{ fontSize: 32, fontWeight: 800, color: '#6B1F2B', margin: 0 }}>Module Catalog</h1>
           <p style={{ color: '#666', marginTop: 6, fontSize: 14 }}>
             {totalLive}/{MODULE_REGISTRY.length} modules live · 15 architecture bands · click any module to open

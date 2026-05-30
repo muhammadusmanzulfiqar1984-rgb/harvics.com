@@ -114,7 +114,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/about`}
-                className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}/about`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
+                className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}/about`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
                 onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
               >
                 About
@@ -135,7 +135,7 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${vertical.href}`}
-                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
+                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
                   role="menuitem"
                   aria-haspopup="true"
                   aria-expanded={activeDropdown === vertical.key}
@@ -157,7 +157,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/apps`}
-                className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}/apps`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
+                className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}/apps`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
               >
                 ⬡ Apps
               </Link>
@@ -175,7 +175,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/harvictrade`}
-                className="text-[10px] font-bold text-[#1a0608] border-l border-[#C9A84C]/30 pl-3 ml-1 tracking-[0.12em] uppercase hover:text-[#C9A84C] transition-colors duration-200 whitespace-nowrap py-1.5"
+                className="text-[10px] font-bold text-[#1a0608] border-l border-[#C3A35E]/30 pl-3 ml-1 tracking-[0.12em] uppercase hover:text-[#C3A35E] transition-colors duration-200 whitespace-nowrap py-1.5"
               >
                 ♦ HARVICTRADE
               </Link>
@@ -194,7 +194,7 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${link.href}`}
-                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}${link.href}`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
+                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}${link.href}`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
                   onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
                 >
                   {link.label}
@@ -249,7 +249,7 @@ const SupremeNavBar: React.FC = () => {
                           textDecoration: 'none',
                         }}
                       >
-                        <span className="transition-colors duration-200 group-hover/title:text-[#C9A84C]">
+                        <span className="transition-colors duration-200 group-hover/title:text-[#C3A35E]">
                           {block.title}
                         </span>
                       </Link>
@@ -276,9 +276,9 @@ const SupremeNavBar: React.FC = () => {
                             <span className="relative">
                               {item}
                               {/* Gold dot indicator */}
-                              <span className="absolute -left-3 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-[#C9A84C] rounded-full opacity-0 scale-0 transition-all duration-200 group-hover/item:opacity-100 group-hover/item:scale-100" />
+                              <span className="absolute -left-3 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-[#C3A35E] rounded-full opacity-0 scale-0 transition-all duration-200 group-hover/item:opacity-100 group-hover/item:scale-100" />
                               {/* Gold underline slide */}
-                              <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#C9A84C]/60 group-hover/item:w-full transition-all duration-300 ease-out" />
+                              <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#C3A35E]/60 group-hover/item:w-full transition-all duration-300 ease-out" />
                             </span>
                           </Link>
                         ))}

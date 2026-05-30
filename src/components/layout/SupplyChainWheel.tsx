@@ -90,9 +90,9 @@ const SupplyChainWheel: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-10">
           <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '14px', marginBottom: '14px' }}>
-            <div style={{ height: '1px', width: '36px', background: '#C9A84C' }} />
-            <span style={{ color: '#C9A84C', fontSize: '10px', fontWeight: 600, letterSpacing: '0.32em', textTransform: 'uppercase' }}>End-to-End Operating System</span>
-            <div style={{ height: '1px', width: '36px', background: '#C9A84C' }} />
+            <div style={{ height: '1px', width: '36px', background: '#C3A35E' }} />
+            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 600, letterSpacing: '0.32em', textTransform: 'uppercase' }}>End-to-End Operating System</span>
+            <div style={{ height: '1px', width: '36px', background: '#C3A35E' }} />
           </div>
           <h2 style={{ fontSize: 'clamp(30px, 4.2vw, 48px)', fontWeight: 200, letterSpacing: '-0.025em', color: '#1A0505', lineHeight: 1.1, marginBottom: '12px' }}>
             14 stages.{' '}
@@ -122,7 +122,7 @@ const SupplyChainWheel: React.FC = () => {
                       const x = centerX + radius * Math.cos(angle)
                       const y = centerY + radius * Math.sin(angle)
                       return (
-                        <line key={`line-${idx}`} x1={centerX} y1={centerY} x2={x} y2={y} stroke="#C9A84C" strokeWidth="0.5" opacity="0.12" />
+                        <line key={`line-${idx}`} x1={centerX} y1={centerY} x2={x} y2={y} stroke="#C3A35E" strokeWidth="0.5" opacity="0.12" />
                       )
                     })}
                     {wheelNodes.map((_, idx) => {
@@ -136,7 +136,7 @@ const SupplyChainWheel: React.FC = () => {
                           cx={x}
                           cy={y}
                           r={isHovered ? 10 : 6.5}
-                          fill={isHovered ? '#fff' : '#C9A84C'}
+                          fill={isHovered ? '#fff' : '#C3A35E'}
                           stroke="#1A0505"
                           strokeWidth="1.5"
                           className="cursor-pointer"
@@ -180,7 +180,7 @@ const SupplyChainWheel: React.FC = () => {
                   })}
 
                   {/* Center — gold disc on dark */}
-                  <circle cx={centerX} cy={centerY} r="62" fill="#C9A84C" />
+                  <circle cx={centerX} cy={centerY} r="62" fill="#C3A35E" />
                   <circle cx={centerX} cy={centerY} r="62" fill="none" stroke="#1A0505" strokeWidth="2" />
                   <text x={centerX} y={centerY - 8} textAnchor="middle" style={{ fontSize: '9px', fontWeight: 700, fill: '#1A0505', letterSpacing: '3px' }}>HARVICS</text>
                   <text x={centerX} y={centerY + 6} textAnchor="middle" style={{ fontSize: '10px', fontWeight: 600, fill: '#1A0505', letterSpacing: '0.5px' }}>Operating</text>
@@ -204,7 +204,7 @@ const SupplyChainWheel: React.FC = () => {
                 {activeNode ? (
                   <>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '4px' }}>
-                      <span style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#C9A84C' }}>{activeNode.metric}</span>
+                      <span style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#C3A35E' }}>{activeNode.metric}</span>
                       <span style={{ fontSize: '22px', fontWeight: 600, color: '#fff', letterSpacing: '-0.02em' }}>{activeNode.value}</span>
                     </div>
                     <div style={{ fontSize: '13px', fontWeight: 600, color: '#fff', marginBottom: '4px' }}>{activeNode.label}</div>
@@ -223,14 +223,14 @@ const SupplyChainWheel: React.FC = () => {
 
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', paddingBottom: '14px', borderBottom: '1px solid rgba(201,168,76,0.2)' }}>
                 <h3 style={{ fontSize: '18px', fontWeight: 500, color: '#fff' }}>Live Stage Metrics</h3>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#C9A84C', fontWeight: 700 }}>
-                  <span style={{ width: '6px', height: '6px', background: '#C9A84C', borderRadius: '50%', animation: 'harvicsCockpitPulse 2s infinite' }} />
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#C3A35E', fontWeight: 700 }}>
+                  <span style={{ width: '6px', height: '6px', background: '#C3A35E', borderRadius: '50%', animation: 'harvicsCockpitPulse 2s infinite' }} />
                   90-Day Rolling
                 </span>
               </div>
 
               {/* Header row */}
-              <div className="grid grid-cols-12 gap-2 px-2 mb-2" style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#C9A84C' }}>
+              <div className="grid grid-cols-12 gap-2 px-2 mb-2" style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#C3A35E' }}>
                 <div className="col-span-4">Stage</div>
                 <div className="col-span-3">Volume</div>
                 <div className="col-span-3">On-Time</div>
@@ -262,7 +262,7 @@ const SupplyChainWheel: React.FC = () => {
                             className="absolute inset-y-0 left-0"
                             style={{
                               width: `${kpi.onTime}%`,
-                              background: '#C9A84C',
+                              background: '#C3A35E',
                               transition: 'width 0.6s ease',
                             }}
                           />
@@ -275,7 +275,7 @@ const SupplyChainWheel: React.FC = () => {
                             }}
                           />
                         </div>
-                        <span style={{ fontSize: '11px', fontWeight: 700, color: '#C9A84C', minWidth: '32px', textAlign: 'right' }}>{kpi.onTime}%</span>
+                        <span style={{ fontSize: '11px', fontWeight: 700, color: '#C3A35E', minWidth: '32px', textAlign: 'right' }}>{kpi.onTime}%</span>
                       </div>
                       <div className="col-span-2 text-right" style={{ fontSize: '11px', color: 'rgba(245,240,232,0.55)', fontWeight: 500 }}>{kpi.leadTime}</div>
                     </div>
@@ -294,7 +294,7 @@ const SupplyChainWheel: React.FC = () => {
                       borderRight: i < streamRows.length - 1 ? '1px solid rgba(201,168,76,0.15)' : 'none',
                     }}
                   >
-                    <div style={{ fontSize: '8px', fontWeight: 700, letterSpacing: '0.3em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '4px' }}>Stream</div>
+                    <div style={{ fontSize: '8px', fontWeight: 700, letterSpacing: '0.3em', textTransform: 'uppercase', color: '#C3A35E', marginBottom: '4px' }}>Stream</div>
                     <div style={{ fontSize: '11px', fontWeight: 600, color: '#fff' }}>{row}</div>
                   </div>
                 ))}

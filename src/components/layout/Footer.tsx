@@ -103,9 +103,9 @@ const Footer: React.FC = () => {
       <section style={{ background: '#F5F0E8', padding: '36px 0 32px', borderTop: '1px solid rgba(201,168,76,0.25)' }}>
         <div className="universal-layout-frame px-4 sm:px-6 lg:px-8 text-center">
           <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '14px', marginBottom: '14px' }}>
-            <div style={{ height: '1px', width: '32px', background: '#C9A84C' }} />
-            <span style={{ color: '#C9A84C', fontSize: '10px', fontWeight: 600, letterSpacing: '0.32em', textTransform: 'uppercase' }}>The Harvics Brief</span>
-            <div style={{ height: '1px', width: '32px', background: '#C9A84C' }} />
+            <div style={{ height: '1px', width: '32px', background: '#C3A35E' }} />
+            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 600, letterSpacing: '0.32em', textTransform: 'uppercase' }}>The Harvics Brief</span>
+            <div style={{ height: '1px', width: '32px', background: '#C3A35E' }} />
           </div>
           <h2 style={{ fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 200, letterSpacing: '-0.02em', color: '#1A0505', lineHeight: 1.15, marginBottom: '8px' }}>
             {tt('newsletterHeadline', 'Monthly intelligence.')}{' '}
@@ -126,13 +126,13 @@ const Footer: React.FC = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              style={{ padding: '11px 26px', background: '#1A0505', color: '#C9A84C', border: '1px solid #1A0505', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', cursor: 'pointer' }}
+              style={{ padding: '11px 26px', background: '#1A0505', color: '#C3A35E', border: '1px solid #1A0505', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', cursor: 'pointer' }}
             >
               {isSubmitting ? '...' : (tt('subscribe', 'Subscribe'))}
             </button>
           </form>
           {submitMessage && (
-            <p style={{ marginTop: '12px', fontSize: '11px', color: submitMessage.includes('Thank') ? '#C9A84C' : '#a32a2a' }}>
+            <p style={{ marginTop: '12px', fontSize: '11px', color: submitMessage.includes('Thank') ? '#C3A35E' : '#a32a2a' }}>
               {submitMessage}
             </p>
           )}
@@ -150,26 +150,26 @@ const Footer: React.FC = () => {
                 <Image src="/logo.svg" alt="Harvics" width={44} height={44} style={{ width: '44px', height: 'auto', objectFit: 'contain' }} />
                 <div>
                   <div style={{ fontSize: '20px', fontWeight: 600, color: '#fff', letterSpacing: '0.06em' }}>HARVICS</div>
-                  <div style={{ fontSize: '9px', color: '#C9A84C', letterSpacing: '0.28em', textTransform: 'uppercase' }}>Global Ventures</div>
+                  <div style={{ fontSize: '9px', color: '#C3A35E', letterSpacing: '0.28em', textTransform: 'uppercase' }}>Global Ventures</div>
                 </div>
               </Link>
               <p style={{ fontSize: '12px', color: 'rgba(245,240,232,0.55)', lineHeight: 1.7, maxWidth: '300px' }}>
                 {tt('brandStatement', 'Sovereign trade infrastructure across 10 industry verticals, 42 markets and 3 continents — built for serious buyers.')}
               </p>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '5px 10px', border: '1px solid rgba(201,168,76,0.3)', fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#C9A84C', fontWeight: 600, width: 'fit-content' }}>
-                <span style={{ width: '6px', height: '6px', background: '#C9A84C', borderRadius: '50%', animation: 'harvicsPulse 2s infinite' }} />
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '5px 10px', border: '1px solid rgba(201,168,76,0.3)', fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#C3A35E', fontWeight: 600, width: 'fit-content' }}>
+                <span style={{ width: '6px', height: '6px', background: '#C3A35E', borderRadius: '50%', animation: 'harvicsPulse 2s infinite' }} />
                 1,247 {tt('activeShipments', 'active shipments')}
               </div>
             </div>
 
             {/* Useful Links */}
             <div>
-              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
+              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C3A35E', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
                 {tt('usefulLinks', 'Useful Links')}
               </h5>
               {usefulLinks.map(link => (
                 <Link key={link.href} href={link.href} style={{ display: 'block', fontSize: '12.5px', color: 'rgba(245,240,232,0.7)', padding: '6px 0', lineHeight: 1.4, textDecoration: 'none', transition: 'color 0.2s' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C9A84C' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C3A35E' }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(245,240,232,0.7)' }}>
                   {link.label}
                 </Link>
@@ -178,12 +178,12 @@ const Footer: React.FC = () => {
 
             {/* Company */}
             <div>
-              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
+              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C3A35E', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
                 {tt('company', 'Company')}
               </h5>
               {companyLinks.map(link => (
                 <Link key={link.href} href={link.href} style={{ display: 'block', fontSize: '12.5px', color: 'rgba(245,240,232,0.7)', padding: '6px 0', lineHeight: 1.4, textDecoration: 'none', transition: 'color 0.2s' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C9A84C' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C3A35E' }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(245,240,232,0.7)' }}>
                   {link.label}
                 </Link>
@@ -192,12 +192,12 @@ const Footer: React.FC = () => {
 
             {/* Media */}
             <div>
-              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
+              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C3A35E', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
                 {tt('media', 'Media')}
               </h5>
               {mediaLinks.map(link => (
                 <Link key={link.href} href={link.href} style={{ display: 'block', fontSize: '12.5px', color: 'rgba(245,240,232,0.7)', padding: '6px 0', lineHeight: 1.4, textDecoration: 'none', transition: 'color 0.2s' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C9A84C' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C3A35E' }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(245,240,232,0.7)' }}>
                   {link.label}
                 </Link>
@@ -206,12 +206,12 @@ const Footer: React.FC = () => {
 
             {/* Investors */}
             <div>
-              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
+              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C3A35E', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
                 {tt('investors', 'Investors')}
               </h5>
               {investorLinks.map(link => (
                 <Link key={link.href} href={link.href} style={{ display: 'block', fontSize: '12.5px', color: 'rgba(245,240,232,0.7)', padding: '6px 0', lineHeight: 1.4, textDecoration: 'none', transition: 'color 0.2s' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C9A84C' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C3A35E' }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(245,240,232,0.7)' }}>
                   {link.label}
                 </Link>
@@ -228,7 +228,7 @@ const Footer: React.FC = () => {
       {/* ============ F3 — CERTIFICATIONS ON DARKER BURGUNDY ============ */}
       <section style={{ background: '#0d0303', padding: '18px 0', borderTop: '1px solid rgba(201,168,76,0.18)' }}>
         <div className="universal-layout-frame px-4 sm:px-6 lg:px-8" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 0, flexWrap: 'wrap' }}>
-          <span style={{ fontSize: '9px', letterSpacing: '0.32em', textTransform: 'uppercase', color: '#C9A84C', fontWeight: 700, paddingRight: '24px', borderRight: '1px solid rgba(201,168,76,0.2)' }}>
+          <span style={{ fontSize: '9px', letterSpacing: '0.32em', textTransform: 'uppercase', color: '#C3A35E', fontWeight: 700, paddingRight: '24px', borderRight: '1px solid rgba(201,168,76,0.2)' }}>
             {tt('certifiedAudited', 'Certified & Audited')}
           </span>
           <div style={{ display: 'flex', gap: 0, flexWrap: 'wrap' }}>
@@ -248,7 +248,7 @@ const Footer: React.FC = () => {
             <span>&copy; {new Date().getFullYear()} {tt('companyName', 'Harvics Global Ventures')}</span>
             {legalLinks.map(link => (
               <Link key={link.href} href={link.href} style={{ color: 'rgba(245,240,232,0.45)', textDecoration: 'none', transition: 'color 0.2s' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C9A84C' }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C3A35E' }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(245,240,232,0.45)' }}>
                 {link.label}
               </Link>
@@ -256,11 +256,11 @@ const Footer: React.FC = () => {
           </div>
           <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: 'rgba(245,240,232,0.6)' }}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#C3A35E" strokeWidth="1.5">
                 <circle cx="12" cy="12" r="9" />
                 <path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" />
               </svg>
-              <span style={{ letterSpacing: '0.15em', textTransform: 'uppercase', fontWeight: 600, color: '#C9A84C', fontSize: '10px' }}>Global</span>
+              <span style={{ letterSpacing: '0.15em', textTransform: 'uppercase', fontWeight: 600, color: '#C3A35E', fontSize: '10px' }}>Global</span>
               <span style={{ color: 'rgba(201,168,76,0.3)' }}>·</span>
               <span>English (UK)</span>
             </span>
@@ -273,7 +273,7 @@ const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   aria-label={social.label}
                   style={{ color: 'rgba(245,240,232,0.55)', display: 'inline-flex', alignItems: 'center', transition: 'color 0.2s' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C9A84C' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C3A35E' }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(245,240,232,0.55)' }}
                 >
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">

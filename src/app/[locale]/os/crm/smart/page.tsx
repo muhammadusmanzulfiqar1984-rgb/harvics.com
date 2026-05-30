@@ -9,7 +9,7 @@ import { useCountry } from '@/contexts/CountryContext'
 import { getCurrency } from '@/config/localeConfig'
 
 const B = '#6B1F2B'
-const G = '#C9A84C'
+const G = '#C3A35E'
 
 interface Lead {
   id: string
@@ -681,7 +681,7 @@ function TierPillFancy({ tier, small }: { tier: string; small?: boolean }) {
 function Field({ label, value, onChange, placeholder, type, dark }: { label?: string; value: string; onChange: (v: string) => void; placeholder?: string; type?: string; dark?: boolean }) {
   return (
     <div>
-      {label && <label style={{ display: 'block', fontSize: 10, color: '#C9A84C', fontWeight: 700, letterSpacing: '0.1em', marginBottom: 4 }}>{label.toUpperCase()}</label>}
+      {label && <label style={{ display: 'block', fontSize: 10, color: '#C3A35E', fontWeight: 700, letterSpacing: '0.1em', marginBottom: 4 }}>{label.toUpperCase()}</label>}
       <input type={type || 'text'} value={value} placeholder={placeholder} onChange={e => onChange(e.target.value)}
         style={{
           width: '100%', padding: '10px 12px',
@@ -695,7 +695,7 @@ function Field({ label, value, onChange, placeholder, type, dark }: { label?: st
 function SelectField({ label, value, onChange, options, dark }: { label?: string; value: string; onChange: (v: string) => void; options: string[]; dark?: boolean }) {
   return (
     <div>
-      {label && <label style={{ display: 'block', fontSize: 10, color: '#C9A84C', fontWeight: 700, letterSpacing: '0.1em', marginBottom: 4 }}>{label.toUpperCase()}</label>}
+      {label && <label style={{ display: 'block', fontSize: 10, color: '#C3A35E', fontWeight: 700, letterSpacing: '0.1em', marginBottom: 4 }}>{label.toUpperCase()}</label>}
       <select value={value} onChange={e => onChange(e.target.value)}
         style={{
           width: '100%', padding: '10px 12px',

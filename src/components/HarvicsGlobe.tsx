@@ -98,7 +98,7 @@ export default function HarvicsGlobe() {
 
         // Make continent/country division lines gold.
         if (map.getLayer('country-boundaries-dash')) {
-          map.setPaintProperty('country-boundaries-dash', 'line-color', '#c9a84c')
+          map.setPaintProperty('country-boundaries-dash', 'line-color', '#C3A35E')
           map.setPaintProperty('country-boundaries-dash', 'line-opacity', 0.4)
         }
 
@@ -116,7 +116,7 @@ export default function HarvicsGlobe() {
           el.innerHTML = `
             <div style="position:relative;width:24px;height:24px;display:flex;align-items:center;justify-content:center;">
               <div style="position:absolute;width:24px;height:24px;border:1.5px solid rgba(201,168,76,0.55);border-radius:50%;animation:harvics-globe-pulse 2s ease-out infinite;"></div>
-              <div style="width:10px;height:10px;background:#c9a84c;border-radius:50%;box-shadow:0 0 10px rgba(201,168,76,0.95);position:relative;z-index:2;"></div>
+              <div style="width:10px;height:10px;background:#C3A35E;border-radius:50%;box-shadow:0 0 10px rgba(201,168,76,0.95);position:relative;z-index:2;"></div>
             </div>
             <div style="margin-top:4px;font-size:10px;line-height:1.1;color:#FFD700;font-family:Georgia,serif;white-space:nowrap;text-align:center;text-shadow:0 0 8px rgba(201,168,76,0.35);">${m.name}</div>
           `

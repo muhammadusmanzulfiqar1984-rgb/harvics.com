@@ -170,7 +170,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               ].map((link) => (
                 <Link key={link.href} href={link.href}
                   className="transition-opacity duration-200 hover:opacity-70"
-                  style={{ color: '#C9A84C', fontSize: '11px', fontWeight: 400, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap' }}
+                  style={{ color: '#C3A35E', fontSize: '11px', fontWeight: 400, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap' }}
                 >{link.label}</Link>
               ))}
 
@@ -178,7 +178,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               <div className="relative" onMouseEnter={() => handleMouseEnter('countries')} onMouseLeave={handleMouseLeave}>
                 <button
                   className="flex items-center gap-1 transition-opacity duration-200 hover:opacity-70"
-                  style={{ color: '#C9A84C', fontSize: '11px', fontWeight: 400, letterSpacing: '0.1em', textTransform: 'uppercase', background: 'none', border: 'none', cursor: 'pointer', whiteSpace: 'nowrap' }}
+                  style={{ color: '#C3A35E', fontSize: '11px', fontWeight: 400, letterSpacing: '0.1em', textTransform: 'uppercase', background: 'none', border: 'none', cursor: 'pointer', whiteSpace: 'nowrap' }}
                   aria-expanded={activeDropdown === 'countries'}
                 >
                   <span>{t('countries')}</span>
@@ -197,7 +197,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
 
               <Link href={`/${locale}/contact`}
                 className="transition-opacity duration-200 hover:opacity-70"
-                style={{ color: '#C9A84C', fontSize: '11px', fontWeight: 400, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap' }}
+                style={{ color: '#C3A35E', fontSize: '11px', fontWeight: 400, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap' }}
               >{t('contactUs')}</Link>
             </div>
 
@@ -209,7 +209,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
                   onClick={handleLogout}
                   className="flex items-center gap-1.5 transition-opacity duration-200 hover:opacity-70"
                   style={{ 
-                    color: '#C9A84C', 
+                    color: '#C3A35E', 
                     fontSize: '11px', 
                     fontWeight: 600, 
                     letterSpacing: '0.05em', 
@@ -229,7 +229,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
                   href={`/${locale}/login`}
                   className="flex items-center gap-1.5 transition-opacity duration-200 hover:opacity-70"
                   style={{ 
-                    color: '#C9A84C', 
+                    color: '#C3A35E', 
                     fontSize: '11px', 
                     fontWeight: 600, 
                     letterSpacing: '0.05em', 
@@ -264,7 +264,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
                     <Image src="/logo.svg" alt="Harvics" width={36} height={36} style={{ width: '36px', height: 'auto', objectFit: 'contain' }} priority />
                 <div className="flex flex-col">
                   <span className="text-xl font-bold tracking-tight" style={{ color: '#1A0505' }}>HARVICS</span>
-                  <span className="text-[10px] uppercase tracking-widest" style={{ color: '#C9A84C' }}>Global Ventures</span>
+                  <span className="text-[10px] uppercase tracking-widest" style={{ color: '#C3A35E' }}>Global Ventures</span>
                 </div>
                 {/* Gold accent glow on hover */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300" 
@@ -295,7 +295,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
                 </button>
               </div>
               <style dangerouslySetInnerHTML={{__html: `
-                .search-bar-wrap:focus-within { border-color: #C9A84C !important; }
+                .search-bar-wrap:focus-within { border-color: #C3A35E !important; }
                 .search-bar-input::placeholder { color: rgba(0,0,0,0.35); }
               `}} />
             </div>
@@ -331,7 +331,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                 </svg>
-                <span className="absolute -top-0.5 -right-0.5 w-4 h-4 flex items-center justify-center" style={{ background: '#1A0505', color: '#C9A84C', fontSize: '9px', fontWeight: 700 }}>0</span>
+                <span className="absolute -top-0.5 -right-0.5 w-4 h-4 flex items-center justify-center" style={{ background: '#1A0505', color: '#C3A35E', fontSize: '9px', fontWeight: 700 }}>0</span>
               </Link>
               <button onClick={() => setIsSearchOpen(true)} className="md:hidden p-2 transition-opacity duration-200 hover:opacity-60" style={{ color: '#1A0505', background: 'none', border: 'none' }}>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -355,7 +355,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
             className="h-full"
             style={{
               width: '30%',
-              background: 'linear-gradient(to right, transparent, #C9A84C, transparent)',
+              background: 'linear-gradient(to right, transparent, #C3A35E, transparent)',
               animation: 'runningLine 3s linear infinite'
             }}
           />
