@@ -157,7 +157,7 @@ const verticalHeroImages: Record<string, string> = {
 
 const verticalHeroSlides: Record<string, string[]> = {
   industrial: [
-    '/Industries Picture/Industrial Solutions.jpg',
+    '/assets/verticals/04-industrial/hero.jpg',
     '/Images/industrialsolutions.webp',
     '/Images/industrialsolutions.jpg',
   ],

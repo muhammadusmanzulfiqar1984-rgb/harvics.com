@@ -20,7 +20,7 @@ const CompetenceSection: React.FC = () => {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="/FMCG IMAGES/Confectionary/Jelly/bearpops.jpg"
+          src="/assets/verticals/02-fmcg/categories/confectionery/jelly/bearpops.jpg"
           alt="Our Competence"
           className="w-full h-full object-cover"
           style={{ transform: 'scale(1.05)' }}

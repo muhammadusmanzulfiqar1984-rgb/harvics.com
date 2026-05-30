@@ -11,17 +11,17 @@ import { useLocale } from 'next-intl'
 
 const slides = [
   {
-    img: '/FMCG IMAGES/Pastas/pasta (5).png',
+    img: '/assets/verticals/02-fmcg/categories/pastas/pasta (5).png',
     alt: 'Premium Pasta Selection',
     tagline: 'Authentic Italian Heritage',
   },
   {
-    img: '/FMCG IMAGES/Confectionary/Jelly/bearpops.jpg',
+    img: '/assets/verticals/02-fmcg/categories/confectionery/jelly/bearpops.jpg',
     alt: 'Confectionary Delights',
     tagline: 'Sweet Moments of Joy',
   },
   {
-    img: '/FMCG IMAGES/Bakery/Wafer and Wafer Bars/wafer3.jpg',
+    img: '/assets/verticals/02-fmcg/categories/bakery/wafer-and-wafer-bars/wafer3.jpg',
     alt: 'Quality Bakery Items',
     tagline: 'Crafted with Excellence',
   },

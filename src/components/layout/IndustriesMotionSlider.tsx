@@ -4,12 +4,12 @@ import React, { useEffect, useRef } from 'react'
 import { useScrollReveal, revealClass } from '@/hooks/useScrollReveal'
 
 const SLIDES = [
-  { src: '/FMCG IMAGES/Pastas/pasta (5).png', alt: 'Premium Pasta' },
-  { src: '/FMCG IMAGES/Snacks/Chips and Crisps/chips and crisp.png', alt: 'Chips & Crisps' },
-  { src: '/FMCG IMAGES/Culinary/Seasoning,Spices and Marinade/SPices.png', alt: 'Spices & Seasoning' },
-  { src: '/FMCG IMAGES/Culinary/Cooking Oil, Fats and Dressing/cooking oil.png', alt: 'Cooking Oil' },
-  { src: '/FMCG IMAGES/Beverages/Carbonated/carbonated.png', alt: 'Carbonated Beverages' },
-  { src: '/FMCG IMAGES/Frozen Foods/Chicken Nuggets/chicken nuggets.png', alt: 'Frozen Foods' },
+  { src: '/assets/verticals/02-fmcg/categories/pastas/pasta (5).png', alt: 'Premium Pasta' },
+  { src: '/assets/verticals/02-fmcg/categories/snacks/chips-and-crisps/chips and crisp.png', alt: 'Chips & Crisps' },
+  { src: '/assets/verticals/02-fmcg/categories/culinary/seasoning-spices-and-marinade/SPices.png', alt: 'Spices & Seasoning' },
+  { src: '/assets/verticals/02-fmcg/categories/culinary/cooking-oil-fats-and-dressing/cooking oil.png', alt: 'Cooking Oil' },
+  { src: '/assets/verticals/02-fmcg/categories/beverages/carbonated/carbonated.png', alt: 'Carbonated Beverages' },
+  { src: '/assets/verticals/02-fmcg/categories/frozen-foods/chicken-nuggets/chicken nuggets.png', alt: 'Frozen Foods' },
 ]
 
 const IndustriesMotionSlider: React.FC = () => {

@@ -17,17 +17,17 @@ export async function GET() {
     hero: {
       slides: [
         {
-          img: '/FMCG IMAGES/Pastas/pasta (5).png',
+          img: '/assets/verticals/02-fmcg/categories/pastas/pasta (5).png',
           tagline: 'Authentic Italian Heritage',
           subtitle: 'Premium Pasta Collection',
         },
         {
-          img: '/FMCG IMAGES/Confectionary/Jelly/bearpops.jpg',
+          img: '/assets/verticals/02-fmcg/categories/confectionery/jelly/bearpops.jpg',
           tagline: 'Sweet Moments of Joy',
           subtitle: 'Confectionary Delights',
         },
         {
-          img: '/FMCG IMAGES/Bakery/Wafer and Wafer Bars/wafer -1.png',
+          img: '/assets/verticals/02-fmcg/categories/bakery/wafer-and-wafer-bars/wafer -1.png',
           tagline: 'Crafted with Excellence',
           subtitle: 'Quality Bakery Selection',
         },
@@ -53,19 +53,19 @@ export async function GET() {
     showcaseProducts: [
       {
         name: 'Premium Pasta',
-        image: '/FMCG IMAGES/Pastas/fusilli -1.png',
+        image: '/assets/verticals/02-fmcg/categories/pastas/fusilli -1.png',
         detail: 'Crafted from 100% durum wheat semolina using traditional bronze die extrusion.',
         features: ['Bronze Die Cut', 'Slow Dried', '100% Durum Wheat', 'Al Dente Perfect'],
       },
       {
         name: 'Artisan Wafers',
-        image: '/FMCG IMAGES/Bakery/Wafer and Wafer Bars/wafer -1.png',
+        image: '/assets/verticals/02-fmcg/categories/bakery/wafer-and-wafer-bars/wafer -1.png',
         detail: 'Multi-layered crispy wafers with premium chocolate and hazelnut cream filling.',
         features: ['Multi-Layer', 'Real Chocolate', 'Hazelnut Cream', 'Golden Baked'],
       },
       {
         name: 'Gourmet Snacks',
-        image: '/FMCG IMAGES/Snacks/Chips and Crisps/chips and crisp.png',
+        image: '/assets/verticals/02-fmcg/categories/snacks/chips-and-crisps/chips and crisp.png',
         detail: 'Premium potato crisps sliced thin and seasoned with proprietary spice blends.',
         features: ['Thin Sliced', 'Premium Potatoes', 'Unique Seasoning', 'Small Batch'],
       },
