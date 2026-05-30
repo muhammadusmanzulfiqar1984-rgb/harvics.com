@@ -43,24 +43,22 @@ interface ImageCarouselProps {
 // ============================================
 
 const DEFAULT_IMAGES = [
-  // Add your images here! Format: '/Images/filename.jpg'
-  '/Images/Harvics.com/Bakery/Biscuits and Cookies/biscuits.png',
-  '/Images/Harvics.com/Beverages/Carbonated/carbonated.png',
-  '/Images/New folder/Confectionary/WhatsApp Image 2025-09-19 at 1.50.04 AM.jpeg',
-  '/Images/Harvics.com/Culinary/sauces and condiments/sauce.png',
-  '/Images/Harvics.com/Snacks/Chips and Crisps/chips.png',
-  '/Images/Harvics.com/Pastas/pasta (3).png',
-  '/Images/Harvics.com/Frozen Foods/Chicken Nuggets/chicken-nuggets.png',
-  '/Images/Logo.JPG',
+  // Add your images here! Format: '/assets/...'
+  '/assets/verticals/02-fmcg/categories/bakery/biscuits-and-cookies/biscuits.png',
+  '/assets/verticals/02-fmcg/categories/beverages/carbonated/carbonated.png',
+  '/assets/verticals/02-fmcg/categories/culinary/sauces-and-condiments/sauce-1.png',
+  '/assets/verticals/02-fmcg/categories/snacks/chips-and-crisps/chips and crisp.png',
+  '/assets/verticals/02-fmcg/categories/pastas/pasta (3).png',
+  '/assets/verticals/02-fmcg/categories/frozen-foods/chicken-nuggets/chicken nuggets.png',
+  '/assets/brand/photo/logo.png',
   '/assets/geo/worldmap.jpg',
   '/assets/geo/worldmap-alt.jpeg',
-  '/Images/Harvics.com/Bakery/Cakes and Pastreis/cake.png',
-  '/Images/Harvics.com/Beverages/Functional/energy (2).png',
-  '/Images/Harvics.com/Bakery/Wafer and Wafer Bars/wafer.png',
+  '/assets/verticals/02-fmcg/categories/bakery/cakes-and-pastries/cake.png',
+  '/assets/verticals/02-fmcg/categories/beverages/functional/energy (2).png',
+  '/assets/verticals/02-fmcg/categories/bakery/wafer-and-wafer-bars/wafer.png',
   '/assets/shared/heroes/hero-banner-1.jpg',
   '/assets/shared/heroes/hero-banner-2.jpg',
   // 👆 Add more images above this line 👆
-  // Example: '/Images/your-new-image.jpg',
 ]
 
 const ImageCarousel: React.FC<ImageCarouselProps> = ({
