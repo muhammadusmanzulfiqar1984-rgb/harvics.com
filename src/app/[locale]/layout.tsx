@@ -17,6 +17,7 @@ import { BackendStatusProvider } from '@/context/BackendStatusContext';
 import { GeographicSyncWrapper } from '@/components/shared/GeographicSyncWrapper';
 import { getFolderBasedCategories } from '@/data/folderBasedProducts';
 import { generateSEOMetadata, generateOrganizationSchema } from '@/lib/seo';
+import { Analytics } from '@vercel/analytics/next';
 import '../globals.css'
 import '@/styles/apple-effects.css'
 
@@ -196,6 +197,7 @@ export default async function LocaleLayout({
                       <ChatbotWidget />
                       <AppleStyleScrollEffects />
                       <VapiWidget />
+                      <Analytics />
                     </CountryProvider>
                   </RegionProvider>
               </ErrorBoundary>
