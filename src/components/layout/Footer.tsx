@@ -147,7 +147,7 @@ const Footer: React.FC = () => {
             {/* Brand column */}
             <div className="col-span-2 lg:col-span-1" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <Link href={`/${locale}`} style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-                <Image src="/logo.svg" alt="Harvics" width={44} height={44} style={{ width: '44px', height: 'auto', objectFit: 'contain' }} />
+                <Image src="/assets/brand/logo/primary.svg" alt="Harvics" width={44} height={44} style={{ width: '44px', height: 'auto', objectFit: 'contain' }} />
                 <div>
                   <div style={{ fontSize: '20px', fontWeight: 600, color: '#fff', letterSpacing: '0.06em' }}>HARVICS</div>
                   <div style={{ fontSize: '9px', color: '#C3A35E', letterSpacing: '0.28em', textTransform: 'uppercase' }}>Global Ventures</div>

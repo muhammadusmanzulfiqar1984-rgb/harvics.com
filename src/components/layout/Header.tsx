@@ -261,7 +261,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
             {/* Logo */}
             <Link href={`/${locale}`} className="flex-shrink-0 transition-all duration-300 hover:opacity-90 hover:scale-105 relative group">
               <div className="relative flex items-center gap-3">
-                    <Image src="/logo.svg" alt="Harvics" width={36} height={36} style={{ width: '36px', height: 'auto', objectFit: 'contain' }} priority />
+                    <Image src="/assets/brand/logo/primary.svg" alt="Harvics" width={36} height={36} style={{ width: '36px', height: 'auto', objectFit: 'contain' }} priority />
                 <div className="flex flex-col">
                   <span className="text-xl font-bold tracking-tight" style={{ color: '#1A0505' }}>HARVICS</span>
                   <span className="text-[10px] uppercase tracking-widest" style={{ color: '#C3A35E' }}>Global Ventures</span>

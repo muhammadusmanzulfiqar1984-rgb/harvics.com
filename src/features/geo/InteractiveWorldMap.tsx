@@ -77,7 +77,7 @@ export default function InteractiveWorldMap() {
   const industries = useCountUp(10, 1000, visible)
 
   useEffect(() => {
-    fetch('/world-paths.json').then(r => r.json()).then(setWorldPaths)
+    fetch('/assets/geo/world-paths.json').then(r => r.json()).then(setWorldPaths)
   }, [])
 
   useEffect(() => {

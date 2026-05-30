@@ -203,7 +203,7 @@ const BackgroundMusic: React.FC = () => {
         onEnded={() => setIsPlaying(false)}
         onError={(e) => console.error('Audio error:', e)}
       >
-        <source src="/Music/emotional-inspiring-violin-342019.mp3" type="audio/mpeg" />
+        <source src="/assets/media/audio/emotional-inspiring-violin-342019.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
 
