@@ -190,7 +190,7 @@ export default async function LocaleLayout({
                       {/* Footer - global across all routes */}
                       <ConditionalFooter />
                       <FrontendWatchdogClient />
-                      <BackgroundMusic />
+                      {/* <BackgroundMusic /> — disabled per user request */}
                       {/* <AutoBugDetector /> — hidden; re-enable when debugging */}
                       <GlobalScrollReveal />
                       <ChatbotWidget />
