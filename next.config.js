@@ -201,3 +201,13 @@ const nextConfig = {
 };
 
 module.exports = withNextIntl(nextConfig);
+
+// OpenNext Cloudflare adapter — local dev integration for bindings.
+// Safe no-op when @opennextjs/cloudflare is not installed (e.g. backend-only environments).
+try {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const { initOpenNextCloudflareForDev } = require('@opennextjs/cloudflare');
+  initOpenNextCloudflareForDev();
+} catch {
+  /* adapter not installed — skip */
+}

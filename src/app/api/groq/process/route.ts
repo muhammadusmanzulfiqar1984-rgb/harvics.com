@@ -7,7 +7,7 @@
 
 import { NextResponse } from 'next/server';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 const HF_MODEL = 'stabilityai/stable-diffusion-xl-base-1.0';
 const GROQ_MODEL = process.env.GROQ_MODEL || 'llama-3.1-8b-instant';
@@ -75,11 +75,8 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'HuggingFace failed', detail }, { status: 502 });
     }
 
-    const arrayBuffer = await hfRes.arrayBuffer();
-    const uint8Array = new Uint8Array(arrayBuffer);
-    let binary = '';
-    uint8Array.forEach(byte => { binary += String.fromCharCode(byte); });
-    const base64 = btoa(binary);
+    const imageBuffer = await hfRes.arrayBuffer();
+    const base64 = Buffer.from(imageBuffer).toString('base64');
     const contentType = hfRes.headers.get('content-type') || 'image/jpeg';
 
     return NextResponse.json({
