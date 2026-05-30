@@ -304,7 +304,12 @@
     "subscribe": "S'abonner",
     "subscribing": "S'abonner...",
     "aboutUs": "À propos de nous",
-    "media": "Médias"
+    "media": "Médias",
+    "newsletterHeadline": "Restez connecté",
+    "newsletterHeadline2": "Rejoignez notre réseau",
+    "newsletterTagline": "Recevez les dernières informations commerciales et mises à jour du marché",
+    "activeShipments": "Expéditions actives",
+    "certifiedAudited": "Certifié et audité"
   },
   "search": {
     "placeholder": "Rechercher des produits, des marques ou des catégories",

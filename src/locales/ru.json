@@ -214,7 +214,12 @@
     "subscribe": "Подписаться",
     "subscribing": "Подписка...",
     "aboutUs": "О нас",
-    "media": "СМИ"
+    "media": "СМИ",
+    "newsletterHeadline": "Оставайтесь на связи",
+    "newsletterHeadline2": "Присоединяйтесь к нашей сети",
+    "newsletterTagline": "Получайте последние торговые данные и обновления рынка",
+    "activeShipments": "Активные отгрузки",
+    "certifiedAudited": "Сертифицировано и проверено"
   },
   "search": {
     "placeholder": "Поиск товаров, брендов или категорий",

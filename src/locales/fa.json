@@ -214,7 +214,12 @@
     "subscribe": "اشتراک",
     "subscribing": "در حال عضویت...",
     "aboutUs": "درباره ما",
-    "media": "رسانه"
+    "media": "رسانه",
+    "newsletterHeadline": "در ارتباط باشید",
+    "newsletterHeadline2": "به شبکه ما بپیوندید",
+    "newsletterTagline": "جدیدترین اطلاعات تجاری و به‌روزرسانی‌های بازار را دریافت کنید",
+    "activeShipments": "محموله‌های فعال",
+    "certifiedAudited": "تأیید شده و حسابرسی شده"
   },
   "search": {
     "placeholder": "جستجوی محصولات، برندها یا دسته‌بندی‌ها",

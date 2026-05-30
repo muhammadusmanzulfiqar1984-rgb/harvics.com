@@ -214,7 +214,12 @@
     "subscribe": "Tilaa",
     "subscribing": "Tilataan...",
     "aboutUs": "Tietoa meistä",
-    "media": "Media"
+    "media": "Media",
+    "newsletterHeadline": "Pysy yhteydessä",
+    "newsletterHeadline2": "Liity verkostoomme",
+    "newsletterTagline": "Saa uusimmat kauppatiedot ja markkinapäivitykset",
+    "activeShipments": "Aktiiviset lähetykset",
+    "certifiedAudited": "Sertifioitu ja auditoitu"
   },
   "search": {
     "placeholder": "Hae tuotteita, tuotemerkkejä tai luokkia",

@@ -214,7 +214,12 @@
     "subscribe": "সাবস্ক্রাইব করুন",
     "subscribing": "সাবস্ক্রাইব করা...",
     "aboutUs": "আমাদের সম্পর্কে",
-    "media": "মিডিয়া"
+    "media": "মিডিয়া",
+    "newsletterHeadline": "সংযুক্ত থাকুন",
+    "newsletterHeadline2": "আমাদের নেটওয়ার্কে যোগ দিন",
+    "newsletterTagline": "সর্বশেষ বাণিজ্য তথ্য এবং বাজার আপডেট পান",
+    "activeShipments": "সক্রিয় চালান",
+    "certifiedAudited": "প্রত্যয়িত এবং নিরীক্ষিত"
   },
   "search": {
     "placeholder": "পণ্য, ব্র্যান্ড বা বিভাগ অনুসন্ধান করুন",

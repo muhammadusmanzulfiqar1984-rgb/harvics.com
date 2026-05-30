@@ -105,29 +105,42 @@ const OperatingModelSection: React.FC = () => {
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#C3A35E] to-transparent" />
 
       <div className="max-w-[1200px] mx-auto relative z-10">
-        {/* HEADER */}
+        {/* HEADER — Option B: left-aligned dashboard with metrics on right */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="text-center mb-14"
+          className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 md:gap-10 pb-6 border-b border-[#C3A35E]/20 mb-10"
         >
-          <div className="inline-flex items-center justify-center gap-4 mb-5">
-            <span className="block w-8 h-px bg-[#C3A35E]" />
-            <span className="text-[10px] tracking-[5px] uppercase text-[#C3A35E] font-semibold">
+          <div className="md:max-w-2xl">
+            <span className="inline-flex items-center gap-2.5 text-[10px] tracking-[5px] uppercase text-[#C3A35E] font-semibold mb-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C3A35E]" />
               The HARVICS Operating Model
             </span>
-            <span className="block w-8 h-px bg-[#C3A35E]" />
+            <h2 className="text-white text-3xl md:text-5xl font-extralight tracking-tight leading-[1.05]">
+              Built like infrastructure.
+              <br />
+              <span className="text-[#E5C07B] font-normal">Sold like a service.</span>
+            </h2>
+            <p className="text-white/60 text-[13px] max-w-xl mt-3 font-light leading-relaxed">
+              The system behind every shipment, every approval, every relationship — explained on your terms.
+            </p>
           </div>
-          <h2 className="text-white text-3xl md:text-5xl font-extralight tracking-tight leading-tight mb-4">
-            Built like infrastructure.
-            <br />
-            <span className="text-[#E5C07B] font-normal">Sold like a service.</span>
-          </h2>
-          <p className="text-white/60 text-sm max-w-xl mx-auto font-light leading-relaxed">
-            The system behind every shipment, every approval, every relationship — explained on your terms.
-          </p>
+          <div className="flex gap-8 md:gap-9 md:pl-6 md:border-l md:border-[#C3A35E]/15">
+            <div>
+              <div className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">Stages</div>
+              <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">14</div>
+            </div>
+            <div>
+              <div className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">Markets</div>
+              <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">42</div>
+            </div>
+            <div>
+              <div className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">On-Time</div>
+              <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">96%</div>
+            </div>
+          </div>
         </motion.div>
 
         {/* TABS */}

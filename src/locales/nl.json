@@ -214,7 +214,12 @@
     "subscribe": "Abonneren",
     "subscribing": "Abonneren...",
     "aboutUs": "Over ons",
-    "media": "Media"
+    "media": "Media",
+    "newsletterHeadline": "Blijf verbonden",
+    "newsletterHeadline2": "Word lid van ons netwerk",
+    "newsletterTagline": "Ontvang de nieuwste handelsinformatie en marktupdates",
+    "activeShipments": "Actieve zendingen",
+    "certifiedAudited": "Gecertificeerd en geaudit"
   },
   "search": {
     "placeholder": "Zoek naar producten, merken of categorieën.",

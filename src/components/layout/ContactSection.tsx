@@ -22,7 +22,13 @@ const ContactSection: React.FC = () => {
   const [sent, setSent] = useState(false)
 
   const getText = (key: string, fallback: string) => {
-    try { return t(key) || fallback } catch { return fallback }
+    try {
+      const v = t(key)
+      // next-intl returns the full key path (e.g. "contact.eyebrow") when the
+      // translation is missing — treat that as missing and use the fallback.
+      if (!v || v === key || v.endsWith(`.${key}`)) return fallback
+      return v
+    } catch { return fallback }
   }
 
   const handleSubmit = async (e: React.FormEvent) => {

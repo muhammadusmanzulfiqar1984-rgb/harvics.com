@@ -213,7 +213,12 @@
     "emailAddress": "Dirección de correo electrónico",
     "enterEmailPlaceholder": "Ingrese su dirección de correo",
     "subscribe": "Suscribirse",
-    "subscribing": "Suscribiendo..."
+    "subscribing": "Suscribiendo...",
+    "newsletterHeadline": "Manténgase conectado",
+    "newsletterHeadline2": "Únase a nuestra red",
+    "newsletterTagline": "Reciba la última información comercial y actualizaciones del mercado",
+    "activeShipments": "Envíos activos",
+    "certifiedAudited": "Certificado y auditado"
   },
   "search": {
     "placeholder": "Buscar productos, marcas o categorías",

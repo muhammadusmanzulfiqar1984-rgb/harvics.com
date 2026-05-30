@@ -214,7 +214,12 @@
     "subscribe": "구독하다",
     "subscribing": "구독 중...",
     "aboutUs": "회사 소개",
-    "media": "메디아"
+    "media": "메디아",
+    "newsletterHeadline": "연결을 유지하세요",
+    "newsletterHeadline2": "네트워크에 가입하세요",
+    "newsletterTagline": "최신 무역 정보와 시장 업데이트를 받아보세요",
+    "activeShipments": "활성 배송",
+    "certifiedAudited": "인증 및 감사 완료"
   },
   "search": {
     "placeholder": "제품, 브랜드 또는 카테고리를 검색하세요.",

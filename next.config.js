@@ -85,12 +85,13 @@ const nextConfig = {
     
     const finalBackendUrl = isValidUrl ? backendUrl : 'http://localhost:4000';
     
-    console.log(`[Next.js Rewrites] Proxying /api/* to ${finalBackendUrl}/api/*`);
+    console.log(`[Next.js Rewrites] Proxying /api/* to ${finalBackendUrl}/api/* (excluding /api/groq/*)`);
     
     return [
       {
-        source: '/api/:path*',
-        destination: `${finalBackendUrl}/api/:path*`,
+        // Exclude /api/groq/* so it's handled by Next.js App Router (Groq + HF pipeline)
+        source: '/api/:path((?!groq(?:/|$)).*)',
+        destination: `${finalBackendUrl}/api/:path`,
       },
     ];
   },

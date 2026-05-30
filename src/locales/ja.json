@@ -214,7 +214,12 @@
     "subscribe": "購読する",
     "subscribing": "購読中...",
     "aboutUs": "私たちについて",
-    "media": "メディア"
+    "media": "メディア",
+    "newsletterHeadline": "つながりを保つ",
+    "newsletterHeadline2": "ネットワークに参加",
+    "newsletterTagline": "最新の貿易情報と市場アップデートをお届けします",
+    "activeShipments": "進行中の出荷",
+    "certifiedAudited": "認証および監査済み"
   },
   "search": {
     "placeholder": "商品、ブランド、またはカテゴリを検索",

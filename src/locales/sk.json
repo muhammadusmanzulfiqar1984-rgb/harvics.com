@@ -214,7 +214,12 @@
     "subscribe": "Prihlásiť sa na odber",
     "subscribing": "Prihlasovanie sa na odber...",
     "aboutUs": "O nás",
-    "media": "Médiá"
+    "media": "Médiá",
+    "newsletterHeadline": "Zostaňte v kontakte",
+    "newsletterHeadline2": "Pridajte sa do našej siete",
+    "newsletterTagline": "Získajte najnovšie obchodné informácie a aktualizácie trhu",
+    "activeShipments": "Aktívne zásielky",
+    "certifiedAudited": "Certifikované a auditované"
   },
   "search": {
     "placeholder": "Vyhľadávanie produktov, značiek alebo kategórií",

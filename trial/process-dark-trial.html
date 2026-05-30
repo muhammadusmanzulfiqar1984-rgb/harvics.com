@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HARVICS — Source / Sample / Ship · 3 Strategic Dark Options</title>
+<style>
+  *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    background: #050102;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
+  .swatch-label {
+    background: #000;
+    color: #C3A35E;
+    font-family: -apple-system, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    border-bottom: 1px solid rgba(195,163,94,0.25);
+  }
+  .swatch-label strong { color: #fff; font-weight: 600; }
+  .swatch-label .meta { float: right; color: rgba(255,255,255,0.45); letter-spacing: 0.2em; font-weight: 400; }
+  .swatch-label .strat { display:block; color: rgba(255,255,255,0.65); font-size: 10px; letter-spacing: 0.12em; margin-top: 6px; text-transform: none; }
+
+  /* ═══════════════════════════════════════════════════════════════
+     OPTION 1 — TIMELINE STRIP
+     Horizontal timeline. Numbered stations on a gold rail.
+     Source ───●─── Sample ───●─── Ship
+     Each station expands details below. Engineering-blueprint vibe.
+     ═══════════════════════════════════════════════════════════════ */
+  .opt-1-section { background: #1a0608; padding: 56px 0 64px; }
+  .opt-1-header { padding: 0 32px 32px; border-bottom: 1px solid rgba(195,163,94,0.18); margin-bottom: 56px; }
+  .opt-1-row {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    max-width: 1400px; margin: 0 auto;
+  }
+  .opt-1 .eyebrow {
+    color: #C3A35E; font-size: 10px; letter-spacing: 0.32em;
+    text-transform: uppercase; font-weight: 700;
+    font-family: -apple-system, sans-serif;
+    display: inline-flex; align-items: center; gap: 10px; margin-bottom: 12px;
+  }
+  .opt-1 .eyebrow::before {
+    content: ''; width: 6px; height: 6px; background: #C3A35E; border-radius: 50%;
+  }
+  .opt-1 h2 {
+    font-size: clamp(36px, 4.5vw, 56px);
+    font-weight: 300; line-height: 1.0; letter-spacing: -0.025em;
+  }
+  .opt-1 h2 .accent { color: #E5C77A; font-style: italic; font-weight: 400; }
+  .opt-1 .subhead {
+    color: rgba(255,255,255,0.55); font-size: 12px; line-height: 1.7;
+    max-width: 460px; margin-top: 14px;
+    font-family: -apple-system, sans-serif;
+  }
+  .opt-1 .meta-right {
+    text-align: right; font-family: -apple-system, sans-serif;
+    color: rgba(255,255,255,0.5); font-size: 10px;
+    letter-spacing: 0.32em; text-transform: uppercase; font-weight: 600;
+  }
+  .opt-1 .meta-right .big { color: #fff; font-size: 22px; font-weight: 300; letter-spacing: -0.01em; display: block; margin-top: 4px; }
+
+  .opt-1-timeline {
+    max-width: 1400px; margin: 0 auto; padding: 0 32px;
+    position: relative;
+  }
+  .opt-1-rail {
+    position: absolute; top: 36px; left: calc(16.66% + 32px); right: calc(16.66% + 32px);
+    height: 1px;
+    background: linear-gradient(90deg, rgba(195,163,94,0.15), rgba(195,163,94,0.6), rgba(195,163,94,0.15));
+  }
+  .opt-1-stations {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
+    position: relative; z-index: 2;
+  }
+  .opt-1-station { padding: 0 24px; }
+  .opt-1-node {
+    width: 72px; height: 72px;
+    border: 1px solid rgba(195,163,94,0.4);
+    background: #1a0608;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 28px;
+    font-family: -apple-system, sans-serif;
+    font-size: 18px; font-weight: 200; color: #C3A35E;
+    letter-spacing: 0.1em;
+    position: relative;
+  }
+  .opt-1-node::before {
+    content: ''; position: absolute; inset: 4px; border: 1px solid rgba(195,163,94,0.15);
+  }
+  .opt-1-station h3 {
+    text-align: center;
+    font-size: 22px; font-weight: 300; color: #fff; letter-spacing: 0.02em;
+    margin-bottom: 4px;
+  }
+  .opt-1-station .station-tag {
+    text-align: center;
+    color: #C3A35E; font-size: 9px; letter-spacing: 0.32em;
+    text-transform: uppercase; font-weight: 700;
+    font-family: -apple-system, sans-serif;
+    margin-bottom: 18px;
+  }
+  .opt-1-station p {
+    color: rgba(255,255,255,0.55); font-size: 12.5px; line-height: 1.75;
+    font-family: -apple-system, sans-serif; font-weight: 300;
+    text-align: center; max-width: 280px; margin: 0 auto 22px;
+  }
+  .opt-1-station .chips {
+    display: flex; gap: 6px; justify-content: center; flex-wrap: wrap;
+  }
+  .opt-1-station .chip {
+    font-family: -apple-system, sans-serif;
+    font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: #C3A35E; font-weight: 700;
+    padding: 4px 9px; border: 1px solid rgba(195,163,94,0.3);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     OPTION 2 — STACKED EXECUTIVE BRIEFS
+     Three full-bleed horizontal rows. Each step gets its own wide row
+     with big number on left, content on right, gold rule dividers.
+     Reads like a Bloomberg terminal "executive summary"
+     ═══════════════════════════════════════════════════════════════ */
+  .opt-2-section { background: #1a0608; padding: 56px 0 0; }
+  .opt-2-header { padding: 0 32px 28px; border-bottom: 1px solid rgba(195,163,94,0.18); margin-bottom: 0; }
+  .opt-2-row {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    max-width: 1400px; margin: 0 auto;
+  }
+  .opt-2 .eyebrow {
+    color: #C3A35E; font-size: 10px; letter-spacing: 0.32em;
+    text-transform: uppercase; font-weight: 700;
+    font-family: -apple-system, sans-serif;
+    display: inline-flex; align-items: center; gap: 10px; margin-bottom: 12px;
+  }
+  .opt-2 .eyebrow::before {
+    content: ''; width: 6px; height: 6px; background: #C3A35E; border-radius: 50%;
+  }
+  .opt-2 h2 {
+    font-size: clamp(36px, 4.5vw, 56px);
+    font-weight: 300; line-height: 1.0; letter-spacing: -0.025em;
+  }
+  .opt-2 h2 .accent { color: #E5C77A; font-style: italic; font-weight: 400; }
+  .opt-2 .subhead {
+    color: rgba(255,255,255,0.55); font-size: 12px; line-height: 1.7;
+    max-width: 460px; margin-top: 14px;
+    font-family: -apple-system, sans-serif;
+  }
+  .opt-2 .meta-right {
+    text-align: right; font-family: -apple-system, sans-serif;
+    color: rgba(255,255,255,0.5); font-size: 10px;
+    letter-spacing: 0.32em; text-transform: uppercase; font-weight: 600;
+  }
+  .opt-2-step {
+    border-bottom: 1px solid rgba(195,163,94,0.12);
+    padding: 36px 32px;
+    transition: background 0.3s;
+  }
+  .opt-2-step:hover { background: rgba(195,163,94,0.03); }
+  .opt-2-step.active { background: rgba(107,31,43,0.25); border-left: 2px solid #C3A35E; }
+  .opt-2-grid {
+    max-width: 1400px; margin: 0 auto;
+    display: grid; grid-template-columns: 160px 1fr 240px;
+    gap: 48px; align-items: center;
+  }
+  .opt-2-num {
+    font-family: -apple-system, sans-serif;
+    font-size: 96px; font-weight: 100; color: rgba(195,163,94,0.5);
+    line-height: 1; letter-spacing: -0.05em;
+  }
+  .opt-2-content h3 {
+    font-size: 28px; font-weight: 300; color: #fff;
+    letter-spacing: -0.01em; margin-bottom: 6px;
+  }
+  .opt-2-content .step-tag {
+    color: #C3A35E; font-size: 9px; letter-spacing: 0.35em;
+    text-transform: uppercase; font-weight: 700;
+    font-family: -apple-system, sans-serif; margin-bottom: 14px;
+  }
+  .opt-2-content p {
+    color: rgba(255,255,255,0.55); font-size: 13px; line-height: 1.75;
+    font-family: -apple-system, sans-serif; font-weight: 300;
+    max-width: 600px; margin-bottom: 14px;
+  }
+  .opt-2-content .chips { display: flex; gap: 8px; flex-wrap: wrap; }
+  .opt-2-content .chip {
+    font-family: -apple-system, sans-serif;
+    font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: #C3A35E; font-weight: 700;
+    padding: 4px 10px; border: 1px solid rgba(195,163,94,0.25);
+  }
+  .opt-2-sla {
+    font-family: -apple-system, sans-serif;
+    text-align: right;
+    border-left: 1px solid rgba(195,163,94,0.2); padding-left: 32px;
+  }
+  .opt-2-sla .sla-label {
+    color: #C3A35E; font-size: 9px; letter-spacing: 0.32em;
+    text-transform: uppercase; font-weight: 700; margin-bottom: 8px;
+  }
+  .opt-2-sla .sla-value {
+    color: #fff; font-size: 32px; font-weight: 200; letter-spacing: -0.02em; line-height: 1;
+    margin-bottom: 4px;
+  }
+  .opt-2-sla .sla-sub {
+    color: rgba(255,255,255,0.4); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     OPTION 3 — SPLIT THEATRE
+     Center stage is one big featured card (the active step), tabs to switch.
+     Sample/Source/Ship as toggleable "spotlight" cards.
+     Premium, focused, cinematic — one thing at a time.
+     ═══════════════════════════════════════════════════════════════ */
+  .opt-3-section { background: #1a0608; padding: 56px 0 64px; }
+  .opt-3-header { padding: 0 32px 28px; border-bottom: 1px solid rgba(195,163,94,0.18); margin-bottom: 48px; }
+  .opt-3-row {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    max-width: 1400px; margin: 0 auto;
+  }
+  .opt-3 .eyebrow {
+    color: #C3A35E; font-size: 10px; letter-spacing: 0.32em;
+    text-transform: uppercase; font-weight: 700;
+    font-family: -apple-system, sans-serif;
+    display: inline-flex; align-items: center; gap: 10px; margin-bottom: 12px;
+  }
+  .opt-3 .eyebrow::before {
+    content: ''; width: 6px; height: 6px; background: #C3A35E; border-radius: 50%;
+  }
+  .opt-3 h2 {
+    font-size: clamp(36px, 4.5vw, 56px);
+    font-weight: 300; line-height: 1.0; letter-spacing: -0.025em;
+  }
+  .opt-3 h2 .accent { color: #E5C77A; font-style: italic; font-weight: 400; }
+  .opt-3 .subhead {
+    color: rgba(255,255,255,0.55); font-size: 12px; line-height: 1.7;
+    max-width: 460px; margin-top: 14px;
+    font-family: -apple-system, sans-serif;
+  }
+  .opt-3-tabs {
+    max-width: 1400px; margin: 0 auto 32px; padding: 0 32px;
+    display: flex; gap: 0; border-bottom: 1px solid rgba(195,163,94,0.15);
+  }
+  .opt-3-tab {
+    flex: 1; padding: 18px 24px; cursor: pointer;
+    display: flex; align-items: center; gap: 16px;
+    font-family: -apple-system, sans-serif;
+    border-right: 1px solid rgba(195,163,94,0.1);
+    transition: all 0.25s;
+    color: rgba(255,255,255,0.45);
+  }
+  .opt-3-tab:last-child { border-right: none; }
+  .opt-3-tab:hover { color: rgba(255,255,255,0.75); background: rgba(195,163,94,0.03); }
+  .opt-3-tab.active {
+    color: #fff; background: rgba(195,163,94,0.06);
+    border-bottom: 2px solid #C3A35E; margin-bottom: -1px;
+  }
+  .opt-3-tab .tab-num {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.2em;
+    color: #C3A35E;
+  }
+  .opt-3-tab .tab-label {
+    font-size: 14px; font-weight: 500; letter-spacing: 0.04em;
+  }
+  .opt-3-tab .tab-sla {
+    margin-left: auto; font-size: 10px; color: rgba(255,255,255,0.4);
+    letter-spacing: 0.2em; text-transform: uppercase;
+  }
+  .opt-3-stage {
+    max-width: 1400px; margin: 0 auto; padding: 0 32px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+    border: 1px solid rgba(195,163,94,0.2);
+    background: linear-gradient(135deg, rgba(107,31,43,0.4) 0%, rgba(26,6,8,0.95) 100%);
+    min-height: 380px;
+  }
+  .opt-3-stage-left { padding: 48px; border-right: 1px solid rgba(195,163,94,0.15); }
+  .opt-3-stage-left .big-num {
+    font-family: -apple-system, sans-serif;
+    font-size: 140px; font-weight: 100; color: rgba(195,163,94,0.25);
+    line-height: 0.9; letter-spacing: -0.05em; margin-bottom: 16px;
+  }
+  .opt-3-stage-left h3 {
+    font-size: 42px; font-weight: 300; color: #fff;
+    letter-spacing: -0.02em; margin-bottom: 8px; line-height: 1.05;
+  }
+  .opt-3-stage-left .tag {
+    color: #C3A35E; font-size: 10px; letter-spacing: 0.35em;
+    text-transform: uppercase; font-weight: 700;
+    font-family: -apple-system, sans-serif;
+    padding-bottom: 18px; border-bottom: 1px solid rgba(195,163,94,0.25);
+    margin-bottom: 24px; display: block;
+  }
+  .opt-3-stage-left p {
+    color: rgba(255,255,255,0.65); font-size: 14px; line-height: 1.8;
+    font-family: -apple-system, sans-serif; font-weight: 300;
+  }
+  .opt-3-stage-right { padding: 48px; display: flex; flex-direction: column; justify-content: space-between; }
+  .opt-3-stage-right .meta-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 32px;
+    font-family: -apple-system, sans-serif;
+  }
+  .opt-3-stage-right .meta-item .meta-label {
+    color: #C3A35E; font-size: 9px; letter-spacing: 0.32em;
+    text-transform: uppercase; font-weight: 700; margin-bottom: 8px;
+  }
+  .opt-3-stage-right .meta-item .meta-value {
+    color: #fff; font-size: 18px; font-weight: 300; letter-spacing: -0.01em;
+  }
+  .opt-3-stage-right .meta-item .meta-sub {
+    color: rgba(255,255,255,0.45); font-size: 11px; margin-top: 4px;
+  }
+  .opt-3-stage-right .deliverables {
+    margin-top: 28px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(195,163,94,0.18);
+  }
+  .opt-3-stage-right .deliverables-label {
+    color: #C3A35E; font-size: 9px; letter-spacing: 0.32em;
+    text-transform: uppercase; font-weight: 700;
+    font-family: -apple-system, sans-serif; margin-bottom: 14px;
+  }
+  .opt-3-stage-right .deliverables ul {
+    list-style: none; padding: 0;
+  }
+  .opt-3-stage-right .deliverables li {
+    color: rgba(255,255,255,0.7); font-size: 13px;
+    font-family: -apple-system, sans-serif; font-weight: 300;
+    padding: 7px 0; display: flex; align-items: center; gap: 12px;
+    border-bottom: 1px solid rgba(195,163,94,0.08);
+  }
+  .opt-3-stage-right .deliverables li::before {
+    content: ''; width: 4px; height: 4px; background: #C3A35E;
+    transform: rotate(45deg); flex-shrink: 0;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ═════════════════════════════════════════════════════════════
+     OPTION 1 — TIMELINE STRIP
+     ═════════════════════════════════════════════════════════════ -->
+<div class="swatch-label">
+  <strong>OPTION 1</strong> — Timeline Strip
+  <span class="meta">Engineering blueprint · linear flow</span>
+  <span class="strat">Strategy: 3 nodes on a gold rail. Says "process" before words say it. Reads as a circuit diagram.</span>
+</div>
+
+<section class="opt-1-section opt-1">
+  <div class="opt-1-header">
+    <div class="opt-1-row">
+      <div>
+        <span class="eyebrow">The Operating Sequence</span>
+        <h2>From brief to <span class="accent">shelf.</span></h2>
+        <p class="subhead">No middlemen. No guesswork. A repeatable commercial process built for serious buyers.</p>
+      </div>
+      <div class="meta-right">
+        Avg Cycle
+        <span class="big">14–21 days</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="opt-1-timeline">
+    <div class="opt-1-rail"></div>
+    <div class="opt-1-stations">
+
+      <div class="opt-1-station">
+        <div class="opt-1-node">01</div>
+        <h3>Source</h3>
+        <div class="station-tag">Tell us what you need</div>
+        <p>Submit your product brief. Our sourcing team identifies the right factories from our verified global network within 24 hours.</p>
+        <div class="chips">
+          <span class="chip">Spec</span>
+          <span class="chip">Volume</span>
+          <span class="chip">Market</span>
+        </div>
+      </div>
+
+      <div class="opt-1-station">
+        <div class="opt-1-node">02</div>
+        <h3>Sample</h3>
+        <div class="station-tag">Validate before you commit</div>
+        <p>Physical samples with full lab reports — HACCP, Halal, ISO. Our QC team runs AQL inspections at source. You approve, we proceed.</p>
+        <div class="chips">
+          <span class="chip">Physical</span>
+          <span class="chip">Lab Reports</span>
+          <span class="chip">AQL</span>
+        </div>
+      </div>
+
+      <div class="opt-1-station">
+        <div class="opt-1-node">03</div>
+        <h3>Ship</h3>
+        <div class="station-tag">Door to door, tracked</div>
+        <p>Full freight management — FCL, LCL, air, road. Customs, Letters of Credit, HS code filing. Real-time container tracking until shelf.</p>
+        <div class="chips">
+          <span class="chip">FCL / LCL</span>
+          <span class="chip">Customs</span>
+          <span class="chip">Live Track</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═════════════════════════════════════════════════════════════
+     OPTION 2 — STACKED EXECUTIVE BRIEFS
+     ═════════════════════════════════════════════════════════════ -->
+<div class="swatch-label" style="margin-top: 64px;">
+  <strong>OPTION 2</strong> — Stacked Executive Briefs
+  <span class="meta">Bloomberg-rows · SLA-driven</span>
+  <span class="strat">Strategy: 3 full-width horizontal rows. Each step shows number, content, and its own SLA panel. Skims like a P&L.</span>
+</div>
+
+<section class="opt-2-section opt-2">
+  <div class="opt-2-header">
+    <div class="opt-2-row">
+      <div>
+        <span class="eyebrow">The Operating Sequence</span>
+        <h2>From brief to <span class="accent">shelf.</span></h2>
+        <p class="subhead">No middlemen. No guesswork. A repeatable commercial process built for serious buyers.</p>
+      </div>
+      <div class="meta-right">3 Steps · 14–21d · 24h Response</div>
+    </div>
+  </div>
+
+  <div class="opt-2-step">
+    <div class="opt-2-grid">
+      <div class="opt-2-num">01</div>
+      <div class="opt-2-content">
+        <div class="step-tag">Tell us what you need</div>
+        <h3>Source</h3>
+        <p>Submit your product brief — category, volume, market, certifications required. Our sourcing team identifies the right factories from our verified global network within 24 hours.</p>
+        <div class="chips">
+          <span class="chip">Product Spec</span>
+          <span class="chip">Volume & Frequency</span>
+          <span class="chip">Target Market</span>
+        </div>
+      </div>
+      <div class="opt-2-sla">
+        <div class="sla-label">Response SLA</div>
+        <div class="sla-value">&lt;24h</div>
+        <div class="sla-sub">Factory shortlist</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="opt-2-step active">
+    <div class="opt-2-grid">
+      <div class="opt-2-num">02</div>
+      <div class="opt-2-content">
+        <div class="step-tag">Validate before you commit</div>
+        <h3>Sample</h3>
+        <p>Receive physical samples with full lab reports — HACCP, Halal, ISO documentation included. Our QC team runs AQL inspections at source. You approve, we proceed. No surprises.</p>
+        <div class="chips">
+          <span class="chip">Physical Sample</span>
+          <span class="chip">Lab Reports</span>
+          <span class="chip">AQL Inspection</span>
+        </div>
+      </div>
+      <div class="opt-2-sla">
+        <div class="sla-label">Dispatch SLA</div>
+        <div class="sla-value">7d</div>
+        <div class="sla-sub">Sample + reports</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="opt-2-step">
+    <div class="opt-2-grid">
+      <div class="opt-2-num">03</div>
+      <div class="opt-2-content">
+        <div class="step-tag">Door to door, tracked</div>
+        <h3>Ship</h3>
+        <p>Full freight management — FCL, LCL, air and road. Customs documentation, Letters of Credit, HS code filing. Real-time container tracking until your goods are on shelf.</p>
+        <div class="chips">
+          <span class="chip">FCL / LCL Freight</span>
+          <span class="chip">Customs & HS Codes</span>
+          <span class="chip">Live Tracking</span>
+        </div>
+      </div>
+      <div class="opt-2-sla">
+        <div class="sla-label">Cycle</div>
+        <div class="sla-value">14–21d</div>
+        <div class="sla-sub">Brief to shelf</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═════════════════════════════════════════════════════════════
+     OPTION 3 — SPLIT THEATRE
+     ═════════════════════════════════════════════════════════════ -->
+<div class="swatch-label" style="margin-top: 64px;">
+  <strong>OPTION 3</strong> — Split Theatre
+  <span class="meta">One-at-a-time · cinematic</span>
+  <span class="strat">Strategy: tabs at top, one big featured "stage" below. Forces focus on a single step. Most premium.</span>
+</div>
+
+<section class="opt-3-section opt-3">
+  <div class="opt-3-header">
+    <div class="opt-3-row">
+      <div>
+        <span class="eyebrow">The Operating Sequence</span>
+        <h2>From brief to <span class="accent">shelf.</span></h2>
+        <p class="subhead">No middlemen. No guesswork. A repeatable commercial process built for serious buyers.</p>
+      </div>
+      <div class="meta-right">3 Steps · 14–21d Cycle</div>
+    </div>
+  </div>
+
+  <div class="opt-3-tabs">
+    <div class="opt-3-tab">
+      <span class="tab-num">01</span>
+      <span class="tab-label">Source</span>
+      <span class="tab-sla">&lt;24h</span>
+    </div>
+    <div class="opt-3-tab active">
+      <span class="tab-num">02</span>
+      <span class="tab-label">Sample</span>
+      <span class="tab-sla">7d</span>
+    </div>
+    <div class="opt-3-tab">
+      <span class="tab-num">03</span>
+      <span class="tab-label">Ship</span>
+      <span class="tab-sla">14–21d</span>
+    </div>
+  </div>
+
+  <div class="opt-3-stage">
+    <div class="opt-3-stage-left">
+      <div class="big-num">02</div>
+      <span class="tag">Validate before you commit</span>
+      <h3>Sample</h3>
+      <p>Receive physical samples with full lab reports — HACCP, Halal, ISO documentation included. Our QC team runs AQL inspections at source. You approve, we proceed. No surprises.</p>
+    </div>
+    <div class="opt-3-stage-right">
+      <div class="meta-grid">
+        <div class="meta-item">
+          <div class="meta-label">Sample SLA</div>
+          <div class="meta-value">7 days</div>
+          <div class="meta-sub">From confirmed brief</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">QC Standard</div>
+          <div class="meta-value">AQL 2.5</div>
+          <div class="meta-sub">At source inspection</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Certifications</div>
+          <div class="meta-value">HACCP · Halal · ISO</div>
+          <div class="meta-sub">Lab reports included</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Approval</div>
+          <div class="meta-value">Buyer signs off</div>
+          <div class="meta-sub">No PO without consent</div>
+        </div>
+      </div>
+      <div class="deliverables">
+        <div class="deliverables-label">What you receive</div>
+        <ul>
+          <li>Physical samples dispatched DHL Express</li>
+          <li>Full third-party lab analysis report</li>
+          <li>Factory audit summary + photos</li>
+          <li>Indicative pricing & lead-time letter</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div style="background: #000; padding: 40px 32px; text-align: center; font-family: -apple-system, sans-serif; color: rgba(195,163,94,0.6); font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; border-top: 1px solid rgba(195,163,94,0.15); margin-top: 64px;">
+  Pick 1, 2, or 3
+</div>
+
+</body>
+</html>

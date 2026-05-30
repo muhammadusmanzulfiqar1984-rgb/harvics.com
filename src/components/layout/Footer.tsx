@@ -19,20 +19,30 @@ const Footer: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitMessage, setSubmitMessage] = useState('')
 
+  // Defensive translator: next-intl returns the key path (e.g. "footer.foo")
+  // for missing keys, which is truthy and defeats `t() || fallback`.
+  const tt = (key: string, fallback: string) => {
+    try {
+      const v = t(key)
+      if (!v || v === key || v.endsWith(`.${key}`)) return fallback
+      return v
+    } catch { return fallback }
+  }
+
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!email || !email.includes('@')) {
-      setSubmitMessage(t('invalidEmail') || 'Please enter a valid email address')
+      setSubmitMessage(tt('invalidEmail', 'Please enter a valid email address'))
       return
     }
     setIsSubmitting(true)
     setSubmitMessage('')
     try {
       await new Promise(resolve => setTimeout(resolve, 1000))
-      setSubmitMessage(t('subscriptionSuccess') || 'Thank you for subscribing!')
+      setSubmitMessage(tt('subscriptionSuccess', 'Thank you for subscribing!'))
       setEmail('')
     } catch {
-      setSubmitMessage(t('subscriptionError') || 'Something went wrong. Please try again.')
+      setSubmitMessage(tt('subscriptionError', 'Something went wrong. Please try again.'))
     } finally {
       setIsSubmitting(false)
       setTimeout(() => setSubmitMessage(''), 5000)
@@ -48,40 +58,40 @@ const Footer: React.FC = () => {
   ]
 
   const usefulLinks = [
-    { href: `/${locale}/faq`, label: t('askHarvics') || 'Ask Harvics' },
-    { href: `/${locale}/contact`, label: t('contactUs') || 'Contact us' },
-    { href: `/${locale}/careers`, label: t('searchForJobs') || 'Search for jobs' },
-    { href: `/${locale}/newsletter`, label: t('signUpForNews') || 'Sign up for news' },
-    { href: `/${locale}/compliance`, label: t('speakUp') || 'Speak Up' },
+    { href: `/${locale}/faq`, label: tt('askHarvics', 'Ask Harvics') },
+    { href: `/${locale}/contact`, label: tt('contactUs', 'Contact us') },
+    { href: `/${locale}/careers`, label: tt('searchForJobs', 'Search for jobs') },
+    { href: `/${locale}/newsletter`, label: tt('signUpForNews', 'Sign up for news') },
+    { href: `/${locale}/compliance`, label: tt('speakUp', 'Speak Up') },
   ]
 
   const companyLinks = [
-    { href: `/${locale}/about`, label: t('aboutUs') || 'About us' },
-    { href: `/${locale}/locations`, label: t('globalAddresses') || 'Global addresses' },
-    { href: `/${locale}/strategy`, label: t('strategy') || 'Strategy' },
-    { href: `/${locale}/leadership`, label: t('ourLeadership') || 'Our leadership' },
-    { href: `/${locale}/products`, label: t('brandsAZ') || 'Brands A–Z' },
-    { href: `/${locale}/history`, label: t('ourHistory') || 'Our history' },
-    { href: `/${locale}/csr`, label: t('sustainability') || 'Sustainability' },
+    { href: `/${locale}/about`, label: tt('aboutUs', 'About us') },
+    { href: `/${locale}/locations`, label: tt('globalAddresses', 'Global addresses') },
+    { href: `/${locale}/strategy`, label: tt('strategy', 'Strategy') },
+    { href: `/${locale}/leadership`, label: tt('ourLeadership', 'Our leadership') },
+    { href: `/${locale}/products`, label: tt('brandsAZ', 'Brands A–Z') },
+    { href: `/${locale}/history`, label: tt('ourHistory', 'Our history') },
+    { href: `/${locale}/csr`, label: tt('sustainability', 'Sustainability') },
   ]
 
   const mediaLinks = [
-    { href: `/${locale}/media/news`, label: t('news') || 'News' },
-    { href: `/${locale}/media/contacts`, label: t('mediaContacts') || 'Media contacts' },
-    { href: `/${locale}/media/images`, label: t('images') || 'Images' },
+    { href: `/${locale}/media/news`, label: tt('news', 'News') },
+    { href: `/${locale}/media/contacts`, label: tt('mediaContacts', 'Media contacts') },
+    { href: `/${locale}/media/images`, label: tt('images', 'Images') },
   ]
 
   const investorLinks = [
-    { href: `/${locale}/investors/governance`, label: t('corporateGovernance') || 'Corporate governance' },
-    { href: `/${locale}/investors/shares`, label: t('sharesAdrsBonds') || 'Shares, ADRs & Bonds' },
-    { href: `/${locale}/investors/publications`, label: t('publications') || 'Publications' },
+    { href: `/${locale}/investors/governance`, label: tt('corporateGovernance', 'Corporate governance') },
+    { href: `/${locale}/investors/shares`, label: tt('sharesAdrsBonds', 'Shares, ADRs & Bonds') },
+    { href: `/${locale}/investors/publications`, label: tt('publications', 'Publications') },
   ]
 
   const legalLinks = [
-    { href: `/${locale}/privacy`, label: t('privacy') || 'Privacy' },
-    { href: `/${locale}/terms`, label: t('termsOfUse') || 'Terms' },
-    { href: `/${locale}/sitemap`, label: t('siteMap') || 'Sitemap' },
-    { href: `/${locale}/accessibility`, label: t('accessibility') || 'Accessibility' },
+    { href: `/${locale}/privacy`, label: tt('privacy', 'Privacy') },
+    { href: `/${locale}/terms`, label: tt('termsOfUse', 'Terms') },
+    { href: `/${locale}/sitemap`, label: tt('siteMap', 'Sitemap') },
+    { href: `/${locale}/accessibility`, label: tt('accessibility', 'Accessibility') },
   ]
 
   const certifications = ['ISO 22000', 'HACCP', 'BRC', 'HALAL', 'SEDEX', 'BSCI', 'OEKO-TEX', 'LBMA']
@@ -98,18 +108,18 @@ const Footer: React.FC = () => {
             <div style={{ height: '1px', width: '32px', background: '#C9A84C' }} />
           </div>
           <h2 style={{ fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 200, letterSpacing: '-0.02em', color: '#1A0505', lineHeight: 1.15, marginBottom: '8px' }}>
-            {t('newsletterHeadline') || 'Monthly intelligence.'}{' '}
-            <span style={{ color: '#1A0505', fontWeight: 400 }}>{t('newsletterHeadline2') || 'For serious buyers.'}</span>
+            {tt('newsletterHeadline', 'Monthly intelligence.')}{' '}
+            <span style={{ color: '#1A0505', fontWeight: 400 }}>{tt('newsletterHeadline2', 'For serious buyers.')}</span>
           </h2>
           <p style={{ color: 'rgba(26,5,5,0.55)', fontSize: '12px', marginBottom: '18px' }}>
-            {t('newsletterTagline') || 'Market alerts · sourcing insights · new factory verifications. One email a month. No spam.'}
+            {tt('newsletterTagline', 'Market alerts · sourcing insights · new factory verifications. One email a month. No spam.')}
           </p>
           <form onSubmit={handleNewsletterSubmit} style={{ display: 'inline-flex', gap: 0, maxWidth: '520px', width: '100%' }}>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder={t('enterEmailPlaceholder') || 'you@company.com'}
+              placeholder={tt('enterEmailPlaceholder', 'you@company.com')}
               required
               style={{ flex: 1, padding: '11px 16px', border: '1px solid rgba(26,5,5,0.18)', borderRight: 'none', background: '#fff', fontSize: '12px', color: '#1A0505', outline: 'none' }}
             />
@@ -118,7 +128,7 @@ const Footer: React.FC = () => {
               disabled={isSubmitting}
               style={{ padding: '11px 26px', background: '#1A0505', color: '#C9A84C', border: '1px solid #1A0505', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', cursor: 'pointer' }}
             >
-              {isSubmitting ? '...' : (t('subscribe') || 'Subscribe')}
+              {isSubmitting ? '...' : (tt('subscribe', 'Subscribe'))}
             </button>
           </form>
           {submitMessage && (
@@ -144,18 +154,18 @@ const Footer: React.FC = () => {
                 </div>
               </Link>
               <p style={{ fontSize: '12px', color: 'rgba(245,240,232,0.55)', lineHeight: 1.7, maxWidth: '300px' }}>
-                {t('brandStatement') || 'Sovereign trade infrastructure across 10 industry verticals, 42 markets and 3 continents — built for serious buyers.'}
+                {tt('brandStatement', 'Sovereign trade infrastructure across 10 industry verticals, 42 markets and 3 continents — built for serious buyers.')}
               </p>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '5px 10px', border: '1px solid rgba(201,168,76,0.3)', fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#C9A84C', fontWeight: 600, width: 'fit-content' }}>
                 <span style={{ width: '6px', height: '6px', background: '#C9A84C', borderRadius: '50%', animation: 'harvicsPulse 2s infinite' }} />
-                1,247 {t('activeShipments') || 'active shipments'}
+                1,247 {tt('activeShipments', 'active shipments')}
               </div>
             </div>
 
             {/* Useful Links */}
             <div>
               <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
-                {t('usefulLinks') || 'Useful Links'}
+                {tt('usefulLinks', 'Useful Links')}
               </h5>
               {usefulLinks.map(link => (
                 <Link key={link.href} href={link.href} style={{ display: 'block', fontSize: '12.5px', color: 'rgba(245,240,232,0.7)', padding: '6px 0', lineHeight: 1.4, textDecoration: 'none', transition: 'color 0.2s' }}
@@ -169,7 +179,7 @@ const Footer: React.FC = () => {
             {/* Company */}
             <div>
               <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
-                {t('company') || 'Company'}
+                {tt('company', 'Company')}
               </h5>
               {companyLinks.map(link => (
                 <Link key={link.href} href={link.href} style={{ display: 'block', fontSize: '12.5px', color: 'rgba(245,240,232,0.7)', padding: '6px 0', lineHeight: 1.4, textDecoration: 'none', transition: 'color 0.2s' }}
@@ -183,7 +193,7 @@ const Footer: React.FC = () => {
             {/* Media */}
             <div>
               <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
-                {t('media') || 'Media'}
+                {tt('media', 'Media')}
               </h5>
               {mediaLinks.map(link => (
                 <Link key={link.href} href={link.href} style={{ display: 'block', fontSize: '12.5px', color: 'rgba(245,240,232,0.7)', padding: '6px 0', lineHeight: 1.4, textDecoration: 'none', transition: 'color 0.2s' }}
@@ -197,7 +207,7 @@ const Footer: React.FC = () => {
             {/* Investors */}
             <div>
               <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
-                {t('investors') || 'Investors'}
+                {tt('investors', 'Investors')}
               </h5>
               {investorLinks.map(link => (
                 <Link key={link.href} href={link.href} style={{ display: 'block', fontSize: '12.5px', color: 'rgba(245,240,232,0.7)', padding: '6px 0', lineHeight: 1.4, textDecoration: 'none', transition: 'color 0.2s' }}
@@ -219,7 +229,7 @@ const Footer: React.FC = () => {
       <section style={{ background: '#0d0303', padding: '18px 0', borderTop: '1px solid rgba(201,168,76,0.18)' }}>
         <div className="universal-layout-frame px-4 sm:px-6 lg:px-8" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 0, flexWrap: 'wrap' }}>
           <span style={{ fontSize: '9px', letterSpacing: '0.32em', textTransform: 'uppercase', color: '#C9A84C', fontWeight: 700, paddingRight: '24px', borderRight: '1px solid rgba(201,168,76,0.2)' }}>
-            {t('certifiedAudited') || 'Certified & Audited'}
+            {tt('certifiedAudited', 'Certified & Audited')}
           </span>
           <div style={{ display: 'flex', gap: 0, flexWrap: 'wrap' }}>
             {certifications.map((cert, i) => (
@@ -235,7 +245,7 @@ const Footer: React.FC = () => {
       <section style={{ background: '#000', padding: '16px 0' }}>
         <div className="universal-layout-frame px-4 sm:px-6 lg:px-8" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', fontSize: '10.5px', color: 'rgba(245,240,232,0.45)' }}>
           <div style={{ display: 'flex', gap: '20px', alignItems: 'center', flexWrap: 'wrap' }}>
-            <span>&copy; {new Date().getFullYear()} {t('companyName') || 'Harvics Global Ventures'}</span>
+            <span>&copy; {new Date().getFullYear()} {tt('companyName', 'Harvics Global Ventures')}</span>
             {legalLinks.map(link => (
               <Link key={link.href} href={link.href} style={{ color: 'rgba(245,240,232,0.45)', textDecoration: 'none', transition: 'color 0.2s' }}
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C9A84C' }}

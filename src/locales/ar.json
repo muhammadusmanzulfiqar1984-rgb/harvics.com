@@ -148,7 +148,12 @@
     "enterEmailPlaceholder": "أدخل عنوان بريدك الإلكتروني",
     "subscribe": "يشترك",
     "subscribing": "جارٍ الاشتراك...",
-    "media": "وسائط"
+    "media": "وسائط",
+    "newsletterHeadline": "ابقَ على تواصل",
+    "newsletterHeadline2": "انضم إلى شبكتنا",
+    "newsletterTagline": "احصل على أحدث معلومات التجارة وتحديثات السوق",
+    "activeShipments": "الشحنات النشطة",
+    "certifiedAudited": "معتمد ومدقق"
   },
   "common": {
     "chatWithUs": "تحدث معنا",

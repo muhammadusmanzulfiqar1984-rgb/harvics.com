@@ -214,7 +214,12 @@
     "subscribe": "सदस्यता लें",
     "subscribing": "सदस्यता लें...",
     "aboutUs": "हमारे बारे में",
-    "media": "मिडिया"
+    "media": "मिडिया",
+    "newsletterHeadline": "जुड़े रहें",
+    "newsletterHeadline2": "हमारे नेटवर्क से जुड़ें",
+    "newsletterTagline": "नवीनतम व्यापार जानकारी और बाज़ार अपडेट प्राप्त करें",
+    "activeShipments": "सक्रिय शिपमेंट",
+    "certifiedAudited": "प्रमाणित और लेखापरीक्षित"
   },
   "search": {
     "placeholder": "उत्पादों, ब्रांडों या श्रेणियों को खोजें",

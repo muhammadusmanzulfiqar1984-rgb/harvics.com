@@ -214,7 +214,12 @@
     "subscribe": "订阅",
     "subscribing": "订阅中……",
     "aboutUs": "关于我们",
-    "media": "媒体"
+    "media": "媒体",
+    "newsletterHeadline": "保持联系",
+    "newsletterHeadline2": "加入我们的网络",
+    "newsletterTagline": "获取最新的贸易信息和市场更新",
+    "activeShipments": "活跃货运",
+    "certifiedAudited": "已认证和审计"
   },
   "search": {
     "placeholder": "搜索产品、品牌或类别",

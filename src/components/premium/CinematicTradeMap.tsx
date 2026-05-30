@@ -165,22 +165,35 @@ const CinematicTradeMap: React.FC = () => {
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#C3A35E] to-transparent" />
 
       <div className="max-w-[1380px] mx-auto relative z-10">
-        {/* HEADER */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center gap-4 mb-4">
-            <span className="block w-8 h-px bg-[#C3A35E]" />
-            <span className="text-[10px] tracking-[5px] uppercase text-[#E5C07B] font-semibold">
+        {/* HEADER — Option B: left-aligned dashboard with live stats on right */}
+        <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 md:gap-10 pb-6 border-b border-[#C3A35E]/20 mb-8">
+          <div className="md:max-w-2xl">
+            <span className="inline-flex items-center gap-2.5 text-[10px] tracking-[5px] uppercase text-[#E5C07B] font-semibold mb-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E5C07B] animate-pulse" />
               Live · Global Trade Network
             </span>
-            <span className="block w-8 h-px bg-[#C3A35E]" />
+            <h2 className="text-white text-3xl md:text-5xl font-extralight tracking-tight leading-[1.05]">
+              Watch HARVICS
+              <span className="text-[#E5C07B] font-normal"> move.</span>
+            </h2>
+            <p className="text-white/55 text-[13px] max-w-xl mt-3 font-light leading-relaxed">
+              9 offices · 42+ markets · Every 14 minutes, a HARVICS shipment clears customs somewhere in the world.
+            </p>
           </div>
-          <h2 className="text-white text-3xl md:text-5xl font-extralight tracking-tight leading-tight mb-3">
-            Watch HARVICS
-            <span className="text-[#E5C07B] font-normal"> move.</span>
-          </h2>
-          <p className="text-white/55 text-sm max-w-xl mx-auto font-light leading-relaxed">
-            9 offices · 42+ markets · Every 14 minutes, a HARVICS shipment clears customs somewhere in the world.
-          </p>
+          <div className="flex gap-8 md:gap-9 md:pl-6 md:border-l md:border-[#C3A35E]/15">
+            <div>
+              <div className="text-[#E5C07B] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">Shipments</div>
+              <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">{shipments.toLocaleString()}</div>
+            </div>
+            <div>
+              <div className="text-[#E5C07B] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">Countries</div>
+              <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">{countries}</div>
+            </div>
+            <div>
+              <div className="text-[#E5C07B] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">TEU in Transit</div>
+              <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">{teu.toLocaleString()}</div>
+            </div>
+          </div>
         </div>
 
         {/* ───── COMMAND CENTER ───── */}
@@ -195,19 +208,8 @@ const CinematicTradeMap: React.FC = () => {
                 {HUBS.length} Hubs · {FLIGHTS.length + SHIPS.length} Active Routes
               </span>
             </div>
-            <div className="flex gap-5">
-              <div className="text-right">
-                <div className="text-[#E5C07B] text-sm font-extralight tabular-nums leading-none">{shipments.toLocaleString()}</div>
-                <div className="text-white/40 text-[8px] tracking-[2px] uppercase mt-1">Shipments</div>
-              </div>
-              <div className="text-right">
-                <div className="text-[#E5C07B] text-sm font-extralight tabular-nums leading-none">{countries}</div>
-                <div className="text-white/40 text-[8px] tracking-[2px] uppercase mt-1">Countries Moving</div>
-              </div>
-              <div className="text-right">
-                <div className="text-[#E5C07B] text-sm font-extralight tabular-nums leading-none">{teu.toLocaleString()}</div>
-                <div className="text-white/40 text-[8px] tracking-[2px] uppercase mt-1">TEU in Transit</div>
-              </div>
+            <div className="text-white/40 text-[9px] tracking-[3px] uppercase font-semibold">
+              Auto-refresh · 2s
             </div>
           </div>
 

@@ -214,7 +214,12 @@
     "subscribe": "Iscriviti",
     "subscribing": "Iscrizione in corso...",
     "aboutUs": "Chi siamo",
-    "media": "Media"
+    "media": "Media",
+    "newsletterHeadline": "Resta in contatto",
+    "newsletterHeadline2": "Unisciti alla nostra rete",
+    "newsletterTagline": "Ricevi le ultime informazioni commerciali e gli aggiornamenti di mercato",
+    "activeShipments": "Spedizioni attive",
+    "certifiedAudited": "Certificato e revisionato"
   },
   "search": {
     "placeholder": "Cerca prodotti, marchi o categorie",
