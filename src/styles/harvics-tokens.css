@@ -1,7 +1,11 @@
 :root {
+	/* Brand accents — for text / borders / highlights */
+	--harvics-maroon: #6B1F2B;
+	--harvics-gold: #C3A35E;
+	/* Dark surfaces — for backgrounds */
 	--harvics-burgundy: #1A0505;
-	--harvics-cream: #F5F0E8;
-	--harvics-gold: #C9A84C;
-	--harvics-muted: #8A7D6B;
 	--harvics-dark: #0D0D0D;
+	/* Light surfaces */
+	--harvics-cream: #F5F0E8;
+	--harvics-muted: #8A7D6B;
 }

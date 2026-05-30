@@ -9,11 +9,15 @@ const config = {
     extend: {
       colors: {
         harvics: {
+          // Brand accent colors — used for text/borders/highlights
+          maroon: '#6B1F2B',
+          gold: '#C3A35E',
+          // Dark surfaces — used for backgrounds
           burgundy: '#1A0505',
-          cream: '#F5F0E8',
-          gold: '#C9A84C',
-          muted: '#8A7D6B',
           dark: '#0D0D0D',
+          // Light surfaces
+          cream: '#F5F0E8',
+          muted: '#8A7D6B',
         }
       },
       transitionTimingFunction: {
