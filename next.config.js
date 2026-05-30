@@ -70,28 +70,20 @@ const nextConfig = {
   reactStrictMode: true,
   // Increase timeout for static generation
   staticPageGenerationTimeout: 300,
-  // Proxy API requests to backend
-  // This makes all /api/* requests go through Next.js on port 3000, then proxy to backend on 4000
+  // Proxy API requests to backend (only when BACKEND_URL is set, e.g. local dev)
+  // On Vercel without BACKEND_URL, /api/* hits Next.js App Router routes directly.
   async rewrites() {
-    // IMPORTANT: Always use backend URL (port 4000) for rewrites, NOT NEXT_PUBLIC_API_URL
-    // NEXT_PUBLIC_API_URL is for client-side code, but rewrites need the actual backend server
-    const backendUrl = process.env.BACKEND_URL || process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:4000';
-    
-    // Validate backend URL format
+    const backendUrl = process.env.BACKEND_URL || process.env.NEXT_PUBLIC_BACKEND_URL;
+    if (!backendUrl) return [];
+
     const isValidUrl = backendUrl.startsWith('http://') || backendUrl.startsWith('https://');
-    if (!isValidUrl) {
-      console.warn(`Invalid backend URL format: ${backendUrl}. Using default http://localhost:4000`);
-    }
-    
-    const finalBackendUrl = isValidUrl ? backendUrl : 'http://localhost:4000';
-    
-    console.log(`[Next.js Rewrites] Proxying /api/* to ${finalBackendUrl}/api/* (excluding /api/groq/*)`);
-    
+    if (!isValidUrl) return [];
+
     return [
       {
         // Exclude /api/groq/* so it's handled by Next.js App Router (Groq + HF pipeline)
         source: '/api/:path((?!groq(?:/|$)).*)',
-        destination: `${finalBackendUrl}/api/:path`,
+        destination: `${backendUrl}/api/:path`,
       },
     ];
   },
