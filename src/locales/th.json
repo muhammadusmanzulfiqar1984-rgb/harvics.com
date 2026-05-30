@@ -214,7 +214,12 @@
     "subscribe": "สมัครสมาชิก",
     "subscribing": "กำลังติดตาม...",
     "aboutUs": "เกี่ยวกับเรา",
-    "media": "สื่อ"
+    "media": "สื่อ",
+    "newsletterHeadline": "เชื่อมต่ออยู่เสมอ",
+    "newsletterHeadline2": "เข้าร่วมเครือข่ายของเรา",
+    "newsletterTagline": "รับข้อมูลการค้าและการอัปเดตตลาดล่าสุด",
+    "activeShipments": "การจัดส่งที่ใช้งานอยู่",
+    "certifiedAudited": "รับรองและตรวจสอบแล้ว"
   },
   "search": {
     "placeholder": "ค้นหาสินค้า แบรนด์ หรือหมวดหมู่",

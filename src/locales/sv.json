@@ -214,7 +214,12 @@
     "subscribe": "Prenumerera",
     "subscribing": "Prenumererar...",
     "aboutUs": "Om oss",
-    "media": "Media"
+    "media": "Media",
+    "newsletterHeadline": "Håll kontakten",
+    "newsletterHeadline2": "Gå med i vårt nätverk",
+    "newsletterTagline": "Få den senaste handelsinformationen och marknadsuppdateringar",
+    "activeShipments": "Aktiva försändelser",
+    "certifiedAudited": "Certifierat och granskat"
   },
   "search": {
     "placeholder": "Sök efter produkter, varumärken eller kategorier",

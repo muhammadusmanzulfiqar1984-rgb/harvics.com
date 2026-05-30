@@ -214,7 +214,12 @@
     "subscribe": "Đặt mua",
     "subscribing": "Đăng ký...",
     "aboutUs": "Về chúng tôi",
-    "media": "Phương tiện truyền thông"
+    "media": "Phương tiện truyền thông",
+    "newsletterHeadline": "Giữ Kết Nối",
+    "newsletterHeadline2": "Tham Gia Mạng Lưới Của Chúng Tôi",
+    "newsletterTagline": "Nhận thông tin thương mại mới nhất và cập nhật thị trường",
+    "activeShipments": "Lô Hàng Đang Vận Chuyển",
+    "certifiedAudited": "Đã Chứng Nhận & Kiểm Toán"
   },
   "search": {
     "placeholder": "Tìm kiếm sản phẩm, thương hiệu hoặc danh mục",

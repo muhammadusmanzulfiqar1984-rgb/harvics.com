@@ -214,7 +214,12 @@
     "subscribe": "Підписатися",
     "subscribing": "Підписка...",
     "aboutUs": "Про нас",
-    "media": "Медіа"
+    "media": "Медіа",
+    "newsletterHeadline": "Залишайтеся на зв’язку",
+    "newsletterHeadline2": "Приєднуйтесь до нашої мережі",
+    "newsletterTagline": "Отримуйте найновіші торгові дані та оновлення ринку",
+    "activeShipments": "Активні відправлення",
+    "certifiedAudited": "Сертифіковано та перевірено"
   },
   "search": {
     "placeholder": "Пошук товарів, брендів або категорій",

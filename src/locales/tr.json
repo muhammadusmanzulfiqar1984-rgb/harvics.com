@@ -214,7 +214,12 @@
     "subscribe": "Abone",
     "subscribing": "Abone oluyorum...",
     "aboutUs": "Hakkımızda",
-    "media": "Medya"
+    "media": "Medya",
+    "newsletterHeadline": "Bağlantıda Kalın",
+    "newsletterHeadline2": "Ağımıza Katılın",
+    "newsletterTagline": "En son ticaret bilgileri ve pazar güncellemelerini alın",
+    "activeShipments": "Aktif Sevkiyatlar",
+    "certifiedAudited": "Sertifikalı ve Denetlenmiş"
   },
   "search": {
     "placeholder": "Ürünleri, markaları veya kategorileri arayın",
