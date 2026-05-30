@@ -31,7 +31,7 @@ const ProductCategoryClient: React.FC<ProductCategoryClientProps> = ({
     if (subcategories.length > 0 && subcategories[0].images.length > 0) {
       return subcategories[0].images[0]
     }
-    return '/Images/logo.png'
+    return '/assets/brand/photo/logo.png'
   }
 
   return (
@@ -61,7 +61,7 @@ const ProductCategoryClient: React.FC<ProductCategoryClientProps> = ({
             className="w-full h-full object-cover opacity-60"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              target.src = '/Images/logo.png';
+              target.src = '/assets/brand/photo/logo.png';
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#6B1F2B] via-[#6B1F2B]/50 to-transparent"></div>
@@ -104,13 +104,13 @@ const ProductCategoryClient: React.FC<ProductCategoryClientProps> = ({
                     {/* Subcategory Image - Full Square, Full Width */}
                     <div className="absolute inset-0">
                       <img
-                        src={subcategory.images[0] || '/Images/logo.png'}
+                        src={subcategory.images[0] || '/assets/brand/photo/logo.png'}
                         alt={subcategory.name}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                         loading="lazy"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
-                          target.src = '/Images/logo.png';
+                          target.src = '/assets/brand/photo/logo.png';
                         }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>

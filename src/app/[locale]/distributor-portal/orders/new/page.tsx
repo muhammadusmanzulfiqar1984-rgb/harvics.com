@@ -16,9 +16,9 @@ export default function PlaceNewOrder() {
 
   // Mock products
   const products = [
-    { sku: 'SKU-001', name: 'Premium Chocolate Bar 200g', packSize: '200g', cartonSize: 24, unitPrice: 2.50, image: '/Images/logo.png' },
-    { sku: 'SKU-002', name: 'Energy Drink 500ml', packSize: '500ml', cartonSize: 12, unitPrice: 1.80, image: '/Images/logo.png' },
-    { sku: 'SKU-003', name: 'Snack Mix 150g', packSize: '150g', cartonSize: 30, unitPrice: 3.20, image: '/Images/logo.png' },
+    { sku: 'SKU-001', name: 'Premium Chocolate Bar 200g', packSize: '200g', cartonSize: 24, unitPrice: 2.50, image: '/assets/brand/photo/logo.png' },
+    { sku: 'SKU-002', name: 'Energy Drink 500ml', packSize: '500ml', cartonSize: 12, unitPrice: 1.80, image: '/assets/brand/photo/logo.png' },
+    { sku: 'SKU-003', name: 'Snack Mix 150g', packSize: '150g', cartonSize: 30, unitPrice: 3.20, image: '/assets/brand/photo/logo.png' },
   ]
 
   const addToCart = (product: typeof products[0], qty: number) => {

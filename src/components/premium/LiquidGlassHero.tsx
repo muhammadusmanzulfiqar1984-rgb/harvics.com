@@ -60,7 +60,7 @@ const LiquidGlassHero: React.FC = () => {
       {/* Background image with parallax zoom */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/Images/hero-page-1.webp"
+          src="/assets/shared/heroes/hero-page-1.webp"
           alt="Global Trade Operations"
           fill
           priority

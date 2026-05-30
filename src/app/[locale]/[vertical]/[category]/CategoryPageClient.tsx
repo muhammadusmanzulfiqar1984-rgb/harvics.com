@@ -22,8 +22,8 @@ const verticalFallbackSlides: Record<string, string[]> = {
   ],
   industrial: [
     '/assets/verticals/04-industrial/hero.jpg',
-    '/Images/industrialsolutions.webp',
-    '/Images/industrialsolutions.jpg',
+    '/assets/verticals/04-industrial/thumb.webp',
+    '/assets/verticals/04-industrial/thumb.jpg',
   ],
   minerals: [
     'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=600&fit=crop&q=75',

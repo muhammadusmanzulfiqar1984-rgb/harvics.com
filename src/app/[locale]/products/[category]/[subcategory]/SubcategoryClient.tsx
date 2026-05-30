@@ -36,7 +36,7 @@ const SubcategoryClient: React.FC<SubcategoryClientProps> = ({
     if (images.length > 0) {
       return images[0]
     }
-    return '/Images/logo.png'
+    return '/assets/brand/photo/logo.png'
   }
 
   return (
@@ -70,7 +70,7 @@ const SubcategoryClient: React.FC<SubcategoryClientProps> = ({
             className="w-full h-full object-cover opacity-60"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              target.src = '/Images/logo.png';
+              target.src = '/assets/brand/photo/logo.png';
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#6B1F2B] via-[#6B1F2B]/50 to-transparent"></div>
@@ -123,7 +123,7 @@ const SubcategoryClient: React.FC<SubcategoryClientProps> = ({
                           loading="lazy"
                           onError={(e) => {
                             const target = e.target as HTMLImageElement;
-                            target.src = '/Images/logo.png';
+                            target.src = '/assets/brand/photo/logo.png';
                           }}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

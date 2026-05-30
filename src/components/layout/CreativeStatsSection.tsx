@@ -120,7 +120,7 @@ const CreativeStatsSection: React.FC = () => {
                 {/* Category Image */}
                 <div className="relative h-64 overflow-hidden">
                   <img 
-                    src={category.image || '/Images/logo.png'} 
+                    src={category.image || '/assets/brand/photo/logo.png'} 
                     alt={t(`products.${category.key}`)}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />

@@ -210,7 +210,7 @@ export function getCategoriesFromFolder(): CategoryData[] {
 
       // Get a representative image for the category
       // Try to find the first available image from any subcategory
-      let categoryImage = '/Images/logo.png'
+      let categoryImage = '/assets/brand/photo/logo.png'
       for (const subcategory of subcategories) {
         if (subcategory.images && subcategory.images.length > 0) {
           categoryImage = subcategory.images[0]
@@ -219,7 +219,7 @@ export function getCategoriesFromFolder(): CategoryData[] {
       }
       
       // If still no image found, try to get images directly from category folder
-      if (categoryImage === '/Images/logo.png') {
+      if (categoryImage === '/assets/brand/photo/logo.png') {
         const directImages = getImageFiles(categoryPath)
         if (directImages.length > 0) {
           categoryImage = directImages[0]

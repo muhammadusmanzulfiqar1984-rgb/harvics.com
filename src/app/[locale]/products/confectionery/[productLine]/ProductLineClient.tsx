@@ -38,7 +38,7 @@ const ProductLineClient: React.FC<ProductLineClientProps> = ({
     if (products.length > 0) {
       return products[0].image
     }
-    return '/Images/logo.png' // Fallback
+    return '/assets/brand/photo/logo.png' // Fallback
   }
 
   return (

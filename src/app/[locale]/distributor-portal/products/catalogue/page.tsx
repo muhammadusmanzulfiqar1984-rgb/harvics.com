@@ -13,11 +13,11 @@ export default function ProductCatalogue() {
   const [selectedChannel, setSelectedChannel] = useState('All')
 
   const products = [
-    { sku: 'SKU-001', name: 'Premium Chocolate Bar 200g', category: 'Confectionery', packSize: '200g', mrp: 3.50, distributorPrice: 2.50, image: '/Images/logo.png' },
-    { sku: 'SKU-002', name: 'Energy Drink 500ml', category: 'Beverages', packSize: '500ml', mrp: 2.50, distributorPrice: 1.80, image: '/Images/logo.png' },
-    { sku: 'SKU-003', name: 'Snack Mix 150g', category: 'Snacks', packSize: '150g', mrp: 4.50, distributorPrice: 3.20, image: '/Images/logo.png' },
-    { sku: 'SKU-004', name: 'Juice Box 250ml', category: 'Beverages', packSize: '250ml', mrp: 1.80, distributorPrice: 1.20, image: '/Images/logo.png' },
-    { sku: 'SKU-005', name: 'Candy Pack 100g', category: 'Confectionery', packSize: '100g', mrp: 2.00, distributorPrice: 1.40, image: '/Images/logo.png' },
+    { sku: 'SKU-001', name: 'Premium Chocolate Bar 200g', category: 'Confectionery', packSize: '200g', mrp: 3.50, distributorPrice: 2.50, image: '/assets/brand/photo/logo.png' },
+    { sku: 'SKU-002', name: 'Energy Drink 500ml', category: 'Beverages', packSize: '500ml', mrp: 2.50, distributorPrice: 1.80, image: '/assets/brand/photo/logo.png' },
+    { sku: 'SKU-003', name: 'Snack Mix 150g', category: 'Snacks', packSize: '150g', mrp: 4.50, distributorPrice: 3.20, image: '/assets/brand/photo/logo.png' },
+    { sku: 'SKU-004', name: 'Juice Box 250ml', category: 'Beverages', packSize: '250ml', mrp: 1.80, distributorPrice: 1.20, image: '/assets/brand/photo/logo.png' },
+    { sku: 'SKU-005', name: 'Candy Pack 100g', category: 'Confectionery', packSize: '100g', mrp: 2.00, distributorPrice: 1.40, image: '/assets/brand/photo/logo.png' },
   ]
 
   return (

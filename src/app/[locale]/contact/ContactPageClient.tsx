@@ -262,7 +262,7 @@ const ContactPageClient: React.FC<ContactPageClientProps> = ({ locale, translati
             </div>
             <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
               <img 
-                src="/Images/privacy.jpg" 
+                src="/assets/corporate/privacy/hero.jpg" 
                 alt="Privacy and Security" 
                 className="w-full h-auto object-cover"
               />

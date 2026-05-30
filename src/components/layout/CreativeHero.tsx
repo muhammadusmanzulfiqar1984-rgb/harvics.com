@@ -23,7 +23,7 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ categories }) => {
     icon: category.icon,
     color: category.color,
     href: `/${locale}${category.url}`,
-    image: category.image || '/Images/logo.png',
+    image: category.image || '/assets/brand/photo/logo.png',
     description: category.description || 'Premium Quality Products'
   }))
 
@@ -111,7 +111,7 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ categories }) => {
                 <div className="flex items-center gap-4 mb-4">
                   <div className="relative w-16 h-16">
                     <Image 
-                      src="/Images/logo.png" 
+                      src="/assets/brand/photo/logo.png" 
                       alt="Harvics Logo" 
                       fill
                       sizes="64px"

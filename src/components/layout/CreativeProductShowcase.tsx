@@ -255,7 +255,7 @@ const CreativeProductShowcase: React.FC<CreativeProductShowcaseProps> = ({ categ
               <div className="mt-12">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                   {(categories || []).slice(0, 6).map((category, index) => {
-                    const productImage = category.image || '/Images/logo.png';
+                    const productImage = category.image || '/assets/brand/photo/logo.png';
                     const productLabel = category.name || category.key
 
                     return (

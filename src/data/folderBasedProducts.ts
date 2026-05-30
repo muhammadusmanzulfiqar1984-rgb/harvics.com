@@ -40,7 +40,7 @@ export const getFolderBasedCategories = (): ProductCategory[] => {
       name: category.name,
       key: category.key,
       icon: category.icon,
-      image: category.image || '/Images/logo.png',
+      image: category.image || '/assets/brand/photo/logo.png',
       description: category.description,
       color: category.color,
       url: `/products/${category.key}`,

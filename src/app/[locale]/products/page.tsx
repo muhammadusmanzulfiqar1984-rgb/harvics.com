@@ -27,7 +27,7 @@ export default async function ProductsPage({ params }: { params: Promise<{ local
   const folderCategories = getFolderBasedCategories()
   const productCategories = (folderCategories || []).map(category => ({
     key: category.key,
-    image: category.image || '/Images/logo.png',
+    image: category.image || '/assets/brand/photo/logo.png',
     icon: category.icon,
     color: category.color,
     url: `/${locale}${category.url}`

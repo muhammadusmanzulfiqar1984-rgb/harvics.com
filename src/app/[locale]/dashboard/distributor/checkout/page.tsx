@@ -25,7 +25,7 @@ export default function DistributorCheckout() {
       description: "Luxury assorted chocolates for retail",
       price: 125000,
       quantity: 2,
-      image: "/Images/logo.png"
+      image: "/assets/brand/photo/logo.png"
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ export default function DistributorCheckout() {
       description: "Mixed energy drinks variety pack",
       price: 85000,
       quantity: 3,
-      image: "/Images/logo.png"
+      image: "/assets/brand/photo/logo.png"
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ export default function DistributorCheckout() {
       description: "Premium biscuit collection",
       price: 95000,
       quantity: 1,
-      image: "/Images/logo.png"
+      image: "/assets/brand/photo/logo.png"
     },
     {
       id: 4,
@@ -49,7 +49,7 @@ export default function DistributorCheckout() {
       description: "Fresh fruit juice variety pack",
       price: 75000,
       quantity: 2,
-      image: "/Images/logo.png"
+      image: "/assets/brand/photo/logo.png"
     }
   ]
 

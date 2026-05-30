@@ -20,8 +20,8 @@ const verticalFallbackSlides: Record<string, string[]> = {
   ],
   industrial: [
     '/assets/verticals/04-industrial/hero.jpg',
-    '/Images/industrialsolutions.webp',
-    '/Images/industrialsolutions.jpg',
+    '/assets/verticals/04-industrial/thumb.webp',
+    '/assets/verticals/04-industrial/thumb.jpg',
   ],
   minerals: [
     'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=600&fit=crop&q=75',
@@ -105,7 +105,7 @@ function ImageZoomLightbox({ src, alt, useSmartImage, keyword }: { src: string; 
             alt={alt}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             loading="lazy"
-            onError={(e) => { (e.target as HTMLImageElement).src = '/Images/logo.png' }}
+            onError={(e) => { (e.target as HTMLImageElement).src = '/assets/brand/photo/logo.png' }}
           />
         )}
         {/* Zoom icon overlay */}

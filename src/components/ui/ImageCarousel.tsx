@@ -52,13 +52,13 @@ const DEFAULT_IMAGES = [
   '/Images/Harvics.com/Pastas/pasta (3).png',
   '/Images/Harvics.com/Frozen Foods/Chicken Nuggets/chicken-nuggets.png',
   '/Images/Logo.JPG',
-  '/Images/worldmap.jpg',
-  '/Images/worldmap1.jpeg',
+  '/assets/geo/worldmap.jpg',
+  '/assets/geo/worldmap-alt.jpeg',
   '/Images/Harvics.com/Bakery/Cakes and Pastreis/cake.png',
   '/Images/Harvics.com/Beverages/Functional/energy (2).png',
   '/Images/Harvics.com/Bakery/Wafer and Wafer Bars/wafer.png',
-  '/Images/hero-banner-1.jpg',
-  '/Images/hero-banner-2.jpg',
+  '/assets/shared/heroes/hero-banner-1.jpg',
+  '/assets/shared/heroes/hero-banner-2.jpg',
   // 👆 Add more images above this line 👆
   // Example: '/Images/your-new-image.jpg',
 ]
@@ -124,8 +124,8 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
                   onError={(e) => {
                     // Fallback to logo if image fails to load
                     const target = e.target as HTMLImageElement
-                    if (target.src !== '/Images/logo.png') {
-                      target.src = '/Images/logo.png'
+                    if (target.src !== '/assets/brand/photo/logo.png') {
+                      target.src = '/assets/brand/photo/logo.png'
                     }
                   }}
                 />

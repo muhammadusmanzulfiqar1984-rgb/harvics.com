@@ -122,7 +122,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
     name: category.name,
     icon: category.icon,
     href: `/${locale}${category.url}`,
-    image: category.image || '/Images/logo.png',
+    image: category.image || '/assets/brand/photo/logo.png',
     description: category.description,
     color: category.color
   }))

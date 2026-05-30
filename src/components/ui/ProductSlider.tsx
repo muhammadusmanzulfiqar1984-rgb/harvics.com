@@ -111,7 +111,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ categories }) => {
                 <Link href={`/${locale}${category.url}`} className="block h-full w-full">
                   <div className="relative h-full w-full">
                     <img
-                      src={category.image || '/Images/logo.png'}
+                      src={category.image || '/assets/brand/photo/logo.png'}
                       alt={t(`products.${category.key}`)}
                       className="w-full h-full object-cover"
                       loading={index === 0 ? 'eager' : 'lazy'}

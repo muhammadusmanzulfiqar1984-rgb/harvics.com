@@ -29,7 +29,7 @@ export function generateSEOMetadata({
     'B2B solutions',
     'AI automation'
   ],
-  image = '/Images/logo.png',
+  image = '/assets/brand/photo/logo.png',
   url = 'https://www.harvics.com',
   locale = 'en'
 }: GenerateMetadataParams = {}): Metadata {
@@ -124,7 +124,7 @@ export function generateOrganizationSchema() {
     name: 'Harvics Global Ventures',
     alternateName: 'Harvics',
     url: 'https://www.harvics.com',
-    logo: 'https://www.harvics.com/Images/logo.png',
+    logo: 'https://www.harvics.com/assets/brand/photo/logo.png',
     description: 'Leading global trading company delivering premium products across 10+ industries worldwide.',
     foundingDate: '2019',
     email: 'sales.uk@harvics.com',

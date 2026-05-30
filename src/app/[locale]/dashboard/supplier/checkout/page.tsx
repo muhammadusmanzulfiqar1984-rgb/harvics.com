@@ -23,7 +23,7 @@ export default function SupplierCheckout() {
       description: "Premium cocoa beans and sugar for production",
       price: 450000,
       quantity: 1,
-      image: "/Images/logo.png"
+      image: "/assets/brand/photo/logo.png"
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ export default function SupplierCheckout() {
       description: "Chocolate boxes and wrappers",
       price: 125000,
       quantity: 2,
-      image: "/Images/logo.png"
+      image: "/assets/brand/photo/logo.png"
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ export default function SupplierCheckout() {
       description: "Natural vanilla and fruit extracts",
       price: 85000,
       quantity: 1,
-      image: "/Images/logo.png"
+      image: "/assets/brand/photo/logo.png"
     },
     {
       id: 4,
@@ -47,7 +47,7 @@ export default function SupplierCheckout() {
       description: "Testing and measurement tools",
       price: 320000,
       quantity: 1,
-      image: "/Images/logo.png"
+      image: "/assets/brand/photo/logo.png"
     }
   ]
 

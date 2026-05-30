@@ -174,7 +174,7 @@ const AboutPageClient: React.FC<AboutPageClientProps> = ({ locale, translations:
                 </div>
                 <div className="relative order-1 lg:order-2 flex items-center justify-center">
                   <div className="w-full h-64 md:h-96 flex items-center justify-center bg-white border border-[#C3A35E]/15 p-8 md:p-12">
-                    <img src="/Images/logo.png" alt="Harvics Logo" className="max-w-full max-h-full object-contain" />
+                    <img src="/assets/brand/photo/logo.png" alt="Harvics Logo" className="max-w-full max-h-full object-contain" />
                   </div>
                 </div>
               </div>
