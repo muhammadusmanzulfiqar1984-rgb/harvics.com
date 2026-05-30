@@ -332,7 +332,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
                             industry: vertical,
                           }}
                           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                          fallbackSrc="/Images/placeholder.png"
+                          fallbackSrc="/assets/shared/decorative/placeholder.png"
                         />
                       )}
                       {/* Overlay gradient */}

@@ -15,9 +15,9 @@
  * - ✅ Similar to professional carousels like 222.nestle.com
  * 
  * HOW TO CUSTOMIZE IMAGES:
- * 1. Add images to the public/Images folder
+ * 1. Add images to the public/assets/shared/ folder
  * 2. Update the DEFAULT_IMAGES array below with your image paths
- * 3. Or pass a custom images array as a prop: <ImageCarousel images={['/Images/path1.jpg', '/Images/path2.jpg']} />
+ * 3. Or pass a custom images array as a prop: <ImageCarousel images={['/assets/shared/path1.jpg', '/assets/shared/path2.jpg']} />
  * 
  * HOW TO CHANGE SLIDE INTERVAL:
  * Pass autoSlideInterval prop (in milliseconds): <ImageCarousel autoSlideInterval={3000} />
@@ -35,11 +35,11 @@ interface ImageCarouselProps {
 // ============================================
 // HOW TO ADD YOUR OWN IMAGES:
 // ============================================
-// 1. Put your image files in: public/Images/ folder
-// 2. Add the image path below in this format: '/Images/your-filename.jpg'
-// 3. Example: If you add "my-photo.jpg" to public/Images/, write: '/Images/my-photo.jpg'
+// 1. Put your image files in: public/assets/shared/ folder
+// 2. Add the image path below in this format: '/assets/shared/your-filename.jpg'
+// 3. Example: If you add "my-photo.jpg" to public/assets/shared/, write: '/assets/shared/my-photo.jpg'
 //
-// Current images are from your public/Images folder - 100% FREE (no hosting costs!)
+// Current images live under public/assets/shared - served directly by Next.js (no hosting costs!)
 // ============================================
 
 const DEFAULT_IMAGES = [

@@ -1,4 +1,4 @@
-// Dynamic product data based on actual folder structure in public/Images/Harvics.com
+// Dynamic product data based on actual folder structure in public/assets/verticals/02-fmcg/categories
 // Server-only module - folderScanner uses Node.js fs
 import 'server-only'
 import { 
@@ -31,7 +31,7 @@ export interface ProductCategory {
   products: Product[]
 }
 
-// Based on actual folder structure in public/Images/Harvics.com
+// Based on actual folder structure in public/assets/verticals/02-fmcg/categories
 export const getFolderBasedCategories = (): ProductCategory[] => {
   try {
     const folderCategories = getAllCategories()

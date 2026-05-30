@@ -106,7 +106,7 @@ export default async function AdminPortalHubPage({
         </div>
       </div>
 
-      <div className="bg-[#6B1F2B] bg-[url('/Images/noise.png')] pt-24 pb-32 relative overflow-hidden">
+      <div className="bg-[#6B1F2B] bg-[url('/assets/shared/decorative/noise.png')] pt-24 pb-32 relative overflow-hidden">
         {/* Abstract Background Shapes */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#C3A35E] rounded-full filter blur-[150px] translate-x-1/2 -translate-y-1/2"></div>
