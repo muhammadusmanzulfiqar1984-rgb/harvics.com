@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from 'react'
 
 /**
- * SupplyChainWheel — Interactive end-to-end supply chain visualization
- * Premium McKinsey/BCG consulting style with rotating wheel + live stage KPIs.
- * Numbers are HARVICS operational baselines (annualized, demo dataset).
+ * SupplyChainWheel — Option C "Dark Cockpit"
+ * Single unified burgundy card: gold-on-dark wheel (left) + live metrics (right).
+ * Palantir / Bloomberg-terminal aesthetic.
  */
 
 interface WheelNode {
@@ -35,7 +35,7 @@ const wheelNodes: WheelNode[] = [
 interface StageKPI {
   stage: string
   volume: string
-  onTime: number  // percentage
+  onTime: number
   leadTime: string
 }
 
@@ -63,7 +63,6 @@ const SupplyChainWheel: React.FC = () => {
   const [hoveredBar, setHoveredBar] = useState<string | null>(null)
   const [barProgress, setBarProgress] = useState(0)
 
-  // Continuous rotation
   useEffect(() => {
     if (isPaused) return
     const interval = setInterval(() => {
@@ -72,7 +71,6 @@ const SupplyChainWheel: React.FC = () => {
     return () => clearInterval(interval)
   }, [isPaused])
 
-  // Animated bar progress (used for the flowing highlight inside each KPI bar)
   useEffect(() => {
     const interval = setInterval(() => {
       setBarProgress(prev => (prev + 1) % 100)
@@ -80,209 +78,159 @@ const SupplyChainWheel: React.FC = () => {
     return () => clearInterval(interval)
   }, [])
 
-  const radius = 180
+  const radius = 170
   const centerX = 250
   const centerY = 250
   const activeNode = hoveredLabel !== null ? wheelNodes[hoveredLabel] : null
 
   return (
-    <section className="relative min-h-screen px-6 overflow-hidden flex flex-col justify-center" style={{ background: '#ffffff' }}>
-      <div className="max-w-[1600px] mx-auto">
+    <section className="relative px-6 py-16 lg:py-20 overflow-hidden" style={{ background: 'linear-gradient(180deg, #ffffff 0%, #faf7f1 100%)' }}>
+      <div className="max-w-[1400px] mx-auto">
+
         {/* Section Header */}
-        <div className="text-center mb-4">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-1" 
-            style={{ 
-              color: '#6B1F2A',
-              letterSpacing: '-0.02em',
-              fontWeight: 600
-            }}
-          >
-            End-to-End Supply Chain
+        <div className="text-center mb-10">
+          <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '14px', marginBottom: '14px' }}>
+            <div style={{ height: '1px', width: '36px', background: '#C9A84C' }} />
+            <span style={{ color: '#C9A84C', fontSize: '10px', fontWeight: 600, letterSpacing: '0.32em', textTransform: 'uppercase' }}>End-to-End Operating System</span>
+            <div style={{ height: '1px', width: '36px', background: '#C9A84C' }} />
+          </div>
+          <h2 style={{ fontSize: 'clamp(30px, 4.2vw, 48px)', fontWeight: 200, letterSpacing: '-0.025em', color: '#1A0505', lineHeight: 1.1, marginBottom: '12px' }}>
+            14 stages.{' '}
+            <span style={{ color: '#6B1F2B', fontWeight: 400 }}>One supply chain.</span>
           </h2>
-          <p className="text-sm text-gray-600 max-w-2xl mx-auto">
-            14 stages. 42 markets. One HARVICS operating system. Hover any node for live metrics.
+          <p style={{ fontSize: '13px', color: '#888', maxWidth: '580px', margin: '0 auto', lineHeight: 1.7, fontWeight: 300 }}>
+            Every brief flows through the same operating system — one cockpit, 42 markets, one accountable team.
           </p>
         </div>
 
-        {/* Two-column layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-          
-          {/* LEFT SIDE: Rotating Wheel + live detail card */}
-          <div className="flex flex-col items-center justify-center">
-            <div className="relative" style={{ width: 320, height: 320 }}>
-              <svg width="320" height="320" viewBox="0 0 500 500" className="w-full h-auto">
-                {/* Outer circle ring */}
-                <circle 
-                  cx={centerX} 
-                  cy={centerY} 
-                  r={radius} 
-                  fill="none" 
-                  stroke="#6B1F2A" 
-                  strokeWidth="1"
-                  opacity="0.2"
-                />
+        {/* ============ COCKPIT CARD ============ */}
+        <div style={{ background: '#1A0505', border: '1px solid rgba(201,168,76,0.3)', overflow: 'hidden' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-12">
 
-                {/* Rotating group */}
-                <g transform={`rotate(${rotation} ${centerX} ${centerY})`}>
-                  {/* Connection lines */}
-                  {wheelNodes.map((_, idx) => {
-                    const angle = (idx * 360 / wheelNodes.length) * (Math.PI / 180)
-                    const x = centerX + radius * Math.cos(angle)
-                    const y = centerY + radius * Math.sin(angle)
-                    
-                    return (
-                      <line
-                        key={`line-${idx}`}
-                        x1={centerX}
-                        y1={centerY}
-                        x2={x}
-                        y2={y}
-                        stroke="#6B1F2A"
-                        strokeWidth="0.5"
-                        opacity="0.15"
-                      />
-                    )
-                  })}
+            {/* LEFT — Wheel (5/12) */}
+            <div className="lg:col-span-5" style={{ padding: '40px 32px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRight: '1px solid rgba(201,168,76,0.15)' }}>
+              <div className="relative" style={{ width: 360, height: 360, maxWidth: '100%' }}>
+                <svg width="100%" height="100%" viewBox="0 0 500 500">
+                  {/* Outer dashed ring */}
+                  <circle cx={centerX} cy={centerY} r={radius + 18} fill="none" stroke="rgba(201,168,76,0.18)" strokeWidth="0.8" strokeDasharray="3 5" />
+                  <circle cx={centerX} cy={centerY} r={radius} fill="none" stroke="rgba(201,168,76,0.25)" strokeWidth="1" />
 
-                  {/* Label nodes */}
-                  {wheelNodes.map((_, idx) => {
-                    const angle = (idx * 360 / wheelNodes.length) * (Math.PI / 180)
-                    const x = centerX + radius * Math.cos(angle)
-                    const y = centerY + radius * Math.sin(angle)
-                    const isHovered = hoveredLabel === idx
-
-                    return (
-                      <g key={idx}>
+                  {/* Rotating group with spokes + nodes */}
+                  <g transform={`rotate(${rotation} ${centerX} ${centerY})`}>
+                    {wheelNodes.map((_, idx) => {
+                      const angle = (idx * 360 / wheelNodes.length) * (Math.PI / 180)
+                      const x = centerX + radius * Math.cos(angle)
+                      const y = centerY + radius * Math.sin(angle)
+                      return (
+                        <line key={`line-${idx}`} x1={centerX} y1={centerY} x2={x} y2={y} stroke="#C9A84C" strokeWidth="0.5" opacity="0.12" />
+                      )
+                    })}
+                    {wheelNodes.map((_, idx) => {
+                      const angle = (idx * 360 / wheelNodes.length) * (Math.PI / 180)
+                      const x = centerX + radius * Math.cos(angle)
+                      const y = centerY + radius * Math.sin(angle)
+                      const isHovered = hoveredLabel === idx
+                      return (
                         <circle
+                          key={idx}
                           cx={x}
                           cy={y}
-                          r={isHovered ? 9 : 6}
-                          fill={isHovered ? '#E5C07B' : '#6B1F2A'}
+                          r={isHovered ? 10 : 6.5}
+                          fill={isHovered ? '#fff' : '#C9A84C'}
+                          stroke="#1A0505"
+                          strokeWidth="1.5"
                           className="cursor-pointer"
-                          style={{ 
-                            filter: isHovered ? 'drop-shadow(0 0 8px rgba(229,192,123,0.6))' : 'none',
-                            transition: 'all 0.3s ease'
+                          style={{
+                            filter: isHovered ? 'drop-shadow(0 0 10px rgba(201,168,76,0.8))' : 'none',
+                            transition: 'all 0.3s ease',
                           }}
-                          onMouseEnter={() => {
-                            setHoveredLabel(idx)
-                            setIsPaused(true)
-                          }}
-                          onMouseLeave={() => {
-                            setHoveredLabel(null)
-                            setIsPaused(false)
-                          }}
+                          onMouseEnter={() => { setHoveredLabel(idx); setIsPaused(true) }}
+                          onMouseLeave={() => { setHoveredLabel(null); setIsPaused(false) }}
                         />
-                      </g>
+                      )
+                    })}
+                  </g>
+
+                  {/* Labels (non-rotating) */}
+                  {wheelNodes.map((node, idx) => {
+                    const angle = ((idx * 360 / wheelNodes.length) + rotation) * (Math.PI / 180)
+                    const labelRadius = radius + 42
+                    const x = centerX + labelRadius * Math.cos(angle)
+                    const y = centerY + labelRadius * Math.sin(angle)
+                    const isHovered = hoveredLabel === idx
+                    return (
+                      <text
+                        key={`label-${idx}`}
+                        x={x}
+                        y={y}
+                        textAnchor="middle"
+                        dominantBaseline="middle"
+                        className="pointer-events-none"
+                        style={{
+                          fontSize: '9px',
+                          fill: isHovered ? '#fff' : 'rgba(245,240,232,0.65)',
+                          fontWeight: isHovered ? 700 : 500,
+                          letterSpacing: '0.05em',
+                          transition: 'all 0.3s ease',
+                        }}
+                      >
+                        {node.label}
+                      </text>
                     )
                   })}
-                </g>
 
-                {/* Labels (non-rotating) */}
-                {wheelNodes.map((node, idx) => {
-                  const angle = ((idx * 360 / wheelNodes.length) + rotation) * (Math.PI / 180)
-                  const labelRadius = radius + 40
-                  const x = centerX + labelRadius * Math.cos(angle)
-                  const y = centerY + labelRadius * Math.sin(angle)
-                  const isHovered = hoveredLabel === idx
+                  {/* Center — gold disc on dark */}
+                  <circle cx={centerX} cy={centerY} r="62" fill="#C9A84C" />
+                  <circle cx={centerX} cy={centerY} r="62" fill="none" stroke="#1A0505" strokeWidth="2" />
+                  <text x={centerX} y={centerY - 8} textAnchor="middle" style={{ fontSize: '9px', fontWeight: 700, fill: '#1A0505', letterSpacing: '3px' }}>HARVICS</text>
+                  <text x={centerX} y={centerY + 6} textAnchor="middle" style={{ fontSize: '10px', fontWeight: 600, fill: '#1A0505', letterSpacing: '0.5px' }}>Operating</text>
+                  <text x={centerX} y={centerY + 18} textAnchor="middle" style={{ fontSize: '10px', fontWeight: 600, fill: '#1A0505', letterSpacing: '0.5px' }}>System</text>
+                </svg>
+              </div>
 
-                  return (
-                    <text
-                      key={`label-${idx}`}
-                      x={x}
-                      y={y}
-                      textAnchor="middle"
-                      dominantBaseline="middle"
-                      className="text-[9px] font-medium pointer-events-none"
-                      style={{
-                        fill: isHovered ? '#E5C07B' : '#6B1F2A',
-                        fontWeight: isHovered ? 600 : 400,
-                        transition: 'all 0.3s ease',
-                        filter: isHovered ? 'drop-shadow(0 0 4px rgba(229,192,123,0.8))' : 'none'
-                      }}
-                    >
-                      {node.label}
-                    </text>
-                  )
-                })}
-
-                {/* Center text */}
-                <g>
-                  <circle cx={centerX} cy={centerY} r="70" fill="#6B1F2A" opacity="0.95" />
-                  <text 
-                    x={centerX} 
-                    y={centerY - 10} 
-                    textAnchor="middle" 
-                    className="text-[14px] font-bold"
-                    fill="#E5C07B"
-                    style={{ letterSpacing: '1px' }}
-                  >
-                    GLOBAL SUPPLY CHAIN
-                  </text>
-                  <text 
-                    x={centerX} 
-                    y={centerY + 10} 
-                    textAnchor="middle" 
-                    className="text-[11px] font-medium"
-                    fill="#ffffff"
-                    style={{ letterSpacing: '0.5px' }}
-                  >
-                    END-TO-END MANAGEMENT
-                  </text>
-                </g>
-              </svg>
+              {/* Live detail card under wheel */}
+              <div
+                style={{
+                  marginTop: '20px',
+                  width: '100%',
+                  maxWidth: '380px',
+                  padding: '14px 18px',
+                  background: activeNode ? 'rgba(201,168,76,0.08)' : 'rgba(245,240,232,0.04)',
+                  border: `1px solid ${activeNode ? 'rgba(201,168,76,0.4)' : 'rgba(201,168,76,0.15)'}`,
+                  minHeight: '86px',
+                  transition: 'all 0.25s ease',
+                }}
+              >
+                {activeNode ? (
+                  <>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '4px' }}>
+                      <span style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#C9A84C' }}>{activeNode.metric}</span>
+                      <span style={{ fontSize: '22px', fontWeight: 600, color: '#fff', letterSpacing: '-0.02em' }}>{activeNode.value}</span>
+                    </div>
+                    <div style={{ fontSize: '13px', fontWeight: 600, color: '#fff', marginBottom: '4px' }}>{activeNode.label}</div>
+                    <p style={{ fontSize: '11px', lineHeight: 1.6, color: 'rgba(245,240,232,0.6)' }}>{activeNode.detail}</p>
+                  </>
+                ) : (
+                  <div style={{ fontSize: '10px', color: 'rgba(245,240,232,0.45)', letterSpacing: '0.15em', textTransform: 'uppercase', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', minHeight: '58px' }}>
+                    Hover any node for live metrics
+                  </div>
+                )}
+              </div>
             </div>
 
-            {/* Live detail card under the wheel — fills with real numbers on hover */}
-            <div
-              className="mt-3 w-full max-w-sm rounded-xl border px-4 py-3 transition-all"
-              style={{
-                borderColor: activeNode ? 'rgba(229,192,123,0.6)' : 'rgba(107,31,42,0.12)',
-                background: activeNode
-                  ? 'linear-gradient(145deg, #fffaf0 0%, #fff 100%)'
-                  : 'linear-gradient(145deg, #fafafa 0%, #fff 100%)',
-                boxShadow: activeNode ? '0 8px 24px rgba(107,31,42,0.08)' : 'none',
-                minHeight: 86,
-              }}
-            >
-              {activeNode ? (
-                <>
-                  <div className="flex items-baseline justify-between mb-1">
-                    <span className="text-[10px] font-bold uppercase tracking-[0.2em]" style={{ color: '#C3A35E' }}>
-                      {activeNode.metric}
-                    </span>
-                    <span className="text-2xl font-bold" style={{ color: '#6B1F2A', letterSpacing: '-0.02em' }}>
-                      {activeNode.value}
-                    </span>
-                  </div>
-                  <div className="text-sm font-semibold mb-1" style={{ color: '#6B1F2A' }}>
-                    {activeNode.label}
-                  </div>
-                  <p className="text-xs leading-relaxed" style={{ color: 'rgba(107,31,42,0.65)' }}>
-                    {activeNode.detail}
-                  </p>
-                </>
-              ) : (
-                <div className="text-xs flex items-center justify-center h-full" style={{ color: 'rgba(107,31,42,0.45)' }}>
-                  Hover any node on the wheel to see live HARVICS metrics for that stage.
-                </div>
-              )}
-            </div>
-          </div>
+            {/* RIGHT — Live Metrics (7/12) */}
+            <div className="lg:col-span-7" style={{ padding: '40px 32px', display: 'flex', flexDirection: 'column' }}>
 
-          {/* RIGHT SIDE: Real stage KPIs (replaces abstract pulsing grid) */}
-          <div className="flex flex-col justify-center">
-            <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-100">
-              <div className="flex items-baseline justify-between mb-3">
-                <h3 className="text-lg font-semibold" style={{ color: '#6B1F2A' }}>
-                  Live Stage Metrics
-                </h3>
-                <span className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: '#C3A35E' }}>
-                  90-day rolling
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', paddingBottom: '14px', borderBottom: '1px solid rgba(201,168,76,0.2)' }}>
+                <h3 style={{ fontSize: '18px', fontWeight: 500, color: '#fff' }}>Live Stage Metrics</h3>
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#C9A84C', fontWeight: 700 }}>
+                  <span style={{ width: '6px', height: '6px', background: '#C9A84C', borderRadius: '50%', animation: 'harvicsCockpitPulse 2s infinite' }} />
+                  90-Day Rolling
                 </span>
               </div>
 
-              {/* KPI table header */}
-              <div className="grid grid-cols-12 gap-2 px-2 mb-2 text-[9px] font-semibold uppercase tracking-wider" style={{ color: 'rgba(107,31,42,0.55)' }}>
+              {/* Header row */}
+              <div className="grid grid-cols-12 gap-2 px-2 mb-2" style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#C9A84C' }}>
                 <div className="col-span-4">Stage</div>
                 <div className="col-span-3">Volume</div>
                 <div className="col-span-3">On-Time</div>
@@ -290,7 +238,7 @@ const SupplyChainWheel: React.FC = () => {
               </div>
 
               {/* KPI rows */}
-              <div className="space-y-1.5">
+              <div className="space-y-1">
                 {stageKPIs.map((kpi, idx) => {
                   const barKey = `kpi-${idx}`
                   const isHovered = hoveredBar === barKey
@@ -298,73 +246,67 @@ const SupplyChainWheel: React.FC = () => {
                   return (
                     <div
                       key={idx}
-                      className="grid grid-cols-12 gap-2 items-center px-2 py-1.5 rounded-lg cursor-pointer transition-all"
+                      className="grid grid-cols-12 gap-2 items-center px-2 py-2 cursor-pointer transition-all"
                       style={{
-                        background: isHovered ? 'rgba(229,192,123,0.10)' : 'transparent',
-                        boxShadow: isHovered ? 'inset 0 0 0 1px rgba(229,192,123,0.45)' : 'none',
+                        background: isHovered ? 'rgba(201,168,76,0.08)' : 'transparent',
+                        borderBottom: '1px solid rgba(201,168,76,0.08)',
                       }}
                       onMouseEnter={() => setHoveredBar(barKey)}
                       onMouseLeave={() => setHoveredBar(null)}
                     >
-                      <div className="col-span-4 text-[11px] font-medium truncate" style={{ color: '#6B1F2A' }}>
-                        {kpi.stage}
-                      </div>
-                      <div className="col-span-3 text-[11px] font-semibold" style={{ color: '#6B1F2A' }}>
-                        {kpi.volume}
-                      </div>
-                      <div className="col-span-3 flex items-center gap-1.5">
-                        <div className="flex-1 h-2 rounded-full overflow-hidden relative" style={{ background: '#F1E8DA' }}>
+                      <div className="col-span-4" style={{ fontSize: '12px', fontWeight: 600, color: '#fff' }}>{kpi.stage}</div>
+                      <div className="col-span-3" style={{ fontSize: '12px', color: 'rgba(245,240,232,0.75)' }}>{kpi.volume}</div>
+                      <div className="col-span-3 flex items-center gap-2">
+                        <div className="flex-1 relative" style={{ height: '4px', background: 'rgba(201,168,76,0.15)' }}>
                           <div
-                            className="absolute inset-y-0 left-0 rounded-full"
+                            className="absolute inset-y-0 left-0"
                             style={{
                               width: `${kpi.onTime}%`,
-                              background: 'linear-gradient(90deg, #6B1F2A 0%, #C3A35E 100%)',
+                              background: '#C9A84C',
                               transition: 'width 0.6s ease',
                             }}
                           />
-                          {/* Subtle flowing highlight to show the lane is "live" */}
                           <div
-                            className="absolute inset-y-0 w-8 pointer-events-none"
+                            className="absolute inset-y-0 w-6 pointer-events-none"
                             style={{
-                              background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.55) 50%, transparent 100%)',
+                              background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent)',
                               transform: `translateX(${flow * 4 - 50}%)`,
-                              opacity: kpi.onTime > 50 ? 0.55 : 0,
+                              opacity: 0.5,
                             }}
                           />
                         </div>
-                        <span className="text-[10px] font-bold w-9 text-right" style={{ color: '#6B1F2A' }}>
-                          {kpi.onTime}%
-                        </span>
+                        <span style={{ fontSize: '11px', fontWeight: 700, color: '#C9A84C', minWidth: '32px', textAlign: 'right' }}>{kpi.onTime}%</span>
                       </div>
-                      <div className="col-span-2 text-[10px] text-right font-medium" style={{ color: 'rgba(107,31,42,0.7)' }}>
-                        {kpi.leadTime}
-                      </div>
+                      <div className="col-span-2 text-right" style={{ fontSize: '11px', color: 'rgba(245,240,232,0.55)', fontWeight: 500 }}>{kpi.leadTime}</div>
                     </div>
                   )
                 })}
               </div>
 
-              {/* Footer summary tiles */}
-              <div className="grid grid-cols-4 gap-2 mt-4 pt-3 border-t border-gray-100">
+              {/* Streams */}
+              <div className="grid grid-cols-4 gap-0 mt-5 pt-4" style={{ borderTop: '1px solid rgba(201,168,76,0.2)' }}>
                 {streamRows.map((row, i) => (
                   <div
                     key={i}
-                    className="rounded-lg px-2 py-2 text-center"
-                    style={{ background: 'rgba(107,31,42,0.04)', border: '1px solid rgba(107,31,42,0.08)' }}
+                    style={{
+                      padding: '10px 8px',
+                      textAlign: 'center',
+                      borderRight: i < streamRows.length - 1 ? '1px solid rgba(201,168,76,0.15)' : 'none',
+                    }}
                   >
-                    <div className="text-[8px] font-bold uppercase tracking-wider" style={{ color: '#C3A35E' }}>
-                      Stream
-                    </div>
-                    <div className="text-[10px] font-semibold mt-0.5" style={{ color: '#6B1F2A' }}>
-                      {row}
-                    </div>
+                    <div style={{ fontSize: '8px', fontWeight: 700, letterSpacing: '0.3em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '4px' }}>Stream</div>
+                    <div style={{ fontSize: '11px', fontWeight: 600, color: '#fff' }}>{row}</div>
                   </div>
                 ))}
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
+
+        <style dangerouslySetInnerHTML={{ __html: `
+          @keyframes harvicsCockpitPulse { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
+        ` }} />
       </div>
     </section>
   )

@@ -191,7 +191,7 @@ export default async function LocaleLayout({
                       <ConditionalFooter />
                       <FrontendWatchdogClient />
                       <BackgroundMusic />
-                      <AutoBugDetector />
+                      {/* <AutoBugDetector /> — hidden; re-enable when debugging */}
                       <GlobalScrollReveal />
                       <ChatbotWidget />
                       <AppleStyleScrollEffects />

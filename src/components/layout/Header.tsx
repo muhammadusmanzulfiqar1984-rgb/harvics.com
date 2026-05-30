@@ -8,7 +8,6 @@ import { usePathname, useRouter } from 'next/navigation'
 import CountrySelector from '@/features/geo/CountrySelector'
 import LanguageSwitcher from '@/components/ui/LanguageSwitcher'
 import SearchModal from '@/components/ui/SearchModal'
-import AnalogClock from '@/components/ui/AnalogClock'
 import SupremeNavBar from '@/components/layout/SupremeNavBar'
 import type { ProductCategory } from '@/data/folderBasedProducts'
 import { useCountry } from '@/contexts/CountryContext'
@@ -159,11 +158,11 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
 
       {/* T1 — TOP UTILITY BAR: deep oxblood with cream text */}
       <div className="w-full bg-[#1A0505]">
-        <div className="relative hidden lg:block text-[#F5F0E8] py-2 text-[11px] font-medium tracking-wider">
-          <div className="universal-layout-frame max-w-harvics-layout flex justify-between items-center" style={{ height: '32px' }}>
+        <div className="relative hidden lg:block text-[#F5F0E8] py-2 text-xs font-normal">
+          <div className="universal-layout-frame max-w-harvics-layout flex justify-between items-center" style={{ height: '24px' }}>
 
             {/* Left links */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '20px', whiteSpace: 'nowrap' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '28px', whiteSpace: 'nowrap' }}>
               {[
                 { href: `/${locale}/csr`, label: t('esgReport') },
                 { href: `/${locale}/investor-relations`, label: t('investors') },
@@ -171,7 +170,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               ].map((link) => (
                 <Link key={link.href} href={link.href}
                   className="transition-opacity duration-200 hover:opacity-70"
-                  style={{ color: '#C9A84C', fontSize: '11px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap' }}
+                  style={{ color: '#C9A84C', fontSize: '11px', fontWeight: 400, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap' }}
                 >{link.label}</Link>
               ))}
 
@@ -179,7 +178,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               <div className="relative" onMouseEnter={() => handleMouseEnter('countries')} onMouseLeave={handleMouseLeave}>
                 <button
                   className="flex items-center gap-1 transition-opacity duration-200 hover:opacity-70"
-                  style={{ color: '#C9A84C', fontSize: '11px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase', background: 'none', border: 'none', cursor: 'pointer', whiteSpace: 'nowrap' }}
+                  style={{ color: '#C9A84C', fontSize: '11px', fontWeight: 400, letterSpacing: '0.1em', textTransform: 'uppercase', background: 'none', border: 'none', cursor: 'pointer', whiteSpace: 'nowrap' }}
                   aria-expanded={activeDropdown === 'countries'}
                 >
                   <span>{t('countries')}</span>
@@ -198,7 +197,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
 
               <Link href={`/${locale}/contact`}
                 className="transition-opacity duration-200 hover:opacity-70"
-                style={{ color: '#C9A84C', fontSize: '11px', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap' }}
+                style={{ color: '#C9A84C', fontSize: '11px', fontWeight: 400, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap' }}
               >{t('contactUs')}</Link>
             </div>
 
@@ -250,19 +249,19 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
       </div>
 
       {/* T2 — MAIN BRAND BAR: Cream bg, logo left, search center, icons right */}
-      <div className="relative w-full py-2 border-b border-[#1A0505]/10" style={{
+      <div className="relative w-full py-1 border-b border-[#1A0505]/10" style={{
         background: scrolled ? 'rgba(245,240,232,0.92)' : '#F5F0E8',
         backdropFilter: scrolled ? 'blur(20px) saturate(180%)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(20px) saturate(180%)' : 'none',
         transition: 'background 0.4s ease, backdrop-filter 0.4s ease',
       }}>
         <div className="universal-layout-frame">
-          <div className="flex items-center justify-between" style={{ height: '64px' }}>
+          <div className="flex items-center justify-between" style={{ height: '48px' }}>
 
             {/* Logo */}
             <Link href={`/${locale}`} className="flex-shrink-0 transition-all duration-300 hover:opacity-90 hover:scale-105 relative group">
               <div className="relative flex items-center gap-3">
-                    <Image src="/logo.svg" alt="Harvics" width={48} height={48} style={{ width: '48px', height: 'auto', objectFit: 'contain' }} priority />
+                    <Image src="/logo.svg" alt="Harvics" width={36} height={36} style={{ width: '36px', height: 'auto', objectFit: 'contain' }} priority />
                 <div className="flex flex-col">
                   <span className="text-xl font-bold tracking-tight" style={{ color: '#1A0505' }}>HARVICS</span>
                   <span className="text-[10px] uppercase tracking-widest" style={{ color: '#C9A84C' }}>Global Ventures</span>
@@ -277,46 +276,27 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               </div>
             </Link>
 
-            {/* Analog Clock — engraved gold bezel */}
-            <div className="hidden md:flex items-center justify-center" style={{ marginLeft: '16px' }}>
-              <div className="engraved-clock-wrapper flex-shrink-0" title="Harvics Global Time Anchor">
-                <div className="flex items-center justify-center w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-200">
-                  <AnalogClock size={28} />
-                </div>
-              </div>
-            </div>
-
             {/* Search */}
             <div className="flex-1 max-w-xl mx-8 hidden md:block relative">
-              <div className="w-full flex items-center overflow-hidden relative" style={{ background: '#FFFFFF', border: '1px solid rgba(195,163,94,0.4)' }}>
+              <div
+                className="w-full flex items-center overflow-hidden relative search-bar-wrap"
+                style={{ background: 'transparent', border: '0.5px solid rgba(201,168,76,0.3)', transition: 'border-color 0.25s ease' }}
+              >
                 <input type="text" placeholder={getTranslation('search', 'common', 'Search product, code or brand')}
                   onClick={() => setIsSearchOpen(true)} readOnly
-                  className="flex-1 px-4 py-2.5 bg-transparent outline-none"
-                  style={{ color: '#1A0505', fontSize: '13px' }} />
+                  className="flex-1 px-4 py-1.5 bg-transparent outline-none search-bar-input"
+                  style={{ color: '#1a0608', fontSize: '12px' }} />
                 <button onClick={() => setIsSearchOpen(true)}
-                  className="px-4 py-2.5 transition-opacity duration-200 hover:opacity-70"
-                  style={{ color: '#1A0505', background: 'transparent', border: 'none', borderLeft: '1px solid rgba(195,163,94,0.2)' }}>
+                  className="px-4 py-1.5 transition-opacity duration-200 hover:opacity-70"
+                  style={{ color: '#1a0608', background: 'transparent', border: 'none' }}>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </button>
-                {/* Search bar specific gold line */}
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 overflow-hidden">
-                  <div 
-                    className="h-full"
-                    style={{
-                      width: '40%',
-                      background: 'linear-gradient(to right, transparent, #C9A84C, transparent)',
-                      animation: 'searchLine 2.5s ease-in-out infinite'
-                    }}
-                  />
-                </div>
               </div>
               <style dangerouslySetInnerHTML={{__html: `
-                @keyframes searchLine {
-                  0%, 100% { transform: translateX(-100%); opacity: 0.6; }
-                  50% { transform: translateX(250%); opacity: 1; }
-                }
+                .search-bar-wrap:focus-within { border-color: #C9A84C !important; }
+                .search-bar-input::placeholder { color: rgba(0,0,0,0.35); }
               `}} />
             </div>
 
@@ -388,7 +368,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
         `}} />
 
         {/* T3 — NAV BAR: 10 Industry verticals + mega dropdown */}
-        <div className="hidden lg:block w-full py-2.5 bg-white shadow-sm">
+        <div className="hidden lg:block w-full py-1 bg-white shadow-sm">
           <div className="universal-layout-frame">
             <SupremeNavBar />
           </div>

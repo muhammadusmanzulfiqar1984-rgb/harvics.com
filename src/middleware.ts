@@ -22,9 +22,10 @@ export default function middleware(request: NextRequest) {
   if (parts.length >= 2 && SUPPORTED_LOCALE_SET.has(parts[0])) {
     const locale = parts[0];
     const page = parts[1];
-    if (page === 'architecture' || page === 'modules') {
+    // /architecture still redirects (page not built); /modules now serves the catalog
+    if (page === 'architecture') {
       const url = request.nextUrl.clone();
-      url.pathname = `/${locale}/os`;
+      url.pathname = `/${locale}/modules`;
       return NextResponse.redirect(url);
     }
   }

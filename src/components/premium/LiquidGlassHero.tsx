@@ -215,26 +215,28 @@ const LiquidGlassHero: React.FC = () => {
         </svg>
       </div>
 
-      {/* Live Ticker */}
-      <div className="absolute bottom-0 left-0 right-0 z-30" style={{
-        background: 'rgba(107,31,43,0.92)',
-        borderTop: '1px solid rgba(195,163,94,0.25)',
-        height: '38px',
-        overflow: 'hidden',
-      }}>
-        <div className="hv-ticker-track" style={{
-          display: 'flex', alignItems: 'center', height: '100%',
-          whiteSpace: 'nowrap',
-          willChange: 'transform',
+      {/* Live Ticker — TEMPORARILY HIDDEN (set to true to re-enable) */}
+      {false && (
+        <div className="absolute bottom-0 left-0 right-0 z-30" style={{
+          background: 'rgba(107,31,43,0.92)',
+          borderTop: '1px solid rgba(195,163,94,0.25)',
+          height: '38px',
+          overflow: 'hidden',
         }}>
-          <span style={{
-            fontSize: '10px', fontWeight: 800, letterSpacing: '0.14em',
-            color: '#E5C07B', textTransform: 'uppercase',
+          <div className="hv-ticker-track" style={{
+            display: 'flex', alignItems: 'center', height: '100%',
+            whiteSpace: 'nowrap',
+            willChange: 'transform',
           }}>
-            {repeated}
-          </span>
+            <span style={{
+              fontSize: '10px', fontWeight: 800, letterSpacing: '0.14em',
+              color: '#E5C07B', textTransform: 'uppercase',
+            }}>
+              {repeated}
+            </span>
+          </div>
         </div>
-      </div>
+      )}
 
       <style jsx>{`
         .hero-zoom {

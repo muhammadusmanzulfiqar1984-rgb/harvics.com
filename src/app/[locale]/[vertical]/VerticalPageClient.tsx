@@ -159,7 +159,7 @@ const verticalHeroSlides: Record<string, string[]> = {
   industrial: [
     '/Industries Picture/Industrial Solutions.jpg',
     '/Images/industrialsolutions.webp',
-    '/Images/industrialsolutions.png',
+    '/Images/industrialsolutions.jpg',
   ],
 }
 

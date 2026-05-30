@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HARVICS Operating Model — 3 Options</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, 'Inter', sans-serif; background:#1a1a1a; color:#fff; }
+  .label { padding:14px 24px; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#C9A84C; background:#000; border-top:1px solid #2a2a2a; display:flex; justify-content:space-between; align-items:center; }
+  .label .delta { color:#fff; font-weight:bold; letter-spacing:0.1em; }
+  .stage { position:relative; }
+  .measure { position:absolute; right:10px; top:10px; background:#1a0505; color:#C9A84C; padding:5px 12px; font-size:10px; letter-spacing:0.15em; text-transform:uppercase; z-index:99; border:1px solid #C9A84C; font-weight:bold; }
+
+  /* SHARED HEADER */
+  .section-header { text-align:center; padding:60px 28px 32px; }
+  .eyebrow { display:inline-flex; align-items:center; gap:14px; margin-bottom:14px; }
+  .eyebrow .line { width:36px; height:1px; background:#C9A84C; }
+  .eyebrow span { color:#C9A84C; font-size:10px; font-weight:600; letter-spacing:0.32em; text-transform:uppercase; }
+  h2.title { font-size:clamp(30px, 4.2vw, 48px); font-weight:200; letter-spacing:-0.025em; color:#1A0505; line-height:1.1; margin-bottom:12px; }
+  h2.title b { color:#6B1F2B; font-weight:400; }
+  p.sub { color:#888; font-size:13px; line-height:1.7; max-width:580px; margin:0 auto; font-weight:300; }
+
+  /* WHEEL — shared SVG-based circular layout */
+  .wheel { position:relative; width:380px; height:380px; }
+  .wheel .core {
+    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+    width:130px; height:130px; border-radius:50%;
+    background:#6B1F2B; color:#fff;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:14px;
+    box-shadow:0 8px 32px rgba(107,31,43,0.3);
+  }
+  .wheel .core .label-mini { font-size:8px; letter-spacing:0.32em; color:#C9A84C; font-weight:700; margin-bottom:6px; }
+  .wheel .core .label-main { font-size:11px; letter-spacing:0.15em; font-weight:600; line-height:1.3; text-transform:uppercase; }
+  .wheel .ring { position:absolute; inset:8px; border:1px dashed rgba(201,168,76,0.2); border-radius:50%; pointer-events:none; }
+  .wheel .node {
+    position:absolute; width:14px; height:14px; border-radius:50%;
+    background:#6B1F2B; border:2px solid #fff;
+    transform:translate(-50%,-50%); cursor:pointer;
+    transition:all 0.2s;
+  }
+  .wheel .node:hover { background:#C9A84C; transform:translate(-50%,-50%) scale(1.4); }
+  .wheel .node-label {
+    position:absolute; font-size:10px; color:#1A0505; font-weight:500;
+    white-space:nowrap; transform:translateX(-50%); text-align:center;
+    padding:2px 4px;
+  }
+  .wheel.compact { width:300px; height:300px; }
+  .wheel.compact .core { width:104px; height:104px; padding:10px; }
+  .wheel.compact .core .label-main { font-size:10px; }
+
+  /* ========== OPTION A — CURRENT (rebuilt) ========== */
+  .A .bg { background:#fff; }
+  .A .grid { display:grid; grid-template-columns:1fr 1.2fr; gap:48px; max-width:1180px; margin:0 auto; padding:0 28px 60px; align-items:start; }
+  .A .wheel-area { display:flex; flex-direction:column; align-items:center; padding:20px; }
+  .A .hint { margin-top:24px; padding:14px 18px; background:#faf7f1; border:1px solid #e8e0d4; font-size:12px; color:#888; text-align:center; width:100%; max-width:380px; }
+  .A .metrics-panel { background:#fff; border:1px solid #e8e0d4; padding:28px; box-shadow:0 4px 20px rgba(0,0,0,0.04); }
+  .A .metrics-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; padding-bottom:12px; border-bottom:1px solid #e8e0d4; }
+  .A .metrics-head h3 { font-size:18px; font-weight:500; color:#6B1F2B; }
+  .A .metrics-head .badge { font-size:9px; letter-spacing:0.25em; color:#888; font-weight:600; text-transform:uppercase; }
+  .A table { width:100%; border-collapse:collapse; }
+  .A th { font-size:9px; letter-spacing:0.22em; color:#6B1F2B; font-weight:700; text-transform:uppercase; padding:8px 0; text-align:left; border-bottom:1px solid #e8e0d4; }
+  .A th:nth-child(2), .A th:nth-child(3), .A th:nth-child(4) { text-align:right; }
+  .A td { font-size:13px; color:#1A0505; padding:11px 0; border-bottom:1px solid #f5f0e8; }
+  .A td:nth-child(2), .A td:nth-child(4) { text-align:right; color:#666; }
+  .A td.stage-name { font-weight:600; }
+  .A .bar-cell { width:120px; padding:0 12px; }
+  .A .bar { width:100%; height:5px; background:#f5f0e8; position:relative; }
+  .A .bar .fill { height:100%; background:linear-gradient(to right, #C9A84C, #8a6a2c); }
+  .A .pct { display:inline-block; min-width:36px; font-weight:600; color:#6B1F2B; font-size:11px; padding-left:8px; vertical-align:middle; }
+  .A .streams { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; margin-top:20px; padding-top:20px; border-top:1px solid #e8e0d4; }
+  .A .streams .s { padding:14px 8px; text-align:center; background:#faf7f1; }
+  .A .streams .s .l { font-size:8px; letter-spacing:0.3em; color:#C9A84C; font-weight:700; text-transform:uppercase; margin-bottom:4px; }
+  .A .streams .s .v { font-size:12px; color:#1A0505; font-weight:600; }
+
+  /* ========== OPTION B — TIMELINE FLOW (horizontal) ========== */
+  .B .bg { background:#fff; }
+  .B .container { max-width:1280px; margin:0 auto; padding:0 28px 60px; }
+  .B .timeline-row {
+    display:flex; align-items:center; justify-content:space-between; gap:0;
+    padding:40px 0;
+    border-top:1px solid rgba(201,168,76,0.2);
+    border-bottom:1px solid rgba(201,168,76,0.2);
+    background:linear-gradient(to bottom, #faf7f1 0%, #fff 50%, #faf7f1 100%);
+    position:relative;
+    overflow-x:auto;
+  }
+  .B .timeline-row::before { content:''; position:absolute; top:50%; left:5%; right:5%; height:1px; background:linear-gradient(to right, transparent, #C9A84C 10%, #C9A84C 90%, transparent); }
+  .B .stage-card {
+    position:relative; z-index:1;
+    flex:0 0 auto; width:96px;
+    text-align:center; cursor:pointer;
+  }
+  .B .stage-card .num { font-size:9px; color:#C9A84C; font-weight:700; letter-spacing:0.2em; margin-bottom:6px; }
+  .B .stage-card .dot {
+    width:14px; height:14px; border-radius:50%; background:#6B1F2B; border:3px solid #fff;
+    margin:0 auto 8px; box-shadow:0 0 0 1px #C9A84C;
+    transition:all 0.2s;
+  }
+  .B .stage-card:hover .dot { background:#C9A84C; transform:scale(1.4); }
+  .B .stage-card .name { font-size:10px; color:#1A0505; font-weight:600; line-height:1.3; }
+  .B .stage-card.active .dot { background:#C9A84C; transform:scale(1.4); }
+  .B .stats-row { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:32px; }
+  .B .stat-card { padding:24px; background:#faf7f1; border:1px solid #e8e0d4; }
+  .B .stat-card .l { font-size:9px; letter-spacing:0.3em; color:#C9A84C; font-weight:700; text-transform:uppercase; margin-bottom:8px; }
+  .B .stat-card .v { font-size:28px; font-weight:200; color:#6B1F2B; margin-bottom:4px; }
+  .B .stat-card .sub { font-size:10px; color:#888; letter-spacing:0.1em; text-transform:uppercase; }
+  .B .stat-card .bar { width:100%; height:3px; background:#e8e0d4; margin-top:10px; }
+  .B .stat-card .bar .fill { height:100%; background:#C9A84C; }
+  .B .streams-row { display:flex; justify-content:center; gap:0; margin-top:24px; flex-wrap:wrap; border-top:1px solid #e8e0d4; padding-top:20px; }
+  .B .streams-row .s { padding:0 24px; border-right:1px solid #e8e0d4; }
+  .B .streams-row .s:last-child { border-right:none; }
+  .B .streams-row .s .l { font-size:8px; letter-spacing:0.3em; color:#C9A84C; font-weight:700; text-transform:uppercase; margin-bottom:3px; }
+  .B .streams-row .s .v { font-size:12px; color:#1A0505; font-weight:600; }
+
+  /* ========== OPTION C — DARK COCKPIT (premium B2B SaaS) ========== */
+  .C .bg { background:linear-gradient(180deg, #fff 0%, #faf7f1 100%); padding-bottom:60px; }
+  .C .cockpit {
+    max-width:1280px; margin:0 auto;
+    background:#1A0505; color:#F5F0E8;
+    border:1px solid rgba(201,168,76,0.3);
+    overflow:hidden;
+  }
+  .C .cockpit-grid { display:grid; grid-template-columns:1fr 1.4fr; min-height:480px; }
+  .C .wheel-side { padding:48px; display:flex; flex-direction:column; align-items:center; justify-content:center; border-right:1px solid rgba(201,168,76,0.15); }
+  .C .wheel-side .wheel { background:transparent; }
+  .C .wheel-side .core { background:#C9A84C; color:#1A0505; box-shadow:0 8px 32px rgba(201,168,76,0.3); }
+  .C .wheel-side .core .label-mini { color:#1A0505; }
+  .C .wheel-side .core .label-main { color:#1A0505; }
+  .C .wheel-side .ring { border-color:rgba(201,168,76,0.3); }
+  .C .wheel-side .node { background:#C9A84C; border-color:#1A0505; }
+  .C .wheel-side .node-label { color:rgba(245,240,232,0.65); }
+  .C .wheel-side .hint { margin-top:24px; font-size:10px; color:rgba(245,240,232,0.5); text-align:center; letter-spacing:0.15em; text-transform:uppercase; }
+  .C .metrics-side { padding:48px; display:flex; flex-direction:column; }
+  .C .metrics-side .head { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; padding-bottom:14px; border-bottom:1px solid rgba(201,168,76,0.2); }
+  .C .metrics-side .head h3 { font-size:18px; font-weight:500; color:#fff; }
+  .C .metrics-side .head .live { display:inline-flex; align-items:center; gap:6px; font-size:9px; letter-spacing:0.25em; text-transform:uppercase; color:#C9A84C; font-weight:700; }
+  .C .metrics-side .live .dot { width:6px; height:6px; background:#C9A84C; border-radius:50%; animation:pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
+  .C table { width:100%; border-collapse:collapse; }
+  .C th { font-size:9px; letter-spacing:0.22em; color:#C9A84C; font-weight:700; text-transform:uppercase; padding:8px 0; text-align:left; border-bottom:1px solid rgba(201,168,76,0.2); }
+  .C th:nth-child(2), .C th:nth-child(3), .C th:nth-child(4) { text-align:right; }
+  .C td { font-size:13px; color:rgba(245,240,232,0.85); padding:10px 0; border-bottom:1px solid rgba(201,168,76,0.08); }
+  .C td:nth-child(2), .C td:nth-child(4) { text-align:right; color:rgba(245,240,232,0.55); }
+  .C td.stage-name { font-weight:600; color:#fff; }
+  .C .bar-cell { width:140px; padding:0 16px; }
+  .C .bar { width:100%; height:4px; background:rgba(201,168,76,0.15); position:relative; }
+  .C .bar .fill { height:100%; background:#C9A84C; }
+  .C .pct { display:inline-block; min-width:36px; font-weight:600; color:#C9A84C; font-size:11px; padding-left:8px; vertical-align:middle; }
+  .C .streams-bar { display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin-top:20px; padding-top:20px; border-top:1px solid rgba(201,168,76,0.2); }
+  .C .streams-bar .s { padding:12px; text-align:center; border-right:1px solid rgba(201,168,76,0.15); }
+  .C .streams-bar .s:last-child { border-right:none; }
+  .C .streams-bar .s .l { font-size:8px; letter-spacing:0.3em; color:#C9A84C; font-weight:700; text-transform:uppercase; margin-bottom:4px; }
+  .C .streams-bar .s .v { font-size:12px; color:#fff; font-weight:600; }
+</style>
+</head>
+<body>
+
+<!-- WHEEL SVG generator (positioned absolutely by JS at end) -->
+
+<!-- ============ OPTION A — CURRENT ============ -->
+<div class="label"><span>OPTION A — CURRENT (live site rebuild)</span><span class="delta">Side-by-side wheel + tall table · feels unbalanced</span></div>
+<div class="stage A">
+  <span class="measure">CURRENT</span>
+  <div class="bg">
+    <div class="section-header">
+      <div class="eyebrow"><span class="line"></span><span>End-to-End Operating System</span><span class="line"></span></div>
+      <h2 class="title">14 stages. <b>One supply chain.</b></h2>
+      <p class="sub">Every brief flows through the same 14-stage operating system — 42 markets, one accountable team. Hover any node for live metrics.</p>
+    </div>
+
+    <div class="grid">
+      <div class="wheel-area">
+        <div class="wheel" id="wheelA">
+          <div class="ring"></div>
+          <div class="core">
+            <div class="label-mini">Global Supply Chain</div>
+            <div class="label-main">End-to-End<br>Management</div>
+          </div>
+        </div>
+        <div class="hint">Hover any node on the wheel to see live HARVICS metrics for that stage.</div>
+      </div>
+
+      <div class="metrics-panel">
+        <div class="metrics-head">
+          <h3>Live Stage Metrics</h3>
+          <span class="badge">90-Day Rolling</span>
+        </div>
+        <table>
+          <thead><tr><th>Stage</th><th>Volume</th><th style="text-align:center;">On-Time</th><th>Lead</th></tr></thead>
+          <tbody id="tableA-body"></tbody>
+        </table>
+        <div class="streams">
+          <div class="s"><div class="l">Stream</div><div class="v">Trading House</div></div>
+          <div class="s"><div class="l">Stream</div><div class="v">Importer / Wholesaler</div></div>
+          <div class="s"><div class="l">Stream</div><div class="v">Supplier Network</div></div>
+          <div class="s"><div class="l">Stream</div><div class="v">In-house Buying Office</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ OPTION B — TIMELINE FLOW ============ -->
+<div class="label"><span>OPTION B — TIMELINE FLOW (horizontal stages)</span><span class="delta">Linear 14-stage flow + 4 hero metric cards · IBM / Accenture feel</span></div>
+<div class="stage B">
+  <span class="measure">OPTION B</span>
+  <div class="bg">
+    <div class="section-header">
+      <div class="eyebrow"><span class="line"></span><span>End-to-End Operating System</span><span class="line"></span></div>
+      <h2 class="title">14 stages. <b>One supply chain.</b></h2>
+      <p class="sub">Every brief flows left to right through 14 stages — one accountable team across 42 markets.</p>
+    </div>
+
+    <div class="container">
+      <div class="timeline-row" id="timelineB"></div>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="l">90-Day On-Time</div>
+          <div class="v">96.2%</div>
+          <div class="sub">Avg across 14 stages</div>
+          <div class="bar"><div class="fill" style="width:96%"></div></div>
+        </div>
+        <div class="stat-card">
+          <div class="l">Avg Lead Time</div>
+          <div class="v">21 wks</div>
+          <div class="sub">Brief → Shelf</div>
+          <div class="bar"><div class="fill" style="width:80%"></div></div>
+        </div>
+        <div class="stat-card">
+          <div class="l">Vendor Compliance</div>
+          <div class="v">98.1%</div>
+          <div class="sub">Pass rate</div>
+          <div class="bar"><div class="fill" style="width:98%"></div></div>
+        </div>
+        <div class="stat-card">
+          <div class="l">Active Shipments</div>
+          <div class="v">1,247</div>
+          <div class="sub">Live today</div>
+          <div class="bar"><div class="fill" style="width:74%"></div></div>
+        </div>
+      </div>
+
+      <div class="streams-row">
+        <div class="s"><div class="l">Stream</div><div class="v">Trading House</div></div>
+        <div class="s"><div class="l">Stream</div><div class="v">Importer / Wholesaler</div></div>
+        <div class="s"><div class="l">Stream</div><div class="v">Supplier Network</div></div>
+        <div class="s"><div class="l">Stream</div><div class="v">In-house Buying Office</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ OPTION C — DARK COCKPIT ============ -->
+<div class="label"><span>OPTION C — DARK COCKPIT (mission control)</span><span class="delta">Single dark unified card · wheel + metrics in one zone · Palantir feel ⭐</span></div>
+<div class="stage C">
+  <span class="measure">OPTION C</span>
+  <div class="bg">
+    <div class="section-header">
+      <div class="eyebrow"><span class="line"></span><span>End-to-End Operating System</span><span class="line"></span></div>
+      <h2 class="title">14 stages. <b>One supply chain.</b></h2>
+      <p class="sub">Every brief flows through the same operating system — one cockpit, 42 markets, one accountable team.</p>
+    </div>
+
+    <div class="cockpit">
+      <div class="cockpit-grid">
+        <div class="wheel-side">
+          <div class="wheel compact" id="wheelC">
+            <div class="ring"></div>
+            <div class="core">
+              <div class="label-mini">HARVICS</div>
+              <div class="label-main">Operating<br>System</div>
+            </div>
+          </div>
+          <div class="hint">Hover any node for live metrics</div>
+        </div>
+        <div class="metrics-side">
+          <div class="head">
+            <h3>Live Stage Metrics</h3>
+            <span class="live"><span class="dot"></span>90-Day Rolling</span>
+          </div>
+          <table>
+            <thead><tr><th>Stage</th><th>Volume</th><th style="text-align:center;">On-Time</th><th>Lead</th></tr></thead>
+            <tbody id="tableC-body"></tbody>
+          </table>
+          <div class="streams-bar">
+            <div class="s"><div class="l">Stream</div><div class="v">Trading House</div></div>
+            <div class="s"><div class="l">Stream</div><div class="v">Importer</div></div>
+            <div class="s"><div class="l">Stream</div><div class="v">Suppliers</div></div>
+            <div class="s"><div class="l">Stream</div><div class="v">In-house</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ COMPARISON ============ -->
+<div style="background:#000; color:#e8e0d4; padding:32px; border-top:2px solid #C9A84C;">
+  <div style="text-align:center; font-size:12px; letter-spacing:0.3em; color:#C9A84C; margin-bottom:24px;">A · B · C — Side by Side</div>
+  <table style="width:100%; max-width:900px; margin:0 auto; border-collapse:collapse; font-size:13px;">
+    <thead>
+      <tr style="border-bottom:2px solid #C9A84C; color:#C9A84C; text-transform:uppercase; letter-spacing:0.15em; font-size:11px;">
+        <th style="padding:10px; text-align:left;">Aspect</th>
+        <th style="padding:10px;">A — Current</th>
+        <th style="padding:10px; background:#1a0505;">B — Timeline</th>
+        <th style="padding:10px; background:#0d0303;">C — Cockpit ⭐</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">Layout</td><td style="text-align:center;">Wheel + tall table side by side</td><td style="text-align:center;">Horizontal flow + 4 stat cards</td><td style="text-align:center; color:#C9A84C; font-weight:bold;">Unified dark cockpit card</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">Background</td><td style="text-align:center;">White</td><td style="text-align:center;">White / cream gradient</td><td style="text-align:center; color:#C9A84C; font-weight:bold;">Burgundy (matches header)</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">Wheel emphasis</td><td style="text-align:center;">Small, lost</td><td style="text-align:center;">Removed (flow instead)</td><td style="text-align:center; color:#C9A84C; font-weight:bold;">Compact, gold-on-dark — centerpiece</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">Table density</td><td style="text-align:center;">Tall (7 rows, lots of whitespace)</td><td style="text-align:center;">Replaced with 4 hero KPIs</td><td style="text-align:center; color:#C9A84C; font-weight:bold;">Tight, mission-control style</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">"14 stages" prominence</td><td style="text-align:center;">Lost (numbers on wheel only)</td><td style="text-align:center; color:#C9A84C; font-weight:bold;">Strongest — literally a row of 14</td><td style="text-align:center;">Implied via wheel + table</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">"Live" credibility</td><td style="text-align:center;">"90-day rolling" tag only</td><td style="text-align:center;">4 metric headers</td><td style="text-align:center; color:#C9A84C; font-weight:bold;">Pulsing green dot — feels real-time</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">Visual story</td><td style="text-align:center;">"Here's a wheel and a table"</td><td style="text-align:center;">"Brief flows through 14 stages"</td><td style="text-align:center; color:#C9A84C; font-weight:bold;">"This is mission control"</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">Feels like</td><td style="text-align:center;">Generic dashboard</td><td style="text-align:center;">IBM / Accenture process</td><td style="text-align:center; color:#C9A84C; font-weight:bold;">Palantir / Bloomberg terminal</td></tr>
+      <tr style="border-bottom:2px solid #C9A84C;"><td style="padding:10px; font-weight:bold;">Recommendation</td><td style="text-align:center;">—</td><td style="text-align:center;">Best for "explain process"</td><td style="text-align:center; color:#C9A84C; font-weight:bold;">★ Best for "show power"</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="label" style="text-align:center; padding:32px; justify-content:center;">
+  Reply: <b style="color:#fff;">A · B · C</b>
+</div>
+
+<script>
+// ====== STAGES DATA ======
+const stages = [
+  { name: 'Buyer Planning', volume: '210 NPD', pct: 96, lead: '2 wks' },
+  { name: 'Product Design', volume: '6 studios', pct: 93, lead: '3 wks' },
+  { name: 'Product Development', volume: '380 factories', pct: 91, lead: '4 wks' },
+  { name: 'Vendor Compliance', volume: '98.1% pass', pct: 98, lead: '1 wk' },
+  { name: 'Factory & Social QC', volume: '6.8k audits', pct: 95, lead: '2 wks' },
+  { name: 'DC & Transport', volume: '12.4k TEU', pct: 94, lead: '6 wks' },
+  { name: 'Retailer Delivery', volume: '1,240+ accts', pct: 96, lead: '1 wk' },
+];
+
+const allStages = [
+  'Buyer Planning','Product Design','Product Development','Raw Material Sourcing',
+  'Vendor Compliance','Factory Sourcing','Manufacturing Control','Factory & Social QC',
+  'DC & Transport','Freight & Customs','Hubbing & Consolidation','Local Transport',
+  'Wholesaler','Brands & Retailers'
+];
+
+// ====== Render Tables A and C ======
+function renderTable(tbodyId) {
+  const tbody = document.getElementById(tbodyId);
+  if (!tbody) return;
+  tbody.innerHTML = stages.map(s => `
+    <tr>
+      <td class="stage-name">${s.name}</td>
+      <td>${s.volume}</td>
+      <td class="bar-cell"><div class="bar"><div class="fill" style="width:${s.pct}%"></div></div></td>
+      <td><span class="pct">${s.pct}%</span> ${s.lead}</td>
+    </tr>
+  `).join('');
+}
+renderTable('tableA-body');
+
+// option C table (smaller percentage column)
+function renderTableC() {
+  const tbody = document.getElementById('tableC-body');
+  if (!tbody) return;
+  tbody.innerHTML = stages.map(s => `
+    <tr>
+      <td class="stage-name">${s.name}</td>
+      <td>${s.volume}</td>
+      <td class="bar-cell"><div class="bar"><div class="fill" style="width:${s.pct}%"></div></div></td>
+      <td><span class="pct">${s.pct}%</span> ${s.lead}</td>
+    </tr>
+  `).join('');
+}
+renderTableC();
+
+// ====== Render circular wheels ======
+function renderWheel(wheelId) {
+  const wheel = document.getElementById(wheelId);
+  if (!wheel) return;
+  const rect = wheel.getBoundingClientRect();
+  const w = wheel.offsetWidth || 380;
+  const r = w / 2 - 32;
+  allStages.forEach((stage, i) => {
+    const angle = (i / allStages.length) * 2 * Math.PI - Math.PI / 2;
+    const x = 50 + (r / w * 100) * Math.cos(angle);
+    const y = 50 + (r / w * 100) * Math.sin(angle);
+    const labelR = r + 12;
+    const lx = 50 + (labelR / w * 100) * Math.cos(angle);
+    const ly = 50 + (labelR / w * 100) * Math.sin(angle);
+
+    const node = document.createElement('div');
+    node.className = 'node';
+    node.style.left = x + '%';
+    node.style.top = y + '%';
+    wheel.appendChild(node);
+
+    const label = document.createElement('div');
+    label.className = 'node-label';
+    label.textContent = stage;
+    label.style.left = lx + '%';
+    label.style.top = ly + '%';
+    label.style.transform = 'translate(-50%, -50%)';
+    wheel.appendChild(label);
+  });
+}
+renderWheel('wheelA');
+renderWheel('wheelC');
+
+// ====== Render Timeline B ======
+const tl = document.getElementById('timelineB');
+if (tl) {
+  tl.innerHTML = allStages.map((s, i) => `
+    <div class="stage-card ${i === 4 ? 'active' : ''}">
+      <div class="num">${String(i+1).padStart(2,'0')}</div>
+      <div class="dot"></div>
+      <div class="name">${s}</div>
+    </div>
+  `).join('');
+}
+</script>
+
+</body>
+</html>

@@ -102,7 +102,7 @@ const SupremeNavBar: React.FC = () => {
       >
         {/* Nav Links */}
         <div className="universal-layout-frame">
-          <ul className="flex items-center justify-between gap-2 overflow-x-auto whitespace-nowrap list-none m-0 p-0 h-[48px]" role="menubar" aria-label="Main navigation">
+          <ul className="flex items-center justify-between gap-1 list-none m-0 p-0 h-[40px] w-full" role="menubar" aria-label="Main navigation">
             {/* About — first tab */}
             <li
               className="relative flex items-center"
@@ -114,7 +114,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/about`}
-                className={`text-[12px] font-semibold tracking-wider uppercase px-3 py-2 rounded transition-all duration-200 ${isActive(`/${locale}/about`) ? 'bg-[#1A0505] text-[#F5F0E8]' : 'text-[#1A0505] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
+                className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}/about`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
                 onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
               >
                 About
@@ -135,7 +135,7 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${vertical.href}`}
-                  className={`text-[12px] font-semibold tracking-wider uppercase px-3 py-2 rounded transition-all duration-200 ${activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? 'bg-[#1A0505] text-[#F5F0E8]' : 'text-[#1A0505] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
+                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
                   role="menuitem"
                   aria-haspopup="true"
                   aria-expanded={activeDropdown === vertical.key}
@@ -157,7 +157,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/apps`}
-                className={`text-[12px] font-semibold tracking-wider uppercase px-3 py-2 rounded transition-all duration-200 ${isActive(`/${locale}/apps`) ? 'bg-[#1A0505] text-[#F5F0E8]' : 'text-[#1A0505] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
+                className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}/apps`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
               >
                 ⬡ Apps
               </Link>
@@ -175,7 +175,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/harvictrade`}
-                className="text-[12px] font-bold text-[#1A0505] border-l border-gray-200 pl-3 tracking-wider hover:text-[#C9A84C] transition-colors duration-200"
+                className="text-[10px] font-bold text-[#1a0608] border-l border-[#C9A84C]/30 pl-3 ml-1 tracking-[0.12em] uppercase hover:text-[#C9A84C] transition-colors duration-200 whitespace-nowrap py-1.5"
               >
                 ♦ HARVICTRADE
               </Link>
@@ -194,7 +194,7 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${link.href}`}
-                  className={`text-[12px] font-semibold tracking-wider uppercase px-3 py-2 rounded transition-all duration-200 ${isActive(`/${locale}${link.href}`) ? 'bg-[#1A0505] text-[#F5F0E8]' : 'text-[#1A0505] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
+                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}${link.href}`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C9A84C]/10 hover:text-[#C9A84C]'}`}
                   onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
                 >
                   {link.label}

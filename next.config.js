@@ -35,6 +35,13 @@ const nextConfig = {
       dynamic: 30,
       static: 180,
     },
+    optimizePackageImports: ['lucide-react', 'recharts', 'date-fns', 'lodash'],
+  },
+  devIndicators: false,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production'
+      ? { exclude: ['error', 'warn'] }
+      : false,
   },
   output: process.env.NODE_ENV === 'production' ? 'standalone' : undefined,
   typescript: {

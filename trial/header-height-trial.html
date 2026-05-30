@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HARVICS Header — Height Trial v2</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, 'Inter', sans-serif; background:#0d0d0d; color:#e8e0d4; }
+  .label { padding:14px 24px; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#C9A84C; background:#000; border-top:1px solid #2a2a2a; display:flex; justify-content:space-between; align-items:center; }
+  .label .delta { color:#fff; font-weight:bold; letter-spacing:0.1em; }
+  .stage { background:#f5f0e8; min-height:240px; position:relative; }
+  .hero-fake { background:linear-gradient(to bottom, #2a1a18, #1a0505); color:#fff; padding:20px 32px; height:140px; display:flex; align-items:center; }
+  .hero-fake h1 { font-size:32px; font-weight:300; letter-spacing:-0.02em; }
+  .hero-fake h1 b { color:#C9A84C; font-weight:400; }
+
+  .t1 { background:#1a0505; color:#C9A84C; display:flex; align-items:center; justify-content:space-between; padding:0 28px; }
+  .t1 .left, .t1 .right { display:flex; gap:24px; }
+  .t1 a { color:#C9A84C; text-decoration:none; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; }
+
+  .t2 { background:#F5F0E8; display:flex; align-items:center; justify-content:space-between; padding:0 28px; border-bottom:1px solid #e5dccd; }
+  .brand { display:flex; align-items:center; gap:12px; }
+  .brand-text { display:flex; flex-direction:column; line-height:1.1; }
+  .brand-text b { color:#1a0505; letter-spacing:0.05em; font-weight:600; }
+  .brand-text small { color:#C9A84C; letter-spacing:0.25em; text-transform:uppercase; }
+
+  .search { flex:1; max-width:480px; margin:0 32px; border:2px dashed #ff3366 !important; background:#fff; padding:0 16px; display:flex; align-items:center; color:#999; position:relative; }
+  .search::after { content:attr(data-h); position:absolute; right:-52px; top:50%; transform:translateY(-50%); background:#ff3366; color:#fff; font-size:9px; padding:2px 6px; border-radius:3px; letter-spacing:0.05em; font-weight:bold; }
+
+  .icons { display:flex; gap:14px; color:#1a0505; align-items:center; }
+
+  .t3 { background:#fff; border-bottom:1px solid #e5dccd; display:flex; align-items:center; padding:0 28px; }
+  .nav-row { display:flex; align-items:center; gap:20px; width:100%; }
+  .nav-row a { color:#1a0505; text-decoration:none; font-weight:500; text-transform:uppercase; letter-spacing:0.12em; white-space:nowrap; }
+  .nav-row a.active { color:#1a0505; border-bottom:2px solid #C9A84C; }
+  .nav-row .sep { width:1px; height:14px; background:rgba(201,168,76,0.4); }
+  .nav-row .right { margin-left:auto; }
+
+  .logo-svg { flex-shrink:0; }
+
+  .CUR .t1 { height:32px; font-size:11px; }
+  .CUR .t2 { height:80px; }
+  .CUR .logo-svg { width:48px; height:48px; }
+  .CUR .brand-text b { font-size:22px; }
+  .CUR .brand-text small { font-size:10px; }
+  .CUR .search { height:42px; font-size:14px; }
+  .CUR .icons { font-size:20px; }
+  .CUR .t3 { height:68px; }
+  .CUR .nav-row a { font-size:11px; }
+
+  .A .t1 { height:28px; font-size:10px; }
+  .A .t2 { height:60px; }
+  .A .logo-svg { width:40px; height:40px; }
+  .A .brand-text b { font-size:18px; }
+  .A .brand-text small { font-size:9px; }
+  .A .search { height:36px; font-size:13px; }
+  .A .icons { font-size:18px; }
+  .A .t3 { height:48px; }
+  .A .nav-row a { font-size:10.5px; }
+
+  .B .t1 { height:24px; font-size:9.5px; }
+  .B .t2 { height:52px; }
+  .B .logo-svg { width:36px; height:36px; }
+  .B .brand-text b { font-size:16px; }
+  .B .brand-text small { font-size:8.5px; }
+  .B .search { height:30px; font-size:12px; }
+  .B .icons { font-size:16px; }
+  .B .t3 { height:40px; }
+  .B .nav-row a { font-size:10px; }
+
+  .C .t1 { height:28px; font-size:10px; }
+  .C .merged { background:#F5F0E8; height:56px; display:flex; align-items:center; padding:0 28px; gap:24px; border-bottom:1px solid #e5dccd; }
+  .C .logo-svg { width:36px; height:36px; }
+  .C .brand-text b { font-size:16px; }
+  .C .brand-text small { font-size:8.5px; }
+  .C .nav-row { flex:1; gap:16px; }
+  .C .nav-row a { font-size:10px; }
+  .C .icons { font-size:16px; }
+
+  .measure { position:absolute; right:10px; top:10px; background:#1a0505; color:#C9A84C; padding:5px 12px; font-size:10px; letter-spacing:0.15em; text-transform:uppercase; z-index:99; border:1px solid #C9A84C; font-weight:bold; }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute;">
+  <symbol id="harvics-logo" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="38" fill="#1a0505"/>
+    <circle cx="50" cy="50" r="6" fill="#C9A84C"/>
+    <g stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round">
+      <line x1="50" y1="14" x2="50" y2="26"/>
+      <line x1="50" y1="74" x2="50" y2="86"/>
+      <line x1="14" y1="50" x2="26" y2="50"/>
+      <line x1="74" y1="50" x2="86" y2="50"/>
+      <line x1="24.5" y1="24.5" x2="33" y2="33"/>
+      <line x1="67" y1="67" x2="75.5" y2="75.5"/>
+      <line x1="75.5" y1="24.5" x2="67" y2="33"/>
+      <line x1="33" y1="67" x2="24.5" y2="75.5"/>
+    </g>
+  </symbol>
+</svg>
+
+<div class="label"><span>CURRENT (live site)</span><span class="delta">180 px · T1=32 · T2=80 · T3=68</span></div>
+<div class="stage CUR">
+  <span class="measure">180 px</span>
+  <div class="t1"><div class="left"><a>ESG 2025</a><a>Investors</a><a>Media</a><a>Countries ▾</a><a>Contact</a></div><div class="right"><a>🇬🇧 EN ▾</a><a>Login</a></div></div>
+  <div class="t2">
+    <div class="brand"><svg class="logo-svg"><use href="#harvics-logo"/></svg><div class="brand-text"><b>HARVICS</b><small>Global Ventures</small></div></div>
+    <div class="search" data-h="42px">🔍 &nbsp; Search</div>
+    <div class="icons"><span>👤</span><span>❤</span><span>🛒</span></div>
+  </div>
+  <div class="t3"><div class="nav-row"><a class="active">ABOUT</a><a>APPARELS</a><a>FMCG</a><a>COMMODITIES</a><a>INDUSTRIAL</a><a>MINERALS</a><a>OIL & GAS</a><a>REAL ESTATE</a><a>SOURCING</a><a>FINANCE</a><a>AI & TECH</a><a>⬡ APPS</a><a>♦ HARVICTRADE</a></div></div>
+  <div class="hero-fake"><h1>Harvics <b>Global Ventures</b></h1></div>
+</div>
+
+<div class="label"><span>OPTION A — CONSERVATIVE</span><span class="delta">136 px · saves 44 px · T1=28 · T2=60 · T3=48</span></div>
+<div class="stage A">
+  <span class="measure">136 px</span>
+  <div class="t1"><div class="left"><a>ESG 2025</a><a>Investors</a><a>Media</a><a>Countries ▾</a><a>Contact</a></div><div class="right"><a>🇬🇧 EN ▾</a><a>Login</a></div></div>
+  <div class="t2">
+    <div class="brand"><svg class="logo-svg"><use href="#harvics-logo"/></svg><div class="brand-text"><b>HARVICS</b><small>Global Ventures</small></div></div>
+    <div class="search" data-h="36px">🔍 &nbsp; Search</div>
+    <div class="icons"><span>👤</span><span>❤</span><span>🛒</span></div>
+  </div>
+  <div class="t3"><div class="nav-row"><a class="active">ABOUT</a><a>APPARELS</a><a>FMCG</a><a>COMMODITIES</a><a>INDUSTRIAL</a><a>MINERALS</a><a>OIL & GAS</a><a>REAL ESTATE</a><a>SOURCING</a><a>FINANCE</a><a>AI & TECH</a><a>⬡ APPS</a><a>♦ HARVICTRADE</a><span class="sep right"></span><a>CONTACT</a></div></div>
+  <div class="hero-fake"><h1>Harvics <b>Global Ventures</b></h1></div>
+</div>
+
+<div class="label"><span>OPTION B — AGGRESSIVE (Maersk)</span><span class="delta">116 px · saves 64 px · T1=24 · T2=52 · T3=40</span></div>
+<div class="stage B">
+  <span class="measure">116 px</span>
+  <div class="t1"><div class="left"><a>ESG 2025</a><a>Investors</a><a>Media</a><a>Countries ▾</a><a>Contact</a></div><div class="right"><a>🇬🇧 EN ▾</a><a>Login</a></div></div>
+  <div class="t2">
+    <div class="brand"><svg class="logo-svg"><use href="#harvics-logo"/></svg><div class="brand-text"><b>HARVICS</b><small>Global Ventures</small></div></div>
+    <div class="search" data-h="30px">🔍 &nbsp; Search</div>
+    <div class="icons"><span>👤</span><span>❤</span><span>🛒</span></div>
+  </div>
+  <div class="t3"><div class="nav-row"><a class="active">ABOUT</a><a>APPARELS</a><a>FMCG</a><a>COMMODITIES</a><a>INDUSTRIAL</a><a>MINERALS</a><a>OIL & GAS</a><a>REAL ESTATE</a><span class="sep"></span><a>SOURCING</a><a>FINANCE</a><a>AI</a><span class="sep"></span><a>⬡ APPS</a><a>♦ HARVICTRADE</a><span class="sep right"></span><a>CONTACT</a></div></div>
+  <div class="hero-fake"><h1>Harvics <b>Global Ventures</b></h1></div>
+</div>
+
+<div class="label"><span>OPTION C — MERGED</span><span class="delta">84 px · saves 96 px · T1=28 · merged=56</span></div>
+<div class="stage C">
+  <span class="measure">84 px</span>
+  <div class="t1"><div class="left"><a>ESG 2025</a><a>Investors</a><a>Media</a><a>Countries ▾</a></div><div class="right"><a>🇬🇧 EN ▾</a><a>Login</a></div></div>
+  <div class="merged">
+    <div class="brand"><svg class="logo-svg"><use href="#harvics-logo"/></svg><div class="brand-text"><b>HARVICS</b><small>Global Ventures</small></div></div>
+    <div class="nav-row"><a class="active">About</a><a>Apparels</a><a>FMCG</a><a>Commod.</a><a>Industrial</a><a>Minerals</a><a>Oil & Gas</a><a>Real Estate</a><a>Sourcing</a><a>Finance</a><a>AI</a><a>Apps</a><a>HARVICTRADE</a></div>
+    <div class="icons"><span>🔍</span><span>👤</span><span>🛒</span></div>
+  </div>
+  <div class="hero-fake"><h1>Harvics <b>Global Ventures</b></h1></div>
+</div>
+
+<div style="background:#000; color:#e8e0d4; padding:32px; border-top:2px solid #C9A84C;">
+  <div style="text-align:center; font-size:12px; letter-spacing:0.3em; color:#C9A84C; margin-bottom:24px;">A vs B — SIDE BY SIDE</div>
+  <table style="width:100%; max-width:900px; margin:0 auto; border-collapse:collapse; font-size:13px;">
+    <thead>
+      <tr style="border-bottom:2px solid #C9A84C; color:#C9A84C; text-transform:uppercase; letter-spacing:0.15em; font-size:11px;">
+        <th style="padding:10px; text-align:left;">Element</th>
+        <th style="padding:10px;">Current</th>
+        <th style="padding:10px; background:#1a0505;">Option A</th>
+        <th style="padding:10px; background:#0d0303;">Option B</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">T1 height</td><td style="text-align:center;">32 px</td><td style="text-align:center; background:rgba(26,5,5,0.5);">28 px</td><td style="text-align:center; background:rgba(13,3,3,0.7); color:#C9A84C; font-weight:bold;">24 px</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">T2 (brand) height</td><td style="text-align:center;">80 px</td><td style="text-align:center; background:rgba(26,5,5,0.5);">60 px</td><td style="text-align:center; background:rgba(13,3,3,0.7); color:#C9A84C; font-weight:bold;">52 px</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">Logo size</td><td style="text-align:center;">48 px</td><td style="text-align:center; background:rgba(26,5,5,0.5);">40 px</td><td style="text-align:center; background:rgba(13,3,3,0.7); color:#C9A84C; font-weight:bold;">36 px</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">"HARVICS" text</td><td style="text-align:center;">22 px</td><td style="text-align:center; background:rgba(26,5,5,0.5);">18 px</td><td style="text-align:center; background:rgba(13,3,3,0.7); color:#C9A84C; font-weight:bold;">16 px</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">Search bar height</td><td style="text-align:center;">42 px</td><td style="text-align:center; background:rgba(26,5,5,0.5);">36 px</td><td style="text-align:center; background:rgba(13,3,3,0.7); color:#C9A84C; font-weight:bold;">30 px</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">T3 (nav) height</td><td style="text-align:center;">68 px</td><td style="text-align:center; background:rgba(26,5,5,0.5);">48 px</td><td style="text-align:center; background:rgba(13,3,3,0.7); color:#C9A84C; font-weight:bold;">40 px</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">Tab font</td><td style="text-align:center;">11 px</td><td style="text-align:center; background:rgba(26,5,5,0.5);">10.5 px</td><td style="text-align:center; background:rgba(13,3,3,0.7); color:#C9A84C; font-weight:bold;">10 px</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">Nav groups</td><td style="text-align:center;">—</td><td style="text-align:center; background:rgba(26,5,5,0.5);">Contact pin only</td><td style="text-align:center; background:rgba(13,3,3,0.7); color:#C9A84C; font-weight:bold;">3 groups + Contact</td></tr>
+      <tr style="border-bottom:1px solid #2a2a2a;"><td style="padding:8px 10px;">Feels like</td><td style="text-align:center;">Generic</td><td style="text-align:center; background:rgba(26,5,5,0.5);">Comfortable</td><td style="text-align:center; background:rgba(13,3,3,0.7); color:#C9A84C; font-weight:bold;">Maersk-tight</td></tr>
+      <tr style="border-bottom:2px solid #C9A84C;"><td style="padding:10px; font-weight:bold;">TOTAL HEIGHT</td><td style="text-align:center; font-weight:bold;">180 px</td><td style="text-align:center; background:rgba(26,5,5,0.5); font-weight:bold;">136 px (-44)</td><td style="text-align:center; background:rgba(13,3,3,0.7); color:#C9A84C; font-weight:bold;">116 px (-64)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="label" style="text-align:center; padding:32px; justify-content:center;">Reply: A · B · C · or custom numbers</div>
+
+</body>
+</html>

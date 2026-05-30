@@ -207,50 +207,69 @@ const BackgroundMusic: React.FC = () => {
         Your browser does not support the audio element.
       </audio>
 
-      {/* Music Control Button - Compact Mobile Design */}
-      <div className="fixed bottom-2 left-2 md:bottom-4 md:left-4 z-50">
-        <div className="bg-white/20 backdrop-blur-sm rounded-full shadow-sm border border-white/10 p-1.5 transition-all duration-300 hover:bg-white/30 flex items-center gap-1.5">
-          {/* Autoplay indicator - Hidden on mobile */}
-          {!hasUserInteracted && !isPlaying && isHomePage && (
-            <div className="hidden md:block text-xs text-center text-black/70 px-1">
-              🎵
-            </div>
+      {/* Music Control Button — Stylish round burgundy pill with hover tooltip */}
+      <div className="fixed bottom-6 left-6 z-50 flex items-center gap-3 group/wrap">
+        <button
+          onClick={togglePlayPause}
+          className="harvics-music-fab relative w-11 h-11 flex items-center justify-center transition-transform duration-300 hover:scale-105 active:scale-95 group"
+          style={{
+            background:
+              'radial-gradient(circle at 30% 22%, #9b3344 0%, #6B1F2B 50%, #3d1119 100%)',
+            border: '1px solid rgba(195, 163, 94, 0.5)',
+            borderRadius: '9999px',
+            boxShadow:
+              '0 10px 30px rgba(107, 31, 43, 0.4), 0 2px 6px rgba(0,0,0,0.18), inset 0 1px 1px rgba(255,255,255,0.18), inset 0 -2px 4px rgba(0,0,0,0.3)',
+          }}
+          title={isPlaying ? t('pause') : t('play')}
+          aria-label={isPlaying ? t('pause') : t('play')}
+        >
+          {/* Subtle gold hairline */}
+          <span
+            aria-hidden
+            className="absolute inset-[2px] pointer-events-none"
+            style={{
+              borderRadius: '9999px',
+              border: '1px solid rgba(232, 212, 160, 0.18)',
+            }}
+          />
+          {isPlaying ? (
+            <svg
+              className="relative w-[16px] h-[16px] text-[#E8D4A0] group-hover:text-white transition-colors duration-200"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <rect x="6" y="5" width="4" height="14" rx="1" />
+              <rect x="14" y="5" width="4" height="14" rx="1" />
+            </svg>
+          ) : (
+            <svg
+              className="relative w-[16px] h-[16px] text-[#E8D4A0] group-hover:text-white transition-colors duration-200"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M9 6.5v11a1 1 0 0 0 1.55.83l8.5-5.5a1 1 0 0 0 0-1.66l-8.5-5.5A1 1 0 0 0 9 6.5z" />
+            </svg>
           )}
-          
-          {/* Play/Pause Button */}
-          <button
-            onClick={togglePlayPause}
-            className="w-7 h-7 bg-white/30 backdrop-blur-sm hover:bg-white/50 text-black rounded-full flex items-center justify-center transition-all duration-300 shadow-sm border border-[#C3A35E]/20"
-            title={isPlaying ? t('pause') : t('play')}
-          >
-            {isPlaying ? (
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
-              </svg>
-            ) : (
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z"/>
-              </svg>
-            )}
-          </button>
+          {/* Soft gold pulse ring — only when paused */}
+          {!isPlaying && (
+            <span
+              className="harvics-chatbot-pulse absolute inset-0 border border-[#C3A35E]/35 pointer-events-none"
+              style={{ borderRadius: '9999px', animation: 'chatPulse 2.8s ease-out infinite' }}
+            />
+          )}
+        </button>
 
-          {/* Mute/Unmute Button */}
-          <button
-            onClick={toggleMute}
-            className="w-7 h-7 bg-white/30 backdrop-blur-sm hover:bg-white/50 text-black rounded-full flex items-center justify-center transition-all duration-300 shadow-sm border border-[#C3A35E]/20"
-            title={isMuted ? t('unmute') : t('mute')}
-          >
-            {isMuted ? (
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
-              </svg>
-            ) : (
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-              </svg>
-            )}
-          </button>
-        </div>
+        {/* Hover tooltip */}
+        <span
+          className="harvics-fab-tooltip pointer-events-none select-none text-[11px] font-medium tracking-wide uppercase text-[#1A0505] bg-[#F5F0E8]/95 backdrop-blur px-3 py-1.5 opacity-0 translate-x-1 transition-all duration-300 group-hover/wrap:opacity-100 group-hover/wrap:translate-x-0"
+          style={{
+            borderRadius: '9999px',
+            border: '1px solid rgba(195, 163, 94, 0.45)',
+            boxShadow: '0 4px 14px rgba(26, 5, 5, 0.12)',
+          }}
+        >
+          {isPlaying ? 'Pause Music' : 'Play Music'}
+        </span>
       </div>
     </>
   )

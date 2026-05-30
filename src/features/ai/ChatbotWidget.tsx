@@ -174,58 +174,80 @@ const ChatbotWidget: React.FC = () => {
   return (
     <>
       {/* ═══ CHAT TOGGLE BUTTON ═══ */}
-      <button
-        onClick={handleToggle}
-        className="fixed bottom-4 right-4 z-50 w-11 h-11 flex items-center justify-center group"
-        style={{
-          background: isOpen
-            ? 'linear-gradient(135deg, #6B1F2B 0%, #4a1520 100%)'
-            : 'linear-gradient(135deg, #6B1F2B 0%, #5a1a24 100%)',
-          border: '1px solid rgba(195, 163, 94, 0.3)',
-          transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-          boxShadow: '0 4px 20px rgba(107, 31, 43, 0.3), 0 0 0 1px rgba(195, 163, 94, 0.1)',
-        }}
-        aria-label={isOpen ? 'Close Chat' : 'Open Chat'}
-        aria-expanded={isOpen}
-        aria-controls="harvics-chat-panel"
-      >
-        {!isOpen ? (
-          <svg
-            className="w-6 h-6 text-[#C3A35E] group-hover:text-white transition-colors duration-200"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-            />
-          </svg>
-        ) : (
-          <svg
-            className="w-5 h-5 text-[#C3A35E] group-hover:text-white transition-colors duration-200"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        )}
-        {/* Pulse ring — only when closed */}
-        {!isOpen && (
+      <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3 group/wrap">
+        {/* Hover tooltip */}
+        <span
+          className="harvics-fab-tooltip pointer-events-none select-none text-[11px] font-medium tracking-wide uppercase text-[#1A0505] bg-[#F5F0E8]/95 backdrop-blur px-3 py-1.5 opacity-0 -translate-x-1 transition-all duration-300 group-hover/wrap:opacity-100 group-hover/wrap:translate-x-0"
+          style={{
+            borderRadius: '9999px',
+            border: '1px solid rgba(195, 163, 94, 0.45)',
+            boxShadow: '0 4px 14px rgba(26, 5, 5, 0.12)',
+          }}
+        >
+          {isOpen ? 'Close' : 'Ask Harvics'}
+        </span>
+
+        <button
+          onClick={handleToggle}
+          className="harvics-chatbot-fab relative w-11 h-11 flex items-center justify-center transition-transform duration-300 hover:scale-105 active:scale-95 group"
+          style={{
+            background:
+              'radial-gradient(circle at 30% 22%, #9b3344 0%, #6B1F2B 50%, #3d1119 100%)',
+            border: '1px solid rgba(195, 163, 94, 0.5)',
+            borderRadius: '9999px',
+            boxShadow:
+              '0 10px 30px rgba(107, 31, 43, 0.4), 0 2px 6px rgba(0,0,0,0.18), inset 0 1px 1px rgba(255,255,255,0.18), inset 0 -2px 4px rgba(0,0,0,0.3)',
+          }}
+          aria-label={isOpen ? 'Close Chat' : 'Open Chat'}
+          aria-expanded={isOpen}
+          aria-controls="harvics-chat-panel"
+        >
+          {/* Subtle gold hairline */}
           <span
-            className="absolute inset-0 border border-[#C3A35E]/30"
-            style={{ animation: 'chatPulse 2.5s ease-out infinite' }}
+            aria-hidden
+            className="absolute inset-[2px] pointer-events-none"
+            style={{
+              borderRadius: '9999px',
+              border: '1px solid rgba(232, 212, 160, 0.18)',
+            }}
           />
-        )}
-      </button>
+          {!isOpen ? (
+            <svg
+              className="relative w-[18px] h-[18px] text-[#E8D4A0] group-hover:text-white transition-colors duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              strokeWidth={1.6}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21 12a8.5 8.5 0 01-12.7 7.4L3 21l1.6-5.2A8.5 8.5 0 1121 12z"
+              />
+              <circle cx="8.5" cy="12" r="0.9" fill="currentColor" />
+              <circle cx="12" cy="12" r="0.9" fill="currentColor" />
+              <circle cx="15.5" cy="12" r="0.9" fill="currentColor" />
+            </svg>
+          ) : (
+            <svg
+              className="relative w-[14px] h-[14px] text-[#E8D4A0] group-hover:text-white transition-colors duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              strokeWidth={2.2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          )}
+          {/* Soft gold pulse ring — only when closed */}
+          {!isOpen && (
+            <span
+              className="harvics-chatbot-pulse absolute inset-0 border border-[#C3A35E]/35 pointer-events-none"
+              style={{ borderRadius: '9999px', animation: 'chatPulse 2.8s ease-out infinite' }}
+            />
+          )}
+        </button>
+      </div>
 
       {/* ═══ CHAT WINDOW — Glassmorphism Panel ═══ */}
       {isOpen && (

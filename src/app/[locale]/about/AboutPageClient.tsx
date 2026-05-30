@@ -38,6 +38,24 @@ function useInView(threshold = 0.15) {
   return { ref, inView }
 }
 
+/* ───── Stat tile (uses the counter hook safely) ───── */
+function StatTile({ stat, index, inView }: { stat: { value: string; label: string }; index: number; inView: boolean }) {
+  const display = useAnimatedCounter(stat.value, inView)
+  return (
+    <div
+      className="transition-all duration-700"
+      style={{
+        opacity: inView ? 1 : 0,
+        transform: inView ? 'translateY(0)' : 'translateY(20px)',
+        transitionDelay: `${index * 120}ms`,
+      }}
+    >
+      <div className="text-3xl md:text-4xl font-bold text-[#C3A35E] mb-2 tabular-nums">{display}</div>
+      <div className="text-xs text-white/45 uppercase tracking-[0.15em] font-medium">{stat.label}</div>
+    </div>
+  )
+}
+
 interface AboutPageClientProps {
   locale: string
   translations: {
@@ -211,23 +229,9 @@ const AboutPageClient: React.FC<AboutPageClientProps> = ({ locale, translations:
             }} />
           <div className="max-w-[1200px] mx-auto relative z-10">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              {stats.map((stat, i) => {
-                const display = useAnimatedCounter(stat.value, statsRef.inView)
-                return (
-                  <div
-                    key={stat.label}
-                    className="transition-all duration-700"
-                    style={{
-                      opacity: statsRef.inView ? 1 : 0,
-                      transform: statsRef.inView ? 'translateY(0)' : 'translateY(20px)',
-                      transitionDelay: `${i * 120}ms`,
-                    }}
-                  >
-                    <div className="text-3xl md:text-4xl font-bold text-[#C3A35E] mb-2 tabular-nums">{display}</div>
-                    <div className="text-xs text-white/45 uppercase tracking-[0.15em] font-medium">{stat.label}</div>
-                  </div>
-                )
-              })}
+              {stats.map((stat, i) => (
+                <StatTile key={stat.label} stat={stat} index={i} inView={statsRef.inView} />
+              ))}
             </div>
           </div>
         </section>
