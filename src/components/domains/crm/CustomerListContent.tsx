@@ -25,7 +25,7 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
       {/* Header */}
       <div className="flex items-center justify-between flex-wrap gap-3">
         <div>
-          <h2 className="text-lg font-semibold text-[#1D1D1F]">Customer Overview</h2>
+          <h2 className="text-lg font-semibold text-[#1A1A1A]">Customer Overview</h2>
           <p className="text-sm text-[#8E8E93] mt-0.5">Real-time CRM intelligence across all regions</p>
         </div>
         <LiveBadge source={source} lastUpdated={lastUpdated} />
@@ -89,7 +89,7 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
                 <div key={i} className="flex items-center justify-between text-xs">
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: regionColors[i % regionColors.length] }} />
-                    <span className="text-[#1D1D1F]">{r.region}</span>
+                    <span className="text-[#1A1A1A]">{r.region}</span>
                   </div>
                   <span className="text-[#8E8E93] tabular-nums">{r.count} · {fmtMoney(r.revenue)}</span>
                 </div>
@@ -104,7 +104,7 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
         <div className="flex gap-6">
           {(['customers', 'leads', 'complaints'] as const).map(t => (
             <button key={t} onClick={() => setTab(t)}
-              className={`pb-3 text-sm font-medium capitalize transition-colors border-b-2 -mb-px ${tab === t ? 'border-[#6B1F2B] text-[#1D1D1F]' : 'border-transparent text-[#8E8E93] hover:text-[#1D1D1F]'}`}>
+              className={`pb-3 text-sm font-medium capitalize transition-colors border-b-2 -mb-px ${tab === t ? 'border-[#6B1F2B] text-[#1A1A1A]' : 'border-transparent text-[#8E8E93] hover:text-[#1A1A1A]'}`}>
               {t.charAt(0).toUpperCase() + t.slice(1)}
               {t === 'complaints' && (data.complaints?.length || 0) > 0 && (
                 <span className="ml-1.5 text-[10px] bg-[#FF3B30] text-white rounded-full px-1.5 py-0.5 align-middle">{data.complaints.length}</span>
@@ -128,12 +128,12 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
               { key: 'last', label: 'Last Order' },
             ]}
             rows={(data.customers || []).map((c: any) => ({
-              name: <span className="font-medium text-[#1D1D1F]">{c.name}</span>,
+              name: <span className="font-medium text-[#1A1A1A]">{c.name}</span>,
               type: <span className="text-xs text-[#8E8E93] bg-[#F5F5F7] px-2 py-0.5 rounded-full">{c.type}</span>,
-              country: <span className="text-[#1D1D1F]">{c.country}</span>,
+              country: <span className="text-[#1A1A1A]">{c.country}</span>,
               status: <StatusDot status={c.status} />,
-              orders: <span className="font-medium text-[#1D1D1F]">{c.orders}</span>,
-              ltv: <span className="font-semibold text-[#1D1D1F]">{fmtMoney(c.lifetimeValue || 0)}</span>,
+              orders: <span className="font-medium text-[#1A1A1A]">{c.orders}</span>,
+              ltv: <span className="font-semibold text-[#1A1A1A]">{fmtMoney(c.lifetimeValue || 0)}</span>,
               last: <span className="text-[#8E8E93]">{c.lastOrder || '—'}</span>,
             }))}
           />
@@ -148,7 +148,7 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
                 <div className="p-5 space-y-3">
                   <div className="flex items-start justify-between gap-2">
                     <div>
-                      <p className="font-semibold text-[#1D1D1F] text-sm">{lead.company}</p>
+                      <p className="font-semibold text-[#1A1A1A] text-sm">{lead.company}</p>
                       <p className="text-xs text-[#8E8E93]">{lead.contact}</p>
                     </div>
                     <StatusDot status={lead.stage} />
@@ -156,7 +156,7 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
                   <div className="space-y-1">
                     <div className="flex justify-between text-xs">
                       <span className="text-[#8E8E93]">Est. Value</span>
-                      <span className="font-semibold text-[#1D1D1F]">{fmtMoney(lead.estimatedValue || 0)}</span>
+                      <span className="font-semibold text-[#1A1A1A]">{fmtMoney(lead.estimatedValue || 0)}</span>
                     </div>
                     <div className="flex justify-between text-xs">
                       <span className="text-[#8E8E93]">Win Probability</span>
@@ -200,8 +200,8 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
             ]}
             rows={(data.complaints || []).map((c: any) => ({
               id: <span className="text-[#8E8E93] text-xs font-mono">{c.id}</span>,
-              customer: <span className="font-medium text-[#1D1D1F]">{c.customer}</span>,
-              issue: <span className="text-[#1D1D1F]">{c.issue}</span>,
+              customer: <span className="font-medium text-[#1A1A1A]">{c.customer}</span>,
+              issue: <span className="text-[#1A1A1A]">{c.issue}</span>,
               priority: <StatusDot status={c.priority} />,
               status: <StatusDot status={c.status} />,
               date: <span className="text-[#8E8E93]">{c.date}</span>,

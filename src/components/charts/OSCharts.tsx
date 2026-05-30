@@ -48,9 +48,9 @@ export function BarChart({ data, height = 120, formatValue = (v) => String(v) }:
         const barColor = d.color || '#6B1F2B'
         return (
           <div key={i} className="flex-1 flex flex-col items-center gap-1 group relative">
-            <div className="absolute -top-9 left-1/2 -translate-x-1/2 hidden group-hover:flex bg-[#1D1D1F] text-white text-[10px] rounded-md px-2 py-1 whitespace-nowrap z-10 shadow-lg">
+            <div className="absolute -top-9 left-1/2 -translate-x-1/2 hidden group-hover:flex bg-[#1A1A1A] text-white text-[10px] rounded-md px-2 py-1 whitespace-nowrap z-10 shadow-lg">
               {formatValue(d.value)}
-              <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-[#1D1D1F]" />
+              <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-[#1A1A1A]" />
             </div>
             <div className="w-full rounded-t-md transition-all duration-700 relative overflow-hidden" style={{ height: `${pct}%`, minHeight: 4 }}>
               <div className="absolute inset-0" style={{ background: `linear-gradient(to top, ${barColor}, ${barColor}dd)` }} />
@@ -105,7 +105,7 @@ export function DonutChart({ segments, size = 120, strokeWidth = 16, centerLabel
       </svg>
       {(centerLabel || centerValue) && (
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          {centerValue && <span className="text-base font-semibold text-[#1D1D1F] leading-none">{centerValue}</span>}
+          {centerValue && <span className="text-base font-semibold text-[#1A1A1A] leading-none">{centerValue}</span>}
           {centerLabel && <span className="text-[10px] text-[#8E8E93] mt-0.5">{centerLabel}</span>}
         </div>
       )}
@@ -127,7 +127,7 @@ export function HBar({ label, value, max, color = '#6B1F2B', formatValue = (v) =
   return (
     <div className="space-y-1">
       <div className="flex items-center justify-between text-xs">
-        <span className="text-[#1D1D1F] font-medium">{label}</span>
+        <span className="text-[#1A1A1A] font-medium">{label}</span>
         <span className="text-[#8E8E93] tabular-nums">{formatValue(value)}</span>
       </div>
       <div className="h-1.5 bg-[#FAF8F5] rounded-full overflow-hidden">
@@ -218,7 +218,7 @@ export function StatusDot({ status }: { status: string }) {
   }
   const c = colors[status] || '#8E8E93'
   return (
-    <span className="inline-flex items-center gap-1.5 text-xs font-medium text-[#1D1D1F]">
+    <span className="inline-flex items-center gap-1.5 text-xs font-medium text-[#1A1A1A]">
       <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: c }} />
       {status}
     </span>

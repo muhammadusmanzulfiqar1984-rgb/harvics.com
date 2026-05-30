@@ -83,7 +83,7 @@ export default function AlertDashboardContent({ persona, locale }: AlertDashboar
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-semibold text-[#1D1D1F]">Alert Dashboard</h3>
+        <h3 className="text-sm font-semibold text-[#1A1A1A]">Alert Dashboard</h3>
         <button className="px-4 py-2 bg-[#6B1F2B] text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
           View All Alerts
         </button>
@@ -113,14 +113,14 @@ export default function AlertDashboardContent({ persona, locale }: AlertDashboar
       </div>
 
       <div className="bg-white rounded-2xl border border-[#E5E5EA] overflow-hidden">
-        <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Recent Alerts</h4>
+        <h4 className="text-sm font-semibold text-[#1A1A1A] mb-4">Recent Alerts</h4>
         <p className="text-black mb-4">Real-time AI-generated alerts and exceptions requiring attention.</p>
         <div className="mt-4 space-y-3">
           {(alertData?.anomalies || []).map((anomaly: any, idx: number) => {
             const severity = anomaly.severity || 'low'
             const bgColor = severity === 'high' || severity === 'critical' ? 'bg-[#F5F5F7]' : severity === 'medium' || severity === 'warning' ? 'bg-[#F5F5F7]' : 'bg-[#F5F5F7]'
             const borderColor = severity === 'high' || severity === 'critical' ? 'border-red-500' : severity === 'medium' || severity === 'warning' ? 'border-yellow-500' : 'border-blue-500'
-            const badgeBg = severity === 'high' || severity === 'critical' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : severity === 'medium' || severity === 'warning' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'
+            const badgeBg = severity === 'high' || severity === 'critical' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : severity === 'medium' || severity === 'warning' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'
             return (
               <div key={idx} className={`p-4 ${bgColor} border-l-4 ${borderColor} rounded`}>
                 <div className="flex items-center justify-between">

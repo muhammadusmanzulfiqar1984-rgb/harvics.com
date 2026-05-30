@@ -62,7 +62,7 @@ export default function PendingReturnsContent({ persona, locale }: PendingReturn
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-semibold text-[#1D1D1F]">Pending Returns</h3>
+        <h3 className="text-sm font-semibold text-[#1A1A1A]">Pending Returns</h3>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -73,10 +73,10 @@ export default function PendingReturnsContent({ persona, locale }: PendingReturn
       </div>
 
       <div className="bg-white border border-black/10 rounded-lg p-6">
-        <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Delayed Deliveries Requiring Attention</h4>
+        <h4 className="text-sm font-semibold text-[#1A1A1A] mb-4">Delayed Deliveries Requiring Attention</h4>
         {delayed.length === 0 ? (
           <div className="text-center py-8">
-            <p className="text-[#1D1D1F] font-semibold text-lg">All Clear</p>
+            <p className="text-[#1A1A1A] font-semibold text-lg">All Clear</p>
             <p className="text-black/60 mt-1">No delayed deliveries. All routes are on track.</p>
           </div>
         ) : (
@@ -99,7 +99,7 @@ export default function PendingReturnsContent({ persona, locale }: PendingReturn
                     <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{route.driver || 'Unassigned'}</td>
                     <td className="py-2 text-black text-xs">{route.eta ? new Date(route.eta).toLocaleDateString() : '—'}</td>
                     <td className="py-2">
-                      <span className="px-2 py-1 bg-[#F5F5F7] text-[#1D1D1F] rounded text-xs">Delayed</span>
+                      <span className="px-2 py-1 bg-[#F5F5F7] text-[#1A1A1A] rounded text-xs">Delayed</span>
                     </td>
                   </tr>
                 ))}
@@ -112,7 +112,7 @@ export default function PendingReturnsContent({ persona, locale }: PendingReturn
       {/* Quick action: Mark any In Transit route as Delayed */}
       {routes.filter((r: any) => r.status === 'In Transit').length > 0 && (
         <div className="bg-white border border-black/10 rounded-lg p-6">
-          <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Flag as Return</h4>
+          <h4 className="text-sm font-semibold text-[#1A1A1A] mb-4">Flag as Return</h4>
           <p className="text-black/60 mb-4">Mark an in-transit delivery as delayed/return-required.</p>
           <div className="space-y-2">
             {routes.filter((r: any) => r.status === 'In Transit').map((route: any) => (
@@ -121,7 +121,7 @@ export default function PendingReturnsContent({ persona, locale }: PendingReturn
                   <span className="font-mono text-xs text-black">{route.routeId}</span>
                   <span className="text-black ml-3">{route.origin} → {route.destination}</span>
                 </div>
-                <button onClick={() => handleMarkDelayed(route.id)} className="text-xs bg-[#F5F5F7] text-[#1D1D1F] px-3 py-1 rounded hover:bg-[#F5F5F7] transition-colors">Flag Delayed</button>
+                <button onClick={() => handleMarkDelayed(route.id)} className="text-xs bg-[#F5F5F7] text-[#1A1A1A] px-3 py-1 rounded hover:bg-[#F5F5F7] transition-colors">Flag Delayed</button>
               </div>
             ))}
           </div>

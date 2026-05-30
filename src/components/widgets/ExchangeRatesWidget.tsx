@@ -66,7 +66,7 @@ export function ExchangeRatesWidget() {
 
   if (loading) return (
     <div className="bg-white rounded-2xl border border-[#EAE0D5] p-5">
-      <p className="text-sm font-semibold text-[#1D1D1F] mb-3">Exchange Rates</p>
+      <p className="text-sm font-semibold text-[#1A1A1A] mb-3">Exchange Rates</p>
       <div className="space-y-2">{[1,2,3,4].map(i => <div key={i} className="h-4 bg-[#FAF8F5] rounded animate-pulse" />)}</div>
     </div>
   )
@@ -75,7 +75,7 @@ export function ExchangeRatesWidget() {
     <div className="bg-white rounded-2xl border border-[#EAE0D5] overflow-hidden">
       <div className="px-5 py-4 border-b border-[#EAE0D5] flex items-center justify-between">
         <div>
-          <h4 className="text-sm font-semibold text-[#1D1D1F]">Live Exchange Rates</h4>
+          <h4 className="text-sm font-semibold text-[#1A1A1A]">Live Exchange Rates</h4>
           <p className="text-[10px] text-[#8E8E93] mt-0.5">Base: USD{lastUpdate ? ` · ${lastUpdate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}` : ''}</p>
         </div>
         <span className="flex items-center gap-1.5 text-xs text-[#34C759] font-medium">
@@ -91,12 +91,12 @@ export function ExchangeRatesWidget() {
               <div className="flex items-center gap-2.5">
                 <span className="text-lg">{r.flag}</span>
                 <div>
-                  <p className="text-sm font-medium text-[#1D1D1F]">{r.code}</p>
+                  <p className="text-sm font-medium text-[#1A1A1A]">{r.code}</p>
                   <p className="text-[10px] text-[#8E8E93]">{r.name}</p>
                 </div>
               </div>
               <div className="text-right">
-                <p className="text-sm font-semibold text-[#1D1D1F] tabular-nums">{r.rate.toFixed(4)}</p>
+                <p className="text-sm font-semibold text-[#1A1A1A] tabular-nums">{r.rate.toFixed(4)}</p>
                 <p className={`text-[10px] font-medium ${up ? 'text-[#34C759]' : 'text-[#FF3B30]'}`}>
                   {up ? '▲' : '▼'} {Math.abs(r.change).toFixed(2)}%
                 </p>

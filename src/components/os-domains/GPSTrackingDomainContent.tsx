@@ -41,11 +41,11 @@ function GPSOverviewScreen() {
         <KPICard label="On-Time Delivery" value={`${gpsData.analytics.onTimeDelivery}%`} icon="⏱️" />
       </div>
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">️ Real-Time Map View</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">️ Real-Time Map View</h4>
         <div className="bg-[#F5F5F7] h-64 flex items-center justify-center border-2 border-dashed border-[#E5E5EA]/30" style={{ borderRadius: 0 }}>
           <div className="text-center">
             <div className="text-4xl mb-2">️</div>
-            <div className="font-semibold text-[#1D1D1F]">Interactive GPS Map</div>
+            <div className="font-semibold text-[#1A1A1A]">Interactive GPS Map</div>
             <div className="text-sm text-[#8E8E93] mt-1">{gpsData.overview.activeVehicles} active vehicles across {gpsData.overview.activeRoutes} routes</div>
           </div>
         </div>
@@ -58,7 +58,7 @@ function VehicleTrackingScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Real-Time Vehicle Tracking</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Real-Time Vehicle Tracking</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -71,10 +71,10 @@ function VehicleTrackingScreen() {
             <tbody>
               {gpsData.vehicles.map((v, i) => (
                 <tr key={v.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{v.id}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{v.id}</td>
                   <td className="px-4 py-3 font-mono text-[#8E8E93]">{v.vehicleNumber}</td>
                   <td className="px-4 py-3">{v.driver}</td>
-                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${v.status === 'In Transit' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : v.status === 'Delivering' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : v.status === 'Returning' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{v.status}</span></td>
+                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${v.status === 'In Transit' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : v.status === 'Delivering' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : v.status === 'Returning' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{v.status}</span></td>
                   <td className="px-4 py-3 text-[#8E8E93]">{v.currentLocation}</td>
                   <td className="px-4 py-3 text-right">{v.speed} km/h</td>
                   <td className="px-4 py-3">{v.destination}</td>
@@ -94,7 +94,7 @@ function RouteManagementScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">️ Route Management</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">️ Route Management</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -107,14 +107,14 @@ function RouteManagementScreen() {
             <tbody>
               {gpsData.routes.map((r, i) => (
                 <tr key={r.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{r.id}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{r.id}</td>
                   <td className="px-4 py-3">{r.name}</td>
                   <td className="px-4 py-3 text-right">{r.distance} km</td>
                   <td className="px-4 py-3 text-right">{r.duration} min</td>
-                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${r.status === 'Active' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{r.status}</span></td>
+                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${r.status === 'Active' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{r.status}</span></td>
                   <td className="px-4 py-3 text-right">{r.vehicles}</td>
                   <td className="px-4 py-3 text-right">{r.deliveries}</td>
-                  <td className="px-4 py-3 text-right font-semibold text-[#1D1D1F]">{r.efficiency}%</td>
+                  <td className="px-4 py-3 text-right font-semibold text-[#1A1A1A]">{r.efficiency}%</td>
                   <td className="px-4 py-3 text-[#8E8E93]">{r.startPoint}</td>
                   <td className="px-4 py-3 text-[#8E8E93]">{r.endPoint}</td>
                 </tr>
@@ -131,11 +131,11 @@ function DistributionNetworkScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Warehouses & Distribution Centers</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Warehouses & Distribution Centers</h4>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {gpsData.warehouses.map(wh => (
             <div key={wh.id} className="border border-[#E5E5EA]/20 p-4" style={{ borderRadius: 0 }}>
-              <div className="font-semibold text-[#1D1D1F] mb-2">{wh.name}</div>
+              <div className="font-semibold text-[#1A1A1A] mb-2">{wh.name}</div>
               <div className="text-sm text-[#8E8E93]">Location: {wh.location}</div>
               <div className="text-sm text-[#8E8E93]">Capacity: {wh.capacity.toLocaleString()} units</div>
               <div className="text-sm text-[#8E8E93]">Stock: {wh.currentStock.toLocaleString()} units</div>

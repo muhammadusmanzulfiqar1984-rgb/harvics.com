@@ -83,7 +83,7 @@ export default function PayrollProcessingContent({ persona, locale }: PayrollPro
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-semibold text-[#1D1D1F]">Payroll Processing</h3>
+        <h3 className="text-sm font-semibold text-[#1A1A1A]">Payroll Processing</h3>
         <button className="px-4 py-2 bg-[#6B1F2B] text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
           Process Payroll
         </button>
@@ -113,7 +113,7 @@ export default function PayrollProcessingContent({ persona, locale }: PayrollPro
       </div>
 
       <div className="bg-white rounded-2xl border border-[#E5E5EA] overflow-hidden">
-        <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Payroll Summary</h4>
+        <h4 className="text-sm font-semibold text-[#1A1A1A] mb-4">Payroll Summary</h4>
         <p className="text-black mb-4">Process and manage employee payroll, bonuses, and incentives.</p>
         <div className="mt-4">
           <table className="w-full text-sm">
@@ -132,7 +132,7 @@ export default function PayrollProcessingContent({ persona, locale }: PayrollPro
                   <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{(run.employeeCount || 0).toLocaleString()}</td>
                   <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{formatCurrency(run.totalAmount || 0)}</td>
                   <td className="py-2">
-                    <span className={`px-2 py-1 rounded text-xs ${run.status === 'Processed' || run.status === 'Completed' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`}>{run.status || 'Pending'}</span>
+                    <span className={`px-2 py-1 rounded text-xs ${run.status === 'Processed' || run.status === 'Completed' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`}>{run.status || 'Pending'}</span>
                   </td>
                 </tr>
               ))}

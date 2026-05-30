@@ -132,7 +132,7 @@ export default function InteractiveWorldMap() {
           <span style={{ color: '#C3A35E', fontSize: 10, fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase' }}>Global Presence</span>
           <div style={{ height: 1, width: 28, background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
         </div>
-        <h2 style={{ color: '#1d1d1f', fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 700, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
+        <h2 style={{ color: '#1A1A1A', fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 700, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
           {offices} Offices.{' '}
           <span style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #6B1F2B 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             {markets}+ Markets.

@@ -26,9 +26,9 @@ export default function TierBreadcrumb({
           <React.Fragment key={i}>
             {i > 0 && <span className="text-[#C7C7CC]">/</span>}
             {isLast || !crumb.href ? (
-              <span className={`font-medium ${isLast ? 'text-[#1D1D1F]' : 'text-[#8E8E93]'}`}>{crumb.label}</span>
+              <span className={`font-medium ${isLast ? 'text-[#1A1A1A]' : 'text-[#8E8E93]'}`}>{crumb.label}</span>
             ) : (
-              <Link href={crumb.href} className="hover:text-[#1D1D1F] transition-colors">{crumb.label}</Link>
+              <Link href={crumb.href} className="hover:text-[#1A1A1A] transition-colors">{crumb.label}</Link>
             )}
           </React.Fragment>
         )

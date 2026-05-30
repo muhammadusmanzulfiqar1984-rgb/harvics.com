@@ -154,7 +154,7 @@ export default function OSLayoutShell({
                           href={child.href}
                           className={`block px-3 py-2 rounded-md text-sm transition-all duration-200 ${
                             isActive(child.href)
-                              ? 'bg-[#6B1F2B] text-[#1D1D1F] font-bold shadow-lg transform translate-x-1'
+                              ? 'bg-[#6B1F2B] text-[#1A1A1A] font-bold shadow-lg transform translate-x-1'
                               : 'text-[#C3A35E]/70 hover:text-[#C3A35E] hover:bg-[#F5F5F7]'
                           }`}
                         >
@@ -201,16 +201,16 @@ export default function OSLayoutShell({
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <span className="text-2xl drop-shadow-sm">{domainIcon}</span>
-              <h1 className="text-xl font-semibold text-[#1D1D1F]  tracking-wide">{domainName}</h1>
+              <h1 className="text-xl font-semibold text-[#1A1A1A]  tracking-wide">{domainName}</h1>
             </div>
             {countryData && (
               <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-white/20 rounded-lg border border-[#6B1F2B]/10 backdrop-blur-sm">
                 <span className="text-xs text-[#8E8E93] font-semibold uppercase">Country:</span>
-                <span className="text-sm font-semibold text-[#1D1D1F]">{countryData.countryName || selectedCountry}</span>
+                <span className="text-sm font-semibold text-[#1A1A1A]">{countryData.countryName || selectedCountry}</span>
                 {countryData.currency && (
                   <>
                     <span className="text-[#8E8E93]">•</span>
-                    <span className="text-sm text-[#1D1D1F] font-bold">{countryData.currency.symbol} {countryData.currency.code}</span>
+                    <span className="text-sm text-[#1A1A1A] font-bold">{countryData.currency.symbol} {countryData.currency.code}</span>
                   </>
                 )}
               </div>
@@ -235,10 +235,10 @@ export default function OSLayoutShell({
               {notificationsOpen && (
                 <div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-[#E5E5EA]/30 z-50 ring-1 ring-[#6B1F2B]/5">
                   <div className="p-4 border-b border-gray-100 bg-[#F5F5F7]">
-                    <h3 className="font-semibold text-[#1D1D1F]">Notifications</h3>
+                    <h3 className="font-semibold text-[#1A1A1A]">Notifications</h3>
                   </div>
                   <div className="max-h-96 overflow-y-auto">
-                    <div className="p-4 text-sm text-[#1D1D1F]">No new notifications</div>
+                    <div className="p-4 text-sm text-[#1A1A1A]">No new notifications</div>
                   </div>
                 </div>
               )}
@@ -257,19 +257,19 @@ export default function OSLayoutShell({
                 <div className="w-8 h-8 rounded-full bg-[#6B1F2B] flex items-center justify-center text-[#C3A35E] font-bold text-sm border-2 border-[#E5E5EA]">
                   {username.charAt(0).toUpperCase()}
                 </div>
-                <span className="text-sm font-semibold text-[#1D1D1F] hidden md:inline">{username}</span>
+                <span className="text-sm font-semibold text-[#1A1A1A] hidden md:inline">{username}</span>
               </button>
               {userMenuOpen && (
                 <div className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-[#E5E5EA]/30 z-50 ring-1 ring-[#6B1F2B]/5">
                   <div className="p-2">
                     <div className="px-4 py-3 border-b border-gray-100 bg-[#F5F5F7]">
-                      <div className="font-semibold text-[#1D1D1F] text-sm">Logged in as</div>
-                      <div className="text-xs text-[#1D1D1F] mt-0.5 font-medium">{username}</div>
+                      <div className="font-semibold text-[#1A1A1A] text-sm">Logged in as</div>
+                      <div className="text-xs text-[#1A1A1A] mt-0.5 font-medium">{username}</div>
                     </div>
                     <div className="my-1">
                       <button 
                         onClick={handleLogout}
-                        className="w-full text-left px-4 py-2 text-sm text-[#1D1D1F] hover:bg-[#6B1F2B]/5 rounded-md transition-colors font-medium flex items-center gap-2"
+                        className="w-full text-left px-4 py-2 text-sm text-[#1A1A1A] hover:bg-[#6B1F2B]/5 rounded-md transition-colors font-medium flex items-center gap-2"
                       >
                         <span></span> Logout
                       </button>

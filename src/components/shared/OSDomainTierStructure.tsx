@@ -541,7 +541,7 @@ export default function OSDomainTierStructure({
               {activeAction && currentScreen.tier4Actions?.find(a => a.id === activeAction) && (
                 <div className="mx-6 mb-6 p-3 bg-[#F0EAE1] rounded-xl flex items-center gap-2">
                   <span className="text-[#34C759] text-sm">✓</span>
-                  <p className="text-sm text-[#1D1D1F]">
+                  <p className="text-sm text-[#1A1A1A]">
                     {currentScreen.tier4Actions.find(a => a.id === activeAction)?.label} — done
                   </p>
                 </div>
@@ -553,7 +553,7 @@ export default function OSDomainTierStructure({
             <>
               {currentModule?.description && (
                 <div className="p-6 border-b border-[#EAE0D5]">
-                  <h3 className="text-sm font-semibold text-[#1D1D1F] mb-1">{currentModule.label}</h3>
+                  <h3 className="text-sm font-semibold text-[#1A1A1A] mb-1">{currentModule.label}</h3>
                   <p className="text-sm text-[#8E8E93]">{currentModule.description}</p>
                 </div>
               )}
@@ -602,7 +602,7 @@ export default function OSDomainTierStructure({
               >
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-sm">{alert.icon}</span>
-                  <span className="text-[10px] font-black text-[#1D1D1F] leading-tight">{alert.title}</span>
+                  <span className="text-[10px] font-black text-[#1A1A1A] leading-tight">{alert.title}</span>
                   <span className={`ml-auto w-1.5 h-1.5 rounded-full flex-shrink-0 ${urgencyDot[alert.urgency]}`}></span>
                 </div>
                 {(aiActive === i || highlightIdx === i) && (

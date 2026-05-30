@@ -22,11 +22,11 @@ export default function FinancialPlanningBIDomainContent({ persona, locale }: Fi
           icon: '',
           component: (
             <div className="p-6 space-y-4">
-              <h3 className="text-xl font-semibold text-[#1D1D1F]">Forecast Overview</h3>
+              <h3 className="text-xl font-semibold text-[#1A1A1A]">Forecast Overview</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[{ label: 'Revenue Forecast', value: '$18.4M' }, { label: 'OpEx Forecast', value: '$6.9M' }, { label: 'Variance', value: '-3.1%' }, { label: 'Forecast Accuracy', value: '91.2%' }].map((k) => (
                   <div key={k.label} className="border border-[#E5E5EA] p-4" style={{ borderRadius: 0 }}>
-                    <div className="text-xl font-semibold text-[#1D1D1F]">{k.value}</div>
+                    <div className="text-xl font-semibold text-[#1A1A1A]">{k.value}</div>
                     <div className="text-xs text-[#8E8E93] mt-1">{k.label}</div>
                   </div>
                 ))}
@@ -48,7 +48,7 @@ export default function FinancialPlanningBIDomainContent({ persona, locale }: Fi
           icon: '',
           component: (
             <div className="p-6 space-y-4">
-              <h3 className="text-xl font-semibold text-[#1D1D1F]">Report Library</h3>
+              <h3 className="text-xl font-semibold text-[#1A1A1A]">Report Library</h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
@@ -62,10 +62,10 @@ export default function FinancialPlanningBIDomainContent({ persona, locale }: Fi
                   <tbody>
                     {[{ name: 'Executive Weekly Board Pack', owner: 'FP&A', cadence: 'Weekly', status: 'Ready' }, { name: 'Country P&L Variance', owner: 'Finance Control', cadence: 'Monthly', status: 'Ready' }, { name: 'Cash Flow Forecast 13W', owner: 'Treasury Office', cadence: 'On Demand', status: 'Draft' }].map((r, i) => (
                       <tr key={r.name} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                        <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{r.name}</td>
+                        <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{r.name}</td>
                         <td className="px-4 py-3">{r.owner}</td>
                         <td className="px-4 py-3">{r.cadence}</td>
-                        <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs bg-[#1D1D1F] text-white" style={{ borderRadius: 0 }}>{r.status}</span></td>
+                        <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs bg-[#1A1A1A] text-white" style={{ borderRadius: 0 }}>{r.status}</span></td>
                       </tr>
                     ))}
                   </tbody>

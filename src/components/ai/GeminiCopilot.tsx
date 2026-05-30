@@ -91,7 +91,7 @@ export default function GeminiCopilot() {
       {/* Floating trigger button */}
       <button
         onClick={() => setOpen(o => !o)}
-        className={`fixed bottom-6 right-6 z-[2000] w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 ${open ? 'bg-[#1D1D1F] rotate-45' : 'bg-[#6B1F2B]'}`}
+        className={`fixed bottom-6 right-6 z-[2000] w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 ${open ? 'bg-[#1A1A1A] rotate-45' : 'bg-[#6B1F2B]'}`}
         aria-label="HARVICS AI Copilot"
       >
         {open ? (
@@ -127,7 +127,7 @@ export default function GeminiCopilot() {
                 <div className={`max-w-[85%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed ${
                   m.role === 'user'
                     ? 'bg-[#6B1F2B] text-white rounded-br-sm'
-                    : 'bg-white text-[#1D1D1F] border border-[#E5E5EA] rounded-bl-sm shadow-sm'
+                    : 'bg-white text-[#1A1A1A] border border-[#E5E5EA] rounded-bl-sm shadow-sm'
                 }`}>
                   {m.text}
                   <p className={`text-[9px] mt-1 ${m.role === 'user' ? 'text-white/50 text-right' : 'text-[#C7C7CC]'}`}>
@@ -170,7 +170,7 @@ export default function GeminiCopilot() {
               onChange={e => setInput(e.target.value)}
               onKeyDown={e => e.key === 'Enter' && !e.shiftKey && send()}
               placeholder="Ask about orders, inventory, KPIs…"
-              className="flex-1 bg-[#FAF8F5] rounded-xl px-3 py-2 text-sm text-[#1D1D1F] outline-none placeholder:text-[#C7C7CC] focus:ring-2 focus:ring-[#6B1F2B]/20"
+              className="flex-1 bg-[#FAF8F5] rounded-xl px-3 py-2 text-sm text-[#1A1A1A] outline-none placeholder:text-[#C7C7CC] focus:ring-2 focus:ring-[#6B1F2B]/20"
             />
             <button onClick={send} disabled={!input.trim() || loading}
               className="w-9 h-9 bg-[#6B1F2B] rounded-xl flex items-center justify-center disabled:opacity-40 hover:bg-[#5a1a24] transition-colors flex-shrink-0">

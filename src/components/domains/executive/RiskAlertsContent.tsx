@@ -86,7 +86,7 @@ export default function RiskAlertsContent({ persona, locale }: RiskAlertsContent
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-semibold text-[#1D1D1F]">Risk Alerts</h3>
+        <h3 className="text-sm font-semibold text-[#1A1A1A]">Risk Alerts</h3>
         <button className="px-4 py-2 bg-[#6B1F2B] text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
           View Risk Report
         </button>
@@ -116,14 +116,14 @@ export default function RiskAlertsContent({ persona, locale }: RiskAlertsContent
       </div>
 
       <div className="bg-white rounded-2xl border border-[#E5E5EA] overflow-hidden">
-        <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Risk Assessment</h4>
+        <h4 className="text-sm font-semibold text-[#1A1A1A] mb-4">Risk Assessment</h4>
         <p className="text-black mb-4">Critical risk alerts and fraud detection monitoring.</p>
         <div className="mt-4 space-y-3">
           {(riskData?.insights || []).filter((i: any) => i.type === 'alert' || i.type === 'anomaly').map((insight: any, idx: number) => {
             const severity = insight.severity || (insight.type === 'anomaly' ? 'medium' : 'low')
             const bgColor = severity === 'high' ? 'bg-[#F5F5F7]' : severity === 'medium' ? 'bg-[#F5F5F7]' : 'bg-[#F5F5F7]'
             const borderColor = severity === 'high' ? 'border-red-500' : severity === 'medium' ? 'border-yellow-500' : 'border-green-500'
-            const badgeBg = severity === 'high' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : severity === 'medium' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'
+            const badgeBg = severity === 'high' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : severity === 'medium' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'
             return (
               <div key={idx} className={`p-4 ${bgColor} border-l-4 ${borderColor} rounded`}>
                 <div className="flex items-center justify-between">
@@ -143,7 +143,7 @@ export default function RiskAlertsContent({ persona, locale }: RiskAlertsContent
                   <p className="font-semibold text-black">{rec.message}</p>
                   {rec.impact && <p className="text-sm text-black/70">Impact: {rec.impact}</p>}
                 </div>
-                <span className="px-2 py-1 bg-[#F5F5F7] text-[#1D1D1F] rounded text-xs">Recommendation</span>
+                <span className="px-2 py-1 bg-[#F5F5F7] text-[#1A1A1A] rounded text-xs">Recommendation</span>
               </div>
             </div>
           ))}

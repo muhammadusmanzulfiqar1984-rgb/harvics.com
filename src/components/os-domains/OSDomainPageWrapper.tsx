@@ -99,7 +99,7 @@ export default function OSDomainPageWrapper({
                   >
                     Tier 1: OS Domain
                   </span>
-                  <h1 className="text-3xl font-semibold text-[#1D1D1F] ">{title}</h1>
+                  <h1 className="text-3xl font-semibold text-[#1A1A1A] ">{title}</h1>
                 </div>
               )
             })()}

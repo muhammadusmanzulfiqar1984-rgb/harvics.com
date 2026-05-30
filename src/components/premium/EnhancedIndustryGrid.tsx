@@ -238,7 +238,7 @@ const EnhancedIndustryGrid: React.FC = () => {
                     </div>
                     <h3 style={{
                       fontSize: '22px', fontWeight: 600, letterSpacing: '-0.02em',
-                      color: hasImage ? '#fff' : '#1d1d1f',
+                      color: hasImage ? '#fff' : '#1A1A1A',
                       fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
                       marginBottom: '6px',
                     }}>

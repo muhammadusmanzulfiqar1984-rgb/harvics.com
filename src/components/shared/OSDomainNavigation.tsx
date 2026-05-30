@@ -84,7 +84,7 @@ export default function OSDomainNavigation() {
                 className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-100 ${
                   active
                     ? 'bg-[#6B1F2B] text-white'
-                    : 'text-[#1D1D1F] hover:bg-[#FAF8F5]'
+                    : 'text-[#1A1A1A] hover:bg-[#FAF8F5]'
                 }`}
               >
                 <span className={`flex-shrink-0 ${active ? 'opacity-100' : 'opacity-50'}`}>

@@ -87,7 +87,7 @@ function IPRPortfolioScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Trademarks</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Trademarks</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -98,9 +98,9 @@ function IPRPortfolioScreen() {
             <tbody>
               {legalData.ipr.trademarks.map((tm, i) => (
                 <tr key={tm.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{tm.id}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{tm.id}</td>
                   <td className="px-4 py-3">{tm.name}</td>
-                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${tm.status === 'Active' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{tm.status}</span></td>
+                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${tm.status === 'Active' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{tm.status}</span></td>
                   <td className="px-4 py-3 text-[#8E8E93]">{tm.registrationDate}</td>
                   <td className="px-4 py-3 text-[#8E8E93]">{tm.expiryDate}</td>
                   <td className="px-4 py-3 text-[#8E8E93]">{tm.class}</td>
@@ -111,7 +111,7 @@ function IPRPortfolioScreen() {
         </div>
       </div>
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Patents</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Patents</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -122,9 +122,9 @@ function IPRPortfolioScreen() {
             <tbody>
               {legalData.ipr.patents.map((pat, i) => (
                 <tr key={pat.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{pat.id}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{pat.id}</td>
                   <td className="px-4 py-3">{pat.title}</td>
-                  <td className="px-4 py-3"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1D1D1F]" style={{ borderRadius: 0 }}>{pat.status}</span></td>
+                  <td className="px-4 py-3"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{pat.status}</span></td>
                   <td className="px-4 py-3 font-mono text-[#8E8E93]">{pat.number}</td>
                   <td className="px-4 py-3 text-[#8E8E93]">{pat.filingDate}</td>
                   <td className="px-4 py-3 text-[#8E8E93]">{pat.expiryDate}</td>
@@ -148,7 +148,7 @@ function CounterfeitScreen() {
         <KPICard label="Resolution Rate" value={`${Math.round((legalData.counterfeit.resolved / legalData.counterfeit.totalReports) * 100)}%`} icon="" />
       </div>
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Active Counterfeit Cases</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Active Counterfeit Cases</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -159,12 +159,12 @@ function CounterfeitScreen() {
             <tbody>
               {legalData.counterfeit.cases.map((c, i) => (
                 <tr key={c.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{c.id}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{c.id}</td>
                   <td className="px-4 py-3">{c.product}</td>
                   <td className="px-4 py-3">{c.location}</td>
                   <td className="px-4 py-3 text-[#8E8E93]">{c.reportedDate}</td>
-                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${c.status === 'Resolved' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : c.status === 'Legal Action Initiated' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{c.status}</span></td>
-                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${c.severity === 'Critical' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : c.severity === 'High' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{c.severity}</span></td>
+                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${c.status === 'Resolved' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : c.status === 'Legal Action Initiated' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{c.status}</span></td>
+                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${c.severity === 'Critical' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : c.severity === 'High' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{c.severity}</span></td>
                 </tr>
               ))}
             </tbody>
@@ -179,7 +179,7 @@ function ComplianceScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Country Compliance Status</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Country Compliance Status</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -190,11 +190,11 @@ function ComplianceScreen() {
             <tbody>
               {legalData.compliance.countries.map((c, i) => (
                 <tr key={c.country} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{c.country}</td>
-                  <td className="px-4 py-3"><span className="font-semibold text-[#1D1D1F]">{c.complianceScore}%</span></td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{c.country}</td>
+                  <td className="px-4 py-3"><span className="font-semibold text-[#1A1A1A]">{c.complianceScore}%</span></td>
                   <td className="px-4 py-3 text-[#8E8E93]">{c.lastAudit}</td>
                   <td className="px-4 py-3 text-[#8E8E93]">{c.nextAudit}</td>
-                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${c.issues === 0 ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{c.issues}</span></td>
+                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${c.issues === 0 ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{c.issues}</span></td>
                 </tr>
               ))}
             </tbody>
@@ -202,12 +202,12 @@ function ComplianceScreen() {
         </div>
       </div>
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Regulatory Compliance Checklist</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Regulatory Compliance Checklist</h4>
         <div className="space-y-3">
           {legalData.compliance.regulations.map((reg, idx) => (
             <div key={idx} className="flex items-center justify-between p-3 border border-[#E5E5EA]/20" style={{ borderRadius: 0 }}>
-              <div><div className="font-semibold text-[#1D1D1F]">{reg.name}</div><div className="text-sm text-[#8E8E93]">Last Check: {reg.lastCheck}</div></div>
-              <span className={`px-3 py-1 text-sm font-bold ${reg.status === 'Compliant' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{reg.status}</span>
+              <div><div className="font-semibold text-[#1A1A1A]">{reg.name}</div><div className="text-sm text-[#8E8E93]">Last Check: {reg.lastCheck}</div></div>
+              <span className={`px-3 py-1 text-sm font-bold ${reg.status === 'Compliant' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{reg.status}</span>
             </div>
           ))}
         </div>
@@ -226,7 +226,7 @@ function ContractsScreen() {
         <KPICard label="Total Value" value="$9.5M" icon="" />
       </div>
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Active Contracts</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Active Contracts</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -238,13 +238,13 @@ function ContractsScreen() {
             <tbody>
               {legalData.contracts.contracts.map((c, i) => (
                 <tr key={c.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{c.id}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{c.id}</td>
                   <td className="px-4 py-3">{c.type}</td>
                   <td className="px-4 py-3">{c.party}</td>
                   <td className="px-4 py-3 text-[#8E8E93]">{c.startDate}</td>
                   <td className="px-4 py-3 text-[#8E8E93]">{c.endDate}</td>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{c.value}</td>
-                  <td className="px-4 py-3"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1D1D1F]" style={{ borderRadius: 0 }}>{c.status}</span></td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{c.value}</td>
+                  <td className="px-4 py-3"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{c.status}</span></td>
                 </tr>
               ))}
             </tbody>
@@ -265,7 +265,7 @@ function LitigationScreen() {
         <KPICard label="Contract Disputes" value={1} icon="" />
       </div>
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Active Litigation Cases</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Active Litigation Cases</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -276,11 +276,11 @@ function LitigationScreen() {
             <tbody>
               {legalData.litigation.cases.map((c, i) => (
                 <tr key={c.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{c.id}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{c.id}</td>
                   <td className="px-4 py-3">{c.title}</td>
-                  <td className="px-4 py-3"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1D1D1F]" style={{ borderRadius: 0 }}>{c.type}</span></td>
+                  <td className="px-4 py-3"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{c.type}</span></td>
                   <td className="px-4 py-3 text-[#8E8E93]">{c.filedDate}</td>
-                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${c.status === 'In Progress' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : c.status === 'Settlement Negotiation' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{c.status}</span></td>
+                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${c.status === 'In Progress' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : c.status === 'Settlement Negotiation' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{c.status}</span></td>
                   <td className="px-4 py-3 text-[#8E8E93]">{c.nextHearing}</td>
                 </tr>
               ))}

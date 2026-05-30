@@ -43,22 +43,22 @@ function InvestorOverviewScreen() {
         <KPICard label="Dividend Yield" value={investorData.overview.dividendYield} icon="" />
       </div>
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Stock Performance</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Stock Performance</h4>
         <div className="bg-[#F5F5F7] h-48 flex items-center justify-center border-2 border-dashed border-[#E5E5EA]/30" style={{ borderRadius: 0 }}>
           <div className="text-center">
             <div className="text-3xl mb-2"></div>
-            <div className="font-semibold text-[#1D1D1F]">Interactive Stock Chart</div>
+            <div className="font-semibold text-[#1A1A1A]">Interactive Stock Chart</div>
             <div className="text-sm text-[#8E8E93]">HRVC — ${investorData.overview.stockPrice} ({investorData.overview.change24h})</div>
           </div>
         </div>
       </div>
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Latest News</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Latest News</h4>
         <div className="space-y-4">
           {investorData.news.map((n, i) => (
             <div key={i} className="border-b border-[#E5E5EA]/20 pb-4 last:border-0">
               <div className="text-xs text-[#8E8E93]">{n.date}</div>
-              <div className="font-semibold text-[#1D1D1F]">{n.title}</div>
+              <div className="font-semibold text-[#1A1A1A]">{n.title}</div>
               <div className="text-sm text-[#8E8E93]">{n.summary}</div>
             </div>
           ))}
@@ -72,7 +72,7 @@ function FinancialResultsScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Quarterly Financial Results</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Quarterly Financial Results</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -83,10 +83,10 @@ function FinancialResultsScreen() {
             <tbody>
               {investorData.financials.quarterly.map((q, i) => (
                 <tr key={q.quarter} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{q.quarter}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{q.quarter}</td>
                   <td className="px-4 py-3 text-right">${(q.revenue / 1e6).toFixed(1)}M</td>
                   <td className="px-4 py-3 text-right">${(q.netIncome / 1e6).toFixed(1)}M</td>
-                  <td className="px-4 py-3 text-right font-semibold text-[#1D1D1F]">${q.eps.toFixed(2)}</td>
+                  <td className="px-4 py-3 text-right font-semibold text-[#1A1A1A]">${q.eps.toFixed(2)}</td>
                   <td className="px-4 py-3 text-right">{q.margin}%</td>
                 </tr>
               ))}
@@ -102,16 +102,16 @@ function ReportsScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Annual Reports & Filings</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Annual Reports & Filings</h4>
         <div className="space-y-4">
           {investorData.reports.map((r, i) => (
             <div key={i} className="flex items-center justify-between p-4 border border-[#E5E5EA]/20" style={{ borderRadius: 0 }}>
               <div>
-                <div className="font-semibold text-[#1D1D1F]">{r.title}</div>
+                <div className="font-semibold text-[#1A1A1A]">{r.title}</div>
                 <div className="text-sm text-[#8E8E93]">{r.type} | {r.date}</div>
               </div>
               <div className="flex items-center gap-2">
-                <span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1D1D1F]" style={{ borderRadius: 0 }}>{r.status}</span>
+                <span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{r.status}</span>
                 <button className="px-4 py-2 text-sm font-bold text-white" style={{ background: '#6B1F2B', borderRadius: 0 }}>Download PDF</button>
               </div>
             </div>

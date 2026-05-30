@@ -42,7 +42,7 @@ export default function APContent() {
         <KPICard label="Active Suppliers" value={new Set(pos.map(p => p.supplier)).size} icon="🏭" />
       </div>
 
-      <h4 className="text-lg font-semibold text-[#1D1D1F]">Purchase Orders ({pos.length})</h4>
+      <h4 className="text-lg font-semibold text-[#1A1A1A]">Purchase Orders ({pos.length})</h4>
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
@@ -57,11 +57,11 @@ export default function APContent() {
           <tbody>
             {pos.map((po, i) => (
               <tr key={po.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F0E8]/50'}>
-                <td className="px-4 py-3 font-mono font-semibold text-[#1D1D1F]">{po.poNumber}</td>
+                <td className="px-4 py-3 font-mono font-semibold text-[#1A1A1A]">{po.poNumber}</td>
                 <td className="px-4 py-3 text-[#6B1F2B]">{po.supplier}</td>
                 <td className="px-4 py-3 text-right font-bold">{po.currency} {po.total.toLocaleString()}</td>
                 <td className="px-4 py-3 text-center">
-                  <span className={`px-2 py-1 text-xs font-bold ${po.status === 'Approved' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{po.status}</span>
+                  <span className={`px-2 py-1 text-xs font-bold ${po.status === 'Approved' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{po.status}</span>
                 </td>
                 <td className="px-4 py-3 text-[#8E8E93]">{po.expectedDate}</td>
               </tr>
@@ -74,7 +74,7 @@ export default function APContent() {
         <div className="flex items-start gap-3">
           <span className="text-xl">🤖</span>
           <div>
-            <h5 className="font-semibold text-[#1D1D1F] text-sm">AI Payables Insight</h5>
+            <h5 className="font-semibold text-[#1A1A1A] text-sm">AI Payables Insight</h5>
             <p className="text-[#8E8E93] text-sm mt-1">
               Vietnam Textiles Co has 96% on-time delivery. Consider negotiating 5% volume discount on next PO.
               Brazil Coffee Exports PO awaiting approval — coffee prices expected to rise 8% in Q2.

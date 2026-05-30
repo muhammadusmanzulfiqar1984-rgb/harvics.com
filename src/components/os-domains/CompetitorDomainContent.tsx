@@ -45,7 +45,7 @@ function MarketShareScreen() {
         <KPICard label="Competitive Gap" value={`${Math.max(0, topCompetitor.share - harvicsShare).toFixed(1)}%`} icon="" />
       </div>
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Competitor Pricing & Focus</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Competitor Pricing & Focus</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -56,14 +56,14 @@ function MarketShareScreen() {
             <tbody>
               {competitorData.competitors.map((c, i) => (
                 <tr key={c.name} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{c.name}</td>
-                  <td className="px-4 py-3 text-right font-semibold text-[#1D1D1F]">{c.share}%</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{c.name}</td>
+                  <td className="px-4 py-3 text-right font-semibold text-[#1A1A1A]">{c.share}%</td>
                   <td className="px-4 py-3 text-[#8E8E93]">{c.focus}</td>
                 </tr>
               ))}
               <tr className="bg-[#F5F5F7] border-t-2 border-[#E5E5EA]">
-                <td className="px-4 py-3 font-semibold text-[#1D1D1F]">Harvics (You)</td>
-                <td className="px-4 py-3 text-right font-semibold text-[#1D1D1F]">{harvicsShare.toFixed(1)}%</td>
+                <td className="px-4 py-3 font-semibold text-[#1A1A1A]">Harvics (You)</td>
+                <td className="px-4 py-3 text-right font-semibold text-[#1A1A1A]">{harvicsShare.toFixed(1)}%</td>
                 <td className="px-4 py-3 text-[#8E8E93]">FMCG, multi-vertical, AI-powered</td>
               </tr>
             </tbody>
@@ -78,7 +78,7 @@ function ProductTrackingScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Product Price Comparison</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Product Price Comparison</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -89,12 +89,12 @@ function ProductTrackingScreen() {
             <tbody>
               {competitorData.products.map((p, i) => (
                 <tr key={p.name} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{p.name}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{p.name}</td>
                   <td className="px-4 py-3">{p.competitor}</td>
-                  <td className="px-4 py-3"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1D1D1F]" style={{ borderRadius: 0 }}>{p.category}</span></td>
+                  <td className="px-4 py-3"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{p.category}</span></td>
                   <td className="px-4 py-3 text-right">${p.price.toFixed(2)}</td>
-                  <td className="px-4 py-3 text-right font-semibold text-[#1D1D1F]">${p.ourPrice.toFixed(2)}</td>
-                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${p.change.startsWith('-') ? 'bg-[#F5F5F7] text-[#1D1D1F]' : p.change === '0%' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{p.change}</span></td>
+                  <td className="px-4 py-3 text-right font-semibold text-[#1A1A1A]">${p.ourPrice.toFixed(2)}</td>
+                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${p.change.startsWith('-') ? 'bg-[#F5F5F7] text-[#1A1A1A]' : p.change === '0%' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{p.change}</span></td>
                 </tr>
               ))}
             </tbody>
@@ -116,10 +116,10 @@ function SWOTScreen() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {sections.map(s => (
         <div key={s.title} className={`border p-6 ${s.color}`} style={{ borderRadius: 0 }}>
-          <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">{s.icon} {s.title}</h4>
+          <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">{s.icon} {s.title}</h4>
           <ul className="space-y-2">
             {s.items.map((item, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-[#1D1D1F]">
+              <li key={i} className="flex items-start gap-2 text-sm text-[#1A1A1A]">
                 <span className="text-[#C3A35E] mt-1">•</span>{item}
               </li>
             ))}

@@ -210,12 +210,12 @@ export default function OrdersDomainContent({ persona, locale }: OrdersDomainCon
           icon: '',
           component: (
             <div className="p-6 space-y-6">
-              <h3 className="text-xl font-semibold text-[#1D1D1F] mb-4">Order Fulfillment Pipeline</h3>
+              <h3 className="text-xl font-semibold text-[#1A1A1A] mb-4">Order Fulfillment Pipeline</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {[{ step: 'Order Received', count: 12, color: 'bg-[#F5F5F7] text-[#1D1D1F]' }, { step: 'Inventory Check', count: 8, color: 'bg-[#F5F5F7] text-[#1D1D1F]' }, { step: 'Payment Verified', count: 15, color: 'bg-[#F5F5F7] text-[#1D1D1F]' }, { step: 'Shipped', count: 23, color: 'bg-[#F5F5F7] text-[#1D1D1F]' }].map(s => (
+                {[{ step: 'Order Received', count: 12, color: 'bg-[#F5F5F7] text-[#1A1A1A]' }, { step: 'Inventory Check', count: 8, color: 'bg-[#F5F5F7] text-[#1A1A1A]' }, { step: 'Payment Verified', count: 15, color: 'bg-[#F5F5F7] text-[#1A1A1A]' }, { step: 'Shipped', count: 23, color: 'bg-[#F5F5F7] text-[#1A1A1A]' }].map(s => (
                   <div key={s.step} className="border border-[#E5E5EA]/30 p-4" style={{ borderRadius: 0 }}>
                     <div className="text-sm text-[#8E8E93]">{s.step}</div>
-                    <div className="text-2xl font-semibold text-[#1D1D1F]">{s.count}</div>
+                    <div className="text-2xl font-semibold text-[#1A1A1A]">{s.count}</div>
                     <span className={`px-2 py-1 text-xs font-bold ${s.color}`} style={{ borderRadius: 0 }}>Active</span>
                   </div>
                 ))}
@@ -232,13 +232,13 @@ export default function OrdersDomainContent({ persona, locale }: OrdersDomainCon
           icon: '',
           component: (
             <div className="p-6 space-y-4">
-              <h3 className="text-xl font-semibold text-[#1D1D1F] mb-4">SKU Price Band Management</h3>
+              <h3 className="text-xl font-semibold text-[#1A1A1A] mb-4">SKU Price Band Management</h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]"><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">SKU</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Product</th><th className="px-5 py-3 text-right text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Min Price</th><th className="px-5 py-3 text-right text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Max Price</th><th className="px-5 py-3 text-right text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Current</th><th className="px-5 py-3 text-center text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Band</th></tr></thead>
                   <tbody>
                     {[{ sku: 'HRV-BEV-001', product: 'Harvics Cola 500ml', min: 1.50, max: 2.50, current: 2.10, band: 'Premium' }, { sku: 'HRV-SNK-001', product: 'Harvics Chips 150g', min: 2.00, max: 3.50, current: 2.80, band: 'Standard' }, { sku: 'HRV-WTR-001', product: 'Harvics Pure Water 1L', min: 0.80, max: 1.50, current: 1.10, band: 'Economy' }].map((s, i) => (
-                      <tr key={s.sku} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}><td className="px-4 py-3 font-mono text-[#6B1F2B]">{s.sku}</td><td className="px-4 py-3">{s.product}</td><td className="px-4 py-3 text-right">${s.min.toFixed(2)}</td><td className="px-4 py-3 text-right">${s.max.toFixed(2)}</td><td className="px-4 py-3 text-right font-semibold text-[#1D1D1F]">${s.current.toFixed(2)}</td><td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1D1D1F]" style={{ borderRadius: 0 }}>{s.band}</span></td></tr>
+                      <tr key={s.sku} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}><td className="px-4 py-3 font-mono text-[#6B1F2B]">{s.sku}</td><td className="px-4 py-3">{s.product}</td><td className="px-4 py-3 text-right">${s.min.toFixed(2)}</td><td className="px-4 py-3 text-right">${s.max.toFixed(2)}</td><td className="px-4 py-3 text-right font-semibold text-[#1A1A1A]">${s.current.toFixed(2)}</td><td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{s.band}</span></td></tr>
                     ))}
                   </tbody>
                 </table>

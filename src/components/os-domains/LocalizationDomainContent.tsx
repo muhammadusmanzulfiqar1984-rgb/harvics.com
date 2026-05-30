@@ -48,15 +48,15 @@ function LocalizationOverviewScreen() {
       </div>
       <div className="bg-[#F5F5F7] border-l-4 border-[#E5E5EA] p-4" style={{ borderRadius: 0 }}>
         <div className="text-sm text-[#8E8E93]">Last Synchronization</div>
-        <div className="text-lg font-semibold text-[#1D1D1F]">{localizationData.overview.lastSync}</div>
+        <div className="text-lg font-semibold text-[#1A1A1A]">{localizationData.overview.lastSync}</div>
       </div>
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">8-Level Geographic Hierarchy</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">8-Level Geographic Hierarchy</h4>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {['Global', 'Region', 'Country', 'City', 'District', 'Area', 'Zone', 'Location'].map((level, i) => (
             <div key={level} className="p-4 bg-[#F5F5F7] border border-[#E5E5EA]/20" style={{ borderRadius: 0 }}>
-              <div className="text-xs font-semibold text-[#1D1D1F]/50 uppercase">Level {i + 1}</div>
-              <div className="text-lg font-semibold text-[#1D1D1F]">{level}</div>
+              <div className="text-xs font-semibold text-[#1A1A1A]/50 uppercase">Level {i + 1}</div>
+              <div className="text-lg font-semibold text-[#1A1A1A]">{level}</div>
             </div>
           ))}
         </div>
@@ -69,7 +69,7 @@ function MultiCurrencyScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Exchange Rates</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Exchange Rates</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -79,7 +79,7 @@ function MultiCurrencyScreen() {
             <tbody>
               {currencies.map((c, i) => (
                 <tr key={c.code} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{c.name}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{c.name}</td>
                   <td className="px-4 py-3 font-mono">{c.code}</td>
                   <td className="px-4 py-3 text-center">{c.symbol}</td>
                   <td className="px-4 py-3 text-right">{c.rate.toFixed(4)}</td>
@@ -97,7 +97,7 @@ function TaxConfigScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Country Tax Configurations</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Country Tax Configurations</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -108,11 +108,11 @@ function TaxConfigScreen() {
             <tbody>
               {localizationData.taxConfigurations.map((t, i) => (
                 <tr key={t.country} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{t.country}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{t.country}</td>
                   <td className="px-4 py-3 text-right">{t.vat}%</td>
                   <td className="px-4 py-3 text-right">{t.gst}%</td>
                   <td className="px-4 py-3 text-right">{t.importDuty}%</td>
-                  <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1D1D1F]" style={{ borderRadius: 0 }}>{t.status}</span></td>
+                  <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{t.status}</span></td>
                 </tr>
               ))}
             </tbody>
@@ -127,7 +127,7 @@ function BusinessRulesScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Country-Specific Business Rules</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Country-Specific Business Rules</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -138,12 +138,12 @@ function BusinessRulesScreen() {
             <tbody>
               {localizationData.businessRules.map((r, i) => (
                 <tr key={r.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{r.id}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{r.id}</td>
                   <td className="px-4 py-3">{r.name}</td>
                   <td className="px-4 py-3">{r.country}</td>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{r.value}</td>
-                  <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1D1D1F]" style={{ borderRadius: 0 }}>{r.type}</span></td>
-                  <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1D1D1F]" style={{ borderRadius: 0 }}>{r.status}</span></td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{r.value}</td>
+                  <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{r.type}</span></td>
+                  <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{r.status}</span></td>
                 </tr>
               ))}
             </tbody>

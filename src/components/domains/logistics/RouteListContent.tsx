@@ -12,10 +12,10 @@ interface RouteListContentProps {
 }
 
 const statusColors: Record<string, string> = {
-  'In Transit': 'bg-[#F5F5F7] text-[#1D1D1F]',
-  'Completed': 'bg-[#F5F5F7] text-[#1D1D1F]',
-  'Pending': 'bg-[#F5F5F7] text-[#1D1D1F]',
-  'Delayed': 'bg-[#F5F5F7] text-[#1D1D1F]',
+  'In Transit': 'bg-[#F5F5F7] text-[#1A1A1A]',
+  'Completed': 'bg-[#F5F5F7] text-[#1A1A1A]',
+  'Pending': 'bg-[#F5F5F7] text-[#1A1A1A]',
+  'Delayed': 'bg-[#F5F5F7] text-[#1A1A1A]',
 }
 
 export default function RouteListContent({ persona, locale }: RouteListContentProps) {
@@ -74,7 +74,7 @@ export default function RouteListContent({ persona, locale }: RouteListContentPr
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-semibold text-[#1D1D1F]">Route List</h3>
+        <h3 className="text-sm font-semibold text-[#1A1A1A]">Route List</h3>
         <button onClick={() => setShowForm(!showForm)} className="px-4 py-2 bg-[#6B1F2B] text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
           + New Route
         </button>
@@ -89,7 +89,7 @@ export default function RouteListContent({ persona, locale }: RouteListContentPr
 
       {showForm && (
         <div className="bg-white border border-black/20 rounded-lg p-6 space-y-4">
-          <h4 className="text-sm font-semibold text-[#1D1D1F]">Create New Route</h4>
+          <h4 className="text-sm font-semibold text-[#1A1A1A]">Create New Route</h4>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <input placeholder="Origin *" value={formData.origin} onChange={e => setFormData(p => ({...p, origin: e.target.value}))} className="border border-black/20 rounded-lg px-3 py-2 text-black" />
             <input placeholder="Destination *" value={formData.destination} onChange={e => setFormData(p => ({...p, destination: e.target.value}))} className="border border-black/20 rounded-lg px-3 py-2 text-black" />
@@ -105,7 +105,7 @@ export default function RouteListContent({ persona, locale }: RouteListContentPr
       )}
 
       <div className="bg-white border border-black/10 rounded-lg p-6">
-        <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Route Management</h4>
+        <h4 className="text-sm font-semibold text-[#1A1A1A] mb-4">Route Management</h4>
         {routes.length === 0 ? (
           <p className="text-black/60 text-center py-8">No routes found. Create your first route above.</p>
         ) : (
@@ -134,7 +134,7 @@ export default function RouteListContent({ persona, locale }: RouteListContentPr
                     <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{route.distance ? `${route.distance} km` : '—'}</td>
                     <td className="py-2 text-black text-xs">{route.eta ? new Date(route.eta).toLocaleDateString() : '—'}</td>
                     <td className="py-2">
-                      <span className={`px-2 py-1 rounded text-xs ${statusColors[route.status] || 'bg-[#F5F5F7] text-[#1D1D1F]'}`}>{route.status}</span>
+                      <span className={`px-2 py-1 rounded text-xs ${statusColors[route.status] || 'bg-[#F5F5F7] text-[#1A1A1A]'}`}>{route.status}</span>
                     </td>
                   </tr>
                 ))}

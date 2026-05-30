@@ -39,7 +39,7 @@ export function CRMAnalyticsCharts() {
   ]
   return (
     <div className="p-6 space-y-6">
-      <h3 className="text-xl font-semibold text-[#1D1D1F]">CRM Analytics Dashboard</h3>
+      <h3 className="text-xl font-semibold text-[#1A1A1A]">CRM Analytics Dashboard</h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <AreaChartCard title="Pipeline Trend (12 Months)" data={pipelineData} dataKeys={['won', 'pipeline']} colors={['#059669', '#C3A35E']} height={280} />
         <PieChartCard title="Customer Segmentation" data={segmentData} colors={['#6B1F2B', '#C3A35E', '#0891b2', '#f59e0b', '#7c3aed']} height={280} />
@@ -79,7 +79,7 @@ export function SalesAnalyticsCharts() {
   ]
   return (
     <div className="p-6 space-y-6">
-      <h3 className="text-xl font-semibold text-[#1D1D1F]">Sales Analytics Dashboard</h3>
+      <h3 className="text-xl font-semibold text-[#1A1A1A]">Sales Analytics Dashboard</h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <AreaChartCard title="Revenue vs Target (MTD)" data={revenueData} dataKeys={['revenue', 'target']} colors={['#6B1F2B', '#C3A35E']} height={280} />
         <PieChartCard title="Revenue by Channel" data={channelData} colors={['#6B1F2B', '#C3A35E', '#8B3A4A', '#D4B46E']} height={280} />
@@ -122,7 +122,7 @@ export function HRAnalyticsCharts() {
   ]
   return (
     <div className="p-6 space-y-6">
-      <h3 className="text-xl font-semibold text-[#1D1D1F]">HR Analytics Dashboard</h3>
+      <h3 className="text-xl font-semibold text-[#1A1A1A]">HR Analytics Dashboard</h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <AreaChartCard title="Headcount Growth" data={headcountData} dataKeys={['headcount']} colors={['#6B1F2B']} height={280} />
         <PieChartCard title="Workforce by Department" data={departmentData} colors={['#6B1F2B', '#C3A35E', '#8B3A4A', '#D4B46E', '#4A1018', '#E5C07B']} height={280} />
@@ -164,7 +164,7 @@ export function LogisticsAnalyticsCharts() {
   ]
   return (
     <div className="p-6 space-y-6">
-      <h3 className="text-xl font-semibold text-[#1D1D1F]">Logistics Analytics Dashboard</h3>
+      <h3 className="text-xl font-semibold text-[#1A1A1A]">Logistics Analytics Dashboard</h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <LineChartCard title="On-Time Delivery Rate (%)" data={deliveryData} dataKeys={['onTime', 'delayed']} colors={['#16a34a', '#dc2626']} height={280} />
         <PieChartCard title="Shipments by Trade Route" data={routeData} colors={['#6B1F2B', '#C3A35E', '#8B3A4A', '#D4B46E', '#4A1018']} height={280} />
@@ -197,7 +197,7 @@ export function ExecutiveAnalyticsCharts() {
   ]
   return (
     <div className="p-6 space-y-6">
-      <h3 className="text-xl font-semibold text-[#1D1D1F]">Executive Dashboard</h3>
+      <h3 className="text-xl font-semibold text-[#1A1A1A]">Executive Dashboard</h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <AreaChartCard title="P&L Trend (Quarterly)" data={plData} dataKeys={['revenue', 'ebitda']} colors={['#6B1F2B', '#C3A35E']} height={280} />
         <PieChartCard title="Revenue by Region" data={regionData} colors={['#6B1F2B', '#C3A35E', '#8B3A4A', '#D4B46E', '#4A1018']} height={280} />
@@ -236,7 +236,7 @@ export function FinanceAnalyticsCharts() {
   ]
   return (
     <div className="p-6 space-y-6">
-      <h3 className="text-xl font-semibold text-[#1D1D1F]">Finance Analytics Dashboard</h3>
+      <h3 className="text-xl font-semibold text-[#1A1A1A]">Finance Analytics Dashboard</h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <AreaChartCard title="Cash Flow (Inflow vs Outflow)" data={cashflowData} dataKeys={['inflow', 'outflow', 'net']} colors={['#16a34a', '#dc2626', '#C3A35E']} height={280} />
         <BarChartCard title="Budget vs Actual by Dept" data={budgetData} dataKeys={['budget', 'actual']} colors={['#C3A35E', '#6B1F2B']} height={280} />
@@ -274,7 +274,7 @@ export function InvestorAnalyticsCharts() {
   ]
   return (
     <div className="p-6 space-y-6">
-      <h3 className="text-xl font-semibold text-[#1D1D1F]">Investor Analytics Dashboard</h3>
+      <h3 className="text-xl font-semibold text-[#1A1A1A]">Investor Analytics Dashboard</h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <AreaChartCard title="Share Price (6 Months)" data={stockData} dataKeys={['price']} colors={['#16a34a']} height={280} />
         <PieChartCard title="Shareholder Structure" data={shareholderData} colors={['#6B1F2B', '#C3A35E', '#8B3A4A', '#D4B46E']} height={280} />
@@ -312,7 +312,7 @@ export function CompetitorAnalyticsCharts() {
   ]
   return (
     <div className="p-6 space-y-6">
-      <h3 className="text-xl font-semibold text-[#1D1D1F]">Competitive Intelligence Dashboard</h3>
+      <h3 className="text-xl font-semibold text-[#1A1A1A]">Competitive Intelligence Dashboard</h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <PieChartCard title="Market Share Distribution" data={marketShareData} colors={['#C3A35E', '#6B1F2B', '#8B3A4A', '#D4B46E', '#ccc']} height={280} />
         <LineChartCard title="Market Share Trend (%)" data={trendData} dataKeys={['harvics', 'compA', 'compB']} colors={['#C3A35E', '#6B1F2B', '#8B3A4A']} height={280} />

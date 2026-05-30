@@ -495,13 +495,13 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
           icon: '',
           component: (
             <div className="p-6 space-y-6">
-              <h3 className="text-xl font-semibold text-[#1D1D1F] mb-4">FX Exposure Dashboard</h3>
+              <h3 className="text-xl font-semibold text-[#1A1A1A] mb-4">FX Exposure Dashboard</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[{ currency: 'EUR/USD', exposure: '$2.4M', risk: 'Low' }, { currency: 'GBP/USD', exposure: '$1.8M', risk: 'Medium' }, { currency: 'PKR/USD', exposure: '$850K', risk: 'High' }, { currency: 'AED/USD', exposure: '$3.2M', risk: 'Low' }].map(e => (
                   <div key={e.currency} className="border border-[#E5E5EA]/30 p-4" style={{ borderRadius: 0 }}>
                     <div className="text-sm font-mono text-[#8E8E93]">{e.currency}</div>
-                    <div className="text-xl font-semibold text-[#1D1D1F]">{e.exposure}</div>
-                    <span className={`px-2 py-1 text-xs font-bold ${e.risk === 'Low' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : e.risk === 'Medium' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{e.risk} Risk</span>
+                    <div className="text-xl font-semibold text-[#1A1A1A]">{e.exposure}</div>
+                    <span className={`px-2 py-1 text-xs font-bold ${e.risk === 'Low' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : e.risk === 'Medium' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{e.risk} Risk</span>
                   </div>
                 ))}
               </div>
@@ -514,19 +514,19 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
           icon: '',
           component: (
             <div className="p-6">
-              <h3 className="text-xl font-semibold text-[#1D1D1F] mb-4">Cross-Border Trade Settlements</h3>
+              <h3 className="text-xl font-semibold text-[#1A1A1A] mb-4">Cross-Border Trade Settlements</h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]"><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Settlement ID</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">From</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">To</th><th className="px-5 py-3 text-right text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Amount</th><th className="px-5 py-3 text-right text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">FX Rate</th><th className="px-5 py-3 text-center text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Status</th></tr></thead>
                   <tbody>
                     {[{ id: 'SET-001', from: 'USD', to: 'EUR', amount: 125000, rate: 0.92, status: 'Completed' }, { id: 'SET-002', from: 'USD', to: 'PKR', amount: 85000, rate: 277.80, status: 'Pending' }, { id: 'SET-003', from: 'GBP', to: 'AED', amount: 200000, rate: 4.70, status: 'Processing' }].map((s, i) => (
                       <tr key={s.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                        <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{s.id}</td>
+                        <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{s.id}</td>
                         <td className="px-4 py-3">{s.from}</td>
                         <td className="px-4 py-3">{s.to}</td>
-                        <td className="px-4 py-3 text-right font-semibold text-[#1D1D1F]">${s.amount.toLocaleString()}</td>
+                        <td className="px-4 py-3 text-right font-semibold text-[#1A1A1A]">${s.amount.toLocaleString()}</td>
                         <td className="px-4 py-3 text-right">{s.rate}</td>
-                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${s.status === 'Completed' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : s.status === 'Pending' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{s.status}</span></td>
+                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${s.status === 'Completed' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : s.status === 'Pending' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{s.status}</span></td>
                       </tr>
                     ))}
                   </tbody>
@@ -594,7 +594,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                   <div className="mt-5 pt-4 border-t border-white/20 flex items-center gap-4">
                     <button onClick={runDepreciation} disabled={depLoading}
                       className="px-6 py-2.5 text-sm font-black tracking-wide transition-colors disabled:opacity-40"
-                      style={{ background: '#C3A35E', color: '#1D1D1F' }}>
+                      style={{ background: '#C3A35E', color: '#1A1A1A' }}>
                       {depLoading ? '⏳ RUNNING…' : '▶  RUN MONTHLY DEPRECIATION'}
                     </button>
                     {depResult && <span className="text-sm text-[#C3A35E] font-bold">✓ {depResult.data?.length} assets updated</span>}
@@ -618,7 +618,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                         <div className="flex items-center gap-3 min-w-0">
                           <div className="w-[3px] h-10 flex-shrink-0" style={{ background: '#6B1F2B' }}></div>
                           <div className="min-w-0">
-                            <div className="text-[#1D1D1F] font-semibold text-sm truncate">{a.name}</div>
+                            <div className="text-[#1A1A1A] font-semibold text-sm truncate">{a.name}</div>
                             <div className="flex items-center gap-2 mt-0.5">
                               <span className="text-[10px] font-mono text-[#8E8E93]">{a.assetCode}</span>
                               <span className="text-[9px] font-bold px-1.5 py-0.5 bg-[#6B1F2B]/10 text-[#6B1F2B]">{a.category}</span>
@@ -634,7 +634,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                             <div className="flex-1 h-2 bg-[#F5F5F7] overflow-hidden">
                               <div className="h-full transition-all duration-1000 ease-out" style={{ width: animated ? `${rem}%` : '0%', background: barCol }}></div>
                             </div>
-                            <span className="text-[11px] font-bold tabular-nums w-8 text-right text-[#1D1D1F]">{Math.round(rem)}%</span>
+                            <span className="text-[11px] font-bold tabular-nums w-8 text-right text-[#1A1A1A]">{Math.round(rem)}%</span>
                           </div>
                           <div className="text-[9px] text-[#8E8E93]">{a.usefulLifeYears}yr · {a.location}</div>
                         </div>
@@ -730,7 +730,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                           <div className="flex items-center gap-3 min-w-0 flex-1">
                             <span className="font-mono text-xs font-black text-[#6B1F2B] bg-[#6B1F2B]/10 px-2 py-1 flex-shrink-0">{cc.code}</span>
                             <div className="min-w-0">
-                              <div className="font-semibold text-[#1D1D1F] text-sm flex items-center gap-2">
+                              <div className="font-semibold text-[#1A1A1A] text-sm flex items-center gap-2">
                                 <span className="truncate">{cc.name}</span>
                                 {isFlashing && <span className={`text-[10px] font-black flex-shrink-0 ${flashMap[cc.code]==='up'?'text-emerald-600':'text-red-600'}`}>{flashMap[cc.code]==='up'?'▲':'▼'}</span>}
                               </div>
@@ -744,7 +744,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                           <div className="flex items-center gap-6 flex-shrink-0">
                             <div className="text-right">
                               <div className="text-[9px] text-[#8E8E93] uppercase tracking-wider">Budget</div>
-                              <div className="text-sm font-bold text-[#1D1D1F] tabular-nums">{fmtK(cc.budget)}</div>
+                              <div className="text-sm font-bold text-[#1A1A1A] tabular-nums">{fmtK(cc.budget)}</div>
                             </div>
                             <div className={`text-right px-1.5 py-0.5 rounded ${flashMap[cc.code]==='up'?'hv-flash-up':flashMap[cc.code]==='down'?'hv-flash-down':''}`}>
                               <div className="text-[9px] text-[#8E8E93] uppercase tracking-wider">Actual</div>
@@ -843,7 +843,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                       <div key={b.id || b.budgetCode} className="p-6 bg-white">
                         <div className="flex items-start justify-between mb-3">
                           <div>
-                            <div className="font-bold text-[#1D1D1F] text-sm leading-tight">{b.name}</div>
+                            <div className="font-bold text-[#1A1A1A] text-sm leading-tight">{b.name}</div>
                             <div className="text-[10px] text-[#8E8E93] mt-0.5">{b.budgetCode} · {b.approvedBy}</div>
                           </div>
                           <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full flex-shrink-0 ${statusColors[b.status]||'bg-gray-100 text-gray-600'}`}>{b.status}</span>
@@ -938,7 +938,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                               isClosed ? 'bg-emerald-100 text-emerald-700' : p.balanced ? 'bg-blue-100 text-blue-700' : 'bg-amber-100 text-amber-700'
                             }`}>{isClosed?'✓':p.balanced?'◎':'!'}</div>
                             <div>
-                              <div className="font-black text-[#1D1D1F] text-xl">{p.name}</div>
+                              <div className="font-black text-[#1A1A1A] text-xl">{p.name}</div>
                               <div className="text-xs text-[#8E8E93]">{p.periodCode}</div>
                               {isClosed && <div className="text-xs text-emerald-600 font-semibold mt-0.5">Closed by {p.closedBy} · {p.closedAt?.slice(0,10)}</div>}
                             </div>
@@ -962,7 +962,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                                 {s.live && <span className="relative flex h-1.5 w-1.5"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span><span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-amber-400"></span></span>}
                               </div>
                               <div className={`font-black text-base tabular-nums ${
-                                s.label==='Difference'&&diff!==0?'text-red-600':s.label==='Difference'?'text-emerald-600':'text-[#1D1D1F]'
+                                s.label==='Difference'&&diff!==0?'text-red-600':s.label==='Difference'?'text-emerald-600':'text-[#1A1A1A]'
                               }`}>{s.value}</div>
                             </div>
                           ))}
@@ -1001,7 +1001,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
             return (
               <div className="p-6 space-y-6">
                 <div>
-                  <h3 className="text-2xl font-bold text-[#1D1D1F]">Chart of Accounts</h3>
+                  <h3 className="text-2xl font-bold text-[#1A1A1A]">Chart of Accounts</h3>
                   <p className="text-sm text-[#8E8E93] mt-0.5">{glAccounts.length} accounts · USD reporting currency</p>
                 </div>
                 {/* Type summary */}
@@ -1012,7 +1012,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                     return (
                       <div key={t} className={`${typeBg[t]} border border-white p-4 text-center`}>
                         <div className={`text-xs font-bold px-2 py-0.5 rounded-full inline-block mb-2 ${typeColor[t]}`}>{t}</div>
-                        <div className="text-lg font-black text-[#1D1D1F]">${(total/1000000).toFixed(1)}M</div>
+                        <div className="text-lg font-black text-[#1A1A1A]">${(total/1000000).toFixed(1)}M</div>
                         <div className="text-xs text-[#8E8E93]">{accs.length} accounts</div>
                       </div>
                     )
@@ -1033,11 +1033,11 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                           <div key={gl.id || gl.accountCode} className="flex items-center justify-between bg-white border border-[#E5E5EA] px-4 py-3 hover:bg-[#FAFAF8] transition-colors">
                             <div className="flex items-center gap-4">
                               <span className="font-mono text-sm font-bold text-[#6B1F2B] w-12">{gl.accountCode}</span>
-                              <span className="font-medium text-[#1D1D1F]">{gl.name}</span>
+                              <span className="font-medium text-[#1A1A1A]">{gl.name}</span>
                               <span className="text-xs text-[#8E8E93]">{gl.normalBalance}</span>
                             </div>
                             <div className="flex items-center gap-4">
-                              <span className="font-bold text-[#1D1D1F]">${(gl.balance||0).toLocaleString()}</span>
+                              <span className="font-bold text-[#1A1A1A]">${(gl.balance||0).toLocaleString()}</span>
                               <div className="w-24 bg-[#F5F5F7] h-1.5 rounded-full overflow-hidden">
                                 <div className={`h-1.5 rounded-full ${typeColor[t].split(' ')[0].replace('bg-', 'bg-').replace('-100', '-500')}`}
                                   style={{ width: `${Math.min((gl.balance / Math.max(...glAccounts.filter(g=>g.type===t).map(g=>g.balance||0))) * 100, 100)}%` }}></div>

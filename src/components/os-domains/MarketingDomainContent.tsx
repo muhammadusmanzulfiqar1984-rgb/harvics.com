@@ -22,11 +22,11 @@ export default function MarketingDomainContent({ persona, locale }: MarketingDom
           icon: '',
           component: (
             <div className="p-6 space-y-4">
-              <h3 className="text-xl font-semibold text-[#1D1D1F]">Campaign Board</h3>
+              <h3 className="text-xl font-semibold text-[#1A1A1A]">Campaign Board</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[{ label: 'Active Campaigns', value: '14' }, { label: 'Total Reach', value: '2.8M' }, { label: 'CTR', value: '4.9%' }, { label: 'ROI', value: '2.3x' }].map((k) => (
                   <div key={k.label} className="border border-[#E5E5EA] p-4" style={{ borderRadius: 0 }}>
-                    <div className="text-xl font-semibold text-[#1D1D1F]">{k.value}</div>
+                    <div className="text-xl font-semibold text-[#1A1A1A]">{k.value}</div>
                     <div className="text-xs text-[#8E8E93] mt-1">{k.label}</div>
                   </div>
                 ))}
@@ -48,7 +48,7 @@ export default function MarketingDomainContent({ persona, locale }: MarketingDom
           icon: '',
           component: (
             <div className="p-6 space-y-4">
-              <h3 className="text-xl font-semibold text-[#1D1D1F]">Segment Performance</h3>
+              <h3 className="text-xl font-semibold text-[#1A1A1A]">Segment Performance</h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
@@ -62,7 +62,7 @@ export default function MarketingDomainContent({ persona, locale }: MarketingDom
                   <tbody>
                     {[{ segment: 'Modern Trade Buyers', contacts: '18,400', conversion: '6.2%', revenue: '$420,000' }, { segment: 'Distributor Owners', contacts: '6,120', conversion: '8.1%', revenue: '$368,000' }, { segment: 'Export Procurement Teams', contacts: '2,940', conversion: '4.7%', revenue: '$214,000' }].map((r, i) => (
                       <tr key={r.segment} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                        <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{r.segment}</td>
+                        <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{r.segment}</td>
                         <td className="px-4 py-3 text-right">{r.contacts}</td>
                         <td className="px-4 py-3 text-right">{r.conversion}</td>
                         <td className="px-4 py-3 text-right">{r.revenue}</td>

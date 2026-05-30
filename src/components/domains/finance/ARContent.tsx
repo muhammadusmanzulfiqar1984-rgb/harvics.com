@@ -78,7 +78,7 @@ export default function ARContent() {
       </div>
 
       <div className="flex items-center justify-between">
-        <h4 className="text-lg font-semibold text-[#1D1D1F]">Unpaid Invoices ({unpaid.length})</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A]">Unpaid Invoices ({unpaid.length})</h4>
         <button onClick={() => setShowRecordPayment(!showRecordPayment)}
           className="px-4 py-2 text-sm font-bold text-white" style={{ background: '#6B1F2B', borderRadius: 0 }}>
           💳 Record Payment
@@ -106,7 +106,7 @@ export default function ARContent() {
           </div>
           <div className="flex gap-2">
             <button onClick={handleRecordPayment} className="px-4 py-2 text-sm font-bold text-white" style={{ background: '#6B1F2B', borderRadius: 0 }}>Record</button>
-            <button onClick={() => setShowRecordPayment(false)} className="px-4 py-2 text-sm font-bold border border-[#6B1F2B] text-[#1D1D1F]" style={{ borderRadius: 0 }}>Cancel</button>
+            <button onClick={() => setShowRecordPayment(false)} className="px-4 py-2 text-sm font-bold border border-[#6B1F2B] text-[#1A1A1A]" style={{ borderRadius: 0 }}>Cancel</button>
           </div>
         </div>
       )}
@@ -125,11 +125,11 @@ export default function ARContent() {
           <tbody>
             {unpaid.map((inv, i) => (
               <tr key={inv.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F0E8]/50'}>
-                <td className="px-4 py-3 font-mono font-semibold text-[#1D1D1F]">{inv.invoiceNo}</td>
+                <td className="px-4 py-3 font-mono font-semibold text-[#1A1A1A]">{inv.invoiceNo}</td>
                 <td className="px-4 py-3 text-[#6B1F2B]">{inv.customer}</td>
                 <td className="px-4 py-3 text-right font-bold">{inv.currency} {inv.amount.toLocaleString()}</td>
                 <td className="px-4 py-3 text-center">
-                  <span className={`px-2 py-1 text-xs font-bold ${inv.status === 'Overdue' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{inv.status}</span>
+                  <span className={`px-2 py-1 text-xs font-bold ${inv.status === 'Overdue' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{inv.status}</span>
                 </td>
                 <td className="px-4 py-3 text-[#8E8E93]">{inv.dueDate}</td>
               </tr>
@@ -140,7 +140,7 @@ export default function ARContent() {
 
       {/* Recent Payments */}
       <div>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-3">Recent Payments ({payments.length})</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-3">Recent Payments ({payments.length})</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -154,7 +154,7 @@ export default function ARContent() {
               {payments.map((p, i) => (
                 <tr key={p.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F0E8]/50'}>
                   <td className="px-4 py-2 font-mono">{p.invoiceNo}</td>
-                  <td className="px-4 py-2 text-right font-bold text-[#1D1D1F]">{p.currency} {p.amount.toLocaleString()}</td>
+                  <td className="px-4 py-2 text-right font-bold text-[#1A1A1A]">{p.currency} {p.amount.toLocaleString()}</td>
                   <td className="px-4 py-2">{p.method}</td>
                   <td className="px-4 py-2 font-mono text-xs">{p.reference}</td>
                   <td className="px-4 py-2 text-[#8E8E93]">{p.receivedDate}</td>

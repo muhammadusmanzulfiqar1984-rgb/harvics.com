@@ -19,7 +19,7 @@ export default function StockOverviewContent({ persona, locale }: { persona: str
     <div className="space-y-6">
       <div className="flex items-center justify-between flex-wrap gap-3">
         <div>
-          <h2 className="text-lg font-semibold text-[#1D1D1F]">Stock Overview</h2>
+          <h2 className="text-lg font-semibold text-[#1A1A1A]">Stock Overview</h2>
           <p className="text-sm text-[#8E8E93] mt-0.5">Real-time inventory across {data.warehouseCount || 12} warehouses</p>
         </div>
         <LiveBadge source={source} lastUpdated={lastUpdated} />
@@ -72,7 +72,7 @@ export default function StockOverviewContent({ persona, locale }: { persona: str
 
       {/* SKU table */}
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-semibold text-[#1D1D1F]">SKU Details</h3>
+        <h3 className="text-sm font-semibold text-[#1A1A1A]">SKU Details</h3>
         <div className="flex gap-1.5">
           {(['All', 'Low'] as const).map(f => (
             <button key={f} onClick={() => setFilter(f)}
@@ -95,7 +95,7 @@ export default function StockOverviewContent({ persona, locale }: { persona: str
           ]}
           rows={filtered.map((s: any) => ({
             sku: <span className="font-mono text-xs text-[#8E8E93]">{s.sku}</span>,
-            desc: <span className="font-medium text-[#1D1D1F]">{s.description}</span>,
+            desc: <span className="font-medium text-[#1A1A1A]">{s.description}</span>,
             cat: <span className="text-xs text-[#8E8E93] bg-[#F5F5F7] px-2 py-0.5 rounded-full">{s.category}</span>,
             stock: <StatusDot status={s.status} />,
             onHand: (
@@ -107,7 +107,7 @@ export default function StockOverviewContent({ persona, locale }: { persona: str
               </div>
             ),
             min: <span>{s.minStock?.toLocaleString()}</span>,
-            value: <span className="font-semibold text-[#1D1D1F]">{fmtM(s.value || 0)}</span>,
+            value: <span className="font-semibold text-[#1A1A1A]">{fmtM(s.value || 0)}</span>,
           }))}
         />
       </Card>

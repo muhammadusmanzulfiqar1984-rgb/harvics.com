@@ -72,7 +72,7 @@ export default function PerformanceReviewsContent({ persona, locale }: Performan
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-semibold text-[#1D1D1F]">Performance Reviews</h3>
+        <h3 className="text-sm font-semibold text-[#1A1A1A]">Performance Reviews</h3>
         <button className="px-4 py-2 bg-[#6B1F2B] text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
           + New Review
         </button>
@@ -102,7 +102,7 @@ export default function PerformanceReviewsContent({ persona, locale }: Performan
       </div>
 
       <div className="bg-white rounded-2xl border border-[#E5E5EA] overflow-hidden">
-        <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Performance Reviews</h4>
+        <h4 className="text-sm font-semibold text-[#1A1A1A] mb-4">Performance Reviews</h4>
         <p className="text-black mb-4">Employee performance evaluation and assessment records.</p>
         <div className="mt-4">
           <table className="w-full text-sm">
@@ -121,7 +121,7 @@ export default function PerformanceReviewsContent({ persona, locale }: Performan
                   <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{emp.department}</td>
                   <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{idx < reviewsCompleted ? `${(4.0 + Math.random() * 0.8).toFixed(1)} ⭐` : '-'}</td>
                   <td className="py-2">
-                    <span className={`px-2 py-1 rounded text-xs ${idx < reviewsCompleted ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`}>
+                    <span className={`px-2 py-1 rounded text-xs ${idx < reviewsCompleted ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`}>
                       {idx < reviewsCompleted ? 'Completed' : 'Pending'}
                     </span>
                   </td>

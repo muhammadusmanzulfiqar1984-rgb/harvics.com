@@ -20,7 +20,7 @@ export default function GLOverviewContent({ persona, locale }: { persona: string
     <div className="space-y-6">
       <div className="flex items-center justify-between flex-wrap gap-3">
         <div>
-          <h2 className="text-lg font-semibold text-[#1D1D1F]">General Ledger Overview</h2>
+          <h2 className="text-lg font-semibold text-[#1A1A1A]">General Ledger Overview</h2>
           <p className="text-sm text-[#8E8E93] mt-0.5">Live P&L, cash position and expense breakdown</p>
         </div>
         <LiveBadge source={source} lastUpdated={lastUpdated} />
@@ -82,7 +82,7 @@ export default function GLOverviewContent({ persona, locale }: { persona: string
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <Card>
           <div className="p-5 space-y-4">
-            <h4 className="text-sm font-semibold text-[#1D1D1F]">Cash & Liquidity</h4>
+            <h4 className="text-sm font-semibold text-[#1A1A1A]">Cash & Liquidity</h4>
             <div className="space-y-3">
               {[
                 { label: 'Cash On Hand', value: data.cashOnHand || 4200000, color: '#34C759' },
@@ -95,7 +95,7 @@ export default function GLOverviewContent({ persona, locale }: { persona: string
                     <span className="w-2 h-2 rounded-full" style={{ backgroundColor: item.color }} />
                     <span className="text-[#8E8E93]">{item.label}</span>
                   </div>
-                  <span className="font-semibold text-[#1D1D1F] tabular-nums">{fmtM(item.value)}</span>
+                  <span className="font-semibold text-[#1A1A1A] tabular-nums">{fmtM(item.value)}</span>
                 </div>
               ))}
             </div>
@@ -104,7 +104,7 @@ export default function GLOverviewContent({ persona, locale }: { persona: string
 
         <Card className="md:col-span-2">
           <div className="p-5 space-y-4">
-            <h4 className="text-sm font-semibold text-[#1D1D1F]">Key Ratios</h4>
+            <h4 className="text-sm font-semibold text-[#1A1A1A]">Key Ratios</h4>
             <div className="grid grid-cols-2 gap-4">
               {[
                 { label: 'Gross Margin', value: `${((data.grossProfit / data.revenue) * 100).toFixed(1)}%`, sub: 'Gross Profit / Revenue' },
@@ -114,7 +114,7 @@ export default function GLOverviewContent({ persona, locale }: { persona: string
               ].map((r) => (
                 <div key={r.label} className="bg-[#F5F5F7] rounded-xl p-4">
                   <p className="text-xs text-[#8E8E93]">{r.label}</p>
-                  <p className="text-xl font-semibold text-[#1D1D1F] mt-1">{r.value}</p>
+                  <p className="text-xl font-semibold text-[#1A1A1A] mt-1">{r.value}</p>
                   <p className="text-[10px] text-[#C7C7CC] mt-0.5">{r.sub}</p>
                 </div>
               ))}

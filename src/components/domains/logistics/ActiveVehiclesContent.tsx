@@ -11,10 +11,10 @@ interface ActiveVehiclesContentProps {
 }
 
 const statusColors: Record<string, string> = {
-  'In Transit': 'bg-[#F5F5F7] text-[#1D1D1F]',
-  'Completed': 'bg-[#F5F5F7] text-[#1D1D1F]',
-  'Pending': 'bg-[#F5F5F7] text-[#1D1D1F]',
-  'Delayed': 'bg-[#F5F5F7] text-[#1D1D1F]',
+  'In Transit': 'bg-[#F5F5F7] text-[#1A1A1A]',
+  'Completed': 'bg-[#F5F5F7] text-[#1A1A1A]',
+  'Pending': 'bg-[#F5F5F7] text-[#1A1A1A]',
+  'Delayed': 'bg-[#F5F5F7] text-[#1A1A1A]',
 }
 
 export default function ActiveVehiclesContent({ persona, locale }: ActiveVehiclesContentProps) {
@@ -60,7 +60,7 @@ export default function ActiveVehiclesContent({ persona, locale }: ActiveVehicle
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-semibold text-[#1D1D1F]">Active Vehicles</h3>
+        <h3 className="text-sm font-semibold text-[#1A1A1A]">Active Vehicles</h3>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -71,7 +71,7 @@ export default function ActiveVehiclesContent({ persona, locale }: ActiveVehicle
       </div>
 
       <div className="bg-white border border-black/10 rounded-lg p-6">
-        <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Fleet Status</h4>
+        <h4 className="text-sm font-semibold text-[#1A1A1A] mb-4">Fleet Status</h4>
         <p className="text-black/60 mb-4">Vehicle assignments derived from active routes.</p>
         {routes.length === 0 ? (
           <p className="text-black/60 text-center py-8">No vehicle data available. Create routes first.</p>
@@ -95,7 +95,7 @@ export default function ActiveVehiclesContent({ persona, locale }: ActiveVehicle
                     <td className="py-2 text-black font-mono text-xs">{route.routeId}</td>
                     <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{route.destination}</td>
                     <td className="py-2">
-                      <span className={`px-2 py-1 rounded text-xs ${statusColors[route.status] || 'bg-[#F5F5F7] text-[#1D1D1F]'}`}>{route.status}</span>
+                      <span className={`px-2 py-1 rounded text-xs ${statusColors[route.status] || 'bg-[#F5F5F7] text-[#1A1A1A]'}`}>{route.status}</span>
                     </td>
                   </tr>
                 ))}

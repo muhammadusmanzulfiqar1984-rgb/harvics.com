@@ -51,7 +51,7 @@ export default function PortalOSHeader({
               />
             )}
             <span className="w-px h-4 bg-[#E5E5EA]" />
-            <span className="text-base font-semibold text-[#1D1D1F] tracking-tight">{portalInfo.title}</span>
+            <span className="text-base font-semibold text-[#1A1A1A] tracking-tight">{portalInfo.title}</span>
             {(subtitle || portalInfo.defaultSubtitle) && (
               <span className="hidden md:block text-sm text-[#8E8E93]">— {subtitle || portalInfo.defaultSubtitle}</span>
             )}

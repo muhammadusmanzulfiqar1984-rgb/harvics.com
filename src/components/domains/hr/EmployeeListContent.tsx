@@ -67,7 +67,7 @@ export default function EmployeeListContent({ persona, locale }: EmployeeListCon
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-semibold text-[#1D1D1F]">Employee List</h3>
+        <h3 className="text-sm font-semibold text-[#1A1A1A]">Employee List</h3>
         <button className="px-4 py-2 bg-[#6B1F2B] text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
           + Add Employee
         </button>
@@ -97,7 +97,7 @@ export default function EmployeeListContent({ persona, locale }: EmployeeListCon
       </div>
 
       <div className="bg-white rounded-2xl border border-[#E5E5EA] overflow-hidden">
-        <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Employee Directory</h4>
+        <h4 className="text-sm font-semibold text-[#1A1A1A] mb-4">Employee Directory</h4>
         <p className="text-black mb-4">View and manage all employee records and information.</p>
         <div className="mt-4 overflow-x-auto">
           <table className="w-full text-sm">
@@ -118,7 +118,7 @@ export default function EmployeeListContent({ persona, locale }: EmployeeListCon
                   <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{emp.department}</td>
                   <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{emp.country}</td>
                   <td className="py-2">
-                    <span className={`px-2 py-1 rounded text-xs ${emp.status === 'Active' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`}>{emp.status}</span>
+                    <span className={`px-2 py-1 rounded text-xs ${emp.status === 'Active' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`}>{emp.status}</span>
                   </td>
                 </tr>
               ))}

@@ -323,7 +323,7 @@ function LanguageSwitcherInner() {
               }`}
               style={{
                 background: locale === lang.code ? 'rgba(0,0,0,0.05)' : 'transparent',
-                color: '#1d1d1f',
+                color: '#1A1A1A',
                 fontSize: '14px',
                 border: 'none',
                 cursor: 'pointer'

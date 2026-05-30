@@ -50,22 +50,22 @@ export default function CashBankContent() {
 
       {/* Currency Converter */}
       <div className="bg-white border border-[#E5E5EA]/20 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">💱 Currency Converter</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">💱 Currency Converter</h4>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3 items-end">
           <div>
-            <label className="text-xs font-semibold text-[#1D1D1F]/70 uppercase mb-1 block">Amount</label>
+            <label className="text-xs font-semibold text-[#1A1A1A]/70 uppercase mb-1 block">Amount</label>
             <input type="number" value={convertAmount} onChange={e => setConvertAmount(e.target.value)}
               className="w-full px-3 py-2 border border-[#E5E5EA]/30 text-sm font-bold" style={{ borderRadius: 0 }} />
           </div>
           <div>
-            <label className="text-xs font-semibold text-[#1D1D1F]/70 uppercase mb-1 block">From</label>
+            <label className="text-xs font-semibold text-[#1A1A1A]/70 uppercase mb-1 block">From</label>
             <select value={convertFrom} onChange={e => setConvertFrom(e.target.value)}
               className="w-full px-3 py-2 border border-[#E5E5EA]/30 text-sm" style={{ borderRadius: 0 }}>
               <option>USD</option>{keyCurrencies.map(c => <option key={c}>{c}</option>)}
             </select>
           </div>
           <div>
-            <label className="text-xs font-semibold text-[#1D1D1F]/70 uppercase mb-1 block">To</label>
+            <label className="text-xs font-semibold text-[#1A1A1A]/70 uppercase mb-1 block">To</label>
             <select value={convertTo} onChange={e => setConvertTo(e.target.value)}
               className="w-full px-3 py-2 border border-[#E5E5EA]/30 text-sm" style={{ borderRadius: 0 }}>
               <option>USD</option>{keyCurrencies.map(c => <option key={c}>{c}</option>)}
@@ -76,7 +76,7 @@ export default function CashBankContent() {
             Convert
           </button>
           {convertResult !== null && (
-            <div className="text-xl font-semibold text-[#1D1D1F]">
+            <div className="text-xl font-semibold text-[#1A1A1A]">
               = {convertTo} {convertResult.toLocaleString()}
             </div>
           )}
@@ -85,11 +85,11 @@ export default function CashBankContent() {
 
       {/* Live Rates Table */}
       <div className="bg-white border border-[#E5E5EA]/20 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">📈 Live Exchange Rates (Base: USD)</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">📈 Live Exchange Rates (Base: USD)</h4>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {keyCurrencies.map(code => (
             <div key={code} className="flex justify-between items-center p-3 bg-[#F5F0E8]/50 border border-[#E5E5EA]/10" style={{ borderRadius: 0 }}>
-              <span className="font-semibold text-[#1D1D1F]">{code}</span>
+              <span className="font-semibold text-[#1A1A1A]">{code}</span>
               <span className="font-mono text-sm text-[#8E8E93]">{rates[code]?.toFixed(4) || '—'}</span>
             </div>
           ))}
@@ -100,7 +100,7 @@ export default function CashBankContent() {
         <div className="flex items-start gap-3">
           <span className="text-xl">🤖</span>
           <div>
-            <h5 className="font-semibold text-[#1D1D1F] text-sm">AI Treasury Insight</h5>
+            <h5 className="font-semibold text-[#1A1A1A] text-sm">AI Treasury Insight</h5>
             <p className="text-[#8E8E93] text-sm mt-1">
               PKR weakened 2.1% against USD this week. Consider hedging exposure on upcoming Lahore Wholesale payment.
               AED peg is stable at 3.67. No action required on GCC receivables.

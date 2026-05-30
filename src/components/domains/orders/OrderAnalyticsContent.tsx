@@ -46,7 +46,7 @@ export default function OrderAnalyticsContent({ persona, locale }: OrderAnalytic
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-semibold text-[#1D1D1F]">Order Analytics & Insights</h3>
+        <h3 className="text-sm font-semibold text-[#1A1A1A]">Order Analytics & Insights</h3>
         <select 
             value={timeRange} 
             onChange={(e) => setTimeRange(e.target.value)}
@@ -71,7 +71,7 @@ export default function OrderAnalyticsContent({ persona, locale }: OrderAnalytic
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Order Volume Trend */}
         <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Order Volume Trend</h4>
+            <h4 className="text-sm font-semibold text-[#1A1A1A] mb-4">Order Volume Trend</h4>
             <div className="h-64">
                 <ResponsiveContainer width="100%" height="100%">
                     <BarChart data={monthlyData}>
@@ -89,7 +89,7 @@ export default function OrderAnalyticsContent({ persona, locale }: OrderAnalytic
 
         {/* Revenue Trend */}
         <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-            <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Revenue Correlation</h4>
+            <h4 className="text-sm font-semibold text-[#1A1A1A] mb-4">Revenue Correlation</h4>
             <div className="h-64">
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart data={monthlyData}>
@@ -106,12 +106,12 @@ export default function OrderAnalyticsContent({ persona, locale }: OrderAnalytic
 
       {/* Channel Performance */}
       <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-        <h4 className="text-sm font-semibold text-[#1D1D1F] mb-4">Channel Performance</h4>
+        <h4 className="text-sm font-semibold text-[#1A1A1A] mb-4">Channel Performance</h4>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {channelData.map((channel) => (
                 <div key={channel.name} className="p-4 bg-[#F5F5F7] rounded-lg text-center">
                     <div className="text-sm text-gray-500 mb-1">{channel.name}</div>
-                    <div className="text-2xl font-semibold text-[#1D1D1F]">{channel.value}%</div>
+                    <div className="text-2xl font-semibold text-[#1A1A1A]">{channel.value}%</div>
                     <div className="w-full bg-[#F5F5F7] h-1.5 rounded-full mt-2">
                         <div className="bg-[#6B1F2B] h-1.5 rounded-full" style={{ width: `${channel.value}%` }}></div>
                     </div>

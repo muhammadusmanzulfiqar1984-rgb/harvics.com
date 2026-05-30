@@ -80,7 +80,7 @@ export default function InvoiceListContent({ persona, locale }: InvoiceListConte
     <div className="space-y-6">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-semibold text-[#1D1D1F]">Invoicing & Billing</h3>
+        <h3 className="text-sm font-semibold text-[#1A1A1A]">Invoicing & Billing</h3>
         <button className="px-4 py-2 bg-[#6B1F2B] text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
           + Generate Invoice
         </button>
@@ -131,17 +131,17 @@ export default function InvoiceListContent({ persona, locale }: InvoiceListConte
                 invoices.map((inv) => (
                   <tr key={inv.id} className="hover:bg-[#F5F5F7]">
                     <td className="px-4 py-3 text-sm text-black font-medium">{inv.id}</td>
-                    <td className="px-4 py-3 text-sm text-[#1D1D1F]">{inv.orderId}</td>
+                    <td className="px-4 py-3 text-sm text-[#1A1A1A]">{inv.orderId}</td>
                     <td className="px-4 py-3 text-sm text-black">{inv.customer}</td>
                     <td className="px-4 py-3 text-sm text-black font-medium">
                       {inv.currency} {inv.amount.toLocaleString()}
                     </td>
                     <td className="px-4 py-3 text-sm">
                       <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                        inv.status === 'paid' ? 'bg-[#F5F5F7] text-[#1D1D1F]' :
-                        inv.status === 'overdue' ? 'bg-[#F5F5F7] text-[#1D1D1F]' :
-                        inv.status === 'issued' ? 'bg-[#F5F5F7] text-[#1D1D1F]' :
-                        'bg-[#F5F5F7] text-[#1D1D1F]'
+                        inv.status === 'paid' ? 'bg-[#F5F5F7] text-[#1A1A1A]' :
+                        inv.status === 'overdue' ? 'bg-[#F5F5F7] text-[#1A1A1A]' :
+                        inv.status === 'issued' ? 'bg-[#F5F5F7] text-[#1A1A1A]' :
+                        'bg-[#F5F5F7] text-[#1A1A1A]'
                       }`}>
                         {inv.status.toUpperCase()}
                       </span>

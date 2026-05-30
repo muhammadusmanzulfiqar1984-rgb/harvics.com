@@ -94,7 +94,7 @@ export default function FleetMapView() {
         {/* Header */}
         <div className="px-4 py-4 border-b border-[#E5E5EA]">
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-sm font-semibold text-[#1D1D1F]">Live Fleet</h3>
+            <h3 className="text-sm font-semibold text-[#1A1A1A]">Live Fleet</h3>
             <div className="flex items-center gap-1.5 text-[10px] text-[#8E8E93]">
               <span className="w-1.5 h-1.5 bg-[#34C759] rounded-full animate-pulse" />
               {lastUpdate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}
@@ -132,7 +132,7 @@ export default function FleetMapView() {
             <button key={v.id} onClick={() => { setSelected(v.id); setCenter({ lat: v.lat, lng: v.lng }); }}
               className={`w-full text-left px-4 py-3 transition-colors hover:bg-[#F9F9FB] ${selected === v.id ? 'bg-[#F9F9FB] border-l-2 border-[#6B1F2B]' : ''}`}>
               <div className="flex items-center justify-between mb-1">
-                <span className="text-xs font-semibold text-[#1D1D1F]">{v.id}</span>
+                <span className="text-xs font-semibold text-[#1A1A1A]">{v.id}</span>
                 <span className="text-[10px] font-medium px-1.5 py-0.5 rounded-full" style={{ backgroundColor: STATUS_COLORS[v.status] + '20', color: STATUS_COLORS[v.status] }}>
                   {v.status}
                 </span>
@@ -156,7 +156,7 @@ export default function FleetMapView() {
         {loadError ? (
           <div className="flex items-center justify-center h-full bg-[#F5F5F7]">
             <div className="text-center p-8">
-              <p className="text-[#1D1D1F] font-semibold mb-2">Maps failed to load</p>
+              <p className="text-[#1A1A1A] font-semibold mb-2">Maps failed to load</p>
               <p className="text-sm text-[#8E8E93]">{loadError.message}</p>
             </div>
           </div>
@@ -200,7 +200,7 @@ export default function FleetMapView() {
                   <InfoWindow onCloseClick={() => setSelected(null)} position={{ lat: v.lat, lng: v.lng }}>
                     <div className="p-2 min-w-[200px]">
                       <div className="flex items-center justify-between mb-2">
-                        <span className="font-bold text-sm text-[#1D1D1F]">{v.id}</span>
+                        <span className="font-bold text-sm text-[#1A1A1A]">{v.id}</span>
                         <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ backgroundColor: STATUS_COLORS[v.status] + '20', color: STATUS_COLORS[v.status] }}>{v.status}</span>
                       </div>
                       <p className="text-xs text-[#8E8E93] mb-1">👤 {v.driver}</p>
@@ -237,7 +237,7 @@ export default function FleetMapView() {
             <div className="flex items-start justify-between">
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="font-semibold text-[#1D1D1F]">{selectedVehicle.id}</span>
+                  <span className="font-semibold text-[#1A1A1A]">{selectedVehicle.id}</span>
                   <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ backgroundColor: STATUS_COLORS[selectedVehicle.status] + '20', color: STATUS_COLORS[selectedVehicle.status] }}>
                     {selectedVehicle.status}
                   </span>
@@ -245,7 +245,7 @@ export default function FleetMapView() {
                 <p className="text-sm text-[#8E8E93]">{selectedVehicle.driver} · {selectedVehicle.type}</p>
                 <p className="text-xs text-[#8E8E93] mt-0.5">{selectedVehicle.route}</p>
               </div>
-              <button onClick={() => setSelected(null)} className="text-[#8E8E93] hover:text-[#1D1D1F] text-lg leading-none">×</button>
+              <button onClick={() => setSelected(null)} className="text-[#8E8E93] hover:text-[#1A1A1A] text-lg leading-none">×</button>
             </div>
             <div className="grid grid-cols-4 gap-3 mt-3 pt-3 border-t border-[#E5E5EA]">
               {[
@@ -255,7 +255,7 @@ export default function FleetMapView() {
                 { label: 'ETA', value: selectedVehicle.eta },
               ].map(m => (
                 <div key={m.label} className="text-center">
-                  <p className="text-sm font-semibold text-[#1D1D1F]">{m.value}</p>
+                  <p className="text-sm font-semibold text-[#1A1A1A]">{m.value}</p>
                   <p className="text-[10px] text-[#8E8E93]">{m.label}</p>
                 </div>
               ))}

@@ -69,8 +69,8 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
                   min-h-[48px] flex-shrink-0
                   ${
                     activeTab === tab.id
-                      ? 'text-[#1D1D1F] bg-[#F5F5F7] border-b-2 border-[#6B1F2B] font-semibold'
-                      : 'text-[#1D1D1F] hover:text-[#6B1F2B] hover:bg-[#F5F5F7] border-b border-transparent'
+                      ? 'text-[#1A1A1A] bg-[#F5F5F7] border-b-2 border-[#6B1F2B] font-semibold'
+                      : 'text-[#1A1A1A] hover:text-[#6B1F2B] hover:bg-[#F5F5F7] border-b border-transparent'
                   }
                 `}
                 style={{ fontFamily: 'sans-serif', fontWeight: activeTab === tab.id ? 600 : 500, letterSpacing: '0.05em' }}
@@ -108,15 +108,15 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
 
               {activeTab === 'reports' && (
                 <div className="animate-fadeIn">
-                  <h2 className="text-3xl sm:text-4xl font-semibold text-[#1D1D1F] mb-6 ">
+                  <h2 className="text-3xl sm:text-4xl font-semibold text-[#1A1A1A] mb-6 ">
                     {getTranslation('tabs.reports', 'Annual Reports')}
                   </h2>
                   <div className="space-y-4">
                     <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all cursor-pointer">
                       <div className="flex items-center justify-between">
                         <div>
-                          <h3 className="text-xl font-semibold text-[#1D1D1F] mb-2">Annual Report 2024</h3>
-                          <p className="text-[#1D1D1F]">Complete financial and operational overview</p>
+                          <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">Annual Report 2024</h3>
+                          <p className="text-[#1A1A1A]">Complete financial and operational overview</p>
                         </div>
                         <button className="bg-[#6B1F2B] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#2a0006] transition-colors">
                           Download PDF
@@ -126,8 +126,8 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
                     <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all cursor-pointer">
                       <div className="flex items-center justify-between">
                         <div>
-                          <h3 className="text-xl font-semibold text-[#1D1D1F] mb-2">Annual Report 2023</h3>
-                          <p className="text-[#1D1D1F]">Previous year's comprehensive report</p>
+                          <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">Annual Report 2023</h3>
+                          <p className="text-[#1A1A1A]">Previous year's comprehensive report</p>
                         </div>
                         <button className="bg-[#6B1F2B] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#2a0006] transition-colors">
                           Download PDF
@@ -140,15 +140,15 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
 
               {activeTab === 'presentations' && (
                 <div className="animate-fadeIn">
-                  <h2 className="text-3xl sm:text-4xl font-semibold text-[#1D1D1F] mb-6 ">
+                  <h2 className="text-3xl sm:text-4xl font-semibold text-[#1A1A1A] mb-6 ">
                     {getTranslation('tabs.presentations', 'Presentations')}
                   </h2>
                   <div className="space-y-4">
                     <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all cursor-pointer">
                       <div className="flex items-center justify-between">
                         <div>
-                          <h3 className="text-xl font-semibold text-[#1D1D1F] mb-2">Q4 2024 Earnings Presentation</h3>
-                          <p className="text-[#1D1D1F]">Latest quarterly earnings overview</p>
+                          <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">Q4 2024 Earnings Presentation</h3>
+                          <p className="text-[#1A1A1A]">Latest quarterly earnings overview</p>
                         </div>
                         <button className="bg-[#6B1F2B] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#2a0006] transition-colors">
                           View
@@ -158,8 +158,8 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
                     <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all cursor-pointer">
                       <div className="flex items-center justify-between">
                         <div>
-                          <h3 className="text-xl font-semibold text-[#1D1D1F] mb-2">Investor Day 2024</h3>
-                          <p className="text-[#1D1D1F]">Strategic vision and growth plans</p>
+                          <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">Investor Day 2024</h3>
+                          <p className="text-[#1A1A1A]">Strategic vision and growth plans</p>
                         </div>
                         <button className="bg-[#6B1F2B] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#2a0006] transition-colors">
                           View
@@ -172,7 +172,7 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
 
               {activeTab === 'news' && (
                 <div className="animate-fadeIn">
-                  <h2 className="text-3xl sm:text-4xl font-semibold text-[#1D1D1F] mb-6 ">
+                  <h2 className="text-3xl sm:text-4xl font-semibold text-[#1A1A1A] mb-6 ">
                     {getTranslation('tabs.news', 'News & Announcements')}
                   </h2>
                   <div className="space-y-4">
@@ -180,8 +180,8 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
                       <div className="flex items-start justify-between">
                         <div className="flex-1">
                           <div className="text-sm text-gray-500 mb-2">January 15, 2025</div>
-                          <h3 className="text-xl font-semibold text-[#1D1D1F] mb-2">Strong Q4 Performance</h3>
-                          <p className="text-[#1D1D1F]">Harvics reports record quarterly revenue and expansion into new markets.</p>
+                          <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">Strong Q4 Performance</h3>
+                          <p className="text-[#1A1A1A]">Harvics reports record quarterly revenue and expansion into new markets.</p>
                         </div>
                       </div>
                     </div>
@@ -189,8 +189,8 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
                       <div className="flex items-start justify-between">
                         <div className="flex-1">
                           <div className="text-sm text-gray-500 mb-2">December 10, 2024</div>
-                          <h3 className="text-xl font-semibold text-[#1D1D1F] mb-2">New Product Launch</h3>
-                          <p className="text-[#1D1D1F]">Introduction of premium product line in European markets.</p>
+                          <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">New Product Launch</h3>
+                          <p className="text-[#1A1A1A]">Introduction of premium product line in European markets.</p>
                         </div>
                       </div>
                     </div>
@@ -200,19 +200,19 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
 
               {activeTab === 'contact' && (
                 <div className="animate-fadeIn">
-                  <h2 className="text-3xl sm:text-4xl font-semibold text-[#1D1D1F] mb-6 ">
+                  <h2 className="text-3xl sm:text-4xl font-semibold text-[#1A1A1A] mb-6 ">
                     {getTranslation('tabs.contact', 'Contact Investor Relations')}
                   </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                      <h3 className="text-xl font-semibold text-[#1D1D1F] mb-4">Email</h3>
+                      <h3 className="text-xl font-semibold text-[#1A1A1A] mb-4">Email</h3>
                       <a href="mailto:investors@harvics.com" className="text-[#6B1F2B] hover:text-[#2a0006] font-semibold">
                         investors@harvics.com
                       </a>
                     </div>
                     <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                      <h3 className="text-xl font-semibold text-[#1D1D1F] mb-4">Office Hours</h3>
-                      <p className="text-[#1D1D1F]">Monday - Friday, 9:00 AM - 5:00 PM GMT</p>
+                      <h3 className="text-xl font-semibold text-[#1A1A1A] mb-4">Office Hours</h3>
+                      <p className="text-[#1A1A1A]">Monday - Friday, 9:00 AM - 5:00 PM GMT</p>
                     </div>
                   </div>
                 </div>
@@ -264,11 +264,11 @@ function OverviewTab({ getTranslation }: { getTranslation: (key: string, fallbac
 
   return (
     <div className="animate-fadeIn">
-      <h2 className="text-3xl sm:text-4xl font-semibold text-[#1D1D1F] mb-6 ">
+      <h2 className="text-3xl sm:text-4xl font-semibold text-[#1A1A1A] mb-6 ">
         {getTranslation('tabs.overview', 'Overview')}
       </h2>
       <div className="prose prose-lg max-w-none">
-        <p className="text-[#1D1D1F] text-lg leading-relaxed mb-6">
+        <p className="text-[#1A1A1A] text-lg leading-relaxed mb-6">
           {getTranslation('tabs.overviewContent', 'Welcome to Harvics Global Ventures Investor Relations. We are committed to transparency and providing our investors with comprehensive information about our financial performance, strategic initiatives, and growth opportunities.')}
         </p>
         
@@ -279,10 +279,10 @@ function OverviewTab({ getTranslation }: { getTranslation: (key: string, fallbac
               <span className="text-xs text-gray-500 uppercase tracking-wide">Total Revenue</span>
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
             </div>
-            <div className="text-2xl md:text-3xl font-semibold text-[#1D1D1F] mb-1 transition-all duration-500">
+            <div className="text-2xl md:text-3xl font-semibold text-[#1A1A1A] mb-1 transition-all duration-500">
               {formatCurrency(liveMetrics.totalRevenue)}
             </div>
-            <div className="text-xs text-[#1D1D1F] flex items-center">
+            <div className="text-xs text-[#1A1A1A] flex items-center">
               <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
               </svg>
@@ -295,10 +295,10 @@ function OverviewTab({ getTranslation }: { getTranslation: (key: string, fallbac
               <span className="text-xs text-gray-500 uppercase tracking-wide">Market Cap</span>
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
             </div>
-            <div className="text-2xl md:text-3xl font-semibold text-[#1D1D1F] mb-1 transition-all duration-500">
+            <div className="text-2xl md:text-3xl font-semibold text-[#1A1A1A] mb-1 transition-all duration-500">
               {formatCurrency(liveMetrics.marketCap)}
             </div>
-            <div className="text-xs text-[#1D1D1F]">Live Valuation</div>
+            <div className="text-xs text-[#1A1A1A]">Live Valuation</div>
           </div>
 
           <div className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
@@ -306,10 +306,10 @@ function OverviewTab({ getTranslation }: { getTranslation: (key: string, fallbac
               <span className="text-xs text-gray-500 uppercase tracking-wide">Net Profit</span>
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
             </div>
-            <div className="text-2xl md:text-3xl font-semibold text-[#1D1D1F] mb-1 transition-all duration-500">
+            <div className="text-2xl md:text-3xl font-semibold text-[#1A1A1A] mb-1 transition-all duration-500">
               {formatCurrency(liveMetrics.netProfit)}
             </div>
-            <div className="text-xs text-[#1D1D1F]">Q4 2024</div>
+            <div className="text-xs text-[#1A1A1A]">Q4 2024</div>
           </div>
 
           <div className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
@@ -317,10 +317,10 @@ function OverviewTab({ getTranslation }: { getTranslation: (key: string, fallbac
               <span className="text-xs text-gray-500 uppercase tracking-wide">Market Share</span>
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
             </div>
-            <div className="text-2xl md:text-3xl font-semibold text-[#1D1D1F] mb-1 transition-all duration-500">
+            <div className="text-2xl md:text-3xl font-semibold text-[#1A1A1A] mb-1 transition-all duration-500">
               {liveMetrics.marketShare.toFixed(1)}%
             </div>
-            <div className="text-xs text-[#1D1D1F]">Global FMCG</div>
+            <div className="text-xs text-[#1A1A1A]">Global FMCG</div>
           </div>
 
           <div className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
@@ -328,10 +328,10 @@ function OverviewTab({ getTranslation }: { getTranslation: (key: string, fallbac
               <span className="text-xs text-gray-500 uppercase tracking-wide">Total Orders</span>
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
             </div>
-            <div className="text-2xl md:text-3xl font-semibold text-[#1D1D1F] mb-1 transition-all duration-500">
+            <div className="text-2xl md:text-3xl font-semibold text-[#1A1A1A] mb-1 transition-all duration-500">
               {liveMetrics.totalOrders.toLocaleString()}
             </div>
-            <div className="text-xs text-[#1D1D1F]">30-Day Period</div>
+            <div className="text-xs text-[#1A1A1A]">30-Day Period</div>
           </div>
 
           <div className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
@@ -339,10 +339,10 @@ function OverviewTab({ getTranslation }: { getTranslation: (key: string, fallbac
               <span className="text-xs text-gray-500 uppercase tracking-wide">Active Markets</span>
               <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
             </div>
-            <div className="text-2xl md:text-3xl font-semibold text-[#1D1D1F] mb-1">
+            <div className="text-2xl md:text-3xl font-semibold text-[#1A1A1A] mb-1">
               {liveMetrics.activeMarkets}
             </div>
-            <div className="text-xs text-[#1D1D1F]">Countries</div>
+            <div className="text-xs text-[#1A1A1A]">Countries</div>
           </div>
 
           <div className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
@@ -350,10 +350,10 @@ function OverviewTab({ getTranslation }: { getTranslation: (key: string, fallbac
               <span className="text-xs text-gray-500 uppercase tracking-wide">Growth Rate</span>
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
             </div>
-            <div className="text-2xl md:text-3xl font-semibold text-[#1D1D1F] mb-1 transition-all duration-500">
+            <div className="text-2xl md:text-3xl font-semibold text-[#1A1A1A] mb-1 transition-all duration-500">
               +{liveMetrics.growthRate.toFixed(1)}%
             </div>
-            <div className="text-xs text-[#1D1D1F]">YoY Increase</div>
+            <div className="text-xs text-[#1A1A1A]">YoY Increase</div>
           </div>
 
           <div className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
@@ -361,10 +361,10 @@ function OverviewTab({ getTranslation }: { getTranslation: (key: string, fallbac
               <span className="text-xs text-gray-500 uppercase tracking-wide">Employees</span>
               <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
             </div>
-            <div className="text-2xl md:text-3xl font-semibold text-[#1D1D1F] mb-1">
+            <div className="text-2xl md:text-3xl font-semibold text-[#1A1A1A] mb-1">
               {liveMetrics.employeeCount.toLocaleString()}
             </div>
-            <div className="text-xs text-[#1D1D1F]">Global Workforce</div>
+            <div className="text-xs text-[#1A1A1A]">Global Workforce</div>
           </div>
         </div>
         
@@ -375,16 +375,16 @@ function OverviewTab({ getTranslation }: { getTranslation: (key: string, fallbac
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
           <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
-            <h3 className="text-xl font-semibold text-[#1D1D1F] mb-2">Market Presence</h3>
-            <p className="text-[#1D1D1F]">Global operations across multiple markets</p>
+            <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">Market Presence</h3>
+            <p className="text-[#1A1A1A]">Global operations across multiple markets</p>
           </div>
           <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
-            <h3 className="text-xl font-semibold text-[#1D1D1F] mb-2">Growth Strategy</h3>
-            <p className="text-[#1D1D1F]">Expansion and innovation focus</p>
+            <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">Growth Strategy</h3>
+            <p className="text-[#1A1A1A]">Expansion and innovation focus</p>
           </div>
           <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
-            <h3 className="text-xl font-semibold text-[#1D1D1F] mb-2">Financial Strength</h3>
-            <p className="text-[#1D1D1F]">Strong balance sheet and cash flow</p>
+            <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">Financial Strength</h3>
+            <p className="text-[#1A1A1A]">Strong balance sheet and cash flow</p>
           </div>
         </div>
       </div>
@@ -492,25 +492,25 @@ function FinancialResultsTab({ getTranslation }: { getTranslation: (key: string,
 
   return (
     <div className="animate-fadeIn">
-      <h2 className="text-3xl sm:text-4xl font-semibold text-[#1D1D1F] mb-6 ">
+      <h2 className="text-3xl sm:text-4xl font-semibold text-[#1A1A1A] mb-6 ">
         {getTranslation('tabs.financials', 'Financial Results')}
       </h2>
       <div className="space-y-6">
         <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-xl font-semibold text-[#1D1D1F]">Latest Financial Results</h3>
+            <h3 className="text-xl font-semibold text-[#1A1A1A]">Latest Financial Results</h3>
             <div className="flex items-center space-x-2">
               {isLive && (
                 <>
                   <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="px-3 py-1 bg-[#F5F5F7] text-[#1D1D1F] text-xs font-semibold rounded-full border border-green-200">
+                  <span className="px-3 py-1 bg-[#F5F5F7] text-[#1A1A1A] text-xs font-semibold rounded-full border border-green-200">
                     LIVE
                   </span>
                 </>
               )}
             </div>
           </div>
-          <p className="text-[#1D1D1F] mb-6">
+          <p className="text-[#1A1A1A] mb-6">
             {getTranslation('tabs.financialsContent', 'View our latest quarterly and annual financial results, including revenue, profit margins, and key performance indicators.')}
           </p>
           
@@ -520,71 +520,71 @@ function FinancialResultsTab({ getTranslation }: { getTranslation: (key: string,
             <>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
                 <div className="text-center bg-[#F5F5F7] p-4 rounded-xl border border-gray-100 hover:border-gray-300 transition-all duration-300 hover:scale-105">
-                  <div className="text-2xl font-semibold text-[#1D1D1F]">Q4 2024</div>
-                  <div className="text-sm text-[#1D1D1F]">Latest Quarter</div>
+                  <div className="text-2xl font-semibold text-[#1A1A1A]">Q4 2024</div>
+                  <div className="text-sm text-[#1A1A1A]">Latest Quarter</div>
                 </div>
                 <div className="text-center bg-[#F5F5F7] p-4 rounded-xl border border-gray-100 hover:border-gray-300 transition-all duration-500 hover:scale-105">
                   <div className="flex items-center justify-center mb-1">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></div>
-                    <div className="text-2xl font-semibold text-[#1D1D1F]">
+                    <div className="text-2xl font-semibold text-[#1A1A1A]">
                       {fluctuatingMetrics.growth >= 0 ? '+' : ''}{fluctuatingMetrics.growth.toFixed(1)}%
                     </div>
                   </div>
-                  <div className="text-sm text-[#1D1D1F]">Revenue Growth (30d)</div>
+                  <div className="text-sm text-[#1A1A1A]">Revenue Growth (30d)</div>
                 </div>
                 <div className="text-center bg-[#F5F5F7] p-4 rounded-xl border border-gray-100 hover:border-gray-300 transition-all duration-500 hover:scale-105">
                   <div className="flex items-center justify-center mb-1">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></div>
-                    <div className="text-2xl font-semibold text-[#1D1D1F]">
+                    <div className="text-2xl font-semibold text-[#1A1A1A]">
                       ${(fluctuatingMetrics.revenue30d / 1000000000).toFixed(2)}B
                     </div>
                   </div>
-                  <div className="text-sm text-[#1D1D1F]">Revenue (30d)</div>
+                  <div className="text-sm text-[#1A1A1A]">Revenue (30d)</div>
                 </div>
                 <div className="text-center bg-[#F5F5F7] p-4 rounded-xl border border-gray-100 hover:border-gray-300 transition-all duration-500 hover:scale-105">
                   <div className="flex items-center justify-center mb-1">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></div>
-                    <div className="text-2xl font-semibold text-[#1D1D1F]">
+                    <div className="text-2xl font-semibold text-[#1A1A1A]">
                       ${fluctuatingMetrics.avgOrderValue.toLocaleString()}
                     </div>
                   </div>
-                  <div className="text-sm text-[#1D1D1F]">Avg Order Value</div>
+                  <div className="text-sm text-[#1A1A1A]">Avg Order Value</div>
                 </div>
                 <div className="text-center bg-[#F5F5F7] p-4 rounded-xl border border-gray-100 hover:border-gray-300 transition-all duration-500 hover:scale-105">
                   <div className="flex items-center justify-center mb-1">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></div>
-                    <div className="text-2xl font-semibold text-[#1D1D1F]">
+                    <div className="text-2xl font-semibold text-[#1A1A1A]">
                       ${(fluctuatingMetrics.netProfit / 1000000000).toFixed(2)}B
                     </div>
                   </div>
-                  <div className="text-sm text-[#1D1D1F]">Net Profit</div>
+                  <div className="text-sm text-[#1A1A1A]">Net Profit</div>
                 </div>
                 <div className="text-center bg-[#F5F5F7] p-4 rounded-xl border border-gray-100 hover:border-gray-300 transition-all duration-500 hover:scale-105">
                   <div className="flex items-center justify-center mb-1">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></div>
-                    <div className="text-2xl font-semibold text-[#1D1D1F]">
+                    <div className="text-2xl font-semibold text-[#1A1A1A]">
                       {fluctuatingMetrics.ordersToday.toLocaleString()}
                     </div>
                   </div>
-                  <div className="text-sm text-[#1D1D1F]">Orders Today</div>
+                  <div className="text-sm text-[#1A1A1A]">Orders Today</div>
                 </div>
                 <div className="text-center bg-[#F5F5F7] p-4 rounded-xl border border-gray-100 hover:border-gray-300 transition-all duration-500 hover:scale-105">
                   <div className="flex items-center justify-center mb-1">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></div>
-                    <div className="text-2xl font-semibold text-[#1D1D1F]">
+                    <div className="text-2xl font-semibold text-[#1A1A1A]">
                       ${(fluctuatingMetrics.revenueYTD / 1000000000).toFixed(2)}B
                     </div>
                   </div>
-                  <div className="text-sm text-[#1D1D1F]">Revenue YTD</div>
+                  <div className="text-sm text-[#1A1A1A]">Revenue YTD</div>
                 </div>
                 <div className="text-center bg-[#F5F5F7] p-4 rounded-xl border border-gray-100 hover:border-gray-300 transition-all duration-500 hover:scale-105">
                   <div className="flex items-center justify-center mb-1">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></div>
-                    <div className="text-2xl font-semibold text-[#1D1D1F]">
+                    <div className="text-2xl font-semibold text-[#1A1A1A]">
                       {fluctuatingMetrics.operatingMargin.toFixed(1)}%
                     </div>
                   </div>
-                  <div className="text-sm text-[#1D1D1F]">Operating Margin</div>
+                  <div className="text-sm text-[#1A1A1A]">Operating Margin</div>
                 </div>
               </div>
               
@@ -592,38 +592,38 @@ function FinancialResultsTab({ getTranslation }: { getTranslation: (key: string,
                 <div className="text-center bg-[#F5F5F7] p-4 rounded-xl border border-gray-100 hover:border-gray-300 transition-all duration-500 hover:scale-105">
                   <div className="flex items-center justify-center mb-1">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></div>
-                    <div className="text-2xl font-semibold text-[#1D1D1F]">
+                    <div className="text-2xl font-semibold text-[#1A1A1A]">
                       ${(fluctuatingMetrics.ebitda / 1000000000).toFixed(2)}B
                     </div>
                   </div>
-                  <div className="text-sm text-[#1D1D1F]">EBITDA</div>
+                  <div className="text-sm text-[#1A1A1A]">EBITDA</div>
                 </div>
                 <div className="text-center bg-[#F5F5F7] p-4 rounded-xl border border-gray-100 hover:border-gray-300 transition-all duration-500 hover:scale-105">
                   <div className="flex items-center justify-center mb-1">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></div>
-                    <div className="text-2xl font-semibold text-[#1D1D1F]">
+                    <div className="text-2xl font-semibold text-[#1A1A1A]">
                       ${(fluctuatingMetrics.cashFlow / 1000000000).toFixed(2)}B
                     </div>
                   </div>
-                  <div className="text-sm text-[#1D1D1F]">Cash Flow</div>
+                  <div className="text-sm text-[#1A1A1A]">Cash Flow</div>
                 </div>
                 <div className="text-center bg-[#F5F5F7] p-4 rounded-xl border border-gray-100 hover:border-gray-300 transition-all duration-500 hover:scale-105">
                   <div className="flex items-center justify-center mb-1">
                     <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse mr-2"></div>
-                    <div className="text-2xl font-semibold text-[#1D1D1F]">
+                    <div className="text-2xl font-semibold text-[#1A1A1A]">
                       {fluctuatingMetrics.debtToEquity.toFixed(2)}
                     </div>
                   </div>
-                  <div className="text-sm text-[#1D1D1F]">Debt-to-Equity</div>
+                  <div className="text-sm text-[#1A1A1A]">Debt-to-Equity</div>
                 </div>
                 <div className="text-center bg-[#F5F5F7] p-4 rounded-xl border border-gray-100 hover:border-gray-300 transition-all duration-500 hover:scale-105">
                   <div className="flex items-center justify-center mb-1">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></div>
-                    <div className="text-2xl font-semibold text-[#1D1D1F]">
+                    <div className="text-2xl font-semibold text-[#1A1A1A]">
                       {fluctuatingMetrics.returnOnEquity.toFixed(1)}%
                     </div>
                   </div>
-                  <div className="text-sm text-[#1D1D1F]">Return on Equity</div>
+                  <div className="text-sm text-[#1A1A1A]">Return on Equity</div>
                 </div>
               </div>
             </>

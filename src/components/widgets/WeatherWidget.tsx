@@ -72,7 +72,7 @@ export function WeatherWidget() {
   if (loading) return (
     <div className="bg-white rounded-2xl border border-[#EAE0D5] p-5">
       <div className="flex items-center gap-2 mb-3">
-        <span className="text-sm font-semibold text-[#1D1D1F]">Logistics Weather</span>
+        <span className="text-sm font-semibold text-[#1A1A1A]">Logistics Weather</span>
         <span className="w-1.5 h-1.5 bg-[#8E8E93] rounded-full animate-pulse" />
       </div>
       <div className="space-y-2">
@@ -86,7 +86,7 @@ export function WeatherWidget() {
   return (
     <div className="bg-white rounded-2xl border border-[#EAE0D5] overflow-hidden">
       <div className="px-5 py-4 border-b border-[#EAE0D5] flex items-center justify-between">
-        <h4 className="text-sm font-semibold text-[#1D1D1F]">Live Weather — Logistics Hubs</h4>
+        <h4 className="text-sm font-semibold text-[#1A1A1A]">Live Weather — Logistics Hubs</h4>
         <span className="flex items-center gap-1.5 text-xs text-[#34C759] font-medium">
           <span className="w-1.5 h-1.5 bg-[#34C759] rounded-full animate-pulse" />
           Live
@@ -110,7 +110,7 @@ export function WeatherWidget() {
             <span className="text-5xl">{WEATHER_ICONS[active.icon] || '🌡️'}</span>
             <div>
               <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-semibold text-[#1D1D1F]">{active.temp}°</span>
+                <span className="text-3xl font-semibold text-[#1A1A1A]">{active.temp}°</span>
                 <span className="text-sm text-[#8E8E93]">C</span>
               </div>
               <p className="text-sm text-[#8E8E93] capitalize">{active.description}</p>
@@ -127,7 +127,7 @@ export function WeatherWidget() {
             ].map(s => (
               <div key={s.label} className="bg-[#FAF8F5] rounded-xl p-3 text-center">
                 <p className="text-base">{s.icon}</p>
-                <p className="text-xs font-semibold text-[#1D1D1F] mt-1">{s.value}</p>
+                <p className="text-xs font-semibold text-[#1A1A1A] mt-1">{s.value}</p>
                 <p className="text-[10px] text-[#8E8E93]">{s.label}</p>
               </div>
             ))}

@@ -23,7 +23,7 @@ export default function OrderListContent({ persona, locale }: { persona: string;
     <div className="space-y-6">
       <div className="flex items-center justify-between flex-wrap gap-3">
         <div>
-          <h2 className="text-lg font-semibold text-[#1D1D1F]">Order Management</h2>
+          <h2 className="text-lg font-semibold text-[#1A1A1A]">Order Management</h2>
           <p className="text-sm text-[#8E8E93] mt-0.5">Live order pipeline across all markets</p>
         </div>
         <LiveBadge source={source} lastUpdated={lastUpdated} />
@@ -70,7 +70,7 @@ export default function OrderListContent({ persona, locale }: { persona: string;
                 <div key={i} className="flex items-center justify-between text-xs">
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full" style={{ backgroundColor: channelColors[i % channelColors.length] }} />
-                    <span className="text-[#1D1D1F]">{c.channel}</span>
+                    <span className="text-[#1A1A1A]">{c.channel}</span>
                   </div>
                   <span className="text-[#8E8E93] tabular-nums">{c.count} · {fmtMoney(c.revenue)}</span>
                 </div>
@@ -85,7 +85,7 @@ export default function OrderListContent({ persona, locale }: { persona: string;
         <div className="flex gap-6">
           {(['orders', 'analytics'] as const).map(t => (
             <button key={t} onClick={() => setTab(t)}
-              className={`pb-3 text-sm font-medium capitalize transition-colors border-b-2 -mb-px ${tab === t ? 'border-[#6B1F2B] text-[#1D1D1F]' : 'border-transparent text-[#8E8E93] hover:text-[#1D1D1F]'}`}>
+              className={`pb-3 text-sm font-medium capitalize transition-colors border-b-2 -mb-px ${tab === t ? 'border-[#6B1F2B] text-[#1A1A1A]' : 'border-transparent text-[#8E8E93] hover:text-[#1A1A1A]'}`}>
               {t.charAt(0).toUpperCase() + t.slice(1)}
             </button>
           ))}
@@ -116,12 +116,12 @@ export default function OrderListContent({ persona, locale }: { persona: string;
             ]}
             rows={filtered.map((o: any) => ({
               id: <span className="font-mono text-xs text-[#8E8E93]">{o.id}</span>,
-              customer: <span className="font-medium text-[#1D1D1F]">{o.customer}</span>,
-              country: <span className="text-[#1D1D1F]">{o.country}</span>,
+              customer: <span className="font-medium text-[#1A1A1A]">{o.customer}</span>,
+              country: <span className="text-[#1A1A1A]">{o.country}</span>,
               channel: <span className="text-xs text-[#8E8E93] bg-[#F5F5F7] px-2 py-0.5 rounded-full">{o.channel}</span>,
               status: <StatusDot status={o.status} />,
               date: <span className="text-[#8E8E93]">{o.date}</span>,
-              amount: <span className="font-semibold text-[#1D1D1F]">{fmtMoney(o.amount)}</span>,
+              amount: <span className="font-semibold text-[#1A1A1A]">{fmtMoney(o.amount)}</span>,
             }))}
           />
         </Card>

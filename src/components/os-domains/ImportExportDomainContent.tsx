@@ -47,7 +47,7 @@ function TradeOverviewScreen() {
       </div>
       <div className="bg-[#F5F5F7] border-l-4 border-[#E5E5EA] p-4" style={{ borderRadius: 0 }}>
         <div className="text-sm text-[#8E8E93]">Total Trade Value (Last 30 Days)</div>
-        <div className="text-2xl font-semibold text-[#1D1D1F]">${tradeData.overview.totalValue.toLocaleString()}</div>
+        <div className="text-2xl font-semibold text-[#1A1A1A]">${tradeData.overview.totalValue.toLocaleString()}</div>
       </div>
     </div>
   )
@@ -57,7 +57,7 @@ function ImportOrdersScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Import Orders</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Import Orders</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -70,15 +70,15 @@ function ImportOrdersScreen() {
             <tbody>
               {tradeData.imports.map((o, i) => (
                 <tr key={o.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{o.id}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{o.id}</td>
                   <td className="px-4 py-3">{o.supplier}</td>
                   <td className="px-4 py-3">{o.origin}</td>
                   <td className="px-4 py-3">{o.product}</td>
                   <td className="px-4 py-3 font-mono text-[#8E8E93]">{o.hsCode}</td>
                   <td className="px-4 py-3 text-right">{o.quantity.toLocaleString()}</td>
-                  <td className="px-4 py-3 text-right font-semibold text-[#1D1D1F]">${o.value.toLocaleString()}</td>
-                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${o.status === 'Delivered' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : o.status === 'In Transit' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{o.status}</span></td>
-                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${o.customsStatus === 'Cleared' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{o.customsStatus}</span></td>
+                  <td className="px-4 py-3 text-right font-semibold text-[#1A1A1A]">${o.value.toLocaleString()}</td>
+                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${o.status === 'Delivered' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : o.status === 'In Transit' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{o.status}</span></td>
+                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${o.customsStatus === 'Cleared' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{o.customsStatus}</span></td>
                   <td className="px-4 py-3 text-[#8E8E93]">{o.eta}</td>
                 </tr>
               ))}
@@ -94,7 +94,7 @@ function ExportOrdersScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Export Orders</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Export Orders</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -107,15 +107,15 @@ function ExportOrdersScreen() {
             <tbody>
               {tradeData.exports.map((o, i) => (
                 <tr key={o.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{o.id}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{o.id}</td>
                   <td className="px-4 py-3">{o.customer}</td>
                   <td className="px-4 py-3">{o.destination}</td>
                   <td className="px-4 py-3">{o.product}</td>
                   <td className="px-4 py-3 font-mono text-[#8E8E93]">{o.hsCode}</td>
                   <td className="px-4 py-3 text-right">{o.quantity.toLocaleString()}</td>
-                  <td className="px-4 py-3 text-right font-semibold text-[#1D1D1F]">${o.value.toLocaleString()}</td>
-                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${o.status === 'Shipped' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : o.status === 'In Transit' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{o.status}</span></td>
-                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${o.customsStatus === 'Cleared' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{o.customsStatus}</span></td>
+                  <td className="px-4 py-3 text-right font-semibold text-[#1A1A1A]">${o.value.toLocaleString()}</td>
+                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${o.status === 'Shipped' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : o.status === 'In Transit' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{o.status}</span></td>
+                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${o.customsStatus === 'Cleared' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{o.customsStatus}</span></td>
                   <td className="px-4 py-3 text-[#8E8E93]">{o.etd}</td>
                 </tr>
               ))}
@@ -131,7 +131,7 @@ function CustomsTariffsScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">HS Code Database</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">HS Code Database</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -161,7 +161,7 @@ function TradeDocumentsScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Trade Documentation</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Trade Documentation</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -172,10 +172,10 @@ function TradeDocumentsScreen() {
             <tbody>
               {tradeData.documents.map((doc, i) => (
                 <tr key={doc.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{doc.id}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{doc.id}</td>
                   <td className="px-4 py-3">{doc.type}</td>
                   <td className="px-4 py-3">{doc.orderId}</td>
-                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${doc.status === 'Generated' || doc.status === 'Received' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{doc.status}</span></td>
+                  <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${doc.status === 'Generated' || doc.status === 'Received' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{doc.status}</span></td>
                   <td className="px-4 py-3 text-[#8E8E93]">{doc.date}</td>
                   <td className="px-4 py-3 text-center"><button className="text-[#C3A35E] hover:text-[#6B1F2B] font-bold text-xs">View</button></td>
                 </tr>

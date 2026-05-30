@@ -18,7 +18,7 @@ export default function PLOverviewContent({ persona, locale }: { persona: string
     <div className="space-y-6">
       <div className="flex items-center justify-between flex-wrap gap-3">
         <div>
-          <h2 className="text-lg font-semibold text-[#1D1D1F]">P&L Overview</h2>
+          <h2 className="text-lg font-semibold text-[#1A1A1A]">P&L Overview</h2>
           <p className="text-sm text-[#8E8E93] mt-0.5">Enterprise performance at a glance</p>
         </div>
         <LiveBadge source={source} lastUpdated={lastUpdated} />
@@ -48,7 +48,7 @@ export default function PLOverviewContent({ persona, locale }: { persona: string
               {(data.kpiTrend || []).map((q: any, i: number) => (
                 <div key={i} className={`rounded-xl p-3 text-center ${i === (data.kpiTrend?.length || 1) - 1 ? 'bg-[#6B1F2B]' : 'bg-[#F5F5F7]'}`}>
                   <p className={`text-xs font-medium mb-1 ${i === (data.kpiTrend?.length || 1) - 1 ? 'text-[#C3A35E]' : 'text-[#8E8E93]'}`}>{q.month}</p>
-                  <p className={`text-base font-semibold tabular-nums ${i === (data.kpiTrend?.length || 1) - 1 ? 'text-white' : 'text-[#1D1D1F]'}`}>{fmtM(q.revenue)}</p>
+                  <p className={`text-base font-semibold tabular-nums ${i === (data.kpiTrend?.length || 1) - 1 ? 'text-white' : 'text-[#1A1A1A]'}`}>{fmtM(q.revenue)}</p>
                   <p className={`text-xs tabular-nums ${i === (data.kpiTrend?.length || 1) - 1 ? 'text-[#C3A35E]/70' : 'text-[#8E8E93]'}`}>{fmtM(q.profit)} profit</p>
                 </div>
               ))}
@@ -89,7 +89,7 @@ export default function PLOverviewContent({ persona, locale }: { persona: string
                   <div key={i} className="px-4 py-3 flex gap-3 items-start">
                     <span className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: colors[a.type] || '#8E8E93' }} />
                     <div>
-                      <p className="text-xs text-[#1D1D1F] leading-snug">{a.message}</p>
+                      <p className="text-xs text-[#1A1A1A] leading-snug">{a.message}</p>
                       <p className="text-[10px] text-[#8E8E93] mt-0.5">{a.domain} · {a.time}</p>
                     </div>
                   </div>

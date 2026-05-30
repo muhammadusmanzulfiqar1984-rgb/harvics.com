@@ -69,7 +69,7 @@ function WorkflowOverviewScreen() {
         <KPICard label="Avg Processing" value={workflowData.overview.avgProcessingTime} icon="⏱️" />
       </div>
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Workflow Engine Status</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Workflow Engine Status</h4>
         <div className="space-y-4">
           {[
             { name: 'Order Fulfillment Workflow', desc: 'End-to-end order processing automation' },
@@ -78,10 +78,10 @@ function WorkflowOverviewScreen() {
           ].map(wf => (
             <div key={wf.name} className="flex items-center justify-between p-4 bg-[#F5F5F7] border border-[#E5E5EA]/20" style={{ borderRadius: 0 }}>
               <div>
-                <div className="font-semibold text-[#1D1D1F]">{wf.name}</div>
+                <div className="font-semibold text-[#1A1A1A]">{wf.name}</div>
                 <div className="text-sm text-[#8E8E93]">{wf.desc}</div>
               </div>
-              <span className="px-3 py-1 text-sm font-bold bg-[#F5F5F7] text-[#1D1D1F]" style={{ borderRadius: 0 }}>Active</span>
+              <span className="px-3 py-1 text-sm font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>Active</span>
             </div>
           ))}
         </div>
@@ -94,11 +94,11 @@ function OrderFulfillmentScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Order Fulfillment Workflow (8 Steps)</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Order Fulfillment Workflow (8 Steps)</h4>
         <div className="flex items-center gap-1 mb-6 overflow-x-auto pb-2">
           {workflowData.orderFulfillment.steps.map((s, idx) => (
             <div key={idx} className="flex items-center flex-shrink-0">
-              <div className={`w-8 h-8 flex items-center justify-center font-bold text-xs ${s.status === 'Completed' ? 'bg-[#F5F5F7]0 text-white' : s.status === 'In Progress' ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>
+              <div className={`w-8 h-8 flex items-center justify-center font-bold text-xs ${s.status === 'Completed' ? 'bg-[#F5F5F7]0 text-white' : s.status === 'In Progress' ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>
                 {s.status === 'Completed' ? '' : s.step}
               </div>
               <div className="mx-1 text-xs text-[#8E8E93] max-w-[60px] text-center leading-tight">{s.name}</div>
@@ -108,7 +108,7 @@ function OrderFulfillmentScreen() {
             </div>
           ))}
         </div>
-        <h5 className="font-semibold text-[#1D1D1F] mb-3">Active Orders in Workflow</h5>
+        <h5 className="font-semibold text-[#1A1A1A] mb-3">Active Orders in Workflow</h5>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -119,9 +119,9 @@ function OrderFulfillmentScreen() {
             <tbody>
               {workflowData.orderFulfillment.activeOrders.map((o, i) => (
                 <tr key={o.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{o.id}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{o.id}</td>
                   <td className="px-4 py-3">{o.customer}</td>
-                  <td className="px-4 py-3 text-right font-semibold text-[#1D1D1F]">${o.amount.toLocaleString()}</td>
+                  <td className="px-4 py-3 text-right font-semibold text-[#1A1A1A]">${o.amount.toLocaleString()}</td>
                   <td className="px-4 py-3">{o.currentStep}</td>
                   <td className="px-4 py-3">
                     <div className="flex items-center gap-2">
@@ -144,27 +144,27 @@ function ImportExportFlowScreen() {
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-          <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Import Workflow</h4>
+          <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Import Workflow</h4>
           <div className="space-y-3">
             {workflowData.importExportFlow.importSteps.map((s, i) => (
               <div key={i} className="flex items-center gap-3">
-                <div className={`w-8 h-8 flex items-center justify-center font-bold text-xs flex-shrink-0 ${s.status === 'Completed' ? 'bg-[#F5F5F7]0 text-white' : s.status === 'In Progress' ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>
+                <div className={`w-8 h-8 flex items-center justify-center font-bold text-xs flex-shrink-0 ${s.status === 'Completed' ? 'bg-[#F5F5F7]0 text-white' : s.status === 'In Progress' ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>
                   {s.status === 'Completed' ? '' : i + 1}
                 </div>
-                <div className="flex-1"><div className="font-semibold text-[#1D1D1F] text-sm">{s.name}</div><div className="text-xs text-[#8E8E93]">{s.status}</div></div>
+                <div className="flex-1"><div className="font-semibold text-[#1A1A1A] text-sm">{s.name}</div><div className="text-xs text-[#8E8E93]">{s.status}</div></div>
               </div>
             ))}
           </div>
         </div>
         <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-          <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Export Workflow</h4>
+          <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Export Workflow</h4>
           <div className="space-y-3">
             {workflowData.importExportFlow.exportSteps.map((s, i) => (
               <div key={i} className="flex items-center gap-3">
-                <div className={`w-8 h-8 flex items-center justify-center font-bold text-xs flex-shrink-0 ${s.status === 'Completed' ? 'bg-[#F5F5F7]0 text-white' : s.status === 'In Progress' ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>
+                <div className={`w-8 h-8 flex items-center justify-center font-bold text-xs flex-shrink-0 ${s.status === 'Completed' ? 'bg-[#F5F5F7]0 text-white' : s.status === 'In Progress' ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>
                   {s.status === 'Completed' ? '' : i + 1}
                 </div>
-                <div className="flex-1"><div className="font-semibold text-[#1D1D1F] text-sm">{s.name}</div><div className="text-xs text-[#8E8E93]">{s.status}</div></div>
+                <div className="flex-1"><div className="font-semibold text-[#1A1A1A] text-sm">{s.name}</div><div className="text-xs text-[#8E8E93]">{s.status}</div></div>
               </div>
             ))}
           </div>
@@ -178,21 +178,21 @@ function ComplianceFlowScreen() {
   return (
     <div className="space-y-6">
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Compliance Check Status</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Compliance Check Status</h4>
         <div className="space-y-4">
           {workflowData.complianceChecks.map(c => (
             <div key={c.id} className="flex items-center justify-between p-4 border border-[#E5E5EA]/20" style={{ borderRadius: 0 }}>
               <div>
-                <div className="font-semibold text-[#1D1D1F]">{c.type}</div>
+                <div className="font-semibold text-[#1A1A1A]">{c.type}</div>
                 <div className="text-sm text-[#8E8E93]">Order: {c.orderId} | Checked: {c.checkedAt}</div>
               </div>
-              <span className={`px-3 py-1 text-sm font-bold ${c.status === 'Passed' ? 'bg-[#F5F5F7] text-[#1D1D1F]' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`} style={{ borderRadius: 0 }}>{c.status}</span>
+              <span className={`px-3 py-1 text-sm font-bold ${c.status === 'Passed' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{c.status}</span>
             </div>
           ))}
         </div>
       </div>
       <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1D1D1F] mb-4">Compliance Rules</h4>
+        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Compliance Rules</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
@@ -203,11 +203,11 @@ function ComplianceFlowScreen() {
             <tbody>
               {workflowData.complianceRules.map((r, i) => (
                 <tr key={r.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{r.id}</td>
+                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{r.id}</td>
                   <td className="px-4 py-3">{r.name}</td>
-                  <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1D1D1F]" style={{ borderRadius: 0 }}>{r.type}</span></td>
+                  <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{r.type}</span></td>
                   <td className="px-4 py-3">{r.appliesTo}</td>
-                  <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1D1D1F]" style={{ borderRadius: 0 }}>{r.status}</span></td>
+                  <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{r.status}</span></td>
                 </tr>
               ))}
             </tbody>

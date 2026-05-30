@@ -22,7 +22,7 @@ export default function QualityDomainContent({ persona, locale }: QualityDomainC
           icon: '',
           component: (
             <div className="p-6 space-y-4">
-              <h3 className="text-xl font-semibold text-[#1D1D1F]">Inspection Plan Library</h3>
+              <h3 className="text-xl font-semibold text-[#1A1A1A]">Inspection Plan Library</h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
@@ -36,10 +36,10 @@ export default function QualityDomainContent({ persona, locale }: QualityDomainC
                   <tbody>
                     {[{ plan: 'FMCG Batch Release', ind: 'FMCG', sampling: 'AQL 1.0', status: 'Active' }, { plan: 'Textile Dye Lot Check', ind: 'Textiles', sampling: 'Lot Based', status: 'Active' }, { plan: 'Commodity Moisture QA', ind: 'Commodities', sampling: 'Per Shipment', status: 'Draft' }].map((r, i) => (
                       <tr key={r.plan} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                        <td className="px-4 py-3 font-semibold text-[#1D1D1F]">{r.plan}</td>
+                        <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{r.plan}</td>
                         <td className="px-4 py-3">{r.ind}</td>
                         <td className="px-4 py-3">{r.sampling}</td>
-                        <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs bg-[#1D1D1F] text-white" style={{ borderRadius: 0 }}>{r.status}</span></td>
+                        <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs bg-[#1A1A1A] text-white" style={{ borderRadius: 0 }}>{r.status}</span></td>
                       </tr>
                     ))}
                   </tbody>
@@ -62,11 +62,11 @@ export default function QualityDomainContent({ persona, locale }: QualityDomainC
           icon: '',
           component: (
             <div className="p-6 space-y-4">
-              <h3 className="text-xl font-semibold text-[#1D1D1F]">Quality Performance</h3>
+              <h3 className="text-xl font-semibold text-[#1A1A1A]">Quality Performance</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[{ label: 'Inspections', value: '128' }, { label: 'Pass Rate', value: '96.1%' }, { label: 'NCR Open', value: '5' }, { label: 'CAPA On Time', value: '92%' }].map((k) => (
                   <div key={k.label} className="border border-[#E5E5EA] p-4" style={{ borderRadius: 0 }}>
-                    <div className="text-xl font-semibold text-[#1D1D1F]">{k.value}</div>
+                    <div className="text-xl font-semibold text-[#1A1A1A]">{k.value}</div>
                     <div className="text-xs text-[#8E8E93] mt-1">{k.label}</div>
                   </div>
                 ))}
