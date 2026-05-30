@@ -285,10 +285,10 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
                 <input type="text" placeholder={getTranslation('search', 'common', 'Search product, code or brand')}
                   onClick={() => setIsSearchOpen(true)} readOnly
                   className="flex-1 px-4 py-1.5 bg-transparent outline-none search-bar-input"
-                  style={{ color: '#1a0608', fontSize: '12px' }} />
+                  style={{ color: '#1A0505', fontSize: '12px' }} />
                 <button onClick={() => setIsSearchOpen(true)}
                   className="px-4 py-1.5 transition-opacity duration-200 hover:opacity-70"
-                  style={{ color: '#1a0608', background: 'transparent', border: 'none' }}>
+                  style={{ color: '#1A0505', background: 'transparent', border: 'none' }}>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>

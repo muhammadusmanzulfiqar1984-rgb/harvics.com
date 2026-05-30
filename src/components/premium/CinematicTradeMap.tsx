@@ -371,7 +371,7 @@ const CinematicTradeMap: React.FC = () => {
                   {h.isHQ && (
                     <g>
                       <rect x={h.x - 12} y={h.y + 9} width="24" height="11" fill="#E5C07B" />
-                      <text x={h.x} y={h.y + 17} fill="#1a0608" fontSize="7" fontWeight="800" textAnchor="middle" style={{ letterSpacing: '0.18em' }}>HQ</text>
+                      <text x={h.x} y={h.y + 17} fill="#1A0505" fontSize="7" fontWeight="800" textAnchor="middle" style={{ letterSpacing: '0.18em' }}>HQ</text>
                     </g>
                   )}
                 </g>

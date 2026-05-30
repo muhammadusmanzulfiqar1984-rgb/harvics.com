@@ -114,7 +114,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/about`}
-                className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}/about`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
+                className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}/about`) ? 'bg-[#1A0505] text-white' : 'text-[#1A0505] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
                 onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
               >
                 About
@@ -135,7 +135,7 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${vertical.href}`}
-                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
+                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? 'bg-[#1A0505] text-white' : 'text-[#1A0505] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
                   role="menuitem"
                   aria-haspopup="true"
                   aria-expanded={activeDropdown === vertical.key}
@@ -157,7 +157,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/apps`}
-                className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}/apps`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
+                className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}/apps`) ? 'bg-[#1A0505] text-white' : 'text-[#1A0505] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
               >
                 ⬡ Apps
               </Link>
@@ -175,7 +175,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/harvictrade`}
-                className="text-[10px] font-bold text-[#1a0608] border-l border-[#C3A35E]/30 pl-3 ml-1 tracking-[0.12em] uppercase hover:text-[#C3A35E] transition-colors duration-200 whitespace-nowrap py-1.5"
+                className="text-[10px] font-bold text-[#1A0505] border-l border-[#C3A35E]/30 pl-3 ml-1 tracking-[0.12em] uppercase hover:text-[#C3A35E] transition-colors duration-200 whitespace-nowrap py-1.5"
               >
                 ♦ HARVICTRADE
               </Link>
@@ -194,7 +194,7 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${link.href}`}
-                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}${link.href}`) ? 'bg-[#1a0608] text-white' : 'text-[#1a0608] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
+                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}${link.href}`) ? 'bg-[#1A0505] text-white' : 'text-[#1A0505] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
                   onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
                 >
                   {link.label}
