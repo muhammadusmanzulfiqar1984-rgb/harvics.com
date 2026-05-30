@@ -27,17 +27,15 @@ export interface CategoryData {
   icon: string
 }
 
-// Map folder names to category keys
+// Map folder names to category keys (folders are now lowercase kebab-case under /assets/verticals/02-fmcg/categories/)
 const categoryMapping: { [key: string]: { key: string; name: string; icon: string; color: string; description: string } } = {
-  'Bakery': { key: 'bakery', name: 'Bakery', icon: 'icon-bakery', color: 'from-amber-500 to-orange-500', description: 'Premium biscuits, wafers, cakes and baked snacks sourced from certified European manufacturers.' },
-  'Beverages': { key: 'beverages', name: 'Beverages', icon: 'icon-beverage', color: 'from-blue-500 to-cyan-500', description: 'Carbonated, functional, health and hot drinks distributed across 42+ international markets.' },
-  'Confectionary': { key: 'confectionery', name: 'Confectionery', icon: 'icon-candy', color: 'from-pink-500 to-rose-600', description: 'Bubble gum, jellies, sugar candy and toffees — Halal certified, globally compliant.' },
-  'Culinary': { key: 'culinary', name: 'Culinary', icon: 'icon-culinary', color: 'from-orange-500 to-amber-600', description: 'Cooking oils, spices, sauces, pickles and ready-to-cook products for retail and foodservice.' },
-  'Frozen Foods': { key: 'frozenFoods', name: 'Frozen Foods', icon: 'icon-frozen', color: 'from-blue-500 to-purple-500', description: 'IQF chicken, fish fillets, frozen meat and vegetables — cold chain maintained from source to shelf.' },
-  'Pastas': { key: 'pasta', name: 'Pasta', icon: 'icon-pasta', color: 'from-red-600 to-orange-500', description: 'Durum wheat pasta in all formats — fusilli, bucatini, farfalle — from premium Italian producers.' },
-  'Snacks': { key: 'snacks', name: 'Snacks', icon: 'icon-snack', color: 'from-yellow-500 to-orange-500', description: 'Chips, crisps, baked snacks and fusion varieties across 15+ flavour profiles for global retail.' },
-  'BearPops Characters': { key: 'bearpops', name: 'BearPops', icon: 'icon-bear', color: 'from-pink-400 to-purple-500', description: 'BearPops — the Harvics character brand. Fun, vibrant confectionery designed for kids and gifting markets.' },
-  'Product Photos': { key: 'productPhotos', name: 'Product Range', icon: 'icon-package', color: 'from-harvics-maroon to-harvics-gold', description: 'Full Harvics product portfolio — FMCG across all categories, globally sourced and quality assured.' },
+  'bakery': { key: 'bakery', name: 'Bakery', icon: 'icon-bakery', color: 'from-amber-500 to-orange-500', description: 'Premium biscuits, wafers, cakes and baked snacks sourced from certified European manufacturers.' },
+  'beverages': { key: 'beverages', name: 'Beverages', icon: 'icon-beverage', color: 'from-blue-500 to-cyan-500', description: 'Carbonated, functional, health and hot drinks distributed across 42+ international markets.' },
+  'confectionery': { key: 'confectionery', name: 'Confectionery', icon: 'icon-candy', color: 'from-pink-500 to-rose-600', description: 'Bubble gum, jellies, sugar candy and toffees — Halal certified, globally compliant.' },
+  'culinary': { key: 'culinary', name: 'Culinary', icon: 'icon-culinary', color: 'from-orange-500 to-amber-600', description: 'Cooking oils, spices, sauces, pickles and ready-to-cook products for retail and foodservice.' },
+  'frozen-foods': { key: 'frozenFoods', name: 'Frozen Foods', icon: 'icon-frozen', color: 'from-blue-500 to-purple-500', description: 'IQF chicken, fish fillets, frozen meat and vegetables — cold chain maintained from source to shelf.' },
+  'pastas': { key: 'pasta', name: 'Pasta', icon: 'icon-pasta', color: 'from-red-600 to-orange-500', description: 'Durum wheat pasta in all formats — fusilli, bucatini, farfalle — from premium Italian producers.' },
+  'snacks': { key: 'snacks', name: 'Snacks', icon: 'icon-snack', color: 'from-yellow-500 to-orange-500', description: 'Chips, crisps, baked snacks and fusion varieties across 15+ flavour profiles for global retail.' },
 }
 
 // Descriptions for every subcategory — keyed by slug
@@ -111,9 +109,7 @@ function getImageFiles(dirPath: string): string[] {
         // Get relative path from public folder
         const relativePath = path.relative(path.join(process.cwd(), 'public'), dirPath)
         // Convert to URL path (forward slashes) - Next.js handles spaces automatically
-        let urlPath = relativePath.replace(/\\/g, '/')
-        // Normalize to use /Images/ (capital I) to match git/Vercel case-sensitive file system
-        urlPath = urlPath.replace(/^images\//i, 'Images/')
+        const urlPath = relativePath.replace(/\\/g, '/')
         return `/${urlPath}/${file}`
       })
   } catch (error) {
@@ -135,20 +131,15 @@ export function getCategoriesFromFolder(): CategoryData[] {
     return categoriesCache
   }
 
-  // Try both case variations for cross-platform compatibility
-  const imagesPath1 = path.join(process.cwd(), 'public', 'FMCG IMAGES')
-  const imagesPath2 = path.join(process.cwd(), 'public', 'fmcg images')
-  
-  let basePath = imagesPath1
+  // Scan the canonical assets path for FMCG categories
+  const basePath = path.join(process.cwd(), 'public', 'assets', 'verticals', '02-fmcg', 'categories')
+
   if (!fs.existsSync(basePath)) {
-    basePath = imagesPath2
-    if (!fs.existsSync(basePath)) {
-      console.warn('FMCG IMAGES folder not found at:', imagesPath1, 'or', imagesPath2)
-      // Cache empty result to avoid repeated checks
-      categoriesCache = []
-      cacheTimestamp = now
-      return []
-    }
+    console.warn('FMCG categories folder not found at:', basePath)
+    // Cache empty result to avoid repeated checks
+    categoriesCache = []
+    cacheTimestamp = now
+    return []
   }
 
   const categories: CategoryData[] = []
