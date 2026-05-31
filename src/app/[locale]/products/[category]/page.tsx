@@ -3,8 +3,7 @@ import Footer from '@/components/layout/Footer'
 import { getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import ProductCategoryClient from './ProductCategoryClient'
-import { getCategoryInfo, getFolderBasedCategories } from '@/data/folderBasedProducts'
-import { getSubcategoriesForCategory } from '@/utils/folderScanner'
+import { getMergedCategories } from '@/utils/getCategories'
 import { getProductCategoryContent } from '@/utils/contentPopulator'
 import { SUPPORTED_LOCALES } from '@/config/locales'
 
@@ -28,15 +27,14 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const { locale, category } = await params
   const t = await getTranslations('products')
 
-  // Get category info from folder-based data
-  const categoryInfo = getCategoryInfo(category)
+  // Merge local folder data with R2 manifest (Groq+FLUX generated images)
+  const merged = await getMergedCategories()
+  const categoryInfo = merged.find(c => c.key === category)
   if (!categoryInfo) {
     notFound()
   }
 
-  // Get subcategories from folder structure
-  const subcategories = getSubcategoriesForCategory(category)
-  
+  const subcategories = categoryInfo.subcategories
   if (subcategories.length === 0) {
     notFound()
   }
@@ -47,8 +45,6 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const categoryTitle = t(`${category}`) || intelligentContent.hero.title
   const categoryDescription = t(`${category}Desc`) || intelligentContent.hero.subtitle
 
-  const categories = getFolderBasedCategories() || []
-  
   return (
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
       

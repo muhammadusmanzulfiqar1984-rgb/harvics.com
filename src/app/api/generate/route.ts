@@ -3,6 +3,7 @@ import { Groq } from 'groq-sdk';
 import { InferenceClient } from '@huggingface/inference';
 import { S3Client, PutObjectCommand, GetObjectCommand } from '@aws-sdk/client-s3';
 import sharp from 'sharp';
+import { HARVICS_PROMPT_ENGINEER_SYSTEM } from '@/lib/promptTemplates';
 
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 const hf = new InferenceClient(process.env.HF_API_KEY);
@@ -71,10 +72,7 @@ export async function POST(request: Request) {
     const groqResponse = await groq.chat.completions.create({
       model: 'llama-3.3-70b-versatile',
       messages: [
-        {
-          role: 'system',
-          content: 'You are an expert commercial photography prompt engineer. Expand the user input into a highly descriptive, cinematic, photorealistic prompt tailored for global B2B logistics, corporate trade, and industrial manufacturing. Output ONLY the final prompt string, no conversational filler.',
-        },
+        { role: 'system', content: HARVICS_PROMPT_ENGINEER_SYSTEM },
         {
           role: 'user',
           content: `Industry: ${vertical}, Category: ${category}. Core Concept: ${rawPrompt}`,

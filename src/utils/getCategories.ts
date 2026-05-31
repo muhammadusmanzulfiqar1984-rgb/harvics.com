@@ -9,6 +9,7 @@ interface ManifestEntry {
   key: string;
   vertical: string;
   category: string;
+  subcategory?: string;
   prompt: string;
   engine: string;
   generatedAt: number;
@@ -44,34 +45,37 @@ export async function getMergedCategories(): Promise<CategoryData[]> {
 
   if (!manifest.length) return localCategories;
 
-  // Group R2 images by category key
-  const r2ByKey: Record<string, string[]> = {};
+  // Group R2 images by category key and (when present) subcategory slug
+  const r2ByCat: Record<string, string[]> = {};
+  const r2BySub: Record<string, Record<string, string[]>> = {};
   for (const entry of manifest) {
     if (entry.vertical !== 'fmcg') continue;
-    // entry.category is the folder name e.g. "wafer", "bakery"
     const key = FOLDER_TO_KEY[entry.category] ?? entry.category;
-    if (!r2ByKey[key]) r2ByKey[key] = [];
-    r2ByKey[key].push(entry.url);
+    (r2ByCat[key] ||= []).push(entry.url);
+    if (entry.subcategory) {
+      (r2BySub[key] ||= {})[entry.subcategory] ||= [];
+      r2BySub[key][entry.subcategory].push(entry.url);
+    }
   }
 
-  // Inject R2 images into matching categories
   return localCategories.map(cat => {
-    const r2Images = r2ByKey[cat.key];
-    if (!r2Images?.length) return cat;
+    const catImages = r2ByCat[cat.key];
+    if (!catImages?.length) return cat;
 
-    // Prepend R2 images to first subcategory's image list + update category hero image
-    const updatedSubs = cat.subcategories.map((sub, i) => {
-      if (i !== 0) return sub;
+    const subMap = r2BySub[cat.key] ?? {};
+    const updatedSubs = cat.subcategories.map((sub) => {
+      const subImages = subMap[sub.slug];
+      if (!subImages?.length) return sub;
       return {
         ...sub,
-        images: [...r2Images, ...sub.images],
-        imageCount: sub.imageCount + r2Images.length,
+        images: [...subImages, ...sub.images],
+        imageCount: sub.imageCount + subImages.length,
       };
     });
 
     return {
       ...cat,
-      image: r2Images[0], // R2 generated image becomes hero
+      image: catImages[0],
       subcategories: updatedSubs,
     };
   });

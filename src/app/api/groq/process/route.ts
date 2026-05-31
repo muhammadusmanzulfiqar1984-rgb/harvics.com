@@ -6,6 +6,8 @@
 // Returns: { success, originalPrompt, enhancedPrompt, image (data URL) }
 
 import { NextResponse } from 'next/server';
+import { InferenceClient } from '@huggingface/inference';
+import { HARVICS_PROMPT_ENGINEER_SYSTEM } from '@/lib/promptTemplates';
 
 export const runtime = 'nodejs';
 
@@ -40,14 +42,10 @@ export async function POST(req: Request) {
       body: JSON.stringify({
         model: GROQ_MODEL,
         messages: [
-          {
-            role: 'system',
-            content:
-              "You are an expert image prompt engineer. Take the user's input and rewrite it as a highly detailed, photorealistic image generation prompt. Return ONLY the enhanced prompt, nothing else.",
-          },
+          { role: 'system', content: HARVICS_PROMPT_ENGINEER_SYSTEM },
           { role: 'user', content: prompt },
         ],
-        max_tokens: 300,
+        max_tokens: 400,
         temperature: 0.7,
       }),
     });
@@ -60,24 +58,25 @@ export async function POST(req: Request) {
     const groqData = await groqRes.json();
     const enhancedPrompt: string = groqData?.choices?.[0]?.message?.content?.trim() || prompt;
 
-    // Step 2: HuggingFace generates the image
-    const hfRes = await fetch(`https://api-inference.huggingface.co/models/${HF_MODEL}`, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${HF_API_KEY}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ inputs: enhancedPrompt }),
-    });
-
-    if (!hfRes.ok) {
-      const detail = await hfRes.text();
-      return NextResponse.json({ error: 'HuggingFace failed', detail }, { status: 502 });
+    // Step 2: HuggingFace generates the image (via official SDK)
+    const hf = new InferenceClient(HF_API_KEY);
+    let imageBlob: Blob;
+    try {
+      imageBlob = await hf.textToImage(
+        {
+          model: HF_MODEL,
+          inputs: enhancedPrompt,
+          parameters: { width: 1024, height: 1024, num_inference_steps: 30 },
+        },
+        { outputType: 'blob' },
+      );
+    } catch (e: any) {
+      return NextResponse.json({ error: 'HuggingFace failed', detail: e?.message || String(e) }, { status: 502 });
     }
 
-    const imageBuffer = await hfRes.arrayBuffer();
-    const base64 = Buffer.from(imageBuffer).toString('base64');
-    const contentType = hfRes.headers.get('content-type') || 'image/jpeg';
+    const imageBuffer = Buffer.from(await imageBlob.arrayBuffer());
+    const base64 = imageBuffer.toString('base64');
+    const contentType = imageBlob.type || 'image/jpeg';
 
     return NextResponse.json({
       success: true,
