@@ -41,9 +41,9 @@ const categoryMapping: { [key: string]: { key: string; name: string; icon: strin
 // Descriptions for every subcategory — keyed by slug
 const subcategoryDescriptions: Record<string, string> = {
   // Bakery
-  'bakery-snacks-and-dry-cakes': 'Dry cakes, rusks and cupcakes baked to consistent moisture levels. Long shelf life with nitrogen-flush packaging. Ideal for retail and foodservice.',
+  'snacks-and-dry-cakes': 'Dry cakes, rusks and cupcakes baked to consistent moisture levels. Long shelf life with nitrogen-flush packaging. Ideal for retail and foodservice.',
   'biscuits-and-cookies': 'Cream-filled biscuits, digestives, butter cookies and chocolate-coated varieties. Sourced from FSSC 22000 certified bakeries with multi-language labeling for export.',
-  'cakes-and-pastreis': 'Individually wrapped cakes and pastries with controlled water activity for extended shelf life. Suitable for ambient retail and convenience channels.',
+  'cakes-and-pastries': 'Individually wrapped cakes and pastries with controlled water activity for extended shelf life. Suitable for ambient retail and convenience channels.',
   'wafer-and-wafer-bars': 'Crispy layered wafers and coated wafer bars in chocolate, vanilla, hazelnut and strawberry. Packed for retail and impulse formats. MOQ from 500 cartons.',
   // Beverages
   'carbonated': 'Sparkling waters, sodas and carbonated soft drinks in 250ml to 1.5L formats. Full private-label capability with custom flavours and nutrition panels.',
@@ -58,7 +58,7 @@ const subcategoryDescriptions: Record<string, string> = {
   'toffees': 'Eclairs, milk toffees and caramel chews. Individually wrapped for hygiene compliance. Popular single-serve and counter-display formats for emerging markets.',
   // Culinary
   'cooking-oil-fats-and-dressing': 'Sunflower, vegetable and blended cooking oils in 500ml–5L. Mayonnaise, salad dressings and vinaigrettes in retail and foodservice sizes.',
-  'pickle-s-chutnyes-and-preserves': 'Mixed pickles, mango chutney, jam and fruit preserves. Traditional South Asian and Middle Eastern recipes with modern retail packaging.',
+  'pickles-chutneys-and-preserves': 'Mixed pickles, mango chutney, jam and fruit preserves. Traditional South Asian and Middle Eastern recipes with modern retail packaging.',
   'ready-to-cook': 'Marinated meat kits, curry pastes, spice kits and ready-to-cook meal solutions. Designed for minimal preparation — retailer-ready with full allergen labeling.',
   'seasoning-spices-and-marinade': 'Whole and ground spices — black pepper, chili, turmeric, cumin, coriander. Custom spice blends and marinades. Steam-sterilized, ETO-free processing.',
   'sauces-and-condiments': 'Ketchup, BBQ sauce, hot sauce, soy sauce, oyster sauce, pizza sauce, peri peri, honey mustard, Worcestershire and more. Retail and foodservice sizes.',
@@ -66,7 +66,7 @@ const subcategoryDescriptions: Record<string, string> = {
   'chicken-nuggets': 'Breaded and plain chicken nuggets from Halal-certified processing plants. IQF (Individually Quick Frozen) for consistent portion control. For QSR and retail.',
   'fish-fillet': 'White fish fillets — battered, breaded and plain. MSC-certified sourcing options. Cold chain maintained at -18°C from processing to delivery.',
   'frozen-meat': 'Halal-certified frozen chicken portions, beef cuts and lamb. Vacuum-packed and blast-frozen. Full HACCP traceability from farm to fork.',
-  'frozen-vegitables': 'IQF mixed vegetables, peas, sweetcorn, spinach and stir-fry blends. No additives, no preservatives. Sourced from controlled agricultural supply chains.',
+  'frozen-vegetables': 'IQF mixed vegetables, peas, sweetcorn, spinach and stir-fry blends. No additives, no preservatives. Sourced from controlled agricultural supply chains.',
   // Pasta
   'all': 'Durum wheat semolina pasta — fusilli, bucatini, farfalle, fettuccine, linguine and more. Bronze-die extruded for authentic texture. From premium Italian and Spanish producers.',
   // Snacks
