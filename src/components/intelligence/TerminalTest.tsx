@@ -9,7 +9,7 @@ export default function TerminalTest() {
     setLoading(true);
     setOutput('');
     try {
-      const res = await fetch('/api/grok', {
+      const res = await fetch('/api/groq', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
