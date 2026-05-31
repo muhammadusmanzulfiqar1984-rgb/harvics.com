@@ -29,6 +29,8 @@
     "images:bulk": "node scripts/compress-images.mjs --mode=bulk-copy"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.1057.0",
+    "@huggingface/inference": "^4.13.18",
     "@opennextjs/cloudflare": "^1.19.11",
     "@prisma/client": "^6.19.2",
     "@react-google-maps/api": "^2.20.7",
@@ -44,6 +46,7 @@
     "dotenv": "^17.3.1",
     "express": "^4.19.2",
     "framer-motion": "^12.40.0",
+    "groq-sdk": "^1.2.1",
     "helmet": "^7.2.0",
     "jsonwebtoken": "^9.0.3",
     "lucide-react": "^1.7.0",
