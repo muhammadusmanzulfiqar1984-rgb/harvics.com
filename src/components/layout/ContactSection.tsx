@@ -56,10 +56,10 @@ const ContactSection: React.FC = () => {
       href: 'mailto:sales.uk@harvics.com',
     },
     {
-      icon: 'M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z',
-      label: getText('whatsapp', 'WhatsApp'),
-      value: '+44 7405 527427',
-      href: 'https://wa.me/447405527427',
+      icon: 'M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z',
+      label: 'Call HarvyX',
+      value: '+1 (229) 545 5206',
+      href: 'tel:+12295455206',
     },
   ]
 
@@ -100,8 +100,8 @@ const ContactSection: React.FC = () => {
       className={revealClass(isVisible, 'up')}
       style={{
         background: '#F5F0E8',
-        borderTop: '1px solid rgba(201,168,76,0.25)',
-        borderBottom: '1px solid rgba(201,168,76,0.25)',
+        borderTop: '1px solid rgba(195,163,94,0.25)',
+        borderBottom: '1px solid rgba(195,163,94,0.25)',
       }}
     >
       <div className="grid grid-cols-1 lg:grid-cols-5" style={{ maxWidth: '1400px', margin: '0 auto', minHeight: '620px' }}>
@@ -245,7 +245,7 @@ const ContactSection: React.FC = () => {
                 alignItems: 'center',
                 gap: '16px',
                 padding: '18px 0',
-                borderBottom: i < channels.length - 1 ? '1px solid rgba(201,168,76,0.15)' : 'none',
+                borderBottom: i < channels.length - 1 ? '1px solid rgba(195,163,94,0.15)' : 'none',
                 textDecoration: 'none',
                 color: 'inherit',
                 transition: 'opacity 0.2s ease',
@@ -259,7 +259,7 @@ const ContactSection: React.FC = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                border: '1px solid rgba(201,168,76,0.3)',
+                border: '1px solid rgba(195,163,94,0.3)',
                 color: '#C3A35E',
                 flexShrink: 0,
               }}>
@@ -279,7 +279,7 @@ const ContactSection: React.FC = () => {
           ))}
 
           {/* Trust block */}
-          <div style={{ marginTop: '28px', paddingTop: '24px', borderTop: '1px solid rgba(201,168,76,0.2)' }}>
+          <div style={{ marginTop: '28px', paddingTop: '24px', borderTop: '1px solid rgba(195,163,94,0.2)' }}>
             {trustPoints.map((point, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '6px 0' }}>
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none">

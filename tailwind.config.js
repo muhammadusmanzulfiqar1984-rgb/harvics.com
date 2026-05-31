@@ -12,6 +12,8 @@ const config = {
           // Brand accent colors — used for text/borders/highlights
           maroon: '#6B1F2B',
           gold: '#C3A35E',
+          goldMuted: 'rgba(195,163,94,0.6)',
+          goldDivider: 'rgba(195,163,94,0.2)',
           // Dark surfaces — used for backgrounds
           burgundy: '#1A0505',
           dark: '#0D0D0D',

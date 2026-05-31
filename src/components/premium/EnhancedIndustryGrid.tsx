@@ -83,7 +83,7 @@ const EnhancedIndustryGrid: React.FC = () => {
   return (
     <section
       className="relative h-full flex flex-col justify-center overflow-hidden"
-      style={{ background: '#0a0a0a' }}
+      style={{ background: '#1A0505' }}
     >
       {/* Single cinematic backdrop — only render active */}
       {navVerticals.map((v, idx) => {
@@ -125,13 +125,13 @@ const EnhancedIndustryGrid: React.FC = () => {
           10 Verticals &nbsp;·&nbsp; 42 Markets &nbsp;·&nbsp; 1,185+ Products
         </p>
         <h2 style={{
-          fontSize: 'clamp(26px, 3.2vw, 46px)', fontWeight: 600, letterSpacing: '-0.03em',
+          fontSize: 'clamp(26px, 3.2vw, 46px)', fontWeight: 200, letterSpacing: '-0.03em',
           color: '#ffffff', lineHeight: 1.1, textShadow: '0 2px 24px rgba(0,0,0,0.4)',
           fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif'
         }}>
           One platform.{' '}
           <br />
-          <span style={{ color: '#C3A35E' }}>
+          <span style={{ color: '#C3A35E', fontWeight: 400 }}>
             Ten industries.
           </span>
         </h2>
@@ -238,7 +238,7 @@ const EnhancedIndustryGrid: React.FC = () => {
                     </div>
                     <h3 style={{
                       fontSize: '22px', fontWeight: 600, letterSpacing: '-0.02em',
-                      color: hasImage ? '#fff' : '#1A1A1A',
+                      color: hasImage ? '#fff' : '#1A0505',
                       fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
                       marginBottom: '6px',
                     }}>
@@ -270,7 +270,7 @@ const EnhancedIndustryGrid: React.FC = () => {
                       <div style={{
                         display: 'flex', alignItems: 'center', gap: '5px',
                         fontSize: '12px', fontWeight: 700,
-                        color: '#E5C07B',
+                        color: '#C3A35E',
                         letterSpacing: '0.08em', textTransform: 'uppercase',
                         background: 'rgba(107,31,43,0.6)',
                         backdropFilter: 'blur(8px)',

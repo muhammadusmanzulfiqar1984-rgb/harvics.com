@@ -7,9 +7,9 @@ import { useLocale } from 'next-intl'
 
 const STATS = [
   { label: 'Track Record', value: '$1.2B+' },
-  { label: 'Operating Legacy', value: '18 Years' },
+  { label: 'Operating Legacy', value: '20 Years' },
   { label: 'Industry Verticals', value: '10' },
-  { label: 'Continents', value: '3' },
+  { label: 'Continents', value: '4' },
   { label: 'HarvicsOS Modules', value: '71' },
   { label: 'Trade Corridors', value: 'EU-GCC-South Asia' },
 ]
@@ -37,9 +37,9 @@ const LiquidGlassHero: React.FC = () => {
   const statsRef = useRef<HTMLDivElement>(null)
 
   const trackRecord = useCountUp(12, 1800, statsVisible)
-  const years = useCountUp(18, 1200, statsVisible)
+  const years = useCountUp(20, 1200, statsVisible)
   const verticals = useCountUp(10, 1200, statsVisible)
-  const continents = useCountUp(3, 900, statsVisible)
+  const continents = useCountUp(4, 900, statsVisible)
 
   useEffect(() => { setIsLoaded(true) }, [])
 
@@ -73,11 +73,11 @@ const LiquidGlassHero: React.FC = () => {
           background: 'linear-gradient(105deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0.2) 100%)'
         }} />
         {/* Gold shimmer sweep */}
-        <div className="absolute inset-0 shimmer-sweep" style={{ mixBlendMode: 'screen', opacity: 0.18 }} />
+        <div className="absolute inset-0 shimmer-sweep" style={{ mixBlendMode: 'screen', opacity: 0.42 }} />
       </div>
 
       {/* ── MAIN CONTENT ── */}
-      <div className={`relative z-20 h-full max-w-harvics-layout mx-auto px-6 flex flex-col justify-center pb-12 transition-all duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+      <div className={`relative z-20 h-full max-w-harvics-layout mx-auto px-6 flex flex-col justify-center pt-[18vh] transition-all duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
 
         {/* Primary Headline */}
         <h1 style={{
@@ -92,11 +92,11 @@ const LiquidGlassHero: React.FC = () => {
           marginBottom: '12px',
           fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif',
         }}>
-          <span style={{ fontWeight: 600, color: '#E5C07B' }}>Harvics</span> Global<br />
+          <span style={{ fontWeight: 600, color: '#C3A35E' }}>Harvics Global</span><br />
           Ventures
         </h1>
         <div style={{
-          fontSize: 'clamp(11px, 1.1vw, 14px)',
+          fontSize: 'clamp(13px, 1.32vw, 17px)',
           color: 'rgba(195,163,94,0.75)',
           fontWeight: 500,
           letterSpacing: '0.12em',
@@ -117,7 +117,7 @@ const LiquidGlassHero: React.FC = () => {
           <Link href={`/${locale}/products`} className="gold-btn" style={{
             display: 'inline-flex', alignItems: 'center', gap: '7px',
             padding: '11px 26px',
-            background: 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)',
+            background: 'linear-gradient(105deg, #C3A35E 0%, #C3A35E 40%, #f0d08e 52%, #C3A35E 64%, #C3A35E 100%)',
             backgroundSize: '220% 100%',
             border: 'none',
             color: '#1a0d00',
@@ -135,7 +135,7 @@ const LiquidGlassHero: React.FC = () => {
             padding: '11px 26px',
             background: 'transparent',
             border: '1px solid rgba(195,163,94,0.55)',
-            color: '#E5C07B',
+            color: '#C3A35E',
             fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em',
             textTransform: 'uppercase', textDecoration: 'none',
             fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
@@ -230,7 +230,7 @@ const LiquidGlassHero: React.FC = () => {
           }}>
             <span style={{
               fontSize: '10px', fontWeight: 800, letterSpacing: '0.14em',
-              color: '#E5C07B', textTransform: 'uppercase',
+              color: '#C3A35E', textTransform: 'uppercase',
             }}>
               {repeated}
             </span>

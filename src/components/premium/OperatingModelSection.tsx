@@ -57,14 +57,14 @@ const ProcessConnector: React.FC = () => (
       <defs>
         <linearGradient id="opGoldGrad" x1="0" x2="1">
           <stop offset="0" stopColor="#C3A35E" stopOpacity="0.2" />
-          <stop offset="0.5" stopColor="#E5C07B" stopOpacity="1" />
+          <stop offset="0.5" stopColor="#C3A35E" stopOpacity="1" />
           <stop offset="1" stopColor="#C3A35E" stopOpacity="0.2" />
         </linearGradient>
       </defs>
     </svg>
     <motion.div
       className="absolute top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full"
-      style={{ background: '#E5C07B', boxShadow: '0 0 14px #E5C07B, 0 0 28px rgba(229,192,123,0.4)' }}
+      style={{ background: '#C3A35E', boxShadow: '0 0 14px #C3A35E, 0 0 28px rgba(195,163,94,0.4)' }}
       initial={{ left: '16%', opacity: 0 }}
       whileInView={{
         left: ['16%', '50%', '84%', '50%', '16%'],
@@ -87,7 +87,7 @@ const OperatingModelSection: React.FC = () => {
 
   return (
     <section
-      className="w-full relative overflow-hidden py-24 px-6"
+      className="w-full relative overflow-hidden py-16 px-6"
       style={{
         background:
           'radial-gradient(ellipse at 20% 0%, rgba(107,31,43,0.45) 0%, transparent 55%), radial-gradient(ellipse at 80% 100%, rgba(195,163,94,0.18) 0%, transparent 50%), linear-gradient(160deg, #1A0505 0%, #261015 60%, #1A0505 100%)',
@@ -111,17 +111,17 @@ const OperatingModelSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 md:gap-10 pb-6 border-b border-[#C3A35E]/20 mb-10"
+          className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 md:gap-10 mb-8"
         >
           <div className="md:max-w-2xl">
-            <span className="inline-flex items-center gap-2.5 text-[10px] tracking-[5px] uppercase text-[#C3A35E] font-semibold mb-3">
+            <span className="inline-flex items-center gap-2.5 text-[10px] tracking-[0.28em] uppercase text-[#C3A35E] font-semibold mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#C3A35E]" />
               The HARVICS Operating Model
             </span>
             <h2 className="text-white text-3xl md:text-5xl font-extralight tracking-tight leading-[1.05]">
               Built like infrastructure.
               <br />
-              <span className="text-[#E5C07B] font-normal">Sold like a service.</span>
+              <span className="text-[#C3A35E] font-normal">Sold like a service.</span>
             </h2>
             <p className="text-white/60 text-[13px] max-w-xl mt-3 font-light leading-relaxed">
               The system behind every shipment, every approval, every relationship — explained on your terms.
@@ -144,14 +144,14 @@ const OperatingModelSection: React.FC = () => {
         </motion.div>
 
         {/* TABS */}
-        <div className="flex justify-center border-b border-[#C3A35E]/20 mb-10">
+        <div className="flex justify-center mb-6">
           {tabs.map(t => (
             <button
               key={t.key}
               type="button"
               onClick={() => setTab(t.key)}
               className={`relative px-6 md:px-8 py-4 text-[11px] tracking-[4px] uppercase font-semibold transition-colors ${
-                tab === t.key ? 'text-[#E5C07B]' : 'text-white/50 hover:text-[#E5C07B]'
+                tab === t.key ? 'text-[#C3A35E]' : 'text-white/50 hover:text-[#C3A35E]'
               }`}
             >
               <span className="text-[9px] opacity-50 font-normal mr-2">{t.num}</span>
@@ -159,8 +159,8 @@ const OperatingModelSection: React.FC = () => {
               {tab === t.key && (
                 <motion.span
                   layoutId="op-tab-underline"
-                  className="absolute -bottom-px left-0 right-0 h-[2px] bg-[#E5C07B]"
-                  style={{ boxShadow: '0 0 10px rgba(229,192,123,0.6)' }}
+                  className="absolute -bottom-px left-0 right-0 h-[2px] bg-[#C3A35E]"
+                  style={{ boxShadow: '0 0 10px rgba(195,163,94,0.6)' }}
                 />
               )}
             </button>
@@ -214,23 +214,23 @@ const OperatingModelSection: React.FC = () => {
                     >
                       <div
                         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
-                        style={{ background: 'radial-gradient(circle at 50% 0%, rgba(229,192,123,0.18) 0%, transparent 60%)' }}
+                        style={{ background: 'radial-gradient(circle at 50% 0%, rgba(195,163,94,0.18) 0%, transparent 60%)' }}
                       />
                       <div className="relative">
-                        <div className="text-[80px] font-thin text-[#C3A35E]/25 group-hover:text-[#E5C07B]/60 transition-colors duration-500 leading-none tracking-tighter select-none mb-4">
+                        <div className="text-[80px] font-thin text-[#C3A35E]/25 group-hover:text-[#C3A35E]/60 transition-colors duration-500 leading-none tracking-tighter select-none mb-4">
                           {card.num}
                         </div>
                         <h3 className="text-white text-xl font-light tracking-wide mb-1">{card.title}</h3>
-                        <div className="text-[#E5C07B] text-[9px] font-semibold uppercase tracking-[4px] mb-5">
+                        <div className="text-[#C3A35E] text-[9px] font-semibold uppercase tracking-[4px] mb-5">
                           {card.sub}
                         </div>
-                        <div className="w-8 h-px bg-[#E5C07B] mb-5 group-hover:w-16 transition-all duration-500" />
+                        <div className="w-8 h-px bg-[#C3A35E] mb-5 group-hover:w-16 transition-all duration-500" />
                         <p className="text-white/60 text-[13px] leading-[1.8] font-light mb-7">{card.body}</p>
                         <div className="flex flex-wrap gap-2">
                           {card.tags.map(tag => (
                             <span
                               key={tag}
-                              className="px-2.5 py-1 border border-[#C3A35E]/35 text-[#E5C07B] text-[9px] font-medium uppercase tracking-[2px] group-hover:border-[#E5C07B]/70 transition-colors duration-500"
+                              className="px-2.5 py-1 border border-[#C3A35E]/35 text-[#C3A35E] text-[9px] font-medium uppercase tracking-[2px] group-hover:border-[#C3A35E]/70 transition-colors duration-500"
                             >
                               {tag}
                             </span>
@@ -272,15 +272,15 @@ const OperatingModelSection: React.FC = () => {
                     >
                       <div
                         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
-                        style={{ background: 'radial-gradient(circle at 50% 0%, rgba(229,192,123,0.15) 0%, transparent 60%)' }}
+                        style={{ background: 'radial-gradient(circle at 50% 0%, rgba(195,163,94,0.15) 0%, transparent 60%)' }}
                       />
                       <div className="relative">
-                        <div className="text-[44px] font-extralight text-[#E5C07B] leading-none tracking-tight mb-3">
+                        <div className="text-[44px] font-extralight text-[#C3A35E] leading-none tracking-tight mb-3">
                           <CountUp value={cell.num} />
                         </div>
                         <div className="text-white text-[13px] font-normal mb-1">{cell.label}</div>
                         <div className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase mb-4 font-semibold">{cell.sub}</div>
-                        <div className="w-6 h-px bg-[#E5C07B]/50 mb-4 group-hover:w-12 transition-all duration-500" />
+                        <div className="w-6 h-px bg-[#C3A35E]/50 mb-4 group-hover:w-12 transition-all duration-500" />
                         <p className="text-white/55 text-[12px] leading-[1.7] font-light">{cell.body}</p>
                       </div>
                     </motion.div>
@@ -294,7 +294,7 @@ const OperatingModelSection: React.FC = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: 0.4 + i * 0.06 }}
-                      className="px-4 py-2 border border-[#C3A35E]/40 text-[#E5C07B] text-[10px] tracking-[3px] uppercase font-medium hover:border-[#E5C07B] hover:bg-[#E5C07B]/5 transition-colors"
+                      className="px-4 py-2 border border-[#C3A35E]/40 text-[#C3A35E] text-[10px] tracking-[3px] uppercase font-medium hover:border-[#C3A35E] hover:bg-[#C3A35E]/5 transition-colors"
                     >
                       {c}
                     </motion.span>
@@ -333,7 +333,7 @@ const OperatingModelSection: React.FC = () => {
                       letter: 'I',
                       title: 'For Investors',
                       tag: 'Equity · Trade Finance · JV',
-                      body: 'Vertical-specific opportunities across food, FMCG, and infrastructure — backed by 18 years of operating data.',
+                      body: 'Vertical-specific opportunities across food, FMCG, and infrastructure — backed by 20 years of operating data.',
                       cta: 'Investor portal →',
                       href: '/investor-relations',
                     },
@@ -348,10 +348,10 @@ const OperatingModelSection: React.FC = () => {
                     >
                       <div
                         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
-                        style={{ background: 'radial-gradient(circle at 50% 0%, rgba(229,192,123,0.18) 0%, transparent 60%)' }}
+                        style={{ background: 'radial-gradient(circle at 50% 0%, rgba(195,163,94,0.18) 0%, transparent 60%)' }}
                       />
                       <div className="relative flex flex-col flex-1">
-                        <div className="w-11 h-11 border border-[#E5C07B] text-[#E5C07B] flex items-center justify-center text-lg mb-6 group-hover:bg-[#E5C07B]/10 transition-colors duration-500">
+                        <div className="w-11 h-11 border border-[#C3A35E] text-[#C3A35E] flex items-center justify-center text-lg mb-6 group-hover:bg-[#C3A35E]/10 transition-colors duration-500">
                           {card.letter}
                         </div>
                         <h3 className="text-white text-xl font-light mb-1">{card.title}</h3>
@@ -363,7 +363,7 @@ const OperatingModelSection: React.FC = () => {
                         </p>
                         <a
                           href={card.href}
-                          className="text-[#E5C07B] text-[11px] tracking-[3px] uppercase font-semibold border-b border-[#E5C07B] pb-1 self-start hover:tracking-[5px] transition-all duration-300"
+                          className="text-[#C3A35E] text-[11px] tracking-[3px] uppercase font-semibold border-b border-[#C3A35E] pb-1 self-start hover:tracking-[5px] transition-all duration-300"
                         >
                           {card.cta}
                         </a>

@@ -159,22 +159,22 @@ const CinematicTradeMap: React.FC = () => {
       className="w-full relative overflow-hidden py-16 px-4"
       style={{
         background:
-          'radial-gradient(ellipse at 25% 0%, rgba(107,31,43,0.6) 0%, transparent 50%), radial-gradient(ellipse at 85% 100%, rgba(195,163,94,0.22) 0%, transparent 50%), linear-gradient(180deg, #06020a 0%, #0f0408 60%, #06020a 100%)',
+          'radial-gradient(ellipse at 25% 0%, rgba(107,31,43,0.6) 0%, transparent 50%), radial-gradient(ellipse at 85% 100%, rgba(195,163,94,0.22) 0%, transparent 50%), linear-gradient(180deg, #1A0505 0%, #0f0408 60%, #1A0505 100%)',
       }}
     >
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#C3A35E] to-transparent" />
 
       <div className="max-w-[1380px] mx-auto relative z-10">
         {/* HEADER — Option B: left-aligned dashboard with live stats on right */}
-        <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 md:gap-10 pb-6 border-b border-[#C3A35E]/20 mb-8">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 md:gap-10 mb-6">
           <div className="md:max-w-2xl">
-            <span className="inline-flex items-center gap-2.5 text-[10px] tracking-[5px] uppercase text-[#E5C07B] font-semibold mb-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#E5C07B] animate-pulse" />
+            <span className="inline-flex items-center gap-2.5 text-[10px] tracking-[0.28em] uppercase text-[#C3A35E] font-semibold mb-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C3A35E] animate-pulse" />
               Live · Global Trade Network
             </span>
             <h2 className="text-white text-3xl md:text-5xl font-extralight tracking-tight leading-[1.05]">
               Watch HARVICS
-              <span className="text-[#E5C07B] font-normal"> move.</span>
+              <span className="text-[#C3A35E] font-normal"> move.</span>
             </h2>
             <p className="text-white/55 text-[13px] max-w-xl mt-3 font-light leading-relaxed">
               9 offices · 42+ markets · Every 14 minutes, a HARVICS shipment clears customs somewhere in the world.
@@ -182,27 +182,27 @@ const CinematicTradeMap: React.FC = () => {
           </div>
           <div className="flex gap-8 md:gap-9 md:pl-6 md:border-l md:border-[#C3A35E]/15">
             <div>
-              <div className="text-[#E5C07B] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">Shipments</div>
+              <div className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">Shipments</div>
               <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">{shipments.toLocaleString()}</div>
             </div>
             <div>
-              <div className="text-[#E5C07B] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">Countries</div>
+              <div className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">Countries</div>
               <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">{countries}</div>
             </div>
             <div>
-              <div className="text-[#E5C07B] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">TEU in Transit</div>
+              <div className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">TEU in Transit</div>
               <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">{teu.toLocaleString()}</div>
             </div>
           </div>
         </div>
 
         {/* ───── COMMAND CENTER ───── */}
-        <div className="relative bg-[#06020a] border border-[#C3A35E]/25 overflow-hidden">
+        <div className="relative bg-[#1A0505] overflow-hidden">
           {/* Top status strip */}
           <div className="flex items-center justify-between px-5 py-2.5 border-b border-[#C3A35E]/20 bg-black/30">
             <div className="flex items-center gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#E5C07B] animate-pulse" />
-              <span className="text-[#E5C07B] text-[9px] tracking-[3px] uppercase font-bold">Live · UTC</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C3A35E] animate-pulse" />
+              <span className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold">Live · UTC</span>
               <span className="text-white/30 text-[9px] tracking-[2px]">|</span>
               <span className="text-white/60 text-[9px] tracking-[2px] uppercase">
                 {HUBS.length} Hubs · {FLIGHTS.length + SHIPS.length} Active Routes
@@ -218,14 +218,14 @@ const CinematicTradeMap: React.FC = () => {
             <svg viewBox="0 0 1200 620" className="w-full block">
               <defs>
                 <radialGradient id="ctmHubGlow" cx="0.5" cy="0.5" r="0.5">
-                  <stop offset="0" stopColor="#E5C07B" stopOpacity="0.95" />
+                  <stop offset="0" stopColor="#C3A35E" stopOpacity="0.95" />
                   <stop offset="0.5" stopColor="#C3A35E" stopOpacity="0.3" />
                   <stop offset="1" stopColor="#C3A35E" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient id="ctmAirGrad" x1="0" x2="1">
-                  <stop offset="0" stopColor="#E5C07B" stopOpacity="0" />
-                  <stop offset="0.5" stopColor="#E5C07B" stopOpacity="0.9" />
-                  <stop offset="1" stopColor="#E5C07B" stopOpacity="0" />
+                  <stop offset="0" stopColor="#C3A35E" stopOpacity="0" />
+                  <stop offset="0.5" stopColor="#C3A35E" stopOpacity="0.9" />
+                  <stop offset="1" stopColor="#C3A35E" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient id="ctmSeaGrad" x1="0" x2="1">
                   <stop offset="0" stopColor="#C3A35E" stopOpacity="0" />
@@ -243,12 +243,12 @@ const CinematicTradeMap: React.FC = () => {
                   <path d="M0,-10 L2,-3 L12,0 L2,2 L1,10 L-1,10 L-2,2 L-12,0 L-2,-3 Z" fill="#FFE9B2" stroke="#fff" strokeWidth="0.6" />
                 </symbol>
                 <symbol id="ctmShip" viewBox="-14 -7 28 14">
-                  <path d="M-12,-1 L12,-1 L9,4 L-9,4 Z M-2,-1 L-2,-6 L5,-6 L5,-1 Z" fill="#E5C07B" stroke="#fff" strokeWidth="0.4" />
+                  <path d="M-12,-1 L12,-1 L9,4 L-9,4 Z M-2,-1 L-2,-6 L5,-6 L5,-1 Z" fill="#C3A35E" stroke="#fff" strokeWidth="0.4" />
                 </symbol>
               </defs>
 
               {/* Background subtle vignette */}
-              <rect width="1200" height="620" fill="#06020a" />
+              <rect width="1200" height="620" fill="#1A0505" />
 
               {/* Latitude grid lines */}
               {[120, 220, 320, 420, 520].map(y => (
@@ -339,7 +339,7 @@ const CinematicTradeMap: React.FC = () => {
                     <animate attributeName="opacity" values="0.85;0.1;0.85" dur="2.6s" repeatCount="indefinite" begin={`${i * 0.18}s`} />
                   </circle>
                   {/* Concentric ring */}
-                  <circle cx={h.x} cy={h.y} r={h.isHQ ? 12 : 9} fill="none" stroke="#E5C07B" strokeWidth="0.8" opacity="0.55">
+                  <circle cx={h.x} cy={h.y} r={h.isHQ ? 12 : 9} fill="none" stroke="#C3A35E" strokeWidth="0.8" opacity="0.55">
                     <animate attributeName="r" values={`${h.isHQ ? 10 : 7};${h.isHQ ? 24 : 20}`} dur="2.2s" repeatCount="indefinite" begin={`${i * 0.15}s`} />
                     <animate attributeName="opacity" values="0.7;0" dur="2.2s" repeatCount="indefinite" begin={`${i * 0.15}s`} />
                   </circle>
@@ -350,7 +350,7 @@ const CinematicTradeMap: React.FC = () => {
                   <text
                     x={h.x + (h.x > 700 ? -9 : 9)}
                     y={h.y - 8}
-                    fill="#E5C07B"
+                    fill="#C3A35E"
                     fontSize="10.5"
                     fontWeight="700"
                     textAnchor={h.x > 700 ? 'end' : 'start'}
@@ -370,7 +370,7 @@ const CinematicTradeMap: React.FC = () => {
                   </text>
                   {h.isHQ && (
                     <g>
-                      <rect x={h.x - 12} y={h.y + 9} width="24" height="11" fill="#E5C07B" />
+                      <rect x={h.x - 12} y={h.y + 9} width="24" height="11" fill="#C3A35E" />
                       <text x={h.x} y={h.y + 17} fill="#1A0505" fontSize="7" fontWeight="800" textAnchor="middle" style={{ letterSpacing: '0.18em' }}>HQ</text>
                     </g>
                   )}
@@ -380,7 +380,7 @@ const CinematicTradeMap: React.FC = () => {
               {/* Scan-line sweep */}
               <motion.line
                 x1="0" x2="0" y1="60" y2="560"
-                stroke="rgba(229,192,123,0.25)"
+                stroke="rgba(195,163,94,0.25)"
                 strokeWidth="1"
                 initial={{ x1: 0, x2: 0 }}
                 animate={visible ? { x1: [0, 1200], x2: [0, 1200] } : {}}
@@ -397,26 +397,26 @@ const CinematicTradeMap: React.FC = () => {
                     initial={{ width: '0%' }}
                     animate={visible ? { width: ['18%', '92%', '54%', '78%', '38%', '88%'] } : {}}
                     transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-                    className="h-full bg-[#E5C07B]"
+                    className="h-full bg-[#C3A35E]"
                   />
                 </div>
-                <span className="text-[#E5C07B] text-[10px] tabular-nums">OK</span>
+                <span className="text-[#C3A35E] text-[10px] tabular-nums">OK</span>
               </div>
             </div>
             <div className="absolute bottom-3 left-3 bg-black/60 backdrop-blur-sm border border-[#C3A35E]/30 px-3 py-2 font-mono">
               <div className="flex items-center gap-3">
                 <span className="text-white/40 text-[8px] tracking-[3px] uppercase">AIR</span>
-                <span className="text-[#E5C07B] text-[10px] font-bold">{FLIGHTS.length}</span>
+                <span className="text-[#C3A35E] text-[10px] font-bold">{FLIGHTS.length}</span>
                 <span className="text-white/20">|</span>
                 <span className="text-white/40 text-[8px] tracking-[3px] uppercase">SEA</span>
-                <span className="text-[#E5C07B] text-[10px] font-bold">{SHIPS.length}</span>
+                <span className="text-[#C3A35E] text-[10px] font-bold">{SHIPS.length}</span>
               </div>
             </div>
           </div>
 
           {/* TICKER */}
           <div className="bg-black/60 border-t border-[#C3A35E]/25 px-5 py-3 flex items-center gap-4">
-            <span className="text-[#E5C07B] text-[9px] tracking-[3px] uppercase font-bold shrink-0">
+            <span className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold shrink-0">
               ► Trade Pulse
             </span>
             <div className="flex-1 overflow-hidden relative h-5">

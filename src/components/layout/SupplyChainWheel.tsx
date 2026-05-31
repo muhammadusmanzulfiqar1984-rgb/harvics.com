@@ -98,22 +98,22 @@ const SupplyChainWheel: React.FC = () => {
             14 stages.{' '}
             <span style={{ color: '#6B1F2B', fontWeight: 400 }}>One supply chain.</span>
           </h2>
-          <p style={{ fontSize: '13px', color: '#888', maxWidth: '580px', margin: '0 auto', lineHeight: 1.7, fontWeight: 300 }}>
+          <p style={{ fontSize: '13px', color: 'rgba(26,5,5,0.55)', maxWidth: '580px', margin: '0 auto', lineHeight: 1.7, fontWeight: 300 }}>
             Every brief flows through the same operating system — one cockpit, 42 markets, one accountable team.
           </p>
         </div>
 
         {/* ============ COCKPIT CARD ============ */}
-        <div style={{ background: '#1A0505', border: '1px solid rgba(201,168,76,0.3)', overflow: 'hidden' }}>
+        <div style={{ background: '#1A0505', border: '1px solid rgba(195,163,94,0.3)', overflow: 'hidden' }}>
           <div className="grid grid-cols-1 lg:grid-cols-12">
 
             {/* LEFT — Wheel (5/12) */}
-            <div className="lg:col-span-5" style={{ padding: '40px 32px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRight: '1px solid rgba(201,168,76,0.15)' }}>
+            <div className="lg:col-span-5" style={{ padding: '40px 32px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRight: '1px solid rgba(195,163,94,0.15)' }}>
               <div className="relative" style={{ width: 360, height: 360, maxWidth: '100%' }}>
                 <svg width="100%" height="100%" viewBox="0 0 500 500">
                   {/* Outer dashed ring */}
-                  <circle cx={centerX} cy={centerY} r={radius + 18} fill="none" stroke="rgba(201,168,76,0.18)" strokeWidth="0.8" strokeDasharray="3 5" />
-                  <circle cx={centerX} cy={centerY} r={radius} fill="none" stroke="rgba(201,168,76,0.25)" strokeWidth="1" />
+                  <circle cx={centerX} cy={centerY} r={radius + 18} fill="none" stroke="rgba(195,163,94,0.18)" strokeWidth="0.8" strokeDasharray="3 5" />
+                  <circle cx={centerX} cy={centerY} r={radius} fill="none" stroke="rgba(195,163,94,0.25)" strokeWidth="1" />
 
                   {/* Rotating group with spokes + nodes */}
                   <g transform={`rotate(${rotation} ${centerX} ${centerY})`}>
@@ -141,7 +141,7 @@ const SupplyChainWheel: React.FC = () => {
                           strokeWidth="1.5"
                           className="cursor-pointer"
                           style={{
-                            filter: isHovered ? 'drop-shadow(0 0 10px rgba(201,168,76,0.8))' : 'none',
+                            filter: isHovered ? 'drop-shadow(0 0 10px rgba(195,163,94,0.8))' : 'none',
                             transition: 'all 0.3s ease',
                           }}
                           onMouseEnter={() => { setHoveredLabel(idx); setIsPaused(true) }}
@@ -195,8 +195,8 @@ const SupplyChainWheel: React.FC = () => {
                   width: '100%',
                   maxWidth: '380px',
                   padding: '14px 18px',
-                  background: activeNode ? 'rgba(201,168,76,0.08)' : 'rgba(245,240,232,0.04)',
-                  border: `1px solid ${activeNode ? 'rgba(201,168,76,0.4)' : 'rgba(201,168,76,0.15)'}`,
+                  background: activeNode ? 'rgba(195,163,94,0.08)' : 'rgba(245,240,232,0.04)',
+                  border: `1px solid ${activeNode ? 'rgba(195,163,94,0.4)' : 'rgba(195,163,94,0.15)'}`,
                   minHeight: '86px',
                   transition: 'all 0.25s ease',
                 }}
@@ -221,7 +221,7 @@ const SupplyChainWheel: React.FC = () => {
             {/* RIGHT — Live Metrics (7/12) */}
             <div className="lg:col-span-7" style={{ padding: '40px 32px', display: 'flex', flexDirection: 'column' }}>
 
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', paddingBottom: '14px', borderBottom: '1px solid rgba(201,168,76,0.2)' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', paddingBottom: '14px', borderBottom: '1px solid rgba(195,163,94,0.2)' }}>
                 <h3 style={{ fontSize: '18px', fontWeight: 500, color: '#fff' }}>Live Stage Metrics</h3>
                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#C3A35E', fontWeight: 700 }}>
                   <span style={{ width: '6px', height: '6px', background: '#C3A35E', borderRadius: '50%', animation: 'harvicsCockpitPulse 2s infinite' }} />
@@ -248,8 +248,8 @@ const SupplyChainWheel: React.FC = () => {
                       key={idx}
                       className="grid grid-cols-12 gap-2 items-center px-2 py-2 cursor-pointer transition-all"
                       style={{
-                        background: isHovered ? 'rgba(201,168,76,0.08)' : 'transparent',
-                        borderBottom: '1px solid rgba(201,168,76,0.08)',
+                        background: isHovered ? 'rgba(195,163,94,0.08)' : 'transparent',
+                        borderBottom: '1px solid rgba(195,163,94,0.08)',
                       }}
                       onMouseEnter={() => setHoveredBar(barKey)}
                       onMouseLeave={() => setHoveredBar(null)}
@@ -257,7 +257,7 @@ const SupplyChainWheel: React.FC = () => {
                       <div className="col-span-4" style={{ fontSize: '12px', fontWeight: 600, color: '#fff' }}>{kpi.stage}</div>
                       <div className="col-span-3" style={{ fontSize: '12px', color: 'rgba(245,240,232,0.75)' }}>{kpi.volume}</div>
                       <div className="col-span-3 flex items-center gap-2">
-                        <div className="flex-1 relative" style={{ height: '4px', background: 'rgba(201,168,76,0.15)' }}>
+                        <div className="flex-1 relative" style={{ height: '4px', background: 'rgba(195,163,94,0.15)' }}>
                           <div
                             className="absolute inset-y-0 left-0"
                             style={{
@@ -284,14 +284,14 @@ const SupplyChainWheel: React.FC = () => {
               </div>
 
               {/* Streams */}
-              <div className="grid grid-cols-4 gap-0 mt-5 pt-4" style={{ borderTop: '1px solid rgba(201,168,76,0.2)' }}>
+              <div className="grid grid-cols-4 gap-0 mt-5 pt-4" style={{ borderTop: '1px solid rgba(195,163,94,0.2)' }}>
                 {streamRows.map((row, i) => (
                   <div
                     key={i}
                     style={{
                       padding: '10px 8px',
                       textAlign: 'center',
-                      borderRight: i < streamRows.length - 1 ? '1px solid rgba(201,168,76,0.15)' : 'none',
+                      borderRight: i < streamRows.length - 1 ? '1px solid rgba(195,163,94,0.15)' : 'none',
                     }}
                   >
                     <div style={{ fontSize: '8px', fontWeight: 700, letterSpacing: '0.3em', textTransform: 'uppercase', color: '#C3A35E', marginBottom: '4px' }}>Stream</div>
