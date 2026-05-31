@@ -20,7 +20,7 @@ const pillars = [
 
 const stats = [
   { label: 'Track Record', value: '$700M+' },
-  { label: 'Operating Legacy', value: '18 Years' },
+  { label: 'Operating Legacy', value: '20 Years' },
   { label: 'Industry Verticals', value: '10' },
   { label: 'Platform Modules', value: '71' },
 ];

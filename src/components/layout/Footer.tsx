@@ -154,7 +154,7 @@ const Footer: React.FC = () => {
                 </div>
               </Link>
               <p style={{ fontSize: '12px', color: 'rgba(245,240,232,0.55)', lineHeight: 1.7, maxWidth: '300px' }}>
-                {tt('brandStatement', 'Sovereign trade infrastructure across 10 industry verticals, 42 markets and 3 continents — built for serious buyers.')}
+                {tt('brandStatement', 'Sovereign trade infrastructure across 10 industry verticals, 42 markets and 4 continents — built for serious buyers.')}
               </p>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '5px 10px', border: '1px solid rgba(201,168,76,0.3)', fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#C3A35E', fontWeight: 600, width: 'fit-content' }}>
                 <span style={{ width: '6px', height: '6px', background: '#C3A35E', borderRadius: '50%', animation: 'harvicsPulse 2s infinite' }} />
