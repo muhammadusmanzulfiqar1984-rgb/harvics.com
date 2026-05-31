@@ -81,8 +81,9 @@ const nextConfig = {
 
     return [
       {
-        // Exclude /api/groq/* so it's handled by Next.js App Router (Groq + HF pipeline)
-        source: '/api/:path((?!groq(?:/|$)).*)',
+        // Exclude /api/groq/* (Groq + HF pipeline) and /api/grok/* (xAI Imagine)
+        // so they're handled by Next.js App Router instead of proxied to Express.
+        source: '/api/:path((?!gro[qk](?:/|$)).*)',
         destination: `${backendUrl}/api/:path`,
       },
     ];
