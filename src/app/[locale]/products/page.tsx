@@ -2,7 +2,7 @@
 import ProductSlider from '@/components/ui/ProductSlider'
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
-import { getFolderBasedCategories } from '@/data/folderBasedProducts'
+import { getMergedFolderBasedCategories } from '@/data/folderBasedProducts'
 
 import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
@@ -23,8 +23,8 @@ export default async function ProductsPage({ params }: { params: Promise<{ local
   const t = await getTranslations('products')
   const { locale } = await params
   
-  // Use folder-based categories
-  const folderCategories = getFolderBasedCategories()
+  // Use merged categories (local FS + R2 generated images)
+  const folderCategories = await getMergedFolderBasedCategories()
   const productCategories = (folderCategories || []).map(category => ({
     key: category.key,
     image: category.image || '/assets/brand/photo/logo.png',

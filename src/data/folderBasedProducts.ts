@@ -53,6 +53,29 @@ export const getFolderBasedCategories = (): ProductCategory[] => {
   }
 }
 
+// Async variant — merges R2-generated images from public manifest into the local
+// folder-based categories. Falls back to local-only on any R2 failure.
+export const getMergedFolderBasedCategories = async (): Promise<ProductCategory[]> => {
+  try {
+    const { getMergedCategories } = await import('@/utils/getCategories')
+    const merged = await getMergedCategories()
+    return merged.map(category => ({
+      name: category.name,
+      key: category.key,
+      icon: category.icon,
+      image: category.image || '/assets/brand/photo/logo.png',
+      description: category.description,
+      color: category.color,
+      url: `/products/${category.key}`,
+      subcategories: category.subcategories.map(sub => sub.slug),
+      products: [],
+    }))
+  } catch (error) {
+    console.error('Error getting merged categories, falling back to local:', error)
+    return getFolderBasedCategories()
+  }
+}
+
 // Get products for a specific category (legacy - now returns empty, use subcategory instead)
 export const getProductsForCategory = (categoryKey: string): Product[] => {
   // Products are now loaded per subcategory
