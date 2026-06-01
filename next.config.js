@@ -98,11 +98,13 @@ const nextConfig = {
     // Build connect-src directive dynamically
     const connectSrc = [
       "'self'",
-      // Development URLs - always allow backend and frontend
-      "http://localhost:4000",
-      "ws://localhost:4000",
-      "http://localhost:3000",
-      "ws://localhost:3000",
+      // Development URLs — only in dev; never ship localhost in prod CSP
+      ...(isProduction ? [] : [
+        "http://localhost:4000",
+        "ws://localhost:4000",
+        "http://localhost:3000",
+        "ws://localhost:3000",
+      ]),
       // Backend URL (for direct connections if needed)
       ...(backendUrl.startsWith('http') ? [backendUrl, backendUrl.replace('http', 'ws')] : []),
       // Production API URL (if configured)

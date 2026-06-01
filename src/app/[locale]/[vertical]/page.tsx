@@ -2,6 +2,8 @@ import { navVerticals } from '@/data/megaMenuData'
 import { notFound } from 'next/navigation'
 import VerticalPageClient from './VerticalPageClient'
 
+export const revalidate = 3600
+
 const VALID_VERTICALS = navVerticals.map((v) => v.key)
 
 export default async function VerticalPage({

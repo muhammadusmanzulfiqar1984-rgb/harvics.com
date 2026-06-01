@@ -6,6 +6,8 @@ import { getCategoryDescription } from '@/data/verticalDescriptions'
 import type { Metadata } from 'next'
 import CategoryPageClient from './CategoryPageClient'
 
+export const revalidate = 3600
+
 const VALID_VERTICALS = navVerticals.map((v) => v.key)
 
 export async function generateMetadata({

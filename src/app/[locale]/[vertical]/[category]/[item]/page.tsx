@@ -5,6 +5,8 @@ import { getItemDescription } from '@/data/verticalDescriptions'
 import ItemPageClient from './ItemPageClient'
 import type { Metadata } from 'next'
 
+export const revalidate = 3600
+
 const VALID_VERTICALS = navVerticals.map((v) => v.key)
 
 export async function generateMetadata({

@@ -10,7 +10,7 @@
 
 import { navVerticals, slugify } from '../src/data/megaMenuData'
 
-const BASE = 'http://localhost:3000/en'
+const BASE = process.env.AUDIT_BASE_URL || 'http://localhost:3000/en'
 const LIMIT = parseInt(process.argv.find(a => a.startsWith('--limit='))?.split('=')[1] ?? '0', 10)
 
 // Build full URL list: vertical, vertical/category, vertical/category/item
