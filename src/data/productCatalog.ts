@@ -4,6 +4,8 @@
  * Complete product catalog across all 10 industry verticals
  */
 
+import { getLeafImage } from './leafImageMap'
+
 export interface Product {
   name: string
   keywords: string
@@ -573,10 +575,16 @@ const UNSPLASH_MAP: Record<string, string> = {
   infrastructure: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=800&fit=crop&auto=format&q=60',
 }
 
-/** Get a product image URL from keywords — ported from SUPREME */
+/** Get a product image URL from keywords — checks LEAF_IMAGE_MAP first
+ *  (so newly generated `/assets/verticals/.../leaf.jpg` images are served),
+ *  then falls back to the legacy Unsplash mapping. */
 export function getProductImage(keywords: string): string {
   const defaultUrl = 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=75'
   if (!keywords) return defaultUrl
+
+  // 1. Prefer locally generated leaf.jpg images.
+  const leaf = getLeafImage(keywords)
+  if (leaf) return leaf
 
   const makeUrl = (token: string): string | null => {
     if (!token) return null

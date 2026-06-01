@@ -15,6 +15,7 @@ const ChatbotWidget: React.FC = () => {
   const locale = useLocale()
   const [isOpen, setIsOpen] = useState(false)
   const [isAnimating, setIsAnimating] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
@@ -174,28 +175,67 @@ const ChatbotWidget: React.FC = () => {
   return (
     <>
       {/* ═══ CHAT TOGGLE BUTTON ═══ */}
-      <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3 group/wrap">
-        {/* Hover tooltip */}
-        <span
-          className="harvics-fab-tooltip pointer-events-none select-none text-[11px] font-medium tracking-wide uppercase text-[#1A0505] bg-[#F5F0E8]/95 backdrop-blur px-3 py-1.5 opacity-0 -translate-x-1 transition-all duration-300 group-hover/wrap:opacity-100 group-hover/wrap:translate-x-0"
-          style={{
-            borderRadius: '9999px',
-            border: '1px solid rgba(195, 163, 94, 0.45)',
-            boxShadow: '0 4px 14px rgba(26, 5, 5, 0.12)',
-          }}
-        >
-          {isOpen ? 'Close' : 'Ask Harvics'}
-        </span>
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3 group/wrap">
+        {/* Action menu (Chat / Call) — shows when menuOpen is true and chat panel is closed */}
+        {menuOpen && !isOpen && (
+          <div
+            className="flex flex-col gap-2 mb-1"
+            style={{
+              animation: 'fadeInUp 200ms ease-out both',
+            }}
+          >
+            <button
+              type="button"
+              onClick={() => { setMenuOpen(false); handleToggle() }}
+              className="flex items-center gap-2 pl-3 pr-4 h-10 text-[11px] font-semibold tracking-[0.18em] uppercase text-[#1A0505] bg-[#F5F0E8] hover:bg-white border border-[#C3A35E]/50 hover:border-[#C3A35E] shadow-[0_8px_24px_rgba(26,5,5,0.18)] transition-colors"
+              style={{ borderRadius: '9999px' }}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+              Chat with HarvyX
+            </button>
+            <a
+              href="tel:+12295455206"
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center gap-2 pl-3 pr-4 h-10 text-[11px] font-semibold tracking-[0.18em] uppercase text-[#1A0505] bg-[#F5F0E8] hover:bg-white border border-[#C3A35E]/50 hover:border-[#C3A35E] shadow-[0_8px_24px_rgba(26,5,5,0.18)] transition-colors no-underline"
+              style={{ borderRadius: '9999px' }}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z" />
+              </svg>
+              Call HarvyX
+            </a>
+          </div>
+        )}
 
-        <button
-          onClick={handleToggle}
-          className="harvics-chatbot-fab relative w-11 h-11 flex items-center justify-center transition-transform duration-300 hover:scale-105 active:scale-95 group"
-          style={{
-            background:
-              'radial-gradient(circle at 30% 22%, #9b3344 0%, #6B1F2B 50%, #3d1119 100%)',
-            border: '1px solid rgba(195, 163, 94, 0.5)',
-            borderRadius: '9999px',
-            boxShadow:
+        {/* Tooltip + trigger row */}
+        <div className="flex items-center gap-3">
+          {/* Hover tooltip */}
+          <span
+            className="harvics-fab-tooltip pointer-events-none select-none text-[11px] font-medium tracking-wide uppercase text-[#1A0505] bg-[#F5F0E8]/95 backdrop-blur px-3 py-1.5 opacity-0 -translate-x-1 transition-all duration-300 group-hover/wrap:opacity-100 group-hover/wrap:translate-x-0"
+            style={{
+              borderRadius: '9999px',
+              border: '1px solid rgba(195, 163, 94, 0.45)',
+              boxShadow: '0 4px 14px rgba(26, 5, 5, 0.12)',
+            }}
+          >
+            {isOpen ? 'Close' : menuOpen ? 'Close menu' : 'Contact HarvyX'}
+          </span>
+
+          <button
+            id="harvics-chat-trigger"
+            onClick={() => {
+              if (isOpen) { handleToggle(); return }
+              setMenuOpen((m) => !m)
+            }}
+            className="harvics-chatbot-fab relative w-11 h-11 flex items-center justify-center transition-transform duration-300 hover:scale-105 active:scale-95 group"
+            style={{
+              background:
+                'radial-gradient(circle at 30% 22%, #9b3344 0%, #6B1F2B 50%, #3d1119 100%)',
+              border: '1px solid rgba(195, 163, 94, 0.5)',
+              borderRadius: '9999px',
+              boxShadow:
               '0 10px 30px rgba(107, 31, 43, 0.4), 0 2px 6px rgba(0,0,0,0.18), inset 0 1px 1px rgba(255,255,255,0.18), inset 0 -2px 4px rgba(0,0,0,0.3)',
           }}
           aria-label={isOpen ? 'Close Chat' : 'Open Chat'}
@@ -213,20 +253,17 @@ const ChatbotWidget: React.FC = () => {
           />
           {!isOpen ? (
             <svg
-              className="relative w-[18px] h-[18px] text-[#E8D4A0] group-hover:text-white transition-colors duration-200"
+              className="relative w-[20px] h-[20px] text-[#E8D4A0] group-hover:text-white transition-colors duration-200"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
-              strokeWidth={1.6}
+              strokeWidth={1.8}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M21 12a8.5 8.5 0 01-12.7 7.4L3 21l1.6-5.2A8.5 8.5 0 1121 12z"
-              />
-              <circle cx="8.5" cy="12" r="0.9" fill="currentColor" />
-              <circle cx="12" cy="12" r="0.9" fill="currentColor" />
-              <circle cx="15.5" cy="12" r="0.9" fill="currentColor" />
+              {/* Telephone handset */}
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z" />
             </svg>
           ) : (
             <svg
@@ -247,6 +284,7 @@ const ChatbotWidget: React.FC = () => {
             />
           )}
         </button>
+        </div>
       </div>
 
       {/* ═══ CHAT WINDOW — Glassmorphism Panel ═══ */}
@@ -283,7 +321,21 @@ const ChatbotWidget: React.FC = () => {
 
             <div className="relative z-10 flex items-center gap-3">
               <div className="w-9 h-9 bg-[#C3A35E]/15 border border-[#C3A35E]/25 flex items-center justify-center backdrop-blur-sm">
-                <span className="text-lg">🤖</span>
+                {/* HarvyX brand mark — minimalist gold "H" */}
+                <svg
+                  className="w-4 h-4 text-[#C3A35E]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2.4}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 4v16" />
+                  <path d="M19 4v16" />
+                  <path d="M5 12h14" />
+                </svg>
               </div>
               <div>
                 <h3 className="font-bold text-sm text-white tracking-tight">HarvyX</h3>

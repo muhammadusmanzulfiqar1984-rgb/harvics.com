@@ -25,6 +25,7 @@ export interface CategoryData {
   description: string
   color: string
   icon: string
+  vertical?: string
 }
 
 // Map folder names to category keys (folders are now lowercase kebab-case under /assets/verticals/02-fmcg/categories/)
@@ -123,124 +124,205 @@ let categoriesCache: CategoryData[] | null = null
 let cacheTimestamp: number = 0
 const CACHE_DURATION = 60000 // 1 minute cache
 
-// Get all categories from the folder structure
+// All 10 vertical directories under public/assets/verticals/
+const VERTICAL_DIRS = [
+  '01-apparels', '02-fmcg', '03-commodities', '04-industrial', '05-minerals',
+  '06-oil-gas', '07-real-estate', '08-sourcing', '09-finance', '10-ai-tech',
+] as const
+
+// Verticals where we need backwards-compat keys (FMCG food keeps its mapped keys).
+const LEGACY_FMCG_DIR = '02-fmcg'
+
+// Display defaults for verticals that don't have an entry in categoryMapping.
+const VERTICAL_DEFAULTS: Record<string, { name: string; color: string; icon: string; description: string }> = {
+  '01-apparels':    { name: 'Apparels',     color: 'from-rose-600 to-pink-700',     icon: 'icon-textile',    description: 'Apparel, home textiles, fabrics and accessories sourced from certified global mills.' },
+  '02-fmcg':        { name: 'FMCG',         color: 'from-amber-500 to-orange-500',  icon: 'icon-fmcg',       description: 'Fast-moving consumer goods across food, personal-care, home-care and distribution.' },
+  '03-commodities': { name: 'Commodities',  color: 'from-yellow-600 to-amber-700',  icon: 'icon-commodity',  description: 'Agri, energy, softs and metals — physical commodities traded across 42+ markets.' },
+  '04-industrial':  { name: 'Industrial',   color: 'from-slate-600 to-slate-800',   icon: 'icon-industrial', description: 'Industrial chemicals, machinery, safety and MRO supplies for manufacturing operations.' },
+  '05-minerals':    { name: 'Minerals',     color: 'from-stone-600 to-stone-800',   icon: 'icon-mineral',    description: 'Metals, energy, precious and industrial minerals from certified mining operations.' },
+  '06-oil-gas':     { name: 'Oil & Gas',    color: 'from-zinc-700 to-zinc-900',     icon: 'icon-oilgas',     description: 'Upstream, midstream, downstream and services across the global hydrocarbon value chain.' },
+  '07-real-estate': { name: 'Real Estate',  color: 'from-emerald-600 to-teal-700',  icon: 'icon-realestate', description: 'Residential, commercial, industrial and land assets across emerging-market hubs.' },
+  '08-sourcing':    { name: 'Sourcing',     color: 'from-indigo-600 to-blue-800',   icon: 'icon-sourcing',   description: 'Sourcing services, category management and regional supplier networks.' },
+  '09-finance':     { name: 'Finance',      color: 'from-green-700 to-emerald-800', icon: 'icon-finance',    description: 'Banking, HPay, capital markets and advisory — built for cross-border commerce.' },
+  '10-ai-tech':     { name: 'AI & Tech',    color: 'from-violet-600 to-purple-800', icon: 'icon-aitech',     description: 'AI services, platforms, infrastructure and emerging tech powering HARVICS OS.' },
+}
+
+// Recursively find every "leaf" folder under a directory.
+// A leaf = folder with no subdirectories other than the reserved `videos` sibling.
+// Returns: { relPath, absPath } where relPath is the path from `categoriesRoot` to the leaf.
+function findLeafFolders(categoriesRoot: string): Array<{ relPath: string; absPath: string }> {
+  if (!fs.existsSync(categoriesRoot)) return []
+  const results: Array<{ relPath: string; absPath: string }> = []
+
+  function walk(dir: string, relPath: string) {
+    let entries: fs.Dirent[]
+    try {
+      entries = fs.readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    const subdirs = entries.filter(e => e.isDirectory() && e.name !== 'videos')
+    if (subdirs.length === 0) {
+      results.push({ relPath, absPath: dir })
+      return
+    }
+    for (const sd of subdirs) {
+      const childRel = relPath === '' ? sd.name : `${relPath}/${sd.name}`
+      walk(path.join(dir, sd.name), childRel)
+    }
+  }
+
+  for (const top of fs.readdirSync(categoriesRoot, { withFileTypes: true })) {
+    if (top.isDirectory() && top.name !== 'videos') {
+      walk(path.join(categoriesRoot, top.name), top.name)
+    }
+  }
+  return results
+}
+
+// Pretty-cased name from a kebab-case slug
+function prettify(slug: string): string {
+  return slug.split(/[-/]/).map(w => w.length === 0 ? w : w[0].toUpperCase() + w.slice(1)).join(' ')
+}
+
+// Get all categories across all 10 verticals from the folder structure.
+// - FMCG food categories keep their existing keys (bakery, beverages, ...) for
+//   backwards compatibility with /products/[category] URLs.
+// - All other categories use composite keys: `{verticalSlug}-{parent-path-with-hyphens}`.
+// - Leaves with zero images are still returned (with imageCount=0) so dry-runs can
+//   plan generation. Existing FMCG food behavior is preserved (its leaves all have images).
 export function getCategoriesFromFolder(): CategoryData[] {
-  // Return cached result if available and fresh
   const now = Date.now()
   if (categoriesCache && (now - cacheTimestamp) < CACHE_DURATION) {
     return categoriesCache
   }
 
-  // Scan the canonical assets path for FMCG categories
-  const basePath = path.join(process.cwd(), 'public', 'assets', 'verticals', '02-fmcg', 'categories')
-
-  if (!fs.existsSync(basePath)) {
-    console.warn('FMCG categories folder not found at:', basePath)
-    // Cache empty result to avoid repeated checks
+  const verticalsBase = path.join(process.cwd(), 'public', 'assets', 'verticals')
+  if (!fs.existsSync(verticalsBase)) {
     categoriesCache = []
     cacheTimestamp = now
     return []
   }
 
-  const categories: CategoryData[] = []
-  
-  try {
-    const categoryFolders = fs.readdirSync(basePath, { withFileTypes: true })
-      .filter(dirent => dirent.isDirectory())
-      .map(dirent => dirent.name)
+  // Group leaves by their category bucket: key = `${verticalDir}|${categoryRelPath}`
+  type Bucket = {
+    verticalDir: string
+    categoryRelPath: string       // e.g. 'bakery' or 'apparel/mens-wear'
+    leaves: Array<{ name: string; absPath: string }>  // leaf folders inside the bucket
+  }
+  const buckets = new Map<string, Bucket>()
 
-    for (const categoryFolder of categoryFolders) {
-      const categoryInfo = categoryMapping[categoryFolder]
-      
-      if (!categoryInfo) {
-        console.warn(`Unknown category folder: ${categoryFolder}`)
-        continue
-      }
+  for (const verticalDir of VERTICAL_DIRS) {
+    const categoriesRoot = path.join(verticalsBase, verticalDir, 'categories')
+    if (!fs.existsSync(categoriesRoot)) continue
 
-      const categoryPath = path.join(basePath, categoryFolder)
-      const subcategories: Subcategory[] = []
+    const leaves = findLeafFolders(categoriesRoot)
 
-      // Check if this category has subdirectories (subcategories)
-      const items = fs.readdirSync(categoryPath, { withFileTypes: true })
-      const hasSubdirectories = items.some(item => item.isDirectory())
+    for (const leaf of leaves) {
+      const segments = leaf.relPath.split('/')
+      let categoryRelPath: string
+      let leafName: string
 
-      if (hasSubdirectories) {
-        // Category has subcategories
-        const subcategoryDirs = items
-          .filter(item => item.isDirectory())
-          .map(item => item.name)
-
-        for (const subcategoryDir of subcategoryDirs) {
-          const subcategoryPath = path.join(categoryPath, subcategoryDir)
-          const images = getImageFiles(subcategoryPath)
-          
-          if (images.length > 0) {
-            const subSlug = createSlug(subcategoryDir)
-            subcategories.push({
-              name: subcategoryDir,
-              slug: subSlug,
-              images,
-              imageCount: images.length,
-              description: subcategoryDescriptions[subSlug] || `Premium ${subcategoryDir.toLowerCase()} — quality assured, globally sourced by Harvics Global Ventures.`,
-            })
-          }
-        }
+      if (segments.length === 1) {
+        // Top-level leaf (e.g. FMCG pastas — images directly inside).
+        // Treat the leaf itself as the category and use a single "all" subcategory.
+        categoryRelPath = segments[0]
+        leafName = 'all'
       } else {
-        // Category has direct images (like Pastas)
-        const images = getImageFiles(categoryPath)
-        if (images.length > 0) {
-          subcategories.push({
-            name: 'All',
-            slug: 'all',
-            images,
-            imageCount: images.length,
-            description: subcategoryDescriptions['all'] || categoryMapping[categoryFolder]?.description || 'Premium products globally sourced by Harvics Global Ventures.',
-          })
-        }
+        // Normal case: leaf's parent is the category.
+        categoryRelPath = segments.slice(0, -1).join('/')
+        leafName = segments[segments.length - 1]
       }
 
-      // Get a representative image for the category
-      // Try to find the first available image from any subcategory
-      let categoryImage = '/assets/brand/photo/logo.png'
-      for (const subcategory of subcategories) {
-        if (subcategory.images && subcategory.images.length > 0) {
-          categoryImage = subcategory.images[0]
-          break
-        }
+      const bucketKey = `${verticalDir}|${categoryRelPath}`
+      let bucket = buckets.get(bucketKey)
+      if (!bucket) {
+        bucket = { verticalDir, categoryRelPath, leaves: [] }
+        buckets.set(bucketKey, bucket)
       }
-      
-      // If still no image found, try to get images directly from category folder
-      if (categoryImage === '/assets/brand/photo/logo.png') {
-        const directImages = getImageFiles(categoryPath)
-        if (directImages.length > 0) {
-          categoryImage = directImages[0]
-        }
-      }
-
-      categories.push({
-        name: categoryInfo.name,
-        key: categoryInfo.key,
-        slug: createSlug(categoryFolder),
-        subcategories,
-        image: categoryImage,
-        description: categoryInfo.description,
-        color: categoryInfo.color,
-        icon: categoryInfo.icon
-      })
+      bucket.leaves.push({ name: leafName, absPath: leaf.absPath })
     }
-  } catch (error) {
-    console.error('Error scanning folder structure:', error)
-    // Cache empty result on error to prevent repeated failures
-    categoriesCache = []
-    cacheTimestamp = Date.now()
-    return []
   }
 
-  const sortedCategories = categories.sort((a, b) => a.name.localeCompare(b.name))
-  // Cache the result
-  categoriesCache = sortedCategories
+  const categories: CategoryData[] = []
+
+  for (const bucket of buckets.values()) {
+    const isLegacyFmcg =
+      bucket.verticalDir === LEGACY_FMCG_DIR && !bucket.categoryRelPath.includes('/')
+
+    let key: string
+    let displayName: string
+    let icon: string
+    let color: string
+    let description: string
+
+    const legacyInfo = isLegacyFmcg ? categoryMapping[bucket.categoryRelPath] : undefined
+    if (legacyInfo) {
+      // Backwards-compat: keep existing FMCG food keys and metadata.
+      key = legacyInfo.key
+      displayName = legacyInfo.name
+      icon = legacyInfo.icon
+      color = legacyInfo.color
+      description = legacyInfo.description
+    } else {
+      const verticalSlug = bucket.verticalDir.replace(/^\d+-/, '')
+      key = `${verticalSlug}-${bucket.categoryRelPath.replace(/\//g, '-')}`
+      const defaults = VERTICAL_DEFAULTS[bucket.verticalDir]
+      displayName = prettify(bucket.categoryRelPath)
+      icon = defaults?.icon ?? 'icon-default'
+      color = defaults?.color ?? 'from-stone-600 to-stone-800'
+      description = defaults
+        ? `${defaults.name} — ${prettify(bucket.categoryRelPath)}.`
+        : prettify(bucket.categoryRelPath)
+    }
+
+    const subcategories: Subcategory[] = []
+    for (const leaf of bucket.leaves) {
+      const images = getImageFiles(leaf.absPath)
+      const subSlug = leaf.name === 'all' ? 'all' : createSlug(leaf.name)
+      subcategories.push({
+        name: leaf.name === 'all' ? 'All' : leaf.name,
+        slug: subSlug,
+        images,
+        imageCount: images.length,
+        description:
+          subcategoryDescriptions[subSlug] ||
+          `Premium ${prettify(leaf.name).toLowerCase()} — quality assured, globally sourced by Harvics Global Ventures.`,
+      })
+    }
+
+    // Pick a representative image (first leaf that has any).
+    let categoryImage = '/assets/brand/photo/logo.png'
+    for (const sub of subcategories) {
+      if (sub.images.length > 0) {
+        categoryImage = sub.images[0]
+        break
+      }
+    }
+
+    categories.push({
+      name: displayName,
+      key,
+      slug: createSlug(bucket.categoryRelPath.replace(/\//g, '-')),
+      subcategories,
+      image: categoryImage,
+      description,
+      color,
+      icon,
+      vertical: bucket.verticalDir,
+    })
+  }
+
+  const sorted = categories.sort((a, b) => {
+    const va = a.vertical ?? ''
+    const vb = b.vertical ?? ''
+    if (va !== vb) return va.localeCompare(vb)
+    return a.name.localeCompare(b.name)
+  })
+
+  categoriesCache = sorted
   cacheTimestamp = Date.now()
-  return sortedCategories
+  return sorted
 }
 
 // Get subcategories for a specific category

@@ -1,0 +1,826 @@
+HARVICS OS — FULL CATEGORY TREE (T1 → T4)
+==========================================
+Owner: Shah Tabraiz
+Base path on disk: public/assets/verticals/{vertical}/categories/{T2}/{T3}/{T4}/
+
+Legend:
+  T1 = Vertical (folder already exists, e.g. 01-apparels)
+  T2 = Division
+  T3 = Category
+  T4 = Subcategory (leaf — images live here)
+  T5–T8 = Product Family / Product / Variant / SKU  (created on-demand later)
+
+
+==========================================================================
+01-apparels  (Textiles)
+==========================================================================
+apparel/
+  mens-wear/
+    shirts
+    trousers
+    suits
+    t-shirts
+    denim
+    knitwear
+    outerwear
+    ethnic
+  ladies-wear/
+    tops
+    dresses
+    abayas
+    trousers
+    knitwear
+    ethnic
+    lingerie
+    outerwear
+  kids-wear/
+    boys
+    girls
+    infants
+    toddlers
+    school-uniforms
+  sportswear/
+    activewear
+    tracksuits
+    swimwear
+    performance-tees
+    sports-bras
+home-textiles/
+  bed-linen/
+    sheets
+    duvets
+    pillowcases
+    comforters
+    bedspreads
+  bath-linen/
+    towels
+    bathrobes
+    bath-mats
+    washcloths
+  curtains/
+    blackout
+    sheer
+    panel
+    eyelet
+    drapes
+  kitchen/
+    aprons
+    tea-towels
+    oven-mitts
+    table-cloths
+    placemats
+fabrics/
+  cotton/
+    woven
+    knit
+    organic
+    dyed
+    printed
+  polyester/
+    woven
+    knit
+    fleece
+    micro-fiber
+  blends/
+    poly-cotton
+    cvc
+    tc
+    modal-blend
+  denim/
+    raw
+    washed
+    stretch
+    selvedge
+    recycled
+accessories/
+  scarves/
+    silk
+    wool
+    cotton
+    pashmina
+    printed
+  bags/
+    totes
+    handbags
+    backpacks
+    duffels
+    clutches
+  belts/
+    leather
+    fabric
+    woven
+    designer
+  shoes/
+    casual
+    formal
+    sports
+    sandals
+    boots
+
+
+==========================================================================
+02-fmcg
+==========================================================================
+NOTE: food/ already exists (bakery, beverages, confectionery, culinary,
+       frozen-foods, pastas, snacks) — NOT touched.
+
+personal-care/
+  skincare/
+    face-wash
+    moisturizers
+    sunscreen
+    serums
+    masks
+  haircare/
+    shampoo
+    conditioner
+    oils
+    color
+    treatments
+  hygiene/
+    soaps
+    sanitizers
+    deodorants
+    oral-care
+    feminine-care
+  cosmetics/
+    lipstick
+    foundation
+    eye-makeup
+    nail-polish
+    fragrance
+home-care/
+  detergents/
+    laundry-powder
+    liquid
+    fabric-softener
+    stain-remover
+  cleaners/
+    floor
+    glass
+    kitchen
+    bathroom
+    disinfectant
+  paper/
+    tissue
+    toilet-paper
+    kitchen-towel
+    wipes
+    napkins
+  tools/
+    brooms
+    mops
+    brushes
+    sponges
+    gloves
+distribution/
+  retail/
+    supermarket
+    convenience
+    specialty
+    kiosk
+  wholesale/
+    cash-and-carry
+    bulk
+    horeca
+    b2b
+  logistics/
+    cold-chain
+    ambient
+    last-mile
+    freight
+  storage/
+    warehouse
+    distribution-center
+    fulfillment
+    bonded
+
+
+==========================================================================
+03-commodities
+==========================================================================
+agri/
+  wheat/
+    hard-red
+    soft-white
+    durum
+    milling
+    feed
+  rice/
+    basmati
+    jasmine
+    long-grain
+    parboiled
+    broken
+  corn/
+    yellow
+    white
+    feed
+    food-grade
+    sweet
+  soybeans/
+    oil-grade
+    meal-grade
+    gmo
+    non-gmo
+    organic
+energy/
+  crude-oil/
+    brent
+    wti
+    dubai
+    urals
+    bonny-light
+  natural-gas/
+    pipeline
+    lng
+    lpg
+    cng
+    propane
+  lng/
+    contract
+    spot
+    long-haul
+    peak-shaving
+softs/
+  coffee/
+    arabica
+    robusta
+    green-bean
+    instant
+    specialty
+  cocoa/
+    beans
+    butter
+    powder
+    liquor
+    nibs
+  sugar/
+    raw
+    refined
+    brown
+    organic
+    cane
+  cotton/
+    upland
+    pima
+    organic
+    recycled
+    fair-trade
+metals/
+  steel/
+    hr-coil
+    cr-coil
+    rebar
+    billet
+    structural
+  copper/
+    cathode
+    scrap
+    rod
+    wire
+    concentrate
+  aluminum/
+    ingot
+    billet
+    sheet
+    scrap
+    extrusion
+
+
+==========================================================================
+04-industrial
+==========================================================================
+chemicals/
+  polymers/
+    pp
+    pe
+    pvc
+    ps
+    abs
+    pet
+  acids/
+    sulfuric
+    hydrochloric
+    nitric
+    phosphoric
+    acetic
+  solvents/
+    acetone
+    toluene
+    xylene
+    methanol
+    ipa
+machinery/
+  textile/
+    spinning
+    weaving
+    dyeing
+    finishing
+    knitting
+  food-processing/
+    mixers
+    ovens
+    fillers
+    packers
+    conveyors
+  packaging/
+    labelers
+    palletizers
+    shrink-wrap
+    carton-erectors
+    sealers
+safety/
+  ppe/
+    helmets
+    gloves
+    goggles
+    masks
+    footwear
+  lockout/
+    padlocks
+    hasps
+    valve-locks
+    tags
+    kits
+  fire/
+    extinguishers
+    alarms
+    sprinklers
+    suppressants
+    doors
+mro/
+  bearings/
+    ball
+    roller
+    thrust
+    needle
+    linear
+  belts/
+    v-belt
+    timing
+    flat
+    ribbed
+    conveyor
+  tools/
+    hand
+    power
+    cutting
+    measuring
+    electrical
+
+
+==========================================================================
+05-minerals
+==========================================================================
+metals/
+  iron-ore/
+    hematite
+    magnetite
+    pellets
+    fines
+    lumps
+  copper/
+    concentrate
+    cathode
+    ore
+    refined
+    scrap
+  aluminum/
+    bauxite
+    alumina
+    ingot
+    scrap
+    primary
+  zinc/
+    concentrate
+    slab
+    dust
+    oxide
+    alloy
+energy/
+  coal/
+    thermal
+    coking
+    anthracite
+    lignite
+    met-coal
+  uranium/
+    yellowcake
+    enriched
+    depleted
+    ore
+    hexafluoride
+  lithium/
+    carbonate
+    hydroxide
+    spodumene
+    brine
+    battery-grade
+precious/
+  gold/
+    bullion
+    jewelry-grade
+    scrap
+    dore
+    bars
+  silver/
+    bullion
+    industrial
+    jewelry
+    scrap
+    granules
+  platinum/
+    sponge
+    ingot
+    catalyst
+    jewelry
+    scrap
+industrial/
+  sand/
+    silica
+    frac
+    construction
+    foundry
+    glass
+  gravel/
+    crushed
+    river
+    pea
+    drainage
+    decorative
+  limestone/
+    high-calcium
+    dolomitic
+    agricultural
+    construction
+    cement
+
+
+==========================================================================
+06-oil-gas
+==========================================================================
+upstream/
+  exploration/
+    seismic
+    drilling
+    appraisal
+    geology
+  production/
+    onshore
+    offshore
+    shale
+    deepwater
+midstream/
+  transport/
+    pipeline
+    tanker
+    rail
+    truck
+  storage/
+    tank-farm
+    lng-terminal
+    spr
+    gas-storage
+downstream/
+  refining/
+    distillation
+    cracking
+    reforming
+    blending
+  petrochemicals/
+    olefins
+    aromatics
+    fertilizers
+    methanol
+  retail/
+    gasoline
+    diesel
+    lubricants
+    lpg
+services/
+  drilling/
+    onshore-rigs
+    offshore-rigs
+    directional
+    completion
+  maintenance/
+    inspection
+    turnaround
+    repair
+    monitoring
+
+
+==========================================================================
+07-real-estate
+==========================================================================
+residential/
+  apartments/
+    studio
+    1-bed
+    2-bed
+    3-bed
+    penthouse
+  villas/
+    detached
+    semi-detached
+    townhouse
+    compound
+    beachfront
+  condos/
+    luxury
+    mid-range
+    affordable
+    serviced
+commercial/
+  office/
+    grade-a
+    grade-b
+    coworking
+    business-park
+    headquarters
+  retail/
+    mall
+    high-street
+    strip-mall
+    kiosk
+    anchor
+  hospitality/
+    hotel
+    resort
+    serviced-apartments
+    hostel
+industrial-re/
+  warehouse/
+    dry
+    cold
+    bonded
+    fulfillment
+    last-mile
+  manufacturing/
+    light
+    heavy
+    food-grade
+    chemical
+    automotive
+  logistics/
+    freight-yard
+    container-yard
+    distribution-hub
+land/
+  plots/
+    residential
+    commercial
+    agricultural
+    mixed-use
+  development/
+    master-planned
+    township
+    gated
+    beachfront
+
+
+==========================================================================
+08-sourcing
+==========================================================================
+services/
+  supplier-discovery/
+    audit
+    vetting
+    rfq
+    sample
+  quality-control/
+    pre-shipment
+    in-line
+    lab-test
+    certification
+  logistics/
+    freight-forward
+    customs
+    warehousing
+    last-mile
+  trade-finance/
+    lc
+    ucp600
+    factoring
+    escrow
+categories/
+  textile-sourcing/
+    fabric
+    garment
+    accessories
+    home-textile
+  fmcg-sourcing/
+    food
+    beverage
+    personal-care
+    home-care
+  industrial-sourcing/
+    machinery
+    chemicals
+    mro
+    safety
+  commodity-sourcing/
+    agri
+    energy
+    metals
+    softs
+regions/
+  asia/
+    china
+    india
+    vietnam
+    bangladesh
+    pakistan
+    indonesia
+  middle-east/
+    uae
+    saudi
+    qatar
+    oman
+    kuwait
+  africa/
+    egypt
+    kenya
+    nigeria
+    south-africa
+    morocco
+  europe/
+    turkey
+    italy
+    germany
+    spain
+    poland
+
+
+==========================================================================
+09-finance
+==========================================================================
+banking/
+  corporate/
+    working-capital
+    term-loans
+    trade-finance
+    cash-mgmt
+  retail/
+    deposits
+    mortgages
+    personal-loans
+    cards
+  islamic/
+    murabaha
+    ijara
+    sukuk
+    takaful
+hpay/
+  wallet/
+    consumer
+    merchant
+    agent
+    business
+  transfers/
+    domestic
+    cross-border
+    bulk
+    instant
+  crypto/
+    stablecoin
+    btc
+    eth
+    harvicoin
+  settlement/
+    b2b
+    b2c
+    escrow
+    reconciliation
+capital-markets/
+  equity/
+    listed
+    private
+    ipo
+    secondary
+  debt/
+    bonds
+    sukuk
+    commercial-paper
+    notes
+  derivatives/
+    fx
+    commodity
+    interest-rate
+    equity
+advisory/
+  corporate/
+    m-and-a
+    ipo
+    restructuring
+    valuation
+  wealth/
+    private-banking
+    family-office
+    portfolio
+    estate
+
+
+==========================================================================
+10-ai-tech
+==========================================================================
+ai-services/
+  nlp/
+    chatbot
+    translation
+    sentiment
+    summarization
+  vision/
+    ocr
+    object-detection
+    face
+    scene
+  prediction/
+    demand
+    price
+    churn
+    fraud
+  generative/
+    text
+    image
+    video
+    voice
+platforms/
+  erp-os/
+    finance
+    hr
+    crm
+    scm
+  data-platform/
+    ingestion
+    warehouse
+    lake
+    governance
+  iot/
+    sensors
+    gateways
+    monitoring
+    twin
+  saas/
+    b2b
+    b2c
+    vertical
+    horizontal
+infrastructure/
+  cloud/
+    compute
+    storage
+    network
+    security
+  edge/
+    cdn
+    edge-compute
+    5g
+    fog
+  devops/
+    ci-cd
+    monitoring
+    observability
+    sre
+emerging/
+  blockchain/
+    supply-chain
+    identity
+    payments
+    contracts
+  quantum/
+    simulation
+    cryptography
+    optimization
+  robotics/
+    manufacturing
+    logistics
+    agri
+    service
+  ar-vr/
+    training
+    retail
+    real-estate
+    gaming
+
+
+==========================================================================
+NOTES
+==========================================================================
+- Will create:   ~39 T2 + ~140 T3 + ~560 T4 empty folders (≈740 total)
+- Will NOT touch: existing 02-fmcg/categories/* food folders or
+                  01-apparels/categories/textile/* images.
+- T5–T8 left empty as future slots (added on-demand per leaf).
+- Scanner caveat: getAllCategories() currently scans 02-fmcg/categories
+                  only — extending it to the other 9 verticals is a
+                  separate task.
+
+DECISION NEEDED before creation:
+  [1] Place under {vertical}/categories/...   (matches existing FMCG)  ← recommended
+  [2] Place directly under {vertical}/...     (no wrapper)
+
+Also confirm action for existing empty wrappers:
+  06-oil-gas/operations, 08-sourcing/services, 09-finance/hpay,
+  09-finance/trade-finance, 10-ai-tech/automation, 10-ai-tech/machine-learning
+  → keep / rename to 'categories' / delete

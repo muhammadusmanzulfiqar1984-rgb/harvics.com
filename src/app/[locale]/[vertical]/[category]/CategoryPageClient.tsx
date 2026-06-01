@@ -8,52 +8,21 @@ import SmartImage from '@/components/ui/SmartImage'
 import ImageCarousel from '@/components/ui/ImageCarousel'
 
 const verticalFallbackSlides: Record<string, string[]> = {
-  textiles: [
-    'https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1200&h=600&fit=crop&q=75',
-    'https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200&h=600&fit=crop&q=75',
-  ],
-  fmcg: [
-    'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=1200&h=600&fit=crop&q=75',
-    'https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200&h=600&fit=crop&q=75',
-  ],
-  commodities: [
-    'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=600&fit=crop&q=75',
-    'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&h=600&fit=crop&q=75',
-  ],
-  industrial: [
-    '/assets/verticals/04-industrial/hero.jpg',
-    '/assets/verticals/04-industrial/thumb.webp',
-    '/assets/verticals/04-industrial/thumb.jpg',
-  ],
-  minerals: [
-    'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=600&fit=crop&q=75',
-    'https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=1200&h=600&fit=crop&q=75',
-  ],
-  'oil-gas': [
-    'https://images.unsplash.com/photo-1513828583688-c52646db42da?w=1200&h=600&fit=crop&q=75',
-    'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&h=600&fit=crop&q=75',
-  ],
-  'real-estate': [
-    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=600&fit=crop&q=75',
-    'https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200&h=600&fit=crop&q=75',
-  ],
-  sourcing: [
-    'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&h=600&fit=crop&q=75',
-    'https://images.unsplash.com/photo-1586528116493-cee1c6e18f42?w=1200&h=600&fit=crop&q=75',
-  ],
-  finance: [
-    'https://images.unsplash.com/photo-1560472355-536de3962603?w=1200&h=600&fit=crop&q=75',
-    'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=600&fit=crop&q=75',
-  ],
-  ai: [
-    'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop&q=75',
-    'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=600&fit=crop&q=75',
-  ],
+  textiles:      ['/assets/verticals/01-apparels/hero.jpg'],
+  fmcg:          ['/assets/verticals/02-fmcg/hero.jpg'],
+  commodities:   ['/assets/verticals/03-commodities/hero.jpg'],
+  industrial:    ['/assets/verticals/04-industrial/hero.jpg'],
+  minerals:      ['/assets/verticals/05-minerals/hero.jpg'],
+  'oil-gas':     ['/assets/verticals/06-oil-gas/hero.jpg'],
+  'real-estate': ['/assets/verticals/07-real-estate/hero.jpg'],
+  sourcing:      ['/assets/verticals/08-sourcing/hero.jpg'],
+  finance:       ['/assets/verticals/09-finance/hero.jpg'],
+  ai:            ['/assets/verticals/10-ai-tech/hero.jpg'],
 }
 
 const defaultSlides = [
-  'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=600&fit=crop&q=75',
-  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop&q=75',
+  '/assets/verticals/02-fmcg/hero.jpg',
+  '/assets/verticals/01-apparels/hero.jpg',
 ]
 
 /* ───── Intersection Observer Hook ───── */

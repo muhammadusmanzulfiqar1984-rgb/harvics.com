@@ -1,4 +1,4 @@
-// Pipeline: Groq (prompt enhancement) -> HuggingFace (image generation)
+// Pipeline: Groq (prompt enhancement) -> Cloudflare Workers AI (image generation)
 // App Router route handler.
 //
 // POST /api/groq/process
@@ -6,12 +6,11 @@
 // Returns: { success, originalPrompt, enhancedPrompt, image (data URL) }
 
 import { NextResponse } from 'next/server';
-import { InferenceClient } from '@huggingface/inference';
 import { HARVICS_PROMPT_ENGINEER_SYSTEM } from '@/lib/promptTemplates';
 
 export const runtime = 'nodejs';
 
-const HF_MODEL = 'stabilityai/stable-diffusion-xl-base-1.0';
+const CF_MODEL = '@cf/black-forest-labs/flux-1-schnell';
 const GROQ_MODEL = process.env.GROQ_MODEL || 'llama-3.1-8b-instant';
 
 export async function POST(req: Request) {
@@ -23,13 +22,17 @@ export async function POST(req: Request) {
     }
 
     const GROQ_API_KEY = process.env.GROQ_API_KEY;
-    const HF_API_KEY = process.env.HF_API_KEY;
+    const CLOUDFLARE_API_TOKEN = process.env.CLOUDFLARE_API_TOKEN;
+    const CLOUDFLARE_ACCOUNT_ID = process.env.CLOUDFLARE_ACCOUNT_ID;
 
     if (!GROQ_API_KEY) {
       return NextResponse.json({ error: 'GROQ_API_KEY is missing from .env.local' }, { status: 500 });
     }
-    if (!HF_API_KEY) {
-      return NextResponse.json({ error: 'HF_API_KEY is missing from .env.local' }, { status: 500 });
+    if (!CLOUDFLARE_API_TOKEN) {
+      return NextResponse.json({ error: 'CLOUDFLARE_API_TOKEN is missing from .env.local' }, { status: 500 });
+    }
+    if (!CLOUDFLARE_ACCOUNT_ID) {
+      return NextResponse.json({ error: 'CLOUDFLARE_ACCOUNT_ID is missing from .env.local' }, { status: 500 });
     }
 
     // Step 1: Groq enhances the prompt
@@ -58,31 +61,38 @@ export async function POST(req: Request) {
     const groqData = await groqRes.json();
     const enhancedPrompt: string = groqData?.choices?.[0]?.message?.content?.trim() || prompt;
 
-    // Step 2: HuggingFace generates the image (via official SDK)
-    const hf = new InferenceClient(HF_API_KEY);
-    let imageBlob: Blob;
-    try {
-      imageBlob = await hf.textToImage(
-        {
-          model: HF_MODEL,
-          inputs: enhancedPrompt,
-          parameters: { width: 1024, height: 1024, num_inference_steps: 30 },
-        },
-        { outputType: 'blob' },
-      );
-    } catch (e: any) {
-      return NextResponse.json({ error: 'HuggingFace failed', detail: e?.message || String(e) }, { status: 502 });
+    // Step 2: Cloudflare Workers AI generates the image
+    const cfUrl = `https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/ai/run/${CF_MODEL}`;
+    const cfRes = await fetch(cfUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${CLOUDFLARE_API_TOKEN}`,
+      },
+      body: JSON.stringify({ prompt: enhancedPrompt }),
+    });
+
+    if (!cfRes.ok) {
+      const detail = await cfRes.text();
+      return NextResponse.json({ error: 'Cloudflare AI failed', detail }, { status: 502 });
     }
 
-    const imageBuffer = Buffer.from(await imageBlob.arrayBuffer());
-    const base64 = imageBuffer.toString('base64');
-    const contentType = imageBlob.type || 'image/jpeg';
+    // flux-1-schnell returns JSON: { result: { image: "<base64 jpeg>" }, success, ... }
+    const cfData = await cfRes.json();
+    const base64: string | undefined = cfData?.result?.image;
+
+    if (!base64) {
+      return NextResponse.json(
+        { error: 'Cloudflare AI returned no image', detail: cfData },
+        { status: 502 },
+      );
+    }
 
     return NextResponse.json({
       success: true,
       originalPrompt: prompt,
       enhancedPrompt,
-      image: `data:${contentType};base64,${base64}`,
+      image: `data:image/jpeg;base64,${base64}`,
     });
   } catch (err: any) {
     return NextResponse.json({ error: err?.message || 'Unknown error' }, { status: 500 });

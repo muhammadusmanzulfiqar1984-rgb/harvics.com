@@ -4,12 +4,16 @@ import { getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import ProductCategoryClient from './ProductCategoryClient'
 import { getMergedCategories } from '@/utils/getCategories'
+import { getAllCategories } from '@/utils/folderScanner'
 import { getProductCategoryContent } from '@/utils/contentPopulator'
 import { SUPPORTED_LOCALES } from '@/config/locales'
 
 export async function generateStaticParams() {
   const locales = [...SUPPORTED_LOCALES]
-  const categories = ['beverages', 'confectionery', 'snacks', 'pasta', 'bakery', 'culinary', 'frozenFoods']
+  // Build every category key the folder scanner discovers across all 10 verticals
+  // (FMCG food keeps its legacy short keys; new structure uses composite keys
+  // like `apparels-apparel-womens-wear`, `fmcg-personal-care-skincare`, etc.)
+  const categories = getAllCategories().map(c => c.key)
 
   return locales.flatMap(locale =>
     categories.map(category => ({ locale, category }))

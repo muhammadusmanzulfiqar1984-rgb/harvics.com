@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
+import { getLeafImage } from '@/data/leafImageMap'
 
 interface SmartImageProps {
   src?: string
@@ -366,6 +367,15 @@ const SmartImage: React.FC<SmartImageProps> = ({
     // If keyword provided, use it directly
     if (keyword) {
       const searchText = keyword.toLowerCase()
+
+      // 0. Prefer locally generated leaf.jpg images via the central map.
+      const leaf = getLeafImage(searchText)
+      if (leaf) {
+        setImageSrc(leaf)
+        setIsLoading(false)
+        return
+      }
+
       let matchedUrl = PRODUCT_IMAGES.default
 
       // 1. Exact match first
@@ -398,6 +408,18 @@ const SmartImage: React.FC<SmartImageProps> = ({
 
     // Find matching image from keywords
     const searchText = `${context.product || ''} ${context.category || ''}`.toLowerCase()
+
+    // 0. Prefer leaf.jpg via central map (try product, category, full text).
+    const leaf =
+      (context.product && getLeafImage(context.product)) ||
+      (context.category && getLeafImage(context.category)) ||
+      getLeafImage(searchText)
+    if (leaf) {
+      setImageSrc(leaf)
+      setIsLoading(false)
+      return
+    }
+
     let matchedUrl = PRODUCT_IMAGES.default
 
     // Longest key that appears in searchText (most specific match wins)

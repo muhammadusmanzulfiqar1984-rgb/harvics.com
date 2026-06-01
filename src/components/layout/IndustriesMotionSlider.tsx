@@ -4,12 +4,18 @@ import React, { useEffect, useRef } from 'react'
 import { useScrollReveal, revealClass } from '@/hooks/useScrollReveal'
 
 const SLIDES = [
-  { src: '/assets/verticals/02-fmcg/categories/pastas/pasta (5).png', alt: 'Premium Pasta' },
-  { src: '/assets/verticals/02-fmcg/categories/snacks/chips-and-crisps/chips and crisp.png', alt: 'Chips & Crisps' },
-  { src: '/assets/verticals/02-fmcg/categories/culinary/seasoning-spices-and-marinade/SPices.png', alt: 'Spices & Seasoning' },
-  { src: '/assets/verticals/02-fmcg/categories/culinary/cooking-oil-fats-and-dressing/cooking oil.png', alt: 'Cooking Oil' },
-  { src: '/assets/verticals/02-fmcg/categories/beverages/carbonated/carbonated.png', alt: 'Carbonated Beverages' },
-  { src: '/assets/verticals/02-fmcg/categories/frozen-foods/chicken-nuggets/chicken nuggets.png', alt: 'Frozen Foods' },
+  { src: '/assets/verticals/02-fmcg/categories/food/pantry/pasta-rice/pasta/leaf.jpg', alt: 'Premium Pasta' },
+  { src: '/assets/verticals/02-fmcg/categories/food/snacks/chips/leaf.jpg', alt: 'Premium Chips & Crisps' },
+  { src: '/assets/verticals/02-fmcg/categories/food/pantry/herbs-spices/spice-blends/leaf.jpg', alt: 'Premium Spice Blends' },
+  { src: '/assets/verticals/02-fmcg/categories/food/pantry/cooking-oils/olive/leaf.jpg', alt: 'Premium Olive Oil' },
+  { src: '/assets/verticals/02-fmcg/categories/food/beverages/carbonated/cola/leaf.jpg', alt: 'Premium Carbonated Beverages' },
+  { src: '/assets/verticals/02-fmcg/categories/food/frozen/frozen-snacks/nuggets/leaf.jpg', alt: 'Premium Frozen Snacks' },
+  { src: '/assets/verticals/02-fmcg/categories/food/bread-bakery/sourdough/leaf.jpg', alt: 'Premium Sourdough' },
+  { src: '/assets/verticals/02-fmcg/categories/food/dairy/cheese/leaf.jpg', alt: 'Premium Cheese' },
+  { src: '/assets/verticals/01-apparels/categories/apparel/womens-wear/dresses/leaf.jpg', alt: 'Premium Womens Dress' },
+  { src: '/assets/verticals/01-apparels/categories/footwear/womens/heels/leaf.jpg', alt: 'Premium Womens Heels' },
+  { src: '/assets/verticals/01-apparels/categories/accessories/bags/crossbody/leaf.jpg', alt: 'Premium Crossbody Bag' },
+  { src: '/assets/verticals/01-apparels/categories/fabrics/cotton/oxford/leaf.jpg', alt: 'Premium Cotton Fabric' },
 ]
 
 const IndustriesMotionSlider: React.FC = () => {
