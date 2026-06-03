@@ -267,7 +267,7 @@ export const productCatalog = {
     ],
     data: [
       { name: 'Data Pipelines', keywords: 'pipelines,data,ai', price: 'Project Basis' },
-      { name: 'Data Warehouses', keywords: 'warehouses,data,ai', price: 'Project Basis' },
+      { name: 'Data Warehouses', keywords: 'warehouse,data,ai', price: 'Project Basis' },
       { name: 'Data APIs', keywords: 'apis,data,ai', price: 'Monthly' },
     ],
     integration: [
@@ -290,7 +290,7 @@ export const productCatalog = {
     { name: 'Global Logistics & Freight', keywords: 'logistics,ship,cargo', price: 'Request Quote', desc: 'Seamless shipping by air, sea, and land.', icon: '🚢' },
     { name: 'Supply Chain Strategy', keywords: 'strategy,consulting', price: 'Request Quote', desc: 'Optimizing your supply chain for efficiency.', icon: '📈' },
     { name: 'Sustainable Sourcing', keywords: 'sustainable,eco,green', price: 'Request Quote', desc: 'Ethical and eco-friendly sourcing solutions.', icon: '🌱' },
-    { name: 'Technology & Innovation', keywords: 'technology,ai,blockchain', price: 'Request Quote', desc: 'AI-powered supplier matching and traceability.', icon: '🤖' },
+    { name: 'Technology & Innovation', keywords: 'sourcing,technology,blockchain', price: 'Request Quote', desc: 'AI-powered supplier matching and traceability.', icon: '🤖' },
     { name: 'Government & Industrial Projects', keywords: 'government,infrastructure', price: 'Request Quote', desc: 'Turnkey procurement for public sector.', icon: '🏛️' },
   ],
 } as const
