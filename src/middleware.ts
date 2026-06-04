@@ -17,6 +17,12 @@ const SUPPORTED_LOCALE_SET = new Set<string>(SUPPORTED_LOCALES as readonly strin
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  if (pathname === '/' || pathname === '') {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${DEFAULT_LOCALE}`;
+    return NextResponse.redirect(url);
+  }
+
   // Temporary safe redirects for legacy/missing pages.
   const parts = pathname.split('/').filter(Boolean);
   if (parts.length >= 2 && SUPPORTED_LOCALE_SET.has(parts[0])) {
