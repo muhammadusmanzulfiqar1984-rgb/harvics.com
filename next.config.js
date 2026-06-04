@@ -9,6 +9,17 @@ const distDir = process.env.NEXT_DIST_DIR || '.next'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   outputFileTracingRoot: path.join(__dirname),
+  outputFileTracingExcludes: {
+    '*': [
+      './public/assets/verticals/**',
+      './public/_originals/**',
+      './archive/**',
+      './backend/backups/**',
+      './ai-engine/**',
+      './node_modules/@swc/core-linux-x64-musl/**',
+      './node_modules/@esbuild/**',
+    ],
+  },
   // Exclude archive folder from all Next.js processing
   excludeDefaultMomentLocales: true,
   webpack: (config) => {
