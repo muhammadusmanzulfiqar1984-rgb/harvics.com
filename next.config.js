@@ -43,7 +43,9 @@ const nextConfig = {
       ? { exclude: ['error', 'warn'] }
       : false,
   },
-  output: process.env.NODE_ENV === 'production' ? 'standalone' : undefined,
+  // output: 'standalone' was breaking Vercel deploys (every URL 404s).
+  // Vercel needs default output. Re-enable only for self-hosted Node/Docker via env.
+  output: process.env.NEXT_OUTPUT_STANDALONE === 'true' ? 'standalone' : undefined,
   typescript: {
     // Keep dev flexible, but production builds must not ship with hidden TS failures.
     ignoreBuildErrors: process.env.NODE_ENV !== 'production',
