@@ -143,29 +143,29 @@ const verticalMeta: Record<string, { tagline: string; description: string; stats
 
 /** Hero images for each vertical — generated flux heroes (with safe Unsplash fallbacks for missing ones). */
 const verticalHeroImages: Record<string, string> = {
-  textiles:      '/assets/verticals/01-apparels/hero.jpg',
-  fmcg:          '/assets/verticals/02-fmcg/hero.jpg',
-  commodities:   '/assets/verticals/03-commodities/hero.jpg',
-  industrial:    '/assets/verticals/04-industrial/hero.jpg',
-  minerals:      '/assets/verticals/05-minerals/hero.jpg',
-  'oil-gas':     '/assets/verticals/06-oil-gas/hero.jpg',
+  textiles: '/assets/verticals/01-apparels/hero.jpg',
+  fmcg: '/assets/verticals/02-fmcg/hero.jpg',
+  commodities: '/assets/verticals/03-commodities/hero.jpg',
+  industrial: '/assets/verticals/04-industrial/hero.jpg',
+  minerals: '/assets/verticals/05-minerals/hero.jpg',
+  'oil-gas': '/assets/verticals/06-oil-gas/hero.jpg',
   'real-estate': '/assets/verticals/07-real-estate/hero.jpg',
-  sourcing:      '/assets/verticals/08-sourcing/hero.jpg',
-  finance:       '/assets/verticals/09-finance/hero.jpg',
-  ai:            '/assets/verticals/10-ai-tech/hero.jpg',
+  sourcing: '/assets/verticals/08-sourcing/hero.jpg',
+  finance: '/assets/verticals/09-finance/hero.jpg',
+  ai: '/assets/verticals/10-ai-tech/hero.jpg',
 }
 
 const verticalHeroSlides: Record<string, string[]> = {
-  textiles:      ['/assets/verticals/01-apparels/hero.jpg'],
-  fmcg:          ['/assets/verticals/02-fmcg/hero.jpg'],
-  commodities:   ['/assets/verticals/03-commodities/hero.jpg'],
-  industrial:    ['/assets/verticals/04-industrial/hero.jpg'],
-  minerals:      ['/assets/verticals/05-minerals/hero.jpg'],
-  'oil-gas':     ['/assets/verticals/06-oil-gas/hero.jpg'],
+  textiles: ['/assets/verticals/01-apparels/hero.jpg'],
+  fmcg: ['/assets/verticals/02-fmcg/hero.jpg'],
+  commodities: ['/assets/verticals/03-commodities/hero.jpg'],
+  industrial: ['/assets/verticals/04-industrial/hero.jpg'],
+  minerals: ['/assets/verticals/05-minerals/hero.jpg'],
+  'oil-gas': ['/assets/verticals/06-oil-gas/hero.jpg'],
   'real-estate': ['/assets/verticals/07-real-estate/hero.jpg'],
-  sourcing:      ['/assets/verticals/08-sourcing/hero.jpg'],
-  finance:       ['/assets/verticals/09-finance/hero.jpg'],
-  ai:            ['/assets/verticals/10-ai-tech/hero.jpg'],
+  sourcing: ['/assets/verticals/08-sourcing/hero.jpg'],
+  finance: ['/assets/verticals/09-finance/hero.jpg'],
+  ai: ['/assets/verticals/10-ai-tech/hero.jpg'],
 }
 
 const defaultHeroSlides = [
@@ -213,13 +213,13 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
       {/* ═══════ HERO BANNER ═══════ */}
       <section
         ref={heroSection.ref}
-        className={`relative bg-gradient-to-br ${meta.gradient} py-24 md:py-32 px-4 overflow-hidden border-b border-[#C3A35E]/20`}
+        className="relative min-h-[660px] overflow-hidden border-b border-[#C3A35E]/20"
       >
         {/* Hero Background Image */}
         {heroSlides.length > 0 ? (
           <div className="absolute inset-0">
             <ImageCarousel images={heroSlides} autoSlideInterval={4500} height="h-full" />
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.82) 0%, rgba(107,31,43,0.48) 45%, rgba(107,31,43,0.24) 100%)' }} />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,2,4,0.58)_0%,rgba(8,2,4,0.25)_35%,rgba(8,2,4,0.95)_100%)]" />
           </div>
         ) : verticalHeroImages[vertical.key] && (
           <>
@@ -228,105 +228,109 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
               src={verticalHeroImages[vertical.key]}
               alt=""
               className="absolute inset-0 w-full h-full object-cover"
-              style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
+              style={{ filter: 'brightness(0.4) contrast(1.15) saturate(0.95)' }}
             />
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,2,4,0.65)_0%,rgba(8,2,4,0.4)_35%,rgba(8,2,4,0.95)_100%)]" />
           </>
         )}
-        {/* Top gold accent */}
-        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#C3A35E]/40 to-transparent" />
 
-        <div className="max-w-[1200px] mx-auto relative z-10">
-          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10">
-            <div className="lg:max-w-[680px]">
-              {/* Breadcrumb */}
-              <nav
-                className="flex items-center text-xs text-white/60 mb-6 transition-all duration-700"
-                style={{
-                  opacity: heroSection.inView ? 1 : 0,
-                  transform: heroSection.inView ? 'translateY(0)' : 'translateY(12px)',
-                }}
-              >
-                <Link href={`/${locale}`} className="hover:text-[#C3A35E] transition-colors">Home</Link>
-                <span className="mx-2 text-[#C3A35E]/40">—</span>
-                <span className="text-[#C3A35E] font-medium">{vertical.label}</span>
-              </nav>
+        {/* Centered copy */}
+        <div className="relative z-10 flex min-h-[660px] items-center justify-center px-4">
+          <div className="text-center max-w-[880px]">
+            <nav
+              className="flex items-center justify-center text-xs text-white/60 mb-6 transition-all duration-700"
+              style={{
+                opacity: heroSection.inView ? 1 : 0,
+                transform: heroSection.inView ? 'translateY(0)' : 'translateY(12px)',
+              }}
+            >
+              <Link href={`/${locale}`} className="hover:text-[#C3A35E] transition-colors">Home</Link>
+              <span className="mx-2 text-[#C3A35E]/40">—</span>
+              <span className="text-[#C3A35E] font-medium">{vertical.label}</span>
+            </nav>
 
-              {/* Tagline badge */}
-              <div
-                className="transition-all duration-700 delay-100"
-                style={{
-                  opacity: heroSection.inView ? 1 : 0,
-                  transform: heroSection.inView ? 'translateY(0)' : 'translateY(16px)',
-                }}
-              >
-                <span className="inline-block text-xs text-[#C3A35E] font-bold uppercase tracking-[0.25em] mb-4 border border-[#C3A35E]/30 px-3 py-1">
-                  {meta.tagline || 'Harvics Global Ventures'}
-                </span>
-              </div>
-
-              {/* Title */}
-              <h1
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5 transition-all duration-700 delay-200"
-                style={{
-                  letterSpacing: '-0.03em',
-                  lineHeight: 1.1,
-                  opacity: heroSection.inView ? 1 : 0,
-                  transform: heroSection.inView ? 'translateY(0)' : 'translateY(20px)',
-                }}
-              >
-                {vertical.label}
-              </h1>
-
-              {/* Description */}
-              <p
-                className="text-base md:text-lg text-white/55 leading-relaxed max-w-[580px] mb-8 transition-all duration-700 delay-300"
-                style={{
-                  opacity: heroSection.inView ? 1 : 0,
-                  transform: heroSection.inView ? 'translateY(0)' : 'translateY(16px)',
-                }}
-              >
-                {meta.description || `Comprehensive supply chain solutions across ${vertical.blocks.length} categories and ${allProducts.length}+ products.`}
-              </p>
-
-              {/* CTA Buttons */}
-              <div
-                className="flex flex-wrap gap-3 transition-all duration-700 delay-[400ms]"
-                style={{
-                  opacity: heroSection.inView ? 1 : 0,
-                  transform: heroSection.inView ? 'translateY(0)' : 'translateY(16px)',
-                }}
-              >
-                <Link
-                  href={`/${locale}/contact`}
-                  className="group relative px-7 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold uppercase tracking-wider overflow-hidden"
-                >
-                  <span className="relative z-10">Get a Quote</span>
-                  <span className="absolute inset-0 bg-[#d4b46e] translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
-                </Link>
-                <a
-                  href="#products"
-                  className="px-7 py-3 border border-[#C3A35E]/30 text-white text-sm font-medium uppercase tracking-wider hover:border-[#C3A35E] hover:bg-[#C3A35E]/10 transition-all duration-300"
-                >
-                  Browse Products
-                </a>
-              </div>
+            <div
+              className="inline-block text-xs text-[#C3A35E] font-bold uppercase tracking-[0.25em] mb-6 border border-[#C3A35E]/30 px-3 py-1"
+              style={{
+                opacity: heroSection.inView ? 1 : 0,
+                transform: heroSection.inView ? 'translateY(0)' : 'translateY(16px)',
+                transitionDuration: '700ms',
+                transitionDelay: '100ms',
+              }}
+            >
+              {meta.tagline || 'Harvics Global Ventures'}
             </div>
 
-            {/* Stats */}
-            {meta.stats.length > 0 && (
-              <div className="flex gap-8 lg:gap-12 lg:pb-2">
-                {meta.stats.map((s, i) => (
-                  <StatCard key={s.label} label={s.label} value={s.value} isVisible={heroSection.inView} delay={500 + i * 150} />
-                ))}
-              </div>
-            )}
+            <h1
+              className="text-5xl md:text-6xl lg:text-[76px] font-bold text-white leading-[0.98] mb-6 transition-all duration-700"
+              style={{
+                letterSpacing: '-0.03em',
+                opacity: heroSection.inView ? 1 : 0,
+                transform: heroSection.inView ? 'translateY(0)' : 'translateY(20px)',
+                transitionDelay: '200ms',
+              }}
+            >
+              {vertical.label}
+            </h1>
+
+            <p
+              className="text-base md:text-xl text-white/78 leading-relaxed max-w-[700px] mx-auto mb-10 transition-all duration-700"
+              style={{
+                opacity: heroSection.inView ? 1 : 0,
+                transform: heroSection.inView ? 'translateY(0)' : 'translateY(16px)',
+                transitionDelay: '300ms',
+              }}
+            >
+              {meta.description || `Comprehensive supply chain solutions across ${vertical.blocks.length} categories and ${allProducts.length}+ products.`}
+            </p>
+
+            <div
+              className="flex flex-wrap justify-center gap-4"
+              style={{
+                opacity: heroSection.inView ? 1 : 0,
+                transform: heroSection.inView ? 'translateY(0)' : 'translateY(16px)',
+                transitionDelay: '400ms',
+              }}
+            >
+              <Link
+                href={`/${locale}/contact`}
+                className="inline-flex items-center justify-center rounded-sm px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-semibold uppercase tracking-[0.18em] transition-all duration-300 hover:bg-[#d4b46e]"
+              >
+                Get a Quote
+              </Link>
+              <a
+                href="#products"
+                className="inline-flex items-center justify-center rounded-sm px-8 py-3 border border-white/30 text-white text-sm font-semibold uppercase tracking-[0.18em] hover:border-[#C3A35E] hover:bg-white/10 transition-all duration-300"
+              >
+                Browse Products
+              </a>
+            </div>
           </div>
         </div>
 
-        {/* Bottom gold accent */}
-        <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C3A35E]/30 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-2 bg-[#C3A35E]" />
       </section>
+
+      {meta.stats.length > 0 && (
+        <div className="relative z-10 max-w-[1100px] mx-auto -mt-24 mb-16 px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {meta.stats.map((s, index) => (
+              <div
+                key={s.label}
+                className="bg-white border border-[#6B1F2B]/10 p-8 text-center shadow-[0_30px_80px_rgba(74,21,32,0.18),0_4px_14px_rgba(74,21,32,0.08)]"
+                style={{
+                  opacity: heroSection.inView ? 1 : 0,
+                  transform: heroSection.inView ? 'translateY(0)' : 'translateY(20px)',
+                  transition: `opacity 0.7s ease-out ${150 + index * 100}ms, transform 0.7s ease-out ${150 + index * 100}ms`,
+                }}
+              >
+                <div className="font-serif text-[48px] md:text-[56px] font-bold text-[#6B1F2B] leading-none tabular-nums">{s.value}</div>
+                <div className="text-[11px] uppercase tracking-[0.25em] text-[#6B1F2B]/70 mt-3 font-semibold">{s.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* ═══════ CATEGORY BLOCKS ═══════ */}
       <section ref={categorySection.ref} className="bg-white border-b border-[#C3A35E]/15 py-14 px-4">
@@ -394,9 +398,8 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
             </h3>
             <button
               onClick={() => setActiveFilter(null)}
-              className={`block w-full text-left text-sm py-2.5 border-b border-[#C3A35E]/10 transition-all duration-200 ${
-                !activeFilter ? 'text-[#6B1F2B] font-bold pl-2 border-l-2 border-l-[#C3A35E]' : 'text-[#6B1F2B]/50 hover:text-[#6B1F2B] hover:pl-1'
-              }`}
+              className={`block w-full text-left text-sm py-2.5 border-b border-[#C3A35E]/10 transition-all duration-200 ${!activeFilter ? 'text-[#6B1F2B] font-bold pl-2 border-l-2 border-l-[#C3A35E]' : 'text-[#6B1F2B]/50 hover:text-[#6B1F2B] hover:pl-1'
+                }`}
             >
               All ({allProducts.length})
             </button>
@@ -406,9 +409,8 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
                 <button
                   key={sub}
                   onClick={() => setActiveFilter(sub)}
-                  className={`block w-full text-left text-sm py-2.5 border-b border-[#C3A35E]/10 transition-all duration-200 capitalize ${
-                    activeFilter === sub ? 'text-[#6B1F2B] font-bold pl-2 border-l-2 border-l-[#C3A35E]' : 'text-[#6B1F2B]/50 hover:text-[#6B1F2B] hover:pl-1'
-                  }`}
+                  className={`block w-full text-left text-sm py-2.5 border-b border-[#C3A35E]/10 transition-all duration-200 capitalize ${activeFilter === sub ? 'text-[#6B1F2B] font-bold pl-2 border-l-2 border-l-[#C3A35E]' : 'text-[#6B1F2B]/50 hover:text-[#6B1F2B] hover:pl-1'
+                    }`}
                 >
                   {sub.replace(/([A-Z])/g, ' $1').trim()} ({count})
                 </button>

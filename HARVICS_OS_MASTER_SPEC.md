@@ -1,8 +1,26 @@
 # HARVICS OS — MASTER SPECIFICATION
-# Last Updated: May 26, 2026 (Session 44 — Core Workspace Alignment + Inverted Footer Stack)
+# Last Updated: June 5, 2026 (Session 45 — Vertical Hero Option B)
 # READ THIS FIRST. EVERY SESSION. NO EXCEPTIONS.
 
 ---
+
+## ✅ LATEST SESSION UPDATE (June 5, 2026 · Session 45 — Vertical Hero Option B)
+
+**TASK COMPLETED:** Implemented the Option B hero layout for vertical landing pages in `src/app/[locale]/[vertical]/VerticalPageClient.tsx`, including cinematic centered copy and floating stat cards.
+
+### Files Updated
+- `src/app/[locale]/[vertical]/VerticalPageClient.tsx`
+  - Replaced the existing vertical hero block with Option B style.
+  - Preserved the existing hero background carousel and vertical-specific metadata.
+  - Added floating stat cards that overlap into the next section.
+
+### Build Validation
+- Command executed: `npx tsc --noEmit`
+- Final result: **EXIT_CODE:0**
+
+### Notes
+- The new hero uses a centered narrative panel, bottom-weighted dark overlay, and stat cards matching the hero layout trial.
+- No backend or route changes were required.
 
 ## ✅ LATEST SESSION UPDATE (May 26, 2026 · Session 44 — Core Workspace Alignment + Inverted Footer Stack)
 
