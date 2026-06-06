@@ -318,7 +318,7 @@ const PRODUCT_IMAGES = {
 
 **File:** `.env.local`
 ```
-GOOGLE_GEMINI_API_KEY=AIzaSyDrcc2uvhWsXy0gMXZ1fWtKaN6kSGKH_tM
+GOOGLE_GEMINI_API_KEY=REDACTED_FOR_SECURITY_DO_NOT_COMMIT
 ```
 Note: This is a text-generation key. Imagen 3 requires Google Cloud billing.
 
@@ -935,7 +935,7 @@ Result cached for future requests ($0 cost on repeat)
 
 ```env
 # .env.local
-GOOGLE_GEMINI_API_KEY=AIzaSy... (configured)
+GOOGLE_GEMINI_API_KEY=REDACTED_FOR_SECURITY_DO_NOT_COMMIT
 ```
 
 **Note:** Currently using Unsplash fallback because Gemini Imagen 3 requires Google Cloud billing. To enable Gemini:
