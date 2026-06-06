@@ -106,3 +106,4 @@ count_pages.ts
 get_output.sh
 .env.local.bak*
 .env*.bak*
+backups/
