@@ -2,16 +2,40 @@
 
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import Link from 'next/link'
-import { useTranslations, useLocale } from 'next-intl'
+import { useTranslations, useLocale, useMessages } from 'next-intl'
 import type { ProductCategory } from '@/data/folderBasedProducts'
 
 interface ProductSliderProps {
   categories: ProductCategory[]
 }
 
+const humanize = (key: string) =>
+  key
+    .replace(/Desc$/, '')
+    .split('-')
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ')
+
 const ProductSlider: React.FC<ProductSliderProps> = ({ categories }) => {
   const t = useTranslations()
   const locale = useLocale()
+  const messages = useMessages() as Record<string, any>
+
+  // Check if a dotted key exists in the messages tree before calling t().
+  // Prevents next-intl MISSING_MESSAGE errors flooding the console for dynamic
+  // API-loaded subcategories that aren't in the translation files.
+  const tSafe = (key: string, fallback?: string) => {
+    const parts = key.split('.')
+    let node: any = messages
+    for (const p of parts) {
+      if (node && typeof node === 'object' && p in node) {
+        node = node[p]
+      } else {
+        return fallback ?? humanize(parts[parts.length - 1] ?? key)
+      }
+    }
+    return typeof node === 'string' ? node : (fallback ?? humanize(parts[parts.length - 1] ?? key))
+  }
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
   const [progress, setProgress] = useState(0)
@@ -112,7 +136,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ categories }) => {
                   <div className="relative h-full w-full">
                     <img
                       src={category.image || '/assets/brand/photo/logo.png'}
-                      alt={t(`products.${category.key}`)}
+                      alt={tSafe(`products.${category.key}`, category.name)}
                       className="w-full h-full object-cover"
                       loading={index === 0 ? 'eager' : 'lazy'}
                     />
@@ -126,14 +150,14 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ categories }) => {
                         <div className="flex items-center gap-3 mb-3">
                           <span className="text-4xl md:text-5xl">{category.icon}</span>
                           <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white" style={{ letterSpacing: '-0.02em' }}>
-                            {t(`products.${category.key}`)}
+                            {tSafe(`products.${category.key}`, category.name)}
                           </h3>
                         </div>
                         <p className="text-sm md:text-base text-white/70 mb-5 leading-relaxed max-w-lg">
-                          {t(`products.${category.key}Desc`)}
+                          {tSafe(`products.${category.key}Desc`, category.description)}
                         </p>
                         <div className="inline-flex items-center gap-1.5 text-white/90 text-sm font-semibold group">
-                          <span>Explore {t(`products.${category.key}`)}</span>
+                          <span>Explore {tSafe(`products.${category.key}`, category.name)}</span>
                           <svg className="w-4 h-4 group-hover:translate-x-1.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                           </svg>

@@ -140,3 +140,4 @@
 {"event_id":"EVT-1780065997492-RESTORE","entity_id":"ALL","action_type":"RESTORE","actor_id":"Tier-0","timestamp":"2026-05-29T14:46:37.492Z","source_system":"Tier-0"}
 {"event_id":"EVT-1780074677120-RESTORE","entity_id":"ALL","action_type":"RESTORE","actor_id":"Tier-0","timestamp":"2026-05-29T17:11:17.120Z","source_system":"Tier-0"}
 {"event_id":"EVT-1780076187985-RESTORE","entity_id":"ALL","action_type":"RESTORE","actor_id":"Tier-0","timestamp":"2026-05-29T17:36:27.985Z","source_system":"Tier-0"}
+{"event_id":"EVT-1780668345849-RESTORE","entity_id":"ALL","action_type":"RESTORE","actor_id":"Tier-0","timestamp":"2026-06-05T14:05:45.849Z","source_system":"Tier-0"}

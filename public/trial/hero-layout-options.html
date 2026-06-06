@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>HARVICS — Hero Layout Options Trial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --wine: #6B1F2B;
+    --wine-2: #5a1a24;
+    --wine-3: #4a1520;
+    --gold: #C3A35E;
+    --gold-light: #d4b46e;
+    --ink: #1a1a1a;
+    --paper: #ffffff;
+    --paper-2: #faf7f2;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { font-family: 'Inter', system-ui, sans-serif; color: var(--ink); background: var(--paper-2); }
+  img { display: block; max-width: 100%; }
+  a { text-decoration: none; color: inherit; }
+
+  /* ── Trial chrome ── */
+  .trial-bar {
+    position: sticky; top: 0; z-index: 100;
+    background: #111; color: #fff;
+    padding: 14px 28px;
+    display: flex; gap: 18px; align-items: center; justify-content: space-between;
+    border-bottom: 1px solid var(--gold);
+  }
+  .trial-bar h1 { font-size: 14px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+  .trial-bar h1 span { color: var(--gold); }
+  .trial-bar nav { display: flex; gap: 8px; }
+  .trial-bar nav a {
+    font-size: 11px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase;
+    padding: 8px 14px; border: 1px solid rgba(255,255,255,.18);
+    transition: all .25s;
+  }
+  .trial-bar nav a:hover { background: var(--gold); color: var(--wine); border-color: var(--gold); }
+
+  .label-strip {
+    background: var(--wine); color: #fff;
+    padding: 22px 28px;
+    display: flex; align-items: baseline; gap: 18px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .label-strip .tag {
+    font-size: 10px; font-weight: 800; letter-spacing: .3em; text-transform: uppercase;
+    color: var(--gold); border: 1px solid var(--gold); padding: 5px 10px;
+  }
+  .label-strip h2 { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 600; }
+  .label-strip p { font-size: 13px; color: rgba(255,255,255,.7); margin-left: auto; max-width: 60%; line-height: 1.55; }
+
+  /* ════════════════════════════════════════════════════════════ */
+  /*  Shared hero ingredients                                     */
+  /* ════════════════════════════════════════════════════════════ */
+  .hero-img-bg {
+    position: absolute; inset: 0;
+    background-image: url('/assets/verticals/01-apparels/hero.jpg');
+    background-size: cover; background-position: center;
+    filter: brightness(.85) contrast(1.05);
+  }
+  .breadcrumb {
+    font-size: 11px; color: rgba(255,255,255,.6);
+    display: flex; align-items: center; gap: 8px; margin-bottom: 22px;
+  }
+  .breadcrumb .dash { color: rgba(195,163,94,.4); }
+  .breadcrumb .current { color: var(--gold); font-weight: 500; }
+  .tagline-badge {
+    display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .25em;
+    text-transform: uppercase; color: var(--gold);
+    border: 1px solid rgba(195,163,94,.35); padding: 5px 12px; margin-bottom: 18px;
+  }
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600; color: #fff; letter-spacing: -0.025em; line-height: 1.05;
+  }
+  .hero-desc {
+    font-size: 16px; color: rgba(255,255,255,.65); line-height: 1.65; max-width: 560px;
+  }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+  .btn {
+    display: inline-block; padding: 14px 26px; font-size: 12px; font-weight: 700;
+    letter-spacing: .15em; text-transform: uppercase; transition: all .3s;
+    cursor: pointer;
+  }
+  .btn-primary { background: var(--gold); color: var(--wine); border: 1px solid var(--gold); }
+  .btn-primary:hover { background: var(--gold-light); }
+  .btn-ghost { background: transparent; color: #fff; border: 1px solid rgba(195,163,94,.35); }
+  .btn-ghost:hover { background: rgba(195,163,94,.12); border-color: var(--gold); }
+
+  /* ════════════════════════════════════════════════════════════ */
+  /*  OPTION A — Split Hero (60 / 40 image-forward)               */
+  /* ════════════════════════════════════════════════════════════ */
+  .opt-a {
+    position: relative; min-height: 620px;
+    background: linear-gradient(135deg, #2a0d12 0%, var(--wine-3) 50%, var(--wine) 100%);
+    display: grid; grid-template-columns: 60% 40%;
+    overflow: hidden;
+  }
+  .opt-a::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 20% 30%, rgba(195,163,94,.08), transparent 50%); pointer-events: none; }
+  .opt-a .copy {
+    padding: 80px 60px 40px; display: flex; flex-direction: column; justify-content: center;
+    position: relative; z-index: 2;
+  }
+  .opt-a .copy .hero-title { font-size: 64px; margin-bottom: 22px; }
+  .opt-a .image-panel {
+    position: relative; overflow: hidden;
+    border-left: 1px solid rgba(195,163,94,.2);
+  }
+  .opt-a .image-panel .hero-img-bg { filter: brightness(.95) contrast(1.05); }
+  .opt-a .image-panel::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(270deg, transparent 0%, transparent 70%, rgba(74,21,32,.4) 100%);
+  }
+  .opt-a .image-panel .icon-tile {
+    position: absolute; top: 40px; right: 40px;
+    width: 84px; height: 84px;
+    background: var(--gold); color: var(--wine);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 38px; font-weight: 700;
+    box-shadow: 0 12px 40px rgba(0,0,0,.35);
+  }
+  .opt-a .stat-bar {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: rgba(0,0,0,.4); backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(195,163,94,.25);
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    z-index: 3;
+  }
+  .opt-a .stat-bar .stat {
+    padding: 22px 30px; text-align: left;
+    border-right: 1px solid rgba(195,163,94,.15);
+  }
+  .opt-a .stat-bar .stat:last-child { border-right: none; }
+  .opt-a .stat-bar .stat .v { font-size: 32px; font-weight: 700; color: var(--gold); }
+  .opt-a .stat-bar .stat .l { font-size: 10px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.55); margin-top: 4px; }
+  .opt-a .gold-rule { position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, rgba(195,163,94,.5), transparent); z-index: 4; }
+
+  /* ════════════════════════════════════════════════════════════ */
+  /*  OPTION B — Cinematic Stack (image-first, centered)          */
+  /* ════════════════════════════════════════════════════════════ */
+  .opt-b {
+    position: relative; min-height: 660px; padding: 120px 40px 130px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+    overflow: hidden;
+  }
+  .opt-b .hero-img-bg { filter: brightness(.65) contrast(1.1) saturate(1.05); }
+  .opt-b::before {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(20,8,12,.45) 0%, rgba(20,8,12,.2) 35%, rgba(20,8,12,.85) 100%);
+  }
+  .opt-b .copy { position: relative; z-index: 2; max-width: 880px; }
+  .opt-b .breadcrumb { justify-content: center; }
+  .opt-b .hero-title { font-size: 76px; line-height: 1.02; margin-bottom: 24px; letter-spacing: -.03em; }
+  .opt-b .hero-desc { font-size: 18px; color: rgba(255,255,255,.78); max-width: 700px; margin: 0 auto; }
+  .opt-b .cta-row { justify-content: center; }
+  .opt-b .gold-rule {
+    position: absolute; bottom: 100px; left: 50%; transform: translateX(-50%);
+    width: 60px; height: 2px; background: var(--gold); z-index: 2;
+  }
+  /* Floating stat strip overlapping into next section */
+  .opt-b-stats {
+    position: relative; z-index: 5; max-width: 1100px; margin: -70px auto 60px;
+    background: var(--paper); border: 1px solid rgba(107,31,43,.12);
+    box-shadow: 0 30px 80px rgba(74,21,32,.18), 0 4px 14px rgba(74,21,32,.08);
+    display: grid; grid-template-columns: repeat(3, 1fr);
+  }
+  .opt-b-stats .stat {
+    padding: 38px 44px; text-align: center;
+    border-right: 1px solid rgba(107,31,43,.1);
+  }
+  .opt-b-stats .stat:last-child { border-right: none; }
+  .opt-b-stats .stat .v { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: var(--wine); line-height: 1; }
+  .opt-b-stats .stat .l { font-size: 11px; font-weight: 600; letter-spacing: .25em; text-transform: uppercase; color: rgba(107,31,43,.55); margin-top: 10px; }
+
+  /* ════════════════════════════════════════════════════════════ */
+  /*  OPTION C — Editorial Sidebar (current, polished)            */
+  /* ════════════════════════════════════════════════════════════ */
+  .opt-c {
+    position: relative; min-height: 520px;
+    background: linear-gradient(105deg, var(--wine) 0%, var(--wine-2) 50%, var(--wine-3) 100%);
+    overflow: hidden;
+  }
+  .opt-c .hero-img-bg { filter: brightness(.55) contrast(1.05); }
+  .opt-c::before {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(105deg, rgba(107,31,43,.85) 0%, rgba(107,31,43,.5) 45%, rgba(107,31,43,.25) 100%);
+  }
+  .opt-c .icon-watermark {
+    position: absolute; right: -40px; top: 50%; transform: translateY(-58%);
+    font-size: 380px; line-height: 1; color: rgba(195,163,94,.06);
+    font-weight: 800; pointer-events: none; user-select: none; z-index: 1;
+  }
+  .opt-c .container {
+    position: relative; z-index: 2;
+    max-width: 1200px; margin: 0 auto; padding: 80px 40px 0;
+    display: flex; flex-direction: column; justify-content: space-between;
+    min-height: 520px;
+  }
+  .opt-c .copy { max-width: 680px; }
+  .opt-c .hero-title { font-size: 56px; margin-bottom: 18px; }
+  .opt-c .hero-desc { font-size: 15px; }
+  .opt-c .stat-strip {
+    margin-top: 60px; padding: 22px 0;
+    border-top: 1px solid rgba(195,163,94,.25);
+    border-bottom: 1px solid rgba(195,163,94,.25);
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .opt-c .stat-strip .stat {
+    padding: 4px 28px; text-align: left;
+    border-right: 1px solid rgba(195,163,94,.18);
+  }
+  .opt-c .stat-strip .stat:last-child { border-right: none; }
+  .opt-c .stat-strip .stat .v { font-size: 28px; font-weight: 700; color: var(--gold); letter-spacing: -.01em; }
+  .opt-c .stat-strip .stat .l { font-size: 10px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: rgba(255,255,255,.5); margin-top: 4px; }
+  .opt-c .gold-rule { position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, rgba(195,163,94,.5), transparent); z-index: 3; }
+
+  /* ── Decision footer ── */
+  .decision {
+    background: #111; color: #fff; padding: 60px 40px; text-align: center;
+  }
+  .decision h3 { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 600; margin-bottom: 12px; }
+  .decision p { color: rgba(255,255,255,.6); font-size: 14px; max-width: 600px; margin: 0 auto 32px; line-height: 1.6; }
+  .decision .picks { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .decision .picks button {
+    background: transparent; color: #fff;
+    border: 1px solid var(--gold); padding: 14px 28px;
+    font-family: inherit; font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase;
+    cursor: pointer; transition: all .25s;
+  }
+  .decision .picks button:hover { background: var(--gold); color: var(--wine); }
+
+  @media (max-width: 900px) {
+    .opt-a { grid-template-columns: 1fr; min-height: auto; }
+    .opt-a .copy { padding: 60px 28px; }
+    .opt-a .copy .hero-title { font-size: 44px; }
+    .opt-a .image-panel { height: 320px; border-left: none; border-top: 1px solid rgba(195,163,94,.2); }
+    .opt-a .stat-bar { position: static; grid-template-columns: 1fr; }
+    .opt-a .stat-bar .stat { border-right: none; border-bottom: 1px solid rgba(195,163,94,.15); }
+    .opt-b .hero-title { font-size: 44px; }
+    .opt-b-stats { grid-template-columns: 1fr; margin: -50px 20px 40px; }
+    .opt-b-stats .stat { border-right: none; border-bottom: 1px solid rgba(107,31,43,.1); }
+    .opt-c .hero-title { font-size: 40px; }
+    .opt-c .stat-strip { grid-template-columns: 1fr; }
+    .opt-c .stat-strip .stat { border-right: none; border-bottom: 1px solid rgba(195,163,94,.18); padding: 16px 0; }
+    .opt-c .icon-watermark { font-size: 240px; right: -60px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="trial-bar">
+  <h1>HARVICS <span>·</span> Vertical Hero · Layout Trial</h1>
+  <nav>
+    <a href="#opt-a">Option A</a>
+    <a href="#opt-b">Option B</a>
+    <a href="#opt-c">Option C</a>
+  </nav>
+</div>
+
+<!-- ════════════════════════════════════════════════ OPTION A ════════════════════════════════════════════════ -->
+<div class="label-strip" id="opt-a">
+  <span class="tag">Option A</span>
+  <h2>Split Hero — 60 / 40 image-forward</h2>
+  <p>Two columns. Copy on a clean wine panel, real visible image tile on the right with floating icon. Stats sit in a horizontal bar at the bottom of the hero.</p>
+</div>
+
+<section class="opt-a">
+  <div class="gold-rule"></div>
+  <div class="copy">
+    <div class="breadcrumb">
+      <span>Home</span> <span class="dash">—</span> <span class="current">Textiles & Apparels</span>
+    </div>
+    <span class="tagline-badge">Apparel, Fabrics & Home Textiles</span>
+    <h1 class="hero-title">Textiles & Apparels</h1>
+    <p class="hero-desc">From premium menswear and womenswear to home textiles and accessories — Harvics sources, manufactures, and distributes across the full textile value chain. Factory-direct partnerships in South Asia, Turkey, and China.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary">Get a Quote</a>
+      <a class="btn btn-ghost">Browse Products</a>
+    </div>
+  </div>
+  <div class="image-panel">
+    <div class="hero-img-bg"></div>
+    <div class="icon-tile">🧵</div>
+  </div>
+  <div class="stat-bar">
+    <div class="stat"><div class="v">17</div><div class="l">Categories</div></div>
+    <div class="stat"><div class="v">2,400+</div><div class="l">SKUs</div></div>
+    <div class="stat"><div class="v">22</div><div class="l">Countries</div></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════ OPTION B ════════════════════════════════════════════════ -->
+<div class="label-strip" id="opt-b">
+  <span class="tag">Option B</span>
+  <h2>Cinematic Stack — image-first, centered</h2>
+  <p>Full-bleed image with bottom-weighted darkening. Centered title and tagline. Stats become 3 large cards floating below the hero, half-overlapping into the next section.</p>
+</div>
+
+<section class="opt-b">
+  <div class="hero-img-bg"></div>
+  <div class="copy">
+    <div class="breadcrumb">
+      <span>Home</span> <span class="dash">—</span> <span class="current">Textiles & Apparels</span>
+    </div>
+    <span class="tagline-badge">Apparel, Fabrics & Home Textiles</span>
+    <h1 class="hero-title">Textiles & Apparels</h1>
+    <p class="hero-desc">Sourcing, manufacturing, and distribution across the full textile value chain — premium menswear, womenswear, fabrics, and home textiles.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary">Get a Quote</a>
+      <a class="btn btn-ghost">Browse Products</a>
+    </div>
+  </div>
+  <div class="gold-rule"></div>
+</section>
+<div class="opt-b-stats">
+  <div class="stat"><div class="v">17</div><div class="l">Categories</div></div>
+  <div class="stat"><div class="v">2,400+</div><div class="l">SKUs</div></div>
+  <div class="stat"><div class="v">22</div><div class="l">Countries</div></div>
+</div>
+
+<!-- ════════════════════════════════════════════════ OPTION C ════════════════════════════════════════════════ -->
+<div class="label-strip" id="opt-c">
+  <span class="tag">Option C</span>
+  <h2>Editorial Sidebar — polished current layout</h2>
+  <p>Keeps the current left-aligned shape. Smaller hero, large icon watermark behind the title, stats become a thin gold-bordered strip across the bottom of the hero with vertical dividers.</p>
+</div>
+
+<section class="opt-c">
+  <div class="hero-img-bg"></div>
+  <div class="gold-rule"></div>
+  <div class="icon-watermark">🧵</div>
+  <div class="container">
+    <div class="copy">
+      <div class="breadcrumb">
+        <span>Home</span> <span class="dash">—</span> <span class="current">Textiles & Apparels</span>
+      </div>
+      <span class="tagline-badge">Apparel, Fabrics & Home Textiles</span>
+      <h1 class="hero-title">Textiles & Apparels</h1>
+      <p class="hero-desc">From premium menswear and womenswear to home textiles and accessories — sourced, manufactured, and distributed across the full textile value chain.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary">Get a Quote</a>
+        <a class="btn btn-ghost">Browse Products</a>
+      </div>
+    </div>
+    <div class="stat-strip">
+      <div class="stat"><div class="v">17</div><div class="l">Categories</div></div>
+      <div class="stat"><div class="v">2,400+</div><div class="l">SKUs</div></div>
+      <div class="stat"><div class="v">22</div><div class="l">Countries</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════ DECISION ════════════════════════════════════════════════ -->
+<div class="decision">
+  <h3>Which direction should we ship?</h3>
+  <p>Pick one and tell me — I'll wire it into <code style="color:var(--gold)">VerticalPageClient.tsx</code> for all 10 verticals, swapping the icon glyph and stat values per vertical from <code style="color:var(--gold)">verticalMeta</code>.</p>
+  <div class="picks">
+    <button onclick="alert('Picked A — tell Copilot: ship Option A')">Ship Option A</button>
+    <button onclick="alert('Picked B — tell Copilot: ship Option B')">Ship Option B</button>
+    <button onclick="alert('Picked C — tell Copilot: ship Option C')">Ship Option C</button>
+    <button onclick="alert('Mix — tell Copilot what to combine')">Mix & match</button>
+  </div>
+</div>
+
+</body>
+</html>
