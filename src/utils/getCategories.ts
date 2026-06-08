@@ -1,7 +1,7 @@
 import 'server-only';
 import { getAllCategories, CategoryData } from '@/utils/folderScanner';
 
-const CDN = process.env.NEXT_PUBLIC_CDN_URL || 'https://media.harvics.com';
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || 'https://pub-f2496164b9544713bde9dd18d56e3663.r2.dev';
 const MANIFEST_URL = `${CDN}/manifest.json`;
 
 interface ManifestEntry {

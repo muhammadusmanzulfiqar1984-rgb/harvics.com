@@ -3,6 +3,15 @@ import { NextRequest, NextResponse } from 'next/server'
 export const dynamic = 'force-dynamic'
 export const runtime = 'nodejs'
 
+function isAuthorized(req: NextRequest): boolean {
+  const apiKey = req.headers.get('x-api-key')
+  const authHeader = req.headers.get('authorization')
+  const bearerToken = authHeader?.startsWith('Bearer ') ? authHeader.slice(7) : null
+  const INTERNAL_API_KEY = process.env.INTERNAL_API_KEY
+  if (!INTERNAL_API_KEY) return false
+  return apiKey === INTERNAL_API_KEY || bearerToken === INTERNAL_API_KEY
+}
+
 const XAI_IMAGINE_URL = 'https://api.x.ai/v1/images/generations'
 const IMAGINE_MODEL = 'grok-imagine-image-quality'
 
@@ -11,6 +20,10 @@ const CORPORATE_STYLE_APPEND =
   ', premium corporate architectural aesthetic, shot on 35mm film, muted editorial colors, subtle deep burgundy and gold undertones, professional lighting, zero neon or oversaturated elements.'
 
 export async function POST(request: NextRequest) {
+  if (!isAuthorized(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
+
   const apiKey = process.env.XAI_API_KEY
   if (!apiKey) {
     return NextResponse.json(

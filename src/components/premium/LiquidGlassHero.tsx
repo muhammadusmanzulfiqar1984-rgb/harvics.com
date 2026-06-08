@@ -5,6 +5,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useLocale } from 'next-intl'
 
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || 'https://pub-f2496164b9544713bde9dd18d56e3663.r2.dev'
+
 const STATS = [
   { label: 'Track Record', value: '$1.2B+' },
   { label: 'Operating Legacy', value: '20 Years' },
@@ -60,7 +62,7 @@ const LiquidGlassHero: React.FC = () => {
       {/* Background image with parallax zoom */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/assets/shared/heroes/hero-page-1.webp"
+          src={`${CDN}/assets/shared/heroes/hero-page-1.webp`}
           alt="Global Trade Operations"
           fill
           priority

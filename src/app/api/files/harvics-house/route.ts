@@ -16,9 +16,9 @@ export async function GET() {
         'Cache-Control': 'public, max-age=3600',
       },
     })
-  } catch (error) {
+  } catch {
     return NextResponse.json(
-      { error: 'File not found', detail: error instanceof Error ? error.message : 'Unknown error' },
+      { error: 'File not available' },
       { status: 404 }
     )
   }

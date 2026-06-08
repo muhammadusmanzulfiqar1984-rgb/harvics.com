@@ -5,6 +5,18 @@ import { S3Client, PutObjectCommand, GetObjectCommand } from '@aws-sdk/client-s3
 import sharp from 'sharp';
 import { HARVICS_PROMPT_ENGINEER_SYSTEM } from '@/lib/promptTemplates';
 
+export const runtime = 'nodejs';
+export const maxDuration = 60;
+
+function isAuthorized(req: Request): boolean {
+  const apiKey = req.headers.get('x-api-key');
+  const authHeader = req.headers.get('authorization');
+  const bearerToken = authHeader?.startsWith('Bearer ') ? authHeader.slice(7) : null;
+  const INTERNAL_API_KEY = process.env.INTERNAL_API_KEY;
+  if (!INTERNAL_API_KEY) return false;
+  return apiKey === INTERNAL_API_KEY || bearerToken === INTERNAL_API_KEY;
+}
+
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 const hf = new InferenceClient(process.env.HF_API_KEY);
 const r2 = new S3Client({
@@ -17,7 +29,7 @@ const r2 = new S3Client({
 });
 
 const BUCKET_NAME = 'harvics-media-vault';
-const CDN = process.env.NEXT_PUBLIC_CDN_URL || 'https://media.harvics.com';
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || 'https://pub-f2496164b9544713bde9dd18d56e3663.r2.dev';
 
 const MODEL_MAP: Record<string, string> = {
   FLUX: 'black-forest-labs/FLUX.1-schnell',
@@ -60,6 +72,21 @@ async function writeManifest(entries: ManifestEntry[]): Promise<void> {
 
 // --- Route ---
 export async function POST(request: Request) {
+  if (!isAuthorized(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  // Validate required env vars upfront
+  const missingEnv: string[] = [];
+  if (!process.env.GROQ_API_KEY) missingEnv.push('GROQ_API_KEY');
+  if (!process.env.HF_API_KEY) missingEnv.push('HF_API_KEY');
+  if (!process.env.R2_ENDPOINT_URL) missingEnv.push('R2_ENDPOINT_URL');
+  if (!process.env.R2_ACCESS_KEY_ID) missingEnv.push('R2_ACCESS_KEY_ID');
+  if (!process.env.R2_SECRET_ACCESS_KEY) missingEnv.push('R2_SECRET_ACCESS_KEY');
+  if (missingEnv.length > 0) {
+    return NextResponse.json({ error: 'Server misconfigured', missing: missingEnv }, { status: 500 });
+  }
+
   try {
     const body = await request.json();
     const { vertical, category, rawPrompt, engineType = 'FLUX' } = body;
@@ -144,7 +171,10 @@ export async function POST(request: Request) {
 }
 
 // GET /api/generate — returns full manifest for FMCG page consumption
-export async function GET() {
+export async function GET(request: Request) {
+  if (!isAuthorized(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
   try {
     const entries = await readManifest();
     return NextResponse.json({ success: true, entries });
