@@ -98,6 +98,13 @@ const VIDEOS: VideoItem[] = [
     category: 'Hero',
     videoPath: '/assets/media/video/Hero 2.mp4',
   },
+  {
+    id: 'dark-intro-fr',
+    title: 'Introduction — Français',
+    description: 'Introduction en français (voix off).',
+    category: 'Présentation',
+    videoPath: '/assets/media/video/dark-intro.mp4',
+  },
 ]
 
 const CATEGORIES = Array.from(new Set(VIDEOS.map(v => v.category)))
