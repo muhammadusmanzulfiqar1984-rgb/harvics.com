@@ -12,9 +12,11 @@ name: Deploy Cloudflare Worker
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - safe/backup-working-tree
+  # Auto-deploy disabled: GitHub blocks jobs with "account locked due to billing issue"
+  # even when usage is $0. Re-enable push trigger after fixing GitHub Actions access.
+  # push:
+  #   branches:
+  #     - safe/backup-working-tree
 
 jobs:
   deploy:
