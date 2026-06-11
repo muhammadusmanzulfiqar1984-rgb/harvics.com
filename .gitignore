@@ -107,3 +107,7 @@ get_output.sh
 .env.local.bak*
 .env*.bak*
 backups/
+
+# Presentation decks — served from R2, not git (keeps deploys small)
+public/textile-v2/
+public/mafi-presentation/
