@@ -36,6 +36,14 @@ const sections = [
     ],
   },
   {
+    title: 'Access & Portals',
+    links: [
+      { label: 'Portals Hub', href: '/portals' },
+      { label: 'La Pres', href: '/la-pres' },
+      { label: 'Company Sign-in', href: '/login' },
+    ],
+  },
+  {
     title: 'Trade Portals',
     links: [
       { label: 'All Products', href: '/products' },

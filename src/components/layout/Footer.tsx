@@ -58,6 +58,8 @@ const Footer: React.FC = () => {
   ]
 
   const usefulLinks = [
+    { href: `/${locale}/portals`, label: 'Portals' },
+    { href: `/${locale}/la-pres`, label: 'La Pres' },
     { href: `/${locale}/faq`, label: tt('askHarvics', 'Ask Harvics') },
     { href: `/${locale}/contact`, label: tt('contactUs', 'Contact us') },
     { href: `/${locale}/careers`, label: tt('searchForJobs', 'Search for jobs') },

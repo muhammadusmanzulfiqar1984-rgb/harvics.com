@@ -103,11 +103,20 @@ const nextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      { source: '/:locale/presentations', destination: '/:locale/la-pres', permanent: true },
+      { source: '/:locale/presentations/access', destination: '/:locale/la-pres', permanent: true },
+      { source: '/:locale/presentations/lobby', destination: '/:locale/la-pres/lobby', permanent: true },
+      { source: '/:locale/presentations/lounge', destination: '/:locale/la-pres/lounge', permanent: true },
+      { source: '/:locale/presentations/view/:id', destination: '/:locale/la-pres/:id', permanent: true },
+    ];
+  },
   // Headers for CSP and security
   async headers() {
     // Get backend URL for CSP (always use actual backend, not frontend proxy)
     const backendUrl = process.env.BACKEND_URL || process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:4000';
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000'; // Frontend URL for client-side
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080'; // Frontend URL for client-side
     const isProduction = process.env.NODE_ENV === 'production';
     
     // Build connect-src directive dynamically
@@ -117,8 +126,8 @@ const nextConfig = {
       ...(isProduction ? [] : [
         "http://localhost:4000",
         "ws://localhost:4000",
-        "http://localhost:3000",
-        "ws://localhost:3000",
+        "http://localhost:8080",
+        "ws://localhost:8080",
       ]),
       // Backend URL (for direct connections if needed)
       ...(backendUrl.startsWith('http') ? [backendUrl, backendUrl.replace('http', 'ws')] : []),

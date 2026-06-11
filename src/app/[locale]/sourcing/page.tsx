@@ -3,6 +3,7 @@
 import React, { use, useState, useRef } from 'react'
 import Link from 'next/link'
 import { getProductImage } from '@/data/productCatalog'
+import PresentationAccessBanner from '@/components/presentations/PresentationAccessBanner'
 
 // ─── Sourcing Data — Direct from SUPREME ─────────────────────────────────────
 
@@ -325,6 +326,10 @@ export default function SourcingPage({ params }: { params: Promise<{ locale: str
           </div>
         </div>
       </section>
+
+      <div className="max-w-[1200px] mx-auto px-4 -mt-6 mb-4 relative z-10">
+        <PresentationAccessBanner verticalKey="sourcing" />
+      </div>
 
       {/* ─── Solutions Menu ─── */}
       <section className="bg-white border-b border-[#C3A35E]/20 py-6 px-4 sticky top-0 z-20">

@@ -7,6 +7,7 @@ import { getVerticalProducts, getVerticalSubcategories, getSubcategoryProducts, 
 import { getVerticalLanding, getAllCategoryDescriptions } from '@/data/verticalDescriptions'
 import SmartImage from '@/components/ui/SmartImage'
 import ImageCarousel from '@/components/ui/ImageCarousel'
+import PresentationAccessBanner from '@/components/presentations/PresentationAccessBanner'
 
 /* ───── Animated Counter Hook ───── */
 function useAnimatedCounter(target: string, isVisible: boolean) {
@@ -310,6 +311,10 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
 
         <div className="absolute bottom-0 left-0 right-0 h-2 bg-[#C3A35E]" />
       </section>
+
+      <div className="relative z-20 max-w-[1100px] mx-auto px-4 -mt-6 mb-8">
+        <PresentationAccessBanner verticalKey={vertical.key} />
+      </div>
 
       {meta.stats.length > 0 && (
         <div className="relative z-10 max-w-[1100px] mx-auto -mt-24 mb-16 px-4">
