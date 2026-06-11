@@ -38,7 +38,13 @@ function isAuthorized(req: Request): boolean {
   return apiKey === INTERNAL_API_KEY || bearerToken === INTERNAL_API_KEY;
 }
 
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+let groqClient: Groq | null = null;
+function getGroq(): Groq {
+  const apiKey = process.env.GROQ_API_KEY;
+  if (!apiKey) throw new Error('GROQ_API_KEY is missing');
+  if (!groqClient) groqClient = new Groq({ apiKey });
+  return groqClient;
+}
 const r2 = new S3Client({
   region: 'auto',
   endpoint: process.env.R2_ENDPOINT_URL,
@@ -148,7 +154,7 @@ function buildTargets(filters: { categories?: string[]; subcategories?: string[]
 
 async function expandPrompt(target: Target): Promise<string> {
   const userInput = `Industry: ${target.vertical.toUpperCase()} (${target.categoryName}), Subcategory: ${target.subcategoryName}. Core concept: ${target.seedDescription}`;
-  const completion = await groq.chat.completions.create({
+  const completion = await getGroq().chat.completions.create({
     model: process.env.GROQ_MODEL || 'llama-3.3-70b-versatile',
     messages: [
       { role: 'system', content: HARVICS_PROMPT_ENGINEER_SYSTEM },

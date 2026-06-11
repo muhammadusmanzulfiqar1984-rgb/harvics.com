@@ -17,8 +17,22 @@ function isAuthorized(req: Request): boolean {
   return apiKey === INTERNAL_API_KEY || bearerToken === INTERNAL_API_KEY;
 }
 
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
-const hf = new InferenceClient(process.env.HF_API_KEY);
+let groqClient: Groq | null = null;
+function getGroq(): Groq {
+  const apiKey = process.env.GROQ_API_KEY;
+  if (!apiKey) throw new Error('GROQ_API_KEY is missing');
+  if (!groqClient) groqClient = new Groq({ apiKey });
+  return groqClient;
+}
+
+let hfClient: InferenceClient | null = null;
+function getHf(): InferenceClient {
+  const apiKey = process.env.HF_API_KEY;
+  if (!apiKey) throw new Error('HF_API_KEY is missing');
+  if (!hfClient) hfClient = new InferenceClient(apiKey);
+  return hfClient;
+}
+
 const r2 = new S3Client({
   region: 'auto',
   endpoint: process.env.R2_ENDPOINT_URL,
@@ -96,7 +110,7 @@ export async function POST(request: Request) {
     }
 
     // 1. Groq prompt expansion
-    const groqResponse = await groq.chat.completions.create({
+    const groqResponse = await getGroq().chat.completions.create({
       model: 'llama-3.3-70b-versatile',
       messages: [
         { role: 'system', content: HARVICS_PROMPT_ENGINEER_SYSTEM },
@@ -112,7 +126,7 @@ export async function POST(request: Request) {
     const modelTarget = MODEL_MAP[engineType] || MODEL_MAP.FLUX;
 
     // 2. Generate image
-    const imageBlob = await hf.textToImage(
+    const imageBlob = await getHf().textToImage(
       {
         model: modelTarget,
         inputs: optimizedPrompt,
