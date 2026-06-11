@@ -1,9 +1,8 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "main": ".open-next/worker.js",
+  "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "harvics-com",
-  "account_id": "c606ef34847cc91452c3e27a2a7a91e6",
-  "compatibility_date": "2025-04-01",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-06-11",
   "compatibility_flags": [
     "nodejs_compat",
     "global_fetch_strictly_public"
