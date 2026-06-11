@@ -1,0 +1,41 @@
+# Deploy Harvics to Cloudflare Workers via OpenNext.
+#
+# Required GitHub repo secrets (Settings → Secrets → Actions):
+#   CLOUDFLARE_API_TOKEN  — Workers Scripts Edit
+#   CLOUDFLARE_ACCOUNT_ID — c606ef34847cc91452c3e27a2a7a91e6
+#
+# Optional repo variables (Settings → Variables → Actions):
+#   NEXT_PUBLIC_CDN_URL
+#   NEXT_PUBLIC_DECK_CDN  (default true)
+
+name: Deploy Cloudflare Worker
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - safe/backup-working-tree
+
+jobs:
+  deploy:
+    name: OpenNext → Workers
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build and deploy (OpenNext + Wrangler)
+        run: npm run deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          NEXT_PUBLIC_CDN_URL: ${{ vars.NEXT_PUBLIC_CDN_URL }}
+          NEXT_PUBLIC_DECK_CDN: ${{ vars.NEXT_PUBLIC_DECK_CDN || 'true' }}
