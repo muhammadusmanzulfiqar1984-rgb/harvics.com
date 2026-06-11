@@ -9,6 +9,7 @@
     "backend:build": "tsc -p backend/tsconfig.json",
     "backend:start": "node backend/dist/index.js",
     "build": "next build",
+    "postbuild": "node scripts/cloudflare-postbuild.mjs",
     "build:cloudflare": "opennextjs-cloudflare build",
     "build:prod": "npm run backend:build && npm run build",
     "start": "next start",
