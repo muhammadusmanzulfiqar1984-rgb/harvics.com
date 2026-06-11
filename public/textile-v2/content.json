@@ -1,0 +1,28 @@
+{
+  "project": "Harvics Global Ventures V2",
+  "pageMap": [
+    { "pdfPage": 1, "section": "hero" },
+    { "pdfPage": 2, "section": "who-we-are" },
+    { "pdfPage": 3, "section": "principles" },
+    { "pdfPage": 4, "section": "global-reach" },
+    { "pdfPage": 5, "section": "supply-chain" },
+    { "pdfPage": 6, "section": "future-vision" },
+    { "pdfPage": 7, "section": "speed" },
+    { "pdfPage": 8, "section": "digital" },
+    { "pdfPage": 9, "section": "sustainability" },
+    { "pdfPage": 10, "section": "partnership" },
+    { "pdfPage": 11, "section": "service-coverage" },
+    { "pdfPage": 12, "section": "product-portfolio" },
+    { "pdfPage": 13, "section": "product-portfolio" },
+    { "pdfPage": 14, "section": "product-portfolio" },
+    { "pdfPage": 15, "section": "product-portfolio" },
+    { "pdfPage": 16, "section": "global-network" },
+    { "pdfPage": 17, "section": "contact" }
+  ],
+  "stats": [
+    { "label": "Global Markets", "target": 18, "suffix": "+" },
+    { "label": "Factory Partners", "target": 120, "suffix": "+" },
+    { "label": "Execution Visibility", "target": 24, "suffix": "/7" },
+    { "label": "On-Time Delivery", "target": 99, "suffix": "%" }
+  ]
+}

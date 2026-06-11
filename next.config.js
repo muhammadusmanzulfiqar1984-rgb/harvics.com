@@ -88,20 +88,29 @@ const nextConfig = {
   // Proxy API requests to backend (only when BACKEND_URL is set, e.g. local dev)
   // On Vercel without BACKEND_URL, /api/* hits Next.js App Router routes directly.
   async rewrites() {
+    const rewrites = [];
+
+    // Presentation decks on R2 — opt-in after upload (NEXT_PUBLIC_DECK_CDN=true).
+    const cdn = process.env.NEXT_PUBLIC_CDN_URL;
+    if (cdn && process.env.NEXT_PUBLIC_DECK_CDN === 'true') {
+      rewrites.push(
+        { source: '/textile-v2/:path*', destination: `${cdn}/textile-v2/:path*` },
+        { source: '/mafi-presentation/:path*', destination: `${cdn}/mafi-presentation/:path*` },
+      );
+    }
+
     const backendUrl = process.env.BACKEND_URL || process.env.NEXT_PUBLIC_BACKEND_URL;
-    if (!backendUrl) return [];
+    if (backendUrl) {
+      const isValidUrl = backendUrl.startsWith('http://') || backendUrl.startsWith('https://');
+      if (isValidUrl) {
+        rewrites.push({
+          source: '/api/:path((?!gro[qk](?:/|$)).*)',
+          destination: `${backendUrl}/api/:path`,
+        });
+      }
+    }
 
-    const isValidUrl = backendUrl.startsWith('http://') || backendUrl.startsWith('https://');
-    if (!isValidUrl) return [];
-
-    return [
-      {
-        // Exclude /api/groq/* (Groq + HF pipeline) and /api/grok/* (xAI Imagine)
-        // so they're handled by Next.js App Router instead of proxied to Express.
-        source: '/api/:path((?!gro[qk](?:/|$)).*)',
-        destination: `${backendUrl}/api/:path`,
-      },
-    ];
+    return rewrites;
   },
   async redirects() {
     return [

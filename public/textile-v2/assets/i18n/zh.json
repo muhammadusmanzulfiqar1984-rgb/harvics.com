@@ -1,0 +1,91 @@
+{
+  "header.login": "登录",
+  "nav.who": "关于我们",
+  "nav.reach": "全球网络",
+  "nav.supply": "供应链",
+  "nav.portfolio": "产品组合",
+  "nav.contact": "联系我们",
+
+  "hero.eyebrow": "Harvics Global Ventures",
+  "hero.title": "Harvics 全球贸易",
+  "hero.tagline": "横跨半球 · 联通世界",
+  "hero.cities": "伦敦 · 米兰 · 纽约",
+  "hero.cta": "开启商业对话",
+
+  "stat.countries": "覆盖国家",
+  "stat.years": "行业经验",
+  "stat.hqs": "洲际总部",
+
+  "ch.who.eyebrow": "第一章",
+  "ch.who.title": "为全球贸易的复杂性而生",
+  "ch.who.lead": "我们不仅采购产品,更构建供应链。",
+  "ch.who.body": "Harvics 由资深贸易专家创立,深耕巴基斯坦制造走廊与全球零售网络。我们正在打造由人工智能驱动的全球采购基础设施,实现实时洞察与执行掌控的融合。",
+
+  "ch.principles.eyebrow": "第二章",
+  "ch.principles.title": "我们的原则",
+  "card.quality.t": "品质",
+  "card.quality.b": "每一件产品、每一次出货、每一项标准都不妥协。",
+  "card.efficiency.t": "效率",
+  "card.efficiency.b": "设计精巧,执行迅捷,随时就绪。",
+  "card.resilience.t": "韧性",
+  "card.resilience.b": "吸收波动,守护交付确定性。",
+  "card.partnership.t": "伙伴关系",
+  "card.partnership.b": "以信任驱动,构建可持续规模的长期合作。",
+
+  "ch.reach.eyebrow": "第三章",
+  "ch.reach.title": "从源头到港口 · 全链掌控",
+  "ch.reach.body": "Harvics 在国际市场间贯通采购、运输、管控与执行。所谓全球触达,并非抽象定位,而是一条可视、可控的运营链。",
+
+  "ch.supply.eyebrow": "第四章",
+  "ch.supply.title": "端到端供应链指挥",
+  "ch.supply.body": "供应链的每一环节都由精度与智能驱动:产品开发、全球采购、品质保障、物流运输与多节点执行可见性。",
+
+  "ch.future.eyebrow": "第五章",
+  "ch.future.title": "贸易的未来,是智能",
+  "ch.future.body": "Harvics 正在构建由人工智能驱动的全球采购基础设施,实时数据、预测物流与快速商业决策共同创造可衡量的客户优势。",
+
+  "ch.speed.eyebrow": "第六章",
+  "ch.speed.title": "速度与专业",
+  "ch.speed.body": "48 小时采购响应模型,从需求到供应商对接,周期大幅压缩。Harvics 借助实时供应商情报,在不牺牲运营严谨性的前提下缩短延迟。",
+
+  "ch.digital.eyebrow": "第七章",
+  "ch.digital.title": "数字基础设施",
+  "ch.digital.body": "人工智能采购引擎、风险评分、采购自动化与数字指挥工具,深植于 Harvics 运营模式的每一层。",
+
+  "ch.sustain.eyebrow": "第八章",
+  "ch.sustain.title": "可持续发展",
+  "ch.sustain.body": "负责任的贸易贯穿于我们的采购、运营与成长——通过环境责任、可持续材料与低碳物流抉择持续兑现。",
+
+  "ch.services.eyebrow": "第九章",
+  "ch.services.title": "贯穿价值链的服务覆盖",
+  "card.scs.t": "供应链解决方案",
+  "card.scs.b": "制造管控、配送与货运代理、集货中心、整合与电子物流。",
+  "card.sourcing.t": "采购与寻源",
+  "card.sourcing.b": "工厂对接、供应商谈判、采购纪律与智能采购工作流。",
+  "card.qa.t": "质量与合规",
+  "card.qa.b": "线上管控、审批、检验、认证与发运准备管理。",
+
+  "ch.portfolio.eyebrow": "第十章",
+  "ch.portfolio.title": "产品组合",
+  "ch.portfolio.lead": "在全球最优制造走廊间精准采购。",
+  "card.lks.t": "皮革、针织与运动服饰",
+  "card.lks.b": "横贯亚洲的专业采购走廊,专注高端服饰与高性能品类。",
+  "card.dcw.t": "牛仔、休闲与工装",
+  "card.dcw.b": "零售级牛仔、版型精准的休闲裤与可规模化的高性能工装。",
+  "card.fht.t": "鞋履与家纺",
+  "card.fht.b": "面向酒店、生活方式与全球零售项目的鞋履与家纺系列。",
+  "card.overview.t": "组合概览",
+  "card.overview.b": "皮革制品、针织、运动、牛仔、休闲、工装、鞋履与家纺。",
+
+  "ch.network.eyebrow": "第十一章",
+  "ch.network.title": "值得信赖的全球网络",
+  "ch.network.body": "Harvics 协助领先零售商与品牌跨越各大洲完成采购、管理与交付,网络背后是多年精准执行的积累。",
+  "net.hubs": "纺织制造枢纽",
+  "net.routes": "活跃物流航线",
+  "net.ontime": "准时交付率",
+
+  "ch.contact.eyebrow": "终章",
+  "ch.contact.title": "准备好开启战略合作?",
+  "ch.contact.lead": "Harvics Global Ventures 将采购智能、执行掌控与高端产品能力整合于一个可规模化的平台。",
+  "ch.contact.cta": "联系 Harvics"
+}

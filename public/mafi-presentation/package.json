@@ -1,0 +1,17 @@
+{
+  "name": "harvics-mafi-presentation",
+  "version": "1.0.0",
+  "description": "Harvics × MAFI Commercial Engagement Framework — Internal Presentation",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 5500",
+    "deploy": "vercel --prod"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}

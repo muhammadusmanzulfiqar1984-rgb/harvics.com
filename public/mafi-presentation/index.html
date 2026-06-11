@@ -1,0 +1,3399 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preload" href="mafi_welcome_arabic.mp3" as="audio" type="audio/mpeg" />
+  <link rel="preload" href="music_light.mp3" as="audio" type="audio/mpeg" />
+  <title>Harvics Global Ventures — Brand & Sourcing Presentation</title>
+  <style>
+    /* ─── Base Reset & Fonts ─────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:     #c8a96e;
+      --gold-lt:  #e8cc8a;
+      --bronze:   #cd7f32;
+      --dark:     #0d0d0d;
+      --dark2:    #141414;
+      --dark3:    #1c1c1c;
+      --card-bg:  rgba(13,11,8,0.72);
+      --border:   rgba(200,169,110,0.55);
+      --text:     #e8e0d0;
+      --muted:    rgba(232,224,208,0.55);
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background: var(--dark);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    /* ─── Nav ────────────────────────────────────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 40px;
+      background: rgba(13,13,13,0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(200,169,110,0.2);
+      animation: fadeDown .6s ease both;
+    }
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    nav .logo svg { width: 30px; height: 30px; flex-shrink: 0; }
+    nav .logo-text { display: flex; flex-direction: column; gap: 1px; }
+    nav .logo-name {
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: 3px;
+      color: var(--gold);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    nav .logo-tag {
+      font-size: .48rem;
+      letter-spacing: 2px;
+      color: rgba(200,169,110,0.75);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    nav .nav-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav .nav-links a {
+      color: var(--gold);
+      text-decoration: none;
+      font-size: .75rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      transition: color .3s;
+    }
+
+    nav .nav-links a:hover { color: var(--gold-lt); }
+
+    /* ─── Section Shared ─────────────────────────────────────────────────────── */
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 120px 80px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    section.half {
+      min-height: auto;
+      padding: 80px 80px;
+    }
+
+    /* ─── Scroll-reveal base ─────────────────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity .8s ease, transform .8s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: opacity .8s ease, transform .8s ease;
+    }
+    .reveal-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(50px);
+      transition: opacity .8s ease, transform .8s ease;
+    }
+    .reveal-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .delay-1 { transition-delay: .15s !important; }
+    .delay-2 { transition-delay: .30s !important; }
+    .delay-3 { transition-delay: .45s !important; }
+    .delay-4 { transition-delay: .60s !important; }
+    .delay-5 { transition-delay: .75s !important; }
+    .delay-6 { transition-delay: .90s !important; }
+
+    /* ─── Section Labels ─────────────────────────────────────────────────────── */
+    .section-tag {
+      font-size: .8rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text);
+      margin-bottom: 24px;
+      display: inline-block;
+      opacity: 0.8;
+    }
+
+    h1, h2, h3 { font-family: inherit; font-weight: 300; letter-spacing: -0.5px; }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1.05;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      color: var(--gold);
+      margin-bottom: 32px;
+      line-height: 1.15;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    p, li {
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    /* ─── Divider ────────────────────────────────────────────────────────────── */
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: 20px 0 32px;
+    }
+
+    /* ─── CINEMATIC FIXED BACKDROP ──────────────────────────────────────────── */
+    #cinema-bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+    }
+    #cinema-bg .bg-layer {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0;
+      transition: opacity 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #cinema-bg .bg-layer.active { opacity: 1; }
+    /* Persistent dark+gold vignette on top of every layer */
+    #cinema-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 80% at 50% 50%, transparent 30%, rgba(0,0,0,0.55) 100%),
+        linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.10) 40%, rgba(0,0,0,0.10) 60%, rgba(0,0,0,0.55) 100%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* ─── 01 HERO ────────────────────────────────────────────────────────────── */
+    #hero {
+      background: transparent;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 140px;
+    }
+
+    /* Globe SVG decoration */
+    #hero .globe-wrap {
+      position: absolute;
+      right: 6%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: min(420px, 38vw);
+      opacity: .55;
+      animation: slowSpin 60s linear infinite;
+    }
+
+    @keyframes slowSpin {
+      from { transform: translateY(-50%) rotate(0deg); }
+      to   { transform: translateY(-50%) rotate(360deg); }
+    }
+
+    .hero-tagline {
+      font-size: 1.1rem;
+      font-weight: 200;
+      color: var(--gold-lt);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .hero-cities {
+      font-size: .72rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 48px;
+      margin-top: 60px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .stat-num {
+      font-weight: 300;
+      font-size: 2rem;
+      color: var(--text);
+    }
+
+    .stat-label {
+      font-size: .72rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ─── 02 ABOUT ───────────────────────────────────────────────────────────── */
+    #about {
+      background: transparent;
+    }
+    #about::after {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+      pointer-events: none;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      margin-top: 16px;
+    }
+
+    @keyframes pulseBronze {
+      0% {
+        border-color: rgba(200,169,110,0.35);
+        box-shadow: 0 0 10px rgba(205, 127, 50, 0.05);
+      }
+      50% {
+        border-color: rgba(205,127,50,0.6);
+        box-shadow: 0 0 20px rgba(200, 169, 110, 0.2);
+      }
+      100% {
+        border-color: rgba(200,169,110,0.35);
+        box-shadow: 0 0 10px rgba(205, 127, 50, 0.05);
+      }
+    }
+
+    .about-card {
+      background: rgba(13,11,8,0.72);
+      border: 1px solid rgba(200,169,110,0.55);
+      color: var(--gold);
+      padding: 32px;
+      border-radius: 2px;
+      position: relative;
+      transition: transform .3s, border-color .3s;
+      animation: pulseBronze 4s infinite alternate;
+    }
+
+    .about-card:hover {
+      border-color: rgba(200,169,110,0.5);
+    }
+
+    .about-card .num {
+      font-weight: 200;
+      font-size: 3rem;
+      color: rgba(255,255,255,0.05);
+      position: absolute;
+      top: 16px;
+      right: 24px;
+    }
+
+    .cert-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 32px;
+    }
+
+    .badge {
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      padding: 6px 16px;
+      font-size: .72rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-radius: 1px;
+      transition: background .3s, color .3s;
+    }
+
+    .badge:hover {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    /* ─── 03 MARKET ACCESS ───────────────────────────────────────────────────── */
+    #markets {
+      background: transparent;
+    }
+
+    .markets-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 16px;
+    }
+
+    .network-headline {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      margin: 40px 0;
+    }
+    .net-stat {
+      background: rgba(13,11,8,0.72);
+      border: 1px solid rgba(200,169,110,0.55);
+      border-radius: 2px;
+      padding: 28px 24px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      animation: pulseBronze 4s infinite alternate;
+      transition: border-color .3s;
+    }
+    .net-stat::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(200,169,110,0.55), transparent);
+      transform: scaleX(0);
+      transition: transform .4s ease;
+    }
+    .net-stat:hover::after { transform: scaleX(1); }
+    .net-stat:hover { border-color: rgba(200,169,110,.5); }
+    .net-stat .num { font-size: 2.5rem; font-weight: 100; color: var(--gold); line-height: 1; margin-bottom: 6px; }
+    .net-stat .lbl { font-size: .58rem; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+
+    .market-row {
+      background: rgba(13,11,8,0.72);
+      border: 1px solid rgba(200,169,110,0.55);
+      border-radius: 2px;
+      padding: 28px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      position: relative;
+      overflow: hidden;
+      animation: pulseBronze 4s infinite alternate;
+      transition: border-color .3s;
+    }
+    .market-row::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(200,169,110,0.55), transparent);
+      transform: scaleX(0);
+      transition: transform .4s ease;
+    }
+    .market-row:hover::after { transform: scaleX(1); }
+    .market-row:hover { border-color: rgba(200,169,110,.5); }
+    .market-count { font-size: 2.8rem; font-weight: 100; color: var(--gold); line-height: 1; flex-shrink: 0; min-width: 60px; }
+    .market-info h3 { font-size: .78rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+    .market-info p  { font-size: .78rem; color: var(--muted); line-height: 1.5; }
+
+    .speed-banner {
+      margin-top: 28px;
+      padding: 28px 32px;
+      background: rgba(13,11,8,0.72);
+      border: 1px solid rgba(200,169,110,0.55);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      animation: pulseBronze 4s infinite alternate;
+    }
+    .speed-banner .text { font-size: .85rem; color: var(--text); line-height: 1.6; max-width: 500px; }
+    .speed-banner .text em { color: var(--gold); font-style: normal; font-weight: 500; }
+    .speed-banner .metric { text-align: right; flex-shrink: 0; }
+    .speed-banner .metric .big { font-size: 2.5rem; font-weight: 100; color: var(--gold); line-height: 1; }
+    .speed-banner .metric .sub { font-size: .58rem; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+
+    .market-card {
+      background: rgba(13,11,8,0.72);
+      border: 1px solid rgba(200,169,110,0.55);
+      color: var(--gold);
+      padding: 36px 28px;
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+      transition: transform .3s, border-color .3s;
+      animation: pulseBronze 4s infinite alternate;
+    }
+
+    .market-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(200,169,110,0.55), transparent);
+      transform: scaleX(0);
+      transition: transform .4s ease;
+    }
+
+    .market-card:hover::after { transform: scaleX(1); }
+    .market-card:hover { border-color: rgba(200,169,110,.5); }
+
+    /* ─── Certs & Protocol ───────────────────────────────────────────────────── */
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 28px;
+      margin-top: 40px;
+    }
+    .cert-block {
+      background: rgba(13,11,8,0.72);
+      border: 1px solid rgba(200,169,110,0.55);
+      border-radius: 2px;
+      padding: 28px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      animation: pulseBronze 4s infinite alternate;
+      transition: border-color .3s;
+    }
+    .cert-block::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(200,169,110,0.55), transparent);
+      transform: scaleX(0);
+      transition: transform .4s ease;
+    }
+    .cert-block:hover::after { transform: scaleX(1); }
+    .cert-block:hover { border-color: rgba(200,169,110,.5); }
+    .cert-block .icon { font-size: 1.8rem; margin-bottom: 12px; display: block; }
+    .cert-block h3 { font-size: .72rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+    .cert-block p  { font-size: .72rem; color: var(--muted); line-height: 1.5; }
+
+    .protocol-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 28px;
+      margin-top: 28px;
+    }
+    .protocol-step {
+      background: rgba(13,11,8,0.72);
+      border: 1px solid rgba(200,169,110,0.35);
+      border-radius: 2px;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      animation: pulseBronze 4s infinite alternate;
+      transition: border-color .3s;
+    }
+    .protocol-step::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(200,169,110,0.55), transparent);
+      transform: scaleX(0);
+      transition: transform .4s ease;
+    }
+    .protocol-step:hover::after { transform: scaleX(1); }
+    .protocol-step:hover { border-color: rgba(200,169,110,.5); }
+    .protocol-step .step-num { font-size: 1.5rem; font-weight: 100; color: var(--gold); line-height: 1; margin-bottom: 8px; }
+    .protocol-step h4 { font-size: .65rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+    .protocol-step p  { font-size: .7rem; color: var(--muted); line-height: 1.4; }
+
+    .market-flag {
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+    }
+
+    .market-card h3 { font-size: 1rem; margin-bottom: 10px; }
+
+    /* ─── 04 PRODUCTS ────────────────────────────────────────────────────────── */
+    #products {
+      background: transparent;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 16px;
+    }
+
+    .product-card {
+      background: rgba(13,11,8,0.72);
+      border: 1px solid rgba(200,169,110,0.55);
+      color: var(--gold);
+      padding: 16px 16px 22px;
+      border-radius: 2px;
+      text-align: center;
+      transition: transform .3s, border-color .3s, background .3s;
+      cursor: default;
+      animation: pulseBronze 4s infinite alternate;
+      overflow: hidden;
+    }
+
+    .product-card:hover {
+      border-color: rgba(200,169,110,.6);
+      background: rgba(200,169,110,0.06);
+    }
+
+    .product-icon {
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .product-image {
+      width: calc(100% + 32px);
+      margin: -16px -16px 16px;
+      aspect-ratio: 4 / 2.5;
+      object-fit: cover;
+      display: block;
+      opacity: .84;
+      filter: saturate(.88) contrast(1.02) brightness(.93);
+      border-bottom: 1px solid rgba(200,169,110,0.18);
+    }
+
+    .product-card h3 {
+      font-size: .95rem;
+      margin-bottom: 8px;
+    }
+
+    .product-card p {
+      font-size: .82rem;
+    }
+
+
+    /* ─── 05 HOW WE WORK ─────────────────────────────────────────────────────── */
+    #process {
+      background: rgba(10,8,5,0.78);
+      backdrop-filter: blur(3px);
+    }
+
+    .process-steps {
+      display: flex;
+      gap: 0;
+      margin-top: 16px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+    }
+
+    .step {
+      flex: 1;
+      min-width: 140px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 26px;
+      left: calc(50% + 26px);
+      right: calc(-50% + 26px);
+      height: 1px;
+      background: linear-gradient(to right, var(--gold), rgba(200,169,110,0.2));
+    }
+
+    .step-num {
+      width: 52px;
+      height: 52px;
+      border: 1px solid rgba(200,169,110,0.6);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: var(--gold);
+      margin-bottom: 16px;
+      background: rgba(13,11,8,0.92);
+      position: relative;
+      z-index: 1;
+      transition: background .3s, color .3s;
+    }
+
+    .step:hover .step-num {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    .step h3 { font-size: .9rem; margin-bottom: 6px; color: var(--gold-lt); }
+    .step p  { font-size: .78rem; padding: 0 8px; color: var(--text); }
+
+    /* ─── 06 CERTIFICATIONS ──────────────────────────────────────────────────── */
+    #certs {
+      background: transparent;
+    }
+
+    .cert-card .cert-icon {
+      font-size: 2rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    /* ─── 07 WHY FIT ─────────────────────────────────────────────────────────── */
+    #fit {
+      background: transparent;
+    }
+
+    .fit-inner {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 52px 60px;
+      max-width: 860px;
+      border-radius: 2px;
+      position: relative;
+    }
+
+    .fit-inner::before {
+      content: '"';
+      font-weight: 200;
+      font-size: 8rem;
+      color: rgba(255,255,255,0.04);
+      position: absolute;
+      top: -20px;
+      left: 30px;
+      line-height: 1;
+    }
+
+    .fit-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px 40px;
+      margin-top: 20px;
+    }
+
+    .fit-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: .9rem;
+    }
+
+    .fit-list li::before {
+      content: '◆';
+      color: var(--gold);
+      font-size: .5rem;
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+
+    /* ─── 08 PARTNERSHIP ─────────────────────────────────────────────────────── */
+    #partnership {
+      background: transparent;
+    }
+
+    .phases {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 16px;
+      counter-reset: phase;
+    }
+
+    .phase-card {
+      background: rgba(13,11,8,0.72);
+      border: 1px solid rgba(200,169,110,0.55);
+      color: var(--gold);
+      padding: 36px 28px;
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+      transition: transform .3s, border-color .3s;
+      animation: pulseBronze 4s infinite alternate;
+    }
+
+    .phase-card::before {
+      counter-increment: phase;
+      content: counter(phase, decimal-leading-zero);
+      font-weight: 200;
+      font-size: 5rem;
+      color: rgba(255,255,255,0.03);
+      position: absolute;
+      bottom: 10px;
+      right: 18px;
+    }
+
+    .phase-card:hover {
+      border-color: rgba(200,169,110,.5);
+    }
+
+    .phase-num {
+      font-size: .68rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    /* ─── 09 NEXT STEPS ──────────────────────────────────────────────────────── */
+    #nextsteps {
+      background: transparent;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 16px;
+    }
+
+    .next-card {
+      background: rgba(13,11,8,0.72);
+      border: 1px solid rgba(200,169,110,0.55);
+      color: var(--gold);
+      padding: 32px 28px;
+      border-radius: 2px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      transition: transform .3s, border-color .3s;
+      animation: pulseBronze 4s infinite alternate;
+    }
+
+    .next-card:hover {
+      border-color: rgba(200,169,110,.5);
+    }
+
+    .next-num {
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .85rem;
+      font-weight: 300;
+      color: var(--text);
+      flex-shrink: 0;
+    }
+
+    /* ─── 10 CTA ─────────────────────────────────────────────────────────────── */
+    #cta {
+      background: rgba(10,8,5,0.80);
+      backdrop-filter: blur(4px);
+      text-align: center;
+      align-items: center;
+      padding: 140px 80px;
+    }
+
+    .cta-title {
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      color: var(--gold-lt);
+      max-width: 700px;
+      margin-bottom: 24px;
+    }
+
+    .cta-sub {
+      max-width: 580px;
+      margin-bottom: 52px;
+      font-size: 1rem;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 52px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 52px;
+    }
+
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      background: rgba(13,11,8,0.72);
+      border: 1px solid rgba(200,169,110,0.55);
+      padding: 24px 32px;
+      border-radius: 4px;
+      min-width: 160px;
+    }
+
+    .contact-icon {
+      font-size: 1.3rem;
+    }
+
+    .contact-label {
+      font-size: .68rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .contact-value {
+      font-size: .9rem;
+      color: var(--text);
+    }
+
+    .cta-btn {
+      display: inline-block;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 16px 52px;
+      font-size: .85rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 300;
+      transition: background .3s, color .3s, border-color .3s;
+      cursor: pointer;
+      background: transparent;
+      border-radius: 4px;
+    }
+
+    .cta-btn:hover {
+      background: var(--text);
+      color: var(--dark);
+      border-color: var(--text);
+    }
+
+    .footer-logo {
+      font-weight: 300;
+      font-size: .75rem;
+      letter-spacing: 4px;
+      color: var(--text);
+      margin-top: 64px;
+      opacity: .4;
+    }
+
+    /* ─── Animated BG particles ──────────────────────────────────────────────── */
+    .particle-canvas {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    section > *:not(.particle-canvas) { position: relative; z-index: 1; }
+
+    /* ─── Progress bar ───────────────────────────────────────────────────────── */
+    #progress-bar {
+      position: fixed;
+      top: 0; left: 0;
+      height: 2px;
+      background: linear-gradient(to right, var(--gold), var(--gold-lt));
+      z-index: 200;
+      width: 0%;
+      transition: width .1s linear;
+    }
+
+    /* ─── Keyframes ──────────────────────────────────────────────────────────── */
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @keyframes lineGrow {
+      from { transform: scaleX(0); }
+      to   { transform: scaleX(1); }
+    }
+
+    .animated-line {
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to right, var(--gold), transparent);
+      transform-origin: left;
+      transform: scaleX(0);
+      animation: lineGrow 1.2s ease .3s forwards;
+    }
+
+    /* ─── Ticker ─────────────────────────────────────────────────────────────── */
+    .ticker-wrap {
+      overflow: hidden;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 0;
+      background: rgba(200,169,110,0.03);
+      margin-top: 40px;
+    }
+
+    .ticker-track {
+      display: flex;
+      gap: 60px;
+      white-space: nowrap;
+      animation: ticker 28s linear infinite;
+    }
+
+    .ticker-item {
+      font-size: .7rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    @keyframes ticker {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    @keyframes shimmerLayer {
+      0% { transform: translateX(-150%) skewX(-20deg); }
+      100% { transform: translateX(250%) skewX(-20deg); }
+    }
+
+    @keyframes numberShimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+
+    .shimmer-number, .stat-num, .about-card .num {
+      background: linear-gradient(
+        to right,
+        var(--gold) 20%,
+        #fff 50%,
+        var(--gold) 80%
+      );
+      background-size: 200% auto;
+      color: transparent !important;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: numberShimmer 3s linear infinite;
+    }
+    
+    /* For numbers inside circles */
+    .step-num span, .next-num span {
+      background: linear-gradient(
+        to right,
+        var(--gold) 20%,
+        #fff 50%,
+        var(--gold) 80%
+      );
+      background-size: 200% auto;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: numberShimmer 3s linear infinite;
+    }
+
+    .phase-card::before {
+      background: linear-gradient(
+        to right,
+        rgba(200,169,110,0.07) 20%,
+        rgba(200,169,110,0.4) 50%,
+        rgba(200,169,110,0.07) 80%
+      );
+      background-size: 200% auto;
+      color: transparent !important;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: numberShimmer 4s linear infinite;
+    }
+
+    .shimmer-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 150%;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(200, 169, 110, 0.15) 40%,
+        rgba(205, 127, 50, 0.3) 50%,
+        rgba(200, 169, 110, 0.15) 60%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      pointer-events: none;
+      animation: cssShimmer 3s infinite linear;
+      z-index: 0;
+      transform: skewX(-20deg) translateX(-150%);
+    }
+
+    @keyframes cssShimmer {
+      0% { transform: skewX(-20deg) translateX(-150%); }
+      100% { transform: skewX(-20deg) translateX(150%); }
+    }
+
+
+    /* Ensure cards hide shimmer overflow and sit relative */
+    .about-card, .market-card, .product-card, .cert-card, .phase-card, .next-card {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+    
+    .about-card p, .market-card p, .product-card p, .cert-card p, .phase-card p, .next-card p,
+    .about-card h3, .market-card h3, .product-card h3, .cert-card h3, .phase-card h3, .next-card h3 {
+      color: var(--gold);
+    }
+    
+    /* Make text/content sit above shimmer */
+    .about-card > *, .market-card > *, .product-card > *, .cert-card > *, .phase-card > *, .next-card > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ─── Responsive ─────────────────────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      section { padding: 100px 32px 60px; }
+      nav { padding: 14px 24px; }
+      .about-grid, .markets-grid, .products-grid, .certs-grid,
+      .phases, .steps-grid { grid-template-columns: 1fr 1fr; }
+      .process-steps { flex-wrap: wrap; gap: 28px; }
+      .step:not(:last-child)::after { display: none; }
+      .fit-list { grid-template-columns: 1fr; }
+      nav .nav-links { display: none; }
+    }
+
+    @media (max-width: 580px) {
+      section { padding: 90px 20px 50px; }
+      .about-grid, .markets-grid, .products-grid, .certs-grid,
+      .phases, .steps-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ─── Music Player ───────────────────────────────────────────────────────── */
+    #music-player {
+      position: fixed;
+      bottom: 32px;
+      left: 32px;
+      right: auto;
+      z-index: 300;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(13,11,8,0.88);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(200,169,110,0.40);
+      border-radius: 50px;
+      padding: 6px 14px 6px 6px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      transition: border-color .3s;
+    }
+    #music-player:hover { border-color: rgba(200,169,110,0.65); }
+
+    #music-toggle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--gold);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background .2s, transform .2s;
+    }
+    #music-toggle:hover { background: var(--gold-lt); transform: scale(1.1); }
+    #music-toggle svg { width: 12px; height: 12px; fill: #0d0d0d; }
+
+    #music-mute {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: transparent;
+      border: 1px solid rgba(200,169,110,0.3);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: border-color .2s;
+    }
+    #music-mute:hover { border-color: var(--gold); }
+    #music-mute svg { width: 11px; height: 11px; fill: var(--gold); }
+
+    .music-info { display: none; }
+    .music-title { display: none; }
+    .music-sub   { display: none; }
+
+    /* Volume slider */
+    #vol-wrap { display: none; }
+
+    .wave-bars { display: none; }
+
+    /* ─── Nav Clock ───────────────────────────────────────────────────────────── */
+    #nav-clock {
+      width: 38px;
+      height: 38px;
+      flex-shrink: 0;
+      animation: none;
+      background: transparent;
+    }
+    #clock-svg { width: 100%; height: 100%; }
+
+    /* ─── Language Toggle ────────────────────────────────────────────────────── */
+    #lang-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+    .lang-btn {
+      padding: 4px 12px;
+      border: none;
+      background: transparent;
+      color: rgba(200,169,110,0.4);
+      font-size: .65rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-family: inherit;
+      transition: color .2s;
+    }
+    .lang-btn + .lang-btn { border-left: 1px solid rgba(200,169,110,0.2); }
+    .lang-btn.active { color: var(--gold); }
+    .lang-btn:hover  { color: var(--gold-lt); }
+
+    /* ─── Passcode Lock ──────────────────────────────────────────────────────── */
+    #passcode-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: radial-gradient(ellipse at center, #1a1208 0%, #060402 70%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .pc-brand {
+      font-size: .52rem;
+      letter-spacing: 7px;
+      color: rgba(200,169,110,0.7);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .pc-title {
+      font-size: .52rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.25);
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+    .pc-dots {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .pc-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      border: 1px solid rgba(200,169,110,0.4);
+      background: transparent;
+      transition: all .2s ease;
+    }
+    .pc-dot.filled {
+      background: var(--gold);
+      border-color: var(--gold);
+      box-shadow: 0 0 8px rgba(200,169,110,0.9);
+      transform: scale(1.3);
+    }
+    .pc-dot.error {
+      background: #e74c3c;
+      border-color: #e74c3c;
+      box-shadow: 0 0 8px rgba(231,76,60,0.9);
+      transform: scale(1.3);
+    }
+    .pc-pad {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 8px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(200,169,110,0.15);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+    .pc-key {
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      border: 1px solid rgba(200,169,110,0.18);
+      background: rgba(255,255,255,0.07);
+      color: rgba(255,255,255,0.9);
+      font-size: .95rem;
+      font-weight: 300;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1px;
+      transition: all .12s ease;
+      font-family: inherit;
+      user-select: none;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 2px 6px rgba(0,0,0,0.3);
+    }
+    .pc-key .sub {
+      font-size: .28rem;
+      letter-spacing: 2px;
+      color: rgba(200,169,110,0.4);
+      text-transform: uppercase;
+    }
+    .pc-key:hover {
+      background: rgba(200,169,110,0.12);
+      border-color: rgba(200,169,110,0.45);
+    }
+    .pc-key:active {
+      transform: scale(0.88);
+      background: rgba(200,169,110,0.22);
+      border-color: rgba(200,169,110,0.7);
+      box-shadow: 0 0 14px rgba(200,169,110,0.3);
+    }
+    .pc-key.zero   { grid-column: 2; border-radius: 10px; }
+    .pc-key.del    { grid-column: 3; font-size: .85rem; color: rgba(200,169,110,0.5); background: transparent; border-color: transparent; box-shadow: none; }
+    .pc-key.del:hover { color: rgba(200,169,110,1); background: rgba(200,169,110,0.08); }
+    .pc-error-msg {
+      font-size: .48rem;
+      letter-spacing: 3px;
+      color: #e74c3c;
+      text-transform: uppercase;
+      height: 12px;
+      margin-top: 8px;
+    }
+
+    /* ─── Music Autoplay Overlay ─────────────────────────────────────────────── */
+    /* ─── Cinematic Door Entrance ────────────────────────────────────────── */
+    #music-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      cursor: pointer;
+      transition: opacity .5s ease;
+    }
+    .door-left, .door-right {
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 50%;
+      background: #0a0805;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 1.1s cubic-bezier(0.77,0,0.18,1);
+      overflow: hidden;
+    }
+    .door-left  { left: 0;  border-right: 1px solid rgba(200,169,110,0.3); }
+    .door-right { right: 0; border-left:  1px solid rgba(200,169,110,0.3); }
+
+    /* gold vertical line on each door */
+    .door-left::before, .door-right::before {
+      content: '';
+      position: absolute;
+      top: 20%; bottom: 20%;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+      opacity: 0.5;
+    }
+    .door-left::before  { right: 40px; }
+    .door-right::before { left: 40px; }
+
+    /* center content split across both doors */
+    .door-content {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .door-brand {
+      font-size: .7rem;
+      letter-spacing: 6px;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 28px;
+      animation: fadeIn 1s ease .3s both;
+    }
+    .door-title {
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+      font-weight: 200;
+      color: var(--text);
+      letter-spacing: 3px;
+      text-align: center;
+      margin-bottom: 16px;
+      animation: fadeIn 1s ease .5s both;
+    }
+    .door-title span { color: var(--gold); }
+    .door-divider {
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+      margin-bottom: 28px;
+      animation: fadeIn 1s ease .7s both;
+    }
+    .door-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      animation: fadeIn 1s ease .9s both;
+    }
+    .door-play {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 1px solid rgba(200,169,110,0.6);
+      background: rgba(200,169,110,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background .3s, border-color .3s, transform .3s;
+    }
+    #music-overlay:hover .door-play {
+      background: var(--gold);
+      border-color: var(--gold);
+      transform: scale(1.1);
+    }
+    #music-overlay:hover .door-play svg { fill: #0d0d0d; }
+    .door-play svg { width: 18px; height: 18px; fill: var(--gold); transition: fill .3s; }
+    .door-hint {
+      font-size: .65rem;
+      letter-spacing: 3px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    /* open state — doors slide apart */
+    #music-overlay.opening .door-left  { transform: translateX(-100%); }
+    #music-overlay.opening .door-right { transform: translateX(100%); }
+    #music-overlay.opening .door-content { opacity: 0; transition: opacity .3s; }
+
+    /* ─── Chatbot ─────────────────────────────────────────────────────────────── */
+    #chat-bubble {
+      position: fixed;
+      bottom: 100px;
+      right: 32px;
+      left: auto;
+      z-index: 300;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(13,11,8,0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(200,169,110,0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: border-color .3s, transform .2s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    #chat-bubble:hover { border-color: var(--gold); transform: scale(1.08); }
+    #chat-bubble svg { width: 20px; height: 20px; fill: var(--gold); }
+    #chat-bubble .cb-tooltip {
+      position: absolute;
+      right: 54px;
+      left: auto;
+      background: rgba(13,11,8,0.9);
+      color: var(--gold);
+      font-size: .62rem;
+      letter-spacing: 1px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid rgba(200,169,110,0.25);
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s;
+    }
+    #chat-bubble:hover .cb-tooltip { opacity: 1; }
+
+    #chat-window {
+      position: fixed;
+      bottom: 156px;
+      right: 32px;
+      left: auto;
+      z-index: 300;
+      width: 320px;
+      max-height: 420px;
+      background: rgba(13,11,8,0.95);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(200,169,110,0.35);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+      transform: scale(0.9) translateY(20px);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform .25s ease, opacity .25s ease;
+    }
+    #chat-window.open {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+      pointer-events: all;
+    }
+    .chat-header {
+      padding: 12px 16px;
+      border-bottom: 1px solid rgba(200,169,110,0.2);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .chat-header-dot { width: 8px; height: 8px; border-radius: 50%; background: #4caf50; flex-shrink: 0; }
+    .chat-header-title { font-size: .75rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); flex: 1; }
+    .chat-header-close { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 1rem; line-height: 1; padding: 0; }
+    .chat-header-close:hover { color: var(--text); }
+    #chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 14px 14px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(200,169,110,0.2) transparent;
+    }
+    .chat-msg { max-width: 85%; padding: 9px 13px; border-radius: 10px; font-size: .78rem; line-height: 1.5; }
+    .chat-msg.bot { background: rgba(200,169,110,0.10); border: 1px solid rgba(200,169,110,0.18); color: var(--text); align-self: flex-start; border-bottom-left-radius: 2px; }
+    .chat-msg.user { background: var(--gold); color: #0d0d0d; align-self: flex-end; border-bottom-right-radius: 2px; font-weight: 500; }
+    .chat-quick-btns { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 14px 10px; }
+    .chat-qbtn { background: transparent; border: 1px solid rgba(200,169,110,0.3); color: var(--gold); font-size: .65rem; letter-spacing: 1px; padding: 5px 10px; border-radius: 20px; cursor: pointer; transition: background .2s, color .2s; }
+    .chat-qbtn:hover { background: var(--gold); color: #0d0d0d; }
+    .chat-input-row { display: flex; border-top: 1px solid rgba(200,169,110,0.2); }
+    #chat-input { flex: 1; background: transparent; border: none; outline: none; color: var(--text); font-size: .8rem; padding: 11px 14px; font-family: inherit; }
+    #chat-input::placeholder { color: var(--muted); }
+    #chat-send { background: transparent; border: none; border-left: 1px solid rgba(200,169,110,0.2); padding: 0 14px; cursor: pointer; color: var(--gold); font-size: 1rem; transition: color .2s; }
+    #chat-send:hover { color: var(--gold-lt); }
+
+    /* ─── WhatsApp Button ────────────────────────────────────────────────────── */
+    #wa-btn {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      z-index: 300;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(13,11,8,0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(200,169,110,0.30);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: border-color .3s, transform .2s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    #wa-btn:hover { border-color: rgba(200,169,110,0.6); transform: scale(1.08); }
+    #wa-btn svg { width: 20px; height: 20px; }
+    #wa-btn .wa-tooltip {
+      position: absolute;
+      right: 54px;
+      background: rgba(13,11,8,0.9);
+      color: var(--gold);
+      font-size: .62rem;
+      letter-spacing: 1px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid rgba(200,169,110,0.25);
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s;
+    }
+    #wa-btn:hover .wa-tooltip { opacity: 1; }
+
+    /* ─── Formula Section ────────────────────────────────────────────────────── */
+    .formula-eq {
+      font-size: clamp(3rem, 10vw, 7rem);
+      font-weight: 100;
+      color: var(--gold);
+      letter-spacing: 0.05em;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .formula-tagline {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 48px;
+      font-size: .9rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    .formula-grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr auto 1fr;
+      gap: 0;
+      align-items: stretch;
+      margin-bottom: 40px;
+    }
+    .formula-block {
+      background: rgba(13,11,8,0.72);
+      border: 1px solid rgba(200,169,110,0.55);
+      border-radius: 2px;
+      padding: 36px 28px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      animation: pulseBronze 4s infinite alternate;
+      transition: border-color .3s;
+    }
+    .formula-block::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(200,169,110,0.55), transparent);
+      transform: scaleX(0);
+      transition: transform .4s ease;
+    }
+    .formula-block:hover::after { transform: scaleX(1); }
+    .formula-block:hover { border-color: rgba(200,169,110,.5); }
+    .formula-block .letter { font-size: 3.5rem; font-weight: 100; color: var(--gold); line-height: 1; margin-bottom: 12px; }
+    .formula-block h3 { font-size: .72rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .formula-block p { font-size: .78rem; color: var(--muted); line-height: 1.6; }
+    .formula-op { font-size: 3rem; font-weight: 100; color: rgba(200,169,110,0.4); display: flex; align-items: center; padding: 0 20px; }
+    .formula-proof { font-size: .65rem; letter-spacing: 3px; text-transform: uppercase; color: rgba(200,169,110,0.5); margin-top: 20px; }
+
+    /* ─── FMCG Shelf Wall ─────────────────────────────────────────────────── */
+    #shelf-wall {
+      background: linear-gradient(180deg, rgba(13,13,13,0.15) 0%, rgba(13,11,8,0.55) 100%);
+    }
+    .shelf-wall-wrap {
+      margin-top: 34px;
+      display: grid;
+      gap: 14px;
+      border: 1px solid rgba(200,169,110,0.22);
+      padding: 14px;
+      background: rgba(13,11,8,0.5);
+      backdrop-filter: blur(8px);
+    }
+    .shelf-lane {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(200,169,110,0.17);
+      background: rgba(13,11,8,0.58);
+      height: 92px;
+      display: flex;
+      align-items: center;
+    }
+    .shelf-lane::before {
+      content: attr(data-lane);
+      position: absolute;
+      left: 10px;
+      top: 8px;
+      font-size: .58rem;
+      letter-spacing: 1.8px;
+      color: rgba(200,169,110,0.6);
+      text-transform: uppercase;
+      z-index: 2;
+    }
+    .shelf-track {
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+      padding-left: 132px;
+      animation: shelfMove 26s linear infinite;
+      will-change: transform;
+    }
+    .shelf-pack {
+      min-width: 84px;
+      height: 62px;
+      border: 1px solid rgba(200,169,110,0.35);
+      background: linear-gradient(160deg, rgba(232,204,138,0.2), rgba(200,169,110,0.08));
+      color: var(--gold-lt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .56rem;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+      position: relative;
+    }
+    .shelf-pack::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-top: 1px solid rgba(255,255,255,0.22);
+      opacity: .45;
+      pointer-events: none;
+    }
+    .shelf-pack.pulse {
+      border-color: rgba(232,204,138,0.9);
+      box-shadow: 0 0 24px rgba(200,169,110,0.35);
+    }
+    @keyframes shelfMove {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-45%); }
+    }
+
+    /* ─── Route to Market Map ─────────────────────────────────────────────── */
+    #rtm-map {
+      background: linear-gradient(180deg, rgba(13,11,8,0.45) 0%, rgba(13,13,13,0.2) 100%);
+    }
+    .rtm-wrap {
+      margin-top: 36px;
+      border: 1px solid rgba(200,169,110,0.22);
+      background: rgba(13,11,8,0.55);
+      padding: 18px;
+    }
+    .rtm-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0,1fr));
+      gap: 10px;
+      align-items: center;
+      position: relative;
+      min-height: 180px;
+    }
+    .rtm-node {
+      position: relative;
+      border: 1px solid rgba(200,169,110,0.36);
+      background: rgba(13,11,8,0.72);
+      padding: 14px 10px;
+      text-align: center;
+      min-height: 80px;
+      display: grid;
+      align-content: center;
+      gap: 6px;
+      z-index: 2;
+      transition: border-color .25s ease, box-shadow .25s ease;
+    }
+    .rtm-node .n-title {
+      font-size: .64rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .rtm-node .n-sub {
+      font-size: .65rem;
+      color: var(--muted);
+    }
+    .rtm-node.live {
+      border-color: rgba(232,204,138,0.88);
+      box-shadow: 0 0 22px rgba(200,169,110,0.25);
+    }
+    .rtm-edge {
+      height: 2px;
+      background: linear-gradient(90deg, rgba(200,169,110,0.15), rgba(232,204,138,0.82), rgba(200,169,110,0.15));
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .rtm-edge::after {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -24%;
+      width: 24%;
+      height: 6px;
+      background: rgba(232,204,138,0.95);
+      filter: blur(1px);
+      animation: rtmFlow 3.6s linear infinite;
+    }
+    @keyframes rtmFlow {
+      0% { left: -24%; }
+      100% { left: 112%; }
+    }
+    .rtm-kpis {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 10px;
+    }
+    .rtm-kpi {
+      border: 1px solid rgba(200,169,110,0.2);
+      background: rgba(13,11,8,0.62);
+      padding: 10px;
+      text-align: center;
+    }
+    .rtm-kpi .kpi-v {
+      font-size: 1.05rem;
+      color: var(--gold-lt);
+      line-height: 1;
+    }
+    .rtm-kpi .kpi-l {
+      margin-top: 6px;
+      font-size: .58rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    @media (max-width: 980px) {
+      .rtm-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .rtm-edge {
+        height: 20px;
+        background: transparent;
+      }
+      .rtm-edge::after {
+        width: 2px;
+        height: 20px;
+        left: 50%;
+        top: -100%;
+        transform: translateX(-50%);
+        animation: rtmFlowVertical 2.8s linear infinite;
+      }
+      @keyframes rtmFlowVertical {
+        0% { top: -100%; }
+        100% { top: 140%; }
+      }
+      .rtm-kpis {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+      }
+    }
+
+    section h2 { text-shadow: 0 2px 20px rgba(0,0,0,0.8), 0 1px 4px rgba(0,0,0,0.9); }
+    section p  { text-shadow: 0 1px 8px rgba(0,0,0,0.7); }
+    .section-tag { text-shadow: 0 1px 6px rgba(0,0,0,0.8); }
+  </style>
+  
+</head>
+<body>
+
+  <!-- ─── WhatsApp Button ───────────────────────────────────────────────── -->
+  <a id="wa-btn" href="https://wa.me/16473664374" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="#c8a96e"/>
+      <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.306A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.946 7.946 0 01-4.073-1.117l-.292-.174-3.033.795.811-2.965-.19-.304A7.954 7.954 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z" fill="#c8a96e"/>
+    </svg>
+    <span class="wa-tooltip">WhatsApp • Harvics</span>
+  </a>
+
+  <!-- ─── Passcode Lock ───────────────────────────────────────────────────── -->
+  <div id="passcode-screen">
+    <div class="pc-brand">Harvics Global Ventures</div>
+    <div class="pc-title">Enter Access Code</div>
+    <div class="pc-dots">
+      <div class="pc-dot" id="d0"></div>
+      <div class="pc-dot" id="d1"></div>
+      <div class="pc-dot" id="d2"></div>
+    </div>
+    <div class="pc-pad">
+      <button class="pc-key" onclick="pcKey('1')">1<span class="sub"></span></button>
+      <button class="pc-key" onclick="pcKey('2')">2<span class="sub">ABC</span></button>
+      <button class="pc-key" onclick="pcKey('3')">3<span class="sub">DEF</span></button>
+      <button class="pc-key" onclick="pcKey('4')">4<span class="sub">GHI</span></button>
+      <button class="pc-key" onclick="pcKey('5')">5<span class="sub">JKL</span></button>
+      <button class="pc-key" onclick="pcKey('6')">6<span class="sub">MNO</span></button>
+      <button class="pc-key" onclick="pcKey('7')">7<span class="sub">PQRS</span></button>
+      <button class="pc-key" onclick="pcKey('8')">8<span class="sub">TUV</span></button>
+      <button class="pc-key" onclick="pcKey('9')">9<span class="sub">WXYZ</span></button>
+      <button class="pc-key zero" onclick="pcKey('0')">0</button>
+      <button class="pc-key del"  onclick="pcDel()">&#x232B;</button>
+    </div>
+    <div class="pc-error-msg" id="pc-err"></div>
+  </div>
+  <script>
+    var PC_CODE = '222';
+    var pcInput = '';
+    function pcKey(k) {
+      if (pcInput.length >= 3) return;
+      pcInput += k;
+      document.getElementById('d' + (pcInput.length - 1)).classList.add('filled');
+      if (pcInput.length === 3) {
+        if (pcInput === PC_CODE) {
+          var s = document.getElementById('passcode-screen');
+          s.style.opacity = '0';
+          s.style.transition = 'opacity .6s ease';
+          setTimeout(function(){ s.remove(); }, 650);
+        } else {
+          document.getElementById('pc-err').textContent = 'Incorrect code — try again';
+          [0,1,2].forEach(function(i){ document.getElementById('d'+i).classList.remove('filled'); document.getElementById('d'+i).classList.add('error'); });
+          setTimeout(function(){
+            [0,1,2].forEach(function(i){ document.getElementById('d'+i).classList.remove('error'); });
+            document.getElementById('pc-err').textContent = '';
+            pcInput = '';
+          }, 900);
+        }
+      }
+    }
+    function pcDel() {
+      if (!pcInput.length) return;
+      pcInput = pcInput.slice(0, -1);
+      document.getElementById('d' + pcInput.length).classList.remove('filled');
+      document.getElementById('pc-err').textContent = '';
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key >= '0' && e.key <= '9') pcKey(e.key);
+      if (e.key === 'Backspace') pcDel();
+    });
+  </script>
+
+  <!-- ─── Music Autoplay Overlay ────────────────────────────────────────── -->
+  <div id="music-overlay" onclick="dismissOverlay()">
+    <div class="door-left"></div>
+    <div class="door-right"></div>
+    <div class="door-content">
+      <div class="door-brand">Harvics Global Ventures</div>
+      <div class="door-title">Harvics Global Ventures</div>
+      <div class="door-divider"></div>
+      <div class="door-cta">
+        <div class="door-play">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="door-hint">Click to Enter</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var _overlayDismissed = false;
+    var _welcomePrimed = false;
+    function primeWelcomeAudio() {
+      if (_welcomePrimed) return;
+      var welcome = document.getElementById('welcome-audio');
+      if (welcome) {
+        welcome.load();
+        _welcomePrimed = true;
+      }
+    }
+    document.addEventListener('DOMContentLoaded', primeWelcomeAudio, { once: true });
+
+    function dismissOverlay() {
+      if (_overlayDismissed) return;
+      _overlayDismissed = true;
+      var ov = document.getElementById('music-overlay');
+      ov.classList.add('opening');
+      setTimeout(function(){
+        ov.style.opacity = '0';
+        ov.style.pointerEvents = 'none';
+      }, 900);
+      setTimeout(function(){ ov.remove(); }, 1400);
+
+      // Welcome speech — ElevenLabs Brian voice
+      setTimeout(function() {
+        var welcome = document.getElementById('welcome-audio');
+        if (welcome) {
+          welcome.currentTime = 0;
+          welcome.volume = 0.92;
+          welcome.play().catch(function(){});
+        }
+
+        // Music does NOT auto-start — user can manually toggle it
+        welcome.onended = function() {
+          // Music available via toggle button, but not auto-playing
+        };
+      }, 350);
+    }
+  </script>
+
+  <!-- ─── Chatbot Bubble ────────────────────────────────────────────────────── -->
+  <div id="chat-bubble" onclick="toggleChat()" role="button" aria-label="Open chat">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+    <span class="cb-tooltip">Ask Harvics AI</span>
+  </div>
+
+  <!-- ─── Chatbot Window ─────────────────────────────────────────────────────── -->
+  <div id="chat-window" role="dialog" aria-label="Harvics AI Chat">
+    <div class="chat-header">
+      <div class="chat-header-dot"></div>
+      <div class="chat-header-title">Layla — Harvics Guide</div>
+      <button class="chat-header-close" onclick="toggleChat()" aria-label="Close">✕</button>
+    </div>
+    <div id="chat-messages"></div>
+    <div class="chat-quick-btns" id="chat-quick"></div>
+    <div class="chat-input-row">
+      <input id="chat-input" type="text" placeholder="Ask about Harvics..." autocomplete="off" />
+      <button id="chat-send" aria-label="Send">➤</button>
+    </div>
+  </div>
+
+  <!-- ─── Cinematic Background ───────────────────────────────────────────── -->
+  <div id="cinema-bg">
+    <div class="bg-layer active" style="background-image:url('Card-1.png')"></div>
+    <div class="bg-layer" style="background-image:url('card-2.png')"></div>
+    <div class="bg-layer" style="background-image:url('card-3.png')"></div>
+    <div class="bg-layer" style="background-image:url('card-4.png')"></div>
+    <div class="bg-layer" style="background-image:url('card-5.png')"></div>
+    <div class="bg-layer" style="background-image:url('card-6.png')"></div>
+    <div class="bg-layer" style="background-image:url('card-7.png')"></div>
+    <div class="bg-layer" style="background-image:url('Card-8png.png')"></div>
+    <div class="bg-layer" style="background-image:url('card-9.png')"></div>
+    <div class="bg-layer" style="background-image:url('Card-10.png')"></div>
+  </div>
+
+  <!-- ─── Progress Bar ─────────────────────────────────────────────────────── -->
+  <div id="progress-bar"></div>
+
+  <!-- ─── Particle Canvas ──────────────────────────────────────────────────── -->
+  <canvas class="particle-canvas" id="particles"></canvas>
+
+  <!-- ─── Nav ──────────────────────────────────────────────────────────────── -->
+  <nav>
+    <a class="logo" href="#hero">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="32" r="8" fill="#C3A35E" opacity="0.95"/>
+        <circle cx="32" cy="32" r="4" fill="#6B1F2B"/>
+        <path d="M32 4L32 16L28 12L32 16L36 12" stroke="#C3A35E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M50 14L42 22L44 18L42 22L46 24" stroke="#C3A35E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M60 32L48 32L52 28L48 32L52 36" stroke="#C3A35E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M50 50L42 42L46 40L42 42L44 46" stroke="#C3A35E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M32 60L32 48L28 52L32 48L36 52" stroke="#C3A35E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 50L22 42L18 44L22 42L20 46" stroke="#C3A35E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M4 32L16 32L12 28L16 32L12 36" stroke="#C3A35E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 14L22 22L20 18L22 22L18 24" stroke="#C3A35E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="32" cy="32" r="22" stroke="#C3A35E" stroke-width="1" opacity="0.3" fill="none"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-name">Harvics Global Ventures</span>
+        <span class="logo-tag">Textile &amp; FMCG Global Sourcing</span>
+      </div>
+    </a>
+    <!-- Analog Clock -->
+    <div id="nav-clock">
+      <svg id="clock-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer ring -->
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#c8a96e" stroke-width="1.5"/>
+        <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(200,169,110,0.15)" stroke-width="0.5"/>
+        <!-- Hour markers -->
+        <line x1="50" y1="8" x2="50" y2="14" stroke="#c8a96e" stroke-width="2" transform="rotate(0 50 50)"/>
+        <line x1="50" y1="8" x2="50" y2="12" stroke="rgba(200,169,110,0.5)" stroke-width="1" transform="rotate(30 50 50)"/>
+        <line x1="50" y1="8" x2="50" y2="12" stroke="rgba(200,169,110,0.5)" stroke-width="1" transform="rotate(60 50 50)"/>
+        <line x1="50" y1="8" x2="50" y2="14" stroke="#c8a96e" stroke-width="2" transform="rotate(90 50 50)"/>
+        <line x1="50" y1="8" x2="50" y2="12" stroke="rgba(200,169,110,0.5)" stroke-width="1" transform="rotate(120 50 50)"/>
+        <line x1="50" y1="8" x2="50" y2="12" stroke="rgba(200,169,110,0.5)" stroke-width="1" transform="rotate(150 50 50)"/>
+        <line x1="50" y1="8" x2="50" y2="14" stroke="#c8a96e" stroke-width="2" transform="rotate(180 50 50)"/>
+        <line x1="50" y1="8" x2="50" y2="12" stroke="rgba(200,169,110,0.5)" stroke-width="1" transform="rotate(210 50 50)"/>
+        <line x1="50" y1="8" x2="50" y2="12" stroke="rgba(200,169,110,0.5)" stroke-width="1" transform="rotate(240 50 50)"/>
+        <line x1="50" y1="8" x2="50" y2="14" stroke="#c8a96e" stroke-width="2" transform="rotate(270 50 50)"/>
+        <line x1="50" y1="8" x2="50" y2="12" stroke="rgba(200,169,110,0.5)" stroke-width="1" transform="rotate(300 50 50)"/>
+        <line x1="50" y1="8" x2="50" y2="12" stroke="rgba(200,169,110,0.5)" stroke-width="1" transform="rotate(330 50 50)"/>
+        <!-- Roman numerals -->
+        <text x="50" y="20" text-anchor="middle" fill="#c8a96e" font-size="7" font-family="serif">XII</text>
+        <text x="80" y="54" text-anchor="middle" fill="#c8a96e" font-size="7" font-family="serif">III</text>
+        <text x="50" y="86" text-anchor="middle" fill="#c8a96e" font-size="7" font-family="serif">VI</text>
+        <text x="20" y="54" text-anchor="middle" fill="#c8a96e" font-size="7" font-family="serif">IX</text>
+        <!-- Hands -->
+        <line id="hour-hand"   x1="50" y1="50" x2="50" y2="24" stroke="#c8a96e" stroke-width="2.5" stroke-linecap="round"/>
+        <line id="minute-hand" x1="50" y1="50" x2="50" y2="16" stroke="#e8cc8a" stroke-width="1.5" stroke-linecap="round"/>
+        <line id="second-hand" x1="50" y1="55" x2="50" y2="14" stroke="rgba(200,169,110,0.15)" stroke-width="0.5" stroke-linecap="round"/>
+        <!-- Center dot -->
+        <circle cx="50" cy="50" r="2.5" fill="#c8a96e"/>
+        <circle cx="50" cy="50" r="1" fill="#8B4513"/>
+      </svg>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#markets">Markets</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#certs">Certs</a></li>
+      <li><a href="#partnership">Partnership</a></li>
+      <li><a href="#mafi">Brand</a></li>
+      <li><a href="#cta">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <div id="lang-toggle">
+        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="btn-ar" onclick="setLang('ar')">ع</button>
+      </div>
+      <button id="nav-login-btn" onclick="openLoginModal()" style="background:transparent;border:1px solid var(--gold);color:var(--gold);padding:7px 22px;font-size:.75rem;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-family:inherit;transition:background .3s,color .3s;"
+        onmouseenter="this.style.background='var(--gold)';this.style.color='var(--dark)'"
+        onmouseleave="this.style.background='transparent';this.style.color='var(--gold)'">Login</button>
+    </div>
+  </nav>
+
+  <!-- ─── 01 HERO ───────────────────────────────────────────────────────────── -->
+  <section id="hero">
+    <!-- Decorative globe -->
+    <svg class="globe-wrap" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#c8a96e" stroke-width="1">
+      <circle cx="100" cy="100" r="90"/>
+      <ellipse cx="100" cy="100" rx="55" ry="90"/>
+      <ellipse cx="100" cy="100" rx="90" ry="35"/>
+      <line x1="10" y1="100" x2="190" y2="100"/>
+      <line x1="100" y1="10" x2="100" y2="190"/>
+      <circle cx="100" cy="100" r="7" fill="#c8a96e" stroke="none"/>
+      <circle cx="100" cy="100" r="12" fill="rgba(200,169,110,0.18)" stroke="#c8a96e" stroke-width=".8"/>
+      <!-- compass points -->
+      <line x1="100" y1="10" x2="100" y2="26" stroke-width="1.5"/>
+      <line x1="190" y1="100" x2="174" y2="100" stroke-width="1.5"/>
+      <line x1="100" y1="190" x2="100" y2="174" stroke-width="1.5"/>
+      <line x1="10" y1="100" x2="26" y2="100" stroke-width="1.5"/>
+    </svg>
+
+    <div class="reveal">
+      <span class="animated-line"></span>
+    </div>
+    <br>
+    <div class="reveal delay-1">
+      <h1>Harvics Global Ventures</h1>
+    </div>
+    <div class="reveal delay-2">
+      <p class="hero-tagline">Brand-Led Global Sourcing Intelligence</p>
+    </div>
+    <div class="reveal delay-3">
+      <p class="hero-cities">London &nbsp;·&nbsp; Milan &nbsp;·&nbsp; New York</p>
+    </div>
+    <div class="reveal delay-3" style="margin-top:36px;">
+      <button onclick="openLoginModal()" ontouchstart="openLoginModal()" style="display:inline-block;padding:14px 42px;border:1px solid var(--gold);background:linear-gradient(135deg,rgba(200,169,110,0.15),rgba(205,127,50,0.1));color:var(--gold);font-size:.85rem;font-weight:400;letter-spacing:2.5px;text-transform:uppercase;text-decoration:none;border-radius:2px;cursor:pointer;transition:all .4s ease;font-family:inherit;backdrop-filter:blur(6px);position:relative;overflow:hidden;"
+        onmouseenter="this.style.background='var(--gold)';this.style.color='var(--dark)';this.style.boxShadow='0 0 30px rgba(200,169,110,0.3)'"
+        onmouseleave="this.style.background='linear-gradient(135deg,rgba(200,169,110,0.15),rgba(205,127,50,0.1))';this.style.color='var(--gold)';this.style.boxShadow='none'">Let's Build Brand Demand</button>
+    </div>
+
+    <div class="hero-stats reveal delay-4">
+      <div class="stat">
+        <span class="stat-num" data-target="50">0</span>
+        <span class="stat-label">Countries</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="18">0</span>
+        <span class="stat-label">Years of Experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="3">0</span>
+        <span class="stat-label">Continental HQs</span>
+      </div>
+    </div>
+
+    <!-- Ticker -->
+    <div class="ticker-wrap reveal delay-5">
+      <div class="ticker-track">
+        <span class="ticker-item">NEURAL SUPPLY-CHAIN LOGIC</span>
+        <span class="ticker-item">◆</span>
+        <span class="ticker-item">REAL-TIME LIQUIDITY MONITORING</span>
+        <span class="ticker-item">◆</span>
+        <span class="ticker-item">AUTONOMOUS B2B INTERFACING</span>
+        <span class="ticker-item">◆</span>
+        <span class="ticker-item">PREDICTIVE DEMAND MODELING</span>
+        <span class="ticker-item">◆</span>
+        <span class="ticker-item">BLOCKCHAIN-VERIFIED TRACEABILITY</span>
+        <span class="ticker-item">◆</span>
+        <span class="ticker-item">ZERO-LATENCY GLOBAL DISTRIBUTION</span>
+        <span class="ticker-item">◆</span>
+        <span class="ticker-item">NEURAL SUPPLY-CHAIN LOGIC</span>
+        <span class="ticker-item">◆</span>
+        <span class="ticker-item">REAL-TIME LIQUIDITY MONITORING</span>
+        <span class="ticker-item">◆</span>
+        <span class="ticker-item">AUTONOMOUS B2B INTERFACING</span>
+        <span class="ticker-item">◆</span>
+        <span class="ticker-item">PREDICTIVE DEMAND MODELING</span>
+        <span class="ticker-item">◆</span>
+        <span class="ticker-item">BLOCKCHAIN-VERIFIED TRACEABILITY</span>
+        <span class="ticker-item">◆</span>
+        <span class="ticker-item">ZERO-LATENCY GLOBAL DISTRIBUTION</span>
+        <span class="ticker-item">◆</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── LOGIN MODAL ────────────────────────────────────────────────────── -->
+  <div id="login-modal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.4);justify-content:center;align-items:center;" onclick="if(event.target===this)this.style.display='none'">
+    <!-- Background Video -->
+    <video id="login-bg-video" muted loop playsinline preload="metadata" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.6;z-index:0;">
+      <source src="login-bg.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 70% at 50% 50%,transparent 20%,rgba(0,0,0,0.5) 100%);z-index:1;pointer-events:none;"></div>
+    <div style="background:rgba(20,20,20,0.88);border:1px solid var(--border);border-radius:4px;padding:48px 40px;width:380px;max-width:90vw;position:relative;z-index:2;backdrop-filter:blur(10px);">
+      <button onclick="document.getElementById('login-modal').style.display='none'" style="position:absolute;top:14px;right:18px;background:none;border:none;color:var(--gold);font-size:1.4rem;cursor:pointer;">&times;</button>
+      <h3 style="text-align:center;color:var(--gold);font-size:1.3rem;margin-bottom:8px;font-weight:300;letter-spacing:1px;">Commercial Framework</h3>
+      <p style="text-align:center;color:var(--muted);font-size:.8rem;margin-bottom:28px;">This document is confidential. Please authenticate to proceed.</p>
+      <div id="login-error" style="display:none;background:rgba(180,40,40,0.15);border:1px solid rgba(180,40,40,0.4);color:#e88;padding:10px 14px;margin-bottom:16px;font-size:.8rem;border-radius:2px;text-align:center;">Invalid credentials. Please try again.</div>
+      <form onsubmit="event.preventDefault();handleLogin();">
+        <label style="display:block;font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Email</label>
+        <input id="login-email" type="email" placeholder="you@company.com" style="width:100%;padding:10px 14px;margin-bottom:18px;background:var(--dark3);border:1px solid rgba(200,169,110,0.3);border-radius:2px;color:var(--text);font-size:.9rem;font-family:inherit;outline:none;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,169,110,0.3)'">
+        <label style="display:block;font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Password</label>
+        <input id="login-pass" type="password" placeholder="••••••••" style="width:100%;padding:10px 14px;margin-bottom:24px;background:var(--dark3);border:1px solid rgba(200,169,110,0.3);border-radius:2px;color:var(--text);font-size:.9rem;font-family:inherit;outline:none;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(200,169,110,0.3)'">
+        <button type="submit" style="width:100%;padding:12px;background:var(--gold);color:var(--dark);border:none;font-size:.8rem;font-weight:500;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-family:inherit;transition:background .3s;" onmouseenter="this.style.background='var(--gold-lt)'" onmouseleave="this.style.background='var(--gold)'">Access Framework</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ─── PROTECTED FRAMEWORK OVERLAY ────────────────────────────────────── -->
+  <div id="framework-overlay" style="display:none;position:fixed;inset:0;z-index:9998;background:var(--dark);">
+    <div style="position:fixed;top:0;left:0;right:0;z-index:10000;background:rgba(13,13,13,0.95);backdrop-filter:blur(14px);border-bottom:1px solid rgba(200,169,110,0.25);padding:12px 28px;display:flex;justify-content:space-between;align-items:center;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span style="font-size:.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:500;">Confidential</span>
+        <span style="color:rgba(200,169,110,0.3);">·</span>
+        <span style="font-size:.68rem;letter-spacing:1px;color:var(--muted);">Harvics × MAFI Commercial Engagement Framework</span>
+      </div>
+      <button onclick="document.getElementById('framework-overlay').style.display='none'" style="background:transparent;border:1px solid rgba(200,169,110,0.4);color:var(--gold);padding:6px 18px;font-size:.68rem;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-family:inherit;transition:all .3s;" onmouseenter="this.style.background='var(--gold)';this.style.color='var(--dark)'" onmouseleave="this.style.background='transparent';this.style.color='var(--gold)'">✕ Close</button>
+    </div>
+    <iframe id="framework-iframe" src="" style="width:100%;height:100%;border:none;padding-top:48px;" allowfullscreen></iframe>
+  </div>
+
+  <script>
+    function openLoginModal() {
+      if (typeof pauseAudio === 'function') { pauseAudio(); }
+      else { var a = document.getElementById('bg-audio'); if (a) a.pause(); }
+      document.getElementById('login-modal').style.display = 'flex';
+      var v = document.getElementById('login-bg-video');
+      if (v && v.readyState < 2 && !v.dataset.preloaded) {
+        v.load();
+        v.dataset.preloaded = '1';
+      }
+      if (v) { v.play().catch(function(){}); }
+    }
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(function() {
+        var preloadVideo = document.getElementById('login-bg-video');
+        if (preloadVideo && preloadVideo.readyState === 0) preloadVideo.load();
+      });
+    }
+    function handleLogin(){
+      var email=document.getElementById('login-email').value.trim();
+      var pass=document.getElementById('login-pass').value;
+      // Credentials: mafi@harvics.com / Harvics2026
+      if(email==='mafi@harvics.com' && pass==='Harvics2026'){
+        document.getElementById('login-error').style.display='none';
+        document.getElementById('login-modal').style.display='none';
+        // Stop background music permanently
+        if(typeof pauseAudio==='function'){pauseAudio();}else{var bgAud=document.getElementById('bg-audio');if(bgAud){bgAud.pause();}}
+        window._musicStoppedByLogin=true;
+        document.getElementById('framework-iframe').src='final-mafi.html';
+        document.getElementById('framework-overlay').style.display='block';
+        document.getElementById('login-email').value='';
+        document.getElementById('login-pass').value='';
+      } else {
+        document.getElementById('login-error').style.display='block';
+      }
+    }
+  </script>
+
+  <!-- ─── 02 ABOUT ──────────────────────────────────────────────────────────── -->
+  <section id="about">
+    <div class="reveal"><span class="section-tag">About Us</span></div>
+    <div class="reveal delay-1">
+      <h2>Global Brand &amp; Sourcing House<br>Built on 18 Years of Real Relationships</h2>
+    </div>
+    <div class="reveal delay-2">
+      <div class="divider"></div>
+    </div>
+    <div class="reveal delay-2">
+      <p style="max-width:680px;">
+        Harvics Global Ventures operates as a brand-forward sourcing company delivering end-to-end execution — from textile and FMCG sourcing to product development, quality assurance, and logistics — serving retailers and brand partners across <strong style="color:var(--gold)">50+ countries</strong>.
+      </p>
+    </div>
+
+    <div class="about-grid" style="margin-top:44px;">
+      <div class="about-card reveal-left delay-1">
+        <span class="num">01</span>
+        <h3>🌍&nbsp; London · Milan · New York</h3>
+        <p>Three continental headquarters placing us at the heart of the world's most important retail trade corridors.</p>
+      </div>
+      <div class="about-card reveal-right delay-2">
+        <span class="num">02</span>
+        <h3>📅&nbsp; 18 Years of Operations</h3>
+        <p>Eighteen years of building genuine relationships with suppliers and buyers — not databases, but trusted networks across 50+ countries.</p>
+      </div>
+      <div class="about-card reveal-left delay-3">
+        <span class="num">03</span>
+        <h3>🏅&nbsp; Certified to Global Standards</h3>
+        <p>ISO 9001 · HACCP · BRCGS · Halal · Kosher — every certification required to enter the world's most regulated markets.</p>
+      </div>
+      <div class="about-card reveal-right delay-4">
+        <span class="num">04</span>
+        <h3>⚡&nbsp; Principal Buyer Model</h3>
+        <p>We act as principal buyers in most cases — clean transactions, no brokers, no approval chains.</p>
+      </div>
+    </div>
+
+    <div class="cert-badges reveal delay-5" style="margin-top:36px;">
+      <span class="badge">ISO 9001</span>
+      <span class="badge">HACCP</span>
+      <span class="badge">BRCGS</span>
+      <span class="badge">Halal</span>
+      <span class="badge">Kosher</span>
+    </div>
+  </section>
+
+  <!-- ─── 03 MARKET ACCESS ──────────────────────────────────────────────────── -->
+  <section id="markets">
+    <div class="reveal"><span class="section-tag">Global Network</span></div>
+    <div class="reveal delay-1">
+      <h2>Our Network Is Your Market Access</h2>
+    </div>
+    <div class="reveal delay-2"><div class="divider"></div></div>
+    <div class="reveal delay-2">
+      <p style="max-width:640px;">171+ pre-qualified buyers across six major global markets — decades of relationship-building converted into immediate access for brand partners. These relationships took years to build. Your brand leverages them from day one.</p>
+    </div>
+    <div class="network-headline reveal delay-2">
+      <div class="net-stat"><div class="num">171+</div><div class="lbl">Active Contacts</div></div>
+      <div class="net-stat"><div class="num">6</div><div class="lbl">Major Markets</div></div>
+      <div class="net-stat"><div class="num">90</div><div class="lbl">Days to Access</div></div>
+      <div class="net-stat"><div class="num">65K+</div><div class="lbl">UK Retail Points</div></div>
+    </div>
+    <div class="markets-grid reveal delay-3">
+      <div class="market-row">
+        <div class="market-count">42</div>
+        <div class="market-info">
+          <h3>🇬🇧 United Kingdom</h3>
+          <p>Major wholesale networks, independent grocers, ethnic food chains, national distributors. 65,000+ retail points. Actively seeking citrus concentrates, frozen fruits, specialty ingredients — every week.</p>
+        </div>
+      </div>
+      <div class="market-row">
+        <div class="market-count">38</div>
+        <div class="market-info">
+          <h3>🇮🇹🇪🇸 Italy &amp; Spain</h3>
+          <p>Food manufacturers, beverage producers, retail private label programs. Require tomato concentrates, fruit purées, and premium ingredients at industrial scale.</p>
+        </div>
+      </div>
+      <div class="market-row">
+        <div class="market-count">31</div>
+        <div class="market-info">
+          <h3>🇩🇪🇫🇷 Germany &amp; France</h3>
+          <p>Industrial buyers, retail chains, food service distributors. Some of Europe's most demanding quality standards — and we meet them. Industrial-scale annual supply contracts.</p>
+        </div>
+      </div>
+      <div class="market-row">
+        <div class="market-count">27</div>
+        <div class="market-info">
+          <h3>🇺🇸 United States</h3>
+          <p>Northeast corridor importers, wholesalers, ingredient buyers for major beverage and food manufacturing. Volume capacity to absorb significant tonnage immediately.</p>
+        </div>
+      </div>
+      <div class="market-row">
+        <div class="market-count">19</div>
+        <div class="market-info">
+          <h3>🌙 GCC &amp; Middle East</h3>
+          <p>Halal-certified procurement channels including Bestway. Egyptian origin is an advantage here — cultural trust translates to commercial preference. Premium retail and food service.</p>
+        </div>
+      </div>
+      <div class="market-row">
+        <div class="market-count">14</div>
+        <div class="market-info">
+          <h3>🌏 Asia-Pacific</h3>
+          <p>Emerging high-growth buyers including Bajco network. Fastest-growing markets actively seeking certified agri-food ingredients from reliable, established suppliers.</p>
+        </div>
+      </div>
+    </div>
+    <div class="speed-banner reveal delay-4">
+      <div class="text">Building these relationships from scratch takes <em>18–24 months</em> of travel, trade shows, sample cycles, failed negotiations, and slow trust-building. Through Harvics Global Ventures, brand and sourcing teams access all 171+ in just <em>90 days</em>.</div>
+      <div class="metric"><div class="big">$4M+</div><div class="sub">Lost per month of delay</div></div>
+    </div>
+  </section>
+
+  <!-- ─── 04 PRODUCTS ───────────────────────────────────────────────────────── -->
+  <section id="products">
+    <div class="reveal"><span class="section-tag">Portfolio</span></div>
+    <div class="reveal delay-1">
+      <h2>FMCG Categories &amp; Product Ranges</h2>
+    </div>
+    <div class="reveal delay-2"><div class="divider"></div></div>
+    <div class="reveal delay-2">
+      <p style="max-width:620px;">
+        Harvics Global Ventures structures FMCG portfolios for retail, wholesale, private label, and industrial buyers. Our range spans branded essentials, ingredient systems, and export-ready food lines built for global channels.
+      </p>
+    </div>
+
+        <div class="products-grid">
+      <div class="product-card reveal delay-1">
+        <img class="product-image" src="/mafi-presentation/FMCG%20Pictures/Beverages/Carbonated/carbonated%20(2).png" alt="Beverage category" loading="lazy" decoding="async" fetchpriority="low" />
+        <span class="product-icon">🍊</span>
+        <h3>Juice Bases &amp; Beverage Inputs</h3>
+      </div>
+      <div class="product-card reveal delay-2">
+        <img class="product-image" src="/mafi-presentation/FMCG%20Pictures/Culinary/Cooking%20Oil,%20Fats%20and%20Dressing/cooking%20oil%20-1.png" alt="Culinary category" loading="lazy" decoding="async" fetchpriority="low" />
+        <span class="product-icon">🍅</span>
+        <h3>Sauces, Pastes &amp; Savoury Bases</h3>
+      </div>
+      <div class="product-card reveal delay-3">
+        <img class="product-image" src="/mafi-presentation/FMCG%20Pictures/Frozen%20Foods/Frozen%20Meat/Gemini_Generated_Image_nnskgtnnskgtnnsk.png" alt="Frozen foods category" loading="lazy" decoding="async" fetchpriority="low" />
+        <span class="product-icon">❄️</span>
+        <h3>Frozen Fruits &amp; Vegetables</h3>
+      </div>
+      <div class="product-card reveal delay-4">
+        <img class="product-image" src="/mafi-presentation/FMCG%20Pictures/Confectionary/Sugar%20Candy/sugar%20candy%20-1%20(2).png" alt="Freeze dried and specialty category" loading="lazy" decoding="async" fetchpriority="low" />
+        <span class="product-icon">🌿</span>
+        <h3>Freeze-Dried Ingredients</h3>
+      </div>
+      <div class="product-card reveal delay-4">
+        <img class="product-image" src="/mafi-presentation/FMCG%20Pictures/Pastas/fusilli%20-1%20(2).png" alt="Fruit puree and culinary blends category" loading="lazy" decoding="async" fetchpriority="low" />
+        <span class="product-icon">🫐</span>
+        <h3>Fruit Purées &amp; Culinary Blends</h3>
+      </div>
+      <div class="product-card reveal delay-4">
+        <img class="product-image" src="/mafi-presentation/FMCG%20Pictures/Snacks/Fusion%20snacks/fusion%20snacks%20(2).png" alt="Private label FMCG category" loading="lazy" decoding="async" fetchpriority="low" />
+        <span class="product-icon">🥭</span>
+        <h3>Private Label FMCG Lines</h3>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ─── 04B DYNAMIC SHELF WALL ─────────────────────────────────────────── -->
+  <section id="shelf-wall">
+    <div class="reveal"><span class="section-tag">Retail Shelf Intelligence</span></div>
+    <div class="reveal delay-1">
+      <h2>Dynamic Shelf Wall</h2>
+    </div>
+    <div class="reveal delay-2"><div class="divider"></div></div>
+    <div class="reveal delay-2">
+      <p style="max-width:680px;">A live shelf simulation that mirrors category movement across beverage, culinary, frozen, confectionary, pasta, and snack lanes.</p>
+    </div>
+
+    <div class="shelf-wall-wrap reveal delay-3">
+      <div class="shelf-lane" data-lane="Beverages">
+        <div class="shelf-track">
+          <div class="shelf-pack">RTD</div><div class="shelf-pack pulse">Citrus</div><div class="shelf-pack">Sparkling</div><div class="shelf-pack">Zero</div><div class="shelf-pack">Hydrate</div><div class="shelf-pack">RTD</div><div class="shelf-pack">Citrus</div><div class="shelf-pack">Sparkling</div><div class="shelf-pack">Zero</div><div class="shelf-pack">Hydrate</div>
+        </div>
+      </div>
+      <div class="shelf-lane" data-lane="Culinary">
+        <div class="shelf-track">
+          <div class="shelf-pack">Paste</div><div class="shelf-pack">Sauce</div><div class="shelf-pack pulse">Ketchup</div><div class="shelf-pack">Marinade</div><div class="shelf-pack">Dressing</div><div class="shelf-pack">Paste</div><div class="shelf-pack">Sauce</div><div class="shelf-pack">Ketchup</div><div class="shelf-pack">Marinade</div><div class="shelf-pack">Dressing</div>
+        </div>
+      </div>
+      <div class="shelf-lane" data-lane="Frozen">
+        <div class="shelf-track">
+          <div class="shelf-pack">IQF Mix</div><div class="shelf-pack">Nuggets</div><div class="shelf-pack">Veg</div><div class="shelf-pack pulse">Fillet</div><div class="shelf-pack">Ready</div><div class="shelf-pack">IQF Mix</div><div class="shelf-pack">Nuggets</div><div class="shelf-pack">Veg</div><div class="shelf-pack">Fillet</div><div class="shelf-pack">Ready</div>
+        </div>
+      </div>
+      <div class="shelf-lane" data-lane="Confectionary">
+        <div class="shelf-track">
+          <div class="shelf-pack">Jelly</div><div class="shelf-pack pulse">Toffee</div><div class="shelf-pack">Candy</div><div class="shelf-pack">Pops</div><div class="shelf-pack">Gum</div><div class="shelf-pack">Jelly</div><div class="shelf-pack">Toffee</div><div class="shelf-pack">Candy</div><div class="shelf-pack">Pops</div><div class="shelf-pack">Gum</div>
+        </div>
+      </div>
+      <div class="shelf-lane" data-lane="Snacks & Pasta">
+        <div class="shelf-track">
+          <div class="shelf-pack">Fusilli</div><div class="shelf-pack">Farfalle</div><div class="shelf-pack">Chips</div><div class="shelf-pack pulse">Fusion</div><div class="shelf-pack">Savory</div><div class="shelf-pack">Fusilli</div><div class="shelf-pack">Farfalle</div><div class="shelf-pack">Chips</div><div class="shelf-pack">Fusion</div><div class="shelf-pack">Savory</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 04C ROUTE TO MARKET MAP ────────────────────────────────────────── -->
+  <section id="rtm-map">
+    <div class="reveal"><span class="section-tag">Distribution Engine</span></div>
+    <div class="reveal delay-1">
+      <h2>Route-to-Market Flow Map</h2>
+    </div>
+    <div class="reveal delay-2"><div class="divider"></div></div>
+    <div class="reveal delay-2">
+      <p style="max-width:700px;">From source facilities to destination shelves, this flow highlights the exact commercial chain we manage in real time.</p>
+    </div>
+
+    <div class="rtm-wrap reveal delay-3">
+      <div class="rtm-grid">
+        <div class="rtm-node" data-node="1"><div class="n-title">Source</div><div class="n-sub">Factory Origin</div></div>
+        <div class="rtm-edge" aria-hidden="true"></div>
+        <div class="rtm-node" data-node="2"><div class="n-title">Consolidation</div><div class="n-sub">Hub Packing</div></div>
+        <div class="rtm-edge" aria-hidden="true"></div>
+        <div class="rtm-node" data-node="3"><div class="n-title">Port & Freight</div><div class="n-sub">Export Lanes</div></div>
+      </div>
+      <div class="rtm-grid" style="margin-top:10px;">
+        <div class="rtm-node" data-node="4"><div class="n-title">Customs</div><div class="n-sub">Docs + Clearance</div></div>
+        <div class="rtm-edge" aria-hidden="true"></div>
+        <div class="rtm-node" data-node="5"><div class="n-title">DC Network</div><div class="n-sub">Inventory Sync</div></div>
+        <div class="rtm-edge" aria-hidden="true"></div>
+        <div class="rtm-node" data-node="6"><div class="n-title">Retail Shelf</div><div class="n-sub">Sell-Through</div></div>
+      </div>
+      <div class="rtm-kpis">
+        <div class="rtm-kpi"><div class="kpi-v">99%</div><div class="kpi-l">OTIF</div></div>
+        <div class="rtm-kpi"><div class="kpi-v">48h</div><div class="kpi-l">Response SLA</div></div>
+        <div class="rtm-kpi"><div class="kpi-v">171+</div><div class="kpi-l">Buyer Links</div></div>
+        <div class="rtm-kpi"><div class="kpi-v">50+</div><div class="kpi-l">Countries</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 05 HOW WE WORK ────────────────────────────────────────────────────── -->
+  <section id="process">
+    <div class="reveal"><span class="section-tag">How We Work</span></div>
+    <div class="reveal delay-1">
+      <h2>How We Work</h2>
+    </div>
+    <div class="reveal delay-2"><div class="divider"></div></div>
+    <div class="reveal delay-2">
+      <p style="max-width:620px;">
+        Harvics Global Ventures operates as a brand-and-sourcing partner at every stage — reducing complexity, protecting quality, and ensuring that product, packaging, compliance, and delivery align with target-market demand.
+      </p>
+    </div>
+
+    <div class="process-steps" style="margin-top:52px;">
+      <div class="step reveal delay-1">
+        <div class="step-num"><span>1</span></div>
+        <h3>Sourcing</h3>
+        <p>Identifying and qualifying suppliers globally</p>
+      </div>
+      <div class="step reveal delay-2">
+        <div class="step-num"><span>2</span></div>
+        <h3>Product Development</h3>
+        <p>Aligning specifications and compliance review</p>
+      </div>
+      <div class="step reveal delay-3">
+        <div class="step-num"><span>3</span></div>
+        <h3>Quality Assurance</h3>
+        <p>Third-party inspection and issuance of international certifications</p>
+      </div>
+      <div class="step reveal delay-4">
+        <div class="step-num"><span>4</span></div>
+        <h3>Procurement</h3>
+        <p>Executing principal purchase orders</p>
+      </div>
+      <div class="step reveal delay-5">
+        <div class="step-num"><span>5</span></div>
+        <h3>Logistics</h3>
+        <p>End-to-end shipping and customs management</p>
+      </div>
+      <div class="step reveal delay-6">
+        <div class="step-num"><span>6</span></div>
+        <h3>Delivery</h3>
+        <p>Last-mile distribution for retail and industrial buyers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 06 CERTIFICATIONS ─────────────────────────────────────────────────── -->
+  <section id="certs">
+    <div class="reveal"><span class="section-tag">Certifications &amp; Compliance</span></div>
+    <div class="reveal delay-1">
+      <h2>We Hold the Keys<br>to Every Market</h2>
+    </div>
+    <div class="reveal delay-2"><div class="divider"></div></div>
+    <div class="reveal delay-2">
+      <p style="max-width:640px;">Every market has gatekeepers. Every buyer has requirements. Harvics Global Ventures builds category access through compliance, documentation, and disciplined supplier qualification — the foundation behind premium positioning and repeatable buyer trust.</p>
+    </div>
+    <div class="certs-grid reveal delay-2">
+      <div class="cert-block">
+        <span class="icon">📋</span>
+        <h3>ISO 9001:2015</h3>
+        <p>International quality management standard. Signals operational maturity — documented processes, consistent procedures, audit-ready operations.</p>
+      </div>
+      <div class="cert-block">
+        <span class="icon">🛡️</span>
+        <h3>HACCP</h3>
+        <p>Hazard Analysis Critical Control Points — mandatory for EU and UK food imports. Without it, doors remain closed. With it, conversations begin.</p>
+      </div>
+      <div class="cert-block">
+        <span class="icon">🏪</span>
+        <h3>BRC Global Standard</h3>
+        <p>Required by major UK supermarket chains. Our BRC certification means access to buyers representing billions in annual purchasing revenue.</p>
+      </div>
+      <div class="cert-block">
+        <span class="icon">🌙</span>
+        <h3>Halal Certified</h3>
+        <p>Essential for GCC, Middle East, and Muslim-majority markets globally. Required by Bestway and regional premium retailers. We provide it.</p>
+      </div>
+      <div class="cert-block">
+        <span class="icon">✡️</span>
+        <h3>Kosher Certified</h3>
+        <p>Opens Jewish consumer markets globally. Signals premium positioning in US and European markets where Kosher is associated with quality.</p>
+      </div>
+    </div>
+    <div class="protocol-grid reveal delay-3">
+      <div class="protocol-step"><div class="step-num">01</div><h4>Pre-Production Audit</h4><p>Compliance audit of MAFI facilities and documentation before production begins</p></div>
+      <div class="protocol-step"><div class="step-num">02</div><h4>Third-Party Inspection</h4><p>Every shipment inspected before departure from Egypt — zero compromise</p></div>
+      <div class="protocol-step"><div class="step-num">03</div><h4>In-Market Verification</h4><p>Receiving inspection and quality verification at destination warehouse</p></div>
+      <div class="protocol-step"><div class="step-num">04</div><h4>Buyer Feedback Loop</h4><p>Continuous improvement signals fed back directly to MAFI production team</p></div>
+      <div class="protocol-step"><div class="step-num">05</div><h4>Full Traceability</h4><p>Complete documentation for regulatory compliance across all destination markets</p></div>
+    </div>
+  </section>
+
+  <!-- ─── 07 WHY FIT ────────────────────────────────────────────────────────── -->
+  <section id="fit">
+    <div class="reveal"><span class="section-tag">Strategic Fit</span></div>
+    <div class="reveal delay-1">
+      <h2>Why Brand-Led Sourcing Wins</h2>
+    </div>
+    <div class="reveal delay-2"><div class="divider"></div></div>
+
+    <div class="fit-inner reveal delay-3">
+      <p style="font-size:1rem; color:var(--text);">
+        The strongest FMCG models combine three things: reliable source markets, disciplined commercial structure, and buyer-ready execution. That is where Harvics Global Ventures is built to operate.
+      </p>
+      <ul class="fit-list">
+        <li>Brand-first category thinking instead of pure trading language</li>
+        <li>Buyer-ready compliance and sourcing discipline</li>
+        <li>Competitive source-market leverage with global routing</li>
+        <li>Scalable volumes for retail, wholesale, and industrial demand</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─── 08 PARTNERSHIP MODEL ──────────────────────────────────────────────── -->
+  <section id="partnership">
+    <div class="reveal"><span class="section-tag">Commercial Model</span></div>
+    <div class="reveal delay-1">
+      <h2>Commercial Model</h2>
+    </div>
+    <div class="reveal delay-2"><div class="divider"></div></div>
+    <div class="reveal delay-2">
+      <p style="max-width:620px;">
+        Harvics Global Ventures operates through a structured sourcing and market-access model — transparent, scalable, and built for long-term brand growth.
+      </p>
+    </div>
+
+    <div class="phases">
+      <div class="phase-card reveal delay-1">
+        <div class="phase-num">Phase 1</div>
+        <h3>Alignment</h3>
+        <p>Product review, compliance audit, and category selection. Agreement on initial SKUs and target markets.</p>
+      </div>
+      <div class="phase-card reveal delay-2">
+        <div class="phase-num">Phase 2</div>
+        <h3>Trial Order</h3>
+        <p>Execution of first principal purchase order. Third-party inspection, shipping, and in-market delivery.</p>
+      </div>
+      <div class="phase-card reveal delay-3">
+        <div class="phase-num">Phase 3</div>
+        <h3>Expansion</h3>
+        <p>Expanding SKU range, increasing volumes, and activating additional market corridors based on performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 09 NEXT STEPS ─────────────────────────────────────────────────────── -->
+  <section id="nextsteps">
+    <div class="reveal"><span class="section-tag">Action Plan</span></div>
+    <div class="reveal delay-1">
+      <h2>Next Steps</h2>
+    </div>
+    <div class="reveal delay-2"><div class="divider"></div></div>
+
+    <div class="steps-grid">
+      <div class="next-card reveal-left delay-1">
+        <div class="next-num"><span>1</span></div>
+        <div>
+          <h3>Share Portfolio &amp; Product Range</h3>
+          <p>Send your current catalogue, specifications, certifications, and available annual volumes for category review.</p>
+        </div>
+      </div>
+      <div class="next-card reveal-right delay-2">
+        <div class="next-num"><span>2</span></div>
+        <div>
+          <h3>Schedule Category Review Call</h3>
+          <p>A 45-minute working session with our sourcing and compliance team to assess positioning, market fit, and buyer readiness.</p>
+        </div>
+      </div>
+      <div class="next-card reveal-left delay-3">
+        <div class="next-num"><span>3</span></div>
+        <div>
+          <h3>Receive Commercial Framework</h3>
+          <p>Harvics Global Ventures issues a non-binding framework outlining pricing logic, target channels, and rollout priorities within 5 business days.</p>
+        </div>
+      </div>
+      <div class="next-card reveal-right delay-4">
+        <div class="next-num"><span>4</span></div>
+        <div>
+          <h3>Launch Pilot Program</h3>
+          <p>First pilot order or category activation — the start of a scalable global sourcing relationship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Mafi PARTNERSHIP ──────────────────────────────────────────────────── -->
+  <section id="mafi" style="background: rgba(10,8,5,0.75); backdrop-filter: blur(2px); padding-right: 120px;">
+
+    <div class="reveal"><span class="section-tag">FMCG Platform</span></div>
+    <div class="reveal delay-1">
+      <h2>Harvics Global Ventures<br>Brand-Led FMCG Sourcing. Global Reach.</h2>
+    </div>
+    <div class="reveal delay-2"><div class="divider"></div></div>
+
+    <!-- Mafi Facility Stats -->
+    <div class="reveal delay-2">
+      <p style="max-width:720px; margin-bottom:44px;">
+        Harvics Global Ventures is built as a brand-and-sourcing platform for FMCG categories that need structure, compliance, route-to-market clarity, and trusted execution. We combine buyer access, sourcing intelligence, and operational discipline into one commercial engine.
+      </p>
+    </div>
+
+    <div class="about-grid reveal delay-3" style="margin-bottom:60px;">
+      <div class="about-card" style="background:rgba(13,11,8,0.72); border-color:rgba(200,169,110,0.5);">
+        <span class="num shimmer-number">171+</span>
+        <h3>Active Buyer Links</h3>
+        <p>Pre-qualified buyer relationships across key FMCG channels, wholesale programs, and industrial food categories.</p>
+      </div>
+      <div class="about-card" style="background:rgba(13,11,8,0.72); border-color:rgba(200,169,110,0.5);">
+        <span class="num shimmer-number">50+</span>
+        <h3>Countries Served</h3>
+        <p>Retail, food-service, and ingredient markets served through structured sourcing and export-ready documentation.</p>
+      </div>
+      <div class="about-card" style="background:rgba(13,11,8,0.72); border-color:rgba(200,169,110,0.5);">
+        <span class="num shimmer-number">18</span>
+        <h3>Years of Market Trust</h3>
+        <p>Commercial relationships built across category buyers, sourcing desks, and import-distribution channels.</p>
+      </div>
+      <div class="about-card" style="background:rgba(13,11,8,0.72); border-color:rgba(200,169,110,0.5);">
+        <span class="num shimmer-number">3</span>
+        <h3>Commercial Hubs</h3>
+        <p>London, Milan, and New York give Harvics Global Ventures strategic access to major FMCG trade corridors.</p>
+      </div>
+    </div>
+
+    <!-- Product Categories -->
+    <div class="reveal"><span class="section-tag">Product Portfolio</span></div>
+    <div class="reveal delay-1" style="margin-bottom:40px;">
+      <h3 style="font-size:1.3rem; font-weight:300; color:var(--gold-lt);">Core ranges built for brand growth, private label, and high-trust sourcing channels.</h3>
+    </div>
+
+    <div class="products-grid reveal delay-2" style="margin-bottom:60px;">
+      <div class="product-card" style="background:rgba(13,11,8,0.72); border-color:rgba(200,169,110,0.5);">
+        <div class="product-icon">🍊</div>
+        <h3>Juice Bases &amp; Beverage Inputs</h3>
+        <p>Orange, lemon, grapefruit, and beverage ingredients routed to manufacturers, food service, and branded drink programs.</p>
+      </div>
+      <div class="product-card" style="background:rgba(13,11,8,0.72); border-color:rgba(200,169,110,0.5);">
+        <div class="product-icon">🍅</div>
+        <h3>Sauces &amp; Savoury Bases</h3>
+        <p>Tomato concentrates, culinary inputs, and industrial food-service formats for manufacturers and private-label buyers.</p>
+      </div>
+      <div class="product-card" style="background:rgba(13,11,8,0.72); border-color:rgba(200,169,110,0.5);">
+        <div class="product-icon">❄️</div>
+        <h3>Frozen Fruits &amp; Vegetables</h3>
+        <p>Retail-ready and industrial frozen formats for food service, ingredient supply, and modern trade programs.</p>
+      </div>
+      <div class="product-card" style="background:rgba(13,11,8,0.72); border-color:rgba(200,169,110,0.5);">
+        <div class="product-icon">🌿</div>
+        <h3>Freeze-Dried &amp; Specialty Lines</h3>
+        <p>Premium freeze-dried and specialty products for wellness brands, snack innovation, and premium retail concepts.</p>
+      </div>
+    </div>
+
+    <!-- Why This Works -->
+    <div class="reveal"><span class="section-tag">Why This Model Works</span></div>
+    <div class="reveal delay-1" style="margin-bottom:40px;">
+      <h3 style="font-size:1.3rem; font-weight:300; color:var(--gold-lt);">Commercial intelligence, sourcing discipline, and market access working as one system.</h3>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-bottom:60px;">
+      <div class="about-card reveal-left delay-1" style="background:rgba(13,11,8,0.72); border-color:rgba(200,169,110,0.5);">
+        <span class="num" style="font-size:2rem;">🏭</span>
+        <h3>Brand &amp; Product Strengths</h3>
+        <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:8px; margin-top:12px;">
+          <li style="font-size:.85rem; color:var(--muted);">✦ &nbsp;Clear product story and category relevance</li>
+          <li style="font-size:.85rem; color:var(--muted);">✦ &nbsp;Export-capable sourcing base</li>
+          <li style="font-size:.85rem; color:var(--muted);">✦ &nbsp;Flexible formats for retail and industrial demand</li>
+          <li style="font-size:.85rem; color:var(--muted);">✦ &nbsp;Brand and private-label potential</li>
+          <li style="font-size:.85rem; color:var(--muted);">✦ &nbsp;Scalable supply for multi-market rollout</li>
+        </ul>
+      </div>
+      <div class="about-card reveal-right delay-2" style="background:rgba(13,11,8,0.72); border-color:rgba(200,169,110,0.5);">
+        <span class="num" style="font-size:2rem;">🌍</span>
+        <h3>Harvics Global Ventures Strengths</h3>
+        <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:8px; margin-top:12px;">
+          <li style="font-size:.85rem; color:var(--muted);">✦ &nbsp;Established buyer relationships in target markets</li>
+          <li style="font-size:.85rem; color:var(--muted);">✦ &nbsp;Category-led sourcing and positioning</li>
+          <li style="font-size:.85rem; color:var(--muted);">✦ &nbsp;International quality standards expertise</li>
+          <li style="font-size:.85rem; color:var(--muted);">✦ &nbsp;Market intelligence and demand forecasting</li>
+          <li style="font-size:.85rem; color:var(--muted);">✦ &nbsp;End-to-end logistics orchestration</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Partnership Phases -->
+    <div class="reveal"><span class="section-tag">Growth Roadmap</span></div>
+    <div class="reveal delay-1" style="margin-bottom:40px;">
+      <h3 style="font-size:1.3rem; font-weight:300; color:var(--gold-lt);">A phased approach built for speed, certainty, and scalable market entry.</h3>
+    </div>
+
+    <div class="phases reveal delay-2" style="margin-bottom:60px; counter-reset:phase;">
+      <div class="phase-card" style="background:rgba(13,11,8,0.72); border-color:rgba(200,169,110,0.5);">
+        <div class="phase-num">Phase 01 — Category Alignment</div>
+        <h3>Market Entry</h3>
+        <p>Align category focus, pricing architecture, compliance readiness, and buyer fit. No random outreach — structured introductions from day one.</p>
+      </div>
+      <div class="phase-card" style="background:rgba(13,11,8,0.72); border-color:rgba(200,169,110,0.5);">
+        <div class="phase-num">Phase 02 — Buyer Activation</div>
+        <h3>Volume Scaling</h3>
+        <p>Activate trial opportunities, route product into the right buyer class, and convert sourcing conversations into executed commercial lanes.</p>
+      </div>
+      <div class="phase-card" style="background:rgba(13,11,8,0.72); border-color:rgba(200,169,110,0.5);">
+        <div class="phase-num">Phase 03 — Scale &amp; Expansion</div>
+        <h3>Strategic Growth</h3>
+        <p>Scale proven categories, expand market coverage, and turn sourcing execution into long-term brand and private-label growth.</p>
+      </div>
+    </div>
+
+    <!-- Value Proposition -->
+    <div class="reveal"><span class="section-tag">Value for Brand Partners</span></div>
+    <div class="steps-grid reveal delay-1">
+      <div class="next-card">
+        <div class="next-num"><span>01</span></div>
+        <div>
+          <h3 style="font-size:.9rem; margin-bottom:6px;">Bypass Years of Market Development</h3>
+          <p style="font-size:.82rem; color:var(--muted);">Leverage existing buyer relationships — skip the cold outreach and relationship-building phase entirely.</p>
+        </div>
+      </div>
+      <div class="next-card">
+        <div class="next-num"><span>02</span></div>
+        <div>
+          <h3 style="font-size:.9rem; margin-bottom:6px;">Reduce Market Entry Risk</h3>
+          <p style="font-size:.82rem; color:var(--muted);">Work with a sourcing platform that understands compliance, logistics, and buyer dynamics in target markets.</p>
+        </div>
+      </div>
+      <div class="next-card">
+        <div class="next-num"><span>03</span></div>
+        <div>
+          <h3 style="font-size:.9rem; margin-bottom:6px;">Focus on Product Excellence</h3>
+          <p style="font-size:.82rem; color:var(--muted);">Let Harvics Global Ventures handle market access and distribution complexity while your team concentrates on product and supply performance.</p>
+        </div>
+      </div>
+      <div class="next-card">
+        <div class="next-num"><span>04</span></div>
+        <div>
+          <h3 style="font-size:.9rem; margin-bottom:6px;">Accelerate Revenue Readiness</h3>
+          <p style="font-size:.82rem; color:var(--muted);">Build buyer readiness early so product can move faster once sourcing and production are fully aligned.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ─── H × M = B² FORMULA ─────────────────────────────────────────────── -->
+  <section id="formula">
+    <div class="reveal"><span class="section-tag">The Equation</span></div>
+    <div class="reveal delay-1">
+      <div class="formula-eq">B × S = G²</div>
+    </div>
+    <div class="reveal delay-2">
+      <p class="formula-tagline">This is not addition. When brand clarity meets sourcing discipline, results multiply — across buyer access, market fit, and commercial growth.</p>
+    </div>
+    <div class="formula-grid reveal delay-3">
+      <div class="formula-block">
+        <div class="letter">B</div>
+        <h3>Brand</h3>
+        <p>Clear category identity, commercial positioning, and product-market fit. A strong brand or product line creates demand only when it is structured for the right buyer and the right shelf.</p>
+      </div>
+      <div class="formula-op">×</div>
+      <div class="formula-block">
+        <div class="letter">S</div>
+        <h3>Sourcing</h3>
+        <p>Disciplined supplier selection, compliance, logistics, and buyer access. Sourcing is where commercial strategy becomes executable, repeatable, and scalable across global channels.</p>
+      </div>
+      <div class="formula-op">=</div>
+      <div class="formula-block">
+        <div class="letter">G²</div>
+        <h3>Growth Squared</h3>
+        <p>When brand and sourcing operate as one system, every input amplifies the other. Product becomes market-ready. Access becomes revenue. Potential becomes repeatable growth.</p>
+      </div>
+    </div>
+    <div class="reveal delay-4" style="text-align:center">
+      <div class="formula-proof">Proof of concept: buyer access · sourcing discipline · route-to-market execution</div>
+    </div>
+  </section>
+
+  <section id="cta">
+    <div class="reveal">
+      <h2 class="cta-title">Let's Build Something Global Together</h2>
+    </div>
+    <div class="reveal delay-1">
+      <p class="cta-sub">
+        Harvics Global Ventures is ready to operate as your brand-and-sourcing partner — turning product capability into global FMCG market access.
+      </p>
+    </div>
+    <div class="contact-row reveal delay-2">
+      <div class="contact-item">
+        <span class="contact-icon">📧</span>
+        <span class="contact-label">Email</span>
+        <span class="contact-value">partnerships@harvics.com</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">🌐</span>
+        <span class="contact-label">Website</span>
+        <span class="contact-value">www.harvics.com</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <span class="contact-label">Offices</span>
+        <span class="contact-value">London · Milan · New York</span>
+      </div>
+    </div>
+    <div class="reveal delay-3">
+      <a href="mailto:partnerships@harvics.com" class="cta-btn">Start the Conversation</a>
+    </div>
+    <div class="reveal delay-4">
+      <div class="footer-logo">Harvics Global Ventures</div>
+    </div>
+  </section>
+
+  <!-- ─── Audio ─────────────────────────────────────────────────────────────── -->
+  <audio id="welcome-audio" preload="metadata" style="display:none">
+    <source src="mafi_welcome_arabic.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="bg-audio" loop preload="metadata" style="display:none">
+    <source src="music_light.mp3" type="audio/mpeg">
+  </audio>
+
+<!-- ─── Music Player UI ──────────────────────────────────────────────────────── -->
+  <div id="music-player" class="paused">
+    <button id="music-toggle" aria-label="Play/Pause music"></button>
+    <button id="music-mute" aria-label="Mute/Unmute">
+      <svg id="mute-icon" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+    </button>
+    <div class="wave-bars">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="music-info">
+      <span class="music-title">Harvics Global Ventures</span>
+      <span class="music-sub">Authentic Egyptian Music</span>
+    </div>
+    <div id="vol-wrap">
+      <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+      <input type="range" id="vol-slider" min="0" max="100" value="35">
+    </div>
+  </div>
+
+  <!-- ─── Scripts ───────────────────────────────────────────────────────────── -->
+  <script>
+    /* ── Particle system ─────────────────────────────────────────────────────── */
+    const canvas = document.getElementById('particles');
+    const ctx    = canvas.getContext('2d');
+
+    function resize() {
+      canvas.width  = window.innerWidth;
+      canvas.height = document.documentElement.scrollHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    const reduceMotionPref = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const lowPowerDevice = (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4) || (window.innerWidth < 900);
+    const PARTICLE_COUNT = reduceMotionPref ? 16 : (lowPowerDevice ? 36 : 64);
+    const particles = Array.from({ length: PARTICLE_COUNT }, () => ({
+      x:  Math.random() * canvas.width,
+      y:  Math.random() * canvas.height,
+      r:  Math.random() * 1.4 + 0.3,
+      dx: (Math.random() - .5) * .3,
+      dy: (Math.random() - .5) * .3,
+      a:  Math.random() * .4 + .05,
+    }));
+
+    let particlesActive = true;
+    function drawParticles() {
+      if (!particlesActive) {
+        requestAnimationFrame(drawParticles);
+        return;
+      }
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(200,169,110,${p.a})`;
+        ctx.fill();
+        p.x += p.dx;
+        p.y += p.dy;
+        if (p.x < 0 || p.x > canvas.width)  p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height)  p.dy *= -1;
+      });
+      requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+    document.addEventListener('visibilitychange', () => {
+      particlesActive = document.visibilityState === 'visible';
+    });
+
+    /* ── Scroll-reveal ───────────────────────────────────────────────────────── */
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    revealEls.forEach(el => io.observe(el));
+
+    /* ── Cinematic background crossfade ─────────────────────────────────────── */
+    const bgLayers  = document.querySelectorAll('#cinema-bg .bg-layer');
+    const sections  = document.querySelectorAll('section');
+    // map section index → bg layer index (10 sections → 10 layers)
+    let activeBg = 0;
+
+    function updateCinema() {
+      const scrollY   = window.scrollY;
+      const winH      = window.innerHeight;
+
+      // Find which section centre is closest to mid-screen
+      let closest = 0;
+      let closestDist = Infinity;
+      sections.forEach((sec, i) => {
+        const rect  = sec.getBoundingClientRect();
+        const mid   = rect.top + rect.height / 2;
+        const dist  = Math.abs(mid - winH / 2);
+        if (dist < closestDist) { closestDist = dist; closest = i; }
+      });
+
+      const target = Math.min(closest, bgLayers.length - 1);
+
+      if (target !== activeBg) {
+        bgLayers[activeBg].classList.remove('active');
+        bgLayers[target].classList.add('active');
+        activeBg = target;
+      }
+    }
+
+    /* ── Scroll work (batched in rAF) ───────────────────────────────────────── */
+    const bar = document.getElementById('progress-bar');
+    let scrollTicking = false;
+    function runScrollWork() {
+      scrollTicking = false;
+      updateCinema();
+      const total = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+      const pct = (window.scrollY / total) * 100;
+      if (bar) bar.style.width = pct + '%';
+      const newH = document.documentElement.scrollHeight;
+      if (canvas.height !== newH) canvas.height = newH;
+    }
+    function onScrollBatched() {
+      if (scrollTicking) return;
+      scrollTicking = true;
+      requestAnimationFrame(runScrollWork);
+    }
+    window.addEventListener('scroll', onScrollBatched, { passive: true });
+    window.addEventListener('resize', onScrollBatched, { passive: true });
+    runScrollWork();
+
+    /* ── Counter animation for stats ─────────────────────────────────────────── */
+    function animateCounter(el, target, suffix) {
+      let current = 0;
+      const step  = Math.ceil(target / 50);
+      const timer = setInterval(() => {
+        current = Math.min(current + step, target);
+        el.textContent = current + suffix;
+        if (current >= target) clearInterval(timer);
+      }, 30);
+    }
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const nums = e.target.querySelectorAll('.stat-num');
+          const data = [
+            { target: 40, suffix: '+' },
+            { target: 15, suffix: '' },
+            { target:  5, suffix: '' },
+            { target:  3, suffix: '' },
+          ];
+          nums.forEach((el, i) => {
+            if (data[i]) animateCounter(el, data[i].target, data[i].suffix);
+          });
+          statsObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: .5 });
+
+    const heroStats = document.querySelector('.hero-stats');
+    if (heroStats) statsObserver.observe(heroStats);
+
+    const cards = document.querySelectorAll('.about-card, .market-card, .product-card, .cert-card, .phase-card, .next-card');
+
+    const allowTilt = !reduceMotionPref && window.matchMedia('(hover: hover)').matches && window.matchMedia('(pointer: fine)').matches && window.innerWidth > 1024;
+    cards.forEach(card => {
+      // Add shimmer layer
+      const shimmer = document.createElement('div');
+      shimmer.className = 'shimmer-layer';
+      card.appendChild(shimmer);
+
+      if (!allowTilt) return;
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = ((y - centerY) / centerY) * -8; // Max 8 deg
+        const rotateY = ((x - centerX) / centerX) * 8;
+        
+        card.style.transition = 'transform 0.1s ease-out, box-shadow 0.1s ease-out';
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+        card.style.boxShadow = `${-rotateY}px ${rotateX}px 20px rgba(200,169,110,0.15)`;
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        card.style.transition = 'transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.5s cubic-bezier(0.23, 1, 0.32, 1)';
+        card.style.transform = '';
+        card.style.boxShadow = '';
+      });
+    });
+
+    /* ── Music player ─────────────────────────────────────────────────────────── */
+    const audio      = document.getElementById('bg-audio');
+    const toggleBtn  = document.getElementById('music-toggle');
+    const player     = document.getElementById('music-player');
+    const volSlider  = document.getElementById('vol-slider');
+
+    const iconPlay = `<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>`;
+    const iconPause= `<svg viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`;
+
+    audio.volume = 0.25;
+    if (volSlider) volSlider.value = 55;
+
+    const muteBtn = document.getElementById('music-mute');
+    const muteIcon = document.getElementById('mute-icon');
+    const iconMuted = `<path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>`;
+    const iconUnmuted = `<path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>`;
+    let muted = false;
+
+    if (muteBtn) {
+      muteBtn.addEventListener('click', () => {
+        muted = !muted;
+        audio.muted = muted;
+        muteIcon.innerHTML = muted ? iconMuted : iconUnmuted;
+        muteBtn.style.borderColor = muted ? 'rgba(200,169,110,0.7)' : 'rgba(200,169,110,0.3)';
+      });
+    }
+
+    function playAudio() {
+      if(window._musicStoppedByLogin) return;
+      audio.play().then(() => {
+        toggleBtn.innerHTML = iconPause;
+        player.classList.remove('paused');
+      }).catch(() => {});
+    }
+
+    function pauseAudio() {
+      audio.pause();
+      toggleBtn.innerHTML = iconPlay;
+      player.classList.add('paused');
+    }
+    window.pauseAudio = pauseAudio;
+
+    toggleBtn.addEventListener('click', () => {
+      if (audio.paused) { playAudio(); } else { pauseAudio(); }
+    });
+
+    volSlider && volSlider.addEventListener('input', () => {
+      audio.volume = volSlider.value / 100;
+    });
+
+    // Default state — play icon shown
+    toggleBtn.innerHTML = iconPlay;
+    player.classList.add('paused');
+
+    /* ── Music overlay handled by inline script above ── */
+
+    /* ── Chatbot ──────────────────────────────────────────────────────────────── */
+    /* ── Tour Guide Agent ────────────────────────────────────────────────────── */
+    const AGENT_NAME = 'Layla';
+
+    const TOUR_STEPS = [
+      { section: '#hero',       btn: 'Start Tour',   msg: `Welcome to the Harvics × Mafi presentation. I'm Layla, your personal guide. Harvics Global Ventures is a full-service FMCG buying house with 15 years of operations and offices in London, Milan, and New York. Shall I take you through the key sections?` },
+      { section: '#about',      btn: 'About Harvics', msg: `Harvics is not a broker — we act as principal buyers. That means clean transactions, no middlemen, no approval chains. We've built genuine relationships with suppliers and buyers across 40+ countries over 15 years. 4 continental offices. 5 international certifications.` },
+      { section: '#markets',    btn: 'Our Markets',  msg: `We operate across three continents. In Europe — UK, Italy, Germany, France. In the Americas — US importers and major retail buyers through our New York hub. And a growing Middle East & Asia network. Mafi's products slot directly into our existing distribution flows.` },
+      { section: '#products',   btn: 'Products',     msg: `Our product portfolio covers FMCG food & drink, textiles, apparel, and workwear. For Mafi specifically — citrus concentrates, tomato concentrates, IQF frozen fruits & vegetables, and freeze-dried products. These categories already move through our buyer network today.` },
+      { section: '#process',    btn: 'How We Work',  msg: `Our model is end-to-end: Sourcing → Product Development → Quality Assurance → Procurement → Logistics → Delivery. Every step in-house. No outsourcing. This is why global buyers trust us — they deal with one accountable partner for the entire chain.` },
+      { section: '#certs',      btn: 'Certifications', msg: `We hold ISO 9001, HACCP, BRCGS, Halal, and Kosher certifications. These are not optional — they are the entry requirements for UK supermarkets, European food manufacturers, and US retail chains. Mafi's products will be pre-cleared for the world's most demanding buyers.` },
+      { section: '#mafi',       btn: 'Mafi Partnership', msg: `Mafi's $300M facility — 157,000 sqm, 100,000 tons annual capacity — launches in 2026. The window to build buyer relationships is now. It takes 12–18 months. Harvics starts immediately. Three phases: Market Entry → Volume Scaling → Strategic Growth. By Q3 2026, distribution channels are fully operational.` },
+      { section: '#cta',        btn: 'Contact Us',   msg: `Ready to move forward? Reach us at partnerships@harvics.com or visit www.harvics.com. Our offices in London, Milan, and New York are ready to begin the partnership framework discussion today. This is not just a proposal — it is a promise.` },
+    ];
+
+    const KB = [
+      { q: /tour|guide|walk|show|brief|start/i,          a: null, tour: true },
+      { q: /product|sell|offer|fmcg|citrus|tomato|iqf|freeze/i,
+        a: `Mafi's export portfolio aligns perfectly with what Harvics already distributes: Premium Citrus Concentrates, Tomato Concentrates, IQF Frozen Fruits & Vegetables, and Freeze-Dried Products. These categories are in active demand across our UK, European, and US buyer networks.` },
+      { q: /market|countr|where|region|export|europe|uk|usa|america/i,
+        a: `Harvics operates across 40+ countries. Europe: UK (65,000+ retailers), Italy, Germany, France. Americas: US importers and retail buyers via New York. Middle East & Asia: growing network. Mafi products enter all three regions through existing distribution flows — no cold outreach required.` },
+      { q: /certif|standard|quality|iso|haccp|halal|kosher|brcgs/i,
+        a: `We hold 5 international certifications: ISO 9001 (quality management), HACCP (food safety), BRCGS (global retail standard), Halal, and Kosher. These are mandatory for UK supermarkets and EU food manufacturers. Your products will be pre-qualified on day one.` },
+      { q: /partner|work|how|process|model|principal|buy|sourcing/i,
+        a: `Harvics acts as principal buyer — we own the transaction, not just facilitate it. End-to-end: Sourcing → Product Dev → QA → Procurement → Logistics → Last-Mile Delivery. One accountable partner for the entire supply chain. No brokers. No chains of approval.` },
+      { q: /phase|roadmap|timeline|when|2026|launch/i,
+        a: `Phase 1 (Now–Q2 2026): Introduce Mafi to 10–15 pre-qualified buyers in London, Milan, New York. Phase 2 (Q3 2026): Mafi production launches — distribution channels fully operational, first shipments executed. Phase 3 (Q4 2026+): Scale globally, become Mafi's exclusive distribution partner.` },
+      { q: /mafi|egypt|egyptian|sadat|facility|investment|300/i,
+        a: `Mafi is building the Middle East's most ambitious agri-food facility — $300M investment, 157,000 sqm, 100,000 tons annual capacity in Sadat City. 100% export-focused. AI-driven automation. LEED Gold certified. Harvics is the distribution engine that converts that production into global revenue.` },
+      { q: /contact|email|reach|talk|meet|start|discuss/i,
+        a: `Reach us at partnerships@harvics.com or visit www.harvics.com. Offices in London, Milan, and New York. We're ready to begin the partnership framework discussion — scope, commercial model, KPIs — immediately.` },
+      { q: /year|experience|long|history|15/i,
+        a: `15 years of genuine market operations — not databases, but trusted relationships. Built one buyer and one supplier at a time across 40+ countries and 3 continents. That network is what Mafi gains access to from day one.` },
+      { q: /why|benefit|value|advantage|reason/i,
+        a: `Four immediate benefits for Mafi: 1) Bypass years of buyer relationship building. 2) Reduce market entry risk with a proven partner. 3) Focus on production excellence — let Harvics handle global distribution complexity. 4) Day-one revenue readiness when production launches in 2026.` },
+    ];
+
+    let tourStep = -1;
+
+    const msgBox   = document.getElementById('chat-messages');
+    const qBox     = document.getElementById('chat-quick');
+    const chatWin  = document.getElementById('chat-window');
+    const chatInp  = document.getElementById('chat-input');
+    const chatSend = document.getElementById('chat-send');
+    let chatOpen   = false;
+
+    function addMsg(text, role, delay) {
+      setTimeout(() => {
+        const m = document.createElement('div');
+        m.className = 'chat-msg ' + role;
+        m.textContent = text;
+        msgBox.appendChild(m);
+        msgBox.scrollTop = msgBox.scrollHeight;
+      }, delay || 0);
+    }
+
+    function showQuickBtns(btns) {
+      qBox.innerHTML = '';
+      btns.forEach(b => {
+        const el = document.createElement('button');
+        el.className = 'chat-qbtn';
+        el.textContent = b.label;
+        el.onclick = () => b.action();
+        qBox.appendChild(el);
+      });
+    }
+
+    function scrollToSection(id) {
+      const el = document.querySelector(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function runTourStep(i) {
+      if (i >= TOUR_STEPS.length) {
+        addMsg(`That completes the full presentation. The partnership opportunity is clear — the timing is right. Shall I connect you directly with the Harvics team?`, 'bot');
+        showQuickBtns([
+          { label: 'Contact Harvics', action: () => { window.location.href = 'mailto:partnerships@harvics.com'; } },
+          { label: 'Restart Tour',    action: () => runTourStep(0) },
+        ]);
+        tourStep = -1;
+        return;
+      }
+      tourStep = i;
+      const step = TOUR_STEPS[i];
+      scrollToSection(step.section);
+      addMsg(step.msg, 'bot', 400);
+      setTimeout(() => {
+        const btns = [];
+        if (i + 1 < TOUR_STEPS.length) {
+          btns.push({ label: 'Next: ' + TOUR_STEPS[i + 1].btn, action: () => runTourStep(i + 1) });
+        }
+        btns.push({ label: 'Ask a question', action: () => { qBox.innerHTML = ''; chatInp.focus(); } });
+        if (i > 0) btns.push({ label: '← Back', action: () => runTourStep(i - 1) });
+        showQuickBtns(btns);
+      }, 800);
+    }
+
+    function botReply(text) {
+      const lower = text.toLowerCase();
+      if (/tour|guide|walk|show me|brief|take me/i.test(lower)) {
+        setTimeout(() => runTourStep(0), 400);
+        return null;
+      }
+      const entry = KB.find(k => k.q.test(text));
+      return entry ? entry.a : `Good question. Let me point you to the right section — or type "tour" and I'll walk you through the full presentation step by step.`;
+    }
+
+    function sendMsg(text) {
+      text = text.trim();
+      if (!text) return;
+      addMsg(text, 'user');
+      chatInp.value = '';
+      qBox.innerHTML = '';
+      const reply = botReply(text);
+      if (reply) {
+        setTimeout(() => {
+          addMsg(reply, 'bot');
+          showQuickBtns([
+            { label: 'Take the tour',  action: () => runTourStep(0) },
+            { label: 'Mafi Partnership', action: () => { addMsg('Mafi Partnership', 'user'); const r = botReply('mafi partnership'); if(r) addMsg(r,'bot'); } },
+            { label: 'Contact',        action: () => { addMsg('Contact', 'user'); addMsg(KB.find(k=>/contact/.test(k.q)).a,'bot'); } },
+          ]);
+        }, 380);
+      }
+    }
+
+    function toggleChat() {
+      chatOpen = !chatOpen;
+      chatWin.classList.toggle('open', chatOpen);
+      if (chatOpen && msgBox.children.length === 0) {
+        addMsg(`مرحباً — Hello! I'm ${AGENT_NAME}, your Harvics presentation guide. I can give you a full site tour, answer questions about our partnership proposal, or brief you on any specific topic.`, 'bot');
+        setTimeout(() => {
+          showQuickBtns([
+            { label: '🎯 Take the Full Tour', action: () => runTourStep(0) },
+            { label: 'Mafi Partnership',      action: () => sendMsg('Tell me about the Mafi partnership') },
+            { label: 'Our Products',          action: () => sendMsg('What products does Harvics offer?') },
+            { label: 'Why Harvics?',          action: () => sendMsg('Why should Mafi partner with Harvics?') },
+          ]);
+        }, 600);
+      }
+      if (chatOpen) chatInp.focus();
+    }
+
+    chatSend.addEventListener('click', () => sendMsg(chatInp.value));
+    chatInp.addEventListener('keydown', e => { if (e.key === 'Enter') sendMsg(chatInp.value); });
+
+    /* ── Language toggle ─────────────────────────────────────────────────────── */
+    const translations = {
+      en: {
+        nav: ['About', 'Markets', 'Products', 'Certs', 'Partnership', 'Mafi', 'Contact'],
+        heroTitle: 'Harvics Global<br>Ventures',
+        heroCities: 'London &nbsp;·&nbsp; Milan &nbsp;·&nbsp; New York',
+        heroTagline: 'Exploring across Hemisphere',
+        statLabels: ['Countries','Years of Experience','Continental HQs'],
+        ticker: ['NEURAL SUPPLY-CHAIN LOGIC','REAL-TIME LIQUIDITY MONITORING','AUTONOMOUS B2B INTERFACING','PREDICTIVE DEMAND MODELING','BLOCKCHAIN-VERIFIED TRACEABILITY','ZERO-LATENCY GLOBAL DISTRIBUTION'],
+      },
+      ar: {
+        nav: ['من نحن','الأسواق','المنتجات','الشهادات','الشراكة','مافي','تواصل'],
+        heroTitle: 'هارفيكس جلوبال<br>فنتشرز',
+        heroCities: 'لندن &nbsp;·&nbsp; ميلانو &nbsp;·&nbsp; نيويورك',
+        heroTagline: 'استكشاف عبر نصف الكرة',
+        statLabels: ['دولة','سنة خبرة','مقرات قارية'],
+        ticker: ['بيت شراء FMCG','سلسلة توريد متكاملة','تطوير المنتجات','ضمان الجودة','لوجستيات الميل الأخير','+40 دولة','نموذج المشتري الرئيسي'],
+      }
+    };
+
+    let currentLang = 'en'; // page starts in English
+
+    function setLang(lang) {
+      currentLang = lang;
+      const t = translations[lang];
+      const isAr = lang === 'ar';
+
+      // html dir
+      document.documentElement.lang = lang;
+      document.documentElement.dir  = isAr ? 'rtl' : 'ltr';
+
+      // nav links
+      const navLinks = document.querySelectorAll('nav .nav-links a');
+      navLinks.forEach((a, i) => { if (t.nav[i]) a.textContent = t.nav[i]; });
+
+      // hero
+      const h1 = document.querySelector('#hero h1');
+      if (h1) h1.innerHTML = t.heroTitle;
+      const cities = document.querySelector('.hero-cities');
+      if (cities) cities.innerHTML = t.heroCities;
+      const tagline = document.querySelector('.hero-tagline');
+      if (tagline) tagline.innerHTML = t.heroTagline;
+
+      // stat labels
+      const labels = document.querySelectorAll('.stat-label');
+      labels.forEach((el, i) => { if (t.statLabels[i]) el.textContent = t.statLabels[i]; });
+
+      // ticker
+      const items = document.querySelectorAll('.ticker-item:not(:empty)');
+      let ti = 0;
+      items.forEach(el => {
+        if (el.textContent.trim() === '◆') return;
+        if (t.ticker[ti % t.ticker.length]) el.textContent = t.ticker[ti % t.ticker.length];
+        ti++;
+      });
+
+      // toggle buttons
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
+    }
+
+    // Init as English (buttons show EN active)
+    setLang('en');
+
+    // Live analog clock
+    function updateClock() {
+      var now = new Date();
+      var s = now.getSeconds();
+      var m = now.getMinutes();
+      var h = now.getHours() % 12;
+      var sDeg = s * 6;
+      var mDeg = m * 6 + s * 0.1;
+      var hDeg = h * 30 + m * 0.5;
+      var sh = document.getElementById('second-hand');
+      var mh = document.getElementById('minute-hand');
+      var hh = document.getElementById('hour-hand');
+      if (sh) sh.setAttribute('transform', 'rotate(' + sDeg + ' 50 50)');
+      if (mh) mh.setAttribute('transform', 'rotate(' + mDeg + ' 50 50)');
+      if (hh) hh.setAttribute('transform', 'rotate(' + hDeg + ' 50 50)');
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    // Animated number counters
+    const statNums = document.querySelectorAll('.stat-num[data-target]');
+    const countObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = parseInt(el.dataset.target);
+        const suffix = el.dataset.suffix || '+';
+        let current = 0;
+        const step = Math.ceil(target / 40);
+        const timer = setInterval(() => {
+          current = Math.min(current + step, target);
+          el.textContent = current + suffix;
+          if (current >= target) clearInterval(timer);
+        }, 35);
+        countObserver.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    statNums.forEach(el => countObserver.observe(el));
+
+    // FMCG live node pulse for route-to-market map
+    const rtmNodes = [...document.querySelectorAll('.rtm-node[data-node]')];
+    if (rtmNodes.length) {
+      let idx = 0;
+      setInterval(() => {
+        rtmNodes.forEach((n) => n.classList.remove('live'));
+        rtmNodes[idx].classList.add('live');
+        idx = (idx + 1) % rtmNodes.length;
+      }, 1200);
+    }
+  </script>
+
+  <!-- ─── Music Player UI ──────────────────────────────────────────────────── -->
+
+  <!-- ─── Vercel Web Analytics ──────────────────────────────────────────────── -->
+  <script type="module">
+    import { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@2/+esm';
+    inject();
+  </script>
+  <div id="music-player" class="paused">
+    <button id="music-toggle" aria-label="Play/Pause music"></button>
+    <div class="wave-bars">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="music-info">
+      <span class="music-title">Harvics × MAFI</span>
+      <span class="music-sub">Authentic Egyptian Music</span>
+    </div>
+    <div id="vol-wrap">
+      <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+      <input type="range" id="vol-slider" min="0" max="100" value="35">
+    </div>
+  </div>
+
+</body>
+</html>

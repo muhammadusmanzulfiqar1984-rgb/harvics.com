@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  (function () {
+    var STORAGE_KEY = "lpp_presentation_access";
+    var granted = sessionStorage.getItem(STORAGE_KEY) === "granted";
+    if (granted) return;
+    var next = encodeURIComponent(window.location.pathname + window.location.search + window.location.hash);
+    window.location.replace("/textile-v2/login.html?next=" + next);
+  })();
+</script>
+<title>Harvics Global Ventures × LPP S.A.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+html{scroll-behavior:smooth}
+:root{
+  --black:#080808;--dark:#101010;--panel:#161616;
+  /* Rust / antique / dull gold palette — burnished, not bright */
+  --gold:#B8893E;--gold2:#8B6224;--gold3:#D4A85A;
+  --gold-deep:#6E4A1A;--gold-soft:#C9A472;
+  --teal:#2DD4BF;--white:#F0EBE0;--muted:rgba(240,235,224,0.55);
+  --faint:rgba(240,235,224,0.07);--border:rgba(184,137,62,0.18);
+  --crimson:#C0392B;--crimson2:#E74C3C;--crimson-glow:rgba(192,57,43,0.18);
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --serif:'Fraunces','Times New Roman',Georgia,serif;
+}
+body{background:var(--black);color:var(--white);font-family:var(--sans);overflow-x:hidden;cursor:none;font-feature-settings:"ss01","cv11","liga";font-weight:300;letter-spacing:-0.005em}
+/* Editorial display headlines */
+h1,h2,h3,.headline,.s-title,.cap-t,.acc-title,.tl-title,.close-q,.close-name,.calc-title,.compete-title,.coi-title,.shield-card-t,.why-t,.slot-date,.dl-val,.sig-name,.stat-n,.lc-cell-num,.cost-total-v,.loader-logo{font-family:var(--serif);font-weight:300;letter-spacing:-0.018em;font-feature-settings:"ss01","ss02","cv11"}
+.headline,.s-title,.compete-title,.close-q{font-weight:200;letter-spacing:-0.024em}
+em{font-style:italic}
+.headline em,.s-title em,.close-q em,.compete-title em,.coi-title em,.calc-title em{font-weight:400;font-style:italic;color:var(--gold)}
+
+#cur-dot{position:fixed;width:8px;height:8px;background:var(--gold);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .1s;mix-blend-mode:screen}
+#cur-ring{position:fixed;width:38px;height:38px;border:1px solid rgba(184,137,62,.4);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:all .18s ease}
+
+#reel{position:fixed;right:28px;top:50%;transform:translateY(-50%);z-index:200;display:flex;flex-direction:column;gap:10px;align-items:center}
+.reel-dot{width:6px;height:6px;border-radius:50%;border:1px solid var(--gold2);cursor:pointer;transition:all .3s}
+.reel-dot.active{background:var(--gold);box-shadow:0 0 8px var(--gold);transform:scale(1.4)}
+.reel-line{width:1px;height:20px;background:rgba(184,137,62,.2)}
+
+#prog{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--gold2),var(--gold),var(--gold3));z-index:1000;width:0;box-shadow:0 0 8px var(--gold);transition:width .08s}
+
+#grain{position:fixed;inset:0;pointer-events:none;z-index:9990;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grainAnim .12s steps(1) infinite}
+@keyframes grainAnim{0%{transform:translate(0,0)}10%{transform:translate(-2%,-3%)}20%{transform:translate(3%,2%)}30%{transform:translate(-1%,4%)}40%{transform:translate(4%,-2%)}50%{transform:translate(-3%,1%)}60%{transform:translate(2%,3%)}70%{transform:translate(-4%,-1%)}80%{transform:translate(1%,-4%)}90%{transform:translate(3%,2%)}100%{transform:translate(-2%,3%)}}
+
+#loader{position:fixed;inset:0;background:var(--black);z-index:9995;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .8s,visibility .8s}
+#loader.gone{opacity:0;visibility:hidden}
+.loader-logo{font-family:var(--serif);font-size:clamp(28px,4vw,52px);font-weight:300;font-style:italic;letter-spacing:.06em;overflow:hidden}
+.loader-logo span{display:inline-block;animation:logoIn 1.2s cubic-bezier(.16,1,.3,1) forwards;opacity:0}
+.loader-sub{font-size:10px;letter-spacing:.3em;text-transform:uppercase;font-family:var(--sans);color:var(--gold2);margin-top:14px;opacity:0;animation:fadeIn .8s 1.2s forwards}
+.loader-line{width:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin-top:28px;animation:lineExpand 1s .6s cubic-bezier(.4,0,.2,1) forwards}
+.loader-pct{font-size:11px;font-family:var(--sans);letter-spacing:.18em;color:var(--gold2);margin-top:14px;opacity:0;animation:fadeIn .4s .8s forwards}
+@keyframes logoIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{to{opacity:1}}
+@keyframes lineExpand{to{width:200px}}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:22px 52px;transition:all .4s}
+nav.solid{background:rgba(8,8,8,0.94);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav-icon{width:36px;height:36px;border:1px solid var(--gold2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--gold);animation:spinSlow 20s linear infinite}
+@keyframes spinSlow{to{transform:rotate(360deg)}}
+.nav-name{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--white)}
+.nav-sub{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2);margin-top:2px}
+.nav-links{display:flex;gap:30px;list-style:none}
+.nav-links a{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-family:var(--sans);color:var(--muted);text-decoration:none;transition:color .2s;cursor:none}
+.nav-links a:hover{color:var(--gold)}
+.nav-times{display:flex;gap:18px;font-family:var(--sans)}
+.nav-tc{text-align:center}
+.nav-city{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2)}
+.nav-time{font-size:12px;color:var(--white);margin-top:2px}
+
+#sound-btn{position:fixed;bottom:52px;right:28px;z-index:400;width:40px;height:40px;border:1px solid var(--border);background:rgba(8,8,8,.7);display:flex;align-items:center;justify-content:center;cursor:none;transition:all .3s;font-size:14px}
+#sound-btn:hover{border-color:var(--gold);background:rgba(184,137,62,.08)}
+
+.ticker{position:fixed;bottom:0;left:0;right:0;z-index:300;background:rgba(8,8,8,.88);border-top:1px solid var(--border);padding:8px 0;overflow:hidden}
+.ticker-inner{display:flex;white-space:nowrap;animation:tick 30s linear infinite}
+.ticker-item{font-size:9px;letter-spacing:.22em;text-transform:uppercase;font-family:var(--sans);color:var(--gold2);padding:0 24px;display:flex;align-items:center;gap:18px}
+.ticker-item::after{content:"✦";font-size:7px;color:var(--gold)}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+.v-section{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.v-bg{position:absolute;inset:0;z-index:0}
+.v-bg video{width:100%;height:100%;object-fit:cover;filter:brightness(.38) saturate(.8)}
+.v-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(8,8,8,.75) 0%,rgba(8,8,8,.3) 50%,rgba(8,8,8,.6) 100%);z-index:1}
+.v-godray{position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(120deg,transparent 40%,rgba(184,137,62,.025) 50%,transparent 60%);animation:godray 8s ease-in-out infinite}
+@keyframes godray{0%,100%{transform:translateX(-30%) rotate(0deg);opacity:0}50%{transform:translateX(30%) rotate(3deg);opacity:1}}
+.v-content{position:relative;z-index:10;padding:140px 72px 100px}
+
+#particles{position:fixed;inset:0;pointer-events:none;z-index:5}
+canvas#pCanvas{width:100%;height:100%}
+
+.shimmer{background:linear-gradient(100deg,var(--gold-deep) 0%,var(--gold2) 18%,var(--gold) 38%,var(--gold-soft) 50%,var(--gold) 62%,var(--gold2) 82%,var(--gold-deep) 100%);background-size:220% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 5.5s ease-in-out infinite;text-shadow:0 0 1px rgba(184,137,62,.15)}
+@keyframes shimmer{0%{background-position:-110% center}50%{background-position:110% center}100%{background-position:-110% center}}
+
+.chapter{font-size:10px;letter-spacing:.32em;text-transform:uppercase;font-family:var(--sans);color:var(--gold2);margin-bottom:24px;opacity:0;animation:up .8s .2s forwards}
+.headline{font-family:var(--serif);font-size:clamp(44px,6.5vw,88px);font-weight:300;line-height:1.05;letter-spacing:-.01em;margin-bottom:28px}
+.headline em{font-style:italic;font-weight:300}
+.sub-text{font-size:16px;line-height:1.9;color:var(--muted);max-width:560px;font-weight:300;margin-bottom:44px}
+
+.btn-wrap{display:flex;gap:18px;flex-wrap:wrap}
+.mag-btn{display:inline-flex;align-items:center;gap:10px;padding:16px 34px;font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;cursor:none;transition:all .25s;position:relative;overflow:hidden}
+.mag-btn::before{content:'';position:absolute;inset:0;background:var(--gold);transform:translateX(-101%);transition:transform .4s cubic-bezier(.4,0,.2,1)}
+.mag-btn span{position:relative;z-index:1}
+.btn-primary{background:var(--gold);color:var(--black);font-weight:600;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
+.btn-primary::before{background:var(--gold3)}
+.btn-primary:hover::before{transform:translateX(0)}
+.btn-ghost{border:1px solid rgba(184,137,62,.3);color:var(--gold)}
+.btn-ghost::before{background:rgba(184,137,62,.08)}
+.btn-ghost:hover::before{transform:translateX(0)}
+.btn-ghost:hover{border-color:var(--gold)}
+
+.stats-row{display:flex;gap:0;margin-top:72px;padding-top:36px;border-top:1px solid rgba(184,137,62,.1);flex-wrap:wrap}
+.stat{padding:0 48px 0 0;margin-right:48px;border-right:1px solid rgba(184,137,62,.1)}
+.stat:last-child{border-right:none}
+.stat-n{font-family:var(--serif);font-size:38px;font-weight:300;line-height:1}
+.stat-l{font-size:9px;letter-spacing:.18em;text-transform:uppercase;font-family:var(--sans);color:var(--muted);margin-top:6px}
+
+.caps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:60px}
+.cap{background:var(--dark);padding:42px 36px;position:relative;overflow:hidden;cursor:none;transition:background .3s}
+.cap::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold2),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.4,0,.2,1)}
+.cap:hover{background:#1a1a1a}
+.cap:hover::after{transform:scaleX(1)}
+.cap-n{font-size:10px;font-family:var(--sans);letter-spacing:.2em;color:var(--gold2);margin-bottom:24px}
+.cap-t{font-family:var(--serif);font-size:20px;font-weight:400;margin-bottom:14px;line-height:1.25}
+.cap-b{font-size:13.5px;line-height:1.85;color:var(--muted);font-weight:300}
+
+.acc-list{margin-top:60px}
+.acc-item{border-top:1px solid rgba(184,137,62,.1);cursor:none}
+.acc-item:last-child{border-bottom:1px solid rgba(184,137,62,.1)}
+.acc-head{display:flex;align-items:center;justify-content:space-between;padding:32px 0;gap:24px;transition:padding .25s}
+.acc-item:hover .acc-head{padding-left:10px}
+.acc-left{display:flex;align-items:center;gap:26px}
+.acc-num{font-size:10px;font-family:var(--sans);letter-spacing:.16em;color:var(--gold2);width:26px;flex-shrink:0}
+.acc-title{font-family:var(--serif);font-size:clamp(17px,2.2vw,25px);font-weight:300;line-height:1.2}
+.acc-plus{width:32px;height:32px;border:1px solid rgba(184,137,62,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px;color:var(--gold);transition:all .35s;font-weight:200}
+.acc-item.open .acc-plus{background:var(--gold);color:var(--black);transform:rotate(45deg)}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.4,0,.2,1);padding-left:52px}
+.acc-item.open .acc-body{max-height:400px}
+.acc-inner{padding-bottom:34px;padding-right:60px}
+.acc-tag{display:inline-block;padding:3px 10px;border:1px solid rgba(45,212,191,.2);background:rgba(45,212,191,.06);color:var(--teal);font-size:9px;letter-spacing:.16em;text-transform:uppercase;font-family:var(--sans);margin-bottom:14px}
+.acc-text{font-size:14.5px;line-height:1.9;color:var(--muted);font-weight:300}
+
+.cmp-table{width:100%;border-collapse:collapse;margin-top:60px}
+.cmp-table th{padding:16px 22px;text-align:left;font-size:9px;letter-spacing:.18em;text-transform:uppercase;font-family:var(--sans);font-weight:500;border-bottom:1px solid var(--border)}
+.cmp-table th:first-child{color:var(--muted)}
+.cmp-table th:last-child{color:var(--gold);background:rgba(184,137,62,.05);border-left:1px solid var(--border)}
+.cmp-table td{padding:17px 22px;font-size:14px;line-height:1.65;font-weight:300;border-bottom:1px solid rgba(240,235,224,.04)}
+.cmp-table td:first-child{color:var(--muted)}
+.cmp-table td:last-child{color:var(--white);background:rgba(184,137,62,.03);border-left:1px solid rgba(184,137,62,.06)}
+.cmp-table tr:hover td{background:rgba(184,137,62,.02)}
+.cmp-table tr:hover td:last-child{background:rgba(184,137,62,.06)}
+.ck{color:var(--teal);margin-right:8px}
+
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:60px;background:var(--border)}
+.why-card{background:var(--dark);padding:50px 44px;cursor:none;transition:background .3s;position:relative;overflow:hidden}
+.why-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:linear-gradient(180deg,var(--gold),var(--gold2));transition:height .5s cubic-bezier(.4,0,.2,1)}
+.why-card:hover{background:#181818}
+.why-card:hover::before{height:100%}
+.why-t{font-family:var(--serif);font-size:20px;font-weight:400;margin-bottom:16px;line-height:1.3}
+.why-b{font-size:14px;line-height:1.85;color:var(--muted);font-weight:300}
+
+.timeline{margin-top:60px;position:relative;padding-left:60px}
+.timeline::before{content:'';position:absolute;left:16px;top:16px;bottom:60px;width:1px;background:linear-gradient(180deg,var(--gold),var(--gold2),transparent)}
+.tl-item{position:relative;margin-bottom:52px;opacity:0;transform:translateX(-24px);transition:opacity .6s,transform .6s}
+.tl-item.vis{opacity:1;transform:translateX(0)}
+.tl-dot{position:absolute;left:-51px;top:8px;width:20px;height:20px;border-radius:50%;border:1px solid var(--gold2);background:var(--black);display:flex;align-items:center;justify-content:center;transition:all .3s}
+.tl-dot-c{width:8px;height:8px;border-radius:50%;background:var(--gold);opacity:0;transition:.3s}
+.tl-item:hover .tl-dot{border-color:var(--gold);box-shadow:0 0 12px rgba(184,137,62,.3)}
+.tl-item:hover .tl-dot-c{opacity:1}
+.tl-tag{font-size:9px;letter-spacing:.18em;text-transform:uppercase;font-family:var(--sans);color:var(--gold2);border:1px solid var(--border);display:inline-block;padding:3px 10px;margin-bottom:12px}
+.tl-title{font-family:var(--serif);font-size:28px;font-weight:300;margin-bottom:10px;line-height:1.15}
+.tl-body{font-size:15px;line-height:1.8;color:var(--muted);font-weight:300;max-width:680px}
+
+.close-section{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;padding:100px 52px;text-align:center}
+.close-glow{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(184,137,62,.07) 0%,transparent 70%);animation:pulseGlow 4s ease-in-out infinite}
+@keyframes pulseGlow{0%,100%{opacity:.7}50%{opacity:1}}
+.close-q{font-family:var(--serif);font-size:clamp(22px,3.5vw,46px);font-weight:300;font-style:italic;line-height:1.4;max-width:800px}
+.close-q em{font-style:normal;font-weight:400}
+.close-brand{margin-top:64px}
+.close-name{font-family:var(--serif);font-size:30px;font-weight:300;font-style:italic;letter-spacing:.04em}
+.close-info{font-size:12px;font-family:var(--sans);color:var(--muted);letter-spacing:.1em;margin-top:10px}
+
+.s-inner{max-width:1120px;margin:0 auto;padding:110px 52px}
+.s-eye{font-size:10px;letter-spacing:.28em;text-transform:uppercase;font-family:var(--sans);color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:14px}
+.s-eye::before{content:'';width:28px;height:1px;background:var(--gold2)}
+.s-title{font-family:var(--serif);font-size:clamp(32px,4vw,54px);font-weight:300;line-height:1.08;letter-spacing:-.01em;margin-bottom:18px}
+.s-title em{font-style:italic;color:var(--gold)}
+.s-body{font-size:15.5px;line-height:1.85;color:var(--muted);max-width:600px;font-weight:300}
+
+.rule{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)}
+
+.rev{opacity:0;transform:translateY(28px);transition:opacity .75s,transform .75s}
+.rev.vis{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.12s}.d2{transition-delay:.22s}.d3{transition-delay:.32s}.d4{transition-delay:.42s}
+
+.curtain{position:relative;overflow:hidden}
+.curtain::after{content:'';position:absolute;inset:0;background:var(--black);transform:scaleX(1);transform-origin:left;transition:transform .9s cubic-bezier(.4,0,.2,1)}
+.curtain.open::after{transform:scaleX(0);transform-origin:right}
+
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+
+/* ═══════════════════════════════════════
+   NEW SECTION STYLES
+═══════════════════════════════════════ */
+
+/* DIAGONAL SLASH DIVIDER */
+.slash-divider{position:relative;height:80px;overflow:hidden;background:var(--black)}
+.slash-divider::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(184,137,62,.08),transparent);clip-path:polygon(0 60%,100% 10%,100% 50%,0 100%)}
+.slash-divider::after{content:'';position:absolute;top:50%;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold2),var(--gold),var(--gold2),transparent);transform:rotate(-1deg)}
+
+/* THREAT TAG */
+.threat-tag{display:inline-block;padding:4px 14px;border:1px solid rgba(192,57,43,.4);background:rgba(192,57,43,.08);color:var(--crimson2);font-size:9px;letter-spacing:.22em;text-transform:uppercase;font-family:var(--sans);margin-bottom:18px}
+
+/* SHIELD SECTION */
+.shield-section{position:relative;background:var(--black);overflow:hidden}
+.shield-bg-glow{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 20% 50%,rgba(192,57,43,.06) 0%,transparent 65%),radial-gradient(ellipse 50% 40% at 80% 50%,rgba(184,137,62,.04) 0%,transparent 60%);pointer-events:none}
+.shield-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:60px;background:rgba(192,57,43,.12)}
+.shield-card{background:var(--dark);padding:48px 40px;position:relative;overflow:hidden;transition:background .3s}
+.shield-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--crimson),transparent);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.4,0,.2,1)}
+.shield-card:hover{background:#140e0e}
+.shield-card:hover::before{transform:scaleX(1)}
+.shield-card-icon{font-size:28px;margin-bottom:20px;filter:drop-shadow(0 0 8px rgba(192,57,43,.5))}
+.shield-card-t{font-family:var(--serif);font-size:18px;font-weight:400;margin-bottom:12px;line-height:1.3;color:var(--white)}
+.shield-card-b{font-size:13.5px;line-height:1.85;color:var(--muted);font-weight:300}
+.crimson-text{color:var(--crimson2);font-style:normal}
+.gold-phrase{background:linear-gradient(90deg,var(--gold2),var(--gold),var(--gold3));background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 3s linear infinite;font-style:normal}
+
+/* LEGAL FIREWALL VISUAL */
+.firewall-visual{display:flex;align-items:center;justify-content:center;gap:0;margin-top:64px;padding:52px 0;position:relative}
+.firewall-visual::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--black),rgba(16,16,16,.5),var(--black));pointer-events:none}
+.fw-node{text-align:center;padding:0 28px;position:relative;z-index:2}
+.fw-node-icon{width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 14px}
+.fw-node-icon.red{background:rgba(192,57,43,.12);border:1px solid rgba(192,57,43,.3);box-shadow:0 0 24px rgba(192,57,43,.15)}
+.fw-node-icon.gold{background:rgba(184,137,62,.08);border:1px solid rgba(184,137,62,.3);box-shadow:0 0 24px rgba(184,137,62,.12)}
+.fw-node-icon.green{background:rgba(45,212,191,.06);border:1px solid rgba(45,212,191,.25);box-shadow:0 0 24px rgba(45,212,191,.1)}
+.fw-node-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-family:var(--sans);color:var(--muted)}
+.fw-node-sub{font-size:11px;color:var(--white);margin-top:4px;font-family:var(--serif);font-style:italic}
+.fw-arrow{font-size:22px;color:var(--gold2);padding:0 10px;opacity:.5;position:relative;z-index:2}
+
+/* CAPITAL SECTION */
+.capital-section{position:relative;background:var(--black);overflow:hidden}
+.capital-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 90% 50%,rgba(184,137,62,.04) 0%,transparent 60%);pointer-events:none}
+
+/* LC TRAPPED VISUAL */
+.lc-visual{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;margin-top:60px;background:var(--border)}
+.lc-cell{background:var(--dark);padding:44px 36px;position:relative;overflow:hidden}
+.lc-cell-head{font-size:9px;letter-spacing:.22em;text-transform:uppercase;font-family:var(--sans);color:var(--gold2);margin-bottom:20px}
+.lc-cell-num{font-family:var(--serif);font-size:52px;font-weight:300;line-height:1}
+.lc-cell-num.danger{color:var(--crimson2)}
+.lc-cell-num.safe{background:linear-gradient(90deg,var(--gold2),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.lc-cell-unit{font-size:11px;letter-spacing:.12em;font-family:var(--sans);color:var(--muted);margin-top:6px}
+.lc-cell-desc{font-size:13px;line-height:1.75;color:var(--muted);margin-top:18px;font-weight:300}
+.lc-bar-wrap{margin-top:20px;height:3px;background:rgba(255,255,255,.06);border-radius:2px;overflow:hidden}
+.lc-bar{height:100%;border-radius:2px;transform:scaleX(0);transform-origin:left;transition:transform 1.4s cubic-bezier(.4,0,.2,1)}
+.lc-bar.vis-bar{transform:scaleX(1)}
+.lc-bar.red{background:linear-gradient(90deg,var(--crimson),var(--crimson2))}
+.lc-bar.amber{background:linear-gradient(90deg,#C8973A,#FFD166)}
+.lc-bar.teal{background:linear-gradient(90deg,var(--teal),#2DD4BF)}
+
+/* BLINDSPOT TIMELINE */
+.blindspot-row{display:flex;align-items:stretch;margin-top:52px;gap:0;background:var(--border);gap:1px}
+.bs-cell{flex:1;background:var(--dark);padding:32px 28px;text-align:center;position:relative;overflow:hidden;transition:background .3s}
+.bs-cell:hover{background:#181818}
+.bs-cell-n{font-family:var(--serif);font-size:36px;font-weight:300;margin-bottom:8px}
+.bs-cell-l{font-size:9px;letter-spacing:.18em;text-transform:uppercase;font-family:var(--sans);color:var(--muted)}
+.bs-cell.blind{background:rgba(192,57,43,.06)}
+.bs-cell.blind .bs-cell-n{color:var(--crimson2)}
+.bs-cell.solved .bs-cell-n{background:linear-gradient(90deg,var(--gold2),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* GROUND TRUTH SECTION */
+.ground-section{position:relative;background:var(--black);overflow:hidden}
+.ground-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 50%,rgba(184,137,62,.03) 0%,transparent 70%);pointer-events:none}
+
+/* COST EXPOSURE VISUAL */
+.cost-compare{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:60px;background:var(--border)}
+.cost-col{background:var(--dark);padding:52px 44px}
+.cost-col-head{font-size:10px;letter-spacing:.24em;text-transform:uppercase;font-family:var(--sans);margin-bottom:32px;display:flex;align-items:center;gap:12px}
+.cost-col-head span{padding:3px 10px;font-size:9px}
+.cost-col-head .bad{background:rgba(192,57,43,.1);border:1px solid rgba(192,57,43,.3);color:var(--crimson2)}
+.cost-col-head .good{background:rgba(184,137,62,.08);border:1px solid rgba(184,137,62,.25);color:var(--gold)}
+.cost-row{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.cost-row:last-child{border-bottom:none}
+.cost-label{font-size:13px;color:var(--muted);font-weight:300}
+.cost-val{font-family:var(--serif);font-size:20px;font-weight:300}
+.cost-val.hidden{color:var(--crimson2);letter-spacing:.04em}
+.cost-val.exposed{background:linear-gradient(90deg,var(--gold2),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.cost-total{margin-top:24px;padding-top:24px;border-top:1px solid rgba(184,137,62,.15);display:flex;justify-content:space-between;align-items:baseline}
+.cost-total-l{font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-family:var(--sans);color:var(--muted)}
+.cost-total-v{font-family:var(--serif);font-size:32px;font-weight:300}
+.cost-total-v.bad{color:var(--crimson2)}
+.cost-total-v.gold{background:linear-gradient(90deg,var(--gold2),var(--gold),var(--gold3));background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 3s linear infinite}
+
+/* P2P VISUAL */
+.p2p-visual{display:flex;align-items:center;justify-content:center;gap:0;margin-top:52px;padding:40px;background:rgba(184,137,62,.02);border:1px solid var(--border);position:relative}
+.p2p-node{text-align:center;flex:1}
+.p2p-icon{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;margin:0 auto 12px}
+.p2p-icon.eu{border:1px solid rgba(184,137,62,.3);background:rgba(184,137,62,.06)}
+.p2p-icon.ghost{border:1px solid rgba(192,57,43,.3);background:rgba(192,57,43,.06);position:relative}
+.p2p-icon.ghost::after{content:'✕';position:absolute;bottom:-4px;right:-4px;font-size:10px;color:var(--crimson2);background:var(--black);border-radius:50%;width:16px;height:16px;display:flex;align-items:center;justify-content:center;border:1px solid var(--crimson)}
+.p2p-icon.factory{border:1px solid rgba(45,212,191,.3);background:rgba(45,212,191,.06)}
+.p2p-label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-family:var(--sans);color:var(--muted)}
+.p2p-sub{font-size:11px;font-family:var(--serif);font-style:italic;margin-top:4px;color:var(--white)}
+.p2p-conn{flex:0.4;display:flex;flex-direction:column;align-items:center;gap:6px}
+.p2p-conn-line{width:100%;height:1px;background:linear-gradient(90deg,var(--gold2),var(--gold));opacity:.4}
+.p2p-conn-label{font-size:8px;letter-spacing:.14em;text-transform:uppercase;font-family:var(--sans);color:var(--gold2)}
+.p2p-conn-line.red{background:linear-gradient(90deg,var(--crimson),var(--crimson2));opacity:.4}
+.p2p-conn-label.red{color:var(--crimson2)}
+
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--black)}
+::-webkit-scrollbar-thumb{background:var(--gold2);border-radius:2px}
+
+footer{background:var(--black);border-top:1px solid var(--border);padding:22px 52px;display:flex;align-items:center;justify-content:space-between;font-size:10px;font-family:var(--sans);letter-spacing:.1em;color:var(--muted);padding-bottom:44px}
+footer span{color:var(--gold2)}
+
+/* ═══════ PERSUASION LAYER ═══════ */
+
+/* Personalized addressee strip */
+.addressed{display:inline-flex;align-items:center;gap:14px;padding:10px 18px;border:1px solid rgba(184,137,62,.22);background:rgba(184,137,62,.04);margin-bottom:32px;backdrop-filter:blur(6px)}
+.addressed-dot{width:6px;height:6px;border-radius:50%;background:#2DD4BF;box-shadow:0 0 10px #2DD4BF;animation:livePulse 1.6s ease-in-out infinite}
+@keyframes livePulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+.addressed-text{font-family:var(--sans);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--white)}
+.addressed-text em{font-style:normal;color:var(--gold);font-weight:500}
+.addressed-meta{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold2);padding-left:14px;border-left:1px solid rgba(184,137,62,.2)}
+
+/* LIVE COST-OF-INACTION band */
+.coi-band{position:relative;background:linear-gradient(180deg,#0a0a0a 0%,#0e0e0e 100%);border-top:1px solid rgba(192,57,43,.25);border-bottom:1px solid rgba(192,57,43,.25);padding:54px 52px;overflow:hidden}
+.coi-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 50%,rgba(192,57,43,.06),transparent 70%);pointer-events:none}
+.coi-inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:36px;align-items:center;position:relative;z-index:2}
+.coi-lead{display:flex;flex-direction:column;gap:10px}
+.coi-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;font-family:var(--sans);color:var(--crimson2)}
+.coi-eyebrow::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--crimson2);box-shadow:0 0 10px var(--crimson2);animation:livePulse 1.4s ease-in-out infinite}
+.coi-title{font-family:var(--serif);font-size:clamp(20px,2.4vw,28px);font-weight:300;line-height:1.25;color:var(--white)}
+.coi-title em{font-style:italic;color:var(--gold)}
+.coi-cell{border-left:1px solid rgba(184,137,62,.1);padding-left:24px}
+.coi-num{font-family:var(--serif);font-size:clamp(24px,3vw,36px);font-weight:300;line-height:1;color:var(--crimson2);font-variant-numeric:tabular-nums}
+.coi-num.gold{color:var(--gold)}
+.coi-lab{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:8px;font-family:var(--sans)}
+@media(max-width:900px){.coi-inner{grid-template-columns:1fr;gap:22px}.coi-cell{border-left:none;border-top:1px solid rgba(184,137,62,.1);padding-left:0;padding-top:18px}}
+
+/* COMPETITOR PRESSURE block */
+.compete-band{background:#0b0b0b;padding:90px 52px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.compete-inner{max-width:1120px;margin:0 auto}
+.compete-eye{display:inline-flex;align-items:center;gap:12px;font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;font-family:var(--sans);color:var(--crimson2);margin-bottom:14px}
+.compete-eye::before{content:'';width:24px;height:1px;background:var(--crimson2)}
+.compete-title{font-family:var(--serif);font-size:clamp(28px,3.6vw,46px);font-weight:300;line-height:1.1;letter-spacing:-.01em;margin-bottom:14px}
+.compete-title em{font-style:italic;color:var(--crimson2)}
+.compete-sub{font-size:14px;line-height:1.85;color:var(--muted);max-width:620px;margin-bottom:48px;font-weight:300}
+.compete-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
+.cmp-card{background:var(--dark);padding:36px 28px;position:relative;transition:background .3s}
+.cmp-card:hover{background:#181818}
+.cmp-card.lpp{background:rgba(192,57,43,.05);border-top:2px solid var(--crimson2)}
+.cmp-card.lpp::before{content:'YOU';position:absolute;top:14px;right:16px;font-size:8px;letter-spacing:.22em;color:var(--crimson2);font-family:var(--sans);font-weight:600}
+.cmp-brand{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--white);margin-bottom:6px;letter-spacing:.01em}
+.cmp-brand-sub{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:20px;font-family:var(--sans)}
+.cmp-row{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;padding:9px 0;border-bottom:1px solid rgba(240,235,224,.04);font-size:11.5px;font-family:var(--sans);font-weight:300}
+.cmp-row:last-child{border-bottom:none}
+.cmp-row .l{color:var(--muted);letter-spacing:.06em}
+.cmp-row .v{color:var(--teal);font-weight:500;text-align:right;letter-spacing:.04em}
+.cmp-row .v.bad{color:var(--crimson2)}
+.cmp-row .v.amber{color:#E5A93C}
+@media(max-width:900px){.compete-grid{grid-template-columns:1fr 1fr}}
+
+/* CALCULATOR */
+.calc-box{margin-top:54px;background:linear-gradient(180deg,#0e0e0e 0%,#0a0a0a 100%);border:1px solid var(--border);padding:44px 40px;position:relative;overflow:hidden}
+.calc-box::before{content:'INTERACTIVE';position:absolute;top:18px;right:22px;font-size:8.5px;letter-spacing:.28em;color:var(--gold2);font-family:var(--sans)}
+.calc-title{font-family:var(--serif);font-size:24px;font-weight:300;color:var(--white);margin-bottom:6px}
+.calc-title em{font-style:italic;color:var(--gold)}
+.calc-sub{font-size:12px;letter-spacing:.04em;color:var(--muted);margin-bottom:34px;font-family:var(--sans)}
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:flex-start}
+.calc-input{display:flex;flex-direction:column;gap:18px}
+.calc-row label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);font-family:var(--sans);display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.calc-row label span{color:var(--white);font-family:var(--serif);font-size:18px;letter-spacing:0;text-transform:none;font-weight:300}
+.calc-row input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:2px;background:rgba(184,137,62,.15);outline:none;cursor:none}
+.calc-row input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:16px;height:16px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold);cursor:none;border:2px solid var(--black)}
+.calc-row input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:var(--gold);border:2px solid var(--black);cursor:pointer}
+.calc-result{background:rgba(184,137,62,.04);border:1px solid var(--border);padding:30px 28px;text-align:center}
+.calc-result-l{font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold2);font-family:var(--sans);margin-bottom:14px}
+.calc-result-n{font-family:var(--serif);font-size:clamp(34px,4.5vw,52px);font-weight:300;color:var(--white);line-height:1;font-variant-numeric:tabular-nums}
+.calc-result-n .currency{color:var(--gold);font-style:italic;font-size:.7em;margin-right:6px}
+.calc-result-meta{font-size:11px;color:var(--muted);margin-top:18px;line-height:1.6;font-family:var(--sans)}
+.calc-result-meta strong{color:var(--gold);font-weight:500}
+@media(max-width:900px){.calc-grid{grid-template-columns:1fr}}
+
+/* RESERVED CTA */
+.reserved-tag{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid rgba(45,212,191,.35);background:rgba(45,212,191,.06);font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--teal);font-family:var(--sans);margin-bottom:24px}
+.reserved-tag::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--teal);box-shadow:0 0 10px var(--teal);animation:livePulse 1.6s ease-in-out infinite}
+.slot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:680px;margin:42px auto 0}
+.slot{background:rgba(184,137,62,.03);border:1px solid var(--border);padding:18px 16px;cursor:none;transition:all .25s;text-align:center;text-decoration:none;display:block;color:var(--white)}
+.slot:hover{background:rgba(184,137,62,.08);border-color:var(--gold);transform:translateY(-2px)}
+.slot-day{font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold2);font-family:var(--sans)}
+.slot-date{font-family:var(--serif);font-size:24px;font-weight:300;margin-top:6px;color:var(--white)}
+.slot-time{font-size:11px;color:var(--muted);margin-top:6px;letter-spacing:.08em;font-family:var(--sans)}
+.slot-loc{font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:10px;font-family:var(--sans)}
+.direct-line{margin-top:42px;display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;padding-top:36px;border-top:1px solid rgba(184,137,62,.1)}
+.dl-item{display:flex;flex-direction:column;align-items:center;gap:6px}
+.dl-lab{font-size:8.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold2);font-family:var(--sans)}
+.dl-val{font-family:var(--serif);font-size:17px;font-weight:300;color:var(--white);text-decoration:none;letter-spacing:.02em}
+.dl-val:hover{color:var(--gold)}
+.signature-block{margin-top:54px;padding-top:36px;border-top:1px solid rgba(184,137,62,.1);text-align:center}
+.sig-name{font-family:var(--serif);font-size:22px;font-style:italic;font-weight:300;color:var(--gold);letter-spacing:.02em}
+.sig-title{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:8px;font-family:var(--sans)}
+.exclusivity-note{margin-top:30px;padding:18px 24px;background:rgba(192,57,43,.05);border:1px dashed rgba(192,57,43,.3);max-width:620px;margin-left:auto;margin-right:auto}
+.exclusivity-note p{font-size:11.5px;line-height:1.7;color:var(--white);font-family:var(--sans);letter-spacing:.04em;font-weight:300}
+.exclusivity-note strong{color:var(--crimson2);font-weight:500;letter-spacing:.06em}
+@media(max-width:900px){.slot-grid{grid-template-columns:1fr}.direct-line{flex-direction:column;gap:18px}}
+
+@media(max-width:900px){
+  nav{padding:16px 22px}.nav-links,.nav-times{display:none}
+  .v-content,.s-inner{padding:100px 24px 80px}
+  .caps-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr}
+  .stats-row{flex-wrap:wrap;gap:28px}
+  #reel{display:none}
+  .shield-grid,.cost-compare,.lc-visual{grid-template-columns:1fr}
+  .blindspot-row{flex-wrap:wrap}
+  .firewall-visual{flex-wrap:wrap}
+  .p2p-visual{flex-wrap:wrap;gap:24px}
+/* ═══ FASHION SHOW LAYER ═══ */
+#spotlight{position:fixed;inset:0;pointer-events:none;z-index:8;background:radial-gradient(circle 360px at var(--mx,50%) var(--my,50%),rgba(255,235,200,.10) 0%,rgba(184,137,62,.04) 30%,transparent 65%);mix-blend-mode:screen}
+.runway-strip{position:absolute;left:0;right:0;bottom:0;height:2px;overflow:hidden;z-index:7;pointer-events:none}
+.runway-strip::before{content:'';position:absolute;top:0;bottom:0;left:0;width:35%;background:linear-gradient(90deg,transparent,var(--gold-soft) 40%,#fff 50%,var(--gold-soft) 60%,transparent);box-shadow:0 0 18px var(--gold),0 0 38px var(--gold-deep);animation:runway 6s ease-in-out infinite}
+@keyframes runway{0%{transform:translateX(-40%)}50%{transform:translateX(285%)}100%{transform:translateX(-40%)}}
+.editorial-cap{position:absolute;left:36px;bottom:36px;z-index:6;font-family:var(--sans);max-width:300px;pointer-events:none;opacity:0;transform:translateY(8px);transition:opacity .8s,transform .8s}
+.v-section.in-view .editorial-cap{opacity:1;transform:translateY(0)}
+.editorial-cap .lk{font-size:9px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.editorial-cap .lk-line{width:32px;height:1px;background:var(--gold);margin:8px 0}
+.editorial-cap .lk-name{font-family:var(--serif);font-style:italic;font-weight:300;font-size:14px;color:var(--white);line-height:1.4;letter-spacing:.01em}
+.editorial-cap .lk-meta{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.frontrow{display:inline-flex;align-items:center;gap:14px;padding:9px 18px;border:1px solid rgba(184,137,62,.3);background:linear-gradient(135deg,rgba(184,137,62,.08),rgba(110,74,26,.04));margin-bottom:18px;backdrop-filter:blur(6px);font-family:var(--sans)}
+.fr-tag{font-size:9.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.fr-bar{width:1px;height:14px;background:rgba(184,137,62,.3)}
+.fr-name{font-family:var(--serif);font-style:italic;font-weight:300;font-size:14px;color:var(--white);letter-spacing:.01em}
+.fr-seat{font-size:9px;letter-spacing:.22em;color:var(--gold2);font-family:var(--sans);text-transform:uppercase}
+.v-bg video{animation:kenburns 28s ease-in-out infinite}
+@keyframes kenburns{0%,100%{transform:scale(1) translate(0,0)}50%{transform:scale(1.10) translate(-1.5%,-1%)}}
+/* Camera flash */
+.flash{position:fixed;inset:0;background:rgba(255,255,255,.88);pointer-events:none;z-index:9997;opacity:0;mix-blend-mode:screen}
+/* Cinemascope letterbox */
+.letterbox{position:fixed;left:0;right:0;height:48px;background:#000;z-index:9996;pointer-events:none;transform:translateY(-100%);transition:transform 1s cubic-bezier(.7,0,.3,1);box-shadow:0 0 30px rgba(0,0,0,.6)}
+.letterbox.top{top:0}
+.letterbox.bot{bottom:0;transform:translateY(100%)}
+body.letterboxed .letterbox.top{transform:translateY(0)}
+body.letterboxed .letterbox.bot{transform:translateY(0)}
+/* Vertical strut text */
+.strut-text{position:fixed;left:14px;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;font-family:var(--sans);font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:rgba(184,137,62,.45);z-index:5;pointer-events:none;user-select:none}
+/* Program sidebar — Roman numerals */
+.program{position:fixed;left:30px;top:50%;transform:translateY(-50%);z-index:5;display:flex;flex-direction:column;gap:18px;font-family:var(--serif);opacity:.85}
+.program span{font-size:11px;font-style:italic;color:var(--gold2);letter-spacing:.1em;font-weight:300;cursor:pointer;transition:all .35s;opacity:.5}
+.program span.active{color:var(--gold);font-size:16px;opacity:1;text-shadow:0 0 10px rgba(184,137,62,.4)}
+.program span:hover{color:var(--gold-soft);opacity:1}
+@media(max-width:900px){.strut-text,.program{display:none}}
+@media(max-width:900px){.editorial-cap{left:18px;bottom:18px;max-width:200px}.frontrow{flex-wrap:wrap;gap:8px;padding:7px 12px}.fr-bar{display:none}}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">
+    <span style="animation-delay:.1s">H</span><span style="animation-delay:.18s">a</span><span style="animation-delay:.26s">r</span><span style="animation-delay:.34s">v</span><span style="animation-delay:.42s">i</span><span style="animation-delay:.5s">c</span><span style="animation-delay:.58s">s</span>&nbsp;<span style="animation-delay:.7s">G</span><span style="animation-delay:.78s">l</span><span style="animation-delay:.86s">o</span><span style="animation-delay:.94s">b</span><span style="animation-delay:1.02s">a</span><span style="animation-delay:1.1s">l</span>
+  </div>
+  <div class="loader-sub">Strategic Partnership Proposal × LPP S.A.</div>
+  <div class="loader-line"></div>
+  <div class="loader-pct" id="loader-pct">Loading...</div>
+</div>
+
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+<div id="prog"></div>
+<div id="grain"></div>
+<canvas id="pCanvas" style="position:fixed;inset:0;pointer-events:none;z-index:4;width:100%;height:100%"></canvas>
+
+<!-- FILM REEL NAV -->
+<div id="reel">
+  <div class="reel-dot active" onclick="scrollTo(0)" title="Hero"></div>
+  <div class="reel-line"></div>
+  <div class="reel-dot" onclick="scrollSec('caps')" title="Capabilities"></div>
+  <div class="reel-line"></div>
+  <div class="reel-dot" onclick="scrollSec('shield')" title="Compliance Shield"></div>
+  <div class="reel-line"></div>
+  <div class="reel-dot" onclick="scrollSec('opp')" title="Opportunity"></div>
+  <div class="reel-line"></div>
+  <div class="reel-dot" onclick="scrollSec('capital')" title="Capital Velocity"></div>
+  <div class="reel-line"></div>
+  <div class="reel-dot" onclick="scrollSec('compare')" title="Solutions"></div>
+  <div class="reel-line"></div>
+  <div class="reel-dot" onclick="scrollSec('ground')" title="Ground Truth"></div>
+  <div class="reel-line"></div>
+  <div class="reel-dot" onclick="scrollSec('why')" title="Partnership"></div>
+  <div class="reel-line"></div>
+  <div class="reel-dot" onclick="scrollSec('steps')" title="Next Steps"></div>
+  <div class="reel-line"></div>
+  <div class="reel-dot" onclick="scrollSec('closing')" title="Contact"></div>
+</div>
+
+<div id="sound-btn" onclick="toggleSound()" title="Ambient Sound">🔇</div>
+<audio id="bgm" src="audio/raymond.mp3" loop preload="auto"></audio>
+<audio id="amb" loop><source src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=" type="audio/wav"></audio>
+
+<nav id="nav">
+  <a href="#hero" class="nav-brand">
+    <div class="nav-icon">✦</div>
+    <div><div class="nav-name">Harvics Global Ventures</div><div class="nav-sub">Exploring Across Hemisphere</div></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#caps">Capabilities</a></li>
+    <li><a href="#shield">Compliance</a></li>
+    <li><a href="#capital">Capital</a></li>
+    <li><a href="#ground">Ground Truth</a></li>
+    <li><a href="#why">Partnership</a></li>
+    <li><a href="#closing">Contact</a></li>
+  </ul>
+  <div class="nav-times">
+    <div class="nav-tc"><div class="nav-city">LDN</div><div class="nav-time" id="t-ldn">--:--</div></div>
+    <div class="nav-tc"><div class="nav-city">MIL</div><div class="nav-time" id="t-mil">--:--</div></div>
+    <div class="nav-tc"><div class="nav-city">KHI</div><div class="nav-time" id="t-khi">--:--</div></div>
+  </div>
+</nav>
+
+<!-- ══ SCENE 1: HERO ══ -->
+<section class="v-section" id="hero" data-scene="0">
+  <div class="v-bg"><video autoplay muted loop playsinline><source src="videos/hero.mp4" type="video/mp4"></video></div>
+  <div class="v-overlay"></div>
+  <div class="v-godray"></div>
+  <div class="v-content">
+    <div class="addressed rev">
+      <span class="addressed-dot"></span>
+      <span class="addressed-text">Prepared for <em>Marek Piechocki</em> &amp; the LPP S.A. Board</span>
+      <span class="addressed-meta">Gdańsk · Confidential · SS 2026</span>
+    </div>
+    <p class="chapter">Chapter I &nbsp;·&nbsp; Strategic Partnership Proposal &nbsp;·&nbsp; Confidential 2026</p>
+    <h1 class="headline" id="hero-title">
+      Built For The<br>
+      <em class="shimmer">Intelligence</em><br>
+      Of Global Trade.
+    </h1>
+    <p class="sub-text">A proposal for LPP S.A. — on how Harvics' AI-driven, real-time operational ecosystem can power your expansion to PLN 40 billion and transform complexity into complete clarity.</p>
+    <div class="btn-wrap">
+      <a href="#caps" class="mag-btn btn-primary"><span>Explore the Solution ↓</span></a>
+      <a href="#closing" class="mag-btn btn-ghost"><span>Start a Conversation</span></a>
+    </div>
+    <div class="stats-row">
+      <div class="stat curtain"><div class="stat-n shimmer">40+</div><div class="stat-l">LPP Markets Globally</div></div>
+      <div class="stat curtain"><div class="stat-n shimmer">PLN 40B</div><div class="stat-l">2027 Revenue Goal</div></div>
+      <div class="stat curtain"><div class="stat-n shimmer">360°</div><div class="stat-l">Harvics Coverage</div></div>
+      <div class="stat curtain"><div class="stat-n shimmer">Real-Time</div><div class="stat-l">Not Monthly Snapshots</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ LIVE COST-OF-INACTION BAND ══ -->
+<div class="coi-band">
+  <div class="coi-inner">
+    <div class="coi-lead">
+      <span class="coi-eyebrow">Live · Cost of Inaction</span>
+      <h3 class="coi-title">Every second this proposal sits unread,<br><em>capital is locked offshore.</em></h3>
+    </div>
+    <div class="coi-cell">
+      <div class="coi-num" id="coi-trapped">€0</div>
+      <div class="coi-lab">Trapped LC capital · since you opened this</div>
+    </div>
+    <div class="coi-cell">
+      <div class="coi-num" id="coi-days">0.0</div>
+      <div class="coi-lab">Avg. blind-spot days · industry baseline</div>
+    </div>
+    <div class="coi-cell">
+      <div class="coi-num gold" id="coi-recover">€0</div>
+      <div class="coi-lab">Recoverable annually · Harvics estimate</div>
+    </div>
+  </div>
+</div>
+
+<div class="rule"></div>
+
+<!-- ══ SCENE 2: CAPABILITIES ══ -->
+<section class="v-section" id="caps" data-scene="1" style="min-height:auto">
+  <div class="v-bg" style="opacity:.35"><video autoplay muted loop playsinline><source src="videos/caps.mp4" type="video/mp4"></video></div>
+  <div class="v-overlay" style="background:linear-gradient(180deg,rgba(8,8,8,.85) 0%,rgba(8,8,8,.7) 50%,rgba(8,8,8,.9) 100%)"></div>
+  <div class="s-inner" style="position:relative;z-index:10">
+    <p class="s-eye rev">What We Do</p>
+    <h2 class="s-title rev d1">The Platform <em>LPP Needs</em><br>Right Now.</h2>
+    <p class="s-body rev d2">The world's first AI-native ecosystem connecting procurement to sales in a single live view — built for organisations operating at LPP's complexity and speed.</p>
+    <div class="caps-grid rev d3">
+      <div class="cap"><div class="cap-n">01 · Procurement</div><h3 class="cap-t">Real-Time Procurement Intelligence</h3><p class="cap-b">Live visibility across supplier orders, cost variances, delivery timelines and quality flags — from purchase order to goods receipt across every sourcing geography.</p></div>
+      <div class="cap"><div class="cap-n">02 · Reporting</div><h3 class="cap-t">Procurement-to-Sales Unified View</h3><p class="cap-b">One data layer connecting supplier performance, logistics, warehouse throughput and sell-through — eliminating manual reconciliation that slows decisions at scale.</p></div>
+      <div class="cap"><div class="cap-n">03 · ESG / CSRD</div><h3 class="cap-t">360° Sustainability Reporting</h3><p class="cap-b">Continuous, auditable ESG data flows aligned with EU CSRD. Supplier-level metrics in real time — not extracted from annual audits after the fact.</p></div>
+      <div class="cap"><div class="cap-n">04 · Analytics</div><h3 class="cap-t">AI-Driven Margin Intelligence</h3><p class="cap-b">Predictive intelligence across categories, geographies and seasons. Full cost-to-sell transparency for every brand — enabling margin protection before decisions are made.</p></div>
+      <div class="cap"><div class="cap-n">05 · Architecture</div><h3 class="cap-t">Multi-Market, Multi-Brand Platform</h3><p class="cap-b">Built for parallel brand operations and varied regulations — one consolidated leadership view regardless of how many markets you enter simultaneously.</p></div>
+      <div class="cap"><div class="cap-n">06 · Integration</div><h3 class="cap-t">No-Rip, No-Disrupt Model</h3><p class="cap-b">We sit alongside your existing ERP, WMS and e-commerce infrastructure. We add intelligence, not disruption. Your technology teams stay in control from day one.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="slash-divider"></div>
+
+<!-- ══════════════════════════════════════════════════
+     NEW SECTION I: THE SOVEREIGN COMPLIANCE SHIELD
+══════════════════════════════════════════════════ -->
+<section class="shield-section" id="shield">
+  <div class="shield-bg-glow"></div>
+  <div class="s-inner" style="position:relative;z-index:10">
+    <span class="threat-tag rev">Pre-Emptive Risk Neutralization</span>
+    <p class="s-eye rev">Chapter II · Legal Sovereignty</p>
+    <h2 class="s-title rev d1">The Sovereign<br><em>Compliance Shield.</em></h2>
+    <p class="s-body rev d2">European regulators are not waiting for self-reporting. They are building audit trails. When a factory in Pakistan fails a labour or environmental standard, the fine does not land in Karachi — it lands in Gdańsk. <span class="crimson-text">LPP's legal exposure is a function of its weakest supplier's worst day.</span></p>
+
+    <!-- Firewall Visual -->
+    <div class="firewall-visual rev d3">
+      <div class="fw-node">
+        <div class="fw-node-icon red">⚠</div>
+        <div class="fw-node-label">Supplier Violation</div>
+        <div class="fw-node-sub">Pakistan Factory Floor</div>
+      </div>
+      <div class="fw-arrow">→</div>
+      <div class="fw-node">
+        <div class="fw-node-icon gold">🛡</div>
+        <div class="fw-node-label">Harvics Firewall</div>
+        <div class="fw-node-sub" style="color:var(--gold)">Real-Time Detection</div>
+      </div>
+      <div class="fw-arrow">→</div>
+      <div class="fw-node">
+        <div class="fw-node-icon green">✦</div>
+        <div class="fw-node-label">LPP Leadership</div>
+        <div class="fw-node-sub">Gdańsk — Protected</div>
+      </div>
+    </div>
+
+    <div class="shield-grid rev d4">
+      <div class="shield-card">
+        <div class="shield-card-icon">⚖</div>
+        <h3 class="shield-card-t">CSRD Is Not a Reporting Exercise. It Is a Criminal Liability.</h3>
+        <p class="shield-card-b">Under EU CSRD and the forthcoming Corporate Sustainability Due Diligence Directive, non-compliance is not a footnote risk. Regulators have subpoena power across supply chain tiers. <span class="crimson-text">Annual audits, already purchased and filed, will not constitute a legal defence.</span> Continuous, timestamped supplier data will. Harvics provides exactly that — embedded in daily procurement flows, not assembled retrospectively.</p>
+      </div>
+      <div class="shield-card">
+        <div class="shield-card-icon">🔒</div>
+        <h3 class="shield-card-t">Your Legal Firewall — On the Ground in Pakistan.</h3>
+        <p class="shield-card-b">Harvics maintains operational presence and data infrastructure at source — not in a European office reviewing third-party reports. <span class="gold-phrase">Pre-emptive CSRD risk neutralization</span> means we detect supplier violations before they become your liability. Every data point is timestamped, auditable and investor-grade. When regulators arrive, LPP's documentation is already complete. That is not compliance. That is immunity.</p>
+      </div>
+      <div class="shield-card">
+        <div class="shield-card-icon">📡</div>
+        <h3 class="shield-card-t">Real-Time Supplier Monitoring — Not Quarterly Checkbox Reviews.</h3>
+        <p class="shield-card-b">The gap between an annual social compliance audit and the next one is where reputational and legal exposure lives. Harvics closes that gap permanently. Supplier-level ESG metrics flow continuously — labour hours, subcontracting deviations, environmental discharge flags — into a single dashboard visible to LPP leadership <span class="gold-phrase">before the violation becomes a headline.</span></p>
+      </div>
+      <div class="shield-card">
+        <div class="shield-card-icon">📈</div>
+        <h3 class="shield-card-t">Investor-Grade Sustainability Record That Moves Your Stock.</h3>
+        <p class="shield-card-b">Institutional investors are applying ESG screens with increasing precision. A credible, continuous, third-party verified sustainability record is a valuation instrument — not a marketing document. <span class="crimson-text">Competitors assembling year-end reports will not compete on this dimension.</span> LPP, with Harvics, will have the only real-time, investor-presentable sustainability data set in its competitive peer group.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="slash-divider"></div>
+
+<!-- ══ SCENE 3: OPPORTUNITY ══ -->
+<section class="v-section" id="opp" data-scene="2" style="min-height:auto">
+  <div class="v-bg" style="opacity:.4"><video autoplay muted loop playsinline><source src="videos/opp.mp4" type="video/mp4"></video></div>
+  <div class="v-overlay" style="background:linear-gradient(180deg,rgba(8,8,8,.88) 0%,rgba(8,8,8,.65) 50%,rgba(8,8,8,.88) 100%)"></div>
+  <div class="s-inner" style="position:relative;z-index:10">
+    <p class="s-eye rev">Where We Help</p>
+    <h2 class="s-title rev d1">Three Areas That <em>Matter Most</em><br>for LPP Right Now.</h2>
+    <p class="s-body rev d2">The fashion industry is at an inflection point. Companies that build intelligent operational infrastructure today will define the decade ahead.</p>
+    <div class="acc-list rev d3">
+      <div class="acc-item" onclick="toggleAcc(this)">
+        <div class="acc-head"><div class="acc-left"><span class="acc-num">01</span><h3 class="acc-title">Sustainability Reporting That Satisfies Regulators — and Investors</h3></div><div class="acc-plus">+</div></div>
+        <div class="acc-body"><div class="acc-inner"><span class="acc-tag">CSRD · ESG · Compliance</span><p class="acc-text">The EU's Corporate Sustainability Reporting Directive demands continuous, auditable data across the entire supply chain. Fashion companies sourcing from multiple geographies face a particular challenge: their sustainability story is only as strong as their weakest data point.<br><br>Harvics captures real-time ESG data at supplier level — embedded in daily procurement flows, not bolted on at year end. The result is a credible, investor-grade sustainability record that reduces compliance overhead and builds long-term stakeholder confidence.</p></div></div>
+      </div>
+      <div class="acc-item" onclick="toggleAcc(this)">
+        <div class="acc-head"><div class="acc-left"><span class="acc-num">02</span><h3 class="acc-title">Margin Intelligence for a Market Under Competitive Pressure</h3></div><div class="acc-plus">+</div></div>
+        <div class="acc-body"><div class="acc-inner"><span class="acc-tag">Margin · Omnichannel · Analytics</span><p class="acc-text">As digital-native rivals compete aggressively on price, understanding your true cost-to-serve across every channel and market becomes a strategic advantage — not a reporting exercise.<br><br>Harvics provides a consolidated margin view from first supplier cost to final sale price, across every brand, channel and geography. Buying teams see the full picture before committing. Margin protection becomes proactive, not reactive.</p></div></div>
+      </div>
+      <div class="acc-item" onclick="toggleAcc(this)">
+        <div class="acc-head"><div class="acc-left"><span class="acc-num">03</span><h3 class="acc-title">Scaling Into New Markets Without Scaling Complexity</h3></div><div class="acc-plus">+</div></div>
+        <div class="acc-body"><div class="acc-inner"><span class="acc-tag">Expansion · Operations · Reporting</span><p class="acc-text">Entering South-East Europe, Central Asia and beyond introduces new supplier relationships, logistics networks and regulatory environments. Without integrated reporting, each new market becomes its own data island.<br><br>Our platform onboards new markets rapidly and integrates them into one operational view. Expansion delivers revenue without proportional increases in reporting complexity or compliance risk. You grow with clarity, not chaos.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="slash-divider"></div>
+
+<!-- ══════════════════════════════════════════════════
+     NEW SECTION II: CAPITAL VELOCITY & LEAD-TIME COMPRESSION
+══════════════════════════════════════════════════ -->
+<section class="capital-section" id="capital">
+  <div class="capital-bg"></div>
+  <div class="s-inner" style="position:relative;z-index:10">
+    <span class="threat-tag rev">Trapped LC Capital — Released</span>
+    <p class="s-eye rev">Chapter IV · Capital Velocity</p>
+    <h2 class="s-title rev d1">Capital Velocity &<br><em>Lead-Time Compression.</em></h2>
+    <p class="s-body rev d2">When LPP places an order for 500,000 units from South Asia, millions of Euros are not in transit — they are trapped. Locked in an LC instrument, moving through a logistics chain where a single 10-day delay by a local agent costs more than the agent's annual margin. <span style="color:var(--gold2)">The fashion trend window does not pause for customs paperwork.</span></p>
+
+    <!-- LC Numbers -->
+    <div class="lc-visual rev d3">
+      <div class="lc-cell">
+        <div class="lc-cell-head">Capital Locked Per Large Order</div>
+        <div class="lc-cell-num danger" id="cap-num1">0</div>
+        <div class="lc-cell-unit">Million EUR — Avg. South Asia LC</div>
+        <p class="lc-cell-desc">Funds committed at purchase order, inaccessible until goods clear destination port. Every day of delay is interest cost, warehousing cost, and missed sell-through.</p>
+        <div class="lc-bar-wrap"><div class="lc-bar red" style="width:85%"></div></div>
+      </div>
+      <div class="lc-cell">
+        <div class="lc-cell-head">The Blind-Spot Window</div>
+        <div class="lc-cell-num danger" id="cap-num2">0</div>
+        <div class="lc-cell-unit">Days — Local Transit Opacity</div>
+        <p class="lc-cell-desc">The period during which a local agent controls shipment visibility. This is where delays are manufactured, customs "issues" invented, and where your fashion window closes quietly.</p>
+        <div class="lc-bar-wrap"><div class="lc-bar amber" style="width:65%"></div></div>
+      </div>
+      <div class="lc-cell">
+        <div class="lc-cell-head">Harvics Compression Target</div>
+        <div class="lc-cell-num safe" id="cap-num3">0</div>
+        <div class="lc-cell-unit">Days Eliminated From Blind-Spot</div>
+        <p class="lc-cell-desc">Real-time shipment intelligence collapses the opacity window. South Asia becomes operationally equivalent to nearshoring. Capital returns to the business — not the agent's pocket.</p>
+        <div class="lc-bar-wrap"><div class="lc-bar teal" style="width:90%"></div></div>
+      </div>
+    </div>
+
+    <!-- Blindspot timeline -->
+    <div class="blindspot-row rev d4">
+      <div class="bs-cell">
+        <div class="bs-cell-n shimmer">Day 0</div>
+        <div class="bs-cell-l">Purchase Order Placed · LC Opened</div>
+      </div>
+      <div class="bs-cell blind">
+        <div class="bs-cell-n">Day 14</div>
+        <div class="bs-cell-l">⚠ Local Agent Blind-Spot Begins</div>
+      </div>
+      <div class="bs-cell blind">
+        <div class="bs-cell-n">Day 24</div>
+        <div class="bs-cell-l">⚠ "Customs Delay" — Unverifiable</div>
+      </div>
+      <div class="bs-cell blind">
+        <div class="bs-cell-n">Day 34</div>
+        <div class="bs-cell-l">⚠ Trend Window Closing. Markdown Risk Rising.</div>
+      </div>
+      <div class="bs-cell solved">
+        <div class="bs-cell-n">Day 14</div>
+        <div class="bs-cell-l">✦ Harvics: Full Visibility. No Blind-Spot.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:52px;padding:40px;background:rgba(184,137,62,.03);border:1px solid var(--border)" class="rev">
+      <p style="font-family:var(--serif);font-size:clamp(18px,2.5vw,28px);font-weight:300;line-height:1.5;color:var(--white)">
+        "We do not track boxes. We <em class="shimmer">release cash.</em><br>
+        Eliminating the 10-day local transit blind-spot unlocks trapped LC capital and makes South Asia as fast — commercially — as nearshoring."
+      </p>
+      <p style="margin-top:16px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-family:var(--sans);color:var(--gold2)">Harvics · Capital Velocity Infrastructure</p>
+    </div>
+
+    <!-- INTERACTIVE CALCULATOR -->
+    <div class="calc-box rev">
+      <h3 class="calc-title">Run the math on <em>your own</em> numbers.</h3>
+      <p class="calc-sub">Adjust the sliders. The figure on the right is what Harvics estimates LPP can free up annually.</p>
+      <div class="calc-grid">
+        <div class="calc-input">
+          <div class="calc-row">
+            <label>Avg. Order Value <span id="calc-order-v">€ 5.0M</span></label>
+            <input type="range" id="calc-order" min="1" max="15" step="0.5" value="5">
+          </div>
+          <div class="calc-row">
+            <label>Orders Per Year <span id="calc-count-v">120</span></label>
+            <input type="range" id="calc-count" min="20" max="400" step="10" value="120">
+          </div>
+          <div class="calc-row">
+            <label>Blind-Spot Days <span id="calc-days-v">14</span></label>
+            <input type="range" id="calc-days" min="4" max="30" step="1" value="14">
+          </div>
+          <div class="calc-row">
+            <label>Cost of Capital <span id="calc-rate-v">5.5%</span></label>
+            <input type="range" id="calc-rate" min="2" max="10" step="0.5" value="5.5">
+          </div>
+        </div>
+        <div class="calc-result">
+          <div class="calc-result-l">Capital Recoverable Annually</div>
+          <div class="calc-result-n"><span class="currency">€</span><span id="calc-output">0</span></div>
+          <p class="calc-result-meta">Based on <strong>Harvics compressing 10 of those days</strong> into real-time visibility — returning trapped LC capital to operations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<!-- ══ SCENE 4: COMPARISON ══ -->
+<section class="v-section" id="compare" data-scene="3" style="min-height:auto">
+  <div class="v-bg" style="opacity:.45"><video autoplay muted loop playsinline><source src="videos/compare.mp4" type="video/mp4"></video></div>
+  <div class="v-overlay" style="background:linear-gradient(180deg,rgba(8,8,8,.9) 0%,rgba(8,8,8,.7) 50%,rgba(8,8,8,.9) 100%)"></div>
+  <div class="s-inner" style="position:relative;z-index:10">
+    <p class="s-eye rev">The Difference</p>
+    <h2 class="s-title rev d1">Industry Challenge.<br><em>Harvics Solution.</em></h2>
+    <table class="cmp-table rev d2">
+      <thead><tr><th>Challenge Facing Fashion Retailers Today</th><th>↳ &nbsp; How Harvics Addresses It</th></tr></thead>
+      <tbody>
+        <tr><td>CSRD compliance requires real-time supply chain data, not periodic audits</td><td><span class="ck">✦</span>Automated, continuous ESG capture embedded in procurement flows</td></tr>
+        <tr><td>Multi-brand, multi-market operations produce fragmented siloed reporting</td><td><span class="ck">✦</span>Single unified data layer across all brands, markets and channels</td></tr>
+        <tr><td>Rapid store network growth increases logistics complexity exponentially</td><td><span class="ck">✦</span>Real-time distribution tracking with intelligent alerts and variance reporting</td></tr>
+        <tr><td>Price competition compresses margins while full cost visibility remains limited</td><td><span class="ck">✦</span>Full cost-to-sell transparency enabling proactive, data-driven margin decisions</td></tr>
+        <tr><td>New market entry creates data islands and disproportionate reporting overhead</td><td><span class="ck">✦</span>Rapid market onboarding into a consolidated operational view from day one</td></tr>
+        <tr><td>Supplier accountability requires more than annual social compliance audits</td><td><span class="ck">✦</span>Supplier-level performance monitoring built into daily procurement workflows</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="slash-divider"></div>
+
+<!-- ══════════════════════════════════════════════════
+     NEW SECTION III: GROUND TRUTH INTELLIGENCE
+══════════════════════════════════════════════════ -->
+<section class="ground-section" id="ground">
+  <div class="ground-bg"></div>
+  <div class="s-inner" style="position:relative;z-index:10">
+    <span class="threat-tag rev">Middle-Man Elimination · Factory-Floor Accuracy</span>
+    <p class="s-eye rev">Chapter VI · Ground Truth</p>
+    <h2 class="s-title rev d1">Ground Truth<br><em>Intelligence.</em></h2>
+    <p class="s-body rev d2">Every European executive managing a South Asian supply chain carries the same suspicion: the number the local agent sends is not the factory's real cost. The markup is hidden. The visibility is controlled. <span style="color:var(--crimson2)">You are not buying from factories. You are buying from agents who buy from factories.</span></p>
+
+    <!-- Cost Comparison -->
+    <div class="cost-compare rev d3">
+      <div class="cost-col">
+        <div class="cost-col-head">Current State <span class="bad">Agent-Mediated</span></div>
+        <div class="cost-row"><span class="cost-label">Factory Gate Cost</span><span class="cost-val hidden">Hidden</span></div>
+        <div class="cost-row"><span class="cost-label">Agent Commission</span><span class="cost-val hidden">Opaque</span></div>
+        <div class="cost-row"><span class="cost-label">Subcontracting Markup</span><span class="cost-val hidden">Undetected</span></div>
+        <div class="cost-row"><span class="cost-label">Quality Deviation Cost</span><span class="cost-val hidden">Absorbed by LPP</span></div>
+        <div class="cost-row"><span class="cost-label">Transit Delay Exposure</span><span class="cost-val hidden">Unquantified</span></div>
+        <div class="cost-total">
+          <span class="cost-total-l">True Cost Visibility</span>
+          <span class="cost-total-v bad">0%</span>
+        </div>
+      </div>
+      <div class="cost-col">
+        <div class="cost-col-head">Harvics State <span class="good">Principal-to-Principal</span></div>
+        <div class="cost-row"><span class="cost-label">Factory Gate Cost</span><span class="cost-val exposed">Exact</span></div>
+        <div class="cost-row"><span class="cost-label">Agent Commission</span><span class="cost-val exposed">Disclosed</span></div>
+        <div class="cost-row"><span class="cost-label">Subcontracting Markup</span><span class="cost-val exposed">Detected</span></div>
+        <div class="cost-row"><span class="cost-label">Quality Deviation Cost</span><span class="cost-val exposed">Real-Time Flag</span></div>
+        <div class="cost-row"><span class="cost-label">Transit Delay Exposure</span><span class="cost-val exposed">Live Dashboard</span></div>
+        <div class="cost-total">
+          <span class="cost-total-l">True Cost Visibility</span>
+          <span class="cost-total-v gold">100%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2P Visual -->
+    <div class="p2p-visual rev d4">
+      <div class="p2p-node">
+        <div class="p2p-icon eu">🏢</div>
+        <div class="p2p-label">LPP S.A.</div>
+        <div class="p2p-sub">Gdańsk, Poland</div>
+      </div>
+      <div class="p2p-conn">
+        <div class="p2p-conn-line red"></div>
+        <div class="p2p-conn-label red">❌ Old: Agent Layer</div>
+      </div>
+      <div class="p2p-node">
+        <div class="p2p-icon ghost">🤝</div>
+        <div class="p2p-label">Local Agent</div>
+        <div class="p2p-sub">Hidden Margin</div>
+      </div>
+      <div class="p2p-conn">
+        <div class="p2p-conn-line"></div>
+        <div class="p2p-conn-label">✦ Harvics: Direct</div>
+      </div>
+      <div class="p2p-node">
+        <div class="p2p-icon factory">🏭</div>
+        <div class="p2p-label">Factory Floor</div>
+        <div class="p2p-sub">Pakistan — Real Cost</div>
+      </div>
+    </div>
+
+    <div style="margin-top:52px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--border)" class="rev">
+      <div style="background:var(--dark);padding:36px 30px">
+        <div style="font-size:9px;letter-spacing:.22em;text-transform:uppercase;font-family:var(--sans);color:var(--gold2);margin-bottom:16px">Direct Visibility</div>
+        <p style="font-family:var(--serif);font-size:17px;font-weight:300;line-height:1.5;color:var(--white)">Factory-floor cost — exposed exactly. Not the agent's number. The manufacturer's number.</p>
+      </div>
+      <div style="background:var(--dark);padding:36px 30px">
+        <div style="font-size:9px;letter-spacing:.22em;text-transform:uppercase;font-family:var(--sans);color:var(--gold2);margin-bottom:16px">Sovereign Infrastructure</div>
+        <p style="font-family:var(--serif);font-size:17px;font-weight:300;line-height:1.5;color:var(--white)">You are not relying on a local agent's loyalty. You are relying on a technology infrastructure that cannot be bribed.</p>
+      </div>
+      <div style="background:var(--dark);padding:36px 30px">
+        <div style="font-size:9px;letter-spacing:.22em;text-transform:uppercase;font-family:var(--sans);color:var(--gold2);margin-bottom:16px">Negotiating Power</div>
+        <p style="font-family:var(--serif);font-size:17px;font-weight:300;line-height:1.5;color:var(--white)"><span class="shimmer">Principal-to-Principal visibility</span> means LPP negotiates from complete information. Every time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<!-- ══ COMPETITOR PRESSURE ══ -->
+<div class="compete-band">
+  <div class="compete-inner">
+    <span class="compete-eye rev">While You Are Reading This</span>
+    <h2 class="compete-title rev d1">Your peers have already <em>moved.</em></h2>
+    <p class="compete-sub rev d2">Real-time supply-chain intelligence is no longer a frontier. It is the new floor. The peer set below has either built it internally or acquired it. The question is not whether LPP closes this gap — it is whether LPP closes it <strong style="color:var(--gold)">first</strong>, or last.</p>
+    <div class="compete-grid rev d3">
+      <div class="cmp-card">
+        <div class="cmp-brand">Inditex</div>
+        <div class="cmp-brand-sub">Zara · Arteixo</div>
+        <div class="cmp-row"><span class="l">Tier-1 visibility</span><span class="v">7-day cycle</span></div>
+        <div class="cmp-row"><span class="l">Tier-2 monitoring</span><span class="v">Live</span></div>
+        <div class="cmp-row"><span class="l">CSRD readiness</span><span class="v">Filed</span></div>
+        <div class="cmp-row"><span class="l">Capital velocity</span><span class="v">Optimized</span></div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-brand">H&amp;M</div>
+        <div class="cmp-brand-sub">Stockholm</div>
+        <div class="cmp-row"><span class="l">Tier-1 visibility</span><span class="v">Real-time</span></div>
+        <div class="cmp-row"><span class="l">Tier-2 monitoring </span><span class="v amber">Phasing in</span></div>
+        <div class="cmp-row"><span class="l">CSRD readiness</span><span class="v">Compliant</span></div>
+        <div class="cmp-row"><span class="l">Capital velocity</span><span class="v">Active</span></div>
+      </div>
+      <div class="cmp-card">
+        <div class="cmp-brand">Shein</div>
+        <div class="cmp-brand-sub">Singapore</div>
+        <div class="cmp-row"><span class="l">Tier-1 visibility</span><span class="v">Direct factory feed</span></div>
+        <div class="cmp-row"><span class="l">Tier-2 monitoring</span><span class="v">Native</span></div>
+        <div class="cmp-row"><span class="l">CSRD readiness</span><span class="v amber">Building</span></div>
+        <div class="cmp-row"><span class="l">Capital velocity</span><span class="v">3–5 day cycle</span></div>
+      </div>
+      <div class="cmp-card lpp">
+        <div class="cmp-brand">LPP S.A.</div>
+        <div class="cmp-brand-sub">Gdańsk · Today</div>
+        <div class="cmp-row"><span class="l">Tier-1 visibility</span><span class="v bad">Quarterly</span></div>
+        <div class="cmp-row"><span class="l">Tier-2 monitoring</span><span class="v bad">Agent-mediated</span></div>
+        <div class="cmp-row"><span class="l">CSRD readiness</span><span class="v amber">Annual audit only</span></div>
+        <div class="cmp-row"><span class="l">Capital velocity</span><span class="v bad">14–34 day blind-spot</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SCENE 5: WHY PARTNERSHIP ══ -->
+<section class="v-section" id="why" data-scene="4" style="min-height:auto">
+  <div class="v-bg" style="opacity:.4"><video autoplay muted loop playsinline><source src="videos/why.mp4" type="video/mp4"></video></div>
+  <div class="v-overlay" style="background:linear-gradient(180deg,rgba(8,8,8,.88) 0%,rgba(8,8,8,.65) 60%,rgba(8,8,8,.92) 100%)"></div>
+  <div class="s-inner" style="position:relative;z-index:10">
+    <p class="s-eye rev">Why This Partnership</p>
+    <h2 class="s-title rev d1">Not Just a Vendor.<br>A <em>Genuine Fit.</em></h2>
+    <p class="s-body rev d2">Specific factors make Harvics a natural partner for LPP — things a generic enterprise software provider simply cannot replicate.</p>
+    <div class="why-grid rev d3">
+      <div class="why-card"><h3 class="why-t">Pakistan Supply Chain — We Know It From the Inside</h3><p class="why-b">LPP is one of very few European fashion companies to have made a formal, public commitment to supplier accountability in Pakistan. We have built deep operational knowledge of Pakistan-origin supply chains — compliance environments, logistics infrastructure and supplier reporting norms. Implementation is faster and more accurate because we are not learning it from scratch.</p></div>
+      <div class="why-card"><h3 class="why-t">Designed for Organisations That Think in Technology</h3><p class="why-b">LPP considers itself a Fashion Tech company. Our platform integrates with, not replaces, existing systems — sitting alongside your WMS, ERP and e-commerce infrastructure. We add the intelligence layer that connects them. Technology teams remain in full control.</p></div>
+      <div class="why-card"><h3 class="why-t">AI-Native Architecture That Improves With Scale</h3><p class="why-b">At PLN 3 billion per year in planned investment, LPP needs solutions that scale without becoming burdensome. Our AI-native architecture gets more precise as data volume grows. There is no linear relationship between business growth and reporting overhead.</p></div>
+      <div class="why-card"><h3 class="why-t">Exploration Before Any Commitment</h3><p class="why-b">We do not ask for a purchase decision upfront. We propose a structured process starting with listening, moving into a tailored demonstration, and optionally a complimentary 30-day diagnostic. You see the value before any commitment is made.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<!-- ══ SCENE 6: NEXT STEPS ══ -->
+<section class="v-section" id="steps" data-scene="5" style="min-height:auto">
+  <div class="v-bg" style="opacity:.4"><video autoplay muted loop playsinline><source src="videos/steps.mp4" type="video/mp4"></video></div>
+  <div class="v-overlay" style="background:linear-gradient(180deg,rgba(8,8,8,.88) 0%,rgba(8,8,8,.65) 50%,rgba(8,8,8,.9) 100%)"></div>
+  <div class="s-inner" style="position:relative;z-index:10">
+    <p class="s-eye rev">How We Move Forward</p>
+    <h2 class="s-title rev d1">Four Steps.<br><em>Zero Pressure.</em></h2>
+    <p class="s-body rev d2">Each step is designed to deliver value before asking for any decision. The burden of proof sits with us — not with you.</p>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-dot"><div class="tl-dot-c"></div></div><span class="tl-tag">Step 01 · 30 Minutes</span><h3 class="tl-title">Discovery Conversation</h3><p class="tl-body">A focused dialogue on LPP's current reporting infrastructure and areas of greatest operational complexity. We ask questions. We listen. No slides, no pitch — a genuine conversation to understand where we could be most useful.</p></div>
+      <div class="tl-item"><div class="tl-dot"><div class="tl-dot-c"></div></div><span class="tl-tag">Step 02 · Tailored Demo</span><h3 class="tl-title">A Demonstration Built Around LPP</h3><p class="tl-body">Not a generic product walkthrough. A live demonstration mapped to LPP's specific context — multi-brand, multi-market, ESG reporting as a primary thread. You see your world reflected back, not a hypothetical one.</p></div>
+      <div class="tl-item"><div class="tl-dot"><div class="tl-dot-c"></div></div><span class="tl-tag">Step 03 · Optional · No Cost</span><h3 class="tl-title">Complimentary Diagnostic</h3><p class="tl-body">A 30-day assessment of your data flows across 2–3 markets — identifying reporting gaps, quantifying the opportunity, producing a clear roadmap. Delivered at no cost, with no commitment. The output belongs to you regardless of what happens next.</p></div>
+      <div class="tl-item"><div class="tl-dot"><div class="tl-dot-c"></div></div><span class="tl-tag">Step 04 · If There's Fit</span><h3 class="tl-title">Structured Pilot</h3><p class="tl-body">If the diagnostic reveals clear value, we design a structured pilot with defined success metrics, agreed scope and a transparent path from pilot to full deployment. Both teams know what success looks like before we begin.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CLOSING ══ -->
+<section class="close-section" id="closing">
+  <div class="v-bg" style="position:absolute;inset:0;z-index:0;opacity:.3">
+    <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;filter:brightness(.3) saturate(.7)">
+      <source src="videos/closing.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="close-glow"></div>
+  <div style="position:relative;z-index:10;max-width:920px">
+    <span class="reserved-tag rev">Reserved Briefing · Held for LPP S.A.</span>
+    <blockquote class="close-q rev d1">
+      "We are not asking for a commitment.<br>We are asking for <em class="shimmer">thirty minutes</em> — because once you see your own data move in real time, the next step becomes obvious."
+    </blockquote>
+
+    <div class="slot-grid rev d2">
+      <a href="mailto:contact@harvicsglobal.com?subject=LPP%20Briefing%20-%20Tue%2019%20May&body=Reserving%20the%2014%3A00%20CET%20slot%20at%20Gda%C5%84sk%20HQ." class="slot">
+        <div class="slot-day">Tuesday</div>
+        <div class="slot-date">19 May</div>
+        <div class="slot-time">14:00 CET · 30 min</div>
+        <div class="slot-loc">Gdańsk HQ</div>
+      </a>
+      <a href="mailto:contact@harvicsglobal.com?subject=LPP%20Briefing%20-%20Thu%2021%20May&body=Reserving%20the%2010%3A30%20CET%20virtual%20slot." class="slot">
+        <div class="slot-day">Thursday</div>
+        <div class="slot-date">21 May</div>
+        <div class="slot-time">10:30 CET · 30 min</div>
+        <div class="slot-loc">Virtual · Secure</div>
+      </a>
+      <a href="mailto:contact@harvicsglobal.com?subject=LPP%20Briefing%20-%20Mon%2025%20May&body=Reserving%20the%2009%3A00%20CET%20slot%20at%20Gda%C5%84sk%20HQ." class="slot">
+        <div class="slot-day">Monday</div>
+        <div class="slot-date">25 May</div>
+        <div class="slot-time">09:00 CET · 30 min</div>
+        <div class="slot-loc">Gdańsk HQ</div>
+      </a>
+    </div>
+
+    <div class="direct-line rev d3">
+      <div class="dl-item">
+        <div class="dl-lab">Direct Line</div>
+        <a href="tel:+48000000000" class="dl-val">+48 ···· · book on request</a>
+      </div>
+      <div class="dl-item">
+        <div class="dl-lab">Encrypted</div>
+        <a href="https://wa.me/00000000000" class="dl-val">WhatsApp · Signal</a>
+      </div>
+      <div class="dl-item">
+        <div class="dl-lab">Email</div>
+        <a href="mailto:contact@harvicsglobal.com" class="dl-val">contact@harvicsglobal.com</a>
+      </div>
+    </div>
+
+    <div class="exclusivity-note rev d4">
+      <p><strong>Single-Principal Engagement.</strong> &nbsp; This proposal will not be presented to any LPP competitor in the EU fast-fashion segment for the duration of LPP's review window. Reserved exclusively for the LPP S.A. board.</p>
+    </div>
+
+    <div class="signature-block rev d4">
+      <div class="sig-name">M. M. Usman</div>
+      <div class="sig-title">Founder · Harvics Global Ventures</div>
+    </div>
+
+    <div class="close-brand rev d4" style="margin-top:48px">
+      <div class="close-name">Harvics <span class="shimmer">Global Ventures</span></div>
+      <div class="close-info">contact@harvicsglobal.com &nbsp;·&nbsp; mmusman.com &nbsp;·&nbsp; SS 2026</div>
+      <div style="margin-top:32px"><a href="mailto:contact@harvicsglobal.com?subject=LPP%20%C3%97%20Harvics%20%E2%80%94%20Reserved%20Briefing" class="mag-btn btn-primary"><span>Confirm a Briefing Slot →</span></a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 <span>Harvics Global Ventures</span></div>
+  <div>Confidential — Prepared exclusively for LPP S.A.</div>
+  <div><span>SS 2026</span> · Milan · London · New York · Karachi</div>
+</footer>
+
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">Global Ventures</span><span class="ticker-item">SS 2026</span><span class="ticker-item">Milan</span><span class="ticker-item">London</span><span class="ticker-item">New York</span><span class="ticker-item">Sourcing Intelligence</span><span class="ticker-item">40+ Countries</span><span class="ticker-item">Textile · FMCG · Logistics</span><span class="ticker-item">AI-Driven Reporting</span><span class="ticker-item">Procurement to Sales</span><span class="ticker-item">Real-Time</span><span class="ticker-item">360° Coverage</span><span class="ticker-item">Pakistan Supply Chain</span><span class="ticker-item">CSRD Compliant</span><span class="ticker-item">Pre-Emptive Risk Neutralization</span><span class="ticker-item">Capital Velocity</span><span class="ticker-item">Principal-to-Principal</span><span class="ticker-item">Ground Truth Intelligence</span>
+    <span class="ticker-item">Global Ventures</span><span class="ticker-item">SS 2026</span><span class="ticker-item">Milan</span><span class="ticker-item">London</span><span class="ticker-item">New York</span><span class="ticker-item">Sourcing Intelligence</span><span class="ticker-item">40+ Countries</span><span class="ticker-item">Textile · FMCG · Logistics</span><span class="ticker-item">AI-Driven Reporting</span><span class="ticker-item">Procurement to Sales</span><span class="ticker-item">Real-Time</span><span class="ticker-item">360° Coverage</span><span class="ticker-item">Pakistan Supply Chain</span><span class="ticker-item">CSRD Compliant</span><span class="ticker-item">Pre-Emptive Risk Neutralization</span><span class="ticker-item">Capital Velocity</span><span class="ticker-item">Principal-to-Principal</span><span class="ticker-item">Ground Truth Intelligence</span>
+  </div>
+</div>
+
+<script>
+// LOADER
+window.addEventListener('load',()=>{
+  let p=0;
+  const int=setInterval(()=>{
+    p+=Math.random()*18;
+    if(p>=100){p=100;clearInterval(int);setTimeout(()=>{document.getElementById('loader').classList.add('gone');initParticles();openCurtains();animateCounters();animateBars();},300);}
+    document.getElementById('loader-pct').textContent=Math.floor(p)+'%';
+  },80);
+});
+
+// CURSOR
+const dot=document.getElementById('cur-dot'),ring=document.getElementById('cur-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+(function animR(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(animR);})();
+
+// MAGNETIC BUTTONS
+document.querySelectorAll('.mag-btn').forEach(btn=>{
+  btn.addEventListener('mousemove',e=>{const r=btn.getBoundingClientRect();const x=e.clientX-r.left-r.width/2;const y=e.clientY-r.top-r.height/2;btn.style.transform=`translate(${x*.18}px,${y*.18}px)`;});
+  btn.addEventListener('mouseleave',()=>{btn.style.transform='';});
+});
+
+// PROGRESS + NAV + REEL
+const prog=document.getElementById('prog');
+const sections=['hero','caps','shield','opp','capital','compare','ground','why','steps','closing'];
+window.addEventListener('scroll',()=>{
+  const pct=window.scrollY/(document.body.scrollHeight-window.innerHeight)*100;
+  prog.style.width=pct+'%';
+  document.getElementById('nav').classList.toggle('solid',window.scrollY>60);
+  const dots=document.querySelectorAll('.reel-dot');
+  let active=0;
+  sections.forEach((id,i)=>{const el=document.getElementById(id);if(el&&window.scrollY>=el.offsetTop-window.innerHeight/2)active=i;});
+  dots.forEach((d,i)=>d.classList.toggle('active',i===active));
+});
+
+function scrollSec(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'});}
+
+// REVEAL
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis');}),{threshold:.1});
+document.querySelectorAll('.rev').forEach(el=>ro.observe(el));
+
+// TIMELINE STAGGER
+const to=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting){document.querySelectorAll('.tl-item').forEach((it,i)=>setTimeout(()=>it.classList.add('vis'),i*200));to.disconnect();}
+}),{threshold:.05});
+const tlSec=document.getElementById('steps');if(tlSec)to.observe(tlSec);
+
+// CURTAINS
+function openCurtains(){setTimeout(()=>document.querySelectorAll('.curtain').forEach((el,i)=>setTimeout(()=>el.classList.add('open'),i*120)),400);}
+
+// ACCORDION
+function toggleAcc(el){const was=el.classList.contains('open');document.querySelectorAll('.acc-item').forEach(i=>i.classList.remove('open'));if(!was)el.classList.add('open');}
+
+// CLOCKS
+function updateClocks(){
+  const now=new Date();
+  const fmt=tz=>now.toLocaleTimeString('en-GB',{timeZone:tz,hour:'2-digit',minute:'2-digit'});
+  document.getElementById('t-ldn').textContent=fmt('Europe/London');
+  document.getElementById('t-mil').textContent=fmt('Europe/Rome');
+  document.getElementById('t-khi').textContent=fmt('Asia/Karachi');
+}
+updateClocks();setInterval(updateClocks,10000);
+
+// PARTICLES
+function initParticles(){
+  const canvas=document.getElementById('pCanvas');
+  const ctx=canvas.getContext('2d');
+  canvas.width=window.innerWidth;canvas.height=window.innerHeight;
+  window.addEventListener('resize',()=>{canvas.width=window.innerWidth;canvas.height=window.innerHeight;});
+  const particles=Array.from({length:80},()=>({
+    x:Math.random()*canvas.width,y:Math.random()*canvas.height,
+    r:Math.random()*1.8+0.4,vx:(Math.random()-.5)*.3,vy:-Math.random()*.5-.1,
+    alpha:Math.random()*.6+.2,shimmer:Math.random()*Math.PI*2,
+  }));
+  function drawParticles(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    particles.forEach(p=>{
+      p.shimmer+=.02;const alpha=p.alpha*(0.7+0.3*Math.sin(p.shimmer));
+      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(184,137,62,${alpha})`;ctx.shadowBlur=6;
+      ctx.shadowColor=`rgba(184,137,62,${alpha*.5})`;ctx.fill();
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.y<-10){p.y=canvas.height+10;p.x=Math.random()*canvas.width;}
+      if(p.x<0)p.x=canvas.width;if(p.x>canvas.width)p.x=0;
+    });
+    requestAnimationFrame(drawParticles);
+  }
+  drawParticles();
+}
+
+// ANIMATED COUNTERS
+function animateCounters(){
+  const targets=[{id:'cap-num1',end:12.4,decimals:1,suffix:'M'},{id:'cap-num2',end:10,decimals:0,suffix:''},{id:'cap-num3',end:8,decimals:0,suffix:''}];
+  targets.forEach(t=>{
+    const el=document.getElementById(t.id);if(!el)return;
+    const obs=new IntersectionObserver(es=>{
+      if(es[0].isIntersecting){
+        obs.disconnect();let start=0,dur=1800;const step=ts=>{
+          if(!start)start=ts;const p=Math.min((ts-start)/dur,1);const v=p*t.end;
+          el.textContent=(t.decimals?v.toFixed(t.decimals):Math.floor(v))+t.suffix;
+          if(p<1)requestAnimationFrame(step);
+        };requestAnimationFrame(step);
+      }
+    },{threshold:.5});
+    obs.observe(el);
+  });
+}
+
+// ANIMATE BARS
+function animateBars(){
+  const barObs=new IntersectionObserver(es=>{
+    es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis-bar');});
+  },{threshold:.3});
+  document.querySelectorAll('.lc-bar').forEach(b=>barObs.observe(b));
+}
+
+// LIVE COST-OF-INACTION TICKER
+(function(){
+  const tEl=document.getElementById('coi-trapped');
+  const dEl=document.getElementById('coi-days');
+  const rEl=document.getElementById('coi-recover');
+  if(!tEl||!dEl||!rEl)return;
+  const start=Date.now();
+  // Assumption baseline: industry avg trapped capital = ~€1,840/sec while you read
+  // (rough order-of-magnitude figure for illustration only)
+  const trappedRate=1840;
+  const recoverableTotal=42_000_000; // €42M annual estimate
+  const fmt=n=>'€'+Math.floor(n).toLocaleString('en-US');
+  function tick(){
+    const elapsed=(Date.now()-start)/1000;
+    tEl.textContent=fmt(elapsed*trappedRate);
+    dEl.textContent=(14+(Math.sin(elapsed/4)*0.6)).toFixed(1);
+    // recoverable counts up smoothly to the headline figure over ~4s, then idles
+    const r=Math.min(elapsed/4,1)*recoverableTotal;
+    rEl.textContent=fmt(r);
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+})();
+
+// INTERACTIVE CALCULATOR
+(function(){
+  const order=document.getElementById('calc-order');
+  const count=document.getElementById('calc-count');
+  const days=document.getElementById('calc-days');
+  const rate=document.getElementById('calc-rate');
+  const out=document.getElementById('calc-output');
+  if(!order||!out)return;
+  const fmt=n=>Math.round(n).toLocaleString('en-US');
+  function recalc(){
+    const o=parseFloat(order.value);   // €M per order
+    const c=parseFloat(count.value);   // orders/yr
+    const d=parseFloat(days.value);    // blind-spot days
+    const r=parseFloat(rate.value)/100;// cost of capital
+    document.getElementById('calc-order-v').textContent='€ '+o.toFixed(1)+'M';
+    document.getElementById('calc-count-v').textContent=c;
+    document.getElementById('calc-days-v').textContent=d;
+    document.getElementById('calc-rate-v').textContent=r*100+'%';
+    // Compress 10 of those days. Recoverable = annual capital tied * (10/d) * cost-of-capital
+    const annualTied=o*1_000_000*c*(d/365);
+    const compressed=Math.min(10,d)/d;
+    const recoverable=annualTied*compressed*r + annualTied*compressed*0.6; // working-capital release proxy
+    out.textContent=fmt(recoverable);
+  }
+  [order,count,days,rate].forEach(el=>el.addEventListener('input',recalc));
+  // run once on load and again when scrolled into view
+  recalc();
+  const obs=new IntersectionObserver(es=>{if(es[0].isIntersecting){recalc();obs.disconnect();}},{threshold:.3});
+  obs.observe(out.closest('.calc-box'));
+})();
+
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth'});});
+});
+
+// SOUND — Raymond narration with smooth fade
+const bgm=document.getElementById('bgm');
+let soundOn=false,fadeTimer=null;
+if(bgm)bgm.volume=0;
+function fadeAudio(target,duration){
+  if(!bgm)return;
+  clearInterval(fadeTimer);
+  const start=bgm.volume,delta=target-start,steps=24,stepTime=duration/steps;
+  let i=0;
+  fadeTimer=setInterval(()=>{
+    i++;bgm.volume=Math.max(0,Math.min(1,start+delta*(i/steps)));
+    if(i>=steps){clearInterval(fadeTimer);if(target===0)bgm.pause();}
+  },stepTime);
+}
+function toggleSound(){
+  if(!bgm)return;
+  soundOn=!soundOn;
+  document.getElementById('sound-btn').textContent=soundOn?'🔊':'🔇';
+  if(soundOn){bgm.play().then(()=>fadeAudio(0.65,800)).catch(()=>{soundOn=false;document.getElementById('sound-btn').textContent='🔇';});}
+  else{fadeAudio(0,500);}
+}
+
+// AUTO OPEN FIRST ACCORDION
+setTimeout(()=>document.querySelector('.acc-item')?.classList.add('open'),1800);
+</script>
+</body>
+</html>

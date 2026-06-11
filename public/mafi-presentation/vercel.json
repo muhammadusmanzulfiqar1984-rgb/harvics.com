@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.{png,jpg,jpeg,webp,svg,ico}",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.{mp4,mp3,aiff,m4a}",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.*\\.(png|jpg|jpeg|webp|svg|ico)$",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      },
+      "dest": "/$0"
+    },
+    {
+      "src": "/.*\\.(mp4|mp3|aiff|m4a)$",
+      "headers": {
+        "Cache-Control": "public, max-age=604800"
+      },
+      "dest": "/$0"
+    },
+    {
+      "src": "/(.*\\.html)$",
+      "headers": {
+        "Cache-Control": "no-cache, no-store, must-revalidate",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Referrer-Policy": "no-referrer"
+      },
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}

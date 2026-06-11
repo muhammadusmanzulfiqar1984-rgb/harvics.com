@@ -1,0 +1,91 @@
+{
+  "header.login": "Login",
+  "nav.who": "Who We Are",
+  "nav.reach": "Global Reach",
+  "nav.supply": "Supply Chain",
+  "nav.portfolio": "Portfolio",
+  "nav.contact": "Contact",
+
+  "hero.eyebrow": "Harvics Global Ventures",
+  "hero.title": "Harvics Global Ventures",
+  "hero.tagline": "Exploring Across Hemisphere",
+  "hero.cities": "London · Milan · New York",
+  "hero.cta": "Let's Talk Commercial",
+
+  "stat.countries": "Countries",
+  "stat.years": "Years Experience",
+  "stat.hqs": "Continental HQs",
+
+  "ch.who.eyebrow": "Chapter I",
+  "ch.who.title": "Built For The Complexity Of Global Trade",
+  "ch.who.lead": "We do not just source products. We engineer supply chains.",
+  "ch.who.body": "Harvics was forged by seasoned trade professionals with deep roots across Pakistan's manufacturing corridors and global retail networks. The company is building infrastructure for AI-powered global sourcing where real-time intelligence and execution control converge.",
+
+  "ch.principles.eyebrow": "Chapter II",
+  "ch.principles.title": "Our Principles",
+  "card.quality.t": "Quality",
+  "card.quality.b": "Every product, every shipment, every standard uncompromised.",
+  "card.efficiency.t": "Efficiency",
+  "card.efficiency.b": "Resourceful by design. Rapid by execution. Ready for anything.",
+  "card.resilience.t": "Resilience",
+  "card.resilience.b": "Built to absorb disruption and protect delivery certainty.",
+  "card.partnership.t": "Partnership",
+  "card.partnership.b": "Trust-led operating relationships built for long-term scale.",
+
+  "ch.reach.eyebrow": "Chapter III",
+  "ch.reach.title": "From Source To Shore We Control The Chain",
+  "ch.reach.body": "Harvics connects sourcing, freight, control, and execution across international markets. Global reach here is not abstract positioning; it is a managed, visible operating chain.",
+
+  "ch.supply.eyebrow": "Chapter IV",
+  "ch.supply.title": "End-To-End Supply Chain Command",
+  "ch.supply.body": "Every link in the chain is managed with precision and intelligence: product development, global sourcing, quality assurance, logistics, freight, and multi-node execution visibility.",
+
+  "ch.future.eyebrow": "Chapter V",
+  "ch.future.title": "The Future Of Trade Is Intelligent",
+  "ch.future.body": "Harvics is building the infrastructure for AI-powered global sourcing where real-time data, predictive logistics, and faster commercial decision-making create measurable client advantage.",
+
+  "ch.speed.eyebrow": "Chapter VI",
+  "ch.speed.title": "Speed And Competence",
+  "ch.speed.body": "A 48-hour sourcing response model compresses cycles from brief to supplier engagement. Harvics uses real-time supplier intelligence to shorten delays without compromising operational rigor.",
+
+  "ch.digital.eyebrow": "Chapter VII",
+  "ch.digital.title": "Digital Infrastructure",
+  "ch.digital.body": "AI sourcing engines, risk scoring, procurement automation, and digital command tools are embedded into every layer of the Harvics operating model.",
+
+  "ch.sustain.eyebrow": "Chapter VIII",
+  "ch.sustain.title": "Sustainability",
+  "ch.sustain.body": "Responsible trade is embedded in how Harvics sources, operates, and grows through environmental stewardship, responsible materials, and carbon-conscious logistics choices.",
+
+  "ch.services.eyebrow": "Chapter IX",
+  "ch.services.title": "Service Coverage Across The Value Chain",
+  "card.scs.t": "Supply Chain Solutions",
+  "card.scs.b": "Manufacturing control, DC and freight forwarding, hubbing, consolidation, and eLogistics.",
+  "card.sourcing.t": "Sourcing & Procurement",
+  "card.sourcing.b": "Factory alignment, supplier negotiation, procurement discipline, and intelligent buying workflows.",
+  "card.qa.t": "Quality & Compliance",
+  "card.qa.b": "Inline control, approvals, inspection, certifications, and shipment readiness management.",
+
+  "ch.portfolio.eyebrow": "Chapter X",
+  "ch.portfolio.title": "Product Portfolio",
+  "ch.portfolio.lead": "Precision-sourced across the world's finest manufacturing corridors.",
+  "card.lks.t": "Leather, Knit & Sportswear",
+  "card.lks.b": "Specialized sourcing corridors across Asia for premium apparel and performance-led categories.",
+  "card.dcw.t": "Denim, Chino & Work Wear",
+  "card.dcw.b": "Retail-grade denim, precision-fit chinos, and performance workwear built for scale.",
+  "card.fht.t": "Footwear & Home Textile",
+  "card.fht.b": "Footwear and home collections for hospitality, lifestyle, and global retail programs.",
+  "card.overview.t": "Portfolio Overview",
+  "card.overview.b": "Leather goods, knitwear, sportswear, denim, chino, workwear, footwear, and home textile.",
+
+  "ch.network.eyebrow": "Chapter XI",
+  "ch.network.title": "A Global Network Of Trust",
+  "ch.network.body": "Harvics helps leading retailers and brands source, manage, and deliver across every continent through a network built on years of precise execution.",
+  "net.hubs": "Textile manufacturing hubs",
+  "net.routes": "Active logistics routes",
+  "net.ontime": "On-time delivery rate",
+
+  "ch.contact.eyebrow": "Final Chapter",
+  "ch.contact.title": "Ready For Strategic Partnership?",
+  "ch.contact.lead": "Harvics Global Ventures combines sourcing intelligence, execution command, and premium product capability into one scalable platform.",
+  "ch.contact.cta": "Contact Harvics"
+}

@@ -1,0 +1,33 @@
+# Large unused files
+music.mp3
+music_b64.txt
+welcome_new.mp3
+welcome_raw.aiff
+welcome.aiff
+translate.py
+
+# Unused music files
+Salt_and_Silver.mp3
+The_Gilded_Bow.mp3
+Velvet_Hour_on_the_Nile.mp3
+جسر_النور.mp3
+جسرٌ_يعانق_الأفق.mp3
+جسرٌ_يعانقُ_الأفق.mp3
+خيوطُ_الذهب.mp3
+
+# Unused images
+aurum-7.png
+aurum-8.png
+card-1a.png
+card-1b.png
+card-10a.png
+card-11.png
+
+# PDFs
+*.pdf
+
+# Node
+node_modules/
+
+# OS
+.DS_Store

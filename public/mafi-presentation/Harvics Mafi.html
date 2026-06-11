@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harvics × MAFI Commercial Engagement Framework</title>
+<style>
+:root {
+  --g1: #FFF0A0;
+  --g2: #C9A84C;
+  --g3: #8B6400;
+  --g4: #FFE566;
+  --black: #080808;
+  --black-2: #101010;
+  --black-3: #161616;
+  --black-4: #1E1E1E;
+  --black-5: #252525;
+  --text-primary: #F5EDD0;
+  --text-secondary: #C4A96A;
+  --text-muted: #5A4E30;
+  --border: rgba(201,168,76,0.18);
+  --border-strong: rgba(201,168,76,0.45);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--black);
+  color:var(--text-primary);
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:15px;
+  line-height:1.75;
+}
+
+/* SHIMMER GOLD TEXT */
+@keyframes shimmer {
+  0%   { background-position: -400% center; }
+  100% { background-position: 400% center; }
+}
+.gold-text {
+  background: linear-gradient(
+    105deg,
+    #8B6400 0%,
+    #C9A84C 20%,
+    #FFF0A0 35%,
+    #FFE566 42%,
+    #FFFACD 48%,
+    #FFE566 54%,
+    #FFF0A0 60%,
+    #C9A84C 75%,
+    #8B6400 100%
+  );
+  background-size: 400% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+.gold-text-slow {
+  background: linear-gradient(
+    105deg,
+    #8B6400 0%,
+    #C9A84C 20%,
+    #FFF0A0 35%,
+    #FFE566 42%,
+    #FFFACD 48%,
+    #FFE566 54%,
+    #FFF0A0 60%,
+    #C9A84C 75%,
+    #8B6400 100%
+  );
+  background-size: 400% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 7s linear infinite;
+}
+
+/* GLOSS BODY */
+body::before {
+  content:'';
+  position:fixed;top:0;left:0;right:0;bottom:0;
+  background:
+    radial-gradient(ellipse 80% 40% at 50% 0%, rgba(201,168,76,0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 60% at 80% 100%, rgba(100,70,0,0.06) 0%, transparent 60%);
+  pointer-events:none;z-index:0;
+}
+
+/* NAV */
+nav {
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  background:rgba(8,8,8,0.92);
+  border-bottom:1px solid var(--border-strong);
+  backdrop-filter:blur(12px);
+  padding:0 2rem;
+  display:flex;align-items:center;gap:0;overflow-x:auto;
+  scrollbar-width:none;
+  box-shadow:0 1px 30px rgba(201,168,76,0.12);
+}
+nav::-webkit-scrollbar{display:none;}
+nav a {
+  color:var(--text-secondary);
+  text-decoration:none;
+  font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;
+  padding:14px 13px;white-space:nowrap;
+  transition:color 0.2s;
+  border-bottom:2px solid transparent;
+  font-family:Georgia,serif;
+}
+nav a:hover{
+  background:linear-gradient(105deg,#8B6400,#C9A84C,#FFF0A0,#C9A84C,#8B6400);
+  background-size:300% auto;
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:shimmer 2s linear infinite;
+  border-bottom-color:#C9A84C;
+}
+
+/* SECTIONS */
+section{padding:80px 0;border-bottom:1px solid var(--border);position:relative;z-index:1;}
+.container{max-width:860px;margin:0 auto;padding:0 2.5rem;}
+
+/* COVER */
+#cover{
+  min-height:100vh;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;
+  background:#080808;
+  padding:120px 2rem 80px;
+  border-bottom:1px solid var(--border-strong);
+  position:relative;overflow:hidden;
+}
+#cover-canvas{position:absolute;inset:0;z-index:0;pointer-events:none;}
+#cover>*:not(#cover-canvas){position:relative;z-index:1;}
+
+.cover-badge{
+  font-size:10px;letter-spacing:0.2em;text-transform:uppercase;
+  border:1px solid rgba(201,168,76,0.5);
+  padding:6px 20px;margin-bottom:3rem;
+  display:inline-block;
+  background:rgba(201,168,76,0.06);
+  box-shadow:0 0 20px rgba(201,168,76,0.15), inset 0 1px 0 rgba(255,255,255,0.08);
+}
+.cover-title{
+  font-size:clamp(2rem,5vw,3.6rem);font-weight:400;
+  line-height:1.15;margin-bottom:0.5rem;letter-spacing:0.02em;
+}
+.cover-sub{
+  font-size:clamp(1.1rem,2.5vw,1.7rem);
+  margin-bottom:3rem;
+}
+.cover-divider{
+  width:100px;height:1px;
+  background:linear-gradient(90deg,transparent,#C9A84C 30%,#FFF0A0 50%,#C9A84C 70%,transparent);
+  margin:0 auto 3rem;
+  box-shadow:0 0 12px rgba(201,168,76,0.5);
+}
+.cover-tagline{
+  font-size:clamp(1rem,2.2vw,1.3rem);
+  font-style:italic;
+  max-width:580px;line-height:1.7;margin-bottom:3rem;
+}
+.cover-meta{
+  font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-muted);
+}
+.cover-meta span{color:rgba(201,168,76,0.4);margin:0 10px;}
+
+/* SECTION HEADERS */
+.section-label{
+  font-size:10px;letter-spacing:0.22em;text-transform:uppercase;
+  margin-bottom:0.75rem;
+}
+h2{
+  font-size:clamp(1.4rem,3vw,1.9rem);font-weight:400;
+  margin-bottom:0.5rem;line-height:1.3;
+}
+.section-intro{color:var(--text-secondary);font-size:14px;margin-bottom:2.5rem;max-width:620px;}
+.gold-rule{
+  width:70px;height:1px;
+  background:linear-gradient(90deg,transparent,#C9A84C,#FFF0A0,#C9A84C,transparent);
+  box-shadow:0 0 8px rgba(201,168,76,0.4);
+  margin:1.5rem 0 2.5rem;
+}
+
+/* GLOSS CARDS */
+.gloss-card {
+  background: linear-gradient(
+    160deg,
+    rgba(40,32,10,0.9) 0%,
+    rgba(22,18,6,0.95) 40%,
+    rgba(16,13,4,0.98) 100%
+  );
+  border:1px solid rgba(201,168,76,0.25);
+  position:relative;overflow:hidden;
+}
+.gloss-card::before {
+  content:'';
+  position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,240,160,0.6),rgba(255,255,255,0.3),rgba(255,240,160,0.6),transparent);
+}
+.gloss-card::after {
+  content:'';
+  position:absolute;top:0;left:0;right:0;height:40%;
+  background:linear-gradient(180deg,rgba(255,240,160,0.04) 0%,transparent 100%);
+  pointer-events:none;
+}
+
+/* PRODUCT CARDS */
+.product-card{
+  padding:1.75rem 2rem;margin-bottom:1.25rem;
+}
+.product-card::before{
+  background:linear-gradient(90deg,transparent,rgba(255,240,160,0.6),rgba(255,255,255,0.3),rgba(255,240,160,0.6),transparent);
+}
+.product-card-accent{
+  position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,#FFF0A0,#C9A84C,#8B6400,#C9A84C,#FFF0A0);
+  box-shadow:0 0 10px rgba(201,168,76,0.6);
+}
+.product-header{display:flex;align-items:baseline;gap:14px;margin-bottom:1rem;}
+.product-icon{font-size:1.4rem;line-height:1;flex-shrink:0;}
+.product-title{font-size:1.1rem;font-weight:400;letter-spacing:0.03em;}
+.product-badge{
+  font-size:10px;letter-spacing:0.1em;text-transform:uppercase;
+  border:1px solid rgba(201,168,76,0.35);
+  padding:3px 10px;margin-left:auto;white-space:nowrap;
+  background:rgba(201,168,76,0.07);
+  color:var(--text-secondary);
+}
+.product-body{color:var(--text-secondary);font-size:14px;}
+.routing-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem;}
+@media(max-width:600px){.routing-grid{grid-template-columns:1fr;}}
+.routing-item{
+  background:rgba(10,8,2,0.6);
+  padding:0.85rem 1rem;
+  border:1px solid rgba(201,168,76,0.12);
+  border-top:1px solid rgba(255,240,160,0.15);
+}
+.routing-country{
+  font-size:11px;letter-spacing:0.12em;text-transform:uppercase;
+  margin-bottom:0.35rem;
+}
+.routing-detail{font-size:13px;color:var(--text-secondary);line-height:1.6;}
+.insight-box{
+  background:rgba(201,168,76,0.05);
+  border-left:2px solid;
+  border-image:linear-gradient(180deg,#FFF0A0,#C9A84C,#8B6400) 1;
+  padding:0.85rem 1.2rem;margin-top:1rem;
+  font-size:13px;color:var(--text-secondary);font-style:italic;
+}
+
+/* DESK PILLARS */
+.desk-pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin:2rem 0;}
+.desk-pillar{padding:1.25rem;}
+.pillar-num{font-size:2rem;font-weight:400;line-height:1;margin-bottom:0.5rem;}
+.pillar-title{font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:0.5rem;}
+.pillar-body{font-size:13px;color:var(--text-secondary);line-height:1.6;}
+
+.verbatim-block{
+  background:linear-gradient(135deg,rgba(40,30,5,0.8),rgba(20,15,3,0.95));
+  border:1px solid rgba(201,168,76,0.4);
+  padding:2.5rem 2rem 2rem;margin:2rem 0;
+  font-style:italic;color:var(--text-primary);
+  font-size:15px;line-height:1.8;position:relative;
+  box-shadow:0 4px 40px rgba(201,168,76,0.08), inset 0 1px 0 rgba(255,240,160,0.15);
+}
+.verbatim-block::before{
+  content:'\201C';
+  position:absolute;top:-0.3rem;left:1.5rem;
+  font-size:5rem;line-height:1;font-style:normal;
+  background:linear-gradient(135deg,#FFF0A0,#C9A84C);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+
+/* PHASES */
+.phase-block{margin-bottom:1.25rem;overflow:hidden;}
+.phase-header{
+  padding:1rem 1.5rem;
+  display:flex;align-items:center;gap:1rem;
+  border-bottom:1px solid var(--border);
+  background:linear-gradient(90deg,rgba(30,22,5,0.9),rgba(15,12,3,0.95));
+}
+.phase-num{
+  font-size:10px;letter-spacing:0.15em;text-transform:uppercase;
+  padding:4px 12px;
+  background:linear-gradient(90deg,#8B6400,#C9A84C,#FFF0A0,#C9A84C,#8B6400);
+  background-size:300% auto;
+  animation:shimmer 3s linear infinite;
+  color:transparent;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  border:1px solid rgba(201,168,76,0.5);
+}
+.phase-name{font-size:1rem;}
+.phase-fee{margin-left:auto;font-size:1.1rem;font-variant-numeric:tabular-nums;}
+.phase-body{padding:1.25rem 1.5rem;font-size:14px;color:var(--text-secondary);}
+.phase-items{list-style:none;margin-top:0.75rem;}
+.phase-items li{padding:4px 0 4px 1.25rem;position:relative;font-size:13px;color:var(--text-secondary);}
+.phase-items li::before{content:'—';position:absolute;left:0;color:rgba(201,168,76,0.5);}
+
+/* FEE TABLE */
+.fee-table{width:100%;border-collapse:collapse;margin:1.5rem 0;}
+.fee-table th{
+  font-size:10px;letter-spacing:0.15em;text-transform:uppercase;
+  color:var(--text-muted);text-align:left;
+  padding:8px 12px;border-bottom:1px solid var(--border-strong);
+}
+.fee-table td{padding:14px 12px;border-bottom:1px solid var(--border);font-size:14px;color:var(--text-secondary);vertical-align:top;}
+.fee-table tr:last-child td{border-bottom:none;}
+.fee-amount{font-size:1.1rem;font-variant-numeric:tabular-nums;white-space:nowrap;}
+
+/* PRINCIPLES */
+.principles-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);margin:1.5rem 0;}
+@media(max-width:560px){.principles-grid{grid-template-columns:1fr;}}
+.principle-cell{
+  padding:1.5rem;
+  background:linear-gradient(145deg,rgba(25,18,4,0.95),rgba(12,9,2,0.98));
+  transition:background 0.3s;
+  position:relative;overflow:hidden;
+}
+.principle-cell::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,240,160,0.25),transparent);
+}
+.principle-cell:hover{background:linear-gradient(145deg,rgba(40,28,6,0.95),rgba(20,14,3,0.98));}
+.principle-number{font-size:2.5rem;font-weight:400;line-height:1;margin-bottom:0.5rem;}
+.principle-title{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:0.5rem;}
+.principle-body{font-size:13px;color:var(--text-secondary);line-height:1.6;}
+
+/* TERMS */
+.terms-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:1.5rem 0;}
+.term-card{padding:1.25rem;}
+.term-title{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.6rem;}
+.term-body{font-size:13px;color:var(--text-secondary);line-height:1.6;}
+
+/* CLOSING */
+#closing{background:var(--black-3);border-top:1px solid var(--border-strong);padding:80px 0;}
+.closing-statement{
+  font-size:clamp(1rem,2.5vw,1.25rem);font-style:italic;
+  color:var(--text-primary);line-height:1.8;
+  border-left:3px solid;
+  border-image:linear-gradient(180deg,#FFF0A0,#C9A84C,#8B6400) 1;
+  padding-left:2rem;margin:2rem 0;
+}
+.closing-final{font-size:1rem;letter-spacing:0.05em;margin-top:2.5rem;}
+
+/* UTILS */
+p{margin-bottom:1rem;}
+p:last-child{margin-bottom:0;}
+ul.std{padding-left:0;list-style:none;margin:0.75rem 0;}
+ul.std li{padding:3px 0 3px 1.25rem;position:relative;font-size:14px;color:var(--text-secondary);}
+ul.std li::before{content:'—';position:absolute;left:0;color:rgba(201,168,76,0.5);}
+.muted{color:var(--text-muted);font-size:13px;}
+.gold-inline{color:#C9A84C;}
+
+footer{
+  text-align:center;padding:2rem;
+  font-size:11px;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--text-muted);
+  border-top:1px solid var(--border);
+  position:relative;z-index:1;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#cover">Home</a>
+  <a href="#routing">Routing Map</a>
+  <a href="#desk">Dedicated Desk</a>
+  <a href="#scope">Scope</a>
+  <a href="#commercial">Commercial Model</a>
+  <a href="#financial">Financial Proposal</a>
+  <a href="#payment">Payment Terms</a>
+  <a href="#exclusivity">Exclusivity</a>
+  <a href="#term">Term &amp; Termination</a>
+  <a href="#approach">Our Approach</a>
+  <a href="#closing">Closing</a>
+</nav>
+
+<!-- COVER -->
+<section id="cover">
+  <canvas id="cover-canvas"></canvas>
+
+  <!-- SVG World Map Silhouette -->
+  <svg id="cover-svg" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="mapFade" cx="50%" cy="50%" r="50%">
+        <stop offset="20%" stop-color="#C9A84C" stop-opacity="1"/>
+        <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+      </radialGradient>
+      <mask id="mapMask"><rect width="1000" height="500" fill="url(#mapFade)"/></mask>
+    </defs>
+    <g mask="url(#mapMask)" fill="#C9A84C" stroke="none">
+      <!-- North America -->
+      <path d="M95,80 Q105,72 118,75 Q130,70 145,74 Q158,68 170,72 Q180,65 195,70 Q205,62 215,68 Q225,58 235,65 Q240,72 232,80 Q225,90 215,95 Q205,102 195,108 Q185,115 175,120 Q168,125 160,132 Q152,140 145,148 Q138,158 133,168 Q128,178 125,188 Q122,198 120,208 Q118,218 115,228 L110,238 Q105,245 100,252 Q94,260 89,268 Q84,278 80,288 Q76,300 73,312 Q70,324 68,336 Q62,310 58,284 Q54,258 52,232 Q50,206 52,182 Q54,158 58,136 Q62,114 68,96 Q74,80 82,78 Z"/>
+      <path d="M62,278 Q66,290 68,302 Q70,314 70,326 Q68,338 64,350 Q60,362 54,372 Q48,382 42,390 Q36,398 30,405 Q38,400 46,394 Q54,388 60,380 Q66,372 70,362 Q74,352 74,340 Q72,328 70,316 Q68,302 66,290 Z"/>
+      <!-- Greenland -->
+      <path d="M210,32 Q220,28 230,30 Q240,28 248,34 Q252,40 248,46 Q242,52 234,56 Q226,58 218,54 Q212,48 210,40 Z"/>
+      <!-- South America -->
+      <path d="M188,288 Q196,280 205,278 Q214,276 222,280 Q230,285 235,292 Q240,300 242,310 Q244,320 244,330 Q244,342 242,354 Q240,366 236,378 Q232,390 227,402 Q222,414 216,424 Q210,434 203,442 Q196,450 188,456 Q180,462 172,465 Q164,468 156,468 Q148,465 141,460 Q134,454 128,446 Q122,438 118,428 Q114,418 112,406 Q110,394 112,382 Q114,370 118,360 Q122,350 128,342 Q134,334 140,326 Q147,318 155,312 Q163,306 172,300 Q180,294 188,288 Z"/>
+      <!-- Europe -->
+      <path d="M442,58 Q450,52 460,54 Q470,50 480,54 Q490,52 500,56 Q510,54 518,60 Q526,58 534,64 Q540,62 546,68 Q550,74 548,80 Q544,86 538,90 Q532,94 524,96 Q516,98 508,98 Q500,96 492,94 Q484,92 476,88 Q468,82 462,76 Q456,68 452,62 Q448,56 442,58 Z"/>
+      <path d="M468,94 Q476,90 484,94 Q492,98 498,104 Q504,110 506,118 Q506,126 502,132 Q498,138 492,142 Q486,146 480,148 Q474,150 468,148 Q462,145 458,140 Q454,134 452,128 Q450,122 452,116 Q454,110 458,104 Q462,98 468,94 Z"/>
+      <path d="M490,52 Q500,44 512,46 Q524,44 534,50 Q544,48 552,56 Q558,62 555,70 Q550,76 543,80 Q536,84 528,86 Q520,88 512,88 Q504,86 497,82 Q490,78 487,70 Q484,62 490,52 Z"/>
+      <!-- Scandinavia -->
+      <path d="M484,28 Q492,20 502,22 Q512,20 520,26 Q526,32 524,40 Q520,46 514,50 Q508,54 502,56 Q496,56 490,52 Q484,48 482,42 Q480,36 484,28 Z"/>
+      <path d="M518,22 Q526,14 536,16 Q544,14 552,20 Q558,26 556,34 Q552,40 546,44 Q540,48 534,50 Q528,50 522,46 Q516,42 514,36 Q512,30 518,22 Z"/>
+      <!-- British Isles -->
+      <path d="M444,68 Q450,62 458,64 Q464,68 462,76 Q458,82 452,84 Q446,84 442,80 Q438,74 444,68 Z"/>
+      <!-- Africa -->
+      <path d="M476,182 Q486,176 496,178 Q506,176 516,182 Q524,180 532,188 Q538,186 544,194 Q548,202 546,210 Q542,218 537,224 Q532,230 526,234 Q520,238 514,240 Q508,242 502,242 Q496,240 490,236 Q484,232 479,226 Q474,220 471,212 Q468,204 468,196 Q468,188 476,182 Z"/>
+      <path d="M478,238 Q488,234 498,236 Q508,234 516,240 Q522,238 528,246 Q532,254 530,264 Q528,274 524,282 Q520,290 514,298 Q508,306 501,312 Q494,318 487,322 Q480,326 473,328 Q466,328 460,324 Q454,320 449,314 Q444,308 441,300 Q438,292 438,284 Q438,274 440,264 Q442,254 446,246 Q450,238 456,234 Q462,230 468,230 Q474,230 478,238 Z"/>
+      <path d="M470,326 Q480,320 490,322 Q500,320 508,326 Q514,332 512,342 Q508,352 502,360 Q496,368 489,374 Q482,380 474,382 Q466,382 460,376 Q454,370 452,360 Q450,350 452,340 Q454,330 462,324 Z"/>
+      <!-- Middle East -->
+      <path d="M548,158 Q558,152 568,154 Q578,152 586,160 Q592,158 598,166 Q602,174 598,182 Q594,190 588,196 Q582,202 575,206 Q568,210 561,210 Q554,208 548,204 Q542,198 540,190 Q538,182 540,174 Q542,166 548,158 Z"/>
+      <!-- India -->
+      <path d="M614,168 Q624,162 634,164 Q644,162 652,170 Q658,178 656,188 Q652,198 646,206 Q640,214 632,220 Q624,226 616,230 Q608,232 601,228 Q594,224 590,216 Q586,208 586,198 Q586,188 590,180 Q594,172 600,168 Q606,164 614,168 Z"/>
+      <path d="M610,228 Q620,224 628,228 Q636,232 638,242 Q638,252 633,260 Q628,268 620,272 Q612,274 604,270 Q596,266 592,256 Q588,246 590,236 Q592,226 600,222 Z"/>
+      <!-- Southeast Asia / Indonesia -->
+      <path d="M696,200 Q706,194 716,196 Q726,194 734,202 Q740,210 737,220 Q733,228 726,234 Q719,240 711,242 Q703,244 696,240 Q689,236 685,228 Q681,220 683,212 Q685,204 696,200 Z"/>
+      <path d="M736,218 Q746,212 755,214 Q764,212 771,220 Q776,228 773,238 Q769,246 761,252 Q753,258 745,260 Q737,260 730,256 Q723,252 720,242 Q717,232 720,224 Q723,216 736,218 Z"/>
+      <path d="M755,240 Q764,234 773,236 Q781,234 787,242 Q791,250 788,260 Q784,268 776,274 Q768,278 760,278 Q752,278 746,272 Q740,266 740,256 Q740,246 748,240 Z"/>
+      <!-- China / East Asia -->
+      <path d="M668,96 Q680,88 692,90 Q704,88 714,96 Q722,94 730,104 Q736,112 734,122 Q730,132 722,138 Q714,144 705,148 Q696,152 686,152 Q676,150 667,146 Q658,142 652,134 Q646,126 645,116 Q644,106 650,98 Q656,90 668,96 Z"/>
+      <path d="M712,90 Q722,82 734,84 Q744,82 752,90 Q758,98 755,108 Q751,118 743,124 Q735,130 726,134 Q717,136 708,134 Q699,132 693,126 Q687,120 686,110 Q685,100 690,92 Q696,84 712,90 Z"/>
+      <path d="M748,82 Q758,74 769,76 Q780,74 788,82 Q794,90 791,100 Q787,110 779,116 Q771,122 762,124 Q753,126 744,122 Q735,118 732,108 Q729,98 734,90 Q738,82 748,82 Z"/>
+      <path d="M660,134 Q670,128 680,130 Q690,128 698,136 Q704,144 701,154 Q697,164 689,170 Q681,176 672,178 Q663,178 655,174 Q647,170 644,160 Q641,150 644,142 Q647,134 660,134 Z"/>
+      <!-- Japan / Korea -->
+      <path d="M788,96 Q796,90 804,92 Q812,90 818,98 Q822,106 818,114 Q814,122 807,126 Q800,130 793,128 Q786,126 782,118 Q778,110 780,102 Q782,94 788,96 Z"/>
+      <path d="M814,82 Q820,76 828,78 Q836,76 840,84 Q842,92 839,100 Q836,108 829,112 Q822,116 815,114 Q808,112 806,104 Q804,96 808,88 Z"/>
+      <!-- Australia -->
+      <path d="M742,338 Q754,330 766,332 Q778,330 788,338 Q796,336 804,346 Q810,354 808,366 Q804,376 797,384 Q790,392 781,398 Q772,404 762,408 Q752,410 743,406 Q734,402 727,394 Q720,386 718,376 Q716,366 718,356 Q720,346 726,338 Q732,330 742,338 Z"/>
+      <path d="M806,340 Q814,334 822,336 Q830,334 836,342 Q840,350 836,360 Q832,368 824,373 Q816,377 808,375 Q800,372 797,363 Q794,354 798,346 Z"/>
+    </g>
+  </svg>
+
+  <div id="route-labels"></div>
+  <div class="market-counters">
+    <div class="market-counter" data-key="europe"><span class="mc-value">00</span><span class="mc-label">Europe</span></div>
+    <div class="market-counter" data-key="uk"><span class="mc-value">00</span><span class="mc-label">UK</span></div>
+    <div class="market-counter" data-key="gcc"><span class="mc-value">00</span><span class="mc-label">GCC</span></div>
+    <div class="market-counter" data-key="usa"><span class="mc-value">00</span><span class="mc-label">Americas</span></div>
+    <div class="market-counter" data-key="asia"><span class="mc-value">00</span><span class="mc-label">Asia-Pacific</span></div>
+  </div>
+  <div class="cover-badge"><span class="gold-text-slow">Confidential &nbsp;·&nbsp; 19 April 2026</span></div>
+  <div class="cover-title"><span class="gold-text">Harvics × MAFI</span></div>
+  <div class="cover-sub"><span class="gold-text-slow">Commercial Engagement Framework</span></div>
+  <div class="cover-divider"></div>
+  <div class="cover-tagline" style="color:#D4B96A;">
+    "We do not sell MAFI's products.<br>We architect MAFI's global revenue."
+  </div>
+  <div class="cover-meta">
+    Prepared by Harvics Global Ventures
+    <span>·</span>
+    For presentation to Mehdi &amp; Mai
+    <span>·</span>
+    Version 1.0 Final
+  </div>
+</section>
+
+<!-- PRODUCT ROUTING MAP -->
+<section id="routing">
+  <div class="container">
+    <div class="section-label"><span class="gold-text-slow">Section 01</span></div>
+    <h2><span class="gold-text">The Harvics × MAFI Product Routing Map</span></h2>
+    <div class="gold-rule"></div>
+    <p class="section-intro">Each product category is treated as a completely separate commercial vertical. Every line is mapped to a precise market, buyer class, route-to-market model, and price/margin architecture before a single introduction is activated.</p>
+
+    <div class="product-card gloss-card">
+      <div class="product-card-accent"></div>
+      <div class="product-header">
+        <span class="product-icon">🍅</span>
+        <span class="product-title"><span class="gold-text-slow">Tomato Paste &amp; Concentrate</span></span>
+        <span class="product-badge">Primary Route</span>
+      </div>
+      <div class="product-body">
+        <p>Germany leads European tomato paste imports at 18% share — the single largest market. Egypt is not China. European buyers are actively diversifying away from Chinese tomato paste, and Egyptian origin — Mediterranean, clean, LEED Gold certified — currently commands a premium in Germany and the UK.</p>
+        <div class="routing-grid">
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">Germany — 18% share</span></div>
+            <div class="routing-detail">Industrial food manufacturers, sauce producers, EU redistribution hubs. Format: bulk aseptic drums. Annual volume contracts and supply agreements.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">United Kingdom — 14% share</span></div>
+            <div class="routing-detail">Bestway Cash & Carry (Harvics direct connection) — 65,000+ ethnic food retail points. Secondary: UK food manufacturers producing ready meals, ketchup, pasta sauces.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">Italy / Spain — 14% combined</span></div>
+            <div class="routing-detail">Primary processors importing Egyptian concentrate to blend and re-export as premium Italian-origin product. Egyptian origin commands premium as EU domestic farming shrinks.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">Vietnam — Overflow Route</span></div>
+            <div class="routing-detail">Growing processed-food industry. Lower price point but extremely high volume. Ideal for clearing production that does not meet EU premium specifications.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card gloss-card">
+      <div class="product-card-accent"></div>
+      <div class="product-header">
+        <span class="product-icon">🍊</span>
+        <span class="product-title"><span class="gold-text-slow">Citrus Concentrates — Orange, Lemon, Grapefruit</span></span>
+        <span class="product-badge">Crown Jewel</span>
+      </div>
+      <div class="product-body">
+        <p>Crown-jewel category — highest strategic priority. Eckes-Granini is already active as the primary anchor buyer. They cannot absorb 100% of capacity.</p>
+        <div class="routing-grid">
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">Eckes-Granini — Primary</span></div>
+            <div class="routing-detail">Already active. Granini, Pago, Joker brands. Raw material buyer. No conflict with overflow routes.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">United Kingdom — Overflow</span></div>
+            <div class="routing-detail">Bestway (Harvics direct connection) — private-label juice programs. Complementary, not conflicting with Eckes-Granini.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">Scandinavia</span></div>
+            <div class="routing-detail">Sweden & Norway pipelines already under active outreach. Private-label manufacturers who are not Eckes-Granini clients.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">GCC + North America</span></div>
+            <div class="routing-detail">UAE/Saudi: premium halal-certified citrus juice. USA: Bajco Group (Harvics direct connection), Northeast corridor manufacturers.</div>
+          </div>
+        </div>
+        <div class="insight-box">Harvics routes the identical product to private-label manufacturers in the UK and Scandinavia who are not Eckes-Granini clients. Complementary, never conflicting.</div>
+      </div>
+    </div>
+
+    <div class="product-card gloss-card">
+      <div class="product-card-accent"></div>
+      <div class="product-header">
+        <span class="product-icon">❄️</span>
+        <span class="product-title"><span class="gold-text-slow">IQF Frozen Fruits &amp; Vegetables</span></span>
+        <span class="product-badge">Fast-Growing</span>
+      </div>
+      <div class="product-body">
+        <p>Rapidly expanding segment. Poland is the fastest-growing import market in Europe at 6% share. Asia-Pacific activation via Harvics' 14 established Asia buyers.</p>
+        <div class="routing-grid">
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">Germany &amp; UK — Foodservice</span></div>
+            <div class="routing-detail">Hospital catering, school meals, restaurant supply chains. Lidl and Aldi are heavy buyers of frozen fruit for German retail private-label.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">Poland — Priority Growth</span></div>
+            <div class="routing-detail">6% of European imports — fastest-growing segment. Active outreach underway.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">GCC — Institutional</span></div>
+            <div class="routing-detail">Hotel chains, airline catering, restaurant groups across UAE and Saudi Arabia.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">Asia-Pacific</span></div>
+            <div class="routing-detail">Singapore, Malaysia, Vietnam via Harvics' 14 established Asia buyers. Processors and distributors.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card gloss-card">
+      <div class="product-card-accent"></div>
+      <div class="product-header">
+        <span class="product-icon">🌿</span>
+        <span class="product-title"><span class="gold-text-slow">Freeze-Dried Strawberries &amp; Specialty Products</span></span>
+        <span class="product-badge">Highest Margin</span>
+      </div>
+      <div class="product-body">
+        <p>Highest-margin category. Smallest volume, premium pricing per kilo. MAFI operates one of the world's largest freeze-drying facilities — this is not a commodity. It is a high-value premium ingredient positioned to completely different buyers, specifications, certifications, and margins than bulk concentrates or IQF.</p>
+        <div class="routing-grid">
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">United Kingdom</span></div>
+            <div class="routing-detail">Premium health-food brands — Holland & Barrett buyers, premium cereal manufacturers.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">Germany</span></div>
+            <div class="routing-detail">Health-food and organic segment growing at 12% annually.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">United States</span></div>
+            <div class="routing-detail">Health-food manufacturers, granola brands, premium snack producers.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">Japan</span></div>
+            <div class="routing-detail">Freeze-dried fruit commands extraordinary premiums. Dedicated high-value positioning.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card gloss-card">
+      <div class="product-card-accent"></div>
+      <div class="product-header">
+        <span class="product-icon">🫐</span>
+        <span class="product-title"><span class="gold-text-slow">Multi-Fruit Purées</span></span>
+        <span class="product-badge">Specialty</span>
+      </div>
+      <div class="product-body">
+        <div class="routing-grid">
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">Germany &amp; UK</span></div>
+            <div class="routing-detail">Baby-food manufacturers — primary target buyer class for purées in both markets.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">Premium Beverage</span></div>
+            <div class="routing-detail">Smoothie brands and premium beverage producers across Europe.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">Vietnam &amp; Southeast Asia</span></div>
+            <div class="routing-detail">Juice blending applications. Growing regional processed beverage industry.</div>
+          </div>
+          <div class="routing-item">
+            <div class="routing-country"><span class="gold-text-slow">Channel Rules</span></div>
+            <div class="routing-detail">Freeze-dried and IQF never sold to the same buyer classes as bulk concentrates. Different specs, certifications, and buyers entirely.</div>
+          </div>
+        </div>
+        <div class="insight-box">We do not sell MAFI's products. We architect MAFI's global revenue. Each product has a specific buyer class, a specific market, and a specific price point. That architecture is what Harvics builds.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEDICATED DESK MODEL -->
+<section id="desk">
+  <div class="container">
+    <div class="section-label"><span class="gold-text-slow">Section 02</span></div>
+    <h2><span class="gold-text">The Harvics Dedicated Desk Model</span></h2>
+    <div class="gold-rule"></div>
+    <p class="section-intro">30% Harvics proprietary commercial infrastructure. Not a trading-house model. A dedicated commercial engine that operates like MAFI's own European sales office — without MAFI having to build it, staff it, or manage it.</p>
+    <div class="desk-pillars">
+      <div class="desk-pillar gloss-card">
+        <div class="pillar-num"><span class="gold-text-slow">01</span></div>
+        <div class="pillar-title">Full-Time Dedication</div>
+        <div class="pillar-body">One senior commercial desk lead, 100% allocated to MAFI. One supporting analyst/coordinator. Zero shared portfolio responsibility.</div>
+      </div>
+      <div class="desk-pillar gloss-card">
+        <div class="pillar-num"><span class="gold-text-slow">02</span></div>
+        <div class="pillar-title">Dedicated Infrastructure</div>
+        <div class="pillar-body">Custom CRM, dedicated email alias, communication channels, shared drive with routing maps, buyer dossiers, and compliance folders.</div>
+      </div>
+      <div class="desk-pillar gloss-card">
+        <div class="pillar-num"><span class="gold-text-slow">03</span></div>
+        <div class="pillar-title">Buyer Database</div>
+        <div class="pillar-body">200+ pre-qualified accounts across Germany, UK, Scandinavia, GCC, USA, and Asia-Pacific — segmented by category and buyer class.</div>
+      </div>
+      <div class="desk-pillar gloss-card">
+        <div class="pillar-num"><span class="gold-text-slow">04</span></div>
+        <div class="pillar-title">Weekly Dashboard</div>
+        <div class="pillar-body">Every Monday morning: pipeline value, conversion probability, next actions, blockers. One contact, full accountability.</div>
+      </div>
+      <div class="desk-pillar gloss-card">
+        <div class="pillar-num"><span class="gold-text-slow">05</span></div>
+        <div class="pillar-title">Scalable Structure</div>
+        <div class="pillar-body">Phase II: lead + coordinator. Phase III: add transaction coordinator. Phase IV: full mini-team of 3–4 people, still 100% dedicated.</div>
+      </div>
+      <div class="desk-pillar gloss-card">
+        <div class="pillar-num"><span class="gold-text-slow">06</span></div>
+        <div class="pillar-title">Performance-Gated</div>
+        <div class="pillar-body">After 3-month minimum, if 70% of priority target list hasn't been engaged, MAFI may exit without further obligation beyond fees already paid.</div>
+      </div>
+    </div>
+    <div class="verbatim-block">
+      When Harvics onboards MAFI, we don't add your products to a shared trading desk. We build you a dedicated commercial sales office inside Harvics. One senior person works on MAFI and only MAFI, full time. They live inside the routing map we created together. You get all the benefit of a professional European sales team without hiring anyone, without paying salaries, without managing infrastructure. This dedicated desk is what the retainer actually buys — not vague promises, but owned commercial capacity. That is the Harvics difference.
+    </div>
+    <p><span class="gold-inline" style="background:linear-gradient(90deg,#C9A84C,#FFF0A0,#C9A84C);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">Funding:</span> The entire desk is funded through the Phase II Retained Market Activation retainer (USD 20,000/month, 3-month minimum). Not a commission — the infrastructure fee that delivers a zero-overhead European export sales team working only on MAFI's portfolio.</p>
+    <p style="margin-top:1rem;"><span style="background:linear-gradient(90deg,#C9A84C,#FFF0A0,#C9A84C);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">Network Protection:</span> All buyer data, routing logic, and commercial architecture remain Harvics proprietary assets. MAFI receives outputs and results — never raw network files unless exclusivity is granted in writing.</p>
+  </div>
+</section>
+
+<!-- SCOPE -->
+<section id="scope">
+  <div class="container">
+    <div class="section-label"><span class="gold-text-slow">Section 03</span></div>
+    <h2><span class="gold-text">Scope of Engagement</span></h2>
+    <div class="gold-rule"></div>
+    <p class="section-intro">Not general representation. A defined commercial mandate covering selected products, selected markets, selected buyer classes, and selected execution rights only.</p>
+    <div class="terms-grid">
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Product Scope</span></div>
+        <div class="term-body">Tomato paste &amp; concentrate — Citrus concentrates — IQF fruits &amp; vegetables — Freeze-dried products — Multi-fruit purées. Final scope confirmed at mandate stage.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Market Scope</span></div>
+        <div class="term-body">United Kingdom — Continental Europe — GCC — North America — Selected Asia-Pacific markets. No market included unless specifically designated in writing.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Customer Scope</span></div>
+        <div class="term-body">Food ingredient distributors — End manufacturers — Beverage producers — Retail &amp; private-label buyers — Foodservice &amp; institutional channels — Specialty ingredient buyers.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Commercial Scope</span></div>
+        <div class="term-body">Commercial qualification — routing design — target account mapping — buyer introductions — meeting coordination — pipeline handling — samples/compliance — transaction progression — principal-buyer/distribution structuring.</div>
+      </div>
+    </div>
+    <p style="margin-top:1.5rem;" class="muted">Exclusions (unless expressly added in writing): sectors outside agri-business, unrestricted buyer-network disclosure, unlimited territory coverage, automatic exclusivity, legal/tax/regulatory advisory, operational manufacturing responsibility.</p>
+  </div>
+</section>
+
+<!-- COMMERCIAL MODEL -->
+<section id="commercial">
+  <div class="container">
+    <div class="section-label"><span class="gold-text-slow">Section 04</span></div>
+    <h2><span class="gold-text">Commercial Model</span></h2>
+    <div class="gold-rule"></div>
+    <p class="section-intro">Phased, retained, and performance-linked. Qualification to activation, activation to execution, execution to scale — only where commercial discipline and results justify expansion.</p>
+
+    <div class="phase-block gloss-card">
+      <div class="phase-header">
+        <span class="phase-num">Phase I</span>
+        <span class="phase-name" style="background:linear-gradient(90deg,#C9A84C,#FFF0A0,#C9A84C);background-size:300% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 5s linear infinite;">Commercial Admission &amp; Strategic Qualification</span>
+        <span class="phase-fee"><span class="gold-text-slow">USD 25,000</span></span>
+      </div>
+      <div class="phase-body">
+        <p>One-time admission fee. Payable in advance. Non-refundable upon activation.</p>
+        <ul class="phase-items">
+          <li>Mandate intake and category, territory &amp; buyer-class review</li>
+          <li>Product-to-market fit analysis and routing architecture</li>
+          <li>Commercial framework design and activation-readiness review</li>
+          <li>Exclusivity feasibility assessment</li>
+          <li>Output: qualification note, scope matrix, routing framework, engagement-path recommendation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase-block gloss-card">
+      <div class="phase-header">
+        <span class="phase-num">Phase II</span>
+        <span class="phase-name" style="background:linear-gradient(90deg,#C9A84C,#FFF0A0,#C9A84C);background-size:300% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 5s linear infinite;">Retained Market Activation</span>
+        <span class="phase-fee"><span class="gold-text-slow">USD 20,000/mo</span></span>
+      </div>
+      <div class="phase-body">
+        <p>Monthly retainer. Minimum 3-month commitment. Payable monthly in advance. Activates the Dedicated Desk.</p>
+        <ul class="phase-items">
+          <li>Target account mapping and buyer prioritization</li>
+          <li>Controlled introductions and meeting coordination</li>
+          <li>Commercial follow-up and pipeline development</li>
+          <li>Sample &amp; compliance coordination</li>
+          <li>Output: active pipeline, qualified buyer discussions, weekly dashboard</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase-block gloss-card">
+      <div class="phase-header">
+        <span class="phase-num">Phase III</span>
+        <span class="phase-name" style="background:linear-gradient(90deg,#C9A84C,#FFF0A0,#C9A84C);background-size:300% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 5s linear infinite;">Execution &amp; Transaction Conversion</span>
+        <span class="phase-fee"><span class="gold-text-slow">USD 25,000+/mo</span></span>
+      </div>
+      <div class="phase-body">
+        <p>Applies once commercial activity matures into executable business. Economics defined by category complexity, geography, and transaction size.</p>
+        <ul class="phase-items">
+          <li>Transaction structuring and order-path support</li>
+          <li>Principal-buyer or distribution route handling</li>
+          <li>Commercial basis: execution retainer / transaction-linked fee / principal-buying spread / hybrid</li>
+          <li>Output: first executable transaction route, revenue conversion framework</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase-block gloss-card">
+      <div class="phase-header">
+        <span class="phase-num">Phase IV</span>
+        <span class="phase-name" style="background:linear-gradient(90deg,#C9A84C,#FFF0A0,#C9A84C);background-size:300% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 5s linear infinite;">Scale, Rights &amp; Exclusivity</span>
+        <span class="phase-fee"><span class="gold-text-slow">Negotiated</span></span>
+      </div>
+      <div class="phase-body">
+        <p>Applies only after performance, alignment, and commercial validity are established. Not automatic. Subject to written confirmation only.</p>
+        <ul class="phase-items">
+          <li>Territorial and category expansion</li>
+          <li>Exclusivity discussion and performance thresholds</li>
+          <li>Revised commercial economics where scale justifies them</li>
+          <li>Output: expansion recommendation, exclusivity assessment, revised rights structure</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINANCIAL PROPOSAL -->
+<section id="financial">
+  <div class="container">
+    <div class="section-label"><span class="gold-text-slow">Section 05</span></div>
+    <h2><span class="gold-text">Financial Proposal</span></h2>
+    <div class="gold-rule"></div>
+    <p class="section-intro">Harvics operates on a retained and performance-linked basis. Commercial architecture, buyer access, and execution resources are never deployed on a speculative basis.</p>
+    <table class="fee-table">
+      <thead>
+        <tr>
+          <th>Phase</th><th>Description</th><th>Fee</th><th>Basis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="gold-text-slow" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;">Phase I</span></td>
+          <td style="color:var(--text-secondary);">Commercial Admission &amp; Strategic Qualification</td>
+          <td><span class="fee-amount gold-text-slow">USD 25,000</span></td>
+          <td class="muted">One-time, advance, non-refundable</td>
+        </tr>
+        <tr>
+          <td><span class="gold-text-slow" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;">Phase II</span></td>
+          <td style="color:var(--text-secondary);">Retained Market Activation</td>
+          <td><span class="fee-amount gold-text-slow">USD 20,000/mo</span></td>
+          <td class="muted">3-month minimum, monthly in advance</td>
+        </tr>
+        <tr>
+          <td><span class="gold-text-slow" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;">Phase III</span></td>
+          <td style="color:var(--text-secondary);">Execution &amp; Transaction Conversion</td>
+          <td><span class="fee-amount gold-text-slow">USD 25,000+/mo</span></td>
+          <td class="muted">+ transaction economics</td>
+        </tr>
+        <tr>
+          <td><span class="gold-text-slow" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;">Phase IV</span></td>
+          <td style="color:var(--text-secondary);">Scale, Rights &amp; Exclusivity</td>
+          <td><span class="fee-amount gold-text-slow">Negotiated</span></td>
+          <td class="muted">Performance-linked, written confirmation only</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="muted" style="margin-top:1rem;">All fees exclusive of taxes, duties, travel, samples, and third-party costs. All fees payable in USD. No work commences until applicable fee is received in full. Fees are non-refundable once the relevant phase is activated.</p>
+  </div>
+</section>
+
+<!-- PAYMENT TERMS -->
+<section id="payment">
+  <div class="container">
+    <div class="section-label"><span class="gold-text-slow">Section 06</span></div>
+    <h2><span class="gold-text">Payment Terms &amp; Conditions</span></h2>
+    <div class="gold-rule"></div>
+    <div class="terms-grid">
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Fee Activation</span></div>
+        <div class="term-body">No phase of work commences unless and until the applicable fee has been received in full by Harvics.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Advance Basis</span></div>
+        <div class="term-body">All fixed fees, retainers, and admission charges payable in advance. Non-refundable once the relevant phase has been activated.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Currency &amp; Taxes</span></div>
+        <div class="term-body">All fees denominated and payable in USD. All fees exclusive of taxes, VAT, duties, bank charges, and transfer costs — borne by the paying party.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">No Set-Off</span></div>
+        <div class="term-body">Payments shall be made in full without deduction, withholding, counterclaim, or set-off unless required by law.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Suspension Rights</span></div>
+        <div class="term-body">Harvics reserves the right to suspend all activity, deliverables, buyer access, and execution support immediately on non-payment or material deviation from agreed scope.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Third-Party Costs</span></div>
+        <div class="term-body">Travel, trade fair attendance, external meetings, samples, courier costs, compliance, certification, and exceptional activation expenses are separate and chargeable.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXCLUSIVITY -->
+<section id="exclusivity">
+  <div class="container">
+    <div class="section-label"><span class="gold-text-slow">Section 07</span></div>
+    <h2><span class="gold-text">Exclusivity, Confidentiality &amp; Non-Circumvention</span></h2>
+    <div class="gold-rule"></div>
+    <div class="terms-grid">
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">No Automatic Exclusivity</span></div>
+        <div class="term-body">No exclusivity, territorial reservation, category protection, or channel protection shall arise automatically by discussion, meeting, payment, or partial engagement.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Written Grant Only</span></div>
+        <div class="term-body">Any exclusivity right must be expressly granted in writing by Harvics, limited by category/territory/channel, subject to performance conditions and review rights.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Confidentiality</span></div>
+        <div class="term-body">All materials, routing logic, engagement models, pricing concepts, buyer classifications, and commercial information shared by Harvics are strictly confidential.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Buyer Network Protection</span></div>
+        <div class="term-body">Harvics' buyer network, account intelligence, routing framework, and market-access information are proprietary. Buyer names not disclosed on unrestricted basis.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Non-Circumvention</span></div>
+        <div class="term-body">MAFI shall not approach buyers introduced by Harvics outside the agreed framework, or use Harvics' routing logic to transact independently.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Rights in Materials</span></div>
+        <div class="term-body">All commercial models, engagement structures, routing maps, and account strategies produced by Harvics remain the property of Harvics unless otherwise agreed in writing.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TERM & TERMINATION -->
+<section id="term">
+  <div class="container">
+    <div class="section-label"><span class="gold-text-slow">Section 08</span></div>
+    <h2><span class="gold-text">Term, Termination &amp; Decision Window</span></h2>
+    <div class="gold-rule"></div>
+    <div class="terms-grid">
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Decision Window</span></div>
+        <div class="term-body">Decision in principle required by <span style="background:linear-gradient(90deg,#FFF0A0,#C9A84C);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:500;">25 April 2026</span>. After this date availability, territorial preference, and category priority may lapse. Commercial terms may be revised.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Minimum Commitment</span></div>
+        <div class="term-body">Where a phase is structured on a retained basis, the applicable minimum commitment applies in full and may not be reduced or terminated early except as expressly agreed in writing.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Termination by Harvics</span></div>
+        <div class="term-body">Harvics may terminate immediately on: non-payment, breach of confidentiality, breach of non-circumvention, misuse of materials or network, or material deviation from scope.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Termination by MAFI</span></div>
+        <div class="term-body">MAFI may elect not to proceed into a subsequent phase by written notice. All fees due remain payable. No activated fee is refundable. Confidentiality obligations continue.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Effect of Termination</span></div>
+        <div class="term-body">All ongoing activity halts immediately. All provisional rights are withdrawn. All exclusivity and reservations lapse. Harvics retains all rights in its materials and network.</div>
+      </div>
+      <div class="term-card gloss-card">
+        <div class="term-title"><span class="gold-text-slow">Survival</span></div>
+        <div class="term-body">The following survive termination: confidentiality, protection of network, non-circumvention, payment obligations already accrued, and ownership of materials.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR APPROACH -->
+<section id="approach">
+  <div class="container">
+    <div class="section-label"><span class="gold-text-slow">Section 09</span></div>
+    <h2><span class="gold-text">Our Approach</span></h2>
+    <div class="gold-rule"></div>
+    <p class="section-intro">Eight principles that define how Harvics operates — and what distinguishes this engagement from any conventional agent, broker, or trading-house arrangement.</p>
+    <div class="principles-grid">
+      <div class="principle-cell">
+        <div class="principle-number"><span class="gold-text-slow">01</span></div>
+        <div class="principle-title">Selective, Not General</div>
+        <div class="principle-body">Each supply-side partner is assessed selectively, structured selectively, and activated only within agreed scope. No open-book engagement.</div>
+      </div>
+      <div class="principle-cell">
+        <div class="principle-number"><span class="gold-text-slow">02</span></div>
+        <div class="principle-title">Product-Specific, Not Broad</div>
+        <div class="principle-body">Each MAFI product line is treated separately. No category is pushed through the same route or buyer class as another.</div>
+      </div>
+      <div class="principle-cell">
+        <div class="principle-number"><span class="gold-text-slow">03</span></div>
+        <div class="principle-title">Market-Routed, Not Random</div>
+        <div class="principle-body">Each category is assigned to the market, buyer type, and commercial path most likely to produce qualified revenue — before activation.</div>
+      </div>
+      <div class="principle-cell">
+        <div class="principle-number"><span class="gold-text-slow">04</span></div>
+        <div class="principle-title">Controlled Activation, Not Open Circulation</div>
+        <div class="principle-body">Buyer access is opened in a controlled sequence. Market access is never released casually or without structure.</div>
+      </div>
+      <div class="principle-cell">
+        <div class="principle-number"><span class="gold-text-slow">05</span></div>
+        <div class="principle-title">Dedicated Handling, Not Shared Attention</div>
+        <div class="principle-body">A supplier of MAFI's scale is not handled as one of many undifferentiated accounts. Dedicated capacity ensures continuity and accountability.</div>
+      </div>
+      <div class="principle-cell">
+        <div class="principle-number"><span class="gold-text-slow">06</span></div>
+        <div class="principle-title">Commercial Before Transactional</div>
+        <div class="principle-body">The first priority is to architect the route properly — category, market, buyer class, and commercial structure. Transaction comes after route discipline.</div>
+      </div>
+      <div class="principle-cell">
+        <div class="principle-number"><span class="gold-text-slow">07</span></div>
+        <div class="principle-title">Retained Discipline, Not Speculative</div>
+        <div class="principle-body">Market architecture, buyer activation, and execution capacity are deployed only under formal engagement — never on open-ended or speculative terms.</div>
+      </div>
+      <div class="principle-cell">
+        <div class="principle-number"><span class="gold-text-slow">08</span></div>
+        <div class="principle-title">Scale Only on Performance</div>
+        <div class="principle-body">Territorial rights, broader activation, and exclusivity are assessed and expanded only where performance, alignment, and commercial discipline justify them.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section id="closing">
+  <div class="container">
+    <div class="section-label"><span class="gold-text-slow">Section 10</span></div>
+    <h2><span class="gold-text">Closing Statement</span></h2>
+    <div class="gold-rule"></div>
+    <div class="closing-statement">
+      Harvics' workflow for this engagement proceeds from qualification, structuring, and routing into controlled activation, opportunity conversion, and execution review. The approach is selective, product-specific, market-routed, and performance-linked, with dedicated account handling and retained commercial discipline throughout.
+    </div>
+    <p>This framework is not an open invitation to explore. It is a defined, time-sensitive commercial mandate offered to MAFI on a priority basis. The routing architecture is built. The buyer network is ready. The dedicated desk model is funded and operational the moment Phase II is activated.</p>
+    <p style="margin-top:1rem;">You are not being asked to engage a trader who will try to sell your products. You are being offered a dedicated European commercial sales office — without the cost of building one, without the complexity of staffing one, and without the delay of building one from scratch.</p>
+    <div class="closing-statement">
+      We do not sell MAFI's products. We architect MAFI's global revenue.
+    </div>
+    <div class="closing-final"><span class="gold-text">Decision in principle required by 25 April 2026.</span></div>
+    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <div style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.5rem;">Prepared by</div>
+        <div style="font-size:1.1rem;"><span class="gold-text-slow">Harvics Global Ventures s.r.o.</span></div>
+        <div class="muted">Prague, Czech Republic</div>
+      </div>
+      <div style="text-align:right;">
+        <div style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.5rem;">Reference Date</div>
+        <div style="color:var(--text-primary);">19 April 2026</div>
+        <div class="muted">Version 1.0 — Final — Confidential</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="gold-text-slow">Harvics × MAFI Commercial Engagement Framework &nbsp;·&nbsp; Confidential &nbsp;·&nbsp; 19 April 2026 &nbsp;·&nbsp; All rights reserved — Harvics Global Ventures s.r.o.</span>
+</footer>
+
+<script>
+const canvas = document.getElementById('cover-canvas');
+const ctx = canvas.getContext('2d');
+const labelsLayer = document.getElementById('route-labels');
+const counters = Array.from(document.querySelectorAll('.market-counter'));
+
+function resize() {
+  canvas.width = canvas.offsetWidth;
+  canvas.height = canvas.offsetHeight;
+  layoutLabels();
+}
+resize();
+window.addEventListener('resize', () => { resize(); initAmbient(); });
+
+function easeOutCubic(x){ return 1 - Math.pow(1-x,3); }
+function easeInOutSine(x){ return -(Math.cos(Math.PI*x)-1)/2; }
+function phaseProgress(start, end, frame){
+  if(frame<=start) return 0;
+  if(frame>=end) return 1;
+  return easeInOutSine((frame-start)/(end-start));
+}
+
+// ---------- layered ambient particles ----------
+const ambientBack=[], ambientMid=[], ambientFront=[];
+function initAmbient(){
+  ambientBack.length=0; ambientMid.length=0; ambientFront.length=0;
+  const W=canvas.width||1200, H=canvas.height||800;
+  for(let i=0;i<55;i++) ambientBack.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.0+0.2,vx:(Math.random()-0.5)*0.04,vy:(Math.random()-0.5)*0.04,phase:Math.random()*Math.PI*2});
+  for(let i=0;i<45;i++) ambientMid.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.5+0.3,vx:(Math.random()-0.5)*0.07,vy:(Math.random()-0.5)*0.07,phase:Math.random()*Math.PI*2});
+  for(let i=0;i<22;i++) ambientFront.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.9+0.4,vx:(Math.random()-0.5)*0.10,vy:(Math.random()-0.5)*0.10,phase:Math.random()*Math.PI*2});
+}
+initAmbient();
+
+function drawAmbientLayer(arr,frame,strength){
+  arr.forEach(p=>{
+    p.x+=p.vx; p.y+=p.vy;
+    if(p.x<0)p.x=canvas.width; if(p.x>canvas.width)p.x=0;
+    if(p.y<0)p.y=canvas.height; if(p.y>canvas.height)p.y=0;
+    const a=(0.04+0.06*Math.sin(frame*0.012+p.phase))*strength;
+    const glow=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*8);
+    glow.addColorStop(0,`rgba(255,240,160,${a*0.9})`);
+    glow.addColorStop(0.4,`rgba(201,168,76,${a*0.35})`);
+    glow.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=glow; ctx.beginPath(); ctx.arc(p.x,p.y,p.r*8,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle=`rgba(255,240,160,${a})`; ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2); ctx.fill();
+  });
+}
+
+// ---------- nodes ----------
+function getNodes(){
+  const w=canvas.width, h=canvas.height;
+  return {
+    egypt:  {x:w*0.515, y:h*0.62,  key:'egypt',  label:'Egypt / Origin'},
+    europe: {x:w*0.565, y:h*0.355, key:'europe', label:'Continental Europe'},
+    uk:     {x:w*0.47,  y:h*0.325, key:'uk',     label:'United Kingdom'},
+    gcc:    {x:w*0.605, y:h*0.545, key:'gcc',    label:'GCC Corridor'},
+    usa:    {x:w*0.23,  y:h*0.40,  key:'usa',    label:'North America'},
+    asia:   {x:w*0.79,  y:h*0.415, key:'asia',   label:'Asia-Pacific'}
+  };
+}
+
+function drawNode(node,strength=1,size=1){
+  const glow=ctx.createRadialGradient(node.x,node.y,0,node.x,node.y,44*size);
+  glow.addColorStop(0,`rgba(255,245,180,${0.26*strength})`);
+  glow.addColorStop(0.35,`rgba(201,168,76,${0.16*strength})`);
+  glow.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=glow; ctx.beginPath(); ctx.arc(node.x,node.y,44*size,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle=`rgba(255,240,160,${0.95*strength})`; ctx.beginPath(); ctx.arc(node.x,node.y,3.8*size,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle=`rgba(255,255,220,${0.22*strength})`; ctx.beginPath(); ctx.arc(node.x,node.y,1.1*size,0,Math.PI*2); ctx.fill();
+}
+
+function drawPulseRing(node,frame,alphaMult=1){
+  const radius=30+((frame*0.55)%180);
+  ctx.strokeStyle=`rgba(255,230,130,${0.10*(1-radius/200)*alphaMult})`;
+  ctx.lineWidth=1; ctx.beginPath(); ctx.arc(node.x,node.y,radius,0,Math.PI*2); ctx.stroke();
+}
+
+// ---------- routes ----------
+function quadPoint(from,to,p,arcLift=0.18){
+  const mx=(from.x+to.x)/2;
+  const my=(from.y+to.y)/2 - canvas.height*arcLift;
+  return {
+    x:(1-p)*(1-p)*from.x+2*(1-p)*p*mx+p*p*to.x,
+    y:(1-p)*(1-p)*from.y+2*(1-p)*p*my+p*p*to.y
+  };
+}
+
+function drawRoute(from,to,progress,intensity=1,arcLift=0.18){
+  if(progress<=0) return;
+  const steps=140; let prev=null;
+  const maxStep=Math.floor(steps*progress);
+  for(let i=0;i<=maxStep;i++){
+    const p=i/steps;
+    const pt=quadPoint(from,to,p,arcLift);
+    if(prev){
+      ctx.strokeStyle=`rgba(255,225,120,${0.18*intensity})`; ctx.lineWidth=1.1;
+      ctx.beginPath(); ctx.moveTo(prev.x,prev.y); ctx.lineTo(pt.x,pt.y); ctx.stroke();
+      ctx.strokeStyle=`rgba(255,250,220,${0.05*intensity})`; ctx.lineWidth=3.8;
+      ctx.beginPath(); ctx.moveTo(prev.x,prev.y); ctx.lineTo(pt.x,pt.y); ctx.stroke();
+    }
+    prev=pt;
+  }
+}
+
+function drawRouteFlow(from,to,frame,density=4,speed=0.0016,arcLift=0.18,alpha=1){
+  for(let i=0;i<density;i++){
+    const p=((frame*speed)+i/density)%1;
+    const pt=quadPoint(from,to,p,arcLift);
+    const glow=ctx.createRadialGradient(pt.x,pt.y,0,pt.x,pt.y,16);
+    glow.addColorStop(0,`rgba(255,245,180,${0.50*alpha})`);
+    glow.addColorStop(0.45,`rgba(201,168,76,${0.15*alpha})`);
+    glow.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=glow; ctx.beginPath(); ctx.arc(pt.x,pt.y,16,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle=`rgba(255,240,160,${0.98*alpha})`; ctx.beginPath(); ctx.arc(pt.x,pt.y,1.9,0,Math.PI*2); ctx.fill();
+  }
+}
+
+// ---------- route labels ----------
+const routeLabelEls={};
+function createLabels(){
+  labelsLayer.innerHTML='';
+  const labels=[
+    {key:'europe',text:'EUROPEAN INDUSTRIAL ROUTE'},
+    {key:'uk',    text:'UK PRIVATE LABEL CORRIDOR'},
+    {key:'gcc',   text:'GCC PREMIUM JUICE ROUTE'},
+    {key:'usa',   text:'NORTH AMERICA BUYER ROUTE'},
+    {key:'asia',  text:'ASIA-PACIFIC EXPANSION ROUTE'}
+  ];
+  labels.forEach(l=>{
+    const el=document.createElement('div');
+    el.className='route-label'; el.textContent=l.text;
+    labelsLayer.appendChild(el); routeLabelEls[l.key]=el;
+  });
+}
+createLabels();
+
+function layoutLabels(){
+  const n=getNodes();
+  const map={
+    europe:{x:(n.egypt.x+n.europe.x)/2+24, y:(n.egypt.y+n.europe.y)/2-70},
+    uk:    {x:(n.egypt.x+n.uk.x)/2-10,     y:(n.egypt.y+n.uk.y)/2-82},
+    gcc:   {x:(n.egypt.x+n.gcc.x)/2+52,    y:(n.egypt.y+n.gcc.y)/2-20},
+    usa:   {x:(n.egypt.x+n.usa.x)/2-30,    y:(n.egypt.y+n.usa.y)/2-100},
+    asia:  {x:(n.egypt.x+n.asia.x)/2+30,   y:(n.egypt.y+n.asia.y)/2-62}
+  };
+  Object.entries(routeLabelEls).forEach(([key,el])=>{
+    const p=map[key]; if(!p) return;
+    el.style.left=p.x+'px'; el.style.top=p.y+'px';
+  });
+}
+layoutLabels();
+
+// ---------- counters ----------
+const counterTargets={europe:18,uk:12,gcc:9,usa:11,asia:14};
+function updateCounter(key,progress){
+  const card=counters.find(c=>c.dataset.key===key); if(!card) return;
+  const val=card.querySelector('.mc-value');
+  val.textContent=String(Math.round((counterTargets[key]||0)*progress)).padStart(2,'0');
+  if(progress>0.02) card.classList.add('active');
+}
+
+// ---------- hex grid ----------
+function drawHexGrid(frame){
+  const size=62;
+  const cols=Math.ceil(canvas.width/(size*1.73))+2;
+  const rows=Math.ceil(canvas.height/(size*1.5))+2;
+  for(let r=-1;r<rows;r++){
+    for(let c=-1;c<cols;c++){
+      const x=c*size*1.732+(r%2)*size*0.866;
+      const y=r*size*1.5;
+      const dist=Math.hypot(x-canvas.width/2,y-canvas.height/2);
+      const maxDist=Math.hypot(canvas.width/2,canvas.height/2);
+      const fade=0.018*(1-dist/maxDist*0.75)*(0.75+0.25*Math.sin(frame*0.0026+dist*0.004));
+      ctx.strokeStyle=`rgba(201,168,76,${fade})`; ctx.lineWidth=0.45;
+      ctx.beginPath();
+      for(let i=0;i<6;i++){
+        const a=Math.PI/3*i-Math.PI/6;
+        i===0?ctx.moveTo(x+size*Math.cos(a),y+size*Math.sin(a)):ctx.lineTo(x+size*Math.cos(a),y+size*Math.sin(a));
+      }
+      ctx.closePath(); ctx.stroke();
+    }
+  }
+}
+
+// ---------- rotating rings ----------
+function drawRings(frame){
+  ctx.save(); ctx.translate(canvas.width/2,canvas.height/2);
+  const r1=Math.min(canvas.width,canvas.height)*0.43;
+  ctx.rotate(frame*0.00045); ctx.strokeStyle='rgba(255,240,160,0.05)'; ctx.lineWidth=0.5; ctx.setLineDash([7,24]);
+  ctx.beginPath(); ctx.arc(0,0,r1,0,Math.PI*2); ctx.stroke();
+  ctx.rotate(-frame*0.00085); ctx.strokeStyle='rgba(201,168,76,0.045)'; ctx.lineWidth=0.45; ctx.setLineDash([3,14]);
+  ctx.beginPath(); ctx.arc(0,0,r1*0.72,0,Math.PI*2); ctx.stroke();
+  ctx.rotate(frame*0.00115); ctx.strokeStyle='rgba(255,255,220,0.03)'; ctx.lineWidth=0.35; ctx.setLineDash([2,18]);
+  ctx.beginPath(); ctx.arc(0,0,r1*0.54,0,Math.PI*2); ctx.stroke();
+  ctx.setLineDash([]); ctx.restore();
+}
+
+function drawCapitalWave(frame){
+  const y=canvas.height*(0.47+0.01*Math.sin(frame*0.003));
+  const g=ctx.createLinearGradient(0,y-150,0,y+150);
+  g.addColorStop(0,'rgba(255,240,160,0)'); g.addColorStop(0.45,'rgba(255,240,160,0.015)');
+  g.addColorStop(0.5,'rgba(255,245,190,0.035)'); g.addColorStop(0.55,'rgba(255,240,160,0.015)');
+  g.addColorStop(1,'rgba(255,240,160,0)');
+  ctx.fillStyle=g; ctx.fillRect(0,y-150,canvas.width,300);
+}
+
+// ---------- main story ----------
+let t=0;
+function drawStory(frame){
+  const n=getNodes();
+  const pOrigin =phaseProgress(90,  320, frame);
+  const pEurope =phaseProgress(300, 560, frame);
+  const pUK     =phaseProgress(420, 690, frame);
+  const pGCC    =phaseProgress(540, 800, frame);
+  const pUSA    =phaseProgress(680, 980, frame);
+  const pAsia   =phaseProgress(820, 1140,frame);
+  const pLive   =phaseProgress(1080,1450,frame);
+
+  drawHexGrid(frame);
+  drawAmbientLayer(ambientBack,frame,0.65);
+  drawAmbientLayer(ambientMid,frame,0.85);
+
+  drawNode(n.egypt,0.42+0.68*pOrigin,1.28);
+  if(pOrigin>0.05) drawPulseRing(n.egypt,frame,pOrigin);
+
+  drawNode(n.europe,0.18+0.72*pEurope,0.96);
+  drawNode(n.uk,    0.16+0.74*pUK,    0.92);
+  drawNode(n.gcc,   0.16+0.72*pGCC,   0.89);
+  drawNode(n.usa,   0.14+0.78*pUSA,   0.95);
+  drawNode(n.asia,  0.14+0.80*pAsia,  0.97);
+
+  drawRoute(n.egypt,n.europe,pEurope,1.0, 0.13);
+  drawRoute(n.egypt,n.uk,    pUK,    0.96,0.16);
+  drawRoute(n.egypt,n.gcc,   pGCC,   0.87,0.08);
+  drawRoute(n.egypt,n.usa,   pUSA,   1.0, 0.22);
+  drawRoute(n.egypt,n.asia,  pAsia,  0.96,0.14);
+
+  if(pEurope>0.5) routeLabelEls.europe.classList.add('active');
+  if(pUK>0.5)     routeLabelEls.uk.classList.add('active');
+  if(pGCC>0.5)    routeLabelEls.gcc.classList.add('active');
+  if(pUSA>0.5)    routeLabelEls.usa.classList.add('active');
+  if(pAsia>0.5)   routeLabelEls.asia.classList.add('active');
+
+  updateCounter('europe',pEurope); updateCounter('uk',pUK);
+  updateCounter('gcc',pGCC); updateCounter('usa',pUSA); updateCounter('asia',pAsia);
+
+  const liveAlpha=0.22+0.78*pLive;
+  if(pEurope>0.85) drawRouteFlow(n.egypt,n.europe,frame,  4,0.00135,0.13,liveAlpha);
+  if(pUK>0.85)     drawRouteFlow(n.egypt,n.uk,    frame+120,3,0.00155,0.16,liveAlpha);
+  if(pGCC>0.85)    drawRouteFlow(n.egypt,n.gcc,   frame+230,3,0.00175,0.08,liveAlpha);
+  if(pUSA>0.85)    drawRouteFlow(n.egypt,n.usa,   frame+300,4,0.00125,0.22,liveAlpha);
+  if(pAsia>0.85)   drawRouteFlow(n.egypt,n.asia,  frame+420,4,0.00145,0.14,liveAlpha);
+
+  drawRings(frame);
+  drawCapitalWave(frame);
+  drawAmbientLayer(ambientFront,frame,1.0);
+
+  const cg=ctx.createRadialGradient(canvas.width*0.5,canvas.height*0.5,0,canvas.width*0.5,canvas.height*0.5,canvas.width*0.32);
+  cg.addColorStop(0,`rgba(201,168,76,${0.04+0.015*Math.sin(frame*0.004)})`);
+  cg.addColorStop(0.5,'rgba(139,100,0,0.01)'); cg.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=cg; ctx.fillRect(0,0,canvas.width,canvas.height);
+}
+
+function animate(){
+  requestAnimationFrame(animate);
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  drawStory(t); t++;
+}
+animate();
+</script>
+  <script>
+    import { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@2/+esm';
+    inject();
+  </script>
+</body>
+</html>

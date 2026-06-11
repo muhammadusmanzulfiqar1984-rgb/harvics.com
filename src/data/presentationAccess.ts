@@ -44,7 +44,13 @@ export function resolveAccessCode(code: string): PresentationAccessGrant | null 
   }
   const lower = normalized.toLowerCase()
   const match = Object.entries(presentationAccessCodes).find(([key]) => key.toLowerCase() === lower)
-  return match ? match[1] : null
+  if (match) return match[1]
+  // Allow spaced variants e.g. "mafi 222" → mafi222
+  const compact = lower.replace(/\s+/g, '')
+  const compactMatch = Object.entries(presentationAccessCodes).find(
+    ([key]) => key.toLowerCase().replace(/\s+/g, '') === compact
+  )
+  return compactMatch ? compactMatch[1] : null
 }
 
 export function savePresentationSession(grant: PresentationAccessGrant): void {

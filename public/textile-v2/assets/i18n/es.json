@@ -1,0 +1,91 @@
+{
+  "header.login": "Acceder",
+  "nav.who": "Quiénes Somos",
+  "nav.reach": "Alcance Global",
+  "nav.supply": "Cadena de Suministro",
+  "nav.portfolio": "Portafolio",
+  "nav.contact": "Contacto",
+
+  "hero.eyebrow": "Harvics Global Ventures",
+  "hero.title": "Harvics Global Ventures",
+  "hero.tagline": "Explorando a Través del Hemisferio",
+  "hero.cities": "Londres · Milán · Nueva York",
+  "hero.cta": "Hablemos de Negocios",
+
+  "stat.countries": "Países",
+  "stat.years": "Años de Experiencia",
+  "stat.hqs": "Sedes Continentales",
+
+  "ch.who.eyebrow": "Capítulo I",
+  "ch.who.title": "Construido Para La Complejidad del Comercio Global",
+  "ch.who.lead": "No solo abastecemos productos. Diseñamos cadenas de suministro.",
+  "ch.who.body": "Harvics fue forjada por profesionales del comercio con profundas raíces en los corredores manufactureros de Pakistán y en redes minoristas globales. La compañía construye una infraestructura de abastecimiento global impulsada por IA, donde la inteligencia en tiempo real y el control de ejecución convergen.",
+
+  "ch.principles.eyebrow": "Capítulo II",
+  "ch.principles.title": "Nuestros Principios",
+  "card.quality.t": "Calidad",
+  "card.quality.b": "Cada producto, cada envío, cada estándar sin concesiones.",
+  "card.efficiency.t": "Eficiencia",
+  "card.efficiency.b": "Diseño ingenioso. Ejecución veloz. Lista para todo.",
+  "card.resilience.t": "Resiliencia",
+  "card.resilience.b": "Construida para absorber disrupciones y proteger la certeza de entrega.",
+  "card.partnership.t": "Alianza",
+  "card.partnership.b": "Relaciones operativas basadas en confianza, para escalar a largo plazo.",
+
+  "ch.reach.eyebrow": "Capítulo III",
+  "ch.reach.title": "Del Origen al Puerto · Controlamos la Cadena",
+  "ch.reach.body": "Harvics conecta abastecimiento, transporte, control y ejecución a través de mercados internacionales. El alcance global no es un posicionamiento abstracto, es una cadena operativa visible y gestionada.",
+
+  "ch.supply.eyebrow": "Capítulo IV",
+  "ch.supply.title": "Mando Integral de la Cadena de Suministro",
+  "ch.supply.body": "Cada eslabón se gestiona con precisión e inteligencia: desarrollo de producto, abastecimiento global, control de calidad, logística, transporte y visibilidad multinodo de ejecución.",
+
+  "ch.future.eyebrow": "Capítulo V",
+  "ch.future.title": "El Futuro del Comercio es Inteligente",
+  "ch.future.body": "Harvics construye la infraestructura para un abastecimiento global con IA, donde datos en tiempo real, logística predictiva y decisiones comerciales más rápidas crean ventajas medibles para el cliente.",
+
+  "ch.speed.eyebrow": "Capítulo VI",
+  "ch.speed.title": "Velocidad y Competencia",
+  "ch.speed.body": "Un modelo de respuesta de abastecimiento de 48 horas comprime los ciclos desde el brief hasta la activación del proveedor. Harvics utiliza inteligencia de proveedores en tiempo real para reducir demoras sin comprometer el rigor operativo.",
+
+  "ch.digital.eyebrow": "Capítulo VII",
+  "ch.digital.title": "Infraestructura Digital",
+  "ch.digital.body": "Motores de abastecimiento con IA, scoring de riesgo, automatización de compras y herramientas digitales de mando están integrados en cada capa del modelo operativo de Harvics.",
+
+  "ch.sustain.eyebrow": "Capítulo VIII",
+  "ch.sustain.title": "Sostenibilidad",
+  "ch.sustain.body": "El comercio responsable está incrustado en cómo Harvics se abastece, opera y crece, mediante administración ambiental, materiales responsables y elecciones logísticas conscientes del carbono.",
+
+  "ch.services.eyebrow": "Capítulo IX",
+  "ch.services.title": "Cobertura de Servicios en Toda la Cadena de Valor",
+  "card.scs.t": "Soluciones de Cadena de Suministro",
+  "card.scs.b": "Control de manufactura, distribución y forwarding, hubbing, consolidación y eLogística.",
+  "card.sourcing.t": "Abastecimiento y Compras",
+  "card.sourcing.b": "Alineación de fábricas, negociación con proveedores, disciplina de compras y flujos inteligentes.",
+  "card.qa.t": "Calidad y Cumplimiento",
+  "card.qa.b": "Control en línea, aprobaciones, inspección, certificaciones y gestión de embarque.",
+
+  "ch.portfolio.eyebrow": "Capítulo X",
+  "ch.portfolio.title": "Portafolio de Productos",
+  "ch.portfolio.lead": "Abastecido con precisión en los mejores corredores manufactureros del mundo.",
+  "card.lks.t": "Cuero, Punto y Sportswear",
+  "card.lks.b": "Corredores especializados en Asia para indumentaria premium y categorías de alto rendimiento.",
+  "card.dcw.t": "Denim, Chino y Workwear",
+  "card.dcw.b": "Denim retail, chinos de calce preciso y workwear de alto rendimiento a escala.",
+  "card.fht.t": "Calzado y Textil para el Hogar",
+  "card.fht.b": "Colecciones de calzado y hogar para hospitalidad, lifestyle y retail global.",
+  "card.overview.t": "Visión del Portafolio",
+  "card.overview.b": "Cuero, punto, sportswear, denim, chino, workwear, calzado y textil para el hogar.",
+
+  "ch.network.eyebrow": "Capítulo XI",
+  "ch.network.title": "Una Red Global de Confianza",
+  "ch.network.body": "Harvics ayuda a minoristas y marcas líderes a abastecer, gestionar y entregar en cada continente, mediante una red construida con años de ejecución precisa.",
+  "net.hubs": "Hubs textiles de manufactura",
+  "net.routes": "Rutas logísticas activas",
+  "net.ontime": "Tasa de entrega a tiempo",
+
+  "ch.contact.eyebrow": "Capítulo Final",
+  "ch.contact.title": "¿Listo Para una Alianza Estratégica?",
+  "ch.contact.lead": "Harvics Global Ventures combina inteligencia de abastecimiento, mando de ejecución y capacidad de producto premium en una sola plataforma escalable.",
+  "ch.contact.cta": "Contactar a Harvics"
+}
