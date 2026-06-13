@@ -357,11 +357,16 @@
     "placeholder": "Type your message...",
     "send": "Send",
     "close": "Close",
-    "welcome": "Hello! How can I help you today?",
+    "welcome": "Hello! I'm HarvyX. How can I help you today?",
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Press Enter to send",
     "fallback": {
       "default": "I'm sorry, I didn't understand that. Could you please rephrase?",
       "help": "I can help you with product information, orders, or general inquiries. What would you like to know?",
-      "contact": "For more assistance, please contact us at support@harvics.com or call +1-800-HARVICS."
+      "contact": "For more assistance, please contact us at support@harvics.com or call +1 (229) 545-5206.",
+      "product": "Browse our product catalog from the menu, or tell me which category interests you — FMCG, textiles, logistics, and more.",
+      "order": "To place an order or check status, visit the distributor portal or contact your account manager.",
+      "about": "Harvics Global Ventures is a sovereign trade infrastructure company with 20+ years across 40+ countries."
     }
   },
   "common": {

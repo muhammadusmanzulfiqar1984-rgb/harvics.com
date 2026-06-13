@@ -463,6 +463,25 @@ body {
 .harvics-fab-tooltip {
   border-radius: 9999px !important;
 }
+.harvics-chatbot-fab svg {
+  display: block !important;
+  flex-shrink: 0;
+}
+
+/* textile-v2 horology — clock (hero) + telephone (contact FAB) */
+.harvics-victorian-clock-wrap,
+.harvics-victorian-telephone-fab {
+  border-radius: 9999px !important;
+}
+.harvics-victorian-clock-svg {
+  display: block !important;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+}
+.harvics-victorian-telephone-fab {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: 0 8px 24px rgba(26, 5, 5, 0.38) !important;
+}
 
 /* Tab button improvements */
 .crm-theme button[role="tab"] {

@@ -96,6 +96,7 @@ const nextConfig = {
       rewrites.push(
         { source: '/textile-v2/:path*', destination: `${cdn}/textile-v2/:path*` },
         { source: '/mafi-presentation/:path*', destination: `${cdn}/mafi-presentation/:path*` },
+        { source: '/vietnam-denim-presentation/:path*', destination: `${cdn}/vietnam-denim-presentation/:path*` },
       );
     }
 

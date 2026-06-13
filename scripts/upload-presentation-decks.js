@@ -19,6 +19,7 @@ const CDN = process.env.NEXT_PUBLIC_CDN_URL || 'https://pub-f2496164b9544713bde9
 const DECK_DIRS = [
   { local: 'public/textile-v2', prefix: 'textile-v2' },
   { local: 'public/mafi-presentation', prefix: 'mafi-presentation' },
+  { local: 'public/vietnam-denim-presentation', prefix: 'vietnam-denim-presentation' },
 ]
 
 const MIME = {
@@ -126,7 +127,8 @@ async function main() {
 
   console.log(`\nDone. Uploaded: ${uploaded}, skipped (already on R2): ${skipped}`)
   console.log(`Test: ${CDN}/textile-v2/lpp/index.html`)
-  console.log(`Test: ${CDN}/mafi-presentation/index.html\n`)
+  console.log(`Test: ${CDN}/mafi-presentation/index.html`)
+  console.log(`Test: ${CDN}/vietnam-denim-presentation/index.html\n`)
 }
 
 main().catch((err) => {

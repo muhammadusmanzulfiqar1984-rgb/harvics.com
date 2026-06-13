@@ -42,7 +42,7 @@ export default function GenerateImagePage() {
     setError(null)
     setResult(null)
     try {
-      const res = await fetch('/api/generate', {
+      const res = await fetch('/api/admin/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ vertical, category, rawPrompt, engineType }),

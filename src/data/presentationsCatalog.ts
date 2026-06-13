@@ -5,6 +5,7 @@ export type PresentationId =
   | 'sourcing-overview'
   | 'fmcg-mafi'
   | 'textiles-lpp'
+  | 'textiles-vietnam-denim'
 
 export interface PresentationEntry {
   id: PresentationId
@@ -35,7 +36,7 @@ export const presentationAreas: Record<
   lounge: {
     title: 'Lounge Access',
     description:
-      'Custom-made programme decks — LPP, MAFI, and other client-specific or board-level presentations.',
+      'Custom-made programme decks — LPP, MAFI, Vietnam Denim, and other client-specific presentations.',
     href: 'lounge',
   },
 }
@@ -92,6 +93,19 @@ export const presentationsCatalog: PresentationEntry[] = [
     duration: 'Board edition',
     format: 'Cinematic scroll',
     verticalKeys: ['textiles'],
+  },
+  {
+    id: 'textiles-vietnam-denim',
+    category: 'lounge',
+    title: 'GENVIET JEANS — Strategic Alliance',
+    subtitle: 'Board-level confidential',
+    verticals: ['Textiles & Apparels', 'Denim'],
+    description:
+      'Strategic Alliance Framework: Global Retail Integration & Euro-Zone Market Expansion for GENVIET JEANS.',
+    launchPath: '/vietnam-denim-presentation/index.html',
+    duration: 'Executive deck',
+    format: 'Cinematic scroll',
+    verticalKeys: ['textiles', 'apparels'],
   },
 ]
 

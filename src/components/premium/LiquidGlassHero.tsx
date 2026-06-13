@@ -4,6 +4,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useLocale } from 'next-intl'
+import { VictorianAnalogClock } from '@/components/ui/VictorianHorology'
 
 const STATS = [
   { label: 'Track Record', value: '$1.2B+' },
@@ -74,6 +75,39 @@ const LiquidGlassHero: React.FC = () => {
         }} />
         {/* Gold shimmer sweep */}
         <div className="absolute inset-0 shimmer-sweep" style={{ mixBlendMode: 'screen', opacity: 0.42 }} />
+      </div>
+
+      {/* Hero header — textile-v2 horology clock */}
+      <div
+        className="absolute top-0 left-0 right-0 z-30 pointer-events-none"
+        style={{
+          opacity: isLoaded ? 1 : 0,
+          transition: 'opacity 0.8s ease 0.3s',
+        }}
+      >
+        <div className="max-w-harvics-layout mx-auto px-6 pt-5 flex items-center justify-end">
+          <div
+            className="pointer-events-auto flex items-center gap-3 rounded-full px-3 py-1.5"
+            style={{
+              background: 'rgba(13,11,8,0.55)',
+              border: '1px solid rgba(200,169,110,0.35)',
+              backdropFilter: 'blur(10px)',
+            }}
+          >
+            <VictorianAnalogClock size={44} />
+            <span
+              style={{
+                fontSize: '9px',
+                letterSpacing: '0.22em',
+                textTransform: 'uppercase',
+                color: 'rgba(232,204,138,0.85)',
+                fontFamily: 'Georgia, "Times New Roman", serif',
+              }}
+            >
+              Local Time
+            </span>
+          </div>
+        </div>
       </div>
 
       {/* ── MAIN CONTENT ── */}
