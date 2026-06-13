@@ -111,3 +111,17 @@ backups/
 # Presentation decks — served from R2, not git (keeps deploys small)
 public/textile-v2/
 public/mafi-presentation/
+
+# Vietnam denim presentation — large media on R2, source code in git
+public/vietnam-denim-presentation/Vedio/
+public/vietnam-denim-presentation/Vedio 1/
+public/vietnam-denim-presentation/.tmp-rw/
+public/vietnam-denim-presentation/.optimized/
+public/vietnam-denim-presentation/dist/
+public/vietnam-denim-presentation/node_modules/
+
+# Root video folder
+Vedios /
+
+# Large media served from R2 CDN (not tracked in git)
+audit-visual.html
