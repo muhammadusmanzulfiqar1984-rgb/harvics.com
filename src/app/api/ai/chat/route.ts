@@ -22,7 +22,6 @@ function ruleBasedReply(message: string): string {
   return "I'm here to help with trade, logistics, events, and compliance questions. What would you like to know?"
 }
 
-export const runtime = 'edge'
 
 export async function POST(req: NextRequest) {
   try {

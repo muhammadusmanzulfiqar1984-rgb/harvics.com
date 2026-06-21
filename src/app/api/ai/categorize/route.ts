@@ -16,7 +16,6 @@ function ruleBasedCategory(description: string): string {
   return 'Other'
 }
 
-export const runtime = 'edge'
 
 export async function POST(req: NextRequest) {
   try {
