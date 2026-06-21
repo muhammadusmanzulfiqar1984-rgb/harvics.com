@@ -131,6 +131,20 @@ const nextConfig = {
     return [
       // Presentation deck — serve the static HTML directly, bypassing [locale] route
       { source: '/vietnam-denim-presentation', destination: '/vietnam-denim-presentation/index.html', permanent: false },
+      // Apps — redirect directory paths to index.html
+      { source: '/apps/event-os', destination: '/apps/event-os/index.html', permanent: false },
+      { source: '/apps/event-os/', destination: '/apps/event-os/index.html', permanent: false },
+      { source: '/apps/harvics-os', destination: '/apps/harvics-os/index.html', permanent: false },
+      { source: '/apps/harvics-os/', destination: '/apps/harvics-os/index.html', permanent: false },
+      { source: '/apps/vatify', destination: '/apps/vatify/index.html', permanent: false },
+      { source: '/apps/vatify/', destination: '/apps/vatify/index.html', permanent: false },
+      { source: '/apps/harvoice', destination: '/apps/harvoice/index.html', permanent: false },
+      { source: '/apps/harvoice/', destination: '/apps/harvoice/index.html', permanent: false },
+      // Legacy launch URLs
+      { source: '/launch/event-os', destination: '/apps/event-os/index.html', permanent: true },
+      { source: '/launch/harvics-os', destination: '/apps/harvics-os/index.html', permanent: true },
+      { source: '/launch/vatify', destination: '/apps/vatify/index.html', permanent: true },
+      { source: '/launch/harvoice', destination: '/apps/harvoice/index.html', permanent: true },
       { source: '/:locale/presentations', destination: '/:locale/la-pres', permanent: true },
       { source: '/:locale/presentations/access', destination: '/:locale/la-pres', permanent: true },
       { source: '/:locale/presentations/lobby', destination: '/:locale/la-pres/lobby', permanent: true },
