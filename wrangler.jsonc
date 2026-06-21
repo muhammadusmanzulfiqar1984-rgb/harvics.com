@@ -14,6 +14,9 @@
   "observability": {
     "enabled": true
   },
+  "ai": {
+    "binding": "AI"
+  },
   "routes": [
     { "pattern": "harvics.com/*", "zone_name": "harvics.com" },
     { "pattern": "www.harvics.com/*", "zone_name": "harvics.com" }
