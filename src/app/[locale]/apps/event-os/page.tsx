@@ -37,7 +37,7 @@ export default function EventOsPage() {
 
         <div className="flex gap-4 mb-16">
           <a
-            href="/launch/event-os"
+            href="/apps/event-os/index.html"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#1A0505] text-white font-semibold shadow-md hover:bg-[#5a1824] transition"

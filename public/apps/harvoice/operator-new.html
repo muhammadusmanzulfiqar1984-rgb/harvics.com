@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HarvyX — Operator (new)</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ───────── tokens ───────── */
+:root{
+  --bg:#0e0508;
+  --bg-2:#160a10;
+  --panel:#1b0e15;
+  --panel-2:#241420;
+  --line:rgba(195,163,94,.18);
+  --line-2:rgba(195,163,94,.32);
+  --ink:#ece4d3;
+  --ink-2:#bba884;
+  --gold:#c3a35e;
+  --gold-2:#f1d18a;
+  --burgundy:#6b1f2b;
+  --burgundy-2:#922a3b;
+  --ok:#7ec28b;
+  --warn:#e0b34a;
+  --bad:#e0726b;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);font-family:Inter,system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+.serif{font-family:'Playfair Display',serif;letter-spacing:.2px}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:8px}
+
+/* ───────── shell ───────── */
+.app{display:grid;grid-template-columns:64px 1fr;height:100vh;background:
+  radial-gradient(900px 600px at 8% 0%, rgba(146,42,59,.22), transparent 60%),
+  radial-gradient(900px 600px at 100% 100%, rgba(195,163,94,.10), transparent 65%),
+  var(--bg)}
+
+/* dock (vertical) */
+.dock{display:flex;flex-direction:column;align-items:center;padding:14px 0;gap:10px;border-right:1px solid var(--line);background:rgba(0,0,0,.25);backdrop-filter:blur(20px)}
+.brand{width:40px;height:40px;border-radius:10px;background:linear-gradient(160deg,var(--burgundy),var(--burgundy-2));display:grid;place-items:center;color:var(--gold-2);font-family:'Playfair Display',serif;font-weight:700;font-size:14px;box-shadow:inset 0 0 0 1px rgba(241,209,138,.45), 0 6px 20px rgba(107,31,42,.5);margin-bottom:8px}
+.dock-btn{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;color:var(--ink-2);background:transparent;border:1px solid transparent;cursor:pointer;transition:.15s}
+.dock-btn:hover{color:var(--gold-2);background:rgba(195,163,94,.08);border-color:var(--line-2)}
+.dock-btn.active{color:var(--gold-2);background:rgba(195,163,94,.12);border-color:var(--line-2);box-shadow:inset 0 0 0 1px rgba(241,209,138,.18)}
+.dock svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.dock-foot{margin-top:auto;display:flex;flex-direction:column;gap:8px;align-items:center}
+.dock-status{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 10px rgba(126,194,139,.8)}
+
+/* main area */
+.main{display:grid;grid-template-rows:auto 1fr auto;min-width:0}
+
+/* topbar */
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-bottom:1px solid var(--line)}
+.crumbs{display:flex;align-items:center;gap:10px;color:var(--ink-2);font-size:12px;letter-spacing:.04em}
+.crumbs b{color:var(--gold-2);font-family:'Playfair Display',serif;font-weight:600;font-size:14px;letter-spacing:.3px}
+.crumb-sep{opacity:.4}
+.top-actions{display:flex;gap:8px;align-items:center}
+.pill{font-size:11px;color:var(--gold-2);background:rgba(195,163,94,.08);border:1px solid var(--line-2);border-radius:999px;padding:5px 11px;letter-spacing:.06em}
+.pill .d{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--ok);box-shadow:0 0 8px rgba(126,194,139,.7);margin-right:7px;vertical-align:middle}
+.btn{font:inherit;font-size:12.5px;font-weight:500;color:var(--gold-2);background:transparent;border:1px solid var(--line-2);border-radius:8px;padding:7px 12px;cursor:pointer;transition:.15s}
+.btn:hover{background:rgba(195,163,94,.08);color:#fff5de}
+.btn.solid{background:linear-gradient(160deg,var(--gold-2),var(--gold));color:#2a1118;border-color:transparent;font-weight:600}
+.btn.solid:hover{filter:brightness(1.05)}
+.btn.danger{color:var(--bad);border-color:rgba(224,114,107,.4)}
+.btn.danger:hover{background:rgba(224,114,107,.08)}
+
+/* canvas */
+.canvas{overflow-y:auto;padding:24px max(28px,5vw) 14px;display:flex;flex-direction:column}
+.canvas-inner{max-width:920px;width:100%;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+
+/* hero (empty state) */
+.hero{margin:auto;text-align:center;padding:60px 12px;max-width:560px}
+.hero h1{font-family:'Playfair Display',serif;font-weight:600;color:#fff5de;font-size:38px;line-height:1.1;letter-spacing:-.5px;margin:0 0 14px}
+.hero h1 em{font-style:italic;color:var(--gold-2)}
+.hero p{color:var(--ink-2);font-size:15px;line-height:1.6;margin:0 0 28px}
+.suggest{display:grid;gap:10px;text-align:left}
+.suggest button{background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--ink);font:inherit;font-size:13.5px;cursor:pointer;display:flex;align-items:center;gap:12px;transition:.15s}
+.suggest button:hover{border-color:var(--line-2);background:rgba(195,163,94,.06);transform:translateX(3px)}
+.suggest .ico{width:32px;height:32px;border-radius:8px;background:rgba(195,163,94,.1);color:var(--gold-2);display:grid;place-items:center;flex-shrink:0;font-family:'Playfair Display',serif;font-weight:600}
+
+/* messages */
+.msg{display:grid;grid-template-columns:36px 1fr;gap:14px;animation:slide 250ms ease both}
+@keyframes slide{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.avatar{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;font-family:'Playfair Display',serif;font-weight:600;font-size:11.5px;letter-spacing:.06em}
+.avatar.you{border:1px solid var(--line-2);color:var(--gold-2)}
+.avatar.hx{background:linear-gradient(160deg,var(--burgundy),var(--burgundy-2));color:var(--gold-2);box-shadow:inset 0 0 0 1px rgba(241,209,138,.3)}
+.msg-body{min-width:0}
+.msg-role{font-size:10px;text-transform:uppercase;letter-spacing:.22em;color:var(--gold-2);margin-bottom:6px}
+.msg-text{font-size:14px;line-height:1.65;color:var(--ink);white-space:pre-wrap;word-wrap:break-word}
+.msg-text strong{color:var(--gold-2);font-weight:600}
+.msg-text code{font-family:'JetBrains Mono',monospace;font-size:12px;background:rgba(195,163,94,.08);padding:1px 6px;border-radius:4px;color:var(--gold-2)}
+.msg-text a{color:var(--gold-2)}
+
+/* artifact card (renders inside a chat message) */
+.artifact{margin-top:14px;background:linear-gradient(180deg,rgba(195,163,94,.04),rgba(0,0,0,.2));border:1px solid var(--line-2);border-radius:var(--r);overflow:hidden}
+.artifact-head{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:linear-gradient(180deg,rgba(107,31,42,.45),rgba(107,31,42,.15));border-bottom:1px solid var(--line-2)}
+.artifact-title{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;color:var(--gold-2);letter-spacing:.06em}
+.artifact-meta{font-size:10.5px;color:var(--ink-2);text-transform:uppercase;letter-spacing:.14em}
+.artifact-row{display:grid;grid-template-columns:1fr 110px 60px 100px;gap:12px;align-items:center;padding:12px 16px;border-bottom:1px solid rgba(195,163,94,.10);font-size:12.5px}
+.artifact-row:last-child{border-bottom:none}
+.artifact-row:hover{background:rgba(195,163,94,.04)}
+.artifact-name{font-weight:600;color:#fff5de}
+.artifact-sub{font-size:11px;color:var(--ink-2);margin-top:2px}
+.artifact-src{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--gold);text-transform:uppercase}
+.artifact-score{text-align:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--gold-2)}
+.artifact-act{display:flex;gap:6px;justify-content:flex-end}
+.icon-btn{width:28px;height:28px;border-radius:7px;display:grid;place-items:center;border:1px solid var(--line);background:transparent;color:var(--ink-2);cursor:pointer;transition:.15s}
+.icon-btn:hover{color:var(--gold-2);border-color:var(--line-2);background:rgba(195,163,94,.08)}
+.icon-btn svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.artifact-foot{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:rgba(0,0,0,.2);border-top:1px solid var(--line-2)}
+
+/* composer (bottom bar) */
+.composer{padding:16px max(28px,5vw) 22px;background:linear-gradient(0deg,var(--bg-2),transparent);border-top:1px solid var(--line)}
+.composer-inner{max-width:920px;margin:0 auto}
+.composer-box{display:flex;align-items:flex-end;gap:10px;padding:10px;background:var(--panel);border:1px solid var(--line-2);border-radius:16px;box-shadow:0 -10px 30px -10px rgba(0,0,0,.5);transition:border-color .15s}
+.composer-box:focus-within{border-color:var(--gold)}
+.composer textarea{flex:1;background:transparent;border:0;outline:0;color:var(--ink);font:inherit;font-size:14px;line-height:1.5;resize:none;padding:8px 6px;max-height:200px;min-height:36px}
+.composer textarea::placeholder{color:var(--ink-2);opacity:.7}
+.mic-btn{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;border:1px solid var(--line-2);background:transparent;color:var(--gold-2);cursor:pointer;flex-shrink:0;transition:.15s}
+.mic-btn:hover{background:rgba(195,163,94,.1)}
+.mic-btn.on{background:linear-gradient(160deg,var(--burgundy),var(--burgundy-2));border-color:var(--burgundy-2);color:var(--gold-2);animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(146,42,59,.5)}50%{box-shadow:0 0 0 10px rgba(146,42,59,0)}}
+.send-btn{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(160deg,var(--gold-2),var(--gold));color:#2a1118;border:0;cursor:pointer;flex-shrink:0;transition:.15s}
+.send-btn:hover{filter:brightness(1.05)}
+.send-btn:disabled{opacity:.35;cursor:not-allowed}
+.send-btn svg,.mic-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.composer-hint{display:flex;justify-content:space-between;padding:8px 4px 0;font-size:10.5px;color:var(--ink-2);text-transform:uppercase;letter-spacing:.14em}
+.composer-chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.chip{font-size:11px;color:var(--ink-2);background:transparent;border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer;transition:.15s}
+.chip:hover{color:var(--gold-2);border-color:var(--line-2);background:rgba(195,163,94,.06)}
+.chip.active{color:var(--gold-2);background:rgba(195,163,94,.1);border-color:var(--gold)}
+
+/* right slide-over (channels, drafts, history) */
+.over{position:fixed;top:0;right:0;height:100vh;width:360px;max-width:90vw;background:var(--bg-2);border-left:1px solid var(--line-2);transform:translateX(110%);transition:transform .25s ease;z-index:50;display:flex;flex-direction:column;box-shadow:-20px 0 60px rgba(0,0,0,.5)}
+.over.open{transform:translateX(0)}
+.over-head{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid var(--line)}
+.over-head h3{margin:0;font-family:'Playfair Display',serif;font-weight:600;color:var(--gold-2);font-size:16px;letter-spacing:.04em}
+.over-body{flex:1;overflow-y:auto;padding:18px 20px}
+.over-section{margin-bottom:22px}
+.over-label{font-size:10.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--ink-2);margin-bottom:10px;font-weight:500}
+.kpi-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kpi{padding:12px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.02);position:relative;overflow:hidden}
+.kpi::before{content:"";position:absolute;top:0;inset-inline:0;height:2px;background:linear-gradient(90deg,var(--gold-2),transparent)}
+.kpi-l{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-2)}
+.kpi-v{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gold-2);margin-top:4px;line-height:1}
+.list-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--line);font-size:12.5px}
+.list-row:last-child{border-bottom:none}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok);margin-right:8px}
+.dot.down{background:var(--bad)}
+.dot.warn{background:var(--warn)}
+.over-close{background:none;border:0;color:var(--ink-2);font-size:22px;cursor:pointer;line-height:1}
+.over-close:hover{color:var(--gold-2)}
+
+/* backdrop */
+.backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .2s;z-index:40}
+.backdrop.show{opacity:1;pointer-events:auto}
+
+/* typing indicator */
+.typing{display:inline-flex;gap:4px;padding:8px 12px;border-radius:10px;background:rgba(195,163,94,.06)}
+.typing span{width:6px;height:6px;border-radius:50%;background:var(--gold-2);opacity:.5;animation:t 1.2s ease-in-out infinite}
+.typing span:nth-child(2){animation-delay:.18s}
+.typing span:nth-child(3){animation-delay:.36s}
+@keyframes t{0%,80%,100%{opacity:.3;transform:scale(.85)}40%{opacity:1;transform:scale(1.1)}}
+
+/* draft card (inside slide-over) */
+.draft{padding:12px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.02);margin-bottom:10px}
+.draft-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.draft-h .who{font-family:'Playfair Display',serif;font-weight:600;color:var(--gold-2);font-size:12.5px}
+.draft-h .tag{font-size:10px;text-transform:uppercase;letter-spacing:.1em;padding:2px 7px;border-radius:999px;background:rgba(126,194,139,.12);color:var(--ok);border:1px solid rgba(126,194,139,.3)}
+.draft p{margin:6px 0 8px;font-size:11.5px;line-height:1.5;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.draft-act{display:flex;gap:6px}
+.draft-act button{flex:1;font-size:11px;padding:6px 10px}
+
+/* responsive */
+@media (max-width:680px){
+  .topbar{padding:12px 16px}
+  .canvas{padding:18px 14px 8px}
+  .composer{padding:12px 14px 16px}
+  .hero h1{font-size:28px}
+  .over{width:90vw}
+  .artifact-row{grid-template-columns:1fr 70px 50px;gap:8px;padding:10px 12px}
+  .artifact-row .artifact-src{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="app">
+  <!-- Vertical dock -->
+  <nav class="dock">
+    <div class="brand">HX</div>
+    <button class="dock-btn active" data-tip="Operator" title="Operator">
+      <svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+    </button>
+    <button class="dock-btn" data-panel="kpis" title="Data">
+      <svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 14l4-4 4 4 5-5"/></svg>
+    </button>
+    <button class="dock-btn" data-panel="drafts" title="Outreach">
+      <svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+    </button>
+    <button class="dock-btn" data-panel="activity" title="Activity">
+      <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    </button>
+    <button class="dock-btn" title="Channels">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c2.5 3.5 4 7.5 4 10s-1.5 6.5-4 10c-2.5-3.5-4-7.5-4-10s1.5-6.5 4-10z"/></svg>
+    </button>
+    <div class="dock-foot">
+      <button class="dock-btn" title="Settings">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      </button>
+      <div class="dock-status" title="All systems online"></div>
+    </div>
+  </nav>
+
+  <!-- Main column -->
+  <section class="main">
+    <header class="topbar">
+      <div class="crumbs">
+        <b class="serif">HarvyX</b>
+        <span class="crumb-sep">/</span>
+        <span>Operator</span>
+        <span class="crumb-sep">/</span>
+        <span id="thread-name" style="color:var(--ink)">New thread</span>
+      </div>
+      <div class="top-actions">
+        <span class="pill"><span class="d"></span>Live</span>
+        <button class="btn" id="new-thread">+ New</button>
+        <button class="btn danger" id="stop-btn">Stop</button>
+      </div>
+    </header>
+
+    <main class="canvas" id="canvas">
+      <div class="canvas-inner" id="thread">
+        <!-- empty state injected -->
+      </div>
+    </main>
+
+    <footer class="composer">
+      <div class="composer-inner">
+        <div class="composer-box">
+          <button class="mic-btn" id="mic" title="Voice (browser speech)">
+            <svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3zM19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg>
+          </button>
+          <textarea id="input" rows="1" placeholder="Tell HarvyX what to do across every channel…"></textarea>
+          <button class="send-btn" id="send" disabled>
+            <svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </div>
+        <div class="composer-chips">
+          <button class="chip" data-q="5 FMCG distributors in Dubai">FMCG · Dubai</button>
+          <button class="chip" data-q="10 food importers in Saudi Arabia">Food importers · Saudi</button>
+          <button class="chip" data-q="CEOs at private-label snack companies in UAE">Snack CEOs · UAE</button>
+          <button class="chip" data-q="procurement managers at supermarket chains in Riyadh">Procurement · Riyadh</button>
+        </div>
+        <div class="composer-hint">
+          <span>⏎ send · ⇧⏎ newline · 🎙 voice</span>
+          <span id="connection">connecting…</span>
+        </div>
+      </div>
+    </footer>
+  </section>
+</div>
+
+<!-- Right slide-over -->
+<div class="backdrop" id="backdrop"></div>
+<aside class="over" id="over">
+  <div class="over-head">
+    <h3 id="over-title">Data</h3>
+    <button class="over-close" id="over-close">✕</button>
+  </div>
+  <div class="over-body" id="over-body"></div>
+</aside>
+
+<script>
+// ───────── API base (Project A) ─────────
+const API = location.port === '3001' ? '' : 'http://localhost:3001';
+
+// ───────── state ─────────
+const state = { messages: [], voice: false };
+const $ = (s) => document.querySelector(s);
+const el = (html) => { const d = document.createElement('div'); d.innerHTML = html.trim(); return d.firstElementChild; };
+const fmt = (n) => (n == null || n === '' ? '—' : n);
+const esc = (s) => String(s ?? '').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const md = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/`([^`]+)`/g, '<code>$1</code>').replace(/\n/g, '<br>');
+
+// ───────── render thread ─────────
+function renderEmpty(){
+  $('#thread').innerHTML = '';
+  $('#thread').append(el(`
+    <div class="hero">
+      <h1>What should HarvyX <em>do</em> for you?</h1>
+      <p>Voice or type a single instruction. I'll scrape leads, score them, draft outreach, and run sequences across every channel.</p>
+      <div class="suggest">
+        <button data-q="Find 10 FMCG distributors in Dubai and show me the top 5"><span class="ico">D</span><span>Find 10 FMCG distributors in Dubai and show me the top 5</span></button>
+        <button data-q="List the biggest private-label snack buyers in Saudi Arabia"><span class="ico">S</span><span>List the biggest private-label snack buyers in Saudi Arabia</span></button>
+        <button data-q="Procurement managers at supermarket chains in Riyadh"><span class="ico">R</span><span>Procurement managers at supermarket chains in Riyadh</span></button>
+        <button data-q="Help"><span class="ico">?</span><span>What can you do — show me everything</span></button>
+      </div>
+    </div>`));
+  document.querySelectorAll('.suggest button, .chip').forEach(b => b.onclick = () => quick(b.dataset.q));
+}
+
+function renderMessage(role, text, leads){
+  const isUser = role === 'user';
+  const node = el(`
+    <div class="msg">
+      <div class="avatar ${isUser ? 'you' : 'hx'}">${isUser ? 'YOU' : 'HX'}</div>
+      <div class="msg-body">
+        <div class="msg-role">${isUser ? 'You' : 'HarvyX'}</div>
+        <div class="msg-text">${md(text)}</div>
+      </div>
+    </div>`);
+  if (leads && leads.length) node.querySelector('.msg-body').append(renderArtifact(leads));
+  $('#thread').append(node);
+  $('#canvas').scrollTop = $('#canvas').scrollHeight;
+  return node;
+}
+
+function renderArtifact(leads){
+  const rows = leads.slice(0, 10).map(l => {
+    const name = esc(l.company_name || l.name || 'Untitled');
+    const person = l.contact_person?.name ? esc(l.contact_person.name) + ' · ' + esc(l.contact_person.title || '') : '';
+    const meta = [person, esc(l.location?.city || ''), esc(l.location?.country || ''), esc(l.business_type || '')].filter(Boolean).join(' · ');
+    const src = esc(l.lead_source || 'apollo');
+    const score = Number(l.lead_score || l.score || 0);
+    return `
+      <div class="artifact-row">
+        <div><div class="artifact-name">${name}</div>${meta ? `<div class="artifact-sub">${meta}</div>` : ''}</div>
+        <div class="artifact-src">${src}</div>
+        <div class="artifact-score">${score}</div>
+        <div class="artifact-act">
+          <button class="icon-btn" title="Save"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button>
+          <button class="icon-btn" title="Outreach"><svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+          <button class="icon-btn" title="Open"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></button>
+        </div>
+      </div>`;
+  }).join('');
+  return el(`
+    <div class="artifact">
+      <div class="artifact-head">
+        <div class="artifact-title">Scored prospects · ${leads.length}</div>
+        <div class="artifact-meta">live · scored · ready to act</div>
+      </div>
+      ${rows}
+      <div class="artifact-foot">
+        <span class="artifact-meta">${leads.length} leads · click <strong style="color:var(--gold-2)">Save</strong> to add to pipeline</span>
+        <button class="btn solid">Outreach all</button>
+      </div>
+    </div>`);
+}
+
+function renderTyping(){
+  const node = el(`
+    <div class="msg" id="typing">
+      <div class="avatar hx">HX</div>
+      <div class="msg-body">
+        <div class="msg-role">HarvyX</div>
+        <div class="typing"><span></span><span></span><span></span></div>
+      </div>
+    </div>`);
+  $('#thread').append(node);
+  $('#canvas').scrollTop = $('#canvas').scrollHeight;
+}
+
+// ───────── send ─────────
+async function send(text){
+  if (!text.trim()) return;
+  if (!state.messages.length) $('#thread').innerHTML = '';
+  state.messages.push({ role: 'user', text });
+  renderMessage('user', text);
+  $('#input').value = ''; $('#send').disabled = true; resizeInput();
+  renderTyping();
+  try {
+    const res = await fetch(`${API}/api/discover/chat`, {
+      method: 'POST',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: text,
+        history: state.messages.slice(0, -1).map(m => ({ role: m.role, content: m.text })),
+      }),
+    });
+    const d = await res.json();
+    $('#typing')?.remove();
+    const reply = d.reply || d.message || d.text || 'No reply.';
+    state.messages.push({ role: 'assistant', text: reply, leads: d.leads });
+    renderMessage('assistant', reply, d.leads);
+  } catch (e) {
+    $('#typing')?.remove();
+    renderMessage('assistant', `**Error:** ${e.message}\n\nMake sure Project A is running on \`localhost:3001\`.`);
+  }
+}
+function quick(q){ $('#input').value = q; resizeInput(); send(q); }
+
+// ───────── input behaviour ─────────
+function resizeInput(){
+  const t = $('#input');
+  t.style.height = 'auto';
+  t.style.height = Math.min(t.scrollHeight, 200) + 'px';
+  $('#send').disabled = !t.value.trim();
+}
+$('#input').addEventListener('input', resizeInput);
+$('#input').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); send($('#input').value); }
+});
+$('#send').onclick = () => send($('#input').value);
+
+// ───────── voice (browser SpeechRecognition) ─────────
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec;
+$('#mic').onclick = () => {
+  if (!SR){ alert('SpeechRecognition not supported in this browser. Use Chrome.'); return; }
+  if (state.voice){ rec?.stop(); return; }
+  rec = new SR();
+  rec.lang = 'en-US'; rec.interimResults = true; rec.continuous = false;
+  rec.onresult = (e) => {
+    const txt = Array.from(e.results).map(r => r[0].transcript).join('');
+    $('#input').value = txt; resizeInput();
+  };
+  rec.onend = () => { state.voice = false; $('#mic').classList.remove('on'); if ($('#input').value.trim()) send($('#input').value); };
+  rec.onerror = () => { state.voice = false; $('#mic').classList.remove('on'); };
+  rec.start(); state.voice = true; $('#mic').classList.add('on');
+};
+
+// ───────── new thread / stop ─────────
+$('#new-thread').onclick = () => { state.messages = []; renderEmpty(); $('#thread-name').textContent = 'New thread'; };
+$('#stop-btn').onclick = () => { rec?.stop?.(); };
+
+// ───────── slide-over panels ─────────
+const over = $('#over'), backdrop = $('#backdrop');
+function closeOver(){ over.classList.remove('open'); backdrop.classList.remove('show'); }
+backdrop.onclick = closeOver; $('#over-close').onclick = closeOver;
+
+document.querySelectorAll('.dock-btn[data-panel]').forEach(b => b.onclick = () => openPanel(b.dataset.panel));
+
+async function openPanel(which){
+  document.querySelectorAll('.dock-btn').forEach(x => x.classList.remove('active'));
+  document.querySelector(`.dock-btn[data-panel="${which}"]`)?.classList.add('active');
+  over.classList.add('open'); backdrop.classList.add('show');
+  $('#over-body').innerHTML = `<div class="over-section" style="color:var(--ink-2);font-size:12.5px">Loading…</div>`;
+
+  try {
+    if (which === 'kpis'){
+      $('#over-title').textContent = 'Data Intelligence';
+      const [aRes, dRes, healthArr] = await Promise.all([
+        fetch(`${API}/api/distributor-leads/analytics?group_by=overview&timeframe=30d`, { credentials: 'include' }).then(r => r.json()).catch(()=>({})),
+        fetch(`${API}/api/distributor-leads/distributors?page=1&limit=5`, { credentials: 'include' }).then(r => r.json()).catch(()=>({})),
+        Promise.all(['apollo','google-places','linkedin','sendgrid','twilio'].map(p =>
+          fetch(`${API}/api/distributor-leads/test-key?provider=${p}`, { credentials: 'include' })
+            .then(r => r.ok ? 'live' : 'down').catch(() => 'down')
+        )),
+      ]);
+      const ov = aRes?.data?.overview || {};
+      $('#over-body').innerHTML = `
+        <div class="over-section">
+          <div class="over-label">Pipeline overview</div>
+          <div class="kpi-grid">
+            <div class="kpi"><div class="kpi-l">Total leads</div><div class="kpi-v">${fmt(ov.total_leads)}</div></div>
+            <div class="kpi"><div class="kpi-l">New today</div><div class="kpi-v">${fmt(ov.new_today)}</div></div>
+            <div class="kpi"><div class="kpi-l">Qualified</div><div class="kpi-v">${fmt(ov.qualified_leads)}</div></div>
+            <div class="kpi"><div class="kpi-l">Missing data</div><div class="kpi-v">${fmt(ov.missing_data)}</div></div>
+          </div>
+        </div>
+        <div class="over-section">
+          <div class="over-label">Scrapers · ${healthArr.filter(s => s==='live').length}/5 live</div>
+          ${['Apollo · Organizations','Google Places','LinkedIn (Serper→Brave)','SendGrid','Twilio'].map((n,i) =>
+            `<div class="list-row"><span><span class="dot ${healthArr[i] === 'down' ? 'down' : ''}"></span>${n}</span><span class="mono" style="font-size:10.5px;color:var(--ink-2)">${healthArr[i]}</span></div>`
+          ).join('')}
+        </div>
+        <div class="over-section">
+          <div class="over-label">Top leads</div>
+          ${((dRes?.data || []).slice(0,5).map(l =>
+            `<div class="list-row"><span class="serif" style="color:var(--gold-2)">${esc(l.company_name || l.name)}</span><span class="serif" style="color:var(--gold)">${l.relevance_score || 0}</span></div>`
+          ).join('')) || '<div style="color:var(--ink-2);font-size:12.5px">No leads yet — ask HarvyX to scrape some.</div>'}
+        </div>`;
+    }
+    else if (which === 'drafts'){
+      $('#over-title').textContent = 'Outreach Console';
+      const s = await fetch(`${API}/api/distributor-leads/outreach?action=stats`, { credentials: 'include' }).then(r => r.json()).catch(()=>({}));
+      const drafts = (s?.drafts || []);
+      $('#over-body').innerHTML = `
+        <div class="over-section">
+          <div class="over-label">Drafts · ${drafts.length}</div>
+          ${drafts.length ? drafts.map(d => `
+            <div class="draft">
+              <div class="draft-h"><span class="who">${esc(d.channel)} · ${esc(d.subject || '')}</span><span class="tag">${esc(d.status || 'review')}</span></div>
+              <p>${esc(d.preview || '')}</p>
+              <div class="draft-act"><button class="btn">Edit</button><button class="btn solid">Approve</button></div>
+            </div>`).join('') : '<div style="color:var(--ink-2);font-size:12.5px">No drafts yet. Ask HarvyX to write some — they will appear here.</div>'}
+        </div>
+        <div class="over-section">
+          <div class="over-label">Channels</div>
+          <div class="kpi-grid" style="grid-template-columns:1fr 1fr">
+            ${['WhatsApp','Instagram','LinkedIn','Email','SMS · Twilio','Voice · Vapi'].map(c => `<button class="btn" style="justify-self:stretch">${c}</button>`).join('')}
+          </div>
+        </div>`;
+    }
+    else if (which === 'activity'){
+      $('#over-title').textContent = 'Live Activity';
+      $('#over-body').innerHTML = `
+        <div class="over-section">
+          <div class="over-label">Stream · /api/events/stream</div>
+          <div id="activity-list" style="font-size:12.5px;color:var(--ink-2)">Listening…</div>
+        </div>`;
+      try {
+        const es = new EventSource(`${API}/api/events/stream`);
+        const list = $('#activity-list'); const items = [];
+        es.onmessage = (ev) => {
+          try {
+            const env = JSON.parse(ev.data);
+            const t = new Date(env.ts || Date.now()).toLocaleTimeString().slice(0,5);
+            items.unshift(`<div class="list-row"><span><span class="mono" style="color:var(--ink-2);font-size:10.5px;margin-right:8px">${t}</span>${esc(env.type || 'event')} ${esc(env.summary || '')}</span></div>`);
+            list.innerHTML = items.slice(0, 12).join('');
+          } catch {}
+        };
+        over.dataset.es = '1';
+      } catch {}
+    }
+  } catch (e){
+    $('#over-body').innerHTML = `<div style="color:var(--bad);font-size:12.5px">${esc(e.message)}</div>`;
+  }
+}
+
+// ───────── connection check ─────────
+async function ping(){
+  try {
+    const r = await fetch(`${API}/api/distributor-leads/test-key?provider=apollo`, { credentials: 'include' });
+    $('#connection').textContent = r.ok ? 'connected · localhost:3001' : 'unauthenticated · visit /auth/dev-login on :3001';
+    $('#connection').style.color = r.ok ? 'var(--ok)' : 'var(--warn)';
+  } catch {
+    $('#connection').textContent = 'offline · start project A on :3001';
+    $('#connection').style.color = 'var(--bad)';
+  }
+}
+ping();
+
+// ───────── boot ─────────
+renderEmpty();
+</script>
+</body>
+</html>

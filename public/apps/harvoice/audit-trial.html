@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Harvics / HarvyX — Audit & Proposed Unified Build</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<style>
+  :root{
+    --bg:#120607;
+    --bg2:#1a0a0c;
+    --panel:#22090d;
+    --panel2:#2b0d12;
+    --line:#3a141c;
+    --maroon:#6b1f2b;
+    --maroon-2:#8a2a38;
+    --maroon-deep:#3a0f17;
+    --gold:#c3a35e;
+    --gold-soft:#e6cd92;
+    --cream:#f5f1e8;
+    --ink:#f1e9dc;
+    --mute:#b9a896;
+    --good:#7ec48a;
+    --bad:#e07b7b;
+    --warn:#e0bf76;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:14px;line-height:1.55}
+  body{
+    background:
+      radial-gradient(1100px 600px at 85% -10%, rgba(195,163,94,.08), transparent 60%),
+      radial-gradient(900px 500px at -10% 30%, rgba(107,31,43,.35), transparent 70%),
+      linear-gradient(180deg,var(--bg) 0%, var(--bg2) 100%);
+    min-height:100vh;
+  }
+  .wrap{max-width:1280px;margin:0 auto;padding:40px 28px 80px}
+  header.hero{
+    display:flex;align-items:flex-end;justify-content:space-between;gap:24px;
+    border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:32px;
+  }
+  .brand{display:flex;align-items:center;gap:14px}
+  .brand .mark{
+    width:46px;height:46px;border-radius:12px;
+    background:linear-gradient(135deg,var(--maroon),var(--maroon-deep));
+    border:1px solid var(--gold);color:var(--gold);
+    display:grid;place-items:center;font-family:Georgia,serif;font-weight:700;font-size:20px;
+    box-shadow:0 6px 24px rgba(107,31,43,.45);
+  }
+  h1{font-family:Georgia,"Times New Roman",serif;font-weight:600;font-size:26px;margin:0;letter-spacing:.2px}
+  .sub{color:var(--mute);font-size:12.5px;margin-top:4px}
+  .kpis{display:flex;gap:10px;flex-wrap:wrap}
+  .kpi{
+    border:1px solid var(--line);background:linear-gradient(180deg,var(--panel),var(--panel2));
+    padding:10px 14px;border-radius:10px;min-width:120px;
+  }
+  .kpi .n{font-family:Georgia,serif;color:var(--gold);font-size:20px;font-weight:600}
+  .kpi .l{color:var(--mute);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+
+  h2{font-family:Georgia,serif;font-weight:600;font-size:18px;margin:36px 0 12px;color:var(--cream)}
+  h2 .num{
+    display:inline-grid;place-items:center;width:24px;height:24px;border-radius:6px;
+    background:var(--maroon);color:var(--gold);font-size:12px;margin-right:10px;border:1px solid var(--gold);
+    font-family:Inter,sans-serif;font-weight:700;
+  }
+
+  .card{
+    background:linear-gradient(180deg,var(--panel),var(--panel2));
+    border:1px solid var(--line);border-radius:14px;padding:18px;
+  }
+
+  table{width:100%;border-collapse:collapse;font-size:12.5px}
+  th,td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{color:var(--gold);font-weight:600;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;background:rgba(107,31,43,.18)}
+  tbody tr:hover{background:rgba(195,163,94,.04)}
+  td .pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:500;border:1px solid transparent}
+  .y{color:var(--good);background:rgba(126,196,138,.08);border-color:rgba(126,196,138,.25)}
+  .n{color:var(--bad);background:rgba(224,123,123,.08);border-color:rgba(224,123,123,.25)}
+  .w{color:var(--warn);background:rgba(224,191,118,.08);border-color:rgba(224,191,118,.3)}
+  .neu{color:var(--mute);background:rgba(255,255,255,.03);border-color:var(--line)}
+  .star{color:var(--gold);margin-right:4px}
+
+  .grid{display:grid;gap:18px}
+  .g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+  @media (max-width:980px){.g3,.g2{grid-template-columns:1fr}}
+
+  .proj{padding:16px}
+  .proj h3{margin:0 0 4px;font-family:Georgia,serif;font-weight:600;font-size:15px;color:var(--cream)}
+  .proj .port{color:var(--gold);font-size:12px;font-family:ui-monospace,Menlo,monospace}
+  .proj .verdict{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);color:var(--mute);font-size:12.5px}
+  .proj .tag{display:inline-block;border:1px solid var(--line);padding:2px 8px;border-radius:6px;font-size:11px;color:var(--mute);margin:2px 4px 0 0}
+  .proj .tag.b{color:var(--gold);border-color:rgba(195,163,94,.35);background:rgba(195,163,94,.05)}
+
+  .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:stretch}
+  .flow .node{
+    border:1px solid var(--line);background:rgba(0,0,0,.25);border-radius:10px;padding:10px;text-align:center;font-size:12px;
+  }
+  .flow .node b{display:block;color:var(--gold);font-family:Georgia,serif;font-weight:600;font-size:13px;margin-bottom:2px}
+  .flow .arrow{display:none}
+  @media (max-width:900px){.flow{grid-template-columns:1fr 1fr}}
+
+  .stack-tree{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--mute);white-space:pre;line-height:1.7;padding:10px 4px}
+  .stack-tree .k{color:var(--gold)}
+  .stack-tree .v{color:var(--ink)}
+
+  .legend{font-size:11.5px;color:var(--mute);margin:8px 0 0}
+  .legend .pill{margin-right:6px}
+
+  footer{margin-top:48px;color:var(--mute);font-size:12px;text-align:center;border-top:1px solid var(--line);padding-top:18px}
+  a{color:var(--gold-soft)}
+  a:hover{color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="brand">
+      <div class="mark">HX</div>
+      <div>
+        <h1>Harvics / HarvyX — Audit & Unification Proposal</h1>
+        <div class="sub">Trial preview · static HTML · v0.1</div>
+      </div>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><div class="n">6</div><div class="l">Projects</div></div>
+      <div class="kpi"><div class="n">5</div><div class="l">Next.js apps</div></div>
+      <div class="kpi"><div class="n">~59k</div><div class="l">LOC scanned</div></div>
+      <div class="kpi"><div class="n">1</div><div class="l">Proposed build</div></div>
+    </div>
+  </header>
+
+  <h2><span class="num">1</span>Project overview</h2>
+  <div class="grid g3">
+    <div class="card proj">
+      <h3>A · harvyXb2b-main <span class="port">:3001</span></h3>
+      <div class="sub">v2 · App+Pages router · TS · shadcn/Radix</div>
+      <div style="margin-top:8px">
+        <span class="tag b">Prisma 7 + Postgres</span><span class="tag">Supabase</span>
+        <span class="tag">Zustand</span><span class="tag">TanStack Query</span>
+        <span class="tag">Claude · Gemini · Azure · Groq</span><span class="tag">Apollo · SendGrid · Twilio</span>
+      </div>
+      <div class="verdict"><span class="star">★</span> Most mature backend + only project with full shadcn UI, LLM router, agents, ML, SSE. <b style="color:var(--gold)">Best base.</b></div>
+    </div>
+    <div class="card proj">
+      <h3>B · HARVICS BO1T <span class="port">:3002</span></h3>
+      <div class="sub">v1 · Pages router · Plain Tailwind</div>
+      <div style="margin-top:8px">
+        <span class="tag b">Prisma + JSON fallback</span>
+        <span class="tag">Claude · Gemini · Azure</span><span class="tag">Apollo · SendGrid · Twilio</span>
+      </div>
+      <div class="verdict">Same backend as A but stripped UI. <b style="color:var(--gold)">Canonical maroon/gold theme</b> already styled here.</div>
+    </div>
+    <div class="card proj">
+      <h3>C · b2bleads <span class="port">:3003</span></h3>
+      <div class="sub">Next 15 Pages · TS · Plain Tailwind</div>
+      <div style="margin-top:8px">
+        <span class="tag b">JSON store only</span>
+        <span class="tag">Azure + Ollama</span><span class="tag">Apollo · Places · Serper · Brave</span>
+      </div>
+      <div class="verdict">Best NL query parser + best multi-engine LinkedIn failover + edge middleware auth. <b style="color:var(--gold)">Cherry-pick.</b></div>
+    </div>
+    <div class="card proj">
+      <h3>D · Brand Engine v4 <span class="port">:3004</span></h3>
+      <div class="sub">Next 15 App router · No auth</div>
+      <div style="margin-top:8px">
+        <span class="tag">JSON store</span><span class="tag">Apollo · Places · CSE</span><span class="tag">xlsx import</span>
+      </div>
+      <div class="verdict">Static template Brand Engine + GCC country map. Mostly redundant — port only the templates fallback.</div>
+    </div>
+    <div class="card proj">
+      <h3>E · HarvyX-ALL-MERGED <span class="port">(umbrella)</span></h3>
+      <div class="sub">Next 16 Pages · TS · Tailwind</div>
+      <div style="margin-top:8px">
+        <span class="tag b">Prisma + Postgres</span>
+        <span class="tag">Claude · Gemini · Azure · Groq</span><span class="tag">Twilio · SendGrid · Apollo · Places</span>
+      </div>
+      <div class="verdict">In-progress consolidation, many routes are thin scaffolds. <b style="color:var(--bad)">Don't build on top</b> — duplicates A with weaker UI.</div>
+    </div>
+    <div class="card proj">
+      <h3>F · Harvoice (Express) <span class="port">:5050</span></h3>
+      <div class="sub">Vanilla JS · 3-pane HTML</div>
+      <div style="margin-top:8px">
+        <span class="tag">Groq voice</span><span class="tag">Vapi</span><span class="tag">JSON store</span>
+      </div>
+      <div class="verdict">Voice front-door. Keep as an embeddable widget on the unified app, drop the standalone server.</div>
+    </div>
+  </div>
+
+  <h2><span class="num">2</span>Feature coverage matrix</h2>
+  <div class="card" style="padding:0;overflow:auto">
+    <table>
+      <thead>
+        <tr>
+          <th style="min-width:230px">Capability</th>
+          <th>A harvyXb2b</th><th>B BO1T</th><th>C b2bleads</th><th>D Brand v4</th><th>E ALL-MERGED</th><th>F Harvoice</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Discovery — Apollo</td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill w">env</span></td></tr>
+        <tr><td>Discovery — Google Places</td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill w">env</span></td></tr>
+        <tr><td>Discovery — LinkedIn (Serper/Brave)</td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill y">★ multi-engine</span></td><td><span class="pill n">no</span></td><td><span class="pill y">yes</span></td><td><span class="pill n">no</span></td></tr>
+        <tr><td>Events scraper (SSE)</td><td><span class="pill y">yes</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td></tr>
+        <tr><td>NL chat → query parser</td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill y">★ count+intent</span></td><td><span class="pill n">no</span></td><td><span class="pill y">yes</span></td><td><span class="pill y">voice</span></td></tr>
+        <tr><td>Lead scoring</td><td><span class="pill y">snapshots</span></td><td><span class="pill y">yes</span></td><td><span class="pill y">★ configurable</span></td><td><span class="pill y">weighted</span></td><td><span class="pill y">yes</span></td><td><span class="pill n">no</span></td></tr>
+        <tr><td>SendGrid email</td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill w">declared</span></td><td><span class="pill n">no</span></td><td><span class="pill y">yes</span></td><td><span class="pill n">no</span></td></tr>
+        <tr><td>Twilio SMS/WhatsApp + webhook</td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill n">no</span></td><td><span class="pill w">wa.me link</span></td><td><span class="pill y">yes</span></td><td><span class="pill n">no</span></td></tr>
+        <tr><td>Sequences + cron worker</td><td><span class="pill y">yes</span></td><td><span class="pill w">schema</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill y">★ advance-sequences</span></td><td><span class="pill n">no</span></td></tr>
+        <tr><td>Reply classification AI</td><td><span class="pill y">agent</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill y">local</span></td><td><span class="pill n">no</span></td></tr>
+        <tr><td>Content / Brand Engine</td><td><span class="pill y">AI</span></td><td><span class="pill y">AI</span></td><td><span class="pill n">no</span></td><td><span class="pill w">★ templates</span></td><td><span class="pill y">AI</span></td><td><span class="pill n">no</span></td></tr>
+        <tr><td>Conversations / inbox</td><td><span class="pill y">yes</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td></tr>
+        <tr><td>AI Agents shell + cmdk</td><td><span class="pill y">yes</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill w">partial</span></td><td><span class="pill n">no</span></td></tr>
+        <tr><td>Voice (Vapi / browser speech)</td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill n">no</span></td><td><span class="pill y">yes</span></td></tr>
+        <tr><td>Excel/CSV import</td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill n">no</span></td><td><span class="pill y">xlsx</span></td><td><span class="pill y">yes</span></td><td><span class="pill n">no</span></td></tr>
+        <tr><td>Analytics + recharts (live)</td><td><span class="pill y">SSE live</span></td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill y">yes</span></td><td><span class="pill w">KPI panel</span></td></tr>
+        <tr><td>AI providers</td><td><span class="pill y">Claude+Gemini+Azure+Groq router</span></td><td><span class="pill y">Claude+Gemini+Azure</span></td><td><span class="pill w">Azure+Ollama+regex</span></td><td><span class="pill n">none</span></td><td><span class="pill y">Claude+Gemini+Azure+Groq</span></td><td><span class="pill w">Groq</span></td></tr>
+        <tr><td>Auth (dev + SSO)</td><td><span class="pill y">JWT+Supabase</span></td><td><span class="pill y">JWT</span></td><td><span class="pill y">JWT+middleware</span></td><td><span class="pill n">none</span></td><td><span class="pill y">JWT</span></td><td><span class="pill n">none</span></td></tr>
+        <tr><td>Burgundy / maroon theme</td><td><span class="pill w">dormant token</span></td><td><span class="pill y">active</span></td><td><span class="pill y">active</span></td><td><span class="pill y">active</span></td><td><span class="pill y">active</span></td><td><span class="pill y">dark + burgundy</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="legend">
+    <span class="pill y">yes</span> implemented &nbsp;
+    <span class="pill w">partial / env / declared</span> &nbsp;
+    <span class="pill n">no</span> not present &nbsp;
+    <span class="star">★</span> best-in-class for that capability
+  </div>
+
+  <h2><span class="num">3</span>Proposed unified architecture</h2>
+  <div class="card">
+    <p style="margin:0 0 12px"><b style="color:var(--gold)">Base:</b> Project A (<code>harvyXb2b-main</code>) — keep its App-router UI, shadcn/Radix kit, LLM router, agents/ML, Prisma schema, Apollo/SendGrid/Twilio wiring.</p>
+    <div class="flow">
+      <div class="node"><b>UI</b>Next 16 App router · shadcn / Radix · Zustand · TanStack Query</div>
+      <div class="node"><b>API</b>Next pages/api · JWT cookie + edge middleware (from C)</div>
+      <div class="node"><b>AI Router</b>Claude → Gemini → Azure → Groq fallback · cost/latency log</div>
+      <div class="node"><b>Data</b>Prisma 7 + Postgres · 17 models (from A) · JSON fallback dev</div>
+      <div class="node"><b>Channels</b>SendGrid · Twilio (SMS/WA + webhook) · LinkedIn multi-engine (from C)</div>
+    </div>
+
+    <h3 style="font-family:Georgia,serif;color:var(--cream);font-size:14px;margin:22px 0 6px">Merge plan (in order)</h3>
+    <ol style="margin:0;padding-left:18px;color:var(--ink)">
+      <li><b style="color:var(--gold)">Theme:</b> from B → apply maroon <code>#6B1F2B</code> / gold <code>#C3A35E</code> / cream <code>#F5F1E8</code> as the active <code>--primary</code> (replace A's teal) + Dancing Script + Inter fonts.</li>
+      <li><b style="color:var(--gold)">Discovery upgrades:</b> from C → port <code>lib/discover/query-parser</code> (count + company-vs-people intent) and <code>lib/linkedin/search</code> (Serper → Google-HTML → Brave failover, UA rotation, in-memory cache) + edge <code>middleware.js</code> auth pattern.</li>
+      <li><b style="color:var(--gold)">Scoring + Brand Engine fallback:</b> from D → reuse <code>LeadScoringEngine</code> country/city normalisation map; mount the 4 static templates as the no-key fallback for Brand Engine.</li>
+      <li><b style="color:var(--gold)">Sequences worker + intelligence:</b> from E → port <code>worker/advance-sequences</code> cron, <code>intelligence/company</code> + <code>intelligence/market</code>, <code>outreach/sequences</code> + <code>outreach/templates</code>.</li>
+      <li><b style="color:var(--gold)">Voice widget:</b> from F → embed Harvoice as a <code>/voice</code> route + floating widget, repointed from JSON file to the same Prisma DB.</li>
+      <li><b style="color:var(--gold)">Archive:</b> drop standalone B / C / D / E / Express F. Single repo, single port (3000), single auth, single DB.</li>
+    </ol>
+
+    <h3 style="font-family:Georgia,serif;color:var(--cream);font-size:14px;margin:22px 0 6px">Final stack</h3>
+    <div class="stack-tree"><span class="k">app</span>/                 <span class="v">Next 16 App router (UI)</span>
+  (app)/             <span class="v">dashboard · leads · discover · outreach · conversations · content · brand-engine · ai-agents · analytics · settings · voice</span>
+  auth/              <span class="v">login · callback · dev-login</span>
+<span class="k">pages</span>/api/          <span class="v">REST + webhooks (JWT cookie, edge middleware)</span>
+<span class="k">lib</span>/
+  llm/             <span class="v">router · Claude · Gemini · Azure · Groq · costLog</span>
+  agents/          <span class="v">scorer · reply-classifier · message-gen · next-action</span>
+  discover/        <span class="v">apollo · google-places · linkedin (Serper→Google→Brave) · events SSE · query-parser</span>
+  outreach/        <span class="v">sendgrid · twilio · sequences · templates · advance-worker</span>
+  intelligence/    <span class="v">company · market · event-sources</span>
+  brand-engine/    <span class="v">ai-compose + static-templates fallback</span>
+  voice/           <span class="v">harvoice widget bridge (Vapi + browser speech)</span>
+<span class="k">prisma</span>/             <span class="v">17 models · Postgres · migrations</span>
+<span class="k">theme</span>              <span class="v">maroon #6B1F2B · gold #C3A35E · cream #F5F1E8 · Dancing Script + Inter</span>
+</div>
+  </div>
+
+  <footer>
+    Harvics · HarvyX · Harvoice — trial audit page · static HTML, no app dependencies.
+  </footer>
+</div>
+</body>
+</html>

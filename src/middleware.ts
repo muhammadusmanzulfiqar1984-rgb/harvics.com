@@ -68,7 +68,7 @@ export const config = {
   // Exclude API routes, static files, Next.js internals, and static presentation decks
   matcher: [
     // Match all paths except API routes, Next.js internals, static files, and presentation decks
-    '/((?!api|_next|_static|favicon|vietnam-denim-presentation|.*\\.).*)',
+    '/((?!api|_next|_static|favicon|vietnam-denim-presentation|apps/event-os|apps/harvics-os|apps/vatify|apps/harvoice|.*\\.).*)',
     // Explicitly match root
     '/'
   ]

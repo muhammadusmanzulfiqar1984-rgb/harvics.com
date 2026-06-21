@@ -137,7 +137,7 @@ const APPS = [
     icon: '🎪',
     color: '#1A2E4A',
     accentColor: '#C3A35E',
-    url: '/launch/event-os',
+    url: '/apps/event-os/index.html',
     features: [
       'AI Event Concierge',
       'Exhibitor Directory',
@@ -168,7 +168,7 @@ const APPS = [
     icon: '🚢',
     color: '#1C3A2A',
     accentColor: '#C3A35E',
-    url: '/launch/harvics-os',
+    url: '/apps/harvics-os/index.html',
     features: [
       'Live Shipment Tracking',
       'Duty & VAT Calculator',
@@ -199,7 +199,7 @@ const APPS = [
     icon: '🧾',
     color: '#2D1F4A',
     accentColor: '#C3A35E',
-    url: '/launch/vatify',
+    url: '/apps/vatify/index.html',
     features: [
       'Expense Tracking',
       'Multi-Country VAT Engine',
@@ -230,7 +230,7 @@ const APPS = [
     icon: '🎙️',
     color: '#1A2A3A',
     accentColor: '#C3A35E',
-    url: '/launch/harvoice',
+    url: '/apps/harvoice/index.html',
     features: [
       'AI Chat Assistant',
       'Voice Commands',
