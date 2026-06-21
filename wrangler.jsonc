@@ -13,7 +13,11 @@
   },
   "observability": {
     "enabled": true
-  }
+  },
+  "routes": [
+    { "pattern": "harvics.com/*", "zone_name": "harvics.com" },
+    { "pattern": "www.harvics.com/*", "zone_name": "harvics.com" }
+  ]
   // To enable Next.js ISR/SSG caching, create an R2 bucket and uncomment:
   // "r2_buckets": [
   //   { "binding": "NEXT_INC_CACHE_R2_BUCKET", "bucket_name": "harvics-cache" }

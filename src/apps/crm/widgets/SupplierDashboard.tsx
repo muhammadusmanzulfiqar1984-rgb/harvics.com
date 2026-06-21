@@ -52,7 +52,7 @@ export const SupplierDashboard = () => {
 
   if (loading) {
     return (
-      <div className="bg-white text-center py-20 rounded-2xl text-harvics-maroon">
+      <div className="bg-white text-center py-20 rounded-2xl text-harvics-burgundy">
         <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-harvics-gold mx-auto mb-4"></div>
         <p>{t('loading')}</p>
       </div>

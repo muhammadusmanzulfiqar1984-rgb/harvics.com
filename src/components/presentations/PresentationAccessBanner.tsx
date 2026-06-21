@@ -14,7 +14,7 @@ export default function PresentationAccessBanner({ verticalKey }: { verticalKey:
   const areaLabel = presentation.category === 'lounge' ? 'Lounge' : 'Lobby'
 
   return (
-    <div className="border border-[#C3A35E]/30 bg-[#6B1F2B]/95 px-5 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+    <div className="border border-[#C3A35E]/30 bg-[#1A0505]/95 px-5 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
       <div>
         <p className="text-[10px] uppercase tracking-[0.18em] text-[#C3A35E] font-bold mb-1">
           {LA_PRES_NAME} · {areaLabel}

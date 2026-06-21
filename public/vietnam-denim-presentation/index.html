@@ -5,20 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
   <title>Harvics Global Ventures — GENVIET JEANS · EU &amp; Americas Sovereign Trade Architecture</title>
-  <link rel="stylesheet" href="./src/styles.css" />
-  <script type="module" src="./src/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="./assets/runway-luxe-Czi7Ptx3.mp3" as="audio" type="audio/mpeg" />
+  <script type="module" crossorigin src="./assets/index-Dw_eR3E7.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-NrYruTPr.css">
 </head>
 <body x-data>
 
   <div id="cinema-backdrop" class="fixed inset-0 z-0 overflow-hidden bg-[#0c0a09] pointer-events-none">
-    <video id="cinema-video" autoplay loop muted playsinline aria-hidden="true" class="cinema-video">
-      <source src="./bg-runway-loop.mp4" type="video/mp4" />
+    <video id="cinema-video" autoplay muted playsinline aria-hidden="true" class="cinema-video">
+      <source src="./assets/bg-runway-loop-0DAWXWzv.mp4" type="video/mp4" />
     </video>
     <div class="cinema-mask"></div>
   </div>
 
   <audio id="ambient-audio" loop preload="auto">
-    <source src="./ambient-runway.mp3" type="audio/mpeg" />
+    <source src="./assets/runway-luxe-Czi7Ptx3.mp3" type="audio/mpeg" />
   </audio>
 
   <div class="locale-shell">
@@ -287,22 +291,22 @@
         <p class="shelf-click-hint" x-text="$store.locale.t('shelf.clickHint')"></p>
         <div class="shelf-lane" :data-lane="$store.locale.t('shelf.lanes.0')">
           <div class="shelf-track">
-            <div class="shelf-pack" data-shelf="rigid" @click="show('rigid')" role="button" tabindex="0"><img class="shelf-pack-img" src="./assets/shelf/rigid.webp" alt="Rigid denim" loading="lazy" /><span class="shelf-pack-label">Rigid</span></div>
-            <div class="shelf-pack pulse" data-shelf="selvedge" @click="show('selvedge')" role="button" tabindex="0"><img class="shelf-pack-img" src="./assets/shelf/selvedge.webp" alt="Selvedge denim" loading="lazy" /><span class="shelf-pack-label">Selvedge</span></div>
-            <div class="shelf-pack" data-shelf="14oz" @click="show('14oz')" role="button" tabindex="0"><img class="shelf-pack-img" src="./assets/shelf/14oz.webp" alt="14oz denim" loading="lazy" /><span class="shelf-pack-label">14oz</span></div>
-            <div class="shelf-pack" data-shelf="rigid"><img class="shelf-pack-img" src="./assets/shelf/rigid.webp" alt="" loading="lazy" aria-hidden="true" /><span class="shelf-pack-label">Rigid</span></div>
-            <div class="shelf-pack" data-shelf="selvedge"><img class="shelf-pack-img" src="./assets/shelf/selvedge.webp" alt="" loading="lazy" aria-hidden="true" /><span class="shelf-pack-label">Selvedge</span></div>
-            <div class="shelf-pack" data-shelf="14oz"><img class="shelf-pack-img" src="./assets/shelf/14oz.webp" alt="" loading="lazy" aria-hidden="true" /><span class="shelf-pack-label">14oz</span></div>
+            <div class="shelf-pack" data-shelf="rigid" @click="show('rigid')" role="button" tabindex="0"><img class="shelf-pack-img" src="./assets/rigid-Bhihou1i.webp" alt="Rigid denim" loading="lazy" /><span class="shelf-pack-label">Rigid</span></div>
+            <div class="shelf-pack pulse" data-shelf="selvedge" @click="show('selvedge')" role="button" tabindex="0"><img class="shelf-pack-img" src="./assets/selvedge-LI-lnPKy.webp" alt="Selvedge denim" loading="lazy" /><span class="shelf-pack-label">Selvedge</span></div>
+            <div class="shelf-pack" data-shelf="14oz" @click="show('14oz')" role="button" tabindex="0"><img class="shelf-pack-img" src="./assets/14oz-eMx7Op8v.webp" alt="14oz denim" loading="lazy" /><span class="shelf-pack-label">14oz</span></div>
+            <div class="shelf-pack" data-shelf="rigid"><img class="shelf-pack-img" src="./assets/rigid-Bhihou1i.webp" alt="" loading="lazy" aria-hidden="true" /><span class="shelf-pack-label">Rigid</span></div>
+            <div class="shelf-pack" data-shelf="selvedge"><img class="shelf-pack-img" src="./assets/selvedge-LI-lnPKy.webp" alt="" loading="lazy" aria-hidden="true" /><span class="shelf-pack-label">Selvedge</span></div>
+            <div class="shelf-pack" data-shelf="14oz"><img class="shelf-pack-img" src="./assets/14oz-eMx7Op8v.webp" alt="" loading="lazy" aria-hidden="true" /><span class="shelf-pack-label">14oz</span></div>
           </div>
         </div>
         <div class="shelf-lane" :data-lane="$store.locale.t('shelf.lanes.1')">
           <div class="shelf-track" style="animation-duration:22s">
-            <div class="shelf-pack" data-shelf="stone" @click="show('stone')" role="button" tabindex="0"><img class="shelf-pack-img" src="./assets/shelf/stone.webp" alt="Stone wash denim" loading="lazy" /><span class="shelf-pack-label">Stone</span></div>
-            <div class="shelf-pack" data-shelf="enzyme" @click="show('enzyme')" role="button" tabindex="0"><img class="shelf-pack-img" src="./assets/shelf/enzyme.webp" alt="Enzyme wash denim" loading="lazy" /><span class="shelf-pack-label">Enzyme</span></div>
-            <div class="shelf-pack pulse" data-shelf="laser" @click="show('laser')" role="button" tabindex="0"><img class="shelf-pack-img" src="./assets/shelf/laser.webp" alt="Laser finish denim" loading="lazy" /><span class="shelf-pack-label">Laser</span></div>
-            <div class="shelf-pack" data-shelf="stone"><img class="shelf-pack-img" src="./assets/shelf/stone.webp" alt="" loading="lazy" aria-hidden="true" /><span class="shelf-pack-label">Stone</span></div>
-            <div class="shelf-pack" data-shelf="enzyme"><img class="shelf-pack-img" src="./assets/shelf/enzyme.webp" alt="" loading="lazy" aria-hidden="true" /><span class="shelf-pack-label">Enzyme</span></div>
-            <div class="shelf-pack" data-shelf="laser"><img class="shelf-pack-img" src="./assets/shelf/laser.webp" alt="" loading="lazy" aria-hidden="true" /><span class="shelf-pack-label">Laser</span></div>
+            <div class="shelf-pack" data-shelf="stone" @click="show('stone')" role="button" tabindex="0"><img class="shelf-pack-img" src="./assets/stone-CfbEfPGC.webp" alt="Stone wash denim" loading="lazy" /><span class="shelf-pack-label">Stone</span></div>
+            <div class="shelf-pack" data-shelf="enzyme" @click="show('enzyme')" role="button" tabindex="0"><img class="shelf-pack-img" src="./assets/enzyme-C_3PBq1l.webp" alt="Enzyme wash denim" loading="lazy" /><span class="shelf-pack-label">Enzyme</span></div>
+            <div class="shelf-pack pulse" data-shelf="laser" @click="show('laser')" role="button" tabindex="0"><img class="shelf-pack-img" src="./assets/laser-DqzOlegD.webp" alt="Laser finish denim" loading="lazy" /><span class="shelf-pack-label">Laser</span></div>
+            <div class="shelf-pack" data-shelf="stone"><img class="shelf-pack-img" src="./assets/stone-CfbEfPGC.webp" alt="" loading="lazy" aria-hidden="true" /><span class="shelf-pack-label">Stone</span></div>
+            <div class="shelf-pack" data-shelf="enzyme"><img class="shelf-pack-img" src="./assets/enzyme-C_3PBq1l.webp" alt="" loading="lazy" aria-hidden="true" /><span class="shelf-pack-label">Enzyme</span></div>
+            <div class="shelf-pack" data-shelf="laser"><img class="shelf-pack-img" src="./assets/laser-DqzOlegD.webp" alt="" loading="lazy" aria-hidden="true" /><span class="shelf-pack-label">Laser</span></div>
           </div>
         </div>
         <div class="shelf-modal" x-show="open" x-cloak @click.self="close()" @keydown.escape.window="close()">
@@ -632,7 +636,7 @@
             <div class="sliders-panel">
               <div class="slider-node">
                 <label><span x-text="$store.locale.t('mafi.fobLabel')"></span> <strong x-text="'€ ' + fobPrice"></strong></label>
-                <input type="range" class="margin-range" min="8" max="25" step="1" x-model.number="fobPrice" />
+                <input type="range" class="margin-range" min="8" max="15" step="0.5" x-model.number="fobPrice" />
               </div>
               <div class="slider-node">
                 <label><span x-text="$store.locale.t('mafi.retailLabel')"></span> <strong x-text="'€ ' + retailPrice"></strong></label>
@@ -645,7 +649,8 @@
             </div>
             <div class="sovereign-display-glow">
               <span class="glow-title" x-text="$store.locale.t('mafi.glowTitle')"></span>
-              <span class="glow-metric" x-text="'+' + marginPercent.toFixed(0) + '%'"></span>
+              <span class="glow-metric" x-text="formatEuro(totalRecoverable)"></span>
+              <span style="font-family:'Inter',sans-serif;font-size:0.85rem;color:rgba(200,169,110,0.55);margin-bottom:6px;" x-text="'+' + marginPercent.toFixed(0) + '% over current GCC price'"></span>
               <span class="glow-footer" x-text="$store.locale.t('mafi.glowFooter')"></span>
             </div>
           </div>
@@ -654,10 +659,10 @@
       </div>
 
       <div data-reveal class="reveal network-headline" style="transition-delay:.35s">
-        <div class="net-stat"><div class="num">2M</div><div class="lbl" x-text="$store.locale.t('mafi.statUnits')"></div></div>
-        <div class="net-stat"><div class="num">229</div><div class="lbl" x-text="$store.locale.t('mafi.statShipments')"></div></div>
-        <div class="net-stat"><div class="num">0</div><div class="lbl" x-text="$store.locale.t('mafi.statEuPresence')"></div></div>
-        <div class="net-stat"><div class="num">€2.4M+</div><div class="lbl" x-text="$store.locale.t('mafi.statRevenue')"></div></div>
+        <div class="net-stat"><div class="num">1.2M</div><div class="lbl" x-text="$store.locale.t('mafi.statUnits')"></div></div>
+        <div class="net-stat"><div class="num">863</div><div class="lbl" x-text="$store.locale.t('mafi.statShipments')"></div></div>
+        <div class="net-stat"><div class="num">350</div><div class="lbl" x-text="$store.locale.t('mafi.statEuPresence')"></div></div>
+        <div class="net-stat"><div class="num">~€2.1M</div><div class="lbl" x-text="$store.locale.t('mafi.statRevenue')"></div></div>
       </div>
 
       <div class="phases mt-8">

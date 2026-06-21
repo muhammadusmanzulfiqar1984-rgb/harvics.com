@@ -3,6 +3,89 @@ import { translations, chatKnowledge, lookupTranslation } from './i18n.js';
 
 const LOCALE_KEY = 'genviet-locale';
 const DOORS_KEY = 'genviet-doors-open';
+const AMBIENT_TARGET_VOLUME = 0.09;
+const AMBIENT_FADE_MS = 6500;
+
+function fadeAmbientVolume(audio, target = AMBIENT_TARGET_VOLUME) {
+  audio.volume = 0;
+  const start = performance.now();
+  const tick = () => {
+    const progress = Math.min(1, (performance.now() - start) / AMBIENT_FADE_MS);
+    audio.volume = target * progress;
+    if (progress < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+
+function initCinemaBackdrop() {
+  const video = document.getElementById('cinema-video');
+  if (!video) return;
+
+  video.muted = true;
+  video.loop = false;
+
+  const FORWARD_RATE = 0.78;
+  const REVERSE_RATE = 0.16;
+  const EDGE = 0.12;
+  let direction = 1;
+  let lastTs = null;
+  let rafId = null;
+
+  const step = (ts) => {
+    if (!video.duration || Number.isNaN(video.duration)) {
+      rafId = requestAnimationFrame(step);
+      return;
+    }
+
+    if (lastTs == null) lastTs = ts;
+    const dt = Math.min((ts - lastTs) / 1000, 0.04);
+    lastTs = ts;
+
+    if (direction === 1) {
+      if (video.paused) video.play().catch(() => {});
+      video.playbackRate = FORWARD_RATE;
+      if (video.currentTime >= video.duration - EDGE) {
+        direction = -1;
+        video.pause();
+        video.currentTime = video.duration - EDGE;
+        lastTs = ts;
+      }
+    } else {
+      video.currentTime = Math.max(0, video.currentTime - REVERSE_RATE * dt);
+      if (video.currentTime <= EDGE) {
+        direction = 1;
+        video.currentTime = EDGE;
+        video.playbackRate = FORWARD_RATE;
+        video.play().catch(() => {});
+        lastTs = ts;
+      }
+    }
+
+    rafId = requestAnimationFrame(step);
+  };
+
+  const start = () => {
+    video.currentTime = 0;
+    video.playbackRate = FORWARD_RATE;
+    video.play().catch(() => {});
+    if (rafId) cancelAnimationFrame(rafId);
+    lastTs = null;
+    rafId = requestAnimationFrame(step);
+  };
+
+  video.addEventListener('loadedmetadata', start, { once: true });
+  if (video.readyState >= 1) start();
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = null;
+      return;
+    }
+    lastTs = null;
+    if (!rafId) rafId = requestAnimationFrame(step);
+  });
+}
 
 function readQueryLocale() {
   if (typeof window === 'undefined') return null;
@@ -95,15 +178,8 @@ document.addEventListener('alpine:init', () => {
   });
 });
 
-/* ─── Backdrop video autoplay ─────────────────────────────────────────────── */
-document.addEventListener('DOMContentLoaded', () => {
-  const v = document.getElementById('cinema-video');
-  if (!v) return;
-  v.muted = true;
-  const play = () => v.play().catch(() => {});
-  v.addEventListener('canplay', play, { once: true });
-  play();
-});
+/* ─── Backdrop video — slow forward / gentle reverse ping-pong ────────────── */
+document.addEventListener('DOMContentLoaded', initCinemaBackdrop);
 
 /* ─── Ambient Audio Store ─────────────────────────────────────────────────── */
 Alpine.store('ambient', {
@@ -117,36 +193,66 @@ Alpine.data('doors', () => ({
 
   init() {
     if (Alpine.store('app').doorsOpened) {
-      this.startAmbient();
+      this.tryStartAmbient();
     }
   },
 
   enter() {
     if (this.opening) return;
     this.opening = true;
+    this.startAmbient();
     const lang = readLocaleStore().current;
     localStorage.setItem(LOCALE_KEY, lang);
     sessionStorage.setItem(DOORS_KEY, '1');
     const url = new URL(window.location.href);
     url.searchParams.set('lang', lang);
     url.searchParams.set('entered', '1');
-    window.location.assign(url.toString());
+    window.history.replaceState({}, '', url);
+    setTimeout(() => {
+      Alpine.store('app').markDoorsOpened();
+    }, 2000);
+  },
+
+  tryStartAmbient() {
+    const audio = document.getElementById('ambient-audio');
+    if (!audio) return;
+    audio.muted = Alpine.store('ambient').muted;
+    audio
+      .play()
+      .then(() => {
+        Alpine.store('ambient').active = true;
+        if (!audio.muted) fadeAmbientVolume(audio);
+      })
+      .catch(() => {
+        const resume = () => {
+          audio.play().then(() => {
+            Alpine.store('ambient').active = true;
+            if (!audio.muted) fadeAmbientVolume(audio);
+          });
+        };
+        document.addEventListener('click', resume, { once: true });
+        document.addEventListener('keydown', resume, { once: true });
+      });
   },
 
   startAmbient() {
     const audio = document.getElementById('ambient-audio');
     if (!audio) return;
-    audio.volume = 0.3;
-    audio.muted = false;
-    audio.play().catch(() => {});
-    Alpine.store('ambient').active = true;
+    audio.muted = Alpine.store('ambient').muted;
+    audio
+      .play()
+      .then(() => {
+        Alpine.store('ambient').active = true;
+        if (!audio.muted) fadeAmbientVolume(audio);
+      })
+      .catch(() => {});
   },
 }));
 
 /* ─── Ambient Mute Toggle ─────────────────────────────────────────────────── */
 Alpine.data('audioToggle', () => ({
   get visible() {
-    return Alpine.store('ambient').active;
+    return Alpine.store('app').doorsOpened;
   },
 
   get muted() {
@@ -163,7 +269,13 @@ Alpine.data('audioToggle', () => ({
     const store = Alpine.store('ambient');
     store.muted = !store.muted;
     const audio = document.getElementById('ambient-audio');
-    if (audio) audio.muted = store.muted;
+    if (!audio) return;
+    audio.muted = store.muted;
+    if (!store.muted && audio.paused) {
+      audio.play().then(() => fadeAmbientVolume(audio));
+    } else if (!store.muted) {
+      fadeAmbientVolume(audio);
+    }
   },
 }));
 
@@ -274,21 +386,18 @@ Alpine.data('rtmMap', () => ({
 
 /* ─── Margin Simulator (#mafi) ────────────────────────────────────────────── */
 Alpine.data('marginSimulator', () => ({
-  fobPrice: 12,
-  retailPrice: 58,
-  scenario: 'base',
+  fobPrice: 10,
+  retailPrice: 55,
+  scenario: 'conservative',
 
-  get brokerLeakagePerUnit() {
-    return this.retailPrice - this.fobPrice - 18;
-  },
-
+  // Additional revenue per year on 100,000 EU units vs current GCC @€7 avg
   get totalRecoverable() {
-    return Math.max(0, this.brokerLeakagePerUnit * 2000000 * 0.15);
+    return Math.max(0, (this.fobPrice - 7) * 100000);
   },
 
+  // Uplift % over current GCC price
   get marginPercent() {
-    if (!this.retailPrice) return 0;
-    return ((this.retailPrice - this.fobPrice) / this.retailPrice) * 100;
+    return Math.max(0, ((this.fobPrice - 7) / 7) * 100);
   },
 
   setScenario(key) {

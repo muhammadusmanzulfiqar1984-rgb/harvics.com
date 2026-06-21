@@ -12,21 +12,21 @@ interface CustomerListContentProps {
 const fmtMoney = (v: number) =>
   v >= 1_000_000 ? `$${(v / 1_000_000).toFixed(1)}M` : v >= 1000 ? `$${(v / 1000).toFixed(0)}K` : `$${v}`
 
-const regionColors = ['#6B1F2B', '#007AFF', '#34C759', '#FF9500', '#8E8E93', '#AF52DE']
+const regionColors = ['#1A0505', '#2563EB', '#16A34A', '#D97706', '#8A7D6B', '#7C3AED']
 
 export default function CustomerListContent({ persona, locale }: CustomerListContentProps) {
   const { data, loading, source, lastUpdated } = useDomainData('crm')
   const [tab, setTab] = useState<'customers' | 'leads' | 'complaints'>('customers')
 
-  if (!data) return <div className="p-8 text-sm text-[#8E8E93]">Loading…</div>
+  if (!data) return <div className="p-8 text-sm text-harvics-muted">Loading…</div>
 
   return (
     <div className="space-y-6">
       {/* Header */}
       <div className="flex items-center justify-between flex-wrap gap-3">
         <div>
-          <h2 className="text-lg font-semibold text-[#1A1A1A]">Customer Overview</h2>
-          <p className="text-sm text-[#8E8E93] mt-0.5">Real-time CRM intelligence across all regions</p>
+          <h2 className="text-lg font-semibold text-harvics-dark">Customer Overview</h2>
+          <p className="text-sm text-harvics-muted mt-0.5">Real-time CRM intelligence across all regions</p>
         </div>
         <LiveBadge source={source} lastUpdated={lastUpdated} />
       </div>
@@ -67,7 +67,7 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
         <Card title="Revenue Trend — 12 Months" className="lg:col-span-2">
           <div className="p-5">
             <LineChart
-              data={[{ label: 'Revenue', values: data.revenueByMonth || [], color: '#6B1F2B' }]}
+              data={[{ label: 'Revenue', values: data.revenueByMonth || [], color: '#1A0505' /* harvics-burgundy */ }]}
               labels={MONTHS}
               height={160}
               formatY={(v) => `$${(v / 1000).toFixed(0)}K`}
@@ -89,9 +89,9 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
                 <div key={i} className="flex items-center justify-between text-xs">
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: regionColors[i % regionColors.length] }} />
-                    <span className="text-[#1A1A1A]">{r.region}</span>
+                    <span className="text-harvics-dark">{r.region}</span>
                   </div>
-                  <span className="text-[#8E8E93] tabular-nums">{r.count} · {fmtMoney(r.revenue)}</span>
+                  <span className="text-harvics-muted tabular-nums">{r.count} · {fmtMoney(r.revenue)}</span>
                 </div>
               ))}
             </div>
@@ -100,14 +100,14 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
       </div>
 
       {/* Tabs */}
-      <div className="border-b border-[#E5E5EA]">
+      <div className="border-b border-harvics-goldDivider">
         <div className="flex gap-6">
           {(['customers', 'leads', 'complaints'] as const).map(t => (
             <button key={t} onClick={() => setTab(t)}
-              className={`pb-3 text-sm font-medium capitalize transition-colors border-b-2 -mb-px ${tab === t ? 'border-[#6B1F2B] text-[#1A1A1A]' : 'border-transparent text-[#8E8E93] hover:text-[#1A1A1A]'}`}>
+              className={`pb-3 text-sm font-medium capitalize transition-colors border-b-2 -mb-px ${tab === t ? 'border-harvics-burgundy text-harvics-dark' : 'border-transparent text-harvics-muted hover:text-harvics-dark'}`}>
               {t.charAt(0).toUpperCase() + t.slice(1)}
               {t === 'complaints' && (data.complaints?.length || 0) > 0 && (
-                <span className="ml-1.5 text-[10px] bg-[#FF3B30] text-white rounded-full px-1.5 py-0.5 align-middle">{data.complaints.length}</span>
+                <span className="ml-1.5 text-[10px] bg-red-600 text-white rounded-full px-1.5 py-0.5 align-middle">{data.complaints.length}</span>
               )}
             </button>
           ))}
@@ -128,13 +128,13 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
               { key: 'last', label: 'Last Order' },
             ]}
             rows={(data.customers || []).map((c: any) => ({
-              name: <span className="font-medium text-[#1A1A1A]">{c.name}</span>,
-              type: <span className="text-xs text-[#8E8E93] bg-[#F5F5F7] px-2 py-0.5 rounded-full">{c.type}</span>,
-              country: <span className="text-[#1A1A1A]">{c.country}</span>,
+              name: <span className="font-medium text-harvics-dark">{c.name}</span>,
+              type: <span className="text-xs text-harvics-muted bg-stone-100 px-2 py-0.5 rounded-full">{c.type}</span>,
+              country: <span className="text-harvics-dark">{c.country}</span>,
               status: <StatusDot status={c.status} />,
-              orders: <span className="font-medium text-[#1A1A1A]">{c.orders}</span>,
-              ltv: <span className="font-semibold text-[#1A1A1A]">{fmtMoney(c.lifetimeValue || 0)}</span>,
-              last: <span className="text-[#8E8E93]">{c.lastOrder || '—'}</span>,
+              orders: <span className="font-medium text-harvics-dark">{c.orders}</span>,
+              ltv: <span className="font-semibold text-harvics-dark">{fmtMoney(c.lifetimeValue || 0)}</span>,
+              last: <span className="text-harvics-muted">{c.lastOrder || '—'}</span>,
             }))}
           />
         </Card>
@@ -148,23 +148,23 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
                 <div className="p-5 space-y-3">
                   <div className="flex items-start justify-between gap-2">
                     <div>
-                      <p className="font-semibold text-[#1A1A1A] text-sm">{lead.company}</p>
-                      <p className="text-xs text-[#8E8E93]">{lead.contact}</p>
+                      <p className="font-semibold text-harvics-dark text-sm">{lead.company}</p>
+                      <p className="text-xs text-harvics-muted">{lead.contact}</p>
                     </div>
                     <StatusDot status={lead.stage} />
                   </div>
                   <div className="space-y-1">
                     <div className="flex justify-between text-xs">
-                      <span className="text-[#8E8E93]">Est. Value</span>
-                      <span className="font-semibold text-[#1A1A1A]">{fmtMoney(lead.estimatedValue || 0)}</span>
+                      <span className="text-harvics-muted">Est. Value</span>
+                      <span className="font-semibold text-harvics-dark">{fmtMoney(lead.estimatedValue || 0)}</span>
                     </div>
                     <div className="flex justify-between text-xs">
-                      <span className="text-[#8E8E93]">Win Probability</span>
-                      <span className="font-medium text-[#34C759]">{lead.probability}%</span>
+                      <span className="text-harvics-muted">Win Probability</span>
+                      <span className="font-medium text-emerald-600">{lead.probability}%</span>
                     </div>
                   </div>
-                  <div className="h-1.5 bg-[#F5F5F7] rounded-full">
-                    <div className="h-full rounded-full bg-[#6B1F2B]" style={{ width: `${lead.probability}%` }} />
+                  <div className="h-1.5 bg-stone-100 rounded-full">
+                    <div className="h-full rounded-full bg-harvics-burgundy" style={{ width: `${lead.probability}%` }} />
                   </div>
                 </div>
               </Card>
@@ -174,11 +174,11 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
             <div className="p-5">
               <BarChart
                 data={[
-                  { label: 'Prospect', value: 14, color: '#E5E5EA' },
-                  { label: 'Qualified', value: 8, color: '#007AFF' },
-                  { label: 'Proposal', value: 5, color: '#FF9500' },
-                  { label: 'Negotiation', value: 3, color: '#6B1F2B' },
-                  { label: 'Won', value: 18, color: '#34C759' },
+                  { label: 'Prospect',    value: 14, color: '#8A7D6B' },
+                  { label: 'Qualified',   value: 8,  color: '#2563EB' },
+                  { label: 'Proposal',    value: 5,  color: '#D97706' },
+                  { label: 'Negotiation', value: 3,  color: '#1A0505' },
+                  { label: 'Won',         value: 18, color: '#16A34A' },
                 ]}
                 height={100}
               />
@@ -199,12 +199,12 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
               { key: 'date', label: 'Raised' },
             ]}
             rows={(data.complaints || []).map((c: any) => ({
-              id: <span className="text-[#8E8E93] text-xs font-mono">{c.id}</span>,
-              customer: <span className="font-medium text-[#1A1A1A]">{c.customer}</span>,
-              issue: <span className="text-[#1A1A1A]">{c.issue}</span>,
+              id: <span className="text-harvics-muted text-xs font-mono">{c.id}</span>,
+              customer: <span className="font-medium text-harvics-dark">{c.customer}</span>,
+              issue: <span className="text-harvics-dark">{c.issue}</span>,
               priority: <StatusDot status={c.priority} />,
               status: <StatusDot status={c.status} />,
-              date: <span className="text-[#8E8E93]">{c.date}</span>,
+              date: <span className="text-harvics-muted">{c.date}</span>,
             }))}
           />
         </Card>

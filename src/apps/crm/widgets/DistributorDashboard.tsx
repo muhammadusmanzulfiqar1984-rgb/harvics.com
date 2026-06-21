@@ -146,7 +146,7 @@ export const DistributorDashboard = () => {
   if (loading) {
     return (
       <div className="bg-white text-center py-20 rounded-lg border border-black100">
-        <div className="animate-spin rounded-full h-10 w-10 border-2 border-harvics-maroon border-t-transparent mx-auto mb-4"></div>
+        <div className="animate-spin rounded-full h-10 w-10 border-2 border-harvics-burgundy border-t-transparent mx-auto mb-4"></div>
         <p className="text-black/60 text-sm">Loading distributor cockpit…</p>
       </div>
     )
@@ -202,7 +202,7 @@ export const DistributorDashboard = () => {
           </div>
         )}
         {territoryHierarchy && territoryHierarchy.fullPath && (
-          <div className="bg-gradient-to-r from-harvics-maroon/5 to-harvics-maroon/10 rounded-lg p-4 mb-6 border border-harvics-gold/30">
+          <div className="bg-gradient-to-r from-harvics-burgundy/5 to-harvics-burgundy/10 rounded-lg p-4 mb-6 border border-harvics-gold/30">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🌍</span>
               <span className="text-sm font-semibold text-black">
@@ -217,7 +217,7 @@ export const DistributorDashboard = () => {
       </div>
 
       {/* AI Automation Status Banner - Shows Horizontal Integration */}
-      <div className="bg-gradient-to-r from-harvics-maroon to-harvics-maroon rounded-lg p-4 text-white">
+      <div className="bg-gradient-to-r from-harvics-burgundy to-harvics-burgundy rounded-lg p-4 text-white">
         <div className="flex items-center justify-between flex-wrap gap-4">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-[#ffffff]/20 rounded-lg flex items-center justify-center">

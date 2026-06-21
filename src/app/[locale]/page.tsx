@@ -9,7 +9,7 @@ const Interactive3DProductViewer = dynamic(() => import('@/components/premium/Ci
 const SupplyChainWheel = dynamic(() => import('@/components/layout/SupplyChainWheel'), {
   loading: () => (
     <div className="min-h-[50vh] flex items-center justify-center">
-      <div className="w-10 h-10 border-4 border-harvics-maroon border-t-transparent rounded-full animate-spin" />
+      <div className="w-10 h-10 border-4 border-harvics-burgundy border-t-transparent rounded-full animate-spin" />
     </div>
   ),
 })
@@ -38,7 +38,7 @@ export default function Home() {
           <LiquidGlassHero />
         </section>
 
-        <section className="relative overflow-hidden flex flex-col w-full bg-[#faf9f7]">
+        <section className="relative overflow-hidden flex flex-col w-full bg-harvics-cream">
           <EnhancedIndustryGrid />
         </section>
 
@@ -50,13 +50,13 @@ export default function Home() {
           <OperatingModelSection />
         </section>
 
-        <section className="relative overflow-hidden flex flex-col w-full bg-[#faf9f7]">
+        <section className="relative overflow-hidden flex flex-col w-full bg-harvics-cream">
           <ThreeDErrorBoundary>
             <SupplyChainWheel />
           </ThreeDErrorBoundary>
         </section>
 
-        <section className="relative overflow-hidden flex flex-col w-full bg-[#faf9f7]">
+        <section className="relative overflow-hidden flex flex-col w-full bg-harvics-cream">
           <ContactSection />
         </section>
 

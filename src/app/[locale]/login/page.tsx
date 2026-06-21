@@ -180,7 +180,7 @@ export default async function LoginPage({ params }: { params: Promise<{ locale: 
             <div className="mt-6 text-center">
               <Link
                 href={`/${locale}/portals`}
-                className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-harvics-muted hover:text-harvics-maroon transition-colors duration-300 ease-vault"
+                className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-harvics-muted hover:text-harvics-burgundy transition-colors duration-300 ease-vault"
               >
                 View all access options
               </Link>

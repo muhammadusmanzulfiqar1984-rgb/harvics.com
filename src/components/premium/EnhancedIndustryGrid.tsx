@@ -2,26 +2,25 @@
 
 import React, { useEffect, useRef, useState, useCallback } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { useLocale } from 'next-intl'
 import { navVerticals } from '@/data/megaMenuData'
 
 const industryMeta: Record<string, { desc: string; gradient: string; image?: string; products: number; markets: number; bg: string; accent: string; bgPhoto: string }> = {
-  textiles:       { desc: 'Premium apparel, fabrics, and home textiles for global markets', gradient: 'from-slate-50 to-blue-50', image: '/assets/verticals/01-apparels/thumb.webp', products: 240, markets: 28, bg: '#f8f9ff', accent: 'rgba(59,130,246,0.15)', bgPhoto: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=60&fit=crop' },
-  fmcg:           { desc: 'Food, beverages, personal care and home essentials', gradient: 'from-slate-50 to-emerald-50', image: '/assets/verticals/02-fmcg/thumb.webp', products: 380, markets: 42, bg: '#f6fdf9', accent: 'rgba(16,185,129,0.15)', bgPhoto: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=1400&q=60&fit=crop' },
-  commodities:    { desc: 'Strategic trading in agriculture, energy, and metals', gradient: 'from-slate-50 to-amber-50', image: '/assets/verticals/03-commodities/thumb.webp', products: 60, markets: 31, bg: '#fdfaf4', accent: 'rgba(195,163,94,0.2)', bgPhoto: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1400&q=60&fit=crop' },
-  industrial:     { desc: 'Advanced chemicals, machinery, and safety equipment', gradient: 'from-slate-50 to-zinc-50', image: '/assets/verticals/04-industrial/thumb.webp', products: 180, markets: 22, bg: '#f8f8f9', accent: 'rgba(113,113,122,0.12)', bgPhoto: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1400&q=60&fit=crop' },
-  minerals:       { desc: 'Precious metals, energy minerals, and industrial resources', gradient: 'from-slate-50 to-stone-50', image: '/assets/verticals/05-minerals/thumb.webp', products: 45, markets: 18, bg: '#faf9f7', accent: 'rgba(120,113,108,0.12)', bgPhoto: 'https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=1400&q=60&fit=crop' },
-  'oil-gas':      { desc: 'Complete upstream, midstream, and downstream operations', gradient: 'from-slate-50 to-orange-50', image: '/assets/verticals/06-oil-gas/thumb.webp', products: 30, markets: 15, bg: '#fdf8f3', accent: 'rgba(249,115,22,0.12)', bgPhoto: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1400&q=60&fit=crop' },
-  'real-estate':  { desc: 'Commercial and residential property development', gradient: 'from-slate-50 to-cyan-50', image: '/assets/verticals/07-real-estate/thumb.webp', products: 120, markets: 12, bg: '#f3fbfd', accent: 'rgba(6,182,212,0.12)', bgPhoto: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=60&fit=crop' },
-  sourcing:       { desc: 'Global sourcing, quality control, and logistics solutions', gradient: 'from-slate-50 to-violet-50', image: '/assets/verticals/08-sourcing/thumb.webp', products: 95, markets: 38, bg: '#f8f5ff', accent: 'rgba(139,92,246,0.12)', bgPhoto: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1400&q=60&fit=crop' },
-  finance:        { desc: 'Trade finance, HPay digital payments, and compliance', gradient: 'from-slate-50 to-teal-50', image: '/assets/verticals/09-finance/thumb.webp', products: 20, markets: 24, bg: '#f3fdfb', accent: 'rgba(20,184,166,0.12)', bgPhoto: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1400&q=60&fit=crop' },
-  ai:             { desc: 'Machine learning, predictive analytics, and automation', gradient: 'from-slate-50 to-pink-50', image: '/assets/verticals/10-ai-tech/thumb.webp', products: 15, markets: 10, bg: '#fdf4fa', accent: 'rgba(236,72,153,0.1)', bgPhoto: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1400&q=60&fit=crop' },
+  textiles:       { desc: 'Premium apparel, fabrics, and home textiles for global markets', gradient: 'from-slate-50 to-blue-50', image: '/assets/verticals/01-apparels/thumb.webp', products: 240, markets: 28, bg: '#f8f9ff', accent: 'rgba(201,168,76,0.15)', bgPhoto: '/assets/verticals/01-apparels/hero.jpg' },
+  fmcg:           { desc: 'Food, beverages, personal care and home essentials', gradient: 'from-slate-50 to-emerald-50', image: '/assets/verticals/02-fmcg/thumb.webp', products: 380, markets: 42, bg: '#f6fdf9', accent: 'rgba(201,168,76,0.15)', bgPhoto: '/assets/verticals/02-fmcg/hero.jpg' },
+  commodities:    { desc: 'Strategic trading in agriculture, energy, and metals', gradient: 'from-slate-50 to-amber-50', image: '/assets/verticals/03-commodities/thumb.webp', products: 60, markets: 31, bg: '#fdfaf4', accent: 'rgba(201,168,76,0.2)', bgPhoto: '/assets/verticals/03-commodities/hero.jpg' },
+  industrial:     { desc: 'Advanced chemicals, machinery, and safety equipment', gradient: 'from-slate-50 to-zinc-50', image: '/assets/verticals/04-industrial/thumb.webp', products: 180, markets: 22, bg: '#f8f8f9', accent: 'rgba(201,168,76,0.12)', bgPhoto: '/assets/verticals/04-industrial/hero.jpg' },
+  minerals:       { desc: 'Precious metals, energy minerals, and industrial resources', gradient: 'from-slate-50 to-stone-50', image: '/assets/verticals/05-minerals/thumb.webp', products: 45, markets: 18, bg: '#faf9f7', accent: 'rgba(201,168,76,0.12)', bgPhoto: '/assets/verticals/05-minerals/hero.jpg' },
+  'oil-gas':      { desc: 'Complete upstream, midstream, and downstream operations', gradient: 'from-slate-50 to-orange-50', image: '/assets/verticals/06-oil-gas/thumb.webp', products: 30, markets: 15, bg: '#fdf8f3', accent: 'rgba(201,168,76,0.12)', bgPhoto: '/assets/verticals/06-oil-gas/hero.jpg' },
+  'real-estate':  { desc: 'Commercial and residential property development', gradient: 'from-slate-50 to-cyan-50', image: '/assets/verticals/07-real-estate/thumb.webp', products: 120, markets: 12, bg: '#f3fbfd', accent: 'rgba(201,168,76,0.12)', bgPhoto: '/assets/verticals/07-real-estate/hero.jpg' },
+  sourcing:       { desc: 'Global sourcing, quality control, and logistics solutions', gradient: 'from-slate-50 to-violet-50', image: '/assets/verticals/08-sourcing/thumb.webp', products: 95, markets: 38, bg: '#f8f5ff', accent: 'rgba(201,168,76,0.12)', bgPhoto: '/assets/verticals/08-sourcing/hero.jpg' },
+  finance:        { desc: 'Trade finance, HPay digital payments, and compliance', gradient: 'from-slate-50 to-teal-50', image: '/assets/verticals/09-finance/thumb.webp', products: 20, markets: 24, bg: '#f3fdfb', accent: 'rgba(201,168,76,0.12)', bgPhoto: '/assets/verticals/09-finance/hero.jpg' },
+  ai:             { desc: 'Machine learning, predictive analytics, and automation', gradient: 'from-slate-50 to-pink-50', image: '/assets/verticals/10-ai-tech/thumb.webp', products: 15, markets: 10, bg: '#fdf4fa', accent: 'rgba(201,168,76,0.1)', bgPhoto: '/assets/verticals/10-ai-tech/hero.jpg' },
 }
 
 const CARD_WIDTH = 420
 const CARD_GAP = 16
-const AUTO_ADVANCE_MS = 3200
+const AUTO_ADVANCE_MS = 5500
 
 const EnhancedIndustryGrid: React.FC = () => {
   const locale = useLocale()
@@ -161,7 +160,7 @@ const EnhancedIndustryGrid: React.FC = () => {
             display: 'flex',
             gap: `${CARD_GAP}px`,
             transform: `translateX(${trackX}px)`,
-            transition: dragging ? 'none' : 'transform 0.5s ease-out',
+            transition: dragging ? 'none' : 'transform 0.85s cubic-bezier(0.16, 1, 0.3, 1)',
             willChange: 'transform',
           }}
         >
@@ -181,7 +180,7 @@ const EnhancedIndustryGrid: React.FC = () => {
                   flexShrink: 0,
                   transform: `scale(${scale})`,
                   opacity,
-                  transition: dragging ? 'none' : 'transform 0.5s ease-out, opacity 0.5s ease-out',
+                  transition: dragging ? 'none' : 'transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1)',
                   transformOrigin: 'center center',
                   pointerEvents: isActive ? 'auto' : 'none',
                 }}
@@ -207,15 +206,14 @@ const EnhancedIndustryGrid: React.FC = () => {
                   {/* Card image — full with gradient fade + Samsung-style lift on hover */}
                   {hasImage && (
                     <div className="absolute inset-0 overflow-hidden" style={{ borderRadius: '20px' }}>
-                        <Image
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
                           src={meta.image!}
                           alt={vertical.label}
-                          fill
                           loading={idx <= 2 ? 'eager' : 'lazy'}
-                          className="object-cover group-hover:scale-105 group-hover:-translate-y-3 transition-all duration-300 ease-out"
-                          style={{
-                            opacity: 0.7,
-                          }}
+                          decoding="async"
+                          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 group-hover:-translate-y-3 transition-all duration-300 ease-out"
+                          style={{ opacity: 0.7 }}
                         />
                       <div className="absolute inset-0" style={{
                         background: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 50%, transparent 100%)',
@@ -272,7 +270,7 @@ const EnhancedIndustryGrid: React.FC = () => {
                         fontSize: '12px', fontWeight: 700,
                         color: '#C3A35E',
                         letterSpacing: '0.08em', textTransform: 'uppercase',
-                        background: 'rgba(107,31,43,0.6)',
+                        background: 'rgba(26, 5, 5, 0.72)',
                         backdropFilter: 'blur(8px)',
                         padding: '5px 12px',
                         border: '1px solid rgba(195,163,94,0.35)',
@@ -298,7 +296,7 @@ const EnhancedIndustryGrid: React.FC = () => {
           <div style={{
             position: 'absolute', left: 0, top: 0, height: '100%',
             width: `${((active + 1) / total) * 100}%`,
-            background: 'linear-gradient(90deg, #6B1F2B, #C3A35E)',
+            background: 'linear-gradient(90deg, #1A0505, #C3A35E)',
             borderRadius: '1px',
             transition: 'width 0.85s cubic-bezier(0.16, 1, 0.3, 1)',
           }} />
@@ -315,7 +313,7 @@ const EnhancedIndustryGrid: React.FC = () => {
                 height: '4px',
                 borderRadius: '2px',
                 background: idx === active
-                  ? 'linear-gradient(90deg, #6B1F2B, #C3A35E)'
+                  ? 'linear-gradient(90deg, #1A0505, #C3A35E)'
                   : 'rgba(255,255,255,0.25)',
                 border: 'none',
                 padding: 0,

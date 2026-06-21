@@ -229,13 +229,13 @@ export default function UnifiedLoginForm() {
           <label className="flex items-center gap-2 cursor-pointer">
             <input
               type="checkbox"
-              className="w-4 h-4 accent-harvics-maroon border-harvics-gold/40"
+              className="w-4 h-4 accent-harvics-burgundy border-harvics-gold/40"
             />
             <span className="text-xs text-harvics-muted">{tForm('rememberMe') || 'Remember me'}</span>
           </label>
           <Link
             href={`/${locale}/contact`}
-            className="text-xs text-harvics-maroon hover:text-harvics-gold transition-colors duration-300 ease-vault font-medium"
+            className="text-xs text-harvics-burgundy hover:text-harvics-gold transition-colors duration-300 ease-vault font-medium"
           >
             {tForm('forgotPassword') || 'Forgot password?'}
           </Link>
@@ -244,7 +244,7 @@ export default function UnifiedLoginForm() {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full mt-2 bg-harvics-burgundy hover:bg-harvics-maroon text-harvics-gold font-bold py-3.5 px-4 text-xs uppercase tracking-[0.18em] transition-all duration-300 ease-vault disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2 border border-harvics-gold/20 hover:border-harvics-gold/50"
+          className="w-full mt-2 bg-harvics-burgundy hover:bg-harvics-burgundy text-harvics-gold font-bold py-3.5 px-4 text-xs uppercase tracking-[0.18em] transition-all duration-300 ease-vault disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2 border border-harvics-gold/20 hover:border-harvics-gold/50"
         >
           {isLoading ? (
             <>
@@ -268,7 +268,7 @@ export default function UnifiedLoginForm() {
         Don&apos;t have an account?{' '}
         <Link
           href={`/${locale}/contact`}
-          className="text-harvics-maroon font-semibold hover:text-harvics-gold transition-colors duration-300 ease-vault"
+          className="text-harvics-burgundy font-semibold hover:text-harvics-gold transition-colors duration-300 ease-vault"
         >
           {tContact('title')}
         </Link>

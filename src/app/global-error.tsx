@@ -34,7 +34,7 @@ export default function GlobalError({
             )}
             <button
               onClick={reset}
-              className="bg-harvics-maroon text-white px-6 py-3 font-semibold border-none cursor-pointer hover:bg-harvics-maroon-dark transition-colors"
+              className="bg-harvics-burgundy text-white px-6 py-3 font-semibold border-none cursor-pointer hover:bg-harvics-burgundy-dark transition-colors"
             >
               Reload Application
             </button>

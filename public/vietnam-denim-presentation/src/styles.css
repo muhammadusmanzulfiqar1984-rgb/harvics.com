@@ -20,14 +20,14 @@
   body {
     background-color: var(--color-burgundy);
     color: var(--color-text-primary);
-    font-family: Georgia, 'Times New Roman', serif;
-    font-weight: 300;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
   h1, h2, h3 {
-    font-family: Georgia, serif;
-    font-weight: 200;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
     letter-spacing: -0.5px;
   }
 }
@@ -277,8 +277,11 @@
     color: rgba(250,246,240,0.4);
   }
   .pain-value {
-    @apply block text-[2.2rem] font-[200] my-3;
+    @apply block text-[2.2rem] my-3;
+    font-weight: 600;
     color: var(--color-gold);
+    font-family: 'Inter', -apple-system, sans-serif;
+    letter-spacing: -0.5px;
   }
   .pain-context {
     @apply text-[0.78rem] leading-relaxed m-0 font-sans;
@@ -346,9 +349,11 @@
     color: rgba(250,246,240,0.4);
   }
   .glow-metric {
-    @apply text-[3.5rem] font-[100] my-3;
+    @apply text-[3.5rem] my-3;
+    font-weight: 600;
     color: var(--color-gold-light);
-    text-shadow: 0 0 25px rgba(200,169,110,0.2);
+    font-family: 'Inter', -apple-system, sans-serif;
+    letter-spacing: -1px;
   }
   .glow-footer {
     @apply text-[0.75rem] leading-relaxed font-sans;
@@ -386,7 +391,7 @@
   .section-tag {
     @apply inline-block text-[0.6rem] font-medium tracking-[4px] uppercase mb-6;
     color: var(--color-gold);
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
     text-shadow: 0 1px 6px rgba(0,0,0,0.8);
   }
 
@@ -450,7 +455,7 @@
   .hero-cities {
     @apply text-[0.75rem] tracking-[3px] uppercase mt-2;
     color: rgba(250,246,240,0.35);
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .hero-stats {
     @apply flex gap-10 mt-12 flex-wrap;
@@ -487,13 +492,11 @@
   }
 
   .stat-number {
-    @apply font-[100] text-[2.4rem];
-    background: linear-gradient(to right, var(--color-gold) 20%, #fff 50%, var(--color-gold) 80%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: numShimmer 3s linear infinite;
+    @apply text-[2.4rem];
+    font-weight: 600;
+    color: var(--color-gold);
+    font-family: 'Inter', -apple-system, sans-serif;
+    letter-spacing: -0.5px;
   }
 
   .badge-tag {
@@ -502,7 +505,7 @@
     color: var(--color-gold);
     padding: 6px 14px;
     border-radius: 1px;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .badge-tag:hover {
     background: var(--color-gold);
@@ -519,7 +522,7 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
     transition: all 0.4s;
   }
   .cta-button::before {
@@ -542,7 +545,7 @@
     font-size: 0.72rem;
     letter-spacing: 4px;
     text-transform: uppercase;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
     transition: all 0.45s cubic-bezier(0.4,0,0.2,1);
     box-shadow:
       0 4px 32px rgba(195,163,94,0.2),
@@ -604,7 +607,7 @@
   .ticker-item {
     @apply flex-shrink-0 text-[0.6rem] tracking-[3px] uppercase;
     color: var(--color-gold);
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
 
   /* ─── Press Ribbon (press ribbon dual-row) ───────────────────────────────── */
@@ -636,7 +639,7 @@
   }
   .press-word {
     @apply flex-shrink-0 bg-transparent border-none cursor-pointer px-6 py-1;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Inter', -apple-system, sans-serif;
     font-size: clamp(0.95rem, 2.2vw, 1.35rem);
     font-weight: 300;
     letter-spacing: 0.06em;
@@ -670,7 +673,7 @@
   .press-spotlight-name {
     @apply block text-[1.1rem] tracking-[0.12em] uppercase mb-2;
     color: var(--color-gold);
-    font-family: Georgia, serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .press-spotlight-eco {
     @apply block text-[0.78rem] leading-relaxed italic;
@@ -695,7 +698,7 @@
     border: 1px solid var(--color-gold-dim);
     border-radius: 2px;
     background: rgba(200, 169, 110, 0.04);
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Inter', -apple-system, sans-serif;
     font-weight: 400;
     letter-spacing: 0.08em;
     transition: border-color 0.3s, background 0.3s;
@@ -723,7 +726,7 @@
   }
   .about-card:hover { border-color: rgba(200,169,110,0.5); }
   .about-card .num {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 3rem;
     color: rgba(255,255,255,0.05);
     position: absolute;
@@ -775,7 +778,7 @@
   .net-stat:hover { border-color: rgba(200,169,110,0.5); }
   .net-stat .num {
     font-size: 2.5rem;
-    font-weight: 100;
+    font-weight: 300;
     color: var(--color-gold);
     line-height: 1;
     margin-bottom: 6px;
@@ -785,7 +788,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--color-text-muted);
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
 
   .markets-grid {
@@ -819,7 +822,7 @@
   .market-row:hover { border-color: rgba(200,169,110,0.5); }
   .market-count {
     font-size: 2.8rem;
-    font-weight: 100;
+    font-weight: 300;
     color: var(--color-gold);
     line-height: 1;
     flex-shrink: 0;
@@ -831,7 +834,7 @@
     text-transform: uppercase;
     color: var(--color-gold);
     margin-bottom: 8px;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .market-info p {
     font-size: 0.78rem;
@@ -865,7 +868,7 @@
   .speed-banner .metric { text-align: right; flex-shrink: 0; }
   .speed-banner .metric .big {
     font-size: 2.5rem;
-    font-weight: 100;
+    font-weight: 300;
     color: var(--color-gold);
     line-height: 1;
   }
@@ -874,7 +877,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--color-text-muted);
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
 
   /* ─── Products ──────────────────────────────────────────────────────────── */
@@ -949,7 +952,7 @@
     color: rgba(200,169,110,0.72);
     text-transform: uppercase;
     z-index: 2;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .shelf-track {
     display: flex;
@@ -993,7 +996,7 @@
     letter-spacing: 1.6px;
     text-transform: uppercase;
     text-align: center;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
     color: var(--color-gold-light);
     text-shadow: 0 1px 8px rgba(0,0,0,0.85);
     background: linear-gradient(to top, rgba(10,4,6,0.92) 0%, rgba(10,4,6,0.55) 55%, transparent 100%);
@@ -1050,12 +1053,12 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--color-gold);
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .rtm-node .n-sub {
     font-size: 0.65rem;
     color: var(--color-text-muted);
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .rtm-node.live {
     border-color: rgba(232,204,138,0.88);
@@ -1102,7 +1105,7 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: var(--color-text-muted);
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
 
   /* ─── Process Steps ─────────────────────────────────────────────────────── */
@@ -1160,7 +1163,7 @@
     font-size: 0.78rem;
     padding: 0 8px;
     color: var(--color-text-muted);
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
 
   /* ─── Certs ─────────────────────────────────────────────────────────────── */
@@ -1199,13 +1202,13 @@
     text-transform: uppercase;
     color: var(--color-gold);
     margin-bottom: 8px;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .cert-block p {
     font-size: 0.72rem;
     color: var(--color-text-muted);
     line-height: 1.5;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
 
   .protocol-grid {
@@ -1238,7 +1241,7 @@
   .protocol-step:hover { border-color: rgba(200,169,110,0.5); }
   .protocol-step .step-num {
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 300;
     color: var(--color-gold);
     line-height: 1;
     margin-bottom: 8px;
@@ -1249,13 +1252,13 @@
     text-transform: uppercase;
     color: var(--color-gold);
     margin-bottom: 6px;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .protocol-step p {
     font-size: 0.7rem;
     color: var(--color-text-muted);
     line-height: 1.4;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
 
   /* ─── Fit ───────────────────────────────────────────────────────────────── */
@@ -1269,7 +1272,7 @@
   }
   .fit-inner::before {
     content: '"';
-    font-weight: 200;
+    font-weight: 300;
     font-size: 8rem;
     color: rgba(255,255,255,0.04);
     position: absolute;
@@ -1291,7 +1294,7 @@
     gap: 12px;
     font-size: 0.9rem;
     color: var(--color-text-muted);
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .fit-list li::before {
     content: '◆';
@@ -1326,7 +1329,7 @@
     text-transform: uppercase;
     color: var(--color-gold);
     margin-bottom: 10px;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .phase-card h3 {
     font-size: 1rem;
@@ -1368,7 +1371,7 @@
     font-size: 0.82rem;
     color: var(--color-text-muted);
     line-height: 1.5;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .next-num {
     width: 38px;
@@ -1382,13 +1385,13 @@
     font-weight: 300;
     color: var(--color-text-primary);
     flex-shrink: 0;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
 
   /* ─── Formula ───────────────────────────────────────────────────────────── */
   .formula-eq {
     font-size: clamp(3rem, 10vw, 7rem);
-    font-weight: 100;
+    font-weight: 300;
     color: var(--color-gold);
     letter-spacing: 0.05em;
     text-align: center;
@@ -1433,7 +1436,7 @@
   .formula-block:hover { border-color: rgba(200,169,110,0.5); }
   .formula-block .letter {
     font-size: 3.5rem;
-    font-weight: 100;
+    font-weight: 300;
     color: var(--color-gold);
     line-height: 1;
     margin-bottom: 12px;
@@ -1444,17 +1447,17 @@
     text-transform: uppercase;
     color: var(--color-gold);
     margin-bottom: 12px;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .formula-block p {
     font-size: 0.78rem;
     color: var(--color-text-muted);
     line-height: 1.6;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .formula-op {
     font-size: 3rem;
-    font-weight: 100;
+    font-weight: 300;
     color: rgba(200,169,110,0.4);
     display: flex;
     align-items: center;
@@ -1466,7 +1469,7 @@
     text-transform: uppercase;
     color: rgba(200,169,110,0.5);
     margin-top: 20px;
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
 
   /* ─── CTA ───────────────────────────────────────────────────────────────── */
@@ -1506,12 +1509,12 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--color-gold);
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
   .contact-value {
     font-size: 0.9rem;
     color: var(--color-text-primary);
-    font-family: -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
   }
 
   /* ─── Form ──────────────────────────────────────────────────────────────── */

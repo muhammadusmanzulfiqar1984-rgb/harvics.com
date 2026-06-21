@@ -92,18 +92,15 @@ export default function OrderPlacementScreen() {
           label="Current Stock (Dubai)" 
           value="4,200" 
           change={0} 
-          accentColor="#1B3A6B" 
         />
         <HarvicsKPICard 
           label="Total Value" 
           value={`AED ${((aiData?.finalPrice || 0) * qty).toLocaleString(undefined, {minimumFractionDigits: 2})}`} 
-          accentColor="#fbbf24" 
         />
         <HarvicsKPICard 
           label="Projected Margin" 
           value={aiData?.margin || '--'} 
           change={qty >= 1000 ? -3 : 2} 
-          accentColor="#22c55e" 
         />
       </div>
 

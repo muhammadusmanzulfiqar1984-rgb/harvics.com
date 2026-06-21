@@ -109,7 +109,7 @@ const SupremeNavBar: React.FC = () => {
               style={{
                 animation: `fadeSlideIn 0.4s ease-out forwards`,
                 animationDelay: '0s',
-                opacity: 0,
+                opacity: 1,
               }}
             >
               <Link
@@ -130,7 +130,7 @@ const SupremeNavBar: React.FC = () => {
                 style={{
                   animation: `fadeSlideIn 0.4s ease-out forwards`,
                   animationDelay: `${idx * 0.05}s`,
-                  opacity: 0,
+                  opacity: 1,
                 }}
               >
                 <Link
@@ -151,7 +151,7 @@ const SupremeNavBar: React.FC = () => {
               style={{
                 animation: `fadeSlideIn 0.4s ease-out forwards`,
                 animationDelay: `${navVerticals.length * 0.05}s`,
-                opacity: 0,
+                opacity: 1,
               }}
               onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
             >
@@ -169,7 +169,7 @@ const SupremeNavBar: React.FC = () => {
               style={{
                 animation: `fadeSlideIn 0.4s ease-out forwards`,
                 animationDelay: `${(navVerticals.length + 0.5) * 0.05}s`,
-                opacity: 0,
+                opacity: 1,
               }}
               onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
             >
@@ -189,7 +189,7 @@ const SupremeNavBar: React.FC = () => {
                 style={{
                   animation: `fadeSlideIn 0.4s ease-out forwards`,
                   animationDelay: `${(navVerticals.length + 1 + idx) * 0.05}s`,
-                  opacity: 0,
+                  opacity: 1,
                 }}
               >
                 <Link
@@ -234,7 +234,7 @@ const SupremeNavBar: React.FC = () => {
                       style={{
                         animation: activeDropdown ? `fadeSlideUp 0.4s ease-out forwards` : 'none',
                         animationDelay: `${blockIdx * 0.08}s`,
-                        opacity: 0,
+                        opacity: 1,
                       }}
                     >
                       <Link

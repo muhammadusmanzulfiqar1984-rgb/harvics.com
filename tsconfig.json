@@ -42,6 +42,14 @@
     "HARVICS OLD/**/*",
     "_archive/**/*",
     "docs-html/**/*",
-    "docs-reports/**/*"
+    "docs-reports/**/*",
+    "vatify-os/**/*",
+    "harvics-event-os/**/*",
+    "harvics-os/**/*",
+    "Harvioce/**/*",
+    "HarvyX-ALL-MERGED/**/*",
+    "HARVY-X/**/*",
+    "HarvyXb2b/**/*",
+    "my-neon-worker/**/*"
   ]
 }

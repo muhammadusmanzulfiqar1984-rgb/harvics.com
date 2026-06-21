@@ -24,12 +24,12 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
   return (
     <div className={`flex flex-col items-center justify-center py-12 px-4 ${className}`}>
       {/* Icon */}
-      <div className="mb-4 p-3 rounded-full bg-gradient-to-br from-[var(--harvics-gold)]/10 to-[var(--harvics-maroon)]/10">
+      <div className="mb-4 p-3 rounded-full bg-gradient-to-br from-[var(--harvics-gold)]/10 to-[var(--harvics-burgundy)]/10">
         <Icon className="w-12 h-12 text-[var(--harvics-gold)]" />
       </div>
 
       {/* Title */}
-      <h2 className="text-2xl font-bold text-[var(--harvics-maroon)] mb-2">
+      <h2 className="text-2xl font-bold text-[var(--harvics-burgundy)] mb-2">
         {title}
       </h2>
 
@@ -42,7 +42,7 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
       {action && (
         <a
           href={action.href}
-          className="inline-block px-6 py-2 bg-[var(--harvics-maroon)] text-white rounded-lg hover:bg-[var(--harvics-maroon)]/90 transition-colors duration-200"
+          className="inline-block px-6 py-2 bg-[var(--harvics-burgundy)] text-white rounded-lg hover:bg-[var(--harvics-burgundy)]/90 transition-colors duration-200"
         >
           {action.label}
         </a>

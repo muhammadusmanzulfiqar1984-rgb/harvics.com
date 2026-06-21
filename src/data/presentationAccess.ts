@@ -58,6 +58,11 @@ export function resolveAccessCode(code: string): PresentationAccessGrant | null 
 export function savePresentationSession(grant: PresentationAccessGrant): void {
   if (typeof window === 'undefined') return
   sessionStorage.setItem(PRESENTATION_SESSION_KEY, JSON.stringify(grant))
+  
+  // Bridge access to the static LPP presentation iframe
+  if (grant.deckId === 'textiles-lpp') {
+    sessionStorage.setItem('lpp_presentation_access', 'granted')
+  }
 }
 
 export function readPresentationSession(): PresentationAccessGrant | null {
@@ -73,6 +78,7 @@ export function readPresentationSession(): PresentationAccessGrant | null {
 export function clearPresentationSession(): void {
   if (typeof window === 'undefined') return
   sessionStorage.removeItem(PRESENTATION_SESSION_KEY)
+  sessionStorage.removeItem('lpp_presentation_access')
 }
 
 export function canAccessZone(session: PresentationAccessGrant | null, zone: PresentationZone): boolean {

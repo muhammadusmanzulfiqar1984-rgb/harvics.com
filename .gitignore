@@ -125,3 +125,13 @@ Vedios /
 
 # Large media served from R2 CDN (not tracked in git)
 audit-visual.html
+
+# Micro-apps — deployed to Cloudflare Pages independently
+vatify-os/node_modules/
+vatify-os/dist/
+harvics-event-os/node_modules/
+harvics-event-os/dist/
+harvics-os/node_modules/
+harvics-os/dist/
+Harvioce/node_modules/
+Harvioce/HarvyX-ALL-MERGED/

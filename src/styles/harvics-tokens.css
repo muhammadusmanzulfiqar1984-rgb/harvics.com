@@ -1,6 +1,6 @@
 :root {
-	/* Brand accents — for text / borders / highlights */
-	--harvics-maroon: #6B1F2B;
+	/* Brand accents — burgundy/cream/gold only (HARVICS_SYSTEM_RULES) */
+	--harvics-maroon: #1A0505;
 	--harvics-gold: #C3A35E;
 	/* Dark surfaces — for backgrounds */
 	--harvics-burgundy: #1A0505;

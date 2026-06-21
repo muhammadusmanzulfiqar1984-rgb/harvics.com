@@ -24,7 +24,8 @@
  */
 
 import React, { useState, useEffect } from 'react'
-import Image from 'next/image'
+
+const FALLBACK_IMAGE = '/assets/brand/photo/logo.png'
 
 interface ImageCarouselProps {
   images?: string[]
@@ -112,19 +113,17 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               }`}
             >
               <div className="relative w-full h-full">
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src={image}
                   alt={`Carousel image ${index + 1}`}
-                  fill
-                  className="object-cover"
-                  priority={isActive}
-                  sizes="100vw"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading={index === 0 ? 'eager' : 'lazy'}
+                  decoding="async"
                   onError={(e) => {
-                    // Fallback to logo if image fails to load
-                    const target = e.target as HTMLImageElement
-                    if (target.src !== '/assets/brand/photo/logo.png') {
-                      target.src = '/assets/brand/photo/logo.png'
-                    }
+                    const target = e.currentTarget
+                    if (target.src.endsWith(FALLBACK_IMAGE)) return
+                    target.src = FALLBACK_IMAGE
                   }}
                 />
               </div>

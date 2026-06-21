@@ -27,11 +27,10 @@ body {
 
 /* Applied automatically by GlobalScrollReveal component */
 .scroll-reveal {
-  opacity: 0;
-  transform: translateY(32px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform;
 }
 .scroll-revealed {
   opacity: 1 !important;
@@ -202,6 +201,14 @@ html, body {
   width: 100%;
 }
 
+/* Never leave routed page content invisible due to failed JS animations */
+#main-content,
+#homepage-main,
+.hero {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 /* ==========================================================================
    UNIVERSAL ARCHITECTURAL STABILIZER (SAFE FOR CRM, PORTALS, & ALL SUB-PAGES)
    This normalizes layout structures across all 160+ routes instantly.
@@ -369,7 +376,18 @@ body {
 }
 
 [dir="rtl"] * {
+  text-align: inherit;
+}
+
+[dir="rtl"] body,
+[dir="rtl"] p,
+[dir="rtl"] li {
   text-align: right;
+}
+
+[dir="rtl"] .text-center,
+[dir="rtl"] [class*="text-center"] {
+  text-align: center !important;
 }
 
 /* RTL-specific utilities */
@@ -377,9 +395,16 @@ body {
   transform: scaleX(-1);
 }
 
-/* Ensure proper RTL layout for flex containers */
-[dir="rtl"] .flex {
+/* Ensure proper RTL layout for default row flex only — never override flex-col stacks */
+[dir="rtl"] .flex-row,
+[dir="rtl"] .flex:not(.flex-col):not([class*="flex-col"]) {
   flex-direction: row-reverse;
+}
+
+[dir="rtl"] .flex-col,
+[dir="rtl"] #homepage-main.flex,
+[dir="rtl"] #homepage-main {
+  flex-direction: column !important;
 }
 
 /* RTL-aware margins and paddings */
@@ -632,9 +657,9 @@ body {
   --background-start-rgb: 248, 249, 250; /* Light Gray Start */
   --background-end-rgb: 255, 255, 255; /* White End */
   
-  /* Primary Colors - Maroon */
-  --primary-maroon: 107, 31, 43; /* #6B1F2B */
-  --primary-maroon-hex: #6B1F2B;
+  /* Primary Colors - Burgundy (master palette) */
+  --primary-maroon: 26, 5, 5; /* #1A0505 — legacy var name */
+  --primary-maroon-hex: #1A0505;
   
   /* Accent Colors - Gold */
   --accent-gold: 195, 163, 94; /* #C3A35E */
@@ -645,8 +670,8 @@ body {
   --bg-secondary: 255, 255, 255; /* #FFFFFF */
   
   /* Text Colors */
-  --text-primary: 60, 0, 8; /* Maroon */
-  --text-secondary: 17, 24, 39; /* Dark Gray/Black for body copy */
+  --text-primary: 26, 5, 5; /* Burgundy */
+  --text-secondary: 138, 125, 107; /* Muted */
   
   /* Borders */
   --border-gold-light: rgba(212, 175, 55, 0.3);
@@ -669,12 +694,12 @@ body {
 
 /* ── Body copy — warm stone, not stark black ── */
 body {
-  color: #2a1118;
+  color: #1A0505;
   line-height: 1.65;
 }
 
 p, li, td, dd {
-  color: #3d1a22;
+  color: #8A7D6B;
   line-height: 1.7;
   letter-spacing: -0.005em;
 }
@@ -722,8 +747,8 @@ h6 { font-size: 0.875rem; line-height: 1.5; font-weight: 600; letter-spacing: 0.
 }
 
 .btn-primary-theme:hover {
-  background-color: #7d2535;
-  box-shadow: 0 4px 12px rgba(107,31,43,0.28);
+  background-color: #2a0a0a;
+  box-shadow: 0 4px 12px rgba(26, 5, 5, 0.28);
   transform: translateY(-1px);
 }
 
@@ -1314,7 +1339,7 @@ nav a:hover, nav button:hover {
 
 .gradient-border {
   position: relative;
-  background: linear-gradient(45deg, #6B1F2B, #ffffff);
+  background: linear-gradient(45deg, #1A0505, #ffffff);
   padding: 2px;
   border-radius: 12px;
 }
@@ -1338,14 +1363,14 @@ nav a:hover, nav button:hover {
 }
 
 .text-gradient {
-  background: linear-gradient(45deg, #6B1F2B, #ffffff);
+  background: linear-gradient(45deg, #1A0505, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .text-gradient-red {
-  background: linear-gradient(45deg, #6B1F2B, #6B1F2B, #6B1F2B);
+  background: linear-gradient(45deg, #1A0505, #1A0505, #1A0505);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1408,7 +1433,7 @@ nav a:hover, nav button:hover {
 
 /* Button Styles */
 .btn-primary {
-  background: linear-gradient(45deg, #6B1F2B, #6B1F2B);
+  background: linear-gradient(45deg, #1A0505, #1A0505);
   color: #F5F0E8;
   padding: 12px 24px;
   border-radius: 8px;
@@ -1424,8 +1449,8 @@ nav a:hover, nav button:hover {
 
 .btn-secondary {
   background: transparent;
-  color: #6B1F2B;
-  border: 2px solid #6B1F2B;
+  color: #1A0505;
+  border: 2px solid #1A0505;
   padding: 10px 22px;
   border-radius: 8px;
   font-weight: 600;
@@ -1433,14 +1458,14 @@ nav a:hover, nav button:hover {
 }
 
 .btn-secondary:hover {
-  background: #6B1F2B;
+  background: #1A0505;
   color: #F5F0E8;
   transform: translateY(-2px);
 }
 
 .btn-accent {
   background: linear-gradient(45deg, #ffffff, #ffffff);
-  color: #6B1F2B;
+  color: #1A0505;
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: 600;
@@ -1605,13 +1630,19 @@ nav a:hover, nav button:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* RTL support for Arabic */
+/* RTL support for Arabic — do not flip vertical stacks */
 [dir="rtl"] {
   text-align: right;
 }
 
-[dir="rtl"] .flex {
+[dir="rtl"] .flex-row,
+[dir="rtl"] .flex:not(.flex-col):not([class*="flex-col"]) {
   flex-direction: row-reverse;
+}
+
+[dir="rtl"] .flex-col,
+[dir="rtl"] #homepage-main {
+  flex-direction: column !important;
 }
 
 /* Screen reader only content */
@@ -1632,7 +1663,7 @@ nav a:hover, nav button:hover {
   position: absolute;
   top: -40px;
   left: 0;
-  background: #6B1F2B;
+  background: #1A0505;
   color: #F5F0E8;
   padding: 8px 16px;
   text-decoration: none;
@@ -1650,7 +1681,7 @@ nav a:hover, nav button:hover {
 
 /* Music Player Styles */
 .slider {
-  background: linear-gradient(to right, #6B1F2B 0%, #6B1F2B 30%, #e5e7eb 30%, #e5e7eb 100%);
+  background: linear-gradient(to right, #1A0505 0%, #1A0505 30%, #e5e7eb 30%, #e5e7eb 100%);
 }
 
 .slider::-webkit-slider-thumb {
@@ -1658,7 +1689,7 @@ nav a:hover, nav button:hover {
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background: #6B1F2B;
+  background: #1A0505;
   cursor: pointer;
   border: 2px solid #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -1668,7 +1699,7 @@ nav a:hover, nav button:hover {
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background: #6B1F2B;
+  background: #1A0505;
   cursor: pointer;
   border: 2px solid #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -2055,7 +2086,7 @@ p {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   letter-spacing: -0.02em;
-  color: #6B1F2B;
+  color: #1A0505;
 }
 
 .text-smart-body {

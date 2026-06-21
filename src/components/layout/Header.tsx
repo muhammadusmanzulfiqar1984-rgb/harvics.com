@@ -280,7 +280,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
             <div className="flex-1 max-w-xl mx-8 hidden md:block relative">
               <div
                 className="w-full flex items-center overflow-hidden relative search-bar-wrap"
-                style={{ background: 'transparent', border: '0.5px solid rgba(201,168,76,0.3)', transition: 'border-color 0.25s ease' }}
+                style={{ background: 'transparent', border: '1px solid #1A0505', transition: 'border-color 0.25s ease' }}
               >
                 <input type="text" placeholder={getTranslation('search', 'common', 'Search product, code or brand')}
                   onClick={() => setIsSearchOpen(true)} readOnly
@@ -296,7 +296,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               </div>
               <style dangerouslySetInnerHTML={{__html: `
                 .search-bar-wrap:focus-within { border-color: #C3A35E !important; }
-                .search-bar-input::placeholder { color: rgba(0,0,0,0.35); }
+                .search-bar-input::placeholder { color: rgba(26, 5, 5, 0.45); }
               `}} />
             </div>
 

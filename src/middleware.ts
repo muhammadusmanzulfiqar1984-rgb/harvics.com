@@ -17,6 +17,19 @@ const SUPPORTED_LOCALE_SET = new Set<string>(SUPPORTED_LOCALES as readonly strin
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // Skip middleware for API and launch routes
+  if (pathname.startsWith('/api/') || pathname.startsWith('/launch/')) {
+    return;
+  }
+
+  // Redirect localized launch routes (e.g. /en/launch/harvics-os -> /launch/harvics-os)
+  const parts = pathname.split('/').filter(Boolean);
+  if (parts.length >= 2 && SUPPORTED_LOCALE_SET.has(parts[0]) && parts[1] === 'launch') {
+    const url = request.nextUrl.clone();
+    url.pathname = '/' + parts.slice(1).join('/');
+    return NextResponse.redirect(url);
+  }
+
   if (pathname === '/' || pathname === '') {
     const url = request.nextUrl.clone();
     url.pathname = `/${DEFAULT_LOCALE}`;
@@ -24,7 +37,6 @@ export default function middleware(request: NextRequest) {
   }
 
   // Temporary safe redirects for legacy/missing pages.
-  const parts = pathname.split('/').filter(Boolean);
   if (parts.length >= 2 && SUPPORTED_LOCALE_SET.has(parts[0])) {
     const locale = parts[0];
     const page = parts[1];
@@ -53,10 +65,10 @@ export default function middleware(request: NextRequest) {
 
 export const config = {
   // Match only internationalized pathnames - accept any locale
-  // Exclude API routes, static files, and Next.js internals
+  // Exclude API routes, static files, Next.js internals, and static presentation decks
   matcher: [
-    // Match all paths except API routes, Next.js internals, and static files
-    '/((?!api|_next|_static|favicon|.*\\.).*)',
+    // Match all paths except API routes, Next.js internals, static files, and presentation decks
+    '/((?!api|_next|_static|favicon|vietnam-denim-presentation|.*\\.).*)',
     // Explicitly match root
     '/'
   ]

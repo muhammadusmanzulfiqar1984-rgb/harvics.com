@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { useLocale } from 'next-intl'
 import { VictorianAnalogClock } from '@/components/ui/VictorianHorology'
 
@@ -33,7 +32,7 @@ function useCountUp(target: number, duration = 1800, start = false) {
 
 const LiquidGlassHero: React.FC = () => {
   const locale = useLocale()
-  const [isLoaded, setIsLoaded] = useState(false)
+  const [heroSrc, setHeroSrc] = useState('/assets/shared/heroes/hero-page-1.webp')
   const [statsVisible, setStatsVisible] = useState(false)
   const statsRef = useRef<HTMLDivElement>(null)
 
@@ -41,8 +40,6 @@ const LiquidGlassHero: React.FC = () => {
   const years = useCountUp(20, 1200, statsVisible)
   const verticals = useCountUp(10, 1200, statsVisible)
   const continents = useCountUp(4, 900, statsVisible)
-
-  useEffect(() => { setIsLoaded(true) }, [])
 
   useEffect(() => {
     const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setStatsVisible(true) }, { threshold: 0.3 })
@@ -60,13 +57,15 @@ const LiquidGlassHero: React.FC = () => {
 
       {/* Background image with parallax zoom */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/assets/shared/heroes/hero-page-1.webp"
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={heroSrc}
           alt="Global Trade Operations"
-          fill
-          priority
-          className="object-cover hero-zoom"
+          className="absolute inset-0 w-full h-full object-cover hero-zoom"
           draggable={false}
+          fetchPriority="high"
+          decoding="async"
+          onError={() => setHeroSrc('/assets/shared/heroes/hero-page-1.jpg')}
           style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
         />
         {/* Cinematic gradient overlay */}
@@ -80,14 +79,10 @@ const LiquidGlassHero: React.FC = () => {
       {/* Hero header — textile-v2 horology clock */}
       <div
         className="absolute top-0 left-0 right-0 z-30 pointer-events-none"
-        style={{
-          opacity: isLoaded ? 1 : 0,
-          transition: 'opacity 0.8s ease 0.3s',
-        }}
       >
-        <div className="max-w-harvics-layout mx-auto px-6 pt-5 flex items-center justify-end">
+        <div className="max-w-harvics-layout mx-auto px-6 pt-5 flex items-center justify-start">
           <div
-            className="pointer-events-auto flex items-center gap-3 rounded-full px-3 py-1.5"
+            className="pointer-events-auto flex items-center gap-3 px-3 py-1.5"
             style={{
               background: 'rgba(13,11,8,0.55)',
               border: '1px solid rgba(200,169,110,0.35)',
@@ -111,7 +106,7 @@ const LiquidGlassHero: React.FC = () => {
       </div>
 
       {/* ── MAIN CONTENT ── */}
-      <div className={`relative z-20 h-full max-w-harvics-layout mx-auto px-6 flex flex-col justify-center pt-[18vh] transition-all duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+      <div className="relative z-20 h-full max-w-harvics-layout mx-auto px-6 flex flex-col justify-center pt-[18vh]">
 
         {/* Primary Headline */}
         <h1 style={{
@@ -121,7 +116,7 @@ const LiquidGlassHero: React.FC = () => {
           letterSpacing: '-0.03em',
           color: '#ffffff',
           maxWidth: '600px',
-          transform: isLoaded ? 'translateY(0)' : 'translateY(28px)',
+          transform: 'translateY(0)',
           transition: 'transform 0.9s cubic-bezier(0.16,1,0.3,1) 0.2s',
           marginBottom: '12px',
           fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif',
@@ -144,7 +139,7 @@ const LiquidGlassHero: React.FC = () => {
         {/* CTAs */}
         <div style={{
           display: 'flex', gap: '12px', flexWrap: 'wrap',
-          transform: isLoaded ? 'translateY(0)' : 'translateY(20px)',
+          transform: 'translateY(0)',
           transition: 'transform 0.9s cubic-bezier(0.16,1,0.3,1) 0.5s',
           marginBottom: '40px',
         }}>
@@ -188,7 +183,7 @@ const LiquidGlassHero: React.FC = () => {
             { num: continents, suffix: '', label: 'Continents' },
           ].map((s, i) => (
             <div key={i} style={{
-              transform: isLoaded ? 'translateY(0)' : 'translateY(24px)',
+              transform: 'translateY(0)',
               transition: `transform 0.8s ease ${0.6 + i * 0.1}s`,
             }}>
               <div style={{
@@ -222,7 +217,7 @@ const LiquidGlassHero: React.FC = () => {
         <div style={{
           display: 'flex', gap: '18px', flexWrap: 'wrap', alignItems: 'center',
           marginTop: '24px',
-          transform: isLoaded ? 'translateY(0)' : 'translateY(20px)',
+          transform: 'translateY(0)',
           transition: 'transform 0.9s cubic-bezier(0.16,1,0.3,1) 1.0s',
         }}>
           {['ISO Certified', 'HACCP Compliant', 'Halal Verified', 'BRC Approved'].map((badge, i) => (

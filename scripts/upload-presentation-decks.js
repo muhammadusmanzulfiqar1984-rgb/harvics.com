@@ -9,6 +9,8 @@
 require('dotenv').config({ path: '.env.local' })
 require('dotenv').config({ path: '.env' })
 
+const { execSync } = require('child_process')
+
 const fs = require('fs')
 const path = require('path')
 const { S3Client, PutObjectCommand, HeadObjectCommand } = require('@aws-sdk/client-s3')
@@ -19,7 +21,7 @@ const CDN = process.env.NEXT_PUBLIC_CDN_URL || 'https://pub-f2496164b9544713bde9
 const DECK_DIRS = [
   { local: 'public/textile-v2', prefix: 'textile-v2' },
   { local: 'public/mafi-presentation', prefix: 'mafi-presentation' },
-  { local: 'public/vietnam-denim-presentation', prefix: 'vietnam-denim-presentation' },
+  { local: 'public/vietnam-denim-presentation', prefix: 'vietnam-denim-presentation', preBuild: 'node scripts/build-vietnam-denim-vite.mjs' },
 ]
 
 const MIME = {
@@ -62,7 +64,7 @@ function walk(dir) {
   const files = []
   for (const entry of entries) {
     const full = path.join(dir, entry.name)
-    if (entry.name === '.git' || entry.name === 'node_modules') continue
+    if (entry.name === '.git' || entry.name === 'node_modules' || entry.name === 'dist' || entry.name === 'src') continue
     if (entry.isDirectory()) files.push(...walk(full))
     else files.push(full)
   }
@@ -101,6 +103,11 @@ async function main() {
   let skipped = 0
 
   for (const deck of DECK_DIRS) {
+    if (deck.preBuild) {
+      console.log(`\nPre-build: ${deck.prefix}`)
+      execSync(deck.preBuild, { cwd: path.join(__dirname, '..'), stdio: 'inherit' })
+    }
+
     const root = path.join(__dirname, '..', deck.local)
     if (!fs.existsSync(root)) {
       console.warn(`[skip] missing folder: ${deck.local}`)

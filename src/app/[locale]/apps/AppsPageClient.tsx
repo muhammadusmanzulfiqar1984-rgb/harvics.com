@@ -3,6 +3,62 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 
+/* ─────────────────────────────────────────────
+   PIN GATE
+───────────────────────────────────────────── */
+const PIN_STORAGE_KEY = 'harvics_apps_unlocked'
+const APP_PIN = 'harvics2026'
+
+function PinScreen({ onUnlock }: { onUnlock: () => void }) {
+  const [input, setInput] = useState('')
+  const [error, setError] = useState(false)
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (input === APP_PIN) {
+      try { sessionStorage.setItem(PIN_STORAGE_KEY, 'true') } catch {}
+      onUnlock()
+    } else {
+      setError(true)
+      setInput('')
+    }
+  }
+
+  return (
+    <main className="min-h-[60vh] flex items-center justify-center py-20" style={{ background: 'linear-gradient(135deg, #1A0505 0%, #1a0a0e 100%)' }}>
+      <div className="w-full max-w-md mx-4">
+        <div className="p-10 text-center" style={{ background: '#fff', border: '1px solid rgba(195,163,94,0.3)' }}>
+          <div className="mb-6">
+            <div className="w-16 h-16 mx-auto flex items-center justify-center mb-4" style={{ background: '#F5F0E8', border: '1px solid rgba(195,163,94,0.3)' }}>
+              <span className="text-2xl">🔐</span>
+            </div>
+            <h1 className="text-2xl font-bold mb-2" style={{ color: '#1A0505' }}>Harvics App Store</h1>
+            <p className="text-sm" style={{ color: '#9a8070' }}>Enter the access code to continue</p>
+          </div>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <input
+                type="password"
+                value={input}
+                onChange={(e) => { setInput(e.target.value); setError(false) }}
+                placeholder="Access Code"
+                autoFocus
+                className="w-full px-4 py-3 text-center text-lg tracking-[0.15em] font-mono outline-none transition-all"
+                style={{ background: '#F5F0E8', border: error ? '2px solid #e53e3e' : '1px solid rgba(195,163,94,0.3)', color: '#1A0505' }}
+              />
+              {error && <p className="text-xs mt-2" style={{ color: '#e53e3e' }}>Invalid code. Please try again.</p>}
+            </div>
+            <button type="submit" className="w-full py-3 text-sm font-bold tracking-[0.12em] uppercase transition-all duration-300 hover:opacity-90" style={{ background: '#1A0505', color: '#fff' }}>
+              Unlock Apps →
+            </button>
+          </form>
+          <p className="text-[10px] mt-6 tracking-wide" style={{ color: '#9a8070' }}>HARVICS GLOBAL VENTURES — INVITE ONLY</p>
+        </div>
+      </div>
+    </main>
+  )
+}
+
 /* Countdown to June 1, 2026 launch */
 const LAUNCH_DATE = new Date('2026-06-01T00:00:00Z')
 
@@ -41,10 +97,10 @@ const APPS = [
     description:
       'Full-cycle HR platform built for global enterprises operating across emerging markets. Covers recruitment & ATS, onboarding workflows, payroll processing, performance cycles, leave management, and multi-country compliance — all in one unified dashboard.',
     category: 'Human Resources',
-    status: 'live' as const,
+    status: 'live' as 'live' | 'preview' | 'coming-soon',
     badge: 'LIVE',
     icon: '👥',
-    color: '#6B1F2B',
+    color: '#1A0505',
     accentColor: '#C3A35E',
     url: 'https://www.harvichr.eu',
     features: [
@@ -76,12 +132,12 @@ const APPS = [
     description:
       'Premium white-label event intelligence platform for trade fairs, conferences, and exhibitions. Smart AI concierge guides attendees through exhibitor directories, live agenda tracking, QR-code networking, multi-language support, and real-time notifications — built for the world\'s leading trade events.',
     category: 'Events & Networking',
-    status: 'preview' as const,
-    badge: 'EARLY ACCESS',
+    status: 'live' as const,
+    badge: 'BETA',
     icon: '🎪',
     color: '#1A2E4A',
     accentColor: '#C3A35E',
-    url: '#',
+    url: '/launch/event-os',
     features: [
       'AI Event Concierge',
       'Exhibitor Directory',
@@ -107,12 +163,12 @@ const APPS = [
     description:
       'Enterprise-grade customs and logistics intelligence dashboard purpose-built for the UK–GCC trade corridor. Tracks live shipments, calculates duty & VAT, flags compliance risks, optimises routes intelligently, and integrates document management with real-time cost analytics.',
     category: 'Trade & Logistics',
-    status: 'preview' as const,
-    badge: 'EARLY ACCESS',
+    status: 'live' as const,
+    badge: 'BETA',
     icon: '🚢',
     color: '#1C3A2A',
     accentColor: '#C3A35E',
-    url: '#',
+    url: '/launch/harvics-os',
     features: [
       'Live Shipment Tracking',
       'Duty & VAT Calculator',
@@ -138,12 +194,12 @@ const APPS = [
     description:
       'Premium expense management platform purpose-built for European freelancers and SMEs. Auto-categorises expenses, calculates VAT across EU jurisdictions, generates compliant PDF reports, and provides an intelligent tax assistant — designed for precision and simplicity.',
     category: 'Finance & Payments',
-    status: 'preview' as const,
-    badge: 'EARLY ACCESS',
+    status: 'live' as const,
+    badge: 'BETA',
     icon: '🧾',
     color: '#2D1F4A',
     accentColor: '#C3A35E',
-    url: '#',
+    url: '/launch/vatify',
     features: [
       'Expense Tracking',
       'Multi-Country VAT Engine',
@@ -161,6 +217,72 @@ const APPS = [
       { label: 'Access', value: 'Invite Only' },
     ],
     unsplash: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=600&fit=crop&q=80',
+  },
+  {
+    id: 'harvoice',
+    name: 'Harvoice',
+    tagline: 'AI Voice Assistant for B2B Operators',
+    description:
+      'Smart conversational voice assistant for B2B lead generation and operator workflows. Natural language buyer discovery, AI-powered lead capture, and intelligent outreach drafting — all through voice or text.',
+    category: 'Sales & CRM',
+    status: 'live' as const,
+    badge: 'BETA',
+    icon: '🎙️',
+    color: '#1A2A3A',
+    accentColor: '#C3A35E',
+    url: '/launch/harvoice',
+    features: [
+      'AI Chat Assistant',
+      'Voice Commands',
+      'Buyer Discovery',
+      'Lead Capture',
+      'Outreach Console',
+      'Data Intelligence',
+      'City/Time Lookup',
+      'CSV Search',
+    ],
+    pricing: [],
+    stats: [
+      { label: 'AI Engine', value: 'Groq' },
+      { label: 'Input', value: 'Voice + Text' },
+      { label: 'Access', value: 'Beta' },
+    ],
+    unsplash: 'https://images.unsplash.com/photo-1589254065878-42c014d66b78?w=1200&h=600&fit=crop&q=80',
+  },
+  {
+    id: 'harvyx',
+    name: 'HarvyX',
+    tagline: 'B2B Distributor Lead Intelligence Platform',
+    description:
+      'AI-powered B2B lead generation and distributor intelligence platform. Discover, qualify, and engage thousands of FMCG distributors across the GCC and emerging markets — with smart outreach sequences, lead scoring, LinkedIn discovery, and a live dashboard backed by a real-time database of 7,500+ verified leads.',
+    category: 'Sales & CRM',
+    status: 'live' as const,
+    badge: 'LIVE',
+    icon: '🎯',
+    color: '#1A2A4A',
+    accentColor: '#C3A35E',
+    url: 'https://harvyx.harvics.com',
+    features: [
+      'Lead Discovery Engine',
+      'AI Lead Scoring',
+      'Outreach Sequences',
+      'LinkedIn Intelligence',
+      'Campaign Management',
+      'Email Verification',
+      'PDF & CSV Export',
+      'Analytics Dashboard',
+    ],
+    pricing: [
+      { tier: 'Starter', price: 'Free', seats: 'Up to 50 leads', highlight: false },
+      { tier: 'Pro', price: '$79/mo', seats: 'Unlimited leads', highlight: true },
+      { tier: 'Enterprise', price: 'Custom', seats: 'White-label', highlight: false },
+    ],
+    stats: [
+      { label: 'Verified Leads', value: '7,500+' },
+      { label: 'Target Markets', value: 'GCC + Global' },
+      { label: 'AI-Powered', value: 'Yes' },
+    ],
+    unsplash: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop&q=80',
   },
   {
     id: 'hpay',
@@ -257,7 +379,7 @@ function StatusBadge({ status, badge }: { status: 'live' | 'preview' | 'coming-s
   return (
     <span
       className="inline-flex items-center px-3 py-1 text-[10px] font-bold tracking-[0.12em] uppercase"
-      style={{ background: 'rgba(107,31,43,0.08)', color: '#6B1F2B', border: '1px solid rgba(107,31,43,0.2)' }}
+      style={{ background: 'rgba(26, 5, 5, 0.08)', color: '#1A0505', border: '1px solid rgba(26, 5, 5, 0.2)' }}
     >
       {badge}
     </span>
@@ -321,7 +443,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
         >
           {app.stats.map((s) => (
             <div key={s.label} className="px-3 py-3 text-center">
-              <div className="text-lg font-bold" style={{ color: '#6B1F2B' }}>{s.value}</div>
+              <div className="text-lg font-bold" style={{ color: '#1A0505' }}>{s.value}</div>
               <div className="text-[10px] tracking-[0.06em] uppercase" style={{ color: '#9a8070' }}>{s.label}</div>
             </div>
           ))}
@@ -333,7 +455,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
             <span
               key={f}
               className="text-[10px] px-2 py-1 tracking-[0.04em]"
-              style={{ background: '#F5F0E8', color: '#6B1F2B', border: '1px solid rgba(107,31,43,0.1)' }}
+              style={{ background: '#F5F0E8', color: '#1A0505', border: '1px solid rgba(26, 5, 5, 0.1)' }}
             >
               {f}
             </span>
@@ -352,8 +474,15 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
         {app.status === 'live' ? (
           <button
             className="w-full py-3 text-xs font-bold tracking-[0.1em] uppercase transition-all duration-300"
-            style={{ background: '#6B1F2B', color: '#fff' }}
-            onClick={() => onClick()}
+            style={{ background: '#1A0505', color: '#fff' }}
+            onClick={(e) => {
+              e.stopPropagation()
+              if (app.url.startsWith('http')) {
+                window.open(app.url, '_blank', 'noopener,noreferrer')
+              } else {
+                window.location.href = app.url
+              }
+            }}
           >
             {`Launch ${app.name} →`}
           </button>
@@ -373,7 +502,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
                 { v: countdown.seconds, l: 'Sec' },
               ].map(({ v, l }) => (
                 <div key={l} className="py-2 text-center">
-                  <div className="text-base font-bold tabular-nums" style={{ color: '#6B1F2B' }}>{String(v).padStart(2, '0')}</div>
+                  <div className="text-base font-bold tabular-nums" style={{ color: '#1A0505' }}>{String(v).padStart(2, '0')}</div>
                   <div className="text-[9px] tracking-[0.06em] uppercase" style={{ color: '#9a8070' }}>{l}</div>
                 </div>
               ))}
@@ -382,7 +511,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
         ) : (
           <button
             className="w-full py-3 text-xs font-bold tracking-[0.1em] uppercase transition-all duration-300"
-            style={{ background: 'transparent', border: '1px solid #6B1F2B', color: '#6B1F2B' }}
+            style={{ background: 'transparent', border: '1px solid #1A0505', color: '#1A0505' }}
             onClick={() => onClick()}
           >
             Submit Your Interest →
@@ -411,7 +540,7 @@ function ModalCountdown() {
           { v: countdown.seconds, l: 'Sec' },
         ].map(({ v, l }) => (
           <div key={l} className="py-4 text-center">
-            <div className="text-2xl font-bold tabular-nums" style={{ color: '#6B1F2B' }}>{String(v).padStart(2, '0')}</div>
+            <div className="text-2xl font-bold tabular-nums" style={{ color: '#1A0505' }}>{String(v).padStart(2, '0')}</div>
             <div className="text-[10px] tracking-[0.06em] uppercase mt-1" style={{ color: '#9a8070' }}>{l}</div>
           </div>
         ))}
@@ -490,7 +619,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
                     className="p-4 text-center"
                     style={{ background: '#F5F0E8', border: '1px solid rgba(195,163,94,0.2)' }}
                   >
-                    <div className="text-2xl font-bold" style={{ color: '#6B1F2B' }}>{s.value}</div>
+                    <div className="text-2xl font-bold" style={{ color: '#1A0505' }}>{s.value}</div>
                     <div className="text-[10px] tracking-[0.06em] uppercase mt-1" style={{ color: '#9a8070' }}>{s.label}</div>
                   </div>
                 ))}
@@ -526,7 +655,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
                       key={plan.tier}
                       className="p-4"
                       style={{
-                        background: plan.highlight ? '#6B1F2B' : '#F5F0E8',
+                        background: plan.highlight ? '#1A0505' : '#F5F0E8',
                         border: plan.highlight ? 'none' : '1px solid rgba(195,163,94,0.2)',
                       }}
                     >
@@ -538,7 +667,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
                       </div>
                       <div
                         className="text-2xl font-bold mt-1"
-                        style={{ color: plan.highlight ? '#fff' : '#6B1F2B' }}
+                        style={{ color: plan.highlight ? '#fff' : '#1A0505' }}
                       >
                         {plan.price}
                       </div>
@@ -570,10 +699,9 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
             {app.status === 'live' ? (
               <a
                 href={app.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                {...(app.url.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 className="block w-full py-4 text-center text-sm font-bold tracking-[0.1em] uppercase transition-all duration-300 hover:opacity-90"
-                style={{ background: '#6B1F2B', color: '#fff' }}
+                style={{ background: '#1A0505', color: '#fff' }}
               >
                 Launch {app.name} →
               </a>
@@ -582,7 +710,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
             ) : (
               <button
                 className="w-full py-4 text-sm font-bold tracking-[0.1em] uppercase"
-                style={{ background: '#6B1F2B', color: '#fff' }}
+                style={{ background: '#1A0505', color: '#fff' }}
               >
                 Submit Your Interest →
               </button>
@@ -604,8 +732,21 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
 export default function AppsPageClient({ locale }: AppsPageClientProps) {
   const [activeCategory, setActiveCategory] = useState('All')
   const [selectedApp, setSelectedApp] = useState<typeof APPS[0] | null>(null)
+  const [unlocked, setUnlocked] = useState(false)
+
+  useEffect(() => {
+    try {
+      if (sessionStorage.getItem(PIN_STORAGE_KEY) === 'true') {
+        setUnlocked(true)
+      }
+    } catch {}
+  }, [])
 
   const filtered = activeCategory === 'All' ? APPS : APPS.filter((a) => a.category === activeCategory)
+
+  if (!unlocked) {
+    return <PinScreen onUnlock={() => setUnlocked(true)} />
+  }
 
   return (
     <main style={{ background: '#F5F0E8', minHeight: '100vh' }}>
@@ -613,7 +754,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
       <section
         className="relative py-24 overflow-hidden"
         style={{
-          background: 'linear-gradient(135deg, #6B1F2B 0%, #3d1018 60%, #1a0a0e 100%)',
+          background: 'linear-gradient(135deg, #1A0505 0%, #3d1018 60%, #1a0a0e 100%)',
         }}
       >
         {/* Decorative grid pattern */}
@@ -674,9 +815,9 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
                 onClick={() => setActiveCategory(cat)}
                 className="whitespace-nowrap px-4 py-2 text-xs font-bold tracking-[0.08em] uppercase transition-all duration-200"
                 style={{
-                  background: activeCategory === cat ? '#6B1F2B' : 'transparent',
-                  color: activeCategory === cat ? '#fff' : '#6B1F2B',
-                  border: activeCategory === cat ? 'none' : '1px solid rgba(107,31,43,0.2)',
+                  background: activeCategory === cat ? '#1A0505' : 'transparent',
+                  color: activeCategory === cat ? '#fff' : '#1A0505',
+                  border: activeCategory === cat ? 'none' : '1px solid rgba(26, 5, 5, 0.2)',
                 }}
               >
                 {cat}
@@ -702,7 +843,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
               />
               <div
                 className="absolute inset-0"
-                style={{ background: 'linear-gradient(90deg, rgba(107,31,43,0.95) 45%, rgba(107,31,43,0.4) 100%)' }}
+                style={{ background: 'linear-gradient(90deg, rgba(26, 5, 5, 0.95) 45%, rgba(26, 5, 5, 0.4) 100%)' }}
               />
             </div>
 
@@ -816,7 +957,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
           ].map((item) => (
             <div key={item.title} className="text-center">
               <div className="text-4xl mb-4">{item.icon}</div>
-              <h3 className="text-base font-bold mb-2" style={{ color: '#6B1F2B' }}>{item.title}</h3>
+              <h3 className="text-base font-bold mb-2" style={{ color: '#1A0505' }}>{item.title}</h3>
               <p className="text-sm leading-relaxed" style={{ color: '#9a8070' }}>{item.desc}</p>
             </div>
           ))}
@@ -826,7 +967,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
       {/* ── BUILD ON HARVICS ── */}
       <section
         className="py-16"
-        style={{ background: 'linear-gradient(135deg, #6B1F2B 0%, #3d1018 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #1A0505 0%, #3d1018 100%)' }}
       >
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">

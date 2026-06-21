@@ -1,13 +1,23 @@
- import React, { useState } from 'react';
-import { Mic, Send } from 'lucide-react';
-import { AISuggestion } from './HarvicsCard';
+import React, { useState } from 'react'
+import { Send, Mic, Brain, Zap } from 'lucide-react'
+import { AISuggestion } from './HarvicsCard'
 
 interface HarvicsAIPanelProps {
-  suggestions: AISuggestion[];
-  loading?: boolean;
-  title?: string;
-  onAsk?: (query: string) => void;
-  actions?: React.ReactNode;
+  suggestions: AISuggestion[]
+  loading?: boolean
+  title?: string
+  onAsk?: (query: string) => void
+  actions?: React.ReactNode
+}
+
+function renderHighlights(text: string, highlights?: { word: string; color: string }[]) {
+  if (!highlights?.length) return <>{text}</>
+  let result = text
+  highlights.forEach(h => {
+    const safe = h.word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    result = result.replace(new RegExp(`(${safe})`, 'gi'), `<mark style="color:${h.color};background:transparent;font-weight:700">$1</mark>`)
+  })
+  return <span dangerouslySetInnerHTML={{ __html: result }} />
 }
 
 export const HarvicsAIPanel: React.FC<HarvicsAIPanelProps> = ({
@@ -17,79 +27,68 @@ export const HarvicsAIPanel: React.FC<HarvicsAIPanelProps> = ({
   onAsk,
   actions,
 }) => {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState('')
 
   const handleAsk = () => {
-    if (query.trim() && onAsk) {
-      onAsk(query.trim());
-      setQuery('');
-    }
-  };
-
-  const renderTextWithHighlights = (text: string, highlights?: { word: string; color: string }[]) => {
-    if (!highlights || highlights.length === 0) return text;
-    
-    // Simplistic highlight logic for demonstration
-    // In production, would use regex or precise indices to replace text with colored spans
-    let rendered = text;
-    highlights.forEach(h => {
-      // Escape string for regex
-      const safeWord = h.word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const regex = new RegExp(`(${safeWord})`, 'gi');
-      rendered = rendered.replace(regex, `<span style="color: ${h.color}; font-weight: bold;">$1</span>`);
-    });
-    
-    return <span dangerouslySetInnerHTML={{ __html: rendered }} />;
-  };
+    if (query.trim() && onAsk) { onAsk(query.trim()); setQuery('') }
+  }
 
   return (
-    <div className="w-[240px] flex-shrink-0 flex flex-col h-full bg-[rgba(59,130,246,0.08)] border border-[rgba(59,130,246,0.4)] rounded-lg p-4 font-['DM_Sans'] text-[#e2e8f0]">
-      {/* Title Pill */}
-      <div className="bg-[#1e3a8a]/50 text-[#93c5fd] text-[10px] uppercase font-bold tracking-wider rounded-full px-3 py-1 self-start flex items-center mb-4 border border-[rgba(59,130,246,0.5)] shadow-md">
-        <span className="w-2 h-2 rounded-full bg-[#3b82f6] animate-pulse mr-2" />
-        {title}
-      </div>
+    <div className="relative flex flex-col h-full rounded-2xl overflow-hidden bg-harvics-burgundy border border-harvics-goldDivider shadow-[0_4px_24px_rgba(26,5,5,0.5)] p-4">
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-harvics-gold/50 to-transparent" />
 
-      {/* Suggestions List */}
-      <div className="flex-1 overflow-y-auto pr-2 space-y-3">
-        {loading ? (
-          <div className="flex items-center space-x-1 text-blue-400">
-            <span className="animate-bounce delay-75">•</span>
-            <span className="animate-bounce delay-150">•</span>
-            <span className="animate-bounce delay-300">•</span>
+      {/* Header */}
+      <div className="flex items-center gap-2 mb-4">
+        <div className="w-6 h-6 rounded-lg flex items-center justify-center bg-harvics-gold/10 border border-harvics-goldDivider">
+          <Brain size={12} className="text-harvics-gold" />
+        </div>
+        <span className="text-[10px] font-black uppercase tracking-[0.18em] text-harvics-gold">{title}</span>
+        {loading && (
+          <div className="ml-auto flex gap-1">
+            {[0, 1, 2].map(i => (
+              <span key={i} className="w-1 h-1 rounded-full bg-harvics-gold animate-bounce" style={{ animationDelay: `${i * 150}ms` }} />
+            ))}
           </div>
-        ) : suggestions.length === 0 ? (
-          <div className="text-[11px] text-[#94a3b8] italic">No active alerts.</div>
-        ) : (
-          suggestions.map((sugg) => (
-            <div key={sugg.id} className="text-[11px] text-gray-300 leading-relaxed border-l-2 border-[rgba(59,130,246,0.4)] pl-2">
-              {renderTextWithHighlights(sugg.text, sugg.highlights)}
-            </div>
-          ))
         )}
       </div>
 
-      {/* Actions */}
-      {actions && <div className="mt-4 flex flex-col gap-2">{actions}</div>}
+      {/* Suggestions */}
+      <div className="flex-1 overflow-y-auto space-y-2.5 pr-0.5">
+        {!loading && suggestions.length === 0 && (
+          <div className="flex flex-col items-center justify-center py-6 gap-2">
+            <Zap size={20} className="text-harvics-muted/40" />
+            <p className="text-[11px] text-harvics-muted text-center">No active alerts</p>
+          </div>
+        )}
+        {suggestions.map(s => (
+          <div key={s.id} className="rounded-xl p-3 bg-white/[0.03] border border-harvics-goldDivider">
+            <p className="text-[11px] text-harvics-cream/80 leading-relaxed">
+              {renderHighlights(s.text, s.highlights)}
+            </p>
+          </div>
+        ))}
+      </div>
 
-      {/* Harvoice Input */}
-      <div className="mt-4 relative border border-[#fbbf24] rounded-full overflow-hidden bg-black/50 shadow-[0_0_8px_rgba(251,191,36,0.15)] flex items-center">
+      {/* Actions */}
+      {actions && <div className="mt-3 flex flex-col gap-2">{actions}</div>}
+
+      {/* Ask input */}
+      <div className="mt-4 flex items-center gap-1.5 rounded-xl border border-harvics-gold/30 bg-white/[0.03] overflow-hidden px-3 py-2 focus-within:border-harvics-gold/60 transition-colors">
         <input
           type="text"
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          onKeyDown={(e) => e.key === 'Enter' && handleAsk()}
-          placeholder="Ask anything..."
-          className="bg-transparent text-[11px] text-white flex-1 pl-3 py-2 outline-none placeholder-[#475569]"
+          onChange={e => setQuery(e.target.value)}
+          onKeyDown={e => e.key === 'Enter' && handleAsk()}
+          placeholder="Ask anything…"
+          className="flex-1 bg-transparent text-[11px] text-harvics-cream placeholder-harvics-muted/50 outline-none"
         />
-        <button 
+        <button
           onClick={handleAsk}
-          className="p-2 text-[#fbbf24] hover:bg-[#fbbf24]/20 transition-colors mr-1"
-          aria-label="Send query"
+          className="text-harvics-gold hover:text-harvics-cream transition-colors"
         >
-          {query.trim() ? <Send size={14} /> : <Mic size={14} />}
+          {query.trim() ? <Send size={13} /> : <Mic size={13} />}
         </button>
       </div>
     </div>
-  );
-};
+  )
+}

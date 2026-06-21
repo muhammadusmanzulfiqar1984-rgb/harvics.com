@@ -80,7 +80,7 @@ function ImageZoomLightbox({ src, alt, useSmartImage, keyword }: { src: string; 
         {/* Zoom icon overlay */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
           <div className="w-10 h-10 bg-white/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <svg className="w-5 h-5 text-[#6B1F2B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-[#1A0505]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
             </svg>
           </div>
@@ -111,7 +111,7 @@ function ImageZoomLightbox({ src, alt, useSmartImage, keyword }: { src: string; 
             )}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute -top-3 -right-3 w-8 h-8 bg-white flex items-center justify-center text-[#6B1F2B] font-bold text-sm hover:bg-[#C3A35E] hover:text-white transition-colors"
+              className="absolute -top-3 -right-3 w-8 h-8 bg-white flex items-center justify-center text-[#1A0505] font-bold text-sm hover:bg-[#C3A35E] hover:text-white transition-colors"
             >
               ✕
             </button>
@@ -171,7 +171,7 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
       {/* ═══════ HERO ═══════ */}
       <section
         ref={heroRef.ref}
-        className="relative bg-gradient-to-br from-[#6B1F2B] via-[#5a1a24] to-[#4a1520] py-16 px-4 overflow-hidden"
+        className="relative bg-gradient-to-br from-[#1A0505] via-[#5a1a24] to-[#4a1520] py-16 px-4 overflow-hidden"
       >
         {/* Hero Background Image */}
         <div className="absolute inset-0">
@@ -244,8 +244,8 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
                 <div className="w-5 h-[2px] bg-[#C3A35E]/50" />
                 <span className="text-[10px] font-bold text-[#C3A35E] uppercase tracking-[0.2em]">Product Details</span>
               </div>
-              <h2 className="text-xl font-bold text-[#6B1F2B] mb-4" style={{ letterSpacing: '-0.01em' }}>{matchedItem}</h2>
-              <p className="text-sm text-[#6B1F2B]/50 leading-relaxed mb-6">
+              <h2 className="text-xl font-bold text-[#1A0505] mb-4" style={{ letterSpacing: '-0.01em' }}>{matchedItem}</h2>
+              <p className="text-sm text-[#1A0505]/50 leading-relaxed mb-6">
                 {description ||
                   `Harvics provides comprehensive ${matchedItem.toLowerCase()} solutions as part of our ${blockTitle.toLowerCase()} portfolio within the ${verticalLabel.toLowerCase()} vertical. Backed by our global supply chain network operating across multiple continents.`}
               </p>
@@ -253,7 +253,7 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
               {/* Specs Table */}
               {specs.length > 0 && (
                 <div ref={specsRef.ref} className="mb-6">
-                  <h3 className="text-[10px] font-bold text-[#6B1F2B] uppercase tracking-[0.15em] mb-3">Specifications</h3>
+                  <h3 className="text-[10px] font-bold text-[#1A0505] uppercase tracking-[0.15em] mb-3">Specifications</h3>
                   <div className="space-y-0">
                     {specs.map((spec, idx) => {
                       const [label, ...rest] = spec.split(':')
@@ -268,8 +268,8 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
                             transitionDelay: `${idx * 60}ms`,
                           }}
                         >
-                          <span className="text-[#6B1F2B]/40 font-medium text-xs uppercase tracking-wider">{label}</span>
-                          <span className="font-semibold text-[#6B1F2B] text-right max-w-[60%] text-sm">{value}</span>
+                          <span className="text-[#1A0505]/40 font-medium text-xs uppercase tracking-wider">{label}</span>
+                          <span className="font-semibold text-[#1A0505] text-right max-w-[60%] text-sm">{value}</span>
                         </div>
                       )
                     })}
@@ -285,8 +285,8 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
                   { label: 'Availability', value: 'Global', isGold: true },
                 ].map((meta) => (
                   <div key={meta.label} className="flex justify-between text-sm">
-                    <span className="text-[#6B1F2B]/40 text-xs uppercase tracking-wider">{meta.label}</span>
-                    <span className={`font-semibold ${meta.isGold ? 'text-[#C3A35E]' : 'text-[#6B1F2B]'}`}>{meta.value}</span>
+                    <span className="text-[#1A0505]/40 text-xs uppercase tracking-wider">{meta.label}</span>
+                    <span className={`font-semibold ${meta.isGold ? 'text-[#C3A35E]' : 'text-[#1A0505]'}`}>{meta.value}</span>
                   </div>
                 ))}
               </div>
@@ -294,7 +294,7 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
               {/* CTA Button */}
               <Link
                 href={`/${locale}/contact`}
-                className="group relative inline-block mt-6 px-8 py-3 bg-[#6B1F2B] text-white text-sm font-semibold border border-[#6B1F2B] overflow-hidden transition-all duration-300"
+                className="group relative inline-block mt-6 px-8 py-3 bg-[#1A0505] text-white text-sm font-semibold border border-[#1A0505] overflow-hidden transition-all duration-300"
               >
                 <span className="relative z-10">Request Quote</span>
                 <div className="absolute inset-0 bg-[#5a1a24] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
@@ -318,7 +318,7 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
                 <Link
                   key={relItem.slug}
                   href={`/${locale}/${verticalKey}/${categorySlug}/${relItem.slug}`}
-                  className="group relative bg-white border border-[#C3A35E]/10 p-4 text-center text-sm text-[#6B1F2B] overflow-hidden transition-all duration-300 hover:border-[#C3A35E]/40"
+                  className="group relative bg-white border border-[#C3A35E]/10 p-4 text-center text-sm text-[#1A0505] overflow-hidden transition-all duration-300 hover:border-[#C3A35E]/40"
                   style={{
                     opacity: relatedRef.inView ? 1 : 0,
                     transform: relatedRef.inView ? 'translateY(0)' : 'translateY(12px)',
@@ -337,7 +337,7 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
       {/* ═══════ CTA BANNER ═══════ */}
       <section
         ref={ctaRef.ref}
-        className="relative bg-gradient-to-r from-[#6B1F2B] to-[#5a1a24] border-t border-[#C3A35E]/25 overflow-hidden"
+        className="relative bg-gradient-to-r from-[#1A0505] to-[#5a1a24] border-t border-[#C3A35E]/25 overflow-hidden"
       >
         <div className="absolute inset-0 opacity-[0.03]"
           style={{
@@ -360,7 +360,7 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
           <div className="flex gap-3">
             <Link
               href={`/${locale}/contact`}
-              className="group relative px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold overflow-hidden transition-all duration-300"
+              className="group relative px-8 py-3 bg-[#C3A35E] text-[#1A0505] text-sm font-bold overflow-hidden transition-all duration-300"
             >
               <span className="relative z-10">Request Quote</span>
               <div className="absolute inset-0 bg-[#d4b46e] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
