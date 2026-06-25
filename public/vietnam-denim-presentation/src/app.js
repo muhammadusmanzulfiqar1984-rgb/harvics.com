@@ -110,13 +110,7 @@ const savedLocale =
   (typeof localStorage !== 'undefined' && localStorage.getItem(LOCALE_KEY)) ||
   'vi';
 
-const skipDoors =
-  readEnteredFromUrl() ||
-  (typeof sessionStorage !== 'undefined' && sessionStorage.getItem(DOORS_KEY) === '1');
-
-if (skipDoors && typeof sessionStorage !== 'undefined') {
-  sessionStorage.setItem(DOORS_KEY, '1');
-}
+const skipDoors = false;
 
 function resolveTranslation(key, locale) {
   const val = lookupTranslation(locale, key);

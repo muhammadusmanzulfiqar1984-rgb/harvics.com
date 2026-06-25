@@ -11,11 +11,98 @@
   <link rel="preload" href="./runway-luxe.mp3" as="audio" type="audio/mpeg" />
   <link rel="stylesheet" href="./src/styles.css" />
   <script type="module" src="./src/app.js"></script>
+<style>
+/* ── New section shared ── */
+.hv-new-section { font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif; }
+.hv-s-title { font-size: clamp(1.4rem,2.8vw,2.2rem); font-weight:700; color:#c8a96e; text-transform:uppercase; letter-spacing:.4px; margin-bottom:8px; line-height:1.15; }
+.hv-s-sub { font-size:.9rem; color:rgba(255,255,255,.45); max-width:720px; margin-bottom:32px; line-height:1.8; }
+/* ── Data grid ── */
+@keyframes hv-warn-pulse { 0%,100%{border-color:rgba(239,68,68,.25);}50%{border-color:rgba(239,68,68,.7);box-shadow:0 0 18px 2px rgba(239,68,68,.2);} }
+.hv-data-grid{display:grid;border:1px solid rgba(255,255,255,.08);}
+.hv-5col{grid-template-columns:repeat(5,1fr);}
+.hv-row2{border-top:none;margin-bottom:28px;}
+.hv-dc{padding:20px 16px;text-align:center;border-right:1px solid rgba(255,255,255,.08);position:relative;overflow:hidden;transition:border-color .2s;cursor:default;will-change:transform;}
+.hv-dc:last-child{border-right:none;}
+.hv-dc::before{content:'';position:absolute;inset:0;background:radial-gradient(circle 80px at var(--mx,50%) var(--my,50%),rgba(200,169,110,.18) 0%,transparent 70%);opacity:0;transition:opacity .25s;pointer-events:none;}
+.hv-dc:hover::before{opacity:1;}
+.hv-dc::after{content:'';position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;}
+@keyframes hv-flash{0%{opacity:.85;}100%{opacity:0;}}
+.hv-dc.flashing::after{animation:hv-flash .45s ease-out forwards;}
+.hv-dc-warn{animation:hv-warn-pulse 2.2s ease-in-out .8s infinite;border:1px solid rgba(239,68,68,.3);}
+.hv-dc-warn::before{background:radial-gradient(circle 80px at var(--mx,50%) var(--my,50%),rgba(239,68,68,.22) 0%,transparent 70%);}
+.hv-dc-warn .hv-dn{color:#ef4444;}
+.hv-dc-warn .hv-dl{color:#ef4444;opacity:.75;}
+.hv-dn{font-size:26px;font-weight:800;color:#fff;line-height:1;margin-bottom:5px;}
+.hv-dl{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#c8a96e;opacity:.8;}
+/* ── Quote sweep ── */
+@keyframes hv-sweep{0%{transform:translateX(-100%);}100%{transform:translateX(250%);}}
+@keyframes hv-edge-glow{0%,100%{box-shadow:0 -4px 22px rgba(200,169,110,.3),0 4px 22px rgba(200,169,110,.15);}50%{box-shadow:0 -4px 36px rgba(200,169,110,.6),0 4px 36px rgba(200,169,110,.35);}}
+.hv-found-quote{padding:26px 30px;background:rgba(255,255,255,.03);border-left:none;border-top:1px solid rgba(200,169,110,.5);border-bottom:1px solid rgba(200,169,110,.5);font-size:.9rem;color:rgba(255,255,255,.6);line-height:1.85;font-style:italic;margin-top:20px;position:relative;overflow:hidden;animation:hv-edge-glow 3s ease-in-out infinite;}
+.hv-found-quote::after{content:'';position:absolute;top:0;left:0;width:40%;height:100%;background:linear-gradient(105deg,transparent 0%,rgba(200,169,110,.04) 30%,rgba(200,169,110,.22) 50%,rgba(255,255,255,.12) 55%,rgba(200,169,110,.04) 70%,transparent 100%);transform:translateX(-100%);animation:hv-sweep 3.2s ease-in-out infinite;pointer-events:none;will-change:transform;}
+.hv-info-bar{padding:16px 22px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-left:3px solid #4a8fe8;font-size:.8rem;color:rgba(255,255,255,.5);line-height:1.75;margin-top:16px;}
+.hv-info-bar strong{color:rgba(255,255,255,.9);}
+/* ── Compliance gates ── */
+.hv-gates{display:flex;flex-direction:column;gap:14px;margin-bottom:32px;}
+.hv-gate{padding:24px 28px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);position:relative;overflow:hidden;}
+.hv-gate::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;}
+.hv-gate-warn::before{background:#ef4444;}.hv-gate-caution::before{background:#c8a96e;}.hv-gate-future::before{background:#4a8fe8;}
+.hv-gate-tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;}
+.hv-gate-warn .hv-gate-tag{color:#ef4444;}.hv-gate-caution .hv-gate-tag{color:#c8a96e;}.hv-gate-future .hv-gate-tag{color:#4a8fe8;}
+.hv-gate-title{font-size:14px;font-weight:700;color:#fff;margin-bottom:8px;}
+.hv-gate p{font-size:.82rem;color:rgba(255,255,255,.5);margin:0;line-height:1.75;}.hv-gate p strong{color:rgba(255,255,255,.8);}
+/* ── Cert scorecard ── */
+.hv-score-label{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:12px;}
+.hv-score-wrap{overflow-x:auto;}
+.hv-cert-table{width:100%;border-collapse:collapse;}
+.hv-cert-table th,.hv-cert-table td{padding:12px 14px;text-align:left;border-bottom:1px solid rgba(255,255,255,.07);font-size:.8rem;vertical-align:top;}
+.hv-cert-table th{background:rgba(255,255,255,.04);color:#c8a96e;text-transform:uppercase;letter-spacing:1px;font-size:.68rem;}
+.hv-cert-table td{color:rgba(255,255,255,.5);}.hv-cert-table td strong{color:rgba(255,255,255,.85);}
+.hv-cert-table tr:last-child td{border-bottom:none;}
+.hv-badge{display:inline-block;padding:2px 8px;font-size:9px;text-transform:uppercase;letter-spacing:1px;border-radius:2px;}
+.hv-b-ok{color:#22c55e;border:1px solid #22c55e;}.hv-b-warn{color:#ef4444;border:1px solid #ef4444;}.hv-b-miss{color:#4a8fe8;border:1px solid #2d6bbf;}.hv-b-neu{color:#c8a96e;border:1px solid rgba(200,169,110,.4);}
+/* ── Timeline ── */
+.hv-timeline{display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.08);}
+.hv-tl-item{display:grid;grid-template-columns:155px 1fr;border-bottom:1px solid rgba(255,255,255,.07);}
+.hv-tl-item:last-child{border-bottom:none;}
+.hv-tl-period{padding:20px 22px;background:rgba(255,255,255,.03);border-right:1px solid rgba(255,255,255,.07);display:flex;flex-direction:column;justify-content:center;}
+.hv-tp-tag{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#4a8fe8;margin-bottom:4px;}
+.hv-tp-months{font-size:12px;font-weight:700;color:#c8a96e;}
+.hv-tl-body{padding:20px 24px;}
+.hv-tb-title{font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;}
+.hv-tl-body p{font-size:.8rem;color:rgba(255,255,255,.5);margin:0;line-height:1.7;}
+.hv-tb-outcome{display:inline-block;margin-top:8px;font-size:10px;color:#22c55e;letter-spacing:1.5px;text-transform:uppercase;}
+/* ── Process steps pulse ── */
+@keyframes proc-travel{0%{transform:scaleX(0);opacity:1;}85%,100%{transform:scaleX(1);opacity:0;}}
+@keyframes proc-node-burst{0%,2%{box-shadow:0 0 0 3px rgba(200,169,110,.9),0 0 28px 6px rgba(200,169,110,.55);background:rgba(200,169,110,.18);color:#0a0406;border-color:#c8a96e;}18%,100%{box-shadow:none;background:rgba(13,11,8,.92);color:var(--color-gold);border-color:rgba(200,169,110,.6);}}
+.process-steps .step:not(:last-child)::before{content:'';position:absolute;top:25px;left:calc(50% + 26px);right:calc(-50% + 26px);height:2px;background:linear-gradient(90deg,transparent 0%,rgba(200,169,110,.8) 35%,#fff 52%,rgba(200,169,110,.8) 68%,transparent 100%);transform-origin:left center;transform:scaleX(0);z-index:2;will-change:transform;pointer-events:none;animation:proc-travel 1.2s ease-in-out infinite;}
+.process-steps .step:nth-child(1)::before{animation-delay:0s;}
+.process-steps .step:nth-child(2)::before{animation-delay:1.2s;}
+.process-steps .step:nth-child(3)::before{animation-delay:2.4s;}
+.process-steps .step:nth-child(2) .step-num{animation:proc-node-burst 3.6s ease-in-out infinite 1.2s;}
+.process-steps .step:nth-child(3) .step-num{animation:proc-node-burst 3.6s ease-in-out infinite 2.4s;}
+.process-steps .step:nth-child(4) .step-num{animation:proc-node-burst 3.6s ease-in-out infinite 0s;}
+/* ── RTM pulse ── */
+@keyframes rtm-pulse-travel{0%{transform:scaleX(0);opacity:1;}80%,100%{transform:scaleX(1);opacity:0;}}
+@keyframes rtm-node-hit{0%,44%{box-shadow:none;border-color:rgba(200,169,110,.2);}45%,55%{box-shadow:0 0 0 2px rgba(200,169,110,.8),0 0 28px 4px rgba(200,169,110,.45);border-color:rgba(200,169,110,.9);}70%,100%{box-shadow:none;border-color:rgba(200,169,110,.2);}}
+@keyframes rtm-node-hit2{0%,64%{box-shadow:none;border-color:rgba(200,169,110,.2);}65%,75%{box-shadow:0 0 0 2px rgba(200,169,110,.8),0 0 28px 4px rgba(200,169,110,.45);border-color:rgba(200,169,110,.9);}85%,100%{box-shadow:none;border-color:rgba(200,169,110,.2);}}
+.rtm-edge{position:relative;overflow:visible;}
+.rtm-edge::after{content:'';position:absolute;top:50%;left:0;width:100%;height:2px;margin-top:-1px;background:linear-gradient(90deg,transparent 0%,rgba(200,169,110,.9) 40%,#fff 55%,rgba(200,169,110,.9) 70%,transparent 100%);transform-origin:left center;transform:scaleX(0);animation:rtm-pulse-travel 2.4s ease-in-out infinite;pointer-events:none;border-radius:2px;will-change:transform;}
+.rtm-grid:first-child .rtm-edge:nth-child(2)::after{animation-delay:0s;}
+.rtm-grid:first-child .rtm-edge:nth-child(4)::after{animation-delay:1.2s;}
+.rtm-grid:nth-child(2) .rtm-edge:nth-child(2)::after{animation-delay:2.4s;}
+.rtm-grid:nth-child(2) .rtm-edge:nth-child(4)::after{animation-delay:3.6s;}
+.rtm-grid:first-child .rtm-node:nth-child(3){animation:rtm-node-hit 2.4s ease-in-out infinite 0s;}
+.rtm-grid:first-child .rtm-node:nth-child(5){animation:rtm-node-hit2 2.4s ease-in-out infinite 0s;}
+.rtm-grid:nth-child(2) .rtm-node:nth-child(3){animation:rtm-node-hit 2.4s ease-in-out infinite 2.4s;}
+.rtm-grid:nth-child(2) .rtm-node:nth-child(5){animation:rtm-node-hit2 2.4s ease-in-out infinite 2.4s;}
+/* ── Responsive ── */
+@media(max-width:860px){.hv-5col{grid-template-columns:repeat(3,1fr);}.hv-tl-item{grid-template-columns:1fr;}.hv-tl-period{border-right:none;border-bottom:1px solid rgba(255,255,255,.07);}}
+</style>
 </head>
 <body x-data>
 
   <div id="cinema-backdrop" class="fixed inset-0 z-0 overflow-hidden bg-[#0c0a09] pointer-events-none">
-    <video id="cinema-video" autoplay muted playsinline aria-hidden="true" class="cinema-video">
+    <video id="cinema-video" muted playsinline aria-hidden="true" class="cinema-video">
       <source src="./bg-runway-loop.mp4" type="video/mp4" />
     </video>
     <div class="cinema-mask"></div>
@@ -27,14 +114,43 @@
 
   <div class="locale-shell">
 
-  <div x-data="doors" x-show="!$store.app.doorsOpened" class="fixed inset-0 z-[99998] flex items-center justify-center overflow-hidden">
+  <audio id="curtain-audio" loop preload="auto" style="display:none">
+    <source src="./Saigon_Indigo.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div x-data="doors"
+       x-init="
+         var ca = document.getElementById('curtain-audio');
+         ca.volume = 0.7;
+         var started = false;
+         function startAudio(){
+           if(started) return;
+           started = true;
+           ca.play().catch(function(){});
+         }
+         /* try immediately — works if browser allows */
+         ca.play().then(function(){ started = true; }).catch(function(){});
+         /* fallback: start on any interaction with the entrance */
+         document.addEventListener('click', startAudio, { once: true });
+         document.addEventListener('touchstart', startAudio, { once: true });
+         document.addEventListener('mousemove', startAudio, { once: true });
+         $watch('$store.app.doorsOpened', function(v){
+           if(v){
+             var step = setInterval(function(){
+               if(ca.volume > 0.05){ ca.volume = Math.max(0, ca.volume - 0.05); }
+               else { ca.pause(); ca.currentTime = 0; clearInterval(step); }
+             }, 60);
+           }
+         });
+       "
+       x-show="!$store.app.doorsOpened" class="fixed inset-0 z-[99998] flex items-center justify-center overflow-hidden">
     <div class="absolute top-0 bottom-0 left-0 w-[51%] border-r border-gold/5 transition-transform duration-[2s] ease-[cubic-bezier(0.8,0,0.15,1)]"
          :class="opening && '-translate-x-full'"
-         style="background: repeating-linear-gradient(90deg, rgba(200,169,110,0.01) 0px, rgba(200,169,110,0.01) 1px, transparent 1px, transparent 80px), linear-gradient(180deg, #0a0406, #1a0e12 50%, #0a0406);"></div>
+         style="z-index:2; background: url('./assets/ALpha.jpg') left center / cover no-repeat; box-shadow: inset 0 0 0 9999px rgba(5,2,3,0.88);"></div>
     <div class="absolute top-0 bottom-0 right-0 w-[51%] border-l border-gold/5 transition-transform duration-[2s] ease-[cubic-bezier(0.8,0,0.15,1)]"
          :class="opening && 'translate-x-full'"
-         style="background: repeating-linear-gradient(90deg, rgba(200,169,110,0.01) 0px, rgba(200,169,110,0.01) 1px, transparent 1px, transparent 80px), linear-gradient(180deg, #0a0406, #1a0e12 50%, #0a0406);"></div>
-    <div class="relative z-10 text-center transition-opacity duration-800 px-6" :class="opening && 'opacity-0'" :key="$store.locale.current">
+         style="z-index:2; background: url('./assets/ALpha.jpg') right center / cover no-repeat; box-shadow: inset 0 0 0 9999px rgba(5,2,3,0.88);"></div>
+    <div class="relative text-center transition-opacity duration-800 px-6" style="z-index:3;" :class="opening && 'opacity-0'" :key="$store.locale.current">
       <p class="text-[0.42rem] tracking-[10px] uppercase text-gold/35 mb-4 font-sans" x-text="$store.locale.t('doors.company')"></p>
       <h2 class="text-[clamp(1.4rem,3.5vw,2.6rem)] font-[200] text-gold tracking-wide mb-1.5" x-text="$store.locale.t('doors.title')"></h2>
       <p class="text-[0.8rem] text-white/30 italic mb-10" x-text="$store.locale.t('doors.subtitle')"></p>
@@ -93,6 +209,9 @@
         <li><a href="#products" class="nav-link" x-text="$store.locale.t('nav.products')"></a></li>
         <li><a href="#process" class="nav-link" x-text="$store.locale.t('nav.process')"></a></li>
         <li><a href="#partnership" class="nav-link" x-text="$store.locale.t('nav.partnership')"></a></li>
+        <li><a href="#found" class="nav-link">What We Found</a></li>
+        <li><a href="#certs" class="nav-link">Compliance</a></li>
+        <li><a href="#timeline" class="nav-link">Timeline</a></li>
         <li><a href="#mafi" class="nav-link" x-text="$store.locale.t('nav.financial')"></a></li>
         <li><a href="#contact" class="nav-link" x-text="$store.locale.t('nav.contact')"></a></li>
       </ul>
@@ -118,7 +237,7 @@
             </p>
           </div>
           <div data-reveal class="reveal hero-stats" style="transition-delay:.5s">
-            <div class="stat" x-data="counter" data-target="2" data-suffix="M+"><span class="stat-number" x-text="value">0</span><span class="stat-label" x-text="$store.locale.t('hero.statUnits')"></span></div>
+            <div class="stat" x-data="counter" data-target="1.2" data-suffix="M"><span class="stat-number" x-text="value">0</span><span class="stat-label" x-text="$store.locale.t('hero.statUnits')"></span></div>
             <div class="stat" x-data="counter" data-target="14" data-suffix="B"><span class="stat-number" x-text="value">0</span><span class="stat-label" x-text="$store.locale.t('hero.statMarket')"></span></div>
             <div class="stat" x-data="counter" data-target="38" data-suffix=""><span class="stat-number" x-text="value">0</span><span class="stat-label" x-text="$store.locale.t('hero.statBluezone')"></span></div>
             <div class="stat" x-data="counter" data-target="24" data-suffix="mo"><span class="stat-number" x-text="value">0</span><span class="stat-label" x-text="$store.locale.t('hero.statAlliance')"></span></div>
@@ -202,6 +321,30 @@
         <span class="badge-tag">CSRD</span>
         <span class="badge-tag">GENVIET JEANS</span>
       </div>
+    </section>
+
+    <!-- ═══ WHAT WE FOUND ═══ -->
+    <section id="found" class="section-block hv-new-section">
+      <span class="section-tag">Act II · What We Found</span>
+      <h2 class="hv-s-title">We Did Our Homework</h2>
+      <div class="divider-line"></div>
+      <p class="hv-s-sub">Before we say anything about where you could go — we want to show you exactly what we saw when we looked at where you are.</p>
+      <div class="hv-data-grid hv-5col">
+        <div class="hv-dc"><div class="hv-dn">12,888m²</div><div class="hv-dl">Factory Footprint</div></div>
+        <div class="hv-dc"><div class="hv-dn">863</div><div class="hv-dl">Active Machines</div></div>
+        <div class="hv-dc"><div class="hv-dn">350</div><div class="hv-dl">Skilled Workers</div></div>
+        <div class="hv-dc"><div class="hv-dn">1.2M</div><div class="hv-dl">Pcs / Year Capacity</div></div>
+        <div class="hv-dc"><div class="hv-dn">6</div><div class="hv-dl">Production Lines</div></div>
+      </div>
+      <div class="hv-data-grid hv-5col hv-row2">
+        <div class="hv-dc"><div class="hv-dn">20 yrs</div><div class="hv-dl">Denim Heritage</div></div>
+        <div class="hv-dc"><div class="hv-dn">AQL 1.5</div><div class="hv-dl">Quality Standard</div></div>
+        <div class="hv-dc"><div class="hv-dn">550m³/day</div><div class="hv-dl">MBR Wastewater</div></div>
+        <div class="hv-dc"><div class="hv-dn">70%</div><div class="hv-dl">Already Exported</div></div>
+        <div class="hv-dc hv-dc-warn"><div class="hv-dn">Sept '26</div><div class="hv-dl">WRAP Gold Valid</div></div>
+      </div>
+      <blockquote class="hv-found-quote">"Twenty years. 863 machines. 12,888 square metres. 350 people who come to work every day. A wastewater system that most European factories cannot match. AQL 1.5 — stricter than most brands require.<br><br>This is not a white-label factory. This is a manufacturing house with a 20-year story — and the world hasn't heard it yet."</blockquote>
+      <div class="hv-info-bar"><strong>Infrastructure Verified:</strong> Centralized Class-A MBR wastewater system at 550m³/day. Automated laser-finishing lines. Bio-based enzyme wash, ozone, stone wash — all in-house. Japan-standard inline metal detection. AQL 1.5 (most factories operate AQL 2.5).</div>
     </section>
 
     <section id="markets" class="section-block">
@@ -347,7 +490,7 @@
           <p class="rtm-detail-body" x-text="detail?.body"></p>
         </div>
         <div class="rtm-kpis">
-          <div class="rtm-kpi"><div class="kpi-v">2M</div><div class="kpi-l" x-text="$store.locale.t('rtm.kpiUnits')"></div></div>
+          <div class="rtm-kpi"><div class="kpi-v">1.2M</div><div class="kpi-l" x-text="$store.locale.t('rtm.kpiUnits')"></div></div>
           <div class="rtm-kpi"><div class="kpi-v">200+</div><div class="kpi-l" x-text="$store.locale.t('rtm.kpiBuyers')"></div></div>
           <div class="rtm-kpi"><div class="kpi-v">24mo</div><div class="kpi-l" x-text="$store.locale.t('rtm.kpiTerm')"></div></div>
           <div class="rtm-kpi"><div class="kpi-v">€2.4M+</div><div class="kpi-l" x-text="$store.locale.t('rtm.kpiRevenue')"></div></div>
@@ -389,51 +532,36 @@
       </div>
     </section>
 
-    <section id="certs" class="section-block">
-      <span data-reveal class="reveal section-tag" x-text="$store.locale.t('certs.tag')"></span>
-      <h2 data-reveal class="reveal text-[clamp(1.5rem,3vw,2.5rem)] text-gold leading-tight" style="transition-delay:.15s">
-        <span x-text="$store.locale.t('certs.title')"></span><br><span x-text="$store.locale.t('certs.titleLine2')"></span>
-      </h2>
-      <div data-reveal class="reveal divider-line" style="transition-delay:.15s"></div>
-      <p data-reveal class="reveal max-w-[640px] text-[0.95rem] text-white/50 leading-relaxed" style="transition-delay:.3s" x-text="$store.locale.t('certs.intro')"></p>
-
-      <div class="certs-grid">
-        <div data-reveal class="reveal cert-block" style="transition-delay:.35s">
-          <span class="icon">📊</span>
-          <h3 x-text="$store.locale.t('certs.csrd.title')"></h3>
-          <p x-text="$store.locale.t('certs.csrd.body')"></p>
-        </div>
-        <div data-reveal class="reveal cert-block" style="transition-delay:.45s">
-          <span class="icon">🧪</span>
-          <h3 x-text="$store.locale.t('certs.oeko.title')"></h3>
-          <p x-text="$store.locale.t('certs.oeko.body')"></p>
-        </div>
-        <div data-reveal class="reveal cert-block" style="transition-delay:.55s">
-          <span class="icon">🇺🇸</span>
-          <h3 x-text="$store.locale.t('certs.cotton.title')"></h3>
-          <p x-text="$store.locale.t('certs.cotton.body')"></p>
-        </div>
-        <div data-reveal class="reveal cert-block" style="transition-delay:.65s">
-          <span class="icon">⚗️</span>
-          <h3 x-text="$store.locale.t('certs.reach.title')"></h3>
-          <p x-text="$store.locale.t('certs.reach.body')"></p>
-        </div>
+    <!-- ═══ COMPLIANCE GATES + SCORECARD ═══ -->
+    <section id="certs" class="section-block hv-new-section">
+      <span class="section-tag">Act V · The Distance</span>
+      <h2 class="hv-s-title">The Technical Terrain: Market Gatekeepers</h2>
+      <div class="divider-line"></div>
+      <p class="hv-s-sub">Western retail systems do not buy products — they buy verified compliance architectures. GENVIET is close. These are the four gates ahead — and we have already crossed each of them with other manufacturers.</p>
+      <div class="hv-gates">
+        <div class="hv-gate hv-gate-warn"><div class="hv-gate-tag">Gate 1 · Q3 2026 · Action Critical</div><div class="hv-gate-title">Social Compliance Continuity</div><p>GENVIET holds WRAP Gold (Cert 18216), valid through <strong>Sept 17, 2026</strong>. Because audit loops require 3–5 months, renewal initiates immediately. Parallel onboarding into SEDEX/SMETA 4-Pillar registry clears H&amp;M, Zalando, ASOS-tier portals.</p></div>
+        <div class="hv-gate hv-gate-caution"><div class="hv-gate-tag">Gate 2 · Q4 2026 · Ready for Onboarding</div><div class="hv-gate-title">Chemical Lifecycle Validation</div><p>The Class-A MBR system already exceeds most European benchmarks. Premium German and Nordic buyers require <strong>ZDHC MRSL Level 1</strong> verification. HARVICS structures this submission to unlock the €12+ FOB pricing tier.</p></div>
+        <div class="hv-gate hv-gate-future"><div class="hv-gate-tag">Gate 3 · Q1 2027 · Future Node</div><div class="hv-gate-title">Organic Materials Chain</div><p><strong>GOTS</strong> and <strong>GRS</strong> tracking enables entry into the fastest-growing EU category — sustainable and recycled denim collections with premium price positioning.</p></div>
+        <div class="hv-gate hv-gate-future"><div class="hv-gate-tag">Gate 4 · Q2 2027 · EU Mandate Readiness</div><div class="hv-gate-title">Environmental System &amp; Digital Passport</div><p>EU Digital Product Passport (DPP) legislation mandates full supply-chain telemetry. ISO 14001 embedded throughout 2027 — positioning GENVIET ahead of enforcement.</p></div>
       </div>
-
-      <div class="protocol-grid">
-        <div data-reveal class="reveal protocol-step" style="transition-delay:.4s">
-          <div class="step-num">01</div><h4 x-text="$store.locale.t('certs.p1.title')"></h4><p x-text="$store.locale.t('certs.p1.body')"></p>
-        </div>
-        <div data-reveal class="reveal protocol-step" style="transition-delay:.5s">
-          <div class="step-num">02</div><h4 x-text="$store.locale.t('certs.p2.title')"></h4><p x-text="$store.locale.t('certs.p2.body')"></p>
-        </div>
-        <div data-reveal class="reveal protocol-step" style="transition-delay:.6s">
-          <div class="step-num">03</div><h4 x-text="$store.locale.t('certs.p3.title')"></h4><p x-text="$store.locale.t('certs.p3.body')"></p>
-        </div>
-        <div data-reveal class="reveal protocol-step" style="transition-delay:.7s">
-          <div class="step-num">04</div><h4 x-text="$store.locale.t('certs.p4.title')"></h4><p x-text="$store.locale.t('certs.p4.body')"></p>
-        </div>
+      <div class="hv-score-label">Certification Scorecard — Current vs Target</div>
+      <div class="hv-score-wrap">
+        <table class="hv-cert-table">
+          <thead><tr><th>Certification</th><th>Current Status</th><th>Tier A Requirement</th><th>Priority</th></tr></thead>
+          <tbody>
+            <tr><td><strong>WRAP Gold</strong></td><td>Active · Cert 18216 · Expires Sept 17, 2026</td><td>Renew within 60 days — loss blocks EU access</td><td><span class="hv-badge hv-b-warn">Action Now</span></td></tr>
+            <tr><td><strong>BSCI</strong></td><td>Active</td><td>Unlocks mid-tier EU buyers</td><td><span class="hv-badge hv-b-ok">Active</span></td></tr>
+            <tr><td><strong>Higg Index FEM</strong></td><td>Active</td><td>Required by Scandinavian sustainability brands</td><td><span class="hv-badge hv-b-ok">Active</span></td></tr>
+            <tr><td><strong>ISO 9001</strong></td><td>Holds 2008 version · Obsolete</td><td>Must upgrade to 2015 — EU procurement audit fails on 2008</td><td><span class="hv-badge hv-b-warn">Upgrade Q3</span></td></tr>
+            <tr><td><strong>MBR Wastewater</strong></td><td>Active · Class A · 550m³/day</td><td>Exceeds EU environmental scoring benchmarks</td><td><span class="hv-badge hv-b-ok">Verified</span></td></tr>
+            <tr><td><strong>OEKO-TEX</strong></td><td>Active · Materials level</td><td>Chemical safety — supports EU consumer goods claims</td><td><span class="hv-badge hv-b-ok">Active</span></td></tr>
+            <tr><td><strong>SEDEX / SMETA</strong></td><td>Not registered</td><td>H&amp;M, Zara, ASOS, Zalando cannot onboard without SEDEX</td><td><span class="hv-badge hv-b-miss">Q3 2026</span></td></tr>
+            <tr><td><strong>ZDHC MRSL</strong></td><td>Not submitted</td><td>Unlocks German &amp; Nordic €12+ gate</td><td><span class="hv-badge hv-b-miss">Q4 2026</span></td></tr>
+            <tr><td><strong>GRS / GOTS</strong></td><td>Not yet</td><td>Required for recycled/organic fibre programmes only</td><td><span class="hv-badge hv-b-neu">Year 3</span></td></tr>
+          </tbody>
+        </table>
       </div>
+      <blockquote class="hv-found-quote">"A certification on paper opens the gate. Knowing which buyer is standing on the other side — and having them trust the hand that introduces you — that is what you are hiring."</blockquote>
     </section>
 
     <section id="fit" class="section-block">
@@ -593,6 +721,22 @@
           <div class="next-num"><span>⚠</span></div>
           <div><h3 x-text="$store.locale.t('nextsteps.step4Title')"></h3><p x-text="$store.locale.t('nextsteps.step4Body')"></p></div>
         </div>
+      </div>
+    </section>
+
+    <!-- ═══ 18-MONTH TIMELINE ═══ -->
+    <section id="timeline" class="section-block hv-new-section">
+      <span class="section-tag">Act VI · The Path</span>
+      <h2 class="hv-s-title">18 Months. Managed.</h2>
+      <div class="divider-line"></div>
+      <p class="hv-s-sub">Every milestone is framed as an outcome — not a task. This is a journey Harvics is guiding, not a compliance checklist she manages alone.</p>
+      <div class="hv-timeline">
+        <div class="hv-tl-item"><div class="hv-tl-period"><div class="hv-tp-tag">Immediate</div><div class="hv-tp-months">Month 1–2</div></div><div class="hv-tl-body"><div class="hv-tb-title">Alignment &amp; Parameter Definition</div><p>Joint evaluation. WRAP Gold renewal initiated. ISO 9001:2015 gap assessment launched. Target buyer list prepared.</p><span class="hv-tb-outcome">→ Harvics holds a confirmed buyer shortlist</span></div></div>
+        <div class="hv-tl-item"><div class="hv-tl-period"><div class="hv-tp-tag">July 2026</div><div class="hv-tp-months">Month 3</div></div><div class="hv-tl-body"><div class="hv-tb-title">Bluezone Munich — July 21–23, 2026</div><p>Harvics manages and completely funds the operational footprint. 200+ pre-mapped accounts. No cost, no travel, no risk to the factory.</p><span class="hv-tb-outcome">→ First qualified EU buyer sample requests received</span></div></div>
+        <div class="hv-tl-item"><div class="hv-tl-period"><div class="hv-tp-tag">Q3 2026</div><div class="hv-tp-months">Month 4–6</div></div><div class="hv-tl-body"><div class="hv-tb-title">First Compliance Gate Cleared</div><p>SEDEX/SMETA registration complete. WRAP Gold renewal submitted. Sample loops with 3 pre-qualified EU accounts initiated.</p><span class="hv-tb-outcome">→ 3 EU buyers in active sample development</span></div></div>
+        <div class="hv-tl-item"><div class="hv-tl-period"><div class="hv-tp-tag">Q4 2026</div><div class="hv-tp-months">Month 6–9</div></div><div class="hv-tl-body"><div class="hv-tb-title">Pilot Orders — First EU Revenue</div><p>30,000 units under 2-year forward contracts at €10 FOB. ISO 9001:2015 complete. ZDHC MRSL submitted.</p><span class="hv-tb-outcome">→ €300,000 Year 1 EU revenue · Under signed contract</span></div></div>
+        <div class="hv-tl-item"><div class="hv-tl-period"><div class="hv-tp-tag">Q1 2027</div><div class="hv-tp-months">Month 10–12</div></div><div class="hv-tl-body"><div class="hv-tb-title">Scandinavian Entry</div><p>ZDHC clearance complete. First Scandinavian buyer meetings activated in Sweden, Norway, Denmark.</p><span class="hv-tb-outcome">→ First Scandinavian buyer meeting confirmed</span></div></div>
+        <div class="hv-tl-item"><div class="hv-tl-period"><div class="hv-tp-tag">2027</div><div class="hv-tp-months">Month 12–18</div></div><div class="hv-tl-body"><div class="hv-tb-title">SS 2027 — Full Sovereign Launch</div><p>100,000 units EU programme active. LDP logistics structures live for Nordic partners. Americas pilot initiated.</p><span class="hv-tb-outcome">→ ~€2.1M cumulative 24-month EU programme revenue</span></div></div>
       </div>
     </section>
 
@@ -934,5 +1078,20 @@
 
   </div>
 
+<script>
+document.querySelectorAll('.hv-dc').forEach(function(cell) {
+  cell.addEventListener('mousemove', function(e) {
+    var r = cell.getBoundingClientRect();
+    cell.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
+    cell.style.setProperty('--my', ((e.clientY - r.top)  / r.height * 100).toFixed(1) + '%');
+  });
+  cell.addEventListener('mouseenter', function() {
+    cell.classList.remove('flashing');
+    void cell.offsetWidth;
+    cell.classList.add('flashing');
+    cell.addEventListener('animationend', function() { cell.classList.remove('flashing'); }, { once: true });
+  });
+});
+</script>
 </body>
 </html>
