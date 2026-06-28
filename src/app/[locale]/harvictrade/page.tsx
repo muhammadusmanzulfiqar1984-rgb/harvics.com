@@ -1,12 +1,12 @@
-// Header and Footer are provided by layout.tsx - DO NOT import them here
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { generateLocalizedMetadata } from '@/lib/seo'
-import AnimatedStats from '@/components/ui/AnimatedStats'
 import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
+import HarvicTradeSearch from '@/components/harvictrade/HarvicTradeSearch'
+import HarvicTradeTabs from '@/components/harvictrade/HarvicTradeTabs'
+import { ALL_PRODUCTS, CATEGORY_META } from '@/data/harvictrade-products'
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params
+
+export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'HarvicTrade — Global B2B Marketplace | Harvics',
     description: 'Source products from verified suppliers across 42+ countries. FMCG, textiles, commodities, industrial — all on one platform.',
@@ -17,239 +17,228 @@ export async function generateStaticParams() {
   return generateAllLocaleParams()
 }
 
+const FEATURED = ALL_PRODUCTS.filter(p =>
+  ['Premium Basmati Rice 1121 Sella', 'Hi-Vis Safety Jacket EN20471 Class 3',
+   'Extra Virgin Olive Oil — 1L Glass', 'Combed Cotton T-Shirt 180 GSM',
+   'Copper Cathode Grade A — LME Registered', 'Diesel EN590 10ppm — FOB',
+   'ICUMSA 45 White Refined Sugar', 'Portland Cement 42.5N — Bulk'].includes(p.name)
+)
+
+const TRUST = [
+  { label: 'Trade Assurance', desc: 'Escrow-protected transactions. Payment released only on confirmed delivery.' },
+  { label: 'Verified Suppliers', desc: 'Business licence, factory audit, and trade references checked on every supplier.' },
+  { label: 'AI Matching', desc: 'Our engine matches RFQs to the best-fit supplier on price, lead time, and reliability.' },
+  { label: 'Global Logistics', desc: '42+ country network. Freight forwarding, customs clearance, and documentation included.' },
+]
+
+const HOW = [
+  { n: '01', t: 'Browse & Search', d: 'Explore 1,185+ products. Filter by origin, MOQ, certification, and Incoterms.' },
+  { n: '02', t: 'Submit RFQ', d: 'Request a quote from verified suppliers. Specify quantity, delivery, and timeline.' },
+  { n: '03', t: 'Compare & Negotiate', d: 'Receive competitive quotes. AI suggests best supplier match for your requirements.' },
+  { n: '04', t: 'Trade Securely', d: 'Execute orders via Harvics — escrow, LC/TT, and end-to-end shipment tracking.' },
+]
+
 export default async function HarvicTradePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
 
-  const categories = [
-    { icon: '🧵', name: 'Textiles & Apparel', count: '2,400+', href: `/${locale}/harvictrade/category/textiles`, desc: 'Cotton, polyester, workwear, fashion basics, home textiles' },
-    { icon: '🛒', name: 'FMCG & Food', count: '3,100+', href: `/${locale}/harvictrade/category/fmcg`, desc: 'Snacks, beverages, sauces, confectionery, personal care' },
-    { icon: '📦', name: 'Commodities', count: '850+', href: `/${locale}/harvictrade/category/commodities`, desc: 'Rice, sugar, wheat, edible oils, pulses, spices' },
-    { icon: '🏭', name: 'Industrial & PPE', count: '1,200+', href: `/${locale}/harvictrade/category/industrial`, desc: 'Safety equipment, chemicals, machinery, MRO supplies' },
-    { icon: '⛏️', name: 'Minerals & Metals', count: '420+', href: `/${locale}/harvictrade/category/minerals`, desc: 'Iron ore, copper, zinc, precious metals, aggregates' },
-    { icon: '🛢️', name: 'Oil, Gas & Energy', count: '180+', href: `/${locale}/harvictrade/category/energy`, desc: 'Crude, refined products, LPG, lubricants, petrochemicals' },
-  ]
-
-  const stats = [
-    { num: '1,185+', label: 'Products Listed' },
-    { num: '42+', label: 'Source Countries' },
-    { num: '1,200+', label: 'Verified Suppliers' },
-    { num: '42+', label: 'Buyer Countries' },
-  ]
-
-  const featuredProducts = [
-    { name: 'Premium Basmati Rice 1121', origin: 'Pakistan', moq: '25 MT', price: '$850–950/MT', category: 'Commodities', verified: true },
-    { name: 'Hi-Vis Safety Jacket EN20471', origin: 'Turkey', moq: '500 pcs', price: '$8.50–12.00', category: 'Industrial', verified: true },
-    { name: 'Organic Extra Virgin Olive Oil', origin: 'Spain', moq: '1 pallet', price: '$4.20–5.80/L', category: 'FMCG', verified: true },
-    { name: 'Combed Cotton T-Shirts 180 GSM', origin: 'Bangladesh', moq: '1,000 pcs', price: '$2.80–4.50', category: 'Textiles', verified: true },
-    { name: 'Wafer Bar Assortment — Private Label', origin: 'Spain', moq: '500 cartons', price: '$0.35–0.55/unit', category: 'FMCG', verified: true },
-    { name: 'Portland Cement 42.5N — Bulk', origin: 'UAE', moq: '100 MT', price: '$62–78/MT', category: 'Industrial', verified: true },
-    { name: 'Cold Pressed Coconut Oil', origin: 'Sri Lanka', moq: '5 MT', price: '$1,800–2,200/MT', category: 'Commodities', verified: true },
-    { name: 'FR Coverall — NFPA 2112', origin: 'Pakistan', moq: '300 pcs', price: '$18–28', category: 'Textiles', verified: true },
-  ]
-
-  const howItWorks = [
-    { step: '01', title: 'Browse & Search', desc: 'Explore 1,185+ products across 10 industry categories. Filter by origin, MOQ, certification, and delivery terms.' },
-    { step: '02', title: 'Send RFQ', desc: 'Request a quote directly from verified suppliers. Specify your quantity, delivery location, Incoterms, and timeline.' },
-    { step: '03', title: 'Compare & Negotiate', desc: 'Receive competitive quotes. Our AI suggests the best supplier match based on price, lead time, and reliability score.' },
-    { step: '04', title: 'Trade Securely', desc: 'Execute orders through Harvics — protected by escrow, trade finance (LC/TT), and end-to-end shipment tracking.' },
-  ]
-
   return (
-    <main className="min-h-screen" style={{ background: '#ffffff' }}>
-      <div className="pt-20">
+    <HarvicTradeTabs locale={locale}>
+    <main className="min-h-screen bg-white">
+      <div>
 
-        {/* ═══════ HERO ═══════ */}
-        <section className="relative bg-gradient-to-br from-[#6B1F2B] via-[#5a1a24] to-[#4a1520] py-24 md:py-32 px-4 overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 right-0 w-[600px] h-[600px] opacity-[0.06]"
-              style={{ background: 'radial-gradient(circle, #C3A35E 0%, transparent 65%)' }} />
-            <div className="absolute inset-0 opacity-[0.03]"
-              style={{
-                backgroundImage: 'linear-gradient(rgba(195,163,94,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(195,163,94,0.5) 1px, transparent 1px)',
-                backgroundSize: '60px 60px',
-              }} />
-          </div>
-          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#C3A35E]/40 to-transparent" />
+        {/* ══ HERO ══════════════════════════════════════════════════════ */}
+        <section className="relative bg-[#0D0D0D] py-28 md:py-36 px-4 overflow-hidden">
+          {/* Subtle grid texture */}
+          <div className="absolute inset-0 pointer-events-none opacity-[0.04]"
+            style={{
+              backgroundImage: 'linear-gradient(rgba(195,163,94,1) 1px, transparent 1px), linear-gradient(90deg, rgba(195,163,94,1) 1px, transparent 1px)',
+              backgroundSize: '80px 80px',
+            }} />
+          {/* Radial accent */}
+          <div className="absolute top-0 right-1/4 w-[800px] h-[800px] opacity-[0.05] pointer-events-none"
+            style={{ background: 'radial-gradient(circle, #C3A35E 0%, transparent 60%)' }} />
 
-          <div className="relative z-10 max-w-[1200px] mx-auto text-center">
-            <span className="inline-block text-xs font-bold text-[#C3A35E] uppercase tracking-[0.25em] mb-5 border border-[#C3A35E]/30 px-4 py-1.5">
-              ◆ HarvicTrade — Global B2B Marketplace
-            </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style={{ letterSpacing: '-0.03em' }}>
-              Source. Trade. Scale.<br />
-              <span className="text-[#C3A35E]">Across 42+ Countries.</span>
+          <div className="relative z-10 max-w-[1100px] mx-auto text-center">
+            <p className="text-[10px] font-bold text-[#C3A35E]/60 uppercase tracking-[0.35em] mb-6">
+              Harvics Global Ventures &nbsp;·&nbsp; HarvicTrade
+            </p>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.04]" style={{ letterSpacing: '-0.04em' }}>
+              Source. Trade. Scale.
             </h1>
-            <p className="text-lg text-white/50 max-w-2xl mx-auto leading-relaxed mb-10">
-              The enterprise B2B marketplace by Harvics Global Ventures. Verified suppliers, AI-matched sourcing, trade finance, and end-to-end logistics — all on one platform.
+            <p className="text-lg text-white/35 max-w-xl mx-auto leading-relaxed mb-12">
+              The enterprise B2B marketplace for verified global trade. 1,185+ products. 42+ countries. One platform.
             </p>
 
-            {/* Search Bar */}
-            <div className="max-w-[700px] mx-auto">
-              <div className="flex bg-white overflow-hidden">
-                <input
-                  type="text"
-                  placeholder="Search products, suppliers, or categories..."
-                  className="flex-1 px-6 py-4 text-[#6B1F2B] placeholder-[#6B1F2B]/40 text-base focus:outline-none"
-                  readOnly
-                />
-                <button className="px-8 bg-[#C3A35E] text-[#6B1F2B] font-bold text-sm uppercase tracking-wider hover:bg-[#d4b46e] transition-colors">
-                  Search
-                </button>
-              </div>
-              <div className="flex flex-wrap justify-center gap-2 mt-4">
-                {['Basmati Rice', 'Safety Equipment', 'Cotton T-Shirts', 'Olive Oil', 'Workwear'].map((tag) => (
-                  <span key={tag} className="text-xs text-white/40 border border-white/15 px-3 py-1 hover:border-[#C3A35E]/50 hover:text-[#C3A35E] cursor-pointer transition-colors">{tag}</span>
-                ))}
-              </div>
+            <HarvicTradeSearch locale={locale} />
+
+            {/* Quick tags */}
+            <div className="flex flex-wrap justify-center gap-2 mt-5">
+              {['Basmati Rice', 'Safety Equipment', 'Denim Fabric', 'Olive Oil', 'Copper Cathode', 'Diesel EN590'].map(tag => (
+                <span key={tag}
+                  className="text-[10px] text-white/30 border border-white/10 px-3 py-1 hover:border-[#C3A35E]/40 hover:text-[#C3A35E]/70 cursor-pointer transition-colors tracking-wider">
+                  {tag}
+                </span>
+              ))}
             </div>
-          </div>
-
-          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C3A35E]/30 to-transparent" />
-        </section>
-
-        {/* ═══════ STATS BAR ═══════ */}
-        <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
-          <div className="max-w-[1200px] mx-auto px-4 py-5">
-            <AnimatedStats
-              stats={stats}
-              numClassName="text-xl md:text-2xl font-bold text-[#C3A35E]"
-              containerClassName="grid grid-cols-2 md:grid-cols-4 gap-4 text-center"
-            />
           </div>
         </section>
 
-        {/* ═══════ CATEGORIES ═══════ */}
-        <section className="max-w-[1200px] mx-auto px-4 py-16">
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center gap-2 mb-3">
-              <div className="w-6 h-[2px] bg-[#C3A35E]/50" />
-              <span className="text-xs font-bold text-[#C3A35E] uppercase tracking-[0.2em]">Browse Categories</span>
-              <div className="w-6 h-[2px] bg-[#C3A35E]/50" />
+        {/* ══ STATS ═════════════════════════════════════════════════════ */}
+        <section className="border-b border-[#C3A35E]/12">
+          <div className="max-w-[1100px] mx-auto px-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-[#C3A35E]/12">
+              {[
+                { n: '1,185+', l: 'Products Listed' },
+                { n: '42+', l: 'Source Countries' },
+                { n: '1,200+', l: 'Verified Suppliers' },
+                { n: '24 hrs', l: 'Quote Turnaround' },
+              ].map(s => (
+                <div key={s.l} className="py-7 px-8 text-center">
+                  <div className="text-2xl font-bold text-[#1A0505] mb-0.5" style={{ letterSpacing: '-0.03em' }}>{s.n}</div>
+                  <div className="text-[10px] text-[#1A0505]/40 uppercase tracking-[0.18em]">{s.l}</div>
+                </div>
+              ))}
             </div>
-            <h2 className="text-3xl font-bold text-[#6B1F2B]" style={{ letterSpacing: '-0.02em' }}>
-              10 Industry Verticals. 1,185+ Products.
+          </div>
+        </section>
+
+        {/* ══ CATEGORIES ════════════════════════════════════════════════ */}
+        <section className="max-w-[1100px] mx-auto px-4 py-20">
+          <div className="mb-12">
+            <p className="text-[10px] font-bold text-[#C3A35E] uppercase tracking-[0.28em] mb-3">Browse Categories</p>
+            <h2 className="text-3xl font-bold text-[#1A0505]" style={{ letterSpacing: '-0.025em' }}>
+              Six Verticals. One Platform.
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {categories.map((cat) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#C3A35E]/10">
+            {CATEGORY_META.map((cat) => (
               <Link
-                key={cat.name}
-                href={cat.href}
-                className="group bg-white border border-[#C3A35E]/15 p-8 overflow-hidden transition-all duration-300 hover:border-[#C3A35E]/50"
+                key={cat.slug}
+                href={`/${locale}/harvictrade/category/${cat.slug}`}
+                className="group bg-white p-10 hover:bg-[#F5F0E8] transition-colors relative overflow-hidden"
               >
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#C3A35E] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="text-3xl group-hover:scale-110 transition-transform duration-300">{cat.icon}</span>
-                  <div>
-                    <h3 className="text-lg font-semibold text-[#6B1F2B] group-hover:text-[#C3A35E] transition-colors">{cat.name}</h3>
-                    <span className="text-xs text-[#C3A35E] font-bold">{cat.count} products</span>
+                <div className="absolute top-0 left-0 w-[2px] h-0 bg-[#1A0505] group-hover:h-full transition-all duration-300" />
+                <div className="flex items-start justify-between mb-6">
+                  <div className="w-10 h-10 border border-[#1A0505]/15 flex items-center justify-center group-hover:border-[#1A0505]/40 transition-colors">
+                    <span className="text-[11px] font-bold text-[#1A0505]/50 tracking-widest group-hover:text-[#1A0505] transition-colors">{cat.abbr}</span>
                   </div>
+                  <span className="text-[10px] font-bold text-[#C3A35E] tracking-wider">{cat.count}</span>
                 </div>
-                <p className="text-sm text-[#6B1F2B]/50 leading-relaxed">{cat.desc}</p>
+                <h3 className="text-base font-bold text-[#1A0505] mb-2 group-hover:text-[#1A0505] transition-colors">{cat.name}</h3>
+                <p className="text-xs text-[#1A0505]/45 leading-relaxed">{cat.desc}</p>
+                <div className="mt-6 text-[10px] font-bold text-[#1A0505]/30 uppercase tracking-[0.18em] group-hover:text-[#C3A35E] transition-colors">
+                  Browse →
+                </div>
               </Link>
             ))}
           </div>
         </section>
 
-        {/* ═══════ FEATURED PRODUCTS ═══════ */}
-        <section className="bg-white border-t border-b border-[#C3A35E]/15 py-16 px-4">
-          <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-12">
-              <div className="flex items-center justify-center gap-2 mb-3">
-                <div className="w-6 h-[2px] bg-[#C3A35E]/50" />
-                <span className="text-xs font-bold text-[#C3A35E] uppercase tracking-[0.2em]">Featured Listings</span>
-                <div className="w-6 h-[2px] bg-[#C3A35E]/50" />
+        {/* ══ FEATURED PRODUCTS ═════════════════════════════════════════ */}
+        <section className="bg-[#faf8f5] border-t border-b border-[#C3A35E]/10 py-20 px-4">
+          <div className="max-w-[1100px] mx-auto">
+            <div className="flex items-end justify-between mb-12">
+              <div>
+                <p className="text-[10px] font-bold text-[#C3A35E] uppercase tracking-[0.28em] mb-3">Featured Listings</p>
+                <h2 className="text-3xl font-bold text-[#1A0505]" style={{ letterSpacing: '-0.025em' }}>Top Products</h2>
               </div>
-              <h2 className="text-3xl font-bold text-[#6B1F2B]" style={{ letterSpacing: '-0.02em' }}>Top Products This Week</h2>
+              <Link href={`/${locale}/harvictrade/rfq`}
+                className="hidden md:block text-xs font-bold text-[#1A0505]/50 uppercase tracking-[0.18em] hover:text-[#1A0505] transition-colors">
+                Submit Custom RFQ →
+              </Link>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {featuredProducts.map((p) => (
-                <div key={p.name} className="bg-white border border-[#C3A35E]/15 p-6 hover:border-[#C3A35E] transition-colors group cursor-pointer">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-[10px] font-bold text-[#C3A35E] bg-[#C3A35E]/10 px-2 py-0.5 uppercase tracking-wider">{p.category}</span>
-                    {p.verified && <span className="text-[10px] font-bold text-green-600 bg-green-50 px-2 py-0.5">✓ Verified</span>}
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-[#C3A35E]/10">
+              {FEATURED.map(p => (
+                <Link
+                  key={p.name}
+                  href={`/${locale}/harvictrade/rfq?product=${encodeURIComponent(p.name)}&category=${encodeURIComponent(p.category)}`}
+                  className="group bg-white p-7 hover:bg-[#F5F0E8] transition-colors"
+                >
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-[9px] font-bold text-[#C3A35E] bg-[#C3A35E]/10 px-2 py-0.5 uppercase tracking-wider">{p.categorySlug.toUpperCase()}</span>
+                    {p.verified && <span className="text-[9px] font-bold text-emerald-600">✓ Verified</span>}
                   </div>
-                  <h3 className="text-sm font-semibold text-[#6B1F2B] mb-2 leading-snug group-hover:text-[#C3A35E] transition-colors">{p.name}</h3>
-                  <div className="space-y-1.5 text-xs text-[#6B1F2B]/50">
-                    <div className="flex justify-between"><span>Origin</span><span className="font-semibold text-[#6B1F2B]">{p.origin}</span></div>
-                    <div className="flex justify-between"><span>MOQ</span><span className="font-semibold text-[#6B1F2B]">{p.moq}</span></div>
+                  <h3 className="text-sm font-semibold text-[#1A0505] mb-4 leading-snug group-hover:text-[#1A0505] transition-colors min-h-[2.8rem]">{p.name}</h3>
+                  <div className="space-y-1.5 text-[11px] text-[#1A0505]/40 mb-4">
+                    <div className="flex justify-between">
+                      <span>Origin</span>
+                      <span className="font-semibold text-[#1A0505]/70">{p.origin}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>MOQ</span>
+                      <span className="font-semibold text-[#1A0505]/70">{p.moq}</span>
+                    </div>
                   </div>
-                  <div className="mt-4 pt-3 border-t border-[#C3A35E]/10">
-                    <div className="text-base font-bold text-[#6B1F2B]">{p.price}</div>
+                  <div className="pt-3 border-t border-[#C3A35E]/10 flex items-center justify-between">
+                    <div className="text-sm font-bold text-[#1A0505]">{p.price}</div>
+                    <span className="text-[9px] font-bold text-[#1A0505]/30 uppercase tracking-wider group-hover:text-[#C3A35E] transition-colors">RFQ →</span>
                   </div>
-                  <button className="w-full mt-4 py-2.5 bg-[#6B1F2B] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#5a1a24] transition-colors">
-                    Request Quote
-                  </button>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
         </section>
 
-        {/* ═══════ HOW IT WORKS ═══════ */}
-        <section className="max-w-[1200px] mx-auto px-4 py-16">
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center gap-2 mb-3">
-              <div className="w-6 h-[2px] bg-[#C3A35E]/50" />
-              <span className="text-xs font-bold text-[#C3A35E] uppercase tracking-[0.2em]">How It Works</span>
-              <div className="w-6 h-[2px] bg-[#C3A35E]/50" />
-            </div>
-            <h2 className="text-3xl font-bold text-[#6B1F2B]" style={{ letterSpacing: '-0.02em' }}>From Search to Shipment</h2>
+        {/* ══ HOW IT WORKS ══════════════════════════════════════════════ */}
+        <section className="max-w-[1100px] mx-auto px-4 py-20">
+          <div className="mb-14">
+            <p className="text-[10px] font-bold text-[#C3A35E] uppercase tracking-[0.28em] mb-3">Process</p>
+            <h2 className="text-3xl font-bold text-[#1A0505]" style={{ letterSpacing: '-0.025em' }}>From Search to Shipment</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            {howItWorks.map((s) => (
-              <div key={s.step} className="text-center">
-                <div className="w-16 h-16 bg-[#6B1F2B] flex items-center justify-center mx-auto mb-4">
-                  <span className="text-[#C3A35E] font-bold text-lg">{s.step}</span>
-                </div>
-                <h3 className="text-base font-bold text-[#6B1F2B] mb-2">{s.title}</h3>
-                <p className="text-sm text-[#6B1F2B]/50 leading-relaxed">{s.desc}</p>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border border-[#C3A35E]/12">
+            {HOW.map((s, i) => (
+              <div key={s.n} className={`p-10 ${i < 3 ? 'border-b md:border-b-0 md:border-r border-[#C3A35E]/12' : ''}`}>
+                <div className="text-3xl font-bold text-[#C3A35E]/20 mb-6" style={{ letterSpacing: '-0.04em' }}>{s.n}</div>
+                <h3 className="text-sm font-bold text-[#1A0505] mb-3">{s.t}</h3>
+                <p className="text-xs text-[#1A0505]/45 leading-relaxed">{s.d}</p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* ═══════ TRUST BAR ═══════ */}
-        <section className="bg-[#6B1F2B] py-16 px-4">
-          <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-10">
-              <h2 className="text-2xl font-bold text-white mb-3" style={{ letterSpacing: '-0.02em' }}>Why Trade on HarvicTrade?</h2>
-              <p className="text-white/40 max-w-xl mx-auto text-sm">Enterprise-grade infrastructure for serious B2B buyers and sellers.</p>
+        {/* ══ TRUST ═════════════════════════════════════════════════════ */}
+        <section className="bg-[#0D0D0D] py-20 px-4">
+          <div className="max-w-[1100px] mx-auto">
+            <div className="mb-14 text-center">
+              <p className="text-[10px] font-bold text-[#C3A35E]/60 uppercase tracking-[0.28em] mb-3">Why HarvicTrade</p>
+              <h2 className="text-3xl font-bold text-white" style={{ letterSpacing: '-0.025em' }}>
+                Enterprise-grade infrastructure<br />for serious global trade.
+              </h2>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {[
-                { icon: '🔒', title: 'Trade Assurance', desc: 'Escrow protection on every transaction. Your payment is released only on confirmed delivery.' },
-                { icon: '🧠', title: 'AI-Matched Sourcing', desc: 'Our AI recommends the best suppliers based on price, reliability, lead time, and your history.' },
-                { icon: '📋', title: 'Verified Suppliers', desc: 'Every supplier is verified — business license, factory audit, and trade references checked.' },
-                { icon: '🌍', title: 'Global Logistics', desc: 'Integrated shipping across 42+ countries. Real-time tracking, customs clearance, and documentation.' },
-              ].map((t) => (
-                <div key={t.title} className="text-center">
-                  <div className="text-3xl mb-3">{t.icon}</div>
-                  <h3 className="text-sm font-bold text-[#C3A35E] mb-2">{t.title}</h3>
-                  <p className="text-xs text-white/40 leading-relaxed">{t.desc}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5">
+              {TRUST.map(t => (
+                <div key={t.label} className="bg-[#0D0D0D] p-10">
+                  <div className="w-6 h-[2px] bg-[#C3A35E]/40 mb-6" />
+                  <h3 className="text-sm font-bold text-white mb-3">{t.label}</h3>
+                  <p className="text-xs text-white/30 leading-relaxed">{t.desc}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* ═══════ CTA ═══════ */}
-        <section className="py-16 px-4">
-          <div className="max-w-[800px] mx-auto text-center">
-            <h2 className="text-3xl font-bold text-[#6B1F2B] mb-4" style={{ letterSpacing: '-0.02em' }}>
+        {/* ══ CTA ═══════════════════════════════════════════════════════ */}
+        <section className="py-24 px-4">
+          <div className="max-w-[700px] mx-auto text-center">
+            <h2 className="text-4xl font-bold text-[#1A0505] mb-5" style={{ letterSpacing: '-0.03em' }}>
               Ready to Source Globally?
             </h2>
-            <p className="text-[#6B1F2B]/50 mb-8 max-w-xl mx-auto">
-              Join 1,200+ verified suppliers and thousands of buyers trading on HarvicTrade. Register now to post your first RFQ.
+            <p className="text-[#1A0505]/50 mb-10 max-w-md mx-auto text-sm leading-relaxed">
+              Join 1,200+ verified suppliers and buyers on HarvicTrade. Register free and submit your first RFQ today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href={`/${locale}/harvictrade/register`}
-                className="px-8 py-4 bg-[#6B1F2B] text-white font-bold text-sm uppercase tracking-wider hover:bg-[#5a1a24] transition-colors">
+                className="px-10 py-4 bg-[#1A0505] text-white font-bold text-xs uppercase tracking-[0.18em] hover:bg-[#0d0303] transition-colors">
                 Register as Buyer
               </Link>
               <Link href={`/${locale}/harvictrade/sell`}
-                className="px-8 py-4 bg-[#C3A35E] text-[#6B1F2B] font-bold text-sm uppercase tracking-wider hover:bg-[#d4b46e] transition-colors">
+                className="px-10 py-4 border border-[#C3A35E]/40 text-[#1A0505] font-bold text-xs uppercase tracking-[0.18em] hover:bg-[#C3A35E]/8 transition-colors">
                 Sell on HarvicTrade
+              </Link>
+              <Link href={`/${locale}/harvictrade/rfq`}
+                className="px-10 py-4 bg-[#C3A35E] text-[#1A0505] font-bold text-xs uppercase tracking-[0.18em] hover:bg-[#d4b46e] transition-colors">
+                Submit RFQ
               </Link>
             </div>
           </div>
@@ -257,5 +246,6 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
 
       </div>
     </main>
+    </HarvicTradeTabs>
   )
 }

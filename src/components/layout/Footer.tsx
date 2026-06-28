@@ -142,7 +142,7 @@ const Footer: React.FC = () => {
       </section>
 
       {/* ============ F2 — SITEMAP ON BURGUNDY ============ */}
-      <section style={{ background: '#1A0505', color: 'rgba(245,240,232,0.85)', padding: '48px 0 40px', borderTop: '1px solid rgba(201,168,76,0.2)' }}>
+      <section style={{ background: '#3D1212', color: 'rgba(245,240,232,0.85)', padding: '48px 0 40px', borderTop: '1px solid rgba(201,168,76,0.2)' }}>
         <div className="universal-layout-frame px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10" style={{ gridTemplateColumns: 'minmax(0, 1.5fr) repeat(4, minmax(0, 1fr))' }}>
 
@@ -228,7 +228,7 @@ const Footer: React.FC = () => {
       </section>
 
       {/* ============ F3 — CERTIFICATIONS ON DARKER BURGUNDY ============ */}
-      <section style={{ background: '#0d0303', padding: '18px 0', borderTop: '1px solid rgba(201,168,76,0.18)' }}>
+      <section style={{ background: '#2D0A0A', padding: '18px 0', borderTop: '1px solid rgba(201,168,76,0.18)' }}>
         <div className="universal-layout-frame px-4 sm:px-6 lg:px-8" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 0, flexWrap: 'wrap' }}>
           <span style={{ fontSize: '9px', letterSpacing: '0.32em', textTransform: 'uppercase', color: '#C3A35E', fontWeight: 700, paddingRight: '24px', borderRight: '1px solid rgba(201,168,76,0.2)' }}>
             {tt('certifiedAudited', 'Certified & Audited')}

@@ -1,9 +1,9 @@
 :root {
 	/* Brand accents — burgundy/cream/gold only (HARVICS_SYSTEM_RULES) */
-	--harvics-maroon: #1A0505;
+	--harvics-maroon: #3D1212;
 	--harvics-gold: #C3A35E;
 	/* Dark surfaces — for backgrounds */
-	--harvics-burgundy: #1A0505;
+	--harvics-burgundy: #3D1212;
 	--harvics-dark: #0D0D0D;
 	/* Light surfaces */
 	--harvics-cream: #F5F0E8;

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="color-scheme" content="only light" />
+<title>Harvoice</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="grid">
+
+    <!-- LEFT : DATA INTELLIGENCE -->
+    <aside class="panel panel--light left">
+      <header class="panel-head">
+        <span class="eyebrow">Data Intelligence</span>
+        <span class="head-meta" id="leadHeadMeta">0 leads</span>
+      </header>
+
+      <section class="metrics">
+        <div class="metric-row">
+          <span class="metric-label">Total Leads</span>
+          <strong class="metric-value" id="kpiTotal">0</strong>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Qualified</span>
+          <strong class="metric-value" id="kpiQualified">0</strong>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Needs Follow-up</span>
+          <strong class="metric-value" id="kpiFollow">0</strong>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3 class="block-title">Incoming Queue</h3>
+        <div id="leadQueue" class="queue"></div>
+      </section>
+
+      <section class="block">
+        <h3 class="block-title">Latest Lead</h3>
+        <div class="lead-card">
+          <div id="leadSummaryText" class="muted">No lead selected yet.</div>
+        </div>
+      </section>
+    </aside>
+
+    <!-- CENTER : SOVEREIGN CHAT -->
+    <section class="panel panel--dark center">
+      <header class="panel-head center-head">
+        <span class="eyebrow eyebrow--light">Harvoice</span>
+      </header>
+
+      <div id="chat" class="chat"></div>
+
+      <div class="composer-wrap">
+        <div class="composer">
+          <input id="textInput" class="composer-input" type="text" placeholder="Message Harvoice" autocomplete="off" />
+          <button id="sendBtn" class="send-btn">Send</button>
+        </div>
+        <div class="ghost-controls">
+          <button id="micBtn" class="ghost-btn">
+            <span id="micLabel">Start hands-free</span>
+          </button>
+          <button id="stopBtn" class="ghost-btn">Stop voice</button>
+          <button id="clearBtn" class="ghost-btn">Clear</button>
+          <button id="testVoiceBtn" class="ghost-btn">Test voice</button>
+          <span id="status" class="ghost-status">Ready</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIGHT : OUTREACH CONSOLE -->
+    <aside class="panel panel--light right">
+      <header class="panel-head">
+        <span class="eyebrow">Outreach Console</span>
+        <span class="head-meta" id="outreachHeadMeta">0 drafts</span>
+      </header>
+
+      <section class="block">
+        <div id="outreachList" class="outreach-list">
+          <div class="outreach-item muted">No drafts yet.</div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="channel-grid">
+          <button class="action-btn">WhatsApp</button>
+          <button class="action-btn">Instagram</button>
+          <button class="action-btn">LinkedIn</button>
+          <button class="action-btn">Email</button>
+        </div>
+      </section>
+
+      <!-- Spam Test Panel -->
+      <section class="block" id="spamTestBlock">
+        <div class="eyebrow" style="margin-bottom:8px">Email Spam Score Test</div>
+        <div style="font-size:12px;color:#888;margin-bottom:10px">
+          Get a test address from <a href="https://www.mail-tester.com" target="_blank" style="color:#C3A35E">mail-tester.com</a>, paste it below, then send.
+        </div>
+        <div style="display:flex;gap:8px;margin-bottom:8px">
+          <input id="spamTestAddress" class="composer-input" style="flex:1;font-size:13px;padding:7px 10px"
+            type="email" placeholder="test-xyz@srv1.mail-tester.com" autocomplete="off"/>
+          <button id="spamTestBtn" class="send-btn" style="white-space:nowrap">Test Spam</button>
+        </div>
+        <div id="spamTestResult" style="font-size:12px;color:#888;min-height:18px"></div>
+      </section>
+
+      <section class="block">
+        <h3 class="block-title">Library Access</h3>
+        <div class="library-actions">
+          <button id="loadSourcesBtn" class="action-btn">Sources</button>
+          <button id="loadPVBtn" class="action-btn">Premier Vision</button>
+          <button id="loadEEBtn" class="action-btn">Eastern Europe</button>
+        </div>
+        <div class="library-search">
+          <input id="librarySearchInput" class="composer-input composer-input--light" type="text" placeholder="Search library" />
+          <button id="librarySearchBtn" class="action-btn">Search</button>
+        </div>
+        <div id="libraryViewer" class="library-viewer muted">Select a library to view.</div>
+        <div id="libraryResults" class="library-results"></div>
+      </section>
+    </aside>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@vapi-ai/web/dist/index.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
