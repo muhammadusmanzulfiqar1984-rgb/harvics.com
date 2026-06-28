@@ -22,6 +22,7 @@
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
+/* When loaded as iframe inside main site, ticker-row/nav already hidden by JS */
 body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',sans-serif;background:var(--bg);color:white;min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased;background-image:radial-gradient(ellipse 100% 50% at 50% 0%,rgba(110,28,28,0.22) 0%,transparent 60%)}
 
 /* GRAIN */
@@ -672,6 +673,19 @@ function showToast(msg){const t=document.getElementById('toast');t.textContent=m
 
 /* INIT */
 window.addEventListener('load',()=>{
+  /* ── Embedded mode: hide internal nav/tickers when inside main site iframe ── */
+  const isEmbedded = window !== window.top;
+  if (isEmbedded) {
+    const hide = sel => { const el = document.querySelector(sel); if(el) el.style.display='none'; };
+    hide('.ticker-row');
+    hide('nav');
+    hide('.vapi-badge');
+    /* Remove hero top padding so content starts immediately */
+    const hero = document.querySelector('.hero');
+    if (hero) hero.style.paddingTop = '48px';
+    /* Disable welcome voice in embedded to avoid overlap */
+    return;
+  }
   setTimeout(()=>speak("Welcome to HarvicTrade. I'm Harvy, your AI sourcing agent. Tap the microphone, type a command, or choose a quick prompt to begin.",true),1400);
 });
 </script>
