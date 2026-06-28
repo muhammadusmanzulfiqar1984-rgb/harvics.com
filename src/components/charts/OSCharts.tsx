@@ -13,7 +13,7 @@ export const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', '
 
 // ─── Design tokens (CSS values matching tailwind.config.js) ─────────────────
 const T = {
-  burgundy:    '#1A0505',
+  burgundy:    '#3D1212',
   gold:        '#C3A35E',
   goldDim:     'rgba(195,163,94,0.18)',
   goldDiv:     'rgba(195,163,94,0.2)',

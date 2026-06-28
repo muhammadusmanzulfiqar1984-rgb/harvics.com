@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Genviet — Real Data Financial Model</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #060e16; color: #f5f0e8; font-family: 'Helvetica Neue', Arial, sans-serif; padding: 2.5rem 2rem; max-width: 1040px; margin: 0 auto; }
+
+  .page-header { padding-bottom: 1.4rem; margin-bottom: 2.5rem; border-bottom: 1px solid rgba(201,168,76,0.15); }
+  .page-tag { font-size: 0.58rem; letter-spacing: 0.3em; text-transform: uppercase; color: #c9a84c; }
+  .page-title { font-size: 1.6rem; font-weight: 200; color: #fff; margin-top: 0.4rem; letter-spacing: 0.04em; }
+  .page-sub { font-size: 0.8rem; color: #9eafc2; margin-top: 0.5rem; line-height: 1.65; }
+
+  .section-label { font-size: 0.58rem; letter-spacing: 0.26em; text-transform: uppercase; color: #c9a84c; margin: 2.5rem 0 1rem; }
+
+  /* STAT WALL */
+  .stat-wall { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.8rem; margin-bottom: 2rem; }
+  @media(max-width:700px){ .stat-wall{ grid-template-columns: repeat(3,1fr); } }
+  .stat { background: #111e2d; border: 1px solid rgba(255,255,255,0.06); border-radius: 3px; padding: 1rem; text-align: center; }
+  .stat-num { font-size: 1.5rem; font-weight: 100; color: #e2c47a; line-height: 1; }
+  .stat-label { font-size: 0.58rem; letter-spacing: 0.14em; text-transform: uppercase; color: #9eafc2; margin-top: 0.4rem; }
+
+  /* ALERT BOXES */
+  .alert-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem; }
+  .alert { border-radius: 3px; padding: 1.2rem 1.4rem; }
+  .alert-red { background: rgba(217,95,95,0.07); border: 1px solid rgba(217,95,95,0.3); border-left: 3px solid #d95f5f; }
+  .alert-amber { background: rgba(232,144,58,0.07); border: 1px solid rgba(232,144,58,0.3); border-left: 3px solid #e8903a; }
+  .alert-label { font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.6rem; }
+  .alert-red .alert-label { color: #d95f5f; }
+  .alert-amber .alert-label { color: #e8903a; }
+  .alert p { font-size: 0.8rem; color: #f5f0e8; line-height: 1.7; }
+  .alert strong { color: #fff; }
+
+  /* REVENUE TABLE */
+  .rev-table { width: 100%; border-collapse: collapse; margin-bottom: 0.5rem; }
+  .rev-table th { font-size: 0.56rem; letter-spacing: 0.18em; text-transform: uppercase; color: #9eafc2; padding: 0.8rem 1rem; text-align: left; background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .rev-table td { font-size: 0.82rem; padding: 1rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.04); color: #d9cfc0; vertical-align: top; line-height: 1.5; }
+  .rev-table tr:last-child td { border-bottom: none; }
+  .rev-table tr.highlight td { background: rgba(201,168,76,0.04); }
+  .year-h { font-weight: 700; color: #e2c47a; font-size: 0.9rem; }
+  .badge { display: inline-block; font-size: 0.55rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 0.2rem 0.5rem; border-radius: 2px; margin-left: 0.5rem; vertical-align: middle; }
+  .badge-red { background: rgba(217,95,95,0.15); color: #d95f5f; border: 1px solid rgba(217,95,95,0.3); }
+  .badge-green { background: rgba(76,175,130,0.15); color: #4caf82; border: 1px solid rgba(76,175,130,0.3); }
+  .badge-amber { background: rgba(232,144,58,0.12); color: #e8903a; border: 1px solid rgba(232,144,58,0.25); }
+  .sub-note { font-size: 0.7rem; color: rgba(158,175,194,0.7); margin-top: 0.2rem; }
+  .price-split { margin-top: 0.4rem; }
+  .price-split div { font-size: 0.75rem; color: #9eafc2; padding: 0.15rem 0; }
+  .price-split div strong { color: #e2c47a; }
+  .rev-total { color: #4caf82 !important; font-size: 1rem !important; font-weight: 600 !important; }
+  .rev-uplift { color: #4caf82 !important; font-size: 0.78rem !important; }
+
+  /* LDP BOX */
+  .ldp-explainer { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem; }
+  .ldp-box { background: #0d1b2a; border: 1px solid rgba(255,255,255,0.06); border-radius: 3px; padding: 1.2rem; }
+  .ldp-box-title { font-size: 0.7rem; font-weight: 600; color: #fff; margin-bottom: 0.8rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  .ldp-line { display: flex; justify-content: space-between; padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.03); font-size: 0.77rem; }
+  .ldp-line:last-child { border-bottom: none; font-weight: 600; font-size: 0.85rem; }
+  .ldp-k { color: #9eafc2; }
+  .ldp-v { color: #f5f0e8; }
+  .ldp-v.plus { color: #4caf82; }
+  .ldp-v.minus { color: #d95f5f; }
+  .ldp-v.net { color: #4caf82; font-size: 0.95rem; }
+  .ldp-v.neutral { color: #e2c47a; }
+
+  /* CERT TABLE */
+  .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.7rem; margin-bottom: 2rem; }
+  .cert-item { background: #111e2d; border-radius: 3px; padding: 0.9rem 1rem; display: flex; align-items: flex-start; gap: 0.7rem; }
+  .cert-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+  .cert-dot.green { background: #4caf82; }
+  .cert-dot.amber { background: #e8903a; }
+  .cert-dot.red { background: #d95f5f; }
+  .cert-name { font-size: 0.77rem; color: #f5f0e8; font-weight: 600; }
+  .cert-note { font-size: 0.65rem; color: #9eafc2; margin-top: 0.2rem; line-height: 1.4; }
+
+  /* UPLIFT BANNER */
+  .uplift-banner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(201,168,76,0.1); border-radius: 3px; overflow: hidden; margin-bottom: 2rem; }
+  .uplift-cell { background: #070f18; padding: 1.4rem 1.2rem; text-align: center; }
+  .uplift-num { font-size: 1.8rem; font-weight: 100; color: #4caf82; line-height: 1; }
+  .uplift-label { font-size: 0.56rem; letter-spacing: 0.14em; text-transform: uppercase; color: #9eafc2; margin-top: 0.4rem; }
+
+  /* REPLACE WORST */
+  .replace-table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; }
+  .replace-table th { font-size: 0.56rem; letter-spacing: 0.16em; text-transform: uppercase; color: #9eafc2; padding: 0.7rem 0.9rem; background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .replace-table td { font-size: 0.8rem; padding: 0.85rem 0.9rem; border-bottom: 1px solid rgba(255,255,255,0.04); color: #d9cfc0; }
+  .replace-table .gain { color: #4caf82; font-weight: 600; }
+
+  hr.divider { border: none; border-top: 1px solid rgba(201,168,76,0.08); margin: 2.5rem 0; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="page-header">
+  <div class="page-tag">Genviet Factory — Real Data · Sourced from Documents · 18.06.2026</div>
+  <div class="page-title">3-Year Revenue Model</div>
+  <div class="page-sub">Based on: factory profile (EN), WRAP certificate, milestones 2005-present. All revenue figures = what Genviet receives at factory gate. No retail. No Harvics margin shown.</div>
+</div>
+
+<!-- REAL FACTORY STATS -->
+<div class="section-label">What the Documents Say — Genviet Real Data</div>
+<div class="stat-wall">
+  <div class="stat"><div class="stat-num">1.2M</div><div class="stat-label">pcs / year capacity</div></div>
+  <div class="stat"><div class="stat-num">350</div><div class="stat-label">workers total</div></div>
+  <div class="stat"><div class="stat-num">863</div><div class="stat-label">machines</div></div>
+  <div class="stat"><div class="stat-num">6</div><div class="stat-label">production lines</div></div>
+  <div class="stat"><div class="stat-num">70%</div><div class="stat-label">output already exported</div></div>
+</div>
+<div class="stat-wall" style="grid-template-columns: repeat(4,1fr);">
+  <div class="stat"><div class="stat-num">12,888m²</div><div class="stat-label">factory footprint</div></div>
+  <div class="stat"><div class="stat-num">20 yrs</div><div class="stat-label">denim heritage</div></div>
+  <div class="stat"><div class="stat-num">AQL 1.5</div><div class="stat-label">quality standard (strictest)</div></div>
+  <div class="stat"><div class="stat-num" style="font-size:0.9rem;">Sep 2026</div><div class="stat-label">WRAP Gold expiry ⚠</div></div>
+</div>
+
+<!-- CRITICAL ALERTS -->
+<div class="section-label">Two Issues Found in the Documents — She Doesn't Know These Are Problems</div>
+<div class="alert-row">
+  <div class="alert alert-red">
+    <div class="alert-label">WRAP Gold Expiring in 3 Months</div>
+    <p>Certificate: <strong>18216 Gold</strong>. Valid September 17, 2025 → <strong>September 17, 2026.</strong><br/>
+    That is 3 months from today. If this lapses, she loses her most credible EU compliance card. No Scandinavian or premium EU brand will sign a contract with expired WRAP. This needs renewal action immediately — renewal takes 3–5 months if audit is required.</p>
+  </div>
+  <div class="alert alert-amber">
+    <div class="alert-label">ISO 9001:2008 Is Obsolete — Current Standard is 2015</div>
+    <p>The factory holds <strong>ISO 9001:2008</strong>. The current international standard is ISO 9001:<strong>2015</strong>. EU procurement teams know the difference. This will fail a formal vendor audit. Transition to 2015 standard requires gap assessment + documentation update — typically 2–4 months. Low cost, high impact fix.</p>
+  </div>
+</div>
+
+<!-- CURRENT REVENUE — REAL NUMBERS -->
+<div class="section-label">Today — What She Is Actually Making (Real Calculation)</div>
+<table class="rev-table">
+  <thead>
+    <tr>
+      <th>Market</th>
+      <th>Est. Volume</th>
+      <th>Est. FOB per piece</th>
+      <th>Annual Revenue</th>
+      <th>Contract stability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <span class="year-h">GCC / Middle East buyers</span>
+        <span class="badge badge-red">Blood-sucking</span>
+        <div class="sub-note">Spot orders. No 2-season commitment. Price renegotiated every order.</div>
+      </td>
+      <td>~300,000 pcs<br/><span class="sub-note">25% of capacity</span></td>
+      <td>€6 – €8<br/><span class="sub-note" style="color:#d95f5f;">Max €8 per your confirmation</span></td>
+      <td style="color:#d9cfc0;">€1.8M – €2.4M<br/><span class="sub-note">Wide range because spot price changes every order</span></td>
+      <td><span class="badge badge-red">None</span></td>
+    </tr>
+    <tr>
+      <td>
+        <span class="year-h">Japan / Korea</span>
+        <div class="sub-note">Profile states these are export markets. Premium buyers, higher FOB expectation.</div>
+      </td>
+      <td>~200,000 pcs<br/><span class="sub-note">17% of capacity</span></td>
+      <td>~€9 – €11</td>
+      <td style="color:#d9cfc0;">~€1.8M – €2.2M</td>
+      <td><span class="badge badge-amber">Seasonal</span></td>
+    </tr>
+    <tr>
+      <td>
+        <span class="year-h">US / Other exports</span>
+        <div class="sub-note">Profile confirms US market. GVLux sustainable line goes here.</div>
+      </td>
+      <td>~340,000 pcs<br/><span class="sub-note">28% of capacity — 70% total export = 840,000</span></td>
+      <td>~€8 – €10</td>
+      <td style="color:#d9cfc0;">~€2.7M – €3.4M</td>
+      <td><span class="badge badge-amber">Programme</span></td>
+    </tr>
+    <tr>
+      <td>
+        <span class="year-h">Domestic — GENOVA retail chain</span>
+        <div class="sub-note">Genviet operates their own GENOVA retail brand nationally. 30% capacity = 360,000 pcs</div>
+      </td>
+      <td>~360,000 pcs<br/><span class="sub-note">30% of capacity</span></td>
+      <td>Transfer price (not export FOB)</td>
+      <td style="color:#d9cfc0;">Internal — not comparable</td>
+      <td><span class="badge badge-amber">Own brand</span></td>
+    </tr>
+    <tr class="highlight">
+      <td colspan="3"><strong style="color:#e2c47a;">Total estimated export revenue (current)</strong><br/><span class="sub-note">840,000 pcs exported × blended ~€8.50 avg</span></td>
+      <td class="rev-total">~€6.3M – €8.0M/year</td>
+      <td><span class="badge badge-red">Mostly uncontracted</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="divider"/>
+
+<!-- 3 YEAR MODEL -->
+<div class="section-label">EU Programme — 3-Year Revenue Model (Added on Top of Existing)</div>
+<table class="rev-table">
+  <thead>
+    <tr>
+      <th>Year / Phase</th>
+      <th>Pieces</th>
+      <th>Price per piece</th>
+      <th>LDP portion</th>
+      <th>Revenue added</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <span class="year-h">Year 1 — EU Pilot</span>
+        <span class="badge badge-amber">From unused capacity</span>
+        <div class="sub-note">3 EU/Scandinavian programme accounts. Uses spare domestic capacity — zero displacement of existing orders. 2-year contract signed before production starts.</div>
+      </td>
+      <td>30,000 pcs<br/><span class="sub-note">2.5% of 1.2M capacity</span></td>
+      <td>
+        <strong style="color:#e2c47a;">€10 FOB</strong>
+        <div class="sub-note">+€2–3 vs current GCC max.<br/>WRAP Gold + BSCI + Higg already held = these 3 certs unlock €10 gate.</div>
+      </td>
+      <td>None — FOB only in Year 1</td>
+      <td class="rev-total">€300,000<br/><span class="rev-uplift">Under 2-year signed contract</span></td>
+    </tr>
+    <tr>
+      <td>
+        <span class="year-h">Year 2 — EU Scale</span>
+        <span class="badge badge-green">SEDEX + ZDHC added</span>
+        <div class="sub-note">Certifications upgraded during Year 1. SEDEX/SMETA + ZDHC MRSL compliance done. WRAP renewed before Sep 2026 expiry. ISO 9001 upgraded to 2015. These 4 actions move her into Tier A supplier status for Scandinavian buyers.</div>
+      </td>
+      <td>
+        75,000 pcs FOB<br/>
+        25,000 pcs LDP<br/>
+        <span class="sub-note">100,000 total — 8.3% of capacity</span>
+      </td>
+      <td>
+        <div class="price-split">
+          <div><strong>€12.50 FOB</strong> (75,000 pcs)</div>
+          <div><strong>€15.50 LDP gross</strong> (25,000 pcs)</div>
+          <div style="margin-top:0.2rem;color:rgba(158,175,194,0.6);">Price lifts because SEDEX + ZDHC = brands can show their customers supply chain proof. This is the actual trigger for the €12+ gate.</div>
+        </div>
+      </td>
+      <td>
+        25,000 pcs to EU warehouse<br/>
+        <div class="sub-note" style="margin-top:0.3rem;">Logistics costs per piece:<br/>Freight: −€0.90<br/>Duty 12% on CIF: −€1.67<br/>Brokerage+delivery: −€0.55<br/><strong style="color:#e2c47a;">Net: ~€12.38/pc</strong></div>
+      </td>
+      <td class="rev-total">
+        FOB: €937,500<br/>
+        LDP net: €309,500<br/>
+        <strong style="color:#4caf82;">~€1,247,000</strong>
+        <div class="rev-uplift">vs Year 1: +€947,000</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="year-h">Year 2 — GCC Replacement Bonus</span>
+        <span class="badge badge-green">Replace worst buyers</span>
+        <div class="sub-note">By end of Year 2, if 100,000 pcs of GCC volume (currently at €7 avg) is replaced by EU programme volume at €12.50 — this is the real uplift story. Not extra capacity. Better use of same capacity.</div>
+      </td>
+      <td>100,000 pcs</td>
+      <td>€12.50 vs current €7.00</td>
+      <td>N/A</td>
+      <td class="rev-total">+€550,000 net uplift<br/><span class="rev-uplift">Same production. Better buyer. Difference goes to her.</span></td>
+    </tr>
+    <tr class="highlight">
+      <td colspan="4"><strong style="color:#e2c47a;">24-month cumulative EU programme revenue</strong><br/><span class="sub-note">Year 1 (€300K) + Year 2 new EU revenue (€1,247K) + GCC replacement uplift (€550K)</span></td>
+      <td class="rev-total" style="font-size:1.1rem;">~€2.1M additional<br/><span class="rev-uplift">Over 24 months · All under contract</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="divider"/>
+
+<!-- LDP EXPLAINED -->
+<div class="section-label">LDP Mechanics — What It Means in Practice</div>
+<div class="ldp-explainer">
+  <div class="ldp-box">
+    <div class="ldp-box-title">Year 2 — FOB offer (75,000 pcs @ €12.50)</div>
+    <div class="ldp-line"><span class="ldp-k">She receives</span><span class="ldp-v neutral">€12.50 / pc</span></div>
+    <div class="ldp-line"><span class="ldp-k">Logistics she pays</span><span class="ldp-v minus">€0</span></div>
+    <div class="ldp-line"><span class="ldp-k">Buyer manages</span><span class="ldp-v" style="font-size:0.7rem;color:#9eafc2;">freight, duty, customs</span></div>
+    <div class="ldp-line"><span class="ldp-k">NET to Genviet</span><span class="ldp-v net">€12.50</span></div>
+  </div>
+  <div class="ldp-box">
+    <div class="ldp-box-title">Year 2 — LDP offer (25,000 pcs @ €15.50 gross)</div>
+    <div class="ldp-line"><span class="ldp-k">LDP price charged to EU buyer</span><span class="ldp-v neutral">€15.50 / pc</span></div>
+    <div class="ldp-line"><span class="ldp-k">Sea freight Vietnam → EU</span><span class="ldp-v minus">−€0.90</span></div>
+    <div class="ldp-line"><span class="ldp-k">EU duty 12% on CIF (€16.40)</span><span class="ldp-v minus">−€1.67</span></div>
+    <div class="ldp-line"><span class="ldp-k">Customs + brokerage + delivery</span><span class="ldp-v minus">−€0.55</span></div>
+    <div class="ldp-line"><span class="ldp-k">NET to Genviet after logistics</span><span class="ldp-v net">€12.38</span></div>
+  </div>
+</div>
+<div class="alert alert-amber" style="margin-bottom:2rem;">
+  <div class="alert-label">Why offer LDP if net margin is almost identical to FOB?</div>
+  <p>The per-piece net difference is marginal (€12.38 vs €12.50). The value is entirely strategic: EU buyers who receive LDP/DDP <strong>do not switch suppliers</strong>. Their logistics teams are integrated with her dispatch schedule. Their finance teams process one invoice with no surprise duty bills. LDP makes the relationship structurally sticky. That is the reason — not per-piece margin gain.</p>
+</div>
+
+<hr class="divider"/>
+
+<!-- CERT STATUS -->
+<div class="section-label">Certification Scorecard — What She Has vs What EU Tier A Requires</div>
+<div class="cert-grid">
+  <div class="cert-item">
+    <div class="cert-dot green"></div>
+    <div><div class="cert-name">WRAP Gold</div><div class="cert-note">Active · Expires Sep 17, 2026<br/><strong style="color:#e8903a;">Renew within 60 days or loses EU access</strong></div></div>
+  </div>
+  <div class="cert-item">
+    <div class="cert-dot green"></div>
+    <div><div class="cert-name">BSCI</div><div class="cert-note">Active · Listed in profile<br/>Unlocks mid-tier EU buyers</div></div>
+  </div>
+  <div class="cert-item">
+    <div class="cert-dot green"></div>
+    <div><div class="cert-name">Higg Index</div><div class="cert-note">Active · Listed in profile<br/>Sustainability framework — good for Scandinavian brands</div></div>
+  </div>
+  <div class="cert-item">
+    <div class="cert-dot green"></div>
+    <div><div class="cert-name">OEKO-TEX</div><div class="cert-note">Active · Materials certified<br/>Chemical safety — required for EU consumer goods</div></div>
+  </div>
+  <div class="cert-item">
+    <div class="cert-dot amber"></div>
+    <div><div class="cert-name">ISO 9001</div><div class="cert-note">Holds 2008 version · Obsolete<br/><strong style="color:#e8903a;">Must upgrade to 2015 standard</strong></div></div>
+  </div>
+  <div class="cert-item">
+    <div class="cert-dot amber"></div>
+    <div><div class="cert-name">MBR Wastewater</div><div class="cert-note">Active (QCVN 13-MT:2015) · Strong<br/>150 m³/day discharge — this is actually very good for EU environmental scoring</div></div>
+  </div>
+  <div class="cert-item">
+    <div class="cert-dot red"></div>
+    <div><div class="cert-name">SEDEX / SMETA</div><div class="cert-note">Not listed — required<br/>Without SEDEX, H&amp;M, Zara, ASOS, Zalando cannot onboard her</div></div>
+  </div>
+  <div class="cert-item">
+    <div class="cert-dot red"></div>
+    <div><div class="cert-name">ZDHC MRSL</div><div class="cert-note">Not listed — required<br/>Chemical management standard — unlocks premium Scandinavian + German buyers (€12+ gate)</div></div>
+  </div>
+  <div class="cert-item">
+    <div class="cert-dot red"></div>
+    <div><div class="cert-name">GRS / GOTS</div><div class="cert-note">Not listed — not urgent<br/>Needed only for recycled/organic fibre programmes · Year 3 consideration</div></div>
+  </div>
+</div>
+
+<hr class="divider"/>
+
+<!-- UPLIFT SUMMARY -->
+<div class="section-label">24-Month Financial Uplift Summary — Real Numbers</div>
+<div class="uplift-banner">
+  <div class="uplift-cell">
+    <div class="uplift-num">+€2.50</div>
+    <div class="uplift-label">More per piece · Year 1 vs GCC max</div>
+  </div>
+  <div class="uplift-cell">
+    <div class="uplift-num">+€5.50</div>
+    <div class="uplift-label">More per piece · Year 2 vs same GCC volume</div>
+  </div>
+  <div class="uplift-cell">
+    <div class="uplift-num">~€2.1M</div>
+    <div class="uplift-label">Additional revenue · 24 months combined</div>
+  </div>
+  <div class="uplift-cell">
+    <div class="uplift-num">0 pcs</div>
+    <div class="uplift-label">New capacity needed · Same 1.2M base used</div>
+  </div>
+</div>
+
+<!-- GCC REPLACEMENT TABLE -->
+<div class="section-label">The Real Story — Replacing GCC Volume with EU Volume (Year 2 Onwards)</div>
+<table class="replace-table">
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Volume</th>
+      <th>Price per piece</th>
+      <th>Annual revenue from this block</th>
+      <th>Gain vs GCC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong style="color:#d95f5f;">Current — GCC spot (worst block)</strong></td>
+      <td>300,000 pcs</td>
+      <td>avg €7.00</td>
+      <td>€2,100,000</td>
+      <td style="color:#d95f5f;">— baseline</td>
+    </tr>
+    <tr>
+      <td><strong style="color:#4caf82;">Year 2 — Same 300K pcs, EU buyers, contracted</strong></td>
+      <td>300,000 pcs</td>
+      <td>avg €12.00</td>
+      <td>€3,600,000</td>
+      <td class="gain">+€1,500,000/year<br/><span style="font-size:0.7rem;color:#9eafc2;">Same factory. Same machines. Same workers.</span></td>
+    </tr>
+    <tr>
+      <td colspan="4" style="font-size:0.78rem;color:#9eafc2;padding:0.7rem 0.9rem;">The 300,000 pcs figure is a ceiling scenario — achievable by Year 2-3. Year 2 model uses 100,000 pcs replacement as a conservative target.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="alert" style="background:rgba(201,168,76,0.05);border:1px solid rgba(201,168,76,0.2);border-left:3px solid #c9a84c;padding:1.4rem 1.6rem;">
+  <div class="alert-label" style="color:#c9a84c;">Ready to Confirm — Then Goes Into the Main Deck</div>
+  <p>These numbers are from her documents. Three things to confirm before integration into the main cinematic presentation:<br/>
+  <strong>1. Volume: 30,000 pcs Year 1 / 100,000 pcs Year 2</strong> — or adjust<br/>
+  <strong>2. WRAP renewal urgency</strong> — should this appear as an action item in the deck, or is it handled quietly?<br/>
+  <strong>3. GCC replacement strategy</strong> — show her plainly (100K pcs → 300K pcs path) or keep conservative?</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>My Plan — Before I Touch Anything</title>
+<style>
+  body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #0d1b2a; color: #f5f0e8; margin: 0; padding: 2rem; }
+  h1 { color: #c9a84c; font-size: 1.4rem; letter-spacing: 0.1em; margin-bottom: 0.3rem; }
+  h2 { color: #e2c47a; font-size: 1rem; letter-spacing: 0.08em; margin: 2rem 0 0.8rem; border-bottom: 1px solid rgba(201,168,76,0.2); padding-bottom: 0.4rem; }
+  p { color: #9eafc2; font-size: 0.88rem; line-height: 1.7; max-width: 760px; }
+  .box { background: #1a2f45; border: 1px solid rgba(201,168,76,0.2); border-radius: 4px; padding: 1.2rem 1.5rem; margin-bottom: 1rem; max-width: 860px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 860px; margin-bottom: 1rem; }
+  .col-bad { background: rgba(217,95,95,0.08); border: 1px solid rgba(217,95,95,0.3); border-radius: 4px; padding: 1rem 1.2rem; }
+  .col-good { background: rgba(76,175,130,0.08); border: 1px solid rgba(76,175,130,0.3); border-radius: 4px; padding: 1rem 1.2rem; }
+  .tag-bad { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: #d95f5f; margin-bottom: 0.5rem; }
+  .tag-good { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: #4caf82; margin-bottom: 0.5rem; }
+  .item { font-size: 0.82rem; color: #f5f0e8; line-height: 1.6; margin-bottom: 0.3rem; }
+  .item span { color: #9eafc2; }
+  .warn { background: rgba(232,144,58,0.1); border: 1px solid rgba(232,144,58,0.4); border-radius: 4px; padding: 1rem 1.2rem; max-width: 860px; margin-bottom: 1rem; font-size: 0.85rem; color: #e8903a; line-height: 1.6; }
+  .q { color: #c9a84c; font-weight: bold; }
+  .answer { color: #f5f0e8; font-size: 0.9rem; margin: 0.3rem 0 1.2rem; line-height: 1.65; }
+</style>
+</head>
+<body>
+
+<h1>WHAT I UNDERSTAND — AND WHAT I PLAN TO DO</h1>
+<p>This is my honest read of your request. Read it. If I'm wrong anywhere, tell me before I change anything.</p>
+
+<h2>What you asked</h2>
+<div class="box">
+  <p style="color:#f5f0e8;margin:0;">You did NOT want a separate pitch page. You wanted me to take the real data from the Genviet factory documents and <strong style="color:#c9a84c;">intelligently weave it into the existing cinematic presentation</strong> — the one already live at <code style="color:#e2c47a;">/vietnam-denim-presentation/</code>. Specifically into <code style="color:#e2c47a;">src/i18n.js</code> which controls all the text in the deck.</p>
+</div>
+
+<h2>What the current presentation says vs what the real document says</h2>
+
+<div class="row">
+  <div class="col-bad">
+    <div class="tag-bad">Currently in the deck (some wrong)</div>
+    <div class="item">📍 Location: <span>"Hanoi" everywhere</span></div>
+    <div class="item">⚙️ Capacity: <span>"2M units/year"</span></div>
+    <div class="item">✅ Certs shown: <span>OEKO-TEX, Cotton USA, REACH, CSRD</span></div>
+    <div class="item">🏭 Factory detail: <span>vague / no real numbers</span></div>
+    <div class="item">👥 Workers: <span>not mentioned</span></div>
+    <div class="item">🔧 Machines: <span>not mentioned</span></div>
+    <div class="item">🧪 Wash tech: <span>mentioned generically</span></div>
+  </div>
+  <div class="col-good">
+    <div class="tag-good">What the real documents say</div>
+    <div class="item">📍 Location: <span>Ninh Binh — Cau Giat Industrial Zone</span></div>
+    <div class="item">⚙️ Capacity: <span>1.2M pcs/year (not 2M)</span></div>
+    <div class="item">✅ Certs real: <span>WRAP Gold, Higg Index, BSCI, ISO 9001, AQL 1.5, MBR wastewater</span></div>
+    <div class="item">🏭 Factory: <span>12,888m², 6 production lines</span></div>
+    <div class="item">👥 Workers: <span>350 including office + sewing + washing</span></div>
+    <div class="item">🔧 Machines: <span>863 machines</span></div>
+    <div class="item">🧪 Wash tech: <span>Laser, enzyme, eco-wash, MBR system, ozone</span></div>
+  </div>
+</div>
+
+<div class="warn">
+  ⚠️ <strong>Important question for you:</strong> The real document says <strong>1.2M pcs/year</strong>. But the entire financial model in the deck is built around <strong>2M units/year</strong>. Do you want me to:<br/><br/>
+  <strong>A)</strong> Correct to 1.2M — more honest, lower financial projections<br/>
+  <strong>B)</strong> Keep 2M — keep the financial story strong (the document may be outdated)<br/>
+  <strong>C)</strong> Ask the team — don't change capacity numbers until confirmed<br/><br/>
+  Tell me and I'll proceed.
+</div>
+
+<h2>Specifically what I will add / update in the presentation</h2>
+
+<div class="box">
+  <div class="item" style="margin-bottom:0.6rem;"><strong style="color:#c9a84c;">1. Certs section (i18n: certs.*)</strong></div>
+  <div class="item">→ Add WRAP Gold (valid Sept 2025–2026) as a real, named certification</div>
+  <div class="item">→ Add Higg Index FEM — replace vague sustainability mention</div>
+  <div class="item">→ Add BSCI — the actual European social audit they hold</div>
+  <div class="item">→ Add AQL 1.5 — position it as a differentiator (most factories only do AQL 2.5)</div>
+  <div class="item">→ Add MBR wastewater system — 550m³/day, 500m³ recycled</div>
+</div>
+
+<div class="box">
+  <div class="item" style="margin-bottom:0.6rem;"><strong style="color:#c9a84c;">2. About / Factory section (i18n: about.*)</strong></div>
+  <div class="item">→ Add 12,888m² · 863 machines · 350 workers · 6 lines as real credibility numbers</div>
+  <div class="item">→ Add 20-year heritage story (Founded 2005 → WRAP → GVLux 2017)</div>
+  <div class="item">→ Fix location to Ninh Binh (not Hanoi)</div>
+</div>
+
+<div class="box">
+  <div class="item" style="margin-bottom:0.6rem;"><strong style="color:#c9a84c;">3. Capabilities / Process / Shelf (i18n: products.*, shelf.*)</strong></div>
+  <div class="item">→ Add specific wash techniques: enzyme, ozone, laser, stone — with real process language from doc</div>
+  <div class="item">→ Add AQL 1.5 + Japan-standard metal detection to quality section</div>
+</div>
+
+<div class="box">
+  <div class="item" style="margin-bottom:0.6rem;"><strong style="color:#c9a84c;">4. Chatbot knowledge base (chatKnowledge)</strong></div>
+  <div class="item">→ Update so Layla can answer accurately about WRAP Gold, Higg, BSCI, AQL 1.5</div>
+  <div class="item">→ Add accurate factory location when asked "where is the factory"</div>
+</div>
+
+<div class="box">
+  <div class="item" style="margin-bottom:0.6rem;"><strong style="color:#c9a84c;">5. What I will NOT touch</strong></div>
+  <div class="item">→ The financial model (€2.4M, phases) — pending your answer on 1.2M vs 2M</div>
+  <div class="item">→ The Bluezone urgency narrative — leave as is</div>
+  <div class="item">→ The video, music, door animation — not touching</div>
+  <div class="item">→ The separate brand-pitch.html I made earlier — leave it, ignore it</div>
+</div>
+
+<h2>My question to you</h2>
+<p class="q">1. Should I correct the capacity to 1.2M or keep 2M?</p>
+<p class="q">2. Is this the right understanding of what you wanted?</p>
+<p style="color:#9eafc2;">If yes to both — I start immediately. If no — tell me what's wrong and I fix the plan first.</p>
+
+</body>
+</html>

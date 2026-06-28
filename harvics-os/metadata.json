@@ -1,0 +1,5 @@
+{
+  "name": "Harvics OS",
+  "description": "Enterprise-grade customs and logistics intelligence dashboard for the UK-GCC corridor.",
+  "requestFramePermissions": ["camera", "geolocation", "microphone"]
+}

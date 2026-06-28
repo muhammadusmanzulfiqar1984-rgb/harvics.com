@@ -1,0 +1,26 @@
+[
+  {
+    "id": "e1",
+    "title": "Opening Keynote: The Future of B2B Fashion",
+    "time": "09:00 - 10:00",
+    "location": "Main Stage, West Hall",
+    "type": "Talk",
+    "speaker": "Dr. Aris Thorne"
+  },
+  {
+    "id": "e2",
+    "title": "FW26 Trend Forecast: The Yellow Era",
+    "time": "11:30 - 12:30",
+    "location": "Trend Gallery, Central Hall",
+    "type": "Panel",
+    "speaker": "Vogue Business Panel"
+  },
+  {
+    "id": "e3",
+    "title": "Sustainably Sourced: Raw Denim Innovation",
+    "time": "15:00 - 16:00",
+    "location": "Innovation Hub",
+    "type": "Workshop",
+    "speaker": "GreenTech Textiles"
+  }
+]

@@ -1,0 +1,933 @@
+[
+  {
+    "id": "outreach_1782088669988",
+    "createdAt": "2026-06-22T00:37:49.988Z",
+    "status": "draft",
+    "type": "buyer_search",
+    "channel": "research",
+    "target": "oslo",
+    "message": "Buyer search requested for oslo. Found 0 pipeline lead(s), 12 external match(es), and 3 fair-intel match(es).",
+    "results": [
+      {
+        "company": "Raw Denim Norway",
+        "contact": null,
+        "email": null,
+        "city": "Thorvald Meyers gate 50, 0552 Oslo, Norway",
+        "country": "Thorvald Meyers gate 50, 0552 Oslo, Norway",
+        "segment": "general",
+        "source": "Google Places"
+      },
+      {
+        "company": "Jacob Cohën Store Oslo",
+        "contact": null,
+        "email": null,
+        "city": "Akersgata 18, 0158 Oslo, Norway",
+        "country": "Akersgata 18, 0158 Oslo, Norway",
+        "segment": "general",
+        "source": "Google Places"
+      },
+      {
+        "company": "RockDenim",
+        "contact": null,
+        "email": null,
+        "city": "Økernveien 121, 0579 Oslo, Norway",
+        "country": "Økernveien 121, 0579 Oslo, Norway",
+        "segment": "general",
+        "source": "Google Places"
+      },
+      {
+        "company": "Eftir - Aker brygge",
+        "contact": null,
+        "email": null,
+        "city": "Holmens gate 4, 0250 Oslo, Norway",
+        "country": "Holmens gate 4, 0250 Oslo, Norway",
+        "segment": "general",
+        "source": "Google Places"
+      },
+      {
+        "company": "Velouria Vintage",
+        "contact": null,
+        "email": null,
+        "city": "Thorvald Meyers gate 34, 0555 Oslo, Norway",
+        "country": "Thorvald Meyers gate 34, 0555 Oslo, Norway",
+        "segment": "general",
+        "source": "Google Places"
+      },
+      {
+        "company": "Robot Oslo",
+        "contact": null,
+        "email": null,
+        "city": "Korsgata 22, 0551 Oslo, Norway",
+        "country": "Korsgata 22, 0551 Oslo, Norway",
+        "segment": "general",
+        "source": "Google Places"
+      },
+      {
+        "company": "Frøken Dianas Salonger",
+        "contact": null,
+        "email": null,
+        "city": "Markveien 56, 0550 Oslo, Norway",
+        "country": "Markveien 56, 0550 Oslo, Norway",
+        "segment": "general",
+        "source": "Google Places"
+      },
+      {
+        "company": "UFF Second Hand Trend Karl Johan",
+        "contact": null,
+        "email": null,
+        "city": "Lille Grensen 5, 0159 Oslo, Norway",
+        "country": "Lille Grensen 5, 0159 Oslo, Norway",
+        "segment": "general",
+        "source": "Google Places"
+      },
+      {
+        "company": "Steen & Strøm Department Store",
+        "contact": null,
+        "email": null,
+        "city": "Nedre Slottsgate 8, 0157 Oslo, Norway",
+        "country": "Nedre Slottsgate 8, 0157 Oslo, Norway",
+        "segment": "retail_wholesale",
+        "source": "Google Places"
+      },
+      {
+        "company": "Levi's®",
+        "contact": null,
+        "email": null,
+        "city": "Karl Johans gt. 3, 0154 Oslo, Norway",
+        "country": "Karl Johans gt. 3, 0154 Oslo, Norway",
+        "segment": "general",
+        "source": "Google Places"
+      },
+      {
+        "company": "Lucky Eddie",
+        "contact": null,
+        "email": null,
+        "city": "Trondheimsveien 63, 0565 Oslo, Norway",
+        "country": "Trondheimsveien 63, 0565 Oslo, Norway",
+        "segment": "general",
+        "source": "Google Places"
+      },
+      {
+        "company": "COS",
+        "contact": null,
+        "email": null,
+        "city": "Øvre Slottsgate 10, 0157 Oslo, Norway",
+        "country": "Øvre Slottsgate 10, 0157 Oslo, Norway",
+        "segment": "general",
+        "source": "Google Places"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Spring)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Autumn)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Munich Fabric Start",
+        "contact": null,
+        "email": null,
+        "city": "Munich",
+        "country": "Germany",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      }
+    ],
+    "grouped": {
+      "Thorvald Meyers gate 50, 0552 Oslo, Norway": {
+        "general": 1
+      },
+      "Akersgata 18, 0158 Oslo, Norway": {
+        "general": 1
+      },
+      "Økernveien 121, 0579 Oslo, Norway": {
+        "general": 1
+      },
+      "Holmens gate 4, 0250 Oslo, Norway": {
+        "general": 1
+      },
+      "Thorvald Meyers gate 34, 0555 Oslo, Norway": {
+        "general": 1
+      },
+      "Korsgata 22, 0551 Oslo, Norway": {
+        "general": 1
+      },
+      "Markveien 56, 0550 Oslo, Norway": {
+        "general": 1
+      },
+      "Lille Grensen 5, 0159 Oslo, Norway": {
+        "general": 1
+      },
+      "Nedre Slottsgate 8, 0157 Oslo, Norway": {
+        "retail_wholesale": 1
+      },
+      "Karl Johans gt. 3, 0154 Oslo, Norway": {
+        "general": 1
+      },
+      "Trondheimsveien 63, 0565 Oslo, Norway": {
+        "general": 1
+      },
+      "Øvre Slottsgate 10, 0157 Oslo, Norway": {
+        "general": 1
+      },
+      "China": {
+        "textile_fashion": 2
+      },
+      "Germany": {
+        "textile_fashion": 1
+      }
+    },
+    "sourceBreakdown": {
+      "google_places": 12,
+      "apollo": 0,
+      "python_scraper": 0,
+      "fair_intel": 3
+    }
+  },
+  {
+    "id": "outreach_1781457357192",
+    "createdAt": "2026-06-14T17:15:57.192Z",
+    "status": "draft",
+    "type": "buyer_search",
+    "channel": "research",
+    "target": "barcelona",
+    "message": "Buyer search requested for barcelona. Found 0 pipeline lead(s), 0 external match(es), and 5 fair-intel match(es).",
+    "results": [
+      {
+        "company": "ITMA",
+        "contact": null,
+        "email": null,
+        "city": "Milan",
+        "country": "Italy",
+        "segment": "general",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Spring)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Autumn)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Heimtextil",
+        "contact": null,
+        "email": null,
+        "city": "Frankfurt",
+        "country": "Germany",
+        "segment": "general",
+        "source": "Event Library"
+      },
+      {
+        "company": "Munich Fabric Start",
+        "contact": null,
+        "email": null,
+        "city": "Munich",
+        "country": "Germany",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      }
+    ],
+    "grouped": {
+      "Italy": {
+        "general": 1
+      },
+      "China": {
+        "textile_fashion": 2
+      },
+      "Germany": {
+        "general": 1,
+        "textile_fashion": 1
+      }
+    },
+    "sourceBreakdown": {
+      "google_places": 0,
+      "apollo": 0,
+      "python_scraper": 0,
+      "fair_intel": 5
+    }
+  },
+  {
+    "id": "outreach_1781457063427",
+    "createdAt": "2026-06-14T17:11:03.427Z",
+    "status": "draft",
+    "type": "buyer_search",
+    "channel": "research",
+    "target": "warsaw",
+    "message": "Buyer search requested for warsaw. Found 0 pipeline lead(s), 0 external match(es), and 3 fair-intel match(es).",
+    "results": [
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Spring)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Autumn)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Munich Fabric Start",
+        "contact": null,
+        "email": null,
+        "city": "Munich",
+        "country": "Germany",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      }
+    ],
+    "grouped": {
+      "China": {
+        "textile_fashion": 2
+      },
+      "Germany": {
+        "textile_fashion": 1
+      }
+    },
+    "sourceBreakdown": {
+      "google_places": 0,
+      "apollo": 0,
+      "python_scraper": 0,
+      "fair_intel": 3
+    }
+  },
+  {
+    "id": "outreach_1780075257028",
+    "createdAt": "2026-05-29T17:20:57.028Z",
+    "status": "draft",
+    "type": "buyer_search",
+    "channel": "research",
+    "target": "saudi arabia",
+    "message": "Buyer search requested for saudi arabia. Found 0 pipeline lead(s), 0 external match(es), and 5 fair-intel match(es).",
+    "results": [
+      {
+        "company": "ITMA",
+        "contact": null,
+        "email": null,
+        "city": "Milan",
+        "country": "Italy",
+        "segment": "general",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Spring)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Autumn)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Heimtextil",
+        "contact": null,
+        "email": null,
+        "city": "Frankfurt",
+        "country": "Germany",
+        "segment": "general",
+        "source": "Event Library"
+      },
+      {
+        "company": "Munich Fabric Start",
+        "contact": null,
+        "email": null,
+        "city": "Munich",
+        "country": "Germany",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      }
+    ],
+    "grouped": {
+      "Italy": {
+        "general": 1
+      },
+      "China": {
+        "textile_fashion": 2
+      },
+      "Germany": {
+        "general": 1,
+        "textile_fashion": 1
+      }
+    },
+    "sourceBreakdown": {
+      "google_places": 0,
+      "apollo": 0,
+      "python_scraper": 0,
+      "fair_intel": 5
+    }
+  },
+  {
+    "id": "outreach_1780071115705",
+    "createdAt": "2026-05-29T16:11:55.705Z",
+    "status": "draft",
+    "type": "buyer_search",
+    "channel": "research",
+    "target": "barcelona",
+    "message": "Buyer search requested for barcelona. Found 0 pipeline lead(s), 0 external match(es), and 5 fair-intel match(es).",
+    "results": [
+      {
+        "company": "ITMA",
+        "contact": null,
+        "email": null,
+        "city": "Milan",
+        "country": "Italy",
+        "segment": "general",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Spring)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Autumn)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Heimtextil",
+        "contact": null,
+        "email": null,
+        "city": "Frankfurt",
+        "country": "Germany",
+        "segment": "general",
+        "source": "Event Library"
+      },
+      {
+        "company": "Munich Fabric Start",
+        "contact": null,
+        "email": null,
+        "city": "Munich",
+        "country": "Germany",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      }
+    ],
+    "grouped": {
+      "Italy": {
+        "general": 1
+      },
+      "China": {
+        "textile_fashion": 2
+      },
+      "Germany": {
+        "general": 1,
+        "textile_fashion": 1
+      }
+    },
+    "sourceBreakdown": {
+      "google_places": 0,
+      "apollo": 0,
+      "python_scraper": 0,
+      "fair_intel": 5
+    }
+  },
+  {
+    "id": "outreach_1780071104695",
+    "createdAt": "2026-05-29T16:11:44.695Z",
+    "status": "draft",
+    "type": "buyer_search",
+    "channel": "research",
+    "target": "barcelona",
+    "message": "Buyer search requested for barcelona. Found 0 pipeline lead(s), 0 external match(es), and 5 fair-intel match(es).",
+    "results": [
+      {
+        "company": "ITMA",
+        "contact": null,
+        "email": null,
+        "city": "Milan",
+        "country": "Italy",
+        "segment": "general",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Spring)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Autumn)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Heimtextil",
+        "contact": null,
+        "email": null,
+        "city": "Frankfurt",
+        "country": "Germany",
+        "segment": "general",
+        "source": "Event Library"
+      },
+      {
+        "company": "Munich Fabric Start",
+        "contact": null,
+        "email": null,
+        "city": "Munich",
+        "country": "Germany",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      }
+    ],
+    "grouped": {
+      "Italy": {
+        "general": 1
+      },
+      "China": {
+        "textile_fashion": 2
+      },
+      "Germany": {
+        "general": 1,
+        "textile_fashion": 1
+      }
+    },
+    "sourceBreakdown": {
+      "google_places": 0,
+      "apollo": 0,
+      "python_scraper": 0,
+      "fair_intel": 5
+    }
+  },
+  {
+    "id": "outreach_1780071076414",
+    "createdAt": "2026-05-29T16:11:16.414Z",
+    "status": "draft",
+    "type": "buyer_search",
+    "channel": "research",
+    "target": "barcelona for denim",
+    "message": "Buyer search requested for barcelona for denim. Found 0 pipeline lead(s), 0 external match(es), and 3 fair-intel match(es).",
+    "results": [
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Spring)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Autumn)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Munich Fabric Start",
+        "contact": null,
+        "email": null,
+        "city": "Munich",
+        "country": "Germany",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      }
+    ],
+    "grouped": {
+      "China": {
+        "textile_fashion": 2
+      },
+      "Germany": {
+        "textile_fashion": 1
+      }
+    },
+    "sourceBreakdown": {
+      "google_places": 0,
+      "apollo": 0,
+      "python_scraper": 0,
+      "fair_intel": 3
+    }
+  },
+  {
+    "id": "outreach_1780065420714",
+    "createdAt": "2026-05-29T14:37:00.714Z",
+    "status": "draft",
+    "type": "buyer_search",
+    "channel": "research",
+    "target": "global",
+    "message": "Buyer search requested for global. Found 0 pipeline lead(s), 0 external match(es), and 5 fair-intel match(es).",
+    "results": [
+      {
+        "company": "ITMA",
+        "contact": null,
+        "email": null,
+        "city": "Milan",
+        "country": "Italy",
+        "segment": "general",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Spring)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Autumn)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Heimtextil",
+        "contact": null,
+        "email": null,
+        "city": "Frankfurt",
+        "country": "Germany",
+        "segment": "general",
+        "source": "Event Library"
+      },
+      {
+        "company": "Munich Fabric Start",
+        "contact": null,
+        "email": null,
+        "city": "Munich",
+        "country": "Germany",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      }
+    ],
+    "grouped": {
+      "Italy": {
+        "general": 1
+      },
+      "China": {
+        "textile_fashion": 2
+      },
+      "Germany": {
+        "general": 1,
+        "textile_fashion": 1
+      }
+    },
+    "sourceBreakdown": {
+      "google_places": 0,
+      "apollo": 0,
+      "python_scraper": 0,
+      "fair_intel": 5
+    }
+  },
+  {
+    "id": "outreach_1780060678663",
+    "createdAt": "2026-05-29T13:17:58.663Z",
+    "status": "approved",
+    "type": "buyer_search",
+    "channel": "research",
+    "target": "sweden",
+    "message": "Buyer search requested for sweden. Found 0 pipeline lead(s), 0 external match(es), and 3 fair-intel match(es).",
+    "results": [
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Spring)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Autumn)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Munich Fabric Start",
+        "contact": null,
+        "email": null,
+        "city": "Munich",
+        "country": "Germany",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      }
+    ],
+    "grouped": {
+      "China": {
+        "textile_fashion": 2
+      },
+      "Germany": {
+        "textile_fashion": 1
+      }
+    },
+    "sourceBreakdown": {
+      "google_places": 0,
+      "apollo": 0,
+      "python_scraper": 0,
+      "fair_intel": 3
+    },
+    "updatedAt": "2026-05-29T13:55:03.263Z"
+  },
+  {
+    "id": "outreach_1779874923272",
+    "createdAt": "2026-05-27T09:42:03.272Z",
+    "status": "draft",
+    "type": "buyer_search",
+    "channel": "research",
+    "target": "global",
+    "message": "Buyer search requested for global. Found 0 pipeline lead(s), 0 external match(es), and 5 fair-intel match(es).",
+    "results": [
+      {
+        "company": "ITMA",
+        "contact": null,
+        "email": null,
+        "city": "Milan",
+        "country": "Italy",
+        "segment": "general",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Spring)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Autumn)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Heimtextil",
+        "contact": null,
+        "email": null,
+        "city": "Frankfurt",
+        "country": "Germany",
+        "segment": "general",
+        "source": "Event Library"
+      },
+      {
+        "company": "Munich Fabric Start",
+        "contact": null,
+        "email": null,
+        "city": "Munich",
+        "country": "Germany",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      }
+    ],
+    "grouped": {
+      "Italy": {
+        "general": 1
+      },
+      "China": {
+        "textile_fashion": 2
+      },
+      "Germany": {
+        "general": 1,
+        "textile_fashion": 1
+      }
+    },
+    "sourceBreakdown": {
+      "google_places": 0,
+      "apollo": 0,
+      "python_scraper": 0,
+      "fair_intel": 5
+    }
+  },
+  {
+    "id": "outreach_1779874887246",
+    "createdAt": "2026-05-27T09:41:27.246Z",
+    "status": "draft",
+    "type": "outreach_send",
+    "channel": "premier vision",
+    "target": "new contact",
+    "message": "Prepared premier vision draft for new contact.",
+    "imageUrl": null
+  },
+  {
+    "id": "outreach_1779874880645",
+    "createdAt": "2026-05-27T09:41:20.646Z",
+    "status": "draft",
+    "type": "outreach_send",
+    "channel": "sources",
+    "target": "new contact",
+    "message": "Prepared sources draft for new contact.",
+    "imageUrl": null
+  },
+  {
+    "id": "outreach_1779831552464",
+    "createdAt": "2026-05-26T21:39:12.464Z",
+    "status": "draft",
+    "type": "buyer_search",
+    "channel": "research",
+    "target": "global",
+    "message": "Buyer search requested for global. Found 0 pipeline lead(s), 0 external match(es), and 3 fair-intel match(es).",
+    "results": [
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Spring)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Autumn)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Munich Fabric Start",
+        "contact": null,
+        "email": null,
+        "city": "Munich",
+        "country": "Germany",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      }
+    ],
+    "grouped": {
+      "China": {
+        "textile_fashion": 2
+      },
+      "Germany": {
+        "textile_fashion": 1
+      }
+    },
+    "sourceBreakdown": {
+      "google_places": 0,
+      "apollo": 0,
+      "python_scraper": 0,
+      "fair_intel": 3
+    }
+  },
+  {
+    "id": "outreach_1779831536529",
+    "createdAt": "2026-05-26T21:38:56.529Z",
+    "status": "draft",
+    "type": "outreach_send",
+    "channel": "eastern europe",
+    "target": "new contact",
+    "message": "Prepared eastern europe draft for new contact.",
+    "imageUrl": null
+  },
+  {
+    "id": "outreach_1779831523901",
+    "createdAt": "2026-05-26T21:38:43.901Z",
+    "status": "draft",
+    "type": "buyer_search",
+    "channel": "research",
+    "target": "global",
+    "message": "Buyer search requested for global. Found 0 pipeline lead(s), 0 external match(es), and 3 fair-intel match(es).",
+    "results": [
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Spring)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Intertextile Shanghai Apparel Fabrics (Autumn)",
+        "contact": null,
+        "email": null,
+        "city": "Shanghai",
+        "country": "China",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      },
+      {
+        "company": "Munich Fabric Start",
+        "contact": null,
+        "email": null,
+        "city": "Munich",
+        "country": "Germany",
+        "segment": "textile_fashion",
+        "source": "Event Library"
+      }
+    ],
+    "grouped": {
+      "China": {
+        "textile_fashion": 2
+      },
+      "Germany": {
+        "textile_fashion": 1
+      }
+    },
+    "sourceBreakdown": {
+      "google_places": 0,
+      "apollo": 0,
+      "python_scraper": 0,
+      "fair_intel": 3
+    }
+  }
+]

@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Genviet × Harvics — Partner Brief</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --indigo: #0d1b2a;
+    --indigo-mid: #1a2f45;
+    --indigo-light: #243d56;
+    --gold: #c9a84c;
+    --gold-light: #e2c47a;
+    --cream: #f5f0e8;
+    --mist: #9eafc2;
+    --white: #ffffff;
+    --green: #4caf82;
+    --orange: #e8903a;
+    --red: #d95f5f;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--indigo);
+    color: var(--cream);
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ─── TYPOGRAPHY ─── */
+  .label {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    font-weight: normal;
+    line-height: 1.15;
+  }
+
+  /* ─── LAYOUT ─── */
+  section { position: relative; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+  .section-pad { padding: 7rem 0; }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.4rem 2.5rem;
+    background: rgba(13,27,42,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+  }
+  .nav-logo {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .nav-tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mist);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  /* ─── HERO ─── */
+  #hero {
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    background:
+      radial-gradient(ellipse at 20% 60%, rgba(201,168,76,0.07) 0%, transparent 55%),
+      radial-gradient(ellipse at 80% 30%, rgba(26,47,69,0.9) 0%, transparent 60%),
+      linear-gradient(165deg, #0a141f 0%, #0d1b2a 40%, #1a2f45 100%);
+    text-align: center;
+    padding: 8rem 2rem 5rem;
+    overflow: hidden;
+  }
+  .hero-eyebrow {
+    display: inline-block;
+    border: 1px solid rgba(201,168,76,0.35);
+    padding: 0.45rem 1.4rem;
+    border-radius: 2px;
+    margin-bottom: 2.5rem;
+  }
+  #hero h1 {
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #hero h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+  .hero-sub {
+    font-size: 1.05rem;
+    color: var(--mist);
+    max-width: 560px;
+    margin: 0 auto 3.5rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.75;
+  }
+  .hero-pill {
+    display: inline-flex; gap: 2rem; flex-wrap: wrap; justify-content: center;
+    margin-bottom: 4rem;
+  }
+  .pill {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--cream);
+    background: rgba(201,168,76,0.12);
+    border: 1px solid rgba(201,168,76,0.3);
+    padding: 0.5rem 1.2rem;
+    border-radius: 2px;
+  }
+  .scroll-cue {
+    position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+  }
+  .scroll-line {
+    width: 1px; height: 50px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.4; transform: scaleY(1); }
+    50% { opacity: 1; transform: scaleY(1.2); }
+  }
+
+  /* ─── DIVIDER ─── */
+  .divider {
+    width: 48px; height: 1px;
+    background: var(--gold);
+    margin: 1.5rem auto;
+    opacity: 0.5;
+  }
+  .divider-left { margin: 1.5rem 0; }
+
+  /* ─── NUMBERS WALL ─── */
+  #numbers {
+    background: linear-gradient(180deg, #0a141f 0%, var(--indigo-mid) 100%);
+    padding: 7rem 0;
+    border-top: 1px solid rgba(201,168,76,0.12);
+    border-bottom: 1px solid rgba(201,168,76,0.12);
+  }
+  .numbers-intro { text-align: center; margin-bottom: 5rem; }
+  .numbers-intro h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--white); margin-top: 0.8rem; }
+  .numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1px;
+    background: rgba(201,168,76,0.1);
+    border: 1px solid rgba(201,168,76,0.1);
+  }
+  .num-cell {
+    background: var(--indigo);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: background 0.3s;
+  }
+  .num-cell:hover { background: var(--indigo-mid); }
+  .num-big {
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    color: var(--gold-light);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 200;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .num-unit {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mist);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  .num-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--cream);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin-top: 0.3rem;
+    opacity: 0.7;
+  }
+
+  /* ─── CERTIFIED TODAY ─── */
+  #certified { background: var(--indigo); }
+  .section-header { margin-bottom: 4rem; }
+  .section-header h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--white); margin-top: 0.8rem; }
+  .section-header p { color: var(--mist); font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.95rem; max-width: 520px; line-height: 1.75; margin-top: 1rem; }
+
+  .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .cert-card {
+    background: var(--indigo-mid);
+    border: 1px solid rgba(201,168,76,0.15);
+    padding: 2rem;
+    border-radius: 3px;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  .cert-card:hover { border-color: rgba(201,168,76,0.5); transform: translateY(-3px); }
+  .cert-icon {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: rgba(76,175,130,0.15);
+    border: 1px solid rgba(76,175,130,0.4);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1.2rem;
+    font-size: 0.9rem;
+  }
+  .cert-name {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    color: var(--green);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+  .cert-desc {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.82rem;
+    color: var(--mist);
+    line-height: 1.65;
+  }
+  .cert-badge {
+    display: inline-block;
+    margin-top: 0.8rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: rgba(76,175,130,0.1);
+    border: 1px solid rgba(76,175,130,0.3);
+    color: var(--green);
+    padding: 0.25rem 0.7rem;
+    border-radius: 2px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  /* ─── ROADMAP ─── */
+  #roadmap {
+    background: linear-gradient(180deg, var(--indigo) 0%, #070f18 100%);
+    border-top: 1px solid rgba(201,168,76,0.1);
+  }
+  .roadmap-intro { max-width: 640px; margin-bottom: 4.5rem; }
+  .roadmap-intro h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); color: var(--white); margin-top: 0.8rem; }
+  .roadmap-intro p { color: var(--mist); font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.95rem; line-height: 1.75; margin-top: 1rem; }
+
+  .timeline { position: relative; padding-left: 2.5rem; }
+  .timeline::before {
+    content: '';
+    position: absolute; left: 0; top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--gold), rgba(201,168,76,0.1));
+  }
+  .tl-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-left: 1.5rem;
+  }
+  .tl-dot {
+    position: absolute; left: -2.5rem;
+    width: 14px; height: 14px; border-radius: 50%;
+    border: 2px solid var(--gold);
+    background: var(--indigo);
+    top: 0.3rem;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .tl-dot.live { background: var(--green); border-color: var(--green); }
+  .tl-dot.near { background: rgba(232,144,58,0.3); border-color: var(--orange); }
+  .tl-dot.future { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.4); }
+  .tl-period {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+  }
+  .tl-period.live { color: var(--green); }
+  .tl-period.near { color: var(--orange); }
+  .tl-period.future { color: var(--gold); }
+  .tl-title {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.3rem;
+  }
+  .tl-desc {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.82rem;
+    color: var(--mist);
+    line-height: 1.65;
+    max-width: 520px;
+  }
+
+  /* ─── CAPABILITIES ─── */
+  #capabilities { background: var(--indigo-mid); }
+  .cap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .cap-item { padding: 0; }
+  .cap-number {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 100;
+    color: rgba(201,168,76,0.25);
+    line-height: 1;
+    margin-bottom: 0.8rem;
+  }
+  .cap-title {
+    font-size: 1.1rem;
+    color: var(--white);
+    margin-bottom: 0.6rem;
+  }
+  .cap-desc {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.83rem;
+    color: var(--mist);
+    line-height: 1.7;
+  }
+  .cap-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem; }
+  .cap-tag {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    background: rgba(201,168,76,0.08);
+    border: 1px solid rgba(201,168,76,0.2);
+    color: var(--gold);
+    padding: 0.22rem 0.6rem;
+    border-radius: 2px;
+  }
+
+  /* ─── HARVICS BRIDGE ─── */
+  #bridge {
+    background: linear-gradient(135deg, #070f18 0%, #0d1b2a 50%, #1a2f45 100%);
+    border-top: 1px solid rgba(201,168,76,0.15);
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+  }
+  .bridge-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  @media (max-width: 768px) { .bridge-inner { grid-template-columns: 1fr; gap: 3rem; } }
+  .bridge-text h2 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); color: var(--white); margin: 0.8rem 0 1.2rem; }
+  .bridge-text p { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.9rem; color: var(--mist); line-height: 1.8; margin-bottom: 1rem; }
+  .bridge-list { list-style: none; margin-top: 1.5rem; }
+  .bridge-list li {
+    display: flex; gap: 1rem; align-items: flex-start;
+    margin-bottom: 1rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--cream);
+    line-height: 1.6;
+  }
+  .bridge-list li::before {
+    content: '→';
+    color: var(--gold);
+    flex-shrink: 0;
+    margin-top: 0.05rem;
+  }
+  .bridge-cards { display: flex; flex-direction: column; gap: 1rem; }
+  .bridge-card {
+    background: rgba(201,168,76,0.06);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-left: 3px solid var(--gold);
+    padding: 1.4rem 1.5rem;
+    border-radius: 2px;
+  }
+  .bridge-card-label {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.4rem;
+  }
+  .bridge-card-title {
+    font-size: 1rem;
+    color: var(--white);
+    margin-bottom: 0.3rem;
+  }
+  .bridge-card-desc {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.78rem;
+    color: var(--mist);
+    line-height: 1.6;
+  }
+
+  /* ─── PARTNERSHIPS ─── */
+  #partnerships { background: var(--indigo); }
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1px;
+    background: rgba(201,168,76,0.1);
+    margin-top: 3rem;
+  }
+  .partner-cell {
+    background: var(--indigo);
+    padding: 2.5rem 2rem;
+    transition: background 0.3s;
+  }
+  .partner-cell:hover { background: var(--indigo-mid); }
+  .partner-type {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 200;
+    letter-spacing: 0.12em;
+    color: var(--gold-light);
+    margin-bottom: 0.6rem;
+  }
+  .partner-name {
+    font-size: 1rem;
+    color: var(--white);
+    margin-bottom: 0.8rem;
+  }
+  .partner-desc {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: var(--mist);
+    line-height: 1.7;
+  }
+  .partner-ideal {
+    margin-top: 1rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.8;
+  }
+
+  /* ─── CTA ─── */
+  #cta {
+    background: linear-gradient(165deg, #070f18, #0d1b2a 60%, #1a2f45);
+    text-align: center;
+    padding: 9rem 2rem;
+    border-top: 1px solid rgba(201,168,76,0.12);
+  }
+  #cta h2 { font-size: clamp(2rem, 4.5vw, 3.8rem); color: var(--white); margin: 0.8rem auto 1.5rem; max-width: 680px; }
+  #cta p { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.95rem; color: var(--mist); max-width: 480px; margin: 0 auto 3rem; line-height: 1.75; }
+  .cta-contacts { display: flex; gap: 3rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3.5rem; }
+  .cta-contact-block { text-align: left; }
+  .cta-contact-role { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.3rem; }
+  .cta-contact-name { font-size: 1rem; color: var(--white); margin-bottom: 0.2rem; }
+  .cta-contact-email { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.8rem; color: var(--mist); }
+  .cta-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--indigo);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 1rem 2.8rem;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+  /* ─── FOOTER ─── */
+  footer {
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid rgba(201,168,76,0.08);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(158,175,194,0.4);
+  }
+
+  /* ─── FADE IN ─── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  /* ─── CONFIDENTIAL BANNER ─── */
+  .conf-banner {
+    background: rgba(201,168,76,0.08);
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+    padding: 0.6rem 2rem;
+    text-align: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(201,168,76,0.6);
+  }
+</style>
+</head>
+<body>
+
+<!-- CONFIDENTIAL BANNER -->
+<div class="conf-banner">Confidential — Prepared exclusively for prospective brand partners · June 2026</div>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">Genviet Jeans · Factory Brief</span>
+  <span class="nav-tag">In partnership with Harvics · 2026</span>
+</nav>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section id="hero">
+  <div style="max-width:860px;margin:0 auto;">
+    <div class="hero-eyebrow fade-in">
+      <span class="label">Vietnam · Ninh Binh · Est. 2005</span>
+    </div>
+    <h1 class="fade-in">
+      Twenty years of denim.<br/>
+      <em>Ready for your most demanding brief.</em>
+    </h1>
+    <p class="hero-sub fade-in">
+      A fully integrated denim manufacturer with the certifications, technology, and compliance roadmap that Tier A brands require — presented transparently, not as a promise, but as a verifiable record.
+    </p>
+    <div class="hero-pill fade-in">
+      <span class="pill">WRAP Gold Certified</span>
+      <span class="pill">Higg Index Verified</span>
+      <span class="pill">AQL 1.5 Standard</span>
+      <span class="pill">BSCI Audited</span>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     NUMBERS
+══════════════════════════════════════ -->
+<section id="numbers">
+  <div class="container">
+    <div class="numbers-intro fade-in">
+      <span class="label">The Factory · At a Glance</span>
+      <div class="divider"></div>
+      <h2>Infrastructure built<br/>for international scale</h2>
+    </div>
+    <div class="numbers-grid">
+      <div class="num-cell fade-in">
+        <div class="num-big">12,888</div>
+        <div class="num-unit">m²</div>
+        <div class="num-label">Total Factory Area</div>
+      </div>
+      <div class="num-cell fade-in">
+        <div class="num-big">1.2<span style="font-size:1.4rem;">M</span></div>
+        <div class="num-unit">pcs / year</div>
+        <div class="num-label">Production Capacity</div>
+      </div>
+      <div class="num-cell fade-in">
+        <div class="num-big">863</div>
+        <div class="num-unit">machines</div>
+        <div class="num-label">Production Equipment</div>
+      </div>
+      <div class="num-cell fade-in">
+        <div class="num-big">350</div>
+        <div class="num-unit">workers</div>
+        <div class="num-label">Full Team (incl. office)</div>
+      </div>
+      <div class="num-cell fade-in">
+        <div class="num-big">6</div>
+        <div class="num-unit">lines</div>
+        <div class="num-label">Sewing Production Lines</div>
+      </div>
+      <div class="num-cell fade-in">
+        <div class="num-big">AQL<br/><span style="font-size:2.5rem;">1.5</span></div>
+        <div class="num-unit">standard</div>
+        <div class="num-label">Quality Control</div>
+      </div>
+      <div class="num-cell fade-in">
+        <div class="num-big">70<span style="font-size:1.6rem;">%</span></div>
+        <div class="num-unit">of output</div>
+        <div class="num-label">Exported Globally</div>
+      </div>
+      <div class="num-cell fade-in">
+        <div class="num-big">20</div>
+        <div class="num-unit">years</div>
+        <div class="num-label">Denim Heritage</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CERTIFIED TODAY
+══════════════════════════════════════ -->
+<section id="certified" class="section-pad">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">Compliance · Active Today</span>
+      <div class="divider-left"></div>
+      <h2>What is auditable<br/>right now</h2>
+      <p>Every certification below is active, verifiable, and available for your compliance team to review. No claims without documentation.</p>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card fade-in">
+        <div class="cert-icon">✓</div>
+        <div class="cert-name">WRAP Gold</div>
+        <div class="cert-desc">Worldwide Responsible Accredited Production. Covers labor rights, safety, environmental compliance, and customs. Gold tier — the highest WRAP classification.</div>
+        <div class="cert-badge">Valid Sept 2025 — Sept 2026</div>
+      </div>
+      <div class="cert-card fade-in">
+        <div class="cert-icon">✓</div>
+        <div class="cert-name">Higg Index (FEM)</div>
+        <div class="cert-desc">Facility Environmental Module active. Used as the primary ESG measurement tool by H&M Group, Inditex, Levi's, and most Scandinavian brands for supplier onboarding.</div>
+        <div class="cert-badge">Higg Verified</div>
+      </div>
+      <div class="cert-card fade-in">
+        <div class="cert-icon">✓</div>
+        <div class="cert-name">BSCI</div>
+        <div class="cert-desc">Business Social Compliance Initiative — the standard social audit framework accepted across European retail. Full 4-pillar audit completed.</div>
+        <div class="cert-badge">EU Compliant</div>
+      </div>
+      <div class="cert-card fade-in">
+        <div class="cert-icon">✓</div>
+        <div class="cert-name">ISO 9001</div>
+        <div class="cert-desc">Quality management system certification across all production stages. Upgrade from 2008 to 2015 standard is in plan for Q3 2026.</div>
+        <div class="cert-badge">Active · Upgrade Scheduled</div>
+      </div>
+      <div class="cert-card fade-in">
+        <div class="cert-icon">✓</div>
+        <div class="cert-name">OEKO-TEX Materials</div>
+        <div class="cert-desc">Input fabrics sourced with OEKO-TEX certified materials — tested for harmful substances at yarn and fabric stage, not just garment level.</div>
+        <div class="cert-badge">Input-Level Verified</div>
+      </div>
+      <div class="cert-card fade-in">
+        <div class="cert-icon">✓</div>
+        <div class="cert-name">MBR Wastewater System</div>
+        <div class="cert-desc">Membrane Bioreactor wastewater treatment — 550m³/day capacity, 500m³/day recycled. Discharge meets Vietnamese QCVN 13-MT:2015 Column A, the most stringent national standard.</div>
+        <div class="cert-badge">Environmentally Licensed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     COMPLIANCE ROADMAP
+══════════════════════════════════════ -->
+<section id="roadmap" class="section-pad">
+  <div class="container">
+    <div class="roadmap-intro fade-in">
+      <span class="label">Compliance · Forward Journey</span>
+      <div class="divider-left"></div>
+      <h2>Where we are going —<br/>and when</h2>
+      <p>
+        We believe in showing the roadmap, not just the destination. The certifications below are not yet in place — but each has a committed timeline, a named responsible party, and a budget allocation. This is what transparent sourcing looks like.
+      </p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item fade-in">
+        <div class="tl-dot live"></div>
+        <div class="tl-period live">Live · 2026</div>
+        <div class="tl-title">WRAP Gold + Higg FEM + BSCI + OEKO-TEX</div>
+        <div class="tl-desc">Current active certifications. All documentation available on request via Harvics compliance portal.</div>
+      </div>
+      <div class="tl-item fade-in">
+        <div class="tl-dot near"></div>
+        <div class="tl-period near">Q3 2026 — In Progress</div>
+        <div class="tl-title">ISO 9001:2015 Upgrade + SEDEX Registration</div>
+        <div class="tl-desc">ISO upgrade from 2008 to 2015 standard is scheduled for Q3 2026. SEDEX registration enables SMETA 4-pillar audit — required by H&M Group, KappAhl, Bestseller, Filippa K, and most EU multi-brand retailers for their vendor portals.</div>
+      </div>
+      <div class="tl-item fade-in">
+        <div class="tl-dot near"></div>
+        <div class="tl-period near">Q4 2026 — Confirmed</div>
+        <div class="tl-title">ZDHC MRSL Level 1 Verification</div>
+        <div class="tl-desc">Zero Discharge of Hazardous Chemicals Manufacturing Restricted Substances List — the standard required by Patagonia, G-Star Raw, H&M, and premium denim brands for wash chemistry compliance. Level 1 verification confirms all wash chemicals are ZDHC-approved.</div>
+      </div>
+      <div class="tl-item fade-in">
+        <div class="tl-dot future"></div>
+        <div class="tl-period future">Q1 2027</div>
+        <div class="tl-title">GOTS Certification (Organic Denim Lines)</div>
+        <div class="tl-desc">Global Organic Textile Standard — required by Nudie Jeans, Arket, Organic Basics, Filippa K for any organic cotton denim collections. Application submitted in Q2 2026.</div>
+      </div>
+      <div class="tl-item fade-in">
+        <div class="tl-dot future"></div>
+        <div class="tl-period future">Q2 2027</div>
+        <div class="tl-title">GRS + ISO 14001 + Living Wage Disclosure</div>
+        <div class="tl-desc">Global Recycled Standard for recycled-content lines. ISO 14001 Environmental Management System certification. Wage transparency report benchmarked against Vietnam Living Wage Index — in preparation for EU Digital Product Passport readiness (2027).</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CAPABILITIES
+══════════════════════════════════════ -->
+<section id="capabilities" class="section-pad">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">Production · Capabilities</span>
+      <div class="divider-left"></div>
+      <h2>What we make —<br/>and how</h2>
+      <p>All washing, finishing, and surface treatment is done in-house. Nothing is outsourced. This is what brand compliance teams need to know.</p>
+    </div>
+    <div class="cap-grid">
+      <div class="cap-item fade-in">
+        <div class="cap-number">01</div>
+        <h3 class="cap-title">Laser Cutting & Distressing</h3>
+        <p class="cap-desc">In-house laser systems create geometric patterns, cultural motifs, and worn-in effects without chemical abrasion — preserving fabric integrity while enabling brand-specific design signatures.</p>
+        <div class="cap-tags"><span class="cap-tag">In-House</span><span class="cap-tag">Chemical-Free</span><span class="cap-tag">Precision ±0.1mm</span></div>
+      </div>
+      <div class="cap-item fade-in">
+        <div class="cap-number">02</div>
+        <h3 class="cap-title">Enzyme & Eco Wash</h3>
+        <p class="cap-desc">Bio-based enzyme washes create natural colour gradients and fading effects with 60% less water than conventional stone washing. Each recipe is documented and reproducible across production runs.</p>
+        <div class="cap-tags"><span class="cap-tag">Water-Saving</span><span class="cap-tag">Bio-Based</span><span class="cap-tag">Reproducible</span></div>
+      </div>
+      <div class="cap-item fade-in">
+        <div class="cap-number">03</div>
+        <h3 class="cap-title">Premium Surface Treatments</h3>
+        <p class="cap-desc">Crinkling, abrasion, cracking, fog coating, heat pressing — all applied in-house. The same workshop produces for domestic retail and international export to the same standard.</p>
+        <div class="cap-tags"><span class="cap-tag">Crinkling</span><span class="cap-tag">Fog Coating</span><span class="cap-tag">Heat Press</span></div>
+      </div>
+      <div class="cap-item fade-in">
+        <div class="cap-number">04</div>
+        <h3 class="cap-title">Design & ODM Development</h3>
+        <p class="cap-desc">In-house design team and R&D engineers handle tech packs, sampling, and seasonal development. Small-batch sampling to large-scale production without change in quality control team.</p>
+        <div class="cap-tags"><span class="cap-tag">ODM Ready</span><span class="cap-tag">FOB</span><span class="cap-tag">CMPT</span></div>
+      </div>
+      <div class="cap-item fade-in">
+        <div class="cap-number">05</div>
+        <h3 class="cap-title">Quality Control · AQL 1.5</h3>
+        <p class="cap-desc">AQL 1.5 is the quality standard used by luxury and Tier A brands — most factories only offer AQL 2.5. Every garment is inspected for durability, shrinkage, colourfastness, and wearer safety.</p>
+        <div class="cap-tags"><span class="cap-tag">AQL 1.5</span><span class="cap-tag">Inline + Final</span><span class="cap-tag">Metal Detection</span></div>
+      </div>
+      <div class="cap-item fade-in">
+        <div class="cap-number">06</div>
+        <h3 class="cap-title">Export Logistics · Japan-Standard</h3>
+        <p class="cap-desc">Japan-standard metal detectors at dispatch. Packaging, warehousing, and documentation structured for US, EU, Japan, and Middle East export requirements. 70% of current output is exported.</p>
+        <div class="cap-tags"><span class="cap-tag">US/EU/JP/ME</span><span class="cap-tag">Metal Detection</span><span class="cap-tag">70% Export</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     THE HARVICS PARTNERSHIP
+══════════════════════════════════════ -->
+<section id="bridge" class="section-pad">
+  <div class="container">
+    <div class="bridge-inner">
+      <div class="bridge-text fade-in">
+        <span class="label">About Harvics</span>
+        <div class="divider-left"></div>
+        <h2>A sourcing partner<br/><em>fluent in both worlds.</em></h2>
+        <p>
+          Harvics is a global sourcing and trade consultancy. We work with manufacturers and brands simultaneously — not as intermediaries, but as a shared commercial layer that both sides trust.
+        </p>
+        <p>
+          For brands entering Vietnam or deepening their supply chain here, Harvics provides market knowledge, compliance coordination, and commercial continuity — without adding cost complexity.
+        </p>
+        <ul class="bridge-list">
+          <li>Compliance documentation formatted for your specific vendor portal</li>
+          <li>Audit scheduling coordinated with your internal calendar</li>
+          <li>Sample and approval process aligned to your product development cycle</li>
+          <li>Reporting in the format your team already uses</li>
+          <li>One point of commercial contact across all time zones</li>
+        </ul>
+      </div>
+      <div class="bridge-cards fade-in">
+        <div class="bridge-card">
+          <div class="bridge-card-label">Sourcing</div>
+          <h3 class="bridge-card-title">Market Access Without Complexity</h3>
+          <p class="bridge-card-desc">Deep relationships across Vietnam's manufacturing base. Harvics identifies the right production partner for each product category — not just the available one.</p>
+        </div>
+        <div class="bridge-card">
+          <div class="bridge-card-label">Compliance</div>
+          <h3 class="bridge-card-title">A Forward Calendar, Not Reactive Fixes</h3>
+          <p class="bridge-card-desc">Certification timelines are planned 12 months ahead. Your compliance team receives a structured schedule — not last-minute certificate requests before order placement.</p>
+        </div>
+        <div class="bridge-card">
+          <div class="bridge-card-label">Product Development</div>
+          <h3 class="bridge-card-title">Brief to Bulk in One Conversation</h3>
+          <p class="bridge-card-desc">From initial brief to bulk approval, Harvics coordinates between your product team and Genviet's R&D. Prototypes in 3 weeks. Approved samples in 6.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     PARTNERSHIP MODELS
+══════════════════════════════════════ -->
+<section id="partnerships" class="section-pad">
+  <div class="container">
+    <div class="section-header fade-in" style="text-align:center;max-width:580px;margin:0 auto 0;">
+      <span class="label">Collaboration · Formats</span>
+      <div class="divider"></div>
+      <h2>How we work<br/>with you</h2>
+    </div>
+    <div class="partner-grid">
+      <div class="partner-cell fade-in">
+        <div class="partner-type">FOB</div>
+        <h3 class="partner-name">Free On Board</h3>
+        <p class="partner-desc">You provide the design and specs. We source materials, manufacture, and deliver to the port of your choice. Full costing transparency — no hidden margins.</p>
+        <div class="partner-ideal">Ideal for brands with strong in-house design</div>
+      </div>
+      <div class="partner-cell fade-in">
+        <div class="partner-type">ODM</div>
+        <h3 class="partner-name">Original Design Manufacturing</h3>
+        <p class="partner-desc">From concept to bulk — design development, sampling, approval, and production all managed in-house. Your brand label, our craft. IP ownership belongs to you from first sample.</p>
+        <div class="partner-ideal">Ideal for brands entering denim or new categories</div>
+      </div>
+      <div class="partner-cell fade-in">
+        <div class="partner-type">CMPT</div>
+        <h3 class="partner-name">Cut, Make, Pack & Trim</h3>
+        <p class="partner-desc">You supply the fabric. We cut, sew, wash, finish, and pack to your specification. Lower MOQ entry point with faster lead times for existing fabric holders.</p>
+        <div class="partner-ideal">Ideal for brands with fabric ownership strategies</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CTA
+══════════════════════════════════════ -->
+<section id="cta">
+  <span class="label fade-in">Next Step</span>
+  <div class="divider fade-in"></div>
+  <h2 class="fade-in">Two partners.<br/>One conversation.</h2>
+  <p class="fade-in">Reach either contact below. A full vendor package — certifications, audit history, capacity calendar, and sample lead time — is ready within 48 hours.</p>
+  <div class="cta-contacts fade-in">
+    <div class="cta-contact-block">
+      <div class="cta-contact-role">Genviet · Production Partner</div>
+      <div class="cta-contact-name">Ms. Trịnh Thanh Hải · CEO</div>
+      <div class="cta-contact-email">haitt@genviet.com · +84 934 393 838</div>
+    </div>
+    <div class="cta-contact-block">
+      <div class="cta-contact-role">Harvics · Sourcing Partner</div>
+      <div class="cta-contact-name">Harvics Global</div>
+      <div class="cta-contact-email">contact@harvics.com · harvics.com</div>
+    </div>
+  </div>
+  <a href="mailto:contact@harvics.com" class="cta-btn fade-in">Request Vendor Package</a>
+</section>
+
+<footer>
+  © 2026 Harvics Global · Prepared in partnership with Genviet Fashion Joint Stock Company · Cau Giat Industrial Zone, Ninh Binh, Vietnam
+</footer>
+
+<script>
+  // Fade-in on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "Vatify OS",
+  "description": "Premium VAT-ready expense management for European freelancers. Powered by Harvics Global Ventures.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

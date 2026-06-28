@@ -75,70 +75,70 @@ const verticalMeta: Record<string, { tagline: string; description: string; stats
     description: 'From premium menswear and womenswear to home textiles and accessories — Harvics sources, manufactures, and distributes across the full textile value chain. Factory-direct partnerships in South Asia, Turkey, and China.',
     stats: [{ label: 'Categories', value: '17' }, { label: 'SKUs', value: '2,400+' }, { label: 'Countries', value: '22' }],
     icon: '🧵',
-    gradient: 'from-[#1A0505] via-[#120303] to-[#0D0D0D]',
+    gradient: 'from-[#3D1212] via-[#120303] to-[#0D0D0D]',
   },
   fmcg: {
     tagline: 'Food, Personal Care & Home Care',
     description: 'Full FMCG distribution — staples, dairy, packaged foods, beverages, personal care, and home care. Cold chain logistics, in-market distribution, and AI-driven demand forecasting.',
     stats: [{ label: 'Product Lines', value: '6' }, { label: 'SKUs', value: '1,800+' }, { label: 'Retail Points', value: '15,000+' }],
     icon: '🛒',
-    gradient: 'from-[#1A0505] via-[#120303] to-[#0D0D0D]',
+    gradient: 'from-[#3D1212] via-[#120303] to-[#0D0D0D]',
   },
   commodities: {
     tagline: 'Agri, Energy, Metals & Softs',
     description: 'Strategic commodities trading — energy, metals, agricultural products, edible oils, proteins, and industrial chemicals. Spot and contract-based trading with global counterparties.',
     stats: [{ label: 'Verticals', value: '10' }, { label: 'Trade Volume', value: '$120M+' }, { label: 'Partners', value: '80+' }],
     icon: '📦',
-    gradient: 'from-[#1A0505] via-[#120303] to-[#0D0D0D]',
+    gradient: 'from-[#3D1212] via-[#120303] to-[#0D0D0D]',
   },
   industrial: {
     tagline: 'Chemicals, Machinery & Safety',
     description: 'Industrial procurement and supply — CNC machinery, safety equipment, copper wire, iron ore, and MRO supplies. Turnkey solutions for manufacturing and construction sectors.',
     stats: [{ label: 'Product Range', value: '500+' }, { label: 'Industries Served', value: '12' }, { label: 'Countries', value: '15' }],
     icon: '🏭',
-    gradient: 'from-[#1A0505] via-[#120303] to-[#0D0D0D]',
+    gradient: 'from-[#3D1212] via-[#120303] to-[#0D0D0D]',
   },
   minerals: {
     tagline: 'Metals, Energy & Precious Minerals',
     description: 'Mining and minerals trading — iron ore, copper, aluminum, coal, lithium, gold, silver, and platinum. From mine to market with full compliance and traceability.',
     stats: [{ label: 'Mineral Types', value: '14' }, { label: 'Mining Partners', value: '25+' }, { label: 'Regions', value: '8' }],
     icon: '⛏️',
-    gradient: 'from-[#1A0505] via-[#120303] to-[#0D0D0D]',
+    gradient: 'from-[#3D1212] via-[#120303] to-[#0D0D0D]',
   },
   'oil-gas': {
     tagline: 'Upstream, Midstream & Downstream',
     description: 'End-to-end oil & gas services — exploration, pipeline EPC, refinery operations, trading & offtake, and HSE compliance. Operating across the Middle East, Africa, and Central Asia.',
     stats: [{ label: 'Service Lines', value: '4' }, { label: 'Projects', value: '30+' }, { label: 'Countries', value: '11' }],
     icon: '🛢️',
-    gradient: 'from-[#1A0505] via-[#120303] to-[#0D0D0D]',
+    gradient: 'from-[#3D1212] via-[#120303] to-[#0D0D0D]',
   },
   'real-estate': {
     tagline: 'Commercial, Residential & Industrial',
     description: 'Real estate development and facilities management — Grade-A offices, luxury residences, industrial parks, SEZ facilities, and full FM services across the GCC and South Asia.',
     stats: [{ label: 'Asset Classes', value: '4' }, { label: 'Sq Ft Managed', value: '2M+' }, { label: 'Cities', value: '8' }],
     icon: '🏢',
-    gradient: 'from-[#1A0505] via-[#120303] to-[#0D0D0D]',
+    gradient: 'from-[#3D1212] via-[#120303] to-[#0D0D0D]',
   },
   sourcing: {
     tagline: 'Global Sourcing & Quality Control',
     description: 'Strategic sourcing, OEM/ODM manufacturing, quality inspection, logistics consulting, and sustainable procurement. AI-powered supplier matching and blockchain traceability.',
     stats: [{ label: 'Services', value: '8' }, { label: 'Factories Audited', value: '400+' }, { label: 'Countries', value: '18' }],
     icon: '🔍',
-    gradient: 'from-[#1A0505] via-[#120303] to-[#0D0D0D]',
+    gradient: 'from-[#3D1212] via-[#120303] to-[#0D0D0D]',
   },
   finance: {
     tagline: 'Trade Finance, HPay & Risk',
     description: 'Financial services for global trade — letters of credit, forfaiting, digital wallets (HPay), invoicing, reconciliation, KYC/AML compliance, and risk scoring.',
     stats: [{ label: 'Products', value: '12' }, { label: 'Transactions/Mo', value: '50K+' }, { label: 'Compliance', value: '100%' }],
     icon: '💳',
-    gradient: 'from-[#1A0505] via-[#120303] to-[#0D0D0D]',
+    gradient: 'from-[#3D1212] via-[#120303] to-[#0D0D0D]',
   },
   ai: {
     tagline: 'Forecasting, Vision & Integration',
     description: 'AI-powered enterprise solutions — demand forecasting, computer vision for QC, conversational AI, data pipelines, ERP integration, and mobile apps. Built on Harvics\' proprietary ML models.',
     stats: [{ label: 'Models', value: '6' }, { label: 'Accuracy', value: '94%+' }, { label: 'Integrations', value: '15+' }],
     icon: '🤖',
-    gradient: 'from-[#1A0505] via-[#120303] to-[#0D0D0D]',
+    gradient: 'from-[#3D1212] via-[#120303] to-[#0D0D0D]',
   },
 }
 
@@ -185,7 +185,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
   const [activeFilter, setActiveFilter] = useState<string | null>(null)
   const [sortBy, setSortBy] = useState<'name' | 'price'>('name')
   const [hoveredProduct, setHoveredProduct] = useState<number | null>(null)
-  const meta = verticalMeta[vertical.key] || { tagline: '', description: '', stats: [], icon: '📊', gradient: 'from-[#1A0505] to-[#0D0D0D]' }
+  const meta = verticalMeta[vertical.key] || { tagline: '', description: '', stats: [], icon: '📊', gradient: 'from-[#3D1212] to-[#0D0D0D]' }
   const landing = getVerticalLanding(vertical.key)
   const categoryDescs = getAllCategoryDescriptions(vertical.key)
 
@@ -295,7 +295,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
             >
               <Link
                 href={`/${locale}/contact`}
-                className="inline-flex items-center justify-center rounded-sm px-8 py-3 bg-[#C3A35E] text-[#1A0505] text-sm font-semibold uppercase tracking-[0.18em] transition-all duration-300 hover:bg-[#d4b46e]"
+                className="inline-flex items-center justify-center rounded-sm px-8 py-3 bg-[#C3A35E] text-[#3D1212] text-sm font-semibold uppercase tracking-[0.18em] transition-all duration-300 hover:bg-[#d4b46e]"
               >
                 Get a Quote
               </Link>
@@ -318,15 +318,15 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
             {meta.stats.map((s, index) => (
               <div
                 key={s.label}
-                className="bg-white border border-[#1A0505]/10 p-8 text-center shadow-[0_30px_80px_rgba(74,21,32,0.18),0_4px_14px_rgba(74,21,32,0.08)]"
+                className="bg-white border border-[#3D1212]/10 p-8 text-center shadow-[0_30px_80px_rgba(74,21,32,0.18),0_4px_14px_rgba(74,21,32,0.08)]"
                 style={{
                   opacity: heroSection.inView ? 1 : 0,
                   transform: heroSection.inView ? 'translateY(0)' : 'translateY(20px)',
                   transition: `opacity 0.7s ease-out ${150 + index * 100}ms, transform 0.7s ease-out ${150 + index * 100}ms`,
                 }}
               >
-                <div className="font-serif text-[48px] md:text-[56px] font-bold text-[#1A0505] leading-none tabular-nums">{s.value}</div>
-                <div className="text-[11px] uppercase tracking-[0.25em] text-[#1A0505]/70 mt-3 font-semibold">{s.label}</div>
+                <div className="font-serif text-[48px] md:text-[56px] font-bold text-[#3D1212] leading-none tabular-nums">{s.value}</div>
+                <div className="text-[11px] uppercase tracking-[0.25em] text-[#3D1212]/70 mt-3 font-semibold">{s.label}</div>
               </div>
             ))}
           </div>
@@ -348,7 +348,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
                 transform: categorySection.inView ? 'translateY(0)' : 'translateY(20px)',
               }}
             >
-              <h2 dir="ltr" className="text-2xl font-semibold text-[#1A0505] mb-2" style={{ letterSpacing: '-0.02em' }}>
+              <h2 dir="ltr" className="text-2xl font-semibold text-[#3D1212] mb-2" style={{ letterSpacing: '-0.02em' }}>
                 {landing.title}
               </h2>
               <p dir="ltr" className="text-sm text-harvics-muted max-w-[550px] mx-auto leading-relaxed">{landing.description}</p>
@@ -362,7 +362,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
                 <Link
                   key={block.title}
                   href={`/${locale}/${vertical.key}/${slugify(block.title)}`}
-                  className="group relative bg-white/60 border border-[#C3A35E]/15 px-5 py-5 text-center transition-all duration-300 hover:bg-[#1A0505] hover:border-[#1A0505] overflow-hidden"
+                  className="group relative bg-white/60 border border-[#C3A35E]/15 px-5 py-5 text-center transition-all duration-300 hover:bg-[#3D1212] hover:border-[#3D1212] overflow-hidden"
                   title={catDesc?.description || ''}
                   style={{
                     opacity: categorySection.inView ? 1 : 0,
@@ -371,10 +371,10 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
                   }}
                 >
                   <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#C3A35E] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-                  <div className="text-sm font-semibold text-[#1A0505] group-hover:text-white transition-colors duration-300">
+                  <div className="text-sm font-semibold text-[#3D1212] group-hover:text-white transition-colors duration-300">
                     {block.title}
                   </div>
-                  <span className="block text-xs text-[#1A0505]/40 group-hover:text-white/50 font-normal mt-1.5 transition-colors duration-300">
+                  <span className="block text-xs text-[#3D1212]/40 group-hover:text-white/50 font-normal mt-1.5 transition-colors duration-300">
                     {block.items.length} items →
                   </span>
                 </Link>
@@ -397,13 +397,13 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
               transform: productSection.inView ? 'translateX(0)' : 'translateX(-20px)',
             }}
           >
-            <h3 className="text-xs font-bold text-[#1A0505] uppercase tracking-[0.15em] mb-4 flex items-center gap-2">
+            <h3 className="text-xs font-bold text-[#3D1212] uppercase tracking-[0.15em] mb-4 flex items-center gap-2">
               <span className="w-4 h-[2px] bg-[#C3A35E]" />
               Categories
             </h3>
             <button
               onClick={() => setActiveFilter(null)}
-              className={`block w-full text-left text-sm py-2.5 border-b border-[#C3A35E]/10 transition-all duration-200 ${!activeFilter ? 'text-[#1A0505] font-bold pl-2 border-l-2 border-l-[#C3A35E]' : 'text-[#1A0505]/50 hover:text-[#1A0505] hover:pl-1'
+              className={`block w-full text-left text-sm py-2.5 border-b border-[#C3A35E]/10 transition-all duration-200 ${!activeFilter ? 'text-[#3D1212] font-bold pl-2 border-l-2 border-l-[#C3A35E]' : 'text-[#3D1212]/50 hover:text-[#3D1212] hover:pl-1'
                 }`}
             >
               All ({allProducts.length})
@@ -414,7 +414,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
                 <button
                   key={sub}
                   onClick={() => setActiveFilter(sub)}
-                  className={`block w-full text-left text-sm py-2.5 border-b border-[#C3A35E]/10 transition-all duration-200 capitalize ${activeFilter === sub ? 'text-[#1A0505] font-bold pl-2 border-l-2 border-l-[#C3A35E]' : 'text-[#1A0505]/50 hover:text-[#1A0505] hover:pl-1'
+                  className={`block w-full text-left text-sm py-2.5 border-b border-[#C3A35E]/10 transition-all duration-200 capitalize ${activeFilter === sub ? 'text-[#3D1212] font-bold pl-2 border-l-2 border-l-[#C3A35E]' : 'text-[#3D1212]/50 hover:text-[#3D1212] hover:pl-1'
                     }`}
                 >
                   {sub.replace(/([A-Z])/g, ' $1').trim()} ({count})
@@ -423,7 +423,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
             })}
 
             {/* Explore links */}
-            <h3 className="text-xs font-bold text-[#1A0505] uppercase tracking-[0.15em] mt-7 mb-3 flex items-center gap-2">
+            <h3 className="text-xs font-bold text-[#3D1212] uppercase tracking-[0.15em] mt-7 mb-3 flex items-center gap-2">
               <span className="w-4 h-[2px] bg-[#C3A35E]" />
               Explore
             </h3>
@@ -431,7 +431,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
               <Link
                 key={block.title}
                 href={`/${locale}/${vertical.key}/${slugify(block.title)}`}
-                className="group block text-sm text-[#1A0505]/50 hover:text-[#1A0505] py-2 border-b border-[#C3A35E]/10 transition-all duration-200"
+                className="group block text-sm text-[#3D1212]/50 hover:text-[#3D1212] py-2 border-b border-[#C3A35E]/10 transition-all duration-200"
               >
                 <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-[#C3A35E] mr-1">›</span>
                 {block.title}
@@ -451,8 +451,8 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
             }}
           >
             <div className="flex items-center gap-3">
-              <span className="text-sm text-[#1A0505]/60">
-                <strong className="text-[#1A0505] font-semibold">{sortedProducts.length}</strong>{' '}
+              <span className="text-sm text-[#3D1212]/60">
+                <strong className="text-[#3D1212] font-semibold">{sortedProducts.length}</strong>{' '}
                 {sortedProducts.length === 1 ? 'product' : 'products'}
               </span>
               {activeFilter && (
@@ -467,7 +467,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as 'name' | 'price')}
-              className="text-sm text-[#1A0505] bg-white border border-[#C3A35E]/20 px-3 py-1.5 focus:border-[#C3A35E] focus:outline-none transition-colors"
+              className="text-sm text-[#3D1212] bg-white border border-[#C3A35E]/20 px-3 py-1.5 focus:border-[#C3A35E] focus:outline-none transition-colors"
             >
               <option value="name">Sort by Name</option>
               <option value="price">Sort by Price</option>
@@ -515,12 +515,12 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
                       />
                     )}
                     {/* Overlay gradient on hover */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#1A0505]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#3D1212]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     {/* Quick action on hover */}
                     <div className="absolute bottom-3 left-3 right-3 flex gap-2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                       <Link
                         href={`/${locale}/contact`}
-                        className="flex-1 text-center text-xs font-semibold uppercase tracking-wider py-2 bg-[#C3A35E] text-[#1A0505] hover:bg-[#d4b46e] transition-colors duration-200"
+                        className="flex-1 text-center text-xs font-semibold uppercase tracking-wider py-2 bg-[#C3A35E] text-[#3D1212] hover:bg-[#d4b46e] transition-colors duration-200"
                       >
                         Enquire
                       </Link>
@@ -528,11 +528,11 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
                   </div>
                   {/* Info */}
                   <div className="p-4">
-                    <h4 className="text-sm font-semibold text-[#1A0505] mb-1 group-hover:text-[#C3A35E] transition-colors duration-200">
+                    <h4 className="text-sm font-semibold text-[#3D1212] mb-1 group-hover:text-[#C3A35E] transition-colors duration-200">
                       {product.name}
                     </h4>
                     {product.desc && (
-                      <p className="text-xs text-[#1A0505]/45 mb-2 leading-relaxed line-clamp-2">{product.desc}</p>
+                      <p className="text-xs text-[#3D1212]/45 mb-2 leading-relaxed line-clamp-2">{product.desc}</p>
                     )}
                     <div className="flex items-center justify-between">
                       <div className="text-sm font-bold text-[#C3A35E]">{product.price}</div>
@@ -545,10 +545,10 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
           </div>
 
           {sortedProducts.length === 0 && (
-            <div className="text-center py-20 text-[#1A0505]/30">
+            <div className="text-center py-20 text-[#3D1212]/30">
               <div className="text-5xl mb-4 opacity-30">📦</div>
               <p className="text-lg font-medium mb-2">No products in this category yet.</p>
-              <p className="text-sm text-[#1A0505]/40">Try selecting a different category or clearing your filter.</p>
+              <p className="text-sm text-[#3D1212]/40">Try selecting a different category or clearing your filter.</p>
             </div>
           )}
         </div>
@@ -557,7 +557,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
       {/* ═══════ CTA BANNER ═══════ */}
       <section
         ref={ctaSection.ref}
-        className="relative bg-[#1A0505] border-t border-[#C3A35E]/20 overflow-hidden"
+        className="relative bg-[#3D1212] border-t border-[#C3A35E]/20 overflow-hidden"
       >
         <div className="absolute inset-0 opacity-[0.03]"
           style={{
@@ -588,7 +588,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
           >
             <Link
               href={`/${locale}/contact`}
-              className="group relative px-8 py-3.5 bg-[#C3A35E] text-[#1A0505] text-sm font-bold uppercase tracking-wider overflow-hidden"
+              className="group relative px-8 py-3.5 bg-[#C3A35E] text-[#3D1212] text-sm font-bold uppercase tracking-wider overflow-hidden"
             >
               <span className="relative z-10">Get a Quote</span>
               <span className="absolute inset-0 bg-[#d4b46e] translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />

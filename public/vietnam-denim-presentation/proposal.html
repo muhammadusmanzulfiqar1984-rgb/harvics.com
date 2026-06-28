@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Storyline Proposal</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #070f18;
+    --deep: #0d1b2a;
+    --mid: #1a2f45;
+    --gold: #c9a84c;
+    --gold-l: #e2c47a;
+    --cream: #f5f0e8;
+    --mist: #9eafc2;
+    --green: #4caf82;
+    --orange: #e8903a;
+    --red: #d95f5f;
+    --white: #fff;
+  }
+  body { background: var(--ink); color: var(--cream); font-family: 'Helvetica Neue', Arial, sans-serif; padding: 0; }
+
+  /* TOP BAR */
+  .topbar { background: rgba(201,168,76,0.08); border-bottom: 1px solid rgba(201,168,76,0.2); padding: 0.8rem 2rem; display: flex; align-items: center; justify-content: space-between; }
+  .topbar-title { font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+  .topbar-sub { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mist); }
+
+  /* LEGEND */
+  .legend { display: flex; gap: 2rem; padding: 1.2rem 2rem; border-bottom: 1px solid rgba(255,255,255,0.05); flex-wrap: wrap; }
+  .leg { display: flex; align-items: center; gap: 0.5rem; font-size: 0.72rem; color: var(--mist); }
+  .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .dot-keep { background: var(--green); }
+  .dot-new { background: var(--gold); }
+  .dot-remove { background: var(--red); }
+  .dot-warn { background: var(--orange); }
+
+  /* MAIN GRID */
+  .page { display: grid; grid-template-columns: 220px 1fr; min-height: 100vh; }
+
+  /* SIDEBAR — ACT LIST */
+  .sidebar { background: var(--deep); border-right: 1px solid rgba(201,168,76,0.1); padding: 2rem 0; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+  .act-link { display: block; padding: 0.7rem 1.5rem; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mist); cursor: pointer; text-decoration: none; border-left: 2px solid transparent; transition: all 0.2s; }
+  .act-link:hover, .act-link.active { color: var(--gold); border-left-color: var(--gold); background: rgba(201,168,76,0.05); }
+  .act-num { display: block; font-size: 0.55rem; color: rgba(158,175,194,0.5); margin-bottom: 0.15rem; }
+  .sidebar-label { padding: 0.6rem 1.5rem; font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.4); margin-top: 1rem; }
+
+  /* CONTENT */
+  .content { padding: 3rem 2.5rem; max-width: 900px; }
+
+  /* ACT BLOCK */
+  .act { margin-bottom: 4rem; scroll-margin-top: 2rem; }
+  .act-header { display: flex; align-items: flex-start; gap: 1.2rem; margin-bottom: 1.5rem; }
+  .act-badge { flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; }
+  .badge-keep { background: rgba(76,175,130,0.15); border: 1.5px solid var(--green); color: var(--green); }
+  .badge-new { background: rgba(201,168,76,0.15); border: 1.5px solid var(--gold); color: var(--gold); }
+  .badge-warn { background: rgba(232,144,58,0.15); border: 1.5px solid var(--orange); color: var(--orange); }
+  .act-meta { flex: 1; }
+  .act-tag { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.3rem; }
+  .tag-keep { color: var(--green); }
+  .tag-new { color: var(--gold); }
+  .tag-warn { color: var(--orange); }
+  .act-title { font-size: 1.3rem; color: var(--white); font-family: Georgia, serif; line-height: 1.2; margin-bottom: 0.3rem; }
+  .act-title em { font-style: italic; color: var(--gold-l); }
+  .act-purpose { font-size: 0.8rem; color: var(--mist); line-height: 1.65; max-width: 620px; }
+
+  /* CONTENT CARD */
+  .card { background: var(--mid); border: 1px solid rgba(201,168,76,0.12); border-radius: 3px; padding: 1.4rem 1.6rem; margin-bottom: 1rem; }
+  .card-label { font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.6rem; }
+  .card p { font-size: 0.83rem; color: var(--cream); line-height: 1.7; }
+  .card-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+  .mini-card { background: var(--deep); border: 1px solid rgba(201,168,76,0.1); border-radius: 3px; padding: 1rem 1.2rem; }
+  .mini-label { font-size: 0.58rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--mist); margin-bottom: 0.3rem; }
+  .mini-val { font-size: 0.85rem; color: var(--white); line-height: 1.5; }
+
+  /* ANTI-LEAKAGE BOX */
+  .anti-leak { background: rgba(232,144,58,0.06); border: 1px solid rgba(232,144,58,0.3); border-left: 3px solid var(--orange); border-radius: 3px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; }
+  .anti-leak-label { font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.5rem; }
+  .anti-leak p { font-size: 0.82rem; color: var(--cream); line-height: 1.65; }
+
+  /* PREVIEW STRIP */
+  .preview { background: linear-gradient(135deg, #070f18, #0d1b2a); border: 1px solid rgba(201,168,76,0.2); border-radius: 3px; padding: 1.5rem 1.8rem; margin-bottom: 1rem; }
+  .preview-label { font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.6); margin-bottom: 0.8rem; }
+  .preview-text { font-size: 0.85rem; color: var(--cream); line-height: 1.75; font-style: italic; border-left: 2px solid rgba(201,168,76,0.3); padding-left: 1rem; }
+
+  /* DIVIDER */
+  hr { border: none; border-top: 1px solid rgba(201,168,76,0.08); margin: 3rem 0; }
+
+  /* FLOW DIAGRAM */
+  .flow { display: flex; flex-direction: column; gap: 0; }
+  .flow-item { display: flex; gap: 1rem; }
+  .flow-line { display: flex; flex-direction: column; align-items: center; }
+  .flow-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; margin-top: 0.3rem; }
+  .flow-connector { width: 1px; background: rgba(201,168,76,0.2); flex: 1; margin: 3px 0; min-height: 20px; }
+  .flow-content { padding-bottom: 1.2rem; flex: 1; }
+  .flow-title { font-size: 0.82rem; color: var(--white); font-weight: 600; margin-bottom: 0.2rem; }
+  .flow-desc { font-size: 0.75rem; color: var(--mist); line-height: 1.6; }
+  .flow-dot-keep { background: var(--green); }
+  .flow-dot-new { background: var(--gold); }
+  .flow-dot-warn { background: var(--orange); }
+
+  /* BIG QUESTION */
+  .bq { background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.25); border-radius: 4px; padding: 2rem; text-align: center; margin-top: 4rem; }
+  .bq h2 { font-family: Georgia, serif; font-size: 1.5rem; color: var(--white); margin-bottom: 0.6rem; }
+  .bq p { font-size: 0.85rem; color: var(--mist); max-width: 500px; margin: 0 auto; line-height: 1.7; }
+
+  @media (max-width: 700px) {
+    .page { grid-template-columns: 1fr; }
+    .sidebar { display: none; }
+    .card-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="topbar-title">Storyline Proposal — Before Any Changes</span>
+  <span class="topbar-sub">For review only · Not the final deck</span>
+</div>
+
+<div style="padding:0.8rem 2rem; border-bottom:1px solid rgba(255,255,255,0.05);">
+  <div class="legend">
+    <div class="leg"><div class="dot dot-keep"></div> Already in the deck — keep as is</div>
+    <div class="leg"><div class="dot dot-new"></div> New section — needs to be added</div>
+    <div class="leg"><div class="dot dot-warn"></div> Existing section — update with real data</div>
+    <div class="leg"><div class="dot dot-remove"></div> Anti-leakage concern — strategy noted</div>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar">
+    <div class="sidebar-label">The Story Arc</div>
+    <a class="act-link" href="#act0"><span class="act-num">OPENING</span>The Thread</a>
+    <a class="act-link" href="#act1"><span class="act-num">ACT 1</span>Who Is Harvics</a>
+    <a class="act-link" href="#act2"><span class="act-num">ACT 2</span>What We Found</a>
+    <a class="act-link" href="#act3"><span class="act-num">ACT 3</span>The GCC Ceiling</a>
+    <a class="act-link" href="#act4"><span class="act-num">ACT 4</span>The World Outside</a>
+    <a class="act-link" href="#act5"><span class="act-num">ACT 5</span>The Distance</a>
+    <a class="act-link" href="#act6"><span class="act-num">ACT 6</span>The Path</a>
+    <a class="act-link" href="#act7"><span class="act-num">ACT 7</span>We Are Already There</a>
+    <a class="act-link" href="#act8"><span class="act-num">ACT 8</span>Two Futures</a>
+    <div class="sidebar-label">Anti-Leakage</div>
+    <a class="act-link" href="#security"><span class="act-num">STRATEGY</span>What She Cannot Copy</a>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- OPENING -->
+    <div class="act" id="act0">
+      <div class="act-header">
+        <div class="act-badge badge-keep">OPEN</div>
+        <div class="act-meta">
+          <div class="act-tag tag-keep">Already in deck — keep exactly as is</div>
+          <h2 class="act-title">The Thread — <em>She opens the doors</em></h2>
+          <p class="act-purpose">The existing cinematic door animation, runway video, and Silk Runway music. This sets the tone — luxury, respect, gravitas. She feels this is not a generic sales pitch. Keep everything exactly as is.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-label">What already works</div>
+        <p>Cinematic doors with VI/EN language toggle → runway video (slow ping-pong) → Silk Runway ambient music fading in. The opening already communicates: this is a serious, premium presentation. Do not change one pixel of this.</p>
+      </div>
+    </div>
+
+    <!-- ACT 1 -->
+    <div class="act" id="act1">
+      <div class="act-header">
+        <div class="act-badge badge-warn">UPD</div>
+        <div class="act-meta">
+          <div class="act-tag tag-warn">Existing section — update tone and content</div>
+          <h2 class="act-title">Who Is Harvics — <em>Not a broker. Not an agent.</em></h2>
+          <p class="act-purpose">The existing hero/about section already introduces Harvics. Update it so she understands immediately: Harvics is a sovereign trade architecture firm — we are IN the rooms where EU and Scandinavian buyers make decisions. Keep it brief. She should feel gravitas, not a sales pitch.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-label">Keep from existing deck</div>
+        <p>The hero stats (200+ buyers, Prague gateway, Bluezone). The ticker. The about section cards. The RTM map showing Prague → Munich → EU → Americas.</p>
+      </div>
+      <div class="card">
+        <div class="card-label">Tone update needed</div>
+        <p>Currently the about section says "GENVIET is an apex brand — not a factory." This is correct but comes too early. We need to first say WHO HARVICS IS before we evaluate her. Small reordering of emphasis, not a rewrite.</p>
+      </div>
+    </div>
+
+    <!-- ACT 2 — NEW -->
+    <div class="act" id="act2">
+      <div class="act-header">
+        <div class="act-badge badge-new">NEW</div>
+        <div class="act-meta">
+          <div class="act-tag tag-new">New section — add this</div>
+          <h2 class="act-title">What We Found — <em>We did our homework</em></h2>
+          <p class="act-purpose">This is the trust-builder. Before we say anything about gaps or the future, we show her exactly what we found when we evaluated her factory. Real data. Real respect. She feels: "These people actually walked through my factory on paper."</p>
+        </div>
+      </div>
+
+      <div class="preview">
+        <div class="preview-label">How this section reads in the deck</div>
+        <div class="preview-text">
+          "Before we talk about where you could go, we want to show you what we saw when we looked at where you are.<br/><br/>
+          Twenty years. 863 machines. 12,888 square metres. 350 people who come to work every day. A wastewater system that most factories in Europe cannot match. A quality control standard stricter than most brands require.<br/><br/>
+          This is not a white-label factory. This is a manufacturing house with a 20-year story — and the world hasn't heard it yet."
+        </div>
+      </div>
+
+      <div class="card-row">
+        <div class="mini-card">
+          <div class="mini-label">Real factory data we show</div>
+          <div class="mini-val">12,888m² · 863 machines · 350 workers · 1.2M pcs/year · 6 lines · AQL 1.5 · 20 years · WRAP Gold · Higg Index · BSCI · MBR wastewater</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-label">Psychological effect</div>
+          <div class="mini-val">She sees we read her actual documents. She trusts us. She stops treating this as a sales pitch and starts treating it as a business conversation.</div>
+        </div>
+      </div>
+
+      <div class="anti-leak">
+        <div class="anti-leak-label">No leakage risk here</div>
+        <p>This is all her own data. She already knows it. Showing it back to her doesn't give her anything new — it just proves we're serious. Zero leakage risk on this section.</p>
+      </div>
+    </div>
+
+    <!-- ACT 3 -->
+    <div class="act" id="act3">
+      <div class="act-header">
+        <div class="act-badge badge-warn">UPD</div>
+        <div class="act-meta">
+          <div class="act-tag tag-warn">Existing section — update language</div>
+          <h2 class="act-title">The GCC Ceiling — <em>What this capability is worth</em></h2>
+          <p class="act-purpose">The existing financial module already shows the margin gap between FOB factory price and EU retail price. This section frames the GCC situation without naming GCC — it's "the current buyers." She recognises it herself. We don't need to say "GCC leeches" — the numbers say it.</p>
+        </div>
+      </div>
+
+      <div class="preview">
+        <div class="preview-label">The framing (no GCC named explicitly)</div>
+        <div class="preview-text">
+          "Your factory produces at a cost that the current market is not rewarding correctly.<br/><br/>
+          A garment leaving this factory at €12 FOB is selling in a European boutique for €78. The difference — €66 — is going to someone who made a phone call. Not to the 350 people who made the garment."
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-label">What stays from existing deck</div>
+        <p>The margin simulator (FOB vs retail price), the broker leakage calculation, the "229 historic shipments as spot orders" narrative. All of this already exists and is powerful. Just update the language so it doesn't feel accusatory — frame it as a market structure problem, not her problem.</p>
+      </div>
+    </div>
+
+    <!-- ACT 4 -->
+    <div class="act" id="act4">
+      <div class="act-header">
+        <div class="act-badge badge-keep">KEEP</div>
+        <div class="act-meta">
+          <div class="act-tag tag-keep">Already in deck — keep as is</div>
+          <h2 class="act-title">The World Outside — <em>€14B. No dominant Vietnamese name.</em></h2>
+          <p class="act-purpose">The existing Markets section already shows EU, Scandinavia, Americas corridors with the €14B market size. The brand ribbon (Levi's, G-Star, Nudie etc.) already shows the ecosystem she could enter. Keep this exactly — it's effective.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-label">Why this works as is</div>
+        <p>She sees the EU denim market is €14B and there is no dominant Vietnamese brand in it. She immediately sees the gap is an opportunity, not a problem. The existing section already communicates this perfectly.</p>
+      </div>
+    </div>
+
+    <!-- ACT 5 — NEW -->
+    <div class="act" id="act5">
+      <div class="act-header">
+        <div class="act-badge badge-new">NEW</div>
+        <div class="act-meta">
+          <div class="act-tag tag-new">New section — the most critical one</div>
+          <h2 class="act-title">The Distance — <em>Not problems. Terrain.</em></h2>
+          <p class="act-purpose">This is the gap analysis — but framed as distance to cross, not deficiencies to fix. The market has gates. Harvics holds the keys. The specific certification names are mentioned (she'll find them on Google anyway) but the VALUE is framed as: a driving licence doesn't tell you where to drive.</p>
+        </div>
+      </div>
+
+      <div class="preview">
+        <div class="preview-label">How the gap section reads — the key framing</div>
+        <div class="preview-text">
+          "The EU and Scandinavian market has a set of gates. Every serious brand requires their suppliers to have passed through them before a conversation starts.<br/><br/>
+          You are close. Closer than most. But there are four gates still ahead.<br/><br/>
+          We have crossed these gates with other manufacturers. We know the exact sequence, the exact timing, and — most importantly — we know the buyers waiting on the other side.<br/><br/>
+          A certification on paper opens the gate. Knowing which buyer to call the morning it opens — that is what we do."
+        </div>
+      </div>
+
+      <div class="anti-leak">
+        <div class="anti-leak-label">Anti-leakage strategy for this section</div>
+        <p>
+          The certifications are named in general categories (Social Compliance Gate, Chemical Safety Gate, Organic Materials Gate) — the specific names are visible but framed as <strong>managed processes, not checklists</strong>.<br/><br/>
+          The key line that locks her in: <em>"A certification on paper opens the gate. Knowing which buyer to call the morning it opens — that is what we do."</em><br/><br/>
+          She can get SEDEX herself. She cannot get our buyer relationships. The presentation makes this distinction explicit without saying it bluntly.
+        </p>
+      </div>
+
+      <div class="card-row">
+        <div class="mini-card">
+          <div class="mini-label">Gate 1 — Social Compliance</div>
+          <div class="mini-val">What EU brands check first. Currently: WRAP Gold (strong). Next level: European social audit standard. Managed timeline: Q3 2026.</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-label">Gate 2 — Chemical Safety</div>
+          <div class="mini-val">Zero-discharge chemical standard. Required by every premium denim brand. Managed timeline: Q4 2026.</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-label">Gate 3 — Organic Materials</div>
+          <div class="mini-val">For Scandinavian sustainable collections. Entry card into the fastest-growing category. Managed timeline: Q1 2027.</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-label">Gate 4 — Environmental System</div>
+          <div class="mini-val">ISO environmental management. Carbon disclosure for EU DPP readiness. Managed timeline: Q2 2027.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACT 6 — NEW -->
+    <div class="act" id="act6">
+      <div class="act-header">
+        <div class="act-badge badge-new">NEW</div>
+        <div class="act-meta">
+          <div class="act-tag tag-new">New section — the timeline</div>
+          <h2 class="act-title">The Path — <em>18 months. Managed.</em></h2>
+          <p class="act-purpose">A visual month-by-month timeline showing what happens if she partners with Harvics starting today. Milestones shown as OUTCOMES not tasks — not "get certified" but "first Scandinavian buyer meeting." This makes the timeline feel like a journey Harvics is guiding, not a to-do list she could copy.</p>
+        </div>
+      </div>
+
+      <div class="flow">
+        <div class="flow-item">
+          <div class="flow-line"><div class="flow-dot flow-dot-new"></div><div class="flow-connector"></div></div>
+          <div class="flow-content">
+            <div class="flow-title">Month 1–2 · Alignment</div>
+            <div class="flow-desc">Joint evaluation session. Harvics team visits Ninh Binh. Product selection for EU market. Target buyer list prepared (not shared in deck).</div>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-line"><div class="flow-dot flow-dot-new"></div><div class="flow-connector"></div></div>
+          <div class="flow-content">
+            <div class="flow-title">Month 3 · Bluezone Munich — July 2026</div>
+            <div class="flow-desc">Harvics represents Genviet at Europe's premier denim exhibition. First buyer introductions. No cost to Genviet. This window is 31 days away.</div>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-line"><div class="flow-dot flow-dot-new"></div><div class="flow-connector"></div></div>
+          <div class="flow-content">
+            <div class="flow-title">Month 4–6 · First Compliance Gate Cleared</div>
+            <div class="flow-desc">European social audit registration complete. First qualified EU buyer sample request received.</div>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-line"><div class="flow-dot flow-dot-new"></div><div class="flow-connector"></div></div>
+          <div class="flow-content">
+            <div class="flow-title">Month 6–9 · Pilot Orders</div>
+            <div class="flow-desc">3 pre-qualified EU accounts. 15,000 units. €420K projected revenue. Under your brand, through our pipeline.</div>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-line"><div class="flow-dot flow-dot-new"></div><div class="flow-connector"></div></div>
+          <div class="flow-content">
+            <div class="flow-title">Month 10–12 · Scandinavian Entry</div>
+            <div class="flow-desc">Chemical safety clearance complete. First Scandinavian buyer meeting — Sweden, Norway, Denmark. These buyers were waiting for this clearance.</div>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-line"><div class="flow-dot flow-dot-new"></div><div class="flow-connector"></div></div>
+          <div class="flow-content">
+            <div class="flow-title">Month 12–18 · SS 2027 — Full Launch</div>
+            <div class="flow-desc">15 EU retail networks. Organic denim certification in progress. Americas pilot active. €2.4M projected 24-month revenue. Genviet Jeans — known in Europe.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACT 7 -->
+    <div class="act" id="act7">
+      <div class="act-header">
+        <div class="act-badge badge-warn">UPD</div>
+        <div class="act-meta">
+          <div class="act-tag tag-warn">Existing section — update language</div>
+          <h2 class="act-title">We Are Already There — <em>Presence, not promises</em></h2>
+          <p class="act-purpose">The existing RTM map and markets section shows Harvics is already operating in these corridors. Update the language to make it feel like market presence, not a future plan. "We are at Bluezone in July. We have buyers waiting. The question is — who are we introducing them to?"</p>
+        </div>
+      </div>
+      <div class="anti-leak">
+        <div class="anti-leak-label">What we show vs what we don't</div>
+        <p>
+          <strong>Show:</strong> Harvics is present at Bluezone Munich, Scandinavian sourcing events, EU buyer corridors. "200+ pre-mapped buyers."<br/><br/>
+          <strong>Don't show:</strong> Which specific buyers. Which specific events beyond Bluezone. Which Scandinavian brands. Which contact names.<br/><br/>
+          The map shows corridors and nodes — not names and emails. The value is the relationship. The relationship doesn't transfer without Harvics.
+        </p>
+      </div>
+    </div>
+
+    <!-- ACT 8 -->
+    <div class="act" id="act8">
+      <div class="act-header">
+        <div class="act-badge badge-keep">KEEP</div>
+        <div class="act-meta">
+          <div class="act-tag tag-keep">Already in deck — keep as is</div>
+          <h2 class="act-title">Two Futures — <em>The window closes in 31 days</em></h2>
+          <p class="act-purpose">The existing Bluezone countdown, the "If Engaged vs If Missed" comparison, the board decision buttons, and the contact form. This is the close. It already works. Keep it exactly.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-label">Why the urgency is real — not manufactured</div>
+        <p>Bluezone Munich is July 21–23, 2026. That is a real, fixed date. The buyer calendar really does lock after this. The urgency in the deck is not a sales tactic — it's a genuine market timing reality. This is why she cannot "take the information and run" — the window is now, and Harvics is already registered there.</p>
+      </div>
+    </div>
+
+    <hr/>
+
+    <!-- ANTI-LEAKAGE STRATEGY -->
+    <div class="act" id="security">
+      <div class="act-header">
+        <div class="act-badge badge-warn">SEC</div>
+        <div class="act-meta">
+          <div class="act-tag tag-warn">Anti-leakage strategy — for your eyes only</div>
+          <h2 class="act-title">What She Cannot Copy — <em>Even if she tries</em></h2>
+          <p class="act-purpose">The presentation shows information. The value is in execution. Here is exactly what she cannot replicate without Harvics.</p>
+        </div>
+      </div>
+
+      <div class="card-row">
+        <div class="mini-card">
+          <div class="mini-label">She can google</div>
+          <div class="mini-val">SEDEX. ZDHC. GOTS. ISO 14001. That these certifications exist.</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-label">She cannot replicate</div>
+          <div class="mini-val">Which buyer requires which certification. In what order. Who to call when it's done. That is 10 years of relationship-building.</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-label">She can try to go to Bluezone</div>
+          <div class="mini-val">Registration is open to the public.</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-label">She cannot replicate</div>
+          <div class="mini-val">Walking in and having 200 buyers already know who you are and trust you. The relationship is with Harvics, not with her factory yet.</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-label">She can hire a local agent</div>
+          <div class="mini-val">Someone in Germany, someone in Stockholm.</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-label">She cannot replicate</div>
+          <div class="mini-val">An integrated operation that handles compliance + buyers + logistics + brand positioning simultaneously. Fragmented agents don't do this.</div>
+        </div>
+      </div>
+
+      <div class="anti-leak" style="margin-top:1rem;">
+        <div class="anti-leak-label">The one line that locks it psychologically</div>
+        <p style="font-size:1rem; font-style:italic; color:var(--gold-l);">"Getting certified opens the gate. Knowing which buyer is standing on the other side, and having them trust the hand introducing you — that is what you are hiring."</p>
+      </div>
+    </div>
+
+    <!-- FINAL QUESTION -->
+    <div class="bq">
+      <h2>Does this story arc feel right?</h2>
+      <p>If yes — I go into the main presentation and make every one of these changes. The existing deck stays as the vehicle. I add Acts 2 and 5+6, update Acts 1 and 3, leave the rest exactly as is.</p>
+      <p style="margin-top:0.8rem; color:var(--gold); font-size:0.85rem;">Say yes and I start. Say what's wrong and I fix the plan first.</p>
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>

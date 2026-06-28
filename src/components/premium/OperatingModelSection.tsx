@@ -90,7 +90,7 @@ const OperatingModelSection: React.FC = () => {
       className="w-full relative overflow-hidden py-16 px-6"
       style={{
         background:
-          'radial-gradient(ellipse at 20% 0%, rgba(107,31,43,0.45) 0%, transparent 55%), radial-gradient(ellipse at 80% 100%, rgba(195,163,94,0.18) 0%, transparent 50%), linear-gradient(160deg, #1A0505 0%, #261015 60%, #1A0505 100%)',
+          'radial-gradient(ellipse at 20% 0%, rgba(107,31,43,0.45) 0%, transparent 55%), radial-gradient(ellipse at 80% 100%, rgba(195,163,94,0.18) 0%, transparent 50%), linear-gradient(160deg, #3D1212 0%, #261015 60%, #3D1212 100%)',
       }}
     >
       {/* Subtle grid pattern */}

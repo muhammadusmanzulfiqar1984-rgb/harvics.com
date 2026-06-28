@@ -54,7 +54,7 @@ body {
 /* ===== SUPREME DESIGN OVERRIDES ===== */
 /* Flat, premium, no-noise aesthetic from Harvics Supreme */
 :root {
-  --harvics-burgundy: #1A0505;
+  --harvics-burgundy: #3D1212;
   --harvics-cream: #F5F0E8;
   --harvics-gold: #C3A35E;
   --harvics-muted: #8A7D6B;
@@ -326,7 +326,7 @@ body {
   font-weight: 600 !important;
   letter-spacing: 0.05em !important;
   text-transform: uppercase !important;
-  color: #1A0505 !important;
+  color: #3D1212 !important;
   padding: 8px 12px !important;
   border-radius: 4px !important;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
@@ -339,7 +339,7 @@ body {
 }
 
 .sector-nav-link.active-sector {
-  background-color: #1A0505 !important; /* Inverted corporate fill */
+  background-color: #3D1212 !important; /* Inverted corporate fill */
   color: #F5F0E8 !important;
 }
 
@@ -351,7 +351,7 @@ body {
   background: none !important;
   border: none !important;
   cursor: pointer !important;
-  color: #1A0505 !important;
+  color: #3D1212 !important;
   font-size: 0.85rem !important;
   font-weight: 500 !important;
   transition: color 0.2s ease !important;
@@ -658,8 +658,8 @@ body {
   --background-end-rgb: 255, 255, 255; /* White End */
   
   /* Primary Colors - Burgundy (master palette) */
-  --primary-maroon: 26, 5, 5; /* #1A0505 — legacy var name */
-  --primary-maroon-hex: #1A0505;
+  --primary-maroon: 26, 5, 5; /* #3D1212 — legacy var name */
+  --primary-maroon-hex: #3D1212;
   
   /* Accent Colors - Gold */
   --accent-gold: 195, 163, 94; /* #C3A35E */
@@ -694,7 +694,7 @@ body {
 
 /* ── Body copy — warm stone, not stark black ── */
 body {
-  color: #1A0505;
+  color: #3D1212;
   line-height: 1.65;
 }
 
@@ -1339,7 +1339,7 @@ nav a:hover, nav button:hover {
 
 .gradient-border {
   position: relative;
-  background: linear-gradient(45deg, #1A0505, #ffffff);
+  background: linear-gradient(45deg, #3D1212, #ffffff);
   padding: 2px;
   border-radius: 12px;
 }
@@ -1363,14 +1363,14 @@ nav a:hover, nav button:hover {
 }
 
 .text-gradient {
-  background: linear-gradient(45deg, #1A0505, #ffffff);
+  background: linear-gradient(45deg, #3D1212, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .text-gradient-red {
-  background: linear-gradient(45deg, #1A0505, #1A0505, #1A0505);
+  background: linear-gradient(45deg, #3D1212, #3D1212, #3D1212);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1433,7 +1433,7 @@ nav a:hover, nav button:hover {
 
 /* Button Styles */
 .btn-primary {
-  background: linear-gradient(45deg, #1A0505, #1A0505);
+  background: linear-gradient(45deg, #3D1212, #3D1212);
   color: #F5F0E8;
   padding: 12px 24px;
   border-radius: 8px;
@@ -1449,8 +1449,8 @@ nav a:hover, nav button:hover {
 
 .btn-secondary {
   background: transparent;
-  color: #1A0505;
-  border: 2px solid #1A0505;
+  color: #3D1212;
+  border: 2px solid #3D1212;
   padding: 10px 22px;
   border-radius: 8px;
   font-weight: 600;
@@ -1458,14 +1458,14 @@ nav a:hover, nav button:hover {
 }
 
 .btn-secondary:hover {
-  background: #1A0505;
+  background: #3D1212;
   color: #F5F0E8;
   transform: translateY(-2px);
 }
 
 .btn-accent {
   background: linear-gradient(45deg, #ffffff, #ffffff);
-  color: #1A0505;
+  color: #3D1212;
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: 600;
@@ -1663,7 +1663,7 @@ nav a:hover, nav button:hover {
   position: absolute;
   top: -40px;
   left: 0;
-  background: #1A0505;
+  background: #3D1212;
   color: #F5F0E8;
   padding: 8px 16px;
   text-decoration: none;
@@ -1681,7 +1681,7 @@ nav a:hover, nav button:hover {
 
 /* Music Player Styles */
 .slider {
-  background: linear-gradient(to right, #1A0505 0%, #1A0505 30%, #e5e7eb 30%, #e5e7eb 100%);
+  background: linear-gradient(to right, #3D1212 0%, #3D1212 30%, #e5e7eb 30%, #e5e7eb 100%);
 }
 
 .slider::-webkit-slider-thumb {
@@ -1689,7 +1689,7 @@ nav a:hover, nav button:hover {
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background: #1A0505;
+  background: #3D1212;
   cursor: pointer;
   border: 2px solid #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -1699,7 +1699,7 @@ nav a:hover, nav button:hover {
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background: #1A0505;
+  background: #3D1212;
   cursor: pointer;
   border: 2px solid #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -2086,7 +2086,7 @@ p {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   letter-spacing: -0.02em;
-  color: #1A0505;
+  color: #3D1212;
 }
 
 .text-smart-body {
@@ -2154,10 +2154,10 @@ p {
   100% { transform: translate(0, 0) scale(1); opacity: 0.8; }
 }
 
-.bg-harvics-burgundy { background-color: #1A0505 !important; }
+.bg-harvics-burgundy { background-color: #3D1212 !important; }
 .bg-harvics-cream { background-color: #F5F0E8 !important; }
 .text-harvics-cream { color: #F5F0E8 !important; }
-.text-harvics-burgundy { color: #1A0505 !important; }
+.text-harvics-burgundy { color: #3D1212 !important; }
 .text-harvics-gold { color: #C3A35E !important; }
 .border-harvics-gold\/10 { border-color: rgba(201, 168, 76, 0.1) !important; }
 .ease-vault { transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important; }

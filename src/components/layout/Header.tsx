@@ -154,10 +154,10 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
   const canSwitchMarket = availableCountries.length > 1
 
   return (
-    <header className="sticky top-0 z-50 w-full backdrop-blur-md border-b border-[#1A0505]/10 pointer-events-auto font-sans">
+    <header className="sticky top-0 z-50 w-full backdrop-blur-md border-b border-[#3D1212]/10 pointer-events-auto font-sans">
 
       {/* T1 — TOP UTILITY BAR: deep oxblood with cream text */}
-      <div className="w-full bg-[#1A0505]">
+      <div className="w-full bg-[#3D1212]">
         <div className="relative hidden lg:block text-[#F5F0E8] py-2 text-xs font-normal">
           <div className="universal-layout-frame max-w-harvics-layout flex justify-between items-center" style={{ height: '24px' }}>
 
@@ -249,7 +249,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
       </div>
 
       {/* T2 — MAIN BRAND BAR: Cream bg, logo left, search center, icons right */}
-      <div className="relative w-full py-1 border-b border-[#1A0505]/10" style={{
+      <div className="relative w-full py-1 border-b border-[#3D1212]/10" style={{
         background: scrolled ? 'rgba(245,240,232,0.92)' : '#F5F0E8',
         backdropFilter: scrolled ? 'blur(20px) saturate(180%)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(20px) saturate(180%)' : 'none',
@@ -263,7 +263,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               <div className="relative flex items-center gap-3">
                     <Image src="/assets/brand/logo/primary.svg" alt="Harvics" width={36} height={36} style={{ width: '36px', height: 'auto', objectFit: 'contain' }} priority />
                 <div className="flex flex-col">
-                  <span className="text-xl font-bold tracking-tight" style={{ color: '#1A0505' }}>HARVICS</span>
+                  <span className="text-xl font-bold tracking-tight" style={{ color: '#3D1212' }}>HARVICS</span>
                   <span className="text-[10px] uppercase tracking-widest" style={{ color: '#C3A35E' }}>Global Ventures</span>
                 </div>
                 {/* Gold accent glow on hover */}
@@ -280,15 +280,15 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
             <div className="flex-1 max-w-xl mx-8 hidden md:block relative">
               <div
                 className="w-full flex items-center overflow-hidden relative search-bar-wrap"
-                style={{ background: 'transparent', border: '1px solid #1A0505', transition: 'border-color 0.25s ease' }}
+                style={{ background: 'transparent', border: '1px solid #3D1212', transition: 'border-color 0.25s ease' }}
               >
                 <input type="text" placeholder={getTranslation('search', 'common', 'Search product, code or brand')}
                   onClick={() => setIsSearchOpen(true)} readOnly
                   className="flex-1 px-4 py-1.5 bg-transparent outline-none search-bar-input"
-                  style={{ color: '#1A0505', fontSize: '12px' }} />
+                  style={{ color: '#3D1212', fontSize: '12px' }} />
                 <button onClick={() => setIsSearchOpen(true)}
                   className="px-4 py-1.5 transition-opacity duration-200 hover:opacity-70"
-                  style={{ color: '#1A0505', background: 'transparent', border: 'none' }}>
+                  style={{ color: '#3D1212', background: 'transparent', border: 'none' }}>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
@@ -304,41 +304,41 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
             <div className="flex items-center gap-3">
               {/* Account / Login / Logout */}
               {isLoggedIn ? (
-                <button onClick={handleLogout} className="p-2 transition-opacity duration-200 hover:opacity-60 group relative" style={{ color: '#1A0505', background: 'none', border: 'none', cursor: 'pointer' }}>
+                <button onClick={handleLogout} className="p-2 transition-opacity duration-200 hover:opacity-60 group relative" style={{ color: '#3D1212', background: 'none', border: 'none', cursor: 'pointer' }}>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                   </svg>
-                  <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: '#1A0505' }}>
+                  <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: '#3D1212' }}>
                     Logout
                   </span>
                 </button>
               ) : (
-                <Link href={`/${locale}/login`} className="p-2 transition-opacity duration-200 hover:opacity-60 group relative" style={{ color: '#1A0505' }}>
+                <Link href={`/${locale}/login`} className="p-2 transition-opacity duration-200 hover:opacity-60 group relative" style={{ color: '#3D1212' }}>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
-                  <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: '#1A0505' }}>
+                  <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: '#3D1212' }}>
                     Login
                   </span>
                 </Link>
               )}
-              <Link href={`/${locale}/wishlist`} className="p-2 transition-opacity duration-200 hover:opacity-60" style={{ color: '#1A0505' }}>
+              <Link href={`/${locale}/wishlist`} className="p-2 transition-opacity duration-200 hover:opacity-60" style={{ color: '#3D1212' }}>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </Link>
-              <Link href={`/${locale}/checkout`} className="p-2 relative transition-opacity duration-200 hover:opacity-60" style={{ color: '#1A0505' }}>
+              <Link href={`/${locale}/checkout`} className="p-2 relative transition-opacity duration-200 hover:opacity-60" style={{ color: '#3D1212' }}>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                 </svg>
-                <span className="absolute -top-0.5 -right-0.5 w-4 h-4 flex items-center justify-center" style={{ background: '#1A0505', color: '#C3A35E', fontSize: '9px', fontWeight: 700 }}>0</span>
+                <span className="absolute -top-0.5 -right-0.5 w-4 h-4 flex items-center justify-center" style={{ background: '#3D1212', color: '#C3A35E', fontSize: '9px', fontWeight: 700 }}>0</span>
               </Link>
-              <button onClick={() => setIsSearchOpen(true)} className="md:hidden p-2 transition-opacity duration-200 hover:opacity-60" style={{ color: '#1A0505', background: 'none', border: 'none' }}>
+              <button onClick={() => setIsSearchOpen(true)} className="md:hidden p-2 transition-opacity duration-200 hover:opacity-60" style={{ color: '#3D1212', background: 'none', border: 'none' }}>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </button>
-              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="lg:hidden p-2 transition-opacity duration-200 hover:opacity-60" style={{ color: '#1A0505', background: 'none', border: 'none' }}>
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="lg:hidden p-2 transition-opacity duration-200 hover:opacity-60" style={{ color: '#3D1212', background: 'none', border: 'none' }}>
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   {isMenuOpen
                     ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -379,7 +379,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
       {isMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 z-50" style={{ background: '#ffffff', borderTop: '1px solid rgba(195,163,94,0.3)' }}>
           <div className="p-6 space-y-4">
-            <div className="flex flex-col items-center text-sm space-y-1" style={{ color: '#1A0505' }}>
+            <div className="flex flex-col items-center text-sm space-y-1" style={{ color: '#3D1212' }}>
               {roleLabel && <span className="font-semibold uppercase">{roleLabel}</span>}
               <span>{displayCountry || getTranslation('selectCountry', 'common', 'Select Country')}</span>
               {currencyDisplay && <span className="font-semibold">{currencyDisplay}</span>}
@@ -405,7 +405,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
               ].map((link) => (
                 <Link key={link.href} href={link.href}
                   className="block px-4 py-3 text-sm font-medium text-center transition-opacity duration-200 hover:opacity-70"
-                  style={{ color: '#1A0505', borderBottom: '1px solid rgba(195,163,94,0.2)', textDecoration: 'none' }}
+                  style={{ color: '#3D1212', borderBottom: '1px solid rgba(195,163,94,0.2)', textDecoration: 'none' }}
                 >{link.label}</Link>
               ))}
             </nav>

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HarvicTrade — Concept Dashboard</title>
+<style>
+  :root {
+    --ink: #1A0505;
+    --gold: #C3A35E;
+    --dark: #0D0D0D;
+    --cream: #F5F0E8;
+    --surface: #faf8f5;
+    --border: rgba(195,163,94,0.15);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif; background: var(--surface); color: var(--ink); min-height: 100vh; }
+
+  /* ── TOP NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(26,5,5,0.97); backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 32px; height: 60px;
+  }
+  .nav-logo { display: flex; align-items: center; gap: 10px; }
+  .nav-logo-mark { width: 28px; height: 28px; border: 1px solid var(--gold); display: flex; align-items: center; justify-content: center; }
+  .nav-logo-mark span { font-size: 9px; font-weight: 800; color: var(--gold); letter-spacing: 0.05em; }
+  .nav-brand { font-size: 13px; font-weight: 700; color: white; letter-spacing: -0.01em; }
+  .nav-brand sup { font-size: 8px; font-weight: 500; color: var(--gold); letter-spacing: 0.1em; margin-left: 3px; }
+  .nav-right { display: flex; align-items: center; gap: 16px; }
+  .nav-basket-btn {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--gold); color: var(--ink);
+    border: none; cursor: pointer;
+    padding: 7px 14px; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    transition: background 0.2s;
+  }
+  .nav-basket-btn:hover { background: #d4b46e; }
+  .basket-count {
+    background: var(--ink); color: var(--gold);
+    width: 18px; height: 18px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 9px; font-weight: 800;
+  }
+  .nav-login { font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.4); cursor: pointer; letter-spacing: 0.05em; text-transform: uppercase; }
+  .nav-login:hover { color: var(--gold); }
+
+  /* ── LAYOUT ── */
+  .layout { display: flex; padding-top: 60px; min-height: 100vh; }
+
+  /* ── LEFT SIDEBAR ── */
+  .sidebar {
+    width: 220px; flex-shrink: 0;
+    background: white; border-right: 1px solid var(--border);
+    position: sticky; top: 60px; height: calc(100vh - 60px);
+    overflow-y: auto; padding: 24px 0;
+  }
+  .sidebar-label { font-size: 9px; font-weight: 800; color: rgba(26,5,5,0.3); letter-spacing: 0.22em; text-transform: uppercase; padding: 0 20px 10px; }
+  .cat-item {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 20px; cursor: pointer; transition: background 0.15s;
+    border-left: 2px solid transparent;
+  }
+  .cat-item:hover { background: var(--surface); }
+  .cat-item.active { background: var(--surface); border-left-color: var(--ink); }
+  .cat-item-name { font-size: 12px; font-weight: 600; color: var(--ink); }
+  .cat-item.active .cat-item-name { color: var(--ink); }
+  .cat-item-count { font-size: 9px; font-weight: 700; color: var(--gold); background: rgba(195,163,94,0.12); padding: 2px 6px; }
+  .sidebar-divider { height: 1px; background: var(--border); margin: 16px 20px; }
+
+  /* ── MAIN ── */
+  .main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+
+  /* ── SEARCH + FILTERS BAR ── */
+  .topbar {
+    background: white; border-bottom: 1px solid var(--border);
+    padding: 16px 28px; display: flex; align-items: center; gap: 14px;
+    position: sticky; top: 60px; z-index: 50;
+  }
+  .search-wrap { flex: 1; position: relative; }
+  .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 14px; color: rgba(26,5,5,0.3); }
+  .search-input {
+    width: 100%; padding: 10px 14px 10px 40px;
+    border: 1px solid var(--border); background: var(--surface);
+    font-size: 13px; color: var(--ink); outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-input::placeholder { color: rgba(26,5,5,0.3); }
+  .search-input:focus { border-color: var(--gold); background: white; }
+  .filter-pills { display: flex; gap: 8px; }
+  .pill {
+    padding: 6px 14px; font-size: 10px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer;
+    border: 1px solid var(--border); background: white; color: rgba(26,5,5,0.45);
+    transition: all 0.15s; white-space: nowrap;
+  }
+  .pill:hover, .pill.active { background: var(--ink); color: var(--gold); border-color: var(--ink); }
+  .view-toggle { display: flex; gap: 4px; }
+  .view-btn { width: 32px; height: 32px; border: 1px solid var(--border); background: white; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 13px; color: rgba(26,5,5,0.3); }
+  .view-btn.active { background: var(--ink); color: var(--gold); border-color: var(--ink); }
+
+  /* ── HARVY AI BANNER ── */
+  .ai-banner {
+    margin: 20px 28px 0;
+    background: var(--ink);
+    border: 1px solid var(--border);
+    padding: 16px 22px;
+    display: flex; align-items: center; gap: 16px; cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  .ai-banner:hover { border-color: var(--gold); }
+  .ai-pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 0 rgba(195,163,94,0.4); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(195,163,94,0.4); } 50% { box-shadow: 0 0 0 6px rgba(195,163,94,0); } }
+  .ai-label { font-size: 9px; font-weight: 800; color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase; }
+  .ai-prompt { font-size: 13px; color: rgba(255,255,255,0.5); flex: 1; }
+  .ai-prompt strong { color: white; }
+  .ai-cta { font-size: 10px; font-weight: 700; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; }
+
+  /* ── PRODUCT GRID ── */
+  .grid-wrap { padding: 20px 28px 40px; }
+  .grid-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+  .grid-title { font-size: 11px; font-weight: 700; color: rgba(26,5,5,0.35); letter-spacing: 0.12em; text-transform: uppercase; }
+  .grid-sort { font-size: 11px; color: rgba(26,5,5,0.35); cursor: pointer; }
+  .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1px; background: var(--border); }
+  .product-card {
+    background: white; padding: 22px; cursor: pointer;
+    transition: background 0.15s; position: relative; overflow: hidden;
+  }
+  .product-card:hover { background: var(--surface); }
+  .product-card::after { content: ''; position: absolute; top: 0; left: 0; width: 2px; height: 0; background: var(--ink); transition: height 0.25s; }
+  .product-card:hover::after { height: 100%; }
+  .card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+  .card-badge { font-size: 9px; font-weight: 800; color: var(--gold); background: rgba(195,163,94,0.1); padding: 3px 7px; letter-spacing: 0.1em; text-transform: uppercase; }
+  .card-verified { font-size: 9px; font-weight: 700; color: #16a34a; }
+  .card-name { font-size: 13px; font-weight: 600; color: var(--ink); line-height: 1.4; margin-bottom: 12px; min-height: 36px; }
+  .card-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 14px; }
+  .card-meta-item { }
+  .card-meta-label { font-size: 9px; font-weight: 700; color: rgba(26,5,5,0.3); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2px; }
+  .card-meta-val { font-size: 11px; font-weight: 600; color: rgba(26,5,5,0.65); }
+  .card-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid rgba(195,163,94,0.1); }
+  .card-price { font-size: 14px; font-weight: 700; color: var(--ink); }
+  .card-rfq-btn {
+    font-size: 9px; font-weight: 800; color: rgba(26,5,5,0.3);
+    letter-spacing: 0.14em; text-transform: uppercase;
+    background: none; border: none; cursor: pointer;
+    transition: color 0.15s;
+  }
+  .card-rfq-btn:hover { color: var(--gold); }
+  .add-basket-btn {
+    display: none; position: absolute; bottom: 0; left: 0; right: 0;
+    background: var(--ink); color: var(--gold);
+    border: none; padding: 10px; font-size: 10px; font-weight: 800;
+    letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer;
+    transition: background 0.15s;
+  }
+  .product-card:hover .add-basket-btn { display: block; }
+  .add-basket-btn:hover { background: #2d0a0a; }
+
+  /* ── SLIDE PANEL ── */
+  .panel-overlay {
+    position: fixed; inset: 0; background: rgba(26,5,5,0.5); z-index: 200;
+    opacity: 0; pointer-events: none; transition: opacity 0.3s;
+  }
+  .panel-overlay.open { opacity: 1; pointer-events: all; }
+  .slide-panel {
+    position: fixed; top: 0; right: -520px; width: 520px; height: 100vh;
+    background: white; z-index: 201; transition: right 0.35s cubic-bezier(0.4,0,0.2,1);
+    overflow-y: auto; display: flex; flex-direction: column;
+  }
+  .slide-panel.open { right: 0; }
+  .panel-header {
+    background: var(--ink); padding: 24px 28px;
+    display: flex; align-items: flex-start; justify-content: space-between;
+    position: sticky; top: 0; z-index: 10;
+  }
+  .panel-close { background: none; border: none; color: rgba(255,255,255,0.4); cursor: pointer; font-size: 20px; line-height: 1; padding: 0; }
+  .panel-close:hover { color: white; }
+  .panel-badge { font-size: 9px; font-weight: 800; color: var(--gold); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 8px; }
+  .panel-title { font-size: 18px; font-weight: 700; color: white; line-height: 1.3; letter-spacing: -0.02em; }
+  .panel-body { padding: 28px; flex: 1; }
+  .panel-section-label { font-size: 9px; font-weight: 800; color: rgba(26,5,5,0.3); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 12px; }
+  .panel-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); margin-bottom: 24px; }
+  .panel-spec { background: var(--surface); padding: 14px 16px; }
+  .panel-spec-label { font-size: 9px; font-weight: 700; color: rgba(26,5,5,0.35); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; }
+  .panel-spec-val { font-size: 14px; font-weight: 700; color: var(--ink); }
+  .panel-desc { font-size: 13px; color: rgba(26,5,5,0.55); line-height: 1.7; margin-bottom: 24px; }
+  .panel-rfq {
+    background: var(--ink); padding: 22px;
+    display: flex; flex-direction: column; gap: 14px;
+    margin-bottom: 16px;
+  }
+  .panel-rfq-title { font-size: 12px; font-weight: 700; color: white; }
+  .rfq-input {
+    background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1);
+    padding: 10px 14px; font-size: 12px; color: white; outline: none;
+    transition: border-color 0.2s; width: 100%;
+  }
+  .rfq-input::placeholder { color: rgba(255,255,255,0.25); }
+  .rfq-input:focus { border-color: var(--gold); }
+  .rfq-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .rfq-submit {
+    background: var(--gold); color: var(--ink); border: none;
+    padding: 12px; font-size: 11px; font-weight: 800;
+    letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer;
+    transition: background 0.2s; width: 100%;
+  }
+  .rfq-submit:hover { background: #d4b46e; }
+  .panel-basket-add {
+    background: white; border: 1px solid var(--border); color: var(--ink);
+    padding: 12px; font-size: 11px; font-weight: 800;
+    letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer;
+    transition: all 0.2s; width: 100%;
+  }
+  .panel-basket-add:hover { background: var(--surface); border-color: var(--gold); color: var(--gold); }
+
+  /* ── BASKET DRAWER ── */
+  .basket-drawer {
+    position: fixed; top: 60px; right: -380px; width: 380px;
+    height: calc(100vh - 60px); background: white;
+    border-left: 1px solid var(--border); z-index: 150;
+    transition: right 0.3s cubic-bezier(0.4,0,0.2,1);
+    display: flex; flex-direction: column;
+  }
+  .basket-drawer.open { right: 0; }
+  .basket-head { padding: 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+  .basket-head-title { font-size: 14px; font-weight: 700; color: var(--ink); }
+  .basket-close { background: none; border: none; cursor: pointer; font-size: 18px; color: rgba(26,5,5,0.35); }
+  .basket-items { flex: 1; overflow-y: auto; padding: 16px; }
+  .basket-item { display: flex; align-items: center; justify-content: space-between; padding: 12px; background: var(--surface); margin-bottom: 8px; }
+  .basket-item-name { font-size: 12px; font-weight: 600; color: var(--ink); flex: 1; }
+  .basket-item-remove { background: none; border: none; cursor: pointer; color: rgba(26,5,5,0.3); font-size: 16px; }
+  .basket-item-remove:hover { color: #e53e3e; }
+  .basket-footer { padding: 20px; border-top: 1px solid var(--border); }
+  .basket-submit-all {
+    width: 100%; background: var(--ink); color: var(--gold); border: none;
+    padding: 14px; font-size: 11px; font-weight: 800;
+    letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer;
+    transition: background 0.2s;
+  }
+  .basket-submit-all:hover { background: #2d0a0a; }
+  .basket-empty { text-align: center; padding: 40px 20px; color: rgba(26,5,5,0.3); font-size: 13px; }
+
+  /* ── AI CHAT PANEL ── */
+  .ai-chat-wrap {
+    position: fixed; bottom: 24px; right: 24px; z-index: 300;
+  }
+  .ai-chat-toggle {
+    width: 52px; height: 52px; border-radius: 50%;
+    background: var(--ink); border: 1px solid var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; box-shadow: 0 4px 20px rgba(26,5,5,0.3);
+    font-size: 20px; transition: transform 0.2s;
+  }
+  .ai-chat-toggle:hover { transform: scale(1.05); }
+  .ai-chat-box {
+    position: absolute; bottom: 64px; right: 0;
+    width: 340px; background: white; border: 1px solid var(--border);
+    box-shadow: 0 20px 60px rgba(26,5,5,0.15);
+    display: none; flex-direction: column;
+    max-height: 440px;
+  }
+  .ai-chat-box.open { display: flex; }
+  .ai-chat-head { background: var(--ink); padding: 16px 18px; display: flex; align-items: center; gap: 10px; }
+  .ai-chat-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); animation: pulse 2s infinite; }
+  .ai-chat-label { font-size: 11px; font-weight: 700; color: white; }
+  .ai-chat-sub { font-size: 9px; color: rgba(255,255,255,0.35); letter-spacing: 0.1em; text-transform: uppercase; }
+  .ai-messages { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+  .msg { max-width: 85%; padding: 10px 14px; font-size: 12px; line-height: 1.5; }
+  .msg.ai { background: var(--surface); color: var(--ink); align-self: flex-start; border-left: 2px solid var(--gold); }
+  .msg.user { background: var(--ink); color: white; align-self: flex-end; }
+  .ai-input-row { display: flex; border-top: 1px solid var(--border); }
+  .ai-input { flex: 1; border: none; padding: 12px 14px; font-size: 12px; outline: none; background: var(--surface); }
+  .ai-send { background: var(--gold); border: none; padding: 0 16px; cursor: pointer; font-size: 14px; }
+
+  /* ── SUCCESS TOAST ── */
+  .toast {
+    position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%) translateY(20px);
+    background: var(--ink); color: var(--gold); padding: 12px 24px;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    opacity: 0; transition: all 0.3s; z-index: 999; pointer-events: none;
+    border: 1px solid var(--border);
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  /* scrollbar */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(195,163,94,0.3); }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-logo-mark"><span>HT</span></div>
+    <span class="nav-brand">HarvicTrade<sup>B2B</sup></span>
+  </div>
+  <div class="nav-right">
+    <span class="nav-login">Sign In</span>
+    <button class="nav-basket-btn" onclick="toggleBasket()">
+      RFQ Basket
+      <span class="basket-count" id="basketCount">0</span>
+    </button>
+  </div>
+</nav>
+
+<!-- LAYOUT -->
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-label">Categories</div>
+    <div class="cat-item active" onclick="filterCat('All')">
+      <span class="cat-item-name">All Products</span>
+      <span class="cat-item-count">580+</span>
+    </div>
+    <div class="sidebar-divider"></div>
+    <div class="cat-item" onclick="filterCat('Denim & Textiles')">
+      <span class="cat-item-name">Denim & Textiles</span>
+      <span class="cat-item-count">120+</span>
+    </div>
+    <div class="cat-item" onclick="filterCat('Consumer Electronics')">
+      <span class="cat-item-name">Consumer Electronics</span>
+      <span class="cat-item-count">180+</span>
+    </div>
+    <div class="cat-item" onclick="filterCat('Industrial Machinery')">
+      <span class="cat-item-name">Industrial Machinery</span>
+      <span class="cat-item-count">95+</span>
+    </div>
+    <div class="cat-item" onclick="filterCat('Energy & Power')">
+      <span class="cat-item-name">Energy & Power</span>
+      <span class="cat-item-count">60+</span>
+    </div>
+    <div class="cat-item" onclick="filterCat('Pharmaceuticals')">
+      <span class="cat-item-name">Pharmaceuticals</span>
+      <span class="cat-item-count">75+</span>
+    </div>
+    <div class="cat-item" onclick="filterCat('Food & Agriculture')">
+      <span class="cat-item-name">Food & Agriculture</span>
+      <span class="cat-item-count">50+</span>
+    </div>
+    <div class="sidebar-divider"></div>
+    <div class="sidebar-label">My Account</div>
+    <div class="cat-item" onclick="showToast('Sign in to access dashboard')">
+      <span class="cat-item-name">My RFQs</span>
+    </div>
+    <div class="cat-item" onclick="showToast('Sign in to access dashboard')">
+      <span class="cat-item-name">Saved Products</span>
+    </div>
+    <div class="cat-item" onclick="showToast('Sign in to access dashboard')">
+      <span class="cat-item-name">Order History</span>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- SEARCH + FILTERS -->
+    <div class="topbar">
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input class="search-input" id="searchInput" placeholder="Search products, suppliers, categories..." oninput="filterProducts()">
+      </div>
+      <div class="filter-pills">
+        <button class="pill active" onclick="filterVerified(this, false)">All</button>
+        <button class="pill" onclick="filterVerified(this, true)">✓ Verified</button>
+        <button class="pill" onclick="filterSort(this, 'moq')">Low MOQ</button>
+      </div>
+      <div class="view-toggle">
+        <button class="view-btn active">⊞</button>
+        <button class="view-btn">☰</button>
+      </div>
+    </div>
+
+    <!-- AI BANNER -->
+    <div class="ai-banner" onclick="openAI()">
+      <div class="ai-pulse"></div>
+      <div>
+        <div class="ai-label">Harvy AI Sourcing</div>
+        <div class="ai-prompt"><strong>Ask anything.</strong> "Find me 14oz selvedge denim, WRAP certified, EU delivery Q3 under €10 FOB"</div>
+      </div>
+      <div class="ai-cta">Ask Now →</div>
+    </div>
+
+    <!-- PRODUCT GRID -->
+    <div class="grid-wrap">
+      <div class="grid-header">
+        <span class="grid-title" id="gridTitle">Showing all 12 products</span>
+        <span class="grid-sort">Sort: Relevance ▾</span>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SLIDE PANEL -->
+<div class="panel-overlay" id="panelOverlay" onclick="closePanel()"></div>
+<div class="slide-panel" id="slidePanel">
+  <div class="panel-header">
+    <div>
+      <div class="panel-badge" id="panelBadge"></div>
+      <div class="panel-title" id="panelTitle"></div>
+    </div>
+    <button class="panel-close" onclick="closePanel()">✕</button>
+  </div>
+  <div class="panel-body">
+    <div class="panel-section-label">Product Specifications</div>
+    <div class="panel-specs" id="panelSpecs"></div>
+    <div class="panel-section-label">Description</div>
+    <p class="panel-desc" id="panelDesc"></p>
+    <div class="panel-rfq">
+      <div class="panel-rfq-title">Request a Quote</div>
+      <input class="rfq-input" placeholder="Your company name" />
+      <div class="rfq-row">
+        <input class="rfq-input" placeholder="Quantity needed" />
+        <input class="rfq-input" placeholder="Target price / unit" />
+      </div>
+      <input class="rfq-input" placeholder="Additional requirements or specs..." />
+      <button class="rfq-submit" onclick="submitRFQ()">Submit RFQ →</button>
+    </div>
+    <button class="panel-basket-add" id="panelBasketBtn" onclick="addCurrentToBasket()">+ Add to RFQ Basket</button>
+  </div>
+</div>
+
+<!-- BASKET DRAWER -->
+<div class="basket-drawer" id="basketDrawer">
+  <div class="basket-head">
+    <span class="basket-head-title">RFQ Basket (<span id="basketItemCount">0</span> items)</span>
+    <button class="basket-close" onclick="toggleBasket()">✕</button>
+  </div>
+  <div class="basket-items" id="basketItems">
+    <div class="basket-empty">Your RFQ basket is empty.<br>Add products to request quotes.</div>
+  </div>
+  <div class="basket-footer">
+    <button class="basket-submit-all" onclick="submitAllRFQ()">Submit All as One RFQ →</button>
+  </div>
+</div>
+
+<!-- HARVY AI CHAT -->
+<div class="ai-chat-wrap">
+  <div class="ai-chat-box" id="aiChatBox">
+    <div class="ai-chat-head">
+      <div class="ai-chat-dot"></div>
+      <div>
+        <div class="ai-chat-label">Harvy — AI Sourcing Agent</div>
+        <div class="ai-chat-sub">Powered by Harvics Intelligence</div>
+      </div>
+    </div>
+    <div class="ai-messages" id="aiMessages">
+      <div class="msg ai">Hello. I'm Harvy, your sourcing intelligence agent. Tell me what you need — product type, quantity, certifications, or target price — and I'll find the best match.</div>
+    </div>
+    <div class="ai-input-row">
+      <input class="ai-input" id="aiInput" placeholder="Ask Harvy anything..." onkeypress="handleAIKey(event)">
+      <button class="ai-send" onclick="sendAI()">➤</button>
+    </div>
+  </div>
+  <div class="ai-chat-toggle" onclick="openAI()">🤖</div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+const PRODUCTS = [
+  { name: 'Raw Selvedge Denim — 14oz', cat: 'Denim & Textiles', badge: 'DT', origin: 'Vietnam', moq: '500 pcs', price: '€8.50 FOB', verified: true, desc: 'Shuttle-loom 14oz raw selvedge denim. WRAP Gold certified. Suitable for premium concept stores and European private label programs.' },
+  { name: 'Enzyme-Washed Stretch Denim', cat: 'Denim & Textiles', badge: 'DT', origin: 'Vietnam', moq: '300 pcs', price: '€9.20 FOB', verified: true, desc: 'Bio-enzyme washing with ozone treatment. 60% water reduction vs. conventional methods. Higg Index documented.' },
+  { name: 'iPhone 17 Pro Max — 256GB', cat: 'Consumer Electronics', badge: 'CE', origin: 'Global', moq: '10 units', price: '$1,299', verified: true, desc: 'Apple iPhone 17 Pro Max. Factory sealed, global warranty. Available for bulk B2B procurement with customised warranty packages.' },
+  { name: 'MacBook Pro M4 — 14"', cat: 'Consumer Electronics', badge: 'CE', origin: 'Global', moq: '5 units', price: '$2,199', verified: true, desc: 'Apple MacBook Pro M4 chip. Configurable RAM/storage for enterprise bulk orders. Education and corporate pricing available.' },
+  { name: 'Samsung Galaxy S25 Ultra', cat: 'Consumer Electronics', badge: 'CE', origin: 'Global', moq: '10 units', price: '$1,199', verified: false, desc: 'Samsung Galaxy S25 Ultra 256GB. S-Pen included. Bulk configuration and branding options available for corporate clients.' },
+  { name: 'CNC Laser Cutting Machine', cat: 'Industrial Machinery', badge: 'IM', origin: 'Germany', moq: '1 unit', price: '$45,000', verified: true, desc: 'Industrial 3000W fibre laser cutter. CE certified. Suitable for steel, aluminium, and textile cutting applications.' },
+  { name: 'Solar Panel Array — 400W', cat: 'Energy & Power', badge: 'EP', origin: 'China', moq: '50 units', price: '$180/unit', verified: true, desc: 'Monocrystalline 400W solar panels. IEC 61215 certified. Available for residential, commercial, and utility scale projects.' },
+  { name: 'Paracetamol API — Pharma Grade', cat: 'Pharmaceuticals', badge: 'PH', origin: 'India', moq: '100 kg', price: '$12/kg', verified: true, desc: 'USP/EP grade Paracetamol Active Pharmaceutical Ingredient. Full CoA, MSDS, and GMP documentation provided.' },
+  { name: 'Organic Basmati Rice — Export Grade', cat: 'Food & Agriculture', badge: 'FA', origin: 'Pakistan', moq: '10 MT', price: '$850/MT', verified: true, desc: 'Long-grain organic basmati rice. USDA Organic and EU Organic certified. Available in 1kg, 5kg, and 25kg export packaging.' },
+  { name: 'Rigid Denim — 12oz Heavyweight', cat: 'Denim & Textiles', badge: 'DT', origin: 'Vietnam', moq: '500 pcs', price: '€7.80 FOB', verified: false, desc: 'Traditional rigid heavyweight denim. Suitable for workwear, durable fashion, and Japanese-inspired heritage collections.' },
+  { name: 'AirPods Pro 3', cat: 'Consumer Electronics', badge: 'CE', origin: 'Global', moq: '20 units', price: '$279', verified: true, desc: 'Apple AirPods Pro 3rd generation with active noise cancellation. Bulk pricing available for corporate gifting and retail resellers.' },
+  { name: 'Industrial Generator — 500KVA', cat: 'Energy & Power', badge: 'EP', origin: 'USA', moq: '1 unit', price: '$28,000', verified: true, desc: 'Diesel generator 500KVA. Suitable for industrial, telecom, and critical infrastructure backup power requirements.' },
+];
+
+let basket = [];
+let currentProduct = null;
+let activeCat = 'All';
+
+function renderGrid(products) {
+  const grid = document.getElementById('productGrid');
+  document.getElementById('gridTitle').textContent = `Showing ${products.length} products`;
+  grid.innerHTML = products.map((p, i) => `
+    <div class="product-card" onclick="openPanel(${PRODUCTS.indexOf(p)})">
+      <div class="card-top">
+        <span class="card-badge">${p.badge}</span>
+        ${p.verified ? '<span class="card-verified">✓ Verified</span>' : ''}
+      </div>
+      <div class="card-name">${p.name}</div>
+      <div class="card-meta">
+        <div class="card-meta-item"><div class="card-meta-label">Origin</div><div class="card-meta-val">${p.origin}</div></div>
+        <div class="card-meta-item"><div class="card-meta-label">MOQ</div><div class="card-meta-val">${p.moq}</div></div>
+      </div>
+      <div class="card-bottom">
+        <span class="card-price">${p.price}</span>
+        <button class="card-rfq-btn">Quick RFQ →</button>
+      </div>
+      <button class="add-basket-btn" onclick="event.stopPropagation(); addToBasket(${PRODUCTS.indexOf(p)})">+ Add to Basket</button>
+    </div>
+  `).join('');
+}
+
+function filterProducts() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  let filtered = PRODUCTS.filter(p =>
+    (activeCat === 'All' || p.cat === activeCat) &&
+    (p.name.toLowerCase().includes(q) || p.cat.toLowerCase().includes(q) || p.origin.toLowerCase().includes(q))
+  );
+  renderGrid(filtered);
+}
+
+function filterCat(cat) {
+  activeCat = cat;
+  document.querySelectorAll('.cat-item').forEach(el => el.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  filterProducts();
+}
+
+function filterVerified(btn, onlyVerified) {
+  document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  let filtered = PRODUCTS.filter(p => activeCat === 'All' || p.cat === activeCat);
+  if (onlyVerified) filtered = filtered.filter(p => p.verified);
+  renderGrid(filtered);
+}
+
+function filterSort(btn, by) {
+  document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  filterProducts();
+}
+
+function openPanel(idx) {
+  const p = PRODUCTS[idx];
+  currentProduct = idx;
+  document.getElementById('panelBadge').textContent = p.cat;
+  document.getElementById('panelTitle').textContent = p.name;
+  document.getElementById('panelDesc').textContent = p.desc;
+  document.getElementById('panelSpecs').innerHTML = `
+    <div class="panel-spec"><div class="panel-spec-label">Origin</div><div class="panel-spec-val">${p.origin}</div></div>
+    <div class="panel-spec"><div class="panel-spec-label">MOQ</div><div class="panel-spec-val">${p.moq}</div></div>
+    <div class="panel-spec"><div class="panel-spec-label">Base Price</div><div class="panel-spec-val">${p.price}</div></div>
+    <div class="panel-spec"><div class="panel-spec-label">Status</div><div class="panel-spec-val" style="color:${p.verified?'#16a34a':'#92400e'}">${p.verified ? '✓ Verified' : 'Pending'}</div></div>
+  `;
+  document.getElementById('slidePanel').classList.add('open');
+  document.getElementById('panelOverlay').classList.add('open');
+}
+
+function closePanel() {
+  document.getElementById('slidePanel').classList.remove('open');
+  document.getElementById('panelOverlay').classList.remove('open');
+  currentProduct = null;
+}
+
+function addToBasket(idx) {
+  const p = PRODUCTS[idx];
+  if (basket.find(b => b.idx === idx)) { showToast('Already in basket'); return; }
+  basket.push({ idx, name: p.name });
+  updateBasket();
+  showToast('Added to RFQ Basket');
+}
+
+function addCurrentToBasket() {
+  if (currentProduct !== null) {
+    addToBasket(currentProduct);
+    closePanel();
+  }
+}
+
+function updateBasket() {
+  const count = basket.length;
+  document.getElementById('basketCount').textContent = count;
+  document.getElementById('basketItemCount').textContent = count;
+  const itemsEl = document.getElementById('basketItems');
+  if (count === 0) {
+    itemsEl.innerHTML = '<div class="basket-empty">Your RFQ basket is empty.<br>Add products to request quotes.</div>';
+  } else {
+    itemsEl.innerHTML = basket.map((b, i) => `
+      <div class="basket-item">
+        <span class="basket-item-name">${b.name}</span>
+        <button class="basket-item-remove" onclick="removeFromBasket(${i})">✕</button>
+      </div>
+    `).join('');
+  }
+}
+
+function removeFromBasket(i) {
+  basket.splice(i, 1);
+  updateBasket();
+}
+
+function toggleBasket() {
+  document.getElementById('basketDrawer').classList.toggle('open');
+}
+
+function submitRFQ() {
+  closePanel();
+  showToast('RFQ Submitted — Our team will respond within 24h');
+}
+
+function submitAllRFQ() {
+  if (!basket.length) { showToast('Basket is empty'); return; }
+  basket = [];
+  updateBasket();
+  toggleBasket();
+  showToast(`Batch RFQ Submitted — ${basket.length || 'All'} products`);
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+const AI_REPLIES = [
+  "Searching verified suppliers for your specification...",
+  "I found 3 matching products. The best match is Raw Selvedge Denim 14oz from our Vietnam partner — WRAP Gold certified, €8.50 FOB, MOQ 500 pcs. Want me to pre-fill an RFQ?",
+  "Based on your Q3 timeline, I recommend locking in the quote now. The supplier has open capacity through August. Shall I connect you with the sourcing desk?",
+  "I can also filter by certification type — GOTS, GRS, ZDHC, BSCI, or SEDEX. Which compliance standard is required for your buyer?",
+  "Got it. I'll flag products matching your criteria and notify the sourcing team to prioritise your enquiry.",
+];
+let aiIdx = 0;
+
+function openAI() {
+  document.getElementById('aiChatBox').classList.add('open');
+}
+
+function sendAI() {
+  const input = document.getElementById('aiInput');
+  const msg = input.value.trim();
+  if (!msg) return;
+  const msgs = document.getElementById('aiMessages');
+  msgs.innerHTML += `<div class="msg user">${msg}</div>`;
+  input.value = '';
+  setTimeout(() => {
+    msgs.innerHTML += `<div class="msg ai">${AI_REPLIES[aiIdx % AI_REPLIES.length]}</div>`;
+    aiIdx++;
+    msgs.scrollTop = msgs.scrollHeight;
+  }, 700);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function handleAIKey(e) { if (e.key === 'Enter') sendAI(); }
+
+renderGrid(PRODUCTS);
+</script>
+</body>
+</html>

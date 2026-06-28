@@ -25,14 +25,14 @@ function PinScreen({ onUnlock }: { onUnlock: () => void }) {
   }
 
   return (
-    <main className="min-h-[60vh] flex items-center justify-center py-20" style={{ background: 'linear-gradient(135deg, #1A0505 0%, #1a0a0e 100%)' }}>
+    <main className="min-h-[60vh] flex items-center justify-center py-20" style={{ background: 'linear-gradient(135deg, #3D1212 0%, #1a0a0e 100%)' }}>
       <div className="w-full max-w-md mx-4">
         <div className="p-10 text-center" style={{ background: '#fff', border: '1px solid rgba(195,163,94,0.3)' }}>
           <div className="mb-6">
             <div className="w-16 h-16 mx-auto flex items-center justify-center mb-4" style={{ background: '#F5F0E8', border: '1px solid rgba(195,163,94,0.3)' }}>
               <span className="text-2xl">🔐</span>
             </div>
-            <h1 className="text-2xl font-bold mb-2" style={{ color: '#1A0505' }}>Harvics App Store</h1>
+            <h1 className="text-2xl font-bold mb-2" style={{ color: '#3D1212' }}>Harvics App Store</h1>
             <p className="text-sm" style={{ color: '#9a8070' }}>Enter the access code to continue</p>
           </div>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -44,11 +44,11 @@ function PinScreen({ onUnlock }: { onUnlock: () => void }) {
                 placeholder="Access Code"
                 autoFocus
                 className="w-full px-4 py-3 text-center text-lg tracking-[0.15em] font-mono outline-none transition-all"
-                style={{ background: '#F5F0E8', border: error ? '2px solid #e53e3e' : '1px solid rgba(195,163,94,0.3)', color: '#1A0505' }}
+                style={{ background: '#F5F0E8', border: error ? '2px solid #e53e3e' : '1px solid rgba(195,163,94,0.3)', color: '#3D1212' }}
               />
               {error && <p className="text-xs mt-2" style={{ color: '#e53e3e' }}>Invalid code. Please try again.</p>}
             </div>
-            <button type="submit" className="w-full py-3 text-sm font-bold tracking-[0.12em] uppercase transition-all duration-300 hover:opacity-90" style={{ background: '#1A0505', color: '#fff' }}>
+            <button type="submit" className="w-full py-3 text-sm font-bold tracking-[0.12em] uppercase transition-all duration-300 hover:opacity-90" style={{ background: '#3D1212', color: '#fff' }}>
               Unlock Apps →
             </button>
           </form>
@@ -100,7 +100,7 @@ const APPS = [
     status: 'live' as 'live' | 'preview' | 'coming-soon',
     badge: 'LIVE',
     icon: '👥',
-    color: '#1A0505',
+    color: '#3D1212',
     accentColor: '#C3A35E',
     url: 'https://www.harvichr.eu',
     features: [
@@ -379,7 +379,7 @@ function StatusBadge({ status, badge }: { status: 'live' | 'preview' | 'coming-s
   return (
     <span
       className="inline-flex items-center px-3 py-1 text-[10px] font-bold tracking-[0.12em] uppercase"
-      style={{ background: 'rgba(26, 5, 5, 0.08)', color: '#1A0505', border: '1px solid rgba(26, 5, 5, 0.2)' }}
+      style={{ background: 'rgba(26, 5, 5, 0.08)', color: '#3D1212', border: '1px solid rgba(26, 5, 5, 0.2)' }}
     >
       {badge}
     </span>
@@ -443,7 +443,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
         >
           {app.stats.map((s) => (
             <div key={s.label} className="px-3 py-3 text-center">
-              <div className="text-lg font-bold" style={{ color: '#1A0505' }}>{s.value}</div>
+              <div className="text-lg font-bold" style={{ color: '#3D1212' }}>{s.value}</div>
               <div className="text-[10px] tracking-[0.06em] uppercase" style={{ color: '#9a8070' }}>{s.label}</div>
             </div>
           ))}
@@ -455,7 +455,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
             <span
               key={f}
               className="text-[10px] px-2 py-1 tracking-[0.04em]"
-              style={{ background: '#F5F0E8', color: '#1A0505', border: '1px solid rgba(26, 5, 5, 0.1)' }}
+              style={{ background: '#F5F0E8', color: '#3D1212', border: '1px solid rgba(26, 5, 5, 0.1)' }}
             >
               {f}
             </span>
@@ -474,7 +474,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
         {app.status === 'live' ? (
           <button
             className="w-full py-3 text-xs font-bold tracking-[0.1em] uppercase transition-all duration-300"
-            style={{ background: '#1A0505', color: '#fff' }}
+            style={{ background: '#3D1212', color: '#fff' }}
             onClick={(e) => {
               e.stopPropagation()
               if (app.url.startsWith('http')) {
@@ -502,7 +502,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
                 { v: countdown.seconds, l: 'Sec' },
               ].map(({ v, l }) => (
                 <div key={l} className="py-2 text-center">
-                  <div className="text-base font-bold tabular-nums" style={{ color: '#1A0505' }}>{String(v).padStart(2, '0')}</div>
+                  <div className="text-base font-bold tabular-nums" style={{ color: '#3D1212' }}>{String(v).padStart(2, '0')}</div>
                   <div className="text-[9px] tracking-[0.06em] uppercase" style={{ color: '#9a8070' }}>{l}</div>
                 </div>
               ))}
@@ -511,7 +511,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
         ) : (
           <button
             className="w-full py-3 text-xs font-bold tracking-[0.1em] uppercase transition-all duration-300"
-            style={{ background: 'transparent', border: '1px solid #1A0505', color: '#1A0505' }}
+            style={{ background: 'transparent', border: '1px solid #3D1212', color: '#3D1212' }}
             onClick={() => onClick()}
           >
             Submit Your Interest →
@@ -540,7 +540,7 @@ function ModalCountdown() {
           { v: countdown.seconds, l: 'Sec' },
         ].map(({ v, l }) => (
           <div key={l} className="py-4 text-center">
-            <div className="text-2xl font-bold tabular-nums" style={{ color: '#1A0505' }}>{String(v).padStart(2, '0')}</div>
+            <div className="text-2xl font-bold tabular-nums" style={{ color: '#3D1212' }}>{String(v).padStart(2, '0')}</div>
             <div className="text-[10px] tracking-[0.06em] uppercase mt-1" style={{ color: '#9a8070' }}>{l}</div>
           </div>
         ))}
@@ -619,7 +619,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
                     className="p-4 text-center"
                     style={{ background: '#F5F0E8', border: '1px solid rgba(195,163,94,0.2)' }}
                   >
-                    <div className="text-2xl font-bold" style={{ color: '#1A0505' }}>{s.value}</div>
+                    <div className="text-2xl font-bold" style={{ color: '#3D1212' }}>{s.value}</div>
                     <div className="text-[10px] tracking-[0.06em] uppercase mt-1" style={{ color: '#9a8070' }}>{s.label}</div>
                   </div>
                 ))}
@@ -655,7 +655,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
                       key={plan.tier}
                       className="p-4"
                       style={{
-                        background: plan.highlight ? '#1A0505' : '#F5F0E8',
+                        background: plan.highlight ? '#3D1212' : '#F5F0E8',
                         border: plan.highlight ? 'none' : '1px solid rgba(195,163,94,0.2)',
                       }}
                     >
@@ -667,7 +667,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
                       </div>
                       <div
                         className="text-2xl font-bold mt-1"
-                        style={{ color: plan.highlight ? '#fff' : '#1A0505' }}
+                        style={{ color: plan.highlight ? '#fff' : '#3D1212' }}
                       >
                         {plan.price}
                       </div>
@@ -701,7 +701,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
                 href={app.url}
                 {...(app.url.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 className="block w-full py-4 text-center text-sm font-bold tracking-[0.1em] uppercase transition-all duration-300 hover:opacity-90"
-                style={{ background: '#1A0505', color: '#fff' }}
+                style={{ background: '#3D1212', color: '#fff' }}
               >
                 Launch {app.name} →
               </a>
@@ -710,7 +710,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
             ) : (
               <button
                 className="w-full py-4 text-sm font-bold tracking-[0.1em] uppercase"
-                style={{ background: '#1A0505', color: '#fff' }}
+                style={{ background: '#3D1212', color: '#fff' }}
               >
                 Submit Your Interest →
               </button>
@@ -754,7 +754,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
       <section
         className="relative py-24 overflow-hidden"
         style={{
-          background: 'linear-gradient(135deg, #1A0505 0%, #3d1018 60%, #1a0a0e 100%)',
+          background: 'linear-gradient(135deg, #3D1212 0%, #3d1018 60%, #1a0a0e 100%)',
         }}
       >
         {/* Decorative grid pattern */}
@@ -815,8 +815,8 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
                 onClick={() => setActiveCategory(cat)}
                 className="whitespace-nowrap px-4 py-2 text-xs font-bold tracking-[0.08em] uppercase transition-all duration-200"
                 style={{
-                  background: activeCategory === cat ? '#1A0505' : 'transparent',
-                  color: activeCategory === cat ? '#fff' : '#1A0505',
+                  background: activeCategory === cat ? '#3D1212' : 'transparent',
+                  color: activeCategory === cat ? '#fff' : '#3D1212',
                   border: activeCategory === cat ? 'none' : '1px solid rgba(26, 5, 5, 0.2)',
                 }}
               >
@@ -957,7 +957,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
           ].map((item) => (
             <div key={item.title} className="text-center">
               <div className="text-4xl mb-4">{item.icon}</div>
-              <h3 className="text-base font-bold mb-2" style={{ color: '#1A0505' }}>{item.title}</h3>
+              <h3 className="text-base font-bold mb-2" style={{ color: '#3D1212' }}>{item.title}</h3>
               <p className="text-sm leading-relaxed" style={{ color: '#9a8070' }}>{item.desc}</p>
             </div>
           ))}
@@ -967,7 +967,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
       {/* ── BUILD ON HARVICS ── */}
       <section
         className="py-16"
-        style={{ background: 'linear-gradient(135deg, #1A0505 0%, #3d1018 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #3D1212 0%, #3d1018 100%)' }}
       >
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">

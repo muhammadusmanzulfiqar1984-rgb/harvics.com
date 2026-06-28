@@ -109,9 +109,9 @@ const Footer: React.FC = () => {
             <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 600, letterSpacing: '0.32em', textTransform: 'uppercase' }}>The Harvics Brief</span>
             <div style={{ height: '1px', width: '32px', background: '#C3A35E' }} />
           </div>
-          <h2 style={{ fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 200, letterSpacing: '-0.02em', color: '#1A0505', lineHeight: 1.15, marginBottom: '8px' }}>
+          <h2 style={{ fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 200, letterSpacing: '-0.02em', color: '#3D1212', lineHeight: 1.15, marginBottom: '8px' }}>
             {tt('newsletterHeadline', 'Monthly intelligence.')}{' '}
-            <span style={{ color: '#1A0505', fontWeight: 400 }}>{tt('newsletterHeadline2', 'For serious buyers.')}</span>
+            <span style={{ color: '#3D1212', fontWeight: 400 }}>{tt('newsletterHeadline2', 'For serious buyers.')}</span>
           </h2>
           <p style={{ color: 'rgba(26,5,5,0.55)', fontSize: '12px', marginBottom: '18px' }}>
             {tt('newsletterTagline', 'Market alerts · sourcing insights · new factory verifications. One email a month. No spam.')}
@@ -123,12 +123,12 @@ const Footer: React.FC = () => {
               onChange={(e) => setEmail(e.target.value)}
               placeholder={tt('enterEmailPlaceholder', 'you@company.com')}
               required
-              style={{ flex: 1, padding: '11px 16px', border: '1px solid rgba(26,5,5,0.18)', borderRight: 'none', background: '#fff', fontSize: '12px', color: '#1A0505', outline: 'none' }}
+              style={{ flex: 1, padding: '11px 16px', border: '1px solid rgba(26,5,5,0.18)', borderRight: 'none', background: '#fff', fontSize: '12px', color: '#3D1212', outline: 'none' }}
             />
             <button
               type="submit"
               disabled={isSubmitting}
-              style={{ padding: '11px 26px', background: '#1A0505', color: '#C3A35E', border: '1px solid #1A0505', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', cursor: 'pointer' }}
+              style={{ padding: '11px 26px', background: '#3D1212', color: '#C3A35E', border: '1px solid #3D1212', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', cursor: 'pointer' }}
             >
               {isSubmitting ? '...' : (tt('subscribe', 'Subscribe'))}
             </button>

@@ -1,0 +1,188 @@
+[
+  {
+    "name": "Google Places",
+    "enabled": true,
+    "mode": "wired",
+    "category": "lead_source"
+  },
+  {
+    "name": "Apollo",
+    "enabled": true,
+    "mode": "wired",
+    "category": "lead_source"
+  },
+  {
+    "name": "RocketReach",
+    "enabled": true,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "Lusha",
+    "enabled": true,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "Waalaxy",
+    "enabled": true,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "Python Web Scraper",
+    "enabled": true,
+    "mode": "wired",
+    "category": "lead_source"
+  },
+  {
+    "name": "LinkedIn Public Web",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "Eventseye",
+    "enabled": false,
+    "mode": "library",
+    "category": "event"
+  },
+  {
+    "name": "10Times",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "FHA Exhibitors",
+    "enabled": false,
+    "mode": "library",
+    "category": "event"
+  },
+  {
+    "name": "NEC Exhibitors",
+    "enabled": false,
+    "mode": "library",
+    "category": "event"
+  },
+  {
+    "name": "Seafood Expo",
+    "enabled": false,
+    "mode": "library",
+    "category": "event"
+  },
+  {
+    "name": "IFE UK",
+    "enabled": false,
+    "mode": "library",
+    "category": "event"
+  },
+  {
+    "name": "OpenCorporates",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "Company House UK",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "YellowPages",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "Europages",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "Kompass",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "TradeIndia",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "Alibaba Directory",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "GlobalSources",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "ThomasNet",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "Crunchbase Public",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "ImportYeti",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "Panjiva Public",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "Retailer Directory",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "Distributor Portals",
+    "enabled": false,
+    "mode": "library",
+    "category": "lead_source"
+  },
+  {
+    "name": "Chamber of Commerce Directories",
+    "enabled": false,
+    "mode": "library",
+    "category": "directory"
+  },
+  {
+    "name": "Country Trade Associations",
+    "enabled": false,
+    "mode": "library",
+    "category": "directory"
+  },
+  {
+    "name": "Exporter Associations",
+    "enabled": false,
+    "mode": "library",
+    "category": "directory"
+  },
+  {
+    "name": "Importer Associations",
+    "enabled": false,
+    "mode": "library",
+    "category": "directory"
+  }
+]

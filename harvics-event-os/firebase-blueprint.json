@@ -1,0 +1,122 @@
+{
+  "entities": {
+    "Event": {
+      "title": "Event Configuration",
+      "description": "Global configuration for the event",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "edition": { "type": "string" },
+        "primary_color": { "type": "string" },
+        "accent_color": { "type": "string" },
+        "sponsors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "role": { "type": "string" }
+            }
+          }
+        }
+      },
+      "required": ["name", "edition"]
+    },
+    "User": {
+      "title": "User Profile",
+      "description": "Professional profile of an attendee",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string" },
+        "company": { "type": "string" },
+        "interests": { "type": "array", "items": { "type": "string" } },
+        "photoUrl": { "type": "string" }
+      },
+      "required": ["uid", "name", "email"]
+    },
+    "Exhibitor": {
+      "title": "Exhibitor",
+      "description": "Company exhibiting at the event",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "booth": { "type": "string" },
+        "hall": { "type": "string" },
+        "description": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["name", "booth"]
+    },
+    "AgendaItem": {
+      "title": "Agenda Item",
+      "description": "A session or workshop in the event schedule",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "time": { "type": "string" },
+        "location": { "type": "string" },
+        "speaker": { "type": "string" },
+        "type": { "type": "string" }
+      },
+      "required": ["title", "time"]
+    },
+    "Message": {
+      "title": "Message",
+      "description": "A chat message between two users",
+      "type": "object",
+      "properties": {
+        "senderId": { "type": "string" },
+        "receiverId": { "type": "string" },
+        "text": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["senderId", "receiverId", "text", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/events/{eventId}": {
+      "schema": "Event",
+      "description": "Event configuration documents"
+    },
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profile documents"
+    },
+    "/exhibitors/{exhibitorId}": {
+      "schema": "Exhibitor",
+      "description": "Exhibitor documents"
+    },
+    "/agenda/{agendaId}": {
+      "schema": "AgendaItem",
+      "description": "Agenda items"
+    },
+    "/messages/{messageId}": {
+      "schema": "Message",
+      "description": "Chat messages"
+    },
+    "/upcoming_events/{eventId}": {
+      "schema": "object",
+      "description": "Upcoming events for discovery"
+    },
+    "/upcoming_events/{eventId}/participants/{participantId}": {
+      "schema": "User",
+      "description": "Users interested in an upcoming event"
+    },
+    "/users/{userId}/bookmarks/{exhibitorId}": {
+      "schema": "object",
+      "description": "Exhibitors bookmarked by the user"
+    },
+    "/users/{userId}/agenda_bookmarks/{agendaId}": {
+      "schema": "object",
+      "description": "Agenda items bookmarked by the user"
+    },
+    "/users/{userId}/scans/{scanId}": {
+      "schema": "User",
+      "description": "Users scanned by the current user"
+    }
+  }
+}

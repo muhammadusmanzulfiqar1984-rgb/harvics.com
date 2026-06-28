@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HarvyX Unified — Proposal (Front Display style)</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --burgundy-deep:#2a1118;
+    --burgundy:#6b1f2a;
+    --burgundy-soft:#3d1a22;
+    --gold:#c3a35e;
+    --gold-2:#c9a84c;
+    --cream:#f5f0e8;
+    --cream-2:#f1e8da;
+    --ink-dark:#1a0505;
+    --line:#b99855;
+    --ok:#2f7d4c;
+    --warn:#c27d13;
+    --bad:#9a1f38;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;font-family:Inter,"Segoe UI",sans-serif;color:var(--ink-dark);
+    background:
+      radial-gradient(circle at 8% 10%, rgba(195,163,94,.12) 0%, transparent 36%),
+      radial-gradient(circle at 90% 0%, rgba(107,31,42,.2) 0%, transparent 30%),
+      var(--cream);
+    min-height:100vh;
+  }
+  .app{min-height:100vh;display:grid;grid-template-rows:auto 1fr}
+
+  /* ───────── TOPBAR ───────── */
+  .topbar{
+    position:sticky;top:0;z-index:10;
+    background:linear-gradient(180deg, rgba(42,17,24,.97), rgba(29,10,16,.97));
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(201,168,76,.30);
+    padding:14px 22px;display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;
+    box-shadow:0 4px 18px rgba(20,5,8,.20)
+  }
+  .brand{display:flex;align-items:center;gap:12px;color:var(--cream)}
+  .brand .mark{
+    width:34px;height:34px;border-radius:8px;background:var(--burgundy);color:#f1d18a;
+    display:grid;place-items:center;font-family:'Playfair Display',serif;font-weight:700;font-size:14px;
+    box-shadow:inset 0 0 0 1px rgba(241,209,138,.4), 0 4px 12px rgba(107,31,42,.45)
+  }
+  .brand .name{font-family:'Playfair Display',serif;font-size:17px;font-weight:600;letter-spacing:.3px;line-height:1}
+  .brand .sub{color:#c3a35e;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;margin-top:3px}
+  .status-pill{justify-self:center;font-size:11.5px;border:1px solid rgba(201,168,76,.35);background:rgba(60,45,15,.40);color:#f1d18a;border-radius:999px;padding:6px 14px;letter-spacing:.04em}
+  .status-pill .d{display:inline-block;width:7px;height:7px;border-radius:50%;background:#9ed3ad;box-shadow:0 0 8px rgba(158,211,173,.7);margin-right:8px;vertical-align:middle}
+  .actions{display:flex;gap:8px}
+  .btn{
+    border:1px solid #9c7c37;background:#fdf6e8;color:#4b1621;
+    border-radius:8px;padding:8px 13px;font-weight:600;cursor:pointer;font-size:12.5px;font-family:inherit;
+    transition:transform .12s ease, background .12s ease
+  }
+  .btn:hover{background:#fff5de;transform:translateY(-1px)}
+  .btn.primary{background:linear-gradient(120deg,#c9a84c,#f1d18a);color:#2a1118;border-color:#c9a84c}
+  .btn.primary:hover{background:linear-gradient(120deg,#d6b65a,#fadf99)}
+  .btn.ghost{background:transparent;color:#f1d18a;border-color:rgba(201,168,76,.40)}
+  .btn.ghost:hover{background:rgba(201,168,76,.12)}
+
+  /* ───────── LAYOUT ───────── */
+  .layout{
+    display:grid;grid-template-columns:300px minmax(440px,1fr) 340px;
+    gap:16px;padding:18px;
+    max-width:1480px;margin:0 auto;width:100%
+  }
+  .left-col,.center-col,.right-col{display:grid;gap:16px;align-content:start}
+
+  .panel{
+    background:linear-gradient(180deg, rgba(255,252,246,.98), rgba(253,247,232,.96));
+    border:1px solid rgba(185,152,85,.55);border-radius:12px;padding:16px;
+    box-shadow:0 6px 18px rgba(42,17,24,.06), 0 1px 0 rgba(255,255,255,.6) inset;
+  }
+  .panel h2{
+    margin:0 0 12px;font-family:'Playfair Display',serif;font-size:14px;font-weight:600;
+    color:var(--burgundy);letter-spacing:.04em;text-transform:uppercase;
+    padding-bottom:8px;border-bottom:1px solid rgba(185,152,85,.35);
+    display:flex;align-items:center;justify-content:space-between
+  }
+  .panel h2::before{
+    content:"";width:6px;height:6px;border-radius:50%;background:var(--gold-2);margin-right:8px;
+    box-shadow:0 0 8px rgba(201,168,76,.6);display:inline-block
+  }
+  .panel h2 .count{
+    font-family:Inter,sans-serif;font-size:10.5px;font-weight:500;color:#7a5824;letter-spacing:.12em;
+    background:#fff5de;border:1px solid #d8be85;padding:2px 8px;border-radius:999px;text-transform:none
+  }
+  .panel .h-sub{color:#7a5824;font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin:-6px 0 10px}
+
+  /* ───────── LEFT: KPIs + Scrapers + Queue ───────── */
+  .metric-list{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .metric{
+    background:linear-gradient(180deg, #fffdf6, #fff5e2);
+    border:1px solid #e0c181;border-radius:10px;padding:11px 12px;position:relative;overflow:hidden
+  }
+  .metric::after{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold-2),transparent)}
+  .metric .label{color:#7a5a24;font-size:10.5px;letter-spacing:.10em;text-transform:uppercase;margin-bottom:6px;font-weight:500}
+  .metric .value{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--burgundy);line-height:1}
+  .metric .delta{font-size:10.5px;color:var(--ok);margin-top:5px;letter-spacing:.04em}
+  .metric.warn .value{color:var(--warn)}
+  .metric.bad .value{color:var(--bad)}
+
+  .source-item{
+    padding:10px 12px;border-radius:8px;border:1px solid #e0c181;background:#fffaef;
+    font-size:12.5px;margin-bottom:7px;display:flex;justify-content:space-between;align-items:center;
+    transition:background .12s ease, border-color .12s ease
+  }
+  .source-item:hover{background:#fff5de;border-color:#d0ad66}
+  .source-item:last-child{margin-bottom:0}
+  .source-item strong{color:var(--burgundy);font-weight:600;font-size:12.5px}
+  .source-item .st{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#7a5824;letter-spacing:.04em}
+  .source-item .st.live{color:var(--ok)}
+  .source-item .st.live::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--ok);margin-right:5px;box-shadow:0 0 6px rgba(47,125,76,.55);vertical-align:middle}
+  .source-item .st.run{color:var(--warn)}
+
+  .lead-card{
+    border:1px solid #e0c181;background:#fffaef;border-radius:10px;padding:11px;margin-bottom:8px;font-size:12.5px;
+    cursor:pointer;transition:transform .12s ease, box-shadow .12s ease
+  }
+  .lead-card:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(107,31,42,.10)}
+  .lead-card:last-child{margin-bottom:0}
+  .lead-card .name{font-family:'Playfair Display',serif;font-weight:600;color:var(--burgundy);margin-bottom:4px;font-size:13.5px}
+  .lead-card .meta{color:#5e4218;font-size:11.5px}
+  .lead-card .score{
+    float:right;font-family:'Playfair Display',serif;color:#2a1118;
+    background:linear-gradient(120deg,#c9a84c,#f1d18a);
+    border:1px solid #b58a2f;border-radius:999px;padding:2px 11px;font-size:12px;font-weight:700;
+    box-shadow:inset 0 -1px 0 rgba(0,0,0,.06)
+  }
+  .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+  .tag{background:#fff5de;color:#744d16;border:1px solid #d0ad66;border-radius:999px;padding:2px 8px;font-size:10px;letter-spacing:.04em}
+  .tag.hot{background:#fde6e1;color:var(--bad);border-color:#e7a89c}
+  .tag.ok{background:#e6f1e9;color:var(--ok);border-color:#a9c9b3}
+
+  /* ───────── CENTER: OPERATOR (DARK BURGUNDY) ───────── */
+  .center-col .panel.chat-shell{
+    background:
+      radial-gradient(ellipse 700px 420px at 50% 0%, rgba(195,163,94,.10), transparent 70%),
+      linear-gradient(180deg, #1d0a10 0%, #120608 100%);
+    border:1px solid rgba(195,163,94,.25);
+    color:#ece4d3;
+    box-shadow:0 18px 40px rgba(20,5,8,.35), inset 0 0 0 1px rgba(195,163,94,.06);
+  }
+  .chat-shell{display:grid;grid-template-rows:auto 1fr auto;min-height:calc(100vh - 130px)}
+  .chat-head{
+    display:flex;justify-content:space-between;align-items:center;
+    padding-bottom:10px;border-bottom:1px solid rgba(195,163,94,.22);margin-bottom:10px
+  }
+  .chat-title{font-family:'Playfair Display',serif;font-weight:600;color:#e6cd92;font-size:16px}
+  .pill-row{display:flex;flex-wrap:wrap;gap:7px}
+  .pill{font-size:11px;border-radius:999px;padding:4px 10px;border:1px solid rgba(195,163,94,.35);background:rgba(195,163,94,.08);color:#e6cd92}
+  .pill.live{background:rgba(126,194,139,.12);color:#9ed3ad;border-color:rgba(126,194,139,.35)}
+
+  .chat-thread{overflow:auto;display:grid;gap:12px;padding-right:4px;align-content:start;max-height:62vh}
+  .bubble{max-width:82%;padding:11px 14px;border-radius:14px;font-size:13.5px;line-height:1.55;border:1px solid}
+  .bubble.user{
+    justify-self:end;
+    background:linear-gradient(180deg, rgba(195,163,94,.16), rgba(195,163,94,.08));
+    border-color:rgba(195,163,94,.4);color:#fff5de;
+    border-bottom-right-radius:4px
+  }
+  .bubble.bot{
+    justify-self:start;
+    background:rgba(255,250,240,.04);
+    border-color:rgba(195,163,94,.22);color:#ece4d3;
+    border-bottom-left-radius:4px
+  }
+  .bubble.bot strong{color:#e6cd92}
+
+  /* Embedded scrape result in a bot bubble */
+  .scrape{
+    background:rgba(0,0,0,.30);
+    border:1px solid rgba(195,163,94,.28);border-radius:10px;margin-top:10px;overflow:hidden
+  }
+  .scrape-h{
+    background:linear-gradient(180deg,rgba(107,31,42,.45),rgba(58,15,23,.20));
+    border-bottom:1px solid rgba(195,163,94,.22);padding:8px 12px;
+    display:flex;justify-content:space-between;align-items:center;
+    font-size:11px;color:#e6cd92;letter-spacing:.14em;text-transform:uppercase
+  }
+  .scrape-h b{font-family:'Playfair Display',serif;color:#f5e2b3;letter-spacing:.05em;text-transform:none;font-size:13px}
+  .scrape-row{
+    display:grid;grid-template-columns:1fr 90px 50px;gap:10px;padding:10px 12px;
+    border-bottom:1px solid rgba(195,163,94,.14);font-size:12.5px;align-items:center
+  }
+  .scrape-row:last-child{border-bottom:none}
+  .scrape-row .nm{font-weight:600;color:#fff5de}
+  .scrape-row .sub{font-size:11px;color:rgba(236,228,211,.55);margin-top:2px;font-weight:400}
+  .scrape-row .src{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#c3a35e}
+  .scrape-row .sc{font-family:'Playfair Display',serif;color:#f5e2b3;text-align:right;font-size:17px;font-weight:700}
+
+  .composer{margin-top:14px;display:grid;gap:8px}
+  .composer .row{display:grid;grid-template-columns:auto 1fr auto;gap:8px}
+  .composer input{
+    width:100%;border-radius:10px;border:1px solid rgba(195,163,94,.32);
+    background:rgba(0,0,0,.35);color:#ece4d3;
+    padding:12px 14px;font-size:13.5px;font-family:inherit;outline:none
+  }
+  .composer input::placeholder{color:rgba(236,228,211,.4)}
+  .composer input:focus{border-color:#c3a35e;box-shadow:0 0 0 3px rgba(195,163,94,.18)}
+  .composer .mic{
+    width:44px;border:1px solid rgba(195,163,94,.35);background:rgba(195,163,94,.10);
+    color:#e6cd92;border-radius:10px;font-size:18px;cursor:pointer
+  }
+  .composer .mic.live{
+    background:var(--burgundy);color:#fde6b0;border-color:var(--burgundy);
+    animation:pulse 1.6s infinite
+  }
+  @keyframes pulse{50%{box-shadow:0 0 0 8px rgba(195,163,94,0)}0%,100%{box-shadow:0 0 0 0 rgba(195,163,94,.55)}}
+  /* In dark center, neutralize generic .btn so it blends */
+  .center-col .btn{
+    background:rgba(195,163,94,.10);color:#e6cd92;border-color:rgba(195,163,94,.35)
+  }
+  .center-col .btn:hover{background:rgba(195,163,94,.20)}
+  .center-col .btn.primary{
+    background:linear-gradient(120deg,#c9a84c,#f1d18a);color:#2a1118;border-color:#c9a84c
+  }
+  .composer .actions{display:flex;gap:8px;justify-content:flex-start;flex-wrap:wrap}
+  .composer-help{font-size:11px;color:#c3a35e;letter-spacing:.08em}
+
+  /* ───────── RIGHT: OUTREACH ───────── */
+  .draft .name{display:flex;justify-content:space-between;align-items:center}
+  .draft .body{color:#3a121b;margin-top:4px}
+  .draft .row{display:flex;gap:6px;margin-top:8px}
+  .draft .row .btn{flex:1;padding:6px;font-size:11px}
+
+  .activity{font-size:12.5px;color:#3a121b;display:grid;gap:6px}
+  .activity .a{display:flex;gap:10px;padding:6px 0;border-bottom:1px dashed #e3c98f}
+  .activity .a:last-child{border-bottom:none}
+  .activity .a .t{color:#7a5824;font-family:ui-monospace,Menlo,monospace;font-size:11px;min-width:42px}
+  .activity .a code{color:var(--burgundy);font-family:ui-monospace,Menlo,monospace;font-size:11.5px;background:#fff5de;padding:0 4px;border-radius:3px}
+
+  @media (max-width:1100px){
+    .layout{grid-template-columns:1fr}
+    .topbar{grid-template-columns:1fr}
+    .actions{flex-wrap:wrap}
+    .chat-shell{min-height:auto}
+  }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark">HX</div>
+      <div>
+        <div class="name">HarvyX Growth OS</div>
+        <div class="sub">Voice · Chat · Scrape · Outreach</div>
+      </div>
+    </div>
+    <span class="status-pill"><span class="d"></span>All systems online · 6 scrapers · voice ready</span>
+    <div class="actions">
+      <button class="btn ghost">Pipeline</button>
+      <button class="btn ghost">Outreach</button>
+      <button class="btn primary">+ New Run</button>
+    </div>
+  </header>
+
+  <main class="layout">
+
+    <!-- LEFT -->
+    <section class="left-col">
+      <section class="panel">
+        <h2>Data Intelligence <span class="count">today</span></h2>
+        <div class="metric-list">
+          <div class="metric"><div class="label">Total Leads</div><div class="value">1,248</div><div class="delta">+19 today</div></div>
+          <div class="metric"><div class="label">New Today</div><div class="value">19</div><div class="delta">+8 last hr</div></div>
+          <div class="metric ok"><div class="label">Qualified</div><div class="value">63</div><div class="delta">+8 today</div></div>
+          <div class="metric warn"><div class="label">Missing Data</div><div class="value">12</div></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Active Scrapers <span class="count">6 sources</span></h2>
+        <div class="source-item"><strong>Apollo · Organizations</strong><span class="st live">8 / 50</span></div>
+        <div class="source-item"><strong>Google Places · UAE / SA</strong><span class="st live">12 / 30</span></div>
+        <div class="source-item"><strong>LinkedIn · Serper → Brave</strong><span class="st run">⟳ retry</span></div>
+        <div class="source-item"><strong>Google CSE · Brands</strong><span class="st">idle</span></div>
+        <div class="source-item"><strong>Events Scraper · SSE</strong><span class="st live">live</span></div>
+        <div class="source-item"><strong>Excel / CSV Import</strong><span class="st">drop file</span></div>
+      </section>
+
+      <section class="panel">
+        <h2>Lead Queue <span class="count">top 3</span></h2>
+        <article class="lead-card">
+          <span class="score">92</span>
+          <div class="name">Al Rawabi Trading</div>
+          <div class="meta">Apollo · Riyadh · FMCG · 250 emp</div>
+          <div class="tags"><span class="tag hot">Hot</span><span class="tag">FMCG</span><span class="tag">SA</span></div>
+        </article>
+        <article class="lead-card">
+          <span class="score">88</span>
+          <div class="name">Najm Foods Holdings</div>
+          <div class="meta">Places · Jeddah · private label</div>
+          <div class="tags"><span class="tag ok">Qualified</span><span class="tag">B2B</span></div>
+        </article>
+        <article class="lead-card">
+          <span class="score">74</span>
+          <div class="name">Safa Foods</div>
+          <div class="meta">WhatsApp · AE · awaiting budget</div>
+          <div class="tags"><span class="tag">Follow-up</span></div>
+        </article>
+      </section>
+    </section>
+
+    <!-- CENTER -->
+    <section class="center-col">
+      <section class="panel chat-shell">
+        <div class="chat-head">
+          <div class="chat-title">HarvyX Operator · Voice + Chat</div>
+          <div class="pill-row">
+            <span class="pill live">● Voice Ready</span>
+            <span class="pill">Extraction Active</span>
+            <span class="pill">Route: Multi-channel</span>
+          </div>
+        </div>
+
+        <div class="chat-thread">
+          <div class="bubble user">Find 25 FMCG distributors in Saudi Arabia, score them, and draft a first WhatsApp for the top 5.</div>
+
+          <div class="bubble bot">
+            On it — running Apollo, Google Places and LinkedIn in parallel. Scoring with your weights.
+            <div class="scrape">
+              <div class="scrape-h"><b>Top 5 · scored</b><span>25 results · 8s</span></div>
+              <div class="scrape-row">
+                <div><div class="nm">Al Rawabi Trading Co.</div><div class="sub">Riyadh · FMCG · 250 emp</div></div>
+                <div class="src">apollo</div><div class="sc">92</div>
+              </div>
+              <div class="scrape-row">
+                <div><div class="nm">Najm Foods Holdings</div><div class="sub">Jeddah · private label · 180 emp</div></div>
+                <div class="src">places</div><div class="sc">88</div>
+              </div>
+              <div class="scrape-row">
+                <div><div class="nm">Almarai B2B Division</div><div class="sub">Riyadh · dairy + ambient</div></div>
+                <div class="src">linkedin</div><div class="sc">85</div>
+              </div>
+              <div class="scrape-row">
+                <div><div class="nm">Sadafco Distribution</div><div class="sub">Jeddah · regional GCC</div></div>
+                <div class="src">apollo</div><div class="sc">82</div>
+              </div>
+              <div class="scrape-row">
+                <div><div class="nm">Gulf Pantry Co.</div><div class="sub">Dammam · importer · 60 emp</div></div>
+                <div class="src">places</div><div class="sc">79</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bubble user">Yes — draft WhatsApp + LinkedIn for the top 5. Tone premium but warm.</div>
+          <div class="bubble bot">Drafts ready in the right rail. Approve to send, or say <strong>"send all approved"</strong>.</div>
+        </div>
+
+        <div class="composer">
+          <div class="row">
+            <button class="mic live" title="Listening">🎙</button>
+            <input type="text" placeholder="Type or speak your next message…" aria-label="chat input" />
+            <button class="btn primary">Send</button>
+          </div>
+          <div class="actions">
+            <button class="btn">Start Hands-Free</button>
+            <button class="btn">Stop Voice</button>
+            <button class="btn">Save Lead</button>
+            <span class="composer-help" style="margin-left:auto;align-self:center">⏎ send · ⇧⏎ newline · 🎙 voice · Vapi + browser speech</span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- RIGHT -->
+    <aside class="right-col">
+      <section class="panel">
+        <h2>Outreach Console <span class="count">4 drafts</span></h2>
+        <article class="lead-card draft">
+          <div class="name">WhatsApp · Al Rawabi <span class="tag ok">Ready</span></div>
+          <div class="meta">Hello Al Rawabi team — Harvics here, premium private-label sourcing. We can share a tailored sample lane this week.</div>
+          <div class="row"><button class="btn">Edit</button><button class="btn primary">Approve</button></div>
+        </article>
+        <article class="lead-card draft">
+          <div class="name">LinkedIn · Najm Foods <span class="tag">Review</span></div>
+          <div class="meta">Pleasure connecting — we've prepared a concise import lane for Saudi private-label brands.</div>
+          <div class="row"><button class="btn">Edit</button><button class="btn primary">Approve</button></div>
+        </article>
+        <article class="lead-card draft">
+          <div class="name">Email · Almarai B2B <span class="tag ok">Ready</span></div>
+          <div class="meta">Subject: Saudi Private-Label Lane · Q3 Sample Window — quick intro from Harvics…</div>
+          <div class="row"><button class="btn">Edit</button><button class="btn primary">Approve</button></div>
+        </article>
+        <article class="lead-card draft">
+          <div class="name">Sequence · Sadafco <span class="tag">Drafting…</span></div>
+          <div class="meta">3-step sequence: intro → catalog → meeting brief (T+2 / T+5 / T+8).</div>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Channels <span class="count">6</span></h2>
+        <div class="actions" style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+          <button class="btn">WhatsApp</button>
+          <button class="btn">Instagram</button>
+          <button class="btn">LinkedIn</button>
+          <button class="btn">Email</button>
+          <button class="btn">SMS · Twilio</button>
+          <button class="btn">Voice · Vapi</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Live Activity <span class="count">last 5</span></h2>
+        <div class="activity">
+          <div class="a"><span class="t">10:14</span><span>Apollo · <code>14 orgs</code></span></div>
+          <div class="a"><span class="t">10:14</span><span>LinkedIn 429 → Brave fallback</span></div>
+          <div class="a"><span class="t">10:14</span><span>Scorer · <code>25 leads</code></span></div>
+          <div class="a"><span class="t">10:15</span><span>Writer · <code>5 drafts</code> (Claude)</span></div>
+          <div class="a"><span class="t">10:15</span><span>Sequence · advanced 3</span></div>
+        </div>
+      </section>
+    </aside>
+
+  </main>
+</div>
+</body>
+</html>

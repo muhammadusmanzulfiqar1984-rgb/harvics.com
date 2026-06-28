@@ -1,0 +1,9 @@
+{
+  "name": "Harvics Event OS",
+  "description": "A premium B2B white-label event discovery and networking platform for trade fairs, conferences, and exhibitions.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}

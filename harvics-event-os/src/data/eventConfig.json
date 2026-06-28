@@ -1,0 +1,14 @@
+{
+  "id": "magic-fw26",
+  "name": "MAGIC Las Vegas",
+  "edition": "Fall/Winter 2026-2027",
+  "theme": {
+    "primary": "#1C2A4A",
+    "accent": "#C9A24D",
+    "background": "#0a0e27"
+  },
+  "sponsors": [
+    { "name": "Harvics Global Ventures", "level": "Title" },
+    { "name": "Textile World", "level": "Platinum" }
+  ]
+}

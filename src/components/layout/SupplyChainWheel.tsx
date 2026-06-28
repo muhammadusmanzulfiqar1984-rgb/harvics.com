@@ -94,7 +94,7 @@ const SupplyChainWheel: React.FC = () => {
             <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 600, letterSpacing: '0.32em', textTransform: 'uppercase' }}>End-to-End Operating System</span>
             <div style={{ height: '1px', width: '36px', background: '#C3A35E' }} />
           </div>
-          <h2 style={{ fontSize: 'clamp(30px, 4.2vw, 48px)', fontWeight: 200, letterSpacing: '-0.025em', color: '#1A0505', lineHeight: 1.1, marginBottom: '12px' }}>
+          <h2 style={{ fontSize: 'clamp(30px, 4.2vw, 48px)', fontWeight: 200, letterSpacing: '-0.025em', color: '#3D1212', lineHeight: 1.1, marginBottom: '12px' }}>
             14 stages.{' '}
             <span style={{ color: '#6B1F2B', fontWeight: 400 }}>One supply chain.</span>
           </h2>
@@ -104,7 +104,7 @@ const SupplyChainWheel: React.FC = () => {
         </div>
 
         {/* ============ COCKPIT CARD ============ */}
-        <div style={{ background: '#1A0505', border: '1px solid rgba(195,163,94,0.3)', overflow: 'hidden' }}>
+        <div style={{ background: '#3D1212', border: '1px solid rgba(195,163,94,0.3)', overflow: 'hidden' }}>
           <div className="grid grid-cols-1 lg:grid-cols-12">
 
             {/* LEFT — Wheel (5/12) */}
@@ -137,7 +137,7 @@ const SupplyChainWheel: React.FC = () => {
                           cy={y}
                           r={isHovered ? 10 : 6.5}
                           fill={isHovered ? '#fff' : '#C3A35E'}
-                          stroke="#1A0505"
+                          stroke="#3D1212"
                           strokeWidth="1.5"
                           className="cursor-pointer"
                           style={{
@@ -181,10 +181,10 @@ const SupplyChainWheel: React.FC = () => {
 
                   {/* Center — gold disc on dark */}
                   <circle cx={centerX} cy={centerY} r="62" fill="#C3A35E" />
-                  <circle cx={centerX} cy={centerY} r="62" fill="none" stroke="#1A0505" strokeWidth="2" />
-                  <text x={centerX} y={centerY - 8} textAnchor="middle" style={{ fontSize: '9px', fontWeight: 700, fill: '#1A0505', letterSpacing: '3px' }}>HARVICS</text>
-                  <text x={centerX} y={centerY + 6} textAnchor="middle" style={{ fontSize: '10px', fontWeight: 600, fill: '#1A0505', letterSpacing: '0.5px' }}>Operating</text>
-                  <text x={centerX} y={centerY + 18} textAnchor="middle" style={{ fontSize: '10px', fontWeight: 600, fill: '#1A0505', letterSpacing: '0.5px' }}>System</text>
+                  <circle cx={centerX} cy={centerY} r="62" fill="none" stroke="#3D1212" strokeWidth="2" />
+                  <text x={centerX} y={centerY - 8} textAnchor="middle" style={{ fontSize: '9px', fontWeight: 700, fill: '#3D1212', letterSpacing: '3px' }}>HARVICS</text>
+                  <text x={centerX} y={centerY + 6} textAnchor="middle" style={{ fontSize: '10px', fontWeight: 600, fill: '#3D1212', letterSpacing: '0.5px' }}>Operating</text>
+                  <text x={centerX} y={centerY + 18} textAnchor="middle" style={{ fontSize: '10px', fontWeight: 600, fill: '#3D1212', letterSpacing: '0.5px' }}>System</text>
                 </svg>
               </div>
 

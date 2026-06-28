@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARVICS × GENVIET | Sovereign Trade Architecture</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #121212;
+            --border-color: #262626;
+            --text-primary: #ffffff;
+            --text-secondary: #a3a3a3;
+            --gold: #c5a880;
+            --gold-muted: #8c765c;
+            --danger: #ef4444;
+            --success: #22c55e;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 10, 0.8);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo-area div {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+
+        .logo-area h1 {
+            font-size: 18px;
+            margin: 4px 0 0 0;
+            color: var(--gold);
+            letter-spacing: 1px;
+        }
+
+        .confidential-tag {
+            border: 1px solid var(--border-color);
+            padding: 6px 12px;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold-muted);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 80px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: 4px;
+        }
+
+        .section-header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .section-header h2 {
+            font-size: 24px;
+            color: var(--gold);
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            text-align: center;
+            border-radius: 2px;
+        }
+
+        .stat-card .num {
+            font-size: 36px;
+            font-weight: bold;
+            color: var(--text-primary);
+            margin-bottom: 5px;
+        }
+
+        .stat-card .label {
+            font-size: 12px;
+            color: var(--gold-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+        }
+
+        th {
+            background: var(--bg-primary);
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -35px;
+            top: 5px;
+            width: 9px;
+            height: 9px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+
+        .timeline-title {
+            font-weight: bold;
+            color: var(--gold);
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .timeline-desc {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .badge-active {
+            color: var(--success);
+            border: 1px solid var(--success);
+            padding: 2px 8px;
+            font-size: 11px;
+            text-transform: uppercase;
+            border-radius: 2px;
+        }
+
+        .badge-warning {
+            color: var(--danger);
+            border: 1px solid var(--danger);
+            padding: 2px 8px;
+            font-size: 11px;
+            text-transform: uppercase;
+            border-radius: 2px;
+        }
+
+        .badge-neutral {
+            color: var(--gold-muted);
+            border: 1px solid var(--border-color);
+            padding: 2px 8px;
+            font-size: 11px;
+            text-transform: uppercase;
+            border-radius: 2px;
+        }
+
+        .text-highlight {
+            color: var(--gold);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <div>Harvics Global Ventures</div>
+            <h1>Sovereign Trade Architecture Matrix</h1>
+        </div>
+        <div class="confidential-tag">Confidential · Board Review Only</div>
+    </header>
+
+    <main>
+
+        <section id="act-1">
+            <div class="section-header">
+                <h2>Act 1: Strategic Alignment & Macro Horizon</h2>
+                <p>Establishing the structural convergence of GENVIET production heritage and premium Western retail pipelines.</p>
+            </div>
+            <div class="grid-2">
+                <div>
+                    <p>GENVIET commands a world-class manufacturing asset base in Northern Vietnam, backed by a 20-year commitment to denim craft and sustainable engineering. Currently, spot-market trading frameworks cap the realized value of this capacity at an average of <span class="text-highlight">€6 – €8 FOB per piece</span>, subjected to perpetual seasonal renegotiations.</p>
+                    <p>The HARVICS sovereign trade architecture shifts this dynamic entirely, deploying an institutional conduit into the <span class="text-highlight">€14B European Denim Matrix</span>. This alignment targets long-term forward contracts signed prior to production layout execution, elevating operations out of transaction-driven capacity constraints.</p>
+                </div>
+                <div class="grid-2">
+                    <div class="stat-card">
+                        <div class="num">1.2M</div>
+                        <div class="label">Actual Pcs / Year</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="num">€14B</div>
+                        <div class="label">EU Denim Matrix</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="num">38</div>
+                        <div class="label">Days to Bluezone</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="num">24mo</div>
+                        <div class="label">Alliance Horizon</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="act-2">
+            <div class="section-header">
+                <h2>Act 2: Verified Asset & Operational Baseline</h2>
+                <p>Dossier audit summary validating current production capacity parameters as of June 18, 2026.</p>
+            </div>
+            <div class="grid-4">
+                <div class="stat-card">
+                    <div class="num">12,888m²</div>
+                    <div class="label">Factory Footprint</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">863</div>
+                    <div class="label">Active Machines</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">350</div>
+                    <div class="label">Full Workforce</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">6</div>
+                    <div class="label">Dedicated Lines</div>
+                </div>
+            </div>
+            <p style="margin-top: 20px; color: var(--text-secondary); font-size: 14px;">
+                <strong>Infrastructure Note:</strong> Verification checks confirm a centralized Class-A Membrane Bioreactor (MBR) wastewater system operating at a 550m³/day threshold alongside automated laser-finishing lines. Quality processes are locked to a strict <span class="text-highlight">AQL 1.5 standard</span>, validating the floor as a Tier-A manufacturing asset ready for premium compliance configurations.
+            </p>
+        </section>
+
+        <section id="act-3">
+            <div class="section-header">
+                <h2>Act 3: Capacity & Business Model Transition Strategy</h2>
+                <p>Evolution of operational allocation from volume Cut & Make (CM) contracts to higher value-added frameworks.</p>
+            </div>
+            <div class="grid-2">
+                <div>
+                    <p>To safely insulate core assets while scaling margin capture, the alliance enforces a disciplined structural shift in commercial execution. While basic volume segments are maintained to stabilize overhead, capacity is intentionally allocated toward premium product lines:</p>
+                    <ul>
+                        <li><span class="text-highlight">40% Original Design Manufacturing (ODM):</span> Leveraging internal design teams, fabric libraries, and R&D tech packs.</li>
+                        <li><span class="text-highlight">30% Full Package FOB Operations:</span> Vertical raw material sourcing, sample loops, and complete export orchestration.</li>
+                        <li><span class="text-highlight">30% Specialized Development:</span> Custom capsule runs for premium, contemporary and boutique labels.</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="stat-card" style="background: var(--bg-primary); padding: 30px; border: 1px solid var(--border-color);">
+                        <div class="label" style="margin-bottom: 15px;">Dedicated Structural Capacity Plan</div>
+                        <div style="font-size: 20px; font-weight: bold; margin-bottom: 5px;">15% – 20% Production Block</div>
+                        <div style="color: var(--text-secondary); font-size: 13px;">Safely isolated for exclusive HARVICS retail network integration without impacting existing domestic or regional obligations.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="act-4">
+            <div class="section-header">
+                <h2>Act 4: Technical Terrain & Compliance Alignment Matrix</h2>
+                <p>Neutral parameters governing entry into Western retail corridors—structured as managed milestones.</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Compliance Architecture Node</th>
+                        <th>Current Status Evaluation</th>
+                        <th>Target Calibration</th>
+                        <th>Strategic Path Alignment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Social Compliance Integrity</strong></td>
+                        <td><span class="badge-warning">Action Critical</span><br>WRAP Gold (Cert 18216) expires Sept 17, 2026.</td>
+                        <td>Immediate Protocol Trigger</td>
+                        <td>Initiate proactive renewal sequence today. Execute SEDEX registration for European 4-Pillar SMETA standard by Q3 2026 to clear Tier-A vendor portals.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chemical Safety Validation</strong></td>
+                        <td><span class="badge-neutral">Ready for Onboarding</span><br>Class-A wastewater system and active eco-wash infrastructure.</td>
+                        <td>ZDHC MRSL Level 1</td>
+                        <td>Incorporate wash-room processing documentation into ZDHC Restricted Substances tracking framework by Q4 2026 to unlock German and Nordic buyers.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Quality Architecture</strong></td>
+                        <td><span class="badge-active">Verified Baseline</span><br>Active ISO 9001:2008 system. AQL 1.5 achieved.</td>
+                        <td>ISO 9001:2015 Upgrade</td>
+                        <td>Deploy documentation gap assessment in Q3 2026 to match active procurement parameters required by EU corporate legal divisions.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Traceable Sustainability Tracking</strong></td>
+                        <td><span class="badge-neutral">Future Node</span><br>Input-level OEKO-TEX materials and Cotton USA credentials active.</td>
+                        <td>GOTS / GRS Tracking</td>
+                        <td>Prepare supply-chain telemetry maps throughout 2027 to achieve compliance with oncoming EU Digital Product Passport (DPP) data mandates.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin-top: 25px; padding: 20px; background: var(--bg-primary); border-left: 3px solid var(--gold); font-size: 14px; color: var(--text-secondary);">
+                <em>"A technical certification on paper simply opens the gate. Navigating the unique onboarding processes of distinct European retail groups, and maintaining trusted positioning across those distribution channels, requires specialized external infrastructure. That is the operational focus of the HARVICS partnership."</em>
+            </div>
+        </section>
+
+        <section id="act-5">
+            <div class="section-header">
+                <h2>Act 5: Sovereign Distribution & Logistics Engine</h2>
+                <p>Direct geographic corridor mapping bypassing decentralized broker networks via the Prague gateway.</p>
+            </div>
+            <div class="grid-2">
+                <div>
+                    <p>The Route-to-Market engine links the Ninh Binh manufacturing asset directly to targeted Western commercial hubs through an integrated, single-layer mechanism:</p>
+                    <ul>
+                        <li><strong>Germany & Poland (Central Axis):</strong> Focused on large-scale retail private label deployments and industrial networks via Munich anchors.</li>
+                        <li><strong>France & Spain (Premium Fashion):</strong> Positioned for premium private labels and contemporary design networks.</li>
+                        <li><strong>Scandinavia (Nordic Corridor):</strong> Aimed at premium eco-conscious and sustainable brands tracking strict chemical records.</li>
+                        <li><strong>North American Distribution (Americas Zone):</strong> Captured via direct procurement portals for specialty premium denim accounts.</li>
+                    </ul>
+                </div>
+                <div style="background: var(--bg-primary); border: 1px solid var(--border-color); padding: 30px; border-radius: 2px;">
+                    <div style="font-size: 12px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px;">Operational Shield Mechanisms</div>
+                    <div style="font-size: 14px; color: var(--text-secondary);">
+                        <p><strong>HARVICS Entity Execution:</strong> The Prague corporate vehicle absorbs the total administrative and operational load—managing localized logistics, ocean freight routing, European customs clearance, REACH chemical declarations, and multi-currency exchange stabilization.</p>
+                        <p><strong>GENVIET Operational Focus:</strong> The factory floor remains completely insulated from external regulatory overhead, retaining 100% production sovereignty and brand control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="act-6">
+            <div class="section-header">
+                <h2>Act 6: Financial Acceleration & Yield Optimization Matrix</h2>
+                <p>Projected commercial parameters on existing facility asset base over a 24-month horizon.</p>
+            </div>
+            <div class="grid-2">
+                <div>
+                    <p>The financial matrix requires <span class="text-highlight">zero expansion of machinery, zero additional hiring, and zero modification</span> to active domestic retail operations. It relies entirely on yield optimization: systematically replacing volatile, low-margin spot volume with stable, multi-season European program accounts.</p>
+                    <p>By migrating an initial 100,000 unit capacity block from uncontracted spot benchmarks (€7 average) to secure European contemporary programs (€12.50 average), the margin delta redirects entirely to the factory gate:</p>
+                </div>
+                <div style="background: var(--bg-primary); border: 1px solid var(--border-color); padding: 25px; text-align: center;">
+                    <div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-muted); margin-bottom: 10px;">Net Margin Optimization Delta</div>
+                    <div style="font-size: 42px; font-weight: bold; color: var(--success);">+€550,000</div>
+                    <div style="font-size: 12px; color: var(--text-secondary); margin-top: 5px;">Annualized Uplift from the Exact Same Production Volume</div>
+                    <div style="font-size: 14px; color: var(--gold); margin-top: 15px; font-weight: 500;">~€2.1M Cumulative 24-Month Alliance Revenue Target</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="act-7">
+            <div class="section-header">
+                <h2>Act 7: Phased Commercial Deployment Timeline</h2>
+                <p>Structured operational sequence moving from initial parameters to deep multi-season market placement.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">Phase 1: Alignment & Technical Audit (Immediate Onset)</div>
+                    <div class="timeline-desc">Initial desk-side corporate review finalized. Coordination of technical on-site compliance audits at the production facility in Northern Vietnam. Selection of design parameters and fabric libraries for the target European corridors.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-title">Phase 2: Active Trade Interface (July 2026 Window)</div>
+                    <div class="timeline-desc">Integration with upcoming European trade exhibitions (Bluezone Munich, July 21-23). HARVICS secures and funds the localized exhibition footprint to initiate direct buyer intake, complementing parallel seasonal plans for Paris and New York.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-title">Phase 3: Pilot Implementation & Onboarding (Q3 - Q4 2026)</div>
+                    <div class="timeline-desc">Activation of 3 pre-mapped contemporary accounts using unallocated space. Onboarding of technical packages into vendor portals following the completion of scheduled ISO upgrades and social compliance portal data entry.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-title">Phase 4: Sovereign Scale Capture (2027 Horizon)</div>
+                    <div class="timeline-desc">Full deployment of the 24-month sovereign trade alliance. Transition of the targeted capacity allocation block into multi-season forward contracts, embedding GENVIET as an absolute denim anchor across the Western retail grid.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="act-8" style="border: 1px solid var(--gold-muted);">
+            <div class="section-header">
+                <h2>Act 8: Temporal Market Alignment</h2>
+                <p>Neutral calendar timelines governing seasonal Western procurement cycles.</p>
+            </div>
+            <div class="grid-2">
+                <div>
+                    <p>International premium retail buyers execute and lock their sourcing allocations for oncoming seasons on unmovable global windows. The core procurement cycles for upcoming collections are structurally finalized during the <span class="text-highlight">July, August, and September</span> parameters.</p>
+                    <p>HARVICS maintains an active, fully funded network layer positioned across these immediate trade cycles with zero front-end capital exposure to the GENVIET balance sheet. The immediate phase requires a non-binding technical scoping dialogue to coordinate structural parameters before seasonal buying calendars close.</p>
+                </div>
+                <div style="background: var(--bg-primary); padding: 30px; border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--danger); margin-bottom: 5px; font-weight: bold;">Seasonal Buying Grid Deadline</div>
+                    <div style="font-size: 28px; font-weight: bold; margin-bottom: 10px;">38 Days Remaining</div>
+                    <div style="color: var(--text-secondary); font-size: 13px; max-width: 320px;">Prior to the closure of the July international trade interfaces. Authorized for Phase 1 technical scope alignment.</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

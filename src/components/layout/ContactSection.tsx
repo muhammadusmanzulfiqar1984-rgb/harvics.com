@@ -77,7 +77,7 @@ const ContactSection: React.FC = () => {
     border: '1px solid rgba(26,5,5,0.12)',
     outline: 'none',
     background: '#ffffff',
-    color: '#1A0505',
+    color: '#3D1212',
     fontFamily: '-apple-system, sans-serif',
     boxSizing: 'border-box',
     transition: 'border-color 0.2s ease',
@@ -114,7 +114,7 @@ const ContactSection: React.FC = () => {
               {getText('eyebrow', 'Start a Brief')}
             </span>
           </div>
-          <h2 style={{ fontSize: 'clamp(26px, 3.2vw, 40px)', fontWeight: 200, letterSpacing: '-0.025em', color: '#1A0505', lineHeight: 1.1, marginBottom: '12px' }}>
+          <h2 style={{ fontSize: 'clamp(26px, 3.2vw, 40px)', fontWeight: 200, letterSpacing: '-0.025em', color: '#3D1212', lineHeight: 1.1, marginBottom: '12px' }}>
             {getText('headline1', 'Start a brief.')}
             <br />
             <span style={{ color: '#6B1F2B', fontWeight: 400 }}>{getText('headline2', 'We respond in 24 hours.')}</span>
@@ -192,8 +192,8 @@ const ContactSection: React.FC = () => {
                 disabled={sending}
                 style={{
                   padding: '14px 32px',
-                  background: sending ? 'rgba(26,5,5,0.4)' : '#1A0505',
-                  border: '1px solid #1A0505',
+                  background: sending ? 'rgba(26,5,5,0.4)' : '#3D1212',
+                  border: '1px solid #3D1212',
                   color: '#C3A35E',
                   fontSize: '11px',
                   fontWeight: 700,
@@ -208,14 +208,14 @@ const ContactSection: React.FC = () => {
                 onMouseEnter={e => {
                   if (sending) return
                   ;(e.currentTarget as HTMLButtonElement).style.background = '#C3A35E'
-                  ;(e.currentTarget as HTMLButtonElement).style.color = '#1A0505'
+                  ;(e.currentTarget as HTMLButtonElement).style.color = '#3D1212'
                   ;(e.currentTarget as HTMLButtonElement).style.borderColor = '#C3A35E'
                 }}
                 onMouseLeave={e => {
                   if (sending) return
-                  ;(e.currentTarget as HTMLButtonElement).style.background = '#1A0505'
+                  ;(e.currentTarget as HTMLButtonElement).style.background = '#3D1212'
                   ;(e.currentTarget as HTMLButtonElement).style.color = '#C3A35E'
-                  ;(e.currentTarget as HTMLButtonElement).style.borderColor = '#1A0505'
+                  ;(e.currentTarget as HTMLButtonElement).style.borderColor = '#3D1212'
                 }}
               >
                 {sending ? getText('sending', 'Sending...') : `${getText('sendEnquiry', 'Send Enquiry')} →`}
@@ -226,7 +226,7 @@ const ContactSection: React.FC = () => {
 
         {/* ============ RIGHT PANE — Burgundy direct channels ============ */}
         <div className="lg:col-span-2" style={{
-          background: '#1A0505',
+          background: '#3D1212',
           color: '#F5F0E8',
           padding: 'clamp(40px, 6vw, 72px) clamp(28px, 5vw, 56px)',
         }}>

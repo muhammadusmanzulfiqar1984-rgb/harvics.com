@@ -114,12 +114,13 @@ const nextConfig = {
       { source: '/launch/harvoice/:path*', destination: 'https://harvoice.pages.dev/:path*' },
     );
 
-    const backendUrl = process.env.BACKEND_URL || process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:4000';
+      const backendUrl = process.env.BACKEND_URL || process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:4000';
     if (backendUrl) {
       const isValidUrl = backendUrl.startsWith('http://') || backendUrl.startsWith('https://');
       if (isValidUrl) {
         rewrites.push({
-          source: '/api/:path((?!gro[qk](?:/|$)).*)',
+          // Exclude groq, harvyx, ai, wave8 — those are handled by Next.js routes
+          source: '/api/:path((?!gro[qk](?:/|$))(?!harvyx(?:/|$))(?!ai(?:/|$))(?!wave8(?:/|$)).*)',
           destination: `${backendUrl}/api/:path`,
         });
       }
@@ -129,6 +130,10 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // HarvyX — full-screen standalone app, bypasses website layout
+      { source: '/harvyx', destination: '/harvyx.html', permanent: false },
+      { source: '/en/harvyx', destination: '/harvyx.html', permanent: false },
+      { source: '/:locale/harvyx', destination: '/harvyx.html', permanent: false },
       // Presentation deck — serve the static HTML directly, bypassing [locale] route
       { source: '/vietnam-denim-presentation', destination: '/vietnam-denim-presentation/index.html', permanent: false },
       // Apps — redirect directory paths to index.html

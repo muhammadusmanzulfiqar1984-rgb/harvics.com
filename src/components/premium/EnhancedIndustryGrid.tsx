@@ -82,7 +82,7 @@ const EnhancedIndustryGrid: React.FC = () => {
   return (
     <section
       className="relative h-full flex flex-col justify-center overflow-hidden"
-      style={{ background: '#1A0505' }}
+      style={{ background: '#3D1212' }}
     >
       {/* Single cinematic backdrop — only render active */}
       {navVerticals.map((v, idx) => {
@@ -236,7 +236,7 @@ const EnhancedIndustryGrid: React.FC = () => {
                     </div>
                     <h3 style={{
                       fontSize: '22px', fontWeight: 600, letterSpacing: '-0.02em',
-                      color: hasImage ? '#fff' : '#1A0505',
+                      color: hasImage ? '#fff' : '#3D1212',
                       fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
                       marginBottom: '6px',
                     }}>
@@ -296,7 +296,7 @@ const EnhancedIndustryGrid: React.FC = () => {
           <div style={{
             position: 'absolute', left: 0, top: 0, height: '100%',
             width: `${((active + 1) / total) * 100}%`,
-            background: 'linear-gradient(90deg, #1A0505, #C3A35E)',
+            background: 'linear-gradient(90deg, #3D1212, #C3A35E)',
             borderRadius: '1px',
             transition: 'width 0.85s cubic-bezier(0.16, 1, 0.3, 1)',
           }} />
@@ -313,7 +313,7 @@ const EnhancedIndustryGrid: React.FC = () => {
                 height: '4px',
                 borderRadius: '2px',
                 background: idx === active
-                  ? 'linear-gradient(90deg, #1A0505, #C3A35E)'
+                  ? 'linear-gradient(90deg, #3D1212, #C3A35E)'
                   : 'rgba(255,255,255,0.25)',
                 border: 'none',
                 padding: 0,

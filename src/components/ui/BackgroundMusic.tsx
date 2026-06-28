@@ -261,7 +261,7 @@ const BackgroundMusic: React.FC = () => {
 
         {/* Hover tooltip */}
         <span
-          className="harvics-fab-tooltip pointer-events-none select-none text-[11px] font-medium tracking-wide uppercase text-[#1A0505] bg-[#F5F0E8]/95 backdrop-blur px-3 py-1.5 opacity-0 translate-x-1 transition-all duration-300 group-hover/wrap:opacity-100 group-hover/wrap:translate-x-0"
+          className="harvics-fab-tooltip pointer-events-none select-none text-[11px] font-medium tracking-wide uppercase text-[#3D1212] bg-[#F5F0E8]/95 backdrop-blur px-3 py-1.5 opacity-0 translate-x-1 transition-all duration-300 group-hover/wrap:opacity-100 group-hover/wrap:translate-x-0"
           style={{
             borderRadius: '9999px',
             border: '1px solid rgba(195, 163, 94, 0.45)',

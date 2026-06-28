@@ -1,0 +1,54 @@
+[
+  {
+    "id": "h-jeans-01",
+    "name": "Hidden Jeans",
+    "category": "Denim & Contemporary",
+    "booth": "C102",
+    "hall": "Central Hall",
+    "country": "USA",
+    "tags": ["Raw Denim", "Functional Flair", "Womenswear"],
+    "description": "Chic innovative denim with a focus on silhouette. Hidden Jeans balances utilitarian durability with high-fashion aesthetics for the FW26 season.",
+    "contacts": ["Sarah Miller (Sales Director)"],
+    "events": [
+      { "time": "14:00", "title": "Raw Denim Workshop", "location": "Booth C102" }
+    ]
+  },
+  {
+    "id": "b-dreams-02",
+    "name": "Barefoot Dreams",
+    "category": "Lifestyle & Loungewear",
+    "booth": "N405",
+    "hall": "North Hall",
+    "country": "USA",
+    "tags": ["Touch-Me Textures", "Vanilla Yellow", "Luxury Essentials"],
+    "description": "Ultra-soft fabrics for a high-society lounge aesthetic. Barefoot Dreams defines the 'Touch-Me' texture trend of FW26.",
+    "contacts": ["James Chen (Brand Manager)"],
+    "events": []
+  },
+  {
+    "id": "d-soul-03",
+    "name": "Denim & Soul",
+    "category": "Premium Denim",
+    "booth": "1204",
+    "hall": "Central Hall",
+    "country": "Italy",
+    "tags": ["Functional Flair", "Raw Denim"],
+    "description": "Premium raw denim for the modern utilitarian. Italian craftsmanship meets rugged durability.",
+    "contacts": ["Marco Rossi (Founder)"],
+    "events": []
+  },
+  {
+    "id": "p-dream-04",
+    "name": "Poet's Dream",
+    "category": "Romantic Contemporary",
+    "booth": "990",
+    "hall": "North Hall",
+    "country": "France",
+    "tags": ["Poet-core", "Lace"],
+    "description": "Romantic, fluid silhouettes for the modern dreamer. Featuring intricate lace maxis and delicate textures.",
+    "contacts": ["Elena Dubois (Creative Lead)"],
+    "events": [
+      { "time": "11:00", "title": "Poet-core Runway", "location": "North Stage" }
+    ]
+  }
+]

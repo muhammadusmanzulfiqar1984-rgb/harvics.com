@@ -88,7 +88,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
       {/* ═══════ HERO ═══════ */}
       <section
         ref={heroRef.ref}
-        className="relative bg-gradient-to-br from-[#1A0505] via-[#5a1a24] to-[#4a1520] py-20 md:py-24 px-4 overflow-hidden"
+        className="relative bg-gradient-to-br from-[#3D1212] via-[#5a1a24] to-[#4a1520] py-20 md:py-24 px-4 overflow-hidden"
       >
         {/* Background image for all categories */}
         <div className="absolute inset-0">
@@ -192,10 +192,10 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
           }}
         >
           <div className="w-8 h-[2px] bg-[#C3A35E]/50" />
-          <h2 className="text-sm font-bold text-[#1A0505] uppercase tracking-[0.15em]">
+          <h2 className="text-sm font-bold text-[#3D1212] uppercase tracking-[0.15em]">
             Browse {block.title}
           </h2>
-          <span className="text-xs text-[#1A0505]/40">{block.items.length} items</span>
+          <span className="text-xs text-[#3D1212]/40">{block.items.length} items</span>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -229,7 +229,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
                     />
                   )}
                   {/* Hover overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A0505]/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#3D1212]/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   {/* View label on hover */}
                   <div className="absolute bottom-2 left-0 right-0 text-center translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                     <span className="text-xs font-semibold text-white uppercase tracking-wider">View →</span>
@@ -237,7 +237,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
                 </div>
                 {/* Title */}
                 <div className="p-4 text-center">
-                  <h3 className="text-sm font-semibold text-[#1A0505] group-hover:text-[#C3A35E] transition-colors duration-200">
+                  <h3 className="text-sm font-semibold text-[#3D1212] group-hover:text-[#C3A35E] transition-colors duration-200">
                     {item}
                   </h3>
                 </div>
@@ -262,10 +262,10 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
               }}
             >
               <div className="w-8 h-[2px] bg-[#C3A35E]/50" />
-              <h2 className="text-sm font-bold text-[#1A0505] uppercase tracking-[0.15em]">
+              <h2 className="text-sm font-bold text-[#3D1212] uppercase tracking-[0.15em]">
                 Products
               </h2>
-              <span className="text-xs text-[#1A0505]/40">{products.length} available</span>
+              <span className="text-xs text-[#3D1212]/40">{products.length} available</span>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -305,15 +305,15 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
                         />
                       )}
                       {/* Overlay gradient */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#1A0505]/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#3D1212]/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
                     {/* Info */}
                     <div className="p-5">
-                      <h4 className="text-sm font-semibold text-[#1A0505] mb-1 group-hover:text-[#C3A35E] transition-colors duration-200">
+                      <h4 className="text-sm font-semibold text-[#3D1212] mb-1 group-hover:text-[#C3A35E] transition-colors duration-200">
                         {product.name}
                       </h4>
                       {product.desc && (
-                        <p className="text-xs text-[#1A0505]/45 mb-3 leading-relaxed line-clamp-2">{product.desc}</p>
+                        <p className="text-xs text-[#3D1212]/45 mb-3 leading-relaxed line-clamp-2">{product.desc}</p>
                       )}
                       <div className="flex items-center justify-between">
                         <div className="text-sm font-bold text-[#C3A35E]">{product.price}</div>
@@ -331,7 +331,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
       {/* ═══════ CTA BANNER ═══════ */}
       <section
         ref={ctaRef.ref}
-        className="relative bg-[#1A0505] border-t border-[#C3A35E]/20 overflow-hidden"
+        className="relative bg-[#3D1212] border-t border-[#C3A35E]/20 overflow-hidden"
       >
         {/* Subtle dot pattern */}
         <div className="absolute inset-0 opacity-[0.03]"
@@ -363,7 +363,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
           >
             <Link
               href={`/${locale}/contact`}
-              className="group relative px-8 py-3.5 bg-[#C3A35E] text-[#1A0505] text-sm font-bold uppercase tracking-wider overflow-hidden"
+              className="group relative px-8 py-3.5 bg-[#C3A35E] text-[#3D1212] text-sm font-bold uppercase tracking-wider overflow-hidden"
             >
               <span className="relative z-10">Get a Quote</span>
               <span className="absolute inset-0 bg-[#d4b46e] translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />

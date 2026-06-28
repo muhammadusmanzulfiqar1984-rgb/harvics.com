@@ -12,7 +12,7 @@ interface CustomerListContentProps {
 const fmtMoney = (v: number) =>
   v >= 1_000_000 ? `$${(v / 1_000_000).toFixed(1)}M` : v >= 1000 ? `$${(v / 1000).toFixed(0)}K` : `$${v}`
 
-const regionColors = ['#1A0505', '#2563EB', '#16A34A', '#D97706', '#8A7D6B', '#7C3AED']
+const regionColors = ['#3D1212', '#2563EB', '#16A34A', '#D97706', '#8A7D6B', '#7C3AED']
 
 export default function CustomerListContent({ persona, locale }: CustomerListContentProps) {
   const { data, loading, source, lastUpdated } = useDomainData('crm')
@@ -67,7 +67,7 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
         <Card title="Revenue Trend — 12 Months" className="lg:col-span-2">
           <div className="p-5">
             <LineChart
-              data={[{ label: 'Revenue', values: data.revenueByMonth || [], color: '#1A0505' /* harvics-burgundy */ }]}
+              data={[{ label: 'Revenue', values: data.revenueByMonth || [], color: '#3D1212' /* harvics-burgundy */ }]}
               labels={MONTHS}
               height={160}
               formatY={(v) => `$${(v / 1000).toFixed(0)}K`}
@@ -177,7 +177,7 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
                   { label: 'Prospect',    value: 14, color: '#8A7D6B' },
                   { label: 'Qualified',   value: 8,  color: '#2563EB' },
                   { label: 'Proposal',    value: 5,  color: '#D97706' },
-                  { label: 'Negotiation', value: 3,  color: '#1A0505' },
+                  { label: 'Negotiation', value: 3,  color: '#3D1212' },
                   { label: 'Won',         value: 18, color: '#16A34A' },
                 ]}
                 height={100}

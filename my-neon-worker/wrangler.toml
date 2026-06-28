@@ -1,0 +1,9 @@
+name = "my-neon-worker"
+main = "src/index.ts"
+compatibility_date = "2025-09-27"
+compatibility_flags = ["nodejs_compat"]
+
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id = "f2f8b26d7a804c408da576c1436cf410"
+localConnectionString = "postgresql://neondb_owner:npg_N9yzgDMHJ4KG@ep-blue-smoke-adwvz27y.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require"

@@ -267,7 +267,7 @@ export default function SmartCRM() {
 
       {/* ─── Toast ─── */}
       {toast && (
-        <div className="fixed top-4 right-4 z-[100] flex items-center gap-3 px-4 py-3 rounded-xl bg-[#1A0505] border border-[#C3A35E]/40 text-[#F5F0E8] text-sm shadow-2xl animate-slide-in">
+        <div className="fixed top-4 right-4 z-[100] flex items-center gap-3 px-4 py-3 rounded-xl bg-[#3D1212] border border-[#C3A35E]/40 text-[#F5F0E8] text-sm shadow-2xl animate-slide-in">
           <CheckCircle size={14} className="text-[#C3A35E] shrink-0" />
           {toast}
         </div>
@@ -282,7 +282,7 @@ export default function SmartCRM() {
       )}
 
       {/* ─── Hero band ─── */}
-      <div className="relative bg-gradient-to-br from-[#1A0505] via-[#2a0808] to-[#1A0505] px-8 pt-8 pb-20 overflow-hidden">
+      <div className="relative bg-gradient-to-br from-[#3D1212] via-[#2a0808] to-[#3D1212] px-8 pt-8 pb-20 overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(201,168,76,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(201,168,76,0.5)_1px,transparent_1px)] bg-[size:40px_40px]" />
         <div className="absolute top-[-120px] right-[-80px] w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle,rgba(201,168,76,0.15)_0%,transparent_70%)] pointer-events-none" />
 
@@ -326,7 +326,7 @@ export default function SmartCRM() {
             <button
               onClick={bulkScore}
               disabled={busy === 'bulk' || !leads.length}
-              className="mt-3 w-full py-2.5 rounded-xl bg-[#C3A35E] hover:bg-[#b8923e] disabled:opacity-40 disabled:cursor-not-allowed text-[#1A0505] text-[11px] font-black tracking-[0.08em] transition-colors shadow-[0_4px_14px_rgba(201,168,76,0.35)] flex items-center justify-center gap-2"
+              className="mt-3 w-full py-2.5 rounded-xl bg-[#C3A35E] hover:bg-[#b8923e] disabled:opacity-40 disabled:cursor-not-allowed text-[#3D1212] text-[11px] font-black tracking-[0.08em] transition-colors shadow-[0_4px_14px_rgba(201,168,76,0.35)] flex items-center justify-center gap-2"
             >
               <Brain size={13} />
               {busy === 'bulk' ? 'SCORING…' : 'SCORE ALL LEADS'}
@@ -399,7 +399,7 @@ export default function SmartCRM() {
           <button
             onClick={createLead}
             disabled={busy === 'create' || !form.company}
-            className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-[#1A0505] hover:bg-[#2a0808] disabled:opacity-40 disabled:cursor-not-allowed border border-[#C3A35E]/40 hover:border-[#C3A35E]/70 rounded-xl text-[#F5F0E8] text-[11px] font-black tracking-[0.1em] transition-all shadow-[0_4px_20px_rgba(26,5,5,0.4)]"
+            className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-[#3D1212] hover:bg-[#2a0808] disabled:opacity-40 disabled:cursor-not-allowed border border-[#C3A35E]/40 hover:border-[#C3A35E]/70 rounded-xl text-[#F5F0E8] text-[11px] font-black tracking-[0.1em] transition-all shadow-[0_4px_20px_rgba(26,5,5,0.4)]"
           >
             <Plus size={13} />
             {busy === 'create' ? 'CREATING…' : 'ADD LEAD'}
@@ -414,7 +414,7 @@ export default function SmartCRM() {
           onClick={() => { setSelected(null); setTimeline(null) }}
         >
           <div
-            className="w-full max-w-[720px] bg-[#1A0505] border-l border-[#C3A35E]/20 p-7 overflow-y-auto"
+            className="w-full max-w-[720px] bg-[#3D1212] border-l border-[#C3A35E]/20 p-7 overflow-y-auto"
             onClick={e => e.stopPropagation()}
           >
             {/* Header */}
@@ -550,7 +550,7 @@ export default function SmartCRM() {
               <button
                 onClick={logActivity}
                 disabled={busy === 'activity' || !activityForm.subject}
-                className="mt-3 inline-flex items-center gap-2 px-4 py-2 bg-[#C3A35E] hover:bg-[#b8923e] disabled:opacity-40 disabled:cursor-not-allowed rounded-lg text-[#1A0505] text-[11px] font-black tracking-[0.1em] transition-colors"
+                className="mt-3 inline-flex items-center gap-2 px-4 py-2 bg-[#C3A35E] hover:bg-[#b8923e] disabled:opacity-40 disabled:cursor-not-allowed rounded-lg text-[#3D1212] text-[11px] font-black tracking-[0.1em] transition-colors"
               >
                 <Plus size={12} />
                 {busy === 'activity' ? 'LOGGING…' : 'LOG'}
@@ -571,7 +571,7 @@ export default function SmartCRM() {
                   <div className="absolute left-1.5 top-2 bottom-2 w-0.5 bg-gradient-to-b from-[#C3A35E]/50 to-transparent" />
                   {timeline.activities.map((a: any) => (
                     <div key={a.id} className="relative pb-3 mb-1">
-                      <div className={`absolute -left-[18px] top-1 w-3 h-3 rounded-full border-2 border-[#1A0505] ${outcomeAccent(a.outcome)}`} />
+                      <div className={`absolute -left-[18px] top-1 w-3 h-3 rounded-full border-2 border-[#3D1212] ${outcomeAccent(a.outcome)}`} />
                       <div className="bg-white/[0.03] border border-white/[0.07] rounded-xl p-3">
                         <div className="flex justify-between items-center mb-1">
                           <span className="text-[10px] font-black text-[#C3A35E] tracking-[0.1em]">{a.type?.toUpperCase()}</span>
@@ -679,7 +679,7 @@ function Select({ label, value, onChange, options }: { label?: string; value: st
         onChange={e => onChange(e.target.value)}
         className="w-full px-3 py-2.5 bg-white/[0.04] border border-white/10 rounded-xl text-[#F5F0E8] text-[13px] focus:outline-none focus:border-[#C3A35E]/50 transition-colors"
       >
-        {options.map(o => <option key={o} value={o} className="bg-[#1A0505] text-[#F5F0E8]">{o}</option>)}
+        {options.map(o => <option key={o} value={o} className="bg-[#3D1212] text-[#F5F0E8]">{o}</option>)}
       </select>
     </div>
   )
@@ -690,7 +690,7 @@ function ActionBtn({ icon, label, onClick, disabled, variant }: {
 }) {
   const base = 'flex items-center justify-center gap-2 px-3 py-3 rounded-xl text-[11px] font-black tracking-[0.08em] transition-all disabled:opacity-40 disabled:cursor-not-allowed'
   const styles = variant === 'primary'
-    ? 'bg-gradient-to-br from-[#1A0505] to-[#2a0808] border border-[#C3A35E]/40 hover:border-[#C3A35E]/70 text-[#F5F0E8] shadow-[0_4px_12px_rgba(0,0,0,0.3)]'
+    ? 'bg-gradient-to-br from-[#3D1212] to-[#2a0808] border border-[#C3A35E]/40 hover:border-[#C3A35E]/70 text-[#F5F0E8] shadow-[0_4px_12px_rgba(0,0,0,0.3)]'
     : variant === 'success'
     ? 'bg-gradient-to-br from-emerald-700 to-emerald-600 text-white shadow-[0_4px_12px_rgba(0,0,0,0.3)]'
     : 'bg-white/[0.05] border border-white/10 hover:bg-white/[0.09] text-[#F5F0E8]'

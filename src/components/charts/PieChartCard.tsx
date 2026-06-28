@@ -3,7 +3,7 @@
 import React from 'react'
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 
-const T = { burgundy: '#1A0505', gold: '#C3A35E', cream: '#F5F0E8', muted: '#8A7D6B', border: 'rgba(195,163,94,0.2)' }
+const T = { burgundy: '#3D1212', gold: '#C3A35E', cream: '#F5F0E8', muted: '#8A7D6B', border: 'rgba(195,163,94,0.2)' }
 
 const Tip = ({ active, payload, unit }: any) => {
   if (!active || !payload?.length) return null

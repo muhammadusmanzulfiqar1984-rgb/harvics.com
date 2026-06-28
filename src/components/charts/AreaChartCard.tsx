@@ -3,7 +3,7 @@
 import React from 'react'
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 
-const T = { burgundy: '#1A0505', gold: '#C3A35E', cream: '#F5F0E8', muted: '#8A7D6B', grid: 'rgba(195,163,94,0.08)', border: 'rgba(195,163,94,0.2)' }
+const T = { burgundy: '#3D1212', gold: '#C3A35E', cream: '#F5F0E8', muted: '#8A7D6B', grid: 'rgba(195,163,94,0.08)', border: 'rgba(195,163,94,0.2)' }
 
 const Tip = ({ active, payload, label, unit }: any) => {
   if (!active || !payload?.length) return null

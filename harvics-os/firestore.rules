@@ -1,0 +1,265 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: users
+    // Document ID: uid
+    // Fields:
+    //   - uid: string (required)
+    //   - email: string (required, email format)
+    //   - displayName: string (optional)
+    //   - role: string (required, enum: ['admin', 'editor', 'viewer'])
+    //   - createdAt: timestamp (required)
+    //
+    // Collection: hs_codes
+    // Document ID: auto-generated
+    // Fields:
+    //   - code: string (required)
+    //   - product: string (required)
+    //   - duty: string (optional)
+    //   - status: string (required, enum: ['Green', 'Review', 'Red'])
+    //   - category: string (required)
+    //   - documentId: string (optional)
+    //   - authorUid: string (required)
+    //   - createdAt: timestamp (required)
+    //
+    // Collection: settlements
+    // Document ID: auto-generated
+    // Fields:
+    //   - type: string (required)
+    //   - name: string (required)
+    //   - amount: string (required)
+    //   - status: string (required)
+    //   - color: string (optional)
+    //   - authorUid: string (required)
+    //   - createdAt: timestamp (required)
+    //
+    // Collection: shipments
+    // Document ID: auto-generated
+    // Fields:
+    //   - name: string (required)
+    //   - route: string (required)
+    //   - eta: timestamp (optional)
+    //   - status: string (required, enum: ['Green', 'Review', 'Red', 'Correcting'])
+    //   - details: string (optional)
+    //   - isGoverned: bool (optional)
+    //   - lat: number (optional)
+    //   - lng: number (optional)
+    //   - authorUid: string (required)
+    //   - createdAt: timestamp (required)
+    //
+    // Collection: stats
+    // Document ID: 'global'
+    // Fields:
+    //   - accuracy: number
+    //   - shipmentsCount: int
+    //   - settledAmount: number
+    //
+    // Collection: activity_logs
+    // Document ID: auto-generated
+    // Fields:
+    //   - message: string (required)
+    //   - timestamp: timestamp (required)
+    //   - userId: string (required)
+    //
+    // Collection: audit_logs
+    // Document ID: auto-generated
+    // Fields:
+    //   - status: string (required, enum: ALERTS_FOUND, APPROVED)
+    //   - alerts: list (optional)
+    //   - checkedShipments: number (optional)
+    //   - checkedHsCodes: number (optional)
+    //   - timestamp: timestamp (required)
+    //   - userId: string (required)
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() &&
+        (get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin' ||
+          (request.auth.token.email.lower() == "muhammadusmanzulfiqar1984@gmail.com" && request.auth.token.email_verified == true));
+    }
+
+    function isValidEmail(email) {
+      return email == null || (email is string && email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"));
+    }
+
+    function hasOnlyAllowedFields(fields) {
+      return request.resource.data.keys().hasOnly(fields);
+    }
+
+    function hasRequiredFields(fields) {
+      return request.resource.data.keys().hasAll(fields);
+    }
+
+    function areImmutableFieldsUnchanged(fields) {
+      return !request.resource.data.diff(resource.data).affectedKeys().hasAny(fields);
+    }
+
+    // ===============================================================
+    // Domain Validators
+    // ===============================================================
+    function isValidUser(data) {
+      return hasOnlyAllowedFields(['uid', 'email', 'displayName', 'role', 'createdAt']) &&
+             data.uid == request.auth.uid &&
+             isValidEmail(data.email) &&
+             (!('displayName' in data) || data.displayName == null || data.displayName is string) &&
+             data.role in ['admin', 'editor', 'viewer'] &&
+             data.createdAt is timestamp;
+    }
+
+    function isValidHsCode(data) {
+      return hasRequiredFields(['code', 'product', 'status', 'category', 'authorUid', 'createdAt']) &&
+             data.code is string && data.code.size() < 100 &&
+             data.product is string && data.product.size() < 1000 &&
+             data.status in ['Green', 'Review', 'Red'] &&
+             (!('duty' in data) || data.duty is string) &&
+             (!('documentId' in data) || data.documentId is string) &&
+             data.authorUid == request.auth.uid &&
+             (data.createdAt is timestamp || data.createdAt == request.time);
+    }
+
+    function isValidSettlement(data) {
+      return hasRequiredFields(['type', 'name', 'amount', 'status', 'authorUid', 'createdAt']) &&
+             data.type is string && data.type.size() < 100 &&
+             data.name is string && data.name.size() < 200 &&
+             data.amount is string && data.amount.size() < 50 &&
+             data.status is string && data.status.size() < 50 &&
+             (!('color' in data) || data.color is string) &&
+             data.authorUid == request.auth.uid &&
+             (data.createdAt is timestamp || data.createdAt == request.time);
+    }
+
+    function isValidShipment(data) {
+      return hasRequiredFields(['name', 'route', 'status', 'authorUid', 'createdAt']) &&
+             data.name is string && data.name.size() < 200 &&
+             data.route is string && data.route.size() < 200 &&
+             data.status in ['Green', 'Review', 'Red', 'Correcting'] &&
+             (!('details' in data) || data.details is string) &&
+             (!('isGoverned' in data) || data.isGoverned is bool) &&
+             (!('lat' in data) || data.lat is number) &&
+             (!('lng' in data) || data.lng is number) &&
+             data.authorUid == request.auth.uid &&
+             (data.createdAt is timestamp || data.createdAt == request.time);
+    }
+
+    function isValidActivityLog(data) {
+      return hasRequiredFields(['message', 'timestamp', 'userId']) &&
+             data.message is string && data.message.size() < 1000 &&
+             data.userId == request.auth.uid &&
+             (data.timestamp is timestamp || data.timestamp == request.time);
+    }
+
+    function isValidAuditLog(data) {
+      return hasRequiredFields(['status', 'timestamp', 'userId']) &&
+             data.status in ['ALERTS_FOUND', 'APPROVED'] &&
+             (!('alerts' in data) || data.alerts is list) &&
+             (!('checkedShipments' in data) || data.checkedShipments is number) &&
+             (!('checkedHsCodes' in data) || data.checkedHsCodes is number) &&
+             data.userId == request.auth.uid &&
+             (data.timestamp is timestamp || data.timestamp == request.time);
+    }
+
+    function isValidNotification(data) {
+      return hasRequiredFields(['title', 'message', 'type', 'userId', 'createdAt']) &&
+             data.title is string && data.title.size() < 200 &&
+             data.message is string && data.message.size() < 1000 &&
+             data.type in ['info', 'warning', 'error', 'success'] &&
+             data.userId == request.auth.uid &&
+             (data.createdAt is timestamp || data.createdAt == request.time);
+    }
+
+    function isValidDocument(data) {
+      return hasRequiredFields(['name', 'type', 'status', 'userId', 'createdAt']) &&
+             data.name is string && data.name.size() < 200 &&
+             data.type is string && data.type.size() < 100 &&
+             data.status in ['pending', 'processed', 'failed'] &&
+             (!('ocrData' in data) || data.ocrData is map) &&
+             data.userId == request.auth.uid &&
+             (data.createdAt is timestamp || data.createdAt == request.time);
+    }
+
+    // ===============================================================
+    // Rules
+    // ===============================================================
+
+    match /test/connection {
+      allow read: if true;
+    }
+
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow create: if isOwner(userId) && isValidUser(request.resource.data) && (request.resource.data.role in ['viewer', 'editor'] || isAdmin());
+      allow update: if isOwner(userId) && isValidUser(request.resource.data) && areImmutableFieldsUnchanged(['uid', 'createdAt']) && (request.resource.data.role == resource.data.role || isAdmin());
+      allow delete: if isAdmin();
+    }
+
+    match /hs_codes/{docId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && isValidHsCode(request.resource.data);
+      allow update: if (isAuthenticated() && isValidHsCode(request.resource.data) && areImmutableFieldsUnchanged(['authorUid', 'createdAt']) && request.resource.data.authorUid == resource.data.authorUid) || isAdmin();
+      allow delete: if isAdmin();
+    }
+
+    match /settlements/{docId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && isValidSettlement(request.resource.data);
+      allow update: if (isAuthenticated() && isValidSettlement(request.resource.data) && areImmutableFieldsUnchanged(['authorUid', 'createdAt']) && request.resource.data.authorUid == resource.data.authorUid) || isAdmin();
+      allow delete: if isAdmin();
+    }
+
+    match /shipments/{docId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && isValidShipment(request.resource.data);
+      allow update: if (isAuthenticated() && isValidShipment(request.resource.data) && areImmutableFieldsUnchanged(['authorUid', 'createdAt']) && request.resource.data.authorUid == resource.data.authorUid) || isAdmin();
+      allow delete: if isAdmin();
+    }
+
+    match /stats/{docId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+
+    match /activity_logs/{docId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && isValidActivityLog(request.resource.data);
+      allow update, delete: if isAdmin();
+    }
+
+    match /audit_logs/{docId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && isValidAuditLog(request.resource.data);
+      allow update, delete: if isAdmin();
+    }
+
+    match /notifications/{docId} {
+      allow read: if isAuthenticated() && resource.data.userId == request.auth.uid;
+      allow create: if isAuthenticated() && isValidNotification(request.resource.data);
+      allow update: if isAuthenticated() && resource.data.userId == request.auth.uid && isValidNotification(request.resource.data);
+      allow delete: if isAuthenticated() && resource.data.userId == request.auth.uid;
+    }
+
+    match /documents/{docId} {
+      allow read: if isAuthenticated() && resource.data.userId == request.auth.uid;
+      allow create: if isAuthenticated() && isValidDocument(request.resource.data);
+      allow update: if isAuthenticated() && resource.data.userId == request.auth.uid && isValidDocument(request.resource.data);
+      allow delete: if isAuthenticated() && resource.data.userId == request.auth.uid;
+    }
+
+    match /{path=**} {
+      allow read, write: if false;
+    }
+  }
+}

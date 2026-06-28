@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARVICS × GENVIET | Sovereign Trade Architecture</title>
+    <style>
+        :root {
+            --bg: #07090f;
+            --bg2: #0d1018;
+            --bg3: #111520;
+            --border: #1e2230;
+            --gold: #c8aa78;
+            --gold2: #a88d5e;
+            --white: #f0f0f0;
+            --muted: #6b7280;
+            --danger: #ef4444;
+            --success: #22c55e;
+            --blue: #4a8fe8;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: var(--bg);
+            color: var(--white);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.65;
+        }
+
+        /* ── NAV ── */
+        nav {
+            position: sticky; top: 0; z-index: 200;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 18px 48px;
+            background: rgba(7,9,15,0.94);
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(14px);
+        }
+        .nav-brand { display: flex; flex-direction: column; gap: 2px; }
+        .nav-brand span { font-size: 10px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; }
+        .nav-brand strong { font-size: 15px; color: var(--gold); letter-spacing: 0.5px; }
+        .nav-tag { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold2); border: 1px solid var(--border); padding: 5px 14px; }
+
+        /* ── HERO ── */
+        #hero {
+            min-height: 100vh; display: flex; flex-direction: column; justify-content: center;
+            padding: 100px 48px 80px; position: relative; overflow: hidden;
+            border-bottom: 1px solid var(--border);
+        }
+        #hero::before {
+            content: ''; position: absolute; inset: 0; pointer-events: none;
+            background: radial-gradient(ellipse 70% 60% at 65% 40%, rgba(74,143,232,0.07) 0%, transparent 65%),
+                        radial-gradient(ellipse 50% 50% at 5% 85%, rgba(200,170,120,0.05) 0%, transparent 55%);
+        }
+        .hero-inner { max-width: 1100px; margin: 0 auto; width: 100%; position: relative; }
+        .hero-eyebrow { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--muted); margin-bottom: 22px; }
+        .hero-title { font-size: clamp(40px, 5.5vw, 70px); font-weight: 800; line-height: 1.05; letter-spacing: -1.5px; color: var(--white); margin-bottom: 12px; }
+        .hero-title span { color: var(--gold); }
+        .hero-subtitle { font-size: clamp(12px, 1.4vw, 14px); color: var(--muted); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 6px; }
+        .hero-location { font-size: 11px; color: var(--gold2); letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 40px; }
+        .hero-context {
+            max-width: 740px; font-size: 15px; color: #9ca3af; line-height: 1.85; margin-bottom: 24px;
+            border-left: 2px solid var(--gold2); padding-left: 22px;
+        }
+        .hero-directive {
+            max-width: 740px; font-size: 13px; color: var(--muted); line-height: 1.75;
+            padding: 18px 22px; background: var(--bg2); border: 1px solid var(--border);
+            border-left: 3px solid var(--blue); margin-bottom: 52px;
+        }
+        .hero-directive strong { color: var(--blue); }
+        .hero-stats { display: flex; border: 1px solid var(--border); width: fit-content; }
+        .hero-stat { padding: 26px 44px; border-right: 1px solid var(--border); text-align: center; }
+        .hero-stat:last-child { border-right: none; }
+        .hero-stat .val { font-size: 40px; font-weight: 800; color: var(--white); line-height: 1; margin-bottom: 7px; }
+        .hero-stat .val em { color: var(--gold); font-style: normal; font-size: 26px; }
+        .hero-stat .lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); max-width: 150px; }
+
+        /* ── SECTION SHELL ── */
+        .section { max-width: 1200px; margin: 0 auto; padding: 80px 48px; border-bottom: 1px solid var(--border); }
+        .sec-label { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--blue); margin-bottom: 10px; }
+        .sec-title { font-size: 26px; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+        .sec-sub { font-size: 14px; color: var(--muted); margin-bottom: 36px; padding-bottom: 26px; border-bottom: 1px solid var(--border); }
+
+        /* ── GRIDS ── */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+        /* ── CARDS ── */
+        .card { background: var(--bg2); border: 1px solid var(--border); padding: 28px; }
+        .card-title { font-size: 13px; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .card p { font-size: 13px; color: var(--muted); line-height: 1.75; margin: 0; }
+
+        .stat-block { background: var(--bg3); border: 1px solid var(--border); padding: 28px 20px; text-align: center; }
+        .stat-block .num { font-size: 30px; font-weight: 800; color: var(--white); margin-bottom: 6px; }
+        .stat-block .lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gold2); }
+
+        /* ── QUALITY BANNER ── */
+        .quality-banner { background: var(--bg2); border: 1px solid var(--border); border-left: 3px solid var(--blue); padding: 24px 28px; margin-top: 32px; }
+        .quality-banner .q-title { font-size: 13px; font-weight: 700; color: var(--blue); margin-bottom: 8px; }
+        .quality-banner p { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.75; }
+
+        /* ── GAP GATES ── */
+        .gate { background: var(--bg2); border: 1px solid var(--border); padding: 30px; position: relative; overflow: hidden; }
+        .gate::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; }
+        .gate.warn::before { background: var(--danger); }
+        .gate.caution::before { background: var(--gold2); }
+        .gate.future::before { background: var(--blue); }
+        .gate-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+        .gate.warn .gate-label { color: var(--danger); }
+        .gate.caution .gate-label { color: var(--gold2); }
+        .gate.future .gate-label { color: var(--blue); }
+        .gate-title { font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 10px; }
+        .gate p { font-size: 13px; color: var(--muted); line-height: 1.75; margin: 0; }
+
+        /* ── QUOTE ── */
+        .quote { padding: 22px 28px; background: var(--bg3); border-left: 3px solid var(--gold); font-size: 13px; color: var(--muted); font-style: italic; margin-top: 32px; line-height: 1.85; }
+
+        /* ── FINANCIAL ── */
+        .vs-block { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--border); margin-bottom: 32px; }
+        .vs-side { padding: 28px 32px; }
+        .vs-side.left { border-right: 1px solid var(--border); }
+        .vs-side .vs-label { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; }
+        .vs-side.left .vs-label { color: var(--danger); }
+        .vs-side.right .vs-label { color: var(--success); }
+        .vs-side p { font-size: 13px; color: var(--muted); line-height: 1.75; margin: 0; }
+
+        .uplift-box {
+            background: var(--bg3); border: 1px solid var(--border); border-top: 2px solid var(--success);
+            padding: 36px; text-align: center;
+        }
+        .uplift-box .u-lbl { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold2); margin-bottom: 12px; }
+        .uplift-box .u-val { font-size: 54px; font-weight: 800; color: var(--success); line-height: 1; margin-bottom: 8px; }
+        .uplift-box .u-sub { font-size: 12px; color: var(--muted); }
+        .uplift-box .u-target { font-size: 14px; color: var(--gold); font-weight: 600; margin-top: 14px; }
+
+        .phase-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--border); margin-top: 32px; }
+        .phase-cell { padding: 28px; border-right: 1px solid var(--border); }
+        .phase-cell:last-child { border-right: none; }
+        .phase-tag { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--blue); margin-bottom: 8px; }
+        .phase-title { font-size: 14px; font-weight: 700; color: var(--gold); margin-bottom: 10px; }
+        .phase-cell p { font-size: 13px; color: var(--muted); line-height: 1.75; margin: 0; }
+        .phase-num { font-size: 28px; font-weight: 800; color: var(--white); margin-bottom: 4px; }
+        .phase-num span { color: var(--success); }
+
+        /* ── PROCESS STEPS ── */
+        .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--border); }
+        .step { padding: 32px 26px; border-right: 1px solid var(--border); position: relative; }
+        .step:last-child { border-right: none; }
+        .step-num { font-size: 42px; font-weight: 800; color: var(--border); line-height: 1; margin-bottom: 14px; }
+        .step-title { font-size: 14px; font-weight: 700; color: var(--gold); margin-bottom: 10px; }
+        .step p { font-size: 13px; color: var(--muted); line-height: 1.75; margin: 0; }
+
+        /* ── ACTION PLAN ── */
+        #action {
+            max-width: 1200px; margin: 0 auto; padding: 80px 48px;
+            display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;
+        }
+        .action-text .sec-label, .action-text .sec-title, .action-text .sec-sub { display: block; }
+        .action-text .sec-sub { border: none; padding: 0; margin-bottom: 28px; }
+
+        .status-row { display: flex; flex-direction: column; gap: 14px; margin-top: 28px; }
+        .status-item { display: flex; gap: 14px; align-items: flex-start; padding: 16px 18px; background: var(--bg2); border: 1px solid var(--border); }
+        .status-icon { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+        .status-icon.green { background: var(--success); box-shadow: 0 0 8px var(--success); }
+        .status-icon.red { background: var(--danger); }
+        .status-label { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+        .status-desc { font-size: 12px; color: var(--muted); line-height: 1.65; }
+
+        .countdown-box {
+            background: var(--bg3); border: 1px solid var(--border); border-top: 2px solid var(--danger);
+            padding: 40px 32px; text-align: center;
+        }
+        .cd-label { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--danger); margin-bottom: 14px; font-weight: 700; }
+        .cd-num { font-size: 80px; font-weight: 800; color: var(--white); line-height: 1; margin-bottom: 6px; }
+        .cd-unit { font-size: 14px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px; }
+        .cd-sub { font-size: 12px; color: var(--muted); max-width: 280px; margin: 0 auto 32px; line-height: 1.7; }
+        .cta-btn {
+            display: inline-block; background: var(--gold); color: #07090f; font-size: 11px;
+            font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+            padding: 14px 28px; border: none; cursor: pointer; width: 100%;
+        }
+
+        /* ── UTILS ── */
+        .hl { color: var(--gold); font-weight: 500; }
+        .hl-blue { color: var(--blue); font-weight: 500; }
+        p { font-size: 14px; color: #9ca3af; line-height: 1.8; margin-bottom: 14px; }
+        ul { padding-left: 20px; margin-bottom: 14px; }
+        li { font-size: 14px; color: #9ca3af; margin-bottom: 8px; line-height: 1.7; }
+
+        @media (max-width: 900px) {
+            nav { padding: 16px 20px; }
+            #hero { padding: 60px 20px 60px; }
+            .section, #action { padding: 56px 20px; }
+            .grid-2, .grid-3, .grid-4, .vs-block, .phase-row, .steps, #action { grid-template-columns: 1fr; }
+            .vs-side.left { border-right: none; border-bottom: 1px solid var(--border); }
+            .step, .phase-cell { border-right: none; border-bottom: 1px solid var(--border); }
+            .step:last-child, .phase-cell:last-child { border-bottom: none; }
+            .hero-stats { flex-direction: column; width: 100%; }
+            .hero-stat { border-right: none; border-bottom: 1px solid var(--border); }
+            .hero-stat:last-child { border-bottom: none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+    <div class="nav-brand">
+        <span>Harvics Global Ventures</span>
+        <strong>Sovereign Trade Architecture Matrix</strong>
+    </div>
+    <div class="nav-tag">Confidential · Board Review Only</div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+    <div class="hero-inner">
+        <div class="hero-eyebrow">Harvics Global Ventures · Strategic Trade Document · June 25, 2026</div>
+        <h1 class="hero-title"><span>Harvics</span> Global Ventures</h1>
+        <div class="hero-subtitle">GENVIET JEANS · Sovereign EU & Americas Trade Architecture</div>
+        <div class="hero-location">Prague · Ninh Binh · Munich Bluezone 2026</div>
+
+        <p class="hero-context">
+            GENVIET commands 1.2M units/year actual capacity at the Cau Giat Industrial Zone in Ninh Binh—863 automated machines, 350 skilled workers, WRAP Gold, Higg Index, and BSCI infrastructure. Traditional regional frameworks often utilize spot placement capped at a maximum €8 FOB per piece with shifting seasonal structures. The European program establishes a direct, unmediated forward corridor.
+        </p>
+
+        <div class="hero-directive">
+            <strong>Prime Directive:</strong> Transition and scale the enterprise that commands authentic Vietnamese denim heritage into an absolute sovereign anchor across European retail networks, Scandinavian corridors, and North American distribution—anchored to the SS 2027 collection framework within an uncompressed 24-month horizon.
+        </div>
+
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="val">1.2M</div>
+                <div class="lbl">Units / Year (Actual Dossier Base)</div>
+            </div>
+            <div class="hero-stat">
+                <div class="val"><em>€</em>14B</div>
+                <div class="lbl">EU Denim Matrix</div>
+            </div>
+            <div class="hero-stat">
+                <div class="val">38</div>
+                <div class="lbl">Days to Bluezone Munich</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<div class="section">
+    <div class="sec-label">Act I · Strategic Foundation</div>
+    <h2 class="sec-title">Sovereign Trade Architecture</h2>
+    <p class="sec-sub">GENVIET Is an Apex Brand — Not a Basic Factory</p>
+
+    <div class="grid-2">
+        <div>
+            <p>Built on twenty years of specialized denim heritage, GENVIET's manufacturing footprint represents an elite industrial asset: 1,200,000 pieces/year capacity, 863 active machines, 350 team members across design and production, and 6 specialized sewing lines. Supported by an advanced 550m³/day Membrane Bioreactor (MBR) wastewater treatment system and a strict AQL 1.5 quality threshold, the baseline is fully verified. As regional domestic metrics reach steady-state ceilings, <span class="hl">HARVICS provides the structural gateway to Western retail portals.</span></p>
+            <p>Traditional spot configurations face pricing ceilings that do not fully reward processing integrity. The exact same 1.2M capacity, aligned with targeted European compliance layers, commands <span class="hl">€10–12.50 FOB</span> under stable multi-season forward contracts signed prior to production allocation. HARVICS manages the localized legal, compliance, and multi-currency logistics infrastructure, allowing GENVIET to retain total product integrity.</p>
+        </div>
+        <div class="grid-2">
+            <div class="stat-block">
+                <div class="num">1.2M</div>
+                <div class="lbl">Pcs / Year Capacity</div>
+            </div>
+            <div class="stat-block">
+                <div class="num">863</div>
+                <div class="lbl">Active Machines</div>
+            </div>
+            <div class="stat-block">
+                <div class="num">350</div>
+                <div class="lbl">Team Members</div>
+            </div>
+            <div class="stat-block">
+                <div class="num">6</div>
+                <div class="lbl">Specialized Lines</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══ PRODUCTS ═══ -->
+<div class="section">
+    <div class="sec-label">Act II · Product Architecture</div>
+
+    <h2 class="sec-title">GENVIET Denim Categories</h2>
+    <p class="sec-sub">Premium Vietnamese denim engineered for premium contemporary private labels, sustainable boutiques, and Western distribution corridors. Washing, finishing, and structural surface treatments are executed entirely in-house to protect brand compliance.</p>
+
+    <div class="grid-4">
+        <div class="card">
+            <div class="card-title">Raw & Selvedge</div>
+            <p>Unwashed rigid denim, shuttle-loom configurations, and heavy heritage weight classes tailored for premium concept stores.</p>
+        </div>
+        <div class="card">
+            <div class="card-title">Washed & Finished</div>
+            <p>In-house bio-based enzyme washing, ozone processing, stone washing, and precise automated laser distressing achieving authentic fading with 60% water reduction.</p>
+        </div>
+        <div class="card">
+            <div class="card-title">Workwear & Utility</div>
+            <p>Heavyweight denim, reinforced triple-stitch construction, and premium durability profiles matching international workwear frameworks.</p>
+        </div>
+        <div class="card">
+            <div class="card-title">Sustainable Indigo</div>
+            <p>Reduced-water eco-dyeing, recycled cotton fibre blending, and clean chemical documentation tracking oncoming environmental reporting mandates.</p>
+        </div>
+    </div>
+
+    <div class="quality-banner">
+        <div class="q-title">Quality Infrastructure</div>
+        <p>Every item passes through comprehensive durability testing, colorfastness checks, and Japan-standard inline metal detection prior to global packaging and dispatch.</p>
+    </div>
+</div>
+
+<!-- ═══ GAP ANALYSIS ═══ -->
+<div class="section">
+    <div class="sec-label">Act III · Compliance Terrain</div>
+    <h2 class="sec-title">The Technical Terrain: Market Gatekeepers</h2>
+    <p class="sec-sub">Western retail systems do not buy products—they buy verified compliance architectures. We navigate the gates together.</p>
+
+    <p>GENVIET's manufacturing foundation is highly advanced. To seamlessly align this infrastructure with the onboarding rules of Tier-A European contemporary buying portals, the alliance manages the natural operational steps ahead:</p>
+
+    <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 28px;">
+        <div class="gate warn">
+            <div class="gate-label">Q3 2026 Focus · Action Critical</div>
+            <div class="gate-title">Social Compliance Continuity</div>
+            <p>GENVIET holds a strong WRAP Gold status (Certificate 18216), currently valid through Sept 17, 2026. Because international audit loops require a 3-to-5 month horizon, the renewal protocol is initiated concurrently with our integration. This step is supported by a parallel onboarding into the European SEDEX/SMETA 4-Pillar registry to clear premium multi-brand vendor portals.</p>
+        </div>
+        <div class="gate caution">
+            <div class="gate-label">Q4 2026 Focus · Ready for Onboarding</div>
+            <div class="gate-title">Chemical Lifecycle Validation</div>
+            <p>While the factory's Class-A MBR wastewater recycling system meets strict national Column A indicators, premium German and Nordic contemporary buyers require ZDHC MRSL Level 1 verification for wash plant chemistry. HARVICS maps and structures this data to open the premium €12+ pricing tiers.</p>
+        </div>
+        <div class="gate future">
+            <div class="gate-label">2027 Alignment · Future Node</div>
+            <div class="gate-title">Traceable Supply Infrastructure</div>
+            <p>Transitioning available export capacity into the target mix of 40% ODM and 30% FOB requires full-chain verification. We embed Global Organic Textile Standard (GOTS) and Global Recycled Standard (GRS) tracking to ensure readiness for oncoming European Digital Product Passport (DPP) legal mandates.</p>
+        </div>
+    </div>
+
+    <div class="quote">
+        "A formal certification on paper simply opens a gate. Knowing exactly which procurement officer to coordinate with the morning it clears, and having them trust the infrastructure introducing you—that is the strategic value of the HARVICS alliance."
+    </div>
+</div>
+
+<!-- ═══ FINANCIALS ═══ -->
+<div class="section">
+    <div class="sec-label">Act IV · Financial Matrix</div>
+    <h2 class="sec-title">Financial Acceleration & Yield Matrix</h2>
+    <p class="sec-sub">24-Month Target · Optimization of Existing Plant Assets</p>
+
+    <p>This framework requires no new machinery, no localized hiring increases, and creates zero disruption to active domestic retail operations. The strategy focuses entirely on yield optimization: systematically migrating an unallocated 15–20% capacity block away from volatile, uncontracted regional spot orders and into locked, multi-season European contemporary programs.</p>
+
+    <div class="vs-block">
+        <div class="vs-side left">
+            <div class="vs-label">Current Baseline</div>
+            <p>Average <span class="hl">€6 – €8 FOB</span> per piece. Transactional ordering schedules with changing volume guarantees and seasonal renegotiation exposure.</p>
+        </div>
+        <div class="vs-side right">
+            <div class="vs-label">Target EU Programs</div>
+            <p><span class="hl">€10 – €12.50 base FOB</span> per piece. Secure 2-year forward commitments signed prior to factory layout deployment—zero spot risk.</p>
+        </div>
+    </div>
+
+    <div class="grid-2" style="align-items: start;">
+        <p style="margin: 0;">By upgrading a single <span class="hl">100,000 unit</span> production block from a spot baseline to an integrated €12.50 framework, the margin optimization yields <span class="hl">+€550,000</span> in direct margin variance to the factory gate for the exact same volume—zero additional machines, zero additional workers.</p>
+        <div class="uplift-box">
+            <div class="u-lbl">Net Margin Optimization Delta</div>
+            <div class="u-val">+€550K</div>
+            <div class="u-sub">Annualized uplift · exact same production volume</div>
+            <div class="u-target">~€2.1M Cumulative 24-Month Alliance Revenue</div>
+        </div>
+    </div>
+
+    <div class="phase-row">
+        <div class="phase-cell">
+            <div class="phase-tag">Year 1 · Controlled Entry</div>
+            <div class="phase-title">Corridor Entry</div>
+            <div class="phase-num"><span>€</span>300K</div>
+            <p>Onboarding 3 pre-mapped European contemporary accounts utilizing open capacity. 30,000 units allocated under 2-year forward agreements at a €10 FOB gateway price.</p>
+        </div>
+        <div class="phase-cell">
+            <div class="phase-tag">Year 2 · Scale Integration</div>
+            <div class="phase-title">Structural Integration</div>
+            <div class="phase-num"><span>~€</span>1.25M</div>
+            <p>Expansion to 100,000 units total, introducing Landed Duty Paid (LDP) logistics structures for key Nordic partners to lock in long-term retention.</p>
+        </div>
+        <div class="phase-cell">
+            <div class="phase-tag">Year 2 · Optimization Bonus</div>
+            <div class="phase-title">Margin Uplift</div>
+            <div class="phase-num"><span>+€</span>550K</div>
+            <p>Systematic replacement of uncontracted volume with premium ODM contracts adds pure margin improvement. Total cumulative 24-month alliance revenue target: ~€2.1M at factory gate.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ═══ PROCESS ═══ -->
+<div class="section">
+    <div class="sec-label">Act V · Execution Architecture</div>
+    <h2 class="sec-title">Four Steps. Shared Execution.</h2>
+    <p class="sec-sub">A highly organized pathway from parameter definition to full sovereign market placement—zero front-end capital exposure.</p>
+
+    <div class="steps">
+        <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-title">Discovery Scoping</div>
+            <p>A brief, 30-minute technical brief to align corporate timelines, verify current technical documentation, and coordinate parameters.</p>
+        </div>
+        <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-title">Trade Show Integration</div>
+            <p>HARVICS manages and completely funds the operational and technical footprint at premier European denim interfaces (Bluezone Munich, July 21–23, 2026), directly introducing the factory's sustainable capabilities to pre-mapped buyers.</p>
+        </div>
+        <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-title">90-Day Pilot</div>
+            <p>Deployment of initial sample loops and prototypes with 3 pre-qualified European retail lines to test fit development and operational cycles.</p>
+        </div>
+        <div class="step">
+            <div class="step-num">04</div>
+            <div class="step-title">Full Alliance</div>
+            <p>Activation of the 24-month sovereign trade architecture, embedding the factory as a premier, high-value denim partner across the Western grid.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ═══ ACTION PLAN ═══ -->
+<section id="action">
+    <div class="action-text">
+        <div class="sec-label">Act VI · Temporal Alignment</div>
+        <h2 class="sec-title">Temporal Market Alignment</h2>
+        <p class="sec-sub" style="border: none; padding: 0; margin-bottom: 20px;">
+            Western retail buying divisions execute and lock their sourcing allocations on fixed international timelines. AW 2027 and SS 2027 commitments are structurally finalized during the July, August, and September windows.
+        </p>
+
+        <div class="status-row">
+            <div class="status-item">
+                <div class="status-icon green"></div>
+                <div>
+                    <div class="status-label">Alliance Active</div>
+                    <div class="status-desc">Munich presence fully operational. Direct access to 200+ pre-mapped buyers active. Multi-season contract cycles on track.</div>
+                </div>
+            </div>
+            <div class="status-item">
+                <div class="status-icon red"></div>
+                <div>
+                    <div class="status-label">Alliance Deferred</div>
+                    <div class="status-desc">Alliance Deferred: International procurement windows lock until late trade cycles. Factory capacity remains exposed to spot-market price pressure.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="countdown-box">
+            <div class="cd-label">Seasonal Procurement Grid Countdown</div>
+            <div class="cd-num">38</div>
+            <div class="cd-unit">Days Remaining</div>
+            <div class="cd-sub">Prior to closure of the July international trade interfaces. Authorized for Phase 1 technical scope alignment.</div>
+            <button class="cta-btn">Authorize Phase 1 Technical Scope Alignment Session Today</button>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

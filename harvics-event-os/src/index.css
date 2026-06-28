@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-maroon: #5A0F1A;
+  --color-brand-maroon-deep: #4A0C16;
+  --color-brand-gold: #C6A55A;
+  --color-brand-gold-light: #D8B875;
+  --color-brand-bg: #F7F5F2;
+  --color-brand-surface: #EFEAE3;
+  --color-text-primary: #4A0C16; /* Deep Maroon instead of near-black */
+  --color-text-secondary: #6B6B6B;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-text-primary antialiased font-sans;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

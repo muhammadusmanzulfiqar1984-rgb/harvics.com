@@ -159,7 +159,7 @@ const CinematicTradeMap: React.FC = () => {
       className="w-full relative overflow-hidden py-16 px-4"
       style={{
         background:
-          'radial-gradient(ellipse at 25% 0%, rgba(107,31,43,0.6) 0%, transparent 50%), radial-gradient(ellipse at 85% 100%, rgba(195,163,94,0.22) 0%, transparent 50%), linear-gradient(180deg, #1A0505 0%, #0f0408 60%, #1A0505 100%)',
+          'radial-gradient(ellipse at 25% 0%, rgba(107,31,43,0.6) 0%, transparent 50%), radial-gradient(ellipse at 85% 100%, rgba(195,163,94,0.22) 0%, transparent 50%), linear-gradient(180deg, #3D1212 0%, #0f0408 60%, #3D1212 100%)',
       }}
     >
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#C3A35E] to-transparent" />
@@ -197,7 +197,7 @@ const CinematicTradeMap: React.FC = () => {
         </div>
 
         {/* ───── COMMAND CENTER ───── */}
-        <div className="relative bg-[#1A0505] overflow-hidden">
+        <div className="relative bg-[#3D1212] overflow-hidden">
           {/* Top status strip */}
           <div className="flex items-center justify-between px-5 py-2.5 border-b border-[#C3A35E]/20 bg-black/30">
             <div className="flex items-center gap-3">
@@ -248,7 +248,7 @@ const CinematicTradeMap: React.FC = () => {
               </defs>
 
               {/* Background subtle vignette */}
-              <rect width="1200" height="620" fill="#1A0505" />
+              <rect width="1200" height="620" fill="#3D1212" />
 
               {/* Latitude grid lines */}
               {[120, 220, 320, 420, 520].map(y => (
@@ -371,7 +371,7 @@ const CinematicTradeMap: React.FC = () => {
                   {h.isHQ && (
                     <g>
                       <rect x={h.x - 12} y={h.y + 9} width="24" height="11" fill="#C3A35E" />
-                      <text x={h.x} y={h.y + 17} fill="#1A0505" fontSize="7" fontWeight="800" textAnchor="middle" style={{ letterSpacing: '0.18em' }}>HQ</text>
+                      <text x={h.x} y={h.y + 17} fill="#3D1212" fontSize="7" fontWeight="800" textAnchor="middle" style={{ letterSpacing: '0.18em' }}>HQ</text>
                     </g>
                   )}
                 </g>

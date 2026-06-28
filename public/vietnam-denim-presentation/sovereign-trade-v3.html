@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HARVICS × GENVIET | Sovereign Trade Architecture</title>
+<style>
+:root {
+  --bg:#07090f; --bg2:#0c0f1a; --bg3:#111520; --border:#1c2030;
+  --gold:#c8aa78; --gold2:#a88d5e; --white:#f0f0f0; --muted:#6b7280;
+  --danger:#ef4444; --success:#22c55e; --blue:#4a8fe8; --blue2:#2d6bbf;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--white);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.65;}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:200;display:flex;justify-content:space-between;align-items:center;padding:16px 48px;background:rgba(7,9,15,0.95);border-bottom:1px solid var(--border);backdrop-filter:blur(14px);}
+.nav-brand span{font-size:10px;letter-spacing:3px;color:var(--muted);text-transform:uppercase;display:block;}
+.nav-brand strong{font-size:14px;color:var(--gold);letter-spacing:0.5px;}
+.nav-tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold2);border:1px solid var(--border);padding:5px 14px;}
+
+/* HERO */
+#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:100px 48px 80px;position:relative;overflow:hidden;border-bottom:1px solid var(--border);}
+#hero::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 70% 60% at 65% 40%,rgba(74,143,232,.07) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 5% 85%,rgba(200,170,120,.05) 0%,transparent 55%);}
+.hero-inner{max-width:1100px;margin:0 auto;width:100%;position:relative;}
+.h-eye{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);margin-bottom:22px;}
+.h-title{font-size:clamp(40px,5.5vw,70px);font-weight:800;line-height:1.05;letter-spacing:-1.5px;color:var(--white);margin-bottom:12px;}
+.h-title span{color:var(--gold);}
+.h-sub{font-size:13px;color:var(--muted);letter-spacing:3px;text-transform:uppercase;margin-bottom:6px;}
+.h-loc{font-size:11px;color:var(--gold2);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:40px;}
+.h-ctx{max-width:740px;font-size:15px;color:#9ca3af;line-height:1.85;margin-bottom:24px;border-left:2px solid var(--gold2);padding-left:22px;}
+.h-dir{max-width:740px;font-size:13px;color:var(--muted);line-height:1.75;padding:18px 22px;background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--blue);margin-bottom:52px;}
+.h-dir strong{color:var(--blue);}
+.h-stats{display:flex;border:1px solid var(--border);width:fit-content;}
+.h-stat{padding:26px 44px;border-right:1px solid var(--border);text-align:center;}
+.h-stat:last-child{border-right:none;}
+.h-stat .val{font-size:40px;font-weight:800;color:var(--white);line-height:1;margin-bottom:7px;}
+.h-stat .val em{color:var(--gold);font-style:normal;font-size:26px;}
+.h-stat .lbl{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);max-width:150px;}
+
+/* SECTION */
+.S{max-width:1200px;margin:0 auto;padding:80px 48px;border-bottom:1px solid var(--border);}
+.s-act{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--blue);margin-bottom:10px;}
+.s-title{font-size:26px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;}
+.s-sub{font-size:14px;color:var(--muted);margin-bottom:36px;padding-bottom:24px;border-bottom:1px solid var(--border);}
+
+/* GRIDS */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+
+/* CARDS */
+.card{background:var(--bg2);border:1px solid var(--border);padding:26px;}
+.card-t{font-size:12px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;}
+.card p{font-size:13px;color:var(--muted);line-height:1.75;margin:0;}
+
+/* STAT BLOCKS */
+.sb{background:var(--bg3);border:1px solid var(--border);padding:26px 18px;text-align:center;}
+.sb .n{font-size:30px;font-weight:800;color:var(--white);margin-bottom:6px;}
+.sb .l{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold2);}
+
+/* DATA ROW — "What We Found" */
+.data-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--border);margin-bottom:32px;}
+.data-cell{padding:22px 18px;border-right:1px solid var(--border);text-align:center;}
+.data-cell:last-child{border-right:none;}
+.data-cell .dn{font-size:26px;font-weight:800;color:var(--white);line-height:1;margin-bottom:5px;}
+.data-cell .dl{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold2);}
+.data-row2{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--border);border-top:none;margin-bottom:28px;}
+
+/* FOUND NARRATIVE */
+.found-quote{padding:28px 32px;background:var(--bg2);border-left:3px solid var(--gold);font-size:15px;color:#9ca3af;line-height:1.9;font-style:italic;margin-top:20px;}
+
+/* GATES */
+.gate{background:var(--bg2);border:1px solid var(--border);padding:28px;position:relative;overflow:hidden;}
+.gate::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;}
+.gate.warn::before{background:var(--danger);}
+.gate.caution::before{background:var(--gold2);}
+.gate.future::before{background:var(--blue);}
+.gate.done::before{background:var(--success);}
+.g-tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-bottom:7px;}
+.gate.warn .g-tag{color:var(--danger);}
+.gate.caution .g-tag{color:var(--gold2);}
+.gate.future .g-tag{color:var(--blue);}
+.gate.done .g-tag{color:var(--success);}
+.g-title{font-size:14px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.gate p{font-size:13px;color:var(--muted);line-height:1.75;margin:0;}
+
+/* CERT SCORECARD */
+.cert-table{width:100%;border-collapse:collapse;margin-top:8px;}
+.cert-table th,.cert-table td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--border);font-size:13px;vertical-align:top;}
+.cert-table th{background:var(--bg3);color:var(--gold);text-transform:uppercase;letter-spacing:1px;font-size:11px;}
+.cert-table tr:last-child td{border-bottom:none;}
+.badge{display:inline-block;padding:2px 9px;font-size:10px;text-transform:uppercase;letter-spacing:1px;border-radius:2px;}
+.b-ok{color:var(--success);border:1px solid var(--success);}
+.b-warn{color:var(--danger);border:1px solid var(--danger);}
+.b-neu{color:var(--gold2);border:1px solid var(--border);}
+.b-miss{color:var(--blue);border:1px solid var(--blue2);}
+
+/* QUOTE */
+.quote{padding:22px 28px;background:var(--bg3);border-left:3px solid var(--gold);font-size:13px;color:var(--muted);font-style:italic;margin-top:28px;line-height:1.85;}
+
+/* VS BLOCK */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);margin-bottom:32px;}
+.vs-l{padding:28px 32px;border-right:1px solid var(--border);}
+.vs-r{padding:28px 32px;}
+.vs-tag{font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px;}
+.vs-l .vs-tag{color:var(--danger);}
+.vs-r .vs-tag{color:var(--success);}
+.vs-l p,.vs-r p{font-size:13px;color:var(--muted);line-height:1.75;margin:0;}
+
+/* UPLIFT */
+.uplift{background:var(--bg3);border:1px solid var(--border);border-top:2px solid var(--success);padding:36px;text-align:center;}
+.uplift .u-l{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold2);margin-bottom:12px;}
+.uplift .u-v{font-size:54px;font-weight:800;color:var(--success);line-height:1;margin-bottom:8px;}
+.uplift .u-s{font-size:12px;color:var(--muted);}
+.uplift .u-t{font-size:14px;color:var(--gold);font-weight:600;margin-top:14px;}
+
+/* PHASE ROW */
+.phase-row{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--border);margin-top:28px;}
+.ph{padding:26px;border-right:1px solid var(--border);}
+.ph:last-child{border-right:none;}
+.ph-tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin-bottom:7px;}
+.ph-title{font-size:13px;font-weight:700;color:var(--gold);margin-bottom:8px;}
+.ph-num{font-size:28px;font-weight:800;color:var(--white);margin-bottom:6px;}
+.ph-num span{color:var(--success);}
+.ph p{font-size:13px;color:var(--muted);line-height:1.75;margin:0;}
+
+/* LDP TABLE */
+.ldp-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);margin-top:28px;}
+.ldp-col{padding:28px;}
+.ldp-col:first-child{border-right:1px solid var(--border);}
+.ldp-col-title{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:18px;}
+.ldp-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;}
+.ldp-row:last-child{border-bottom:none;font-weight:700;}
+.ldp-row .lr-label{color:var(--muted);}
+.ldp-row .lr-val{color:var(--white);}
+.ldp-row.net .lr-val{color:var(--success);font-size:16px;}
+.ldp-note{padding:18px 22px;background:var(--bg3);border-left:3px solid var(--blue);font-size:12px;color:var(--muted);line-height:1.75;margin-top:16px;}
+
+/* TIMELINE */
+.tl-grid{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);}
+.tl-item{display:grid;grid-template-columns:160px 1fr;gap:0;border-bottom:1px solid var(--border);}
+.tl-item:last-child{border-bottom:none;}
+.tl-period{padding:22px 24px;background:var(--bg3);border-right:1px solid var(--border);display:flex;flex-direction:column;justify-content:center;}
+.tl-period .tp-tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin-bottom:4px;}
+.tl-period .tp-months{font-size:13px;font-weight:700;color:var(--gold);}
+.tl-body{padding:22px 26px;}
+.tl-body .tb-title{font-size:14px;font-weight:700;color:var(--white);margin-bottom:6px;}
+.tl-body p{font-size:13px;color:var(--muted);line-height:1.7;margin:0;}
+.tl-body .tb-outcome{display:inline-block;margin-top:8px;font-size:11px;color:var(--success);letter-spacing:1.5px;text-transform:uppercase;}
+
+/* 4 STEPS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--border);}
+.step{padding:30px 24px;border-right:1px solid var(--border);}
+.step:last-child{border-right:none;}
+.step-n{font-size:42px;font-weight:800;color:var(--border);line-height:1;margin-bottom:14px;}
+.step-t{font-size:13px;font-weight:700;color:var(--gold);margin-bottom:8px;}
+.step p{font-size:13px;color:var(--muted);line-height:1.75;margin:0;}
+
+/* ACTION PLAN */
+#action{max-width:1200px;margin:0 auto;padding:80px 48px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+.status-row{display:flex;flex-direction:column;gap:14px;margin-top:28px;}
+.status-item{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;background:var(--bg2);border:1px solid var(--border);}
+.s-icon{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:5px;}
+.s-icon.green{background:var(--success);box-shadow:0 0 8px var(--success);}
+.s-icon.red{background:var(--danger);}
+.s-label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
+.s-desc{font-size:12px;color:var(--muted);line-height:1.65;}
+.cd-box{background:var(--bg3);border:1px solid var(--border);border-top:2px solid var(--danger);padding:40px 32px;text-align:center;}
+.cd-lbl{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--danger);margin-bottom:14px;font-weight:700;}
+.cd-num{font-size:80px;font-weight:800;color:var(--white);line-height:1;margin-bottom:6px;}
+.cd-unit{font-size:13px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;}
+.cd-sub{font-size:12px;color:var(--muted);max-width:280px;margin:0 auto 32px;line-height:1.7;}
+.cta{display:inline-block;background:var(--gold);color:#07090f;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:14px 28px;border:none;cursor:pointer;width:100%;}
+
+/* ANTI-LEAKAGE */
+.moat-row{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);margin-top:8px;}
+.moat-col{padding:26px;}
+.moat-col:first-child{border-right:1px solid var(--border);}
+.moat-col-title{font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;}
+.moat-col:first-child .moat-col-title{color:var(--muted);}
+.moat-col:last-child .moat-col-title{color:var(--gold);}
+.moat-item{padding:12px 0;border-bottom:1px solid var(--border);font-size:13px;line-height:1.65;}
+.moat-item:last-child{border-bottom:none;}
+.moat-item .mi-label{color:var(--muted);margin-bottom:3px;}
+.moat-item .mi-block{color:#374151;font-size:11px;}
+.moat-col:last-child .moat-item .mi-block{color:#9ca3af;}
+
+/* UTILS */
+.hl{color:var(--gold);font-weight:500;}
+.hl-b{color:var(--blue);font-weight:500;}
+.hl-g{color:var(--success);font-weight:500;}
+p{font-size:14px;color:#9ca3af;line-height:1.8;margin-bottom:14px;}
+ul{padding-left:20px;margin-bottom:14px;}
+li{font-size:14px;color:#9ca3af;margin-bottom:8px;line-height:1.7;}
+.info-bar{padding:18px 24px;background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--blue);font-size:13px;color:var(--muted);line-height:1.75;margin-top:24px;}
+.info-bar strong{color:var(--white);}
+
+@media(max-width:900px){
+  nav{padding:14px 20px;}
+  #hero{padding:60px 20px 60px;}
+  .S,#action{padding:56px 20px;}
+  .g2,.g3,.g4,.vs,.phase-row,.steps,.ldp-grid,.moat-row,#action{grid-template-columns:1fr;}
+  .data-grid,.data-row2{grid-template-columns:repeat(3,1fr);}
+  .tl-item{grid-template-columns:1fr;}
+  .vs-l{border-right:none;border-bottom:1px solid var(--border);}
+  .ph,.step,.ldp-col:first-child,.moat-col:first-child{border-right:none;border-bottom:1px solid var(--border);}
+  .h-stats{flex-direction:column;width:100%;}
+  .h-stat{border-right:none;border-bottom:1px solid var(--border);}
+  .h-stat:last-child{border-bottom:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <span>Harvics Global Ventures</span>
+    <strong>Sovereign Trade Architecture Matrix</strong>
+  </div>
+  <div class="nav-tag">Confidential · Board Review Only</div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="h-eye">Harvics Global Ventures · Strategic Trade Document · June 25, 2026</div>
+    <h1 class="h-title"><span>Harvics</span> Global Ventures</h1>
+    <div class="h-sub">GENVIET JEANS · Sovereign EU & Americas Trade Architecture</div>
+    <div class="h-loc">Prague · Ninh Binh · Munich Bluezone 2026</div>
+    <p class="h-ctx">GENVIET commands 1.2M units/year actual capacity at the Cau Giat Industrial Zone in Ninh Binh—863 automated machines, 350 skilled workers, WRAP Gold, Higg Index, and BSCI infrastructure. Traditional regional frameworks cap realized value at a maximum €8 FOB per piece with shifting seasonal structures. The European program establishes a direct, unmediated forward corridor.</p>
+    <div class="h-dir"><strong>Prime Directive:</strong> Transition and scale the enterprise that commands authentic Vietnamese denim heritage into an absolute sovereign anchor across European retail networks, Scandinavian corridors, and North American distribution—anchored to the SS 2027 collection framework within an uncompressed 24-month horizon.</div>
+    <div class="h-stats">
+      <div class="h-stat"><div class="val">1.2M</div><div class="lbl">Units / Year · Actual Dossier Base</div></div>
+      <div class="h-stat"><div class="val"><em>€</em>14B</div><div class="lbl">EU Denim Matrix</div></div>
+      <div class="h-stat"><div class="val">38</div><div class="lbl">Days to Bluezone Munich</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ACT I: WHO IS HARVICS ═══ -->
+<div class="S">
+  <div class="s-act">Act I · Who Is Harvics</div>
+  <h2 class="s-title">Not a Broker. Not an Agent.</h2>
+  <p class="s-sub">Harvics is a sovereign trade architecture firm. We are inside the rooms where EU and Scandinavian buyers make decisions — before those decisions are made.</p>
+  <div class="g2">
+    <div>
+      <p>Harvics Global Ventures operates as a <span class="hl">Prague-based institutional trade conduit</span> — not a commission broker, not a sourcing agent. We hold operational positions at premier European denim buying events, maintain active relationships with 200+ pre-mapped contemporary accounts, and manage the full compliance-to-contract architecture that allows factories of genuine quality to access the European premium corridor.</p>
+      <p>Our value is not what we know about certifications. Anyone can read SEDEX documentation. Our value is <span class="hl">knowing which compliance officer at which brand approves which supplier the morning the audit clears</span> — and being the trusted entity that makes the introduction. That relationship does not transfer. It was built over a decade. It moves with us.</p>
+    </div>
+    <div class="card">
+      <div class="card-t">The Prague Gateway</div>
+      <p>The Harvics Czech entity manages the full EU-side operational stack: localized logistics coordination, ocean freight routing, European customs clearance, REACH chemical declarations, multi-currency exchange stabilization, and Landed Duty Paid (LDP) delivery structures. GENVIET retains 100% product sovereignty. The administrative burden disappears entirely from the factory floor.</p>
+      <div style="margin-top:18px;padding-top:16px;border-top:1px solid var(--border);">
+        <div style="display:flex;gap:32px;flex-wrap:wrap;">
+          <div><div style="font-size:22px;font-weight:800;color:var(--white);">200+</div><div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold2);">Pre-mapped Buyers</div></div>
+          <div><div style="font-size:22px;font-weight:800;color:var(--white);">4</div><div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold2);">EU Trade Corridors</div></div>
+          <div><div style="font-size:22px;font-weight:800;color:var(--white);">July 21</div><div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold2);">Bluezone Munich</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ACT II: WHAT WE FOUND ═══ -->
+<div class="S">
+  <div class="s-act">Act II · What We Found</div>
+  <h2 class="s-title">We Did Our Homework</h2>
+  <p class="s-sub">Before we say anything about where you could go — we want to show you exactly what we saw when we looked at where you are.</p>
+
+  <div class="data-grid">
+    <div class="data-cell"><div class="dn">12,888m²</div><div class="dl">Factory Footprint</div></div>
+    <div class="data-cell"><div class="dn">863</div><div class="dl">Active Machines</div></div>
+    <div class="data-cell"><div class="dn">350</div><div class="dl">Skilled Workers</div></div>
+    <div class="data-cell"><div class="dn">1.2M</div><div class="dl">Pcs / Year Capacity</div></div>
+    <div class="data-cell"><div class="dn">6</div><div class="dl">Production Lines</div></div>
+  </div>
+  <div class="data-row2">
+    <div class="data-cell"><div class="dn">20 yrs</div><div class="dl">Denim Heritage</div></div>
+    <div class="data-cell"><div class="dn">AQL 1.5</div><div class="dl">Quality Standard</div></div>
+    <div class="data-cell"><div class="dn">550m³/day</div><div class="dl">MBR Wastewater</div></div>
+    <div class="data-cell"><div class="dn">70%</div><div class="dl">Already Exported</div></div>
+    <div class="data-cell"><div class="dn">Sept '26</div><div class="dl">WRAP Gold Valid</div></div>
+  </div>
+
+  <div class="found-quote">
+    "Twenty years. 863 machines. 12,888 square metres. 350 people who come to work every day. A wastewater system that most factories in Europe cannot match. A quality control standard stricter than most brands require.<br><br>
+    This is not a white-label factory. This is a manufacturing house with a 20-year story — and the world hasn't heard it yet."
+  </div>
+
+  <div class="info-bar" style="margin-top:24px;">
+    <strong>Infrastructure Verified:</strong> Centralized Class-A Membrane Bioreactor (MBR) wastewater system at 550m³/day. Automated laser-finishing lines. Bio-based enzyme wash, ozone processing, stone wash — all in-house. AQL 1.5 — the strictest standard in the market (most factories operate at AQL 2.5). Japan-standard inline metal detection. This is not a capacity story. This is a craft story.
+  </div>
+</div>
+
+<!-- ═══ ACT III: THE GCC CEILING ═══ -->
+<div class="S">
+  <div class="s-act">Act III · The GCC Ceiling</div>
+  <h2 class="s-title">What This Capability Is Actually Worth</h2>
+  <p class="s-sub">The current market is not rewarding this infrastructure correctly. The numbers make this visible without commentary.</p>
+
+  <div class="g2" style="margin-bottom:32px;">
+    <div>
+      <p>A garment leaving this factory at <span class="hl">€12 FOB</span> sells in a European boutique for <span class="hl">€78</span>. The difference — <span class="hl">€66</span> — flows to intermediaries who made phone calls. Not to the 350 people who made the garment, or to the two decades of craft infrastructure that enabled it.</p>
+      <p>The current spot-order framework was designed for volume commodity production. It was not designed for a facility that holds WRAP Gold, operates a Class-A wastewater system, and maintains AQL 1.5 quality controls. <span class="hl">The asset is overqualified for its current commercial arrangement.</span></p>
+    </div>
+    <div>
+      <div style="background:var(--bg3);border:1px solid var(--border);padding:28px;">
+        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:18px;">Current Market Reality</div>
+        <div style="margin-bottom:16px;">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px;">GCC / Regional Spot Orders</div>
+          <div style="font-size:24px;font-weight:800;color:var(--danger);">€6 – €8 <span style="font-size:14px;color:var(--muted);">FOB avg</span></div>
+          <div style="font-size:11px;color:var(--muted);margin-top:3px;">No 2-season commitment. Price renegotiated every order.</div>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:16px;">
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px;">EU Contemporary Programme (Target)</div>
+          <div style="font-size:24px;font-weight:800;color:var(--success);">€10 – €12.50 <span style="font-size:14px;color:var(--muted);">FOB base</span></div>
+          <div style="font-size:11px;color:var(--muted);margin-top:3px;">2-year forward contract. Signed before production starts.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Revenue reality table -->
+  <table class="cert-table">
+    <thead><tr><th>Market Segment</th><th>Est. Volume</th><th>FOB Range</th><th>Annual Revenue</th><th>Contract Stability</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>GCC / Middle East Spot</strong><br><span style="font-size:11px;color:var(--muted);">Uncontracted. Renegotiated every order.</span></td>
+        <td>~300,000 pcs</td>
+        <td style="color:var(--danger);">€6 – €8</td>
+        <td>€1.8M – €2.4M</td>
+        <td><span class="badge b-warn">None</span></td>
+      </tr>
+      <tr>
+        <td><strong>Japan / Korea Premium</strong></td>
+        <td>~200,000 pcs</td>
+        <td>€9 – €11</td>
+        <td>~€1.8M – €2.2M</td>
+        <td><span class="badge b-neu">Seasonal</span></td>
+      </tr>
+      <tr>
+        <td><strong>US & Other Export</strong><br><span style="font-size:11px;color:var(--muted);">GVLux sustainable line.</span></td>
+        <td>~340,000 pcs</td>
+        <td>€8 – €10</td>
+        <td>~€2.7M – €3.4M</td>
+        <td><span class="badge b-neu">Programme</span></td>
+      </tr>
+      <tr>
+        <td><strong>GENOVA Domestic (Own Brand)</strong></td>
+        <td>~360,000 pcs</td>
+        <td>Transfer price</td>
+        <td>Internal</td>
+        <td><span class="badge b-ok">Own Brand</span></td>
+      </tr>
+      <tr style="background:rgba(74,143,232,0.04);">
+        <td><strong style="color:var(--gold);">EU Programme (Target — Added On Top)</strong></td>
+        <td>30K → 100K pcs</td>
+        <td style="color:var(--success);">€10 – €12.50</td>
+        <td style="color:var(--success);font-weight:700;">+€300K → €1.25M</td>
+        <td><span class="badge b-ok">2-Year Contract</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══ ACT IV: THE WORLD OUTSIDE ═══ -->
+<div class="S">
+  <div class="s-act">Act IV · The World Outside</div>
+  <h2 class="s-title">€14 Billion. No Dominant Vietnamese Name.</h2>
+  <p class="s-sub">The European denim market is the largest premium textile corridor in the world. It has no established Vietnamese manufacturing anchor. That absence is the opportunity.</p>
+  <div class="g2">
+    <div>
+      <p>The European denim matrix processes <span class="hl">€14 billion annually</span> across 4 primary corridors — Germany/Central Europe, the Nordic sustainability cluster, the French/Spanish premium fashion axis, and the UK-adjacent contemporary networks. Every serious brand in this matrix is actively seeking supply chain diversification away from single-country dependency.</p>
+      <p>Vietnamese manufacturing has a strong technical reputation among European buyers. What it lacks is <span class="hl">a sovereign trade infrastructure that converts that reputation into a locked, multi-season commercial relationship</span>. That infrastructure does not exist in Hanoi. It exists in Prague. That is why we are here.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div class="card">
+        <div class="card-t">Germany & Poland · Central Axis</div>
+        <p>Large-scale private label deployments. Industrial volume networks anchored through Munich buyer clusters.</p>
+      </div>
+      <div class="card">
+        <div class="card-t">Scandinavia · Nordic Corridor</div>
+        <p>Premium eco-conscious brands with the strictest chemical compliance requirements — and the highest willingness to pay for verified supply chains.</p>
+      </div>
+      <div class="card">
+        <div class="card-t">France & Spain · Premium Fashion</div>
+        <p>Contemporary private labels. Design-forward ODM capability buyers. Capsule and seasonal programme structures.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ACT V: THE DISTANCE ═══ -->
+<div class="S">
+  <div class="s-act">Act V · The Distance</div>
+  <h2 class="s-title">The Technical Terrain: Market Gatekeepers</h2>
+  <p class="s-sub">Western retail systems do not buy products—they buy verified compliance architectures. GENVIET is close. Closer than most. These are the four gates ahead — and we have already crossed each of them with other manufacturers.</p>
+
+  <p>The EU and Scandinavian market has a defined set of gates. Every serious brand requires their suppliers to have passed through them before a commercial conversation starts. We know the exact sequence, the exact timing — and most importantly, we know the buyers waiting on the other side.</p>
+
+  <div style="display:flex;flex-direction:column;gap:14px;margin-top:28px;margin-bottom:32px;">
+    <div class="gate warn">
+      <div class="g-tag">Gate 1 · Q3 2026 · Action Critical</div>
+      <div class="g-title">Social Compliance Continuity</div>
+      <p>GENVIET holds WRAP Gold status (Certificate 18216), valid through Sept 17, 2026. Because international audit loops require a 3–5 month preparation horizon, the renewal protocol is initiated concurrently with our integration. A parallel onboarding into the European SEDEX/SMETA 4-Pillar registry clears access to premium multi-brand vendor portals — including H&M, Zalando, and ASOS-tier buyers who mandate SEDEX before any supplier conversation begins.</p>
+    </div>
+    <div class="gate caution">
+      <div class="g-tag">Gate 2 · Q4 2026 · Ready for Onboarding</div>
+      <div class="g-title">Chemical Lifecycle Validation</div>
+      <p>The Class-A MBR wastewater system is already a strong asset — most European factories cannot match it. Premium German and Nordic buyers additionally require ZDHC MRSL Level 1 verification for wash plant chemistry documentation. HARVICS structures this data submission to unlock the €12+ FOB pricing tier. This is a documentation process, not an infrastructure investment — the infrastructure already exceeds requirements.</p>
+    </div>
+    <div class="gate future">
+      <div class="g-tag">Gate 3 · Q1 2027 · Future Node</div>
+      <div class="g-title">Organic Materials Chain</div>
+      <p>Transitioning into 40% ODM and 30% FOB target mix requires full-chain fibre verification. Global Organic Textile Standard (GOTS) and Global Recycled Standard (GRS) tracking enables entry into the fastest-growing EU product category — sustainable and recycled denim collections with premium price positioning.</p>
+    </div>
+    <div class="gate future">
+      <div class="g-tag">Gate 4 · Q2 2027 · EU Mandate Readiness</div>
+      <div class="g-title">Environmental System & Digital Passport</div>
+      <p>Oncoming EU Digital Product Passport (DPP) legislation mandates full supply-chain telemetry for textile products sold in the EU. We embed the ISO 14001 environmental management framework and supply chain data mapping throughout 2027 — positioning GENVIET ahead of legal enforcement while competitors scramble to comply retroactively.</p>
+    </div>
+  </div>
+
+  <!-- CERT SCORECARD -->
+  <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:14px;">Certification Scorecard — Current vs Target</div>
+  <table class="cert-table">
+    <thead><tr><th>Certification</th><th>Current Status</th><th>Tier A Requirement</th><th>Priority</th></tr></thead>
+    <tbody>
+      <tr><td><strong>WRAP Gold</strong></td><td>Active · Cert 18216 · Expires Sept 17, 2026</td><td>Renew within 60 days — loss = EU access blocked</td><td><span class="badge b-warn">Action Now</span></td></tr>
+      <tr><td><strong>BSCI</strong></td><td>Active · Listed in profile</td><td>Unlocks mid-tier EU buyers — already held</td><td><span class="badge b-ok">Active</span></td></tr>
+      <tr><td><strong>Higg Index FEM</strong></td><td>Active · Listed in profile</td><td>Sustainability framework — required by Scandinavian brands</td><td><span class="badge b-ok">Active</span></td></tr>
+      <tr><td><strong>ISO 9001</strong></td><td>Holds 2008 version · Obsolete</td><td>Must upgrade to 2015 standard — EU procurement audit will fail on 2008</td><td><span class="badge b-warn">Upgrade Q3</span></td></tr>
+      <tr><td><strong>MBR Wastewater (QCVN 13)</strong></td><td>Active · Class A · 550m³/day</td><td>Exceeds EU environmental scoring benchmarks</td><td><span class="badge b-ok">Verified</span></td></tr>
+      <tr><td><strong>OEKO-TEX</strong></td><td>Active · Materials level</td><td>Chemical safety — supports EU consumer goods claims</td><td><span class="badge b-ok">Active</span></td></tr>
+      <tr><td><strong>SEDEX / SMETA</strong></td><td>Not listed — not yet registered</td><td>H&M, Zara, ASOS, Zalando cannot onboard without SEDEX</td><td><span class="badge b-miss">Q3 2026</span></td></tr>
+      <tr><td><strong>ZDHC MRSL</strong></td><td>Not listed — not submitted</td><td>Chemical management — unlocks German & Nordic €12+ gate</td><td><span class="badge b-miss">Q4 2026</span></td></tr>
+      <tr><td><strong>GRS / GOTS</strong></td><td>Not yet — not urgent</td><td>Required for recycled/organic fibre programmes only</td><td><span class="badge b-neu">Year 3</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="quote">"A certification on paper opens the gate. Knowing which buyer is standing on the other side — and having them trust the hand that introduces you — that is what you are hiring."</div>
+</div>
+
+<!-- ═══ ACT VI: THE PATH — 18-MONTH TIMELINE ═══ -->
+<div class="S">
+  <div class="s-act">Act VI · The Path</div>
+  <h2 class="s-title">18 Months. Managed.</h2>
+  <p class="s-sub">Every milestone is framed as an outcome — not a task. This is a journey Harvics is guiding, not a compliance checklist she manages alone.</p>
+
+  <div class="tl-grid">
+    <div class="tl-item">
+      <div class="tl-period"><div class="tp-tag">Immediate</div><div class="tp-months">Month 1–2</div></div>
+      <div class="tl-body">
+        <div class="tb-title">Alignment & Parameter Definition</div>
+        <p>Joint evaluation session. Harvics team reviews full technical documentation against target EU buyer profiles. Product selection for EU market entry. WRAP Gold renewal protocol initiated. ISO 9001:2008 → 2015 gap assessment launched. Target buyer list prepared.</p>
+        <span class="tb-outcome">→ Outcome: Harvics holds a confirmed buyer shortlist</span>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-period"><div class="tp-tag">July 2026</div><div class="tp-months">Month 3</div></div>
+      <div class="tl-body">
+        <div class="tb-title">Bluezone Munich — July 21–23, 2026</div>
+        <p>Harvics manages and completely funds the operational footprint at Europe's premier denim exhibition. First buyer introductions made. GENVIET sustainable credentials presented to 200+ pre-mapped accounts. No cost, no travel, no risk to the factory.</p>
+        <span class="tb-outcome">→ Outcome: First qualified EU buyer sample requests received</span>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-period"><div class="tp-tag">Q3 2026</div><div class="tp-months">Month 4–6</div></div>
+      <div class="tl-body">
+        <div class="tb-title">First Compliance Gate Cleared</div>
+        <p>SEDEX/SMETA 4-Pillar registration complete. WRAP Gold renewal submitted. Sample loops initiated with 3 pre-qualified EU accounts. Development packs sent. Technical approvals in progress.</p>
+        <span class="tb-outcome">→ Outcome: 3 EU buyers in active sample development</span>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-period"><div class="tp-tag">Q4 2026</div><div class="tp-months">Month 6–9</div></div>
+      <div class="tl-body">
+        <div class="tb-title">Pilot Orders — First EU Revenue</div>
+        <p>3 pre-qualified EU contemporary accounts confirmed. 30,000 units under 2-year forward contracts at €10 FOB gateway price. ISO 9001:2015 transition complete. ZDHC MRSL chemical documentation submitted.</p>
+        <span class="tb-outcome">→ Outcome: €300,000 projected Year 1 EU revenue · Under signed contract</span>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-period"><div class="tp-tag">Q1 2027</div><div class="tp-months">Month 10–12</div></div>
+      <div class="tl-body">
+        <div class="tb-title">Scandinavian Entry</div>
+        <p>ZDHC clearance complete — premium chemical compliance verified. First Scandinavian buyer meetings activated in Sweden, Norway, Denmark. These buyers were waiting specifically for this clearance before proceeding. Nordic brands operate on AW/SS cycle — this timing is precise.</p>
+        <span class="tb-outcome">→ Outcome: First Scandinavian buyer meeting confirmed</span>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-period"><div class="tp-tag">2027</div><div class="tp-months">Month 12–18</div></div>
+      <div class="tl-body">
+        <div class="tb-title">SS 2027 — Full Sovereign Launch</div>
+        <p>100,000 units EU programme active. LDP logistics structures live for Nordic partners. Americas pilot initiated. Organic denim certification in progress for Year 3 Scandinavian sustainable collections. GENVIET Jeans — a named European denim supplier.</p>
+        <span class="tb-outcome">→ Outcome: ~€2.1M cumulative 24-month EU programme revenue</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ACT VII: FINANCIAL MATRIX ═══ -->
+<div class="S">
+  <div class="s-act">Act VII · Financial Matrix</div>
+  <h2 class="s-title">Financial Acceleration & Yield Matrix</h2>
+  <p class="s-sub">24-Month Target · Zero new machinery · Zero new workers · Optimization of existing plant assets only.</p>
+
+  <p>This framework requires no expansion of machinery, no localized hiring increases, and creates zero disruption to active domestic retail operations. The strategy migrates an unallocated <span class="hl">15–20% capacity block</span> from volatile, uncontracted spot orders into locked multi-season European contemporary programmes.</p>
+
+  <div class="vs">
+    <div class="vs-l"><div class="vs-tag">Current Spot Baseline</div><p>Average <strong style="color:var(--white);">€6 – €8 FOB</strong> per piece. Transactional ordering schedules with changing volume guarantees and seasonal renegotiation exposure. No contract signed before production starts.</p></div>
+    <div class="vs-r"><div class="vs-tag">Target EU Programmes</div><p><strong style="color:var(--white);">€10 – €12.50 base FOB</strong> per piece. 2-year forward commitments signed before factory layout deployment. Zero spot risk. Logistics and compliance overhead absorbed by Harvics.</p></div>
+  </div>
+
+  <div class="g2" style="align-items:start;margin-bottom:28px;">
+    <p style="margin:0;">By upgrading a single <span class="hl">100,000 unit</span> block from spot baseline (€7 avg) to integrated EU programme (€12.50), the margin delta yields <span class="hl-g">+€550,000</span> in direct factory-gate variance — on the exact same production volume, with the same workers and machines.</p>
+    <div class="uplift">
+      <div class="u-l">Net Margin Optimization Delta · Year 2</div>
+      <div class="u-v">+€550K</div>
+      <div class="u-s">Annualized uplift · exact same production volume</div>
+      <div class="u-t">~€2.1M Cumulative 24-Month Alliance Revenue</div>
+    </div>
+  </div>
+
+  <div class="phase-row">
+    <div class="ph"><div class="ph-tag">Year 1 · Controlled Entry</div><div class="ph-title">Corridor Entry</div><div class="ph-num"><span>€</span>300K</div><p>3 pre-mapped EU accounts. 30,000 units under 2-year forward agreements at €10 FOB gateway price. First contracted EU revenue.</p></div>
+    <div class="ph"><div class="ph-tag">Year 2 · Scale Integration</div><div class="ph-title">Structural Integration</div><div class="ph-num">~<span>€</span>1.25M</div><p>100,000 units total. LDP structures for key Nordic partners. 75,000 FOB @ €12.50 + 25,000 LDP @ €15.50 gross = ~€12.38 net per LDP piece.</p></div>
+    <div class="ph"><div class="ph-tag">Year 2 · Optimization Bonus</div><div class="ph-title">GCC Replacement Uplift</div><div class="ph-num">+<span>€</span>550K</div><p>Replacing 100,000 units of spot volume (€7 avg) with EU programme (€12.50) adds pure margin improvement. Same factory. Better buyer.</p></div>
+  </div>
+
+  <!-- LDP MECHANICS -->
+  <div style="margin-top:40px;">
+    <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:14px;">LDP Mechanics — What Each Structure Means in Practice</div>
+    <div class="ldp-grid">
+      <div class="ldp-col">
+        <div class="ldp-col-title">FOB Structure — 75,000 pcs @ €12.50</div>
+        <div class="ldp-row"><span class="lr-label">Factory receives</span><span class="lr-val">€12.50 / pc</span></div>
+        <div class="ldp-row"><span class="lr-label">Logistics paid by</span><span class="lr-val">Buyer</span></div>
+        <div class="ldp-row"><span class="lr-label">Duty managed by</span><span class="lr-val">Buyer</span></div>
+        <div class="ldp-row net"><span class="lr-label">NET to GENVIET</span><span class="lr-val">€12.50</span></div>
+      </div>
+      <div class="ldp-col">
+        <div class="ldp-col-title">LDP Structure — 25,000 pcs @ €15.50 gross</div>
+        <div class="ldp-row"><span class="lr-label">LDP price to EU buyer</span><span class="lr-val">€15.50 / pc</span></div>
+        <div class="ldp-row"><span class="lr-label">Sea freight Vietnam → EU</span><span class="lr-val" style="color:var(--danger);">−€0.90</span></div>
+        <div class="ldp-row"><span class="lr-label">EU duty 12% on CIF</span><span class="lr-val" style="color:var(--danger);">−€1.67</span></div>
+        <div class="ldp-row"><span class="lr-label">Customs + brokerage + delivery</span><span class="lr-val" style="color:var(--danger);">−€0.55</span></div>
+        <div class="ldp-row net"><span class="lr-label">NET to GENVIET</span><span class="lr-val">€12.38</span></div>
+      </div>
+    </div>
+    <div class="ldp-note">
+      <strong style="color:var(--white);">Why offer LDP if the net is nearly identical to FOB?</strong> The per-piece difference is marginal (€12.38 vs €12.50). The strategic value is structural retention: EU buyers who receive LDP do not switch suppliers. Their logistics and finance teams integrate directly with the factory dispatch schedule. LDP makes the relationship structurally sticky — that is the purpose, not per-piece margin gain.
+    </div>
+  </div>
+
+  <!-- YEAR 2-3 CEILING SCENARIO -->
+  <div style="margin-top:32px;padding:24px 28px;background:var(--bg2);border:1px solid var(--border);">
+    <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:16px;">Year 2–3 Ceiling Scenario — Replacing GCC Volume</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);">
+      <div style="padding:20px 24px;border-right:1px solid var(--border);">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:6px;">Current — 300,000 pcs GCC Spot</div>
+        <div style="font-size:22px;font-weight:800;color:var(--danger);">€2.1M / year</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:4px;">300,000 × €7.00 avg</div>
+      </div>
+      <div style="padding:20px 24px;">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:6px;">Year 2–3 — Same Volume, EU Buyers, Contracted</div>
+        <div style="font-size:22px;font-weight:800;color:var(--success);">€3.6M / year</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:4px;">300,000 × €12.00 avg · <strong style="color:var(--success);">+€1.5M gain same machines</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ACT VIII: TWO FUTURES ═══ -->
+<section id="action">
+  <div class="action-text">
+    <div class="s-act">Act VIII · Two Futures</div>
+    <h2 class="s-title">Temporal Market Alignment</h2>
+    <p class="s-sub" style="border:none;padding:0;margin-bottom:20px;">Western retail buying divisions lock their sourcing allocations on fixed, unmovable timelines. AW 2027 and SS 2027 commitments are structurally finalized during July, August, and September 2026. This window is not flexible.</p>
+    <p style="font-size:13px;">HARVICS maintains an active, fully funded network layer positioned across these immediate trade cycles — with zero front-end capital exposure to the GENVIET balance sheet. Bluezone Munich is July 21–23. That is a real, fixed date. The urgency in this presentation is not a sales tactic. It is a genuine market timing reality.</p>
+    <div class="status-row">
+      <div class="status-item">
+        <div class="s-icon green"></div>
+        <div><div class="s-label">Alliance Active</div><div class="s-desc">Munich presence fully operational. Direct access to 200+ pre-mapped buyers. Multi-season contract cycles on track. First buyer introductions July 21.</div></div>
+      </div>
+      <div class="status-item">
+        <div class="s-icon red"></div>
+        <div><div class="s-label">Alliance Deferred</div><div class="s-desc">International procurement windows lock after this cycle. Factory capacity remains exposed to spot-market price pressure until late 2027 trade cycles reopen.</div></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="cd-box">
+      <div class="cd-lbl">Seasonal Procurement Grid Countdown</div>
+      <div class="cd-num">38</div>
+      <div class="cd-unit">Days Remaining</div>
+      <div class="cd-sub">Prior to closure of the July international trade interfaces. Authorized for Phase 1 technical scope alignment session.</div>
+      <button class="cta">Authorize Phase 1 Technical Scope Alignment Session Today</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ANTI-LEAKAGE — STRATEGY NOTE ═══ -->
+<div class="S">
+  <div class="s-act">Strategy · What She Cannot Copy</div>
+  <h2 class="s-title">The Architecture That Transfers — And What Doesn't</h2>
+  <p class="s-sub">The presentation shows information. The value is in execution. The distinction matters.</p>
+
+  <div class="moat-row">
+    <div class="moat-col">
+      <div class="moat-col-title">She Can Access / Google</div>
+      <div class="moat-item">
+        <div class="mi-label">SEDEX, ZDHC, GOTS, ISO 14001</div>
+        <div class="mi-block">That these certifications exist and what they require.</div>
+      </div>
+      <div class="moat-item">
+        <div class="mi-label">Bluezone Munich</div>
+        <div class="mi-block">Exhibition registration is open to the public.</div>
+      </div>
+      <div class="moat-item">
+        <div class="mi-label">EU Denim Market Data</div>
+        <div class="mi-block">€14B figure, major brand names, corridor geography.</div>
+      </div>
+      <div class="moat-item">
+        <div class="mi-label">LDP Logistics Mechanics</div>
+        <div class="mi-block">Freight + duty + delivery cost structure from this deck.</div>
+      </div>
+      <div class="moat-item">
+        <div class="mi-label">A Local EU Agent</div>
+        <div class="mi-block">Someone in Hamburg, someone in Stockholm.</div>
+      </div>
+    </div>
+    <div class="moat-col">
+      <div class="moat-col-title">She Cannot Replicate</div>
+      <div class="moat-item">
+        <div class="mi-label">Which buyer requires which cert · In what order · Who to call when it clears</div>
+        <div class="mi-block">10 years of relationship-building. Not a document. Not transferable.</div>
+      </div>
+      <div class="moat-item">
+        <div class="mi-label">Walking into Bluezone with 200 buyers who already know your name</div>
+        <div class="mi-block">Trust is with Harvics first. It transfers to the factory only through the introduction.</div>
+      </div>
+      <div class="moat-item">
+        <div class="mi-label">The integrated Prague operational stack</div>
+        <div class="mi-block">Compliance + buyers + LDP logistics + brand positioning simultaneously. No fragmented agent does this.</div>
+      </div>
+      <div class="moat-item">
+        <div class="mi-label">The exact buyer waiting on the other side of each compliance gate</div>
+        <div class="mi-block">Not in any public database. Not transferable. Moves with Harvics.</div>
+      </div>
+      <div class="moat-item">
+        <div class="mi-label">A trusted introduction from inside the room</div>
+        <div class="mi-block">A local agent introduces a factory. Harvics introduces a verified sovereign manufacturing partner. Different category entirely.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="quote" style="margin-top:28px;">"Getting certified opens the gate. Knowing which buyer is standing on the other side — and having them trust the hand that introduces you — that is what you are hiring."</div>
+</div>
+
+</body>
+</html>

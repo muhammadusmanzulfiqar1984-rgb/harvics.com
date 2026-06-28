@@ -1,161 +1,269 @@
 'use client'
 
-import { useParams } from 'next/navigation'
+import { useParams, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
+
+function RFQForm() {
+  const params = useParams()
+  const searchParams = useSearchParams()
+  const locale = (params?.locale as string) || 'en'
+
+  const prefillProduct = searchParams.get('product') || ''
+  const prefillCategory = searchParams.get('category') || ''
+
+  const [submitted, setSubmitted] = useState(false)
+  const [rfqId, setRfqId] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+
+  const [form, setForm] = useState({
+    product: prefillProduct,
+    category: prefillCategory,
+    quantity: '',
+    targetPrice: '',
+    requiredBy: '',
+    specs: '',
+    deliveryLocation: '',
+    incoterms: '',
+    paymentTerms: '',
+    preferredOrigin: '',
+    fullName: '',
+    company: '',
+    email: '',
+    phone: '',
+    country: '',
+    website: '',
+  })
+
+  const set = (k: string, v: string) => setForm(f => ({ ...f, [k]: v }))
+
+  const handleSubmit = async () => {
+    setError('')
+    if (!form.product.trim() || !form.fullName.trim() || !form.email.trim()) {
+      setError('Product description, full name and email are required.')
+      return
+    }
+    setLoading(true)
+    try {
+      const res = await fetch('/api/harvictrade/rfq', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error || 'Submission failed')
+      setRfqId(data.rfqId)
+      setSubmitted(true)
+    } catch (e: unknown) {
+      setError(e instanceof Error ? e.message : 'Something went wrong. Please try again.')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const inputCls = 'w-full px-4 py-3 border border-[#C3A35E]/20 bg-white text-[#3D1212] placeholder-[#3D1212]/25 focus:border-[#3D1212] focus:outline-none text-sm transition-colors'
+  const labelCls = 'block text-[10px] font-bold text-[#3D1212]/50 uppercase tracking-[0.18em] mb-1.5'
+
+  if (submitted) {
+    return (
+      <div className="text-center py-24 px-4">
+        <div className="w-16 h-16 border-2 border-[#C3A35E] flex items-center justify-center mx-auto mb-8">
+          <span className="text-[#C3A35E] text-2xl">✓</span>
+        </div>
+        <h2 className="text-2xl font-bold text-[#3D1212] mb-3" style={{ letterSpacing: '-0.02em' }}>RFQ Submitted</h2>
+        <p className="text-[#3D1212]/50 mb-2 max-w-md mx-auto text-sm leading-relaxed">
+          Our sourcing team will review your request and match you with verified suppliers within 24 hours.
+        </p>
+        {rfqId && <p className="text-xs text-[#3D1212]/30 mb-10 font-mono">{rfqId}</p>}
+        <Link href={`/${locale}/harvictrade`}
+          className="inline-block px-8 py-3 bg-[#3D1212] text-white font-bold text-xs uppercase tracking-[0.18em] hover:bg-[#0d0303] transition-colors">
+          Back to HarvicTrade
+        </Link>
+      </div>
+    )
+  }
+
+  return (
+    <div className="space-y-6 max-w-[860px] mx-auto">
+
+      {/* Section 1 */}
+      <div className="bg-white border border-[#C3A35E]/15 p-8">
+        <h2 className="text-sm font-bold text-[#3D1212] mb-6 flex items-center gap-3 uppercase tracking-[0.15em]">
+          <span className="w-7 h-7 bg-[#3D1212] text-white flex items-center justify-center text-xs font-bold">1</span>
+          Product Requirements
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="md:col-span-2">
+            <label className={labelCls}>Product Name / Description *</label>
+            <input value={form.product} onChange={e => set('product', e.target.value)}
+              placeholder="e.g. Premium Basmati Rice 1121 Sella" className={inputCls} />
+          </div>
+          <div>
+            <label className={labelCls}>Category</label>
+            <select value={form.category} onChange={e => set('category', e.target.value)} className={inputCls}>
+              <option value="">Select Category</option>
+              <option>Textiles & Apparel</option>
+              <option>FMCG & Food</option>
+              <option>Commodities</option>
+              <option>Industrial & PPE</option>
+              <option>Minerals & Metals</option>
+              <option>Oil, Gas & Energy</option>
+            </select>
+          </div>
+          <div>
+            <label className={labelCls}>Quantity Required</label>
+            <input value={form.quantity} onChange={e => set('quantity', e.target.value)}
+              placeholder="e.g. 25 MT, 1,000 pcs, 1 FCL" className={inputCls} />
+          </div>
+          <div>
+            <label className={labelCls}>Target Price (optional)</label>
+            <input value={form.targetPrice} onChange={e => set('targetPrice', e.target.value)}
+              placeholder="e.g. $850–950/MT" className={inputCls} />
+          </div>
+          <div>
+            <label className={labelCls}>Required By Date</label>
+            <input type="date" value={form.requiredBy} onChange={e => set('requiredBy', e.target.value)} className={inputCls} />
+          </div>
+          <div className="md:col-span-2">
+            <label className={labelCls}>Specifications / Notes</label>
+            <textarea rows={3} value={form.specs} onChange={e => set('specs', e.target.value)}
+              placeholder="Quality standards, certifications required, packaging preferences..."
+              className={`${inputCls} resize-none`} />
+          </div>
+        </div>
+      </div>
+
+      {/* Section 2 */}
+      <div className="bg-white border border-[#C3A35E]/15 p-8">
+        <h2 className="text-sm font-bold text-[#3D1212] mb-6 flex items-center gap-3 uppercase tracking-[0.15em]">
+          <span className="w-7 h-7 bg-[#3D1212] text-white flex items-center justify-center text-xs font-bold">2</span>
+          Delivery & Trade Terms
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label className={labelCls}>Delivery Location</label>
+            <input value={form.deliveryLocation} onChange={e => set('deliveryLocation', e.target.value)}
+              placeholder="City, Country" className={inputCls} />
+          </div>
+          <div>
+            <label className={labelCls}>Preferred Incoterms</label>
+            <select value={form.incoterms} onChange={e => set('incoterms', e.target.value)} className={inputCls}>
+              <option value="">Select Incoterms</option>
+              <option>FOB — Free on Board</option>
+              <option>CIF — Cost, Insurance & Freight</option>
+              <option>CFR — Cost & Freight</option>
+              <option>EXW — Ex Works</option>
+              <option>DDP — Delivered Duty Paid</option>
+              <option>DAP — Delivered at Place</option>
+            </select>
+          </div>
+          <div>
+            <label className={labelCls}>Payment Terms</label>
+            <select value={form.paymentTerms} onChange={e => set('paymentTerms', e.target.value)} className={inputCls}>
+              <option value="">Select Payment Terms</option>
+              <option>Letter of Credit (LC)</option>
+              <option>Telegraphic Transfer (TT)</option>
+              <option>30/70 (30% advance, 70% on BL)</option>
+              <option>Open Account — Net 30</option>
+              <option>Open Account — Net 60</option>
+              <option>Escrow via HarvicTrade</option>
+            </select>
+          </div>
+          <div>
+            <label className={labelCls}>Preferred Origin (optional)</label>
+            <input value={form.preferredOrigin} onChange={e => set('preferredOrigin', e.target.value)}
+              placeholder="e.g. Pakistan, Turkey, Spain" className={inputCls} />
+          </div>
+        </div>
+      </div>
+
+      {/* Section 3 */}
+      <div className="bg-white border border-[#C3A35E]/15 p-8">
+        <h2 className="text-sm font-bold text-[#3D1212] mb-6 flex items-center gap-3 uppercase tracking-[0.15em]">
+          <span className="w-7 h-7 bg-[#3D1212] text-white flex items-center justify-center text-xs font-bold">3</span>
+          Your Details
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label className={labelCls}>Full Name *</label>
+            <input value={form.fullName} onChange={e => set('fullName', e.target.value)}
+              placeholder="Full Name" className={inputCls} />
+          </div>
+          <div>
+            <label className={labelCls}>Company Name</label>
+            <input value={form.company} onChange={e => set('company', e.target.value)}
+              placeholder="Company Name" className={inputCls} />
+          </div>
+          <div>
+            <label className={labelCls}>Email Address *</label>
+            <input type="email" value={form.email} onChange={e => set('email', e.target.value)}
+              placeholder="you@company.com" className={inputCls} />
+          </div>
+          <div>
+            <label className={labelCls}>Phone (with country code)</label>
+            <input value={form.phone} onChange={e => set('phone', e.target.value)}
+              placeholder="+1 555 000 0000" className={inputCls} />
+          </div>
+          <div>
+            <label className={labelCls}>Country</label>
+            <input value={form.country} onChange={e => set('country', e.target.value)}
+              placeholder="Country" className={inputCls} />
+          </div>
+          <div>
+            <label className={labelCls}>Website (optional)</label>
+            <input value={form.website} onChange={e => set('website', e.target.value)}
+              placeholder="https://yourcompany.com" className={inputCls} />
+          </div>
+        </div>
+      </div>
+
+      {error && (
+        <div className="bg-red-50 border border-red-200 px-6 py-4 text-sm text-red-700">{error}</div>
+      )}
+
+      <div className="text-center pb-8">
+        <button
+          onClick={handleSubmit}
+          disabled={loading}
+          className="px-12 py-4 bg-[#3D1212] text-white font-bold text-xs uppercase tracking-[0.18em] hover:bg-[#0d0303] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          {loading ? 'Submitting…' : 'Submit RFQ'}
+        </button>
+        <p className="text-[10px] text-[#3D1212]/30 mt-4 tracking-wide">
+          By submitting, you agree to HarvicTrade&apos;s terms. Our team responds within 24 hours.
+        </p>
+      </div>
+    </div>
+  )
+}
 
 export default function RFQPage() {
   const params = useParams()
   const locale = (params?.locale as string) || 'en'
-  const [submitted, setSubmitted] = useState(false)
 
   return (
-    <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
-      {/* Hero */}
-      <section className="relative bg-[#6B1F2B] py-16 px-4 border-b border-[#C3A35E]/40">
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.95) 0%, rgba(90,26,36,0.9) 100%)' }} />
-        <div className="max-w-[900px] mx-auto text-center relative z-10">
-          <div className="flex items-center justify-center gap-2 text-xs text-white/40 mb-4">
+    <main className="min-h-screen bg-[#fafaf9] pt-[136px]">
+      <section className="bg-[#3D1212] py-14 px-4 border-b border-[#C3A35E]/30">
+        <div className="max-w-[900px] mx-auto text-center">
+          <div className="flex items-center justify-center gap-2 text-[10px] text-white/30 mb-5 tracking-[0.2em] uppercase">
             <Link href={`/${locale}/harvictrade`} className="hover:text-[#C3A35E] transition-colors">HarvicTrade</Link>
-            <span>→</span>
-            <span className="text-[#C3A35E]">Submit RFQ</span>
+            <span>/</span>
+            <span className="text-[#C3A35E]">Request for Quotation</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-3" style={{ letterSpacing: '-0.02em' }}>
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-3" style={{ letterSpacing: '-0.025em' }}>
             Request for Quotation
           </h1>
-          <p className="text-white/50 max-w-xl mx-auto">
-            Tell us what you need. Our sourcing team and AI engine will match you with the best-fit verified suppliers within 24 hours.
+          <p className="text-white/40 max-w-lg mx-auto text-sm leading-relaxed">
+            Tell us what you need. Our sourcing team will match you with verified suppliers within 24 hours.
           </p>
         </div>
       </section>
 
       <section className="max-w-[900px] mx-auto px-4 py-12">
-        {submitted ? (
-          <div className="text-center py-20">
-            <div className="text-6xl mb-6">✅</div>
-            <h2 className="text-2xl font-bold text-[#6B1F2B] mb-3">RFQ Submitted Successfully</h2>
-            <p className="text-[#6B1F2B]/50 mb-8 max-w-md mx-auto">
-              Our sourcing team will review your request and match you with verified suppliers. Expect quotes within 24 hours.
-            </p>
-            <Link href={`/${locale}/harvictrade`}
-              className="inline-block px-8 py-3 bg-[#6B1F2B] text-white font-bold text-sm uppercase tracking-wider hover:bg-[#5a1a24] transition-colors">
-              Back to HarvicTrade
-            </Link>
-          </div>
-        ) : (
-          <div className="space-y-8">
-            {/* Product Details */}
-            <div className="bg-white border border-[#C3A35E]/20 p-8">
-              <h2 className="text-lg font-bold text-[#6B1F2B] mb-6 flex items-center gap-3">
-                <span className="w-8 h-8 bg-[#6B1F2B] text-white flex items-center justify-center text-sm font-bold">1</span>
-                Product Requirements
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="md:col-span-2">
-                  <label className="block text-xs font-bold text-[#6B1F2B]/60 uppercase tracking-wider mb-1">Product Name / Description</label>
-                  <input placeholder="e.g. Premium Basmati Rice 1121 Sella" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/30 focus:border-[#C3A35E] focus:outline-none" />
-                </div>
-                <div>
-                  <label className="block text-xs font-bold text-[#6B1F2B]/60 uppercase tracking-wider mb-1">Category</label>
-                  <select className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] focus:border-[#C3A35E] focus:outline-none">
-                    <option>Select Category</option>
-                    <option>Textiles & Apparel</option>
-                    <option>FMCG & Food</option>
-                    <option>Commodities</option>
-                    <option>Industrial & PPE</option>
-                    <option>Minerals & Metals</option>
-                    <option>Oil, Gas & Energy</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-xs font-bold text-[#6B1F2B]/60 uppercase tracking-wider mb-1">Quantity Required</label>
-                  <input placeholder="e.g. 25 MT, 1,000 pcs, 1 FCL" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/30 focus:border-[#C3A35E] focus:outline-none" />
-                </div>
-                <div>
-                  <label className="block text-xs font-bold text-[#6B1F2B]/60 uppercase tracking-wider mb-1">Target Price (optional)</label>
-                  <input placeholder="e.g. $850–950/MT" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/30 focus:border-[#C3A35E] focus:outline-none" />
-                </div>
-                <div>
-                  <label className="block text-xs font-bold text-[#6B1F2B]/60 uppercase tracking-wider mb-1">Required By Date</label>
-                  <input type="date" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] focus:border-[#C3A35E] focus:outline-none" />
-                </div>
-                <div className="md:col-span-2">
-                  <label className="block text-xs font-bold text-[#6B1F2B]/60 uppercase tracking-wider mb-1">Specifications / Notes</label>
-                  <textarea rows={3} placeholder="Quality standards, certifications required, packaging preferences..." className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/30 focus:border-[#C3A35E] focus:outline-none resize-none" />
-                </div>
-              </div>
-            </div>
-
-            {/* Delivery & Trade Terms */}
-            <div className="bg-white border border-[#C3A35E]/20 p-8">
-              <h2 className="text-lg font-bold text-[#6B1F2B] mb-6 flex items-center gap-3">
-                <span className="w-8 h-8 bg-[#6B1F2B] text-white flex items-center justify-center text-sm font-bold">2</span>
-                Delivery & Trade Terms
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-xs font-bold text-[#6B1F2B]/60 uppercase tracking-wider mb-1">Delivery Location</label>
-                  <input placeholder="City, Country" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/30 focus:border-[#C3A35E] focus:outline-none" />
-                </div>
-                <div>
-                  <label className="block text-xs font-bold text-[#6B1F2B]/60 uppercase tracking-wider mb-1">Preferred Incoterms</label>
-                  <select className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] focus:border-[#C3A35E] focus:outline-none">
-                    <option>Select Incoterms</option>
-                    <option>FOB — Free on Board</option>
-                    <option>CIF — Cost, Insurance & Freight</option>
-                    <option>CFR — Cost & Freight</option>
-                    <option>EXW — Ex Works</option>
-                    <option>DDP — Delivered Duty Paid</option>
-                    <option>DAP — Delivered at Place</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-xs font-bold text-[#6B1F2B]/60 uppercase tracking-wider mb-1">Payment Terms</label>
-                  <select className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] focus:border-[#C3A35E] focus:outline-none">
-                    <option>Select Payment Terms</option>
-                    <option>Letter of Credit (LC)</option>
-                    <option>Telegraphic Transfer (TT)</option>
-                    <option>30/70 (30% advance, 70% on BL)</option>
-                    <option>Open Account — Net 30</option>
-                    <option>Open Account — Net 60</option>
-                    <option>Escrow via HarvicTrade</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-xs font-bold text-[#6B1F2B]/60 uppercase tracking-wider mb-1">Preferred Origin (optional)</label>
-                  <input placeholder="e.g. Pakistan, Turkey, Spain" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/30 focus:border-[#C3A35E] focus:outline-none" />
-                </div>
-              </div>
-            </div>
-
-            {/* Contact Details */}
-            <div className="bg-white border border-[#C3A35E]/20 p-8">
-              <h2 className="text-lg font-bold text-[#6B1F2B] mb-6 flex items-center gap-3">
-                <span className="w-8 h-8 bg-[#6B1F2B] text-white flex items-center justify-center text-sm font-bold">3</span>
-                Your Details
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input placeholder="Full Name" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/30 focus:border-[#C3A35E] focus:outline-none" />
-                <input placeholder="Company Name" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/30 focus:border-[#C3A35E] focus:outline-none" />
-                <input placeholder="Email Address" type="email" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/30 focus:border-[#C3A35E] focus:outline-none" />
-                <input placeholder="Phone (with country code)" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/30 focus:border-[#C3A35E] focus:outline-none" />
-                <input placeholder="Country" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/30 focus:border-[#C3A35E] focus:outline-none" />
-                <input placeholder="Website (optional)" className="w-full px-4 py-3 border border-[#C3A35E]/30 bg-white text-[#6B1F2B] placeholder-[#6B1F2B]/30 focus:border-[#C3A35E] focus:outline-none" />
-              </div>
-            </div>
-
-            {/* Submit */}
-            <div className="text-center">
-              <button
-                onClick={() => setSubmitted(true)}
-                className="px-12 py-4 bg-[#6B1F2B] text-white font-bold text-sm uppercase tracking-wider hover:bg-[#5a1a24] transition-colors"
-              >
-                Submit RFQ
-              </button>
-              <p className="text-xs text-[#6B1F2B]/40 mt-4">By submitting, you agree to HarvicTrade&apos;s terms. We&apos;ll match you with suppliers within 24 hours.</p>
-            </div>
-          </div>
-        )}
+        <Suspense fallback={<div className="text-center py-20 text-[#3D1212]/40 text-sm">Loading form…</div>}>
+          <RFQForm />
+        </Suspense>
       </section>
     </main>
   )
