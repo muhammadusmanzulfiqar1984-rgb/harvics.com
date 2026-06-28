@@ -44,7 +44,7 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
   return (
     <HarvicTradeTabs locale={locale}>
     <main className="min-h-screen bg-white">
-      <div>
+      <div className="pt-20">
 
         {/* ══ HERO ══════════════════════════════════════════════════════ */}
         <section className="relative bg-[#0D0D0D] py-28 md:py-36 px-4 overflow-hidden">

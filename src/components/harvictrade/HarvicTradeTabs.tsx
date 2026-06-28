@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 interface Props {
   locale: string
-  children: React.ReactNode // classic marketplace content
+  children: React.ReactNode
 }
 
 export default function HarvicTradeTabs({ locale, children }: Props) {
@@ -13,52 +13,75 @@ export default function HarvicTradeTabs({ locale, children }: Props) {
   return (
     <div className="min-h-screen bg-white">
 
-      {/* ── Tab Bar ─────────────────────────────────────────────────── */}
-      <div className="fixed top-[64px] left-0 right-0 z-[400] border-b border-[#C3A35E]/15"
-        style={{ background: '#1A0505' }}>
-        <div className="max-w-[1100px] mx-auto px-4 flex items-center gap-0">
+      {/* ── Tab Bar — inline, sits right below the sticky header ────── */}
+      <div className="w-full border-b border-[#C3A35E]/15" style={{ background: '#3D1212' }}>
+        <div className="max-w-[1100px] mx-auto px-4 flex items-center">
 
           <button
             onClick={() => setActive('classic')}
-            className={`relative px-7 py-4 text-[10px] font-bold uppercase tracking-[0.18em] transition-colors
-              ${active === 'classic'
-                ? 'text-[#C3A35E] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#C3A35E]'
-                : 'text-white/30 hover:text-white/60'
-              }`}
+            style={{
+              position: 'relative',
+              padding: '14px 28px',
+              fontSize: '10px',
+              fontWeight: 700,
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase',
+              border: 'none',
+              background: 'transparent',
+              cursor: 'pointer',
+              color: active === 'classic' ? '#C3A35E' : 'rgba(255,255,255,0.3)',
+              borderBottom: active === 'classic' ? '2px solid #C3A35E' : '2px solid transparent',
+              transition: 'all 0.2s',
+            }}
           >
             Classic Marketplace
           </button>
 
           <button
             onClick={() => setActive('digital')}
-            className={`relative px-7 py-4 text-[10px] font-bold uppercase tracking-[0.18em] transition-colors flex items-center gap-2
-              ${active === 'digital'
-                ? 'text-[#F5F0E8] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#F5F0E8]'
-                : 'text-white/30 hover:text-white/60'
-              }`}
+            style={{
+              position: 'relative',
+              padding: '14px 28px',
+              fontSize: '10px',
+              fontWeight: 700,
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase',
+              border: 'none',
+              background: 'transparent',
+              cursor: 'pointer',
+              color: active === 'digital' ? '#F5F0E8' : 'rgba(255,255,255,0.3)',
+              borderBottom: active === 'digital' ? '2px solid #F5F0E8' : '2px solid transparent',
+              transition: 'all 0.2s',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+            }}
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+            <span style={{
+              width: '6px', height: '6px', borderRadius: '50%',
+              background: '#34d399', display: 'inline-block',
+              animation: 'pulse 2s infinite',
+            }} />
             AI Digital Marketplace
           </button>
 
-          <div className="ml-auto text-[9px] text-white/20 uppercase tracking-[0.22em] pr-2">
+          <div style={{ marginLeft: 'auto', fontSize: '9px', color: 'rgba(255,255,255,0.18)', letterSpacing: '0.22em', textTransform: 'uppercase', paddingRight: '8px' }}>
             HarvicTrade
           </div>
         </div>
       </div>
 
       {/* ── Classic Tab ─────────────────────────────────────────────── */}
-      <div className={`pt-[104px] ${active === 'classic' ? 'block' : 'hidden'}`}>
+      <div style={{ display: active === 'classic' ? 'block' : 'none' }}>
         {children}
       </div>
 
       {/* ── Digital Marketplace Tab ─────────────────────────────────── */}
       {active === 'digital' && (
-        <div className="pt-[104px] h-screen">
+        <div style={{ height: '85vh' }}>
           <iframe
             src="/harvictrade-v2.html"
-            className="w-full border-0"
-            style={{ height: 'calc(100vh - 104px)' }}
+            style={{ width: '100%', height: '100%', border: 'none', display: 'block' }}
             title="HarvicTrade AI Digital Marketplace"
             allow="microphone"
           />
